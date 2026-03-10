@@ -2,21 +2,36 @@
 layout: base.njk
 title: Greiningar
 description: Ítarlegar greiningar á greinum og yfirlýsingum í ESB-umræðunni.
+wide_layout: true
 ---
 
 <h1>Greiningar</h1>
 <p>Ítarlegar greiningar á einstökum greinum og yfirlýsingum, þar sem hvert atriði er borið saman við gögn og heimildir.</p>
 
 {% if reports | length %}
-<ul class="reports-list">
+<div class="reports-grid">
   {% for report in reports | reverse %}
-  <li>
-    <a href="/greiningar/{{ report.slug }}/">{{ report.article_title }}</a>
-    <time datetime="{{ report.analysis_date }}">{{ report.analysis_date | isDate }}</time>
-    <span class="report-claim-count">({{ report.claim_count }} fullyrðingar)</span>
-  </li>
+  <a href="/greiningar/{{ report.slug }}/" class="report-card">
+    <div class="report-card-header">
+      <h3 class="report-card-title">{{ report.article_title }}</h3>
+      <time datetime="{{ report.analysis_date }}">{{ report.analysis_date | isDate }}</time>
+    </div>
+    {% if report.summary %}
+    <p class="report-card-summary">{{ report.summary }}</p>
+    {% endif %}
+    {% if report.verdict_counts %}
+    <div class="report-card-verdicts">
+      {% for verdict, count in report.verdict_counts %}
+      <span class="ct-verdict-pill verdict-{{ verdict | replace('partially_supported', 'partial') }}">
+        {{ verdict | verdictLabel }}: {{ count }}
+      </span>
+      {% endfor %}
+    </div>
+    {% endif %}
+    <span class="report-card-count">{{ report.claim_count }} fullyrðingar</span>
+  </a>
   {% endfor %}
-</ul>
+</div>
 {% else %}
 <p>Engar greiningar hafa verið birtar ennþá.</p>
 {% endif %}

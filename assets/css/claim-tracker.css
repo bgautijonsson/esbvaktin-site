@@ -1,54 +1,14 @@
 /* ESBvaktin Claim Tracker — Styles
  *
- * Designed to be embedded in a Ghost theme page.
- * Uses CSS custom properties for easy theming.
+ * Uses global CSS custom properties from style.css.
  */
-
-:root {
-  --ct-bg: #ffffff;
-  --ct-text: #1a1a2e;
-  --ct-text-secondary: #555;
-  --ct-border: #e0e0e0;
-  --ct-card-bg: #fafafa;
-  --ct-card-hover: #f0f4f8;
-  --ct-accent: #2563eb;
-  --ct-green: #16a34a;
-  --ct-yellow: #ca8a04;
-  --ct-orange: #ea580c;
-  --ct-red: #dc2626;
-  --ct-grey: #6b7280;
-  --ct-radius: 8px;
-  --ct-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-  --ct-max-width: 800px;
-  --ct-font: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --ct-bg: #0f172a;
-    --ct-text: #e2e8f0;
-    --ct-text-secondary: #94a3b8;
-    --ct-border: #334155;
-    --ct-card-bg: #1e293b;
-    --ct-card-hover: #263548;
-    --ct-accent: #3b82f6;
-    --ct-green: #22c55e;
-    --ct-yellow: #eab308;
-    --ct-orange: #f97316;
-    --ct-red: #ef4444;
-    --ct-grey: #9ca3af;
-    --ct-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  }
-}
 
 /* ── Layout ──────────────────────────────────────────────────────── */
 
 #claim-tracker {
-  max-width: var(--ct-max-width);
-  margin: 0 auto;
   padding: 1rem;
-  font-family: var(--ct-font);
-  color: var(--ct-text);
+  font-family: var(--font);
+  color: var(--text);
 }
 
 .ct-header {
@@ -63,7 +23,7 @@
 }
 
 .ct-subtitle {
-  color: var(--ct-text-secondary);
+  color: var(--text-secondary);
   font-size: 0.95rem;
   margin: 0;
 }
@@ -79,9 +39,9 @@
 }
 
 .ct-stat {
-  background: var(--ct-card-bg);
-  border: 1px solid var(--ct-border);
-  border-radius: var(--ct-radius);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
   padding: 0.5rem 0.75rem;
   text-align: center;
   min-width: 70px;
@@ -98,16 +58,16 @@
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  color: var(--ct-text-secondary);
+  color: var(--text-secondary);
 }
 
-.ct-stat-supported .ct-stat-num { color: var(--ct-green); }
-.ct-stat-partial .ct-stat-num { color: var(--ct-yellow); }
-.ct-stat-misleading .ct-stat-num { color: var(--ct-red); }
-.ct-stat-unverifiable .ct-stat-num { color: var(--ct-grey); }
+.ct-stat-supported .ct-stat-num { color: var(--green); }
+.ct-stat-partial .ct-stat-num { color: var(--yellow); }
+.ct-stat-misleading .ct-stat-num { color: var(--red); }
+.ct-stat-unverifiable .ct-stat-num { color: var(--grey); }
 
 .ct-stat-loading {
-  color: var(--ct-text-secondary);
+  color: var(--text-secondary);
   font-size: 0.9rem;
   padding: 0.5rem;
 }
@@ -126,17 +86,17 @@
   width: 100%;
   padding: 0.6rem 0.75rem;
   font-size: 0.95rem;
-  border: 1px solid var(--ct-border);
-  border-radius: var(--ct-radius);
-  background: var(--ct-bg);
-  color: var(--ct-text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  color: var(--text);
   box-sizing: border-box;
-  transition: border-color 0.15s;
+  transition: border-color var(--transition);
 }
 
 .ct-search:focus {
   outline: none;
-  border-color: var(--ct-accent);
+  border-color: var(--accent);
   box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
 }
 
@@ -151,10 +111,10 @@
   min-width: 120px;
   padding: 0.45rem 0.6rem;
   font-size: 0.85rem;
-  border: 1px solid var(--ct-border);
-  border-radius: var(--ct-radius);
-  background: var(--ct-bg);
-  color: var(--ct-text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  color: var(--text);
   cursor: pointer;
 }
 
@@ -169,22 +129,22 @@
 .ct-loading, .ct-empty {
   text-align: center;
   padding: 2rem;
-  color: var(--ct-text-secondary);
+  color: var(--text-secondary);
 }
 
 /* ── Claim card ──────────────────────────────────────────────────── */
 
 .ct-card {
-  background: var(--ct-card-bg);
-  border: 1px solid var(--ct-border);
-  border-radius: var(--ct-radius);
-  box-shadow: var(--ct-shadow);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
   overflow: hidden;
-  transition: border-color 0.15s;
+  transition: border-color var(--transition);
 }
 
 .ct-card:hover {
-  border-color: var(--ct-accent);
+  border-color: var(--accent);
 }
 
 .ct-card-header {
@@ -194,7 +154,7 @@
 }
 
 .ct-card-header:focus-visible {
-  outline: 2px solid var(--ct-accent);
+  outline: 2px solid var(--accent);
   outline-offset: -2px;
 }
 
@@ -233,21 +193,21 @@
   white-space: nowrap;
 }
 
-.verdict-supported { background: var(--ct-green); color: #fff; }
-.verdict-partial { background: var(--ct-yellow); color: #000; }
-.verdict-unsupported { background: var(--ct-orange); color: #fff; }
-.verdict-misleading { background: var(--ct-red); color: #fff; }
-.verdict-unverifiable { background: var(--ct-grey); color: #fff; }
+.verdict-supported { background: var(--green); color: #fff; }
+.verdict-partial { background: var(--yellow); color: #000; }
+.verdict-unsupported { background: var(--orange); color: #fff; }
+.verdict-misleading { background: var(--red); color: #fff; }
+.verdict-unverifiable { background: var(--grey); color: #fff; }
 
 /* ── Category tag ────────────────────────────────────────────────── */
 
 .ct-category-tag {
   display: inline-block;
   padding: 0.1rem 0.4rem;
-  border: 1px solid var(--ct-border);
-  border-radius: 4px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
   font-size: 0.7rem;
-  color: var(--ct-text-secondary);
+  color: var(--text-secondary);
   white-space: nowrap;
 }
 
@@ -256,9 +216,9 @@
 .ct-sighting-count {
   display: inline-block;
   padding: 0.1rem 0.35rem;
-  background: var(--ct-accent);
+  background: var(--accent);
   color: #fff;
-  border-radius: 4px;
+  border-radius: var(--radius-sm);
   font-size: 0.7rem;
   font-weight: 600;
   white-space: nowrap;
@@ -271,13 +231,13 @@
   align-items: center;
   gap: 0.35rem;
   font-size: 0.75rem;
-  color: var(--ct-text-secondary);
+  color: var(--text-secondary);
 }
 
 .ct-confidence-bar {
   display: inline-block;
   height: 4px;
-  background: var(--ct-accent);
+  background: var(--accent);
   border-radius: 2px;
   min-width: 2px;
   max-width: 60px;
@@ -287,8 +247,8 @@
 
 .ct-expand-icon {
   font-size: 0.8rem;
-  color: var(--ct-text-secondary);
-  transition: transform 0.15s;
+  color: var(--text-secondary);
+  transition: transform var(--transition);
 }
 
 .ct-expanded .ct-expand-icon {
@@ -310,16 +270,16 @@
   padding: 0 1rem 0.6rem;
   font-size: 0.9rem;
   line-height: 1.5;
-  color: var(--ct-text-secondary);
+  color: var(--text-secondary);
 }
 
 .ct-detail:first-child {
   padding-top: 0.25rem;
-  border-top: 1px solid var(--ct-border);
+  border-top: 1px solid var(--border);
 }
 
 .ct-detail strong {
-  color: var(--ct-text);
+  color: var(--text);
 }
 
 .ct-english {

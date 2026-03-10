@@ -6,6 +6,12 @@
   <title>{{ title }}{% if title !== site.title %} — {{ site.title }}{% endif %}</title>
   <meta name="description" content="{{ description or site.description }}">
 
+  <!-- Anti-FOUC: apply stored theme before paint -->
+  <script>(function(){var t=localStorage.getItem('esb-theme');if(t&&t!=='system')document.documentElement.setAttribute('data-theme',t)})()</script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+
   <!-- Open Graph -->
   <meta property="og:title" content="{{ title }}">
   <meta property="og:description" content="{{ description or site.description }}">
@@ -22,6 +28,12 @@
   <header class="site-header">
     <nav class="site-nav">
       <a href="/" class="site-logo">{{ site.title }}</a>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Sjálfvirkt" title="Sjálfvirkt">&#x25D0;</button>
+        <button class="nav-toggle" type="button" aria-label="Valmynd" aria-expanded="false">
+          <span class="nav-hamburger"></span>
+        </button>
+      </div>
       <ul class="nav-links">
         <li><a href="/fullyrðingar/"{% if page.url == "/fullyrðingar/" %} aria-current="page"{% endif %}>Fullyrðingar</a></li>
         <li><a href="/greiningar/"{% if "/greiningar/" in page.url %} aria-current="page"{% endif %}>Greiningar</a></li>
@@ -31,19 +43,21 @@
     </nav>
   </header>
 
-  <main class="site-main">
+  <main class="site-main{% if wide_layout %} site-main--wide{% endif %}">
     {{ content | safe }}
   </main>
 
   <footer class="site-footer">
     <p>{{ site.title }} — óháð upplýsingaverkefni um ESB-þjóðaratkvæðagreiðsluna {{ site.referendum_date | isDate }}.</p>
     <p class="footer-links">
-      <a href="/um-okkur/">Um okkur</a> ·
-      <a href="/adferdarfraedi/">Aðferðafræði</a> ·
+      <a href="/um-okkur/">Um okkur</a> &middot;
+      <a href="/adferdarfraedi/">Aðferðafræði</a> &middot;
       <a href="mailto:greining@esbvaktin.is">Senda grein</a>
     </p>
   </footer>
 
+  <script src="/assets/js/theme-toggle.js" defer></script>
+  <script src="/assets/js/mobile-nav.js" defer></script>
   {% if extra_js %}<script src="{{ extra_js }}"{% if extra_js_data %} {{ extra_js_data | safe }}{% endif %}></script>{% endif %}
 </body>
 </html>
