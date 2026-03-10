@@ -3,119 +3,16 @@ layout: base.njk
 title: Raddirnar
 description: Hverjir segja hvað í ESB-umræðunni? Skoðaðu fullyrðingar eftir stjórnmálaflokkum, samtökum og einstaklingum.
 wide_layout: true
+extra_css: /assets/css/entity-tracker.css
+extra_js: /assets/js/entity-tracker.js
+extra_js_data: 'data-base="/assets/data"'
 ---
-
-{# ── Entity card macro ─────────────────────────────────────────────── #}
-{% macro entityCard(entity) %}
-{# Map stance_score (-1…+1) to a hue: 0=red (anti), 60=yellow (neutral), 210=blue (pro) #}
-{% set score = entity.stance_score if entity.stance_score != null else 0 %}
-{% if score >= 0 %}
-  {% set hue = 60 + score * 150 %}
-{% else %}
-  {% set hue = 60 + score * 60 %}
-{% endif %}
-{% set saturation = 10 + (score | abs) * 60 %}
-<div class="entity-card" style="--stance-hue: {{ hue }}; --stance-sat: {{ saturation }}%; --stance-score: {{ score }}">
-  <div class="entity-card-header">
-    <h3 class="entity-card-name">{{ entity.name }}</h3>
-    <div class="stance-indicator" title="Afstaða: {{ score }}">
-      <div class="stance-track">
-        <div class="stance-dot" style="left: {{ ((score + 1) / 2 * 100) }}%"></div>
-      </div>
-      <span class="stance-label">
-        {%- if score >= 0.5 %}ESB-jákvæð
-        {%- elif score <= -0.5 %}ESB-gagnrýnin
-        {%- elif score | abs < 0.1 %}Hlutlaus
-        {%- else %}Blandað
-        {%- endif -%}
-      </span>
-    </div>
-  </div>
-  {% if entity.role %}<p class="entity-card-role">{{ entity.role | capitalize }}{% if entity.party %} ({{ entity.party }}){% endif %}</p>{% endif %}
-  <div class="entity-card-stats">
-    {% if entity.claims | length %}
-    <span class="entity-stat">{{ entity.claims | length }} fullyrðing{{ "ar" if entity.claims | length > 1 else "" }}</span>
-    {% endif %}
-    {% if entity.articles | length %}
-    <span class="entity-stat">{{ entity.articles | length }} grein{{ "ar" if entity.articles | length > 1 else "ing" }}</span>
-    {% endif %}
-  </div>
-  {% if entity.credibility != null %}
-  <div class="credibility" title="Trúverðugleiki: {{ (entity.credibility * 100) | round }}%">
-    <span class="credibility-label">Trúverðugleiki</span>
-    <div class="credibility-bar">
-      <div class="credibility-fill" style="width: {{ entity.credibility * 100 }}%"></div>
-    </div>
-    <span class="credibility-value">{{ (entity.credibility * 100) | round }}%</span>
-  </div>
-  {% endif %}
-  {% if entity.articles | length %}
-  <div class="entity-card-articles">
-    <strong>Birtist í:</strong>
-    <ul>
-      {% for slug in entity.articles %}
-      {% for report in reports %}
-      {% if report.slug == slug %}
-      <li><a href="/umraedan/{{ report.slug }}/">{{ report.article_title }}</a></li>
-      {% endif %}
-      {% endfor %}
-      {% endfor %}
-    </ul>
-  </div>
-  {% endif %}
-</div>
-{% endmacro %}
-
-{# ── Categorise entities ───────────────────────────────────────────── #}
-{% set parties = [] %}
-{% set individuals = [] %}
-{% set institutions = [] %}
-{% for entity in entities %}
-  {% if entity.type == "party" %}
-    {% set parties = (parties.push(entity), parties) %}
-  {% elif entity.type == "individual" %}
-    {% set individuals = (individuals.push(entity), individuals) %}
-  {% else %}
-    {% set institutions = (institutions.push(entity), institutions) %}
-  {% endif %}
-{% endfor %}
 
 <h1>Raddirnar</h1>
 <p>Hverjir taka þátt í ESB-umræðunni og hvað segja þeir? Hér má skoða fullyrðingar eftir stjórnmálaflokkum, samtökum og stofnunum — og hversu vel þær standast skoðun.</p>
 
-{% if parties | length %}
-<section class="entities-section">
-  <h2>Stjórnmálaflokkar</h2>
-  <div class="entities-grid">
-    {% for entity in parties %}
-    {{ entityCard(entity) }}
-    {% endfor %}
-  </div>
-</section>
-{% endif %}
+<div id="entity-tracker"></div>
 
-{% if institutions | length %}
-<section class="entities-section">
-  <h2>Samtök og stofnanir</h2>
-  <div class="entities-grid">
-    {% for entity in institutions %}
-    {{ entityCard(entity) }}
-    {% endfor %}
-  </div>
-</section>
-{% endif %}
-
-{% if individuals | length %}
-<section class="entities-section">
-  <h2>Einstaklingar</h2>
-  <div class="entities-grid">
-    {% for entity in individuals %}
-    {{ entityCard(entity) }}
-    {% endfor %}
-  </div>
-</section>
-{% endif %}
-
-<section class="entities-note">
+<div class="et-note">
   <p><em>Þessi síða er í þróun. Eftir því sem fleiri greinar eru greindar bætast fleiri aðilar við og fullyrðingar þeirra tengjast sjálfkrafa.</em></p>
-</section>
+</div>

@@ -1,0 +1,369 @@
+/* ESBvaktin Entity Tracker — Styles
+ *
+ * Uses global CSS custom properties from style.css.
+ * Prefix: et-* (entity tracker)
+ */
+
+/* ── Layout ──────────────────────────────────────────────────────── */
+
+#entity-tracker {
+  font-family: var(--font);
+  color: var(--text);
+}
+
+/* ── Stats bar ───────────────────────────────────────────────────── */
+
+.et-stats {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.et-stat {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.5rem 0.75rem;
+  text-align: center;
+  min-width: 70px;
+}
+
+.et-stat-num {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.et-stat-label {
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+}
+
+.et-stat-loading {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  padding: 0.5rem;
+}
+
+/* ── Controls ────────────────────────────────────────────────────── */
+
+.et-controls {
+  margin-bottom: 1.25rem;
+}
+
+.et-search-wrap {
+  margin-bottom: 0.75rem;
+}
+
+.et-search {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.95rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  color: var(--text);
+  box-sizing: border-box;
+  transition: border-color var(--transition);
+}
+
+.et-search:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+.et-filter-row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.et-select {
+  flex: 1;
+  min-width: 120px;
+  padding: 0.45rem 0.6rem;
+  font-size: 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  color: var(--text);
+  cursor: pointer;
+}
+
+/* ── Loading / empty ─────────────────────────────────────────────── */
+
+.et-loading, .et-empty {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-secondary);
+}
+
+/* ── Results grid ────────────────────────────────────────────────── */
+
+.et-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.25rem;
+}
+
+/* ── Entity card ─────────────────────────────────────────────────── */
+
+.et-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 3px solid hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 45%);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.et-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.et-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.et-card-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* ── Stance indicator ────────────────────────────────────────────── */
+
+.et-stance-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.2rem;
+  flex-shrink: 0;
+  min-width: 5rem;
+}
+
+.et-stance-track {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: linear-gradient(to right, var(--red), var(--yellow) 50%, #3b82f6);
+  position: relative;
+}
+
+.et-stance-dot {
+  position: absolute;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 2px solid hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 45%);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.et-stance-label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 40%);
+  white-space: nowrap;
+}
+
+/* ── Role & type badge ───────────────────────────────────────────── */
+
+.et-card-role {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin: 0 0 0.35rem;
+}
+
+.et-type-badge {
+  display: inline-block;
+  padding: 0.1rem 0.4rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  margin-bottom: 0.35rem;
+}
+
+.et-type-party { border-color: var(--accent); color: var(--accent); }
+.et-type-institution { border-color: var(--green); color: var(--green); }
+.et-type-individual { border-color: var(--yellow); color: var(--yellow); }
+
+/* ── Stats row ───────────────────────────────────────────────────── */
+
+.et-card-stats {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.et-card-stat {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  background: var(--bg-alt);
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius);
+}
+
+/* ── Credibility bar ─────────────────────────────────────────────── */
+
+.et-credibility {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.et-credibility-label {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.et-credibility-bar {
+  flex: 1;
+  height: 6px;
+  background: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+  min-width: 3rem;
+}
+
+.et-credibility-fill {
+  height: 100%;
+  border-radius: 3px;
+  background: var(--green);
+  transition: width 0.3s ease;
+}
+
+.et-credibility-value {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  min-width: 2rem;
+  text-align: right;
+}
+
+/* ── Collapsible articles section ────────────────────────────────── */
+
+.et-articles-section {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+}
+
+.et-articles-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  padding: 0.25rem 0;
+  background: none;
+  border: none;
+  width: 100%;
+  color: inherit;
+  font: inherit;
+}
+
+.et-articles-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+.et-articles-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.et-expand-icon {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  transition: transform var(--transition);
+}
+
+.et-expanded .et-expand-icon {
+  transform: rotate(90deg);
+}
+
+.et-articles-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.et-expanded .et-articles-details {
+  max-height: 300px;
+  transition: max-height 0.3s ease-in;
+}
+
+.et-articles-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.25rem 0 0;
+}
+
+.et-articles-list li {
+  padding: 0.15rem 0;
+}
+
+.et-articles-list a {
+  font-size: 0.85rem;
+}
+
+/* ── Note (disclaimer) ───────────────────────────────────────────── */
+
+.et-note {
+  margin-top: 2rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.et-note p { margin: 0; }
+
+/* ── Dark mode ───────────────────────────────────────────────────── */
+
+@media (prefers-color-scheme: dark) {
+  .et-stance-label {
+    color: hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 65%);
+  }
+  .et-card {
+    border-left-color: hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 55%);
+  }
+  .et-stance-dot {
+    border-color: hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 55%);
+  }
+}
+
+/* ── Responsive ──────────────────────────────────────────────────── */
+
+@media (max-width: 600px) {
+  .et-grid { grid-template-columns: 1fr; }
+  .et-filter-row { flex-direction: column; }
+  .et-select { min-width: unset; }
+  .et-stats { gap: 0.4rem; }
+  .et-stat { min-width: 55px; padding: 0.35rem 0.5rem; }
+  .et-stat-num { font-size: 1.1rem; }
+  .et-stance-label { display: none; }
+}

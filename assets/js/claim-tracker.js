@@ -153,7 +153,7 @@
               .join("")}
           </select>
           <select id="ct-verdict" class="ct-select">
-            <option value="">Öll úrskurðir</option>
+            <option value="">Allir úrskurðir</option>
             ${Object.entries(VERDICT_LABELS)
               .map(([k, v]) => `<option value="${k}">${v}</option>`)
               .join("")}
@@ -183,7 +183,7 @@
       </div>
       <div class="ct-stat">
         <span class="ct-stat-num">${stats.totalSightings}</span>
-        <span class="ct-stat-label">tilvitnun</span>
+        <span class="ct-stat-label">tilvitnanir</span>
       </div>
       <div class="ct-stat ct-stat-supported">
         <span class="ct-stat-num">${stats.supported}</span>
