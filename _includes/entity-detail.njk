@@ -1,0 +1,233 @@
+---
+layout: base.njk
+extra_css: /assets/css/entity-detail.css
+---
+
+{# ── Type labels ── #}
+{% set TYPE_LABELS = {
+  party: "Stjórnmálaflokkur",
+  institution: "Samtök/stofnun",
+  individual: "Einstaklingur",
+  union: "Stéttarfélag"
+} %}
+
+{# ── Attribution labels ── #}
+{% set ATTR_LABELS = {
+  asserted: "Fullyrt",
+  quoted: "Vitnað í",
+  paraphrased: "Umorðað",
+  mentioned: "Nefnt"
+} %}
+
+{# ── Stance label from score ── #}
+{% if entity.stance_score >= 0.5 %}
+  {% set stanceLabel = "ESB-jákvæð" %}
+{% elif entity.stance_score <= -0.5 %}
+  {% set stanceLabel = "ESB-gagnrýnin" %}
+{% elif entity.stance_score is number and entity.stance_score > -0.1 and entity.stance_score < 0.1 %}
+  {% set stanceLabel = "Hlutlaus" %}
+{% else %}
+  {% set stanceLabel = "Blandað" %}
+{% endif %}
+
+{# ── Compute stance hue/sat for CSS ── #}
+{% set score = entity.stance_score or 0 %}
+{% if score >= 0 %}
+  {% set stanceHue = 60 + score * 150 %}
+{% else %}
+  {% set stanceHue = 60 + score * 60 %}
+{% endif %}
+{% set stanceSat = 10 + (score if score >= 0 else -score) * 60 %}
+{% set dotLeft = ((score + 1) / 2 * 100) %}
+
+{# ── Credibility ── #}
+{% set credPct = (entity.credibility * 100) | round if entity.credibility is number else null %}
+
+{# ── Total claims (all attributions) ── #}
+{% set totalClaims = entity.claims | length %}
+
+{# ── Scorecard total (active attributions only) ── #}
+{% set scorecardTotal = 0 %}
+{% for v, count in entity.scorecard %}
+  {% set scorecardTotal = scorecardTotal + count %}
+{% endfor %}
+
+<article class="ed-entity" style="--stance-hue: {{ stanceHue }}; --stance-sat: {{ stanceSat }}%">
+  {# ── Back link ── #}
+  <a href="/raddirnar/" class="ed-back">&larr; Til baka á Raddirnar</a>
+
+  {# ── Header ── #}
+  <header class="ed-header">
+    <div class="ed-header-top">
+      <h1 class="ed-name">{{ entity.name }}</h1>
+      <span class="et-type-badge et-type-{{ entity.type }}">{{ TYPE_LABELS[entity.type] or entity.type }}</span>
+    </div>
+
+    {% if entity.role %}
+      <p class="ed-role">
+        {{ entity.role | capitalize }}{% if entity.party %} ({{ entity.party }}){% endif %}
+      </p>
+    {% endif %}
+
+    {% if entity.description %}
+      <p class="ed-description">{{ entity.description }}</p>
+    {% endif %}
+  </header>
+
+  {# ── Stats row ── #}
+  <div class="ed-stats">
+    {# Stance indicator #}
+    <div class="ed-stat-block">
+      <span class="ed-stat-heading">Afstaða</span>
+      <div class="ed-stance">
+        <div class="et-stance-track">
+          <div class="et-stance-dot" style="left: {{ dotLeft }}%"></div>
+        </div>
+        <span class="ed-stance-label">{{ stanceLabel }}</span>
+      </div>
+    </div>
+
+    {# Credibility #}
+    {% if credPct is not null %}
+    <div class="ed-stat-block">
+      <span class="ed-stat-heading">Trúverðugleiki</span>
+      <div class="ed-credibility">
+        <div class="et-credibility-bar">
+          <div class="et-credibility-fill" style="width: {{ credPct }}%"></div>
+        </div>
+        <span class="ed-credibility-value">{{ credPct }}%</span>
+      </div>
+    </div>
+    {% endif %}
+
+    {# Total claims #}
+    <div class="ed-stat-block">
+      <span class="ed-stat-heading">Fullyrðingar</span>
+      <span class="ed-stat-num">{{ totalClaims }}</span>
+    </div>
+
+    {# Articles #}
+    <div class="ed-stat-block">
+      <span class="ed-stat-heading">Greinar</span>
+      <span class="ed-stat-num">{{ entity.articles | length }}</span>
+    </div>
+  </div>
+
+  {# ── Attribution breakdown ── #}
+  {% set ac = entity.attribution_counts %}
+  {% if ac %}
+    {% set attrOrder = ["quoted", "asserted", "paraphrased", "mentioned"] %}
+    {% set attrTotal = 0 %}
+    {% for k in attrOrder %}
+      {% set attrTotal = attrTotal + (ac[k] or 0) %}
+    {% endfor %}
+    {% if attrTotal > 0 %}
+    <div class="ed-attribution">
+      <div class="et-attr-bar">
+        {% for k in attrOrder %}
+          {% if ac[k] %}
+            {% set pct = (ac[k] / attrTotal * 100) | round(1) %}
+            <div class="et-attr-seg et-attr-{{ k }}" style="width:{{ pct }}%" title="{{ ATTR_LABELS[k] }}: {{ ac[k] }}"></div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class="et-attr-legend">
+        {% for k in attrOrder %}
+          {% if ac[k] %}
+            <span class="et-attr-legend-item et-attr-{{ k }}-text">{{ ATTR_LABELS[k] }} {{ ac[k] }}</span>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  {% endif %}
+
+  {# ── Scorecard (verdict bar) ── #}
+  {% if scorecardTotal > 0 %}
+  <section class="ed-scorecard">
+    <h2>Yfirlit</h2>
+
+    {% set verdictOrder = ["supported", "partially_supported", "unverifiable", "unsupported", "misleading"] %}
+    <div class="report-verdict-bar" role="img" aria-label="Dreifing niðurstaðna">
+      {% for v in verdictOrder %}
+        {% set count = entity.scorecard[v] %}
+        {% if count %}
+          {% set pct = (count / scorecardTotal * 100) | round(1) %}
+          <span class="report-bar-seg verdict-{{ v | replace("partially_supported", "partial") }}"
+                style="width:{{ pct }}%"
+                title="{{ v | verdictLabel }}: {{ count }}">
+            {%- if pct >= 12 %}{{ count }}{% endif -%}
+          </span>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="verdict-summary">
+      {% for v in verdictOrder %}
+        {% if entity.scorecard[v] %}
+        <span class="ct-verdict-pill verdict-{{ v | replace("partially_supported", "partial") }}">
+          {{ v | verdictLabel }}: {{ entity.scorecard[v] }}
+        </span>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <p class="ed-scorecard-note">Aðeins fullyrðingar sem aðilinn hefur fullyrt, verið vitnað í, eða umorðað eru taldar.</p>
+  </section>
+  {% endif %}
+
+  {# ── Claims ── #}
+  {% if totalClaims > 0 %}
+  <section class="ed-claims">
+    <h2>Fullyrðingar ({{ totalClaims }})</h2>
+
+    {% for item in entity.claims %}
+    <details class="report-claim report-claim--{{ item.verdict | replace("partially_supported", "partial") }}">
+      <summary class="report-claim-header">
+        <span class="ct-verdict-pill verdict-{{ item.verdict | replace("partially_supported", "partial") }}">
+          {{ item.verdict | verdictLabel }}
+        </span>
+        <span class="report-claim-title">{{ item.claim_text }}</span>
+        <span class="ed-attr-badge ed-attr-{{ item.attribution }}">{{ ATTR_LABELS[item.attribution] or item.attribution }}</span>
+        {% if item.category %}
+          <span class="ct-category-tag">{{ item.category | categoryLabel }}</span>
+        {% endif %}
+        <span class="report-claim-chevron" aria-hidden="true"></span>
+      </summary>
+      <div class="report-claim-body">
+        <p class="ed-claim-source">
+          <a href="/umraedan/{{ item.article_slug }}/">{{ item.article_title }}</a>
+          {% if item.article_source %}<span class="ed-claim-source-name">{{ item.article_source }}</span>{% endif %}
+          {% if item.article_date %}<time datetime="{{ item.article_date }}">{{ item.article_date | isDate }}</time>{% endif %}
+        </p>
+      </div>
+    </details>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  {# ── Articles ── #}
+  {% if entity.articles | length %}
+  <section class="ed-articles">
+    <h2>Greinar ({{ entity.articles | length }})</h2>
+
+    <div class="ed-articles-grid">
+      {% for art in entity.articles %}
+      <a href="/umraedan/{{ art.slug }}/" class="ed-article-card">
+        <h3 class="ed-article-title">{{ art.title }}</h3>
+        <div class="ed-article-meta">
+          {% if art.source %}<span class="ed-article-source">{{ art.source }}</span>{% endif %}
+          {% if art.date %}<time datetime="{{ art.date }}">{{ art.date | isDate }}</time>{% endif %}
+        </div>
+        <div class="ed-article-stats">
+          <span>{{ art.claim_count }} fullyrðing{{ "ar" if art.claim_count > 1 else "" }}</span>
+          {% for at in art.attribution_types %}
+            <span class="ed-attr-badge ed-attr-{{ at }}">{{ ATTR_LABELS[at] or at }}</span>
+          {% endfor %}
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+</article>

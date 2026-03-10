@@ -1,0 +1,385 @@
+/* ESBvaktin Entity Detail Page — Styles
+ *
+ * Prefix: ed-* (entity detail)
+ * Reuses: et-* (stance/credibility/attribution from entity-tracker.css)
+ *         ct-* (verdict pills, category tags from style.css)
+ *         report-* (claim structure from style.css)
+ */
+
+/* ── Shared et-* classes (from entity-tracker.css, needed standalone) ─ */
+
+.et-type-badge {
+  display: inline-block;
+  padding: 0.1rem 0.4rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.et-type-party { border-color: var(--accent); color: var(--accent); }
+.et-type-institution { border-color: var(--green); color: var(--green); }
+.et-type-individual { border-color: var(--yellow); color: var(--yellow); }
+.et-type-union { border-color: var(--green); color: var(--green); }
+
+.et-stance-track {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: linear-gradient(to right, var(--red), var(--yellow) 50%, #3b82f6);
+  position: relative;
+}
+
+.et-stance-dot {
+  position: absolute;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 2px solid hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 45%);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.et-credibility-bar {
+  flex: 1;
+  height: 6px;
+  background: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+  min-width: 3rem;
+}
+
+.et-credibility-fill {
+  height: 100%;
+  border-radius: 3px;
+  background: var(--green);
+  transition: width 0.3s ease;
+}
+
+.et-attr-bar {
+  display: flex;
+  height: 6px;
+  border-radius: 3px;
+  overflow: hidden;
+  background: var(--border);
+  margin-bottom: 0.3rem;
+}
+
+.et-attr-seg {
+  min-width: 2px;
+}
+
+.et-attr-quoted   { background: var(--accent); }
+.et-attr-asserted { background: var(--green); }
+.et-attr-paraphrased { background: var(--yellow); }
+.et-attr-mentioned   { background: var(--text-secondary); opacity: 0.6; }
+
+.et-attr-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.6rem;
+}
+
+.et-attr-legend-item {
+  font-size: 0.65rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.et-attr-quoted-text    { color: var(--accent); }
+.et-attr-asserted-text  { color: var(--green); }
+.et-attr-paraphrased-text { color: var(--yellow); }
+.et-attr-mentioned-text { color: var(--text-secondary); }
+
+/* ── Back link ──────────────────────────────────────────────────────── */
+
+.ed-back {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.ed-back:hover {
+  color: var(--accent);
+}
+
+/* ── Header ─────────────────────────────────────────────────────────── */
+
+.ed-entity {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.ed-header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.ed-header-top {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.ed-name {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.ed-role {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin: 0 0 0.25rem;
+}
+
+.ed-description {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* ── Stats row ──────────────────────────────────────────────────────── */
+
+.ed-stats {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 3px solid hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 45%);
+  border-radius: var(--radius-lg);
+}
+
+.ed-stat-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 80px;
+}
+
+.ed-stat-heading {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.ed-stat-num {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* ── Stance indicator (reuses et-stance-track/dot) ──────────────────── */
+
+.ed-stance {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 6rem;
+}
+
+.ed-stance-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 40%);
+}
+
+/* ── Credibility (reuses et-credibility-bar/fill) ───────────────────── */
+
+.ed-credibility {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 6rem;
+}
+
+.ed-credibility-value {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+/* ── Attribution breakdown (reuses et-attr-*) ───────────────────────── */
+
+.ed-attribution {
+  margin-bottom: 1.5rem;
+}
+
+/* ── Scorecard ──────────────────────────────────────────────────────── */
+
+.ed-scorecard {
+  margin-bottom: 2rem;
+}
+
+.ed-scorecard h2 {
+  font-size: 1.1rem;
+  margin: 0 0 0.75rem;
+}
+
+.ed-scorecard-note {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin: 0.5rem 0 0;
+  font-style: italic;
+}
+
+/* ── Attribution badge ──────────────────────────────────────────────── */
+
+.ed-attr-badge {
+  display: inline-block;
+  padding: 0.1rem 0.45rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+.ed-attr-asserted    { background: var(--green); color: #fff; }
+.ed-attr-quoted      { background: var(--accent); color: #fff; }
+.ed-attr-paraphrased { background: var(--yellow); color: #000; }
+.ed-attr-mentioned   { background: var(--grey); color: #fff; }
+
+/* ── Claims section ─────────────────────────────────────────────────── */
+
+.ed-claims {
+  margin-bottom: 2rem;
+}
+
+.ed-claims h2 {
+  font-size: 1.1rem;
+  margin: 0 0 0.75rem;
+}
+
+.ed-claim-source {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.ed-claim-source a {
+  color: var(--accent);
+}
+
+.ed-claim-source-name {
+  padding: 0.05rem 0.35rem;
+  background: var(--bg-alt);
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+}
+
+/* ── Articles section ───────────────────────────────────────────────── */
+
+.ed-articles {
+  margin-bottom: 2rem;
+}
+
+.ed-articles h2 {
+  font-size: 1.1rem;
+  margin: 0 0 0.75rem;
+}
+
+.ed-articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0.75rem;
+}
+
+.ed-article-card {
+  display: block;
+  padding: 1rem 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow var(--transition), border-color var(--transition);
+}
+
+.ed-article-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  border-color: var(--accent);
+}
+
+.ed-article-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0 0 0.35rem;
+  line-height: 1.3;
+}
+
+.ed-article-meta {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.ed-article-source {
+  font-weight: 600;
+}
+
+.ed-article-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+/* ── Dark mode ──────────────────────────────────────────────────────── */
+
+@media (prefers-color-scheme: dark) {
+  .ed-stance-label {
+    color: hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 65%);
+  }
+  .ed-stats {
+    border-left-color: hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 55%);
+  }
+  .ed-article-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* ── Dark mode (data-theme) ────────────────────────────────────────── */
+
+[data-theme="dark"] .ed-stance-label {
+  color: hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 65%);
+}
+[data-theme="dark"] .ed-stats {
+  border-left-color: hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 55%);
+}
+[data-theme="dark"] .ed-article-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* ── Responsive ─────────────────────────────────────────────────────── */
+
+@media (max-width: 600px) {
+  .ed-name { font-size: 1.4rem; }
+  .ed-stats { gap: 0.75rem; padding: 0.75rem 1rem; }
+  .ed-articles-grid { grid-template-columns: 1fr; }
+  .ed-header-top { flex-direction: column; align-items: flex-start; gap: 0.35rem; }
+}

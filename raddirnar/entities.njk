@@ -1,0 +1,12 @@
+---
+pagination:
+  data: entity-details
+  size: 1
+  alias: entity
+permalink: "/raddirnar/{{ entity.slug }}/"
+layout: entity-detail.njk
+tags: entity-details
+eleventyComputed:
+  title: "{{ entity.name }}"
+  description: "{{ entity.description }}"
+---
