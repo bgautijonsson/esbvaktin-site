@@ -7,8 +7,15 @@ og_type: article
   <header class="report-header">
     <h1>{{ report.article_title }}</h1>
     <div class="report-meta">
-      {% if report.article_source %}<span class="report-source">{{ report.article_source }}</span>{% endif %}
-      {% if report.analysis_date %}<time datetime="{{ report.analysis_date }}">{{ report.analysis_date | isDate }}</time>{% endif %}
+      {% if report.article_source %}
+        {% if report.article_url %}
+          <a href="{{ report.article_url }}" class="report-source-link" target="_blank" rel="noopener">{{ report.article_source }} &#x2197;</a>
+        {% else %}
+          <span class="report-source">{{ report.article_source }}</span>
+        {% endif %}
+      {% endif %}
+      {% if report.article_author %}<span class="report-author">{{ report.article_author }}</span>{% endif %}
+      {% if report.article_date %}<time datetime="{{ report.article_date }}">{{ report.article_date | isDate }}</time>{% endif %}
     </div>
     <p class="report-summary">{{ report.summary }}</p>
   </header>

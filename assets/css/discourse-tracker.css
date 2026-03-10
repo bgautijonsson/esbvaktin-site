@@ -1,0 +1,331 @@
+/* ESBvaktin Discourse Tracker — Styles
+ *
+ * Uses global CSS custom properties from style.css.
+ * Includes shared ct-* control/stat styles (also used by claim-tracker).
+ */
+
+/* ── Layout ──────────────────────────────────────────────────────── */
+
+#discourse-tracker {
+  padding: 1rem;
+  font-family: var(--font);
+  color: var(--text);
+}
+
+/* ── Shared control/stat styles (ct-* classes) ───────────────────── */
+
+.ct-stats,
+.dt-stats {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.ct-stat {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.5rem 0.75rem;
+  text-align: center;
+  min-width: 70px;
+}
+
+.ct-stat-num {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.ct-stat-label {
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+}
+
+.ct-stat-loading {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  padding: 0.5rem;
+}
+
+.ct-controls {
+  margin-bottom: 1.25rem;
+}
+
+.ct-search-wrap {
+  margin-bottom: 0.75rem;
+}
+
+.ct-search {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.95rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  color: var(--text);
+  box-sizing: border-box;
+  transition: border-color var(--transition);
+}
+
+.ct-search:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+.ct-filter-row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.ct-select {
+  flex: 1;
+  min-width: 120px;
+  padding: 0.45rem 0.6rem;
+  font-size: 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.ct-loading,
+.ct-empty {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-secondary);
+}
+
+/* ── Results ─────────────────────────────────────────────────────── */
+
+.dt-results {
+  margin-top: 0.5rem;
+}
+
+/* ── Grid ────────────────────────────────────────────────────────── */
+
+.dt-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.25rem;
+}
+
+/* ── Group headers ───────────────────────────────────────────────── */
+
+.dt-group {
+  margin-bottom: 2rem;
+}
+
+.dt-group-header {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0 0 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--accent);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dt-group-count {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.1rem 0.45rem;
+}
+
+/* ── Report card ─────────────────────────────────────────────────── */
+
+.dt-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  text-decoration: none;
+  color: var(--text);
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.dt-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  text-decoration: none;
+}
+
+.dt-card-top {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.dt-card-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.dt-card-meta {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.dt-card-meta time {
+  white-space: nowrap;
+}
+
+.dt-author {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.dt-card-summary {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.dt-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 0.35rem;
+}
+
+.dt-card-verdicts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.dt-card-count {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ── Source badge ─────────────────────────────────────────────────── */
+
+.dt-source-badge {
+  display: inline-block;
+  padding: 0.1rem 0.45rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+/* Source-specific colours */
+.source-visir {
+  background: #1a73e8;
+  color: #fff;
+}
+
+.source-ruv {
+  background: #b91c1c;
+  color: #fff;
+}
+
+.source-mbl {
+  background: #1e3a5f;
+  color: #fff;
+}
+
+.source-heimildin {
+  background: #7c3aed;
+  color: #fff;
+}
+
+.source-kjarninn {
+  background: #059669;
+  color: #fff;
+}
+
+.source-stundin {
+  background: #d97706;
+  color: #fff;
+}
+
+.source-frettabladid {
+  background: #4b5563;
+  color: #fff;
+}
+
+.source-other {
+  background: var(--grey);
+  color: #fff;
+}
+
+/* ── External link ───────────────────────────────────────────────── */
+
+.dt-external-link {
+  margin-left: auto;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 0.1rem 0.3rem;
+  border-radius: var(--radius-sm);
+  transition: color var(--transition), background var(--transition);
+  flex-shrink: 0;
+}
+
+.dt-external-link:hover {
+  color: var(--accent);
+  background: var(--bg-alt);
+  text-decoration: none;
+}
+
+/* ── Responsive ──────────────────────────────────────────────────── */
+
+@media (max-width: 600px) {
+  .dt-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ct-filter-row {
+    flex-direction: column;
+  }
+
+  .ct-select {
+    min-width: unset;
+  }
+
+  .dt-card-meta {
+    flex-wrap: wrap;
+  }
+
+  .dt-author {
+    max-width: 150px;
+  }
+}
