@@ -56,6 +56,7 @@
 
   let filters = {
     search: "",
+    speaker: "",  // from URL param — filters against all speaker_names
     party: "",
     session: "",
     groupBy: "",
@@ -70,6 +71,12 @@
   // ── Initialisation ───────────────────────────────────────────────
 
   async function init() {
+    // Read URL params (e.g. ?speaker=Name from entity detail pages)
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("speaker")) {
+      filters.speaker = params.get("speaker");
+    }
+
     renderSkeleton();
 
     const resp = await fetch(JSON_URL);
@@ -88,11 +95,18 @@
   function queryDebates() {
     let results = [...jsonData];
 
+    if (filters.speaker) {
+      const sp = filters.speaker.toLowerCase();
+      results = results.filter(
+        (d) => d.speaker_names?.some((n) => n.toLowerCase().includes(sp))
+      );
+    }
     if (filters.search) {
       const q = filters.search.toLowerCase();
       results = results.filter(
         (d) =>
           d.issue_title?.toLowerCase().includes(q) ||
+          d.speaker_names?.some((n) => n.toLowerCase().includes(q)) ||
           d.top_speakers?.some((s) => s.name?.toLowerCase().includes(q))
       );
     }
@@ -218,6 +232,12 @@
         </div>
       </div>
 
+      ${filters.speaker ? `
+      <div class="st-speaker-filter" id="st-speaker-filter">
+        <span>Sýni þingræður <strong>${escapeHtml(filters.speaker)}</strong></span>
+        <button class="st-clear-speaker" id="st-clear-speaker" type="button">&times; Hreinsa síu</button>
+      </div>` : ""}
+
       <div class="st-results" id="st-results">
         <div class="ct-loading">Hle&eth; umr&aelig;&eth;um&hellip;</div>
       </div>
@@ -310,7 +330,7 @@
           ${althingiLink}
         </div>
         <h4 class="st-card-title">
-          <a href="/thingradur/${escapeHtml(debate.slug)}/" class="st-card-link">${escapeHtml(debate.issue_title)}</a>
+          <a href="/thingraedur/${escapeHtml(debate.slug)}/" class="st-card-link">${escapeHtml(debate.issue_title)}</a>
         </h4>
         <div class="st-card-meta">
           ${dateStr ? `<time>${dateStr}</time>` : ""}
@@ -365,6 +385,18 @@
       filters.sort = e.target.value;
       renderResults();
     });
+
+    const clearSpeaker = document.getElementById("st-clear-speaker");
+    if (clearSpeaker) {
+      clearSpeaker.addEventListener("click", () => {
+        filters.speaker = "";
+        window.history.replaceState({}, "", window.location.pathname);
+        renderSkeleton();
+        renderStats();
+        renderResults();
+        bindEvents();
+      });
+    }
   }
 
   // ── Utilities ────────────────────────────────────────────────────

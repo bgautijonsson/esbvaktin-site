@@ -105,6 +105,38 @@
   color: var(--text-secondary);
 }
 
+/* ── Speaker filter banner ───────────────────────────────────────── */
+
+.st-speaker-filter {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--bg-card);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.st-clear-speaker {
+  margin-left: auto;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+  transition: background var(--transition);
+}
+
+.st-clear-speaker:hover {
+  background: var(--bg-alt);
+}
+
 /* ── Results ─────────────────────────────────────────────────────── */
 
 .st-results {

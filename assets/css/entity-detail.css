@@ -247,6 +247,24 @@
   font-style: italic;
 }
 
+.ed-althingi-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--accent);
+  text-decoration: none;
+  padding: 0.25rem 0.65rem;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  transition: color var(--transition), background var(--transition);
+}
+
+.ed-althingi-link:hover {
+  color: #fff;
+  background: var(--accent);
+}
+
 .ed-stat-period {
   font-size: 0.95rem;
   font-weight: 500;
