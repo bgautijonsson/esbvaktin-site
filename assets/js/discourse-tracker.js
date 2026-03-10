@@ -304,7 +304,7 @@
       : "";
 
     const externalLink = report.article_url
-      ? `<a href="${escapeHtml(report.article_url)}" class="dt-external-link" target="_blank" rel="noopener" title="Upprunaleg grein" onclick="event.stopPropagation()">&#x2197;</a>`
+      ? `<a href="${escapeHtml(report.article_url)}" class="dt-external-link" target="_blank" rel="noopener">Upprunaleg grein &#x2197;</a>`
       : "";
 
     // Verdict pills
@@ -322,13 +322,15 @@
       : "";
 
     return `
-      <a href="/umraedan/${escapeHtml(report.slug)}/" class="dt-card">
+      <div class="dt-card">
         <div class="dt-card-top">
           ${sourceBadge}
           ${categoryTag}
           ${externalLink}
         </div>
-        <h4 class="dt-card-title">${escapeHtml(report.article_title)}</h4>
+        <h4 class="dt-card-title">
+          <a href="/umraedan/${escapeHtml(report.slug)}/" class="dt-card-link">${escapeHtml(report.article_title)}</a>
+        </h4>
         <div class="dt-card-meta">
           ${dateStr ? `<time>${dateStr}</time>` : ""}
           ${authorStr}
@@ -338,7 +340,7 @@
           <div class="dt-card-verdicts">${verdicts}</div>
           <span class="dt-card-count">${report.claim_count} fullyrðingar</span>
         </div>
-      </a>
+      </div>
     `;
   }
 
