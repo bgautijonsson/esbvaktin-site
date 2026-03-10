@@ -45,6 +45,15 @@
     unverifiable: "verdict-unverifiable",
   };
 
+  const SOURCE_TYPE_LABELS = {
+    news: "Frétt",
+    opinion: "Skoðun",
+    althingi: "Alþingi",
+    interview: "Viðtal",
+    analysis: "Greining",
+    other: "Annað",
+  };
+
   // ── State ────────────────────────────────────────────────────────
   let jsonData = null;
 
@@ -238,6 +247,25 @@
     }
     if (claim.canonical_text_en) {
       detailsHtml += `<div class="ct-detail ct-english"><strong>English:</strong> ${escapeHtml(claim.canonical_text_en)}</div>`;
+    }
+
+    if (claim.sightings && claim.sightings.length > 0) {
+      const sightingItems = claim.sightings
+        .map((s) => {
+          const typeLabel = SOURCE_TYPE_LABELS[s.source_type] || s.source_type || "";
+          const dateStr = s.source_date || "";
+          const title = s.source_title || s.source_url;
+          const meta = [typeLabel, dateStr].filter(Boolean).join(" · ");
+          return `<li class="ct-sighting-item">
+            <a href="${escapeHtml(s.source_url)}" target="_blank" rel="noopener">${escapeHtml(title)}</a>
+            ${meta ? `<span class="ct-sighting-meta">${escapeHtml(meta)}</span>` : ""}
+          </li>`;
+        })
+        .join("");
+      detailsHtml += `<div class="ct-detail ct-sightings">
+        <strong>Umræðan:</strong>
+        <ul class="ct-sighting-list">${sightingItems}</ul>
+      </div>`;
     }
 
     const sightingBadge =

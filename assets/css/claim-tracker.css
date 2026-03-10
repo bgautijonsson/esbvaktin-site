@@ -262,7 +262,7 @@
 }
 
 .ct-expanded .ct-card-details {
-  max-height: 500px;
+  max-height: 800px;
   transition: max-height 0.3s ease-in;
 }
 
@@ -285,6 +285,43 @@
 .ct-english {
   font-style: italic;
   font-size: 0.85rem;
+}
+
+/* ── Sightings (article sources) ────────────────────────────────── */
+
+.ct-sighting-list {
+  list-style: none;
+  margin: 0.35rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.ct-sighting-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 0.3rem 0.5rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.ct-sighting-item a {
+  font-size: 0.85rem;
+  color: var(--accent);
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.ct-sighting-item a:hover {
+  text-decoration: underline;
+}
+
+.ct-sighting-meta {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
 }
 
 /* ── Responsive ──────────────────────────────────────────────────── */
