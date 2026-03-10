@@ -5,7 +5,7 @@
   "article_source": null,
   "article_date": null,
   "analysis_date": "2026-03-09",
-  "summary": "Analysed 16 claims. Verdicts: 7 partially_supported, 7 unverifiable, 2 misleading. Framing: strongly_anti_eu. Completeness: 15%.",
+  "summary": "Greining á 16 fullyrðingum. Niðurstöður: 7 stutt að hluta, 7 óstaðfestanlegar, 2 villandi. Innramming: sterklega gegn ESB-aðild. Heildarsamhengi: 15%.",
   "verdict_counts": {
     "partially_supported": 7,
     "unverifiable": 7,
@@ -15,31 +15,35 @@
   "claims": [
     {
       "claim": {
-        "claim_text": "Viðreisn was founded with the purpose of getting Iceland into the EU",
         "original_quote": "tilgangur alls bramboltsins frá stofnun Viðreisnar nú innan seilingar – að koma Íslandi í Evrópusambandið",
+        "claim_text": "Viðreisn hafi verið stofnuð í þeim tilgangi að koma Íslandi í ESB.",
         "category": "party_positions",
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "POL-DATA-001 confirms that Viðreisn was founded in 2016 'partly on a pro-EU platform' and has consistently advocated for completing accession negotiations. However, the evidence states EU membership was part of the founding purpose, not the sole purpose. The article's framing — that getting Iceland into the EU was 'the purpose' — overstates the centrality of the EU issue to the party's founding, which also included liberal economic and social policies.",
+      "explanation": "<a href=\"https://www.althingi.is/\" title=\"Althingi — Party platforms and election results\" target=\"_blank\" rel=\"noopener\">POL-DATA-001</a> staðfestir að Viðreisn var stofnuð árið 2016 „meðal annars á grundvelli stuðnings við ESB-aðild\" og hefur stöðugt talað fyrir því að ljúka aðildarviðræðum. Heimildin segir hins vegar að ESB-aðild hafi verið hluti af stofnmarkmiðunum, ekki eina markmiðið. Greinin gefur til kynna að innganga í ESB hafi verið „tilgangur\" flokksins, en það ofmetur hversu miðlægt ESB-málið var við stofnun hans — önnur markmið voru einnig frjálslynd efnahags- og félagsmálastefna.",
       "supporting_evidence": [
-        "POL-DATA-001"
+        {
+          "id": "POL-DATA-001",
+          "source_name": "Althingi — Party platforms and election results",
+          "source_url": "https://www.althingi.is/"
+        }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Viðreisn's founding platform included broader liberal and reform-oriented policies beyond EU membership. The evidence says the party was founded 'partly' on a pro-EU platform, not exclusively for that purpose.",
+      "missing_context": "Stofnstefnuskrá Viðreisnar innihélt víðtækari frjálslynd og umbótamiðuð markmið umfram ESB-aðild. Heimildin segir að flokkurinn hafi verið stofnaður „meðal annars\" á grundvelli ESB-stuðnings, ekki eingöngu í þeim tilgangi.",
       "confidence": 0.75
     },
     {
       "claim": {
-        "claim_text": "The leader of Viðreisn is the current Foreign Minister of Iceland",
         "original_quote": "formaður Viðreisnar og utanríkisráðherra Íslands",
+        "claim_text": "Formaður Viðreisnar sé núverandi utanríkisráðherra Íslands.",
         "category": "party_positions",
         "claim_type": "legal_assertion",
         "confidence": 0.95
       },
       "verdict": "unverifiable",
-      "explanation": "The Ground Truth Database does not contain specific information about who currently leads Viðreisn or who holds the Foreign Minister portfolio. POL-DATA-001 confirms Viðreisn's pro-EU stance and parliamentary seats but does not name the party leader or current minister. This is a factual claim about current political office-holders that falls outside the evidence available.",
+      "explanation": "Heimildagrunnurinn inniheldur ekki upplýsingar um hver stýrir Viðreisn eða gegnir embætti utanríkisráðherra. <a href=\"https://www.althingi.is/\" title=\"Althingi — Party platforms and election results\" target=\"_blank\" rel=\"noopener\">POL-DATA-001</a> staðfestir afstöðu Viðreisnar til ESB og þingsæti flokksins en nefnir ekki formann né ráðherra. Þetta er staðhæfing um pólitískt embætti sem fellur utan gagnagrunnssviðs.",
       "supporting_evidence": [],
       "contradicting_evidence": [],
       "missing_context": null,
@@ -47,48 +51,56 @@
     },
     {
       "claim": {
-        "claim_text": "The leader of Viðreisn has worked politically to weaken the foundations of the fishing industry",
         "original_quote": "Manneskja sem hefur lagt allt sitt pólitíska þrek í veikja stoðir sjávarútvegs og renna Íslandi undir ESB",
+        "claim_text": "Formaður Viðreisnar hafi unnið pólitískt að því að veikja stoðir sjávarútvegsins.",
         "category": "party_positions",
         "claim_type": "opinion",
         "confidence": 0.5
       },
       "verdict": "unverifiable",
-      "explanation": "This is primarily an opinion claim attributing intent and impact to an unnamed individual (the Viðreisn leader). The evidence contains information about fishing industry organisations' opposition to EU membership (POL-DATA-014, POL-DATA-005) and the potential impact of EU membership on fisheries, but nothing about the specific actions of the Viðreisn leader towards the fishing industry. The claim conflates support for EU membership with deliberate weakening of fisheries — a rhetorical framing rather than a factual assertion.",
+      "explanation": "Þetta er fyrst og fremst skoðun sem eignar ónefndum einstaklingi (formanni Viðreisnar) ákveðna ásetning og áhrif. Heimildir fjalla um andstöðu sjávarútvegsfyrirtækja gegn ESB-aðild (POL-DATA-014, POL-DATA-005) og hugsanleg áhrif ESB-aðildar á sjávarútveg, en ekkert um tilteknar aðgerðir formanns Viðreisnar gagnvart sjávarútvegi. Fullyrðingin setur samasemmerki milli ESB-stuðnings og markvissrar veikingar sjávarútvegs — orðræðuleg innramming frekar en staðhæfing.",
       "supporting_evidence": [],
       "contradicting_evidence": [],
-      "missing_context": "The claim presents advocacy for EU membership as equivalent to 'weakening the fishing industry', which is a contested interpretation. POL-DATA-005 notes that the fishing sector's relative economic importance has declined regardless of EU policy, and any accession negotiation would likely involve special fisheries arrangements.",
+      "missing_context": "Fullyrðingin setur fram málsvörn fyrir ESB-aðild sem jafngilda „veikingu sjávarútvegs\", sem er umdeild túlkun. POL-DATA-005 bendir á að hlutfallslegt efnahagslegt mikilvægi sjávarútvegs hafi minnkað óháð ESB-stefnu og að sérstakar sjávarútvegslausnir yrðu líklega hluti aðildarviðræðna.",
       "confidence": 0.4
     },
     {
       "claim": {
-        "claim_text": "RÚV reported last Friday that no permanent derogations are available in EU accession",
         "original_quote": "Ríkisútvarpið sagði frá því síðastliðinn föstudag að „engar varanlegar undanþágur séu í boði“",
+        "claim_text": "RÚV greindi frá því síðastliðinn föstudag að engar varanlegar undanþágur séu í boði við ESB-aðild.",
         "category": "eea_eu_law",
         "claim_type": "legal_assertion",
         "confidence": 0.85
       },
       "verdict": "partially_supported",
-      "explanation": "The underlying legal claim — that no permanent derogations are available — is broadly consistent with the EU's post-2004 enlargement stance. SOV-LEGAL-006 confirms that the EU has become less willing to grant opt-outs to new member states, and Croatia (2013) received no significant opt-outs. However, the evidence also shows important nuances: Denmark, Ireland, and Poland have secured various opt-outs and protocols (SOV-LEGAL-006, SOV-LEGAL-011), and there is a distinction between formal 'permanent derogations' from the acquis and treaty protocols/opt-outs negotiated as part of accession. Whether RÚV actually reported this is not verifiable from the evidence.",
+      "explanation": "Undirliggjandi lagaleg fullyrðing — að engar varanlegar undanþágur séu í boði — er í stórum dráttum í samræmi við afstöðu ESB eftir stækkun 2004. SOV-LEGAL-006 staðfestir að ESB hefur verið síður tilbúið til að veita undanþágur til nýrra aðildarríkja og Króatía (2013) fékk engar verulegar undanþágur. Heimildir sýna þó mikilvæga blæbrigði: Danmörk, Írland og Pólland hafa tryggt sér ýmsar undanþágur og bókanir (SOV-LEGAL-006, SOV-LEGAL-011), og greinarmunur er á formlegum „varanlegum undanþágum\" frá regluverkinu annars vegar og sáttmálabókunum/aðlögunarfyrirkomulagi hins vegar. Hvort RÚV hafi raunverulega greint frá þessu er ekki staðfestanlegt úr heimildum.",
       "supporting_evidence": [
-        "SOV-LEGAL-006"
+        {
+          "id": "SOV-LEGAL-006",
+          "source_name": "Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols",
+          "source_url": null
+        }
       ],
       "contradicting_evidence": [
-        "SOV-LEGAL-011"
+        {
+          "id": "SOV-LEGAL-011",
+          "source_name": "Treaty of Lisbon — Protocol on the concerns of the Irish people; Protocol 21 on UK and Ireland (JHA opt-in)",
+          "source_url": null
+        }
       ],
-      "missing_context": "There is a crucial distinction between 'permanent derogations from the acquis' (which are indeed extremely rare for new member states) and accession treaty protocols, transitional arrangements, and specific accommodations. Denmark and Ireland demonstrate that significant policy flexibility can be secured within EU membership, though the EU's willingness to grant such arrangements has diminished since 2004.",
+      "missing_context": "Mikilvægur greinarmunur er á „varanlegum undanþágum frá regluverkinu\" (sem eru sannarlega afar sjaldgæfar fyrir ný aðildarríki) og sáttmálabókunum, aðlögunarfyrirkomulagi og sérstökum tilhögunum. Danmörk og Írland sýna fram á að verulegur sveigjanleiki getur náðst innan ESB-aðildar, þótt vilji ESB til að veita slíkt hafi minnkað frá 2004.",
       "confidence": 0.6
     },
     {
       "claim": {
-        "claim_text": "Heather Grabbe is an expert at the Bruegel think tank",
         "original_quote": "Heather Grabbe, sérfræðing hjá Bruegel hugveitunni",
+        "claim_text": "Heather Grabbe sé sérfræðingur hjá Bruegel hugveitunni.",
         "category": "other",
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
       "verdict": "unverifiable",
-      "explanation": "The Ground Truth Database contains no information about Heather Grabbe or the Bruegel think tank. None of the retrieved evidence entries (which cover professional qualifications, EEA grants, research funding, and trade) are relevant to verifying this individual's affiliation. This is a biographical fact that falls outside the database's scope.",
+      "explanation": "Heimildagrunnurinn inniheldur engar upplýsingar um Heather Grabbe eða Bruegel hugveituna. Engar viðeigandi heimildir fundust til staðfestingar á tengslum þessa einstaklings við stofnunina. Þetta er ævisöguleg staðreynd sem fellur utan gagnagrunnsins.",
       "supporting_evidence": [],
       "contradicting_evidence": [],
       "missing_context": null,
@@ -96,151 +108,227 @@
     },
     {
       "claim": {
-        "claim_text": "95% of EU regulations are non-negotiable, as the 27 member states have already agreed on those parts",
         "original_quote": "95% af reglubókum ESB eru óhagganlegar, þar sem ríkin 27 hafa þegar samþykkt þá hluta",
+        "claim_text": "95% af regluverki ESB séu óumsemjanleg þar sem 27 aðildarríkin hafi þegar samþykkt þá hluta.",
         "category": "eea_eu_law",
         "claim_type": "statistic",
         "confidence": 0.7
       },
       "verdict": "partially_supported",
-      "explanation": "The core principle is broadly correct: acceding states must adopt the full acquis communautaire, and the vast majority of EU law is not open for renegotiation during accession. EEA-DATA-001 confirms over 151,000 binding legal acts exist. SOV-LEGAL-006 confirms that the EU's position since 2004 has been to grant fewer opt-outs. However, the specific '95%' figure is not substantiated by any evidence and appears to be an approximation. SOV-LEGAL-004 notes that even mandatory requirements (like euro adoption) can be effectively deferred indefinitely. The claim also conflates the acquis being 'agreed upon' with it being literally 'non-negotiable' — transitional arrangements, timelines, and specific protocols can be negotiated.",
+      "explanation": "Grundvallarreglan er í stórum dráttum rétt: ríki sem ganga í ESB verða að taka upp allt regluverkið (acquis communautaire) og langstærstur hluti ESB-löggjafar er ekki opinn til endurskoðunar við aðildarviðræður. <a href=\"https://eur-lex.europa.eu/statistics/legislative-acts-statistics.html\" title=\"EUR-Lex — Legislation statistics\" target=\"_blank\" rel=\"noopener\">EEA-DATA-001</a> staðfestir að yfir 151.000 bindandi lagagerðir séu til. SOV-LEGAL-006 staðfestir að afstaða ESB frá 2004 hefur verið að veita færri undanþágur. Hins vegar er talan „95%\" ekki studd af neinum heimildum og virðist vera nálgun. SOV-LEGAL-004 bendir á að jafnvel lögboðnar kröfur (eins og upptaka evru) geti í raun verið frestaðar endalaust. Fullyrðingin blandar saman því að regluverkið sé „samþykkt\" og að það sé bókstaflega „óumsemjanlegt\" — aðlögunartímabil, tímarammar og sérstakar bókanir eru umsemjanleg atriði.",
       "supporting_evidence": [
-        "EEA-DATA-001",
-        "SOV-LEGAL-006"
+        {
+          "id": "EEA-DATA-001",
+          "source_name": "EUR-Lex — Legislation statistics",
+          "source_url": "https://eur-lex.europa.eu/statistics/legislative-acts-statistics.html"
+        },
+        {
+          "id": "SOV-LEGAL-006",
+          "source_name": "Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols",
+          "source_url": null
+        }
       ],
       "contradicting_evidence": [
-        "SOV-LEGAL-004"
+        {
+          "id": "SOV-LEGAL-004",
+          "source_name": "Treaty on the Functioning of the European Union, Article 140",
+          "source_url": null
+        }
       ],
-      "missing_context": "While the acquis must be adopted in principle, accession negotiations involve 33+ chapters where implementation timelines, transitional arrangements, and specific accommodations are negotiated. The '95%' figure lacks a clear source. Additionally, SOV-LEGAL-004 shows that even formally mandatory obligations (euro adoption) can be deferred in practice, as Sweden has demonstrated since 2003.",
+      "missing_context": "Þótt regluverkið verði að vera tekið upp í grundvallaratriðum fela aðildarviðræður í sér 33+ kafla þar sem innleiðingartímarammar, aðlögunarfyrirkomulag og sérstakar lausnir eru samið um. Talan „95%\" skortir skýra heimild. Auk þess sýnir SOV-LEGAL-004 að jafnvel formlega skyldubundnar kröfur (evruupptaka) geta verið sniðgengnar í framkvæmd, eins og Svíþjóð hefur sýnt síðan 2003.",
       "confidence": 0.55
     },
     {
       "claim": {
-        "claim_text": "Countries that have joined the EU have had to accept all parts of the acquis",
         "original_quote": "Ríki hafa gerst aðilar og þurft að undirgangast alla þá þætti",
+        "claim_text": "Ríki sem hafa gengið í ESB hafi þurft að samþykkja alla hluta regluverksins.",
         "category": "eea_eu_law",
         "claim_type": "legal_assertion",
         "confidence": 0.85
       },
       "verdict": "partially_supported",
-      "explanation": "EEA-DATA-003 confirms that new member states must adopt the full acquis communautaire, and the accession process involves screening 33 chapters of EU law. SOV-LEGAL-004 confirms euro adoption is mandatory for new members. However, the claim oversimplifies: SOV-LEGAL-006 shows that Denmark, Ireland, Poland, and the Czech Republic have all secured opt-outs or special protocols. While the EU's stance has hardened since 2004, and Croatia received no significant opt-outs, the historical record shows that 'accepting all parts' has not been absolute in practice.",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/statistics/legislative-acts-statistics.html\" title=\"EUR-Lex — Legislation statistics\" target=\"_blank\" rel=\"noopener\">EEA-DATA-003</a> staðfestir að ný aðildarríki verða að taka upp allt regluverkið og aðildarferlið felur í sér skoðun á 33 köflum ESB-löggjafar. SOV-LEGAL-004 staðfestir að evruupptaka sé lögboðin nýjum aðildarríkjum. Fullyrðingin er þó of einföld: SOV-LEGAL-006 sýnir að Danmörk, Írland, Pólland og Tékkland hafa öll tryggt sér undanþágur eða sérstakar bókanir. Þótt afstaða ESB hafi hert frá 2004 og Króatía hafi ekki fengið neinar verulegar undanþágur sýnir sagan að „samþykkja alla hluta\" hefur ekki verið algilt í framkvæmd.",
       "supporting_evidence": [
-        "EEA-DATA-003",
-        "SOV-LEGAL-004"
+        {
+          "id": "EEA-DATA-003",
+          "source_name": "EUR-Lex — Legislation statistics",
+          "source_url": "https://eur-lex.europa.eu/statistics/legislative-acts-statistics.html"
+        },
+        {
+          "id": "SOV-LEGAL-004",
+          "source_name": "Treaty on the Functioning of the European Union, Article 140",
+          "source_url": null
+        }
       ],
       "contradicting_evidence": [
-        "SOV-LEGAL-006"
+        {
+          "id": "SOV-LEGAL-006",
+          "source_name": "Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols",
+          "source_url": null
+        }
       ],
-      "missing_context": "While the principle of full acquis adoption is correct, several member states hold significant opt-outs (Denmark on the euro, Ireland on Schengen and JHA). Furthermore, euro adoption, though mandatory in principle, has no enforcement mechanism — Sweden has avoided it since 2003 (SOV-LEGAL-004). Transitional periods for implementing specific legislation are standard in accession treaties.",
+      "missing_context": "Þótt meginreglan um fulla upptöku regluverksins sé rétt hafa nokkur aðildarríki verulegar undanþágur (Danmörk frá evru, Írland frá Schengen og refsimálum). Enn fremur hefur evruupptaka, þótt lögboðin sé í grundvallaratriðum, engan framfylgdarferil — Svíþjóð hefur forðast hana frá 2003 (SOV-LEGAL-004). Aðlögunartímabil eru staðalbúnaður í aðildarsáttmálum.",
       "confidence": 0.7
     },
     {
       "claim": {
-        "claim_text": "An acceding country can only negotiate the timeline for implementing EU rules and regulations, not opt out of them",
         "original_quote": "ríki sem vill ganga í sambandið getur alltaf samið um tímalínu innleiðingar ESB-reglna og reglugerða",
+        "claim_text": "Ríki sem vill ganga í ESB geti einungis samið um tímalínu innleiðingar ESB-reglna, ekki fengið undanþágur frá þeim.",
         "category": "eea_eu_law",
         "claim_type": "legal_assertion",
         "confidence": 0.8
       },
       "verdict": "partially_supported",
-      "explanation": "The claim is largely correct for post-2004 accession states. SOV-LEGAL-006 confirms the EU's position has been to grant fewer opt-outs since 2004, and Croatia (2013) received no significant opt-outs. Transitional periods for implementation are indeed the standard negotiation tool. However, the claim is too absolute: SOV-LEGAL-006 also notes that Denmark, Ireland, Poland, and Czech Republic have protocols/opt-outs, and Iceland's unique position (especially fisheries) could be a basis for negotiation. SOV-LEGAL-004 shows that even mandatory commitments like euro adoption have no enforcement deadline.",
+      "explanation": "Fullyrðingin er að mestu rétt hvað varðar ríki sem gengu í eftir 2004. SOV-LEGAL-006 staðfestir að afstaða ESB hefur verið sú að veita færri undanþágur frá 2004 og Króatía (2013) fékk engar verulegar undanþágur. Aðlögunartímabil eru sannarlega aðalviðræðutækið. Fullyrðingin er þó of alger: SOV-LEGAL-006 bendir einnig á að Danmörk, Írland, Pólland og Tékkland hafi bókanir/undanþágur og sérstök staða Íslands (einkum sjávarútvegur) gæti verið grundvöllur viðræðna. SOV-LEGAL-004 sýnir að jafnvel lögboðnar skuldbindingar eins og evruupptaka hafa engan framfylgdarfrest.",
       "supporting_evidence": [
-        "SOV-LEGAL-006"
+        {
+          "id": "SOV-LEGAL-006",
+          "source_name": "Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols",
+          "source_url": null
+        }
       ],
       "contradicting_evidence": [
-        "SOV-LEGAL-004",
-        "SOV-LEGAL-006"
+        {
+          "id": "SOV-LEGAL-004",
+          "source_name": "Treaty on the Functioning of the European Union, Article 140",
+          "source_url": null
+        },
+        {
+          "id": "SOV-LEGAL-006",
+          "source_name": "Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols",
+          "source_url": null
+        }
       ],
-      "missing_context": "While the EU's general position for new members is acquis adoption with transitional timelines, the evidence shows this is not absolute. Treaty protocols and specific accommodations remain possible, even if harder to secure than before 2004. Sweden's indefinite deferral of euro adoption (SOV-LEGAL-004) demonstrates that even formal obligations can be circumvented in practice.",
+      "missing_context": "Þótt almenn afstaða ESB gagnvart nýjum aðildarríkjum sé upptaka regluverks með aðlögunartíma sýna heimildir að þetta sé ekki algilt. Sáttmálabókanir og sérstakar lausnir eru enn mögulegar, þótt erfiðara sé að ná þeim en fyrir 2004. Dæmi Svíþjóðar um endalausan frest á evruupptöku (SOV-LEGAL-004) sýnir að jafnvel formlegar skuldbindingar er hægt að sniðganga í framkvæmd.",
       "confidence": 0.65
     },
     {
       "claim": {
-        "claim_text": "The EU also wants to set timeframes on certain benefits/advantages for new members",
         "original_quote": "ESB vill sömuleiðis setja einhvern tímaramma á einhver hlunnindi",
+        "claim_text": "ESB vilji einnig setja tímaramma á ákveðin hlunnindi fyrir ný aðildarríki.",
         "category": "eea_eu_law",
         "claim_type": "legal_assertion",
         "confidence": 0.7
       },
       "verdict": "partially_supported",
-      "explanation": "This claim likely refers to the phased introduction of benefits such as CAP payments or structural funds for new members. SOV-LEGAL-004 confirms that convergence criteria must be met before euro adoption (with its associated benefits). AGRI-LEGAL-001 and the evidence on CAP suggest benefits are phased in. Historical precedent from the 2004 enlargement shows that CAP direct payments were indeed phased in over approximately 10 years for new member states. However, the Ground Truth DB does not contain specific evidence on EU-imposed timeframes for benefits during accession negotiations.",
+      "explanation": "Fullyrðingin vísar líklega til stigvaxandi innleiðingar á ávinningi eins og beingreiðslum sameiginlegu landbúnaðarstefnunnar eða uppbyggingarsjóðum. SOV-LEGAL-004 staðfestir að samleitniviðmið verða að vera uppfyllt áður en evran er tekin upp (ásamt tengdum ávinningi). AGRI-LEGAL-001 og heimildir um landbúnaðarstefnuna benda til þrepaskiptrar innleiðingar ávinnings. Söguleg fordæmi frá stækkun 2004 sýna að beingreiðslur landbúnaðarstefnunnar voru innleiddar í áföngum yfir u.þ.b. 10 ár. Heimildagrunnurinn inniheldur þó ekki sértækar heimildir um tímaramma ESB á ávinningi í aðildarviðræðum.",
       "supporting_evidence": [
-        "SOV-LEGAL-004"
+        {
+          "id": "SOV-LEGAL-004",
+          "source_name": "Treaty on the Functioning of the European Union, Article 140",
+          "source_url": null
+        }
       ],
       "contradicting_evidence": [],
-      "missing_context": "The 2004 and 2007 accession treaties included phased introduction of CAP direct payments, structural fund allocations, and labour mobility (some old member states imposed transitional restrictions on free movement of workers from new members for up to 7 years). This is standard practice in EU enlargement but the specific terms vary by negotiation.",
+      "missing_context": "Aðildarsáttmálar 2004 og 2007 innihéldu stigvaxandi innleiðingu á beingreiðslum landbúnaðarstefnunnar, úthlutunum uppbyggingarsjóða og hreyfanleika vinnuafls (sum eldri aðildarríki settu bráðabirgðatakmarkanir á frelsi til flutninga starfsmanna frá nýjum aðildarríkjum í allt að 7 ár). Þetta er hefðbundið í stækkun ESB en sérkjörin eru mismunandi eftir viðræðum.",
       "confidence": 0.55
     },
     {
       "claim": {
-        "claim_text": "Polish farmers had to wait a decade to receive subsidies under the EU Common Agricultural Policy",
         "original_quote": "Pólskir bændur þurftu til dæmis að bíða í áratug eftir að fá niðurgreiðslur til sín samkvæmt sameiginlegur landbúnaðarstefnu ESB",
+        "claim_text": "Pólskir bændur hafi þurft að bíða í áratug eftir niðurgreiðslum samkvæmt sameiginlegri landbúnaðarstefnu ESB.",
         "category": "precedents",
         "claim_type": "statistic",
         "confidence": 0.7
       },
       "verdict": "partially_supported",
-      "explanation": "The Ground Truth DB does not contain specific evidence about Poland's CAP phase-in timeline. AGRI-LEGAL-001 confirms the CAP framework and its scale, and AGRI-DATA-004 discusses subsidy structures. Based on well-established historical fact, Polish farmers did receive CAP payments from accession in 2004, but at reduced levels — starting at 25% of the EU-15 rate and gradually increasing to full parity. Full equalisation was reached around 2013, approximately a decade after accession. So the claim is misleading in implying they received nothing for a decade, but broadly correct that full CAP subsidy parity took about 10 years.",
+      "explanation": "Heimildagrunnurinn inniheldur ekki sértækar heimildir um tímalínu innleiðingar landbúnaðarstefnunnar í Póllandi. AGRI-LEGAL-001 staðfestir ramma landbúnaðarstefnunnar og umfang hennar, og <a href=\"https://www.oecd.org/agriculture/topics/agricultural-policy-monitoring-and-evaluation/\" title=\"OECD — Agricultural Policy Monitoring and Evaluation 2024; Bændasamtök Íslands\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-004</a> fjallar um uppbyggingu styrkja. Samkvæmt staðreyndum fengu pólskir bændur beingreiðslur strax frá aðild 2004 en á lægra stigi — byrjað á 25% af hlutfalli ESB-15 og hækkað smátt og smátt upp í fullt jafnrétti. Fullt jafnrétti náðist um 2013, um áratug eftir aðild. Fullyrðingin er því villandi að því leyti að hún gefur til kynna að þeir hafi ekkert fengið í áratug, en er í stórum dráttum rétt um að fullt jafnrétti í greiðslum hafi tekið um 10 ár.",
       "supporting_evidence": [
-        "AGRI-LEGAL-001"
+        {
+          "id": "AGRI-LEGAL-001",
+          "source_name": "European Commission — CAP at a glance",
+          "source_url": null
+        }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Polish farmers began receiving CAP payments immediately upon EU accession in 2004, but at only 25% of the rate paid to EU-15 farmers. These payments increased incrementally each year, reaching full parity around 2013. The claim that they 'had to wait a decade' is misleading — they received partial payments from day one, but did not reach full parity for approximately 10 years.",
+      "missing_context": "Pólskir bændur fengu greiðslur samkvæmt landbúnaðarstefnunni strax við aðild 2004, en aðeins 25% af því hlutfalli sem bændur í ESB-15 fengu. Greiðslurnar hækkuðu smátt og smátt á hverju ári og náðu fullu jafnrétti um 2013. Fullyrðingin um að þeir hafi „þurft að bíða í áratug\" er villandi — þeir fengu hlutagreiðslur frá fyrsta degi en náðu ekki fullu jafnrétti fyrr en eftir um 10 ár.",
       "confidence": 0.6
     },
     {
       "claim": {
-        "claim_text": "There are no opt-outs available anymore for countries joining the EU",
         "original_quote": "það er ekki lengur hægt að hafna tilteknum skilmálum (e. there are no opt-outs available anymore)",
+        "claim_text": "Ekki sé lengur hægt að fá undanþágur frá skilmálum ESB-aðildar.",
         "category": "eea_eu_law",
         "claim_type": "legal_assertion",
         "confidence": 0.8
       },
       "verdict": "misleading",
-      "explanation": "The claim captures a real trend — SOV-LEGAL-006 and SOV-LEGAL-010 confirm the EU has become less willing to grant opt-outs since the 2004 enlargement, and Croatia (2013) received no significant opt-outs. However, stating there are 'no opt-outs available anymore' is too categorical. SOV-LEGAL-006 explicitly states that 'Iceland's unique position (especially on fisheries) could be a basis for negotiation.' SOV-LEGAL-011 shows Ireland secured protocols as recently as the Lisbon Treaty. PREC-HIST-010 documents Denmark still holding functional opt-outs. The distinction between formal opt-outs, treaty protocols, transitional arrangements, and de facto non-compliance (Sweden/euro) is critical context the claim omits.",
+      "explanation": "Fullyrðingin endurspeglar raunverulega þróun — SOV-LEGAL-006 og SOV-LEGAL-010 staðfesta að ESB hefur verið síður tilbúið til að veita undanþágur frá stækkun 2004 og Króatía (2013) fékk engar verulegar undanþágur. Hins vegar er of aftrátt að segja að „engar undanþágur séu í boði lengur\". SOV-LEGAL-006 segir beinlínis að „sérstök staða Íslands (einkum sjávarútvegur) gæti verið grundvöllur viðræðna.\" SOV-LEGAL-011 sýnir að Írland tryggði sér bókanir allt til Lissabon-sáttmálans. PREC-HIST-010 skráir að Danmörk heldur enn virkum undanþágum. Greinarmunurinn á formlegum undanþágum, sáttmálabókunum, aðlögunarfyrirkomulagi og raunverulegri óhlýðni (Svíþjóð/evra) er mikilvægt samhengi sem fullyrðingin vanrækir.",
       "supporting_evidence": [
-        "SOV-LEGAL-006",
-        "SOV-LEGAL-010",
-        "PREC-HIST-010"
+        {
+          "id": "SOV-LEGAL-006",
+          "source_name": "Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols",
+          "source_url": null
+        },
+        {
+          "id": "SOV-LEGAL-010",
+          "source_name": "Edinburgh Agreement (1992); Danish Ministry of Foreign Affairs — Denmark's EU opt-outs",
+          "source_url": null
+        },
+        {
+          "id": "PREC-HIST-010",
+          "source_name": "Danish Ministry of Foreign Affairs; Edinburgh Agreement 1992; European Council conclusions",
+          "source_url": null
+        }
       ],
       "contradicting_evidence": [
-        "SOV-LEGAL-011",
-        "SOV-LEGAL-006"
+        {
+          "id": "SOV-LEGAL-011",
+          "source_name": "Treaty of Lisbon — Protocol on the concerns of the Irish people; Protocol 21 on UK and Ireland (JHA opt-in)",
+          "source_url": null
+        },
+        {
+          "id": "SOV-LEGAL-006",
+          "source_name": "Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols",
+          "source_url": null
+        }
       ],
-      "missing_context": "While the EU has become stricter on granting formal opt-outs to new member states, several mechanisms for flexibility exist: treaty protocols, transitional arrangements, and de facto non-compliance (as Sweden demonstrates with the euro — SOV-LEGAL-004). Denmark's opt-outs remain in force, and Ireland secured constitutional protections as recently as the Lisbon Treaty. The claim conflates the EU's negotiating stance with an absolute legal impossibility.",
+      "missing_context": "Þótt ESB hafi orðið strangara í að veita formlegum undanþágum til nýrra aðildarríkja eru til nokkrir sveigjanleikamechanismar: sáttmálabókanir, aðlögunarfyrirkomulag og raunveruleg óhlýðni (eins og Svíþjóð sýnir með evruna — SOV-LEGAL-004). Undanþágur Danmerkur eru enn í gildi og Írland tryggði sér stjórnarskrárvernd allt til Lissabon-sáttmálans. Fullyrðingin blandar saman viðræðuafstöðu ESB og algerri lagalegri ómöguleika.",
       "confidence": 0.75
     },
     {
       "claim": {
-        "claim_text": "Stefan Füle, then EU Enlargement Commissioner, stated at a press conference with Össur Skarphéðinsson that there are no permanent derogations from the EU acquis",
         "original_quote": "Stefan Fule, þáverandi stækkunarstjóri ESB, sagði forðum á blaðamannafundinum með Össuri Skarphéðinssyni, þáverandi utanríkisráðherra: Það eru engar varanlegar undanþágur frá regluverki ESB",
+        "claim_text": "Stefan Füle, þáverandi stækkunarstjóri ESB, hafi sagt á blaðamannafundi með Össuri Skarphéðinssyni að engar varanlegar undanþágur séu frá regluverki ESB.",
         "category": "eea_eu_law",
         "claim_type": "legal_assertion",
         "confidence": 0.8
       },
       "verdict": "unverifiable",
-      "explanation": "The Ground Truth Database does not contain records of specific statements by Stefan Füle or details of press conferences during Iceland's accession negotiations. While the substance of the attributed quote — that there are no permanent derogations from the acquis — is broadly consistent with the EU's enlargement policy as reflected in SOV-LEGAL-006, the specific attribution and quotation cannot be verified from the available evidence. The underlying legal principle is largely correct, though nuanced by the existence of treaty protocols and opt-outs for existing members.",
+      "explanation": "Heimildagrunnurinn inniheldur ekki skráningar á tilteknum yfirlýsingum Stefan Füle eða upplýsingar um blaðamannafundi á meðan aðildarviðræður Íslands stóðu. Efni tilvitnunarinnar — að engar varanlegar undanþágur séu frá regluverkinu — er í stórum dráttum í samræmi við stækkunarstefnu ESB eins og hún kemur fram í SOV-LEGAL-006, en tilvitnunin sjálf og aðstæðurnar eru óstaðfestanlegar úr tiltækum heimildum. Undirliggjandi lagaregla er að mestu rétt, þótt hún sé blæbrigðarík vegna sáttmálabókana og undanþága núverandi aðildarríkja.",
       "supporting_evidence": [
-        "SOV-LEGAL-006"
+        {
+          "id": "SOV-LEGAL-006",
+          "source_name": "Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols",
+          "source_url": null
+        }
       ],
       "contradicting_evidence": [
-        "SOV-LEGAL-011"
+        {
+          "id": "SOV-LEGAL-011",
+          "source_name": "Treaty of Lisbon — Protocol on the concerns of the Irish people; Protocol 21 on UK and Ireland (JHA opt-in)",
+          "source_url": null
+        }
       ],
-      "missing_context": "Even if this quote is accurate, the EU's own practice demonstrates that 'permanent derogations' and 'treaty protocols' occupy different legal categories. Denmark's euro opt-out and Ireland's Schengen opt-out are functionally permanent accommodations, even if they are technically treaty protocols rather than derogations from the acquis.",
+      "missing_context": "Jafnvel þótt tilvitnunin sé rétt sýnir framkvæmd ESB sjálfs að „varanlegar undanþágur\" og „sáttmálabókanir\" tilheyra mismunandi lagaflokkum. Evruundanþága Danmerkur og Schengen-undanþága Írlands eru í raun varanlegar lausnir, jafnvel þótt þær séu tæknilega sáttmálabókanir frekar en undanþágur frá regluverkinu.",
       "confidence": 0.4
     },
     {
       "claim": {
-        "claim_text": "Össur Skarphéðinsson was Foreign Minister of Iceland at the time of the press conference with Stefan Füle",
         "original_quote": "Össuri Skarphéðinssyni, þáverandi utanríkisráðherra",
+        "claim_text": "Össur Skarphéðinsson hafi verið utanríkisráðherra Íslands þegar blaðamannafundurinn með Stefan Füle var haldinn.",
         "category": "party_positions",
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
       "verdict": "unverifiable",
-      "explanation": "The Ground Truth Database does not contain information about who held the Foreign Minister position during Iceland's 2009–2013 EU accession negotiations. EEA-DATA-009 confirms that Iceland applied for EU membership in July 2009 under a Social Democrat-led government and that negotiations progressed through 2013, which is consistent with the timeframe implied, but does not name specific ministers.",
+      "explanation": "Heimildagrunnurinn inniheldur ekki upplýsingar um hver gegndi embætti utanríkisráðherra meðan á aðildarviðræðum Íslands 2009–2013 stóð. EEA-DATA-009 staðfestir að Ísland sótti um ESB-aðild í júlí 2009 undir forystu Samfylkingar og að viðræður stóðu til 2013, sem er í samræmi við tímaramma fullyrðingarinnar, en nefnir ekki ráðherra.",
       "supporting_evidence": [
-        "EEA-DATA-009"
+        {
+          "id": "EEA-DATA-009",
+          "source_name": "European Commission — Iceland: Accession negotiations status; Althingi records",
+          "source_url": null
+        }
       ],
       "contradicting_evidence": [],
       "missing_context": null,
@@ -248,38 +336,62 @@
     },
     {
       "claim": {
-        "claim_text": "The EU accession terms are already known and publicly available — there is nothing unexpected about what agreement Iceland would get",
         "original_quote": "Það er nefnilega ekkert óvænt við það hvaða samning Íslandi bíðst að loknum aðlögunarviðræðum við ESB. Það liggur fyrir og allir geta kynnt sér það.",
+        "claim_text": "Aðildarkjör ESB séu þegar þekkt og aðgengileg almenningi — ekkert sé óvænt við þann samning sem Íslandi bíðst.",
         "category": "eea_eu_law",
         "claim_type": "opinion",
         "confidence": 0.7
       },
       "verdict": "misleading",
-      "explanation": "While the general framework of EU membership is well-established and publicly accessible — TRADE-DATA-002, SOV-LEGAL-014, and SOV-LEGAL-012 describe the broad contours of what membership entails — the claim that 'there is nothing unexpected' about Iceland's specific accession terms is misleading. SOV-LEGAL-006 explicitly states that 'whether Iceland could negotiate similar opt-outs during accession is a political question with no guaranteed outcome.' EEA-DATA-009 notes that the most contentious chapters (fisheries, agriculture, free movement of capital) remained unresolved when negotiations were suspended in 2013, and the EU's stance may have hardened since then.",
+      "explanation": "Þótt almennur rammi ESB-aðildar sé vel þekktur og aðgengilegur — TRADE-DATA-002, SOV-LEGAL-014 og <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland); University of Iceland — Faculty of Law analyses\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-012</a> lýsa grunndrættum aðildarinnar — er fullyrðingin um að „ekkert sé óvænt\" við sérstök aðildarkjör Íslands villandi. SOV-LEGAL-006 segir beinlínis að „hvort Ísland gæti samið um sambærilegar undanþágur í aðildarviðræðum er pólitísk spurning með enga tryggða niðurstöðu.\" EEA-DATA-009 bendir á að umdeildustu kaflarnir (sjávarútvegur, landbúnaður, frjálst flæði fjármagns) voru óleystir þegar viðræðum var frestað 2013 og afstaða ESB kann að hafa hert síðan þá.",
       "supporting_evidence": [
-        "TRADE-DATA-002",
-        "SOV-LEGAL-014"
+        {
+          "id": "TRADE-DATA-002",
+          "source_name": "EEA Agreement — Protocol 3 on trade in processed agricultural products",
+          "source_url": null
+        },
+        {
+          "id": "SOV-LEGAL-014",
+          "source_name": "TEU, Title V — CFSP provisions; Icelandic Ministry for Foreign Affairs — Annual alignment reports",
+          "source_url": null
+        }
       ],
       "contradicting_evidence": [
-        "SOV-LEGAL-006",
-        "EEA-DATA-009",
-        "SOV-LEGAL-012"
+        {
+          "id": "SOV-LEGAL-006",
+          "source_name": "Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols",
+          "source_url": null
+        },
+        {
+          "id": "EEA-DATA-009",
+          "source_name": "European Commission — Iceland: Accession negotiations status; Althingi records",
+          "source_url": null
+        },
+        {
+          "id": "SOV-LEGAL-012",
+          "source_name": "Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland); University of Iceland — Faculty of Law analyses",
+          "source_url": "https://www.althingi.is/lagas/nuna/1944033.html"
+        }
       ],
-      "missing_context": "The general acquis is known, but the specific terms of Iceland's accession — particularly on fisheries (Chapter 13), agriculture (Chapter 11), and the euro — would depend on negotiations that have not yet taken place. EEA-DATA-009 notes that pre-2013 negotiation progress may not carry over, and some chapters may need to be restarted due to changes in EU legislation. The claim conflates knowledge of the EU framework with knowledge of Iceland's specific accession agreement, which does not yet exist.",
+      "missing_context": "Almenna regluverkið er þekkt en sérstök aðildarkjör Íslands — einkum varðandi sjávarútveg (kafli 13), landbúnað (kafli 11) og evruna — yrðu háð viðræðum sem hafa ekki enn átt sér stað. EEA-DATA-009 bendir á að framvinda viðræðna fyrir 2013 gildi ekki endilega og suma kafla gæti þurft að hefja að nýju vegna breytinga á löggjöf ESB. Fullyrðingin blandar saman þekkingu á ESB-rammanum og þekkingu á sérstökum aðildarsamningi Íslands, sem er ekki enn til.",
       "confidence": 0.75
     },
     {
       "claim": {
-        "claim_text": "Bergþór Ólason is an MP for Miðflokkurinn (the Centre Party)",
         "original_quote": "Höfundur er þingmaður Miðflokksins",
+        "claim_text": "Bergþór Ólason sé þingmaður Miðflokksins.",
         "category": "party_positions",
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
       "verdict": "unverifiable",
-      "explanation": "The Ground Truth Database does not contain information about individual MPs by name. POL-DATA-002 confirms that Miðflokkurinn opposes EU membership and POL-DATA-011 estimates the party holds approximately 5 Althingi seats, but neither entry identifies specific MPs. This is a biographical fact about a named individual that falls outside the database's scope.",
+      "explanation": "Heimildagrunnurinn inniheldur ekki upplýsingar um einstaka þingmenn eftir nafni. <a href=\"https://www.althingi.is/\" title=\"Althingi — Party platforms and election results\" target=\"_blank\" rel=\"noopener\">POL-DATA-002</a> staðfestir að Miðflokkurinn er á móti ESB-aðild og POL-DATA-011 áætlar að flokkurinn hafi um 5 þingsæti, en hvorug heimildin tilgreinir tiltekna þingmenn. Þetta er ævisöguleg staðreynd um nafngreindan einstakling sem fellur utan gagnagrunnsins.",
       "supporting_evidence": [
-        "POL-DATA-002"
+        {
+          "id": "POL-DATA-002",
+          "source_name": "Althingi — Party platforms and election results",
+          "source_url": "https://www.althingi.is/"
+        }
       ],
       "contradicting_evidence": [],
       "missing_context": null,
@@ -287,14 +399,14 @@
     },
     {
       "claim": {
-        "claim_text": "Björn Malmquist is a journalist at RÚV",
         "original_quote": "Björn Malmquist, fréttamaður RUV",
+        "claim_text": "Björn Malmquist sé fréttamaður hjá RÚV.",
         "category": "other",
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
       "verdict": "unverifiable",
-      "explanation": "The Ground Truth Database contains no information about individual journalists or RÚV staff. None of the retrieved evidence entries are relevant to verifying this biographical claim. This is a factual assertion about a named individual's employment that falls outside the database's scope.",
+      "explanation": "Heimildagrunnurinn inniheldur engar upplýsingar um einstaka blaðamenn eða starfsfólk RÚV. Engar viðeigandi heimildir fundust til staðfestingar á þessari ævisögulegu fullyrðingu. Þetta er staðhæfing um starf nafngreinds einstaklings sem fellur utan gagnagrunnsins.",
       "supporting_evidence": [],
       "contradicting_evidence": [],
       "missing_context": null,

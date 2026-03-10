@@ -5,7 +5,7 @@
   "article_source": null,
   "article_date": null,
   "analysis_date": "2026-03-09",
-  "summary": "Analysed 19 claims. Verdicts: 10 partially_supported, 5 supported, 2 misleading, 2 unverifiable. Framing: strongly_anti_eu. Completeness: 25%.",
+  "summary": "Greindar voru 19 fullyrðingar. Niðurstöður: 10 stutt að hluta, 5 stutt af heimildum, 2 villandi, 2 óstaðfestanlegar. Framing: eindregið gegn ESB-aðild. Heilleiki: 25%.",
   "verdict_counts": {
     "partially_supported": 10,
     "misleading": 2,
@@ -16,371 +16,631 @@
   "claims": [
     {
       "claim": {
-        "claim_text": "The Common Fisheries Policy would require Iceland to cede control of its fishing waters to the EU",
         "original_quote": "The Common Fisheries Policy (CFP) would force Iceland to hand over control of its fishing waters to Brussels bureaucrats who have no understanding of North Atlantic marine ecosystems.",
+        "claim_text": "Sameiginleg sjávarútvegsstefna ESB myndi krefjast þess að Ísland framseldi yfirráð yfir fiskveiðilögsögu sinni til ESB",
         "category": "fisheries",
         "claim_type": "legal_assertion",
         "confidence": 0.85
       },
       "verdict": "partially_supported",
-      "explanation": "The core assertion that the CFP would require sharing control over fisheries is broadly correct — FISH-LEGAL-002 confirms that EU membership would bring Iceland's EEZ under the CFP, meaning access and quota decisions would involve all EU member states. EEA-DATA-004 confirms the CFP requires member states to share fishing quotas under the principle of equal access. However, the framing as a complete 'ceding of control' to 'Brussels bureaucrats' is an overstatement. FISH-LEGAL-001 shows that quota allocation uses relative stability shares, meaning Iceland would negotiate its share. FISH-LEGAL-002's caveats note that the extent of pooling is a negotiation question, and accession treaties can include transitional arrangements and specific provisions for fisheries.",
+      "explanation": "Kjarni fullyrðingarinnar um að sameiginleg sjávarútvegsstefna myndi krefjast sameiginlegra yfirráða yfir sjávarútvegi er í grundvallaratriðum rétt — FISH-LEGAL-002 staðfestir að ESB-aðild myndi færa efnahagslögsögu Íslands undir stefnuna, þannig að ákvarðanir um aðgang og kvóta myndu taka til allra aðildarríkja ESB. EEA-DATA-004 staðfestir að stefnan krefst þess að aðildarríki deili fiskveiðikvótum samkvæmt meginreglunni um jafnan aðgang. Hins vegar er framsetningin um algjört „framsal yfirráða\" til „embættismanna í Brussel\" ýkt. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> sýnir að kvótaúthlutun byggist á hlutfallslegum stöðugleika, sem þýðir að Ísland myndi semja um sinn hlut. Í fyrirvörum FISH-LEGAL-002 kemur fram að umfang sameiningarinnar sé samningaspurning og að aðildarsamningar geti falið í sér umbreytingarákvæði og sértæk ákvæði um sjávarútveg.",
       "supporting_evidence": [
-        "EEA-DATA-004",
-        "FISH-LEGAL-002",
-        "POL-DATA-005",
-        "FISH-LEGAL-001"
+        {
+          "id": "EEA-DATA-004",
+          "source_name": "Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13",
+          "source_url": null
+        },
+        {
+          "id": "FISH-LEGAL-002",
+          "source_name": "Icelandic Act on the Exclusive Economic Zone No. 41/1979",
+          "source_url": null
+        },
+        {
+          "id": "POL-DATA-005",
+          "source_name": "LÍÚ and SFS public statements; Hagstofa Íslands national accounts",
+          "source_url": null
+        },
+        {
+          "id": "FISH-LEGAL-001",
+          "source_name": "EU Regulation 1380/2013 of the European Parliament and of the Council",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380"
+        }
       ],
       "contradicting_evidence": [],
-      "missing_context": "The extent to which Iceland's EEZ resources would be 'pooled' is a negotiation question — accession treaties can include transitional arrangements (FISH-LEGAL-002). As a new member, Iceland's quota share would need to be negotiated based on historical catches (FISH-LEGAL-001). The claim's language ('hand over control to Brussels bureaucrats') overstates the mechanism — member states collectively set policy through the Council, where Iceland would have a vote.",
+      "missing_context": "Umfang „sameiningar\" auðlinda úr efnahagslögsögunni er samningsspurning — aðildarsamningar geta falið í sér umbreytingarákvæði (FISH-LEGAL-002). Sem nýtt aðildarríki þyrfti Ísland að semja um kvótahlutdeild sína á grundvelli sögulegra veiða (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a>). Orðalag fullyrðingarinnar („afhenda yfirráð til embættismanna í Brussel\") ýkir verklýsinguna — aðildarríkin setja stefnuna sameiginlega í ráðinu, þar sem Ísland myndi hafa atkvæðisrétt.",
       "confidence": 0.85
     },
     {
       "claim": {
-        "claim_text": "Under the CFP, Iceland would lose control of its 200-mile exclusive economic zone",
         "original_quote": "Under the CFP, Iceland would lose control of its 200-mile exclusive economic zone.",
+        "claim_text": "Undir sameiginlegri sjávarútvegsstefnu myndi Ísland missa yfirráð yfir 200 sjómílna efnahagslögsögu sinni",
         "category": "fisheries",
         "claim_type": "legal_assertion",
         "confidence": 0.8
       },
       "verdict": "partially_supported",
-      "explanation": "FISH-LEGAL-002 confirms that EU membership would bring Iceland's EEZ under the CFP, with access and quota decisions involving all EU member states. This is a genuine transfer of decision-making authority. However, 'lose control' is an overstatement. Iceland would retain sovereign rights under UNCLOS, and as a member state it would participate in CFP decision-making with a vote in the Council. The caveats in FISH-LEGAL-002 explicitly note that the extent of pooling is a negotiation question and that accession treaties can include transitional arrangements and specific provisions for fisheries, as was discussed during the 2010–2013 negotiations (POL-DATA-005).",
+      "explanation": "FISH-LEGAL-002 staðfestir að ESB-aðild myndi færa efnahagslögsögu Íslands undir sameiginlegu sjávarútvegsstefnuna, þar sem ákvarðanir um aðgang og kvóta myndu taka til allra aðildarríkja ESB. Þetta er raunverulegt framsal ákvörðunarvalds. Hins vegar er „missa yfirráð\" ýkt framsetning. Ísland myndi halda fullveldisréttindum samkvæmt hafréttarsamningi Sameinuðu þjóðanna og sem aðildarríki myndi það taka þátt í ákvörðunum um sjávarútvegsstefnuna með atkvæðisrétti í ráðinu. Í fyrirvörum FISH-LEGAL-002 kemur sérstaklega fram að umfang sameiningarinnar sé samningaspurning og að aðildarsamningar geti falið í sér umbreytingarákvæði og sértæk ákvæði um sjávarútveg, eins og rætt var í viðræðunum 2010–2013 (POL-DATA-005).",
       "supporting_evidence": [
-        "FISH-LEGAL-002",
-        "EEA-DATA-004",
-        "POL-DATA-005"
+        {
+          "id": "FISH-LEGAL-002",
+          "source_name": "Icelandic Act on the Exclusive Economic Zone No. 41/1979",
+          "source_url": null
+        },
+        {
+          "id": "EEA-DATA-004",
+          "source_name": "Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13",
+          "source_url": null
+        },
+        {
+          "id": "POL-DATA-005",
+          "source_name": "LÍÚ and SFS public statements; Hagstofa Íslands national accounts",
+          "source_url": null
+        }
       ],
       "contradicting_evidence": [],
-      "missing_context": "The extent of 'pooling' would be subject to accession negotiations. Transitional arrangements and specific provisions for fisheries are possible (FISH-LEGAL-002). Iceland would gain a seat at the decision-making table as an EU member state, which is qualitatively different from 'losing control'.",
+      "missing_context": "Umfang „sameiningarinnar\" yrði háð aðildarviðræðum. Umbreytingarákvæði og sértæk ákvæði um sjávarútveg eru möguleg (FISH-LEGAL-002). Ísland fengi sæti við ákvörðunarborðið sem ESB-aðildarríki, sem er í eðli sínu ólíkt því að „missa yfirráð\".",
       "confidence": 0.8
     },
     {
       "claim": {
-        "claim_text": "EU fleets from Spain, France, and Portugal would gain access to Icelandic fishing grounds under EU membership",
         "original_quote": "EU fleets from Spain, France, and Portugal would gain access to Icelandic fishing grounds, devastating local communities that depend on fishing for their livelihoods.",
+        "claim_text": "ESB-flotar frá Spáni, Frakklandi og Portúgal myndu fá aðgang að íslenskum miðum við ESB-aðild",
         "category": "fisheries",
         "claim_type": "legal_assertion",
         "confidence": 0.65
       },
       "verdict": "partially_supported",
-      "explanation": "FISH-LEGAL-002 confirms that EU membership would bring Iceland's EEZ under the CFP, where access decisions would involve all EU member states, so in principle the CFP's equal access principle could allow other member states' fleets into Icelandic waters. However, the evidence does not specifically confirm that Spain, France, and Portugal would gain quota in Icelandic waters. FISH-LEGAL-001 shows that quotas are allocated based on relative stability using historical catches from the 1970s — since these countries had no significant historical catches in Iceland's EEZ, their allocation under relative stability would be minimal. The claim's assertion of 'devastating' local communities is speculative and not directly supported by the evidence.",
+      "explanation": "FISH-LEGAL-002 staðfestir að ESB-aðild myndi færa efnahagslögsögu Íslands undir sameiginlegu sjávarútvegsstefnuna, þar sem ákvarðanir um aðgang myndu taka til allra aðildarríkja, þannig að í grundvallaratriðum gæti meginreglan um jafnan aðgang heimilað flotum annarra aðildarríkja aðgang að íslenskri lögsögu. Hins vegar staðfesta gögnin ekki sérstaklega að Spánn, Frakkland og Portúgal myndu fá kvóta í íslenskri lögsögu. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> sýnir að kvótar eru úthlutaðir á grundvelli hlutfallslegs stöðugleika sem byggist á sögulegum veiðum frá áttunda áratugnum — þar sem þessi ríki stunduðu ekki teljandi veiðar í efnahagslögsögu Íslands, yrði úthlutun þeirra á grundvelli hlutfallslegs stöðugleika lítil. Fullyrðingin um „rústir\" byggðarlaga er ósönnuð tilgáta sem gögnin styðja ekki beint.",
       "supporting_evidence": [
-        "FISH-LEGAL-002",
-        "FISH-LEGAL-001",
-        "EEA-DATA-004",
-        "POL-DATA-005"
+        {
+          "id": "FISH-LEGAL-002",
+          "source_name": "Icelandic Act on the Exclusive Economic Zone No. 41/1979",
+          "source_url": null
+        },
+        {
+          "id": "FISH-LEGAL-001",
+          "source_name": "EU Regulation 1380/2013 of the European Parliament and of the Council",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380"
+        },
+        {
+          "id": "EEA-DATA-004",
+          "source_name": "Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13",
+          "source_url": null
+        },
+        {
+          "id": "POL-DATA-005",
+          "source_name": "LÍÚ and SFS public statements; Hagstofa Íslands national accounts",
+          "source_url": null
+        }
       ],
       "contradicting_evidence": [],
-      "missing_context": "The relative stability principle (FISH-LEGAL-001) bases quotas on historical catches from the 1970s, which could actually protect Iceland's share since other EU nations did not historically fish in Iceland's EEZ. Accession treaty negotiations would determine specific access arrangements. The prediction of 'devastating' communities is not supported by the available evidence.",
+      "missing_context": "Meginreglan um hlutfallslegan stöðugleika (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a>) byggir kvóta á sögulegum veiðum frá áttunda áratugnum, sem gæti í raun verndað hlutdeild Íslands þar sem önnur ESB-ríki stunduðu ekki sögulegar veiðar í efnahagslögsögu Íslands. Aðildarsamningsviðræður myndu ákvarða sértæk aðgangsákvæði. Spáin um „rústir\" byggðarlaga er ekki studd af fyrirliggjandi gögnum.",
       "confidence": 0.65
     },
     {
       "claim": {
-        "claim_text": "The CFP has led to a 40% decline in European fishing fleets over the past two decades",
         "original_quote": "the CFP has led to widespread overfishing and a 40% decline in European fishing fleets over the past two decades.",
+        "claim_text": "Sameiginleg sjávarútvegsstefnan hefur leitt til 40% samdráttar í evrópskum fiskiskipaflotum á síðustu tveimur áratugum",
         "category": "fisheries",
         "claim_type": "statistic",
         "confidence": 0.9
       },
       "verdict": "misleading",
-      "explanation": "FISH-COMP-002 provides the actual figures: the EU fleet shrank from approximately 97,000 vessels in 2000 to around 73,000 in 2023, a reduction of roughly 25%, not the claimed 40%. The article overstates the decline by 15 percentage points. Furthermore, FISH-COMP-002's caveats are critical: the fleet reduction was driven by deliberate decommissioning schemes aimed at matching fleet capacity to available resources — it was a policy goal, not a failure. Many countries, including Iceland, independently undertook similar capacity reductions. The EU simultaneously improved stock health, with approximately 60% of Northeast Atlantic assessed stocks fished at MSY levels by 2023 (FISH-COMP-003).",
+      "explanation": "<a href=\"https://stecf.jrc.ec.europa.eu/reports/economic\" title=\"European Commission — The EU Fishing Fleet reports (STECF Annual Economic Reports)\" target=\"_blank\" rel=\"noopener\">FISH-COMP-002</a> gefur raunverulegar tölur: ESB-flotinn minnkaði úr um 97.000 skipum árið 2000 í um 73.000 árið 2023, sem er samdráttur um 25%, ekki hinar fullyrti 40%. Greinin ýkir samdráttinn um 15 prósentustig. Ennfremur eru fyrirvörar <a href=\"https://stecf.jrc.ec.europa.eu/reports/economic\" title=\"European Commission — The EU Fishing Fleet reports (STECF Annual Economic Reports)\" target=\"_blank\" rel=\"noopener\">FISH-COMP-002</a> mikilvægir: flotaminnkunin var knúin áfram af skipulegum úreldingaráætlunum sem miðuðu að því að samræma flotastærð við tiltækar auðlindir — þetta var stefnumarkmið, ekki mistök. Mörg ríki, þar á meðal Ísland, gerðu sjálfstæðar samsvarandi flotaminnkanir. ESB bætti samtímis ástand stofna, þar sem um 60% metinna stofna í Norðaustur-Atlantshafi voru veiddir við hámarkssjálfbæra nýtingu árið 2023 (<a href=\"https://oceans-and-fisheries.ec.europa.eu/fisheries/common-fisheries-policy_en\" title=\"European Commission — Communication on the Common Fisheries Policy (2024); STECF stock assessments\" target=\"_blank\" rel=\"noopener\">FISH-COMP-003</a>).",
       "supporting_evidence": [
-        "FISH-COMP-002",
-        "FISH-COMP-003"
+        {
+          "id": "FISH-COMP-002",
+          "source_name": "European Commission — The EU Fishing Fleet reports (STECF Annual Economic Reports)",
+          "source_url": "https://stecf.jrc.ec.europa.eu/reports/economic"
+        },
+        {
+          "id": "FISH-COMP-003",
+          "source_name": "European Commission — Communication on the Common Fisheries Policy (2024); STECF stock assessments",
+          "source_url": "https://oceans-and-fisheries.ec.europa.eu/fisheries/common-fisheries-policy_en"
+        }
       ],
       "contradicting_evidence": [],
-      "missing_context": "The actual fleet reduction was approximately 25%, not 40% (FISH-COMP-002). Fleet reduction was a deliberate policy to reduce overcapacity, not an unintended consequence. Many countries, including Iceland, independently reduced fleet sizes. The EU simultaneously improved stock health significantly (FISH-COMP-003).",
+      "missing_context": "Raunverulegur flotasamdráttur var um 25%, ekki 40% (<a href=\"https://stecf.jrc.ec.europa.eu/reports/economic\" title=\"European Commission — The EU Fishing Fleet reports (STECF Annual Economic Reports)\" target=\"_blank\" rel=\"noopener\">FISH-COMP-002</a>). Flotaminnkun var markviss stefna til að draga úr ofgetu, ekki óviljandi afleiðing. Mörg ríki, þar á meðal Ísland, minnkuðu sjálfstætt flotastærðir sínar. ESB bætti ástand fiskistofna samtímis verulega (<a href=\"https://oceans-and-fisheries.ec.europa.eu/fisheries/common-fisheries-policy_en\" title=\"European Commission — Communication on the Common Fisheries Policy (2024); STECF stock assessments\" target=\"_blank\" rel=\"noopener\">FISH-COMP-003</a>).",
       "confidence": 0.9
     },
     {
       "claim": {
-        "claim_text": "The CFP has led to widespread overfishing in European waters",
         "original_quote": "The EU's track record on fisheries management is catastrophic — the CFP has led to widespread overfishing",
+        "claim_text": "Sameiginleg sjávarútvegsstefnan hefur leitt til víðtækrar ofveiði í evrópskum hafsvæðum",
         "category": "fisheries",
         "claim_type": "comparison",
         "confidence": 0.85
       },
       "verdict": "misleading",
-      "explanation": "This claim presents an outdated picture. FISH-COMP-003 shows a dramatically improved trajectory: in the EU's Northeast Atlantic waters, the proportion of assessed stocks fished at or below MSY increased from approximately 5–10% in 2003 to around 60% by 2023. It is true that the Mediterranean and Black Sea remain severely overfished (73% of assessed stocks above MSY in 2022), indicating uneven implementation. Describing the CFP's track record as 'catastrophic' and claiming it has 'led to widespread overfishing' ignores the substantial improvements in the Atlantic/North Sea, which are the waters most relevant to Iceland. The claim cherry-picks the worst aspects while ignoring significant progress.",
+      "explanation": "Þessi fullyrðing gefur úrelta mynd. <a href=\"https://oceans-and-fisheries.ec.europa.eu/fisheries/common-fisheries-policy_en\" title=\"European Commission — Communication on the Common Fisheries Policy (2024); STECF stock assessments\" target=\"_blank\" rel=\"noopener\">FISH-COMP-003</a> sýnir verulegar framfarir: í Norðaustur-Atlantshafi ESB hækkaði hlutfall metinna stofna sem veiddir voru við eða undir hámarkssjálfbærri nýtingu úr 5–10% árið 2003 í um 60% árið 2023. Það er rétt að Miðjarðarhafið og Svartahafið eru enn alvarlega ofveitt (73% metinna stofna yfir hámarkssjálfbærri nýtingu árið 2022), sem bendir til ójafnrar framkvæmdar. Að lýsa afrekaskrá sjávarútvegsstefnunnar sem „hörmulegri\" og fullyrða að hún hafi „leitt til víðtækrar ofveiði\" hunsar verulegar framfarir í Atlantshafi og Norðursjó, sem eru hafsvæðin sem skipta Ísland mestu máli. Fullyrðingin velur verstu hliðarnar og hunsar verulegar framfarir.",
       "supporting_evidence": [
-        "FISH-COMP-003",
-        "FISH-COMP-002",
-        "FISH-LEGAL-001"
+        {
+          "id": "FISH-COMP-003",
+          "source_name": "European Commission — Communication on the Common Fisheries Policy (2024); STECF stock assessments",
+          "source_url": "https://oceans-and-fisheries.ec.europa.eu/fisheries/common-fisheries-policy_en"
+        },
+        {
+          "id": "FISH-COMP-002",
+          "source_name": "European Commission — The EU Fishing Fleet reports (STECF Annual Economic Reports)",
+          "source_url": "https://stecf.jrc.ec.europa.eu/reports/economic"
+        },
+        {
+          "id": "FISH-LEGAL-001",
+          "source_name": "EU Regulation 1380/2013 of the European Parliament and of the Council",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380"
+        }
       ],
       "contradicting_evidence": [],
-      "missing_context": "CFP performance has improved markedly in Atlantic/North Sea waters (most relevant to Iceland) but remains poor in the Mediterranean (FISH-COMP-003). The characterisation as 'catastrophic' was arguably more accurate 20 years ago but does not reflect the current trajectory. Iceland manages fewer, mostly single-country stocks, making direct comparison difficult.",
+      "missing_context": "Árangur sjávarútvegsstefnunnar hefur batnað verulega í Atlantshafi og Norðursjó (mest viðeigandi fyrir Ísland) en er enn slakur í Miðjarðarhafinu (<a href=\"https://oceans-and-fisheries.ec.europa.eu/fisheries/common-fisheries-policy_en\" title=\"European Commission — Communication on the Common Fisheries Policy (2024); STECF stock assessments\" target=\"_blank\" rel=\"noopener\">FISH-COMP-003</a>). Lýsingin „hörmulegt\" var að vissu leyti réttari fyrir 20 árum en endurspeglar ekki núverandi þróun. Ísland stýrir færri stofnum, aðallega eins ríkis stofnum, sem gerir beinan samanburð erfiðan.",
       "confidence": 0.85
     },
     {
       "claim": {
-        "claim_text": "Iceland has managed its fisheries through the Individual Transferable Quota (ITQ) system since the 1980s",
         "original_quote": "Iceland has managed its fisheries sustainably through the Individual Transferable Quota (ITQ) system since the 1980s.",
+        "claim_text": "Ísland hefur stýrt sjávarútvegi sínum með kvótakerfi (ITQ) síðan á níunda áratugnum",
         "category": "fisheries",
         "claim_type": "statistic",
         "confidence": 0.95
       },
       "verdict": "supported",
-      "explanation": "FISH-LEGAL-003 directly confirms that Iceland's ITQ system was established in 1984 and made permanent in 1990. The system allocates fishing quotas as permanent shares of TAC that can be bought, sold, and leased. The claim that the system dates from 'the 1980s' is accurate (1984). The characterisation as 'sustainable' is broadly supported — FISH-COMP-003's caveats note that Iceland's stock management has generally been strong, with cod biomass recovering well since the 2000s under the ITQ system.",
+      "explanation": "FISH-LEGAL-003 staðfestir beint að kvótakerfi Íslands var komið á árið 1984 og gert varanlegt 1990. Kerfið úthlutar fiskveiðikvótum sem varanlegum hlutdeildum í leyfilegum heildarafla sem hægt er að kaupa, selja og leigja. Fullyrðingin um að kerfið sé frá „níunda áratugnum\" er rétt (1984). Lýsingin „sjálfbært\" er í stórum dráttum studd — fyrirvörar <a href=\"https://oceans-and-fisheries.ec.europa.eu/fisheries/common-fisheries-policy_en\" title=\"European Commission — Communication on the Common Fisheries Policy (2024); STECF stock assessments\" target=\"_blank\" rel=\"noopener\">FISH-COMP-003</a> benda til þess að stofnastjórnun Íslands hafi almennt verið öflug, þar sem þorskstofninn hefur náð sér vel á stað síðan á tíunda áratugnum undir kvótakerfinu.",
       "supporting_evidence": [
-        "FISH-LEGAL-003",
-        "FISH-DATA-005",
-        "EEA-DATA-004"
+        {
+          "id": "FISH-LEGAL-003",
+          "source_name": "Icelandic Fisheries Management Act No. 116/2006",
+          "source_url": null
+        },
+        {
+          "id": "FISH-DATA-005",
+          "source_name": "Fiskistofa — Quota holdings reports",
+          "source_url": "https://www.fiskistofa.is/"
+        },
+        {
+          "id": "EEA-DATA-004",
+          "source_name": "Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13",
+          "source_url": null
+        }
       ],
       "contradicting_evidence": [],
-      "missing_context": "While the ITQ system is credited with reducing overcapacity and supporting sustainable catches, it is politically contentious in Iceland. Critics argue it has created a 'quota aristocracy' with concentrated ownership — the top three holders control 45–50% of cod-equivalent quota (FISH-DATA-005). The article's framing omits this domestic controversy.",
+      "missing_context": "Þótt kvótakerfið fái hrós fyrir að draga úr ofgetu og styðja sjálfbærar veiðar, er það pólitískt umdeilt á Íslandi. Gagnrýnendur halda því fram að það hafi skapað „kvótaveldi\" með samþjappaðri eignaraðild — þrír stærstu handhafarnir ráða yfir 45–50% af þorskígildiskvóta (<a href=\"https://www.fiskistofa.is/\" title=\"Fiskistofa — Quota holdings reports\" target=\"_blank\" rel=\"noopener\">FISH-DATA-005</a>). Framsetning greinarinnar sleppir þessum innlenda ágreiningi.",
       "confidence": 0.95
     },
     {
       "claim": {
-        "claim_text": "Iceland's fish stocks are among the healthiest in the world due to its own fisheries management",
         "original_quote": "Our fish stocks are among the healthiest in the world precisely because we control our own waters.",
+        "claim_text": "Fiskistofnar Íslands eru meðal þeirra heilbrigðustu í heiminum vegna eigin sjávarútvegsstjórnunar",
         "category": "fisheries",
         "claim_type": "comparison",
         "confidence": 0.7
       },
       "verdict": "partially_supported",
-      "explanation": "FISH-COMP-003's caveats confirm that 'Iceland's own stock management has generally been strong — cod biomass has recovered well since the 2000s under the ITQ system.' This supports the claim that Iceland's stocks are in good health. However, the evidence does not provide a global ranking to substantiate 'among the healthiest in the world.' The causal link ('precisely because we control our own waters') is also an oversimplification — FISH-LEGAL-003 notes the ITQ system's role, and FISH-DATA-001 shows healthy catch levels. But Norway also manages its fisheries independently with good results (FISH-LEGAL-004, FISH-COMP-001), suggesting sovereign control is neither necessary nor sufficient on its own — the management system matters more than sovereignty per se.",
+      "explanation": "Fyrirvörar <a href=\"https://oceans-and-fisheries.ec.europa.eu/fisheries/common-fisheries-policy_en\" title=\"European Commission — Communication on the Common Fisheries Policy (2024); STECF stock assessments\" target=\"_blank\" rel=\"noopener\">FISH-COMP-003</a> staðfesta að „stofnastjórnun Íslands hefur almennt verið sterk — þorskstofninn hefur náð sér vel síðan á tíunda áratugnum undir kvótakerfinu.\" Þetta styður fullyrðinguna um að stofnar Íslands séu í góðu ástandi. Hins vegar gefa gögnin ekki alþjóðlega röðun til að staðfesta „meðal þeirra heilbrigðustu í heiminum\". Orsakatengsl („einmitt vegna þess að við ráðum yfir okkar eigin hafsvæði\") eru líka ofureinföldun — FISH-LEGAL-003 bendir á hlutverk kvótakerfisins og <a href=\"https://www.statice.is/statistics/business-sectors/fisheries/catch/\" title=\"Statistics Iceland (Hagstofa Íslands) — Fisheries statistics\" target=\"_blank\" rel=\"noopener\">FISH-DATA-001</a> sýnir heilbrigðar veiðitölur. En Noregur stýrir líka sínum sjávarútvegi sjálfstætt með góðum árangri (FISH-LEGAL-004, <a href=\"https://www.fiskeridir.no/English/Fisheries/Statistics\" title=\"Norwegian Directorate of Fisheries — Statistics\" target=\"_blank\" rel=\"noopener\">FISH-COMP-001</a>), sem bendir til þess að fullveldi sé hvorki nauðsynleg né nægjanleg forsenda eitt og sér — stjórnunarkerfið skiptir meira máli en fullveldi í sjálfu sér.",
       "supporting_evidence": [
-        "FISH-COMP-003",
-        "FISH-LEGAL-003",
-        "FISH-LEGAL-004",
-        "FISH-DATA-001"
+        {
+          "id": "FISH-COMP-003",
+          "source_name": "European Commission — Communication on the Common Fisheries Policy (2024); STECF stock assessments",
+          "source_url": "https://oceans-and-fisheries.ec.europa.eu/fisheries/common-fisheries-policy_en"
+        },
+        {
+          "id": "FISH-LEGAL-003",
+          "source_name": "Icelandic Fisheries Management Act No. 116/2006",
+          "source_url": null
+        },
+        {
+          "id": "FISH-LEGAL-004",
+          "source_name": "Norwegian Ministry of Trade, Industry and Fisheries — Bilateral fisheries agreements",
+          "source_url": null
+        },
+        {
+          "id": "FISH-DATA-001",
+          "source_name": "Statistics Iceland (Hagstofa Íslands) — Fisheries statistics",
+          "source_url": "https://www.statice.is/statistics/business-sectors/fisheries/catch/"
+        }
       ],
       "contradicting_evidence": [],
-      "missing_context": "The evidence does not provide a global ranking of stock health. The causal attribution solely to 'controlling our own waters' oversimplifies — the ITQ management system is the key mechanism. EU Northeast Atlantic stocks have also improved significantly under the CFP (FISH-COMP-003), suggesting the management framework matters more than whether it is national or supranational.",
+      "missing_context": "Gögnin gefa ekki alþjóðlega röðun á heilbrigði stofna. Að rekja árangurinn eingöngu til „yfirráða yfir eigin hafsvæði\" er ofureinföldun — kvótakerfið er lykilaðferðin. Fiskistofnar ESB í Norðaustur-Atlantshafi hafa einnig batnað verulega undir sameiginlegri sjávarútvegsstefnu (<a href=\"https://oceans-and-fisheries.ec.europa.eu/fisheries/common-fisheries-policy_en\" title=\"European Commission — Communication on the Common Fisheries Policy (2024); STECF stock assessments\" target=\"_blank\" rel=\"noopener\">FISH-COMP-003</a>), sem bendir til þess að stjórnunarramminn skipti meira máli en hvort hann sé innlendur eða yfirþjóðlegur.",
       "confidence": 0.7
     },
     {
       "claim": {
-        "claim_text": "EU membership would replace Iceland's ITQ system with centralised quotas set in Brussels",
         "original_quote": "The EU would replace this proven system with centralised quotas set in Brussels.",
+        "claim_text": "ESB-aðild myndi skipta kvótakerfi Íslands út fyrir miðstýrða kvóta sem settir eru í Brussel",
         "category": "fisheries",
         "claim_type": "legal_assertion",
         "confidence": 0.75
       },
       "verdict": "partially_supported",
-      "explanation": "EEA-DATA-004 confirms that Iceland's ITQ system was considered 'incompatible with CFP principles without significant adaptation' during the 2010–2013 accession negotiations. FISH-LEGAL-001 confirms the CFP sets TACs centrally and allocates quotas via relative stability. So there is substance to the concern that the ITQ system would need significant modification. However, the claim overstates the case: 'replace' implies total elimination, whereas the evidence suggests adaptation would be needed rather than outright replacement. Several EU member states operate transferable quota systems within the CFP framework. The framing of 'centralised quotas set in Brussels' also misrepresents the process — TACs are proposed by the Commission based on scientific advice but decided by the Council of Ministers where Iceland would have a vote.",
+      "explanation": "EEA-DATA-004 staðfestir að kvótakerfi Íslands var talið „ósamrýmanlegt meginreglum sjávarútvegsstefnunnar án verulegrar aðlögunar\" í aðildarviðræðunum 2010–2013. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> staðfestir að sjávarútvegsstefnan setur leyfilegan heildarafla miðlægt og úthlutar kvótum með hlutfallslegum stöðugleika. Áhyggjurnar af því að kvótakerfið þyrfti verulega breytingu eiga sér því stoð. Hins vegar ýkir fullyrðingin málið: „skipta út\" felur í sér algjöra afnám, en gögnin benda til þess að aðlögun yrði nauðsynleg fremur en alger afnám. Nokkur ESB-aðildarríki reka framseljanleg kvótakerfi innan ramma sjávarútvegsstefnunnar. Framsetningin „miðstýrðir kvótar settir í Brussel\" gefa einnig ranga mynd af ferlinu — leyfilegur heildarafli er lagður til af framkvæmdastjórninni á grundvelli vísindaráðgjafar en ráðherraráðið tekur ákvörðunina þar sem Ísland myndi hafa atkvæðisrétt.",
       "supporting_evidence": [
-        "EEA-DATA-004",
-        "FISH-LEGAL-001",
-        "FISH-LEGAL-003",
-        "FISH-DATA-005"
+        {
+          "id": "EEA-DATA-004",
+          "source_name": "Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13",
+          "source_url": null
+        },
+        {
+          "id": "FISH-LEGAL-001",
+          "source_name": "EU Regulation 1380/2013 of the European Parliament and of the Council",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380"
+        },
+        {
+          "id": "FISH-LEGAL-003",
+          "source_name": "Icelandic Fisheries Management Act No. 116/2006",
+          "source_url": null
+        },
+        {
+          "id": "FISH-DATA-005",
+          "source_name": "Fiskistofa — Quota holdings reports",
+          "source_url": "https://www.fiskistofa.is/"
+        }
       ],
       "contradicting_evidence": [],
-      "missing_context": "The ITQ system would need 'significant adaptation' under CFP, not necessarily complete replacement (EEA-DATA-004). Some EU member states operate transferable quota systems within the CFP framework. Iceland would participate in TAC-setting decisions through the Council of Ministers. The domestic political contentiousness of the ITQ system itself (quota concentration) is omitted from the claim.",
+      "missing_context": "Kvótakerfið þyrfti „verulega aðlögun\" undir sjávarútvegsstefnunni, ekki endilega algjört afnám (EEA-DATA-004). Sum ESB-aðildarríki reka framseljanleg kvótakerfi innan ramma stefnunnar. Ísland myndi taka þátt í ákvörðunum um leyfilegan heildarafla í gegnum ráðherraráðið. Innlendur pólitískur ágreiningur um kvótakerfið sjálft (samþjöppun kvóta) er sleppt úr fullyrðingunni.",
       "confidence": 0.75
     },
     {
       "claim": {
-        "claim_text": "Norway has twice voted against EU membership",
         "original_quote": "Despite enormous pressure, Norway has twice voted against EU membership",
+        "claim_text": "Noregur hefur tvisvar kosið gegn ESB-aðild",
         "category": "precedents",
         "claim_type": "statistic",
         "confidence": 0.95
       },
       "verdict": "supported",
-      "explanation": "PREC-HIST-001 directly confirms that Norway held EU membership referendums in 1972 (on EEC membership, 53.5% No) and 1994 (on EU membership, 52.2% No), both resulting in narrow 'No' votes. The claim is factually accurate. PREC-HIST-002 further confirms that subsequent polling shows approximately 70–75% of Norwegians continue to oppose EU membership.",
+      "explanation": "PREC-HIST-001 staðfestir beint að Noregur hélt þjóðaratkvæðagreiðslur um aðild árið 1972 (EBE-aðild, 53,5% á móti) og 1994 (ESB-aðild, 52,2% á móti), báðar með neikvæðri niðurstöðu. Fullyrðingin er staðreyndarlega rétt. PREC-HIST-002 staðfestir ennfremur að skoðanakannanir sýna að um 70–75% Norðmanna eru enn á móti ESB-aðild.",
       "supporting_evidence": [
-        "PREC-HIST-001",
-        "PREC-HIST-002"
+        {
+          "id": "PREC-HIST-001",
+          "source_name": "Norwegian Centre for Research Data — Election Archive",
+          "source_url": null
+        },
+        {
+          "id": "PREC-HIST-002",
+          "source_name": "Sentio Research / Nationen polling series",
+          "source_url": null
+        }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Despite rejecting EU membership twice, Norway joined the EEA in 1994 (PREC-HIST-001). Norway's economic success outside the EU is largely driven by petroleum wealth, making it a limited comparator for Iceland (PREC-HIST-002). The characterisation of 'enormous pressure' is not specifically addressed by the evidence.",
+      "missing_context": "Þrátt fyrir að hafa hafnað ESB-aðild tvisvar gekk Noregur í EES árið 1994 (PREC-HIST-001). Efnahagslegur árangur Noregs utan ESB er að mestu drifinn áfram af olíuauði, sem gerir hann að takmörkuðu samanburðarlandi við Ísland (PREC-HIST-002). Fullyrðingin um „gífurlegan þrýsting\" er ekki sérstaklega studd af heimildunum.",
       "confidence": 0.95
     },
     {
       "claim": {
-        "claim_text": "Norway manages its fisheries independently through the EEA Agreement",
         "original_quote": "Norway has twice voted against EU membership and manages its fisheries independently through the EEA Agreement.",
+        "claim_text": "Noregur stýrir sjávarútvegi sínum sjálfstætt í gegnum EES-samninginn",
         "category": "precedents",
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
       "verdict": "supported",
-      "explanation": "FISH-LEGAL-004 directly confirms that Norway, as a non-EU EEA member, retains full sovereign control over its fisheries and negotiates bilateral fisheries agreements with the EU annually. EEA-LEGAL-001 confirms that fisheries are excluded from the EEA Agreement. This is factually accurate — EEA membership is compatible with independent fisheries management.",
+      "explanation": "FISH-LEGAL-004 staðfestir beint að Noregur, sem EES-ríki utan ESB, heldur fullu fullveldi yfir sjávarútvegi sínum og semur tvíhliða sjávarútvegssamninga við ESB árlega. <a href=\"https://www.eftasurv.int/internal-market/eea-efta-internal-market-scoreboard\" title=\"EFTA Surveillance Authority — Internal Market Scoreboard\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-001</a> staðfestir að sjávarútvegur er undanskilinn EES-samningnum. Þetta er staðreyndarlega rétt — EES-aðild er samrýmanleg sjálfstæðri sjávarútvegsstjórnun.",
       "supporting_evidence": [
-        "FISH-LEGAL-004",
-        "EEA-LEGAL-001",
-        "FISH-COMP-001"
+        {
+          "id": "FISH-LEGAL-004",
+          "source_name": "Norwegian Ministry of Trade, Industry and Fisheries — Bilateral fisheries agreements",
+          "source_url": null
+        },
+        {
+          "id": "EEA-LEGAL-001",
+          "source_name": "EFTA Surveillance Authority — Internal Market Scoreboard",
+          "source_url": "https://www.eftasurv.int/internal-market/eea-efta-internal-market-scoreboard"
+        },
+        {
+          "id": "FISH-COMP-001",
+          "source_name": "Norwegian Directorate of Fisheries — Statistics",
+          "source_url": "https://www.fiskeridir.no/English/Fisheries/Statistics"
+        }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Norway's fisheries situation differs from Iceland's in important ways: Norway shares many stocks with the EU (North Sea), while Iceland's key stocks are primarily within its own EEZ (FISH-LEGAL-004). The claim implies that the EEA itself provides fisheries independence, but more precisely it is the EEA's exclusion of fisheries that preserves it.",
+      "missing_context": "Sjávarútvegur Noregs er ólíkur Íslands á mikilvægan hátt: Noregur deilir mörgum stofnum með ESB (Norðursjór), á meðan lykilstofnar Íslands eru aðallega innan eigin efnahagslögsögu (FISH-LEGAL-004). Fullyrðingin gefur til kynna að EES-samningurinn sjálfur veiti sjálfstæði í sjávarútvegi, en nákvæmara er að segja að það sé undanþága sjávarútvegs frá EES-samningnum sem varðveitir það.",
       "confidence": 0.9
     },
     {
       "claim": {
-        "claim_text": "Norwegian fish stocks are thriving and their fishing industry is more profitable than ever",
         "original_quote": "Norwegian fish stocks are thriving, and their fishing industry is more profitable than ever.",
+        "claim_text": "Norskir fiskistofnar blómstra og sjávarútvegur þeirra er arðbærari en nokkru sinni fyrr",
         "category": "precedents",
         "claim_type": "comparison",
         "confidence": 0.45
       },
       "verdict": "unverifiable",
-      "explanation": "The evidence available does not directly address the current health of Norwegian fish stocks or the profitability of the Norwegian fishing industry. FISH-COMP-001 provides data on fleet size and catch volume but not stock health or profitability. FISH-LEGAL-004 confirms Norway manages its fisheries independently, but does not assess outcomes. While Norway's fisheries are generally considered well-managed, the specific claims that stocks are 'thriving' and the industry is 'more profitable than ever' cannot be verified from the available Ground Truth Database evidence.",
+      "explanation": "Fyrirliggjandi gögn fjalla ekki beint um núverandi ástand norskra fiskistofna eða arðsemi norska sjávarútvegsins. <a href=\"https://www.fiskeridir.no/English/Fisheries/Statistics\" title=\"Norwegian Directorate of Fisheries — Statistics\" target=\"_blank\" rel=\"noopener\">FISH-COMP-001</a> veitir gögn um flotastærð og veiðimagn en ekki um ástand stofna eða arðsemi. FISH-LEGAL-004 staðfestir að Noregur stýri sjávarútvegi sínum sjálfstætt, en metur ekki árangurinn. Þótt sjávarútvegur Noregs sé almennt talinn vel stýrður er ekki hægt að staðfesta sértækar fullyrðingar um að stofnar „blómstri\" og að atvinnugreinin sé „arðbærari en nokkru sinni fyrr\" með fyrirliggjandi gögnum.",
       "supporting_evidence": [
-        "FISH-LEGAL-004",
-        "FISH-COMP-001"
+        {
+          "id": "FISH-LEGAL-004",
+          "source_name": "Norwegian Ministry of Trade, Industry and Fisheries — Bilateral fisheries agreements",
+          "source_url": null
+        },
+        {
+          "id": "FISH-COMP-001",
+          "source_name": "Norwegian Directorate of Fisheries — Statistics",
+          "source_url": "https://www.fiskeridir.no/English/Fisheries/Statistics"
+        }
       ],
       "contradicting_evidence": [],
-      "missing_context": "The Ground Truth Database does not contain specific data on Norwegian stock health assessments or industry profitability trends. The claim may well be accurate but cannot be verified with the available evidence.",
+      "missing_context": "Heimildasafnið inniheldur ekki sértæk gögn um mat á norskum fiskistofnum eða arðsemisþróun atvinnugreinarinnar. Fullyrðingin gæti vel verið rétt en er ekki staðfestanleg með fyrirliggjandi heimildum.",
       "confidence": 0.45
     },
     {
       "claim": {
-        "claim_text": "Fishing and fish processing account for over 40% of Iceland's export earnings",
         "original_quote": "Fishing and fish processing account for over 40% of Iceland's export earnings.",
+        "claim_text": "Fiskveiðar og fiskvinnsla standa undir yfir 40% af útflutningsverðmætum Íslands",
         "category": "fisheries",
         "claim_type": "statistic",
         "confidence": 0.85
       },
       "verdict": "partially_supported",
-      "explanation": "FISH-DATA-002 states that marine product exports totalled approximately ISK 380 billion in 2024, representing roughly 40% of Iceland's total goods exports. The claim says 'over 40%', while the evidence says 'roughly 40%'. This is close but the phrasing 'over 40%' slightly overstates the figure. Importantly, FISH-DATA-002's caveats note the export share has declined from over 70% in the 1990s, and the 40% figure refers to goods exports specifically — if services exports (particularly tourism) are included in total export earnings, the fisheries share would be considerably lower.",
+      "explanation": "<a href=\"https://www.statice.is/statistics/economy/external-trade/exports-and-imports/\" title=\"Statistics Iceland — External trade\" target=\"_blank\" rel=\"noopener\">FISH-DATA-002</a> segir að útflutningur sjávarafurða hafi numið um 380 milljörðum króna árið 2024, sem er um 40% af heildarútflutningi vara. Fullyrðingin segir „yfir 40%\" á meðan gögnin segja „um 40%\". Þetta er nálægt en orðalagið „yfir 40%\" ýkir töluna lítillega. Mikilvægt er að fyrirvörar <a href=\"https://www.statice.is/statistics/economy/external-trade/exports-and-imports/\" title=\"Statistics Iceland — External trade\" target=\"_blank\" rel=\"noopener\">FISH-DATA-002</a> benda til þess að útflutningshlutdeildin hafi lækkað úr yfir 70% á tíunda áratugnum, og að 40% talan vísi til vöruútflutnings sérstaklega — ef þjónustuútflutningur (einkum ferðaþjónusta) er tekinn með í heildarútflutningsverðmæti, yrði hlutdeild sjávarútvegs verulega lægri.",
       "supporting_evidence": [
-        "FISH-DATA-002",
-        "FISH-DATA-003",
-        "FISH-DATA-007"
+        {
+          "id": "FISH-DATA-002",
+          "source_name": "Statistics Iceland — External trade",
+          "source_url": "https://www.statice.is/statistics/economy/external-trade/exports-and-imports/"
+        },
+        {
+          "id": "FISH-DATA-003",
+          "source_name": "Statistics Iceland — National accounts by activity",
+          "source_url": "https://www.statice.is/statistics/economy/national-accounts/"
+        },
+        {
+          "id": "FISH-DATA-007",
+          "source_name": "Statistics Iceland — Industrial production; Samtök fyrirtækja í sjávarútvegi (SFS)",
+          "source_url": "https://www.statice.is/"
+        }
       ],
       "contradicting_evidence": [],
-      "missing_context": "The 40% figure refers to goods exports only (FISH-DATA-002). Including services (tourism, technology), the fisheries share of total export earnings would be significantly lower. The share has declined from over 70% in the 1990s. Aquaculture (farmed salmon) is now included in marine product export totals, which inflates the traditional fisheries figure.",
+      "missing_context": "40% talan vísar eingöngu til vöruútflutnings (<a href=\"https://www.statice.is/statistics/economy/external-trade/exports-and-imports/\" title=\"Statistics Iceland — External trade\" target=\"_blank\" rel=\"noopener\">FISH-DATA-002</a>). Ef þjónusta (ferðaþjónusta, tæknigeirinn) er tekin með, yrði hlutdeild sjávarútvegs af heildarútflutningsverðmætum verulega lægri. Hlutdeildin hefur lækkað úr yfir 70% á tíunda áratugnum. Fiskeldi (laxeldi) er nú innifalið í heildarútflutningi sjávarafurða, sem blæs upp hefðbundna sjávarútvegstölu.",
       "confidence": 0.85
     },
     {
       "claim": {
-        "claim_text": "Under the CFP, Iceland's annual catch allocation could be reduced by as much as 30%",
         "original_quote": "Under the CFP, Iceland's annual catch allocation could be reduced by as much as 30%, costing the industry billions of krónur.",
+        "claim_text": "Undir sameiginlegri sjávarútvegsstefnu gæti árlegur aflaheimild Íslands minnkað um allt að 30%",
         "category": "fisheries",
         "claim_type": "prediction",
         "confidence": 0.4
       },
       "verdict": "unverifiable",
-      "explanation": "No evidence in the Ground Truth Database provides a specific estimate of potential catch reductions for Iceland under the CFP. EEA-DATA-004 confirms that fisheries was the most contentious negotiation chapter, and FISH-LEGAL-001 explains that quota allocation under relative stability uses historical catches as baselines. However, the specific figure of 30% is not sourced or substantiated by any evidence provided. Since Iceland's key stocks are primarily within its own EEZ and it would bring substantial historical catches to any negotiation, the actual outcome would depend entirely on accession negotiations. The 30% figure appears to be speculative.",
+      "explanation": "Engin gögn í heimildasafninu gefa sértækt mat á mögulegum aflaskerðingum fyrir Ísland undir sjávarútvegsstefnunni. EEA-DATA-004 staðfestir að sjávarútvegur hafi verið umdeildasti samningakaflinn og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> útskýrir að kvótaúthlutun undir hlutfallslegum stöðugleika noti sögulegar veiðar sem viðmið. Hins vegar er tiltekna 30% talan ekki studd af neinum heimildum. Þar sem lykilstofnar Íslands eru aðallega innan eigin efnahagslögsögu og landið myndi koma með verulegar sögulegar veiðar inn í hverjar sem er viðræður, myndi raunveruleg niðurstaða alfarið ráðast af aðildarviðræðum. 30% talan virðist vera óundirbyggð tilgáta.",
       "supporting_evidence": [
-        "EEA-DATA-004",
-        "FISH-LEGAL-001",
-        "POL-DATA-005"
+        {
+          "id": "EEA-DATA-004",
+          "source_name": "Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13",
+          "source_url": null
+        },
+        {
+          "id": "FISH-LEGAL-001",
+          "source_name": "EU Regulation 1380/2013 of the European Parliament and of the Council",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380"
+        },
+        {
+          "id": "POL-DATA-005",
+          "source_name": "LÍÚ and SFS public statements; Hagstofa Íslands national accounts",
+          "source_url": null
+        }
       ],
       "contradicting_evidence": [],
-      "missing_context": "The 30% figure has no identified source in the evidence base. The actual impact would depend entirely on accession negotiations. Under relative stability, Iceland's historical catches in its own EEZ could serve as a strong baseline (FISH-LEGAL-001). Accession treaties can include specific fisheries provisions (FISH-LEGAL-002).",
+      "missing_context": "30% talan á sér enga greinanlega heimild í gagnagrunni okkar. Raunveruleg áhrif myndu alfarið ráðast af aðildarviðræðum. Samkvæmt hlutfallslegum stöðugleika gætu sögulegar veiðar Íslands í eigin efnahagslögsögu þjónað sem sterkt viðmið (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a>). Aðildarsamningar geta falið í sér sértæk sjávarútvegákvæði (FISH-LEGAL-002).",
       "confidence": 0.4
     },
     {
       "claim": {
-        "claim_text": "A 30% catch reduction would cost the Icelandic fishing industry billions of krónur",
         "original_quote": "Iceland's annual catch allocation could be reduced by as much as 30%, costing the industry billions of krónur.",
+        "claim_text": "30% aflaskerðing myndi kosta íslenskan sjávarútveg milljarða króna",
         "category": "fisheries",
         "claim_type": "prediction",
         "confidence": 0.6
       },
       "verdict": "partially_supported",
-      "explanation": "The conditional arithmetic is plausible: FISH-DATA-002 shows marine product exports of approximately ISK 380 billion, and FISH-DATA-007 shows fish processing revenue of approximately ISK 230 billion. A 30% reduction in catch volume would indeed likely cost 'billions of krónur' in reduced revenue, making the magnitude claim reasonable if the 30% premise is accepted. However, the 30% premise itself is unverifiable (see Claim 13). Additionally, the relationship between catch volume reduction and revenue loss is not linear — reduced supply could increase prices, and value-added processing could partially offset volume declines.",
+      "explanation": "Skilyrt reikningsdæmið er trúverðugt: <a href=\"https://www.statice.is/statistics/economy/external-trade/exports-and-imports/\" title=\"Statistics Iceland — External trade\" target=\"_blank\" rel=\"noopener\">FISH-DATA-002</a> sýnir útflutning sjávarafurða upp á um 380 milljarða króna og <a href=\"https://www.statice.is/\" title=\"Statistics Iceland — Industrial production; Samtök fyrirtækja í sjávarútvegi (SFS)\" target=\"_blank\" rel=\"noopener\">FISH-DATA-007</a> sýnir tekjur fiskvinnslunnar um 230 milljarða króna. 30% skerðing í veiðimagni myndi sannarlega líklega kosta „milljarða króna\" í minni tekjum, sem gerir stærðargráðuna raunhæfa ef 30% forsendunni er tekið. Hins vegar er 30% forsendan sjálf óstaðfestanleg (sjá fullyrðingu 13). Auk þess er sambandið milli aflaskerðingar og tekjutaps ekki línulegt — minna framboð gæti hækkað verð og virðisaukandi vinnsla gæti vegið upp magnminnkun að hluta.",
       "supporting_evidence": [
-        "FISH-DATA-002",
-        "FISH-DATA-007",
-        "FISH-DATA-003",
-        "FISH-DATA-008"
+        {
+          "id": "FISH-DATA-002",
+          "source_name": "Statistics Iceland — External trade",
+          "source_url": "https://www.statice.is/statistics/economy/external-trade/exports-and-imports/"
+        },
+        {
+          "id": "FISH-DATA-007",
+          "source_name": "Statistics Iceland — Industrial production; Samtök fyrirtækja í sjávarútvegi (SFS)",
+          "source_url": "https://www.statice.is/"
+        },
+        {
+          "id": "FISH-DATA-003",
+          "source_name": "Statistics Iceland — National accounts by activity",
+          "source_url": "https://www.statice.is/statistics/economy/national-accounts/"
+        },
+        {
+          "id": "FISH-DATA-008",
+          "source_name": "Icelandic Ministry of Food, Agriculture and Fisheries — Veiðigjald",
+          "source_url": null
+        }
       ],
       "contradicting_evidence": [],
-      "missing_context": "The 30% catch reduction premise is itself unverifiable. Revenue impact is not necessarily proportional to volume reduction due to price effects. The fishing fee (veiðigjald) revenue of ISK 6.5 billion (FISH-DATA-008) represents only a small fraction of resource rent, suggesting the industry captures substantial economic surplus that could absorb some reduction.",
+      "missing_context": "Forsendan um 30% aflaskerðingu er sjálf óstaðfestanleg. Tekjuáhrif eru ekki endilega í réttu hlutfalli við magnskerðingu vegna verðáhrifa. Veiðigjald upp á 6,5 milljarða króna (FISH-DATA-008) er aðeins lítill hluti auðlindaarentu, sem bendir til þess að atvinnugreinin fái verulegan efnahagslegan ávinning sem gæti tekið á sig einhverja skerðingu.",
       "confidence": 0.6
     },
     {
       "claim": {
-        "claim_text": "Iceland already has tariff-free access to the EU market for most goods through the EEA Agreement",
         "original_quote": "Iceland already has tariff-free access to the EU market for most goods through the EEA Agreement.",
+        "claim_text": "Ísland hefur nú þegar tollfrjálsan aðgang að ESB-markaðinum fyrir flestar vörur í gegnum EES-samninginn",
         "category": "trade",
         "claim_type": "legal_assertion",
         "confidence": 0.95
       },
       "verdict": "supported",
-      "explanation": "TRADE-DATA-002 directly confirms this: 'Through the EEA Agreement, Iceland already has tariff-free access to the EU single market for most goods (excluding agricultural and fishery products).' EEA-LEGAL-001 confirms approximately 70% of EU internal market legislation has been incorporated into Icelandic law through the EEA. The claim is factually accurate.",
+      "explanation": "TRADE-DATA-002 staðfestir þetta beint: „Í gegnum EES-samninginn hefur Ísland nú þegar tollfrjálsan aðgang að innri markaði ESB fyrir flestar vörur (að undanskildum landbúnaðar- og sjávarafurðum).\" <a href=\"https://www.eftasurv.int/internal-market/eea-efta-internal-market-scoreboard\" title=\"EFTA Surveillance Authority — Internal Market Scoreboard\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-001</a> staðfestir að um 70% af löggjöf innri markaðar ESB hefur verið innleidd í íslenskan rétt í gegnum EES. Fullyrðingin er staðreyndarlega rétt.",
       "supporting_evidence": [
-        "TRADE-DATA-002",
-        "EEA-LEGAL-001",
-        "LABOUR-DATA-001",
-        "EEA-LEGAL-004"
+        {
+          "id": "TRADE-DATA-002",
+          "source_name": "EEA Agreement — Protocol 3 on trade in processed agricultural products",
+          "source_url": null
+        },
+        {
+          "id": "EEA-LEGAL-001",
+          "source_name": "EFTA Surveillance Authority — Internal Market Scoreboard",
+          "source_url": "https://www.eftasurv.int/internal-market/eea-efta-internal-market-scoreboard"
+        },
+        {
+          "id": "LABOUR-DATA-001",
+          "source_name": "EFTA Surveillance Authority — EEA Agreement provisions; Útlendingastofnun (Directorate of Immigration)",
+          "source_url": null
+        },
+        {
+          "id": "EEA-LEGAL-004",
+          "source_name": "Schengen Association Agreement with Iceland and Norway (2001)",
+          "source_url": null
+        }
       ],
       "contradicting_evidence": [],
-      "missing_context": "The important qualifier is 'excluding agricultural and fishery products' (TRADE-DATA-002). These exclusions are significant given that fisheries represent roughly 40% of goods exports. The claim is technically accurate but by saying 'most goods' it somewhat understates the significance of the agricultural and fisheries exclusions.",
+      "missing_context": "Mikilvægi fyrirvarinn er „að undanskildum landbúnaðar- og sjávarafurðum\" (TRADE-DATA-002). Þessar undanþágur eru verulegar í ljósi þess að sjávarútvegur er um 40% af vöruútflutningi. Fullyrðingin er tæknilega rétt en með því að segja „flestar vörur\" grefur hún nokkuð undan mikilvægi undanþáganna fyrir landbúnað og sjávarútveg.",
       "confidence": 0.95
     },
     {
       "claim": {
-        "claim_text": "EU membership would mean accepting the Common Agricultural Policy",
         "original_quote": "EU membership would mean accepting the Common Agricultural Policy, which would flood the Icelandic market with subsidised European food products, undermining local farmers.",
+        "claim_text": "ESB-aðild myndi þýða að samþykkja sameiginlegu landbúnaðarstefnuna",
         "category": "agriculture",
         "claim_type": "legal_assertion",
         "confidence": 0.95
       },
       "verdict": "supported",
-      "explanation": "EEA-DATA-001 confirms that EU members participate in the CAP, while EEA EFTA states retain independent agricultural policy. EEA-LEGAL-008 confirms the EEA Agreement excludes the CAP. AGRI-LEGAL-001 confirms that Iceland's agricultural sector would be eligible for CAP support upon EU membership. Accepting the CAP is indeed a requirement of EU membership — there is no CAP opt-out mechanism.",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/statistics/legislative-acts-statistics.html\" title=\"EUR-Lex — Legislation statistics\" target=\"_blank\" rel=\"noopener\">EEA-DATA-001</a> staðfestir að ESB-ríki taka þátt í sameiginlegu landbúnaðarstefnunni, á meðan EES EFTA-ríki halda sjálfstæðri landbúnaðarstefnu. <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Articles 8 and 17–26; Protocols 1 and 47\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-008</a> staðfestir að EES-samningurinn undanþiggi sameiginlegu landbúnaðarstefnuna. AGRI-LEGAL-001 staðfestir að íslenskur landbúnaður myndi eiga rétt á stuðningi sameiginlegu landbúnaðarstefnunnar við ESB-aðild. Samþykkt landbúnaðarstefnunnar er skilyrði ESB-aðildar — ekkert undanþáguákvæði er til staðar.",
       "supporting_evidence": [
-        "EEA-DATA-001",
-        "EEA-LEGAL-008",
-        "AGRI-LEGAL-001",
-        "TRADE-DATA-002"
+        {
+          "id": "EEA-DATA-001",
+          "source_name": "EUR-Lex — Legislation statistics",
+          "source_url": "https://eur-lex.europa.eu/statistics/legislative-acts-statistics.html"
+        },
+        {
+          "id": "EEA-LEGAL-008",
+          "source_name": "EEA Agreement, Articles 8 and 17–26; Protocols 1 and 47",
+          "source_url": "https://www.efta.int/eea/eea-agreement"
+        },
+        {
+          "id": "AGRI-LEGAL-001",
+          "source_name": "European Commission — CAP at a glance",
+          "source_url": null
+        },
+        {
+          "id": "TRADE-DATA-002",
+          "source_name": "EEA Agreement — Protocol 3 on trade in processed agricultural products",
+          "source_url": null
+        }
       ],
       "contradicting_evidence": [],
-      "missing_context": "While accepting the CAP is mandatory, the CAP also provides substantial support to farmers (€387 billion for 2021–2027). The net effect on Icelandic farmers would depend on how current domestic subsidies compare to CAP payments (AGRI-LEGAL-001). This claim is separated from the prediction about 'flooding' the market, which is assessed in Claim 17.",
+      "missing_context": "Þótt samþykkt landbúnaðarstefnunnar sé skylda, veitir hún einnig verulegan stuðning við bændur (387 milljarðar evra fyrir 2021–2027). Nettóáhrif á íslenska bændur myndu ráðast af því hvernig núverandi innlendur stuðningur er í samanburði við greiðslur landbúnaðarstefnunnar (AGRI-LEGAL-001). Þessi fullyrðing er aðskilin frá spánni um „flóð\" á markaðinn, sem er metið í fullyrðingu 17.",
       "confidence": 0.95
     },
     {
       "claim": {
-        "claim_text": "The Common Agricultural Policy would flood the Icelandic market with subsidised European food products, undermining local farmers",
         "original_quote": "which would flood the Icelandic market with subsidised European food products, undermining local farmers.",
+        "claim_text": "Sameiginleg landbúnaðarstefna myndi flæða yfir íslenskan markað með niðurgreiddum evrópskum matvælum og grafa undan íslenskum bændum",
         "category": "agriculture",
         "claim_type": "prediction",
         "confidence": 0.7
       },
       "verdict": "partially_supported",
-      "explanation": "There is legitimate concern: AGRI-DATA-002 shows Iceland currently applies high import tariffs (up to 80% on dairy, 55% on meat) that protect domestic agriculture. EU membership would eliminate these tariffs within the single market, exposing Icelandic producers to EU competition. AGRI-DATA-004 shows Icelandic farmers receive 54% of revenue from government support, among the highest in the OECD. However, 'flood' and 'undermining' are speculative characterisations. AGRI-LEGAL-001 notes that Icelandic farmers would be eligible for CAP support, and AGRI-DATA-004's caveats note that under EU membership farmers might receive lower per-farm payments but would gain access to broader CAP programmes. Transitional arrangements are standard in accession treaties.",
+      "explanation": "Raunveruleg áhyggjuefni eru til staðar: AGRI-DATA-002 sýnir að Ísland beitir nú háum innflutningstollum (allt að 80% á mjólkurvörur, 55% á kjöt) sem vernda innlendan landbúnað. ESB-aðild myndi afnema þessa tolla innan innri markaðarins og útsetja íslenska framleiðendur fyrir ESB-samkeppni. <a href=\"https://www.oecd.org/agriculture/topics/agricultural-policy-monitoring-and-evaluation/\" title=\"OECD — Agricultural Policy Monitoring and Evaluation 2024; Bændasamtök Íslands\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-004</a> sýnir að íslenskir bændur fá 54% tekna sinna úr ríkisstuðningi, meðal þeirra hæstu í OECD. Hins vegar eru „flæða yfir\" og „grafa undan\" órökstudd lýsingarorð. AGRI-LEGAL-001 bendir á að íslenskir bændur myndu eiga rétt á stuðningi landbúnaðarstefnunnar og fyrirvörar <a href=\"https://www.oecd.org/agriculture/topics/agricultural-policy-monitoring-and-evaluation/\" title=\"OECD — Agricultural Policy Monitoring and Evaluation 2024; Bændasamtök Íslands\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-004</a> benda til þess að við ESB-aðild gætu bændur fengið lægri greiðslur á bú en fengu aðgang að víðtækari áætlunum stefnunnar. Aðlögunartímabil eru staðlaður hluti aðildarsamninga.",
       "supporting_evidence": [
-        "AGRI-DATA-002",
-        "AGRI-DATA-004",
-        "AGRI-LEGAL-001",
-        "TRADE-DATA-002"
+        {
+          "id": "AGRI-DATA-002",
+          "source_name": "Icelandic customs tariff schedule — Tollskrá",
+          "source_url": null
+        },
+        {
+          "id": "AGRI-DATA-004",
+          "source_name": "OECD — Agricultural Policy Monitoring and Evaluation 2024; Bændasamtök Íslands",
+          "source_url": "https://www.oecd.org/agriculture/topics/agricultural-policy-monitoring-and-evaluation/"
+        },
+        {
+          "id": "AGRI-LEGAL-001",
+          "source_name": "European Commission — CAP at a glance",
+          "source_url": null
+        },
+        {
+          "id": "TRADE-DATA-002",
+          "source_name": "EEA Agreement — Protocol 3 on trade in processed agricultural products",
+          "source_url": null
+        }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Icelandic farmers would also receive CAP payments and access to EU rural development programmes (AGRI-LEGAL-001). Current Icelandic subsidy levels (54% PSE) are much higher than the EU average (19%), so the transition would be complex (AGRI-DATA-004). Accession treaties typically include transitional periods for agriculture. The elimination of tariffs would lower consumer food prices, which the claim does not mention.",
+      "missing_context": "Íslenskir bændur myndu einnig fá greiðslur úr landbúnaðarstefnunni og aðgang að ESB-áætlunum um þróun dreifbýlis (AGRI-LEGAL-001). Núverandi íslenskt stuðningsstig (54% PSE) er mun hærra en ESB-meðaltal (19%), þannig að umskiptin yrðu flókin (<a href=\"https://www.oecd.org/agriculture/topics/agricultural-policy-monitoring-and-evaluation/\" title=\"OECD — Agricultural Policy Monitoring and Evaluation 2024; Bændasamtök Íslands\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-004</a>). Aðildarsamningar innihalda venjulega aðlögunartímabil fyrir landbúnað. Afnám tolla myndi lækka matvælaverð til neytenda, sem fullyrðingin nefnir ekki.",
       "confidence": 0.7
     },
     {
       "claim": {
-        "claim_text": "Iceland's agricultural sector cannot compete with the scale of continental European farming",
         "original_quote": "Iceland's agricultural sector, already fragile, simply cannot compete with the scale of continental European farming.",
+        "claim_text": "Landbúnaður Íslands getur ekki keppt við stærðarhagkvæmni meginlandsevrópsks landbúnaðar",
         "category": "agriculture",
         "claim_type": "comparison",
         "confidence": 0.75
       },
       "verdict": "partially_supported",
-      "explanation": "AGRI-DATA-003 confirms Iceland has approximately 2,300 farms with average size significantly smaller than the EU average, contributing only 1.0–1.2% of GDP. AGRI-DATA-002 shows that high tariffs (up to 80% on dairy) currently protect the sector, implying it cannot compete on price without protection. AGRI-DATA-006 confirms high self-sufficiency in lamb and dairy 'reflects tariff protection rather than comparative advantage.' However, characterising the sector as 'simply cannot compete' is an oversimplification. AGRI-DATA-003's caveats note that greenhouse horticulture has grown substantially due to cheap geothermal energy — a genuine competitive advantage. The claim also ignores that EU membership would bring CAP support and that other small EU member states (Malta, Cyprus) maintain agricultural sectors under the CAP.",
+      "explanation": "<a href=\"https://px.hagstofa.is/pxen/pxweb/en/Atvinnuvegir/Atvinnuvegir__landbunadur/\" title=\"Hagstofa Íslands — Agricultural statistics; Bændasamtök Íslands annual report 2024\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-003</a> staðfestir að á Íslandi eru um 2.300 búgarðar með meðalstærð verulega minni en ESB-meðaltalið, og landbúnaður leggur aðeins 1,0–1,2% til vergrar landsframleiðslu. AGRI-DATA-002 sýnir að háir tollar (allt að 80% á mjólkurvörur) vernda greinina núna, sem gefur til kynna að hún geti ekki keppt á verði án verndar. AGRI-DATA-006 staðfestir að há sjálfnægja í lambakjöti og mjólkurvörum „endurspeglar tollvernd fremur en hlutfallslegt forskot.\" Hins vegar er „getur einfaldlega ekki keppt\" ofureinföldun. Fyrirvörar <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Atvinnuvegir/Atvinnuvegir__landbunadur/\" title=\"Hagstofa Íslands — Agricultural statistics; Bændasamtök Íslands annual report 2024\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-003</a> benda á að gróðurhúsaræktun hefur vaxið verulega vegna ódýrrar jarðvarma — raunverulegt samkeppnisforskot. Fullyrðingin hunsar líka að önnur lítil ESB-aðildarríki (Malta, Kýpur) viðhalda landbúnaðargeirum undir sameiginlegri landbúnaðarstefnu.",
       "supporting_evidence": [
-        "AGRI-DATA-003",
-        "AGRI-DATA-002",
-        "AGRI-DATA-006",
-        "AGRI-DATA-007"
+        {
+          "id": "AGRI-DATA-003",
+          "source_name": "Hagstofa Íslands — Agricultural statistics; Bændasamtök Íslands annual report 2024",
+          "source_url": "https://px.hagstofa.is/pxen/pxweb/en/Atvinnuvegir/Atvinnuvegir__landbunadur/"
+        },
+        {
+          "id": "AGRI-DATA-002",
+          "source_name": "Icelandic customs tariff schedule — Tollskrá",
+          "source_url": null
+        },
+        {
+          "id": "AGRI-DATA-006",
+          "source_name": "Matvælastofnun (MAST) — Icelandic Food and Veterinary Authority; Bændasamtök Íslands",
+          "source_url": null
+        },
+        {
+          "id": "AGRI-DATA-007",
+          "source_name": "Landgræðsla ríkisins (Soil Conservation Service); Hagstofa Íslands land use statistics",
+          "source_url": "https://land.is/"
+        }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Iceland does have competitive advantages in some areas, particularly geothermal-powered horticulture (AGRI-DATA-003). Other small EU member states maintain agricultural sectors under CAP. The sector's characterisation as 'fragile' omits its cultural and political significance and the possibility of CAP support compensating for lost tariff protection. Climate constraints (no grain production possible) are a genuine structural disadvantage (AGRI-DATA-006).",
+      "missing_context": "Ísland hefur samkeppnisforskot á sumum sviðum, einkum jarðvarmaknúinni gróðurhúsaræktun (<a href=\"https://px.hagstofa.is/pxen/pxweb/en/Atvinnuvegir/Atvinnuvegir__landbunadur/\" title=\"Hagstofa Íslands — Agricultural statistics; Bændasamtök Íslands annual report 2024\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-003</a>). Önnur lítil ESB-aðildarríki viðhalda landbúnaðargeirum undir sameiginlegri landbúnaðarstefnu. Lýsingin á greininni sem „viðkvæmri\" sleppir menningarlegri og pólitískri mikilvægi hennar og möguleikanum á að stuðningur landbúnaðarstefnunnar bæti upp tapaða tollvernd. Takmarkanir loftslags (engin kornrækt möguleg) eru raunverulegar skipulagslegar ókostir (AGRI-DATA-006).",
       "confidence": 0.75
     },
     {
       "claim": {
-        "claim_text": "Iceland largely already enjoys economic integration with the EU through the EEA",
         "original_quote": "EU membership would sacrifice Iceland's most valuable natural resource — its fish — for nebulous promises of economic integration that we largely already enjoy through the EEA.",
+        "claim_text": "Ísland nýtur nú þegar efnahagssamþættingar við ESB í gegnum EES-samninginn",
         "category": "eea_eu_law",
         "claim_type": "legal_assertion",
         "confidence": 0.8
       },
       "verdict": "partially_supported",
-      "explanation": "TRADE-DATA-002 confirms tariff-free access for most goods (excluding agriculture and fisheries) through the EEA. LABOUR-DATA-001 confirms free movement of workers already exists under EEA rules. EEA-LEGAL-001 confirms approximately 70% of EU internal market legislation is incorporated into Icelandic law. So 'largely already enjoy' is substantially correct for the single market dimension. However, TRADE-COMP-005 and EEA-DATA-005 show significant differences remain: EU membership would provide access to structural funds, full CAP participation, voting rights on single market rules, access to EU trade agreements with third countries, and customs union membership. The word 'nebulous' mischaracterises these concrete additional benefits.",
+      "explanation": "TRADE-DATA-002 staðfestir tollfrjálsan aðgang fyrir flestar vörur (að undanskildum landbúnaði og sjávarútvegi) í gegnum EES. LABOUR-DATA-001 staðfestir að frjáls för launafólks sé þegar til staðar samkvæmt EES-reglum. <a href=\"https://www.eftasurv.int/internal-market/eea-efta-internal-market-scoreboard\" title=\"EFTA Surveillance Authority — Internal Market Scoreboard\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-001</a> staðfestir að um 70% af löggjöf innri markaðar ESB hefur verið innleidd í íslenskan rétt. Svo „njóta nú þegar\" er í meginatriðum rétt fyrir innri markaðsþáttinn. Hins vegar sýna TRADE-COMP-005 og <a href=\"https://eeagrants.org/about\" title=\"EEA Grants Financial Mechanism Committee; European Commission budget data\" target=\"_blank\" rel=\"noopener\">EEA-DATA-005</a> verulegan mun sem eftir stendur: ESB-aðild myndi veita aðgang að skipulagssjóðum, fulla þátttöku í landbúnaðarstefnu, atkvæðisrétt um reglur innri markaðarins, aðgang að viðskiptasamningum ESB við þriðju lönd og tollabandalagsaðild. Orðið „óljós\" lýsir þessum áþreifanlegu viðbótarávinningi ranglega.",
       "supporting_evidence": [
-        "TRADE-DATA-002",
-        "LABOUR-DATA-001",
-        "EEA-LEGAL-001",
-        "TRADE-COMP-005",
-        "EEA-DATA-005"
+        {
+          "id": "TRADE-DATA-002",
+          "source_name": "EEA Agreement — Protocol 3 on trade in processed agricultural products",
+          "source_url": null
+        },
+        {
+          "id": "LABOUR-DATA-001",
+          "source_name": "EFTA Surveillance Authority — EEA Agreement provisions; Útlendingastofnun (Directorate of Immigration)",
+          "source_url": null
+        },
+        {
+          "id": "EEA-LEGAL-001",
+          "source_name": "EFTA Surveillance Authority — Internal Market Scoreboard",
+          "source_url": "https://www.eftasurv.int/internal-market/eea-efta-internal-market-scoreboard"
+        },
+        {
+          "id": "TRADE-COMP-005",
+          "source_name": "EFTA Secretariat — EFTA budget; various academic estimates",
+          "source_url": null
+        },
+        {
+          "id": "EEA-DATA-005",
+          "source_name": "EEA Grants Financial Mechanism Committee; European Commission budget data",
+          "source_url": "https://eeagrants.org/about"
+        }
       ],
       "contradicting_evidence": [],
-      "missing_context": "EU membership offers concrete additional benefits beyond the EEA: voting rights in EU decision-making, customs union (eliminating rules-of-origin costs), access to EU structural funds, and participation in EU trade agreements with third countries (TRADE-COMP-005). The EEA's 'no taxation without representation' problem — Iceland implements rules without voting on them — is a significant governance deficit that EU membership would resolve (EEA-LEGAL-002). Financial obligations would also increase substantially (TRADE-COMP-001).",
+      "missing_context": "ESB-aðild býður upp á áþreifanlegan viðbótarávinning umfram EES: atkvæðisrétt í ákvörðunum ESB, tollabandalag (sem útilokar upprunareglugerðarkostnað), aðgang að skipulagssjóðum ESB og þátttöku í viðskiptasamningum ESB við þriðju lönd (TRADE-COMP-005). Vandamálið „enginn skattur án fulltrúa\" í EES — Ísland innleiðir reglur án þess að kjósa um þær — er verulegur lýðræðishalli sem ESB-aðild myndi leysa (<a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Articles 99–101\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-002</a>). Fjárhagslegar skuldbindingar myndu einnig aukast verulega (<a href=\"https://eeagrants.org/\" title=\"EEA Grants — Financial mechanism overview\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-001</a>).",
       "confidence": 0.8
     }
   ]

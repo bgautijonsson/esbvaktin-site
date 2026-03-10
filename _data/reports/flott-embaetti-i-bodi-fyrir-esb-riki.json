@@ -5,7 +5,7 @@
   "article_source": null,
   "article_date": null,
   "analysis_date": "2026-03-09",
-  "summary": "Analysed 13 claims. Verdicts: 5 unverifiable, 4 supported, 3 partially_supported, 1 misleading. Framing: leans_anti_eu. Completeness: 15%.",
+  "summary": "Greindar voru 13 fullyrðingar. Niðurstöður: 5 ósannreynanlegar, 4 studdar af heimildum, 3 studdar að hluta, 1 villandi. Framsetnng: hallast gegn ESB-aðild. Heildarumfjöllun: 15%.",
   "verdict_counts": {
     "partially_supported": 3,
     "supported": 4,
@@ -16,239 +16,363 @@
   "claims": [
     {
       "claim": {
-        "claim_text": "Samfylkingin, Viðreisn and Flokkur fólksins have put EU membership back on the agenda with a planned referendum.",
         "original_quote": "Samfylking, Viðreisn og Flokkur fólksins hafa sett ESB aðild rækilega á dagskrá á ný með fyrirhugaðri þ jóðaratkvæðagreiðslu.",
+        "claim_text": "Samfylkingin, Viðreisn og Flokkur fólksins hafi sett ESB-aðild aftur á dagskrá með fyrirhugaðri þjóðaratkvæðagreiðslu.",
         "category": "party_positions",
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "POL-DATA-001 confirms that Samfylkingin and Viðreisn formally support EU membership, and POL-DATA-010 confirms the current government's decision to hold a referendum. However, the inclusion of Flokkur fólksins as a party that has “put EU membership on the agenda” is problematic: POLL-DATA-011 shows that only ~10% of Flokkur fólksins voters support EU membership, and POL-DATA-002 lists the party among those opposing EU membership. Flokkur fólksins may have supported the referendum process without supporting membership itself.",
+      "explanation": "<a href=\"https://www.althingi.is/\" title=\"Althingi — Party platforms and election results\" target=\"_blank\" rel=\"noopener\">POL-DATA-001</a> staðfestir að Samfylkingin og Viðreisn styðja formlega ESB-aðild og POL-DATA-010 staðfestir ákvörðun ríkisstjórnarinnar um að halda þjóðaratkvæðagreiðslu. Hins vegar er það vandamál að Flokkur fólksins er talinn meðal flokka sem hafi „sett ESB-aðild á dagskrá\": POLL-DATA-011 sýnir að aðeins um 10% kjósenda Flokks fólksins styðja ESB-aðild og <a href=\"https://www.althingi.is/\" title=\"Althingi — Party platforms and election results\" target=\"_blank\" rel=\"noopener\">POL-DATA-002</a> telur flokkinn meðal andstæðinga ESB-aðildar. Flokkur fólksins kann að hafa stutt þjóðaratkvæðagreiðsluferlið án þess að styðja aðildina sjálfa.",
       "supporting_evidence": [
-        "POL-DATA-001",
-        "POL-DATA-010",
-        "POLL-DATA-001"
+        {
+          "id": "POL-DATA-001",
+          "source_name": "Althingi — Party platforms and election results",
+          "source_url": "https://www.althingi.is/"
+        },
+        {
+          "id": "POL-DATA-010",
+          "source_name": "Coalition agreements 2009, 2013, 2016, 2017, 2021, 2024; Althingi records",
+          "source_url": null
+        },
+        {
+          "id": "POLL-DATA-001",
+          "source_name": "Gallup Ísland — EU membership polling",
+          "source_url": null
+        }
       ],
       "contradicting_evidence": [
-        "POLL-DATA-011",
-        "POL-DATA-002"
+        {
+          "id": "POLL-DATA-011",
+          "source_name": "Gallup Ísland — EU support by party affiliation (November 2025)",
+          "source_url": null
+        },
+        {
+          "id": "POL-DATA-002",
+          "source_name": "Althingi — Party platforms and election results",
+          "source_url": "https://www.althingi.is/"
+        }
       ],
-      "missing_context": "Flokkur fólksins opposes EU membership despite potentially supporting the referendum process. Only ~10% of its voters support membership. The claim conflates supporting a referendum with supporting EU membership.",
+      "missing_context": "Flokkur fólksins er andvígur ESB-aðild þrátt fyrir að hafa hugsanlega stutt þjóðaratkvæðagreiðsluferlið. Aðeins um 10% kjósenda flokksins styðja aðild. Fullyrðingin blandar saman stuðningi við þjóðaratkvæðagreiðslu og stuðningi við ESB-aðild.",
       "confidence": 0.75
     },
     {
       "claim": {
-        "claim_text": "Iceland's EU membership was last on the agenda under Jóhanna Sigurðardóttir's left-wing government, which submitted an EU application in 2009.",
         "original_quote": "Aðild Íslands að ESB var síðast á dagskrá vinstristjórnar Jóhönnu Sigurðardóttur sem stóð fyrir umsókn að ESB árið 2009.",
+        "claim_text": "ESB-aðild Íslands hafi síðast verið á dagskrá undir stjórn Jóhönnu Sigurðardóttur, sem lagði fram aðildarumsókn árið 2009.",
         "category": "sovereignty",
         "claim_type": "legal_assertion",
         "confidence": 0.95
       },
       "verdict": "supported",
-      "explanation": "EEA-DATA-009 confirms Iceland applied for EU membership on 16 July 2009 under a Social Democrat-led government. PREC-HIST-005 confirms this was in the aftermath of the 2008 financial crisis. POL-DATA-010 confirms the 2009–2013 coalition (Samfylkingin + Left-Greens) applied for membership, and the issue was subsequently removed from the agenda by the centre-right coalition that followed.",
+      "explanation": "EEA-DATA-009 staðfestir að Ísland sótti um ESB-aðild 16. júlí 2009 undir stjórn Samfylkingarinnar. PREC-HIST-005 staðfestir að þetta hafi verið í kjölfar fjármálakreppunnar 2008. POL-DATA-010 staðfestir að ríkisstjórn Samfylkingar og Vinstri grænna (2009–2013) sótti um aðild og málið var síðan tekið af dagskrá af miðju-hægri ríkisstjórninni sem tók við.",
       "supporting_evidence": [
-        "EEA-DATA-009",
-        "PREC-HIST-005",
-        "POL-DATA-010",
-        "PREC-HIST-004"
+        {
+          "id": "EEA-DATA-009",
+          "source_name": "European Commission — Iceland: Accession negotiations status; Althingi records",
+          "source_url": null
+        },
+        {
+          "id": "PREC-HIST-005",
+          "source_name": "Capacent Gallup / Social Science Research Institute, University of Iceland",
+          "source_url": null
+        },
+        {
+          "id": "POL-DATA-010",
+          "source_name": "Coalition agreements 2009, 2013, 2016, 2017, 2021, 2024; Althingi records",
+          "source_url": null
+        },
+        {
+          "id": "PREC-HIST-004",
+          "source_name": "European Commission — Iceland accession progress reports",
+          "source_url": null
+        }
       ],
       "contradicting_evidence": [],
-      "missing_context": "The application was widely seen as crisis-driven (PREC-HIST-005), with public support peaking at ~60% in early 2009 but declining as the economy recovered.",
+      "missing_context": "Umsóknin var almennt talin knúin áfram af kreppunni (PREC-HIST-005), þar sem stuðningur almennings náði hámarki í um 60% snemma árs 2009 en dvínaði eftir því sem efnahagurinn tók við sér.",
       "confidence": 0.95
     },
     {
       "claim": {
-        "claim_text": "The same government decided to pause the EU accession negotiations in 2013.",
         "original_quote": "Sama ríkisstjórn ákvað síðan að gera „hlé“ á viðræðunum árið 2013.",
+        "claim_text": "Sama ríkisstjórnin hafi ákveðið að gera hlé á aðildarviðræðunum árið 2013.",
         "category": "sovereignty",
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
       "verdict": "misleading",
-      "explanation": "The claim states that “the same government” (i.e. Jóhanna Sigurðardóttir's left-wing government) paused the negotiations in 2013. This is incorrect. PREC-HIST-004 and POL-DATA-010 clearly state that it was the centre-right government elected in 2013 (Independence Party + Progressive Party) that froze negotiations, not the left-wing government that initiated them. The 2009–2013 coalition applied for membership; the 2013–2016 coalition suspended it.",
+      "explanation": "Fullyrðingin segir að „sama ríkisstjórnin\" (þ.e. vinstristjórn Jóhönnu Sigurðardóttur) hafi gert hlé á viðræðunum árið 2013. Þetta er rangt. PREC-HIST-004 og POL-DATA-010 segja skýrt að það hafi verið miðju-hægri ríkisstjórnin sem kosin var 2013 (Sjálfstæðisflokkur og Framsóknarflokkur) sem frysti viðræðurnar, en ekki vinstristjórnin sem hóf þær. Ríkisstjórnin 2009–2013 sótti um aðild; ríkisstjórnin 2013–2016 stöðvaði ferlið.",
       "supporting_evidence": [],
       "contradicting_evidence": [
-        "PREC-HIST-004",
-        "POL-DATA-010",
-        "EEA-DATA-009"
+        {
+          "id": "PREC-HIST-004",
+          "source_name": "European Commission — Iceland accession progress reports",
+          "source_url": null
+        },
+        {
+          "id": "POL-DATA-010",
+          "source_name": "Coalition agreements 2009, 2013, 2016, 2017, 2021, 2024; Althingi records",
+          "source_url": null
+        },
+        {
+          "id": "EEA-DATA-009",
+          "source_name": "European Commission — Iceland: Accession negotiations status; Althingi records",
+          "source_url": null
+        }
       ],
-      "missing_context": "It was a different government — the incoming centre-right coalition (Independence Party + Progressive Party) — that suspended negotiations after the 2013 election. The left-wing government that applied in 2009 did not pause the talks. Iceland formally withdrew its application in March 2015.",
+      "missing_context": "Önnur ríkisstjórn — hin nýja miðju-hægri stjórnarsamsteypa (Sjálfstæðisflokkur og Framsóknarflokkur) — stöðvaði viðræðurnar eftir kosningarnar 2013. Vinstristjórnin sem sótti um aðild 2009 gerði ekki hlé á viðræðunum. Ísland dró umsókn sína formlega til baka í mars 2015.",
       "confidence": 0.9
     },
     {
       "claim": {
-        "claim_text": "According to a 2013 memorandum to the government, negotiations on the most important chapters had not yet begun when the talks were suspended.",
         "original_quote": "Eins og fram kemur í minnisblaði til ríkisstjórnar frá 2013, höfðu viðræður um „mikilvægustu kafla“ viðræðnanna ekki enn hafist þegar viðræðunum var slitið.",
+        "claim_text": "Samkvæmt minnisblaði til ríkisstjórnarinnar frá 2013 höfðu viðræður um mikilvægustu kaflana ekki hafist þegar viðræðunum var slitið.",
         "category": "eea_eu_law",
         "claim_type": "legal_assertion",
         "confidence": 0.85
       },
       "verdict": "partially_supported",
-      "explanation": "PREC-HIST-004 confirms that the most contentious chapter (13: Fisheries) was never opened, and EEA-DATA-009 confirms that the most contentious chapters — fisheries (Chapter 13), agriculture (Chapter 11), and free movement of capital (Chapter 4) — remained unresolved. However, the evidence shows mixed results: of 33 chapters, 27 were screened and 11 were formally opened. The specific 2013 memorandum referenced in the claim is not in our evidence database, so the exact wording cannot be verified.",
+      "explanation": "PREC-HIST-004 staðfestir að umdeildasti kaflinn (13: Sjávarútvegur) var aldrei opnaður og EEA-DATA-009 staðfestir að umdeildustu kaflarnir — sjávarútvegur (kafli 13), landbúnaður (kafli 11) og frjálst fjármagnsflæði (kafli 4) — voru óleystir. Hins vegar sýna gögnin blandaðar niðurstöður: af 33 köflum voru 27 skimaðir og 11 formlega opnaðir. Tiltekið minnisblað frá 2013 sem vísað er til er ekki í gagnagrunninum og því er ekki hægt að sannreyna nákvæma orðalag þess.",
       "supporting_evidence": [
-        "PREC-HIST-004",
-        "EEA-DATA-009"
+        {
+          "id": "PREC-HIST-004",
+          "source_name": "European Commission — Iceland accession progress reports",
+          "source_url": null
+        },
+        {
+          "id": "EEA-DATA-009",
+          "source_name": "European Commission — Iceland: Accession negotiations status; Althingi records",
+          "source_url": null
+        }
       ],
       "contradicting_evidence": [],
-      "missing_context": "While key chapters like fisheries were never opened, significant progress was made on other chapters (11 formally opened out of 33). The claim's reference to a specific 2013 memorandum cannot be verified against our evidence. Note also that EEA-DATA-009 and PREC-HIST-004 give slightly different figures on chapters opened vs provisionally closed.",
+      "missing_context": "Þótt lykilkaflar eins og sjávarútvegur hafi aldrei verið opnaðir, náðist töluverður árangur í öðrum köflum (11 formlega opnaðir af 33). Ekki er hægt að sannreyna tilvísun fullyrðingarinnar í tiltekið minnisblað frá 2013 gegn heimildum okkar. Athugið einnig að EEA-DATA-009 og PREC-HIST-004 gefa örlítið mismunandi tölur um kafla sem voru opnaðir og bráðabirgðalokað.",
       "confidence": 0.7
     },
     {
       "claim": {
-        "claim_text": "The chapters that were not opened in the accession negotiations included fisheries and agriculture.",
         "original_quote": "Málaflokkarni sem voru ekki “opnaðir“ í viðræðunum snerta m.a. íslenskan sjavárútveg og landbúnað.",
+        "claim_text": "Málaflokkar sem ekki voru opnaðir í aðildarviðræðunum hafi meðal annars snert sjávarútveg og landbúnað.",
         "category": "fisheries",
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
       "verdict": "supported",
-      "explanation": "PREC-HIST-004 explicitly states that the most contentious chapter (13: Fisheries) was never opened. EEA-DATA-009 confirms that fisheries (Chapter 13), agriculture (Chapter 11), and free movement of capital (Chapter 4) remained unresolved and were among the most contentious. EEA-DATA-004 provides additional context on why fisheries was so contentious.",
+      "explanation": "PREC-HIST-004 segir beinlínis að umdeildasti kaflinn (13: Sjávarútvegur) hafi aldrei verið opnaður. EEA-DATA-009 staðfestir að sjávarútvegur (kafli 13), landbúnaður (kafli 11) og frjálst fjármagnsflæði (kafli 4) hafi verið meðal umdeildustu og óleystu kaflanna. EEA-DATA-004 veitir frekara samhengi um hvers vegna sjávarútvegurinn var svo umdeildur.",
       "supporting_evidence": [
-        "PREC-HIST-004",
-        "EEA-DATA-009",
-        "EEA-DATA-004"
+        {
+          "id": "PREC-HIST-004",
+          "source_name": "European Commission — Iceland accession progress reports",
+          "source_url": null
+        },
+        {
+          "id": "EEA-DATA-009",
+          "source_name": "European Commission — Iceland: Accession negotiations status; Althingi records",
+          "source_url": null
+        },
+        {
+          "id": "EEA-DATA-004",
+          "source_name": "Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13",
+          "source_url": null
+        }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Free movement of capital (Chapter 4) was also among the unresolved chapters, which the claim does not mention. Additionally, 11 chapters were formally opened and significant progress was made in other areas.",
+      "missing_context": "Frjálst fjármagnsflæði (kafli 4) var einnig meðal óleystu kaflanna, sem fullyrðingin nefnir ekki. Auk þess voru 11 kaflar formlega opnaðir og töluverður árangur náðist á öðrum sviðum.",
       "confidence": 0.9
     },
     {
       "claim": {
-        "claim_text": "EU member states are entitled to various positions within the EU institutions, and history shows the top positions are often filled by former ministers and senior officials of member states.",
         "original_quote": "Aðildarríki ESB eiga tilkall til ýmissa embætta á vegum þess og sagan sýnir að æðstu embættin eru gjarnan skipuð fyrrum ráðherrum og háttsettum embættismönnum aðildarríkjanna.",
+        "claim_text": "Aðildarríki ESB eigi tilkall til ýmissa embætta innan stofnana sambandsins og sagan sýni að æðstu embættin séu gjarnan skipuð fyrrum ráðherrum og háttsettum embættismönnum.",
         "category": "sovereignty",
         "claim_type": "legal_assertion",
         "confidence": 0.85
       },
       "verdict": "partially_supported",
-      "explanation": "SOV-LEGAL-003 confirms that Iceland would be entitled to EU institutional representation, including a minimum of 6 European Parliament seats. SOV-LEGAL-007 confirms member state participation in EU decision-making. The claim that top EU positions are filled by former national ministers and officials is a well-known institutional fact, but our evidence database does not contain specific entries documenting this pattern. The general point about institutional entitlements is well-supported.",
+      "explanation": "SOV-LEGAL-003 staðfestir að Ísland fengi fulltrúa í stofnunum ESB, þar á meðal að lágmarki 6 sæti á Evrópuþinginu. <a href=\"https://www.althingi.is/\" title=\"Alþingi bill database; EU Staff Regulations Art. 16; European Ombudsman recommendations\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-007</a> staðfestir þátttöku aðildarríkja í ákvarðanatöku ESB. Fullyrðingin um að æðstu embætti ESB séu skipuð fyrrum ráðherrum og embættismönnum er þekkt stofnanalegt einkenni, en gagnagrunnar okkar innihalda ekki sérstakar heimildir sem skrá þetta mynstur. Almenna atriðið um stofnanareglur er vel stutt.",
       "supporting_evidence": [
-        "SOV-LEGAL-003",
-        "SOV-LEGAL-007"
+        {
+          "id": "SOV-LEGAL-003",
+          "source_name": "Treaty on European Union, Article 14(2)",
+          "source_url": null
+        },
+        {
+          "id": "SOV-LEGAL-007",
+          "source_name": "Alþingi bill database; EU Staff Regulations Art. 16; European Ombudsman recommendations",
+          "source_url": "https://www.althingi.is/"
+        }
       ],
       "contradicting_evidence": [],
-      "missing_context": "The claim appears to be framing EU institutional positions as potential conflicts of interest (in the context of the article's discussion about cooling-off periods). While it is true that EU positions are often filled by national politicians, this is the standard practice of intergovernmental institutions and not unique to the EU.",
+      "missing_context": "Fullyrðingin virðist móta stöður innan ESB-stofnana sem hugsanlega hagsmunaárekstra (í samhengi við umfjöllun greinarinnar um biðtíma eftir starfslok). Þótt ESB-embætti séu gjarnan skipuð af þjóðkjörnum stjórnmálamönnum er þetta hefðbundin framkvæmd alþjóðastofnana og ekki sérstakt einkenni ESB.",
       "confidence": 0.65
     },
     {
       "claim": {
-        "claim_text": "The Independence Party MPs have submitted a bill on rules governing career choices after certain public offices, proposing an 18-month cooling-off period before officials involved in accession negotiations can take positions with the negotiating counterpart.",
         "original_quote": "Þar leggjum við til nýja reglu þegar æðstu stjórnendur og aðstoðarmenn ráðherra, sem sinna hagsmunagæslu fyrir hönd Íslands í samningaviðræðum við erlend ríkjabandalag eða alþjóðastofnanir, láta af störfum. Þa verði þim óheimilt að þiggja embætti á vegum slíkra aðila næstu 18 mánuði eftir starfslok, komi til inngöngu.",
+        "claim_text": "Þingmenn Sjálfstæðisflokksins hafi lagt fram frumvarp um reglur um starfsval eftir ákveðin opinber embætti, þar sem lagt sé til 18 mánaða biðtími áður en embættismenn sem tóku þátt í aðildarviðræðum geti tekið við stöðum hjá gagnaðilanum.",
         "category": "sovereignty",
         "claim_type": "legal_assertion",
         "confidence": 0.8
       },
       "verdict": "unverifiable",
-      "explanation": "The Ground Truth Database does not contain any evidence about this specific legislative bill or its contents. The claim references a bill submitted by Independence Party MPs proposing an 18-month cooling-off period, which is a specific legislative action that our evidence cannot confirm or deny. POL-DATA-006 confirms the Independence Party's anti-EU stance, which is consistent with such a bill being proposed, but does not mention this specific legislation.",
+      "explanation": "Gagnagrunnar okkar innihalda engar heimildir um þetta tiltekna frumvarp eða efni þess. Fullyrðingin vísar til frumvarps sem þingmenn Sjálfstæðisflokksins hafi lagt fram um 18 mánaða biðtíma, sem er sérstök löggjafartilraun sem heimildagrunnur okkar getur hvorki staðfest né hafnað. POL-DATA-006 staðfestir andstöðu Sjálfstæðisflokksins við ESB-aðild, sem er í samræmi við slíkt frumvarp, en nefnir ekki þessa tilteknu löggjöf.",
       "supporting_evidence": [
-        "POL-DATA-006"
+        {
+          "id": "POL-DATA-006",
+          "source_name": "Sjálfstæðisflokkur — Party congresses and manifestos 1991–2025; Morgunblaðið archives",
+          "source_url": null
+        }
       ],
       "contradicting_evidence": [],
-      "missing_context": "This is a claim about a specific legislative bill that is not covered in our evidence database. The proposal appears to be a governance/integrity measure framed in the context of potential EU accession negotiations.",
+      "missing_context": "Þetta er fullyrðing um tiltekið lagafrumvarp sem heimildagrunnur okkar nær ekki yfir. Tillagan virðist vera aðgerð í þágu stjórnsýsluheiðarleika, sett fram í samhengi við hugsanlegar ESB-aðildarviðræður.",
       "confidence": 0.3
     },
     {
       "claim": {
-        "claim_text": "Iceland already has rules on conflicts of interest, including in the law on prevention of conflicts of interest in the Government Offices and in the code of ethics for ministers and government employees.",
         "original_quote": "Við höfum þegar slíkar reglur, m.a. í lögum um varnir gegn hagsmunaárekstrum í Stjórnarráði Íslands og í siðareglum ráðherra og starfsfólks ríkisins.",
+        "claim_text": "Ísland hafi þegar reglur um hagsmunaárekstra, meðal annars í lögum um varnir gegn hagsmunaárekstrum í Stjórnarráðinu og í siðareglum ráðherra og ríkisstarfsmanna.",
         "category": "sovereignty",
         "claim_type": "legal_assertion",
         "confidence": 0.85
       },
       "verdict": "unverifiable",
-      "explanation": "The Ground Truth Database does not contain specific evidence about Icelandic conflict-of-interest legislation or codes of ethics for ministers and civil servants. While these laws and codes are referenced in the article as existing legal instruments, our evidence base focuses on EU/EEA-related matters rather than domestic administrative law. The claim references specific Icelandic statutes that are outside the scope of our curated evidence.",
+      "explanation": "Gagnagrunnar okkar innihalda ekki sérstakar heimildir um íslenska löggjöf um hagsmunaárekstra eða siðareglur ráðherra og opinberra starfsmanna. Þótt vísað sé til þessara laga og reglna í greininni sem gildandi lagagerða er heimildagrunnur okkar beint að ESB/EES-málefnum fremur en innlendri stjórnsýslulöggjöf. Fullyrðingin vísar til sérstakra íslenskra laga sem falla utan umfangs heimilda okkar.",
       "supporting_evidence": [],
       "contradicting_evidence": [],
-      "missing_context": "Our evidence database does not cover domestic Icelandic administrative law and governance frameworks. This claim would require verification against Icelandic legal databases (e.g. Althingi legislation records).",
+      "missing_context": "Heimildagrunnur okkar nær ekki yfir innlenda íslenska stjórnsýslulöggjöf og stjórnarhætti. Þessa fullyrðingu þyrfti að sannreyna gegn íslenskum lagagrunnum (t.d. lögum á vef Alþingis).",
       "confidence": 0.2
     },
     {
       "claim": {
-        "claim_text": "Many neighbouring and allied countries have stricter legal frameworks regarding career choices and conflicts of interest than Iceland.",
         "original_quote": "Margar nágranna- og vinaþjóðir okkar hafa hins vegar strangari lagaramma varðandi starfsval og hagsmunaárekstra.",
+        "claim_text": "Margar nágranna- og vinaþjóðir Íslands hafi strangari lagaumgjörð varðandi starfsval og hagsmunaárekstra.",
         "category": "sovereignty",
         "claim_type": "comparison",
         "confidence": 0.7
       },
       "verdict": "unverifiable",
-      "explanation": "The Ground Truth Database does not contain comparative evidence on conflict-of-interest or revolving-door legislation across countries. The evidence retrieved (LABOUR-DATA-013, LABOUR-DATA-005) relates to labour market regulation and union density, not governance and ethics frameworks. While the claim may well be accurate — many EU and Nordic countries do have stricter post-public-office rules — our evidence base cannot confirm or deny this specific comparison.",
+      "explanation": "Gagnagrunnar okkar innihalda ekki samanburðarheimildir um löggjöf um hagsmunaárekstra eða svonefndan „snúningshurðar\"-vanda milli landa. Heimildir sem fundust (LABOUR-DATA-013, LABOUR-DATA-005) varða regluverk vinnumarkaðarins og þéttleika stéttarfélaga, ekki stjórnarhætti og siðferðisramma. Þótt fullyrðingin kunni vel að vera rétt — mörg ESB- og norræn ríki hafa strangari reglur eftir opinbert starf — geta heimildir okkar hvorki staðfest né hafnað þessum tiltekna samanburði.",
       "supporting_evidence": [],
       "contradicting_evidence": [],
-      "missing_context": "This is a comparative governance claim that falls outside our evidence database's scope. Verification would require examining specific legislation in countries such as France (Haute Autorité pour la transparence de la vie publique), the EU institutions' own cooling-off rules for Commissioners, and Nordic countries' revolving-door regulations.",
+      "missing_context": "Þetta er samanburðarfullyrðing um stjórnarhætti sem fellur utan umfangs heimildagrunns okkar. Sannprófun myndi krefjast skoðunar á sérstökum lögum í löndum eins og Frakklandi (Haute Autorité pour la transparence de la vie publique), eigin biðtímareglum ESB-stofnana fyrir framkvæmdastjóra, og norrænum reglum um starfsval eftir opinbert starf.",
       "confidence": 0.2
     },
     {
       "claim": {
-        "claim_text": "Former Western heads of state and officials have faced criticism for personal decisions after leaving office, with former German Chancellor Schröder being a notable example.",
         "original_quote": "Fyrrum ráðamenn vestrænna ríkja hafa sætt gagn rýni vegna persónulegra ákvarðana eftir að hafa látið af embætti. Schröder, fv. kanslari Þýskalands, er nærtækt dæmi, en engan veginn einstakt.",
+        "claim_text": "Fyrrverandi ráðamenn vestrænna ríkja hafi sætt gagnrýni vegna persónulegra ákvarðana eftir embættislok, og Schröder fyrrverandi kanslari Þýskalands sé áberandi dæmi.",
         "category": "precedents",
         "claim_type": "legal_assertion",
         "confidence": 0.85
       },
       "verdict": "unverifiable",
-      "explanation": "The Ground Truth Database does not contain evidence about Gerhard Schröder's post-chancellorship activities or other former officials' controversial career moves. This is a well-known public fact — Schröder's roles with Russian energy companies Gazprom and Rosneft after leaving office in 2005 drew widespread criticism, particularly after Russia's 2022 invasion of Ukraine — but our evidence base does not cover this topic. None of the retrieved evidence entries are relevant to this claim.",
+      "explanation": "Gagnagrunnar okkar innihalda ekki heimildir um starfsferil Gerhard Schröders eftir kanslaraembættið eða önnur umdeild starfsval fyrrverandi embættismanna. Þetta er vel þekkt staðreynd — hlutverk Schröders hjá rússnesku orkufyrirtækjunum Gazprom og Rosneft eftir að hann lét af embætti 2005 vakti víðtæka gagnrýni, sérstaklega eftir innrás Rússlands í Úkraínu 2022 — en heimildagrunnur okkar nær ekki yfir þetta efni. Engar af fundum heimildum eiga við um þessa fullyrðingu.",
       "supporting_evidence": [],
       "contradicting_evidence": [],
-      "missing_context": "While Schröder is the most prominent example, the broader pattern of post-office career criticism is well-documented across Western democracies. This claim is used in the article to argue for stricter Icelandic rules, particularly in the context of potential EU accession negotiations.",
+      "missing_context": "Þótt Schröder sé mest áberandi dæmið er víðtækara mynstur gagnrýni á starfsval eftir embætti vel skjalfest meðal vestrænna lýðræðisríkja. Þessi fullyrðing er notuð í greininni til að rökstyðja strangari íslenskar reglur, sérstaklega í samhengi við hugsanlegar ESB-aðildarviðræður.",
       "confidence": 0.3
     },
     {
       "claim": {
-        "claim_text": "EU accession negotiations involve key economic sectors and the possible concession of significant national interests.",
         "original_quote": "Mikilvægir hagsmunir, m.a. grundvallara tvinnuvegir, og möguleg eftirgjf stórfelldra hagsmuna eru t.a.m. andlag viðræðna um inggöngu í ESB.",
+        "claim_text": "Aðildarviðræður við ESB varði lykilatvinnuvegi og hugsanlegar eftirgjafer á mikilvægum þjóðarhagsmunum.",
         "category": "sovereignty",
         "claim_type": "opinion",
         "confidence": 0.85
       },
       "verdict": "supported",
-      "explanation": "Multiple evidence entries confirm that EU accession negotiations involve significant national interests. POL-DATA-005 documents the fishing industry's strong opposition based on concerns about subordinating Iceland's ITQ system and EEZ control to the CFP. EEA-DATA-004 confirms that fisheries was the most contentious negotiation chapter. SOV-LEGAL-006 notes the challenge of negotiating opt-outs. The claim is framed as opinion but accurately reflects the documented reality of accession negotiations.",
+      "explanation": "Margar heimildir staðfesta að ESB-aðildarviðræður varði mikilvæga þjóðarhagsmuni. POL-DATA-005 skráir sterka andstöðu sjávarútvegsgeirans byggða á áhyggjum af því að undirskipa kvótakerfi Íslands og lögsögu yfir efnahagslögsögunni undir sameiginlega sjávarútvegsstefnu ESB. EEA-DATA-004 staðfestir að sjávarútvegur hafi verið umdeildasti viðræðukaflinn. SOV-LEGAL-006 bendir á áskoranir við að semja um undanþágur. Fullyrðingin er orðuð sem skoðun en endurspeglar réttilega skjalfesta raunveruleika aðildarviðræðna.",
       "supporting_evidence": [
-        "POL-DATA-005",
-        "EEA-DATA-004",
-        "EEA-LEGAL-003",
-        "SOV-LEGAL-006",
-        "POL-DATA-012"
+        {
+          "id": "POL-DATA-005",
+          "source_name": "LÍÚ and SFS public statements; Hagstofa Íslands national accounts",
+          "source_url": null
+        },
+        {
+          "id": "EEA-DATA-004",
+          "source_name": "Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13",
+          "source_url": null
+        },
+        {
+          "id": "EEA-LEGAL-003",
+          "source_name": "EEA Agreement, Article 1 and Protocol 47",
+          "source_url": "https://www.efta.int/eea/eea-agreement"
+        },
+        {
+          "id": "SOV-LEGAL-006",
+          "source_name": "Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols",
+          "source_url": null
+        },
+        {
+          "id": "POL-DATA-012",
+          "source_name": "SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions",
+          "source_url": null
+        }
       ],
       "contradicting_evidence": [],
-      "missing_context": "While accession negotiations do involve significant interests, the process also offers opportunities to negotiate transitional arrangements, derogations, and special protocols. The outcome depends on the negotiation itself, not just the starting positions. Iceland's high EEA alignment means many chapters would be relatively straightforward.",
+      "missing_context": "Þótt aðildarviðræður varði mikilvæga hagsmuni bjóða þær einnig upp á tækifæri til að semja um aðlögunarfyrirkomulag, undanþágur og sérstaka bókanir. Niðurstaðan ræðst af viðræðunum sjálfum, ekki aðeins upphafsafstöðum. Mikil samsvörun Íslands við EES-reglur þýðir að margir kaflar yrðu tiltölulega einfaldari.",
       "confidence": 0.9
     },
     {
       "claim": {
-        "claim_text": "Fisheries and agriculture are among Iceland's most important interests.",
         "original_quote": "Málaflokkar sem snúa að mikilvægustu hagsmunum Íslands.",
+        "claim_text": "Sjávarútvegur og landbúnaður séu meðal mikilvægustu hagsmuna Íslands.",
         "category": "fisheries",
         "claim_type": "opinion",
         "confidence": 0.85
       },
       "verdict": "supported",
-      "explanation": "FISH-DATA-003 confirms that fishing and fish processing contribute approximately 8% of GDP, with the sector's broader economic significance extending well beyond its direct GDP share through multiplier effects and regional employment. AGRI-DATA-013 and AGRI-DATA-003 confirm agriculture's importance for rural employment and food security despite its small GDP share (~1.5%). Both sectors are heavily protected and have outsized political significance. EEA-DATA-004 confirms fisheries was the most contentious accession negotiation chapter.",
+      "explanation": "<a href=\"https://www.statice.is/statistics/economy/national-accounts/\" title=\"Statistics Iceland — National accounts by activity\" target=\"_blank\" rel=\"noopener\">FISH-DATA-003</a> staðfestir að sjávarútvegur og fiskvinnsla leggi til um 8% af vergri landsframleiðslu, en víðtækari efnahagsleg þýðing greinarinnar nái langt út fyrir beina hlutdeild í landsframleiðslu vegna margfeldisáhrifa og atvinnu á landsbyggðinni. AGRI-DATA-013 og <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Atvinnuvegir/Atvinnuvegir__landbunadur/\" title=\"Hagstofa Íslands — Agricultural statistics; Bændasamtök Íslands annual report 2024\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-003</a> staðfesta mikilvægi landbúnaðar fyrir atvinnu á landsbyggðinni og fæðuöryggi þrátt fyrir litla hlutdeild í vergri landsframleiðslu (~1,5%). Báðar greinar njóta mikillar verndar og hafa umfram pólitíska þýðingu. EEA-DATA-004 staðfestir að sjávarútvegur hafi verið umdeildasti kaflinn í aðildarviðræðunum.",
       "supporting_evidence": [
-        "FISH-DATA-003",
-        "AGRI-DATA-013",
-        "AGRI-DATA-003",
-        "EEA-DATA-004",
-        "AGRI-DATA-002"
+        {
+          "id": "FISH-DATA-003",
+          "source_name": "Statistics Iceland — National accounts by activity",
+          "source_url": "https://www.statice.is/statistics/economy/national-accounts/"
+        },
+        {
+          "id": "AGRI-DATA-013",
+          "source_name": "Hagstofa Íslands — National accounts; OECD — Agricultural Policy Monitoring and Evaluation",
+          "source_url": null
+        },
+        {
+          "id": "AGRI-DATA-003",
+          "source_name": "Hagstofa Íslands — Agricultural statistics; Bændasamtök Íslands annual report 2024",
+          "source_url": "https://px.hagstofa.is/pxen/pxweb/en/Atvinnuvegir/Atvinnuvegir__landbunadur/"
+        },
+        {
+          "id": "EEA-DATA-004",
+          "source_name": "Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13",
+          "source_url": null
+        },
+        {
+          "id": "AGRI-DATA-002",
+          "source_name": "Icelandic customs tariff schedule — Tollskrá",
+          "source_url": null
+        }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Fisheries' share of GDP has declined from ~16% in 1990 to ~8% in 2024 (FISH-DATA-003), and agriculture represents only ~1.5% of GDP (AGRI-DATA-013). While both sectors remain politically and culturally important, tourism and technology now contribute more to the economy. The claim's framing as “most important” could be debated in purely economic terms.",
+      "missing_context": "Hlutdeild sjávarútvegs í vergri landsframleiðslu hefur dregist saman úr ~16% árið 1990 í ~8% árið 2024 (<a href=\"https://www.statice.is/statistics/economy/national-accounts/\" title=\"Statistics Iceland — National accounts by activity\" target=\"_blank\" rel=\"noopener\">FISH-DATA-003</a>) og landbúnaður nemur aðeins ~1,5% af vergri landsframleiðslu (AGRI-DATA-013). Þótt báðar greinar séu áfram pólitískt og menningarlega mikilvægar leggja ferðaþjónusta og tækniiðnaður nú meira af mörkum til efnahagslífsins. Framsetning fullyrðingarinnar um „mikilvægustu\" hagsmuni gæti verið umdeild í hreinum efnahagslegum skilningi.",
       "confidence": 0.85
     },
     {
       "claim": {
-        "claim_text": "The author is an MP for the Independence Party (Sjálfstæðisflokkurinn).",
         "original_quote": "Höfundur er þingmaður Sjálfstæðisflokksins.",
+        "claim_text": "Höfundur greinarinnar sé þingmaður Sjálfstæðisflokksins.",
         "category": "party_positions",
         "claim_type": "legal_assertion",
         "confidence": 0.95
       },
       "verdict": "unverifiable",
-      "explanation": "This is a self-identification claim by the article's author. The Ground Truth Database does not contain evidence about specific individual MPs or article authorship. POL-DATA-011 and POL-DATA-002 confirm that the Independence Party has MPs in the Althingi (approximately 16 seats after 2024 elections), making the claim plausible, but the specific identity of the author cannot be verified from our evidence base.",
+      "explanation": "Þetta er sjálfsauðkenning höfundar greinarinnar. Gagnagrunnar okkar innihalda ekki heimildir um einstaka þingmenn eða höfunda greina. POL-DATA-011 og <a href=\"https://www.althingi.is/\" title=\"Althingi — Party platforms and election results\" target=\"_blank\" rel=\"noopener\">POL-DATA-002</a> staðfesta að Sjálfstæðisflokkurinn eigi þingmenn á Alþingi (um 16 sæti eftir kosningarnar 2024), sem gerir fullyrðinguna trúverðuga, en ekki er hægt að sannreyna sérstaklega hver höfundurinn er út frá heimildum okkar.",
       "supporting_evidence": [
-        "POL-DATA-002"
+        {
+          "id": "POL-DATA-002",
+          "source_name": "Althingi — Party platforms and election results",
+          "source_url": "https://www.althingi.is/"
+        }
       ],
       "contradicting_evidence": [],
-      "missing_context": "POL-DATA-006 notes that the Independence Party opposes EU membership but has not whipped against the referendum process, and an estimated 20–25% of Independence Party voters support EU membership. The author's anti-EU framing is consistent with the party's official position. Identifying the author as an Independence Party MP is relevant context for assessing the article's perspective.",
+      "missing_context": "POL-DATA-006 bendir á að Sjálfstæðisflokkurinn sé andvígur ESB-aðild en hafi ekki beitt flokksspiðju gegn þjóðaratkvæðagreiðsluferlinu, og áætlað er að 20–25% kjósenda Sjálfstæðisflokksins styðji ESB-aðild. Framing höfundarins gegn ESB-aðild er í samræmi við opinbera stefnu flokksins. Að auðkenna höfundinn sem þingmann Sjálfstæðisflokksins er mikilvægt samhengi til að meta sjónarhorn greinarinnar.",
       "confidence": 0.5
     }
   ]
