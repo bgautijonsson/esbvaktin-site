@@ -1,0 +1,98 @@
+---
+layout: base.njk
+title: Raddirnar
+description: Hverjir segja hvað í ESB-umræðunni? Skoðaðu fullyrðingar eftir stjórnmálaflokkum, samtökum og einstaklingum.
+wide_layout: true
+---
+
+<h1>Raddirnar</h1>
+<p>Hverjir taka þátt í ESB-umræðunni og hvað segja þeir? Hér má skoða fullyrðingar eftir stjórnmálaflokkum, samtökum og einstaklingum — og hversu vel þær standast skoðun.</p>
+
+{% set parties = [] %}
+{% set individuals = [] %}
+{% for entity in entities %}
+  {% if entity.type == "party" %}
+    {% set parties = (parties.push(entity), parties) %}
+  {% elif entity.type == "individual" %}
+    {% set individuals = (individuals.push(entity), individuals) %}
+  {% endif %}
+{% endfor %}
+
+{% if parties | length %}
+<section class="entities-section">
+  <h2>Stjórnmálaflokkar</h2>
+  <div class="entities-grid">
+    {% for entity in parties %}
+    <div class="entity-card entity-card--{{ entity.stance | replace('pro_eu', 'pro') | replace('anti_eu', 'anti') | replace('mixed', 'mixed') }}">
+      <div class="entity-card-header">
+        <h3 class="entity-card-name">{{ entity.name }}</h3>
+        {% if entity.stance == "pro_eu" %}
+        <span class="entity-stance stance-pro">ESB-jákvæð</span>
+        {% elif entity.stance == "anti_eu" %}
+        <span class="entity-stance stance-anti">ESB-gagnrýnin</span>
+        {% else %}
+        <span class="entity-stance stance-mixed">Blandað</span>
+        {% endif %}
+      </div>
+      <p class="entity-card-desc">{{ entity.description }}</p>
+      {% if entity.articles | length %}
+      <div class="entity-card-articles">
+        <strong>Birtist í {{ entity.articles | length }} greiningu{{ "m" if entity.articles | length > 1 else "" }}:</strong>
+        <ul>
+          {% for slug in entity.articles %}
+          {% for report in reports %}
+          {% if report.slug == slug %}
+          <li><a href="/umraedan/{{ report.slug }}/">{{ report.article_title }}</a></li>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if individuals | length %}
+<section class="entities-section">
+  <h2>Einstaklingar</h2>
+  <div class="entities-grid">
+    {% for entity in individuals %}
+    <div class="entity-card entity-card--{{ entity.stance | replace('pro_eu', 'pro') | replace('anti_eu', 'anti') | replace('mixed', 'mixed') }}">
+      <div class="entity-card-header">
+        <h3 class="entity-card-name">{{ entity.name }}</h3>
+        {% if entity.stance == "pro_eu" %}
+        <span class="entity-stance stance-pro">ESB-jákvæð</span>
+        {% elif entity.stance == "anti_eu" %}
+        <span class="entity-stance stance-anti">ESB-gagnrýnin</span>
+        {% else %}
+        <span class="entity-stance stance-mixed">Blandað</span>
+        {% endif %}
+      </div>
+      {% if entity.role %}<p class="entity-card-role">{{ entity.role }}{% if entity.party %} ({{ entity.party }}){% endif %}</p>{% endif %}
+      <p class="entity-card-desc">{{ entity.description }}</p>
+      {% if entity.articles | length %}
+      <div class="entity-card-articles">
+        <strong>Birtist í {{ entity.articles | length }} greiningu{{ "m" if entity.articles | length > 1 else "" }}:</strong>
+        <ul>
+          {% for slug in entity.articles %}
+          {% for report in reports %}
+          {% if report.slug == slug %}
+          <li><a href="/umraedan/{{ report.slug }}/">{{ report.article_title }}</a></li>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<section class="entities-note">
+  <p><em>Þessi síða er í þróun. Eftir því sem fleiri greinar eru greindar bætast fleiri aðilar við og fullyrðingar þeirra tengjast sjálfkrafa.</em></p>
+</section>

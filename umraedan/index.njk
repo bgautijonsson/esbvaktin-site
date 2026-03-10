@@ -1,17 +1,17 @@
 ---
 layout: base.njk
-title: Greiningar
-description: Ítarlegar greiningar á greinum og yfirlýsingum í ESB-umræðunni.
+title: Umræðan
+description: Yfirferð á greinum og yfirlýsingum í ESB-umræðunni — hvert atriði borið saman við gögn og heimildir.
 wide_layout: true
 ---
 
-<h1>Greiningar</h1>
-<p>Ítarlegar greiningar á einstökum greinum og yfirlýsingum, þar sem hvert atriði er borið saman við gögn og heimildir.</p>
+<h1>Umræðan</h1>
+<p>Yfirferð á einstökum greinum og yfirlýsingum í ESB-umræðunni, þar sem hvert atriði er borið saman við gögn og heimildir.</p>
 
 {% if reports | length %}
 <div class="reports-grid">
   {% for report in reports | reverse %}
-  <a href="/greiningar/{{ report.slug }}/" class="report-card">
+  <a href="/umraedan/{{ report.slug }}/" class="report-card">
     <div class="report-card-header">
       <h3 class="report-card-title">{{ report.article_title }}</h3>
       <time datetime="{{ report.analysis_date }}">{{ report.analysis_date | isDate }}</time>

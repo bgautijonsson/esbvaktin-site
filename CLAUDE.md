@@ -27,12 +27,14 @@ npm run clean    # Remove _site/
 
 ```
 _includes/          # Nunjucks layouts (base.njk, report.njk)
-_data/              # Global data (site.json, reports/)
+_data/              # Global data (site.json, reports/, entities.json)
 assets/             # Static assets (CSS, JS, data) — passthrough copied
   css/              # style.css + claim-tracker.css
-  js/               # claim-tracker.js (vanilla, no bundling)
+  js/               # claim-tracker.js, theme-toggle.js, mobile-nav.js
   data/             # claims.parquet + claims.json (from pipeline export)
-greiningar/         # Analysis report pages
+umraedan/           # Discussion/analysis pages (index + paginated reports)
+raddirnar.njk       # Voices page — entities by party/individual
+greiningar/         # Redirect stubs (→ /umraedan/) for old URLs
 .github/workflows/  # GitHub Actions deploy
 ```
 

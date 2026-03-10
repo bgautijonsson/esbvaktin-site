@@ -735,10 +735,123 @@ img { max-width: 100%; height: auto; }
 
 /* ── Responsive ─────────────────────────────────────────────────────── */
 
+/* ── Entities (Raddirnar) page ──────────────────────────────────────── */
+
+.entities-section {
+  margin-bottom: 2.5rem;
+}
+
+.entities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.entity-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.entity-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.entity-card--pro { border-left: 3px solid var(--green); }
+.entity-card--anti { border-left: 3px solid var(--red); }
+.entity-card--mixed { border-left: 3px solid var(--yellow); }
+
+.entity-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.entity-card-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.entity-stance {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+.stance-pro { background: var(--green); color: #fff; }
+.stance-anti { background: var(--red); color: #fff; }
+.stance-mixed { background: var(--yellow); color: #000; }
+
+.entity-card-role {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin: 0 0 0.35rem;
+}
+
+.entity-card-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin: 0 0 0.5rem;
+  line-height: 1.5;
+}
+
+.entity-card-articles {
+  font-size: 0.85rem;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+}
+
+.entity-card-articles strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--text-secondary);
+}
+
+.entity-card-articles ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.entity-card-articles li {
+  padding: 0.15rem 0;
+}
+
+.entity-card-articles a {
+  font-size: 0.85rem;
+}
+
+.entities-note {
+  margin-top: 2rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.entities-note p { margin: 0; }
+
+/* ── Responsive ─────────────────────────────────────────────────────── */
+
 @media (max-width: 600px) {
   .site-nav { padding: 0.5rem 0.75rem; }
   .hero h1 { font-size: 1.8rem; }
   .site-main h1 { font-size: 1.6rem; }
   .site-main { padding: 1.5rem 0.75rem; }
   .reports-grid { grid-template-columns: 1fr; }
+  .entities-grid { grid-template-columns: 1fr; }
 }
