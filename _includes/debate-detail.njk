@@ -1,0 +1,96 @@
+---
+layout: base.njk
+extra_css: /assets/css/debate-detail.css
+wide_layout: true
+---
+
+<article class="dd-debate">
+  <header class="dd-header">
+    <h1 class="dd-title">{{ debate.issue_title }}</h1>
+    <div class="dd-meta">
+      <span class="dd-meta-item">{{ debate.session }}. löggjafarþing</span>
+      <span class="dd-meta-item">Mál nr. {{ debate.issue_nr }}</span>
+      {% if debate.first_date == debate.last_date %}
+        <span class="dd-meta-item">{{ debate.first_date | isDate }}</span>
+      {% else %}
+        <span class="dd-meta-item">{{ debate.first_date | isDate }} – {{ debate.last_date | isDate }}</span>
+      {% endif %}
+      <a href="{{ debate.althingi_url }}" class="dd-althingi-link" target="_blank" rel="noopener">Sjá á Alþingi.is &#x2197;</a>
+    </div>
+
+    <div class="dd-stats">
+      <div class="dd-stat">
+        <span class="dd-stat-num">{{ debate.speech_count }}</span>
+        <span class="dd-stat-label">ræður</span>
+      </div>
+      <div class="dd-stat">
+        <span class="dd-stat-num">{{ debate.speaker_count }}</span>
+        <span class="dd-stat-label">þingmenn</span>
+      </div>
+      <div class="dd-stat">
+        <span class="dd-stat-num">{{ debate.total_words | localeString }}</span>
+        <span class="dd-stat-label">orð</span>
+      </div>
+      {% if debate.parties %}
+      <div class="dd-stat">
+        <span class="dd-stat-num">{{ debate.parties | length }}</span>
+        <span class="dd-stat-label">flokkar</span>
+      </div>
+      {% endif %}
+    </div>
+  </header>
+
+  {# ── Speakers ──────────────────────────────────────────────── #}
+  {% if debate.speakers.length > 0 %}
+  <section class="dd-speakers">
+    <h2>Ræðumenn</h2>
+    <div class="dd-speaker-grid">
+      {% for speaker in debate.speakers %}
+      <div class="dd-speaker-card">
+        <div class="dd-speaker-name">{{ speaker.name }}</div>
+        <div class="dd-speaker-party">{{ speaker.party }}</div>
+        <div class="dd-speaker-stats">
+          <span>{{ speaker.speech_count }} {{ "ræða" if speaker.speech_count == 1 else "ræður" }}</span>
+          <span>{{ speaker.total_words | localeString }} orð</span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {# ── Timeline ──────────────────────────────────────────────── #}
+  {% if debate.speeches.length > 0 %}
+  <section class="dd-timeline">
+    <h2>Tímalína umræðunnar</h2>
+    {% set currentDate = "" %}
+    {% for speech in debate.speeches %}
+      {% if speech.date != currentDate %}
+        {% set currentDate = speech.date %}
+        <div class="dd-date-divider">{{ speech.date | isDate }}</div>
+      {% endif %}
+      <div class="dd-speech">
+        <div class="dd-speech-marker"></div>
+        <div class="dd-speech-content">
+          <div class="dd-speech-header">
+            <strong class="dd-speech-speaker">{{ speech.speaker }}</strong>
+            {% if speech.party %}<span class="dd-speech-party">{{ speech.party }}</span>{% endif %}
+            {% if speech.speech_type %}<span class="dd-speech-type">{{ speech.speech_type }}</span>{% endif %}
+          </div>
+          <div class="dd-speech-meta">
+            {% if speech.started %}<time>{{ speech.started | replace("T", " ") | truncate(16, true, "") }}</time>{% endif %}
+            {% if speech.word_count %}<span>{{ speech.word_count | localeString }} orð</span>{% endif %}
+          </div>
+          {% if speech.excerpt %}
+          <blockquote class="dd-speech-excerpt">{{ speech.excerpt }}</blockquote>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  <nav class="dd-back">
+    <a href="/thingradur/">&larr; Til baka í yfirlit</a>
+  </nav>
+</article>

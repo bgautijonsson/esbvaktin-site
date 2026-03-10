@@ -1,0 +1,12 @@
+---
+pagination:
+  data: debates
+  size: 1
+  alias: debate
+permalink: "/thingradur/{{ debate.slug }}/"
+layout: debate-detail.njk
+tags: debates
+eleventyComputed:
+  title: "{{ debate.issue_title }}"
+  description: "Umræða á Alþingi: {{ debate.issue_title }} — {{ debate.speech_count }} ræður, {{ debate.speaker_count }} þingmenn"
+---
