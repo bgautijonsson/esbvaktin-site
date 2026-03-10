@@ -45,6 +45,15 @@
     unverifiable: "verdict-unverifiable",
   };
 
+  // Fixed display order for stacked bars (left to right)
+  const VERDICT_ORDER = [
+    "supported",
+    "partially_supported",
+    "unverifiable",
+    "misleading",
+    "unsupported",
+  ];
+
   const SOURCE_CLASSES = {
     "Vísir": "source-visir",
     "RÚV": "source-ruv",
@@ -234,6 +243,10 @@
         </div>
       </div>
 
+      <div class="dt-legend">
+        ${VERDICT_ORDER.map((v) => `<span class="dt-legend-item"><span class="dt-legend-dot ${VERDICT_CLASSES[v]}"></span>${VERDICT_LABELS[v]}</span>`).join("")}
+      </div>
+
       <div class="dt-results" id="dt-results">
         <div class="ct-loading">Hle&eth; greiningum&hellip;</div>
       </div>
@@ -307,14 +320,21 @@
       ? `<a href="${escapeHtml(report.article_url)}" class="dt-external-link" target="_blank" rel="noopener">Upprunaleg grein &#x2197;</a>`
       : "";
 
-    // Verdict pills
-    const verdicts = Object.entries(report.verdict_counts || {})
-      .map(([v, count]) => {
-        const cls = VERDICT_CLASSES[v] || "";
-        const label = VERDICT_LABELS[v] || v;
-        return `<span class="ct-verdict-pill ${cls}">${label}: ${count}</span>`;
-      })
-      .join("");
+    // Verdict stacked bar — fixed order across all cards
+    const total = report.claim_count || Object.values(report.verdict_counts || {}).reduce((s, n) => s + n, 0);
+    const counts = report.verdict_counts || {};
+    const verdicts = total
+      ? VERDICT_ORDER
+          .filter((v) => counts[v])
+          .map((v) => {
+            const count = counts[v];
+            const cls = VERDICT_CLASSES[v] || "";
+            const pct = ((count / total) * 100).toFixed(1);
+            const label = VERDICT_LABELS[v] || v;
+            return `<span class="dt-bar-seg ${cls}" style="width:${pct}%" title="${label}: ${count}">${count}</span>`;
+          })
+          .join("")
+      : "";
 
     // Category tag
     const categoryTag = report.dominant_category
@@ -337,8 +357,8 @@
         </div>
         ${report.summary ? `<p class="dt-card-summary">${escapeHtml(report.summary)}</p>` : ""}
         <div class="dt-card-footer">
-          <div class="dt-card-verdicts">${verdicts}</div>
           <span class="dt-card-count">${report.claim_count} fullyrðingar</span>
+          <div class="dt-verdict-bar">${verdicts}</div>
         </div>
       </div>
     `;

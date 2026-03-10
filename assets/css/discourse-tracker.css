@@ -103,6 +103,33 @@
   color: var(--text-secondary);
 }
 
+/* ── Legend ──────────────────────────────────────────────────────── */
+
+.dt-legend {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.dt-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  white-space: nowrap;
+}
+
+.dt-legend-dot {
+  display: inline-block;
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
 /* ── Results ─────────────────────────────────────────────────────── */
 
 .dt-results {
@@ -236,24 +263,36 @@
 
 .dt-card-footer {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 0.5rem;
+  flex-direction: column;
+  gap: 0.35rem;
   margin-top: auto;
   padding-top: 0.35rem;
-}
-
-.dt-card-verdicts {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.3rem;
 }
 
 .dt-card-count {
   font-size: 0.75rem;
   color: var(--text-secondary);
   white-space: nowrap;
-  flex-shrink: 0;
+}
+
+/* ── Verdict stacked bar ─────────────────────────────────────────── */
+
+.dt-verdict-bar {
+  display: flex;
+  width: 100%;
+  height: 1.35rem;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.dt-bar-seg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  font-weight: 700;
+  min-width: 0;
+  overflow: hidden;
 }
 
 /* ── Source badge ─────────────────────────────────────────────────── */
