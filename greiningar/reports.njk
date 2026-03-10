@@ -1,0 +1,12 @@
+---
+pagination:
+  data: reports
+  size: 1
+  alias: report
+permalink: "/greiningar/{{ report.slug }}/"
+layout: report.njk
+tags: reports
+eleventyComputed:
+  title: "{{ report.article_title }}"
+  description: "{{ report.summary }}"
+---

@@ -7,13 +7,13 @@ description: Ítarlegar greiningar á greinum og yfirlýsingum í ESB-umræðunn
 <h1>Greiningar</h1>
 <p>Ítarlegar greiningar á einstökum greinum og yfirlýsingum, þar sem hvert atriði er borið saman við gögn og heimildir.</p>
 
-{% set reportFiles = collections.reports %}
-{% if reportFiles | length %}
+{% if reports | length %}
 <ul class="reports-list">
-  {% for report in reportFiles | reverse %}
+  {% for report in reports | reverse %}
   <li>
-    <a href="{{ report.url }}">{{ report.data.article_title }}</a>
-    <time datetime="{{ report.data.analysis_date }}">{{ report.data.analysis_date | isDate }}</time>
+    <a href="/greiningar/{{ report.slug }}/">{{ report.article_title }}</a>
+    <time datetime="{{ report.analysis_date }}">{{ report.analysis_date | isDate }}</time>
+    <span class="report-claim-count">({{ report.claim_count }} fullyrðingar)</span>
   </li>
   {% endfor %}
 </ul>

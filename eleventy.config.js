@@ -70,6 +70,9 @@ module.exports = function (eleventyConfig) {
   };
   eleventyConfig.addFilter("categoryLabel", (c) => categoryLabels[c] || c);
 
+  // ── Ignore files ─────────────────────────────────────────────────
+  eleventyConfig.ignores.add("CLAUDE.md");
+
   return {
     dir: {
       input: ".",

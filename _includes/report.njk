@@ -5,17 +5,30 @@ og_type: article
 
 <article class="report">
   <header class="report-header">
-    <h1>{{ article_title }}</h1>
+    <h1>{{ report.article_title }}</h1>
     <div class="report-meta">
-      {% if article_source %}<span class="report-source">{{ article_source }}</span>{% endif %}
-      {% if analysis_date %}<time datetime="{{ analysis_date }}">{{ analysis_date | isDate }}</time>{% endif %}
+      {% if report.article_source %}<span class="report-source">{{ report.article_source }}</span>{% endif %}
+      {% if report.analysis_date %}<time datetime="{{ report.analysis_date }}">{{ report.analysis_date | isDate }}</time>{% endif %}
     </div>
-    <p class="report-summary">{{ summary }}</p>
+    <p class="report-summary">{{ report.summary }}</p>
   </header>
 
+  {% if report.verdict_counts %}
+  <section class="report-verdicts">
+    <h2>Niðurstöður</h2>
+    <div class="verdict-summary">
+      {% for verdict, count in report.verdict_counts %}
+      <span class="ct-verdict-pill verdict-{{ verdict | replace("partially_supported", "partial") }}">
+        {{ verdict | verdictLabel }}: {{ count }}
+      </span>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
   <section class="report-claims">
-    <h2>Fullyrðingar ({{ claims | length }})</h2>
-    {% for item in claims %}
+    <h2>Fullyrðingar ({{ report.claims | length }})</h2>
+    {% for item in report.claims %}
     <div class="report-claim">
       <div class="report-claim-header">
         <span class="ct-verdict-pill verdict-{{ item.verdict | replace("partially_supported", "partial") }}">
@@ -31,7 +44,7 @@ og_type: article
         <p>{{ item.missing_context }}</p>
       </details>
       {% endif %}
-      {% if item.supporting_evidence.length %}
+      {% if item.supporting_evidence | length %}
       <p class="report-evidence"><strong>Heimildir:</strong> {{ item.supporting_evidence | join(", ") }}</p>
       {% endif %}
     </div>
