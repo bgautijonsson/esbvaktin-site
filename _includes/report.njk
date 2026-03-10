@@ -28,13 +28,24 @@ og_type: article
         {% for p in report.participants %}
         <div class="report-participant">
           <div class="report-participant-info">
+            {% if p.slug %}
+            <a href="/raddirnar/{{ p.slug }}/" class="report-participant-name report-participant-link">{{ p.name }}</a>
+            {% else %}
             <span class="report-participant-name">{{ p.name }}</span>
+            {% endif %}
             {% if p.party or p.role %}
             <span class="report-participant-role">
               {%- if p.party %}{{ p.party }}{% endif %}{% if p.party and p.role %} — {% endif %}{% if p.role %}{{ p.role }}{% endif -%}
             </span>
             {% endif %}
           </div>
+          {% if p.mention_count or p.speech_count %}
+          <div class="report-participant-stats">
+            {% if p.mention_count > 1 %}<span title="Fjöldi greina">{{ p.mention_count }} greinar</span>{% endif %}
+            {% if p.speech_count %}<span title="Þingræður um ESB">{{ p.speech_count | localeString }} þingræður</span>{% endif %}
+            {% if p.credibility %}<span title="Trúverðugleiki">{{ (p.credibility * 100) | round(0) }}% trúverðugleiki</span>{% endif %}
+          </div>
+          {% endif %}
           <div class="report-participant-verdicts">
             <span class="report-participant-count">{{ p.claim_count }} fullyrðingar</span>
             {% set verdictOrder = ["supported", "partially_supported", "unverifiable", "misleading", "unsupported"] %}
