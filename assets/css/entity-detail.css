@@ -219,6 +219,39 @@
   margin-bottom: 1.5rem;
 }
 
+/* ── Alþingi / Þingvirkni ──────────────────────────────────────────── */
+
+.ed-althingi {
+  margin-bottom: 2rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg-secondary, var(--card-bg, #f8f9fa));
+}
+
+.ed-althingi h2 {
+  font-size: 1.1rem;
+  margin: 0 0 0.75rem;
+}
+
+.ed-althingi-stats {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.ed-althingi-note {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin: 0.75rem 0 0;
+  font-style: italic;
+}
+
+.ed-stat-period {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
 /* ── Scorecard ──────────────────────────────────────────────────────── */
 
 .ed-scorecard {
@@ -361,6 +394,9 @@
   .ed-article-card:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   }
+  .ed-althingi {
+    background: var(--bg-secondary, #1e1e1e);
+  }
 }
 
 /* ── Dark mode (data-theme) ────────────────────────────────────────── */
@@ -373,6 +409,9 @@
 }
 [data-theme="dark"] .ed-article-card:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+[data-theme="dark"] .ed-althingi {
+  background: var(--bg-secondary, #1e1e1e);
 }
 
 /* ── Responsive ─────────────────────────────────────────────────────── */

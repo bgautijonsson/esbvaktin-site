@@ -257,6 +257,7 @@
     let statsHtml = '<div class="et-card-stats">';
     if (claimCount) statsHtml += `<span class="et-card-stat">${claimCount} fullyrðing${claimCount > 1 ? "ar" : ""}</span>`;
     if (articleCount) statsHtml += `<span class="et-card-stat">${articleCount} grein${articleCount > 1 ? "ar" : "ing"}</span>`;
+    if (entity.althingi_stats) statsHtml += `<span class="et-card-stat et-althingi-badge">${entity.althingi_stats.speech_count} þingræður</span>`;
     statsHtml += "</div>";
 
     // Credibility bar

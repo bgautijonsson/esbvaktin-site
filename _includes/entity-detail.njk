@@ -142,6 +142,33 @@ extra_css: /assets/css/entity-detail.css
     {% endif %}
   {% endif %}
 
+  {# ── Þingvirkni (Alþingi parliamentary activity) ── #}
+  {% if entity.althingi_stats %}
+  {% set as = entity.althingi_stats %}
+  <section class="ed-althingi">
+    <h2>Þingvirkni um ESB-mál</h2>
+    <div class="ed-althingi-stats">
+      <div class="ed-stat-block">
+        <span class="ed-stat-heading">Ræður</span>
+        <span class="ed-stat-num">{{ as.speech_count }}</span>
+      </div>
+      <div class="ed-stat-block">
+        <span class="ed-stat-heading">Orð samtals</span>
+        <span class="ed-stat-num">{{ as.total_words | localeString }}</span>
+      </div>
+      <div class="ed-stat-block">
+        <span class="ed-stat-heading">Þingmál</span>
+        <span class="ed-stat-num">{{ as.issues }}</span>
+      </div>
+      <div class="ed-stat-block">
+        <span class="ed-stat-heading">Tímabil</span>
+        <span class="ed-stat-period">{{ as.first_speech | isDate }} – {{ as.last_speech | isDate }}</span>
+      </div>
+    </div>
+    <p class="ed-althingi-note">Ræður á Alþingi um ESB- og Evrópumál.</p>
+  </section>
+  {% endif %}
+
   {# ── Scorecard (verdict bar) ── #}
   {% if scorecardTotal > 0 %}
   <section class="ed-scorecard">

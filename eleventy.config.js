@@ -70,6 +70,12 @@ module.exports = function (eleventyConfig) {
   };
   eleventyConfig.addFilter("categoryLabel", (c) => categoryLabels[c] || c);
 
+  // ── Number formatting ───────────────────────────────────────────
+  eleventyConfig.addFilter("localeString", (n) => {
+    if (n == null) return "";
+    return Number(n).toLocaleString("is-IS");
+  });
+
   // ── Ignore files ─────────────────────────────────────────────────
   eleventyConfig.ignores.add("CLAUDE.md");
 
