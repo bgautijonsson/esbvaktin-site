@@ -751,6 +751,7 @@ img { max-width: 100%; height: auto; }
 .entity-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
+  border-left: 3px solid hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 45%);
   border-radius: var(--radius-lg);
   padding: 1.25rem;
   transition: border-color var(--transition), box-shadow var(--transition);
@@ -760,15 +761,11 @@ img { max-width: 100%; height: auto; }
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
-.entity-card--pro { border-left: 3px solid var(--green); }
-.entity-card--anti { border-left: 3px solid var(--red); }
-.entity-card--mixed { border-left: 3px solid var(--yellow); }
-
 .entity-card-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 0.5rem;
+  align-items: flex-start;
+  gap: 0.75rem;
   margin-bottom: 0.5rem;
 }
 
@@ -778,20 +775,56 @@ img { max-width: 100%; height: auto; }
   margin: 0;
 }
 
-.entity-stance {
-  display: inline-block;
-  padding: 0.15rem 0.5rem;
-  border-radius: 999px;
-  font-size: 0.7rem;
+/* Stance indicator — continuous position dot on a gradient track */
+.stance-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.2rem;
+  flex-shrink: 0;
+  min-width: 5rem;
+}
+
+.stance-track {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: linear-gradient(to right, var(--red), var(--yellow) 50%, #3b82f6);
+  position: relative;
+}
+
+.stance-dot {
+  position: absolute;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 2px solid hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 45%);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.stance-label {
+  font-size: 0.65rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  color: hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 40%);
   white-space: nowrap;
 }
 
-.stance-pro { background: var(--green); color: #fff; }
-.stance-anti { background: var(--red); color: #fff; }
-.stance-mixed { background: var(--yellow); color: #000; }
+@media (prefers-color-scheme: dark) {
+  .stance-label {
+    color: hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 65%);
+  }
+  .entity-card {
+    border-left-color: hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 55%);
+  }
+  .stance-dot {
+    border-color: hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 55%);
+  }
+}
 
 .entity-card-role {
   font-size: 0.85rem;
@@ -799,11 +832,56 @@ img { max-width: 100%; height: auto; }
   margin: 0 0 0.35rem;
 }
 
-.entity-card-desc {
-  font-size: 0.9rem;
+.entity-card-stats {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.entity-stat {
+  font-size: 0.8rem;
   color: var(--text-secondary);
-  margin: 0 0 0.5rem;
-  line-height: 1.5;
+  background: var(--bg-alt);
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius);
+}
+
+/* Credibility bar */
+.credibility {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.credibility-label {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.credibility-bar {
+  flex: 1;
+  height: 6px;
+  background: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+  min-width: 3rem;
+}
+
+.credibility-fill {
+  height: 100%;
+  border-radius: 3px;
+  background: var(--green);
+  transition: width 0.3s ease;
+}
+
+.credibility-value {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  min-width: 2rem;
+  text-align: right;
 }
 
 .entity-card-articles {
