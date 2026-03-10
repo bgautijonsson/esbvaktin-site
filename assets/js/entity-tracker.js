@@ -272,6 +272,31 @@
         </div>`;
     }
 
+    // Attribution breakdown bar
+    let attrHtml = "";
+    const ac = entity.attribution_counts;
+    if (ac) {
+      const total = ATTRIBUTION_ORDER.reduce((s, k) => s + (ac[k] || 0), 0);
+      if (total > 0) {
+        const segments = ATTRIBUTION_ORDER
+          .filter((k) => ac[k])
+          .map((k) => {
+            const pct = ((ac[k] / total) * 100).toFixed(1);
+            return `<div class="et-attr-seg et-attr-${k}" style="width:${pct}%" title="${ATTRIBUTION_LABELS[k]}: ${ac[k]}"></div>`;
+          })
+          .join("");
+        const legend = ATTRIBUTION_ORDER
+          .filter((k) => ac[k])
+          .map((k) => `<span class="et-attr-legend-item et-attr-${k}-text">${ATTRIBUTION_LABELS[k]} ${ac[k]}</span>`)
+          .join("");
+        attrHtml = `
+          <div class="et-attribution">
+            <div class="et-attr-bar">${segments}</div>
+            <div class="et-attr-legend">${legend}</div>
+          </div>`;
+      }
+    }
+
     // Collapsible articles section
     let articlesHtml = "";
     if (articleCount > 0) {
@@ -298,10 +323,12 @@
       }
     }
 
+    const detailUrl = `/raddirnar/${escapeHtml(entity.slug)}/`;
+
     return `
       <div class="et-card" style="--stance-hue: ${hue}; --stance-sat: ${sat}%; --stance-score: ${score}">
         <div class="et-card-top">
-          <h3 class="et-card-name">${escapeHtml(entity.name)}</h3>
+          <h3 class="et-card-name"><a href="${detailUrl}" class="et-card-link">${escapeHtml(entity.name)}</a></h3>
           <div class="et-stance-indicator" title="Afstaða: ${score}">
             <div class="et-stance-track">
               <div class="et-stance-dot" style="left: ${dotLeft}%"></div>
@@ -312,8 +339,10 @@
         ${roleHtml}
         ${typeBadge}
         ${statsHtml}
+        ${attrHtml}
         ${credHtml}
         ${articlesHtml}
+        <a href="${detailUrl}" class="et-see-more">Sjá meira &rarr;</a>
       </div>
     `;
   }
