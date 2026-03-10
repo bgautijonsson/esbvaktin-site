@@ -1,10 +1,8 @@
 /**
- * ESBvaktin Claim Tracker — Client-side UI powered by DuckDB-WASM
+ * ESBvaktin Claim Tracker — Client-side claim browser
  *
- * Loads a Parquet file of referendum claims and provides interactive
- * filtering, searching, and sorting entirely in the browser.
- *
- * Falls back to plain JSON + array filtering if WASM is unavailable.
+ * Loads claims from JSON and provides interactive filtering,
+ * searching, and sorting entirely in the browser.
  */
 
 (function () {
@@ -12,7 +10,6 @@
 
   // ── Configuration ────────────────────────────────────────────────
   const DATA_BASE = document.currentScript?.dataset.base || "/assets/data";
-  const PARQUET_URL = `${DATA_BASE}/claims.parquet`;
   const JSON_URL = `${DATA_BASE}/claims.json`;
 
   // Icelandic labels
@@ -49,9 +46,6 @@
   };
 
   // ── State ────────────────────────────────────────────────────────
-  let db = null;
-  let conn = null;
-  let usingDuckDB = false;
   let jsonData = null;
 
   // Current filter state
@@ -72,129 +66,23 @@
   async function init() {
     renderSkeleton();
 
-    try {
-      await initDuckDB();
-      usingDuckDB = true;
-    } catch (err) {
-      console.warn("DuckDB-WASM unavailable, falling back to JSON:", err);
-      await initJSONFallback();
-    }
+    const resp = await fetch(JSON_URL);
+    if (!resp.ok) throw new Error(`Failed to fetch ${JSON_URL}: ${resp.status}`);
+    jsonData = await resp.json();
+    console.log(`Claim tracker loaded: ${jsonData.length} claims`);
 
     renderStats();
     renderResults();
     bindEvents();
   }
 
-  async function initDuckDB() {
-    const duckdb = await import(
-      "https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/+esm"
-    );
-
-    const JSDELIVR_BUNDLES = duckdb.getJsDelivrBundles();
-
-    const bundle = await duckdb.selectBundle(JSDELIVR_BUNDLES);
-    const worker = new Worker(bundle.mainWorker);
-    const logger = new duckdb.ConsoleLogger();
-
-    db = new duckdb.AsyncDuckDB(logger, worker);
-    await db.instantiate(bundle.mainModule, bundle.pthreadWorker);
-
-    conn = await db.connect();
-
-    // Load ICU for Icelandic collation
-    await conn.query("INSTALL icu; LOAD icu;");
-
-    // Register the Parquet file
-    await db.registerFileURL("claims.parquet", PARQUET_URL, 4, false);
-    await conn.query(
-      "CREATE TABLE claims AS SELECT * FROM read_parquet('claims.parquet')"
-    );
-
-    // Verify data loaded
-    const result = await conn.query("SELECT COUNT(*) AS n FROM claims");
-    const count = result.toArray()[0].n;
-    if (count === 0) throw new Error("No claims in Parquet file");
-
-    console.log(`DuckDB-WASM loaded: ${count} claims`);
-  }
-
-  async function initJSONFallback() {
-    const resp = await fetch(JSON_URL);
-    if (!resp.ok) throw new Error(`Failed to fetch ${JSON_URL}: ${resp.status}`);
-    jsonData = await resp.json();
-    console.log(`JSON fallback loaded: ${jsonData.length} claims`);
-  }
+  // DuckDB-WASM init — kept for future use when claim count warrants it.
+  // Requires self-hosting WASM bundles to avoid cross-origin Worker errors.
+  // async function initDuckDB() { ... }
 
   // ── Query layer ──────────────────────────────────────────────────
 
-  async function queryClaims() {
-    if (usingDuckDB) return queryDuckDB();
-    return queryJSON();
-  }
-
-  async function queryDuckDB() {
-    const conditions = [];
-    const params = [];
-
-    if (filters.search) {
-      // Use ILIKE for Icelandic case-insensitive search
-      conditions.push(
-        "(canonical_text_is ILIKE ? OR explanation_is ILIKE ? OR COALESCE(missing_context_is, '') ILIKE ?)"
-      );
-      const pattern = `%${filters.search}%`;
-      params.push(pattern, pattern, pattern);
-    }
-    if (filters.category) {
-      conditions.push("category = ?");
-      params.push(filters.category);
-    }
-    if (filters.verdict) {
-      conditions.push("verdict = ?");
-      params.push(filters.verdict);
-    }
-
-    const where = conditions.length
-      ? `WHERE ${conditions.join(" AND ")}`
-      : "";
-
-    const validSorts = [
-      "sighting_count",
-      "category",
-      "confidence",
-      "last_verified",
-      "claim_slug",
-    ];
-    const sort = validSorts.includes(filters.sort)
-      ? filters.sort
-      : "sighting_count";
-    const dir = filters.sortDir === "ASC" ? "ASC" : "DESC";
-
-    const sql = `SELECT * FROM claims ${where} ORDER BY ${sort} ${dir}`;
-
-    const stmt = await conn.prepare(sql);
-    params.forEach((p, i) => stmt.bind(i + 1, p));
-    const result = await stmt.query();
-    stmt.close();
-
-    return result.toArray().map((row) => ({
-      claim_slug: row.claim_slug,
-      canonical_text_is: row.canonical_text_is,
-      canonical_text_en: row.canonical_text_en,
-      category: row.category,
-      claim_type: row.claim_type,
-      verdict: row.verdict,
-      explanation_is: row.explanation_is,
-      explanation_en: row.explanation_en,
-      missing_context_is: row.missing_context_is,
-      confidence: row.confidence,
-      last_verified: row.last_verified,
-      sighting_count: Number(row.sighting_count),
-      last_seen: row.last_seen,
-      first_seen: row.first_seen,
-    }));
-  }
-
-  function queryJSON() {
+  function queryClaims() {
     let results = [...jsonData];
 
     if (filters.search) {
@@ -225,32 +113,7 @@
     return results;
   }
 
-  async function queryStats() {
-    if (usingDuckDB) {
-      const result = await conn.query(`
-        SELECT
-          COUNT(*) AS total,
-          COUNT(*) FILTER (WHERE verdict = 'supported') AS supported,
-          COUNT(*) FILTER (WHERE verdict = 'partially_supported') AS partial,
-          COUNT(*) FILTER (WHERE verdict = 'misleading') AS misleading,
-          COUNT(*) FILTER (WHERE verdict = 'unverifiable') AS unverifiable,
-          COUNT(*) FILTER (WHERE verdict = 'unsupported') AS unsupported,
-          COALESCE(SUM(sighting_count), 0) AS total_sightings
-        FROM claims
-      `);
-      const row = result.toArray()[0];
-      return {
-        total: Number(row.total),
-        supported: Number(row.supported),
-        partial: Number(row.partial),
-        misleading: Number(row.misleading),
-        unverifiable: Number(row.unverifiable),
-        unsupported: Number(row.unsupported),
-        totalSightings: Number(row.total_sightings),
-      };
-    }
-
-    // JSON fallback
+  function queryStats() {
     const data = jsonData || [];
     return {
       total: data.length,
@@ -310,8 +173,8 @@
     `;
   }
 
-  async function renderStats() {
-    const stats = await queryStats();
+  function renderStats() {
+    const stats = queryStats();
     const el = document.getElementById("ct-stats");
     el.innerHTML = `
       <div class="ct-stat">
@@ -341,8 +204,8 @@
     `;
   }
 
-  async function renderResults() {
-    const claims = await queryClaims();
+  function renderResults() {
+    const claims = queryClaims();
     const el = document.getElementById("ct-results");
 
     if (claims.length === 0) {
