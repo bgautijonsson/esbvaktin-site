@@ -20,6 +20,38 @@ og_type: article
       {% if report.article_author %}<span class="report-author">{{ report.article_author }}</span>{% endif %}
       {% if report.article_date %}<time datetime="{{ report.article_date }}">{{ report.article_date | isDate }}</time>{% endif %}
     </div>
+
+    {% if report.participants and report.participants | length %}
+    <div class="report-participants">
+      <h3>Þátttakendur</h3>
+      <div class="report-participants-grid">
+        {% for p in report.participants %}
+        <div class="report-participant">
+          <div class="report-participant-info">
+            <span class="report-participant-name">{{ p.name }}</span>
+            {% if p.party or p.role %}
+            <span class="report-participant-role">
+              {%- if p.party %}{{ p.party }}{% endif %}{% if p.party and p.role %} — {% endif %}{% if p.role %}{{ p.role }}{% endif -%}
+            </span>
+            {% endif %}
+          </div>
+          <div class="report-participant-verdicts">
+            <span class="report-participant-count">{{ p.claim_count }} fullyrðingar</span>
+            {% set verdictOrder = ["supported", "partially_supported", "unverifiable", "misleading", "unsupported"] %}
+            {% for v in verdictOrder %}
+              {% if p.verdicts[v] %}
+              <span class="ct-verdict-pill verdict-{{ v | replace("partially_supported", "partial") }}">
+                {{ v | verdictLabel }}: {{ p.verdicts[v] }}
+              </span>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
     <p class="report-summary">{{ report.summary }}</p>
   </header>
 

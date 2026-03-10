@@ -62,6 +62,7 @@
     "Kjarninn": "source-kjarninn",
     "Stundin": "source-stundin",
     "Fréttablaðið": "source-frettabladid",
+    "Silfrið (RÚV)": "source-silfrid",
   };
 
   const GROUP_LABELS = {
@@ -118,7 +119,8 @@
         (r) =>
           r.article_title?.toLowerCase().includes(q) ||
           r.summary?.toLowerCase().includes(q) ||
-          r.article_author?.toLowerCase().includes(q)
+          r.article_author?.toLowerCase().includes(q) ||
+          r.speakers?.some((s) => s.name?.toLowerCase().includes(q))
       );
     }
     if (filters.source) {
@@ -314,7 +316,9 @@
 
     const authorStr = report.article_author
       ? `<span class="dt-author">${escapeHtml(report.article_author)}</span>`
-      : "";
+      : report.source_type === "panel_show" && report.participants?.length
+        ? `<span class="dt-participants-badge">${report.participants.length} þátttakendur</span>`
+        : "";
 
     const externalLink = report.article_url
       ? `<a href="${escapeHtml(report.article_url)}" class="dt-external-link" target="_blank" rel="noopener">Upprunaleg grein &#x2197;</a>`
