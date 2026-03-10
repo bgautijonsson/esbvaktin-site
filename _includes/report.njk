@@ -38,13 +38,18 @@ og_type: article
           <div class="report-participant-verdicts">
             <span class="report-participant-count">{{ p.claim_count }} fullyrðingar</span>
             {% set verdictOrder = ["supported", "partially_supported", "unverifiable", "misleading", "unsupported"] %}
-            {% for v in verdictOrder %}
-              {% if p.verdicts[v] %}
-              <span class="ct-verdict-pill verdict-{{ v | replace("partially_supported", "partial") }}">
-                {{ v | verdictLabel }}: {{ p.verdicts[v] }}
-              </span>
-              {% endif %}
-            {% endfor %}
+            <div class="report-verdict-bar" role="img" aria-label="Dreifing niðurstaðna">
+              {% for v in verdictOrder %}
+                {% if p.verdicts[v] %}
+                  {% set pct = (p.verdicts[v] / p.claim_count * 100) | round(1) %}
+                  <span class="report-bar-seg verdict-{{ v | replace("partially_supported", "partial") }}"
+                        style="width:{{ pct }}%"
+                        title="{{ v | verdictLabel }}: {{ p.verdicts[v] }}">
+                    {%- if pct >= 12 %}{{ p.verdicts[v] }}{% endif -%}
+                  </span>
+                {% endif %}
+              {% endfor %}
+            </div>
           </div>
         </div>
         {% endfor %}
