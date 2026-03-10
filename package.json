@@ -1,0 +1,14 @@
+{
+  "name": "esbvaktin-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static site for esbvaktin.is",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "clean": "rm -rf _site"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

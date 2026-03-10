@@ -1,0 +1,22 @@
+---
+layout: base.njk
+title: Greiningar
+description: Ítarlegar greiningar á greinum og yfirlýsingum í ESB-umræðunni.
+---
+
+<h1>Greiningar</h1>
+<p>Ítarlegar greiningar á einstökum greinum og yfirlýsingum, þar sem hvert atriði er borið saman við gögn og heimildir.</p>
+
+{% set reportFiles = collections.reports %}
+{% if reportFiles | length %}
+<ul class="reports-list">
+  {% for report in reportFiles | reverse %}
+  <li>
+    <a href="{{ report.url }}">{{ report.data.article_title }}</a>
+    <time datetime="{{ report.data.analysis_date }}">{{ report.data.analysis_date | isDate }}</time>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>Engar greiningar hafa verið birtar ennþá.</p>
+{% endif %}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}{% if title !== site.title %} — {{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ description or site.description }}">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:type" content="{{ og_type or 'website' }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:locale" content="{{ site.locale }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  {% if extra_css %}<link rel="stylesheet" href="{{ extra_css }}">{% endif %}
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav">
+      <a href="/" class="site-logo">{{ site.title }}</a>
+      <ul class="nav-links">
+        <li><a href="/fullyrðingar/"{% if page.url == "/fullyrðingar/" %} aria-current="page"{% endif %}>Fullyrðingar</a></li>
+        <li><a href="/greiningar/"{% if "/greiningar/" in page.url %} aria-current="page"{% endif %}>Greiningar</a></li>
+        <li><a href="/adferdarfraedi/"{% if page.url == "/adferdarfraedi/" %} aria-current="page"{% endif %}>Aðferðafræði</a></li>
+        <li><a href="/um-okkur/"{% if page.url == "/um-okkur/" %} aria-current="page"{% endif %}>Um okkur</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="site-main">
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <p>{{ site.title }} — óháð upplýsingaverkefni um ESB-þjóðaratkvæðagreiðsluna {{ site.referendum_date | isDate }}.</p>
+    <p class="footer-links">
+      <a href="/um-okkur/">Um okkur</a> ·
+      <a href="/adferdarfraedi/">Aðferðafræði</a> ·
+      <a href="mailto:greining@esbvaktin.is">Senda grein</a>
+    </p>
+  </footer>
+
+  {% if extra_js %}<script src="{{ extra_js }}"{% if extra_js_data %} {{ extra_js_data | safe }}{% endif %}></script>{% endif %}
+</body>
+</html>

@@ -1,0 +1,40 @@
+---
+layout: base.njk
+og_type: article
+---
+
+<article class="report">
+  <header class="report-header">
+    <h1>{{ article_title }}</h1>
+    <div class="report-meta">
+      {% if article_source %}<span class="report-source">{{ article_source }}</span>{% endif %}
+      {% if analysis_date %}<time datetime="{{ analysis_date }}">{{ analysis_date | isDate }}</time>{% endif %}
+    </div>
+    <p class="report-summary">{{ summary }}</p>
+  </header>
+
+  <section class="report-claims">
+    <h2>Fullyrðingar ({{ claims | length }})</h2>
+    {% for item in claims %}
+    <div class="report-claim">
+      <div class="report-claim-header">
+        <span class="ct-verdict-pill verdict-{{ item.verdict | replace("partially_supported", "partial") }}">
+          {{ item.verdict | verdictLabel }}
+        </span>
+        <span class="ct-category-tag">{{ item.claim.category | categoryLabel }}</span>
+      </div>
+      <blockquote class="report-quote">{{ item.claim.original_quote }}</blockquote>
+      <p class="report-explanation">{{ item.explanation }}</p>
+      {% if item.missing_context %}
+      <details class="report-context">
+        <summary>Samhengi sem vantar</summary>
+        <p>{{ item.missing_context }}</p>
+      </details>
+      {% endif %}
+      {% if item.supporting_evidence.length %}
+      <p class="report-evidence"><strong>Heimildir:</strong> {{ item.supporting_evidence | join(", ") }}</p>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </section>
+</article>
