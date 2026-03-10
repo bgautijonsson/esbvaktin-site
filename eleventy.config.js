@@ -76,6 +76,20 @@ module.exports = function (eleventyConfig) {
     return Number(n).toLocaleString("is-IS");
   });
 
+  // ── Party CSS class filter ────────────────────────────────────────
+  const partyClasses = {
+    "Sjálfstæðisflokkur": "party-xd",
+    "Samfylkingin": "party-s",
+    "Framsóknarflokkur": "party-b",
+    "Miðflokkurinn": "party-m",
+    "Viðreisn": "party-c",
+    "Vinstrihreyfingin - grænt framboð": "party-v",
+    "Píratar": "party-p",
+    "Flokkur fólksins": "party-f",
+    "Hreyfingin": "party-hr",
+  };
+  eleventyConfig.addFilter("partyClass", (p) => partyClasses[p] || "party-other");
+
   // ── Ignore files ─────────────────────────────────────────────────
   eleventyConfig.ignores.add("CLAUDE.md");
 

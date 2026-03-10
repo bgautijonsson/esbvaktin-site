@@ -38,6 +38,15 @@ wide_layout: true
       </div>
       {% endif %}
     </div>
+
+    {# ── Party legend ──────────────────────────────────────────── #}
+    {% if debate.parties %}
+    <div class="dd-party-legend">
+      {% for party in debate.parties %}
+        <span class="dd-party-pill {{ party | partyClass }}">{{ party }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
   </header>
 
   {# ── Speakers ──────────────────────────────────────────────── #}
@@ -46,9 +55,9 @@ wide_layout: true
     <h2>Ræðumenn</h2>
     <div class="dd-speaker-grid">
       {% for speaker in debate.speakers %}
-      <div class="dd-speaker-card">
+      <div class="dd-speaker-card {{ speaker.party | partyClass }}">
         <div class="dd-speaker-name">{{ speaker.name }}</div>
-        <div class="dd-speaker-party">{{ speaker.party }}</div>
+        <span class="dd-speaker-party {{ speaker.party | partyClass }}">{{ speaker.party }}</span>
         <div class="dd-speaker-stats">
           <span>{{ speaker.speech_count }} {{ "ræða" if speaker.speech_count == 1 else "ræður" }}</span>
           <span>{{ speaker.total_words | localeString }} orð</span>
@@ -70,11 +79,11 @@ wide_layout: true
         <div class="dd-date-divider">{{ speech.date | isDate }}</div>
       {% endif %}
       <div class="dd-speech">
-        <div class="dd-speech-marker"></div>
+        <div class="dd-speech-marker {{ speech.party | partyClass }}"></div>
         <div class="dd-speech-content">
           <div class="dd-speech-header">
             <strong class="dd-speech-speaker">{{ speech.speaker }}</strong>
-            {% if speech.party %}<span class="dd-speech-party">{{ speech.party }}</span>{% endif %}
+            {% if speech.party %}<span class="dd-speech-party {{ speech.party | partyClass }}">{{ speech.party }}</span>{% endif %}
             {% if speech.speech_type %}<span class="dd-speech-type">{{ speech.speech_type }}</span>{% endif %}
           </div>
           <div class="dd-speech-meta">
@@ -82,7 +91,7 @@ wide_layout: true
             {% if speech.word_count %}<span>{{ speech.word_count | localeString }} orð</span>{% endif %}
           </div>
           {% if speech.excerpt %}
-          <blockquote class="dd-speech-excerpt">{{ speech.excerpt }}</blockquote>
+          <blockquote class="dd-speech-excerpt {{ speech.party | partyClass }}">{{ speech.excerpt }}</blockquote>
           {% endif %}
         </div>
       </div>
