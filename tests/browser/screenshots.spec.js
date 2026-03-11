@@ -3,11 +3,8 @@ const { gotoAndWait, openMobileMenu, screenshotPath } = require("./helpers");
 
 const desktopPages = [
   { name: "home-desktop", path: "/", selector: ".home-hero" },
-  { name: "vikuyfirlit-desktop", path: "/vikuyfirlit/", selector: ".briefing-feature" },
-  { name: "malefni-desktop", path: "/malefni/", selector: ".issue-topic-card" },
-  { name: "malefni-detail-desktop", path: "/malefni/adildarferlid-og-hvad-er-kosid-um/", selector: ".issue-summary-panel" },
-  { name: "spurt-og-svarad-desktop", path: "/spurningar-og-svor/", selector: ".faq-item" },
-  { name: "ordaskyringar-desktop", path: "/ordaskyringar/", selector: ".glossary-section" },
+  { name: "vikuyfirlit-desktop", path: "/vikuyfirlit/", selector: ".page-intro" },
+  { name: "malefni-desktop", path: "/malefni/", selector: ".page-intro" },
   { name: "claims-desktop", path: "/fullyrdingar/", selector: "#ct-results .ct-card" },
   { name: "discourse-desktop", path: "/umraedan/", selector: "#dt-results .dt-card" },
   { name: "evidence-desktop", path: "/heimildir/", selector: ".ev-card" },
@@ -16,8 +13,6 @@ const desktopPages = [
 
 const mobilePages = [
   { name: "home-mobile", path: "/", selector: ".home-hero" },
-  { name: "malefni-detail-mobile", path: "/malefni/adildarferlid-og-hvad-er-kosid-um/", selector: ".issue-summary-panel" },
-  { name: "spurt-og-svarad-mobile", path: "/spurningar-og-svor/", selector: ".faq-item" },
   { name: "claims-mobile", path: "/fullyrdingar/", selector: "#ct-results .ct-card" },
   { name: "discourse-mobile", path: "/umraedan/", selector: "#dt-results .dt-card" },
 ];

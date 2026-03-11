@@ -3,10 +3,8 @@ const { gotoAndWait, openMobileMenu } = require("./helpers");
 
 const pageChecks = [
   { path: "/", selector: ".home-hero", title: "ESBvaktin" },
-  { path: "/vikuyfirlit/", selector: ".briefings-shell", title: "Vikuyfirlit" },
-  { path: "/malefni/", selector: ".issue-topic-grid .issue-topic-card", title: "Málefni" },
-  { path: "/spurningar-og-svor/", selector: ".faq-list .faq-item", title: "Spurt og svarað" },
-  { path: "/ordaskyringar/", selector: ".glossary-section .glossary-card", title: "Orðskýringar" },
+  { path: "/vikuyfirlit/", selector: ".page-intro", title: "Vikuyfirlit" },
+  { path: "/malefni/", selector: ".page-intro", title: "Málefni" },
   { path: "/fullyrdingar/", selector: "#ct-results .ct-card", title: "Fullyrðingavakt" },
   { path: "/umraedan/", selector: "#dt-results .dt-card", title: "Umræðan" },
   { path: "/heimildir/", selector: ".ev-card", title: "Heimildir" },
@@ -43,7 +41,6 @@ test("mobile navbar opens grouped menu and closes with escape", async ({ page })
 
   await expect(toggle).toHaveAttribute("aria-expanded", "true");
   await expect(menu.getByText("Gagnasíður", { exact: true })).toBeVisible();
-  await expect(menu.getByText("Yfirlit og hjálp", { exact: true })).toBeVisible();
   await expect(menu.getByRole("link", { name: "Þingræður", exact: true })).toBeVisible();
 
   await page.keyboard.press("Escape");
@@ -63,19 +60,6 @@ test("core public pages render their main content", async ({ page }) => {
 
 test("listing pages can reach representative detail pages", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 960 });
-
-  await gotoAndWait(page, "/vikuyfirlit/", ".briefing-feature a");
-  await page.locator(".briefing-feature a").first().click();
-  await expect(page.locator(".briefing-header")).toBeVisible();
-
-  await gotoAndWait(page, "/malefni/", ".issue-topic-card");
-  await page.locator(".issue-topic-card").first().click();
-  await expect(page.locator(".issue-guide-page")).toBeVisible();
-  await expect(page.locator(".issue-summary-panel")).toBeVisible();
-
-  await gotoAndWait(page, "/spurningar-og-svor/", ".faq-list");
-  await page.getByRole("link", { name: "Orðskýringar", exact: true }).first().click();
-  await expect(page.locator(".glossary-sections")).toBeVisible();
 
   await gotoAndWait(page, "/umraedan/", "#dt-results .dt-card-link");
   await page.locator("#dt-results .dt-card-link").first().click();
@@ -149,26 +133,6 @@ test("homepage keeps the front page focused on datasets and current activity", a
   await expect(page.locator(".home-signal-card")).toHaveCount(5);
   await expect(page.locator(".home-sidebar-section").first()).toContainText("Oftast nefnd núna");
   await expect(page.locator(".home-sidebar-section").nth(1)).toContainText("Nýjar unnar greiningar");
-  await expect(page.locator("main")).not.toContainText("Leiðir inn í umræðuna fyrir þá sem vilja meiri skýringu");
-
-  await gotoAndWait(page, "/vikuyfirlit/", ".briefing-feature");
-  await expect(page.locator(".briefing-feature")).toContainText("Vikuyfirlit: hvað breyttist 9.–15. mars 2026?");
-  await expect(page.getByText("Vikuyfirlit: drög fyrir 16.–22. mars 2026")).toHaveCount(0);
-
-  await page.goto("/vikuyfirlit/16-22-mars-2026/", { waitUntil: "domcontentloaded" });
-  await expect(page.locator(".error-page")).toBeVisible();
-});
-
-test("faq page keeps the short-answer path visible and glossary page explains key terms", async ({ page }) => {
-  await page.setViewportSize({ width: 1440, height: 960 });
-
-  await gotoAndWait(page, "/spurningar-og-svor/", ".faq-list");
-  await expect(page.locator(".faq-item").first()).toContainText("Er þetta þjóðaratkvæði um tafarlausa inngöngu Íslands í ESB?");
-  await expect(page.locator(".faq-item").first()).toContainText("Aðildarferlið");
-
-  await gotoAndWait(page, "/ordaskyringar/", ".glossary-section");
-  await expect(page.locator(".glossary-section").first()).toContainText("Ferlið og atkvæðið");
-  await expect(page.locator(".glossary-card").first()).toContainText("Þjóðaratkvæðagreiðsla");
 });
 
 test("evidence links show a short preview on hover", async ({ page }) => {

@@ -9,8 +9,6 @@ module.exports = {
   utility: [
     { label: "Vikuyfirlit", href: "/vikuyfirlit/", match: "prefix" },
     { label: "Málefni", href: "/malefni/", match: "prefix" },
-    { label: "Spurningar og svör", href: "/spurningar-og-svor/", match: "prefix" },
-    { label: "Orðskýringar", href: "/ordaskyringar/", match: "prefix" },
     { label: "Aðferðafræði", href: "/adferdarfraedi/", match: "prefix" },
     { label: "Um okkur", href: "/um-okkur/", match: "prefix" },
   ],

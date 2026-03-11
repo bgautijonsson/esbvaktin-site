@@ -1,53 +1,11 @@
 ---
 layout: base.njk
 title: Málefni
-description: Leiðarvísar um helstu ágreiningsefnin í ESB-umræðunni — aðildarferlið, fullveldi, sjávarútveg, landbúnað, EES/ESB-löggjöf og fordæmi annarra ríkja.
+description: Leiðarvísar um helstu ágreiningsefnin í ESB-umræðunni.
 wide_layout: true
 ---
 
-<div class="issues-shell">
-  <section class="page-intro issue-topic-intro">
-    <p class="home-section-label">Málefni</p>
-    <h1>Veldu eitt málefni</h1>
-    <p>Hér eru helstu ágreiningsefnin á einum stað. Opnaðu eitt þeirra og fáðu stutta samantekt, helsta ágreininginn og tengd gögn.</p>
-  </section>
-
-  <section class="issue-chooser-stage issue-chooser-stage--compact">
-    <div class="issue-chooser-head issue-chooser-head--compact">
-      <p class="home-section-label">Sex byrjunarstaðir</p>
-      <h2>Algengast er að byrja á aðildarferlinu, fullveldi eða sjávarútvegi</h2>
-    </div>
-    <div class="issue-topic-grid issue-chooser-list">
-      {% if issues.length %}
-        {% for issue in issues %}
-          <a href="/malefni/{{ issue.slug }}/" class="issue-card issue-card--chooser issue-topic-card">
-            <div class="issue-card-chooser-copy">
-            <span class="content-card-eyebrow">{{ issue.stats.claims | localeString }} fullyrðingar</span>
-            <h2>{{ issue.title }}</h2>
-            <p class="issue-card-question">{{ issue.question }}</p>
-            </div>
-            <div class="issue-topic-meta">
-              <span class="issue-card-chooser-meta">{{ issue.stats.reports | localeString }} greiningar</span>
-              <span class="issue-card-chooser-meta">{{ issue.stats.evidence | localeString }} heimildir</span>
-            </div>
-          </a>
-        {% endfor %}
-      {% else %}
-        <p class="ct-empty">Engin málefni fundust.</p>
-      {% endif %}
-    </div>
-  </section>
-
-  <section class="overview-route-grid issue-chooser-support">
-    <a href="/vikuyfirlit/" class="overview-route-card overview-route-card--secondary">
-      <span class="content-card-eyebrow">Vikuyfirlit</span>
-      <h3>Viltu sjá það nýjasta fyrst?</h3>
-      <p>Farðu í vikuyfirlit ef þú vilt skoða nýjustu breytingarnar í umræðunni áður en þú velur málefni.</p>
-    </a>
-    <a href="/fullyrdingar/" class="overview-route-card overview-route-card--secondary">
-      <span class="content-card-eyebrow">Gögnin sjálf</span>
-      <h3>Viltu sleppa leiðarvísinum?</h3>
-      <p>Farðu beint í fullyrðingar, greiningar, heimildir og þingræður ef þú veist þegar hvað þú vilt sannreyna.</p>
-    </a>
-  </section>
+<div class="page-intro">
+  <h1>Málefni</h1>
+  <p>Helstu ágreiningsefnin í ESB-umræðunni. Efni hefur ekki verið birt enn.</p>
 </div>

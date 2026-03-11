@@ -32,6 +32,8 @@ assets/             # Passthrough CSS, JS, images, and exported JSON data
   css/              # site styles + tracker styles
   js/               # shared taxonomy/utils + page trackers
   data/             # claims, reports, entities, evidence, debates JSON
+vikuyfirlit/        # Weekly overview (empty shell, awaiting pipeline content)
+malefni/            # Issue guides (empty shell, awaiting pipeline content)
 umraedan/           # Analysis index + paginated report pages
 raddirnar/          # Entity detail pagination
 heimildir/          # Evidence detail pagination
@@ -62,41 +64,11 @@ greiningar/         # Redirect stubs (→ /umraedan/) for old URLs
 
 ## Recent Changes
 
-- Added `assets/js/tracker-controller.js` and wired it into `_includes/base.njk`
-- Refactored `claim-tracker.js`, `discourse-tracker.js`, `entity-tracker.js`, `evidence-tracker.js`, and `speeches-tracker.js` to use the shared controller
-- Replaced the old static homepage hero/feature-card layout with a live dashboard homepage built from `_data/home.js`, `index.njk`, and new home-specific CSS in `assets/css/style.css`
-- Homepage sections now include:
-  - referendum countdown and last-updated stamp
-  - live signal cards for claims/reports/entities/evidence/debates
-  - lead analysis card
-  - verdict distribution panel
-  - debate activity panel
-  - recent reports grid
-  - featured voices grid
-  - timeline/trust block
-
-## Verification
-
-- `node --check` passed for:
-  - `assets/js/tracker-controller.js`
-  - all five tracker scripts
-  - `_data/home.js`
-- `npm run build` passed after the controller refactor and homepage redesign
-- The generated homepage in `_site/index.html` was sanity-checked to confirm that the rendered counts now match `assets/data`
-
-## Open Follow-up
-
-- Browser-based visual QA was requested but then skipped. The repo changes are build-verified, but the new homepage and tracker pages still need an actual rendered pass in a browser
-- A Safari-based screenshot workflow was started against `http://localhost:8080`, but screen-capture permission was interrupted before usable screenshots were collected
-- If a future agent resumes visual QA, they should inspect at minimum:
-  - homepage desktop width
-  - homepage narrow/mobile width
-  - `/fullyrdingar/`
-  - `/umraedan/`
-  - `/raddirnar/`
-  - `/heimildir/`
-  - `/thingraedur/`
-- If another structural refactor is needed after that, the next logical target is shared query/filter helpers across trackers
+- Stripped Vikuyfirlit and Málefni down to empty shells — removed all Codex-generated content (briefings, issue guides, FAQs, glossary), data loaders, templates, and ~840 lines of dead CSS
+- Removed `/spurningar-og-svor/` and `/ordaskyringar/` pages and their data loaders entirely
+- Removed `publishedBriefings` and `issueGuides` collections, `resolveContent` filter, and `lib/content-data.js`
+- Vikuyfirlit and Málefni now show placeholder text; ready to be populated with pipeline-generated content
+- Updated browser tests to match the simplified page set
 
 ## Related Repos
 

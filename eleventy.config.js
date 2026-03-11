@@ -1,5 +1,4 @@
 const taxonomy = require("./assets/js/site-taxonomy.js");
-const contentData = require("./lib/content-data.js");
 
 /** @type {import("@11ty/eleventy").UserConfig} */
 module.exports = function (eleventyConfig) {
@@ -88,8 +87,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("confidenceLabel", (c) => taxonomy.confidenceLabels[c] || c);
   eleventyConfig.addFilter("entityTypeLabel", (t) => taxonomy.entityTypeLabels[t] || t);
   eleventyConfig.addFilter("attributionLabel", (a) => taxonomy.attributionLabels[a] || a);
-  eleventyConfig.addFilter("resolveContent", (values, type) => contentData.resolveRecords(type, values));
-
   // ── Number formatting ───────────────────────────────────────────
   eleventyConfig.addFilter("localeString", (n) => {
     if (n == null) return "";
@@ -105,19 +102,6 @@ module.exports = function (eleventyConfig) {
     if (item.match === "prefix") return pageUrl.startsWith(item.href);
     return pageUrl === item.href;
   });
-
-  eleventyConfig.addCollection("publishedBriefings", (collectionApi) =>
-    collectionApi
-      .getFilteredByTag("weekly-briefing")
-      .filter((item) => !item.data.draft)
-      .sort((a, b) => new Date(b.data.date) - new Date(a.data.date))
-  );
-
-  eleventyConfig.addCollection("issueGuides", (collectionApi) =>
-    collectionApi
-      .getFilteredByTag("issue-guide")
-      .sort((a, b) => Number(a.data.order || 0) - Number(b.data.order || 0))
-  );
 
   // ── Rewrite evidence links to internal /heimildir/ pages ─────────
   // Explanation HTML from the pipeline contains <a href="https://...">FISH-LEGAL-001</a>.
