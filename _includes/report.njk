@@ -138,7 +138,7 @@ og_type: article
         <div class="report-evidence">
           <strong>Heimildir:</strong>
           {% for ev in item.supporting_evidence %}
-            <a href="/heimildir/{{ ev.id | lower }}/" class="evidence-link" title="{{ ev.source_name }}">{{ ev.id }}</a>
+            <a href="/heimildir/{{ ev.id | lower }}/" class="evidence-link" data-evidence-id="{{ ev.id }}" data-evidence-source="{{ ev.source_name }}">{{ ev.id }}</a>
             {%- if not loop.last %}, {% endif %}
           {% endfor %}
         </div>
@@ -147,7 +147,7 @@ og_type: article
         <div class="report-evidence report-evidence-contra">
           <strong>Andstæðar heimildir:</strong>
           {% for ev in item.contradicting_evidence %}
-            <a href="/heimildir/{{ ev.id | lower }}/" class="evidence-link" title="{{ ev.source_name }}">{{ ev.id }}</a>
+            <a href="/heimildir/{{ ev.id | lower }}/" class="evidence-link" data-evidence-id="{{ ev.id }}" data-evidence-source="{{ ev.source_name }}">{{ ev.id }}</a>
             {%- if not loop.last %}, {% endif %}
           {% endfor %}
         </div>

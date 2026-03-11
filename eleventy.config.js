@@ -77,7 +77,7 @@ module.exports = function (eleventyConfig) {
     if (!html) return html;
     return html.replace(
       /<a\s+href="[^"]*"[^>]*>([A-Z]+-[A-Z]+-\d+)<\/a>/g,
-      (_, id) => `<a href="/heimildir/${id.toLowerCase()}/" class="evidence-link" title="${id}">${id}</a>`
+      (_, id) => `<a href="/heimildir/${id.toLowerCase()}/" class="evidence-link" data-evidence-id="${id}">${id}</a>`
     );
   });
 

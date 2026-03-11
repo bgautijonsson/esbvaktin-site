@@ -227,7 +227,7 @@
         evidenceList
           .map(
             (evidence) =>
-              `<a href="/heimildir/${escapeHtml(evidence.slug)}/" class="evidence-link" title="${escapeHtml(evidence.source_name)}">${escapeHtml(evidence.id)}</a>`
+              `<a href="/heimildir/${escapeHtml(evidence.slug)}/" class="evidence-link" data-evidence-id="${escapeHtml(evidence.id)}" data-evidence-source="${escapeHtml(evidence.source_name)}">${escapeHtml(evidence.id)}</a>`
           )
           .join(", ");
 
