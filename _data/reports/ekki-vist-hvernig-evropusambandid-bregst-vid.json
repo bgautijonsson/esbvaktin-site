@@ -9,9 +9,9 @@
   "analysis_date": "2026-03-10",
   "summary": "Greindar 14 fullyrðingar .",
   "verdict_counts": {
-    "partially_supported": 4,
-    "supported": 3,
-    "unverifiable": 6,
+    "partially_supported": 6,
+    "supported": 4,
+    "unverifiable": 3,
     "unsupported": 1
   },
   "claim_count": 14,
@@ -122,17 +122,11 @@
         "confidence": 0.9
       },
       "verdict": "unverifiable",
-      "explanation": "<a href=\"https://www.althingi.is/thingmenn/thingflokkar/vidreisn/\" title=\"Althingi — Session 157; Viðreisn party platform\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-004</a> staðfestir að Pawel Bartoszek sé þingmaður Viðreisnar (Reykjavíkurkjördæmi norður), en engin heimild í staðreyndagrunni staðfestir eða afsannar að hann sé formaður utanríkismálanefndar. <a href=\"https://www.althingi.is/lagas/nuna/1991055.html\" title=\"Lög um þingsköp Alþingis nr. 55/1991; Alþingi official website\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-019</a> útskýrir hlutverk nefndarinnar en nefnir ekki formann hennar. Heimildir duga því ekki til að meta þessa fullyrðingu.",
-      "supporting_evidence": [
-        {
-          "id": "POLITICAL-DATA-004",
-          "source_name": "Althingi — Session 157; Viðreisn party platform",
-          "source_url": "https://www.althingi.is/thingmenn/thingflokkar/vidreisn/"
-        }
-      ],
+      "explanation": "<a href=\"https://www.althingi.is/thingmenn/thingflokkar/vidreisn/\" title=\"Althingi — Session 157; Viðreisn party platform\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-004</a> staðfestir að Pawel Bartoszek sé þingmaður Viðreisnar fyrir Reykjavíkurkjördæmi norður, en engin heimild tilgreinir hann sem formann utanríkismálanefndar Alþingis. <a href=\"https://www.althingi.is/lagas/nuna/1991055.html\" title=\"Lög um þingsköp Alþingis nr. 55/1991; Alþingi official website\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-019</a> lýsir hlutverki nefndarinnar án þess að nefna hver gegnir formennsku. Þetta er sértæk staðhæfing sem krefst beinnar heimildar.",
+      "supporting_evidence": [],
       "contradicting_evidence": [],
       "missing_context": null,
-      "confidence": 0.4,
+      "confidence": 0.75,
       "speakers": [
         {
           "name": "Pavel Bartoszek",
@@ -154,12 +148,23 @@
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Engin heimild í staðreyndagrunni inniheldur beina tilvísun í efni greinargerðar þingsályktunartillögunnar. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> staðfestir að þingsályktunartillaga var lögð fram af utanríkisráðherra, en lýsir ekki innihaldi greinargerðarinnar. Ekki er hægt að staðfesta eða afsanna fullyrðinguna án þess að skoða greinargerðina sjálfa.",
-      "supporting_evidence": [],
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir efni þingsályktunartillögunnar og <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> lýsir þjóðaratkvæðagreiðslunni sem fyrsta skrefi í ferli. Hins vegar vísa heimildirnar ekki beint til þess að greinargerðin nefni ríkjaráðstefnu sem staðfestingarskref. Fullyrðingin er líklega rétt í megindráttum þar sem ríkjaráðstefna þarf að samþykkja aðild nýrra ríkja, en engin heimild sannreynir nákvæmlega þennan þátt greinargerðarinnar.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        },
+        {
+          "id": "SOV-DATA-006",
+          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Greinargerð þingsályktunartillögunnar er ekki í staðreyndagrunni. Til að meta þessa fullyrðingu þyrfti að skoða greinargerðina beint á vef Alþingis.",
-      "confidence": 0.3,
+      "missing_context": "Greinargerð þingsályktunartillögunnar sjálfrar er ekki meðal heimilda og því er ekki hægt að sannreyna orðalagið um ríkjaráðstefnu beint. <a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a> bendir til þess að réttarstaða umsóknarinnar frá 2009 sé enn umdeild, sem tengist spurningunni um hvort ríkjaráðstefna þurfi að staðfesta ferlið.",
+      "confidence": 0.45,
       "speakers": [
         {
           "name": "Morgunblaðið",
@@ -182,7 +187,7 @@
         "confidence": 0.9
       },
       "verdict": "unverifiable",
-      "explanation": "Þetta er skoðun tiltekins stjórnmálamanns og engin heimild í staðreyndagrunni skráir þessa tilteknu yfirlýsingu Bartoszeks. <a href=\"https://www.althingi.is/thingmenn/thingflokkar/vidreisn/\" title=\"Althingi — Session 157; Viðreisn party platform\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-004</a> staðfestir að hann sé þingmaður Viðreisnar — flokks sem styður eindregið ESB-aðild — sem gerir afstöðuna trúverðuga í samhengi, en staðfestir hana ekki beint. Skoðanafullyrðingar af þessu tagi þarf að staðfesta við upprunalega heimild.",
+      "explanation": "Engin heimild í staðreyndagrunni nefnir Pavel Bartoszek eða skoðanir hans á ríkjaráðstefnu í aðildarferlinu. Heimildirnar fjalla um afstöðu stjórnmálaflokka og þingmanna til þingsályktunartillögunnar en snerta ekki þessa tilteknu fullyrðingu. Án beinna heimilda um ummæli Bartoszeks er ekki hægt að meta fullyrðinguna.",
       "supporting_evidence": [],
       "contradicting_evidence": [],
       "missing_context": "Viðreisn styður eindregið ESB-aðild samkvæmt <a href=\"https://www.althingi.is/thingmenn/thingflokkar/vidreisn/\" title=\"Althingi — Session 157; Viðreisn party platform\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-004</a> og hefur talað fyrir skjótri niðurstöðu. Afstaða Bartoszeks er í samræmi við stefnu flokksins, en fullyrðingin sjálf er vitnun sem þarf að sannreyna við frumheimild.",
@@ -209,17 +214,11 @@
         "confidence": 0.9
       },
       "verdict": "unverifiable",
-      "explanation": "<a href=\"https://www.althingi.is/thingmenn/thingflokkar/sjalfstaedisflokkur/\" title=\"Althingi — Session 157 member registry\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-006</a> staðfestir að Jens Garðar Helgason sé þingmaður Sjálfstæðisflokksins (Norðausturkjördæmi), en engin heimild í staðreyndagrunni nefnir hann sem varaformann flokksins. Heimildir duga ekki til að staðfesta eða afsanna þessa fullyrðingu.",
-      "supporting_evidence": [
-        {
-          "id": "POLITICAL-DATA-006",
-          "source_name": "Althingi — Session 157 member registry",
-          "source_url": "https://www.althingi.is/thingmenn/thingflokkar/sjalfstaedisflokkur/"
-        }
-      ],
+      "explanation": "<a href=\"https://www.althingi.is/thingmenn/thingflokkar/sjalfstaedisflokkur/\" title=\"Althingi — Session 157 member registry\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-006</a> staðfestir að Jens Garðar Helgason sé þingmaður Sjálfstæðisflokksins fyrir Norðausturkjördæmi en nefnir ekkert um embætti varaformanns. Engar aðrar heimildir í gagnagrunninum staðfesta eða hrekja þá fullyrðingu að hann gegni embætti varaformanns flokksins.",
+      "supporting_evidence": [],
       "contradicting_evidence": [],
       "missing_context": null,
-      "confidence": 0.4,
+      "confidence": 0.8,
       "speakers": [
         {
           "name": "Jens Garðar Helgason",
@@ -242,17 +241,33 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> staðfestir að þingsályktunartillaga var lögð fram af utanríkisráðherra um þjóðaratkvæðagreiðslu 29. ágúst 2026, en nefnir ekki nákvæma dagsetningu framlagningar. Dagsetningin 7. mars 2026 og að hún hafi verið á föstudegi er ekki staðfest í heimildum staðreyndagrunnsins. Heimildirnar styðja að tillagan var lögð fram, en ekki tímasetninguna.",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir að utanríkisráðherra lagði fram þingsályktunartillögu 9. mars 2026, en fullyrðingin segir 7. mars (föstudag). Tillagan var um þjóðaratkvæðagreiðslu um áframhaldandi aðildarviðræður — það stemmir. <a href=\"https://www.althingi.is/altext/raeda/154/rad20230919T175556.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir (flutningsræða, 154. löggjafarþing); Logi Einarsson (flutningsræða, 153. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-004</a> sýnir einnig fyrri tillögur um sama efni. Dagsetningarvillan er lykilatriði: heimildir staðfesta 9. mars, ekki 7. mars. Efni tillögunnar er þó rétt lýst.",
       "supporting_evidence": [
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        },
+        {
+          "id": "SOV-PARL-004",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir (flutningsræða, 154. löggjafarþing); Logi Einarsson (flutningsræða, 153. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/154/rad20230919T175556.html"
+        },
         {
           "id": "SOV-DATA-006",
           "source_name": "Government of Iceland announcement; Althingi parliamentary records",
           "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Nákvæm dagsetning framlagningar þingsályktunartillögunnar er ekki skráð í staðreyndagrunninn. Sannreyna þarf dagsetninguna við þingskjöl Alþingis.",
-      "confidence": 0.5,
+      "contradicting_evidence": [
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        }
+      ],
+      "missing_context": "Heimildir tilgreina 9. mars 2026 sem dagsetningu flutningsræðunnar, ekki 7. mars. Fullyrðingin segir \"á föstudag\" sem gæti bent til þess að framlagning hafi verið kynnt á blaðamannafundi áður, en heimildir staðfesta ekki sérstakan atburð 7. mars. Vikudagurinn er ekki staðfestur.",
+      "confidence": 0.55,
       "speakers": [
         {
           "name": "Morgunblaðið",
@@ -403,12 +418,28 @@
         "claim_type": "opinion",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Engin heimild í staðreyndagrunni skráir þessa tilteknu yfirlýsingu Björns Bjarnasonar. Heimildir staðfesta þó umhverfið: <a href=\"https://www.althingi.is/thingmenn/althingismannatal/leit-i-althingismannatali/\" title=\"Althingi — Member directory; Government of Iceland cabinet listing\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-012</a> sýnir að gagnrýni hefur beinst að utanríkisráðherra vegna tvískiptingar hlutverka sem flokksleiðtogi og ráðherra. <a href=\"https://www.bondi.is/\" title=\"Bændasamtök Íslands — Official statements and press releases\" target=\"_blank\" rel=\"noopener\">ORG-DATA-002</a> sýnir að Bændasamtök Íslands hafa notað hugtakið \"upplýsingaóreiða\" um ESB-umræðuna. Fullyrðingin sjálf er vitnun í skoðanir tiltekins einstaklings sem ekki er skráð í grunninn.",
-      "supporting_evidence": [],
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T175023.html\" title=\"Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-003</a> og <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> staðfesta að stjórnarandstaðan — einkum Sjálfstæðisflokkurinn og Miðflokkurinn — gagnrýndi ríkisstjórnina harðlega fyrir skort á upplýsingagjöf og samráði við Alþingi. Guðrún Hafsteinsdóttir sagði ráðuneytið þurfa að upplýsa þjóðina sem \"algjört lágmark.\" <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T182328.html\" title=\"Alþingi — Sigmundur Davíð Gunnlaugsson, þingmaður Miðflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-002</a> lýsir ásakanir Sigmundar Davíðs um \"baktjaldamakk\" stjórnvalda. Hins vegar staðfesta heimildir ekki beint að Björn Bjarnason hafi sett þessa tilteknu gagnrýni fram — sambærilegar ásakanir koma frá öðrum þingmönnum.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-PARL-003",
+          "source_name": "Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T175023.html"
+        },
+        {
+          "id": "SOV-PARL-005",
+          "source_name": "Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)",
+          "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
+        },
+        {
+          "id": "SOV-PARL-002",
+          "source_name": "Alþingi — Sigmundur Davíð Gunnlaugsson, þingmaður Miðflokksins (ræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T182328.html"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Björn Bjarnason er fyrrverandi dómsmálaráðherra (Sjálfstæðisflokkurinn). Sannreyna þarf yfirlýsinguna við frumheimild. Umræða um hlutleysi upplýsingagjafar stjórnvalda er raunveruleg og skráð í fleiri heimildum, þótt þessi tiltekna gagnrýni sé það ekki.",
-      "confidence": 0.3,
+      "missing_context": "Engin heimild staðfestir beint að Björn Bjarnason hafi sett fram þessa ásökun. Ríkisstjórnin hefur haldið því fram að þjóðaratkvæðagreiðslan sjálf sé víðtækara lýðræðisleg samráðsform en nefndarfundir. Gagnrýnin kemur frá flokkum sem hafa sögulega verið ESB-andstæðir.",
+      "confidence": 0.55,
       "speakers": [
         {
           "name": "Björn Bjarnason",
@@ -440,12 +471,23 @@
         "claim_type": "opinion",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Engin heimild í staðreyndagrunni skráir tilteknar yfirlýsingar forsvarsmanna ríkisstjórnarinnar um erlenda upplýsingaóreiðu. <a href=\"https://www.bondi.is/\" title=\"Bændasamtök Íslands — Official statements and press releases\" target=\"_blank\" rel=\"noopener\">ORG-DATA-002</a> nefnir að Bændasamtök hafi varað við upplýsingaóreiðu, en beinir henni að ESB-jákvæðum röddum — ekki erlendum öflum. <a href=\"https://www.althingi.is/thingmenn/althingismannatal/leit-i-althingismannatali/\" title=\"Althingi — Member directory; Government of Iceland cabinet listing\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-012</a> lýsir gagnrýni á ráðherra en ekki áhyggjum ráðherra af erlendri afskiptasemi. Fullyrðingin kann vel að vera rétt, en heimildir staðreyndagrunns duga ekki til staðfestingar.",
-      "supporting_evidence": [],
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> staðfestir beint að utanríkisráðherra varaði við erlendri afskiptasemi af þjóðaratkvæðagreiðsluferlinu og sagði slík afskipti yrðu ekki þolinmælt, hvort sem þau kæmu frá ESB eða öðrum ríkjum. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> sýnir að utanríkisráðherra, sem er forsvarskona ríkisstjórnarinnar í ESB-málum, nálgaðist þjóðaratkvæðagreiðsluna sem fullveldismál. Fullyrðingin um áhyggjur ríkisstjórnarforsvarsmanna af mögulegri erlendri upplýsingaóreiðu er þannig staðfest.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-PARL-005",
+          "source_name": "Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)",
+          "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
+        },
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Umræða um erlenda afskiptasemi í þjóðaratkvæðagreiðslum er alþjóðlegt viðfangsefni. Sannreyna þarf þessa fullyrðingu við frumheimildir, til dæmis ræður eða yfirlýsingar ráðherra.",
-      "confidence": 0.3,
+      "missing_context": "Sigmundur Davíð Gunnlaugsson sakaði ríkisstjórnina sjálfa um \"baktjaldamakk\" við ESB og hélt því fram að fréttir af áformum ríkisstjórnarinnar hafi fyrst birst í erlendum fjölmiðlum (<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T182328.html\" title=\"Alþingi — Sigmundur Davíð Gunnlaugsson, þingmaður Miðflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-002</a>). Viðvaranir um erlenda afskiptasemi geta þjónað pólitískum tilgangi beggja hliða — jafnt til að verja ferlið sem til að grafa undan trausti á því.",
+      "confidence": 0.82,
       "speakers": [
         {
           "name": "Ríkisstjórnin",
@@ -468,7 +510,7 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.bondi.is/\" title=\"Bændasamtök Íslands — Official statements and press releases\" target=\"_blank\" rel=\"noopener\">ORG-DATA-002</a> staðfestir að Bændasamtök Íslands hafa notað hugtakið \"upplýsingaóreiða\" um ESB-umræðuna — en beina gagnrýninni að ESB-jákvæðum röddum, ekki stjórnvöldum. <a href=\"https://www.althingi.is/thingmenn/althingismannatal/leit-i-althingismannatali/\" title=\"Althingi — Member directory; Government of Iceland cabinet listing\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-012</a> sýnir að stjórnarandstaðan hefur gagnrýnt utanríkisráðherra fyrir að sameina flokksforystu og ráðherrastörf, sem bendir til þess að gagnrýni beinist að stjórnvöldum. Hugtakið er sannanlega í notkun, en heimildir sýna ekki sérstaklega að sjónir \"beinist í auknum mæli\" að stjórnvöldum — það er mat blaðamannsins.",
+      "explanation": "<a href=\"https://www.bondi.is/\" title=\"Bændasamtök Íslands — Official statements and press releases\" target=\"_blank\" rel=\"noopener\">ORG-DATA-002</a> staðfestir beint að Bændasamtök Íslands hafa notað hugtakið \"upplýsingaóreiða\" um ESB-umræðuna. Gagnrýni á stjórnvöld er vel skjalfest: <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> sýnir kvörtun stjórnarandstöðunnar yfir skorti á samráði og upplýsingagjöf, og <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T175023.html\" title=\"Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-003</a> endurspeglar kröfur um betri fræðslu frá ríkisstjórninni. Þó er \"auknum mæli\" ekki staðfest með mælanlegum gögnum — heimildir sýna gagnrýni á ákveðnum tímapunkti en ekki þróun yfir tíma.",
       "supporting_evidence": [
         {
           "id": "ORG-DATA-002",
@@ -476,13 +518,18 @@
           "source_url": "https://www.bondi.is/"
         },
         {
-          "id": "POLITICAL-DATA-012",
-          "source_name": "Althingi — Member directory; Government of Iceland cabinet listing",
-          "source_url": "https://www.althingi.is/thingmenn/althingismannatal/leit-i-althingismannatali/"
+          "id": "SOV-PARL-005",
+          "source_name": "Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)",
+          "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
+        },
+        {
+          "id": "SOV-PARL-003",
+          "source_name": "Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T175023.html"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Bændasamtökin beina hugtakinu \"upplýsingaóreiða\" að ESB-jákvæðum röddum, en stjórnarandstaðan gagnrýnir stjórnvöld fyrir hlutdræga upplýsingagjöf. Hvor áttina gagnrýnin beinist fer eftir sjónarhorni.",
+      "missing_context": "Engin tímaraðargögn sýna hvort gagnrýni á stjórnvöld hafi aukist. Bændasamtökin eru hagsmunasamtök og nota hugtakið í pólitísku samhengi. Ríkisstjórnin telur þjóðaratkvæðagreiðsluna sjálfa vera besta form upplýsingagjafar og samráðs.",
       "confidence": 0.55,
       "speakers": [
         {
@@ -506,7 +553,7 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a> staðfestir að deilt er um stöðu umsóknarinnar og að ESB lítur á hana sem enn í gildi. <a href=\"https://www.althingi.is/lagas/nv/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79\" target=\"_blank\" rel=\"noopener\">SOV-DATA-002</a> staðfestir lagalega flækjustig aðildarferlisins. Tengingin milli ríkjaráðstefnuspurningarinnar og stöðu umsóknarinnar er rökrétt greining sem greinin setur fram — ef umsóknin er enn í gildi gæti ferlið verið einfaldara en ef leggja þarf inn nýja. Heimildir staðfesta þó ekki beint þessa tilteknu tengingu; hún er túlkun blaðamannsins á lagalegu samhengi sem er í sjálfu sér sanngjörn.",
+      "explanation": "<a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a> staðfestir að réttarstaða aðildarumsóknar Íslands frá 2009 er umdeild — ESB hefur aldrei formlega viðurkennt afturköllunina og Framkvæmdastjórnin lýsti yfir í mars 2026 að umsóknin sé enn í gildi. Þetta tengist beint spurningunni um ríkjaráðstefnu, þar sem ný umsókn þyrfti formlega afgreiðslu en endurupptaka viðræðna á grundvelli gildandi umsóknar gæti farið aðra leið. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir jafnframt að utanríkisráðherra segir umsóknina enn í gildi.",
       "supporting_evidence": [
         {
           "id": "PARTY-DATA-011",
@@ -514,14 +561,19 @@
           "source_url": "https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/"
         },
         {
-          "id": "SOV-DATA-002",
-          "source_name": "Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79",
-          "source_url": "https://www.althingi.is/lagas/nv/1944033.html"
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        },
+        {
+          "id": "PREC-HIST-005",
+          "source_name": "Capacent Gallup / Social Science Research Institute, University of Iceland",
+          "source_url": "https://uni.hi.is/baldurt/files/2012/08/Iceland-EU-Baldur-Alyson-Greham.pdf"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Umsóknin var frá 2009, ekki 2010. <a href=\"https://www.cer.eu/insights/gap-between-brexit-reset-rhetoric-and-reality\" title=\"Centre for European Reform; UK in a Changing Europe\" target=\"_blank\" rel=\"noopener\">PREC-DATA-004</a> sýnir að aðildarferli samkvæmt 49. grein krefst samþykkis allra aðildarríkja óháð því hvort umsóknin sé ný eða eldri. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland: Accession negotiations status; Althingi records\" target=\"_blank\" rel=\"noopener\">EEA-DATA-009</a> nefnir að fyrri samningaframvinda verði hugsanlega viðurkennd ef Ísland snýr aftur að borðinu.",
-      "confidence": 0.55,
+      "missing_context": "<a href=\"https://www.althingi.is/lagas/nv/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79\" target=\"_blank\" rel=\"noopener\">SOV-DATA-002</a> bendir á að íslensku stjórnarskráin hafi enga skýra heimild um framsal fullveldis og aðild gæti krafist stjórnarskrárbreytingar samkvæmt 79. grein. Réttarstaða umsóknarinnar er enn umdeild meðal lögfræðinga — deilt er um hvort bréf utanríkisráðherra geti hnekkt þinglegri ákvörðun.",
+      "confidence": 0.6,
       "speakers": [
         {
           "name": "Morgunblaðið",

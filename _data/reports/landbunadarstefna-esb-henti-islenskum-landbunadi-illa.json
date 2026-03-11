@@ -9,9 +9,9 @@
   "analysis_date": "2026-03-09",
   "summary": "Greindar 16 fullyrðingar. Niðurstöður: 7 stutt að hluta, 4 stutt af heimildum, 3 ekki hægt að sannreyna, 1 villandi, 1 ekki stutt. Sjónarhorn: hallar á ESB-neikvæða hlið. Heildstæðni: 30%.",
   "verdict_counts": {
-    "partially_supported": 7,
-    "supported": 4,
+    "supported": 8,
     "unverifiable": 3,
+    "partially_supported": 3,
     "misleading": 1,
     "unsupported": 1
   },
@@ -33,23 +33,33 @@
         "claim_type": "statistic",
         "confidence": 0.9
       },
-      "verdict": "partially_supported",
-      "explanation": "Heimildir staðfesta að þingsályktunartillagan var lögformlega lögð fram 6. mars 2026 (<a href=\"https://www.constituteproject.org/constitution/Iceland_2011D\" title=\"Stjórnlagaráð — A Proposal for a new Constitution for the Republic of Iceland (English translation); Constitute Project — Iceland 2011D\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-018</a>) og að þjóðaratkvæðagreiðsla er áformöð um áframhaldandi aðildarviðræður. Hins vegar er engin heimild sem staðfestir nákvæmlega að fyrri umræða hafi farið fram 9. mars kl. 15:00 — dagsetningin og tímasetningin eru ekki staðfestar í heimildum.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir að utanríkisráðherra lagði fram þingsályktunartillögu 9. mars 2026 um þjóðaratkvæðagreiðslu um áframhaldandi aðildarviðræður. Tillagan var lögð fram sem stjórnartillaga til þingsályktunar og fjallaði um atkvæðagreiðslu 29. ágúst 2026 (<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a>). Fyrri útgáfur tillögunnar höfðu verið lagðar fram af Viðreisn og Samfylkingunni á fyrri löggjafarþingum (<a href=\"https://www.althingi.is/altext/raeda/154/rad20230919T175556.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir (flutningsræða, 154. löggjafarþing); Logi Einarsson (flutningsræða, 153. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-004</a>). Klukkutíminn (klukkan þrjú) er ekki staðfestur í heimildum, en kjarninn — fyrri umræða um þingsályktunartillögu á Alþingi 9. mars — er rétt.",
       "supporting_evidence": [
         {
-          "id": "SOV-LEGAL-018",
-          "source_name": "Stjórnlagaráð — A Proposal for a new Constitution for the Republic of Iceland (English translation); Constitute Project — Iceland 2011D",
-          "source_url": "https://www.constituteproject.org/constitution/Iceland_2011D"
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
         },
         {
-          "id": "EEA-DATA-009",
-          "source_name": "European Commission — Iceland: Accession negotiations status; Althingi records",
-          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+          "id": "SOV-PARL-004",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir (flutningsræða, 154. löggjafarþing); Logi Einarsson (flutningsræða, 153. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/154/rad20230919T175556.html"
+        },
+        {
+          "id": "SOV-DATA-006",
+          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+        },
+        {
+          "id": "SOV-PARL-005",
+          "source_name": "Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)",
+          "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Heimildir staðfesta að tillagan var lögð fram 6. mars 2026 en geta ekki um dagskrá þingfundar 9. mars. Þetta er staðreynd sem auðvelt væri að sannreyna í þingskjölum.",
-      "confidence": 0.5,
+      "missing_context": "Klukkutíminn (klukkan þrjú) er ekki staðfestur í heimildum. Einnig er formleg umræðustig (\"fyrri umræða\") ekki tilgreint í heimildunum — þær nefna flutningsræðu en ekki hvort þetta hafi verið fyrsta eða önnur umræða í þinglegum skilningi.",
+      "confidence": 0.8,
       "speakers": [
         {
           "name": "Berghildur Erla Bernharðsdóttir",
@@ -109,28 +119,28 @@
         "claim_type": "statistic",
         "confidence": 0.9
       },
-      "verdict": "partially_supported",
-      "explanation": "Heimildir staðfesta að spurningin snýst um áframhaldandi viðræður (<a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — Þjóðarpúls, February–March 2026\" target=\"_blank\" rel=\"noopener\">POLL-DATA-014</a>, <a href=\"https://www.visir.is/g/20262853438d/thridjungur-and-vigur-at-kvaeda-greidslunni\" title=\"Gallup Ísland / Vísir — EU referendum survey, March 2026\" target=\"_blank\" rel=\"noopener\">POLL-DATA-015</a>). Hins vegar bendir <a href=\"https://fel.hi.is/is/rannsoknir-spurningalistakannanir/simakannanir\" title=\"Félagsvísindastofnun — Methodology notes on EU polling; comparison of Gallup, MMR, and Maskína polls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-010</a> á að orðalag spurningarinnar skipti miklu máli — að spyrja um \"viðræður\" gefur að jafnaði meiri stuðning en að spyrja um \"aðild\". Nákvæmt orðalag valkostanna er ekki fullstaðfest í gagnagrunni.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.gallup.is/frettir/nyr-thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-007</a> og <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-017</a> staðfesta að þjóðaratkvæðagreiðslan snýst um hvort halda eigi áfram aðildarviðræðum — já eða nei. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> lýsir þingsályktuninni og staðfestir að um ráðgefandi þjóðaratkvæðagreiðslu er að ræða með tveimur valkostum. Fullyrðingin er rétt í meginatriðum — kjósendur munu velja á milli þess að halda áfram viðræðum eða ekki.",
       "supporting_evidence": [
         {
-          "id": "POLL-DATA-014",
-          "source_name": "Gallup Ísland — Þjóðarpúls, February–March 2026",
+          "id": "POLL-DATA-007",
+          "source_name": "Gallup Iceland / Þjóðarpúls",
+          "source_url": "https://www.gallup.is/frettir/nyr-thjodarpuls/"
+        },
+        {
+          "id": "POLL-DATA-017",
+          "source_name": "Gallup Iceland / Þjóðarpúls",
           "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
         },
         {
-          "id": "POLL-DATA-015",
-          "source_name": "Gallup Ísland / Vísir — EU referendum survey, March 2026",
-          "source_url": "https://www.visir.is/g/20262853438d/thridjungur-and-vigur-at-kvaeda-greidslunni"
-        },
-        {
-          "id": "POLL-DATA-010",
-          "source_name": "Félagsvísindastofnun — Methodology notes on EU polling; comparison of Gallup, MMR, and Maskína polls",
-          "source_url": "https://fel.hi.is/is/rannsoknir-spurningalistakannanir/simakannanir"
+          "id": "SOV-DATA-006",
+          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "<a href=\"https://fel.hi.is/is/rannsoknir-spurningalistakannanir/simakannanir\" title=\"Félagsvísindastofnun — Methodology notes on EU polling; comparison of Gallup, MMR, and Maskína polls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-010</a> bendir á að orðalag spurningarinnar hefur veruleg áhrif á mældan stuðning. Að spyrja um \"viðræður\" fremur en \"aðild\" mælist jafnan með 5–10 prósentustigum hærri stuðningi.",
-      "confidence": 0.7,
+      "missing_context": "<a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Þjóðarpúls, February–March 2026; Capacent Gallup historical EU polling data (2009–2013)\" target=\"_blank\" rel=\"noopener\">POLL-DATA-021</a> sýnir mikilvægan mun á stuðningi við viðræður (52%) og stuðningi við ESB-aðild (42%) — margir sem styðja viðræður eru ekki endilega hlynntir aðild. Þjóðaratkvæðagreiðslan er ráðgefandi samkvæmt <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a>, ekki bindandi, sem er mikilvægt samhengi sem fullyrðingin nefnir ekki.",
+      "confidence": 0.85,
       "speakers": [
         {
           "name": "Berghildur Erla Bernharðsdóttir",
@@ -200,23 +210,12 @@
         "claim_type": "opinion",
         "confidence": 0.85
       },
-      "verdict": "partially_supported",
-      "explanation": "Heimildir staðfesta að Sjálfstæðisflokkurinn hefur gagnrýnt dagsetninguna 29. ágúst og talið að það sé ekki hægt að tryggja almenna umræðu yfir sumarfrí (<a href=\"https://xd.is/2026/03/09/thjodin-a-betra-skilid/\" title=\"Sjálfstæðisflokkurinn — party website (xd.is); Miðflokkurinn — public statements; Gallup Þjóðarpúls party breakdown March 2026\" target=\"_blank\" rel=\"noopener\">POL-DATA-020</a>). Þetta samræmist fullyrðingunni í me gin atriðum. Hins vegar er orðið \"frasakenndri\" ekki staðfest í heimildum — það er tiltekinn tilvitnun sem ekki er að finna í gagnagrunni.",
-      "supporting_evidence": [
-        {
-          "id": "POL-DATA-020",
-          "source_name": "Sjálfstæðisflokkurinn — party website (xd.is); Miðflokkurinn — public statements; Gallup Þjóðarpúls party breakdown March 2026",
-          "source_url": "https://xd.is/2026/03/09/thjodin-a-betra-skilid/"
-        },
-        {
-          "id": "POL-DATA-006",
-          "source_name": "Sjálfstæðisflokkur — Party congresses and manifestos 1991–2025; Morgunblaðið archives",
-          "source_url": null
-        }
-      ],
+      "verdict": "unverifiable",
+      "explanation": "Heimildir staðfesta almenna gagnrýni stjórnarandstöðu á tímasetningu þjóðaratkvæðagreiðslunnar. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T182328.html\" title=\"Alþingi — Sigmundur Davíð Gunnlaugsson, þingmaður Miðflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-002</a> lýsir gagnrýni Sigmundar Davíðs á sumardagsetninguna og <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> nefnir málshraðaaðgerðir. Hins vegar er engin heimild sem staðfestir að formaður Sjálfstæðisflokksins hafi notað orðið \"frasakenndri\" eða sett fram þessa tilteknu yfirlýsingu.",
+      "supporting_evidence": [],
       "contradicting_evidence": [],
       "missing_context": "Heimildir staðfesta gagnrýni Sjálfstæðisflokksins á dagsetninguna en nákvæmt orðalag formaðursins er ekki í gagnagrunni. Bjarni Benediktsson er tilgreindur sem flokksforseti (POL-DATA-006).",
-      "confidence": 0.6,
+      "confidence": 0.7,
       "speakers": [
         {
           "name": "Sjálfstæðisflokkurinn",
@@ -249,8 +248,13 @@
         "confidence": 0.85
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.bondi.is/frettir/kynningarefni\" title=\"Bændasamtök Íslands — public statements and position papers (2009–2026); Vísir reporting\" target=\"_blank\" rel=\"noopener\">POL-DATA-019</a> staðfestir að Bændasamtök Íslands eru opinberlega andvíg ESB-aðild en hafa samtímis mótað lágmarkskröfur (minimum requirements) ef til aðildar komi. Þetta gefur til kynna raunhæfa nálgun þar sem samtökin samþykkja lýðræðislegt ferli þó það séu andvíg niðurstöðunni. Nákvæm staðfesting á þessari tilteknu afstöðu til þjóðaratkvæðagreiðslunnar er hins vegar ekki í heimildum.",
+      "explanation": "<a href=\"https://www.bondi.is/\" title=\"Bændasamtök Íslands — Official statements and press releases\" target=\"_blank\" rel=\"noopener\">ORG-DATA-002</a> staðfestir að Bændasamtökin eru á móti ESB-aðild en andmæla ekki þjóðaratkvæðagreiðslunni sem slíkri. <a href=\"https://www.bondi.is/frettir/kynningarefni\" title=\"Bændasamtök Íslands — public statements and position papers (2009–2026); Vísir reporting\" target=\"_blank\" rel=\"noopener\">POL-DATA-019</a> lýsir sambærilegri afstöðu — samtökin hafa jafnvel mótað lágmarkskröfur fyrir hugsanlega aðild, sem bendir til raunsæis gagnvart ferlinu. Fullyrðingin er þó of einföld: samtökin hafa ekki lýst stuðningi við þjóðaratkvæðagreiðsluna heldur hlutlausri afstöðu þar að lútandi, á meðan þau andmæla eindregið sjálfri aðildinni.",
       "supporting_evidence": [
+        {
+          "id": "ORG-DATA-002",
+          "source_name": "Bændasamtök Íslands — Official statements and press releases",
+          "source_url": "https://www.bondi.is/"
+        },
         {
           "id": "POL-DATA-019",
           "source_name": "Bændasamtök Íslands — public statements and position papers (2009–2026); Vísir reporting",
@@ -258,8 +262,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "<a href=\"https://www.bondi.is/frettir/kynningarefni\" title=\"Bændasamtök Íslands — public statements and position papers (2009–2026); Vísir reporting\" target=\"_blank\" rel=\"noopener\">POL-DATA-019</a> bendir á að innri skiptar skoðanir eru meðal bænda — ekki allir bændur deila afstöðu forystu samtökanna. Bændasamtökin eru þó opinberlega andvíg ESB-aðild, sem er mikilvægt samhengi við fullyrðinguna.",
-      "confidence": 0.55,
+      "missing_context": "Bændasamtökin eru harðlega á móti ESB-aðild og hafa áhyggjur af sameiginlegri landbúnaðarstefnu, tollvernd og samkeppni frá stærri ESB-framleiðendum. Að segja að þau hafi \"ekkert á móti\" þjóðaratkvæðagreiðslu kann að vanmeta efasemdir innan samtakanna. Innri deilur eru til staðar — ekki allir bændur deila afstöðu forystunnar.",
+      "confidence": 0.6,
       "speakers": [
         {
           "name": "Margrét Ágústa Sigurðardóttir",
@@ -349,34 +353,48 @@
         "claim_type": "opinion",
         "confidence": 0.8
       },
-      "verdict": "partially_supported",
-      "explanation": "Heimildir styðja að frjáls viðskipti með landbúnaðarvörur myndu valda verulegum erfiðleikum. <a href=\"https://www.bondi.is/frettir/kynningarefni\" title=\"Bændasamtök Íslands — EU membership impact assessment (2025); Ministry of Agriculture — subsidy data\" target=\"_blank\" rel=\"noopener\">POL-DATA-015</a> bendir á 40–60% búja yrðu órekstarfær og <a href=\"https://www.legislation.gov.uk/eut/eea-agreement/article/19\" title=\"EEA Agreement Article 19; Icelandic Ministry for Foreign Affairs — EEA review documentation\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-008</a> sýnir að Ísland hefur 30–100%+ tolla á lykilvörum. Hins vegar benda suðuróhlutdrægar heimildir (<a href=\"https://chamber.is/intros/iceland-accession-negotiations-with-the-eu\" title=\"Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-009</a>) á að neytendaverð gæti lækkað um 15–25%, sem gagnast neytendum. Þó fullyrðingin sé álit fremur en staðreynd, styðja heimildir rökin að baki henni að verulegu leyti.",
+      "verdict": "supported",
+      "explanation": "Heimildir staðfesta eindregið að frjálst flæði landbúnaðarvara myndi valda íslenskum landbúnaði alvarlegum erfiðleikum. <a href=\"https://www.legislation.gov.uk/eut/eea-agreement/article/19\" title=\"EEA Agreement Article 19; Icelandic Ministry for Foreign Affairs — EEA review documentation\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-008</a> sýnir að EES-samningurinn undanþiggur landbúnaðarvörur frá frjálsu flæði, en ESB-aðild myndi afnema innri tolla. <a href=\"https://www.bondi.is/frettir/kynningarefni\" title=\"Bændasamtök Íslands — EU membership impact assessment (2025); Ministry of Agriculture — subsidy data\" target=\"_blank\" rel=\"noopener\">POL-DATA-015</a> og <a href=\"https://www.bondi.is/\" title=\"Bændasamtök Íslands — Official statements and press releases\" target=\"_blank\" rel=\"noopener\">ORG-DATA-002</a> staðfesta mat Bændasamtaka Íslands á alvarlegum áhrifum, og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); OECD Economic Surveys: Iceland 2021\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-019</a> sýnir að Framkvæmdastjórnin sjálf greindi landbúnað sem erfiðasta aðlögunarsvið. Nýjar heimildir (<a href=\"https://www.bondi.is/frettir/kynningarefni\" title=\"Bændasamtök Íslands — public statements and position papers (2009–2026); Vísir reporting\" target=\"_blank\" rel=\"noopener\">POL-DATA-019</a>, <a href=\"https://chamber.is/intros/iceland-accession-negotiations-with-the-eu\" title=\"Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-009</a>) styrkja þessa mynd enn frekar — 30-100%+ tollar myndu hverfa og 40-60% búa gætu orðið óhagkvæm.",
       "supporting_evidence": [
-        {
-          "id": "POL-DATA-015",
-          "source_name": "Bændasamtök Íslands — EU membership impact assessment (2025); Ministry of Agriculture — subsidy data",
-          "source_url": "https://www.bondi.is/frettir/kynningarefni"
-        },
         {
           "id": "AGRI-DATA-008",
           "source_name": "EEA Agreement Article 19; Icelandic Ministry for Foreign Affairs — EEA review documentation",
           "source_url": "https://www.legislation.gov.uk/eut/eea-agreement/article/19"
         },
         {
-          "id": "AGRI-DATA-009",
-          "source_name": "Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers",
-          "source_url": "https://chamber.is/intros/iceland-accession-negotiations-with-the-eu"
-        }
-      ],
-      "contradicting_evidence": [
+          "id": "POL-DATA-015",
+          "source_name": "Bændasamtök Íslands — EU membership impact assessment (2025); Ministry of Agriculture — subsidy data",
+          "source_url": "https://www.bondi.is/frettir/kynningarefni"
+        },
+        {
+          "id": "ORG-DATA-002",
+          "source_name": "Bændasamtök Íslands — Official statements and press releases",
+          "source_url": "https://www.bondi.is/"
+        },
+        {
+          "id": "AGRI-DATA-019",
+          "source_name": "European Commission — Opinion on Iceland's application (SEC(2010) 153); OECD Economic Surveys: Iceland 2021",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "POL-DATA-019",
+          "source_name": "Bændasamtök Íslands — public statements and position papers (2009–2026); Vísir reporting",
+          "source_url": "https://www.bondi.is/frettir/kynningarefni"
+        },
         {
           "id": "AGRI-DATA-009",
           "source_name": "Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers",
           "source_url": "https://chamber.is/intros/iceland-accession-negotiations-with-the-eu"
+        },
+        {
+          "id": "POL-DATA-005",
+          "source_name": "LÍÚ and SFS public statements; Hagstofa Íslands national accounts",
+          "source_url": null
         }
       ],
-      "missing_context": "Fullyrðingin sleppur því að lægra matvæla verð gagnast neytendum (15–25% lækkun samkvæmt <a href=\"https://chamber.is/intros/iceland-accession-negotiations-with-the-eu\" title=\"Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-009</a>). Einnig gætu CAP-greiðslur veitt íslenskum bændum styki; írskar bújarðir fá t.d. ~13.000 evra/ár í CAP-greiðslur.",
-      "confidence": 0.7,
+      "contradicting_evidence": [],
+      "missing_context": "Raunveruleg áhrif myndu ráðast af aðlögunartímabilum og sérákvæðum í aðildarsamningi — reynsla Finnlands og Svíþjóðar bendir til þess að norðlæg ríki geti samið um sérstakan stuðning. CAP-greiðslur gætu að hluta bætt upp tekjutap bænda. Rannsóknir eru frá 2010–2014 og byggjast á eldri útgáfu CAP.",
+      "confidence": 0.85,
       "speakers": [
         {
           "name": "Margrét Ágústa Sigurðardóttir",
@@ -399,12 +417,12 @@
         "confidence": 0.8
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en\" title=\"European Commission — CAP at a glance\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-001</a> lýsir CAP sem allsherjar stefnu með ~387 milljarða evra fjárlögum sem ekki var hönnuð sérstaklega fyrir aðstæður eins og á Íslandi. <a href=\"https://chamber.is/intros/iceland-accession-negotiations-with-the-eu\" title=\"Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-009</a> sýnir að rannsóknir áætla 30–50% tekjulækkun bænda. Hins vegar sýnir <a href=\"https://mmm.fi/en/food-and-agriculture/support-and-aid/national-agricultural-aid\" title=\"Act of Accession of Austria, Finland and Sweden (1994), Article 142; Finnish Ministry of Agriculture and Forestry; Commission Decision (EU) 2022/2460\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-002</a> að Finnland og Svíþjóð fen gu varanlegar niðurgreiðslur fyrir norðlæg svæði, sem bendir til að CAP geti aðlagað að sérstökum aðstæðum. Orðið \"afar illa\" er því of áföngulegt án fyrirvara.",
+      "explanation": "Heimildir styðja að sameiginleg landbúnaðarstefna ESB (CAP) myndi krefjast umfangsmikilla breytinga á íslensku landbúnaðarkerfi. Bændasamtökin meta að 40–60% búa gætu orðið óhagkvæm (<a href=\"https://www.bondi.is/frettir/kynningarefni\" title=\"Bændasamtök Íslands — EU membership impact assessment (2025); Ministry of Agriculture — subsidy data\" target=\"_blank\" rel=\"noopener\">POL-DATA-015</a>), og rannsóknir benda til 30–50% tekjuskerðingar (<a href=\"https://chamber.is/intros/iceland-accession-negotiations-with-the-eu\" title=\"Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-009</a>). CAP er ekki hluti EES-samningsins og krefðist algjörrar endurskipulagningar (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); OECD Economic Surveys: Iceland 2021\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-019</a>). Nýjar heimildir um CAP-uppbyggingu (<a href=\"https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en\" title=\"European Commission — CAP at a glance; MFF 2021–2027 Regulation (EU) 2020/2093\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-015</a>) og aðlögunargreiðslur nýrra ríkja (<a href=\"https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en\" title=\"European Commission — CAP direct payments: phasing-in for new member states; Regulation (EU) 2021/2115 (CAP Strategic Plans)\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-020</a>) sýna hins vegar að möguleikar eru á aðlögunartímabilum og viðbótarstuðningi. Fordæmi Finnlands (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A11994N%2FAFP\" title=\"Act of Accession of Austria, Finland, and Sweden (1994), Articles 141–142; European Commission Decision C(2021)1896 authorising Finnish national aid\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-021</a>, greið 142) sýnir að norðlæg landbúnaðaraðstoð er möguleg innan CAP.",
       "supporting_evidence": [
         {
-          "id": "AGRI-LEGAL-001",
-          "source_name": "European Commission — CAP at a glance",
-          "source_url": "https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en"
+          "id": "POL-DATA-015",
+          "source_name": "Bændasamtök Íslands — EU membership impact assessment (2025); Ministry of Agriculture — subsidy data",
+          "source_url": "https://www.bondi.is/frettir/kynningarefni"
         },
         {
           "id": "AGRI-DATA-009",
@@ -412,19 +430,39 @@
           "source_url": "https://chamber.is/intros/iceland-accession-negotiations-with-the-eu"
         },
         {
-          "id": "POL-DATA-015",
-          "source_name": "Bændasamtök Íslands — EU membership impact assessment (2025); Ministry of Agriculture — subsidy data",
-          "source_url": "https://www.bondi.is/frettir/kynningarefni"
+          "id": "AGRI-DATA-019",
+          "source_name": "European Commission — Opinion on Iceland's application (SEC(2010) 153); OECD Economic Surveys: Iceland 2021",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "AGRI-LEGAL-001",
+          "source_name": "European Commission — CAP at a glance",
+          "source_url": "https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en"
+        },
+        {
+          "id": "AGRI-DATA-015",
+          "source_name": "European Commission — CAP at a glance; MFF 2021–2027 Regulation (EU) 2020/2093",
+          "source_url": "https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en"
         }
       ],
       "contradicting_evidence": [
         {
-          "id": "AGRI-LEGAL-002",
-          "source_name": "Act of Accession of Austria, Finland and Sweden (1994), Article 142; Finnish Ministry of Agriculture and Forestry; Commission Decision (EU) 2022/2460",
-          "source_url": "https://mmm.fi/en/food-and-agriculture/support-and-aid/national-agricultural-aid"
+          "id": "AGRI-DATA-021",
+          "source_name": "Act of Accession of Austria, Finland, and Sweden (1994), Articles 141–142; European Commission Decision C(2021)1896 authorising Finnish national aid",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A11994N%2FAFP"
+        },
+        {
+          "id": "PREC-DATA-015",
+          "source_name": "Department of Agriculture, Food and the Marine (Ireland) — CAP Strategic Plan 2023–2027; ACRES scheme documentation",
+          "source_url": "https://www.gov.ie/en/publication/76026-common-agricultural-policy-cap-post-2020/"
+        },
+        {
+          "id": "AGRI-DATA-020",
+          "source_name": "European Commission — CAP direct payments: phasing-in for new member states; Regulation (EU) 2021/2115 (CAP Strategic Plans)",
+          "source_url": "https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en"
         }
       ],
-      "missing_context": "<a href=\"https://mmm.fi/en/food-and-agriculture/support-and-aid/national-agricultural-aid\" title=\"Act of Accession of Austria, Finland and Sweden (1994), Article 142; Finnish Ministry of Agriculture and Forestry; Commission Decision (EU) 2022/2460\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-002</a> sýnir að Finnland og Svíþjóð fengu varanlegar undanþágur (Article 142) sem leyfa langvarandi ríkisstyrkja vegna erfiðra veðurskilyrða og lágs þéttleika. Ísland gæti e.t.v. sótt um sambærilegar undanþágur.",
+      "missing_context": "Fullyrðingin segir CAP \"henti afar illa\" en nýjar heimildir sýna mótvægi: greið 142 veitir Finnlandi varanlegan viðbótarstuðning (~560 milljónir evra/ár, <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A11994N%2FAFP\" title=\"Act of Accession of Austria, Finland, and Sweden (1994), Articles 141–142; European Commission Decision C(2021)1896 authorising Finnish national aid\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-021</a>) og umhverfisgreiðslur á Írlandi ná 7.000–10.000 evrum á bú (<a href=\"https://www.gov.ie/en/publication/76026-common-agricultural-policy-cap-post-2020/\" title=\"Department of Agriculture, Food and the Marine (Ireland) — CAP Strategic Plan 2023–2027; ACRES scheme documentation\" target=\"_blank\" rel=\"noopener\">PREC-DATA-015</a>). Ný aðildarríki byrja á 25% af fullum CAP-greiðslum og ná 100% á um 10 árum (<a href=\"https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en\" title=\"European Commission — CAP direct payments: phasing-in for new member states; Regulation (EU) 2021/2115 (CAP Strategic Plans)\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-020</a>). Raunáhrif ráðast af samningsskilmálum sem aldrei voru prófaðir. Rannsóknirnar sem vitnað er til eru frá 2011–2012 og byggja á eldra CAP-kerfi.",
       "confidence": 0.65,
       "speakers": [
         {
@@ -584,21 +622,26 @@
         "confidence": 0.85
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782591/EPRS_BRI(2026)782591_EN.pdf\" title=\"Summary of findings: Status of the accession negotiations between Iceland and the EU (Icelandic Ministry for Foreign Affairs, 2013); European Parliament briefing on EU-Iceland relations (2026)\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-003</a> staðfestir að landbúnaðarkaflinn (Chapter 11) var einn af sex köflum sem aldrei voru opnaðir í aðildarviðræðum 2010–2013, vegna ósamræmanlegs ágreinings innan Íslands. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland: Accession negotiations status; Althingi records\" target=\"_blank\" rel=\"noopener\">EEA-DATA-009</a> staðfestir að landbúnaður, sjávarútvegur og frjálst fjármagnsflæði voru þeir kaflar sem stóðu óleystir. Orðið \"m.a.\" (meðal annars) er mikilvægt þvt sjávarútvegur og aðrir kaflar voru einnig ástæða.",
+      "explanation": "Heimildir staðfesta að landbúnaðarkaflinn (kafli 11) var meðal þeirra kafla sem aldrei voru opnaðir í aðildarviðræðum Íslands við ESB 2010–2013, og var ein af ástæðunum fyrir þeim erfiðleikum sem viðræðurnar stóðu frammi fyrir. Samkvæmt <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland progress reports 2011–2013; Screening report Chapter 11\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-018</a> skilaði Ísland aldrei samningalegri afstöðu um landbúnað, meðal annars vegna óyfirstíganlegra ágreinings milli hagsmunaaðila. <a href=\"https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782591/EPRS_BRI(2026)782591_EN.pdf\" title=\"Summary of findings: Status of the accession negotiations between Iceland and the EU (Icelandic Ministry for Foreign Affairs, 2013); European Parliament briefing on EU-Iceland relations (2026)\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-003</a> staðfestir að sex kaflar voru aldrei opnaðir, þar á meðal landbúnaður og sjávarútvegur.",
       "supporting_evidence": [
+        {
+          "id": "AGRI-DATA-018",
+          "source_name": "European Commission — Iceland progress reports 2011–2013; Screening report Chapter 11",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
         {
           "id": "AGRI-LEGAL-003",
           "source_name": "Summary of findings: Status of the accession negotiations between Iceland and the EU (Icelandic Ministry for Foreign Affairs, 2013); European Parliament briefing on EU-Iceland relations (2026)",
           "source_url": "https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782591/EPRS_BRI(2026)782591_EN.pdf"
         },
         {
-          "id": "EEA-DATA-009",
-          "source_name": "European Commission — Iceland: Accession negotiations status; Althingi records",
+          "id": "FISH-DATA-023",
+          "source_name": "European Commission — Iceland screening report Chapter 13; Progress reports on Iceland 2011–2013",
           "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Sjávarútvegur (Chapter 13) og frjálst fjármagnsflæði (Chapter 4) voru einnig meðal óleystra kafla (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland: Accession negotiations status; Althingi records\" target=\"_blank\" rel=\"noopener\">EEA-DATA-009</a>). Aðalorsök stöðvunarinnar var pólitísk breyting á Íslandi — ný mið-hægri ríkisstjórn árið 2013 frestaði viðræðum formlega.",
+      "missing_context": "Landbúnaðurinn var ekki eina ástæðan — sjávarútvegskaflinn (kafli 13) var jafn erfiður. Viðræðurnar voru stöðvaðar af stjórnmálalegum ástæðum þegar ríkisstjórn Sigmundar Davíðs Gunnlaugssonar tók við 2013 (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland progress reports 2011–2013; Screening report Chapter 11\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-018</a>). Fullyrðingin notar réttilega orðalagið \"m.a.\" sem gefur til kynna að landbúnaður var ein af mörgum ástæðum.",
       "confidence": 0.9,
       "speakers": [
         {
@@ -621,18 +664,18 @@
         "claim_type": "opinion",
         "confidence": 0.8
       },
-      "verdict": "unverifiable",
-      "explanation": "Engar heimildir í gagnagrunni staðfesta tiltekna athugasemd Bændasamtökanna við upplýsingaóreiðu. <a href=\"https://www.bondi.is/frettir/kynningarefni\" title=\"Bændasamtök Íslands — public statements and position papers (2009–2026); Vísir reporting\" target=\"_blank\" rel=\"noopener\">POL-DATA-019</a> staðfestir að BÉ er andvígt ESB-aðild og hefur tekið virkan þátt í umræðunni, en ekkert í heimildum vísar beint til ásaka na um upplýsingaóreiðu. Þetta er tilvitnun íframkvæmdastjóra sem er ekki að finna í gagnagrunninum.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.bondi.is/\" title=\"Bændasamtök Íslands — Official statements and press releases\" target=\"_blank\" rel=\"noopener\">ORG-DATA-002</a> staðfestir að Bændasamtök Íslands hafi bent á það sem samtökin kalla \"upplýsingaóreiðu\" í umræðunni um ESB-aðild, þar sem sumir ESB-jákvæðir talsmenn geri lítið úr áskorunum fyrir landbúnaðinn. Þetta samrýmist fullyrðingunni um að samtökin geri athugasemd við upplýsingaóreiðu um aðildarmálið.",
       "supporting_evidence": [
         {
-          "id": "POL-DATA-019",
-          "source_name": "Bændasamtök Íslands — public statements and position papers (2009–2026); Vísir reporting",
-          "source_url": "https://www.bondi.is/frettir/kynningarefni"
+          "id": "ORG-DATA-002",
+          "source_name": "Bændasamtök Íslands — Official statements and press releases",
+          "source_url": "https://www.bondi.is/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Bændasamtökin hafa verið virk í opinberri umræðu (<a href=\"https://www.bondi.is/frettir/kynningarefni\" title=\"Bændasamtök Íslands — public statements and position papers (2009–2026); Vísir reporting\" target=\"_blank\" rel=\"noopener\">POL-DATA-019</a>) en nákvæmt efni athugasemdarinnar um upplýsingaóreiðu er ekki í heimildum. Athugasemd við \"upplýsingaóreiðu\" gæti átt við ummæli bæði ESB-sinnaðra og ESB-andvígra aðila.",
-      "confidence": 0.35,
+      "missing_context": "Bændasamtökin eru hagsmunasamtök bænda og afstaða þeirra endurspeglar þá hagsmuni. Sumir hagfræðingar og ESB-jákvæðir fréttaskýrendur telja samtökin ýkja áhættuna og vanmeta möguleg ávinning af sameiginlegri landbúnaðarstefnu, svo sem beina greiðslur og byggðasjóði (<a href=\"https://www.bondi.is/\" title=\"Bændasamtök Íslands — Official statements and press releases\" target=\"_blank\" rel=\"noopener\">ORG-DATA-002</a>, <a href=\"https://www.bondi.is/frettir/kynningarefni\" title=\"Bændasamtök Íslands — public statements and position papers (2009–2026); Vísir reporting\" target=\"_blank\" rel=\"noopener\">POL-DATA-019</a>).",
+      "confidence": 0.9,
       "speakers": [
         {
           "name": "Margrét Ágústa Sigurðardóttir",

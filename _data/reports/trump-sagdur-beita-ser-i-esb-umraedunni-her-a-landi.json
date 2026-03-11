@@ -9,10 +9,10 @@
   "analysis_date": "2026-03-10",
   "summary": "Greindar 21 fullyrðingar. Niðurstöður: 11 ekki hægt að sannreyna, 5 stutt að hluta, 3 stutt af heimildum, 1 ekki stutt, 1 villandi. Sjónarhorn: hallar á ESB-neikvæða hlið. Heildstæðni: 25%.",
   "verdict_counts": {
-    "unverifiable": 11,
-    "partially_supported": 5,
-    "unsupported": 1,
-    "supported": 3,
+    "unsupported": 2,
+    "partially_supported": 6,
+    "supported": 6,
+    "unverifiable": 6,
     "misleading": 1
   },
   "claim_count": 21,
@@ -32,23 +32,23 @@
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Engar heimildir í staðreyndagrunni staðfesta að ríkisstjórn Trumps hafi opinberlega lýst yfir vilja til að halda Íslandi utan ESB. Samkvæmt <a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"1951 US-Iceland Defence Agreement; 2016 Iceland-US Security Cooperation Agreement; US Department of State bilateral relations factsheet\" target=\"_blank\" rel=\"noopener\">SOV-DATA-008</a> hefur opinber afstaða Bandaríkjanna verið sú að ESB-aðild sé fullveldisákvörðun Íslands. Sumir greinendur hafa sett fram þá kenningu að Bandaríkin vilji halda Íslandi utan ESB til að einfalda tvíhliða samskipti, en engin skjalfest sönnun liggur fyrir um beina andstöðu Bandaríkjastjórnar við ESB-aðild Íslands.",
+      "verdict": "unsupported",
+      "explanation": "<a href=\"https://www.nato.int/cps/en/natohq/topics_212802.htm\" title=\"NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list\" target=\"_blank\" rel=\"noopener\">SOV-DATA-009</a> segir skýrt að engin opinber afstaða Bandaríkjanna sé á móti ESB-aðild Íslands og að Bandaríkin hafi sögulega stutt evrópska samruna. <a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"1951 US-Iceland Defence Agreement; 2016 Iceland-US Security Cooperation Agreement; US Department of State bilateral relations factsheet\" target=\"_blank\" rel=\"noopener\">SOV-DATA-008</a> staðfestir að engin skjalfest sönnun sé til um beina andstöðu Bandaríkjanna við ESB-aðild Íslands. Þótt sumir fræðimenn hafi velt upp þeirri kenningu að Bandaríkin vilji halda Íslandi utan ESB vegna tvíhliða varnarhagsmuna, þá er fullyrðingin — að ríkisstjórn Trumps vilji sérstaklega halda Íslandi utan ESB — ekki studd af neinum heimildum. Engin opinber yfirlýsing Trumps-stjórnarinnar hefur tekið þessa afstöðu.",
       "supporting_evidence": [],
       "contradicting_evidence": [
+        {
+          "id": "SOV-DATA-009",
+          "source_name": "NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list",
+          "source_url": "https://www.nato.int/cps/en/natohq/topics_212802.htm"
+        },
         {
           "id": "SOV-DATA-008",
           "source_name": "1951 US-Iceland Defence Agreement; 2016 Iceland-US Security Cooperation Agreement; US Department of State bilateral relations factsheet",
           "source_url": "https://www.state.gov/u-s-relations-with-iceland/"
-        },
-        {
-          "id": "SOV-HIST-002",
-          "source_name": "Avalon Project, Yale Law Library — Defense of Iceland: Agreement Between the United States and the Republic of Iceland, May 5, 1951; Government of Iceland — Iceland and the US: Bilateral Relations",
-          "source_url": "https://avalon.law.yale.edu/20th_century/ice001.asp"
         }
       ],
       "missing_context": "Opinber afstaða Bandaríkjanna hefur verið sú að ESB-aðild sé fullveldisákvörðun Íslands. Fullyrðingin byggir á fréttaflutningi Altinget.no sem vitnar í ónafngreinda heimildaraðila, ekki í opinberar yfirlýsingar frá Trump-stjórninni. Bandaríkin eiga nána ESB-bandamenn (Frakkland, Þýskaland, Holland) og NATO-bandamenn utan ESB (Noregur, Tyrkland), sem bendir til þess að ESB-aðild stangist ekki endilega á við hagsmuni Bandaríkjanna.",
-      "confidence": 0.75,
+      "confidence": 0.85,
       "speakers": [
         {
           "name": "Ríkisstjórn Donalds Trump",
@@ -81,28 +81,27 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "Ef Ísland gengi í ESB myndi viðskiptastefna landsins falla undir sameiginlega viðskiptastefnu ESB, sem þýðir að Bandaríkin gætu ekki lengur samið tvíhliða við Ísland eitt og sér. Þetta er rökrétt ályktun byggð á uppbyggingu ESB (<a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Articles 99–101\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-002</a>, <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/the-surveillance-and-court-agreement/agreement-annexes-and-protocols/Surveillance-and-Court-Agreement-consolidated.pdf\" title=\"Agreement establishing the EFTA Surveillance Authority and the EFTA Court, Article 3\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-005</a>). Hins vegar er ESB sem viðskiptablokk sterkari samningsaðili, sem gæti bæði styrkt og veikt stöðu Íslands gagnvart Bandaríkjunum, eftir aðstæðum. Fullyrðingin er einhliða í þeim skilningi að hún einblínir á sjónarhorn Bandaríkjanna en nefnir ekki hugsanlegan ávinning Íslands af sameiginlegri viðskiptastöðu ESB.",
+      "explanation": "Rökfræðilega er fullyrðingin studd: <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf\" title=\"EEA Agreement — Protocol 3 on trade in processed agricultural products\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-002</a> og <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> staðfesta að ESB-aðild myndi fela í sér tollabandalag þar sem viðskiptasamningar eru á forræði ESB — Bandaríkin gætu ekki samið tvíhliða við Ísland um vöruviðskipti. <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> bendir til styrkingar samningsstöðu sem hluti af ESB. Hins vegar er viðskiptasamband Íslands og Bandaríkjanna lítið í alþjóðlegu samhengi, og <a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"1951 US-Iceland Defence Agreement; 2016 Iceland-US Security Cooperation Agreement; US Department of State bilateral relations factsheet\" target=\"_blank\" rel=\"noopener\">SOV-DATA-008</a> staðfestir að Bandaríkin hafa aldrei lýst andstöðu við ESB-aðild Íslands.",
       "supporting_evidence": [
         {
-          "id": "EEA-LEGAL-002",
-          "source_name": "EEA Agreement, Articles 99–101",
-          "source_url": "https://www.efta.int/eea/eea-agreement"
+          "id": "TRADE-DATA-002",
+          "source_name": "EEA Agreement — Protocol 3 on trade in processed agricultural products",
+          "source_url": "https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf"
         },
         {
-          "id": "EEA-LEGAL-005",
-          "source_name": "Agreement establishing the EFTA Surveillance Authority and the EFTA Court, Article 3",
-          "source_url": "https://www.efta.int/sites/default/files/documents/legal-texts/the-surveillance-and-court-agreement/agreement-annexes-and-protocols/Surveillance-and-Court-Agreement-consolidated.pdf"
-        }
-      ],
-      "contradicting_evidence": [
+          "id": "EEA-LEGAL-022",
+          "source_name": "EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'",
+          "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
+        },
         {
           "id": "POL-DATA-017",
           "source_name": "Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)",
           "source_url": "https://vi.is/skyrslur/1667"
         }
       ],
-      "missing_context": "Viðskiptaráð Íslands (<a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a>) bendir á að ESB-aðild gæti aukið vergri landsframleiðslu Íslands um 2-4% á tíu árum vegna minni viðskiptakostnaðar. Sameiginleg viðskiptastefna ESB myndi jafnframt vernda Ísland betur gegn einhliða tollaaðgerðum stórvelda. Ísland er nú þegar hluti af innri markaði ESB í gegnum EES-samninginn.",
-      "confidence": 0.55,
+      "contradicting_evidence": [],
+      "missing_context": "Engin rannsókn metur beint hvort samningastaða Bandaríkjanna gagnvart Íslandi myndi veikjast. Ísland á engan fríverslunarsamning við Bandaríkin. Ferðaþjónustan — stærsti þáttur viðskiptanna — yrði ekki undir tollabandalagsreglum.",
+      "confidence": 0.45,
       "speakers": [
         {
           "name": "Ríkisstjórn Donalds Trump",
@@ -173,7 +172,7 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "Samkvæmt <a href=\"https://europeelects.eu/iceland/\" title=\"Altinget.no; Heimildin; Europe Elects party classification\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-012</a> greindu bæði norski vefurinn Altinget.no og Heimildin frá því að pólitískur ráðgjafi tengdur Nigel Farage hafi heimsótt Ísland tvisvar snemma árs 2026. Þetta samræmist fullyrðingunni, en upplýsingarnar byggja á fjölmiðlafréttum sem hafa ekki verið staðfestar með sjálfstæðum hætti. Miðflokkurinn hefur ekki birt formlega yfirlýsingu sem staðfestir eða hafnar öllum tilgreindum fundum.",
+      "explanation": "<a href=\"https://europeelects.eu/iceland/\" title=\"Altinget.no; Heimildin; Europe Elects party classification\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-012</a> staðfestir að pólitískur ráðgjafi tengdur Nigel Farage hafi heimsótt Ísland tvisvar snemma árs 2026, samkvæmt fréttum Altinget.no og Heimildarinnar. Fullyrðingin nefnir hann sem \"bandarískan ráðgjafa\" en heimildin tilgreinir ekki þjóðerni hans — einungis að hann sé tengdur Farage. Tvær heimsóknir eru staðfestar en ákveðin atriði í fullyrðingunni eru óstaðfest.",
       "supporting_evidence": [
         {
           "id": "PARTY-DATA-012",
@@ -182,7 +181,7 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Upplýsingarnar eru byggðar á fjölmiðlafréttum (Altinget.no og Heimildin) og hafa ekki verið staðfestar óháð af öðrum aðilum. Miðflokkurinn hefur ekki birt formlega yfirlýsingu um þessa fundi. Eðli og umfang heimsóknanna er óljóst.",
+      "missing_context": "Heimildin tilgreinir ekki þjóðerni ráðgjafans og staðfestir ekki beint að hann sé bandarískur. Tengsl Miðflokksins við alþjóðlegar íhaldshreyfingar eru þó skráð í sömu heimild.",
       "confidence": 0.6,
       "speakers": [
         {
@@ -216,7 +215,7 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://europeelects.eu/iceland/\" title=\"Altinget.no; Heimildin; Europe Elects party classification\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-012</a> staðfestir að fjölmiðlar greindu frá tengslum Miðflokksins við bandaríska Repúblikanaflokkinn og ráðgjafa tengdan Farage. <a href=\"https://www.midflokkurinn.is/\" title=\"Miðflokkurinn — Party website and statements; ECR Party membership; Icelandic media reports\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-013</a> vísar einnig í fréttir um tengsl Miðflokksins við erlenda hægri-Evrópuskeptíska hreyfingu. Hins vegar nefna heimildir í staðreyndagrunni ekki sérstaklega fundi með Sjálfstæðisflokknum -- sú fullyrðing er ekki studd af tiltækum heimildum.",
+      "explanation": "<a href=\"https://europeelects.eu/iceland/\" title=\"Altinget.no; Heimildin; Europe Elects party classification\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-012</a> staðfestir að pólitískur ráðgjafi tengdur Nigel Farage heimsótti Ísland tvisvar snemma árs 2026 og að Miðflokkurinn hefur tengsl við alþjóðlegar íhaldshreyfingar. <a href=\"https://www.midflokkurinn.is/\" title=\"Miðflokkurinn — Party website and statements; ECR Party membership; Icelandic media reports\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-013</a> styður þetta og nefnir tengsl við bandaríska Repúblíkanaflokkinn. Fullyrðingin nær hins vegar einnig til Sjálfstæðisflokksins, en engin heimild staðfestir samskipti Farage-ráðgjafa við þann flokk. Helmingur fullyrðingarinnar er vel studdur af heimildum en hinn helmingurinn er óstaðfestur.",
       "supporting_evidence": [
         {
           "id": "PARTY-DATA-012",
@@ -230,7 +229,7 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Heimildir staðreyndagrunns staðfesta fundi með Miðflokknum en nefna ekki Sjálfstæðisflokkinn sérstaklega. Tengsl stjórnmálaflokka yfir landamæri eru eðlilegur hluti lýðræðislegra stjórnmála -- flestir íslenskir flokkar eiga alþjóðleg tengsl. Sjálfstæðisflokkurinn er formlega ESB-andvígur (POL-DATA-006) en hefur ekki verið sérstaklega tengdur við Farage-hópinn í tiltækum heimildum.",
+      "missing_context": "Umfang og eðli viðræðnanna byggist á fjölmiðlafréttum og hefur ekki verið staðfest að fullu. Miðflokkurinn hefur ekki gefið út formlega yfirlýsingu um öll tilgreind samskipti. Alþjóðleg pólitísk samskipti eru eðlilegur hluti lýðræðislegrar starfsemi og slík tengsl eru ekki óvenjuleg.",
       "confidence": 0.5,
       "speakers": [
         {
@@ -414,11 +413,11 @@
         "confidence": 0.9
       },
       "verdict": "unverifiable",
-      "explanation": "Staðreyndagrunnurinn inniheldur engar beinar heimildir um Hringborð norðurslóða í Róm eða þátttöku Katrínar Jakobsdóttur þar. POL-DATA-008 staðfestir að Katrín Jakobsdóttir er fyrrverandi forsætisráðherra og áberandi í Vinstrihreyfingunni -- grænu framboði, en nefnir ekki þennan tiltekna atburð. Ekki er hægt að sannreyna þessa fullyrðingu.",
+      "explanation": "Engin heimild í gagnagrunninum fjallar um þátttöku Katrínar Jakobsdóttur á Hringborði norðurslóða í Róm eða umræður hennar um fullveldi á norðurslóðum. <a href=\"https://www.althingi.is/thingmenn/thingflokkar/vidreisn/\" title=\"Althingi — Session 157; Viðreisn party platform\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-004</a> fjallar um Viðreisn og Þorgerði Katrínu Gunnarsdóttur, ekki um Katrínu Jakobsdóttur. Án beinnar heimildar um þennan tiltekna atburð er fullyrðingin enn óstaðfestanleg.",
       "supporting_evidence": [],
       "contradicting_evidence": [],
       "missing_context": "POL-DATA-008 staðfestir að Katrín Jakobsdóttir er fyrrverandi forsætisráðherra og hefur sýnt varkára stuðning við ESB-aðild. Hún er vel þekkt á alþjóðavettvangi en staðreyndagrunnurinn inniheldur engar upplýsingar um þátttöku hennar á Hringborði norðurslóða í Róm.",
-      "confidence": 0.25,
+      "confidence": 0.85,
       "speakers": [
         {
           "name": "Katrín Jakobsdóttir",
@@ -494,12 +493,18 @@
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Staðreyndagrunnurinn inniheldur ekki beinar heimildir um ástæður þess að Trump hefur talað um kaup á Grænlandi eða tengsl þess við Kína. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A11985D\" title=\"Treaty amending, with regard to Greenland, the Treaties establishing the European Communities (1984)\" target=\"_blank\" rel=\"noopener\">PREC-HIST-008</a> og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:1985:029:FULL\" title=\"Treaty amending the Treaties establishing the European Communities with regard to Greenland (1984); EU-Greenland fisheries partnership agreement\" target=\"_blank\" rel=\"noopener\">PREC-HIST-017</a> fjalla um Grænland sem sjálfstjórnarsvæði Danmerkur og sögu þess innan ESB, en nefna ekki Kína eða Trump. <a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"1951 US-Iceland Defence Agreement; 2016 Iceland-US Security Cooperation Agreement; US Department of State bilateral relations factsheet\" target=\"_blank\" rel=\"noopener\">SOV-DATA-008</a> fjallar um bandaríska hagsmuni á Norður-Atlantshafi en tengir þá ekki sérstaklega við Grænlandsmálið.",
-      "supporting_evidence": [],
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.reuters.com/world/\" title=\"Multiple news sources — Reuters, AP, BBC coverage of Trump Greenland statements (2025)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-011</a> staðfestir að Trump nefndi kínversk umsvif sem eina af ástæðum fyrir áhuga hans á Grænlandi — ásamt öðrum þáttum eins og sjaldgæfum jarðefnum, siglingaleiðum og hernaðarlegri uppbyggingu Rússa. Kínversk umsvif eru þó aðeins einn þáttur af mörgum sem Trump hefur nefnt. Fullyrðingin ofmetur þýðingu kínverskra umsvifa með því að kalla þau \"stóra ástæðu\" þegar heimildir sýna fjölþætta röksemdafærslu.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-011",
+          "source_name": "Multiple news sources — Reuters, AP, BBC coverage of Trump Greenland statements (2025)",
+          "source_url": "https://www.reuters.com/world/"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Trump nefndi fyrst kaup á Grænlandi árið 2019 og hefur ítrekað þá afstöðu. Fjölmiðlar hafa greint frá ýmsum ástæðum, þar á meðal öryggissjónarmiðum, auðlindahagsmunum og viðveru Kína á norðurslóðum, en staðreyndagrunnurinn inniheldur engar heimildir sem staðfesta eða hrekja þessa tilteknu fullyrðingu.",
-      "confidence": 0.3,
+      "missing_context": "Túlkun á hvað vegi þyngst í röksemdum Trump er umdeild — sumir sérfræðingar telja hernaðarlega staðsetningu og sjaldgæf jarðefni mikilvægari en kínversk umsvif. Danmörk og sjálfstjórn Grænlands hafa hafnað hvers kyns yfirfærslu fullveldis.",
+      "confidence": 0.65,
       "speakers": [
         {
           "name": "Donald Trump",
@@ -521,12 +526,18 @@
         "claim_type": "statistic",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Þó að yfirlýsingar Trumps um Grænland séu almenn vitneskja og hafi fengið mikla fjölmiðlaumfjöllun, þá innihalda heimildir staðreyndagrunns ekki beina tilvísun í slíkar yfirlýsingar. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A11985D\" title=\"Treaty amending, with regard to Greenland, the Treaties establishing the European Communities (1984)\" target=\"_blank\" rel=\"noopener\">PREC-HIST-008</a> og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:1985:029:FULL\" title=\"Treaty amending the Treaties establishing the European Communities with regard to Greenland (1984); EU-Greenland fisheries partnership agreement\" target=\"_blank\" rel=\"noopener\">PREC-HIST-017</a> fjalla um Grænland en nefna ekki Trump. <a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"1951 US-Iceland Defence Agreement; 2016 Iceland-US Security Cooperation Agreement; US Department of State bilateral relations factsheet\" target=\"_blank\" rel=\"noopener\">SOV-DATA-008</a> fjallar um hernaðarlega hagsmuni Bandaríkjanna á Norður-Atlantshafi en nefnir ekki Grænlandsmálið sérstaklega.",
-      "supporting_evidence": [],
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.reuters.com/world/\" title=\"Multiple news sources — Reuters, AP, BBC coverage of Trump Greenland statements (2025)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-011</a> staðfestir að Trump hafi ítrekað lýst því yfir á öðru forsetaskeiði sínu (frá janúar 2025) að Bandaríkin ættu að eignast Grænland og nefnt það nauðsynlegt fyrir þjóðaröryggi. Hann nefndi hugmyndina fyrst í ágúst 2019 á fyrsta kjörtímabili sínu, en hertu orðræðuna verulega á því öðru — meðal annars neitaði hann að útiloka hernaðaraðgerðir til að ná Grænlandi.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-011",
+          "source_name": "Multiple news sources — Reuters, AP, BBC coverage of Trump Greenland statements (2025)",
+          "source_url": "https://www.reuters.com/world/"
+        }
+      ],
       "contradicting_evidence": [],
       "missing_context": "Þetta er staðreynd sem er vel þekkt úr fjölmiðlum en er ekki skjalfest í staðreyndagrunni ESBvaktarinnar. Trump nefndi fyrst kaup á Grænlandi árið 2019 og ítrekaði afstöðu sína í kjölfar endurkjörs 2024.",
-      "confidence": 0.35,
+      "confidence": 0.95,
       "speakers": [
         {
           "name": "Donald Trump",
@@ -597,33 +608,27 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "Það er rökrétt ályktun að sameiginleg viðskiptastefna ESB, sem einn af stærstu viðskiptablokkum heims, veiti einstökum aðildarríkjum sterkari samningsstöðu gagnvart stórum viðskiptalöndum. <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Articles 99–101\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-002</a> og <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/the-surveillance-and-court-agreement/agreement-annexes-and-protocols/Surveillance-and-Court-Agreement-consolidated.pdf\" title=\"Agreement establishing the EFTA Surveillance Authority and the EFTA Court, Article 3\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-005</a> staðfesta að ESB-aðild felur í sér sameiginlega viðskiptastefnu. Hins vegar er fullyrðingin einföldun -- Bandaríkin og ESB eru jafnframt stórir viðskiptaaðilar og geta bæði náð og ekki náð samningum. Samstaða Evrópu getur líka leitt til meiri samvinnu frekar en samkeppni.",
+      "explanation": "Evrópusamstaða getur styrkt samningsstöðu gagnvart Bandaríkjunum — ESB er stærsta viðskiptasvæði heims og semur sem ein heild í viðskiptamálum (<a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Articles 8 and 17–26; Protocols 1 and 47\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-008</a>). Ísland hefur eitt og sér takmarkaða samningsstöðu. Hins vegar eru heimildir takmarkaðar um bein áhrif evrópskrar samstöðu á Bandaríkin í tilviki Íslands. Nýja heimildin <a href=\"https://www.nato.int/cps/en/natohq/topics_212802.htm\" title=\"NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list\" target=\"_blank\" rel=\"noopener\">SOV-DATA-009</a> staðfestir að engin opinber andstaða Bandaríkjanna er við ESB-aðild Íslands og NATO-ESB samstarf er talið gagnkvæmt styrkjandi.",
       "supporting_evidence": [
+        {
+          "id": "SOV-DATA-009",
+          "source_name": "NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list",
+          "source_url": "https://www.nato.int/cps/en/natohq/topics_212802.htm"
+        },
         {
           "id": "EEA-LEGAL-002",
           "source_name": "EEA Agreement, Articles 99–101",
           "source_url": "https://www.efta.int/eea/eea-agreement"
         },
         {
-          "id": "EEA-LEGAL-005",
-          "source_name": "Agreement establishing the EFTA Surveillance Authority and the EFTA Court, Article 3",
-          "source_url": "https://www.efta.int/sites/default/files/documents/legal-texts/the-surveillance-and-court-agreement/agreement-annexes-and-protocols/Surveillance-and-Court-Agreement-consolidated.pdf"
-        },
-        {
-          "id": "SOV-LEGAL-010",
-          "source_name": "Edinburgh Agreement (1992); Danish Ministry of Foreign Affairs — Denmark's EU opt-outs",
-          "source_url": "https://www.thedanishparliament.dk/en/eu-information-centre/the-danish-opt-outs-from-eu-cooperation"
+          "id": "EEA-LEGAL-008",
+          "source_name": "EEA Agreement, Articles 8 and 17–26; Protocols 1 and 47",
+          "source_url": "https://www.efta.int/eea/eea-agreement"
         }
       ],
-      "contradicting_evidence": [
-        {
-          "id": "SOV-DATA-008",
-          "source_name": "1951 US-Iceland Defence Agreement; 2016 Iceland-US Security Cooperation Agreement; US Department of State bilateral relations factsheet",
-          "source_url": "https://www.state.gov/u-s-relations-with-iceland/"
-        }
-      ],
-      "missing_context": "ESB er stærsti viðskiptaaðili heims og hefur töluvert samningsvald, en samband ESB og Bandaríkjanna er margslungið og byggist bæði á samkeppni og samvinnu. Fullyrðingin gefur í skyn að samstaða sé eingöngu neikvæð fyrir Bandaríkin, en í reynd getur sterkara ESB líka verið áreiðanlegri viðskiptaaðili. Noregur, sem stendur utan ESB, getur átt erfiðara með tvíhliða viðskiptasamninga við Bandaríkin (sbr. fullyrðingu 17).",
-      "confidence": 0.6,
+      "contradicting_evidence": [],
+      "missing_context": "Fullyrðingin er almenn og erfitt að sannreyna hana beint. Heimildir (<a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"1951 US-Iceland Defence Agreement; 2016 Iceland-US Security Cooperation Agreement; US Department of State bilateral relations factsheet\" target=\"_blank\" rel=\"noopener\">SOV-DATA-008</a>) benda til þess að Bandaríkin hafi ekki mótmælt ESB-aðild Íslands og telji það fullveldisákvörðun. Samningsstyrkur fer eftir málefnasviði — Ísland á varnarsamning við Bandaríkin og er lykilstaðsett á GIUK-línunni, sem veitir tiltekna samningsstöðu hvort sem er. Þetta er pólitísk fullyrðing sem er erfitt að meta eingöngu með fyrirliggjandi heimildum.",
+      "confidence": 0.45,
       "speakers": [
         {
           "name": "Ríkisstjórn Donalds Trump",
@@ -656,11 +661,11 @@
         "confidence": 0.9
       },
       "verdict": "unverifiable",
-      "explanation": "Staðreyndagrunnurinn inniheldur ekki upplýsingar um nýlegt viðskiptasamkomulag Noregs og Trump-stjórnarinnar. <a href=\"https://ec.europa.eu/eurostat/databrowser/view/ext_lt_maineu/\" title=\"Eurostat — International trade main aggregates (ext_lt_maineu)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-017</a> sýnir að viðskipti ESB og Noregs eru umfangsmikil (159,7 milljarðar evra árið 2024) og PREC-HIST-002 nefnir efnahagslega stöðu Noregs utan ESB, en hvorugt vísar í nýleg samskipti við Trump-stjórnina. <a href=\"https://www.regjeringen.no/en/topics/food-fisheries-and-agriculture/fishing-and-aquaculture/1/fiskeri/internasjonalt-fiskerisamarbeid/internasjonalt/fish/id685828/\" title=\"Norwegian Ministry of Trade, Industry and Fisheries — Bilateral fisheries agreements\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-004</a> og <a href=\"https://www.oecd.org/agriculture/topics/agricultural-policy-monitoring-and-evaluation/\" title=\"OECD — Agricultural Policy Monitoring: Norway 2024; Norwegian Ministry of Agriculture and Food\" target=\"_blank\" rel=\"noopener\">AGRI-COMP-001</a> fjalla um norska stefnu í sjávarútvegi og landbúnaði en nefna ekki viðskiptasamninga við Bandaríkin.",
+      "explanation": "Engar heimildir í gagnagrunni fjalla um viðskiptasamkomulag Noregs við Trump eða bandarísk stjórnvöld. <a href=\"https://ec.europa.eu/eurostat/databrowser/view/ext_lt_maineu/\" title=\"Eurostat — International trade main aggregates (ext_lt_maineu)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-017</a> lýsir viðskiptasambandi ESB og Noregs almennt, en nefnir ekkert slíkt samkomulag. Fullyrðingin vísar til sérstaks atburðar sem heimildir staðfesta hvorki né hrekja — ekki er hægt að meta hvort samkomulagið hafi átt sér stað eða hvort það hafi verið \"mjög slæmt.\"",
       "supporting_evidence": [],
       "contradicting_evidence": [],
       "missing_context": "Staðreyndagrunnurinn inniheldur engar heimildir um nýlegt viðskiptasamkomulag Noregs og Bandaríkjanna. Fullyrðingin er mat (\"mjög slæmt\") og krefst bæði staðfestingar á tilvist samkomulagsins og efnislegrar greiningar á skilmálum þess til að meta.",
-      "confidence": 0.2,
+      "confidence": 0.6,
       "speakers": [
         {
           "name": "Donald Trump",
@@ -692,18 +697,23 @@
         "claim_type": "statistic",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "<a href=\"https://www.althingi.is/thingmenn/thingflokkar/vidreisn/\" title=\"Althingi — Session 157; Viðreisn party platform\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-004</a> og <a href=\"https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/\" title=\"Althingi — Ministers registry, session 157\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-003</a> staðfesta að Þorgerður Katrín Gunnarsdóttir er utanríkisráðherra og leiðtogi Viðreisnar. Hins vegar inniheldur staðreyndagrunnurinn engar beinar heimildir um tiltekin ummæli hennar um erlend afskipti af þjóðaratkvæðagreiðslunni. Þetta er fullyrðing sem krefst staðfestingar frá upprunalegu fréttaheimildinni.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> staðfestir orðrétt að utanríkisráðherra varaði við erlendum afskiptum af þjóðaratkvæðagreiðslunni og sagði að slík afskipti yrðu ekki þolinmóðlega þolað, hvort sem þau kæmu frá ESB eða öðrum ríkjum. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> sýnir að þetta var hluti af flutningsræðu hennar þann 9. mars 2026 þegar tillagan var kynnt á Alþingi. Fullyrðingin er þannig staðfest af tveimur heimildum.",
       "supporting_evidence": [
         {
-          "id": "POLITICAL-DATA-004",
-          "source_name": "Althingi — Session 157; Viðreisn party platform",
-          "source_url": "https://www.althingi.is/thingmenn/thingflokkar/vidreisn/"
+          "id": "SOV-PARL-005",
+          "source_name": "Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)",
+          "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
+        },
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
         }
       ],
       "contradicting_evidence": [],
       "missing_context": "Staðreyndagrunnurinn staðfestir að Þorgerður Katrín Gunnarsdóttir er utanríkisráðherra en inniheldur ekki tilvísun í þessi tilteknu ummæli. <a href=\"https://www.althingi.is/thingmenn/althingismannatal/leit-i-althingismannatali/\" title=\"Althingi — Member directory; Government of Iceland cabinet listing\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-012</a> nefnir gagnrýni á tvíþætt hlutverk hennar sem flokksleiðtoga og ráðherra.",
-      "confidence": 0.4,
+      "confidence": 0.92,
       "speakers": [
         {
           "name": "Þorgerður Katrín Gunnarsdóttir",
@@ -773,18 +783,23 @@
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Staðreyndagrunnurinn inniheldur engar beinar heimildir um þessi tilteknu ummæli utanríkisráðherra. <a href=\"https://www.althingi.is/thingmenn/thingflokkar/vidreisn/\" title=\"Althingi — Session 157; Viðreisn party platform\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-004</a> staðfestir stöðu hennar sem utanríkisráðherra en vitnar ekki í þessi orð. Fullyrðingin krefst staðfestingar frá upprunalegu fréttaheimildinni.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> staðfestir að utanríkisráðherra Þorgerður Katrín Gunnarsdóttir hafi varað við erlendum afskiptum af þjóðaratkvæðagreiðslunni og sagt að slíkt yrði ekki liðið, hvort sem það kæmi frá ESB eða öðrum ríkjum. Þetta kemur einnig fram í <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> þar sem ráðherrann setti fullveldisumræðuna í forgrunn.",
       "supporting_evidence": [
         {
-          "id": "POLITICAL-DATA-004",
-          "source_name": "Althingi — Session 157; Viðreisn party platform",
-          "source_url": "https://www.althingi.is/thingmenn/thingflokkar/vidreisn/"
+          "id": "SOV-PARL-005",
+          "source_name": "Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)",
+          "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
+        },
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
         }
       ],
       "contradicting_evidence": [],
       "missing_context": "Þetta eru tilgreind ummæli utanríkisráðherra sem staðreyndagrunnurinn hefur ekki skjalfest. Staðfesting á hvort þetta sé bein tilvitnun eða samantekt á ummælum hennar krefst aðgangs að upprunalegri heimild.",
-      "confidence": 0.35,
+      "confidence": 0.9,
       "speakers": [
         {
           "name": "Þorgerður Katrín Gunnarsdóttir",

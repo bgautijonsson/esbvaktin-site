@@ -9,10 +9,9 @@
   "analysis_date": "2026-03-10",
   "summary": "Greindar 18 fullyrðingar. Niðurstöður: 10 ekki hægt að sannreyna, 5 stutt að hluta, 2 stutt af heimildum, 1 villandi. Sjónarhorn: mjög ESB-neikvæð. Heildstæðni: 35%.",
   "verdict_counts": {
-    "partially_supported": 5,
+    "partially_supported": 7,
     "misleading": 1,
-    "supported": 2,
-    "unverifiable": 10
+    "supported": 10
   },
   "claim_count": 18,
   "dominant_category": "precedents",
@@ -80,21 +79,26 @@
         "confidence": 0.78
       },
       "verdict": "partially_supported",
-      "explanation": "Staðfesturétturinn er grundvallarhugtak ESB-réttar og þær meginreglur sem greinin lýsir eru í meginatriðum réttar — honum er ætlað að tryggja jafna meðferð yfir landamæri. Þó er orðalagið um 'nákvæmlega sömu kjör' nokkuð einfaldað: lög aðildarríkja geta sett hlutlægar takmarkanir sem gilda jafnt um innlenda og erlenda aðila (t.d. rekstrarleyfi, öryggiskröfur) án þess að brjóta gegn staðfesturéttinum. <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/the-surveillance-and-court-agreement/agreement-annexes-and-protocols/Surveillance-and-Court-Agreement-consolidated.pdf\" title=\"Agreement establishing the EFTA Surveillance Authority and the EFTA Court, Article 3\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-005</a> og <a href=\"https://www.eftacourt.int/\" title=\"EEA Agreement, Article 108; EFTA Court — Annual Report 2024; CJEU — Annual Report 2024\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-013</a> benda til þess að EU-dómstóllinn setji mörk með dómaframkvæmd. Rétturinn er raunverulegur en ekki algildur.",
+      "explanation": "Staðfesturéttur ESB (grein 49 TFEU) tryggir fyrirtækjum frá öðrum aðildarríkjum rétt til að stofna og reka fyrirtæki á sömu kjörum og innlend fyrirtæki. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216\" title=\"Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-002</a> staðfestir þessa meginreglu gegnum Jaderow- og Agegate-dómana — þjóðernisbundnar takmarkanir eru bannaðar. Hins vegar er Ísland nú þegar háð sambærilegum reglum gegnum EES-samninginn (<a href=\"https://island.is/en/o/directorate-of-immigration\" title=\"EFTA Surveillance Authority — EEA Agreement provisions; Útlendingastofnun (Directorate of Immigration)\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-001</a>), þannig að ESB-aðild myndi ekki skapa nýjan rétt í þessu tilliti. Fullyrðingin er efnislega rétt en vantar samhengið um EES.",
       "supporting_evidence": [
         {
-          "id": "EEA-LEGAL-005",
-          "source_name": "Agreement establishing the EFTA Surveillance Authority and the EFTA Court, Article 3",
-          "source_url": "https://www.efta.int/sites/default/files/documents/legal-texts/the-surveillance-and-court-agreement/agreement-annexes-and-protocols/Surveillance-and-Court-Agreement-consolidated.pdf"
+          "id": "PREC-LEGAL-002",
+          "source_name": "Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216"
         },
         {
-          "id": "SOV-LEGAL-013",
-          "source_name": "EEA Agreement, Article 108; EFTA Court — Annual Report 2024; CJEU — Annual Report 2024",
-          "source_url": "https://www.eftacourt.int/"
+          "id": "LABOUR-DATA-001",
+          "source_name": "EFTA Surveillance Authority — EEA Agreement provisions; Útlendingastofnun (Directorate of Immigration)",
+          "source_url": "https://island.is/en/o/directorate-of-immigration"
+        },
+        {
+          "id": "HOUSING-ANALYSIS-001",
+          "source_name": "European Labour Authority — Annual Report 2024; EU Directive 2005/36/EC on professional qualifications",
+          "source_url": "https://www.ela.europa.eu/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Staðfesturétturinn leyfir hlutlægar, ekki-mismunandi takmarkanir ef þær eru réttlætanlegar á grundvelli almannahagsmuna. Aðildarríki geta t.d. krafist sérstakra rekstrarleyfa, fjártrygginga og öryggisstaðla — að því gefnu að kröfurnar gildi jafnt fyrir alla. Fullyrðingin gefur í skyn að engar heimilar takmarkanir séu til, en það er ekki rétt.",
+      "missing_context": "Ísland er þegar bundið sambærilegum reglum um staðfesturétt í gegnum EES-samninginn — ESB-aðild myndi ekki skapa nýjan rétt á þessu sviði. Orðið \"nákvæmlega\" er of afgerandi; ríki geta sett hlutlaus skilyrði um \"raunveruleg efnahagsleg tengsl\" (genuine economic link) samkvæmt dómaframkvæmd.",
       "confidence": 0.78,
       "speakers": [
         {
@@ -193,12 +197,18 @@
         "claim_type": "statistic",
         "confidence": 0.35
       },
-      "verdict": "unverifiable",
-      "explanation": "Þetta er þekkt sögulegt atvik sem liggur til grundvallar Factortame-málunum, en staðreyndagrunnu hefur ekki beinar heimildir um þennan sögulega bakgrunn. <a href=\"https://www.gov.uk/government/collections/uk-sea-fisheries-annual-statistics\" title=\"UK Marine Management Organisation — UK Sea Fisheries Statistics; House of Lords European Affairs Committee — Brexit and fisheries (2023)\" target=\"_blank\" rel=\"noopener\">PREC-HIST-014</a> og <a href=\"https://www.gov.uk/government/statistics/uk-sea-fisheries-annual-statistics-report-2023\" title=\"UK Marine Management Organisation — UK Sea Fisheries Statistics 2023; UK Trade Info\" target=\"_blank\" rel=\"noopener\">FISH-COMP-005</a> fjalla um breskann sjávarútveg í tengslum við Brexit, en ekki um atburðarásina á níunda áratugnum. Atvikin sem greinin lýsir eru í samræmi við dómaframkvæmd CJEU og eru vel þekkt í ESB-réttarfræðum, en staðfesting er ekki til staðar í þessum gagnagrunni.",
-      "supporting_evidence": [],
+      "verdict": "supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61989CJ0213\" title=\"Court of Justice of the EU — Cases C-213/89, C-221/89, C-48/93; House of Lords — R v Secretary of State for Transport, ex parte Factortame Ltd\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-001</a> staðfestir fullyrðinguna beint. Á níunda áratugnum keyptu spænskar útgerðir bresk fiskiskip til að nýta kvóta Bretlands samkvæmt sameiginlegu sjávarútvegsstefnunni — svokölluð \"quota hopping\". Um 1988 voru 90–100 skip í spænskri eigu skráð í Bretlandi. Bretska þingið brást við með Merchant Shipping Act 1988, sem Evrópudómstóllinn úrskurðaði síðar andstæðan ESB-rétti í Factortame-málunum.",
+      "supporting_evidence": [
+        {
+          "id": "PREC-LEGAL-001",
+          "source_name": "Court of Justice of the EU — Cases C-213/89, C-221/89, C-48/93; House of Lords — R v Secretary of State for Transport, ex parte Factortame Ltd",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61989CJ0213"
+        }
+      ],
       "contradicting_evidence": [],
       "missing_context": "Bakgrunnur Factortame-málanna — þ.e. spænsk kvótahopp á níunda áratugnum — er vel skjalsettur í lagafræðilegu samhengi og í almennum heimildum, en ekki í þessum staðreyndagrunni. Ástæðan er sú að gagngrunnurinn einblínir á núverandi stöðu, ekki á sögulegar forsendur.",
-      "confidence": 0.35,
+      "confidence": 0.95,
       "speakers": [
         {
           "name": "Eggert Sigurbergsson",
@@ -230,12 +240,23 @@
         "claim_type": "legal_assertion",
         "confidence": 0.3
       },
-      "verdict": "unverifiable",
-      "explanation": "Efni Merchant Shipping Act 1988 og tengsl við Factortame-málin eru vel þekkt í ESB-réttarfræðum. Þó eru engar beinar heimildir í þessum gagnagrunni sem staðfesta þennan sögulega lagagrunn. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A22021A0430%2801%29\" title=\"UK-EU Trade and Cooperation Agreement, Part Two, Heading Five\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-005</a> fjallar um brexit-samninginn, <a href=\"https://www.gov.uk/government/statistics/uk-sea-fisheries-annual-statistics-report-2023\" title=\"UK Marine Management Organisation — UK Sea Fisheries Statistics 2023; UK Trade Info\" target=\"_blank\" rel=\"noopener\">FISH-COMP-005</a> um verslunartölfræði — engin þeirra veitir staðfestingu á innihaldi 1988-laganna.",
-      "supporting_evidence": [],
+      "verdict": "supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61989CJ0213\" title=\"Court of Justice of the EU — Cases C-213/89, C-221/89, C-48/93; House of Lords — R v Secretary of State for Transport, ex parte Factortame Ltd\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-001</a> staðfestir beint að breska þingið setti Merchant Shipping Act 1988 með skilyrðum um að raunverulegir eigendur breskra fiskiskipa væru breskir ríkisborgarar eða fyrirtæki með a.m.k. 75% breskt eignarhald. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216\" title=\"Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-002</a> staðfestir einnig þessi eignar- og ríkisborgararettarskilyrði í tengslum við Jaderow-málið. Fullyðingin er nákvæm í öllum meginatriðum — lögin kröfðust meirihlutaeignar breskra ríkisborgara í skipum skráðum í Bretlandi.",
+      "supporting_evidence": [
+        {
+          "id": "PREC-LEGAL-001",
+          "source_name": "Court of Justice of the EU — Cases C-213/89, C-221/89, C-48/93; House of Lords — R v Secretary of State for Transport, ex parte Factortame Ltd",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61989CJ0213"
+        },
+        {
+          "id": "PREC-LEGAL-002",
+          "source_name": "Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Merchant Shipping Act 1988 er sannanlega til og tengdur Factortame-málunum — þetta er vel skjalfest í lögfræðilegum heimildum utan þessa gagnagrunns. Matið er 'unverifiable' eingöngu af þeirri ástæðu að gagngrunnurinn hefur ekki þessa sögulegu heimild, ekki vegna þess að fullyrðingin sé efasömul.",
-      "confidence": 0.3,
+      "missing_context": "Evrópudómstóllinn dæmdi lögin andstæð staðfesturétti ESB (grein 52 í Rómarsamningnum) og Bretar neyddust til að víkja skilyrðunum til hliðar. Þetta er fordæmismál um takmarkanir á fullveldi aðildarríkja gagnvart ESB-rétti.",
+      "confidence": 0.95,
       "speakers": [
         {
           "name": "Eggert Sigurbergsson",
@@ -267,23 +288,23 @@
         "claim_type": "legal_assertion",
         "confidence": 0.4
       },
-      "verdict": "unverifiable",
-      "explanation": "Factortame-dómasviðið (mál C-213/89 og tengd mál) er grundvallarmál í ESB-rétti um bein áhrif ESB-réttar og forgang hans gagnvart innlendum lögum. <a href=\"https://www.eftacourt.int/\" title=\"EEA Agreement, Article 108; EFTA Court — Annual Report 2024; CJEU — Annual Report 2024\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-013</a> og <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/the-surveillance-and-court-agreement/agreement-annexes-and-protocols/Surveillance-and-Court-Agreement-consolidated.pdf\" title=\"Agreement establishing the EFTA Surveillance Authority and the EFTA Court, Article 3\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-005</a> fjalla um CJEU-lögsögu og staðfesta að ESB-réttur hafi forgang, en þær staðfesta ekki sérstaklega Factortame-málin. Gagngrunnurinn hefur engar heimildir sem vísa beint í dóminn.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61989CJ0213\" title=\"Court of Justice of the EU — Cases C-213/89, C-221/89, C-48/93; House of Lords — R v Secretary of State for Transport, ex parte Factortame Ltd\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-001</a> staðfestir kjarna fullyrðingarinnar. Evrópudómstóllinn úrskurðaði í Factortame-málunum (C-213/89, C-221/89) að ákvæði Merchant Shipping Act 1988 um þjóðernisskilyrði brytu í bága við staðfesturétt samkvæmt ESB-rétti. Dómurinn sló því föstu að innlend lög sem stangast á við ESB-rétt verði að víkja, jafnvel með bráðabirgðaúrræðum. Ríkisábyrgð á skaðabótum var staðfest í C-48/93 og spænskir útgerðarmenn fengu um 55 milljónir punda í bætur.",
       "supporting_evidence": [
         {
-          "id": "SOV-LEGAL-013",
-          "source_name": "EEA Agreement, Article 108; EFTA Court — Annual Report 2024; CJEU — Annual Report 2024",
-          "source_url": "https://www.eftacourt.int/"
+          "id": "PREC-LEGAL-001",
+          "source_name": "Court of Justice of the EU — Cases C-213/89, C-221/89, C-48/93; House of Lords — R v Secretary of State for Transport, ex parte Factortame Ltd",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61989CJ0213"
         },
         {
-          "id": "EEA-LEGAL-005",
-          "source_name": "Agreement establishing the EFTA Surveillance Authority and the EFTA Court, Article 3",
-          "source_url": "https://www.efta.int/sites/default/files/documents/legal-texts/the-surveillance-and-court-agreement/agreement-annexes-and-protocols/Surveillance-and-Court-Agreement-consolidated.pdf"
+          "id": "PREC-LEGAL-002",
+          "source_name": "Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Factortame I og II (1990-1991) eru vel skjalfest í ESB-réttarfræðum og lýsingin á niðurstöðunni er rétt. Dómarnir staðfestu bæði að innlendir dómstólar geti frestað framkvæmd innlendra laga sem eru í andstöðu við ESB-rétt, og að Merchant Shipping Act 1988 braut gegn staðfesturéttinum. Matið endurspeglar takmarkanir gagnagrunnins, ekki vafa um lögfræðilegar staðreyndir.",
-      "confidence": 0.4,
+      "missing_context": "Málið spannaði yfir áratug (1988–2000) og fól í sér fjölda dómsúrlausna á bæði innlendum og evrópskum vettvangi. Mikilvægt er að Ísland myndi ganga í sameiginlegu sjávarútvegsstefnuna af fúsum vilja, ólíkt Bretlandi sem var þegar aðili þegar kvótahlaup (quota hopping) átti sér stað.",
+      "confidence": 0.9,
       "speakers": [
         {
           "name": "Eggert Sigurbergsson",
@@ -315,12 +336,18 @@
         "claim_type": "legal_assertion",
         "confidence": 0.35
       },
-      "verdict": "unverifiable",
-      "explanation": "Skaðabótakrafan á hendur breska ríkinu í kjölfar Factortame-málsins er vel þekkt í ESB-réttarfræðum og tengist meginreglunni um ríkisábyrgð (Francovich). Gagngrunnurinn hefur þó engar heimildir sem staðfesta sérstaklega skaðabæturnar til spænsku útgerðanna. <a href=\"https://www.althingi.is/altext/raeda/156/rad20250918T000000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 156. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">EEA-PARL-001</a> fjallar um EES-skuldbindingar almennt, en ekki um þennan sögulega dóm.",
-      "supporting_evidence": [],
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61989CJ0213\" title=\"Court of Justice of the EU — Cases C-213/89, C-221/89, C-48/93; House of Lords — R v Secretary of State for Transport, ex parte Factortame Ltd\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-001</a> staðfestir að Bretar neyddust til að víkja Merchant Shipping Act 1988 til hliðar í kjölfar úrskurða Evrópudómstólsins í Factortame-málunum (C-213/89, C-221/89). Yfirdómstóll Bretlands dæmdi spænsku útgerðunum um 55 milljónir punda í skaðabætur árið 2000. Fullyðingin er í meginatriðum rétt en einföldun — Bretar afnámdu ekki lögin beint heldur voru þau dæmd andstæð ESB-rétti og skaðabætur dæmdar á grundvelli ríkisábyrðar (C-48/93). Orðalagið er ónákvæmt þar sem réttarferlið spannaði áratug.",
+      "supporting_evidence": [
+        {
+          "id": "PREC-LEGAL-001",
+          "source_name": "Court of Justice of the EU — Cases C-213/89, C-221/89, C-48/93; House of Lords — R v Secretary of State for Transport, ex parte Factortame Ltd",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61989CJ0213"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Að Bretum hafi þurft að afnema lög þar sem þau stönguðust á við ESB-rétt er rétt. Skaðabótakrafan á hendur Bretlandi var hluti af framhaldsmálum (Factortame III, 1996), þar sem ESB-dómstóllinn setti fram meginreglur um ríkisábyrgð. Heildarupphæð skaðabóta til spænsku útgerðanna er þekkt í sagnfræðilegum heimildum en staðfest er ekki hér.",
-      "confidence": 0.35,
+      "missing_context": "Factortame-málaröðin tók yfir áratug (1988–2000) og fólst í mörgum aðskildum dómsmálum. Skaðabótaupphæðin (um 55 milljónir punda) var áætluð og úr samningum. Mikilvægt er að Ísland myndi ganga í sameiginlegu sjávarútvegsstefnuna af fúsum vilja, ólíkt Bretum sem voru þegar aðildarríki þegar kvótaflakkið hófst.",
+      "confidence": 0.8,
       "speakers": [
         {
           "name": "Eggert Sigurbergsson",
@@ -362,12 +389,23 @@
         "claim_type": "legal_assertion",
         "confidence": 0.35
       },
-      "verdict": "unverifiable",
-      "explanation": "Þessi þróun í breskri löggjöf eftir Factortame — tilraunin til að skipta um 'þjóðernis'-skilyrði yfir í 'efnahagsleg tengsl'-skilyrði — er þekkt í ESB-réttarfræðilegu samhengi og tengist Jaderow- og Agegate-málunum. Gagngrunnurinn hefur hins vegar engar heimildir sem staðfesta þennan löggjafaferli í Bretlandi sérstaklega. Aðgengilegar heimildir fjalla um Brexit-afleiðingar en ekki þetta sögulega atvik.",
-      "supporting_evidence": [],
+      "verdict": "supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216\" title=\"Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-002</a> staðfestir beint að Bretar reyndu að setja skilyrði um raunveruleg efnahagsleg tengsl, m.a. kröfur um löndun afla í Bretlandi og rekstur frá breskum höfnum. Þetta átti sér stað eftir og samhliða Factortame-málunum, þar sem Evrópudómstóllinn í Agegate-málinu (C-3/87) viðurkenndi að kröfur um efnahagsleg tengsl gætu verið heimilar, svo framarlega sem þær væru hlutlausar og meðalhófs gætt. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61989CJ0213\" title=\"Court of Justice of the EU — Cases C-213/89, C-221/89, C-48/93; House of Lords — R v Secretary of State for Transport, ex parte Factortame Ltd\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-001</a> staðfestir víðara samhengi Factortame-dómsmálanna.",
+      "supporting_evidence": [
+        {
+          "id": "PREC-LEGAL-002",
+          "source_name": "Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216"
+        },
+        {
+          "id": "PREC-LEGAL-001",
+          "source_name": "Court of Justice of the EU — Cases C-213/89, C-221/89, C-48/93; House of Lords — R v Secretary of State for Transport, ex parte Factortame Ltd",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61989CJ0213"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Þessi þróun er vel skjalfest í ESB-réttarfræðum og hún endaði með frekari dómum (Jaderow, Agegate) þar sem CJEU settu mörk á hvað 'efnahagsleg tengsl' mega og mega ekki fela í sér. Matið er 'unverifiable' vegna skorts á heimildum í gagnagrunni, ekki vegna efasemda um sögulegar staðreyndir.",
-      "confidence": 0.35,
+      "missing_context": "Hugtakið raunveruleg efnahagsleg tengsl hefur þróast í síðari löggjöf og dómaframkvæmd. Núgildandi reglugerð um sameiginlegu sjávarútvegsstefnuna (ESB 1380/2013) tekur á þessu m.a. með löndunarskilyrðum. Mikilvægt er að þjóðernisgrundaðar takmarkanir voru bannaðar en kröfur um efnahagsleg tengsl heimilar að ákveðnum skilyrðum uppfylltum.",
+      "confidence": 0.9,
       "speakers": [
         {
           "name": "Eggert Sigurbergsson",
@@ -399,23 +437,18 @@
         "claim_type": "legal_assertion",
         "confidence": 0.4
       },
-      "verdict": "unverifiable",
-      "explanation": "Jaderow (C-216/87) er raunverulegt mál CJEU og málanúmerið er rétt — þetta er viðurkennd sögulegt-lögfræðileg staðreynd. <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/the-surveillance-and-court-agreement/agreement-annexes-and-protocols/Surveillance-and-Court-Agreement-consolidated.pdf\" title=\"Agreement establishing the EFTA Surveillance Authority and the EFTA Court, Article 3\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-005</a> og <a href=\"https://www.eftacourt.int/\" title=\"EEA Agreement, Article 108; EFTA Court — Annual Report 2024; CJEU — Annual Report 2024\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-013</a> staðfesta lögsögu CJEU og þær meginreglur sem undir liggja, en gagngrunnurinn hefur engar beinar heimildir sem vísa í þennan dóm sérstaklega. Dómurinn er til og málanúmerið er rétt samkvæmt þekkingum utan gagnagrunns.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216\" title=\"Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-002</a> staðfestir beint að í Jaderow-málinu (C-216/87) úrskurðaði ESB-dómstóllinn um mörk leyfilegra skilyrða sem aðildarríki gátu sett um skráningu fiskiskipa, þar á meðal um efnahagsleg tengsl útgerðar við aðildarríki. Dómstóllinn komst að þeirri niðurstöðu að skilyrði um ríkisfang eigenda væru ólögleg en \"raunveruleg efnahagsleg tengsl\" (genuine economic link) gætu verið lögmæt, enda væru þau samhæf og án mismununar.",
       "supporting_evidence": [
         {
-          "id": "EEA-LEGAL-005",
-          "source_name": "Agreement establishing the EFTA Surveillance Authority and the EFTA Court, Article 3",
-          "source_url": "https://www.efta.int/sites/default/files/documents/legal-texts/the-surveillance-and-court-agreement/agreement-annexes-and-protocols/Surveillance-and-Court-Agreement-consolidated.pdf"
-        },
-        {
-          "id": "SOV-LEGAL-013",
-          "source_name": "EEA Agreement, Article 108; EFTA Court — Annual Report 2024; CJEU — Annual Report 2024",
-          "source_url": "https://www.eftacourt.int/"
+          "id": "PREC-LEGAL-002",
+          "source_name": "Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Jaderow-málið (1988) og Agegate-málið (1989) eru grundvallarmál í ESB-sjávarútvegsrétti. Þau settu mörk á hvaða skilyrði aðildarríki geta sett um efnahagsleg tengsl — og útilokuðu skilyrði sem leiða til þjóðernis-misunar eða hindra fjármagnsflæði. Matið endurspeglar takmarkanir gagnagrunnins.",
-      "confidence": 0.4,
+      "missing_context": "Hugmyndin um \"raunveruleg efnahagsleg tengsl\" hefur þróast í síðari löggjöf og dómaframkvæmd. Núgildandi sameiginleg sjávarútvegsstefna (ESB 1380/2013) tekur að hluta til þessa álitaefna. Mikilvægi dómsins fyrir Ísland ræðst af því hvort kvótaspegilskapur (quota hopping) væri raunhæf áhætta fyrir íslenskan sjávarútveg innan ESB.",
+      "confidence": 0.92,
       "speakers": [
         {
           "name": "Eggert Sigurbergsson",
@@ -447,18 +480,18 @@
         "claim_type": "legal_assertion",
         "confidence": 0.4
       },
-      "verdict": "unverifiable",
-      "explanation": "Agegate (C-3/87) er raunverulegt mál og málsnúmerið er rétt. Eins og með Jaderow-málið er þetta vel þekkt sögulegt mál í ESB-sjávarútvegsrétti. Hins vegar hefur gagngrunnurinn engar beinar tilvísanir í dóminn. <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/the-surveillance-and-court-agreement/agreement-annexes-and-protocols/Surveillance-and-Court-Agreement-consolidated.pdf\" title=\"Agreement establishing the EFTA Surveillance Authority and the EFTA Court, Article 3\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-005</a> staðfestir almennar meginreglur um CJEU-lögsögu en staðfestir ekki sérstaklega þetta mál.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216\" title=\"Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-002</a> staðfestir beint efni fullyrðingarinnar. Í Agegate-málinu (C-3/87, úrskurður 14. desember 1989) tók Evrópudómstóllinn afstöðu til þess hvaða skilyrði um efnahagsleg tengsl útgerða við aðildarríki væru leyfileg samkvæmt ESB-rétti. Dómstóllinn viðurkenndi að kröfur um löndun afla og rekstur frá höfnum ríkisins gætu verið heimilar, en bannaði skilyrði sem fólu í sér mismunun á grundvelli þjóðernis. Málsnúmerið og efni fullyðingarinnar eru nákvæm.",
       "supporting_evidence": [
         {
-          "id": "EEA-LEGAL-005",
-          "source_name": "Agreement establishing the EFTA Surveillance Authority and the EFTA Court, Article 3",
-          "source_url": "https://www.efta.int/sites/default/files/documents/legal-texts/the-surveillance-and-court-agreement/agreement-annexes-and-protocols/Surveillance-and-Court-Agreement-consolidated.pdf"
+          "id": "PREC-LEGAL-002",
+          "source_name": "Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Agegate og Jaderow voru kveðnir upp sama dag (14. desember 1989) og fjalla um sömu vandamálið frá tveimur hliðum: hvaða skilyrði getur aðildarríki sett um efnahagsleg tengsl útgerðar án þess að mismuna á grundvelli þjóðernis. Saman mynda þeir grunn dómaframkvæmdar á þessu sviði.",
-      "confidence": 0.4,
+      "missing_context": "Jaderow-málið (C-216/87) var hliðstætt mál dæmt sama dag og fjallaði sérstaklega um eignarréttarskilyrði skipaskráningar. Saman mynda málin tvö rammann fyrir hugtak raunverulegra efnahagslegra tengsla, sem hefur þróast verulega í síðari dómaframkvæmd og löggjaf ESB um sameiginlegu sjávarútvegsstefnuna.",
+      "confidence": 0.93,
       "speakers": [
         {
           "name": "Eggert Sigurbergsson",
@@ -490,23 +523,18 @@
         "claim_type": "legal_assertion",
         "confidence": 0.55
       },
-      "verdict": "unverifiable",
-      "explanation": "Lýsingin á niðurstöðu Jaderow- og Agegate-málanna er í samræmi við þekkta ESB-réttarfræðilega framsetningu á þessum dómum. Þær meginreglur sem greinin lýsir — bann við þjóðernis-mismunun, bann við hindrun á fjármagnsflæði — eru viðurkenndar niðurstöður þessara dóma. Gagngrunnurinn staðfestir þó ekki dómana beint; <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/the-surveillance-and-court-agreement/agreement-annexes-and-protocols/Surveillance-and-Court-Agreement-consolidated.pdf\" title=\"Agreement establishing the EFTA Surveillance Authority and the EFTA Court, Article 3\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-005</a> og <a href=\"https://www.eftacourt.int/\" title=\"EEA Agreement, Article 108; EFTA Court — Annual Report 2024; CJEU — Annual Report 2024\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-013</a> veita óbeina stuðning um CJEU-lögsögu og meginreglur.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216\" title=\"Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-002</a> staðfestir nákvæmlega efni fullyrðingarinnar. Evrópudómstóllinn úrskurðaði í Jaderow-málinu (C-216/87) að aðildarríki mættu ekki krefjast þess að raunverulegir eigendur skipa væru af tiltekinni þjóðerni, og í Agegate-málinu (C-3/87) að kröfur um þjóðerni áhafnar brytu gegn ESB-rétti. Dómstóllinn viðurkenndi hins vegar að skilyrði um efnahagsleg tengsl væru leyfileg, svo framarlega sem þau fælu ekki í sér mismunun á grundvelli þjóðernis. Fullyðingin er rétt og vel orðuð.",
       "supporting_evidence": [
         {
-          "id": "EEA-LEGAL-005",
-          "source_name": "Agreement establishing the EFTA Surveillance Authority and the EFTA Court, Article 3",
-          "source_url": "https://www.efta.int/sites/default/files/documents/legal-texts/the-surveillance-and-court-agreement/agreement-annexes-and-protocols/Surveillance-and-Court-Agreement-consolidated.pdf"
-        },
-        {
-          "id": "SOV-LEGAL-013",
-          "source_name": "EEA Agreement, Article 108; EFTA Court — Annual Report 2024; CJEU — Annual Report 2024",
-          "source_url": "https://www.eftacourt.int/"
+          "id": "PREC-LEGAL-002",
+          "source_name": "Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Eitt mikilvægt blæbrigði: dómarnir leyfðu ríkjum að setja vissar kröfur um tengsl við strandríkið (t.d. að skip landi afla í innlendri höfn við og við) — svo lengi sem þær kröfur mismuna ekki á grundvelli þjóðernis. Fullyrðingin er rétt en sýnir aðeins annan helming myndarinnar.",
-      "confidence": 0.55,
+      "missing_context": "Hugtakið raunveruleg efnahagsleg tengsl hefur þróast í síðari löggjöf, einkum reglugerð ESB 1380/2013 um sameiginlegu sjávarútvegsstefnuna. Viðeigandi þýðing fyrir Ísland veltur á hvort kvótaflakk væri raunhæf hætta miðað við landfræðilega einangrun landsins og uppbyggingu íslenska kvótakerfisins.",
+      "confidence": 0.93,
       "speakers": [
         {
           "name": "Eggert Sigurbergsson",
@@ -538,12 +566,18 @@
         "claim_type": "legal_assertion",
         "confidence": 0.45
       },
-      "verdict": "unverifiable",
-      "explanation": "Þetta er þekkt niðurstaða sem tengist Jaderow- og Agegate-málunum og þeirri meginreglu að þjóðernis-mismunun sé bönnuð. Gagngrunnurinn hefur hins vegar engar beinar heimildir um þennan sérsstaka þátt dómanna. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1\" title=\"Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-006</a> fjallar um undanþágur aðildarríkja en ekki um skipáhafnar-niðurstöðuna.",
-      "supporting_evidence": [],
+      "verdict": "supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216\" title=\"Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-002</a> staðfestir beint að Evrópudómstóllinn úrskurðaði í Agegate-málinu (C-3/87) að kröfur Breta um að a.m.k. 75% áhafnar væru breskir ríkisborgarar eða búsettir í Bretlandi brytu gegn staðfesturétti (grein 52 í Rómarsamningnum). Dómstóllinn sló þannig föstu að aðildarríki mættu ekki gera kröfur um þjóðerni áhafnar — nóg væri að áhafnarmeðlimir kæmu úr hvaða ESB-ríki sem er. Fullyðingin er nákvæm.",
+      "supporting_evidence": [
+        {
+          "id": "PREC-LEGAL-002",
+          "source_name": "Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Þetta er í samræmi við þá meginreglu sem CJEU hefur þróað — bann við þjóðernisgreindum kröfum um áhöfn skip er hluti af frjálsum fólksflutningum og banni við mismunun á grundvelli þjóðernis. Þó eru undantekningar til t.d. vegna ríkjafars skips í öryggis- og tollalegum tengslum.",
-      "confidence": 0.45,
+      "missing_context": "Dómstóllinn viðurkenndi þó að aðildarríki mættu krefjast raunverulegra efnahagslegra tengsla milli skips og ríkis, t.d. að hluti afla væri landaður í viðkomandi ríki. Bann við þjóðernismismunun útilokaði ekki öll skilyrði — aðeins þau sem byggðust á þjóðerni.",
+      "confidence": 0.92,
       "speakers": [
         {
           "name": "Eggert Sigurbergsson",
@@ -576,26 +610,16 @@
         "confidence": 0.65
       },
       "verdict": "partially_supported",
-      "explanation": "Þetta er rétt útdráttur úr meginreglum Jaderow- og Agegate-dómaframkvæmdarinnar í almennum dráttum. <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Articles 99–101\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-002</a> og <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/the-surveillance-and-court-agreement/agreement-annexes-and-protocols/Surveillance-and-Court-Agreement-consolidated.pdf\" title=\"Agreement establishing the EFTA Surveillance Authority and the EFTA Court, Article 3\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-005</a> staðfesta að ESB-réttur setur mörk á hvað ríki geta krafist af aðilum sem njóta staðfestturéttar og frjálss fjármagnsflæðis. Fullyrðingin er þó ívið einlæg — dómaframkvæmdin er blæbrigðarík og leyfir vissar kröfur um tengsl við landið.",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216\" title=\"Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-002</a> staðfestir kjarnaatriði fullyrðingarinnar. Í Jaderow- og Agegate-dómunum komst ESB-dómstóllinn að þeirri niðurstöðu að aðildarríki megi krefjast raunverulegra efnahagslegra tengsla, svo sem löndunarkröfu, en megi ekki mismuna á grundvelli þjóðernis. Þó tekur fullyrðingin of vítt — dómarnir fjalla um skráningarskilyrði skipa og áhafnakröfur, ekki beint um eignarhald eða arðsúthlutun. Orðalagið um að ríki geti ekki \"stjórnað því hver á [útgerðina]\" fer lengra en dómurinn segir beinlínis.",
       "supporting_evidence": [
         {
-          "id": "EEA-LEGAL-002",
-          "source_name": "EEA Agreement, Articles 99–101",
-          "source_url": "https://www.efta.int/eea/eea-agreement"
-        },
-        {
-          "id": "EEA-LEGAL-005",
-          "source_name": "Agreement establishing the EFTA Surveillance Authority and the EFTA Court, Article 3",
-          "source_url": "https://www.efta.int/sites/default/files/documents/legal-texts/the-surveillance-and-court-agreement/agreement-annexes-and-protocols/Surveillance-and-Court-Agreement-consolidated.pdf"
-        },
-        {
-          "id": "SOV-LEGAL-013",
-          "source_name": "EEA Agreement, Article 108; EFTA Court — Annual Report 2024; CJEU — Annual Report 2024",
-          "source_url": "https://www.eftacourt.int/"
+          "id": "PREC-LEGAL-002",
+          "source_name": "Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Kröfur um löndun í innlendri höfn geta verið lögmætar samkvæmt CJEU-dómaframkvæmd ef þær eru hlutlægar og ekki mismunandi. Hins vegar verður að meta hverja kröfu sérstaklega. Víðtækar kröfur um 'efnahagsleg tengsl' — eins og að þvinga útgerð til að vera skráð á innlendan markað eða hafa aðsetur á Íslandi — hafa mætt andstöðu í dómaframkvæmd.",
+      "missing_context": "Hugtakið \"raunveruleg efnahagsleg tengsl\" hefur þróast síðan í gegnum síðari löggjöf og dómaframkvæmd. Reglugerð ESB 1380/2013 um sameiginlega sjávarútvegsstefnu tekur nú að hluta á þessu. Aðrar heimildir (<a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Articles 99–101\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-002</a>, <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/the-surveillance-and-court-agreement/agreement-annexes-and-protocols/Surveillance-and-Court-Agreement-consolidated.pdf\" title=\"Agreement establishing the EFTA Surveillance Authority and the EFTA Court, Article 3\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-005</a>, <a href=\"https://www.eftacourt.int/\" title=\"EEA Agreement, Article 108; EFTA Court — Annual Report 2024; CJEU — Annual Report 2024\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-013</a>) fjalla um EES-tengd dómstólsmál en ekki beint um sjávarútvegsdóma ESB-dómstólsins.",
       "confidence": 0.65,
       "speakers": [
         {
@@ -676,12 +700,23 @@
         "claim_type": "statistic",
         "confidence": 0.2
       },
-      "verdict": "unverifiable",
-      "explanation": "Gagngrunnurinn hefur engar heimildir sem staðfesta eða hafna þessari fullyrðingu um eignarhlutdeild í evrópskum sjávarútvegi. <a href=\"https://stecf.jrc.ec.europa.eu/reports/economic\" title=\"European Commission — The EU Fishing Fleet reports (STECF Annual Economic Reports)\" target=\"_blank\" rel=\"noopener\">FISH-COMP-002</a> gefur tölur um fækkun skipa og starfsmanna en fjallar ekki um eignatöku eða þéttingu. <a href=\"https://www.fiskistofa.is/veidar/aflaheimildir/uthlutadaflamark/\" title=\"Fiskistofa — Quota holdings reports\" target=\"_blank\" rel=\"noopener\">FISH-DATA-005</a> fjallar um þéttingu eignarhalds í íslenska ITQ-kerfinu en ekki um Evrópu almennt.",
-      "supporting_evidence": [],
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://stecf.jrc.ec.europa.eu/reports/economic\" title=\"European Commission — Scientific, Technical and Economic Committee for Fisheries (STECF); FAO — The State of World Fisheries and Aquaculture\" target=\"_blank\" rel=\"noopener\">FISH-DATA-025</a> staðfestir verulega samþjöppun eignarhalds í sjávarútvegi innan ESB — í Hollandi ráða fáar fjölskyldureknar útgerðir yfir meirihluta uppsjávarkvóta og í Spáni eru stór fyrirtæki eins og Pescanova ráðandi. Þetta styður kjarna fullyrðingarinnar. Orðalagið \"fáeinar stórauðugar fjölskyldur og alþjóðlegar samsteypur eiga megnið\" er þó of víðtækt — samþjöppunin er mismunandi eftir aðildarríkjum og flotahlutum. <a href=\"https://stecf.jrc.ec.europa.eu/reports/economic\" title=\"European Commission — Scientific, Technical and Economic Committee for Fisheries (STECF); FAO — The State of World Fisheries and Aquaculture\" target=\"_blank\" rel=\"noopener\">FISH-DATA-025</a> tekur sérstaklega fram að smásjávarútvegur sé enn mikilvægur í mörgum strandbyggðum. <a href=\"https://stecf.jrc.ec.europa.eu/reports/economic\" title=\"European Commission — The EU Fishing Fleet reports (STECF Annual Economic Reports)\" target=\"_blank\" rel=\"noopener\">FISH-COMP-002</a> sýnir að ESB-flotinn hefur minnkað um 25% á tveimur áratugum.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-DATA-025",
+          "source_name": "European Commission — Scientific, Technical and Economic Committee for Fisheries (STECF); FAO — The State of World Fisheries and Aquaculture",
+          "source_url": "https://stecf.jrc.ec.europa.eu/reports/economic"
+        },
+        {
+          "id": "FISH-DATA-024",
+          "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
+          "source_url": "https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Eignarhaldsþétting í evrópskum sjávarútvegi er umdeilt og rannsóknarskylt efni. Sumar rannsóknir (t.d. frá Our Fish og Europêche) benda til þéttingar í ákveðnum ESB-ríkjum, en 'megnið af sjávarútveginum í Evrópu' er of víðtæk fullyrðing til að hægt sé að staðfesta hana með þeim heimildum sem hér eru.",
-      "confidence": 0.2,
+      "missing_context": "Samþjöppunin er alþjóðlegt fyrirbæri í atvinnusjávarútvegi, ekki séríslenskt eða sér-ESB-vandamál. Smásjávarútvegur er enn mikilvægur í mörgum ESB-strandbyggðum þrátt fyrir samþjöppun á kvótaeign. Samanburður við íslenskar aðstæður (þar sem þrír stærstu kvótaeignendur ráða yfir 45–50% af heildarkvóta) er flókinn vegna ólíkra reglna.",
+      "confidence": 0.65,
       "speakers": [
         {
           "name": "Eggert Sigurbergsson",
@@ -704,7 +739,7 @@
         "confidence": 0.72
       },
       "verdict": "partially_supported",
-      "explanation": "Meginreglan um forgang ESB-réttar er vel þekkt og <a href=\"https://www.eftacourt.int/\" title=\"EEA Agreement, Article 108; EFTA Court — Annual Report 2024; CJEU — Annual Report 2024\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-013</a> staðfestir að CJEU-dómar hafi bein áhrif og forgang. Hins vegar er fullyrðingin of almenn — sjávarútvegsstefna ESB (CFP) hefur sinn eigin ramma og kvótaúthlutanir aðildarríkja eru í raun stjórnaðar undir CFP-reglum þar sem hlutfall hvers ríkis er um hönd með 'relative stability'-reglunni. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> staðfestir að CFP setur takmarkanir en aðildarríki hafa talsverðan svigrúm í innri úthlutun.",
+      "explanation": "Rétt er að ESB-réttur gengur framar innlendum lögum aðildarríkja á grundvelli beins réttaráhrifa og forgangs ESB-réttar — <a href=\"https://www.eftacourt.int/\" title=\"EEA Agreement, Article 108; EFTA Court — Annual Report 2024; CJEU — Annual Report 2024\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-013</a> staðfestir þetta og bendir á lykilmuninn á EFTA-dómstólnum (ráðgefandi álit) og dómstóli ESB (bindandi úrskurðir). Hins vegar er sértæka fullyrðingin um kvótaúthlutanir óstöðug: sameiginleg sjávarútvegsstefna ESB ræður úthlutun kvóta milli ríkja, en <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> staðfestir að umsóknarríki verða að samþykkja regluverkið. Staðfesturréttur (e. right of establishment) er hluti af innri markaðsreglum. Engar heimildir fjalla sérstaklega um hvernig ESB-réttur myndi hafa áhrif á kvótaúthlutanir.",
       "supporting_evidence": [
         {
           "id": "SOV-LEGAL-013",
@@ -712,19 +747,19 @@
           "source_url": "https://www.eftacourt.int/"
         },
         {
-          "id": "EEA-LEGAL-005",
-          "source_name": "Agreement establishing the EFTA Surveillance Authority and the EFTA Court, Article 3",
-          "source_url": "https://www.efta.int/sites/default/files/documents/legal-texts/the-surveillance-and-court-agreement/agreement-annexes-and-protocols/Surveillance-and-Court-Agreement-consolidated.pdf"
+          "id": "EEA-LEGAL-017",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards joining' factsheet",
+          "source_url": "https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf"
         },
         {
-          "id": "FISH-LEGAL-001",
-          "source_name": "EU Regulation 1380/2013 of the European Parliament and of the Council",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380"
+          "id": "EEA-LEGAL-002",
+          "source_name": "EEA Agreement, Articles 99–101",
+          "source_url": "https://www.efta.int/eea/eea-agreement"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Þó ESB-réttur gangi framar innlendum lögum er sjávarútvegurinn þveróðinn málaefni: CFP-kerfið leyfir aðildarríkjum að stjórna innri úthlutun kvóta með nokkrum sveigjanleika. Dómaframkvæmd (Factortame og tengd mál) sýnir þó að þegar innlend lög mismuna á grundvelli þjóðernis eða hindra fjármagnsflæði stendur ESB-rétturinn alltaf hærra.",
-      "confidence": 0.72,
+      "missing_context": "Fullyrðingin blandar saman tveimur aðskildum hugtökum: (1) forgangur ESB-réttar yfir innlendum lögum og (2) áhrif á kvótaúthlutanir. Heimildir staðfesta (1) en fjalla ekki beint um (2). Sameiginleg sjávarútvegsstefna ræður skiptingu kvóta milli ríkja en innlend úthlutun er flóknara mál. Ísland er utan ESB og myndi þurfa að semja um sjávarútveg í aðildarviðræðum.",
+      "confidence": 0.6,
       "speakers": [
         {
           "name": "Eggert Sigurbergsson",
@@ -747,12 +782,12 @@
         "confidence": 0.7
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://island.is/en/permits-to-fish/quota-system\" title=\"Ministry of Food, Agriculture and Fisheries — Fisheries Management in Iceland; Marine and Freshwater Research Institute\" target=\"_blank\" rel=\"noopener\">FISH-DATA-022</a> og POL-DATA-005 staðfesta að íslenskur sjávarútvegur er utan EES-ramma og að núverandi eignatakmarkanir hvíla á undanþágu frá EES. Við ESB-aðild yrðu fjórfrelsisreglurnar beinn hluti af lögum og eignatakmarkanir á erlendum aðilum yrðu prófaðar gegn þeim. Þó bendir <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> til þess að aðlögunartímabil og mögulegar undanþágur gætu verið hluti af aðildarsamningi — og POL-DATA-005 bendir til þess að sérstök sjávarútvegsmál hafi verið á dagskrá við fyrri aðildarviðræður.",
+      "explanation": "Fullyrðingin er rétt í aðalatriðum. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216\" title=\"Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-002</a> staðfestir að ESB-aðild myndi tryggja staðfesturétt og banna þjóðernistakmarkanir á eignarhaldi í sjávarútvegi — Jaderow- og Agegate-dómarnir staðfesta þetta. <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf\" title=\"EEA Agreement — Protocol 3 on trade in processed agricultural products\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-002</a> sýnir að EES-samningurinn nær nú þegar til mikils hluta innri markaðarins, en sjávarútvegur er undanskilinn. Þó ber að nefna að hugtakið \"raunverulegt efnahagslegt tengsl\" gefur aðildarríkjum ákveðin úrræði til að krefjast þess að afli sé landaður á eigin hafnarbakka.",
       "supporting_evidence": [
         {
-          "id": "FISH-DATA-022",
-          "source_name": "Ministry of Food, Agriculture and Fisheries — Fisheries Management in Iceland; Marine and Freshwater Research Institute",
-          "source_url": "https://island.is/en/permits-to-fish/quota-system"
+          "id": "PREC-LEGAL-002",
+          "source_name": "Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216"
         },
         {
           "id": "POL-DATA-005",
@@ -760,20 +795,14 @@
           "source_url": null
         },
         {
-          "id": "EEA-LEGAL-022",
-          "source_name": "EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'",
-          "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
+          "id": "TRADE-DATA-002",
+          "source_name": "EEA Agreement — Protocol 3 on trade in processed agricultural products",
+          "source_url": "https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf"
         }
       ],
-      "contradicting_evidence": [
-        {
-          "id": "EEA-LEGAL-012",
-          "source_name": "European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)",
-          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
-        }
-      ],
-      "missing_context": "Ekki er sjálfgefið að sjávarútvegurinn opnist án takmarkana við ESB-aðild: aðildarríki geta sett hlutlægar, ekki-mismunandi kröfur um tengsl við strandríkið. Við aðildarviðræður yrðu líklegar sérreglur um sjávarútveg á dagskrá, eins og sást við viðræður 2010-2013. Fullyrðingin gefur í skyn að opnunin yrði full og tafarlaus, en í raun væri hún háð niðurstöðu viðræðna.",
-      "confidence": 0.7,
+      "contradicting_evidence": [],
+      "missing_context": "Staðfesturéttur og frjálst flæði fjármagns myndu ekki endilega leiða til erlends yfirráðs yfir kvóta — landfræðileg einangrun Íslands og uppbygging aflamarkskerfisins draga úr hættunni. Aðildarviðræður 2010–2013 fjölluðu einmitt um þessa þætti áður en þeim var frestað.",
+      "confidence": 0.75,
       "speakers": [
         {
           "name": "Eggert Sigurbergsson",

@@ -9,9 +9,9 @@
   "analysis_date": "2026-03-10",
   "summary": "Greindar 26 fullyrðingar. Niðurstöður: 10 stutt að hluta, 10 ekki hægt að sannreyna, 6 stutt af heimildum. Sjónarhorn: hlutlaus en ófullnægjandi. Heildstæðni: 55%.",
   "verdict_counts": {
-    "partially_supported": 10,
-    "supported": 6,
-    "unverifiable": 10
+    "supported": 8,
+    "partially_supported": 11,
+    "unverifiable": 7
   },
   "claim_count": 26,
   "dominant_category": "fisheries",
@@ -28,28 +28,28 @@
         "claim_type": "opinion",
         "confidence": 0.7
       },
-      "verdict": "partially_supported",
-      "explanation": "Heimildir staðfesta að kvótaeignarhald hefur þéttast verulega: þrír stærstu kvótahafar ráða yfir 45–50% af heildarkvóta og tíu stærstu um 70% (<a href=\"https://www.fiskistofa.is/veidar/aflaheimildir/uthlutadaflamark/\" title=\"Fiskistofa — Quota holdings reports\" target=\"_blank\" rel=\"noopener\">FISH-DATA-005</a>). Kvótavirði er metið um 1.500 milljarðar króna eða um 30% af VLF (<a href=\"https://island.is/en/permits-to-fish/quota-system\" title=\"Ministry of Food, Agriculture and Fisheries — Fisheries Management in Iceland; Marine and Freshwater Research Institute\" target=\"_blank\" rel=\"noopener\">FISH-DATA-022</a>). Hins vegar er fullyrðingin um fjárhagslegt vald \"langt utan sjávarútvegs\" matskennt og ekki sannreynanlegt með beinum gögnum í staðreyndagrunni.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://island.is/en/permits-to-fish/quota-system\" title=\"Ministry of Food, Agriculture and Fisheries — Fisheries Management in Iceland; Marine and Freshwater Research Institute\" target=\"_blank\" rel=\"noopener\">FISH-DATA-022</a> staðfestir að kvótakerfið hefur leitt til samþjöppunar og að heildarverðmæti kvóta nemur um 1.500 milljörðum króna, sem jafngildir u.þ.b. 30% af landsframleiðslu. <a href=\"https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> lýsir ítarlega hvernig fáein stórfyrirtæki — Brim, Samherji, Skinney-Þinganes, Síldarvinnslan — ráða meginhluta kvótaeignar og hafa fjárfest út fyrir sjávarútveg í fasteignir, ferðaþjónustu og fjármál. Kvótinn hefur þróast úr aflaheimildum í fjárhagslega eign sem skilar arði langt umfram upphaflegan tilgang kerfisins. Nýju heimildarnar styrkja eldra mat og fullyrðingin er efnislega rétt.",
       "supporting_evidence": [
-        {
-          "id": "FISH-DATA-005",
-          "source_name": "Fiskistofa — Quota holdings reports",
-          "source_url": "https://www.fiskistofa.is/veidar/aflaheimildir/uthlutadaflamark/"
-        },
         {
           "id": "FISH-DATA-022",
           "source_name": "Ministry of Food, Agriculture and Fisheries — Fisheries Management in Iceland; Marine and Freshwater Research Institute",
           "source_url": "https://island.is/en/permits-to-fish/quota-system"
         },
         {
-          "id": "FISH-LEGAL-003",
-          "source_name": "Icelandic Fisheries Management Act No. 116/2006",
-          "source_url": "https://www.fao.org/faolex/results/details/en/c/LEX-FAOC003455/"
+          "id": "FISH-DATA-024",
+          "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
+          "source_url": "https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda"
+        },
+        {
+          "id": "POL-DATA-005",
+          "source_name": "LÍÚ and SFS public statements; Hagstofa Íslands national accounts",
+          "source_url": null
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Fullyrðingin er matskennd um umfang fjárhagslegs valds utan greinarinnar — staðreyndagrunnt getur staðfest einbeitingu kvótaeignarhalds en ekki mat á pólitísku eða fjárhagslegu valdi eigenda á öðrum sviðum.",
-      "confidence": 0.7,
+      "missing_context": "Kvótakerfið hefur einnig skilað góðum árangri í sjálfbærri nýtingu fiskistofna og auknu hagkvæmni (<a href=\"https://island.is/en/permits-to-fish/quota-system\" title=\"Ministry of Food, Agriculture and Fisheries — Fisheries Management in Iceland; Marine and Freshwater Research Institute\" target=\"_blank\" rel=\"noopener\">FISH-DATA-022</a>). Samþjöppun eignarhalds er alþjóðlegt fyrirbæri í sjávarútvegi, ekki sértækt íslenskt vandamál (<a href=\"https://stecf.jrc.ec.europa.eu/reports/economic\" title=\"European Commission — Scientific, Technical and Economic Committee for Fisheries (STECF); FAO — The State of World Fisheries and Aquaculture\" target=\"_blank\" rel=\"noopener\">FISH-DATA-025</a>). Hlutfall sjávarútvegs af vergri landsframleiðslu hefur farið minnkandi og er nú um 8% beint (<a href=\"https://www.statice.is/statistics/economy/national-accounts/\" title=\"Statistics Iceland — National accounts by activity\" target=\"_blank\" rel=\"noopener\">FISH-DATA-003</a>).",
+      "confidence": 0.82,
       "speakers": [
         {
           "name": "Vilhelm Jónsson",
@@ -115,12 +115,18 @@
         "claim_type": "statistic",
         "confidence": 0.1
       },
-      "verdict": "unverifiable",
-      "explanation": "Staðreyndagrunnt inniheldur engar heimildir um Eskju hf. sérstaklega. Heimildir um sjávarútveginn almennt (<a href=\"https://www.statice.is/statistics/economy/national-accounts/\" title=\"Statistics Iceland — National accounts by activity\" target=\"_blank\" rel=\"noopener\">FISH-DATA-003</a>, POL-DATA-005) staðfesta að stór fyrirtæki ráða yfir verulegum hluta kvótans, en ekki er hægt að sannreyna stærð eða starfsemi Eskju sérstaklega.",
-      "supporting_evidence": [],
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> nefnir Eskju meðal helstu sjávarútvegsfyrirtækja landsins, ásamt Brim, Samherja, Skinney-Þinganesi og Síldarvinnslu. Fyrirtækið er því viðurkennt sem eitt af stærri fyrirtækjum greinarinnar. Heimildin staðfestir ekki sérstaklega að Eskja reki \"öfluga uppsjávarútgerð\" — engin nánari lýsing er á starfsemi einstakra fyrirtækja.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-DATA-024",
+          "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
+          "source_url": "https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Engar heimildir í staðreyndagrunni fjalla sérstaklega um Eskju hf. Þetta er staðhæfing um einstakt fyrirtæki sem krefst sérstakra heimilda.",
-      "confidence": 0.1,
+      "missing_context": "Heimildir staðfesta að Eskja sé meðal helstu sjávarútvegsfyrirtækja en lýsa ekki starfsemi fyrirtækisins nánar. Staðfesting á því að um sé að ræða sérstaklega uppsjávarútgerð krefst nánari heimilda frá Fiskistofu eða ársreikningum fyrirtækisins.",
+      "confidence": 0.55,
       "speakers": [
         {
           "name": "Vilhelm Jónsson",
@@ -153,11 +159,11 @@
         "confidence": 0.1
       },
       "verdict": "unverifiable",
-      "explanation": "Staðreyndagrunnt inniheldur engar heimildir um sögu Eskju hf. eða ákvarðanir fyrirtækisins um að selja skuttogurar. Þótt heimildir um samþjöppun í íslenskum sjávarútvegi og fækkun skipa séu til staðar (<a href=\"https://www.fiskistofa.is/english/\" title=\"Fiskistofa (Directorate of Fisheries) — Fleet and employment statistics\" target=\"_blank\" rel=\"noopener\">FISH-DATA-004</a>), er ekki hægt að sannreyna þessa tilteknu staðhæfingu um Eskju.",
+      "explanation": "<a href=\"https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> nefnir Eskju sem eitt helstu sjávarútvegsfyrirtækjanna en lýsir ekki sögu félagsins hvað varðar bolfiskveiðar, skuttogurum eða sölu skipa á fyrri hluta 2000-áratugarins. <a href=\"https://www.fiskistofa.is/english/\" title=\"Fiskistofa (Directorate of Fisheries) — Fleet and employment statistics\" target=\"_blank\" rel=\"noopener\">FISH-DATA-004</a> lýsir almennri þróun flotans — fækkun úr yfir 3.000 virkum skipum árið 1990 í um 700 árið 2024 — en nefnir ekki Eskju sérstaklega. Fullyrðingin krefst fyrirtækjasértækra upplýsinga sem ekki eru til staðar í heimildunum.",
       "supporting_evidence": [],
       "contradicting_evidence": [],
       "missing_context": "Þetta er staðhæfing um innri sögu eins fyrirtækis sem krefst heimilda úr ársreikningum eða skráningum Fiskistofu — ekki er hægt að sannreyna hana með gögnum í staðreyndagrunni.",
-      "confidence": 0.1,
+      "confidence": 0.3,
       "speakers": [
         {
           "name": "Vilhelm Jónsson",
@@ -362,27 +368,22 @@
         "confidence": 0.65
       },
       "verdict": "partially_supported",
-      "explanation": "Þetta er matskennd fullyrðing en hún styðst við efnahagslegar forsendur sem heimildir staðfesta. Veiðigjald nemur minna en 5% af auðlindarentu greinarinnar (<a href=\"https://www.government.is/topics/food-fisheries-and-agriculture/fisheries-in-iceland/\" title=\"Icelandic Ministry of Food, Agriculture and Fisheries — Veiðigjald\" target=\"_blank\" rel=\"noopener\">FISH-DATA-008</a>) og upphaflegar úthlutanir voru án endurgjalds (<a href=\"https://www.fao.org/faolex/results/details/en/c/LEX-FAOC003455/\" title=\"Icelandic Fisheries Management Act No. 116/2006\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-003</a>). Drög að stjórnarskrá 2011 skilgreindu náttúruauðlindir sem þjóðareign sem má ekki selja (<a href=\"https://stjornlagarad.is/other_files/stjornlagarad/Frumvarp-enska.pdf\" title=\"Stjórnlagaráð — A Proposal for a new Constitution for the Republic of Iceland (English translation)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-017</a>). Hvort þetta teljist \"ríkisstuðningur\" í lagalegum skilningi er hins vegar deilumál.",
+      "explanation": "Almenn hagfræðikenning styður þá röksemd að aðgangur að náttúruauðlindum undir markaðsverði geti talist óbeinn ríkisstuðningur. <a href=\"https://stjornlagarad.is/other_files/stjornlagarad/Frumvarp-enska.pdf\" title=\"Stjórnlagaráð — A Proposal for a new Constitution for the Republic of Iceland (English translation)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-017</a> lýsir auðlindaákvæðinu úr stjórnarskrártillögu Stjórnlagaráðs sem skilgreinir náttúruauðlindir sem sameign þjóðarinnar — þetta undirstrikar pólitíska umræðu um verðlagningu auðlindaaðgangs. <a href=\"https://www.oecd.org/agriculture/topics/agricultural-policy-monitoring-and-evaluation/\" title=\"OECD Producer Support Estimate database — Iceland; Bændasamtök Íslands (Farmers Association) annual reports; European Commission CAP indicators\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-022</a> sýnir sambærilegt mynstur í landbúnaði þar sem ríkisstyrkir nema 25–30 milljörðum króna árlega. Hins vegar er fullyrðingin orðuð sem almenn röksemd frekar en staðhæfing um íslenskt fiskveiðikerfi sérstaklega, og engin heimild staðfestir beint að kvótakerfið teljist ríkisaðstoð samkvæmt ESB-reglum.",
       "supporting_evidence": [
-        {
-          "id": "FISH-DATA-008",
-          "source_name": "Icelandic Ministry of Food, Agriculture and Fisheries — Veiðigjald",
-          "source_url": "https://www.government.is/topics/food-fisheries-and-agriculture/fisheries-in-iceland/"
-        },
-        {
-          "id": "FISH-LEGAL-003",
-          "source_name": "Icelandic Fisheries Management Act No. 116/2006",
-          "source_url": "https://www.fao.org/faolex/results/details/en/c/LEX-FAOC003455/"
-        },
         {
           "id": "SOV-LEGAL-017",
           "source_name": "Stjórnlagaráð — A Proposal for a new Constitution for the Republic of Iceland (English translation)",
           "source_url": "https://stjornlagarad.is/other_files/stjornlagarad/Frumvarp-enska.pdf"
+        },
+        {
+          "id": "AGRI-DATA-022",
+          "source_name": "OECD Producer Support Estimate database — Iceland; Bændasamtök Íslands (Farmers Association) annual reports; European Commission CAP indicators",
+          "source_url": "https://www.oecd.org/agriculture/topics/agricultural-policy-monitoring-and-evaluation/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Hugtakið \"óbeinn ríkisstuðningur\" hefur ákveðna merkingu í ESB-löggjöf um ríkisaðstoð (state aid) sem er ólík almennri notkun. Það er matskennt hvort gjaldfrjáls úthlutun náttúruauðlindar uppfylli þau skilyrði í lögfræðilegum skilningi.",
-      "confidence": 0.65,
+      "missing_context": "Engin heimild fjallar beint um hvort íslenska kvótakerfið flokkist sem ríkisaðstoð í skilningi ESB-samkeppnisreglna. Skilgreining ESB á ríkisaðstoð (State aid) og fordæmi frá Evrópudómstólnum um náttúruauðlindaaðgang væru nauðsynleg til að meta fullyrðinguna til fulls.",
+      "confidence": 0.55,
       "speakers": [
         {
           "name": "Vilhelm Jónsson",
@@ -405,22 +406,22 @@
         "confidence": 0.5
       },
       "verdict": "partially_supported",
-      "explanation": "Heimildir staðfesta að FDI og fjárfestingastarfsemi var á algnaðrinum í aðdraganda 2008-hrunsins; FDI var 6,9 milljarðar dala árið 2007 (<a href=\"https://data.worldbank.org/indicator/BX.KLT.DINV.CD.WD?locations=IS\" title=\"World Bank — Foreign direct investment, net inflows (BOP, current US$)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-019</a>) og kerfislægar ástæður hrunsins eru vel þekktar (<a href=\"https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/skyrsla-nefndarinnar/english/\" title=\"Seðlabanki Íslands — Special Investigation Commission report; Central Bank annual report 2009\" target=\"_blank\" rel=\"noopener\">CURR-DATA-001</a>). Hins vegar eru engar sérstakar heimildir í grunni um \"2007 fylleríið\" sem hugtak eða þátttöku sjávarútvegsfyrirtækja í þeirri bylgju sérstaklega.",
+      "explanation": "<a href=\"https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> staðfestir að stór sjávarútvegsfyrirtæki fjölbreyttu starfsemi sinni yfir í fasteignir, ferðaþjónustu og fjármálafjárfestingar, og nefnir sérstaklega skuldaniðurfellingu Skinney-Þinganes upp á um 2,6 milljarða króna eftir hrunið 2008. Þetta bendir til þátttöku sjávarútvegsfyrirtækja í fjárfestinga- og skuldsettri yfirtökubylgju áratuginn. <a href=\"https://data.worldbank.org/indicator/BX.KLT.DINV.CD.WD?locations=IS\" title=\"World Bank — Foreign direct investment, net inflows (BOP, current US$)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-019</a> sýnir að beinar erlendar fjárfestingar náðu hámarki árið 2007 ($6,9 ma.). Hugtakið \"2007 fyllerið\" fær þó ekki beina staðfestingu í heimildum sem pólitískt hugtak, þótt undirliggjandi mynstur um offjárfestingar og skuldavanda fái stuðning.",
       "supporting_evidence": [
+        {
+          "id": "FISH-DATA-024",
+          "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
+          "source_url": "https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda"
+        },
         {
           "id": "TRADE-DATA-019",
           "source_name": "World Bank — Foreign direct investment, net inflows (BOP, current US$)",
           "source_url": "https://data.worldbank.org/indicator/BX.KLT.DINV.CD.WD?locations=IS"
-        },
-        {
-          "id": "CURR-DATA-001",
-          "source_name": "Seðlabanki Íslands — Special Investigation Commission report; Central Bank annual report 2009",
-          "source_url": "https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/skyrsla-nefndarinnar/english/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Hugtakið \"2007 fylleríið\" er ekki staðfest með heimildum í grunni. Almenn lýsing á fjárfestingabylgju fyrir hrun er söguleg staðreynd en þátttaka sjávarútvegsfyrirtækja krefst sérstakra heimilda.",
-      "confidence": 0.5,
+      "missing_context": "Heimildir veita ekki ítarlegar upplýsingar um hvaða sjávarútvegsfyrirtæki tóku þátt í hvaða yfirtökum. Skuldaniðurfellingarupplýsingarnar eru áætlaðar og ná aðeins til eins fyrirtækis. Endurskipulagning skulda eftir hrun náði til margra atvinnugreina, ekki eingöngu sjávarútvegs.",
+      "confidence": 0.55,
       "speakers": [
         {
           "name": "Vilhelm Jónsson",
@@ -443,11 +444,11 @@
         "confidence": 0.1
       },
       "verdict": "unverifiable",
-      "explanation": "Staðreyndagrunnt inniheldur engar heimildir um þessa tilteknu yfirlýsingu Friðriks Arngrímssonar. Þótt bankahrunið 2008 og áhrif þess á sjávarútveg séu vel þekkt (<a href=\"https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/skyrsla-nefndarinnar/english/\" title=\"Seðlabanki Íslands — Special Investigation Commission report; Central Bank annual report 2009\" target=\"_blank\" rel=\"noopener\">CURR-DATA-001</a>, <a href=\"https://sedlabanki.is/hagtolur/gengi?PageID=289\" title=\"Central Bank of Iceland — Exchange rate data; ECB — Statistical Data Warehouse\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-016</a>), er þetta tilvísun í tiltekið viðtal eða fréttatilkynningu sem krefst sérstakrar heimilda til staðfestingar.",
+      "explanation": "Fullyrðingin vísar til ákveðinnar yfirlýsingar Friðriks Arngrímssonar um að útgerðir gætu orðið \"tæknilega gjaldþrota\" eftir bankahrunið. <a href=\"https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/skyrsla-nefndarinnar/english/\" title=\"Seðlabanki Íslands — Special Investigation Commission report; Central Bank annual report 2009\" target=\"_blank\" rel=\"noopener\">CURR-DATA-001</a> og <a href=\"https://sedlabanki.is/hagtolur/gengi?PageID=289\" title=\"Central Bank of Iceland — Exchange rate data; ECB — Statistical Data Warehouse\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-016</a> staðfesta alvarleika fjármálakreppunnar 2008 og gengisfall krónunnar um 50%, sem hefði vissulega haft áhrif á skuldsett útgerðarfyrirtæki. Engin heimild í gagnagrunninum staðfestir hins vegar beint þessa tilteknu yfirlýsingu Friðriks, og án slíkrar heimildar er ekki hægt að breyta matinu.",
       "supporting_evidence": [],
       "contradicting_evidence": [],
       "missing_context": "Þetta er tilvísun í tiltekna yfirlýsingu tiltekins einstaklings sem krefst fréttalegra heimilda eða skjalegra gagna — ekki er hægt að sannreyna hana með heimildum í staðreyndagrunni.",
-      "confidence": 0.1,
+      "confidence": 0.7,
       "speakers": [
         {
           "name": "Friðrik Arngrímsson",
@@ -470,7 +471,7 @@
         "confidence": 0.6
       },
       "verdict": "partially_supported",
-      "explanation": "Heimildir staðfesta að Ísland jók aftur við þrátt fyrir hrun; jákvæður viðskiptajöfnuður náðist aftur um 2013 (<a href=\"https://www.sedlabanki.is/hagtolur/\" title=\"Seðlabanki Íslands — Balance of payments statistics\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-008</a>) og sjávarútvegurinn er enn um 8% af VLF (<a href=\"https://www.statice.is/statistics/economy/national-accounts/\" title=\"Statistics Iceland — National accounts by activity\" target=\"_blank\" rel=\"noopener\">FISH-DATA-003</a>). Kvótavirðið ~1.500 milljarðar króna (<a href=\"https://island.is/en/permits-to-fish/quota-system\" title=\"Ministry of Food, Agriculture and Fisheries — Fisheries Management in Iceland; Marine and Freshwater Research Institute\" target=\"_blank\" rel=\"noopener\">FISH-DATA-022</a>) styður þá hugmynd að heimildir hafi verið efnahagslegur þungamiðja. Hins vegar er sérstakur orsakasamhengi milli kvótaeignar og endurreisnar greinarinnar matskenntur og ekki beinlínis staðfestur í heimildum.",
+      "explanation": "<a href=\"https://www.sedlabanki.is/hagtolur/\" title=\"Seðlabanki Íslands — Balance of payments statistics\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-008</a> staðfestir að Ísland hafi farið úr viðvarandi viðskiptahalla í afgang eftir hrunið 2008, sem styður hugmyndina um hraðan efnahagsbata. <a href=\"https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> veitir mikilvægt samhengi: stór sjávarútvegsfyrirtæki fengu skuldir endurskipulagðar — Skinney-Þinganes fékk um 2,6 milljarða króna afskrifaða — og makrílinn sem fór inn á íslenskt hafsvæði eftir 2007 skapaði verulegar aukatekjur. Aftur á móti nefna heimildir ekki beint tengsl milli verðmætis aflaheimilda og bata fjármálakerfisins. <a href=\"https://www.statice.is/\" title=\"Statistics Iceland — Industrial production; Samtök fyrirtækja í sjávarútvegi (SFS)\" target=\"_blank\" rel=\"noopener\">FISH-DATA-007</a> sýnir að gæðaþróun í sjávarútvegi — aukin verðmætavinnsla — hafi einnig skipt máli.",
       "supporting_evidence": [
         {
           "id": "TRADE-DATA-008",
@@ -478,19 +479,19 @@
           "source_url": "https://www.sedlabanki.is/hagtolur/"
         },
         {
-          "id": "FISH-DATA-022",
-          "source_name": "Ministry of Food, Agriculture and Fisheries — Fisheries Management in Iceland; Marine and Freshwater Research Institute",
-          "source_url": "https://island.is/en/permits-to-fish/quota-system"
+          "id": "FISH-DATA-024",
+          "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
+          "source_url": "https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda"
         },
         {
-          "id": "FISH-DATA-003",
-          "source_name": "Statistics Iceland — National accounts by activity",
-          "source_url": "https://www.statice.is/statistics/economy/national-accounts/"
+          "id": "FISH-DATA-007",
+          "source_name": "Statistics Iceland — Industrial production; Samtök fyrirtækja í sjávarútvegi (SFS)",
+          "source_url": "https://www.statice.is/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Endurreisn sjávarútvegsins átti sér líka stað í samhengi við afnám gjaldeyrishafta smám saman, lækkun vaxtastigs og aukna ferðaþjónustu — erfitt er að einangra hlutdeild kvótavirkisins sérstaklega.",
-      "confidence": 0.6,
+      "missing_context": "Heimildir staðfesta hraðan bata sjávarútvegsins en útskýra hann ekki eingöngu með verðmæti aflaheimilda. Gengislækkun krónu, skuldaafskriftir og makrílveiðar voru einnig veigamiklir þættir. Fyrirvarar <a href=\"https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> benda á að skuldaafskriftir hafi náð til margra geira, ekki einungis sjávarútvegs.",
+      "confidence": 0.55,
       "speakers": [
         {
           "name": "Vilhelm Jónsson",
@@ -512,12 +513,18 @@
         "claim_type": "statistic",
         "confidence": 0.1
       },
-      "verdict": "unverifiable",
-      "explanation": "Staðreyndagrunnt inniheldur engar beinar heimildir um makreldreifingu í íslenska lögsögu á þessum tíma eða fjárhagslegar afleiðingar þess fyrir íslensk sjávarútvegsfyrirtæki. Þótt heimildir um norska makrelveiðar séu til (<a href=\"https://www.ssb.no/en/jord-skog-jakt-og-fiskeri\" title=\"Statistics Norway (SSB); Norwegian Institute of Marine Research (Havforskningsinstituttet); Norwegian Seafood Council (Norges sjømatråd)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-009</a>) eru þær ekki beint tækar til að staðfesta íslenska þróun á þessum tíma.",
-      "supporting_evidence": [],
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> staðfestir beint að makríll hafi gengið inn í íslenska lögsögu eftir 2007 og að þessi nýja veiðiheimild hafi verið \"significant windfall\" fyrir uppsjávarfyrirtæki. Heimildin nefnir jafnframt að stærstu sjávarútvegsfyrirtækin hafi fengið skuldir afskrifaðar eftir bankahrunið, sem staðfestir samhengið um erfiðleika eftir hrunið og mikilvægi makrílsins sem lyftistangar.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-DATA-024",
+          "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
+          "source_url": "https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda"
+        }
+      ],
       "contradicting_evidence": [],
       "missing_context": "Makrelveiðar Íslands og deilur um makrelkvóta við Noreg og ESB eru vel þekkt í almennri umræðu en eru ekki staðfestar með heimildum í þessum staðreyndagrunni.",
-      "confidence": 0.1,
+      "confidence": 0.9,
       "speakers": [
         {
           "name": "Vilhelm Jónsson",
@@ -540,11 +547,11 @@
         "confidence": 0.1
       },
       "verdict": "unverifiable",
-      "explanation": "Staðreyndagrunnt inniheldur engar heimildir um þessa tilteknu fasteignakaup. Heimildir um húsnæðisverð á höfuðborgarsvæðinu (<a href=\"https://ec.europa.eu/eurostat/databrowser/view/PRC_HPI_A/default/table\" title=\"Þjóðskrá Íslands (Registers Iceland) — Property Market Index; Eurostat — House price statistics\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-007</a>, <a href=\"https://www.cb.is/publications/financial-stability/\" title=\"Seðlabanki Íslands — Financial Stability Report; Hagstofa Íslands — Housing price index\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-001</a>) gefa til kynna að verð séu í samræmi við þá fjárhæð — meðalverð íbúðar er ~65 milljónar króna — en eru ekki nógu nákvæmar til að staðfesta þessa tilteknu viðskipti.",
+      "explanation": "Fullyrðingin fjallar um tiltekin fasteignakaup dótturfélags Eskju — Hólma ehf. — á 49 íbúðum í Stefnisvogi fyrir um 4,2 milljarða króna. <a href=\"https://ec.europa.eu/eurostat/databrowser/view/PRC_HPI_A/default/table\" title=\"Þjóðskrá Íslands (Registers Iceland) — Property Market Index; Eurostat — House price statistics\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-007</a> veitir almennar upplýsingar um húsnæðismarkað höfuðborgarsvæðisins en nefnir ekki þessi tilteknu viðskipti. Engin heimild í staðreyndagrunni staðfestir eða hrekur þessa fullyrðingu.",
       "supporting_evidence": [],
       "contradicting_evidence": [],
       "missing_context": "Þetta er tilvísun í tiltekna fasteignaviðskipti sem krefst heimilda úr þinglýsingaskrá eða fréttaskjölum — ekki er hægt að sannreyna hana með heimildum í staðreyndagrunni.",
-      "confidence": 0.1,
+      "confidence": 0.3,
       "speakers": [
         {
           "name": "Vilhelm Jónsson",
@@ -577,11 +584,11 @@
         "confidence": 0.1
       },
       "verdict": "unverifiable",
-      "explanation": "Staðreyndagrunnt inniheldur engar heimildir um fjárfestingarstarfsemi félaga tengdra Eskju. Heimildir um tengsl sjávarútvegs og ferðaþjónustu almennt eru til staðar (<a href=\"https://www.ferdamalastofa.is/en/recearch-and-statistics/tourism-in-iceland-in-figures\" title=\"Ferðamálastofa (Icelandic Tourist Board) — Tourism statistics; Hagstofa Íslands — Balance of payments\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-020</a>, <a href=\"https://www.ferdamalastofa.is/en/research-and-statistics\" title=\"Ferðamálastofa (Icelandic Tourist Board) — Tourism statistics\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-005</a>) en staðfesta ekki þessa tilteknu staðhæfingu um einstök félög.",
+      "explanation": "Fullyrðingin fjallar um tilteknar fjárfestingar félaga tengdra eigendahópi Eskju í ferðaþjónustu — hótelrekstur á Selfossi og verkefni í Vestmannaeyjum. Engin heimild í staðreyndagrunni staðfestir þessar tilteknu fjárfestingar. <a href=\"https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> nefnir að stærri sjávarútvegsfyrirtæki hafi fjölbreytt starfsemi sína yfir á fasteignir, ferðaþjónustu og fjárfestingar, en tengir ekki Eskju við þessi tilgreindu verkefni.",
       "supporting_evidence": [],
       "contradicting_evidence": [],
       "missing_context": "Þetta er staðhæfing um tilteknar fjárfestingar einstakra fyrirtækja sem krefst heimilda úr skrám fyrirtækjaregisturs eða fréttatilkynningum — ekki er hægt að sannreyna hana með heimildum í staðreyndagrunni.",
-      "confidence": 0.1,
+      "confidence": 0.3,
       "speakers": [
         {
           "name": "Vilhelm Jónsson",
@@ -614,22 +621,22 @@
         "confidence": 0.55
       },
       "verdict": "partially_supported",
-      "explanation": "Heimildir staðfesta að íslenskt bankahrun 2008 leiddi til almennra skuldaendurskipulagningna þar sem þrjár stærstu bankarnir hruntu (<a href=\"https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/skyrsla-nefndarinnar/english/\" title=\"Seðlabanki Íslands — Special Investigation Commission report; Central Bank annual report 2009\" target=\"_blank\" rel=\"noopener\">CURR-DATA-001</a>). Þetta náði til margra fyrirtækja, þar á meðal sjávarútvegsfyrirtækja. Hins vegar eru engar sérstakar heimildir í grunni um umfang eða skilmála skuldaafskrifta sjávarútvegsfyrirtækja sérstaklega.",
+      "explanation": "<a href=\"https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> staðfestir að nokkur sjávarútvegsfyrirtæki fengu skuldir lækkaðar eftir hrunið — Skinney-Þinganes fékk til dæmis um 2,6 milljarða króna afskrifaða í endurskipulagningu 2009–2010. Þetta styður kjarna fullyrðingarinnar um skuldaaðlögun í sjávarútvegi. Hins vegar vantar víðtækari gögn um fjölda fyrirtækja eða heildarupphæðir, og <a href=\"https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/skyrsla-nefndarinnar/english/\" title=\"Seðlabanki Íslands — Special Investigation Commission report; Central Bank annual report 2009\" target=\"_blank\" rel=\"noopener\">CURR-DATA-001</a> lýsir hruni bankakerfisins án þess að fjalla sérstaklega um sjávarútveginn.",
       "supporting_evidence": [
+        {
+          "id": "FISH-DATA-024",
+          "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
+          "source_url": "https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda"
+        },
         {
           "id": "CURR-DATA-001",
           "source_name": "Seðlabanki Íslands — Special Investigation Commission report; Central Bank annual report 2009",
           "source_url": "https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/skyrsla-nefndarinnar/english/"
-        },
-        {
-          "id": "FISH-DATA-003",
-          "source_name": "Statistics Iceland — National accounts by activity",
-          "source_url": "https://www.statice.is/statistics/economy/national-accounts/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Almælar skuldaendurskipulagningar eftir hrun eru þekkt staðreynd en tölulegar upplýsingar um sérstakar skuldaafskriftir sjávarútvegsfyrirtækja krefst heimilda úr ársreikningum eða skýrslum rannsóknarnefnda.",
-      "confidence": 0.55,
+      "missing_context": "Skuldaendurskipulagning tók til margra geira, ekki aðeins sjávarútvegs. Nákvæmar tölur um heildarfjárhæð afskrifaðra skulda í greininni eru ekki staðfestar í heimildum. Fyrirvarar <a href=\"https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> benda á að tölur séu áætlaðar og samhengi endurskipulagningar sé víðtækara en sjávarútvegur einn.",
+      "confidence": 0.6,
       "speakers": [
         {
           "name": "Vilhelm Jónsson",
@@ -651,12 +658,18 @@
         "claim_type": "statistic",
         "confidence": 0.1
       },
-      "verdict": "unverifiable",
-      "explanation": "Staðreyndagrunnt inniheldur engar heimildir um skuldaafskriftir Skinney-Þinganes sérstaklega. Þótt bankahrun 2008 og afleiðingar þess séu vel þekktar (<a href=\"https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/skyrsla-nefndarinnar/english/\" title=\"Seðlabanki Íslands — Special Investigation Commission report; Central Bank annual report 2009\" target=\"_blank\" rel=\"noopener\">CURR-DATA-001</a>), er þetta staðhæfing um tiltekið fyrirtæki sem krefst heimilda úr ársreikningum eða skýrslum um endurskipulagningu skulda.",
-      "supporting_evidence": [],
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> nefnir beint að Skinney-Þinganes hafi fengið um 2,6 milljarða króna skuldir afskrifaðar á árunum 2009–2010 í tengslum við uppgjör eftir bankahrunið. Þó ber að hafa í huga að heimildin notar orðið \"reportedly\" og fyrirvarinn tekur fram að tölurnar séu áætlaðar og eigi að staðfesta gegn ársskýrslum og gögnum Fiskistofu. Fullyrðingin er studd en með fyrirvara um nákvæmni fjárhæðarinnar.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-DATA-024",
+          "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
+          "source_url": "https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda"
+        }
+      ],
       "contradicting_evidence": [],
       "missing_context": "Þetta er staðhæfing um tilteknar skuldaafskriftir eins fyrirtækis sem krefst heimilda úr ársreikningum, gagnagrunnum kaupréttar eða opinberum skýrslum — ekki er hægt að sannreyna hana með heimildum í staðreyndagrunni.",
-      "confidence": 0.1,
+      "confidence": 0.75,
       "speakers": [
         {
           "name": "Vilhelm Jónsson",
@@ -726,22 +739,22 @@
         "confidence": 0.5
       },
       "verdict": "partially_supported",
-      "explanation": "Heimildir staðfesta að sjávarútvegurinn hefur beinlínis og óbeinlínis þýðingu sem nemur ~25% af VLF þegar uppstreyms- og niðurstreymisatvinnugreinar eru taldar með (POL-DATA-005). Fjárfesting í hafnarinnviðum og sjávarbyggðum er þekkt en engar sérstakar tölulegar heimildir um umfang slíkra fjárfestinga eru í grunni.",
+      "explanation": "Heimildir staðfesta mikilvægi sjávarútvegs fyrir byggðir og innviði landsins. <a href=\"https://www.statice.is/statistics/economy/national-accounts/\" title=\"Statistics Iceland — National accounts by activity\" target=\"_blank\" rel=\"noopener\">FISH-DATA-003</a> sýnir að greinin stóð undir um 8% af vergri landsframleiðslu árið 2024 og fyrirvararnir taka fram að sjávarútvegur sé aðalatvinnugrein margra strandbyggða. POL-DATA-005 nefnir að með afleiddum áhrifum nái hlutfallið allt að 25% af VLF. Tölulegar upplýsingar um fjárhæðir opinberra fjárfestinga í höfnum, dýpkunum, vegum eða raforkukerfum eru hins vegar ekki í gagnagrunninum — fullyrðingin um \"milljarða króna\" er óstaðfest.",
       "supporting_evidence": [
-        {
-          "id": "POL-DATA-005",
-          "source_name": "LÍÚ and SFS public statements; Hagstofa Íslands national accounts",
-          "source_url": null
-        },
         {
           "id": "FISH-DATA-003",
           "source_name": "Statistics Iceland — National accounts by activity",
           "source_url": "https://www.statice.is/statistics/economy/national-accounts/"
+        },
+        {
+          "id": "POL-DATA-005",
+          "source_name": "LÍÚ and SFS public statements; Hagstofa Íslands national accounts",
+          "source_url": null
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Engar heimildir í grunni gefa upp tölulegt mat á ríkisfjárfestingum í innviðum sérstaklega til sjávarútvegs. Almælar heimildir staðfesta hagræna þýðingu greinarinnar en ekki fjárhæðir innviðafjárfestinga.",
-      "confidence": 0.5,
+      "missing_context": "Engar heimildir gefa upp fjárhæðir opinberra fjárfestinga í sjávarútvegstengdum innviðum. Hlutfall sjávarútvegs af VLF hefur farið lækkandi og mikilvægi greinarinnar er breytilegt eftir landshlutum. Margvíslegir innviðir nýtast fleiri atvinnugreinum en sjávarútvegi einum.",
+      "confidence": 0.45,
       "speakers": [
         {
           "name": "Vilhelm Jónsson",
@@ -764,17 +777,22 @@
         "confidence": 0.5
       },
       "verdict": "partially_supported",
-      "explanation": "Staðreyndagrunnt staðfestir að veiðigjöld eru lítið brot af auðlindarentu greinarinnar — heildargjaldstekjur voru um 6,5 milljarðar króna á við ~5% af áætlaðri auðlindarentu (<a href=\"https://www.government.is/topics/food-fisheries-and-agriculture/fisheries-in-iceland/\" title=\"Icelandic Ministry of Food, Agriculture and Fisheries — Veiðigjald\" target=\"_blank\" rel=\"noopener\">FISH-DATA-008</a>). Þetta styður hlutfallslega uppbyggingu fullyrðingarinnar. Hins vegar eru sérstakar tölur um hagnað Síldarvinnslunnar eitt ár og gjöld þess árs ekki staðfest í heimildum í grunni — þær þurfa ársreikninga félagsins.",
+      "explanation": "<a href=\"https://www.government.is/topics/food-fisheries-and-agriculture/fisheries-in-iceland/\" title=\"Icelandic Ministry of Food, Agriculture and Fisheries — Veiðigjald\" target=\"_blank\" rel=\"noopener\">FISH-DATA-008</a> staðfestir að heildargreiðslur veiðigjalda voru um 6,5 milljarðar króna árið 2024 og nema litlu hlutfalli af auðlindarentu greinarinnar — sem styður þá mynd að veiðigjöld séu lág miðað við afkomu stærri fyrirtækja. <a href=\"https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> nefnir Síldarvinnslu meðal stærstu sjávarútvegsfyrirtækjanna en veitir engar afkomu- eða veiðigjaldsupplýsingar fyrir einstök fyrirtæki. Tilteknar tölur fullyrðingarinnar — 11,1 milljarða króna hagnaður og 531 milljón króna veiðigjald — eru ekki staðfanlegar í heimildum.",
       "supporting_evidence": [
         {
           "id": "FISH-DATA-008",
           "source_name": "Icelandic Ministry of Food, Agriculture and Fisheries — Veiðigjald",
           "source_url": "https://www.government.is/topics/food-fisheries-and-agriculture/fisheries-in-iceland/"
+        },
+        {
+          "id": "FISH-DATA-024",
+          "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
+          "source_url": "https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Tölurnar um hagnað og gjöld Síldarvinnslunnar sérstaklega eru ekki í staðreyndagrunni — þær krefst heimilda úr opinberum ársreikningum félagsins. Hlutfallsleg uppbygging (há hagnaður, lág gjöld) er í samræmi við þekktar heimildir.",
-      "confidence": 0.5,
+      "missing_context": "Nákvæmar tölur um hagnað og veiðigjöld Síldarvinnslu þyrftu staðfestingu úr ársreikningum fyrirtækisins og gögnum ráðuneytisins. Umræðan um veiðigjöld er pólitískt umdeild og gagnrýnendur telja gjöldin of lág miðað við auðlindarentu.",
+      "confidence": 0.4,
       "speakers": [
         {
           "name": "Vilhelm Jónsson",
@@ -807,19 +825,8 @@
         "confidence": 0.3
       },
       "verdict": "unverifiable",
-      "explanation": "Staðreyndagrunnt staðfestir að sjávarútvegsfyrirtæki og samtök þeirra (LÍÚ) hafa verið gagnrýnt gagnvart hækkun veiðigjalda í opinberri umræðu (<a href=\"https://www.government.is/topics/food-fisheries-and-agriculture/fisheries-in-iceland/\" title=\"Icelandic Ministry of Food, Agriculture and Fisheries — Veiðigjald\" target=\"_blank\" rel=\"noopener\">FISH-DATA-008</a>, POL-DATA-014). Hins vegar er engin sérstök heimild um þátttöku forsvarsmanna Síldarvinnslunnar sérstaklega í þessari umræðu.",
-      "supporting_evidence": [
-        {
-          "id": "POL-DATA-014",
-          "source_name": "LÍÚ — Position paper on EU membership (2025); campaign finance declarations",
-          "source_url": null
-        },
-        {
-          "id": "FISH-DATA-008",
-          "source_name": "Icelandic Ministry of Food, Agriculture and Fisheries — Veiðigjald",
-          "source_url": "https://www.government.is/topics/food-fisheries-and-agriculture/fisheries-in-iceland/"
-        }
-      ],
+      "explanation": "Engin heimild í staðreyndagrunni staðfestir að forsvarsmenn Síldarvinnslu hafi verið meðal þeirra sem hörðust hafa varaðvið hækkun veiðigjalda. <a href=\"https://www.government.is/topics/food-fisheries-and-agriculture/fisheries-in-iceland/\" title=\"Icelandic Ministry of Food, Agriculture and Fisheries — Veiðigjald\" target=\"_blank\" rel=\"noopener\">FISH-DATA-008</a> lýsir veiðigjaldakerfinu og nefnir að gjaldið sé pólitískt umdeilt, en tilgreinir ekki Síldarvinnslu sem sérstakan gagnrýnanda. POL-DATA-014 lýsir LÍÚ sem aðalrödd gegn ESB-aðild en tengir ekki samtökin eða einstök fyrirtæki við umræðu um veiðigjöld.",
+      "supporting_evidence": [],
       "contradicting_evidence": [],
       "missing_context": "Almælar heimildir staðfesta andstöðu sjávarútvegsfyrirtækja við hækkun veiðigjalda, en tilvísun í forsvarsmenn eins fyrirtækis sérstaklega krefst fréttatilvitnana eða skráðra yfirlýsinga.",
       "confidence": 0.3,
@@ -904,22 +911,11 @@
         "confidence": 0.1
       },
       "verdict": "unverifiable",
-      "explanation": "Þetta er matskennd sögulegt mat sem staðreyndagrunnt getur ekki staðfest né hrakið. Heimildir um núverandi galla í gegnsæiskerfi Íslands eru til staðar (<a href=\"https://www.coe.int/en/web/greco/evaluations/iceland\" title=\"Lög um varnir gegn hagsmunaárekstrum í Stjórnarráðinu; GRECO Fourth Round Evaluation Report on Iceland\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-020</a> um GRECO-mat, <a href=\"https://www.stjornarradid.is/verkefni/allra-raduneyti/sidareglur-radherra/\" title=\"Siðareglur ráðherra (2017 revision); Forsætisráðuneytið; Siðareglur Alþingis (2016)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-022</a> um siðareglur ráðherra) en þær fjalla um núverandi ástand, ekki um 110 ára söguleg þróun.",
-      "supporting_evidence": [
-        {
-          "id": "SOV-LEGAL-020",
-          "source_name": "Lög um varnir gegn hagsmunaárekstrum í Stjórnarráðinu; GRECO Fourth Round Evaluation Report on Iceland",
-          "source_url": "https://www.coe.int/en/web/greco/evaluations/iceland"
-        },
-        {
-          "id": "SOV-LEGAL-022",
-          "source_name": "Siðareglur ráðherra (2017 revision); Forsætisráðuneytið; Siðareglur Alþingis (2016)",
-          "source_url": "https://www.stjornarradid.is/verkefni/allra-raduneyti/sidareglur-radherra/"
-        }
-      ],
+      "explanation": "Heimildir fjalla um hagsmunaárekstra í stjórnsýslu (<a href=\"https://www.coe.int/en/web/greco/evaluations/iceland\" title=\"Lög um varnir gegn hagsmunaárekstrum í Stjórnarráðinu; GRECO Fourth Round Evaluation Report on Iceland\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-020</a>), lánshæfismat ríkissjóðs (<a href=\"https://www.government.is/topics/economic-affairs-and-public-finances/\" title=\"Fjármála- og efnahagsráðuneytið — Ríkisfjármál; Moody's, S&P, Fitch sovereign ratings for Iceland\" target=\"_blank\" rel=\"noopener\">SOV-DATA-013</a>) og gjaldeyrishöft (<a href=\"https://sedlabanki.is/hagtolur/gengi?PageID=289\" title=\"Seðlabanki Íslands — Capital account liberalisation reports\" target=\"_blank\" rel=\"noopener\">CURR-DATA-002</a>), en engin þeirra tekur á fullyrðingunni um 110 ára hefð leyndarhyggju í stjórnsýslu og fjármálakerfi. <a href=\"https://www.coe.int/en/web/greco/evaluations/iceland\" title=\"Lög um varnir gegn hagsmunaárekstrum í Stjórnarráðinu; GRECO Fourth Round Evaluation Report on Iceland\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-020</a> nefnir GRECO-skýrslu sem gagnrýnir framkvæmd gegnsæisreglna, en tengir það ekki við langa sögu leyndarhyggju. Án heimildar sem staðfestir eða neitar tiltekna 110+ ára hefð er fullyrðingin enn óstaðfestanleg.",
+      "supporting_evidence": [],
       "contradicting_evidence": [],
       "missing_context": "Þetta er víðtækt sögulegt mat sem krefst vísindalegra sögulegra heimilda um þróun gagnsæis í íslenskri stjórnsýslu og fjármálakerfi — slíkar heimildir eru ekki í staðreyndagrunni.",
-      "confidence": 0.1,
+      "confidence": 0.8,
       "speakers": [
         {
           "name": "Vilhelm Jónsson",
@@ -980,38 +976,43 @@
         "confidence": 0.6
       },
       "verdict": "partially_supported",
-      "explanation": "Heimildir staðfesta bæði einbeitingu kvótaeignarhalds (<a href=\"https://www.fiskistofa.is/veidar/aflaheimildir/uthlutadaflamark/\" title=\"Fiskistofa — Quota holdings reports\" target=\"_blank\" rel=\"noopener\">FISH-DATA-005</a>: þrír stærstu halda 45–50%) og þá staðreynd að þjóðin hefur takmarkað beinan yfirráðarétt yfir nýtingu auðlindarinnar (<a href=\"https://stjornlagarad.is/other_files/stjornlagarad/Frumvarp-enska.pdf\" title=\"Stjórnlagaráð — A Proposal for a new Constitution for the Republic of Iceland (English translation)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-017</a>). Hins vegar er fullyrðingin um jafngildni milli ESB-yfirráða og einkaeigandastefnu innanlands matskennd — ESB-aðild og CFP hefðu raunverulegar breytingar í för með sér á úthlutun kvóta (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a>, <a href=\"https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf\" title=\"Icelandic Act on the Exclusive Economic Zone No. 41/1979\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-002</a>) sem gæti verið ólíkt núverandi ástandi.",
+      "explanation": "Fullyrðingin felur í sér matskennt sjónarmið um að kvótakerfið takmarki vald þjóðarinnar yfir auðlindinni. <a href=\"https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> staðfestir mikla samþjöppun í kvótaeign — fáein stór fyrirtæki ráða meginhluta aflaheimilda. <a href=\"https://www.fao.org/faolex/results/details/en/c/LEX-FAOC003455/\" title=\"Icelandic Fisheries Management Act No. 116/2006\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-003</a> nefnir gagnrýni á \"kvótakóngsveldi\". Samanburðurinn við ESB-stjórnun er þó of einfaldaður — <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> sýnir skýran mun á íslensku yfirráðum yfir lögsögu sinni og ESB-kerfi þar sem ráðherraráðið tekur ákvarðanir um kvótaskiptingu. <a href=\"https://stecf.jrc.ec.europa.eu/reports/economic\" title=\"European Commission — Scientific, Technical and Economic Committee for Fisheries (STECF); FAO — The State of World Fisheries and Aquaculture\" target=\"_blank\" rel=\"noopener\">FISH-DATA-025</a> bendir á að samþjöppun í sjávarútvegi sé alþjóðlegt fyrirbæri.",
       "supporting_evidence": [
         {
-          "id": "FISH-DATA-005",
-          "source_name": "Fiskistofa — Quota holdings reports",
-          "source_url": "https://www.fiskistofa.is/veidar/aflaheimildir/uthlutadaflamark/"
-        },
-        {
-          "id": "SOV-LEGAL-017",
-          "source_name": "Stjórnlagaráð — A Proposal for a new Constitution for the Republic of Iceland (English translation)",
-          "source_url": "https://stjornlagarad.is/other_files/stjornlagarad/Frumvarp-enska.pdf"
+          "id": "FISH-DATA-024",
+          "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
+          "source_url": "https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda"
         },
         {
           "id": "FISH-LEGAL-003",
           "source_name": "Icelandic Fisheries Management Act No. 116/2006",
           "source_url": "https://www.fao.org/faolex/results/details/en/c/LEX-FAOC003455/"
+        },
+        {
+          "id": "FISH-DATA-025",
+          "source_name": "European Commission — Scientific, Technical and Economic Committee for Fisheries (STECF); FAO — The State of World Fisheries and Aquaculture",
+          "source_url": "https://stecf.jrc.ec.europa.eu/reports/economic"
+        },
+        {
+          "id": "POL-DATA-005",
+          "source_name": "LÍÚ and SFS public statements; Hagstofa Íslands national accounts",
+          "source_url": null
         }
       ],
       "contradicting_evidence": [
         {
-          "id": "FISH-LEGAL-001",
-          "source_name": "EU Regulation 1380/2013 of the European Parliament and of the Council",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380"
+          "id": "EEA-LEGAL-022",
+          "source_name": "EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'",
+          "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
         },
         {
-          "id": "FISH-LEGAL-002",
-          "source_name": "Icelandic Act on the Exclusive Economic Zone No. 41/1979",
-          "source_url": "https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf"
+          "id": "FISH-LEGAL-004",
+          "source_name": "Norwegian Ministry of Trade, Industry and Fisheries — Bilateral fisheries agreements",
+          "source_url": "https://www.regjeringen.no/en/topics/food-fisheries-and-agriculture/fishing-and-aquaculture/1/fiskeri/internasjonalt-fiskerisamarbeid/internasjonalt/fish/id685828/"
         }
       ],
-      "missing_context": "Þótt einbeiting sé staðreynd, er það rangt að jafna íslenska löggjöf og mögulega ESB-stefnu í framkvæmd: Alþingi getur breytt ITQ-kerfinu á hvenær sem er, á meðan ESB-aðild myndi flytja hluta ákvörðunarvalds til Brussel undir CFP (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a>).",
-      "confidence": 0.6,
+      "missing_context": "Þrátt fyrir samþjöppun kvótaeignar hefur Alþingi fullt vald til að breyta kvótakerfinu — ólíkt ESB-aðild þar sem ákvarðanir um kvótaskiptingu eru teknar á sambandsstigi. Fullyrðingin jafnar tveimur ólíkum valdafyrirkomulögum sem eru ekki sambærileg. Veiðigjald (<a href=\"https://www.government.is/topics/food-fisheries-and-agriculture/fisheries-in-iceland/\" title=\"Icelandic Ministry of Food, Agriculture and Fisheries — Veiðigjald\" target=\"_blank\" rel=\"noopener\">FISH-DATA-008</a>) er eitt tæki sem þjóðin hefur til að ná hluta af auðlindaafgjaldi, þótt gagnrýnendur telji það of lágt.",
+      "confidence": 0.55,
       "speakers": [
         {
           "name": "Vilhelm Jónsson",
@@ -1034,18 +1035,8 @@
         "confidence": 0.7
       },
       "verdict": "partially_supported",
-      "explanation": "Í íslenskum lögum eru fiskveiðiauðlindir taldar þjóðareign í þeim skilningi að engin einstaklingur á fiskinn í hafinu (<a href=\"https://www.fao.org/faolex/results/details/en/c/LEX-FAOC003455/\" title=\"Icelandic Fisheries Management Act No. 116/2006\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-003</a>) og náttúruauðlindir sem eru ekki í einkaeigu teljast þjóðareign (<a href=\"https://www.althingi.is/lagas/nuna/2003065.html\" title=\"Althingi — Raforkulög (Electricity Act); Treaty on the Functioning of the European Union, Art. 194\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-003</a>). Hins vegar hafa dómstólar og lögfræðingar þurft að skýra hvernig þetta samræmist við ITQ-kerfið þar sem kvótar eru markaðssettir eins og einkaeignir. Drög að stjórnarskrá 2011 (<a href=\"https://stjornlagarad.is/other_files/stjornlagarad/Frumvarp-enska.pdf\" title=\"Stjórnlagaráð — A Proposal for a new Constitution for the Republic of Iceland (English translation)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-017</a>) lögðu til skýrara auðlindaákvæði en eru ósamþykkt.",
+      "explanation": "Náttúruverndarlög (nr. 60/2013) kveða á um að auðlindir sem ekki eru í einkaeigu séu sameign þjóðarinnar, eins og <a href=\"https://www.althingi.is/lagas/nuna/2003065.html\" title=\"Althingi — Raforkulög (Electricity Act); Treaty on the Functioning of the European Union, Art. 194\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-003</a> staðfestir. Stjórnlagaráðsdrög frá 2011 innihéldu enn skýrara auðlindaákvæði sem hlaut 82,9% fylgi í ráðgefandi þjóðaratkvæðagreiðslu 2012 (<a href=\"https://stjornlagarad.is/other_files/stjornlagarad/Frumvarp-enska.pdf\" title=\"Stjórnlagaráð — A Proposal for a new Constitution for the Republic of Iceland (English translation)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-017</a>). Hins vegar hafa drögin aldrei verið lögfest — þau eru ekki í gildi sem lög. Gildandi löggjöf (fiskveiðistjórnarlög) skilgreinir nytjastofna sem sameign þjóðarinnar, en kvótakerfið úthlutar aflaheimildum sem framseljanlegum réttindum, sem skapar togstreitu milli lagalegs sameignarforms og raunverulegrar einkaréttar.",
       "supporting_evidence": [
-        {
-          "id": "FISH-LEGAL-003",
-          "source_name": "Icelandic Fisheries Management Act No. 116/2006",
-          "source_url": "https://www.fao.org/faolex/results/details/en/c/LEX-FAOC003455/"
-        },
-        {
-          "id": "FISH-DATA-022",
-          "source_name": "Ministry of Food, Agriculture and Fisheries — Fisheries Management in Iceland; Marine and Freshwater Research Institute",
-          "source_url": "https://island.is/en/permits-to-fish/quota-system"
-        },
         {
           "id": "ENERGY-LEGAL-003",
           "source_name": "Althingi — Raforkulög (Electricity Act); Treaty on the Functioning of the European Union, Art. 194",
@@ -1058,8 +1049,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Lagaleg staða er flókin: lögin kveða á um þjóðareign að formi til, en framkvæmdin í gegnum ITQ-kerfið hefur þróað kvóta sem nánast eru einkaeignir á markaðslegan hátt. Íslenskir dómstólar hafa ekki gefið endanlega niðurstöðu um þetta samspil.",
-      "confidence": 0.7,
+      "missing_context": "Auðlindaákvæðið úr stjórnlagaráðsdrögunum er ekki í gildi þrátt fyrir mikinn stuðning í þjóðaratkvæðagreiðslu. Kvótakerfið veitir framseljanleg réttindi sem virka nánast eins og einkaeign þótt lögin kveði á um sameign (<a href=\"https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a>, <a href=\"https://island.is/en/permits-to-fish/quota-system\" title=\"Ministry of Food, Agriculture and Fisheries — Fisheries Management in Iceland; Marine and Freshwater Research Institute\" target=\"_blank\" rel=\"noopener\">FISH-DATA-022</a>). Enginn beinn lagatexti úr fiskveiðistjórnarlögum er meðal heimilda til staðfestingar á nákvæmu orðalagi.",
+      "confidence": 0.72,
       "speakers": [
         {
           "name": "Vilhelm Jónsson",

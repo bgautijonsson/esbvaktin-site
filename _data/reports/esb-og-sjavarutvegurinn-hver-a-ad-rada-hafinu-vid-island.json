@@ -9,9 +9,8 @@
   "analysis_date": "2026-03-10",
   "summary": "Greindar 14 fullyrðingar. Niðurstöður: 8 stutt að hluta, 4 stutt af heimildum, 2 ekki hægt að sannreyna. Sjónarhorn: mjög ESB-neikvæð. Heildstæðni: 25%.",
   "verdict_counts": {
-    "supported": 4,
-    "partially_supported": 8,
-    "unverifiable": 2
+    "supported": 5,
+    "partially_supported": 9
   },
   "claim_count": 14,
   "dominant_category": "fisheries",
@@ -120,7 +119,7 @@
         "confidence": 0.7
       },
       "verdict": "partially_supported",
-      "explanation": "Heimildir staðfesta að CFP hefur átt við alvarleg framkvæmdarvandamál — <a href=\"https://oceans-and-fisheries.ec.europa.eu/fisheries/common-fisheries-policy_en\" title=\"European Commission — Communication on the Common Fisheries Policy (2024); STECF stock assessments\" target=\"_blank\" rel=\"noopener\">FISH-COMP-003</a> sýnir að aðeins 5–10% stofna í Norðaustur-Atlantshafi voru veiddir við sjálfbærar takmarkanir árið 2003, sem endurspeglar langt skeið af ofveiðum. Þó er fullyrðingin um \"rangar skráningar\" og \"brottkast\" sértæk en engar af heimildunum lýsa þessum vandamálum beint með skjalfestum gögnum — þær fjalla frekar um afleiðingar (ofveiðar, floti of stór). <a href=\"https://stecf.jrc.ec.europa.eu/reports/economic\" title=\"European Commission — The EU Fishing Fleet reports (STECF Annual Economic Reports)\" target=\"_blank\" rel=\"noopener\">FISH-COMP-002</a> sýnir að CFP hefur batnað: 60% stofna eru nú veiddir við sjálfbærar takmarkanir.",
+      "explanation": "Sameiginleg sjávarútvegsstefna ESB hefur sannarlega glímt við alvarlega vandamál, en fullyrðingin vantar samhengi um umbætur. <a href=\"https://oceans-and-fisheries.ec.europa.eu/fisheries/common-fisheries-policy_en\" title=\"European Commission — Communication on the Common Fisheries Policy (2024); STECF stock assessments\" target=\"_blank\" rel=\"noopener\">FISH-COMP-003</a> sýnir að aðeins 5–10% fiskistofna í Norðaustur-Atlantshafi voru veiddir á sjálfbæran hátt árið 2003, sem bendir til víðtækra vandamála. Ofveiði í Miðjarðarhafinu er enn alvarleg — um 73% stofna ofveiddir árið 2022. Þó hefur árangur batnað verulega, þar sem um 60% stofna í Atlantshafinu voru við sjálfbærnimark árið 2023. <a href=\"https://stecf.jrc.ec.europa.eu/reports/economic\" title=\"European Commission — Scientific, Technical and Economic Committee for Fisheries (STECF); FAO — The State of World Fisheries and Aquaculture\" target=\"_blank\" rel=\"noopener\">FISH-DATA-025</a> staðfestir kvótasöfnun og skipulagsvandamál innan ESB-sjávarútvegs, en beinar heimildir um rangar skráningar og brottkast koma ekki fram í fyrirliggjandi gögnum.",
       "supporting_evidence": [
         {
           "id": "FISH-COMP-003",
@@ -131,11 +130,16 @@
           "id": "FISH-COMP-002",
           "source_name": "European Commission — The EU Fishing Fleet reports (STECF Annual Economic Reports)",
           "source_url": "https://stecf.jrc.ec.europa.eu/reports/economic"
+        },
+        {
+          "id": "FISH-DATA-025",
+          "source_name": "European Commission — Scientific, Technical and Economic Committee for Fisheries (STECF); FAO — The State of World Fisheries and Aquaculture",
+          "source_url": "https://stecf.jrc.ec.europa.eu/reports/economic"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Vandinn við rangar skráningar og brottkast var viðurkenndur og lagfærður að hluta með CFP-umbótum 2013 (skylda til að koma brotafiski í land). Fullyrðingin á við um sögu kerfisins en gefur ekki upp að tímabundin umbót hafi átt sér stað.",
-      "confidence": 0.7,
+      "missing_context": "Heimildir staðfesta almennan vanda sjávarútvegsstefnunnar en innihalda ekki sértæk gögn um rangar skráningar á afla eða umfang brottkasts. Jafnframt hefur árangur batnað umtalsvert á síðustu tveimur áratugum, sérstaklega í Norðaustur-Atlantshafinu, sem fullyrðingin nefnir ekki.",
+      "confidence": 0.6,
       "speakers": [
         {
           "name": "Svanur Guðmundsson",
@@ -230,12 +234,18 @@
         "claim_type": "legal_assertion",
         "confidence": 0.5
       },
-      "verdict": "unverifiable",
-      "explanation": "Heimildir lýsa ITQ-kerfinu nákvæmlega (<a href=\"https://www.fao.org/faolex/results/details/en/c/LEX-FAOC003455/\" title=\"Icelandic Fisheries Management Act No. 116/2006\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-003</a>, <a href=\"https://island.is/en/permits-to-fish/quota-system\" title=\"Ministry of Food, Agriculture and Fisheries — Fisheries Management in Iceland; Marine and Freshwater Research Institute\" target=\"_blank\" rel=\"noopener\">FISH-DATA-022</a>) — þ.e. hvernig kvótar eru úthlutaðir og seldir á milli útgerða — en engin þeirra lýsir hlutaskiptakerfi sjómanna eða launakjörum þeirra beint. Þetta eru tvö aðskilin kerfi: annars vegar eignarhald á aflaheimildum, hins vegar laun- og skipting til sjómanna. Heimildir gefa ekki til kynna hvort hlutaskipti séu reglusett með lögum, samningum eða venju.",
-      "supporting_evidence": [],
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> staðfestir beint að íslenskur sjávarútvegur starfi á hlutaskiptakerfi (share system) þar sem laun áhafna byggjast á hlutdeild í aflaverðmæti frekar en föstum launum. Þetta er kjarni fullyrðingarinnar og samræmist henni að fullu. Heimildin staðfestir jafnframt að þetta kerfi hvetur til framleiðni en þýðir einnig að tekjur sjómanna eru beint háðar kvótaúthlutun.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-DATA-024",
+          "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
+          "source_url": "https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda"
+        }
+      ],
       "contradicting_evidence": [],
       "missing_context": "Hlutaskiptakerfi sjómanna er lögbundið samkvæmt lögum um hlutaskipti og laun sjómanna. Staðreyndagrunnar þessarar greiningar hafa ekki þær heimildir til að staðfesta eða hrekja þessa fullyrðingu.",
-      "confidence": 0.5,
+      "confidence": 0.95,
       "speakers": [
         {
           "name": "Svanur Guðmundsson",
@@ -258,17 +268,27 @@
         "confidence": 0.65
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://asi.is/vinnurettarvefur/vinnurettur/icelandic-labour-law/labour-market-and-trade-unions/collective-agreements/\" title=\"ASÍ — Collective agreements overview; European Commission — Employment acquis\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-005</a> staðfestir að launakjör á Íslandi eru langt yfir evrópsku meðaltali — stéttarfélagsþátttaka er um 90% og laun eru samningsbundin á háu stigi. Þar að auki sýnir <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Articles 8 and 17–26; Protocols 1 and 47\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-008</a> að innri markaðurinn felur í sér frjálst flæði vinnuafls, sem myndi opna samkeppni á grundvelli launakjara. Þó eru engar heimildir með beinum samanburði á launakostnaði spænskra og íslenskra sjómanna.",
+      "explanation": "<a href=\"https://asi.is/vinnurettarvefur/vinnurettur/icelandic-labour-law/labour-market-and-trade-unions/collective-agreements/\" title=\"ASÍ — Collective agreements overview; European Commission — Employment acquis\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-005</a> staðfestir að launakerfi á Íslandi er frábrugðið ESB-meðaltali — um 90% stéttarfélagaþátttaka á Íslandi samanborið við 23% í ESB. Í sjávarútvegi starfa Íslendingar á hlutaskiptakerfi samkvæmt <a href=\"https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a>, sem tengir laun beint við aflaverðmæti. <a href=\"https://stecf.jrc.ec.europa.eu/reports/economic\" title=\"European Commission — Scientific, Technical and Economic Committee for Fisheries (STECF); FAO — The State of World Fisheries and Aquaculture\" target=\"_blank\" rel=\"noopener\">FISH-DATA-025</a> bendir á að stórar útgerðir í Spáni og öðrum suður-evrópskum ríkjum séu ráðandi og launaumhverfi sé annað. Beinar tölulegar samanburðargögn um laun sjómanna á Spáni samanborið við Ísland vantar þó í gagnagrunninn.",
       "supporting_evidence": [
         {
           "id": "LABOUR-DATA-005",
           "source_name": "ASÍ — Collective agreements overview; European Commission — Employment acquis",
           "source_url": "https://asi.is/vinnurettarvefur/vinnurettur/icelandic-labour-law/labour-market-and-trade-unions/collective-agreements/"
+        },
+        {
+          "id": "FISH-DATA-024",
+          "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
+          "source_url": "https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda"
+        },
+        {
+          "id": "FISH-DATA-025",
+          "source_name": "European Commission — Scientific, Technical and Economic Committee for Fisheries (STECF); FAO — The State of World Fisheries and Aquaculture",
+          "source_url": "https://stecf.jrc.ec.europa.eu/reports/economic"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "ESB-reglur um senda starfsmenn (posted workers) setja lágmarksskilyrði fyrir launagreiðslur í gistilandi. Ef erlend skip veiddu í íslenskri lögsögu væru þau ekki endilega undanþegin íslenskum kjarasamningum — þetta er lögfræðilegt álitamál sem heimildir leysa ekki.",
-      "confidence": 0.65,
+      "missing_context": "Nákvæmar launatölur sjómanna á Spáni eða Portúgal eru ekki í heimildum. Sameiginleg sjávarútvegsstefnan tekur ekki til launa sjómanna — launamál eru áfram á valdi aðildarríkja. Ólíkt launaumhverfi þýðir ekki sjálfkrafa að erlendir togarar geti undirboðið íslenska sjómenn í íslenskri lögsögu.",
+      "confidence": 0.55,
       "speakers": [
         {
           "name": "Svanur Guðmundsson",
@@ -290,12 +310,18 @@
         "claim_type": "statistic",
         "confidence": 0.5
       },
-      "verdict": "unverifiable",
-      "explanation": "Engar af heimildunum í staðreyndagrunni fjalla um mat á fæðuneyslu hvala við Ísland eða hlutfall nytjastofna í fæðu þeirra. Þær heimildir sem næst koma eru um aflamagn Íslands (<a href=\"https://ec.europa.eu/eurostat/databrowser/view/FISH_CA_MAIN/default/table?lang=en\" title=\"Eurostat — Fisheries statistics (fish_ca_main); Hagstofa Íslands\" target=\"_blank\" rel=\"noopener\">FISH-DATA-021</a>) og samanburð á meðferð stofna (<a href=\"https://oceans-and-fisheries.ec.europa.eu/fisheries/common-fisheries-policy_en\" title=\"European Commission — Communication on the Common Fisheries Policy (2024); STECF stock assessments\" target=\"_blank\" rel=\"noopener\">FISH-COMP-003</a>), en hvorug þeirra fjallar um vistfræðilegt samspil hvala og nytjastofna.",
-      "supporting_evidence": [],
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.hafogvatn.is/en/research/whale-research\" title=\"Hafrannsóknastofnun — Cetacean consumption estimates; Víkingsson et al., NAMMCO Scientific Publications (2019)\" target=\"_blank\" rel=\"noopener\">FISH-DATA-026</a> staðfestir að rannsóknir Hafrannsóknastofnunar áætla að hvalir í íslensku hafsvæði éti um 6 milljónir tonna af bráð árlega, þar á meðal verulegt magn af tegundum sem skipta máli fyrir sjávarútveg — loðnu, sandkolla, síld og grill. Fullyrðingin um milljónir tonna er því rétt. Þó ber að nefna að vistfræðilegt samband er flókið: hvalir veiða einnig rándýr nytjastofna og nettóáhrif á veiðistofna eru umdeild meðal vísindamanna. Vísindanefnd Alþjóðahvalveiðiráðsins hefur bent á að einföld neysluútreikningur spái ekki áreiðanlega fyrir um áhrif á fiskistofna vegna flókins fæðuvefs.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-DATA-026",
+          "source_name": "Hafrannsóknastofnun — Cetacean consumption estimates; Víkingsson et al., NAMMCO Scientific Publications (2019)",
+          "source_url": "https://www.hafogvatn.is/en/research/whale-research"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Rannsóknir Hafrannsóknastofnunarinnar á fæðuneyslu hvala eru til en eru ekki í þessum staðreyndagrunni. Þessi fullyrðing er staðreyndaleg og ætti að vera sannprófanleg með líffræðilegum heimildum.",
-      "confidence": 0.5,
+      "missing_context": "Áætlanir um fæðuneyslu hvala eru mjög óvissar og byggja á forsendum um stofnstærð, bráðarsamsetningu og árstíðadreifingu. Ekki öll bráð sem hvalir éta er úr tegundum eða aldursflokkum sem sjávarútvegur nýtir. Margir vistfræðingar telja hvali gegna jákvæðu hlutverki í lífvistkerfi sjávar gegnum næringarefnahringrás.",
+      "confidence": 0.75,
       "speakers": [
         {
           "name": "Svanur Guðmundsson",
@@ -318,7 +344,7 @@
         "confidence": 0.65
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://island.is/en/permits-to-fish/quota-system\" title=\"Ministry of Food, Agriculture and Fisheries — Fisheries Management in Iceland; Marine and Freshwater Research Institute\" target=\"_blank\" rel=\"noopener\">FISH-DATA-022</a> lýsir ITQ-kerfinu sem \"einu hinna áhrifaríkustu\" í heiminum og staðfestir að stofnar hafa bætt sig verulega — sem bendir til að eftirlit með veiðum virki. <a href=\"https://www.fiskistofa.is/english/\" title=\"Fiskistofa (Directorate of Fisheries) — Fleet and employment statistics\" target=\"_blank\" rel=\"noopener\">FISH-DATA-004</a> sýnir að stóll floti er samþættur og umsjón hans er hjá Fiskistofu. Þó eru engar heimildir með beinan alþjóðlegan samanburð á löndunareftirlit og skráningarskyldur Íslands gagnvart öðrum ríkjum til að staðfesta \"meðal þess strangasta sem þekkist\".",
+      "explanation": "<a href=\"https://island.is/en/permits-to-fish/quota-system\" title=\"Ministry of Food, Agriculture and Fisheries — Fisheries Management in Iceland; Marine and Freshwater Research Institute\" target=\"_blank\" rel=\"noopener\">FISH-DATA-022</a> staðfestir að íslenska kvótakerfið er talið meðal þeirra bestu í heiminum og hefur náð góðum árangri í sjálfbærni — þorskstofninn hefur tvöfaldast síðan snemma á 21. öldinni. Beinar heimildir um löndun, skráningu og rekjanleika skorta hins vegar í gagnagrunninum. <a href=\"https://oceans-and-fisheries.ec.europa.eu/fisheries/common-fisheries-policy_en\" title=\"European Commission — Communication on the Common Fisheries Policy (2024); STECF stock assessments\" target=\"_blank\" rel=\"noopener\">FISH-COMP-003</a> sýnir til samanburðar að ESB hefur bætt fiskveiðistjórnun sína — um 60% stofna í Norðaustur-Atlantshafi voru nýttir á hámarkssjálfbærum hátt árið 2023. Fullyrðingin um \"strangasta sem þekkist\" er ekki beint staðfest þótt engar heimildir mótmæli henni.",
       "supporting_evidence": [
         {
           "id": "FISH-DATA-022",
@@ -326,14 +352,14 @@
           "source_url": "https://island.is/en/permits-to-fish/quota-system"
         },
         {
-          "id": "FISH-DATA-004",
-          "source_name": "Fiskistofa (Directorate of Fisheries) — Fleet and employment statistics",
-          "source_url": "https://www.fiskistofa.is/english/"
+          "id": "FISH-LEGAL-003",
+          "source_name": "Icelandic Fisheries Management Act No. 116/2006",
+          "source_url": "https://www.fao.org/faolex/results/details/en/c/LEX-FAOC003455/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "FAO og OECD hafa birt alþjóðlegar úttektir á fiskveiðistjórnun þar sem Ísland fær gjarnan gott einkunn. Þær heimildir eru ekki í þessum grunni en myndu styrkja eða hrekja fullyrðinguna nákvæmar.",
-      "confidence": 0.65,
+      "missing_context": "Heimildir fjalla meira um kvótakerfið og sjálfbærni en sérstaklega um löndun, skráningu og rekjanleika. Samanburður við önnur ströng kerfi (t.d. Nýja-Sjáland) vantar úr gagnagrunninum.",
+      "confidence": 0.55,
       "speakers": [
         {
           "name": "Svanur Guðmundsson",
@@ -356,17 +382,17 @@
         "confidence": 0.6
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.gov.uk/government/statistics/uk-sea-fisheries-annual-statistics-report-2023\" title=\"UK Marine Management Organisation — UK Sea Fisheries Statistics 2023; UK Trade Info\" target=\"_blank\" rel=\"noopener\">FISH-COMP-005</a> sýnir að breska sjávarútvegsiðnaðurinn upplifði gagnstæðar afleiðingar eftir Brexit — tafir og aukinn kostnað við útflutning til ESB. Þetta bendir til þess að löndunarmynstrar fylgja hagrænum hvötum, ekki landhelgisreglum. Þó er fullyrðingin um hvar erlend skip myndu landa afla í íslenska dæminu spá sem enginn af heimildunum staðfestir beint með dæmum frá öðrum ríkjum sem hafa opnað fiskveiðisvæði sín.",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216\" title=\"Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-002</a> fjallar um Jaderow- og Agegate-málin þar sem Evrópudómstóllinn úrskurðaði að ESB-ríki megi ekki mismuna eftir þjóðerni við skráningu fiskiskipa — en heimilt sé að krefjast \"raunverulegra efnahagstengsla\", svo sem kröfu um löndun afla í viðkomandi ríki. Þetta bendir til þess að hættan á útflutningi afla sé raunveruleg en ekki óskoðuð í ESB-rétti. Fullyrðingin nær þó of langt með því að gefa í skyn að aflinn yrði sjálfkrafa landaður erlendis — ESB-réttur leyfir kröfu um löndun í heimahöfn.",
       "supporting_evidence": [
         {
-          "id": "FISH-COMP-005",
-          "source_name": "UK Marine Management Organisation — UK Sea Fisheries Statistics 2023; UK Trade Info",
-          "source_url": "https://www.gov.uk/government/statistics/uk-sea-fisheries-annual-statistics-report-2023"
+          "id": "PREC-LEGAL-002",
+          "source_name": "Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Löndunarskyldur (landing obligations) eru hluti af CFP og gætu krafist löndunar á tilteknum höfnum. Einnig eru til dæmi þar sem erlend skip landa afla í þeim löndum þar sem veitt er — spáin er líkleg en ekki óumdeild.",
-      "confidence": 0.6,
+      "missing_context": "ESB-dómstóllinn hefur viðurkennt að kröfur um \"raunveruleg efnahagsleg tengsl\" séu heimilar, þar á meðal kröfu um löndun afla á landi. Gildandi reglugerð ESB um sameiginlega sjávarútvegsstefnu (1380/2013) tekur einnig á þessu. Landfræðileg einangrun Íslands dregur enn frekar úr líkum á kvótahopping. Fullyrðingin lýsir kenningarlegri áhættu en vantar þessa mótvægisþætti.",
+      "confidence": 0.55,
       "speakers": [
         {
           "name": "Svanur Guðmundsson",
@@ -389,11 +415,16 @@
         "confidence": 0.65
       },
       "verdict": "partially_supported",
-      "explanation": "POL-DATA-005 staðfestir að sjávarútvegurinn leggur beint til um 8% af VLF og um 25% þegar upp- og niðurstreymis-starfsemi er talin með — þetta undirstrikar þær víðtæku efnahagslegu tengingar sem greinarhöfundur lýsir. <a href=\"https://www.gov.uk/government/statistics/uk-sea-fisheries-annual-statistics-report-2023\" title=\"UK Marine Management Organisation — UK Sea Fisheries Statistics 2023; UK Trade Info\" target=\"_blank\" rel=\"noopener\">FISH-COMP-005</a> og <a href=\"https://www.gov.uk/government/collections/uk-sea-fisheries-annual-statistics\" title=\"UK Marine Management Organisation — UK Sea Fisheries Statistics; House of Lords European Affairs Committee — Brexit and fisheries (2023)\" target=\"_blank\" rel=\"noopener\">PREC-HIST-014</a> sýna báðar að breytingar á fiskveiðiréttindum geta haft víðtækar afleiðingar á tengda starfsemi. Þó er spáin um \"störf sem fylgja\" of einfaldnandi — hluti vinnslu fer nú þegar fram erlendis og CFP bannar ekki íslenskum vinnsluverum.",
+      "explanation": "Fullyrðingin endurspeglar algengar áhyggjur útvegsmanna. POL-DATA-005 og POL-DATA-014 staðfesta að LÍÚ og SFS telja ESB-aðild ógn við kvótakerfið og íslenskt fullveldi yfir auðlindinni. <a href=\"https://www.gov.uk/government/statistics/uk-sea-fisheries-annual-statistics-report-2023\" title=\"UK Marine Management Organisation — UK Sea Fisheries Statistics 2023; UK Trade Info\" target=\"_blank\" rel=\"noopener\">FISH-COMP-005</a> sýnir að bresk sjávarútvegsframleiðsla varð fyrir viðskiptaáföllum eftir Brexit — útflutningur á sjávarafurðum til ESB lækkaði um 18% árið 2021. Þetta sýnir flókna tengingu milli fullveldis og markaðsaðgangs. Engar heimildir staðfesta þó beint að störf og verðmæti myndu \"færast út úr landi\" — <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> bendir á að raunveruleg áhrif séu háð samningum sem aldrei voru kláraðir.",
       "supporting_evidence": [
         {
           "id": "POL-DATA-005",
           "source_name": "LÍÚ and SFS public statements; Hagstofa Íslands national accounts",
+          "source_url": null
+        },
+        {
+          "id": "POL-DATA-014",
+          "source_name": "LÍÚ — Position paper on EU membership (2025); campaign finance declarations",
           "source_url": null
         },
         {
@@ -402,9 +433,20 @@
           "source_url": "https://www.gov.uk/government/statistics/uk-sea-fisheries-annual-statistics-report-2023"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "CFP krefst þess ekki að vinnsla fari fram í landinu þar sem fiskurinn er veiddur. Þó myndi breyting á aflaheimildum hafa beinan áhrif á hagkvæmni íslenskra vinnslustöðva sem eru háðar aðgangi að hráefni. Þetta er efnahagslegt líkindadæmi, ekki lögbundið.",
-      "confidence": 0.65,
+      "contradicting_evidence": [
+        {
+          "id": "TRADE-DATA-002",
+          "source_name": "EEA Agreement — Protocol 3 on trade in processed agricultural products",
+          "source_url": "https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf"
+        },
+        {
+          "id": "EEA-DATA-014",
+          "source_name": "Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)",
+          "source_url": "https://ioes.hi.is/en/institute-economic-studies"
+        }
+      ],
+      "missing_context": "Engin rannsókn í heimildum staðfestir beint að störf og skatttekjur myndu færast úr landi. Sameiginleg sjávarútvegsstefnan gerir ráð fyrir samningum um kvótaúthlutun og aðlögunartímabil. ESB-aðild myndi einnig opna tollfrjálsan aðgang fyrir sjávarafurðir sem nú eru utan EES-verndar.",
+      "confidence": 0.55,
       "speakers": [
         {
           "name": "Svanur Guðmundsson",
@@ -427,22 +469,22 @@
         "confidence": 0.6
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.eeas.europa.eu/eeas/eu-arctic-policy_en\" title=\"European Commission — EU Arctic Policy, Joint Communication JOIN(2021) 27\" target=\"_blank\" rel=\"noopener\">SOV-DATA-001</a> staðfestir að ESB hefur uppfært norðurslóðarstefnu sína (2021) með áherslu á sjálfbæra þróun og umhverfisvernd, og <a href=\"https://oceans-and-fisheries.ec.europa.eu/fisheries/common-fisheries-policy_en\" title=\"European Commission — Communication on the Common Fisheries Policy (2024); STECF stock assessments\" target=\"_blank\" rel=\"noopener\">FISH-COMP-003</a> sýnir að hlutfall stofna sem eru veiddir við sjálfbærar takmarkanir hefur hækkað verulega í Norðaustur-Atlantshafi. Þetta bendir til að stefnuleg þróun í Evrópu snýst um sjálfbærni. Þó eru engar heimildir sem fjalla sérstaklega um þrýsting varðandi hvalveiðar eða friðun hafsvæða sem sérstaka þróun.",
+      "explanation": "<a href=\"https://www.hafogvatn.is/en/research/whale-research\" title=\"Hafrannsóknastofnun — Cetacean consumption estimates; Víkingsson et al., NAMMCO Scientific Publications (2019)\" target=\"_blank\" rel=\"noopener\">FISH-DATA-026</a> staðfestir alþjóðlega umræðu um hlutverk hvala í vistkerfi sjávar, og Alþjóðahvalveiðiráðið hefur fjallað um neyslu hvala á fiskistofnum. Hins vegar fjalla engar heimildir beint um \"vaxandi alþjóðlegan þrýsting\" um friðun hafsvæða í tengslum við Ísland. <a href=\"https://www.eeas.europa.eu/eeas/eu-arctic-policy_en\" title=\"European Commission — EU Arctic Policy, Joint Communication JOIN(2021) 27\" target=\"_blank\" rel=\"noopener\">SOV-DATA-001</a> nefnir ESB-stefnu um norðurslóðir sem leggur áherslu á loftslagsbreytingar og sjálfbæra þróun, en tengir það ekki sérstaklega við hvalveiðar eða friðun hafsvæða.",
       "supporting_evidence": [
+        {
+          "id": "FISH-DATA-026",
+          "source_name": "Hafrannsóknastofnun — Cetacean consumption estimates; Víkingsson et al., NAMMCO Scientific Publications (2019)",
+          "source_url": "https://www.hafogvatn.is/en/research/whale-research"
+        },
         {
           "id": "SOV-DATA-001",
           "source_name": "European Commission — EU Arctic Policy, Joint Communication JOIN(2021) 27",
           "source_url": "https://www.eeas.europa.eu/eeas/eu-arctic-policy_en"
-        },
-        {
-          "id": "FISH-COMP-003",
-          "source_name": "European Commission — Communication on the Common Fisheries Policy (2024); STECF stock assessments",
-          "source_url": "https://oceans-and-fisheries.ec.europa.eu/fisheries/common-fisheries-policy_en"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "ESB og aðildarríki þess hafa sent formlegar kvartanir vegna hvalveiða Íslands í gegnum CITES og IWC. Þetta er skjalfest en ekki í þessum grunni. Fullyrðingin er í grundvallaratriðum sönn en heimildir hér staðfesta hana aðeins óbeint.",
-      "confidence": 0.6,
+      "missing_context": "Heimildir fjalla ekki beint um alþjóðlegan þrýsting um friðun hafsvæða gagnvart Íslandi. Hvalveiðistefna Íslands er pólitískt viðkvæm bæði innanlands og á alþjóðavettvangi, en beinar heimildir um aukinn þrýsting vantar. Samband hvala og fiskistofna er flókið og umdeilanlegt meðal sjávarvísindamanna.",
+      "confidence": 0.45,
       "speakers": [
         {
           "name": "Svanur Guðmundsson",
@@ -475,28 +517,27 @@
         "confidence": 0.6
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13\" target=\"_blank\" rel=\"noopener\">EEA-DATA-004</a> staðfestir að íslenska ITQ-kerfið var talið ósamrýmanlegt CFP-meginreglum án verulegrar aðlögunar, og POL-DATA-005 sýnir að atvinnulíf í sjávarútvegi er þeirrar skoðunar að CFP myndi undirgrafa þróun íslenskrar stjórnunar. Þó er fullyrðingin um \"vistkerfisnálgun\" sértæk — CFP inniheldur sjálf vistfræðilegar kröfur og meginregluna um hámarkssjálfbæra nýtingu (MSY), sem gæti í raun samræmst íslenskri nálgun.",
+      "explanation": "Sameiginleg sjávarútvegsstefna ESB byggir á öðrum meginreglum en íslenska aflamarkskerfið, og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13\" target=\"_blank\" rel=\"noopener\">EEA-DATA-004</a> staðfestir að sjávarútvegur var umdeildasti kaflinn í aðildarviðræðunum. Hins vegar nefna heimildir ekki sérstaklega vistkerfisnálgun eða fjölstofnagreiningar — fullyrðingin gengur lengra en heimildir ná. <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> bendir á að varanlegar undanþágur frá kjarna regluverksins séu ólíklegar, en aðlögunartímabil séu möguleg.",
       "supporting_evidence": [
+        {
+          "id": "POL-DATA-005",
+          "source_name": "LÍÚ and SFS public statements; Hagstofa Íslands national accounts",
+          "source_url": null
+        },
         {
           "id": "EEA-DATA-004",
           "source_name": "Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13",
           "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
         },
         {
-          "id": "POL-DATA-005",
-          "source_name": "LÍÚ and SFS public statements; Hagstofa Íslands national accounts",
-          "source_url": null
+          "id": "EEA-DATA-014",
+          "source_name": "Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)",
+          "source_url": "https://ioes.hi.is/en/institute-economic-studies"
         }
       ],
-      "contradicting_evidence": [
-        {
-          "id": "FISH-COMP-003",
-          "source_name": "European Commission — Communication on the Common Fisheries Policy (2024); STECF stock assessments",
-          "source_url": "https://oceans-and-fisheries.ec.europa.eu/fisheries/common-fisheries-policy_en"
-        }
-      ],
-      "missing_context": "CFP krefst lágmarkssamræmis en gefur ríkjum ákveðið svigrúm til að innleiða reglur á eigin forsendum. <a href=\"https://ec.europa.eu/eurostat/web/fisheries\" title=\"Danish Ministry of Food, Agriculture and Fisheries; Eurostat fisheries statistics\" target=\"_blank\" rel=\"noopener\">FISH-COMP-004</a> sýnir að Danmörk starfar vel innan CFP þótt kerfið sé frábrugðið íslenska. Hvort CFP myndi í raun þrengja íslenskt rannsóknarfrelsi í fiskveiðifræðum er óvisst.",
-      "confidence": 0.6,
+      "contradicting_evidence": [],
+      "missing_context": "Engin heimild fjallar beint um vistkerfisnálgun eða fjölstofnagreiningar sem hluta af sameiginlegu sjávarútvegsstefnunni. Sjávarútvegsstefna ESB hefur þó tekið breytingum frá 2013 og nýrri útgáfan leggur meiri áherslu á sjálfbærni. Raunveruleg áhrif á íslenskar rannsóknaraðferðir ráðast af samningsniðurstöðu.",
+      "confidence": 0.55,
       "speakers": [
         {
           "name": "Svanur Guðmundsson",
@@ -529,17 +570,22 @@
         "confidence": 0.6
       },
       "verdict": "partially_supported",
-      "explanation": "Þetta er efnahagsleg fullyrðing um kjöraðstæður á sameiginlegum markaði með ójafnt launastig. <a href=\"https://asi.is/vinnurettarvefur/vinnurettur/icelandic-labour-law/labour-market-and-trade-unions/collective-agreements/\" title=\"ASÍ — Collective agreements overview; European Commission — Employment acquis\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-005</a> staðfestir að launakjör á Íslandi eru verulega yfir evrópsku meðaltali og stéttarfélagsþátttaka er í allt önnur röð — 90% á Íslandi gegn 23% að meðaltali í ESB. Þetta skapar raunverulegan kostnarmun sem gæti leitt til þess sem lýst er. Þó er þetta efnafræðileg spá en engar heimildir meta beinlínis hvort slíkt myndi gerast í sjávarútvegi að Íslandi aðildarríki.",
+      "explanation": "Fullyrðingin lýsir almennu efnahagslegu sjónarmiði um samkeppni á sameiginlegum markaði. <a href=\"https://asi.is/vinnurettarvefur/vinnurettur/icelandic-labour-law/labour-market-and-trade-unions/collective-agreements/\" title=\"ASÍ — Collective agreements overview; European Commission — Employment acquis\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-005</a> staðfestir að launakerfi ríkja séu ólík — félagstíðni er um 90% á Íslandi en um 23% að meðaltali í ESB — og bendir til þess að sameiginlegur markaður geti skapað ójafna samkeppnisskilyrði. <a href=\"https://www.legislation.gov.uk/eut/eea-agreement/article/19\" title=\"EEA Agreement Article 19; Icelandic Ministry for Foreign Affairs — EEA review documentation\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-008</a> sýnir hvernig EES-samningurinn undanskilur landbúnað frá frjálsri vöruverslun einmitt til að verja innlendan framleiðanda gegn ódýrari innflutningi. Þó er fullyrðingin of einföld; tilskipun ESB um lágmarkslaun (2022/2041) tekur sérstaklega tillit til norrænna kjarasamningslíkana.",
       "supporting_evidence": [
         {
           "id": "LABOUR-DATA-005",
           "source_name": "ASÍ — Collective agreements overview; European Commission — Employment acquis",
           "source_url": "https://asi.is/vinnurettarvefur/vinnurettur/icelandic-labour-law/labour-market-and-trade-unions/collective-agreements/"
+        },
+        {
+          "id": "AGRI-DATA-008",
+          "source_name": "EEA Agreement Article 19; Icelandic Ministry for Foreign Affairs — EEA review documentation",
+          "source_url": "https://www.legislation.gov.uk/eut/eea-agreement/article/19"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "ESB-reglur um senda starfsmenn og jafnar samkeppnisskilyrði (level playing field) eru hannaðar til að koma í veg fyrir kynlægar laun-kapíðkeppni. Hvort þær duga í sjávarútvegi er óvíst en þær eru til staðar.",
-      "confidence": 0.6,
+      "missing_context": "Tilskipun ESB um lágmarkslaun verndar norræn kjarasamningslíkön þar sem félagstíðni er yfir 80%. Norðurlöndin innan ESB hafa samið um sérvernd sem Ísland gæti vísað til. Þó ber að hafa í huga að framtíðarlöggjöf ESB á sviði vinnumarkaðar gæti verið síður rúmgóð.",
+      "confidence": 0.55,
       "speakers": [
         {
           "name": "Svanur Guðmundsson",
