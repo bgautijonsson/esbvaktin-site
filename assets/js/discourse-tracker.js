@@ -85,7 +85,7 @@
     search: "",
     source: "",
     category: "",
-    groupBy: "",
+    groupBy: "date",
     sort: "article_date",
     sortDir: "DESC",
   };
@@ -103,6 +103,7 @@
     if (!resp.ok) throw new Error(`Failed to fetch ${JSON_URL}: ${resp.status}`);
     jsonData = await resp.json();
 
+    populateFilterOptions();
     renderStats();
     renderResults();
     bindEvents();
@@ -253,6 +254,30 @@
         <div class="ct-loading">Hle&eth; greiningum&hellip;</div>
       </div>
     `;
+  }
+
+  function populateFilterOptions() {
+    const data = jsonData || [];
+
+    const sourceSelect = document.getElementById("dt-source");
+    const sources = [...new Set(data.map((r) => r.article_source).filter(Boolean))].sort((a, b) =>
+      a.localeCompare(b, "is")
+    );
+    sourceSelect.innerHTML =
+      `<option value="">Allir fjölmiðlar</option>` +
+      sources.map((s) => `<option value="${s}">${s}</option>`).join("");
+
+    const categorySelect = document.getElementById("dt-category");
+    const categories = [...new Set(data.flatMap((r) => r.categories || []).filter(Boolean))].sort((a, b) =>
+      (CATEGORY_LABELS[a] || a).localeCompare(CATEGORY_LABELS[b] || b, "is")
+    );
+    categorySelect.innerHTML =
+      `<option value="">Allir flokkar</option>` +
+      categories.map((k) => `<option value="${k}">${CATEGORY_LABELS[k] || k}</option>`).join("");
+
+    // Sync group select with default filter state
+    const groupSelect = document.getElementById("dt-group");
+    groupSelect.value = filters.groupBy;
   }
 
   function renderStats() {
