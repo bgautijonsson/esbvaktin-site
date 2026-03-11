@@ -1,9 +1,111 @@
 const fs = require("fs");
 const path = require("path");
 
+/* ── Icelandic slug (mirrors the isSlug filter in eleventy.config.js) ── */
+function isSlug(str) {
+  if (!str) return "";
+  return str
+    .toLowerCase()
+    .replace(/[áà]/g, "a")
+    .replace(/[ðÐ]/g, "d")
+    .replace(/[éè]/g, "e")
+    .replace(/[íì]/g, "i")
+    .replace(/[óò]/g, "o")
+    .replace(/[úù]/g, "u")
+    .replace(/[ýỳ]/g, "y")
+    .replace(/[þÞ]/g, "th")
+    .replace(/[æÆ]/g, "ae")
+    .replace(/[öÖ]/g, "o")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+/* ── Build lookup map from a directory of JSON files, keyed by slug ── */
+function buildLookup(dir) {
+  const map = new Map();
+  if (!fs.existsSync(dir)) return map;
+  for (const f of fs.readdirSync(dir).filter((f) => f.endsWith(".json"))) {
+    try {
+      const data = JSON.parse(fs.readFileSync(path.join(dir, f), "utf-8"));
+      if (data.slug) map.set(data.slug, data);
+    } catch (_) {
+      /* skip malformed files */
+    }
+  }
+  return map;
+}
+
+/* ── Enrich an overview with cross-referenced entity/report data ── */
+function enrichOverview(overview, entityMap, reportMap) {
+  // Enrich active_entities with detail data
+  if (overview.active_entities) {
+    overview.active_entities = overview.active_entities.map((ent) => {
+      const detail = entityMap.get(ent.slug);
+      if (!detail) return ent;
+      return {
+        ...ent,
+        type: detail.type,
+        stance: detail.stance,
+        stance_score: detail.stance_score,
+        credibility: detail.credibility,
+        role: detail.role,
+        party: detail.party,
+        description: detail.description,
+        scorecard: detail.scorecard,
+        attribution_counts: detail.attribution_counts,
+        article_count: (detail.articles || []).length,
+        althingi_stats: detail.althingi_stats,
+      };
+    });
+  }
+
+  // Enrich articles with report data
+  if (overview.articles) {
+    overview.articles = overview.articles.map((art) => {
+      const slug = isSlug(art.title);
+      const report = reportMap.get(slug);
+      if (!report) return { ...art, slug };
+      return {
+        ...art,
+        slug,
+        verdict_counts: report.verdict_counts,
+        categories: report.categories,
+        summary: report.summary,
+        article_author: report.article_author,
+        participants: (report.participants || []).map((p) => ({
+          name: p.name,
+          party: p.party,
+          slug: p.slug,
+        })),
+        source_type: report.source_type,
+      };
+    });
+  }
+
+  // Enrich notable_quotes speaker info from entity data
+  if (overview.notable_quotes) {
+    overview.notable_quotes = overview.notable_quotes.map((q) => {
+      if (!q.speaker_slug) return q;
+      const detail = entityMap.get(q.speaker_slug);
+      if (!detail) return q;
+      return {
+        ...q,
+        speaker_type: detail.type,
+        speaker_role: detail.role,
+        speaker_party: detail.party,
+        speaker_stance: detail.stance,
+        speaker_stance_score: detail.stance_score,
+        speaker_credibility: detail.credibility,
+      };
+    });
+  }
+
+  return overview;
+}
+
 /**
  * Global data file that reads all JSON overview files from _data/overviews/
- * and makes them available as `overviews` in all templates.
+ * and enriches them with cross-referenced entity and report data.
  */
 module.exports = function () {
   const detailsDir = path.join(__dirname, "overviews");
@@ -12,6 +114,10 @@ module.exports = function () {
     return [];
   }
 
+  // Build lookup maps for enrichment
+  const entityMap = buildLookup(path.join(__dirname, "entity-details"));
+  const reportMap = buildLookup(path.join(__dirname, "reports"));
+
   const files = fs
     .readdirSync(detailsDir)
     .filter((f) => f.endsWith(".json"))
@@ -19,6 +125,6 @@ module.exports = function () {
 
   return files.map((f) => {
     const raw = fs.readFileSync(path.join(detailsDir, f), "utf-8");
-    return JSON.parse(raw);
+    return enrichOverview(JSON.parse(raw), entityMap, reportMap);
   });
 };

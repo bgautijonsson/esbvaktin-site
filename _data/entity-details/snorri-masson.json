@@ -6,9 +6,10 @@
   "role": "varaformaður Miðflokksins",
   "party": "Miðflokkurinn",
   "stance": "anti_eu",
-  "stance_score": -1.0,
-  "credibility": 0.5,
+  "stance_score": -0.67,
+  "credibility": 0.4,
   "attribution_counts": {
+    "asserted": 4,
     "quoted": 6,
     "paraphrased": 2,
     "mentioned": 1
@@ -23,7 +24,8 @@
   "scorecard": {
     "supported": 2,
     "partially_supported": 4,
-    "misleading": 2
+    "misleading": 4,
+    "unverifiable": 2
   },
   "claims": [
     {
@@ -115,6 +117,46 @@
       "article_title": "Snorri segir húsnæði verða jafndýrt þótt vextir lækki",
       "article_source": "Heimildin",
       "article_date": "2026-03-09"
+    },
+    {
+      "claim_text": "Eiríkur Rögnvaldsson hefur lýst yfir opinberri jákvæðri afstöðu til ESB-aðildar bæði vegna meintra hagsmuna íslenskunnar og annarra þátta.",
+      "verdict": "unverifiable",
+      "category": "party_positions",
+      "attribution": "asserted",
+      "article_slug": "opolitiskur-frodleiksmoli-um-esb",
+      "article_title": "Ópólitískur fróðleiksmoli um ESB",
+      "article_source": "Vísir",
+      "article_date": "2026-03-11"
+    },
+    {
+      "claim_text": "Eiríkur Rögnvaldsson komst að þeirri niðurstöðu á Vísindavefnum að staða íslenskunnar myndi styrkjast verulega við ESB-aðild.",
+      "verdict": "unverifiable",
+      "category": "eea_eu_law",
+      "attribution": "asserted",
+      "article_slug": "opolitiskur-frodleiksmoli-um-esb",
+      "article_title": "Ópólitískur fróðleiksmoli um ESB",
+      "article_source": "Vísir",
+      "article_date": "2026-03-11"
+    },
+    {
+      "claim_text": "Hugsjónin með Evrópusambandinu er að efnahagslegur og pólitískur samruni ríkjanna vegi þyngra en sérstaða þjóðríkjanna.",
+      "verdict": "misleading",
+      "category": "sovereignty",
+      "attribution": "asserted",
+      "article_slug": "opolitiskur-frodleiksmoli-um-esb",
+      "article_title": "Ópólitískur fróðleiksmoli um ESB",
+      "article_source": "Vísir",
+      "article_date": "2026-03-11"
+    },
+    {
+      "claim_text": "Við ESB-aðild Íslands gæti aðstreymi innflytjenda aukist enn með þeim afleiðingum að Íslendingar gætu ekki haft áhrif á það.",
+      "verdict": "misleading",
+      "category": "sovereignty",
+      "attribution": "asserted",
+      "article_slug": "opolitiskur-frodleiksmoli-um-esb",
+      "article_title": "Ópólitískur fróðleiksmoli um ESB",
+      "article_source": "Vísir",
+      "article_date": "2026-03-11"
     }
   ],
   "articles": [
@@ -128,6 +170,16 @@
         "mentioned",
         "paraphrased",
         "quoted"
+      ]
+    },
+    {
+      "slug": "opolitiskur-frodleiksmoli-um-esb",
+      "title": "Ópólitískur fróðleiksmoli um ESB",
+      "source": "Vísir",
+      "date": "2026-03-11",
+      "claim_count": 4,
+      "attribution_types": [
+        "asserted"
       ]
     }
   ]

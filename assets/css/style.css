@@ -850,6 +850,53 @@ img { max-width: 100%; height: auto; }
   margin-right: 0.25rem;
 }
 
+.report-participants-single {
+  grid-template-columns: 1fr;
+  max-width: 480px;
+}
+
+.report-participant-tags {
+  display: inline-flex;
+  gap: 0.35rem;
+  align-items: center;
+  margin-left: 0.4rem;
+}
+
+.report-participant-tag {
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.tag-author {
+  background: var(--accent);
+  color: #fff;
+}
+
+.tag-attribution {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+}
+
+.tag-stance {
+  font-size: 0.55rem;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.tag-stance-pro {
+  color: var(--verdict-supported, #2e7d32);
+}
+
+.tag-stance-anti {
+  color: var(--verdict-unsupported, #c62828);
+}
+
 .report-summary {
   font-size: 1.05rem;
   color: var(--text-secondary);

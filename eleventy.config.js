@@ -88,6 +88,27 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("confidenceLabel", (c) => taxonomy.confidenceLabels[c] || c);
   eleventyConfig.addFilter("entityTypeLabel", (t) => taxonomy.entityTypeLabels[t] || t);
   eleventyConfig.addFilter("attributionLabel", (a) => taxonomy.attributionLabels[a] || a);
+
+  // ── Source domain → display name + CSS class ───────────────────
+  const sourceDomainMap = {
+    "visir.is":    { name: "Vísir",        css: "source-visir" },
+    "ruv.is":      { name: "RÚV",          css: "source-ruv" },
+    "mbl.is":      { name: "Morgunblaðið", css: "source-mbl" },
+    "heimildin.is":{ name: "Heimildin",    css: "source-heimildin" },
+    "kjarninn.is": { name: "Kjarninn",     css: "source-kjarninn" },
+    "stundin.is":  { name: "Stundin",      css: "source-stundin" },
+    "frettabladid.is": { name: "Fréttablaðið", css: "source-frettabladid" },
+    "althingi.is": { name: "Alþingi",      css: "source-althingi" },
+  };
+  eleventyConfig.addFilter("sourceName", (domain) => {
+    const entry = sourceDomainMap[domain];
+    return entry ? entry.name : domain;
+  });
+  eleventyConfig.addFilter("sourceClass", (domain) => {
+    const entry = sourceDomainMap[domain];
+    return entry ? entry.css : "source-other";
+  });
+
   // ── Number formatting ───────────────────────────────────────────
   eleventyConfig.addFilter("localeString", (n) => {
     if (n == null) return "";

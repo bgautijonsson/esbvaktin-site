@@ -29,8 +29,8 @@ evidence_preview: true
 
     {% if report.participants and report.participants | length %}
     <div class="report-participants">
-      <h3>Þátttakendur</h3>
-      <div class="report-participants-grid">
+      <h3>{% if report.source_type == "panel_show" %}Þátttakendur{% else %}Raddir í greininni{% endif %}</h3>
+      <div class="report-participants-grid{% if report.participants | length == 1 %} report-participants-single{% endif %}">
         {% for p in report.participants %}
         <div class="report-participant">
           <div class="report-participant-info">
@@ -39,6 +39,12 @@ evidence_preview: true
             {% else %}
             <span class="report-participant-name">{{ p.name }}</span>
             {% endif %}
+            <span class="report-participant-tags">
+              {% if p.role_in_article == "author" %}<span class="report-participant-tag tag-author">Höfundur</span>{% endif %}
+              {% if p.attribution_type %}<span class="report-participant-tag tag-attribution">{{ p.attribution_type | attributionLabel }}</span>{% endif %}
+              {% if p.stance == "pro_eu" %}<span class="report-participant-tag tag-stance tag-stance-pro" title="Fylgjandi ESB-aðild">●</span>
+              {% elif p.stance == "anti_eu" %}<span class="report-participant-tag tag-stance tag-stance-anti" title="Andvíg(ur) ESB-aðild">●</span>{% endif %}
+            </span>
             {% if p.party or p.role %}
             <span class="report-participant-role">
               {%- if p.party %}{{ p.party }}{% endif %}{% if p.party and p.role %} — {% endif %}{% if p.role %}{{ p.role }}{% endif -%}

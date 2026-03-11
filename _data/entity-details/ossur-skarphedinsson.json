@@ -2,13 +2,15 @@
   "slug": "ossur-skarphedinsson",
   "name": "Össur Skarphéðinsson",
   "type": "individual",
-  "description": "Þáverandi utanríkisráðherra — hlynnt ESB-aðild.",
+  "description": "Þáverandi utanríkisráðherra (Samfylkingin) — hlutlaus um ESB-aðild.",
   "role": "þáverandi utanríkisráðherra",
-  "party": null,
-  "stance": "pro_eu",
-  "stance_score": 1.0,
-  "credibility": null,
+  "party": "Samfylkingin",
+  "stance": "neutral",
+  "stance_score": 0.0,
+  "credibility": 0.5,
   "attribution_counts": {
+    "quoted": 1,
+    "paraphrased": 1,
     "mentioned": 2
   },
   "althingi_stats": {
@@ -18,7 +20,9 @@
     "first_speech": "2009-05-28",
     "last_speech": "2016-09-13"
   },
-  "scorecard": {},
+  "scorecard": {
+    "partially_supported": 1
+  },
   "claims": [
     {
       "claim_text": "Stefan Füle, þáverandi stækkunarstjóri ESB, hafi sagt á blaðamannafundi með Össuri Skarphéðinssyni að engar varanlegar undanþágur séu frá regluverki ESB.",
@@ -39,6 +43,16 @@
       "article_title": "ESB-pakkinn er galopinn",
       "article_source": "Vísir",
       "article_date": "2026-03-09"
+    },
+    {
+      "claim_text": "Össur Skarphéðinsson, þáverandi þingmaður Samfylkingarinnar, taldi árið 2015 að ríkisstjórnin hefði brotið gegn 24. gr. þingskapalaga með því að bera ekki viðræðuslit við Evrópusambandið undir utanríkismálanefnd, og að málinu hafi beinlínis verið haldið leyndu fyrir nefndarmönnum.",
+      "verdict": "partially_supported",
+      "category": "eea_eu_law",
+      "attribution": "paraphrased",
+      "article_slug": "braut-rikisstjornin-thingskaparlog-umdeilt-akvaedi-sem-hefur-itrekad-valdid-atokum",
+      "article_title": "Braut ríkisstjórnin þingskaparlög? – Umdeilt ákvæði sem hefur ítrekað valdið átökum",
+      "article_source": "DV",
+      "article_date": "2026-03-10"
     }
   ],
   "articles": [
@@ -50,6 +64,16 @@
       "claim_count": 2,
       "attribution_types": [
         "mentioned"
+      ]
+    },
+    {
+      "slug": "braut-rikisstjornin-thingskaparlog-umdeilt-akvaedi-sem-hefur-itrekad-valdid-atokum",
+      "title": "Braut ríkisstjórnin þingskaparlög? – Umdeilt ákvæði sem hefur ítrekað valdið átökum",
+      "source": "DV",
+      "date": "2026-03-10",
+      "claim_count": 1,
+      "attribution_types": [
+        "paraphrased"
       ]
     }
   ]

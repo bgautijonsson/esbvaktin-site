@@ -6,6 +6,7 @@ return_link_support: true
 
 {% set kn = overview.key_numbers %}
 {% set verdictOrder = ["supported", "partially_supported", "unverifiable", "unsupported", "misleading"] %}
+{% set attrOrder = ["quoted", "asserted", "paraphrased", "mentioned"] %}
 {% set verdictTotal = 0 %}
 {% if kn.verdict_breakdown %}
   {% for v in verdictOrder %}
@@ -86,7 +87,9 @@ return_link_support: true
   </section>
   {% endif %}
 
-  {# ── Notable quotes ── #}
+  {# ══════════════════════════════════════════════════════════════════
+     Notable quotes — enriched with speaker info cards
+     ══════════════════════════════════════════════════════════════════ #}
   {% if overview.notable_quotes | length %}
   <section class="od-quotes">
     <h2>Athyglisverðar tilvitnanir</h2>
@@ -94,30 +97,58 @@ return_link_support: true
     <blockquote class="od-quote">
       <p>{{ quote.text }}</p>
       <footer>
-        <cite>
-          {% if quote.speaker_slug %}
-            <strong><a href="/raddirnar/{{ quote.speaker_slug }}/">{{ quote.speaker }}</a></strong>
-          {% elif quote.speaker %}
-            <strong>{{ quote.speaker }}</strong>
+        {# ── Speaker info card (enriched) ── #}
+        {% if quote.speaker_slug and quote.speaker_role %}
+          {# Compute stance hue/sat #}
+          {% set qs = quote.speaker_stance_score or 0 %}
+          {% if qs >= 0 %}{% set qHue = 60 + qs * 150 %}{% else %}{% set qHue = 60 + qs * 60 %}{% endif %}
+          {% set qSat = 10 + (qs if qs >= 0 else -qs) * 60 %}
+          {% if qs >= 0.5 %}{% set qStanceLabel = "ESB-jákvæð" %}
+          {% elif qs <= -0.5 %}{% set qStanceLabel = "ESB-gagnrýnin" %}
+          {% elif qs > -0.1 and qs < 0.1 %}{% set qStanceLabel = "Hlutlaus" %}
+          {% else %}{% set qStanceLabel = "Blandað" %}{% endif %}
+          <div class="od-quote-speaker" style="--stance-hue: {{ qHue }}; --stance-sat: {{ qSat }}%">
+            <div class="od-quote-speaker-top">
+              <a href="/raddirnar/{{ quote.speaker_slug }}/" class="od-quote-speaker-name">{{ quote.speaker }}</a>
+              <span class="od-quote-stance">{{ qStanceLabel }}</span>
+            </div>
+            <div class="od-quote-speaker-meta">
+              <span class="od-quote-role">{{ quote.speaker_role }}{% if quote.speaker_party %} · {{ quote.speaker_party }}{% endif %}</span>
+              {% if quote.speaker_credibility is number %}
+                <span class="od-quote-cred">Trúv. {{ (quote.speaker_credibility * 100) | round }}%</span>
+              {% endif %}
+            </div>
+          </div>
+        {% elif quote.speaker_slug %}
+          <cite><strong><a href="/raddirnar/{{ quote.speaker_slug }}/">{{ quote.speaker }}</a></strong></cite>
+        {% elif quote.speaker and quote.speaker != "Óþekkt" %}
+          <cite><strong>{{ quote.speaker }}</strong></cite>
+        {% endif %}
+        {# ── Source + tags row ── #}
+        <div class="od-quote-tags">
+          {% if quote.source_slug %}
+            <a href="/umraedan/{{ quote.source_slug }}/" class="od-quote-source-link">{{ quote.source }}</a>
+          {% elif quote.source %}
+            <span class="od-quote-source-text">{{ quote.source }}</span>
           {% endif %}
-          {% if quote.source_slug %} — <a href="/umraedan/{{ quote.source_slug }}/">{{ quote.source }}</a>
-          {% elif quote.source %} — {{ quote.source }}{% endif %}
-        </cite>
-        {% if quote.verdict %}
-          <span class="ct-verdict-pill verdict-{{ quote.verdict | replace("partially_supported", "partial") }}">
-            {{ quote.verdict | verdictLabel }}
-          </span>
-        {% endif %}
-        {% if quote.category %}
-          <a href="/malefni/{{ quote.category }}/" class="ct-category-tag">{{ quote.category_is }}</a>
-        {% endif %}
+          {% if quote.verdict %}
+            <span class="ct-verdict-pill verdict-{{ quote.verdict | replace("partially_supported", "partial") }}">
+              {{ quote.verdict | verdictLabel }}
+            </span>
+          {% endif %}
+          {% if quote.category %}
+            <a href="/malefni/{{ quote.category }}/" class="ct-category-tag">{{ quote.category_is }}</a>
+          {% endif %}
+        </div>
       </footer>
     </blockquote>
     {% endfor %}
   </section>
   {% endif %}
 
-  {# ── Topic activity ── #}
+  {# ══════════════════════════════════════════════════════════════════
+     Topic activity
+     ══════════════════════════════════════════════════════════════════ #}
   {% if overview.topic_activity | length %}
   <section class="od-topics">
     <h2>Virkni eftir málefnum</h2>
@@ -144,68 +175,236 @@ return_link_support: true
   </section>
   {% endif %}
 
-  {# ── Top claims ── #}
+  {# ══════════════════════════════════════════════════════════════════
+     Top claims — rich cards with verdict, confidence, sighting badge
+     ══════════════════════════════════════════════════════════════════ #}
   {% if overview.top_claims | length %}
   <section class="od-top-claims">
     <h2>Helstu fullyrðingar</h2>
     {% for item in overview.top_claims %}
-    <div class="od-claim-row">
-      <span class="ct-verdict-pill verdict-{{ item.verdict | replace("partially_supported", "partial") }}">
-        {{ item.verdict | verdictLabel }}
-      </span>
-      <span class="od-claim-text">{{ item.canonical_text_is }}</span>
-      <div class="od-claim-meta">
+    <div class="od-claim-card">
+      <div class="od-claim-header">
+        <span class="ct-verdict-pill verdict-{{ item.verdict | replace("partially_supported", "partial") }}">
+          {{ item.verdict | verdictLabel }}
+        </span>
         {% if item.category %}
           <a href="/malefni/{{ item.category }}/" class="ct-category-tag">{{ item.category_is }}</a>
         {% endif %}
-        {% if item.sources | length %}
-          <span class="od-claim-sources">
-            {% for src in item.sources %}
-              <a href="/umraedan/{{ src.slug }}/" class="od-claim-source-link">{{ src.title }}</a>{% if not loop.last %}, {% endif %}
-            {% endfor %}
-          </span>
+        {% if item.sighting_count and item.sighting_count > 1 %}
+          <span class="od-claim-sightings">{{ item.sighting_count }}×</span>
         {% endif %}
       </div>
+      <p class="od-claim-text">{{ item.canonical_text_is }}</p>
+      {% if item.confidence is number %}
+      <div class="od-claim-confidence">
+        <span class="od-claim-conf-label">Áreiðanleiki</span>
+        <span class="od-claim-conf-bar" style="width: {{ (item.confidence * 60) | round }}px"></span>
+        <span class="od-claim-conf-value">{{ (item.confidence * 100) | round }}%</span>
+      </div>
+      {% endif %}
+      {% if item.sources | length %}
+      <div class="od-claim-footer">
+        <span class="od-claim-sources-label">Heimildir:</span>
+        {% for src in item.sources %}
+          <a href="/umraedan/{{ src.slug }}/" class="od-claim-source-pill">{{ src.title }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
     </div>
     {% endfor %}
   </section>
   {% endif %}
 
-  {# ── Active entities ── #}
+  {# ══════════════════════════════════════════════════════════════════
+     Active entities — rich cards matching Raddirnar tracker
+     ══════════════════════════════════════════════════════════════════ #}
   {% if overview.active_entities | length %}
   <section class="od-entities">
     <h2>Virkir aðilar</h2>
     <div class="od-entity-grid">
       {% for ent in overview.active_entities %}
-      <a href="/raddirnar/{{ ent.slug }}/" class="od-entity-card">
-        <h3 class="od-entity-name">{{ ent.name }}</h3>
-        <span class="od-entity-claims">{{ ent.claims_made }} fullyrðing{{ "ar" if ent.claims_made > 1 else "" }}</span>
-        {% if ent.top_topics | length %}
-        <div class="od-entity-topics">
-          {% for t in ent.top_topics %}
-            <span class="ct-category-tag">{{ t }}</span>
+        {# Compute stance hue/sat for CSS custom properties #}
+        {% set es = ent.stance_score or 0 %}
+        {% if es >= 0 %}{% set eHue = 60 + es * 150 %}{% else %}{% set eHue = 60 + es * 60 %}{% endif %}
+        {% set eSat = 10 + (es if es >= 0 else -es) * 60 %}
+        {% if es >= 0.5 %}{% set eStanceLabel = "ESB-jákvæð" %}
+        {% elif es <= -0.5 %}{% set eStanceLabel = "ESB-gagnrýnin" %}
+        {% elif es > -0.1 and es < 0.1 %}{% set eStanceLabel = "Hlutlaus" %}
+        {% else %}{% set eStanceLabel = "Blandað" %}{% endif %}
+        {% set dotLeft = ((es + 1) / 2 * 100) %}
+        {# Scorecard total for verdict mini-bar #}
+        {% set scTotal = 0 %}
+        {% if ent.scorecard %}
+          {% for v, count in ent.scorecard %}
+            {% set scTotal = scTotal + count %}
           {% endfor %}
+        {% endif %}
+        {# Attribution total #}
+        {% set attrTotal = 0 %}
+        {% if ent.attribution_counts %}
+          {% for a, count in ent.attribution_counts %}
+            {% set attrTotal = attrTotal + count %}
+          {% endfor %}
+        {% endif %}
+      <a href="/raddirnar/{{ ent.slug }}/" class="od-entity-card" style="--stance-hue: {{ eHue }}; --stance-sat: {{ eSat }}%">
+        {# Top row: Name (left) + Stance indicator (right) — mirrors et-card-top #}
+        <div class="od-entity-top">
+          <h3 class="od-entity-name">{{ ent.name }}</h3>
+          {% if ent.stance_score is number %}
+          <div class="od-stance-indicator">
+            <div class="od-stance-track">
+              <span class="od-stance-dot" style="left: {{ dotLeft }}%"></span>
+            </div>
+            <span class="od-stance-label">{{ eStanceLabel }}</span>
+          </div>
+          {% endif %}
+        </div>
+
+        {# Role with party in parentheses — mirrors et-card-role #}
+        {% if ent.role %}
+          <p class="od-entity-role">{{ ent.role }}{% if ent.party %} ({{ ent.party }}){% endif %}</p>
+        {% endif %}
+
+        {# Type badge — below role, mirrors et-type-badge #}
+        {% if ent.type %}
+          <span class="et-type-badge et-type-{{ ent.type }}">{{ ent.type | entityTypeLabel }}</span>
+        {% endif %}
+
+        {# Stats row — pills matching et-card-stats #}
+        <div class="od-entity-stats">
+          <span class="od-entity-stat">{{ ent.claims_made }} fullyrðing{{ "ar" if ent.claims_made > 1 else "" }}</span>
+          {% if ent.article_count %}
+            <span class="od-entity-stat">{{ ent.article_count }} grein{{ "ar" if ent.article_count > 1 else "ing" }}</span>
+          {% endif %}
+          {% if ent.althingi_stats and ent.althingi_stats.speech_count %}
+            <span class="od-entity-stat od-entity-stat--althingi">{{ ent.althingi_stats.speech_count }} þingræður</span>
+          {% endif %}
+        </div>
+
+        {# Attribution breakdown bar — mirrors et-attribution #}
+        {% if attrTotal > 0 %}
+        <div class="od-attribution">
+          <div class="od-attr-bar">
+            {% for a in attrOrder %}
+              {% set ac = ent.attribution_counts[a] or 0 %}
+              {% if ac %}
+                {% set apct = (ac / attrTotal * 100) | round(1) %}
+                <span class="et-attr-seg et-attr-{{ a }}" style="width: {{ apct }}%" title="{{ a | attributionLabel }}: {{ ac }}"></span>
+              {% endif %}
+            {% endfor %}
+          </div>
+          <div class="od-attr-legend">
+            {% for a in attrOrder %}
+              {% set ac = ent.attribution_counts[a] or 0 %}
+              {% if ac %}
+                <span class="et-attr-legend-item et-attr-{{ a }}-text">{{ a | attributionLabel }} {{ ac }}</span>
+              {% endif %}
+            {% endfor %}
+          </div>
         </div>
         {% endif %}
+
+        {# Credibility bar — mirrors et-credibility #}
+        {% if ent.credibility is number %}
+        <div class="od-credibility">
+          <span class="od-credibility-label">Trúverðugleiki</span>
+          <div class="od-credibility-bar">
+            <div class="od-credibility-fill" style="width: {{ (ent.credibility * 100) | round }}%"></div>
+          </div>
+          <span class="od-credibility-value">{{ (ent.credibility * 100) | round }}%</span>
+        </div>
+        {% endif %}
+
+        {# "Birtist í X greinum" + "Sjá meira" — mirrors et-articles-section + et-see-more #}
+        {% if ent.article_count %}
+        <div class="od-entity-articles-note">
+          Birtist í {{ ent.article_count }} grein{{ "um" if ent.article_count > 1 else "ing" }}
+        </div>
+        {% endif %}
+        <span class="od-entity-see-more">Sjá meira &rarr;</span>
       </a>
       {% endfor %}
     </div>
   </section>
   {% endif %}
 
-  {# ── Articles analysed ── #}
+  {# ══════════════════════════════════════════════════════════════════
+     Articles analysed — rich cards matching Umræðan tracker
+     ══════════════════════════════════════════════════════════════════ #}
   {% if overview.articles | length %}
   <section class="od-articles">
     <h2>Greiningar ({{ overview.articles | length }})</h2>
     <div class="od-articles-grid">
       {% for art in overview.articles %}
-      <a href="/umraedan/{{ art.title | isSlug }}/" class="od-article-card">
-        <h3 class="od-article-title">{{ art.title }}</h3>
-        <div class="od-article-meta">
-          {% if art.source %}<span class="od-article-source">{{ art.source }}</span>{% endif %}
+        {# Verdict bar total #}
+        {% set artTotal = 0 %}
+        {% if art.verdict_counts %}
+          {% for v in verdictOrder %}
+            {% set artTotal = artTotal + (art.verdict_counts[v] or 0) %}
+          {% endfor %}
+        {% endif %}
+      <a href="/umraedan/{{ art.slug or (art.title | isSlug) }}/" class="od-article-card">
+        {# Source badge + date #}
+        <div class="od-article-top">
+          {% if art.source %}
+            <span class="dt-source-badge {{ art.source | sourceClass }}">{{ art.source | sourceName }}</span>
+          {% endif %}
           {% if art.date %}<time datetime="{{ art.date }}">{{ art.date | isDate }}</time>{% endif %}
         </div>
-        <span class="od-article-claims">{{ art.claim_count }} fullyrðing{{ "ar" if art.claim_count > 1 else "" }}</span>
+
+        <h3 class="od-article-title">{{ art.title }}</h3>
+
+        {% if art.article_author %}
+          <span class="od-article-author">{{ art.article_author }}</span>
+        {% endif %}
+
+        {# Summary (3-line clamp) #}
+        {% if art.summary and art.summary | length > 30 %}
+          <p class="od-article-summary">{{ art.summary }}</p>
+        {% endif %}
+
+        {# Verdict bar (full height like discourse tracker) #}
+        {% if artTotal > 0 %}
+        <div class="od-article-verdict-bar" role="img" aria-label="Niðurstöður">
+          {% for v in verdictOrder %}
+            {% set count = art.verdict_counts[v] or 0 %}
+            {% if count %}
+              {% set pct = (count / artTotal * 100) | round(1) %}
+              <span class="report-bar-seg verdict-{{ v | replace("partially_supported", "partial") }}"
+                    style="width:{{ pct }}%"
+                    title="{{ v | verdictLabel }}: {{ count }}">
+                {%- if pct >= 15 %}{{ count }}{% endif -%}
+              </span>
+            {% endif %}
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        {# Stats row #}
+        <div class="od-article-stats">
+          <span class="od-article-claims">{{ art.claim_count }} fullyrðing{{ "ar" if art.claim_count > 1 else "" }}</span>
+          {% if art.participants | length %}
+            <span class="od-article-participants">{{ art.participants | length }} þátttakend{{ "ur" if art.participants | length > 1 else "i" }}</span>
+          {% endif %}
+        </div>
+
+        {# Participant name chips #}
+        {% if art.participants | length %}
+        <div class="od-article-speakers">
+          {% for p in art.participants %}
+            <span class="od-article-speaker" title="{{ p.name or 'Óþekkt' }}{% if p.party %} ({{ p.party }}){% endif %}">{{ (p.name or "?").split(" ")[0] }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        {# Category tags #}
+        {% if art.categories | length %}
+        <div class="od-article-categories">
+          {% for cat in art.categories | slice(0, 4) %}
+            <span class="ct-category-tag od-article-cat-tag">{{ cat | categoryLabel }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
       </a>
       {% endfor %}
     </div>
