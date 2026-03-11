@@ -196,7 +196,7 @@
     const confLabel = CONFIDENCE_LABELS[e.confidence] || e.confidence;
 
     const datePart = e.source_date
-      ? `<time datetime="${e.source_date}">${formatIsDate(e.source_date)}</time>`
+      ? `<time datetime="${esc(e.source_date)}">${formatIsDate(e.source_date)}</time>`
       : "";
 
     const relatedBadge =
@@ -205,7 +205,7 @@
         : "";
 
     return `
-      <a href="/heimildir/${e.slug}/" class="ev-card">
+      <a href="/heimildir/${esc(e.slug)}/" class="ev-card">
         <div class="ev-card-top">
           <span class="ev-card-id">${esc(e.evidence_id)}</span>
           <span class="ev-source-type-badge ev-st-${e.source_type}">${esc(stLabel)}</span>
@@ -409,7 +409,7 @@
     if (!dateStr) return "";
     const d = new Date(dateStr);
     if (isNaN(d)) return dateStr;
-    return `${d.getDate()}. ${IS_MONTHS[d.getMonth()]} ${d.getFullYear()}`;
+    return `${d.getUTCDate()}. ${IS_MONTHS[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
   }
 
   // ── URL params ────────────────────────────────────────────────────

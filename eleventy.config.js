@@ -39,7 +39,7 @@ module.exports = function (eleventyConfig) {
       "janúar", "febrúar", "mars", "apríl", "maí", "júní",
       "júlí", "ágúst", "september", "október", "nóvember", "desember",
     ];
-    return `${d.getDate()}. ${months[d.getMonth()]} ${d.getFullYear()}`;
+    return `${d.getUTCDate()}. ${months[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
   });
 
   // ── Verdict label filter ──────────────────────────────────────────

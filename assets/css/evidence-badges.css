@@ -1,0 +1,42 @@
+/* ── Evidence badges — shared between tracker and detail pages ─────── */
+
+.ev-source-type-badge {
+  display: inline-block;
+  padding: 0.1rem 0.4rem;
+  border: 1px solid;
+  border-radius: var(--radius-sm);
+  font-size: 0.7rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.ev-st-official_statistics { border-color: #3b82f6; color: #3b82f6; }
+.ev-st-legal_text          { border-color: #8b5cf6; color: #8b5cf6; }
+.ev-st-academic_paper      { border-color: #10b981; color: #10b981; }
+.ev-st-expert_analysis     { border-color: #f59e0b; color: #f59e0b; }
+.ev-st-international_org   { border-color: #06b6d4; color: #06b6d4; }
+.ev-st-parliamentary_record { border-color: #f97316; color: #f97316; }
+
+.ev-confidence-badge {
+  display: inline-block;
+  padding: 0.1rem 0.35rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.ev-conf-high   { background: var(--green); color: #fff; }
+.ev-conf-medium { background: var(--yellow); color: #000; }
+.ev-conf-low    { background: var(--red); color: #fff; }
+
+.ev-topic-tag {
+  display: inline-block;
+  padding: 0.1rem 0.4rem;
+  background: var(--bg-alt, #f1f5f9);
+  border-radius: var(--radius-sm);
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}

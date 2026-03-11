@@ -149,7 +149,7 @@ extra_css: /assets/css/evidence-detail.css
   {# ── Cited by ── #}
   {% if evidence.citations | length %}
   <section class="ev-cited-by">
-    <h2>Notuð í greiningum ({{ evidence.citation_count }})</h2>
+    <h2>Notuð í greiningum ({{ evidence.citations | length }})</h2>
     {% for report in evidence.citations %}
     <div class="ev-citation-group">
       <h3 class="ev-citation-report">
