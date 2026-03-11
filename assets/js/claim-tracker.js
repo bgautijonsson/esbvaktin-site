@@ -249,6 +249,28 @@
       detailsHtml += `<div class="ct-detail ct-english"><strong>English:</strong> ${escapeHtml(claim.canonical_text_en)}</div>`;
     }
 
+    // Evidence references (supporting + contradicting)
+    const supEv = claim.supporting_evidence || [];
+    const conEv = claim.contradicting_evidence || [];
+    if (supEv.length > 0 || conEv.length > 0) {
+      const renderEvLinks = (evList) =>
+        evList
+          .map(
+            (ev) =>
+              `<a href="/heimildir/${escapeHtml(ev.slug)}/" class="evidence-link" title="${escapeHtml(ev.source_name)}">${escapeHtml(ev.id)}</a>`
+          )
+          .join(", ");
+      let evHtml = '<div class="ct-detail ct-evidence">';
+      if (supEv.length > 0) {
+        evHtml += `<div class="ct-evidence-group"><strong>Heimildir:</strong> ${renderEvLinks(supEv)}</div>`;
+      }
+      if (conEv.length > 0) {
+        evHtml += `<div class="ct-evidence-group ct-evidence-contra"><strong>Andstæðar heimildir:</strong> ${renderEvLinks(conEv)}</div>`;
+      }
+      evHtml += "</div>";
+      detailsHtml += evHtml;
+    }
+
     if (claim.sightings && claim.sightings.length > 0) {
       const sightingItems = claim.sightings
         .map((s) => {

@@ -110,6 +110,17 @@ module.exports = function (eleventyConfig) {
   };
   eleventyConfig.addFilter("partyClass", (p) => partyClasses[p] || "party-other");
 
+  // ── Rewrite evidence links to internal /heimildir/ pages ─────────
+  // Explanation HTML from the pipeline contains <a href="https://...">FISH-LEGAL-001</a>.
+  // This filter rewrites those to point at /heimildir/fish-legal-001/ instead.
+  eleventyConfig.addFilter("evidenceLinks", (html) => {
+    if (!html) return html;
+    return html.replace(
+      /<a\s+href="[^"]*"[^>]*>([A-Z]+-[A-Z]+-\d+)<\/a>/g,
+      (_, id) => `<a href="/heimildir/${id.toLowerCase()}/" class="evidence-link" title="${id}">${id}</a>`
+    );
+  });
+
   // ── Ignore files ─────────────────────────────────────────────────
   eleventyConfig.ignores.add("CLAUDE.md");
 

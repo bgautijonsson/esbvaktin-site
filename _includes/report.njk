@@ -127,22 +127,18 @@ og_type: article
         {% if item.claim.claim_text %}
         <p class="report-claim-text"><strong>Fullyrðing:</strong> {{ item.claim.claim_text }}</p>
         {% endif %}
-        <p class="report-explanation">{{ item.explanation | safe }}</p>
+        <p class="report-explanation">{{ item.explanation | evidenceLinks | safe }}</p>
         {% if item.missing_context %}
         <details class="report-context">
           <summary>Samhengi sem vantar</summary>
-          <p>{{ item.missing_context | safe }}</p>
+          <p>{{ item.missing_context | evidenceLinks | safe }}</p>
         </details>
         {% endif %}
         {% if item.supporting_evidence | length %}
         <div class="report-evidence">
           <strong>Heimildir:</strong>
           {% for ev in item.supporting_evidence %}
-            {% if ev.source_url %}
-              <a href="{{ ev.source_url }}" target="_blank" rel="noopener" class="evidence-link" title="{{ ev.source_name }}">{{ ev.id }}</a>
-            {% else %}
-              <span class="evidence-ref" title="{{ ev.source_name }}">{{ ev.id }}</span>
-            {% endif %}
+            <a href="/heimildir/{{ ev.id | lower }}/" class="evidence-link" title="{{ ev.source_name }}">{{ ev.id }}</a>
             {%- if not loop.last %}, {% endif %}
           {% endfor %}
         </div>
@@ -151,11 +147,7 @@ og_type: article
         <div class="report-evidence report-evidence-contra">
           <strong>Andstæðar heimildir:</strong>
           {% for ev in item.contradicting_evidence %}
-            {% if ev.source_url %}
-              <a href="{{ ev.source_url }}" target="_blank" rel="noopener" class="evidence-link" title="{{ ev.source_name }}">{{ ev.id }}</a>
-            {% else %}
-              <span class="evidence-ref" title="{{ ev.source_name }}">{{ ev.id }}</span>
-            {% endif %}
+            <a href="/heimildir/{{ ev.id | lower }}/" class="evidence-link" title="{{ ev.source_name }}">{{ ev.id }}</a>
             {%- if not loop.last %}, {% endif %}
           {% endfor %}
         </div>
