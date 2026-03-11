@@ -6,11 +6,12 @@
   "role": "forsætisráðherra",
   "party": "Samfylkingin",
   "stance": "pro_eu",
-  "stance_score": 1.0,
+  "stance_score": 0.67,
   "credibility": 0.69,
   "attribution_counts": {
     "quoted": 15,
-    "paraphrased": 9
+    "paraphrased": 9,
+    "mentioned": 1
   },
   "althingi_stats": {
     "speech_count": 18,
@@ -20,10 +21,10 @@
     "last_speech": "2026-03-09"
   },
   "scorecard": {
-    "partially_supported": 6,
-    "supported": 8,
+    "partially_supported": 7,
+    "supported": 10,
     "misleading": 1,
-    "unverifiable": 8,
+    "unverifiable": 5,
     "unsupported": 1
   },
   "claims": [
@@ -69,7 +70,7 @@
     },
     {
       "claim_text": "Lánshæfismat ríkissjóðs hefur batnað.",
-      "verdict": "unverifiable",
+      "verdict": "supported",
       "category": "currency",
       "attribution": "paraphrased",
       "article_slug": "ad-kljufa-thjodina-med-tilfinningathrunginni-spurningu",
@@ -149,7 +150,7 @@
     },
     {
       "claim_text": "Allir flokkar ríkisstjórnarinnar voru sammála um að þjóðaratkvæðagreiðsla um ESB-aðildarviðræður yrði haldin, þrátt fyrir skiptar skoðanir innan og milli flokka.",
-      "verdict": "partially_supported",
+      "verdict": "supported",
       "category": "party_positions",
       "attribution": "quoted",
       "article_slug": "enginn-afslattur-gefinn-segi-thjodin-ja-vid-adildarvidraedum",
@@ -179,7 +180,7 @@
     },
     {
       "claim_text": "Donald Tusk, forsætisráðherra Póllands, sagði opinberlega á blaðamannafundi að Evrópusambandið ætti að laga sig að löndum eins og Íslandi.",
-      "verdict": "unverifiable",
+      "verdict": "partially_supported",
       "category": "precedents",
       "attribution": "paraphrased",
       "article_slug": "enginn-afslattur-gefinn-segi-thjodin-ja-vid-adildarvidraedum",
@@ -189,7 +190,7 @@
     },
     {
       "claim_text": "Donald Tusk sagði á blaðamannafundi að Evrópusambandið ætti að hlusta á smærri lönd eins og stór.",
-      "verdict": "unverifiable",
+      "verdict": "partially_supported",
       "category": "precedents",
       "attribution": "paraphrased",
       "article_slug": "enginn-afslattur-gefinn-segi-thjodin-ja-vid-adildarvidraedum",
@@ -266,6 +267,16 @@
       "article_title": "Enginn afsláttur gefinn segi þjóðin já við aðildarviðræðum",
       "article_source": "RÚV",
       "article_date": "2026-03-10"
+    },
+    {
+      "claim_text": "Bæði Kristrún Frostadóttir og stjórnarandstaðan spáðu fyrir kosningar að þjóðaratkvæðagreiðslan myndi skipta þjóðinni í fylkingar.",
+      "verdict": "partially_supported",
+      "category": "party_positions",
+      "attribution": "mentioned",
+      "article_slug": "sjai-thegar-merki-um-ad-forspa-um-klofningu-thjodarinnar-standist",
+      "article_title": "Sjái þegar merki um að forspá um klofningu þjóðarinnar standist",
+      "article_source": "Vísir/Bylgjan",
+      "article_date": "2026-03-10"
     }
   ],
   "articles": [
@@ -289,6 +300,16 @@
       "attribution_types": [
         "paraphrased",
         "quoted"
+      ]
+    },
+    {
+      "slug": "sjai-thegar-merki-um-ad-forspa-um-klofningu-thjodarinnar-standist",
+      "title": "Sjái þegar merki um að forspá um klofningu þjóðarinnar standist",
+      "source": "Vísir/Bylgjan",
+      "date": "2026-03-10",
+      "claim_count": 1,
+      "attribution_types": [
+        "mentioned"
       ]
     }
   ]

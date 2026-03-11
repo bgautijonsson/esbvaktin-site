@@ -2,14 +2,16 @@
   "slug": "sigmundur-david-gunnlaugsson",
   "name": "Sigmundur Davíð Gunnlaugsson",
   "type": "individual",
-  "description": "Formaður miðflokksins (Miðflokkurinn) — hlutlaus um ESB-aðild.",
-  "role": "formaður Miðflokksins",
+  "description": "Formaður (Miðflokkurinn) — andvíg/ur ESB-aðild.",
+  "role": "formaður",
   "party": "Miðflokkurinn",
-  "stance": "neutral",
-  "stance_score": 0.0,
-  "credibility": 0.55,
+  "stance": "anti_eu",
+  "stance_score": -0.5,
+  "credibility": 0.54,
   "attribution_counts": {
-    "asserted": 14
+    "asserted": 14,
+    "paraphrased": 2,
+    "mentioned": 1
   },
   "althingi_stats": {
     "speech_count": 226,
@@ -19,14 +21,45 @@
     "last_speech": "2026-03-09"
   },
   "scorecard": {
-    "unverifiable": 4,
-    "supported": 1,
-    "partially_supported": 9
+    "partially_supported": 11,
+    "supported": 3,
+    "misleading": 1,
+    "unverifiable": 1
   },
   "claims": [
     {
+      "claim_text": "Á Alþingi fer fram umræða um fyrirhugaða þjóðaratkvæðagreiðslu um framhald viðræðna um aðild Íslands að Evrópusambandinu.",
+      "verdict": "supported",
+      "category": "party_positions",
+      "attribution": "mentioned",
+      "article_slug": "hitnadi-i-kolunum-vegna-meintra-maga-tengsla",
+      "article_title": "Hitnaði í kolunum vegna meintra MAGA-tengsla",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-10"
+    },
+    {
+      "claim_text": "Ráðgjafi Farage hafi rætt við stjórnmálamenn í bæði Miðflokknum og Sjálfstæðisflokknum í heimsóknum sínum.",
+      "verdict": "partially_supported",
+      "category": "party_positions",
+      "attribution": "paraphrased",
+      "article_slug": "hitnadi-i-kolunum-vegna-meintra-maga-tengsla",
+      "article_title": "Hitnaði í kolunum vegna meintra MAGA-tengsla",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-10"
+    },
+    {
+      "claim_text": "Fundirnir sem greint er frá áttu sér stað bæði á árinu 2025 og 2026.",
+      "verdict": "partially_supported",
+      "category": "party_positions",
+      "attribution": "paraphrased",
+      "article_slug": "hitnadi-i-kolunum-vegna-meintra-maga-tengsla",
+      "article_title": "Hitnaði í kolunum vegna meintra MAGA-tengsla",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-10"
+    },
+    {
       "claim_text": "Hagfræðistofnun Háskóla Íslands vann skýrslu sem sýndi fram á að ekki væri hægt að ganga í ESB á þeim forsendum að gera sérstakan samning um samruna Íslands og ESB.",
-      "verdict": "unverifiable",
+      "verdict": "partially_supported",
       "category": "eea_eu_law",
       "attribution": "asserted",
       "article_slug": "25-thattur-silfursins-stefnt-ad-kosningu-um-esb-i-sumar",
@@ -46,7 +79,7 @@
     },
     {
       "claim_text": "Í leiðarvísi ESB um umsóknarferlið er sérstaklega tekið fram að varasamt sé að tala um samningaviðræður þar sem þetta séu ekki samningaviðræður heldur leið fyrir umsóknarríki til að útskýra hvernig það ætli að uppfylla kröfur sambandsins.",
-      "verdict": "partially_supported",
+      "verdict": "supported",
       "category": "eea_eu_law",
       "attribution": "asserted",
       "article_slug": "25-thattur-silfursins-stefnt-ad-kosningu-um-esb-i-sumar",
@@ -56,7 +89,7 @@
     },
     {
       "claim_text": "Ríkisstjórnin hefur verið í baktjaldamakki í Brussel frá 2024 um ESB-aðild.",
-      "verdict": "partially_supported",
+      "verdict": "misleading",
       "category": "party_positions",
       "attribution": "asserted",
       "article_slug": "25-thattur-silfursins-stefnt-ad-kosningu-um-esb-i-sumar",
@@ -66,7 +99,7 @@
     },
     {
       "claim_text": "Íslenska þjóðin frétti fyrst af ESB-áformum ríkisstjórnarinnar í erlendum fjölmiðlum sem höfðu upplýsingarnar frá heimildarmönnum í Brussel, ekki frá ríkisstjórninni sjálfri.",
-      "verdict": "unverifiable",
+      "verdict": "partially_supported",
       "category": "party_positions",
       "attribution": "asserted",
       "article_slug": "25-thattur-silfursins-stefnt-ad-kosningu-um-esb-i-sumar",
@@ -86,7 +119,7 @@
     },
     {
       "claim_text": "Norska þingið hafnaði í síðustu viku tillögu frá systurflokki Viðreisnar um að skoða hugsanlega ESB-aðild, þar sem 79% sögðu nei, og 93% sögðu nei við auknu samstarfi við ESB, meðal annars á sviði varnarmála.",
-      "verdict": "unverifiable",
+      "verdict": "partially_supported",
       "category": "precedents",
       "attribution": "asserted",
       "article_slug": "25-thattur-silfursins-stefnt-ad-kosningu-um-esb-i-sumar",
@@ -96,7 +129,7 @@
     },
     {
       "claim_text": "Umsóknarríki þurfa strax að byrja aðlögun — ráða fleiri embættismenn, búa til nýjar stofnanir og breyta lögum til að aðlaga sig að ESB á meðan á ferlinu stendur.",
-      "verdict": "partially_supported",
+      "verdict": "supported",
       "category": "eea_eu_law",
       "attribution": "asserted",
       "article_slug": "25-thattur-silfursins-stefnt-ad-kosningu-um-esb-i-sumar",
@@ -166,6 +199,17 @@
     }
   ],
   "articles": [
+    {
+      "slug": "hitnadi-i-kolunum-vegna-meintra-maga-tengsla",
+      "title": "Hitnaði í kolunum vegna meintra MAGA-tengsla",
+      "source": "Morgunblaðið",
+      "date": "2026-03-10",
+      "claim_count": 3,
+      "attribution_types": [
+        "mentioned",
+        "paraphrased"
+      ]
+    },
     {
       "slug": "25-thattur-silfursins-stefnt-ad-kosningu-um-esb-i-sumar",
       "title": "25. þáttur Silfursins: Stefnt að kosningu um ESB í sumar",
