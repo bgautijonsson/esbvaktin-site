@@ -6,9 +6,15 @@
   "scripts": {
     "build": "npm run clean && eleventy",
     "serve": "eleventy --serve",
-    "clean": "rm -rf _site"
+    "clean": "rm -rf _site",
+    "browser:test": "playwright test",
+    "browser:review": "playwright test tests/browser",
+    "browser:smoke": "playwright test tests/browser/smoke.spec.js",
+    "browser:screens": "playwright test tests/browser/screenshots.spec.js",
+    "browser:nav": "playwright test tests/browser/navbar.spec.js"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^3.0.0",
+    "@playwright/test": "^1.58.2"
   }
 }

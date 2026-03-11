@@ -15,6 +15,7 @@
   const createController = controllerLib.create;
   const escapeHtml = utils.escapeHtml || ((value) => String(value ?? ""));
   const formatIsDate = utils.formatIsDate || ((value) => String(value ?? ""));
+  const normalizeReportSummary = utils.normalizeReportSummary || ((value) => String(value ?? ""));
   const DATA_BASE = utils.getDataBase
     ? utils.getDataBase(document.currentScript, "/assets/data")
     : (document.currentScript?.dataset.base || "/assets/data");
@@ -64,7 +65,13 @@
     },
     initialData: [],
     async load(api) {
-      return api.loadJson(JSON_URL);
+      const reports = await api.loadJson(JSON_URL);
+      return Array.isArray(reports)
+        ? reports.map((report) => ({
+            ...report,
+            summary: normalizeReportSummary(report.summary),
+          }))
+        : [];
     },
     renderShell,
     renderStats,

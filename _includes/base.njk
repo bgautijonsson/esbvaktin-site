@@ -25,27 +25,38 @@
   <link rel="stylesheet" href="/assets/css/tracker-base.css">
   {% if extra_css %}<link rel="stylesheet" href="{{ extra_css }}">{% endif %}
 </head>
-<body>
-  <header class="site-header">
-    <nav class="site-nav">
-      <a href="/" class="site-logo">{{ site.title }}</a>
-      <div class="nav-actions">
-        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Sjálfvirkt" title="Sjálfvirkt">&#x25D0;</button>
-        <button class="nav-toggle" type="button" aria-label="Valmynd" aria-expanded="false">
-          <span class="nav-hamburger"></span>
-        </button>
-      </div>
-      <ul class="nav-links">
-        <li><a href="/fullyrdingar/"{% if page.url == "/fullyrdingar/" %} aria-current="page"{% endif %}>Fullyrðingar</a></li>
-        <li><a href="/umraedan/"{% if "/umraedan/" in page.url %} aria-current="page"{% endif %}>Umræðan</a></li>
-        <li><a href="/raddirnar/"{% if "/raddirnar/" in page.url %} aria-current="page"{% endif %}>Raddirnar</a></li>
-        <li><a href="/heimildir/"{% if "/heimildir/" in page.url %} aria-current="page"{% endif %}>Heimildir</a></li>
-        <li><a href="/thingraedur/"{% if "/thingraedur/" in page.url %} aria-current="page"{% endif %}>Þingræður</a></li>
-        <li><a href="/adferdarfraedi/"{% if page.url == "/adferdarfraedi/" %} aria-current="page"{% endif %}>Aðferðafræði</a></li>
-        <li><a href="/um-okkur/"{% if page.url == "/um-okkur/" %} aria-current="page"{% endif %}>Um okkur</a></li>
-      </ul>
-    </nav>
-  </header>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Aðalvalmynd">
+        <a href="/" class="site-logo">{{ site.title }}</a>
+        <div id="site-menu" class="site-menu">
+          <div class="site-menu-group">
+            <p class="nav-group-label">Efni</p>
+            <ul class="nav-list nav-list--primary">
+              {% for item in navigation.primary %}
+              {% set isCurrent = page.url | navCurrent(item) %}
+              <li><a href="{{ item.href }}"{% if isCurrent %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="site-menu-group site-menu-group--utility">
+            <p class="nav-group-label">Upplýsingar</p>
+            <ul class="nav-list nav-list--utility">
+              {% for item in navigation.utility %}
+              {% set isCurrent = page.url | navCurrent(item) %}
+              <li><a href="{{ item.href }}"{% if isCurrent %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        <div class="nav-controls">
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Sjálfvirkt" title="Sjálfvirkt">&#x25D0;</button>
+          <button class="nav-toggle" type="button" aria-label="Opna valmynd" title="Opna valmynd" aria-controls="site-menu" aria-expanded="false">
+            <span class="nav-hamburger"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
 
   <main class="site-main{% if wide_layout %} site-main--wide{% endif %}">
     {{ content | safe }}

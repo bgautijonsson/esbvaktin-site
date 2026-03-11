@@ -61,6 +61,16 @@
     return Number(value).toLocaleString("is-IS");
   }
 
+  function normalizeReportSummary(value) {
+    if (value == null) return "";
+
+    return String(value)
+      .replace(/\s+([.,;:!?])/g, "$1")
+      .replace(/\bFramsetnng\b/g, "Framsetning")
+      .replace(/\s{2,}/g, " ")
+      .trim();
+  }
+
   function debounce(fn, delay) {
     var timeoutId = null;
 
@@ -79,5 +89,6 @@
     formatIsDate: formatIsDate,
     formatNumber: formatNumber,
     getDataBase: getDataBase,
+    normalizeReportSummary: normalizeReportSummary,
   };
 });

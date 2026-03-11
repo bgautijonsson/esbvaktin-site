@@ -70,6 +70,13 @@ module.exports = function (eleventyConfig) {
   // ── Party CSS class filter ────────────────────────────────────────
   eleventyConfig.addFilter("partyClass", (p) => taxonomy.partyClasses[p] || "party-other");
 
+  // ── Navigation state filter ───────────────────────────────────────
+  eleventyConfig.addFilter("navCurrent", (pageUrl, item) => {
+    if (!pageUrl || !item || !item.href) return false;
+    if (item.match === "prefix") return pageUrl.startsWith(item.href);
+    return pageUrl === item.href;
+  });
+
   // ── Rewrite evidence links to internal /heimildir/ pages ─────────
   // Explanation HTML from the pipeline contains <a href="https://...">FISH-LEGAL-001</a>.
   // This filter rewrites those to point at /heimildir/fish-legal-001/ instead.
@@ -84,6 +91,7 @@ module.exports = function (eleventyConfig) {
   // ── Ignore files ─────────────────────────────────────────────────
   eleventyConfig.ignores.add("CLAUDE.md");
   eleventyConfig.ignores.add("AGENTS.md");
+  eleventyConfig.ignores.add("README.md");
   eleventyConfig.ignores.add("**/CLAUDE.md");
   eleventyConfig.ignores.add("**/AGENTS.md");
   eleventyConfig.ignores.add(".claude/**");

@@ -3,6 +3,7 @@ const path = require("path");
 
 const site = require("./site.json");
 const taxonomy = require("../assets/js/site-taxonomy.js");
+const trackerUtils = require("../assets/js/tracker-utils.js");
 
 function readJson(relativePath) {
   const filePath = path.join(__dirname, "..", relativePath);
@@ -58,8 +59,19 @@ function getDaysUntil(dateString) {
   return Math.max(0, Math.ceil((targetUtc - todayUtc) / 86400000));
 }
 
+function normalizeReport(report) {
+  if (!report) return report;
+  return {
+    ...report,
+    summary: trackerUtils.normalizeReportSummary(report.summary),
+  };
+}
+
 module.exports = function () {
-  const reports = sortByDateDesc(readJson("assets/data/reports.json"), ["analysis_date", "article_date"]);
+  const reports = sortByDateDesc(
+    readJson("assets/data/reports.json").map(normalizeReport),
+    ["analysis_date", "article_date"]
+  );
   const debates = sortByDateDesc(readJson("assets/data/debates.json"), ["last_date", "first_date"]);
   const claims = readJson("assets/data/claims.json");
   const evidence = readJson("assets/data/evidence.json");
