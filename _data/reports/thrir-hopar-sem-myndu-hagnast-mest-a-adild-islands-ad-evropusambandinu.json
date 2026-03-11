@@ -10,9 +10,9 @@
   "summary": "Greindar 23 fullyrðingar .",
   "verdict_counts": {
     "supported": 10,
-    "partially_supported": 8,
+    "partially_supported": 9,
     "misleading": 3,
-    "unverifiable": 2
+    "unverifiable": 1
   },
   "claim_count": 23,
   "dominant_category": "currency",
@@ -249,7 +249,7 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> styður fullyrðinguna — Viðskiptaráð Íslands áætlar 2–4% aukningu í vergri landsframleiðslu á áratug vegna lægri viðskiptakostnaðar, lægri vaxta og aukinnar erlendrar fjárfestingar. <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf\" title=\"EEA Agreement — Protocol 3 on trade in processed agricultural products\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-002</a> staðfestir að full aðild myndi útvíkka markaðsaðgang umfram EES-samninginn. Fullyrðingin er þó of víðtæk — <a href=\"https://www.efta.int/about-efta/efta-secretariat/efta-budget\" title=\"EFTA Secretariat — EFTA budget; various academic estimates\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-005</a> sýnir að kostnaðaraukning vegna fjárlagaframlaga yrði veruleg. Reynsla nýrra aðildarríkja er misjöfn og heimildir styðja \"yfirleitt\" ekki án fyrirvara.",
+      "explanation": "<a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> styður fullyrðinguna — Viðskiptaráð Íslands áætlar 2–4% aukningu í vergri landsframleiðslu á áratug vegna lægri viðskiptakostnaðar, lægri vaxta og aukinnar erlendrar fjárfestingar. <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf\" title=\"EEA Agreement — Protocol 3 on trade in processed agricultural products\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-002</a> staðfestir að full aðild myndi útvíkka markaðsaðgang umfram EES-samninginn. Fullyrðingin er þó of víðtæk — <a href=\"https://www.efta.int/about-efta/efta-secretariat/efta-budget\" title=\"EFTA Secretariat — EFTA budget; various academic estimates\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-005</a> sýnir að kostnaðaraukning vegna fjárlagaframlaga yrði veruleg. Reynsla nýrra aðildarríkja er misjöfn og heimildir styðja „yfirleitt\" ekki án fyrirvara.",
       "supporting_evidence": [
         {
           "id": "POL-DATA-017",
@@ -932,12 +932,23 @@
         "claim_type": "prediction",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Engar heimildir staðfesta að fyrsti framkvæmdastjóri Íslands innan ESB yrði sjávarútvegsstjórinn. <a href=\"https://ec.europa.eu/eurostat/databrowser/view/FISH_CA_MAIN/default/table?lang=en\" title=\"Eurostat — Fisheries statistics (fish_ca_main); Hagstofa Íslands\" target=\"_blank\" rel=\"noopener\">FISH-DATA-021</a> sýnir að Ísland er næststærsta fiskiveiðiþjóð Evrópu og að sjávarútvegur hefur afgerandi pólitískt vægi á Íslandi. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> nefnir að sjávarauðlindir Íslands séu meðal þátta sem vekja áhuga ESB. Fullyrðingin er þó spákúla um pólitískt ferli sem heimildir geta hvorki staðfest né hrakið — skipun framkvæmdastjóra fer eftir viðamiklu pólitísku ferli þar sem forseti Framkvæmdastjórnarinnar úthlutar ráðuneytum.",
-      "supporting_evidence": [],
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að Ísland er óvenjulega háð sjávarútvegi miðað við önnur Evrópuríki — afli á mann er 2.800 kg á ári samanborið við 9 kg að meðaltali í ESB (<a href=\"https://ec.europa.eu/eurostat/databrowser/view/FISH_CA_MAIN/default/table?lang=en\" title=\"Eurostat — Fisheries statistics (fish_ca_main); Hagstofa Íslands\" target=\"_blank\" rel=\"noopener\">FISH-DATA-021</a>). Einnig er ljóst að sjávarútvegur er lykilmál í aðildarviðræðum (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a>, POL-DATA-005). Fullyrðingin um að fyrsti framkvæmdastjóri Íslands yrði \"sjávarútvegsstjórinn\" er hins vegar vangaveltur sem engin heimild staðfestir. Ráðstöfun framkvæmdastjóraembætta er á forræði forseta framkvæmdastjórnarinnar og fer eftir pólitískum samningum.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-DATA-021",
+          "source_name": "Eurostat — Fisheries statistics (fish_ca_main); Hagstofa Íslands",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/FISH_CA_MAIN/default/table?lang=en"
+        },
+        {
+          "id": "TRADE-DATA-022",
+          "source_name": "European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Heimildir fjalla ekki um hvernig ESB skipar framkvæmdastjóra eða hvaða ráðuneytum lítil aðildarríki fá úthlutað. Staðhæfingin um að ekkert annað ESB-ríki hafi treyst eins mikið á sjávarútveg og Ísland er studd af <a href=\"https://ec.europa.eu/eurostat/databrowser/view/FISH_CA_MAIN/default/table?lang=en\" title=\"Eurostat — Fisheries statistics (fish_ca_main); Hagstofa Íslands\" target=\"_blank\" rel=\"noopener\">FISH-DATA-021</a>, en ályktunin um framkvæmdastjórastöðu er óstaðfest.",
-      "confidence": 0.75,
+      "missing_context": "Engin heimild fjallar um hvernig framkvæmdastjóraembætti eru úthlutað til nýrra aðildarríkja. Ráðstöfun ráðuneyta er á valdi forseta framkvæmdastjórnarinnar og fer eftir pólitísku jafnvægi, ekki einungis hagsmunaaðstæðum viðkomandi lands. Fullyrðingin um sjávarútveg sem forgangsmál Íslands er studd, en niðurstaðan um framkvæmdastjóraembætti er spákaupmennska.",
+      "confidence": 0.55,
       "speakers": [
         {
           "name": "Magnús Árni Skjöld Magnússon",
@@ -1104,11 +1115,11 @@
         "confidence": 0.9
       },
       "verdict": "unverifiable",
-      "explanation": "Engin heimild í gagnagrunninum staðfestir hver sé formaður Evrópuhreyfingarinnar á Íslandi eða tengir tiltekinn höfund greinar við það embætti. Heimildir fjalla um þingflokka og flokksleiðtoga en nefna ekki Evrópuhreyfinguna. Fullyrðingin krefst sérstakrar heimildar um forystu samtakanna sem er ekki til staðar.",
+      "explanation": "Engin heimild í staðreyndagrunni staðfestir hver er formaður Evrópuhreyfingarinnar. Heimildir fjalla um stjórnmálaflokka (<a href=\"https://www.althingi.is/thingmenn/thingflokkar/vidreisn/\" title=\"Althingi — Session 157; Viðreisn party platform\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-004</a>, <a href=\"https://www.midflokkurinn.is/\" title=\"Miðflokkurinn — Party website and statements; ECR Party membership; Icelandic media reports\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-013</a>), framkvæmdastjórn ESB (<a href=\"https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/stronger-europe-world/ethics-and-integrity/code-conduct-commissioners_en\" title=\"Article 245 TFEU; European Commission Code of Conduct for Commissioners (C(2018) 700); European Ombudsman Decision OI/1/2021/KR\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-023</a>) og ýmis hagsmunasamtök (<a href=\"https://sa.is/frettatengt/frettir/vinna-hafin-vid-uttekt-a-stodu-adildarvidraedna-vid-evropusambandid\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a>, <a href=\"https://en.rannis.is/funding/research/\" title=\"University of Iceland — Rector's statement on EU membership; Rannís — Horizon Europe participation data\" target=\"_blank\" rel=\"noopener\">POL-DATA-018</a>), en Evrópuhreyfingin (European Movement Iceland) er ekki nefnd sérstaklega. Fullyrðingin krefst heimildar um formannskap þess tiltekna samtaka.",
       "supporting_evidence": [],
       "contradicting_evidence": [],
-      "missing_context": "Ef höfundur er formaður samtaka sem berjast fyrir ESB-aðild er mikilvægt að lesendur viti af þeim hagsmunum. Greinin er skrifuð frá skýrt ESB-jákvæðu sjónarhorni og þessi upplýsing staðfestir að höfundur er hagsmunaaðili í umræðunni.",
-      "confidence": 0.3,
+      "missing_context": "Staðreyndagrunnurinn inniheldur ekki upplýsingar um Evrópuhreyfinguna á Íslandi eða forystu hennar. Þyrfti beina heimild um samtökin og formannskap þeirra.",
+      "confidence": 0.9,
       "speakers": [
         {
           "name": "Magnús Árni Skjöld Magnússon",

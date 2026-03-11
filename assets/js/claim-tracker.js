@@ -43,6 +43,7 @@
   const controller = createController({
     root,
     initialState: {
+      claim: params.get("claim") || "",
       search: params.get("q") || "",
       category: params.get("category") || "",
       verdict: params.get("verdict") || "",
@@ -100,6 +101,10 @@
   function queryClaims() {
     const filters = getFilters();
     let results = [...getClaims()];
+
+    if (filters.claim) {
+      return results.filter((claim) => claim.claim_slug === filters.claim);
+    }
 
     if (filters.search) {
       const q = filters.search.toLowerCase();
@@ -239,6 +244,7 @@
       items: claims,
       renderItem: renderClaimCard,
     });
+    expandFocusedClaim();
     expandReturnClaimTarget();
     restoreReturnTarget(el);
   }
@@ -246,6 +252,11 @@
   function updateResultsMeta(visibleCount, totalCount) {
     const el = document.getElementById("ct-results-meta");
     if (!el) return;
+
+    if (getFilters().claim) {
+      el.textContent = visibleCount ? "Sýni valda fullyrðingu." : "Valin fullyrðing fannst ekki.";
+      return;
+    }
 
     if (visibleCount === totalCount) {
       el.textContent = `Sýni allar ${totalCount} fullyrðingar.`;
@@ -261,6 +272,7 @@
     const verdictLabel = VERDICT_LABELS[claim.verdict] || claim.verdict;
     const categoryLabel = CATEGORY_LABELS[claim.category] || claim.category;
     const confidencePct = Math.round((claim.confidence || 0) * 100);
+    const isFocused = getFilters().claim === claim.claim_slug;
 
     let detailsHtml = "";
     if (claim.explanation_is) {
@@ -336,7 +348,7 @@
         : "";
 
     return `
-      <div class="ct-card" id="${escapeHtml(cardId)}" data-slug="${escapeHtml(claim.claim_slug)}">
+      <div class="ct-card${isFocused ? " ct-card--focused" : ""}" id="${escapeHtml(cardId)}" data-slug="${escapeHtml(claim.claim_slug)}">
         <div class="ct-card-header" role="button" tabindex="0" aria-expanded="false">
           <div class="ct-card-main">
             <span class="ct-verdict-pill ${verdictClass}">${verdictLabel}</span>
@@ -384,12 +396,33 @@
     }
   }
 
+  function expandFocusedClaim() {
+    const claimSlug = getFilters().claim;
+    if (!claimSlug) return;
+
+    const card = root.querySelector(`.ct-card[data-slug="${claimSlug}"]`);
+    if (!card) return;
+
+    card.classList.add("ct-expanded");
+    const header = card.querySelector(".ct-card-header");
+    if (header) {
+      header.setAttribute("aria-expanded", "true");
+    }
+  }
+
   function getActiveFilterChips() {
     const filters = getFilters();
     const chips = [];
 
     if (filters.search) {
       chips.push({ key: "search", text: `Leit: ${filters.search}` });
+    }
+
+    if (filters.claim) {
+      const claim = getClaims().find((item) => item.claim_slug === filters.claim);
+      const label = claim?.canonical_text_is || filters.claim;
+      const shortened = label.length > 72 ? `${label.slice(0, 71).trimEnd()}…` : label;
+      chips.push({ key: "claim", text: `Fullyrðing: ${shortened}` });
     }
 
     if (filters.category) {
@@ -421,6 +454,7 @@
     const patch = {};
 
     if (key === "search") patch.search = "";
+    if (key === "claim") patch.claim = "";
     if (key === "category") patch.category = "";
     if (key === "verdict") patch.verdict = "";
     if (key === "sort") patch.sort = "last_verified";
@@ -432,6 +466,7 @@
     commitState(
       {
         search: "",
+        claim: "",
         category: "",
         verdict: "",
         sort: "last_verified",
@@ -444,6 +479,7 @@
   function syncUrl(state) {
     updateUrlQuery({
       q: state.search,
+      claim: state.claim,
       category: state.category,
       verdict: state.verdict,
       sort: state.sort === "last_verified" ? "" : state.sort,
@@ -460,17 +496,17 @@
   controller.bindInput(
     "#ct-search",
     (value, _target, _event, api) => {
-      commitState({ search: value }, "results", api);
+      commitState({ search: value, claim: "" }, "results", api);
     },
     { debounceMs: 200, trim: true }
   );
 
   controller.bindChange("#ct-category", (value, _target, _event, api) => {
-    commitState({ category: value }, "results", api);
+    commitState({ category: value, claim: "" }, "results", api);
   });
 
   controller.bindChange("#ct-verdict", (value, _target, _event, api) => {
-    commitState({ verdict: value }, "results", api);
+    commitState({ verdict: value, claim: "" }, "results", api);
   });
 
   controller.bindChange("#ct-sort", (value, _target, _event, api) => {

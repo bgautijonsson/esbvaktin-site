@@ -1,0 +1,225 @@
+---
+layout: base.njk
+wide_layout: true
+---
+
+<article class="issue-guide-page">
+  <nav class="report-nav" aria-label="Til baka">
+    <a href="/malefni/" class="report-back">&larr; Til baka í málefni</a>
+  </nav>
+
+  <header class="issue-guide-intro">
+    <div class="issue-guide-intro-head">
+      <div class="issue-guide-intro-copy">
+        <p class="home-section-label">Málefni</p>
+        <h1>{{ issue.title }}</h1>
+        <p class="issue-guide-question">{{ issue.question }}</p>
+      </div>
+      <div class="issue-guide-intro-actions">
+        <a href="#issue-summary" class="home-cta">Stutta myndin fyrst</a>
+        <a href="#issue-go-deeper" class="home-cta home-cta-secondary">Fara í gögnin</a>
+      </div>
+    </div>
+    <p class="issue-guide-intro-note">
+      Þessi síða byrjar á stuttri samantekt. Rekjanleg dæmi úr greiningum, fullyrðingum, heimildum og þingræðum eru neðar á síðunni ef þú vilt sannreyna málið nánar.
+    </p>
+  </header>
+
+  <section id="issue-summary" class="issue-summary-panel" aria-labelledby="issue-summary-heading">
+    <div class="issue-summary-main">
+      <span class="content-card-eyebrow">Stutta svarið</span>
+      <h2 id="issue-summary-heading" class="issue-summary-title">Hvað þetta mál er í grunninn</h2>
+      <p class="issue-summary-answer">{{ issue.short_answer }}</p>
+
+      {% if issue.key_points and issue.key_points | length %}
+      <div class="issue-keypoints">
+        <div class="issue-keypoints-head">
+          <p class="home-section-label">3 atriði til að hafa í huga</p>
+          <h3>Það sem flestir þurfa að skilja áður en þeir fara dýpra</h3>
+        </div>
+        <ol class="issue-keypoint-list">
+          {% for point in issue.key_points %}
+          <li>
+            <span class="issue-keypoint-index">0{{ loop.index }}</span>
+            <p>{{ point }}</p>
+          </li>
+          {% endfor %}
+        </ol>
+      </div>
+      {% endif %}
+    </div>
+
+    <aside class="issue-summary-side">
+      <article class="issue-summary-note">
+        <span class="issue-summary-note-label">Af hverju skiptir þetta máli?</span>
+        <p>{{ issue.why_it_matters }}</p>
+      </article>
+      <article class="issue-summary-note">
+        <span class="issue-summary-note-label">Helsti ágreiningurinn</span>
+        <p>{{ issue.main_disagreement }}</p>
+      </article>
+      <article class="issue-summary-note">
+        <span class="issue-summary-note-label">Áður en þú ferð dýpra</span>
+        <p>{{ issue.before_you_go_deeper }}</p>
+      </article>
+      <div class="issue-summary-stats">
+        <span class="overview-chip">{{ issue.stats.claims | localeString }} fullyrðingar</span>
+        <span class="overview-chip">{{ issue.stats.reports | localeString }} greiningar</span>
+        <span class="overview-chip">{{ issue.stats.evidence | localeString }} heimildir</span>
+      </div>
+    </aside>
+  </section>
+
+  <section class="issue-perspectives" aria-labelledby="issue-perspectives-heading">
+    <div class="briefing-section-head">
+      <div>
+        <p class="home-section-label">Sjónarmiðin tvö</p>
+        <h2 id="issue-perspectives-heading">Hvað stuðningsfólk og gagnrýnendur leggja helst áherslu á</h2>
+      </div>
+      <a href="/vikuyfirlit/" class="home-text-link">Sjá nýjustu vikuyfirlit</a>
+    </div>
+    <div class="issue-perspective-grid">
+      <div class="issue-perspective-card issue-perspective-card--support">
+        <p class="home-section-label">Stuðningsfólk leggur áherslu á</p>
+        <p>{{ issue.supporters_view }}</p>
+      </div>
+      <div class="issue-perspective-card issue-perspective-card--critic">
+        <p class="home-section-label">Gagnrýnendur leggja áherslu á</p>
+        <p>{{ issue.critics_view }}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="issue-synthesis">
+    <div class="issue-synthesis-card issue-synthesis-card--focus">
+      <p class="home-section-label">Það sem efnið sýnir skýrast núna</p>
+      <h2>Hvernig efnið á ESBvaktinni setur málið í samhengi</h2>
+      <p>{{ issue.editorial_synthesis }}</p>
+    </div>
+  </section>
+
+  <section id="issue-go-deeper" class="issue-go-deeper">
+    <div class="briefing-section-head">
+      <div>
+        <p class="home-section-label">Fara dýpra</p>
+        <h2>Rekjanleg dæmi ef þú vilt sannreyna þetta nánar</h2>
+      </div>
+      <a href="/fullyrdingar/" class="home-text-link">Opna allar fullyrðingar</a>
+    </div>
+    <p class="issue-go-deeper-copy">
+      Byrjaðu á einum flokki í einu. Efnið hér að neðan er stuðningur við samantektina, ekki byrjunarpunkturinn.
+    </p>
+
+    <div class="issue-deep-dive-list">
+      {% if issue.links.reports | length %}
+      <details class="issue-deep-dive-group">
+        <summary>
+          <span class="issue-deep-dive-title">Greiningar</span>
+          <span class="issue-deep-dive-meta">{{ issue.links.reports | length }} dæmi</span>
+        </summary>
+        <div class="issue-deep-dive-content">
+          <div class="content-card-grid">
+            {% for item in issue.links.reports %}
+            <a href="{{ item.url }}" class="content-card">
+              <span class="content-card-eyebrow">{{ item.eyebrow }}</span>
+              <h4>{{ item.title }}</h4>
+              {% if item.meta | length %}<p class="content-card-meta">{{ item.meta | join(" · ") }}</p>{% endif %}
+              <p>{{ item.text }}</p>
+              {% if item.stats %}<span class="content-card-stat">{{ item.stats }}</span>{% endif %}
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+      </details>
+      {% endif %}
+
+      {% if issue.links.claims | length %}
+      <details class="issue-deep-dive-group">
+        <summary>
+          <span class="issue-deep-dive-title">Fullyrðingar</span>
+          <span class="issue-deep-dive-meta">{{ issue.links.claims | length }} dæmi</span>
+        </summary>
+        <div class="issue-deep-dive-content">
+          <div class="content-card-grid">
+            {% for item in issue.links.claims %}
+            <a href="{{ item.url }}" class="content-card">
+              <span class="content-card-eyebrow">{{ item.eyebrow }}</span>
+              <h4>{{ item.title }}</h4>
+              {% if item.meta | length %}<p class="content-card-meta">{{ item.meta | join(" · ") }}</p>{% endif %}
+              <p>{{ item.text }}</p>
+              {% if item.stats %}<span class="content-card-stat">{{ item.stats }}</span>{% endif %}
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+      </details>
+      {% endif %}
+
+      {% if issue.links.entities | length %}
+      <details class="issue-deep-dive-group">
+        <summary>
+          <span class="issue-deep-dive-title">Raddirnar</span>
+          <span class="issue-deep-dive-meta">{{ issue.links.entities | length }} dæmi</span>
+        </summary>
+        <div class="issue-deep-dive-content">
+          <div class="content-card-grid">
+            {% for item in issue.links.entities %}
+            <a href="{{ item.url }}" class="content-card">
+              <span class="content-card-eyebrow">{{ item.eyebrow }}</span>
+              <h4>{{ item.title }}</h4>
+              {% if item.meta | length %}<p class="content-card-meta">{{ item.meta | join(" · ") }}</p>{% endif %}
+              <p>{{ item.text }}</p>
+              {% if item.stats %}<span class="content-card-stat">{{ item.stats }}</span>{% endif %}
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+      </details>
+      {% endif %}
+
+      {% if issue.links.evidence | length %}
+      <details class="issue-deep-dive-group">
+        <summary>
+          <span class="issue-deep-dive-title">Heimildir</span>
+          <span class="issue-deep-dive-meta">{{ issue.links.evidence | length }} dæmi</span>
+        </summary>
+        <div class="issue-deep-dive-content">
+          <div class="content-card-grid">
+            {% for item in issue.links.evidence %}
+            <a href="{{ item.url }}" class="content-card">
+              <span class="content-card-eyebrow">{{ item.eyebrow }}</span>
+              <h4>{{ item.title }}</h4>
+              {% if item.meta | length %}<p class="content-card-meta">{{ item.meta | join(" · ") }}</p>{% endif %}
+              <p>{{ item.text }}</p>
+              {% if item.stats %}<span class="content-card-stat">{{ item.stats }}</span>{% endif %}
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+      </details>
+      {% endif %}
+
+      {% if issue.links.debates | length %}
+      <details class="issue-deep-dive-group">
+        <summary>
+          <span class="issue-deep-dive-title">Þingræður</span>
+          <span class="issue-deep-dive-meta">{{ issue.links.debates | length }} dæmi</span>
+        </summary>
+        <div class="issue-deep-dive-content">
+          <div class="content-card-grid">
+            {% for item in issue.links.debates %}
+            <a href="{{ item.url }}" class="content-card">
+              <span class="content-card-eyebrow">{{ item.eyebrow }}</span>
+              <h4>{{ item.title }}</h4>
+              {% if item.meta | length %}<p class="content-card-meta">{{ item.meta | join(" · ") }}</p>{% endif %}
+              <p>{{ item.text }}</p>
+              {% if item.stats %}<span class="content-card-stat">{{ item.stats }}</span>{% endif %}
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+      </details>
+      {% endif %}
+    </div>
+  </section>
+</article>

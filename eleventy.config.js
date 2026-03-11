@@ -1,4 +1,5 @@
 const taxonomy = require("./assets/js/site-taxonomy.js");
+const contentData = require("./lib/content-data.js");
 
 /** @type {import("@11ty/eleventy").UserConfig} */
 module.exports = function (eleventyConfig) {
@@ -87,6 +88,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("confidenceLabel", (c) => taxonomy.confidenceLabels[c] || c);
   eleventyConfig.addFilter("entityTypeLabel", (t) => taxonomy.entityTypeLabels[t] || t);
   eleventyConfig.addFilter("attributionLabel", (a) => taxonomy.attributionLabels[a] || a);
+  eleventyConfig.addFilter("resolveContent", (values, type) => contentData.resolveRecords(type, values));
 
   // ── Number formatting ───────────────────────────────────────────
   eleventyConfig.addFilter("localeString", (n) => {

@@ -32,7 +32,7 @@
         <a href="/" class="site-logo">{{ site.title }}</a>
         <div id="site-menu" class="site-menu">
           <div class="site-menu-group">
-            <p class="nav-group-label">Yfirlit</p>
+            <p class="nav-group-label">Gagnasíður</p>
             <ul class="nav-list nav-list--primary">
               {% for item in navigation.primary %}
               {% set isCurrent = page.url | navCurrent(item) %}
@@ -41,7 +41,7 @@
             </ul>
           </div>
           <div class="site-menu-group site-menu-group--utility">
-            <p class="nav-group-label">Kafa dýpra</p>
+            <p class="nav-group-label">Yfirlit og hjálp</p>
             <ul class="nav-list nav-list--utility">
               {% for item in navigation.utility %}
               {% set isCurrent = page.url | navCurrent(item) %}
@@ -64,8 +64,8 @@
   </main>
 
   <footer class="site-footer">
-    <p>{{ site.title }} — óháð upplýsingaverkefni um ESB-þjóðaratkvæðagreiðsluna {{ site.referendum_date | isDate }}.</p>
-    <p>Greiningum er safnað og þær unnar með aðstoð spjallmennisins Claude. Umsjón: Brynjólfur Gauti Guðrúnar Jónsson.</p>
+    <p>{{ site.title }} er óháð upplýsingaverkefni um ESB-þjóðaratkvæðagreiðsluna {{ site.referendum_date | isDate }}.</p>
+    <p>Síðan safnar saman fullyrðingum, greiningum, heimildum, röddum í umræðunni og þingræðum. Samantektir eru unnar með aðstoð Claude en birt efni er yfirfarið fyrir birtingu.</p>
     <p class="footer-links">
       <a href="/um-okkur/">Um okkur</a> &middot;
       <a href="/adferdarfraedi/">Aðferðafræði</a> &middot;

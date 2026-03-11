@@ -1,0 +1,74 @@
+---
+layout: base.njk
+title: Vikuyfirlit
+description: Vikuleg samantekt um það sem breyttist í ESB-umræðunni — nýjar greiningar, fullyrðingar, þingræður og áberandi raddir.
+wide_layout: true
+---
+
+{% set briefings = collections.publishedBriefings %}
+{% set leadBriefing = briefings[0] %}
+
+<div class="briefings-shell">
+  <section class="overview-hero">
+    <div class="overview-hero-copy">
+      <p class="home-section-label">Vikuyfirlit</p>
+      <h1>Hvað breyttist í umræðunni í þessari viku?</h1>
+      <p class="overview-hero-deck">Hér birtast stuttar samantektir á því sem færðist til í umræðunni. Byrjaðu hér ef þú vilt nýjustu myndina áður en þú opnar einstakar greiningar eða fullyrðingar.</p>
+    </div>
+    <aside class="overview-hero-panel">
+      <h2>Birtingarskref</h2>
+      <p>Drög geta orðið til með aðstoð sjálfvirkrar vinnslu, en vikuyfirlit eiga aðeins að birtast hér eftir mannlega ritstjórn og yfirferð.</p>
+    </aside>
+  </section>
+
+  {% if leadBriefing %}
+  <section class="briefing-feature">
+    <div class="briefing-feature-copy">
+      <p class="home-section-label">Nýjasta yfirfariða samantektin</p>
+      <h2><a href="{{ leadBriefing.url }}">{{ leadBriefing.data.title }}</a></h2>
+      <p class="briefing-date-range">{{ leadBriefing.data.week_start | isDateRange(leadBriefing.data.week_end) }}</p>
+      <p>{{ leadBriefing.data.summary_deck }}</p>
+      {% if leadBriefing.data.key_takeaways and leadBriefing.data.key_takeaways | length %}
+      <ul class="briefing-feature-list">
+        {% for takeaway in leadBriefing.data.key_takeaways %}
+          {% if loop.index <= 3 %}
+          <li>{{ takeaway }}</li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+      {% endif %}
+      <a href="{{ leadBriefing.url }}" class="home-cta">Lesa vikuyfirlitið</a>
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="overview-section overview-section--archive">
+    <div class="overview-section-head">
+      <div>
+        <p class="home-section-label">Safnið</p>
+        <h2>Öll birt vikuyfirlit</h2>
+      </div>
+    </div>
+
+    {% if briefings | length %}
+    <div class="briefing-timeline">
+      {% for entry in briefings %}
+      <a href="{{ entry.url }}" class="briefing-archive-card">
+        <div class="briefing-archive-date">
+          <span class="content-card-eyebrow">{{ entry.data.week_start | isDateRange(entry.data.week_end) }}</span>
+        </div>
+        <div class="briefing-archive-copy">
+          <h3>{{ entry.data.title }}</h3>
+          <p>{{ entry.data.summary_deck }}</p>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="overview-card">
+      <h3>Engin vikuyfirlit hafa verið birt enn</h3>
+      <p>Þegar fyrsta yfirfarða samantektin fer í loftið birtist hún hér og á forsíðunni.</p>
+    </div>
+    {% endif %}
+  </section>
+</div>

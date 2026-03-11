@@ -255,7 +255,7 @@
 
       <section class="st-period-focus" aria-label="Tímabil umræðna">
         <div class="st-period-copy">
-          <p class="st-period-eyebrow">Byrja hér</p>
+          <p class="st-period-eyebrow">Tímabil</p>
           <h2 class="st-period-title">Nýjustu umræðurnar fyrst</h2>
           <p class="st-period-note">Sjálfgefið eru sýnd þingmál frá ${escapeHtml(periodCounts.recentLabel)}. Eldri umræður eru áfram aðgengilegar í safninu þegar þú vilt kafa dýpra.</p>
         </div>

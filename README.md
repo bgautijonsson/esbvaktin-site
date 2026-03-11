@@ -8,6 +8,10 @@ This repository contains the website only. It does not contain the upstream anal
 
 The site organizes referendum-related material into a few public surfaces:
 
+- `Vikuyfirlit` — weekly briefings about what changed most recently
+- `Málefni` — evergreen issue guides for the biggest recurring questions
+- `Spurt og svarað` — short answers for first-time visitors who want the basics quickly
+- `Orðskýringar` — plain-language glossary for recurring referendum and site terms
 - `Fullyrðingar` — claim tracker and claim-level verdicts
 - `Umræðan` — article/report analysis
 - `Raddirnar` — entities, parties, institutions, and speakers in the discourse
@@ -75,6 +79,10 @@ assets/
   css/              Global styles, tracker styles, shared tracker CSS
   js/               Shared browser helpers and page-level tracker scripts
   data/             Exported JSON consumed by the site
+malefni/            Evergreen issue guides
+spurningar-og-svor/ Plain-language FAQ
+ordaskyringar/      Plain-language glossary
+vikuyfirlit/        Weekly briefing index and Markdown briefing entries
 umraedan/           Report listing and report detail generation
 raddirnar/          Entity listing and entity detail generation
 heimildir/          Evidence listing and evidence detail generation
@@ -106,12 +114,26 @@ The homepage is server-rendered from `_data/home.js`.
 
 That data file reads from `assets/data/*.json` so the front page reflects the same exported datasets used by the client-side trackers. It currently drives:
 
-- referendum countdown
+- homepage status metadata
+- support links to `Vikuyfirlit`, `Málefni`, `Spurt og svarað`, and `Orðskýringar`
+- latest published weekly briefing
 - latest analysis card
 - verdict distribution
 - featured voices
 - debate activity
 - timeline/trust blocks
+
+## Weekly Briefings
+
+Published weekly briefings live under [`vikuyfirlit/`](/Users/brynjolfurjonsson/esbvaktin-site/vikuyfirlit).
+
+The intended workflow is:
+
+1. an external pipeline writes a Markdown file with front matter into `vikuyfirlit/`
+2. the file stays private while `draft: true`
+3. after review, flipping `draft` to `false` publishes it automatically
+
+The output contract for those files is documented in [`vikuyfirlit/README.md`](/Users/brynjolfurjonsson/esbvaktin-site/vikuyfirlit/README.md).
 
 ## Deployment
 

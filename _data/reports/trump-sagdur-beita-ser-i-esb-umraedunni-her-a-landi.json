@@ -10,9 +10,9 @@
   "summary": "Greindar 21 fullyrðingar. Niðurstöður: 11 ekki hægt að sannreyna, 5 stutt að hluta, 3 stutt af heimildum, 1 ekki stutt, 1 villandi. Sjónarhorn: hallar á ESB-neikvæða hlið. Heildstæðni: 25%.",
   "verdict_counts": {
     "unsupported": 2,
-    "partially_supported": 6,
-    "supported": 6,
-    "unverifiable": 6,
+    "partially_supported": 8,
+    "supported": 7,
+    "unverifiable": 3,
     "misleading": 1
   },
   "claim_count": 21,
@@ -358,12 +358,18 @@
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Engar heimildir í staðreyndagrunni nefna Billy Long eða tilnefningu hans sem sendiherra Bandaríkjanna á Íslandi. <a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"1951 US-Iceland Defence Agreement; 2016 Iceland-US Security Cooperation Agreement; US Department of State bilateral relations factsheet\" target=\"_blank\" rel=\"noopener\">SOV-DATA-008</a> fjallar um tvíhliða samband Íslands og Bandaríkjanna almennt en nefnir ekki sendiherratilnefningar. Ekki er hægt að staðfesta eða hrekja þessa fullyrðingu með tiltækum gögnum.",
-      "supporting_evidence": [],
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.whitehouse.gov/presidential-actions/nominations/\" title=\"White House — Presidential Nominations\" target=\"_blank\" rel=\"noopener\">SOV-DATA-015</a> staðfestir beint að Donald Trump tilnefndi Billy Long, fyrrverandi þingmann frá Missouri, sem sendiherra Bandaríkjanna á Íslandi. Tilnefningin var tilkynnt árið 2025. Orðalagið \"fyrirhugaður sendiherra\" samræmist vel stöðu tilnefnds en óstaðfests sendiherra.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-015",
+          "source_name": "White House — Presidential Nominations",
+          "source_url": "https://www.whitehouse.gov/presidential-actions/nominations/"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Staðreyndagrunnurinn inniheldur engar upplýsingar um Billy Long eða sendiherratilnefningar Trump-stjórnarinnar til Íslands. Þetta er staðhæfing sem þyrfti að sannreyna gegn opinberum tilkynningum frá bandaríska utanríkisráðuneytinu eða öldungadeild Bandaríkjaþings.",
-      "confidence": 0.3,
+      "missing_context": "Tilnefning þýðir ekki sjálfkrafa staðfestingu — öldungadeildin þarf að staðfesta hana. Hvort Long hafi hafið störf á Íslandi kemur ekki fram í heimildinni.",
+      "confidence": 0.9,
       "speakers": [
         {
           "name": "Billy Long",
@@ -386,11 +392,17 @@
         "confidence": 0.9
       },
       "verdict": "unverifiable",
-      "explanation": "Staðreyndagrunnurinn inniheldur engar heimildir um Hringborð norðurslóða í Róm eða viðbrögð bandarísk stjórnvalda í kjölfarið. <a href=\"https://www.eeas.europa.eu/eeas/strategic-compass-security-and-defence-1_en\" title=\"EU Strategic Compass for Security and Defence (March 2022); NATO Allied Air Command — Icelandic Air Policing; IISS Strategic Survey 2023\" target=\"_blank\" rel=\"noopener\">SOV-HIST-003</a> og <a href=\"https://www.eeas.europa.eu/eeas/eu-arctic-policy_en\" title=\"European Commission — EU Arctic Policy, Joint Communication JOIN(2021) 27\" target=\"_blank\" rel=\"noopener\">SOV-DATA-001</a> staðfesta að Ísland hefur aukið hernaðarlegt mikilvægi vegna stöðu sinnar á Norður-Atlantshafi, en tengja það ekki við þennan tiltekna atburð. Ekki er hægt að meta fullyrðinguna með tiltækum gögnum.",
-      "supporting_evidence": [],
+      "explanation": "<a href=\"https://www.arcticcircle.org/forums/arctic-circle-rome-forum\" title=\"Arctic Circle — Rome Forum 2026\" target=\"_blank\" rel=\"noopener\">SOV-DATA-016</a> staðfestir að Arctic Circle-ráðstefnan í Róm fór fram 3.–4. mars 2026 og undirstrikaði aukna þýðingu norðurslóða í alþjóðamálum. Hins vegar nefnir heimildin ekkert um aukið vægi Íslands vestanhafs í kjölfar ráðstefnunnar. Orsakasamhengið — að staða Íslands hafi styrkst í Ameríku vegna ráðstefnunnar — er fullyrðing sem engin fyrirliggjandi heimild styður.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-016",
+          "source_name": "Arctic Circle — Rome Forum 2026",
+          "source_url": "https://www.arcticcircle.org/forums/arctic-circle-rome-forum"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Engar heimildir eru til staðar um Hringborð norðurslóða í Róm í staðreyndagrunni. <a href=\"https://www.eeas.europa.eu/eeas/strategic-compass-security-and-defence-1_en\" title=\"EU Strategic Compass for Security and Defence (March 2022); NATO Allied Air Command — Icelandic Air Policing; IISS Strategic Survey 2023\" target=\"_blank\" rel=\"noopener\">SOV-HIST-003</a> staðfestir þó almennt að hernaðarlegt mikilvægi Íslands hefur aukist eftir innrás Rússa í Úkraínu 2022, og <a href=\"https://www.eeas.europa.eu/eeas/eu-arctic-policy_en\" title=\"European Commission — EU Arctic Policy, Joint Communication JOIN(2021) 27\" target=\"_blank\" rel=\"noopener\">SOV-DATA-001</a> nefnir að Ísland á sæti í Norðurskautsráðinu.",
-      "confidence": 0.25,
+      "missing_context": "Ráðstefnan var haldin í Róm (Evrópu), ekki vestanhafs. Engar heimildir eru til um viðbrögð bandarískra eða kanadískra stjórnvalda við ráðstefnunni eða um breytta stöðu Íslands vestanhafs í kjölfarið.",
+      "confidence": 0.85,
       "speakers": [
         {
           "name": "Altinget.no",
@@ -412,12 +424,18 @@
         "claim_type": "statistic",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Engin heimild í gagnagrunninum fjallar um þátttöku Katrínar Jakobsdóttur á Hringborði norðurslóða í Róm eða umræður hennar um fullveldi á norðurslóðum. <a href=\"https://www.althingi.is/thingmenn/thingflokkar/vidreisn/\" title=\"Althingi — Session 157; Viðreisn party platform\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-004</a> fjallar um Viðreisn og Þorgerði Katrínu Gunnarsdóttur, ekki um Katrínu Jakobsdóttur. Án beinnar heimildar um þennan tiltekna atburð er fullyrðingin enn óstaðfestanleg.",
-      "supporting_evidence": [],
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.arcticcircle.org/forums/arctic-circle-rome-forum\" title=\"Arctic Circle — Rome Forum 2026\" target=\"_blank\" rel=\"noopener\">SOV-DATA-016</a> staðfestir að Arctic Circle Rome Forum var haldið 3.–4. mars 2026 í Róm, með yfir 500 þátttakendum frá meira en 40 löndum. Ráðstefnan fjallaði um norðurslóðamál, diplómatíu og öryggismál. Katrín Jakobsdóttir er þó ekki nefnd sérstaklega í heimildinni, og fyrirvararnir benda á að fullyrðingar um þátttöku hennar hafi ekki verið staðfestar frá opinberum heimildum.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-016",
+          "source_name": "Arctic Circle — Rome Forum 2026",
+          "source_url": "https://www.arcticcircle.org/forums/arctic-circle-rome-forum"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "POL-DATA-008 staðfestir að Katrín Jakobsdóttir er fyrrverandi forsætisráðherra og hefur sýnt varkára stuðning við ESB-aðild. Hún er vel þekkt á alþjóðavettvangi en staðreyndagrunnurinn inniheldur engar upplýsingar um þátttöku hennar á Hringborði norðurslóða í Róm.",
-      "confidence": 0.85,
+      "missing_context": "Heimildin staðfestir ráðstefnuna en nefnir ekki Katrínu Jakobsdóttur með nafni. Til þyrfti dagskrá ráðstefnunnar eða fjölmiðlaumfjöllun sem tengir hana beint við umræðu um fullveldi á norðurslóðum.",
+      "confidence": 0.5,
       "speakers": [
         {
           "name": "Katrín Jakobsdóttir",
@@ -440,11 +458,11 @@
         "confidence": 0.9
       },
       "verdict": "unverifiable",
-      "explanation": "Engar heimildir í staðreyndagrunni fjalla um afstöðu Katrínar Jakobsdóttur til aðkomu Kínverja að norðurslóðamálum eða um ræðu hennar á Hringborði norðurslóða í Róm. Þetta er fullyrðing sem ekki er hægt að meta með tiltækum gögnum.",
+      "explanation": "Engin heimild staðfestir að Katrín Jakobsdóttir hafi talað um mikilvægi þess að veita Kínverjum aðkomu að samráði um norðurslóðir. <a href=\"https://www.arcticcircle.org/forums/arctic-circle-rome-forum\" title=\"Arctic Circle — Rome Forum 2026\" target=\"_blank\" rel=\"noopener\">SOV-DATA-016</a> lýsir Arctic Circle-ráðstefnunni í Róm en nefnir hvorki Katrínu né Kínverja sérstaklega. Fyrirvarar heimildarinnar benda jafnframt á að fullyrðingar um aðkomu Kínverja hafi ekki verið staðfestar frá opinberum heimildum.",
       "supporting_evidence": [],
       "contradicting_evidence": [],
-      "missing_context": "Kína hefur sótt um áheyrnaraðild að Norðurskautsráðinu og fengið hana árið 2013. Samkvæmt <a href=\"https://www.eeas.europa.eu/eeas/eu-arctic-policy_en\" title=\"European Commission — EU Arctic Policy, Joint Communication JOIN(2021) 27\" target=\"_blank\" rel=\"noopener\">SOV-DATA-001</a> hefur ESB hins vegar ekki fengið áheyrnaraðild, m.a. vegna andstöðu Rússa. Afstaða Katrínar Jakobsdóttur til Kínverja á norðurslóðum er ekki skjalfest í staðreyndagrunni.",
-      "confidence": 0.2,
+      "missing_context": "Þörf er á beinum heimildum um ræðu eða ummæli Katrínar Jakobsdóttur varðandi aðkomu Kínverja að norðurslóðasamráði. <a href=\"https://www.arcticcircle.org/forums/arctic-circle-rome-forum\" title=\"Arctic Circle — Rome Forum 2026\" target=\"_blank\" rel=\"noopener\">SOV-DATA-016</a> fjallar um ráðstefnuna almennt en staðfestir ekki efni fullyrðingarinnar.",
+      "confidence": 0.85,
       "speakers": [
         {
           "name": "Katrín Jakobsdóttir",
@@ -660,12 +678,18 @@
         "claim_type": "comparison",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Engar heimildir í gagnagrunni fjalla um viðskiptasamkomulag Noregs við Trump eða bandarísk stjórnvöld. <a href=\"https://ec.europa.eu/eurostat/databrowser/view/ext_lt_maineu/\" title=\"Eurostat — International trade main aggregates (ext_lt_maineu)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-017</a> lýsir viðskiptasambandi ESB og Noregs almennt, en nefnir ekkert slíkt samkomulag. Fullyrðingin vísar til sérstaks atburðar sem heimildir staðfesta hvorki né hrekja — ekki er hægt að meta hvort samkomulagið hafi átt sér stað eða hvort það hafi verið \"mjög slæmt.\"",
-      "supporting_evidence": [],
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.reuters.com/world/europe/norway-tariffs-trump-2025/\" title=\"Reuters, NRK, Financial Times — viðskipti Noregs og Bandaríkjanna 2025–2026\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-027</a> staðfestir kjarnann: Noregur semur eitt og sér við Bandaríkin og getur ekki nýtt sér sameiginlegan samningsstyrk ESB. Bandaríkin lögðu 15% tolla á flestar norska vöru og 50% á stál og ál, sem bitnar sérstaklega á sjávarafurðum. Drög að tollasamningi voru enn ófrágengin í febrúar 2026. Orðalagið \"mjög slæmt viðskiptasamkomulag\" er þó ónákvæmt — enginn endanlegur samningur hafði verið undirritaður, heldur var um viðvarandi tollaálagningu og óvissu að ræða.",
+      "supporting_evidence": [
+        {
+          "id": "TRADE-DATA-027",
+          "source_name": "Reuters, NRK, Financial Times — viðskipti Noregs og Bandaríkjanna 2025–2026",
+          "source_url": "https://www.reuters.com/world/europe/norway-tariffs-trump-2025/"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Staðreyndagrunnurinn inniheldur engar heimildir um nýlegt viðskiptasamkomulag Noregs og Bandaríkjanna. Fullyrðingin er mat (\"mjög slæmt\") og krefst bæði staðfestingar á tilvist samkomulagsins og efnislegrar greiningar á skilmálum þess til að meta.",
-      "confidence": 0.6,
+      "missing_context": "Enginn endanlegur samningur var til staðar — fullyrðingin um \"samkomulag\" er villandi þar sem um ófrágengin samningadrög var að ræða. Noregur er mun stærra hagkerfi en Ísland og niðurstöður þar gefa ekki sjálfkrafa vísbendingu um stöðu Íslands. Tollastefna Trump-stjórnarinnar breyttist hratt og staðan gæti hafa þróast eftir mars 2026.",
+      "confidence": 0.7,
       "speakers": [
         {
           "name": "Donald Trump",

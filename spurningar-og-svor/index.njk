@@ -1,0 +1,76 @@
+---
+layout: base.njk
+title: Spurt og svarað
+description: Stutt, skýr svör við algengum spurningum um ESB-þjóðaratkvæðagreiðsluna og hvernig á að nota ESBvaktina.
+wide_layout: true
+---
+
+<div class="overview-shell">
+  <section class="overview-hero">
+    <div class="overview-hero-copy">
+      <p class="home-section-label">Spurt og svarað</p>
+      <h1>Stuttu svörin áður en þú ferð dýpra</h1>
+      <p class="overview-hero-question">Þessi síða er hugsuð fyrir fólk sem vill á nokkrum mínútum skilja grunnspurningarnar, án þess að byrja í gagnagrunni eða löngum greiningum.</p>
+      <p class="overview-hero-deck">Svörin hér vísa áfram í málefni, vikuyfirlit og undirliggjandi gögn ef þú vilt staðfesta samhengi eða kafa dýpra.</p>
+    </div>
+
+    <aside class="overview-hero-panel">
+      <h2>Best að nota þessa síðu svona</h2>
+      <p>Lestu stuttu svarið, opnaðu svo aðeins einn eða tvo tengla áfram. Markmiðið er að hjálpa þér að átta þig hratt, ekki að hlaða yfir þig öllu efninu í einu.</p>
+    </aside>
+  </section>
+
+  {% set compact_overview_note = true %}
+  {% set overview_note_heading = "Stuttar leiðir inn í efnið" %}
+  {% set overview_note_copy = "Algengar spurningar eru gagnleg byrjun fyrir fyrstu heimsókn. Þegar grunnmyndin er komin er auðveldara að lesa vikuyfirlit, málefni og fullyrðingar með gagnrýninni ró." %}
+  {% include "overview-note.njk" %}
+
+  <section class="overview-section">
+    <div class="overview-section-head">
+      <div>
+        <p class="home-section-label">Algengar spurningar</p>
+        <h2>Svör sem eiga að nýtast strax</h2>
+      </div>
+    </div>
+
+    <div class="faq-list">
+      {% for item in faqs %}
+      <details class="faq-item"{% if loop.index <= 2 %} open{% endif %}>
+        <summary>{{ item.question }}</summary>
+        <div class="faq-answer">
+          <p>{{ item.answer }}</p>
+          {% if item.links and item.links | length %}
+          <div class="faq-links">
+            {% for link in item.links %}
+            <a href="{{ link.href }}" class="overview-chip">{{ link.label }}</a>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+      </details>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="overview-section">
+    <div class="overview-section-head">
+      <div>
+        <p class="home-section-label">Vantar orðskýringu?</p>
+        <h2>Farðu næst í hugtökin sem rugla umræðuna mest</h2>
+      </div>
+      <a href="/ordaskyringar/" class="home-text-link">Orðskýringar</a>
+    </div>
+    <div class="overview-card-grid overview-card-grid--two">
+      <a href="/ordaskyringar/" class="overview-card overview-card--link">
+        <span class="content-card-eyebrow">Orðskýringar</span>
+        <h3>Hvað merkja hugtökin sem koma aftur og aftur fyrir?</h3>
+        <p>Skýringar á orðum eins og aðildarviðræður, undanþága, fullveldi, úrskurður og ósannanlegt.</p>
+      </a>
+      <a href="/malefni/" class="overview-card overview-card--link">
+        <span class="content-card-eyebrow">Málefni</span>
+        <h3>Berðu svo saman helstu ágreiningsefnin</h3>
+        <p>Þegar hugtökin eru skýr er auðveldara að bera saman málefnin sjálf og sjá hvar gögnin liggja þéttast.</p>
+      </a>
+    </div>
+  </section>
+</div>

@@ -9,10 +9,10 @@
   "analysis_date": "2026-03-10",
   "summary": "Greindar 19 fullyrðingar. Niðurstöður: 7 stutt af heimildum, 7 ekki hægt að sannreyna, 4 stutt að hluta, 1 ekki stutt. Sjónarhorn: hallar á ESB-jákvæða hlið. Heildstæðni: 25%.",
   "verdict_counts": {
-    "supported": 8,
-    "partially_supported": 6,
-    "unverifiable": 4,
-    "unsupported": 1
+    "supported": 9,
+    "partially_supported": 8,
+    "unsupported": 1,
+    "unverifiable": 1
   },
   "claim_count": 19,
   "dominant_category": "party_positions",
@@ -254,7 +254,7 @@
         "confidence": 0.3
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://sa.is/frettatengt/frettir/vinna-hafin-vid-uttekt-a-stodu-adildarvidraedna-vid-evropusambandid\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> staðfestir að SA styðja ESB-aðild og telja hana efla samningsstöðu Íslands, sem gæti falist í gagnrýni á fullyrðingar um sterka samningsstöðu utan ESB. <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins (SI) — Membership survey, February/March 2026\" target=\"_blank\" rel=\"noopener\">ORG-DATA-001</a> sýnir að 57% félagsmanna SI eru andvígir ESB-aðild en SI hefur kallað eftir ítarlegri efnahagsgreiningu — afstaðan er varkárari en bein gagnrýni á forsætisráðherra. Beinar tilvitnanir í yfirlýsingar SA eða SI um að forsætisráðherra geri \"of mikið\" úr samningsstöðu Íslands finnast hins vegar ekki í heimildum.",
+      "explanation": "<a href=\"https://sa.is/frettatengt/frettir/vinna-hafin-vid-uttekt-a-stodu-adildarvidraedna-vid-evropusambandid\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> staðfestir að SA styðja ESB-aðild og telja hana efla samningsstöðu Íslands, sem gæti falist í gagnrýni á fullyrðingar um sterka samningsstöðu utan ESB. <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins (SI) — Membership survey, February/March 2026\" target=\"_blank\" rel=\"noopener\">ORG-DATA-001</a> sýnir að 57% félagsmanna SI eru andvígir ESB-aðild en SI hefur kallað eftir ítarlegri efnahagsgreiningu — afstaðan er varkárari en bein gagnrýni á forsætisráðherra. Beinar tilvitnanir í yfirlýsingar SA eða SI um að forsætisráðherra geri „of mikið\" úr samningsstöðu Íslands finnast hins vegar ekki í heimildum.",
       "supporting_evidence": [
         {
           "id": "POL-DATA-012",
@@ -526,12 +526,23 @@
         "claim_type": "legal_assertion",
         "confidence": 0.25
       },
-      "verdict": "unverifiable",
-      "explanation": "Engin heimild í gagnagrunninum staðfestir eða hafnar fundi forsætisráðherra Íslands og Ursulu von der Leyen síðasta sumar. <a href=\"https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/\" title=\"Althingi — Ministers registry, session 157\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-003</a> staðfestir hverjir eru í ríkisstjórn og <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland; Euronews; France24; coalition agreement\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-013</a> nefnir að ríkisstjórnin sækist eftir ESB-tengdri stefnu, en enginn þessara staðfestir tiltekinn fund. Þetta er staðreyndaleg fullyðing sem krefst beinnar heimildar um viðburðinn.",
-      "supporting_evidence": [],
+      "verdict": "supported",
+      "explanation": "<a href=\"https://ec.europa.eu/commission/presscorner/detail/en/ac_25_1887\" title=\"European Commission — Press Corner; EEAS\" target=\"_blank\" rel=\"noopener\">EEA-DATA-015</a> staðfestir að forsætisráðherra Kristrún Frostadóttir hitti Ursulu von der Leyen tvisvar árið 2025 — í Brussel í apríl og í Reykjavík í júlí. Seinni fundurinn, sem fram fór 16.–18. júlí 2025, fellur undir \"síðasta sumar\" miðað við tímasetningu fullyrðingarinnar. Á þeim fundi heimsótti von der Leyen Ísland, þær skoðuðu jökla úr þyrlu og tilkynnt var um viðræður um öryggis- og varnarsamstarfssamning.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-DATA-015",
+          "source_name": "European Commission — Press Corner; EEAS",
+          "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ac_25_1887"
+        },
+        {
+          "id": "POLITICAL-DATA-003",
+          "source_name": "Althingi — Ministers registry, session 157",
+          "source_url": "https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Fundur á milli forsætisráðherra og framkvæmdastjóra ESB er sannanleg staðreynd sem myndi hafa birtst í fréttatilkynningum. Gagnagrunnnir inniheldur þó ekki þessar upplýsingar.",
-      "confidence": 0.2,
+      "missing_context": "Opinber umgjörð fundanna var öryggis- og varnarsamstarf, ekki bein umræða um ESB-aðild. Fullyrðingin nefnir eingöngu fundinn en segir ekkert um efni hans.",
+      "confidence": 0.93,
       "speakers": [
         {
           "name": "RÚV",
@@ -563,12 +574,18 @@
         "claim_type": "opinion",
         "confidence": 0.2
       },
-      "verdict": "unverifiable",
-      "explanation": "Heimildirnar fjalla um afstöðu stjórnarflokkanna til ESB-aðildar og stefnu forsætisráðherra í þingræðum, en engin þeirra staðfestir bein samskipti milli forsætisráðherra Íslands og Ursulu von der Leyen. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Coalition agreement (stjórnarsáttmáli) 2024; party platforms; media reporting March 2026\" target=\"_blank\" rel=\"noopener\">POL-DATA-021</a> lýsir afstöðu ríkisstjórnarinnar og <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T162602.html\" title=\"Alþingi — Kristrún Frostadóttir, forsætisráðherra (andsvar, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">PARTY-PARL-001</a> vitnar í ummæli forsætisráðherra á Alþingi, en hvorugt nefnir samskipti við forseta framkvæmdastjórnar ESB.",
-      "supporting_evidence": [],
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://ec.europa.eu/commission/presscorner/detail/en/ac_25_1887\" title=\"European Commission — Press Corner; EEAS\" target=\"_blank\" rel=\"noopener\">EEA-DATA-015</a> staðfestir að samskipti forsætisráðherra og von der Leyen voru umfangsmikil — tvö formlega fundarsambönd, þyrluferð yfir jökla og tilkynning um öryggissamstarfssamning. Heimildin nefnir að umfang samskiptanna gaf til kynna \"hlýrri samskipti en verið höfðu.\" Á hinn bóginn var opinber umgjörð fundanna öryggis- og varnarsamstarf, ekki bein ESB-aðild. Að kalla samskiptin \"jákvæð gagnvart því að Ísland gangi í ESB\" er túlkun á andrúmslofti sem heimildin sjálf nefnir sem fyrirvara.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-DATA-015",
+          "source_name": "European Commission — Press Corner; EEAS",
+          "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ac_25_1887"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Jafnvel þótt samskiptin hafi verið jákvæð er mikilvægt að greina á milli almennrar velkomnar ESB til Íslands og formlegra skuldbindinga. Framkvæmdastjórnin hefur þjóðfélaga- og málsmeðferðarreglur sem ganga framar einkasvörum leiðtoga.",
-      "confidence": 0.3,
+      "missing_context": "Heimildin tekur skýrt fram að fullyrðingin um jákvæðni gagnvart ESB-aðild sé \"túlkun á andrúmslofti, ekki opinber afstaða.\" Fundirnir sneru opinberlega að öryggis- og varnarsamstarfi. Framkvæmdastjórn ESB hefur ekki tjáð sig opinberlega um stuðning við ESB-aðild Íslands í þessu samhengi.",
+      "confidence": 0.82,
       "speakers": [
         {
           "name": "Kristrún Frostadóttir",
@@ -720,11 +737,11 @@
         "confidence": 0.3
       },
       "verdict": "unverifiable",
-      "explanation": "Heimildir lýsa þjóðaratkvæðagreiðslunni og afstöðu ríkisstjórnarinnar til hennar, en engin þeirra inniheldur yfirlýsingu forsætisráðherra um að ESB-umræðan verði talin lokið ef þjóðin greiði atkvæði gegn áframhaldi viðræðna. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/\" title=\"Coalition agreements 2009, 2013, 2016, 2017, 2021, 2024; Althingi records\" target=\"_blank\" rel=\"noopener\">POL-DATA-010</a> nefnir almennt að nei-úrslit myndu fjarlægja málið af dagskrá í kynslóð, en eignar þá skoðun ekki forsætisráðherra beint. Bein tilvitnun skortir.",
+      "explanation": "Engin heimild vitnar beint í yfirlýsingu forsætisráðherra um að ESB-umræðan verði lokið ef þjóðin segir nei. <a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> vísar til yfirlýsinga Kristrúnar Frostadóttur um ESB-aðild en nefnir ekki viðhorf hennar til neikvæðrar niðurstöðu. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> bendir á að þjóðaratkvæðagreiðslan sé ráðgefandi, sem flækir spurninguna um hvort niðurstaðan bindi ríkisstjórnina pólitískt.",
       "supporting_evidence": [],
       "contradicting_evidence": [],
-      "missing_context": "Sagan sýnir að nei-niðurstöður í þjóðaratkvæðagreiðslum í Evrópu eru ekki alltaf endanlegur lokasigur: Frakkland og Hollandi sögðu nei við evrópskri stjórnarskrá 2005, en sumt efni hennar var síðar tekið upp í Lissabon-sáttmálann. ESB-spurningin á Íslandi gæti dvalið í dvala í kynslóð en ekki horfið endanlega.",
-      "confidence": 0.7,
+      "missing_context": "Þjóðaratkvæðagreiðslan er ráðgefandi samkvæmt <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a>, en pólitísk venja leggur mikla áherslu á niðurstöðu slíkra kosninga. Beina tilvitnun í forsætisráðherra um hvað gerist ef útkoman verður nei vantar í heimildir.",
+      "confidence": 0.75,
       "speakers": [
         {
           "name": "RÚV",
@@ -804,12 +821,23 @@
         "claim_type": "opinion",
         "confidence": 0.2
       },
-      "verdict": "unverifiable",
-      "explanation": "Heimildir staðfesta að Kristrún Frostadóttir er forsætisráðherra (<a href=\"https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/\" title=\"Althingi — Ministers registry, session 157\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-003</a>) og að alþjóðlegt öryggisástand er á hreyfingu — þar á meðal yfirlýsingar Trumps um Grænland (<a href=\"https://www.reuters.com/world/\" title=\"Multiple news sources — Reuters, AP, BBC coverage of Trump Greenland statements (2025)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-011</a>) og umræður um endurskoðun öryggisstefnu ESB. Engin heimild skráir hins vegar tíðni erlendra funda forsætisráðherra eða ber hana saman við fyrri ríkisstjórnir. Án slíkra gagna er fullyrðingin óstaðfestanleg.",
-      "supporting_evidence": [],
+      "verdict": "partially_supported",
+      "explanation": "Heimild <a href=\"https://ec.europa.eu/commission/presscorner/detail/en/ac_25_1887\" title=\"European Commission — Press Corner; EEAS\" target=\"_blank\" rel=\"noopener\">EEA-DATA-015</a> staðfestir að forsætisráðherra Kristrún Frostadóttir hitti forseta framkvæmdastjórnar ESB á tveimur fundum árið 2025, þar á meðal heimsókn von der Leyen til Íslands þar sem rætt var um öryggis- og varnarsamstarf. <a href=\"https://www.reuters.com/world/\" title=\"Multiple news sources — Reuters, AP, BBC coverage of Trump Greenland statements (2025)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-011</a> lýsir auknu öryggisumhverfi (Trump og Grænland, hernaðaruppbygging Rússa) sem gefur samhengi. Fullyrðingin um \"óvenju marga erlenda fundi\" er þó ekki beint staðfest — heimildir nefna tvo fundi með ESB en gefa ekki heildarmynd af fjölda erlendra funda forsætisráðherra eða samanburð við fyrri forsætisráðherra.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-DATA-015",
+          "source_name": "European Commission — Press Corner; EEAS",
+          "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ac_25_1887"
+        },
+        {
+          "id": "SOV-DATA-011",
+          "source_name": "Multiple news sources — Reuters, AP, BBC coverage of Trump Greenland statements (2025)",
+          "source_url": "https://www.reuters.com/world/"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": null,
-      "confidence": 0.3,
+      "missing_context": "Heimildir staðfesta nokkra erlenda fundi en ekki heildarfjölda eða samanburð við fyrri forsætisráðherra. Fullyrðingin \"óvenju margir\" krefst slíks samanburðar. Fundirnir sem nefndir eru snúa að öryggismálum, ekki endilega ESB-aðild beint. Orsakatengslin við \"ástand í heimsmálum\" eru studd af <a href=\"https://www.reuters.com/world/\" title=\"Multiple news sources — Reuters, AP, BBC coverage of Trump Greenland statements (2025)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-011</a> um Trump og Grænland.",
+      "confidence": 0.55,
       "speakers": [
         {
           "name": "RÚV",

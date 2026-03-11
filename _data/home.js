@@ -74,7 +74,6 @@ module.exports = function () {
   const debates = sortByDateDesc(readJson("assets/data/debates.json"), ["last_date", "first_date"]);
   const evidence = readJson("assets/data/evidence.json");
   const entities = readJson("assets/data/entities.json");
-  const featuredEntitySlugs = readJson("assets/data/featured-entities.json");
 
   const verdictCounts = {};
   Object.keys(taxonomy.verdictLabels).forEach((verdict) => {
@@ -89,8 +88,6 @@ module.exports = function () {
   const totalSpeeches = debates.reduce((sum, debate) => sum + (debate.speech_count || 0), 0);
   const totalWords = debates.reduce((sum, debate) => sum + (debate.total_words || 0), 0);
   const uniqueSources = new Set(reports.map((report) => report.article_source).filter(Boolean));
-  const entityMap = new Map(entities.map((entity) => [entity.slug, entity]));
-
   const latestReports = reports.slice(0, 4).map((report) => {
     const primaryVerdict = getPrimaryVerdict(report);
     return {
@@ -101,9 +98,14 @@ module.exports = function () {
     };
   });
 
-  const featuredVoices = featuredEntitySlugs
-    .map((slug) => entityMap.get(slug))
-    .filter(Boolean)
+  const topEntities = [...entities]
+    .sort((a, b) => {
+      const mentionDiff = (b.mention_count || 0) - (a.mention_count || 0);
+      if (mentionDiff !== 0) return mentionDiff;
+      const claimDiff = (b.claims?.length || 0) - (a.claims?.length || 0);
+      if (claimDiff !== 0) return claimDiff;
+      return (b.articles?.length || 0) - (a.articles?.length || 0);
+    })
     .slice(0, 4)
     .map((entity) => ({
       ...entity,
@@ -139,25 +141,25 @@ module.exports = function () {
         value: totalClaims,
         label: "fullyrðingar",
         href: "/fullyrdingar/",
-        note: "Metnar á móti heimildum",
+        note: "úrskurðir skráðir",
       },
       {
         value: reports.length,
         label: "greiningar",
         href: "/umraedan/",
-        note: `${uniqueSources.size} fjölmiðlar`,
+        note: `${uniqueSources.size} miðlar`,
       },
       {
         value: entities.length,
         label: "raddir",
         href: "/raddirnar/",
-        note: "Flokkar, samtök og einstaklingar",
+        note: "aðilar í safni",
       },
       {
         value: evidence.length,
         label: "heimildir",
         href: "/heimildir/",
-        note: "Gögn, lög og frumheimildir",
+        note: "gögn og frumheimildir",
       },
       {
         value: debates.length,
@@ -167,9 +169,10 @@ module.exports = function () {
       },
     ],
     lead_report: latestReports[0] || null,
+    processed_reports: latestReports.slice(0, 3),
     recent_reports: latestReports.slice(1),
     verdict_distribution: verdictDistribution,
-    featured_voices: featuredVoices,
+    top_entities: topEntities,
     lead_debate: debates[0] || null,
     recent_debates: debates.slice(0, 3),
     total_speeches: totalSpeeches,

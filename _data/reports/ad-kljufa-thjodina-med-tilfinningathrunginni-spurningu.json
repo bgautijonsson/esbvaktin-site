@@ -9,10 +9,11 @@
   "analysis_date": "2026-03-10",
   "summary": "Greindar 14 fullyrðingar .",
   "verdict_counts": {
-    "partially_supported": 4,
+    "partially_supported": 5,
     "supported": 6,
     "misleading": 1,
-    "unverifiable": 3
+    "unverifiable": 1,
+    "unsupported": 1
   },
   "claim_count": 14,
   "dominant_category": "party_positions",
@@ -346,12 +347,18 @@
         "claim_type": "opinion",
         "confidence": 0.2
       },
-      "verdict": "unverifiable",
-      "explanation": "Engar heimildir í staðreyndagrunninum fjalla beint um þróun „raforkuúnútsins“ á Íslandi eða aðgerðir ríkisstjórnarinnar í orkumálum. <a href=\"https://askjaenergy.com/2018/04/17/icelink-in-operation-by-2025/\" title=\"Landsvirkjun — IceLink feasibility studies; National Grid ESO\" target=\"_blank\" rel=\"noopener\">ENERGY-ANALYSIS-002</a> fjallar um IceLink-sæstrenginn en á ekki við þessa fullyrðingu. Ómögulegt að sannreyna fullyrðinguna út frá fyrirliggjandi gögnum.",
-      "supporting_evidence": [],
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://orkustofnun.is/raforkumal/raforkuspa/\" title=\"Orkustofnun — Orkuspá og raforkuáætlun\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-007</a> staðfestir að á árunum 2022–2026 jókst umræða um orkuskort eftir áratuga orkuafgangs, og að Landsvirkjun tilkynnti 2024 að hún gæti ekki tekið við nýjum stórum viðskiptavinum. Orkustofnun varaði við í orkuspá sinni. Hugtakið \"raforkuúnútur\" var talið vera á undanhaldi. Fullyrðingin einfaldar þó stöðuna — réttara er að segja að framboð og eftirspurn séu nú nær jafnvægi en að úrinn hafi verið \"höggvinn á\" með endanlegum hætti, enda eru enn miklir virkjunarmöguleikar á Íslandi.",
+      "supporting_evidence": [
+        {
+          "id": "ENERGY-DATA-007",
+          "source_name": "Orkustofnun — Orkuspá og raforkuáætlun",
+          "source_url": "https://orkustofnun.is/raforkumal/raforkuspa/"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "„Raforkuúnúturinn“ vísar líklega til skorts á rafmagni eða vandkvæða við raforkuframleiðslu á Íslandi. Þyrfti sérstök gögn um orkustefnu ríkisstjórnarinnar og hvort aðgerðir hafi raunverulega leyst vandá.",
-      "confidence": 0.2,
+      "missing_context": "Ísland er enn með nánast 100% endurnýjanlega raforku og umtalsverða virkjunarmöguleika. Ný virkjun tekur 5–10 ár frá áformun til framleiðslu. Gagnamiðstöðvar og stóriðja hafa aukið eftirspurn umtalsvert. Orkuskorturinn er afstæður, ekki algildur.",
+      "confidence": 0.8,
       "speakers": [
         {
           "name": "Kristrún Frostadóttir",
@@ -407,11 +414,11 @@
         "confidence": 0.15
       },
       "verdict": "unverifiable",
-      "explanation": "Engin heimild í gagnagrunninum fjallar um fjölda hjúkrunarrýma eða uppbyggingu heilbrigðisinnviða. Heimildir staðfesta samsetningu ríkisstjórnarinnar og flokkspólitíska stöðu hennar en innihalda engin gögn um hjúkrunarrými eða samanburð við fyrri ríkisstjórnir á þessu sviði. Fullyrðingin krefst sérstakra gagna úr heilbrigðiskerfinu sem eru ekki til staðar.",
+      "explanation": "Engar heimildir í staðreyndagrunni fjalla um hjúkrunarrými eða opnun þeirra. Heimildir sem fundust (<a href=\"https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/\" title=\"Althingi — Government composition, session 157\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-002</a>, <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland; Euronews; France24; coalition agreement\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-013</a>) varða eingöngu samsetningu ríkisstjórnarinnar og stefnu í ESB-málum, ekki heilbrigðisinnviði. Fullyrðingin er því áfram óstaðfestanleg með tiltækum gögnum.",
       "supporting_evidence": [],
       "contradicting_evidence": [],
-      "missing_context": "Þyrfti gögn frá Heilbrigðisráðuneytinu eða Landspítala um opnun hjúkrunarrýma bæði núverandi stjórnar og stjórnar Katrínar Jakobsdóttur (2017–2024) til að bera saman.",
-      "confidence": 0.25,
+      "missing_context": "Þörf er á gögnum frá heilbrigðisráðuneytinu eða Landlæknisembættinu um fjölda nýrra hjúkrunarrýma eftir ríkisstjórnum til að meta þessa fullyrðingu.",
+      "confidence": 0.95,
       "speakers": [
         {
           "name": "Kristrún Frostadóttir",
@@ -514,12 +521,18 @@
         "claim_type": "statistic",
         "confidence": 0.4
       },
-      "verdict": "unverifiable",
-      "explanation": "<a href=\"https://www.althingi.is/thingmenn/thingflokkar/sjalfstaedisflokkur/\" title=\"Althingi — Session 157 member registry\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-006</a> staðfestir að Guðrún Hafsteinsdóttir sé þingmaður Sjálfstæðisflokksins fyrir Suðurkjördæmi. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T175023.html\" title=\"Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-003</a> lýsir henni sem málsmanneskju flokksins í þingumræðum. Engin heimild staðfestir hins vegar beint að hún sé formaður Sjálfstæðisflokksins — heimildir nefna eingöngu þingmannsembættið.",
+      "verdict": "unsupported",
+      "explanation": "<a href=\"https://www.althingi.is/thingmenn/thingflokkar/sjalfstaedisflokkur/\" title=\"Althingi — Session 157 member registry\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-006</a> staðfestir að Guðrún Hafsteinsdóttir sé þingmaður Sjálfstæðisflokksins fyrir Suðurkjördæmi, en nefnir hana ekki sem formann flokksins. Engin heimild í staðreyndagrunninum staðfestir formannsembætti hennar. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T175023.html\" title=\"Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-003</a> sýnir hana tala fyrir hönd Sjálfstæðisflokksins á þingi, sem bendir til áberandi hlutverks, en \"tala fyrir hönd flokks\" þýðir ekki endilega formennsku.",
       "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "missing_context": "Staðreyndagrunnurinn inniheldur ekki upplýsingar um núverandi formaður Sjálfstæðisflokksins. Ef Guðrún var kjörin formaður eftir síðustu þinghefð sem heimildir ná til, væri það utan gagnanna.",
-      "confidence": 0.8,
+      "contradicting_evidence": [
+        {
+          "id": "POLITICAL-DATA-006",
+          "source_name": "Althingi — Session 157 member registry",
+          "source_url": "https://www.althingi.is/thingmenn/thingflokkar/sjalfstaedisflokkur/"
+        }
+      ],
+      "missing_context": "Heimildir tilgreina ekki formann Sjálfstæðisflokksins beint. Hafa ber í huga að <a href=\"https://www.althingi.is/thingmenn/althingismannatal/leit-i-althingismannatali/\" title=\"Althingi — Member directory; Government of Iceland cabinet listing\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-012</a> nefnir Þórdísi Kolbrúnu Reykfjörð Gylfadóttur sem leiðtoga Viðreisnar, ekki Sjálfstæðisflokksins — en enginn annar er nefndur sem formaður Sjálfstæðisflokksins í tiltækum heimildum.",
+      "confidence": 0.7,
       "speakers": [
         {
           "name": "Guðrún Hafsteinsdóttir",
