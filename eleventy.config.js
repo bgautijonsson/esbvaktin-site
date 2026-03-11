@@ -35,7 +35,7 @@ module.exports = function (eleventyConfig) {
     return new Date(date).toISOString().slice(0, 10);
   });
 
-  eleventyConfig.addFilter("isDate", (date) => {
+  const formatIsDate = (date) => {
     if (!date) return "";
     const d = new Date(date);
     const months = [
@@ -43,6 +43,33 @@ module.exports = function (eleventyConfig) {
       "júlí", "ágúst", "september", "október", "nóvember", "desember",
     ];
     return `${d.getUTCDate()}. ${months[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
+  };
+
+  eleventyConfig.addFilter("isDate", formatIsDate);
+
+  eleventyConfig.addFilter("isDateRange", (start, end) => {
+    if (!start && !end) return "";
+    if (!start) return formatIsDate(end);
+    if (!end) return formatIsDate(start);
+
+    const from = new Date(start);
+    const to = new Date(end);
+    const sameYear = from.getUTCFullYear() === to.getUTCFullYear();
+    const sameMonth = sameYear && from.getUTCMonth() === to.getUTCMonth();
+    const months = [
+      "janúar", "febrúar", "mars", "apríl", "maí", "júní",
+      "júlí", "ágúst", "september", "október", "nóvember", "desember",
+    ];
+
+    if (sameMonth) {
+      return `${from.getUTCDate()}.–${to.getUTCDate()}. ${months[to.getUTCMonth()]} ${to.getUTCFullYear()}`;
+    }
+
+    if (sameYear) {
+      return `${from.getUTCDate()}. ${months[from.getUTCMonth()]} – ${to.getUTCDate()}. ${months[to.getUTCMonth()]} ${to.getUTCFullYear()}`;
+    }
+
+    return `${formatIsDate(start)} – ${formatIsDate(end)}`;
   });
 
   // ── Verdict label filter ──────────────────────────────────────────
@@ -77,6 +104,19 @@ module.exports = function (eleventyConfig) {
     return pageUrl === item.href;
   });
 
+  eleventyConfig.addCollection("publishedBriefings", (collectionApi) =>
+    collectionApi
+      .getFilteredByTag("weekly-briefing")
+      .filter((item) => !item.data.draft)
+      .sort((a, b) => new Date(b.data.date) - new Date(a.data.date))
+  );
+
+  eleventyConfig.addCollection("issueGuides", (collectionApi) =>
+    collectionApi
+      .getFilteredByTag("issue-guide")
+      .sort((a, b) => Number(a.data.order || 0) - Number(b.data.order || 0))
+  );
+
   // ── Rewrite evidence links to internal /heimildir/ pages ─────────
   // Explanation HTML from the pipeline contains <a href="https://...">FISH-LEGAL-001</a>.
   // This filter rewrites those to point at /heimildir/fish-legal-001/ instead.
@@ -92,6 +132,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.ignores.add("CLAUDE.md");
   eleventyConfig.ignores.add("AGENTS.md");
   eleventyConfig.ignores.add("README.md");
+  eleventyConfig.ignores.add("**/README.md");
   eleventyConfig.ignores.add("**/CLAUDE.md");
   eleventyConfig.ignores.add("**/AGENTS.md");
   eleventyConfig.ignores.add(".claude/**");

@@ -32,7 +32,7 @@
         <a href="/" class="site-logo">{{ site.title }}</a>
         <div id="site-menu" class="site-menu">
           <div class="site-menu-group">
-            <p class="nav-group-label">Efni</p>
+            <p class="nav-group-label">Yfirlit</p>
             <ul class="nav-list nav-list--primary">
               {% for item in navigation.primary %}
               {% set isCurrent = page.url | navCurrent(item) %}
@@ -41,7 +41,7 @@
             </ul>
           </div>
           <div class="site-menu-group site-menu-group--utility">
-            <p class="nav-group-label">Upplýsingar</p>
+            <p class="nav-group-label">Kafa dýpra</p>
             <ul class="nav-list nav-list--utility">
               {% for item in navigation.utility %}
               {% set isCurrent = page.url | navCurrent(item) %}
