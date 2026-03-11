@@ -5,31 +5,188 @@ description: Óháð, gagnadrifið upplýsingaverkefni um ESB-þjóðaratkvæða
 wide_layout: true
 ---
 
-<div class="hero">
-  <h1>ESBvaktin</h1>
-  <p>Óháð, gagnadrifið upplýsingaverkefni um ESB-þjóðaratkvæðagreiðsluna 29. ágúst 2026. Við fylgjumst með fullyrðingum beggja megin og metum þær á móti gögnum og heimildum.</p>
-  <a href="/fullyrdingar/" class="hero-cta">Skoða fullyrðingar</a>
-</div>
+<div class="home-shell">
+  <section class="home-hero">
+    <div class="home-hero-copy">
+      <p class="home-kicker">Óháð upplýsingavakt fyrir þjóðaratkvæðagreiðsluna 29. ágúst 2026</p>
+      <h1>ESB-umræðan sett í samhengi, með heimildum og rekjanlegum úrskurðum.</h1>
+      <p class="home-deck">ESBvaktin fylgist með fullyrðingum, greiningum, röddum í opinberri umræðu og þingræðum. Markmiðið er einfalt: að gera umræðuna skýrari áður en kosið verður.</p>
+      <div class="home-hero-actions">
+        <a href="/fullyrdingar/" class="home-cta">Skoða fullyrðingar</a>
+        <a href="/umraedan/" class="home-cta home-cta-secondary">Lesa nýjustu greiningar</a>
+      </div>
+    </div>
 
-<div class="features">
-  <div class="feature-card">
-    <span class="feature-icon" aria-hidden="true">&#x1F50D;</span>
-    <h3>Fullyrðingavakt</h3>
-    <p>Skipuleg skráning og mat á fullyrðingum í ESB-umræðunni — bæði með og á móti.</p>
-  </div>
-  <div class="feature-card">
-    <span class="feature-icon" aria-hidden="true">&#x1F4CA;</span>
-    <h3>Umræðan</h3>
-    <p>Yfirferð á einstökum greinum og yfirlýsingum, bornar saman við gögn og heimildir.</p>
-  </div>
-  <div class="feature-card">
-    <span class="feature-icon" aria-hidden="true">&#x1F5E3;&#xFE0F;</span>
-    <h3>Raddirnar</h3>
-    <p>Hverjir segja hvað? Fullyrðingar eftir stjórnmálaflokkum, samtökum og einstaklingum.</p>
-  </div>
-  <div class="feature-card">
-    <span class="feature-icon" aria-hidden="true">&#x1F4D6;</span>
-    <h3>Opin aðferðafræði</h3>
-    <p>Allar forsendur og aðferðir birtar opinberlega. Gagnsæi er leiðarljósið.</p>
-  </div>
+    <aside class="home-hero-panel">
+      <div class="home-countdown">
+        <span class="home-countdown-label">Þjóðaratkvæði eftir</span>
+        <strong class="home-countdown-value">{{ home.days_until_referendum | localeString }}</strong>
+        <span class="home-countdown-unit">daga</span>
+      </div>
+      <div class="home-hero-meta">
+        <div>
+          <span class="home-meta-label">Kjördagur</span>
+          <strong>{{ site.referendum_date | isDate }}</strong>
+        </div>
+        <div>
+          <span class="home-meta-label">Síðast uppfært</span>
+          <strong>{{ home.last_updated | isDate }}</strong>
+        </div>
+      </div>
+      <p class="home-panel-note">Forsíðan dregur saman nýjustu gögn úr fullyrðingavakt, umræðugreiningum, heimildasafni og þingræðum.</p>
+    </aside>
+  </section>
+
+  <section class="home-signal-bar" aria-label="Yfirlit yfir gögn">
+    {% for stat in home.signal_stats %}
+    <a href="{{ stat.href }}" class="home-signal-card">
+      <span class="home-signal-value">{{ stat.value | localeString }}</span>
+      <span class="home-signal-label">{{ stat.label }}</span>
+      <span class="home-signal-note">{{ stat.note }}</span>
+    </a>
+    {% endfor %}
+  </section>
+
+  <section class="home-dashboard">
+    <article class="home-lead-card">
+      <div class="home-section-label">Nýjasta greining</div>
+      {% if home.lead_report %}
+      <div class="home-lead-meta">
+        <span>{{ home.lead_report.article_source }}</span>
+        <span>{{ home.lead_report.display_date | isDate }}</span>
+      </div>
+      <h2><a href="/umraedan/{{ home.lead_report.slug }}/">{{ home.lead_report.article_title }}</a></h2>
+      <p>{{ home.lead_report.summary }}</p>
+      <div class="home-lead-tags">
+        {% if home.lead_report.primary_verdict %}
+        <span class="ct-verdict-pill {{ home.lead_report.primary_verdict_class }}">{{ home.lead_report.primary_verdict | verdictLabel }}</span>
+        {% endif %}
+        {% if home.lead_report.dominant_category %}
+        <span class="ct-category-tag">{{ home.lead_report.dominant_category | categoryLabel }}</span>
+        {% endif %}
+        <span class="home-inline-stat">{{ home.lead_report.claim_count | localeString }} fullyrðingar</span>
+      </div>
+      <a href="/umraedan/{{ home.lead_report.slug }}/" class="home-text-link">Opna greiningu</a>
+      {% endif %}
+    </article>
+
+    <div class="home-dashboard-stack">
+      <section class="home-panel">
+        <div class="home-section-label">Úrskurðir yfir allt safnið</div>
+        <div class="home-verdict-list">
+          {% for item in home.verdict_distribution %}
+          <div class="home-verdict-row">
+            <div class="home-verdict-copy">
+              <span class="ct-verdict-pill {{ item.className }}">{{ item.label }}</span>
+              <span>{{ item.count | localeString }}</span>
+            </div>
+            <div class="home-verdict-track">
+              <span class="home-verdict-fill {{ item.className }}" style="width: {{ item.percentage }}%"></span>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+
+      <section class="home-panel">
+        <div class="home-section-label">Þingræðupúls</div>
+        {% if home.lead_debate %}
+        <h3><a href="/thingraedur/{{ home.lead_debate.slug }}/">{{ home.lead_debate.issue_title }}</a></h3>
+        <p class="home-panel-copy">{{ home.lead_debate.last_date | isDate }} · {{ home.lead_debate.session }}. löggjafarþing · {{ home.lead_debate.speech_count | localeString }} ræður</p>
+        {% endif %}
+        <div class="home-pulse-stats">
+          <span><strong>{{ home.total_speeches | localeString }}</strong> ræður</span>
+          <span><strong>{{ home.total_words | localeString }}</strong> orð</span>
+          <span><strong>{{ home.coverage.debate_count | localeString }}</strong> mál</span>
+        </div>
+        <a href="/thingraedur/" class="home-text-link">Skoða þingræður</a>
+      </section>
+    </div>
+  </section>
+
+  <section class="home-section">
+    <div class="home-section-head">
+      <div>
+        <p class="home-section-label">Nýjustu birtingar</p>
+        <h2>Greiningar sem móta umræðuna núna</h2>
+      </div>
+      <a href="/umraedan/" class="home-text-link">Allar greiningar</a>
+    </div>
+    <div class="home-report-grid">
+      {% for report in home.recent_reports %}
+      <article class="home-report-card">
+        <div class="home-report-meta">
+          <span>{{ report.article_source }}</span>
+          <span>{{ report.display_date | isDate }}</span>
+        </div>
+        <h3><a href="/umraedan/{{ report.slug }}/">{{ report.article_title }}</a></h3>
+        {% if report.summary %}
+        <p>{{ report.summary }}</p>
+        {% endif %}
+        <div class="home-report-footer">
+          {% if report.primary_verdict %}
+          <span class="ct-verdict-pill {{ report.primary_verdict_class }}">{{ report.primary_verdict | verdictLabel }}</span>
+          {% endif %}
+          <span class="home-inline-stat">{{ report.claim_count | localeString }} fullyrðingar</span>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="home-split">
+    <div class="home-section">
+      <div class="home-section-head">
+        <div>
+          <p class="home-section-label">Áberandi raddir</p>
+          <h2>Hverjir eru að setja tóninn?</h2>
+        </div>
+        <a href="/raddirnar/" class="home-text-link">Skoða allar raddir</a>
+      </div>
+      <div class="home-voice-grid">
+        {% for entity in home.featured_voices %}
+        <article class="home-voice-card">
+          <div class="home-voice-meta">
+            <span class="home-voice-type">{{ entity.type | entityTypeLabel }}</span>
+            {% if entity.party %}<span>{{ entity.party }}</span>{% endif %}
+          </div>
+          <h3><a href="/raddirnar/{{ entity.slug }}/">{{ entity.name }}</a></h3>
+          <p>{{ entity.description }}</p>
+          <div class="home-voice-stats">
+            <span>{{ entity.article_count | localeString }} greinar</span>
+            <span>{{ entity.claim_count | localeString }} fullyrðingar</span>
+            <span>{{ entity.mention_count | localeString }} tilvísanir</span>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+
+    <aside class="home-section home-section-aside">
+      <div class="home-section-head home-section-head-compact">
+        <div>
+          <p class="home-section-label">Tímalína og traust</p>
+          <h2>Hvernig forsíðan er uppfærð</h2>
+        </div>
+      </div>
+      <div class="home-timeline">
+        {% for item in home.timeline %}
+        <div class="home-timeline-item">
+          <span class="home-timeline-date">{{ item.date | isDate }}</span>
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.text }}</p>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="home-trust-note">
+        <h3>Það sem er vaktað á hverjum degi</h3>
+        <ul>
+          <li>Fullyrðingar úr fjölmiðlum og opinberum yfirlýsingum</li>
+          <li>Heimildir, frumgögn og lagatextar sem úrskurðir byggja á</li>
+          <li>Raddir stjórnmálaflokka, samtaka og einstaklinga í umræðunni</li>
+          <li>Þingræður um ESB og tengd mál á Alþingi</li>
+        </ul>
+      </div>
+    </aside>
+  </section>
 </div>

@@ -66,4 +66,4 @@ Claude tekur ekki endanlegar ákvarðanir um flokkun fullyrðinga. Það er hlut
 
 ## Tæknilegar upplýsingar
 
-Vefsíðan er kyrrstæð (*static site*) sem er byggð með [Eleventy](https://www.11ty.dev/). Fullyrðingavaktin notar DuckDB-WASM til að sækja og sía gögn beint í vafranum úr Parquet-skrá — engin gögn eru send til netþjóns og engin vinnslukóði keyrir á miðlægu kerfi.
+Vefsíðan er kyrrstæð (*static site*) sem er byggð með [Eleventy](https://www.11ty.dev/). Gagnasöfn síðunnar eru birt sem kyrrstæð JSON-gögn sem eru sótt og síuð í vafranum. Parquet/DuckDB-WASM er hugsanleg framtíðarleið ef gagnamagnið kallar á það, en er ekki notað í núverandi útgáfu.

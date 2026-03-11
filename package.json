@@ -4,7 +4,7 @@
   "private": true,
   "description": "Static site for esbvaktin.is",
   "scripts": {
-    "build": "eleventy",
+    "build": "npm run clean && eleventy",
     "serve": "eleventy --serve",
     "clean": "rm -rf _site"
   },

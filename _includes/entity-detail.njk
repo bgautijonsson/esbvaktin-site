@@ -3,22 +3,6 @@ layout: base.njk
 extra_css: /assets/css/entity-detail.css
 ---
 
-{# ── Type labels ── #}
-{% set TYPE_LABELS = {
-  party: "Stjórnmálaflokkur",
-  institution: "Samtök/stofnun",
-  individual: "Einstaklingur",
-  union: "Stéttarfélag"
-} %}
-
-{# ── Attribution labels ── #}
-{% set ATTR_LABELS = {
-  asserted: "Fullyrt",
-  quoted: "Vitnað í",
-  paraphrased: "Umorðað",
-  mentioned: "Nefnt"
-} %}
-
 {# ── Stance label from score ── #}
 {% if entity.stance_score >= 0.5 %}
   {% set stanceLabel = "ESB-jákvæð" %}
@@ -60,7 +44,7 @@ extra_css: /assets/css/entity-detail.css
   <header class="ed-header">
     <div class="ed-header-top">
       <h1 class="ed-name">{{ entity.name }}</h1>
-      <span class="et-type-badge et-type-{{ entity.type }}">{{ TYPE_LABELS[entity.type] or entity.type }}</span>
+      <span class="et-type-badge et-type-{{ entity.type }}">{{ entity.type | entityTypeLabel }}</span>
     </div>
 
     {% if entity.role %}
@@ -127,14 +111,14 @@ extra_css: /assets/css/entity-detail.css
         {% for k in attrOrder %}
           {% if ac[k] %}
             {% set pct = (ac[k] / attrTotal * 100) | round(1) %}
-            <div class="et-attr-seg et-attr-{{ k }}" style="width:{{ pct }}%" title="{{ ATTR_LABELS[k] }}: {{ ac[k] }}"></div>
+            <div class="et-attr-seg et-attr-{{ k }}" style="width:{{ pct }}%" title="{{ k | attributionLabel }}: {{ ac[k] }}"></div>
           {% endif %}
         {% endfor %}
       </div>
       <div class="et-attr-legend">
         {% for k in attrOrder %}
           {% if ac[k] %}
-            <span class="et-attr-legend-item et-attr-{{ k }}-text">{{ ATTR_LABELS[k] }} {{ ac[k] }}</span>
+            <span class="et-attr-legend-item et-attr-{{ k }}-text">{{ k | attributionLabel }} {{ ac[k] }}</span>
           {% endif %}
         {% endfor %}
       </div>
@@ -216,7 +200,7 @@ extra_css: /assets/css/entity-detail.css
           {{ item.verdict | verdictLabel }}
         </span>
         <span class="report-claim-title">{{ item.claim_text }}</span>
-        <span class="ed-attr-badge ed-attr-{{ item.attribution }}">{{ ATTR_LABELS[item.attribution] or item.attribution }}</span>
+        <span class="ed-attr-badge ed-attr-{{ item.attribution }}">{{ item.attribution | attributionLabel }}</span>
         {% if item.category %}
           <span class="ct-category-tag">{{ item.category | categoryLabel }}</span>
         {% endif %}
@@ -250,7 +234,7 @@ extra_css: /assets/css/entity-detail.css
         <div class="ed-article-stats">
           <span>{{ art.claim_count }} fullyrðing{{ "ar" if art.claim_count > 1 else "" }}</span>
           {% for at in art.attribution_types %}
-            <span class="ed-attr-badge ed-attr-{{ at }}">{{ ATTR_LABELS[at] or at }}</span>
+            <span class="ed-attr-badge ed-attr-{{ at }}">{{ at | attributionLabel }}</span>
           {% endfor %}
         </div>
       </a>

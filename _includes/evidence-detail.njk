@@ -3,45 +3,6 @@ layout: base.njk
 extra_css: /assets/css/evidence-detail.css
 ---
 
-{# ── Label maps ── #}
-{% set TOPIC_LABELS = {
-  fisheries: "Sjávarútvegur",
-  trade: "Viðskipti",
-  sovereignty: "Fullveldi",
-  agriculture: "Landbúnaður",
-  labour: "Vinnumarkaður",
-  currency: "Gjaldmiðill",
-  precedents: "Fordæmi",
-  eea_eu_law: "EES/ESB-löggjöf",
-  housing: "Húsnæðismál",
-  polling: "Kannanir",
-  party_positions: "Flokkastefnur",
-  org_positions: "Samtakastefnur",
-  energy: "Orkumál"
-} %}
-
-{% set SOURCE_TYPE_LABELS = {
-  official_statistics: "Opinber tölfræði",
-  legal_text: "Lagalegur texti",
-  academic_paper: "Fræðigrein",
-  expert_analysis: "Sérfræðigreining",
-  international_org: "Alþjóðastofnun",
-  parliamentary_record: "Þingskjal"
-} %}
-
-{% set DOMAIN_LABELS = {
-  legal: "Lögfræðilegt",
-  economic: "Efnahagslegt",
-  political: "Stjórnmálalegt",
-  precedent: "Fordæmi"
-} %}
-
-{% set CONFIDENCE_LABELS = {
-  high: "Há",
-  medium: "Miðlungs",
-  low: "Lág"
-} %}
-
 <article class="ev-detail">
   {# ── Back link ── #}
   <a href="/heimildir/" class="ev-back">&larr; Til baka á Heimildir</a>
@@ -50,13 +11,13 @@ extra_css: /assets/css/evidence-detail.css
   <header class="ev-header">
     <div class="ev-header-top">
       <span class="ev-id-badge">{{ evidence.evidence_id }}</span>
-      <span class="ev-source-type-badge ev-st-{{ evidence.source_type }}">{{ SOURCE_TYPE_LABELS[evidence.source_type] or evidence.source_type }}</span>
-      <span class="ev-confidence-badge ev-conf-{{ evidence.confidence }}">{{ CONFIDENCE_LABELS[evidence.confidence] or evidence.confidence }}</span>
+      <span class="ev-source-type-badge ev-st-{{ evidence.source_type }}">{{ evidence.source_type | sourceTypeLabel }}</span>
+      <span class="ev-confidence-badge ev-conf-{{ evidence.confidence }}">{{ evidence.confidence | confidenceLabel }}</span>
     </div>
 
     <div class="ev-meta-row">
-      <span class="ev-topic-tag">{{ TOPIC_LABELS[evidence.topic] or evidence.topic }}</span>
-      <span class="ev-domain-tag">{{ DOMAIN_LABELS[evidence.domain] or evidence.domain }}</span>
+      <span class="ev-topic-tag">{{ evidence.topic | topicLabel }}</span>
+      <span class="ev-domain-tag">{{ evidence.domain | domainLabel }}</span>
       {% if evidence.subtopic %}
         <span class="ev-subtopic-tag">{{ evidence.subtopic | replace("_", " ") }}</span>
       {% endif %}
@@ -93,11 +54,11 @@ extra_css: /assets/css/evidence-detail.css
       {% endif %}
       <div class="ev-meta-item">
         <span class="ev-meta-label">Svið</span>
-        <span class="ev-meta-value">{{ DOMAIN_LABELS[evidence.domain] or evidence.domain }}</span>
+        <span class="ev-meta-value">{{ evidence.domain | domainLabel }}</span>
       </div>
       <div class="ev-meta-item">
         <span class="ev-meta-label">Heimildaflokkur</span>
-        <span class="ev-meta-value">{{ SOURCE_TYPE_LABELS[evidence.source_type] or evidence.source_type }}</span>
+        <span class="ev-meta-value">{{ evidence.source_type | sourceTypeLabel }}</span>
       </div>
     </div>
   </section>
@@ -137,7 +98,7 @@ extra_css: /assets/css/evidence-detail.css
       <a href="/heimildir/{{ rel.slug }}/" class="ev-related-card">
         <span class="ev-related-id">{{ rel.evidence_id }}</span>
         {% if rel.topic %}
-          <span class="ev-topic-tag ev-topic-tag--sm">{{ TOPIC_LABELS[rel.topic] or rel.topic }}</span>
+          <span class="ev-topic-tag ev-topic-tag--sm">{{ rel.topic | topicLabel }}</span>
         {% endif %}
         <p class="ev-related-text">{{ rel.statement }}</p>
       </a>

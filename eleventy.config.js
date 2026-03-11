@@ -1,8 +1,11 @@
+const taxonomy = require("./assets/js/site-taxonomy.js");
+
 /** @type {import("@11ty/eleventy").UserConfig} */
 module.exports = function (eleventyConfig) {
   // ── Passthrough copy ──────────────────────────────────────────────
   // Assets served as-is — 11ty never processes JS, CSS, or data files
   eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addWatchTarget("assets/data");
 
   // CNAME for GitHub Pages custom domain
   eleventyConfig.addPassthroughCopy("CNAME");
@@ -43,52 +46,20 @@ module.exports = function (eleventyConfig) {
   });
 
   // ── Verdict label filter ──────────────────────────────────────────
-  const verdictLabels = {
-    supported: "Staðfest",
-    partially_supported: "Að hluta staðfest",
-    unsupported: "Óstutt",
-    misleading: "Villandi",
-    unverifiable: "Ósannanlegt",
-  };
-  eleventyConfig.addFilter("verdictLabel", (v) => verdictLabels[v] || v);
+  eleventyConfig.addFilter("verdictLabel", (v) => taxonomy.verdictLabels[v] || v);
 
   // ── Category label filter ─────────────────────────────────────────
-  const categoryLabels = {
-    fisheries: "Sjávarútvegur",
-    trade: "Viðskipti",
-    sovereignty: "Fullveldi",
-    agriculture: "Landbúnaður",
-    labour: "Vinnumarkaður",
-    currency: "Gjaldmiðill",
-    precedents: "Fordæmi",
-    eea_eu_law: "EES/ESB-löggjöf",
-    housing: "Húsnæðismál",
-    polling: "Kannanir",
-    party_positions: "Flokkastefnur",
-    org_positions: "Samtakastefnur",
-    energy: "Orkumál",
-  };
-  eleventyConfig.addFilter("categoryLabel", (c) => categoryLabels[c] || c);
+  eleventyConfig.addFilter("categoryLabel", (c) => taxonomy.categoryLabels[c] || c);
+  eleventyConfig.addFilter("topicLabel", (c) => taxonomy.categoryLabels[c] || c);
 
   // ── Source type label filter ─────────────────────────────────────
-  const sourceTypeLabels = {
-    official_statistics: "Opinber tölfræði",
-    legal_text: "Lagalegur texti",
-    academic_paper: "Fræðigrein",
-    expert_analysis: "Sérfræðigreining",
-    international_org: "Alþjóðastofnun",
-    parliamentary_record: "Þingskjal",
-  };
-  eleventyConfig.addFilter("sourceTypeLabel", (s) => sourceTypeLabels[s] || s);
+  eleventyConfig.addFilter("sourceTypeLabel", (s) => taxonomy.evidenceSourceTypeLabels[s] || s);
 
   // ── Domain label filter ─────────────────────────────────────────
-  const domainLabels = {
-    legal: "Lögfræðilegt",
-    economic: "Efnahagslegt",
-    political: "Stjórnmálalegt",
-    precedent: "Fordæmi",
-  };
-  eleventyConfig.addFilter("domainLabel", (d) => domainLabels[d] || d);
+  eleventyConfig.addFilter("domainLabel", (d) => taxonomy.domainLabels[d] || d);
+  eleventyConfig.addFilter("confidenceLabel", (c) => taxonomy.confidenceLabels[c] || c);
+  eleventyConfig.addFilter("entityTypeLabel", (t) => taxonomy.entityTypeLabels[t] || t);
+  eleventyConfig.addFilter("attributionLabel", (a) => taxonomy.attributionLabels[a] || a);
 
   // ── Number formatting ───────────────────────────────────────────
   eleventyConfig.addFilter("localeString", (n) => {
@@ -97,18 +68,7 @@ module.exports = function (eleventyConfig) {
   });
 
   // ── Party CSS class filter ────────────────────────────────────────
-  const partyClasses = {
-    "Sjálfstæðisflokkur": "party-xd",
-    "Samfylkingin": "party-s",
-    "Framsóknarflokkur": "party-b",
-    "Miðflokkurinn": "party-m",
-    "Viðreisn": "party-c",
-    "Vinstrihreyfingin - grænt framboð": "party-v",
-    "Píratar": "party-p",
-    "Flokkur fólksins": "party-f",
-    "Hreyfingin": "party-hr",
-  };
-  eleventyConfig.addFilter("partyClass", (p) => partyClasses[p] || "party-other");
+  eleventyConfig.addFilter("partyClass", (p) => taxonomy.partyClasses[p] || "party-other");
 
   // ── Rewrite evidence links to internal /heimildir/ pages ─────────
   // Explanation HTML from the pipeline contains <a href="https://...">FISH-LEGAL-001</a>.
@@ -123,6 +83,10 @@ module.exports = function (eleventyConfig) {
 
   // ── Ignore files ─────────────────────────────────────────────────
   eleventyConfig.ignores.add("CLAUDE.md");
+  eleventyConfig.ignores.add("AGENTS.md");
+  eleventyConfig.ignores.add("**/CLAUDE.md");
+  eleventyConfig.ignores.add("**/AGENTS.md");
+  eleventyConfig.ignores.add(".claude/**");
 
   return {
     dir: {

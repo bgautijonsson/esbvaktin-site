@@ -22,6 +22,7 @@
 
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/tracker-base.css">
   {% if extra_css %}<link rel="stylesheet" href="{{ extra_css }}">{% endif %}
 </head>
 <body>
@@ -62,6 +63,10 @@
 
   <script src="/assets/js/theme-toggle.js" defer></script>
   <script src="/assets/js/mobile-nav.js" defer></script>
-  {% if extra_js %}<script src="{{ extra_js }}"{% if extra_js_data %} {{ extra_js_data | safe }}{% endif %}></script>{% endif %}
+  {% if extra_js %}<script src="/assets/js/site-taxonomy.js" defer></script>{% endif %}
+  {% if extra_js %}<script src="/assets/js/tracker-utils.js" defer></script>{% endif %}
+  {% if extra_js %}<script src="/assets/js/tracker-renderer.js" defer></script>{% endif %}
+  {% if extra_js %}<script src="/assets/js/tracker-controller.js" defer></script>{% endif %}
+  {% if extra_js %}<script src="{{ extra_js }}" defer{% if extra_js_data %} {{ extra_js_data | safe }}{% endif %}></script>{% endif %}
 </body>
 </html>

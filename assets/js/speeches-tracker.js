@@ -8,35 +8,20 @@
 (function () {
   "use strict";
 
-  // ── Configuration ────────────────────────────────────────────────
-  const DATA_BASE = document.currentScript?.dataset.base || "/assets/data";
+  const TAXONOMY = globalThis.ESBvaktinTaxonomy || {};
+  const utils = globalThis.ESBvaktinTrackerUtils || {};
+  const renderer = globalThis.ESBvaktinTrackerRenderer;
+  const controllerLib = globalThis.ESBvaktinTrackerController || {};
+  const createController = controllerLib.create;
+  const escapeHtml = utils.escapeHtml || ((value) => String(value ?? ""));
+  const formatIsDate = utils.formatIsDate || ((value) => String(value ?? ""));
+  const formatNumber = utils.formatNumber || ((value) => String(value ?? "0"));
+  const DATA_BASE = utils.getDataBase
+    ? utils.getDataBase(document.currentScript, "/assets/data")
+    : (document.currentScript?.dataset.base || "/assets/data");
   const JSON_URL = `${DATA_BASE}/debates.json`;
-
-  // Party short codes for CSS classes
-  const PARTY_CLASSES = {
-    "Sjálfstæðisflokkur": "party-xd",
-    "Samfylkingin": "party-s",
-    "Framsóknarflokkur": "party-b",
-    "Miðflokkurinn": "party-m",
-    "Viðreisn": "party-c",
-    "Vinstrihreyfingin - grænt framboð": "party-v",
-    "Píratar": "party-p",
-    "Flokkur fólksins": "party-f",
-    "Hreyfingin": "party-hr",
-  };
-
-  // Short party names for pills
-  const PARTY_SHORT = {
-    "Sjálfstæðisflokkur": "xD",
-    "Samfylkingin": "Sam",
-    "Framsóknarflokkur": "Fram",
-    "Miðflokkurinn": "Miðfl",
-    "Viðreisn": "Viðr",
-    "Vinstrihreyfingin - grænt framboð": "VG",
-    "Píratar": "Pír",
-    "Flokkur fólksins": "FF",
-    "Hreyfingin": "Hreyfing",
-  };
+  const PARTY_CLASSES = TAXONOMY.partyClasses || {};
+  const PARTY_SHORT = TAXONOMY.partyShortLabels || {};
 
   const GROUP_LABELS = {
     "": "Engin flokkun",
@@ -45,77 +30,77 @@
     party: "Flokkur",
   };
 
-  // Icelandic month names
-  const IS_MONTHS = [
-    "", "janúar", "febrúar", "mars", "apríl", "maí", "júní",
-    "júlí", "ágúst", "september", "október", "nóvember", "desember",
-  ];
-
-  // ── State ────────────────────────────────────────────────────────
-  let jsonData = null;
-
-  let filters = {
-    search: "",
-    speaker: "",  // from URL param — filters against all speaker_names
-    party: "",
-    session: "",
-    groupBy: "",
-    sort: "last_date",
-    sortDir: "DESC",
-  };
-
-  // ── DOM references ───────────────────────────────────────────────
   const root = document.getElementById("speeches-tracker");
-  if (!root) return;
+  if (!root || !renderer || !createController) return;
 
-  // ── Initialisation ───────────────────────────────────────────────
+  const params = new URLSearchParams(window.location.search);
 
-  async function init() {
-    // Read URL params (e.g. ?speaker=Name from entity detail pages)
-    const params = new URLSearchParams(window.location.search);
-    if (params.get("speaker")) {
-      filters.speaker = params.get("speaker");
-    }
+  const controller = createController({
+    root,
+    initialState: {
+      search: "",
+      speaker: params.get("speaker") || "",
+      party: "",
+      session: "",
+      groupBy: "",
+      sort: "last_date",
+      sortDir: "DESC",
+    },
+    initialData: [],
+    async load(api) {
+      return api.loadJson(JSON_URL);
+    },
+    renderShell,
+    renderStats,
+    renderResults,
+    initialRender: "all",
+    onError() {
+      renderShell();
+      const stats = document.getElementById("st-stats");
+      const results = document.getElementById("st-results");
+      if (stats) {
+        stats.innerHTML = renderer.renderMessage("Gat ekki hlaðið gögnum.", "ct-stat-loading");
+      }
+      if (results) {
+        results.innerHTML = renderer.renderMessage("Engar umræður fundust.", "ct-empty");
+      }
+    },
+  });
 
-    renderSkeleton();
-
-    const resp = await fetch(JSON_URL);
-    if (!resp.ok) throw new Error(`Failed to fetch ${JSON_URL}: ${resp.status}`);
-    jsonData = await resp.json();
-
-    // Re-render skeleton with populated filter options
-    renderSkeleton();
-    renderStats();
-    renderResults();
-    bindEvents();
+  function getDebates() {
+    return controller.getData() || [];
   }
 
-  // ── Query layer ──────────────────────────────────────────────────
+  function getFilters() {
+    return controller.getState();
+  }
 
   function queryDebates() {
-    let results = [...jsonData];
+    const filters = getFilters();
+    let results = [...getDebates()];
 
     if (filters.speaker) {
-      const sp = filters.speaker.toLowerCase();
-      results = results.filter(
-        (d) => d.speaker_names?.some((n) => n.toLowerCase().includes(sp))
-      );
+      const speaker = filters.speaker.toLowerCase();
+      results = results.filter((debate) => debate.speaker_names?.some((name) => name.toLowerCase().includes(speaker)));
     }
+
     if (filters.search) {
       const q = filters.search.toLowerCase();
       results = results.filter(
-        (d) =>
-          d.issue_title?.toLowerCase().includes(q) ||
-          d.speaker_names?.some((n) => n.toLowerCase().includes(q)) ||
-          d.top_speakers?.some((s) => s.name?.toLowerCase().includes(q))
+        (debate) =>
+          debate.issue_title?.toLowerCase().includes(q) ||
+          debate.speaker_names?.some((name) => name.toLowerCase().includes(q)) ||
+          debate.top_speakers?.some((speaker) => speaker.name?.toLowerCase().includes(q))
       );
     }
+
     if (filters.party) {
-      results = results.filter((d) => d.parties?.includes(filters.party));
+      results = results.filter((debate) => debate.parties?.includes(filters.party));
     }
+
     if (filters.session) {
-      const sess = parseInt(filters.session, 10);
-      results = results.filter((d) => d.session === sess);
+      const session = parseInt(filters.session, 10);
+      results = results.filter((debate) => debate.session === session);
     }
 
     const sort = filters.sort || "last_date";
@@ -131,23 +116,22 @@
   }
 
   function groupDebates(debates) {
-    const groupBy = filters.groupBy;
+    const groupBy = getFilters().groupBy;
     if (!groupBy) return [{ key: "", label: "", debates }];
 
     const groups = new Map();
 
-    for (const d of debates) {
+    for (const debate of debates) {
       let key;
       if (groupBy === "session") {
-        key = String(d.session);
+        key = String(debate.session);
       } else if (groupBy === "year") {
-        key = d.last_date ? d.last_date.slice(0, 4) : "Óþekkt";
+        key = debate.last_date ? debate.last_date.slice(0, 4) : "Óþekkt";
       } else if (groupBy === "party") {
-        // One debate can appear in multiple party groups
-        const parties = d.parties?.length ? d.parties : ["Óþekkt"];
-        for (const p of parties) {
-          if (!groups.has(p)) groups.set(p, []);
-          groups.get(p).push(d);
+        const parties = debate.parties?.length ? debate.parties : ["Óþekkt"];
+        for (const party of parties) {
+          if (!groups.has(party)) groups.set(party, []);
+          groups.get(party).push(debate);
         }
         continue;
       } else {
@@ -155,82 +139,96 @@
       }
 
       if (!groups.has(key)) groups.set(key, []);
-      groups.get(key).push(d);
+      groups.get(key).push(debate);
     }
 
     return Array.from(groups.entries()).map(([key, items]) => {
       let label;
       if (groupBy === "session") {
         label = `${key}. löggjafarþing`;
-      } else if (groupBy === "year") {
-        label = key;
-      } else if (groupBy === "party") {
+      } else if (groupBy === "year" || groupBy === "party") {
         label = key;
       } else {
         label = key;
       }
+
       return { key, label, debates: items };
     });
   }
 
   function queryStats() {
-    const data = jsonData || [];
-    const totalSpeeches = data.reduce((s, d) => s + (d.speech_count || 0), 0);
-    const totalWords = data.reduce((s, d) => s + (d.total_words || 0), 0);
-    const sessions = new Set(data.map((d) => d.session));
+    const debates = getDebates();
+    const sessions = new Set(debates.map((debate) => debate.session));
     return {
-      total: data.length,
-      totalSpeeches,
-      totalWords,
+      total: debates.length,
+      totalSpeeches: debates.reduce((sum, debate) => sum + (debate.speech_count || 0), 0),
+      totalWords: debates.reduce((sum, debate) => sum + (debate.total_words || 0), 0),
       sessions: sessions.size,
     };
   }
 
-  // ── Rendering ────────────────────────────────────────────────────
+  function renderShell() {
+    const filters = getFilters();
+    const debates = getDebates();
 
-  function renderSkeleton() {
-    const parties = jsonData
-      ? [...new Set(jsonData.flatMap((d) => d.parties || []))].sort((a, b) =>
-          a.localeCompare(b, "is")
-        )
-      : [];
+    const parties = [...new Set(debates.flatMap((debate) => debate.parties || []))]
+      .sort((a, b) => a.localeCompare(b, "is"));
 
-    const sessions = jsonData
-      ? [...new Set(jsonData.map((d) => d.session))].sort((a, b) => b - a)
-      : [];
+    const sessions = [...new Set(debates.map((debate) => debate.session))]
+      .sort((a, b) => b - a);
 
     root.innerHTML = `
-      <div class="st-stats" id="st-stats">
-        <div class="ct-stat-loading">Hle&eth; g&ouml;gnum&hellip;</div>
-      </div>
+      <div class="st-stats" id="st-stats">${renderer.renderMessage("Hleð gögnum…", "ct-stat-loading")}</div>
 
-      <div class="ct-controls">
-        <div class="ct-search-wrap">
-          <input type="search" id="st-search" class="ct-search"
-                 placeholder="Leita í umræðum eða ræðumönnum…" autocomplete="off" />
-        </div>
-        <div class="ct-filter-row">
-          <select id="st-party" class="ct-select">
-            <option value="">Allir flokkar</option>
-            ${parties.map((p) => `<option value="${escapeHtml(p)}">${escapeHtml(p)}</option>`).join("")}
-          </select>
-          <select id="st-session" class="ct-select">
-            <option value="">Öll löggjafarþing</option>
-            ${sessions.map((s) => `<option value="${s}">${s}. löggjafarþing</option>`).join("")}
-          </select>
-          <select id="st-group" class="ct-select">
-            ${Object.entries(GROUP_LABELS)
-              .map(([k, v]) => `<option value="${k}">${v}</option>`)
-              .join("")}
-          </select>
-          <select id="st-sort" class="ct-select">
-            <option value="last_date">Nýjast</option>
-            <option value="speech_count">Flest ræður</option>
-            <option value="total_words">Flest orð</option>
-            <option value="speaker_count">Flestir þingmenn</option>
-          </select>
-        </div>
-      </div>
+      ${renderer.renderControlBlock({
+        wrapperClass: "ct-controls",
+        search: {
+          id: "st-search",
+          className: "ct-search",
+          wrapClass: "ct-search-wrap",
+          placeholder: "Leita í umræðum eða ræðumönnum…",
+          value: filters.search,
+        },
+        rows: [{
+          className: "ct-filter-row",
+          controls: [
+            renderer.renderSelect({
+              id: "st-party",
+              className: "ct-select",
+              placeholder: "Allir flokkar",
+              options: parties,
+              selectedValue: filters.party,
+            }),
+            renderer.renderSelect({
+              id: "st-session",
+              className: "ct-select",
+              placeholder: "Öll löggjafarþing",
+              options: sessions.map((value) => ({
+                value,
+                label: `${value}. löggjafarþing`,
+              })),
+              selectedValue: filters.session,
+            }),
+            renderer.renderSelect({
+              id: "st-group",
+              className: "ct-select",
+              options: Object.entries(GROUP_LABELS).map(([value, label]) => ({ value, label })),
+              selectedValue: filters.groupBy,
+            }),
+            renderer.renderSelect({
+              id: "st-sort",
+              className: "ct-select",
+              options: [
+                { value: "last_date", label: "Nýjast" },
+                { value: "speech_count", label: "Flest ræður" },
+                { value: "total_words", label: "Flest orð" },
+                { value: "speaker_count", label: "Flestir þingmenn" },
+              ],
+              selectedValue: filters.sort,
+            }),
+          ],
+        }],
+      })}
 
       ${filters.speaker ? `
       <div class="st-speaker-filter" id="st-speaker-filter">
@@ -239,7 +237,7 @@
       </div>` : ""}
 
       <div class="st-results" id="st-results">
-        <div class="ct-loading">Hle&eth; umr&aelig;&eth;um&hellip;</div>
+        ${renderer.renderMessage("Hleð umræðum…", "ct-loading")}
       </div>
     `;
   }
@@ -247,79 +245,61 @@
   function renderStats() {
     const stats = queryStats();
     const el = document.getElementById("st-stats");
-    el.innerHTML = `
-      <div class="ct-stat">
-        <span class="ct-stat-num">${fmtNum(stats.total)}</span>
-        <span class="ct-stat-label">umræður</span>
-      </div>
-      <div class="ct-stat">
-        <span class="ct-stat-num">${fmtNum(stats.totalSpeeches)}</span>
-        <span class="ct-stat-label">ræður</span>
-      </div>
-      <div class="ct-stat">
-        <span class="ct-stat-num">${fmtNum(stats.totalWords)}</span>
-        <span class="ct-stat-label">orð</span>
-      </div>
-      <div class="ct-stat">
-        <span class="ct-stat-num">${stats.sessions}</span>
-        <span class="ct-stat-label">löggjafarþing</span>
-      </div>
-    `;
+    if (!el) return;
+
+    el.innerHTML = renderer.renderStatItems({
+      items: [
+        { value: formatNumber(stats.total), label: "umræður", valueHtml: formatNumber(stats.total) },
+        { value: formatNumber(stats.totalSpeeches), label: "ræður", valueHtml: formatNumber(stats.totalSpeeches) },
+        { value: formatNumber(stats.totalWords), label: "orð", valueHtml: formatNumber(stats.totalWords) },
+        { value: stats.sessions, label: "löggjafarþing" },
+      ],
+    });
   }
 
   function renderResults() {
     const debates = queryDebates();
     const el = document.getElementById("st-results");
+    if (!el) return;
 
     if (debates.length === 0) {
-      el.innerHTML = `<div class="ct-empty">Engar umræður fundust.</div>`;
+      el.innerHTML = renderer.renderMessage("Engar umræður fundust.", "ct-empty");
       return;
     }
 
     const groups = groupDebates(debates);
-
-    if (groups.length === 1 && !groups[0].key) {
-      el.innerHTML = `<div class="st-grid">${debates.map(renderDebateCard).join("")}</div>`;
-    } else {
-      el.innerHTML = groups
-        .map(
-          (g) => `
-        <div class="st-group">
-          <h3 class="st-group-header">${escapeHtml(g.label)}<span class="st-group-count">${g.debates.length}</span></h3>
-          <div class="st-grid">${g.debates.map(renderDebateCard).join("")}</div>
-        </div>
-      `
-        )
-        .join("");
-    }
+    el.innerHTML = renderer.renderGroupedCollection({
+      groups,
+      getKey: (group) => group.key,
+      getItems: (group) => group.debates,
+      renderItem: renderDebateCard,
+      gridClass: "st-grid",
+      groupClass: "st-group",
+      renderHeader: (group, count) =>
+        `<h3 class="st-group-header">${escapeHtml(group.label)}<span class="st-group-count">${count}</span></h3>`,
+    });
   }
 
   function renderDebateCard(debate) {
     const sessionBadge = `<span class="st-session-badge">${debate.session}. þing</span>`;
-
     const althingiLink = debate.althingi_url
       ? `<a href="${escapeHtml(debate.althingi_url)}" class="st-althingi-link" target="_blank" rel="noopener">Alþingi.is &#x2197;</a>`
       : "";
+    const dateStr = debate.last_date ? formatIsDate(debate.last_date) : "";
 
-    const dateStr = debate.last_date
-      ? formatIsDate(debate.last_date)
-      : "";
-
-    // Party pills
     const partyPills = (debate.parties || [])
-      .map((p) => {
-        const cls = PARTY_CLASSES[p] || "party-other";
-        const short = PARTY_SHORT[p] || p.slice(0, 4);
-        return `<span class="st-party-pill ${cls}" title="${escapeHtml(p)}">${escapeHtml(short)}</span>`;
+      .map((party) => {
+        const cls = PARTY_CLASSES[party] || "party-other";
+        const short = PARTY_SHORT[party] || party.slice(0, 4);
+        return `<span class="st-party-pill ${cls}" title="${escapeHtml(party)}">${escapeHtml(short)}</span>`;
       })
       .join("");
 
-    // Top speakers
     const speakerHtml = (debate.top_speakers || [])
       .slice(0, 3)
       .map(
-        (s) =>
-          `<span class="st-speaker-name">${escapeHtml(s.name)}<span class="st-speaker-words"> (${fmtNum(s.words)})</span></span>`
+        (speaker) =>
+          `<span class="st-speaker-name">${escapeHtml(speaker.name)}<span class="st-speaker-words"> (${formatNumber(speaker.words)})</span></span>`
       )
       .join(", ");
 
@@ -341,92 +321,40 @@
         <div class="st-card-footer">
           <span class="st-card-stat">${debate.speech_count} ræður</span>
           <span class="st-card-stat">${debate.speaker_count} þingmenn</span>
-          <span class="st-card-stat">${fmtNum(debate.total_words)} orð</span>
+          <span class="st-card-stat">${formatNumber(debate.total_words)} orð</span>
         </div>
       </div>
     `;
   }
 
-  // ── Events ───────────────────────────────────────────────────────
+  controller.bindInput(
+    "#st-search",
+    (value, _target, _event, api) => {
+      api.setState({ search: value }, "results");
+    },
+    { debounceMs: 200, trim: true }
+  );
 
-  let searchTimeout = null;
+  controller.bindChange("#st-party", (value, _target, _event, api) => {
+    api.setState({ party: value }, "results");
+  });
 
-  function bindEvents() {
-    const searchInput = document.getElementById("st-search");
-    const partySelect = document.getElementById("st-party");
-    const sessionSelect = document.getElementById("st-session");
-    const groupSelect = document.getElementById("st-group");
-    const sortSelect = document.getElementById("st-sort");
+  controller.bindChange("#st-session", (value, _target, _event, api) => {
+    api.setState({ session: value }, "results");
+  });
 
-    searchInput.addEventListener("input", (e) => {
-      clearTimeout(searchTimeout);
-      searchTimeout = setTimeout(() => {
-        filters.search = e.target.value.trim();
-        renderResults();
-      }, 200);
-    });
+  controller.bindChange("#st-group", (value, _target, _event, api) => {
+    api.setState({ groupBy: value }, "results");
+  });
 
-    partySelect.addEventListener("change", (e) => {
-      filters.party = e.target.value;
-      renderResults();
-    });
+  controller.bindChange("#st-sort", (value, _target, _event, api) => {
+    api.setState({ sort: value }, "results");
+  });
 
-    sessionSelect.addEventListener("change", (e) => {
-      filters.session = e.target.value;
-      renderResults();
-    });
+  controller.bindClick("#st-clear-speaker", (_target, _event, api) => {
+    window.history.replaceState({}, "", window.location.pathname);
+    api.setState({ speaker: "" }, "all");
+  });
 
-    groupSelect.addEventListener("change", (e) => {
-      filters.groupBy = e.target.value;
-      renderResults();
-    });
-
-    sortSelect.addEventListener("change", (e) => {
-      filters.sort = e.target.value;
-      renderResults();
-    });
-
-    const clearSpeaker = document.getElementById("st-clear-speaker");
-    if (clearSpeaker) {
-      clearSpeaker.addEventListener("click", () => {
-        filters.speaker = "";
-        window.history.replaceState({}, "", window.location.pathname);
-        renderSkeleton();
-        renderStats();
-        renderResults();
-        bindEvents();
-      });
-    }
-  }
-
-  // ── Utilities ────────────────────────────────────────────────────
-
-  function escapeHtml(str) {
-    if (!str) return "";
-    const div = document.createElement("div");
-    div.textContent = str;
-    return div.innerHTML;
-  }
-
-  function formatIsDate(dateStr) {
-    if (!dateStr) return "";
-    const parts = dateStr.split("-");
-    if (parts.length !== 3) return dateStr;
-    const day = parseInt(parts[2], 10);
-    const month = parseInt(parts[1], 10);
-    const monthName = IS_MONTHS[month] || "";
-    return `${day}. ${monthName} ${parts[0]}`;
-  }
-
-  function fmtNum(n) {
-    if (n == null) return "0";
-    return Number(n).toLocaleString("is-IS");
-  }
-
-  // ── Boot ─────────────────────────────────────────────────────────
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
-  } else {
-    init();
-  }
+  controller.start();
 })();

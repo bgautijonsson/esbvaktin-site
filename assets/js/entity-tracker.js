@@ -8,123 +8,132 @@
 (function () {
   "use strict";
 
-  // ── Configuration ────────────────────────────────────────────────
-  const DATA_BASE = document.currentScript?.dataset.base || "/assets/data";
+  const TAXONOMY = globalThis.ESBvaktinTaxonomy || {};
+  const utils = globalThis.ESBvaktinTrackerUtils || {};
+  const renderer = globalThis.ESBvaktinTrackerRenderer;
+  const controllerLib = globalThis.ESBvaktinTrackerController || {};
+  const createController = controllerLib.create;
+  const escapeHtml = utils.escapeHtml || ((value) => String(value ?? ""));
+  const DATA_BASE = utils.getDataBase
+    ? utils.getDataBase(document.currentScript, "/assets/data")
+    : (document.currentScript?.dataset.base || "/assets/data");
   const ENTITIES_URL = `${DATA_BASE}/entities.json`;
   const REPORTS_URL = `${DATA_BASE}/reports.json`;
   const FEATURED_URL = `${DATA_BASE}/featured-entities.json`;
-
-  // Icelandic labels
-  const TYPE_LABELS = {
-    party: "Stjórnmálaflokkur",
-    institution: "Samtök/stofnun",
-    individual: "Einstaklingur",
-  };
-
-  const TYPE_FILTER_LABELS = {
-    party: "Stjórnmálaflokkar",
-    institution: "Samtök og stofnanir",
-    individual: "Einstaklingar",
-  };
-
-  const STANCE_FILTER_LABELS = {
-    pro_eu: "ESB-jákvæð",
-    anti_eu: "ESB-gagnrýnin",
-    mixed: "Blandað/hlutlaus",
-  };
-
-  const ATTRIBUTION_LABELS = {
-    quoted: "Tilvitnað",
-    asserted: "Fullyrt",
-    paraphrased: "Umorðað",
-    mentioned: "Nefnt",
-  };
-
+  const TYPE_LABELS = TAXONOMY.entityTypeLabels || {};
+  const TYPE_FILTER_LABELS = TAXONOMY.entityTypeFilterLabels || {};
+  const STANCE_FILTER_LABELS = TAXONOMY.stanceFilterLabels || {};
+  const ATTRIBUTION_LABELS = TAXONOMY.attributionLabels || {};
   const ATTRIBUTION_ORDER = ["quoted", "asserted", "paraphrased", "mentioned"];
 
-  // ── State ──────────────────────────────────────────────────────
-  let entitiesData = null;
-  let reportsMap = null; // slug → { article_title, slug, … }
-  let featuredRanks = new Map(); // slug → rank (0-based index)
-
-  let filters = {
-    search: "",
-    type: "",     // "" | "party" | "institution" | "individual"
-    stance: "",   // "" | "pro_eu" | "anti_eu" | "mixed"
-    sort: "importance",
-    sortDir: "ASC",
-  };
-
-  // ── DOM reference ──────────────────────────────────────────────
   const root = document.getElementById("entity-tracker");
-  if (!root) return;
+  if (!root || !renderer || !createController) return;
 
-  // ── Initialisation ─────────────────────────────────────────────
+  const controller = createController({
+    root,
+    initialState: {
+      search: "",
+      type: "",
+      stance: "",
+      sort: "importance",
+      sortDir: "ASC",
+    },
+    initialData: {
+      entities: [],
+      reportsMap: new Map(),
+      featuredRanks: new Map(),
+    },
+    async load(api) {
+      const [entities, reports] = await Promise.all([
+        api.loadJson(ENTITIES_URL),
+        api.loadJson(REPORTS_URL),
+      ]);
 
-  async function init() {
-    renderSkeleton();
+      const reportsMap = new Map();
+      reports.forEach((report) => {
+        reportsMap.set(report.slug, report);
+      });
 
-    const [entResp, repResp, featResp] = await Promise.all([
-      fetch(ENTITIES_URL),
-      fetch(REPORTS_URL),
-      fetch(FEATURED_URL),
-    ]);
+      const featuredRanks = new Map();
+      try {
+        const featured = await api.loadJson(FEATURED_URL);
+        featured.forEach((slug, index) => featuredRanks.set(slug, index));
+      } catch (_error) {
+        // Featured entities are optional for the browser.
+      }
 
-    if (!entResp.ok) throw new Error(`Failed to fetch ${ENTITIES_URL}: ${entResp.status}`);
-    if (!repResp.ok) throw new Error(`Failed to fetch ${REPORTS_URL}: ${repResp.status}`);
+      return {
+        entities,
+        reportsMap,
+        featuredRanks,
+      };
+    },
+    renderShell,
+    renderStats,
+    renderResults,
+    initialRender: "stats+results",
+    onError() {
+      renderShell();
+      const stats = document.getElementById("et-stats");
+      const results = document.getElementById("et-results");
+      if (stats) {
+        stats.innerHTML = renderer.renderMessage("Gat ekki hlaðið gögnum.", "et-stat-loading");
+      }
+      if (results) {
+        results.innerHTML = renderer.renderMessage("Engir aðilar fundust.", "et-empty");
+      }
+    },
+  });
 
-    entitiesData = await entResp.json();
-    const reportsArr = await repResp.json();
-
-    // Build slug → report lookup for article title resolution
-    reportsMap = new Map();
-    for (const r of reportsArr) {
-      reportsMap.set(r.slug, r);
-    }
-
-    // Build featured entity ranks (graceful fallback if fetch fails)
-    if (featResp.ok) {
-      const featured = await featResp.json();
-      featured.forEach((slug, i) => featuredRanks.set(slug, i));
-    }
-
-    renderStats();
-    renderResults();
-    bindEvents();
+  function getData() {
+    return controller.getData() || {};
   }
 
-  // ── Query layer ────────────────────────────────────────────────
+  function getEntities() {
+    return getData().entities || [];
+  }
+
+  function getReportsMap() {
+    return getData().reportsMap || new Map();
+  }
+
+  function getFeaturedRanks() {
+    return getData().featuredRanks || new Map();
+  }
+
+  function getFilters() {
+    return controller.getState();
+  }
 
   function queryEntities() {
-    let results = [...entitiesData];
+    const filters = getFilters();
+    const featuredRanks = getFeaturedRanks();
+    let results = [...getEntities()];
 
     if (filters.search) {
       const q = filters.search.toLowerCase();
       results = results.filter(
-        (e) =>
-          e.name?.toLowerCase().includes(q) ||
-          e.role?.toLowerCase().includes(q) ||
-          e.party?.toLowerCase().includes(q) ||
-          e.description?.toLowerCase().includes(q)
+        (entity) =>
+          entity.name?.toLowerCase().includes(q) ||
+          entity.role?.toLowerCase().includes(q) ||
+          entity.party?.toLowerCase().includes(q) ||
+          entity.description?.toLowerCase().includes(q)
       );
     }
 
     if (filters.type) {
-      results = results.filter((e) => e.type === filters.type);
+      results = results.filter((entity) => entity.type === filters.type);
     }
 
     if (filters.stance) {
       if (filters.stance === "mixed") {
-        // "Blandað/hlutlaus" matches both mixed and neutral
-        results = results.filter((e) => e.stance === "mixed" || e.stance === "neutral");
+        results = results.filter((entity) => entity.stance === "mixed" || entity.stance === "neutral");
       } else {
-        results = results.filter((e) => e.stance === filters.stance);
+        results = results.filter((entity) => entity.stance === filters.stance);
       }
     }
 
-    const sort = filters.sort || "importance";
-    if (sort === "importance") {
-      // Featured entities first (by rank), then the rest by name
+    if (filters.sort === "importance") {
       const maxRank = featuredRanks.size;
       results.sort((a, b) => {
         const ra = featuredRanks.has(a.slug) ? featuredRanks.get(a.slug) : maxRank;
@@ -132,67 +141,80 @@
         if (ra !== rb) return ra - rb;
         return String(a.name ?? "").localeCompare(String(b.name ?? ""), "is");
       });
-    } else {
-      const dir = filters.sortDir === "DESC" ? -1 : 1;
-      results.sort((a, b) => {
-        const va = a[sort] ?? "";
-        const vb = b[sort] ?? "";
-        if (typeof va === "number" && typeof vb === "number") return (va - vb) * dir;
-        return String(va).localeCompare(String(vb), "is") * dir;
-      });
+      return results;
     }
+
+    const dir = filters.sortDir === "DESC" ? -1 : 1;
+    results.sort((a, b) => {
+      const va = a[filters.sort] ?? "";
+      const vb = b[filters.sort] ?? "";
+      if (typeof va === "number" && typeof vb === "number") return (va - vb) * dir;
+      return String(va).localeCompare(String(vb), "is") * dir;
+    });
 
     return results;
   }
 
   function queryStats() {
-    const data = entitiesData || [];
+    const entities = getEntities();
     return {
-      total: data.length,
-      parties: data.filter((e) => e.type === "party").length,
-      institutions: data.filter((e) => e.type === "institution").length,
-      individuals: data.filter((e) => e.type === "individual").length,
+      total: entities.length,
+      parties: entities.filter((entity) => entity.type === "party").length,
+      institutions: entities.filter((entity) => entity.type === "institution").length,
+      individuals: entities.filter((entity) => entity.type === "individual").length,
     };
   }
 
-  // ── Rendering ──────────────────────────────────────────────────
+  function renderShell() {
+    const filters = getFilters();
 
-  function renderSkeleton() {
     root.innerHTML = `
-      <div class="et-stats" id="et-stats">
-        <div class="et-stat-loading">Hle&eth; g&ouml;gnum&hellip;</div>
-      </div>
+      <div class="et-stats" id="et-stats">${renderer.renderMessage("Hleð gögnum…", "et-stat-loading")}</div>
 
-      <div class="et-controls">
-        <div class="et-search-wrap">
-          <input type="search" id="et-search" class="et-search"
-                 placeholder="Leita í aðilum…" autocomplete="off" />
-        </div>
-        <div class="et-filter-row">
-          <select id="et-type" class="et-select">
-            <option value="">Allar tegundir</option>
-            ${Object.entries(TYPE_FILTER_LABELS)
-              .map(([k, v]) => `<option value="${k}">${v}</option>`)
-              .join("")}
-          </select>
-          <select id="et-stance" class="et-select">
-            <option value="">Öll viðhorf</option>
-            ${Object.entries(STANCE_FILTER_LABELS)
-              .map(([k, v]) => `<option value="${k}">${v}</option>`)
-              .join("")}
-          </select>
-          <select id="et-sort" class="et-select">
-            <option value="importance">Mikilvægi</option>
-            <option value="name">Nafn</option>
-            <option value="stance_score">Afstaða</option>
-            <option value="credibility">Trúverðugleiki</option>
-            <option value="mention_count">Tilvísanir</option>
-          </select>
-        </div>
-      </div>
+      ${renderer.renderControlBlock({
+        wrapperClass: "et-controls",
+        search: {
+          id: "et-search",
+          className: "et-search",
+          wrapClass: "et-search-wrap",
+          placeholder: "Leita í aðilum…",
+          value: filters.search,
+        },
+        rows: [{
+          className: "et-filter-row",
+          controls: [
+            renderer.renderSelect({
+              id: "et-type",
+              className: "et-select",
+              placeholder: "Allar tegundir",
+              options: Object.entries(TYPE_FILTER_LABELS).map(([value, label]) => ({ value, label })),
+              selectedValue: filters.type,
+            }),
+            renderer.renderSelect({
+              id: "et-stance",
+              className: "et-select",
+              placeholder: "Öll viðhorf",
+              options: Object.entries(STANCE_FILTER_LABELS).map(([value, label]) => ({ value, label })),
+              selectedValue: filters.stance,
+            }),
+            renderer.renderSelect({
+              id: "et-sort",
+              className: "et-select",
+              options: [
+                { value: "importance", label: "Mikilvægi" },
+                { value: "name", label: "Nafn" },
+                { value: "stance_score", label: "Afstaða" },
+                { value: "credibility", label: "Trúverðugleiki" },
+                { value: "mention_count", label: "Tilvísanir" },
+              ],
+              selectedValue: filters.sort,
+            }),
+          ],
+        }],
+      })}
 
       <div id="et-results">
-        <div class="et-loading">Hle&eth; a&eth;ilum&hellip;</div>
+        ${renderer.renderMessage("Hleð aðilum…", "et-loading")}
       </div>
     `;
   }
@@ -200,54 +222,37 @@
   function renderStats() {
     const stats = queryStats();
     const el = document.getElementById("et-stats");
-    el.innerHTML = `
-      <div class="et-stat">
-        <span class="et-stat-num" id="et-visible-count">${stats.total}</span>
-        <span class="et-stat-label">aðilar</span>
-      </div>
-      <div class="et-stat">
-        <span class="et-stat-num">${stats.parties}</span>
-        <span class="et-stat-label">flokkar</span>
-      </div>
-      <div class="et-stat">
-        <span class="et-stat-num">${stats.institutions}</span>
-        <span class="et-stat-label">samtök</span>
-      </div>
-      <div class="et-stat">
-        <span class="et-stat-num">${stats.individuals}</span>
-        <span class="et-stat-label">einstaklingar</span>
-      </div>
-    `;
+    if (!el) return;
+
+    el.innerHTML = renderer.renderStatItems({
+      statClass: "et-stat",
+      numClass: "et-stat-num",
+      labelClass: "et-stat-label",
+      items: [
+        { value: stats.total, label: "aðilar", valueId: "et-visible-count" },
+        { value: stats.parties, label: "flokkar" },
+        { value: stats.institutions, label: "samtök" },
+        { value: stats.individuals, label: "einstaklingar" },
+      ],
+    });
   }
 
   function renderResults() {
     const entities = queryEntities();
     const el = document.getElementById("et-results");
+    if (!el) return;
 
     if (entities.length === 0) {
-      el.innerHTML = `<div class="et-empty">Engir aðilar fundust.</div>`;
+      el.innerHTML = renderer.renderMessage("Engir aðilar fundust.", "et-empty");
       updateVisibleCount(0);
       return;
     }
 
     updateVisibleCount(entities.length);
-
-    el.innerHTML = `<div class="et-grid">${entities.map(renderEntityCard).join("")}</div>`;
-
-    // Bind expand/collapse for article sections
-    el.querySelectorAll(".et-articles-toggle").forEach((toggle) => {
-      toggle.addEventListener("click", () => {
-        const section = toggle.closest(".et-articles-section");
-        section.classList.toggle("et-expanded");
-        const expanded = section.classList.contains("et-expanded");
-        toggle.setAttribute("aria-expanded", expanded);
-      });
-      toggle.addEventListener("keydown", (e) => {
-        if (e.key === "Enter" || e.key === " ") {
-          e.preventDefault();
-          toggle.click();
-        }
-      });
+    el.innerHTML = renderer.renderCollection({
+      items: entities,
+      renderItem: renderEntityCard,
+      containerClass: "et-grid",
     });
   }
 
@@ -261,18 +266,16 @@
     const hue = stanceHue(score);
     const sat = 10 + Math.abs(score) * 60;
     const label = stanceLabel(score);
-    const dotLeft = ((score + 1) / 2 * 100).toFixed(1);
+    const dotLeft = (((score + 1) / 2) * 100).toFixed(1);
     const credPct = entity.credibility != null ? Math.round(entity.credibility * 100) : null;
+    const detailUrl = `/raddirnar/${escapeHtml(entity.slug)}/`;
 
-    // Role line
     const roleHtml = entity.role
       ? `<p class="et-card-role">${escapeHtml(capitalize(entity.role))}${entity.party ? ` (${escapeHtml(entity.party)})` : ""}</p>`
       : "";
 
-    // Type badge
     const typeBadge = `<span class="et-type-badge et-type-${entity.type}">${TYPE_LABELS[entity.type] || entity.type}</span>`;
 
-    // Stats row
     const claimCount = entity.claims?.length || 0;
     const articleCount = entity.articles?.length || 0;
     let statsHtml = '<div class="et-card-stats">';
@@ -281,7 +284,6 @@
     if (entity.althingi_stats) statsHtml += `<span class="et-card-stat et-althingi-badge">${entity.althingi_stats.speech_count} þingræður</span>`;
     statsHtml += "</div>";
 
-    // Credibility bar
     let credHtml = "";
     if (credPct !== null) {
       credHtml = `
@@ -294,23 +296,24 @@
         </div>`;
     }
 
-    // Attribution breakdown bar
     let attrHtml = "";
-    const ac = entity.attribution_counts;
-    if (ac) {
-      const total = ATTRIBUTION_ORDER.reduce((s, k) => s + (ac[k] || 0), 0);
+    const attributionCounts = entity.attribution_counts;
+    if (attributionCounts) {
+      const total = ATTRIBUTION_ORDER.reduce((sum, key) => sum + (attributionCounts[key] || 0), 0);
       if (total > 0) {
         const segments = ATTRIBUTION_ORDER
-          .filter((k) => ac[k])
-          .map((k) => {
-            const pct = ((ac[k] / total) * 100).toFixed(1);
-            return `<div class="et-attr-seg et-attr-${k}" style="width:${pct}%" title="${ATTRIBUTION_LABELS[k]}: ${ac[k]}"></div>`;
+          .filter((key) => attributionCounts[key])
+          .map((key) => {
+            const pct = ((attributionCounts[key] / total) * 100).toFixed(1);
+            return `<div class="et-attr-seg et-attr-${key}" style="width:${pct}%" title="${ATTRIBUTION_LABELS[key]}: ${attributionCounts[key]}"></div>`;
           })
           .join("");
+
         const legend = ATTRIBUTION_ORDER
-          .filter((k) => ac[k])
-          .map((k) => `<span class="et-attr-legend-item et-attr-${k}-text">${ATTRIBUTION_LABELS[k]} ${ac[k]}</span>`)
+          .filter((key) => attributionCounts[key])
+          .map((key) => `<span class="et-attr-legend-item et-attr-${key}-text">${ATTRIBUTION_LABELS[key]} ${attributionCounts[key]}</span>`)
           .join("");
+
         attrHtml = `
           <div class="et-attribution">
             <div class="et-attr-bar">${segments}</div>
@@ -319,12 +322,11 @@
       }
     }
 
-    // Collapsible articles section
     let articlesHtml = "";
     if (articleCount > 0) {
       const articleLinks = entity.articles
         .map((slug) => {
-          const report = reportsMap.get(slug);
+          const report = getReportsMap().get(slug);
           if (!report) return null;
           return `<li><a href="/umraedan/${escapeHtml(slug)}/">${escapeHtml(report.article_title)}</a></li>`;
         })
@@ -334,7 +336,7 @@
       if (articleLinks) {
         articlesHtml = `
           <div class="et-articles-section">
-            <button class="et-articles-toggle" aria-expanded="false">
+            <button class="et-articles-toggle" aria-expanded="false" type="button">
               <span class="et-articles-label">Birtist í ${articleCount} grein${articleCount > 1 ? "um" : "ing"}</span>
               <span class="et-expand-icon">▸</span>
             </button>
@@ -344,8 +346,6 @@
           </div>`;
       }
     }
-
-    const detailUrl = `/raddirnar/${escapeHtml(entity.slug)}/`;
 
     return `
       <div class="et-card" style="--stance-hue: ${hue}; --stance-sat: ${sat}%; --stance-score: ${score}">
@@ -369,49 +369,13 @@
     `;
   }
 
-  // ── Events ─────────────────────────────────────────────────────
+  function toggleArticles(toggle) {
+    const section = toggle.closest(".et-articles-section");
+    if (!section) return;
 
-  let searchTimeout = null;
-
-  function bindEvents() {
-    const searchInput = document.getElementById("et-search");
-    const typeSelect = document.getElementById("et-type");
-    const stanceSelect = document.getElementById("et-stance");
-    const sortSelect = document.getElementById("et-sort");
-
-    searchInput.addEventListener("input", (e) => {
-      clearTimeout(searchTimeout);
-      searchTimeout = setTimeout(() => {
-        filters.search = e.target.value.trim();
-        renderResults();
-      }, 200);
-    });
-
-    typeSelect.addEventListener("change", (e) => {
-      filters.type = e.target.value;
-      renderResults();
-    });
-
-    stanceSelect.addEventListener("change", (e) => {
-      filters.stance = e.target.value;
-      renderResults();
-    });
-
-    sortSelect.addEventListener("change", (e) => {
-      filters.sort = e.target.value;
-      // Default direction: ASC for name/importance, DESC for numeric fields
-      filters.sortDir = (e.target.value === "name" || e.target.value === "importance") ? "ASC" : "DESC";
-      renderResults();
-    });
-  }
-
-  // ── Utilities ──────────────────────────────────────────────────
-
-  function escapeHtml(str) {
-    if (!str) return "";
-    const div = document.createElement("div");
-    div.textContent = str;
-    return div.innerHTML;
+    const expanded = !section.classList.contains("et-expanded");
+    section.classList.toggle("et-expanded", expanded);
+    toggle.setAttribute("aria-expanded", expanded);
   }
 
   function stanceHue(score) {
@@ -430,10 +394,35 @@
     return str.charAt(0).toUpperCase() + str.slice(1);
   }
 
-  // ── Boot ───────────────────────────────────────────────────────
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
-  } else {
-    init();
-  }
+  controller.bindInput(
+    "#et-search",
+    (value, _target, _event, api) => {
+      api.setState({ search: value }, "results");
+    },
+    { debounceMs: 200, trim: true }
+  );
+
+  controller.bindChange("#et-type", (value, _target, _event, api) => {
+    api.setState({ type: value }, "results");
+  });
+
+  controller.bindChange("#et-stance", (value, _target, _event, api) => {
+    api.setState({ stance: value }, "results");
+  });
+
+  controller.bindChange("#et-sort", (value, _target, _event, api) => {
+    api.setState(
+      {
+        sort: value,
+        sortDir: value === "name" || value === "importance" ? "ASC" : "DESC",
+      },
+      "results"
+    );
+  });
+
+  controller.bindClick(".et-articles-toggle", (target) => {
+    toggleArticles(target);
+  });
+
+  controller.start();
 })();

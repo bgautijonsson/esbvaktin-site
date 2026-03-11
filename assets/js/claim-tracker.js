@@ -8,106 +8,82 @@
 (function () {
   "use strict";
 
-  // ── Configuration ────────────────────────────────────────────────
-  const DATA_BASE = document.currentScript?.dataset.base || "/assets/data";
+  const TAXONOMY = globalThis.ESBvaktinTaxonomy || {};
+  const utils = globalThis.ESBvaktinTrackerUtils || {};
+  const renderer = globalThis.ESBvaktinTrackerRenderer;
+  const controllerLib = globalThis.ESBvaktinTrackerController || {};
+  const createController = controllerLib.create;
+  const escapeHtml = utils.escapeHtml || ((value) => String(value ?? ""));
+  const DATA_BASE = utils.getDataBase
+    ? utils.getDataBase(document.currentScript, "/assets/data")
+    : (document.currentScript?.dataset.base || "/assets/data");
   const JSON_URL = `${DATA_BASE}/claims.json`;
+  const VERDICT_LABELS = TAXONOMY.verdictLabels || {};
+  const CATEGORY_LABELS = TAXONOMY.categoryLabels || {};
+  const VERDICT_CLASSES = TAXONOMY.verdictClasses || {};
+  const SOURCE_TYPE_LABELS = TAXONOMY.claimSourceTypeLabels || {};
 
-  // Icelandic labels
-  const VERDICT_LABELS = {
-    supported: "Staðfest",
-    partially_supported: "Að hluta staðfest",
-    unsupported: "Óstutt",
-    misleading: "Villandi",
-    unverifiable: "Ósannanlegt",
-  };
-
-  const CATEGORY_LABELS = {
-    fisheries: "Sjávarútvegur",
-    trade: "Viðskipti",
-    sovereignty: "Fullveldi",
-    agriculture: "Landbúnaður",
-    labour: "Vinnumarkaður",
-    currency: "Gjaldmiðill",
-    precedents: "Fordæmi",
-    eea_eu_law: "EES/ESB-löggjöf",
-    housing: "Húsnæðismál",
-    polling: "Kannanir",
-    party_positions: "Flokkastefnur",
-    org_positions: "Samtakastefnur",
-    energy: "Orkumál",
-  };
-
-  const VERDICT_CLASSES = {
-    supported: "verdict-supported",
-    partially_supported: "verdict-partial",
-    unsupported: "verdict-unsupported",
-    misleading: "verdict-misleading",
-    unverifiable: "verdict-unverifiable",
-  };
-
-  const SOURCE_TYPE_LABELS = {
-    news: "Frétt",
-    opinion: "Skoðun",
-    althingi: "Alþingi",
-    interview: "Viðtal",
-    analysis: "Greining",
-    other: "Annað",
-  };
-
-  // ── State ────────────────────────────────────────────────────────
-  let jsonData = null;
-
-  // Current filter state
-  let filters = {
-    search: "",
-    category: "",
-    verdict: "",
-    sort: "sighting_count",
-    sortDir: "DESC",
-  };
-
-  // ── DOM references ───────────────────────────────────────────────
   const root = document.getElementById("claim-tracker");
-  if (!root) return;
+  if (!root || !renderer || !createController) return;
 
-  // ── Initialisation ───────────────────────────────────────────────
+  const controller = createController({
+    root,
+    initialState: {
+      search: "",
+      category: "",
+      verdict: "",
+      sort: "sighting_count",
+      sortDir: "DESC",
+    },
+    initialData: [],
+    async load(api) {
+      return api.loadJson(JSON_URL);
+    },
+    renderShell,
+    renderStats,
+    renderResults,
+    initialRender: "stats+results",
+    onError() {
+      renderShell();
+      const results = document.getElementById("ct-results");
+      const stats = document.getElementById("ct-stats");
+      if (stats) {
+        stats.innerHTML = renderer.renderMessage("Gat ekki hlaðið gögnum.", "ct-stat-loading");
+      }
+      if (results) {
+        results.innerHTML = renderer.renderMessage("Gat ekki hlaðið fullyrðingum.", "ct-empty");
+      }
+    },
+  });
 
-  async function init() {
-    renderSkeleton();
-
-    const resp = await fetch(JSON_URL);
-    if (!resp.ok) throw new Error(`Failed to fetch ${JSON_URL}: ${resp.status}`);
-    jsonData = await resp.json();
-    console.log(`Claim tracker loaded: ${jsonData.length} claims`);
-
-    renderStats();
-    renderResults();
-    bindEvents();
+  function getClaims() {
+    return controller.getData() || [];
   }
 
-  // DuckDB-WASM init — kept for future use when claim count warrants it.
-  // Requires self-hosting WASM bundles to avoid cross-origin Worker errors.
-  // async function initDuckDB() { ... }
-
-  // ── Query layer ──────────────────────────────────────────────────
+  function getFilters() {
+    return controller.getState();
+  }
 
   function queryClaims() {
-    let results = [...jsonData];
+    const filters = getFilters();
+    let results = [...getClaims()];
 
     if (filters.search) {
       const q = filters.search.toLowerCase();
       results = results.filter(
-        (c) =>
-          c.canonical_text_is?.toLowerCase().includes(q) ||
-          c.explanation_is?.toLowerCase().includes(q) ||
-          c.missing_context_is?.toLowerCase().includes(q)
+        (claim) =>
+          claim.canonical_text_is?.toLowerCase().includes(q) ||
+          claim.explanation_is?.toLowerCase().includes(q) ||
+          claim.missing_context_is?.toLowerCase().includes(q)
       );
     }
+
     if (filters.category) {
-      results = results.filter((c) => c.category === filters.category);
+      results = results.filter((claim) => claim.category === filters.category);
     }
+
     if (filters.verdict) {
-      results = results.filter((c) => c.verdict === filters.verdict);
+      results = results.filter((claim) => claim.verdict === filters.verdict);
     }
 
     const sort = filters.sort || "sighting_count";
@@ -123,61 +99,73 @@
   }
 
   function queryStats() {
-    const data = jsonData || [];
+    const claims = getClaims();
     return {
-      total: data.length,
-      supported: data.filter((c) => c.verdict === "supported").length,
-      partial: data.filter((c) => c.verdict === "partially_supported").length,
-      misleading: data.filter((c) => c.verdict === "misleading").length,
-      unverifiable: data.filter((c) => c.verdict === "unverifiable").length,
-      unsupported: data.filter((c) => c.verdict === "unsupported").length,
-      totalSightings: data.reduce((s, c) => s + (c.sighting_count || 0), 0),
+      total: claims.length,
+      supported: claims.filter((claim) => claim.verdict === "supported").length,
+      partial: claims.filter((claim) => claim.verdict === "partially_supported").length,
+      misleading: claims.filter((claim) => claim.verdict === "misleading").length,
+      unverifiable: claims.filter((claim) => claim.verdict === "unverifiable").length,
+      totalSightings: claims.reduce((sum, claim) => sum + (claim.sighting_count || 0), 0),
     };
   }
 
-  // ── Rendering ────────────────────────────────────────────────────
+  function renderShell() {
+    const filters = getFilters();
 
-  function renderSkeleton() {
     root.innerHTML = `
       <div class="ct-header">
         <h2>Fullyrðingavaktin</h2>
         <p class="ct-subtitle">Allar helstu fullyrðingar í ESB-umræðunni — metnar á móti gögnum og heimildum.</p>
       </div>
 
-      <div class="ct-stats" id="ct-stats">
-        <div class="ct-stat-loading">Hleð gögnum…</div>
-      </div>
+      <div class="ct-stats" id="ct-stats">${renderer.renderMessage("Hleð gögnum…", "ct-stat-loading")}</div>
 
-      <div class="ct-controls">
-        <div class="ct-search-wrap">
-          <input type="search" id="ct-search" class="ct-search"
-                 placeholder="Leita í fullyrðingum…" autocomplete="off" />
-        </div>
-        <div class="ct-filter-row">
-          <select id="ct-category" class="ct-select">
-            <option value="">Allir flokkar</option>
-            ${Object.entries(CATEGORY_LABELS)
-              .sort((a, b) => a[1].localeCompare(b[1], "is"))
-              .map(([k, v]) => `<option value="${k}">${v}</option>`)
-              .join("")}
-          </select>
-          <select id="ct-verdict" class="ct-select">
-            <option value="">Allir úrskurðir</option>
-            ${Object.entries(VERDICT_LABELS)
-              .map(([k, v]) => `<option value="${k}">${v}</option>`)
-              .join("")}
-          </select>
-          <select id="ct-sort" class="ct-select">
-            <option value="sighting_count">Tíðni</option>
-            <option value="category">Flokkur</option>
-            <option value="confidence">Vissustig</option>
-            <option value="last_verified">Síðast staðfest</option>
-          </select>
-        </div>
-      </div>
+      ${renderer.renderControlBlock({
+        wrapperClass: "ct-controls",
+        search: {
+          id: "ct-search",
+          className: "ct-search",
+          wrapClass: "ct-search-wrap",
+          placeholder: "Leita í fullyrðingum…",
+          value: filters.search,
+        },
+        rows: [{
+          className: "ct-filter-row",
+          controls: [
+            renderer.renderSelect({
+              id: "ct-category",
+              className: "ct-select",
+              placeholder: "Allir flokkar",
+              options: Object.entries(CATEGORY_LABELS)
+                .sort((a, b) => a[1].localeCompare(b[1], "is"))
+                .map(([value, label]) => ({ value, label })),
+              selectedValue: filters.category,
+            }),
+            renderer.renderSelect({
+              id: "ct-verdict",
+              className: "ct-select",
+              placeholder: "Allir úrskurðir",
+              options: Object.entries(VERDICT_LABELS).map(([value, label]) => ({ value, label })),
+              selectedValue: filters.verdict,
+            }),
+            renderer.renderSelect({
+              id: "ct-sort",
+              className: "ct-select",
+              options: [
+                { value: "sighting_count", label: "Tíðni" },
+                { value: "category", label: "Flokkur" },
+                { value: "confidence", label: "Vissustig" },
+                { value: "last_verified", label: "Síðast staðfest" },
+              ],
+              selectedValue: filters.sort,
+            }),
+          ],
+        }],
+      })}
 
       <div class="ct-results" id="ct-results">
-        <div class="ct-loading">Hleð fullyrðingum…</div>
+        ${renderer.renderMessage("Hleð fullyrðingum…", "ct-loading")}
       </div>
     `;
   }
@@ -185,50 +173,33 @@
   function renderStats() {
     const stats = queryStats();
     const el = document.getElementById("ct-stats");
-    el.innerHTML = `
-      <div class="ct-stat">
-        <span class="ct-stat-num">${stats.total}</span>
-        <span class="ct-stat-label">fullyrðingar</span>
-      </div>
-      <div class="ct-stat">
-        <span class="ct-stat-num">${stats.totalSightings}</span>
-        <span class="ct-stat-label">tilvitnanir</span>
-      </div>
-      <div class="ct-stat ct-stat-supported">
-        <span class="ct-stat-num">${stats.supported}</span>
-        <span class="ct-stat-label">staðfestar</span>
-      </div>
-      <div class="ct-stat ct-stat-partial">
-        <span class="ct-stat-num">${stats.partial}</span>
-        <span class="ct-stat-label">að hluta</span>
-      </div>
-      <div class="ct-stat ct-stat-misleading">
-        <span class="ct-stat-num">${stats.misleading}</span>
-        <span class="ct-stat-label">villandi</span>
-      </div>
-      <div class="ct-stat ct-stat-unverifiable">
-        <span class="ct-stat-num">${stats.unverifiable}</span>
-        <span class="ct-stat-label">ósannanlegar</span>
-      </div>
-    `;
+    if (!el) return;
+
+    el.innerHTML = renderer.renderStatItems({
+      items: [
+        { value: stats.total, label: "fullyrðingar" },
+        { value: stats.totalSightings, label: "tilvitnanir" },
+        { value: stats.supported, label: "staðfestar", className: "ct-stat-supported" },
+        { value: stats.partial, label: "að hluta", className: "ct-stat-partial" },
+        { value: stats.misleading, label: "villandi", className: "ct-stat-misleading" },
+        { value: stats.unverifiable, label: "ósannanlegar", className: "ct-stat-unverifiable" },
+      ],
+    });
   }
 
   function renderResults() {
     const claims = queryClaims();
     const el = document.getElementById("ct-results");
+    if (!el) return;
 
     if (claims.length === 0) {
-      el.innerHTML = `<div class="ct-empty">Engar fullyrðingar fundust.</div>`;
+      el.innerHTML = renderer.renderMessage("Engar fullyrðingar fundust.", "ct-empty");
       return;
     }
 
-    el.innerHTML = claims.map(renderClaimCard).join("");
-
-    // Bind expand/collapse
-    el.querySelectorAll(".ct-card-header").forEach((header) => {
-      header.addEventListener("click", () => {
-        header.parentElement.classList.toggle("ct-expanded");
-      });
+    el.innerHTML = renderer.renderCollection({
+      items: claims,
+      renderItem: renderClaimCard,
     });
   }
 
@@ -249,41 +220,42 @@
       detailsHtml += `<div class="ct-detail ct-english"><strong>English:</strong> ${escapeHtml(claim.canonical_text_en)}</div>`;
     }
 
-    // Evidence references (supporting + contradicting)
-    const supEv = claim.supporting_evidence || [];
-    const conEv = claim.contradicting_evidence || [];
-    if (supEv.length > 0 || conEv.length > 0) {
-      const renderEvLinks = (evList) =>
-        evList
+    const supportingEvidence = claim.supporting_evidence || [];
+    const contradictingEvidence = claim.contradicting_evidence || [];
+    if (supportingEvidence.length > 0 || contradictingEvidence.length > 0) {
+      const renderEvidenceLinks = (evidenceList) =>
+        evidenceList
           .map(
-            (ev) =>
-              `<a href="/heimildir/${escapeHtml(ev.slug)}/" class="evidence-link" title="${escapeHtml(ev.source_name)}">${escapeHtml(ev.id)}</a>`
+            (evidence) =>
+              `<a href="/heimildir/${escapeHtml(evidence.slug)}/" class="evidence-link" title="${escapeHtml(evidence.source_name)}">${escapeHtml(evidence.id)}</a>`
           )
           .join(", ");
-      let evHtml = '<div class="ct-detail ct-evidence">';
-      if (supEv.length > 0) {
-        evHtml += `<div class="ct-evidence-group"><strong>Heimildir:</strong> ${renderEvLinks(supEv)}</div>`;
+
+      let evidenceHtml = '<div class="ct-detail ct-evidence">';
+      if (supportingEvidence.length > 0) {
+        evidenceHtml += `<div class="ct-evidence-group"><strong>Heimildir:</strong> ${renderEvidenceLinks(supportingEvidence)}</div>`;
       }
-      if (conEv.length > 0) {
-        evHtml += `<div class="ct-evidence-group ct-evidence-contra"><strong>Andstæðar heimildir:</strong> ${renderEvLinks(conEv)}</div>`;
+      if (contradictingEvidence.length > 0) {
+        evidenceHtml += `<div class="ct-evidence-group ct-evidence-contra"><strong>Andstæðar heimildir:</strong> ${renderEvidenceLinks(contradictingEvidence)}</div>`;
       }
-      evHtml += "</div>";
-      detailsHtml += evHtml;
+      evidenceHtml += "</div>";
+      detailsHtml += evidenceHtml;
     }
 
-    if (claim.sightings && claim.sightings.length > 0) {
+    if (claim.sightings?.length) {
       const sightingItems = claim.sightings
-        .map((s) => {
-          const typeLabel = SOURCE_TYPE_LABELS[s.source_type] || s.source_type || "";
-          const dateStr = s.source_date || "";
-          const title = s.source_title || s.source_url;
+        .map((sighting) => {
+          const typeLabel = SOURCE_TYPE_LABELS[sighting.source_type] || sighting.source_type || "";
+          const dateStr = sighting.source_date || "";
+          const title = sighting.source_title || sighting.source_url;
           const meta = [typeLabel, dateStr].filter(Boolean).join(" · ");
           return `<li class="ct-sighting-item">
-            <a href="${escapeHtml(s.source_url)}" target="_blank" rel="noopener">${escapeHtml(title)}</a>
+            <a href="${escapeHtml(sighting.source_url)}" target="_blank" rel="noopener">${escapeHtml(title)}</a>
             ${meta ? `<span class="ct-sighting-meta">${escapeHtml(meta)}</span>` : ""}
           </li>`;
         })
         .join("");
+
       detailsHtml += `<div class="ct-detail ct-sightings">
         <strong>Umræðan:</strong>
         <ul class="ct-sighting-list">${sightingItems}</ul>
@@ -319,53 +291,42 @@
     `;
   }
 
-  // ── Events ───────────────────────────────────────────────────────
+  function toggleClaimCard(header) {
+    const card = header.closest(".ct-card");
+    if (!card) return;
 
-  let searchTimeout = null;
-
-  function bindEvents() {
-    const searchInput = document.getElementById("ct-search");
-    const categorySelect = document.getElementById("ct-category");
-    const verdictSelect = document.getElementById("ct-verdict");
-    const sortSelect = document.getElementById("ct-sort");
-
-    searchInput.addEventListener("input", (e) => {
-      clearTimeout(searchTimeout);
-      searchTimeout = setTimeout(() => {
-        filters.search = e.target.value.trim();
-        renderResults();
-      }, 200);
-    });
-
-    categorySelect.addEventListener("change", (e) => {
-      filters.category = e.target.value;
-      renderResults();
-    });
-
-    verdictSelect.addEventListener("change", (e) => {
-      filters.verdict = e.target.value;
-      renderResults();
-    });
-
-    sortSelect.addEventListener("change", (e) => {
-      filters.sort = e.target.value;
-      renderResults();
-    });
+    const expanded = !card.classList.contains("ct-expanded");
+    card.classList.toggle("ct-expanded", expanded);
+    header.setAttribute("aria-expanded", expanded);
   }
 
-  // ── Utilities ────────────────────────────────────────────────────
+  controller.bindInput(
+    "#ct-search",
+    (value, _target, _event, api) => {
+      api.setState({ search: value }, "results");
+    },
+    { debounceMs: 200, trim: true }
+  );
 
-  function escapeHtml(str) {
-    if (!str) return "";
-    const div = document.createElement("div");
-    div.textContent = str;
-    return div.innerHTML;
-  }
+  controller.bindChange("#ct-category", (value, _target, _event, api) => {
+    api.setState({ category: value }, "results");
+  });
 
-  // ── Boot ─────────────────────────────────────────────────────────
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
-  } else {
-    init();
-  }
+  controller.bindChange("#ct-verdict", (value, _target, _event, api) => {
+    api.setState({ verdict: value }, "results");
+  });
+
+  controller.bindChange("#ct-sort", (value, _target, _event, api) => {
+    api.setState({ sort: value }, "results");
+  });
+
+  controller.bindClick(".ct-card-header", (target) => {
+    toggleClaimCard(target);
+  });
+
+  controller.bindKeyActivate(".ct-card-header", (target) => {
+    toggleClaimCard(target);
+  });
+
+  controller.start();
 })();

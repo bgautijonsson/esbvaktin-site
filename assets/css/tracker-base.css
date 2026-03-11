@@ -1,0 +1,118 @@
+/* Shared tracker primitives: stats, controls, chips, and empty states. */
+
+.ct-stats,
+.dt-stats,
+.st-stats {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.ct-stat {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.5rem 0.75rem;
+  text-align: center;
+  min-width: 70px;
+}
+
+.ct-stat-num {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.ct-stat-label {
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+}
+
+.ct-stat-loading {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  padding: 0.5rem;
+}
+
+.ct-controls {
+  margin-bottom: 1.25rem;
+}
+
+.ct-search-wrap {
+  margin-bottom: 0.75rem;
+}
+
+.ct-search {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.95rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  color: var(--text);
+  box-sizing: border-box;
+  transition: border-color var(--transition);
+}
+
+.ct-search:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+.ct-filter-row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.ct-select {
+  flex: 1;
+  min-width: 120px;
+  padding: 0.45rem 0.6rem;
+  font-size: 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.ct-loading,
+.ct-empty {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-secondary);
+}
+
+.ct-verdict-pill {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+.verdict-supported { background: var(--green); color: #fff; }
+.verdict-partial { background: var(--yellow); color: #000; }
+.verdict-unsupported { background: var(--orange); color: #fff; }
+.verdict-misleading { background: var(--red); color: #fff; }
+.verdict-unverifiable { background: var(--grey); color: #fff; }
+
+.ct-category-tag {
+  display: inline-block;
+  padding: 0.1rem 0.4rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
