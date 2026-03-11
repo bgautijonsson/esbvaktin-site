@@ -269,62 +269,80 @@
   margin: 0 0 0.75rem;
 }
 
-.od-claim-card {
-  border: 1px solid var(--border);
-  background: var(--surface);
-  border-radius: 8px;
-  padding: 0.75rem 0.9rem;
-  margin-bottom: 0.5rem;
-  transition: border-color 0.15s;
-}
+/* ── Claim cards — expandable, mirrors ct-card from Fullyrðingar ─── */
 
-.od-claim-card:hover {
-  border-color: color-mix(in srgb, var(--border) 50%, var(--accent));
-}
-
-.od-claim-header {
+.od-claims-list {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.35rem 0.5rem;
-  margin-bottom: 0.45rem;
+  flex-direction: column;
+  gap: 0.35rem;
 }
 
-.od-claim-sightings {
-  margin-left: auto;
+.od-claim-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: border-color var(--transition), background var(--transition);
+}
+
+.od-claim-card.ct-card--focused {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.od-claim-card .ct-card-header {
+  padding: 0.7rem 0.9rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.od-claim-card .ct-card-header:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+
+.od-claim-card .ct-card-main {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.od-claim-card .ct-claim-text {
+  margin: 0;
+  font-size: 0.93rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.od-claim-card .ct-card-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.35rem;
+}
+
+.od-claim-card .ct-sighting-count {
   display: inline-block;
-  padding: 0.1rem 0.4rem;
+  padding: 0.1rem 0.35rem;
   background: var(--accent);
   color: #fff;
-  border-radius: 4px;
+  border-radius: var(--radius-sm);
   font-size: 0.7rem;
   font-weight: 600;
   white-space: nowrap;
 }
 
-.od-claim-text {
-  font-size: 0.93rem;
-  line-height: 1.45;
-  font-weight: 500;
-  margin: 0 0 0.5rem;
-}
-
-/* Confidence bar (mirrors ct-confidence) */
-
-.od-claim-confidence {
+.od-claim-card .ct-confidence {
   display: flex;
   align-items: center;
   gap: 0.35rem;
   font-size: 0.75rem;
-  color: var(--text-muted);
-  margin-bottom: 0.45rem;
+  color: var(--text-secondary);
 }
 
-.od-claim-conf-label {
-  white-space: nowrap;
-}
-
-.od-claim-conf-bar {
+.od-claim-card .ct-confidence-bar {
   display: inline-block;
   height: 4px;
   background: var(--accent);
@@ -333,42 +351,103 @@
   max-width: 60px;
 }
 
-.od-claim-conf-value {
-  font-weight: 600;
-  white-space: nowrap;
+/* ── Expand / collapse ─────────────────────────────────────────── */
+
+.od-claim-card .ct-expand-icon {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  transition: transform var(--transition);
 }
 
-.od-claim-footer {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.3rem;
-  font-size: 0.78rem;
+.od-claim-card.ct-expanded .ct-expand-icon {
+  transform: rotate(90deg);
 }
 
-.od-claim-sources-label {
-  color: var(--text-muted);
-  font-weight: 500;
-}
-
-.od-claim-source-pill {
-  display: inline-block;
-  padding: 0.1rem 0.45rem;
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  color: var(--text-muted);
-  text-decoration: none;
-  font-size: 0.75rem;
-  transition: border-color 0.15s, color 0.15s;
-  max-width: 28ch;
+.od-claim-card .ct-card-details {
+  max-height: 0;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  transition: max-height 0.2s ease-out;
 }
 
-.od-claim-source-pill:hover {
-  border-color: var(--accent);
+.od-claim-card.ct-expanded .ct-card-details {
+  max-height: 1200px;
+  transition: max-height 0.3s ease-in;
+}
+
+.od-claim-card .ct-detail {
+  padding: 0 0.9rem 0.65rem;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.od-claim-card .ct-detail:first-child {
+  padding-top: 0.35rem;
+  border-top: 1px solid var(--border);
+}
+
+.od-claim-card .ct-detail strong {
+  color: var(--text);
+}
+
+.od-claim-card .ct-english {
+  font-style: italic;
+  font-size: 0.85rem;
+}
+
+/* ── Sightings list inside expanded card ──────────────────────── */
+
+.od-claim-card .ct-sighting-list {
+  list-style: none;
+  margin: 0.35rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.od-claim-card .ct-sighting-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 0.3rem 0.5rem;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.od-claim-card .ct-sighting-item a {
+  font-size: 0.85rem;
   color: var(--accent);
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.od-claim-card .ct-sighting-item a:hover {
+  text-decoration: underline;
+}
+
+.od-claim-card .ct-sighting-meta {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+}
+
+/* ── Deep link to Fullyrðingar ────────────────────────────────── */
+
+.od-claim-deeplink {
+  padding-top: 0.35rem;
+  border-top: 1px solid var(--border);
+}
+
+.od-claim-deeplink a {
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.od-claim-deeplink a:hover {
+  text-decoration: underline;
 }
 
 /* ══════════════════════════════════════════════════════════════════

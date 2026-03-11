@@ -35,8 +35,24 @@ function buildLookup(dir) {
   return map;
 }
 
-/* ── Enrich an overview with cross-referenced entity/report data ── */
-function enrichOverview(overview, entityMap, reportMap) {
+/* ── Build claim lookup from claims.json, keyed by canonical_text_is ── */
+function buildClaimLookup(dataDir) {
+  const map = new Map();
+  const claimsPath = path.join(dataDir, "assets", "data", "claims.json");
+  if (!fs.existsSync(claimsPath)) return map;
+  try {
+    const claims = JSON.parse(fs.readFileSync(claimsPath, "utf-8"));
+    for (const c of claims) {
+      if (c.canonical_text_is) map.set(c.canonical_text_is, c);
+    }
+  } catch (_) {
+    /* skip if malformed */
+  }
+  return map;
+}
+
+/* ── Enrich an overview with cross-referenced entity/report/claim data ── */
+function enrichOverview(overview, entityMap, reportMap, claimMap) {
   // Enrich active_entities with detail data
   if (overview.active_entities) {
     overview.active_entities = overview.active_entities.map((ent) => {
@@ -82,6 +98,28 @@ function enrichOverview(overview, entityMap, reportMap) {
     });
   }
 
+  // Enrich top_claims with full claim data (explanation, sightings, etc.)
+  if (overview.top_claims) {
+    overview.top_claims = overview.top_claims.map((claim) => {
+      const full = claimMap.get(claim.canonical_text_is);
+      if (!full) return claim;
+      return {
+        ...claim,
+        claim_slug: full.claim_slug,
+        explanation_is: full.explanation_is,
+        missing_context_is: full.missing_context_is,
+        confidence: full.confidence,
+        canonical_text_en: full.canonical_text_en,
+        sightings: (full.sightings || []).map((s) => ({
+          source_title: s.source_title,
+          source_url: s.source_url,
+          source_type: s.source_type,
+          source_date: s.source_date,
+        })),
+      };
+    });
+  }
+
   // Enrich notable_quotes speaker info from entity data
   if (overview.notable_quotes) {
     overview.notable_quotes = overview.notable_quotes.map((q) => {
@@ -117,6 +155,7 @@ module.exports = function () {
   // Build lookup maps for enrichment
   const entityMap = buildLookup(path.join(__dirname, "entity-details"));
   const reportMap = buildLookup(path.join(__dirname, "reports"));
+  const claimMap = buildClaimLookup(path.resolve(__dirname, ".."));
 
   const files = fs
     .readdirSync(detailsDir)
@@ -125,6 +164,6 @@ module.exports = function () {
 
   return files.map((f) => {
     const raw = fs.readFileSync(path.join(detailsDir, f), "utf-8");
-    return enrichOverview(JSON.parse(raw), entityMap, reportMap);
+    return enrichOverview(JSON.parse(raw), entityMap, reportMap, claimMap);
   });
 };

@@ -136,6 +136,15 @@ module.exports = function (eleventyConfig) {
     );
   });
 
+  // Convert plain-text evidence IDs (e.g. HOUS-DATA-006) to hoverable links
+  eleventyConfig.addFilter("evidenceLinksFromText", (text) => {
+    if (!text) return text;
+    return text.replace(
+      /\b([A-Z]+-[A-Z]+-\d+)\b/g,
+      (_, id) => `<a href="/heimildir/${id.toLowerCase()}/" class="evidence-link" data-evidence-id="${id}">${id}</a>`
+    );
+  });
+
   // ── Markdown rendering filter ─────────────────────────────────────
   const md = markdownIt({ html: true, linkify: true });
   eleventyConfig.addFilter("markdown", (str) => {

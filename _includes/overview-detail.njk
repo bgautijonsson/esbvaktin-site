@@ -2,6 +2,7 @@
 layout: base.njk
 extra_css: /assets/css/overview-detail.css
 return_link_support: true
+evidence_preview: true
 ---
 
 {% set kn = overview.key_numbers %}
@@ -176,42 +177,90 @@ return_link_support: true
   {% endif %}
 
   {# ══════════════════════════════════════════════════════════════════
-     Top claims — rich cards with verdict, confidence, sighting badge
+     Top claims — expandable cards matching Fullyrðingar tracker
      ══════════════════════════════════════════════════════════════════ #}
   {% if overview.top_claims | length %}
   <section class="od-top-claims">
     <h2>Helstu fullyrðingar</h2>
+    <div class="od-claims-list">
     {% for item in overview.top_claims %}
-    <div class="od-claim-card">
-      <div class="od-claim-header">
-        <span class="ct-verdict-pill verdict-{{ item.verdict | replace("partially_supported", "partial") }}">
-          {{ item.verdict | verdictLabel }}
-        </span>
-        {% if item.category %}
-          <a href="/malefni/{{ item.category }}/" class="ct-category-tag">{{ item.category_is }}</a>
-        {% endif %}
-        {% if item.sighting_count and item.sighting_count > 1 %}
-          <span class="od-claim-sightings">{{ item.sighting_count }}×</span>
-        {% endif %}
+      {% set confidencePct = (item.confidence * 100) | round if item.confidence is number else 0 %}
+      <div class="od-claim-card ct-card" data-slug="{{ item.claim_slug }}">
+        {# ── Clickable header (expand/collapse) ── #}
+        <div class="ct-card-header" role="button" tabindex="0" aria-expanded="false">
+          <div class="ct-card-main">
+            <span class="ct-verdict-pill verdict-{{ item.verdict | replace('partially_supported', 'partial') }}">
+              {{ item.verdict | verdictLabel }}
+            </span>
+            <span class="ct-category-tag">{{ item.category_is }}</span>
+            {% if item.sighting_count and item.sighting_count > 1 %}
+              <span class="ct-sighting-count" title="Fjöldi tilvitana">{{ item.sighting_count }}×</span>
+            {% endif %}
+          </div>
+          <p class="ct-claim-text">{{ item.canonical_text_is }}</p>
+          <div class="ct-card-meta">
+            <span class="ct-confidence" title="Vissustig">
+              <span class="ct-confidence-bar" style="width: {{ confidencePct }}%"></span>
+              {{ confidencePct }}%
+            </span>
+            <span class="ct-expand-icon">▸</span>
+          </div>
+        </div>
+
+        {# ── Expandable details ── #}
+        <div class="ct-card-details">
+          {% if item.explanation_is %}
+            <div class="ct-detail"><strong>Útskýring:</strong> {{ item.explanation_is | evidenceLinksFromText | safe }}</div>
+          {% endif %}
+          {% if item.missing_context_is %}
+            <div class="ct-detail"><strong>Samhengi sem vantar:</strong> {{ item.missing_context_is | evidenceLinksFromText | safe }}</div>
+          {% endif %}
+          {% if item.canonical_text_en %}
+            <div class="ct-detail ct-english"><strong>English:</strong> {{ item.canonical_text_en }}</div>
+          {% endif %}
+
+          {# Sightings (source articles) #}
+          {% if item.sightings | length %}
+            <div class="ct-detail ct-sightings">
+              <strong>Umræðan:</strong>
+              <ul class="ct-sighting-list">
+                {% for s in item.sightings %}
+                  <li class="ct-sighting-item">
+                    {# Try to link to internal report by matching title to sources #}
+                    {% set matchedSlug = "" %}
+                    {% for src in item.sources %}
+                      {% if src.title == s.source_title %}{% set matchedSlug = src.slug %}{% endif %}
+                    {% endfor %}
+                    {% if matchedSlug %}
+                      <a href="/umraedan/{{ matchedSlug }}/">{{ s.source_title }}</a>
+                    {% elif s.source_url %}
+                      <a href="{{ s.source_url }}" target="_blank" rel="noopener">{{ s.source_title }}</a>
+                    {% else %}
+                      <span>{{ s.source_title }}</span>
+                    {% endif %}
+                    {% set typeLabels = { "news": "Frétt", "opinion": "Skoðun", "althingi": "Alþingi", "interview": "Viðtal", "analysis": "Greining", "panel_show": "Þáttur", "other": "Annað" } %}
+                    {% set meta = [] %}
+                    {% if s.source_type and typeLabels[s.source_type] %}{% set meta = meta.concat([typeLabels[s.source_type]]) %}{% endif %}
+                    {% if s.source_date %}{% set meta = meta.concat([s.source_date | isDate]) %}{% endif %}
+                    {% if meta | length %}
+                      <span class="ct-sighting-meta">{{ meta | join(" · ") }}</span>
+                    {% endif %}
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+
+          {# Deep link to Fullyrðingar page #}
+          {% if item.claim_slug %}
+            <div class="ct-detail od-claim-deeplink">
+              <a href="/fullyrdingar/?claim={{ item.claim_slug }}">Sjá fulla greiningu á Fullyrðingum →</a>
+            </div>
+          {% endif %}
+        </div>
       </div>
-      <p class="od-claim-text">{{ item.canonical_text_is }}</p>
-      {% if item.confidence is number %}
-      <div class="od-claim-confidence">
-        <span class="od-claim-conf-label">Áreiðanleiki</span>
-        <span class="od-claim-conf-bar" style="width: {{ (item.confidence * 60) | round }}px"></span>
-        <span class="od-claim-conf-value">{{ (item.confidence * 100) | round }}%</span>
-      </div>
-      {% endif %}
-      {% if item.sources | length %}
-      <div class="od-claim-footer">
-        <span class="od-claim-sources-label">Heimildir:</span>
-        {% for src in item.sources %}
-          <a href="/umraedan/{{ src.slug }}/" class="od-claim-source-pill">{{ src.title }}</a>
-        {% endfor %}
-      </div>
-      {% endif %}
-    </div>
     {% endfor %}
+    </div>
   </section>
   {% endif %}
 
@@ -434,3 +483,23 @@ return_link_support: true
   </section>
   {% endif %}
 </article>
+
+{# ── Inline JS for claim card expand/collapse ── #}
+<script>
+(function() {
+  var cards = document.querySelectorAll('.od-top-claims .ct-card');
+  cards.forEach(function(card) {
+    var header = card.querySelector('.ct-card-header');
+    if (!header) return;
+    function toggle() {
+      var expanded = !card.classList.contains('ct-expanded');
+      card.classList.toggle('ct-expanded', expanded);
+      header.setAttribute('aria-expanded', expanded);
+    }
+    header.addEventListener('click', toggle);
+    header.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+    });
+  });
+})();
+</script>
