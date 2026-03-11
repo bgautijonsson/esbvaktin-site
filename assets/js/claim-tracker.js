@@ -18,8 +18,11 @@
   const buildReturnUrl = utils.buildReturnUrl || (() => "");
   const findReportForSource = utils.findReportForSource || (() => null);
   const restoreReturnTarget = utils.restoreReturnTarget || (() => false);
-  const updateUrlQuery = utils.updateUrlQuery || (() => "");
   const withReturnUrl = utils.withReturnUrl || ((url) => url);
+  const createSortComparator = utils.createSortComparator;
+  const createCommitState = utils.createCommitState;
+  const createErrorHandler = utils.createErrorHandler;
+  const renderActiveFilterChips = utils.renderActiveFilterChips;
   const DATA_BASE = utils.getDataBase
     ? utils.getDataBase(document.currentScript, "/assets/data")
     : (document.currentScript?.dataset.base || "/assets/data");
@@ -73,17 +76,13 @@
     renderStats,
     renderResults,
     initialRender: "stats+results",
-    onError() {
-      renderShell();
-      const results = document.getElementById("ct-results");
-      const stats = document.getElementById("ct-stats");
-      if (stats) {
-        stats.innerHTML = renderer.renderMessage("Gat ekki hlaðið gögnum.", "ct-stat-loading");
-      }
-      if (results) {
-        results.innerHTML = renderer.renderMessage("Gat ekki hlaðið fullyrðingum.", "ct-empty");
-      }
-    },
+    onError: createErrorHandler({
+      renderShell,
+      renderer,
+      statsId: "ct-stats",
+      resultsId: "ct-results",
+      resultsMessage: "Gat ekki hlaðið fullyrðingum.",
+    }),
   });
 
   function getClaims() {
@@ -124,14 +123,7 @@
       results = results.filter((claim) => claim.verdict === filters.verdict);
     }
 
-    const sort = filters.sort || "sighting_count";
-    const dir = filters.sortDir === "ASC" ? 1 : -1;
-    results.sort((a, b) => {
-      const va = a[sort] ?? "";
-      const vb = b[sort] ?? "";
-      if (typeof va === "number") return (va - vb) * dir;
-      return String(va).localeCompare(String(vb), "is") * dir;
-    });
+    results.sort(createSortComparator(filters.sort || "sighting_count", filters.sortDir || "DESC"));
 
     return results;
   }
@@ -441,13 +433,7 @@
   }
 
   function renderActiveFilters() {
-    const el = document.getElementById("ct-active-filters");
-    if (!el || typeof renderer.renderFilterChips !== "function") return;
-
-    el.innerHTML = renderer.renderFilterChips({
-      items: getActiveFilterChips(),
-      clearAllLabel: "Hreinsa allt",
-    });
+    renderActiveFilterChips("ct-active-filters", renderer, getActiveFilterChips);
   }
 
   function clearFilter(key, api) {
@@ -476,22 +462,15 @@
     );
   }
 
-  function syncUrl(state) {
-    updateUrlQuery({
+  const commitState = createCommitState(function syncUrl(state) {
+    (utils.updateUrlQuery || function () {})(({
       q: state.search,
       claim: state.claim,
       category: state.category,
       verdict: state.verdict,
       sort: state.sort === "last_verified" ? "" : state.sort,
-    });
-  }
-
-  function commitState(patch, renderScope, api) {
-    const nextState = Object.assign({}, api.getState(), patch || {});
-    syncUrl(nextState);
-    api.setState(patch, renderScope);
-    return nextState;
-  }
+    }));
+  });
 
   controller.bindInput(
     "#ct-search",

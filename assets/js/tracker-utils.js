@@ -439,9 +439,109 @@
     return true;
   }
 
+  /* ── Shared tracker helpers ─────────────────────────────────────── */
+
+  /**
+   * Generic field-based sort comparator for Icelandic locale.
+   * Numbers sort numerically; everything else sorts via localeCompare.
+   *
+   * @param {string} sortKey  - Property to sort by
+   * @param {string} direction - "ASC" or "DESC"
+   * @returns {function(a, b): number}
+   */
+  function createSortComparator(sortKey, direction) {
+    var dir = direction === "ASC" ? 1 : -1;
+
+    return function (a, b) {
+      var va = a[sortKey] != null ? a[sortKey] : "";
+      var vb = b[sortKey] != null ? b[sortKey] : "";
+
+      if (typeof va === "number" && typeof vb === "number") {
+        return (va - vb) * dir;
+      }
+
+      return String(va).localeCompare(String(vb), "is") * dir;
+    };
+  }
+
+  /**
+   * Factory for the standard onError handler used by most trackers.
+   *
+   * @param {object} options
+   * @param {function}  options.renderShell    - Tracker's shell render function
+   * @param {object}    options.renderer       - Shared renderer module
+   * @param {string}    options.statsId        - DOM id of the stats element
+   * @param {string}    options.resultsId      - DOM id of the results element
+   * @param {string}   [options.statsMessage]  - Message shown in stats on error
+   * @param {string}   [options.resultsMessage]- Message shown in results on error
+   * @param {string}   [options.statsClass]    - CSS class for stats message
+   * @param {string}   [options.resultsClass]  - CSS class for results message
+   * @returns {function}
+   */
+  function createErrorHandler(options) {
+    return function () {
+      if (typeof options.renderShell === "function") options.renderShell();
+
+      var r = options.renderer;
+      if (!r) return;
+
+      var stats = document.getElementById(options.statsId);
+      var results = document.getElementById(options.resultsId);
+      if (stats) {
+        stats.innerHTML = r.renderMessage(
+          options.statsMessage || "Gat ekki hlaðið gögnum.",
+          options.statsClass || "ct-stat-loading"
+        );
+      }
+      if (results) {
+        results.innerHTML = r.renderMessage(
+          options.resultsMessage || "Engin gögn fundust.",
+          options.resultsClass || "ct-empty"
+        );
+      }
+    };
+  }
+
+  /**
+   * Factory for the commitState helper used by all trackers.
+   * Syncs URL, then delegates to controller.setState.
+   *
+   * @param {function} syncUrlFn - Tracker-specific URL sync function
+   * @returns {function(patch, renderScope, api): object}
+   */
+  function createCommitState(syncUrlFn) {
+    return function (patch, renderScope, api) {
+      var nextState = Object.assign({}, api.getState(), patch || {});
+      syncUrlFn(nextState);
+      api.setState(patch, renderScope);
+      return nextState;
+    };
+  }
+
+  /**
+   * Render active filter chips into a given element.
+   * Shared boilerplate used by all trackers.
+   *
+   * @param {string}   elementId  - DOM id of the target element
+   * @param {object}   renderer   - Shared renderer module
+   * @param {function} getChipsFn - Returns array of {key, text} chip objects
+   */
+  function renderActiveFilterChips(elementId, renderer, getChipsFn) {
+    var el = document.getElementById(elementId);
+    if (!el || typeof renderer.renderFilterChips !== "function") return;
+
+    el.innerHTML = renderer.renderFilterChips({
+      items: getChipsFn(),
+      clearAllLabel: "Hreinsa allt",
+    });
+  }
+
   return {
     bindReturnLinks: bindReturnLinks,
     buildReturnUrl: buildReturnUrl,
+    createCommitState: createCommitState,
+    createErrorHandler: createErrorHandler,
+    createSortComparator: createSortComparator,
     debounce: debounce,
     escapeHtml: escapeHtml,
     formatIsDate: formatIsDate,
@@ -458,6 +558,7 @@
     normalizeReportSummary: normalizeReportSummary,
     normalizeExternalUrl: normalizeExternalUrl,
     normalizeLookupText: normalizeLookupText,
+    renderActiveFilterChips: renderActiveFilterChips,
     restoreReturnTarget: restoreReturnTarget,
     sanitizeInternalUrl: sanitizeInternalUrl,
     updateUrlQuery: updateUrlQuery,

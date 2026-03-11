@@ -16,7 +16,6 @@
   const buildReturnUrl = utils.buildReturnUrl || (() => "");
   const formatIsDate = utils.formatIsDate || ((value) => String(value ?? ""));
   const restoreReturnTarget = utils.restoreReturnTarget || (() => false);
-  const updateUrlQuery = utils.updateUrlQuery || (() => "");
   const withReturnUrl = utils.withReturnUrl || ((url) => url);
   const DATA_BASE = utils.getDataBase
     ? utils.getDataBase(document.currentScript, "/assets/data")
@@ -380,7 +379,7 @@
   }
 
   function syncUrl(state) {
-    updateUrlQuery({
+    (utils.updateUrlQuery || function () {})({
       q: state.search,
       topic: state.topic,
       source_type: state.sourceType,

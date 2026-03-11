@@ -18,8 +18,11 @@
   const formatIsDate = utils.formatIsDate || ((value) => String(value ?? ""));
   const normalizeReportSummary = utils.normalizeReportSummary || ((value) => String(value ?? ""));
   const restoreReturnTarget = utils.restoreReturnTarget || (() => false);
-  const updateUrlQuery = utils.updateUrlQuery || (() => "");
   const withReturnUrl = utils.withReturnUrl || ((url) => url);
+  const createSortComparator = utils.createSortComparator;
+  const createCommitState = utils.createCommitState;
+  const createErrorHandler = utils.createErrorHandler;
+  const renderActiveFilterChips = utils.renderActiveFilterChips;
   const DATA_BASE = utils.getDataBase
     ? utils.getDataBase(document.currentScript, "/assets/data")
     : (document.currentScript?.dataset.base || "/assets/data");
@@ -89,17 +92,13 @@
     renderStats,
     renderResults,
     initialRender: "all",
-    onError() {
-      renderShell();
-      const stats = document.getElementById("dt-stats");
-      const results = document.getElementById("dt-results");
-      if (stats) {
-        stats.innerHTML = renderer.renderMessage("Gat ekki hlaðið gögnum.", "ct-stat-loading");
-      }
-      if (results) {
-        results.innerHTML = renderer.renderMessage("Engar greiningar fundust.", "ct-empty");
-      }
-    },
+    onError: createErrorHandler({
+      renderShell,
+      renderer,
+      statsId: "dt-stats",
+      resultsId: "dt-results",
+      resultsMessage: "Engar greiningar fundust.",
+    }),
   });
 
   function getReports() {
@@ -137,14 +136,7 @@
       );
     }
 
-    const sort = filters.sort || "article_date";
-    const dir = filters.sortDir === "ASC" ? 1 : -1;
-    results.sort((a, b) => {
-      const va = a[sort] ?? "";
-      const vb = b[sort] ?? "";
-      if (typeof va === "number") return (va - vb) * dir;
-      return String(va).localeCompare(String(vb), "is") * dir;
-    });
+    results.sort(createSortComparator(filters.sort || "article_date", filters.sortDir || "DESC"));
 
     return results;
   }
@@ -426,13 +418,7 @@
   }
 
   function renderActiveFilters() {
-    const el = document.getElementById("dt-active-filters");
-    if (!el || typeof renderer.renderFilterChips !== "function") return;
-
-    el.innerHTML = renderer.renderFilterChips({
-      items: getActiveFilterChips(),
-      clearAllLabel: "Hreinsa allt",
-    });
+    renderActiveFilterChips("dt-active-filters", renderer, getActiveFilterChips);
   }
 
   function clearFilter(key, api) {
@@ -461,22 +447,15 @@
     );
   }
 
-  function syncUrl(state) {
-    updateUrlQuery({
+  const commitState = createCommitState(function syncUrl(state) {
+    (utils.updateUrlQuery || function () {})(({
       q: state.search,
       source: state.source,
       category: state.category,
       group: state.groupBy === "date" ? "" : state.groupBy,
       sort: state.sort === "article_date" ? "" : state.sort,
-    });
-  }
-
-  function commitState(patch, renderScope, api) {
-    const nextState = Object.assign({}, api.getState(), patch || {});
-    syncUrl(nextState);
-    api.setState(patch, renderScope);
-    return nextState;
-  }
+    }));
+  });
 
   controller.bindInput(
     "#dt-search",

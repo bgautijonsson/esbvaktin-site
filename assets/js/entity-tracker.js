@@ -16,8 +16,11 @@
   const escapeHtml = utils.escapeHtml || ((value) => String(value ?? ""));
   const buildReturnUrl = utils.buildReturnUrl || (() => "");
   const restoreReturnTarget = utils.restoreReturnTarget || (() => false);
-  const updateUrlQuery = utils.updateUrlQuery || (() => "");
   const withReturnUrl = utils.withReturnUrl || ((url) => url);
+  const createSortComparator = utils.createSortComparator;
+  const createCommitState = utils.createCommitState;
+  const createErrorHandler = utils.createErrorHandler;
+  const renderActiveFilterChips = utils.renderActiveFilterChips;
   const DATA_BASE = utils.getDataBase
     ? utils.getDataBase(document.currentScript, "/assets/data")
     : (document.currentScript?.dataset.base || "/assets/data");
@@ -84,17 +87,13 @@
     renderStats,
     renderResults,
     initialRender: "stats+results",
-    onError() {
-      renderShell();
-      const stats = document.getElementById("et-stats");
-      const results = document.getElementById("et-results");
-      if (stats) {
-        stats.innerHTML = renderer.renderMessage("Gat ekki hlaðið gögnum.", "et-stat-loading");
-      }
-      if (results) {
-        results.innerHTML = renderer.renderMessage("Engir aðilar fundust.", "et-empty");
-      }
-    },
+    onError: createErrorHandler({
+      renderShell,
+      renderer,
+      statsId: "et-stats",
+      resultsId: "et-results",
+      resultsMessage: "Engir aðilar fundust.",
+    }),
   });
 
   function getData() {
@@ -156,13 +155,7 @@
       return results;
     }
 
-    const dir = filters.sortDir === "DESC" ? -1 : 1;
-    results.sort((a, b) => {
-      const va = a[filters.sort] ?? "";
-      const vb = b[filters.sort] ?? "";
-      if (typeof va === "number" && typeof vb === "number") return (va - vb) * dir;
-      return String(va).localeCompare(String(vb), "is") * dir;
-    });
+    results.sort(createSortComparator(filters.sort, filters.sortDir || "ASC"));
 
     return results;
   }
@@ -439,13 +432,7 @@
   }
 
   function renderActiveFilters() {
-    const el = document.getElementById("et-active-filters");
-    if (!el || typeof renderer.renderFilterChips !== "function") return;
-
-    el.innerHTML = renderer.renderFilterChips({
-      items: getActiveFilterChips(),
-      clearAllLabel: "Hreinsa allt",
-    });
+    renderActiveFilterChips("et-active-filters", renderer, getActiveFilterChips);
   }
 
   function clearFilter(key, api) {
@@ -476,21 +463,14 @@
     );
   }
 
-  function syncUrl(state) {
-    updateUrlQuery({
+  const commitState = createCommitState(function syncUrl(state) {
+    (utils.updateUrlQuery || function () {})({
       q: state.search,
       type: state.type,
       stance: state.stance,
       sort: state.sort === "importance" ? "" : state.sort,
     });
-  }
-
-  function commitState(patch, renderScope, api) {
-    const nextState = Object.assign({}, api.getState(), patch || {});
-    syncUrl(nextState);
-    api.setState(patch, renderScope);
-    return nextState;
-  }
+  });
 
   controller.bindInput(
     "#et-search",

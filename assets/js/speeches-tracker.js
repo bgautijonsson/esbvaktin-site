@@ -18,8 +18,11 @@
   const formatIsDate = utils.formatIsDate || ((value) => String(value ?? ""));
   const formatNumber = utils.formatNumber || ((value) => String(value ?? "0"));
   const restoreReturnTarget = utils.restoreReturnTarget || (() => false);
-  const updateUrlQuery = utils.updateUrlQuery || (() => "");
   const withReturnUrl = utils.withReturnUrl || ((url) => url);
+  const createSortComparator = utils.createSortComparator;
+  const createCommitState = utils.createCommitState;
+  const createErrorHandler = utils.createErrorHandler;
+  const renderActiveFilterChips = utils.renderActiveFilterChips;
   const DATA_BASE = utils.getDataBase
     ? utils.getDataBase(document.currentScript, "/assets/data")
     : (document.currentScript?.dataset.base || "/assets/data");
@@ -73,17 +76,13 @@
     renderStats,
     renderResults,
     initialRender: "all",
-    onError() {
-      renderShell();
-      const stats = document.getElementById("st-stats");
-      const results = document.getElementById("st-results");
-      if (stats) {
-        stats.innerHTML = renderer.renderMessage("Gat ekki hlaðið gögnum.", "ct-stat-loading");
-      }
-      if (results) {
-        results.innerHTML = renderer.renderMessage("Engar umræður fundust.", "ct-empty");
-      }
-    },
+    onError: createErrorHandler({
+      renderShell,
+      renderer,
+      statsId: "st-stats",
+      resultsId: "st-results",
+      resultsMessage: "Engar umræður fundust.",
+    }),
   });
 
   function getDebates() {
@@ -175,14 +174,7 @@
       results = results.filter((debate) => debate.session === session);
     }
 
-    const sort = filters.sort || "last_date";
-    const dir = filters.sortDir === "ASC" ? 1 : -1;
-    results.sort((a, b) => {
-      const va = a[sort] ?? "";
-      const vb = b[sort] ?? "";
-      if (typeof va === "number") return (va - vb) * dir;
-      return String(va).localeCompare(String(vb), "is") * dir;
-    });
+    results.sort(createSortComparator(filters.sort || "last_date", filters.sortDir || "DESC"));
 
     return results;
   }
@@ -505,18 +497,12 @@
   }
 
   function renderActiveFilters() {
-    const el = document.getElementById("st-active-filters");
-    if (!el || typeof renderer.renderFilterChips !== "function") return;
-
-    el.innerHTML = renderer.renderFilterChips({
-      items: getActiveFilterChips(),
-      clearAllLabel: "Hreinsa allt",
-    });
+    renderActiveFilterChips("st-active-filters", renderer, getActiveFilterChips);
   }
 
-  function syncUrl(state) {
+  const commitState = createCommitState(function syncUrl(state) {
     const defaultPeriod = getDefaultPeriod(state);
-    updateUrlQuery({
+    (utils.updateUrlQuery || function () {})({
       q: state.search,
       speaker: state.speaker,
       party: state.party,
@@ -525,14 +511,7 @@
       group: state.groupBy,
       sort: state.sort === "last_date" ? "" : state.sort,
     });
-  }
-
-  function commitState(patch, renderScope, api) {
-    const nextState = Object.assign({}, api.getState(), patch || {});
-    syncUrl(nextState);
-    api.setState(patch, renderScope);
-    return nextState;
-  }
+  });
 
   function clearFilter(key, api) {
     const filters = getFilters();
