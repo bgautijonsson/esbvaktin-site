@@ -76,7 +76,7 @@
   {% set needs_tracker_utils = extra_js or return_link_support %}
   <script src="/assets/js/theme-toggle.js" defer></script>
   <script src="/assets/js/mobile-nav.js" defer></script>
-  <script src="/assets/js/evidence-preview.js" defer></script>
+  {% if evidence_preview %}<script src="/assets/js/evidence-preview.js" defer></script>{% endif %}
   {% if extra_js %}<script src="/assets/js/site-taxonomy.js" defer></script>{% endif %}
   {% if needs_tracker_utils %}<script src="/assets/js/tracker-utils.js" defer></script>{% endif %}
   {% if extra_js %}<script src="/assets/js/tracker-renderer.js" defer></script>{% endif %}

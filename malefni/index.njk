@@ -18,19 +18,23 @@ wide_layout: true
       <h2>Algengast er að byrja á aðildarferlinu, fullveldi eða sjávarútvegi</h2>
     </div>
     <div class="issue-topic-grid issue-chooser-list">
-      {% for issue in issues %}
-        <a href="/malefni/{{ issue.slug }}/" class="issue-card issue-card--chooser issue-topic-card">
-          <div class="issue-card-chooser-copy">
-          <span class="content-card-eyebrow">{{ issue.stats.claims | localeString }} fullyrðingar</span>
-          <h2>{{ issue.title }}</h2>
-          <p class="issue-card-question">{{ issue.question }}</p>
-          </div>
-          <div class="issue-topic-meta">
-            <span class="issue-card-chooser-meta">{{ issue.stats.reports | localeString }} greiningar</span>
-            <span class="issue-card-chooser-meta">{{ issue.stats.evidence | localeString }} heimildir</span>
-          </div>
-        </a>
-      {% endfor %}
+      {% if issues.length %}
+        {% for issue in issues %}
+          <a href="/malefni/{{ issue.slug }}/" class="issue-card issue-card--chooser issue-topic-card">
+            <div class="issue-card-chooser-copy">
+            <span class="content-card-eyebrow">{{ issue.stats.claims | localeString }} fullyrðingar</span>
+            <h2>{{ issue.title }}</h2>
+            <p class="issue-card-question">{{ issue.question }}</p>
+            </div>
+            <div class="issue-topic-meta">
+              <span class="issue-card-chooser-meta">{{ issue.stats.reports | localeString }} greiningar</span>
+              <span class="issue-card-chooser-meta">{{ issue.stats.evidence | localeString }} heimildir</span>
+            </div>
+          </a>
+        {% endfor %}
+      {% else %}
+        <p class="ct-empty">Engin málefni fundust.</p>
+      {% endif %}
     </div>
   </section>
 
