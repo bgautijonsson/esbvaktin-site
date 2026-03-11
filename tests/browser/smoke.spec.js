@@ -3,8 +3,8 @@ const { gotoAndWait, openMobileMenu } = require("./helpers");
 
 const pageChecks = [
   { path: "/", selector: ".home-hero", title: "ESBvaktin" },
-  { path: "/vikuyfirlit/", selector: ".page-intro", title: "Vikuyfirlit" },
-  { path: "/malefni/", selector: ".page-intro", title: "Málefni" },
+  { path: "/vikuyfirlit/", selector: ".ov-card", title: "Vikuyfirlit" },
+  { path: "/malefni/", selector: ".tp-card", title: "Málefni" },
   { path: "/fullyrdingar/", selector: "#ct-results .ct-card", title: "Fullyrðingavakt" },
   { path: "/umraedan/", selector: "#dt-results .dt-card", title: "Umræðan" },
   { path: "/heimildir/", selector: ".ev-card", title: "Heimildir" },
@@ -80,6 +80,16 @@ test("listing pages can reach representative detail pages", async ({ page }) => 
   await page.locator("#st-results .st-card-link").first().click();
   await expect(page.locator(".dd-back")).toBeVisible();
   await expect(page).toHaveURL(/\/thingraedur\/.+\/\?return=/);
+
+  await gotoAndWait(page, "/malefni/", ".tp-card-link");
+  await page.locator(".tp-card-link").first().click();
+  await expect(page.locator(".td-back")).toBeVisible();
+  await expect(page).toHaveURL(/\/malefni\/.+\/\?return=/);
+
+  await gotoAndWait(page, "/vikuyfirlit/", ".ov-card-link");
+  await page.locator(".ov-card-link").first().click();
+  await expect(page.locator(".od-back")).toBeVisible();
+  await expect(page).toHaveURL(/\/vikuyfirlit\/.+\/\?return=/);
 });
 
 test("claim tracker article links prefer internal reports and preserve the original source on the report page", async ({ page }) => {
@@ -131,8 +141,8 @@ test("homepage keeps the front page focused on datasets and current activity", a
 
   await gotoAndWait(page, "/", ".home-sidebar");
   await expect(page.locator(".home-signal-card")).toHaveCount(5);
-  await expect(page.locator(".home-sidebar-section").first()).toContainText("Oftast nefnd núna");
-  await expect(page.locator(".home-sidebar-section").nth(1)).toContainText("Nýjar unnar greiningar");
+  await expect(page.locator(".home-sidebar-section").first()).toContainText("Oftast nefnd");
+  await expect(page.locator(".home-sidebar-section").nth(1)).toContainText("Nýjustu greiningar");
 });
 
 test("evidence links show a short preview on hover", async ({ page }) => {

@@ -1,0 +1,12 @@
+---
+pagination:
+  data: topic-details
+  size: 1
+  alias: topic
+permalink: "/malefni/{{ topic.slug }}/"
+layout: topic-detail.njk
+tags: topic-details
+eleventyComputed:
+  title: "{{ topic.label_is }}"
+  description: "{{ topic.description_is }}"
+---

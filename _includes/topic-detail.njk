@@ -1,0 +1,205 @@
+---
+layout: base.njk
+extra_css: /assets/css/topic-detail.css
+return_link_support: true
+---
+
+{# ── Verdict totals ── #}
+{% set verdictOrder = ["supported", "partially_supported", "unverifiable", "unsupported", "misleading"] %}
+{% set verdictTotal = 0 %}
+{% for c in topic.claims %}
+  {% set verdictTotal = verdictTotal + 1 %}
+{% endfor %}
+
+
+<article class="td-topic">
+  {# ── Back link ── #}
+  <a href="/malefni/" class="td-back" data-return-link data-return-fallback="/malefni/" data-return-label="← Til baka í fyrri niðurstöður">&larr; Til baka á Málefni</a>
+
+  {# ── Header ── #}
+  <header class="td-header">
+    <h1 class="td-title">{{ topic.label_is }}</h1>
+    {% if topic.description_is %}
+      <p class="td-description">{{ topic.description_is }}</p>
+    {% endif %}
+  </header>
+
+  {# ── Stats row ── #}
+  <div class="td-stats">
+    <div class="td-stat-block">
+      <span class="td-stat-heading">Fullyrðingar</span>
+      <span class="td-stat-num">{{ topic.claims | length }}</span>
+    </div>
+    <div class="td-stat-block">
+      <span class="td-stat-heading">Heimildir</span>
+      <span class="td-stat-num">{{ topic.evidence | length }}</span>
+    </div>
+    {% if topic.diversity_score %}
+    <div class="td-stat-block">
+      <span class="td-stat-heading">Fjölbreytni</span>
+      <span class="td-stat-num">{{ (topic.diversity_score * 100) | round }}%</span>
+    </div>
+    {% endif %}
+  </div>
+
+  {# ── Verdict breakdown bar ── #}
+  {% if verdictTotal > 0 %}
+  <section class="td-verdicts">
+    <h2>Niðurstöður</h2>
+    <div class="report-verdict-bar" role="img" aria-label="Dreifing niðurstaðna">
+      {% for v in verdictOrder %}
+        {% set count = 0 %}
+        {% for c in topic.claims %}
+          {% if c.verdict == v %}{% set count = count + 1 %}{% endif %}
+        {% endfor %}
+        {% if count %}
+          {% set pct = (count / verdictTotal * 100) | round(1) %}
+          <span class="report-bar-seg verdict-{{ v | replace("partially_supported", "partial") }}"
+                style="width:{{ pct }}%"
+                title="{{ v | verdictLabel }}: {{ count }}">
+            {%- if pct >= 12 %}{{ count }}{% endif -%}
+          </span>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="verdict-summary">
+      {% for v in verdictOrder %}
+        {% set count = 0 %}
+        {% for c in topic.claims %}
+          {% if c.verdict == v %}{% set count = count + 1 %}{% endif %}
+        {% endfor %}
+        {% if count %}
+        <span class="ct-verdict-pill verdict-{{ v | replace("partially_supported", "partial") }}">
+          {{ v | verdictLabel }}: {{ count }}
+        </span>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {# ── Timeline ── #}
+  {% if topic.timeline | length %}
+  <section class="td-timeline">
+    <h2>Tímalína</h2>
+    <div class="td-timeline-bars">
+      {% set maxSightings = 0 %}
+      {% for w in topic.timeline %}
+        {% if w.sightings > maxSightings %}{% set maxSightings = w.sightings %}{% endif %}
+      {% endfor %}
+      {% for w in topic.timeline %}
+        {% set pct = (w.sightings / (maxSightings or 1) * 100) | round %}
+        <div class="td-timeline-bar" title="{{ w.week | isDate }}: {{ w.sightings }} tilvísanir, {{ w.new_claims }} nýjar fullyrðingar">
+          <div class="td-timeline-fill" style="height: {{ pct }}%"></div>
+          <span class="td-timeline-label">{{ w.week | isDate }}</span>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {# ── Claims ── #}
+  {% if topic.claims | length %}
+  <section class="td-claims">
+    <h2>Fullyrðingar ({{ topic.claims | length }})</h2>
+
+    {% for item in topic.claims %}
+    <details class="report-claim report-claim--{{ item.verdict | replace("partially_supported", "partial") }}">
+      <summary class="report-claim-header">
+        <span class="ct-verdict-pill verdict-{{ item.verdict | replace("partially_supported", "partial") }}">
+          {{ item.verdict | verdictLabel }}
+        </span>
+        <span class="report-claim-title">{{ item.canonical_text_is }}</span>
+        {% if item.sighting_count %}
+          <span class="td-sighting-count">{{ item.sighting_count }} tilvísun{{ "ir" if item.sighting_count > 1 else "" }}</span>
+        {% endif %}
+        <span class="report-claim-chevron" aria-hidden="true"></span>
+      </summary>
+      <div class="report-claim-body">
+        {% if item.speakers | length %}
+          <p class="td-claim-speakers">
+            Ræðumenn:
+            {% for speaker in item.speakers %}
+              <a href="/raddirnar/{{ speaker | isSlug }}/">{{ speaker }}</a>{% if not loop.last %}, {% endif %}
+            {% endfor %}
+          </p>
+        {% endif %}
+        {% if item.last_seen %}
+          <p class="td-claim-meta">Síðast séð: <time datetime="{{ item.last_seen }}">{{ item.last_seen | isDate }}</time></p>
+        {% endif %}
+      </div>
+    </details>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  {# ── Evidence ── #}
+  {% if topic.evidence | length %}
+  <section class="td-evidence">
+    <h2>Heimildir ({{ topic.evidence | length }})</h2>
+
+    <div class="td-evidence-grid">
+      {% for ev in topic.evidence %}
+      <a href="/heimildir/{{ ev.evidence_id | lower | replace("_", "-") }}/" class="td-evidence-card">
+        <span class="td-evidence-id">{{ ev.evidence_id }}</span>
+        <p class="td-evidence-statement">{{ ev.statement_is or ev.statement }}</p>
+        <span class="td-evidence-source">{{ ev.source_name }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {# ── Entities ── #}
+  {% if topic.entities | length %}
+  <section class="td-entities">
+    <h2>Aðilar</h2>
+
+    <div class="td-entity-grid">
+      {% for ent in topic.entities %}
+      <a href="/raddirnar/{{ ent.slug }}/" class="td-entity-card">
+        <h3 class="td-entity-name">{{ ent.name }}</h3>
+        <span class="td-entity-claims">{{ ent.claim_count }} fullyrðing{{ "ar" if ent.claim_count > 1 else "" }}</span>
+        {% if ent.verdict_breakdown %}
+        <div class="td-entity-verdicts">
+          {% for v in verdictOrder %}
+            {% if ent.verdict_breakdown[v] %}
+            <span class="ct-verdict-pill verdict-{{ v | replace("partially_supported", "partial") }}">
+              {{ v | verdictLabel }}: {{ ent.verdict_breakdown[v] }}
+            </span>
+            {% endif %}
+          {% endfor %}
+        </div>
+        {% endif %}
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {# ── Source breakdown ── #}
+  {% if topic.source_activity | length %}
+  <section class="td-sources">
+    <h2>Fjölmiðlar</h2>
+    <table class="td-source-table">
+      <thead>
+        <tr>
+          <th>Miðill</th>
+          <th>Greinar</th>
+          <th>Fullyrðingar</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for src in topic.source_activity %}
+        <tr>
+          <td>{{ src.source }}</td>
+          <td>{{ src.articles }}</td>
+          <td>{{ src.claims }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+  {% endif %}
+</article>

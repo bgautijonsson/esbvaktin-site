@@ -1,0 +1,305 @@
+/* ── Topic detail page ── */
+
+.td-topic {
+  max-width: 900px;
+}
+
+.td-back {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.td-back:hover {
+  text-decoration: underline;
+}
+
+.td-header {
+  margin-bottom: 1.5rem;
+}
+
+.td-title {
+  font-size: 1.75rem;
+  margin: 0 0 0.5rem;
+}
+
+.td-description {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* ── Stats row ── */
+
+.td-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.td-stat-block {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+}
+
+.td-stat-heading {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.td-stat-num {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+/* ── Verdict section ── */
+
+.td-verdicts {
+  margin-bottom: 1.5rem;
+}
+
+.td-verdicts h2 {
+  font-size: 1.15rem;
+  margin: 0 0 0.75rem;
+}
+
+.verdict-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.5rem;
+}
+
+/* ── Timeline ── */
+
+.td-timeline {
+  margin-bottom: 1.5rem;
+}
+
+.td-timeline h2 {
+  font-size: 1.15rem;
+  margin: 0 0 0.75rem;
+}
+
+.td-timeline-bars {
+  display: flex;
+  gap: 4px;
+  align-items: flex-end;
+  height: 120px;
+  padding-bottom: 1.5rem;
+  position: relative;
+}
+
+.td-timeline-bar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  min-width: 24px;
+  position: relative;
+}
+
+.td-timeline-fill {
+  width: 100%;
+  background: var(--accent);
+  border-radius: 3px 3px 0 0;
+  min-height: 4px;
+  opacity: 0.7;
+}
+
+.td-timeline-label {
+  position: absolute;
+  bottom: -1.4rem;
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+/* ── Claims ── */
+
+.td-claims {
+  margin-bottom: 1.5rem;
+}
+
+.td-claims h2 {
+  font-size: 1.15rem;
+  margin: 0 0 0.75rem;
+}
+
+.td-sighting-count {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+.td-claim-speakers {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.td-claim-speakers a {
+  color: var(--accent);
+}
+
+.td-claim-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* ── Evidence grid ── */
+
+.td-evidence {
+  margin-bottom: 1.5rem;
+}
+
+.td-evidence h2 {
+  font-size: 1.15rem;
+  margin: 0 0 0.75rem;
+}
+
+.td-evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 0.6rem;
+}
+
+.td-evidence-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--text);
+  transition: border-color 0.15s;
+}
+
+.td-evidence-card:hover {
+  border-color: var(--accent);
+}
+
+.td-evidence-id {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.75rem;
+  color: var(--accent);
+}
+
+.td-evidence-statement {
+  font-size: 0.85rem;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.td-evidence-source {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* ── Entity grid ── */
+
+.td-entities {
+  margin-bottom: 1.5rem;
+}
+
+.td-entities h2 {
+  font-size: 1.15rem;
+  margin: 0 0 0.75rem;
+}
+
+.td-entity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.6rem;
+}
+
+.td-entity-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--text);
+  transition: border-color 0.15s;
+}
+
+.td-entity-card:hover {
+  border-color: var(--accent);
+}
+
+.td-entity-name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.td-entity-claims {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.td-entity-verdicts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  font-size: 0.7rem;
+}
+
+/* ── Source table ── */
+
+.td-sources {
+  margin-bottom: 1.5rem;
+}
+
+.td-sources h2 {
+  font-size: 1.15rem;
+  margin: 0 0 0.75rem;
+}
+
+.td-source-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.td-source-table th,
+.td-source-table td {
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.td-source-table th {
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+@media (max-width: 600px) {
+  .td-evidence-grid,
+  .td-entity-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,4 +1,5 @@
 const taxonomy = require("./assets/js/site-taxonomy.js");
+const markdownIt = require("markdown-it");
 
 /** @type {import("@11ty/eleventy").UserConfig} */
 module.exports = function (eleventyConfig) {
@@ -112,6 +113,13 @@ module.exports = function (eleventyConfig) {
       /<a\s+href="[^"]*"[^>]*>([A-Z]+-[A-Z]+-\d+)<\/a>/g,
       (_, id) => `<a href="/heimildir/${id.toLowerCase()}/" class="evidence-link" data-evidence-id="${id}">${id}</a>`
     );
+  });
+
+  // ── Markdown rendering filter ─────────────────────────────────────
+  const md = markdownIt({ html: true, linkify: true });
+  eleventyConfig.addFilter("markdown", (str) => {
+    if (!str) return "";
+    return md.render(str);
   });
 
   // ── Ignore files ─────────────────────────────────────────────────

@@ -1,0 +1,350 @@
+/* ── Overview detail page ── */
+
+.od-overview {
+  max-width: 900px;
+}
+
+.od-back {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.od-back:hover {
+  text-decoration: underline;
+}
+
+.od-header {
+  margin-bottom: 1.5rem;
+}
+
+.od-title {
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+/* ── Stats row ── */
+
+.od-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.od-stat-block {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+}
+
+.od-stat-heading {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.od-stat-num {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.od-stat-detail {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+/* ── Verdict section ── */
+
+.od-verdicts {
+  margin-bottom: 1.5rem;
+}
+
+.od-verdicts .verdict-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.5rem;
+}
+
+/* ── Editorial ── */
+
+.od-editorial {
+  margin-bottom: 2rem;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.od-editorial h1,
+.od-editorial h2,
+.od-editorial h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.od-editorial h1 {
+  font-size: 1.4rem;
+}
+
+.od-editorial h2 {
+  font-size: 1.2rem;
+}
+
+.od-editorial p {
+  margin: 0 0 1rem;
+}
+
+/* ── Notable quotes ── */
+
+.od-quotes {
+  margin-bottom: 1.5rem;
+}
+
+.od-quotes h2 {
+  font-size: 1.15rem;
+  margin: 0 0 0.75rem;
+}
+
+.od-quote {
+  border-left: 3px solid var(--accent);
+  padding: 0.5rem 1rem;
+  margin: 0 0 1rem;
+  background: var(--surface);
+  border-radius: 0 6px 6px 0;
+}
+
+.od-quote p {
+  margin: 0 0 0.5rem;
+  font-style: italic;
+}
+
+.od-quote footer {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.od-quote cite {
+  font-style: normal;
+}
+
+/* ── Topic activity table ── */
+
+.od-topics {
+  margin-bottom: 1.5rem;
+}
+
+.od-topics h2 {
+  font-size: 1.15rem;
+  margin: 0 0 0.75rem;
+}
+
+.od-topic-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.od-topic-table th,
+.od-topic-table td {
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.od-topic-table th {
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.od-topic-table a {
+  color: var(--accent);
+}
+
+.od-delta {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ── Top claims ── */
+
+.od-top-claims {
+  margin-bottom: 1.5rem;
+}
+
+.od-top-claims h2 {
+  font-size: 1.15rem;
+  margin: 0 0 0.75rem;
+}
+
+.od-claim-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.od-claim-text {
+  flex: 1;
+  min-width: 200px;
+  font-size: 0.9rem;
+}
+
+/* ── Active entities ── */
+
+.od-entities {
+  margin-bottom: 1.5rem;
+}
+
+.od-entities h2 {
+  font-size: 1.15rem;
+  margin: 0 0 0.75rem;
+}
+
+.od-entity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.6rem;
+}
+
+.od-entity-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--text);
+  transition: border-color 0.15s;
+}
+
+.od-entity-card:hover {
+  border-color: var(--accent);
+}
+
+.od-entity-name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.od-entity-claims {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.od-entity-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  font-size: 0.7rem;
+}
+
+/* ── Articles grid ── */
+
+.od-articles {
+  margin-bottom: 1.5rem;
+}
+
+.od-articles h2 {
+  font-size: 1.15rem;
+  margin: 0 0 0.75rem;
+}
+
+.od-articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 0.6rem;
+}
+
+.od-article-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--text);
+  transition: border-color 0.15s;
+}
+
+.od-article-card:hover {
+  border-color: var(--accent);
+}
+
+.od-article-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.od-article-meta {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.od-article-claims {
+  font-size: 0.8rem;
+  color: var(--accent);
+}
+
+/* ── Source table ── */
+
+.od-sources {
+  margin-bottom: 1.5rem;
+}
+
+.od-sources h2 {
+  font-size: 1.15rem;
+  margin: 0 0 0.75rem;
+}
+
+.od-source-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.od-source-table th,
+.od-source-table td {
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.od-source-table th {
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+@media (max-width: 600px) {
+  .od-entity-grid,
+  .od-articles-grid {
+    grid-template-columns: 1fr;
+  }
+}

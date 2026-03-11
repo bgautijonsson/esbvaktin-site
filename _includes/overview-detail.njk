@@ -1,0 +1,220 @@
+---
+layout: base.njk
+extra_css: /assets/css/overview-detail.css
+return_link_support: true
+---
+
+{% set kn = overview.key_numbers %}
+{% set verdictOrder = ["supported", "partially_supported", "unverifiable", "unsupported", "misleading"] %}
+{% set verdictTotal = 0 %}
+{% if kn.verdict_breakdown %}
+  {% for v in verdictOrder %}
+    {% set verdictTotal = verdictTotal + (kn.verdict_breakdown[v] or 0) %}
+  {% endfor %}
+{% endif %}
+
+<article class="od-overview">
+  {# ── Back link ── #}
+  <a href="/vikuyfirlit/" class="od-back" data-return-link data-return-fallback="/vikuyfirlit/" data-return-label="← Til baka í fyrri niðurstöður">&larr; Til baka á Vikuyfirlit</a>
+
+  {# ── Header ── #}
+  <header class="od-header">
+    <h1 class="od-title">Vikuyfirlit {{ overview.period_start | isDateRange(overview.period_end) }}</h1>
+  </header>
+
+  {# ── Key numbers ── #}
+  {% if kn %}
+  <div class="od-stats">
+    <div class="od-stat-block">
+      <span class="od-stat-heading">Greinar</span>
+      <span class="od-stat-num">{{ kn.articles_analysed }}</span>
+    </div>
+    <div class="od-stat-block">
+      <span class="od-stat-heading">Nýjar fullyrðingar</span>
+      <span class="od-stat-num">{{ kn.new_claims_published }}<span class="od-stat-detail"> / {{ kn.new_claims }}</span></span>
+    </div>
+    <div class="od-stat-block">
+      <span class="od-stat-heading">Málefni</span>
+      <span class="od-stat-num">{{ kn.topics_active }}</span>
+    </div>
+    <div class="od-stat-block">
+      <span class="od-stat-heading">Aðilar</span>
+      <span class="od-stat-num">{{ kn.entities_active }}</span>
+    </div>
+    {% if kn.diversity_score %}
+    <div class="od-stat-block">
+      <span class="od-stat-heading">Fjölbreytni</span>
+      <span class="od-stat-num">{{ (kn.diversity_score * 100) | round }}%</span>
+    </div>
+    {% endif %}
+  </div>
+  {% endif %}
+
+  {# ── Verdict bar ── #}
+  {% if verdictTotal > 0 %}
+  <section class="od-verdicts">
+    <div class="report-verdict-bar" role="img" aria-label="Dreifing niðurstaðna">
+      {% for v in verdictOrder %}
+        {% set count = kn.verdict_breakdown[v] or 0 %}
+        {% if count %}
+          {% set pct = (count / verdictTotal * 100) | round(1) %}
+          <span class="report-bar-seg verdict-{{ v | replace("partially_supported", "partial") }}"
+                style="width:{{ pct }}%"
+                title="{{ v | verdictLabel }}: {{ count }}">
+            {%- if pct >= 12 %}{{ count }}{% endif -%}
+          </span>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="verdict-summary">
+      {% for v in verdictOrder %}
+        {% set count = kn.verdict_breakdown[v] or 0 %}
+        {% if count %}
+        <span class="ct-verdict-pill verdict-{{ v | replace("partially_supported", "partial") }}">
+          {{ v | verdictLabel }}: {{ count }}
+        </span>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {# ── Editorial (centrepiece) ── #}
+  {% if overview.editorial %}
+  <section class="od-editorial">
+    {{ overview.editorial | markdown | safe }}
+  </section>
+  {% endif %}
+
+  {# ── Notable quotes ── #}
+  {% if overview.notable_quotes | length %}
+  <section class="od-quotes">
+    <h2>Athyglisverðar tilvitnanir</h2>
+    {% for quote in overview.notable_quotes %}
+    <blockquote class="od-quote">
+      <p>{{ quote.text }}</p>
+      <footer>
+        <cite>
+          {% if quote.speaker %}<strong>{{ quote.speaker }}</strong>{% endif %}
+          {% if quote.source %} — {{ quote.source }}{% endif %}
+        </cite>
+        {% if quote.verdict %}
+          <span class="ct-verdict-pill verdict-{{ quote.verdict | replace("partially_supported", "partial") }}">
+            {{ quote.verdict | verdictLabel }}
+          </span>
+        {% endif %}
+      </footer>
+    </blockquote>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  {# ── Topic activity ── #}
+  {% if overview.topic_activity | length %}
+  <section class="od-topics">
+    <h2>Virkni eftir málefnum</h2>
+    <table class="od-topic-table">
+      <thead>
+        <tr>
+          <th>Málefni</th>
+          <th>Tilvísanir</th>
+          <th>Nýjar fullyrðingar</th>
+          <th>Breyting</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for ta in overview.topic_activity %}
+        <tr>
+          <td><a href="/malefni/{{ ta.slug }}/">{{ ta.label_is }}</a></td>
+          <td>{{ ta.sightings }}</td>
+          <td>{{ ta.new_claims }}</td>
+          <td class="od-delta">{{ ta.delta }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+  {% endif %}
+
+  {# ── Top claims ── #}
+  {% if overview.top_claims | length %}
+  <section class="od-top-claims">
+    <h2>Helstu fullyrðingar</h2>
+    {% for item in overview.top_claims %}
+    <div class="od-claim-row">
+      <span class="ct-verdict-pill verdict-{{ item.verdict | replace("partially_supported", "partial") }}">
+        {{ item.verdict | verdictLabel }}
+      </span>
+      <span class="od-claim-text">{{ item.canonical_text_is }}</span>
+      {% if item.category_is %}
+        <span class="ct-category-tag">{{ item.category_is }}</span>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  {# ── Active entities ── #}
+  {% if overview.active_entities | length %}
+  <section class="od-entities">
+    <h2>Virkir aðilar</h2>
+    <div class="od-entity-grid">
+      {% for ent in overview.active_entities %}
+      <a href="/raddirnar/{{ ent.slug }}/" class="od-entity-card">
+        <h3 class="od-entity-name">{{ ent.name }}</h3>
+        <span class="od-entity-claims">{{ ent.claims_made }} fullyrðing{{ "ar" if ent.claims_made > 1 else "" }}</span>
+        {% if ent.top_topics | length %}
+        <div class="od-entity-topics">
+          {% for t in ent.top_topics %}
+            <span class="ct-category-tag">{{ t }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {# ── Articles analysed ── #}
+  {% if overview.articles | length %}
+  <section class="od-articles">
+    <h2>Greiningar ({{ overview.articles | length }})</h2>
+    <div class="od-articles-grid">
+      {% for art in overview.articles %}
+      <a href="/umraedan/{{ art.title | isSlug }}/" class="od-article-card">
+        <h3 class="od-article-title">{{ art.title }}</h3>
+        <div class="od-article-meta">
+          {% if art.source %}<span class="od-article-source">{{ art.source }}</span>{% endif %}
+          {% if art.date %}<time datetime="{{ art.date }}">{{ art.date | isDate }}</time>{% endif %}
+        </div>
+        <span class="od-article-claims">{{ art.claim_count }} fullyrðing{{ "ar" if art.claim_count > 1 else "" }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {# ── Source breakdown ── #}
+  {% if overview.source_breakdown %}
+  <section class="od-sources">
+    <h2>Fjölmiðlar</h2>
+    <table class="od-source-table">
+      <thead>
+        <tr>
+          <th>Miðill</th>
+          <th>Greinar</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for source, count in overview.source_breakdown %}
+        <tr>
+          <td>{{ source }}</td>
+          <td>{{ count }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+  {% endif %}
+</article>

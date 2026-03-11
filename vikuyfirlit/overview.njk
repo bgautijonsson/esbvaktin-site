@@ -1,0 +1,12 @@
+---
+pagination:
+  data: overviews
+  size: 1
+  alias: overview
+permalink: "/vikuyfirlit/{{ overview.slug }}/"
+layout: overview-detail.njk
+tags: overviews
+eleventyComputed:
+  title: "Vikuyfirlit {{ overview.period_start | isDateRange(overview.period_end) }}"
+  description: "Yfirlit yfir ESB-umræðuna frá {{ overview.period_start | isDate }} til {{ overview.period_end | isDate }}"
+---
