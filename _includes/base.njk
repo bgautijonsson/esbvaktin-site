@@ -26,6 +26,7 @@
   {% if extra_css %}<link rel="stylesheet" href="{{ extra_css }}">{% endif %}
 </head>
   <body>
+    <a href="#main-content" class="skip-link">Beint í efni</a>
     <header class="site-header">
       <nav class="site-nav" aria-label="Aðalvalmynd">
         <a href="/" class="site-logo">{{ site.title }}</a>
@@ -58,7 +59,7 @@
       </nav>
     </header>
 
-  <main class="site-main{% if wide_layout %} site-main--wide{% endif %}">
+  <main id="main-content" class="site-main{% if wide_layout %} site-main--wide{% endif %}" tabindex="-1">
     {{ content | safe }}
   </main>
 
@@ -72,13 +73,15 @@
     </p>
   </footer>
 
+  {% set needs_tracker_utils = extra_js or return_link_support %}
   <script src="/assets/js/theme-toggle.js" defer></script>
   <script src="/assets/js/mobile-nav.js" defer></script>
   <script src="/assets/js/evidence-preview.js" defer></script>
   {% if extra_js %}<script src="/assets/js/site-taxonomy.js" defer></script>{% endif %}
-  {% if extra_js %}<script src="/assets/js/tracker-utils.js" defer></script>{% endif %}
+  {% if needs_tracker_utils %}<script src="/assets/js/tracker-utils.js" defer></script>{% endif %}
   {% if extra_js %}<script src="/assets/js/tracker-renderer.js" defer></script>{% endif %}
   {% if extra_js %}<script src="/assets/js/tracker-controller.js" defer></script>{% endif %}
+  {% if return_link_support %}<script src="/assets/js/detail-return-link.js" defer></script>{% endif %}
   {% if extra_js %}<script src="{{ extra_js }}" defer{% if extra_js_data %} {{ extra_js_data | safe }}{% endif %}></script>{% endif %}
 </body>
 </html>

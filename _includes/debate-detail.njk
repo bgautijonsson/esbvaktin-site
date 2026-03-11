@@ -2,6 +2,7 @@
 layout: base.njk
 extra_css: /assets/css/debate-detail.css
 wide_layout: true
+return_link_support: true
 ---
 
 <article class="dd-debate">
@@ -100,6 +101,6 @@ wide_layout: true
   {% endif %}
 
   <nav class="dd-back">
-    <a href="/thingraedur/">&larr; Til baka í yfirlit</a>
+    <a href="/thingraedur/" data-return-link data-return-fallback="/thingraedur/" data-return-label="← Til baka í fyrri niðurstöður">&larr; Til baka í þingræður</a>
   </nav>
 </article>

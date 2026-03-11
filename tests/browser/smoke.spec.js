@@ -62,22 +62,66 @@ test("listing pages can reach representative detail pages", async ({ page }) => 
   await gotoAndWait(page, "/umraedan/", "#dt-results .dt-card-link");
   await page.locator("#dt-results .dt-card-link").first().click();
   await expect(page.locator(".report-header")).toBeVisible();
-  await expect(page).toHaveURL(/\/umraedan\/.+\/$/);
+  await expect(page).toHaveURL(/\/umraedan\/.+\/\?return=/);
 
   await gotoAndWait(page, "/heimildir/", ".ev-card");
   await page.locator(".ev-card").first().click();
   await expect(page.locator(".ev-back")).toBeVisible();
-  await expect(page).toHaveURL(/\/heimildir\/.+\/$/);
+  await expect(page).toHaveURL(/\/heimildir\/.+\/\?return=/);
 
   await gotoAndWait(page, "/raddirnar/", "#et-results .et-card-link");
   await page.locator("#et-results .et-card-link").first().click();
   await expect(page.locator(".ed-back")).toBeVisible();
-  await expect(page).toHaveURL(/\/raddirnar\/.+\/$/);
+  await expect(page).toHaveURL(/\/raddirnar\/.+\/\?return=/);
 
   await gotoAndWait(page, "/thingraedur/", "#st-results .st-card-link");
   await page.locator("#st-results .st-card-link").first().click();
   await expect(page.locator(".dd-back")).toBeVisible();
-  await expect(page).toHaveURL(/\/thingraedur\/.+\/$/);
+  await expect(page).toHaveURL(/\/thingraedur\/.+\/\?return=/);
+});
+
+test("claim tracker article links prefer internal reports and preserve the original source on the report page", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 960 });
+  await gotoAndWait(page, "/fullyrdingar/", "#ct-results .ct-card");
+
+  await page.locator("#ct-search").fill("varanlegar almennar undanþágur");
+  const card = page.locator("#ct-results .ct-card").first();
+
+  await expect(card).toContainText("undanþágur");
+  await card.locator(".ct-card-header").click();
+
+  const sightingLink = card.locator('.ct-sighting-item a[href*="/umraedan/"]').first();
+  await expect(sightingLink).toBeVisible();
+  await expect(sightingLink).toHaveAttribute("href", /\/umraedan\/esb-pakkinn-er-galopinn\/\?return=/);
+
+  await sightingLink.click();
+
+  await expect(page).toHaveURL(/\/umraedan\/esb-pakkinn-er-galopinn\/\?return=/);
+  await expect(page.locator(".report-header h1")).toContainText("ESB-pakkinn er galopinn");
+  await expect(page.locator(".report-source-link")).toHaveAttribute(
+    "href",
+    /visir\.is\/g\/20262853296d\/esb-pakkinn-er-galopinn/
+  );
+});
+
+test("detail back links preserve list context and highlight the prior result", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 960 });
+
+  await gotoAndWait(page, "/umraedan/", "#dt-results .dt-card-link");
+  await page.locator("#dt-search").fill("Trump");
+  await expect(page.locator("#dt-active-filters")).toContainText("Leit: Trump");
+
+  const firstCard = page.locator("#dt-results .dt-card").first();
+  const cardId = await firstCard.getAttribute("id");
+  expect(cardId).toBeTruthy();
+
+  await firstCard.locator(".dt-card-link").click();
+  await expect(page.locator(".report-back")).toBeVisible();
+  await page.locator(".report-back").click();
+
+  await expect(page.locator("#dt-search")).toHaveValue("Trump");
+  await expect(page.locator("#dt-active-filters")).toContainText("Leit: Trump");
+  await expect(page.locator(`#${cardId}`)).toHaveClass(/tracker-return-target/);
 });
 
 test("evidence links show a short preview on hover", async ({ page }) => {

@@ -14,6 +14,10 @@
   const controllerLib = globalThis.ESBvaktinTrackerController || {};
   const createController = controllerLib.create;
   const escapeHtml = utils.escapeHtml || ((value) => String(value ?? ""));
+  const buildReturnUrl = utils.buildReturnUrl || (() => "");
+  const restoreReturnTarget = utils.restoreReturnTarget || (() => false);
+  const updateUrlQuery = utils.updateUrlQuery || (() => "");
+  const withReturnUrl = utils.withReturnUrl || ((url) => url);
   const DATA_BASE = utils.getDataBase
     ? utils.getDataBase(document.currentScript, "/assets/data")
     : (document.currentScript?.dataset.base || "/assets/data");
@@ -25,6 +29,14 @@
   const STANCE_FILTER_LABELS = TAXONOMY.stanceFilterLabels || {};
   const ATTRIBUTION_LABELS = TAXONOMY.attributionLabels || {};
   const ATTRIBUTION_ORDER = ["quoted", "asserted", "paraphrased", "mentioned"];
+  const SORT_LABELS = {
+    importance: "Mikilvægi",
+    name: "Nafn",
+    stance_score: "Afstaða",
+    credibility: "Trúverðugleiki",
+    mention_count: "Tilvísanir",
+  };
+  const params = new URLSearchParams(window.location.search);
 
   const root = document.getElementById("entity-tracker");
   if (!root || !renderer || !createController) return;
@@ -32,10 +44,10 @@
   const controller = createController({
     root,
     initialState: {
-      search: "",
-      type: "",
-      stance: "",
-      sort: "importance",
+      search: params.get("q") || "",
+      type: params.get("type") || "",
+      stance: params.get("stance") || "",
+      sort: params.get("sort") || "importance",
       sortDir: "ASC",
     },
     initialData: {
@@ -177,6 +189,7 @@
           id: "et-search",
           className: "et-search",
           wrapClass: "et-search-wrap",
+          label: "Leita í aðilum",
           placeholder: "Leita í aðilum…",
           value: filters.search,
         },
@@ -186,6 +199,7 @@
             renderer.renderSelect({
               id: "et-type",
               className: "et-select",
+              label: "Tegund",
               placeholder: "Allar tegundir",
               options: Object.entries(TYPE_FILTER_LABELS).map(([value, label]) => ({ value, label })),
               selectedValue: filters.type,
@@ -193,6 +207,7 @@
             renderer.renderSelect({
               id: "et-stance",
               className: "et-select",
+              label: "Afstaða",
               placeholder: "Öll viðhorf",
               options: Object.entries(STANCE_FILTER_LABELS).map(([value, label]) => ({ value, label })),
               selectedValue: filters.stance,
@@ -200,6 +215,7 @@
             renderer.renderSelect({
               id: "et-sort",
               className: "et-select",
+              label: "Röðun",
               options: [
                 { value: "importance", label: "Mikilvægi" },
                 { value: "name", label: "Nafn" },
@@ -212,6 +228,8 @@
           ],
         }],
       })}
+
+      <div id="et-active-filters"></div>
 
       <div id="et-results">
         ${renderer.renderMessage("Hleð aðilum…", "et-loading")}
@@ -229,7 +247,7 @@
       numClass: "et-stat-num",
       labelClass: "et-stat-label",
       items: [
-        { value: stats.total, label: "aðilar", valueId: "et-visible-count" },
+        { value: stats.total, label: "sýnilegir", valueId: "et-visible-count" },
         { value: stats.parties, label: "flokkar" },
         { value: stats.institutions, label: "samtök" },
         { value: stats.individuals, label: "einstaklingar" },
@@ -241,6 +259,7 @@
     const entities = queryEntities();
     const el = document.getElementById("et-results");
     if (!el) return;
+    renderActiveFilters();
 
     if (entities.length === 0) {
       el.innerHTML = renderer.renderMessage("Engir aðilar fundust.", "et-empty");
@@ -254,6 +273,7 @@
       renderItem: renderEntityCard,
       containerClass: "et-grid",
     });
+    restoreReturnTarget(el);
   }
 
   function updateVisibleCount(count) {
@@ -262,13 +282,14 @@
   }
 
   function renderEntityCard(entity) {
+    const cardId = `et-entity-${entity.slug}`;
     const score = entity.stance_score ?? 0;
     const hue = stanceHue(score);
     const sat = 10 + Math.abs(score) * 60;
     const label = stanceLabel(score);
     const dotLeft = (((score + 1) / 2) * 100).toFixed(1);
     const credPct = entity.credibility != null ? Math.round(entity.credibility * 100) : null;
-    const detailUrl = `/raddirnar/${escapeHtml(entity.slug)}/`;
+    const detailUrl = withReturnUrl(`/raddirnar/${entity.slug}/`, buildReturnUrl(cardId));
 
     const roleHtml = entity.role
       ? `<p class="et-card-role">${escapeHtml(capitalize(entity.role))}${entity.party ? ` (${escapeHtml(entity.party)})` : ""}</p>`
@@ -328,7 +349,7 @@
         .map((slug) => {
           const report = getReportsMap().get(slug);
           if (!report) return null;
-          return `<li><a href="/umraedan/${escapeHtml(slug)}/">${escapeHtml(report.article_title)}</a></li>`;
+          return `<li><a href="${escapeHtml(withReturnUrl(`/umraedan/${slug}/`, buildReturnUrl(cardId)))}">${escapeHtml(report.article_title)}</a></li>`;
         })
         .filter(Boolean)
         .join("");
@@ -348,7 +369,7 @@
     }
 
     return `
-      <div class="et-card" style="--stance-hue: ${hue}; --stance-sat: ${sat}%; --stance-score: ${score}">
+      <div class="et-card" id="${escapeHtml(cardId)}" style="--stance-hue: ${hue}; --stance-sat: ${sat}%; --stance-score: ${score}">
         <div class="et-card-top">
           <h3 class="et-card-name"><a href="${detailUrl}" class="et-card-link">${escapeHtml(entity.name)}</a></h3>
           <div class="et-stance-indicator" title="Afstaða: ${score}">
@@ -394,34 +415,120 @@
     return str.charAt(0).toUpperCase() + str.slice(1);
   }
 
+  function getActiveFilterChips() {
+    const filters = getFilters();
+    const chips = [];
+
+    if (filters.search) {
+      chips.push({ key: "search", text: `Leit: ${filters.search}` });
+    }
+
+    if (filters.type) {
+      chips.push({ key: "type", text: `Tegund: ${TYPE_FILTER_LABELS[filters.type] || filters.type}` });
+    }
+
+    if (filters.stance) {
+      chips.push({ key: "stance", text: `Afstaða: ${STANCE_FILTER_LABELS[filters.stance] || filters.stance}` });
+    }
+
+    if (filters.sort && filters.sort !== "importance") {
+      chips.push({ key: "sort", text: `Röðun: ${SORT_LABELS[filters.sort] || filters.sort}` });
+    }
+
+    return chips;
+  }
+
+  function renderActiveFilters() {
+    const el = document.getElementById("et-active-filters");
+    if (!el || typeof renderer.renderFilterChips !== "function") return;
+
+    el.innerHTML = renderer.renderFilterChips({
+      items: getActiveFilterChips(),
+      clearAllLabel: "Hreinsa allt",
+    });
+  }
+
+  function clearFilter(key, api) {
+    const patch = {};
+
+    if (key === "search") patch.search = "";
+    if (key === "type") patch.type = "";
+    if (key === "stance") patch.stance = "";
+    if (key === "sort") {
+      patch.sort = "importance";
+      patch.sortDir = "ASC";
+    }
+
+    commitState(patch, "all", api);
+  }
+
+  function clearAllFilters(api) {
+    commitState(
+      {
+        search: "",
+        type: "",
+        stance: "",
+        sort: "importance",
+        sortDir: "ASC",
+      },
+      "all",
+      api
+    );
+  }
+
+  function syncUrl(state) {
+    updateUrlQuery({
+      q: state.search,
+      type: state.type,
+      stance: state.stance,
+      sort: state.sort === "importance" ? "" : state.sort,
+    });
+  }
+
+  function commitState(patch, renderScope, api) {
+    const nextState = Object.assign({}, api.getState(), patch || {});
+    syncUrl(nextState);
+    api.setState(patch, renderScope);
+    return nextState;
+  }
+
   controller.bindInput(
     "#et-search",
     (value, _target, _event, api) => {
-      api.setState({ search: value }, "results");
+      commitState({ search: value }, "results", api);
     },
     { debounceMs: 200, trim: true }
   );
 
   controller.bindChange("#et-type", (value, _target, _event, api) => {
-    api.setState({ type: value }, "results");
+    commitState({ type: value }, "results", api);
   });
 
   controller.bindChange("#et-stance", (value, _target, _event, api) => {
-    api.setState({ stance: value }, "results");
+    commitState({ stance: value }, "results", api);
   });
 
   controller.bindChange("#et-sort", (value, _target, _event, api) => {
-    api.setState(
+    commitState(
       {
         sort: value,
         sortDir: value === "name" || value === "importance" ? "ASC" : "DESC",
       },
-      "results"
+      "results",
+      api
     );
   });
 
   controller.bindClick(".et-articles-toggle", (target) => {
     toggleArticles(target);
+  });
+
+  controller.bindClick("[data-clear-filter]", (target, _event, api) => {
+    clearFilter(target.getAttribute("data-clear-filter"), api);
+  });
+
+  controller.bindClick("[data-clear-all-filters]", (_target, _event, api) => {
+    clearAllFilters(api);
   });
 
   controller.start();

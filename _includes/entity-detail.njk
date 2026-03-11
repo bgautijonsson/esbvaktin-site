@@ -1,6 +1,7 @@
 ---
 layout: base.njk
 extra_css: /assets/css/entity-detail.css
+return_link_support: true
 ---
 
 {# ── Stance label from score ── #}
@@ -38,7 +39,7 @@ extra_css: /assets/css/entity-detail.css
 
 <article class="ed-entity" style="--stance-hue: {{ stanceHue }}; --stance-sat: {{ stanceSat }}%">
   {# ── Back link ── #}
-  <a href="/raddirnar/" class="ed-back">&larr; Til baka á Raddirnar</a>
+  <a href="/raddirnar/" class="ed-back" data-return-link data-return-fallback="/raddirnar/" data-return-label="← Til baka í fyrri niðurstöður">&larr; Til baka á Raddirnar</a>
 
   {# ── Header ── #}
   <header class="ed-header">
@@ -208,7 +209,7 @@ extra_css: /assets/css/entity-detail.css
       </summary>
       <div class="report-claim-body">
         <p class="ed-claim-source">
-          <a href="/umraedan/{{ item.article_slug }}/">{{ item.article_title }}</a>
+          <a href="/umraedan/{{ item.article_slug }}/" data-preserve-return>{{ item.article_title }}</a>
           {% if item.article_source %}<span class="ed-claim-source-name">{{ item.article_source }}</span>{% endif %}
           {% if item.article_date %}<time datetime="{{ item.article_date }}">{{ item.article_date | isDate }}</time>{% endif %}
         </p>

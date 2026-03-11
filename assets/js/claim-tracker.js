@@ -13,15 +13,29 @@
   const renderer = globalThis.ESBvaktinTrackerRenderer;
   const controllerLib = globalThis.ESBvaktinTrackerController || {};
   const createController = controllerLib.create;
+  const createReportLookup = utils.createReportLookup || (() => ({ byArticleUrl: new Map(), byTitleDate: new Map() }));
   const escapeHtml = utils.escapeHtml || ((value) => String(value ?? ""));
+  const buildReturnUrl = utils.buildReturnUrl || (() => "");
+  const findReportForSource = utils.findReportForSource || (() => null);
+  const restoreReturnTarget = utils.restoreReturnTarget || (() => false);
+  const updateUrlQuery = utils.updateUrlQuery || (() => "");
+  const withReturnUrl = utils.withReturnUrl || ((url) => url);
   const DATA_BASE = utils.getDataBase
     ? utils.getDataBase(document.currentScript, "/assets/data")
     : (document.currentScript?.dataset.base || "/assets/data");
-  const JSON_URL = `${DATA_BASE}/claims.json`;
+  const CLAIMS_URL = `${DATA_BASE}/claims.json`;
+  const REPORTS_URL = `${DATA_BASE}/reports.json`;
   const VERDICT_LABELS = TAXONOMY.verdictLabels || {};
   const CATEGORY_LABELS = TAXONOMY.categoryLabels || {};
   const VERDICT_CLASSES = TAXONOMY.verdictClasses || {};
   const SOURCE_TYPE_LABELS = TAXONOMY.claimSourceTypeLabels || {};
+  const SORT_LABELS = {
+    last_verified: "Síðast staðfest",
+    sighting_count: "Tíðni",
+    category: "Flokkur",
+    confidence: "Vissustig",
+  };
+  const params = new URLSearchParams(window.location.search);
 
   const root = document.getElementById("claim-tracker");
   if (!root || !renderer || !createController) return;
@@ -29,15 +43,30 @@
   const controller = createController({
     root,
     initialState: {
-      search: "",
-      category: "",
-      verdict: "",
-      sort: "sighting_count",
+      search: params.get("q") || "",
+      category: params.get("category") || "",
+      verdict: params.get("verdict") || "",
+      sort: params.get("sort") || "last_verified",
       sortDir: "DESC",
     },
-    initialData: [],
+    initialData: {
+      claims: [],
+      reportLookup: createReportLookup([]),
+    },
     async load(api) {
-      return api.loadJson(JSON_URL);
+      const claims = await api.loadJson(CLAIMS_URL);
+      let reports = [];
+
+      try {
+        reports = await api.loadJson(REPORTS_URL);
+      } catch (_error) {
+        reports = [];
+      }
+
+      return {
+        claims,
+        reportLookup: createReportLookup(reports),
+      };
     },
     renderShell,
     renderStats,
@@ -57,7 +86,11 @@
   });
 
   function getClaims() {
-    return controller.getData() || [];
+    return controller.getData()?.claims || [];
+  }
+
+  function getReportLookup() {
+    return controller.getData()?.reportLookup || createReportLookup([]);
   }
 
   function getFilters() {
@@ -114,11 +147,6 @@
     const filters = getFilters();
 
     root.innerHTML = `
-      <div class="ct-header">
-        <h2>Fullyrðingavaktin</h2>
-        <p class="ct-subtitle">Allar helstu fullyrðingar í ESB-umræðunni — metnar á móti gögnum og heimildum.</p>
-      </div>
-
       <div class="ct-stats" id="ct-stats">${renderer.renderMessage("Hleð gögnum…", "ct-stat-loading")}</div>
 
       ${renderer.renderControlBlock({
@@ -127,6 +155,7 @@
           id: "ct-search",
           className: "ct-search",
           wrapClass: "ct-search-wrap",
+          label: "Leita í fullyrðingum",
           placeholder: "Leita í fullyrðingum…",
           value: filters.search,
         },
@@ -136,6 +165,7 @@
             renderer.renderSelect({
               id: "ct-category",
               className: "ct-select",
+              label: "Efnisflokkur",
               placeholder: "Allir flokkar",
               options: Object.entries(CATEGORY_LABELS)
                 .sort((a, b) => a[1].localeCompare(b[1], "is"))
@@ -145,6 +175,7 @@
             renderer.renderSelect({
               id: "ct-verdict",
               className: "ct-select",
+              label: "Úrskurður",
               placeholder: "Allir úrskurðir",
               options: Object.entries(VERDICT_LABELS).map(([value, label]) => ({ value, label })),
               selectedValue: filters.verdict,
@@ -152,17 +183,22 @@
             renderer.renderSelect({
               id: "ct-sort",
               className: "ct-select",
+              label: "Röðun",
               options: [
+                { value: "last_verified", label: "Síðast staðfest" },
                 { value: "sighting_count", label: "Tíðni" },
                 { value: "category", label: "Flokkur" },
                 { value: "confidence", label: "Vissustig" },
-                { value: "last_verified", label: "Síðast staðfest" },
               ],
               selectedValue: filters.sort,
             }),
           ],
         }],
       })}
+
+      <div id="ct-active-filters"></div>
+
+      <p class="ct-results-meta" id="ct-results-meta" aria-live="polite"></p>
 
       <div class="ct-results" id="ct-results">
         ${renderer.renderMessage("Hleð fullyrðingum…", "ct-loading")}
@@ -191,6 +227,8 @@
     const claims = queryClaims();
     const el = document.getElementById("ct-results");
     if (!el) return;
+    renderActiveFilters();
+    updateResultsMeta(claims.length, getClaims().length);
 
     if (claims.length === 0) {
       el.innerHTML = renderer.renderMessage("Engar fullyrðingar fundust.", "ct-empty");
@@ -201,9 +239,24 @@
       items: claims,
       renderItem: renderClaimCard,
     });
+    expandReturnClaimTarget();
+    restoreReturnTarget(el);
+  }
+
+  function updateResultsMeta(visibleCount, totalCount) {
+    const el = document.getElementById("ct-results-meta");
+    if (!el) return;
+
+    if (visibleCount === totalCount) {
+      el.textContent = `Sýni allar ${totalCount} fullyrðingar.`;
+      return;
+    }
+
+    el.textContent = `Sýni ${visibleCount} af ${totalCount} fullyrðingum.`;
   }
 
   function renderClaimCard(claim) {
+    const cardId = `ct-claim-${claim.claim_slug}`;
     const verdictClass = VERDICT_CLASSES[claim.verdict] || "";
     const verdictLabel = VERDICT_LABELS[claim.verdict] || claim.verdict;
     const categoryLabel = CATEGORY_LABELS[claim.category] || claim.category;
@@ -227,7 +280,7 @@
         evidenceList
           .map(
             (evidence) =>
-              `<a href="/heimildir/${escapeHtml(evidence.slug)}/" class="evidence-link" data-evidence-id="${escapeHtml(evidence.id)}" data-evidence-source="${escapeHtml(evidence.source_name)}">${escapeHtml(evidence.id)}</a>`
+              `<a href="${escapeHtml(withReturnUrl(`/heimildir/${evidence.slug}/`, buildReturnUrl(cardId)))}" class="evidence-link" data-evidence-id="${escapeHtml(evidence.id)}" data-evidence-source="${escapeHtml(evidence.source_name)}">${escapeHtml(evidence.id)}</a>`
           )
           .join(", ");
 
@@ -243,14 +296,29 @@
     }
 
     if (claim.sightings?.length) {
+      const reportLookup = getReportLookup();
       const sightingItems = claim.sightings
         .map((sighting) => {
           const typeLabel = SOURCE_TYPE_LABELS[sighting.source_type] || sighting.source_type || "";
           const dateStr = sighting.source_date || "";
           const title = sighting.source_title || sighting.source_url;
           const meta = [typeLabel, dateStr].filter(Boolean).join(" · ");
+          const matchedReport = findReportForSource(sighting, reportLookup);
+          const internalHref = matchedReport?.slug
+            ? withReturnUrl(`/umraedan/${matchedReport.slug}/`, buildReturnUrl(cardId))
+            : "";
+          const href = internalHref || sighting.source_url || "";
+          const externalAttrs = internalHref ? "" : ' target="_blank" rel="noopener"';
+          const linkClass = internalHref
+            ? "ct-sighting-link"
+            : "ct-sighting-link ct-sighting-link--external";
+
+          const titleHtml = href
+            ? `<a href="${escapeHtml(href)}" class="${linkClass}"${externalAttrs}>${escapeHtml(title)}</a>`
+            : `<span class="${linkClass}">${escapeHtml(title)}</span>`;
+
           return `<li class="ct-sighting-item">
-            <a href="${escapeHtml(sighting.source_url)}" target="_blank" rel="noopener">${escapeHtml(title)}</a>
+            ${titleHtml}
             ${meta ? `<span class="ct-sighting-meta">${escapeHtml(meta)}</span>` : ""}
           </li>`;
         })
@@ -268,7 +336,7 @@
         : "";
 
     return `
-      <div class="ct-card" data-slug="${escapeHtml(claim.claim_slug)}">
+      <div class="ct-card" id="${escapeHtml(cardId)}" data-slug="${escapeHtml(claim.claim_slug)}">
         <div class="ct-card-header" role="button" tabindex="0" aria-expanded="false">
           <div class="ct-card-main">
             <span class="ct-verdict-pill ${verdictClass}">${verdictLabel}</span>
@@ -300,24 +368,121 @@
     header.setAttribute("aria-expanded", expanded);
   }
 
+  function expandReturnClaimTarget() {
+    if (typeof window === "undefined" || !window.location || !window.location.hash) return;
+
+    const cardId = decodeURIComponent(window.location.hash.slice(1));
+    if (!cardId) return;
+
+    const card = document.getElementById(cardId);
+    if (!card || !card.classList.contains("ct-card")) return;
+
+    card.classList.add("ct-expanded");
+    const header = card.querySelector(".ct-card-header");
+    if (header) {
+      header.setAttribute("aria-expanded", "true");
+    }
+  }
+
+  function getActiveFilterChips() {
+    const filters = getFilters();
+    const chips = [];
+
+    if (filters.search) {
+      chips.push({ key: "search", text: `Leit: ${filters.search}` });
+    }
+
+    if (filters.category) {
+      chips.push({ key: "category", text: `Efnisflokkur: ${CATEGORY_LABELS[filters.category] || filters.category}` });
+    }
+
+    if (filters.verdict) {
+      chips.push({ key: "verdict", text: `Úrskurður: ${VERDICT_LABELS[filters.verdict] || filters.verdict}` });
+    }
+
+    if (filters.sort && filters.sort !== "last_verified") {
+      chips.push({ key: "sort", text: `Röðun: ${SORT_LABELS[filters.sort] || filters.sort}` });
+    }
+
+    return chips;
+  }
+
+  function renderActiveFilters() {
+    const el = document.getElementById("ct-active-filters");
+    if (!el || typeof renderer.renderFilterChips !== "function") return;
+
+    el.innerHTML = renderer.renderFilterChips({
+      items: getActiveFilterChips(),
+      clearAllLabel: "Hreinsa allt",
+    });
+  }
+
+  function clearFilter(key, api) {
+    const patch = {};
+
+    if (key === "search") patch.search = "";
+    if (key === "category") patch.category = "";
+    if (key === "verdict") patch.verdict = "";
+    if (key === "sort") patch.sort = "last_verified";
+
+    commitState(patch, "all", api);
+  }
+
+  function clearAllFilters(api) {
+    commitState(
+      {
+        search: "",
+        category: "",
+        verdict: "",
+        sort: "last_verified",
+      },
+      "all",
+      api
+    );
+  }
+
+  function syncUrl(state) {
+    updateUrlQuery({
+      q: state.search,
+      category: state.category,
+      verdict: state.verdict,
+      sort: state.sort === "last_verified" ? "" : state.sort,
+    });
+  }
+
+  function commitState(patch, renderScope, api) {
+    const nextState = Object.assign({}, api.getState(), patch || {});
+    syncUrl(nextState);
+    api.setState(patch, renderScope);
+    return nextState;
+  }
+
   controller.bindInput(
     "#ct-search",
     (value, _target, _event, api) => {
-      api.setState({ search: value }, "results");
+      commitState({ search: value }, "results", api);
     },
     { debounceMs: 200, trim: true }
   );
 
   controller.bindChange("#ct-category", (value, _target, _event, api) => {
-    api.setState({ category: value }, "results");
+    commitState({ category: value }, "results", api);
   });
 
   controller.bindChange("#ct-verdict", (value, _target, _event, api) => {
-    api.setState({ verdict: value }, "results");
+    commitState({ verdict: value }, "results", api);
   });
 
   controller.bindChange("#ct-sort", (value, _target, _event, api) => {
-    api.setState({ sort: value }, "results");
+    commitState({ sort: value }, "results", api);
+  });
+
+  controller.bindClick("[data-clear-filter]", (target, _event, api) => {
+    clearFilter(target.getAttribute("data-clear-filter"), api);
+  });
+
+  controller.bindClick("[data-clear-all-filters]", (_target, _event, api) => {
+    clearAllFilters(api);
   });
 
   controller.bindClick(".ct-card-header", (target) => {

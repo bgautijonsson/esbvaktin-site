@@ -1,12 +1,17 @@
 ---
 layout: base.njk
 og_type: article
+return_link_support: true
 ---
 
 {# ── Compute total claims for verdict bar widths ── #}
 {% set totalClaims = report.claims | length %}
 
 <article class="report">
+  <nav class="report-nav" aria-label="Til baka">
+    <a href="/umraedan/" class="report-back" data-return-link data-return-fallback="/umraedan/" data-return-label="← Til baka í fyrri niðurstöður">&larr; Til baka í greinayfirlit</a>
+  </nav>
+
   <header class="report-header">
     <h1>{{ report.article_title }}</h1>
     <div class="report-meta">
@@ -29,7 +34,7 @@ og_type: article
         <div class="report-participant">
           <div class="report-participant-info">
             {% if p.slug %}
-            <a href="/raddirnar/{{ p.slug }}/" class="report-participant-name report-participant-link">{{ p.name }}</a>
+            <a href="/raddirnar/{{ p.slug }}/" class="report-participant-name report-participant-link" data-preserve-return>{{ p.name }}</a>
             {% else %}
             <span class="report-participant-name">{{ p.name }}</span>
             {% endif %}
@@ -138,7 +143,7 @@ og_type: article
         <div class="report-evidence">
           <strong>Heimildir:</strong>
           {% for ev in item.supporting_evidence %}
-            <a href="/heimildir/{{ ev.id | lower }}/" class="evidence-link" data-evidence-id="{{ ev.id }}" data-evidence-source="{{ ev.source_name }}">{{ ev.id }}</a>
+            <a href="/heimildir/{{ ev.id | lower }}/" class="evidence-link" data-evidence-id="{{ ev.id }}" data-evidence-source="{{ ev.source_name }}" data-preserve-return>{{ ev.id }}</a>
             {%- if not loop.last %}, {% endif %}
           {% endfor %}
         </div>
@@ -147,7 +152,7 @@ og_type: article
         <div class="report-evidence report-evidence-contra">
           <strong>Andstæðar heimildir:</strong>
           {% for ev in item.contradicting_evidence %}
-            <a href="/heimildir/{{ ev.id | lower }}/" class="evidence-link" data-evidence-id="{{ ev.id }}" data-evidence-source="{{ ev.source_name }}">{{ ev.id }}</a>
+            <a href="/heimildir/{{ ev.id | lower }}/" class="evidence-link" data-evidence-id="{{ ev.id }}" data-evidence-source="{{ ev.source_name }}" data-preserve-return>{{ ev.id }}</a>
             {%- if not loop.last %}, {% endif %}
           {% endfor %}
         </div>

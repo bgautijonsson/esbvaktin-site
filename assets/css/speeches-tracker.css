@@ -13,6 +13,90 @@
   color: var(--text);
 }
 
+/* ── Recent-first focus ───────────────────────────────────────────── */
+
+.st-period-focus {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem 1.5rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--bg-card), var(--bg-alt));
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.st-period-copy {
+  max-width: 42rem;
+}
+
+.st-period-eyebrow {
+  margin: 0 0 0.25rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.st-period-title {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+}
+
+.st-period-note {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.st-period-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.st-period-button {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.15rem;
+  min-width: 8.5rem;
+  padding: 0.7rem 0.85rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  cursor: pointer;
+  transition: border-color var(--transition), background var(--transition), color var(--transition);
+}
+
+.st-period-button:hover {
+  border-color: var(--accent);
+}
+
+.st-period-button.is-active {
+  background: var(--bg-alt);
+  border-color: var(--accent);
+}
+
+.st-period-button-label {
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.st-period-button-count {
+  font-size: 0.74rem;
+  color: var(--text-secondary);
+}
+
+.st-period-button.is-active .st-period-button-count {
+  color: var(--text);
+}
+
 /* ── Speaker filter banner ───────────────────────────────────────── */
 
 .st-speaker-filter {
@@ -49,6 +133,24 @@
 
 .st-results {
   margin-top: 0.5rem;
+}
+
+.st-empty-action {
+  margin-top: 0.75rem;
+}
+
+.st-expand-scope {
+  padding: 0.55rem 0.9rem;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--accent);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.st-expand-scope:hover {
+  background: var(--bg-alt);
 }
 
 /* ── Grid ────────────────────────────────────────────────────────── */
@@ -257,6 +359,20 @@
 /* ── Responsive ──────────────────────────────────────────────────── */
 
 @media (max-width: 600px) {
+  .st-period-focus {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .st-period-actions {
+    justify-content: stretch;
+  }
+
+  .st-period-button {
+    min-width: 0;
+    width: 100%;
+  }
+
   .st-grid {
     grid-template-columns: 1fr;
   }

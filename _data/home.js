@@ -59,21 +59,19 @@ function getDaysUntil(dateString) {
   return Math.max(0, Math.ceil((targetUtc - todayUtc) / 86400000));
 }
 
-function normalizeReport(report) {
+function normalizeReport(report, sourceLookup) {
   if (!report) return report;
-  return {
-    ...report,
-    summary: trackerUtils.normalizeReportSummary(report.summary),
-  };
+  return trackerUtils.enrichReportRecord(report, sourceLookup);
 }
 
 module.exports = function () {
+  const claims = readJson("assets/data/claims.json");
+  const reportSourceLookup = trackerUtils.createNewsSourceLookup(claims);
   const reports = sortByDateDesc(
-    readJson("assets/data/reports.json").map(normalizeReport),
+    readJson("assets/data/reports.json").map((report) => normalizeReport(report, reportSourceLookup)),
     ["analysis_date", "article_date"]
   );
   const debates = sortByDateDesc(readJson("assets/data/debates.json"), ["last_date", "first_date"]);
-  const claims = readJson("assets/data/claims.json");
   const evidence = readJson("assets/data/evidence.json");
   const entities = readJson("assets/data/entities.json");
   const featuredEntitySlugs = readJson("assets/data/featured-entities.json");

@@ -132,6 +132,26 @@ a:hover {
 
 img { max-width: 100%; height: auto; }
 
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: 0.75rem;
+  z-index: 300;
+  padding: 0.6rem 0.85rem;
+  border-radius: var(--radius-sm);
+  background: var(--text);
+  color: var(--bg);
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  transform: translateY(-140%);
+  transition: transform var(--transition);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
 /* ── Header ─────────────────────────────────────────────────────────── */
 
 .site-header {
@@ -418,6 +438,16 @@ img { max-width: 100%; height: auto; }
   font-size: 1.1rem;
   font-weight: 600;
   margin: 1.5rem 0 0.5rem;
+}
+
+.page-intro {
+  margin-bottom: 1.5rem;
+}
+
+.page-intro p {
+  max-width: 68ch;
+  margin: 0;
+  color: var(--text-secondary);
 }
 
 /* ── Footer ─────────────────────────────────────────────────────────── */
@@ -994,6 +1024,22 @@ html[data-theme="dark"] .home-cta-secondary {
 }
 
 /* ── Report page ────────────────────────────────────────────────────── */
+
+.report-nav {
+  margin-bottom: 1rem;
+}
+
+.report-back {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.report-back:hover {
+  color: var(--accent);
+}
 
 .report-header {
   margin-bottom: 2rem;

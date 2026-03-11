@@ -8,10 +8,17 @@ const trackerUtils = require("../assets/js/tracker-utils.js");
  */
 module.exports = function () {
   const reportsDir = path.join(__dirname, "reports");
+  const claimsPath = path.join(__dirname, "..", "assets", "data", "claims.json");
 
   if (!fs.existsSync(reportsDir)) {
     return [];
   }
+
+  const sourceLookup = fs.existsSync(claimsPath)
+    ? trackerUtils.createNewsSourceLookup(
+        JSON.parse(fs.readFileSync(claimsPath, "utf-8"))
+      )
+    : null;
 
   const files = fs
     .readdirSync(reportsDir)
@@ -20,10 +27,6 @@ module.exports = function () {
 
   return files.map((f) => {
     const raw = fs.readFileSync(path.join(reportsDir, f), "utf-8");
-    const report = JSON.parse(raw);
-    return {
-      ...report,
-      summary: trackerUtils.normalizeReportSummary(report.summary),
-    };
+    return trackerUtils.enrichReportRecord(JSON.parse(raw), sourceLookup);
   });
 };

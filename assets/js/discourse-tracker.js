@@ -14,8 +14,12 @@
   const controllerLib = globalThis.ESBvaktinTrackerController || {};
   const createController = controllerLib.create;
   const escapeHtml = utils.escapeHtml || ((value) => String(value ?? ""));
+  const buildReturnUrl = utils.buildReturnUrl || (() => "");
   const formatIsDate = utils.formatIsDate || ((value) => String(value ?? ""));
   const normalizeReportSummary = utils.normalizeReportSummary || ((value) => String(value ?? ""));
+  const restoreReturnTarget = utils.restoreReturnTarget || (() => false);
+  const updateUrlQuery = utils.updateUrlQuery || (() => "");
+  const withReturnUrl = utils.withReturnUrl || ((url) => url);
   const DATA_BASE = utils.getDataBase
     ? utils.getDataBase(document.currentScript, "/assets/data")
     : (document.currentScript?.dataset.base || "/assets/data");
@@ -50,17 +54,25 @@
     category: "Efnisflokkur",
   };
 
+  const SORT_LABELS = {
+    article_date: "Dagsetning greinar",
+    analysis_date: "Dagsetning greiningar",
+    claim_count: "Fjöldi fullyrðinga",
+    article_source: "Fjölmiðill",
+  };
+
   const root = document.getElementById("discourse-tracker");
   if (!root || !renderer || !createController) return;
+  const params = new URLSearchParams(window.location.search);
 
   const controller = createController({
     root,
     initialState: {
-      search: "",
-      source: "",
-      category: "",
-      groupBy: "date",
-      sort: "article_date",
+      search: params.get("q") || "",
+      source: params.get("source") || "",
+      category: params.get("category") || "",
+      groupBy: params.get("group") || "date",
+      sort: params.get("sort") || "article_date",
       sortDir: "DESC",
     },
     initialData: [],
@@ -204,6 +216,7 @@
           id: "dt-search",
           className: "ct-search",
           wrapClass: "ct-search-wrap",
+          label: "Leita í greiningum",
           placeholder: "Leita í greiningum…",
           value: filters.search,
         },
@@ -213,6 +226,7 @@
             renderer.renderSelect({
               id: "dt-source",
               className: "ct-select",
+              label: "Fjölmiðill",
               placeholder: "Allir fjölmiðlar",
               options: sourceOptions,
               selectedValue: filters.source,
@@ -220,6 +234,7 @@
             renderer.renderSelect({
               id: "dt-category",
               className: "ct-select",
+              label: "Efnisflokkur",
               placeholder: "Allir flokkar",
               options: categoryOptions.map((value) => ({
                 value,
@@ -230,12 +245,14 @@
             renderer.renderSelect({
               id: "dt-group",
               className: "ct-select",
+              label: "Flokka eftir",
               options: Object.entries(GROUP_LABELS).map(([value, label]) => ({ value, label })),
               selectedValue: filters.groupBy,
             }),
             renderer.renderSelect({
               id: "dt-sort",
               className: "ct-select",
+              label: "Röðun",
               options: [
                 { value: "article_date", label: "Dagsetning greinar" },
                 { value: "analysis_date", label: "Dagsetning greiningar" },
@@ -251,6 +268,10 @@
       <div class="dt-legend">
         ${VERDICT_ORDER.map((verdict) => `<span class="dt-legend-item"><span class="dt-legend-dot ${VERDICT_CLASSES[verdict]}"></span>${VERDICT_LABELS[verdict]}</span>`).join("")}
       </div>
+
+      <div id="dt-active-filters"></div>
+
+      <p class="ct-results-meta" id="dt-results-meta" aria-live="polite"></p>
 
       <div class="dt-results" id="dt-results">
         ${renderer.renderMessage("Hleð greiningum…", "ct-loading")}
@@ -276,6 +297,8 @@
     const reports = queryReports();
     const el = document.getElementById("dt-results");
     if (!el) return;
+    renderActiveFilters();
+    updateResultsMeta(reports.length, getReports().length);
 
     if (reports.length === 0) {
       el.innerHTML = renderer.renderMessage("Engar greiningar fundust.", "ct-empty");
@@ -293,9 +316,23 @@
       renderHeader: (group, count) =>
         `<h3 class="dt-group-header">${escapeHtml(group.label)}<span class="dt-group-count">${count}</span></h3>`,
     });
+    restoreReturnTarget(el);
+  }
+
+  function updateResultsMeta(visibleCount, totalCount) {
+    const el = document.getElementById("dt-results-meta");
+    if (!el) return;
+
+    if (visibleCount === totalCount) {
+      el.textContent = `Sýni allar ${totalCount} greiningar.`;
+      return;
+    }
+
+    el.textContent = `Sýni ${visibleCount} af ${totalCount} greiningum.`;
   }
 
   function renderReportCard(report) {
+    const cardId = `dt-report-${report.slug}`;
     const sourceClass = SOURCE_CLASSES[report.article_source] || "source-other";
     const sourceBadge = report.article_source
       ? `<span class="dt-source-badge ${sourceClass}">${escapeHtml(report.article_source)}</span>`
@@ -336,15 +373,17 @@
       ? `<span class="ct-category-tag">${CATEGORY_LABELS[report.dominant_category] || report.dominant_category}</span>`
       : "";
 
+    const detailUrl = withReturnUrl(`/umraedan/${report.slug}/`, buildReturnUrl(cardId));
+
     return `
-      <div class="dt-card">
+      <div class="dt-card" id="${escapeHtml(cardId)}">
         <div class="dt-card-top">
           ${sourceBadge}
           ${categoryTag}
           ${externalLink}
         </div>
         <h4 class="dt-card-title">
-          <a href="/umraedan/${escapeHtml(report.slug)}/" class="dt-card-link">${escapeHtml(report.article_title)}</a>
+          <a href="${escapeHtml(detailUrl)}" class="dt-card-link">${escapeHtml(report.article_title)}</a>
         </h4>
         <div class="dt-card-meta">
           ${dateStr ? `<time>${dateStr}</time>` : ""}
@@ -359,28 +398,116 @@
     `;
   }
 
+  function getActiveFilterChips() {
+    const filters = getFilters();
+    const chips = [];
+
+    if (filters.search) {
+      chips.push({ key: "search", text: `Leit: ${filters.search}` });
+    }
+
+    if (filters.source) {
+      chips.push({ key: "source", text: `Fjölmiðill: ${filters.source}` });
+    }
+
+    if (filters.category) {
+      chips.push({ key: "category", text: `Efnisflokkur: ${CATEGORY_LABELS[filters.category] || filters.category}` });
+    }
+
+    if (filters.groupBy && filters.groupBy !== "date") {
+      chips.push({ key: "group", text: `Flokkun: ${GROUP_LABELS[filters.groupBy] || filters.groupBy}` });
+    }
+
+    if (filters.sort && filters.sort !== "article_date") {
+      chips.push({ key: "sort", text: `Röðun: ${SORT_LABELS[filters.sort] || filters.sort}` });
+    }
+
+    return chips;
+  }
+
+  function renderActiveFilters() {
+    const el = document.getElementById("dt-active-filters");
+    if (!el || typeof renderer.renderFilterChips !== "function") return;
+
+    el.innerHTML = renderer.renderFilterChips({
+      items: getActiveFilterChips(),
+      clearAllLabel: "Hreinsa allt",
+    });
+  }
+
+  function clearFilter(key, api) {
+    const patch = {};
+
+    if (key === "search") patch.search = "";
+    if (key === "source") patch.source = "";
+    if (key === "category") patch.category = "";
+    if (key === "group") patch.groupBy = "date";
+    if (key === "sort") patch.sort = "article_date";
+
+    commitState(patch, "all", api);
+  }
+
+  function clearAllFilters(api) {
+    commitState(
+      {
+        search: "",
+        source: "",
+        category: "",
+        groupBy: "date",
+        sort: "article_date",
+      },
+      "all",
+      api
+    );
+  }
+
+  function syncUrl(state) {
+    updateUrlQuery({
+      q: state.search,
+      source: state.source,
+      category: state.category,
+      group: state.groupBy === "date" ? "" : state.groupBy,
+      sort: state.sort === "article_date" ? "" : state.sort,
+    });
+  }
+
+  function commitState(patch, renderScope, api) {
+    const nextState = Object.assign({}, api.getState(), patch || {});
+    syncUrl(nextState);
+    api.setState(patch, renderScope);
+    return nextState;
+  }
+
   controller.bindInput(
     "#dt-search",
     (value, _target, _event, api) => {
-      api.setState({ search: value }, "results");
+      commitState({ search: value }, "results", api);
     },
     { debounceMs: 200, trim: true }
   );
 
   controller.bindChange("#dt-source", (value, _target, _event, api) => {
-    api.setState({ source: value }, "results");
+    commitState({ source: value }, "results", api);
   });
 
   controller.bindChange("#dt-category", (value, _target, _event, api) => {
-    api.setState({ category: value }, "results");
+    commitState({ category: value }, "results", api);
   });
 
   controller.bindChange("#dt-group", (value, _target, _event, api) => {
-    api.setState({ groupBy: value }, "results");
+    commitState({ groupBy: value }, "results", api);
   });
 
   controller.bindChange("#dt-sort", (value, _target, _event, api) => {
-    api.setState({ sort: value }, "results");
+    commitState({ sort: value }, "results", api);
+  });
+
+  controller.bindClick("[data-clear-filter]", (target, _event, api) => {
+    clearFilter(target.getAttribute("data-clear-filter"), api);
+  });
+
+  controller.bindClick("[data-clear-all-filters]", (_target, _event, api) => {
+    clearAllFilters(api);
   });
 
   controller.start();

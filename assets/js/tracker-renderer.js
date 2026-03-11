@@ -49,8 +49,8 @@
 
     if (config.id) attrs.push('id="' + escapeHtml(config.id) + '"');
     if (config.className) attrs.push('class="' + escapeHtml(config.className) + '"');
-
-    return "<select " + attrs.join(" ") + ">" + renderOptionTags(config) + "</select>";
+    var control = "<select " + attrs.join(" ") + ">" + renderOptionTags(config) + "</select>";
+    return wrapControl(control, config);
   }
 
   function renderSearchInput(config) {
@@ -66,9 +66,26 @@
     }
 
     var input = "<input " + attrs.join(" ") + " />";
-    if (!config.wrapClass) return input;
+    return wrapControl(input, config);
+  }
 
-    return '<div class="' + escapeHtml(config.wrapClass) + '">' + input + "</div>";
+  function wrapControl(control, config) {
+    var wrapClass = config.wrapClass;
+    var label = config.label;
+    var labelClass = config.labelClass || "tracker-label";
+
+    if (!label) {
+      if (!wrapClass) return control;
+      return '<div class="' + escapeHtml(wrapClass) + '">' + control + "</div>";
+    }
+
+    var classes = [wrapClass, "tracker-field"].filter(Boolean).join(" ");
+    return (
+      '<label class="' + escapeHtml(classes) + '">' +
+        '<span class="' + escapeHtml(labelClass) + '">' + escapeHtml(label) + "</span>" +
+        control +
+      "</label>"
+    );
   }
 
   function renderControlBlock(config) {
@@ -104,6 +121,54 @@
         );
       })
       .join("");
+  }
+
+  function renderFilterChips(config) {
+    var items = (config.items || []).filter(Boolean);
+    if (!items.length) return "";
+
+    var wrapperClass = config.wrapperClass || "tracker-active-filters";
+    var labelClass = config.labelClass || "tracker-active-label";
+    var listClass = config.listClass || "tracker-chip-list";
+    var chipClass = config.chipClass || "tracker-chip";
+    var removeClass = config.removeClass || "tracker-chip-remove";
+    var clearAllClass = config.clearAllClass || "tracker-clear-all";
+    var intro = config.intro || "Virk val:";
+    var clearAllLabel = config.clearAllLabel;
+
+    var chipsHtml = items
+      .map(function (item) {
+        var text = item.text;
+        if (!text) {
+          var parts = [];
+          if (item.label) parts.push(item.label);
+          if (item.value) parts.push(item.value);
+          text = parts.join(": ");
+        }
+
+        if (!text || !item.key) return "";
+
+        return (
+          '<button type="button" class="' + escapeHtml(chipClass) + '" data-clear-filter="' + escapeHtml(item.key) + '"' +
+            ' aria-label="Hreinsa val: ' + escapeHtml(text) + '">' +
+            '<span class="tracker-chip-text">' + escapeHtml(text) + "</span>" +
+            '<span class="' + escapeHtml(removeClass) + '" aria-hidden="true">&times;</span>' +
+          "</button>"
+        );
+      })
+      .join("");
+
+    var clearAllHtml = clearAllLabel
+      ? '<button type="button" class="' + escapeHtml(clearAllClass) + '" data-clear-all-filters>' + escapeHtml(clearAllLabel) + "</button>"
+      : "";
+
+    return (
+      '<div class="' + escapeHtml(wrapperClass) + '" aria-label="Virk val">' +
+        '<span class="' + escapeHtml(labelClass) + '">' + escapeHtml(intro) + "</span>" +
+        '<div class="' + escapeHtml(listClass) + '">' + chipsHtml + "</div>" +
+        clearAllHtml +
+      "</div>"
+    );
   }
 
   function renderCollection(config) {
@@ -154,6 +219,7 @@
     renderCollection: renderCollection,
     renderControlBlock: renderControlBlock,
     renderGroupedCollection: renderGroupedCollection,
+    renderFilterChips: renderFilterChips,
     renderMessage: renderMessage,
     renderOptionTags: renderOptionTags,
     renderSearchInput: renderSearchInput,
