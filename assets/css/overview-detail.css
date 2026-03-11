@@ -139,6 +139,20 @@
   font-style: normal;
 }
 
+.od-quote cite a {
+  color: inherit;
+  text-decoration-color: var(--border);
+}
+
+.od-quote cite a:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+
+.od-quote footer .ct-category-tag {
+  text-decoration: none;
+}
+
 /* ── Topic activity table ── */
 
 .od-topics {
@@ -192,18 +206,38 @@
 }
 
 .od-claim-row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.5rem;
-  padding: 0.5rem 0;
+  display: grid;
+  gap: 0.35rem;
+  padding: 0.65rem 0;
   border-bottom: 1px solid var(--border);
 }
 
+.od-claim-row .ct-verdict-pill {
+  justify-self: start;
+}
+
 .od-claim-text {
-  flex: 1;
-  min-width: 200px;
   font-size: 0.9rem;
+}
+
+.od-claim-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.75rem;
+  font-size: 0.78rem;
+}
+
+.od-claim-sources {
+  color: var(--text-secondary);
+}
+
+.od-claim-source-link {
+  color: var(--text-secondary);
+}
+
+.od-claim-source-link:hover {
+  color: var(--accent);
 }
 
 /* ── Active entities ── */

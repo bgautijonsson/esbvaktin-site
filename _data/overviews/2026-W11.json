@@ -4,8 +4,8 @@
   "period_end": "2026-03-15",
   "period_type": "weekly",
   "key_numbers": {
-    "articles_analysed": 17,
-    "new_claims": 564,
+    "articles_analysed": 18,
+    "new_claims": 585,
     "new_claims_published": 277,
     "verdict_breakdown": {
       "misleading": 18,
@@ -16,7 +16,7 @@
     },
     "entities_active": 5,
     "topics_active": 11,
-    "diversity_score": 0.8681
+    "diversity_score": 0.8621
   },
   "previous_period": {
     "articles_analysed": 0,
@@ -27,25 +27,25 @@
     {
       "topic": "sovereignty",
       "label_is": "Fullveldi",
-      "sightings": 16,
+      "sightings": 17,
       "new_claims": 43,
-      "delta": "+16",
+      "delta": "+17",
       "slug": "sovereignty"
     },
     {
       "topic": "eea_eu_law",
       "label_is": "EES og löggjöf ESB",
-      "sightings": 14,
+      "sightings": 16,
       "new_claims": 59,
-      "delta": "+14",
+      "delta": "+16",
       "slug": "eea-eu-law"
     },
     {
       "topic": "party_positions",
       "label_is": "Afstaða stjórnmálaflokka",
-      "sightings": 11,
+      "sightings": 12,
       "new_claims": 28,
-      "delta": "+11",
+      "delta": "+12",
       "slug": "party-positions"
     },
     {
@@ -57,6 +57,14 @@
       "slug": "agriculture"
     },
     {
+      "topic": "org_positions",
+      "label_is": "Afstaða stofnana og samtaka",
+      "sightings": 5,
+      "new_claims": 12,
+      "delta": "+5",
+      "slug": "org-positions"
+    },
+    {
       "topic": "precedents",
       "label_is": "Fordæmi annarra ríkja",
       "sightings": 5,
@@ -65,12 +73,12 @@
       "slug": "precedents"
     },
     {
-      "topic": "org_positions",
-      "label_is": "Afstaða stofnana og samtaka",
-      "sightings": 5,
-      "new_claims": 12,
-      "delta": "+5",
-      "slug": "org-positions"
+      "topic": "housing",
+      "label_is": "Húsnæðismál",
+      "sightings": 4,
+      "new_claims": 3,
+      "delta": "+4",
+      "slug": "housing"
     },
     {
       "topic": "polling",
@@ -81,14 +89,6 @@
       "slug": "polling"
     },
     {
-      "topic": "housing",
-      "label_is": "Húsnæðismál",
-      "sightings": 3,
-      "new_claims": 3,
-      "delta": "+3",
-      "slug": "housing"
-    },
-    {
       "topic": "fisheries",
       "label_is": "Sjávarútvegur",
       "sightings": 2,
@@ -97,20 +97,20 @@
       "slug": "fisheries"
     },
     {
-      "topic": "currency",
-      "label_is": "Gjaldmiðill og peningamál",
-      "sightings": 1,
-      "new_claims": 4,
-      "delta": "+1",
-      "slug": "currency"
-    },
-    {
       "topic": "trade",
       "label_is": "Viðskipti og verslun",
       "sightings": 1,
       "new_claims": 10,
       "delta": "+1",
       "slug": "trade"
+    },
+    {
+      "topic": "currency",
+      "label_is": "Gjaldmiðill og peningamál",
+      "sightings": 1,
+      "new_claims": 4,
+      "delta": "+1",
+      "slug": "currency"
     }
   ],
   "top_claims": [
@@ -121,8 +121,14 @@
       "category_is": "Húsnæðismál",
       "sighting_count": 2,
       "sources": [
-        "25. þáttur Silfursins: Stefnt að kosningu um ESB í sumar",
-        "Snorri segir húsnæði verða jafndýrt þótt vextir lækki"
+        {
+          "title": "25. þáttur Silfursins: Stefnt að kosningu um ESB í sumar",
+          "slug": "25-thattur-silfursins-stefnt-ad-kosningu-um-esb-i-sumar"
+        },
+        {
+          "title": "Snorri segir húsnæði verða jafndýrt þótt vextir lækki",
+          "slug": "snorri-segir-husnaedi-verda-jafndyrt-thott-vextir-laekki"
+        }
       ]
     },
     {
@@ -132,7 +138,27 @@
       "category_is": "Viðskipti og verslun",
       "sighting_count": 1,
       "sources": [
-        "Snorri segir húsnæði verða jafndýrt þótt vextir lækki"
+        {
+          "title": "Snorri segir húsnæði verða jafndýrt þótt vextir lækki",
+          "slug": "snorri-segir-husnaedi-verda-jafndyrt-thott-vextir-laekki"
+        }
+      ]
+    },
+    {
+      "canonical_text_is": "Ísland á aðild að ETS-viðskiptakerfinu í gegnum EES-samninginn.",
+      "verdict": "unsupported",
+      "category": "eea-eu-law",
+      "category_is": "EES og löggjöf ESB",
+      "sighting_count": 2,
+      "sources": [
+        {
+          "title": "Spursmál #115 — Er Ísland á leið inn í Evrópusambandið?",
+          "slug": "spursmal-115-er-island-a-leid-inn-i-evropusambandid"
+        },
+        {
+          "title": "Þorgerður Katrín Gunnarsdóttir — þjóðaratkvæðagreiðsla um framhald viðræðna um aðild Íslands að Evrópusambandinu",
+          "slug": "thorgerdur-katrin-gunnarsdottir-thjodaratkvaedagreidsla-um-framhald-vidraedna-um-adild-islands-ad-evropusambandinu"
+        }
       ]
     },
     {
@@ -142,17 +168,10 @@
       "category_is": "Fullveldi",
       "sighting_count": 1,
       "sources": [
-        "Bandaríkjamönnum hugnast ekki innganga Íslands í ESB"
-      ]
-    },
-    {
-      "canonical_text_is": "Ísland á aðild að ETS-viðskiptakerfinu í gegnum EES-samninginn.",
-      "verdict": "unsupported",
-      "category": "eea_eu_law",
-      "category_is": "EES og löggjöf ESB",
-      "sighting_count": 1,
-      "sources": [
-        "Þorgerður Katrín Gunnarsdóttir — þjóðaratkvæðagreiðsla um framhald viðræðna um aðild Íslands að Evrópusambandinu"
+        {
+          "title": "Bandaríkjamönnum hugnast ekki innganga Íslands í ESB",
+          "slug": "bandarikjamonnum-hugnast-ekki-innganga-islands-i-esb"
+        }
       ]
     },
     {
@@ -162,60 +181,91 @@
       "category_is": "Fullveldi",
       "sighting_count": 3,
       "sources": [
-        "25. þáttur Silfursins: Stefnt að kosningu um ESB í sumar",
-        "Saka Þorgerði um brot á þingsköpum",
-        "Tekist á um þingskaparlög: Rífast um keisarans skegg"
+        {
+          "title": "25. þáttur Silfursins: Stefnt að kosningu um ESB í sumar",
+          "slug": "25-thattur-silfursins-stefnt-ad-kosningu-um-esb-i-sumar"
+        },
+        {
+          "title": "Saka Þorgerði um brot á þingsköpum",
+          "slug": "saka-thorgerdi-um-brot-a-thingskopum"
+        },
+        {
+          "title": "Tekist á um þingskaparlög: Rífast um keisarans skegg",
+          "slug": "tekist-a-um-thingskaparlog-rifast-um-keisarans-skegg"
+        }
+      ]
+    },
+    {
+      "canonical_text_is": "Vextir á húsnæðislán á Íslandi eru frá 8%, en í Evrópusambandinu eru algengir vextir húsnæðislána frá 3,2% til 3,5% samkvæmt Seðlabanka Evrópu.",
+      "verdict": "partially_supported",
+      "category": "housing",
+      "category_is": "Húsnæðismál",
+      "sighting_count": 2,
+      "sources": [
+        {
+          "title": "Snorri segir húsnæði verða jafndýrt þótt vextir lækki",
+          "slug": "snorri-segir-husnaedi-verda-jafndyrt-thott-vextir-laekki"
+        },
+        {
+          "title": "Spursmál #115 — Er Ísland á leið inn í Evrópusambandið?",
+          "slug": "spursmal-115-er-island-a-leid-inn-i-evropusambandid"
+        }
       ]
     },
     {
       "canonical_text_is": "Fyrri ríkisstjórnir lofuðu þjóðaratkvæðagreiðslu um ESB-viðræður en stóðu ekki við loforðið.",
       "verdict": "partially_supported",
-      "category": "party_positions",
+      "category": "party-positions",
       "category_is": "Afstaða stjórnmálaflokka",
       "sighting_count": 2,
       "sources": [
-        "25. þáttur Silfursins: Stefnt að kosningu um ESB í sumar",
-        "Að kljúfa þjóðina með tilfinningaþrunginni spurningu"
+        {
+          "title": "25. þáttur Silfursins: Stefnt að kosningu um ESB í sumar",
+          "slug": "25-thattur-silfursins-stefnt-ad-kosningu-um-esb-i-sumar"
+        },
+        {
+          "title": "Að kljúfa þjóðina með tilfinningaþrunginni spurningu",
+          "slug": "ad-kljufa-thjodina-med-tilfinningathrunginni-spurningu"
+        }
       ]
     },
     {
       "canonical_text_is": "Viðreisn telur ásakanir um brot á þingskapalögum hlægilegar þar sem ákvæðin séu til að koma í veg fyrir einhliða ákvarðanir um utanríkisstefnu án samráðs við Alþingi.",
       "verdict": "partially_supported",
-      "category": "party_positions",
+      "category": "party-positions",
       "category_is": "Afstaða stjórnmálaflokka",
       "sighting_count": 1,
       "sources": [
-        "Saka Þorgerði um brot á þingsköpum"
+        {
+          "title": "Saka Þorgerði um brot á þingsköpum",
+          "slug": "saka-thorgerdi-um-brot-a-thingskopum"
+        }
       ]
     },
     {
       "canonical_text_is": "Miðflokkurinn hafi verið á fundum með Repúblikanaflokknum í Bandaríkjunum.",
       "verdict": "partially_supported",
-      "category": "party_positions",
+      "category": "party-positions",
       "category_is": "Afstaða stjórnmálaflokka",
       "sighting_count": 1,
       "sources": [
-        "Bandaríkjamönnum hugnast ekki innganga Íslands í ESB"
+        {
+          "title": "Bandaríkjamönnum hugnast ekki innganga Íslands í ESB",
+          "slug": "bandarikjamonnum-hugnast-ekki-innganga-islands-i-esb"
+        }
       ]
     },
     {
       "canonical_text_is": "95% af reglubókum ESB eru óhagganlegar og umsóknarríki geta aðeins samið um tímalínu innleiðingar, ekki um undanþágur.",
       "verdict": "partially_supported",
-      "category": "eea_eu_law",
+      "category": "eea-eu-law",
       "category_is": "EES og löggjöf ESB",
       "sighting_count": 1,
       "sources": [
-        "ESB-pakkinn er galopinn"
-      ]
-    },
-    {
-      "canonical_text_is": "Dönsk stjórnvöld stefna að því að breyta 390.000 hekturum af landbúnaðarlandi (250.000 ha í skóg, 140.000 ha í votlendi), sem samsvarar um 10% af ræktuðu landi.",
-      "verdict": "partially_supported",
-      "category": "precedents",
-      "category_is": "Fordæmi annarra ríkja",
-      "sighting_count": 1,
-      "sources": [
-        "390.000 hektarar af landbúnaðarlandi breytast í skóg og votlendi"
+        {
+          "title": "ESB-pakkinn er galopinn",
+          "slug": "esb-pakkinn-er-galopinn"
+        }
       ]
     }
   ],
@@ -289,6 +339,14 @@
       "date": "2026-03-09",
       "claim_count": 1,
       "dominant_category": "sovereignty"
+    },
+    {
+      "title": "Spursmál #115 — Er Ísland á leið inn í Evrópusambandið?",
+      "source": "podcasters.spotify.com",
+      "url": "https://podcasters.spotify.com/pod/show/spursmal/episodes/115----Er-sland--lei-inn--Evrpusambandi-e3g60di",
+      "date": "2026-03-09",
+      "claim_count": 33,
+      "dominant_category": "currency"
     },
     {
       "title": "Þorgerður Katrín Gunnarsdóttir — þjóðaratkvæðagreiðsla um framhald viðræðna um aðild Íslands að Evrópusambandinu",
@@ -407,6 +465,7 @@
     "visir.is": 9,
     "mbl.is": 3,
     "heimildin.is": 3,
+    "podcasters.spotify.com": 1,
     "althingi.is": 1,
     "shows.acast.com": 1
   },
@@ -416,35 +475,46 @@
       "speaker": "Guðrún Hafsteinsdóttir",
       "source": "25. þáttur Silfursins: Stefnt að kosningu um ESB í sumar",
       "verdict": "misleading",
-      "category_is": "Húsnæðismál"
+      "category": "housing",
+      "category_is": "Húsnæðismál",
+      "speaker_slug": "gudrun-hafsteinsdottir",
+      "source_slug": "25-thattur-silfursins-stefnt-ad-kosningu-um-esb-i-sumar"
     },
     {
       "text": "ESB hafi áhuga á að fá Ísland inn sem hluta af stærri stækkunarpakka vegna þess að Ísland sé efnahagslega eftirsóknarvert.",
       "speaker": "Óþekkt",
       "source": "Snorri segir húsnæði verða jafndýrt þótt vextir lækki",
       "verdict": "misleading",
-      "category_is": "Viðskipti og verslun"
+      "category": "trade",
+      "category_is": "Viðskipti og verslun",
+      "source_slug": "snorri-segir-husnaedi-verda-jafndyrt-thott-vextir-laekki"
     },
     {
       "text": "Lægri vextir myndu ekki lækka húsnæðisverð vegna þess að framboð og eftirspurn ráða verði fasteigna, ekki vaxtastig.",
       "speaker": "Óþekkt",
       "source": "Snorri segir húsnæði verða jafndýrt þótt vextir lækki",
       "verdict": "misleading",
-      "category_is": "Húsnæðismál"
+      "category": "housing",
+      "category_is": "Húsnæðismál",
+      "source_slug": "snorri-segir-husnaedi-verda-jafndyrt-thott-vextir-laekki"
     },
     {
       "text": "Ríkisstjórn Bandaríkjanna hafi hag af því að halda Íslandi fyrir utan Evrópusambandið vegna varnarhagsmuna og viðskiptahagsmuna.",
       "speaker": "Óþekkt",
       "source": "Bandaríkjamönnum hugnast ekki innganga Íslands í ESB",
       "verdict": "unsupported",
-      "category_is": "Fullveldi"
+      "category": "sovereignty",
+      "category_is": "Fullveldi",
+      "source_slug": "bandarikjamonnum-hugnast-ekki-innganga-islands-i-esb"
     },
     {
       "text": "Þegar innri markaður ESB var stofnaður gerðist Ísland aðili að EES-samningnum.",
       "speaker": "Óþekkt",
       "source": "Þorgerður Katrín Gunnarsdóttir — þjóðaratkvæðagreiðsla um framhald viðræðna um aðild Íslands að Evrópusambandinu",
       "verdict": "unsupported",
-      "category_is": "EES og löggjöf ESB"
+      "category": "eea-eu-law",
+      "category_is": "EES og löggjöf ESB",
+      "source_slug": "thorgerdur-katrin-gunnarsdottir-thjodaratkvaedagreidsla-um-framhald-vidraedna-um-adild-islands-ad-evropusambandinu"
     }
   ],
   "editorial": "# Vikuyfirlit — 9.–15. mars 2026\n\nÞorgerður Katrín Gunnarsdóttir lagði fram þingsályktunartillögu um þjóðaratkvæðagreiðslu um aðildarviðræður og setti af stað fimmtán greinar á einum degi. Úr því varð kveikjan að rúmlega helmingi allrar þeirrar umræðu sem skráð var í vikunni — 17 greinar samtals, 564 fullyrðingar, þar af 277 birtar.\n\nRæðan á Alþingi skilaði 21 fullyrðingu sem greind var, fleiri en nokkur önnur einstök heimild vikunnar. Þar kom meðal annars fram sú fullyrðing að Ísland ætti aðild að ETS-viðskiptakerfinu í gegnum EES-samninginn — fullyrðing sem hlaut úrskurðinn óstudd. Í kjölfarið snerist hluti umræðunnar um þingskapalegar reglur: hvort utanríkisráðherrann hefði borið tillöguna undir utanríkismálanefnd eða ekki. Þrjár greinar greindu þann ágreining; úrskurðurinn var studd að hluta, þar sem sannleikurinn lá í túlkun á þingskapalögum sem báðar hliðar beittu með mismunandi niðurstöðu.\n\nVillandi fullyrðingar voru þrjár að tölu og allar tengdar efnahagslegu rökfærslu gegn aðild. Guðrún Hafsteinsdóttir hélt því fram í þættinum Silfurinn að lágir vextir þýddu ekki endilega auðveldari aðgang að húsnæðismarkaðnum vegna þess að „framboð og eftirspurn ráðu verði fasteigna, ekki vaxtastig.\" Þetta er villandi: skjalfest rannsóknargögn staðfesta að vaxtastig hefur bein áhrif á fasteignaverð. Í sömu grein kom fram sú fullyrðing að ESB hefði sérstakan áhuga á Íslandi sem hluta af stærri stækkunarpakka vegna efnahagslegs aðdráttarkrafts landsins — jafnt villandi, þar sem ESB leitar ekki virkt eftir aðild Íslands. Báðar fullyrðingar beindu í sömu átt: Að gera efnahagslegar rökstudningar við aðild tortryggilegar, en hver á sinn hátt rangar.\n\nÍ þriðju villandi grein kom fram að ríkisstjórn Bandaríkjanna hefði hag af því að halda Íslandi utan ESB vegna varnar- og viðskiptahagsmuna. Þetta hlaut úrskurðinn óstudd. Samhliða kom fram að Miðflokkurinn hefði átt fundi með Repúblikanaflokknum í Bandaríkjunum — fullyrðing sem hlaut úrskurðinn studd að hluta, en samhengi vantar.\n\nLandbúnaður og EES-löggjöf voru efnisríkust: EES-efni hafði 59 fullyrðingar og landbúnaðarmál 41, að mestu leyti þökk sé Silfursþættinum þar sem 51 fullyrðing greindist á einum þætti 10. mars. Fullveldi kom þar á eftir með 43 fullyrðingar. Sjávarútvegur fékk takmarkað rými — tvær greinar, 23 fullyrðingar — sem er tiltölulega lítið miðað við þá ræðu sem þekkist um sameiginlega sjávarútvegsstefnu ESB í íslensku samhengi.\n\nVisir.is stóð að níu af sautján greiningum. Mbl.is og heimildin.is komu hvort með þrjár. Þingræðan frá althingi. is og Silfurinn-þátturinn á Acast voru hvort um sig ein heimild. Fjölbreytnikvisturinn var 0,87 — há tala sem endurspeglar dreifingu efnis yfir ellefu málefnaflokka. En efnisleg fjölbreytni var þrengri: Þingskapalegar formreglur fékk þrjár greinar og húsnæðisverð tvær — en sjávarútvegur, sem er eitt meginmálefnið í umræðunni, fékk ekki fleiri.\n\nUmræðan bar öll merki þess að vera að mestu til komin vegna einnar ráðstöfunar og viðbragða við henni. Grein sem byggist á viðbrögðum er einhæfari en grein sem byggist á efni, og þegar þingskaparlegar formreglur hljóta jafn mikla athygli og sjávarútvegur er til marks um að pólitísk sviðssetning hafi ráðið vikubraginu fremur en málefnaleg dýpt."

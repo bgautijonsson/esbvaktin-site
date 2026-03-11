@@ -95,13 +95,21 @@ return_link_support: true
       <p>{{ quote.text }}</p>
       <footer>
         <cite>
-          {% if quote.speaker %}<strong>{{ quote.speaker }}</strong>{% endif %}
-          {% if quote.source %} — {{ quote.source }}{% endif %}
+          {% if quote.speaker_slug %}
+            <strong><a href="/raddirnar/{{ quote.speaker_slug }}/">{{ quote.speaker }}</a></strong>
+          {% elif quote.speaker %}
+            <strong>{{ quote.speaker }}</strong>
+          {% endif %}
+          {% if quote.source_slug %} — <a href="/umraedan/{{ quote.source_slug }}/">{{ quote.source }}</a>
+          {% elif quote.source %} — {{ quote.source }}{% endif %}
         </cite>
         {% if quote.verdict %}
           <span class="ct-verdict-pill verdict-{{ quote.verdict | replace("partially_supported", "partial") }}">
             {{ quote.verdict | verdictLabel }}
           </span>
+        {% endif %}
+        {% if quote.category %}
+          <a href="/malefni/{{ quote.category }}/" class="ct-category-tag">{{ quote.category_is }}</a>
         {% endif %}
       </footer>
     </blockquote>
@@ -146,9 +154,18 @@ return_link_support: true
         {{ item.verdict | verdictLabel }}
       </span>
       <span class="od-claim-text">{{ item.canonical_text_is }}</span>
-      {% if item.category_is %}
-        <span class="ct-category-tag">{{ item.category_is }}</span>
-      {% endif %}
+      <div class="od-claim-meta">
+        {% if item.category %}
+          <a href="/malefni/{{ item.category }}/" class="ct-category-tag">{{ item.category_is }}</a>
+        {% endif %}
+        {% if item.sources | length %}
+          <span class="od-claim-sources">
+            {% for src in item.sources %}
+              <a href="/umraedan/{{ src.slug }}/" class="od-claim-source-link">{{ src.title }}</a>{% if not loop.last %}, {% endif %}
+            {% endfor %}
+          </span>
+        {% endif %}
+      </div>
     </div>
     {% endfor %}
   </section>
