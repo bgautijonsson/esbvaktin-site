@@ -1,6 +1,7 @@
 /* ESBvaktin Entity Tracker — Styles
  *
  * Uses global CSS custom properties from style.css.
+ * Shared controls/stats/grids/responsive in tracker-base.css.
  * Prefix: et-* (entity tracker)
  */
 
@@ -11,105 +12,10 @@
   color: var(--text);
 }
 
-/* ── Stats bar ───────────────────────────────────────────────────── */
+/* ── Stats bar — colour overrides only; base in tracker-base.css ── */
 
 .et-stats {
-  display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 1.5rem;
-}
-
-.et-stat {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 0.5rem 0.75rem;
-  text-align: center;
-  min-width: 70px;
-}
-
-.et-stat-num {
-  display: block;
-  font-size: 1.25rem;
-  font-weight: 700;
-}
-
-.et-stat-label {
-  display: block;
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--text-secondary);
-}
-
-.et-stat-loading {
-  color: var(--text-secondary);
-  font-size: 0.9rem;
-  padding: 0.5rem;
-}
-
-/* ── Controls ────────────────────────────────────────────────────── */
-
-.et-controls {
-  margin-bottom: 1.25rem;
-}
-
-.et-search-wrap {
-  margin-bottom: 0.75rem;
-}
-
-.et-search {
-  width: 100%;
-  padding: 0.6rem 0.75rem;
-  font-size: 0.95rem;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--bg);
-  color: var(--text);
-  box-sizing: border-box;
-  transition: border-color var(--transition);
-}
-
-.et-search:focus {
-  outline: none;
-  border-color: var(--accent);
-  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
-}
-
-.et-filter-row {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-}
-
-.et-select {
-  flex: 1;
-  min-width: 120px;
-  padding: 0.45rem 0.6rem;
-  font-size: 0.85rem;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--bg);
-  color: var(--text);
-  cursor: pointer;
-}
-
-/* ── Loading / empty ─────────────────────────────────────────────── */
-
-.et-loading, .et-empty {
-  text-align: center;
-  padding: 2rem;
-  color: var(--text-secondary);
-}
-
-/* ── Results grid ────────────────────────────────────────────────── */
-
-.et-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 0.9rem;
 }
 
 /* ── Entity card ─────────────────────────────────────────────────── */
@@ -118,13 +24,9 @@
   background: var(--bg);
   border: 1px solid var(--border);
   border-left: 2px solid hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 45%);
-  border-radius: 10px;
+  border-radius: var(--radius);
   padding: 1rem;
   transition: border-color var(--transition), background var(--transition);
-}
-
-.et-card:hover {
-  background: var(--bg-card);
 }
 
 .et-card-top {
@@ -218,7 +120,7 @@
   color: var(--text-secondary);
   background: var(--bg-alt);
   padding: 0.12rem 0.4rem;
-  border-radius: 6px;
+  border-radius: var(--radius-sm);
 }
 
 .et-althingi-badge {
@@ -409,7 +311,7 @@
   padding: 0.9rem 1rem;
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: 10px;
+  border-radius: var(--radius);
   font-size: 0.9rem;
   color: var(--text-secondary);
 }
@@ -433,11 +335,5 @@
 /* ── Responsive ──────────────────────────────────────────────────── */
 
 @media (max-width: 600px) {
-  .et-grid { grid-template-columns: 1fr; }
-  .et-filter-row { flex-direction: column; }
-  .et-select { min-width: unset; }
-  .et-stats { gap: 0.4rem; }
-  .et-stat { min-width: 55px; padding: 0.35rem 0.5rem; }
-  .et-stat-num { font-size: 1.1rem; }
   .et-stance-label { display: none; }
 }

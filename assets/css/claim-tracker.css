@@ -1,6 +1,7 @@
 /* ESBvaktin Claim Tracker — Styles
  *
  * Uses global CSS custom properties from style.css.
+ * Shared controls/stats/responsive in tracker-base.css.
  */
 
 /* ── Layout ──────────────────────────────────────────────────────── */
@@ -32,6 +33,7 @@
 .ct-stat-partial .ct-stat-num { color: var(--yellow); }
 .ct-stat-misleading .ct-stat-num { color: var(--red); }
 .ct-stat-unverifiable .ct-stat-num { color: var(--grey); }
+
 /* ── Results ─────────────────────────────────────────────────────── */
 
 .ct-results {
@@ -45,15 +47,10 @@
 .ct-card {
   background: var(--bg);
   border: 1px solid var(--border);
-  border-radius: 10px;
+  border-radius: var(--radius);
   box-shadow: none;
   overflow: hidden;
   transition: border-color var(--transition), background var(--transition);
-}
-
-.ct-card:hover {
-  border-color: var(--accent);
-  background: var(--bg-card);
 }
 
 .ct-card--focused {
@@ -188,7 +185,7 @@
   padding: 0.3rem 0.5rem;
   background: var(--bg-alt);
   border: 1px solid var(--border);
-  border-radius: 6px;
+  border-radius: var(--radius-sm);
 }
 
 .ct-sighting-item a {
@@ -211,9 +208,4 @@
 
 @media (max-width: 600px) {
   .ct-header h2 { font-size: 1.4rem; }
-  .ct-stats { gap: 0.4rem; }
-  .ct-stat { min-width: 55px; padding: 0.35rem 0.5rem; }
-  .ct-stat-num { font-size: 1.1rem; }
-  .ct-filter-row { flex-direction: column; }
-  .ct-select { min-width: unset; }
 }

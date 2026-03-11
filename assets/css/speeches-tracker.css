@@ -1,7 +1,7 @@
 /* ESBvaktin Speeches Tracker — Styles
  *
  * Prefix: st-* (speeches-tracker)
- * Reuses ct-* shared control classes from discourse-tracker.css pattern.
+ * Shared controls/grids/cards/groups/responsive in tracker-base.css.
  * Uses global CSS custom properties from style.css.
  */
 
@@ -24,7 +24,7 @@
   margin-bottom: 1rem;
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: 10px;
+  border-radius: var(--radius);
 }
 
 .st-period-copy {
@@ -68,7 +68,7 @@
   padding: 0.55rem 0.75rem;
   background: var(--bg);
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: var(--radius);
   color: var(--text);
   cursor: pointer;
   transition: border-color var(--transition), background var(--transition), color var(--transition);
@@ -153,106 +153,6 @@
   background: var(--bg-alt);
 }
 
-/* ── Grid ────────────────────────────────────────────────────────── */
-
-.st-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  gap: 0.9rem;
-}
-
-/* ── Group headers ───────────────────────────────────────────────── */
-
-.st-group {
-  margin-bottom: 1.5rem;
-}
-
-.st-group-header {
-  font-family: var(--font-heading);
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--text);
-  margin: 0 0 0.75rem;
-  padding-bottom: 0.35rem;
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.st-group-count {
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: var(--text-secondary);
-  background: var(--bg-alt);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 0.1rem 0.45rem;
-}
-
-/* ── Debate card ─────────────────────────────────────────────────── */
-
-.st-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 0.95rem;
-  color: var(--text);
-  transition: border-color var(--transition), background var(--transition);
-}
-
-.st-card:hover {
-  border-color: var(--accent);
-  background: var(--bg-card);
-}
-
-/* Stretched link — title link covers the entire card */
-.st-card-link {
-  color: inherit;
-  text-decoration: none;
-}
-
-.st-card-link::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-}
-
-.st-card-link:hover {
-  text-decoration: none;
-}
-
-.st-card-top {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  min-width: 0;
-}
-
-.st-card-title {
-  font-size: 1.05rem;
-  font-weight: 600;
-  margin: 0;
-  line-height: 1.3;
-}
-
-.st-card-meta {
-  display: flex;
-  gap: 0.75rem;
-  align-items: center;
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-}
-
-.st-card-meta time {
-  white-space: nowrap;
-}
-
 /* ── Session badge ───────────────────────────────────────────────── */
 
 .st-session-badge {
@@ -332,30 +232,6 @@
   white-space: nowrap;
 }
 
-/* ── Althingi link — sits above the stretched card link ──────────── */
-
-.st-althingi-link {
-  position: relative;
-  z-index: 1;
-  margin-left: auto;
-  font-size: 0.7rem;
-  font-weight: 600;
-  color: var(--accent);
-  text-decoration: none;
-  padding: 0.2rem 0.5rem;
-  border: 1px solid var(--accent);
-  border-radius: var(--radius);
-  white-space: nowrap;
-  flex-shrink: 0;
-  transition: color var(--transition), background var(--transition);
-}
-
-.st-althingi-link:hover {
-  color: #fff;
-  background: var(--accent);
-  text-decoration: none;
-}
-
 /* ── Responsive ──────────────────────────────────────────────────── */
 
 @media (max-width: 600px) {
@@ -371,22 +247,6 @@
   .st-period-button {
     min-width: 0;
     width: 100%;
-  }
-
-  .st-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .ct-filter-row {
-    flex-direction: column;
-  }
-
-  .ct-select {
-    min-width: unset;
-  }
-
-  .st-card-meta {
-    flex-wrap: wrap;
   }
 
   .st-card-footer {

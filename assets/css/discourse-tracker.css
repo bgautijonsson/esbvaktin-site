@@ -1,7 +1,7 @@
 /* ESBvaktin Discourse Tracker — Styles
  *
  * Uses global CSS custom properties from style.css.
- * Includes shared ct-* control/stat styles (also used by claim-tracker).
+ * Shared controls/grids/cards/groups/responsive in tracker-base.css.
  */
 
 /* ── Layout ──────────────────────────────────────────────────────── */
@@ -45,107 +45,11 @@
   margin-top: 0.5rem;
 }
 
-/* ── Grid ────────────────────────────────────────────────────────── */
-
-.dt-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 0.9rem;
-}
-
-/* ── Group headers ───────────────────────────────────────────────── */
-
-.dt-group {
-  margin-bottom: 1.5rem;
-}
-
-.dt-group-header {
-  font-family: var(--font-heading);
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--text);
-  margin: 0 0 0.75rem;
-  padding-bottom: 0.35rem;
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.dt-group-count {
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: var(--text-secondary);
-  background: var(--bg-alt);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 0.1rem 0.45rem;
-}
-
-/* ── Report card ─────────────────────────────────────────────────── */
-
-.dt-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 0.95rem;
-  color: var(--text);
-  transition: border-color var(--transition), background var(--transition);
-}
-
-.dt-card:hover {
-  border-color: var(--accent);
-  background: var(--bg-card);
-}
-
-/* Stretched link — title link covers the entire card */
-.dt-card-link {
-  color: inherit;
-  text-decoration: none;
-}
-
-.dt-card-link::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-}
-
-.dt-card-link:hover {
-  text-decoration: none;
-}
-
-.dt-card-top {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  min-width: 0;
-}
-
 /* Let category tag shrink when the row is tight */
 .dt-card-top .ct-category-tag {
   overflow: hidden;
   text-overflow: ellipsis;
   min-width: 0;
-}
-
-.dt-card-title {
-  font-size: 1.05rem;
-  font-weight: 600;
-  margin: 0;
-  line-height: 1.3;
-}
-
-.dt-card-meta {
-  display: flex;
-  gap: 0.75rem;
-  align-items: center;
-  font-size: 0.8rem;
-  color: var(--text-secondary);
 }
 
 .dt-card-meta time {
@@ -217,50 +121,15 @@
 }
 
 /* Source-specific colours */
-.source-visir {
-  background: #1a73e8;
-  color: #fff;
-}
-
-.source-ruv {
-  background: #b91c1c;
-  color: #fff;
-}
-
-.source-mbl {
-  background: #1e3a5f;
-  color: #fff;
-}
-
-.source-heimildin {
-  background: #7c3aed;
-  color: #fff;
-}
-
-.source-kjarninn {
-  background: #059669;
-  color: #fff;
-}
-
-.source-stundin {
-  background: #d97706;
-  color: #fff;
-}
-
-.source-frettabladid {
-  background: #4b5563;
-  color: #fff;
-}
-
-.source-silfrid {
-  background: #991b1b;
-  color: #fff;
-}
-
-.source-other {
-  background: var(--grey);
-  color: #fff;
-}
+.source-visir { background: #1a73e8; color: #fff; }
+.source-ruv { background: #b91c1c; color: #fff; }
+.source-mbl { background: #1e3a5f; color: #fff; }
+.source-heimildin { background: #7c3aed; color: #fff; }
+.source-kjarninn { background: #059669; color: #fff; }
+.source-stundin { background: #d97706; color: #fff; }
+.source-frettabladid { background: #4b5563; color: #fff; }
+.source-silfrid { background: #991b1b; color: #fff; }
+.source-other { background: var(--grey); color: #fff; }
 
 /* ── Panel show participant badge ───────────────────────────────── */
 
@@ -270,49 +139,9 @@
   white-space: nowrap;
 }
 
-/* ── External link — sits above the stretched card link ──────────── */
-
-.dt-external-link {
-  position: relative;
-  z-index: 1;
-  margin-left: auto;
-  font-size: 0.7rem;
-  font-weight: 600;
-  color: var(--accent);
-  text-decoration: none;
-  padding: 0.2rem 0.5rem;
-  border: 1px solid var(--accent);
-  border-radius: var(--radius);
-  white-space: nowrap;
-  flex-shrink: 0;
-  transition: color var(--transition), background var(--transition);
-}
-
-.dt-external-link:hover {
-  color: #fff;
-  background: var(--accent);
-  text-decoration: none;
-}
-
 /* ── Responsive ──────────────────────────────────────────────────── */
 
 @media (max-width: 600px) {
-  .dt-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .ct-filter-row {
-    flex-direction: column;
-  }
-
-  .ct-select {
-    min-width: unset;
-  }
-
-  .dt-card-meta {
-    flex-wrap: wrap;
-  }
-
   .dt-author {
     max-width: 150px;
   }

@@ -3,18 +3,15 @@
 /* ESBvaktin Evidence Tracker (Listing) — Styles
  *
  * Prefix: ev-* (evidence)
- * Reuses: ct-* (shared controls from style.css)
+ * Shared controls/grids/empty/responsive in tracker-base.css.
  */
 
 /* ── Stats bar ─────────────────────────────────────────────────────── */
 
 .ev-stats {
-  display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-  margin-bottom: 1.25rem;
   font-size: 0.85rem;
   color: var(--text-secondary);
+  margin-bottom: 1.25rem;
 }
 
 .ev-stats strong {
@@ -31,46 +28,6 @@
   margin-bottom: 1.25rem;
 }
 
-.ev-search {
-  width: 100%;
-  padding: 0.5rem 0.75rem;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  background: var(--bg);
-  color: var(--text);
-  font-size: 0.9rem;
-}
-
-.ev-search:focus {
-  outline: none;
-  border-color: var(--accent);
-  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
-}
-
-.ev-filter-row {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-}
-
-.ev-filter-row select {
-  padding: 0.35rem 0.5rem;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  background: var(--bg);
-  color: var(--text);
-  font-size: 0.8rem;
-  cursor: pointer;
-}
-
-/* ── Card grid ─────────────────────────────────────────────────────── */
-
-.ev-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  gap: 0.6rem;
-}
-
 /* ── Evidence card ─────────────────────────────────────────────────── */
 
 .ev-card {
@@ -78,15 +35,10 @@
   padding: 0.95rem 1rem;
   background: var(--bg);
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: var(--radius);
   text-decoration: none;
   color: inherit;
   transition: background var(--transition), border-color var(--transition);
-}
-
-.ev-card:hover {
-  border-color: var(--accent);
-  background: var(--bg-card);
 }
 
 .ev-card-top {
@@ -138,36 +90,12 @@
 
 /* Badges: see evidence-badges.css (shared with detail pages) */
 
-/* ── Group header ──────────────────────────────────────────────────── */
-
-.ev-group-heading {
-  font-size: 0.95rem;
-  font-weight: 700;
-  margin: 1.5rem 0 0.5rem;
-  padding-bottom: 0.25rem;
-  border-bottom: 1px solid var(--border);
-  color: var(--text);
-}
-
-.ev-group-heading:first-child {
-  margin-top: 0;
-}
-
 /* ── Note ──────────────────────────────────────────────────────────── */
 
 .ev-note {
   margin-top: 2rem;
   font-size: 0.85rem;
   color: var(--text-secondary);
-}
-
-/* ── Empty state ───────────────────────────────────────────────────── */
-
-.ev-empty {
-  text-align: center;
-  padding: 2rem;
-  color: var(--text-secondary);
-  font-size: 0.9rem;
 }
 
 /* ── Dark mode ─────────────────────────────────────────────────────── */
@@ -180,18 +108,4 @@
 
 [data-theme="dark"] .ev-topic-tag {
   background: var(--bg-alt, #1e293b);
-}
-
-/* ── Responsive ────────────────────────────────────────────────────── */
-
-@media (max-width: 600px) {
-  .ev-grid {
-    grid-template-columns: 1fr;
-  }
-  .ev-filter-row {
-    flex-direction: column;
-  }
-  .ev-filter-row select {
-    width: 100%;
-  }
 }

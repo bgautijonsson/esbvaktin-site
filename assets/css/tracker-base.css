@@ -1,7 +1,15 @@
-/* Shared tracker primitives: stats, controls, chips, and empty states. */
+/* Shared tracker primitives: stats, controls, grids, cards, chips, and empty states.
+ *
+ * All five trackers (ct-, dt-, et-, ev-, st-) share these patterns.
+ * Domain-specific styles stay in each tracker's own CSS file.
+ */
+
+/* ── Stats blocks ────────────────────────────────────────────────── */
 
 .ct-stats,
 .dt-stats,
+.et-stats,
+.ev-stats,
 .st-stats {
   display: flex;
   gap: 0.75rem;
@@ -10,22 +18,31 @@
   margin-bottom: 1.5rem;
 }
 
-.ct-stat {
+.ct-stat,
+.et-stat {
   background: var(--bg);
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: var(--radius);
   padding: 0.5rem 0.75rem;
   text-align: left;
   min-width: 78px;
 }
 
-.ct-stat-num {
+.et-stat {
+  background: var(--bg-card);
+  text-align: center;
+  min-width: 70px;
+}
+
+.ct-stat-num,
+.et-stat-num {
   display: block;
   font-size: 1.25rem;
   font-weight: 700;
 }
 
-.ct-stat-label {
+.ct-stat-label,
+.et-stat-label {
   display: block;
   font-size: 0.7rem;
   text-transform: uppercase;
@@ -33,18 +50,23 @@
   color: var(--text-secondary);
 }
 
-.ct-stat-loading {
+.ct-stat-loading,
+.et-stat-loading {
   color: var(--text-secondary);
   font-size: 0.9rem;
   padding: 0.5rem;
 }
 
-.ct-controls {
+/* ── Controls ────────────────────────────────────────────────────── */
+
+.ct-controls,
+.et-controls {
   margin-bottom: 1.25rem;
 }
 
 .tracker-search-wrap,
-.ct-search-wrap {
+.ct-search-wrap,
+.et-search-wrap {
   margin-bottom: 0.75rem;
 }
 
@@ -63,44 +85,71 @@
   color: var(--text-secondary);
 }
 
-.ct-search {
+/* ── Search input ────────────────────────────────────────────────── */
+
+.ct-search,
+.et-search,
+.ev-search {
   width: 100%;
   padding: 0.6rem 0.75rem;
   font-size: 0.95rem;
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: var(--radius);
   background: var(--bg);
   color: var(--text);
   box-sizing: border-box;
   transition: border-color var(--transition);
 }
 
-.ct-search:focus {
+.ev-search {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+}
+
+.ct-search:focus,
+.et-search:focus,
+.ev-search:focus {
   outline: none;
   border-color: var(--accent);
   box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
 }
 
-.ct-filter-row {
+/* ── Filter rows & selects ───────────────────────────────────────── */
+
+.ct-filter-row,
+.et-filter-row,
+.ev-filter-row {
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
 }
 
-.ct-select {
+.ct-select,
+.et-select,
+.ev-filter-row select {
   flex: 1;
   min-width: 120px;
   padding: 0.45rem 0.6rem;
   font-size: 0.85rem;
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: var(--radius);
   background: var(--bg);
   color: var(--text);
   cursor: pointer;
 }
 
+.ev-filter-row select {
+  padding: 0.35rem 0.5rem;
+  font-size: 0.8rem;
+}
+
+/* ── Loading & empty states ──────────────────────────────────────── */
+
 .ct-loading,
-.ct-empty {
+.ct-empty,
+.et-loading,
+.et-empty,
+.ev-empty {
   text-align: center;
   padding: 2rem;
   color: var(--text-secondary);
@@ -111,6 +160,8 @@
   font-size: 0.85rem;
   color: var(--text-secondary);
 }
+
+/* ── Active filter chips ─────────────────────────────────────────── */
 
 .tracker-active-filters {
   display: flex;
@@ -183,6 +234,8 @@
   outline-offset: 3px;
 }
 
+/* ── Verdict pill & category tag ─────────────────────────────────── */
+
 .ct-verdict-pill {
   display: inline-block;
   padding: 0.15rem 0.5rem;
@@ -208,4 +261,222 @@
   font-size: 0.7rem;
   color: var(--text-secondary);
   white-space: nowrap;
+}
+
+/* ── Card grids ──────────────────────────────────────────────────── */
+
+.dt-grid,
+.et-grid,
+.st-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 0.9rem;
+}
+
+.ev-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 0.6rem;
+}
+
+/* ── Card base (position-relative cards with stretched links) ───── */
+
+.dt-card,
+.st-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.95rem;
+  color: var(--text);
+  transition: border-color var(--transition), background var(--transition);
+}
+
+.dt-card:hover,
+.st-card:hover,
+.ct-card:hover,
+.et-card:hover,
+.ev-card:hover {
+  border-color: var(--accent);
+  background: var(--bg-card);
+}
+
+/* ── Stretched link (card-level anchor) ──────────────────────────── */
+
+.dt-card-link,
+.st-card-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.dt-card-link::after,
+.st-card-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.dt-card-link:hover,
+.st-card-link:hover {
+  text-decoration: none;
+}
+
+/* ── Card top row ────────────────────────────────────────────────── */
+
+.dt-card-top,
+.st-card-top {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-width: 0;
+}
+
+/* ── Card title ──────────────────────────────────────────────────── */
+
+.dt-card-title,
+.st-card-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* ── Card meta row ───────────────────────────────────────────────── */
+
+.dt-card-meta,
+.st-card-meta {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.dt-card-meta time,
+.st-card-meta time {
+  white-space: nowrap;
+}
+
+/* ── Group headers ───────────────────────────────────────────────── */
+
+.dt-group,
+.st-group {
+  margin-bottom: 1.5rem;
+}
+
+.dt-group-header,
+.st-group-header {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0 0 0.75rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dt-group-count,
+.st-group-count {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.1rem 0.45rem;
+}
+
+/* ── Overlay link (sits above stretched card link) ───────────────── */
+
+.dt-external-link,
+.st-althingi-link {
+  position: relative;
+  z-index: 1;
+  margin-left: auto;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: color var(--transition), background var(--transition);
+}
+
+.dt-external-link:hover,
+.st-althingi-link:hover {
+  color: #fff;
+  background: var(--accent);
+  text-decoration: none;
+}
+
+/* ── Evidence group heading ──────────────────────────────────────── */
+
+.ev-group-heading {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 1.5rem 0 0.5rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+
+.ev-group-heading:first-child {
+  margin-top: 0;
+}
+
+/* ── Responsive (shared breakpoints) ─────────────────────────────── */
+
+@media (max-width: 600px) {
+  .dt-grid,
+  .et-grid,
+  .ev-grid,
+  .st-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ct-filter-row,
+  .et-filter-row,
+  .ev-filter-row {
+    flex-direction: column;
+  }
+
+  .ct-select,
+  .et-select {
+    min-width: unset;
+  }
+
+  .ev-filter-row select {
+    width: 100%;
+  }
+
+  .ct-stats,
+  .et-stats {
+    gap: 0.4rem;
+  }
+
+  .ct-stat,
+  .et-stat {
+    min-width: 55px;
+    padding: 0.35rem 0.5rem;
+  }
+
+  .ct-stat-num,
+  .et-stat-num {
+    font-size: 1.1rem;
+  }
+
+  .dt-card-meta,
+  .st-card-meta {
+    flex-wrap: wrap;
+  }
 }
