@@ -28,6 +28,16 @@
     : (document.currentScript?.dataset.base || "/assets/data");
   const CLAIMS_URL = `${DATA_BASE}/claims.json`;
   const REPORTS_URL = `${DATA_BASE}/reports.json`;
+
+  /** Turn plain evidence IDs (e.g. SOV-PARL-005) into hoverable .evidence-link anchors.
+   *  Applied AFTER escapeHtml — IDs only contain [A-Z0-9-] so they survive escaping. */
+  const EVIDENCE_ID_RE = /\b([A-Z]+-[A-Z]+-\d+)\b/g;
+  function linkifyEvidenceIds(html) {
+    return html.replace(
+      EVIDENCE_ID_RE,
+      (_, id) => `<a href="/heimildir/${id.toLowerCase()}/" class="evidence-link" data-evidence-id="${id}">${id}</a>`
+    );
+  }
   const VERDICT_LABELS = TAXONOMY.verdictLabels || {};
   const CATEGORY_LABELS = TAXONOMY.categoryLabels || {};
   const VERDICT_CLASSES = TAXONOMY.verdictClasses || {};
@@ -268,10 +278,10 @@
 
     let detailsHtml = "";
     if (claim.explanation_is) {
-      detailsHtml += `<div class="ct-detail"><strong>Útskýring:</strong> ${escapeHtml(claim.explanation_is)}</div>`;
+      detailsHtml += `<div class="ct-detail"><strong>Útskýring:</strong> ${linkifyEvidenceIds(escapeHtml(claim.explanation_is))}</div>`;
     }
     if (claim.missing_context_is) {
-      detailsHtml += `<div class="ct-detail"><strong>Samhengi sem vantar:</strong> ${escapeHtml(claim.missing_context_is)}</div>`;
+      detailsHtml += `<div class="ct-detail"><strong>Samhengi sem vantar:</strong> ${linkifyEvidenceIds(escapeHtml(claim.missing_context_is))}</div>`;
     }
     if (claim.canonical_text_en) {
       detailsHtml += `<div class="ct-detail ct-english"><strong>English:</strong> ${escapeHtml(claim.canonical_text_en)}</div>`;
