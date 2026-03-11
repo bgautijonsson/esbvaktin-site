@@ -70,6 +70,26 @@ module.exports = function (eleventyConfig) {
   };
   eleventyConfig.addFilter("categoryLabel", (c) => categoryLabels[c] || c);
 
+  // ── Source type label filter ─────────────────────────────────────
+  const sourceTypeLabels = {
+    official_statistics: "Opinber tölfræði",
+    legal_text: "Lagalegur texti",
+    academic_paper: "Fræðigrein",
+    expert_analysis: "Sérfræðigreining",
+    international_org: "Alþjóðastofnun",
+    parliamentary_record: "Þingskjal",
+  };
+  eleventyConfig.addFilter("sourceTypeLabel", (s) => sourceTypeLabels[s] || s);
+
+  // ── Domain label filter ─────────────────────────────────────────
+  const domainLabels = {
+    legal: "Lögfræðilegt",
+    economic: "Efnahagslegt",
+    political: "Stjórnmálalegt",
+    precedent: "Fordæmi",
+  };
+  eleventyConfig.addFilter("domainLabel", (d) => domainLabels[d] || d);
+
   // ── Number formatting ───────────────────────────────────────────
   eleventyConfig.addFilter("localeString", (n) => {
     if (n == null) return "";

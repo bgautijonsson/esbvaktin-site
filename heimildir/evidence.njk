@@ -1,0 +1,12 @@
+---
+pagination:
+  data: evidence-details
+  size: 1
+  alias: evidence
+permalink: "/heimildir/{{ evidence.slug }}/"
+layout: evidence-detail.njk
+tags: evidence-details
+eleventyComputed:
+  title: "{{ evidence.evidence_id }}"
+  description: "{{ evidence.statement_is or evidence.statement }}"
+---

@@ -1,0 +1,442 @@
+/* ESBvaktin Evidence Detail Page — Styles
+ *
+ * Prefix: ev-* (evidence detail)
+ * Reuses: ct-* (verdict pills from style.css)
+ */
+
+/* ── Back link ─────────────────────────────────────────────────────── */
+
+.ev-back {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.ev-back:hover {
+  color: var(--accent);
+}
+
+/* ── Layout ────────────────────────────────────────────────────────── */
+
+.ev-detail {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* ── Header ────────────────────────────────────────────────────────── */
+
+.ev-header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.ev-header-top {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.ev-id-badge {
+  font-family: var(--font-mono, monospace);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.03em;
+}
+
+.ev-meta-row {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+/* ── Badges (reused from evidence-tracker.css) ─────────────────────── */
+
+.ev-source-type-badge {
+  display: inline-block;
+  padding: 0.1rem 0.4rem;
+  border: 1px solid;
+  border-radius: var(--radius-sm);
+  font-size: 0.7rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.ev-st-official_statistics { border-color: #3b82f6; color: #3b82f6; }
+.ev-st-legal_text          { border-color: #8b5cf6; color: #8b5cf6; }
+.ev-st-academic_paper      { border-color: #10b981; color: #10b981; }
+.ev-st-expert_analysis     { border-color: #f59e0b; color: #f59e0b; }
+.ev-st-international_org   { border-color: #06b6d4; color: #06b6d4; }
+.ev-st-parliamentary_record { border-color: #f97316; color: #f97316; }
+
+.ev-confidence-badge {
+  display: inline-block;
+  padding: 0.1rem 0.35rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.ev-conf-high   { background: var(--green); color: #fff; }
+.ev-conf-medium { background: var(--yellow); color: #000; }
+.ev-conf-low    { background: var(--red); color: #fff; }
+
+.ev-topic-tag {
+  display: inline-block;
+  padding: 0.1rem 0.4rem;
+  background: var(--bg-alt, #f1f5f9);
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.ev-topic-tag--sm {
+  font-size: 0.65rem;
+  padding: 0.05rem 0.3rem;
+}
+
+.ev-domain-tag {
+  display: inline-block;
+  padding: 0.1rem 0.4rem;
+  background: var(--bg-alt, #f1f5f9);
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.ev-subtopic-tag {
+  display: inline-block;
+  padding: 0.1rem 0.4rem;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+}
+
+/* ── Statement ─────────────────────────────────────────────────────── */
+
+.ev-statement {
+  margin-bottom: 1.5rem;
+}
+
+.ev-statement-text {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0;
+  padding: 1rem 1.25rem;
+  border-left: 3px solid var(--accent);
+  background: var(--bg-card);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.ev-original {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.ev-original summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.ev-original p {
+  margin: 0.5rem 0 0;
+  padding: 0.75rem 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-style: italic;
+}
+
+/* ── Metadata grid ─────────────────────────────────────────────────── */
+
+.ev-metadata {
+  margin-bottom: 1.5rem;
+}
+
+.ev-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.75rem;
+}
+
+.ev-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.ev-meta-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.ev-meta-value {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* ── Source block ───────────────────────────────────────────────────── */
+
+.ev-source {
+  margin-bottom: 1.5rem;
+}
+
+.ev-source h2 {
+  font-size: 1.1rem;
+  margin: 0 0 0.75rem;
+}
+
+.ev-source-card {
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+}
+
+.ev-source-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin: 0 0 0.25rem;
+}
+
+.ev-source-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin: 0 0 0.5rem;
+}
+
+.ev-source-link {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--accent);
+  text-decoration: none;
+  padding: 0.25rem 0.65rem;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  transition: color var(--transition), background var(--transition);
+}
+
+.ev-source-link:hover {
+  color: #fff;
+  background: var(--accent);
+}
+
+/* ── Caveats ───────────────────────────────────────────────────────── */
+
+.ev-caveats {
+  margin-bottom: 1.5rem;
+}
+
+.ev-caveats h2 {
+  font-size: 1.1rem;
+  margin: 0 0 0.75rem;
+}
+
+.ev-caveat-box {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--yellow);
+  border-left: 3px solid var(--yellow);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: color-mix(in srgb, var(--yellow) 8%, var(--bg-card));
+  font-size: 0.9rem;
+}
+
+.ev-caveat-box p {
+  margin: 0;
+}
+
+/* ── Related entries ───────────────────────────────────────────────── */
+
+.ev-related {
+  margin-bottom: 1.5rem;
+}
+
+.ev-related h2 {
+  font-size: 1.1rem;
+  margin: 0 0 0.75rem;
+}
+
+.ev-related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0.75rem;
+}
+
+.ev-related-card {
+  display: block;
+  padding: 0.75rem 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow var(--transition), border-color var(--transition);
+}
+
+.ev-related-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  border-color: var(--accent);
+}
+
+.ev-related-id {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-right: 0.35rem;
+}
+
+.ev-related-text {
+  font-size: 0.82rem;
+  line-height: 1.4;
+  margin: 0.35rem 0 0;
+  color: var(--text-secondary);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ── Cited by ──────────────────────────────────────────────────────── */
+
+.ev-cited-by {
+  margin-bottom: 2rem;
+}
+
+.ev-cited-by h2 {
+  font-size: 1.1rem;
+  margin: 0 0 0.75rem;
+}
+
+.ev-citation-group {
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+}
+
+.ev-citation-report {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.ev-citation-report a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.ev-citation-report a:hover {
+  text-decoration: underline;
+}
+
+.ev-citation-source {
+  font-size: 0.75rem;
+  font-weight: 400;
+  padding: 0.05rem 0.35rem;
+  background: var(--bg-alt, #f1f5f9);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+}
+
+.ev-citation-report time {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+.ev-citation-claims {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.ev-citation-claim {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.35rem;
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.ev-citation-role {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.1rem 0.3rem;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.ev-role-supporting {
+  background: color-mix(in srgb, var(--green) 15%, transparent);
+  color: var(--green);
+}
+
+.ev-role-contradicting {
+  background: color-mix(in srgb, var(--red) 15%, transparent);
+  color: var(--red);
+}
+
+.ev-citation-text {
+  color: var(--text-secondary);
+}
+
+/* ── Dark mode ─────────────────────────────────────────────────────── */
+
+@media (prefers-color-scheme: dark) {
+  .ev-related-card:hover,
+  .ev-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  .ev-topic-tag,
+  .ev-domain-tag,
+  .ev-citation-source {
+    background: var(--bg-alt, #1e293b);
+  }
+}
+
+[data-theme="dark"] .ev-related-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+[data-theme="dark"] .ev-topic-tag,
+[data-theme="dark"] .ev-domain-tag,
+[data-theme="dark"] .ev-citation-source {
+  background: var(--bg-alt, #1e293b);
+}
+
+/* ── Responsive ────────────────────────────────────────────────────── */
+
+@media (max-width: 600px) {
+  .ev-header-top { flex-direction: column; align-items: flex-start; gap: 0.35rem; }
+  .ev-meta-grid { grid-template-columns: 1fr 1fr; }
+  .ev-related-grid { grid-template-columns: 1fr; }
+  .ev-citation-claim { flex-direction: column; gap: 0.2rem; }
+  .ev-statement-text { font-size: 0.95rem; padding: 0.75rem 1rem; }
+}

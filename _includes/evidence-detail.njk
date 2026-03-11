@@ -1,0 +1,181 @@
+---
+layout: base.njk
+extra_css: /assets/css/evidence-detail.css
+---
+
+{# ── Label maps ── #}
+{% set TOPIC_LABELS = {
+  fisheries: "Sjávarútvegur",
+  trade: "Viðskipti",
+  sovereignty: "Fullveldi",
+  agriculture: "Landbúnaður",
+  labour: "Vinnumarkaður",
+  currency: "Gjaldmiðill",
+  precedents: "Fordæmi",
+  eea_eu_law: "EES/ESB-löggjöf",
+  housing: "Húsnæðismál",
+  polling: "Kannanir",
+  party_positions: "Flokkastefnur",
+  org_positions: "Samtakastefnur",
+  energy: "Orkumál"
+} %}
+
+{% set SOURCE_TYPE_LABELS = {
+  official_statistics: "Opinber tölfræði",
+  legal_text: "Lagalegur texti",
+  academic_paper: "Fræðigrein",
+  expert_analysis: "Sérfræðigreining",
+  international_org: "Alþjóðastofnun",
+  parliamentary_record: "Þingskjal"
+} %}
+
+{% set DOMAIN_LABELS = {
+  legal: "Lögfræðilegt",
+  economic: "Efnahagslegt",
+  political: "Stjórnmálalegt",
+  precedent: "Fordæmi"
+} %}
+
+{% set CONFIDENCE_LABELS = {
+  high: "Há",
+  medium: "Miðlungs",
+  low: "Lág"
+} %}
+
+<article class="ev-detail">
+  {# ── Back link ── #}
+  <a href="/heimildir/" class="ev-back">&larr; Til baka á Heimildir</a>
+
+  {# ── Header ── #}
+  <header class="ev-header">
+    <div class="ev-header-top">
+      <span class="ev-id-badge">{{ evidence.evidence_id }}</span>
+      <span class="ev-source-type-badge ev-st-{{ evidence.source_type }}">{{ SOURCE_TYPE_LABELS[evidence.source_type] or evidence.source_type }}</span>
+      <span class="ev-confidence-badge ev-conf-{{ evidence.confidence }}">{{ CONFIDENCE_LABELS[evidence.confidence] or evidence.confidence }}</span>
+    </div>
+
+    <div class="ev-meta-row">
+      <span class="ev-topic-tag">{{ TOPIC_LABELS[evidence.topic] or evidence.topic }}</span>
+      <span class="ev-domain-tag">{{ DOMAIN_LABELS[evidence.domain] or evidence.domain }}</span>
+      {% if evidence.subtopic %}
+        <span class="ev-subtopic-tag">{{ evidence.subtopic | replace("_", " ") }}</span>
+      {% endif %}
+    </div>
+  </header>
+
+  {# ── Statement ── #}
+  <section class="ev-statement">
+    <blockquote class="ev-statement-text">
+      {{ evidence.statement_is or evidence.statement }}
+    </blockquote>
+    {% if evidence.statement_is %}
+    <details class="ev-original">
+      <summary>Enska frumtextinn</summary>
+      <p>{{ evidence.statement }}</p>
+    </details>
+    {% endif %}
+  </section>
+
+  {# ── Metadata grid ── #}
+  <section class="ev-metadata">
+    <div class="ev-meta-grid">
+      {% if evidence.source_date %}
+      <div class="ev-meta-item">
+        <span class="ev-meta-label">Dagsetning</span>
+        <span class="ev-meta-value">{{ evidence.source_date | isDate }}</span>
+      </div>
+      {% endif %}
+      {% if evidence.last_verified %}
+      <div class="ev-meta-item">
+        <span class="ev-meta-label">Síðast staðfest</span>
+        <span class="ev-meta-value">{{ evidence.last_verified | isDate }}</span>
+      </div>
+      {% endif %}
+      <div class="ev-meta-item">
+        <span class="ev-meta-label">Svið</span>
+        <span class="ev-meta-value">{{ DOMAIN_LABELS[evidence.domain] or evidence.domain }}</span>
+      </div>
+      <div class="ev-meta-item">
+        <span class="ev-meta-label">Heimildaflokkur</span>
+        <span class="ev-meta-value">{{ SOURCE_TYPE_LABELS[evidence.source_type] or evidence.source_type }}</span>
+      </div>
+    </div>
+  </section>
+
+  {# ── Source block ── #}
+  <section class="ev-source">
+    <h2>Heimild</h2>
+    <div class="ev-source-card">
+      <p class="ev-source-name">{{ evidence.source_name }}</p>
+      {% if evidence.source_description_is %}
+        <p class="ev-source-desc">{{ evidence.source_description_is }}</p>
+      {% endif %}
+      {% if evidence.source_url %}
+        <a href="{{ evidence.source_url }}" class="ev-source-link" target="_blank" rel="noopener">
+          Skoða heimild &nearr;
+        </a>
+      {% endif %}
+    </div>
+  </section>
+
+  {# ── Caveats ── #}
+  {% if evidence.caveats %}
+  <section class="ev-caveats">
+    <h2>Fyrirvarar</h2>
+    <div class="ev-caveat-box">
+      <p>{{ evidence.caveats }}</p>
+    </div>
+  </section>
+  {% endif %}
+
+  {# ── Related entries ── #}
+  {% if evidence.related_entries | length %}
+  <section class="ev-related">
+    <h2>Tengdar heimildir ({{ evidence.related_entries | length }})</h2>
+    <div class="ev-related-grid">
+      {% for rel in evidence.related_entries %}
+      <a href="/heimildir/{{ rel.slug }}/" class="ev-related-card">
+        <span class="ev-related-id">{{ rel.evidence_id }}</span>
+        {% if rel.topic %}
+          <span class="ev-topic-tag ev-topic-tag--sm">{{ TOPIC_LABELS[rel.topic] or rel.topic }}</span>
+        {% endif %}
+        <p class="ev-related-text">{{ rel.statement }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {# ── Cited by ── #}
+  {% if evidence.citations | length %}
+  <section class="ev-cited-by">
+    <h2>Notuð í greiningum ({{ evidence.citation_count }})</h2>
+    {% for report in evidence.citations %}
+    <div class="ev-citation-group">
+      <h3 class="ev-citation-report">
+        <a href="/umraedan/{{ report.report_slug }}/">{{ report.report_title }}</a>
+        {% if report.report_source %}
+          <span class="ev-citation-source">{{ report.report_source }}</span>
+        {% endif %}
+        {% if report.report_date %}
+          <time datetime="{{ report.report_date }}">{{ report.report_date | isDate }}</time>
+        {% endif %}
+      </h3>
+      <ul class="ev-citation-claims">
+        {% for claim in report.claims %}
+        <li class="ev-citation-claim">
+          <span class="ct-verdict-pill verdict-{{ claim.verdict | replace("partially_supported", "partial") }}">
+            {{ claim.verdict | verdictLabel }}
+          </span>
+          <span class="ev-citation-role ev-role-{{ claim.role }}">
+            {{ "Styður" if claim.role == "supporting" else "Andmælir" }}
+          </span>
+          <span class="ev-citation-text">{{ claim.claim_text }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </section>
+  {% endif %}
+</article>

@@ -1,0 +1,74 @@
+{
+  "slug": "hous-data-005",
+  "evidence_id": "HOUS-DATA-005",
+  "domain": "economic",
+  "topic": "housing",
+  "subtopic": "mortgage_rate_comparison_iceland_eu",
+  "statement": "Mortgage interest rates in Iceland are significantly higher than in the eurozone. As of early 2026, non-indexed variable mortgage rates in Iceland start at approximately 8–9%, while indexed (CPI-linked) mortgage rates are around 3.5–4.5% but carry inflation risk. In contrast, the average eurozone mortgage rate was approximately 3.4% in late 2025 (ECB data), down from a peak of ~4.1% in late 2023. The gap is primarily driven by Iceland's small, closed capital market, higher policy rates (Seðlabanki base rate at 8.5% as of March 2026 vs ECB deposit rate at 2.75%), and the króna's vulnerability to external shocks. Euro adoption would, in theory, give Icelandic borrowers access to the deeper European capital market, but euro adoption would only occur years after EU accession and would require meeting the Maastricht convergence criteria.",
+  "statement_is": null,
+  "source_name": "Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase",
+  "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html",
+  "source_date": "2025-12-01",
+  "source_type": "official_statistics",
+  "source_description_is": null,
+  "confidence": "high",
+  "caveats": "Iceland's indexed mortgage system (verðtryggð lán) complicates direct comparison — the nominal rate is lower but the principal adjusts with CPI. The ECB rate is an average across diverse eurozone markets. Iceland could not adopt the euro immediately upon EU accession; a multi-year ERM II period is required.",
+  "last_verified": "2026-03-09",
+  "related_entries": [
+    {
+      "slug": "curr-data-001",
+      "evidence_id": "CURR-DATA-001",
+      "statement": "During the October 2008 financial crisis, the Icelandic króna lost approximately 50% of its value against the euro in a matter of weeks, falling from around 90 ISK/EUR in early 2008 to over 180 ISK/EUR by November 2008. The three largest banks (Kaupthing, Landsbanki, Glitnir) collapsed simultaneously, with combined assets roughly 10 times Iceland's GDP. The Central Bank was unable to act as lender of last resort in foreign currency, a key limitation of having an independent currency for a micro-economy.",
+      "topic": "currency"
+    }
+  ],
+  "citations": [
+    {
+      "report_slug": "snorri-segir-husnaedi-verda-jafndyrt-thott-vextir-laekki",
+      "report_title": "Snorri segir húsnæði verða jafndýrt þótt vextir lækki",
+      "report_source": "Heimildin",
+      "report_date": "2026-03-09",
+      "claims": [
+        {
+          "claim_text": "Vextir á húsnæðislán á Íslandi eru frá 8 prósentum.",
+          "verdict": "supported",
+          "role": "supporting"
+        },
+        {
+          "claim_text": "Algengir vextir húsnæðislána í Evrópusambandinu eru frá 3,2% til 3,5%, samkvæmt Seðlabanka Evrópu.",
+          "verdict": "supported",
+          "role": "supporting"
+        },
+        {
+          "claim_text": "Talsmenn ESB-aðildar segja að aðild og hugsanleg upptaka evru sé líkleg til að lækka vaxtakostnað heimila á Íslandi.",
+          "verdict": "partially_supported",
+          "role": "supporting"
+        }
+      ]
+    },
+    {
+      "report_slug": "thrir-hopar-sem-myndu-hagnast-mest-a-adild-islands-ad-evropusambandinu",
+      "report_title": "Þrír hópar sem myndu hagnast mest á aðild Íslands að Evrópusambandinu",
+      "report_source": "Vísir",
+      "report_date": "2026-03-07",
+      "claims": [
+        {
+          "claim_text": "Með upptöku evrunnar myndi Ísland verða hluti af miklu stærri og stöðugri fjármálamarkaði en er til staðar í kringum íslensku krónuna.",
+          "verdict": "supported",
+          "role": "supporting"
+        },
+        {
+          "claim_text": "Vextir á húsnæðislánum og fyrirtækjalánum í evrulöndum eru almennt mun lægri en á Íslandi.",
+          "verdict": "partially_supported",
+          "role": "supporting"
+        },
+        {
+          "claim_text": "Á Íslandi í dag greiða húsnæðislántakar upp húsin sín þrefalt til fjórfalt, samanborið við eðlilega uppgreiðslubyrði á evrusvæðinu.",
+          "verdict": "partially_supported",
+          "role": "supporting"
+        }
+      ]
+    }
+  ],
+  "citation_count": 6
+}
