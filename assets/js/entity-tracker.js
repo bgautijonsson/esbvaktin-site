@@ -12,6 +12,7 @@
   const DATA_BASE = document.currentScript?.dataset.base || "/assets/data";
   const ENTITIES_URL = `${DATA_BASE}/entities.json`;
   const REPORTS_URL = `${DATA_BASE}/reports.json`;
+  const FEATURED_URL = `${DATA_BASE}/featured-entities.json`;
 
   // Icelandic labels
   const TYPE_LABELS = {
@@ -44,12 +45,13 @@
   // ── State ──────────────────────────────────────────────────────
   let entitiesData = null;
   let reportsMap = null; // slug → { article_title, slug, … }
+  let featuredRanks = new Map(); // slug → rank (0-based index)
 
   let filters = {
     search: "",
     type: "",     // "" | "party" | "institution" | "individual"
     stance: "",   // "" | "pro_eu" | "anti_eu" | "mixed"
-    sort: "name",
+    sort: "importance",
     sortDir: "ASC",
   };
 
@@ -62,9 +64,10 @@
   async function init() {
     renderSkeleton();
 
-    const [entResp, repResp] = await Promise.all([
+    const [entResp, repResp, featResp] = await Promise.all([
       fetch(ENTITIES_URL),
       fetch(REPORTS_URL),
+      fetch(FEATURED_URL),
     ]);
 
     if (!entResp.ok) throw new Error(`Failed to fetch ${ENTITIES_URL}: ${entResp.status}`);
@@ -77,6 +80,12 @@
     reportsMap = new Map();
     for (const r of reportsArr) {
       reportsMap.set(r.slug, r);
+    }
+
+    // Build featured entity ranks (graceful fallback if fetch fails)
+    if (featResp.ok) {
+      const featured = await featResp.json();
+      featured.forEach((slug, i) => featuredRanks.set(slug, i));
     }
 
     renderStats();
@@ -113,14 +122,25 @@
       }
     }
 
-    const sort = filters.sort || "name";
-    const dir = filters.sortDir === "DESC" ? -1 : 1;
-    results.sort((a, b) => {
-      const va = a[sort] ?? "";
-      const vb = b[sort] ?? "";
-      if (typeof va === "number" && typeof vb === "number") return (va - vb) * dir;
-      return String(va).localeCompare(String(vb), "is") * dir;
-    });
+    const sort = filters.sort || "importance";
+    if (sort === "importance") {
+      // Featured entities first (by rank), then the rest by name
+      const maxRank = featuredRanks.size;
+      results.sort((a, b) => {
+        const ra = featuredRanks.has(a.slug) ? featuredRanks.get(a.slug) : maxRank;
+        const rb = featuredRanks.has(b.slug) ? featuredRanks.get(b.slug) : maxRank;
+        if (ra !== rb) return ra - rb;
+        return String(a.name ?? "").localeCompare(String(b.name ?? ""), "is");
+      });
+    } else {
+      const dir = filters.sortDir === "DESC" ? -1 : 1;
+      results.sort((a, b) => {
+        const va = a[sort] ?? "";
+        const vb = b[sort] ?? "";
+        if (typeof va === "number" && typeof vb === "number") return (va - vb) * dir;
+        return String(va).localeCompare(String(vb), "is") * dir;
+      });
+    }
 
     return results;
   }
@@ -162,6 +182,7 @@
               .join("")}
           </select>
           <select id="et-sort" class="et-select">
+            <option value="importance">Mikilvægi</option>
             <option value="name">Nafn</option>
             <option value="stance_score">Afstaða</option>
             <option value="credibility">Trúverðugleiki</option>
@@ -378,8 +399,8 @@
 
     sortSelect.addEventListener("change", (e) => {
       filters.sort = e.target.value;
-      // Default direction: ASC for name, DESC for numeric fields
-      filters.sortDir = e.target.value === "name" ? "ASC" : "DESC";
+      // Default direction: ASC for name/importance, DESC for numeric fields
+      filters.sortDir = (e.target.value === "name" || e.target.value === "importance") ? "ASC" : "DESC";
       renderResults();
     });
   }
