@@ -17,10 +17,6 @@ wide_layout: true
           <span><strong>{{ site.referendum_date | isDate }}</strong> kjördagur</span>
           <span><strong>{{ home.days_until_referendum | localeString }} dagar</strong> til þjóðaratkvæðis</span>
         </div>
-        <div class="home-hero-actions">
-          <a href="/fullyrdingar/" class="home-cta">Opna fullyrðingar</a>
-          <a href="/umraedan/" class="home-cta home-cta-secondary">Skoða umræðuna</a>
-        </div>
       </div>
     </section>
 
@@ -41,6 +37,47 @@ wide_layout: true
         {% endfor %}
       </div>
     </section>
+
+    {% if home.top_topics | length %}
+    <section class="home-section" aria-labelledby="home-topics-heading">
+      <div class="home-section-head">
+        <div>
+          <p class="home-section-label">Málefni</p>
+          <h2 id="home-topics-heading">Virkustu málin</h2>
+        </div>
+        <a href="/malefni/" class="home-text-link">Öll málefni</a>
+      </div>
+      <div class="home-topic-bar">
+        {% for topic in home.top_topics %}
+        <a href="/malefni/{{ topic.slug }}/" class="home-topic-card">
+          <span class="home-section-label">{{ topic.label_is }}</span>
+          <span class="home-signal-value">{{ topic.published_claim_count | localeString }}</span>
+          <span class="home-signal-note">fullyrðingar</span>
+          {% if topic.verdict_counts %}
+          <div class="home-topic-verdicts">
+            {% set verdictOrder = ["supported", "partially_supported", "unverifiable", "unsupported", "misleading"] %}
+            {% set vtotal = 0 %}
+            {% for v in verdictOrder %}{% set vtotal = vtotal + (topic.verdict_counts[v] or 0) %}{% endfor %}
+            {% if vtotal > 0 %}
+            <div class="report-verdict-bar home-topic-verdict-bar" role="img" aria-label="Dreifing niðurstaðna">
+              {% for v in verdictOrder %}
+                {% set count = topic.verdict_counts[v] or 0 %}
+                {% if count %}
+                  {% set pct = (count / vtotal * 100) | round(1) %}
+                  <span class="report-bar-seg verdict-{{ v | replace("partially_supported", "partial") }}"
+                        style="width:{{ pct }}%"
+                        title="{{ v | verdictLabel }}: {{ count }}"></span>
+                {% endif %}
+              {% endfor %}
+            </div>
+            {% endif %}
+          </div>
+          {% endif %}
+        </a>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
   </div>
 
   <aside class="home-sidebar" aria-label="Yfirlit af forsíðu">
@@ -50,21 +87,20 @@ wide_layout: true
           <p class="home-section-label">Raddir í fókus</p>
           <h2>Oftast nefnd</h2>
         </div>
-        <a href="/raddirnar/" class="home-text-link">Allar raddir</a>
       </div>
       <div class="home-sidebar-list">
         {% for entity in home.top_entities %}
-        <article class="home-sidebar-item home-sidebar-item--entity">
+        <a href="/raddirnar/{{ entity.slug }}/" class="home-sidebar-item home-sidebar-item--entity home-sidebar-link">
           <div class="home-sidebar-meta">
             <span>{{ entity.type | entityTypeLabel }}</span>
             {% if entity.party %}<span>{{ entity.party }}</span>{% endif %}
           </div>
-          <h3><a href="/raddirnar/{{ entity.slug }}/">{{ entity.name }}</a></h3>
+          <h3>{{ entity.name }}</h3>
           <div class="home-sidebar-stats">
             <span>{{ entity.mention_count | localeString }} tilvísanir</span>
             <span>{{ entity.claim_count | localeString }} fullyrðingar</span>
           </div>
-        </article>
+        </a>
         {% endfor %}
       </div>
     </section>
@@ -75,25 +111,48 @@ wide_layout: true
           <p class="home-section-label">Nýtt í safninu</p>
           <h2>Nýjustu greiningar</h2>
         </div>
-        <a href="/umraedan/" class="home-text-link">Allar greiningar</a>
       </div>
       <div class="home-sidebar-list">
         {% for report in home.processed_reports %}
-        <article class="home-sidebar-item home-sidebar-item--article">
+        <a href="/umraedan/{{ report.slug }}/" class="home-sidebar-item home-sidebar-item--article home-sidebar-link">
           <div class="home-sidebar-meta">
             <span>{{ report.article_source }}</span>
             <span>{{ report.display_date | isDate }}</span>
           </div>
-          <h3><a href="/umraedan/{{ report.slug }}/">{{ report.article_title }}</a></h3>
+          <h3>{{ report.article_title }}</h3>
           <div class="home-sidebar-stats">
-            {% if report.primary_verdict %}
-            <span class="ct-verdict-pill {{ report.primary_verdict_class }}">{{ report.primary_verdict | verdictLabel }}</span>
-            {% endif %}
             <span>{{ report.claim_count | localeString }} fullyrðingar</span>
           </div>
-        </article>
+        </a>
         {% endfor %}
       </div>
     </section>
+
+    {% if home.latest_overview %}
+    <section class="home-sidebar-section">
+      <div class="home-section-head home-section-head-compact">
+        <div>
+          <p class="home-section-label">Vikuyfirlit</p>
+          <h2>Nýjasta yfirlit</h2>
+        </div>
+      </div>
+      <a href="/vikuyfirlit/{{ home.latest_overview.slug }}/" class="home-sidebar-item home-sidebar-item--overview home-sidebar-link">
+        <div class="home-sidebar-meta">
+          <span>{{ home.latest_overview.period_start | isDateRange(home.latest_overview.period_end) }}</span>
+        </div>
+        <h3>Vikuyfirlit {{ home.latest_overview.period_start | isDateRange(home.latest_overview.period_end) }}</h3>
+        <div class="home-sidebar-stats">
+          <span>{{ home.latest_overview.articles_analysed }} greinar</span>
+          <span>{{ home.latest_overview.new_claims }} fullyrðingar</span>
+          {% if home.latest_overview.diversity_score %}
+            <span>{{ (home.latest_overview.diversity_score * 100) | round }}% fjölbreytni</span>
+          {% endif %}
+        </div>
+        {% if home.latest_overview.editorial_excerpt %}
+        <p class="home-overview-excerpt">{{ home.latest_overview.editorial_excerpt }}</p>
+        {% endif %}
+      </a>
+    </section>
+    {% endif %}
   </aside>
 </div>

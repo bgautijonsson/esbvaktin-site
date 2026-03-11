@@ -74,6 +74,9 @@ module.exports = function () {
   const debates = sortByDateDesc(readJson("assets/data/debates.json"), ["last_date", "first_date"]);
   const evidence = readJson("assets/data/evidence.json");
   const entities = readJson("assets/data/entities.json");
+  const overviews = sortByDateDesc(readJson("assets/data/overviews.json"), ["period_start"]);
+  const topics = readJson("assets/data/topics.json")
+    .sort((a, b) => (b.published_claim_count || 0) - (a.published_claim_count || 0));
 
   const verdictCounts = {};
   Object.keys(taxonomy.verdictLabels).forEach((verdict) => {
@@ -177,6 +180,8 @@ module.exports = function () {
     recent_debates: debates.slice(0, 3),
     total_speeches: totalSpeeches,
     total_words: totalWords,
+    latest_overview: overviews[0] || null,
+    top_topics: topics.slice(0, 6),
     coverage: {
       source_count: uniqueSources.size,
       claim_count: totalClaims,

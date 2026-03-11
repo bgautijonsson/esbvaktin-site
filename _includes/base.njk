@@ -6,9 +6,6 @@
   <title>{{ title }}{% if title !== site.title %} — {{ site.title }}{% endif %}</title>
   <meta name="description" content="{{ description or site.description }}">
 
-  <!-- Anti-FOUC: apply stored theme before paint -->
-  <script>(function(){var t=localStorage.getItem('esb-theme');if(t&&t!=='system')document.documentElement.setAttribute('data-theme',t)})()</script>
-
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
 
@@ -51,7 +48,6 @@
           </div>
         </div>
         <div class="nav-controls">
-          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Sjálfvirkt" title="Sjálfvirkt">&#x25D0;</button>
           <button class="nav-toggle" type="button" aria-label="Opna valmynd" title="Opna valmynd" aria-controls="site-menu" aria-expanded="false">
             <span class="nav-hamburger"></span>
           </button>
@@ -74,7 +70,6 @@
   </footer>
 
   {% set needs_tracker_utils = extra_js or return_link_support %}
-  <script src="/assets/js/theme-toggle.js" defer></script>
   <script src="/assets/js/mobile-nav.js" defer></script>
   {% if evidence_preview %}<script src="/assets/js/evidence-preview.js" defer></script>{% endif %}
   {% if extra_js %}<script src="/assets/js/site-taxonomy.js" defer></script>{% endif %}
