@@ -11,7 +11,8 @@
     "browser:review": "playwright test tests/browser",
     "browser:smoke": "playwright test tests/browser/smoke.spec.js",
     "browser:screens": "playwright test tests/browser/screenshots.spec.js",
-    "browser:nav": "playwright test tests/browser/navbar.spec.js"
+    "browser:nav": "playwright test tests/browser/navbar.spec.js",
+    "stats": "node tools/stats.js"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
