@@ -24,20 +24,20 @@ const BASE = `https://${SITE}.goatcounter.com/api/v0`;
 
 // ── Load token from .env ────────────────────────────────────────
 function loadToken() {
+  // Prefer shell env, fall back to .env file
+  if (process.env.GOATCOUNTER_TOKEN) {
+    return process.env.GOATCOUNTER_TOKEN;
+  }
   const envPath = path.join(__dirname, '..', '.env');
-  if (!fs.existsSync(envPath)) {
-    console.error('Missing .env file. Create one with:');
-    console.error('  echo "GOATCOUNTER_TOKEN=your-token-here" > .env');
-    console.error('  Get a token at: https://esbvaktin.goatcounter.com/settings/api');
-    process.exit(1);
+  if (fs.existsSync(envPath)) {
+    const match = fs.readFileSync(envPath, 'utf8').match(/GOATCOUNTER_TOKEN=(.+)/);
+    if (match) return match[1].trim();
   }
-  const env = fs.readFileSync(envPath, 'utf8');
-  const match = env.match(/GOATCOUNTER_TOKEN=(.+)/);
-  if (!match) {
-    console.error('.env file must contain GOATCOUNTER_TOKEN=...');
-    process.exit(1);
-  }
-  return match[1].trim();
+  console.error('GOATCOUNTER_TOKEN not found. Either:');
+  console.error('  export GOATCOUNTER_TOKEN=your-token   # in ~/.zshrc');
+  console.error('  echo "GOATCOUNTER_TOKEN=..." > .env    # in project root');
+  console.error('  Get a token at: https://esbvaktin.goatcounter.com/settings/api');
+  process.exit(1);
 }
 
 // ── HTTP helper ─────────────────────────────────────────────────
