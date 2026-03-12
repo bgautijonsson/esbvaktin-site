@@ -228,6 +228,25 @@ img { max-width: 100%; height: auto; }
   font-weight: 600;
 }
 
+.nav-support-btn {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: color var(--transition), border-color var(--transition), background var(--transition);
+}
+
+.nav-support-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-muted);
+}
+
 /* ── Navigation (responsive) ──────────────────────────────────────── */
 
 @media (min-width: 961px) {
