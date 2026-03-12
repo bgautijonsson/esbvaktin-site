@@ -2,13 +2,15 @@
   "slug": "sigmar-gudmundsson",
   "name": "Sigmar Guðmundsson",
   "type": "individual",
-  "description": "Þingmaður (Viðreisn) — hlutlaus um ESB-aðild.",
+  "description": "Þingmaður (Viðreisn) — hlynnt ESB-aðild.",
   "role": "þingmaður",
   "party": "Viðreisn",
-  "stance": "neutral",
-  "stance_score": 0.0,
-  "credibility": null,
+  "stance": "pro_eu",
+  "stance_score": 0.5,
+  "credibility": 0.7,
   "attribution_counts": {
+    "quoted": 3,
+    "paraphrased": 2,
     "mentioned": 1
   },
   "althingi_stats": {
@@ -18,7 +20,10 @@
     "first_speech": "2022-09-20",
     "last_speech": "2025-02-13"
   },
-  "scorecard": {},
+  "scorecard": {
+    "partially_supported": 3,
+    "supported": 2
+  },
   "claims": [
     {
       "claim_text": "Umræðan um samningsstöðu Íslands hefur hingað til einkum snúist um hvort landið muni fá varanlega undanþágu frá sameiginlegri sjávarútvegsstefnu ESB.",
@@ -29,6 +34,56 @@
       "article_title": "Svarar ekki beint um undanþágur en segir stöðu Íslands sterka",
       "article_source": "Morgunblaðið",
       "article_date": null
+    },
+    {
+      "claim_text": "Flest ríki Evrópu eru inni í ESB og hafa tekið þá ákvörðun með opin augun, oft að undangengnu þjóðaratkvæði.",
+      "verdict": "partially_supported",
+      "category": "precedents",
+      "attribution": "quoted",
+      "article_slug": "vikulokin-7-mars-2026",
+      "article_title": "Víkulokin 7. mars 2026",
+      "article_source": "Vikulokin (RÚV)",
+      "article_date": "2026-03-07"
+    },
+    {
+      "claim_text": "Norðmenn hafa sagt nei við ESB-aðild tvisvar í þjóðaratkvæðagreiðslum.",
+      "verdict": "supported",
+      "category": "precedents",
+      "attribution": "quoted",
+      "article_slug": "vikulokin-7-mars-2026",
+      "article_title": "Víkulokin 7. mars 2026",
+      "article_source": "Vikulokin (RÚV)",
+      "article_date": "2026-03-07"
+    },
+    {
+      "claim_text": "Talsverður meirihluti Breta telur nú að það hafi verið mistök að ganga út úr ESB.",
+      "verdict": "supported",
+      "category": "precedents",
+      "attribution": "paraphrased",
+      "article_slug": "vikulokin-7-mars-2026",
+      "article_title": "Víkulokin 7. mars 2026",
+      "article_source": "Vikulokin (RÚV)",
+      "article_date": "2026-03-07"
+    },
+    {
+      "claim_text": "Fjölmörg ESB-ríki hafa samið um sérlausnir, til dæmis frá gjaldmiðlasamstarfinu, sjávarútvegi og varnar- og öryggisstefnu sambandsins.",
+      "verdict": "partially_supported",
+      "category": "eea_eu_law",
+      "attribution": "quoted",
+      "article_slug": "vikulokin-7-mars-2026",
+      "article_title": "Víkulokin 7. mars 2026",
+      "article_source": "Vikulokin (RÚV)",
+      "article_date": "2026-03-07"
+    },
+    {
+      "claim_text": "Noregur, Svíþjóð, Finnland og Austurríki sóttu um ESB-aðild á sama tíma og Guðlaugur Þór var virkur þátttakandi í alþjóðasamstarfi.",
+      "verdict": "partially_supported",
+      "category": "precedents",
+      "attribution": "paraphrased",
+      "article_slug": "vikulokin-7-mars-2026",
+      "article_title": "Víkulokin 7. mars 2026",
+      "article_source": "Vikulokin (RÚV)",
+      "article_date": "2026-03-07"
     }
   ],
   "articles": [
@@ -40,6 +95,17 @@
       "claim_count": 1,
       "attribution_types": [
         "mentioned"
+      ]
+    },
+    {
+      "slug": "vikulokin-7-mars-2026",
+      "title": "Víkulokin 7. mars 2026",
+      "source": "Vikulokin (RÚV)",
+      "date": "2026-03-07",
+      "claim_count": 5,
+      "attribution_types": [
+        "paraphrased",
+        "quoted"
       ]
     }
   ]
