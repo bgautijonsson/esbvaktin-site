@@ -88,5 +88,19 @@
     data-x_margin="18"
     data-y_margin="18"
     defer></script>
+  <script>
+    // Hide the BMAC widget tooltip (classless div appended to body)
+    new MutationObserver((_, obs) => {
+      const btn = document.getElementById('bmc-wbtn');
+      if (!btn) return;
+      for (const el of document.body.children) {
+        if (el.tagName === 'DIV' && !el.id && !el.className && el !== btn && el.style.position === 'fixed' && el.style.maxWidth) {
+          el.remove();
+          obs.disconnect();
+          return;
+        }
+      }
+    }).observe(document.body, { childList: true });
+  </script>
 </body>
 </html>

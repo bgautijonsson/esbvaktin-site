@@ -983,6 +983,18 @@ img { max-width: 100%; height: auto; }
   display: none !important;
 }
 
+/* BMAC overlay: dim backdrop + softer frame */
+#bmc-overlay {
+  background: rgba(0, 0, 0, 0.45) !important;
+  backdrop-filter: blur(2px) !important;
+  -webkit-backdrop-filter: blur(2px) !important;
+}
+
+#bmc-iframe {
+  border-radius: var(--radius-lg, 12px) !important;
+  max-height: min(600px, 80vh) !important;
+}
+
 .home-support-buttons {
   display: grid;
   gap: 0.5rem;
