@@ -56,6 +56,10 @@ function get(urlStr) {
       let body = '';
       res.on('data', (c) => body += c);
       res.on('end', () => {
+        if (res.statusCode === 404) {
+          resolve(null);
+          return;
+        }
         if (res.statusCode !== 200) {
           reject(new Error(`API ${res.statusCode}: ${body}`));
           return;
@@ -132,6 +136,10 @@ async function fetchTotal(range) {
 async function showSummary(range) {
   const total = await fetchTotal(range);
   heading(`${range.label} — Summary`);
+  if (!total) {
+    console.log(`  ${DIM}No data for this period${RESET}`);
+    return;
+  }
   console.log(`  ${BOLD}Total pageviews:${RESET}  ${GREEN}${total.total?.toLocaleString() ?? 'N/A'}${RESET}`);
   if (total.total_unique != null) {
     console.log(`  ${BOLD}Unique visitors:${RESET}  ${GREEN}${total.total_unique.toLocaleString()}${RESET}`);
@@ -140,7 +148,7 @@ async function showSummary(range) {
 
 async function showPages(range) {
   const data = await fetchHits(range, 20);
-  const paths = (data.paths || [])
+  const paths = ((data && data.paths) || [])
     .filter(p => !p.path.startsWith('scroll/') && !p.path.startsWith('outbound/')
       && !p.path.startsWith('nav/') && !p.path.startsWith('filter/')
       && !p.path.startsWith('detail/') && p.path !== 'support-click')
@@ -162,7 +170,7 @@ async function showPages(range) {
 
 async function showEvents(range) {
   const data = await fetchHits(range, 100);
-  const events = (data.paths || [])
+  const events = ((data && data.paths) || [])
     .filter(p => p.event)
     .sort((a, b) => (b.count || 0) - (a.count || 0));
 
