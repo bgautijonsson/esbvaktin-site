@@ -9,8 +9,8 @@
   "analysis_date": "2026-03-11",
   "summary": "Greindar 16 fullyrðingar. Niðurstöður: 7 stutt af heimildum, 6 stutt að hluta, 3 ekki hægt að sannreyna. Sjónarhorn: hallar á ESB-jákvæða hlið. Heildstæðni: 25%.",
   "verdict_counts": {
-    "partially_supported": 6,
-    "supported": 7,
+    "partially_supported": 4,
+    "supported": 9,
     "unverifiable": 3
   },
   "claim_count": 16,
@@ -283,23 +283,33 @@
         "claim_type": "opinion",
         "confidence": 0.9
       },
-      "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> og <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Articles 8 and 17–26; Protocols 1 and 47\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-008</a> staðfesta að peningamálastefna er utan EES-samningsins — Ísland heldur eigin gjaldmiðli og seðlabanka. ESB-aðild myndi opna leið að evrusvæðinu sem gæti þýtt lægri vexti. <a href=\"https://www.efta.int/about-efta/efta-secretariat/efta-budget\" title=\"EFTA Secretariat — EFTA budget; various academic estimates\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-005</a> nefnir að ESB-aðild myndi hafa áhrif á fjárhagslegar skuldbindingar umfram EES-kostnað. Hins vegar vantar tölulegar heimildir um vaxtamun og ávinning gjaldmiðilsbreytingar í staðreyndagrunninum.",
+      "verdict": "supported",
+      "explanation": "Fullyrðingin er almenn en rétt. <a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> sýnir að stýrivextir Seðlabanka Íslands hafa verið um 5,5 prósentustigum hærri en Seðlabanka Evrópu að meðaltali, sem skilar sér í hærri lánskostnaði. <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Articles 8 and 17–26; Protocols 1 and 47\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-008</a> og <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> staðfesta að efnahags- og myntbandalag fellur utan EES og aðeins ESB-aðild myndi opna leið að evrutöku. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> sýnir vaxtamuninn á húsnæðislánum — 8–9% á Íslandi á móti um 3,4% í evrusvæðinu. Gjaldmiðils- og vaxtamál eru þannig meðal helstu tækifæra ESB-aðildar samkvæmt heimildum.",
       "supporting_evidence": [
+        {
+          "id": "CURRENCY-DATA-015",
+          "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
+          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+        },
+        {
+          "id": "EEA-LEGAL-008",
+          "source_name": "EEA Agreement, Articles 8 and 17–26; Protocols 1 and 47",
+          "source_url": "https://www.efta.int/eea/eea-agreement"
+        },
         {
           "id": "EEA-LEGAL-022",
           "source_name": "EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'",
           "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
         },
         {
-          "id": "EEA-LEGAL-008",
-          "source_name": "EEA Agreement, Articles 8 and 17–26; Protocols 1 and 47",
-          "source_url": "https://www.efta.int/eea/eea-agreement"
+          "id": "HOUS-DATA-005",
+          "source_name": "Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase",
+          "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Fullyrðingin nefnir tækifæri en ekki áhættu. Aðild að evrusvæðinu er ekki sjálfvirk — ný aðildarríki þurfa að uppfylla Maastricht-skilyrðin. Tap á sjálfstæðri peningamálastefnu og gengissveigjanleika er veruleg áhætta sem ekki er nefnd. Ísland notaði t.d. gengislækkun krónunnar sem efnahagslegt höggdeyfandi eftir fjármálahrunið 2008.",
-      "confidence": 0.6,
+      "missing_context": "Evrutaka myndi ekki verða strax við aðild — ERM II-tímabil og Maastricht-viðmið þyrfti að uppfylla. Lægri vextir gætu hækkað húsnæðisverð (<a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a>). Tap á sjálfstæðri peningastefnu er jafnframt áhætta sem fullyrðingin nefnir ekki.",
+      "confidence": 0.8,
       "speakers": [
         {
           "name": "Guðmundur Ari Sigurjónsson",
@@ -706,9 +716,19 @@
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
-      "verdict": "partially_supported",
-      "explanation": "<a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> staðfesta að aðlögunartímabil eru raunverulegt samningsatriði í aðildarviðræðum — umsækjendur geta samið um tímabundnar undanþágur. <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development\" title=\"European Parliament — The Common Fisheries Policy: Origins and Development\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-005</a> sýnir fordæmi Bretlands um aðlögunartímabil í sjávarútvegi (5,5 ára umbreytingarskeið). Hins vegar er veigamikill munur á aðlögunartímabilum og varanlegum sérreglum — samkvæmt <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-004</a> hefur ekkert ríki fengið varanlega undanþágu frá kjarnastefnum.",
+      "verdict": "supported",
+      "explanation": "Heimildir staðfesta skýrt að sérreglur og aðlögunartímabil eru til innan sameiginlegrar sjávarútvegsstefnu ESB. <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development\" title=\"European Parliament — The Common Fisheries Policy: Origins and Development\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-005</a> lýsir því hvernig kvótar nýrra aðildarríkja eru samdir í aðildarsamningi og felldir inn í hlutfallslega stöðugleikann — Spánn og Portúgal fengu sérstaka úthlutun 1985. <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> staðfesta að aðlögunartímabil (3–12 ár) eru hefðbundinn hluti aðildarviðræðna. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-004</a> sýnir hliðstætt fordæmi í landbúnaði þar sem Finnland og Svíþjóð fengu leyfi til viðbótarstyrkja fyrir norðlægan landbúnað.",
       "supporting_evidence": [
+        {
+          "id": "FISH-LEGAL-005",
+          "source_name": "European Parliament — The Common Fisheries Policy: Origins and Development",
+          "source_url": "https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development"
+        },
+        {
+          "id": "FISH-LEGAL-001",
+          "source_name": "EU Regulation 1380/2013 of the European Parliament and of the Council",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380"
+        },
         {
           "id": "EEA-LEGAL-017",
           "source_name": "European Commission — 'EU Accession Process: Steps towards joining' factsheet",
@@ -720,20 +740,14 @@
           "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
         },
         {
-          "id": "FISH-LEGAL-005",
-          "source_name": "European Parliament — The Common Fisheries Policy: Origins and Development",
-          "source_url": "https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development"
-        }
-      ],
-      "contradicting_evidence": [
-        {
           "id": "AGRI-LEGAL-004",
           "source_name": "EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy",
           "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
         }
       ],
-      "missing_context": "Fullyrðingin gæti gefið til kynna að varanlegar sérreglur séu raunhæfar, en heimildir benda til að slíkt sé ólíklegt. Aðlögunartímabil eru tímabundin og ætluð til að auðvelda aðlögun að regluverki — ekki til að undanskilja ríki til frambúðar. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1\" title=\"Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-006</a> nefnir fordæmi Danmerkur, en þau voru samið undir einstökum kringumstæðum sem ESB hefur síðan dregið úr.",
-      "confidence": 0.75,
+      "contradicting_evidence": [],
+      "missing_context": "Greinarmunur á aðlögunartímabilum og varanlegum undanþágum skiptir máli. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> staðfestir að engar varanlegar undanþágur hafa verið veittar nýjum aðildarríkjum frá Króatíu (2013). Aðlögunartímabil hafa fasta lokadagsetningu og krefjast fullrar innleiðingar eftir það (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:21994A0103(01)\" title=\"Croatia Accession Treaty (2012); 2003 Accession Treaty (Poland, Czech Republic et al.)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-014</a>). Hvernig Ísland yrði meðhöndlað er ósvarað — ekkert fordæmi er til fyrir ríki með jafn ríkjandi sjávarútveg.",
+      "confidence": 0.88,
       "speakers": [
         {
           "name": "Morgunblaðið",
@@ -821,8 +835,8 @@
       "attribution_type": "quoted",
       "claim_count": 9,
       "verdicts": {
-        "partially_supported": 4,
-        "supported": 2,
+        "partially_supported": 3,
+        "supported": 3,
         "unverifiable": 3
       },
       "stance": "mixed",

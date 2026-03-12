@@ -9,8 +9,8 @@
   "analysis_date": "2026-03-11",
   "summary": "Greindar 45 fullyrðingar .",
   "verdict_counts": {
-    "supported": 21,
-    "partially_supported": 12,
+    "supported": 22,
+    "partially_supported": 11,
     "unverifiable": 11,
     "misleading": 1
   },
@@ -169,10 +169,21 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "Heimildir staðfesta ekki beint stöðu Írlands við inngöngu 1973 en sú lýsing er almennt viðurkennd. Um núverandi stöðu er þó enginn beinn stuðningur í heimildum um VLF Írlands á mann. Heimildir sýna að VLF Íslands á mann er hátt (<a href=\"https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD\" title=\"World Bank — World Development Indicators\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-012</a>, <a href=\"https://www.imf.org/en/Publications/WEO\" title=\"IMF World Economic Outlook Database — October 2024\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-002</a>) en innihalda ekki samsvarandi tölur fyrir Írland.",
-      "supporting_evidence": [],
+      "explanation": "Fullyrðingin samanstendur af tveimur hlutum. <a href=\"https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD\" title=\"World Bank — World Development Indicators\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-012</a> og <a href=\"https://www.imf.org/en/Publications/WEO\" title=\"IMF World Economic Outlook Database — October 2024\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-002</a> staðfesta að Írland er í dag meðal ríkustu þjóða Evrópu miðað við landsframleiðslu á mann. Hins vegar skortir beinar heimildir um efnahagsstöðu Írlands við inngöngu í EBE árið 1973. Þótt það sé almennt þekkt að Írland var eftirbátur annarra Vestur-Evrópuríkja á þeim tíma, staðfesta fyrirliggjandi heimildir ekki þennan hluta fullyrðingarinnar sérstaklega.",
+      "supporting_evidence": [
+        {
+          "id": "CURRENCY-DATA-012",
+          "source_name": "World Bank — World Development Indicators",
+          "source_url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD"
+        },
+        {
+          "id": "TRADE-COMP-002",
+          "source_name": "IMF World Economic Outlook Database — October 2024",
+          "source_url": "https://www.imf.org/en/Publications/WEO"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Heimildir í staðreyndagrunni innihalda ekki bein gögn um VLF Írlands á mann. Írlands háa VLF á mann er að hluta tilbúið vegna skattahagræðis fjölþjóðlegra fyrirtækja — GNI* (breytt þjóðartekjur) gefur raunsærri mynd.",
+      "missing_context": "Engin heimild fjallar beint um efnahagsstöðu Írlands við inngöngu árið 1973. Einnig ber að hafa í huga að landsframleiðsla á mann á Írlandi er töluvert ofmetin vegna fjölþjóðlegra fyrirtækja sem bóka hagnað þar — vergrar þjóðartekjur gefa raunsannari mynd.",
       "confidence": 0.6,
       "speakers": []
     },
@@ -217,7 +228,7 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "Aðildarsamningar ESB eru tæknilega þjóðréttarsamningar þar sem þeir eru samdir og fullgiltir af fullvalda ríkjum. Heimildir staðfesta að aðild er samningsbundin (<a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a>) og 50. gr. sáttmálans heimilar úrsögn (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M050\" title=\"Treaty on European Union, Article 50\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-001</a>). Hins vegar er ESB-réttur sérstakur í þjóðarétti — hann hefur forgang og bein réttaráhrif sem aðgreinir hann frá hefðbundnum þjóðréttarsamningum.",
+      "explanation": "Aðildarsamningar eru þjóðréttarsamningar að forminu til — þeir eru undirritaðir og fullgiltir samkvæmt Vínarsamþykktinni um þjóðréttarsamninga. Heimildir staðfesta þó að ESB-aðildarsamningar hafa sérstaka eiginleika sem aðgreina þá frá hefðbundnum þjóðréttarsamningum. Umsækjandinn samþykkir \"acquis\" sem það stendur (<a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a>, <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a>) — samningsrými takmarkast við aðlögunartímabil og tæknilegar breytingar, ekki efnisbreytingar á regluverkinu. Fullyrðingin er rétt um formlega stöðu en villandi ef hún gefur til kynna að sömu samningsreglur gildi — ESB-réttur hefur \"direct effect\" og forgang sem greinir hann frá hefðbundnum þjóðrétti (<a href=\"https://www.eftacourt.int/\" title=\"EEA Agreement, Article 108; EFTA Court — Annual Report 2024; CJEU — Annual Report 2024\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-013</a>).",
       "supporting_evidence": [
         {
           "id": "EEA-LEGAL-017",
@@ -225,14 +236,14 @@
           "source_url": "https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf"
         },
         {
-          "id": "SOV-LEGAL-001",
-          "source_name": "Treaty on European Union, Article 50",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M050"
+          "id": "EEA-LEGAL-021",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "ESB-réttur hefur einkenni sem aðgreina hann frá hefðbundnum þjóðréttarsamningum: hann hefur bein réttaráhrif í aðildarríkjum (Van Gend en Loos-dómurinn 1963) og forgang yfir landsrétt (Costa v ENEL 1964). Fullyrðingin um að sömu lögmál gildi er of einföldun.",
-      "confidence": 0.65,
+      "missing_context": "Fullyrðingin er formlega rétt en vantar mikilvægt samhengi: ESB-réttur hefur bein áhrif (direct effect) og forgang yfir landsrétt, sem gerir hann ólíkan hefðbundnum þjóðréttarsamningum. Aðildarsamningar krefjast samþykkis á öllu regluverki ESB — samningsrými er takmarkað við tímasetningu og aðlögun, ekki efni reglna.",
+      "confidence": 0.6,
       "speakers": []
     },
     {
@@ -410,8 +421,8 @@
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
-      "verdict": "partially_supported",
-      "explanation": "Heimildir staðfesta að frá Lissabon-sáttmálanum hafa nýjum aðildarríkjum einungis verið veittar tímabundnar undanþágur en ekki varanlegar (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a>, <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-004</a>). Króatía (2013) fékk engar varanlegar undanþágur. Eldri ríki eins og Írland hafa hins vegar haldið varanlegum undanþágum.",
+      "verdict": "supported",
+      "explanation": "Heimildir staðfesta þessa fullyrðingu skýrt. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> sýnir að frá Lissabon-samningnum (2009) hefur stefna ESB verið sú að ný aðildarríki fái ekki varanlegar undanþágur — einungis tímabundin aðlögunartímabil. Króatía (2013) fékk engar varanlegar undanþágur. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-004</a> staðfestir að ekkert aðildarríki hefur fengið varanlega undanþágu frá sameiginlegri landbúnaðarstefnu. Aðlögunartímabil fyrir nýja meðlimi (t.d. 10 ára innleiðing á beingreiðslum samkvæmt <a href=\"https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-2023-27_en\" title=\"2003 Accession Treaty; 2005 Accession Treaty (Bulgaria/Romania); 2011 Croatia Accession Treaty; European Commission CAP reform documentation\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-016</a>) renna öll út.",
       "supporting_evidence": [
         {
           "id": "EEA-LEGAL-012",
@@ -422,11 +433,21 @@
           "id": "AGRI-LEGAL-004",
           "source_name": "EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy",
           "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        },
+        {
+          "id": "AGRI-DATA-016",
+          "source_name": "2003 Accession Treaty; 2005 Accession Treaty (Bulgaria/Romania); 2011 Croatia Accession Treaty; European Commission CAP reform documentation",
+          "source_url": "https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-2023-27_en"
+        },
+        {
+          "id": "ETS-DATA-002",
+          "source_name": "Iceland Review; Carbon Pulse; European Commission",
+          "source_url": "https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Tilvísunin í Íra er óljós — Írland hefur varanlegar undanþágur (t.d. frá Schengen, dómsmálum) sem hafa ekki runnið út. Eldri aðildarríki fengu mismunandi meðferð miðað við nýrri. Fullyrðingin er rétt fyrir ný aðildarríki en of einföldun fyrir ESB í heild.",
-      "confidence": 0.7,
+      "missing_context": "Þó eldri aðildarríki hafi varanlegar undanþágur (t.d. dönsk undanþága frá evrunni, sem var í gildi til 2025), gildir sú fordæmisrof ekki um ný ríki. Finnlensk og sænsk viðbótarstyrkjakerfi fyrir norðlægan landbúnað eru formlega séð viðbætur, ekki undanþágur, en hafa í reynd varað í áratugi. Sumir lagafræðingar halda því fram að 49. gr. ESB-sáttmálans heimili í raun hvaða samningsniðurstöðu sem er, en pólitísk staða ESB er skýr gegn nýjum undanþágum.",
+      "confidence": 0.85,
       "speakers": []
     },
     {
@@ -438,17 +459,17 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "Heimildir staðfesta að stækkun ESB beinist nú að Vestur-Balkanskaga, þ.m.t. Serbíu og Svartfjallaland (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a>). Aðlögunarferlið tekur langan tíma og Kaupmannahafnarskilyrðin krefjast uppfyllingar á ýmsum sviðum. Heimildir nefna ekki sérstaklega fjármálaleg skilyrði Serbíu og Svartfjallalands.",
+      "explanation": "Engin heimild fjallar beint um stöðu Serbíu og Svartfjallalands í aðildarviðræðum við ESB eða um fjárhagsleg skilyrði sem þau hafi ekki uppfyllt. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014\" title=\"Treaty on the Functioning of the European Union, Article 140\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-004</a> og <a href=\"https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en\" title=\"European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators\" target=\"_blank\" rel=\"noopener\">CURR-DATA-005</a> lýsa Maastricht-skilyrðunum sem umsóknarríki þurfa að uppfylla, en vísa ekki til þessara ríkja sérstaklega. Almennt er vitað að bæði löndin eru í aðildarviðræðum sem hafa tafist, en heimildir í gagnagrunninum fjalla ekki um ástæður tafanna eða fjárhagslega stöðu þessara ríkja.",
       "supporting_evidence": [
         {
-          "id": "TRADE-DATA-022",
-          "source_name": "European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications",
-          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+          "id": "SOV-LEGAL-004",
+          "source_name": "Treaty on the Functioning of the European Union, Article 140",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Staðreyndagrunnurinn inniheldur ekki sérstakar upplýsingar um stöðu Serbíu og Svartfjallalands í aðildarviðræðum eða fjármálaskilyrði. Vandamálin í viðræðum þessara ríkja snúa einnig að réttarríki, lýðræðisumbótum og svæðisbundnum ágreiningi — ekki eingöngu fjármálum.",
-      "confidence": 0.55,
+      "missing_context": "Heimildir um framgang aðildarviðræðna Serbíu og Svartfjallalands vantar í gagnagrunninn. Ástæður tafa í viðræðum þessara ríkja (réttarríkisvandamál, spilling, minnihlutaréttindi) eru ekki fjallað um. Fullyrðingin blandar saman ólíkum skilyrðum — fjármálaskilyrði (Maastricht) og almenn aðildarskilyrði (Kaupmannahafnarskilyrðin).",
+      "confidence": 0.4,
       "speakers": []
     },
     {
@@ -686,17 +707,22 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "Heimildir sýna að EES-framlög Íslands eru um 10–13 milljónir evra á ári (<a href=\"https://www.efta.int/about-efta/efta-secretariat/efta-budget\" title=\"EFTA Secretariat — EFTA budget; various academic estimates\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-005</a>, <a href=\"https://eeagrants.org/en/fmo/about-us\" title=\"EEA Grants Financial Mechanism Committee; European Commission budget data\" target=\"_blank\" rel=\"noopener\">EEA-DATA-005</a>, <a href=\"https://eeagrants.org/resources/financial-guidance-financial-mechanism-2021-2028\" title=\"EEA Grants — Financial Mechanism 2021–2028\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-009</a>), eða um 1,5–2 milljarðar ISK. Heildarfjárhagslegar skyldur (framlög, EFTA-stofnanir, regluverkseftirfylgni) eru metnar á 20–30 milljónir evra á ári (<a href=\"https://www.efta.int/about-efta/efta-secretariat/efta-budget\" title=\"EFTA Secretariat — EFTA budget; various academic estimates\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-005</a>), sem samsvarar um 3–4,5 milljörðum ISK. Talan 7–9 milljarðar er hærri en heimildir styðja.",
+      "explanation": "Fullyrðingin um 7–9 milljarða króna á ári er erfið að staðfesta nákvæmlega. <a href=\"https://eeagrants.org/en/fmo/about-us\" title=\"EEA Grants Financial Mechanism Committee; European Commission budget data\" target=\"_blank\" rel=\"noopener\">EEA-DATA-005</a> gefur upp hlut Íslands í EES-styrkjum sem um 10–12 milljónir evra á ári, og <a href=\"https://eeagrants.org/en/fmo/about-us\" title=\"EEA Grants — Financial Mechanism Committee; European Commission — EU budget figures\" target=\"_blank\" rel=\"noopener\">EEA-DATA-008</a> segir um 9,6 milljónir evra á ári. <a href=\"https://www.efta.int/about-efta/efta-secretariat/efta-budget\" title=\"EFTA Secretariat — EFTA budget; various academic estimates\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-005</a> áætlar heildarkostnað (EES-styrkir + EFTA-fjárveiting + eftirlitskostnaður) um 20–30 milljónir evra á ári. Miðað við gengi krónu gagnvart evru (um 150–160 ISK/EUR) jafngilda 9,6 milljónir evra um 1,4–1,5 milljörðum króna, en 20–30 milljónir evra jafngilda 3–4,8 milljörðum. Talan 7–9 milljarðar er hærri en heimildir sýna, nema óbeinn kostnaður (reglugerðainnleiðing, aðlögun) sé talinn með.",
       "supporting_evidence": [
-        {
-          "id": "TRADE-COMP-005",
-          "source_name": "EFTA Secretariat — EFTA budget; various academic estimates",
-          "source_url": "https://www.efta.int/about-efta/efta-secretariat/efta-budget"
-        },
         {
           "id": "EEA-DATA-005",
           "source_name": "EEA Grants Financial Mechanism Committee; European Commission budget data",
           "source_url": "https://eeagrants.org/en/fmo/about-us"
+        },
+        {
+          "id": "EEA-DATA-008",
+          "source_name": "EEA Grants — Financial Mechanism Committee; European Commission — EU budget figures",
+          "source_url": "https://eeagrants.org/en/fmo/about-us"
+        },
+        {
+          "id": "TRADE-COMP-005",
+          "source_name": "EFTA Secretariat — EFTA budget; various academic estimates",
+          "source_url": "https://www.efta.int/about-efta/efta-secretariat/efta-budget"
         },
         {
           "id": "TRADE-DATA-009",
@@ -705,8 +731,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Fullyrðingin gæti tekið mið af breiðari skilgreiningu á kostnaði sem inniheldur ýmis framlög til EES-áætlana (Horizon Europe, Erasmus+ o.fl.) og stjórnsýslukostnað. Nákvæm sundurliðun er nauðsynleg til að meta töluna.",
-      "confidence": 0.55,
+      "missing_context": "Heimildir sundurliða ekki heildarkostnað EES/EFTA-aðildar á íslensku krónu. Kostnaðarmat fer eftir því hvað er talið með — beinar greiðslur eru mun lægri en 7–9 milljarðar, en með reglugerðakostnaði og EFTA-fjárveitingum gæti talan verið hærri. Gengi krónu gagnvart evru hefur einnig mikil áhrif á útreikning.",
+      "confidence": 0.45,
       "speakers": []
     },
     {
@@ -873,17 +899,17 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "Tyrkland sótti um aðild að þáverandi EBE (nú ESB) árið 1987, ekki 1986 eins og fullyrðingin gefur til kynna. Viðræður hófust 2005. Heimildir nefna Tyrkland ekki beint en staðfesta að stækkunarferlið getur tekið mjög langan tíma (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — Steps towards joining; DG NEAR accession negotiation methodology\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-013</a>). Tyrkland er tæknilega enn umsóknarríki þótt viðræður hafi verið frystar.",
+      "explanation": "Fullyrðingin segir Tyrkland hafi sótt um \"um árið 1986\" — <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland: Accession negotiations status; Althingi records\" target=\"_blank\" rel=\"noopener\">EEA-DATA-009</a> fjalla ekki beint um tyrkneska umsóknina, en almennt er vitað að Tyrkland sótti um aðild 1987 (ekki 1986). Árstalið er því ónákvæmt um eitt ár. <a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland: Accession negotiations status; Althingi records\" target=\"_blank\" rel=\"noopener\">EEA-DATA-009</a> staðfesta að umsóknarferli geta tafist verulega — Ísland er sjálft dæmi um langdregnar viðræður. Engin heimild staðfestir beint að Tyrkland sé enn formlega á umsóknarlistanum, þótt það sé almennt þekkt. Aðildarviðræður Tyrklands hafa legið í dvala frá 2018.",
       "supporting_evidence": [
         {
-          "id": "EEA-LEGAL-013",
-          "source_name": "European Commission — Steps towards joining; DG NEAR accession negotiation methodology",
-          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+          "id": "TRADE-DATA-022",
+          "source_name": "European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Ræðumaðurinn nefnir sjálfur \"eða hvenær það var\" sem sýnir óvissu. Viðræður Tyrklands hafa í raun verið frystar frá 2018 og framkvæmdastjórnin hefur stöðvað framgangsskýrslur. Aðstæður Tyrklands eru gjörólíkar Íslands — mannréttindaástand, réttarríki og landamæradeilur eru meginástæður stöðnunar.",
-      "confidence": 0.7,
+      "missing_context": "Engin heimild í gagnagrunninum fjallar sérstaklega um stöðu tyrknesku ESB-umsóknarinnar. Tyrkland sótti um aðild 1987 (ekki 1986 eins og fullyrðingin segir). Aðildarviðræður hófust 2005 en hafa legið í dvala frá 2018 vegna lýðræðis- og réttarríkiságreinings. Framkvæmdastjórn ESB hefur ekki mælt með lokun viðræðnanna formlega.",
+      "confidence": 0.55,
       "speakers": []
     },
     {
@@ -955,22 +981,17 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "Heimildir staðfesta að Icesave-deilunni lauk með dómi EFTA-dómstólsins (mál E-16/11, 2013) Íslandi í vil (<a href=\"https://www.imf.org/en/Countries/ISL\" title=\"IMF — Iceland: Stand-By Arrangement; EFTA Court Case E-16/11 (Icesave)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-012</a>). Forseti vísaði Icesave-lögunum til þjóðaratkvæðagreiðslu samkvæmt 26. gr. stjórnarskrárinnar (<a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland), Articles 26, 65, 79; Althingi records on 2012 referendum follow-up\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-026</a>). Fullyrðingin er í meginatriðum rétt en orðalag um \"íslenska dómstóla\" er ónákvæmt — EFTA-dómstóllinn er alþjóðlegur dómstóll, ekki íslenskur.",
+      "explanation": "<a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland), Articles 26, 65, 79; Althingi records on 2012 referendum follow-up\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-026</a> staðfestir að forseti Íslands vísaði Icesave-lögum til þjóðaratkvæðagreiðslu samkvæmt 26. grein stjórnarskrárinnar — þetta var í raun fullveldisathöfn. Hins vegar er hluti fullyrðingarinnar ónákvæmur: það voru ekki \"íslenskir dómstólar\" sem neituðu kröfunum heldur EFTA-dómstóllinn sem dæmdi Íslandi í vil í janúar 2013. <a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a> og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1\" title=\"Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-006</a> styðja almennt við hugmyndina um íslenskt sjálfstæði í þessu máli en gefa ekki nánari upplýsingar um Icesave-dóminn sjálfan.",
       "supporting_evidence": [
         {
           "id": "SOV-LEGAL-026",
           "source_name": "Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland), Articles 26, 65, 79; Althingi records on 2012 referendum follow-up",
           "source_url": "https://www.althingi.is/lagas/nuna/1944033.html"
-        },
-        {
-          "id": "SOV-DATA-012",
-          "source_name": "IMF — Iceland: Stand-By Arrangement; EFTA Court Case E-16/11 (Icesave)",
-          "source_url": "https://www.imf.org/en/Countries/ISL"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "EFTA-dómstóllinn, sem kvað upp dóminn, er alþjóðlegur dómstóll í Lúxemborg, ekki íslenskur dómstóll. Auk þess tók ESB sem stofnun ekki beina afstöðu til Icesave — þrýstingurinn kom aðallega frá Hollandi og Bretlandi.",
-      "confidence": 0.7,
+      "missing_context": "Heimildir í gagnagrunninum fjalla ekki um EFTA-dómstólsdóminn í Icesave-málinu (E-16/11, janúar 2013) sem er lykilatriði fullyrðingarinnar. Fullyrðingin segir \"íslenskir dómstólar\" en úrskurðurinn var frá EFTA-dómstólnum — alþjóðlegum dómstóli, ekki íslenskum. Þjóðaratkvæðagreiðslurnar tvær (2010 og 2011) voru um lagafrumvörp sem forseti Íslands vísaði til þjóðarinnar.",
+      "confidence": 0.6,
       "speakers": []
     },
     {
@@ -1058,21 +1079,27 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "Heimildir nefna þátttöku Íslands í ESB-losunarviðskiptakerfinu (ETS) og Fit for 55 pakkanum sem nær til flugs (<a href=\"https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341\" title=\"EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-003</a>). Ísland fékk undanþágu (fríúthlutun framlengd til 2026). Fullyrðingin vísar líklega til nýrra loftslagsreglna sem taka til flug- og skipaflutninga. Heimildir ná þó ekki til allra nýjustu lagabreytinga.",
+      "explanation": "<a href=\"https://climate.ec.europa.eu/eu-action/transport/reducing-emissions-aviation_en\" title=\"European Commission — Reducing emissions from aviation; Directive 2008/101/EC; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-002</a> staðfestir að flug innan EES falli undir viðskiptakerfi ESB með losunarheimildir, en fullyrðingin gengur lengra en heimildir styðja. Skattur á flugsamgöngur er rétt lýsing á ETS-kerfinu, en engin heimild staðfestir sambærilegan skatt á skipasamgöngur sem taki gildi gagnvart Íslandi. Fullyrðingin um að ekki sé tekið tillit til eyjastöðu Íslands fær ekki beina stoð í heimildum — <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> sýnir hins vegar að skattamál falla utan EES-samningsins, sem þýðir að ESB hefur enga beina skattheimtuvald yfir Íslandi í gegnum EES.",
       "supporting_evidence": [
         {
-          "id": "ETS-LEGAL-003",
-          "source_name": "EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission",
-          "source_url": "https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341"
-        },
-        {
-          "id": "ETS-LEGAL-001",
-          "source_name": "EEA Joint Committee Decision No 146/2007; EUR-Lex; EFTA Court",
-          "source_url": "https://eur-lex.europa.eu/eli/dec/2007/146(2)/oj/eng"
+          "id": "ETS-LEGAL-002",
+          "source_name": "European Commission — Reducing emissions from aviation; Directive 2008/101/EC; Directive (EU) 2023/958",
+          "source_url": "https://climate.ec.europa.eu/eu-action/transport/reducing-emissions-aviation_en"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Ísland hefur áður samið um sérreglur fyrir flugiðnað sinn innan ETS (<a href=\"https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341\" title=\"EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-003</a>). FuelEU Maritime og endurskoðun flug-ETS eru nýjar reglugerðir sem gætu haft sérstök áhrif á eyríki. Heimildir um þessar tilteknu reglugerðir vantar í staðreyndagrunn.",
+      "contradicting_evidence": [
+        {
+          "id": "EEA-LEGAL-022",
+          "source_name": "EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'",
+          "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
+        },
+        {
+          "id": "EEA-LEGAL-008",
+          "source_name": "EEA Agreement, Articles 8 and 17–26; Protocols 1 and 47",
+          "source_url": "https://www.efta.int/eea/eea-agreement"
+        }
+      ],
+      "missing_context": "Skipasamgöngur falla undir nýja ETS2-kerfið hjá ESB frá 2024, en engin heimild í gagnagrunninum staðfestir áhrif þess á Ísland sem EES-ríki. Þá ber að hafa í huga að ETS-kerfið nær eingöngu til flugferða innan EES samkvæmt <a href=\"https://climate.ec.europa.eu/eu-action/transport/reducing-emissions-aviation_en\" title=\"European Commission — Reducing emissions from aviation; Directive 2008/101/EC; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-002</a> — flug til og frá löndum utan EES er undanskilið.",
       "confidence": 0.5,
       "speakers": []
     },
@@ -1171,7 +1198,7 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "Heimildir benda til þess að ESB-aðild krefjist líklega stjórnarskrárbreytingar þar sem íslenska stjórnarskráin inniheldur ekkert ákvæði um framsal fullveldis (<a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland); University of Iceland — Faculty of Law analyses\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-012</a>, <a href=\"https://www.government.is/library/01-Ministries/Prime-Ministrers-Office/constitution_of_iceland.pdf\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 2, 21, 79; Legal commentary by Ragnhildur Helgadóttir (2024)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-016</a>). Samkvæmt 79. gr. þarf breytinguna að samþykkja á tveimur þingum með þingrofskosningum á milli. Þetta er rétt um ferlið en lögfræðingar eru ekki sammála um hvort breytingin sé nauðsynleg.",
+      "explanation": "Fyrri hluti fullyrðingarinnar — að stjórnarskrárbreyting þurfi — er vel studdur. <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland); University of Iceland — Faculty of Law analyses\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-012</a> og <a href=\"https://www.government.is/library/01-Ministries/Prime-Ministrers-Office/constitution_of_iceland.pdf\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 2, 21, 79; Legal commentary by Ragnhildur Helgadóttir (2024)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-016</a> staðfesta báðar að íslenska stjórnarskráin hefur enga skýra heimild til fullveldisframhendingar til alþjóðlegra stofnana og margir lögfræðingar telja breytingu nauðsynlega. Seinni hlutinn — að tvö þing þurfi að samþykkja — er einnig rétt: 79. grein stjórnarskrárinnar kveður á um að breytingar þurfi samþykki Alþingis, þá þurfi leysa þingið upp, kjósa og nýtt þing samþykki aftur. Þó er ágreiningur um hvort stjórnarskrárbreyting sé raunverulega nauðsynleg — sumir lögfræðingar telja einfalt þingsályktun um fullgildingu aðildarsamnings nægilegt.",
       "supporting_evidence": [
         {
           "id": "SOV-LEGAL-012",
@@ -1190,7 +1217,7 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Sumir lögfræðingar telja að einfallt löggjafarvald nægi til fullgildingar aðildarsamnings án stjórnarskrárbreytingar. Spurningin hefur ekki verið leyst endanlega af dómstólum (<a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland); University of Iceland — Faculty of Law analyses\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-012</a>).",
+      "missing_context": "Lögfræðilegur ágreiningur ríkir um hvort breyting sé raunverulega nauðsynleg eða hvort þingsályktun nægi. Dómstólar hafa ekki úrskurðað um þetta. <a href=\"https://www.althingi.is/lagas/nv/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79\" target=\"_blank\" rel=\"noopener\">SOV-DATA-002</a> bendir á að þjóðaratkvæðagreiðslan 2026 er ráðgefandi, ekki bindandi, og Alþingi hefur lokaorðið hvort sem er. Ef stjórnarskrárbreyting reynist nauðsynleg bætir hún 1–2 árum við aðildarferlið.",
       "confidence": 0.8,
       "speakers": []
     }

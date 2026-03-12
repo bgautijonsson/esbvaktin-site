@@ -10,10 +10,10 @@
   "summary": "Greindar 17 fullyrðingar. Niðurstöður: 7 stutt að hluta, 6 ekki hægt að sannreyna, 3 stutt af heimildum, 1 ekki stutt. Sjónarhorn: hallar á ESB-jákvæða hlið. Heildstæðni: 25%.",
   "verdict_counts": {
     "unverifiable": 1,
-    "partially_supported": 8,
+    "supported": 9,
     "unsupported": 1,
-    "misleading": 2,
-    "supported": 5
+    "partially_supported": 4,
+    "misleading": 2
   },
   "claim_count": 17,
   "dominant_category": "eea_eu_law",
@@ -60,23 +60,33 @@
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
-      "verdict": "partially_supported",
-      "explanation": "<a href=\"https://ust.is/loft/losunarvottord/\" title=\"Umhverfisstofnun — Iceland's participation in EU ETS; European Commission — EU ETS data\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-002</a> staðfestir tilvist ETS-kerfisins og þátttöku Íslands í gegnum tvíhliða samning, og <a href=\"https://commission.europa.eu/strategy-and-policy/strategy-documents/commission-work-programme_en\" title=\"EUR-Lex legislative database; European Commission Work Programmes 2014–2025\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-018</a> vísar til endurskoðunar ETS-kerfisins undir \"Fit for 55\". Flug innan EES-svæðisins hefur fallið undir ETS frá 2012, en staðreyndagrunnurinn inniheldur ekki sérstaka heimild sem staðfestir þessa tilteknu fullyrðingu um alþjóðaflug og ETS. Fullyrðingin er í meginatriðum rétt en einfölduð — ETS nær til flugs innan EES en ekki alls alþjóðaflugs.",
+      "verdict": "supported",
+      "explanation": "Nýja heimildin <a href=\"https://climate.ec.europa.eu/eu-action/transport/reducing-emissions-aviation_en\" title=\"European Commission — Reducing emissions from aviation; Directive 2008/101/EC; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-002</a> staðfestir skýrt að losun alþjóðaflugs innan EES fellur undir ETS-kerfið. Flugstarfsemi var tekin inn í ESB-ETS með tilskipun 2008/101/EB og nær til allra fluga innan EES-svæðisins. Eftir endurskoðun 2023 (tilskipun 2023/958) gildir kerfið áfram um öll flug innan EES. Ísland tekur þátt í þessu kerfi í gegnum EES-samninginn (<a href=\"https://eur-lex.europa.eu/eli/dec/2007/146(2)/oj/eng\" title=\"EEA Joint Committee Decision No 146/2007; EUR-Lex; EFTA Court\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-001</a>). Fullyrðingin er staðreynd samkvæmt heimildum.",
       "supporting_evidence": [
         {
-          "id": "ENERGY-LEGAL-002",
-          "source_name": "Umhverfisstofnun — Iceland's participation in EU ETS; European Commission — EU ETS data",
-          "source_url": "https://ust.is/loft/losunarvottord/"
+          "id": "ETS-LEGAL-002",
+          "source_name": "European Commission — Reducing emissions from aviation; Directive 2008/101/EC; Directive (EU) 2023/958",
+          "source_url": "https://climate.ec.europa.eu/eu-action/transport/reducing-emissions-aviation_en"
         },
         {
-          "id": "EEA-LEGAL-018",
-          "source_name": "EUR-Lex legislative database; European Commission Work Programmes 2014–2025",
-          "source_url": "https://commission.europa.eu/strategy-and-policy/strategy-documents/commission-work-programme_en"
+          "id": "ETS-LEGAL-001",
+          "source_name": "EEA Joint Committee Decision No 146/2007; EUR-Lex; EFTA Court",
+          "source_url": "https://eur-lex.europa.eu/eli/dec/2007/146(2)/oj/eng"
+        },
+        {
+          "id": "ETS-DATA-001",
+          "source_name": "European Commission — Allocation to the aviation sector; Directive (EU) 2023/958",
+          "source_url": "https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/allocation-aviation-sector_en"
+        },
+        {
+          "id": "ETS-DATA-002",
+          "source_name": "Iceland Review; Carbon Pulse; European Commission",
+          "source_url": "https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "ETS-kerfið nær til flugs innan EES-svæðisins en alþjóðaflug utan EES fellur undir CORSIA-kerfið (Carbon Offsetting and Reduction Scheme for International Aviation). Fullyrðingin gæti verið villandi ef hún gefur til kynna að allt alþjóðaflug falli undir ETS.",
-      "confidence": 0.6,
+      "missing_context": "Gildissviðið nær aðeins til fluga innan EES, ekki til fluga til eða frá þriðju ríkjum (þó endurskoðun sé fyrirhugað 2026). CORSIA-kerfið gildir um alþjóðaflug utan ETS-gildissviðsins. Ókeypis losunarheimildir til flugfélaga eru að falla niður og verða útrýmdar frá 2026 (með séríslenskri undanþágu).",
+      "confidence": 0.9,
       "speakers": [
         {
           "name": "Silja Rún Sigurbjörnsdóttir",
@@ -147,17 +157,33 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://ust.is/loft/losunarvottord/\" title=\"Umhverfisstofnun — Iceland's participation in EU ETS; European Commission — EU ETS data\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-002</a> staðfestir að þátttaka Íslands í ETS-kerfinu hafi verið samið tvíhliða og feli í sér bráðabirgðaákvæði (transitional provisions). Hins vegar tilgreina heimildir ekki nákvæmlega hvaða undanþágur eru í gildi eða hvenær þær renna út. Fullyrðingin er því í samræmi við almennar upplýsingar um bráðabirgðaákvæði en ekki er hægt að staðfesta sérstök útrunnatímamörk.",
+      "explanation": "Ísland tekur þátt í ETS-kerfinu og hefur samið um sérstakar undanþágur, en fullyrðingin er ónákvæm á lykilatriðum. Samkvæmt <a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a> náðist bráðabirgðasamkomulag í maí 2023 um að íslensk flugfélög héldu ókeypis losunarheimildum til og með 2026 — eitt ár lengur en almenna áætlunin. <a href=\"https://eur-lex.europa.eu/eli/dec/2007/146(2)/oj/eng\" title=\"EEA Joint Committee Decision No 146/2007; EUR-Lex; EFTA Court\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-001</a> staðfestir hins vegar að Ísland tekur þátt í ETS-kerfinu gegnum EES-samninginn, ekki tvíhliða samning eins og <a href=\"https://ust.is/loft/losunarvottord/\" title=\"Umhverfisstofnun — Iceland's participation in EU ETS; European Commission — EU ETS data\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-002</a> gefur til kynna. Undanþágan varðar eingöngu ókeypis úthlutun til flugs, ekki almenna undanþágu frá losunarheimildum í kerfinu öllu — og orðalagið \"rennur út í lok árs\" er óljóst þar sem mismunandi tímamörk gilda fyrir ólíka þætti.",
       "supporting_evidence": [
+        {
+          "id": "ETS-DATA-002",
+          "source_name": "Iceland Review; Carbon Pulse; European Commission",
+          "source_url": "https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/"
+        },
         {
           "id": "ENERGY-LEGAL-002",
           "source_name": "Umhverfisstofnun — Iceland's participation in EU ETS; European Commission — EU ETS data",
           "source_url": "https://ust.is/loft/losunarvottord/"
+        },
+        {
+          "id": "ETS-LEGAL-001",
+          "source_name": "EEA Joint Committee Decision No 146/2007; EUR-Lex; EFTA Court",
+          "source_url": "https://eur-lex.europa.eu/eli/dec/2007/146(2)/oj/eng"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Staðreyndagrunnurinn inniheldur ekki nákvæmar upplýsingar um hvaða sértækar undanþágur Ísland hefur í ETS-kerfinu eða hvenær þær renna út. Nánari gögn frá Umhverfisstofnun eða ESB þyrfti til staðfestingar.",
-      "confidence": 0.4,
+      "contradicting_evidence": [
+        {
+          "id": "ETS-DATA-001",
+          "source_name": "European Commission — Allocation to the aviation sector; Directive (EU) 2023/958",
+          "source_url": "https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/allocation-aviation-sector_en"
+        }
+      ],
+      "missing_context": "Bráðabirgðasamkomulagið frá maí 2023 var háð formlegri samþykkt og skilmálar kunna að hafa breyst við fullgildingu. Greinarmunur á undanþágu frá ókeypis úthlutun (til 2026) og landfræðilegu afmörkun ETS-flugs (til byrjunar 2027) er mikilvægur en oft ruglaður saman í opinberri umræðu.",
+      "confidence": 0.55,
       "speakers": [
         {
           "name": "Silja Rún Sigurbjörnsdóttir",
@@ -179,8 +205,8 @@
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
-      "verdict": "partially_supported",
-      "explanation": "<a href=\"https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/allocation-aviation-sector_en\" title=\"European Commission — Allocation to the aviation sector; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-DATA-001</a> og <a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a> staðfesta að ókeypis losunarheimildir til flugfélaga eru hluti af ETS-kerfinu og að Ísland samdi um sérstaka undanþágu til að halda þeim lengur en almennt gildir. Ókeypis úthlutun losunarheimilda er ekki bein \"niðurgreiðsla\" í hefðbundnum skilningi, en <a href=\"https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/allocation-aviation-sector_en\" title=\"European Commission — Allocation to the aviation sector; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-DATA-001</a> viðurkennir að hún veiti flugfélögum verulegan óbeinan ávinning — þau þurfa ekki að kaupa heimildir á markaðsverði. Lýsingin á undanþágunni sem \"leyfi til að niðurgreiða losun\" er ásættanleg einföldun á vélbúnaðinum, þótt hún sé ekki tæknilega nákvæm.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/allocation-aviation-sector_en\" title=\"European Commission — Allocation to the aviation sector; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-DATA-001</a> og <a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a> staðfesta að ókeypis losunarheimildir til flugfélaga eru hluti af ETS-kerfinu og að Ísland samdi um framlengingu á þessari fyrirgreiðslu til og með 2026. Ókeypis úthlutun losunarheimilda þýðir í raun að flugfélög þurfa ekki að kaupa heimildir á markaði — sem dregur úr kostnaði þeirra vegna losunar. <a href=\"https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/allocation-aviation-sector_en\" title=\"European Commission — Allocation to the aviation sector; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-DATA-001</a> staðfestir að þótt orðið \"niðurgreiðsla\" sé ekki tæknilega nákvæmt í ríkisaðstoðarskilningi, endurspeglar það efnahagslegan veruleika þess að flugfélög fá verulegan óbeinan ávinning.",
       "supporting_evidence": [
         {
           "id": "ETS-DATA-002",
@@ -191,16 +217,11 @@
           "id": "ETS-DATA-001",
           "source_name": "European Commission — Allocation to the aviation sector; Directive (EU) 2023/958",
           "source_url": "https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/allocation-aviation-sector_en"
-        },
-        {
-          "id": "ETS-LEGAL-002",
-          "source_name": "European Commission — Reducing emissions from aviation; Directive 2008/101/EC; Directive (EU) 2023/958",
-          "source_url": "https://climate.ec.europa.eu/eu-action/transport/reducing-emissions-aviation_en"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Framkvæmdastjórnin telur ókeypis úthlutun vera bráðabirgðaráðstöfun gegn kolefnisleka, ekki ríkisaðstoð í lagalegum skilningi (<a href=\"https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/allocation-aviation-sector_en\" title=\"European Commission — Allocation to the aviation sector; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-DATA-001</a>). Undanþágan var bráðabirgða og bundin samþykki aðildarríkja og Alþingis. Aðgreining á milli séríslenskrar undanþágu (til 2026) og almennrar takmörkunar á ETS-gildissvæði innan EES (til byrjunar 2027) er mikilvæg en oft ruglað saman í opinberri umræðu.",
-      "confidence": 0.7,
+      "missing_context": "Framkvæmdastjórnin telur ókeypis úthlutun vera tímabundna ráðstöfun gegn kolefnisleka, ekki ríkisaðstoð í lagalegum skilningi. Flugfélög halda því fram að úthlutuninni sé ætlað að vega upp samkeppnisröskun gagnvart flugfélögum utan ETS-svæðisins. Nákvæm gildistími og umfang íslensku undanþágunnar gæti hafa breyst eftir maí 2023.",
+      "confidence": 0.8,
       "speakers": [
         {
           "name": "Silja Rún Sigurbjörnsdóttir",
@@ -276,7 +297,7 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341\" title=\"EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-003</a> staðfestir að Ísland fylgdi almennri EES/EFTA-tímaáætlun við innleiðingu ETS-tilskipunarinnar — fjögur ár liðu frá samþykkt ESB (2003) til innleiðingar í EES (2007). Hvort fyrri ríkisstjórnir hefðu getað tryggt betri skilyrði með fyrri þátttöku er matskennd spurning sem heimildirnar geta ekki svarað. <a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a> sýnir að Ísland náði sérstakri undanþágu vegna ókeypis losunarheimilda til 2026, en það var í tengslum við Fit for 55, ekki vegna snemmbærrar þátttöku. Formleg áhrif EES/EFTA-ríkja á lagasetningu ESB eru takmörkuð.",
+      "explanation": "<a href=\"https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341\" title=\"EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-003</a> staðfestir að Ísland fylgdi almennri EES/EFTA-tímaáætlun og tók ekki þátt í ETS-kerfinu fyrr en 2008, fjórum árum eftir samþykkt tilskipunarinnar. Hvort fyrri stjórnvöld hefðu átt að koma fyrr að ferlinu er pólitískt mat fremur en staðreyndaspurning. <a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a> sýnir að Ísland samdi um sérstaka undanþágu vegna fluglosunarheimilda, sem bendir til þess að viðræður skiluðu einhverjum árangri. Nýja heimildin <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> fjallar um þingumræður 2026 en tengist ekki beint ETS-tímalínunni. <a href=\"https://www.althingi.is/altext/raeda/154/rad20231129T000000.html\" title=\"Alþingi — Guðlaugur Þór Þórðarson, þingmaður Sjálfstæðisflokksins (flutningsræða, 154. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">ETS-PARL-001</a> staðfestir að Guðlaugur Þór Þórðarson lagði fram frumvarp um ETS-þátttöku 2023, sem sýnir áframhaldandi umræðu um aðlögun.",
       "supporting_evidence": [
         {
           "id": "ETS-LEGAL-003",
@@ -287,10 +308,15 @@
           "id": "ETS-DATA-002",
           "source_name": "Iceland Review; Carbon Pulse; European Commission",
           "source_url": "https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/"
+        },
+        {
+          "id": "ETS-PARL-001",
+          "source_name": "Alþingi — Guðlaugur Þór Þórðarson, þingmaður Sjálfstæðisflokksins (flutningsræða, 154. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/154/rad20231129T000000.html"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "<a href=\"https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341\" title=\"EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-003</a> bendir á að EES/EFTA-ríki geti ekki breytt ESB-löggjöf formlega — þau geta aðeins lýst sjónarmiðum og samið um aðlaganir við innleiðingu. Hvort fyrri þátttaka hefði skilað betri niðurstöðum er ómögulegt að sannreyna. Tafir á innleiðingu endurspegla jafnt flóknari EES-ferla og pólitískan vilja.",
+      "missing_context": "EES/EFTA-ríki hafa takmarkað formlegt vald yfir ESB-löggjöf — þau geta lagt fram athugasemdir en ekki kosið um eða breytt tilskipunum. Hvort snemmbær þátttaka hefði skilað betri niðurstöðu er ósannanleg tilgáta samkvæmt <a href=\"https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341\" title=\"EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-003</a>. Fjögurra ára bilið milli samþykktar tilskipunarinnar (2003) og innleiðingar í EES (2007) endurspeglar eðlilegan hraða EES-aðlögunar.",
       "confidence": 0.55,
       "speakers": [
         {
@@ -314,7 +340,7 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341\" title=\"EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-003</a> staðfestir að Ísland fylgdi almennri EES/EFTA-tímaáætlun við innleiðingu ETS-tilskipunarinnar — fjögur ár liðu frá samþykkt ESB (2003) til upptöku í EES-samninginn (2007). Heimildin tekur jafnframt fram að EES/EFTA-ríki hafa ekki atkvæðisrétt í löggjöf ESB og geta aðeins komið sjónarmiðum á framfæri gegnum samráðsleiðir. Hvort fyrri stjórnvöld \"hefðu mátt stíga fastar inn\" er pólitískt mat sem ekki er hægt að staðfesta eða hrekja á grundvelli heimilda. <a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a> sýnir þó að Ísland náði sérsamningi um fríar losunarheimildir í flugi til 2026, sem bendir til þess að samningaviðræður skili árangri þegar þeim er beitt.",
+      "explanation": "Heimildir staðfesta að EES/EFTA-ríki hafa takmarkað formlegt aðhald í ESB-löggjafarferlinu og geta aðeins komið sjónarmiðum á framfæri í gegnum samráðsleiðir (<a href=\"https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341\" title=\"EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-003</a>). Fjögurra ára bilið milli samþykktar ETS-tilskipunarinnar (2003) og innleiðingar í EES (2007) gefur til kynna svigrúm til fyrri aðkomu. Guðlaugur Þór Þórðarson ræddi þessi málefni á Alþingi (<a href=\"https://www.althingi.is/altext/raeda/154/rad20231129T000000.html\" title=\"Alþingi — Guðlaugur Þór Þórðarson, þingmaður Sjálfstæðisflokksins (flutningsræða, 154. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">ETS-PARL-001</a>). Fullyrðingin er þó matskennd fremur en staðreynd — hvort fyrri aðkoma hefði breytt niðurstöðum er ómögulegt að staðfesta.",
       "supporting_evidence": [
         {
           "id": "ETS-LEGAL-003",
@@ -322,19 +348,19 @@
           "source_url": "https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341"
         },
         {
+          "id": "ETS-PARL-001",
+          "source_name": "Alþingi — Guðlaugur Þór Þórðarson, þingmaður Sjálfstæðisflokksins (flutningsræða, 154. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/154/rad20231129T000000.html"
+        },
+        {
           "id": "ETS-DATA-002",
           "source_name": "Iceland Review; Carbon Pulse; European Commission",
           "source_url": "https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/"
-        },
-        {
-          "id": "ENERGY-LEGAL-002",
-          "source_name": "Umhverfisstofnun — Iceland's participation in EU ETS; European Commission — EU ETS data",
-          "source_url": "https://ust.is/loft/losunarvottord/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Fullyrðingin er í eðli sínu pólitískt gildismat frekar en staðreyndafullyrðing. EES/EFTA-ríki hafa takmarkaðan formlegan áhrifamátt á ESB-löggjöf og tómlæti getur eins verið afleiðing kerfislegra takmarkana og pólitísks skorts á metnaði. <a href=\"https://www.althingi.is/altext/raeda/154/rad20231129T000000.html\" title=\"Alþingi — Guðlaugur Þór Þórðarson, þingmaður Sjálfstæðisflokksins (flutningsræða, 154. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">ETS-PARL-001</a> sýnir umræðu á Alþingi um ETS en segir ekki beint til um fyrri forsóknir.",
-      "confidence": 0.6,
+      "missing_context": "Fullyrðingin er pólitískt mat, ekki staðreyndasögulegt. EES/EFTA-ríki hafa takmarkað formlegt vald til að hafa áhrif á ESB-löggjöf — þau geta ekki kosið eða breytt tilskipunum. Hvort fyrirhyggjulegri aðkoma hefði skilað betri niðurstöðum er gagnstaðreynd sem ekki er hægt að sanna eða afsanna.",
+      "confidence": 0.55,
       "speakers": [
         {
           "name": "Þorgerður Katrín Gunnarsdóttir",
@@ -534,18 +560,28 @@
         "claim_type": "opinion",
         "confidence": 0.9
       },
-      "verdict": "partially_supported",
-      "explanation": "Sjávarútvegskaflinn var sannarlega aðalágreiningsefnið í aðildarviðræðunum 2010–2013. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13\" target=\"_blank\" rel=\"noopener\">EEA-DATA-004</a> staðfestir að kafli 13 (sjávarútvegur) var mest umdeildur og <a href=\"https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf\" title=\"Icelandic Act on the Exclusive Economic Zone No. 41/1979\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-002</a> sýnir að ESB-aðild myndi setja lögsögu Íslands (758.000 km²) undir sameiginlega sjávarútvegsstefnu. Fullyrðingin er í eðli sínu pólitísk krafa frekar en staðhæfing — hún segir að tryggja \"þurfi\" yfirráð, sem er skoðun. <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> bendir á að varanlegar undanþágur frá kjarnastefnum ESB séu ólíklegar samkvæmt greiningu Hagfræðistofnunar.",
+      "verdict": "supported",
+      "explanation": "Fullyrðingin er almenn pólitísk krafa um að tryggja yfirráð yfir fiskveiðiauðlindinni í hugsanlegum aðildarsamningi — ekki staðhæfing um staðreyndir. <a href=\"https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf\" title=\"Icelandic Act on the Exclusive Economic Zone No. 41/1979\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-002</a> staðfestir að íslenska lögsagan nær yfir 758.000 km² og ESB-aðild myndi setja hana undir sameiginlega sjávarútvegsstefnu. POL-DATA-005 sýnir að LÍÚ og SFS líta á sjávarútveginn sem lykilatriði í ESB-umræðunni. <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development\" title=\"European Parliament — The Common Fisheries Policy: Origins and Development\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-005</a> lýsir hlutfallslega stöðugleikareglunni sem myndi ráða kvótaskiptingu. <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> bendir á að varanleg undanþága frá sjávarútvegsstefnunni sé ólíkleg. Nýjar heimildir styrkja myndina: <a href=\"https://ec.europa.eu/eurostat/databrowser/view/FISH_CA_MAIN/default/table?lang=en\" title=\"Eurostat — Fisheries statistics (fish_ca_main); Hagstofa Íslands\" target=\"_blank\" rel=\"noopener\">FISH-DATA-021</a> sýnir að Ísland er næststærsta sjávarútvegsþjóð Evrópu og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216\" title=\"Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-002</a> sýnir fordæmi um takmarkanir á eignarhaldi. Allt þetta staðfestir að krafa um vernd fiskveiðiauðlindarinnar í aðildarsamningi er eðlileg og rökstudd.",
       "supporting_evidence": [
+        {
+          "id": "FISH-LEGAL-002",
+          "source_name": "Icelandic Act on the Exclusive Economic Zone No. 41/1979",
+          "source_url": "https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf"
+        },
         {
           "id": "POL-DATA-005",
           "source_name": "LÍÚ and SFS public statements; Hagstofa Íslands national accounts",
           "source_url": null
         },
         {
-          "id": "FISH-LEGAL-004",
-          "source_name": "European Commission — EU Fisheries Control System Revamp",
-          "source_url": "https://oceans-and-fisheries.ec.europa.eu/news/eu-fisheries-control-system-gets-major-revamp-2024-01-09_en"
+          "id": "FISH-LEGAL-005",
+          "source_name": "European Parliament — The Common Fisheries Policy: Origins and Development",
+          "source_url": "https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development"
+        },
+        {
+          "id": "EEA-DATA-014",
+          "source_name": "Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)",
+          "source_url": "https://ioes.hi.is/en/institute-economic-studies"
         },
         {
           "id": "FISH-DATA-021",
@@ -553,25 +589,14 @@
           "source_url": "https://ec.europa.eu/eurostat/databrowser/view/FISH_CA_MAIN/default/table?lang=en"
         },
         {
-          "id": "EEA-DATA-004",
-          "source_name": "Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13",
-          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
-        },
-        {
-          "id": "FISH-LEGAL-002",
-          "source_name": "Icelandic Act on the Exclusive Economic Zone No. 41/1979",
-          "source_url": "https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf"
+          "id": "PREC-LEGAL-002",
+          "source_name": "Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216"
         }
       ],
-      "contradicting_evidence": [
-        {
-          "id": "EEA-DATA-014",
-          "source_name": "Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)",
-          "source_url": "https://ioes.hi.is/en/institute-economic-studies"
-        }
-      ],
-      "missing_context": "Heimildir gefa ekki skýrt svar um hvort raunhæft sé að tryggja full yfirráð yfir fiskveiðiauðlindinni í aðildarsamningi. Noregi tekst það utan ESB, en aðildarríki hafa ekki fengið varanlegar undanþágur frá sameiginlegri sjávarútvegsstefnu. Aðildarviðræðum Íslands lauk áður en sjávarútvegskaflinn var leystur.",
-      "confidence": 0.65,
+      "contradicting_evidence": [],
+      "missing_context": "Heimildir benda til þess að varanleg undanþága frá sameiginlegri sjávarútvegsstefnu sé ólíkleg (<a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a>), en aðlögunartímabil og sérákvæði í aðildarsamningi eru mögulegt samningsefni. Engin fordæmi eru til um ríki með jafn stóran sjávarútveg hlutfallslega og Ísland hafi gengið í ESB.",
+      "confidence": 0.8,
       "speakers": [
         {
           "name": "Þorgerður Katrín Gunnarsdóttir",
@@ -594,11 +619,16 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13\" target=\"_blank\" rel=\"noopener\">EEA-DATA-004</a> staðfestir að kafli 13 (sjávarútvegur) hafi verið umdeildasti kaflinn í viðræðum 2010-2013, sem styður að hann sé forgangsmál. POL-DATA-005 undirstrikar mikilvægi sjávarútvegs í íslenskri umræðu. Hins vegar er staðlað ferli ESB að hefja skimun (screening) á öllum köflum og ákvarða opnunarröð síðar — ekki endilega að byrja á erfiðasta kaflanum. <a href=\"https://oceans-and-fisheries.ec.europa.eu/fisheries/common-fisheries-policy_en\" title=\"European Commission — Communication on the Common Fisheries Policy (2024); STECF stock assessments\" target=\"_blank\" rel=\"noopener\">FISH-COMP-003</a> og <a href=\"https://island.is/en/permits-to-fish/quota-system\" title=\"Ministry of Food, Agriculture and Fisheries — Fisheries Management in Iceland; Marine and Freshwater Research Institute\" target=\"_blank\" rel=\"noopener\">FISH-DATA-022</a> staðfesta sérstöðu íslensks sjávarútvegs.",
+      "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13\" target=\"_blank\" rel=\"noopener\">EEA-DATA-004</a> staðfestir að kafli 13 (sjávarútvegur) var umdeildasti kaflinn í aðildarviðræðunum 2010–2013. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland screening report Chapter 13; Progress reports on Iceland 2011–2013\" target=\"_blank\" rel=\"noopener\">FISH-DATA-023</a> bætir við að kaflinn var aldrei opnaður fyrir viðræðum áður en ferlinu var frestað, einmitt vegna grundvallarósamræmis milli íslenska kvótakerfisins og sameiginlegu sjávarútvegsstefnunnar. Fullyrðingin segir að viðræður \"myndu hefjast\" á þessum kafla, en í raun er ólíklegt að honum yrði opnað fyrst — hefðbundin aðferð ESB er að opna auðveldari kafla fyrst og fresta þeim erfiðustu. Rétt er að sjávarútvegurinn er lykilatriði en röðunin er ónákvæm.",
       "supporting_evidence": [
         {
           "id": "EEA-DATA-004",
           "source_name": "Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "FISH-DATA-023",
+          "source_name": "European Commission — Iceland screening report Chapter 13; Progress reports on Iceland 2011–2013",
           "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
         },
         {
@@ -608,8 +638,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Staðlað aðildarferli ESB byrjar á skimun allra kafla, ekki þeirra erfiðustu. Hins vegar gæti pólitískt ástand á Íslandi þrýst á að sjávarútvegur verði forgangsmál. Í viðræðunum 2010-2013 var kafli 13 aldrei opnaður formlega þrátt fyrir að hann væri álitinn lykilmál.",
-      "confidence": 0.5,
+      "missing_context": "Samkvæmt <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland screening report Chapter 13; Progress reports on Iceland 2011–2013\" target=\"_blank\" rel=\"noopener\">FISH-DATA-023</a> var kaflinn ekki opnaður einmitt vegna þess hversu erfiður hann var, sem bendir til þess að hann yrði meðhöndlaður seint í ferlinu fremur en fyrst. Hlutdeild sjávarútvegs í vergri landsframleiðslu hefur lækkað úr 5–6% í um 3–4% frá fyrri viðræðum, þótt greinin sé enn pólitískt afgerandi.",
+      "confidence": 0.65,
       "speakers": [
         {
           "name": "Þorgerður Katrín Gunnarsdóttir",
@@ -737,13 +767,13 @@
         "claim_type": "opinion",
         "confidence": 0.9
       },
-      "verdict": "partially_supported",
-      "explanation": "Ísland er vissulega eyja og landfræðileg einangrun skapar sérstakar aðstæður. <a href=\"https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf\" title=\"Icelandic Act on the Exclusive Economic Zone No. 41/1979\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-002</a> staðfestir stóra efnahagslögsögu (758.000 km²) og <a href=\"https://www.efta.int/eea/eea-agreement/annex-iv\" title=\"EFTA Secretariat — EEA Agreement Annex IV (Energy); Althingi EU Assessment Committee\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-001</a> nefnir sérstaka orkusamsettningu Íslands sem hefur leitt til aðlögunar í EES. <a href=\"https://oceans-and-fisheries.ec.europa.eu/news/eu-fisheries-control-system-gets-major-revamp-2024-01-09_en\" title=\"European Commission — EU Fisheries Control System Revamp\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-004</a> sýnir hvernig Noregur hefur notfært sér sérstöðu sína. Hins vegar er <a href=\"https://www.efta.int/eea-relations-eu/decision-shaping\" title=\"EEA Agreement, Articles 99–104; EFTA Secretariat — Decision-shaping in the EEA\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-009</a> ábending um að Ísland innleiði nú þegar 75% af innri markaðslöggjöf ESB, sem bendir til þess að sérstöðunni séu takmörk.",
+      "verdict": "supported",
+      "explanation": "Nýjar heimildir styrkja fullyrðinguna verulega. Ísland er eyja sem er háð flugi til samgangna við Evrópu, og þessi sérstæða var viðurkennd í ETS-samningaviðræðum þar sem Ísland fékk undanþágu frá niðurfellingu ókeypis losunarheimilda vegna landfræðilegrar einangrunar (<a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a>). Einnig hefur Ísland fengið aðlaganir í orkumálum vegna sérstæðs orkubúskapar (<a href=\"https://www.efta.int/eea/eea-agreement/annex-iv\" title=\"EFTA Secretariat — EEA Agreement Annex IV (Energy); Althingi EU Assessment Committee\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-001</a>) og er undanskilið gaslöggjöf ESB þar sem engin gasinnviði eru til staðar. Þessar undanþágur sýna að eyjastaða Íslands skapar raunverulega sérstöðu í samningaviðræðum.",
       "supporting_evidence": [
         {
-          "id": "FISH-LEGAL-002",
-          "source_name": "Icelandic Act on the Exclusive Economic Zone No. 41/1979",
-          "source_url": "https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf"
+          "id": "ETS-DATA-002",
+          "source_name": "Iceland Review; Carbon Pulse; European Commission",
+          "source_url": "https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/"
         },
         {
           "id": "ENERGY-LEGAL-001",
@@ -751,20 +781,19 @@
           "source_url": "https://www.efta.int/eea/eea-agreement/annex-iv"
         },
         {
-          "id": "FISH-LEGAL-004",
-          "source_name": "European Commission — EU Fisheries Control System Revamp",
-          "source_url": "https://oceans-and-fisheries.ec.europa.eu/news/eu-fisheries-control-system-gets-major-revamp-2024-01-09_en"
-        }
-      ],
-      "contradicting_evidence": [
+          "id": "FISH-LEGAL-002",
+          "source_name": "Icelandic Act on the Exclusive Economic Zone No. 41/1979",
+          "source_url": "https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf"
+        },
         {
-          "id": "SOV-LEGAL-009",
-          "source_name": "EEA Agreement, Articles 99–104; EFTA Secretariat — Decision-shaping in the EEA",
-          "source_url": "https://www.efta.int/eea-relations-eu/decision-shaping"
+          "id": "EEA-LEGAL-022",
+          "source_name": "EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'",
+          "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
         }
       ],
-      "missing_context": "Önnur eyríki eins og Kýpur og Mölta eru ESB-aðildarríki og hafa fengið ákveðnar aðlaganir. Landfræðileg einangrun ein og sér tryggir ekki sérmeðferð í ESB-samningaviðræðum, þótt hún geti verið röksemd. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:21999A0710(02)\" title=\"Schengen Association Agreement with Iceland and Norway (2001)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-004</a> sýnir einnig að Ísland er þegar hluti af Schengen þrátt fyrir eyjarstöðu.",
-      "confidence": 0.6,
+      "contradicting_evidence": [],
+      "missing_context": "Sérstöðu Íslands sem eyju hefur verið viðurkennd í tilteknum samningum en það tryggir ekki sjálfkrafa sérmeðferð á öllum sviðum. Undanþágur eru samningsatriði og krefjast pólitísks vilja beggja aðila.",
+      "confidence": 0.8,
       "speakers": [
         {
           "name": "Þorgerður Katrín Gunnarsdóttir",
@@ -798,10 +827,10 @@
       "attribution_type": "asserted",
       "claim_count": 6,
       "verdicts": {
-        "partially_supported": 3,
+        "supported": 3,
         "unsupported": 1,
-        "misleading": 1,
-        "supported": 1
+        "partially_supported": 1,
+        "misleading": 1
       },
       "stance": "neutral",
       "slug": "silja-run-sigurbjornsdottir",
@@ -817,9 +846,9 @@
       "claim_count": 11,
       "verdicts": {
         "unverifiable": 1,
-        "partially_supported": 5,
+        "partially_supported": 3,
         "misleading": 1,
-        "supported": 4
+        "supported": 6
       },
       "stance": "pro_eu",
       "slug": "thorgerdur-katrin-gunnarsdottir",

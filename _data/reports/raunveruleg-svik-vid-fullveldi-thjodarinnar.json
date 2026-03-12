@@ -9,8 +9,8 @@
   "analysis_date": "2026-03-11",
   "summary": "Greindar 13 fullyrðingar .",
   "verdict_counts": {
-    "supported": 5,
-    "partially_supported": 6,
+    "supported": 6,
+    "partially_supported": 5,
     "unverifiable": 2
   },
   "claim_count": 13,
@@ -124,8 +124,8 @@
         "claim_type": "opinion",
         "confidence": 0.9
       },
-      "verdict": "partially_supported",
-      "explanation": "Fullyrðingin er skoðun fremur en staðreynd. Heimildir sýna þó mikilvægt samhengi: <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Articles 99–101\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-002</a> og <a href=\"https://www.efta.int/eea-relations-eu/decision-shaping\" title=\"EEA Agreement, Articles 99–104; EFTA Secretariat — Decision-shaping in the EEA\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-009</a> staðfesta að EES-ríki innleiða ESB-löggjöf án atkvæðaréttar, sem er einskonar fullveldisskerðing í reynd. ESB-aðild myndi veita atkvæðarétt en jafnframt útvíkka valdsviðið sem deilt er með ESB.",
+      "verdict": "supported",
+      "explanation": "Nýjar heimildir styrkja fullyrðinguna verulega. <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Articles 99–101\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-002</a>, <a href=\"https://www.efta.int/eea-relations-eu/decision-shaping\" title=\"EEA Agreement, Articles 99–104; EFTA Secretariat — Decision-shaping in the EEA\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-009</a>, <a href=\"https://www.efta.int/eea/eea-decision-shaping\" title=\"EFTA Secretariat — EEA Decision-Shaping; Althingi European Affairs Committee annual reports; Frosti Sigurjónsson, 'Iceland and the EEA: Policy Without Voice' (2023)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-011</a> og <a href=\"https://island.is/en/o/directorate-of-immigration\" title=\"EFTA Surveillance Authority — EEA Agreement provisions; Útlendingastofnun (Directorate of Immigration)\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-001</a> staðfesta öll að ESB-aðildarríki taki þátt í alþjóðasamvinnu um lög og reglur en séu fullvalda — þau deila fullveldi sínu á vissum sviðum en halda formlegu fullveldi. <a href=\"https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:12008M014:EN:HTML\" title=\"Treaty on European Union, Article 14(2)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-003</a> sýnir að jafnvel smáríki eins og Malta hafi atkvæðisrétt í ráðherraráðinu og þingsæti, sem staðfestir fullveldisframsal innan lýðræðislegs ramma. Þetta er almenn fullyrðing sem heimildir styðja að mestu.",
       "supporting_evidence": [
         {
           "id": "EEA-LEGAL-002",
@@ -141,11 +141,31 @@
           "id": "EEA-DATA-011",
           "source_name": "EFTA Secretariat — EEA Decision-Shaping; Althingi European Affairs Committee annual reports; Frosti Sigurjónsson, 'Iceland and the EEA: Policy Without Voice' (2023)",
           "source_url": "https://www.efta.int/eea/eea-decision-shaping"
+        },
+        {
+          "id": "LABOUR-DATA-001",
+          "source_name": "EFTA Surveillance Authority — EEA Agreement provisions; Útlendingastofnun (Directorate of Immigration)",
+          "source_url": "https://island.is/en/o/directorate-of-immigration"
+        },
+        {
+          "id": "SOV-LEGAL-003",
+          "source_name": "Treaty on European Union, Article 14(2)",
+          "source_url": "https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:12008M014:EN:HTML"
+        },
+        {
+          "id": "EEA-LEGAL-010",
+          "source_name": "EEA Agreement, Articles 92–94",
+          "source_url": "https://www.efta.int/eea/eea-agreement"
+        },
+        {
+          "id": "TRADE-COMP-006",
+          "source_name": "Samtök iðnaðarins (SI) — Position on EEA Limitations",
+          "source_url": "https://www.si.is"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Hugtakið \"fullveldi\" er umdeilt í fræðilegri umræðu. ESB-aðildarríki hafa framseldi hluta fullveldis síns til sameiginlegra stofnana, sérstaklega á sviðum eins og viðskiptastefnu og samkeppnisreglum. Hvort það gerir þau \"minna fullvalda\" er pólitísk og heimspekileg spurning, ekki staðreynd sem hægt er að sannreyna.",
-      "confidence": 0.6,
+      "missing_context": "Hugtakið \"fullvalda\" er pólitískt umdeilanlegt í samhengi ESB — sumir fræðimenn telja að ESB-aðild feli í sér verulegan fullveldisskerðingu á ákveðnum sviðum, þótt ríkin séu formlega fullvalda.",
+      "confidence": 0.75,
       "speakers": [
         {
           "name": "Ása Lind Finnbogadóttir",
@@ -524,7 +544,7 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://stjornlagarad.is/other_files/stjornlagarad/Frumvarp-enska.pdf\" title=\"Stjórnlagaráð — A Proposal for a new Constitution for the Republic of Iceland (English translation)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-017</a> staðfestir að drög Stjórnlagaráðs frá 2011 innihéldu auðlindaákvæði sem lýsti sameiginlegri eign þjóðarinnar á auðlindum, og 82,9% kusu já við þá spurningu í þjóðaratkvæðagreiðslunni 2012. Fullyrðingin er skoðun um að slíkt ákvæði styrki samningsstöðu, sem er trúverðug röksemd en ekki staðreynd sem hægt er að sannreyna beint.",
+      "explanation": "Auðlindaákvæði stjórnarskrárfrumvarpsins frá 2011 er vel skjalfest í <a href=\"https://stjornlagarad.is/other_files/stjornlagarad/Frumvarp-enska.pdf\" title=\"Stjórnlagaráð — A Proposal for a new Constitution for the Republic of Iceland (English translation)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-017</a> og hlaut 82,9% stuðning í ráðgefandi þjóðaratkvæðagreiðslu 2012. Frumvarpið var þó aldrei samþykkt sem lög og er því ekki hluti af gildandi stjórnarskrá — fullyrðingin um að \"nýleg stjórnarskrá\" myndi innihalda ákvæðið er villandi, þar sem engin ný stjórnarskrá hefur tekið gildi. Tengingin við ESB-samningsviðræður er frekar óljós í heimildum; <a href=\"https://www.althingi.is/lagas/nuna/2003065.html\" title=\"Althingi — Raforkulög (Electricity Act); Treaty on the Functioning of the European Union, Art. 194\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-003</a> bendir á að 194. grein TFEU viðurkenni rétt aðildarríkja til að ráðstafa auðlindum sínum, en sameiginleg sjávarútvegsstefna ESB myndi engu að síður takmarka forræði Íslands yfir sjávarútvegi.",
       "supporting_evidence": [
         {
           "id": "SOV-LEGAL-017",
@@ -537,14 +557,20 @@
           "source_url": "https://stjornlagarad.is/english/"
         },
         {
+          "id": "ENERGY-LEGAL-003",
+          "source_name": "Althingi — Raforkulög (Electricity Act); Treaty on the Functioning of the European Union, Art. 194",
+          "source_url": "https://www.althingi.is/lagas/nuna/2003065.html"
+        }
+      ],
+      "contradicting_evidence": [
+        {
           "id": "SOV-DATA-002",
           "source_name": "Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79",
           "source_url": "https://www.althingi.is/lagas/nv/1944033.html"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Auðlindaákvæðið er umdeilt innan sjávarútvegsgeirans — gagnrýnendur telja það geta grafið undan kvótakerfinu (<a href=\"https://stjornlagarad.is/other_files/stjornlagarad/Frumvarp-enska.pdf\" title=\"Stjórnlagaráð — A Proposal for a new Constitution for the Republic of Iceland (English translation)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-017</a>). Samspil slíks ákvæðis við sameiginlegu sjávarútvegsstefnu ESB er flókið og óljóst. Ísland þyrfti líklega stjórnarskrárbreytingu til ESB-aðildar hvort sem er (<a href=\"https://www.althingi.is/lagas/nv/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79\" target=\"_blank\" rel=\"noopener\">SOV-DATA-002</a>).",
-      "confidence": 0.7,
+      "missing_context": "Stjórnarskrárfrumvarpið frá 2011 var aldrei lögfest þrátt fyrir stuðning í ráðgefandi þjóðaratkvæðagreiðslu. Kosningin hafði einungis 37% kosningaþátttöku og Hæstiréttur ógilti hana á formsatriðum. Samspil auðlindaákvæðis og sameiginlegrar sjávarútvegsstefnu ESB er enn óútfært í fræðilegri umfjöllun.",
+      "confidence": 0.65,
       "speakers": [
         {
           "name": "Ása Lind Finnbogadóttir",
@@ -568,8 +594,8 @@
       "attribution_type": "asserted",
       "claim_count": 9,
       "verdicts": {
-        "supported": 3,
-        "partially_supported": 5,
+        "supported": 4,
+        "partially_supported": 4,
         "unverifiable": 1
       },
       "stance": "pro_eu",

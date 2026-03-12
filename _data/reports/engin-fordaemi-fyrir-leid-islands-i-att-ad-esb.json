@@ -10,8 +10,8 @@
   "summary": "Greindar 21 fullyrðingar. Niðurstöður: 10 stutt að hluta, 10 stutt af heimildum, 1 ekki hægt að sannreyna. Sjónarhorn: hlutlaus en ófullnægjandi. Heildstæðni: 25%.",
   "verdict_counts": {
     "unsupported": 1,
-    "partially_supported": 9,
-    "supported": 10,
+    "partially_supported": 6,
+    "supported": 13,
     "unverifiable": 1
   },
   "claim_count": 21,
@@ -85,7 +85,7 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "Fullyrðingin er matskennd og heimildir gefa blandaða mynd. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> staðfestir að Framkvæmdastjórnin mat umsókn Íslands mjög jákvætt árið 2010 — Ísland var talið \"auðveldur\" umsækjandi vegna mikillar samsvörunar við regluverkið í gegnum EES. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:21999A0710(02)\" title=\"Schengen Association Agreement with Iceland and Norway (2001)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-004</a> og <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf\" title=\"EEA Agreement — Protocol 3 on trade in processed agricultural products\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-002</a> styðja þetta: Ísland er þegar í Schengen og hefur tollfrjálsan aðgang að innri markaðnum. Á hinn bóginn benda <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1\" title=\"Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-006</a> og <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> á erfiðleikana — undanþágur frá sjávarútvegsstefnu eru ólíklegar og samningsstaðan er háð pólitískum aðstæðum. Aðalveikleikinn er sjávarútvegsmálið, sem enn er óleyst.",
+      "explanation": "Samningsstaða Íslands hefur ákveðna styrkleika: hátt þróunarstig, mikil EES-aðlögun (11 af 27 köflum voru lokað bráðabirgða á 18 mánuðum 2010–2013), sterkar lýðræðisstofnanir, og hernaðarlega mikilvæg lega (<a href=\"https://www.nato.int/cps/en/natohq/topics_212802.htm\" title=\"NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list\" target=\"_blank\" rel=\"noopener\">SOV-DATA-009</a>, <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a>). Viðskiptaráð áætlar hagvöxt af aðild (<a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a>). Aftur á móti er Ísland efnahagslega lítið (25 ma. evra landsframleiðsla) og hefur takmarkaða skiptimynt á viðkvæmustu sviðunum — sjávarútvegi, landbúnaði og gjaldmiðilsstefnu — sem eru utan EES og krefjast nýrra samninga. Staðhæfingin um \"almennt góða\" samningsstöðu er of víðtæk.",
       "supporting_evidence": [
         {
           "id": "TRADE-DATA-022",
@@ -93,19 +93,19 @@
           "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
         },
         {
+          "id": "POL-DATA-017",
+          "source_name": "Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)",
+          "source_url": "https://vi.is/skyrslur/1667"
+        },
+        {
+          "id": "SOV-DATA-009",
+          "source_name": "NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list",
+          "source_url": "https://www.nato.int/cps/en/natohq/topics_212802.htm"
+        },
+        {
           "id": "EEA-LEGAL-004",
           "source_name": "Schengen Association Agreement with Iceland and Norway (2001)",
           "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:21999A0710(02)"
-        },
-        {
-          "id": "TRADE-DATA-002",
-          "source_name": "EEA Agreement — Protocol 3 on trade in processed agricultural products",
-          "source_url": "https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf"
-        },
-        {
-          "id": "LABOUR-DATA-013",
-          "source_name": "OECD — Trade Union Density (OECD.Stat); ILO — Global Wage Report 2024/25",
-          "source_url": "https://data-explorer.oecd.org/vis?df%5Bds%5D=DisseminateFinalDMZ&df%5Bid%5D=DSD_TUD_CBC@DF_TUD&df%5Bag%5D=OECD.ELS.SAE"
         }
       ],
       "contradicting_evidence": [
@@ -113,9 +113,14 @@
           "id": "SOV-LEGAL-006",
           "source_name": "Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols",
           "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1"
+        },
+        {
+          "id": "TRADE-COMP-005",
+          "source_name": "EFTA Secretariat — EFTA budget; various academic estimates",
+          "source_url": "https://www.efta.int/about-efta/efta-secretariat/efta-budget"
         }
       ],
-      "missing_context": "Forgangsröðun ESB í stækkunarmálum hefur breyst — Vestur-Balkan, Úkraína og Moldóva eru nú í forgrunni. Ísland er ekki í forgangi þótt samningsstaðan sé tæknilega sterk. Sjávarútvegsmálið var aldrei leyst í viðræðunum 2010–2013.",
+      "missing_context": "Samningsstaða er mismunandi eftir málefnasviðum. Á sviðum EES-samningsins er staðan sterk vegna mikillar aðlögunar, en á sviðum utan EES (sjávarútvegur, landbúnaður, gjaldmiðill) er hún mun veikari. Afstaða ESB til nýrra undanþága hefur hert frá 2004, og Króatía (2013) fékk engar varanlegar undanþágur.",
       "confidence": 0.6,
       "speakers": [
         {
@@ -182,7 +187,7 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "Grundvallarrammi aðildarviðræðna — að umsækjandi samþykki regluverkið eins og það er — er sá sami og áður, sbr. <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a>. Hins vegar hefur aðferðafræðin breyst verulega. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — Communication on 'Enhancing the accession process: A credible EU perspective for the Western Balkans', COM(2020) 57 final\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-019</a> staðfestir að Framkvæmdastjórnin tók upp nýja stækkunaraðferðafræði árið 2020 sem raðar köflum í sex þemaklasa og innleiðir \"afturkræfni\" — strangari en ramminn sem gilti 2010–2013. Óljóst er hvort þessi aðferðafræði, sem var hönnuð fyrir ríki Vestur-Balkan, gildi beint um Ísland. Regluverkið sjálft hefur einnig stækkað umtalsvert frá 2013 (Evrópski græni sáttmálinn, gervigreindarreglugerð, lög um stafræna þjónustu o.fl.), þannig að efni samninganna yrði töluvert víðfeðmara.",
+      "explanation": "Grundvallaruppbygging aðildarviðræðna — skoðun á regluverkinu, viðmið og aðlögunartímabil — er sú sama og í viðræðum Íslands 2010–2013. <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> staðfesta að meginreglan um að umsóknarríki samþykki regluverkið eins og það er hefur ekki breyst. Hins vegar tók Framkvæmdastjórnin upp endurskoðaða aðferðafræði árið 2020 (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — Communication on 'Enhancing the accession process: A credible EU perspective for the Western Balkans', COM(2020) 57 final\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-019</a>) sem endurskipuleggur kaflana í sex þemaklasa og bætir við \"afturkræfni\" — ef framfarir í grundvallarþáttum hörfa má frysta eða stöðva viðræður. Þetta er strangara umgjörð en gilti í viðræðum Íslands.",
       "supporting_evidence": [
         {
           "id": "EEA-LEGAL-017",
@@ -202,7 +207,7 @@
           "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
         }
       ],
-      "missing_context": "Grundvöllurinn (samþykkt alls regluverksins) er sá sami en viðræðurnar myndu fara eftir breyttri aðferðafræði frá 2020. Regluverkið hefur stækkað verulega síðan 2013. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1\" title=\"Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-006</a> sýnir einnig að afstaða ESB til undanþága hefur hert. Fullyrðingin er þannig hálfsönn — grundvallarreglan er sú sama en samhengið er annað.",
+      "missing_context": "Óvíst er hvort aðferðafræðin frá 2020, sem hönnuð var fyrir Vestur-Balkaníð, myndi gilda um Ísland í óbreyttri mynd. Sterk réttarríkishefð Íslands myndi líklega auðvelda grundvallarklasann. Afstaða ESB til undanþága hefur þrengst frá stækkun 2004 — Króatía hlaut engar varanlegar undanþágur árið 2013 (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1\" title=\"Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-006</a>).",
       "confidence": 0.7,
       "speakers": [
         {
@@ -269,7 +274,7 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "Brexit var án efa stærsti einstaki atburðurinn í sögu ESB á undanförnum árum — <a href=\"https://obr.uk/frs/fiscal-risks-and-sustainability-july-2023/\" title=\"UK Office for Budget Responsibility — Fiscal Risks and Sustainability Report 2023\" target=\"_blank\" rel=\"noopener\">PREC-HIST-003</a> staðfestir útgönguna 31. janúar 2020 og <a href=\"https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/\" title=\"UK Office for Budget Responsibility — Economic and fiscal outlook 2023; Centre for European Reform; Bank of England\" target=\"_blank\" rel=\"noopener\">PREC-DATA-008</a> lýsir umfangsmiklum efnahagslegum áhrifum. Þó er fullyrðingin of einföld ef hún gefur í skyn að Brexit hafi verið eina meginbreytingin. <a href=\"https://www.eeas.europa.eu/eeas/strategic-compass-security-and-defence-1_en\" title=\"EU Strategic Compass for Security and Defence (March 2022); NATO Allied Air Command — Icelandic Air Policing; IISS Strategic Survey 2023\" target=\"_blank\" rel=\"noopener\">SOV-HIST-003</a> nefnir innrás Rússa í Úkraínu 2022, hernaðarstefnu ESB (Strategic Compass), og 150 milljarða evra varnaráætlun — allt eru þetta grundvallarbreytingar sem eiga sér stað samhliða. <a href=\"https://www.cer.eu/insights/gap-between-brexit-reset-rhetoric-and-reality\" title=\"Centre for European Reform; UK in a Changing Europe\" target=\"_blank\" rel=\"noopener\">PREC-DATA-004</a> sýnir jafnframt að engin ríki ræða útgöngu eftir Brexit, sem styður mikilvægi atburðarins sem vatnaskil. Brexit var ein af mörgum meginbreytingum, en rétt er að hún var meginbreytingin hvað varðar stækkun og skipan sambandsins.",
+      "explanation": "Brexit var tvímælalaust ein af stærstu breytingum í sögu Evrópusambandsins og <a href=\"https://obr.uk/frs/fiscal-risks-and-sustainability-july-2023/\" title=\"UK Office for Budget Responsibility — Fiscal Risks and Sustainability Report 2023\" target=\"_blank\" rel=\"noopener\">PREC-HIST-003</a>, <a href=\"https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/\" title=\"UK Office for Budget Responsibility — Economic and fiscal outlook 2023; Centre for European Reform; Bank of England\" target=\"_blank\" rel=\"noopener\">PREC-DATA-008</a> og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M050\" title=\"Treaty on European Union, Article 50\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-001</a> staðfesta umfang áhrifanna. Fullyrðingin er þó of einföld þegar hún kallar Brexit \"meginbreytinguna\" undanfarin ár. Aðrar stórar breytingar áttu sér stað á sama tímabili — innrás Rússlands í Úkraínu (2022) og viðbrögð ESB, COVID-faraldurinn og sameiginlegur lántökusjóður, Evrópski græni sáttmálinn, og öryggisstefnubreytingin eftir Trump — sem heimildir nefna ekki beint en eru augljóslega sambærilegar að umfangi.",
       "supporting_evidence": [
         {
           "id": "PREC-HIST-003",
@@ -285,15 +290,10 @@
           "id": "SOV-LEGAL-001",
           "source_name": "Treaty on European Union, Article 50",
           "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M050"
-        },
-        {
-          "id": "PREC-DATA-004",
-          "source_name": "Centre for European Reform; UK in a Changing Europe",
-          "source_url": "https://www.cer.eu/insights/gap-between-brexit-reset-rhetoric-and-reality"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Innrás Rússa í Úkraínu 2022 breytti öryggisstefnu ESB í grundvallaratriðum (<a href=\"https://www.eeas.europa.eu/eeas/strategic-compass-security-and-defence-1_en\" title=\"EU Strategic Compass for Security and Defence (March 2022); NATO Allied Air Command — Icelandic Air Policing; IISS Strategic Survey 2023\" target=\"_blank\" rel=\"noopener\">SOV-HIST-003</a>). Stækkunarstefnan var endurvakin með umsóknum Úkraínu, Moldóvu og Georgíu. COVID-heimsfaraldurinn varð tilefni sameiginlegra skuldabréfaútgáfu ESB. Þessar breytingar eru sambærilegar að umfangi og áhrifum við Brexit, þótt Brexit sé eini dæmið um raunverulega tilfærslu á mörkum sambandsins.",
+      "missing_context": "Fullyrðingin um \"meginbreytinguna\" er mat sem heimildir staðfesta ekki einhlítt. Brexit var stærsta stofnanabreyting ESB en margir fræðimenn myndu benda á innrás Rússlands í Úkraínu, COVID-viðbrögðin eða stafræna og loftslagsreglugerðarpakkann sem jafn afdrifaríkar breytingar á starfsemi sambandsins.",
       "confidence": 0.65,
       "speakers": [
         {
@@ -316,28 +316,38 @@
         "claim_type": "opinion",
         "confidence": 0.9
       },
-      "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.nato.int/cps/en/natohq/topics_212802.htm\" title=\"NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list\" target=\"_blank\" rel=\"noopener\">SOV-DATA-009</a> staðfestir að engin opinber andstaða Bandaríkjanna við ESB-aðild Íslands er til staðar, en bendir jafnframt á að einstakar stjórnir (einkum Trump) hafi verið efins um ESB. <a href=\"https://www.eeas.europa.eu/eeas/strategic-compass-security-and-defence-1_en\" title=\"EU Strategic Compass for Security and Defence (March 2022); NATO Allied Air Command — Icelandic Air Policing; IISS Strategic Survey 2023\" target=\"_blank\" rel=\"noopener\">SOV-HIST-003</a> lýsir vaxandi varnarsamstarfi ESB og NATO eftir innrás Rússa í Úkraínu, sem tengir breytta bandaríska stefnu við evrópska öryggisumgjörð. Fullyrðingin um áhrif á \"stöðu ESB og aðildarviðræður\" er þó ónákvæm — heimildir staðfesta óbein tengsl en ekki bein áhrif á aðildarviðræður sérstaklega.",
+      "verdict": "supported",
+      "explanation": "Heimildir staðfesta skýrt að breytingar á utanríkisstefnu Bandaríkjanna hafa áhrif á ESB og aðildarviðræður. <a href=\"https://www.nato.int/cps/en/natohq/topics_212802.htm\" title=\"NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list\" target=\"_blank\" rel=\"noopener\">SOV-DATA-009</a> lýsir því hvernig Trump-stjórnin fyrri (2017–2021) var efins um ESB, þótt opinber stefna styddi Evrópusamrunann. <a href=\"https://www.eeas.europa.eu/eeas/strategic-compass-security-and-defence-1_en\" title=\"EU Strategic Compass for Security and Defence (March 2022); NATO Allied Air Command — Icelandic Air Policing; IISS Strategic Survey 2023\" target=\"_blank\" rel=\"noopener\">SOV-HIST-003</a> sýnir hvernig innrás Rússlands í Úkraínu breytti öryggisumhverfi Íslands og jók þýðingu NATO-samstarfs. <a href=\"https://www.consilium.europa.eu/en/\" title=\"Press conference statements — Donald Tusk, PM of Poland (2025–2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-011</a> staðfestir að Trump-stjórnin og öryggisstefnubreytingar Bandaríkjanna hafi hrint af stað endurmati á ESB-aðild. <a href=\"https://www.reuters.com/world/europe/norway-tariffs-trump-2025/\" title=\"Reuters, NRK, Financial Times — viðskipti Noregs og Bandaríkjanna 2025–2026\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-027</a> sýnir áþreifanleg áhrif tollastefnu Bandaríkjanna á Noreg — sem varpar ljósi á stöðu smárra EES-ríkja utan ESB. Nýju heimildarnar styrkja þá mynd að bandarísk utanríkisstefna hafi margvísleg áhrif á ESB-umræðuna.",
       "supporting_evidence": [
-        {
-          "id": "SOV-DATA-008",
-          "source_name": "1951 US-Iceland Defence Agreement; 2016 Iceland-US Security Cooperation Agreement; US Department of State bilateral relations factsheet",
-          "source_url": "https://www.state.gov/u-s-relations-with-iceland/"
-        },
         {
           "id": "SOV-DATA-009",
           "source_name": "NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list",
           "source_url": "https://www.nato.int/cps/en/natohq/topics_212802.htm"
         },
         {
+          "id": "SOV-DATA-008",
+          "source_name": "1951 US-Iceland Defence Agreement; 2016 Iceland-US Security Cooperation Agreement; US Department of State bilateral relations factsheet",
+          "source_url": "https://www.state.gov/u-s-relations-with-iceland/"
+        },
+        {
           "id": "SOV-HIST-003",
           "source_name": "EU Strategic Compass for Security and Defence (March 2022); NATO Allied Air Command — Icelandic Air Policing; IISS Strategic Survey 2023",
           "source_url": "https://www.eeas.europa.eu/eeas/strategic-compass-security-and-defence-1_en"
+        },
+        {
+          "id": "PREC-DATA-011",
+          "source_name": "Press conference statements — Donald Tusk, PM of Poland (2025–2026)",
+          "source_url": "https://www.consilium.europa.eu/en/"
+        },
+        {
+          "id": "TRADE-DATA-027",
+          "source_name": "Reuters, NRK, Financial Times — viðskipti Noregs og Bandaríkjanna 2025–2026",
+          "source_url": "https://www.reuters.com/world/europe/norway-tariffs-trump-2025/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Beint samband milli bandarískra stefnubreytinga og ESB-aðildarviðræðna Íslands er ekki skjalfest. Bandarísk utanríkisstefna getur breyst milli stjórnvalda — stofnanleg afstaða styður Evrópusamrunann en einstök stjórnvöld hafa verið efins. Landfræðileg staða Íslands í GIUK-skarðinu eykur hernaðarlega þýðingu þess.",
-      "confidence": 0.5,
+      "missing_context": "Fullyrðingin er almenn og nær yfir breitt svið. Heimildir staðfesta áhrifin en nákvæm áhrif á aðildarviðræður Íslands sérstaklega eru óbein — breytingarnar hafa fyrst og fremst breytt pólitísku samhengi, ekki formlegu viðræðuferli.",
+      "confidence": 0.8,
       "speakers": [
         {
           "name": "Vilborg Ása Guðjónsdóttir",
@@ -403,22 +413,27 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://obr.uk/frs/fiscal-risks-and-sustainability-july-2023/\" title=\"UK Office for Budget Responsibility — Fiscal Risks and Sustainability Report 2023\" target=\"_blank\" rel=\"noopener\">PREC-HIST-003</a> staðfestir útgöngu Bretlands og að OBR áætlaði um 4% samdrátt í landsframleiðslu Bretlands til langs tíma. <a href=\"https://commonslibrary.parliament.uk/research-briefings/cbp-7851/\" title=\"UK House of Commons Library, Statistics on UK-EU Trade (Research Briefing CBP-7851)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-001</a> sýnir 18% raunsamdrátt í vöruskiptum Bretlands við ESB frá 2019 til 2024, sem bendir til þess að Brexit hafi verið Bretum erfiðara en ESB. Þessar heimildir styðja óbeint hugmyndina um að ESB hafi staðið betur af en Bretland eftir skilnaðinn. Engin heimild metur þó beint hvort ESB hafi „rétt úr kútnum\" — VLF-þróun, pólitískan stöðugleika og viðskiptavöxt ESB-27 vantar í gagnagrunninn.",
+      "explanation": "Fullyrðingin er matskennd en heimildir styðja hana að hluta. <a href=\"https://commonslibrary.parliament.uk/research-briefings/cbp-7851/\" title=\"UK House of Commons Library, Statistics on UK-EU Trade (Research Briefing CBP-7851)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-001</a> og <a href=\"https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/\" title=\"UK Office for National Statistics — Trade statistics; Office for Budget Responsibility — Brexit impact assessment\" target=\"_blank\" rel=\"noopener\">PREC-HIST-012</a> sýna að útganga Bretlands olli verulegum efnahagslegum skaða — vöruviðskipti drógust saman um 15% að raunvirði og langtíma-VLF-áhrif eru metin á um 4%. Þetta bendir til þess að ESB hafi staðið betur af en Bretland eftir útgönguna. Um 55% Breta telja nú útgönguna rangt skref samkvæmt <a href=\"https://www.cer.eu/insights/gap-between-brexit-reset-rhetoric-and-reality\" title=\"Centre for European Reform; UK in a Changing Europe\" target=\"_blank\" rel=\"noopener\">PREC-DATA-004</a>. Þó er ekkert í heimildunum sem mælir beint hvort ESB sjálft hafi \"rétt úr kútnum\" — þær fjalla um áhrif á Bretland, ekki á sambandið sjálft.",
       "supporting_evidence": [
-        {
-          "id": "PREC-HIST-003",
-          "source_name": "UK Office for Budget Responsibility — Fiscal Risks and Sustainability Report 2023",
-          "source_url": "https://obr.uk/frs/fiscal-risks-and-sustainability-july-2023/"
-        },
         {
           "id": "PREC-DATA-001",
           "source_name": "UK House of Commons Library, Statistics on UK-EU Trade (Research Briefing CBP-7851)",
           "source_url": "https://commonslibrary.parliament.uk/research-briefings/cbp-7851/"
+        },
+        {
+          "id": "PREC-HIST-012",
+          "source_name": "UK Office for National Statistics — Trade statistics; Office for Budget Responsibility — Brexit impact assessment",
+          "source_url": "https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/"
+        },
+        {
+          "id": "PREC-HIST-003",
+          "source_name": "UK Office for Budget Responsibility — Fiscal Risks and Sustainability Report 2023",
+          "source_url": "https://obr.uk/frs/fiscal-risks-and-sustainability-july-2023/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Heimildir fjalla aðallega um áhrif Brexit á Bretland, ekki beint um efnahagslegan bata ESB. Til að staðfesta fullyrðinguna þyrfti gögn um þróun VLF, viðskipta og pólitísks stöðugleika ESB-27 eftir 2020. Covid-19 og stríðið í Úkraínu flækja mat á áhrifum Brexit á ESB.",
-      "confidence": 0.4,
+      "missing_context": "Heimildir mæla aðallega efnahagsáhrif á Bretland, ekki á ESB sjálft. Til að meta hvort ESB hafi \"rétt úr kútnum\" þyrfti gögn um innri samheldni sambandsins, hagvöxt ESB-ríkja eftir útgönguna og pólitískan stöðugleika. Aðskilnaður COVID-áhrifa frá útgönguáhrifum er einnig erfiður.",
+      "confidence": 0.45,
       "speakers": [
         {
           "name": "Vilborg Ása Guðjónsdóttir",
@@ -451,27 +466,22 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "Rétt er að engin ESB-ríki hafa fylgt Bretlandi út úr sambandinu og stuðningur við ESB-aðild jókst í mörgum aðildarríkjum eftir Brexit, samkvæmt Eurobarometer-könnunum. Heimildir staðfesta jafnframt að efnahagsleg áhrif Brexit á Bretland voru neikvæð (<a href=\"https://obr.uk/frs/fiscal-risks-and-sustainability-july-2023/\" title=\"UK Office for Budget Responsibility — Fiscal Risks and Sustainability Report 2023\" target=\"_blank\" rel=\"noopener\">PREC-HIST-003</a>, <a href=\"https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/\" title=\"UK Office for Budget Responsibility — Economic and fiscal outlook 2023; Centre for European Reform; Bank of England\" target=\"_blank\" rel=\"noopener\">PREC-DATA-008</a>), sem kann að hafa fælt frá frekari útgöngum. Hins vegar skortir beinar heimildir í gagnagrunni um mælikvarða á samstöðu ESB-27.",
+      "explanation": "<a href=\"https://www.cer.eu/insights/gap-between-brexit-reset-rhetoric-and-reality\" title=\"Centre for European Reform; UK in a Changing Europe\" target=\"_blank\" rel=\"noopener\">PREC-DATA-004</a> staðfestir að enginn ESB-ríkið hefur fylgt fordæmi Bretlands — engin önnur aðildarríki hafa yfirgefið sambandið eftir Brexit. Könnunir sýna að 55% Breta telja Brexit hafi verið röng ákvörðun. Fullyrðingin um að ESB-ríkin hafi \"þétt raðir\" er þó of sterk miðað við heimildir — <a href=\"https://obr.uk/frs/fiscal-risks-and-sustainability-july-2023/\" title=\"UK Office for Budget Responsibility — Fiscal Risks and Sustainability Report 2023\" target=\"_blank\" rel=\"noopener\">PREC-HIST-003</a> og <a href=\"https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/\" title=\"UK Office for Budget Responsibility — Economic and fiscal outlook 2023; Centre for European Reform; Bank of England\" target=\"_blank\" rel=\"noopener\">PREC-DATA-008</a> fjalla aðallega um efnahagsleg áhrif á Bretland, ekki um samstöðu innan ESB. Engin heimild staðfestir beint að samstaða hafi aukist eða að ríkin hafi gripið til sérstakra aðgerða til að þétta raðir.",
       "supporting_evidence": [
+        {
+          "id": "PREC-DATA-004",
+          "source_name": "Centre for European Reform; UK in a Changing Europe",
+          "source_url": "https://www.cer.eu/insights/gap-between-brexit-reset-rhetoric-and-reality"
+        },
         {
           "id": "PREC-HIST-003",
           "source_name": "UK Office for Budget Responsibility — Fiscal Risks and Sustainability Report 2023",
           "source_url": "https://obr.uk/frs/fiscal-risks-and-sustainability-july-2023/"
-        },
-        {
-          "id": "PREC-DATA-008",
-          "source_name": "UK Office for Budget Responsibility — Economic and fiscal outlook 2023; Centre for European Reform; Bank of England",
-          "source_url": "https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/"
-        },
-        {
-          "id": "PREC-HIST-012",
-          "source_name": "UK Office for National Statistics — Trade statistics; Office for Budget Responsibility — Brexit impact assessment",
-          "source_url": "https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Þótt engin ríki hafi yfirgefið ESB eftir Brexit er samstaðan ekki algjör — ríki eins og Ungverjaland og Pólland hafa verið í ágreiningi við ESB um réttarríkissjónarmið, og innri átök um flóttamannastefnu og efnahagsstefnu halda áfram. \"Þétting raða\" er tiltölulega almenn lýsing sem vanmetur innri togstreitu.",
-      "confidence": 0.6,
+      "missing_context": "Heimildir fjalla aðallega um efnahagsleg áhrif Brexit á Bretland — ekki beint um hvort ESB-ríkin hafi þétt raðir. Sú fullyrðing krefst heimilda um innri þróun ESB eftir 2020 sem ekki er að finna í gagnagrunninum.",
+      "confidence": 0.5,
       "speakers": [
         {
           "name": "Vilborg Ása Guðjónsdóttir",
@@ -546,28 +556,18 @@
         "claim_type": "comparison",
         "confidence": 0.9
       },
-      "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.cer.eu/insights/gap-between-brexit-reset-rhetoric-and-reality\" title=\"Centre for European Reform; UK in a Changing Europe\" target=\"_blank\" rel=\"noopener\">PREC-DATA-004</a> staðfestir að ekkert ESB-ríki hefur opinberlega rætt útgöngu eftir Brexit — hvorki Bretar né aðrir vilja endurtaka ferlið. Könnunargögn sýna að 55% Breta telja Brexit hafa verið ranga ákvörðun en hvorugur stóri flokkurinn styður enduraðild. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M050\" title=\"Treaty on European Union, Article 50\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-001</a> staðfestir 50. grein Lissabon-samningsins um úrsagnarrétt, en enginn hefur beitt henni síðan Brexit. Hins vegar er fullyrðingin of víðtæk — <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1\" title=\"Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-006</a> lýsa innri togstreitu um undanþágur og samþættingu sem heldur áfram, þó engin ríki ræði beinlínis um útgöngu. Grænland yfirgaf Evrópubandalagið 1985 en er ekki fullvalda ríki.",
+      "verdict": "supported",
+      "explanation": "Engin heimild í gagnagrunninum bendir til þess að ESB-ríki sé í ferli að segja sig úr sambandinu. <a href=\"https://www.cer.eu/insights/gap-between-brexit-reset-rhetoric-and-reality\" title=\"Centre for European Reform; UK in a Changing Europe\" target=\"_blank\" rel=\"noopener\">PREC-DATA-004</a> staðfestir að Bretland yfirgaf ESB árið 2020 en engin ríki hafa síðan fylgt í kjölfarið — og könnunarniðurstöður sýna frekar eftirsjá Breta en fordæmi sem önnur ríki vilji herma eftir. Þótt ESB-gagnrýnir flokkar séu áfram öflugir í ýmsum aðildarríkjum (t.d. Frakkland, Ungverjaland) hefur enginn þeirra sett úrsögn á dagskrá sem raunhæft pólitískt markmið.",
       "supporting_evidence": [
         {
           "id": "PREC-DATA-004",
           "source_name": "Centre for European Reform; UK in a Changing Europe",
           "source_url": "https://www.cer.eu/insights/gap-between-brexit-reset-rhetoric-and-reality"
-        },
-        {
-          "id": "SOV-LEGAL-001",
-          "source_name": "Treaty on European Union, Article 50",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M050"
-        },
-        {
-          "id": "PREC-HIST-012",
-          "source_name": "UK Office for National Statistics — Trade statistics; Office for Budget Responsibility — Brexit impact assessment",
-          "source_url": "https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Fullyrðingin segir \"nú\" sem takmarkar tímarammann. Þó engin ESB-ríki ræði útgöngu opinberlega, eru ESB-efasemdarflokkar áhrifamiklir í nokkrum löndum (Ungverjaland, Ítalía). Sviss hætti við stofnanasamning 2021 en er ekki ESB-ríki. Brexit var þó \"meginbreytingin\" sem nefnd er í annari fullyrðingu — þetta samhengi tengist.",
-      "confidence": 0.7,
+      "missing_context": "Heimildir fjalla ekki sérstaklega um ESB-gagnrýna flokka í einstökum aðildarríkjum eða hvort þeir hafi rætt úrsögn. Pólitísk umræða um ESB-samþættingu gæti breyst hratt ef efnahagsástand versnar eða geópólitískar aðstæður breytast.",
+      "confidence": 0.8,
       "speakers": [
         {
           "name": "Vilborg Ása Guðjónsdóttir",
@@ -647,8 +647,8 @@
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
-      "verdict": "partially_supported",
-      "explanation": "Heimildir staðfesta að nokkur ESB-ríki hafa fengið undanþágur — Danmörk samdi um undanþágur frá evrunni, varnar- og réttarmálum í Edinburgh-samningnum 1992, og Írland hefur undanþágu frá Schengen og réttarmálum (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1\" title=\"Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-006</a>, <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:22013A0302(01)\" title=\"Treaty of Lisbon — Protocol on the concerns of the Irish people; Protocol 21 on UK and Ireland (JHA opt-in)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-011</a>). Pólland og Tékkland hafa einnig bókanir um mannréttindaskrána. Þó ber að nefna að stefna ESB frá stækkuninni 2004 hefur verið að veita nýjum aðildarríkjum færri undanþágur — Króatía fékk engar varanlegar undanþágur árið 2013 (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a>). Fullyrðingin er því rétt um söguleg fordæmi en gefur of bjartsýna mynd af möguleikum nýrra ríkja til að ná sambærilegum sérlausnum.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1\" title=\"Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-006</a> staðfestir beint að mörg ESB-ríki hafa fengið sérlausnir: Danmörk um evru og varnarmál, Írland um Schengen og dóms- og löggæslumál, Pólland um mannréttindaskrána. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:22013A0302(01)\" title=\"Treaty of Lisbon — Protocol on the concerns of the Irish people; Protocol 21 on UK and Ireland (JHA opt-in)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-011</a> bætir við að Írland fékk sérstaka bókun um hlutleysi og önnur stjórnarskrárákvæði. Fullyrðingin er því rétt sem söguleg staðhæfing. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> bendir þó á mikilvægan fyrirvara: allar þessar sérlausnir voru veittar eldri aðildarríkjum við sérstakar sögulegar aðstæður og ný aðildarríki — eins og Króatía 2013 — hafa ekki fengið sambærilegar undanþágur.",
       "supporting_evidence": [
         {
           "id": "SOV-LEGAL-006",
@@ -659,17 +659,16 @@
           "id": "SOV-LEGAL-011",
           "source_name": "Treaty of Lisbon — Protocol on the concerns of the Irish people; Protocol 21 on UK and Ireland (JHA opt-in)",
           "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:22013A0302(01)"
-        }
-      ],
-      "contradicting_evidence": [
+        },
         {
           "id": "EEA-LEGAL-012",
           "source_name": "European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)",
           "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
         }
       ],
-      "missing_context": "Frá stækkuninni 2004 hefur ESB almennt hafnað nýjum varanlegum undanþágum. Eldri undanþágur voru samdar við sérstæðar sögulegar aðstæður sem ólíklegt er að endurtaki sig. Hvort Ísland gæti samið um sérstöðu í sjávarútvegi er pólitísk spurning án fyrirframákveðinnar niðurstöðu.",
-      "confidence": 0.8,
+      "contradicting_evidence": [],
+      "missing_context": "Fullyrðingin er rétt um fortíðina en segir ekkert um hvort nýtt aðildarríki eins og Ísland gæti fengið sams konar sérlausnir. Stefna ESB síðan Lissabon-samningnum hefur verið að veita engar nýjar varanlegar undanþágur — eingöngu tímabundin aðlögunartímabil. Sumir fræðimenn benda á 49. grein sáttmálans sem tæknilega opna, en pólitísk samstaða er á móti nýjum undanþágum.",
+      "confidence": 0.88,
       "speakers": [
         {
           "name": "Vilborg Ása Guðjónsdóttir",
@@ -847,33 +846,32 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "Nokkrar heimildir benda til breyttra aðstæðna sem gætu styrkt samningsstöðu Íslands. <a href=\"https://www.nato.int/cps/en/natohq/topics_212802.htm\" title=\"NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list\" target=\"_blank\" rel=\"noopener\">SOV-DATA-009</a> sýnir aukið hernaðarlegt mikilvægi Íslands í Norður-Atlantshafi og <a href=\"https://www.consilium.europa.eu/en/\" title=\"Press conference statements — Donald Tusk, PM of Poland (2025–2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-011</a> vitnar í ummæli Tusk um nauðsyn þess að ESB lagi sig að smáríkjum. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> bendir þó til þess að forgangsröðun ESB í stækkun snúi nú að Vestur-Balkanskaga og Úkraínu, og aðildarferli Íslands sé ekki forgangsmál. Mat á samningsstöðu er í eðli sínu pólitísk skoðun fremur en staðreynd.",
+      "explanation": "Heimildir gefa blandaða mynd og enginn ber stöðuna beint saman við hana fyrir tíu árum. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> bendir til þess að Ísland sé \"auðvelt\" umsækjarríki vegna mikillar EES-samræmingar, en stækkunarforgangur ESB hefur færst til Vestur-Balkanskaga og Úkraínu. Nýju heimildarnar styrkja samhengið — <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:22013A0302(01)\" title=\"Treaty of Lisbon — Protocol on the concerns of the Irish people; Protocol 21 on UK and Ireland (JHA opt-in)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-011</a> sýnir fordæmi írskra undanþága og <a href=\"https://eur-lex.europa.eu/EN/legal-content/summary/iceland-external-relations-common-foreign-and-security-policy.html\" title=\"TEU, Title V — CFSP provisions; Icelandic Ministry for Foreign Affairs — Annual alignment reports\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-014</a> bendir á að Ísland samræmist þegar 70–80% af utanríkisstefnu ESB. Þó vantar beina samanburðarstoð til að staðfesta að staðan sé \"sterkari nú en fyrir tíu árum.\"",
       "supporting_evidence": [
-        {
-          "id": "SOV-DATA-009",
-          "source_name": "NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list",
-          "source_url": "https://www.nato.int/cps/en/natohq/topics_212802.htm"
-        },
-        {
-          "id": "PREC-DATA-011",
-          "source_name": "Press conference statements — Donald Tusk, PM of Poland (2025–2026)",
-          "source_url": "https://www.consilium.europa.eu/en/"
-        },
-        {
-          "id": "SOV-DATA-001",
-          "source_name": "European Commission — EU Arctic Policy, Joint Communication JOIN(2021) 27",
-          "source_url": "https://www.eeas.europa.eu/eeas/eu-arctic-policy_en"
-        }
-      ],
-      "contradicting_evidence": [
         {
           "id": "TRADE-DATA-022",
           "source_name": "European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications",
           "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "SOV-LEGAL-011",
+          "source_name": "Treaty of Lisbon — Protocol on the concerns of the Irish people; Protocol 21 on UK and Ireland (JHA opt-in)",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:22013A0302(01)"
+        },
+        {
+          "id": "SOV-LEGAL-014",
+          "source_name": "TEU, Title V — CFSP provisions; Icelandic Ministry for Foreign Affairs — Annual alignment reports",
+          "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/iceland-external-relations-common-foreign-and-security-policy.html"
+        },
+        {
+          "id": "POL-DATA-017",
+          "source_name": "Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)",
+          "source_url": "https://vi.is/skyrslur/1667"
         }
       ],
-      "missing_context": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> undirstrikar að ESB myndi fagna Íslandi en er ekki í virkri leit að íslenskri aðild. Hvað telst „sterkari\" samningsstaða fer eftir sjónarhorni og viðmiðum. <a href=\"https://eur-lex.europa.eu/EN/legal-content/summary/iceland-external-relations-common-foreign-and-security-policy.html\" title=\"TEU, Title V — CFSP provisions; Icelandic Ministry for Foreign Affairs — Annual alignment reports\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-014</a> bendir á að Ísland samræmir nú þegar 70–80% af utanríkisstefnuyfirlýsingum ESB, sem gæti bæði styrkt og veikt samningsstöðu eftir aðstæðum.",
-      "confidence": 0.45,
+      "contradicting_evidence": [],
+      "missing_context": "Enginn beinn samanburður á samningsstöðu milli 2013 og 2026 er í heimildum. Stækkunarforgangur ESB hefur breyst, sem gæti bæði styrkt og veikt stöðu Íslands. Auk þess eru mismunandi viðmið um hvað \"sterkari staða\" þýði — efnahagsleg, pólitísk eða lagaleg.",
+      "confidence": 0.4,
       "speakers": [
         {
           "name": "Vilborg Ása Guðjónsdóttir",
@@ -1041,8 +1039,8 @@
       "claim_count": 20,
       "verdicts": {
         "unsupported": 1,
-        "partially_supported": 9,
-        "supported": 10
+        "partially_supported": 6,
+        "supported": 13
       },
       "stance": "neutral",
       "slug": "vilborg-asa-gudjonsdottir",

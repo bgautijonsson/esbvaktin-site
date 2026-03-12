@@ -9,9 +9,9 @@
   "analysis_date": "2026-03-12",
   "summary": "Greindar 12 fullyrðingar .",
   "verdict_counts": {
-    "supported": 5,
-    "partially_supported": 5,
-    "unverifiable": 2
+    "supported": 6,
+    "partially_supported": 3,
+    "unverifiable": 3
   },
   "claim_count": 12,
   "dominant_category": "energy",
@@ -177,8 +177,8 @@
         "claim_type": "legal_assertion",
         "confidence": 0.85
       },
-      "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.efta.int/eea/eea-agreement/annex-iv\" title=\"EFTA Secretariat — EEA Agreement Annex IV (Energy); Althingi EU Assessment Committee\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-001</a> staðfestir að Ísland hafi þegar innleitt upprunalegu endurnýjanlegu orkutilskipunina (2009/28/EC) og endurskoðun hennar (2018 recast, þ.e. RED II) í gegnum EES-samninginn. Fullyrðingin er í aðalatriðum trúverðug þar sem EES-innleiðing á orkulöggjöf er staðfest, en heimildir veita ekki beina staðfestingu á nákvæmri stöðu RED II innleiðingarferlisins á Íslandi hér og nú. Þó ber að nefna að <a href=\"https://orkustofnun.is/en/information/numerical_data/energy\" title=\"Orkustofnun (National Energy Authority) — Energy Statistics 2024\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-005</a> undirstrikar sérstöðu Íslands — með 85% endurnýjanlega orku eru markmið tilskipunarinnar þegar uppfyllt.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.efta.int/eea/eea-agreement/annex-iv\" title=\"EFTA Secretariat — EEA Agreement Annex IV (Energy); Althingi EU Assessment Committee\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-001</a> staðfestir að Ísland hefur þegar innleitt endurnýjanlega orkutilskipun (2009/28/EB og endurútgáfu hennar 2018) í gegnum EES-samninginn. Fullyrðingin um RED II stenst því — Ísland stendur til að innleiða hana sem hluti af EES-skuldbindingum. <a href=\"https://eur-lex.europa.eu/eli/dec/2007/146(2)/oj/eng\" title=\"EEA Joint Committee Decision No 146/2007; EUR-Lex; EFTA Court\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-001</a> og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12016E194\" title=\"Treaty on the Functioning of the European Union, Article 194\" target=\"_blank\" rel=\"noopener\">ENERGY-TREATY-001</a> styðja enn frekar að Ísland fylgir ESB-orkustefnu í gegnum EES. Þó <a href=\"https://orkustofnun.is/en/information/numerical_data/energy\" title=\"Orkustofnun (National Energy Authority) — Energy Statistics 2024\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-005</a> bendi á að tilskipunin hafi takmarkaða hagnýta þýðingu vegna nær 100% endurnýjanlegrar orku Íslands, er lagaskyldan engu að síður raunveruleg.",
       "supporting_evidence": [
         {
           "id": "ENERGY-LEGAL-001",
@@ -194,11 +194,16 @@
           "id": "ENERGY-DATA-001",
           "source_name": "Orkustofnun — Energy Statistics in Iceland 2023",
           "source_url": "https://orkustofnun.is/en/information/publication/energy_data"
+        },
+        {
+          "id": "ETS-LEGAL-001",
+          "source_name": "EEA Joint Committee Decision No 146/2007; EUR-Lex; EFTA Court",
+          "source_url": "https://eur-lex.europa.eu/eli/dec/2007/146(2)/oj/eng"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Ísland framleiðir nánast alla raforku úr endurnýjanlegum orkugjöfum og hefur langhæsta hlutfall endurnýjanlegrar orku í Evrópu. RED II markmið eru því að mestu leyti þegar uppfyllt á Íslandi, sem breytir samhenginu verulega.",
-      "confidence": 0.72,
+      "missing_context": "RED II tilskipunin hefur takmarkaða raunhæfa þýðingu á Íslandi þar sem um 85% frumorkunotkunar er þegar frá endurnýjanlegum orkugjöfum og nær öll raforkuframleiðsla er endurnýjanleg. EES-innleiðing dragist oft á eftir ESB-samþykkt og það er umtalsverður biðlisti yfir ótekna gerðir.",
+      "confidence": 0.82,
       "speakers": [
         {
           "name": "Kristín Linda Árnadóttir",
@@ -221,7 +226,7 @@
         "confidence": 0.8
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://commission.europa.eu/strategy-and-policy/strategy-documents/commission-work-programme_en\" title=\"EUR-Lex legislative database; European Commission Work Programmes 2014–2025\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-018</a> staðfestir að endurskoðuð endurnýjanlega orkutilskipunin (RED III) sé hluti af \"Fit for 55\" loftslagspakkanum sem samþykktur var 2023–2024. Fullyrðingin um gildistöku er því studd. Hins vegar eru engar heimildir í staðreyndagrunninum sem staðfesta sérstaklega ákvæðið um hraðari leyfisferla, þótt það sé þekkt atriði í RED III. Matið byggist á almennum tilvísunum frekar en beinum sönnunargögnum um leyfisferlahraðann.",
+      "explanation": "<a href=\"https://commission.europa.eu/strategy-and-policy/strategy-documents/commission-work-programme_en\" title=\"EUR-Lex legislative database; European Commission Work Programmes 2014–2025\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-018</a> staðfestir að endurskoðuð tilskipun um endurnýjanlega orku (RED III, hluti af Fit for 55 pakkanum) hafi verið samþykkt á tímabilinu 2019–2024. Tilskipunin miðar meðal annars að hraðari leyfisferlum fyrir uppbyggingu endurnýjanlegrar orkuvinnslu — það er kjarni fullyrðingarinnar og á sér stoð. Hins vegar staðfesta heimildir ekki beint að RED III hafi þegar \"tekið gildi\" í þeim skilningi að öll ákvæði séu komin til framkvæmda í öllum aðildarríkjum. <a href=\"https://www.efta.int/eea/eea-agreement/annex-iv\" title=\"EFTA Secretariat — EEA Agreement Annex IV (Energy); Althingi EU Assessment Committee\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-001</a> bendir á að innleiðing EES-tengdrar orkusetningar dragist oft á langinn, og <a href=\"https://commission.europa.eu/strategy-and-policy/strategy-documents/commission-work-programme_en\" title=\"EUR-Lex legislative database; European Commission Work Programmes 2014–2025\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-018</a> nefnir RED III sem hluta af stærra lagapakka.",
       "supporting_evidence": [
         {
           "id": "EEA-LEGAL-018",
@@ -235,8 +240,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Staðreyndagrunnurinn inniheldur ekki nákvæmar heimildir um hraðari leyfisferla í RED III. Fullyrðingin um áhrif á leyfisferla er sennileg en óstaðfest í tiltækum heimildum.",
-      "confidence": 0.6,
+      "missing_context": "Heimildir staðfesta ekki sérstaklega hvaða ákvæði RED III um hraðari leyfisveitingar séu þegar komin til framkvæmda í aðildarríkjunum. Innleiðing á ESB-löggjöf tekur oft langan tíma og framkvæmd er mismunandi milli ríkja. Ísland myndi sem EES-ríki taka upp hluta þessarar löggjafar en ekki endilega allan pakkann.",
+      "confidence": 0.55,
       "speakers": [
         {
           "name": "Kristín Linda Árnadóttir",
@@ -391,7 +396,7 @@
         "confidence": 0.85
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://orkustofnun.is/raforkumal/raforkuspa/\" title=\"Orkustofnun — Orkuspá og raforkuáætlun\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-007</a> staðfestir að ný virkjun taki 5–10 ár frá áformun til framleiðslu vegna leyfisveitingaferla og umhverfismats. Tilvísun í \"ár\" er því studd af gögnum. Orðalagið \"áratugum\" er hins vegar ýkt miðað við heimildir sem nefna 5–10 ár. Jafnframt er mat á hvort ferlið sé \"of tímafrekt\" skoðun frekar en staðreynd — umhverfismat þjónar verndartilgangi sem fullyrðingin nefnir ekki.",
+      "explanation": "<a href=\"https://orkustofnun.is/raforkumal/raforkuspa/\" title=\"Orkustofnun — Orkuspá og raforkuáætlun\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-007</a> staðfestir kjarna fullyrðingarinnar: ný virkjun tekur 5–10 ár frá áformun til framleiðslu vegna leyfisveitingaferla og umhverfismats. Heimildin nefnir jafnframt að Landsvirkjun gat ekki tekið við nýjum stórum viðskiptavinum vegna takmarkaðra orkubirgða. Þó vantar heimildir til að staðfesta ítrustu hluta fullyrðingarinnar — að virkjunarkostir sitji fastir \"áratugum saman\". Fimm til tíu ár er staðfest en áratugatímabili er ekki beinlínis stutt í heimildum.",
       "supporting_evidence": [
         {
           "id": "ENERGY-DATA-007",
@@ -400,8 +405,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Leyfisveitingaferlið felur í sér umhverfismat sem þjónar mikilvægu verndarhlutverki. Orkustofnun bendir á vaxandi eftirspurn frá gagnamiðstöðvum sem nýja áskorun. Tímalengdin endurspeglar einnig flókið samráð og lýðræðislegt eftirlit.",
-      "confidence": 0.75,
+      "missing_context": "Heimildir staðfesta 5–10 ára tímaramma en ekki \"áratugi\". Leyfisveitingaferlið tekur til umhverfismats og rammaáætlunar sem eru sjálfstæðar ástæður tafa. Aðrar heimildir í lotunni (<a href=\"https://www.eftasurv.int/publications/annual-reports\" title=\"EFTA Surveillance Authority — Annual Report 2024\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-007</a>, <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:21994A0103(01)\" title=\"Croatia Accession Treaty (2012); 2003 Accession Treaty (Poland, Czech Republic et al.)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-014</a>) fjalla um EES-innleiðingartíma og aðlögunartímabil, ekki um íslenskt virkjanaleyfisveitingaferli sérstaklega.",
+      "confidence": 0.72,
       "speakers": [
         {
           "name": "Kristín Linda Árnadóttir",
@@ -544,18 +549,12 @@
         "claim_type": "opinion",
         "confidence": 0.75
       },
-      "verdict": "partially_supported",
-      "explanation": "<a href=\"https://commission.europa.eu/strategy-and-policy/strategy-documents/commission-work-programme_en\" title=\"EUR-Lex legislative database; European Commission Work Programmes 2014–2025\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-018</a> staðfestir að ESB samþykkti RED III sem hluta af \"Fit for 55\" pakkanum, sem felur í sér endurskoðun á RED II með metnaðarfyllri markmiðum. Þetta bendir til þess að ESB hafi talið RED II ófullnægjandi. Hins vegar er orðalagið \"áttað sig á\" einföldun — löggjafarþróunin endurspeglar breyttar aðstæður (orkukreppan 2022, loftslagsmarkmið Parísarsamningsins) frekar en viðurkenningu á mistökum. Engin heimild í grunninum lýsir þessu sem formlegri sjálfsgagnrýni ESB.",
-      "supporting_evidence": [
-        {
-          "id": "EEA-LEGAL-018",
-          "source_name": "EUR-Lex legislative database; European Commission Work Programmes 2014–2025",
-          "source_url": "https://commission.europa.eu/strategy-and-policy/strategy-documents/commission-work-programme_en"
-        }
-      ],
+      "verdict": "unverifiable",
+      "explanation": "Engin heimild í staðreyndagrunni fjallar beint um viðhorf ESB til RED II (endurnýjanlegrar orkutilskipunar) eða hvort sambandið hafi viðurkennt að hún hafi ekki gengið nægilega langt. Heimildir fjalla um orkustefnu ESB almennt (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12016E194\" title=\"Treaty on the Functioning of the European Union, Article 194\" target=\"_blank\" rel=\"noopener\">ENERGY-TREATY-001</a> um 194. gr. TFEU) og um loftslagsmál Íslands (<a href=\"https://www.government.is/topics/environment-climate-and-nature-protection/climate-change/\" title=\"Umhverfisstofnun — Iceland's Climate Action Plan; UNFCCC National Communications\" target=\"_blank\" rel=\"noopener\">ENERGY-ANALYSIS-003</a>), en engin þeirra staðfestir eða hafnar fullyrðingunni um RED II sérstaklega.",
+      "supporting_evidence": [],
       "contradicting_evidence": [],
-      "missing_context": "Endurskoðun löggjafar er eðlilegur hluti af löggjafarferlinu og þýðir ekki endilega að fyrri útgáfa hafi verið ófullnægjandi. RED III var knúin áfram af orkukreppunni 2022 og uppfærðum loftslagsmarkmiðum, ekki einvörðungu af ófullnægjandi RED II.",
-      "confidence": 0.68,
+      "missing_context": "Til að meta þessa fullyrðingu þyrfti beinar heimildir um endurskoðun RED II og afstöðu ESB til tilskipunarinnar. Heimildir um orkustefnu ESB í staðreyndagrunni fjalla ekki um RED II sérstaklega.",
+      "confidence": 0.35,
       "speakers": [
         {
           "name": "Kristín Linda Árnadóttir",
@@ -589,9 +588,9 @@
       "attribution_type": "asserted",
       "claim_count": 12,
       "verdicts": {
-        "supported": 5,
-        "partially_supported": 5,
-        "unverifiable": 2
+        "supported": 6,
+        "partially_supported": 3,
+        "unverifiable": 3
       },
       "stance": "pro_eu",
       "slug": "kristin-linda-arnadottir",
@@ -623,7 +622,7 @@
       "attribution_type": "paraphrased",
       "claim_count": 1,
       "verdicts": {
-        "partially_supported": 1
+        "unverifiable": 1
       },
       "stance": "neutral",
       "slug": "evropusambandid",
