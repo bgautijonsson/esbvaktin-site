@@ -7,14 +7,15 @@
   "party": null,
   "stance": "anti_eu",
   "stance_score": -0.5,
-  "credibility": null,
+  "credibility": 0.5,
   "attribution_counts": {
-    "paraphrased": 1,
-    "mentioned": 1
+    "paraphrased": 2,
+    "mentioned": 2
   },
   "althingi_stats": null,
   "scorecard": {
-    "unverifiable": 1
+    "unverifiable": 1,
+    "partially_supported": 1
   },
   "claims": [
     {
@@ -35,6 +36,26 @@
       "article_slug": "sjai-thegar-merki-um-ad-forspa-um-klofningu-thjodarinnar-standist",
       "article_title": "Sjái þegar merki um að forspá um klofningu þjóðarinnar standist",
       "article_source": "Vísir/Bylgjan",
+      "article_date": "2026-03-10"
+    },
+    {
+      "claim_text": "Fyrir kosningar 2024 sagði Kristrún að ESB-aðildarmál væru ekki í forgangi hjá Samfylkingunni og að hægt væri að vera jafnaðarmanneskja þó að viðkomandi væri ekki hlynnt inngöngu í ESB.",
+      "verdict": "supported",
+      "category": "party_positions",
+      "attribution": "mentioned",
+      "article_slug": "kristrun-visar-thogn-um-esb-malid-a-bug",
+      "article_title": "Kristrún vísar þögn um ESB-málið á bug",
+      "article_source": "Vísir",
+      "article_date": "2026-03-10"
+    },
+    {
+      "claim_text": "Stjórnarandstaðan fullyrðir að utanríkisráðherra hafi brotið þingskapalög með því að kynna ekki utanríkismálanefnd tillögu sína.",
+      "verdict": "partially_supported",
+      "category": "sovereignty",
+      "attribution": "paraphrased",
+      "article_slug": "sigmundur-david-sagdi-thorgerdi-fara-a-bak-vid-thjodina-vardandi-adildarvidraedurnar-vid-evropusambandid",
+      "article_title": "Sigmundur Davíð sagði Þorgerði fara á bak við þjóðina varðandi aðildarviðræðurnar við Evrópusambandið",
+      "article_source": "RÚV",
       "article_date": "2026-03-10"
     }
   ],
@@ -57,6 +78,26 @@
       "claim_count": 1,
       "attribution_types": [
         "mentioned"
+      ]
+    },
+    {
+      "slug": "kristrun-visar-thogn-um-esb-malid-a-bug",
+      "title": "Kristrún vísar þögn um ESB-málið á bug",
+      "source": "Vísir",
+      "date": "2026-03-10",
+      "claim_count": 1,
+      "attribution_types": [
+        "mentioned"
+      ]
+    },
+    {
+      "slug": "sigmundur-david-sagdi-thorgerdi-fara-a-bak-vid-thjodina-vardandi-adildarvidraedurnar-vid-evropusambandid",
+      "title": "Sigmundur Davíð sagði Þorgerði fara á bak við þjóðina varðandi aðildarviðræðurnar við Evrópusambandið",
+      "source": "RÚV",
+      "date": "2026-03-10",
+      "claim_count": 1,
+      "attribution_types": [
+        "paraphrased"
       ]
     }
   ]
