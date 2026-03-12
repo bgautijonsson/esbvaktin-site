@@ -31,6 +31,8 @@
   const TYPE_FILTER_LABELS = TAXONOMY.entityTypeFilterLabels || {};
   const STANCE_FILTER_LABELS = TAXONOMY.stanceFilterLabels || {};
   const ATTRIBUTION_LABELS = TAXONOMY.attributionLabels || {};
+  const PARTY_CLASSES = TAXONOMY.partyClasses || {};
+  const PARTY_SHORT_LABELS = TAXONOMY.partyShortLabels || {};
   const ATTRIBUTION_ORDER = ["quoted", "asserted", "paraphrased", "mentioned"];
   const SORT_LABELS = {
     importance: "Mikilvægi",
@@ -49,6 +51,7 @@
     initialState: {
       search: params.get("q") || "",
       type: params.get("type") || "",
+      party: params.get("party") || "",
       stance: params.get("stance") || "",
       sort: params.get("sort") || "importance",
       sortDir: "ASC",
@@ -132,8 +135,14 @@
       );
     }
 
-    if (filters.type) {
+    if (filters.type === "politician") {
+      results = results.filter((entity) => entity.type === "individual" && entity.subtype === "politician");
+    } else if (filters.type) {
       results = results.filter((entity) => entity.type === filters.type);
+    }
+
+    if (filters.party) {
+      results = results.filter((entity) => entity.party_slug === filters.party);
     }
 
     if (filters.stance) {
@@ -165,13 +174,85 @@
     return {
       total: entities.length,
       parties: entities.filter((entity) => entity.type === "party").length,
+      politicians: entities.filter((entity) => entity.type === "individual" && entity.subtype === "politician").length,
       institutions: entities.filter((entity) => entity.type === "institution").length,
       individuals: entities.filter((entity) => entity.type === "individual").length,
     };
   }
 
+  function buildPartyOptions() {
+    const partyMap = new Map();
+    for (const entity of getEntities()) {
+      if (entity.party_slug && entity.party) {
+        if (!partyMap.has(entity.party_slug)) {
+          partyMap.set(entity.party_slug, entity.party);
+        }
+      }
+    }
+    return [...partyMap.entries()]
+      .map(([slug, name]) => ({
+        value: slug,
+        label: PARTY_SHORT_LABELS[name] || name,
+      }))
+      .sort((a, b) => a.label.localeCompare(b.label, "is"));
+  }
+
+  function isPartyFilterRelevant() {
+    const type = getFilters().type;
+    return !type || type === "politician" || type === "individual";
+  }
+
   function renderShell() {
     const filters = getFilters();
+    const showParty = isPartyFilterRelevant();
+
+    const filterControls = [
+      renderer.renderSelect({
+        id: "et-type",
+        className: "et-select",
+        label: "Tegund",
+        placeholder: "Allar tegundir",
+        options: Object.entries(TYPE_FILTER_LABELS).map(([value, label]) => ({ value, label })),
+        selectedValue: filters.type,
+      }),
+    ];
+
+    if (showParty) {
+      filterControls.push(
+        renderer.renderSelect({
+          id: "et-party",
+          className: "et-select",
+          label: "Flokkur",
+          placeholder: "Allir flokkar",
+          options: buildPartyOptions(),
+          selectedValue: filters.party,
+        })
+      );
+    }
+
+    filterControls.push(
+      renderer.renderSelect({
+        id: "et-stance",
+        className: "et-select",
+        label: "Afstaða",
+        placeholder: "Öll viðhorf",
+        options: Object.entries(STANCE_FILTER_LABELS).map(([value, label]) => ({ value, label })),
+        selectedValue: filters.stance,
+      }),
+      renderer.renderSelect({
+        id: "et-sort",
+        className: "et-select",
+        label: "Röðun",
+        options: [
+          { value: "importance", label: "Mikilvægi" },
+          { value: "name", label: "Nafn" },
+          { value: "stance_score", label: "Afstaða" },
+          { value: "credibility", label: "Trúverðugleiki" },
+          { value: "mention_count", label: "Tilvísanir" },
+        ],
+        selectedValue: filters.sort,
+      })
+    );
 
     root.innerHTML = `
       <div class="et-stats" id="et-stats">${renderer.renderMessage("Hleð gögnum…", "et-stat-loading")}</div>
@@ -188,37 +269,7 @@
         },
         rows: [{
           className: "et-filter-row",
-          controls: [
-            renderer.renderSelect({
-              id: "et-type",
-              className: "et-select",
-              label: "Tegund",
-              placeholder: "Allar tegundir",
-              options: Object.entries(TYPE_FILTER_LABELS).map(([value, label]) => ({ value, label })),
-              selectedValue: filters.type,
-            }),
-            renderer.renderSelect({
-              id: "et-stance",
-              className: "et-select",
-              label: "Afstaða",
-              placeholder: "Öll viðhorf",
-              options: Object.entries(STANCE_FILTER_LABELS).map(([value, label]) => ({ value, label })),
-              selectedValue: filters.stance,
-            }),
-            renderer.renderSelect({
-              id: "et-sort",
-              className: "et-select",
-              label: "Röðun",
-              options: [
-                { value: "importance", label: "Mikilvægi" },
-                { value: "name", label: "Nafn" },
-                { value: "stance_score", label: "Afstaða" },
-                { value: "credibility", label: "Trúverðugleiki" },
-                { value: "mention_count", label: "Tilvísanir" },
-              ],
-              selectedValue: filters.sort,
-            }),
-          ],
+          controls: filterControls,
         }],
       })}
 
@@ -242,6 +293,7 @@
       items: [
         { value: stats.total, label: "sýnilegir", valueId: "et-visible-count" },
         { value: stats.parties, label: "flokkar" },
+        { value: stats.politicians, label: "stjórnmálafólk" },
         { value: stats.institutions, label: "samtök" },
         { value: stats.individuals, label: "einstaklingar" },
       ],
@@ -289,6 +341,13 @@
       : "";
 
     const typeBadge = `<span class="et-type-badge et-type-${entity.type}">${TYPE_LABELS[entity.type] || entity.type}</span>`;
+
+    let partyPillHtml = "";
+    if (entity.party_slug && entity.party) {
+      const partyClass = PARTY_CLASSES[entity.party] || "party-other";
+      const partyLabel = PARTY_SHORT_LABELS[entity.party] || entity.party;
+      partyPillHtml = `<a href="/raddirnar/${escapeHtml(entity.party_slug)}/" class="et-party-pill ${partyClass}">${escapeHtml(partyLabel)}</a>`;
+    }
 
     const claimCount = entity.claims?.length || 0;
     const articleCount = entity.articles?.length || 0;
@@ -373,7 +432,7 @@
           </div>
         </div>
         ${roleHtml}
-        ${typeBadge}
+        <div class="et-card-badges">${typeBadge}${partyPillHtml}</div>
         ${statsHtml}
         ${attrHtml}
         ${credHtml}
@@ -420,6 +479,11 @@
       chips.push({ key: "type", text: `Tegund: ${TYPE_FILTER_LABELS[filters.type] || filters.type}` });
     }
 
+    if (filters.party) {
+      const partyName = getEntities().find((e) => e.party_slug === filters.party)?.party || filters.party;
+      chips.push({ key: "party", text: `Flokkur: ${PARTY_SHORT_LABELS[partyName] || partyName}` });
+    }
+
     if (filters.stance) {
       chips.push({ key: "stance", text: `Afstaða: ${STANCE_FILTER_LABELS[filters.stance] || filters.stance}` });
     }
@@ -439,7 +503,8 @@
     const patch = {};
 
     if (key === "search") patch.search = "";
-    if (key === "type") patch.type = "";
+    if (key === "type") { patch.type = ""; patch.party = ""; }
+    if (key === "party") patch.party = "";
     if (key === "stance") patch.stance = "";
     if (key === "sort") {
       patch.sort = "importance";
@@ -454,6 +519,7 @@
       {
         search: "",
         type: "",
+        party: "",
         stance: "",
         sort: "importance",
         sortDir: "ASC",
@@ -467,6 +533,7 @@
     (utils.updateUrlQuery || function () {})({
       q: state.search,
       type: state.type,
+      party: state.party,
       stance: state.stance,
       sort: state.sort === "importance" ? "" : state.sort,
     });
@@ -481,7 +548,13 @@
   );
 
   controller.bindChange("#et-type", (value, _target, _event, api) => {
-    commitState({ type: value }, "results", api);
+    // Clear party when switching to a type where party filter is irrelevant
+    const clearParty = value && value !== "politician" && value !== "individual";
+    commitState({ type: value, ...(clearParty ? { party: "" } : {}) }, "all", api);
+  });
+
+  controller.bindChange("#et-party", (value, _target, _event, api) => {
+    commitState({ party: value }, "results", api);
   });
 
   controller.bindChange("#et-stance", (value, _target, _event, api) => {

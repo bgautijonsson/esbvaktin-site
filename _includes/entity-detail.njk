@@ -127,6 +127,75 @@ return_link_support: true
     {% endif %}
   {% endif %}
 
+  {# ── Party members (for party entities) ── #}
+  {% if entity.type == "party" and entity.party_members and entity.party_members | length %}
+  {% set members = entity.party_members %}
+  {% set memberCount = members | length %}
+
+  {# Aggregate stats #}
+  {% set totalClaims_pm = 0 %}
+  {% set stanceSum = 0 %}
+  {% set credSum = 0 %}
+  {% set credCount = 0 %}
+  {% for m in members %}
+    {% set totalClaims_pm = totalClaims_pm + (m.claim_count or 0) %}
+    {% if m.stance_score is number %}
+      {% set stanceSum = stanceSum + m.stance_score %}
+    {% endif %}
+    {% if m.credibility is number %}
+      {% set credSum = credSum + m.credibility %}
+      {% set credCount = credCount + 1 %}
+    {% endif %}
+  {% endfor %}
+
+  <section class="ed-party-members">
+    <h2>Þingmenn í umræðunni ({{ memberCount }})</h2>
+
+    <div class="ed-party-agg">
+      <div class="ed-stat-block">
+        <span class="ed-stat-heading">Fullyrðingar</span>
+        <span class="ed-stat-num">{{ totalClaims_pm }}</span>
+      </div>
+      {% if credCount > 0 %}
+      <div class="ed-stat-block">
+        <span class="ed-stat-heading">Meðal trúverðugleiki</span>
+        <span class="ed-stat-num">{{ ((credSum / credCount) * 100) | round }}%</span>
+      </div>
+      {% endif %}
+    </div>
+
+    <div class="ed-members-grid">
+      {% for m in members %}
+      {% set mCredPct = (m.credibility * 100) | round if m.credibility is number else null %}
+      {% set mScore = m.stance_score or 0 %}
+      {% if mScore >= 0 %}
+        {% set mHue = 60 + mScore * 150 %}
+      {% else %}
+        {% set mHue = 60 + mScore * 60 %}
+      {% endif %}
+      {% set mSat = 10 + (mScore if mScore >= 0 else -mScore) * 60 %}
+      {% set mDotLeft = ((mScore + 1) / 2 * 100) %}
+
+      <a href="/raddirnar/{{ m.slug }}/" class="ed-member-card" style="--stance-hue: {{ mHue }}; --stance-sat: {{ mSat }}%">
+        <div class="ed-member-top">
+          <span class="ed-member-name">{{ m.name }}</span>
+          <div class="et-stance-track ed-member-stance">
+            <div class="et-stance-dot" style="left: {{ mDotLeft }}%"></div>
+          </div>
+        </div>
+        {% if m.role %}
+          <span class="ed-member-role">{{ m.role | capitalize }}</span>
+        {% endif %}
+        <div class="ed-member-stats">
+          {% if m.claim_count %}<span>{{ m.claim_count }} fullyrðing{{ "ar" if m.claim_count > 1 else "" }}</span>{% endif %}
+          {% if mCredPct is not null %}<span>{{ mCredPct }}% trúverðugleiki</span>{% endif %}
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
   {# ── Þingvirkni (Alþingi parliamentary activity) ── #}
   {% if entity.althingi_stats %}
   {% set as = entity.althingi_stats %}

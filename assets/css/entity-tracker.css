@@ -106,6 +106,31 @@
 .et-type-institution { border-color: var(--green); color: var(--green); }
 .et-type-individual { border-color: var(--yellow); color: var(--yellow); }
 
+/* ── Card badges (type + party pill inline) ──────────────────────── */
+
+.et-card-badges {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.35rem;
+}
+
+.et-party-pill {
+  display: inline-block;
+  padding: 0.1rem 0.4rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.65rem;
+  font-weight: 600;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: opacity var(--transition);
+}
+
+.et-party-pill:hover {
+  opacity: 0.85;
+}
+
 /* ── Stats row ───────────────────────────────────────────────────── */
 
 .et-card-stats {

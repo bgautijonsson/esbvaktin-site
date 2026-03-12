@@ -219,6 +219,82 @@
   margin-bottom: 1.5rem;
 }
 
+/* ── Party members section ─────────────────────────────────────────── */
+
+.ed-party-members {
+  margin-bottom: 2rem;
+}
+
+.ed-party-members h2 {
+  font-size: 1.1rem;
+  margin: 0 0 0.75rem;
+}
+
+.ed-party-agg {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.ed-members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.6rem;
+}
+
+.ed-member-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.75rem 1rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-left: 2px solid hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 45%);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color var(--transition), background var(--transition);
+}
+
+.ed-member-card:hover {
+  border-color: var(--accent);
+  background: var(--bg-card);
+}
+
+.ed-member-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ed-member-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.ed-member-stance {
+  width: 4rem;
+  flex-shrink: 0;
+}
+
+.ed-member-role {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.ed-member-stats {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
 /* ── Alþingi / Þingvirkni ──────────────────────────────────────────── */
 
 .ed-althingi {
@@ -415,6 +491,9 @@
   .ed-althingi {
     background: var(--bg-secondary, #1e1e1e);
   }
+  .ed-member-card {
+    border-left-color: hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 55%);
+  }
 }
 
 /* ── Dark mode (data-theme) ────────────────────────────────────────── */
@@ -431,6 +510,9 @@
 [data-theme="dark"] .ed-althingi {
   background: var(--bg-secondary, #1e1e1e);
 }
+[data-theme="dark"] .ed-member-card {
+  border-left-color: hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 55%);
+}
 
 /* ── Responsive ─────────────────────────────────────────────────────── */
 
@@ -439,4 +521,5 @@
   .ed-stats { gap: 0.75rem; padding: 0.75rem 1rem; }
   .ed-articles-grid { grid-template-columns: 1fr; }
   .ed-header-top { flex-direction: column; align-items: flex-start; gap: 0.35rem; }
+  .ed-members-grid { grid-template-columns: 1fr; }
 }

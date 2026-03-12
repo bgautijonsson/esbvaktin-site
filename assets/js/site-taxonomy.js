@@ -71,6 +71,7 @@
     },
     entityTypeFilterLabels: {
       party: "Stjórnmálaflokkar",
+      politician: "Stjórnmálafólk",
       institution: "Samtök og stofnanir",
       individual: "Einstaklingar",
     },
