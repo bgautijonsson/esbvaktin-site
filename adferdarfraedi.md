@@ -1,14 +1,14 @@
 ---
 layout: base.njk
 title: Aðferðafræði
-description: Aðferðafræði ESBvaktinar — hvernig fullyrðingar eru metnar og greiningar framkvæmdar.
+description: Aðferðafræði ESB Vaktarinnar — hvernig fullyrðingar eru metnar og greiningar framkvæmdar.
 ---
 
 # Aðferðafræði
 
 ## Yfirlit
 
-ESBvaktin safnar fullyrðingum úr opinberri umræðu um hugsanlega ESB-aðild Íslands, skráir þær í gagnagrunn og metur þær á móti staðreyndagögnum. Verkefnið notar spjallmennið Claude til að greina og flokka fullyrðingar, undir umsjón og ritstjórn Brynjólfs Gauta Guðrúnar Jónssonar.
+ESB Vaktin safnar fullyrðingum úr opinberri umræðu um hugsanlega ESB-aðild Íslands, skráir þær í gagnagrunn og metur þær á móti staðreyndagögnum. Verkefnið notar spjallmennið Claude til að greina og flokka fullyrðingar, undir umsjón og ritstjórn Brynjólfs Gauta Guðrúnar Jónssonar.
 
 ## Leiðin frá fullyrðingu til mats
 
@@ -48,7 +48,7 @@ Brynjólfur Gauti Guðrúnar Jónsson, tölfræðingur, fer yfir greiningar og b
 
 ## Jafnvægi
 
-Fullyrðingamatið gildir jafnt um ESB-jákvæðar og ESB-gagnrýnar fullyrðingar. Sami fimm stiga kvarðinn er notaður hvort sem fullyrðingin kemur frá stuðningsmönnum eða andstæðingum aðildar. Markmið ESBvaktarinnar er ekki að taka afstöðu heldur að meta hvort fullyrðingar standist skoðun gagnvart áreiðanlegum heimildum.
+Fullyrðingamatið gildir jafnt um ESB-jákvæðar og ESB-gagnrýnar fullyrðingar. Sami fimm stiga kvarðinn er notaður hvort sem fullyrðingin kemur frá stuðningsmönnum eða andstæðingum aðildar. Markmið ESB Vaktarinnar er ekki að taka afstöðu heldur að meta hvort fullyrðingar standist skoðun gagnvart áreiðanlegum heimildum.
 
 ## Gagnsæi
 

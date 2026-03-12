@@ -2,7 +2,7 @@ const { test, expect } = require("./fixtures");
 const { gotoAndWait, openMobileMenu } = require("./helpers");
 
 const pageChecks = [
-  { path: "/", selector: ".home-hero", title: "ESBvaktin" },
+  { path: "/", selector: ".home-hero", title: "ESB Vaktin" },
   { path: "/vikuyfirlit/", selector: ".ov-card", title: "Vikuyfirlit" },
   { path: "/malefni/", selector: ".tp-card", title: "Málefni" },
   { path: "/fullyrdingar/", selector: "#ct-results .ct-card", title: "Fullyrðingavakt" },
