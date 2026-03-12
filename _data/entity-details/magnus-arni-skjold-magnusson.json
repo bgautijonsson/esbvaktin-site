@@ -6,10 +6,12 @@
   "role": "formaður Evrópuhreyfingarinnar",
   "party": null,
   "stance": "pro_eu",
-  "stance_score": 0.5,
-  "credibility": 0.66,
+  "stance_score": 0.75,
+  "credibility": 0.62,
   "attribution_counts": {
-    "asserted": 23
+    "asserted": 23,
+    "quoted": 3,
+    "paraphrased": 5
   },
   "althingi_stats": {
     "speech_count": 7,
@@ -20,9 +22,9 @@
   },
   "scorecard": {
     "supported": 10,
-    "partially_supported": 9,
+    "partially_supported": 16,
     "misleading": 3,
-    "unverifiable": 1
+    "unverifiable": 2
   },
   "claims": [
     {
@@ -254,6 +256,86 @@
       "article_title": "Þrír hópar sem myndu hagnast mest á aðild Íslands að Evrópusambandinu",
       "article_source": "Vísir",
       "article_date": "2026-03-07"
+    },
+    {
+      "claim_text": "Samkvæmt EES-samningnum og fríverzlunarsamningi Íslands við forvera Evrópusambandsins frá 1972 eru engir tollar á innfluttum vörum frá Evrópusambandinu til Íslands, að undanskildum landbúnaðarvörum.",
+      "verdict": "partially_supported",
+      "category": "eea_eu_law",
+      "attribution": "paraphrased",
+      "article_slug": "hopurinn-sem-myndi-hagnast-mest",
+      "article_title": "Hópurinn sem myndi hagnast mest",
+      "article_source": "Vísir",
+      "article_date": "2026-03-11"
+    },
+    {
+      "claim_text": "Fríverzlunarsamningur Íslands við forvera Evrópusambandsins var gerður árið 1972.",
+      "verdict": "partially_supported",
+      "category": "trade",
+      "attribution": "paraphrased",
+      "article_slug": "hopurinn-sem-myndi-hagnast-mest",
+      "article_title": "Hópurinn sem myndi hagnast mest",
+      "article_source": "Vísir",
+      "article_date": "2026-03-11"
+    },
+    {
+      "claim_text": "Atkvæðavægi ríkja í ráðherraráði Evrópusambandsins ræðst fyrst og fremst af íbúafjölda.",
+      "verdict": "partially_supported",
+      "category": "sovereignty",
+      "attribution": "paraphrased",
+      "article_slug": "hopurinn-sem-myndi-hagnast-mest",
+      "article_title": "Hópurinn sem myndi hagnast mest",
+      "article_source": "Vísir",
+      "article_date": "2026-03-11"
+    },
+    {
+      "claim_text": "Evrópusambandið beiti aðildarríki sín þvingunaraðgerðum en fylgi þeim ekki eftir",
+      "verdict": "partially_supported",
+      "category": "sovereignty",
+      "attribution": "paraphrased",
+      "article_slug": "evropusambandid-fylgi-hotunum-sinum-ekki-eftir",
+      "article_title": "Evrópusambandið fylgi hótunum sínum ekki eftir",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-11"
+    },
+    {
+      "claim_text": "Evrópusambandið er klúbbur 27 fullvalda ríkja",
+      "verdict": "partially_supported",
+      "category": "eea_eu_law",
+      "attribution": "quoted",
+      "article_slug": "evropusambandid-fylgi-hotunum-sinum-ekki-eftir",
+      "article_title": "Evrópusambandið fylgi hótunum sínum ekki eftir",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-11"
+    },
+    {
+      "claim_text": "Þvingunaraðgerðir ESB gagnvart aðildarríkjum fela meðal annars í sér að stöðva greiðslu styrkja",
+      "verdict": "partially_supported",
+      "category": "eea_eu_law",
+      "attribution": "quoted",
+      "article_slug": "evropusambandid-fylgi-hotunum-sinum-ekki-eftir",
+      "article_title": "Evrópusambandið fylgi hótunum sínum ekki eftir",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-11"
+    },
+    {
+      "claim_text": "Skoðanakannanir sýna að um helmingur þjóðarinnar hefur áhuga á ESB-aðild",
+      "verdict": "partially_supported",
+      "category": "polling",
+      "attribution": "paraphrased",
+      "article_slug": "evropusambandid-fylgi-hotunum-sinum-ekki-eftir",
+      "article_title": "Evrópusambandið fylgi hótunum sínum ekki eftir",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-11"
+    },
+    {
+      "claim_text": "Magnús Árni Skjöld Magnússon tók þátt í að skrifa kosningastefnu Samfylkingarinnar",
+      "verdict": "unverifiable",
+      "category": "party_positions",
+      "attribution": "quoted",
+      "article_slug": "evropusambandid-fylgi-hotunum-sinum-ekki-eftir",
+      "article_title": "Evrópusambandið fylgi hótunum sínum ekki eftir",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-11"
     }
   ],
   "articles": [
@@ -265,6 +347,27 @@
       "claim_count": 23,
       "attribution_types": [
         "asserted"
+      ]
+    },
+    {
+      "slug": "hopurinn-sem-myndi-hagnast-mest",
+      "title": "Hópurinn sem myndi hagnast mest",
+      "source": "Vísir",
+      "date": "2026-03-11",
+      "claim_count": 3,
+      "attribution_types": [
+        "paraphrased"
+      ]
+    },
+    {
+      "slug": "evropusambandid-fylgi-hotunum-sinum-ekki-eftir",
+      "title": "Evrópusambandið fylgi hótunum sínum ekki eftir",
+      "source": "Morgunblaðið",
+      "date": "2026-03-11",
+      "claim_count": 5,
+      "attribution_types": [
+        "paraphrased",
+        "quoted"
       ]
     }
   ]

@@ -4,15 +4,18 @@
   "type": "party",
   "description": "Stjórnmálaflokkur — hlynnt ESB-aðild.",
   "role": "stjórnmálaflokkur",
-  "party": null,
+  "party": "Samfylkingin",
   "stance": "pro_eu",
-  "stance_score": 1.0,
-  "credibility": null,
+  "stance_score": 0.67,
+  "credibility": 1.0,
   "attribution_counts": {
+    "paraphrased": 2,
     "mentioned": 3
   },
   "althingi_stats": null,
-  "scorecard": {},
+  "scorecard": {
+    "supported": 2
+  },
   "claims": [
     {
       "claim_text": "Samfylkingin, Viðreisn og Flokkur fólksins hafi sett ESB-aðild aftur á dagskrá með fyrirhugaðri þjóðaratkvæðagreiðslu.",
@@ -43,6 +46,26 @@
       "article_title": "Þjóðin á báðum áttum um viðræður: 52% gegn 48%",
       "article_source": "Morgunblaðið",
       "article_date": "2026-03-09"
+    },
+    {
+      "claim_text": "Samfylkingin hafði í stefnu sinni fyrir síðustu alþingiskosningar að stefnt væri að þjóðaratkvæðagreiðslu um ESB-aðild á yfirstandandi kjörtímabili",
+      "verdict": "supported",
+      "category": "party_positions",
+      "attribution": "paraphrased",
+      "article_slug": "evropusambandid-fylgi-hotunum-sinum-ekki-eftir",
+      "article_title": "Evrópusambandið fylgi hótunum sínum ekki eftir",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-11"
+    },
+    {
+      "claim_text": "ESB-aðild var ekki forgangsatriði í kosningabaráttu Samfylkingarinnar fyrir síðustu alþingiskosningar",
+      "verdict": "supported",
+      "category": "party_positions",
+      "attribution": "paraphrased",
+      "article_slug": "evropusambandid-fylgi-hotunum-sinum-ekki-eftir",
+      "article_title": "Evrópusambandið fylgi hótunum sínum ekki eftir",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-11"
     }
   ],
   "articles": [
@@ -64,6 +87,16 @@
       "claim_count": 2,
       "attribution_types": [
         "mentioned"
+      ]
+    },
+    {
+      "slug": "evropusambandid-fylgi-hotunum-sinum-ekki-eftir",
+      "title": "Evrópusambandið fylgi hótunum sínum ekki eftir",
+      "source": "Morgunblaðið",
+      "date": "2026-03-11",
+      "claim_count": 2,
+      "attribution_types": [
+        "paraphrased"
       ]
     }
   ]

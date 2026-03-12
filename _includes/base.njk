@@ -19,7 +19,7 @@
 
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="stylesheet" href="/assets/css/tracker-base.css">
+  {% if extra_css or return_link_support %}<link rel="stylesheet" href="/assets/css/tracker-base.css">{% endif %}
   {% if extra_css %}<link rel="stylesheet" href="{{ extra_css }}">{% endif %}
 </head>
   <body>

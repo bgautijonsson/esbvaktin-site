@@ -4,15 +4,18 @@
   "type": "party",
   "description": "Stjórnmálaflokkur — hlynnt ESB-aðild.",
   "role": "stjórnmálaflokkur",
-  "party": null,
+  "party": "Viðreisn",
   "stance": "pro_eu",
   "stance_score": 1.0,
-  "credibility": null,
+  "credibility": 0.5,
   "attribution_counts": {
+    "paraphrased": 1,
     "mentioned": 7
   },
   "althingi_stats": null,
-  "scorecard": {},
+  "scorecard": {
+    "partially_supported": 1
+  },
   "claims": [
     {
       "claim_text": "Viðreisn hafi verið stofnuð í þeim tilgangi að koma Íslandi í ESB.",
@@ -83,6 +86,16 @@
       "article_title": "Þjóðin á báðum áttum um viðræður: 52% gegn 48%",
       "article_source": "Morgunblaðið",
       "article_date": "2026-03-09"
+    },
+    {
+      "claim_text": "Þjóðaratkvæðagreiðslan var upphaflega áætluð árið 2027 en var flýtt fram á 2026 vegna þrýstings frá Viðreisn",
+      "verdict": "partially_supported",
+      "category": "party_positions",
+      "attribution": "paraphrased",
+      "article_slug": "evropusambandid-fylgi-hotunum-sinum-ekki-eftir",
+      "article_title": "Evrópusambandið fylgi hótunum sínum ekki eftir",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-11"
     }
   ],
   "articles": [
@@ -124,6 +137,16 @@
       "claim_count": 2,
       "attribution_types": [
         "mentioned"
+      ]
+    },
+    {
+      "slug": "evropusambandid-fylgi-hotunum-sinum-ekki-eftir",
+      "title": "Evrópusambandið fylgi hótunum sínum ekki eftir",
+      "source": "Morgunblaðið",
+      "date": "2026-03-11",
+      "claim_count": 1,
+      "attribution_types": [
+        "paraphrased"
       ]
     }
   ]

@@ -5,39 +5,145 @@ description: Óháð, gagnadrifið upplýsingaverkefni um ESB-þjóðaratkvæða
 wide_layout: true
 ---
 
+{# ── Hero: What is ESBvaktin? ── #}
+<section class="home-hero">
+  <div class="home-hero-copy">
+    <h1>Þjóðaratkvæðagreiðslan um ESB nálgast.</h1>
+    <p class="home-deck">ESBvaktin er óháð upplýsingaverkefni sem fylgist með fullyrðingum í umræðunni um ESB-aðild Íslands &mdash; metur þær á móti gögnum og birtir niðurstöður.</p>
+    <div class="home-hero-meta-strip">
+      <span><strong>{{ site.referendum_date | isDate }}</strong> kjördagur</span>
+      <span><strong>{{ home.days_until_referendum | localeString }} dagar</strong> eftir</span>
+      <span><strong>{{ home.last_updated | isDate }}</strong> síðasta uppfærsla</span>
+    </div>
+  </div>
+</section>
+
+{# ── Pipeline: How ESBvaktin works ── #}
+<section class="home-pipeline" aria-labelledby="pipeline-heading">
+  <h2 class="home-pipeline-heading" id="pipeline-heading">Hvernig ESBvaktin vinnur</h2>
+  <div class="home-pipeline-steps">
+    <a href="/umraedan/" class="home-pipeline-step">
+      <span class="home-pipeline-icon" aria-hidden="true">1</span>
+      <span class="home-pipeline-label">Umræða</span>
+      <span class="home-pipeline-desc">Greinar, ræður og viðtöl skoðuð</span>
+      <span class="home-pipeline-count">{{ home.signal_stats[1].value | localeString }} greinar</span>
+    </a>
+    <span class="home-pipeline-arrow" aria-hidden="true"></span>
+    <a href="/fullyrdingar/" class="home-pipeline-step">
+      <span class="home-pipeline-icon" aria-hidden="true">2</span>
+      <span class="home-pipeline-label">Fullyrðingar</span>
+      <span class="home-pipeline-desc">Mælanlegar staðhæfingar dregnar út</span>
+      <span class="home-pipeline-count">{{ home.signal_stats[0].value | localeString }} skráðar</span>
+    </a>
+    <span class="home-pipeline-arrow" aria-hidden="true"></span>
+    <a href="/heimildir/" class="home-pipeline-step">
+      <span class="home-pipeline-icon" aria-hidden="true">3</span>
+      <span class="home-pipeline-label">Heimildir</span>
+      <span class="home-pipeline-desc">Bornar saman við gögn og lagaákvæði</span>
+      <span class="home-pipeline-count">{{ home.signal_stats[3].value | localeString }} heimildir</span>
+    </a>
+    <span class="home-pipeline-arrow" aria-hidden="true"></span>
+    <div class="home-pipeline-step home-pipeline-step--final">
+      <span class="home-pipeline-icon" aria-hidden="true">4</span>
+      <span class="home-pipeline-label">Mat</span>
+      <span class="home-pipeline-desc">Fullyrðingar flokkaðar eftir trúverðugleika</span>
+      <span class="home-pipeline-verdicts">
+        <span class="home-verdict-dot home-verdict-dot--supported" title="Staðfest"></span>
+        <span class="home-verdict-dot home-verdict-dot--partial" title="Að hluta staðfest"></span>
+        <span class="home-verdict-dot home-verdict-dot--unverifiable" title="Ósannanlegt"></span>
+        <span class="home-verdict-dot home-verdict-dot--unsupported" title="Óstutt"></span>
+        <span class="home-verdict-dot home-verdict-dot--misleading" title="Villandi"></span>
+      </span>
+    </div>
+  </div>
+</section>
+
+{# ── Main content grid ── #}
 <div class="home-grid">
   <div class="home-main">
-    <section class="home-hero">
-      <div class="home-hero-copy">
-        <p class="home-kicker">ESB-umræðan í gögnum</p>
-        <h1>Gögn um ESB-umræðuna á einum stað.</h1>
-        <p class="home-deck">ESBvaktin heldur utan um fullyrðingar, greiningar, heimildir, raddir og þingræður svo umræðan sé lesin sem safn gagna fremur en kynningarefni.</p>
-        <div class="home-hero-meta-strip">
-          <span><strong>{{ home.last_updated | isDate }}</strong> síðasta uppfærsla</span>
-          <span><strong>{{ site.referendum_date | isDate }}</strong> kjördagur</span>
-          <span><strong>{{ home.days_until_referendum | localeString }} dagar</strong> til þjóðaratkvæðis</span>
-        </div>
-      </div>
-    </section>
 
-    <section class="home-section" aria-labelledby="home-core-heading">
+    {# ── Weekly review ── #}
+    {% if home.weekly_review %}
+    <section class="home-section home-weekly" aria-labelledby="home-weekly-heading">
       <div class="home-section-head">
         <div>
-          <p class="home-section-label">Gagnasöfn</p>
-          <h2 id="home-core-heading">Beint í gögnin</h2>
+          <p class="home-section-label">Vikuyfirlit</p>
+          <h2 id="home-weekly-heading">Vikan {{ home.weekly_review.period_start | isDateRange(home.weekly_review.period_end) }}</h2>
         </div>
+        <a href="/vikuyfirlit/{{ home.weekly_review.slug }}/" class="home-text-link">Allt yfirlitið</a>
       </div>
-      <div class="home-signal-bar">
-        {% for stat in home.signal_stats %}
-        <a href="{{ stat.href }}" class="home-signal-card">
-          <span class="home-section-label">{{ stat.label }}</span>
-          <span class="home-signal-value">{{ stat.value | localeString }}</span>
-          <span class="home-signal-note">{{ stat.note }}</span>
-        </a>
+
+      <div class="home-weekly-summary">
+        <div class="home-weekly-numbers">
+          <span><strong>{{ home.weekly_review.articles_analysed }}</strong> greinar greindar</span>
+          <span><strong>{{ home.weekly_review.new_claims | localeString }}</strong> fullyrðingar birtar</span>
+        </div>
+        {% if home.weekly_review.verdict_breakdown %}
+        <div class="home-weekly-bar-wrap">
+          {% set vb = home.weekly_review.verdict_breakdown %}
+          {% set vtotal = (vb.supported or 0) + (vb.partially_supported or 0) + (vb.unverifiable or 0) + (vb.unsupported or 0) + (vb.misleading or 0) %}
+          {% if vtotal > 0 %}
+          <div class="home-weekly-bar" role="img" aria-label="Dreifing niðurstaðna vikunnar">
+            {% set verdictOrder = ["supported", "partially_supported", "unverifiable", "unsupported", "misleading"] %}
+            {% for v in verdictOrder %}
+              {% set count = vb[v] or 0 %}
+              {% if count %}
+                {% set pct = (count / vtotal * 100) | round(1) %}
+                <span class="home-bar-seg home-verdict-bg--{{ v | replace("partially_supported", "partial") }}"
+                      style="width:{{ pct }}%"
+                      title="{{ v | verdictLabel }}: {{ count }}"></span>
+              {% endif %}
+            {% endfor %}
+          </div>
+          <div class="home-weekly-legend">
+            {% for v in verdictOrder %}
+              {% set count = vb[v] or 0 %}
+              {% if count %}
+              <span class="home-legend-item">
+                <span class="home-verdict-dot home-verdict-dot--{{ v | replace("partially_supported", "partial") }}"></span>
+                {{ v | verdictLabel }} <strong>{{ count }}</strong>
+              </span>
+              {% endif %}
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+        {% endif %}
+      </div>
+
+      {% if home.weekly_review.editorial_lead %}
+      <div class="home-weekly-editorial">
+        {% for para in home.weekly_review.editorial_lead.split("\n\n") %}
+          {% if para | trim %}<p>{{ para | trim }}</p>{% endif %}
         {% endfor %}
       </div>
-    </section>
+      {% endif %}
 
+      {% if home.weekly_review.top_claims | length %}
+      <div class="home-weekly-claims">
+        <h3 class="home-subsection-label">Athyglisverðar fullyrðingar vikunnar</h3>
+        {% for claim in home.weekly_review.top_claims %}
+        <div class="home-claim-card">
+          <div class="home-claim-header">
+            <span class="home-verdict-pill home-verdict-bg--{{ claim.verdict | replace("partially_supported", "partial") }}">{{ claim.verdict | verdictLabel }}</span>
+            <span class="home-claim-category">{{ claim.category_is }}</span>
+          </div>
+          <p class="home-claim-text">{{ claim.canonical_text_is }}</p>
+          {% if claim.sources | length %}
+          <div class="home-claim-sources">
+            {% for src in claim.sources %}
+            <a href="/umraedan/{{ src.slug }}/">{{ src.title }}</a>{% if not loop.last %}, {% endif %}
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </section>
+    {% endif %}
+
+    {# ── Topics overview ── #}
     {% if home.top_topics | length %}
     <section class="home-section" aria-labelledby="home-topics-heading">
       <div class="home-section-head">
@@ -64,7 +170,7 @@ wide_layout: true
                 {% set count = topic.verdict_counts[v] or 0 %}
                 {% if count %}
                   {% set pct = (count / vtotal * 100) | round(1) %}
-                  <span class="report-bar-seg verdict-{{ v | replace("partially_supported", "partial") }}"
+                  <span class="report-bar-seg home-verdict-bg--{{ v | replace("partially_supported", "partial") }}"
                         style="width:{{ pct }}%"
                         title="{{ v | verdictLabel }}: {{ count }}"></span>
                 {% endif %}
@@ -80,7 +186,26 @@ wide_layout: true
     {% endif %}
   </div>
 
+  {# ── Sidebar ── #}
   <aside class="home-sidebar" aria-label="Yfirlit af forsíðu">
+    {# ── Data stats (compact) ── #}
+    <section class="home-sidebar-section home-stats-compact">
+      <div class="home-section-head home-section-head-compact">
+        <div>
+          <p class="home-section-label">Gagnasöfn</p>
+          <h2>Í safninu</h2>
+        </div>
+      </div>
+      <div class="home-stats-list">
+        {% for stat in home.signal_stats %}
+        <a href="{{ stat.href }}" class="home-stat-row">
+          <span class="home-stat-label">{{ stat.label }}</span>
+          <span class="home-stat-value">{{ stat.value | localeString }}</span>
+        </a>
+        {% endfor %}
+      </div>
+    </section>
+
     <section class="home-sidebar-section">
       <div class="home-section-head home-section-head-compact">
         <div>
@@ -127,32 +252,5 @@ wide_layout: true
         {% endfor %}
       </div>
     </section>
-
-    {% if home.latest_overview %}
-    <section class="home-sidebar-section">
-      <div class="home-section-head home-section-head-compact">
-        <div>
-          <p class="home-section-label">Vikuyfirlit</p>
-          <h2>Nýjasta yfirlit</h2>
-        </div>
-      </div>
-      <a href="/vikuyfirlit/{{ home.latest_overview.slug }}/" class="home-sidebar-item home-sidebar-item--overview home-sidebar-link">
-        <div class="home-sidebar-meta">
-          <span>{{ home.latest_overview.period_start | isDateRange(home.latest_overview.period_end) }}</span>
-        </div>
-        <h3>Vikuyfirlit {{ home.latest_overview.period_start | isDateRange(home.latest_overview.period_end) }}</h3>
-        <div class="home-sidebar-stats">
-          <span>{{ home.latest_overview.articles_analysed }} greinar</span>
-          <span>{{ home.latest_overview.new_claims }} fullyrðingar</span>
-          {% if home.latest_overview.diversity_score %}
-            <span>{{ (home.latest_overview.diversity_score * 100) | round }}% fjölbreytni</span>
-          {% endif %}
-        </div>
-        {% if home.latest_overview.editorial_excerpt %}
-        <p class="home-overview-excerpt">{{ home.latest_overview.editorial_excerpt }}</p>
-        {% endif %}
-      </a>
-    </section>
-    {% endif %}
   </aside>
 </div>

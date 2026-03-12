@@ -2,7 +2,6 @@ const fs = require("fs");
 const path = require("path");
 
 const site = require("./site.json");
-const taxonomy = require("../assets/js/site-taxonomy.js");
 const trackerUtils = require("../assets/js/tracker-utils.js");
 
 function readJson(relativePath) {
@@ -23,24 +22,6 @@ function sortByDateDesc(items, keys) {
     const dateB = getLatestDate(b, keys);
     return dateB.localeCompare(dateA);
   });
-}
-
-function getPrimaryVerdict(report) {
-  const counts = report.verdict_counts || {};
-  const order = [
-    "supported",
-    "partially_supported",
-    "unverifiable",
-    "misleading",
-    "unsupported",
-  ];
-
-  return order
-    .map((verdict) => ({
-      verdict,
-      count: counts[verdict] || 0,
-    }))
-    .sort((a, b) => b.count - a.count)[0]?.verdict || null;
 }
 
 function getDaysUntil(dateString) {
@@ -64,6 +45,21 @@ function normalizeReport(report, sourceLookup) {
   return trackerUtils.enrichReportRecord(report, sourceLookup);
 }
 
+function readOverviewDetail(slug) {
+  try {
+    return readJson(`_data/overviews/${slug}.json`);
+  } catch {
+    return null;
+  }
+}
+
+function extractEditorialLead(editorial) {
+  if (!editorial) return null;
+  // Strip markdown heading, take first two paragraphs
+  const paragraphs = editorial.replace(/^#[^\n]*\n+/, "").split(/\n\n+/).filter(Boolean);
+  return paragraphs.slice(0, 2).join("\n\n");
+}
+
 module.exports = function () {
   const claims = readJson("assets/data/claims.json");
   const reportSourceLookup = trackerUtils.createNewsSourceLookup(claims);
@@ -78,28 +74,13 @@ module.exports = function () {
   const topics = readJson("assets/data/topics.json")
     .sort((a, b) => (b.published_claim_count || 0) - (a.published_claim_count || 0));
 
-  const verdictCounts = {};
-  Object.keys(taxonomy.verdictLabels).forEach((verdict) => {
-    verdictCounts[verdict] = 0;
-  });
-
-  claims.forEach((claim) => {
-    verdictCounts[claim.verdict] = (verdictCounts[claim.verdict] || 0) + 1;
-  });
-
   const totalClaims = claims.length;
   const totalSpeeches = debates.reduce((sum, debate) => sum + (debate.speech_count || 0), 0);
-  const totalWords = debates.reduce((sum, debate) => sum + (debate.total_words || 0), 0);
   const uniqueSources = new Set(reports.map((report) => report.article_source).filter(Boolean));
-  const latestReports = reports.slice(0, 4).map((report) => {
-    const primaryVerdict = getPrimaryVerdict(report);
-    return {
-      ...report,
-      primary_verdict: primaryVerdict,
-      primary_verdict_class: taxonomy.verdictClasses[primaryVerdict] || "",
-      display_date: report.analysis_date || report.article_date,
-    };
-  });
+  const latestReports = reports.slice(0, 3).map((report) => ({
+    ...report,
+    display_date: report.analysis_date || report.article_date,
+  }));
 
   const topEntities = [...entities]
     .sort((a, b) => {
@@ -125,16 +106,27 @@ module.exports = function () {
     ["date"]
   )[0]?.date || site.referendum_date;
 
-  const verdictDistribution = Object.entries(taxonomy.verdictLabels).map(([verdict, label]) => {
-    const count = verdictCounts[verdict] || 0;
-    return {
-      verdict,
-      label,
-      count,
-      className: taxonomy.verdictClasses[verdict] || "",
-      percentage: totalClaims ? Math.round((count / totalClaims) * 100) : 0,
-    };
-  });
+  // Build rich weekly overview for homepage
+  const latestOverviewSummary = overviews[0] || null;
+  const overviewDetail = latestOverviewSummary
+    ? readOverviewDetail(latestOverviewSummary.slug)
+    : null;
+
+  const weeklyReview = overviewDetail
+    ? {
+        slug: overviewDetail.slug,
+        period_start: overviewDetail.period_start,
+        period_end: overviewDetail.period_end,
+        editorial_lead: extractEditorialLead(overviewDetail.editorial),
+        articles_analysed: overviewDetail.key_numbers?.articles_analysed || 0,
+        new_claims: overviewDetail.key_numbers?.new_claims_published || 0,
+        verdict_breakdown: overviewDetail.key_numbers?.verdict_breakdown || {},
+        top_claims: (overviewDetail.top_claims || []).slice(0, 3),
+        notable_quotes: (overviewDetail.notable_quotes || []).slice(0, 2),
+        source_breakdown: overviewDetail.source_breakdown || {},
+        topic_activity: (overviewDetail.topic_activity || []).slice(0, 4),
+      }
+    : null;
 
   return {
     days_until_referendum: getDaysUntil(site.referendum_date),
@@ -171,42 +163,10 @@ module.exports = function () {
         note: `${totalSpeeches.toLocaleString("is-IS")} ræður`,
       },
     ],
-    lead_report: latestReports[0] || null,
-    processed_reports: latestReports.slice(0, 3),
-    recent_reports: latestReports.slice(1),
-    verdict_distribution: verdictDistribution,
+    processed_reports: latestReports,
     top_entities: topEntities,
-    lead_debate: debates[0] || null,
-    recent_debates: debates.slice(0, 3),
-    total_speeches: totalSpeeches,
-    total_words: totalWords,
-    latest_overview: overviews[0] || null,
+    latest_overview: latestOverviewSummary,
+    weekly_review: weeklyReview,
     top_topics: topics.slice(0, 6),
-    coverage: {
-      source_count: uniqueSources.size,
-      claim_count: totalClaims,
-      evidence_count: evidence.length,
-      entity_count: entities.length,
-      debate_count: debates.length,
-    },
-    timeline: [
-      {
-        title: "Síðasta gagnauppfærsla",
-        date: lastUpdated,
-        text: "Ný gögn og nýjustu greiningar renna inn á forsíðuna við hverja uppfærslu.",
-      },
-      {
-        title: "Nýjasta greining",
-        date: latestReports[0]?.display_date || lastUpdated,
-        text: latestReports[0]
-          ? latestReports[0].article_title
-          : "Greiningar birtast hér um leið og þær fara í loftið.",
-      },
-      {
-        title: "Þjóðaratkvæðagreiðsla",
-        date: site.referendum_date,
-        text: "29. ágúst 2026 kjósa landsmenn um næstu skref Íslands gagnvart Evrópusambandinu.",
-      },
-    ],
   };
 };
