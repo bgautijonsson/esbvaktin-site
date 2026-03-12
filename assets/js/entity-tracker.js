@@ -48,6 +48,7 @@
 
   const controller = createController({
     root,
+    trackerName: "entities",
     initialState: {
       search: params.get("q") || "",
       type: params.get("type") || "",

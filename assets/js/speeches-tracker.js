@@ -58,6 +58,7 @@
 
   const controller = createController({
     root,
+    trackerName: "speeches",
     initialState: {
       search: params.get("q") || "",
       speaker: params.get("speaker") || "",

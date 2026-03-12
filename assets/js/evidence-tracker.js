@@ -45,6 +45,7 @@
 
   const controller = createController({
     root,
+    trackerName: "evidence",
     initialState: {
       search: params.get("q") || "",
       topic: params.get("topic") || "",

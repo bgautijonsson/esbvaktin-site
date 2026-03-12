@@ -55,6 +55,7 @@
 
   const controller = createController({
     root,
+    trackerName: "claims",
     initialState: {
       claim: params.get("claim") || "",
       search: params.get("q") || "",

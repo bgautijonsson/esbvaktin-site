@@ -39,6 +39,7 @@
 
   const controller = createController({
     root,
+    trackerName: "topics",
     initialState: {
       search: params.get("q") || "",
       sort: params.get("sort") || "claim_count",

@@ -70,6 +70,7 @@
 
   const controller = createController({
     root,
+    trackerName: "discourse",
     initialState: {
       search: params.get("q") || "",
       source: params.get("source") || "",

@@ -118,8 +118,23 @@
 
     function setState(nextState, options) {
       var patch = typeof nextState === "function" ? nextState(Object.assign({}, state), api) : nextState;
+      var prev = state;
       state = Object.assign({}, state, patch || {});
       rerender(options);
+
+      // Analytics: track filter changes
+      if (typeof window.ESBvaktinAnalytics !== "undefined" && config.trackerName) {
+        var changed = patch || {};
+        Object.keys(changed).forEach(function (key) {
+          if (prev[key] !== state[key] && state[key] !== "" && state[key] != null) {
+            window.ESBvaktinAnalytics.track(
+              "filter/" + config.trackerName,
+              key + "=" + state[key]
+            );
+          }
+        });
+      }
+
       return state;
     }
 
