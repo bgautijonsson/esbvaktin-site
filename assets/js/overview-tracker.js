@@ -146,7 +146,7 @@
         </div>
         <div class="ov-card-stats">
           <span class="ov-card-stat"><strong>${overview.articles_analysed || 0}</strong> greinar</span>
-          <span class="ov-card-stat"><strong>${overview.new_claims || 0}</strong> fullyrðingar</span>
+          <span class="ov-card-stat"><strong>${overview.new_claims_published || 0}</strong> fullyrðingar</span>
           ${diversityPct != null ? `<span class="ov-card-stat"><strong>${diversityPct}%</strong> fjölbreytni</span>` : ""}
         </div>
         ${overview.editorial_excerpt ? `<p class="ov-card-excerpt">${escapeHtml(overview.editorial_excerpt)}</p>` : ""}

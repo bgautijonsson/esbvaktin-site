@@ -33,7 +33,7 @@ evidence_preview: true
     </div>
     <div class="od-stat-block">
       <span class="od-stat-heading">Nýjar fullyrðingar</span>
-      <span class="od-stat-num">{{ kn.new_claims_published }}<span class="od-stat-detail"> / {{ kn.new_claims }}</span></span>
+      <span class="od-stat-num">{{ kn.new_claims_published }}</span>
     </div>
     <div class="od-stat-block">
       <span class="od-stat-heading">Málefni</span>
@@ -84,6 +84,7 @@ evidence_preview: true
   {# ── Editorial (centrepiece) ── #}
   {% if overview.editorial %}
   <section class="od-editorial">
+    <p class="od-ai-disclosure">Vikuyfirlitið er skrifað af gervigreindarlíkaninu Claude með hjálp tengingar við gagnagrunn ESB Vaktarinnar.</p>
     {{ overview.editorial | markdown | safe }}
   </section>
   {% endif %}
