@@ -312,6 +312,7 @@
 
     if (claim.sightings?.length) {
       const reportLookup = getReportLookup();
+      const sightingCount = claim.sightings.length;
       const sightingItems = claim.sightings
         .map((sighting) => {
           const typeLabel = SOURCE_TYPE_LABELS[sighting.source_type] || sighting.source_type || "";
@@ -339,9 +340,14 @@
         })
         .join("");
 
-      detailsHtml += `<div class="ct-detail ct-sightings">
-        <strong>Umræðan:</strong>
-        <ul class="ct-sighting-list">${sightingItems}</ul>
+      detailsHtml += `<div class="ct-sightings-section">
+        <button class="ct-sightings-toggle" aria-expanded="false" type="button">
+          <span class="ct-sightings-label">Birtist í ${sightingCount} umræðu${sightingCount > 1 ? "m" : ""}</span>
+          <span class="ct-sightings-expand-icon">▸</span>
+        </button>
+        <div class="ct-sightings-details">
+          <ul class="ct-sighting-list">${sightingItems}</ul>
+        </div>
       </div>`;
     }
 
@@ -372,6 +378,15 @@
         </div>
       </div>
     `;
+  }
+
+  function toggleSightings(toggle) {
+    const section = toggle.closest(".ct-sightings-section");
+    if (!section) return;
+
+    const expanded = !section.classList.contains("ct-sightings-expanded");
+    section.classList.toggle("ct-sightings-expanded", expanded);
+    toggle.setAttribute("aria-expanded", expanded);
   }
 
   function toggleClaimCard(header) {
@@ -517,6 +532,10 @@
 
   controller.bindKeyActivate(".ct-card-header", (target) => {
     toggleClaimCard(target);
+  });
+
+  controller.bindClick(".ct-sightings-toggle", (target) => {
+    toggleSightings(target);
   });
 
   controller.start();
