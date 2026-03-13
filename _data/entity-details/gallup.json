@@ -7,12 +7,15 @@
   "party": null,
   "stance": "neutral",
   "stance_score": 0.0,
-  "credibility": null,
+  "credibility": 0.5,
   "attribution_counts": {
+    "asserted": 1,
     "mentioned": 29
   },
   "althingi_stats": null,
-  "scorecard": {},
+  "scorecard": {
+    "partially_supported": 1
+  },
   "claims": [
     {
       "claim_text": "Meirihluti landsmanna er hlynntur þjóðaratkvæðagreiðslu um framhald aðildarviðræðna við ESB samkvæmt Þjóðarpúlsi Gallup.",
@@ -303,6 +306,16 @@
       "article_title": "Þjóðin á báðum áttum um viðræður: 52% gegn 48%",
       "article_source": "Morgunblaðið",
       "article_date": "2026-03-09"
+    },
+    {
+      "claim_text": "Gallup könnun sýnir að 52% eru með þjóðaratkvæðagreiðslu um ESB-aðild og 48% eru á móti.",
+      "verdict": "partially_supported",
+      "category": "polling",
+      "attribution": "asserted",
+      "article_slug": "kristrun-telur-thurfa-70-studning-vid-tilloguna",
+      "article_title": "Kristrún telur þurfa 70% stuðning við tillöguna",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-12"
     }
   ],
   "articles": [
@@ -324,6 +337,16 @@
       "claim_count": 15,
       "attribution_types": [
         "mentioned"
+      ]
+    },
+    {
+      "slug": "kristrun-telur-thurfa-70-studning-vid-tilloguna",
+      "title": "Kristrún telur þurfa 70% stuðning við tillöguna",
+      "source": "Morgunblaðið",
+      "date": "2026-03-12",
+      "claim_count": 1,
+      "attribution_types": [
+        "asserted"
       ]
     }
   ]

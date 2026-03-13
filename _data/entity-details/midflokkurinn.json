@@ -4,15 +4,18 @@
   "type": "party",
   "description": "Stjórnmálaflokkur — andvíg/ur ESB-aðild.",
   "role": "stjórnmálaflokkur",
-  "party": null,
+  "party": "Miðflokkurinn",
   "stance": "anti_eu",
-  "stance_score": -0.8,
-  "credibility": null,
+  "stance_score": -0.82,
+  "credibility": 1.0,
   "attribution_counts": {
+    "asserted": 1,
     "mentioned": 14
   },
   "althingi_stats": null,
-  "scorecard": {},
+  "scorecard": {
+    "supported": 1
+  },
   "claims": [
     {
       "claim_text": "Bergþór Ólason sé þingmaður Miðflokksins.",
@@ -146,13 +149,23 @@
     },
     {
       "claim_text": "Framsóknarflokkur var á kjörtímabilinu 2009 til 2013 leiddir af núverandi formanni Miðflokks.",
-      "verdict": "partially_supported",
+      "verdict": "supported",
       "category": "party_positions",
       "attribution": "mentioned",
       "article_slug": "folk-sem-treystir-ekki-thjod-til-ad-hafa-vit-fyrir-sjalfri-ser",
       "article_title": "Fólk sem treystir ekki þjóð til að hafa vit fyrir sjálfri sér",
       "article_source": "Vísir",
       "article_date": "2026-03-10"
+    },
+    {
+      "claim_text": "Miðflokkurinn er gegn aðild Íslands að Evrópusambandinu.",
+      "verdict": "supported",
+      "category": "party_positions",
+      "attribution": "asserted",
+      "article_slug": "blekkingaleikurinn-mikli",
+      "article_title": "Blekkingaleikurinn mikli",
+      "article_source": "Miðflokkurinn",
+      "article_date": "2026-03-12"
     }
   ],
   "articles": [
@@ -255,6 +268,16 @@
       "attribution_types": [
         "mentioned"
       ]
+    },
+    {
+      "slug": "blekkingaleikurinn-mikli",
+      "title": "Blekkingaleikurinn mikli",
+      "source": "Miðflokkurinn",
+      "date": "2026-03-12",
+      "claim_count": 1,
+      "attribution_types": [
+        "asserted"
+      ]
     }
   ],
   "party_members": [
@@ -262,9 +285,9 @@
       "slug": "sigmundur-david-gunnlaugsson",
       "name": "Sigmundur Davíð Gunnlaugsson",
       "role": "formaður Miðflokksins",
-      "stance_score": -0.8,
-      "credibility": 0.55,
-      "claim_count": 27
+      "stance_score": -0.83,
+      "credibility": 0.6,
+      "claim_count": 45
     },
     {
       "slug": "bjorn-ingi-hrafnsson",
@@ -275,20 +298,20 @@
       "claim_count": 24
     },
     {
+      "slug": "bergthor-olason",
+      "name": "Bergþór Ólason",
+      "role": "þingmaður",
+      "stance_score": -0.5,
+      "credibility": 0.82,
+      "claim_count": 14
+    },
+    {
       "slug": "snorri-masson",
       "name": "Snorri Másson",
       "role": "varaformaður Miðflokksins",
       "stance_score": -0.67,
       "credibility": 0.3,
       "claim_count": 13
-    },
-    {
-      "slug": "bergthor-olason",
-      "name": "Bergþór Ólason",
-      "role": "þingmaður",
-      "stance_score": -1.0,
-      "credibility": 0.25,
-      "claim_count": 4
     },
     {
       "slug": "gunnar-bragi-sveinsson",

@@ -1,8 +1,12 @@
 const taxonomy = require("./assets/js/site-taxonomy.js");
 const markdownIt = require("markdown-it");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 /** @type {import("@11ty/eleventy").UserConfig} */
 module.exports = function (eleventyConfig) {
+  // ── Plugins ─────────────────────────────────────────────────────
+  eleventyConfig.addPlugin(pluginRss);
+
   // ── Passthrough copy ──────────────────────────────────────────────
   // Assets served as-is — 11ty never processes JS, CSS, or data files
   eleventyConfig.addPassthroughCopy("assets");
@@ -10,6 +14,7 @@ module.exports = function (eleventyConfig) {
 
   // CNAME for GitHub Pages custom domain
   eleventyConfig.addPassthroughCopy("CNAME");
+  eleventyConfig.addPassthroughCopy("robots.txt");
 
   // ── Icelandic slug filter ─────────────────────────────────────────
   eleventyConfig.addFilter("isSlug", (str) => {
@@ -150,6 +155,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("markdown", (str) => {
     if (!str) return "";
     return md.render(str);
+  });
+
+  // ── Date string → RFC 3339 (for Atom feed) ─────────────────────
+  eleventyConfig.addFilter("toRfc3339", (str) => {
+    if (!str) return "";
+    return new Date(str).toISOString();
   });
 
   // ── Ignore files ─────────────────────────────────────────────────

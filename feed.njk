@@ -1,0 +1,28 @@
+---
+permalink: /feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ site.title }}</title>
+  <subtitle>{{ site.description }}</subtitle>
+  <link href="{{ site.url }}/feed.xml" rel="self" type="application/atom+xml"/>
+  <link href="{{ site.url }}/" rel="alternate" type="text/html"/>
+  <id>{{ site.url }}/</id>
+  <updated>{{ collections.reports | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <author>
+    <name>ESB Vaktin</name>
+  </author>
+  {%- for item in collections.reports | reverse %}
+  {%- if loop.index <= 20 %}
+  <entry>
+    <title>{{ item.data.report.article_title }}</title>
+    <link href="{{ site.url }}{{ item.url }}" rel="alternate" type="text/html"/>
+    <id>{{ site.url }}{{ item.url }}</id>
+    <published>{{ item.data.report.analysis_date | toRfc3339 }}</published>
+    <updated>{{ item.data.report.analysis_date | toRfc3339 }}</updated>
+    <summary>{{ item.data.report.summary }}</summary>
+  </entry>
+  {%- endif %}
+  {%- endfor %}
+</feed>

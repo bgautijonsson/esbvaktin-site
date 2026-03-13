@@ -1,12 +1,12 @@
 ---
 layout: base.njk
-title: Um okkur
+title: Um síðuna
 description: Um ESB Vaktin — óháð upplýsingaverkefni um ESB-þjóðaratkvæðagreiðsluna.
 ---
 
-# Um okkur
+# Um síðuna
 
-ESB Vaktin er óháð, gagnadrifið upplýsingaverkefni sem fylgist með umræðunni um hugsanlega aðild Íslands að Evrópusambandinu í aðdraganda þjóðaratkvæðagreiðslunnar 29. ágúst 2026.
+ESB Vaktin er óháð, gagnadrifið upplýsingaverkefni sem fylgist með umræðunni um þjóðaratkvæðagreiðslu um áframhaldandi viðræður Íslands við Evrópusambandið þann 29. ágúst 2026.
 
 ## Markmið
 

@@ -2,13 +2,15 @@
   "slug": "inga-saeland",
   "name": "Inga Sæland",
   "type": "individual",
-  "description": "Ríkisstjórnarmál (Flokkur fólksins) — hlutlaus um ESB-aðild.",
+  "description": "Ríkisstjórnarmál (Flokkur fólksins) — andvíg/ur ESB-aðild.",
   "role": "ríkisstjórnarmál",
   "party": "Flokkur fólksins",
-  "stance": "neutral",
-  "stance_score": 0.0,
-  "credibility": null,
-  "attribution_counts": {},
+  "stance": "anti_eu",
+  "stance_score": -0.5,
+  "credibility": 1.0,
+  "attribution_counts": {
+    "paraphrased": 1
+  },
   "althingi_stats": {
     "speech_count": 8,
     "total_words": 1638,
@@ -16,7 +18,31 @@
     "first_speech": "2019-03-18",
     "last_speech": "2025-09-22"
   },
-  "scorecard": {},
-  "claims": [],
-  "articles": []
+  "scorecard": {
+    "supported": 1
+  },
+  "claims": [
+    {
+      "claim_text": "Inga Sæland í Flokki fólksins lýsti sig í kosningabaráttunni 2024 bæði gegn ESB-aðild og gegn þjóðaratkvæðagreiðslu á þessu kjörtímabili.",
+      "verdict": "supported",
+      "category": "party_positions",
+      "attribution": "paraphrased",
+      "article_slug": "kristrun-telur-thurfa-70-studning-vid-tilloguna",
+      "article_title": "Kristrún telur þurfa 70% stuðning við tillöguna",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-12"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "kristrun-telur-thurfa-70-studning-vid-tilloguna",
+      "title": "Kristrún telur þurfa 70% stuðning við tillöguna",
+      "source": "Morgunblaðið",
+      "date": "2026-03-12",
+      "claim_count": 1,
+      "attribution_types": [
+        "paraphrased"
+      ]
+    }
+  ]
 }

@@ -14,9 +14,14 @@
   <meta property="og:description" content="{{ description or site.description }}">
   <meta property="og:type" content="{{ og_type or 'website' }}">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}/assets/img/social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:locale" content="{{ site.locale }}">
   <meta property="og:site_name" content="{{ site.title }}">
+  <meta name="twitter:card" content="summary_large_image">
 
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/feed.xml">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   <link rel="stylesheet" href="/assets/css/style.css">
   {% if extra_css or return_link_support %}<link rel="stylesheet" href="/assets/css/tracker-base.css">{% endif %}
@@ -64,7 +69,7 @@
     <p>{{ site.title }} er óháð upplýsingaverkefni um ESB-þjóðaratkvæðagreiðsluna {{ site.referendum_date | isDate }}.</p>
     <p>Síðan safnar saman fullyrðingum, greiningum, heimildum, röddum í umræðunni og þingræðum. Samantektir eru unnar með aðstoð Claude en birt efni er yfirfarið fyrir birtingu.</p>
     <p class="footer-links">
-      <a href="/um-okkur/">Um okkur</a> &middot;
+      <a href="/um-okkur/">Um síðuna</a> &middot;
       <a href="/adferdarfraedi/">Aðferðafræði</a> &middot;
       <a href="mailto:greining@esbvaktin.is">Senda grein</a>
     </p>

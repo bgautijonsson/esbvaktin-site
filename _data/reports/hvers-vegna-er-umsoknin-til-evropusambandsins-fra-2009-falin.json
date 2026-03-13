@@ -9,10 +9,10 @@
   "analysis_date": "2026-03-11",
   "summary": "Greindar 8 fullyrðingar .",
   "verdict_counts": {
-    "supported": 3,
+    "supported": 4,
     "unverifiable": 2,
-    "partially_supported": 2,
-    "misleading": 1
+    "misleading": 1,
+    "partially_supported": 1
   },
   "claim_count": 8,
   "dominant_category": "sovereignty",
@@ -176,8 +176,8 @@
         "claim_type": "legal_assertion",
         "confidence": 0.75
       },
-      "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/\" title=\"Althingi records; coalition agreements 2009, 2013, 2017, 2021, 2024; Icelandic media archives\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-011</a> og <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland; Euronews; France24; coalition agreement\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-013</a> staðfesta að ríkisstjórn Samfylkingar og VG lagði fram umsókn Íslands um ESB-aðild í júlí 2009. Jóhanna Sigurðardóttir var forsætisráðherra en Steingrímur J. Sigfússon var fjármálaráðherra og formaður VG — ekki forsætisráðherra. Fullyrðingin nefnir \"ríkisstjórn Steingríms J. Sigfússonar (og Jóhönnu Sigurðardóttur)\" sem snýr hlutverkum við. Ríkisstjórnin var undir forystu Jóhönnu en Steingrímur gegndi lykilhlutverki sem formaður minni stjórnarflokksins.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/\" title=\"Althingi records; coalition agreements 2009, 2013, 2017, 2021, 2024; Icelandic media archives\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-011</a> staðfestir beint að ríkisstjórn Samfylkingarinnar og Vinstrihreyfingarinnar – græns framboðs lagði fram aðildarumsókn Íslands í júlí 2009. Jóhanna Sigurðardóttir var forsætisráðherra og Steingrímur J. Sigfússon var fjármálaráðherra og formaður Vinstri grænna. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland; Euronews; France24; coalition agreement\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-013</a> staðfestir einnig að þetta var ríkisstjórn Jóhönnu Sigurðardóttur (2009–2013). Nýja heimildin <a href=\"https://www.althingi.is/altext/raeda/154/rad20230919T175556.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir (flutningsræða, 154. löggjafarþing); Logi Einarsson (flutningsræða, 153. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-004</a> vísar til «ferlisins sem hófst með umsókninni 2009». Fullyrðingin er efnislega rétt — þingsályktunartillagan um ESB-aðild var lögð fram af þessari ríkisstjórn.",
       "supporting_evidence": [
         {
           "id": "POLITICAL-DATA-011",
@@ -188,11 +188,16 @@
           "id": "PARTY-DATA-013",
           "source_name": "Government of Iceland; Euronews; France24; coalition agreement",
           "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+        },
+        {
+          "id": "SOV-PARL-004",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir (flutningsræða, 154. löggjafarþing); Logi Einarsson (flutningsræða, 153. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/154/rad20230919T175556.html"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Heimildir nefna ekki beint þingsályktunartillögu frá 2009 — umsóknin var lögð fram af ríkisstjórninni. Steingrímur J. Sigfússon var fjármálaráðherra og formaður VG en Jóhanna var forsætisráðherra og leiddi ríkisstjórnina. Að kalla þetta \"ríkisstjórn Steingríms\" er villandi þar sem Jóhanna stýrði henni.",
-      "confidence": 0.7,
+      "missing_context": "Heimildir nota orðalagið «coalition of Samfylkingin and VG» fremur en að nefna Steingrím sérstaklega sem flutningsaðila þingsályktunartillögunnar. Jóhanna Sigurðardóttir var forsætisráðherra en Steingrímur J. Sigfússon var fjármálaráðherra og formaður hins stjórnarflokksins.",
+      "confidence": 0.85,
       "speakers": [
         {
           "name": "Steingrímur J. Sigfússon",

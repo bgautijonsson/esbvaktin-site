@@ -8,31 +8,42 @@ description: Aðferðafræði ESB Vaktarinnar — hvernig fullyrðingar eru metn
 
 ## Yfirlit
 
-ESB Vaktin safnar fullyrðingum úr opinberri umræðu um hugsanlega ESB-aðild Íslands, skráir þær í gagnagrunn og metur þær á móti staðreyndagögnum. Verkefnið notar spjallmennið Claude til að greina og flokka fullyrðingar, undir umsjón og ritstjórn Brynjólfs Gauta Guðrúnar Jónssonar.
+ESB Vaktin er sjálfvirkt greiningarkerfi sem fylgist stöðugt með opinberri umræðu um þjóðaratkvæðagreiðsluna um Evrópusambandið. Kerfið skannar fréttamiðla og aðrar heimildir, dregur út fullyrðingar, metur þær á móti staðreyndagrunni og birtir niðurstöður á þessari vefsíðu.
 
-## Leiðin frá fullyrðingu til mats
+Verkefnið er byggt á spjallmenninu Claude frá Anthropic. Claude skrifar allan texta á síðunni — greiningar, samantektir og vikuyfirlit. Brynjólfur Gauti Guðrúnar Jónsson, tölfræðingur, hannar aðferðafræðina, sér um staðreyndagrunn og fer yfir niðurstöður sem ritstjóri.
 
-### 1. Söfnun
+## Leiðin frá frétt til mats
 
-Fullyrðingar eru lesnar úr fjölmiðlaumfjöllun, ræðum á Alþingi, viðtölum og opinberri umræðu. Claude skannar greinar og dregur út fullyrðingar sem hægt er að meta á móti gögnum.
+### 1. Vöktun
 
-### 2. Staðreyndagrunnur
+Fréttasöfnunarkerfi skannar íslenska fjölmiðla á hálfrar klukkustundar fresti — meðal annars RÚV, Morgunblaðið, Vísi, DV, Heimildin og Nútímann. Einnig eru sótt efni af vefsíðum stjórnmálaflokka og hagsmunahópa. Kerfið greinir sjálfkrafa greinar sem varða ESB-umræðuna og skráir þær í gagnagrunn.
 
-Greiningar byggjast á staðreyndagrunni sem inniheldur heimildir í 13 efnisflokkum:
+Að auki eru skoðaðar umræður á Alþingi frá 1991 til dagsins í dag og panelþættir eins og Silfrið, Víkulokin og Spursmál.
+
+### 2. Útdráttur fullyrðinga
+
+Claude les hverja grein og dregur kerfisbundið út fullyrðingar sem hægt er að meta á móti gögnum — staðhæfingar um lög, tölur, fordæmi eða afstöðu. Hver fullyrðing er skráð með upprunalegu tilvitnun, efnisflokki og nafni ræðumanns þar sem við á.
+
+Fullyrðingar eru bornar saman við fullyrðingabanka — safn áður metinna fullyrðinga. Ef sama fullyrðingin hefur þegar verið metin er fyrra mat endurnýtt, sem tryggir samræmi og sparar vinnu.
+
+### 3. Staðreyndagrunnur
+
+Greiningar byggjast á staðreyndagrunni með yfir 350 heimildum í 13 efnisflokkum:
 
 - **Lagaákvæði** — EES-samningurinn, ESB-sáttmálar, Lissabon-sáttmálinn, stjórnarskrárákvæði
 - **Efnahagsgögn** — Hagstofa Íslands, Eurostat, OECD, Seðlabanki Íslands
-- **Alþjóðleg fordæmi** — reynsla annarra ríkja af ESB-aðild, úrsögn (Brexit), og aðildarferlum
+- **Alþjóðleg fordæmi** — reynsla annarra ríkja af ESB-aðild, úrsögn (Brexit) og aðildarferlum
 - **Afstaða samtaka** — opinber afstaða stjórnmálaflokka og hagsmunaaðila
+- **Þingræður** — ræður á Alþingi um Evrópumál
 - **Fræðigreinar** — ritrýndar rannsóknir og sérfræðigreiningar
 
 Þegar heimildanúmer (t.d. FISH-DATA-001) birtist í greiningu er hægt að smella á það til að skoða upprunagögnin.
 
-### 3. Greining
+Kerfið notar merkingarleit (*semantic search*) til að finna viðeigandi heimildir fyrir hverja fullyrðingu sjálfkrafa, í stað þess að reiða sig á handvirka tengingu.
 
-Claude ber hverja fullyrðingu saman við viðeigandi heimildir í staðreyndagrunni. Greiningin tekur tillit til samhengis, orðalags, og hvort gögn styðji fullyrðinguna að fullu, að hluta, eða alls ekki.
+### 4. Mat
 
-### 4. Flokkun
+Claude ber hverja fullyrðingu saman við viðeigandi heimildir og metur hversu vel gögn styðja hana. Samhliða er greind umfjöllun greinarinnar í heild — hvað er sagt, hvað er sleppt, og hvort sjónarhorn hallar á aðra hlið.
 
 Fullyrðingum er skipt í fimm trúverðugleikaflokka:
 
@@ -42,28 +53,41 @@ Fullyrðingum er skipt í fimm trúverðugleikaflokka:
 - **Villandi** — fullyrðingin notar rétt gögn á villandi hátt eða sleppir mikilvægu samhengi
 - **Ósannanlegt** — ekki er hægt að sannreyna fullyrðinguna með tiltækum gögnum
 
-### 5. Yfirferð
 
-Brynjólfur Gauti Guðrúnar Jónsson, tölfræðingur, fer yfir greiningar og ber ábyrgð á endanlegum niðurstöðum. Aðferðafræðileg umgjörð verkefnisins er hönnuð til að tryggja samræmi og gagnsæi í mati.
+## Sjálfbatnandi kerfi
+
+Eitt af lykileinkennum ESB Vaktarinnar er að kerfið batnar sjálft með tímanum:
+
+- **Vaxandi staðreyndagrunnur** — eftir því sem fleiri heimildir bætast við getur kerfið metið fullyrðingar sem áður voru ósannanlegar. Reglulegar endurskoðanir finna þessar fullyrðingar og uppfæra mat þeirra.
+- **Fullyrðingabanki** — þegar fullyrðing hefur verið metin einu sinni er matið endurnýtt hvenær sem sama fullyrðingin birtist í nýrri grein eða umræðu. Þetta tryggir samræmi og gerir umfjöllun skilvirkari.
+- **Uppsöfnuð þekking** — ólíkt hefðbundinni staðreyndavakt sem metur greinar í einangrun, byggir ESB Vaktin upp þekkingarbanka þar sem hvert nýtt mat bætir við heildarmyndina.
 
 ## Jafnvægi
 
 Fullyrðingamatið gildir jafnt um ESB-jákvæðar og ESB-gagnrýnar fullyrðingar. Sami fimm stiga kvarðinn er notaður hvort sem fullyrðingin kemur frá stuðningsmönnum eða andstæðingum aðildar. Markmið ESB Vaktarinnar er ekki að taka afstöðu heldur að meta hvort fullyrðingar standist skoðun gagnvart áreiðanlegum heimildum.
 
+## Leiðréttingar og endurskoðun
+
+Öll mat eru endurskoðanleg. Ef ný gögn koma fram sem breyta forsendum mats er fullyrðingin endurmetin og niðurstaðan uppfærð. Kerfið leitar reglulega að fullyrðingum sem áður voru flokkaðar sem ósannanlegar en gætu nú verið metanlegar vegna nýrra heimilda. Allar breytingar á mati eru raktar í gagnagrunni.
+
+Ef þú telur að mat sé rangt eða heimildir vanti, sendu athugasemd á [greining@esbvaktin.is](mailto:greining@esbvaktin.is).
+
 ## Gagnsæi
 
 Allar forsendur og heimildir eru birtar með hverri greiningu. Hægt er að rekja hverja niðurstöðu til ákveðinna heimilda í staðreyndagrunni. Aðferðafræðin er opin til skoðunar og gagnrýni.
 
-## Hlutverk Claude
+## Hlutverk gervigreindar
 
-Claude er notað sem verkfæri í þrennu tilliti:
+ESB Vaktin notar Claude (Anthropic) sem kjarna greiningarkerfisins. Mismunandi útgáfur af Claude sjá um mismunandi verkefni:
 
-1. **Söfnun** — Claude les greinar og dregur út fullyrðingar sem hægt er að meta
-2. **Greining** — Claude ber fullyrðingar saman við staðreyndagrunn og metur samræmi
-3. **Textavinnsla** — Claude skrifar drög að greiningum á íslensku
+- **Fréttaskönnun** — Claude greinir sjálfkrafa hvaða greinar varða ESB-umræðuna
+- **Útdráttur fullyrðinga** — Claude les greinar og dregur kerfisbundið út matshæfar fullyrðingar
+- **Greining og mat** — Claude ber fullyrðingar saman við heimildir og metur samræmi
+- **Vanefnisgreining** — Claude greinir hvað greinar sleppa og hvort sjónarhorn hallar á aðra hlið
+- **Textavinnsla** — Claude skrifar allar greiningar, samantektir og vikuyfirlit á íslensku
 
-Claude tekur ekki endanlegar ákvarðanir um flokkun fullyrðinga. Það er hlutverk ritstjóra.
+Brynjólfur Gauti starfar sem ritstjóri og verkefnastjóri: hann hannar aðferðafræðina, sér um heimildagrunn, ákveður hvaða efni er greint og fer yfir niðurstöður. Claude framkvæmir greiningarnar innan þess ramma.
 
 ## Tæknilegar upplýsingar
 
-Vefsíðan er kyrrstæð (*static site*) sem er byggð með [Eleventy](https://www.11ty.dev/). Gagnasöfn síðunnar eru birt sem kyrrstæð JSON-gögn sem eru sótt og síuð í vafranum. Parquet/DuckDB-WASM er hugsanleg framtíðarleið ef gagnamagnið kallar á það, en er ekki notað í núverandi útgáfu.
+Vefsíðan er kyrrstæð (*static site*) sem er byggð með [Eleventy](https://www.11ty.dev/). Gagnasöfn síðunnar eru birt sem kyrrstæð JSON-gögn sem eru sótt og síuð í vafranum. Greiningarkerfið notar PostgreSQL gagnagrunn með merkingarleitarvísitölu (*semantic search*) til að tengja fullyrðingar við heimildir.

@@ -7,17 +7,19 @@
   "party": null,
   "stance": "neutral",
   "stance_score": 0.0,
-  "credibility": 0.78,
+  "credibility": 0.68,
   "attribution_counts": {
+    "asserted": 3,
     "quoted": 6,
     "paraphrased": 3,
-    "mentioned": 79
+    "mentioned": 83
   },
   "althingi_stats": null,
   "scorecard": {
     "supported": 7,
-    "misleading": 1,
-    "unverifiable": 1
+    "misleading": 2,
+    "unverifiable": 2,
+    "partially_supported": 1
   },
   "claims": [
     {
@@ -102,7 +104,7 @@
     },
     {
       "claim_text": "ESB hefur tekist að rétta úr kútnum eftir útgöngu Bretlands.",
-      "verdict": "partially_supported",
+      "verdict": "supported",
       "category": "precedents",
       "attribution": "mentioned",
       "article_slug": "engin-fordaemi-fyrir-leid-islands-i-att-ad-esb",
@@ -112,7 +114,7 @@
     },
     {
       "claim_text": "Eftir Brexit þéttu ESB-ríkin sem eftir urðu sínar raðir í stað þess að fleiri ríki segðu sig úr.",
-      "verdict": "partially_supported",
+      "verdict": "supported",
       "category": "precedents",
       "attribution": "mentioned",
       "article_slug": "engin-fordaemi-fyrir-leid-islands-i-att-ad-esb",
@@ -152,7 +154,7 @@
     },
     {
       "claim_text": "Tollamál heyra undir 3. grein stofnsáttmála Evrópusambandsins um starfsemi þess.",
-      "verdict": "partially_supported",
+      "verdict": "supported",
       "category": "eea_eu_law",
       "attribution": "mentioned",
       "article_slug": "raeda-tharf-alla-kaflana-a-nyjan-leik",
@@ -272,7 +274,7 @@
     },
     {
       "claim_text": "Umbreyting landbúnaðarlands í Danmörku nýtur stuðnings frá Evrópusambandinu í gegnum sameiginlega landbúnaðarstefnu sambandsins (CAP).",
-      "verdict": "partially_supported",
+      "verdict": "supported",
       "category": "agriculture",
       "attribution": "mentioned",
       "article_slug": "390-000-hektarar-af-landbunadarlandi-breytast-i-skog-og-votlendi",
@@ -552,7 +554,7 @@
     },
     {
       "claim_text": "Fullyrðingin um að með ESB-aðild muni hingað koma erlend skip með erlendri áhöfn sem veiði allan fiskinn standist ekki skoðun á regluverki ESB.",
-      "verdict": "partially_supported",
+      "verdict": "supported",
       "category": "fisheries",
       "attribution": "mentioned",
       "article_slug": "bjorn-hrekur-fullyrdingu-um-afdrif-sjavaraudlinda-islendinga-i-esb",
@@ -562,7 +564,7 @@
     },
     {
       "claim_text": "Breytingar á veiðistjórnarkerfið á Íslandi, eins og að allur afli fari á markað og rekjanleiki afla frá sjó til búðar, rúmast innan regluverks ESB.",
-      "verdict": "partially_supported",
+      "verdict": "supported",
       "category": "fisheries",
       "attribution": "mentioned",
       "article_slug": "bjorn-hrekur-fullyrdingu-um-afdrif-sjavaraudlinda-islendinga-i-esb",
@@ -732,7 +734,7 @@
     },
     {
       "claim_text": "Breytingar á veiðistjórnunarkerfi Íslands sem höfundur óskar eftir rúmast innan regluverks ESB og skylda meira að segja góðan hluta þeirra.",
-      "verdict": "partially_supported",
+      "verdict": "supported",
       "category": "fisheries",
       "attribution": "mentioned",
       "article_slug": "sjavaraudlindin-i-esb",
@@ -899,6 +901,76 @@
       "article_title": "Notum þau verkfæri sem nýtast okkur best",
       "article_source": "Vísir",
       "article_date": "2026-03-11"
+    },
+    {
+      "claim_text": "Breska dagblaðið Daily Telegraph greindi frá því að innan ESB sæju menn tækifæri til að nota inngöngu Íslands sem «skraut» til að fá aðildarríkin til að fallast á aðild fátækari og umdeildari ríkja í eins konar «pakkadíl».",
+      "verdict": "partially_supported",
+      "category": "precedents",
+      "attribution": "mentioned",
+      "article_slug": "blekkingaleikurinn-mikli",
+      "article_title": "Blekkingaleikurinn mikli",
+      "article_source": "Miðflokkurinn",
+      "article_date": "2026-03-12"
+    },
+    {
+      "claim_text": "Evrópusambandið hefur staðfest að Ísland sé ekki umsóknarríki, m.a. á fundum árið 2015.",
+      "verdict": "misleading",
+      "category": "eea_eu_law",
+      "attribution": "asserted",
+      "article_slug": "blekkingaleikurinn-mikli",
+      "article_title": "Blekkingaleikurinn mikli",
+      "article_source": "Miðflokkurinn",
+      "article_date": "2026-03-12"
+    },
+    {
+      "claim_text": "Á vefsíðum ESB er Ísland hvergi að finna á lista yfir umsóknarríki.",
+      "verdict": "unverifiable",
+      "category": "eea_eu_law",
+      "attribution": "mentioned",
+      "article_slug": "blekkingaleikurinn-mikli",
+      "article_title": "Blekkingaleikurinn mikli",
+      "article_source": "Miðflokkurinn",
+      "article_date": "2026-03-12"
+    },
+    {
+      "claim_text": "Evrópusambandið gerði á sínum tíma athugasemdir við að íslenska stjórnsýslubáknið væri ekki nærri nógu stórt til að ráða við inngöngu.",
+      "verdict": "partially_supported",
+      "category": "eea_eu_law",
+      "attribution": "asserted",
+      "article_slug": "blekkingaleikurinn-mikli",
+      "article_title": "Blekkingaleikurinn mikli",
+      "article_source": "Miðflokkurinn",
+      "article_date": "2026-03-12"
+    },
+    {
+      "claim_text": "Evrópusambandið hefur áform um að reka áróður í tengslum við hugsanlega þjóðaratkvæðagreiðslu á Íslandi.",
+      "verdict": "unverifiable",
+      "category": "sovereignty",
+      "attribution": "asserted",
+      "article_slug": "blekkingaleikurinn-mikli",
+      "article_title": "Blekkingaleikurinn mikli",
+      "article_source": "Miðflokkurinn",
+      "article_date": "2026-03-12"
+    },
+    {
+      "claim_text": "Evrópusambandið hefur tekið frumkvæði í vörnum gegn fjölþáttaógnum að beiðni NATO.",
+      "verdict": "partially_supported",
+      "category": "sovereignty",
+      "attribution": "mentioned",
+      "article_slug": "hvad-felst-i-liggja-lagt-leidinni",
+      "article_title": "Hvað felst í liggja lágt leiðinni?",
+      "article_source": "DV",
+      "article_date": "2026-03-12"
+    },
+    {
+      "claim_text": "ESB er stærsti frjáls markaður í heimi.",
+      "verdict": "partially_supported",
+      "category": "trade",
+      "attribution": "mentioned",
+      "article_slug": "hvad-felst-i-liggja-lagt-leidinni",
+      "article_title": "Hvað felst í liggja lágt leiðinni?",
+      "article_source": "DV",
+      "article_date": "2026-03-12"
     }
   ],
   "articles": [
@@ -1113,6 +1185,27 @@
       "attribution_types": [
         "mentioned",
         "paraphrased"
+      ]
+    },
+    {
+      "slug": "blekkingaleikurinn-mikli",
+      "title": "Blekkingaleikurinn mikli",
+      "source": "Miðflokkurinn",
+      "date": "2026-03-12",
+      "claim_count": 5,
+      "attribution_types": [
+        "asserted",
+        "mentioned"
+      ]
+    },
+    {
+      "slug": "hvad-felst-i-liggja-lagt-leidinni",
+      "title": "Hvað felst í liggja lágt leiðinni?",
+      "source": "DV",
+      "date": "2026-03-12",
+      "claim_count": 2,
+      "attribution_types": [
+        "mentioned"
       ]
     }
   ]
