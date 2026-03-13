@@ -1,0 +1,103 @@
+---
+layout: base.njk
+title: Fjölmiðlar
+description: Berðu saman umfjöllun íslensku fjölmiðlanna um ESB-aðild — greinafjöldi, fullyrðingar, nákvæmni og efnisval.
+extra_css: /assets/css/comparison.css
+return_link_support: true
+---
+
+{% set verdictOrder = ["supported", "partially_supported", "unverifiable", "unsupported", "misleading"] %}
+
+<div class="cmp-page">
+  <a href="/raddirnar/" class="ed-back" data-return-link data-return-fallback="/raddirnar/" data-return-label="← Til baka">&larr; Til baka á Raddirnar</a>
+
+  <header class="cmp-header">
+    <h1>Fjölmiðlar</h1>
+    <p>Samanburður á umfjöllun íslensku fjölmiðlanna í ESB-umræðunni — greinafjöldi, fullyrðingar, nákvæmni og málefnaval.</p>
+  </header>
+
+  <div class="cmp-grid">
+    {% for o in comparison.outlets %}
+    {% set os = o.outlet_stats or {} %}
+    {% set osc = o.outlet_scorecard or {} %}
+
+    {# Verdict totals #}
+    {% set oscTotal = 0 %}
+    {% for v in verdictOrder %}
+      {% set oscTotal = oscTotal + (osc[v] or 0) %}
+    {% endfor %}
+
+    <a href="/raddirnar/{{ o.slug }}/" class="cmp-card cmp-card--media">
+      <div class="cmp-card-header">
+        <h2 class="cmp-card-name">{{ o.name }}</h2>
+        <span class="et-type-badge et-type-institution">Fjölmiðill</span>
+      </div>
+
+      {# Stats #}
+      <div class="cmp-stats">
+        <div class="cmp-stat">
+          <span class="cmp-stat-num">{{ os.article_count or 0 }}</span>
+          <span class="cmp-stat-label">greinar</span>
+        </div>
+        <div class="cmp-stat">
+          <span class="cmp-stat-num">{{ os.total_claims or 0 }}</span>
+          <span class="cmp-stat-label">fullyrðingar</span>
+        </div>
+        <div class="cmp-stat">
+          <span class="cmp-stat-num">{{ os.unique_speakers or 0 }}</span>
+          <span class="cmp-stat-label">ræðumenn</span>
+        </div>
+      </div>
+
+      {# Verdict bar #}
+      {% if oscTotal > 0 %}
+      <div class="report-verdict-bar cmp-verdict-bar" role="img" aria-label="Dreifing niðurstaðna">
+        {% for v in verdictOrder %}
+          {% set count = osc[v] %}
+          {% if count %}
+            {% set pct = (count / oscTotal * 100) | round(1) %}
+            <span class="report-bar-seg verdict-{{ v | replace("partially_supported", "partial") }}"
+                  style="width:{{ pct }}%"
+                  title="{{ v | verdictLabel }}: {{ count }}">
+              {%- if pct >= 15 %}{{ count }}{% endif -%}
+            </span>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class="verdict-summary">
+        {% for v in verdictOrder %}
+          {% if osc[v] %}
+          <span class="ct-verdict-pill verdict-{{ v | replace("partially_supported", "partial") }}">
+            {{ v | verdictLabel }}: {{ osc[v] }}
+          </span>
+          {% endif %}
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      {# Topic chips #}
+      {% if os.topic_distribution %}
+      <div class="cmp-topics">
+        {% for topic, count in os.topic_distribution | dictsort(false, 'value') | reverse %}
+          {% if loop.index <= 6 %}
+          <span class="ct-category-tag">{{ topic | categoryLabel }} <small>({{ count }})</small></span>
+          {% endif %}
+        {% endfor %}
+        {% if os.topic_distribution | length > 6 %}
+        <span class="cmp-topics-more">+{{ os.topic_distribution | length - 6 }}</span>
+        {% endif %}
+      </div>
+      {% endif %}
+
+      {# Date range #}
+      {% if os.date_range and os.date_range.first %}
+      <div class="cmp-date-range">
+        {{ os.date_range.first | isDate }} – {{ os.date_range.last | isDate }}
+      </div>
+      {% endif %}
+    </a>
+    {% endfor %}
+  </div>
+
+  <p class="cmp-note"><em>Tölur endurspegla greinar sem hafa verið greindar og staðreyndakannaðar — safnið stækkar jafnt og þétt.</em></p>
+</div>

@@ -1,0 +1,120 @@
+---
+layout: base.njk
+title: Stjórnmálaflokkar
+description: Berðu saman afstöðu, trúverðugleika og fullyrðingar íslensku stjórnmálaflokkanna í ESB-umræðunni.
+extra_css: /assets/css/comparison.css
+return_link_support: true
+---
+
+{% set verdictOrder = ["supported", "partially_supported", "unverifiable", "unsupported", "misleading"] %}
+
+<div class="cmp-page">
+  <a href="/raddirnar/" class="ed-back" data-return-link data-return-fallback="/raddirnar/" data-return-label="← Til baka">&larr; Til baka á Raddirnar</a>
+
+  <header class="cmp-header">
+    <h1>Stjórnmálaflokkar</h1>
+    <p>Samanburður á afstöðu, trúverðugleika og fullyrðingum íslensku flokkanna í ESB-umræðunni.</p>
+  </header>
+
+  <div class="cmp-grid">
+    {% for p in comparison.parties %}
+    {# ── Stance CSS vars ── #}
+    {% set score = p.stance_score or 0 %}
+    {% if score >= 0 %}
+      {% set stanceHue = 60 + score * 150 %}
+    {% else %}
+      {% set stanceHue = 60 + score * 60 %}
+    {% endif %}
+    {% set stanceSat = 10 + (score if score >= 0 else -score) * 60 %}
+    {% set dotLeft = ((score + 1) / 2 * 100) %}
+
+    {# ── Stance label ── #}
+    {% if score >= 0.5 %}
+      {% set stanceLabel = "ESB-jákvæð" %}
+    {% elif score <= -0.5 %}
+      {% set stanceLabel = "ESB-gagnrýnin" %}
+    {% elif score > -0.1 and score < 0.1 %}
+      {% set stanceLabel = "Hlutlaus" %}
+    {% else %}
+      {% set stanceLabel = "Blandað" %}
+    {% endif %}
+
+    {# ── Aggregate from party_members ── #}
+    {% set memberCount = p.party_members | length if p.party_members else 0 %}
+    {% set totalClaims = 0 %}
+    {% set credSum = 0 %}
+    {% set credCount = 0 %}
+    {% for m in p.party_members %}
+      {% set totalClaims = totalClaims + (m.claim_count or 0) %}
+      {% if m.credibility is number %}
+        {% set credSum = credSum + m.credibility %}
+        {% set credCount = credCount + 1 %}
+      {% endif %}
+    {% endfor %}
+    {% set avgCred = ((credSum / credCount * 100) | round) if credCount > 0 else null %}
+
+    {# ── Aggregate verdicts (party + all members) ── #}
+    {% set sc = p.aggregate_scorecard or p.scorecard or {} %}
+    {% set scTotal = 0 %}
+    {% for v in verdictOrder %}
+      {% set scTotal = scTotal + (sc[v] or 0) %}
+    {% endfor %}
+
+    <a href="/raddirnar/{{ p.slug }}/" class="cmp-card" style="--stance-hue: {{ stanceHue }}; --stance-sat: {{ stanceSat }}%">
+      <div class="cmp-card-header">
+        <h2 class="cmp-card-name">{{ p.name }}</h2>
+        <span class="et-type-badge et-type-party">Flokkur</span>
+      </div>
+
+      {# Stance track #}
+      <div class="cmp-stance">
+        <div class="et-stance-track">
+          <div class="et-stance-dot" style="left: {{ dotLeft }}%"></div>
+        </div>
+        <span class="cmp-stance-label">{{ stanceLabel }}</span>
+      </div>
+
+      {# Stats #}
+      <div class="cmp-stats">
+        {% if memberCount > 0 %}
+        <div class="cmp-stat">
+          <span class="cmp-stat-num">{{ memberCount }}</span>
+          <span class="cmp-stat-label">{{ "einstaklingur" if memberCount == 1 else "einstaklingar" }}</span>
+        </div>
+        {% endif %}
+        {% if totalClaims > 0 %}
+        <div class="cmp-stat">
+          <span class="cmp-stat-num">{{ totalClaims }}</span>
+          <span class="cmp-stat-label">fullyrðingar</span>
+        </div>
+        {% endif %}
+        {% if avgCred is not null %}
+        <div class="cmp-stat">
+          <span class="cmp-stat-num">{{ avgCred }}%</span>
+          <span class="cmp-stat-label">trúverðugleiki</span>
+        </div>
+        {% endif %}
+      </div>
+
+      {# Verdict bar #}
+      {% if scTotal > 0 %}
+      <div class="report-verdict-bar cmp-verdict-bar" role="img" aria-label="Dreifing niðurstaðna">
+        {% for v in verdictOrder %}
+          {% set count = sc[v] %}
+          {% if count %}
+            {% set pct = (count / scTotal * 100) | round(1) %}
+            <span class="report-bar-seg verdict-{{ v | replace("partially_supported", "partial") }}"
+                  style="width:{{ pct }}%"
+                  title="{{ v | verdictLabel }}: {{ count }}">
+              {%- if pct >= 15 %}{{ count }}{% endif -%}
+            </span>
+          {% endif %}
+        {% endfor %}
+      </div>
+      {% endif %}
+    </a>
+    {% endfor %}
+  </div>
+
+  <p class="cmp-note"><em>Tölur endurspegla fullyrðingar sem hafa verið greindar og staðreyndakannaðar — safnið stækkar jafnt og þétt.</em></p>
+</div>

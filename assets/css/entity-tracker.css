@@ -357,8 +357,55 @@
   }
 }
 
+/* ── Category gateway cards (links to /raddirnar/flokkar/ etc.) ──── */
+
+.cmp-gateways {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.cmp-gateway {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow var(--transition), border-color var(--transition);
+}
+
+.cmp-gateway:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  border-color: var(--accent);
+}
+
+.cmp-gateway-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.cmp-gateway-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.cmp-gateway-arrow {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-top: 0.25rem;
+}
+
 /* ── Responsive ──────────────────────────────────────────────────── */
 
 @media (max-width: 600px) {
   .et-stance-label { display: none; }
+  .cmp-gateways { grid-template-columns: 1fr; }
 }
