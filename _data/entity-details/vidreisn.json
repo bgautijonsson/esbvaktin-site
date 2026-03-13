@@ -10,7 +10,7 @@
   "credibility": 0.5,
   "attribution_counts": {
     "paraphrased": 2,
-    "mentioned": 8
+    "mentioned": 9
   },
   "althingi_stats": null,
   "scorecard": {
@@ -373,6 +373,37 @@
       "article_title": "Ísland á heima í ESB",
       "article_source": null,
       "article_date": "2024-04-23"
+    },
+    {
+      "claim_text": "Viðreisn er eini flokkurinn á Alþingi sem vill að Ísland gangi í ESB og taki upp evru.",
+      "original_quote": "Viðreisn er eini flokkurinn á Alþingi sem vill að Ísland gangi í ESB og taki upp evru.",
+      "verdict": "unsupported",
+      "explanation": "<a href=\"https://www.althingi.is/thingmenn/thingflokkar/thingflokkar/\" title=\"Althingi — Party platforms and election results\" target=\"_blank\" rel=\"noopener\">POL-DATA-001</a> staðfestir skýrt að bæði Samfylkingin og Viðreisn styðja formlega ESB-aðild. <a href=\"https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/\" title=\"Althingi — Government composition, session 157\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-002</a> og <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Coalition agreement (stjórnarsáttmáli) 2024; party platforms; media reporting March 2026\" target=\"_blank\" rel=\"noopener\">POL-DATA-021</a> staðfesta að ríkisstjórnin samanstendur af tveimur ESB-jákvæðum flokkum. Viðreisn er því ekki eini flokkurinn — Samfylkingin hefur stutt ESB-aðild síðan 2007 og leiddi umsóknarferlið 2009.",
+      "missing_context": null,
+      "supporting_evidence": [],
+      "contradicting_evidence": [
+        {
+          "id": "POL-DATA-001",
+          "source_name": "Althingi — Party platforms and election results",
+          "source_url": "https://www.althingi.is/thingmenn/thingflokkar/thingflokkar/"
+        },
+        {
+          "id": "POLITICAL-DATA-002",
+          "source_name": "Althingi — Government composition, session 157",
+          "source_url": "https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/"
+        },
+        {
+          "id": "POL-DATA-021",
+          "source_name": "Coalition agreement (stjórnarsáttmáli) 2024; party platforms; media reporting March 2026",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+        }
+      ],
+      "category": "party_positions",
+      "attribution": "mentioned",
+      "article_slug": "ekki-nefna-vextina",
+      "article_title": "Ekki nefna vextina!",
+      "article_source": null,
+      "article_date": "2024-08-11"
     }
   ],
   "articles": [
@@ -445,10 +476,28 @@
       "attribution_types": [
         "mentioned"
       ]
+    },
+    {
+      "slug": "ekki-nefna-vextina",
+      "title": "Ekki nefna vextina!",
+      "source": null,
+      "date": "2024-08-11",
+      "claim_count": 1,
+      "attribution_types": [
+        "mentioned"
+      ]
     }
   ],
   "icelandic": true,
   "party_members": [
+    {
+      "slug": "thomas-moller",
+      "name": "Thomas Möller",
+      "role": "pistlahöfundur",
+      "stance_score": 1.0,
+      "credibility": 0.49,
+      "claim_count": 63
+    },
     {
       "slug": "thorgerdur-katrin-gunnarsdottir",
       "name": "Þorgerður Katrín Gunnarsdóttir",
@@ -456,14 +505,6 @@
       "stance_score": 0.67,
       "credibility": 0.62,
       "claim_count": 61
-    },
-    {
-      "slug": "thomas-moller",
-      "name": "Thomas Möller",
-      "role": "pistlahöfundur",
-      "stance_score": 1.0,
-      "credibility": 0.59,
-      "claim_count": 40
     },
     {
       "slug": "pawel-bartoszek",
