@@ -72,6 +72,7 @@
     entityTypeFilterLabels: {
       party: "Stjórnmálaflokkar",
       politician: "Stjórnmálafólk",
+      media: "Fjölmiðlar",
       institution: "Samtök og stofnanir",
       individual: "Einstaklingar",
     },

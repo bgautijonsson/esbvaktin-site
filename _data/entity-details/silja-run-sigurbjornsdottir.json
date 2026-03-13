@@ -21,7 +21,33 @@
   "claims": [
     {
       "claim_text": "Losun alþjóðaflugs á gróðurhúsalofttegundum innan ESB fellur undir ETS-viðskiptakerfið.",
+      "original_quote": "Losun alþjóðaflugs á gróðurhúsalofttegundum innan Evrópusambandsins fellur undir ETS-viðskiptakerfið",
       "verdict": "supported",
+      "explanation": "Nýja heimildin <a href=\"https://climate.ec.europa.eu/eu-action/transport/reducing-emissions-aviation_en\" title=\"European Commission — Reducing emissions from aviation; Directive 2008/101/EC; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-002</a> staðfestir skýrt að losun alþjóðaflugs innan EES fellur undir ETS-kerfið. Flugstarfsemi var tekin inn í ESB-ETS með tilskipun 2008/101/EB og nær til allra fluga innan EES-svæðisins. Eftir endurskoðun 2023 (tilskipun 2023/958) gildir kerfið áfram um öll flug innan EES. Ísland tekur þátt í þessu kerfi í gegnum EES-samninginn (<a href=\"https://eur-lex.europa.eu/eli/dec/2007/146(2)/oj/eng\" title=\"EEA Joint Committee Decision No 146/2007; EUR-Lex; EFTA Court\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-001</a>). Fullyrðingin er staðreynd samkvæmt heimildum.",
+      "missing_context": "Gildissviðið nær aðeins til fluga innan EES, ekki til fluga til eða frá þriðju ríkjum (þó endurskoðun sé fyrirhugað 2026). CORSIA-kerfið gildir um alþjóðaflug utan ETS-gildissviðsins. Ókeypis losunarheimildir til flugfélaga eru að falla niður og verða útrýmdar frá 2026 (með séríslenskri undanþágu).",
+      "supporting_evidence": [
+        {
+          "id": "ETS-LEGAL-002",
+          "source_name": "European Commission — Reducing emissions from aviation; Directive 2008/101/EC; Directive (EU) 2023/958",
+          "source_url": "https://climate.ec.europa.eu/eu-action/transport/reducing-emissions-aviation_en"
+        },
+        {
+          "id": "ETS-LEGAL-001",
+          "source_name": "EEA Joint Committee Decision No 146/2007; EUR-Lex; EFTA Court",
+          "source_url": "https://eur-lex.europa.eu/eli/dec/2007/146(2)/oj/eng"
+        },
+        {
+          "id": "ETS-DATA-001",
+          "source_name": "European Commission — Allocation to the aviation sector; Directive (EU) 2023/958",
+          "source_url": "https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/allocation-aviation-sector_en"
+        },
+        {
+          "id": "ETS-DATA-002",
+          "source_name": "Iceland Review; Carbon Pulse; European Commission",
+          "source_url": "https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/"
+        }
+      ],
+      "contradicting_evidence": [],
       "category": "eea_eu_law",
       "attribution": "asserted",
       "article_slug": "vid-hefdum-nad-meiri-arangri-med-thvi-ad-vera-innan-evropusambandsins",
@@ -31,7 +57,23 @@
     },
     {
       "claim_text": "Ísland á aðild að ETS-viðskiptakerfinu í gegnum EES-samninginn.",
+      "original_quote": "Ísland á aðild að í gegnum EES-kerfið",
       "verdict": "unsupported",
+      "explanation": "Þetta er rangt samkvæmt heimildum. <a href=\"https://ust.is/loft/losunarvottord/\" title=\"Umhverfisstofnun — Iceland's participation in EU ETS; European Commission — EU ETS data\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-002</a> segir skýrt að Ísland taki þátt í ETS-kerfinu í gegnum tvíhliða samning við ESB, ekki í gegnum EES-samninginn. <a href=\"https://www.efta.int/eea/eea-agreement/annex-iv\" title=\"EFTA Secretariat — EEA Agreement Annex IV (Energy); Althingi EU Assessment Committee\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-001</a> staðfestir þetta enn frekar og segir að Ísland hafi ekki tekið ETS-kerfið upp í EES-samninginn, heldur viðhaldi sérstöku fyrirkomulagi.",
+      "missing_context": "Munurinn skiptir lagalegu máli: EES-samningurinn felur í sér ákveðinn rétt til aðlögunar og tveggja stoða eftirlit (ESA), á meðan tvíhliða samningurinn hefur önnur samningsskilyrði.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [
+        {
+          "id": "ENERGY-LEGAL-002",
+          "source_name": "Umhverfisstofnun — Iceland's participation in EU ETS; European Commission — EU ETS data",
+          "source_url": "https://ust.is/loft/losunarvottord/"
+        },
+        {
+          "id": "ENERGY-LEGAL-001",
+          "source_name": "EFTA Secretariat — EEA Agreement Annex IV (Energy); Althingi EU Assessment Committee",
+          "source_url": "https://www.efta.int/eea/eea-agreement/annex-iv"
+        }
+      ],
       "category": "eea_eu_law",
       "attribution": "asserted",
       "article_slug": "vid-hefdum-nad-meiri-arangri-med-thvi-ad-vera-innan-evropusambandsins",
@@ -41,7 +83,33 @@
     },
     {
       "claim_text": "Ísland hefur sérstaka undanþágu frá losunarheimildum í ETS-kerfinu sem rennur út í lok árs.",
+      "original_quote": "Séríslensk undanþága frá sérstökum losunarheimildum rennur út í loks árs",
       "verdict": "supported",
+      "explanation": "Heimildir staðfesta að Ísland samdi um sérstaka undanþágu frá niðurfellingu ókeypis losunarheimilda í flugi innan ETS-kerfisins. Samkvæmt <a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a> náðu Ísland og Framkvæmdastjórnin bráðabirgðasamkomulagi í maí 2023 um að íslensk flugfélög héldu ókeypis heimildum til og með 2026, eitt ár lengur en almennt gildir. Nýjar heimildir <a href=\"https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/scope-eu-ets_en\" title=\"European Commission — Scope of the EU ETS; International Carbon Action Partnership (ICAP); Green by Iceland\" target=\"_blank\" rel=\"noopener\">ETS-DATA-003</a> og <a href=\"https://climate.ec.europa.eu/eu-action/transport/reducing-emissions-aviation_en\" title=\"European Commission — Reducing emissions from aviation; Directive 2008/101/EC; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-002</a> staðfesta almenna niðurfellingaráætlunina og sértæka stöðu Íslands. Undanþágan rennur út í lok árs 2026, sem samræmist fullyrðingunni.",
+      "missing_context": "Samkomulagið í maí 2023 var «bráðabirgða» og háð formlegu samþykki. Greinarmunur er á undanþágu frá ókeypis heimildum (til 2026) og landfræðilegu umfangi ETS í flugi (innanlands EES til 2027) — þetta er oft ruglað saman í umræðunni. Nýrri samningaviðræður kunna að hafa breytt skilmálum.",
+      "supporting_evidence": [
+        {
+          "id": "ETS-DATA-002",
+          "source_name": "Iceland Review; Carbon Pulse; European Commission",
+          "source_url": "https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/"
+        },
+        {
+          "id": "ETS-DATA-001",
+          "source_name": "European Commission — Allocation to the aviation sector; Directive (EU) 2023/958",
+          "source_url": "https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/allocation-aviation-sector_en"
+        },
+        {
+          "id": "ETS-DATA-003",
+          "source_name": "European Commission — Scope of the EU ETS; International Carbon Action Partnership (ICAP); Green by Iceland",
+          "source_url": "https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/scope-eu-ets_en"
+        },
+        {
+          "id": "ETS-LEGAL-002",
+          "source_name": "European Commission — Reducing emissions from aviation; Directive 2008/101/EC; Directive (EU) 2023/958",
+          "source_url": "https://climate.ec.europa.eu/eu-action/transport/reducing-emissions-aviation_en"
+        }
+      ],
+      "contradicting_evidence": [],
       "category": "eea_eu_law",
       "attribution": "asserted",
       "article_slug": "vid-hefdum-nad-meiri-arangri-med-thvi-ad-vera-innan-evropusambandsins",
@@ -51,7 +119,23 @@
     },
     {
       "claim_text": "Undanþágan felur í sér leyfi til að niðurgreiða losun flugfélaga með því að gefa þeim losunarheimildir.",
+      "original_quote": "í henni felst leyfi til að niðurgreiða losun flugfélaga með því að gefa þeim losunarheimildir",
       "verdict": "supported",
+      "explanation": "<a href=\"https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/allocation-aviation-sector_en\" title=\"European Commission — Allocation to the aviation sector; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-DATA-001</a> og <a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a> staðfesta að ókeypis losunarheimildir til flugfélaga eru hluti af ETS-kerfinu og að Ísland samdi um framlengingu á þessari fyrirgreiðslu til og með 2026. Ókeypis úthlutun losunarheimilda þýðir í raun að flugfélög þurfa ekki að kaupa heimildir á markaði — sem dregur úr kostnaði þeirra vegna losunar. <a href=\"https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/allocation-aviation-sector_en\" title=\"European Commission — Allocation to the aviation sector; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-DATA-001</a> staðfestir að þótt orðið \"niðurgreiðsla\" sé ekki tæknilega nákvæmt í ríkisaðstoðarskilningi, endurspeglar það efnahagslegan veruleika þess að flugfélög fá verulegan óbeinan ávinning.",
+      "missing_context": "Framkvæmdastjórnin telur ókeypis úthlutun vera tímabundna ráðstöfun gegn kolefnisleka, ekki ríkisaðstoð í lagalegum skilningi. Flugfélög halda því fram að úthlutuninni sé ætlað að vega upp samkeppnisröskun gagnvart flugfélögum utan ETS-svæðisins. Nákvæm gildistími og umfang íslensku undanþágunnar gæti hafa breyst eftir maí 2023.",
+      "supporting_evidence": [
+        {
+          "id": "ETS-DATA-002",
+          "source_name": "Iceland Review; Carbon Pulse; European Commission",
+          "source_url": "https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/"
+        },
+        {
+          "id": "ETS-DATA-001",
+          "source_name": "European Commission — Allocation to the aviation sector; Directive (EU) 2023/958",
+          "source_url": "https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/allocation-aviation-sector_en"
+        }
+      ],
+      "contradicting_evidence": [],
       "category": "eea_eu_law",
       "attribution": "asserted",
       "article_slug": "vid-hefdum-nad-meiri-arangri-med-thvi-ad-vera-innan-evropusambandsins",
@@ -61,7 +145,28 @@
     },
     {
       "claim_text": "Til stendur að framlengja undanþágu Íslands frá ETS-kerfinu út árið 2027.",
+      "original_quote": "Til stendur að framlengja undanþáguna út árið 2027",
       "verdict": "misleading",
+      "explanation": "Fullyrðingin um framlengingu undanþágu til loka árs 2027 er villandi. Samkvæmt <a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a> náði Ísland samningi um framlengingu á ókeypis losunarheimildum til flugs til og með 2026, ekki 2027. Heimildin bendir sérstaklega á að fullyrðingar um framlengingu til 2027 rugli saman tveimur ólíkum hlutum: undanþágu Íslands frá greiðsluskyldu (til 2026) og víðtækari landfræðilegri takmörkun ETS-flugs á EES-flug sem var framlengd til ársbyrjunar 2027 samkvæmt <a href=\"https://climate.ec.europa.eu/eu-action/transport/reducing-emissions-aviation_en\" title=\"European Commission — Reducing emissions from aviation; Directive 2008/101/EC; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-002</a>.",
+      "missing_context": "Samningur frá maí 2023 var lýstur sem bráðabirgðasamningi og háður formlegri samþykkt. Hugsanlegt er að frekari samningaviðræður hafi átt sér stað eftir maí 2023 sem gætu hafa breytt skilmálum. Greinarmunurinn á undanþágu Íslands (til 2026) og landfræðilegri takmörkun á umfangi ETS-flugs (til ársbyrjunar 2027) er mikilvægur en oft ruglaður saman í opinberri umræðu.",
+      "supporting_evidence": [
+        {
+          "id": "ETS-DATA-002",
+          "source_name": "Iceland Review; Carbon Pulse; European Commission",
+          "source_url": "https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/"
+        },
+        {
+          "id": "ETS-DATA-001",
+          "source_name": "European Commission — Allocation to the aviation sector; Directive (EU) 2023/958",
+          "source_url": "https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/allocation-aviation-sector_en"
+        },
+        {
+          "id": "ETS-LEGAL-002",
+          "source_name": "European Commission — Reducing emissions from aviation; Directive 2008/101/EC; Directive (EU) 2023/958",
+          "source_url": "https://climate.ec.europa.eu/eu-action/transport/reducing-emissions-aviation_en"
+        }
+      ],
+      "contradicting_evidence": [],
       "category": "eea_eu_law",
       "attribution": "asserted",
       "article_slug": "vid-hefdum-nad-meiri-arangri-med-thvi-ad-vera-innan-evropusambandsins",
@@ -71,7 +176,28 @@
     },
     {
       "claim_text": "Formenn ríkisstjórnarflokkanna greindu frá því á föstudag 7. mars 2026 að til standi að halda þjóðaratkvæðagreiðslu um áframhaldandi aðildarviðræður við ESB.",
+      "original_quote": "Á föstudag greindu formenn ríkisstjórnarflokkanna frá því að til standi að halda þjóðaratkvæðagreiðslu um áframhaldandi aðildarviðræður við Evrópusambandið",
       "verdict": "supported",
+      "explanation": "<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland; Euronews; France24; coalition agreement\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-013</a> staðfestir að ríkisstjórnarsamsteypan (Samfylkingin, Viðreisn og Flokkur fólksins) hafi tilkynnt um þjóðaratkvæðagreiðslu um ESB-aðildarviðræður. <a href=\"https://www.visir.is/g/20262853438d/thridjungur-and-vigur-at-kvaeda-greidslunni\" title=\"Gallup Ísland / Vísir — EU referendum survey, March 2026\" target=\"_blank\" rel=\"noopener\">POLL-DATA-016</a> vísar til könnunar í mars 2026 um þjóðaratkvæðagreiðsluna, sem staðfestir enn frekar að tilkynningin hafi átt sér stað.",
+      "missing_context": null,
+      "supporting_evidence": [
+        {
+          "id": "PARTY-DATA-013",
+          "source_name": "Government of Iceland; Euronews; France24; coalition agreement",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+        },
+        {
+          "id": "POLL-DATA-016",
+          "source_name": "Gallup Ísland / Vísir — EU referendum survey, March 2026",
+          "source_url": "https://www.visir.is/g/20262853438d/thridjungur-and-vigur-at-kvaeda-greidslunni"
+        },
+        {
+          "id": "POLL-DATA-001",
+          "source_name": "Gallup Ísland — EU membership polling",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+        }
+      ],
+      "contradicting_evidence": [],
       "category": "party_positions",
       "attribution": "asserted",
       "article_slug": "vid-hefdum-nad-meiri-arangri-med-thvi-ad-vera-innan-evropusambandsins",
@@ -81,7 +207,28 @@
     },
     {
       "claim_text": "Karlar eru fremur andvígir atkvæðagreiðslunni en konur.",
+      "original_quote": "karlar fremur andvígir atkvæðagreiðslunni en konur",
       "verdict": "supported",
+      "explanation": "<a href=\"https://www.visir.is/g/20262853438d/thridjungur-and-vigur-at-kvaeda-greidslunni\" title=\"Gallup Ísland / Vísir — EU referendum survey, March 2026\" target=\"_blank\" rel=\"noopener\">POLL-DATA-015</a> sýnir skýran kynjamun: 39% karla eru andvígir áframhaldandi viðræðum samanborið við 22% kvenna. <a href=\"https://www.gallup.is/frettir/nyr-thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-008</a> og <a href=\"https://www.gallup.is/frettir/nyr-thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-018</a> staðfesta einnig að konur eru hlynntari viðræðum en karlar. Þessi kynjamunur er í samræmi við sögulegt mynstur í ESB-könnunum á Íslandi.",
+      "missing_context": "Kynjamunurinn (10-15 prósentustig) er í samræmi við norrænt mynstur þar sem karlar leggja meiri áherslu á sjávarútveg og fullveldi en konur á efnahagslegan stöðugleika og félagsstefnu.",
+      "supporting_evidence": [
+        {
+          "id": "POLL-DATA-015",
+          "source_name": "Gallup Ísland / Vísir — EU referendum survey, March 2026",
+          "source_url": "https://www.visir.is/g/20262853438d/thridjungur-and-vigur-at-kvaeda-greidslunni"
+        },
+        {
+          "id": "POLL-DATA-008",
+          "source_name": "Gallup Iceland / Þjóðarpúls",
+          "source_url": "https://www.gallup.is/frettir/nyr-thjodarpuls/"
+        },
+        {
+          "id": "POLL-DATA-018",
+          "source_name": "Gallup Iceland / Þjóðarpúls",
+          "source_url": "https://www.gallup.is/frettir/nyr-thjodarpuls/"
+        }
+      ],
+      "contradicting_evidence": [],
       "category": "polling",
       "attribution": "asserted",
       "article_slug": "thridjungur-andvigur-atkvaedagreidslunni",
@@ -91,7 +238,28 @@
     },
     {
       "claim_text": "Lítill munur er á hlutfalli þeirra sem myndu kjósa með og á móti áframhaldandi aðildarviðræðum (52% gegn 48%).",
+      "original_quote": "Ekki munaði miklu, 52 prósent sögðust kjósa með áframhaldandi aðildarviðræðum en 48 prósent myndu vilja hætta þeim.",
       "verdict": "supported",
+      "explanation": "<a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — Þjóðarpúls, February–March 2026\" target=\"_blank\" rel=\"noopener\">POLL-DATA-014</a> staðfestir 52/48 skiptinguna. Munurinn (4 prósentustig) er innan skekkjumarka könnunarinnar (±3,5 prósentustig), svo lýsingin á \"litlum mun\" er rétt. <a href=\"https://www.gallup.is/frettir/nyr-thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-007</a> og <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-017</a> staðfesta einnig þessa þröngu skiptingu.",
+      "missing_context": "Munurinn er tölfræðilega ómarktækur miðað við skekkjumörk könnunarinnar. Stuðningur við viðræður (52%) er umtalsvert meiri en stuðningur við aðild (42%), sem sýnir að um 10% kjósenda vilja viðræður en eru ekki skuldbundnir til aðildar.",
+      "supporting_evidence": [
+        {
+          "id": "POLL-DATA-014",
+          "source_name": "Gallup Ísland — Þjóðarpúls, February–March 2026",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+        },
+        {
+          "id": "POLL-DATA-007",
+          "source_name": "Gallup Iceland / Þjóðarpúls",
+          "source_url": "https://www.gallup.is/frettir/nyr-thjodarpuls/"
+        },
+        {
+          "id": "POLL-DATA-017",
+          "source_name": "Gallup Iceland / Þjóðarpúls",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+        }
+      ],
+      "contradicting_evidence": [],
       "category": "polling",
       "attribution": "asserted",
       "article_slug": "thridjungur-andvigur-atkvaedagreidslunni",
@@ -101,7 +269,23 @@
     },
     {
       "claim_text": "Þjóðaratkvæðagreiðsla um áframhaldandi aðildarviðræður Íslands við Evrópusambandið verður haldin 29. ágúst 2026.",
+      "original_quote": "Fyrir helgi greindu formenn ríkisstjórnarflokkanna frá því að þjóðaratkvæðagreiðsla um áframhaldandi aðildarviðræður Íslands við Evrópusambandið verði haldin 29. ágúst.",
       "verdict": "supported",
+      "explanation": "Heimildir staðfesta þetta. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> segir berum orðum að ríkisstjórnin hafi tilkynnt þjóðaratkvæðagreiðslu 29. ágúst 2026 um áframhaldandi aðildarviðræður. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir enn frekar að utanríkisráðherra hafi lagt fram þingsályktunartillögu þess efnis 9. mars 2026. Dagsetningin og efni atkvæðagreiðslunnar eru samhljóða í báðum heimildum.",
+      "missing_context": "Þjóðaratkvæðagreiðslan er ráðgefandi, ekki bindandi (<a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland), Articles 26, 65, 79; Althingi records on 2012 referendum follow-up\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-026</a>). Stjórnarandstaðan hefur gagnrýnt dagsetninguna sem of skjóta til fullnægjandi þjóðarumsagna (<a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a>).",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-006",
+          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+        },
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        }
+      ],
+      "contradicting_evidence": [],
       "category": "sovereignty",
       "attribution": "asserted",
       "article_slug": "sjai-thegar-merki-um-ad-forspa-um-klofningu-thjodarinnar-standist",
@@ -111,7 +295,23 @@
     },
     {
       "claim_text": "Þingsályktunartillaga um þjóðaratkvæðagreiðsluna var lögð fyrir Alþingi á þingfundi á mánudag og aftur á þriðjudag.",
+      "original_quote": "Þingsályktunartillaga var lögð fyrir Alþingi á þingfundi á mánudag og aftur á þriðjudag.",
       "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir að þingsályktunartillaga var lögð fram 9. mars 2026 og <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> lýsir því að tillagan hafi verið kynnt á Alþingi, þar á meðal umræðum um málsmeðferð. Heimildir staðfesta ekki sérstaklega að tillagan hafi verið lögð fram bæði á mánudegi og þriðjudegi — slíkar málsmeðferðarupplýsingar um nákvæma þingfundadaga eru ekki skráðar í tiltækum heimildum.",
+      "missing_context": "Nákvæm tímalína þingfunda (hvaða vikudaga tillagan var tekin fyrir) er ekki í staðreyndagrunni. <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> nefnir að stjórnarandstaðan hafi gagnrýnt hraða málsmeðferðarinnar.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        },
+        {
+          "id": "SOV-PARL-005",
+          "source_name": "Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)",
+          "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
+        }
+      ],
+      "contradicting_evidence": [],
       "category": "sovereignty",
       "attribution": "asserted",
       "article_slug": "sjai-thegar-merki-um-ad-forspa-um-klofningu-thjodarinnar-standist",

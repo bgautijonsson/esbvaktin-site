@@ -2,6 +2,7 @@
 layout: base.njk
 extra_css: /assets/css/entity-detail.css
 return_link_support: true
+evidence_preview: true
 ---
 
 {# ── Stance label from score ── #}
@@ -45,12 +46,12 @@ return_link_support: true
   <header class="ed-header">
     <div class="ed-header-top">
       <h1 class="ed-name">{{ entity.name }}</h1>
-      <span class="et-type-badge et-type-{{ entity.type }}">{{ entity.type | entityTypeLabel }}</span>
+      <span class="et-type-badge et-type-{{ entity.type }}">{% if entity.subtype == "media" %}Fjölmiðill{% elif entity.subtype == "politician" %}Stjórnmálafólk{% else %}{{ entity.type | entityTypeLabel }}{% endif %}</span>
     </div>
 
     {% if entity.role %}
       <p class="ed-role">
-        {{ entity.role | capitalize }}{% if entity.party %} ({{ entity.party }}){% endif %}
+        {{ entity.role | capitalize }}{% if entity.party and entity.party_slug %} (<a href="/raddirnar/{{ entity.party_slug }}/">{{ entity.party }}</a>){% elif entity.party %} ({{ entity.party }}){% endif %}
       </p>
     {% endif %}
 
@@ -125,6 +126,120 @@ return_link_support: true
       </div>
     </div>
     {% endif %}
+  {% endif %}
+
+  {# ── Outlet coverage (for media entities) ── #}
+  {% if entity.subtype == "media" and entity.outlet_articles and entity.outlet_articles | length %}
+  {% set oa = entity.outlet_articles %}
+  {% set os = entity.outlet_stats %}
+  {% set osc = entity.outlet_scorecard %}
+
+  <section class="ed-outlet-coverage">
+    <h2>Umfjöllun</h2>
+
+    <div class="ed-outlet-agg">
+      <div class="ed-stat-block">
+        <span class="ed-stat-heading">Greinar</span>
+        <span class="ed-stat-num">{{ os.article_count }}</span>
+      </div>
+      <div class="ed-stat-block">
+        <span class="ed-stat-heading">Fullyrðingar</span>
+        <span class="ed-stat-num">{{ os.total_claims }}</span>
+      </div>
+      <div class="ed-stat-block">
+        <span class="ed-stat-heading">Ræðumenn</span>
+        <span class="ed-stat-num">{{ os.unique_speakers }}</span>
+      </div>
+      {% if os.date_range and os.date_range.first %}
+      <div class="ed-stat-block">
+        <span class="ed-stat-heading">Tímabil</span>
+        <span class="ed-stat-period">{{ os.date_range.first | isDate }} – {{ os.date_range.last | isDate }}</span>
+      </div>
+      {% endif %}
+    </div>
+
+    {# Aggregate verdict bar across all outlet articles #}
+    {% set oscTotal = 0 %}
+    {% set verdictOrder = ["supported", "partially_supported", "unverifiable", "unsupported", "misleading"] %}
+    {% for v in verdictOrder %}
+      {% set oscTotal = oscTotal + (osc[v] or 0) %}
+    {% endfor %}
+
+    {% if oscTotal > 0 %}
+    <div class="report-verdict-bar" role="img" aria-label="Dreifing niðurstaðna í umfjöllun">
+      {% for v in verdictOrder %}
+        {% set count = osc[v] %}
+        {% if count %}
+          {% set pct = (count / oscTotal * 100) | round(1) %}
+          <span class="report-bar-seg verdict-{{ v | replace("partially_supported", "partial") }}"
+                style="width:{{ pct }}%"
+                title="{{ v | verdictLabel }}: {{ count }}">
+            {%- if pct >= 12 %}{{ count }}{% endif -%}
+          </span>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="verdict-summary">
+      {% for v in verdictOrder %}
+        {% if osc[v] %}
+        <span class="ct-verdict-pill verdict-{{ v | replace("partially_supported", "partial") }}">
+          {{ v | verdictLabel }}: {{ osc[v] }}
+        </span>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <p class="ed-scorecard-note">Dreifing niðurstaðna yfir allar fullyrðingar sem birtust í umfjöllun {{ entity.name }}.</p>
+    {% endif %}
+
+    {# Topic distribution chips #}
+    {% if os.topic_distribution %}
+    <div class="ed-outlet-topics">
+      <h3>Málefni</h3>
+      <div class="ed-topic-chips">
+        {% for topic, count in os.topic_distribution | dictsort(false, 'value') | reverse %}
+          <span class="ct-category-tag">{{ topic | categoryLabel }} <small>({{ count }})</small></span>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+    {# Article list #}
+    <div class="ed-outlet-articles">
+      <h3>Greinar ({{ oa | length }})</h3>
+      <div class="ed-articles-grid">
+        {% for art in oa %}
+        <a href="/umraedan/{{ art.slug }}/" class="ed-article-card">
+          <h4 class="ed-article-title">{{ art.title }}</h4>
+          <div class="ed-article-meta">
+            {% if art.source %}<span class="ed-article-source">{{ art.source }}</span>{% endif %}
+            {% if art.date %}<time datetime="{{ art.date }}">{{ art.date | isDate }}</time>{% endif %}
+          </div>
+          <div class="ed-article-stats">
+            <span>{{ art.claim_count }} fullyrðing{{ "ar" if art.claim_count > 1 else "" }}</span>
+          </div>
+          {# Mini verdict bar per article #}
+          {% set artTotal = 0 %}
+          {% for v in verdictOrder %}
+            {% set artTotal = artTotal + (art.verdict_counts[v] or 0) %}
+          {% endfor %}
+          {% if artTotal > 0 %}
+          <div class="report-verdict-bar ed-mini-verdict" role="img">
+            {% for v in verdictOrder %}
+              {% set count = art.verdict_counts[v] %}
+              {% if count %}
+                {% set pct = (count / artTotal * 100) | round(1) %}
+                <span class="report-bar-seg verdict-{{ v | replace("partially_supported", "partial") }}"
+                      style="width:{{ pct }}%"
+                      title="{{ v | verdictLabel }}: {{ count }}"></span>
+              {% endif %}
+            {% endfor %}
+          </div>
+          {% endif %}
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
   {% endif %}
 
   {# ── Party members (for party entities) ── #}
@@ -277,6 +392,36 @@ return_link_support: true
         <span class="report-claim-chevron" aria-hidden="true"></span>
       </summary>
       <div class="report-claim-body">
+        {% if item.original_quote %}
+          <blockquote class="report-quote">{{ item.original_quote }}</blockquote>
+        {% endif %}
+        {% if item.explanation %}
+          <p class="report-explanation">{{ item.explanation | evidenceLinks | safe }}</p>
+        {% endif %}
+        {% if item.missing_context %}
+          <details class="report-context">
+            <summary>Samhengi sem vantar</summary>
+            <p>{{ item.missing_context | evidenceLinks | safe }}</p>
+          </details>
+        {% endif %}
+        {% if item.supporting_evidence | length %}
+        <div class="report-evidence">
+          <strong>Heimildir:</strong>
+          {% for ev in item.supporting_evidence %}
+            <a href="/heimildir/{{ ev.id | lower }}/" class="evidence-link" data-evidence-id="{{ ev.id }}" data-preserve-return>{{ ev.id }}</a>
+            {%- if not loop.last %}, {% endif %}
+          {% endfor %}
+        </div>
+        {% endif %}
+        {% if item.contradicting_evidence | length %}
+        <div class="report-evidence report-evidence-contra">
+          <strong>Andstæðar heimildir:</strong>
+          {% for ev in item.contradicting_evidence %}
+            <a href="/heimildir/{{ ev.id | lower }}/" class="evidence-link" data-evidence-id="{{ ev.id }}" data-preserve-return>{{ ev.id }}</a>
+            {%- if not loop.last %}, {% endif %}
+          {% endfor %}
+        </div>
+        {% endif %}
         <p class="ed-claim-source">
           <a href="/umraedan/{{ item.article_slug }}/" data-preserve-return>{{ item.article_title }}</a>
           {% if item.article_source %}<span class="ed-claim-source-name">{{ item.article_source }}</span>{% endif %}

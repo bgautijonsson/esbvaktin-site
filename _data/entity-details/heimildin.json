@@ -21,7 +21,23 @@
   "claims": [
     {
       "claim_text": "Vextir á húsnæðislán á Íslandi eru frá 8 prósentum.",
+      "original_quote": "Vextir á húsnæðislán á Íslandi eru frá 8 prósentum",
       "verdict": "supported",
+      "explanation": "Heimildir staðfesta þetta. Samkvæmt <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> eru óverðtryggðir breytilegir húsnæðisvextir á Íslandi frá um 8–9% í byrjun árs 2026, og stýrivextir Seðlabankans stóðu í 8,5%. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a> sýnir samsvarandi mynd — meðalvextir á nýjum verðtryggðum húsnæðislánum eru um 7,5–8,5%. Þó ber að hafa í huga að samanburður við evrusvæðið er flókinn vegna verðtryggingarkerfis Íslands, þar sem raunvextir eru lægri en nafnvextir.",
+      "missing_context": "Verðtryggð húsnæðislán á Íslandi bera lægri nafnvexti (3,5–4,5%) en höfuðstóllinn hækkar með verðbólgu, þannig að beinn samanburður nafnvaxta er villandi. Ísland gæti ekki tekið upp evru strax við inngöngu — nokkurra ára ERM II tímabil þyrfti að ljúka fyrst.",
+      "supporting_evidence": [
+        {
+          "id": "HOUS-DATA-005",
+          "source_name": "Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase",
+          "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
+        },
+        {
+          "id": "HOUSING-DATA-008",
+          "source_name": "European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report",
+          "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
+        }
+      ],
+      "contradicting_evidence": [],
       "category": "housing",
       "attribution": "asserted",
       "article_slug": "snorri-segir-husnaedi-verda-jafndyrt-thott-vextir-laekki",
@@ -31,7 +47,28 @@
     },
     {
       "claim_text": "Algengir vextir húsnæðislána í Evrópusambandinu eru frá 3,2% til 3,5%, samkvæmt Seðlabanka Evrópu.",
+      "original_quote": "í Evrópusambandinu eru algengir vextir húsnæðislána frá 3,2% til 3,5%, samkvæmt Seðlabanka Evrópu",
       "verdict": "supported",
+      "explanation": "<a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> staðfestir að meðalvextir húsnæðislána á evrusvæðinu voru um 3,4% seint á árinu 2025. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a> sýnir að bilið var 3,2–3,8% eftir lánstíma og aðildarríki, sem fellur vel að fullyrðingunni. Tölurnar eru raunverulegar og réttilega eignaðar Seðlabanka Evrópu.",
+      "missing_context": "Þetta er meðaltal yfir mjög ólík aðildarríki — vextir í einstökum löndum geta verið töluvert hærri eða lægri. Norðurlöndin innan evrusvæðisins (t.d. Finnland) hafa haft vexti aðeins yfir meðaltali. Auk þess eru þetta nafnvextir á óverðtryggðum lánum, sem ekki er beint sambærilegt við verðtryggða vexti á Íslandi.",
+      "supporting_evidence": [
+        {
+          "id": "HOUS-DATA-005",
+          "source_name": "Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase",
+          "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
+        },
+        {
+          "id": "HOUSING-DATA-008",
+          "source_name": "European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report",
+          "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
+        },
+        {
+          "id": "CURR-DATA-004",
+          "source_name": "Seðlabanki Íslands — Policy rate decisions; ECB — Key interest rates",
+          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+        }
+      ],
+      "contradicting_evidence": [],
       "category": "housing",
       "attribution": "asserted",
       "article_slug": "snorri-segir-husnaedi-verda-jafndyrt-thott-vextir-laekki",
@@ -41,7 +78,38 @@
     },
     {
       "claim_text": "Talsmenn ESB-aðildar segja að aðild og hugsanleg upptaka evru sé líkleg til að lækka vaxtakostnað heimila á Íslandi.",
+      "original_quote": "Talsmenn aðildar að Evrópusambandinu segja að aðild og hugsanleg upptaka evru sé meðal annars líkleg til þess að lækka vaxtakostnað heimila",
       "verdict": "supported",
+      "explanation": "<a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> og <a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Policy rate decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURR-DATA-004</a> staðfesta að stýrivextir Seðlabanka Íslands eru um 8–8,5% á meðan stýrivextir ESB eru um 2,75–3%, sem þýðir verulegan mun á vaxtakostnaði. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a> sýnir sambærilegan mun á húsnæðislánum — 7,5–8,5% á Íslandi á móti 3,2–3,8% á evrusvæðinu. <a href=\"https://sa.is/frettatengt/frettir/vinna-hafin-vid-uttekt-a-stodu-adildarvidraedna-vid-evropusambandid\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> og <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> staðfesta að talsmenn ESB-aðildar nota einmitt þetta rök. Fullyrðingin lýsir réttilega afstöðu talsmanna ESB-aðildar.",
+      "missing_context": "Evruupptaka myndi ekki sjálfkrafa leiða til ECB-vaxta á Íslandi — innlent áhættuálag og bankakostnaður skipta máli. <a href=\"https://www.ecb.europa.eu/pub/economic-bulletin/articles/2021/html/ecb.ebart202102_01~830e7telecom.en.html\" title=\"Glaeser, Gottlieb & Gyourko, 'Can Cheap Credit Explain the Housing Boom?' (2012); ECB Economic Bulletin 2/2021 — 'The impact of monetary policy on housing'\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-011</a> og <a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a> benda til þess að lægri vextir geti hækkað húsnæðisverð í framboðsþröngu hagkerfi, sem dregur úr raunverulegum ávinningi. Samanburður nafnvaxta á Íslandi og evrusvæðinu er villandi án tillits til verðtryggingar.",
+      "supporting_evidence": [
+        {
+          "id": "CURRENCY-DATA-015",
+          "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
+          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+        },
+        {
+          "id": "CURR-DATA-004",
+          "source_name": "Seðlabanki Íslands — Policy rate decisions; ECB — Key interest rates",
+          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+        },
+        {
+          "id": "HOUSING-DATA-008",
+          "source_name": "European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report",
+          "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
+        },
+        {
+          "id": "POL-DATA-012",
+          "source_name": "SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions",
+          "source_url": "https://sa.is/frettatengt/frettir/vinna-hafin-vid-uttekt-a-stodu-adildarvidraedna-vid-evropusambandid"
+        },
+        {
+          "id": "POL-DATA-017",
+          "source_name": "Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)",
+          "source_url": "https://vi.is/skyrslur/1667"
+        }
+      ],
+      "contradicting_evidence": [],
       "category": "currency",
       "attribution": "asserted",
       "article_slug": "snorri-segir-husnaedi-verda-jafndyrt-thott-vextir-laekki",
@@ -51,7 +119,33 @@
     },
     {
       "claim_text": "Þingsályktunartillaga um þjóðaratkvæðagreiðslu um aðildarviðræður Íslands að ESB var tekin til umræðu á Alþingi þann 10. mars 2026.",
+      "original_quote": "Baráttan um Evrópusambandinu hefst á Alþingi í dag með umræðum um þingsályktunartillögu um þjóðaratkvæðagreiðslu um hvort hefja eigi að nýju aðildarviðræður Íslands að sambandinu.",
       "verdict": "supported",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir að utanríkisráðherra Þorgerður Katrín Gunnarsdóttir lagði fram þingsályktunartillögu um þjóðaratkvæðagreiðslu 9. mars 2026. Fullyrðingin segir 10. mars en <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> segir 9. mars — þetta er eins dags munur sem gæti skýrst af því hvenær tillagan var tekin til umræðu á þingfundi (útgáfa vs. umræða). <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> og <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland; Euronews; France24; coalition agreement\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-013</a> staðfesta jafnframt að þingsályktunartillagan var lögð fram og að þjóðaratkvæðagreiðsla var áformuð 29. ágúst 2026. Kjarni fullyrðingarinnar — að þingsályktunartillagan hafi verið tekin til umræðu á Alþingi í byrjun mars 2026 — er staðfestur af heimildum.",
+      "missing_context": "Nákvæm dagsetning er 9. mars samkvæmt <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> (flutningsræða utanríkisráðherra), ekki 10. mars eins og fullyrðingin segir. Þingsályktunartillagan er ráðgefandi þjóðaratkvæðagreiðsla, ekki bindandi, samkvæmt <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a>. Andstöðuflokkar gerðu verklags-athugasemdir við málsmeðferðina (<a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a>).",
+      "supporting_evidence": [
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        },
+        {
+          "id": "SOV-DATA-006",
+          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+        },
+        {
+          "id": "PARTY-DATA-013",
+          "source_name": "Government of Iceland; Euronews; France24; coalition agreement",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+        },
+        {
+          "id": "SOV-PARL-005",
+          "source_name": "Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)",
+          "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
+        }
+      ],
+      "contradicting_evidence": [],
       "category": "sovereignty",
       "attribution": "asserted",
       "article_slug": "snorri-segir-husnaedi-verda-jafndyrt-thott-vextir-laekki",
@@ -61,7 +155,34 @@
     },
     {
       "claim_text": "Íslendingar innleiða nú þegar megnið af regluverki Evrópusambandsins.",
+      "original_quote": "Íslendingar innleiði nú þegar megnið af misheppilegu regluverki Evrópusambandsins",
       "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EFTA Secretariat — EEA Agreement factsheet; ESA Annual Report 2024\" target=\"_blank\" rel=\"noopener\">EEA-DATA-006</a> og <a href=\"https://www.eftasurv.int/internal-market/eea-efta-internal-market-scoreboard\" title=\"EFTA Surveillance Authority — Internal Market Scoreboard\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-001</a> sýna að um 70–75% af löggjöf innri markaðarins hafa verið innleidd í íslenskan rétt — um 13.000 lagagerðir frá 1994. Orðið \"megnið\" er því nokkuð réttmætt hvað varðar innri markaðinn. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Screening reports from Iceland's 2010–2013 negotiations; EUR-Lex — Directory of EU legislation\" target=\"_blank\" rel=\"noopener\">SOV-DATA-004</a> bendir hins vegar á að ESB-aðild myndi bæta við 3.000–5.000 lagagerðum til viðbótar á sviðum sem EES-samningurinn nær ekki til: landbúnaður, sjávarútvegur, tollabandalag, skattamál og dóms- og innanríkismál. Fullyrðingin sleppur þessum undanskildu sviðum.",
+      "missing_context": "EES-samningurinn nær ekki til sjávarútvegs, landbúnaðar, tollamála, utanríkis- og öryggismála, né réttarvistmála — svið sem skipta Ísland miklu máli. Auk þess hefur Ísland aldrei nýtt sér neitunarvald sitt samkvæmt 102. gr. EES-samningsins, þótt lagalegur réttur sé til staðar. Fullyrðingin um \"misheppilegt\" regluverkið er matskennd viðbót, ekki staðreynd.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-DATA-006",
+          "source_name": "EFTA Secretariat — EEA Agreement factsheet; ESA Annual Report 2024",
+          "source_url": "https://www.efta.int/eea/eea-agreement"
+        },
+        {
+          "id": "EEA-LEGAL-006",
+          "source_name": "EFTA Secretariat — EEA Agreement legal acts database",
+          "source_url": "https://www.efta.int/eea-lex"
+        },
+        {
+          "id": "EEA-LEGAL-001",
+          "source_name": "EFTA Surveillance Authority — Internal Market Scoreboard",
+          "source_url": "https://www.eftasurv.int/internal-market/eea-efta-internal-market-scoreboard"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "SOV-DATA-004",
+          "source_name": "European Commission — Screening reports from Iceland's 2010–2013 negotiations; EUR-Lex — Directory of EU legislation",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        }
+      ],
       "category": "eea_eu_law",
       "attribution": "paraphrased",
       "article_slug": "snorri-segir-husnaedi-verda-jafndyrt-thott-vextir-laekki",
@@ -71,7 +192,18 @@
     },
     {
       "claim_text": "Norska stjórnmálafréttasíðan Altinget.no birti grein um andstöðu Bandaríkjanna við ESB-aðild Íslands þann 9. mars 2026.",
+      "original_quote": "„Norska stjórnmálafréttasíðan Altinget.no heldur því fram í grein sem birtist á vef þirra í dag“",
       "verdict": "unverifiable",
+      "explanation": "Engin heimild staðfestir eða neitar því að norska stjórnmálafréttasíðan Altinget.no hafi birt grein um andstöðu Bandaríkjanna gegn ESB-aðild Íslands 9. mars 2026. <a href=\"https://www.nato.int/cps/en/natohq/topics_212802.htm\" title=\"NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list\" target=\"_blank\" rel=\"noopener\">SOV-DATA-009</a> sýnir að engin opinber andstaða Bandaríkjanna gegn ESB-aðild Íslands er þekkt, en það útilokar ekki að grein á norsku fréttasíðunni hafi verið birt um þetta efni. Til að staðfesta fullyrðinguna þyrfti beint aðgengi að Altinget.no.",
+      "missing_context": "<a href=\"https://www.nato.int/cps/en/natohq/topics_212802.htm\" title=\"NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list\" target=\"_blank\" rel=\"noopener\">SOV-DATA-009</a> bendir til þess að engin opinber bandarísk andstaða gegn ESB-aðild Íslands sé til, en nefnir einnig að Trump-stjórnin hafi verið ESB-efins. Greinin á Altinget.no gæti hafa fjallað um óformlega afstöðu eða túlkun, ekki opinbera stefnu. Heimildir nægja ekki til þess að meta hvort greinin var birt eða hvað hún sagði.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [
+        {
+          "id": "SOV-DATA-009",
+          "source_name": "NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list",
+          "source_url": "https://www.nato.int/cps/en/natohq/topics_212802.htm"
+        }
+      ],
       "category": "other",
       "attribution": "asserted",
       "article_slug": "bandarikjamonnum-hugnast-ekki-innganga-islands-i-esb",
@@ -102,5 +234,147 @@
         "asserted"
       ]
     }
-  ]
+  ],
+  "subtype": "media",
+  "outlet_articles": [
+    {
+      "slug": "bandarikjamonnum-hugnast-ekki-innganga-islands-i-esb",
+      "title": "Bandaríkjamönnum hugnast ekki innganga Íslands í ESB",
+      "date": "2026-03-09",
+      "source": "Heimildin",
+      "claim_count": 9,
+      "verdict_counts": {
+        "partially_supported": 4,
+        "misleading": 3,
+        "unverifiable": 2
+      },
+      "dominant_category": "party_positions",
+      "categories": [
+        "other",
+        "party_positions",
+        "sovereignty",
+        "trade"
+      ],
+      "participants": [
+        {
+          "name": "Altinget.no",
+          "role": "norsk stjórnmálafréttasíða",
+          "party": null,
+          "role_in_article": "speaker",
+          "attribution_type": "paraphrased",
+          "claim_count": 7,
+          "verdicts": {
+            "partially_supported": 4,
+            "misleading": 2,
+            "unverifiable": 1
+          },
+          "stance": "neutral",
+          "slug": "altinget-no",
+          "mention_count": 2,
+          "credibility": 0.4
+        },
+        {
+          "name": "Donald Trump",
+          "role": "forseti Bandaríkjanna",
+          "party": "Repúblikanaflokkurinn",
+          "role_in_article": "speaker",
+          "attribution_type": "paraphrased",
+          "claim_count": 5,
+          "verdicts": {
+            "partially_supported": 3,
+            "unverifiable": 1,
+            "misleading": 1
+          },
+          "stance": "anti_eu",
+          "slug": "donald-trump",
+          "mention_count": 2,
+          "credibility": 0.38
+        },
+        {
+          "name": "Ríkisstjórn Bandaríkjanna",
+          "role": "ríkisstjórn",
+          "party": null,
+          "role_in_article": "speaker",
+          "attribution_type": "paraphrased",
+          "claim_count": 2,
+          "verdicts": {
+            "misleading": 1,
+            "partially_supported": 1
+          },
+          "stance": "anti_eu",
+          "slug": "rikisstjorn-bandarikjanna",
+          "mention_count": 1,
+          "credibility": 0.25
+        }
+      ]
+    },
+    {
+      "slug": "snorri-segir-husnaedi-verda-jafndyrt-thott-vextir-laekki",
+      "title": "Snorri segir húsnæði verða jafndýrt þótt vextir lækki",
+      "date": "2026-03-09",
+      "source": "Heimildin",
+      "claim_count": 16,
+      "verdict_counts": {
+        "supported": 9,
+        "unverifiable": 1,
+        "partially_supported": 4,
+        "misleading": 2
+      },
+      "dominant_category": "housing",
+      "categories": [
+        "currency",
+        "eea_eu_law",
+        "housing",
+        "party_positions",
+        "precedents",
+        "sovereignty",
+        "trade"
+      ],
+      "participants": [
+        {
+          "name": "Snorri Másson",
+          "role": "varaformaður Miðflokksins",
+          "party": "Miðflokkurinn",
+          "role_in_article": "speaker",
+          "attribution_type": "quoted",
+          "claim_count": 8,
+          "verdicts": {
+            "supported": 3,
+            "partially_supported": 3,
+            "misleading": 2
+          },
+          "stance": "anti_eu",
+          "slug": "snorri-masson",
+          "mention_count": 3,
+          "credibility": 0.3,
+          "speech_count": 10
+        }
+      ]
+    }
+  ],
+  "outlet_scorecard": {
+    "partially_supported": 8,
+    "misleading": 5,
+    "unverifiable": 3,
+    "supported": 9
+  },
+  "outlet_stats": {
+    "article_count": 2,
+    "total_claims": 25,
+    "unique_speakers": 4,
+    "topic_distribution": {
+      "other": 1,
+      "party_positions": 2,
+      "sovereignty": 2,
+      "trade": 2,
+      "currency": 1,
+      "eea_eu_law": 1,
+      "housing": 1,
+      "precedents": 1
+    },
+    "date_range": {
+      "first": "2026-03-09",
+      "last": "2026-03-09"
+    }
+  }
 }

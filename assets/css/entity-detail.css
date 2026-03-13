@@ -346,6 +346,59 @@
   font-weight: 500;
 }
 
+/* ── Outlet coverage section ────────────────────────────────────────── */
+
+.ed-outlet-coverage {
+  margin-bottom: 2rem;
+}
+
+.ed-outlet-coverage h2 {
+  font-size: 1.1rem;
+  margin: 0 0 0.75rem;
+}
+
+.ed-outlet-coverage h3 {
+  font-size: 0.95rem;
+  margin: 1rem 0 0.5rem;
+  color: var(--text-secondary);
+}
+
+.ed-outlet-agg {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.ed-outlet-topics {
+  margin-bottom: 0.5rem;
+}
+
+.ed-topic-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.ed-topic-chips small {
+  opacity: 0.7;
+  font-weight: 400;
+}
+
+.ed-outlet-articles .ed-articles-grid {
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+.ed-mini-verdict {
+  height: 4px;
+  margin-top: 0.5rem;
+  border-radius: 2px;
+}
+
 /* ── Scorecard ──────────────────────────────────────────────────────── */
 
 .ed-scorecard {

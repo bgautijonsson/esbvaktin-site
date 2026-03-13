@@ -138,6 +138,8 @@
 
     if (filters.type === "politician") {
       results = results.filter((entity) => entity.type === "individual" && entity.subtype === "politician");
+    } else if (filters.type === "media") {
+      results = results.filter((entity) => entity.type === "institution" && entity.subtype === "media");
     } else if (filters.type) {
       results = results.filter((entity) => entity.type === filters.type);
     }
@@ -176,6 +178,7 @@
       total: entities.length,
       parties: entities.filter((entity) => entity.type === "party").length,
       politicians: entities.filter((entity) => entity.type === "individual" && entity.subtype === "politician").length,
+      media: entities.filter((entity) => entity.type === "institution" && entity.subtype === "media").length,
       institutions: entities.filter((entity) => entity.type === "institution").length,
       individuals: entities.filter((entity) => entity.type === "individual").length,
     };
@@ -295,6 +298,7 @@
         { value: stats.total, label: "sýnilegir", valueId: "et-visible-count" },
         { value: stats.parties, label: "flokkar" },
         { value: stats.politicians, label: "stjórnmálafólk" },
+        { value: stats.media, label: "fjölmiðlar" },
         { value: stats.institutions, label: "samtök" },
         { value: stats.individuals, label: "einstaklingar" },
       ],
