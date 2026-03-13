@@ -17,7 +17,7 @@ ESB Vaktin er óháð, gagnadrifið upplýsingaverkefni sem fylgist með umræð
 
 ## Hvernig ESB Vaktin vinnur
 
-Fullyrðingar úr opinberri umræðu eru skráðar í gagnagrunn. Spjallmennið Claude skannar fullyrðingarnar og ber þær saman við staðreyndagögn — lagaákvæði, efnahagstölur, alþjóðleg fordæmi og opinberar afstöður samtaka. Út frá þeirri greiningu er fullyrðingum skipt eftir trúverðugleikaflokkun.
+Fullyrðingar úr opinberri umræðu eru skráðar í gagnagrunn. Spjallmennið Claude skannar fullyrðingarnar og ber þær saman við staðreyndagögn — lagaákvæði, efnahagstölur, alþjóðleg fordæmi og opinberar afstöður samtaka. Út frá þeirri greiningu er fullyrðingum skipt eftir trúverðugleikaflokkun. Staðreyndagögnin eru svo uppfærð reglulega samhliða fjölgun fullyrðinga.
 
 Umsjón með verkefninu hefur Brynjólfur Gauti Guðrúnar Jónsson.
 
