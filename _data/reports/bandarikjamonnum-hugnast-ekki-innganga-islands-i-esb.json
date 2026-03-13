@@ -9,9 +9,8 @@
   "analysis_date": "2026-03-10",
   "summary": "Greindar 9 fullyrðingar .",
   "verdict_counts": {
-    "partially_supported": 4,
-    "misleading": 3,
-    "unverifiable": 2
+    "partially_supported": 6,
+    "misleading": 3
   },
   "claim_count": 9,
   "dominant_category": "party_positions",
@@ -131,12 +130,34 @@
         "claim_type": "opinion",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Fullyrðingin vísar í nafnlausar heimildir nálægt tilvonandi sendiherra Bandaríkjanna um vilja Trumps til að halda Íslandi utan ESB. <a href=\"https://www.nato.int/cps/en/natohq/topics_212802.htm\" title=\"NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list\" target=\"_blank\" rel=\"noopener\">SOV-DATA-009</a> staðfestir að engin opinber afstaða Bandaríkjanna gegn ESB-aðild Íslands hefur verið birt. <a href=\"https://www.whitehouse.gov/presidential-actions/nominations/\" title=\"White House — Presidential Nominations\" target=\"_blank\" rel=\"noopener\">SOV-DATA-015</a> staðfestir tilnefningu Billy Long sem sendiherra en nefnir ekkert um afstöðu hans til ESB-aðildar Íslands. Heimildir benda til þess að Bandaríkin hafi aldrei opinberlega andmælt ESB-vegferð Íslands, en engar heimildir geta staðfest eða hrakið fullyrðingu um óopinberar afstöðu.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "missing_context": "<a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"1951 US-Iceland Defence Agreement; 2016 Iceland-US Security Cooperation Agreement; US Department of State bilateral relations factsheet\" target=\"_blank\" rel=\"noopener\">SOV-DATA-008</a> bendir á að sumir greiningaraðilar telji Bandaríkin kunna að kjósa Ísland utan ESB vegna varnarsamstarfs, en þetta er vangaveltur, ekki staðfestar heimildir. Fullyrðingin byggir á nafnlausum uppsprettum sem ekki verða staðfestar úr opinberum gögnum.",
-      "confidence": 0.85,
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"US State Department — Bilateral Relations Factsheet; Icelandic media reports (Heimildin, Stundin); Altinget.no\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-021</a> staðfestir að íslenskir og erlendir fjölmiðlar greindu frá vangaveltum um að Trump-stjórnin vildi halda Íslandi utan ESB, og að ónafngreindar heimildir «nálægt» tilvonandi sendiherra hafi verið vitnað í. Engin opinber afstaða bandarískra stjórnvalda gegn ESB-aðild Íslands hefur hins vegar verið skráð — <a href=\"https://www.nato.int/cps/en/natohq/topics_212802.htm\" title=\"NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list\" target=\"_blank\" rel=\"noopener\">SOV-DATA-009</a> sýnir að opinber stefna Bandaríkjanna er að ESB-aðild sé fullvalda ákvörðun hvers ríkis. Fullyrðingin á sér stoð í fjölmiðlaumfjöllun og pólitískum heimildum en byggir á ónafngreindum aðilum, ekki staðfestri stefnu.",
+      "supporting_evidence": [
+        {
+          "id": "PARTY-DATA-021",
+          "source_name": "US State Department — Bilateral Relations Factsheet; Icelandic media reports (Heimildin, Stundin); Altinget.no",
+          "source_url": "https://www.state.gov/u-s-relations-with-iceland/"
+        },
+        {
+          "id": "SOV-DATA-015",
+          "source_name": "White House — Presidential Nominations",
+          "source_url": "https://www.whitehouse.gov/presidential-actions/nominations/"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "SOV-DATA-009",
+          "source_name": "NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list",
+          "source_url": "https://www.nato.int/cps/en/natohq/topics_212802.htm"
+        },
+        {
+          "id": "SOV-DATA-008",
+          "source_name": "1951 US-Iceland Defence Agreement; 2016 Iceland-US Security Cooperation Agreement; US Department of State bilateral relations factsheet",
+          "source_url": "https://www.state.gov/u-s-relations-with-iceland/"
+        }
+      ],
+      "missing_context": "Fullyrðingin byggir á ónafngreindum heimildum og pólitískum vangaveltum, ekki skráðri stefnu. Bandaríkin hafa aldrei opinberlega mótmælt ESB-aðild Íslands. Trump-stjórnin hefur ekki birt sérstaka stefnu gagnvart Íslandi í þessu samhengi. Samkvæmt <a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"1951 US-Iceland Defence Agreement; 2016 Iceland-US Security Cooperation Agreement; US Department of State bilateral relations factsheet\" target=\"_blank\" rel=\"noopener\">SOV-DATA-008</a> gætu öryggishagsmunir Bandaríkjanna á norðurslóðum haft áhrif, en slík greining er íhugandi.",
+      "confidence": 0.72,
       "speakers": [
         {
           "name": "Donald Trump",
@@ -238,22 +259,28 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "Fullyrðingin er of óljós til að vera staðfest eða hrekkt að fullu. <a href=\"https://www.reuters.com/world/europe/norway-tariffs-trump-2025/\" title=\"Reuters, NRK, Financial Times — viðskipti Noregs og Bandaríkjanna 2025–2026\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-027</a> sýnir að Noregur — sem semur eitt og sér — gat ekki nýtt sér sameiginlegan samningsstyrk ESB gegn tollum Bandaríkjanna, sem bendir til þess að ESB-aðild geti breytt viðskiptadýnamík við Bandaríkin. <a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"1951 US-Iceland Defence Agreement; 2016 Iceland-US Security Cooperation Agreement; US Department of State bilateral relations factsheet\" target=\"_blank\" rel=\"noopener\">SOV-DATA-008</a> staðfestir að engin skjalfest sönnun sé til um andstöðu Bandaríkjanna við ESB-aðild Íslands. <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> bendir á að ESB-aðild myndi auka samningsstyrk Íslands í alþjóðaviðskiptum. Hins vegar eru viðskiptahagsmunir Bandaríkjanna gagnvart Íslandi mjög takmarkaðir — <a href=\"https://www.ferdamalastofa.is/en/research-and-statistics\" title=\"Ferðamálastofa (Icelandic Tourist Board) — Tourism statistics\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-005</a> sýnir að Bandaríkin eru stærsta upprunaland ferðamanna en viðskiptatengsl eru takmörkuð. Hvort þessi áhrif myndu «veikja» hagsmuni Bandaríkjanna er matskennd fullyrðing sem heimildir staðfesta ekki beint.",
+      "explanation": "<a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"US State Department; IISS Strategic Survey; Alcoa and Century Aluminum annual reports; academic analyses of US-Iceland relations\" target=\"_blank\" rel=\"noopener\">SOV-DATA-020</a> staðfestir að bandarísk fyrirtæki (Alcoa, Century Aluminum) eiga umtalsverða hagsmuni á Íslandi og ESB-aðild gæti breytt regluverki um ríkisaðstoð og orkumarkaði. <a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a> bendir á að ESB-aðild myndi færa viðskiptastefnu til ESB og Ísland gæti ekki lengur samið tvíhliða við Bandaríkin. Orðið «lítillega» er matskenndt og erfitt að staðfesta nákvæmlega. <a href=\"https://www.nato.int/cps/en/natohq/topics_212802.htm\" title=\"NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list\" target=\"_blank\" rel=\"noopener\">SOV-DATA-009</a> undirstrikar að 23 ESB-ríki eru NATO-bandamenn og Bandaríkin eiga víðtæka viðskiptahagsmuni innan ESB, sem bendir til þess að ESB-aðild þurfi ekki endilega að veikja bandaríska hagsmuni.",
       "supporting_evidence": [
         {
-          "id": "TRADE-DATA-027",
-          "source_name": "Reuters, NRK, Financial Times — viðskipti Noregs og Bandaríkjanna 2025–2026",
-          "source_url": "https://www.reuters.com/world/europe/norway-tariffs-trump-2025/"
+          "id": "SOV-DATA-020",
+          "source_name": "US State Department; IISS Strategic Survey; Alcoa and Century Aluminum annual reports; academic analyses of US-Iceland relations",
+          "source_url": "https://www.state.gov/u-s-relations-with-iceland/"
         },
         {
-          "id": "POL-DATA-017",
-          "source_name": "Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)",
-          "source_url": "https://vi.is/skyrslur/1667"
+          "id": "SOV-LEGAL-032",
+          "source_name": "TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview",
+          "source_url": "https://www.efta.int/free-trade/free-trade-agreements"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Engar heimildir fjalla beint um hvernig ESB-aðild Íslands myndi hafa áhrif á viðskiptahagsmuni Bandaríkjanna gagnvart Íslandi sérstaklega. Viðskipti Íslands og Bandaríkjanna eru smá í alþjóðlegu samhengi. <a href=\"https://www.reuters.com/world/europe/norway-tariffs-trump-2025/\" title=\"Reuters, NRK, Financial Times — viðskipti Noregs og Bandaríkjanna 2025–2026\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-027</a> fjallar um Noreg, ekki Ísland — samanburðurinn er aðeins óbeinn.",
-      "confidence": 0.4,
+      "contradicting_evidence": [
+        {
+          "id": "SOV-DATA-009",
+          "source_name": "NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list",
+          "source_url": "https://www.nato.int/cps/en/natohq/topics_212802.htm"
+        }
+      ],
+      "missing_context": "Bandarísk fyrirtæki á Íslandi hafa ekki tekið opinbera afstöðu til þjóðaratkvæðagreiðslunnar. Áhrif ESB-aðildar á viðskiptahagsmuni Bandaríkjanna eru greiningarlegt mat, ekki staðreynd. Nýju heimildarnar (<a href=\"https://www.reuters.com/world/europe/norway-tariffs-trump-2025/\" title=\"Reuters, NRK, Financial Times — viðskipti Noregs og Bandaríkjanna 2025–2026\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-027</a>, <a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"US State Department — Bilateral Relations Factsheet; Icelandic media reports (Heimildin, Stundin); Altinget.no\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-021</a>) fjalla um tollamál og vangaveltur um bandarískt viðhorf, en staðfesta ekki tiltekna veikingu viðskiptahagsmuna.",
+      "confidence": 0.45,
       "speakers": [
         {
           "name": "Donald Trump",
@@ -286,8 +313,13 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"1951 US-Iceland Defence Agreement; 2016 Iceland-US Security Cooperation Agreement; US Department of State bilateral relations factsheet\" target=\"_blank\" rel=\"noopener\">SOV-DATA-008</a> staðfestir að Bandaríkin hafa sögulega haft samofna varna- og viðskiptahagsmuni á Íslandi — hernaðarlegur áhugi á GIUK-bilinu og tvíhliða varnarsamningurinn frá 1951 eru staðfest. <a href=\"https://avalon.law.yale.edu/20th_century/ice001.asp\" title=\"Avalon Project, Yale Law Library — Defense of Iceland: Agreement Between the United States and the Republic of Iceland, May 5, 1951; Government of Iceland — Iceland and the US: Bilateral Relations\" target=\"_blank\" rel=\"noopener\">SOV-HIST-002</a> útlistar sögu Keflavíkurstöðvarinnar og áframhaldandi varnarsamvinnu. Fullyrðingin um «samofna» hagsmuni á sér stoð í þessu, en hún felur í sér ákveðna ályktun sem heimildir staðfesta ekki beint. <a href=\"https://www.nato.int/cps/en/natohq/topics_212802.htm\" title=\"NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list\" target=\"_blank\" rel=\"noopener\">SOV-DATA-009</a> bendir á að engin opinber andstaða Bandaríkjanna við ESB-aðild Íslands sé til staðar og að 23 af 32 NATO-ríkjum séu einnig í ESB.",
+      "explanation": "<a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"US State Department; IISS Strategic Survey; Alcoa and Century Aluminum annual reports; academic analyses of US-Iceland relations\" target=\"_blank\" rel=\"noopener\">SOV-DATA-020</a> styður fullyrðinguna og lýsir greiningu þar sem viðskipta- og varnarhagsmunir Bandaríkjanna á Íslandi séu samofnir — GIUK-bilin og fjárfestingar bandarískra fyrirtækja í orkufrekum iðnaði tengjast báðar hernaðarlegri og viðskiptalegri nærveru. <a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"1951 US-Iceland Defence Agreement; 2016 Iceland-US Security Cooperation Agreement; US Department of State bilateral relations factsheet\" target=\"_blank\" rel=\"noopener\">SOV-DATA-008</a> staðfestir söguleg hernaðartengsl og varnarsamninginn frá 1951, og <a href=\"https://avalon.law.yale.edu/20th_century/ice001.asp\" title=\"Avalon Project, Yale Law Library — Defense of Iceland: Agreement Between the United States and the Republic of Iceland, May 5, 1951; Government of Iceland — Iceland and the US: Bilateral Relations\" target=\"_blank\" rel=\"noopener\">SOV-HIST-002</a> útskýrir Keflavíkurstöðina og GIUK-eftirlit. Heimildirnar benda þó á að þetta sé greiningarlegt mat, ekki skjalfest stefna — engin opinber yfirlýsing Bandaríkjanna tengir þessa tvo þætti formlega.",
       "supporting_evidence": [
+        {
+          "id": "SOV-DATA-020",
+          "source_name": "US State Department; IISS Strategic Survey; Alcoa and Century Aluminum annual reports; academic analyses of US-Iceland relations",
+          "source_url": "https://www.state.gov/u-s-relations-with-iceland/"
+        },
         {
           "id": "SOV-DATA-008",
           "source_name": "1951 US-Iceland Defence Agreement; 2016 Iceland-US Security Cooperation Agreement; US Department of State bilateral relations factsheet",
@@ -297,22 +329,11 @@
           "id": "SOV-HIST-002",
           "source_name": "Avalon Project, Yale Law Library — Defense of Iceland: Agreement Between the United States and the Republic of Iceland, May 5, 1951; Government of Iceland — Iceland and the US: Bilateral Relations",
           "source_url": "https://avalon.law.yale.edu/20th_century/ice001.asp"
-        },
-        {
-          "id": "SOV-DATA-011",
-          "source_name": "Multiple news sources — Reuters, AP, BBC coverage of Trump Greenland statements (2025)",
-          "source_url": "https://www.reuters.com/world/"
         }
       ],
-      "contradicting_evidence": [
-        {
-          "id": "SOV-DATA-009",
-          "source_name": "NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list",
-          "source_url": "https://www.nato.int/cps/en/natohq/topics_212802.htm"
-        }
-      ],
-      "missing_context": "Engin skjalfest sönnun er til um beina yfirlýsingu frá bandarískum embættismönnum þar sem viðskipta- og varnarhagsmunir eru tengdir saman í tilviki Íslands. Opinber afstaða Bandaríkjanna hefur verið að ESB-aðild sé fullveldisákvörðun Íslands (<a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"1951 US-Iceland Defence Agreement; 2016 Iceland-US Security Cooperation Agreement; US Department of State bilateral relations factsheet\" target=\"_blank\" rel=\"noopener\">SOV-DATA-008</a>). Trump-stjórnin hefur hins vegar sýnt meiri varúð gagnvart ESB og áhugi á Grænlandi (<a href=\"https://www.reuters.com/world/\" title=\"Multiple news sources — Reuters, AP, BBC coverage of Trump Greenland statements (2025)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-011</a>) breytir landpólitískri stöðu Norður-Atlantshafsins — áhrif þess á afstöðu Bandaríkjanna til ESB-aðildar Íslands eru óljós.",
-      "confidence": 0.55,
+      "contradicting_evidence": [],
+      "missing_context": "Fullyrðingin endurspeglar greiningarlegt mat, ekki opinbera stefnu. Bandaríkin hafa ekki opinberlega tengt viðskiptahagsmuni og varnarhagsmuni varðandi Ísland. <a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"US State Department; IISS Strategic Survey; Alcoa and Century Aluminum annual reports; academic analyses of US-Iceland relations\" target=\"_blank\" rel=\"noopener\">SOV-DATA-020</a> nefnir að bandarísk fyrirtæki á Íslandi hafi ekki tekið afstöðu til þjóðaratkvæðagreiðslunnar. Samband þessara tveggja hagsmunaflokka er ályktunarkennt frekar en staðfest.",
+      "confidence": 0.5,
       "speakers": [
         {
           "name": "Donald Trump",
@@ -455,9 +476,20 @@
         "claim_type": "statistic",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Engin heimild staðfestir eða neitar því að norska stjórnmálafréttasíðan Altinget.no hafi birt grein um andstöðu Bandaríkjanna gegn ESB-aðild Íslands 9. mars 2026. <a href=\"https://www.nato.int/cps/en/natohq/topics_212802.htm\" title=\"NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list\" target=\"_blank\" rel=\"noopener\">SOV-DATA-009</a> sýnir að engin opinber andstaða Bandaríkjanna gegn ESB-aðild Íslands er þekkt, en það útilokar ekki að grein á norsku fréttasíðunni hafi verið birt um þetta efni. Til að staðfesta fullyrðinguna þyrfti beint aðgengi að Altinget.no.",
-      "supporting_evidence": [],
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"US State Department — Bilateral Relations Factsheet; Icelandic media reports (Heimildin, Stundin); Altinget.no\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-021</a> staðfestir að Altinget.no hafi fjallað um tengsl Bandaríkjanna og ESB-umræðunnar á Íslandi, og PARTY-DATA-022 nefnir Altinget.no sem eina af heimildum um erlend tengsl í kosningabaráttunni. Norska fréttasíðan er þannig staðfest sem uppspretta. Nákvæm dagsetning greinarinnar (9. mars 2026) er hins vegar ekki staðfest í neinum heimildum. <a href=\"https://www.nato.int/cps/en/natohq/topics_212802.htm\" title=\"NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list\" target=\"_blank\" rel=\"noopener\">SOV-DATA-009</a> undirstrikar jafnframt að engin opinber afstaða Bandaríkjanna gegn ESB-aðild Íslands hefur verið skjalfest — einungis óstaðfestar vangaveltur úr ónefndum heimildum.",
+      "supporting_evidence": [
+        {
+          "id": "PARTY-DATA-021",
+          "source_name": "US State Department — Bilateral Relations Factsheet; Icelandic media reports (Heimildin, Stundin); Altinget.no",
+          "source_url": "https://www.state.gov/u-s-relations-with-iceland/"
+        },
+        {
+          "id": "PARTY-DATA-022",
+          "source_name": "Heimildin; Stundin; Altinget.no — Reports on international contacts in EU referendum campaign",
+          "source_url": null
+        }
+      ],
       "contradicting_evidence": [
         {
           "id": "SOV-DATA-009",
@@ -465,8 +497,8 @@
           "source_url": "https://www.nato.int/cps/en/natohq/topics_212802.htm"
         }
       ],
-      "missing_context": "<a href=\"https://www.nato.int/cps/en/natohq/topics_212802.htm\" title=\"NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list\" target=\"_blank\" rel=\"noopener\">SOV-DATA-009</a> bendir til þess að engin opinber bandarísk andstaða gegn ESB-aðild Íslands sé til, en nefnir einnig að Trump-stjórnin hafi verið ESB-efins. Greinin á Altinget.no gæti hafa fjallað um óformlega afstöðu eða túlkun, ekki opinbera stefnu. Heimildir nægja ekki til þess að meta hvort greinin var birt eða hvað hún sagði.",
-      "confidence": 0.7,
+      "missing_context": "Efni greinarinnar á Altinget.no byggist samkvæmt <a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"US State Department — Bilateral Relations Factsheet; Icelandic media reports (Heimildin, Stundin); Altinget.no\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-021</a> á ónefndum heimildum og pólitískum vangaveltum, ekki opinberri stefnu Bandaríkjanna. Dagsetningin 9. mars 2026 er ekki staðfest — aðeins að Altinget.no hafi fjallað um málið «í byrjun árs 2026».",
+      "confidence": 0.65,
       "speakers": [
         {
           "name": "Heimildin",
@@ -500,9 +532,8 @@
       "attribution_type": "paraphrased",
       "claim_count": 7,
       "verdicts": {
-        "partially_supported": 4,
-        "misleading": 2,
-        "unverifiable": 1
+        "partially_supported": 5,
+        "misleading": 2
       },
       "stance": "neutral",
       "slug": "altinget-no",
@@ -517,8 +548,7 @@
       "attribution_type": "paraphrased",
       "claim_count": 5,
       "verdicts": {
-        "partially_supported": 3,
-        "unverifiable": 1,
+        "partially_supported": 4,
         "misleading": 1
       },
       "stance": "anti_eu",

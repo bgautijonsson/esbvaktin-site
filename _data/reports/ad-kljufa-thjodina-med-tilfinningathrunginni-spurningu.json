@@ -9,9 +9,9 @@
   "analysis_date": "2026-03-10",
   "summary": "Greindar 14 fullyrðingar .",
   "verdict_counts": {
-    "supported": 8,
-    "partially_supported": 3,
+    "supported": 9,
     "misleading": 1,
+    "partially_supported": 2,
     "unverifiable": 1,
     "unsupported": 1
   },
@@ -77,23 +77,28 @@
         "claim_type": "opinion",
         "confidence": 0.65
       },
-      "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T162602.html\" title=\"Alþingi — Kristrún Frostadóttir, forsætisráðherra (andsvar, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">PARTY-PARL-001</a> staðfestir að Kristrún hafi sett fram «grundvallarprinsipp» og «skýr rauð flögg» um orku og sjávarútveg, og neitað að tilgreina nákvæm samningsskilmála á þingi. Orðalagið um «ofboðslega sterkt umboð» og «víðtæka samstöðu» er ekki beint staðfest sem tilvitnun í ræðum hennar samkvæmt þeim heimildum sem liggja fyrir. <a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> sýnir að Kristrún sagðist «ekki reiðubúin að ganga í ESB á hvaða skilmálum sem er» — sem endurspeglar svipað viðhorf um kröfugerð en ekki nákvæmlega sömu orðnotkun. Efnislega er sjónarmiðið samhljóða yfirlýsingum Kristrúnar, en nákvæm tilvitnun er óstaðfest.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.ruv.is/\" title=\"Althingi debate records; RÚV interviews with PM Kristrún Frostadóttir, February–March 2026\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-019</a> staðfestir fullyrðinguna beint: forsætisráðherra sagði að aðildarferli krefðist «ofboðslega sterks umboðs» og víðtækrar samstöðu í samfélaginu. Hún sagði í viðtölum og á Alþingi að mjór meirihluti dygði ekki til að hefja aðildarviðræður. POL-DATA-022 styður þetta og lýsir áherslu hennar á víðtæka samstöðu sem lykilþætti í pólitískri nálgun hennar.",
       "supporting_evidence": [
+        {
+          "id": "PARTY-DATA-019",
+          "source_name": "Althingi debate records; RÚV interviews with PM Kristrún Frostadóttir, February–March 2026",
+          "source_url": "https://www.ruv.is/"
+        },
         {
           "id": "PARTY-PARL-001",
           "source_name": "Alþingi — Kristrún Frostadóttir, forsætisráðherra (andsvar, 157. löggjafarþing)",
           "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T162602.html"
         },
         {
-          "id": "PARTY-DATA-016",
-          "source_name": "Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16",
-          "source_url": "https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/"
+          "id": "POL-DATA-022",
+          "source_name": "Samfylkingin — Leadership statements; RÚV; Morgunblaðið profiles",
+          "source_url": null
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Coalition agreement (stjórnarsáttmáli) 2024; party platforms; media reporting March 2026\" target=\"_blank\" rel=\"noopener\">POL-DATA-021</a> sýnir að ríkisstjórnarsamstarfið byggist á tveimur ESB-jákvæðum flokkum og einum ESB-efasemdarflokki (Flokkur fólksins), sem flækir hugmyndina um «víðtæka samstöðu». <a href=\"https://www.gallup.is/frettir/nato-og-esb/\" title=\"Gallup Ísland — EU support by party affiliation (November 2025)\" target=\"_blank\" rel=\"noopener\">POLL-DATA-011</a> sýnir að stuðningur við ESB-aðild skiptist mjög mismunandi eftir flokkum — 90% meðal Viðreisnar kjósenda en 10% meðal Miðflokkskjósenda.",
-      "confidence": 0.5,
+      "missing_context": "Krafan um «sterkt umboð» er pólitísk yfirlýsing en ekki lagalegt skilyrði — löggjöfin um þjóðaratkvæðagreiðsluna kveður ekki á um neinn lágmarksþröskuld. Áherslan getur verið herferðaraðferð til að stjórna væntingum eða senda merki til ESB-efins samstarfsaðila.",
+      "confidence": 0.85,
       "speakers": [
         {
           "name": "Kristrún Frostadóttir",
@@ -223,7 +228,7 @@
         "confidence": 0.8
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IS\" title=\"World Bank — World Development Indicators (FP.CPI.TOTL.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-013</a> og <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__visitolur__1_vnv__1_vnv/VIS01005.px\" title=\"Hagstofa Íslands — Consumer price index; Eurostat — HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-003</a> sýna að verðbólga á Íslandi hefur verið viðvarandi hærri og sveiflukenndari en á evrusvæðinu — meðaltal um 4,7–5,5% á árunum 2000–2025 samanborið við 2,1% á evrusvæðinu. Verðbólga mældist 8,3–8,7% á Íslandi 2022–2023 og hefur verið yfir 6% stóran hluta ársins 2024. Þessar tölur styðja að erfiðlega hafi gengið að halda verðbólgu í skefjum. Fullyrðingin er þó of afdráttarlaus — Seðlabankinn hefur á vissum tímabilum náð verðbólgu niður í 2–3% (2014–2019), svo ekki er rétt að segja að það hafi «ekki tekist» án nokkurs fyrirvara.",
+      "explanation": "Verðbólga á Íslandi hefur verið viðvarandi hærri og sveiflukenndari en á evrusvæðinu. <a href=\"https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IS\" title=\"World Bank — World Development Indicators (FP.CPI.TOTL.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-013</a> sýnir meðalverðbólgu um 4,7% á árunum 2000–2024 samanborið við 2% markmið Seðlabanka Evrópu, og <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__visitolur__1_vnv__1_vnv/VIS01005.px\" title=\"Hagstofa Íslands — Consumer price index; Eurostat — HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-003</a> skráir 5,5% meðaltal yfir 2005–2025. Verðbólgan fór í 12,7% árið 2008 og 10,2% árin 2022–2023. Fullyrðingin «ekki hefur tekist að berja niður verðbólgu» er þó of einföld — á árunum 2014–2019 var meðalverðbólga 2,3% samkvæmt <a href=\"https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IS\" title=\"World Bank — World Development Indicators (FP.CPI.TOTL.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-013</a>, sem bendir til þess að á rólegustu árunum hafi tekist nokkuð vel til. Seðlabankinn hefur þó reglulega þurft að bregðast við verðbólguskotum með háum vöxtum — stýrivextir hafa verið að meðaltali um 6,5% samanborið við 1,5% hjá Seðlabanka Evrópu.",
       "supporting_evidence": [
         {
           "id": "CURRENCY-DATA-013",
@@ -247,7 +252,7 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Á árunum 2014–2019 var meðalverðbólga á Íslandi um 2,3%, sem sýnir að Seðlabankanum hefur tekist að halda verðbólgu í skefjum á ákveðnum tímabilum (<a href=\"https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IS\" title=\"World Bank — World Development Indicators (FP.CPI.TOTL.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-013</a>). Háir vextir Seðlabankans (um 8,5% snemma árs 2026) endurspegla verðbólguálag og gjaldmiðilsáhættu (<a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Policy rate decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURR-DATA-004</a>). Smæð og innflutningsháð efnahagslíf Íslands gerir það skipulagslega verðbólguhættara, óháð gjaldmiðilsfyrirkomulagi.",
+      "missing_context": "Verðbólga á Íslandi skýrist að hluta af smæð og opnum efnahag þar sem gengissveiflur berast hratt í verðlag — þetta myndi ekki hverfa að fullu með evruaðild. Evrusvæðið sjálft upplifði 8,4% verðbólgu árið 2022. Raunvextir (að frádreginni verðbólgu) eru minni munur en nafnvextir gefa til kynna (<a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Policy rate decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURR-DATA-004</a>). Verðtryggð húsnæðislán flækja samanburð enn frekar (<a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a>).",
       "confidence": 0.82,
       "speakers": [
         {
@@ -408,11 +413,11 @@
         "confidence": 0.15
       },
       "verdict": "unverifiable",
-      "explanation": "Engar heimildir í staðreyndagrunni fjalla um hjúkrunarrými eða opnun þeirra. Heimildir sem fundust (<a href=\"https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/\" title=\"Althingi — Government composition, session 157\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-002</a>, <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland; Euronews; France24; coalition agreement\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-013</a>) varða eingöngu samsetningu ríkisstjórnarinnar og stefnu í ESB-málum, ekki heilbrigðisinnviði. Fullyrðingin er því áfram óstaðfestanleg með tiltækum gögnum.",
+      "explanation": "Engin heimild í staðreyndagrunni fjallar um fjölda hjúkrunarrýma sem opnuð hafa verið af núverandi eða fyrri ríkisstjórn. <a href=\"https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/\" title=\"Althingi — Government composition, session 157\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-002</a> og <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland; Euronews; France24; coalition agreement\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-013</a> staðfesta samsetningu núverandi ríkisstjórnar og <a href=\"https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/\" title=\"Althingi — Ministers registry, session 157\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-003</a> tilgreinir heilbrigðisráðherra (Alma D. Möller), en engin gögn um hjúkrunarrými eru til staðar. Fullyrðingin snýr að heilbrigðismálum sem falla utan gagnagrunns ESBvaktarinnar.",
       "supporting_evidence": [],
       "contradicting_evidence": [],
-      "missing_context": "Þörf er á gögnum frá heilbrigðisráðuneytinu eða Landlæknisembættinu um fjölda nýrra hjúkrunarrýma eftir ríkisstjórnum til að meta þessa fullyrðingu.",
-      "confidence": 0.95,
+      "missing_context": "Fullyrðingin krefst sérhæfðra gagna frá heilbrigðisráðuneytinu eða Landspítala um opnun hjúkrunarrýma eftir ríkisstjórnum. Slíkar heimildir eru ekki í staðreyndagrunni ESBvaktarinnar.",
+      "confidence": 0.9,
       "speakers": [
         {
           "name": "Kristrún Frostadóttir",
@@ -628,9 +633,9 @@
       "attribution_type": "quoted",
       "claim_count": 10,
       "verdicts": {
-        "supported": 6,
-        "partially_supported": 2,
+        "supported": 7,
         "misleading": 1,
+        "partially_supported": 1,
         "unverifiable": 1
       },
       "stance": "pro_eu",
@@ -646,8 +651,8 @@
       "attribution_type": "quoted",
       "claim_count": 4,
       "verdicts": {
-        "supported": 2,
-        "partially_supported": 2
+        "supported": 3,
+        "partially_supported": 1
       },
       "stance": "anti_eu",
       "slug": "gudrun-hafsteinsdottir",

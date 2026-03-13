@@ -388,12 +388,12 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "Undirliggjandi rök fullyrðingarinnar eiga sér stoð að hluta. <a href=\"https://cb.is/statistics/official-exchange-rate/\" title=\"Seðlabanki Íslands — Monetary Bulletin; ECB Statistical Data Warehouse\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-004</a> sýnir að íslensku krónunni fylgir há sveifla (10–12% á ári) og verðbólga á Íslandi hefur verið um 4,5% á ári — sem getur skapað tækifæri fyrir fjármagnseigendur sem geta varið sig gegn gengisáhættu. <a href=\"https://www.cb.is/statistics/international-reserves/\" title=\"Seðlabanki Íslands — Alþjóðaforðinn; Fjármálastöðugleikaskýrsla\" target=\"_blank\" rel=\"noopener\">CURR-DATA-006</a> skráir kostnað við gjaldeyrisforða sem nemur um 30–50 milljörðum króna árlega, og <a href=\"https://www.government.is/topics/food-fisheries-and-agriculture/fisheries-in-iceland/\" title=\"Icelandic Ministry of Food, Agriculture and Fisheries — Veiðigjald\" target=\"_blank\" rel=\"noopener\">FISH-DATA-008</a> sýnir lágt veiðigjald miðað við auðlindaarðinn. Fullyrðingin um bein tengsl milli krónunnar og hagnaðar «kvótakónga» er hins vegar pólitískt mat sem heimildir staðfesta ekki beint — engin heimild tengir sérstaklega hagnað útgerðaraðila við krónufyrirkomulagið.",
+      "explanation": "<a href=\"https://www.government.is/topics/food-fisheries-and-agriculture/fisheries-in-iceland/\" title=\"Icelandic Ministry of Food, Agriculture and Fisheries — Veiðigjald\" target=\"_blank\" rel=\"noopener\">FISH-DATA-008</a> staðfestir að veiðigjöld eru aðeins brot af auðlindaarðinum — kvótahafar halda eftir meginhluta hans. <a href=\"https://www.cb.is/statistics/international-reserves/\" title=\"Seðlabanki Íslands — Alþjóðaforðinn; Fjármálastöðugleikaskýrsla\" target=\"_blank\" rel=\"noopener\">CURR-DATA-006</a> sýnir að Seðlabankinn ber árlega um 30–50 milljarða króna kostnað af gjaldeyrisforða, sem er beinn kostnaður við krónusjálfstæðið. Hærri verðbólga og gengissveiflur eru staðfestar af <a href=\"https://cb.is/statistics/official-exchange-rate/\" title=\"Seðlabanki Íslands — Monetary Bulletin; ECB Statistical Data Warehouse\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-004</a>. Orsakasambandið sem fullyrðingin dregur — að kvótakóngar og fjármagnseigendur «hagnist á» krónunni sérstaklega — er þó ekki staðfest beint í heimildum. Útflutningsfyrirtæki geta hagnast á veikri krónu en tapað á sterkri, og verðbólga bitnar á eigendum innlendra eigna jafnt sem öðrum.",
       "supporting_evidence": [
         {
-          "id": "TRADE-COMP-004",
-          "source_name": "Seðlabanki Íslands — Monetary Bulletin; ECB Statistical Data Warehouse",
-          "source_url": "https://cb.is/statistics/official-exchange-rate/"
+          "id": "FISH-DATA-008",
+          "source_name": "Icelandic Ministry of Food, Agriculture and Fisheries — Veiðigjald",
+          "source_url": "https://www.government.is/topics/food-fisheries-and-agriculture/fisheries-in-iceland/"
         },
         {
           "id": "CURR-DATA-006",
@@ -401,14 +401,19 @@
           "source_url": "https://www.cb.is/statistics/international-reserves/"
         },
         {
-          "id": "FISH-DATA-008",
-          "source_name": "Icelandic Ministry of Food, Agriculture and Fisheries — Veiðigjald",
-          "source_url": "https://www.government.is/topics/food-fisheries-and-agriculture/fisheries-in-iceland/"
+          "id": "TRADE-COMP-004",
+          "source_name": "Seðlabanki Íslands — Monetary Bulletin; ECB Statistical Data Warehouse",
+          "source_url": "https://cb.is/statistics/official-exchange-rate/"
+        },
+        {
+          "id": "CURRENCY-DATA-016",
+          "source_name": "Central Bank of Iceland — Exchange rate data; ECB — Statistical Data Warehouse",
+          "source_url": "https://sedlabanki.is/hagtolur/gengi?PageID=289"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Heimildir sýna ekki beint orsakasamband milli krónunnar og hagnaðar kvótaeigenda. Útgerðarfyrirtæki selja afurðir í erlendum gjaldmiðlum (<a href=\"https://hagstofa.is/talnaefni/efnahagsmal/utanrikisverslun/\" title=\"Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður\" target=\"_blank\" rel=\"noopener\">FISH-DATA-027</a>) á meðan kostnaður er í krónum — gengislækkun getur þannig aukið hagnað þeirra, en þetta er önnur röksemd en fullyrðingin setur fram.",
-      "confidence": 0.5,
+      "missing_context": "Fullyrðingin er pólitísk túlkun á staðreyndum sem heimildir styðja aðeins að hluta. <a href=\"https://www.cb.is/monetary-policy/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> bendir á að veik króna hjálpar útflutningsgreinum en skaðar innflutning og kaupmátt. Sambandið milli krónunnar og hagsmuna kvótahafa er flóknara en fullyrðingin gefur til kynna — <a href=\"https://sedlabanki.is/hagtolur/gengi?PageID=289\" title=\"Central Bank of Iceland — Exchange rate data; ECB — Statistical Data Warehouse\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-016</a> sýnir að krónan veikist í kreppum en styrkist í uppsveiflu, sem skapar bæði tækifæri og áhættu.",
+      "confidence": 0.45,
       "speakers": [
         {
           "name": "Ása Lind Finnbogadóttir",

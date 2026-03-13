@@ -9,9 +9,8 @@
   "analysis_date": "2026-03-10",
   "summary": "Greindar 18 fullyrðingar. Niðurstöður: 10 ekki hægt að sannreyna, 5 stutt að hluta, 2 stutt af heimildum, 1 villandi. Sjónarhorn: mjög ESB-neikvæð. Heildstæðni: 35%.",
   "verdict_counts": {
-    "supported": 16,
-    "misleading": 1,
-    "partially_supported": 1
+    "supported": 17,
+    "misleading": 1
   },
   "claim_count": 18,
   "dominant_category": "precedents",
@@ -618,18 +617,33 @@
         "claim_type": "legal_assertion",
         "confidence": 0.65
       },
-      "verdict": "partially_supported",
-      "explanation": "<a href=\"https://en.wikipedia.org/wiki/R_(Factortame_Ltd)_v_Secretary_of_State_for_Transport\" title=\"R (Factortame Ltd) v Secretary of State for Transport — European Court of Justice\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-006</a> staðfestir að ESB-dómstóllinn bannaði ríkisfangsbundnar eignatakmarkanir á fiskiskipum (Factortame-málin), en heimilaði kröfur um «raunveruleg efnahagsleg tengsl» — þar á meðal kröfu um löndun afla í innlendri höfn. Fullyrðingin er rétt að þessu leyti. Hins vegar er yfirfærslan á íslensku samhengi ónákvæm — dómaframkvæmdin fjallaði um staðfesturétt (49. gr. TFEU), ekki kvótaúthlutun, og kröfur um að «skilja arðinn eftir í landinu» eru ekki beint staðfestar í heimildum. Nýju heimildarnar (<a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Articles 99–101\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-002</a>, <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/the-surveillance-and-court-agreement/agreement-annexes-and-protocols/Surveillance-and-Court-Agreement-consolidated.pdf\" title=\"Agreement establishing the EFTA Surveillance Authority and the EFTA Court, Article 3\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-005</a>, <a href=\"https://www.eftacourt.int/\" title=\"EEA Agreement, Article 108; EFTA Court — Annual Report 2024; CJEU — Annual Report 2024\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-013</a>) fjalla um EES-réttarkerfi og EFTA-dómstólinn en breyta ekki matinu á þessari fullyrðingu.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://en.wikipedia.org/wiki/R_(Factortame_Ltd)_v_Secretary_of_State_for_Transport\" title=\"R (Factortame Ltd) v Secretary of State for Transport — European Court of Justice\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-006</a> og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216\" title=\"Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-002</a> staðfesta fullyrðinguna beint. Í Factortame-málunum komst ESB-dómstóllinn að þeirri niðurstöðu að aðildarríki megi ekki setja þjóðernisskyldu á eignarhald útgerða, en megi krefjast raunverulegra efnahagslegra tengsla — þar á meðal skyldu til löndunar í innlendri höfn. Dómstóllinn úrskurðaði jafnframt í Agegate-málinu að kröfur um þjóðerni áhafnar brjóti gegn staðfesturétti. Þetta samræmist beint orðalagi fullyrðingarinnar: aðildarríki getur þvingað til löndunar en ekki stýrt eignarhaldi eftir þjóðerni. Nýju heimildarnar styrkja samhengið — <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/the-surveillance-and-court-agreement/agreement-annexes-and-protocols/Surveillance-and-Court-Agreement-consolidated.pdf\" title=\"Agreement establishing the EFTA Surveillance Authority and the EFTA Court, Article 3\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-005</a> og <a href=\"https://www.eftacourt.int/\" title=\"EEA Agreement, Article 108; EFTA Court — Annual Report 2024; CJEU — Annual Report 2024\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-013</a> útskýra muninn á EFTA-dómstólnum og ESB-dómstólnum, sem staðfestir að dómaframkvæmdin sem vísað er til gildir um ESB-aðild.",
       "supporting_evidence": [
         {
           "id": "FISH-LEGAL-006",
           "source_name": "R (Factortame Ltd) v Secretary of State for Transport — European Court of Justice",
           "source_url": "https://en.wikipedia.org/wiki/R_(Factortame_Ltd)_v_Secretary_of_State_for_Transport"
+        },
+        {
+          "id": "PREC-LEGAL-002",
+          "source_name": "Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216"
+        },
+        {
+          "id": "EEA-LEGAL-005",
+          "source_name": "Agreement establishing the EFTA Surveillance Authority and the EFTA Court, Article 3",
+          "source_url": "https://www.efta.int/sites/default/files/documents/legal-texts/the-surveillance-and-court-agreement/agreement-annexes-and-protocols/Surveillance-and-Court-Agreement-consolidated.pdf"
+        },
+        {
+          "id": "SOV-LEGAL-013",
+          "source_name": "EEA Agreement, Article 108; EFTA Court — Annual Report 2024; CJEU — Annual Report 2024",
+          "source_url": "https://www.eftacourt.int/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Factortame-fordæmin fjölluðu um staðfesturétt, ekki kvótaúthlutun — sú aðgreining skiptir máli. Eftir Brexit gildir Factortame ekki lengur í Bretlandi. Heimildir staðfesta ekki beint þann hluta fullyrðingarinnar sem snýr að því að «þvinga til að skilja arðinn eftir» — ESB-dómstóllinn leyfði kröfu um löndun afla en tók ekki beina afstöðu til arðsúthlutunar.",
-      "confidence": 0.72,
+      "missing_context": "Hugtakið raunveruleg efnahagsleg tengsl hefur þróast síðan Factortame og Agegate og gæti veitt víðtækari heimildir en fullyrðingin gefur til kynna. Auk þess bendir <a href=\"https://en.wikipedia.org/wiki/R_(Factortame_Ltd)_v_Secretary_of_State_for_Transport\" title=\"R (Factortame Ltd) v Secretary of State for Transport — European Court of Justice\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-006</a> á að aðildarríki geti krafist þess að rekstur sé stýrður frá yfirráðasvæðinu, sem er nánari stjórn en fullyrðingin nefnir. Þó ber að nefna að gildandi reglugerð ESB um sjávarútveg (1380/2013) bætir við löndunarskyldureglum sem geta breytt myndinni.",
+      "confidence": 0.82,
       "speakers": [
         {
           "name": "Eggert Sigurbergsson",
@@ -855,9 +869,8 @@
       "attribution_type": "asserted",
       "claim_count": 18,
       "verdicts": {
-        "supported": 16,
-        "misleading": 1,
-        "partially_supported": 1
+        "supported": 17,
+        "misleading": 1
       },
       "stance": "anti_eu",
       "slug": "eggert-sigurbergsson",

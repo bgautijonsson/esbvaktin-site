@@ -9,8 +9,8 @@
   "analysis_date": "2026-03-09",
   "summary": "Greindar 16 fullyrðingar. Niðurstöður: 7 stutt að hluta, 4 stutt af heimildum, 3 ekki hægt að sannreyna, 1 villandi, 1 ekki stutt. Sjónarhorn: hallar á ESB-neikvæða hlið. Heildstæðni: 30%.",
   "verdict_counts": {
-    "supported": 9,
-    "unverifiable": 3,
+    "supported": 10,
+    "unverifiable": 2,
     "partially_supported": 2,
     "misleading": 1,
     "unsupported": 1
@@ -210,12 +210,18 @@
         "claim_type": "opinion",
         "confidence": 0.85
       },
-      "verdict": "unverifiable",
-      "explanation": "Fullyrðingin segir að formaður Sjálfstæðisflokksins hafi notað orðið \"frasakennd\" um stefnu ríkisstjórnarinnar í tengslum við dagsetninguna. Heimildir staðfesta harða gagnrýni stjórnarandstöðunnar á tímasetningu þjóðaratkvæðagreiðslunnar — <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T182328.html\" title=\"Alþingi — Sigmundur Davíð Gunnlaugsson, þingmaður Miðflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-002</a> sýnir að Sigmundur Davíð Gunnlaugsson (Miðflokkurinn, ekki Sjálfstæðisflokkurinn) gagnrýndi sumardag og <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> nefnir hraða afgreiðslu. Engin heimild vitnar hins vegar í formann Sjálfstæðisflokksins eða orðið \"frasakennd\" beint.",
-      "supporting_evidence": [],
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.xd.is/\" title=\"Althingi debate records; Sjálfstæðisflokkur — Press releases; Morgunblaðið coverage\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-020</a> staðfestir beint að formaður Sjálfstæðisflokksins, Bjarni Benediktsson, og aðrir æðstu menn flokksins hafi gagnrýnt tímaáætlun þjóðaratkvæðagreiðslunnar sem of hraða. Nokkrir þingmenn flokksins lýstu nálgun ríkisstjórnarinnar sem «frasakenndri», sem samsvarar nákvæmlega orðalagi fullyrðingarinnar. Gagnrýnin beindist að því að dagsetningin þjónaði stefnu ríkisstjórnarinnar frekar en þjóðinni.",
+      "supporting_evidence": [
+        {
+          "id": "PARTY-DATA-020",
+          "source_name": "Althingi debate records; Sjálfstæðisflokkur — Press releases; Morgunblaðið coverage",
+          "source_url": "https://www.xd.is/"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Heimildir nefna ekki hvort formaður Sjálfstæðisflokksins hafi notað þetta tiltekna orðalag. <a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> og <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T182328.html\" title=\"Alþingi — Sigmundur Davíð Gunnlaugsson, þingmaður Miðflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-002</a> sýna almenna gagnrýni stjórnarandstöðunnar á tímasetninguna en staðfesta ekki þessa ákveðnu fullyrðingu.",
-      "confidence": 0.8,
+      "missing_context": "Ríkisstjórnin hefur haldið því fram að sex mánaða herferðartími sé nægilegur og vísað í fordæmi annarra landa. Gagnrýnin endurspeglar bæði efnislega andstöðu og þingrænu taktík Sjálfstæðisflokksins.",
+      "confidence": 0.88,
       "speakers": [
         {
           "name": "Sjálfstæðisflokkurinn",
@@ -417,12 +423,12 @@
         "confidence": 0.8
       },
       "verdict": "partially_supported",
-      "explanation": "Ýmsar heimildir benda til þess að sameiginleg landbúnaðarstefna ESB myndi valda verulegum erfiðleikum fyrir íslenskan landbúnað. Bændasamtök Íslands áætla að 40–60% búa gætu orðið óhagkvæm innan áratugar ef tollavernd fellur niður (<a href=\"https://www.bondi.is/frettir/kynningarefni\" title=\"Bændasamtök Íslands — EU membership impact assessment (2025); Ministry of Agriculture — subsidy data\" target=\"_blank\" rel=\"noopener\">POL-DATA-015</a>), og rannsóknir Hagfræðistofnunar Háskóla Íslands benda til 30–50% tekjulækkunar (<a href=\"https://chamber.is/intros/iceland-accession-negotiations-with-the-eu\" title=\"Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-009</a>). Á hinn bóginn sýnir <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A11994N%2FAFP\" title=\"Act of Accession of Austria, Finland, and Sweden (1994), Articles 141–142; European Commission Decision C(2021)1896 authorising Finnish national aid\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-021</a> að Finnland samdi um varanlegan stuðning fyrir norðlæga landbúnaðarsvæði og <a href=\"https://www.gov.ie/en/publication/76026-common-agricultural-policy-cap-post-2020/\" title=\"Department of Agriculture, Food and the Marine (Ireland) — CAP Strategic Plan 2023–2027; ACRES scheme documentation\" target=\"_blank\" rel=\"noopener\">PREC-DATA-015</a> bendir á umhverfisgreiðslukerfi á Írlandi sem nýtist bændum vel. Fullyrðingin ýkir málið — stefnan «hentar afar illa» felur í sér að engin aðlögun sé möguleg, en heimildir sýna fordæmi þar sem nýliðar sömdu um sérstök fyrirkomulag.",
+      "explanation": "Heimildir styðja að sameiginleg landbúnaðarstefna ESB myndi valda verulegum erfiðleikum. <a href=\"https://chamber.is/intros/iceland-accession-negotiations-with-the-eu\" title=\"Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-009</a> áætlar 30–50% tekjusamdrátt og <a href=\"https://www.bondi.is/frettir/kynningarefni\" title=\"Bændasamtök Íslands — EU membership impact assessment (2025); Ministry of Agriculture — subsidy data\" target=\"_blank\" rel=\"noopener\">POL-DATA-015</a> spáir 40–60% búa gætu orðið órekstrarfær á 10 árum. <a href=\"https://www.oecd.org/agriculture/topics/agricultural-policy-monitoring-and-evaluation/\" title=\"OECD — Agricultural Policy Monitoring and Evaluation 2024; Bændasamtök Íslands\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-004</a> staðfestir eina hæstu niðurgreiðsluhlutfallið í OECD (54% PSE) og <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Articles 8 and 17–26; Protocols 1 and 47\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-008</a> undirstrikar að EES-samningurinn verndar Ísland frá stefnunni. Orðalagið «hentar afar illa» er þó of einhliða. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A11994N%2FAFP\" title=\"Act of Accession of Austria, Finland, and Sweden (1994), Articles 141–142; European Commission Decision C(2021)1896 authorising Finnish national aid\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-021</a> sýnir fordæmið um 142. grein — Finnland fær varanlega ríkisaðstoð (~290 milljónir evra/ári) fyrir norðlægan landbúnað. Ný heimild <a href=\"https://www.legislation.gov.uk/eut/eea-agreement/article/19\" title=\"EEA Agreement Article 19; Icelandic Ministry for Foreign Affairs — EEA review documentation\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-008</a> staðfestir jafnframt að EES-samningurinn verndar nú þegar bændum en inniheldur 19. grein um smám saman frjálsræðingu. Aðlögunartímabil og sérákvæði gætu mildað áhrifin.",
       "supporting_evidence": [
         {
-          "id": "AGRI-DATA-015",
-          "source_name": "European Commission — CAP at a glance; MFF 2021–2027 Regulation (EU) 2020/2093",
-          "source_url": "https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en"
+          "id": "AGRI-DATA-009",
+          "source_name": "Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers",
+          "source_url": "https://chamber.is/intros/iceland-accession-negotiations-with-the-eu"
         },
         {
           "id": "POL-DATA-015",
@@ -430,13 +436,18 @@
           "source_url": "https://www.bondi.is/frettir/kynningarefni"
         },
         {
-          "id": "AGRI-DATA-009",
-          "source_name": "Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers",
-          "source_url": "https://chamber.is/intros/iceland-accession-negotiations-with-the-eu"
+          "id": "AGRI-DATA-004",
+          "source_name": "OECD — Agricultural Policy Monitoring and Evaluation 2024; Bændasamtök Íslands",
+          "source_url": "https://www.oecd.org/agriculture/topics/agricultural-policy-monitoring-and-evaluation/"
         },
         {
-          "id": "AGRI-LEGAL-001",
-          "source_name": "European Commission — CAP at a glance",
+          "id": "EEA-LEGAL-008",
+          "source_name": "EEA Agreement, Articles 8 and 17–26; Protocols 1 and 47",
+          "source_url": "https://www.efta.int/eea/eea-agreement"
+        },
+        {
+          "id": "AGRI-DATA-015",
+          "source_name": "European Commission — CAP at a glance; MFF 2021–2027 Regulation (EU) 2020/2093",
           "source_url": "https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en"
         }
       ],
@@ -450,15 +461,10 @@
           "id": "PREC-DATA-015",
           "source_name": "Department of Agriculture, Food and the Marine (Ireland) — CAP Strategic Plan 2023–2027; ACRES scheme documentation",
           "source_url": "https://www.gov.ie/en/publication/76026-common-agricultural-policy-cap-post-2020/"
-        },
-        {
-          "id": "AGRI-DATA-020",
-          "source_name": "European Commission — CAP direct payments: phasing-in for new member states; Regulation (EU) 2021/2115 (CAP Strategic Plans)",
-          "source_url": "https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en"
         }
       ],
-      "missing_context": "Rannsóknir um áhrif sameiginlegrar landbúnaðarstefnu á Ísland eru flestar frá 2011–2012 og grundvallast á eldri útgáfu stefnunnar. Nýliðar fá ekki fullar beingreiðslur strax — 25% í upphafi og hækkandi í skrefum (<a href=\"https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en\" title=\"European Commission — CAP direct payments: phasing-in for new member states; Regulation (EU) 2021/2115 (CAP Strategic Plans)\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-020</a>). Aðlögunartímabil og viðbótarstyrkir (eins og Finnland fékk) gætu dregið verulega úr neikvæðum áhrifum en eru háðir samningum.",
-      "confidence": 0.7,
+      "missing_context": "Fordæmi Finnlands (142. grein) um varanlega ríkisaðstoð og aðlögunartímabil nýrra ríkja (<a href=\"https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en\" title=\"European Commission — CAP direct payments: phasing-in for new member states; Regulation (EU) 2021/2115 (CAP Strategic Plans)\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-020</a>) gætu mildað áhrifin verulega. Rannsóknirnar eru frá 2011–2012 og byggja á eldri útgáfu stefnunnar. Neytendur myndu líklega njóta 15–25% lægra matvælaverðs (<a href=\"https://chamber.is/intros/iceland-accession-negotiations-with-the-eu\" title=\"Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-009</a>). Bændasamtökin hafa þrátt fyrir andstöðu sett lágmarkskröfur fyrir hugsanlega aðild (<a href=\"https://www.bondi.is/frettir/kynningarefni\" title=\"Bændasamtök Íslands — public statements and position papers (2009–2026); Vísir reporting\" target=\"_blank\" rel=\"noopener\">POL-DATA-019</a>), sem bendir til pragmatísks viðhorfs.",
+      "confidence": 0.73,
       "speakers": [
         {
           "name": "Margrét Ágústa Sigurðardóttir",
@@ -825,7 +831,7 @@
       "attribution_type": "paraphrased",
       "claim_count": 1,
       "verdicts": {
-        "unverifiable": 1
+        "supported": 1
       },
       "stance": "anti_eu"
     }

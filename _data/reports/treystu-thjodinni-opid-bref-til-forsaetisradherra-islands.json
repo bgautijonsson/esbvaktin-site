@@ -9,10 +9,9 @@
   "analysis_date": "2026-03-10",
   "summary": "Greindar 12 fullyrðingar .",
   "verdict_counts": {
-    "supported": 9,
+    "supported": 10,
     "unverifiable": 1,
-    "misleading": 1,
-    "partially_supported": 1
+    "misleading": 1
   },
   "claim_count": 12,
   "dominant_category": "sovereignty",
@@ -484,33 +483,23 @@
         "claim_type": "opinion",
         "confidence": 0.65
       },
-      "verdict": "partially_supported",
-      "explanation": "<a href=\"https://stjornlagarad.is/other_files/stjornlagarad/Frumvarp-enska.pdf\" title=\"Stjórnlagaráð — A Proposal for a new Constitution for the Republic of Iceland (English translation)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-017</a> og <a href=\"https://stjornlagarad.is/english/\" title=\"Stjórnlagaráð — Frumvarp til stjórnarskipunarlaga (2011); Stjórnlaganefnd\" target=\"_blank\" rel=\"noopener\">SOV-DATA-010</a> staðfesta að Stjórnlagaráð (ekki Stjórnarskrárfélagið) samdi auðlindaákvæði sem tryggir þjóðareign á auðlindum, og að 82,9% kusu með ákvæðinu í ráðgefandi þjóðaratkvæðagreiðslu 2012. <a href=\"https://www.althingi.is/lagas/nv/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79\" target=\"_blank\" rel=\"noopener\">SOV-DATA-002</a> og <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands; Stjórnlaganefnd (2011) report\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-027</a> staðfesta að ESB-aðild krefðist stjórnarskrárbreytingar vegna fullveldisframsal. Tengsl auðlindaákvæðis og ESB-aðildarviðræðna eiga sér því stoð í heimildum. Fullyrðingin vísar þó til «Stjórnarskrárfélagsins» en heimildir nefna eingöngu Stjórnlagaráðið — ekki er ljóst hvort átt sé við sama aðilann eða sérstakt félag sem hefur tekið þessa afstöðu.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.stjornarskrarfelagid.is/\" title=\"Stjórnarskrárfélagið — Public statements and press releases; 2012 constitutional referendum results\" target=\"_blank\" rel=\"noopener\">SOV-DATA-019</a> staðfestir beint að Stjórnarskrárfélagið telji að aðildarviðræður eigi ekki að hefjast án þess að tryggja auðlindaákvæði í stjórnarskrá. Félagið vísar í niðurstöðu þjóðaratkvæðagreiðslunnar 2012, þar sem 82,9% samþykktu auðlindaákvæðið (<a href=\"https://stjornlagarad.is/other_files/stjornlagarad/Frumvarp-enska.pdf\" title=\"Stjórnlagaráð — A Proposal for a new Constitution for the Republic of Iceland (English translation)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-017</a>). Afstaða félagsins er skýr og vel skráð í heimildum.",
       "supporting_evidence": [
+        {
+          "id": "SOV-DATA-019",
+          "source_name": "Stjórnarskrárfélagið — Public statements and press releases; 2012 constitutional referendum results",
+          "source_url": "https://www.stjornarskrarfelagid.is/"
+        },
         {
           "id": "SOV-LEGAL-017",
           "source_name": "Stjórnlagaráð — A Proposal for a new Constitution for the Republic of Iceland (English translation)",
           "source_url": "https://stjornlagarad.is/other_files/stjornlagarad/Frumvarp-enska.pdf"
-        },
-        {
-          "id": "SOV-DATA-010",
-          "source_name": "Stjórnlagaráð — Frumvarp til stjórnarskipunarlaga (2011); Stjórnlaganefnd",
-          "source_url": "https://stjornlagarad.is/english/"
-        },
-        {
-          "id": "SOV-DATA-002",
-          "source_name": "Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79",
-          "source_url": "https://www.althingi.is/lagas/nv/1944033.html"
-        },
-        {
-          "id": "SOV-LEGAL-027",
-          "source_name": "Stjórnarskrá lýðveldisins Íslands; Stjórnlaganefnd (2011) report",
-          "source_url": "https://www.althingi.is/lagas/nuna/1944033.html"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Heimildir staðfesta að Stjórnlagaráð samdi auðlindaákvæðið en nefna ekki «Stjórnarskrárfélagið» sérstaklega. Drög Stjórnlagaráðs voru aldrei lögfest þrátt fyrir niðurstöðu þjóðaratkvæðagreiðslunnar 2012. Tengsl auðlindaverndar og ESB-aðildarviðræðna eru rökrétt en fullyrðingin um afstöðu tiltekins félags er ekki staðfest beint.",
-      "confidence": 0.45,
+      "missing_context": "Stjórnarskrárfélagið er hagsmunasamtök með ákveðna dagskrá — innleiðingu stjórnarskrárdraga 2011. Sumir lögfræðingar telja að ferlin — stjórnarskrárbreyting og ESB-viðræður — geti farið samhliða. ESB-aðild myndi ekki sjálfkrafa ganga framar stjórnarskrárákvæðum.",
+      "confidence": 0.85,
       "speakers": [
         {
           "name": "Stjórnarskrárfélagið",
