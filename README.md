@@ -1,173 +1,48 @@
-# ESBvaktin Site
+# ESB Vaktin — Vefsíða
 
-Static site for [esbvaktin.is](https://esbvaktin.is), an Icelandic civic information platform focused on the EU referendum debate.
+Static site for [esbvaktin.is](https://esbvaktin.is), an independent, data-driven civic information platform tracking claims in Iceland's EU referendum debate.
 
-This repository contains the website only. It does not contain the upstream analysis pipeline or source-of-truth database. The site is built with Eleventy and publishes a static bundle to GitHub Pages.
+The referendum is scheduled for 29 August 2026.
 
-## What The Site Does
+## What the site shows
 
-The site organizes referendum-related material into a few public surfaces:
+| Section | Description |
+|---|---|
+| **Fullyrðingar** | Claim tracker with five-level verdict scale |
+| **Umræðan** | Article-by-article analysis with extracted claims |
+| **Raddirnar** | Entities — politicians, parties, institutions — and their claim profiles |
+| **Heimildir** | Evidence library backing each verdict |
+| **Þingræður** | Alþingi debate coverage |
+| **Vikuyfirlit** | Weekly review of what changed |
+| **Málefni** | Issue-level overviews across all claims |
 
-- `Vikuyfirlit` — weekly briefings about what changed most recently
-- `Málefni` — evergreen issue guides for the biggest recurring questions
-- `Spurt og svarað` — short answers for first-time visitors who want the basics quickly
-- `Orðskýringar` — plain-language glossary for recurring referendum and site terms
-- `Fullyrðingar` — claim tracker and claim-level verdicts
-- `Umræðan` — article/report analysis
-- `Raddirnar` — entities, parties, institutions, and speakers in the discourse
-- `Heimildir` — evidence library
-- `Þingræður` — Alþingi debate coverage
-- `Aðferðafræði` — public methodology and transparency notes
+## Tech stack
 
-## Tech Stack
+- [Eleventy 3](https://www.11ty.dev/) with Nunjucks templates
+- Vanilla CSS with custom properties and dark mode
+- Client-side JSON trackers for filtering/sorting
+- GitHub Pages via GitHub Actions
 
-- Eleventy 3
-- Nunjucks templates
-- Vanilla CSS
-- Client-side JSON data loading for trackers
-- GitHub Pages deployment via GitHub Actions
-
-## Current Data Model
-
-The live site currently uses static JSON exports in `assets/data/`.
-
-Important:
-
-- DuckDB/Parquet is not part of the current website runtime
-- Any DuckDB-based querying is aspirational/future work
-- The homepage and the browser-side trackers are intentionally aligned to the same `assets/data/*.json` exports
-
-## Quick Start
-
-Requirements:
-
-- Node.js
-- npm
-
-Install dependencies:
+## Quick start
 
 ```bash
 npm install
+npm run serve   # Dev server at http://localhost:8080
+npm run build   # Build to _site/
 ```
 
-Run the local dev server:
+## How it works
 
-```bash
-npm run serve
-```
-
-This starts Eleventy with live reload, typically at [http://localhost:8080](http://localhost:8080).
-
-Build the production site:
-
-```bash
-npm run build
-```
-
-Clean the output directory:
-
-```bash
-npm run clean
-```
-
-## Project Structure
-
-```text
-_includes/          Shared layouts and detail templates
-_data/              Eleventy data loaders and detail collections
-assets/
-  css/              Global styles, tracker styles, shared tracker CSS
-  js/               Shared browser helpers and page-level tracker scripts
-  data/             Exported JSON consumed by the site
-malefni/            Evergreen issue guides
-spurningar-og-svor/ Plain-language FAQ
-ordaskyringar/      Plain-language glossary
-vikuyfirlit/        Weekly briefing index and Markdown briefing entries
-umraedan/           Report listing and report detail generation
-raddirnar/          Entity listing and entity detail generation
-heimildir/          Evidence listing and evidence detail generation
-thingraedur/        Debate listing and debate detail generation
-greiningar/         Legacy redirect stubs
-.github/workflows/  Deploy pipeline
-```
-
-## Tracker Architecture
-
-The interactive listing pages share a common front-end layer:
-
-- `assets/js/site-taxonomy.js`
-  Shared labels, classes, and taxonomy mappings
-- `assets/js/tracker-utils.js`
-  Small browser utilities such as escaping, number/date formatting, and debounce
-- `assets/js/tracker-renderer.js`
-  Shared HTML rendering helpers for controls, stats, and grouped collections
-- `assets/js/tracker-controller.js`
-  Shared state, async loading, delegated events, debounced input handling, and rerender flow
-- `assets/css/tracker-base.css`
-  Shared tracker primitives such as stats, filters, chips, and empty states
-
-Page-specific tracker scripts keep only domain logic such as filtering, sorting, grouping, and card markup.
-
-## Homepage Architecture
-
-The homepage is server-rendered from `_data/home.js`.
-
-That data file reads from `assets/data/*.json` so the front page reflects the same exported datasets used by the client-side trackers. It currently drives:
-
-- homepage status metadata
-- support links to `Vikuyfirlit`, `Málefni`, `Spurt og svarað`, and `Orðskýringar`
-- latest published weekly briefing
-- latest analysis card
-- verdict distribution
-- featured voices
-- debate activity
-- timeline/trust blocks
-
-## Weekly Briefings
-
-Published weekly briefings live under [`vikuyfirlit/`](/Users/brynjolfurjonsson/esbvaktin-site/vikuyfirlit).
-
-The intended workflow is:
-
-1. an external pipeline writes a Markdown file with front matter into `vikuyfirlit/`
-2. the file stays private while `draft: true`
-3. after review, flipping `draft` to `false` publishes it automatically
-
-The output contract for those files is documented in [`vikuyfirlit/README.md`](/Users/brynjolfurjonsson/esbvaktin-site/vikuyfirlit/README.md).
+The [analysis pipeline](https://github.com/bgautijonsson/esbvaktin) monitors Icelandic media, extracts claims, matches them against an evidence database, and assigns verdicts. JSON snapshots are exported into `assets/data/` in this repo and consumed by the site — both server-side (homepage) and client-side (tracker pages).
 
 ## Deployment
 
-Deploys run through [`.github/workflows/deploy.yml`](/Users/brynjolfurjonsson/esbvaktin-site/.github/workflows/deploy.yml).
+Pushes to `main` trigger a GitHub Actions workflow that builds and deploys to GitHub Pages with a custom domain.
 
-On pushes to `main`, the workflow:
+## Licence
 
-1. installs dependencies with `npm ci`
-2. builds the site with `npm run build`
-3. uploads `_site/`
-4. deploys to GitHub Pages
+Code is licensed under the [GNU Affero General Public License v3.0](LICENSE) (AGPL-3.0). Site content (editorials, analysis text, evidence data) is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
-## Related Repository
+## Related
 
-The upstream analysis/export pipeline lives in a separate repository:
-
-- `esbvaktin`
-
-That pipeline is responsible for generating the JSON snapshots copied into `assets/data/`.
-
-## Working On The Site
-
-A few repo-specific rules matter:
-
-- `assets/` is passthrough copied by Eleventy
-- root docs like `README.md`, `CLAUDE.md`, and `AGENTS.md` should not be published as site pages
-- public-facing claims about the architecture should stay aligned with the actual runtime
-- if you change exported data shapes, update both the homepage data loader and the relevant tracker script
-
-## Agent Docs
-
-There are separate agent-facing docs in:
-
-- `CLAUDE.md`
-- `AGENTS.md`
-
-Those are for coding agents and workflow handoff. This `README.md` is the human-facing entry point.
+- [esbvaktin](https://github.com/bgautijonsson/esbvaktin) — analysis pipeline, evidence database, export scripts
