@@ -1638,6 +1638,80 @@ img { max-width: 100%; height: auto; }
   text-decoration: none;
 }
 
+/* ── Contact form ──────────────────────────────────────────────────── */
+
+.contact-form {
+  display: grid;
+  gap: 1.25rem;
+  max-width: 540px;
+}
+
+.form-field {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.form-field label {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.form-optional {
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+.form-field select,
+.form-field input,
+.form-field textarea {
+  font-family: var(--font);
+  font-size: 0.95rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+  color: var(--text);
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.form-field select:focus,
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: var(--focus-ring);
+}
+
+.form-field textarea {
+  resize: vertical;
+  min-height: 8rem;
+}
+
+.form-submit {
+  justify-self: start;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+
+.form-submit:hover {
+  background: var(--accent-hover);
+}
+
+.form-note {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
 /* ── Responsive ─────────────────────────────────────────────────────── */
 
 @media (max-width: 600px) {

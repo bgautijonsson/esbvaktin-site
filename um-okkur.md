@@ -25,4 +25,4 @@ Sjá nánar á [Aðferðafræði](/adferdarfraedi/) síðunni.
 
 ## Hafa samband
 
-Viltu senda okkur grein til greiningar? Sendu á [greining@esbvaktin.is](mailto:greining@esbvaktin.is).
+Viltu senda okkur ábendingu, leiðréttingu eða athugasemd? [Hafa samband →](/hafa-samband/)

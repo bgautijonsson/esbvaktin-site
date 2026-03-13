@@ -1,0 +1,44 @@
+---
+layout: base.njk
+title: Hafa samband
+description: Sendu okkur athugasemd, ábendingu eða leiðréttingu.
+---
+
+<div class="page-intro">
+  <h1>Hafa samband</h1>
+  <p>Við tökum á móti ábendingum um heimildir sem vantar, leiðréttingum og öðrum athugasemdum. Skilaboð berast til ritstjórnar ESB Vaktarinnar.</p>
+</div>
+
+<form
+  class="contact-form"
+  action="https://formspree.io/f/myknpzkq"
+  method="POST"
+>
+  <div class="form-field">
+    <label for="category">Flokkur</label>
+    <select id="category" name="category" required>
+      <option value="" disabled selected>Veldu flokk...</option>
+      <option value="Ábending um heimild">Ábending um heimild</option>
+      <option value="Leiðrétting">Leiðrétting</option>
+      <option value="Fréttaábending">Fréttaábending</option>
+      <option value="Annað">Annað</option>
+    </select>
+  </div>
+
+  <div class="form-field">
+    <label for="message">Skilaboð</label>
+    <textarea id="message" name="message" rows="6" required placeholder="Skrifaðu athugasemd þína hér..."></textarea>
+  </div>
+
+  <div class="form-field">
+    <label for="email">Netfang <span class="form-optional">(valfrjálst — ef þú vilt fá svar)</span></label>
+    <input type="email" id="email" name="_replyto" placeholder="netfang@dæmi.is">
+  </div>
+
+  <!-- Honeypot for spam -->
+  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+  <button type="submit" class="form-submit">Senda athugasemd</button>
+
+  <p class="form-note">Skilaboð berast á <strong>info@esbvaktin.is</strong>. Við svörum eins fljótt og auðið er.</p>
+</form>

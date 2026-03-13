@@ -9,5 +9,6 @@ module.exports = {
   utility: [
     { label: "Vikuyfirlit", href: "/vikuyfirlit/", match: "prefix" },
     { label: "Málefni", href: "/malefni/", match: "prefix" },
+    { label: "Hafa samband", href: "/hafa-samband/", match: "exact" },
   ],
 };
