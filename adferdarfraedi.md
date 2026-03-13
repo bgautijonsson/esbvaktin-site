@@ -73,7 +73,10 @@ Ef þú telur að mat sé rangt eða heimildir vanti, sendu athugasemd á [info@
 
 ## Gagnsæi
 
-Allar forsendur og heimildir eru birtar með hverri greiningu. Hægt er að rekja hverja niðurstöðu til ákveðinna heimilda í staðreyndagrunni. Aðferðafræðin er opin til skoðunar og gagnrýni.
+Allar forsendur og heimildir eru birtar með hverri greiningu. Hægt er að rekja hverja niðurstöðu til ákveðinna heimilda í staðreyndagrunni. Aðferðafræðin er opin til skoðunar og gagnrýni. Allur grunnkóði verkefnisins er opinn:
+
+- [Greiningarkerfið](https://github.com/bgautijonsson/esbvaktin) — gagnavinnsla, fréttasöfnun, fullyrðingagreining og staðreyndagrunnur
+- [Vefsíðan](https://github.com/bgautijonsson/esbvaktin-site) — framendi og birtingarlag
 
 ## Hlutverk gervigreindar
 
@@ -89,4 +92,4 @@ Brynjólfur Gauti starfar sem ritstjóri og verkefnastjóri: hann hannar aðfer�
 
 ## Tæknilegar upplýsingar
 
-Vefsíðan er kyrrstæð (*static site*) og er byggð með [Eleventy](https://www.11ty.dev/). Gagnasöfn síðunnar eru birt sem kyrrstæð JSON-gögn sem eru sótt og síuð í vafranum. Greiningarkerfið notar PostgreSQL gagnagrunn með merkingarleitarvísitölu (*semantic search*) til að tengja fullyrðingar við heimildir.
+Vefsíðan er kyrrstæð (*static site*) og er byggð með [Eleventy](https://www.11ty.dev/). Gagnasöfn síðunnar eru birt sem kyrrstæð JSON-gögn sem eru sótt og síuð í vafranum. Greiningarkerfið notar PostgreSQL gagnagrunn með merkingarleit (*semantic search*) til að tengja fullyrðingar við heimildir.
