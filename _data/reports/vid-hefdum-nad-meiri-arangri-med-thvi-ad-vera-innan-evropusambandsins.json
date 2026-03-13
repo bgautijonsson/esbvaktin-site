@@ -10,8 +10,7 @@
   "summary": "Greindar 17 fullyrðingar. Niðurstöður: 7 stutt að hluta, 6 ekki hægt að sannreyna, 3 stutt af heimildum, 1 ekki stutt. Sjónarhorn: hallar á ESB-jákvæða hlið. Heildstæðni: 25%.",
   "verdict_counts": {
     "unverifiable": 2,
-    "supported": 10,
-    "unsupported": 1,
+    "supported": 11,
     "misleading": 2,
     "partially_supported": 2
   },
@@ -118,21 +117,26 @@
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
-      "verdict": "unsupported",
-      "explanation": "Þetta er rangt samkvæmt heimildum. <a href=\"https://ust.is/loft/losunarvottord/\" title=\"Umhverfisstofnun — Iceland's participation in EU ETS; European Commission — EU ETS data\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-002</a> segir skýrt að Ísland taki þátt í ETS-kerfinu í gegnum tvíhliða samning við ESB, ekki í gegnum EES-samninginn. <a href=\"https://www.efta.int/eea/eea-agreement/annex-iv\" title=\"EFTA Secretariat — EEA Agreement Annex IV (Energy); Althingi EU Assessment Committee\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-001</a> staðfestir þetta enn frekar og segir að Ísland hafi ekki tekið ETS-kerfið upp í EES-samninginn, heldur viðhaldi sérstöku fyrirkomulagi.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [
+      "verdict": "supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/eli/dec/2007/146(2)/oj/eng\" title=\"EEA Joint Committee Decision No 146/2007; EUR-Lex; EFTA Court\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-001</a> staðfestir skýrt að Ísland tekur þátt í ETS-viðskiptakerfinu í gegnum EES-samninginn. ETS-tilskipunin (2003/87/EB) var tekin upp í EES-samninginn með ákvörðun sameiginlegu EES-nefndarinnar nr. 146/2007 frá 26. október 2007, sem bætti tilskipuninni við sem lið 21al í XX. viðauka (umhverfi) við EES-samninginn. Ísland, Noregur og Liechtenstein hafa tekið þátt í ETS-kerfinu frá 1. janúar 2008 (upphaf II. áfanga) á sama lagagrundvelli og ESB-ríki. Eftirfarandi breytingar á ETS-tilskipuninni — þar á meðal flugið (tilskipun 2008/101/EB) og endurskoðanir á III. áfanga — hafa einnig verið teknar upp í EES-samninginn. Eftirlitsstofnun EFTA (ESA) hefur eftirlit með framkvæmd í EES/EFTA-ríkjunum og EFTA-dómstóllinn hefur lögsögu, eins og sást í máli E-2/25.",
+      "supporting_evidence": [
         {
-          "id": "ENERGY-LEGAL-002",
-          "source_name": "Umhverfisstofnun — Iceland's participation in EU ETS; European Commission — EU ETS data",
-          "source_url": "https://ust.is/loft/losunarvottord/"
+          "id": "ETS-LEGAL-001",
+          "source_name": "EEA Joint Committee Decision No 146/2007; EUR-Lex; EFTA Court",
+          "source_url": "https://eur-lex.europa.eu/eli/dec/2007/146(2)/oj/eng"
         },
         {
-          "id": "ENERGY-LEGAL-001",
-          "source_name": "EFTA Secretariat — EEA Agreement Annex IV (Energy); Althingi EU Assessment Committee",
-          "source_url": "https://www.efta.int/eea/eea-agreement/annex-iv"
+          "id": "ETS-LEGAL-002",
+          "source_name": "European Commission — Reducing emissions from aviation; Directive 2008/101/EC; Directive (EU) 2023/958",
+          "source_url": "https://climate.ec.europa.eu/eu-action/transport/reducing-emissions-aviation_en"
+        },
+        {
+          "id": "ETS-LEGAL-003",
+          "source_name": "EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission",
+          "source_url": "https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341"
         }
       ],
+      "contradicting_evidence": [],
       "missing_context": "Munurinn skiptir lagalegu máli: EES-samningurinn felur í sér ákveðinn rétt til aðlögunar og tveggja stoða eftirlit (ESA), á meðan tvíhliða samningurinn hefur önnur samningsskilyrði.",
       "confidence": 0.95,
       "speakers": [
@@ -826,8 +830,7 @@
       "attribution_type": "asserted",
       "claim_count": 6,
       "verdicts": {
-        "supported": 4,
-        "unsupported": 1,
+        "supported": 5,
         "misleading": 1
       },
       "stance": "neutral",
