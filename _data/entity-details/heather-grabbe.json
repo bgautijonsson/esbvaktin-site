@@ -7,16 +7,17 @@
   "party": null,
   "stance": "neutral",
   "stance_score": 0.0,
-  "credibility": 0.43,
+  "credibility": 0.5,
   "attribution_counts": {
     "asserted": 1,
-    "quoted": 6,
+    "quoted": 8,
+    "paraphrased": 1,
     "mentioned": 1
   },
   "althingi_stats": null,
   "scorecard": {
-    "supported": 4,
-    "partially_supported": 2,
+    "supported": 5,
+    "partially_supported": 4,
     "misleading": 1
   },
   "claims": [
@@ -300,6 +301,121 @@
       "article_title": "Minnkandi svigrúm sérlausna í stækkunarferli ESB",
       "article_source": "Miðflokkurinn",
       "article_date": "2026-03-12"
+    },
+    {
+      "claim_text": "Samkvæmt Heather Grabbe eru engar undanþágur í boði fyrir ný aðildarríki ESB — einungis er hægt að semja um aðlögunartímabil",
+      "original_quote": "Þannig að það er svigrúm til að semja um aðlögunartímabil, en það eru engar undanþágur í boði lengur.",
+      "verdict": "partially_supported",
+      "explanation": "Formlega er þetta rétt og vel stutt af heimildum. <a href=\"https://link.springer.com/book/10.1057/9780230510302\" title=\"Grabbe, H. (2006) 'The EU's Transformative Power: Europeanization Through Conditionality in Central and Eastern Europe', Palgrave Macmillan\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-016</a> staðfestir að Grabbe hefur lýst regluverkinu sem «take-it-or-leave-it» pakka. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> sýnir að Króatía fékk engar varanlegar undanþágur 2013. Viðræðurnar snúast um tímasetningu, ekki innihald — samkvæmt <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> og <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a>. Fullyrðingin er þó of afdráttarlaus: <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-004</a> sýnir að Finnland og Svíþjóð fengu varanlegan landbúnaðarstuðning og <a href=\"https://eur-lex.europa.eu/collection/eu-law/treaties.html\" title=\"European Parliament — EU Treaties and Protocols; Accession Treaty texts\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-023</a> bendir á ýmis fordæmi raunverulegra varanlegra undanþága sem virka sem slíkar í reynd.",
+      "missing_context": "Sumir lögfræðingar telja að 49. grein ESB-sáttmálans leyfi tæknilega hvaða samningsniðurstöðu sem er. Löng aðlögunartímabil (eins og 12 ára land-undanþága Póllands) geta í reynd virkað sem undanþágur. Finnski landbúnaðarstuðningurinn (142. grein) hefur verið endurnýjaður stöðugt í þrjá áratugi.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-016",
+          "source_name": "Grabbe, H. (2006) 'The EU's Transformative Power: Europeanization Through Conditionality in Central and Eastern Europe', Palgrave Macmillan",
+          "source_url": "https://link.springer.com/book/10.1057/9780230510302"
+        },
+        {
+          "id": "EEA-LEGAL-012",
+          "source_name": "European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        },
+        {
+          "id": "EEA-LEGAL-021",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        },
+        {
+          "id": "EEA-LEGAL-017",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards joining' factsheet",
+          "source_url": "https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "EEA-LEGAL-023",
+          "source_name": "European Parliament — EU Treaties and Protocols; Accession Treaty texts",
+          "source_url": "https://eur-lex.europa.eu/collection/eu-law/treaties.html"
+        },
+        {
+          "id": "AGRI-LEGAL-004",
+          "source_name": "EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        }
+      ],
+      "category": "eea_eu_law",
+      "attribution": "quoted",
+      "article_slug": "ad-kikja-i-pakkann-sem-er-nu-thegar-opinn",
+      "article_title": "Að kíkja í pakkann sem er nú þegar opinn",
+      "article_source": null,
+      "article_date": "2026-03-08"
+    },
+    {
+      "claim_text": "Samkvæmt Heather Grabbe hafa 27 ríki þegar samþykkt regluverkið og önnur ríki sem hafa gengið í sambandið hafa þurft að skrifa undir allt",
+      "original_quote": "Þetta hefur þegar verið samþykkt af 27 ríkjum. Önnur ríki hafa gengið í sambandið og þurft að skrifa undir allt.",
+      "verdict": "partially_supported",
+      "explanation": "Rétt er að ESB hefur 27 aðildarríki og öll hafa samþykkt regluverkið. <a href=\"https://eur-lex.europa.eu/statistics/legislative-acts-statistics.html\" title=\"EUR-Lex — Legislation statistics\" target=\"_blank\" rel=\"noopener\">EEA-DATA-001</a> staðfestir umfang lagasetningar ESB og <a href=\"https://www.efta.int/eea-lex\" title=\"EFTA Secretariat — EEA Agreement legal acts database\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-006</a> sýnir að um 13.000 gerðir hafa verið innleiddar í gegnum EES-samninginn. Fullyrðingin að öll ríki hafi «þurft að skrifa undir allt» er þó of einföld. <a href=\"https://eur-lex.europa.eu/collection/eu-law/treaties.html\" title=\"European Parliament — EU Treaties and Protocols; Accession Treaty texts\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-023</a> sýnir að mörg ríki hafa fengið varanlegar eða hálfvaranlegar undanþágur — Danmörk, Írland, Svíþjóð og Finnland hafa öll sérstöðu á ákveðnum sviðum. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E326\" title=\"Treaty on the Functioning of the European Union, Articles 326–334; European Commission — Enhanced cooperation factsheet\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-031</a> bendir einnig á að aukin samvinna (enhanced cooperation) þýðir að ekki öll ríki taka þátt í öllu.",
+      "missing_context": "Danmörk, Írland, Pólland og Tékkland hafa allar formlegar undanþágur. Svíþjóð hefur de facto undanþágu frá evrunni. Finnland hefur varanlegan sérstakan landbúnaðarstuðning. Fullyrðingin einfaldar flóknari veruleika þar sem ýmis ríki hafa fengið sérákvæði.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-DATA-001",
+          "source_name": "EUR-Lex — Legislation statistics",
+          "source_url": "https://eur-lex.europa.eu/statistics/legislative-acts-statistics.html"
+        },
+        {
+          "id": "EEA-LEGAL-006",
+          "source_name": "EFTA Secretariat — EEA Agreement legal acts database",
+          "source_url": "https://www.efta.int/eea-lex"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "EEA-LEGAL-023",
+          "source_name": "European Parliament — EU Treaties and Protocols; Accession Treaty texts",
+          "source_url": "https://eur-lex.europa.eu/collection/eu-law/treaties.html"
+        },
+        {
+          "id": "SOV-LEGAL-031",
+          "source_name": "Treaty on the Functioning of the European Union, Articles 326–334; European Commission — Enhanced cooperation factsheet",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E326"
+        }
+      ],
+      "category": "eea_eu_law",
+      "attribution": "quoted",
+      "article_slug": "ad-kikja-i-pakkann-sem-er-nu-thegar-opinn",
+      "article_title": "Að kíkja í pakkann sem er nú þegar opinn",
+      "article_source": null,
+      "article_date": "2026-03-08"
+    },
+    {
+      "claim_text": "Pólskir bændur þurftu að bíða í áratug eftir að fá fulla styrki úr sameiginlegu landbúnaðarstefnunni, þrátt fyrir að hlíta reglunum strax við aðild",
+      "original_quote": "Grabbe að pólskir bændur þurftu að bíða í áratug eftir að fá fulla styrki úr landbúnaðarstefnunni, þrátt fyrir að þurfa að hlíta reglunum strax.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-2023-27_en\" title=\"2003 Accession Treaty; 2005 Accession Treaty (Bulgaria/Romania); 2011 Croatia Accession Treaty; European Commission CAP reform documentation\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-016</a> staðfestir þetta beint: aðildarríkin frá 2004 (þar á meðal Pólland) byrjuðu á 25% af beingreiðslum og náðu fullri jafnstöðu eftir um 10 ár (2013). <a href=\"https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en\" title=\"European Commission — CAP direct payments: phasing-in for new member states; Regulation (EU) 2021/2115 (CAP Strategic Plans)\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-020</a> útskýrir innleiðingaráætlunina nánar — hækkun um 5 prósentustig á ári. Bændur þurftu hins vegar að uppfylla reglur sameiginlegu landbúnaðarstefnunnar strax, sem <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-004</a> staðfestir. Pólland gat «toppað upp» ESB-greiðslur með innlendum fjármunum á aðlögunartímabilinu, samkvæmt <a href=\"https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en\" title=\"European Commission — CAP direct payments: phasing-in for new member states; Regulation (EU) 2021/2115 (CAP Strategic Plans)\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-020</a>.",
+      "missing_context": "Pólland og önnur ný aðildarríki gátu bætt við innlendum greiðslum (CNDP) til viðbótar ESB-styrkjunum á aðlögunartímabilinu. Ný aðildarríki fengu jafnframt strax aðgang að dreifbýlisþróunarsjóðum (Pillar II) og markaðsstuðningi frá upphafi.",
+      "supporting_evidence": [
+        {
+          "id": "AGRI-DATA-016",
+          "source_name": "2003 Accession Treaty; 2005 Accession Treaty (Bulgaria/Romania); 2011 Croatia Accession Treaty; European Commission CAP reform documentation",
+          "source_url": "https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-2023-27_en"
+        },
+        {
+          "id": "AGRI-DATA-020",
+          "source_name": "European Commission — CAP direct payments: phasing-in for new member states; Regulation (EU) 2021/2115 (CAP Strategic Plans)",
+          "source_url": "https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en"
+        },
+        {
+          "id": "AGRI-LEGAL-004",
+          "source_name": "EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "agriculture",
+      "attribution": "paraphrased",
+      "article_slug": "ad-kikja-i-pakkann-sem-er-nu-thegar-opinn",
+      "article_title": "Að kíkja í pakkann sem er nú þegar opinn",
+      "article_source": null,
+      "article_date": "2026-03-08"
     }
   ],
   "articles": [
@@ -322,6 +438,17 @@
       "claim_count": 1,
       "attribution_types": [
         "asserted"
+      ]
+    },
+    {
+      "slug": "ad-kikja-i-pakkann-sem-er-nu-thegar-opinn",
+      "title": "Að kíkja í pakkann sem er nú þegar opinn",
+      "source": null,
+      "date": "2026-03-08",
+      "claim_count": 3,
+      "attribution_types": [
+        "paraphrased",
+        "quoted"
       ]
     }
   ]

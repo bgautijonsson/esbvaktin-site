@@ -2,17 +2,21 @@
   "slug": "bruegel",
   "name": "Bruegel",
   "type": "institution",
-  "description": "Stofnun — hlutlaus um ESB-aðild.",
+  "description": "Stofnun — hlynnt ESB-aðild.",
   "role": "hugveita í Brussel",
   "party": null,
-  "stance": "neutral",
-  "stance_score": 0.0,
-  "credibility": null,
+  "stance": "pro_eu",
+  "stance_score": 0.5,
+  "credibility": 0.5,
   "attribution_counts": {
+    "asserted": 2,
     "mentioned": 1
   },
   "althingi_stats": null,
-  "scorecard": {},
+  "scorecard": {
+    "partially_supported": 1,
+    "unverifiable": 1
+  },
   "claims": [
     {
       "claim_text": "Heather Grabbe sé sérfræðingur hjá Bruegel hugveitunni.",
@@ -34,6 +38,42 @@
       "article_title": "ESB-pakkinn er galopinn",
       "article_source": "Vísir",
       "article_date": "2026-03-09"
+    },
+    {
+      "claim_text": "Heather Grabbe er sérfræðingur hjá evrópsku hugveitunni Bruegel í Brussel",
+      "original_quote": "Heather Grabbe, sérfræðingur hjá evrópsku hugveitunni Bruegel í Brussel",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://link.springer.com/book/10.1057/9780230510302\" title=\"Grabbe, H. (2006) 'The EU's Transformative Power: Europeanization Through Conditionality in Central and Eastern Europe', Palgrave Macmillan\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-016</a> lýsir Heather Krabbe sem fyrrverandi forstöðukonu hjá Open Society European Policy Institute og áður starfandi hjá Bruegel og stækkunarteymi Framkvæmdastjórnar ESB. Hún hefur því tengsl við Bruegel, en heimildirnar segja «previously at Bruegel» — ekki að hún sé þar starfandi nú. Núverandi starfsstaða hennar er ekki staðfest í fyrirliggjandi heimildum.",
+      "missing_context": "Samkvæmt <a href=\"https://link.springer.com/book/10.1057/9780230510302\" title=\"Grabbe, H. (2006) 'The EU's Transformative Power: Europeanization Through Conditionality in Central and Eastern Europe', Palgrave Macmillan\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-016</a> var Krabbe «áður» hjá Bruegel og síðar hjá Open Society. Fullyrðingin gefur til kynna að hún starfi þar nú, en heimildir benda til þess að tengsl hennar við Bruegel séu fyrri starfsreynsla.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-016",
+          "source_name": "Grabbe, H. (2006) 'The EU's Transformative Power: Europeanization Through Conditionality in Central and Eastern Europe', Palgrave Macmillan",
+          "source_url": "https://link.springer.com/book/10.1057/9780230510302"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "other",
+      "attribution": "asserted",
+      "article_slug": "ad-kikja-i-pakkann-sem-er-nu-thegar-opinn",
+      "article_title": "Að kíkja í pakkann sem er nú þegar opinn",
+      "article_source": null,
+      "article_date": "2026-03-08"
+    },
+    {
+      "claim_text": "Bruegel er ein áhrifamesta og þekktasta ESB-sinnuða hugveitan í Brussel",
+      "original_quote": "Bruegel hugveitan er engin andstæðingur Evrópusambandsins, heldur ein áhrifamesta og þekktasta ESB-sinnuðu hugveitan í Brussel.",
+      "verdict": "unverifiable",
+      "explanation": "Engin heimild í staðreyndagrunni fjallar sérstaklega um Bruegel hugveituna, stöðu hennar eða pólitíska afstöðu. <a href=\"https://link.springer.com/book/10.1057/9780230510302\" title=\"Grabbe, H. (2006) 'The EU's Transformative Power: Europeanization Through Conditionality in Central and Eastern Europe', Palgrave Macmillan\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-016</a> nefnir Heather Grabbe í tengslum við Bruegel en lýsir ekki hugveitunni sjálfri. Þótt Bruegel sé vel þekkt hugveita í Brussel í almennri umræðu er ekki hægt að meta fullyrðinguna — sérstaklega lýsinguna «ESB-sinnuð» — út frá fyrirliggjandi heimildum.",
+      "missing_context": "Heimildir í staðreyndagrunni innihalda enga lýsingu á Bruegel hugveitunni, áhrifum hennar eða pólitískri afstöðu. Fullyrðingin er matskennd (skoðun) og erfitt að staðfesta hlutlægt.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [],
+      "category": "other",
+      "attribution": "asserted",
+      "article_slug": "ad-kikja-i-pakkann-sem-er-nu-thegar-opinn",
+      "article_title": "Að kíkja í pakkann sem er nú þegar opinn",
+      "article_source": null,
+      "article_date": "2026-03-08"
     }
   ],
   "articles": [
@@ -45,6 +85,16 @@
       "claim_count": 1,
       "attribution_types": [
         "mentioned"
+      ]
+    },
+    {
+      "slug": "ad-kikja-i-pakkann-sem-er-nu-thegar-opinn",
+      "title": "Að kíkja í pakkann sem er nú þegar opinn",
+      "source": null,
+      "date": "2026-03-08",
+      "claim_count": 2,
+      "attribution_types": [
+        "asserted"
       ]
     }
   ]
