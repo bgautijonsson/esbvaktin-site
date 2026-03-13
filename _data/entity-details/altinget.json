@@ -7,12 +7,15 @@
   "party": null,
   "stance": "neutral",
   "stance_score": 0.0,
-  "credibility": null,
+  "credibility": 0.5,
   "attribution_counts": {
+    "paraphrased": 1,
     "mentioned": 1
   },
   "althingi_stats": null,
-  "scorecard": {},
+  "scorecard": {
+    "partially_supported": 1
+  },
   "claims": [
     {
       "claim_text": "Norski miðillinn Altinget hafði upplýsingar sínar eftir heimildum bæði í Bretlandi og Bandaríkjunum.",
@@ -34,6 +37,33 @@
       "article_title": "Hitnaði í kolunum vegna meintra MAGA-tengsla",
       "article_source": "Morgunblaðið",
       "article_date": "2026-03-10"
+    },
+    {
+      "claim_text": "Norski fjölmiðillinn Altinget greindi frá því að Bandaríkjastjórn væri mjög mótfallin aðild Íslands að Evrópusambandinu",
+      "original_quote": "Norski fjölmiðillinn Altinget greindi frá því á dögunum að Bandaríkjastjórn væri mjög mótfallin aðild Íslands að Evrópusambandinu",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://europeelects.eu/iceland/\" title=\"Altinget.no; Heimildin; Europe Elects party classification\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-012</a> staðfestir að norski fjölmiðillinn Altinget.no greindi frá tengslum Miðflokksins við bandaríska Repúblikanaflokksins og Nigel Farage-tengda ráðgjafa. Hins vegar staðfestir <a href=\"https://www.nato.int/cps/en/natohq/topics_212802.htm\" title=\"NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list\" target=\"_blank\" rel=\"noopener\">SOV-DATA-009</a> að engin opinber afstaða Bandaríkjanna gegn ESB-aðild Íslands liggur fyrir — þvert á móti hafa Bandaríkin stutt evrópska samruna sem stöðugleikaþátt. Fullyrðingin um að Altinget hafi greint frá andstöðu Bandaríkjastjórnar er trúleg í ljósi <a href=\"https://europeelects.eu/iceland/\" title=\"Altinget.no; Heimildin; Europe Elects party classification\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-012</a>, en heimildir benda jafnframt til þess að opinber bandarísk afstaða sé önnur en andstöðufréttirnar gefa til kynna.",
+      "missing_context": "Beint aðgengi að Altinget-greininni vantar í staðreyndagrunni. Einnig getur afstaða bandarískra yfirvalda breyst eftir stjórnendum — Trump-stjórnin hefur verið gagnrýnni á ESB en fyrri ríkisstjórnir.",
+      "supporting_evidence": [
+        {
+          "id": "PARTY-DATA-012",
+          "source_name": "Altinget.no; Heimildin; Europe Elects party classification",
+          "source_url": "https://europeelects.eu/iceland/"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "SOV-DATA-009",
+          "source_name": "NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list",
+          "source_url": "https://www.nato.int/cps/en/natohq/topics_212802.htm"
+        }
+      ],
+      "category": "party_positions",
+      "attribution": "paraphrased",
+      "article_slug": "thorgerdur-bandarikin-greinilega-ekki-unnendur-esb",
+      "article_title": "Þorgerður: Bandaríkin greinilega ekki unnendur ESB",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-12"
     }
   ],
   "articles": [
@@ -45,6 +75,16 @@
       "claim_count": 1,
       "attribution_types": [
         "mentioned"
+      ]
+    },
+    {
+      "slug": "thorgerdur-bandarikin-greinilega-ekki-unnendur-esb",
+      "title": "Þorgerður: Bandaríkin greinilega ekki unnendur ESB",
+      "source": "Morgunblaðið",
+      "date": "2026-03-12",
+      "claim_count": 1,
+      "attribution_types": [
+        "paraphrased"
       ]
     }
   ],

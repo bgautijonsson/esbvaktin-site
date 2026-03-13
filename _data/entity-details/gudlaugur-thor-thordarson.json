@@ -6,13 +6,13 @@
   "role": "þingmaður",
   "party": "Sjálfstæðisflokkur",
   "stance": "anti_eu",
-  "stance_score": -0.5,
+  "stance_score": -0.57,
   "credibility": 0.61,
   "attribution_counts": {
     "asserted": 5,
     "quoted": 17,
-    "paraphrased": 5,
-    "mentioned": 2
+    "paraphrased": 6,
+    "mentioned": 3
   },
   "althingi_stats": {
     "speech_count": 208,
@@ -24,7 +24,7 @@
   "scorecard": {
     "unverifiable": 9,
     "supported": 7,
-    "partially_supported": 9,
+    "partially_supported": 10,
     "misleading": 2
   },
   "claims": [
@@ -409,6 +409,59 @@
       "article_title": "Guðlaugur Þór: Það á að vera hægt að ræða öll mál í Sjálfstæðisflokknum – líka aðild að ESB",
       "article_source": "DV",
       "article_date": "2025-02-10"
+    },
+    {
+      "claim_text": "Guðlaugur Þór Þórðarson vísar til skýrslu utanríkisráðuneytisins frá 2018 sem bendir til þess að hlutfall innleidds regluverks ESB sé nær 15%.",
+      "original_quote": "Guðlaugur Þór Þórðarson, alþingismaður Sjálfstæðisflokksins og fv. utanríkisráðherra, ber hins vegar brigður á það og vísar til skýrslu utanríkisráðuneytisins frá 2018, sem bendir til þess að hlutfallið sé nær 15%.",
+      "verdict": "unverifiable",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/154/rad20231129T000000.html\" title=\"Alþingi — Guðlaugur Þór Þórðarson, þingmaður Sjálfstæðisflokksins (flutningsræða, 154. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">ETS-PARL-001</a> staðfestir að Guðlaugur Þór er fyrrverandi utanríkisráðherra og þingmaður Sjálfstæðisflokksins með reynslu af EES-málum. Skýrsla utanríkisráðuneytisins frá 2018 er hins vegar ekki í staðreyndagrunninum og 15% talan er ekki staðfest. <a href=\"https://eur-lex.europa.eu/statistics/legislative-acts-statistics.html\" title=\"EUR-Lex — Legislation statistics\" target=\"_blank\" rel=\"noopener\">EEA-DATA-003</a> bendir til um þriðjungs (33%) innleiðingar á acquis, sem er á milli beggja fullyrðinga (15% og 80%).",
+      "missing_context": "Skýrsla utanríkisráðuneytisins frá 2018 er ekki í staðreyndagrunninum og ekki hægt að sannreyna 15% töluna. Mismunandi aðferðafræði getur skilað mjög ólíkum niðurstöðum — 15% gæti átt við ef miðað er við heildarfjölda lagagerða ESB (151.000+) á móti 13.000 innleiddum í gegnum EES.",
+      "supporting_evidence": [
+        {
+          "id": "ETS-PARL-001",
+          "source_name": "Alþingi — Guðlaugur Þór Þórðarson, þingmaður Sjálfstæðisflokksins (flutningsræða, 154. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/154/rad20231129T000000.html"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "mentioned",
+      "article_slug": "osamstiga-um-naegan-meirihluta",
+      "article_title": "Ósamstiga um nægan meirihluta",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-11"
+    },
+    {
+      "claim_text": "Skýrsla utanríkisráðuneytisins frá 2018 bendir til þess að Ísland hafi innleitt nær 15% af regluverki ESB (ekki 80% eins og utanríkisráðherra heldur fram).",
+      "original_quote": "vísar til skýrslu utanríkisráðuneytisins frá 2018, sem bendir til þess að hlutfallið sé nær 15%.",
+      "verdict": "partially_supported",
+      "explanation": "Samanburðurinn undirstrikar raunverulegan ágreining um aðferðafræði. <a href=\"https://eur-lex.europa.eu/statistics/legislative-acts-statistics.html\" title=\"EUR-Lex — Legislation statistics\" target=\"_blank\" rel=\"noopener\">EEA-DATA-001</a> sýnir að ESB hefur samþykkt yfir 151.000 bindandi lagagerðir, en <a href=\"https://www.efta.int/eea-lex\" title=\"EFTA Secretariat — EEA Agreement legal acts database\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-006</a> nefnir um 13.000 innleiddar í gegnum EES — sem gefur u.þ.b. 8–9% ef miðað er við heildarfjölda. Þetta er nær 15% tölunni en 80%. Á hinn bóginn nær EES-samningurinn til um 70% af löggjöf innri markaðarins samkvæmt <a href=\"https://www.eftasurv.int/internal-market/eea-efta-internal-market-scoreboard\" title=\"EFTA Surveillance Authority — Internal Market Scoreboard\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-001</a>. Báðar tölurnar (15% og 80%) eru háðar aðferðafræði og hvor um sig getur verið rétt í sínu samhengi.",
+      "missing_context": "Skýrsla utanríkisráðuneytisins frá 2018 er ekki í staðreyndagrunninum. Raunverulega er ágreiningurinn um hvað er talið: ef taldar eru allar lagagerðir ESB frá stofnun er hlutfallið lágt, ef aðeins er miðað við gildandi innri markaðslöggjöf er það hátt. Hvorugt hlutfallið segir alla söguna.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-DATA-001",
+          "source_name": "EUR-Lex — Legislation statistics",
+          "source_url": "https://eur-lex.europa.eu/statistics/legislative-acts-statistics.html"
+        },
+        {
+          "id": "EEA-LEGAL-006",
+          "source_name": "EFTA Secretariat — EEA Agreement legal acts database",
+          "source_url": "https://www.efta.int/eea-lex"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "EEA-LEGAL-001",
+          "source_name": "EFTA Surveillance Authority — Internal Market Scoreboard",
+          "source_url": "https://www.eftasurv.int/internal-market/eea-efta-internal-market-scoreboard"
+        }
+      ],
+      "category": "eea_eu_law",
+      "attribution": "paraphrased",
+      "article_slug": "osamstiga-um-naegan-meirihluta",
+      "article_title": "Ósamstiga um nægan meirihluta",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-11"
     },
     {
       "claim_text": "Guðlaugur Þór Þórðarson hefur setið á Alþingi síðan 2003.",
@@ -809,6 +862,17 @@
         "asserted",
         "paraphrased",
         "quoted"
+      ]
+    },
+    {
+      "slug": "osamstiga-um-naegan-meirihluta",
+      "title": "Ósamstiga um nægan meirihluta",
+      "source": "Morgunblaðið",
+      "date": "2026-03-11",
+      "claim_count": 2,
+      "attribution_types": [
+        "mentioned",
+        "paraphrased"
       ]
     },
     {
