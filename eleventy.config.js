@@ -80,6 +80,7 @@ module.exports = function (eleventyConfig) {
 
   // ── Verdict label filter ──────────────────────────────────────────
   eleventyConfig.addFilter("verdictLabel", (v) => taxonomy.verdictLabels[v] || v);
+  eleventyConfig.addFilter("verdictDescription", (v) => taxonomy.verdictDescriptions[v] || v);
 
   // ── Category label filter ─────────────────────────────────────────
   eleventyConfig.addFilter("categoryLabel", (c) => taxonomy.categoryLabels[c] || c);

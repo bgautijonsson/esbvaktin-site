@@ -70,7 +70,7 @@ return_link_support: true
           {% if c.verdict == v %}{% set count = count + 1 %}{% endif %}
         {% endfor %}
         {% if count %}
-        <span class="ct-verdict-pill verdict-{{ v | replace("partially_supported", "partial") }}">
+        <span class="ct-verdict-pill verdict-{{ v | replace("partially_supported", "partial") }}" title="{{ v | verdictDescription }}">
           {{ v | verdictLabel }}: {{ count }}
         </span>
         {% endif %}
@@ -107,7 +107,7 @@ return_link_support: true
     {% for item in topic.claims %}
     <details class="report-claim report-claim--{{ item.verdict | replace("partially_supported", "partial") }}">
       <summary class="report-claim-header">
-        <span class="ct-verdict-pill verdict-{{ item.verdict | replace("partially_supported", "partial") }}">
+        <span class="ct-verdict-pill verdict-{{ item.verdict | replace("partially_supported", "partial") }}" title="{{ item.verdict | verdictDescription }}">
           {{ item.verdict | verdictLabel }}
         </span>
         <span class="report-claim-title">{{ item.canonical_text_is }}</span>
@@ -165,7 +165,7 @@ return_link_support: true
         <div class="td-entity-verdicts">
           {% for v in verdictOrder %}
             {% if ent.verdict_breakdown[v] %}
-            <span class="ct-verdict-pill verdict-{{ v | replace("partially_supported", "partial") }}">
+            <span class="ct-verdict-pill verdict-{{ v | replace("partially_supported", "partial") }}" title="{{ v | verdictDescription }}">
               {{ v | verdictLabel }}: {{ ent.verdict_breakdown[v] }}
             </span>
             {% endif %}

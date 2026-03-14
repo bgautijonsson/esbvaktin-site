@@ -11,8 +11,15 @@
       supported: "Staðfest",
       partially_supported: "Að hluta staðfest",
       unsupported: "Óstutt",
-      misleading: "Villandi",
-      unverifiable: "Ósannanlegt",
+      misleading: "Þarfnast samhengis",
+      unverifiable: "Heimildir vantar",
+    },
+    verdictDescriptions: {
+      supported: "Heimildir styðja þessa fullyrðingu",
+      partially_supported: "Heimildir styðja hluta fullyrðingarinnar en ekki alla",
+      unsupported: "Heimildir sem við höfum styðja ekki þessa fullyrðingu",
+      misleading: "Fullyrðingin er ekki röng í sjálfu sér en heimildir sýna mikilvægt samhengi sem vantar",
+      unverifiable: "Við höfum ekki enn heimildir til að meta þessa fullyrðingu",
     },
     verdictClasses: {
       supported: "verdict-supported",

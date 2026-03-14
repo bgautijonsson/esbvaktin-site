@@ -114,7 +114,7 @@ evidence_preview: true
     {# Legend + pills #}
     <div class="verdict-summary">
       {% for verdict, count in report.verdict_counts %}
-      <span class="ct-verdict-pill verdict-{{ verdict | replace("partially_supported", "partial") }}">
+      <span class="ct-verdict-pill verdict-{{ verdict | replace("partially_supported", "partial") }}" title="{{ verdict | verdictDescription }}">
         {{ verdict | verdictLabel }}: {{ count }}
       </span>
       {% endfor %}
@@ -133,7 +133,7 @@ evidence_preview: true
     {# Phase 3: Verdict-coloured left border via modifier class #}
     <details class="report-claim report-claim--{{ item.verdict | replace("partially_supported", "partial") }}">
       <summary class="report-claim-header">
-        <span class="ct-verdict-pill verdict-{{ item.verdict | replace("partially_supported", "partial") }}">
+        <span class="ct-verdict-pill verdict-{{ item.verdict | replace("partially_supported", "partial") }}" title="{{ item.verdict | verdictDescription }}">
           {{ item.verdict | verdictLabel }}
         </span>
         <span class="report-claim-title">{{ item.claim.claim_text or item.claim.original_quote }}</span>

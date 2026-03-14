@@ -126,7 +126,7 @@ return_link_support: true
       <ul class="ev-citation-claims">
         {% for claim in report.claims %}
         <li class="ev-citation-claim">
-          <span class="ct-verdict-pill verdict-{{ claim.verdict | replace("partially_supported", "partial") }}">
+          <span class="ct-verdict-pill verdict-{{ claim.verdict | replace("partially_supported", "partial") }}" title="{{ claim.verdict | verdictDescription }}">
             {{ claim.verdict | verdictLabel }}
           </span>
           <span class="ev-citation-role ev-role-{{ claim.role }}">

@@ -39,6 +39,7 @@
     );
   }
   const VERDICT_LABELS = TAXONOMY.verdictLabels || {};
+  const VERDICT_DESCRIPTIONS = TAXONOMY.verdictDescriptions || {};
   const CATEGORY_LABELS = TAXONOMY.categoryLabels || {};
   const VERDICT_CLASSES = TAXONOMY.verdictClasses || {};
   const SOURCE_TYPE_LABELS = TAXONOMY.claimSourceTypeLabels || {};
@@ -225,8 +226,8 @@
         { value: stats.totalSightings, label: "tilvitnanir" },
         { value: stats.supported, label: "staðfestar", className: "ct-stat-supported" },
         { value: stats.partial, label: "að hluta", className: "ct-stat-partial" },
-        { value: stats.misleading, label: "villandi", className: "ct-stat-misleading" },
-        { value: stats.unverifiable, label: "ósannanlegar", className: "ct-stat-unverifiable" },
+        { value: stats.misleading, label: "samhengi vantar", className: "ct-stat-misleading" },
+        { value: stats.unverifiable, label: "heimildir vantar", className: "ct-stat-unverifiable" },
       ],
     });
   }
@@ -360,7 +361,7 @@
       <div class="ct-card${isFocused ? " ct-card--focused" : ""}" id="${escapeHtml(cardId)}" data-slug="${escapeHtml(claim.claim_slug)}">
         <div class="ct-card-header" role="button" tabindex="0" aria-expanded="false">
           <div class="ct-card-main">
-            <span class="ct-verdict-pill ${verdictClass}">${verdictLabel}</span>
+            <span class="ct-verdict-pill ${verdictClass}" title="${VERDICT_DESCRIPTIONS[claim.verdict] || ""}">${verdictLabel}</span>
             <span class="ct-category-tag">${categoryLabel}</span>
             ${sightingBadge}
           </div>

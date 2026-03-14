@@ -80,7 +80,7 @@ evidence_preview: true
         {% for v in verdictOrder %}
           {% set count = kn.verdict_breakdown[v] or 0 %}
           {% if count %}
-          <span class="ct-verdict-pill verdict-{{ v | replace("partially_supported", "partial") }}">
+          <span class="ct-verdict-pill verdict-{{ v | replace("partially_supported", "partial") }}" title="{{ v | verdictDescription }}">
             {{ v | verdictLabel }}: {{ count }}
           </span>
           {% endif %}
@@ -121,7 +121,7 @@ evidence_preview: true
       {# ── Clickable header (expand/collapse) ── #}
       <div class="od-fact-header" role="button" tabindex="0" aria-expanded="false">
         <div class="od-fact-header-top">
-          <span class="ct-verdict-pill verdict-{{ fact.verdict | replace('partially_supported', 'partial') }}">
+          <span class="ct-verdict-pill verdict-{{ fact.verdict | replace('partially_supported', 'partial') }}" title="{{ fact.verdict | verdictDescription }}">
             {{ fact.verdict | verdictLabel }}
           </span>
           <span class="ct-category-tag">{{ fact.category_is }}</span>
@@ -179,16 +179,16 @@ evidence_preview: true
     <p class="od-section-label">Fullyrðingar</p>
     <h2>Helstu fullyrðingar</h2>
 
-    {# Misleading claims callout #}
-    {% set misleadingTop = [] %}
+    {# Context-needed claims prompt #}
+    {% set contextTop = [] %}
     {% for item in overview.top_claims %}
       {% if loop.index0 < 5 and item.verdict == "misleading" %}
-        {% set misleadingTop = misleadingTop.concat([item]) %}
+        {% set contextTop = contextTop.concat([item]) %}
       {% endif %}
     {% endfor %}
-    {% if misleadingTop | length >= 2 %}
-    <div class="od-claims-alert">
-      <strong>{{ misleadingTop | length }} villandi fullyrðingar</strong> á meðal mest tilvitnaðra þessa vikuna.
+    {% if contextTop | length >= 2 %}
+    <div class="od-claims-alert od-claims-alert--context">
+      Nokkrar fullyrðingar vikunnar þarfnast nánara samhengis — smelltu til að sjá hvað heimildir segja.
     </div>
     {% endif %}
 
@@ -199,7 +199,7 @@ evidence_preview: true
         {# ── Clickable header (expand/collapse) ── #}
         <div class="ct-card-header" role="button" tabindex="0" aria-expanded="false">
           <div class="ct-card-main">
-            <span class="ct-verdict-pill verdict-{{ item.verdict | replace('partially_supported', 'partial') }}">
+            <span class="ct-verdict-pill verdict-{{ item.verdict | replace('partially_supported', 'partial') }}" title="{{ item.verdict | verdictDescription }}">
               {{ item.verdict | verdictLabel }}
             </span>
             <span class="ct-category-tag">{{ item.category_is }}</span>

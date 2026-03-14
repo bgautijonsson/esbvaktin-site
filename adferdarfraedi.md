@@ -50,8 +50,8 @@ Fullyrðingum er skipt í fimm trúverðugleikaflokka:
 - **Staðfest** — fullyrðingin er studd af áreiðanlegum gögnum og heimildum
 - **Að hluta staðfest** — kjarninn er réttur en orðalag eða samhengi er ónákvæmt
 - **Óstutt** — engin áreiðanleg gögn styðja fullyrðinguna
-- **Villandi** — fullyrðingin notar rétt gögn á villandi hátt eða sleppir mikilvægu samhengi
-- **Ósannanlegt** — ekki er hægt að sannreyna fullyrðinguna með tiltækum gögnum
+- **Þarfnast samhengis** — fullyrðingin er ekki röng í sjálfu sér en heimildir sýna mikilvægt samhengi sem vantar
+- **Heimildir vantar** — við höfum ekki enn heimildir til að meta þessa fullyrðingu
 
 
 ## Sjálfbatnandi kerfi

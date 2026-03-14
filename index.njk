@@ -48,11 +48,11 @@ wide_layout: true
       <span class="home-pipeline-label">Mat</span>
       <span class="home-pipeline-desc">Fullyrðingar flokkaðar eftir trúverðugleika</span>
       <span class="home-pipeline-verdicts">
-        <span class="home-verdict-dot home-verdict-dot--supported" title="Staðfest"></span>
-        <span class="home-verdict-dot home-verdict-dot--partial" title="Að hluta staðfest"></span>
-        <span class="home-verdict-dot home-verdict-dot--unverifiable" title="Ósannanlegt"></span>
-        <span class="home-verdict-dot home-verdict-dot--unsupported" title="Óstutt"></span>
-        <span class="home-verdict-dot home-verdict-dot--misleading" title="Villandi"></span>
+        <span class="home-verdict-dot home-verdict-dot--supported" title="{{ 'supported' | verdictDescription }}"></span>
+        <span class="home-verdict-dot home-verdict-dot--partial" title="{{ 'partially_supported' | verdictDescription }}"></span>
+        <span class="home-verdict-dot home-verdict-dot--unverifiable" title="{{ 'unverifiable' | verdictDescription }}"></span>
+        <span class="home-verdict-dot home-verdict-dot--unsupported" title="{{ 'unsupported' | verdictDescription }}"></span>
+        <span class="home-verdict-dot home-verdict-dot--misleading" title="{{ 'misleading' | verdictDescription }}"></span>
       </span>
     </div>
   </div>

@@ -28,6 +28,7 @@
     : (document.currentScript?.dataset.base || "/assets/data");
   const JSON_URL = `${DATA_BASE}/reports.json`;
   const VERDICT_LABELS = TAXONOMY.verdictLabels || {};
+  const VERDICT_DESCRIPTIONS = TAXONOMY.verdictDescriptions || {};
   const CATEGORY_LABELS = TAXONOMY.categoryLabels || {};
   const VERDICT_CLASSES = TAXONOMY.verdictClasses || {};
 
@@ -260,7 +261,7 @@
       })}
 
       <div class="dt-legend">
-        ${VERDICT_ORDER.map((verdict) => `<span class="dt-legend-item"><span class="dt-legend-dot ${VERDICT_CLASSES[verdict]}"></span>${VERDICT_LABELS[verdict]}</span>`).join("")}
+        ${VERDICT_ORDER.map((verdict) => `<span class="dt-legend-item" title="${VERDICT_DESCRIPTIONS[verdict] || ""}"><span class="dt-legend-dot ${VERDICT_CLASSES[verdict]}"></span>${VERDICT_LABELS[verdict]}</span>`).join("")}
       </div>
 
       <div id="dt-active-filters"></div>

@@ -25,6 +25,7 @@
     : (document.currentScript?.dataset.base || "/assets/data");
   const TOPICS_URL = `${DATA_BASE}/topics.json`;
   const VERDICT_LABELS = TAXONOMY.verdictLabels || {};
+  const VERDICT_DESCRIPTIONS = TAXONOMY.verdictDescriptions || {};
   const VERDICT_ORDER = ["supported", "partially_supported", "unverifiable", "unsupported", "misleading"];
   const SORT_LABELS = {
     claim_count: "Fullyrðingar",
@@ -221,7 +222,7 @@
       .filter((v) => verdictCounts[v])
       .map((v) => {
         const cls = v === "partially_supported" ? "partial" : v;
-        return `<span class="ct-verdict-pill verdict-${cls}">${VERDICT_LABELS[v] || v}: ${verdictCounts[v]}</span>`;
+        return `<span class="ct-verdict-pill verdict-${cls}" title="${VERDICT_DESCRIPTIONS[v] || ""}">${VERDICT_LABELS[v] || v}: ${verdictCounts[v]}</span>`;
       })
       .join("");
   }
