@@ -91,7 +91,9 @@ wide_layout: true
                 {% set pct = (count / vtotal * 100) | round(1) %}
                 <span class="home-bar-seg home-verdict-bg--{{ v | replace("partially_supported", "partial") }}"
                       style="width:{{ pct }}%"
-                      title="{{ v | verdictLabel }}: {{ count }}"></span>
+                      title="{{ v | verdictLabel }}: {{ count }}">
+                  {%- if pct >= 15 %}{{ pct | round }}%{% endif -%}
+                </span>
               {% endif %}
             {% endfor %}
           </div>

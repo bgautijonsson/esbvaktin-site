@@ -55,7 +55,6 @@ evidence_preview: true
           <div class="report-participant-stats">
             {% if p.mention_count > 1 %}<span title="Fjöldi greina">{{ p.mention_count }} greinar</span>{% endif %}
             {% if p.speech_count %}<span title="Þingræður um ESB">{{ p.speech_count | localeString }} þingræður</span>{% endif %}
-            {% if p.credibility %}<span title="Trúverðugleiki">{{ (p.credibility * 100) | round(0) }}% trúverðugleiki</span>{% endif %}
           </div>
           {% endif %}
           <div class="report-participant-verdicts">
@@ -68,7 +67,7 @@ evidence_preview: true
                   <span class="report-bar-seg verdict-{{ v | replace("partially_supported", "partial") }}"
                         style="width:{{ pct }}%"
                         title="{{ v | verdictLabel }}: {{ p.verdicts[v] }}">
-                    {%- if pct >= 12 %}{{ p.verdicts[v] }}{% endif -%}
+                    {%- if pct >= 15 %}{{ pct | round }}%{% endif -%}
                   </span>
                 {% endif %}
               {% endfor %}
@@ -105,7 +104,7 @@ evidence_preview: true
           <span class="report-bar-seg verdict-{{ v | replace("partially_supported", "partial") }}"
                 style="width:{{ pct }}%"
                 title="{{ v | verdictLabel }}: {{ count }}">
-            {%- if pct >= 12 %}{{ count }}{% endif -%}
+            {%- if pct >= 15 %}{{ pct | round }}%{% endif -%}
           </span>
         {% endif %}
       {% endfor %}

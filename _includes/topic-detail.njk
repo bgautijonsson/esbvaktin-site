@@ -57,7 +57,7 @@ return_link_support: true
           <span class="report-bar-seg verdict-{{ v | replace("partially_supported", "partial") }}"
                 style="width:{{ pct }}%"
                 title="{{ v | verdictLabel }}: {{ count }}">
-            {%- if pct >= 12 %}{{ count }}{% endif -%}
+            {%- if pct >= 15 %}{{ pct | round }}%{% endif -%}
           </span>
         {% endif %}
       {% endfor %}

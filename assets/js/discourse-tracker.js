@@ -359,7 +359,7 @@
             const cls = VERDICT_CLASSES[verdict] || "";
             const pct = ((count / total) * 100).toFixed(1);
             const label = VERDICT_LABELS[verdict] || verdict;
-            return `<span class="dt-bar-seg ${cls}" style="width:${pct}%" title="${label}: ${count}">${count}</span>`;
+            return `<span class="dt-bar-seg ${cls}" style="width:${pct}%" title="${label}: ${count}">${pct >= 15 ? Math.round(pct) + "%" : ""}</span>`;
           })
           .join("")
       : "";

@@ -65,7 +65,6 @@ function enrichOverview(overview, entityMap, reportMap, claimByText, claimBySlug
         type: detail.type,
         stance: detail.stance,
         stance_score: detail.stance_score,
-        credibility: detail.credibility,
         role: detail.role,
         party: detail.party,
         description: detail.description,

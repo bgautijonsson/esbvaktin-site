@@ -1,7 +1,7 @@
 /* ESBvaktin Entity Detail Page — Styles
  *
  * Prefix: ed-* (entity detail)
- * Reuses: et-* (stance/credibility/attribution from entity-tracker.css)
+ * Reuses: et-* (stance/attribution from entity-tracker.css)
  *         ct-* (verdict pills, category tags from style.css)
  *         report-* (claim structure from style.css)
  */
@@ -41,22 +41,6 @@
   border: 2px solid hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 45%);
   transform: translate(-50%, -50%);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-}
-
-.et-credibility-bar {
-  flex: 1;
-  height: 6px;
-  background: var(--border);
-  border-radius: 3px;
-  overflow: hidden;
-  min-width: 3rem;
-}
-
-.et-credibility-fill {
-  height: 100%;
-  border-radius: 3px;
-  background: var(--green);
-  transition: width 0.3s ease;
 }
 
 .et-attr-bar {
@@ -196,21 +180,6 @@
   font-size: 0.75rem;
   font-weight: 600;
   color: hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 40%);
-}
-
-/* ── Credibility (reuses et-credibility-bar/fill) ───────────────────── */
-
-.ed-credibility {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  min-width: 6rem;
-}
-
-.ed-credibility-value {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--text-secondary);
 }
 
 /* ── Attribution breakdown (reuses et-attr-*) ───────────────────────── */

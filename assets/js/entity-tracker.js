@@ -38,7 +38,6 @@
     importance: "Mikilvægi",
     name: "Nafn",
     stance_score: "Afstaða",
-    credibility: "Trúverðugleiki",
     mention_count: "Tilvísanir",
   };
   const params = new URLSearchParams(window.location.search);
@@ -251,7 +250,6 @@
           { value: "importance", label: "Mikilvægi" },
           { value: "name", label: "Nafn" },
           { value: "stance_score", label: "Afstaða" },
-          { value: "credibility", label: "Trúverðugleiki" },
           { value: "mention_count", label: "Tilvísanir" },
         ],
         selectedValue: filters.sort,
@@ -338,7 +336,6 @@
     const sat = 10 + Math.abs(score) * 60;
     const label = stanceLabel(score);
     const dotLeft = (((score + 1) / 2) * 100).toFixed(1);
-    const credPct = entity.credibility != null ? Math.round(entity.credibility * 100) : null;
     const detailUrl = withReturnUrl(`/raddirnar/${entity.slug}/`, buildReturnUrl(cardId));
 
     const roleHtml = entity.role
@@ -361,18 +358,6 @@
     if (articleCount) statsHtml += `<span class="et-card-stat">${articleCount} grein${articleCount > 1 ? "ar" : "ing"}</span>`;
     if (entity.althingi_stats) statsHtml += `<span class="et-card-stat et-althingi-badge">${entity.althingi_stats.speech_count} þingræður</span>`;
     statsHtml += "</div>";
-
-    let credHtml = "";
-    if (credPct !== null) {
-      credHtml = `
-        <div class="et-credibility" title="Trúverðugleiki: ${credPct}%">
-          <span class="et-credibility-label">Trúverðugleiki</span>
-          <div class="et-credibility-bar">
-            <div class="et-credibility-fill" style="width: ${credPct}%"></div>
-          </div>
-          <span class="et-credibility-value">${credPct}%</span>
-        </div>`;
-    }
 
     let attrHtml = "";
     const attributionCounts = entity.attribution_counts;
@@ -440,7 +425,6 @@
         <div class="et-card-badges">${typeBadge}${partyPillHtml}</div>
         ${statsHtml}
         ${attrHtml}
-        ${credHtml}
         ${articlesHtml}
         <a href="${detailUrl}" class="et-see-more">Sjá meira &rarr;</a>
       </div>

@@ -747,13 +747,22 @@ img { max-width: 100%; height: auto; }
 .home-weekly-bar {
   display: flex;
   width: 100%;
-  height: 0.5rem;
+  height: 1.35rem;
   border-radius: 4px;
   overflow: hidden;
 }
 
 .home-bar-seg {
   min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: clip;
+  white-space: nowrap;
 }
 
 .home-weekly-legend {

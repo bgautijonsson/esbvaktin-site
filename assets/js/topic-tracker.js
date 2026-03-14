@@ -210,7 +210,7 @@
         const count = verdictCounts[v];
         const pct = ((count / total) * 100).toFixed(1);
         const cls = v === "partially_supported" ? "partial" : v;
-        return `<span class="report-bar-seg verdict-${cls}" style="width:${pct}%" title="${VERDICT_LABELS[v] || v}: ${count}">${pct >= 12 ? count : ""}</span>`;
+        return `<span class="report-bar-seg verdict-${cls}" style="width:${pct}%" title="${VERDICT_LABELS[v] || v}: ${count}">${pct >= 15 ? Math.round(pct) + "%" : ""}</span>`;
       })
       .join("");
 

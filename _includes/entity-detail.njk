@@ -26,9 +26,6 @@ evidence_preview: true
 {% set stanceSat = 10 + (score if score >= 0 else -score) * 60 %}
 {% set dotLeft = ((score + 1) / 2 * 100) %}
 
-{# ── Credibility ── #}
-{% set credPct = (entity.credibility * 100) | round if entity.credibility is number else null %}
-
 {# ── Total claims (all attributions) ── #}
 {% set totalClaims = entity.claims | length %}
 
@@ -72,19 +69,6 @@ evidence_preview: true
         <span class="ed-stance-label">{{ stanceLabel }}</span>
       </div>
     </div>
-
-    {# Credibility #}
-    {% if credPct is not null %}
-    <div class="ed-stat-block">
-      <span class="ed-stat-heading">Trúverðugleiki</span>
-      <div class="ed-credibility">
-        <div class="et-credibility-bar">
-          <div class="et-credibility-fill" style="width: {{ credPct }}%"></div>
-        </div>
-        <span class="ed-credibility-value">{{ credPct }}%</span>
-      </div>
-    </div>
-    {% endif %}
 
     {# Total claims #}
     <div class="ed-stat-block">
@@ -174,7 +158,7 @@ evidence_preview: true
           <span class="report-bar-seg verdict-{{ v | replace("partially_supported", "partial") }}"
                 style="width:{{ pct }}%"
                 title="{{ v | verdictLabel }}: {{ count }}">
-            {%- if pct >= 12 %}{{ count }}{% endif -%}
+            {%- if pct >= 15 %}{{ pct | round }}%{% endif -%}
           </span>
         {% endif %}
       {% endfor %}
@@ -250,16 +234,10 @@ evidence_preview: true
   {# Aggregate stats #}
   {% set totalClaims_pm = 0 %}
   {% set stanceSum = 0 %}
-  {% set credSum = 0 %}
-  {% set credCount = 0 %}
   {% for m in members %}
     {% set totalClaims_pm = totalClaims_pm + (m.claim_count or 0) %}
     {% if m.stance_score is number %}
       {% set stanceSum = stanceSum + m.stance_score %}
-    {% endif %}
-    {% if m.credibility is number %}
-      {% set credSum = credSum + m.credibility %}
-      {% set credCount = credCount + 1 %}
     {% endif %}
   {% endfor %}
 
@@ -271,17 +249,10 @@ evidence_preview: true
         <span class="ed-stat-heading">Fullyrðingar</span>
         <span class="ed-stat-num">{{ totalClaims_pm }}</span>
       </div>
-      {% if credCount > 0 %}
-      <div class="ed-stat-block">
-        <span class="ed-stat-heading">Meðal trúverðugleiki</span>
-        <span class="ed-stat-num">{{ ((credSum / credCount) * 100) | round }}%</span>
-      </div>
-      {% endif %}
     </div>
 
     <div class="ed-members-grid">
       {% for m in members %}
-      {% set mCredPct = (m.credibility * 100) | round if m.credibility is number else null %}
       {% set mScore = m.stance_score or 0 %}
       {% if mScore >= 0 %}
         {% set mHue = 60 + mScore * 150 %}
@@ -303,7 +274,6 @@ evidence_preview: true
         {% endif %}
         <div class="ed-member-stats">
           {% if m.claim_count %}<span>{{ m.claim_count }} fullyrðing{{ "ar" if m.claim_count > 1 else "" }}</span>{% endif %}
-          {% if mCredPct is not null %}<span>{{ mCredPct }}% trúverðugleiki</span>{% endif %}
         </div>
       </a>
       {% endfor %}
@@ -353,7 +323,7 @@ evidence_preview: true
           <span class="report-bar-seg verdict-{{ v | replace("partially_supported", "partial") }}"
                 style="width:{{ pct }}%"
                 title="{{ v | verdictLabel }}: {{ count }}">
-            {%- if pct >= 12 %}{{ count }}{% endif -%}
+            {%- if pct >= 15 %}{{ pct | round }}%{% endif -%}
           </span>
         {% endif %}
       {% endfor %}

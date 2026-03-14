@@ -195,45 +195,6 @@
 .et-attr-paraphrased-text { color: var(--yellow); }
 .et-attr-mentioned-text { color: var(--text-secondary); }
 
-/* ── Credibility bar ─────────────────────────────────────────────── */
-
-.et-credibility {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.et-credibility-label {
-  font-size: 0.7rem;
-  color: var(--text-secondary);
-  white-space: nowrap;
-}
-
-.et-credibility-bar {
-  flex: 1;
-  height: 6px;
-  background: var(--border);
-  border-radius: 3px;
-  overflow: hidden;
-  min-width: 3rem;
-}
-
-.et-credibility-fill {
-  height: 100%;
-  border-radius: 3px;
-  background: var(--green);
-  transition: width 0.3s ease;
-}
-
-.et-credibility-value {
-  font-size: 0.7rem;
-  font-weight: 600;
-  color: var(--text-secondary);
-  min-width: 2rem;
-  text-align: right;
-}
-
 /* ── Collapsible articles section ────────────────────────────────── */
 
 .et-articles-section {
