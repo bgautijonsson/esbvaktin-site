@@ -31,7 +31,7 @@
   const VERDICT_LABELS = TAXONOMY.verdictLabels || {};
   const VERDICT_CLASSES = TAXONOMY.verdictClasses || {};
   const PARTY_CLASSES = TAXONOMY.partyClasses || {};
-  const PARTY_SHORT_LABELS = TAXONOMY.partyShortLabels || {};
+
   const VERDICT_ORDER = ["supported", "partially_supported", "unverifiable", "unsupported", "misleading"];
   const SORT_LABELS = {
     mention_count: "Tilvísanir",
@@ -150,7 +150,7 @@
     return [...partyMap.entries()]
       .map(([slug, name]) => ({
         value: slug,
-        label: PARTY_SHORT_LABELS[name] || name,
+        label: name,
       }))
       .sort((a, b) => a.label.localeCompare(b.label, "is"));
   }
@@ -350,7 +350,7 @@
     let partyPillHtml = "";
     if (entity.party_slug && entity.party) {
       const partyClass = PARTY_CLASSES[entity.party] || "party-other";
-      const partyLabel = PARTY_SHORT_LABELS[entity.party] || entity.party;
+      const partyLabel = entity.party;
       partyPillHtml = `<a href="/raddirnar/${escapeHtml(entity.party_slug)}/" class="et-party-pill ${partyClass}">${escapeHtml(partyLabel)}</a>`;
     }
 
@@ -428,7 +428,7 @@
 
     if (filters.party) {
       const partyName = getEntities().find((e) => e.party_slug === filters.party)?.party || filters.party;
-      chips.push({ key: "party", text: `Flokkur: ${PARTY_SHORT_LABELS[partyName] || partyName}` });
+      chips.push({ key: "party", text: `Flokkur: ${partyName}` });
     }
 
     if (filters.stance) {
