@@ -50,21 +50,44 @@ return_link_support: true
     {% endif %}
   </header>
 
-  {# ── Speakers ──────────────────────────────────────────────── #}
+  {# ── Speakers — split by side ────────────────────────────────── #}
   {% if debate.speakers.length > 0 %}
   <section class="dd-speakers">
-    <h2>Ræðumenn</h2>
-    <div class="dd-speaker-grid">
-      {% for speaker in debate.speakers %}
-      <div class="dd-speaker-card {{ speaker.party | partyClass }}">
-        <div class="dd-speaker-name">{{ speaker.name }}</div>
-        <span class="dd-speaker-party {{ speaker.party | partyClass }}">{{ speaker.party }}</span>
-        <div class="dd-speaker-stats">
-          <span>{{ speaker.speech_count }} {{ "ræða" if speaker.speech_count == 1 else "ræður" }}</span>
-          <span>{{ speaker.total_words | localeString }} orð</span>
+    <div class="dd-speakers-sides">
+      <div class="dd-speakers-side dd-speakers-side--coalition">
+        <h2>Ríkisstjórn</h2>
+        <div class="dd-speaker-grid">
+          {% for speaker in debate.speakers %}
+            {% if speaker.side == "coalition" %}
+            <div class="dd-speaker-card {{ speaker.party | partyClass }}">
+              <div class="dd-speaker-name">{{ speaker.name }}</div>
+              <span class="dd-speaker-party {{ speaker.party | partyClass }}">{{ speaker.party }}</span>
+              <div class="dd-speaker-stats">
+                <span>{{ speaker.speech_count }} {{ "ræða" if speaker.speech_count == 1 else "ræður" }}</span>
+                <span>{{ speaker.total_words | localeString }} orð</span>
+              </div>
+            </div>
+            {% endif %}
+          {% endfor %}
         </div>
       </div>
-      {% endfor %}
+      <div class="dd-speakers-side dd-speakers-side--opposition">
+        <h2>Stjórnarandstaða</h2>
+        <div class="dd-speaker-grid">
+          {% for speaker in debate.speakers %}
+            {% if speaker.side == "opposition" %}
+            <div class="dd-speaker-card {{ speaker.party | partyClass }}">
+              <div class="dd-speaker-name">{{ speaker.name }}</div>
+              <span class="dd-speaker-party {{ speaker.party | partyClass }}">{{ speaker.party }}</span>
+              <div class="dd-speaker-stats">
+                <span>{{ speaker.speech_count }} {{ "ræða" if speaker.speech_count == 1 else "ræður" }}</span>
+                <span>{{ speaker.total_words | localeString }} orð</span>
+              </div>
+            </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
     </div>
   </section>
   {% endif %}
@@ -79,7 +102,7 @@ return_link_support: true
         {% set currentDate = speech.date %}
         <div class="dd-date-divider">{{ speech.date | isDate }}</div>
       {% endif %}
-      <div class="dd-speech">
+      <div class="dd-speech {% if speech.side %}dd-speech--{{ speech.side }}{% endif %}">
         <div class="dd-speech-marker {{ speech.party | partyClass }}"></div>
         <div class="dd-speech-content">
           <div class="dd-speech-header">
@@ -91,7 +114,12 @@ return_link_support: true
             {% if speech.started %}<time>{{ speech.started | replace("T", " ") | truncate(16, true, "") }}</time>{% endif %}
             {% if speech.word_count %}<span>{{ speech.word_count | localeString }} orð</span>{% endif %}
           </div>
-          {% if speech.excerpt %}
+          {% if speech.text %}
+          <details class="dd-speech-expandable">
+            <summary class="dd-speech-excerpt {{ speech.party | partyClass }}">{{ speech.excerpt }}</summary>
+            <div class="dd-speech-full {{ speech.party | partyClass }}">{{ speech.text | markdown | safe }}</div>
+          </details>
+          {% elif speech.excerpt %}
           <blockquote class="dd-speech-excerpt {{ speech.party | partyClass }}">{{ speech.excerpt }}</blockquote>
           {% endif %}
         </div>
@@ -99,6 +127,12 @@ return_link_support: true
     {% endfor %}
   </section>
   {% endif %}
+
+  <script>
+    document.querySelectorAll('.dd-speech-full').forEach(el => {
+      el.addEventListener('click', () => el.closest('details').removeAttribute('open'));
+    });
+  </script>
 
   <nav class="dd-back">
     <a href="/thingraedur/" data-return-link data-return-fallback="/thingraedur/" data-return-label="← Til baka í fyrri niðurstöður">&larr; Til baka í þingræður</a>
