@@ -42,6 +42,19 @@ greiningar/         # Redirect stubs (→ /umraedan/) for old URLs
 .github/workflows/  # GitHub Actions deploy
 ```
 
+## Editorial Philosophy
+
+ESBvaktin nurtures curiosity — it does not play gotcha. The goal is to help readers understand the EU debate more deeply, not to score points or expose who is "wrong".
+
+**Guiding principles:**
+- **Curiosity over judgement.** Lead with what's interesting and verifiable, not with who made a mistake. "Vissuð þið að..." over "Greinin sleppir því að..."
+- **Constructive framing.** When a claim is unsupported or misleading, show the reader what the evidence actually says and invite them to explore further — don't just stamp a red label on it.
+- **Enable deeper reading.** Every surface should make it easy for the reader to follow the thread into primary sources, evidence, and related topics. The site is a guide, not a verdict machine.
+- **No credibility scorekeeping.** Avoid framing entities as trustworthy/untrustworthy. Show what people have said and what the evidence says — let readers form their own view.
+- **The capsule-writer tone is the model.** Constructive, curious, accessible. "Þú ert leiðsögn, ekki dómari."
+
+This philosophy applies to all templates, labels, copy, and visual design decisions on the site.
+
 ## Conventions
 
 - Pages: Markdown (.md) for content, Nunjucks (.njk) for data-driven pages
