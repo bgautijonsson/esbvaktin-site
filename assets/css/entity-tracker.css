@@ -21,21 +21,43 @@
 /* ── Entity card ─────────────────────────────────────────────────── */
 
 .et-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
   background: var(--bg);
   border: 1px solid var(--border);
-  border-left: 2px solid hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 45%);
+  border-left: 3px solid hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 45%);
   border-radius: var(--radius);
-  padding: 1rem;
+  padding: 0.95rem;
   transition: border-color var(--transition), background var(--transition);
 }
 
-.et-card-top {
+/* ── Badge row (type + party + stance dot) ───────────────────────── */
+
+.et-badge-row {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 0.75rem;
-  margin-bottom: 0.5rem;
+  align-items: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
 }
+
+.et-badge-spacer {
+  flex: 1;
+}
+
+.et-stance-pill {
+  padding: 0.1rem 0.45rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.65rem;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+  background: hsl(var(--sh, 60), var(--ss, 10%), 92%);
+  color: hsl(var(--sh, 60), var(--ss, 10%), 30%);
+}
+
+/* ── Name (prominent h3, carries stretched link) ─────────────────── */
 
 .et-card-name {
   font-size: 1.05rem;
@@ -43,53 +65,31 @@
   margin: 0;
 }
 
-/* ── Stance indicator ────────────────────────────────────────────── */
-
-.et-stance-indicator {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 0.2rem;
-  flex-shrink: 0;
-  min-width: 5rem;
+.et-card-link {
+  text-decoration: none;
+  color: inherit;
 }
 
-.et-stance-track {
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background: linear-gradient(to right, var(--red), var(--yellow) 50%, #3b82f6);
-  position: relative;
-}
-
-.et-stance-dot {
+.et-card-link::after {
+  content: "";
   position: absolute;
-  top: 50%;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--bg);
-  border: 2px solid hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 45%);
-  transform: translate(-50%, -50%);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  inset: 0;
+  z-index: 0;
 }
 
-.et-stance-label {
-  font-size: 0.65rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  color: hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 40%);
-  white-space: nowrap;
+.et-card-link:hover {
+  color: var(--accent);
 }
 
-/* ── Role & type badge ───────────────────────────────────────────── */
+/* ── Role subtitle ───────────────────────────────────────────────── */
 
 .et-card-role {
   font-size: 0.85rem;
   color: var(--text-secondary);
-  margin: 0 0 0.35rem;
+  margin: 0;
 }
+
+/* ── Type badge ──────────────────────────────────────────────────── */
 
 .et-type-badge {
   display: inline-block;
@@ -99,24 +99,17 @@
   font-size: 0.7rem;
   color: var(--text-secondary);
   white-space: nowrap;
-  margin-bottom: 0.35rem;
 }
 
 .et-type-party { border-color: var(--accent); color: var(--accent); }
 .et-type-institution { border-color: var(--green); color: var(--green); }
 .et-type-individual { border-color: var(--yellow); color: var(--yellow); }
 
-/* ── Card badges (type + party pill inline) ──────────────────────── */
-
-.et-card-badges {
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
-  flex-wrap: wrap;
-  margin-bottom: 0.35rem;
-}
+/* ── Party pill (sits above stretched link) ──────────────────────── */
 
 .et-party-pill {
+  position: relative;
+  z-index: 1;
   display: inline-block;
   padding: 0.1rem 0.4rem;
   border-radius: var(--radius-sm);
@@ -131,12 +124,18 @@
   opacity: 0.85;
 }
 
+/* ── Verdict bar ─────────────────────────────────────────────────── */
+
+.et-verdict-bar {
+  height: 1.1rem;
+  margin: 0.15rem 0;
+}
+
 /* ── Stats row ───────────────────────────────────────────────────── */
 
 .et-card-stats {
   display: flex;
   gap: 0.75rem;
-  margin-bottom: 0.5rem;
   flex-wrap: wrap;
 }
 
@@ -153,141 +152,60 @@
   font-weight: 500;
 }
 
-/* ── Attribution breakdown ───────────────────────────────────────── */
+/* ── Sections (individuals / other) ──────────────────────────────── */
 
-.et-attribution {
-  margin-bottom: 0.5rem;
+.et-section + .et-section {
+  margin-top: 2rem;
 }
 
-.et-attr-bar {
-  display: flex;
-  height: 6px;
-  border-radius: 3px;
-  overflow: hidden;
-  background: var(--border);
-  margin-bottom: 0.3rem;
+.et-section-heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem;
 }
 
-.et-attr-seg {
-  min-width: 2px;
-  transition: width 0.3s ease;
+.et-section-count {
+  font-weight: 400;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
 }
 
-.et-attr-quoted   { background: var(--accent); }
-.et-attr-asserted { background: var(--green); }
-.et-attr-paraphrased { background: var(--yellow); }
-.et-attr-mentioned   { background: var(--text-secondary); opacity: 0.6; }
+/* ── Pagination ─────────────────────────────────────────────────── */
 
-.et-attr-legend {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem 0.6rem;
-}
-
-.et-attr-legend-item {
-  font-size: 0.65rem;
-  font-weight: 600;
-  white-space: nowrap;
-}
-
-.et-attr-quoted-text    { color: var(--accent); }
-.et-attr-asserted-text  { color: var(--green); }
-.et-attr-paraphrased-text { color: var(--yellow); }
-.et-attr-mentioned-text { color: var(--text-secondary); }
-
-/* ── Collapsible articles section ────────────────────────────────── */
-
-.et-articles-section {
-  margin-top: 0.75rem;
-  padding-top: 0.75rem;
-  border-top: 1px solid var(--border);
-}
-
-.et-articles-toggle {
+.et-pager {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-  user-select: none;
-  padding: 0.25rem 0;
-  background: none;
-  border: none;
-  width: 100%;
-  color: inherit;
-  font: inherit;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
-.et-articles-toggle:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
+.et-pager-btn {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
   border-radius: var(--radius-sm);
-}
-
-.et-articles-label {
+  padding: 0.35rem 0.75rem;
   font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--text-secondary);
-}
-
-.et-expand-icon {
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-  transition: transform var(--transition);
-}
-
-.et-expanded .et-expand-icon {
-  transform: rotate(90deg);
-}
-
-.et-articles-details {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-
-.et-expanded .et-articles-details {
-  max-height: 300px;
-  transition: max-height 0.3s ease-in;
-}
-
-.et-articles-list {
-  list-style: none;
-  padding: 0;
-  margin: 0.25rem 0 0;
-}
-
-.et-articles-list li {
-  padding: 0.15rem 0;
-}
-
-.et-articles-list a {
-  font-size: 0.85rem;
-}
-
-/* ── Card link ───────────────────────────────────────────────────── */
-
-.et-card-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.et-card-link:hover {
-  color: var(--accent);
-}
-
-.et-see-more {
-  display: block;
-  margin-top: 0.5rem;
-  font-size: 0.8rem;
-  color: var(--accent);
   font-weight: 500;
-  opacity: 0.7;
-  text-decoration: none;
-  transition: opacity var(--transition);
+  color: var(--text);
+  cursor: pointer;
+  transition: border-color var(--transition), background var(--transition);
 }
 
-.et-card:hover .et-see-more {
-  opacity: 1;
+.et-pager-btn:hover:not(:disabled) {
+  border-color: var(--accent);
+  background: var(--bg-card);
+}
+
+.et-pager-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.et-pager-info {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
 }
 
 /* ── Note (disclaimer) ───────────────────────────────────────────── */
@@ -307,14 +225,12 @@
 /* ── Dark mode ───────────────────────────────────────────────────── */
 
 @media (prefers-color-scheme: dark) {
-  .et-stance-label {
-    color: hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 65%);
-  }
   .et-card {
     border-left-color: hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 55%);
   }
-  .et-stance-dot {
-    border-color: hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 55%);
+  .et-stance-pill {
+    background: hsl(var(--sh, 60), var(--ss, 10%), 18%);
+    color: hsl(var(--sh, 60), var(--ss, 10%), 72%);
   }
 }
 
@@ -367,6 +283,5 @@
 /* ── Responsive ──────────────────────────────────────────────────── */
 
 @media (max-width: 600px) {
-  .et-stance-label { display: none; }
   .cmp-gateways { grid-template-columns: 1fr; }
 }
