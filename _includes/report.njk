@@ -80,6 +80,9 @@ evidence_preview: true
     </div>
     {% endif %}
 
+    {% if report.capsule %}
+    <p class="report-capsule">{{ report.capsule }}</p>
+    {% endif %}
     <p class="report-summary">{{ report.summary }}</p>
   </header>
 

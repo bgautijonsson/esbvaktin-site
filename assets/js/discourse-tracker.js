@@ -119,6 +119,7 @@
       results = results.filter(
         (report) =>
           report.article_title?.toLowerCase().includes(q) ||
+          report.capsule?.toLowerCase().includes(q) ||
           report.summary?.toLowerCase().includes(q) ||
           report.article_author?.toLowerCase().includes(q) ||
           report.speakers?.some((speaker) => speaker.name?.toLowerCase().includes(q))
@@ -382,7 +383,7 @@
           ${dateStr ? `<time>${dateStr}</time>` : ""}
           ${authorStr}
         </div>
-        ${report.summary ? `<p class="dt-card-summary">${escapeHtml(report.summary)}</p>` : ""}
+        ${report.capsule ? `<p class="dt-card-summary">${escapeHtml(report.capsule)}</p>` : report.summary ? `<p class="dt-card-summary">${escapeHtml(report.summary)}</p>` : ""}
         <div class="dt-card-footer">
           <span class="dt-card-count">${report.claim_count} fullyrðingar</span>
           <div class="dt-verdict-bar">${verdicts}</div>
