@@ -29,10 +29,11 @@
   margin: 0;
 }
 
-.ct-stat-supported .ct-stat-num { color: var(--green); }
-.ct-stat-partial .ct-stat-num { color: var(--yellow); }
-.ct-stat-misleading .ct-stat-num { color: var(--red); }
-.ct-stat-unverifiable .ct-stat-num { color: var(--grey); }
+.ct-stat-supported .ct-stat-num { color: var(--verdict-supported); }
+.ct-stat-partial .ct-stat-num { color: var(--verdict-partial); }
+.ct-stat-unsupported .ct-stat-num { color: var(--verdict-unsupported); }
+.ct-stat-misleading .ct-stat-num { color: var(--verdict-misleading); }
+.ct-stat-unverifiable .ct-stat-num { color: var(--verdict-unverifiable); }
 
 /* ── Results ─────────────────────────────────────────────────────── */
 

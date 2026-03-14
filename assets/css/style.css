@@ -19,6 +19,11 @@
   --orange: #c2410c;
   --red: #e11d48;
   --grey: #6b7280;
+  --verdict-supported: var(--green);
+  --verdict-partial: var(--yellow);
+  --verdict-unsupported: var(--orange);
+  --verdict-misleading: #7c3aed;
+  --verdict-unverifiable: var(--grey);
   --radius: 8px;
   --radius-sm: 4px;
   --radius-lg: 12px;
@@ -53,6 +58,11 @@
     --orange: #f97316;
     --red: #ef4444;
     --grey: #9ca3af;
+    --verdict-supported: var(--green);
+    --verdict-partial: var(--yellow);
+    --verdict-unsupported: #f59e0b;
+    --verdict-misleading: #a78bfa;
+    --verdict-unverifiable: var(--grey);
     --shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     --bg-nav: #1a2332;
     --shadow-nav: 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -468,11 +478,11 @@ img { max-width: 100%; height: auto; }
 /* ── Home page ──────────────────────────────────────────────────────── */
 
 /* Verdict colours (self-contained — no tracker-base.css on homepage) */
-.home-verdict-bg--supported  { background: var(--green); }
-.home-verdict-bg--partial    { background: var(--yellow); }
-.home-verdict-bg--unverifiable { background: var(--grey); }
-.home-verdict-bg--unsupported  { background: var(--orange); }
-.home-verdict-bg--misleading   { background: var(--red); }
+.home-verdict-bg--supported  { background: var(--verdict-supported); }
+.home-verdict-bg--partial    { background: var(--verdict-partial); }
+.home-verdict-bg--unverifiable { background: var(--verdict-unverifiable); }
+.home-verdict-bg--unsupported  { background: var(--verdict-unsupported); }
+.home-verdict-bg--misleading   { background: var(--verdict-misleading); }
 
 .home-verdict-dot {
   display: inline-block;
@@ -481,11 +491,11 @@ img { max-width: 100%; height: auto; }
   border-radius: 50%;
   vertical-align: middle;
 }
-.home-verdict-dot--supported  { background: var(--green); }
-.home-verdict-dot--partial    { background: var(--yellow); }
-.home-verdict-dot--unverifiable { background: var(--grey); }
-.home-verdict-dot--unsupported  { background: var(--orange); }
-.home-verdict-dot--misleading   { background: var(--red); }
+.home-verdict-dot--supported  { background: var(--verdict-supported); }
+.home-verdict-dot--partial    { background: var(--verdict-partial); }
+.home-verdict-dot--unverifiable { background: var(--verdict-unverifiable); }
+.home-verdict-dot--unsupported  { background: var(--verdict-unsupported); }
+.home-verdict-dot--misleading   { background: var(--verdict-misleading); }
 
 /* Verdict pills */
 .home-verdict-pill {
@@ -1208,11 +1218,11 @@ img { max-width: 100%; height: auto; }
 }
 
 .tag-stance-pro {
-  color: var(--verdict-supported, #2e7d32);
+  color: var(--verdict-supported);
 }
 
 .tag-stance-anti {
-  color: var(--verdict-unsupported, #c62828);
+  color: var(--verdict-unsupported);
 }
 
 .report-capsule {
@@ -1315,12 +1325,12 @@ img { max-width: 100%; height: auto; }
   border-left: 3px solid var(--grey);
 }
 
-/* Phase 3: verdict-coloured left borders */
-.report-claim--supported    { border-left-color: var(--green); }
-.report-claim--partial      { border-left-color: var(--yellow); }
-.report-claim--unsupported  { border-left-color: var(--orange); }
-.report-claim--misleading   { border-left-color: var(--red); }
-.report-claim--unverifiable { border-left-color: var(--grey); }
+/* Verdict-coloured left borders */
+.report-claim--supported    { border-left-color: var(--verdict-supported); }
+.report-claim--partial      { border-left-color: var(--verdict-partial); }
+.report-claim--unsupported  { border-left-color: var(--verdict-unsupported); }
+.report-claim--misleading   { border-left-color: var(--verdict-misleading); }
+.report-claim--unverifiable { border-left-color: var(--verdict-unverifiable); }
 
 /* Summary row (always visible) */
 .report-claim-header {
