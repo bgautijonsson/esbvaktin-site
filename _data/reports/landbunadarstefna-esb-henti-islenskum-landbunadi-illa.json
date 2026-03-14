@@ -10,9 +10,9 @@
   "summary": "Greindar 16 fullyrðingar. Niðurstöður: 7 stutt að hluta, 4 stutt af heimildum, 3 ekki hægt að sannreyna, 1 villandi, 1 ekki stutt. Sjónarhorn: hallar á ESB-neikvæða hlið. Heildstæðni: 30%.",
   "capsule": "",
   "verdict_counts": {
-    "supported": 10,
+    "supported": 9,
+    "partially_supported": 3,
     "unverifiable": 2,
-    "partially_supported": 2,
     "misleading": 1,
     "unsupported": 1
   },
@@ -120,8 +120,8 @@
         "claim_type": "statistic",
         "confidence": 0.9
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> staðfestir að þjóðaratkvæðagreiðslan snýst um hvort halda eigi áfram aðildarviðræðum við ESB — já eða nei. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir spurninguna orðrétt: «Á að halda áfram viðræðum um aðild Íslands að Evrópusambandinu?» Þetta samrýmist fullyrðingunni um tvo valkosti.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> og <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfesta að spurningin snýst um hvort halda eigi áfram aðildarviðræðum — já eða nei. Fullyrðingin er efnislega rétt um tvo valkosti. Þó vantar mikilvægt samhengi: þjóðaratkvæðagreiðslan er ráðgefandi en ekki bindandi samkvæmt <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland), Articles 26, 65, 79; Althingi records on 2012 referendum follow-up\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-026</a>, sem skiptir verulegu máli. Auk þess sýna <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Þjóðarpúls, February–March 2026; Capacent Gallup historical EU polling data (2009–2013)\" target=\"_blank\" rel=\"noopener\">POLL-DATA-021</a> og <a href=\"https://fel.hi.is/is/rannsoknir-spurningalistakannanir/simakannanir\" title=\"Félagsvísindastofnun — Methodology notes on EU polling; comparison of Gallup, MMR, and Maskína polls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-010</a> að bilið milli stuðnings við viðræður og stuðnings við ESB-aðild sjálfa er um 10 prósentustig — valkostirnir eru ekki eins einhlítir og fullyrðingin gefur til kynna.",
       "supporting_evidence": [
         {
           "id": "SOV-DATA-006",
@@ -135,8 +135,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "<a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Þjóðarpúls, February–March 2026; Capacent Gallup historical EU polling data (2009–2013)\" target=\"_blank\" rel=\"noopener\">POLL-DATA-021</a> bendir á mikilvægan mun á milli þess að samþykkja viðræður og þess að samþykkja aðild — um 10 prósentustiga bil milli þessara tveggja spurninga í skoðanakönnunum. Atkvæðagreiðslan er ráðgefandi en ekki bindandi samkvæmt <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a>.",
-      "confidence": 0.92,
+      "missing_context": "Þjóðaratkvæðagreiðslan er ráðgefandi (<a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland), Articles 26, 65, 79; Althingi records on 2012 referendum follow-up\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-026</a>). Spurningin nær til áframhaldandi viðræðna, ekki beinlínis ESB-aðildar, sem er mikilvægur munur samkvæmt <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Þjóðarpúls, February–March 2026; Capacent Gallup historical EU polling data (2009–2013)\" target=\"_blank\" rel=\"noopener\">POLL-DATA-021</a>. Orðalag spurningarinnar getur haft áhrif á niðurstöðu (<a href=\"https://fel.hi.is/is/rannsoknir-spurningalistakannanir/simakannanir\" title=\"Félagsvísindastofnun — Methodology notes on EU polling; comparison of Gallup, MMR, and Maskína polls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-010</a>).",
+      "confidence": 0.82,
       "speakers": [
         {
           "name": "Berghildur Erla Bernharðsdóttir",
@@ -771,7 +771,8 @@
       "attribution_type": "asserted",
       "claim_count": 5,
       "verdicts": {
-        "supported": 4,
+        "supported": 3,
+        "partially_supported": 1,
         "unverifiable": 1
       },
       "stance": "neutral",

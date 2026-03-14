@@ -15,8 +15,8 @@
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 7,
-    "supported": 10,
+    "partially_supported": 8,
+    "supported": 9,
     "unverifiable": 5,
     "misleading": 2
   },
@@ -50,9 +50,9 @@
     {
       "claim_text": "Undanþágur sem ESB hefur veitt tímabundið til aðildarríkja renna út.",
       "original_quote": "5% þar sem að Evrópusambandið hefur stundum fallist á tímabundnar undanþágur en þær renna út eins og Írar hafa nú aldeilis tekið eftir núna.",
-      "verdict": "supported",
-      "explanation": "Heimildir staðfesta þessa fullyrðingu skýrt. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> sýnir að frá Lissabon-samningnum (2009) hefur stefna ESB verið sú að ný aðildarríki fái ekki varanlegar undanþágur — einungis tímabundin aðlögunartímabil. Króatía (2013) fékk engar varanlegar undanþágur. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-004</a> staðfestir að ekkert aðildarríki hefur fengið varanlega undanþágu frá sameiginlegri landbúnaðarstefnu. Aðlögunartímabil fyrir nýja meðlimi (t.d. 10 ára innleiðing á beingreiðslum samkvæmt <a href=\"https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-2023-27_en\" title=\"2003 Accession Treaty; 2005 Accession Treaty (Bulgaria/Romania); 2011 Croatia Accession Treaty; European Commission CAP reform documentation\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-016</a>) renna öll út.",
-      "missing_context": "Þó eldri aðildarríki hafi varanlegar undanþágur (t.d. dönsk undanþága frá evrunni, sem var í gildi til 2025), gildir sú fordæmisrof ekki um ný ríki. Finnlensk og sænsk viðbótarstyrkjakerfi fyrir norðlægan landbúnað eru formlega séð viðbætur, ekki undanþágur, en hafa í reynd varað í áratugi. Sumir lagafræðingar halda því fram að 49. gr. ESB-sáttmálans heimili í raun hvaða samningsniðurstöðu sem er, en pólitísk staða ESB er skýr gegn nýjum undanþágum.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin er rétt að hluta en of víð. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-004</a> staðfesta að aðlögunartímabil fyrir nýju aðildarríkin séu tímabundin og renni út — Króatía fékk engar varanlegar undanþágur árið 2013. Hins vegar sýnir <a href=\"https://eur-lex.europa.eu/collection/eu-law/treaties.html\" title=\"European Parliament — EU Treaties and Protocols; Accession Treaty texts\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-023</a> dæmi um varanlegar eða hálfvaranlegar lausnir: finnsk landbúnaðaraðstoð hefur verið endurnýjuð síðan 1995, Danmörk heldur enn evruundanþágu, og Svíþjóð forðast evruna án formlegrar undanþágu. Fullyrðingin á vel við um nýju aðildarríkin eftir Lissabon en tekur ekki tillit til þessara fordæma.",
+      "missing_context": "Greinarmunur milli aðlögunartímabila (sem renna út) og samningsundanþága (sem geta verið varanlegar) er lykilatriði. <a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a> sýnir nýlegt dæmi: Ísland samdi um viðbótarár frjálsrar úthlutunar í ETS-kerfinu, en slík fyrirkomulag eru tímabundin. Frá Lissabon-samningnum hefur pólitísk samstaða gegn nýjum varanlegum undanþágum verið sterk, þótt lögfræðilega sé 49. gr. opin.",
       "supporting_evidence": [
         {
           "id": "EEA-LEGAL-012",
@@ -68,14 +68,15 @@
           "id": "AGRI-DATA-016",
           "source_name": "2003 Accession Treaty; 2005 Accession Treaty (Bulgaria/Romania); 2011 Croatia Accession Treaty; European Commission CAP reform documentation",
           "source_url": "https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-2023-27_en"
-        },
-        {
-          "id": "ETS-DATA-002",
-          "source_name": "Iceland Review; Carbon Pulse; European Commission",
-          "source_url": "https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/"
         }
       ],
-      "contradicting_evidence": [],
+      "contradicting_evidence": [
+        {
+          "id": "EEA-LEGAL-023",
+          "source_name": "European Parliament — EU Treaties and Protocols; Accession Treaty texts",
+          "source_url": "https://eur-lex.europa.eu/collection/eu-law/treaties.html"
+        }
+      ],
       "category": "eea_eu_law",
       "attribution": "asserted",
       "article_slug": "spursmal-115-er-island-a-leid-inn-i-evropusambandid",

@@ -10,8 +10,8 @@
   "summary": "Greindar 45 fullyrðingar .",
   "capsule": "",
   "verdict_counts": {
-    "supported": 25,
-    "partially_supported": 8,
+    "supported": 23,
+    "partially_supported": 10,
     "unverifiable": 11,
     "misleading": 1
   },
@@ -576,8 +576,8 @@
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
-      "verdict": "supported",
-      "explanation": "Heimildir staðfesta þessa fullyrðingu skýrt. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> sýnir að frá Lissabon-samningnum (2009) hefur stefna ESB verið sú að ný aðildarríki fái ekki varanlegar undanþágur — einungis tímabundin aðlögunartímabil. Króatía (2013) fékk engar varanlegar undanþágur. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-004</a> staðfestir að ekkert aðildarríki hefur fengið varanlega undanþágu frá sameiginlegri landbúnaðarstefnu. Aðlögunartímabil fyrir nýja meðlimi (t.d. 10 ára innleiðing á beingreiðslum samkvæmt <a href=\"https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-2023-27_en\" title=\"2003 Accession Treaty; 2005 Accession Treaty (Bulgaria/Romania); 2011 Croatia Accession Treaty; European Commission CAP reform documentation\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-016</a>) renna öll út.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin er rétt að hluta en of víð. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-004</a> staðfesta að aðlögunartímabil fyrir nýju aðildarríkin séu tímabundin og renni út — Króatía fékk engar varanlegar undanþágur árið 2013. Hins vegar sýnir <a href=\"https://eur-lex.europa.eu/collection/eu-law/treaties.html\" title=\"European Parliament — EU Treaties and Protocols; Accession Treaty texts\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-023</a> dæmi um varanlegar eða hálfvaranlegar lausnir: finnsk landbúnaðaraðstoð hefur verið endurnýjuð síðan 1995, Danmörk heldur enn evruundanþágu, og Svíþjóð forðast evruna án formlegrar undanþágu. Fullyrðingin á vel við um nýju aðildarríkin eftir Lissabon en tekur ekki tillit til þessara fordæma.",
       "supporting_evidence": [
         {
           "id": "EEA-LEGAL-012",
@@ -593,16 +593,17 @@
           "id": "AGRI-DATA-016",
           "source_name": "2003 Accession Treaty; 2005 Accession Treaty (Bulgaria/Romania); 2011 Croatia Accession Treaty; European Commission CAP reform documentation",
           "source_url": "https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-2023-27_en"
-        },
-        {
-          "id": "ETS-DATA-002",
-          "source_name": "Iceland Review; Carbon Pulse; European Commission",
-          "source_url": "https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Þó eldri aðildarríki hafi varanlegar undanþágur (t.d. dönsk undanþága frá evrunni, sem var í gildi til 2025), gildir sú fordæmisrof ekki um ný ríki. Finnlensk og sænsk viðbótarstyrkjakerfi fyrir norðlægan landbúnað eru formlega séð viðbætur, ekki undanþágur, en hafa í reynd varað í áratugi. Sumir lagafræðingar halda því fram að 49. gr. ESB-sáttmálans heimili í raun hvaða samningsniðurstöðu sem er, en pólitísk staða ESB er skýr gegn nýjum undanþágum.",
-      "confidence": 0.85,
+      "contradicting_evidence": [
+        {
+          "id": "EEA-LEGAL-023",
+          "source_name": "European Parliament — EU Treaties and Protocols; Accession Treaty texts",
+          "source_url": "https://eur-lex.europa.eu/collection/eu-law/treaties.html"
+        }
+      ],
+      "missing_context": "Greinarmunur milli aðlögunartímabila (sem renna út) og samningsundanþága (sem geta verið varanlegar) er lykilatriði. <a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a> sýnir nýlegt dæmi: Ísland samdi um viðbótarár frjálsrar úthlutunar í ETS-kerfinu, en slík fyrirkomulag eru tímabundin. Frá Lissabon-samningnum hefur pólitísk samstaða gegn nýjum varanlegum undanþágum verið sterk, þótt lögfræðilega sé 49. gr. opin.",
+      "confidence": 0.78,
       "speakers": [
         {
           "name": "Björn Ingi Hrafnsson",
@@ -1696,8 +1697,8 @@
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands; Stjórnlaganefnd (2011) report\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-027</a> staðfestir skýrt að ESB-aðild krefjist stjórnarskrárbreytingar vegna þess að íslenska stjórnarskráin inniheldur enga heimild til yfirfærslu fullveldis til alþjóðastofnana. Ríkjandi lagaleg skoðun, staðfest af Stjórnlaganefnd 2011, er að ný stjórnarskrárákvæði þurfi. <a href=\"https://www.government.is/library/01-Ministries/Prime-Ministrers-Office/constitution_of_iceland.pdf\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 2, 21, 79; Legal commentary by Ragnhildur Helgadóttir (2024)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-016</a> og <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland); University of Iceland — Faculty of Law analyses\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-012</a> styðja þetta og bæta við að 79. grein stjórnarskrárinnar krefst samþykkis tveggja þinga með alþingiskosningum þar á milli — sem er nákvæmlega það sem fullyrðingin segir. Þótt einhver lögfræðileg deila sé um hvort breytingin sé stranglega nauðsynleg, er pólitísk samstaða um að hún yrði gerð.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands; Stjórnlaganefnd (2011) report\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-027</a> staðfestir að ríkjandi lögfræðileg túlkun — m.a. frá Stjórnlaganefnd 2011 — krefst stjórnarskrárbreytingar vegna þess að 2. gr. stjórnarskrárinnar veitir ekki heimild til framselds fullveldis. Samkvæmt 79. gr. þarf tvö þing að samþykkja slíka breytingu. <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland); University of Iceland — Faculty of Law analyses\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-012</a> bendir hins vegar á að lögfræðingar eru ekki á einu máli — sumir telja að þjóðréttarsamningur gæti dugað. Fullyrðingin hljómar sem ótvíræð staðreynd en á bak við hana býr óleyst lagafræðileg deila.",
       "supporting_evidence": [
         {
           "id": "SOV-LEGAL-027",
@@ -1710,19 +1711,20 @@
           "source_url": "https://www.government.is/library/01-Ministries/Prime-Ministrers-Office/constitution_of_iceland.pdf"
         },
         {
-          "id": "SOV-LEGAL-012",
-          "source_name": "Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland); University of Iceland — Faculty of Law analyses",
-          "source_url": "https://www.althingi.is/lagas/nuna/1944033.html"
-        },
-        {
           "id": "SOV-DATA-002",
           "source_name": "Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79",
           "source_url": "https://www.althingi.is/lagas/nv/1944033.html"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Nokkur lögfræðileg deila er um hvort stjórnarskrárbreytingin sé beinlínis nauðsynleg — sumir fræðimenn telja að þingsamþykki aðildarsamnings gæti dugað (<a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland); University of Iceland — Faculty of Law analyses\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-012</a>). Ríkjandi skoðun er þó að breytingin þurfi. Ferlið samkvæmt 79. grein bætir a.m.k. 1–2 árum við aðildarferlið (<a href=\"https://www.government.is/library/01-Ministries/Prime-Ministrers-Office/constitution_of_iceland.pdf\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 2, 21, 79; Legal commentary by Ragnhildur Helgadóttir (2024)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-016</a>). Stjórnarskrárdrög 2011 innihéldu ákvæði (111. grein) sem hefði krafist þjóðaratkvæðagreiðslu um fullveldisyfirfærslu, en þau voru aldrei sett í lög (<a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands; Stjórnlaganefnd (2011) report\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-027</a>).",
-      "confidence": 0.88,
+      "contradicting_evidence": [
+        {
+          "id": "SOV-LEGAL-012",
+          "source_name": "Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland); University of Iceland — Faculty of Law analyses",
+          "source_url": "https://www.althingi.is/lagas/nuna/1944033.html"
+        }
+      ],
+      "missing_context": "Spurningin hefur ekki verið útkljáð fyrir dómi. Pólitísk samstaða er um nauðsyn stjórnarskrárbreytingar en lögfræðileg samstaða er ekki algild. Drög Stjórnlagaráðs frá 2012 innihéldu sérákvæði um fullveldisframsal en þau voru aldrei lögfest.",
+      "confidence": 0.78,
       "speakers": [
         {
           "name": "Pawel Bartoszek",
@@ -1746,8 +1748,8 @@
       "attribution_type": "asserted",
       "claim_count": 18,
       "verdicts": {
-        "partially_supported": 4,
-        "supported": 6,
+        "partially_supported": 5,
+        "supported": 5,
         "unverifiable": 5,
         "misleading": 1
       },
@@ -1781,9 +1783,9 @@
       "attribution_type": "asserted",
       "claim_count": 17,
       "verdicts": {
-        "supported": 5,
+        "supported": 4,
         "unverifiable": 2,
-        "partially_supported": 2
+        "partially_supported": 3
       },
       "stance": "pro_eu",
       "slug": "pawel-bartoszek",

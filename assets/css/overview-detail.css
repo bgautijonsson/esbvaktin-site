@@ -124,38 +124,117 @@
 
 .od-quote {
   border-left: 3px solid var(--accent);
-  padding: 0.75rem 1rem;
-  margin: 0 0 1rem;
+  padding: 0;
+  margin: 0 0 0.5rem;
   background: var(--surface);
   border-radius: 0 8px 8px 0;
+  overflow: hidden;
 }
 
-.od-quote p {
-  margin: 0 0 0.65rem;
+/* ── Clickable header ── */
+
+.od-quote-header {
+  padding: 0.7rem 0.9rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.od-quote-header:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+
+.od-quote-header-top {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.3rem;
+}
+
+.od-quote-text {
+  margin: 0;
   font-style: italic;
   line-height: 1.55;
+  font-size: 0.93rem;
+  font-weight: 500;
 }
 
-.od-quote footer {
-  font-size: 0.85rem;
-  color: var(--text-muted);
+.od-quote-header-meta {
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.35rem;
 }
 
-.od-quote cite { font-style: normal; }
-.od-quote cite a { color: inherit; text-decoration-color: var(--border); }
-.od-quote cite a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+.od-quote-speaker-brief {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
 
-/* Speaker info card inside quote */
+.od-quote-card .ct-expand-icon {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  transition: transform var(--transition);
+}
+
+.od-quote-expanded .ct-expand-icon {
+  transform: rotate(90deg);
+}
+
+/* ── Expandable details ── */
+
+.od-quote-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.od-quote-expanded .od-quote-details {
+  max-height: 600px;
+  transition: max-height 0.3s ease-in;
+}
+
+.od-quote-detail-item {
+  padding: 0 0.9rem 0.65rem;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+
+.od-quote-detail-item strong {
+  color: var(--text);
+}
+
+.od-quote-detail-item a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.od-quote-detail-item a:hover {
+  text-decoration: underline;
+}
+
+/* Speaker info card inside quote details */
 
 .od-quote-speaker {
+  margin: 0 0.9rem 0.65rem;
   background: var(--bg);
   border: 1px solid var(--border);
   border-left: 3px solid hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 45%);
   border-radius: 6px;
   padding: 0.5rem 0.65rem;
+}
+
+/* Separator line at top of details area */
+.od-quote-details::before {
+  content: "";
+  display: block;
+  border-top: 1px solid var(--border);
+  margin: 0 0.9rem 0.65rem;
+  padding-top: 0.35rem;
 }
 
 .od-quote-speaker-top {
@@ -205,28 +284,9 @@
   white-space: nowrap;
 }
 
-/* Tags row below speaker card */
+/* Tags inside quote header */
 
-.od-quote-tags {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.35rem 0.5rem;
-}
-
-.od-quote-source-link {
-  color: var(--text-muted);
-  text-decoration-color: var(--border);
-  font-size: 0.8rem;
-}
-
-.od-quote-source-link:hover {
-  color: var(--accent);
-  text-decoration-color: var(--accent);
-}
-
-.od-quote-source-text { font-size: 0.8rem; }
-.od-quote-tags .ct-category-tag { text-decoration: none; }
+.od-quote-header-top .ct-category-tag { text-decoration: none; }
 
 /* ── Topic activity table ── */
 

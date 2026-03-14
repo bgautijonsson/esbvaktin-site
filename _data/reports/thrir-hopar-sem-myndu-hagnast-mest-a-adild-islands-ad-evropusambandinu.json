@@ -547,12 +547,12 @@
         "confidence": 0.9
       },
       "verdict": "supported",
-      "explanation": "Heimildir staðfesta skýran vaxtamun milli Íslands og evrusvæðisins. CURR-DATA-004 sýnir stýrivexti Seðlabankans við 8,0% samanborið við 2,75% hjá Seðlabanka Evrópu — bilið er um 4–6 prósentustig. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a> og <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> staðfesta sambærilegan mun á húsnæðislánum: 7,5–8,5% á Íslandi á móti um 3,2–3,8% á evrusvæðinu. Fullyrðingin er því rétt í grunninn. Þó ber að hafa í huga að íslenskt húsnæðislánakerfi byggist á verðtryggðum lánum þar sem nafnvextir eru lægri (3,5–5,5%) en höfuðstóllinn hækkar með verðlagi, sem flækir beinan samanburð.",
+      "explanation": "<a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a> og <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> staðfesta skýrt: óverðtryggð húsnæðislán á Íslandi bera 7,5–8,5% vexti á meðan meðalvextir á evrusvæðinu eru um 3,2–3,8%. Stýrivextir Seðlabankans standa í 7,25% á móti 2,75% hjá Seðlabanka Evrópu samkvæmt <a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a>. Fullyrðingin notar orðið «almennt» sem tekur réttilega tillit til þess að vextir sveiflast milli landa, og heimildir styðja skýran og viðvarandi vaxtamun bæði á húsnæðislánum og fyrirtækjalánum.",
       "supporting_evidence": [
         {
-          "id": "CURRENCY-DATA-015",
-          "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
-          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+          "id": "HOUSING-DATA-008",
+          "source_name": "European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report",
+          "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
         },
         {
           "id": "HOUS-DATA-005",
@@ -560,13 +560,13 @@
           "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
         },
         {
-          "id": "HOUSING-DATA-008",
-          "source_name": "European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report",
-          "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
+          "id": "CURRENCY-DATA-015",
+          "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
+          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Samanburðurinn er flóknari en hann lítur út. <a href=\"https://www.sedlabanki.is/utgefid-efni/rit-og-skyrslur/fjarmalastodugleikaskyrsla/\" title=\"Seðlabanki Íslands — Financial Stability Report 2025; Húsnæðis- og mannvirkjastofnun (HMS) — Housing Market Overview\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-010</a> útskýrir að 80% íslenskra húsnæðislána eru verðtryggð, þar sem nafnvextir eru 3,5–5,5% auk verðbóta — ekki 8% sem oft er vitnað í. Einnig myndi evruaðild ekki sjálfkrafa leiða til samsvarandi vaxtalækkana vegna áhættuálags og fjármögnunarkostnaðar íslenskra banka. <a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a> bendir á að lægri vextir gætu hækkað íbúðaverð frekar en lækkað heildarkostnað húsnæðis.",
+      "missing_context": "Verðtryggð húsnæðislán, sem um 80% Íslendinga nýta samkvæmt <a href=\"https://www.sedlabanki.is/utgefid-efni/rit-og-skyrslur/fjarmalastodugleikaskyrsla/\" title=\"Seðlabanki Íslands — Financial Stability Report 2025; Húsnæðis- og mannvirkjastofnun (HMS) — Housing Market Overview\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-010</a>, bera nafnvexti 3,5–5,5% en höfuðstóllinn hækkar með verðbólgu — bein samanburður er því flókinn. ESB-aðild og evruupptaka myndu ekki sjálfkrafa færa íslenska vexti á evrusvæðisstig. Lægri vextir geta aukið húsnæðisverð frekar en bætt aðgengi samkvæmt <a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a> og <a href=\"https://www.ecb.europa.eu/press/financial-stability-publications/fsr/html/index.en.html\" title=\"ECB Financial Stability Review; Ahearne, A. et al. (2005). 'House Prices and Monetary Policy: A Cross-Country Study.' BIS; Lane, P. (2012). 'The European Sovereign Debt Crisis.' Journal of Economic Perspectives\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-007</a>.",
       "confidence": 0.87,
       "speakers": [
         {

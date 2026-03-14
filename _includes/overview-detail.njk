@@ -96,19 +96,40 @@ evidence_preview: true
   <section class="od-quotes">
     <h2>Athyglisverðar tilvitnanir</h2>
     {% for quote in overview.notable_quotes %}
-    <blockquote class="od-quote">
-      <p>{{ quote.text }}</p>
-      <footer>
-        {# ── Speaker info card (enriched) ── #}
+      {# Compute stance hue/sat for speaker card #}
+      {% set qs = quote.speaker_stance_score or 0 %}
+      {% if qs >= 0 %}{% set qHue = 60 + qs * 150 %}{% else %}{% set qHue = 60 + qs * 60 %}{% endif %}
+      {% set qSat = 10 + (qs if qs >= 0 else -qs) * 60 %}
+      {% if qs >= 0.5 %}{% set qStanceLabel = "ESB-jákvæð" %}
+      {% elif qs <= -0.5 %}{% set qStanceLabel = "ESB-gagnrýnin" %}
+      {% elif qs > -0.1 and qs < 0.1 %}{% set qStanceLabel = "Hlutlaus" %}
+      {% else %}{% set qStanceLabel = "Blandað" %}{% endif %}
+    <blockquote class="od-quote od-quote-card">
+      {# ── Clickable header (expand/collapse) ── #}
+      <div class="od-quote-header" role="button" tabindex="0" aria-expanded="false">
+        <div class="od-quote-header-top">
+          {% if quote.verdict %}
+            <span class="ct-verdict-pill verdict-{{ quote.verdict | replace("partially_supported", "partial") }}">
+              {{ quote.verdict | verdictLabel }}
+            </span>
+          {% endif %}
+          {% if quote.category %}
+            <span class="ct-category-tag">{{ quote.category_is }}</span>
+          {% endif %}
+        </div>
+        <p class="od-quote-text">{{ quote.text }}</p>
+        <div class="od-quote-header-meta">
+          <span class="od-quote-speaker-brief">
+            {%- if quote.speaker and quote.speaker != "Óþekkt" %}{{ quote.speaker }}{% else %}Óþekkt{% endif -%}
+          </span>
+          <span class="ct-expand-icon">▸</span>
+        </div>
+      </div>
+
+      {# ── Expandable details ── #}
+      <div class="od-quote-details">
+        {# Speaker info card (enriched) #}
         {% if quote.speaker_slug and quote.speaker_role %}
-          {# Compute stance hue/sat #}
-          {% set qs = quote.speaker_stance_score or 0 %}
-          {% if qs >= 0 %}{% set qHue = 60 + qs * 150 %}{% else %}{% set qHue = 60 + qs * 60 %}{% endif %}
-          {% set qSat = 10 + (qs if qs >= 0 else -qs) * 60 %}
-          {% if qs >= 0.5 %}{% set qStanceLabel = "ESB-jákvæð" %}
-          {% elif qs <= -0.5 %}{% set qStanceLabel = "ESB-gagnrýnin" %}
-          {% elif qs > -0.1 and qs < 0.1 %}{% set qStanceLabel = "Hlutlaus" %}
-          {% else %}{% set qStanceLabel = "Blandað" %}{% endif %}
           <div class="od-quote-speaker" style="--stance-hue: {{ qHue }}; --stance-sat: {{ qSat }}%">
             <div class="od-quote-speaker-top">
               <a href="/raddirnar/{{ quote.speaker_slug }}/" class="od-quote-speaker-name">{{ quote.speaker }}</a>
@@ -122,27 +143,29 @@ evidence_preview: true
             </div>
           </div>
         {% elif quote.speaker_slug %}
-          <cite><strong><a href="/raddirnar/{{ quote.speaker_slug }}/">{{ quote.speaker }}</a></strong></cite>
-        {% elif quote.speaker and quote.speaker != "Óþekkt" %}
-          <cite><strong>{{ quote.speaker }}</strong></cite>
+          <div class="od-quote-detail-item">
+            <a href="/raddirnar/{{ quote.speaker_slug }}/">{{ quote.speaker }}</a>
+          </div>
         {% endif %}
-        {# ── Source + tags row ── #}
-        <div class="od-quote-tags">
-          {% if quote.source_slug %}
-            <a href="/umraedan/{{ quote.source_slug }}/" class="od-quote-source-link">{{ quote.source }}</a>
-          {% elif quote.source %}
-            <span class="od-quote-source-text">{{ quote.source }}</span>
-          {% endif %}
-          {% if quote.verdict %}
-            <span class="ct-verdict-pill verdict-{{ quote.verdict | replace("partially_supported", "partial") }}">
-              {{ quote.verdict | verdictLabel }}
-            </span>
-          {% endif %}
-          {% if quote.category %}
-            <a href="/malefni/{{ quote.category }}/" class="ct-category-tag">{{ quote.category_is }}</a>
-          {% endif %}
-        </div>
-      </footer>
+
+        {# Source link #}
+        {% if quote.source_slug %}
+          <div class="od-quote-detail-item">
+            <strong>Heimild:</strong> <a href="/umraedan/{{ quote.source_slug }}/">{{ quote.source }}</a>
+          </div>
+        {% elif quote.source %}
+          <div class="od-quote-detail-item">
+            <strong>Heimild:</strong> {{ quote.source }}
+          </div>
+        {% endif %}
+
+        {# Category deep link #}
+        {% if quote.category %}
+          <div class="od-quote-detail-item">
+            <a href="/malefni/{{ quote.category }}/">Sjá málefni: {{ quote.category_is }} →</a>
+          </div>
+        {% endif %}
+      </div>
     </blockquote>
     {% endfor %}
   </section>
@@ -485,22 +508,26 @@ evidence_preview: true
   {% endif %}
 </article>
 
-{# ── Inline JS for claim card expand/collapse ── #}
+{# ── Inline JS for expandable cards (claims + quotes) ── #}
 <script>
 (function() {
-  var cards = document.querySelectorAll('.od-top-claims .ct-card');
-  cards.forEach(function(card) {
-    var header = card.querySelector('.ct-card-header');
-    if (!header) return;
-    function toggle() {
-      var expanded = !card.classList.contains('ct-expanded');
-      card.classList.toggle('ct-expanded', expanded);
-      header.setAttribute('aria-expanded', expanded);
-    }
-    header.addEventListener('click', toggle);
-    header.addEventListener('keydown', function(e) {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+  function bindExpandable(containerSel, cardSel, headerSel, expandedClass) {
+    var cards = document.querySelectorAll(containerSel + ' ' + cardSel);
+    cards.forEach(function(card) {
+      var header = card.querySelector(headerSel);
+      if (!header) return;
+      function toggle() {
+        var expanded = !card.classList.contains(expandedClass);
+        card.classList.toggle(expandedClass, expanded);
+        header.setAttribute('aria-expanded', expanded);
+      }
+      header.addEventListener('click', toggle);
+      header.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+      });
     });
-  });
+  }
+  bindExpandable('.od-top-claims', '.ct-card', '.ct-card-header', 'ct-expanded');
+  bindExpandable('.od-quotes', '.od-quote-card', '.od-quote-header', 'od-quote-expanded');
 })();
 </script>

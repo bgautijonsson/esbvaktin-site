@@ -11,9 +11,9 @@
   "capsule": "",
   "verdict_counts": {
     "unsupported": 2,
-    "supported": 11,
-    "partially_supported": 4,
-    "unverifiable": 3,
+    "unverifiable": 4,
+    "partially_supported": 7,
+    "supported": 7,
     "misleading": 1
   },
   "claim_count": 21,
@@ -81,33 +81,12 @@
         "claim_type": "prediction",
         "confidence": 0.9
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.reuters.com/world/europe/norway-tariffs-trump-2025/\" title=\"Reuters, NRK, Financial Times — viðskipti Noregs og Bandaríkjanna 2025–2026\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-027</a> sýnir skýrt að Bandaríkin lögðu háa tolla á norskar vörur og Noregur gat ekki nýtt sér sameiginlegan samningsstyrk ESB — Ísland er í sömu stöðu sem EFTA/EES-ríki. Ef Ísland gengi í ESB myndi það njóta samningsaflsins sem stórt viðskiptasvæði með yfir 440 milljóna íbúa veitir, sem veikir beint samningsstöðu Bandaríkjanna. <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> staðfestir þetta: Viðskiptaráð bendir á aukinn samningsstyrk sem kost ESB-aðildar. <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf\" title=\"EEA Agreement — Protocol 3 on trade in processed agricultural products\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-002</a> og <a href=\"https://www.wto.org/english/tratop_e/tpr_e/tp554_e.htm\" title=\"WTO — Trade Policy Review: Iceland 2024; Iceland-China FTA text\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-021</a> sýna að ESB-aðild myndi fela í sér þátttöku í yfir 70 fríverslunarsamningum ESB, sem takmarkar möguleika Bandaríkjanna á tvíhliða þrýsting.",
-      "supporting_evidence": [
-        {
-          "id": "TRADE-DATA-027",
-          "source_name": "Reuters, NRK, Financial Times — viðskipti Noregs og Bandaríkjanna 2025–2026",
-          "source_url": "https://www.reuters.com/world/europe/norway-tariffs-trump-2025/"
-        },
-        {
-          "id": "POL-DATA-017",
-          "source_name": "Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)",
-          "source_url": "https://vi.is/skyrslur/1667"
-        },
-        {
-          "id": "TRADE-DATA-002",
-          "source_name": "EEA Agreement — Protocol 3 on trade in processed agricultural products",
-          "source_url": "https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf"
-        },
-        {
-          "id": "TRADE-DATA-021",
-          "source_name": "WTO — Trade Policy Review: Iceland 2024; Iceland-China FTA text",
-          "source_url": "https://www.wto.org/english/tratop_e/tpr_e/tp554_e.htm"
-        }
-      ],
+      "verdict": "unverifiable",
+      "explanation": "Engin heimild staðfestir beint að ESB-aðild Íslands myndi veikja samningsstöðu Bandaríkjanna gagnvart Íslandi. <a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"US State Department; IISS Strategic Survey; Alcoa and Century Aluminum annual reports; academic analyses of US-Iceland relations\" target=\"_blank\" rel=\"noopener\">SOV-DATA-020</a> nefnir að bandarísk viðskipta- og öryggishagsmunir á Íslandi séu samtvinnuð, en bætir við að 23 ESB-ríki séu einnig NATO-bandamenn. <a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a> staðfestir að viðskiptastefna færðist til ESB en metur ekki áhrif á samningsstöðu Bandaríkjanna. Fullyrðingin er pólitískt mat sem heimildir staðfesta hvorki né hrekja.",
+      "supporting_evidence": [],
       "contradicting_evidence": [],
-      "missing_context": "Viðskipti Íslands og Bandaríkjanna eru takmörkuð og samningsstöðumál snúa meira að stærri ríkjum. Ísland myndi einnig missa möguleika á sjálfstæðum viðskiptasamningum, svo sem fríverslunarsamningnum við Kína (<a href=\"https://www.wto.org/english/tratop_e/tpr_e/tp554_e.htm\" title=\"WTO — Trade Policy Review: Iceland 2024; Iceland-China FTA text\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-021</a>). Tollastefna Bandaríkjanna getur breyst hratt milli stjórnvalda.",
-      "confidence": 0.7,
+      "missing_context": "Bandaríkin hafa ekki opinberlega tjáð sig um hvaða áhrif ESB-aðild Íslands hefði á samningsstöðu þeirra. Sambandið milli viðskiptastefnu og samningsstyrks er flókið — ESB-aðild myndi færa viðskiptamál til Brussel en gæti líka styrkt Ísland sem hluta af stærri heild.",
+      "confidence": 0.6,
       "speakers": [
         {
           "name": "Ríkisstjórn Donalds Trump",
@@ -177,9 +156,14 @@
         "claim_type": "statistic",
         "confidence": 0.9
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://europeelects.eu/iceland/\" title=\"Altinget.no; Heimildin; Europe Elects party classification\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-012</a> staðfestir fullyrðinguna beint: Altinget.no og Heimildin greindu frá því að pólitískur ráðgjafi tengdur Nigel Farage hafi komið tvisvar til Íslands snemma árs 2026, í tengslum við alþjóðleg tengsl Miðflokksins. Þrátt fyrir að nákvæm staðfesting á titli ráðgjafans sem «bandarísks» komi ekki fram, samræmist upplýsingarnar kjarnaefni fullyrðingarinnar.",
+      "verdict": "partially_supported",
+      "explanation": "PARTY-DATA-022 og <a href=\"https://europeelects.eu/iceland/\" title=\"Altinget.no; Heimildin; Europe Elects party classification\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-012</a> staðfesta báðar að pólitískur ráðgjafi «með tengsl við» Nigel Farage heimsótti Ísland tvisvar á fyrsta fjórðungi 2026. Fullyrðingin segir hins vegar «bandarískur ráðgjafi Nigels Farage» sem gefur til kynna formlegt ráðgjafasamband og bandarískan ríkisborgara — heimildir staðfesta hvorugt. Heimildirnar eru fjölmiðlafréttir sem hafa ekki verið staðfestar sjálfstætt hvað varðar nákvæmar upplýsingar um fundi.",
       "supporting_evidence": [
+        {
+          "id": "PARTY-DATA-022",
+          "source_name": "Heimildin; Stundin; Altinget.no — Reports on international contacts in EU referendum campaign",
+          "source_url": null
+        },
         {
           "id": "PARTY-DATA-012",
           "source_name": "Altinget.no; Heimildin; Europe Elects party classification",
@@ -187,8 +171,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Nákvæm eðli og umfang heimsóknanna hafa ekki verið óháð staðfest — upplýsingarnar byggjast á fjölmiðlafréttum. Miðflokkurinn hefur ekki staðfest né hafnað öllum tilkynntum fundum. Fullyrðingin segir «bandarískan ráðgjafa» en heimild nefnir «pólitískan ráðgjafa tengdan Farage» án þess að tilgreina þjóðerni hans.",
-      "confidence": 0.75,
+      "missing_context": "Heimildir lýsa ráðgjafanum sem «political advisor with connections to Nigel Farage» en staðfesta ekki ríkisfang eða formlegt ráðgjafasamband. Miðflokkurinn hefur ekki opinberlega staðfest eða neitað fundum. Alþjóðleg pólitísk tengsl og samráð um herferðaráðgjöf eru algeng í lýðræðisríkjum.",
+      "confidence": 0.65,
       "speakers": [
         {
           "name": "Nigel Farage",
@@ -531,8 +515,8 @@
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.reuters.com/world/\" title=\"Multiple news sources — Reuters, AP, BBC coverage of Trump Greenland statements (2025)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-011</a> staðfestir beinlínis að Trump hafi nefnt áhyggjur af kínverskri starfsemi á og við Grænland sem eina af ástæðum kröfunnar. Heimild nefnir fjórar meginástæður: aukna þýðingu norðurslóða, jarðefnaauðlindir Grænlands, áhyggjur af kínverskum rannsóknum og fjárfestingum á norðurslóðum, og rússneskan hernaðaruppgang. Kínversk umsvif eru þannig ein af mörgum ástæðum sem nefndar hafa verið.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.reuters.com/world/\" title=\"Multiple news sources — Reuters, AP, BBC coverage of Trump Greenland statements (2025)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-011</a> staðfestir að Trump nefndi kínversk umsvif sem eina af ástæðum áhuga síns á Grænlandi, ásamt sjaldgæfum jarðefnum, nýjum siglingaleiðum og hernaðarlegum hagsmunum. Fullyrðingin segir þó að kínversk umsvif séu «stór ástæða» sem gefur þeim meira vægi en heimildir réttlæta. Trump hefur vísað til «þjóðaröryggis» sem heildarrök en ekki greint á milli einstakra drifkrafta. Heimildir benda til margra samverkandi þátta frekar en eins aðalþáttar.",
       "supporting_evidence": [
         {
           "id": "SOV-DATA-011",
@@ -541,8 +525,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Fullyrðingin segir kínversk umsvif séu «stór ástæða» en heimild nefnir fjórar jafnþungar ástæður — kínversk umsvif eru ein þeirra en ekki endilega sú stærsta. Trump sjálfur hefur nefnt mismunandi ástæður og sumir sérfræðingar líta á yfirlýsingarnar sem samningaaðferð frekar en raunverulegar yfirráðakröfur.",
-      "confidence": 0.8,
+      "missing_context": "Greinendur eru ósammála um hvort kínversk umsvif séu megindrifkraftur eða einn af mörgum þáttum. Danmörk og heimastjórn Grænlands hafa stöðugt hafnað allri yfirfærslu fullveldis. Trump ræddi Grænlandskaup fyrst í ágúst 2019, löngu áður en kínversk umsvif urðu áberandi í umræðunni.",
+      "confidence": 0.68,
       "speakers": [
         {
           "name": "Donald Trump",
@@ -747,8 +731,8 @@
         "claim_type": "statistic",
         "confidence": 0.9
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> staðfestir beint að utanríkisráðherra varaði við erlendum afskiptum af þjóðaratkvæðagreiðslunni og sagði slíkt yrði ekki liðið, hvort sem það kæmi frá ESB eða öðrum ríkjum. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> styður þetta enn frekar með tilvísun í flutningsræðu hennar þar sem hún lagði áherslu á fullveldi Íslands í ferlinu. Fullyrðingin endurspeglar réttilega yfirlýsingar ráðherra.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> staðfestir að utanríkisráðherra varaði við erlendum afskiptum af þjóðaratkvæðagreiðslunni og sagði slíkt yrði ekki liðið. Fullyrðingin segir þó að viðvörunin hafi komið «þegar tilkynnt var um hana» — samkvæmt <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> og <a href=\"https://www.althingi.is/\" title=\"Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-028</a> var þingsályktunartillagan lögð fram 7. mars og kynnt formlega 9. mars, og viðvörunin kom í umræðu á Alþingi, ekki endilega við fyrstu tilkynningu. Tímasetningin er ónákvæm, þótt efnislega sé rétt að ráðherrann hafi varað við erlendum afskiptum.",
       "supporting_evidence": [
         {
           "id": "SOV-PARL-005",
@@ -762,8 +746,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Viðvörunin um erlend afskipti kom fram í samhengi umræðu um þingsályktunartillöguna, ekki endilega við tilkynningu um hana. Ekki kemur fram í heimildum hvaða tilefni ráðherra hafði fyrir viðvöruninni eða hvort einhver ríki höfðu í raun reynt að hafa afskipti.",
-      "confidence": 0.88,
+      "missing_context": "Viðvörunin beindist bæði að ESB og öðrum ríkjum, ekki eingöngu einu tilteknu ríki. Ekki kemur fram í heimildum hvaða tilefni ráðherra hafði fyrir viðvöruninni eða hvort einhver ríki höfðu reynt að hafa afskipti. Samkvæmt <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> eru umdeild atriði um málsmeðferð tillögunnar sem skipta máli fyrir samhengið.",
+      "confidence": 0.72,
       "speakers": [
         {
           "name": "Þorgerður Katrín Gunnarsdóttir",
@@ -834,7 +818,7 @@
         "confidence": 0.9
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> staðfestir að utanríkisráðherra Þorgerður Katrín Gunnarsdóttir hafi varað við erlendum afskiptum af þjóðaratkvæðagreiðslunni og sagt að slíkt yrði ekki liðið, hvort sem það kæmi frá ESB eða öðrum ríkjum. Þetta kemur einnig fram í <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> þar sem ráðherrann setti fullveldisumræðuna í forgrunn.",
+      "explanation": "<a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> staðfestir orðrétt að utanríkisráðherra varaði við erlendum afskiptum af þjóðaratkvæðagreiðslunni og sagði slík afskipti yrðu ekki liðin, hvort sem þau kæmu frá ESB eða öðrum ríkjum. Þetta er bein tilvitnun í yfirlýsingu ráðherra á Alþingi og fullyrðingin endurspeglar hana nákvæmlega.",
       "supporting_evidence": [
         {
           "id": "SOV-PARL-005",
@@ -848,7 +832,7 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Þetta eru tilgreind ummæli utanríkisráðherra sem staðreyndagrunnurinn hefur ekki skjalfest. Staðfesting á hvort þetta sé bein tilvitnun eða samantekt á ummælum hennar krefst aðgangs að upprunalegri heimild.",
+      "missing_context": "Fullyrðingin vísar til pólitískrar yfirlýsingar, ekki staðhæfingar um staðreyndir. <a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"US State Department — Bilateral Relations Factsheet; Icelandic media reports (Heimildin, Stundin); Altinget.no\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-021</a> sýnir að vangaveltur um afstöðu Trump-stjórnarinnar voru í umræðunni, en engin opinber afstaða Bandaríkjanna gegn ESB-aðild Íslands hefur verið skráð. Ekki kemur fram í heimildum hvaða tilefni ráðherra hafði fyrir viðvöruninni.",
       "confidence": 0.9,
       "speakers": [
         {
@@ -922,8 +906,7 @@
       "claim_count": 7,
       "verdicts": {
         "unsupported": 1,
-        "supported": 1,
-        "partially_supported": 3,
+        "partially_supported": 4,
         "unverifiable": 1,
         "misleading": 1
       },
@@ -941,8 +924,7 @@
       "claim_count": 6,
       "verdicts": {
         "unsupported": 2,
-        "supported": 1,
-        "unverifiable": 1,
+        "unverifiable": 2,
         "misleading": 1,
         "partially_supported": 1
       },
@@ -959,7 +941,8 @@
       "attribution_type": "paraphrased",
       "claim_count": 2,
       "verdicts": {
-        "supported": 2
+        "partially_supported": 1,
+        "supported": 1
       },
       "stance": "anti_eu",
       "slug": "donald-trump",
@@ -991,7 +974,8 @@
       "attribution_type": "paraphrased",
       "claim_count": 2,
       "verdicts": {
-        "supported": 2
+        "partially_supported": 1,
+        "supported": 1
       },
       "stance": "neutral",
       "slug": "thorgerdur-katrin-gunnarsdottir",
