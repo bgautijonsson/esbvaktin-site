@@ -778,49 +778,6 @@ img { max-width: 100%; height: auto; }
   max-width: 72ch;
 }
 
-/* ── Claim cards ── */
-
-.home-weekly-claims {
-  display: grid;
-  gap: 0.5rem;
-}
-
-.home-claim-card {
-  display: grid;
-  gap: 0.4rem;
-  padding: 0.75rem 0.85rem;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-}
-
-.home-claim-header {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.home-claim-category {
-  font-size: 0.72rem;
-  color: var(--text-secondary);
-  font-family: var(--font-heading);
-}
-
-.home-claim-text {
-  margin: 0;
-  font-size: 0.88rem;
-  line-height: 1.5;
-}
-
-.home-claim-sources {
-  font-size: 0.75rem;
-  color: var(--text-secondary);
-}
-
-.home-claim-sources a {
-  color: var(--accent);
-}
-
 /* ── Signal value (reused in topics) ── */
 
 .home-signal-value {

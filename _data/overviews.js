@@ -120,20 +120,17 @@ function enrichOverview(overview, entityMap, reportMap, claimMap) {
     });
   }
 
-  // Enrich notable_quotes speaker info from entity data
-  if (overview.notable_quotes) {
-    overview.notable_quotes = overview.notable_quotes.map((q) => {
-      if (!q.speaker_slug) return q;
-      const detail = entityMap.get(q.speaker_slug);
-      if (!detail) return q;
+  // Enrich key_facts with full claim data (explanation, sightings, deep link)
+  if (overview.key_facts) {
+    overview.key_facts = overview.key_facts.map((fact) => {
+      const full = claimMap.get(fact.claim_text);
+      if (!full) return fact;
       return {
-        ...q,
-        speaker_type: detail.type,
-        speaker_role: detail.role,
-        speaker_party: detail.party,
-        speaker_stance: detail.stance,
-        speaker_stance_score: detail.stance_score,
-        speaker_credibility: detail.credibility,
+        ...fact,
+        claim_slug: fact.claim_slug || full.claim_slug,
+        explanation: fact.explanation || full.explanation_is,
+        caveat: fact.caveat || full.missing_context_is,
+        confidence: fact.confidence ?? full.confidence,
       };
     });
   }

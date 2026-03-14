@@ -119,27 +119,6 @@ wide_layout: true
       </div>
       {% endif %}
 
-      {% if home.weekly_review.top_claims | length %}
-      <div class="home-weekly-claims">
-        <h3 class="home-subsection-label">Athyglisverðar fullyrðingar vikunnar</h3>
-        {% for claim in home.weekly_review.top_claims %}
-        <div class="home-claim-card">
-          <div class="home-claim-header">
-            <span class="home-verdict-pill home-verdict-bg--{{ claim.verdict | replace("partially_supported", "partial") }}">{{ claim.verdict | verdictLabel }}</span>
-            <span class="home-claim-category">{{ claim.category_is }}</span>
-          </div>
-          <p class="home-claim-text">{{ claim.canonical_text_is }}</p>
-          {% if claim.sources | length %}
-          <div class="home-claim-sources">
-            {% for src in claim.sources %}
-            <a href="/umraedan/{{ src.slug }}/">{{ src.title }}</a>{% if not loop.last %}, {% endif %}
-            {% endfor %}
-          </div>
-          {% endif %}
-        </div>
-        {% endfor %}
-      </div>
-      {% endif %}
     </section>
     {% endif %}
 

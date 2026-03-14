@@ -90,83 +90,64 @@ evidence_preview: true
   {% endif %}
 
   {# ══════════════════════════════════════════════════════════════════
-     Notable quotes — enriched with speaker info cards
+     Key facts — well-supported, verifiable claims with caveats
      ══════════════════════════════════════════════════════════════════ #}
-  {% if overview.notable_quotes | length %}
-  <section class="od-quotes">
-    <h2>Athyglisverðar tilvitnanir</h2>
-    {% for quote in overview.notable_quotes %}
-      {# Compute stance hue/sat for speaker card #}
-      {% set qs = quote.speaker_stance_score or 0 %}
-      {% if qs >= 0 %}{% set qHue = 60 + qs * 150 %}{% else %}{% set qHue = 60 + qs * 60 %}{% endif %}
-      {% set qSat = 10 + (qs if qs >= 0 else -qs) * 60 %}
-      {% if qs >= 0.5 %}{% set qStanceLabel = "ESB-jákvæð" %}
-      {% elif qs <= -0.5 %}{% set qStanceLabel = "ESB-gagnrýnin" %}
-      {% elif qs > -0.1 and qs < 0.1 %}{% set qStanceLabel = "Hlutlaus" %}
-      {% else %}{% set qStanceLabel = "Blandað" %}{% endif %}
-    <blockquote class="od-quote od-quote-card">
+  {% if overview.key_facts | length %}
+  <section class="od-key-facts">
+    <h2>Vissir þú?</h2>
+    <p class="od-key-facts-intro">Staðreyndir úr umræðunni sem eru studdar heimildum — og fyrirvarar sem gott er að hafa í huga.</p>
+    {% for fact in overview.key_facts %}
+      {% set confidencePct = (fact.confidence * 100) | round if fact.confidence is number else 0 %}
+    <div class="od-fact-card" data-slug="{{ fact.claim_slug }}">
       {# ── Clickable header (expand/collapse) ── #}
-      <div class="od-quote-header" role="button" tabindex="0" aria-expanded="false">
-        <div class="od-quote-header-top">
-          {% if quote.verdict %}
-            <span class="ct-verdict-pill verdict-{{ quote.verdict | replace("partially_supported", "partial") }}">
-              {{ quote.verdict | verdictLabel }}
-            </span>
-          {% endif %}
-          {% if quote.category %}
-            <span class="ct-category-tag">{{ quote.category_is }}</span>
+      <div class="od-fact-header" role="button" tabindex="0" aria-expanded="false">
+        <div class="od-fact-header-top">
+          <span class="ct-verdict-pill verdict-{{ fact.verdict | replace('partially_supported', 'partial') }}">
+            {{ fact.verdict | verdictLabel }}
+          </span>
+          <span class="ct-category-tag">{{ fact.category_is }}</span>
+          {% if fact.claim_type == "statistic" %}
+            <span class="od-fact-type-badge">Tölulegt</span>
+          {% elif fact.claim_type == "comparison" %}
+            <span class="od-fact-type-badge">Samanburður</span>
           {% endif %}
         </div>
-        <p class="od-quote-text">{{ quote.text }}</p>
-        <div class="od-quote-header-meta">
-          <span class="od-quote-speaker-brief">
-            {%- if quote.speaker and quote.speaker != "Óþekkt" %}{{ quote.speaker }}{% else %}Óþekkt{% endif -%}
+        <p class="od-fact-text">{{ fact.claim_text }}</p>
+        <div class="od-fact-header-meta">
+          <span class="ct-confidence" title="Vissustig">
+            <span class="ct-confidence-bar" style="width: {{ confidencePct }}%"></span>
+            {{ confidencePct }}%
           </span>
           <span class="ct-expand-icon">▸</span>
         </div>
       </div>
 
       {# ── Expandable details ── #}
-      <div class="od-quote-details">
-        {# Speaker info card (enriched) #}
-        {% if quote.speaker_slug and quote.speaker_role %}
-          <div class="od-quote-speaker" style="--stance-hue: {{ qHue }}; --stance-sat: {{ qSat }}%">
-            <div class="od-quote-speaker-top">
-              <a href="/raddirnar/{{ quote.speaker_slug }}/" class="od-quote-speaker-name">{{ quote.speaker }}</a>
-              <span class="od-quote-stance">{{ qStanceLabel }}</span>
-            </div>
-            <div class="od-quote-speaker-meta">
-              <span class="od-quote-role">{{ quote.speaker_role }}{% if quote.speaker_party %} · {{ quote.speaker_party }}{% endif %}</span>
-              {% if quote.speaker_credibility is number %}
-                <span class="od-quote-cred">Trúv. {{ (quote.speaker_credibility * 100) | round }}%</span>
-              {% endif %}
-            </div>
-          </div>
-        {% elif quote.speaker_slug %}
-          <div class="od-quote-detail-item">
-            <a href="/raddirnar/{{ quote.speaker_slug }}/">{{ quote.speaker }}</a>
+      <div class="od-fact-details">
+        {% if fact.explanation %}
+          <div class="od-fact-detail">
+            <strong>Af hverju?</strong> {{ fact.explanation | evidenceLinksFromText | safe }}
           </div>
         {% endif %}
-
-        {# Source link #}
-        {% if quote.source_slug %}
-          <div class="od-quote-detail-item">
-            <strong>Heimild:</strong> <a href="/umraedan/{{ quote.source_slug }}/">{{ quote.source }}</a>
-          </div>
-        {% elif quote.source %}
-          <div class="od-quote-detail-item">
-            <strong>Heimild:</strong> {{ quote.source }}
+        {% if fact.caveat %}
+          <div class="od-fact-detail od-fact-caveat">
+            <strong>Gott að vita:</strong> {{ fact.caveat | evidenceLinksFromText | safe }}
           </div>
         {% endif %}
-
-        {# Category deep link #}
-        {% if quote.category %}
-          <div class="od-quote-detail-item">
-            <a href="/malefni/{{ quote.category }}/">Sjá málefni: {{ quote.category_is }} →</a>
+        {# Deep link to Fullyrðingar #}
+        {% if fact.claim_slug %}
+          <div class="od-fact-detail od-fact-deeplink">
+            <a href="/fullyrdingar/?claim={{ fact.claim_slug }}">Sjá fulla greiningu →</a>
+          </div>
+        {% endif %}
+        {# Topic link #}
+        {% if fact.category %}
+          <div class="od-fact-detail od-fact-deeplink">
+            <a href="/malefni/{{ fact.category }}/">Sjá málefni: {{ fact.category_is }} →</a>
           </div>
         {% endif %}
       </div>
-    </blockquote>
+    </div>
     {% endfor %}
   </section>
   {% endif %}
@@ -528,6 +509,6 @@ evidence_preview: true
     });
   }
   bindExpandable('.od-top-claims', '.ct-card', '.ct-card-header', 'ct-expanded');
-  bindExpandable('.od-quotes', '.od-quote-card', '.od-quote-header', 'od-quote-expanded');
+  bindExpandable('.od-key-facts', '.od-fact-card', '.od-fact-header', 'od-fact-expanded');
 })();
 </script>

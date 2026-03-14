@@ -121,8 +121,7 @@ module.exports = function () {
         articles_analysed: overviewDetail.key_numbers?.articles_analysed || 0,
         new_claims: overviewDetail.key_numbers?.new_claims_published || 0,
         verdict_breakdown: overviewDetail.key_numbers?.verdict_breakdown || {},
-        top_claims: (overviewDetail.top_claims || []).slice(0, 3),
-        notable_quotes: (overviewDetail.notable_quotes || []).slice(0, 2),
+        key_facts: (overviewDetail.key_facts || []).slice(0, 3),
         source_breakdown: overviewDetail.source_breakdown || {},
         topic_activity: (overviewDetail.topic_activity || []).slice(0, 4),
       }
