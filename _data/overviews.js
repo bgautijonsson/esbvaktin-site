@@ -35,24 +35,26 @@ function buildLookup(dir) {
   return map;
 }
 
-/* ── Build claim lookup from claims.json, keyed by canonical_text_is ── */
-function buildClaimLookup(dataDir) {
-  const map = new Map();
+/* ── Build claim lookups from claims.json ── */
+function buildClaimLookups(dataDir) {
+  const byText = new Map();
+  const bySlug = new Map();
   const claimsPath = path.join(dataDir, "assets", "data", "claims.json");
-  if (!fs.existsSync(claimsPath)) return map;
+  if (!fs.existsSync(claimsPath)) return { byText, bySlug };
   try {
     const claims = JSON.parse(fs.readFileSync(claimsPath, "utf-8"));
     for (const c of claims) {
-      if (c.canonical_text_is) map.set(c.canonical_text_is, c);
+      if (c.canonical_text_is) byText.set(c.canonical_text_is, c);
+      if (c.claim_slug) bySlug.set(c.claim_slug, c);
     }
   } catch (_) {
     /* skip if malformed */
   }
-  return map;
+  return { byText, bySlug };
 }
 
 /* ── Enrich an overview with cross-referenced entity/report/claim data ── */
-function enrichOverview(overview, entityMap, reportMap, claimMap) {
+function enrichOverview(overview, entityMap, reportMap, claimByText, claimBySlug) {
   // Enrich active_entities with detail data
   if (overview.active_entities) {
     overview.active_entities = overview.active_entities.map((ent) => {
@@ -75,10 +77,10 @@ function enrichOverview(overview, entityMap, reportMap, claimMap) {
     });
   }
 
-  // Enrich articles with report data
+  // Enrich articles with report data (prefer pre-computed slug from export)
   if (overview.articles) {
     overview.articles = overview.articles.map((art) => {
-      const slug = isSlug(art.title);
+      const slug = art.slug || isSlug(art.title);
       const report = reportMap.get(slug);
       if (!report) return { ...art, slug };
       return {
@@ -98,10 +100,12 @@ function enrichOverview(overview, entityMap, reportMap, claimMap) {
     });
   }
 
-  // Enrich top_claims with full claim data (explanation, sightings, etc.)
+  // Enrich top_claims with full claim data (prefer slug lookup, fall back to text)
   if (overview.top_claims) {
     overview.top_claims = overview.top_claims.map((claim) => {
-      const full = claimMap.get(claim.canonical_text_is);
+      const full =
+        (claim.claim_slug && claimBySlug.get(claim.claim_slug)) ||
+        claimByText.get(claim.canonical_text_is);
       if (!full) return claim;
       return {
         ...claim,
@@ -120,10 +124,12 @@ function enrichOverview(overview, entityMap, reportMap, claimMap) {
     });
   }
 
-  // Enrich key_facts with full claim data (explanation, sightings, deep link)
+  // Enrich key_facts with full claim data (prefer slug lookup, fall back to text)
   if (overview.key_facts) {
     overview.key_facts = overview.key_facts.map((fact) => {
-      const full = claimMap.get(fact.claim_text);
+      const full =
+        (fact.claim_slug && claimBySlug.get(fact.claim_slug)) ||
+        claimByText.get(fact.claim_text);
       if (!full) return fact;
       return {
         ...fact,
@@ -152,7 +158,9 @@ module.exports = function () {
   // Build lookup maps for enrichment
   const entityMap = buildLookup(path.join(__dirname, "entity-details"));
   const reportMap = buildLookup(path.join(__dirname, "reports"));
-  const claimMap = buildClaimLookup(path.resolve(__dirname, ".."));
+  const { byText: claimByText, bySlug: claimBySlug } = buildClaimLookups(
+    path.resolve(__dirname, "..")
+  );
 
   const files = fs
     .readdirSync(detailsDir)
@@ -161,6 +169,12 @@ module.exports = function () {
 
   return files.map((f) => {
     const raw = fs.readFileSync(path.join(detailsDir, f), "utf-8");
-    return enrichOverview(JSON.parse(raw), entityMap, reportMap, claimMap);
+    return enrichOverview(
+      JSON.parse(raw),
+      entityMap,
+      reportMap,
+      claimByText,
+      claimBySlug
+    );
   });
 };
