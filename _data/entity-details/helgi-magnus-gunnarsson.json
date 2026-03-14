@@ -27,6 +27,11 @@
       "supporting_evidence": [],
       "contradicting_evidence": [
         {
+          "id": "CURRENCY-DATA-015",
+          "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
+          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+        },
+        {
           "id": "CURRENCY-DATA-017",
           "source_name": "Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar",
           "source_url": "https://www.sedlabanki.is/peningastefna/vaxtaakvardir/"
@@ -35,11 +40,6 @@
           "id": "HOUS-DATA-005",
           "source_name": "Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase",
           "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
-        },
-        {
-          "id": "CURRENCY-DATA-015",
-          "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
-          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
         }
       ],
       "category": "currency",
@@ -343,13 +343,13 @@
       "claim_text": "Svíþjóð og Finnland gengu í NATO fyrir 2–3 árum án þess að telja ESB-aðild nauðsynlega til að tryggja öryggishagsmuni.",
       "original_quote": "Ekki töldu frændur okkar í Svíþjóð og Finnlandi það þegar þeir gengu í NATO fyrir 2–3 árum.",
       "verdict": "misleading",
-      "explanation": "<a href=\"https://ec.europa.eu/neighbourhood-enlargement/countries/detailed-country-information/finland_en\" title=\"European Commission — Finland accession documentation; Statistics Finland\" target=\"_blank\" rel=\"noopener\">PREC-HIST-009</a> staðfestir að Finnland gekk í NATO í apríl 2023 og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M042\" title=\"Treaty on European Union, Article 42; NATO Treaty, Article 5\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-008</a> nefnir að Svíþjóð hafi gengið í NATO 2023–2024 — þetta var fyrir 2–3 árum frá mars 2026. Hins vegar er fullyrðingin villandi vegna þess að bæði Svíþjóð og Finnland voru nú þegar ESB-aðildarríki þegar þau gengu í NATO. Finnland gekk í ESB 1995 og Svíþjóð sama ár. NATO-aðildin var viðbót við ESB-aðild, ekki staðgengill hennar. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M042\" title=\"Treaty on European Union, Article 42; NATO Treaty, Article 5\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-008</a> skýrir að öryggis- og varnarstefna ESB (CSDP) virki samhliða NATO, ekki í stað þess — 23 af 27 ESB-ríkjum eru einnig NATO-aðilar.",
+      "explanation": "PREC-HIST-009 staðfestir að Finnland gekk í NATO í apríl 2023 og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M042\" title=\"Treaty on European Union, Article 42; NATO Treaty, Article 5\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-008</a> nefnir að Svíþjóð hafi gengið í NATO 2023–2024 — þetta var fyrir 2–3 árum frá mars 2026. Hins vegar er fullyrðingin villandi vegna þess að bæði Svíþjóð og Finnland voru nú þegar ESB-aðildarríki þegar þau gengu í NATO. Finnland gekk í ESB 1995 og Svíþjóð sama ár. NATO-aðildin var viðbót við ESB-aðild, ekki staðgengill hennar. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M042\" title=\"Treaty on European Union, Article 42; NATO Treaty, Article 5\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-008</a> skýrir að öryggis- og varnarstefna ESB (CSDP) virki samhliða NATO, ekki í stað þess — 23 af 27 ESB-ríkjum eru einnig NATO-aðilar.",
       "missing_context": "Grundvallaratriðið sem fullyrðingin sleppur er að Finnland og Svíþjóð voru ESB-aðildarríki í um 28 ár þegar þau gengu í NATO. NATO-aðildin var viðbrögð við innrás Rússlands í Úkraínu 2022, ekki val milli ESB og NATO. Finnland hefur 1.340 km landamæri við Rússland sem gerði öryggisumhverfi þess ólíkt Íslands.",
       "supporting_evidence": [
         {
-          "id": "PREC-HIST-009",
-          "source_name": "European Commission — Finland accession documentation; Statistics Finland",
-          "source_url": "https://ec.europa.eu/neighbourhood-enlargement/countries/detailed-country-information/finland_en"
+          "id": "PREC-HIST-018",
+          "source_name": "Statistics Finland — EU membership impact assessments; Eurostat — convergence indicators",
+          "source_url": "https://stat.fi/en/statistics/khi"
         },
         {
           "id": "SOV-LEGAL-008",
@@ -358,11 +358,6 @@
         }
       ],
       "contradicting_evidence": [
-        {
-          "id": "PREC-HIST-009",
-          "source_name": "European Commission — Finland accession documentation; Statistics Finland",
-          "source_url": "https://ec.europa.eu/neighbourhood-enlargement/countries/detailed-country-information/finland_en"
-        },
         {
           "id": "PREC-HIST-018",
           "source_name": "Statistics Finland — EU membership impact assessments; Eurostat — convergence indicators",
@@ -552,23 +547,18 @@
       "claim_text": "Íslenskt þjóðfélag telur 380 þúsund íbúa og hefur því engar stærðarhagkvæmni í verslun.",
       "original_quote": "verandi 380 þúsund, engin stærðarhagkvæmni þar",
       "verdict": "partially_supported",
-      "explanation": "Íbúatalan er ónákvæm — <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Ibuar/Ibuar__mannfjoldaspa/MAN09010.px\" title=\"Hagstofa Íslands — Population projections 2024; Registers Iceland\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-005</a> sýnir um 395 þúsund íbúa í byrjun 2026, ekki 380 þúsund. Kjarni fullyrðingarinnar — að smæð þjóðfélagsins dragi úr stærðarhagkvæmni — er þó rökstuddur af heimildum. <a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4); European Parliament — seat allocation (Cambridge Compromise methodology)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-003</a> og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> staðfesta að Ísland yrði minnsta ESB-ríkið. <a href=\"https://hagstofa.is/talnaefni/samfelag/husnaedi/\" title=\"Hagstofa Íslands — Housing Statistics; Seðlabanki Íslands — Financial Stability Report 2025\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-008</a> lýsir háum byggingarkostnaði vegna smæðar markaðarins. Á hinn bóginn sýnir <a href=\"https://ec.europa.eu/eurostat/databrowser/view/fish_ca_main/\" title=\"Eurostat — Catches by fishing area (fish_ca_main)\" target=\"_blank\" rel=\"noopener\">FISH-DATA-019</a> að Ísland er ein stærsta sjávarútvegsstjórn Evrópu þrátt fyrir fámenni, og <a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-002</a> bendir á að smáríki nái árangri með bandalagsmyndun innan ESB.",
+      "explanation": "Íbúatalan er ónákvæm — <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Ibuar/Ibuar__mannfjoldaspa/MAN09010.px\" title=\"Hagstofa Íslands — Population projections 2024; Registers Iceland\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-005</a> sýnir um 395 þúsund íbúa í byrjun 2026, ekki 380 þúsund. Kjarni fullyrðingarinnar — að smæð þjóðfélagsins dragi úr stærðarhagkvæmni — er þó rökstuddur af heimildum. SOV-DATA-003 og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> staðfesta að Ísland yrði minnsta ESB-ríkið. <a href=\"https://hagstofa.is/talnaefni/samfelag/husnaedi/\" title=\"Hagstofa Íslands — Housing Statistics; Seðlabanki Íslands — Financial Stability Report 2025\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-008</a> lýsir háum byggingarkostnaði vegna smæðar markaðarins. Á hinn bóginn sýnir <a href=\"https://ec.europa.eu/eurostat/databrowser/view/fish_ca_main/\" title=\"Eurostat — Catches by fishing area (fish_ca_main)\" target=\"_blank\" rel=\"noopener\">FISH-DATA-019</a> að Ísland er ein stærsta sjávarútvegsstjórn Evrópu þrátt fyrir fámenni, og <a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-002</a> bendir á að smáríki nái árangri með bandalagsmyndun innan ESB.",
       "missing_context": "Íbúatalan 380 þúsund er úrelt — réttara er um 390–395 þúsund. Stærðarhagkvæmni í verslun ræðst ekki eingöngu af mannfjölda heldur einnig af kaupmætti, staðsetningu og samningsstöðu. <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Ibuar/Ibuar__mannfjoldi__3_bakgrunnur__Rikisfang/MAN04103.px\" title=\"Hagstofa Íslands — Population by citizenship and country of birth\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-002</a> sýnir að innflytjendur eru nú 18% íbúa. Malta (520 þúsund) hefur tekist að nýta aðild sína vel þrátt fyrir smæð.",
       "supporting_evidence": [
         {
-          "id": "SOV-DATA-003",
-          "source_name": "Treaty on European Union, Article 16(4); European Parliament — seat allocation (Cambridge Compromise methodology)",
-          "source_url": "https://eur-lex.europa.eu/summary/glossary/qualified_majority.html"
+          "id": "HOUS-DATA-008",
+          "source_name": "Hagstofa Íslands — Housing Statistics; Seðlabanki Íslands — Financial Stability Report 2025",
+          "source_url": "https://hagstofa.is/talnaefni/samfelag/husnaedi/"
         },
         {
           "id": "SOV-DATA-017",
           "source_name": "Treaty on European Union, Article 16(4); European Parliament allocation rules",
           "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016"
-        },
-        {
-          "id": "HOUS-DATA-008",
-          "source_name": "Hagstofa Íslands — Housing Statistics; Seðlabanki Íslands — Financial Stability Report 2025",
-          "source_url": "https://hagstofa.is/talnaefni/samfelag/husnaedi/"
         }
       ],
       "contradicting_evidence": [],
@@ -666,13 +656,13 @@
       "claim_text": "Brexit varð erfitt fyrir Breta þrátt fyrir að vera stórt ríki og það yrði enn erfiðara fyrir Ísland að ganga úr ESB ef til þess kæmi.",
       "original_quote": "eins erfitt og þetta var fyrir Breta þótt stórir séu",
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://obr.uk/frs/fiscal-risks-and-sustainability-july-2023/\" title=\"UK Office for Budget Responsibility — Fiscal Risks and Sustainability Report 2023\" target=\"_blank\" rel=\"noopener\">PREC-HIST-003</a> og <a href=\"https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/\" title=\"UK Office for Budget Responsibility — Economic and fiscal outlook 2023; Centre for European Reform; Bank of England\" target=\"_blank\" rel=\"noopener\">PREC-DATA-008</a> staðfesta að Brexit hafði veruleg neikvæð efnahagsleg áhrif — OBR áætlaði 4% samdrátt í langtíma-VLF og vöruviðskipti við ESB minnkuðu. <a href=\"https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/\" title=\"UK Office for National Statistics — Trade statistics; Office for Budget Responsibility — Brexit impact assessment\" target=\"_blank\" rel=\"noopener\">PREC-HIST-012</a> sýnir umtalsverða viðskiptahnignun eftir Brexit. Fullyrðingin um að Brexit hafi verið erfitt er vel studd. Hins vegar er ályktunin um að úrsögn yrði \"enn erfiðari\" fyrir Ísland ályktunarspurning sem heimildir svara ekki beint. <a href=\"https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/\" title=\"UK Office for Budget Responsibility — Economic and fiscal outlook 2023; Centre for European Reform; Bank of England\" target=\"_blank\" rel=\"noopener\">PREC-DATA-008</a> bendir þó á mikilvægan mun: Ísland er lítið hagkerfi sem er nú þegar í EES — að ganga í ESB og síðan úr því væri \"mun minni skref\" en Brexit vegna EES-öryggisnetstins.",
+      "explanation": "PREC-HIST-003 og <a href=\"https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/\" title=\"UK Office for Budget Responsibility — Economic and fiscal outlook 2023; Centre for European Reform; Bank of England\" target=\"_blank\" rel=\"noopener\">PREC-DATA-008</a> staðfesta að Brexit hafði veruleg neikvæð efnahagsleg áhrif — OBR áætlaði 4% samdrátt í langtíma-VLF og vöruviðskipti við ESB minnkuðu. <a href=\"https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/\" title=\"UK Office for National Statistics — Trade statistics; Office for Budget Responsibility — Brexit impact assessment\" target=\"_blank\" rel=\"noopener\">PREC-HIST-012</a> sýnir umtalsverða viðskiptahnignun eftir Brexit. Fullyrðingin um að Brexit hafi verið erfitt er vel studd. Hins vegar er ályktunin um að úrsögn yrði \"enn erfiðari\" fyrir Ísland ályktunarspurning sem heimildir svara ekki beint. <a href=\"https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/\" title=\"UK Office for Budget Responsibility — Economic and fiscal outlook 2023; Centre for European Reform; Bank of England\" target=\"_blank\" rel=\"noopener\">PREC-DATA-008</a> bendir þó á mikilvægan mun: Ísland er lítið hagkerfi sem er nú þegar í EES — að ganga í ESB og síðan úr því væri \"mun minni skref\" en Brexit vegna EES-öryggisnetstins.",
       "missing_context": "<a href=\"https://www.cer.eu/insights/gap-between-brexit-reset-rhetoric-and-reality\" title=\"Centre for European Reform; UK in a Changing Europe\" target=\"_blank\" rel=\"noopener\">PREC-DATA-004</a> bendir á að enduraðild eftir úrsögn krefjist fullrar umsóknar samkvæmt 49. grein — engin einfölduð leið er til. Ísland hefði þó EES-samninginn sem bakstyrk ef það gengi úr ESB, ólíkt Bretum sem misstu allan aðgang að innri markaðnum. Samanburðurinn á milli Brexit og hugsanlegrar úrsagnar Íslands er takmarkaður vegna grundvallarmundar á aðstæðum.",
       "supporting_evidence": [
         {
           "id": "PREC-HIST-003",
-          "source_name": "UK Office for Budget Responsibility — Fiscal Risks and Sustainability Report 2023",
-          "source_url": "https://obr.uk/frs/fiscal-risks-and-sustainability-july-2023/"
+          "source_name": "PREC-HIST-003",
+          "source_url": null
         },
         {
           "id": "PREC-DATA-008",

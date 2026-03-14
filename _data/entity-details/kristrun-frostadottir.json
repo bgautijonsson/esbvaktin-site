@@ -15,9 +15,9 @@
   },
   "althingi_stats": null,
   "scorecard": {
-    "supported": 41,
+    "supported": 40,
     "misleading": 1,
-    "partially_supported": 24,
+    "partially_supported": 25,
     "unverifiable": 9,
     "unsupported": 1
   },
@@ -333,8 +333,8 @@
       "claim_text": "Allir flokkar ríkisstjórnarinnar voru sammála um að þjóðaratkvæðagreiðsla um ESB-aðildarviðræður yrði haldin, þrátt fyrir skiptar skoðanir innan og milli flokka.",
       "original_quote": "það eru skiptar skoðanir innan flokka og milli flokka en allir sammála um að það væri gott að láta af þessu verða.",
       "verdict": "supported",
-      "explanation": "<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland; Euronews; France24; coalition agreement\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-013</a> og <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> staðfesta að allir þrír stjórnarflokkarnir — Samfylkingin, Viðreisn og Flokkur fólksins — samþykktu í stjórnarsáttmálanum að halda þjóðaratkvæðagreiðslu. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir að utanríkisráðherra lagði fram þingsályktunartillöguna. <a href=\"https://politpro.eu/en/iceland/political-parties/flokkur-folksins\" title=\"Flokkur fólksins party platform; Gallup Þjóðarpúls cross-tabulations by party (February 2026); Althingi coalition agreement 2024\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-014</a> sýnir jafnframt skiptingu innan og á milli flokka: Flokkur fólksins er á móti ESB-aðild þrátt fyrir að styðja þjóðaratkvæðagreiðsluna. Fullyrðingin nefnir þetta réttilega.",
-      "missing_context": "Flokkur fólksins samþykkti að halda atkvæðagreiðslu en er opinberlega á móti ESB-aðild og ber herferð gegn henni — þetta er óvenjuleg staða þar sem stjórnarflokkur berst gegn niðurstöðu sem eigin ríkisstjórn auðveldar. Ríkisstjórnin hefur þröngan meirihluta (32 af 63 sætum).",
+      "explanation": "<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland; Euronews; France24; coalition agreement\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-013</a> staðfestir að allir þrír stjórnarflokkar — Samfylkingin, Viðreisn og Flokkur fólksins — samþykktu í stjórnarsáttmála að halda þjóðaratkvæðagreiðslu um framhald aðildarviðræðna. Sérstaka athygli vekur að Flokkur fólksins er ESB-andvígur en samþykkti engu að síður atkvæðagreiðsluna sem hluta af stjórnarmyndun, eins og <a href=\"https://www.flokkurfolksins.is/\" title=\"Coalition agreement 2024; Flokkur fólksins — Party statements; Althingi records\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-018</a> staðfestir. Fullyrðingin nefnir réttilega skiptar skoðanir innan og milli flokka.",
+      "missing_context": "Flokkur fólksins mun herferð gegn ESB-aðild þrátt fyrir stuðning við sjálfa atkvæðagreiðsluna. Stjórnarmeirihlutinn er þröngur — 32 af 63 þingmönnum. Þjóðaratkvæðagreiðslan er ráðgefandi samkvæmt íslenskri stjórnskipun.",
       "supporting_evidence": [
         {
           "id": "PARTY-DATA-013",
@@ -342,19 +342,19 @@
           "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
         },
         {
+          "id": "PARTY-DATA-018",
+          "source_name": "Coalition agreement 2024; Flokkur fólksins — Party statements; Althingi records",
+          "source_url": "https://www.flokkurfolksins.is/"
+        },
+        {
+          "id": "SOV-PARL-005",
+          "source_name": "Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)",
+          "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
+        },
+        {
           "id": "SOV-DATA-006",
           "source_name": "Government of Iceland announcement; Althingi parliamentary records",
           "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
-        },
-        {
-          "id": "POLITICAL-DATA-014",
-          "source_name": "Flokkur fólksins party platform; Gallup Þjóðarpúls cross-tabulations by party (February 2026); Althingi coalition agreement 2024",
-          "source_url": "https://politpro.eu/en/iceland/political-parties/flokkur-folksins"
-        },
-        {
-          "id": "SOV-PARL-001",
-          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
-          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
         }
       ],
       "contradicting_evidence": [],
@@ -368,19 +368,14 @@
     {
       "claim_text": "Þegar Svíþjóð og Finnland gengu í Evrópusambandið var búin til sérstök landbúnaðarstefna um stöðu þeirra landa.",
       "original_quote": "Þegar Svíþjóð og Finnland voru tekin inn á sínum tíma var búin til sérstök landbúnaðarstefna um þeirra stöðu.",
-      "verdict": "supported",
-      "explanation": "Heimildir staðfesta kjarnaefni fullyrðingarinnar. <a href=\"https://mmm.fi/en/food-and-agriculture/support-and-aid/national-agricultural-aid\" title=\"Act of Accession of Austria, Finland and Sweden (1994), Article 142; Finnish Ministry of Agriculture and Forestry; Commission Decision (EU) 2022/2460\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-002</a> sýnir að Finnland og Svíþjóð fengu varanlegan rétt til viðbótar ríkisstyrkja við norðlænan landbúnað samkvæmt 142. grein aðildarsamningsins frá 1994. Þessi stuðningur nemur um 290 milljónum evra á ári fyrir Finnland eitt og sér og nær til búfjárgreiðslna, mjólkurstuðnings og ylræktarstyrkja (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A11994N%2FAFP\" title=\"Act of Accession of Austria, Finland, and Sweden (1994), Articles 141–142; European Commission Decision C(2021)1896 authorising Finnish national aid\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-021</a>). Nýju heimildarnar styrkja myndina: <a href=\"https://stat.fi/en/statistics/khi\" title=\"Statistics Finland — EU membership impact assessments; Eurostat — convergence indicators\" target=\"_blank\" rel=\"noopener\">PREC-HIST-018</a> staðfestir að finnsk reynsla af ESB-aðild var víðtæk og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); OECD Economic Surveys: Iceland 2021\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-019</a> undirstrikar að landbúnaður krefst algerrar aðlögunar við sameiginlegu landbúnaðarstefnuna.",
-      "missing_context": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-004</a> bendir á mikilvægan blæbrigðamun: 142. greinarheimildin er viðbót við sameiginlegu landbúnaðarstefnuna, ekki undanþága frá henni. Finnland og Svíþjóð innleiða stefnuna að fullu og fá auk þess viðbótarstuðning. Fullyrðingin um \"sérstaka landbúnaðarstefnu\" getur gefið til kynna víðtækari sérstöðu en raunin er. Orðið \"10%\" í fullyrðingunni á ekki beint við um Finnland og Svíþjóð.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://mmm.fi/en/food-and-agriculture/support-and-aid/national-agricultural-aid\" title=\"Act of Accession of Austria, Finland and Sweden (1994), Article 142; Finnish Ministry of Agriculture and Forestry; Commission Decision (EU) 2022/2460\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-002</a> staðfestir að Finnland og Svíþjóð fengu heimild til sérstakrar ríkisaðstoðar til norðlægs landbúnaðar samkvæmt 142. gr. aðildarsamningsins frá 1994. Þó er ónákvæmt að kalla þetta «sérstaka landbúnaðarstefnu» — í raun er um viðbótarstuðning ofan á sameiginlegu landbúnaðarstefnuna að ræða, ekki sérstefnu. Bæði löndin innleiða sameiginlegu landbúnaðarstefnuna að fullu; ríkisaðstoðin kemur til viðbótar.",
+      "missing_context": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-004</a> undirstrikar að ekkert ESB-ríki hefur nokkru sinni fengið varanlega undanþágu frá sameiginlegu landbúnaðarstefnunni. Finnsk og sænsk aðstoð er viðbót, ekki undanþága. Stuðningurinn má ekki leiða til aukinnar framleiðslu eða fara yfir stuðning fyrir aðild. Fullyrðingin gefur til kynna meiri sérstöðu en raunin er.",
       "supporting_evidence": [
         {
           "id": "AGRI-LEGAL-002",
           "source_name": "Act of Accession of Austria, Finland and Sweden (1994), Article 142; Finnish Ministry of Agriculture and Forestry; Commission Decision (EU) 2022/2460",
           "source_url": "https://mmm.fi/en/food-and-agriculture/support-and-aid/national-agricultural-aid"
-        },
-        {
-          "id": "AGRI-DATA-021",
-          "source_name": "Act of Accession of Austria, Finland, and Sweden (1994), Articles 141–142; European Commission Decision C(2021)1896 authorising Finnish national aid",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A11994N%2FAFP"
         },
         {
           "id": "AGRI-DATA-016",
@@ -529,14 +524,14 @@
       "missing_context": "Full fullgilding Mercosur-samningsins er ekki tryggð — Frakkland og Austurríki eru andvíg, og Evrópuþingið vísaði málinu til Evrópudómstólsins í janúar 2026. Ísland sem EES-ríki nýtur ekki sjálfkrafa góðs af viðskiptasamningum ESB við þriðju ríki.",
       "supporting_evidence": [
         {
-          "id": "TRADE-DATA-028",
-          "source_name": "Council of the European Union — EU-Mercosur Agreement",
-          "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/01/09/eu-mercosur-council-greenlights-signature-of-the-comprehensive-partnership-and-trade-agreement/"
-        },
-        {
           "id": "PREC-HIST-015",
           "source_name": "Swiss Federal Department of Foreign Affairs — Bilateral agreements overview; European Commission — EU-Switzerland relations factsheet",
           "source_url": "https://www.europa.eda.admin.ch/en/overview-bilateral-path"
+        },
+        {
+          "id": "TRADE-DATA-028",
+          "source_name": "Council of the European Union — EU-Mercosur Agreement",
+          "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/01/09/eu-mercosur-council-greenlights-signature-of-the-comprehensive-partnership-and-trade-agreement/"
         }
       ],
       "contradicting_evidence": [],
@@ -839,8 +834,8 @@
         },
         {
           "id": "SOV-DATA-003",
-          "source_name": "Treaty on European Union, Article 16(4); European Parliament — seat allocation (Cambridge Compromise methodology)",
-          "source_url": "https://eur-lex.europa.eu/summary/glossary/qualified_majority.html"
+          "source_name": "SOV-DATA-003",
+          "source_url": null
         }
       ],
       "contradicting_evidence": [],
@@ -855,23 +850,18 @@
       "claim_text": "Evrópusambandið bjó til sérstakt hugtak, heimskautalandbúnað, til að Finnland myndi passa betur inn við aðild.",
       "original_quote": "Heimskautalandbúnaður er til að mynda sérstakt hugtak sem búið var til innan Evrópusambandsins svo Finnland myndi passa betur inn.",
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A11994N%2FAFP\" title=\"Act of Accession of Austria, Finland, and Sweden (1994), Articles 141–142; European Commission Decision C(2021)1896 authorising Finnish national aid\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-021</a> staðfestir að 142. grein aðildarsamnings Finnlands heimilar Finnlandi og Svíþjóð varanlega ríkisaðstoð við landbúnað á norðurslóðum — sérstakt fyrirkomulag sem víkur frá almennum reglum ESB um ríkisaðstoð. Þetta var samningsniðurstaða frá 1994 og fordæmi sem gæti skipt máli fyrir Ísland. Heimildir staðfesta þó ekki beint að ESB hafi «búið til hugtak» sem nefnist «heimskautalandbúnaður» sérstaklega til þess að Finnland «passi betur inn». Fyrirkomulagið var undanþága sem samið var um í aðildarviðræðum, ekki einhliða ákvarðan ESB. Nýju heimildarnar (<a href=\"https://www.oecd.org/en/publications/oecd-economic-surveys-finland-2025_985d0555-en.html\" title=\"OECD Economic Surveys: Finland 2025\" target=\"_blank\" rel=\"noopener\">PREC-DATA-013</a>, <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E326\" title=\"Treaty on the Functioning of the European Union, Articles 326–334; European Commission — Enhanced cooperation factsheet\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-031</a>) bæta samhengi um reynslu Finnlands og sveigjanleika ESB en breyta ekki grundvallarmatinu.",
-      "missing_context": "Fullyrðingin ýkir hlutverk ESB — undanþágan var samningsniðurstaða, ekki einhliða stofnun nýs hugtaks. Vilji ESB til að veita varanlegar undanþágur hefur minnkað síðan stækkun 2004 (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A11994N%2FAFP\" title=\"Act of Accession of Austria, Finland, and Sweden (1994), Articles 141–142; European Commission Decision C(2021)1896 authorising Finnish national aid\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-021</a>). Landbúnaður Íslands er ólíkur finnska landbúnaðinum að uppbyggingu (kindabúskapur á Íslandi, fjölbreyttari framleiðsla í Finnlandi).",
+      "explanation": "AGRI-DATA-021 staðfestir að 142. grein aðildarsamnings Finnlands heimilar Finnlandi og Svíþjóð varanlega ríkisaðstoð við landbúnað á norðurslóðum — sérstakt fyrirkomulag sem víkur frá almennum reglum ESB um ríkisaðstoð. Þetta var samningsniðurstaða frá 1994 og fordæmi sem gæti skipt máli fyrir Ísland. Heimildir staðfesta þó ekki beint að ESB hafi «búið til hugtak» sem nefnist «heimskautalandbúnaður» sérstaklega til þess að Finnland «passi betur inn». Fyrirkomulagið var undanþága sem samið var um í aðildarviðræðum, ekki einhliða ákvarðan ESB. Nýju heimildarnar (<a href=\"https://www.oecd.org/en/publications/oecd-economic-surveys-finland-2025_985d0555-en.html\" title=\"OECD Economic Surveys: Finland 2025\" target=\"_blank\" rel=\"noopener\">PREC-DATA-013</a>, <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E326\" title=\"Treaty on the Functioning of the European Union, Articles 326–334; European Commission — Enhanced cooperation factsheet\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-031</a>) bæta samhengi um reynslu Finnlands og sveigjanleika ESB en breyta ekki grundvallarmatinu.",
+      "missing_context": "Fullyrðingin ýkir hlutverk ESB — undanþágan var samningsniðurstaða, ekki einhliða stofnun nýs hugtaks. Vilji ESB til að veita varanlegar undanþágur hefur minnkað síðan stækkun 2004 (AGRI-DATA-021). Landbúnaður Íslands er ólíkur finnska landbúnaðinum að uppbyggingu (kindabúskapur á Íslandi, fjölbreyttari framleiðsla í Finnlandi).",
       "supporting_evidence": [
         {
-          "id": "AGRI-DATA-021",
-          "source_name": "Act of Accession of Austria, Finland, and Sweden (1994), Articles 141–142; European Commission Decision C(2021)1896 authorising Finnish national aid",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A11994N%2FAFP"
+          "id": "AGRI-LEGAL-002",
+          "source_name": "Act of Accession of Austria, Finland and Sweden (1994), Article 142; Finnish Ministry of Agriculture and Forestry; Commission Decision (EU) 2022/2460",
+          "source_url": "https://mmm.fi/en/food-and-agriculture/support-and-aid/national-agricultural-aid"
         },
         {
           "id": "PREC-HIST-018",
           "source_name": "Statistics Finland — EU membership impact assessments; Eurostat — convergence indicators",
           "source_url": "https://stat.fi/en/statistics/khi"
-        },
-        {
-          "id": "PREC-HIST-009",
-          "source_name": "European Commission — Finland accession documentation; Statistics Finland",
-          "source_url": "https://ec.europa.eu/neighbourhood-enlargement/countries/detailed-country-information/finland_en"
         }
       ],
       "contradicting_evidence": [],
@@ -1056,6 +1046,16 @@
           "source_url": "https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/"
         },
         {
+          "id": "POLITICAL-DATA-014",
+          "source_name": "Flokkur fólksins party platform; Gallup Þjóðarpúls cross-tabulations by party (February 2026); Althingi coalition agreement 2024",
+          "source_url": "https://politpro.eu/en/iceland/political-parties/flokkur-folksins"
+        },
+        {
+          "id": "POLL-DATA-011",
+          "source_name": "Gallup Ísland — EU support by party affiliation (November 2025)",
+          "source_url": "https://www.gallup.is/frettir/nato-og-esb/"
+        },
+        {
           "id": "POLL-DATA-016",
           "source_name": "Gallup Ísland / Vísir — EU referendum survey, March 2026",
           "source_url": "https://www.visir.is/g/20262853438d/thridjungur-and-vigur-at-kvaeda-greidslunni"
@@ -1066,24 +1066,9 @@
           "source_url": "https://www.gallup.is/frettir/nyr-thjodarpuls/"
         },
         {
-          "id": "POLL-DATA-011",
-          "source_name": "Gallup Ísland — EU support by party affiliation (November 2025)",
-          "source_url": "https://www.gallup.is/frettir/nato-og-esb/"
-        },
-        {
-          "id": "POLL-DATA-008",
-          "source_name": "Gallup Iceland / Þjóðarpúls",
-          "source_url": "https://www.gallup.is/frettir/nyr-thjodarpuls/"
-        },
-        {
           "id": "POLL-DATA-020",
           "source_name": "Gallup hf. — Þjóðarpúls; Vísir",
           "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
-        },
-        {
-          "id": "POLITICAL-DATA-014",
-          "source_name": "Flokkur fólksins party platform; Gallup Þjóðarpúls cross-tabulations by party (February 2026); Althingi coalition agreement 2024",
-          "source_url": "https://politpro.eu/en/iceland/political-parties/flokkur-folksins"
         }
       ],
       "contradicting_evidence": [],
@@ -1513,7 +1498,7 @@
       "original_quote": "Ef það kemur nei út úr því þurfum við að treysta á það að EES-samningurinn sé góður og virkur",
       "verdict": "partially_supported",
       "explanation": "Grundvallaratriði fullyrðingarinnar stenst — ef nei-niðurstaða verður mun Ísland áfram byggja á EES-samningnum sem meginramma samskipta við ESB. <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Articles 99–101\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-002</a> staðfestir að EFTA-ríki taka upp innri markaðslöggjöf ESB í gegnum EES en hafa ekki atkvæðisrétt. Orðalagið «þarf að treysta á» er þó of einstrengingslegt. SOV-DATA-022 bendir á að nei-niðurstaða myndi ekki endilega þýða stöðnun — hún myndi varðveita núverandi stöðu þar sem Ísland hefur EES-samninginn, EFTA-aðild, Schengen-samstarf og sjálfstæða viðskiptasamninga. <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf\" title=\"EEA Agreement — Protocol 3 on trade in processed agricultural products\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-002</a> staðfestir að EES-samningurinn veitir nú þegar tollfrjálsan aðgang að innri markaðnum fyrir flestar vörur.",
-      "missing_context": "Fullyrðingin gefur til kynna að EES-samningurinn sé eina kosturinn, en Ísland hefur einnig sjálfstæða viðskiptasamninga í gegnum EFTA og tvíhliða (t.d. Ísland-Kína fríverzlunarsamninginn). <a href=\"https://www.thedanishparliament.dk/en/eu-information-centre/the-danish-opt-outs-from-eu-cooperation\" title=\"Danish Ministry of Foreign Affairs; Edinburgh Agreement 1992; European Council conclusions\" target=\"_blank\" rel=\"noopener\">PREC-HIST-010</a> sýnir dönsku fordæmin þar sem nei í þjóðaratkvæðagreiðslu opnaði leið til endursamningaviðræðna — nei-niðurstaða lokar ekki endilega öllum dyrum.",
+      "missing_context": "Fullyrðingin gefur til kynna að EES-samningurinn sé eina kosturinn, en Ísland hefur einnig sjálfstæða viðskiptasamninga í gegnum EFTA og tvíhliða (t.d. Ísland-Kína fríverzlunarsamninginn). PREC-HIST-010 sýnir dönsku fordæmin þar sem nei í þjóðaratkvæðagreiðslu opnaði leið til endursamningaviðræðna — nei-niðurstaða lokar ekki endilega öllum dyrum.",
       "supporting_evidence": [
         {
           "id": "EEA-LEGAL-002",

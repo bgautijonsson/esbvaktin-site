@@ -197,7 +197,7 @@
       "original_quote": "Við getum kennt öðrum Evrópulöndum að stýra sjálfbærum fiskveiðum.",
       "verdict": "partially_supported",
       "explanation": "<a href=\"https://ec.europa.eu/eurostat/databrowser/view/FISH_CA_MAIN/default/table?lang=en\" title=\"Eurostat — Fisheries statistics (fish_ca_main); Hagstofa Íslands\" target=\"_blank\" rel=\"noopener\">FISH-DATA-021</a> og <a href=\"https://ec.europa.eu/eurostat/databrowser/view/fish_ca_main/\" title=\"Eurostat — Catches by fishing area (fish_ca_main)\" target=\"_blank\" rel=\"noopener\">FISH-DATA-019</a> staðfesta að Ísland er ein stærsta fiskiveiðiþjóð Evrópu miðað við höfðatölu, með afla um 1,0–1,9 milljónir tonna árlega. POL-DATA-005 lýsir kvótakerfi Íslands (ITQ) sem vel þróuðu. Hins vegar fullyrðir greinin um \"sjálfbærar fiskveiðar\" sérstaklega — og þótt kvótakerfið sé vel þekkt, sýna heimildir ekki sjálfstætt mat á sjálfbærni íslensku veiðistjórnunarinnar samanborið við önnur ríki.",
-      "missing_context": "Heimildir fjalla um umfang veiða og kvótakerfið en meta ekki sjálfbærnivottanir eða stöðu fiskistofna sérstaklega. <a href=\"https://www.ssb.no/en/jord-skog-jakt-og-fiskeri\" title=\"Statistics Norway (SSB); Norwegian Institute of Marine Research (Havforskningsinstituttet); Norwegian Seafood Council (Norges sjømatråd)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-009</a> lýsir norskum fiskveiðum sem vel stýrðum, sem gefur til kynna að Ísland sé ekki eitt um framúrskarandi veiðistjórnun á Norðurlöndum.",
+      "missing_context": "Heimildir fjalla um umfang veiða og kvótakerfið en meta ekki sjálfbærnivottanir eða stöðu fiskistofna sérstaklega. PREC-DATA-009 lýsir norskum fiskveiðum sem vel stýrðum, sem gefur til kynna að Ísland sé ekki eitt um framúrskarandi veiðistjórnun á Norðurlöndum.",
       "supporting_evidence": [
         {
           "id": "FISH-DATA-021",
@@ -206,7 +206,7 @@
         },
         {
           "id": "POL-DATA-005",
-          "source_name": "LÍÚ and SFS public statements; Hagstofa Íslands national accounts",
+          "source_name": "POL-DATA-005",
           "source_url": null
         }
       ],
@@ -295,17 +295,17 @@
       "claim_text": "Evrópusambandið hefur 450 milljónir íbúa.",
       "original_quote": "ESB gerir þessa samninga í krafti stærðarhagkvæmni Evrópusambandsins með sína 450 milljónir íbúa og um 33 milljónir fyrirtækja.",
       "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-002</a> og <a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4); European Parliament — seat allocation (Cambridge Compromise methodology)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-003</a> vísa bæði til heildaríbúafjölda ESB og nota tölur sem samrýmast um 450 milljónum. Ísland myndi bæta við sig um 390.000 íbúum, sem er hverfandi hlutfall — um 0,087% samkvæmt <a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4); European Parliament — seat allocation (Cambridge Compromise methodology)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-003</a>. Talan 450 milljónir er réttur ákveðinn ávöl tala.",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-002</a> og SOV-DATA-003 vísa bæði til heildaríbúafjölda ESB og nota tölur sem samrýmast um 450 milljónum. Ísland myndi bæta við sig um 390.000 íbúum, sem er hverfandi hlutfall — um 0,087% samkvæmt SOV-DATA-003. Talan 450 milljónir er réttur ákveðinn ávöl tala.",
       "missing_context": null,
       "supporting_evidence": [
         {
-          "id": "SOV-LEGAL-002",
-          "source_name": "Treaty on European Union, Article 16(4)",
-          "source_url": "https://eur-lex.europa.eu/summary/glossary/qualified_majority.html"
+          "id": "SOV-DATA-017",
+          "source_name": "Treaty on European Union, Article 16(4); European Parliament allocation rules",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016"
         },
         {
-          "id": "SOV-DATA-003",
-          "source_name": "Treaty on European Union, Article 16(4); European Parliament — seat allocation (Cambridge Compromise methodology)",
+          "id": "SOV-LEGAL-002",
+          "source_name": "Treaty on European Union, Article 16(4)",
           "source_url": "https://eur-lex.europa.eu/summary/glossary/qualified_majority.html"
         }
       ],
@@ -351,13 +351,13 @@
       "claim_text": "ESB-aðild mun líklega auka stöðugleika í hagkerfi Íslands.",
       "original_quote": "Mjög líklega eykst stöðugleiki í hagkerfinu okkar eftir inngöngu í ESB.",
       "verdict": "partially_supported",
-      "explanation": "Rök fyrir auknum stöðugleika eru til staðar — <a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Policy rate decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURR-DATA-004</a> sýnir að stýrivextir á Íslandi eru mun hærri en í evrusvæðinu (8% á móti 2,75%), og <a href=\"https://sa.is/frettatengt/frettir/vinna-hafin-vid-uttekt-a-stodu-adildarvidraedna-vid-evropusambandid\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> bendir á að SA áætli 2–3 prósentustiga lækkun á fjármagnskostnaði. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — EU polls cross-referenced with Hagstofa consumer confidence index\" target=\"_blank\" rel=\"noopener\">POLL-DATA-009</a> sýnir sterka fylgni á milli efnahagsóstöðugleika og stuðnings við ESB-aðild. Á hinn bóginn varar <a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Policy rate decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURR-DATA-004</a> við því að lægri vextir gætu aukið eignaverðsbólur, og <a href=\"https://www.cb.is/monetary-policy/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> bendir á að tap á sjálfstæðri peningastefnu sé verulegur málamiðlun.",
+      "explanation": "Rök fyrir auknum stöðugleika eru til staðar — CURR-DATA-004 sýnir að stýrivextir á Íslandi eru mun hærri en í evrusvæðinu (8% á móti 2,75%), og <a href=\"https://sa.is/frettatengt/frettir/vinna-hafin-vid-uttekt-a-stodu-adildarvidraedna-vid-evropusambandid\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> bendir á að SA áætli 2–3 prósentustiga lækkun á fjármagnskostnaði. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — EU polls cross-referenced with Hagstofa consumer confidence index\" target=\"_blank\" rel=\"noopener\">POLL-DATA-009</a> sýnir sterka fylgni á milli efnahagsóstöðugleika og stuðnings við ESB-aðild. Á hinn bóginn varar CURR-DATA-004 við því að lægri vextir gætu aukið eignaverðsbólur, og <a href=\"https://www.cb.is/monetary-policy/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> bendir á að tap á sjálfstæðri peningastefnu sé verulegur málamiðlun.",
       "missing_context": "Fullyrðingin sleppur umræðu um hvað tapast — sjálfstæð peningastefna og sveigjanleiki gengis. Krónan féll um 50% í hruninu 2008 og sá sveigjanleiki er talinn hafa flýtt bata efnahagslífsins. Evruaðild útilokar þann aðlögunarbúnað.",
       "supporting_evidence": [
         {
           "id": "CURR-DATA-004",
-          "source_name": "Seðlabanki Íslands — Policy rate decisions; ECB — Key interest rates",
-          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+          "source_name": "CURR-DATA-004",
+          "source_url": null
         },
         {
           "id": "POL-DATA-017",
@@ -450,13 +450,13 @@
       "claim_text": "Með ESB-aðild myndi Ísland fá nýjan alþjóðlegan gjaldmiðil sem tryggir hagstæðari vaxtarkjör og samkeppni á bankamarkaði.",
       "original_quote": "Með hagstæðum samningum getum við fengið nýjan alþjóðlegan gjaldmiðil sem tryggir almenningi og fyrirtækjum hagstæðari vaxtarkjör og langþráða alvöru samkeppni á bankamarkaði.",
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Policy rate decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURR-DATA-004</a> staðfestir verulegan vaxtamun — 8% stýrivextir á Íslandi á móti 2,75% á evrusvæðinu, sem skilar sér í hærri húsnæðislánavöxtum (7–9% á móti 3–4%). <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> og <a href=\"https://sa.is/frettatengt/frettir/vinna-hafin-vid-uttekt-a-stodu-adildarvidraedna-vid-evropusambandid\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> styðja rökin um lægri fjármagnskostnað. Hins vegar varar <a href=\"https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en\" title=\"European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators\" target=\"_blank\" rel=\"noopener\">CURR-DATA-005</a> við því að evruaðild sé ekki sjálfgefin við ESB-inngöngu — Króatía þurfti 10 ár frá aðild til evruupptöku. Fullyrðingin um \"samkeppni á bankamarkaði\" er ekki beint studd af heimildum.",
+      "explanation": "CURR-DATA-004 staðfestir verulegan vaxtamun — 8% stýrivextir á Íslandi á móti 2,75% á evrusvæðinu, sem skilar sér í hærri húsnæðislánavöxtum (7–9% á móti 3–4%). <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> og <a href=\"https://sa.is/frettatengt/frettir/vinna-hafin-vid-uttekt-a-stodu-adildarvidraedna-vid-evropusambandid\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> styðja rökin um lægri fjármagnskostnað. Hins vegar varar <a href=\"https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en\" title=\"European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators\" target=\"_blank\" rel=\"noopener\">CURR-DATA-005</a> við því að evruaðild sé ekki sjálfgefin við ESB-inngöngu — Króatía þurfti 10 ár frá aðild til evruupptöku. Fullyrðingin um \"samkeppni á bankamarkaði\" er ekki beint studd af heimildum.",
       "missing_context": "Evruaðild kemur ekki samstundis — Ísland þyrfti fyrst að uppfylla Maastricht-skilyrði og dvelja í ERM II í a.m.k. tvö ár. Króatía tók 10 ár. Lægri vextir gætu einnig aukið hættu á eignaverðsbólum ef þeim fylgir ekki nægilegt eftirlitsumhverfi.",
       "supporting_evidence": [
         {
           "id": "CURR-DATA-004",
-          "source_name": "Seðlabanki Íslands — Policy rate decisions; ECB — Key interest rates",
-          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+          "source_name": "CURR-DATA-004",
+          "source_url": null
         },
         {
           "id": "POL-DATA-017",
@@ -668,7 +668,7 @@
       "claim_text": "Með EES-samningnum varð Ísland hluti af um 500 milljón manna alþjóðlegum markaði.",
       "original_quote": "urðum hluti af um 500 milljón manna alþjóðlegum markaði",
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf\" title=\"EEA Agreement — Protocol 3 on trade in processed agricultural products\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-002</a> staðfestir að Ísland hafi tollfrjálsan aðgang að innri markaði ESB í gegnum EES-samninginn. <a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4); European Parliament — seat allocation (Cambridge Compromise methodology)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-003</a> nefnir um 450 milljónir íbúa í ESB, en með Noregi, Íslandi og Liechtenstein bætist við, svo heildarmarkaðurinn nær um 450 milljónum. Talan 500 milljónir er nokkuð ofmetin — innri markaðurinn nær til um 450 milljóna manna.",
+      "explanation": "<a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf\" title=\"EEA Agreement — Protocol 3 on trade in processed agricultural products\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-002</a> staðfestir að Ísland hafi tollfrjálsan aðgang að innri markaði ESB í gegnum EES-samninginn. SOV-DATA-003 nefnir um 450 milljónir íbúa í ESB, en með Noregi, Íslandi og Liechtenstein bætist við, svo heildarmarkaðurinn nær um 450 milljónum. Talan 500 milljónir er nokkuð ofmetin — innri markaðurinn nær til um 450 milljóna manna.",
       "missing_context": "ESB hefur um 450 milljón íbúa. EES-markaðurinn (ESB + Noregur, Ísland, Liechtenstein) nær til um 453 milljóna. Talan 500 milljónir kann að vera úrelt mat sem miðast við stærra ESB eða annan útreikning. EES-samningurinn undanskilur sjávarútveg og landbúnað að mestu.",
       "supporting_evidence": [
         {
@@ -678,8 +678,8 @@
         },
         {
           "id": "SOV-DATA-003",
-          "source_name": "Treaty on European Union, Article 16(4); European Parliament — seat allocation (Cambridge Compromise methodology)",
-          "source_url": "https://eur-lex.europa.eu/summary/glossary/qualified_majority.html"
+          "source_name": "SOV-DATA-003",
+          "source_url": null
         }
       ],
       "contradicting_evidence": [],
@@ -709,7 +709,7 @@
       "claim_text": "Með fullri ESB-aðild myndi Ísland fá sex þingmenn á Evrópuþinginu.",
       "original_quote": "landið mun fá sex þingmenn á Evrópuþinginu",
       "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:12008M014:EN:HTML\" title=\"Treaty on European Union, Article 14(2)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-003</a> staðfestir að lágmarksfjöldi þingsæta á Evrópuþinginu sé 6 samkvæmt 14. grein 2. mgr. sáttmálans um Evrópusambandið, og nefnir að Malta, Lúxemborg og Kýpur eigi öll 6 sæti. <a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4); European Parliament — seat allocation (Cambridge Compromise methodology)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-003</a> staðfestir einnig að Ísland myndi líklega fá 6 sæti sem minnsta aðildarríkið.",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:12008M014:EN:HTML\" title=\"Treaty on European Union, Article 14(2)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-003</a> staðfestir að lágmarksfjöldi þingsæta á Evrópuþinginu sé 6 samkvæmt 14. grein 2. mgr. sáttmálans um Evrópusambandið, og nefnir að Malta, Lúxemborg og Kýpur eigi öll 6 sæti. SOV-DATA-003 staðfestir einnig að Ísland myndi líklega fá 6 sæti sem minnsta aðildarríkið.",
       "missing_context": "Nákvæmur fjöldi sæta fer eftir ákvörðun leiðtogaráðsins um samsetningu þingsins en sáttmálinn tryggir lágmark 6 sæta. Evrópuþingið hefur 720 sæti samtals.",
       "supporting_evidence": [
         {
@@ -719,8 +719,8 @@
         },
         {
           "id": "SOV-DATA-003",
-          "source_name": "Treaty on European Union, Article 16(4); European Parliament — seat allocation (Cambridge Compromise methodology)",
-          "source_url": "https://eur-lex.europa.eu/summary/glossary/qualified_majority.html"
+          "source_name": "SOV-DATA-003",
+          "source_url": null
         }
       ],
       "contradicting_evidence": [],
@@ -735,7 +735,7 @@
       "claim_text": "Með fullri ESB-aðild fær Ísland aðild að ráðherraráði ESB og fulltrúa í framkvæmdastjórn ESB.",
       "original_quote": "aðild að ráðherraráði ESB, auk fulltrúa í framkvæmdastjórn ESB og öllum öðrum stofnunum Evrópusambandsins",
       "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> staðfestir að hvert aðildarríki á eitt atkvæði í ráðherraráðinu. <a href=\"https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:12008M014:EN:HTML\" title=\"Treaty on European Union, Article 14(2)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-003</a> staðfestir sæti á Evrópuþinginu og <a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4); European Parliament — seat allocation (Cambridge Compromise methodology)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-003</a> lýsir atkvæðagreiðslureglum. Samkvæmt Lissabon-sáttmálanum á hvert aðildarríki einn framkvæmdastjóra — þetta er staðfest grundvallarregla ESB þótt engin ein heimild nefni það berum orðum.",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> staðfestir að hvert aðildarríki á eitt atkvæði í ráðherraráðinu. <a href=\"https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:12008M014:EN:HTML\" title=\"Treaty on European Union, Article 14(2)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-003</a> staðfestir sæti á Evrópuþinginu og SOV-DATA-003 lýsir atkvæðagreiðslureglum. Samkvæmt Lissabon-sáttmálanum á hvert aðildarríki einn framkvæmdastjóra — þetta er staðfest grundvallarregla ESB þótt engin ein heimild nefni það berum orðum.",
       "missing_context": "Áhrifamáttur Íslands í ráðherraráðinu yrði takmarkaður þar sem landið myndi tákna aðeins um 0,08% íbúa ESB. Raunveruleg áhrif smárra aðildarríkja byggjast á bandalagsmyndun og nefndastarfi frekar en atkvæðaþyngd.",
       "supporting_evidence": [
         {
@@ -750,8 +750,8 @@
         },
         {
           "id": "SOV-DATA-003",
-          "source_name": "Treaty on European Union, Article 16(4); European Parliament — seat allocation (Cambridge Compromise methodology)",
-          "source_url": "https://eur-lex.europa.eu/summary/glossary/qualified_majority.html"
+          "source_name": "SOV-DATA-003",
+          "source_url": null
         }
       ],
       "contradicting_evidence": [],
@@ -850,23 +850,18 @@
           "id": "EEA-DATA-011",
           "source_name": "EFTA Secretariat — EEA Decision-Shaping; Althingi European Affairs Committee annual reports; Frosti Sigurjónsson, 'Iceland and the EEA: Policy Without Voice' (2023)",
           "source_url": "https://www.efta.int/eea/eea-decision-shaping"
-        },
-        {
-          "id": "SOV-LEGAL-009",
-          "source_name": "EEA Agreement, Articles 99–104; EFTA Secretariat — Decision-shaping in the EEA",
-          "source_url": "https://www.efta.int/eea-relations-eu/decision-shaping"
         }
       ],
       "contradicting_evidence": [
         {
-          "id": "EEA-LEGAL-001",
-          "source_name": "EFTA Surveillance Authority — Internal Market Scoreboard",
-          "source_url": "https://www.eftasurv.int/internal-market/eea-efta-internal-market-scoreboard"
-        },
-        {
           "id": "EEA-DATA-006",
           "source_name": "EFTA Secretariat — EEA Agreement factsheet; ESA Annual Report 2024",
           "source_url": "https://www.efta.int/eea/eea-agreement"
+        },
+        {
+          "id": "EEA-LEGAL-001",
+          "source_name": "EFTA Surveillance Authority — Internal Market Scoreboard",
+          "source_url": "https://www.eftasurv.int/internal-market/eea-efta-internal-market-scoreboard"
         }
       ],
       "category": "eea_eu_law",
@@ -939,13 +934,13 @@
       "claim_text": "Bændur myndu fá stuðning frá ESB við jarðrækt og umhverfisverkefni við ESB-aðild.",
       "original_quote": "bændur munu fá ríflegan stuðning frá ESB við jarðrækt og umhverfisverkefni",
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en\" title=\"European Commission — CAP at a glance\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-001</a> staðfestir að sameiginleg landbúnaðarstefna ESB veiti beingreiðslur og stuðning við byggðaþróun og umhverfisverkefni. <a href=\"https://www.gov.ie/en/publication/76026-common-agricultural-policy-cap-post-2020/\" title=\"Department of Agriculture, Food and the Marine (Ireland) — CAP Strategic Plan 2023–2027; ACRES scheme documentation\" target=\"_blank\" rel=\"noopener\">PREC-DATA-015</a> sýnir írska ACRES-kerfið sem greiðir bændum fyrir mælanlegan umhverfisárangur. <a href=\"https://www.oecd.org/agriculture/topics/agricultural-policy-monitoring-and-evaluation/\" title=\"OECD Producer Support Estimate database — Iceland; Bændasamtök Íslands (Farmers Association) annual reports; European Commission CAP indicators\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-022</a> áætlar þó að Ísland gæti fengið 80–120 milljónir evra á ári, verulega minna en núverandi innlendur stuðningur. Orðalagið «ríflegan stuðning» er því of jákvætt.",
-      "missing_context": "Bændasamtök Íslands (<a href=\"https://www.bondi.is/\" title=\"Bændasamtök Íslands — Official statements and press releases\" target=\"_blank\" rel=\"noopener\">ORG-DATA-002</a>) hafa lýst verulegum áhyggjum af áhrifum ESB-aðildar. Íslenskur landbúnaður nýtur nú stuðnings sem nemur um 55% af brúttótekjum bænda (<a href=\"https://www.oecd.org/agriculture/topics/agricultural-policy-monitoring-and-evaluation/\" title=\"OECD — Agricultural Policy Monitoring and Evaluation 2024; Bændasamtök Íslands\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-004</a>) — mun meira en meðaltal ESB (19%). Aðild gæti falið í sér lægri stuðning og aukin samkeppni frá stærri evrópskum framleiðendum. Finnland og Svíþjóð fengu sérstaka norðlæga stuðning við inngöngu sína.",
+      "explanation": "AGRI-LEGAL-001 staðfestir að sameiginleg landbúnaðarstefna ESB veiti beingreiðslur og stuðning við byggðaþróun og umhverfisverkefni. <a href=\"https://www.gov.ie/en/publication/76026-common-agricultural-policy-cap-post-2020/\" title=\"Department of Agriculture, Food and the Marine (Ireland) — CAP Strategic Plan 2023–2027; ACRES scheme documentation\" target=\"_blank\" rel=\"noopener\">PREC-DATA-015</a> sýnir írska ACRES-kerfið sem greiðir bændum fyrir mælanlegan umhverfisárangur. <a href=\"https://www.oecd.org/agriculture/topics/agricultural-policy-monitoring-and-evaluation/\" title=\"OECD Producer Support Estimate database — Iceland; Bændasamtök Íslands (Farmers Association) annual reports; European Commission CAP indicators\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-022</a> áætlar þó að Ísland gæti fengið 80–120 milljónir evra á ári, verulega minna en núverandi innlendur stuðningur. Orðalagið «ríflegan stuðning» er því of jákvætt.",
+      "missing_context": "Bændasamtök Íslands (ORG-DATA-002) hafa lýst verulegum áhyggjum af áhrifum ESB-aðildar. Íslenskur landbúnaður nýtur nú stuðnings sem nemur um 55% af brúttótekjum bænda (<a href=\"https://www.oecd.org/agriculture/topics/agricultural-policy-monitoring-and-evaluation/\" title=\"OECD — Agricultural Policy Monitoring and Evaluation 2024; Bændasamtök Íslands\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-004</a>) — mun meira en meðaltal ESB (19%). Aðild gæti falið í sér lægri stuðning og aukin samkeppni frá stærri evrópskum framleiðendum. Finnland og Svíþjóð fengu sérstaka norðlæga stuðning við inngöngu sína.",
       "supporting_evidence": [
         {
           "id": "AGRI-LEGAL-001",
-          "source_name": "European Commission — CAP at a glance",
-          "source_url": "https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en"
+          "source_name": "AGRI-LEGAL-001",
+          "source_url": null
         },
         {
           "id": "PREC-DATA-015",
@@ -961,8 +956,8 @@
         },
         {
           "id": "ORG-DATA-002",
-          "source_name": "Bændasamtök Íslands — Official statements and press releases",
-          "source_url": "https://www.bondi.is/"
+          "source_name": "ORG-DATA-002",
+          "source_url": null
         }
       ],
       "category": "agriculture",
@@ -1166,20 +1161,20 @@
       "missing_context": "Samanburðurinn ber saman eina tiltekna afurð Landsbankans (10,75%) við meðaltal evrusvæðisins. Þar sem 80% Íslendinga eru með verðtryggð lán á 3,5–5,5% (samkvæmt <a href=\"https://www.sedlabanki.is/utgefid-efni/rit-og-skyrslur/fjarmalastodugleikaskyrsla/\" title=\"Seðlabanki Íslands — Financial Stability Report 2025; Húsnæðis- og mannvirkjastofnun (HMS) — Housing Market Overview\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-010</a>) er raunverulegur vaxtamunur mun minni fyrir flesta lántaka. Þessi samanburður ofmetur muninn verulega.",
       "supporting_evidence": [
         {
-          "id": "HOUSING-DATA-008",
-          "source_name": "European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report",
+          "id": "HOUS-DATA-005",
+          "source_name": "Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase",
           "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
         },
         {
-          "id": "HOUS-DATA-005",
-          "source_name": "Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase",
+          "id": "HOUSING-DATA-008",
+          "source_name": "European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report",
           "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
         }
       ],
       "contradicting_evidence": [
         {
-          "id": "CURR-DATA-004",
-          "source_name": "Seðlabanki Íslands — Policy rate decisions; ECB — Key interest rates",
+          "id": "CURRENCY-DATA-015",
+          "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
           "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
         }
       ],
@@ -1320,14 +1315,9 @@
       "claim_text": "Öll lán í krónum eru með krónuálagi sem nemur að minnsta kosti 5% umfram lán í evrum.",
       "original_quote": "Öll lán í krónum eru með krónuálagi sem nemur að minnsta kosti 5% þannig að lán í krónum á Íslandi munu alltaf vera með um 5 prósentustigum hærri vexti en lán í evrum, sama hvaða vaxtastig eða stýrivextir eru í landinu.",
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Policy rate decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURR-DATA-004</a> og <a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> staðfesta að meðalmunur stýrivaxta Seðlabankans og ECB hefur verið um 5 prósentustig (6,5% vs. 1,5% að meðaltali 2000–2025). Í mars 2026 var munurinn um 4,5 stig (7,25% vs. 2,75%). Fullyrðingin um «að minnsta kosti 5%» og «alltaf» er of afdráttarlaus — bilið sveiflast og hefur ekki alltaf verið 5 stig.",
+      "explanation": "CURR-DATA-004 og <a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> staðfesta að meðalmunur stýrivaxta Seðlabankans og ECB hefur verið um 5 prósentustig (6,5% vs. 1,5% að meðaltali 2000–2025). Í mars 2026 var munurinn um 4,5 stig (7,25% vs. 2,75%). Fullyrðingin um «að minnsta kosti 5%» og «alltaf» er of afdráttarlaus — bilið sveiflast og hefur ekki alltaf verið 5 stig.",
       "missing_context": "Vaxtamunurinn endurspeglar ekki eingöngu gjaldmiðilsáhættu heldur einnig verðbólgumun. Raunvaxtamunurinn er minni en nafnvaxtamunurinn vegna hærri verðbólgu á Íslandi. Orðalagið «alltaf» og «að minnsta kosti 5%» er of aftrátt — munurinn var t.d. nær 4,5 stigum í mars 2026.",
       "supporting_evidence": [
-        {
-          "id": "CURR-DATA-004",
-          "source_name": "Seðlabanki Íslands — Policy rate decisions; ECB — Key interest rates",
-          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
-        },
         {
           "id": "CURRENCY-DATA-015",
           "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
@@ -1418,15 +1408,10 @@
       "claim_text": "Seðlabanki Evrópu hefur nýlega lækkað stýrivexti og eru þeir um 4%.",
       "original_quote": "Seðlabanki Evrópu hefur nýlega lækkað stýrivexti og eru þeir einnig um 4%.",
       "verdict": "unsupported",
-      "explanation": "<a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Policy rate decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURR-DATA-004</a> og <a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> staðfesta báðar að stýrivextir ECB (deposit facility rate) voru um 2,75% í byrjun 2026. Fullyrðingin um «um 4%» er röng — stýrivextir ECB hafa lækkað úr hámarki ~4% árið 2023 niður í 2,75%. Rétt er að ECB hefur nýlega lækkað vexti, en vaxtastigið er ekki lengur um 4%.",
+      "explanation": "CURR-DATA-004 og <a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> staðfesta báðar að stýrivextir ECB (deposit facility rate) voru um 2,75% í byrjun 2026. Fullyrðingin um «um 4%» er röng — stýrivextir ECB hafa lækkað úr hámarki ~4% árið 2023 niður í 2,75%. Rétt er að ECB hefur nýlega lækkað vexti, en vaxtastigið er ekki lengur um 4%.",
       "missing_context": "Greinarmunur milli stýrivaxta ECB (2,75%) og meðalvaxta húsnæðislána á evrusvæðinu (3,2–3,8%) skiptir máli. Greinarhöfundur kann að hafa ruglað saman þessum tveimur, þar sem húsnæðisvextir eru nær 4% en stýrivextir eru mun lægri.",
       "supporting_evidence": [],
       "contradicting_evidence": [
-        {
-          "id": "CURR-DATA-004",
-          "source_name": "Seðlabanki Íslands — Policy rate decisions; ECB — Key interest rates",
-          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
-        },
         {
           "id": "CURRENCY-DATA-015",
           "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
@@ -1449,8 +1434,8 @@
       "supporting_evidence": [
         {
           "id": "CURR-DATA-004",
-          "source_name": "Seðlabanki Íslands — Policy rate decisions; ECB — Key interest rates",
-          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+          "source_name": "CURR-DATA-004",
+          "source_url": null
         },
         {
           "id": "PREC-DATA-012",
@@ -1633,13 +1618,13 @@
       "claim_text": "Svona háir vextir eru í dag eingöngu í stríðshrjáðum löndum eins og Rússlandi og Úkraínu, auk Íslands.",
       "original_quote": "Svona háir vextir eru í dag eingöngu í stríðshrjáðum löndum eins og Rússlandi og Úkraínu, auk Íslands.",
       "verdict": "unverifiable",
-      "explanation": "<a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Policy rate decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURR-DATA-004</a> staðfestir að stýrivextir á Íslandi eru 7,25% sem er hátt í alþjóðlegum samanburði. Hins vegar er engin heimild í staðreyndagrunni sem ber saman stýrivexti allra landa. Mörg þróunarlönd (t.d. Brasilía, Tyrkland) hafa háa vexti án þess að vera í stríði — fullyrðingin er því líklega röng en ekki sannreynanleg úr fyrirliggjandi gögnum.",
+      "explanation": "CURR-DATA-004 staðfestir að stýrivextir á Íslandi eru 7,25% sem er hátt í alþjóðlegum samanburði. Hins vegar er engin heimild í staðreyndagrunni sem ber saman stýrivexti allra landa. Mörg þróunarlönd (t.d. Brasilía, Tyrkland) hafa háa vexti án þess að vera í stríði — fullyrðingin er því líklega röng en ekki sannreynanleg úr fyrirliggjandi gögnum.",
       "missing_context": "Stýrivextir margra landa utan stríðsátaka eru svipaðir eða hærri en á Íslandi — til dæmis Brasilía (yfir 10%), Tyrkland og fleiri. Samanburðurinn við stríðshrjáðar þjóðir er ófullnægjandi og villandi í samhengi.",
       "supporting_evidence": [
         {
           "id": "CURR-DATA-004",
-          "source_name": "Seðlabanki Íslands — Policy rate decisions; ECB — Key interest rates",
-          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+          "source_name": "CURR-DATA-004",
+          "source_url": null
         }
       ],
       "contradicting_evidence": [],

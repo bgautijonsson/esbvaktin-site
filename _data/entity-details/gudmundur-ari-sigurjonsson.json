@@ -21,8 +21,8 @@
     "last_speech": "2026-03-09"
   },
   "scorecard": {
-    "partially_supported": 8,
-    "supported": 9,
+    "partially_supported": 9,
+    "supported": 8,
     "unverifiable": 9
   },
   "claims": [
@@ -45,7 +45,7 @@
         },
         {
           "id": "POL-DATA-005",
-          "source_name": "LÍÚ and SFS public statements; Hagstofa Íslands national accounts",
+          "source_name": "POL-DATA-005",
           "source_url": null
         }
       ],
@@ -396,27 +396,28 @@
     {
       "claim_text": "Innan ESB er það hvert aðildarríki sem útfærir aflaheimildir sínar og skiptir þeim milli fyrirtækja; ríkið myndi áfram stýra úthlutun og Ísland gæti haldið kvótakerfinu sínu.",
       "original_quote": "innan Evrópusambandsins þá er það hvert land fyrir sig sem að útfærir í rauninni sínar aflaheimildir og skiptir þeim milli fyrirtækja. Forræðið yfir auðlindinni er að þjóðin mun áfram stýra því hvernig... ríkið mun áfram stýra því hvernig þessu er úthlutað og við getum haldið okkar kvótakerfi.",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380\" title=\"Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-030</a> staðfestir þetta beint: samkvæmt grein 17 í reglugerð ESB 1380/2013 heldur hvert aðildarríki forræði yfir úthlutun eigin aflaheimilda innan ramma sameiginlegrar sjávarútvegsstefnu. Danmörk, Holland og Eistland nota kvótakerfi sem líkjast íslensku aflamarkskerfi. Ísland gæti því haldið kvótakerfinu sínu fyrir innri skiptingu. Þó ber að hafa í huga — eins og fyrirvarar <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380\" title=\"Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-030</a> undirstrika — að heildaraflinn yrði ákveðinn á ESB-vettvangi og Ísland færi úr einráða ákvörðunaraðila í þátttakanda í sameiginlegum ákvörðunum.",
-      "missing_context": "Þótt innri úthlutun sé í höndum aðildarríkja er heildaraflinn (TAC) ákveðinn af ráðherraráði ESB. Ísland myndi taka þátt í þeim ákvörðunum en ekki stýra þeim eitt. Dómstóll ESB hefur einnig sett skorður við mismununarreglum í kvótaúthlutun, sem gæti takmarkað ákveðin einkenni íslenska kerfisins.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380\" title=\"Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-030</a> staðfestir að hvert aðildarríki útdeilir kvóta sínum meðal eigin flota samkvæmt 17. gr. reglugerðar ESB 1380/2013, og að Ísland gæti í grundvallaratriðum haldið aflahlutdeildarkerfi sínu. Fullyrðingin er þó of einföld — hún nefnir ekki að heildaraflinn (TAC) yrði ákveðinn af ráðherraráði ESB, ekki einhliða af Íslandi. Þetta er grundvallarbreyting á fiskveiðistjórnun þótt innri úthlutun haldist.",
+      "missing_context": "Samkvæmt <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380\" title=\"Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-030</a> setur sameiginleg sjávarútvegsstefna ESB heildaraflann og skiptir honum á milli landa — Ísland myndi taka þátt í þeirri ákvörðun en ekki ráða henni eitt. Dómstóll ESB takmarkar einnig hve mismunandi innri úthlutun má vera. Ísland setur nú eigin heildarafla einhliða, sem er verulegur munur sem fullyrðingin greinir ekki frá.",
       "supporting_evidence": [
         {
           "id": "FISH-DATA-030",
           "source_name": "Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies",
           "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380"
-        },
-        {
-          "id": "FISH-DATA-029",
-          "source_name": "European Parliament Research Service — Fisheries Ownership and Concentration in the EU",
-          "source_url": "https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development"
-        },
-        {
-          "id": "FISH-DATA-025",
-          "source_name": "European Commission — Scientific, Technical and Economic Committee for Fisheries (STECF); FAO — The State of World Fisheries and Aquaculture",
-          "source_url": "https://stecf.jrc.ec.europa.eu/reports/economic"
         }
       ],
-      "contradicting_evidence": [],
+      "contradicting_evidence": [
+        {
+          "id": "EEA-LEGAL-022",
+          "source_name": "EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'",
+          "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
+        },
+        {
+          "id": "FISH-LEGAL-002",
+          "source_name": "Icelandic Act on the Exclusive Economic Zone No. 41/1979",
+          "source_url": "https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf"
+        }
+      ],
       "category": "fisheries",
       "attribution": "asserted",
       "article_slug": "25-thattur-silfursins-stefnt-ad-kosningu-um-esb-i-sumar",
@@ -447,8 +448,8 @@
           "source_url": "https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda"
         },
         {
-          "id": "POL-DATA-005",
-          "source_name": "LÍÚ and SFS public statements; Hagstofa Íslands national accounts",
+          "id": "POL-DATA-014",
+          "source_name": "LÍÚ — Position paper on EU membership (2025); campaign finance declarations",
           "source_url": null
         }
       ],
@@ -473,8 +474,8 @@
           "source_url": "https://ec.europa.eu/eurostat/databrowser/view/FISH_CA_MAIN/default/table?lang=en"
         },
         {
-          "id": "POL-DATA-005",
-          "source_name": "LÍÚ and SFS public statements; Hagstofa Íslands national accounts",
+          "id": "POL-DATA-014",
+          "source_name": "LÍÚ — Position paper on EU membership (2025); campaign finance declarations",
           "source_url": null
         }
       ],
@@ -746,8 +747,8 @@
           "source_url": "https://oceans-and-fisheries.ec.europa.eu/news/eu-fisheries-control-system-gets-major-revamp-2024-01-09_en"
         },
         {
-          "id": "POL-DATA-005",
-          "source_name": "LÍÚ and SFS public statements; Hagstofa Íslands national accounts",
+          "id": "POL-DATA-014",
+          "source_name": "LÍÚ — Position paper on EU membership (2025); campaign finance declarations",
           "source_url": null
         }
       ],

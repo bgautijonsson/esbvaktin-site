@@ -10,9 +10,9 @@
   "summary": "Greindar 16 fullyrðingar .",
   "capsule": "",
   "verdict_counts": {
-    "supported": 10,
+    "supported": 8,
+    "partially_supported": 4,
     "unverifiable": 2,
-    "partially_supported": 2,
     "misleading": 2
   },
   "claim_count": 16,
@@ -88,8 +88,8 @@
         },
         {
           "id": "CURR-DATA-004",
-          "source_name": "Seðlabanki Íslands — Policy rate decisions; ECB — Key interest rates",
-          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+          "source_name": "CURR-DATA-004",
+          "source_url": null
         }
       ],
       "contradicting_evidence": [],
@@ -126,24 +126,9 @@
         "claim_type": "prediction",
         "confidence": 0.85
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> og <a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Policy rate decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURR-DATA-004</a> staðfesta að stýrivextir Seðlabanka Íslands eru um 8–8,5% á meðan stýrivextir ESB eru um 2,75–3%, sem þýðir verulegan mun á vaxtakostnaði. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a> sýnir sambærilegan mun á húsnæðislánum — 7,5–8,5% á Íslandi á móti 3,2–3,8% á evrusvæðinu. <a href=\"https://sa.is/frettatengt/frettir/vinna-hafin-vid-uttekt-a-stodu-adildarvidraedna-vid-evropusambandid\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> og <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> staðfesta að talsmenn ESB-aðildar nota einmitt þetta rök. Fullyrðingin lýsir réttilega afstöðu talsmanna ESB-aðildar.",
+      "verdict": "partially_supported",
+      "explanation": "Rétt er að talsmenn ESB-aðildar hafa haldið þessu fram. <a href=\"https://sa.is/frettatengt/frettir/vinna-hafin-vid-uttekt-a-stodu-adildarvidraedna-vid-evropusambandid\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> og <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> staðfesta að SA og Viðskiptaráð áætli 2–3 prósentustiga vaxtamun sem hvarf gjaldmiðlaáhættu. <a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> sýnir raunverulegan stýrivaxtamun — 7,25% á Íslandi á móti 2,75% hjá Seðlabanka Evrópu. Hins vegar benda <a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a> og <a href=\"https://www.ecb.europa.eu/pub/economic-bulletin/articles/2021/html/ecb.ebart202102_01~830e7telecom.en.html\" title=\"Glaeser, Gottlieb & Gyourko, 'Can Cheap Credit Explain the Housing Boom?' (2012); ECB Economic Bulletin 2/2021 — 'The impact of monetary policy on housing'\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-011</a> á að lægri vextir í framboðsskertum mörkuðum leiði fremur til hærra húsnæðisverðs en lægri húsnæðiskostnaðar, sem flækir röksemdarfærsluna verulega.",
       "supporting_evidence": [
-        {
-          "id": "CURRENCY-DATA-015",
-          "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
-          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
-        },
-        {
-          "id": "CURR-DATA-004",
-          "source_name": "Seðlabanki Íslands — Policy rate decisions; ECB — Key interest rates",
-          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
-        },
-        {
-          "id": "HOUSING-DATA-008",
-          "source_name": "European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report",
-          "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
-        },
         {
           "id": "POL-DATA-012",
           "source_name": "SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions",
@@ -153,11 +138,27 @@
           "id": "POL-DATA-017",
           "source_name": "Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)",
           "source_url": "https://vi.is/skyrslur/1667"
+        },
+        {
+          "id": "CURRENCY-DATA-015",
+          "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
+          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Evruupptaka myndi ekki sjálfkrafa leiða til ECB-vaxta á Íslandi — innlent áhættuálag og bankakostnaður skipta máli. <a href=\"https://www.ecb.europa.eu/pub/economic-bulletin/articles/2021/html/ecb.ebart202102_01~830e7telecom.en.html\" title=\"Glaeser, Gottlieb & Gyourko, 'Can Cheap Credit Explain the Housing Boom?' (2012); ECB Economic Bulletin 2/2021 — 'The impact of monetary policy on housing'\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-011</a> og <a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a> benda til þess að lægri vextir geti hækkað húsnæðisverð í framboðsþröngu hagkerfi, sem dregur úr raunverulegum ávinningi. Samanburður nafnvaxta á Íslandi og evrusvæðinu er villandi án tillits til verðtryggingar.",
-      "confidence": 0.85,
+      "contradicting_evidence": [
+        {
+          "id": "HOUSING-DATA-009",
+          "source_name": "Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023",
+          "source_url": "https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html"
+        },
+        {
+          "id": "HOUSING-DATA-011",
+          "source_name": "Glaeser, Gottlieb & Gyourko, 'Can Cheap Credit Explain the Housing Boom?' (2012); ECB Economic Bulletin 2/2021 — 'The impact of monetary policy on housing'",
+          "source_url": "https://www.ecb.europa.eu/pub/economic-bulletin/articles/2021/html/ecb.ebart202102_01~830e7telecom.en.html"
+        }
+      ],
+      "missing_context": "Evruaðild myndi ekki sjálfkrafa tryggja ECB-vexti á Íslandi — innlend áhættuálag og fjármögnunarkostnaður banka hafa áhrif (<a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a>). Rannsóknir sýna að 1 prósentustiga vaxtalækkun getur hækkað húsnæðisverð um 6–8% í framboðsskertum mörkuðum (<a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a>). Íslensk verðtryggð lán eru byggingarfræðilega ólík evrópskum lánum, sem flækir samanburðinn (<a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a>).",
+      "confidence": 0.75,
       "speakers": [
         {
           "name": "Heimildin fréttastofa",
@@ -385,8 +386,8 @@
         "claim_type": "legal_assertion",
         "confidence": 0.85
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir að utanríkisráðherra Þorgerður Katrín Gunnarsdóttir lagði fram þingsályktunartillögu um þjóðaratkvæðagreiðslu 9. mars 2026. Fullyrðingin segir 10. mars en <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> segir 9. mars — þetta er eins dags munur sem gæti skýrst af því hvenær tillagan var tekin til umræðu á þingfundi (útgáfa vs. umræða). <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> og <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland; Euronews; France24; coalition agreement\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-013</a> staðfesta jafnframt að þingsályktunartillagan var lögð fram og að þjóðaratkvæðagreiðsla var áformuð 29. ágúst 2026. Kjarni fullyrðingarinnar — að þingsályktunartillagan hafi verið tekin til umræðu á Alþingi í byrjun mars 2026 — er staðfestur af heimildum.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir að utanríkisráðherra hafi flutt þingsályktunartillöguna 9. mars 2026, og <a href=\"https://www.althingi.is/\" title=\"Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-028</a> nefnir framlagninguna 7. mars 2026. Fullyrðingin tilgreinir 10. mars sem umræðudag — dagsetning sem heimildir staðfesta ekki beint. Tímalínuna má þó álykta: framlagning föstudaginn 7. mars, flutningsræða 9. mars, og hugsanleg umræða 10. mars. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> staðfestir að tillagan hafi verið lögð fram í byrjun mars 2026 og snúi að þjóðaratkvæðagreiðslu 29. ágúst 2026.",
       "supporting_evidence": [
         {
           "id": "SOV-PARL-001",
@@ -394,24 +395,19 @@
           "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
         },
         {
+          "id": "SOV-LEGAL-028",
+          "source_name": "Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24",
+          "source_url": "https://www.althingi.is/"
+        },
+        {
           "id": "SOV-DATA-006",
           "source_name": "Government of Iceland announcement; Althingi parliamentary records",
           "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
-        },
-        {
-          "id": "PARTY-DATA-013",
-          "source_name": "Government of Iceland; Euronews; France24; coalition agreement",
-          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
-        },
-        {
-          "id": "SOV-PARL-005",
-          "source_name": "Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)",
-          "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Nákvæm dagsetning er 9. mars samkvæmt <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> (flutningsræða utanríkisráðherra), ekki 10. mars eins og fullyrðingin segir. Þingsályktunartillagan er ráðgefandi þjóðaratkvæðagreiðsla, ekki bindandi, samkvæmt <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a>. Andstöðuflokkar gerðu verklags-athugasemdir við málsmeðferðina (<a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a>).",
-      "confidence": 0.88,
+      "missing_context": "Nákvæm dagsetning 10. mars er ekki staðfest — <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> nefnir 9. mars og <a href=\"https://www.althingi.is/\" title=\"Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-028</a> nefnir 7. mars. Munurinn getur skýrst af mismunandi verkþáttum (framlagning, flutningsræða, umræða). Tillagan var ráðgefandi þingsályktunartillaga, ekki lagafrumvarp (<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a>).",
+      "confidence": 0.65,
       "speakers": [
         {
           "name": "Heimildin fréttastofa",
@@ -524,9 +520,9 @@
       "explanation": "Heimildir styðja þessa fullyrðingu vel. <a href=\"https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/\" title=\"UK Office for Budget Responsibility — Economic and fiscal outlook 2023; Centre for European Reform; Bank of England\" target=\"_blank\" rel=\"noopener\">PREC-DATA-008</a> og <a href=\"https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/\" title=\"Office for Budget Responsibility, Brexit Analysis\" target=\"_blank\" rel=\"noopener\">PREC-DATA-002</a> sýna að OBR áætlar um 4% samdrátt í landsframleiðslu Bretlands til lengri tíma. <a href=\"https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/\" title=\"UK Office for National Statistics — Trade statistics; Office for Budget Responsibility — Brexit impact assessment\" target=\"_blank\" rel=\"noopener\">PREC-HIST-012</a> staðfestir að vöruviðskipti Bretlands við ESB drógust saman um 15% og viðskiptahalli jókst. <a href=\"https://www.gov.uk/government/statistics/uk-sea-fisheries-annual-statistics-report-2023\" title=\"UK Marine Management Organisation — UK Sea Fisheries Statistics 2023; UK Trade Info\" target=\"_blank\" rel=\"noopener\">FISH-COMP-005</a> sýnir 18% samdrátt í sjávarafurðaútflutningi til ESB. OBR sagði árið 2024 að spáin væri \"broadly on track\". Efnahagsleg erfiðleikar eru vel skjalfestir.",
       "supporting_evidence": [
         {
-          "id": "PREC-DATA-008",
-          "source_name": "UK Office for Budget Responsibility — Economic and fiscal outlook 2023; Centre for European Reform; Bank of England",
-          "source_url": "https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/"
+          "id": "FISH-COMP-005",
+          "source_name": "UK Marine Management Organisation — UK Sea Fisheries Statistics 2023; UK Trade Info",
+          "source_url": "https://www.gov.uk/government/statistics/uk-sea-fisheries-annual-statistics-report-2023"
         },
         {
           "id": "PREC-DATA-002",
@@ -534,19 +530,14 @@
           "source_url": "https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/"
         },
         {
-          "id": "PREC-HIST-003",
-          "source_name": "UK Office for Budget Responsibility — Fiscal Risks and Sustainability Report 2023",
-          "source_url": "https://obr.uk/frs/fiscal-risks-and-sustainability-july-2023/"
+          "id": "PREC-DATA-008",
+          "source_name": "UK Office for Budget Responsibility — Economic and fiscal outlook 2023; Centre for European Reform; Bank of England",
+          "source_url": "https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/"
         },
         {
           "id": "PREC-HIST-012",
           "source_name": "UK Office for National Statistics — Trade statistics; Office for Budget Responsibility — Brexit impact assessment",
           "source_url": "https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/"
-        },
-        {
-          "id": "FISH-COMP-005",
-          "source_name": "UK Marine Management Organisation — UK Sea Fisheries Statistics 2023; UK Trade Info",
-          "source_url": "https://www.gov.uk/government/statistics/uk-sea-fisheries-annual-statistics-report-2023"
         }
       ],
       "contradicting_evidence": [],
@@ -574,23 +565,8 @@
         "confidence": 0.8
       },
       "verdict": "supported",
-      "explanation": "Heimildir styðja eindregið að erfitt sé að yfirgefa ESB þegar aðild hefst. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M050\" title=\"Treaty on European Union, Article 50\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-001</a> lýsir tveggja ára úrsagnarferli samkvæmt 50. grein Lissabon-samningsins. <a href=\"https://obr.uk/frs/fiscal-risks-and-sustainability-july-2023/\" title=\"UK Office for Budget Responsibility — Fiscal Risks and Sustainability Report 2023\" target=\"_blank\" rel=\"noopener\">PREC-HIST-003</a> sýnir að Brexit-ferlið tók í raun yfir fjögur ár og OBR áætlaði 4% samdrátt í landsframleiðslu. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> staðfestir að ný aðildarríki fá ekki varanlegar undanþágur, sem þýðir að ákvörðun um aðild er nánast óafturkræf í framkvæmd. Nýja heimildin <a href=\"https://link.springer.com/book/10.1057/9780230510302\" title=\"Grabbe, H. (2006) 'The EU's Transformative Power: Europeanization Through Conditionality in Central and Eastern Europe', Palgrave Macmillan\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-016</a> undirstrikar að 95% regluverksins er ósamningsatriði, og <a href=\"https://www.cer.eu/insights/gap-between-brexit-reset-rhetoric-and-reality\" title=\"Centre for European Reform; UK in a Changing Europe\" target=\"_blank\" rel=\"noopener\">PREC-DATA-004</a> staðfestir að engin einfölduð leið til endurinnngöngu sé til staðar. Fullyrðingin er studd — þó úrsögn sé lagalega möguleg, sýna heimildir að hún sé mjög flókin og kostnaðarsöm.",
+      "explanation": "Heimildir styðja eindregið að erfitt sé að yfirgefa ESB þegar aðild hefst. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M050\" title=\"Treaty on European Union, Article 50\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-001</a> lýsir tveggja ára úrsagnarferli samkvæmt 50. grein Lissabon-samningsins. PREC-HIST-003 sýnir að Brexit-ferlið tók í raun yfir fjögur ár og OBR áætlaði 4% samdrátt í landsframleiðslu. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> staðfestir að ný aðildarríki fá ekki varanlegar undanþágur, sem þýðir að ákvörðun um aðild er nánast óafturkræf í framkvæmd. Nýja heimildin <a href=\"https://link.springer.com/book/10.1057/9780230510302\" title=\"Grabbe, H. (2006) 'The EU's Transformative Power: Europeanization Through Conditionality in Central and Eastern Europe', Palgrave Macmillan\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-016</a> undirstrikar að 95% regluverksins er ósamningsatriði, og <a href=\"https://www.cer.eu/insights/gap-between-brexit-reset-rhetoric-and-reality\" title=\"Centre for European Reform; UK in a Changing Europe\" target=\"_blank\" rel=\"noopener\">PREC-DATA-004</a> staðfestir að engin einfölduð leið til endurinnngöngu sé til staðar. Fullyrðingin er studd — þó úrsögn sé lagalega möguleg, sýna heimildir að hún sé mjög flókin og kostnaðarsöm.",
       "supporting_evidence": [
-        {
-          "id": "SOV-LEGAL-001",
-          "source_name": "Treaty on European Union, Article 50",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M050"
-        },
-        {
-          "id": "PREC-DATA-004",
-          "source_name": "Centre for European Reform; UK in a Changing Europe",
-          "source_url": "https://www.cer.eu/insights/gap-between-brexit-reset-rhetoric-and-reality"
-        },
-        {
-          "id": "PREC-HIST-003",
-          "source_name": "UK Office for Budget Responsibility — Fiscal Risks and Sustainability Report 2023",
-          "source_url": "https://obr.uk/frs/fiscal-risks-and-sustainability-july-2023/"
-        },
         {
           "id": "EEA-LEGAL-012",
           "source_name": "European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)",
@@ -600,6 +576,21 @@
           "id": "EEA-LEGAL-016",
           "source_name": "Grabbe, H. (2006) 'The EU's Transformative Power: Europeanization Through Conditionality in Central and Eastern Europe', Palgrave Macmillan",
           "source_url": "https://link.springer.com/book/10.1057/9780230510302"
+        },
+        {
+          "id": "PREC-DATA-004",
+          "source_name": "Centre for European Reform; UK in a Changing Europe",
+          "source_url": "https://www.cer.eu/insights/gap-between-brexit-reset-rhetoric-and-reality"
+        },
+        {
+          "id": "PREC-DATA-008",
+          "source_name": "UK Office for Budget Responsibility — Economic and fiscal outlook 2023; Centre for European Reform; Bank of England",
+          "source_url": "https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/"
+        },
+        {
+          "id": "SOV-LEGAL-001",
+          "source_name": "Treaty on European Union, Article 50",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M050"
         }
       ],
       "contradicting_evidence": [],
@@ -627,7 +618,7 @@
         "confidence": 0.7
       },
       "verdict": "misleading",
-      "explanation": "Fullyrðingin gefur of einfaldaða mynd af Evrópusambandinu. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> sýnir að stækkun er ein af mörgum stefnuáherslum ESB, en Ísland er ekki í forgangi — Vestur-Balkan og Úkraína eru framar á dagskrá. <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> lýsir aðildarferlinu sem skilyrtu og ítarlegu, ekki sem sjálfvirku stækkunarverkefni. <a href=\"https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en\" title=\"European Commission — CAP at a glance; MFF 2021–2027 Regulation (EU) 2020/2093\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-015</a> og <a href=\"https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en\" title=\"European Commission — CAP at a glance\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-001</a> sýna að innri stefnumótun (sameiginleg landbúnaðarstefna, innri markaðurinn) er stór hluti af starfsemi ESB. Stækkun er hluti af starfseminni en fjarri því eina verkefnið.",
+      "explanation": "Fullyrðingin gefur of einfaldaða mynd af Evrópusambandinu. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> sýnir að stækkun er ein af mörgum stefnuáherslum ESB, en Ísland er ekki í forgangi — Vestur-Balkan og Úkraína eru framar á dagskrá. <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> lýsir aðildarferlinu sem skilyrtu og ítarlegu, ekki sem sjálfvirku stækkunarverkefni. <a href=\"https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en\" title=\"European Commission — CAP at a glance; MFF 2021–2027 Regulation (EU) 2020/2093\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-015</a> og AGRI-LEGAL-001 sýna að innri stefnumótun (sameiginleg landbúnaðarstefna, innri markaðurinn) er stór hluti af starfsemi ESB. Stækkun er hluti af starfseminni en fjarri því eina verkefnið.",
       "supporting_evidence": [
         {
           "id": "TRADE-DATA-022",
@@ -637,14 +628,14 @@
       ],
       "contradicting_evidence": [
         {
-          "id": "EEA-LEGAL-017",
-          "source_name": "European Commission — 'EU Accession Process: Steps towards joining' factsheet",
-          "source_url": "https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf"
-        },
-        {
           "id": "AGRI-DATA-015",
           "source_name": "European Commission — CAP at a glance; MFF 2021–2027 Regulation (EU) 2020/2093",
           "source_url": "https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en"
+        },
+        {
+          "id": "EEA-LEGAL-017",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards joining' factsheet",
+          "source_url": "https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf"
         }
       ],
       "missing_context": "ESB hefur fjölbreytt verkefni: innri markaðurinn, sameiginleg landbúnaðar- og sjávarútvegsstefna, loftslagsmál, stafræn stefna og utanríkismál. Stækkun hefur hægt á undanförnum árum — síðast gekk Króatía inn árið 2013. Núverandi forgangsröðun beinir sjónum að Vestur-Balkan, Úkraínu og Moldóvu, ekki Íslandi.",

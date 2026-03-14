@@ -10,8 +10,8 @@
   "summary": "Greindar 45 fullyrðingar .",
   "capsule": "",
   "verdict_counts": {
-    "supported": 26,
-    "partially_supported": 7,
+    "supported": 25,
+    "partially_supported": 8,
     "unverifiable": 11,
     "misleading": 1
   },
@@ -224,28 +224,18 @@
         "claim_type": "comparison",
         "confidence": 0.9
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://cohesiondata.ec.europa.eu/countries/IE\" title=\"Eurostat; European Commission — Cohesion Policy data for Ireland\" target=\"_blank\" rel=\"noopener\">PREC-DATA-016</a> staðfestir fullyrðinguna beint: Írland var með VLF á mann um 60% af meðaltali EBE þegar það gekk í bandalagið 1973 — eitt fátækasta ríkið. Árið 2024 var VLF á mann Írlands um 220% af meðaltali ESB-27, hæst í sambandinu. Þetta er kjarninn í fullyrðingunni og heimildir staðfesta hann ótvírætt. <a href=\"https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD\" title=\"World Bank — World Development Indicators\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-012</a> og <a href=\"https://www.imf.org/en/Publications/WEO\" title=\"IMF World Economic Outlook Database — October 2024\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-002</a> sýna jafnframt Ísland meðal ríkustu þjóða Evrópu til samanburðar.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://cohesiondata.ec.europa.eu/countries/IE\" title=\"Eurostat; European Commission — Cohesion Policy data for Ireland\" target=\"_blank\" rel=\"noopener\">PREC-DATA-016</a> staðfestir að landsframleiðsla Írlands á mann var um 60% af meðaltali EBE þegar landið gekk í 1973, og er nú um 220% af ESB-meðaltali mælt í VLF á mann. Á þeim mælikvarða stenst fullyrðingin. Þessi tala er hins vegar mjög brenglandi — breyttur þjóðartekjumælikvarði (GNI*) sýnir um 140% af ESB-meðaltali, sem er enn hátt en fjarri «ríkustu þjóðum Evrópu» í raunverulegri merkingu.",
       "supporting_evidence": [
         {
           "id": "PREC-DATA-016",
           "source_name": "Eurostat; European Commission — Cohesion Policy data for Ireland",
           "source_url": "https://cohesiondata.ec.europa.eu/countries/IE"
-        },
-        {
-          "id": "CURRENCY-DATA-012",
-          "source_name": "World Bank — World Development Indicators",
-          "source_url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD"
-        },
-        {
-          "id": "TRADE-COMP-002",
-          "source_name": "IMF World Economic Outlook Database — October 2024",
-          "source_url": "https://www.imf.org/en/Publications/WEO"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Nafntölur VLF Írlands eru blásnar upp vegna fjölþjóðlegra fyrirtækja sem bóka hagnað þar — breyttur þjóðartekjumælikvarði (GNI*) er um 140% af ESB-meðaltali, sem er enn mjög hátt en mun lægra. Írland fékk yfir 40 milljarða evra í nettóframlög frá ESB á árunum 1973–2018. Sambandið upplifði einnig alvarlega bankakreppu 2008–2013 sem krafðist björgunaráætlunar. Beinn samanburður við Ísland er erfiður vegna ólíkra aðstæðna (ensk tunga, almenn lög, tengsl við bandarísk fyrirtæki).",
-      "confidence": 0.85,
+      "missing_context": "VLF Írlands er brenglandi vegna hagnaðatilfærslu fjölþjóðlegra fyrirtækja — árið 2015 hækkaði VLF um 26,3% á einni nóttu. GNI* er raunhæfari mælikvarði og sýnir um 140% af ESB-meðaltali. Írland þurfti einnig á björgunarpakka ESB/AGS (67,5 milljarðar evra) að halda 2008–2013. Sérstök aðstaða Írlands — enskt tungumál, common law, tengsl við bandarísk fyrirtæki — gerir beina yfirfærslu til Íslands erfiða.",
+      "confidence": 0.78,
       "speakers": [
         {
           "name": "Magnús Árni Skjöld Magnússon",
@@ -268,17 +258,17 @@
         "confidence": 0.9
       },
       "verdict": "supported",
-      "explanation": "Heimildir staðfesta að Bretar kusu að yfirgefa ESB í júní 2016 (51,9% gegn) og gengu formlega út 31. janúar 2020 (<a href=\"https://obr.uk/frs/fiscal-risks-and-sustainability-july-2023/\" title=\"UK Office for Budget Responsibility — Fiscal Risks and Sustainability Report 2023\" target=\"_blank\" rel=\"noopener\">PREC-HIST-003</a>). Aðlögunartímabilinu lauk 31. desember 2020 (<a href=\"https://researchbriefings.files.parliament.uk/documents/CBP-9096/CBP-9096.pdf\" title=\"UK Parliament, House of Commons Library\" target=\"_blank\" rel=\"noopener\">PREC-DATA-003</a>). Fullyrðingin er rétt.",
+      "explanation": "Heimildir staðfesta að Bretar kusu að yfirgefa ESB í júní 2016 (51,9% gegn) og gengu formlega út 31. janúar 2020 (PREC-HIST-003). Aðlögunartímabilinu lauk 31. desember 2020 (<a href=\"https://researchbriefings.files.parliament.uk/documents/CBP-9096/CBP-9096.pdf\" title=\"UK Parliament, House of Commons Library\" target=\"_blank\" rel=\"noopener\">PREC-DATA-003</a>). Fullyrðingin er rétt.",
       "supporting_evidence": [
-        {
-          "id": "PREC-HIST-003",
-          "source_name": "UK Office for Budget Responsibility — Fiscal Risks and Sustainability Report 2023",
-          "source_url": "https://obr.uk/frs/fiscal-risks-and-sustainability-july-2023/"
-        },
         {
           "id": "PREC-DATA-003",
           "source_name": "UK Parliament, House of Commons Library",
           "source_url": "https://researchbriefings.files.parliament.uk/documents/CBP-9096/CBP-9096.pdf"
+        },
+        {
+          "id": "PREC-DATA-008",
+          "source_name": "UK Office for Budget Responsibility — Economic and fiscal outlook 2023; Centre for European Reform; Bank of England",
+          "source_url": "https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/"
         },
         {
           "id": "SOV-LEGAL-001",
@@ -397,16 +387,16 @@
         "confidence": 0.9
       },
       "verdict": "supported",
-      "explanation": "Samkvæmt heimildum hefur hvert aðildarríki einn framkvæmdastjóra í framkvæmdastjórninni (<a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-002</a>, <a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4); European Parliament — seat allocation (Cambridge Compromise methodology)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-003</a>). Ef Ísland gengi í ESB væru aðildarríkin 28 og Ísland ætti einn framkvæmdastjóra. Talan 28 er rétt miðað við núverandi 27 ríki að viðbættu Íslandi.",
+      "explanation": "Samkvæmt heimildum hefur hvert aðildarríki einn framkvæmdastjóra í framkvæmdastjórninni (<a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-002</a>, SOV-DATA-003). Ef Ísland gengi í ESB væru aðildarríkin 28 og Ísland ætti einn framkvæmdastjóra. Talan 28 er rétt miðað við núverandi 27 ríki að viðbættu Íslandi.",
       "supporting_evidence": [
+        {
+          "id": "SOV-DATA-017",
+          "source_name": "Treaty on European Union, Article 16(4); European Parliament allocation rules",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016"
+        },
         {
           "id": "SOV-LEGAL-002",
           "source_name": "Treaty on European Union, Article 16(4)",
-          "source_url": "https://eur-lex.europa.eu/summary/glossary/qualified_majority.html"
-        },
-        {
-          "id": "SOV-DATA-003",
-          "source_name": "Treaty on European Union, Article 16(4); European Parliament — seat allocation (Cambridge Compromise methodology)",
           "source_url": "https://eur-lex.europa.eu/summary/glossary/qualified_majority.html"
         }
       ],
@@ -435,12 +425,12 @@
         "confidence": 0.9
       },
       "verdict": "supported",
-      "explanation": "Hvert aðildarríki á fulltrúa í ráðherraráði ESB (<a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4); European Parliament — seat allocation (Cambridge Compromise methodology)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-003</a>). Með inngöngu Íslands yrðu ríkin 28 og Ísland sendi sinn ráðherra á fundi ráðsins eftir málaflokkum. Þetta er rétt lýsing á stofnanauppbyggingu ESB.",
+      "explanation": "Hvert aðildarríki á fulltrúa í ráðherraráði ESB (SOV-DATA-003). Með inngöngu Íslands yrðu ríkin 28 og Ísland sendi sinn ráðherra á fundi ráðsins eftir málaflokkum. Þetta er rétt lýsing á stofnanauppbyggingu ESB.",
       "supporting_evidence": [
         {
           "id": "SOV-DATA-003",
-          "source_name": "Treaty on European Union, Article 16(4); European Parliament — seat allocation (Cambridge Compromise methodology)",
-          "source_url": "https://eur-lex.europa.eu/summary/glossary/qualified_majority.html"
+          "source_name": "SOV-DATA-003",
+          "source_url": null
         },
         {
           "id": "SOV-LEGAL-002",
@@ -449,7 +439,7 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Atkvæðavægi Íslands í ráðherraráðinu yrði mjög lítið (~0,087% íbúa ESB) en 55% ríkjaþröskuldurinn gefur smáríkjum hlutfallslega meira vald (<a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4); European Parliament — seat allocation (Cambridge Compromise methodology)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-003</a>).",
+      "missing_context": "Atkvæðavægi Íslands í ráðherraráðinu yrði mjög lítið (~0,087% íbúa ESB) en 55% ríkjaþröskuldurinn gefur smáríkjum hlutfallslega meira vald (SOV-DATA-003).",
       "confidence": 0.93,
       "speakers": [
         {
@@ -481,9 +471,9 @@
           "source_url": "https://px.hagstofa.is/pxen/pxweb/en/Ibuar/Ibuar__mannfjoldaspa/MAN09010.px"
         },
         {
-          "id": "SOV-DATA-003",
-          "source_name": "Treaty on European Union, Article 16(4); European Parliament — seat allocation (Cambridge Compromise methodology)",
-          "source_url": "https://eur-lex.europa.eu/summary/glossary/qualified_majority.html"
+          "id": "SOV-DATA-017",
+          "source_name": "Treaty on European Union, Article 16(4); European Parliament allocation rules",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016"
         },
         {
           "id": "SOV-LEGAL-002",
@@ -1136,8 +1126,8 @@
         },
         {
           "id": "CURR-DATA-004",
-          "source_name": "Seðlabanki Íslands — Policy rate decisions; ECB — Key interest rates",
-          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+          "source_name": "CURR-DATA-004",
+          "source_url": null
         }
       ],
       "contradicting_evidence": [],
@@ -1205,11 +1195,6 @@
           "source_url": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IS"
         },
         {
-          "id": "CURRENCY-DATA-008",
-          "source_name": "World Bank — World Development Indicators",
-          "source_url": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG"
-        },
-        {
           "id": "CURRENCY-DATA-015",
           "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
           "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
@@ -1240,7 +1225,7 @@
         "confidence": 0.9
       },
       "verdict": "unverifiable",
-      "explanation": "Þetta er skoðun sem staðreyndagrunnurinn inniheldur engar heimildir um. Heimildir benda til þess að Finnland hafi upplifað meiri efnahagserfiðleika en Svíþjóð á kreppuárunum 2008–2012, sem sumir fræðimenn hafa tengt við evruaðild (<a href=\"https://ec.europa.eu/neighbourhood-enlargement/countries/detailed-country-information/finland_en\" title=\"European Commission — Finland accession documentation; Statistics Finland\" target=\"_blank\" rel=\"noopener\">PREC-HIST-009</a>). Aftur á móti er engin könnun nefnd um skoðanir Finna.",
+      "explanation": "Þetta er skoðun sem staðreyndagrunnurinn inniheldur engar heimildir um. Heimildir benda til þess að Finnland hafi upplifað meiri efnahagserfiðleika en Svíþjóð á kreppuárunum 2008–2012, sem sumir fræðimenn hafa tengt við evruaðild (PREC-HIST-009). Aftur á móti er engin könnun nefnd um skoðanir Finna.",
       "supporting_evidence": [],
       "contradicting_evidence": [],
       "missing_context": "Fullyrðingin er skoðun ræðumanns, ekki staðreynd sem hægt er að sannreyna. Sumir finnskir hagfræðingar hafa gagnrýnt ábyrga evruna en viðhorf Finna í heild eru flóknari — evran hefur einnig veitt Finnum stöðugleika og lága vexti.",
@@ -1425,17 +1410,12 @@
         "confidence": 0.9
       },
       "verdict": "supported",
-      "explanation": "Fullyrðingin er staðreynd. <a href=\"https://www.thedanishparliament.dk/en/eu-information-centre/the-danish-opt-outs-from-eu-cooperation\" title=\"Edinburgh Agreement (1992); Danish Ministry of Foreign Affairs — Denmark's EU opt-outs\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-010</a> og <a href=\"https://www.thedanishparliament.dk/en/eu-information-centre/the-danish-opt-outs-from-eu-cooperation\" title=\"Danish Ministry of Foreign Affairs; Edinburgh Agreement 1992; European Council conclusions\" target=\"_blank\" rel=\"noopener\">PREC-HIST-010</a> staðfesta að Danmörk tryggði sér undanþágu frá evrunni í Edinburgh-samkomulaginu 1992 og heldur enn sinni eigin mynt, dönsku krónunni. Nýja heimildin <a href=\"https://www.cb.is/monetary-policy/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> útskýrir hvernig evruaðild felur í sér yfirfærslu peningastefnu til Seðlabanka Evrópu — sem Danir hafa einmitt forðast. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014\" title=\"Treaty on the Functioning of the European Union, Article 140\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-004</a> staðfestir jafnframt að nýjum aðildarríkjum ber að taka upp evru en Danmörk nýtur gamalla undanþága.",
+      "explanation": "Fullyrðingin er staðreynd. <a href=\"https://www.thedanishparliament.dk/en/eu-information-centre/the-danish-opt-outs-from-eu-cooperation\" title=\"Edinburgh Agreement (1992); Danish Ministry of Foreign Affairs — Denmark's EU opt-outs\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-010</a> og PREC-HIST-010 staðfesta að Danmörk tryggði sér undanþágu frá evrunni í Edinburgh-samkomulaginu 1992 og heldur enn sinni eigin mynt, dönsku krónunni. Nýja heimildin <a href=\"https://www.cb.is/monetary-policy/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> útskýrir hvernig evruaðild felur í sér yfirfærslu peningastefnu til Seðlabanka Evrópu — sem Danir hafa einmitt forðast. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014\" title=\"Treaty on the Functioning of the European Union, Article 140\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-004</a> staðfestir jafnframt að nýjum aðildarríkjum ber að taka upp evru en Danmörk nýtur gamalla undanþága.",
       "supporting_evidence": [
         {
-          "id": "SOV-LEGAL-010",
-          "source_name": "Edinburgh Agreement (1992); Danish Ministry of Foreign Affairs — Denmark's EU opt-outs",
-          "source_url": "https://www.thedanishparliament.dk/en/eu-information-centre/the-danish-opt-outs-from-eu-cooperation"
-        },
-        {
-          "id": "PREC-HIST-010",
-          "source_name": "Danish Ministry of Foreign Affairs; Edinburgh Agreement 1992; European Council conclusions",
-          "source_url": "https://www.thedanishparliament.dk/en/eu-information-centre/the-danish-opt-outs-from-eu-cooperation"
+          "id": "SOV-LEGAL-004",
+          "source_name": "Treaty on the Functioning of the European Union, Article 140",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014"
         },
         {
           "id": "SOV-LEGAL-005",
@@ -1443,9 +1423,9 @@
           "source_url": "https://www.cb.is/monetary-policy/"
         },
         {
-          "id": "SOV-LEGAL-004",
-          "source_name": "Treaty on the Functioning of the European Union, Article 140",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014"
+          "id": "SOV-LEGAL-010",
+          "source_name": "Edinburgh Agreement (1992); Danish Ministry of Foreign Affairs — Denmark's EU opt-outs",
+          "source_url": "https://www.thedanishparliament.dk/en/eu-information-centre/the-danish-opt-outs-from-eu-cooperation"
         }
       ],
       "contradicting_evidence": [],
@@ -1784,8 +1764,8 @@
       "attribution_type": "asserted",
       "claim_count": 17,
       "verdicts": {
-        "supported": 15,
-        "partially_supported": 1
+        "supported": 14,
+        "partially_supported": 2
       },
       "stance": "pro_eu",
       "slug": "magnus-arni-skjold-magnusson",
