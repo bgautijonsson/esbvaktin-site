@@ -1,27 +1,27 @@
 {
   "slug": "2026-W11",
-  "period_start": "2026-03-06",
-  "period_end": "2026-03-13",
-  "period_type": "custom",
+  "period_start": "2026-03-09",
+  "period_end": "2026-03-15",
+  "period_type": "weekly",
   "key_numbers": {
-    "articles_analysed": 24,
-    "new_claims": 777,
+    "articles_analysed": 21,
+    "new_claims": 807,
     "new_claims_published": 277,
     "verdict_breakdown": {
       "misleading": 18,
-      "partially_supported": 42,
-      "supported": 203,
+      "partially_supported": 77,
+      "supported": 166,
       "unsupported": 8,
-      "unverifiable": 6
+      "unverifiable": 8
     },
-    "entities_active": 5,
+    "entities_active": 15,
     "topics_active": 12,
-    "diversity_score": 0.8267
+    "diversity_score": 0.8266
   },
   "previous_period": {
-    "articles_analysed": 0,
+    "articles_analysed": 1,
     "new_claims": 0,
-    "diversity_score": 0.0
+    "diversity_score": 0.9206
   },
   "topic_activity": [
     {
@@ -35,9 +35,9 @@
     {
       "topic": "eea_eu_law",
       "label_is": "EES og löggjöf ESB",
-      "sightings": 19,
+      "sightings": 16,
       "new_claims": 59,
-      "delta": "+19",
+      "delta": "+13",
       "slug": "eea-eu-law"
     },
     {
@@ -51,17 +51,17 @@
     {
       "topic": "agriculture",
       "label_is": "Landbúnaður",
-      "sightings": 8,
+      "sightings": 7,
       "new_claims": 41,
-      "delta": "+8",
+      "delta": "+6",
       "slug": "agriculture"
     },
     {
       "topic": "precedents",
       "label_is": "Fordæmi annarra ríkja",
-      "sightings": 7,
+      "sightings": 5,
       "new_claims": 31,
-      "delta": "+7",
+      "delta": "+3",
       "slug": "precedents"
     },
     {
@@ -124,6 +124,7 @@
   "top_claims": [
     {
       "canonical_text_is": "Lægri vextir myndu ekki lækka húsnæðisverð vegna þess að framboð og eftirspurn ráða verði fasteigna, ekki vaxtastig.",
+      "claim_slug": "laegri-vextir-myndu-ekki-laekka-husnaedisverd-vegna-thess-ad-frambod-og-eftirspurn-rada-verdi-fasteigna-ekki-vaxtastig",
       "verdict": "misleading",
       "category": "housing",
       "category_is": "Húsnæðismál",
@@ -141,6 +142,7 @@
     },
     {
       "canonical_text_is": "ESB hafi áhuga á að fá Ísland inn sem hluta af stærri stækkunarpakka vegna þess að Ísland sé efnahagslega eftirsóknarvert.",
+      "claim_slug": "esb-hafi-ahuga-a-ad-fa-island-inn-sem-hluta-af-staerri-staekkunarpakka-vegna-thess-ad-island-se-efnahagslega-eftirsoknarvert",
       "verdict": "misleading",
       "category": "trade",
       "category_is": "Viðskipti og verslun",
@@ -154,6 +156,7 @@
     },
     {
       "canonical_text_is": "Ríkisstjórn Bandaríkjanna hafi hag af því að halda Íslandi fyrir utan Evrópusambandið vegna varnarhagsmuna og viðskiptahagsmuna.",
+      "claim_slug": "rikisstjorn-bandarikjanna-hafi-hag-af-thvi-ad-halda-islandi-fyrir-utan-evropusambandid-vegna-varnarhagsmuna-og-vidskiptahagsmuna",
       "verdict": "unsupported",
       "category": "sovereignty",
       "category_is": "Fullveldi",
@@ -166,7 +169,56 @@
       ]
     },
     {
+      "canonical_text_is": "Utanríkisráðherra bar þingsályktunartillögu um þjóðaratkvæðagreiðslu um ESB-aðildarviðræður ekki undir utanríkismálanefnd, sem stjórnarandstaðan telur brot á þingsköpum.",
+      "claim_slug": "utanrikisradherra-bar-thingsalyktunartillogu-um-thjodaratkvaedagreidslu-um-esb-adildarvidraedur-ekki-undir-utanrikismalanefnd-sem-stjornarandstadan-telur-brot-a-thingskopum",
+      "verdict": "partially_supported",
+      "category": "sovereignty",
+      "category_is": "Fullveldi",
+      "sighting_count": 4,
+      "sources": [
+        {
+          "title": "25. þáttur Silfursins: Stefnt að kosningu um ESB í sumar",
+          "slug": "25-thattur-silfursins-stefnt-ad-kosningu-um-esb-i-sumar"
+        },
+        {
+          "title": "Saka Þorgerði um brot á þingsköpum",
+          "slug": "saka-thorgerdi-um-brot-a-thingskopum"
+        },
+        {
+          "title": "Sigmundur Davíð sagði Þorgerði fara á bak við þjóðina varðandi aðildarviðræðurnar við Evrópusambandið",
+          "slug": "sigmundur-david-sagdi-thorgerdi-fara-a-bak-vid-thjodina-vardandi-adildarvidraedurnar-vid-evropusambandid"
+        },
+        {
+          "title": "Tekist á um þingskaparlög: Rífast um keisarans skegg",
+          "slug": "tekist-a-um-thingskaparlog-rifast-um-keisarans-skegg"
+        }
+      ]
+    },
+    {
+      "canonical_text_is": "Utanríkisráðherra mætti ekki á fund utanríkismálanefndar þrátt fyrir eindregnar óskir þar um.",
+      "claim_slug": "utanrikisradherra-maetti-ekki-a-fund-utanrikismalanefndar-thratt-fyrir-eindregnar-oskir-thar-um",
+      "verdict": "partially_supported",
+      "category": "sovereignty",
+      "category_is": "Fullveldi",
+      "sighting_count": 3,
+      "sources": [
+        {
+          "title": "25. þáttur Silfursins: Stefnt að kosningu um ESB í sumar",
+          "slug": "25-thattur-silfursins-stefnt-ad-kosningu-um-esb-i-sumar"
+        },
+        {
+          "title": "Saka Þorgerði um brot á þingsköpum",
+          "slug": "saka-thorgerdi-um-brot-a-thingskopum"
+        },
+        {
+          "title": "Þorgerður Katrín: Í guðanna bænum",
+          "slug": "thorgerdur-katrin-i-gudanna-baenum"
+        }
+      ]
+    },
+    {
       "canonical_text_is": "Fyrri ríkisstjórnir lofuðu þjóðaratkvæðagreiðslu um ESB-viðræður en stóðu ekki við loforðið.",
+      "claim_slug": "fyrri-rikisstjornir-lofudu-thjodaratkvaedagreidslu-um-esb-vidraedur-en-stodu-ekki-vid-lofordid",
       "verdict": "partially_supported",
       "category": "party-positions",
       "category_is": "Afstaða stjórnmálaflokka",
@@ -183,24 +235,26 @@
       ]
     },
     {
-      "canonical_text_is": "Samningsstaða Íslands gagnvart ESB er sterkari nú en hún var fyrir tíu árum.",
+      "canonical_text_is": "Vextir á húsnæðislán á Íslandi eru frá 8%, en í Evrópusambandinu eru algengir vextir húsnæðislána frá 3,2% til 3,5% samkvæmt Seðlabanka Evrópu.",
+      "claim_slug": "vextir-a-husnaedislan-a-islandi-eru-fra-8-percent-en-i-evropusambandinu-eru-algengir-vextir-husnaedislana-fra-3-2-percent-til-3-5-percent-samkvaemt-sedlabanka-evropu",
       "verdict": "partially_supported",
-      "category": "eea-eu-law",
-      "category_is": "EES og löggjöf ESB",
+      "category": "housing",
+      "category_is": "Húsnæðismál",
       "sighting_count": 2,
       "sources": [
         {
-          "title": "Guðlaugur Þór Þórðarson, Guðmundur Ari Sigurjónsson, Lilja Alfreðsdóttir og Sigmar Guðmundsson",
-          "slug": "gudlaugur-thor-thordarson-gudmundur-ari-sigurjonsson-lilja-alfredsdottir-og-sigmar-gudmundsson"
+          "title": "Snorri segir húsnæði verða jafndýrt þótt vextir lækki",
+          "slug": "snorri-segir-husnaedi-verda-jafndyrt-thott-vextir-laekki"
         },
         {
-          "title": "Þorgerður Katrín Gunnarsdóttir — þjóðaratkvæðagreiðsla um framhald viðræðna um aðild Íslands að Evrópusambandinu",
-          "slug": "thorgerdur-katrin-gunnarsdottir-thjodaratkvaedagreidsla-um-framhald-vidraedna-um-adild-islands-ad-evropusambandinu"
+          "title": "Spursmál #115 — Er Ísland á leið inn í Evrópusambandið?",
+          "slug": "spursmal-115-er-island-a-leid-inn-i-evropusambandid"
         }
       ]
     },
     {
       "canonical_text_is": "Dönsk stjórnvöld stefna að því að breyta 390.000 hekturum af landbúnaðarlandi (250.000 ha í skóg, 140.000 ha í votlendi), sem samsvarar um 10% af ræktuðu landi.",
+      "claim_slug": "donsk-stjornvold-stefna-ad-thvi-ad-breyta-390-000-hekturum-af-landbunadarlandi-250-000-ha-i-skog-140-000-ha-i-votlendi-sem-samsvarar-um-10-percent-af-raektudu-landi",
       "verdict": "partially_supported",
       "category": "precedents",
       "category_is": "Fordæmi annarra ríkja",
@@ -213,20 +267,8 @@
       ]
     },
     {
-      "canonical_text_is": "95% af reglubókum ESB eru óhagganlegar og umsóknarríki geta aðeins samið um tímalínu innleiðingar, ekki um undanþágur.",
-      "verdict": "partially_supported",
-      "category": "eea-eu-law",
-      "category_is": "EES og löggjöf ESB",
-      "sighting_count": 1,
-      "sources": [
-        {
-          "title": "ESB-pakkinn er galopinn",
-          "slug": "esb-pakkinn-er-galopinn"
-        }
-      ]
-    },
-    {
       "canonical_text_is": "Viðreisn telur ásakanir um brot á þingskapalögum hlægilegar þar sem ákvæðin séu til að koma í veg fyrir einhliða ákvarðanir um utanríkisstefnu án samráðs við Alþingi.",
+      "claim_slug": "vidreisn-telur-asakanir-um-brot-a-thingskapalogum-hlaegilegar-thar-sem-akvaedin-seu-til-ad-koma-i-veg-fyrir-einhlida-akvardanir-um-utanrikisstefnu-an-samrads-vid-althingi",
       "verdict": "partially_supported",
       "category": "party-positions",
       "category_is": "Afstaða stjórnmálaflokka",
@@ -240,6 +282,7 @@
     },
     {
       "canonical_text_is": "Formaður Miðflokksins útilokaði að þingsályktunartillaga um þjóðaratkvæðagreiðslu fái skjóta afgreiðslu á Alþingi.",
+      "claim_slug": "formadur-midflokksins-utilokadi-ad-thingsalyktunartillaga-um-thjodaratkvaedagreidslu-fai-skjota-afgreidslu-a-althingi",
       "verdict": "partially_supported",
       "category": "party-positions",
       "category_is": "Afstaða stjórnmálaflokka",
@@ -250,76 +293,177 @@
           "slug": "landbunadarstefna-esb-henti-islenskum-landbunadi-illa"
         }
       ]
-    },
-    {
-      "canonical_text_is": "Regluverk ESB (acquis) telur um 100.000 blaðsíður og er ekki umsemjanlegt.",
-      "verdict": "partially_supported",
-      "category": "eea-eu-law",
-      "category_is": "EES og löggjöf ESB",
-      "sighting_count": 1,
-      "sources": [
-        {
-          "title": "Segja \"samningaviðræður\" vera villandi hugtak",
-          "slug": "segja-samningavidraedur-vera-villandi-hugtak"
-        }
-      ]
     }
   ],
   "active_entities": [
     {
-      "name": "Guðrún Hafsteinsdóttir",
-      "claims_made": 5,
+      "name": "Kristrún Frostadóttir",
+      "claims_made": 68,
       "top_topics": [
-        "Húsnæðismál",
-        "Afstaða stofnana og samtaka",
-        "Afstaða stjórnmálaflokka"
+        "Afstaða stjórnmálaflokka",
+        "other",
+        "Fordæmi annarra ríkja"
       ],
-      "slug": "gudrun-hafsteinsdottir"
+      "slug": "kristrun-frostadottir"
+    },
+    {
+      "name": "Erna Bjarnadóttir",
+      "claims_made": 51,
+      "top_topics": [
+        "Sjávarútvegur",
+        "Landbúnaður",
+        "EES og löggjöf ESB"
+      ],
+      "slug": "erna-bjarnadottir"
     },
     {
       "name": "Þorgerður Katrín Gunnarsdóttir",
-      "claims_made": 4,
+      "claims_made": 46,
       "top_topics": [
-        "EES og löggjöf ESB",
+        "Fullveldi",
         "Afstaða stjórnmálaflokka",
-        "Fullveldi"
+        "EES og löggjöf ESB"
       ],
       "slug": "thorgerdur-katrin-gunnarsdottir"
     },
     {
       "name": "Sigmundur Davíð Gunnlaugsson",
-      "claims_made": 2,
+      "claims_made": 42,
       "top_topics": [
+        "Afstaða stjórnmálaflokka",
+        "Fullveldi",
         "EES og löggjöf ESB"
       ],
       "slug": "sigmundur-david-gunnlaugsson"
     },
     {
-      "name": "Guðmundur Ari Sigurjónsson",
-      "claims_made": 1,
+      "name": "Vilhelm Jónsson",
+      "claims_made": 25,
       "top_topics": [
-        "Gjaldmiðill og peningamál"
+        "Sjávarútvegur",
+        "Fullveldi"
       ],
-      "slug": "gudmundur-ari-sigurjonsson"
+      "slug": "vilhelm-jonsson"
     },
     {
       "name": "Lilja Dögg Alfreðsdóttir",
-      "claims_made": 1,
+      "claims_made": 24,
       "top_topics": [
-        "Landbúnaður"
+        "Fullveldi",
+        "Viðskipti og verslun",
+        "Gjaldmiðill og peningamál"
       ],
       "slug": "lilja-dogg-alfredsdottir"
+    },
+    {
+      "name": "Björn Ingi Hrafnsson",
+      "claims_made": 24,
+      "top_topics": [
+        "Afstaða stjórnmálaflokka",
+        "EES og löggjöf ESB",
+        "Afstaða stofnana og samtaka"
+      ],
+      "slug": "bjorn-ingi-hrafnsson"
+    },
+    {
+      "name": "Magnús Árni Skjöld Magnússon",
+      "claims_made": 24,
+      "top_topics": [
+        "EES og löggjöf ESB",
+        "Fordæmi annarra ríkja",
+        "Fullveldi"
+      ],
+      "slug": "magnus-arni-skjold-magnusson"
+    },
+    {
+      "name": "Helgi Magnús Gunnarsson",
+      "claims_made": 22,
+      "top_topics": [
+        "Gjaldmiðill og peningamál",
+        "Fullveldi",
+        "EES og löggjöf ESB"
+      ],
+      "slug": "helgi-magnus-gunnarsson"
+    },
+    {
+      "name": "Guðrún Hafsteinsdóttir",
+      "claims_made": 22,
+      "top_topics": [
+        "Afstaða stjórnmálaflokka",
+        "Fullveldi",
+        "Fordæmi annarra ríkja"
+      ],
+      "slug": "gudrun-hafsteinsdottir"
+    },
+    {
+      "name": "Jean-Rémi Chareyre",
+      "claims_made": 21,
+      "top_topics": [
+        "Viðskipti og verslun",
+        "energy",
+        "other"
+      ],
+      "slug": "jean-remi-chareyre"
+    },
+    {
+      "name": "Vilborg Ása Guðjónsdóttir",
+      "claims_made": 20,
+      "top_topics": [
+        "EES og löggjöf ESB",
+        "Fordæmi annarra ríkja",
+        "other"
+      ],
+      "slug": "vilborg-asa-gudjonsdottir"
+    },
+    {
+      "name": "Thomas Möller",
+      "claims_made": 19,
+      "top_topics": [
+        "Fordæmi annarra ríkja",
+        "Viðskipti og verslun",
+        "Sjávarútvegur"
+      ],
+      "slug": "thomas-moller"
+    },
+    {
+      "name": "Jón Pétur Zimsen",
+      "claims_made": 18,
+      "top_topics": [
+        "EES og löggjöf ESB",
+        "other",
+        "Fullveldi"
+      ],
+      "slug": "jon-petur-zimsen"
+    },
+    {
+      "name": "Eggert Sigurbergsson",
+      "claims_made": 18,
+      "top_topics": [
+        "Fordæmi annarra ríkja",
+        "Sjávarútvegur",
+        "EES og löggjöf ESB"
+      ],
+      "slug": "eggert-sigurbergsson"
     }
   ],
   "articles": [
     {
-      "title": "Guðlaugur Þór Þórðarson, Guðmundur Ari Sigurjónsson, Lilja Alfreðsdóttir og Sigmar Guðmundsson",
-      "source": "ruv.is",
-      "url": "https://ruv-radio.akamaized.net/opid/5391748D0.mp3",
-      "date": "2026-03-07",
-      "claim_count": 29,
-      "dominant_category": "agriculture",
-      "slug": "gudlaugur-thor-thordarson-gudmundur-ari-sigurjonsson-lilja-alfredsdottir-og-sigmar-gudmundsson"
+      "title": "Treystu þjóðinni — Opið bréf til forsætisráðherra Íslands",
+      "source": "visir.is",
+      "url": "https://www.visir.is/g/20262853497d/treystu-thjodinni.-thu-ert-med-tromp-a-hendi-opid-bref-til-forsaetisradherra-islands",
+      "date": "2026-03-09",
+      "claim_count": 2,
+      "dominant_category": "sovereignty",
+      "slug": "treystu-thjodinni-opid-bref-til-forsaetisradherra-islands"
+    },
+    {
+      "title": "Að kljúfa þjóðina með tilfinningaþrunginni spurningu",
+      "source": "visir.is",
+      "url": "https://www.visir.is/g/20262853502d/ad-kljufa-thjodina-med-tilfinningathrunginni-spurningu",
+      "date": "2026-03-09",
+      "claim_count": 2,
+      "dominant_category": "party_positions",
+      "slug": "ad-kljufa-thjodina-med-tilfinningathrunginni-spurningu"
     },
     {
       "title": "Snorri segir húsnæði verða jafndýrt þótt vextir lækki",
@@ -327,8 +471,17 @@
       "url": "https://heimildin.is/grein/26323/snorri-segir-husnaedi-verda-jafndyrt-thott-vextir-laekki/",
       "date": "2026-03-09",
       "claim_count": 5,
-      "dominant_category": "eea_eu_law",
+      "dominant_category": "housing",
       "slug": "snorri-segir-husnaedi-verda-jafndyrt-thott-vextir-laekki"
+    },
+    {
+      "title": "Spursmál #115 — Er Ísland á leið inn í Evrópusambandið?",
+      "source": "mbl.is",
+      "url": "https://podcasters.spotify.com/pod/show/spursmal/episodes/115----Er-sland--lei-inn--Evrpusambandi-e3g60di",
+      "date": "2026-03-09",
+      "claim_count": 5,
+      "dominant_category": "eea_eu_law",
+      "slug": "spursmal-115-er-island-a-leid-inn-i-evropusambandid"
     },
     {
       "title": "Bandaríkjamönnum hugnast ekki innganga Íslands í ESB",
@@ -340,30 +493,12 @@
       "slug": "bandarikjamonnum-hugnast-ekki-innganga-islands-i-esb"
     },
     {
-      "title": "Tekist á um þingskaparlög: Rífast um keisarans skegg",
-      "source": "heimildin.is",
-      "url": "https://heimildin.is/grein/26327/tekist-a-um-allt-annad-en-esb-a-althingi-rifast-um-keisarans-skegg/",
-      "date": "2026-03-09",
-      "claim_count": 1,
-      "dominant_category": "sovereignty",
-      "slug": "tekist-a-um-thingskaparlog-rifast-um-keisarans-skegg"
-    },
-    {
-      "title": "Spursmál #115 — Er Ísland á leið inn í Evrópusambandið?",
-      "source": "mbl.is",
-      "url": "https://podcasters.spotify.com/pod/show/spursmal/episodes/115----Er-sland--lei-inn--Evrpusambandi-e3g60di",
-      "date": "2026-03-09",
-      "claim_count": 33,
-      "dominant_category": "currency",
-      "slug": "spursmal-115-er-island-a-leid-inn-i-evropusambandid"
-    },
-    {
       "title": "Þorgerður Katrín Gunnarsdóttir — þjóðaratkvæðagreiðsla um framhald viðræðna um aðild Íslands að Evrópusambandinu",
       "source": "althingi.is",
       "url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html",
       "date": "2026-03-09",
-      "claim_count": 21,
-      "dominant_category": "agriculture",
+      "claim_count": 8,
+      "dominant_category": "eea_eu_law",
       "slug": "thorgerdur-katrin-gunnarsdottir-thjodaratkvaedagreidsla-um-framhald-vidraedna-um-adild-islands-ad-evropusambandinu"
     },
     {
@@ -371,8 +506,8 @@
       "source": "dv.is",
       "url": "https://www.dv.is/frettir/2026/03/09/gudrun-og-sigmundur-david-sogdust-vilja-thjodaratkvaedagreidslu-um-adildarvidraedur-vid-esb-eg-treysti-thjodinni-algerlega-thessu-mali/",
       "date": "2026-03-09",
-      "claim_count": 5,
-      "dominant_category": "eea_eu_law",
+      "claim_count": 1,
+      "dominant_category": "sovereignty",
       "slug": "gudrun-og-sigmundur-david-sogdust-vilja-thjodaratkvaedagreidslu-um-adildarvidraedur-vid-esb"
     },
     {
@@ -398,9 +533,18 @@
       "source": "mbl.is",
       "url": "https://www.mbl.is/frettir/innlent/2026/03/09/thjodin_a_badum_attum_um_vidraedur_52_prosent_gegn_/",
       "date": "2026-03-09",
-      "claim_count": 3,
+      "claim_count": 2,
       "dominant_category": "party_positions",
       "slug": "thjodin-a-badum-attum-um-vidraedur-52-gegn-48"
+    },
+    {
+      "title": "Tekist á um þingskaparlög: Rífast um keisarans skegg",
+      "source": "heimildin.is",
+      "url": "https://heimildin.is/grein/26327/tekist-a-um-allt-annad-en-esb-a-althingi-rifast-um-keisarans-skegg/",
+      "date": "2026-03-09",
+      "claim_count": 1,
+      "dominant_category": "sovereignty",
+      "slug": "tekist-a-um-thingskaparlog-rifast-um-keisarans-skegg"
     },
     {
       "title": "Flott embætti í boði fyrir ESB ríki",
@@ -444,7 +588,7 @@
       "url": "https://www.visir.is/g/20262853352d/390.000-hektarar-af-landbunadarlandi-breytast-i-skog-og-votlendi-landbunadur-naesta-stora-loftslagsverkefni-dana",
       "date": "2026-03-09",
       "claim_count": 4,
-      "dominant_category": "agriculture",
+      "dominant_category": "precedents",
       "slug": "390-000-hektarar-af-landbunadarlandi-breytast-i-skog-og-votlendi"
     },
     {
@@ -453,7 +597,7 @@
       "url": "https://www.visir.is/g/20262853431d/saka-thor-gerdi-um-brot-a-thing-skopum",
       "date": "2026-03-09",
       "claim_count": 7,
-      "dominant_category": "eea_eu_law",
+      "dominant_category": "sovereignty",
       "slug": "saka-thorgerdi-um-brot-a-thingskopum"
     },
     {
@@ -461,94 +605,79 @@
       "source": "visir.is",
       "url": "https://www.visir.is/g/20262853438d/thridjungur-and-vigur-at-kvaeda-greidslunni",
       "date": "2026-03-09",
-      "claim_count": 4,
-      "dominant_category": "party_positions",
+      "claim_count": 3,
+      "dominant_category": "polling",
       "slug": "thridjungur-andvigur-atkvaedagreidslunni"
-    },
-    {
-      "title": "Treystu þjóðinni — Opið bréf til forsætisráðherra Íslands",
-      "source": "visir.is",
-      "url": "https://www.visir.is/g/20262853497d/treystu-thjodinni.-thu-ert-med-tromp-a-hendi-opid-bref-til-forsaetisradherra-islands",
-      "date": "2026-03-09",
-      "claim_count": 2,
-      "dominant_category": "sovereignty",
-      "slug": "treystu-thjodinni-opid-bref-til-forsaetisradherra-islands"
-    },
-    {
-      "title": "Að kljúfa þjóðina með tilfinningaþrunginni spurningu",
-      "source": "visir.is",
-      "url": "https://www.visir.is/g/20262853502d/ad-kljufa-thjodina-med-tilfinningathrunginni-spurningu",
-      "date": "2026-03-09",
-      "claim_count": 2,
-      "dominant_category": "party_positions",
-      "slug": "ad-kljufa-thjodina-med-tilfinningathrunginni-spurningu"
-    },
-    {
-      "title": "25. þáttur Silfursins: Stefnt að kosningu um ESB í sumar",
-      "source": "ruv.is",
-      "url": "https://shows.acast.com/silfri/episodes/25-attur-stefnt-a-kosningu-um-esb-i-sumar",
-      "date": "2026-03-10",
-      "claim_count": 51,
-      "dominant_category": "agriculture",
-      "slug": "25-thattur-silfursins-stefnt-ad-kosningu-um-esb-i-sumar"
-    },
-    {
-      "title": "Enginn afsláttur gefinn segi þjóðin já við aðildarviðræðum",
-      "source": "ruv.is",
-      "url": "https://www.ruv.is/frettir/innlent/2026-03-10-enginn-afslattur-gefinn-segi-thjodin-ja-vid-adildarvidraedum-469474/",
-      "date": "2026-03-10",
-      "claim_count": 19,
-      "dominant_category": "eea_eu_law",
-      "slug": "enginn-afslattur-gefinn-segi-thjodin-ja-vid-adildarvidraedum"
-    },
-    {
-      "title": "Sigmundur Davíð sagði Þorgerði fara á bak við þjóðina varðandi aðildarviðræðurnar við Evrópusambandið",
-      "source": "ruv.is",
-      "url": "https://www.ruv.is/frettir/innlent/2026-03-10-sigmundur-david-sagdi-thorgerdi-fara-a-bak-vid-thjodina-vardandi-adildarvidraedurnar-vid-evropusambandid-469378/",
-      "date": "2026-03-10",
-      "claim_count": 8,
-      "dominant_category": "eea_eu_law",
-      "slug": "sigmundur-david-sagdi-thorgerdi-fara-a-bak-vid-thjodina-vardandi-adildarvidraedurnar-vid-evropusambandid"
     },
     {
       "title": "Kristrún vísar þögn um ESB-málið á bug",
       "source": "visir.is",
       "url": "https://www.visir.is/g/20262853850d/kristrun-visar-thogn-um-esb-malid-a-bug",
       "date": "2026-03-10",
-      "claim_count": 10,
-      "dominant_category": "other",
+      "claim_count": 4,
+      "dominant_category": "sovereignty",
       "slug": "kristrun-visar-thogn-um-esb-malid-a-bug"
     },
     {
-      "title": "Kvótahopp og ESB",
-      "source": "visir.is",
-      "url": "https://www.visir.is/g/20262853887d/kvotahopp-og-esb",
+      "title": "25. þáttur Silfursins: Stefnt að kosningu um ESB í sumar",
+      "source": "ruv.is",
+      "url": "https://shows.acast.com/silfri/episodes/25-attur-stefnt-a-kosningu-um-esb-i-sumar",
       "date": "2026-03-10",
-      "claim_count": 18,
-      "dominant_category": "eea_eu_law",
-      "slug": "kvotahopp-og-esb"
+      "claim_count": 13,
+      "dominant_category": "sovereignty",
+      "slug": "25-thattur-silfursins-stefnt-ad-kosningu-um-esb-i-sumar"
+    },
+    {
+      "title": "Sigmundur Davíð sagði Þorgerði fara á bak við þjóðina varðandi aðildarviðræðurnar við Evrópusambandið",
+      "source": "ruv.is",
+      "url": "https://www.ruv.is/frettir/innlent/2026-03-10-sigmundur-david-sagdi-thorgerdi-fara-a-bak-vid-thjodina-vardandi-adildarvidraedurnar-vid-evropusambandid-469378/",
+      "date": "2026-03-10",
+      "claim_count": 2,
+      "dominant_category": "sovereignty",
+      "slug": "sigmundur-david-sagdi-thorgerdi-fara-a-bak-vid-thjodina-vardandi-adildarvidraedurnar-vid-evropusambandid"
     }
   ],
   "source_breakdown": {
     "visir.is": 10,
     "mbl.is": 4,
-    "ruv.is": 3,
     "heimildin.is": 3,
-    "dv.is": 1,
-    "althingi.is": 1
+    "ruv.is": 2,
+    "althingi.is": 1,
+    "dv.is": 1
   },
   "key_facts": [
     {
-      "claim_text": "Ísland hefur nú þegar tollfrjálsan aðgang að ESB-markaðinum fyrir flestar vörur í gegnum EES-samninginn",
-      "claim_slug": "iceland-already-has-tariff-free-access-to-the-eu-market-for-most-goods-through-the-eea-agreement",
-      "category": "trade",
-      "category_is": "Viðskipti og verslun",
-      "claim_type": "legal_assertion",
+      "claim_text": "Evrópusambandið rekur umfangsmesta stuðningskerfi landbúnaðar í heiminum í gegnum CAP og mörg Evrópulönd hafa fengið fjárhagslegan stuðning til að endurheimta votlendi og draga úr losun.",
+      "claim_slug": "evropusambandid-rekur-umfangsmesta-studningskerfi-landbunadar-i-heiminum-i-gegnum-cap-og-morg-evropulond-hafa-fengid-fjarhagslegan-studning-til-ad-endurheimta-votlendi-og-draga-ur-losun",
+      "category": "agriculture",
+      "category_is": "Landbúnaður",
+      "claim_type": "comparison",
       "verdict": "supported",
-      "explanation": "TRADE-DATA-002 staðfestir þetta beint: Í gegnum EES-samninginn hefur Ísland nú þegar tollfrjálsan aðgang að innri markaði ESB fyrir flestar vörur (að undanskildum landbúnaðar- og sjávarafurðum). EEA-LEGAL-001 staðfestir að um 70% af löggjöf innri markaðar ESB hefur verið innleidd í íslenskan rétt í gegnum EES.",
-      "caveat": "Mikilvægi fyrirvarinn er „að undanskildum landbúnaðar- og sjávarafurðum\". Þessar undanþágur eru verulegar í ljósi þess að sjávarútvegur er um 40% af vöruútflutningi.",
-      "confidence": 0.95,
-      "supporting_evidence": [],
+      "explanation": "AGRI-LEGAL-001 og AGRI-DATA-015 staðfesta að sameiginleg landbúnaðarstefna ESB er stærsti einstaki liðurinn í fjárhagsáætlun sambandsins — um 387 milljarðar evra á tímabilinu 2021–2027, eða 31% af heildarfjárlögum. Þetta gerir hana að umfangsmesta stuðningskerfi landbúnaðar heims. PREC-DATA-015 sýnir svo sérstaklega hvernig Írland hefur nýtt CAP-umhverfisgreiðslur til endurheimt votlendis og kolefnisbindingar í gegnum ACRES-kerfið, sem getur skilað 7.000–10.000 evrum á bú á ári. Báðir hlutar fullyrðingarinnar eru staðfestir af heimildum.",
+      "caveat": "Landbúnaðargeirinn á Írlandi er ólíkur þeim íslenska og umfang CAP-greiðslna þar endurspeglar mun stærri geira. Hvort Ísland fengi sambærilegan aðgang að umhverfisgreiðslum fer eftir samningsniðurstöðu. Rannsóknir sýna að CAP-stuðningur við Ísland gæti numið 80–120 milljónum evra — töluvert minna en núverandi innlendur stuðningur.",
+      "confidence": 0.85,
+      "supporting_evidence": [
+        "AGRI-DATA-015",
+        "PREC-DATA-015"
+      ],
+      "contradicting_evidence": []
+    },
+    {
+      "claim_text": "Þegar aðildarviðræðum Íslands við ESB var hætt árið 2013 höfðu sex kaflar af 33 ekki verið opnaðir.",
+      "claim_slug": "thegar-adildarvidraedum-islands-vid-esb-var-haett-arid-2013-hofdu-sex-kaflar-af-33-ekki-verid-opnadir",
+      "category": "eea-eu-law",
+      "category_is": "EES og löggjöf ESB",
+      "claim_type": "statistic",
+      "verdict": "supported",
+      "explanation": "PREC-HIST-004 staðfestir að af 33 samningaköflum voru 27 rýndir og 11 formlega opnaðir. AGRI-LEGAL-003 nefnir sérstaklega sex kafla sem aldrei voru opnaðir, þar á meðal landbúnað, sjávarútveg, matvælaöryggi, umhverfismál, byggðastefnu og þjónustufrelsið. AGRI-DATA-018 staðfestir sömu niðurstöðu.",
+      "caveat": "Tölulegar upplýsingar í heimildum eru ekki alveg samhljóða um fjölda opnaðra kafla: sumar segja 11, aðrar 27. Fullyrðingin um sex óopnaða kafla er staðfest í AGRI-LEGAL-003 og vísar til þeirra viðkvæmustu kafla sem aldrei voru opnaðir til viðræðna.",
+      "confidence": 0.85,
+      "supporting_evidence": [
+        "PREC-HIST-004",
+        "AGRI-LEGAL-003",
+        "AGRI-DATA-018",
+        "EEA-DATA-009"
+      ],
       "contradicting_evidence": []
     },
     {
@@ -558,23 +687,16 @@
       "category_is": "Sjávarútvegur",
       "claim_type": "legal_assertion",
       "verdict": "supported",
-      "explanation": "Ísland opnaði 27 af 33 kaflum og lokaði 11 til bráðabirgða, en viðkvæmustu kaflarnir — sjávarútvegur, landbúnaður og efnahags- og peningamálastefna — voru aldrei opnaðir áður en ferlinu var frestað í maí 2013.",
-      "caveat": "Sjávarútvegs- og landbúnaðarkaflarnir voru ekki einu ástæðu þess að viðræðum var frestað. Ný miðhægri ríkisstjórn (2013) frestaði viðræðunum af pólitískum ástæðum í stóru. EES-samræmi gaf Íslandi forskot á flestum öðrum köflum, en þessir kaflar falla algjörlega utan EES.",
+      "explanation": "AGRI-LEGAL-003, AGRI-DATA-018 og FISH-DATA-023 staðfesta öll að sjávarútvegskafli (kafli 13) og landbúnaðarkafli (kafli 11) voru aldrei opnaðir til samningaviðræðna áður en ferlinu var frestað í maí 2013. Samkvæmt PREC-HIST-004 og EEA-DATA-009 opnaði Ísland 27 af 33 kaflum og lokaði 11 til bráðabirgða, en viðkvæmustu kaflarnir — þar á meðal sjávarútvegur, landbúnaður og efnahags- og peningamálastefna — voru meðal þeirra sem aldrei voru opnaðir.",
+      "caveat": "Þó ber að hafa í huga að sjávarútvegs- og landbúnaðarkaflarnir voru ekki einu ástæðu þess að viðræðum var frestað. Samkvæmt AGRI-DATA-018 frestaði ný miðhægri ríkisstjórn (2013) viðræðunum af pólitískum ástæðum í stóru. EES-samræmi gaf Íslandi verulegt forskot á flestum öðrum köflum, en þessir kaflar falla algjörlega utan EES og þyrftu algjörlega nýjar samningaviðræður.",
       "confidence": 0.95,
-      "supporting_evidence": [],
-      "contradicting_evidence": []
-    },
-    {
-      "claim_text": "ESB-aðild myndi þýða að samþykkja sameiginlegu landbúnaðarstefnuna",
-      "claim_slug": "eu-membership-would-mean-accepting-the-common-agricultural-policy",
-      "category": "agriculture",
-      "category_is": "Landbúnaður",
-      "claim_type": "legal_assertion",
-      "verdict": "supported",
-      "explanation": "Samþykkt landbúnaðarstefnunnar er skilyrði ESB-aðildar — ekkert undanþáguákvæði er til staðar. EES-samningurinn undanþiggi sérstaklega sameiginlegu landbúnaðarstefnuna.",
-      "caveat": "Þótt samþykkt landbúnaðarstefnunnar sé skylda, veitir hún einnig verulegan stuðning við bændur (387 milljarðar evra fyrir 2021–2027). Nettóáhrif á íslenska bændur myndu ráðast af samanburði á núverandi innlendum stuðningi og greiðslum landbúnaðarstefnunnar.",
-      "confidence": 0.95,
-      "supporting_evidence": [],
+      "supporting_evidence": [
+        "AGRI-LEGAL-003",
+        "AGRI-DATA-018",
+        "FISH-DATA-023",
+        "PREC-HIST-004",
+        "EEA-DATA-009"
+      ],
       "contradicting_evidence": []
     },
     {
@@ -584,24 +706,17 @@
       "category_is": "Húsnæðismál",
       "claim_type": "statistic",
       "verdict": "partially_supported",
-      "explanation": "Óverðtryggðir vextir á Íslandi byrja í um 7,5% og meðalvextir á evrusvæðinu voru um 3,4%. Hins vegar eru um 80% íslenskra húsnæðislána verðtryggð með nafnvexti 3,5–5,5% auk verðbólguleiðréttingar, sem gerir beinan samanburð erfiðan.",
-      "caveat": "Aðild að evrusvæðinu myndi ekki sjálfkrafa lækka íslenska húsnæðisvexti — innlent áhættuálag, bankakostnaður og húsnæðismarkaður hafa áhrif. Lægri vextir auka yfirleitt húsnæðisverð frekar en að lækka húsnæðiskostnað. Evruaðild yrði ekki strax við ESB-aðild heldur eftir margra ára aðlögun.",
+      "explanation": "HOUS-DATA-005 sýnir að óverðtryggðir vextir á Íslandi byrja í um 7,5% og meðalvextir á evrusvæðinu voru um 3,4% — nálægt þeim tölum sem fullyrðingin gefur upp. Hins vegar bendir HOUSING-DATA-010 á að um 80% íslenskra húsnæðislána eru verðtryggð með nafnvexti 3,5–5,5% auk verðbólguleiðréttingar, sem gerir samanburðinn villandi. Fullyrðingin ber saman óverðtryggða íslenska vexti (8%) við evrópska nafnvexti (3,2–3,5%) og gefur þannig ranga mynd af raunverulegum vaxtakostnaði flestra íslenskra lántaka.",
+      "caveat": "Aðild að evrusvæðinu myndi ekki sjálfkrafa lækka íslenska húsnæðisvexti niður á evrópskt meðaltal — innlent áhættuálag, bankakostnaður og húsnæðismarkaður hafa áhrif. HOUSING-DATA-009 bendir einnig á að lægri vextir auka yfirleitt húsnæðisverð frekar en að lækka húsnæðiskostnað. Auk þess yrði evruaðild ekki strax við ESB-aðild heldur eftir margra ára ERM II-aðlögun.",
       "confidence": 0.88,
-      "supporting_evidence": [],
-      "contradicting_evidence": []
-    },
-    {
-      "claim_text": "Upptaka evru kemur eftir ESB-aðild og er langt ferli; ekki var samið sérstaklega um gjaldmiðlamál í aðildarviðræðunum.",
-      "claim_slug": "upptaka-evru-kemur-eftir-esb-adild-og-er-langt-ferli-ekki-var-samid-serstaklega-um-gjaldmidlamal-i-adildarvidraedunum",
-      "category": "currency",
-      "category_is": "Gjaldmiðill og peningamál",
-      "claim_type": "legal_assertion",
-      "verdict": "supported",
-      "explanation": "Nýleg aðildarríki eru lagalega skuldbundin til að taka upp evru eftir aðild þegar Maastricht-viðmiðin eru uppfyllt — þar á meðal tveggja ára þátttaka í ERM II-gengiskerfinu. Kafli 17 (efnahags- og peningamálastefna) var einn af þeim sem voru ekki opnaðir í fyrri viðræðum.",
-      "caveat": "Þrátt fyrir lagalega skyldu hefur engin framfylgd verið krafist — Svíþjóð hefur forðast evruupptöku síðan 2003 með því að ganga ekki í ERM II-gengiskerfið. Ísland gæti fræðilega beitt sömu aðferð.",
-      "confidence": 0.85,
-      "supporting_evidence": [],
-      "contradicting_evidence": []
+      "supporting_evidence": [
+        "HOUS-DATA-005",
+        "HOUSING-DATA-008",
+        "CURRENCY-DATA-015"
+      ],
+      "contradicting_evidence": [
+        "HOUSING-DATA-010"
+      ]
     },
     {
       "claim_text": "Landbúnaður er einn stærsti losunarþáttur Danmerkur (11-12 milljónir tonna CO2-ígilda) og stendur fyrir um þriðjung af heildarlosun landsins.",
@@ -610,10 +725,29 @@
       "category_is": "Fordæmi annarra ríkja",
       "claim_type": "statistic",
       "verdict": "supported",
-      "explanation": "Landbúnaður í Danmörku losar um 11-12 milljónir tonna CO2-ígilda á ári og stendur fyrir um þriðjung af heildarlosun landsins (um 33-35 milljónir tonna CO2-ígilda árið 2023).",
-      "caveat": "Reikningsaðferðir hafa áhrif á hlutfallstölurnar — þriðjungshlutfallið tekur með losun vegna landnotkunar frá landbúnaði. Danmörk setti á kolefnisskatt á landbúnaðarlosun árið 2024 (tekur gildi 2030) sem miðar að því að draga úr þessari losun.",
+      "explanation": "Heimild PREC-DATA-005 stadfestir beint ad landbunadur i Danmorku losar um 11-12 miljonir tonna CO2-igilds a ari og stendur fyrir um thridjung af heildarlosun landsins (sem var um 33-35 miljonir tonna CO2-igilds arið 2023). Toluleg fullyrdingin er i fullu samraemi vid heimildir.",
+      "caveat": "Reikningsadferdir hafa ahrif a hlutfallstolurna -- thridjungshlutfallid tekur med losun vegna landnotkunar fra landbunadi. Mismunandi reikningsadferdir geta gefid mismunandi prosentur. Danmork setti a kolefnisskatt a landbunadalosun arið 2024 (tekur gildi 2030) sem midar ad thvi ad draga ur thessari losun.",
       "confidence": 0.95,
-      "supporting_evidence": [],
+      "supporting_evidence": [
+        "PREC-DATA-005"
+      ],
+      "contradicting_evidence": []
+    },
+    {
+      "claim_text": "Þingsályktunartillaga um þjóðaratkvæðagreiðsluna var lögð fram á föstudag (7. mars 2026).",
+      "claim_slug": "thingsalyktunartillaga-um-thjodaratkvaedagreidsluna-var-logd-fram-a-fostudag-7-mars-2026",
+      "category": "sovereignty",
+      "category_is": "Fullveldi",
+      "claim_type": "statistic",
+      "verdict": "supported",
+      "explanation": "SOV-LEGAL-028 staðfestir beint að þingsályktunartillagan var lögð fram á föstudegi 7. mars 2026 af utanríkisráðherra Þorgerði Katrínu Gunnarsdóttur. SOV-DATA-006 og SOV-PARL-001 styðja sömu staðreynd. Fullyrðingin er einföld og nákvæm staðhæfing um dagsetningu og form sem heimildir staðfesta án fyrirvara.",
+      "caveat": "SOV-PARL-001 nefnir 9. mars sem dag flutningsræðunnar — tillagan var lögð fram föstudaginn 7. mars en kynnt formlega mánudaginn 9. mars. Stjórnarandstaðan gagnrýndi föstudagsframlagningu sem tilraun til að takmarka fjölmiðlaumfjöllun (SOV-LEGAL-028).",
+      "confidence": 0.95,
+      "supporting_evidence": [
+        "SOV-LEGAL-028",
+        "SOV-PARL-001",
+        "SOV-DATA-006"
+      ],
       "contradicting_evidence": []
     }
   ],
