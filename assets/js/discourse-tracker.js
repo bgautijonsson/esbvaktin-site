@@ -383,7 +383,7 @@
           ${dateStr ? `<time>${dateStr}</time>` : ""}
           ${authorStr}
         </div>
-        ${report.capsule ? `<p class="dt-card-summary">${escapeHtml(report.capsule)}</p>` : report.summary ? `<p class="dt-card-summary">${escapeHtml(report.summary)}</p>` : ""}
+        ${report.capsule ? `<p class="dt-card-summary">${escapeHtml(report.capsule)}</p><span class="dt-card-ai-tag">Samantekt gervigreindar</span>` : report.summary ? `<p class="dt-card-summary">${escapeHtml(report.summary)}</p>` : ""}
         <div class="dt-card-footer">
           <span class="dt-card-count">${report.claim_count} fullyrðingar</span>
           <div class="dt-verdict-bar">${verdicts}</div>

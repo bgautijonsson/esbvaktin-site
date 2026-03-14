@@ -81,9 +81,13 @@ evidence_preview: true
     {% endif %}
 
     {% if report.capsule %}
-    <p class="report-capsule">{{ report.capsule }}</p>
-    {% endif %}
+    <aside class="report-capsule">
+      <p class="report-capsule-text">{{ report.capsule }}</p>
+      <p class="report-capsule-label">Samantektin er skrifuð af gervigreindarlíkaninu Claude með hjálp tengingar við gagnagrunn ESB Vaktarinnar.</p>
+    </aside>
+    {% else %}
     <p class="report-summary">{{ report.summary }}</p>
+    {% endif %}
   </header>
 
   {# ── Phase 2: Verdict summary bar ── #}

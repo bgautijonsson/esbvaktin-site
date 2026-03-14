@@ -1250,22 +1250,32 @@ img { max-width: 100%; height: auto; }
 }
 
 .report-capsule {
-  font-size: 1.1rem;
-  color: var(--text-primary);
-  border-left: 3px solid var(--accent);
-  padding-left: 1rem;
-  margin: 0 0 0.75rem 0;
-  line-height: 1.6;
-  font-style: italic;
+  background: var(--surface-raised, #f8f9fa);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem 1rem;
+  margin: 0 0 1.5rem 0;
 }
 
-.report-summary {
+.report-capsule-text {
   font-size: 1.05rem;
-  color: var(--text-secondary);
-  border-left: 3px solid var(--accent);
-  padding-left: 1rem;
+  color: var(--text-primary);
+  line-height: 1.65;
+  margin: 0 0 0.75rem 0;
+}
+
+.report-capsule-label {
+  font-size: 0.75rem;
+  color: var(--text-muted, #999);
   margin: 0;
-  line-height: 1.6;
+  letter-spacing: 0.02em;
+}
+
+
+.report-summary {
+  font-size: 0.9rem;
+  color: var(--text-muted, #999);
+  margin: 0 0 1rem 0;
+  line-height: 1.5;
 }
 
 .report-verdicts {
