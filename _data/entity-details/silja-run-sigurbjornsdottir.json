@@ -13,17 +13,17 @@
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 4,
-    "supported": 5,
+    "supported": 7,
+    "partially_supported": 2,
     "misleading": 1
   },
   "claims": [
     {
       "claim_text": "Losun alþjóðaflugs á gróðurhúsalofttegundum innan ESB fellur undir ETS-viðskiptakerfið.",
       "original_quote": "Losun alþjóðaflugs á gróðurhúsalofttegundum innan Evrópusambandsins fellur undir ETS-viðskiptakerfið",
-      "verdict": "partially_supported",
-      "explanation": "<a href=\"https://climate.ec.europa.eu/eu-action/transport/reducing-emissions-aviation_en\" title=\"European Commission — Reducing emissions from aviation; Directive 2008/101/EC; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-002</a> staðfestir að losun flugs innan EES-svæðisins fellur undir ETS-kerfið frá 2008. Fullyrðingin nefnir þó «losun alþjóðaflugs ... innan ESB» sem er ónákvæmt á tvo vegu. Í fyrsta lagi nær gildissviðið til alls EES-svæðisins, ekki aðeins ESB-ríkja. Í öðru lagi hefur gildissviðið breyst margsinnis — upphaflega átti það að ná til allra fluga til og frá EES en var takmarkað við flug innan svæðisins. Flug til og frá þriðju ríkjum er undanskilið þar til endurskoðun í júlí 2026.",
-      "missing_context": "Gildissviðið nær til flugs innan EES-svæðisins, ekki eingöngu ESB. Flug til og frá þriðju ríkjum fellur undir CORSIA. Ísland samdi um sérstaka undanþágu til að halda ókeypis losunarheimildum til 2026 (<a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a>). Ókeypis úthlutunum var fasað út og þær falla niður frá 2026 (<a href=\"https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/allocation-aviation-sector_en\" title=\"European Commission — Allocation to the aviation sector; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-DATA-001</a>).",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://climate.ec.europa.eu/eu-action/transport/reducing-emissions-aviation_en\" title=\"European Commission — Reducing emissions from aviation; Directive 2008/101/EC; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-002</a> staðfestir beinlínis að losun alþjóðaflugs innan EES-svæðisins falli undir ETS-kerfið frá tilskipun 2008/101/EB. Upphaflega átti að ná til allra fluga til og frá EES en gildissviðið var takmarkað við flug innan EES frá 2014. <a href=\"https://eur-lex.europa.eu/eli/dec/2007/146(2)/oj/eng\" title=\"EEA Joint Committee Decision No 146/2007; EUR-Lex; EFTA Court\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-001</a> sýnir að Ísland tekur þátt í ETS-kerfinu gegnum EES-samninginn frá 2008. Nýjar heimildir styrkja þetta: <a href=\"https://ust.is/loft/losunarvottord/\" title=\"Umhverfisstofnun — Iceland's participation in EU ETS; European Commission — EU ETS data\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-002</a> og <a href=\"https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/allocation-aviation-sector_en\" title=\"European Commission — Allocation to the aviation sector; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-DATA-001</a> staðfesta sömu staðreynd, og <a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a> sýnir að Ísland samdi jafnvel um sérstaka undanþágu varðandi ókeypis losunarheimildir fyrir flugfélög.",
+      "missing_context": "Fullyrðingin nefnir «alþjóðaflug» en ETS-kerfið nær eingöngu til flugs innan EES — flug til og frá þriðju ríkjum utan EES er undanskilið (þó endurskoðun standi yfir). Ísland sem EES-ríki tekur nú þegar þátt í ETS-kerfinu, þannig að þetta er ekki bundið við ESB-aðild. Ókeypis losunarheimildir til flugfélaga eru í niðurfellingu og falla niður árið 2026.",
       "supporting_evidence": [
         {
           "id": "ETS-LEGAL-002",
@@ -39,6 +39,21 @@
           "id": "ETS-DATA-003",
           "source_name": "European Commission — Scope of the EU ETS; International Carbon Action Partnership (ICAP); Green by Iceland",
           "source_url": "https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/scope-eu-ets_en"
+        },
+        {
+          "id": "ENERGY-LEGAL-002",
+          "source_name": "Umhverfisstofnun — Iceland's participation in EU ETS; European Commission — EU ETS data",
+          "source_url": "https://ust.is/loft/losunarvottord/"
+        },
+        {
+          "id": "ETS-DATA-001",
+          "source_name": "European Commission — Allocation to the aviation sector; Directive (EU) 2023/958",
+          "source_url": "https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/allocation-aviation-sector_en"
+        },
+        {
+          "id": "ETS-DATA-002",
+          "source_name": "Iceland Review; Carbon Pulse; European Commission",
+          "source_url": "https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/"
         }
       ],
       "contradicting_evidence": [],
@@ -89,8 +104,8 @@
       "claim_text": "Ísland hefur sérstaka undanþágu frá losunarheimildum í ETS-kerfinu sem rennur út í lok árs.",
       "original_quote": "Séríslensk undanþága frá sérstökum losunarheimildum rennur út í loks árs",
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a> staðfestir að Ísland samdi um sérstaka undanþágu til að halda ókeypis losunarheimildum fyrir flugrekendur til og með 2026 — einu ári lengur en almenn EES/ESB-regla. Fullyrðingin segir undanþágan «renni út í lok árs» án þess að tilgreina hvaða ár, sem er ónákvæmt. Samningurinn frá maí 2023 var lýstur sem «bráðabirgðasamkomulag» sem krefðist formlegrar staðfestingar. Greinarmunurinn á ókeypis losunarheimildum (til 2026) og landfræðilegu umfangi ETS-flugkerfisins (til byrjunar 2027) er oft ruglað saman.",
-      "missing_context": "Undanþágan nær eingöngu til flugs, ekki til iðnaðar. Samningurinn var lýstur sem bráðabirgðasamkomulag og endanleg skilmálar gætu hafa breyst. Ekki er ljóst hvaða ár fullyrðingin vísar til — ef átt er við 2026 er hún í aðalatriðum rétt en ef 2027 er um rugling að ræða.",
+      "explanation": "<a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a> staðfestir að Ísland samdi um sérstaka undanþágu til að halda ókeypis losunarheimildum fyrir flugrekendur til og með 2026 — eitt ár lengur en almenna EES-áætlunin. Fullyrðingin er í meginatriðum rétt en ónákvæm á tvo vegu: hún segir «í lok árs» án þess að tilgreina hvaða ár, og hún greinir ekki á milli tveggja ólíkra undanþága — ókeypis úthlutunar (til 2026) og landfræðilegs gildissviðs flugs (til byrjunar 2027). Samkvæmt <a href=\"https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/allocation-aviation-sector_en\" title=\"European Commission — Allocation to the aviation sector; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-DATA-001</a> er almennt verið að afnema ókeypis losunarheimildir í flugi og þær falla niður frá 2026 fyrir aðra EES-aðila.",
+      "missing_context": "Samningur frá maí 2023 var lýstur sem «bráðabirgðasamningur» og háður formlegu samþykki. Óljóst er hvort fullyrðingin vísi til undanþágu sem rennur út í lok 2026 (ókeypis úthlutun) eða 2027 (landfræðilegt gildissvið). <a href=\"https://climate.ec.europa.eu/eu-action/transport/reducing-emissions-aviation_en\" title=\"European Commission — Reducing emissions from aviation; Directive 2008/101/EC; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-002</a> bendir til þess að gildissvið flugs í ETS sé til endurskoðunar í júlí 2026.",
       "supporting_evidence": [
         {
           "id": "ETS-DATA-002",
@@ -101,6 +116,11 @@
           "id": "ETS-DATA-001",
           "source_name": "European Commission — Allocation to the aviation sector; Directive (EU) 2023/958",
           "source_url": "https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/allocation-aviation-sector_en"
+        },
+        {
+          "id": "ENERGY-LEGAL-002",
+          "source_name": "Umhverfisstofnun — Iceland's participation in EU ETS; European Commission — EU ETS data",
+          "source_url": "https://ust.is/loft/losunarvottord/"
         }
       ],
       "contradicting_evidence": [],
@@ -114,9 +134,9 @@
     {
       "claim_text": "Undanþágan felur í sér leyfi til að niðurgreiða losun flugfélaga með því að gefa þeim losunarheimildir.",
       "original_quote": "í henni felst leyfi til að niðurgreiða losun flugfélaga með því að gefa þeim losunarheimildir",
-      "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a> staðfestir að Ísland samdi um áframhaldandi ókeypis losunarheimildir fyrir flugrekendur, sem þýðir í raun að flugfélög þurfa ekki að kaupa heimildir á markaðsverði. Samkvæmt <a href=\"https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/allocation-aviation-sector_en\" title=\"European Commission — Allocation to the aviation sector; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-DATA-001</a> skapar ókeypis úthlutun «verulegan óbeinan ávinning» á markaðsverði 50–80 evrur á tonn. Orðið «niðurgreiða» er þó ekki tæknilega nákvæmt — Framkvæmdastjórn ESB lítur á ókeypis úthlutun sem bráðabirgðaráðstöfun gegn kolefnisleka, ekki sem ríkisstyrk í hefðbundinni merkingu.",
-      "missing_context": "Hvort ókeypis losunarheimildir teljist «niðurgreiðsla» er umdeilt — ESB skilgreinir þær sem aðlögunarráðstöfun, en efnahagslega virka þær sem óbein niðurgreiðsla. Flugfélög halda því fram að úthlutunin jafni samkeppnisstöðu gagnvart flugfélögum utan ETS-kerfisins.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a> staðfestir beint að Ísland samdi um áframhaldandi ókeypis losunarheimildir til flugfélaga umfram almenna áætlun ESB. Samkvæmt <a href=\"https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/allocation-aviation-sector_en\" title=\"European Commission — Allocation to the aviation sector; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-DATA-001</a> er almenna reglan sú að ókeypis úthlutun til flugs minnkar um 25% árið 2024, 50% árið 2025, og fellur niður frá 2026. Ísland fékk undanþágu til að halda ókeypis úthlutun til og með 2026. Þótt orðið «niðurgreiða» sé ekki lagalega nákvæmt — um ráðstöfun losunarheimilda er að ræða, ekki beina niðurgreiðslu — lýsir <a href=\"https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/allocation-aviation-sector_en\" title=\"European Commission — Allocation to the aviation sector; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-DATA-001</a> efnahagslegum áhrifunum sem «verulegum óbeinum ávinningi» þar sem flugfélög þurfa ekki að kaupa heimildir á markaðsverði.",
+      "missing_context": "Framkvæmdastjórn ESB lítur ekki á ókeypis úthlutun sem ríkisaðstoð heldur sem tímabundna aðgerð gegn kolefnisleka. Fyrirvarinn úr <a href=\"https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/allocation-aviation-sector_en\" title=\"European Commission — Allocation to the aviation sector; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-DATA-001</a> bendir á að lýsingin «niðurgreiðsla» sé umdeild — flugfélög halda því fram að úthlutunin vegi upp samkeppnisójöfnuð gagnvart flugfélögum utan ETS-kerfisins.",
       "supporting_evidence": [
         {
           "id": "ETS-DATA-002",
@@ -127,6 +147,11 @@
           "id": "ETS-DATA-001",
           "source_name": "European Commission — Allocation to the aviation sector; Directive (EU) 2023/958",
           "source_url": "https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/allocation-aviation-sector_en"
+        },
+        {
+          "id": "ETS-LEGAL-002",
+          "source_name": "European Commission — Reducing emissions from aviation; Directive 2008/101/EC; Directive (EU) 2023/958",
+          "source_url": "https://climate.ec.europa.eu/eu-action/transport/reducing-emissions-aviation_en"
         }
       ],
       "contradicting_evidence": [],

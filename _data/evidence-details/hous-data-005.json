@@ -5,7 +5,7 @@
   "topic": "housing",
   "subtopic": "mortgage_rate_comparison_iceland_eu",
   "statement": "Mortgage interest rates in Iceland are significantly higher than in the eurozone. As of early 2026, non-indexed variable mortgage rates in Iceland start at approximately 7.5–8.5%, while indexed (CPI-linked) mortgage rates are around 3.5–4.5% but carry inflation risk. In contrast, the average eurozone mortgage rate was approximately 3.4% in late 2025 (ECB data), down from a peak of ~4.1% in late 2023. The gap is primarily driven by Iceland's small, closed capital market, higher policy rates (Seðlabanki base rate at 7.25% as of March 2026 vs ECB deposit rate at 2.75%), and the króna's vulnerability to external shocks. Euro adoption would, in theory, give Icelandic borrowers access to the deeper European capital market, but euro adoption would only occur years after EU accession and would require meeting the Maastricht convergence criteria.",
-  "statement_is": "Vextir af húsnæðislánum á Íslandi eru umtalsvert hærri en á evrusvæðinu. Í ársbyrjun 2026 byrja óverðtryggðir breytilegir vextir af húsnæðislánum á Íslandi í um það bil 7,5–8,5%, á meðan verðtryggðir (vísitölutengdir) vextir eru um 3,5–4,5% en bera verðbólguáhættu. Til samanburðar voru meðalvextir húsnæðislána á evrusvæðinu um það bil 3,4% í lok árs 2025 (gögn frá ECB), eftir að hafa náð hámarki í ~4,1% í lok árs 2023. Mismunurinn skýrist fyrst og fremst af smæð og einangrun íslenska fjármagnsmarkaðarins, hærri stýrivöxtum (grunnvextir Seðlabankans 7,25% í mars 2026 á móti 2,75% innlánsvöxtum ECB) og viðkvæmni krónunnar fyrir ytri áföllum. Uppaka evru myndi, fræðilega séð, veita íslenskum lántakendum aðgang að dýpri evrópskum fjármagnsmarkaði, en upptaka evru yrði ekki fyrr en mörgum árum eftir inngöngu í ESB og krefðist þess að Maastricht-skilyrðunum væri fullnægt.",
+  "statement_is": "Veðlánsvaxtakjör á Íslandi eru umtalsvert lakari en á evrusvæðinu: í byrjun árs 2026 byrja óverðtryggð breytileg veðlán á u.þ.b. 7,25–7,5%, en meðalveðlánshlutfall á evrusvæðinu var um 3,4% seint á árinu 2025. Munurinn skýrist aðallega af litlum og lokuðum fjármagnsmarkaði á Íslandi, hærri stýrivaxtakjörum Seðlabanka Íslands (8,5% í mars 2026 á móti 2,75% hjá Seðlabanka Evrópu) og viðkvæmni krónunnar; evruupptaka yrði möguleg eingöngu nokkrum árum eftir hugsanlega ESB-aðild og krefðist þess að Ísland uppfyllti Maastricht-samleitniskilyrðin.",
   "source_name": "Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase",
   "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html",
   "source_date": "2025-12-01",
@@ -79,6 +79,11 @@
           "claim_text": "Íslensk heimili borga 367 þúsund krónum meira á mánuði í vexti en þýsk heimili, sem er um 500 þúsund krónur fyrir skatta.",
           "verdict": "misleading",
           "role": "contradicting"
+        },
+        {
+          "claim_text": "Öll lán í krónum eru með krónuálagi sem nemur að minnsta kosti 5% umfram lán í evrum.",
+          "verdict": "partially_supported",
+          "role": "supporting"
         },
         {
           "claim_text": "Í öllum löndum í norðurhluta Evrópu sem nota evrur eru vextir af húsnæðislánum um 4%.",
@@ -168,7 +173,7 @@
       "report_slug": "svarar-ekki-beint-um-undanthagur-en-segir-stodu-islands-sterka",
       "report_title": "Svarar ekki beint um undanþágur en segir stöðu Íslands sterka",
       "report_source": "Morgunblaðið",
-      "report_date": null,
+      "report_date": "2026-03-10",
       "claims": [
         {
           "claim_text": "Tækifæri ESB-aðildar snúa meðal annars að gjaldmiðli og vöxtum.",
@@ -201,5 +206,5 @@
       ]
     }
   ],
-  "citation_count": 21
+  "citation_count": 22
 }

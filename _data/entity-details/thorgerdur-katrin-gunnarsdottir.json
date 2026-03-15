@@ -6,13 +6,13 @@
   "role": "formaður Viðreisnar og utanríkisráðherra",
   "party": "Viðreisn",
   "stance": "pro_eu",
-  "stance_score": 0.71,
-  "credibility": 0.64,
+  "stance_score": 0.73,
+  "credibility": 0.68,
   "attribution_counts": {
     "asserted": 20,
-    "quoted": 21,
-    "paraphrased": 16,
-    "mentioned": 6
+    "quoted": 32,
+    "paraphrased": 20,
+    "mentioned": 11
   },
   "althingi_stats": {
     "speech_count": 194,
@@ -22,19 +22,30 @@
     "last_speech": "2026-03-09"
   },
   "scorecard": {
-    "unverifiable": 8,
-    "partially_supported": 28,
+    "unverifiable": 10,
+    "partially_supported": 32,
     "misleading": 4,
-    "supported": 17
+    "supported": 26
   },
   "claims": [
     {
       "claim_text": "Íslensk stjórnvöld hefðu náð betri árangri í samningaviðræðum um undanþágur frá ETS-kerfinu ef Ísland hefði verið aðili að ESB.",
       "original_quote": "Íslensk stjórnvöld hefðu náð betri árangri í samningaviðræðum um undanþágur frá losunarheimildum ETS-kerfisins hefði Ísland verið hluti af Evrópusambandinu",
       "verdict": "unverifiable",
-      "explanation": "Fullyrðingin er tilgáta um hvað hefði gerst ef Ísland væri ESB-aðili — andstæðuástand sem heimildir geta ekki sannreynt. <a href=\"https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341\" title=\"EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-003</a> staðfestir að EES/EFTA-ríkin hafa ekki atkvæðisrétt í lagasetningarferlinu þar sem ETS-reglur eru samþykktar. Á móti sýnir <a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a> að Ísland náði undanþágu um fríar losunarheimildir í flugi til 2026 jafnvel sem EES-ríki. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1\" title=\"Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-006</a> bendir á að nýjum aðildarríkjum hafi verið veittar færri undanþágur eftir stækkun 2004 — sem dregur í efa þá forsendu að ESB-aðild hefði sjálfkrafa leitt til betri samningsstöðu.",
-      "missing_context": "Fullyrðingin er tilgáta sem ekki verður staðfest. <a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a> sýnir að Ísland náði undanþágu utan ESB, sem gefur til kynna svigrúm innan EES-rammans. Jafnframt sýna heimildir að ESB-aðild myndi veita atkvæðisrétt en jafnframt skilyrða fulla þátttöku í ETS-kerfinu án EES-aðlögunar.",
-      "supporting_evidence": [],
+      "explanation": "Þetta er gagnstaðsfullyrðing (counterfactual) sem heimildir geta ekki staðfest. <a href=\"https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341\" title=\"EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-003</a> bendir á að EES/EFTA-ríki hafi ekki atkvæðisrétt í löggjafaferli ESB og geti aðeins lagt fram athugasemdir. <a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a> sýnir að Ísland náði þó sérstakri undanþágu fyrir flugrekendur til 2026, sem sýnir að samningageta er til staðar jafnvel utan ESB. Hvort ESB-aðild hefði skilað «betri árangri» er ómögulegt að meta af tiltækum heimildum — aðild myndi veita atkvæðisrétt en eitt atkvæði af 27+ er takmarkað vald.",
+      "missing_context": "Ísland náði sérstöku samkomulagi um fríar losunarheimildir fyrir flugrekendur til 2026, sem sýnir að samningamáttur EES-ríkis getur skilað árangri. ESB-aðild myndi veita atkvæðisrétt í ráðherraráði og Evrópuþinginu, en Ísland sem minnsta aðildarríki hefði eitt atkvæði af 27+. Raunveruleg áhrif á ETS-reglur fara eftir bandalagsmyndun og pólitískum aðstæðum.",
+      "supporting_evidence": [
+        {
+          "id": "ETS-LEGAL-003",
+          "source_name": "EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission",
+          "source_url": "https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341"
+        },
+        {
+          "id": "ETS-DATA-002",
+          "source_name": "Iceland Review; Carbon Pulse; European Commission",
+          "source_url": "https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/"
+        }
+      ],
       "contradicting_evidence": [],
       "category": "eea_eu_law",
       "attribution": "paraphrased",
@@ -47,8 +58,8 @@
       "claim_text": "Utanríkisráðherra telur íslensk stjórnvöld ekki hafa komið nægilega snemma að ETS-ferlinu til að tryggja betri skilyrði.",
       "original_quote": "Þorgerður Katrín Gunnarsdóttir utanríkisráðherra telur íslensk stjórnvöld ekki hafa komið nægilega snemma að ferlinu til að tryggja íslenskum flugfélögum betri skilyrði",
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341\" title=\"EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-003</a> staðfestir að Ísland fylgdi almennri EES/EFTA-tímaáætlun við innleiðingu ETS-tilskipunarinnar — fjögur ár liðu frá samþykkt tilskipunarinnar (2003) til EES-innleiðingar (2007). <a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a> sýnir að Ísland samdi um sérstaka undanþágu á fríum losunarheimildum í flugi til 2026. Fullyrðingin um að íslensk stjórnvöld hafi ekki komið «nægilega snemma» að er pólitískt mat — <a href=\"https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341\" title=\"EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-003</a> tekur skýrt fram að þetta sé gildisdómur, ekki staðreynd sem hægt er að sannreyna. EES/EFTA-ríki hafa takmarkaðan möguleika á áhrifum á ESB-löggjöf og geta einungis sent athugasemdir.",
-      "missing_context": "Hvort «fyrri þátttaka» hefði skilað betri skilyrðum er getgáta sem heimildir geta ekki staðfest. <a href=\"https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341\" title=\"EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-003</a> bendir á að fjögurra ára bilið milli ESB-samþykktar og EES-innleiðingar endurspegli eðlilegan hraða EES-ferlisins fremur en sinnuleysi. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> sýnir að utanríkisráðherra hefur viðurkennt takmarkaðan áhrifamátt Íslands á ESB-löggjöf utan aðildar.",
+      "explanation": "<a href=\"https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341\" title=\"EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-003</a> staðfestir að Ísland fylgdi almennri EES/EFTA-tímaáætlun við innleiðingu ETS-tilskipunarinnar — fjögur ár liðu frá samþykkt ESB (2003) til innleiðingar í EES (2007). Heimildin nefnir þó að EES/EFTA-ríki hafi takmarkað formlegt vald til að hafa áhrif á löggjöf ESB, og hvort fyrri þátttaka hefði skilað betri niðurstöðu sé ósvaranlegt tilgátumat. <a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a> sýnir að Ísland náði undanþágu um ókeypis losunarheimildir til 2026, sem bendir til einhverrar samningsgetu. Fullyrðingin endurspeglar pólitískt mat utanríkisráðherra, ekki staðreynd sem heimildirnar geta staðfest eða afsannað til fulls.",
+      "missing_context": "Fullyrðingin er normativt mat, ekki hrein staðreynd. EES/EFTA-ríki hafa takmarkað formlegt vald yfir ESB-löggjöf og geta einungis gert athugasemdir og samið um aðlaganir við innleiðingu. Fjögurra ára bilið milli ESB-tilskipunar og EES-innleiðingar getur endurspeglað eðlilegan hraða EES-ferlisins frekar en vanrækslu.",
       "supporting_evidence": [
         {
           "id": "ETS-LEGAL-003",
@@ -59,11 +70,6 @@
           "id": "ETS-DATA-002",
           "source_name": "Iceland Review; Carbon Pulse; European Commission",
           "source_url": "https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/"
-        },
-        {
-          "id": "ETS-PARL-001",
-          "source_name": "Alþingi — Guðlaugur Þór Þórðarson, þingmaður Sjálfstæðisflokksins (flutningsræða, 154. löggjafarþing)",
-          "source_url": "https://www.althingi.is/altext/raeda/154/rad20231129T000000.html"
         }
       ],
       "contradicting_evidence": [],
@@ -78,9 +84,15 @@
       "claim_text": "Fyrri íslensk stjórnvöld hefðu mátt stíga fastar inn í ETS-samningaviðræðurnar.",
       "original_quote": "Þorgerður tekur einnig fram að fyrri stjórnvöld hefðu mátt stíga fastar inn",
       "verdict": "unverifiable",
-      "explanation": "<a href=\"https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341\" title=\"EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-003</a> lýsir því að Ísland hafi fylgt almennri EES/EFTA-tímaáætlun við innleiðingu ETS-tilskipunarinnar, með rúmlega fjögurra ára millibili frá samþykkt (2003) til innleiðingar í EES-samninginn (2007). Hvort fyrri stjórnvöld hefðu getað «stígið fastar inn» er matskennd pólitísk fullyrðing sem heimildir geta hvorki staðfest né hrakið. EES/EFTA-ríkin hafa takmarkað formlegt vald í lagasetningarferli ESB — þau geta lagt fram athugasemdir en ekki kosið eða breytt tilskipunum.",
-      "missing_context": "Fullyrðingin er í eðli sínu gildismat, ekki staðhæfing um staðreyndir. <a href=\"https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341\" title=\"EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-003</a> nefnir sérstaklega að þetta sé «counterfactual question that cannot be definitively answered». Fjögurra ára bilið milli samþykktar tilskipunarinnar og EES-innleiðingar endurspeglar bæði flókið innleiðingarferli og stjórnarskrárbundnar kröfur í EFTA-ríkjunum.",
-      "supporting_evidence": [],
+      "explanation": "Fullyrðingin er gildismat — að fyrri stjórnvöld «hefðu mátt stíga fastar inn» í ETS-samningaviðræður — sem heimildir geta ekki staðfest né hrakið. <a href=\"https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341\" title=\"EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-003</a> lýsir því að Ísland hafi fylgt almennri EES/EFTA-tímaáætlun við innleiðingu ETS-tilskipunarinnar, en tekur fram að EES/EFTA-ríki hafi takmarkað formlegt vald í löggjafaferli ESB. Fjögurra ára bilið milli samþykktar tilskipunarinnar (2003) og innleiðingar í EES (2007) endurspeglar flókið innleiðingarferli, ekki endilega skort á þátttöku. Hvort öflugri þátttaka hefði skilað betri niðurstöðu er ómögulegt að svara á grundvelli heimilda.",
+      "missing_context": "EES/EFTA-ríki hafa ekki atkvæðisrétt í löggjafaferli ESB — þau geta lagt fram athugasemdir og samið um aðlögun við innleiðingu, en geta ekki breytt tilskipunum formlega. Fullyrðingin er pólitískt mat sem gildisheimildir ná ekki til.",
+      "supporting_evidence": [
+        {
+          "id": "ETS-LEGAL-003",
+          "source_name": "EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission",
+          "source_url": "https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341"
+        }
+      ],
       "contradicting_evidence": [],
       "category": "eea_eu_law",
       "attribution": "paraphrased",
@@ -129,9 +141,9 @@
     {
       "claim_text": "Utanríkisráðherra mun ekki skrifa undir aðildarsamning sem felur ekki í sér fyrirsjáanleg yfirráð Íslendinga á auðlindum og fiskiveiðistjórn.",
       "original_quote": "Ég mun ekki samþykkja samning og ég mun ekki skrifa undir hann ef að hann fæli ekki í sér ótvíræð yfirráð Íslendinga yfir fiskveiðilögsögunni",
-      "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir að Þorgerður Katrín lýsti því yfir: «Ég mun aldrei skrifa undir samning sem tryggir ekki okkar markmið og okkar yfirráð» — sérstaklega hvað varðar sjávarútveg. Þetta er pólitísk yfirlýsing sem fullyrðingin endurspeglar. Hins vegar bendir <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> á að varanlegar undanþágur frá sameiginlegri sjávarútvegsstefnu séu ólíklegar samkvæmt ESB-stefnu, og <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T162602.html\" title=\"Alþingi — Kristrún Frostadóttir, forsætisráðherra (andsvar, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">PARTY-PARL-001</a> sýnir að forsætisráðherra neitaði að tilgreina nákvæm samningsskilyrði. Fullyrðingin gefur of sterka mynd af bindandi skuldbindingu þegar um pólitískt loforð er að ræða sem heimildir gefa ekki víst að standist í reynd.",
-      "missing_context": "Ráðherra er ekki ein um ákvarðanatökuna — aðildarsamningur þyrfti samþykki Alþingis og líklega þjóðaratkvæðagreiðslu. Fordæmi sýna að varanlegar undanþágur frá sameiginlegri sjávarútvegsstefnu hafa aldrei verið veittar nýju aðildarríki. EES-samningurinn undanskilur nú sjávarútvegsstefnuna, en ESB-aðild myndi fella Ísland undir hana.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir beint yfirlýsingu utanríkisráðherra Þorgerðar Katrínar Gunnarsdóttur á Alþingi: «Ég mun aldrei skrifa undir samning sem tryggir ekki okkar markmið og okkar yfirráð» — sérstaklega varðandi sjávarútveg. Þetta samræmist fullyrðingunni um að ráðherrann muni ekki skrifa undir aðildarsamning sem tryggi ekki yfirráð Íslendinga á auðlindum og fiskiveiðistjórn. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T162602.html\" title=\"Alþingi — Kristrún Frostadóttir, forsætisráðherra (andsvar, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">PARTY-PARL-001</a> styður þetta óbeint þar sem forsætisráðherra nefnir einnig «grundvallarprinsipp» um auðlindir og sjávarútveg.",
+      "missing_context": "Þetta er pólitísk yfirlýsing ráðherra, ekki lagalegt ákvæði — framtíðarráðherrar eru ekki bundnir af henni. <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> bendir á að varanleg undanþága frá sameiginlegri sjávarútvegsstefnu sé ólíkleg samkvæmt stækkunarstefnu ESB. Ráðherrann sagði einnig «okkar markmið og okkar yfirráð» sem er víðtækara en fullyrðingin gefur til kynna — ekki eingöngu fiskiveiðistjórn.",
       "supporting_evidence": [
         {
           "id": "SOV-PARL-001",
@@ -144,13 +156,7 @@
           "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T162602.html"
         }
       ],
-      "contradicting_evidence": [
-        {
-          "id": "EEA-DATA-014",
-          "source_name": "Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)",
-          "source_url": "https://ioes.hi.is/en/institute-economic-studies"
-        }
-      ],
+      "contradicting_evidence": [],
       "category": "fisheries",
       "attribution": "quoted",
       "article_slug": "vid-hefdum-nad-meiri-arangri-med-thvi-ad-vera-innan-evropusambandsins",
@@ -188,30 +194,40 @@
       "claim_text": "Tryggja þarf yfirráð Íslands yfir fiskveiðiauðlindinni í hugsanlegum aðildarsamningi.",
       "original_quote": "Við þurfum að tryggja yfirráð yfir fiskveiðiauðlindinni",
       "verdict": "partially_supported",
-      "explanation": "Fullyrðingin endurspeglar raunverulegan pólitískan vilja en heimildir sýna að slíkt yrði afar erfitt í framkvæmd. <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development\" title=\"European Parliament — The Common Fisheries Policy: Origins and Development\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-005</a> og <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> staðfesta að varanlegar undanþágur frá regluverkinu hafi nánast aldrei náðst í aðildarviðræðum — aðeins aðlögunartímabil eru í boði. Samkvæmt <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380\" title=\"Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-030</a> halda aðildarríki yfirráðum yfir innri úthlutun kvóta, en heildaraflamark er ákveðið af ráðherraráði ESB, sem er grundvallarbreyting frá núverandi fyrirkomulagi. Ísland gæti þannig haldið kvótakerfinu sínu en misst einhliða stjórn á heildaraflanum.",
-      "missing_context": "Enginn fordæmi er til um ríki með jafn ríkjandi sjávarútveg og Ísland sem gangi í ESB. Samkvæmt <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development\" title=\"European Parliament — The Common Fisheries Policy: Origins and Development\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-005</a> er óvíst hvernig hlutfallslegri stöðugleikareglu yrði beitt. <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> bendir á að varanlegar undanþágur séu ólíklegar — aðeins aðlögunartímabil eru raunhæf. Orðalagið «tryggja yfirráð» gefur til kynna fullkomin yfirráð sem sameiginleg sjávarútvegsstefna útilokar.",
+      "explanation": "Fullyrðingin er pólitísk krafa um að tryggja yfirráð Íslands yfir fiskveiðiauðlindinni í hugsanlegum aðildarsamningi. Heimildir staðfesta að þetta er raunhæft samningaatriði: sameiginleg sjávarútvegsstefna ESB (CFP) myndi færa ákvörðunarvald um heildarafla (TAC) og aðgang að efnahagslögsögu til ESB-stofnana (<a href=\"https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf\" title=\"Icelandic Act on the Exclusive Economic Zone No. 41/1979\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-002</a>, <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380\" title=\"Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-030</a>). Innri skipting kvóta yrði áfram í höndum Íslands (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380\" title=\"EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024\" target=\"_blank\" rel=\"noopener\">FISH-DATA-032</a>). Hagfræðistofnun HÍ (<a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a>) bendir á að varanlegar undanþágur frá kjarnastefnum ESB séu ólíklegar, en aðildarsamningar geta falið í sér sérákvæði. Fullyrðingin er rétt sem pólitískt markmið en heimildir sýna að fullkomin yfirráð yfir auðlindinni samrýmast illa aðild að CFP.",
+      "missing_context": "Heimildir benda til þess að aðildarríki haldi innri kvótastjórnun en missi einræði yfir heildaraflasetningu og aðgangi annarra ESB-skipa að efnahagslögsögu. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380\" title=\"EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024\" target=\"_blank\" rel=\"noopener\">FISH-DATA-032</a> bendir á að «equal access» meginreglan þýðir að erlend ESB-skip megi veiða í efnahagslögsögu Íslands utan 12 sjómílna. Þetta myndi fela í sér verulegt framsal yfirráða jafnvel þótt innra kvótakerfi héldist.",
       "supporting_evidence": [
+        {
+          "id": "FISH-LEGAL-002",
+          "source_name": "Icelandic Act on the Exclusive Economic Zone No. 41/1979",
+          "source_url": "https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf"
+        },
         {
           "id": "FISH-DATA-030",
           "source_name": "Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies",
           "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380"
         },
         {
-          "id": "FISH-LEGAL-002",
-          "source_name": "Icelandic Act on the Exclusive Economic Zone No. 41/1979",
-          "source_url": "https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf"
-        }
-      ],
-      "contradicting_evidence": [
+          "id": "FISH-LEGAL-005",
+          "source_name": "European Parliament — The Common Fisheries Policy: Origins and Development",
+          "source_url": "https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development"
+        },
+        {
+          "id": "FISH-DATA-021",
+          "source_name": "Eurostat — Fisheries statistics (fish_ca_main); Hagstofa Íslands",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/FISH_CA_MAIN/default/table?lang=en"
+        },
         {
           "id": "EEA-DATA-014",
           "source_name": "Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)",
           "source_url": "https://ioes.hi.is/en/institute-economic-studies"
-        },
+        }
+      ],
+      "contradicting_evidence": [
         {
-          "id": "FISH-LEGAL-005",
-          "source_name": "European Parliament — The Common Fisheries Policy: Origins and Development",
-          "source_url": "https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development"
+          "id": "FISH-DATA-032",
+          "source_name": "EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380"
         }
       ],
       "category": "fisheries",
@@ -225,8 +241,8 @@
       "claim_text": "Líklegt er að samningaviðræður myndu hefjast á fiskveiðistjórnarkaflanum.",
       "original_quote": "Mér þætti það frekar líklegt að það yrði byrjað bara strax á fiskveiðistjórnarkaflanum",
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13\" target=\"_blank\" rel=\"noopener\">EEA-DATA-004</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland screening report Chapter 13; Progress reports on Iceland 2011–2013\" target=\"_blank\" rel=\"noopener\">FISH-DATA-023</a> staðfesta að fiskveiðikaflinn (kafli 13) var einn erfiðastur í aðildarviðræðum Íslands 2010–2013 og var aldrei opnaður fyrir samningaviðræður. Framkvæmdastjórn ESB kláraði greiningu á kaflanum 2011 en opnaði hann aldrei formlega. Fullyrðingin um að «líklegt sé» að viðræður myndu hefjast á fiskveiðistjórnarkaflanum er þó tvíræð. Heimildir benda fremur til þess að kaflinn yrði opnaður seint í ferlinu, einmitt vegna pólitísks næmis (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland screening report Chapter 13; Progress reports on Iceland 2011–2013\" target=\"_blank\" rel=\"noopener\">FISH-DATA-023</a>). Nýja heimildin <a href=\"https://oceans-and-fisheries.ec.europa.eu/fisheries/common-fisheries-policy_en\" title=\"European Commission — Communication on the Common Fisheries Policy (2024); STECF stock assessments\" target=\"_blank\" rel=\"noopener\">FISH-COMP-003</a> sýnir að sameiginleg sjávarútvegsstefna hefur batnað á Norður-Atlantshafi en staðfestir ekki að kaflinn yrði tekinn fyrst.",
-      "missing_context": "Fullyrðingin er tvíræð — «hefjast á» getur þýtt annað hvort að kaflinn yrði opnaður fyrst eða að hann yrði í forgrunni. Heimildir benda til þess að fiskveiðikaflinn var settur í bakgrunn vegna pólitísks næmis og yrði líklega opnaður seint í ferlinu. Kvótakerfi Íslands og sameiginleg sjávarútvegsstefna hafa bæði þróast síðan 2013 (<a href=\"https://oceans-and-fisheries.ec.europa.eu/fisheries/common-fisheries-policy_en\" title=\"European Commission — Communication on the Common Fisheries Policy (2024); STECF stock assessments\" target=\"_blank\" rel=\"noopener\">FISH-COMP-003</a>, <a href=\"https://island.is/en/permits-to-fish/quota-system\" title=\"Ministry of Food, Agriculture and Fisheries — Fisheries Management in Iceland; Marine and Freshwater Research Institute\" target=\"_blank\" rel=\"noopener\">FISH-DATA-022</a>).",
+      "explanation": "Heimildir staðfesta að kafli 13 (sjávarútvegur) var einn erfiðasti kaflinn í aðildarviðræðum Íslands og ESB og var aldrei opnaður til viðræðna (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland screening report Chapter 13; Progress reports on Iceland 2011–2013\" target=\"_blank\" rel=\"noopener\">FISH-DATA-023</a>, <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13\" target=\"_blank\" rel=\"noopener\">EEA-DATA-004</a>). Fullyrðingin um að viðræður «myndu hefjast» á þessum kafla er þó matskennd spá, ekki staðreynd. Heimildir benda til þess að sjávarútvegurinn væri meðal síðustu kafla sem yrðu opnaðir, ekki sá fyrsti — kaflar þar sem EES-aðlögun var þegar langt komin voru opnaðir fyrst. Sex kaflar voru aldrei opnaðir og sjávarútvegur var einn þeirra (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland screening report Chapter 13; Progress reports on Iceland 2011–2013\" target=\"_blank\" rel=\"noopener\">FISH-DATA-023</a>).",
+      "missing_context": "Fullyrðingin gefur til kynna að sjávarútvegskafli væri upphafspunktur viðræðna, en reynslan frá 2010–2013 sýnir hið gagnstæða — kaflar þar sem EES tryggði forskot voru opnaðir fyrst. Aðildarviðræður eru einnig um mun meira en sjávarútveg; 33 kaflar voru á dagskrá. Ný heimild <a href=\"https://oceans-and-fisheries.ec.europa.eu/fisheries/common-fisheries-policy_en\" title=\"European Commission — Communication on the Common Fisheries Policy (2024); STECF stock assessments\" target=\"_blank\" rel=\"noopener\">FISH-COMP-003</a> um bætta sjávarútvegsstjórnun ESB í Norður-Atlantshafi breytir ekki þessu mati.",
       "supporting_evidence": [
         {
           "id": "EEA-DATA-004",
@@ -237,11 +253,6 @@
           "id": "FISH-DATA-023",
           "source_name": "European Commission — Iceland screening report Chapter 13; Progress reports on Iceland 2011–2013",
           "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
-        },
-        {
-          "id": "POL-DATA-014",
-          "source_name": "LÍÚ — Position paper on EU membership (2025); campaign finance declarations",
-          "source_url": null
         }
       ],
       "contradicting_evidence": [],
@@ -328,13 +339,23 @@
       "claim_text": "Ísland er eyja og ekki tengt meginlandi Evrópu, sem skapar sérstöðu í samningaviðræðum um ETS-kerfið.",
       "original_quote": "Evrópusambandið verður að átta sig á því að við erum eyja og erum ekki tengd við, við meginlandið eins og aðrir",
       "verdict": "partially_supported",
-      "explanation": "Heimild <a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a> staðfestir að Ísland samdi um sérúrræði vegna landfræðilegrar einangrunar sinnar varðandi fríar losunarheimildir í flugi. Eyjastaða landsins skapaði sérstöðu í þeim viðræðum. Hins vegar ná heimildir aðeins til flugmála innan ETS-kerfisins — fullyrðingin gefur til kynna víðtækari sérstöðu í ETS-samningaviðræðum en heimildir staðfesta. Aðrar heimildir (<a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a>, <a href=\"https://www.efta.int/eea/eea-agreement/annex-iv\" title=\"EFTA Secretariat — EEA Agreement Annex IV (Energy); Althingi EU Assessment Committee\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-001</a>) fjalla um EES-samninginn almennt, ekki sérstaklega ETS-viðræður.",
-      "missing_context": "Sérstaðan í ETS-viðræðum sem heimildir staðfesta nær eingöngu til flugmála. Samningurinn frá maí 2023 var lýstur sem bráðabirgðasamkomulagi og nákvæm skilmálar kunna að hafa breyst. Aðrar ETS-skyldur Íslands (iðnaður) eru ekki undanskildar vegna eyjastaðsetningar.",
+      "explanation": "<a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a> staðfestir beint að Ísland samdi um sérstaka meðferð í ETS-kerfinu vegna landfræðilegrar einangrunar — fríar losunarheimildir fyrir flugfélög voru framlengdar til 2026. Þetta sýnir að eyjastaða Íslands hefur raunverulega þýðingu í samningum. <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> undirstrikar enn frekar sérstöðu Íslands í EES-samstarfinu. Þó ber að taka fram að sérstöðurökin hafa einnig takmarkanir — <a href=\"https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341\" title=\"EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-003</a> sýnir að Ísland fylgdi almennri EES/EFTA-tímaáætlun við innleiðingu ETS-kerfisins og hafði takmörkuð formleg áhrif á löggjöf ESB sem EES-ríki.",
+      "missing_context": "Fullyrðingin nefnir ETS-kerfið sérstaklega en heimildir sýna að sérstöðurök Íslands hafa verið notuð á fleiri sviðum (sjávarútvegur, orka). Undanþágan í ETS-kerfinu var tímabundin (til 2026) og samkvæmt <a href=\"https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341\" title=\"EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-003</a> hafði Ísland sem EES-ríki ekki atkvæðisrétt um reglurnar sjálfar. Hvort eyjastaðan skapar raunverulegt «sérstöðu» umfram önnur lönd er matskenndt — Írland og Malta eru einnig eyjar innan ESB.",
       "supporting_evidence": [
         {
           "id": "ETS-DATA-002",
           "source_name": "Iceland Review; Carbon Pulse; European Commission",
           "source_url": "https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/"
+        },
+        {
+          "id": "EEA-LEGAL-022",
+          "source_name": "EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'",
+          "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
+        },
+        {
+          "id": "FISH-LEGAL-002",
+          "source_name": "Icelandic Act on the Exclusive Economic Zone No. 41/1979",
+          "source_url": "https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf"
         }
       ],
       "contradicting_evidence": [],
@@ -348,19 +369,24 @@
     {
       "claim_text": "Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra, varaði við því að erlend ríki reyndu að hafa afskipti af þjóðaratkvæðagreiðslunni þegar tilkynnt var um hana.",
       "original_quote": "Þegar tilkynnt var að þjóðaratkvæðagreiðsla um áframhaldandi viðræður við ESB myndi fara fram í ágúst sagði Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra, að búast mætti við því að erlend ríki reyndu að hafa afskipti af kosningunni.",
-      "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> staðfestir að utanríkisráðherra varaði við erlendum afskiptum af þjóðaratkvæðagreiðslunni og sagði slíkt yrði ekki liðið. Fullyrðingin segir þó að viðvörunin hafi komið «þegar tilkynnt var um hana» — samkvæmt <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> og <a href=\"https://www.althingi.is/\" title=\"Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-028</a> var þingsályktunartillagan lögð fram 7. mars og kynnt formlega 9. mars, og viðvörunin kom í umræðu á Alþingi, ekki endilega við fyrstu tilkynningu. Tímasetningin er ónákvæm, þótt efnislega sé rétt að ráðherrann hafi varað við erlendum afskiptum.",
-      "missing_context": "Viðvörunin beindist bæði að ESB og öðrum ríkjum, ekki eingöngu einu tilteknu ríki. Ekki kemur fram í heimildum hvaða tilefni ráðherra hafði fyrir viðvöruninni eða hvort einhver ríki höfðu reynt að hafa afskipti. Samkvæmt <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> eru umdeild atriði um málsmeðferð tillögunnar sem skipta máli fyrir samhengið.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> og <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> staðfesta beint að utanríkisráðherra Þorgerður Katrín Gunnarsdóttir varaði við erlendum afskiptum af þjóðaratkvæðagreiðslunni. <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> tilgreinir að hún sagði slík afskipti yrðu ekki liðin, hvort sem þau kæmu frá ESB eða öðrum ríkjum. <a href=\"https://www.althingi.is/\" title=\"Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-028</a> bætir við að þetta var hluti af ræðu hennar við kynningu þingsályktunartillögunnar á Alþingi 7.–9. mars 2026.",
+      "missing_context": "Fullyrðingin er staðreynd um yfirlýsingu ráðherra og er vel studd. Athuga ber þó að viðvörunin var hluti af pólitískri ræðu þar sem ráðherinn kynnti sjálf tillöguna, og andstæðingar gagnrýndu meðferð málsins (<a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a>). Viðvörunin um erlend afskipti er almennt orðuð og vísaði ekki í tiltekin ríki.",
       "supporting_evidence": [
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        },
         {
           "id": "SOV-PARL-005",
           "source_name": "Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)",
           "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
         },
         {
-          "id": "SOV-PARL-001",
-          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
-          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+          "id": "SOV-LEGAL-028",
+          "source_name": "Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24",
+          "source_url": "https://www.althingi.is/"
         }
       ],
       "contradicting_evidence": [],
@@ -427,8 +453,8 @@
       "claim_text": "Tillaga Þorgerðar Katrínar til þingsályktunar kveður skýrt á um næstu skref eftir þjóðaratkvæðagreiðslu.",
       "original_quote": "Lesi maður tillögu Þorgerðar til þingsályktunar stendur þar skýrt hver næstu skref eftir þjóðaratkvæðagreiðslu verða.",
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir að tillaga Þorgerðar Katrínar kveður á um þjóðaratkvæðagreiðslu 29. ágúst 2026 og nefnir að viðræður gætu hafist «um áramótin» ef já-hlið sigraði. <a href=\"https://www.althingi.is/altext/raeda/154/rad20230919T175556.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir (flutningsræða, 154. löggjafarþing); Logi Einarsson (flutningsræða, 153. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-004</a> sýnir að hugmyndin var þróuð yfir mörg þingmál. Hins vegar gagnrýndi stjórnarandstaðan einmitt skort á skýrleika: <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> lýsir andmælum við málsmeðferð og <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T175023.html\" title=\"Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-003</a> benti á að samningsmarkmið og skilyrði séu óskilgreind. Nýja heimildin <a href=\"https://www.althingi.is/\" title=\"Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-028</a> staðfestir málsmeðferðardeilur. Orðið «skýrt» er of sterkt — tillagan tilgreinir dagsetningu og spurningu en skilur samningsskilmála og forsendur eftir óskilgreinda.",
-      "missing_context": "Tillagan er ráðgefandi þjóðaratkvæðagreiðsla (<a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland), Articles 26, 65, 79; Althingi records on 2012 referendum follow-up\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-026</a>, <a href=\"https://www.althingi.is/lagas/nv/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79\" target=\"_blank\" rel=\"noopener\">SOV-DATA-002</a>) og bindur Alþingi ekki lagalega. Samningsskilmálar, tímarammi og viðmið fyrir aðildarskilyrði eru óskilgreind. Andstaðan telur að skýrleikinn dugi ekki án opinberrar samningsstefnu.",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir að þingsályktunartillagan kveður á um þjóðaratkvæðagreiðslu 29. ágúst 2026 og spurninguna um framhald aðildarviðræðna. Þorgerður Katrín lýsti næstu skrefum ef þjóðin samþykkir: viðræður gætu hafist «um áramótin». <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> sýnir þó að andstöðuflokkar gagnrýndu tillöguna einmitt fyrir skort á nánari útlistun samningsmarkmiða — Guðrún Hafsteinsdóttir (<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T175023.html\" title=\"Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-003</a>) sagði «algjört lágmark» að upplýsa þjóðina um markmið áður en umboð er veitt. Tillagan kveður á um atkvæðagreiðslu og tímalínu en er ekki ítarleg um samningsmarkmið eða aðra málaflokka.",
+      "missing_context": "Orðið «skýrt» í fullyrðingunni er umdeilanlegt — tillagan kveður á um dagsetningu og spurningarorðalag en andstöðuflokkar hafa einmitt gagnrýnt skort á skýrleika um efnisleg samningsmarkmið. Þjóðaratkvæðagreiðslan er ráðgefandi samkvæmt stjórnarskrá og ekki lagalega bindandi.",
       "supporting_evidence": [
         {
           "id": "SOV-PARL-001",
@@ -443,14 +469,14 @@
       ],
       "contradicting_evidence": [
         {
-          "id": "SOV-PARL-005",
-          "source_name": "Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)",
-          "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
-        },
-        {
           "id": "SOV-PARL-003",
           "source_name": "Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)",
           "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T175023.html"
+        },
+        {
+          "id": "SOV-PARL-005",
+          "source_name": "Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)",
+          "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
         }
       ],
       "category": "eea_eu_law",
@@ -532,8 +558,8 @@
       "claim_text": "Þorgerður Katrín hefur ekki svikið loforð um þjóðaratkvæðagreiðslu, að eigin sögn, ólíkt Sigmundi Davíð.",
       "original_quote": "Ég hef ekki svikið loforð um þjóðaratkvæðagreiðslu eins og þú",
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/154/rad20230919T175556.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir (flutningsræða, 154. löggjafarþing); Logi Einarsson (flutningsræða, 153. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-004</a> sýnir að Þorgerður Katrín hefur lagt fram tillögur um þjóðaratkvæðagreiðslu ítrekað — bæði 2023 og 2026 — og stendur nú við loforð sitt. <a href=\"https://www.opendemocracy.net/en/can-europe-make-it/democracy-on-ice-post-mortem-of-icelandic-constitution/\" title=\"Stjórnarskrárfélagið (Constitutional Society of Iceland); Alþingi parliamentary records; Thorvaldur Gylfason, 'Democracy on Ice' (openDemocracy, 2016)\" target=\"_blank\" rel=\"noopener\">SOV-HIST-001</a> staðfestir að ríkisstjórn Sigmundar Davíðs (2013–2016) lagði ráðgefandi þjóðaratkvæðagreiðslu 2012 um stjórnarskrá til hliðar. Þó snýst sú greiðsla um stjórnarskrármál, ekki ESB-aðild, svo samanburðurinn er ekki beinn.",
-      "missing_context": "Tilvísunin til «svikinna loforða» Sigmundar Davíðs vísar líklega til meðferðar stjórnarskráratkvæðagreiðslunnar 2012 (<a href=\"https://www.opendemocracy.net/en/can-europe-make-it/democracy-on-ice-post-mortem-of-icelandic-constitution/\" title=\"Stjórnarskrárfélagið (Constitutional Society of Iceland); Alþingi parliamentary records; Thorvaldur Gylfason, 'Democracy on Ice' (openDemocracy, 2016)\" target=\"_blank\" rel=\"noopener\">SOV-HIST-001</a>), en gæti einnig vísað til annarra loforða. Heimildir staðfesta ekki nákvæmlega hvaða loforð Þorgerður Katrín á við. Staðhæfingin er pólitískt mat beggja aðila.",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/154/rad20230919T175556.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir (flutningsræða, 154. löggjafarþing); Logi Einarsson (flutningsræða, 153. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-004</a> staðfestir að Þorgerður Katrín lagði fram þingsályktunartillögu um þjóðaratkvæðagreiðslu bæði 2023 og nú 2026, sem sýnir samkvæmni í baráttunni fyrir atkvæðagreiðslu. <a href=\"https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/\" title=\"Althingi records; coalition agreements 2009, 2013, 2017, 2021, 2024; Icelandic media archives\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-011</a> staðfestir að Sigmundur Davíð Gunnlaugsson og Sjálfstæðisflokkurinn drógu ESB-umsóknina til baka 2015 án þjóðaratkvæðagreiðslu, þvert á loforð. Fullyrðingin um að Þorgerður Katrín hafi «ekki svikið loforð» er þó matskennd — heimildir styðja ekki beina yfirlýsingu hennar þar sem hún ber sig saman við Sigmund Davíð í þessu samhengi.",
+      "missing_context": "Heimildir staðfesta ekki beint að Þorgerður Katrín hafi borið sig saman við Sigmund Davíð varðandi loforðahald. Samanburðurinn kann að vera réttur í efni en ekkert bendir til þess að þetta sé bein tilvitnun eða yfirlýsing frá henni. Sigmundur Davíð var forsætisráðherra þegar umsóknin var dregin til baka, en ákvarðanin var tekin af ríkisstjórninni í heild.",
       "supporting_evidence": [
         {
           "id": "SOV-PARL-004",
@@ -544,6 +570,11 @@
           "id": "SOV-PARL-001",
           "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
           "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        },
+        {
+          "id": "POLITICAL-DATA-011",
+          "source_name": "Althingi records; coalition agreements 2009, 2013, 2017, 2021, 2024; Icelandic media archives",
+          "source_url": "https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/"
         }
       ],
       "contradicting_evidence": [],
@@ -610,8 +641,8 @@
       "claim_text": "Í Brexit-þjóðaratkvæðagreiðslunni var niðurstaðan mjótt á munum en sú niðurstaða var virt.",
       "original_quote": "Við sáum í Brexit að það var mjótt á munum, en sú niðurstaða var virt.",
       "verdict": "partially_supported",
-      "explanation": "Engin heimild í þessari lotu fjallar beint um Brexit-þjóðaratkvæðagreiðsluna 23. júní 2016 eða niðurstöðu hennar (51,9% gegn 48,1%). SOV-DATA-022 fjallar um gildi ráðgefandi þjóðaratkvæðagreiðslna almennt og nefnir að pólitískt kostnaðarsamt sé að hunsa niðurstöðu, en beinist að Íslandi og Danmörku. Könnunarheimildirnar (<a href=\"https://www.visir.is/g/20262853438d/thridjungur-and-vigur-at-kvaeda-greidslunni\" title=\"Gallup Ísland / Vísir — EU referendum survey, March 2026\" target=\"_blank\" rel=\"noopener\">POLL-DATA-016</a>, <a href=\"https://www.gallup.is/frettir/nato-og-esb/\" title=\"Gallup Ísland — EU support by party affiliation (November 2025)\" target=\"_blank\" rel=\"noopener\">POLL-DATA-011</a>) fjalla um íslensku þjóðaratkvæðagreiðsluna. Þótt almennt þekkt sé að Brexit-niðurstaðan hafi verið mjótt á munum og hafi verið virt, vantar beinar heimildir í gagnagrunninn til að staðfesta eða hrekja fullyrðinguna að fullu.",
-      "missing_context": "Heimildir í þessari lotu ná ekki til Brexit-niðurstöðunnar sjálfrar. Brexit-atkvæðagreiðslan var ráðgefandi að formi en bresk stjórnvöld meðhöndluðu hana sem bindandi. Matið helst óbreytt sem «að hluta staðfest» vegna skorts á beinum heimildum.",
+      "explanation": "Engin heimild fjallar beint um Brexit-þjóðaratkvæðagreiðsluna 2016 eða niðurstöðu hennar (51,9% gegn 48,1%). Heimildir snúa mest að íslensku könnunum og flokkaskilagreiningum. SOV-DATA-022 fjallar um fordæmi ráðgefandi þjóðaratkvæðagreiðslna á Íslandi og nefnir að niðurstöður slíkra atkvæðagreiðslna hafi almennt verið virtar, en nefnir ekki Brexit sérstaklega. Grundvallarforsenda fullyrðingarinnar — að Brexit hafi verið mjótt á munum — er vel þekkt staðreynd, og niðurstaðan var framfylgt, en engar heimildir í gagnagrunninum staðfesta þetta beint.",
+      "missing_context": "Engin heimild í gagnagrunninum fjallar beint um Brexit-þjóðaratkvæðagreiðsluna 2016 eða niðurstöðu hennar. Fullyrðingin er almenn vitneskja en ekki staðfest af heimildum hér. Aðrar heimildir fjalla um íslensku þjóðaratkvæðagreiðsluna 2026, ekki bresku.",
       "supporting_evidence": [],
       "contradicting_evidence": [],
       "category": "precedents",
@@ -838,8 +869,8 @@
       "claim_text": "Þorgerður Katrín kynnti bandarískum ráðamönnum að þjóðaratkvæðagreiðslan snúist um að tryggja efnahagslegar varnir og öryggi fjölskyldna, heimila og íslenskra fyrirtækja",
       "original_quote": "Ég greindi þeim frá því að þetta væri í höndum íslensku þjóðarinnar að taka ákvörðun um þetta skref og að það væri ekki síst til þess að tryggja efnahagslegar varnir og öryggi fjölskyldna, heimila og íslenskra fyrirtækja þegar heimurinn er að breytast svona í viðskiptum og tollar eru lagðir á vestan hafs sem austan",
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir að Þorgerður Katrín hafi rökstutt þjóðaratkvæðagreiðsluna sem fullveldismál og lagt áherslu á verndun íslenskra hagsmuna. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T162602.html\" title=\"Alþingi — Kristrún Frostadóttir, forsætisráðherra (andsvar, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">PARTY-PARL-001</a> sýnir að forsætisráðherra hafi einnig talað um «grundvallarprinsipp» varðandi orku og sjávarútveg. Efnislegt innihald um efnahagslegan ávinning og öryggi samræmist ræðum hennar á Alþingi. Fullyrðingin vísar aftur á móti sérstaklega til kynningar fyrir bandarískum ráðamönnum — þetta samhengi er ekki staðfest í neinum heimildum.",
-      "missing_context": "Engin heimild staðfestir fund með bandarískum ráðamönnum eða hvaða rök voru höfð uppi þar. <a href=\"https://www.reuters.com/world/\" title=\"Multiple news sources — Reuters, AP, BBC coverage of Trump Greenland statements (2025)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-011</a> um Trump og Grænland gefur pólitískt baksvið en staðfestir ekki fundinn. Fullyrðingin tengir saman efnahagsleg rök og öryggisrök á hátt sem er þekktur úr innlendri umræðu en ekki sannreyndur í alþjóðlegu samhengi.",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir að Þorgerður Katrín hafi lagt áherslu á fullveldi og hagsmunagæslu í flutningsræðu sinni á Alþingi, þar á meðal yfirlýsinguna um að hún myndi aldrei undirrita samning sem tryggði ekki «okkar markmið og okkar yfirráð». <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T162602.html\" title=\"Alþingi — Kristrún Frostadóttir, forsætisráðherra (andsvar, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">PARTY-PARL-001</a> sýnir svipaðan tón frá forsætisráðherra um «grundvallarprinsipp» varðandi orku og sjávarútveg. Hins vegar staðfestir engin heimild beint að Þorgerður Katrín hafi kynnt þetta efni fyrir bandarískum ráðamönnum — heimildir lýsa ræðum á Alþingi, ekki fundum með erlendum stjórnvöldum. Orðalagið um «efnahagslegar varnir og öryggi fjölskyldna» er ekki staðfest orðrétt.",
+      "missing_context": "Heimildir staðfesta ræðu Þorgerðar Katrínar á Alþingi en ekki fund hennar með bandarískum ráðamönnum. Nákvæmt orðalag um «efnahagslegar varnir og öryggi fjölskyldna, heimila og íslenskra fyrirtækja» er ekki í neinum heimild. Samhengið — hvort þetta var ávarp, viðtal eða formlegur fundur — er óljóst.",
       "supporting_evidence": [
         {
           "id": "SOV-PARL-001",
@@ -988,8 +1019,8 @@
       "claim_text": "Þorgerður Katrín kynnti bandarískum ráðamönnum að ESB-aðildarviðræður Íslands séu fullveldismál þar sem Ísland eitt tekur ákvörðunina",
       "original_quote": "Þeir átta sig á að þetta er okkar fullveldi og við erum að nýta það á þennan hátt",
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir að Þorgerður Katrín hafi lagt áherslu á fullveldi í tengslum við ESB-viðræður og lýst yfir að hún myndi aldrei skrifa undir samning sem tryggði ekki «okkar markmið og okkar yfirráð». Þetta samræmist efnislega fullyrðingunni um fullveldisrökin. Fullyrðingin vísar hins vegar sérstaklega til fundar með bandarískum ráðamönnum — engin heimild staðfestir slíkan fund eða hvað þar var sagt. Efnislegt innihald er stutt en samhengið er ósannreynanlegt.",
-      "missing_context": "Engin heimild staðfestir fund Þorgerðar Katrínar með bandarískum ráðamönnum eða hvað þar var rætt. <a href=\"https://www.reuters.com/world/\" title=\"Multiple news sources — Reuters, AP, BBC coverage of Trump Greenland statements (2025)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-011</a> fjallar um áhuga Trump á Grænlandi og aukna þýðingu Norðurslóða, sem gefur samhengi en staðfestir ekki fundinn. Fullyrðingin er háð ósannreynanlegu samhengi.",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir að Þorgerður Katrín hafi innrammað þjóðaratkvæðagreiðsluna sem fullveldismál og sagt að þjóðin taki ákvörðunina sjálf. Hún sagði m.a.: «Ég mun aldrei skrifa undir samning sem tryggir ekki okkar markmið og okkar yfirráð.» Engin heimild staðfestir hins vegar beint að hún hafi kynnt þetta sjónarmið fyrir bandarískum ráðamönnum. Allar heimildir um yfirlýsingar Þorgerðar Katrínar eru frá Alþingi og þingræðum, ekki frá viðræðum við erlend stjórnvöld.",
+      "missing_context": "Lykilatriðið — að þetta hafi verið kynnt «bandarískum ráðamönnum» — er ósannað í heimildum. Staðreyndagrunnurinn inniheldur aðeins ræður af Alþingi og opinberar heimildir, ekki upplýsingar um tvíhliða viðræður Íslands og Bandaríkjanna. Fullyrðingin er «partially_supported» einungis vegna þess að efni sannarkenningarinnar (fullveldisröksemdin) er staðfest, en samhengið (viðræður við Bandaríkin) er ósannanlegt.",
       "supporting_evidence": [
         {
           "id": "SOV-PARL-001",
@@ -1045,8 +1076,8 @@
       "claim_text": "Utanríkisráðherra Þorgerður Katrín Gunnarsdóttir ítrekaði í flutningsræðu sinni um þingsályktunartillöguna á Alþingi á mánudaginn að fólk þurfi ekki allar upplýsingar um ESB",
       "original_quote": "þegar Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra, ítrekaði þetta í flutningsræðu sinni um þingsályktunartillöguna á Alþingi á mánudaginn",
       "verdict": "unverifiable",
-      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> lýsir flutningsræðu Þorgerðar Katrínar á Alþingi þar sem hún rökstuddi þjóðaratkvæðagreiðsluna, en inniheldur ekki tilvitnun í að fólk «þurfi ekki allar upplýsingar um ESB». Ræðan fjallaði um fullveldi, söguleg fordæmi og sjávarútveg. <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> nefnir afstöðu ráðherra um að þjóðaratkvæðagreiðslan sjálf sé öflugri lýðræðisæfing en nefndarfundir, en það jafngildir ekki fullyrðingunni. Engin heimild staðfestir eða hafnar nákvæmu orðalagi fullyrðingarinnar.",
-      "missing_context": "Fullyrðingin útheimtir bein orð utanríkisráðherra sem engin heimild í gagnagrunninum inniheldur. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> tekur saman flutningsræðuna en nær ekki yfir öll orð hennar. Mögulegt er að yfirlýsingin hafi komið fram í öðru samhengi sem ekki er skráð.",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> lýsir flutningsræðu Þorgerðar Katrínar um þingsályktunartillöguna ítarlega, þar á meðal yfirlýsingum hennar um fullveldi, sjávarútveg og fordæmi. Engin heimild vitnar þó í yfirlýsingu þar sem hún segir að fólk þurfi ekki allar upplýsingar um ESB. Ræðan fjallaði um rétt þjóðarinnar til að ákveða, söguleg fordæmi og loforð um vernd auðlinda. <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> fjallar um andmæli stjórnarandstöðunnar við upplýsingagjöf en staðfestir ekki orðalag fullyrðingarinnar.",
+      "missing_context": "Fullyrðingin vísar í tiltekið orðalag úr flutningsræðunni sem engin heimild staðfestir. Mögulegt er að orðin hafi verið tekin úr samhengi eða séu túlkun á öðru orðalagi ráðherrans. Til að meta þetta þyrfti orðrétt tilvitnun úr ræðunni.",
       "supporting_evidence": [],
       "contradicting_evidence": [],
       "category": "party_positions",
@@ -1109,6 +1140,477 @@
       "article_date": "2026-03-13"
     },
     {
+      "claim_text": "Utanríkisráðherra Þorgerður Katrín einkennir þjóðaratkvæðagreiðsluna sem tækifæri til að «kíkja í pakkann» og «skoða hvað býðst».",
+      "original_quote": "heldur því fram að þjóðaratkvæðagreiðslan snúist um að «kíkja í pakkann», «skoða hvað býðst»",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir að Þorgerður Katrín setti þjóðaratkvæðagreiðsluna fram sem tækifæri til að kanna möguleika, þ.m.t. loforð um að skrifa aldrei undir samning sem tryggði ekki markmið Íslands. Nákvæm orðanotkun hennar um að «kíkja í pakkann» kemur hins vegar ekki beint fram í þeim heimildum sem liggja fyrir. Hin pólitíska rammasetning hennar um atkvæðagreiðsluna sem fullveldisákvörðun er vel skráð.",
+      "missing_context": "Gagnrýnendur hafa bent á að aðildarviðræður eru vel skilgreint ferli um innleiðingu regluverks, ekki opnar viðræður um hvað verði «í boði» (<a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a>, <a href=\"https://link.springer.com/book/10.1057/9780230510302\" title=\"Grabbe, H. (2006) 'The EU's Transformative Power: Europeanization Through Conditionality in Central and Eastern Europe', Palgrave Macmillan\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-016</a>). Lýsingin á ferlinu sem könnunarferð gæti gefið ranga mynd af eðli aðildarviðræðna.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        },
+        {
+          "id": "SOV-PARL-004",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir (flutningsræða, 154. löggjafarþing); Logi Einarsson (flutningsræða, 153. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/154/rad20230919T175556.html"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "party_positions",
+      "attribution": "quoted",
+      "article_slug": "thorgerdur-katrin-treystir-ekki-thjodinni",
+      "article_title": "Þorgerður Katrín treystir ekki þjóðinni",
+      "article_source": "Vísir",
+      "article_date": "2026-03-13"
+    },
+    {
+      "claim_text": "Þorgerður Katrín Gunnarsdóttir utanríkisráðherra sagði í viðtali við Politico að ef aðildarviðræður við ESB verði teknar upp á ný gæti þeim lokið innan eins og hálfs árs.",
+      "original_quote": "Í viðtali við Politico í vikunni sagði Þorgerður að ef aðildarviðræður við Evrópusambandið verði teknar upp á ný gæti þeim lokið innan eins og hálfs árs.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að Þorgerður Katrín hefur lagt fram tillögu um þjóðaratkvæðagreiðslu og talað um hraðar viðræður. Samkvæmt <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> sagði hún í flutningsræðu sinni á Alþingi að viðræður gætu hafist «um áramót» ef þjóðin samþykkti. Hins vegar talar <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — Steps towards joining; DG NEAR accession negotiation methodology\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-013</a> um að aðildarviðræður taki yfirleitt 5-10 ár, þótt Austurríki hafi lokið þeim á um þremur árum. Fullyrðingin segir viðræðum geti «lokið» á 18 mánuðum, en heimildir í staðreyndagrunni staðfesta ekki beinlínis yfirlýsingu í Politico-viðtalinu — aðeins sambærilegar yfirlýsingar á Alþingi.",
+      "missing_context": "Aðildarviðræður taka yfirleitt 5-10 ár samkvæmt <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — Steps towards joining; DG NEAR accession negotiation methodology\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-013</a>, þótt fordæmi séu fyrir styttri viðræðum (Austurríki ~3 ár). Tímaáætlun utanríkisráðherra er pólitískt mat, ekki formleg niðurstaða samtala við ESB. Heimildir staðreyndagrunns ná aðeins til Alþingisræðna, ekki Politico-viðtalsins sjálfs.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        },
+        {
+          "id": "SOV-PARL-004",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir (flutningsræða, 154. löggjafarþing); Logi Einarsson (flutningsræða, 153. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/154/rad20230919T175556.html"
+        },
+        {
+          "id": "POLITICAL-DATA-004",
+          "source_name": "Althingi — Session 157; Viðreisn party platform",
+          "source_url": "https://www.althingi.is/thingmenn/thingflokkar/vidreisn/"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "EEA-LEGAL-013",
+          "source_name": "European Commission — Steps towards joining; DG NEAR accession negotiation methodology",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        }
+      ],
+      "category": "sovereignty",
+      "attribution": "quoted",
+      "article_slug": "18-manudirnir-byggja-ekki-a-formlegum-samtolum",
+      "article_title": "18 mánuðirnir byggja ekki á formlegum samtölum",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-13"
+    },
+    {
+      "claim_text": "Tímalínan um 18 mánaða aðildarviðræður byggir ekki á formlegum samtölum við ESB heldur er persónulegt pólitískt mat utanríkisráðherra.",
+      "original_quote": "«Ekki formlega, þetta er bara mitt mat á því. Maður er að sjá heimsmyndina þróast og hvernig Evrópusambandið er svolítið að breyta sjálfu sér og taka tillit til ytri aðstæðna sem eru í dag.»",
+      "verdict": "supported",
+      "explanation": "Tilvitnunin sjálf staðfestir að ráðherrann viðurkennir að þetta sé hennar eigið mat, ekki byggt á formlegum samtölum. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> sýnir að í Alþingisræðu sinni notaði hún orðalag eins og viðræður gætu hafist «um áramót» — sem er metið sem pólitísk bjartsýni. Heimildir <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — Steps towards joining; DG NEAR accession negotiation methodology\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-013</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> staðfesta að aðildarviðræður fylgja formgerðu ferli sem stýrt er af framkvæmdastjórn ESB, og engin formleg yfirlýsing frá ESB um styttri tímalínu liggur fyrir í gögnum staðreyndagrunnsins.",
+      "missing_context": "Staðreyndagrunnurinn inniheldur ekki efni úr Politico-viðtalinu sjálfu. Athygli vekur þó að fullyrðingin er í samræmi við fyrirvarann í <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> um að tímaáætlunin sé «aspirational».",
+      "supporting_evidence": [
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        },
+        {
+          "id": "EEA-LEGAL-013",
+          "source_name": "European Commission — Steps towards joining; DG NEAR accession negotiation methodology",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        },
+        {
+          "id": "EEA-LEGAL-021",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "sovereignty",
+      "attribution": "quoted",
+      "article_slug": "18-manudirnir-byggja-ekki-a-formlegum-samtolum",
+      "article_title": "18 mánuðirnir byggja ekki á formlegum samtölum",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-13"
+    },
+    {
+      "claim_text": "Ísland er í allt annarri stöðu en mörg þau ríki sem áður hafa gengið í ESB, meðal annars vegna EES-samstarfsins.",
+      "original_quote": "«Við uppfyllum auðvitað mjög stóran part í gegnum EES-samstarfið. Við erum á allt öðrum stað heldur en til að mynda ríki eins og Króatía og Slóvenía þegar þau fóru í þetta ferli,»",
+      "verdict": "supported",
+      "explanation": "Heimildir staðfesta þetta í meginatriðum. <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf\" title=\"EEA Agreement — Protocol 3 on trade in processed agricultural products\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-002</a> sýnir að Ísland hefur þegar tollafrjálsan aðgang að innri markaðnum fyrir flestar vörur í gegnum EES. <a href=\"https://island.is/en/o/directorate-of-immigration\" title=\"EFTA Surveillance Authority — EEA Agreement provisions; Útlendingastofnun (Directorate of Immigration)\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-001</a> bendir á að frjáls för launafólks er þegar tryggð. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:21999A0710(02)\" title=\"Schengen Association Agreement with Iceland and Norway (2001)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-004</a> staðfestir Schengen-aðild og <a href=\"https://www.efta.int/eea/eea-agreement/annex-iv\" title=\"EFTA Secretariat — EEA Agreement Annex IV (Energy); Althingi EU Assessment Committee\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-001</a> staðfestir innleiðingu á stórum hluta orkureglna ESB. Þetta undirstrikar að staðan er grundvallarlega önnur en Króatíu og Slóveníu sem höfðu enga slíka samþættingu við upphaf viðræðna.",
+      "missing_context": "Þrátt fyrir EES-samþættingu eru lykilsvið utan samningsins: sjávarútvegur, landbúnaður og gjaldmiðilsstefna. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); OECD Economic Surveys: Iceland 2021\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-019</a> bendir á að landbúnaður krefjist «heildarendurskipulagningar» við aðild. Ísland er því á öðrum stað hvað varðar innri markaðinn, en ekki endilega hvað varðar erfiðustu viðræðukaflana.",
+      "supporting_evidence": [
+        {
+          "id": "TRADE-DATA-002",
+          "source_name": "EEA Agreement — Protocol 3 on trade in processed agricultural products",
+          "source_url": "https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf"
+        },
+        {
+          "id": "LABOUR-DATA-001",
+          "source_name": "EFTA Surveillance Authority — EEA Agreement provisions; Útlendingastofnun (Directorate of Immigration)",
+          "source_url": "https://island.is/en/o/directorate-of-immigration"
+        },
+        {
+          "id": "EEA-LEGAL-004",
+          "source_name": "Schengen Association Agreement with Iceland and Norway (2001)",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:21999A0710(02)"
+        },
+        {
+          "id": "ENERGY-LEGAL-001",
+          "source_name": "EFTA Secretariat — EEA Agreement Annex IV (Energy); Althingi EU Assessment Committee",
+          "source_url": "https://www.efta.int/eea/eea-agreement/annex-iv"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "quoted",
+      "article_slug": "18-manudirnir-byggja-ekki-a-formlegum-samtolum",
+      "article_title": "18 mánuðirnir byggja ekki á formlegum samtölum",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-13"
+    },
+    {
+      "claim_text": "Ísland uppfyllir mjög stóran hluta af kröfum ESB-aðildar í gegnum EES-samstarfið.",
+      "original_quote": "«Við uppfyllum auðvitað mjög stóran part í gegnum EES-samstarfið.»",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að EES-samningurinn tryggir verulega samþættingu við regluverkið. <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf\" title=\"EEA Agreement — Protocol 3 on trade in processed agricultural products\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-002</a> sýnir tollafrjálsan aðgang fyrir flestar vörur, <a href=\"https://www.efta.int/eea/eea-agreement/annex-iv\" title=\"EFTA Secretariat — EEA Agreement Annex IV (Energy); Althingi EU Assessment Committee\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-001</a> staðfestir innleiðingu orkuregluverks og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:21999A0710(02)\" title=\"Schengen Association Agreement with Iceland and Norway (2001)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-004</a> Schengen-aðild. Þó vantar mikilvægt samhengi — orðalagið «mjög stóran part» getur gefið of víða mynd. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); OECD Economic Surveys: Iceland 2021\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-019</a> sýnir að landbúnaðar-, sjávarútvegs- og gjaldmiðilsstefna falla alfarið utan EES, og þetta eru einmitt erfiðustu viðræðukaflarnir.",
+      "missing_context": "EES-samningurinn nær ekki til sameiginlegrar sjávarútvegsstefnu, sameiginlegrar landbúnaðarstefnu, tollabandalags, gjaldmiðilsstefnu eða dómsvaldssviðs ESB-dómstólsins. Þessir þættir krefjast grundvallarbreytinga við aðild. Einnig er eftirálag (backlog) í innleiðingu EES-gerða sem takmarkar hversu «uppfyllt» kerfið er á hverjum tíma (sbr. <a href=\"https://www.efta.int/eea/eea-agreement/annex-iv\" title=\"EFTA Secretariat — EEA Agreement Annex IV (Energy); Althingi EU Assessment Committee\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-001</a>).",
+      "supporting_evidence": [
+        {
+          "id": "TRADE-DATA-002",
+          "source_name": "EEA Agreement — Protocol 3 on trade in processed agricultural products",
+          "source_url": "https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf"
+        },
+        {
+          "id": "ENERGY-LEGAL-001",
+          "source_name": "EFTA Secretariat — EEA Agreement Annex IV (Energy); Althingi EU Assessment Committee",
+          "source_url": "https://www.efta.int/eea/eea-agreement/annex-iv"
+        },
+        {
+          "id": "ENERGY-LEGAL-002",
+          "source_name": "Umhverfisstofnun — Iceland's participation in EU ETS; European Commission — EU ETS data",
+          "source_url": "https://ust.is/loft/losunarvottord/"
+        },
+        {
+          "id": "EEA-LEGAL-004",
+          "source_name": "Schengen Association Agreement with Iceland and Norway (2001)",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:21999A0710(02)"
+        },
+        {
+          "id": "LABOUR-DATA-001",
+          "source_name": "EFTA Surveillance Authority — EEA Agreement provisions; Útlendingastofnun (Directorate of Immigration)",
+          "source_url": "https://island.is/en/o/directorate-of-immigration"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "quoted",
+      "article_slug": "18-manudirnir-byggja-ekki-a-formlegum-samtolum",
+      "article_title": "18 mánuðirnir byggja ekki á formlegum samtölum",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-13"
+    },
+    {
+      "claim_text": "Það sem muni taka mestan tíma í mögulegum aðildarviðræðum er áhersla Íslands á auðlindir og fiskveiðar.",
+      "original_quote": "Hún bætir við að það sem muni taka mestan tíma í mögulegum aðildarviðræðum sé áhersla Íslands á auðlindir og fiskveiðar.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13\" target=\"_blank\" rel=\"noopener\">EEA-DATA-004</a> staðfestir beint að 13. kafli (sjávarútvegur) var umdeildasti kaflinn í aðildarviðræðum 2010-2013. Sameiginleg sjávarútvegsstefna ESB krefst kvótadeilingar sem stangast á við íslenska ITQ-kerfið. <a href=\"https://island.is/en/permits-to-fish/quota-system\" title=\"Ministry of Food, Agriculture and Fisheries — Fisheries Management in Iceland; Marine and Freshwater Research Institute\" target=\"_blank\" rel=\"noopener\">FISH-DATA-022</a> leggur áherslu á verðmæti kvótanna — um 1.500 milljarðar króna — og <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> staðfestir niðurstöðu Hagfræðistofnunar um að varanlegar undanþágur frá sjávarútvegsstefnunni séu ólíklegar. Viðræðunum var frestað áður en erfiðustu kaflarnir voru leystir.",
+      "missing_context": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); OECD Economic Surveys: Iceland 2021\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-019</a> bendir á að landbúnaður krefjist einnig umfangsmikilla breytinga, þótt hann sé minni hluti hagkerfisins. Hlutdeild sjávarútvegs í VLF hefur minnkað (úr 12% árið 2005 í um 8% árið 2024 samkvæmt <a href=\"https://www.statice.is/statistics/economy/national-accounts/\" title=\"Statistics Iceland — National accounts by activity\" target=\"_blank\" rel=\"noopener\">FISH-DATA-003</a>), en pólitískt og hagrænt vægi hans er enn mjög mikið, sérstaklega í sjávarplássum.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-DATA-004",
+          "source_name": "Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "FISH-DATA-022",
+          "source_name": "Ministry of Food, Agriculture and Fisheries — Fisheries Management in Iceland; Marine and Freshwater Research Institute",
+          "source_url": "https://island.is/en/permits-to-fish/quota-system"
+        },
+        {
+          "id": "EEA-DATA-014",
+          "source_name": "Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)",
+          "source_url": "https://ioes.hi.is/en/institute-economic-studies"
+        },
+        {
+          "id": "POL-DATA-014",
+          "source_name": "LÍÚ — Position paper on EU membership (2025); campaign finance declarations",
+          "source_url": null
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "fisheries",
+      "attribution": "paraphrased",
+      "article_slug": "18-manudirnir-byggja-ekki-a-formlegum-samtolum",
+      "article_title": "18 mánuðirnir byggja ekki á formlegum samtölum",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-13"
+    },
+    {
+      "claim_text": "Ísland byggir stóran hluta af tekjum sínum á fiskveiðum.",
+      "original_quote": "«Við erum ríki sem að byggir meðal annars stóran hluta af okkar tekjum í gegnum fiskveiðar»",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.statice.is/statistics/economy/national-accounts/\" title=\"Statistics Iceland — National accounts by activity\" target=\"_blank\" rel=\"noopener\">FISH-DATA-003</a> sýnir að fiskveiðar og fiskvinnsla standa saman undir um 8% af VLF og hlutfallið hefur minnkað jafnt og þétt — úr 16% árið 1990 og 12% árið 2005. Sjávarútvegur er 35-40% af vöruútflutningi samkvæmt <a href=\"https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a>, sem er verulegur hluti. Orðalagið «stóran hluta af tekjum» er þó eitthvað vítt — 8% af VLF er mikilvægt en getur varla talist «stór hluti» í hefðbundnum skilningi. Þegar óbein áhrif og útflutningshlutdeild eru talin með verður myndin sterkari.",
+      "missing_context": "Hlutfall sjávarútvegs í VLF hefur minnkað verulega undanfarna áratugi. <a href=\"https://www.statice.is/statistics/economy/national-accounts/\" title=\"Statistics Iceland — National accounts by activity\" target=\"_blank\" rel=\"noopener\">FISH-DATA-003</a> nefnir margföldunaráhrif (1,5-2,0) sem gefa víðtækari mynd af efnahagslegu vægi. Samanburður á milli þjóða í <a href=\"https://ec.europa.eu/eurostat/databrowser/view/FISH_CA_MAIN/default/table?lang=en\" title=\"Eurostat — Fisheries statistics (fish_ca_main); Hagstofa Íslands\" target=\"_blank\" rel=\"noopener\">FISH-DATA-021</a> — 2.800 kg á mann á Íslandi á móti 9 kg meðaltal ESB — undirstrikar sérkenni landsins, en «tekjur» og «aflamagn» eru ólík mæligildi.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-DATA-003",
+          "source_name": "Statistics Iceland — National accounts by activity",
+          "source_url": "https://www.statice.is/statistics/economy/national-accounts/"
+        },
+        {
+          "id": "FISH-DATA-024",
+          "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
+          "source_url": "https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda"
+        },
+        {
+          "id": "FISH-DATA-021",
+          "source_name": "Eurostat — Fisheries statistics (fish_ca_main); Hagstofa Íslands",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/FISH_CA_MAIN/default/table?lang=en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "fisheries",
+      "attribution": "quoted",
+      "article_slug": "18-manudirnir-byggja-ekki-a-formlegum-samtolum",
+      "article_title": "18 mánuðirnir byggja ekki á formlegum samtölum",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-13"
+    },
+    {
+      "claim_text": "Ísland hefur haft sterka stjórn á sjávarútvegi og fiskveiðiauðlindum.",
+      "original_quote": "«við höfum haft sterka stjórn á sjávarútvegi og fiskveiðiauðlindum»",
+      "verdict": "supported",
+      "explanation": "Heimildir styðja þessa fullyrðingu. <a href=\"https://oceans-and-fisheries.ec.europa.eu/fisheries/common-fisheries-policy_en\" title=\"European Commission — Communication on the Common Fisheries Policy (2024); STECF stock assessments\" target=\"_blank\" rel=\"noopener\">FISH-COMP-003</a> nefnir að íslensk stofnastjórnun hafi almennt verið sterk og þorskstofninn náð sér vel á hendur undir ITQ-kerfinu. <a href=\"https://island.is/en/permits-to-fish/quota-system\" title=\"Ministry of Food, Agriculture and Fisheries — Fisheries Management in Iceland; Marine and Freshwater Research Institute\" target=\"_blank\" rel=\"noopener\">FISH-DATA-022</a> lýsir kerfinu sem einu farsælasta fiskveiðistjórnunarkerfi heims — það hefur dregið úr offjárfestingu í flotanum og stuðlað að sjálfbæru nýtingarstigi. Afli Íslands er sá næststærsti í Evrópu samkvæmt <a href=\"https://ec.europa.eu/eurostat/databrowser/view/FISH_CA_MAIN/default/table?lang=en\" title=\"Eurostat — Fisheries statistics (fish_ca_main); Hagstofa Íslands\" target=\"_blank\" rel=\"noopener\">FISH-DATA-021</a>, sem endurspeglar markvisst fiskveiðistjórnunarkerfi.",
+      "missing_context": "ITQ-kerfið hefur sætt gagnrýni vegna samþjöppunar kvóta í fárra höndum, eins og <a href=\"https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> lýsir. Einnig bendir <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development\" title=\"European Parliament Research Service — Fisheries Ownership and Concentration in the EU\" target=\"_blank\" rel=\"noopener\">FISH-DATA-029</a> á að svipuð samþjöppun eigi sér stað innan ESB. «Sterk stjórn» er rétt hvað varðar fiskistofna, en gagnrýnendur benda á að kerfið hafi ekki tryggt sanngjarna skiptingu arðsins.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-DATA-022",
+          "source_name": "Ministry of Food, Agriculture and Fisheries — Fisheries Management in Iceland; Marine and Freshwater Research Institute",
+          "source_url": "https://island.is/en/permits-to-fish/quota-system"
+        },
+        {
+          "id": "FISH-COMP-003",
+          "source_name": "European Commission — Communication on the Common Fisheries Policy (2024); STECF stock assessments",
+          "source_url": "https://oceans-and-fisheries.ec.europa.eu/fisheries/common-fisheries-policy_en"
+        },
+        {
+          "id": "FISH-DATA-021",
+          "source_name": "Eurostat — Fisheries statistics (fish_ca_main); Hagstofa Íslands",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/FISH_CA_MAIN/default/table?lang=en"
+        },
+        {
+          "id": "FISH-DATA-024",
+          "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
+          "source_url": "https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "fisheries",
+      "attribution": "quoted",
+      "article_slug": "18-manudirnir-byggja-ekki-a-formlegum-samtolum",
+      "article_title": "18 mánuðirnir byggja ekki á formlegum samtölum",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-13"
+    },
+    {
+      "claim_text": "Þjóðin fékk í fyrsta sinn réttlátan arð af fiskveiðiauðlindum síðasta sumar (2025).",
+      "original_quote": "«þó að það hafi ekki verið fyrr en síðasta sumar að þjóðin fékk í fyrsta sinn réttlátan arð.»",
+      "verdict": "unverifiable",
+      "explanation": "<a href=\"https://www.government.is/topics/food-fisheries-and-agriculture/fisheries-in-iceland/\" title=\"Icelandic Ministry of Food, Agriculture and Fisheries — Veiðigjald\" target=\"_blank\" rel=\"noopener\">FISH-DATA-008</a> staðfestir að veiðigjald er lagt á kvótaeigendur og nam um 6,5 milljörðum króna árið 2024, en nefnir jafnframt að upphæðin sé «lítill hluti» (undir 5%) af áætluðum auðlindaarði greinarinnar. Heimildir í staðreyndagrunni staðfesta ekki sérstaklega að nýjar lagabreytingar hafi verið samþykktar sumarið 2025 eða hvort hugtakið «réttlátur arður» hafi verið skilgreint formlega á þeim tíma. Fullyrðingin byggir á pólitísku mati á lagabreytingu sem staðreyndagrunnurinn nær ekki til.",
+      "missing_context": "Hvað teljist «réttlátur arður» er pólitískt deilu- og skilgreiningarmál. <a href=\"https://www.government.is/topics/food-fisheries-and-agriculture/fisheries-in-iceland/\" title=\"Icelandic Ministry of Food, Agriculture and Fisheries — Veiðigjald\" target=\"_blank\" rel=\"noopener\">FISH-DATA-008</a> sýnir að veiðigjaldið var lengi talið of lágt miðað við auðlindaarðinn. Staðreyndagrunnurinn inniheldur ekki upplýsingar um ný lög eða reglugerðir frá sumri 2025 sem tengist hugtakinu «réttlátur arður».",
+      "supporting_evidence": [
+        {
+          "id": "FISH-DATA-008",
+          "source_name": "Icelandic Ministry of Food, Agriculture and Fisheries — Veiðigjald",
+          "source_url": "https://www.government.is/topics/food-fisheries-and-agriculture/fisheries-in-iceland/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "fisheries",
+      "attribution": "quoted",
+      "article_slug": "18-manudirnir-byggja-ekki-a-formlegum-samtolum",
+      "article_title": "18 mánuðirnir byggja ekki á formlegum samtölum",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-13"
+    },
+    {
+      "claim_text": "Sumir telja að aðildarviðræður taki nokkur ár en utanríkisráðherra telur þær geta farið hraðar.",
+      "original_quote": "«Sumir segja að þetta taki nokkur ár, aðrir, og þar á meðal ég eftir þessi samskipti öll, tel að það sé hægt að gera þetta tiltölulega hratt í alþjóðlegu samhengi,»",
+      "verdict": "supported",
+      "explanation": "Fullyrðingin lýsir réttilega skoðanaáliti — sumir telja viðræður taki nokkur ár, meðan ráðherrann telur þær geti gengið hraðar. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — Steps towards joining; DG NEAR accession negotiation methodology\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-013</a> staðfestir að viðræður taki venjulega 5-10 ár en geti verið styttri (Austurríki ~3 ár). <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> sýnir að Þorgerður Katrín hefur á Alþingi talað um hraða tímalínu. Þetta er lýsandi fullyrðing um ólík sjónarmið og heimildir styðja bæði hliðarnar sem nefndar eru.",
+      "missing_context": "Tímalengd viðræðna ræðst af mörgum þáttum — EES-samþættingin gæti stytt ferlið, en sjávarútvegur og landbúnaður eru utan EES og krefjast samningaviðræðna frá grunni. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — Steps towards joining; DG NEAR accession negotiation methodology\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-013</a> bendir á að Ísland náði hraðri framvindu 2010-2013 vegna EES en viðræðum var frestað áður en erfiðustu kaflarnir voru kláraðir.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-013",
+          "source_name": "European Commission — Steps towards joining; DG NEAR accession negotiation methodology",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        },
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "sovereignty",
+      "attribution": "quoted",
+      "article_slug": "18-manudirnir-byggja-ekki-a-formlegum-samtolum",
+      "article_title": "18 mánuðirnir byggja ekki á formlegum samtölum",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-13"
+    },
+    {
+      "claim_text": "Ísland er öðruvísi en önnur ríki sem sótt hafa um ESB-aðild, sérstaklega hvað varðar fiskveiðar og auðlindir.",
+      "original_quote": "«Þar verður Evrópusambandið einfaldlega að skilja að við erum öðruvísi heldur en önnur ríki sem hafa sótt um hjá Evrópusambandinu.»",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://ec.europa.eu/eurostat/databrowser/view/FISH_CA_MAIN/default/table?lang=en\" title=\"Eurostat — Fisheries statistics (fish_ca_main); Hagstofa Íslands\" target=\"_blank\" rel=\"noopener\">FISH-DATA-021</a> sýnir að Ísland er næststærsta fiskveiðiþjóð Evrópu, með 2.800 kg á mann á ári samanborið við 9 kg meðaltal ESB. Enginn umsækjandi um ESB-aðild hefur verið jafn háður sjávarútvegi. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> lýsir Íslandi sem «auðveldum» umsækjanda vegna EES-samþættingar, en einnig mjög smáu ríki þar sem sjávarútvegur og auðlindir skipta sköpum. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); OECD Economic Surveys: Iceland 2021\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-019</a> staðfestir að landbúnaður krefst heildarendurskipulagningar og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:1985:029:FULL\" title=\"Treaty amending the Treaties establishing the European Communities with regard to Greenland (1984); EU-Greenland fisheries partnership agreement\" target=\"_blank\" rel=\"noopener\">PREC-HIST-017</a> sýnir að sjávarútvegsmálið er svo viðkvæmt að Grænland yfirgaf ESB einmitt vegna þess.",
+      "missing_context": "Öll umsækjendaríki hafa einstaka sérkenni sem krefjast sérsniðinna samningaviðræðna. <a href=\"https://www.eeas.europa.eu/eeas/eu-arctic-policy_en\" title=\"European Commission — EU Arctic Policy, Joint Communication JOIN(2021) 27\" target=\"_blank\" rel=\"noopener\">SOV-DATA-001</a> bendir á strategíska legu Íslands í Norður-Atlantshafi sem annað einkennandi atriði. Hlutdeild sjávarútvegs í VLF hefur þó minnkað og er nú um 8% (<a href=\"https://www.statice.is/statistics/economy/national-accounts/\" title=\"Statistics Iceland — National accounts by activity\" target=\"_blank\" rel=\"noopener\">FISH-DATA-003</a>), sem þýðir að sérstaðan er minni en hún var á fyrri áratugum.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-DATA-021",
+          "source_name": "Eurostat — Fisheries statistics (fish_ca_main); Hagstofa Íslands",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/FISH_CA_MAIN/default/table?lang=en"
+        },
+        {
+          "id": "TRADE-DATA-022",
+          "source_name": "European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "AGRI-DATA-019",
+          "source_name": "European Commission — Opinion on Iceland's application (SEC(2010) 153); OECD Economic Surveys: Iceland 2021",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "PREC-HIST-017",
+          "source_name": "Treaty amending the Treaties establishing the European Communities with regard to Greenland (1984); EU-Greenland fisheries partnership agreement",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:1985:029:FULL"
+        },
+        {
+          "id": "EEA-DATA-004",
+          "source_name": "Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "fisheries",
+      "attribution": "quoted",
+      "article_slug": "18-manudirnir-byggja-ekki-a-formlegum-samtolum",
+      "article_title": "18 mánuðirnir byggja ekki á formlegum samtölum",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-13"
+    },
+    {
+      "claim_text": "Þorgerður Katrín Gunnarsdóttir utanríkisráðherra sagði í viðtali við Politico að Ísland gæti orðið fullgildur aðili að Evrópusambandinu innan eins og hálfs árs ef aðildarviðræður yrðu teknar upp á ný.",
+      "original_quote": "utanríkisráðherra sagði í viðtali við Politico að Ísland gæti orðið fullgildur aðili að sambandinu innan eins og hálfs árs ef aðildarviðræður yrðu teknar upp á ný",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir að Þorgerður Katrín hafi sagt að viðræður gætu hafist «um áramótin» ef þjóðin samþykkti, en heimildir staðfesta ekki tímaramma «eins og hálfs árs» til fullrar aðildar. Aðildarviðræður taka yfirleitt 5–10 ár samkvæmt <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — Steps towards joining; DG NEAR accession negotiation methodology\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-013</a>, þótt Ísland hafi náð hraðri framvindu 2010–2013 vegna EES-samræmis. Viðtalið við Politico er ekki í staðreyndagrunninum og ekki er hægt að sannreyna nákvæma orðanotkun ráðherrans þar.",
+      "missing_context": "Tímarammi aðildarviðræðna er mjög breytilegur — Austurríki kláraði á 3 árum en Tyrkland hefur verið í viðræðum síðan 2005. Einnig þyrfti stjórnarskrárbreytingu sem tekur a.m.k. 1–2 ár til viðbótar. Viðtalið við Politico er ekki meðal heimilda og nákvæm orð ráðherrans eru óstaðfest.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        },
+        {
+          "id": "POLITICAL-DATA-004",
+          "source_name": "Althingi — Session 157; Viðreisn party platform",
+          "source_url": "https://www.althingi.is/thingmenn/thingflokkar/vidreisn/"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "EEA-LEGAL-013",
+          "source_name": "European Commission — Steps towards joining; DG NEAR accession negotiation methodology",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        }
+      ],
+      "category": "sovereignty",
+      "attribution": "paraphrased",
+      "article_slug": "olafur-ragnar-svarar-carl-bildt-stjornarskrarlega-omogulegt",
+      "article_title": "Ólafur Ragnar svarar Carl Bildt: Stjórnarskrárlega ómögulegt",
+      "article_source": "Nútíminn",
+      "article_date": "2026-03-14"
+    },
+    {
+      "claim_text": "Þorgerður Katrín Gunnarsdóttir sagði að samningaviðræður við Evrópusambandið gætu gengið hratt fyrir sig ef pólitískur vilji væri til staðar.",
+      "original_quote": "hún sagði að samningaviðræður við Evrópusambandið gætu gengið hratt fyrir sig ef pólitískur vilji væri til staðar",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir að Þorgerður Katrín hafi lagt áherslu á hraða framvindu viðræðna og sagt að þær gætu hafist «um áramótin» ef þjóðin greiddi atkvæði með. Þetta samræmist afstöðu Viðreisnar sem hefur stöðugt talað fyrir skjótri niðurstöðu í aðildarviðræðum (<a href=\"https://www.althingi.is/thingmenn/thingflokkar/vidreisn/\" title=\"Althingi — Session 157; Viðreisn party platform\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-004</a>). Fullyrðingin er skoðun ráðherrans og heimildir staðfesta að hún hafi lýst þessari skoðun.",
+      "missing_context": "Þetta er pólitísk yfirlýsing, ekki hlutlaus greining. Aðildarviðræður taka yfirleitt 5–10 ár samkvæmt <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — Steps towards joining; DG NEAR accession negotiation methodology\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-013</a>, þótt EES-samræmi Íslands gæti stytt ferlið.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        },
+        {
+          "id": "POLITICAL-DATA-004",
+          "source_name": "Althingi — Session 157; Viðreisn party platform",
+          "source_url": "https://www.althingi.is/thingmenn/thingflokkar/vidreisn/"
+        },
+        {
+          "id": "SOV-PARL-004",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir (flutningsræða, 154. löggjafarþing); Logi Einarsson (flutningsræða, 153. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/154/rad20230919T175556.html"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "sovereignty",
+      "attribution": "paraphrased",
+      "article_slug": "olafur-ragnar-svarar-carl-bildt-stjornarskrarlega-omogulegt",
+      "article_title": "Ólafur Ragnar svarar Carl Bildt: Stjórnarskrárlega ómögulegt",
+      "article_source": "Nútíminn",
+      "article_date": "2026-03-14"
+    },
+    {
+      "claim_text": "Þorgerður Katrín utanríkisráðherra lenti í harðri orðasenu við Sigmund Davíð formann Miðflokksins sem vakti athygli á að Kristrún þvæði hendur sínar af ESB-málinu.",
+      "original_quote": "Hún lenti í stælum við Sigmund Davíð formann Miðflokksins sem vakti athygli á að Kristrún þvæði hendur sínar af málinu.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T182328.html\" title=\"Alþingi — Sigmundur Davíð Gunnlaugsson, þingmaður Miðflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-002</a> staðfestir að Sigmundur Davíð hélt harðorða ræðu 9. mars 2026 þar sem hann sakaði ríkisstjórnina um «baktjaldamakk». <a href=\"https://europeelects.eu/iceland/\" title=\"Altinget.no; Heimildin; Europe Elects party classification\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-012</a> staðfestir að hann er formaður Miðflokksins og harður andstæðingur ESB-aðildar. Hins vegar lýsa heimildir ekki beinni orðasenu milli hans og Þorgerðar Katrínar, né staðfesta þær að hann hafi sérstaklega sagt að Kristrún «þvæði hendur sínar af málinu».",
+      "missing_context": "Heimildir staðfesta harðorða gagnrýni Sigmundar Davíðs á ríkisstjórnina varðandi ESB-málið, en nákvæm orðasena við Þorgerði Katrínu er ekki skráð. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T182328.html\" title=\"Alþingi — Sigmundur Davíð Gunnlaugsson, þingmaður Miðflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-002</a> lýsir andstöðuræðu hans en ekki beinni senu milli tveggja einstaklinga.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-PARL-002",
+          "source_name": "Alþingi — Sigmundur Davíð Gunnlaugsson, þingmaður Miðflokksins (ræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T182328.html"
+        },
+        {
+          "id": "PARTY-DATA-012",
+          "source_name": "Altinget.no; Heimildin; Europe Elects party classification",
+          "source_url": "https://europeelects.eu/iceland/"
+        },
+        {
+          "id": "POLITICAL-DATA-013",
+          "source_name": "Miðflokkurinn — Party website and statements; ECR Party membership; Icelandic media reports",
+          "source_url": "https://www.midflokkurinn.is/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "party_positions",
+      "attribution": "paraphrased",
+      "article_slug": "kristrun-sneri-baki-vid-thorgerdi-katrinu",
+      "article_title": "Kristrún sneri baki við Þorgerði Katrínu",
+      "article_source": "Nútíminn",
+      "article_date": "2026-03-14"
+    },
+    {
+      "claim_text": "Í harðri orðasenu á sjónvarpsfundinum sagði Þorgerður Katrín «nú skaltu passa þig» og «ríkið er ég og ég er ríkið».",
+      "original_quote": "Í harðri orðasenu milli þeirra sagði Þorgerður Katrín \"nú skaltu passa þig,\" og \"ríkið er ég og ég er ríkið.\"",
+      "verdict": "unverifiable",
+      "explanation": "Engar heimildir í staðreyndagrunninum fjalla um sjónvarpsfundinn eða tilvitnuð ummæli Þorgerðar Katrínar. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> sýnir ræðu hennar á Alþingi 9. mars þar sem hún talaði um fullveldi og sjávarútveg, en þessar tilteknu setningar koma ekki fram. Þetta eru mjög sértækar tilvitnanir sem krefjast aðgangs að sjónvarpsupptökunni.",
+      "missing_context": "Staðreyndagrunnurinn nær ekki til efnis sjónvarpsfunda. Setningin «ríkið er ég og ég er ríkið» er mjög athyglisverð og óvenjuleg yfirlýsing sem þyrfti sérstaka staðfestingu.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [],
+      "category": "party_positions",
+      "attribution": "quoted",
+      "article_slug": "kristrun-sneri-baki-vid-thorgerdi-katrinu",
+      "article_title": "Kristrún sneri baki við Þorgerði Katrínu",
+      "article_source": "Nútíminn",
+      "article_date": "2026-03-14"
+    },
+    {
       "claim_text": "Ríkisstjórnin lofaði að fara með ESB-málið í þjóðaratkvæðagreiðslu eigi síðar en 2027.",
       "original_quote": "Það hefur líka legið fyrir að við sögðum eigi síðar en 2027.",
       "verdict": "supported",
@@ -1143,8 +1645,8 @@
       "claim_text": "Ákvæði í þingskapalögum um utanríkismálanefnd er ætlað sem ventill, til dæmis þegar ríkisstjórn ákveður eins síns liðs að fara í stríð.",
       "original_quote": "Stór mál, af hverju er þetta ákvæði í þingskapalögum? Það er til þess að vera ventill, ventill fyrir ríkisstjórn sem til dæmis ákveður eins síns liðs að fara í stríð.",
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.althingi.is/lagas/nuna/1991055.html\" title=\"Lög um þingsköp Alþingis nr. 55/1991; Alþingi official website\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-019</a> staðfestir að 24. grein þingskapalaga kveður á um skyldu ríkisstjórnar til að bera meiri háttar utanríkismál fyrir utanríkismálanefnd áður en ákvarðanir eru teknar. Fullyrðingin um «ventil» — til dæmis þegar ríkisstjórn fer eins síns liðs í stríð — endurspeglar raunverulegan tilgang ákvæðisins, þ.e. þingeftirlit með framkvæmdavaldinu í utanríkismálum. Þó ber að geta þess að <a href=\"https://www.althingi.is/lagas/nuna/1991055.html\" title=\"Lög um þingsköp Alþingis nr. 55/1991; Alþingi official website\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-019</a> undirstrikar að ákvæðið felur í sér samráðsskyldu, ekki neitunarvald — nefndin getur ekki komið í veg fyrir ákvörðun ríkisstjórnar. <a href=\"https://www.althingi.is/\" title=\"Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-028</a> sýnir að túlkun ákvæðisins er umdeild í tengslum við þjóðaratkvæðagreiðsluna, þar sem lögfræðingar eru ósammála um hvort þingsályktunartillaga falli undir 24. grein.",
-      "missing_context": "Ákvæðið veitir utanríkismálanefnd ekki neitunarvald — aðeins samráðsrétt. Dæmið um stríð er skýrt tilvik en fullyrðingin gæti gefið í skyn víðtækari vald en ákvæðið raunverulega veitir. Hvort þjóðaratkvæðagreiðsla um ESB falli undir «meiri háttar utanríkismál» er lögfræðilega umdeilt.",
+      "explanation": "<a href=\"https://www.althingi.is/lagas/nuna/1991055.html\" title=\"Lög um þingsköp Alþingis nr. 55/1991; Alþingi official website\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-019</a> staðfestir tilvist ákvæðisins — 24. grein þingskapalaga kveður á um að ríkisstjórnin skuli ávallt bera «meiri háttar utanríkismál» undir utanríkismálanefnd. Fullyrðingin lýsir ákvæðinu sem «ventli» sem noti þegar ríkisstjórn tekur einhliða ákvarðanir, til dæmis um stríð. Þessi lýsing er í grófum dráttum rétt — ákvæðið er til þess hannað að koma í veg fyrir einhliða ákvarðanir framkvæmdarvaldsins í utanríkismálum. Hins vegar er «ventill» nokkuð ónákvæmt — ákvæðið er samráðsskylda, ekki neitunarvald. Nefndin verður að vera upplýst en samþykki hennar er ekki lagalega krafist.",
+      "missing_context": "Ákvæðið er samráðsskylda en ekki neitunarvald — ríkisstjórnin heldur ákvörðunarvaldi sínu jafnvel þótt nefndin sé andvíg. Hvað telst «meiri háttar utanríkismál» er túlkunaratriði og hefur verið umdeilt, eins og sást í umræðu um ESB-þjóðaratkvæðagreiðsluna 2026. Dæmið um stríðsákvörðun er rökrétt en Ísland hefur ekki eigin her, þannig að beint dæmi er takmarkað.",
       "supporting_evidence": [
         {
           "id": "SOV-LEGAL-019",
@@ -1195,13 +1697,18 @@
       "claim_text": "Stjórnarandstöðuflokkarnir lofuðu að fara með ESB-málið áfram í þjóðaratkvæðagreiðslu 2013 en gerðu það ekki og fóru ekki heldur með það fyrir utanríkismálanefnd.",
       "original_quote": "þessir flokkar í stjórnarandstöðunni, þeir lofuðu náttúrulega að fara með málið áfram í þjóðaratkvæðagreiðslu 2013, eins og við þekkjum, en þeir fóru ekki með það heldur fyrir utanríkismálanefnd.",
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/\" title=\"Althingi records; coalition agreements 2009, 2013, 2017, 2021, 2024; Icelandic media archives\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-011</a> staðfestir að ríkisstjórn Framsóknar og Sjálfstæðisflokks (2013–2016) dró ESB-umsóknina til baka, en utanríkisráðherra Gunnar Bragi Sveinsson sagði beint að þjóðaratkvæðagreiðsla væri óþörf þar sem umsóknin væri dregin til baka. <a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a> lýsir hvernig utanríkisráðherra sendi bréf til ESB án samþykkis Alþingis. Fullyrðingin um að flokkarnir hafi «lofað að fara með ESB-málið áfram í þjóðaratkvæðagreiðslu» er ekki studd af heimildum — þeir lofuðu að draga umsóknina til baka, ekki að bera hana undir atkvæði. <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> fjallar um utanríkismálanefnd í núverandi þingi, ekki 2013.",
-      "missing_context": "Fullyrðingin blandar saman ólíkum loforðum og tímabilum. Ríkisstjórnin 2013–2016 lofaði aldrei þjóðaratkvæðagreiðslu um ESB-aðild — afstaða hennar var að draga umsóknina til baka. Lagaleg staða ESB-umsóknarinnar er enn umdeild þar sem ESB hefur ekki formlega viðurkennt afturköllunina.",
+      "explanation": "Fullyrðingin snýr að stjórnarandstöðuflokkum (Sjálfstæðisflokknum og Framsóknarflokknum) sem mynduðu ríkisstjórn 2013–2016. <a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a> staðfestir að þessi ríkisstjórn reyndi að draga umsóknina til baka og lagði fram frumvarp þar um, en það náði aldrei endanlegri atkvæðagreiðslu vegna þinglegrar hindrunar. Utanríkisráðherra Gunnar Bragi Sveinsson sendi síðan einhliða bréf til ESB. <a href=\"https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/\" title=\"Althingi records; coalition agreements 2009, 2013, 2017, 2021, 2024; Icelandic media archives\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-011</a> lýsir þessu nánar og bendir á að ríkisstjórnin 2013–2016 lofaði frekar að draga umsóknina til baka en að halda þjóðaratkvæðagreiðslu. Fullyrðingin um loforð um þjóðaratkvæðagreiðslu árið 2013 er þannig villandi orðuð — loforðið sneri ekki að þjóðaratkvæðagreiðslu heldur afturköllun umsóknar. <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> staðfestir jafnframt kvartanir um málsmeðferð fyrir utanríkismálanefnd.",
+      "missing_context": "<a href=\"https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/\" title=\"Althingi records; coalition agreements 2009, 2013, 2017, 2021, 2024; Icelandic media archives\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-011</a> útskýrir að ríkisstjórnin 2013–2016 lofaði ekki þjóðaratkvæðagreiðslu heldur afturköllun umsóknar — þetta eru ólíkar skuldbindingar. Fullyrðingin ruglar saman tvennu: loforði um þjóðaratkvæðagreiðslu (sem kom frá vinstristjórninni 2009–2013 um endanlegan samning) og áformum um afturköllun (sem var loforð hægristjórnarinnar 2013). Lagaleg staða umsóknarinnar er enn umdeild — ESB hefur aldrei viðurkennt afturköllun hennar.",
       "supporting_evidence": [
         {
           "id": "PARTY-DATA-011",
           "source_name": "Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews",
           "source_url": "https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/"
+        },
+        {
+          "id": "POLITICAL-DATA-011",
+          "source_name": "Althingi records; coalition agreements 2009, 2013, 2017, 2021, 2024; Icelandic media archives",
+          "source_url": "https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/"
         },
         {
           "id": "SOV-PARL-005",
@@ -1227,8 +1734,8 @@
       "claim_text": "Erlend fjárfesting er nú þegar heimil upp á 30% í fyrirtækjum sem eru í Kauphöllinni.",
       "original_quote": "Erlend fjárfesting er nú þegar heimil upp á 30% af þeim fyrirtækjum sem eru í Kauphöllinni",
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.althingi.is/lagas/nuna/1991034.html\" title=\"Lög um fjárfestingu erlendra aðila í atvinnurekstri nr. 34/1991; Lög um verðbréfaviðskipti\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-023</a> fjallar beint um þessa fullyrðingu og bendir á að 30% hámarkið vísi líklega til eiginfjárþaks í samþykktum einstakra fyrirtækja á Kauphöllinni, ekki almennrar lagaskyldu. Eftir að gjaldeyrishöft voru afnumin 2017 er erlend eignasafnsfjárfesting almennt heimil á Kauphöllinni án almenns 30% hámarks. Takmarkanir eru geirasértækar — sjávarútvegur, orkuframleiðsla og flugstarfsemi eru takmörkuð (<a href=\"https://www.althingi.is/lagas/nuna/1991034.html\" title=\"Lög um fjárfestingu erlendra aðila í atvinnurekstri nr. 34/1991; Lög um verðbréfaviðskipti\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-023</a>). Talan 30% á sér ekki stoð í almennri löggjöf og fullyrðingin er þar af leiðandi ónákvæm, þótt hún endurspegli að ákveðnar takmarkanir séu til staðar.",
-      "missing_context": "Munur er á EES-ríkjaborgurum og ríkjum utan EES hvað varðar fjárfestingarheimildir — EES-borgum njóta víðtækari fjárfestingafrelsis samkvæmt lögum um fjárfestingu erlendra aðila (<a href=\"https://www.althingi.is/lagas/nuna/1991034.html\" title=\"Lög um fjárfestingu erlendra aðila í atvinnurekstri nr. 34/1991; Lög um verðbréfaviðskipti\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-023</a>). Gjaldeyrishöftin sem voru í gildi 2008–2017 takmörkuðu erlenda fjárfestingu verulega og sum fyrirtæki á Kauphöllinni kunna enn að hafa takmarkanir í samþykktum sínum sem eru leifar frá því tímabili. <a href=\"https://www.eftasurv.int/internal-market/eea-efta-internal-market-scoreboard\" title=\"EFTA Surveillance Authority — Internal Market Scoreboard\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-001</a> staðfestir að frjáls fjármagnshreyfing er hluti af EES-samningnum.",
+      "explanation": "<a href=\"https://www.althingi.is/lagas/nuna/1991034.html\" title=\"Lög um fjárfestingu erlendra aðila í atvinnurekstri nr. 34/1991; Lög um verðbréfaviðskipti\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-023</a> fjallar beint um regluverk erlendrar fjárfestingar í skráðum fyrirtækjum og segir að eftir afnám gjaldeyrishafta 2017 sé erlend verðbréfafjárfesting í skráðum fyrirtækjum «largely open». Heimildin bendir á að 30% mörkin kunni að vísa til samþykkta einstakra fyrirtækja eða eldri haftatímabilsins, en staðfestir ekki að 30% hámark sé almennt lagalegt viðmið. Þvert á móti bendir heimildin til þess að almennt sé engin slík takmörkun í gildi — aðeins geirasértækar takmarkanir (sjávarútvegur, orka, flug). Fullyrðingin er því villandi sem almenn lýsing á gildandi lögum.",
+      "missing_context": "Heimildir staðfesta ekki 30% hámark sem almenna reglu. <a href=\"https://www.althingi.is/lagas/nuna/1991034.html\" title=\"Lög um fjárfestingu erlendra aðila í atvinnurekstri nr. 34/1991; Lög um verðbréfaviðskipti\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-023</a> bendir á að erlend fjárfesting í skráðum fyrirtækjum sé að mestu frjáls eftir afnám gjaldeyrishafta, og að 30% takmarkið gæti átt við samþykktir einstakra fyrirtækja eða eldri höft. Geirasértækar takmarkanir gilda um sjávarútveg, orku og flug.",
       "supporting_evidence": [
         {
           "id": "TRADE-DATA-023",
@@ -1236,13 +1743,7 @@
           "source_url": "https://www.althingi.is/lagas/nuna/1991034.html"
         }
       ],
-      "contradicting_evidence": [
-        {
-          "id": "TRADE-DATA-023",
-          "source_name": "Lög um fjárfestingu erlendra aðila í atvinnurekstri nr. 34/1991; Lög um verðbréfaviðskipti",
-          "source_url": "https://www.althingi.is/lagas/nuna/1991034.html"
-        }
-      ],
+      "contradicting_evidence": [],
       "category": "trade",
       "attribution": "asserted",
       "article_slug": "25-thattur-silfursins-stefnt-ad-kosningu-um-esb-i-sumar",
@@ -1275,13 +1776,13 @@
       "claim_text": "Hagsmunamat ESB er núna þannig að sambandið lítur á stóru myndina og vill að líkt þenkjandi ríki standi saman, til dæmis í tollastríði.",
       "original_quote": "núna er hagsmunamat Evrópusambandsins þannig að það er að líta á stóru myndina, líta á það að líkt þenkjandi ríki geti staðið saman, til að mynda í tollastríði",
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> staðfestir að ESB hefur strategíska hagsmuni af stækkun, þar á meðal landfræðilegum og pólitískum, en tekur jafnframt fram að aðild Íslands hafi aldrei verið forgangsmál ESB. <a href=\"https://www.consilium.europa.eu/en/\" title=\"Press conference statements — Donald Tusk, PM of Poland (2025–2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-011</a> lýsir yfirlýsingum Tusk um nauðsyn ESB-umbóta til að laða að ríki á borð við Ísland og Noreg. Þetta styður hugmyndina um «stóru myndina». Nýju heimildarnar bæta samhengi: <a href=\"https://eeagrants.org/en/fmo/about-us\" title=\"EEA Grants — Financial mechanism overview\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-001</a> og <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf\" title=\"EEA Agreement — Protocol 3 on trade in processed agricultural products\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-002</a> sýna að ESB er nú þegar stærsta viðskiptasvæði Íslands og <a href=\"https://sa.is/frettatengt/frettir/vinna-hafin-vid-uttekt-a-stodu-adildarvidraedna-vid-evropusambandid\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> nefnir samningsstyrk sem ESB-kost. Hins vegar bendir <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> á að ESB er ekki að sækjast eftir Íslands-aðild heldur einbeiti sér að Vestur-Balkanskaga og Úkraínu. Fullyrðingin ýkir þegar hún gefur í skyn að ESB liti sérstaklega á Ísland sem hluta af «stóru myndinni».",
-      "missing_context": "Stækkun ESB beinist núna einkum að Vestur-Balkanskaga og Úkraínu — Ísland er ekki í forgangi. Yfirlýsingar Tusk eru pólitískar og gætu ekki endurspeglað raunverulega samningsstöðu. Tollastríðið við Bandaríkin gæti þó hafa aukið áhuga ESB á samstöðu, en engin heimild tengir það beint við Ísland.",
+      "explanation": "<a href=\"https://www.consilium.europa.eu/en/\" title=\"Press conference statements — Donald Tusk, PM of Poland (2025–2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-011</a> sýnir að forsætisráðherra Póllands, Donald Tusk, hefur talað um nauðsyn þess að ESB aðlagi sig að smærri ríkjum, og <a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a> lýsir því hvernig ESB hefur einkarétt á viðskiptastefnu þar sem sameiginleg afstaða í tollastríðum er hluti af sameiginlegri viðskiptastefnu. <a href=\"https://sa.is/frettatengt/frettir/vinna-hafin-vid-uttekt-a-stodu-adildarvidraedna-vid-evropusambandid\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> og <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> sýna stoð íslensks atvinnulífs við hugmyndina um sameiginlegan front. Fullyrðingin er þó matskennd túlkun á hagsmunamati ESB — heimildir staðfesta að ESB vill samstöðu í viðskiptamálum, en orðalagið «líkt þenkjandi ríki standi saman» er pólitísk túlkun sem heimildir staðfesta ekki beint.",
+      "missing_context": "Fullyrðingin er pólitísk túlkun á hvata ESB til stækkunar. Heimildir sýna að ESB hefur einkarétt á viðskiptastefnu og því sameiginlega hagsmuni af samstöðu, en engin heimild staðfestir beint að tollastríð séu drifkraftur vilja ESB til stækkunar. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> bendir á að Ísland sé efnahagslega mjög lítið og aðild þess hafi lítil áhrif á heild ESB.",
       "supporting_evidence": [
         {
-          "id": "POL-DATA-012",
-          "source_name": "SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions",
-          "source_url": "https://sa.is/frettatengt/frettir/vinna-hafin-vid-uttekt-a-stodu-adildarvidraedna-vid-evropusambandid"
+          "id": "SOV-LEGAL-032",
+          "source_name": "TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview",
+          "source_url": "https://www.efta.int/free-trade/free-trade-agreements"
         },
         {
           "id": "PREC-DATA-011",
@@ -1289,9 +1790,9 @@
           "source_url": "https://www.consilium.europa.eu/en/"
         },
         {
-          "id": "TRADE-DATA-022",
-          "source_name": "European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications",
-          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+          "id": "TRADE-DATA-002",
+          "source_name": "EEA Agreement — Protocol 3 on trade in processed agricultural products",
+          "source_url": "https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf"
         }
       ],
       "contradicting_evidence": [],
@@ -1352,8 +1853,8 @@
       "claim_text": "Ríkisstjórnin hefur lækkað skuldir ríkissjóðs um tæplega 8%.",
       "original_quote": "Við erum búin að greiða niður skuldir um og lækka skuldir ríkissjóðs um tæplega 8%.",
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.government.is/topics/economic-affairs-and-public-finances/\" title=\"Fjármála- og efnahagsráðuneytið — Ríkisfjármál; Moody's, S&P, Fitch sovereign ratings for Iceland\" target=\"_blank\" rel=\"noopener\">SOV-DATA-013</a> staðfestir að ríkisskuldir hafa lækkað verulega — úr um 95% af VLF árið 2011 niður í um 65% árið 2025, sem er um 30 prósentustiga lækkun á langan tíma. Fullyrðingin um «tæplega 8%» gæti átt við ákveðið tímabil en heimildir staðfesta ekki nákvæmlega þessa tölu eða hvaða mælikvarða er vísað í. Fyrirvarar <a href=\"https://www.government.is/topics/economic-affairs-and-public-finances/\" title=\"Fjármála- og efnahagsráðuneytið — Ríkisfjármál; Moody's, S&P, Fitch sovereign ratings for Iceland\" target=\"_blank\" rel=\"noopener\">SOV-DATA-013</a> eru veigamiklir: skuldaminnkunin hófst undir ríkisstjórn 2013–2017 og hefur haldið áfram gegnum mörg stjórnartímabil, svo erfitt er að eigna hana einni ríkisstjórn.",
-      "missing_context": "Nákvæm tala «tæplega 8%» er óstaðfest — óljóst er hvort átt er við prósentustig af VLF, hlutfallslega breytingu, eða brúttó- á móti nettóskuldum. Skuldaminnkunin spannar mörg stjórnartímabil og verður ekki eigenð einni ríkisstjórn. Nýju heimildarnar (<a href=\"https://www.sedlabanki.is/hagtolur/\" title=\"Seðlabanki Íslands — Balance of payments statistics\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-008</a>, <a href=\"https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/skyrsla-nefndarinnar/english/\" title=\"Seðlabanki Íslands — Special Investigation Commission report; Central Bank annual report 2009\" target=\"_blank\" rel=\"noopener\">CURR-DATA-001</a>, <a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a>) bæta ekki beint við um skuldaþróunina.",
+      "explanation": "<a href=\"https://www.government.is/topics/economic-affairs-and-public-finances/\" title=\"Fjármála- og efnahagsráðuneytið — Ríkisfjármál; Moody's, S&P, Fitch sovereign ratings for Iceland\" target=\"_blank\" rel=\"noopener\">SOV-DATA-013</a> staðfestir að brúttóskuldir ríkissjóðs lækkuðu úr hámarki um 95% af VLF árið 2011 í um 65% árið 2025, sem er um 30 prósentustig á 14 árum. Þar kemur einnig fram að skuldaminnkunin hófst undir ríkisstjórn 2013–2017 og hefur haldið áfram undir öllum síðari ríkisstjórnum. Fullyrðingin um «tæplega 8%» lækkun gæti átt við tiltekið tímabil núverandi ríkisstjórnar, en heimildir greina ekki frá nákvæmri sundurliðun eftir kjörtímabilum. Ekki er hægt að staðfesta hvort 8% sé rétt hlutfall fyrir þá ríkisstjórn sem vísað er til.",
+      "missing_context": "Heimildin greinir ekki skuldalækkun eftir einstökum ríkisstjórnum. Mismunandi mælikvarðar (brúttó- á móti nettóskuldum, hlutfall af VLF á móti nafnvirði) gefa ólíkar niðurstöður. Lánshæfismatsfyrirtæki benda á að skuldaminnkun ráðist af mörgum þáttum umfram ríkisfjármálastefnu, þar á meðal hagvexti og ytri aðstæðum.",
       "supporting_evidence": [
         {
           "id": "SOV-DATA-013",
@@ -1373,8 +1874,8 @@
       "claim_text": "Lánshæfismat ríkissjóðs hefur verið hækkað og rökstuðningurinn var vegna aðgerða þessarar ríkisstjórnar.",
       "original_quote": "Við erum búin að hækka núna aftur lánshæfismat ríkissjóðs... Rökstuðningurinn var út af aðgerðum þessarar ríkisstjórnar.",
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.government.is/topics/economic-affairs-and-public-finances/\" title=\"Fjármála- og efnahagsráðuneytið — Ríkisfjármál; Moody's, S&P, Fitch sovereign ratings for Iceland\" target=\"_blank\" rel=\"noopener\">SOV-DATA-013</a> staðfestir að lánshæfismat ríkissjóðs hefur hækkað — Ísland fékk A2 frá Moody's, A frá S&P og A frá Fitch. Skuldir ríkissjóðs lækkuðu úr hámarki um 95% af VLF árið 2011 í um 65% árið 2025. Ríkisstjórnin hefur vísað í aga í ríkisfjármálum sem ástæðu. Hins vegar bendir heimildin á að skuldaminnkun hófst undir ríkisstjórn 2013–2017 og hefur haldið áfram yfir margar ríkisstjórnir — eignun á einni ríkisstjórn er umdeilanleg. Lánshæfismat tekur tillit til margra þátta umfram fjármálastefnu, þar á meðal hagvaxtar, ytri stöðu og stofnanagæða.",
-      "missing_context": "Nákvæm tímasetning hækkunarinnar og hvaða ríkisstjórn sat á þeim tíma þarf nánari athugun. Mismunandi mælikvarðar á ríkisfjármál (vergur vs hreinn skuldir, hlutfall af VLF vs nafnverð) geta gefið ólíka mynd. <a href=\"https://www.sedlabanki.is/hagtolur/\" title=\"Seðlabanki Íslands — Balance of payments statistics\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-008</a> sýnir að viðskiptajöfnuður hefur sveiflast og snérist aftur í halla 2022–2023.",
+      "explanation": "<a href=\"https://www.government.is/topics/economic-affairs-and-public-finances/\" title=\"Fjármála- og efnahagsráðuneytið — Ríkisfjármál; Moody's, S&P, Fitch sovereign ratings for Iceland\" target=\"_blank\" rel=\"noopener\">SOV-DATA-013</a> staðfestir að lánshæfismat Íslands hefur batnað mikið og er nú A2 hjá Moody's, A hjá S&P og A hjá Fitch. Ríkisskuldir lækkuðu úr um 95% af VLF 2011 í um 65% árið 2025. Á hinn bóginn bendir sama heimild á að skuldaminnkun hófst undir ríkisstjórn 2013–2017 og hefur haldið áfram í gegnum nokkrar ríkisstjórnir — því er villandi að eigna endurbæturnar einungis núverandi ríkisstjórn. Lánshæfismat endurspeglar fjölmarga þætti umfram ríkisfjármálastefnu, þar á meðal hagvöxt og stofnanagæði.",
+      "missing_context": "Heimildir staðfesta ekki hvaða tiltekna hækkun lánshæfismats er vísað til eða hvenær hún átti sér stað. Skuldaminnkun er langtímaþróun sem spannar nokkrar ríkisstjórnir. <a href=\"https://www.sedlabanki.is/hagtolur/\" title=\"Seðlabanki Íslands — Balance of payments statistics\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-008</a> sýnir auk þess að viðskiptajöfnuður hefur verið sveiflukenndur og fór í halla 2022–2023, sem gæti dregið úr jákvæðri mynd.",
       "supporting_evidence": [
         {
           "id": "SOV-DATA-013",
@@ -1394,8 +1895,8 @@
       "claim_text": "Marta Kos, stækkunarstjóri ESB, hefur ítrekað sagt að samið sé á grundvelli þess umhverfis og raunveruleika sem hvert aðildarríki sem sækir um býr við.",
       "original_quote": "Marta Kos, stækkunarstjórinn, er búin að segja það ítrekað... auðvitað er samið á grundvelli þess umhverfis- og raunveruleika sem hvert aðildarríki sem maður sækir um",
       "verdict": "partially_supported",
-      "explanation": "Fullyrðingin eignar Mörtu Kos, stækkunarstjóra ESB, ítrekaðar yfirlýsingar um að samið sé á grundvelli aðstæðna hvers umsóknarlands. <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> staðfesta að aðildarviðræður snúast um tímasetningu og skilyrði innleiðingar á regluverkinu — ekki um breytingar á því sjálfu. Aðlögunartímabil og tæknilegar breytingar eru þó samningsatriði, sem styður hugmyndina um sveigjanleika. Engin heimild staðfestir hins vegar beint að Marta Kos hafi «ítrekað» sagt þetta orðrétt — forsætisráðherra Kristrún vísar til sambærilegra meginreglna í <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T162602.html\" title=\"Alþingi — Kristrún Frostadóttir, forsætisráðherra (andsvar, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">PARTY-PARL-001</a> og <a href=\"https://www.ruv.is/\" title=\"Althingi debate records; RÚV interviews with PM Kristrún Frostadóttir, February–March 2026\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-019</a>, en það eru hennar eigin orð, ekki tilvitnun í Kos.",
-      "missing_context": "Engin heimild staðfestir beint yfirlýsingar Mörtu Kos sjálfrar. Sveigjanleiki í aðildarviðræðum takmarkast við aðlögunartímabil — ný aðildarríki fá ekki varanlegar undanþágur frá regluverkinu samkvæmt <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a>.",
+      "explanation": "Fullyrðingin um ítrekaðar yfirlýsingar Mörtu Kos er ekki beint staðfest í heimildum. <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> staðfesta þó almenna stefnu ESB um sveigjanleika í aðildarviðræðum — aðlögunartímabil og tæknilegar breytingar eru samningsefni. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E326\" title=\"Treaty on the Functioning of the European Union, Articles 326–334; European Commission — Enhanced cooperation factsheet\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-031</a> lýsir auknu samstarfsfyrirkomulagi sem sýnir sveigjanlega nálgun innan ESB. <a href=\"https://www.consilium.europa.eu/en/\" title=\"Press conference statements — Donald Tusk, PM of Poland (2025–2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-011</a> staðfestir yfirlýsingar Tusk um nauðsyn umbóta. <a href=\"https://www.ruv.is/\" title=\"Althingi debate records; RÚV interviews with PM Kristrún Frostadóttir, February–March 2026\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-019</a> sýnir að forsætisráðherra Íslands hefur lagt áherslu á sterkt umboð og sérstöðu Íslands. Efnislega er megininntak fullyrðingarinnar í samræmi við opinbera stefnu ESB, en tilvísunin í Mörtu Kos sem uppruna er óstaðfest.",
+      "missing_context": "Síðan Lissabon-samningurinn tók gildi hefur ESB ekki veitt nýjum aðildarríkjum varanlegar undanþágur (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a>) — Króatía fékk engar. Sveigjanleikinn felst í aðlögunartímabilum, ekki breytingum á regluverk. Að «tekið sé mið af umhverfi og raunveruleika» getur þýtt margt — frá raunverulegum sérákvæðum til ómerkra loforða. Engin heimild vitnar beint í Mörtu Kos um þessar yfirlýsingar.",
       "supporting_evidence": [
         {
           "id": "EEA-LEGAL-017",
@@ -1406,16 +1907,6 @@
           "id": "EEA-LEGAL-021",
           "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
           "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
-        },
-        {
-          "id": "PARTY-PARL-001",
-          "source_name": "Alþingi — Kristrún Frostadóttir, forsætisráðherra (andsvar, 157. löggjafarþing)",
-          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T162602.html"
-        },
-        {
-          "id": "PREC-DATA-011",
-          "source_name": "Press conference statements — Donald Tusk, PM of Poland (2025–2026)",
-          "source_url": "https://www.consilium.europa.eu/en/"
         },
         {
           "id": "SOV-LEGAL-031",
@@ -1472,23 +1963,23 @@
       "claim_text": "Framsóknarflokkurinn og Sjálfstæðisflokkurinn fengu 13 ár samfellt í ríkisstjórn og réðu ekki við verðbólgu og krónuklafa á heimilum og fyrirtækjum.",
       "original_quote": "Þeir fengu 13 ár samfellt til þess að sýna þjóðinni fram á það að það skipti máli Framsóknarflokkurinn og Sjálfstæðisflokkurinn",
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/\" title=\"Coalition agreements 2009, 2013, 2016, 2017, 2021, 2024; Althingi records\" target=\"_blank\" rel=\"noopener\">POL-DATA-010</a> staðfestir að Sjálfstæðisflokkurinn og Framsóknarflokkurinn voru í ríkisstjórn saman 2013–2016 og sátu báðir í stjórn 2017–2021 ásamt Vinstri-grænum. Tímabilið «13 ár samfellt» fær þó ekki beina stoð — Samfylkingin og Vinstri-grænir réðu ríkisstjórn 2009–2013. <a href=\"https://cb.is/statistics/official-exchange-rate/\" title=\"Seðlabanki Íslands — Monetary Bulletin; ECB Statistical Data Warehouse\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-004</a> staðfestir viðvarandi verðbólgu á Íslandi (um 4,5% að meðaltali 2010–2024) og mikla krónu-sveiflur. Verðbólgu- og gengissveiflurvandinn er vel heimildfestur, en fullyrðingin um að flokkarnir hafi «ekki ráðið við» hann er pólitískt mat sem heimildir geta hvorki staðfest né hrakið.",
-      "missing_context": "Heimildir staðfesta ekki «13 ár samfellt» — flokkarnir tveir voru ekki í ríkisstjórn saman á árunum 2009–2013. Verðbólga og gengissveiflur eiga rætur í fjölmörgum þáttum — peningastefnu Seðlabankans, alþjóðlegum aðstæðum og efnahagsskipulagi — ekki eingöngu ríkisstjórnarstefnu tveggja flokka. Nýju heimildir (<a href=\"https://www.althingi.is/thingmenn/thingflokkar/sjalfstaedisflokkur/\" title=\"Althingi — Session 157 member registry\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-006</a>, <a href=\"https://www.althingi.is/thingmenn/thingflokkar/samfylkingin/\" title=\"Althingi — Session 157 member registry\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-008</a>) lýsa núverandi þingflokkum en varpa ekki ljósi á sögulegt ríkisstjórnarsamstarf.",
+      "explanation": "<a href=\"https://www.althingi.is/thingmenn/thingflokkar/thingflokkar/\" title=\"Althingi — Party platforms and election results\" target=\"_blank\" rel=\"noopener\">POL-DATA-002</a> og <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/\" title=\"Coalition agreements 2009, 2013, 2016, 2017, 2021, 2024; Althingi records\" target=\"_blank\" rel=\"noopener\">POL-DATA-010</a> staðfesta að Sjálfstæðisflokkurinn og Framsóknarflokkurinn voru saman í ríkisstjórn í langan tíma. D-ríkisstjórnin sat 1995–2007, sem er 12 ár, ekki 13 eins og fullyrðingin segir. <a href=\"https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/skyrsla-nefndarinnar/english/\" title=\"Seðlabanki Íslands — Special Investigation Commission report; Central Bank annual report 2009\" target=\"_blank\" rel=\"noopener\">CURR-DATA-001</a> staðfestir alvarlega gjaldmiðilskreppu 2008 þegar krónan féll um 50% á nokkrum vikum. Fullyrðingin hefur stoð í aðalatriðum — flokkarnir sátu lengi og gjaldmiðilsvandi var raunverulegur — en «13 ár» er ónákvæmt og heimildir tengja gjaldmiðilsvandann ekki eingöngu við þessa flokka heldur einnig við bankakerfisþenslu og ófullnægjandi eftirlit.",
+      "missing_context": "Tímabilið 1995–2007 er 12 ár, ekki 13. Kreppan átti sér margar orsakir umfram stjórnarsetu þessara flokka, þar á meðal ofvöxt bankakerfis og alþjóðlega fjármálakreppu. Heimildir benda á að krónan gat aðstoðað efnahagsbata í gegnum gengisfellingu eftir kreppuna.",
       "supporting_evidence": [
-        {
-          "id": "POL-DATA-010",
-          "source_name": "Coalition agreements 2009, 2013, 2016, 2017, 2021, 2024; Althingi records",
-          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/"
-        },
         {
           "id": "POL-DATA-002",
           "source_name": "Althingi — Party platforms and election results",
           "source_url": "https://www.althingi.is/thingmenn/thingflokkar/thingflokkar/"
         },
         {
-          "id": "TRADE-COMP-004",
-          "source_name": "Seðlabanki Íslands — Monetary Bulletin; ECB Statistical Data Warehouse",
-          "source_url": "https://cb.is/statistics/official-exchange-rate/"
+          "id": "POL-DATA-010",
+          "source_name": "Coalition agreements 2009, 2013, 2016, 2017, 2021, 2024; Althingi records",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/"
+        },
+        {
+          "id": "CURR-DATA-001",
+          "source_name": "Seðlabanki Íslands — Special Investigation Commission report; Central Bank annual report 2009",
+          "source_url": "https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/skyrsla-nefndarinnar/english/"
         }
       ],
       "contradicting_evidence": [],
@@ -1503,18 +1994,18 @@
       "claim_text": "Íslenski gjaldmiðillinn hefur sett klafa á íslensk heimili og fyrirtæki, nema þau fyrirtæki sem fá að gera upp í evrum og dollurum.",
       "original_quote": "þann klafa sem að íslenski gjaldmiðillinn hefur sett á íslensk heimili og íslensk fyrirtæki fyrir utan þessi sem að fá að gera upp í evrum og dollurum",
       "verdict": "partially_supported",
-      "explanation": "Krónan hefur sannanlega valdið erfiðleikum — <a href=\"https://www.sedlabanki.is/hagtolur/\" title=\"Seðlabanki Íslands — Exchange rate data\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-007</a> sýnir miklar sveiflur (gengi ISK/EUR hrundi úr 90 í 180+ á árunum 2008–2009) og <a href=\"https://sedlabanki.is/hagtolur/gengi?PageID=289\" title=\"Seðlabanki Íslands — Capital account liberalisation reports\" target=\"_blank\" rel=\"noopener\">CURR-DATA-002</a> staðfestir tæplega áratug fjármagnshafta. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> bendir á mun hærri húsnæðisvexti (8–9% óverðtryggðir) en á evrusvæðinu (~3,4%). Orðalagið «klafi» á stoð í gögnum en er einföldun. <a href=\"https://cb.is/statistics/official-exchange-rate/\" title=\"Seðlabanki Íslands — Monetary Bulletin; ECB Statistical Data Warehouse\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-004</a> sýnir að sveigjanleiki krónunnar getur einnig nýst sem aðlögunarbúnaður — gengislækkun 2008 hraðaði efnahagsbata. Fullyrðingin um útflutningsfyrirtæki á sér ákveðna stoð í <a href=\"https://hagstofa.is/talnaefni/efnahagsmal/utanrikisverslun/\" title=\"Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður\" target=\"_blank\" rel=\"noopener\">FISH-DATA-027</a> (tekjur útvegsfyrirtækja eru í erlendum gjaldmiðlum), en kostnaður þeirra er í krónum og þau bera því gjaldmiðlaáhættu beggja vegna.",
-      "missing_context": "Krónan veitir aðlögunarbúnað sem evruríki skortir — gengislækkun 2008 hraðaði bata samanborið við kreppu á evrusvæðinu. Vaxtamunurinn (<a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a>) endurspeglar ekki eingöngu krónu heldur einnig verðbólguálag og smæð fjármagnsmarkaðar. <a href=\"https://hagstofa.is/talnaefni/efnahagsmal/utanrikisverslun/\" title=\"Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður\" target=\"_blank\" rel=\"noopener\">FISH-DATA-027</a> bendir á að uppgjör útvegsfyrirtækja sé í erlendum gjaldmiðlum á mörkuðum en kostnaður (laun, olía) er í krónum — þau eru ekki alveg undanþegin gjaldmiðlaáhættu.",
+      "explanation": "Heimildir staðfesta að krónan hefur valdið erfiðleikum: <a href=\"https://www.cb.is/monetary-policy/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> sýnir gengissveiflur upp á 50% í kreppunni 2008, <a href=\"https://cb.is/statistics/official-exchange-rate/\" title=\"Seðlabanki Íslands — Monetary Bulletin; ECB Statistical Data Warehouse\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-004</a> greinir frá 10–12% sveiflum á ári og <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> sýnir húsnæðisvexti á bilinu 7,5–8,5% samanborið við 3,4% á evrusvæðinu. <a href=\"https://hagstofa.is/talnaefni/efnahagsmal/utanrikisverslun/\" title=\"Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður\" target=\"_blank\" rel=\"noopener\">FISH-DATA-027</a> staðfestir að sjávarútvegsfyrirtæki gera upp í evrum og dollurum, sem styður seinni hluta fullyrðingarinnar. Þó er orðalagið «sett klafa á» of aftrátt — krónan veitir einnig aðlögunartæki sem nýttist í kreppunni (<a href=\"https://www.sedlabanki.is/hagtolur/\" title=\"Seðlabanki Íslands — Exchange rate data\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-007</a>). Fullyrðingin einfaldar flókna mynd þar sem bæði kostir og gallar fylgja sjálfstæðum gjaldmiðli.",
+      "missing_context": "Krónan virkaði sem höggdeyfir í kreppunni 2008 — gengisveiðni hraðaði efnahagsbata samanborið við evruríki í kreppu. Gjaldeyrishöft stóðu í næstum áratug (<a href=\"https://sedlabanki.is/hagtolur/gengi?PageID=289\" title=\"Seðlabanki Íslands — Capital account liberalisation reports\" target=\"_blank\" rel=\"noopener\">CURR-DATA-002</a>) sem sýnir raunverulegan kostnað, en þau voru einnig talin nauðsynleg til stöðugleika. Verðtryggð lán á Íslandi flækja beinan vaxtasamanburð við evrusvæðið.",
       "supporting_evidence": [
         {
-          "id": "CURR-DATA-002",
-          "source_name": "Seðlabanki Íslands — Capital account liberalisation reports",
-          "source_url": "https://sedlabanki.is/hagtolur/gengi?PageID=289"
+          "id": "SOV-LEGAL-005",
+          "source_name": "Central Bank of Iceland — Monetary policy framework",
+          "source_url": "https://www.cb.is/monetary-policy/"
         },
         {
-          "id": "CURRENCY-DATA-015",
-          "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
-          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+          "id": "TRADE-COMP-004",
+          "source_name": "Seðlabanki Íslands — Monetary Bulletin; ECB Statistical Data Warehouse",
+          "source_url": "https://cb.is/statistics/official-exchange-rate/"
         },
         {
           "id": "HOUS-DATA-005",
@@ -1522,21 +2013,21 @@
           "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
         },
         {
-          "id": "SOV-LEGAL-005",
-          "source_name": "Central Bank of Iceland — Monetary policy framework",
-          "source_url": "https://www.cb.is/monetary-policy/"
+          "id": "FISH-DATA-027",
+          "source_name": "Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður",
+          "source_url": "https://hagstofa.is/talnaefni/efnahagsmal/utanrikisverslun/"
         },
         {
-          "id": "TRADE-DATA-007",
-          "source_name": "Seðlabanki Íslands — Exchange rate data",
-          "source_url": "https://www.sedlabanki.is/hagtolur/"
+          "id": "CURRENCY-DATA-015",
+          "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
+          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
         }
       ],
       "contradicting_evidence": [
         {
-          "id": "TRADE-COMP-004",
-          "source_name": "Seðlabanki Íslands — Monetary Bulletin; ECB Statistical Data Warehouse",
-          "source_url": "https://cb.is/statistics/official-exchange-rate/"
+          "id": "TRADE-DATA-007",
+          "source_name": "Seðlabanki Íslands — Exchange rate data",
+          "source_url": "https://www.sedlabanki.is/hagtolur/"
         }
       ],
       "category": "currency",
@@ -1751,6 +2242,50 @@
       "claim_count": 1,
       "attribution_types": [
         "paraphrased"
+      ]
+    },
+    {
+      "slug": "thorgerdur-katrin-treystir-ekki-thjodinni",
+      "title": "Þorgerður Katrín treystir ekki þjóðinni",
+      "source": "Vísir",
+      "date": "2026-03-13",
+      "claim_count": 1,
+      "attribution_types": [
+        "mentioned",
+        "quoted"
+      ]
+    },
+    {
+      "slug": "18-manudirnir-byggja-ekki-a-formlegum-samtolum",
+      "title": "18 mánuðirnir byggja ekki á formlegum samtölum",
+      "source": "Morgunblaðið",
+      "date": "2026-03-13",
+      "claim_count": 10,
+      "attribution_types": [
+        "paraphrased",
+        "quoted"
+      ]
+    },
+    {
+      "slug": "olafur-ragnar-svarar-carl-bildt-stjornarskrarlega-omogulegt",
+      "title": "Ólafur Ragnar svarar Carl Bildt: Stjórnarskrárlega ómögulegt",
+      "source": "Nútíminn",
+      "date": "2026-03-14",
+      "claim_count": 2,
+      "attribution_types": [
+        "paraphrased"
+      ]
+    },
+    {
+      "slug": "kristrun-sneri-baki-vid-thorgerdi-katrinu",
+      "title": "Kristrún sneri baki við Þorgerði Katrínu",
+      "source": "Nútíminn",
+      "date": "2026-03-14",
+      "claim_count": 2,
+      "attribution_types": [
+        "mentioned",
+        "paraphrased",
+        "quoted"
       ]
     },
     {

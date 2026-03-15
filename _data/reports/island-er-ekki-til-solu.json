@@ -134,8 +134,18 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "Fullyrðingin á rétt á sér að auðlindanýting leggur mikið til gjaldeyristekna. <a href=\"https://hagstofa.is/talnaefni/efnahagsmal/utanrikisverslun/\" title=\"Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður\" target=\"_blank\" rel=\"noopener\">FISH-DATA-027</a> staðfestir miklar gjaldeyristekjur sjávarútvegs og <a href=\"https://orkustofnun.is/en/information/numerical_data/energy\" title=\"Orkustofnun (National Energy Authority) — Energy Statistics 2024\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-005</a> undirstrikar sérstöðu Íslands í endurnýjanlegri orku (85% af frumorku). Hins vegar sýnir <a href=\"https://www.ferdamalastofa.is/en/recearch-and-statistics/tourism-in-iceland-in-figures\" title=\"Ferðamálastofa (Icelandic Tourist Board) — Tourism statistics; Hagstofa Íslands — Balance of payments\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-020</a> að ferðaþjónusta er nú stærsta útflutningsgreinin (~500 milljarðar ISK árið 2024), á undan sjávarútvegi (~2,1 milljarður evra) og áli (~1,5 milljarður evra). Orðalagið «stærstur hluti» er villandi þegar ferðaþjónusta — sem byggir á náttúru en er þjónustugrein — er meðtalin. Auðlindatekjur í hefðbundnum skilningi (sjávarútvegur, ál, orkuframleiðsla) eru verulegur hluti gjaldeyristekna en ekki endilega «stærstur hluti» heildarinnar.",
+      "explanation": "Auðlindagreinar (sjávarútvegur, ál/orkufrekur iðnaður, ferðaþjónusta) eru vissulega lykilstoðir gjaldeyristekna Íslands. <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__utanrikisverslun/\" title=\"Hagstofa Íslands — External trade statistics\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-003</a> sýnir að sjávarafurðir eru um 39% vöruútflutnings, ál um 33%, og <a href=\"https://www.ferdamalastofa.is/en/recearch-and-statistics/tourism-in-iceland-in-figures\" title=\"Ferðamálastofa (Icelandic Tourist Board) — Tourism statistics; Hagstofa Íslands — Balance of payments\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-020</a> staðfestir að ferðaþjónustan er stærsta útflutningsgreinin. Fullyrðingin er þó of einföld — hún nefnir ekki ál sérstaklega og ferðaþjónusta er ekki eingöngu «auðlind» í hefðbundnum skilningi. Lyfjaiðnaður og framleiðsluvörur eru um 12% af útflutningi samkvæmt <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__utanrikisverslun/\" title=\"Hagstofa Íslands — External trade statistics\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-003</a>, sem sýnir aukna fjölbreytni.",
       "supporting_evidence": [
+        {
+          "id": "TRADE-DATA-003",
+          "source_name": "Hagstofa Íslands — External trade statistics",
+          "source_url": "https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__utanrikisverslun/"
+        },
+        {
+          "id": "TRADE-DATA-020",
+          "source_name": "Ferðamálastofa (Icelandic Tourist Board) — Tourism statistics; Hagstofa Íslands — Balance of payments",
+          "source_url": "https://www.ferdamalastofa.is/en/recearch-and-statistics/tourism-in-iceland-in-figures"
+        },
         {
           "id": "FISH-DATA-027",
           "source_name": "Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður",
@@ -145,21 +155,10 @@
           "id": "ENERGY-DATA-001",
           "source_name": "Orkustofnun — Energy Statistics in Iceland 2023",
           "source_url": "https://orkustofnun.is/en/information/publication/energy_data"
-        },
-        {
-          "id": "ENERGY-DATA-005",
-          "source_name": "Orkustofnun (National Energy Authority) — Energy Statistics 2024",
-          "source_url": "https://orkustofnun.is/en/information/numerical_data/energy"
         }
       ],
-      "contradicting_evidence": [
-        {
-          "id": "TRADE-DATA-020",
-          "source_name": "Ferðamálastofa (Icelandic Tourist Board) — Tourism statistics; Hagstofa Íslands — Balance of payments",
-          "source_url": "https://www.ferdamalastofa.is/en/recearch-and-statistics/tourism-in-iceland-in-figures"
-        }
-      ],
-      "missing_context": "Ferðaþjónusta er stærsta útflutningsgreinin og byggir á náttúru Íslands en flokkast ekki sem hefðbundin auðlindavinnsla. <a href=\"https://stjornlagarad.is/other_files/stjornlagarad/Frumvarp-enska.pdf\" title=\"Stjórnlagaráð — A Proposal for a new Constitution for the Republic of Iceland (English translation)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-017</a> lýsir auðlindaákvæðinu úr stjórnarskrárdrögum 2011 sem nær til náttúruauðlinda sem ekki eru í einkaeigu. Skipting gjaldeyristekna milli greina sveiflast eftir gengi og hrávöruverði (<a href=\"https://www.sedlabanki.is/hagtolur/\" title=\"Seðlabanki Íslands — Balance of payments statistics\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-008</a>).",
+      "contradicting_evidence": [],
+      "missing_context": "Fullyrðingin segir «stærstur hluti» sem gæti átt við, en áliðnaðurinn byggir á innfluttum hráefnum (báxíti) og erlendu fjármagni — hann er orkufrekur iðnaður sem nýtir auðlindir en er ekki auðlindavinnsla í þröngum skilningi. Þjónustuútflutningur (sérstaklega ferðaþjónusta) jafnast nú á við vöruútflutning.",
       "confidence": 0.7,
       "speakers": [
         {

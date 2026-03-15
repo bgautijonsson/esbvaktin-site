@@ -10,8 +10,8 @@
   "summary": "Greindar 19 fullyrðingar. Niðurstöður: 7 stutt af heimildum, 7 ekki hægt að sannreyna, 4 stutt að hluta, 1 ekki stutt. Sjónarhorn: hallar á ESB-jákvæða hlið. Heildstæðni: 25%.",
   "capsule": "",
   "verdict_counts": {
-    "supported": 10,
-    "partially_supported": 8,
+    "supported": 11,
+    "partially_supported": 7,
     "unsupported": 1
   },
   "claim_count": 19,
@@ -205,8 +205,8 @@
         "claim_type": "legal_assertion",
         "confidence": 0.85
       },
-      "verdict": "partially_supported",
-      "explanation": "Heimildir staðfesta að stjórnarflokkarnir þrír samþykktu að halda þjóðaratkvæðagreiðslu sem hluta af stjórnarsáttmálanum (<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland; Euronews; France24; coalition agreement\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-013</a>). Flokkur fólksins er þó ESB-efasemdarflokkur sem mun beita sér gegn aðild þrátt fyrir að styðja greiðsluna sjálfa (<a href=\"https://www.flokkurfolksins.is/\" title=\"Coalition agreement 2024; Flokkur fólksins — Party statements; Althingi records\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-018</a>). Fullyrðingin segir «allir flokkar ríkisstjórnarinnar voru sammála» sem gefur til kynna samstöðu um efnismálið, en í raun var samstaðan eingöngu um að halda atkvæðagreiðsluna — ekki um niðurstöðuna. Þetta takmarkar gildi fullyrðingarinnar.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland; Euronews; France24; coalition agreement\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-013</a> staðfestir að þrír stjórnarflokkar — Samfylkingin, Viðreisn og Flokkur fólksins — samþykktu í stjórnarsáttmála að halda þjóðaratkvæðagreiðslu um aðildarviðræður. <a href=\"https://www.flokkurfolksins.is/\" title=\"Coalition agreement 2024; Flokkur fólksins — Party statements; Althingi records\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-018</a> og <a href=\"https://politpro.eu/en/iceland/political-parties/flokkur-folksins\" title=\"Flokkur fólksins party platform; Gallup Þjóðarpúls cross-tabulations by party (February 2026); Althingi coalition agreement 2024\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-014</a> staðfesta bæði að Flokkur fólksins er ESB-gagnrýninn en samþykkti engu að síður greiðsluna sem hluta af stjórnarmyndunarsamningum — sem sýnir «skiptar skoðanir innan og milli flokka» eins og fullyrðingin segir. <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> og <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/\" title=\"Coalition agreements 2009, 2013, 2016, 2017, 2021, 2024; Althingi records\" target=\"_blank\" rel=\"noopener\">POL-DATA-010</a> styrkja myndina af innri og milli-flokka deilum um ESB-málið.",
       "supporting_evidence": [
         {
           "id": "PARTY-DATA-013",
@@ -214,19 +214,29 @@
           "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
         },
         {
-          "id": "SOV-DATA-006",
-          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
-          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
-        },
-        {
           "id": "PARTY-DATA-018",
           "source_name": "Coalition agreement 2024; Flokkur fólksins — Party statements; Althingi records",
           "source_url": "https://www.flokkurfolksins.is/"
+        },
+        {
+          "id": "POLITICAL-DATA-014",
+          "source_name": "Flokkur fólksins party platform; Gallup Þjóðarpúls cross-tabulations by party (February 2026); Althingi coalition agreement 2024",
+          "source_url": "https://politpro.eu/en/iceland/political-parties/flokkur-folksins"
+        },
+        {
+          "id": "SOV-PARL-005",
+          "source_name": "Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)",
+          "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
+        },
+        {
+          "id": "POL-DATA-010",
+          "source_name": "Coalition agreements 2009, 2013, 2016, 2017, 2021, 2024; Althingi records",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Flokkur fólksins mun herja gegn ESB-aðild í kosningabaráttunni þrátt fyrir þátttöku í ríkisstjórn sem auðveldi greiðsluna — þetta er meira en «skiptar skoðanir», þetta er virk andstaða við niðurstöðuna. Stjórnarsamstarfið byggist á málamiðlun þar sem flokkurinn fær önnur stefnumál í staðinn.",
-      "confidence": 0.82,
+      "missing_context": "Samstaða náðist um að halda greiðsluna, en Flokkur fólksins mun herferðast gegn ESB-aðild þrátt fyrir þátttöku í ríkisstjórn. Þjóðaratkvæðagreiðslan er ráðgefandi, ekki bindandi.",
+      "confidence": 0.92,
       "speakers": [
         {
           "name": "Kristrún Frostadóttir",
@@ -249,7 +259,7 @@
         "confidence": 0.3
       },
       "verdict": "partially_supported",
-      "explanation": "Fullyrðingin segir að bæði SA og SI telji forsætisráðherra gera of mikið úr samningsstöðu Íslands. <a href=\"https://sa.is/frettatengt/frettir/vinna-hafin-vid-uttekt-a-stodu-adildarvidraedna-vid-evropusambandid\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> sýnir að SA styður ESB-aðild og leggur áherslu á efnahagslegan ávinning — ekkert bendir til að samtökin hafi gagnrýnt forsætisráðherra fyrir að ofmeta samningsstöðu. <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins (SI) — Membership survey, February/March 2026\" target=\"_blank\" rel=\"noopener\">ORG-DATA-001</a> og <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins — Könnun meðal félagsmanna um ESB-aðild\" target=\"_blank\" rel=\"noopener\">POLL-DATA-023</a> staðfesta að SI er efasemdarfullt gagnvart ESB-aðild, en gagnrýnin snýst um áhættu af regluverki og sjávarútvegsstefnu, ekki beint um samningsstöðu. Nýjar heimildir bæta ekki við staðfestingum á þessari tilteknu gagnrýni.",
+      "explanation": "<a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins (SI) — Membership survey, February/March 2026\" target=\"_blank\" rel=\"noopener\">ORG-DATA-001</a> og <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins — Könnun meðal félagsmanna um ESB-aðild\" target=\"_blank\" rel=\"noopener\">POLL-DATA-023</a> sýna að meirihluti félagsmanna Samtaka iðnaðarins er andvígur ESB-aðild, og andstaðan hefur aukist. <a href=\"https://sa.is/frettatengt/frettir/vinna-hafin-vid-uttekt-a-stodu-adildarvidraedna-vid-evropusambandid\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> lýsir afstöðu Samtaka atvinnulífsins, sem eru ESB-hlynnt. Hins vegar fjallar engin heimild beint um hvort SA eða SI hafi gagnrýnt forsætisráðherra sérstaklega fyrir að gera of mikið úr samningsstöðu Íslands. Fullyrðingin vísar til tiltekinnar gagnrýni sem heimildir staðfesta ekki orðrétt.",
       "supporting_evidence": [
         {
           "id": "ORG-DATA-001",
@@ -260,17 +270,16 @@
           "id": "POLL-DATA-023",
           "source_name": "Samtök iðnaðarins — Könnun meðal félagsmanna um ESB-aðild",
           "source_url": "https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb"
-        }
-      ],
-      "contradicting_evidence": [
+        },
         {
           "id": "POL-DATA-012",
           "source_name": "SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions",
           "source_url": "https://sa.is/frettatengt/frettir/vinna-hafin-vid-uttekt-a-stodu-adildarvidraedna-vid-evropusambandid"
         }
       ],
-      "missing_context": "SA styður ESB-aðild og hefur ekki opinberlega gagnrýnt forsætisráðherra um samningsstöðu — fullyrðingin um SA hlýtur því ekki stoð. SI hefur lýst efasemdum en ekki sérstaklega um «of sterka samningsstöðu». Beinar tilvitnanir í yfirlýsingar samtakanna um þetta efni vantar.",
-      "confidence": 0.35,
+      "contradicting_evidence": [],
+      "missing_context": "SA er ESB-hlynnt (<a href=\"https://sa.is/frettatengt/frettir/vinna-hafin-vid-uttekt-a-stodu-adildarvidraedna-vid-evropusambandid\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a>) og ólíklegt að samtökin gagnrýni samningsstöðu forsætisráðherra á neikvæðan hátt. SI er ESB-efins (<a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins (SI) — Membership survey, February/March 2026\" target=\"_blank\" rel=\"noopener\">ORG-DATA-001</a>) en engin heimild sýnir beina gagnrýni á orð forsætisráðherra um samningsstöðu. Til staðfestingar þyrfti yfirlýsingar eða fundargerðir frá SA og SI.",
+      "confidence": 0.3,
       "speakers": [
         {
           "name": "Samtök Atvinnulífsins",
@@ -303,7 +312,7 @@
         "confidence": 0.65
       },
       "verdict": "partially_supported",
-      "explanation": "POL-DATA-004 staðfestir að Samtök atvinnulífsins hafi stutt ESB-aðild almennt, en ekkert í heimildunum bendir á að SA eða Samtök iðnaðarins hafi orðað afstöðu sína þannig að viðræður snúist «fyrst og fremst um hversu hratt umsóknarríki treysti sér til að aðlagast reglum ESB». <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> staðfesta að aðildarviðræður snúast um aðlögun að regluverkinu, en þær heimildir koma frá Framkvæmdastjórn ESB, ekki frá SA eða SI. Fullyrðingin blandar saman réttri lýsingu á viðræðuferlinu og ótilgreindri tilvísun í samtökin.",
+      "explanation": "<a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> staðfesta skýrt að aðildarviðræður snúist um hvenær og hvernig umsóknarríki innleiðir regluverkið — ekki hvort það geri það. Þetta samrýmist kjarna fullyrðingarinnar. <a href=\"https://sa.is/frettatengt/frettir/vinna-hafin-vid-uttekt-a-stodu-adildarvidraedna-vid-evropusambandid\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> staðfestir afstöðu SA og <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> afstöðu Viðskiptaráðs. Engin heimild staðfestir hins vegar beint að Samtök iðnaðarins (SI) hafi orðað málið á þennan hátt — <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins (SI) — Membership survey, February/March 2026\" target=\"_blank\" rel=\"noopener\">ORG-DATA-001</a> sýnir að 57% félagsmanna SI eru andvígir ESB-aðild, sem dregur í efa hvort SI sem heildarsamtök hafi sett fram þessa fullyrðingu. Tilvísun í SA er rétt en tilvísun í SI er veikari.",
       "supporting_evidence": [
         {
           "id": "EEA-LEGAL-017",
@@ -321,8 +330,14 @@
           "source_url": "https://sa.is/frettatengt/frettir/vinna-hafin-vid-uttekt-a-stodu-adildarvidraedna-vid-evropusambandid"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Heimildir staðfesta ekki beint að SA eða SI hafi orðað afstöðu sína með þessum hætti. <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> fjallar um Viðskiptaráð, ekki SA eða SI. Fyrirvarar í <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> benda á að raunverulegur sveigjanleiki í aðlögunartímabilum geti verið meiri en fullyrðingin gefur til kynna.",
+      "contradicting_evidence": [
+        {
+          "id": "ORG-DATA-001",
+          "source_name": "Samtök iðnaðarins (SI) — Membership survey, February/March 2026",
+          "source_url": "https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb"
+        }
+      ],
+      "missing_context": "Heimildir staðfesta ekki beint að SI hafi sett þessa fullyrðingu fram. Könnun SI (<a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins (SI) — Membership survey, February/March 2026\" target=\"_blank\" rel=\"noopener\">ORG-DATA-001</a>) sýnir að meirihluti félagsmanna er andvígur ESB-aðild, sem gerir ólíklegt að samtökin í heild hafi stuðlað að þessu orðalagi. Aðildarviðræður bjóða upp á svigrúm til aðlögunartímabila sem geta verið efnahagslega og pólitískt mikilvæg — greinin á milli «semja um reglurnar» og «semja um hvenær reglurnar taka gildi» getur verið of einföld.",
       "confidence": 0.45,
       "speakers": [
         {
@@ -356,7 +371,7 @@
         "confidence": 0.8
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://mmm.fi/en/food-and-agriculture/support-and-aid/national-agricultural-aid\" title=\"Act of Accession of Austria, Finland and Sweden (1994), Article 142; Finnish Ministry of Agriculture and Forestry; Commission Decision (EU) 2022/2460\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-002</a> staðfestir að Finnland og Svíþjóð fengu heimild til sérstakrar ríkisaðstoðar til norðlægs landbúnaðar samkvæmt 142. gr. aðildarsamningsins frá 1994. Þó er ónákvæmt að kalla þetta «sérstaka landbúnaðarstefnu» — í raun er um viðbótarstuðning ofan á sameiginlegu landbúnaðarstefnuna að ræða, ekki sérstefnu. Bæði löndin innleiða sameiginlegu landbúnaðarstefnuna að fullu; ríkisaðstoðin kemur til viðbótar.",
+      "explanation": "<a href=\"https://mmm.fi/en/food-and-agriculture/support-and-aid/national-agricultural-aid\" title=\"Act of Accession of Austria, Finland and Sweden (1994), Article 142; Finnish Ministry of Agriculture and Forestry; Commission Decision (EU) 2022/2460\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-002</a> staðfestir að Finnland og Svíþjóð fengu sérstök ákvæði um landbúnaðarstuðning (grein 142 í aðildarsamningi 1994) vegna norðlægra svæða. Þetta eru þó viðbótar greiðslur ofan á sameiginlegu landbúnaðarstefnuna, ekki sérstök «landbúnaðarstefna» eins og fullyrðingin gefur til kynna. Bæði löndin innleiða sameiginlegu landbúnaðarstefnuna til fulls og hafa gert frá upphafi, eins og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-004</a> undirstrikar. Orðalag fullyrðingarinnar ofmetur umfang sérfyrirkomulagsins.",
       "supporting_evidence": [
         {
           "id": "AGRI-LEGAL-002",
@@ -381,8 +396,8 @@
           "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
         }
       ],
-      "missing_context": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-004</a> undirstrikar að ekkert ESB-ríki hefur nokkru sinni fengið varanlega undanþágu frá sameiginlegu landbúnaðarstefnunni. Finnsk og sænsk aðstoð er viðbót, ekki undanþága. Stuðningurinn má ekki leiða til aukinnar framleiðslu eða fara yfir stuðning fyrir aðild. Fullyrðingin gefur til kynna meiri sérstöðu en raunin er.",
-      "confidence": 0.8,
+      "missing_context": "Sérfyrirkomulagið er viðbótarstuðningur, ekki sérstök landbúnaðarstefna. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-004</a> undirstrikar að ekkert ESB-ríki hafi fengið varanlega undanþágu frá sameiginlegu landbúnaðarstefnunni. Nýjar heimildir (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); OECD Economic Surveys: Iceland 2021\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-019</a>, <a href=\"https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en\" title=\"European Commission — CAP direct payments: phasing-in for new member states; Regulation (EU) 2021/2115 (CAP Strategic Plans)\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-020</a>, <a href=\"https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en\" title=\"European Commission — CAP at a glance; MFF 2021–2027 Regulation (EU) 2020/2093\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-015</a>) staðfesta að landbúnaður krefðist mikilla breytinga fyrir Ísland en breyta ekki mati á Finnlands- og Svíþjóðarfordæminu.",
+      "confidence": 0.85,
       "speakers": [
         {
           "name": "Kristrún Frostadóttir",
@@ -442,7 +457,7 @@
         "confidence": 0.2
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.consilium.europa.eu/en/\" title=\"Press conference statements — Donald Tusk, PM of Poland (2025–2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-011</a> staðfestir að Tusk hafi sagt opinberlega að ESB þyrfti að laga sig að löndum eins og Íslandi og Noregi. Heimildin nefnir hins vegar «opinberar yfirlýsingar» almennt en staðfestir ekki sérstaklega «blaðamannafund» sem vettvang ummælanna. Fyrirvarinn í heimildinni tekur fram að nákvæmt orðalag og samhengi eigi enn eftir að sannreyna gegn frumheimildum (fundargerðum eða upptökum). Þar sem fullyrðingin tilgreinir nákvæmt form (blaðamannafund) sem heimildin staðfestir ekki beint, er matið aðeins að hluta stutt.",
+      "explanation": "<a href=\"https://www.consilium.europa.eu/en/\" title=\"Press conference statements — Donald Tusk, PM of Poland (2025–2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-011</a> staðfestir að Donald Tusk, forsætisráðherra Póllands, sagði opinberlega að ESB þyrfti að laga sig að smærri ríkjum og gera aðild aðlaðandi fyrir lönd eins og Ísland og Noreg. Þetta er í samræmi við kjarna fullyrðingarinnar. Þó er fyrirvari um að nákvæm orðalag Tusks og samhengi hafi ekki verið staðfest úr frumheimildum (blaðamannafundarritum). Fullyrðingin um «blaðamannafund» er ekki sérstaklega staðfest — heimildin talar um «press conference statements» almennt.",
       "supporting_evidence": [
         {
           "id": "PREC-DATA-011",
@@ -451,8 +466,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Nákvæmt orðalag og samhengi ummæla Tusks þarfnast staðfestingar úr frumheimildum. Forgangsmál Póllands í stækkunarmálum hafa verið austurstækkun (Úkraína, Vestur-Balkan) frekar en norræn aðild. Yfirlýsingar stjórnmálamanna um stækkun geta verið frábrugðnar raunverulegum samningaafstöðum.",
-      "confidence": 0.65,
+      "missing_context": "Nákvæm orðalag og samhengi yfirlýsinga Tusks þarf að staðfesta úr frumheimildum. Heimildin nefnir «press conference statements» en ekki ákveðinn blaðamannafund. Tusk hefur sögulega stutt stækkun ESB en forgangsröðun hans hefur verið stækkun austur (Úkraína, Vestur-Balkan) frekar en norður (Ísland, Noregur). Pólitískar yfirlýsingar um stækkun kunna að vera frábrugðnar raunverulegri samningsstöðu.",
+      "confidence": 0.6,
       "speakers": [
         {
           "name": "Kristrún Frostadóttir",
@@ -576,7 +591,7 @@
         "confidence": 0.2
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://ec.europa.eu/commission/presscorner/detail/en/ac_25_1887\" title=\"European Commission — Press Corner; EEAS\" target=\"_blank\" rel=\"noopener\">EEA-DATA-015</a> staðfestir að forsætisráðherra Kristrún Frostadóttir hitti Ursulu von der Leyen tvisvar árið 2025 — í Brussel í apríl og í Reykjavík í júlí — og að fundirnir einkenndust af hlýju andrúmslofti, meðal annars þyrluferð yfir jökla og heimsókn á Landhelgisgæsluna. Opinber umgjörð var þó öryggis- og varnarsamstarf, ekki ESB-aðild beint. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Coalition agreement (stjórnarsáttmáli) 2024; party platforms; media reporting March 2026\" target=\"_blank\" rel=\"noopener\">POL-DATA-021</a> staðfestir að ríkisstjórnin er dregin áfram af tveimur ESB-jákvæðum flokkum. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> bendir til þess að ESB myndi fagna aðild Íslands en leiti hennar ekki sérstaklega. Túlkunin um «jákvæð samskipti gagnvart ESB-aðild» er mat á andrúmslofti fremur en staðfest efnisleg afstaða.",
+      "explanation": "<a href=\"https://ec.europa.eu/commission/presscorner/detail/en/ac_25_1887\" title=\"European Commission — Press Corner; EEAS\" target=\"_blank\" rel=\"noopener\">EEA-DATA-015</a> lýsir tveimur fundum Kristrúnar Frostadóttur við Ursulu von der Leyen árið 2025 og nefnir hlýrri samskipti en áður, þar á meðal þyrluferð og tilkynningu um öryggis- og varnarsamstarfssamning. Heimildin tekur þó skýrt fram að fundirnir voru formlega um öryggissamstarf, ekki ESB-aðild. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Coalition agreement (stjórnarsáttmáli) 2024; party platforms; media reporting March 2026\" target=\"_blank\" rel=\"noopener\">POL-DATA-021</a> staðfestir að Samfylkingin og Viðreisn eru ESB-jákvæðir flokkar í ríkisstjórn. Fullyrðingin túlkar andrúmsloft fundanna sem jákvætt gagnvart ESB-aðild, en heimildir staðfesta aðeins jákvæð samskipti almennt — ekki beinlínis um aðild.",
       "supporting_evidence": [
         {
           "id": "EEA-DATA-015",
@@ -587,16 +602,11 @@
           "id": "POL-DATA-021",
           "source_name": "Coalition agreement (stjórnarsáttmáli) 2024; party platforms; media reporting March 2026",
           "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
-        },
-        {
-          "id": "TRADE-DATA-022",
-          "source_name": "European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications",
-          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Fundirnir fjölluðu opinberlega um öryggis- og varnarsamstarf, ekki ESB-aðild beint. Túlkunin um jákvæð samskipti gagnvart aðild byggist á andrúmslofti og samhengi, ekki opinberum yfirlýsingum. Einnig var vinnufundur í janúar 2026 sem takmarkaðar upplýsingar liggja fyrir um (<a href=\"https://ec.europa.eu/commission/presscorner/detail/en/ac_25_1887\" title=\"European Commission — Press Corner; EEAS\" target=\"_blank\" rel=\"noopener\">EEA-DATA-015</a>).",
-      "confidence": 0.58,
+      "missing_context": "Opinber umgjörð fundanna var öryggis- og varnarsamstarf, ekki ESB-aðild. Túlkunin á «jákvæðum samskiptum gagnvart ESB-aðild» er ekki staðfest af heimildum — aðeins almennt hlý viðmót. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> bendir á að ESB myndi fagna aðild Íslands en sé ekki í virkri sókn eftir henni.",
+      "confidence": 0.55,
       "speakers": [
         {
           "name": "Kristrún Frostadóttir",
@@ -748,7 +758,7 @@
         "confidence": 0.3
       },
       "verdict": "partially_supported",
-      "explanation": "SOV-DATA-022 staðfestir að forsætisráðherra hafi lýst því yfir að ríkisstjórnin muni virða niðurstöðu þjóðaratkvæðagreiðslunnar, og nefnir fordæmið frá 2012 sem sýnir pólitískan kostnað þess að hunsa slíka niðurstöðu. Fullyrðingin um að forsætisráðherra telji umræðuna «lokna» ef þjóðin segir nei er hins vegar sterkari en það sem heimildir staðfesta beint — að virða niðurstöðu er ekki það sama og að lýsa umræðunni lokið. Orðalagið «umræðunni lokið» er túlkun sem ekki er staðfest orðrétt í heimildum.",
+      "explanation": "Heimildir staðfesta að forsætisráðherra hafi lýst því yfir að ríkisstjórnin muni virða niðurstöðu þjóðaratkvæðagreiðslunnar (SOV-DATA-022). <a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> lýsir afstöðu Kristrúnar til ESB-málsins. Hins vegar finnst engin bein heimild þar sem forsætisráðherra segir umræðuna um ESB «lokna» ef þjóðin segir nei. SOV-DATA-022 tekur fram að ríkisstjórnin muni virða niðurstöðuna, en orðalagið «umræðan lokin» er sterkara en heimildir styðja — pólitískar umræður geta haldið áfram þrátt fyrir niðurstöðu þjóðaratkvæðagreiðslu.",
       "supporting_evidence": [
         {
           "id": "SOV-DATA-022",
@@ -759,11 +769,16 @@
           "id": "SOV-DATA-006",
           "source_name": "Government of Iceland announcement; Althingi parliamentary records",
           "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+        },
+        {
+          "id": "PARTY-DATA-016",
+          "source_name": "Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16",
+          "source_url": "https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Forsætisráðherra hefur einnig talað um nauðsyn «óvenju sterks umboðs», sem gæti þýtt að þröng niðurstaða veiti svigrúm til að halda umræðunni opinni. Þjóðaratkvæðagreiðslan er ráðgefandi samkvæmt stjórnarskrá og Alþingi heldur fullu valdi óháð niðurstöðu.",
-      "confidence": 0.6,
+      "missing_context": "Engin heimild notar orðalagið «umræðan lokin» beint. Þjóðaratkvæðagreiðslan er ráðgefandi og Alþingi er ekki lagalega bundið af niðurstöðunni. Fordæmi 2012 stjórnarskrárþjóðaratkvæðagreiðslunnar sýnir að ráðgefandi niðurstöður hafa ekki alltaf verið virtar, þótt slíkt hafi vakið harða gagnrýni. Kristrún hefur einnig talað um «ofboðslega sterkt umboð» sem skilyrði, sem gefur til kynna að þröng niðurstaða gæti opnað á túlkun.",
+      "confidence": 0.5,
       "speakers": [
         {
           "name": "RÚV",
@@ -844,7 +859,7 @@
         "confidence": 0.2
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://ec.europa.eu/commission/presscorner/detail/en/ac_25_1887\" title=\"European Commission — Press Corner; EEAS\" target=\"_blank\" rel=\"noopener\">EEA-DATA-015</a> staðfestir að Kristrún Frostadóttir hitti forseta framkvæmdastjórnar ESB tvisvar árið 2025, þar á meðal á heimsókn von der Leyen til Íslands, og að varnarsamstarfsviðræður hófust. <a href=\"https://www.reuters.com/world/\" title=\"Multiple news sources — Reuters, AP, BBC coverage of Trump Greenland statements (2025)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-011</a> lýsir Grænlandsátökum Trump-stjórnarinnar sem eykur á hernaðarpólitíska mikilvægi Íslands. Heimildir staðfesta umfangsmikil alþjóðleg samskipti forsætisráðherra, en orðalagið «óvenju marga erlenda fundi» er samanburðarfullyrðing sem krefst viðmiðunar við fyrri forsætisráðherra — slík gögn eru ekki tiltæk.",
+      "explanation": "<a href=\"https://ec.europa.eu/commission/presscorner/detail/en/ac_25_1887\" title=\"European Commission — Press Corner; EEAS\" target=\"_blank\" rel=\"noopener\">EEA-DATA-015</a> staðfestir tvo fundi forsætisráðherra við forseta framkvæmdastjórnar ESB árið 2025 og einn vinnufund í janúar 2026. <a href=\"https://www.reuters.com/world/\" title=\"Multiple news sources — Reuters, AP, BBC coverage of Trump Greenland statements (2025)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-011</a> lýsir Trump-Grænlandságreiningnum sem breytti öryggisumhverfi norðurslóða, og <a href=\"https://www.consilium.europa.eu/en/\" title=\"Press conference statements — Donald Tusk, PM of Poland (2025–2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-011</a> nefnir yfirlýsingar Tusk um ESB-umbætur. Þetta gefur til kynna aukna alþjóðlega virkni forsætisráðherra. Engin heimild ber þó saman fjölda funda við fyrri forsætisráðherra til að staðfesta «óvenju marga» fundi — fullyrðingin vantar viðmið.",
       "supporting_evidence": [
         {
           "id": "EEA-DATA-015",
@@ -855,11 +870,16 @@
           "id": "SOV-DATA-011",
           "source_name": "Multiple news sources — Reuters, AP, BBC coverage of Trump Greenland statements (2025)",
           "source_url": "https://www.reuters.com/world/"
+        },
+        {
+          "id": "PREC-DATA-011",
+          "source_name": "Press conference statements — Donald Tusk, PM of Poland (2025–2026)",
+          "source_url": "https://www.consilium.europa.eu/en/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Heimildir staðfesta nokkra háttsetna fundi en segja ekkert um hvort tíðnin sé «óvenjuleg» miðað við fyrri forsætisráðherra. Samanburður á erlendu fundahaldi forsætisráðherra yfir tíma vantar í gagnagrunninn.",
-      "confidence": 0.45,
+      "missing_context": "Engin heimild ber fundahald Kristrúnar Frostadóttur saman við fyrri forsætisráðherra. Fundirnir við von der Leyen voru formlega um öryggis- og varnarsamstarf, ekki ESB-aðild. Til að meta hvort fundafjöldinn sé «óvenjulegur» þyrfti samanburðargögn sem ekki eru til staðar í heimildum.",
+      "confidence": 0.35,
       "speakers": [
         {
           "name": "RÚV",
@@ -893,14 +913,14 @@
       "attribution_type": "paraphrased",
       "claim_count": 14,
       "verdicts": {
-        "supported": 7,
-        "partially_supported": 6,
+        "supported": 8,
+        "partially_supported": 5,
         "unsupported": 1
       },
       "stance": "pro_eu",
       "slug": "kristrun-frostadottir",
-      "mention_count": 15,
-      "credibility": 0.73
+      "mention_count": 18,
+      "credibility": 0.72
     },
     {
       "name": "Samtök Atvinnulífsins",
@@ -942,8 +962,8 @@
       },
       "stance": "pro_eu",
       "slug": "donald-tusk",
-      "mention_count": 2,
-      "credibility": null
+      "mention_count": 3,
+      "credibility": 0.5
     }
   ]
 }
