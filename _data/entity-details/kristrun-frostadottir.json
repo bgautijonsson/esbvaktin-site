@@ -6,20 +6,20 @@
   "role": "forsætisráðherra",
   "party": "Samfylkingin",
   "stance": "mixed",
-  "stance_score": 0.45,
+  "stance_score": 0.48,
   "credibility": 0.72,
   "attribution_counts": {
-    "quoted": 60,
-    "paraphrased": 26,
+    "quoted": 63,
+    "paraphrased": 32,
     "mentioned": 11
   },
   "althingi_stats": null,
   "scorecard": {
-    "supported": 28,
+    "supported": 29,
     "misleading": 1,
-    "partially_supported": 19,
+    "partially_supported": 22,
     "unsupported": 1,
-    "unverifiable": 9
+    "unverifiable": 12
   },
   "claims": [
     {
@@ -223,13 +223,13 @@
     {
       "claim_text": "Allir flokkar ríkisstjórnarinnar voru sammála um að þjóðaratkvæðagreiðsla um ESB-aðildarviðræður yrði haldin, þrátt fyrir skiptar skoðanir innan og milli flokka.",
       "original_quote": "það eru skiptar skoðanir innan flokka og milli flokka en allir sammála um að það væri gott að láta af þessu verða.",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland; Euronews; France24; coalition agreement\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-013</a> staðfestir að þrír stjórnarflokkar — Samfylkingin, Viðreisn og Flokkur fólksins — samþykktu í stjórnarsáttmála að halda þjóðaratkvæðagreiðslu um aðildarviðræður. <a href=\"https://www.flokkurfolksins.is/\" title=\"Coalition agreement 2024; Flokkur fólksins — Party statements; Althingi records\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-018</a> og <a href=\"https://politpro.eu/en/iceland/political-parties/flokkur-folksins\" title=\"Flokkur fólksins party platform; Gallup Þjóðarpúls cross-tabulations by party (February 2026); Althingi coalition agreement 2024\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-014</a> staðfesta bæði að Flokkur fólksins er ESB-gagnrýninn en samþykkti engu að síður greiðsluna sem hluta af stjórnarmyndunarsamningum — sem sýnir «skiptar skoðanir innan og milli flokka» eins og fullyrðingin segir. <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> og <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/\" title=\"Coalition agreements 2009, 2013, 2016, 2017, 2021, 2024; Althingi records\" target=\"_blank\" rel=\"noopener\">POL-DATA-010</a> styrkja myndina af innri og milli-flokka deilum um ESB-málið.",
-      "missing_context": "Samstaða náðist um að halda greiðsluna, en Flokkur fólksins mun herferðast gegn ESB-aðild þrátt fyrir þátttöku í ríkisstjórn. Þjóðaratkvæðagreiðslan er ráðgefandi, ekki bindandi.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Coalition agreement (stjórnarsáttmáli) 2024; party platforms; media reporting March 2026\" target=\"_blank\" rel=\"noopener\">POL-DATA-021</a> og <a href=\"https://www.flokkurfolksins.is/\" title=\"Coalition agreement 2024; Flokkur fólksins — Party statements; Althingi records\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-018</a> staðfesta að allir þrír stjórnarflokkarnir samþykktu þjóðaratkvæðagreiðsluna sem hluta af stjórnarsáttmálanum. Fullyrðingin segir flokkana hafi verið «sammála» þrátt fyrir skiptar skoðanir, en samkomulagið er nákvæmara lýst sem málamiðlun: Flokkur fólksins samþykkti þjóðaratkvæðagreiðsluna en herferðar gegn ESB-aðild. Orðið «sammála» gefur til kynna samstöðu sem var ekki til staðar — öllu heldur var um stjórnarsáttmálasamkomulag að ræða þar sem einn flokkur er beinlínis andvígur niðurstöðunni.",
+      "missing_context": "Flokkur fólksins herferðar gegn ESB-aðild þrátt fyrir þátttöku í ríkisstjórn sem auðveldaði þjóðaratkvæðagreiðsluna. Fullyrðingin gefur villandi mynd af samstöðu þegar um var að ræða pólitískan málamiðlun þar sem einn flokkur er opinskátt andvígur.",
       "supporting_evidence": [
         {
-          "id": "PARTY-DATA-013",
-          "source_name": "Government of Iceland; Euronews; France24; coalition agreement",
+          "id": "POL-DATA-021",
+          "source_name": "Coalition agreement (stjórnarsáttmáli) 2024; party platforms; media reporting March 2026",
           "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
         },
         {
@@ -238,22 +238,18 @@
           "source_url": "https://www.flokkurfolksins.is/"
         },
         {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        }
+      ],
+      "contradicting_evidence": [
+        {
           "id": "POLITICAL-DATA-014",
           "source_name": "Flokkur fólksins party platform; Gallup Þjóðarpúls cross-tabulations by party (February 2026); Althingi coalition agreement 2024",
           "source_url": "https://politpro.eu/en/iceland/political-parties/flokkur-folksins"
-        },
-        {
-          "id": "SOV-PARL-005",
-          "source_name": "Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)",
-          "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
-        },
-        {
-          "id": "POL-DATA-010",
-          "source_name": "Coalition agreements 2009, 2013, 2016, 2017, 2021, 2024; Althingi records",
-          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/"
         }
       ],
-      "contradicting_evidence": [],
       "category": "party_positions",
       "attribution": "quoted",
       "article_slug": "enginn-afslattur-gefinn-segi-thjodin-ja-vid-adildarvidraedum",
@@ -369,7 +365,7 @@
       "claim_text": "Ísland mun geta greiðt atkvæði aftur um ESB-aðild að loknum aðildarviðræðum, segi þjóðin já í fyrstu þjóðaratkvæðagreiðslunni.",
       "original_quote": "þetta snýst um hvort við getum fengið að vita meira eða ekki, verður við sátt um það sem við fáum og síðan verður hægt að greiða atkvæði aftur.",
       "verdict": "supported",
-      "explanation": "<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> staðfestir að þjóðaratkvæðagreiðslan 29. ágúst er um hvort hefja skyldi viðræður — ekki um aðild í heild. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir þetta: Þorgerður Katrín hafði lofað 'aldrei að skrifa undir samning sem tryggir ekki okkar markmið'. <a href=\"https://www.althingi.is/lagas/nv/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79\" target=\"_blank\" rel=\"noopener\">SOV-DATA-002</a> undirstrikar að fyrstu þjóðaratkvæðagreiðslan er ráðgefandi — Alþingi þarf að taka endanlega ákvörðun. Tvítekna atkvæðagreiðslan (fyrst um viðræður, síðan um aðildarsamnig) er hluti af yfirlýstri stefnu ríkisstjórnarinnar.",
+      "explanation": "<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> staðfestir að þjóðaratkvæðagreiðslan 29. ágúst er um hvort hefja skyldi viðræður — ekki um aðild í heild. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir þetta: Þorgerður Katrín hafði lofað 'aldrei að skrifa undir samning sem tryggir ekki okkar markmið'. <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79\" target=\"_blank\" rel=\"noopener\">SOV-DATA-002</a> undirstrikar að fyrstu þjóðaratkvæðagreiðslan er ráðgefandi — Alþingi þarf að taka endanlega ákvörðun. Tvítekna atkvæðagreiðslan (fyrst um viðræður, síðan um aðildarsamnig) er hluti af yfirlýstri stefnu ríkisstjórnarinnar.",
       "missing_context": "Tvær þjóðaratkvæðagreiðslur eru stefna ríkisstjórnarinnar en ekki lögbundinn réttur þjóðarinnar. Ef þjóðin greiðir já og viðræður klárast, eru engin lög sem skylda ríkisstjórnina til að efna þriðju þjóðaratkvæðagreiðslu. Enn fremur má ógilda aðildarsamning með þingstjórnarlegum leiðum án sérstakrar þjóðaratkvæðagreiðslu.",
       "supporting_evidence": [
         {
@@ -400,7 +396,7 @@
       "claim_text": "Þjóðaratkvæðagreiðslan er ákveðin þannig að hún er ekki atkvæðagreiðsla um ESB-aðild í heild, heldur um hvort hafist verði handa við aðildarviðræður.",
       "original_quote": "Spurt verður: \"Á að halda áfram viðræðum um aðild Íslands að Evrópusambandinu?\"",
       "verdict": "supported",
-      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a>, <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> og <a href=\"https://www.althingi.is/lagas/nv/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79\" target=\"_blank\" rel=\"noopener\">SOV-DATA-002</a> staðfesta öll að þjóðaratkvæðagreiðslan er um hvort hefja skyldi aðildarviðræður — ekki um aðild sjálfa. <a href=\"https://fel.hi.is/is/rannsoknir-spurningalistakannanir/simakannanir\" title=\"Félagsvísindastofnun — Methodology notes on EU polling; comparison of Gallup, MMR, and Maskína polls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-010</a> bendir jafnframt á að þetta er marktækt: spurningar um viðræður skapa hærri stuðning en spurningar um aðild beint. <a href=\"https://www.althingi.is/lagas/nv/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79\" target=\"_blank\" rel=\"noopener\">SOV-DATA-002</a> undirstrikar ráðgefandi eðli þjóðaratkvæðagreiðslunnar.",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a>, <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> og <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79\" target=\"_blank\" rel=\"noopener\">SOV-DATA-002</a> staðfesta öll að þjóðaratkvæðagreiðslan er um hvort hefja skyldi aðildarviðræður — ekki um aðild sjálfa. <a href=\"https://fel.hi.is/is/rannsoknir-spurningalistakannanir/simakannanir\" title=\"Félagsvísindastofnun — Methodology notes on EU polling; comparison of Gallup, MMR, and Maskína polls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-010</a> bendir jafnframt á að þetta er marktækt: spurningar um viðræður skapa hærri stuðning en spurningar um aðild beint. <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79\" target=\"_blank\" rel=\"noopener\">SOV-DATA-002</a> undirstrikar ráðgefandi eðli þjóðaratkvæðagreiðslunnar.",
       "missing_context": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T175023.html\" title=\"Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-003</a> (Guðrún Hafsteinsdóttir, Sjálfstæðisflokkurinn) gagnrýnir þessa framsetningu og heldur því fram að þjóðaratkvæðagreiðslan sé í raun pólítísk ákvörðun til að setja Ísland aftur á ESB-brautina, óháð efnislegu matsamhenginu.",
       "supporting_evidence": [
         {
@@ -416,7 +412,7 @@
         {
           "id": "SOV-DATA-002",
           "source_name": "Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79",
-          "source_url": "https://www.althingi.is/lagas/nv/1944033.html"
+          "source_url": "https://www.althingi.is/lagas/nuna/1944033.html"
         },
         {
           "id": "SOV-PARL-004",
@@ -549,7 +545,7 @@
         {
           "id": "SOV-LEGAL-005",
           "source_name": "Central Bank of Iceland — Monetary policy framework",
-          "source_url": "https://www.cb.is/monetary-policy/"
+          "source_url": "https://sedlabanki.is/peningastefna/"
         }
       ],
       "contradicting_evidence": [],
@@ -741,7 +737,7 @@
       "claim_text": "Þingsályktunartillagan um þjóðaratkvæðagreiðsluna er ráðgefandi atkvæðagreiðsla samkvæmt lögum.",
       "original_quote": "þrátt fyrir að þetta sé ráðgefandi atkvæðagreiðsla lögum samkvæmt",
       "verdict": "supported",
-      "explanation": "<a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland), Articles 26, 65, 79; Althingi records on 2012 referendum follow-up\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-026</a> staðfestir þetta ótvírætt: þjóðaratkvæðagreiðslan er ráðgefandi, ekki bindandi. Íslensk stjórnarskrá kveður ekki á um bindandi þjóðaratkvæðagreiðslur um stefnumál — eini bindandi mechanisminn er 26. grein um synjun forseta. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> og <a href=\"https://www.althingi.is/lagas/nv/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79\" target=\"_blank\" rel=\"noopener\">SOV-DATA-002</a> styðja þetta enn frekar. Alþingi heldur endanlegum löggjafarvaldi óháð niðurstöðu.",
+      "explanation": "<a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland), Articles 26, 65, 79; Althingi records on 2012 referendum follow-up\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-026</a> staðfestir þetta ótvírætt: þjóðaratkvæðagreiðslan er ráðgefandi, ekki bindandi. Íslensk stjórnarskrá kveður ekki á um bindandi þjóðaratkvæðagreiðslur um stefnumál — eini bindandi mechanisminn er 26. grein um synjun forseta. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> og <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79\" target=\"_blank\" rel=\"noopener\">SOV-DATA-002</a> styðja þetta enn frekar. Alþingi heldur endanlegum löggjafarvaldi óháð niðurstöðu.",
       "missing_context": "Þótt lagalega sé atkvæðagreiðslan ráðgefandi, hafa stjórnarflokkarnir skuldbundið sig til að virða niðurstöðuna. Fordæmið frá 2012 (stjórnarskrárþjóðaratkvæðagreiðslan) sýnir að ráðgefandi niðurstöður geta verið hunsaðar, en slíkt vekur pólitíska reiði.",
       "supporting_evidence": [
         {
@@ -757,7 +753,7 @@
         {
           "id": "SOV-DATA-002",
           "source_name": "Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79",
-          "source_url": "https://www.althingi.is/lagas/nv/1944033.html"
+          "source_url": "https://www.althingi.is/lagas/nuna/1944033.html"
         }
       ],
       "contradicting_evidence": [],
@@ -1099,7 +1095,7 @@
       "claim_text": "Stjórnarsáttmálinn bindur ekki hendur Kristrúnar Frostadóttur um þjóðaratkvæðagreiðsluna.",
       "original_quote": "þrátt fyrir að stjórnarsáttmálinn bindi í engu hendur hennar um það",
       "verdict": "unverifiable",
-      "explanation": "Heimildir staðreyndagrunnsins lýsa stjórnarsáttmálanum sem skuldbindingu um þjóðaratkvæðagreiðslu (<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland; Euronews; France24; coalition agreement\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-013</a>) en innihalda ekki nákvæman texta sáttmálans. Ekki er hægt að meta hvort sáttmálinn «bindi hendur» forsætisráðherra um framkvæmd eða niðurstöðu án aðgangs að orðalagi hans. <a href=\"https://www.althingi.is/lagas/nv/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79\" target=\"_blank\" rel=\"noopener\">SOV-DATA-002</a> bendir á að þjóðaratkvæðagreiðslan sé ráðgefandi, sem þýðir að Alþingi heldur lokaákvörðunarvaldinu óháð stjórnarsáttmálanum.",
+      "explanation": "Heimildir staðreyndagrunnsins lýsa stjórnarsáttmálanum sem skuldbindingu um þjóðaratkvæðagreiðslu (<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland; Euronews; France24; coalition agreement\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-013</a>) en innihalda ekki nákvæman texta sáttmálans. Ekki er hægt að meta hvort sáttmálinn «bindi hendur» forsætisráðherra um framkvæmd eða niðurstöðu án aðgangs að orðalagi hans. <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79\" target=\"_blank\" rel=\"noopener\">SOV-DATA-002</a> bendir á að þjóðaratkvæðagreiðslan sé ráðgefandi, sem þýðir að Alþingi heldur lokaákvörðunarvaldinu óháð stjórnarsáttmálanum.",
       "missing_context": "Nákvæmur texti stjórnarsáttmálans er ekki í staðreyndagrunni. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland; Euronews; France24; coalition agreement\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-013</a> staðfestir aðeins að stjórnarflokkarnir samþykktu að halda þjóðaratkvæðagreiðslu — ekki hvaða skuldbindingar Kristrún ber persónulega.",
       "supporting_evidence": [],
       "contradicting_evidence": [
@@ -1120,7 +1116,7 @@
       "claim_text": "Ísland gengur ekki inn í Evrópusambandið eftir fyrstu þjóðaratkvæðagreiðsluna — til þess þarf tvær þjóðaratkvæðagreiðslur.",
       "original_quote": "Ísland gengur ekki inn í Evrópusambandið eftir þessa þjóðaratkvæðagreiðslu. Ísland gengur ekki inn í Evrópusambandið fyrr en að undangengnum tveimur þjóðaratkvæðagreiðslum.",
       "verdict": "partially_supported",
-      "explanation": "Rétt er að atkvæðagreiðslan 29. ágúst snýst um að hefja aðildarviðræður, ekki um aðild sjálfa — samkvæmt <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> og <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> er spurningin «Á að halda áfram viðræðum um aðild Íslands að Evrópusambandinu?». Að ESB-aðild krefjist annarrar þjóðaratkvæðagreiðslu um lokasamning er hins vegar ekki tryggt í lögum. <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands; Stjórnlaganefnd (2011) report\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-027</a> og <a href=\"https://www.althingi.is/lagas/nv/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79\" target=\"_blank\" rel=\"noopener\">SOV-DATA-002</a> benda á að stjórnarskráin geymi enga ákvæði um bindandi þjóðaratkvæðagreiðslur um fullveldisframsal. Tvær atkvæðagreiðslur eru pólitískt líklegar en ekki lagalega tryggðar.",
+      "explanation": "Rétt er að atkvæðagreiðslan 29. ágúst snýst um að hefja aðildarviðræður, ekki um aðild sjálfa — samkvæmt <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> og <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> er spurningin «Á að halda áfram viðræðum um aðild Íslands að Evrópusambandinu?». Að ESB-aðild krefjist annarrar þjóðaratkvæðagreiðslu um lokasamning er hins vegar ekki tryggt í lögum. <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands; Stjórnlaganefnd (2011) report\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-027</a> og <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79\" target=\"_blank\" rel=\"noopener\">SOV-DATA-002</a> benda á að stjórnarskráin geymi enga ákvæði um bindandi þjóðaratkvæðagreiðslur um fullveldisframsal. Tvær atkvæðagreiðslur eru pólitískt líklegar en ekki lagalega tryggðar.",
       "missing_context": "Engin lagaskylda er til staðar um aðra þjóðaratkvæðagreiðslu um lokasamning — þetta er pólitískt loforð, ekki lagalegt skilyrði. <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands; Stjórnlaganefnd (2011) report\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-027</a> útskýrir að stjórnarskráin krefst tveggja þingfunda með kosningum á milli til breytinga (79. gr.), en segir ekkert um aðra þjóðaratkvæðagreiðslu.",
       "supporting_evidence": [
         {
@@ -1143,7 +1139,7 @@
         {
           "id": "SOV-DATA-002",
           "source_name": "Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79",
-          "source_url": "https://www.althingi.is/lagas/nv/1944033.html"
+          "source_url": "https://www.althingi.is/lagas/nuna/1944033.html"
         },
         {
           "id": "SOV-LEGAL-016",
@@ -1568,6 +1564,165 @@
       "article_title": "Þjóðaratkvæðagreiðslan er um aðild Íslands að Evrópusambandinu",
       "article_source": "Viðskiptablaðið",
       "article_date": "2026-03-11"
+    },
+    {
+      "claim_text": "Kristrún Frostadóttir lýsti því yfir í Speglinum á RÚV 10. mars 2026 að hún sé jákvæð gagnvart Evrópusambandinu en að Evrópumálin hafi ekki verið ástæða þess að hún fór út í pólitík.",
+      "original_quote": "Ég hef alltaf verið hlynnt því að skoða Evrópusambandið, ég er í Samfylkingunni sem er Evrópusinnaður flokkur og ég er jákvæð gagnvart Evrópusambandinu en í grunnnin er ég fyrst og fremst jafnaðarmaður og það er fullt af málum sem ég treysti mér til að klára án inngöngu í Evrópusambandið",
+      "verdict": "supported",
+      "explanation": "Heimildir staðfesta að Kristrún hefur lýst sig jákvæða gagnvart ESB en lagt áherslu á að jafnaðarstefna sé hennar meginpólitík. <a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> sýnir að hún sagði ESB-aðild yrði ekki á dagskrá á kjörtímabilinu og forgangsverkefni væru efnahagsmál og heilbrigðismál. POL-DATA-022 lýsir henni sem «pragmatic pro-European» sem leggur áherslu á efnahagsrök frekar en hugmyndafræðilega ESB-sinnuð rök. Þetta samrýmist vel upprunalegri tilvitnun hennar um að hún sé «fyrst og fremst jafnaðarmaður».",
+      "missing_context": "Tilvitnunin er úr Speglinum á RÚV 10. mars 2026 en staðreyndagrunnurinn inniheldur ekki beina heimild úr þessum viðtalsþætti. Matið byggir á samræmi við aðrar opinberar yfirlýsingar Kristrúnar.",
+      "supporting_evidence": [
+        {
+          "id": "PARTY-DATA-016",
+          "source_name": "Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16",
+          "source_url": "https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/"
+        },
+        {
+          "id": "POL-DATA-022",
+          "source_name": "Samfylkingin — Leadership statements; RÚV; Morgunblaðið profiles",
+          "source_url": null
+        },
+        {
+          "id": "PARTY-PARL-001",
+          "source_name": "Alþingi — Kristrún Frostadóttir, forsætisráðherra (andsvar, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T162602.html"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "party_positions",
+      "attribution": "quoted",
+      "article_slug": "vonar-halfpartinn-ad-nidurstadan-verdi-nei",
+      "article_title": "Vonar hálfpartinn að niðurstaðan verði nei",
+      "article_source": "Stjórnmálin",
+      "article_date": "2026-03-14"
+    },
+    {
+      "claim_text": "Samkvæmt heimildum vonar Kristrún Frostadóttir hálfpartinn að niðurstaða þjóðaratkvæðisins um ESB-aðild verði nei.",
+      "original_quote": "Heimildir herma að Kristrún voni hálfpartinn að niðurstaða fyrirhugaðs þjóðaratkvæðis um það hvort stefnt verði að inngöngu í Evrópusambandið verði nei.",
+      "verdict": "unverifiable",
+      "explanation": "Engar heimildir í staðreyndagrunninum staðfesta eða hrekja þessa fullyrðingu beint. <a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> sýnir að Kristrún sagði ESB-aðild yrði ekki á dagskrá á kjörtímabilinu — sem bendir til þess að ESB-málið hafi ekki verið hennar forgangsmál — en það jafngildir ekki því að hún «voni» nei-niðurstöðu. <a href=\"https://www.ruv.is/\" title=\"Althingi debate records; RÚV interviews with PM Kristrún Frostadóttir, February–March 2026\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-019</a> sýnir kröfu Kristrúnar um «ofboðslega sterkt umboð» sem gæti bent til varfærni, en einnig má túlka sem pólitískt skjól. Fullyrðingin vísar í ónefndar heimildir og staðreyndagrunnurinn inniheldur engin gögn sem sannreyna innri afstöðu hennar.",
+      "missing_context": "Fullyrðingin byggir á ónefndum heimildum úr grein Útvarp Sögu. Engin opinber yfirlýsing Kristrúnar styður þetta beint. <a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> og <a href=\"https://www.ruv.is/\" title=\"Althingi debate records; RÚV interviews with PM Kristrún Frostadóttir, February–March 2026\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-019</a> sýna varfærni gagnvart ESB-málinu en ekki «von» um nei-niðurstöðu.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [],
+      "category": "party_positions",
+      "attribution": "paraphrased",
+      "article_slug": "vonar-halfpartinn-ad-nidurstadan-verdi-nei",
+      "article_title": "Vonar hálfpartinn að niðurstaðan verði nei",
+      "article_source": "Stjórnmálin",
+      "article_date": "2026-03-14"
+    },
+    {
+      "claim_text": "Kristrún Frostadóttir ætlaði samkvæmt Morgunblaðinu ekki að beita sér í kosningabaráttunni í aðdraganda þjóðaratkvæðisins.",
+      "original_quote": "Morgunblaðið greindi frá því á dögunum að Kristrún ætlaði ekki að beita sér í kosningabaráttunni í aðdraganda þjóðaratkvæðisins",
+      "verdict": "unverifiable",
+      "explanation": "Staðreyndagrunnurinn inniheldur enga beina heimild úr Morgunblaðinu um þessa frétt. <a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> og POL-DATA-022 lýsa varfærni Kristrúnar gagnvart ESB-málinu — hún hefur lagt áherslu á aðrar forgangsáherslur og viljað halda sig til hlés. Þetta samrýmist hugmyndinni um takmarkaða þátttöku í herferð, en staðfestir hana ekki beint. Án Morgunblaðsgreinarinnar sjálfrar er ekki hægt að sannreyna fullyrðinguna.",
+      "missing_context": "Fullyrðingin vísar beint í Morgunblaðsfrétt sem er ekki í staðreyndagrunninum. <a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> sýnir að Kristrún lagði áherslu á önnur mál en ESB-aðild, sem gefur samhengi en staðfestir ekki ákvarðanir um þátttöku í herferð.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [],
+      "category": "party_positions",
+      "attribution": "paraphrased",
+      "article_slug": "vonar-halfpartinn-ad-nidurstadan-verdi-nei",
+      "article_title": "Vonar hálfpartinn að niðurstaðan verði nei",
+      "article_source": "Stjórnmálin",
+      "article_date": "2026-03-14"
+    },
+    {
+      "claim_text": "Sem hluti af samkomulagi um að flýta þjóðaratkvæðinu fékk Kristrún samþykki fyrir því að hún þyrfti ekki að taka þátt í kosningabaráttunni.",
+      "original_quote": "Gegn því að flýta þjóðaratkvæðinu fékk Kristrún samþykki fyrir því að hún þyrfti ekki að taka þátt í kosningabaráttunni.",
+      "verdict": "unverifiable",
+      "explanation": "Staðreyndagrunnurinn inniheldur engar heimildir um innri samninga stjórnarflokkanna um þátttöku forsætisráðherra í herferð. <a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> staðfestir að þjóðaratkvæðinu var flýtt úr 2027 í 2026, sem er forsenda fullyrðingarinnar. POL-DATA-022 lýsir Kristrún sem «pragmatic» sem leggur áherslu á víðtæka samstöðu. Þetta samrýmist hugmyndinni um takmarkaða herferðarþátttöku, en ekkert í grunninum staðfestir formlegt samkomulag þess efnis.",
+      "missing_context": "Fullyrðingin lýsir innri samningum ríkisstjórnarflokkanna sem eru ekki opinberlega skjalfestir í heimildum staðreyndagrunnsins. <a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> staðfestir flýtinguna en ekki meinta skilyrt samþykki um hlutleysi forsætisráðherra.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [],
+      "category": "party_positions",
+      "attribution": "paraphrased",
+      "article_slug": "vonar-halfpartinn-ad-nidurstadan-verdi-nei",
+      "article_title": "Vonar hálfpartinn að niðurstaðan verði nei",
+      "article_source": "Stjórnmálin",
+      "article_date": "2026-03-14"
+    },
+    {
+      "claim_text": "Kristrún Frostadóttir lýsti því yfir í ágúst að Evrópumálin snertu ekki núverandi efnahagsástand.",
+      "original_quote": "Evrópumálin snerta ekki núverandi efnahagsástand. Það liggur alveg fyrir.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T162602.html\" title=\"Alþingi — Kristrún Frostadóttir, forsætisráðherra (andsvar, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">PARTY-PARL-001</a> staðfestir þetta beint: Kristrún skýrði á Alþingi að «the referendum decision predates the current economic situation and was part of the coalition agreement, not an economic rescue measure.» Þetta er í fullu samræmi við fullyrðinguna. POL-DATA-022 styður einnig þetta — Kristrún hefur markvisst aðgreint ESB-málið frá efnahagsástandinu og lagt áherslu á langtímasjónarmið.",
+      "missing_context": "Fullyrðingin nefnir «ágúst» en heimild <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T162602.html\" title=\"Alþingi — Kristrún Frostadóttir, forsætisráðherra (andsvar, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">PARTY-PARL-001</a> er frá mars 2026 á Alþingi. Afstaðan er sú sama en tímasetningin er ekki staðfest beint.",
+      "supporting_evidence": [
+        {
+          "id": "PARTY-PARL-001",
+          "source_name": "Alþingi — Kristrún Frostadóttir, forsætisráðherra (andsvar, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T162602.html"
+        },
+        {
+          "id": "POL-DATA-022",
+          "source_name": "Samfylkingin — Leadership statements; RÚV; Morgunblaðið profiles",
+          "source_url": null
+        },
+        {
+          "id": "PARTY-DATA-019",
+          "source_name": "Althingi debate records; RÚV interviews with PM Kristrún Frostadóttir, February–March 2026",
+          "source_url": "https://www.ruv.is/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "party_positions",
+      "attribution": "quoted",
+      "article_slug": "vonar-halfpartinn-ad-nidurstadan-verdi-nei",
+      "article_title": "Vonar hálfpartinn að niðurstaðan verði nei",
+      "article_source": "Stjórnmálin",
+      "article_date": "2026-03-14"
+    },
+    {
+      "claim_text": "Kristrún Frostadóttir, forsætisráðherra og formaður Samfylkingarinnar, sagði í samtali við Ríkisútvarpið 10. mars 2026 að Donald Tusk hafi opinberlega sagt að ESB ætti að hlusta á smærri lönd eins og stór.",
+      "original_quote": "\"Skýrasta merkið um afstöðu margra landa til Íslands sem ég finn en get ekki fullyrt um fyrr en ég sé samning er blaðamannafundurinn með Donald Tusk, forsætisráðherra Póllands. Hann sagði það fullum fetum opinberlega að Evrópusambandið ætti að laga sig að löndum eins og Íslandi, ætti að hlusta á smærri lönd eins og stór,\" sagði Kristrún Frostadóttir",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.consilium.europa.eu/en/\" title=\"Press conference statements — Donald Tusk, PM of Poland (2025–2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-011</a> staðfestir að Donald Tusk hafi opinberlega sagt að ESB þyrfti að laga sig að smærri ríkjum eins og Íslandi og Noregi, og hlusta á þau til jafns við stærri ríki. Þó ber að hafa í huga að nákvæmt orðalag Tusks hefur ekki verið staðfest gegn frumheimildum — <a href=\"https://www.consilium.europa.eu/en/\" title=\"Press conference statements — Donald Tusk, PM of Poland (2025–2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-011</a> gerir fyrirvara um að sannreyna orðin við blaðamannafundarupptökur. Kristrún er réttilega auðkennd sem forsætisráðherra og formaður Samfylkingarinnar samkvæmt <a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> og POL-DATA-022.",
+      "missing_context": "Samkvæmt <a href=\"https://www.consilium.europa.eu/en/\" title=\"Press conference statements — Donald Tusk, PM of Poland (2025–2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-011</a> hefur nákvæmt orðalag Tusks ekki verið staðfest gegn frumheimildum (blaðamannafundarupptökum). Yfirlýsingar hans voru einnig settar fram í tengslum við víðtækari umræðu um samkeppnishæfni ESB og stækkun (Draghi- og Letta-skýrslurnar), ekki eingöngu vegna Íslands.",
+      "supporting_evidence": [
+        {
+          "id": "PREC-DATA-011",
+          "source_name": "Press conference statements — Donald Tusk, PM of Poland (2025–2026)",
+          "source_url": "https://www.consilium.europa.eu/en/"
+        },
+        {
+          "id": "PARTY-DATA-016",
+          "source_name": "Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16",
+          "source_url": "https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/"
+        },
+        {
+          "id": "POL-DATA-022",
+          "source_name": "Samfylkingin — Leadership statements; RÚV; Morgunblaðið profiles",
+          "source_url": null
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "party_positions",
+      "attribution": "quoted",
+      "article_slug": "tok-tusk-tillit-til-sjavarutvegsmala-irlands",
+      "article_title": "Tók Tusk tillit til sjávarútvegsmála Írlands?",
+      "article_source": "Stjórnmálin",
+      "article_date": "2026-03-17"
+    },
+    {
+      "claim_text": "Kristrún Frostadóttir vísaði til blaðamannafundar með Tusk í Varsjá sem fram hafði farið skömmu fyrir 10. mars 2026.",
+      "original_quote": "vísaði þar til blaðamannafundar með Tusk í Varsjá, höfuðborg Póllands, sem fram hafði farið skömmu áður",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.consilium.europa.eu/en/\" title=\"Press conference statements — Donald Tusk, PM of Poland (2025–2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-011</a> staðfestir að Tusk hafi gert opinberar yfirlýsingar um ESB og smærri ríki á árunum 2025–2026, en nefnir ekki sérstaklega blaðamannafund í Varsjá skömmu fyrir 10. mars 2026. Heimildir geta ekki staðfest nákvæma dagsetningu eða staðsetningu fundarins. Kristrún er staðfest sem forsætisráðherra í <a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> og POL-DATA-022.",
+      "missing_context": "Engin heimild staðfestir sérstaklega blaðamannafund Tusks í Varsjá skömmu fyrir 10. mars 2026. <a href=\"https://www.consilium.europa.eu/en/\" title=\"Press conference statements — Donald Tusk, PM of Poland (2025–2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-011</a> nefnir yfirlýsingar hans á árunum 2025–2026 almennt en tilgreinir ekki dagsetningu eða stað.",
+      "supporting_evidence": [
+        {
+          "id": "PREC-DATA-011",
+          "source_name": "Press conference statements — Donald Tusk, PM of Poland (2025–2026)",
+          "source_url": "https://www.consilium.europa.eu/en/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "precedents",
+      "attribution": "paraphrased",
+      "article_slug": "tok-tusk-tillit-til-sjavarutvegsmala-irlands",
+      "article_title": "Tók Tusk tillit til sjávarútvegsmála Írlands?",
+      "article_source": "Stjórnmálin",
+      "article_date": "2026-03-17"
     }
   ],
   "articles": [
@@ -1706,6 +1861,28 @@
       "source": "Viðskiptablaðið",
       "date": "2026-03-11",
       "claim_count": 5,
+      "attribution_types": [
+        "paraphrased",
+        "quoted"
+      ]
+    },
+    {
+      "slug": "vonar-halfpartinn-ad-nidurstadan-verdi-nei",
+      "title": "Vonar hálfpartinn að niðurstaðan verði nei",
+      "source": "Stjórnmálin",
+      "date": "2026-03-14",
+      "claim_count": 5,
+      "attribution_types": [
+        "paraphrased",
+        "quoted"
+      ]
+    },
+    {
+      "slug": "tok-tusk-tillit-til-sjavarutvegsmala-irlands",
+      "title": "Tók Tusk tillit til sjávarútvegsmála Írlands?",
+      "source": "Stjórnmálin",
+      "date": "2026-03-17",
+      "claim_count": 2,
       "attribution_types": [
         "paraphrased",
         "quoted"
