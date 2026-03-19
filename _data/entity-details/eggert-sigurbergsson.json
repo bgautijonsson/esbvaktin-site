@@ -7,15 +7,16 @@
   "party": null,
   "stance": "anti_eu",
   "stance_score": -1.0,
-  "credibility": 0.56,
+  "credibility": 0.65,
   "attribution_counts": {
-    "asserted": 18
+    "asserted": 27,
+    "paraphrased": 1
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 3,
+    "partially_supported": 10,
     "misleading": 1,
-    "supported": 14
+    "supported": 16
   },
   "claims": [
     {
@@ -209,13 +210,18 @@
       "claim_text": "Bretar neyddust til að afnema eigin lög og borga skaðabætur til spænsku útgerðanna í kjölfar Factortame-málsins.",
       "original_quote": "Bretar neyddust til að afnema eigin lög og borga skaðabætur til spænsku útgerðanna.",
       "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61989CJ0213\" title=\"Court of Justice of the EU — Cases C-213/89, C-221/89, C-48/93; House of Lords — R v Secretary of State for Transport, ex parte Factortame Ltd\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-001</a> staðfestir bæði meginatriði fullyrðingarinnar. Bretland setti lög (Merchant Shipping Act 1988) til að hindra spænska útgerð frá kvótanotkun, en Evrópudómstóllinn úrskurðaði að lögin brytu gegn stofnfrelsisákvæðum sáttmálans. Bretland var dæmt til að greiða um 55 milljónir punda í skaðabætur til spænsku útgerðanna árið 2000. <a href=\"https://en.wikipedia.org/wiki/R_(Factortame_Ltd)_v_Secretary_of_State_for_Transport\" title=\"R (Factortame Ltd) v Secretary of State for Transport — European Court of Justice\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-006</a> staðfestir enn frekar fordæmisgildi málsins og tengingu þess við eignarhaltstakmarkanir á sjávarútvegi. Fullyrðingin er í meginatriðum rétt — Bretar neyddust til að víkja eigin löggjöf og greiða skaðabætur.",
-      "missing_context": "Factortame-málið spannaði yfir áratug (1988–2000) og fól í sér mörg réttarfar á innlendum og evrópskum vettvangi. Skaðabótatalan (55 milljónir punda) er áætluð. Fordæmið á ekki beint við aðstæður Íslands sem myndi ganga í ESB af fúsum vilja, öfugt við Bretland sem var þegar aðili þegar kvótaskákið átti sér stað.",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61989CJ0213\" title=\"Court of Justice of the EU — Cases C-213/89, C-221/89, C-48/93; House of Lords — R v Secretary of State for Transport, ex parte Factortame Ltd\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-001</a> staðfestir bæði þætti fullyrðingarinnar. ESB-dómstóllinn úrskurðaði (C-221/89) að kröfur Merchant Shipping Act 1988 um breska þjóðerni eigenda fiskiskipa brytu gegn staðfesturétti ESB-sáttmálans, og Bretar neyddust til að afnema lögin. Í kjölfarið (C-48/93 Factortame III) var staðfest skaðabótaábyrgð ríkisins og Bretar greiddu um 55 milljónir punda í skaðabætur til spænsku útgerðanna árið 2000. <a href=\"https://commonslibrary.parliament.uk/research-briefings/sn04281/\" title=\"UK House of Commons Library — Quota Hopping; DEFRA reports on Anglo-Spanish fleet\" target=\"_blank\" rel=\"noopener\">FISH-DATA-031</a> og <a href=\"https://en.wikipedia.org/wiki/R_(Factortame_Ltd)_v_Secretary_of_State_for_Transport\" title=\"R (Factortame Ltd) v Secretary of State for Transport — European Court of Justice\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-006</a> styðja þessa frásögn.",
+      "missing_context": "Skaðabótaupphæðin (55 milljónir punda) er áætluð og var niðurstaða flókinna viðræðna og dómsmála. Factortame-málin spönnuðu yfir áratug (1988–2000). Fyrirvarar <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61989CJ0213\" title=\"Court of Justice of the EU — Cases C-213/89, C-221/89, C-48/93; House of Lords — R v Secretary of State for Transport, ex parte Factortame Ltd\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-001</a> benda á að aðstæður Íslands yrðu ólíkar — Ísland myndi ganga í sameiginlegu sjávarútvegsstefnuna af fúsum vilja en Bretar voru þegar meðlimir þegar kvótahlaup hófst. ESB-reglur um sjávarútveg hafa einnig verið endurskoðaðar síðan á níunda áratugnum.",
       "supporting_evidence": [
         {
           "id": "PREC-LEGAL-001",
           "source_name": "Court of Justice of the EU — Cases C-213/89, C-221/89, C-48/93; House of Lords — R v Secretary of State for Transport, ex parte Factortame Ltd",
           "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61989CJ0213"
+        },
+        {
+          "id": "FISH-DATA-031",
+          "source_name": "UK House of Commons Library — Quota Hopping; DEFRA reports on Anglo-Spanish fleet",
+          "source_url": "https://commonslibrary.parliament.uk/research-briefings/sn04281/"
         },
         {
           "id": "FISH-LEGAL-006",
@@ -235,18 +241,23 @@
       "claim_text": "Eftir Factortame-málið reyndu Bretar að setja skilyrði um að útgerðir yrðu að sýna fram á raunveruleg efnahagsleg tengsl við Bretland.",
       "original_quote": "Eftir að hafa tapað Factortame-málinu reyndu Bretar að bjarga því sem bjargað varð með því að setja skilyrði um að útgerðir yrðu að sýna fram á raunveruleg efnahagsleg tengsl við Bretland.",
       "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216\" title=\"Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-002</a> staðfestir beint að Bretar reyndu að setja skilyrði um raunveruleg efnahagsleg tengsl, m.a. kröfur um löndun afla í Bretlandi og rekstur frá breskum höfnum. Þetta átti sér stað eftir og samhliða Factortame-málunum, þar sem Evrópudómstóllinn í Agegate-málinu (C-3/87) viðurkenndi að kröfur um efnahagsleg tengsl gætu verið heimilar, svo framarlega sem þær væru hlutlausar og meðalhófs gætt. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61989CJ0213\" title=\"Court of Justice of the EU — Cases C-213/89, C-221/89, C-48/93; House of Lords — R v Secretary of State for Transport, ex parte Factortame Ltd\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-001</a> staðfestir víðara samhengi Factortame-dómsmálanna.",
-      "missing_context": "Hugtakið raunveruleg efnahagsleg tengsl hefur þróast í síðari löggjöf og dómaframkvæmd. Núgildandi reglugerð um sameiginlegu sjávarútvegsstefnuna (ESB 1380/2013) tekur á þessu m.a. með löndunarskilyrðum. Mikilvægt er að þjóðernisgrundaðar takmarkanir voru bannaðar en kröfur um efnahagsleg tengsl heimilar að ákveðnum skilyrðum uppfylltum.",
+      "explanation": "<a href=\"https://commonslibrary.parliament.uk/research-briefings/sn04281/\" title=\"UK House of Commons Library — Quota Hopping; DEFRA reports on Anglo-Spanish fleet\" target=\"_blank\" rel=\"noopener\">FISH-DATA-031</a> staðfestir beint að eftir Factortame-dómana brugðust Bretar við með «economic link»-skilyrðum — kröfum um að skip lönduðu a.m.k. 50% af afla sínum í breskum höfnum, réðu breska áhöfn, eða sýndu fram á önnur efnahagsleg tengsl við bresk sjávarútvegssamfélög. <a href=\"https://en.wikipedia.org/wiki/R_(Factortame_Ltd)_v_Secretary_of_State_for_Transport\" title=\"R (Factortame Ltd) v Secretary of State for Transport — European Court of Justice\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-006</a> staðfestir einnig þetta og tekur fram að ESB-dómstóllinn staðfesti slík skilyrði svo framarlega sem þau væru ekki óbein þjóðernismismunun. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216\" title=\"Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-002</a> (Jaderow og Agegate málin) lýsir sömu meginreglu — þjóðernisskilyrði voru bönnuð en raunveruleg efnahagsleg tengsl voru leyfileg.",
+      "missing_context": "Efnahagslegu tengsla-skilyrðin drógust úr en útrýmdu ekki kvótahoppinu. Bretland greiddi um 55 milljónir punda í skaðabætur til spænskra útgerða árið 2000. Aðstæður Íslands væru ólíkar — sjávarútvegurinn er mun stærri hluti efnahagslífsins og hvati ESB-flota til að nýta íslenskt efnahagslegt auðlindayfirráðasvæði væri talsvert meiri.",
       "supporting_evidence": [
+        {
+          "id": "FISH-DATA-031",
+          "source_name": "UK House of Commons Library — Quota Hopping; DEFRA reports on Anglo-Spanish fleet",
+          "source_url": "https://commonslibrary.parliament.uk/research-briefings/sn04281/"
+        },
+        {
+          "id": "FISH-LEGAL-006",
+          "source_name": "R (Factortame Ltd) v Secretary of State for Transport — European Court of Justice",
+          "source_url": "https://en.wikipedia.org/wiki/R_(Factortame_Ltd)_v_Secretary_of_State_for_Transport"
+        },
         {
           "id": "PREC-LEGAL-002",
           "source_name": "Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate",
           "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216"
-        },
-        {
-          "id": "PREC-LEGAL-001",
-          "source_name": "Court of Justice of the EU — Cases C-213/89, C-221/89, C-48/93; House of Lords — R v Secretary of State for Transport, ex parte Factortame Ltd",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61989CJ0213"
         }
       ],
       "contradicting_evidence": [],
@@ -260,9 +271,9 @@
     {
       "claim_text": "Í Jaderow-málinu (C-216/87) úrskurðaði ESB-dómstóllinn um mörk leyfilegra skilyrða um efnahagsleg tengsl útgerðar við aðildarríki.",
       "original_quote": "Þá komu tveir stórir dómar: Jaderow-málið (C-216/87) og Agegate-málið (C-3/87).",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216\" title=\"Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-002</a> staðfestir beint að í Jaderow-málinu (C-216/87) úrskurðaði ESB-dómstóllinn um mörk leyfilegra skilyrða sem aðildarríki gátu sett um skráningu fiskiskipa, þar á meðal um efnahagsleg tengsl útgerðar við aðildarríki. Dómstóllinn komst að þeirri niðurstöðu að skilyrði um ríkisfang eigenda væru ólögleg en \"raunveruleg efnahagsleg tengsl\" (genuine economic link) gætu verið lögmæt, enda væru þau samhæf og án mismununar.",
-      "missing_context": "Hugmyndin um \"raunveruleg efnahagsleg tengsl\" hefur þróast í síðari löggjöf og dómaframkvæmd. Núgildandi sameiginleg sjávarútvegsstefna (ESB 1380/2013) tekur að hluta til þessa álitaefna. Mikilvægi dómsins fyrir Ísland ræðst af því hvort kvótaspegilskapur (quota hopping) væri raunhæf áhætta fyrir íslenskan sjávarútveg innan ESB.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216\" title=\"Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-002</a> staðfestir að Jaderow-málið (C-216/87) fjallaði um skilyrði aðildarríkja um skráningu fiskiskipa og að ESB-dómstóllinn komst að niðurstöðu um hvað væri leyfilegt. Hins vegar er fullyrðingin ónákvæm í einum veigamiklum atriði: Jaderow-málið sneri aðallega að banni gegn þjóðernisskilyrðum — dómstóllinn úrskurðaði að aðildarríki megi ekki krefjast þess að raunverulegir eigendur séu ríkisborgarar þess ríkis. Efnahagslegu tengsla-skilyrðin («economic link conditions») voru ítarlegar útfærð í Agegate-málinu (C-3/87), sem var dæmt sama dag. Fullyrðingin sameinar tvo ólíka dóma í einn.",
+      "missing_context": "Hugtakið «efnahagsleg tengsl» var nánar útfært í Agegate-málinu (C-3/87) og síðar í Factortame-dómunum (1990–2000). Jaderow-málið fjallaði fyrst og fremst um bann við þjóðerniskröfum en opnaði dyrnar að leyfilegum efnahagstengsla-skilyrðum. Þessi þróun spannar áratug dómsmála og er flóknari en fullyrðingin gefur til kynna.",
       "supporting_evidence": [
         {
           "id": "PREC-LEGAL-002",
@@ -282,8 +293,8 @@
       "claim_text": "Í Agegate-málinu (C-3/87) úrskurðaði ESB-dómstóllinn um mörk leyfilegra skilyrða um efnahagsleg tengsl útgerðar við aðildarríki.",
       "original_quote": "Þá komu tveir stórir dómar: Jaderow-málið (C-216/87) og Agegate-málið (C-3/87).",
       "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216\" title=\"Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-002</a> staðfestir beint efni fullyrðingarinnar. Í Agegate-málinu (C-3/87, úrskurður 14. desember 1989) tók Evrópudómstóllinn afstöðu til þess hvaða skilyrði um efnahagsleg tengsl útgerða við aðildarríki væru leyfileg samkvæmt ESB-rétti. Dómstóllinn viðurkenndi að kröfur um löndun afla og rekstur frá höfnum ríkisins gætu verið heimilar, en bannaði skilyrði sem fólu í sér mismunun á grundvelli þjóðernis. Málsnúmerið og efni fullyðingarinnar eru nákvæm.",
-      "missing_context": "Jaderow-málið (C-216/87) var hliðstætt mál dæmt sama dag og fjallaði sérstaklega um eignarréttarskilyrði skipaskráningar. Saman mynda málin tvö rammann fyrir hugtak raunverulegra efnahagslegra tengsla, sem hefur þróast verulega í síðari dómaframkvæmd og löggjaf ESB um sameiginlegu sjávarútvegsstefnuna.",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216\" title=\"Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-002</a> staðfestir fullyrðinguna beint og ítarlega. Í Agegate-málinu (C-3/87, dómur 14. desember 1989) fjallaði ESB-dómstóllinn um kröfur Bretlands um þjóðerni áhafna fiskiskipa og úrskurðaði að þær brytu gegn staðfesturétti samkvæmt sáttmálanum. Dómstóllinn samþykkti þó að aðildarríki mættu setja skilyrði um «raunveruleg efnahagsleg tengsl» (genuine economic link) svo sem að hluti aflans yrði landað í viðkomandi aðildarríki. Þetta er nákvæmlega það sem fullyrðingin segir — dómstóllinn úrskurðaði um mörk leyfilegra skilyrða um efnahagsleg tengsl.",
+      "missing_context": "Hugtakið «raunveruleg efnahagsleg tengsl» hefur þróast í síðari löggjöf og dómaframkvæmd. Sameiginleg sjávarútvegsstefna ESB (reglugerð 1380/2013) tekur nú á nokkrum þáttum þessara tengla. Þýðing þessa fordæmis fyrir Ísland veltur á því hvort kvótahlaup (quota hopping) yrði raunhæf hætta í íslenskum sjávarútvegi við ESB-aðild.",
       "supporting_evidence": [
         {
           "id": "PREC-LEGAL-002",
@@ -302,9 +313,9 @@
     {
       "claim_text": "ESB-dómstóllinn úrskurðaði í Jaderow- og Agegate-málunum að skilyrði um efnahagsleg tengsl megi ekki fela í sér mismunun á grundvelli þjóðernis.",
       "original_quote": "Dómstóllinn úrskurðaði þar að ríki mættu vissulega setja áhöfn og rekstur skipa skorður að einhverju leyti... EN dómstóllinn tók skýrt fram að þessi efnahagslegu tengsl mættu aldrei brjóta gegn réttindum evrópskra borgara. Þau mega ekki fela í sér mismunun á grundvelli þjóðernis, og þau mættu alls ekki hindra erlent fjármagn í að streyma til eigenda sinna.",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216\" title=\"Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-002</a> staðfestir nákvæmlega efni fullyrðingarinnar. Evrópudómstóllinn úrskurðaði í Jaderow-málinu (C-216/87) að aðildarríki mættu ekki krefjast þess að raunverulegir eigendur skipa væru af tiltekinni þjóðerni, og í Agegate-málinu (C-3/87) að kröfur um þjóðerni áhafnar brytu gegn ESB-rétti. Dómstóllinn viðurkenndi hins vegar að skilyrði um efnahagsleg tengsl væru leyfileg, svo framarlega sem þau fælu ekki í sér mismunun á grundvelli þjóðernis. Fullyðingin er rétt og vel orðuð.",
-      "missing_context": "Hugtakið raunveruleg efnahagsleg tengsl hefur þróast í síðari löggjöf, einkum reglugerð ESB 1380/2013 um sameiginlegu sjávarútvegsstefnuna. Viðeigandi þýðing fyrir Ísland veltur á hvort kvótaflakk væri raunhæf hætta miðað við landfræðilega einangrun landsins og uppbyggingu íslenska kvótakerfisins.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216\" title=\"Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-002</a> staðfestir lykilatriðin: í Agegate-málinu (C-3/87) úrskurðaði ESB-dómstóllinn að kröfur um þjóðerni áhafna brytu gegn staðfesturétti, og að skilyrði um efnahagsleg tengsl mættu ekki vera mismunandi eftir þjóðerni. Í Jaderow-málinu (C-216/87) var úrskurðað að skilyrði um skráningar fiskiskipa mættu ekki mismuna á grundvelli þjóðernis eigenda. Þó er fullyrðingin orðuð á þann veg að dómstóllinn hafi úrskurðað að «skilyrði um efnahagsleg tengsl megi ekki fela í sér mismunun á grundvelli þjóðernis» — en í raun var aðalniðurstaðan sú að þjóðernisskilyrði voru bönnuð, og efnahagsleg tengsl voru leyfð sem valkostur svo lengi sem þau væru hófleg og án mismununar. Fullyrðingin beinir athyglinni frá höfuðniðurstöðunni að efnahagsleg tengsl séu leyfileg.",
+      "missing_context": "Lykilniðurstaðan í málunum var tvíþætt: (1) þjóðerniskröfur voru bannaðar, og (2) kröfur um raunveruleg efnahagsleg tengsl voru heimilar ef þær voru hóflegar og án mismununar. Fullyrðingin nefnir aðeins seinni þáttinn en sleppur þeim fyrri sem var aðalatriðið. Þetta gæti gefið ranga mynd af jafnvægi niðurstaðnanna. <a href=\"https://en.wikipedia.org/wiki/R_(Factortame_Ltd)_v_Secretary_of_State_for_Transport\" title=\"R (Factortame Ltd) v Secretary of State for Transport — European Court of Justice\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-006</a> staðfestir einnig þessa tvískiptingu — bann við þjóðerniskröfum en heimild fyrir efnahagslegum tengslakilyrðum.",
       "supporting_evidence": [
         {
           "id": "PREC-LEGAL-002",
@@ -345,8 +356,8 @@
       "claim_text": "Samkvæmt dómaframkvæmd ESB-dómstólsins getur aðildarríki þvingað erlenda útgerð til að landa afla í innlendri höfn, en getur ekki þvingað hana til að skilja arðinn eftir í landinu eða stjórnað því hver á hana.",
       "original_quote": "Niðurstaða ESB-dómstólsins var skýr: Þú getur kannski neytt erlenda útgerð til að dýfa landfestum í innlenda höfn við og við, en þú getur aldrei neytt útgerðina til að skilja arðinn eftir í landinu og þú getur ekki stjórnað hver á hana.",
       "verdict": "supported",
-      "explanation": "<a href=\"https://en.wikipedia.org/wiki/R_(Factortame_Ltd)_v_Secretary_of_State_for_Transport\" title=\"R (Factortame Ltd) v Secretary of State for Transport — European Court of Justice\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-006</a> og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216\" title=\"Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-002</a> staðfesta fullyrðinguna beint. Í Factortame-málunum komst ESB-dómstóllinn að þeirri niðurstöðu að aðildarríki megi ekki setja þjóðernisskyldu á eignarhald útgerða, en megi krefjast raunverulegra efnahagslegra tengsla — þar á meðal skyldu til löndunar í innlendri höfn. Dómstóllinn úrskurðaði jafnframt í Agegate-málinu að kröfur um þjóðerni áhafnar brjóti gegn staðfesturétti. Þetta samræmist beint orðalagi fullyrðingarinnar: aðildarríki getur þvingað til löndunar en ekki stýrt eignarhaldi eftir þjóðerni. Nýju heimildarnar styrkja samhengið — <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/the-surveillance-and-court-agreement/agreement-annexes-and-protocols/Surveillance-and-Court-Agreement-consolidated.pdf\" title=\"Agreement establishing the EFTA Surveillance Authority and the EFTA Court, Article 3\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-005</a> og <a href=\"https://eftacourt.int/press-publications/annual-report-2024/\" title=\"EEA Agreement, Article 108; EFTA Court — Annual Report 2024; CJEU — Annual Report 2024\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-013</a> útskýra muninn á EFTA-dómstólnum og ESB-dómstólnum, sem staðfestir að dómaframkvæmdin sem vísað er til gildir um ESB-aðild.",
-      "missing_context": "Hugtakið raunveruleg efnahagsleg tengsl hefur þróast síðan Factortame og Agegate og gæti veitt víðtækari heimildir en fullyrðingin gefur til kynna. Auk þess bendir <a href=\"https://en.wikipedia.org/wiki/R_(Factortame_Ltd)_v_Secretary_of_State_for_Transport\" title=\"R (Factortame Ltd) v Secretary of State for Transport — European Court of Justice\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-006</a> á að aðildarríki geti krafist þess að rekstur sé stýrður frá yfirráðasvæðinu, sem er nánari stjórn en fullyrðingin nefnir. Þó ber að nefna að gildandi reglugerð ESB um sjávarútveg (1380/2013) bætir við löndunarskyldureglum sem geta breytt myndinni.",
+      "explanation": "<a href=\"https://en.wikipedia.org/wiki/R_(Factortame_Ltd)_v_Secretary_of_State_for_Transport\" title=\"R (Factortame Ltd) v Secretary of State for Transport — European Court of Justice\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-006</a> (Factortame-málin) og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216\" title=\"Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-002</a> (Jaderow/Agegate-málin) staðfesta þessa fullyrðingu beint. Dómstóll ESB úrskurðaði að aðildarríki megi ekki takmarka eignarhald á fiskiskipum eftir þjóðerni, en megi krefjast «raunverulegra efnahagslegra tengsla» eins og að landa afla í innlendri höfn eða reka skip úr innlendum höfnum. Hins vegar geta aðildarríki ekki stjórnað eignarhaldi sjálfu né tryggt að arðurinn verði í landinu — Factortame-úrskurðurinn felldi einmitt lög sem reyndu að takmarka eignarhald eftir þjóðerni. Þetta samræmist kjarna fullyrðingarinnar um muninn á löndunarskilyrðum og arðseiginni.",
+      "missing_context": "Fyrirvari <a href=\"https://en.wikipedia.org/wiki/R_(Factortame_Ltd)_v_Secretary_of_State_for_Transport\" title=\"R (Factortame Ltd) v Secretary of State for Transport — European Court of Justice\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-006</a> bendir á að hugtakið «raunveruleg efnahagsleg tengsl» hefur þróast í síðari löggjöf og dómaframkvæmd. Núgildandi reglugerð um sameiginlegu sjávarútvegsstefnuna (1380/2013) felur í sér löndunarskyldur og hafnarríkisaðgerðir sem taka að hluta til á þessu máli. Bretar eru ekki lengur bundnir af Factortame eftir útgöngu úr ESB.",
       "supporting_evidence": [
         {
           "id": "FISH-LEGAL-006",
@@ -357,16 +368,6 @@
           "id": "PREC-LEGAL-002",
           "source_name": "Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate",
           "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216"
-        },
-        {
-          "id": "EEA-LEGAL-005",
-          "source_name": "Agreement establishing the EFTA Surveillance Authority and the EFTA Court, Article 3",
-          "source_url": "https://www.efta.int/sites/default/files/documents/legal-texts/the-surveillance-and-court-agreement/agreement-annexes-and-protocols/Surveillance-and-Court-Agreement-consolidated.pdf"
-        },
-        {
-          "id": "SOV-LEGAL-013",
-          "source_name": "EEA Agreement, Article 108; EFTA Court — Annual Report 2024; CJEU — Annual Report 2024",
-          "source_url": "https://eftacourt.int/press-publications/annual-report-2024/"
         }
       ],
       "contradicting_evidence": [],
@@ -520,6 +521,335 @@
       "article_title": "Kvótahopp og ESB",
       "article_source": "Vísir",
       "article_date": "2026-03-10"
+    },
+    {
+      "claim_text": "Varanlegar undanþágur frá kjarna ESB-réttarins, svo sem sameiginlegri sjávarútvegsstefnu, eru ekki í boði við aðildarviðræður",
+      "original_quote": "Stækkunarstjórar ESB og reyndir stjórnmálamenn á borð við Uffe Ellemann-Jensen hafa ítrekað bent á að varanlegar undanþágur (permanent derogations) frá kjarna ESB-réttarins, svo sem sjávarútvegsstefnunni, eru ekki í boði.",
+      "verdict": "supported",
+      "explanation": "Heimildir staðfesta þetta skýrt. Samkvæmt <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> hefur stækkunarstefna ESB frá Lissabon-samningnum kveðið á um að ný aðildarríki geti ekki samið um varanlegar undanþágur — aðeins tímabundin aðlögunartímabil. Króatíu, síðasta aðildarríkið (2013), var engin varanleg undanþága veitt (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:21994A0103(01)\" title=\"Croatia Accession Treaty (2012); 2003 Accession Treaty (Poland, Czech Republic et al.)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-014</a>). Sjávarútvegsstefnan fellur undir einkaréttarsvið ESB samkvæmt 3. grein TFEU (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003\" title=\"Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-030</a>), sem styrkir enn frekar að undanþága frá henni sé ólíkleg.",
+      "missing_context": "Þrátt fyrir formlega stefnu ESB benda sumir fræðimenn á að 49. grein sáttmálans um Evrópusambandið (TEU) heimili tæknilega hvaða samningsniðurstöðu sem er. Langur aðlögunartími getur í reynd virkað svipað og undanþága. Finnland og Svíþjóð fengu varanlegan ríkisstuðning við norrænan landbúnað sem viðbót við sameiginlegu landbúnaðarstefnuna — þó sé það ekki undanþága frá henni heldur viðbót við hana.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-012",
+          "source_name": "European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        },
+        {
+          "id": "EEA-LEGAL-014",
+          "source_name": "Croatia Accession Treaty (2012); 2003 Accession Treaty (Poland, Czech Republic et al.)",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:21994A0103(01)"
+        },
+        {
+          "id": "SOV-LEGAL-030",
+          "source_name": "Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003"
+        },
+        {
+          "id": "EEA-LEGAL-017",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards joining' factsheet",
+          "source_url": "https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "fisheries",
+      "attribution": "paraphrased",
+      "article_slug": "draumurinn-um-esb-samning-er-uppgjof",
+      "article_title": "Draumurinn um ESB-samning er uppgjöf",
+      "article_source": "Vísir",
+      "article_date": "2025-12-14"
+    },
+    {
+      "claim_text": "Innganga í ESB snýst um að innleiða acquis communautaire — allt regluverk sambandsins",
+      "original_quote": "Innganga snýst um að innleiða acquis communautaire – allt regluverk sambandsins.",
+      "verdict": "supported",
+      "explanation": "Þetta er rétt lýsing á aðildarferlinu. <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> vitnar beint í stækkunargögn Framkvæmdastjórnar ESB sem segja að aðildarviðræður snúist um «skilyrði og tímaáætlun fyrir upptöku, innleiðingu og framfylgd alls gildandi regluverks ESB». Samkvæmt <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> inniheldur samningaviðmið allra núverandi umsækjenda staðlaðan texta um að umsækjandinn samþykki regluverkið eins og það stendur við aðild. <a href=\"https://eur-lex.europa.eu/statistics/legislative-acts-statistics.html\" title=\"EUR-Lex — Legislation statistics\" target=\"_blank\" rel=\"noopener\">EEA-DATA-003</a> staðfestir að Ísland þyrfti að taka upp allt regluverkið — um þriðjungur er þegar innleiddur í gegnum EES-samninginn.",
+      "missing_context": "Orðalagið «allt regluverk» er rétt en gefur ekki til kynna þá sveigjanleika sem felst í aðlögunartímabilum — ný ríki geta samið um tímasetta aðlögun (3–12 ár) og tæknilegar aðlaganir, þótt reglurnar sjálfar séu ósamninga. Ísland hefur þegar innleitt um þriðjung regluverksins í gegnum EES-samninginn.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-017",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards joining' factsheet",
+          "source_url": "https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf"
+        },
+        {
+          "id": "EEA-LEGAL-021",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        },
+        {
+          "id": "EEA-DATA-003",
+          "source_name": "EUR-Lex — Legislation statistics",
+          "source_url": "https://eur-lex.europa.eu/statistics/legislative-acts-statistics.html"
+        },
+        {
+          "id": "EEA-LEGAL-011",
+          "source_name": "European Commission — Chapters of the Acquis; EUR-Lex legislative database",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/conditions-membership/chapters-acquis_en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "asserted",
+      "article_slug": "draumurinn-um-esb-samning-er-uppgjof",
+      "article_title": "Draumurinn um ESB-samning er uppgjöf",
+      "article_source": "Vísir",
+      "article_date": "2025-12-14"
+    },
+    {
+      "claim_text": "Sérlausnir eru mögulegar í tæknilegum atriðum við ESB-aðild, til dæmis varðandi brennistein í áburði vegna íslensks eldfjallajarðvegs",
+      "original_quote": "Sérlausnir eru mögulegar í tæknilegum atriðum, eins og varðandi brennistein í áburði vegna íslensks eldfjallajarðvegs, en aldrei þegar kemur að heilli iðnaðargrein á borð við sjávarútveg.",
+      "verdict": "partially_supported",
+      "explanation": "Meginreglan um að tæknilegar sérlausnir séu mögulegar en varanlegar undanþágur frá heilum stefnusviðum ekki, er í samræmi við heimildir. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:21994A0103(01)\" title=\"Croatia Accession Treaty (2012); 2003 Accession Treaty (Poland, Czech Republic et al.)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-014</a> staðfestir greinarmuninn á tímabundnum aðlögunum og varanlegum undanþágum. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-004</a> sýnir að ekkert aðildarríki hefur fengið varanlega undanþágu frá sameiginlegu landbúnaðarstefnunni. Hins vegar er dæmið um brennistein í áburði ekki staðfest í neinum heimildum í staðreyndagrunninum — engin heimild nefnir þessa tilteknu sérlausn.",
+      "missing_context": "Tiltekna dæmið um brennistein í áburði vegna eldfjallajarðvegs er ekki staðfest af heimildum í grunninum. Meginreglan um tæknilegar sérlausnir er studd en þetta sérstaka dæmi er ekki sannreynt. Finnland og Svíþjóð fengu viðbótarstuðning við landbúnað á norðlægum slóðum sem fordæmi fyrir tæknilegar aðlaganir.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-014",
+          "source_name": "Croatia Accession Treaty (2012); 2003 Accession Treaty (Poland, Czech Republic et al.)",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:21994A0103(01)"
+        },
+        {
+          "id": "AGRI-LEGAL-004",
+          "source_name": "EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        },
+        {
+          "id": "AGRI-DATA-016",
+          "source_name": "2003 Accession Treaty; 2005 Accession Treaty (Bulgaria/Romania); 2011 Croatia Accession Treaty; European Commission CAP reform documentation",
+          "source_url": "https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-2023-27_en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "agriculture",
+      "attribution": "asserted",
+      "article_slug": "draumurinn-um-esb-samning-er-uppgjof",
+      "article_title": "Draumurinn um ESB-samning er uppgjöf",
+      "article_source": "Vísir",
+      "article_date": "2025-12-14"
+    },
+    {
+      "claim_text": "Ef Ísland gengur í ESB mun stjórn veiða á miðsjávarfiski falla undir sameiginlega sjávarútvegsstefnu ESB og aðganginum yrði deilt með stórþjóðum álfunnar",
+      "original_quote": "Ef Ísland gengur í ESB fellur stjórn þessara nýju veiða undir sameiginlega stefnu ESB og aðganginum yrði deilt með stórþjóðum álfunnar.",
+      "verdict": "partially_supported",
+      "explanation": "Rétt er að sameiginleg sjávarútvegsstefna ESB (CFP) nær til allra sjávarauðlinda innan efnahagslögsögu aðildarríkja. <a href=\"https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf\" title=\"Icelandic Act on the Exclusive Economic Zone No. 41/1979\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-002</a> staðfestir að lögsaga Íslands (758.000 km²) myndi falla undir sjávarútvegsstefnuna, og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> útskýrir hvernig kvótar eru skipt milli ríkja samkvæmt hlutfallslegum stöðugleikareglunum. Meginreglan um jafnan aðgang að hafsvæðum (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380\" title=\"EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024\" target=\"_blank\" rel=\"noopener\">FISH-DATA-032</a>) þýðir að skip frá öðrum aðildarríkjum gætu fiskað í íslensku lögsögunni utan 12 sjómílna. Hins vegar er orðalagið «deilt með stórþjóðum álfunnar» of vítt — kvótaskipting fer eftir samningum í aðildarsáttmálanum, og <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development\" title=\"European Parliament — The Common Fisheries Policy: Origins and Development\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-005</a> bendir á að Ísland myndi líklega semja um einstakar lausnir (sui generis) vegna einstöðu stöðu sinnar.",
+      "missing_context": "Orðalagið «deilt með stórþjóðum» gefur til kynna að aðrar þjóðir fái sjálfkrafa hlut í íslenskum sjávarauðlindum. Raunin er sú að kvótaskipting yrði ákvörðuð í aðildarsáttmálanum og Ísland tæki þátt í ákvarðanatöku í ráðherraráðinu. Ekkert fordæmi er til fyrir jafn stóra sjávarútvegskjálka og Ísland sem gengur í ESB, og samningsniðurstaðan er óviss. Þá snýst fullyrðingin sérstaklega að miðsjávarfiski sem er ekki enn nýttur á skipulegan hátt — heimildir fjalla ekki um hvernig ónýttar sjávarauðlindir yrðu meðhöndlaðar í CFP.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-LEGAL-002",
+          "source_name": "Icelandic Act on the Exclusive Economic Zone No. 41/1979",
+          "source_url": "https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf"
+        },
+        {
+          "id": "FISH-LEGAL-001",
+          "source_name": "EU Regulation 1380/2013 of the European Parliament and of the Council",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380"
+        },
+        {
+          "id": "FISH-DATA-032",
+          "source_name": "EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380"
+        },
+        {
+          "id": "EEA-DATA-004",
+          "source_name": "Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "FISH-LEGAL-005",
+          "source_name": "European Parliament — The Common Fisheries Policy: Origins and Development",
+          "source_url": "https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development"
+        }
+      ],
+      "category": "fisheries",
+      "attribution": "asserted",
+      "article_slug": "draumurinn-um-esb-samning-er-uppgjof",
+      "article_title": "Draumurinn um ESB-samning er uppgjöf",
+      "article_source": "Vísir",
+      "article_date": "2025-12-14"
+    },
+    {
+      "claim_text": "ESB-gervigreindarreglugerð (AI Act) og orkupakkar ESB myndu draga úr samkeppnisforskoti Íslands í gagnaverum og orkufrekum iðnaði",
+      "original_quote": "Að flækja sig í reglugerðafargani ESB (AI Act og orkupökkum) myndi draga úr samkeppnisforskoti okkar.",
+      "verdict": "partially_supported",
+      "explanation": "Ísland hefur augljóst samkeppnisforskot í orkufrekum iðnaði — <a href=\"https://ec.europa.eu/eurostat/\" title=\"Eurostat — Electricity prices for household and non-household consumers; Orkustofnun\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-003</a> sýnir að orkuverð til stóriðju er 25–35 USD/MWh á meðan ESB-meðaltal er 100–150 EUR/MWh. <a href=\"https://ec.europa.eu/eurostat/databrowser/view/nrg_pc_204/default/table?lang=en\" title=\"Hagstofa Íslands — External trade statistics; European Commission — State aid rules for energy\" target=\"_blank\" rel=\"noopener\">ENERGY-ANALYSIS-004</a> bendir á að orkukaupsamningar gætu sætt eftirliti samkvæmt ríkisaðstoðarreglum ESB ef þeir teldust óeðlileg samkeppnisívilnun. Hins vegar er Ísland þegar bundið af stórum hluta ESB-regluverks um orku og umhverfismál í gegnum EES-samninginn (<a href=\"https://www.efta.int/about-efta/legal-documents/eea-legal-texts/annexes-agreement\" title=\"EFTA Secretariat — EEA Agreement Annex IV (Energy); Althingi EU Assessment Committee\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-001</a>). Þá er rétt að gervigreindarreglugerðin er nýlöggjöf sem bætt yrði ofan á — en áhrif hennar á samkeppnisstöðu gagnavera eru ekki skýrð í heimildum.",
+      "missing_context": "Ísland innleiðir nú þegar stóran hluta ESB-orkulöggjafar í gegnum EES-samninginn, svo viðbótarbyrðin af ESB-aðild er minni en fullyrðingin gefur til kynna. <a href=\"https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en\" title=\"European Commission — Carbon Border Adjustment Mechanism\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-029</a> bendir á að munurinn á EES og ESB sé lítill hvað kolefnistoll varðar. Áhrif gervigreindarreglugerðar á gagnaveri eru ekki metin í heimildum og fullyrðingin er því að hluta til á grunni skoðana frekar en staðreynda. Orkuskortur á Íslandi (<a href=\"https://orkustofnun.is/raforkueftirlit/raforkuspa\" title=\"Orkustofnun — Orkuspá og raforkuáætlun\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-007</a>) gæti verið stærra vandamál en reglugerðarumhverfið.",
+      "supporting_evidence": [
+        {
+          "id": "ENERGY-DATA-003",
+          "source_name": "Eurostat — Electricity prices for household and non-household consumers; Orkustofnun",
+          "source_url": "https://ec.europa.eu/eurostat/"
+        },
+        {
+          "id": "ENERGY-ANALYSIS-004",
+          "source_name": "Hagstofa Íslands — External trade statistics; European Commission — State aid rules for energy",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/nrg_pc_204/default/table?lang=en"
+        },
+        {
+          "id": "ENERGY-LEGAL-001",
+          "source_name": "EFTA Secretariat — EEA Agreement Annex IV (Energy); Althingi EU Assessment Committee",
+          "source_url": "https://www.efta.int/about-efta/legal-documents/eea-legal-texts/annexes-agreement"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "TRADE-DATA-029",
+          "source_name": "European Commission — Carbon Border Adjustment Mechanism",
+          "source_url": "https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en"
+        }
+      ],
+      "category": "sovereignty",
+      "attribution": "asserted",
+      "article_slug": "draumurinn-um-esb-samning-er-uppgjof",
+      "article_title": "Draumurinn um ESB-samning er uppgjöf",
+      "article_source": "Vísir",
+      "article_date": "2025-12-14"
+    },
+    {
+      "claim_text": "ESB er ekki að sækja um aðild að Íslandi — Ísland sækir um aðild að ESB sem er klúbbur með fastmótaðar reglur",
+      "original_quote": "Veruleikinn er sá að ESB er ekki að sækja um aðild að Íslandi. Ísland sækir um aðild að klúbbi með fastmótaðar reglur.",
+      "verdict": "supported",
+      "explanation": "Þetta er í eðli sínu rétt lýsing á eðli aðildarviðræðna. <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> staðfesta bæði að umsækjendur samþykki regluverkið eins og það stendur — viðræðurnar snúast um hvenær og hvernig reglurnar eru innleiddar, ekki hvort þær séu innleiddar. <a href=\"https://link.springer.com/book/10.1057/9780230510302\" title=\"Grabbe, H. (2006) 'The EU's Transformative Power: Europeanization Through Conditionality in Central and Eastern Europe', Palgrave Macmillan\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-016</a> vitnar til fræðimannsins Heather Grabbe sem lýsir regluverkinu sem «take-it-or-leave-it» pakka. Fullyrðingin endurspeglar þessa staðreynd á hnitmiðaðan hátt.",
+      "missing_context": "Fullyrðingin er réttnefnd en einfaldar mynd aðildarviðræðna nokkuð. Samkvæmt <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> eru aðlögunartímabil, tæknilegar aðlaganir og fjárhagslegar ráðstafanir samningsatriði sem geta haft verulega þýðingu. Pólland fékk 12 ára undanþágu frá landkaupum erlendra aðila. Einnig hafa aðildarríki rödd í reglugerðarferlinu eftir aðild — þau verða hluti af ákvarðanatökukeðjunni, ólíkt EES-aðild.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-017",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards joining' factsheet",
+          "source_url": "https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf"
+        },
+        {
+          "id": "EEA-LEGAL-021",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        },
+        {
+          "id": "EEA-LEGAL-016",
+          "source_name": "Grabbe, H. (2006) 'The EU's Transformative Power: Europeanization Through Conditionality in Central and Eastern Europe', Palgrave Macmillan",
+          "source_url": "https://link.springer.com/book/10.1057/9780230510302"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "sovereignty",
+      "attribution": "asserted",
+      "article_slug": "draumurinn-um-esb-samning-er-uppgjof",
+      "article_title": "Draumurinn um ESB-samning er uppgjöf",
+      "article_source": "Vísir",
+      "article_date": "2025-12-14"
+    },
+    {
+      "claim_text": "ESB-aðild myndi kæfa þróun á nýtingu miðsjávarfisks í fæðingu",
+      "original_quote": "Íslenskur sjávarútvegur stendur á þröskuldi nýrrar byltingar sem ESB-aðild myndi kæfa í fæðingu.",
+      "verdict": "partially_supported",
+      "explanation": "Rétt er að sjávarútvegsstefna ESB myndi hafa áhrif á nýtingu nýrra sjávarauðlinda — <a href=\"https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf\" title=\"Icelandic Act on the Exclusive Economic Zone No. 41/1979\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-002</a> og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> staðfesta að lögsaga Íslands og kvótastýring myndu falla undir sameiginlegu stefnuna. Aðgangur annarra aðildarríkja að íslenskri lögsögu (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380\" title=\"EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024\" target=\"_blank\" rel=\"noopener\">FISH-DATA-032</a>) gæti dregið úr forskoti Íslands. Hins vegar er orðalagið «kæfa í fæðingu» ófullnægjandi — ESB-ríki stunda umfangsmiklar sjávarrannsóknir og nýsköpun innan ramma stefnunnar. Danmörk er til dæmis leiðandi í iðnaðarfiski (<a href=\"https://ec.europa.eu/eurostat/web/fisheries\" title=\"Danish Ministry of Food, Agriculture and Fisheries; Eurostat fisheries statistics\" target=\"_blank\" rel=\"noopener\">FISH-COMP-004</a>). Engin heimild styður þá fullyrðingu að ESB-aðild myndi koma í veg fyrir nýtingu miðsjávarfisks.",
+      "missing_context": "Fullyrðingin gerir ráð fyrir að miðsjávarfiskur verði nýttur á skipulegan hátt í náinni framtíð — en engar heimildir staðfesta að slík nýting sé yfirvofandi eða tæknilega tilbúin. Nýting miðsjávarfisks er á tilraunastigi á heimsvísu. ESB-kerfi hefur möguleika á rannsóknarstyrkjum og samstarfi sem gæti jafnvel hraðað þróuninni. Þá er engin greining á tiltækum heimildum á áhrifum CFP á nýsköpun í sjávarútvegi.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-LEGAL-002",
+          "source_name": "Icelandic Act on the Exclusive Economic Zone No. 41/1979",
+          "source_url": "https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf"
+        },
+        {
+          "id": "FISH-LEGAL-001",
+          "source_name": "EU Regulation 1380/2013 of the European Parliament and of the Council",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380"
+        },
+        {
+          "id": "FISH-DATA-032",
+          "source_name": "EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "FISH-COMP-004",
+          "source_name": "Danish Ministry of Food, Agriculture and Fisheries; Eurostat fisheries statistics",
+          "source_url": "https://ec.europa.eu/eurostat/web/fisheries"
+        }
+      ],
+      "category": "fisheries",
+      "attribution": "asserted",
+      "article_slug": "draumurinn-um-esb-samning-er-uppgjof",
+      "article_title": "Draumurinn um ESB-samning er uppgjöf",
+      "article_source": "Vísir",
+      "article_date": "2025-12-14"
+    },
+    {
+      "claim_text": "Með ESB-aðild myndi Ísland afsala sér tækjunum til að leiðrétta eigin vandamál í samfélaginu",
+      "original_quote": "Með inngöngu í ESB afsölum við okkur tækjunum til að leiðrétta þessar skekkjur.",
+      "verdict": "partially_supported",
+      "explanation": "ESB-aðild myndi sannarlega flytja vald á ákveðnum sviðum — <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003\" title=\"Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-030</a> skilgreinir einkaréttarsvið ESB (tollabandalag, samkeppnisreglur, peningamálastefna, sjávarútvegsstefna, viðskiptastefna) þar sem aðildarríki mega ekki setja eigin lög. <a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a> staðfestir að viðskiptastefna myndi færast til ESB. Hins vegar er «tækjunum» of algild orðnotkun — aðildarríki halda umtalsverðu valdi á sviðum eins og skattamálum, menntun, heilbrigðisþjónustu og húsnæðismálum. <a href=\"https://www.eftasurv.int/state-aid\" title=\"EFTA Surveillance Authority — State aid decisions; EEA Agreement, Protocol 26\" target=\"_blank\" rel=\"noopener\">HOUSING-LEGAL-001</a> sýnir til dæmis að ríkisaðstoðarreglur þegar gilda um Ísland í gegnum EES-samninginn.",
+      "missing_context": "Fullyrðingin gefur til kynna algert valdatap, en raunin er flóknari. Aðildarríki halda tölvuverðri stjórn á fjölmörgum sviðum — 6. grein TFEU skilgreinir stuðningssvið þar sem ESB má einungis styðja aðildarríki, þ.m.t. menntun, menningu, ferðaþjónustu og borgaravernd. Ísland er þegar bundið af umtalsverðu ESB-regluverki í gegnum EES-samninginn. Rétturinn til útgöngu (50. grein) þýðir að fullveldistapið er afturkallanlegt. Hér skiptir máli hvort «tækin» vísi til sérstakra sviða eins og sjávarútvegs (þar sem fullyrðingin er sterkari) eða til allra stefnumótunartækja (þar sem hún er ofdrifin).",
+      "supporting_evidence": [
+        {
+          "id": "SOV-LEGAL-030",
+          "source_name": "Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003"
+        },
+        {
+          "id": "SOV-LEGAL-032",
+          "source_name": "TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview",
+          "source_url": "https://www.efta.int/free-trade/free-trade-agreements"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "SOV-DATA-021",
+          "source_name": "Althingi debate records; Snorri Másson — Op-eds and interviews",
+          "source_url": "https://www.althingi.is/"
+        }
+      ],
+      "category": "sovereignty",
+      "attribution": "asserted",
+      "article_slug": "draumurinn-um-esb-samning-er-uppgjof",
+      "article_title": "Draumurinn um ESB-samning er uppgjöf",
+      "article_source": "Vísir",
+      "article_date": "2025-12-14"
+    },
+    {
+      "claim_text": "Ísland á einstakt tækifæri í gagnaverum og orkufrekum iðnaði",
+      "original_quote": "Ísland á einstakt tækifæri í gagnaverum og orkufrekum iðnaði.",
+      "verdict": "supported",
+      "explanation": "Heimildir styðja þetta vel. <a href=\"https://ec.europa.eu/eurostat/\" title=\"Eurostat — Electricity prices for household and non-household consumers; Orkustofnun\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-003</a> sýnir að orkuverð til stóriðju á Íslandi er langt undir ESB-meðaltali (25–35 USD/MWh á móti 100–150 EUR/MWh). <a href=\"https://orkustofnun.is/en/information/numerical_data/energy\" title=\"Orkustofnun (National Energy Authority) — Energy Statistics 2024\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-005</a> staðfestir að Ísland er með hæsta hlutfall endurnýjanlegrar orku í Evrópu (um 85%), og <a href=\"https://orkustofnun.is/en/information/publication/energy_data\" title=\"Orkustofnun — Energy Statistics in Iceland 2023\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-001</a> bendir á nánast 100% endurnýjanlega raforku. Samsetning ódýrrar og hreinnar orku, kalt loftslag (kæling gagnavera) og sterk stafræn innviðabygging (<a href=\"https://digital-strategy.ec.europa.eu/en/policies/desi\" title=\"Hagstofa Íslands — ICT usage survey; European Commission — Digital Economy and Society Index (DESI)\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-015</a> nefnir 98% háhraðanettengingu) skapa raunverulegt samkeppnisforskot.",
+      "missing_context": "<a href=\"https://orkustofnun.is/raforkueftirlit/raforkuspa\" title=\"Orkustofnun — Orkuspá og raforkuáætlun\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-007</a> varar við orkuskorti á Íslandi — Landsvirkjun getur ekki tekið við nýjum stórum viðskiptavinum til skamms tíma og ný virkjun tekur 5–10 ár. Tækifærið er raunverulegt en háð auknu orkuframboði. Álver nota nú þegar um 70% raforku landsins, sem takmarkar svigrúm fyrir nýja aðila eins og gagnaveri.",
+      "supporting_evidence": [
+        {
+          "id": "ENERGY-DATA-003",
+          "source_name": "Eurostat — Electricity prices for household and non-household consumers; Orkustofnun",
+          "source_url": "https://ec.europa.eu/eurostat/"
+        },
+        {
+          "id": "ENERGY-DATA-005",
+          "source_name": "Orkustofnun (National Energy Authority) — Energy Statistics 2024",
+          "source_url": "https://orkustofnun.is/en/information/numerical_data/energy"
+        },
+        {
+          "id": "ENERGY-DATA-001",
+          "source_name": "Orkustofnun — Energy Statistics in Iceland 2023",
+          "source_url": "https://orkustofnun.is/en/information/publication/energy_data"
+        },
+        {
+          "id": "ENERGY-DATA-002",
+          "source_name": "Orkustofnun — Geothermal Development and Research in Iceland 2023",
+          "source_url": "https://orkustofnun.is/en/information/numerical_data/heat"
+        },
+        {
+          "id": "LABOUR-DATA-015",
+          "source_name": "Hagstofa Íslands — ICT usage survey; European Commission — Digital Economy and Society Index (DESI)",
+          "source_url": "https://digital-strategy.ec.europa.eu/en/policies/desi"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "ENERGY-DATA-007",
+          "source_name": "Orkustofnun — Orkuspá og raforkuáætlun",
+          "source_url": "https://orkustofnun.is/raforkueftirlit/raforkuspa"
+        }
+      ],
+      "category": "energy",
+      "attribution": "asserted",
+      "article_slug": "draumurinn-um-esb-samning-er-uppgjof",
+      "article_title": "Draumurinn um ESB-samning er uppgjöf",
+      "article_source": "Vísir",
+      "article_date": "2025-12-14"
     }
   ],
   "articles": [
@@ -531,6 +861,17 @@
       "claim_count": 18,
       "attribution_types": [
         "asserted"
+      ]
+    },
+    {
+      "slug": "draumurinn-um-esb-samning-er-uppgjof",
+      "title": "Draumurinn um ESB-samning er uppgjöf",
+      "source": "Vísir",
+      "date": "2025-12-14",
+      "claim_count": 9,
+      "attribution_types": [
+        "asserted",
+        "paraphrased"
       ]
     }
   ]

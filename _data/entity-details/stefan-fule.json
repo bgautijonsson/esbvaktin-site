@@ -7,13 +7,106 @@
   "party": null,
   "stance": "neutral",
   "stance_score": 0.0,
-  "credibility": null,
+  "credibility": 1.0,
   "attribution_counts": {
-    "quoted": 1,
+    "quoted": 2,
+    "paraphrased": 1,
     "mentioned": 1
   },
   "althingi_stats": null,
-  "scorecard": {},
-  "claims": [],
-  "articles": []
+  "scorecard": {
+    "supported": 2
+  },
+  "claims": [
+    {
+      "claim_text": "Štefan Füle, stækkunarstjóri ESB, sagði á blaðamannafundi í Brussel árið 2010 að engin varanleg undanþága frá regluverki ESB væri í boði.",
+      "original_quote": "Blaðamannafundur í Brussel 2010 – Štefan Füle, stækkunarstjóri ESB, sagði að engin varanleg undanþága frá regluverki ESB væri í boði.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> staðfestir að «Commissioner for Enlargement Stefan Füle (2010–2014) repeatedly stated that the full acquis must be adopted by all new members.» <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-004</a> bætir við: «Commissioner for Enlargement Stefan Füle (2010–2014) consistently stated that the acquis must be adopted in full by all new members.» Þótt heimildir nefni ekki sérstaklega blaðamannafund í Brussel 2010, staðfesta þær skýrt að Füle sagði ítrekað að ekkert varanlegt frávik væri í boði. Króatía (2013) staðfesti þessa meginreglu í framkvæmd.",
+      "missing_context": "Heimildir staðfesta ekki sérstakan blaðamannafund í Brussel 2010 sem vettvang yfirlýsingarinnar. Efni fullyrðingarinnar — að Füle hafi sagt engin varanleg frávik — er vel stutt. <a href=\"https://eur-lex.europa.eu/collection/eu-law/treaties.html\" title=\"European Parliament — EU Treaties and Protocols; Accession Treaty texts\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-023</a> bendir þó á að nokkur ríki hafi náð hálfvaranlegum sérkjörum þrátt fyrir þessa opinberu afstöðu.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-012",
+          "source_name": "European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        },
+        {
+          "id": "AGRI-LEGAL-004",
+          "source_name": "EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        },
+        {
+          "id": "EEA-LEGAL-021",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "EEA-LEGAL-023",
+          "source_name": "European Parliament — EU Treaties and Protocols; Accession Treaty texts",
+          "source_url": "https://eur-lex.europa.eu/collection/eu-law/treaties.html"
+        }
+      ],
+      "category": "eea_eu_law",
+      "attribution": "quoted",
+      "article_slug": "island-og-esb-oskhyggja-og-stadreyndir",
+      "article_title": "Ísland og ESB – óskhyggja og staðreyndir",
+      "article_source": "Heimssýn",
+      "article_date": "2025-08-13"
+    },
+    {
+      "claim_text": "Štefan Füle, fyrrum stækkunarstjóri ESB, lagði mikla áherslu á að aðlögunarferlið sé það sem er samið um þegar Ísland sótti síðast um aðild.",
+      "original_quote": "líkt og Štefan Füle, fyrrum stækkunarstjóri ESB, lagði mikla áherslu á þegar Ísland sótti síðast um",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> staðfestir að Stefan Füle, framkvæmdastjóri stækkunarmála ESB á árunum 2010–2014, hafi ítrekað lýst því yfir að nýjar aðildarþjóðir þyrftu að taka upp allt regluverkið. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-004</a> endurtekur þetta og bætir við að Füle hafi «stöðugt» haldið því fram. Tímabilið 2010–2014 fellur saman við umsóknarferli Íslands (2009–2013), svo tengsl fullyrðingarinnar við íslensku aðildarviðræðurnar eru vel studd.",
+      "missing_context": "Heimildir lýsa afstöðu Füle almennt — ekki er vísað beint í ummæli hans um aðlögunarferlið í tengslum við Ísland sérstaklega. Afstaða hans varðaði stækkunarstefnuna í heild sinni, ekki einungis íslenska umsóknina. Auk þess hefur ESB sýnt ákveðinn sveigjanleika í reynd, þótt formlega stefnan sé skýr.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-012",
+          "source_name": "European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        },
+        {
+          "id": "AGRI-LEGAL-004",
+          "source_name": "EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        },
+        {
+          "id": "EEA-LEGAL-017",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards joining' factsheet",
+          "source_url": "https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "precedents",
+      "attribution": "paraphrased",
+      "article_slug": "akall-til-esb-sinna-hvar-eru-undanthagurnar",
+      "article_title": "Ákall til ESB-sinna: Hvar eru undanþágurnar?",
+      "article_source": "Vísir",
+      "article_date": "2025-08-25"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "island-og-esb-oskhyggja-og-stadreyndir",
+      "title": "Ísland og ESB – óskhyggja og staðreyndir",
+      "source": "Heimssýn",
+      "date": "2025-08-13",
+      "claim_count": 1,
+      "attribution_types": [
+        "quoted"
+      ]
+    },
+    {
+      "slug": "akall-til-esb-sinna-hvar-eru-undanthagurnar",
+      "title": "Ákall til ESB-sinna: Hvar eru undanþágurnar?",
+      "source": "Vísir",
+      "date": "2025-08-25",
+      "claim_count": 1,
+      "attribution_types": [
+        "paraphrased"
+      ]
+    }
+  ]
 }

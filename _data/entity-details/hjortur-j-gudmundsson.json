@@ -6,15 +6,16 @@
   "role": "sagnfræðingur og alþjóðastjórnmálafræðingur",
   "party": null,
   "stance": "anti_eu",
-  "stance_score": -0.5,
+  "stance_score": -0.56,
   "credibility": 0.69,
   "attribution_counts": {
-    "asserted": 46
+    "asserted": 46,
+    "paraphrased": 1
   },
   "althingi_stats": null,
   "scorecard": {
     "supported": 16,
-    "partially_supported": 17,
+    "partially_supported": 18,
     "misleading": 3,
     "unverifiable": 1
   },
@@ -1131,6 +1132,32 @@
       "article_title": "Tók Tusk tillit til sjávarútvegsmála Írlands?",
       "article_source": "Stjórnmálin",
       "article_date": "2026-03-17"
+    },
+    {
+      "claim_text": "Vægi Íslands í ráðherraráði ESB yrði 0,08% við aðild.",
+      "original_quote": "Hjörtur bendir á að gengi Íslandi í Evrópusambandið yrði vægi þess \"0,08%\" í ráðherraráðinu",
+      "verdict": "partially_supported",
+      "explanation": "Talan 0,08% er rétt sem hlutfall af heildaríbúafjölda ESB (380.000 af 450 milljónum) samkvæmt <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a>. Hún á þó aðeins við um annan hluta tvöföldu meirihlutareglunnar — íbúaþyngd. Í ráðherraráðinu gildir einnig regla um fjölda ríkja (55% aðildarríkja), þar sem hvert ríki hefur eitt atkvæði óháð stærð. Fullyrðingin sleppur þessu og gefur þannig of einfalda mynd af raunverulegu vægi Íslands.",
+      "missing_context": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> bendir á að flest mál í ráðherraráðinu séu samþykkt með samstöðu án formlegrar atkvæðagreiðslu. Smáríki eins og Malta hafa haft áhrif á stefnumótun með bandalagsmyndun. Ísland hefði jafnframt einn framkvæmdastjóra og a.m.k. 6 þingmenn á Evrópuþinginu — atriði sem 0,08%-talan tekur ekki til.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-017",
+          "source_name": "Treaty on European Union, Article 16(4); European Parliament allocation rules",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016"
+        },
+        {
+          "id": "SOV-LEGAL-002",
+          "source_name": "Treaty on European Union, Article 16(4)",
+          "source_url": "https://eur-lex.europa.eu/summary/glossary/qualified_majority.html"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "sovereignty",
+      "attribution": "paraphrased",
+      "article_slug": "erum-vid-i-ofbeldissambandi-vid-esb",
+      "article_title": "Erum við í ofbeldissambandi við ESB?",
+      "article_source": "Vísir",
+      "article_date": "2025-11-21"
     }
   ],
   "articles": [
@@ -1192,6 +1219,16 @@
       "claim_count": 2,
       "attribution_types": [
         "asserted"
+      ]
+    },
+    {
+      "slug": "erum-vid-i-ofbeldissambandi-vid-esb",
+      "title": "Erum við í ofbeldissambandi við ESB?",
+      "source": "Vísir",
+      "date": "2025-11-21",
+      "claim_count": 1,
+      "attribution_types": [
+        "paraphrased"
       ]
     }
   ]

@@ -14,8 +14,8 @@
   "althingi_stats": null,
   "scorecard": {
     "misleading": 4,
-    "partially_supported": 7,
-    "supported": 11
+    "partially_supported": 8,
+    "supported": 10
   },
   "claims": [
     {
@@ -182,27 +182,43 @@
     {
       "claim_text": "Krónan hefur þann eiginleika að fylgja efnahagsþróun íslenska hagkerfisins og ef illa árar sígur hún og lagast þar með samkeppnisstaða útflutningsins.",
       "original_quote": "Þar að auki hefur krónan þann eiginleika að fylgja efnahagsþróun íslenska hagkerfisins. Ef illa árar þá sígur hún og þá lagast samkeppnisstaða útflutningsins sem minnkar áhrif á atvinnuleysi, og styrkist ella.",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://sedlabanki.is/hagtolur/gengi?PageID=289\" title=\"Central Bank of Iceland — Exchange rate data; ECB — Statistical Data Warehouse\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-016</a> og <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> staðfesta að krónan hafi lækkað verulega í efnahagskreppum — um 50% á árunum 2008–2009 og um 17% í byrjun COVID-19. Þessar gengislækkanir bættu samkeppnisstöðu útflutnings, eins og fullyrðingin lýsir. <a href=\"https://www.sedlabanki.is/hagtolur/gengi/\" title=\"Seðlabanki Íslands — Exchange rate data\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-007</a> bætir við að gengisaðlögunin hafi stuðlað að hraðari efnahagsbata en í evruríkjum sem gátu ekki gengisfellt. Þetta er viðurkenndur eiginleiki smárra sjálfstæðra gjaldmiðla í hagfræði.",
-      "missing_context": "Gengissveigjanleiki er tvíeggja sverð: krónan veldur einnig innfluttri verðbólgu, óvissu fyrir fjárfesta og háum vaxtamun. <a href=\"https://cb.is/statistics/official-exchange-rate/\" title=\"Seðlabanki Íslands — Monetary Bulletin; ECB Statistical Data Warehouse\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-004</a> sýnir 10–12% árlega sveifluvídd sem hefur beinan kostnað. Fræðilegar deilur um ákjósanlegt myntsvæði benda til þess að Ísland sé of lítið hagkerfi fyrir sjálfstæðan gjaldmiðil, en evrusvæðið uppfylli ekki heldur öll skilyrði.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin lýsir grundvallareiginleika fljótandi gjaldmiðils á réttmætan hátt. <a href=\"https://sedlabanki.is/hagtolur/gengi?PageID=289\" title=\"Central Bank of Iceland — Exchange rate data; ECB — Statistical Data Warehouse\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-016</a> og <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> staðfesta að krónan lækkaði um 50% í kreppunni 2008, sem stuðlaði að bata útflutningsgreina. <a href=\"https://www.sedlabanki.is/hagtolur/gengi/\" title=\"Seðlabanki Íslands — Exchange rate data\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-007</a> sýnir einnig gengislækkun í COVID-19-kreppunni 2020. Sjálfvirk aðlögun gengis er vel skjalfestur eiginleiki fljótandi gjaldmiðla. Hins vegar vantar á fullyrðinguna verulegan fyrirvara: gengisveiking veldur einnig verðbólgu og hækkar innflutningsverð, sem dregur úr ávinningi samkeppnisstöðunnar. Krónan hefur einnig sýnt óstöðugleika sem er ekki einungis «aðlögun» heldur einnig uppspretta efnahagsáfalla.",
+      "missing_context": "Fullyrðingin nefnir eingöngu jákvæðu hliðina á gengissveigjanleikanum. Gengisveiking krónunnar 2008 olli einnig gríðarlegri verðbólgu og gjaldeyrishöftum sem stóðu í níu ár (2008–2017). Fræðilega umræðan um hagstæð myntsvæði (<a href=\"https://www.jstor.org/stable/1812792\" title=\"Mundell (1961) 'A Theory of Optimum Currency Areas'; Stiglitz (2016) 'The Euro'; CBI Working Papers\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-019</a>) bendir til þess að Ísland sé of lítið og sérhæft fyrir sjálfstæðan gjaldmiðil — sérfræðingar eru ósammála um hvort sveigjanleikinn vegi upp á móti óstöðugleikanum. Krónan hefur ítrekað valdið innfluttri verðbólgu sem bitnar á kaupmætti.",
       "supporting_evidence": [
-        {
-          "id": "CURRENCY-DATA-016",
-          "source_name": "Central Bank of Iceland — Exchange rate data; ECB — Statistical Data Warehouse",
-          "source_url": "https://sedlabanki.is/hagtolur/gengi?PageID=289"
-        },
         {
           "id": "SOV-LEGAL-005",
           "source_name": "Central Bank of Iceland — Monetary policy framework",
           "source_url": "https://sedlabanki.is/peningastefna/"
         },
         {
+          "id": "CURRENCY-DATA-016",
+          "source_name": "Central Bank of Iceland — Exchange rate data; ECB — Statistical Data Warehouse",
+          "source_url": "https://sedlabanki.is/hagtolur/gengi?PageID=289"
+        },
+        {
           "id": "TRADE-DATA-007",
           "source_name": "Seðlabanki Íslands — Exchange rate data",
           "source_url": "https://www.sedlabanki.is/hagtolur/gengi/"
+        },
+        {
+          "id": "TRADE-DATA-008",
+          "source_name": "Seðlabanki Íslands — Balance of payments statistics",
+          "source_url": "https://cb.is/statistics/balance-of-payments/"
         }
       ],
-      "contradicting_evidence": [],
+      "contradicting_evidence": [
+        {
+          "id": "CURR-DATA-001",
+          "source_name": "Seðlabanki Íslands — Special Investigation Commission report; Central Bank annual report 2009",
+          "source_url": "https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/skyrsla-nefndarinnar/english/"
+        },
+        {
+          "id": "CURRENCY-DATA-019",
+          "source_name": "Mundell (1961) 'A Theory of Optimum Currency Areas'; Stiglitz (2016) 'The Euro'; CBI Working Papers",
+          "source_url": "https://www.jstor.org/stable/1812792"
+        }
+      ],
       "category": "currency",
       "attribution": "asserted",
       "article_slug": "ef-vid-uppfyllum-skilyrdin-thurfum-vid-hvort-sem-er-ekki-esb",
