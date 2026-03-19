@@ -58,7 +58,7 @@ evidence_preview: true
           </div>
           {% endif %}
           <div class="report-participant-verdicts">
-            <span class="report-participant-count">{{ p.claim_count }} fullyrðingar</span>
+            <span class="report-participant-count">{{ p.claim_count }} {{ "fullyrðing" if p.claim_count == 1 else "fullyrðingar" }}</span>
             {% set verdictOrder = ["supported", "partially_supported", "unverifiable", "misleading", "unsupported"] %}
             <div class="report-verdict-bar" role="img" aria-label="Dreifing niðurstaðna">
               {% for v in verdictOrder %}
