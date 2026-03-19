@@ -11,9 +11,10 @@
   "capsule": "Könnun meðal félagsmanna Samtaka iðnaðarins frá febrúar–mars 2026 sýnir að 57% þeirra eru andvíg ESB-aðild Íslands — og hlutfall mjög andvígra er tæplega tvöfalt hærra en í sambærilegri könnun árið 2024. Athyglisvert er þó að SI sem samtök hafa opinberlega stutt ESB-aðild og rökstutt hana m. a. með betri markaðsaðgangi og þátttöku í iðnaðarstefnu ESB — sem þýðir að félagsmenn og forysta samtakanna eru ekki á sama máli.",
   "verdict_counts": {
     "supported": 10,
+    "unverifiable": 1,
     "unsupported": 1
   },
-  "claim_count": 11,
+  "claim_count": 12,
   "dominant_category": "org_positions",
   "categories": [
     "org_positions",
@@ -78,6 +79,39 @@
       "contradicting_evidence": [],
       "missing_context": "Könnunaraðferð, úrtaksstærð og svarhlutfall hafa ekki verið staðfest af óháðum aðila. Afstaða félagsmanna Samtaka iðnaðarins endurspeglar ekki almenningsálitið — þetta er hagsmunasamtök atvinnurekenda í iðnaði.",
       "confidence": 0.85,
+      "speakers": [
+        {
+          "name": "Samtök iðnaðarins",
+          "type": "institution",
+          "role": "hagsmunasamtök atvinnulífsins",
+          "party": null,
+          "stance": "neutral",
+          "attribution": "paraphrased",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "könnunarinnar sem var gerð í febrúar og mars",
+        "claim_text": "Könnunin meðal félagsmanna SI var gerð í febrúar og mars 2026.",
+        "category": "org_positions",
+        "claim_type": "statistic",
+        "confidence": 0.9
+      },
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins (SI) — Membership survey, February/March 2026\" target=\"_blank\" rel=\"noopener\">ORG-DATA-001</a> staðfestir beinlínis að SI gerði félagsmannakönnum í febrúar/mars 2026 um viðhorf til ESB-aðildar. Tímasetningin er nákvæmlega sú sama og fullyrðingin segir.",
+      "supporting_evidence": [
+        {
+          "id": "ORG-DATA-001",
+          "source_name": "Samtök iðnaðarins (SI) — Membership survey, February/March 2026",
+          "source_url": "https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": null,
+      "confidence": 0.95,
       "speakers": [
         {
           "name": "Samtök iðnaðarins",
@@ -198,18 +232,12 @@
         "claim_type": "statistic",
         "confidence": 0.9
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins — Könnun meðal félagsmanna um ESB-aðild\" target=\"_blank\" rel=\"noopener\">POLL-DATA-023</a> staðfestir að hlutfall félagsmanna SI sem voru \\\"mjög fylgjandi\\\" ESB-aðild féll úr um 17% árið 2024 í um 10% árið 2026. Tölurnar passa nákvæmlega við fullyrðinguna. Rétt er þó að taka fram að um könnun meðal iðnaðarfyrirtækja er að ræða — ekki almenningskönnun — og aðferðafræðin gæti verið breytileg milli ára.",
-      "supporting_evidence": [
-        {
-          "id": "POLL-DATA-023",
-          "source_name": "Samtök iðnaðarins — Könnun meðal félagsmanna um ESB-aðild",
-          "source_url": "https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb"
-        }
-      ],
+      "verdict": "unverifiable",
+      "explanation": "Engin heimild inniheldur íslensk skoðanakannanagögn sem sýna hlutfall «mjög fylgjandi» ESB-aðild á sautján prósentum árið 2024 eða tíu prósentum árið 2026. <a href=\"https://europa.eu/eurobarometer/surveys/detail/3131\" title=\"Standard Eurobarometer; OBR; ONS; Eurostat\" target=\"_blank\" rel=\"noopener\">PREC-DATA-017</a> fjallar um Eurobarometer-kannanir á ESB-ríkjum almennt en nær ekki til íslensku könnunargagna. Aðrar heimildir (<a href=\"https://commonslibrary.parliament.uk/research-briefings/cbp-7851/\" title=\"UK House of Commons Library, Statistics on UK-EU Trade (Research Briefing CBP-7851)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-001</a>, <a href=\"https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/\" title=\"UK Office for National Statistics — Trade statistics; Office for Budget Responsibility — Brexit impact assessment\" target=\"_blank\" rel=\"noopener\">PREC-HIST-012</a> o.fl.) fjalla um efnahagsleg áhrif Brexit á Bretland og hafa enga tengingu við íslenskar skoðanakannanir.",
+      "supporting_evidence": [],
       "contradicting_evidence": [],
-      "missing_context": "Sundurliðun á stuðningshliðinni (hlutfall mjög fylgjandi og frekar fylgjandi) er ekki í staðreyndagrunni. Nákvæmar tölur úr könnuninni og samanburðarkönnuninni 2024 væru nauðsynlegar til að sannreyna þessa fullyrðingu.",
-      "confidence": 0.88,
+      "missing_context": "Sértækar íslenskar skoðanakannanir (t.d. Gallup, Maskína eða MMR) sem greina á milli stuðningsflokka vantar í gagnagrunninn. Tölurnar sautján prósent og tíu prósent gætu verið úr raunverulegri könnun en slík heimild er ekki til staðar meðal framlagðra gagna.",
+      "confidence": 0.92,
       "speakers": [
         {
           "name": "Samtök iðnaðarins",
@@ -351,7 +379,7 @@
         "confidence": 0.9
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir beint að utanríkisráðherra Þorgerður Katrín Gunnarsdóttir lagði fram stjórnartillögu til þingsályktunar 9. mars 2026 um þjóðaratkvæðagreiðslu 29. ágúst 2026. <a href=\"https://www.althingi.is/\" title=\"Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-028</a> staðfestir einnig að tillagan hafi verið lögð fram 7. mars 2026. <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> lýsir andmælum stjórnarandstöðu við málsmeðferðinni. Fullyrðingin er staðreynd sem margar heimildir staðfesta.",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir beint að utanríkisráðherra Þorgerður Katrín Gunnarsdóttir hafi lagt fram stjórnartillögu til þingsályktunar um þjóðaratkvæðagreiðslu 29. ágúst 2026 með spurningunni «Á að halda áfram viðræðum um aðild Íslands að Evrópusambandinu?» <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> staðfestir einnig að þingsályktunartillaga ríkisstjórnarinnar hafi verið lögð fram á Alþingi snemma árs 2026. <a href=\"https://www.althingi.is/\" title=\"Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-028</a> bætir við að framlagningin var á föstudegi 7. mars 2026. Öll meginatriði fullyrðingarinnar eru staðfest af heimildum.",
       "supporting_evidence": [
         {
           "id": "SOV-PARL-001",
@@ -359,23 +387,18 @@
           "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
         },
         {
-          "id": "SOV-LEGAL-028",
-          "source_name": "Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24",
-          "source_url": "https://www.althingi.is/"
-        },
-        {
           "id": "SOV-PARL-005",
           "source_name": "Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)",
           "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
         },
         {
-          "id": "POLITICAL-DATA-012",
-          "source_name": "Althingi — Member directory; Government of Iceland cabinet listing",
-          "source_url": "https://www.althingi.is/thingmenn/althingismannatal/leit-i-althingismannatali/"
+          "id": "SOV-LEGAL-028",
+          "source_name": "Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24",
+          "source_url": "https://www.althingi.is/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Ósamræmi er í heimildum um nákvæma dagsetningu (7. eða 9. mars 2026) — þetta gæti verið vegna þess að tillagan var lögð fram á föstudag (7. mars) en kynnt formlega á þingfundi mánudaginn 9. mars. Stjórnarandstaðan hefur gagnrýnt málsmeðferðina og samráðsleysi.",
+      "missing_context": "Stjórnarandstaðan hefur gagnrýnt ferlið harkalega — <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T175023.html\" title=\"Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-003</a> og <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> greina frá því að utanríkismálanefnd hafi ekki verið nægilega ráðfyrirspurð og engin formleg samráðsferli voru viðhöfð. Hvort ferlið var eðlilegt er umdeilt.",
       "confidence": 0.95,
       "speakers": [
         {
@@ -467,9 +490,10 @@
       "party": null,
       "role_in_article": "speaker",
       "attribution_type": "paraphrased",
-      "claim_count": 7,
+      "claim_count": 8,
       "verdicts": {
         "supported": 6,
+        "unverifiable": 1,
         "unsupported": 1
       },
       "stance": "neutral",

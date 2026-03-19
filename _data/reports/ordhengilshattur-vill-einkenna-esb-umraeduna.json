@@ -10,17 +10,17 @@
   "summary": "Greindar 15 fullyrðingar .",
   "capsule": "Þjóðaratkvæðagreiðslan um aðildarviðræður við ESB er boðuð til 29. ágúst 2026 og EES-samningurinn hefur þegar opnað innri markað ESB fyrir Ísland. Athyglisvert er að sjávarútvegur er sérstaklega undanþeginn EES-samningnum — en við ESB-aðild myndi hann koma undir sameiginlega sjávarútvegsstefnu Evrópusambandsins, sem er ein stærsta samningsspurningin sem bíður. Þar sem Ísland er hlutfallslega stærsta fiskveiðiþjóð Evrópu er gagnlegt að kynna sér hvað sú stefna felur í sér og hverjar undanþágumögulegar lausnir hafa verið í fyrri aðildarviðræðum.",
   "verdict_counts": {
-    "supported": 4,
-    "unverifiable": 4,
-    "partially_supported": 2
+    "supported": 7,
+    "unverifiable": 1,
+    "partially_supported": 4
   },
-  "claim_count": 10,
+  "claim_count": 12,
   "dominant_category": "other",
   "categories": [
+    "agriculture",
     "currency",
     "eea_eu_law",
     "other",
-    "party_positions",
     "precedents"
   ],
   "claims": [
@@ -134,45 +134,29 @@
     },
     {
       "claim": {
-        "original_quote": "Við urðum lýðveldi í seinna stríði",
-        "claim_text": "Ísland varð lýðveldi í seinna stríði.",
+        "original_quote": "við gengum í Nató í kjölfarið þegar mikið rót var",
+        "claim_text": "Ísland gekk í NATO í kjölfar seinna stríðs þegar mikið rót var í alþjóðamálum.",
         "category": "precedents",
         "claim_type": "statistic",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Engar heimildir í staðreyndagrunninum fjalla beint um stofnun lýðveldisins 1944. Þetta er almennur sögulegur staðhæfingur sem er almennt þekktur og réttur, en gögn til staðfestingar vantar í grunninn.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "missing_context": "Ísland varð lýðveldi 17. júní 1944 með þjóðaratkvæðagreiðslu. Þetta er vel þekkt söguleg staðreynd sem ekki er umdeild.",
-      "confidence": 0.4,
-      "speakers": [
+      "verdict": "supported",
+      "explanation": "<a href=\"https://avalon.law.yale.edu/20th_century/ice001.asp\" title=\"Avalon Project, Yale Law Library — Defense of Iceland: Agreement Between the United States and the Republic of Iceland, May 5, 1951; Government of Iceland — Iceland and the US: Bilateral Relations\" target=\"_blank\" rel=\"noopener\">SOV-HIST-002</a> staðfestir að Ísland var stofnmeðlimur NATO árið 1949, fáum árum eftir seinni heimsstyrjöldina. Kalda stríðið var hafið og mikil spenna ríkti í alþjóðamálum, sem samræmist lýsingunni á \"miklu róti\".",
+      "supporting_evidence": [
         {
-          "name": "Kristrún Frostadóttir",
-          "type": "individual",
-          "role": "forsætisráðherra",
-          "party": "Samfylkingin",
-          "stance": "pro_eu",
-          "attribution": "quoted",
-          "stance_score": null,
-          "credibility": null
+          "id": "SOV-HIST-002",
+          "source_name": "Avalon Project, Yale Law Library — Defense of Iceland: Agreement Between the United States and the Republic of Iceland, May 5, 1951; Government of Iceland — Iceland and the US: Bilateral Relations",
+          "source_url": "https://avalon.law.yale.edu/20th_century/ice001.asp"
+        },
+        {
+          "id": "SOV-DATA-009",
+          "source_name": "NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list",
+          "source_url": "https://www.nato.int/en/about-us/official-texts-and-resources/strategic-concepts/nato-2022-strategic-concept"
         }
-      ]
-    },
-    {
-      "claim": {
-        "original_quote": "við hótuðum að ganga út úr Nató í þorskastríðinu",
-        "claim_text": "Ísland hótaði að ganga út úr NATO í þorskastríðinu.",
-        "category": "precedents",
-        "claim_type": "statistic",
-        "confidence": 0.9
-      },
-      "verdict": "unverifiable",
-      "explanation": "Engar heimildir í staðreyndagrunninum fjalla beint um þorskastríðin eða NATO-hótanir Íslands í tengslum við þau. <a href=\"https://avalon.law.yale.edu/20th_century/ice001.asp\" title=\"Avalon Project, Yale Law Library — Defense of Iceland: Agreement Between the United States and the Republic of Iceland, May 5, 1951; Government of Iceland — Iceland and the US: Bilateral Relations\" target=\"_blank\" rel=\"noopener\">SOV-HIST-002</a> nefnir varnarsamninginn við Bandaríkin en ekki þorskastríðin. Þetta er vel þekktur sögulegur atburður en heimildir vantar til staðfestingar.",
-      "supporting_evidence": [],
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Ísland beitti NATO-hótuninni sem samningsspil gegn Bretum í þorskastríðunum. Þetta er vel skjalfest í söguritum en ekki í þessum staðreyndagrunni.",
-      "confidence": 0.3,
+      "missing_context": "NATO-aðildin 1949 var mjög umdeild á Íslandi og olli mótmælum. Fullyrðingin einfaldar sögulegt samhengi.",
+      "confidence": 0.9,
       "speakers": [
         {
           "name": "Kristrún Frostadóttir",
@@ -312,18 +296,153 @@
     },
     {
       "claim": {
-        "original_quote": "Þeir nefndu Silfur Egils á RÚV, þar sem formenn allra flokka höfðu mætt til að ræða þetta mikla mál nema tvo vantaði úr ríkisstjórnarflokkunum",
-        "claim_text": "Formenn allra flokka mættu í Silfur Egils á RÚV til að ræða ESB-málið nema tveir úr ríkisstjórnarflokkum.",
-        "category": "party_positions",
-        "claim_type": "statistic",
+        "original_quote": "Heimskautalandbúnaður er til að mynda sérstakt hugtak sem búið var til innan Evrópusambandsins svo Finnland myndi passa betur inn.",
+        "claim_text": "Evrópusambandið bjó til sérstakt hugtak, heimskautalandbúnað, til að Finnland myndi passa betur inn við aðild.",
+        "category": "agriculture",
+        "claim_type": "legal_assertion",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Engar heimildir í staðreyndagrunninum fjalla um tiltekna þáttagerð Silfurs Egils eða mætingu flokkformanna. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Coalition agreement (stjórnarsáttmáli) 2024; party platforms; media reporting March 2026\" target=\"_blank\" rel=\"noopener\">POL-DATA-021</a> staðfestir að ríkisstjörnin samanstendur af þremur flokkum, sem gerir fullyrðinguna um tvo fjarverandi formenn trúverðuga, en beinar heimildir vantar.",
-      "supporting_evidence": [],
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að Finnland fékk sérstaka búvörustyrkja eftir aðild (Article 142 northern and) og að landbúnaður þurfti umtalsverða aðlögun (<a href=\"https://stat.fi/en/statistics/khi\" title=\"Statistics Finland — EU membership impact assessments; Eurostat — convergence indicators\" target=\"_blank\" rel=\"noopener\">PREC-HIST-018</a>). Hins vegar staðfestir engin heimild beint að ESB hafi «búið til sérstakt hugtak, heimskautalandbúnað» til að Finnland «passaði betur inn». Heimildir nefna sérstök norðlæg stuðningsúrræði (Article 142) en ekki hugtakið «heimskautalandbúnaður» sem slíkt. Þetta kann að vera íslensku-þýðing á einhverju ESB-hugtaki en heimildir staðfesta ekki orðalagið.",
+      "supporting_evidence": [
+        {
+          "id": "PREC-HIST-018",
+          "source_name": "Statistics Finland — EU membership impact assessments; Eurostat — convergence indicators",
+          "source_url": "https://stat.fi/en/statistics/khi"
+        },
+        {
+          "id": "EEA-DATA-016",
+          "source_name": "European Commission — Cohesion Policy 2021–2027; Eurostat regional GDP data",
+          "source_url": "https://cohesiondata.ec.europa.eu/overview"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Ef tveir af þremur flokkformönnum ríkisstjórnarinnar mættu ekki gæti það bent til þess að forsætisráðherra (Kristrún) og annar formaður hafi forðast opinbera umræðu um ESB — eða verið hindraðir af öðrum ástæðum.",
-      "confidence": 0.2,
+      "missing_context": "Engin heimild notar hugtakið «heimskautalandbúnaður» beint. Article 142 í aðildarsamningi Finnlands og Svíþjóðar heimilar sérstakan stuðning við norðlægan landbúnað, en hvort ESB hafi «búið til» þetta hugtak sérstaklega fyrir Finnland eða hvort það hafi verið hluti af víðari stefnumótun er ósannreynt í fyrirliggjandi heimildum.",
+      "confidence": 0.45,
+      "speakers": [
+        {
+          "name": "Kristrún Frostadóttir",
+          "type": "individual",
+          "role": "forsætisráðherra",
+          "party": "Samfylkingin",
+          "stance": "pro_eu",
+          "attribution": "quoted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "Malta er annað dæmi.",
+        "claim_text": "Malta fékk sérstakar lausnir í aðildarsamningum við ESB.",
+        "category": "precedents",
+        "claim_type": "comparison",
+        "confidence": 0.9
+      },
+      "verdict": "supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L:2003:236:TOC\" title=\"European Commission — 2003 Act of Accession; Eurostat\" target=\"_blank\" rel=\"noopener\">PREC-HIST-020</a> staðfestir beint að aðildarsamningur Möltu hafi innihaldið nokkrar sérstakar lausnir: hlutleysisskilgreiningu, undanþágu varðandi kaup erlendra aðila á orlofshúsnæði, verndun gegn breytingum á fóstureyðingarlöggjöf (7. bókun), sérfyrirkomulag um sjávarútvegsstjórnun og aðlögunartímabil fyrir ríkisaðstoð til skipasmíðaiðnaðar. <a href=\"https://eur-lex.europa.eu/collection/eu-law/treaties.html\" title=\"European Parliament — EU Treaties and Protocols; Accession Treaty texts\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-023</a> styður þetta og setur í víðara samhengi — fleiri ríki hafa fengið varanlegar eða hálfvaranlegar undanþágur í aðildarsamningum.",
+      "supporting_evidence": [
+        {
+          "id": "PREC-HIST-020",
+          "source_name": "European Commission — 2003 Act of Accession; Eurostat",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L:2003:236:TOC"
+        },
+        {
+          "id": "EEA-LEGAL-023",
+          "source_name": "European Parliament — EU Treaties and Protocols; Accession Treaty texts",
+          "source_url": "https://eur-lex.europa.eu/collection/eu-law/treaties.html"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Malta hafði engan verulegan sjávarútveg eða náttúruauðlindir til að verja, svo fordæmisgildi fyrir Ísland er takmarkað. Hlutleysisyfirlýsing Möltu hefur lægri lagalega stöðu en bókun Írlands. Frá 2013 (aðild Króatíu) hafa varanlegar undanþágur orðið sjaldgæfari, sem takmarkar hversu beint má draga ályktanir frá málmeyjardæminu.",
+      "confidence": 0.92,
+      "speakers": [
+        {
+          "name": "Kristrún Frostadóttir",
+          "type": "individual",
+          "role": "forsætisráðherra",
+          "party": "Samfylkingin",
+          "stance": "pro_eu",
+          "attribution": "quoted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "Kristrún segir áherslu hafa verið lagða á að um sé að ræða tvöfalda atkvæðagreiðslu. \"Þjóðin er með fyrsta orðið og þjóðin er með síðasta orðið.\"",
+        "claim_text": "Forsætisráðherra lýsir yfir að þjóðaratkvæðagreiðslan um ESB verði tvöföld — þjóðin hefur fyrsta og síðasta orðið.",
+        "category": "other",
+        "claim_type": "legal_assertion",
+        "confidence": 0.9
+      },
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.ruv.is/\" title=\"Althingi debate records; RÚV interviews with PM Kristrún Frostadóttir, February–March 2026\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-019</a> staðfestir að forsætisráðherra hefur lagt áherslu á að þjóðin fái lokaorðið og að samningur þurfi «ofboðslega sterkt umboð». Hugmyndin um tvöfalda atkvæðagreiðslu — fyrst um viðræður, svo um lokasamning — kemur fram í fleiri heimildum (SOV-DATA-022, <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a>). Þó ber að gæta þess að engin lögbundin skuldbinding er um aðra þjóðaratkvæðagreiðslu; þetta er pólitísk yfirlýsing forsætisráðherra en ekki lagalegt ákvæði. Nýjar heimildir (<a href=\"https://www.flokkurfolksins.is/\" title=\"Coalition agreement 2024; Flokkur fólksins — Party statements; Althingi records\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-018</a>) sýna jafnframt að Flokkur fólksins, sem er í ríkisstjórn, er á móti ESB-aðild — sem flækir pólitískar forsendur annarrar atkvæðagreiðslu.",
+      "supporting_evidence": [
+        {
+          "id": "PARTY-DATA-019",
+          "source_name": "Althingi debate records; RÚV interviews with PM Kristrún Frostadóttir, February–March 2026",
+          "source_url": "https://www.ruv.is/"
+        },
+        {
+          "id": "SOV-DATA-022",
+          "source_name": "Icelandic Constitutional Law scholars; 2012 referendum precedent; Danish referendum practice",
+          "source_url": null
+        },
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Engin lagaleg skylda er um aðra þjóðaratkvæðagreiðslu — yfirlýsing forsætisráðherra er pólitísk en ekki bindandi. Fyrsta atkvæðagreiðslan er ráðgefandi og engin þröskuldskrafa er í lögunum. Fordæmi frá 2009 sýna að Alþingi samþykkti umsókn um ESB-aðild með loforði um lokaaatkvæðagreiðslu sem aldrei varð að veruleika.",
+      "confidence": 0.65,
+      "speakers": [
+        {
+          "name": "Kristrún Frostadóttir",
+          "type": "individual",
+          "role": "forsætisráðherra",
+          "party": "Samfylkingin",
+          "stance": "pro_eu",
+          "attribution": "quoted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "hvort þetta gæti verið rétti tíminn þegar háir vextir og verðbólga ríkis á Íslandi. Fólk eigi erfitt með að borga af lánum sínum",
+        "claim_text": "Ísland á í erfiðleikum með háa vexti og verðbólgu á þeim tíma sem rætt er um ESB-aðild.",
+        "category": "currency",
+        "claim_type": "opinion",
+        "confidence": 0.9
+      },
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> staðfestir að óverðtryggðir vextir húsnæðislána eru 8–9% á Íslandi miðað við 3,4% á evrusvæðinu. <a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> sýnir að stýrivextir Seðlabankans eru um 8,5% samanborið við 2,75–3% hjá ECB. Þessar tölur styðja lýsinguna á háum vöxtum.",
+      "supporting_evidence": [
+        {
+          "id": "CURRENCY-DATA-015",
+          "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
+          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+        },
+        {
+          "id": "HOUS-DATA-005",
+          "source_name": "Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase",
+          "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
+        },
+        {
+          "id": "POLL-DATA-009",
+          "source_name": "Gallup Ísland — EU polls cross-referenced with Hagstofa consumer confidence index",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Vaxtamunurinn endurspeglar að hluta verðbólguálag og gjaldmiðlaáhættu krónu. Evruupptaka myndi ekki eiga sér stað fyrr en mörgum árum eftir hugsanlega ESB-aðild. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — EU polls cross-referenced with Hagstofa consumer confidence index\" target=\"_blank\" rel=\"noopener\">POLL-DATA-009</a> bendir til þess að efnahagsleg vanlíðan auki stuðning við ESB-aðild.",
+      "confidence": 0.88,
       "speakers": [
         {
           "name": "Egill Ploder",
@@ -403,15 +522,15 @@
       "party": "Samfylkingin",
       "role_in_article": "speaker",
       "attribution_type": "quoted",
-      "claim_count": 8,
+      "claim_count": 10,
       "verdicts": {
-        "unverifiable": 3,
-        "supported": 3,
-        "partially_supported": 2
+        "unverifiable": 1,
+        "supported": 5,
+        "partially_supported": 4
       },
       "stance": "pro_eu",
       "slug": "kristrun-frostadottir",
-      "mention_count": 22,
+      "mention_count": 23,
       "credibility": 0.72
     },
     {
@@ -422,7 +541,7 @@
       "attribution_type": "paraphrased",
       "claim_count": 1,
       "verdicts": {
-        "unverifiable": 1
+        "supported": 1
       },
       "stance": "neutral",
       "slug": "egill-ploder",

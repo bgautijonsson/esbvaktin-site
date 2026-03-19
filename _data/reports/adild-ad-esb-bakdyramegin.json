@@ -10,11 +10,10 @@
   "summary": "Greindar 21 fullyrðingar. Niðurstöður: 10 stutt að hluta, 9 stutt af heimildum, 2 ekki hægt að sannreyna. Sjónarhorn: hallar á ESB-jákvæða hlið. Heildstæðni: 45%.",
   "capsule": "Kaupmannahafnarviðmiðin — um lýðræði, mannréttindi, markaðshagkerfi og getu til að taka upp regluverk ESB — eru vel staðfest í sáttmálatexta og hafa gilt sem aðildarskimun frá 1993. Þó er áhugavert að skoða hvað EES-samningurinn, sem Ísland er þegar aðili að, nær yfir og hvað hann nær ekki yfir: hann tekur til innri markaðsreglna en undanþiggur sjávarútveg, landbúnað, tollabandalagið og evru — þ. e. einmitt þau svið sem myndu koma til umræðu í aðildarviðræðum. Þessi munur skiptir máli þegar maður vill meta hversu langan veginn Ísland er þegar búið að fara.",
   "verdict_counts": {
-    "supported": 3,
-    "unverifiable": 2,
-    "partially_supported": 8
+    "supported": 9,
+    "partially_supported": 10
   },
-  "claim_count": 13,
+  "claim_count": 19,
   "dominant_category": "eea_eu_law",
   "categories": [
     "eea_eu_law",
@@ -48,33 +47,6 @@
       "contradicting_evidence": [],
       "missing_context": null,
       "confidence": 0.85,
-      "speakers": [
-        {
-          "name": "Davíð Þór Björgvinsson",
-          "type": "individual",
-          "role": "prófessor við lagadeild",
-          "party": null,
-          "stance": "neutral",
-          "attribution": "asserted",
-          "stance_score": null,
-          "credibility": null
-        }
-      ]
-    },
-    {
-      "claim": {
-        "original_quote": "Þessi skilyrði í 2. gr. snúa að virðingu fyrir mannlegri reisn, frelsi, lýðræði, jafnrétti, réttarríkinu og mannréttindum.",
-        "claim_text": "Skilyrði 2. gr. sáttmálans um ESB snúa að virðingu fyrir mannlegri reisn, frelsi, lýðræði, jafnrétti, réttarríkinu og mannréttindum.",
-        "category": "eea_eu_law",
-        "claim_type": "legal_assertion",
-        "confidence": 0.9
-      },
-      "verdict": "unverifiable",
-      "explanation": "Engin heimild í staðreyndagrunni vitnar beint í efni 2. gr. sáttmálans um ESB (TEU). Heimildir sem fundust fjalla um EES-samninginn (<a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Article 1 and Protocol 47\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-003</a>), undanþágur Danmerkur (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1\" title=\"Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-006</a>) og evruaðild (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014\" title=\"Treaty on the Functioning of the European Union, Article 140\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-004</a>) en engin þeirra staðfestir eða hafnar orðalagi 2. greinar TEU.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "missing_context": "Engin heimild í gagnagrunni inniheldur beint orðalag 2. gr. sáttmálans um ESB. Fullyrðingin er þó vel þekkt réttarheimild sem hægt væri að staðfesta með beinum texta greinarinnar.",
-      "confidence": 0.6,
       "speakers": [
         {
           "name": "Davíð Þór Björgvinsson",
@@ -128,6 +100,82 @@
     },
     {
       "claim": {
+        "original_quote": "Það gerir ráðið með samhljóða ákvörðun ráðherra allra aðildarríkjanna.",
+        "claim_text": "Ráðherraráð ESB tekur ákvörðun um stöðu umsóknarríkis með samhljóða ákvörðun ráðherra allra aðildarríkjanna.",
+        "category": "eea_eu_law",
+        "claim_type": "legal_assertion",
+        "confidence": 0.9
+      },
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> staðfestir að ákvarðanir í ráðinu krefjist samhljóða samþykkis í ákveðnum málum og lýsir atkvæðagreiðslureglum. <a href=\"https://www.cer.eu/insights/gap-between-brexit-reset-rhetoric-and-reality\" title=\"Centre for European Reform; UK in a Changing Europe\" target=\"_blank\" rel=\"noopener\">PREC-DATA-004</a> bendir til þess að aðild krefjist «full accession process under Article 49 TEU». Heimildir staðfesta ekki beint að stöðu umsóknarríkis (candidate status) sé veitt með samhljóða ákvörðun — þetta er þó rétt samkvæmt 49. gr. TEU. Tæknilega er það leiðtogaráðið (European Council), ekki ráðherraráðið, sem veitir umsóknarríkisstöðu.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-017",
+          "source_name": "Treaty on European Union, Article 16(4); European Parliament allocation rules",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016"
+        },
+        {
+          "id": "PREC-DATA-004",
+          "source_name": "Centre for European Reform; UK in a Changing Europe",
+          "source_url": "https://www.cer.eu/insights/gap-between-brexit-reset-rhetoric-and-reality"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Fullyrðingin gerir ekki greinarmun á ráðherraráðinu (Council of the EU) og leiðtogaráðinu (European Council). Samkvæmt hefðbundnum aðildarferlum er það leiðtogaráðið sem veitir umsóknarríkisstöðu, en ráðherraráðið samþykkir aðildarsamninginn.",
+      "confidence": 0.65,
+      "speakers": [
+        {
+          "name": "Davíð Þór Björgvinsson",
+          "type": "individual",
+          "role": "prófessor við lagadeild",
+          "party": null,
+          "stance": "neutral",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "Frá sjónarhóli ESB þarf slíkur samningur samþykki allra fulltrúa í ráðherraráðinu og meirihluta þingmanna á Evrópuþinginu (sem kosnir eru beinni kosningu í öllum aðildarríkjunum).",
+        "claim_text": "Aðildarsamningur við ESB þarf samþykki allra fulltrúa í ráðherraráðinu og meirihluta þingmanna á Evrópuþinginu.",
+        "category": "eea_eu_law",
+        "claim_type": "legal_assertion",
+        "confidence": 0.9
+      },
+      "verdict": "supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> staðfestir atkvæðagreiðslureglur í ráðinu og <a href=\"https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:12008M014:EN:HTML\" title=\"Treaty on European Union, Article 14(2)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-003</a> lýsir uppbyggingu Evrópuþingsins. Samkvæmt 49. gr. TEU þarf samhljóða samþykki í ráðinu og samþykki Evrópuþingsins (sem krefst einfalds meirihluta) fyrir aðildarsamningi. Fullyrðingin er í samræmi við þetta ferli.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-017",
+          "source_name": "Treaty on European Union, Article 16(4); European Parliament allocation rules",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016"
+        },
+        {
+          "id": "SOV-LEGAL-003",
+          "source_name": "Treaty on European Union, Article 14(2)",
+          "source_url": "https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:12008M014:EN:HTML"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Framkvæmdastjórnin gefur einnig álit á umsókninni áður en ráðið tekur afstöðu, sem er hluti af ferlinu sem fullyrðingin nefnir ekki.",
+      "confidence": 0.8,
+      "speakers": [
+        {
+          "name": "Davíð Þór Björgvinsson",
+          "type": "individual",
+          "role": "prófessor við lagadeild",
+          "party": null,
+          "stance": "neutral",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
         "original_quote": "Loks þarf að samþykkja inngönguna í þjóðþingum allra aðildarríkja ESB.",
         "claim_text": "Aðildarsamning við ESB þarf að samþykkja í þjóðþingum allra aðildarríkja ESB.",
         "category": "eea_eu_law",
@@ -146,6 +194,82 @@
       "contradicting_evidence": [],
       "missing_context": "Sum aðildarríki geta ákveðið að halda þjóðaratkvæðagreiðslu um fullgildingu aðildarsamnings — krafan er um fullgildingu í samræmi við stjórnskipunarreglur hvers ríkis, ekki endilega «þjóðþing» eingöngu.",
       "confidence": 0.65,
+      "speakers": [
+        {
+          "name": "Davíð Þór Björgvinsson",
+          "type": "individual",
+          "role": "prófessor við lagadeild",
+          "party": null,
+          "stance": "neutral",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "Í 21. gr. íslensku stjórnarskrárinnar kemur fram að forseti lýðveldisins geri samninga við önnur ríki. Þó geti hann enga slíka samninga gert, ef þeir hafa í sér fólgið afsal eða kvaðir á landi eða landhelgi eða ef þeir horfa til breytinga á stjórnarhögum ríkisins, nema samþykki Alþingis komi til.",
+        "claim_text": "Í 21. gr. íslensku stjórnarskrárinnar kemur fram að forseti lýðveldisins geri samninga við önnur ríki, en getur ekki gert samninga sem hafa í sér fólgið afsal eða kvaðir á landi eða landhelgi, eða horfa til breytinga á stjórnarhögum ríkisins, nema samþykki Alþingis komi til.",
+        "category": "sovereignty",
+        "claim_type": "legal_assertion",
+        "confidence": 0.9
+      },
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland); University of Iceland — Faculty of Law analyses\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-012</a> staðfestir að 21. gr. stjórnarskrárinnar kveður á um að forseti geti hafnað undirritun löggjafar og tengir hana við aðild Íslands að ESB. <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79\" target=\"_blank\" rel=\"noopener\">SOV-DATA-002</a> vísar beint til stjórnarskrárinnar og staðfestir að engin sérákvæði eru um framsal fullveldis. Fullyrðingin endurspeglar orðalag greinarinnar réttilega samkvæmt þessum heimildum.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-LEGAL-012",
+          "source_name": "Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland); University of Iceland — Faculty of Law analyses",
+          "source_url": "https://www.althingi.is/lagas/nuna/1944033.html"
+        },
+        {
+          "id": "SOV-DATA-002",
+          "source_name": "Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79",
+          "source_url": "https://www.althingi.is/lagas/nuna/1944033.html"
+        },
+        {
+          "id": "SOV-LEGAL-027",
+          "source_name": "Stjórnarskrá lýðveldisins Íslands; Stjórnlaganefnd (2011) report",
+          "source_url": "https://www.althingi.is/lagas/nuna/1944033.html"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": null,
+      "confidence": 0.85,
+      "speakers": [
+        {
+          "name": "Davíð Þór Björgvinsson",
+          "type": "individual",
+          "role": "prófessor við lagadeild",
+          "party": null,
+          "stance": "neutral",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "Ber þess að geta samningur um aðild Íslands að ESB yrði ekki bara samningur við sambandið sem slíkt heldur um leið hvert og eitt aðildarríki þess.",
+        "claim_text": "Samningur um aðild Íslands að ESB yrði ekki bara samningur við sambandið heldur um leið við hvert og eitt aðildarríki þess.",
+        "category": "eea_eu_law",
+        "claim_type": "legal_assertion",
+        "confidence": 0.9
+      },
+      "verdict": "partially_supported",
+      "explanation": "Engin heimild staðfestir þetta beint, en <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland); University of Iceland — Faculty of Law analyses\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-012</a> og <a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a> fjalla um aðildarferlið og fullgildingu. Fullyrðingin er rétt í þeim skilningi að aðildarsamningar eru svokallaðir «mixed agreements» sem krefjast fullgildingar hvers aðildarríkis (sbr. 49. gr. TEU). Heimildir í gagnagrunni ná þó ekki til þessa atriðis sérstaklega.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-LEGAL-012",
+          "source_name": "Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland); University of Iceland — Faculty of Law analyses",
+          "source_url": "https://www.althingi.is/lagas/nuna/1944033.html"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Staðreyndagrunnurinn inniheldur ekki beina heimild um eðli aðildarsamnings sem «mixed agreement». Fullyrðingin er rétt í lagalegum skilningi en stuðningurinn er óbeinn.",
+      "confidence": 0.6,
       "speakers": [
         {
           "name": "Davíð Þór Björgvinsson",
@@ -194,6 +318,54 @@
       "contradicting_evidence": [],
       "missing_context": "Sumir lögfræðingar telja að stjórnarskrárbreyting sé ekki endilega nauðsynleg ef aðildarsáttmálinn varðveitir formlegt fullveldi Íslands (sbr. tveggja stoða kerfi EES). Pólitískur samhljómur er þó um nauðsyn breytingar, jafnvel þótt lagalega sé álitamálið óleyst.",
       "confidence": 0.8,
+      "speakers": [
+        {
+          "name": "Davíð Þór Björgvinsson",
+          "type": "individual",
+          "role": "prófessor við lagadeild",
+          "party": null,
+          "stance": "neutral",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "Þá eiga við ákvæði í 79. gr. stjórnarskrárinnar sem þýðir að slík breyting á stjórnarskrá getur ekki tekið gildi fyrr en hún hefur verið samþykkt á tveimur þingum með kosningum til Alþingis á milli.",
+        "claim_text": "Samkvæmt 79. gr. stjórnarskrárinnar getur breyting á stjórnarskrá ekki tekið gildi fyrr en hún hefur verið samþykkt á tveimur þingum með kosningum til Alþingis á milli.",
+        "category": "sovereignty",
+        "claim_type": "legal_assertion",
+        "confidence": 0.9
+      },
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.government.is/library/01-Ministries/Prime-Ministrers-Office/constitution_of_iceland.pdf\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 2, 21, 79; Legal commentary by Ragnhildur Helgadóttir (2024)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-016</a> staðfestir orðrétt að 79. gr. krefst þess að stjórnarskrárbreytingar séu samþykktar af Alþingi, þingið leyst upp, kosningar haldnar og breytingin samþykkt á ný af nýkjörnu þingi. <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands; Stjórnlaganefnd (2011) report\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-027</a> endurtekir sömu kröfu og vísar til Stjórnlaganefndar. <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79\" target=\"_blank\" rel=\"noopener\">SOV-DATA-002</a> staðfestir einnig ferlið. Þrjár óháðar heimildir eru samhljóða um þetta.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-LEGAL-016",
+          "source_name": "Stjórnarskrá lýðveldisins Íslands, Articles 2, 21, 79; Legal commentary by Ragnhildur Helgadóttir (2024)",
+          "source_url": "https://www.government.is/library/01-Ministries/Prime-Ministrers-Office/constitution_of_iceland.pdf"
+        },
+        {
+          "id": "SOV-LEGAL-027",
+          "source_name": "Stjórnarskrá lýðveldisins Íslands; Stjórnlaganefnd (2011) report",
+          "source_url": "https://www.althingi.is/lagas/nuna/1944033.html"
+        },
+        {
+          "id": "SOV-DATA-002",
+          "source_name": "Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79",
+          "source_url": "https://www.althingi.is/lagas/nuna/1944033.html"
+        },
+        {
+          "id": "SOV-LEGAL-012",
+          "source_name": "Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland); University of Iceland — Faculty of Law analyses",
+          "source_url": "https://www.althingi.is/lagas/nuna/1944033.html"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": null,
+      "confidence": 0.95,
       "speakers": [
         {
           "name": "Davíð Þór Björgvinsson",
@@ -295,6 +467,49 @@
     },
     {
       "claim": {
+        "original_quote": "Þá brá svo við þegar aðlögun og aðildarviðræður voru komnar nokkuð áleiðis að ný ríkisstjórn komst til valda sem hugnaðist ekki að halda viðræðunum áfram. Skrifaði þáverandi utanríkisráðherra bréf til ESB og tilkynnti að hann og ríkisstjórnin sem hann átti sæti í vildi ekki halda viðræðunum áfram.",
+        "claim_text": "Þegar aðildarviðræður við ESB voru komnar nokkuð áleiðis komst ný ríkisstjórn til valda sem hugnaðist ekki að halda viðræðunum áfram og utanríkisráðherra skrifaði bréf til ESB um að viðræður myndu ekki halda áfram.",
+        "category": "precedents",
+        "claim_type": "legal_assertion",
+        "confidence": 0.9
+      },
+      "verdict": "supported",
+      "explanation": "<a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a> staðfestir að ríkisstjórn Framsóknarflokks og Sjálfstæðisflokks eftir kosningarnar 2013 óskaði eftir afturköllun umsóknarinnar og utanríkisráðherra Gunnar Bragi Sveinsson skrifaði bréf til ESB 12. mars 2015. <a href=\"https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/\" title=\"Althingi — Historical records; European Commission accession records\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-010</a> staðfestir sömu atburðarás. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland: Accession negotiations status; Althingi records\" target=\"_blank\" rel=\"noopener\">EEA-DATA-009</a> greinir frá því að 27 af 33 köflum höfðu verið opnaðir og 11 bráðabirgðalokað, sem sýnir að viðræðurnar voru «nokkuð áleiðis».",
+      "supporting_evidence": [
+        {
+          "id": "PARTY-DATA-011",
+          "source_name": "Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews",
+          "source_url": "https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/"
+        },
+        {
+          "id": "POLITICAL-DATA-010",
+          "source_name": "Althingi — Historical records; European Commission accession records",
+          "source_url": "https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/"
+        },
+        {
+          "id": "EEA-DATA-009",
+          "source_name": "European Commission — Iceland: Accession negotiations status; Althingi records",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": null,
+      "confidence": 0.9,
+      "speakers": [
+        {
+          "name": "Davíð Þór Björgvinsson",
+          "type": "individual",
+          "role": "prófessor við lagadeild",
+          "party": null,
+          "stance": "neutral",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
         "original_quote": "Þetta gerði ráðherrann (ríkisstjórnin) án þess að afla sér þingsályktunartillögu frá Alþingi til að bakka þessa ákvörðun sína uppi.",
         "claim_text": "Utanríkisráðherra stöðvaði aðildarviðræður við ESB án þess að afla þingsályktunartillögu frá Alþingi til að bakka þá ákvörðun.",
         "category": "precedents",
@@ -318,6 +533,44 @@
       "contradicting_evidence": [],
       "missing_context": "Ber að geta þess að frumvarp um afturköllun var lagt fram á Alþingi en náði ekki til lokaatkvæðagreiðslu. Ráðherrann fór því framhjá þinglegri afgreiðslu, en tilraunin var gerð.",
       "confidence": 0.85,
+      "speakers": [
+        {
+          "name": "Davíð Þór Björgvinsson",
+          "type": "individual",
+          "role": "prófessor við lagadeild",
+          "party": null,
+          "stance": "neutral",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "Hvað sem því líður virðist sem ráðamenn í ESB hafi skilið bréfið þannig að ríkisstjórnin vildi ekki vera «umsóknarríki» (Candidate State), en ekki þannig að umsóknin sem slík væri dregin til baka.",
+        "claim_text": "ESB túlkaði bréf íslenska utanríkisráðherrans þannig að ríkisstjórnin vildi ekki vera umsóknarríki en ekki að umsóknin sem slík væri dregin til baka.",
+        "category": "precedents",
+        "claim_type": "legal_assertion",
+        "confidence": 0.9
+      },
+      "verdict": "supported",
+      "explanation": "<a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a> staðfestir að ESB brást tvírætt við bréfinu — talsmaður framkvæmdastjórnarinnar sagði að bréfið fæli ekki í sér formlega afturköllun umsóknarinnar. Heimildin nefnir einnig að ESB hafi áfram litið á umsóknina frá 2009 sem tæknilega í gildi. Þetta er í samræmi við fullyrðinguna um að ESB hafi greint á milli umsóknarríkisstöðu og umsóknarinnar sjálfrar.",
+      "supporting_evidence": [
+        {
+          "id": "PARTY-DATA-011",
+          "source_name": "Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews",
+          "source_url": "https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/"
+        },
+        {
+          "id": "POLITICAL-DATA-010",
+          "source_name": "Althingi — Historical records; European Commission accession records",
+          "source_url": "https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Lagaleg staða umsóknarinnar er enn óleyst og lögfræðingar eru ósammála. Framkvæmdastjórnin staðfesti í mars 2026 að umsóknin sé enn í gildi samkvæmt <a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a>.",
+      "confidence": 0.8,
       "speakers": [
         {
           "name": "Davíð Þór Björgvinsson",
@@ -483,18 +736,29 @@
     },
     {
       "claim": {
-        "original_quote": "Það treystir því að þeir sem koma fram fyrir hönd ríkis hafi til þess stjórnskipulegt eða pólitískt umboð og hafi heimildir til að undirrita samninga sem gerðir eru.",
-        "claim_text": "Evrópusambandið treystir því að þeir sem koma fram fyrir hönd ríkis hafi til þess stjórnskipulegt eða pólitískt umboð og hafi heimildir til að undirrita samninga.",
+        "original_quote": "ESB hefur engar reglur sem segja hvernig ríki taka ákvörðun um að sækja um aðild. [...] Þetta fer sem sagt alfarið eftir reglum sem gilda í viðkomandi ríki eða hefðum og venjum sem þar hafa mótast",
+        "claim_text": "ESB hefur engar reglur um hvernig ríki taka ákvörðun um að sækja um aðild — þetta fer alfarið eftir reglum og hefðum viðkomandi ríkis.",
         "category": "eea_eu_law",
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Engin heimild í staðreyndagrunni fjallar beint um þessa meginreglu þjóðaréttar — að alþjóðastofnanir treysti fullgildingarumboði ríkisfulltrúa. <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> lýsir aðildarferlinu en fjallar ekki um umboðsspurninguna. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M050\" title=\"Treaty on European Union, Article 50\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-001</a> nefnir úrsagnarferli samkvæmt 50. gr. TEU en snertir ekki þetta efni. Fullyrðingin er eðlileg þjóðréttarleg meginregla (sbr. Vínarsáttmálann um samninga 1969) en heimildir í gagnagrunni staðfesta hana ekki.",
-      "supporting_evidence": [],
+      "verdict": "supported",
+      "explanation": "<a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> lýsir aðildarferlinu frá sjónarhóli ESB — því er lýst hvernig viðræður fara fram eftir að umsókn berst, en engin krafa er gerð um hvernig ríki taki innri ákvörðun um umsókn. <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79\" target=\"_blank\" rel=\"noopener\">SOV-DATA-002</a> staðfestir hvernig Ísland tekst á við spurninguna á eigin forsendum, þar á meðal hvort stjórnarskrárbreyting sé nauðsynleg. Þetta samræmist fullyrðingunni um að innra ferli sé á valdi hvers ríkis.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-017",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards joining' factsheet",
+          "source_url": "https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf"
+        },
+        {
+          "id": "SOV-DATA-002",
+          "source_name": "Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79",
+          "source_url": "https://www.althingi.is/lagas/nuna/1944033.html"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Þessi meginregla þjóðaréttar er vel þekkt (sbr. 7. gr. Vínarsáttmálans um samninga frá 1969) en engir textar í staðreyndagrunni staðfesta hana beint.",
-      "confidence": 0.5,
+      "missing_context": null,
+      "confidence": 0.8,
       "speakers": [
         {
           "name": "Davíð Þór Björgvinsson",
@@ -565,11 +829,10 @@
       "party": null,
       "role_in_article": "author",
       "attribution_type": "asserted",
-      "claim_count": 11,
+      "claim_count": 17,
       "verdicts": {
-        "supported": 3,
-        "unverifiable": 2,
-        "partially_supported": 6
+        "supported": 9,
+        "partially_supported": 8
       },
       "stance": "neutral",
       "slug": "david-thor-bjorgvinsson",

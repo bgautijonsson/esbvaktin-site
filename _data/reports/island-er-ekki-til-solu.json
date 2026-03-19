@@ -10,16 +10,16 @@
   "summary": "Greindar 7 fullyrðingar .",
   "capsule": "EES-samningurinn veitir Íslandi aðgang að innri markaðinum og tryggir forræði yfir auðlindum — þetta kemur rétt fram í greininni. Athyglisvert er þó að undir EES innleiðir Ísland fjölda innri markaðsreglna ESB án þess að hafa atkvæðisrétt í þeirri ákvarðanatöku — þetta «lýðræðishalli» er lykilrök ESB-hlynntinna og snertir beinlínis þá samanburðarspurningu sem greinin fjallar um. Þeim sem vilja kanna þetta nánar gefst gott tækifæri í gögnum um uppbyggingu EES-samningsins og hvað nákvæmlega fellur utan hans.",
   "verdict_counts": {
-    "partially_supported": 2,
-    "supported": 2,
-    "unverifiable": 1
+    "partially_supported": 3,
+    "supported": 3
   },
-  "claim_count": 5,
+  "claim_count": 6,
   "dominant_category": "sovereignty",
   "categories": [
     "eea_eu_law",
     "party_positions",
-    "sovereignty"
+    "sovereignty",
+    "trade"
   ],
   "claims": [
     {
@@ -111,6 +111,54 @@
       ],
       "missing_context": "EES-samningurinn hefur óbein áhrif á auðlindanýtingu — samkeppnisreglur, ríkisaðstoðarreglur og umhverfisreglugerðir ESB gilda í gegnum EES. Samkvæmt <a href=\"https://www.althingi.is/lagas/nuna/2003065.html\" title=\"Althingi — Raforkulög (Electricity Act); Treaty on the Functioning of the European Union, Art. 194\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-003</a> geta samkeppnisreglur og reglur um innri orkumarkað ESB takmarkað hvernig aðildarríki skipuleggja orkuverðlagningu. Mörkin milli «EES-tengdra» og «undanskilinna» reglna eru ekki alltaf skýr eins og <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> bendir á.",
       "confidence": 0.85,
+      "speakers": [
+        {
+          "name": "Lilja Dögg Alfreðsdóttir",
+          "type": "individual",
+          "role": "formaður Framsóknarflokksins",
+          "party": "Framsóknarflokkur",
+          "stance": "anti_eu",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "Hagkerfi okkar er auðlindahagkerfi, þar sem stærstur hluti gjaldeyristekna þjóðarbúsins kemur frá auðlindum hennar: náttúru Íslands, hafinu í kringum okkur, fallvötnum og jarðvarma.",
+        "claim_text": "Stærstur hluti gjaldeyristekna íslenska þjóðarbúsins kemur frá auðlindum: náttúru Íslands, hafinu, fallvötnum og jarðvarma",
+        "category": "trade",
+        "claim_type": "statistic",
+        "confidence": 0.9
+      },
+      "verdict": "partially_supported",
+      "explanation": "Auðlindagreinar (sjávarútvegur, ál/orkufrekur iðnaður, ferðaþjónusta) eru vissulega lykilstoðir gjaldeyristekna Íslands. <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__utanrikisverslun/\" title=\"Hagstofa Íslands — External trade statistics\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-003</a> sýnir að sjávarafurðir eru um 39% vöruútflutnings, ál um 33%, og <a href=\"https://www.ferdamalastofa.is/en/recearch-and-statistics/tourism-in-iceland-in-figures\" title=\"Ferðamálastofa (Icelandic Tourist Board) — Tourism statistics; Hagstofa Íslands — Balance of payments\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-020</a> staðfestir að ferðaþjónustan er stærsta útflutningsgreinin. Fullyrðingin er þó of einföld — hún nefnir ekki ál sérstaklega og ferðaþjónusta er ekki eingöngu «auðlind» í hefðbundnum skilningi. Lyfjaiðnaður og framleiðsluvörur eru um 12% af útflutningi samkvæmt <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__utanrikisverslun/\" title=\"Hagstofa Íslands — External trade statistics\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-003</a>, sem sýnir aukna fjölbreytni.",
+      "supporting_evidence": [
+        {
+          "id": "TRADE-DATA-003",
+          "source_name": "Hagstofa Íslands — External trade statistics",
+          "source_url": "https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__utanrikisverslun/"
+        },
+        {
+          "id": "TRADE-DATA-020",
+          "source_name": "Ferðamálastofa (Icelandic Tourist Board) — Tourism statistics; Hagstofa Íslands — Balance of payments",
+          "source_url": "https://www.ferdamalastofa.is/en/recearch-and-statistics/tourism-in-iceland-in-figures"
+        },
+        {
+          "id": "FISH-DATA-027",
+          "source_name": "Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður",
+          "source_url": "https://statice.is/statistics/economy/external-trade/"
+        },
+        {
+          "id": "ENERGY-DATA-001",
+          "source_name": "Orkustofnun — Energy Statistics in Iceland 2023",
+          "source_url": "https://orkustofnun.is/en/information/publication/energy_data"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Fullyrðingin segir «stærstur hluti» sem gæti átt við, en áliðnaðurinn byggir á innfluttum hráefnum (báxíti) og erlendu fjármagni — hann er orkufrekur iðnaður sem nýtir auðlindir en er ekki auðlindavinnsla í þröngum skilningi. Þjónustuútflutningur (sérstaklega ferðaþjónusta) jafnast nú á við vöruútflutning.",
+      "confidence": 0.7,
       "speakers": [
         {
           "name": "Lilja Dögg Alfreðsdóttir",
@@ -232,24 +280,34 @@
     },
     {
       "claim": {
-        "original_quote": "Ef þessar auðlindir eru ekki nýttar í þágu þjóðar, þá versna lífskjör á Íslandi verulega.",
-        "claim_text": "Ef auðlindir Íslands eru ekki nýttar í þágu þjóðar mun það versna lífskjör á Íslandi verulega",
+        "original_quote": "landfræðilegri stöðu sem hefur sífellt meira öryggis- og stjórnmálalegt vægi",
+        "claim_text": "Öryggis- og stjórnmálalegt vægi landfræðilegrar stöðu Íslands er sífellt meira",
         "category": "sovereignty",
-        "claim_type": "prediction",
+        "claim_type": "opinion",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Engar heimildir í staðreyndagrunni staðfesta beint orsakatengsl milli auðlindaforræðis og lífskjara. <a href=\"https://stjornlagarad.is/other_files/stjornlagarad/Frumvarp-enska.pdf\" title=\"Stjórnlagaráð — A Proposal for a new Constitution for the Republic of Iceland (English translation)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-017</a> staðfestir pólitískt mikilvægi auðlindaákvæðisins og <a href=\"https://chamber.is/intros/iceland-accession-negotiations-with-the-eu\" title=\"Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-009</a> sýnir áætluð áhrif á landbúnað (30–50% tekjusamdráttur bænda), en þetta er ekki samsvarandi «verulega verri lífskjör» almennt. <a href=\"https://www.bondi.is/frettir/kynningarefni\" title=\"Bændasamtök Íslands — EU membership impact assessment (2025); Ministry of Agriculture — subsidy data\" target=\"_blank\" rel=\"noopener\">POL-DATA-015</a> nefnir 40–60% bújörðum í hættu, en þær tölur eru frá hagsmunasamtökum. Fullyrðingin er almennt orðuð spá sem gengur lengra en heimildir leyfa.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.eeas.europa.eu/eeas/strategic-compass-security-and-defence-1_en\" title=\"EU Strategic Compass for Security and Defence (March 2022); NATO Allied Air Command — Icelandic Air Policing; IISS Strategic Survey 2023\" target=\"_blank\" rel=\"noopener\">SOV-HIST-003</a> staðfestir að innrás Rússlands í Úkraínu 2022 jók hernaðarlegt mikilvægi Íslands til muna — NATO-bandamenn hófu aftur reglulegar loftvarnarvaktir frá Keflavík. Staðsetning Íslands við GIUK-bilið er lykilatriði í kafbátaeftirliti eins og <a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"1951 US-Iceland Defence Agreement; 2016 Iceland-US Security Cooperation Agreement; US Department of State bilateral relations factsheet\" target=\"_blank\" rel=\"noopener\">SOV-DATA-008</a> sýnir. Norðurslóðamálin bæta við stjórnmálalegt vægi — <a href=\"https://www.eeas.europa.eu/eeas/eu-arctic-policy_en\" title=\"European Commission — EU Arctic Policy, Joint Communication JOIN(2021) 27\" target=\"_blank\" rel=\"noopener\">SOV-DATA-001</a> lýsir aukinni samkeppni stórvelda á Norðurslóðum eftir að Rússland var úthlutt frá samstarfi Norðurslóðaráðsins.",
       "supporting_evidence": [
         {
-          "id": "SOV-LEGAL-017",
-          "source_name": "Stjórnlagaráð — A Proposal for a new Constitution for the Republic of Iceland (English translation)",
-          "source_url": "https://stjornlagarad.is/other_files/stjornlagarad/Frumvarp-enska.pdf"
+          "id": "SOV-HIST-003",
+          "source_name": "EU Strategic Compass for Security and Defence (March 2022); NATO Allied Air Command — Icelandic Air Policing; IISS Strategic Survey 2023",
+          "source_url": "https://www.eeas.europa.eu/eeas/strategic-compass-security-and-defence-1_en"
+        },
+        {
+          "id": "SOV-DATA-008",
+          "source_name": "1951 US-Iceland Defence Agreement; 2016 Iceland-US Security Cooperation Agreement; US Department of State bilateral relations factsheet",
+          "source_url": "https://www.state.gov/u-s-relations-with-iceland/"
+        },
+        {
+          "id": "SOV-DATA-001",
+          "source_name": "European Commission — EU Arctic Policy, Joint Communication JOIN(2021) 27",
+          "source_url": "https://www.eeas.europa.eu/eeas/eu-arctic-policy_en"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Samband auðlindaforræðis og almennra lífskjara er flókið og háð fjölmörgum breytum. <a href=\"https://chamber.is/intros/iceland-accession-negotiations-with-the-eu\" title=\"Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-009</a> sýnir að neytendur gætu hagnast á lægra matvælaverði (15–25% lækkun) þó bændur tapi. Fyrirvarar <a href=\"https://chamber.is/intros/iceland-accession-negotiations-with-the-eu\" title=\"Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-009</a> benda á að rannsóknir eru frá 2011–2012 og raunveruleg áhrif ráðast af samningsskilmálum. Fullyrðingin tekur ekki tillit til þess að ESB-aðild gæti haft jákvæð áhrif á önnur svið sem bæta lífskjör.",
-      "confidence": 0.55,
+      "missing_context": "Hernaðarlegt mikilvægi Íslands hefur sveiflast í gegnum sögu NATO — <a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"1951 US-Iceland Defence Agreement; 2016 Iceland-US Security Cooperation Agreement; US Department of State bilateral relations factsheet\" target=\"_blank\" rel=\"noopener\">SOV-DATA-008</a> nefnir lokun Keflavíkurstöðvar 2006 sem dæmi um tímabil minnkaðs mikilvægis. Hækkaðra öryggishagsmuna gæti ekki verið varanlegt ef alþjóðlegar aðstæður breytast. <a href=\"https://eur-lex.europa.eu/EN/legal-content/summary/iceland-external-relations-common-foreign-and-security-policy.html\" title=\"TEU, Title V — CFSP provisions; Icelandic Ministry for Foreign Affairs — Annual alignment reports\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-014</a> bendir á að ESB-aðild myndi bæta við öryggisþætti (CSDP) en CFSP-ákvarðanir krefjast samhljóða samþykkis, og Ísland gæti beitt neitunarvaldi.",
+      "confidence": 0.82,
       "speakers": [
         {
           "name": "Lilja Dögg Alfreðsdóttir",
@@ -271,11 +329,10 @@
       "party": "Framsóknarflokkur",
       "role_in_article": "author",
       "attribution_type": "asserted",
-      "claim_count": 5,
+      "claim_count": 6,
       "verdicts": {
-        "partially_supported": 2,
-        "supported": 2,
-        "unverifiable": 1
+        "partially_supported": 3,
+        "supported": 3
       },
       "stance": "anti_eu",
       "slug": "lilja-dogg-alfredsdottir",

@@ -10,35 +10,89 @@
   "summary": "Greindar 16 fullyrðingar. Niðurstöður: 10 ekki hægt að sannreyna, 6 stutt að hluta. Sjónarhorn: hallar á ESB-neikvæða hlið. Heildstæðni: 35%.",
   "capsule": "Frjálst flæði lifandi dýra er meginregla ESB og málið bar hart á milli aðila í aðildarviðræðunum 2010–2013 — þetta er staðfest í gögnum frá þeim tíma. Áhugavert er þó að landbúnaðarkafli viðræðnanna var aldrei formlega opnaður, sem þýðir að ESB sendi aldrei formlegt samningslegt svar við kröfum Íslands um dýraheilbrigðisundanþágur — þær rökræður sem lýst er voru hluti af óformlegum undirbúningi, ekki á samningaborðinu. Þá er vert að hafa í huga að ESB-reglur um dýraheilbrigði fela í sér víðtækar kröfur um vottorð, rekjanleika og eftirlit sem skapar eitthvert samhengi fyrir mat á þeirri hættu sem greinin lýsir.",
   "verdict_counts": {
-    "unverifiable": 10
+    "partially_supported": 6
   },
-  "claim_count": 10,
+  "claim_count": 6,
   "dominant_category": "agriculture",
   "categories": [
     "agriculture",
+    "eea_eu_law",
     "precedents"
   ],
   "claims": [
     {
       "claim": {
-        "original_quote": "Hingað til hafi Ísland flutt inn dýr með mjög ströngum skilmálum og undir fullri stjórn yfirvalda. Við höfum gert þetta síðustu áratugi með miklu öryggi.",
-        "claim_text": "Ísland hefur flutt inn dýr með mjög ströngum skilmálum og undir fullri stjórn yfirvalda í áratugi.",
-        "category": "agriculture",
-        "claim_type": "statistic",
+        "original_quote": "Lifandi dýr falla undir þetta fjórfrelsi. Þannig að það er lítið sem ekkert sem menn geta gert í því þegar flytja á dýr frá einu landi í annað innan Evrópusambandsins.",
+        "claim_text": "Frjálst flæði lifandi dýra er meginregla innan Evrópusambandsins og lifandi dýr falla undir fjórfrelsið.",
+        "category": "eea_eu_law",
+        "claim_type": "legal_assertion",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Staðreyndagrunnurinn inniheldur ekki beinar heimildir um íslensku innflutningsreglurnar um lifandi dýr eða sögu innflutnings. <a href=\"https://www.tollur.is/english/businesses/customs/import-duties/customs-tariff/\" title=\"Icelandic customs tariff schedule — Tollskrá\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-002</a> fjallar um landbúnaðartolla en nær ekki til dýraheilbrigðisreglna. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Aðildarviðræður Íslands og ESB — Landbúnaðarkaflinn (Chapter 11); Utanríkisráðuneytið\" target=\"_blank\" rel=\"noopener\">EEA-DATA-013</a> nefnir bann Íslands við innflutningi lifandi dýra og sjúkdómalaust ástand búfjár, sem styður óbeint að strangar reglur hafi gilt, en fullnægjandi heimildir til að staðfesta alla þætti fullyrðingarinnar eru ekki til staðar.",
+      "verdict": "partially_supported",
+      "explanation": "Lifandi dýr falla undir frjálst flæði vara samkvæmt TFEU og <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Article 1 and Protocol 47\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-003</a> staðfestir að fjórfrelsið nái til vöru, þjónustu, fjármagns og fólks. Þó er fullyrðingin of víð þegar hún segir að «lítið sem ekkert» verði gert — ESB-aðildarríki viðhalda ströngum dýraheilbrigðisreglum og geta sett takmarkanir á grundvelli lýðheilsu og dýraheilbrigðis samkvæmt TFEU 36. gr. Innri markaðsreglur krefjast samræmds heilbrigðiseftirlits, en banna ekki sjúkdómavarnir eða sóttvarnaaðgerðir.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-003",
+          "source_name": "EEA Agreement, Article 1 and Protocol 47",
+          "source_url": "https://www.efta.int/eea/eea-agreement"
+        },
+        {
+          "id": "SOV-LEGAL-030",
+          "source_name": "Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003"
+        },
+        {
+          "id": "EEA-LEGAL-022",
+          "source_name": "EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'",
+          "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "ESB-reglur heimila aðildarríkjum takmarkanir á innflutningi lifandi dýra á grundvelli dýraheilbrigðis og sóttvarna (TFEU 36. gr.). Fullyrðingin gefur ranga mynd af því að engin stjórntæki séu til staðar — mörg ESB-ríki viðhalda ströngum heilbrigðiskröfum við innflutning búfjár.",
+      "confidence": 0.75,
+      "speakers": [
+        {
+          "name": "Halldór Runólfsson",
+          "type": "individual",
+          "role": "fyrrverandi yfirdýralæknir",
+          "party": null,
+          "stance": "anti_eu",
+          "attribution": "quoted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "Halldór sat í samninganefnd Íslands í aðildarviðræðum við Evrópusambandið á árunum 2009–2013 og segir málið hafa verið eitt af þeim sem hart var tekist á um.",
+        "claim_text": "Í aðildarviðræðunum 2009–2013 bar málið um frjálst flæði lifandi dýra til Íslands hart á milli aðila.",
+        "category": "precedents",
+        "claim_type": "legal_assertion",
+        "confidence": 0.9
+      },
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Aðildarviðræður Íslands og ESB — Landbúnaðarkaflinn (Chapter 11); Utanríkisráðuneytið\" target=\"_blank\" rel=\"noopener\">EEA-DATA-013</a> staðfestir að bann við innflutningi lifandi dýra var skilgreint sem «non-negotiable» í samningastöðu Íslands og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland progress reports 2011–2013; Screening report Chapter 11\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-018</a> sýnir að landbúnaðarkaflinn (kafli 11) var aldrei opnaður vegna pólitísks næmis. Þetta bendir til deilna um efnið. Hins vegar var kaflinn aldrei opnaður formlega, svo ekki liggur fyrir hvort deilt var beint við ESB um lifandi dýr — deilurnar voru að hluta innlendar milli hagsmunaaðila.",
       "supporting_evidence": [
         {
           "id": "EEA-DATA-013",
           "source_name": "Aðildarviðræður Íslands og ESB — Landbúnaðarkaflinn (Chapter 11); Utanríkisráðuneytið",
           "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+        },
+        {
+          "id": "AGRI-DATA-018",
+          "source_name": "European Commission — Iceland progress reports 2011–2013; Screening report Chapter 11",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "PREC-HIST-004",
+          "source_name": "European Commission — Iceland accession progress reports",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Engar heimildir í staðreyndagrunninum fjalla beint um sögu innflutningsreglna Íslands um lifandi dýr eða um hvernig innflutningur hefur verið framkvæmdur «í áratugi». Nánari gögn frá MAST eða Matvælastofnun myndu þurfa til að staðfesta þetta.",
-      "confidence": 0.4,
+      "missing_context": "Kafli 11 (landbúnaður) og kafli 12 (matvælaöryggi) voru aldrei opnaðir til viðræðna, svo formlegar deilur við ESB um lifandi dýr áttu sér ekki stað. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland progress reports 2011–2013; Screening report Chapter 11\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-018</a> bendir til þess að innlendir ágreiningspunktar milli bænda, samningahóps og stjórnmálaflokka hafi ráðið mestu.",
+      "confidence": 0.55,
       "speakers": [
         {
           "name": "Halldór Runólfsson",
@@ -54,105 +108,40 @@
     },
     {
       "claim": {
-        "original_quote": "Innflutningur hafi að mestu leyti snúist um erfðaefni, svo sem fósturvísa, frjóegg eða sæði, en afar sjaldan um lifandi dýr, þó undantekningar hafi verið, til dæmis minkur, býflugur og svín.",
-        "claim_text": "Innflutningur lifandi dýra til Íslands hefur að mestu leyti snúist um erfðaefni, svo sem fósturvísa, frjóegg eða sæði, en afar sjaldan um lifandi dýr. Undantekningar hafa verið minkur, býflugur og svín.",
+        "original_quote": "Í fyrsta lagi skiptir íslenski markaðurinn þá engu máli, hann er svo lítill. Og í öðru lagi eru þessar sérkröfur ekki fordæmi sem önnur lönd geta byggt á. Við erum algjörlega einstakir.",
+        "claim_text": "Íslenski markaðurinn er svo lítill að hann skiptir ESB engu máli í samningum, sem gæti auðveldað undanþágur.",
         "category": "agriculture",
-        "claim_type": "statistic",
+        "claim_type": "opinion",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Engar heimildir í staðreyndagrunninum staðfesta eða hrekja sérstaklega hvort innflutningur lifandi dýra hafi aðallega verið í formi erfðaefnis. <a href=\"https://www.mast.is/en/food-animals/food-safety\" title=\"Matvælastofnun (MAST) — Icelandic Food and Veterinary Authority; Bændasamtök Íslands\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-006</a> fjallar um sjálfsþurft í matvælaframleiðslu en ekki um innflutning erfðaefnis eða lifandi dýra. Fullyrðingin er trúleg í ljósi þekktra íslensku innflutningsreglna, en ekki sannreynanleg gegn fyrirliggjandi heimildum.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "missing_context": "Staðreyndagrunnurinn inniheldur engar heimildir um innflutning erfðaefnis eða lifandi dýra til Íslands. Gögn frá MAST um innflutningsleyfi myndu þurfa til staðfestingar.",
-      "confidence": 0.3,
-      "speakers": [
-        {
-          "name": "Halldór Runólfsson",
-          "type": "individual",
-          "role": "fyrrverandi yfirdýralæknir",
-          "party": null,
-          "stance": "anti_eu",
-          "attribution": "paraphrased",
-          "stance_score": null,
-          "credibility": null
-        }
-      ]
-    },
-    {
-      "claim": {
-        "original_quote": "Halldór sat í samninganefnd Íslands í aðildarviðræðum við Evrópusambandið á árunum 2009–2013.",
-        "claim_text": "Halldór Runólfsson sat í samninganefnd Íslands í aðildarviðræðum við Evrópusambandið á árunum 2009–2013.",
-        "category": "precedents",
-        "claim_type": "statistic",
-        "confidence": 0.9
-      },
-      "verdict": "unverifiable",
-      "explanation": "<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/\" title=\"Samningahóparnir — Utanríkisráðuneytið, Aðildarviðræður við Evrópusambandið\" target=\"_blank\" rel=\"noopener\">EEA-DATA-012</a> staðfestir að aðildarviðræður stóðu yfir 2010–2013 (formlega opnaðar í júlí 2010, ekki 2009) og að 35 samningahópar voru skipaðir sérfræðingum. Nafn Halldórs Runólfssonar kemur þó hvergi fyrir í heimildunum. Samningahópalistar hafa verið fjarlægðir af vef utanríkisráðuneytisins, svo staðfesting er ekki möguleg.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> staðfestir að Ísland er efnahagslega mjög lítið (VLF um 25 milljarðar evra, 390 þúsund íbúar) og að aðild þess hefði «minimal impact» á heildarhagkerfi ESB. Röksemdafærslan um að smæð auðveldi undanþágur er hins vegar of einföld. <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> bendir til þess að varanlegar undanþágur frá kjarnaregluverki ESB séu ólíklegar, og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> undirstrikar að regluverkið sé ekki samningshæft í efni. Smæð eykur ekki sjálfkrafa samningsstöðu.",
       "supporting_evidence": [
         {
-          "id": "EEA-DATA-012",
-          "source_name": "Samningahóparnir — Utanríkisráðuneytið, Aðildarviðræður við Evrópusambandið",
-          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/"
+          "id": "TRADE-DATA-022",
+          "source_name": "European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "AGRI-DATA-013",
+          "source_name": "Hagstofa Íslands — National accounts; OECD — Agricultural Policy Monitoring and Evaluation",
+          "source_url": "https://www.oecd.org/en/publications/agricultural-policy-monitoring-and-evaluation-2023_b14de474-en/full-report/iceland_fc821635.html"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Aðildarviðræður hófust formlega í júlí 2010, ekki 2009 — umsóknin var lögð fram í júlí 2009 en viðræður hófust ári síðar. Tímabilið 2009–2013 er því ekki alveg nákvæmt. Nöfn samningahópameðlima eru ekki aðgengileg í staðreyndagrunninum.",
-      "confidence": 0.35,
-      "speakers": [
+      "contradicting_evidence": [
         {
-          "name": "Halldór Runólfsson",
-          "type": "individual",
-          "role": "fyrrverandi yfirdýralæknir",
-          "party": null,
-          "stance": "anti_eu",
-          "attribution": "paraphrased",
-          "stance_score": null,
-          "credibility": null
-        }
-      ]
-    },
-    {
-      "claim": {
-        "original_quote": "Í viðræðunum hafi Ísland líkt stöðu sinni við eyþjóðir á borð við Ástralíu og Nýja Sjáland, sem hafa haft tök á að halda mjög ströngum reglum um innflutning lifandi dýra.",
-        "claim_text": "Í aðildarviðræðunum líkti Ísland stöðu sinni við eyþjóðir eins og Ástralíu og Nýja Sjáland, sem halda mjög ströngum reglum um innflutning lifandi dýra.",
-        "category": "precedents",
-        "claim_type": "comparison",
-        "confidence": 0.9
-      },
-      "verdict": "unverifiable",
-      "explanation": "<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Aðildarviðræður Íslands og ESB — Landbúnaðarkaflinn (Chapter 11); Utanríkisráðuneytið\" target=\"_blank\" rel=\"noopener\">EEA-DATA-013</a> lýsir samningastöðu Íslands varðandi lifandi dýr og sjúkdómalausa stöðu búfjár, en nefnir ekki samanburð við Ástralíu eða Nýja Sjáland. Engar aðrar heimildir í staðreyndagrunninum staðfesta eða hrekja þessa tilteknu samlíkingu. Fullyrðingin byggir á frásögn Halldórs Runólfssonar sem ekki er sannreynanleg gegn fyrirliggjandi heimildum.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "missing_context": "Samanburður við Ástralíu og Nýja Sjáland kemur hvergi fram í heimildunum. Ástralía og Nýja Sjáland eru ekki ESB-ríki og hafa eigin lífverndarlög — samanburðurinn er pólitískt rökstuðningsatriði, ekki lagaleg heimild.",
-      "confidence": 0.3,
-      "speakers": [
+          "id": "EEA-DATA-014",
+          "source_name": "Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)",
+          "source_url": "https://ioes.hi.is/en/institute-economic-studies"
+        },
         {
-          "name": "Halldór Runólfsson",
-          "type": "individual",
-          "role": "fyrrverandi yfirdýralæknir",
-          "party": null,
-          "stance": "anti_eu",
-          "attribution": "paraphrased",
-          "stance_score": null,
-          "credibility": null
+          "id": "EEA-LEGAL-021",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
         }
-      ]
-    },
-    {
-      "claim": {
-        "original_quote": "Þeim var nú hálfilla við þann samanburð og sögðust ekkert vilja hafa neinar nýjar Ástralíur og Ný Sjálönd í Evrópu.",
-        "claim_text": "ESB-fulltrúar í aðildarviðræðunum sögðust ekki vilja hafa neinar «nýjar Ástralíur og Nýja Sjáland» í Evrópu.",
-        "category": "precedents",
-        "claim_type": "legal_assertion",
-        "confidence": 0.9
-      },
-      "verdict": "unverifiable",
-      "explanation": "Engar heimildir í staðreyndagrunninum staðfesta þessa tilteknu ummæli ESB-fulltrúa. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> og <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> staðfesta almennt að ESB-samningaviðmið krefjist þess að umsóknarríki samþykki regluverkið, sem samræmist viðhorfinu. Tilvitnunin er þó einungis frásögn eins samningamanns og er ekki sannreynanleg.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "missing_context": "Þetta er persónuleg frásögn úr lokuðum viðræðufundum. Almenn afstaða ESB — að regluverkið sé ekki samningshæft í efni — styður þó óbeint að ESB-fulltrúar hafi verið tregir til undanþága á eyjastöðu grundvelli.",
-      "confidence": 0.25,
+      ],
+      "missing_context": "Þótt Ísland sé lítið gæti ESB haft áhyggjur af fordæmisáhrifum — undanþága sem veitt er einu ríki gæti verið notuð sem fordæmi af öðrum. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> nefnir að ESB hefur ekki virkt hagsmuna af aðild Íslands, sem gæti bæði styrkja og veikja samningsstöðu.",
+      "confidence": 0.6,
       "speakers": [
         {
           "name": "Halldór Runólfsson",
@@ -168,18 +157,40 @@
     },
     {
       "claim": {
-        "original_quote": "Í grein sinni vísar Halldór til ítarlegrar áhættumatskýrslu sem unnin var af sérfræðingum og birt árið 2015. Hún sé enn í fullu gildi. Og það kom bara hreinlega út að innan eins árs í frjálsu flæði lifandi dýra myndu koma sjúkdómar.",
-        "claim_text": "Ítarleg áhættumatskýrsla unnin af sérfræðingum og birt árið 2015 er enn í gildi og sýndi að innan eins árs í frjálsu flæði lifandi dýra myndu sjúkdómar koma til Íslands.",
+        "original_quote": "Og í öðru lagi eru þessar sérkröfur ekki fordæmi sem önnur lönd geta byggt á. Við erum algjörlega einstakir.",
+        "claim_text": "Sérkröfur Íslands um lifandi dýr myndu ekki skapa fordæmi sem önnur ESB-ríki geta byggt á, vegna einstakrar stöðu landsins.",
         "category": "agriculture",
-        "claim_type": "statistic",
+        "claim_type": "opinion",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Engar heimildir í staðreyndagrunninum vísa til áhættumatskýrslu frá 2015 um innflutning lifandi dýra. <a href=\"https://chamber.is/intros/iceland-accession-negotiations-with-the-eu\" title=\"Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-009</a> fjallar um efnahagsáhrif ESB-aðildar á landbúnað en nær ekki til dýraheilbrigðisáhættumats. Án aðgangs að kýrslunni sjálfri er ekki hægt að meta hvort niðurstöðurnar séu réttar eða hvort skýrslan sé enn í gildi.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "missing_context": "Skýrslan er ekki í staðreyndagrunninum og því er ekki hægt að staðfesta innihald hennar, aðferðafræði eða niðurstöður. Fullyrðingin um að sjúkdómar myndu koma «innan eins árs» er sterk spá sem krefst aðgangs að upprunagögnum til mats.",
-      "confidence": 0.2,
+      "verdict": "partially_supported",
+      "explanation": "Rök Halldórs um einstöðu Íslands eiga við að vissu leyti — <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Aðildarviðræður Íslands og ESB — Landbúnaðarkaflinn (Chapter 11); Utanríkisráðuneytið\" target=\"_blank\" rel=\"noopener\">EEA-DATA-013</a> undirstrikar sérstöðu Íslands sem eyja með sjúkdómalausan búfjárstofn og einangraðar erfðalinur. <a href=\"https://mmm.fi/en/food-and-agriculture/support-and-aid/national-agricultural-aid\" title=\"Act of Accession of Austria, Finland and Sweden (1994), Article 142; Finnish Ministry of Agriculture and Forestry; Commission Decision (EU) 2022/2460\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-002</a> sýnir fordæmi þar sem Finnland og Svíþjóð fengu sérákvæði (142. gr.) sem önnur ríki hafa ekki notað sem fordæmi til stækkunar. Á hinn bóginn er grundvallarregla ESB-réttar að undanþágur skapa fordæmi — <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> leggur áherslu á að regluverkið sé ekki samningshæft og ESB gætir fordæmisáhrifa.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-DATA-013",
+          "source_name": "Aðildarviðræður Íslands og ESB — Landbúnaðarkaflinn (Chapter 11); Utanríkisráðuneytið",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+        },
+        {
+          "id": "AGRI-LEGAL-002",
+          "source_name": "Act of Accession of Austria, Finland and Sweden (1994), Article 142; Finnish Ministry of Agriculture and Forestry; Commission Decision (EU) 2022/2460",
+          "source_url": "https://mmm.fi/en/food-and-agriculture/support-and-aid/national-agricultural-aid"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "EEA-LEGAL-021",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        },
+        {
+          "id": "EEA-DATA-014",
+          "source_name": "Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)",
+          "source_url": "https://ioes.hi.is/en/institute-economic-studies"
+        }
+      ],
+      "missing_context": "Fordæmisáhrif eru alltaf viðkvæmt mál í ESB-samningum. Þótt staða Íslands sé óvenjuleg þá hefur ESB sýnt mikla varkárni við að veita undanþágur sem gætu orðið viðmiðun annarra. Hún er skoðun sem byggir á rökstuðningi, ekki staðreynd sem hægt er að sannreyna.",
+      "confidence": 0.5,
       "speakers": [
         {
           "name": "Halldór Runólfsson",
@@ -187,7 +198,7 @@
           "role": "fyrrverandi yfirdýralæknir",
           "party": null,
           "stance": "anti_eu",
-          "attribution": "paraphrased",
+          "attribution": "quoted",
           "stance_score": null,
           "credibility": null
         }
@@ -195,78 +206,34 @@
     },
     {
       "claim": {
-        "original_quote": "Hagfræðingurinn Daði Már Kristófersson, núverandi fjármálaráðherra, hafi reiknað út efnahagslegt tjón sem slíkt myndi valda íslenskum landbúnaði.",
-        "claim_text": "Daði Már Kristófersson, núverandi fjármálaráðherra, reiknaði út efnahagslegt tjón sem frjálst flæði lifandi dýra myndi valda íslenskum landbúnaði.",
-        "category": "agriculture",
-        "claim_type": "statistic",
-        "confidence": 0.9
-      },
-      "verdict": "unverifiable",
-      "explanation": "<a href=\"https://chamber.is/intros/iceland-accession-negotiations-with-the-eu\" title=\"Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-009</a> nefnir rannsóknir frá Hagfræðistofnun Háskóla Íslands og Viðskiptaráði um efnahagsáhrif ESB-aðildar á landbúnað, en tengir þær ekki beint við Daða Má Kristófersson. Þingræður Daða Más á Alþingi (nóvember 2025) fjalla um tolla ESB en ekki um útreikninga á áhrifum frjáls flæðis lifandi dýra. Ekki er hægt að staðfesta eða hrekja tiltekna útreikninga hans.",
-      "supporting_evidence": [
-        {
-          "id": "AGRI-DATA-009",
-          "source_name": "Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers",
-          "source_url": "https://chamber.is/intros/iceland-accession-negotiations-with-the-eu"
-        }
-      ],
-      "contradicting_evidence": [],
-      "missing_context": "Daði Már Kristófersson er prófessor í hagfræði og gæti vel hafa unnið slíka útreikninga, en staðreyndagrunnurinn tengir ekki við tiltekna skýrslu hans. Rannsóknin sem vísað er til gæti verið hluti af verkefni Hagfræðistofnunar sem <a href=\"https://chamber.is/intros/iceland-accession-negotiations-with-the-eu\" title=\"Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-009</a> vísar til.",
-      "confidence": 0.35,
-      "speakers": [
-        {
-          "name": "Daði Már Kristófersson",
-          "type": "individual",
-          "role": "hagfræðingur, fjármálaráðherra",
-          "party": "Viðreisn",
-          "stance": "neutral",
-          "attribution": "mentioned",
-          "stance_score": null,
-          "credibility": null
-        }
-      ]
-    },
-    {
-      "claim": {
-        "original_quote": "Með þeim gæti komið hestainflúensa, kverkeitlabólga og herpessjúkdómar, sem myndu gera íslenskri hrossarækt og hestamennsku ákaflega erfitt fyrir.",
-        "claim_text": "Frjáls innflutningur lifandi hesta gæti leitt til hestainflúensu, kverkeitlabólgu og herpessjúkdóma á Íslandi.",
+        "original_quote": "Slíkt, segir hann, myndi óhjákvæmilega leiða til innflutnings alvarlegra dýrasjúkdóma og valda íslenskum landbúnaði og fæðuöryggi óbærilegu tjóni.",
+        "claim_text": "Frjálst flæði lifandi dýra til Íslands myndi óhjákvæmilega leiða til innflutnings alvarlegra dýrasjúkdóma og valda íslenskum landbúnaði og fæðuöryggi óbærilegu tjóni.",
         "category": "agriculture",
         "claim_type": "prediction",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Staðreyndagrunnurinn inniheldur engar heimildir um dýraheilbrigðisáhættur tengdar innflutningi hesta eða um tiltekna hestasjúkdóma eins og hestainflúensu, kverkeitlabólgu eða herpessjúkdóma. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Aðildarviðræður Íslands og ESB — Landbúnaðarkaflinn (Chapter 11); Utanríkisráðuneytið\" target=\"_blank\" rel=\"noopener\">EEA-DATA-013</a> nefnir sjúkdómalausa stöðu íslensks búfjár almennt, sem gerir fullyrðinguna trúlega frá dýralæknisfræðilegu sjónarhorni, en engar sértækar heimildir styðja hana beint.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "missing_context": "Dýraheilbrigðisgögn vantar í staðreyndagrunninn. Íslenski hestastofninn hefur verið einangraður í aldir og hefur ekki myndað ónæmi gegn alþjóðlegum hestasjúkdómum — þetta er almennt viðurkennt í dýralæknisfræði en ekki staðfest með heimildum hér.",
-      "confidence": 0.3,
-      "speakers": [
+      "verdict": "partially_supported",
+      "explanation": "Áhætta af innflutningi dýrasjúkdóma til Íslands er raunveruleg og vel rökstudd — <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Aðildarviðræður Íslands og ESB — Landbúnaðarkaflinn (Chapter 11); Utanríkisráðuneytið\" target=\"_blank\" rel=\"noopener\">EEA-DATA-013</a> staðfestir sjúkdómalausa stöðu íslensks búfjár og samningastöðu Íslands um innflutningsbann. <a href=\"https://chamber.is/intros/iceland-accession-negotiations-with-the-eu\" title=\"Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-009</a> sýnir að áhrif á bændatekjur gætu orðið 30–50%. Orðalagið «óhjákvæmilega» og «óbærilegu» er þó of afdráttarlaust. ESB-aðildarríki viðhalda dýraheilbrigðiseftirliti og sjúkdómaspjöld eru ekki óhjákvæmileg afleiðing aðildar — þau ráðast af umfangi innflutnings og heilbrigðisaðgerðum.",
+      "supporting_evidence": [
         {
-          "name": "Halldór Runólfsson",
-          "type": "individual",
-          "role": "fyrrverandi yfirdýralæknir",
-          "party": null,
-          "stance": "anti_eu",
-          "attribution": "quoted",
-          "stance_score": null,
-          "credibility": null
+          "id": "EEA-DATA-013",
+          "source_name": "Aðildarviðræður Íslands og ESB — Landbúnaðarkaflinn (Chapter 11); Utanríkisráðuneytið",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+        },
+        {
+          "id": "AGRI-DATA-009",
+          "source_name": "Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers",
+          "source_url": "https://chamber.is/intros/iceland-accession-negotiations-with-the-eu"
+        },
+        {
+          "id": "AGRI-DATA-013",
+          "source_name": "Hagstofa Íslands — National accounts; OECD — Agricultural Policy Monitoring and Evaluation",
+          "source_url": "https://www.oecd.org/en/publications/agricultural-policy-monitoring-and-evaluation-2023_b14de474-en/full-report/iceland_fc821635.html"
         }
-      ]
-    },
-    {
-      "claim": {
-        "original_quote": "Ekki sé hægt að bólusetja fyrir öllum þessum sjúkdómum.",
-        "claim_text": "Ekki er hægt að bólusetja fyrir öllum sjúkdómum sem gætu borist með lifandi hestum.",
-        "category": "agriculture",
-        "claim_type": "legal_assertion",
-        "confidence": 0.9
-      },
-      "verdict": "unverifiable",
-      "explanation": "Engar heimildir í staðreyndagrunninum fjalla um bólusetningarmöguleika gegn hestasjúkdómum. Þetta er dýralæknisfræðileg staðhæfing sem krefst sérfræðiheimilda sem ekki eru til staðar í grunninum.",
-      "supporting_evidence": [],
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Staðreyndagrunnurinn nær ekki til dýralæknisfræðilegra gagna um bóluefni og sjúkdómavarnir. Mat á þessari fullyrðingu krefst heimilda frá MAST eða alþjóðlegum dýraheilbrigðisstofnunum (WOAH).",
-      "confidence": 0.2,
+      "missing_context": "Fullyrðingin notar orðalagið «óhjákvæmilega» sem gefur í skyn algilda vissu. Áhættan er raunveruleg en háð því hvort og hvernig innflutningur yrði framkvæmdur — ESB-reglur heimila dýraheilbrigðiseftirlit og sóttvarnaraðgerðir. <a href=\"https://chamber.is/intros/iceland-accession-negotiations-with-the-eu\" title=\"Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-009</a> bendir til efnahagsáhrifa, en þau tengjast tollalækkun fremur en sjúkdómum.",
+      "confidence": 0.55,
       "speakers": [
         {
           "name": "Halldór Runólfsson",
@@ -282,18 +249,45 @@
     },
     {
       "claim": {
-        "original_quote": "nefnir sem dæmi vandamál ESB-ríkja með afríska svínapest, meðal annars vegna villisvína sem fara óhindrað yfir landamæri.",
-        "claim_text": "ESB-ríki glíma við vandamál með afríska svínapest, meðal annars vegna villisvína sem fara óhindrað yfir landamæri.",
+        "original_quote": "Engu að síður telur hann raunhæft að Ísland geti fengið varanlegar undanþágur í þessu efni.",
+        "claim_text": "Halldór Runólfsson telur raunhæft að Ísland fái varanlegar undanþágur á frjálsu flæði lifandi dýra í ESB-aðildarviðræðum.",
         "category": "agriculture",
-        "claim_type": "statistic",
+        "claim_type": "opinion",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Engar heimildir í staðreyndagrunninum fjalla sérstaklega um afríska svínapest eða villisvínavandamál í ESB-ríkjum. <a href=\"https://en.wikipedia.org/wiki/2023%E2%80%932024_European_Union_farmers%27_protests\" title=\"NPR — EU Farmer Protests; European Commission press releases; Intereconomics analysis\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-023</a> nefnir mótmæli bænda í 12 ESB-ríkjum vegna ýmissa vandamála, en ekki dýrasjúkdóma. Afrísk svínapest er vel þekkt vandamál í austur-Evrópu, en staðreyndagrunnurinn styður ekki fullyrðinguna beint.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "missing_context": "Staðreyndagrunnurinn inniheldur engar heimildir um afríska svínapest eða villisvín í Evrópu. Upplýsingar frá EFSA eða Framkvæmdastjórn ESB um útbreiðslu ASF myndu þurfa til mats.",
-      "confidence": 0.25,
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin er skoðun Halldórs en heimildir veita blæbrigðaríka mynd. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Aðildarviðræður Íslands og ESB — Landbúnaðarkaflinn (Chapter 11); Utanríkisráðuneytið\" target=\"_blank\" rel=\"noopener\">EEA-DATA-013</a> sýnir að samningastaðan taldi innflutningsbannið «non-negotiable» og ESB-reglur banna ekki sjúkdómavarnir — sem styður bjartsýni. Á hinn bóginn sýnir <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> að Hagfræðistofnun HÍ taldi varanlegar undanþágur frá kjarnaregluverki ólíklegar, og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-004</a> staðfestir að ekkert ESB-ríki hefur fengið varanlega undanþágu frá sameiginlegri landbúnaðarstefnu. Fordæmin eru takmörkuð við viðbótarstuðning (142. gr.), ekki undanþágur.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-DATA-013",
+          "source_name": "Aðildarviðræður Íslands og ESB — Landbúnaðarkaflinn (Chapter 11); Utanríkisráðuneytið",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+        },
+        {
+          "id": "AGRI-LEGAL-002",
+          "source_name": "Act of Accession of Austria, Finland and Sweden (1994), Article 142; Finnish Ministry of Agriculture and Forestry; Commission Decision (EU) 2022/2460",
+          "source_url": "https://mmm.fi/en/food-and-agriculture/support-and-aid/national-agricultural-aid"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "EEA-DATA-014",
+          "source_name": "Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)",
+          "source_url": "https://ioes.hi.is/en/institute-economic-studies"
+        },
+        {
+          "id": "AGRI-LEGAL-004",
+          "source_name": "EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        },
+        {
+          "id": "EEA-LEGAL-021",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        }
+      ],
+      "missing_context": "Lykilmunur er á «undanþágu» (permanent opt-out) og «sérákvæði» (special provision). Finnland og Svíþjóð fengu sérákvæði (142. gr.) sem bætti við stuðning, en þau fylgja engu að síður sameiginlegri landbúnaðarstefnu að fullu. Varanlegar undanþágur hafa ekki verið veittar nýjum aðildarríkjum síðan Króatía gekk í ESB 2013.",
+      "confidence": 0.6,
       "speakers": [
         {
           "name": "Halldór Runólfsson",
@@ -315,9 +309,9 @@
       "party": null,
       "role_in_article": "speaker",
       "attribution_type": "paraphrased",
-      "claim_count": 9,
+      "claim_count": 6,
       "verdicts": {
-        "unverifiable": 9
+        "partially_supported": 6
       },
       "stance": "anti_eu",
       "slug": "halldor-runolfsson",

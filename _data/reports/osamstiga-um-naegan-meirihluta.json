@@ -10,50 +10,18 @@
   "summary": "Greindar 9 fullyrðingar .",
   "capsule": "Forsætisráðherra og utanríkisráðherra eru sammála um eitt: ríkisstjórnarflokkarnir munu virða niðurstöðu þjóðaratkvæðagreiðslunnar, hvort sem hún verður já eða nei. Áhugavert er að kjarni deilunnar snýst um tölu — utanríkisráðherra vísar til þess að Ísland hafi þegar innleitt 80% af regluverki ESB en þetta hlutfall er umdeilt því EES-samningurinn nær yfir innri markaðsreglur en útilokar sjávarútveg, landbúnað, tollabandalag og gjaldmiðilsmál. Þetta aðferðafræðilega samhengi — hvað «80%» þýðir í raun — er einmitt lykilatriðið til að skilja hverju aðild myndi í raun breyta.",
   "verdict_counts": {
-    "unverifiable": 2,
     "supported": 1,
-    "partially_supported": 4
+    "partially_supported": 5,
+    "misleading": 1
   },
   "claim_count": 7,
   "dominant_category": "party_positions",
   "categories": [
     "eea_eu_law",
-    "party_positions"
+    "party_positions",
+    "precedents"
   ],
   "claims": [
-    {
-      "claim": {
-        "original_quote": "Forsætisráðherra og utanríkisráðherra eru ekki á einu máli um hvaða meirihluta þurfi til þess að hefja aðildarviðræður við Evrópusambandið (ESB) á ný.",
-        "claim_text": "Forsætisráðherra og utanríkisráðherra eru ekki á einu máli um hvaða meirihluta þurfi til þess að hefja aðildarviðræður við Evrópusambandið.",
-        "category": "party_positions",
-        "claim_type": "opinion",
-        "confidence": 0.9
-      },
-      "verdict": "unverifiable",
-      "explanation": "Heimildir í staðreyndagrunni staðfesta að forsætisráðherra (Kristrún Frostadóttir) og utanríkisráðherra (Þorgerður Katrín Gunnarsdóttir) gegna lykilhlutverkum í þjóðaratkvæðagreiðslumálinu samkvæmt <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland; Euronews; France24; coalition agreement\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-013</a>. Þó er ekki að finna beinar heimildir þar sem afstaða þeirra til meirihlutakröfu er borin saman. Fullyrðing 4 í sömu grein (um 51% afstöðu utanríkisráðherra) gefur vísbendingu um ágreining, en staðreyndagrunnurinn inniheldur ekki heimild um að forsætisráðherra hafi krafist rúms meirihluta í þessu tiltekna samhengi.",
-      "supporting_evidence": [
-        {
-          "id": "PARTY-DATA-013",
-          "source_name": "Government of Iceland; Euronews; France24; coalition agreement",
-          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
-        }
-      ],
-      "contradicting_evidence": [],
-      "missing_context": "Engin bein heimild í staðreyndagrunni staðfestir opinberlega ágreining milli forsætisráðherra og utanríkisráðherra um meirihlutakröfu. Þetta kann að byggjast á fjölmiðlaviðtölum sem eru ekki í grunninum.",
-      "confidence": 0.35,
-      "speakers": [
-        {
-          "name": "Andrés Magnússon",
-          "type": "individual",
-          "role": "fréttaritari",
-          "party": null,
-          "stance": "neutral",
-          "attribution": "asserted",
-          "stance_score": null,
-          "credibility": null
-        }
-      ]
-    },
     {
       "claim": {
         "original_quote": "Kristrún Frostadóttir forsætisráðherra sagði fyrir kosningar að hún teldi aðildarumsókn ótímabæra, þar sem ljóst væri að skoðanir um hana væru afar skiptar.",
@@ -165,6 +133,33 @@
     },
     {
       "claim": {
+        "original_quote": "Við sáum í Brexit að það var mjótt á munum, en sú niðurstaða var virt.",
+        "claim_text": "Í Brexit-þjóðaratkvæðagreiðslunni var niðurstaðan mjótt á munum en sú niðurstaða var virt.",
+        "category": "precedents",
+        "claim_type": "comparison",
+        "confidence": 0.9
+      },
+      "verdict": "partially_supported",
+      "explanation": "Engin heimild fjallar beint um Brexit-þjóðaratkvæðagreiðsluna 2016 eða niðurstöðu hennar (51,9% gegn 48,1%). Heimildir snúa mest að íslensku könnunum og flokkaskilagreiningum. SOV-DATA-022 fjallar um fordæmi ráðgefandi þjóðaratkvæðagreiðslna á Íslandi og nefnir að niðurstöður slíkra atkvæðagreiðslna hafi almennt verið virtar, en nefnir ekki Brexit sérstaklega. Grundvallarforsenda fullyrðingarinnar — að Brexit hafi verið mjótt á munum — er vel þekkt staðreynd, og niðurstaðan var framfylgt, en engar heimildir í gagnagrunninum staðfesta þetta beint.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [],
+      "missing_context": "Engin heimild í gagnagrunninum fjallar beint um Brexit-þjóðaratkvæðagreiðsluna 2016 eða niðurstöðu hennar. Fullyrðingin er almenn vitneskja en ekki staðfest af heimildum hér. Aðrar heimildir fjalla um íslensku þjóðaratkvæðagreiðsluna 2026, ekki bresku.",
+      "confidence": 0.4,
+      "speakers": [
+        {
+          "name": "Þorgerður Katrín Gunnarsdóttir",
+          "type": "individual",
+          "role": "utanríkisráðherra",
+          "party": "Viðreisn",
+          "stance": "pro_eu",
+          "attribution": "quoted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
         "original_quote": "Ríkisstjórnarflokkarnir hafa alveg talað skýrt, við munum virða niðurstöðuna, hvort sem hún verður já eða nei.",
         "claim_text": "Ríkisstjórnarflokkarnir hafa lýst yfir að þeir muni virða niðurstöðu þjóðaratkvæðagreiðslunnar, hvort sem hún verður já eða nei.",
         "category": "party_positions",
@@ -213,32 +208,42 @@
     },
     {
       "claim": {
-        "original_quote": "Guðlaugur Þór Þórðarson, alþingismaður Sjálfstæðisflokksins og fv. utanríkisráðherra, ber hins vegar brigður á það og vísar til skýrslu utanríkisráðuneytisins frá 2018, sem bendir til þess að hlutfallið sé nær 15%.",
-        "claim_text": "Guðlaugur Þór Þórðarson vísar til skýrslu utanríkisráðuneytisins frá 2018 sem bendir til þess að hlutfall innleidds regluverks ESB sé nær 15%.",
+        "original_quote": "Utanríkisráðherra sagði Ísland þegar hafa innleitt 80% þess og því væri ekki von á miklum breytingum.",
+        "claim_text": "Utanríkisráðherra sagði Ísland þegar hafa innleitt 80% af regluverki Evrópusambandsins.",
         "category": "eea_eu_law",
         "claim_type": "statistic",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/154/rad20231129T000000.html\" title=\"Alþingi — Guðlaugur Þór Þórðarson, þingmaður Sjálfstæðisflokksins (flutningsræða, 154. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">ETS-PARL-001</a> staðfestir að Guðlaugur Þór er fyrrverandi utanríkisráðherra og þingmaður Sjálfstæðisflokksins með reynslu af EES-málum. Skýrsla utanríkisráðuneytisins frá 2018 er hins vegar ekki í staðreyndagrunninum og 15% talan er ekki staðfest. <a href=\"https://eur-lex.europa.eu/statistics/legislative-acts-statistics.html\" title=\"EUR-Lex — Legislation statistics\" target=\"_blank\" rel=\"noopener\">EEA-DATA-003</a> bendir til um þriðjungs (33%) innleiðingar á acquis, sem er á milli beggja fullyrðinga (15% og 80%).",
-      "supporting_evidence": [
+      "verdict": "misleading",
+      "explanation": "<a href=\"https://www.eftasurv.int/internal-market/implementing-eea-law-national-law/internal-market-scoreboards\" title=\"EFTA Surveillance Authority — Internal Market Scoreboard\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-001</a> sýnir að um 70% af löggjöf innri markaðarins hefur verið innleidd — ekki 80% af öllu regluverki ESB. Þetta er lykilmunur: EES-samningurinn tekur ekki til sjávarútvegsstefnu, landbúnaðarstefnu, réttarmála né innanríkismála. <a href=\"https://eur-lex.europa.eu/statistics/legislative-acts-statistics.html\" title=\"EUR-Lex — Legislation statistics\" target=\"_blank\" rel=\"noopener\">EEA-DATA-003</a> bendir til að Ísland hafi innleitt um þriðjung alls acquis ESB í gegnum EES-samninginn. Talan 80% ofmetur innleiðinguna verulega ef miðað er við allt regluverkið.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [
         {
-          "id": "ETS-PARL-001",
-          "source_name": "Alþingi — Guðlaugur Þór Þórðarson, þingmaður Sjálfstæðisflokksins (flutningsræða, 154. löggjafarþing)",
-          "source_url": "https://www.althingi.is/altext/raeda/154/rad20231129T000000.html"
+          "id": "EEA-LEGAL-001",
+          "source_name": "EFTA Surveillance Authority — Internal Market Scoreboard",
+          "source_url": "https://www.eftasurv.int/internal-market/implementing-eea-law-national-law/internal-market-scoreboards"
+        },
+        {
+          "id": "EEA-DATA-003",
+          "source_name": "EUR-Lex — Legislation statistics",
+          "source_url": "https://eur-lex.europa.eu/statistics/legislative-acts-statistics.html"
+        },
+        {
+          "id": "EEA-DATA-006",
+          "source_name": "EFTA Secretariat — EEA Agreement factsheet; ESA Annual Report 2024",
+          "source_url": "https://www.efta.int/eea/eea-agreement"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Skýrsla utanríkisráðuneytisins frá 2018 er ekki í staðreyndagrunninum og ekki hægt að sannreyna 15% töluna. Mismunandi aðferðafræði getur skilað mjög ólíkum niðurstöðum — 15% gæti átt við ef miðað er við heildarfjölda lagagerða ESB (151.000+) á móti 13.000 innleiddum í gegnum EES.",
-      "confidence": 0.45,
+      "missing_context": "Nákvæmt hlutfall fer eftir aðferðafræði talningar — sumar áætlanir segja 60–75% af löggjöf innri markaðarins. <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EFTA Secretariat — EEA Agreement factsheet; ESA Annual Report 2024\" target=\"_blank\" rel=\"noopener\">EEA-DATA-006</a> nefnir um 13.000 lagagerðir innleiddar frá 1994. Munurinn á «löggjöf innri markaðarins» og «öllu regluverki ESB» skiptir höfuðmáli í þessari umræðu.",
+      "confidence": 0.85,
       "speakers": [
         {
-          "name": "Guðlaugur Þór Þórðarson",
+          "name": "Þorgerður Katrín Gunnarsdóttir",
           "type": "individual",
-          "role": "alþingismaður",
-          "party": "Sjálfstæðisflokkur",
-          "stance": "anti_eu",
-          "attribution": "mentioned",
+          "role": "utanríkisráðherra",
+          "party": "Viðreisn",
+          "stance": "pro_eu",
+          "attribution": "paraphrased",
           "stance_score": null,
           "credibility": null
         }
@@ -291,19 +296,21 @@
   ],
   "participants": [
     {
-      "name": "Andrés Magnússon",
-      "role": "fréttaritari",
-      "party": null,
-      "role_in_article": "author",
-      "attribution_type": "asserted",
-      "claim_count": 1,
+      "name": "Þorgerður Katrín Gunnarsdóttir",
+      "role": "utanríkisráðherra",
+      "party": "Viðreisn",
+      "role_in_article": "speaker",
+      "attribution_type": "quoted",
+      "claim_count": 4,
       "verdicts": {
-        "unverifiable": 1
+        "partially_supported": 3,
+        "misleading": 1
       },
-      "stance": "neutral",
-      "slug": "andres-magnusson",
-      "mention_count": 1,
-      "credibility": null
+      "stance": "pro_eu",
+      "slug": "thorgerdur-katrin-gunnarsdottir",
+      "mention_count": 33,
+      "credibility": 0.66,
+      "speech_count": 194
     },
     {
       "name": "Kristrún Frostadóttir",
@@ -318,24 +325,8 @@
       },
       "stance": "mixed",
       "slug": "kristrun-frostadottir",
-      "mention_count": 22,
+      "mention_count": 23,
       "credibility": 0.72
-    },
-    {
-      "name": "Þorgerður Katrín Gunnarsdóttir",
-      "role": "utanríkisráðherra",
-      "party": "Viðreisn",
-      "role_in_article": "speaker",
-      "attribution_type": "quoted",
-      "claim_count": 2,
-      "verdicts": {
-        "partially_supported": 2
-      },
-      "stance": "pro_eu",
-      "slug": "thorgerdur-katrin-gunnarsdottir",
-      "mention_count": 27,
-      "credibility": 0.68,
-      "speech_count": 194
     },
     {
       "name": "Guðlaugur Þór Þórðarson",

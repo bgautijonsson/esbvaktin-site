@@ -10,10 +10,10 @@
   "summary": "Greindar 12 fullyrðingar .",
   "capsule": "Þjóðaratkvæðagreiðslan 2012 um nýja stjórnarskrá fór fram og tveir þriðju þeirra sem kusu samþykktu tillögurnar — þar á meðal ákvæði um þjóðareign á auðlindum. Athyglisvert er þó að kjörsókn var aðeins tæplega helmingur þeirra sem voru á kjörskrá, sem er mun lægra en í venjulegum Alþingiskosningum, og þetta hefur verið umdeilt í umræðunni um lýðræðislegt gildi niðurstaðna. Jafnframt er þess virði að vita að lagafræðingar eru ekki sammála um hvort ESB-aðild krefjist breytinga á stjórnarskrá — sumir telja að einföld lagasetning dugi og aðrir að breyta þurfi 2. grein.",
   "verdict_counts": {
-    "supported": 6,
+    "supported": 8,
     "misleading": 1
   },
-  "claim_count": 7,
+  "claim_count": 9,
   "dominant_category": "sovereignty",
   "categories": [
     "eea_eu_law",
@@ -79,6 +79,44 @@
           "party": null,
           "stance": "neutral",
           "attribution": "mentioned",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "„Yfir 2/3 hlutar kjósenda (67%) samþykktu að þessar tillögur skyldu verða grundvöllur nýrrar stjórnarskrár Íslands.“",
+        "claim_text": "Í þjóðaratkvæðagreiðslunni 2012 um nýja stjórnarskrá samþykktu yfir 2/3 hlutar kjósenda (67%) að tillögurnar skyldu verða grundvöllur nýrrar stjórnarskrár Íslands.",
+        "category": "sovereignty",
+        "claim_type": "statistic",
+        "confidence": 0.95
+      },
+      "verdict": "supported",
+      "explanation": "<a href=\"https://statice.is/publications/news-archive/elections/referendum-20-october-2012\" title=\"Landskjörstjórn (National Electoral Commission) — Official results of the 20 October 2012 referendum\" target=\"_blank\" rel=\"noopener\">SOV-DATA-005</a> staðfestir að 66,9% kjósenda samþykktu að tillögur Stjórnlagaráðs skyldu verða grundvöllur nýrrar stjórnarskrár. Þetta samsvarar 67% á næstu heiltölu og er rétt að segja „yfir 2/3“. <a href=\"https://www.opendemocracy.net/en/can-europe-make-it/democracy-on-ice-post-mortem-of-icelandic-constitution/\" title=\"Stjórnarskrárfélagið (Constitutional Society of Iceland); Alþingi parliamentary records; Thorvaldur Gylfason, 'Democracy on Ice' (openDemocracy, 2016)\" target=\"_blank\" rel=\"noopener\">SOV-HIST-001</a> staðfestir sömu tölu.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-005",
+          "source_name": "Landskjörstjórn (National Electoral Commission) — Official results of the 20 October 2012 referendum",
+          "source_url": "https://statice.is/publications/news-archive/elections/referendum-20-october-2012"
+        },
+        {
+          "id": "SOV-HIST-001",
+          "source_name": "Stjórnarskrárfélagið (Constitutional Society of Iceland); Alþingi parliamentary records; Thorvaldur Gylfason, 'Democracy on Ice' (openDemocracy, 2016)",
+          "source_url": "https://www.opendemocracy.net/en/can-europe-make-it/democracy-on-ice-post-mortem-of-icelandic-constitution/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Kosningaaðsókn var aðeins 48,9%, sem er mun lægri en í alþingiskosningum (80–85%). Þjóðaratkvæðagreiðslan var ráðgefandi og Alþingi bar enga lagalega skyldu til að framfylgja úrslitunum.",
+      "confidence": 0.95,
+      "speakers": [
+        {
+          "name": "Stjórnarskrárfélagið",
+          "type": "institution",
+          "role": "hagsmunasamtök um stjórnarskrármál",
+          "party": null,
+          "stance": "mixed",
+          "attribution": "asserted",
           "stance_score": null,
           "credibility": null
         }
@@ -204,6 +242,44 @@
       ],
       "contradicting_evidence": [],
       "missing_context": "Auðlindaákvæðið hefur ekki verið lögfest þar sem drög stjórnarskrárinnar hafa aldrei verið samþykkt af Alþingi. Ákvæðið er umdeilt í sjávarútveginum þar sem aðilar telja það geta grafið undan núvearandi kvótakerfi.",
+      "confidence": 0.9,
+      "speakers": [
+        {
+          "name": "Stjórnarskrárfélagið",
+          "type": "institution",
+          "role": "hagsmunasamtök um stjórnarskrármál",
+          "party": null,
+          "stance": "mixed",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "„Í nýju stjórnarskránni eru ekki aðeins tryggð yfirráð þjóðarinnar yfir sameiginlegum auðlindum.“",
+        "claim_text": "Í tillögunum að nýrri stjórnarskrá voru tryggð yfirráð þjóðarinnar yfir sameiginlegum auðlindum.",
+        "category": "sovereignty",
+        "claim_type": "legal_assertion",
+        "confidence": 0.9
+      },
+      "verdict": "supported",
+      "explanation": "<a href=\"https://stjornlagarad.is/other_files/stjornlagarad/Frumvarp-enska.pdf\" title=\"Stjórnlagaráð — A Proposal for a new Constitution for the Republic of Iceland (English translation)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-017</a> staðfestir að auðlindaákvæðið í drögunum kveður á um að náttúrauðlindir utan einkaeignar séu sameiginleg og ævarði eign þjóðarinnar. <a href=\"https://www.althingi.is/lagas/nuna/2003065.html\" title=\"Althingi — Raforkulög (Electricity Act); Treaty on the Functioning of the European Union, Art. 194\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-003</a> styrkir þetta með vísun í lög um náttúruvernd og orkulög sem staðfesta þjóðareign.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-LEGAL-017",
+          "source_name": "Stjórnlagaráð — A Proposal for a new Constitution for the Republic of Iceland (English translation)",
+          "source_url": "https://stjornlagarad.is/other_files/stjornlagarad/Frumvarp-enska.pdf"
+        },
+        {
+          "id": "ENERGY-LEGAL-003",
+          "source_name": "Althingi — Raforkulög (Electricity Act); Treaty on the Functioning of the European Union, Art. 194",
+          "source_url": "https://www.althingi.is/lagas/nuna/2003065.html"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Drögin hafa ekki verið lögfest og auðlindaákvæðið er því ekki í gildi. Upprunalegi texti greinarinnar segir „í nýju stjórnarskránni“ eins og hún sé í gildi, en það er ekki rétt — drögin hafa aldrei verið samþykkt.",
       "confidence": 0.9,
       "speakers": [
         {

@@ -10,37 +10,41 @@
   "summary": "Greindar 24 fullyrðingar .",
   "capsule": "Hagvöxtur Póllands — á bilinu 3–5% árlega — og kyrrstæðni Ítalíu á síðustu tveimur áratugum eru vel skjalfestar staðreyndir sem greinin hefur rétt. Athyglisvert er að greinin tengir orkuháðan hagvöxt við ESB-löndin, en sleppir því að Ísland er þegar komið lengst allra OECD-ríkja í endurnýjanlegri raforku með nánast 100% hlutfall — sem gerir samanburð á orkukjörum Íslands og meginlands Evrópu talsvert flóknari. Þeim sem vilja kafa dýpra er ráðlegt að skoða Draghi-skýrsluna frá september 2024, sem er viðurkenndasta nýlega greining á samkeppnisfalli ESB og fjallar sérstaklega um hvernig tvö- til þrefalt hærra orkuverð í ESB borið saman við Bandaríkin er einn helsti orsakaþátturinn.",
   "verdict_counts": {
-    "unverifiable": 14,
-    "partially_supported": 2
+    "partially_supported": 8,
+    "supported": 2
   },
-  "claim_count": 16,
+  "claim_count": 10,
   "dominant_category": "trade",
   "categories": [
-    "energy",
     "other",
     "trade"
   ],
   "claims": [
     {
       "claim": {
-        "original_quote": "Í Þýskalandi hefur hins vegar mælst 2-3% hagvöxtur",
-        "claim_text": "Í Þýskalandi hefur mælst 2–3% hagvöxtur á síðustu árum.",
+        "original_quote": "Á Ítalíu hefur til að mynda enginn hagvöxtur mælst síðustu 20 árin.",
+        "claim_text": "Á Ítalíu hefur enginn hagvöxtur mælst síðustu 20 árin.",
         "category": "trade",
         "claim_type": "statistic",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Engar heimildir í staðreyndagrunni fjalla beint um hagvöxt Þýskalands. Draghi-skýrslan (<a href=\"https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en\" title=\"Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-024</a>) bendir þó til þess að ESB í heild hafi vaxið hægt — um 1% á mann hægar en Bandaríkin. Þýska hagkerfið dróst saman 2023 og stóð í stað 2024, sem bendir til þess að 2–3% hagvöxtur á «síðustu árum» sé ónákvæmt.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [
+      "verdict": "partially_supported",
+      "explanation": "Draghi-skýrslan (<a href=\"https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en\" title=\"Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-024</a>) staðfestir að hagvöxtur á mann í ESB hefur verið um 1% hægari en í Bandaríkjunum síðustu tvo áratugi. <a href=\"https://www.oecd.org/en/publications/oecd-economic-surveys-finland-2025_985d0555-en.html\" title=\"OECD Economic Surveys: Finland 2025\" target=\"_blank\" rel=\"noopener\">PREC-DATA-013</a> sýnir stöðnun í Finnlandi — öðru evrusvæðislandi — frá 2008, sem styður mynstur hægs vaxtar. Fullyrðingin um «engan» hagvöxt er þó einföldun; Ítalía hefur mælst með veikan en ekki nákvæmlega núll-vöxt á tímabilinu.",
+      "supporting_evidence": [
         {
           "id": "TRADE-DATA-024",
           "source_name": "Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)",
           "source_url": "https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en"
+        },
+        {
+          "id": "PREC-DATA-013",
+          "source_name": "OECD Economic Surveys: Finland 2025",
+          "source_url": "https://www.oecd.org/en/publications/oecd-economic-surveys-finland-2025_985d0555-en.html"
         }
       ],
-      "missing_context": "Staðreyndagrunnur inniheldur engar beinar tölur um þýskan hagvöxt. Þýskaland hefur átt í erfiðleikum undanfarin ár og 2–3% hagvöxtur á ekki við nýleg ár.",
-      "confidence": 0.4,
+      "contradicting_evidence": [],
+      "missing_context": "Staðreyndagrunnur inniheldur ekki beinar tölur um VLF-vöxt Ítalíu. Mikilvægt er hvort átt er við heildarhagvöxt eða hagvöxt á mann — Ítalía hefur mælst með nálægt núlli á mann en jákvæðan heildarvöxt sum ár.",
+      "confidence": 0.5,
       "speakers": [
         {
           "name": "Jean-Rémi Chareyre",
@@ -95,18 +99,29 @@
     },
     {
       "claim": {
-        "original_quote": "atvinnuleysi, sem mælist nú aðeins 3,1% í Póllandi",
-        "claim_text": "Atvinnuleysi í Póllandi mælist 3,1%.",
+        "original_quote": "Á fyrstu 25 árum nýrrar aldar hefur hann síðan verið að hanga í kringum 1%.",
+        "claim_text": "Á fyrstu 25 árum 21. aldar hefur hagvöxtur á mann í Evrópulöndum ESB verið um 1%.",
         "category": "trade",
         "claim_type": "statistic",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Engar heimildir í staðreyndagrunni fjalla beint um atvinnuleysi í Póllandi. <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Samfelag/Samfelag__vinnumarkadur__vinnumarkadsrannsokn__3_arstolur/VIN00901.px\" title=\"Hagstofa Íslands — Labour Force Survey; Eurostat — Unemployment statistics\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-004</a> sýnir meðalatvinnuleysi ESB-27 um 6,5% og <a href=\"https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS\" title=\"World Bank — World Development Indicators\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-011</a> nefnir Norðurlönd, en hvorugt nær til Póllands. Athygli vekur þó að Ísland sjálft — utan ESB — mælist með 3,5% meðalatvinnuleysi, sem er sambærilegt.",
-      "supporting_evidence": [],
+      "verdict": "supported",
+      "explanation": "Draghi-skýrslan (<a href=\"https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en\" title=\"Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-024</a>) staðfestir að VLF á mann í ESB jókst um 1% á ári hægar en í Bandaríkjunum undanfarna tvo áratugi. <a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG\" title=\"World Bank — World Development Indicators\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-009</a> sýnir einnig að Norðurlöndin — meðal bestu ESB-ríkja — mældu aðeins 1,4–2,0% heildar-VLF-vöxt, sem gefur til kynna enn lægri vöxt á mann. Tölurnar samrýmast fullyrðingunni.",
+      "supporting_evidence": [
+        {
+          "id": "TRADE-DATA-024",
+          "source_name": "Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)",
+          "source_url": "https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en"
+        },
+        {
+          "id": "CURRENCY-DATA-009",
+          "source_name": "World Bank — World Development Indicators",
+          "source_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Talan 3,1% er ekki staðfest úr fyrirliggjandi heimildum. Ef hún er rétt er munurinn á Íslandi (3,5%) og Póllandi (3,1%) hverfandi.",
-      "confidence": 0.3,
+      "missing_context": "Meðaltal ESB-27 felur í sér mjög mismunandi reynslu — Austur-Evrópuríki hafa vaxið hratt á meðan Suður-Evrópa stóð í stað. Draghi-skýrslan ber saman við Bandaríkin en gefur ekki nákvæma tölu fyrir ESB á mann.",
+      "confidence": 0.7,
       "speakers": [
         {
           "name": "Jean-Rémi Chareyre",
@@ -122,261 +137,24 @@
     },
     {
       "claim": {
-        "original_quote": "en 9,8% á Spáni",
-        "claim_text": "Atvinnuleysi á Spáni mælist 9,8%.",
+        "original_quote": "en á síðustu árum hefur hann verið í kringum 1-2%",
+        "claim_text": "Hagvöxtur í Bandaríkjunum á síðustu árum hefur verið í kringum 1–2%.",
         "category": "trade",
         "claim_type": "statistic",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Engar heimildir í staðreyndagrunni fjalla beint um atvinnuleysi á Spáni. <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Samfelag/Samfelag__vinnumarkadur__vinnumarkadsrannsokn__3_arstolur/VIN00901.px\" title=\"Hagstofa Íslands — Labour Force Survey; Eurostat — Unemployment statistics\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-004</a> nefnir þó að ungmennaleysi fari yfir 25% í suðurevrópskum löndum, sem gefur til kynna hátt atvinnuleysi á Spáni. Talan 9,8% gæti átt við tiltekinn mánuð — spænsk atvinnuleysistala hefur verið á bilinu 11–13% undanfarin ár.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "missing_context": "Spánn er þekkt fyrir hátt atvinnuleysi, en talan 9,8% er lægri en venjulega er tilkynnt. Samkvæmt Eurostat var atvinnuleysi á Spáni um 11% snemma árs 2026. Nákvæm tala fer eftir hvaða mánuð er vísað til.",
-      "confidence": 0.35,
-      "speakers": [
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en\" title=\"Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-024</a> (Draghi-skýrslan) bendir til þess að bandarískur hagvöxtur hafi verið hraðari en evrópskur, en gefur ekki nákvæmar tölur. Raunverulegur VLF-vöxtur Bandaríkjanna á árunum 2022–2024 var nær 2,5–2,9% — hærri en fullyrðingin gefur til kynna. Ef átt er við vöxt á mann á lengra tímabili gæti talan átt betur við.",
+      "supporting_evidence": [
         {
-          "name": "Jean-Rémi Chareyre",
-          "type": "individual",
-          "role": "blaðamaður",
-          "party": null,
-          "stance": "neutral",
-          "attribution": "asserted",
-          "stance_score": null,
-          "credibility": null
+          "id": "TRADE-DATA-024",
+          "source_name": "Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)",
+          "source_url": "https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en"
         }
-      ]
-    },
-    {
-      "claim": {
-        "original_quote": "Á tímabilinu 1945-1973 mældist meðalhagvöxtur á mann í löndum sambandsins um 4%",
-        "claim_text": "Á tímabilinu 1945–1973 mældist meðalhagvöxtur á mann í löndum ESB um 4%.",
-        "category": "trade",
-        "claim_type": "statistic",
-        "confidence": 0.9
-      },
-      "verdict": "unverifiable",
-      "explanation": "Staðreyndagrunnur inniheldur engar heimildir um hagvöxt Evrópulanda á árunum 1945–1973. <a href=\"https://cohesiondata.ec.europa.eu/countries/IE\" title=\"Eurostat; European Commission — Cohesion Policy data for Ireland\" target=\"_blank\" rel=\"noopener\">PREC-DATA-016</a> nefnir reynslu Írlands frá 1973 en nær ekki til þessa tímabils. Talan 4% er í samræmi við almenna hagfræðiþekkingu um «gullöld» evrópskrar endurreisnar.",
-      "supporting_evidence": [],
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Tímabilið 1945–1973 var endurreisnartímabil eftir stríð. Stór hluti vaxtar skýrist af Marshall-aðstoð og endurreisn innviða — ekki af ESB-samstarfi sem slíku, enda var EBE aðeins stofnað 1957.",
-      "confidence": 0.3,
-      "speakers": [
-        {
-          "name": "Jean-Rémi Chareyre",
-          "type": "individual",
-          "role": "blaðamaður",
-          "party": null,
-          "stance": "neutral",
-          "attribution": "asserted",
-          "stance_score": null,
-          "credibility": null
-        }
-      ]
-    },
-    {
-      "claim": {
-        "original_quote": "en aðeins 2-2,5% næstu 25 árin á eftir, eða fram til ársins 2000",
-        "claim_text": "Á árunum 1973–2000 mældist meðalhagvöxtur á mann í Evrópulöndum ESB aðeins 2–2,5%.",
-        "category": "trade",
-        "claim_type": "statistic",
-        "confidence": 0.9
-      },
-      "verdict": "unverifiable",
-      "explanation": "Engar beinar heimildir ná til hagvaxtar ESB-landa á tímabilinu 1973–2000. <a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG\" title=\"World Bank — World Development Indicators\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-009</a> og <a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=IS\" title=\"World Bank — GDP growth (annual %) (NY.GDP.MKTP.KD.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-014</a> fjalla einungis um tímabilið eftir 2000. Talan 2–2,5% samræmist þó almennum hagfræðiheimildum um hægari vöxt eftir olíukreppurnar.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "missing_context": "Hægari vöxtur eftir 1973 skýrist einkum af olíukreppum og alþjóðlegum þáttum — ekki af ESB-samstarfinu. Fullyrðingin nefnir ekki þessa utanaðkomandi þætti.",
-      "confidence": 0.3,
-      "speakers": [
-        {
-          "name": "Jean-Rémi Chareyre",
-          "type": "individual",
-          "role": "blaðamaður",
-          "party": null,
-          "stance": "neutral",
-          "attribution": "asserted",
-          "stance_score": null,
-          "credibility": null
-        }
-      ]
-    },
-    {
-      "claim": {
-        "original_quote": "Framleiðslan dróst fyrst saman um 5% árið 1973",
-        "claim_text": "Olíuframleiðsla í heiminum dróst saman um 5% árið 1973.",
-        "category": "energy",
-        "claim_type": "statistic",
-        "confidence": 0.9
-      },
-      "verdict": "unverifiable",
-      "explanation": "Engar heimildir í staðreyndagrunni fjalla um olíuframleiðslu eða olíukreppuna 1973. Næstu heimildir (<a href=\"https://stecf.jrc.ec.europa.eu/reports/economic\" title=\"European Commission — The EU Fishing Fleet reports (STECF Annual Economic Reports)\" target=\"_blank\" rel=\"noopener\">FISH-COMP-002</a>, <a href=\"https://www.gov.uk/government/statistics/uk-sea-fisheries-annual-statistics-report-2023\" title=\"UK Marine Management Organisation — UK Sea Fisheries Statistics 2023; UK Trade Info\" target=\"_blank\" rel=\"noopener\">FISH-COMP-005</a>) fjalla um sjávarútveg og hafa ekkert með olíu að gera. Fullyrðingin vísar til OPEC-viðskiptabannsins sem er vel þekkt sögulegt atvik.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "missing_context": "Staðreyndagrunnur inniheldur engar heimildir um olíumarkaði eða orkukreppuna 1973. Nákvæm prósentutala fer eftir hvort átt er við OPEC eða heimsframleiðslu.",
-      "confidence": 0.2,
-      "speakers": [
-        {
-          "name": "Jean-Rémi Chareyre",
-          "type": "individual",
-          "role": "blaðamaður",
-          "party": null,
-          "stance": "neutral",
-          "attribution": "asserted",
-          "stance_score": null,
-          "credibility": null
-        }
-      ]
-    },
-    {
-      "claim": {
-        "original_quote": "og síðan um 15% árið 1979",
-        "claim_text": "Olíuframleiðsla í heiminum dróst saman um 15% árið 1979.",
-        "category": "energy",
-        "claim_type": "statistic",
-        "confidence": 0.9
-      },
-      "verdict": "unverifiable",
-      "explanation": "Eins og með fyrri fullyrðingu um olíu eru engar heimildir í staðreyndagrunni um seinni olíukreppuna 1979. Olíukreppan tengdist írönsku byltingunni og er vel þekkt, en tölurnar eru ekki staðfestar af fyrirliggjandi gögnum.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "missing_context": "Engar orkusöguheimildir í grunni. Talan 15% gæti átt við framboðsskerðingu Írans en er háð mæliaðferð.",
-      "confidence": 0.2,
-      "speakers": [
-        {
-          "name": "Jean-Rémi Chareyre",
-          "type": "individual",
-          "role": "blaðamaður",
-          "party": null,
-          "stance": "neutral",
-          "attribution": "asserted",
-          "stance_score": null,
-          "credibility": null
-        }
-      ]
-    },
-    {
-      "claim": {
-        "original_quote": "á árunum 1950 til 1973 jókst olíuframleiðsla um 6-8% árlega (ritið sýnir meðalvöxt síðustu 10 ára), langt umfram fólksfjölgun sem var um 2% á ári",
-        "claim_text": "Á árunum 1950–1973 jókst olíuframleiðsla um 6–8% árlega, langt umfram fólksfjölgun sem var um 2% á ári.",
-        "category": "energy",
-        "claim_type": "statistic",
-        "confidence": 0.9
-      },
-      "verdict": "unverifiable",
-      "explanation": "Staðreyndagrunnur hefur engar heimildir um sögu olíuframleiðslu 1950–1973 né um heimsfólksfjölgun á þessu tímabili. Tölurnar eru í stórum dráttum í samræmi við almennar hagsögulegar heimildir en engin gögn eru til staðar til staðfestingar.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "missing_context": "Tengsl fullyrðingarinnar við ESB-umræðuna eru óbein — höfundur notar olíusöguna til að útskýra breytingar í hagvexti iðnríkja. Heimsfólksfjölgun var á bilinu 1,8–2,1% á ári á þessu tímabili samkvæmt almennri þekkingu.",
-      "confidence": 0.25,
-      "speakers": [
-        {
-          "name": "Jean-Rémi Chareyre",
-          "type": "individual",
-          "role": "blaðamaður",
-          "party": null,
-          "stance": "neutral",
-          "attribution": "asserted",
-          "stance_score": null,
-          "credibility": null
-        }
-      ]
-    },
-    {
-      "claim": {
-        "original_quote": "Síðan 2013 hefur fjárfesting í olíuleit dregist saman og nýir olíufundir verða sífellt rýrari.",
-        "claim_text": "Síðan 2013 hefur fjárfesting í olíuleit dregist saman og nýir olíufundir verða sífellt rýrari.",
-        "category": "energy",
-        "claim_type": "statistic",
-        "confidence": 0.9
-      },
-      "verdict": "unverifiable",
-      "explanation": "Engar heimildir í staðreyndagrunni fjalla um fjárfestingu í olíuleit eða nýja olíufundi á heimsvísu. Næstu heimildir varða erlenda fjárfestingu á Íslandi (<a href=\"https://data.worldbank.org/indicator/BX.KLT.DINV.CD.WD?locations=IS\" title=\"World Bank — Foreign direct investment, net inflows (BOP, current US$)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-019</a>, <a href=\"https://data.worldbank.org/indicator/BX.KLT.DINV.CD.WD\" title=\"World Bank — World Development Indicators\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-010</a>) sem er ótengt efni.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "missing_context": "Fjárfesting í olíuleit dróst saman eftir olíuverðshrun 2014–2015 en tók við sér á ný eftir 2021. Fullyrðingin er hluti af víðtækari greiningu höfundar á hnignun olíutímabils.",
-      "confidence": 0.2,
-      "speakers": [
-        {
-          "name": "Jean-Rémi Chareyre",
-          "type": "individual",
-          "role": "blaðamaður",
-          "party": null,
-          "stance": "neutral",
-          "attribution": "asserted",
-          "stance_score": null,
-          "credibility": null
-        }
-      ]
-    },
-    {
-      "claim": {
-        "original_quote": "fer að hnigna aftur hægt og rólega eftir 2008 og kemst sjaldan yfir 1% eftir það, sem rétt dugar til að halda í við fólksfjölgun",
-        "claim_text": "Olíuframleiðsluvöxtur í heiminum kemst sjaldan yfir 1% eftir 2008, sem rétt dugar til að halda í við fólksfjölgun.",
-        "category": "energy",
-        "claim_type": "statistic",
-        "confidence": 0.9
-      },
-      "verdict": "unverifiable",
-      "explanation": "Engar heimildir í staðreyndagrunni fjalla um þróun heimsframleiðslu olíu eftir 2008 né um fólksfjölgun í þessu samhengi. Fullyrðingin er utan gildissviðs tiltækra heimilda.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "missing_context": "Bandarísk leirsteinsbyltingin (shall revolution) jók olíuframleiðslu verulega eftir 2010, sem flækir myndina. Heimsfólksfjölgun hefur hægt á sér og er nú um 0,9% á ári.",
-      "confidence": 0.25,
-      "speakers": [
-        {
-          "name": "Jean-Rémi Chareyre",
-          "type": "individual",
-          "role": "blaðamaður",
-          "party": null,
-          "stance": "neutral",
-          "attribution": "asserted",
-          "stance_score": null,
-          "credibility": null
-        }
-      ]
-    },
-    {
-      "claim": {
-        "original_quote": "Á árunum eftir síðari heimsstyrjöld mældist hagvöxtur í Bandaríkjunum 4-5%",
-        "claim_text": "Hagvöxtur í Bandaríkjunum eftir síðari heimsstyrjöld mældist 4–5% á ári.",
-        "category": "trade",
-        "claim_type": "statistic",
-        "confidence": 0.9
-      },
-      "verdict": "unverifiable",
-      "explanation": "Engar beinar heimildir í staðreyndagrunni fjalla um hagvöxt Bandaríkjanna eftir síðari heimsstyrjöld. <a href=\"https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en\" title=\"Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-024</a> nefnir samkeppnishankar ESB og Bandaríkjanna á nýlegum áratugum en nær ekki aftur til stríðslokanna. Talan 4–5% er möguleg en gæti verið nokkuð há sem meðaltal alls tímabilsins.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "missing_context": "Raunhagvöxtur Bandaríkjanna 1948–1973 var um 3,5–4% að meðaltali samkvæmt hagsöguheimildum. Talan 4–5% á betur við fyrstu árin eftir stríðslok.",
-      "confidence": 0.25,
-      "speakers": [
-        {
-          "name": "Jean-Rémi Chareyre",
-          "type": "individual",
-          "role": "blaðamaður",
-          "party": null,
-          "stance": "neutral",
-          "attribution": "asserted",
-          "stance_score": null,
-          "credibility": null
-        }
-      ]
-    },
-    {
-      "claim": {
-        "original_quote": "Á sama tíma hafa skuldir ríkisins náð sögulegu hámarki.",
-        "claim_text": "Skuldir ríkisins í Bandaríkjunum hafa náð sögulegu hámarki.",
-        "category": "other",
-        "claim_type": "statistic",
-        "confidence": 0.9
-      },
-      "verdict": "unverifiable",
-      "explanation": "Engar heimildir í staðreyndagrunni fjalla um ríkisskuldir Bandaríkjanna. <a href=\"https://www.government.is/topics/economic-affairs-and-public-finances/\" title=\"Fjármála- og efnahagsráðuneytið — Ríkisfjármál; Moody's, S&P, Fitch sovereign ratings for Iceland\" target=\"_blank\" rel=\"noopener\">SOV-DATA-013</a> fjallar um skuldir Íslands en nær ekki til bandarískra skulda. Fullyrðingin er í samræmi við almennar staðreyndir — opinberar skuldir Bandaríkjanna fóru yfir 120% af VLF.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "missing_context": "Fullyrðingin er rétt í dollurum talið en sem hlutfall af VLF voru skuldir Bandaríkjanna hærra á stríðsárunum (1945–1946). Hvort um «sögulegt hámark» er að ræða veltur á mæliaðferð.",
-      "confidence": 0.3,
+      "missing_context": "Bandaríkjanna var umtalsvert meiri en 1–2% á nýlegum árum. Fullyrðingin á betur við áratuginn 2000–2010 þegar meðalvöxtur var nær 2%. Tímabilið sem vísað er til skiptir miklu máli.",
+      "confidence": 0.45,
       "speakers": [
         {
           "name": "Jean-Rémi Chareyre",
@@ -441,18 +219,112 @@
     },
     {
       "claim": {
-        "original_quote": "eftir að olíuvinnsla Bandaríkjanna fór að hnigna og olíuríkjum í Miðausturlöndum tókst að semja sín á milli um að hemja eigin framleiðslu til að halda uppi hærra olíuverði",
-        "claim_text": "Olíuvinnsla Bandaríkjanna fór að hnigna fyrir 1973 og olíuríki Miðausturlanda sömdu sín á milli um að hemja framleiðslu til að halda uppi hærra olíuverði.",
-        "category": "energy",
+        "original_quote": "Í nýlegu minnisblaði fjármálaráðherra segir: «Af hagtölum að dæma virðist [sem] drifkraftar tímabundins hagvaxtar [séu] í rénun og við blasir hagkerfi sem hefur lítið sem ekkert vaxið, leiðrétt fyrir fólksfjölgun, í hartnær áratug»",
+        "claim_text": "Samkvæmt minnisblaði fjármálaráðherra hefur hagkerfið lítið sem ekkert vaxið, leiðrétt fyrir fólksfjölgun, í hartnær áratug.",
+        "category": "trade",
+        "claim_type": "statistic",
+        "confidence": 0.9
+      },
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=IS\" title=\"World Bank — GDP growth (annual %) (NY.GDP.MKTP.KD.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-014</a> sýnir sterkan heildarvöxt 2021–2023 (meðaltal 6,4%) en einnig COVID-samdrátt (−6,6% 2020). <a href=\"https://www.oecd.org/en/data/dashboards/oecd-dashboard-of-productivity-indicators.html\" title=\"OECD — Compendium of Productivity Indicators 2025; Eurostat — Labour productivity per hour worked\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-011</a> staðfestir lága framleiðni á vinnustund. Ef fólksfjölgun (um 15% á áratug) er dregin frá heildarvaxtartölum verður vöxtur á mann töluvert lægri, sem styður grunnrök fullyrðingarinnar.",
+      "supporting_evidence": [
+        {
+          "id": "CURRENCY-DATA-014",
+          "source_name": "World Bank — GDP growth (annual %) (NY.GDP.MKTP.KD.ZG)",
+          "source_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=IS"
+        },
+        {
+          "id": "LABOUR-DATA-011",
+          "source_name": "OECD — Compendium of Productivity Indicators 2025; Eurostat — Labour productivity per hour worked",
+          "source_url": "https://www.oecd.org/en/data/dashboards/oecd-dashboard-of-productivity-indicators.html"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "CURRENCY-DATA-009",
+          "source_name": "World Bank — World Development Indicators",
+          "source_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG"
+        }
+      ],
+      "missing_context": "Minnisblaðið sjálft er ekki í staðreyndagrunni — fullyrðingin er tilvitnun sem ekki er hægt að sannreyna beint. Sum einstök ár (2021–2023) sýna sterkan raunvöxt sem flækir mynd «hartnær áratugs» stöðnunar.",
+      "confidence": 0.55,
+      "speakers": [
+        {
+          "name": "Fjármálaráðherra",
+          "type": "institution",
+          "role": "fjármálaráðherra",
+          "party": null,
+          "stance": "neutral",
+          "attribution": "quoted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "atvinnuleysi er að aukast, þrátt fyrir loforð núverandi ríkisstjórnar um að \"ræsa vélarnar\"",
+        "claim_text": "Atvinnuleysi á Íslandi er að aukast þrátt fyrir loforð ríkisstjórnarinnar um að ræsa hagkerfið.",
+        "category": "other",
+        "claim_type": "statistic",
+        "confidence": 0.9
+      },
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://px.hagstofa.is/pxen/pxweb/en/Samfelag/Samfelag__vinnumarkadur__vinnumarkadsrannsokn__3_arstolur/VIN00901.px\" title=\"Hagstofa Íslands — Labour Force Survey; Eurostat — Unemployment statistics\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-004</a> staðfestir lágt atvinnuleysi á Íslandi (meðaltal 3,5% 2015–2025) og <a href=\"https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS\" title=\"World Bank — World Development Indicators\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-011</a> sýnir 3,9% meðaltal. Heimildir sýna ekki nýlega hækkun en benda til þess að atvinnuleysi sé enn lágt í alþjóðlegum samanburði. Merki um aukningu gætu verið rétt á nýjustu gögnum.",
+      "supporting_evidence": [
+        {
+          "id": "LABOUR-DATA-004",
+          "source_name": "Hagstofa Íslands — Labour Force Survey; Eurostat — Unemployment statistics",
+          "source_url": "https://px.hagstofa.is/pxen/pxweb/en/Samfelag/Samfelag__vinnumarkadur__vinnumarkadsrannsokn__3_arstolur/VIN00901.px"
+        },
+        {
+          "id": "CURRENCY-DATA-011",
+          "source_name": "World Bank — World Development Indicators",
+          "source_url": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Heimildir sýna meðaltöl en ekki nýjustu mánuðartölur. Pólitíska matið um loforð ríkisstjórnarinnar fellur utan gildissviðs staðreyndagrunns. Atvinnuleysi getur hækkað úr mjög lágu gildi og verið enn lágt í alþjóðlegum samanburði.",
+      "confidence": 0.45,
+      "speakers": [
+        {
+          "name": "Ríkisstjórn Íslands",
+          "type": "institution",
+          "role": "ríkisstjórn",
+          "party": null,
+          "stance": "neutral",
+          "attribution": "paraphrased",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "hnignandi hagvöxtur einskorðast ekki við Vestur-Evrópu. Hann er líka vel sýnilegur í öðrum iðnríkjum svo sem Bandaríkjunum og Japan.",
+        "claim_text": "Hnignandi hagvöxtur einskorðast ekki við Vestur-Evrópu — hann er jafnframt vel sýnilegur í Bandaríkjunum og Japan.",
+        "category": "trade",
         "claim_type": "comparison",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Engar heimildir í staðreyndagrunni fjalla um sögu olíuvinnslu Bandaríkjanna eða stofnun OPEC. Fullyrðingin er í samræmi við almenna hagfræðiþekkingu — bandarísk olíuframleiðsla náði hámarki 1970 og OPEC beitti viðskiptavopninu 1973 — en gögn til staðfestingar skortir.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "missing_context": "Engar orkusöguheimildir í grunni. Fullyrðingin er hluti af bakgrunnssögu sem tengist ekki beint ESB-aðildarumræðunni.",
-      "confidence": 0.2,
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en\" title=\"Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-024</a> (Draghi-skýrslan) staðfestir samkeppnishankar ESB gagnvart Bandaríkjunum en bendir raunar til þess að bandaríkjahagvöxtur hafi verið hraðari en evrópskur. Meginpunkturinn — að hægari vöxtur sé alþjóðlegt fyrirbæri miðað við eftirstríðsárin — er í stórum dráttum réttur, en Bandaríkin hafa staðið ESB framar síðustu áratugi.",
+      "supporting_evidence": [
+        {
+          "id": "TRADE-DATA-024",
+          "source_name": "Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)",
+          "source_url": "https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "TRADE-DATA-024",
+          "source_name": "Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)",
+          "source_url": "https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en"
+        }
+      ],
+      "missing_context": "Draghi-skýrslan sýnir einmitt muninn á Bandaríkjunum og ESB. Fullyrðingin er rétt sem langtímaþróun (samanborið við 1945–1973) en Bandaríkin hafa vaxið hraðar en ESB, sem flækir jafngildisjöfnuðinn.",
+      "confidence": 0.5,
       "speakers": [
         {
           "name": "Jean-Rémi Chareyre",
@@ -468,18 +340,34 @@
     },
     {
       "claim": {
-        "original_quote": "hagvöxtur virðist hafa byrjað að hægja á sér á svipuðum tíma í öllum helstu löndum ESB á fyrri hluta áttunda áratugarins",
-        "claim_text": "Hagvöxtur fór að hægja á sér á svipuðum tíma í öllum helstu löndum ESB á fyrri hluta áttunda áratugarins.",
+        "original_quote": "Ef ESB-samstarfið sem slíkt væri orsök efnahagslegrar stöðnunar mætti búast við svipaðri \"stöðnun\" í öllum aðildarríkjum sambandsins, sem er ekki raunin.",
+        "claim_text": "Efnahagsleg stöðnun hefur verið mjög misjöfn í mismunandi löndum ESB, sem bendir gegn þeirri kenningu að ESB-samstarfið sem slíkt sé orsök hennar.",
         "category": "trade",
-        "claim_type": "comparison",
+        "claim_type": "opinion",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Staðreyndagrunnur inniheldur engar beinar heimildir um hagvöxt ESB-landa á áttunda áratugnum. <a href=\"https://www.oecd.org/en/publications/oecd-economic-surveys-finland-2025_985d0555-en.html\" title=\"OECD Economic Surveys: Finland 2025\" target=\"_blank\" rel=\"noopener\">PREC-DATA-013</a> nefnir Finnland frá 1995 og <a href=\"https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en\" title=\"Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-024</a> fjallar um nýlegan samanburð. Fullyrðingin er í samræmi við almenna hagfræðiþekkingu — olíukreppan 1973 olli almennum samdrætti.",
-      "supporting_evidence": [],
+      "verdict": "supported",
+      "explanation": "Heimildir staðfesta mikinn mun á hagþróun ESB-ríkja. <a href=\"https://cohesiondata.ec.europa.eu/countries/IE\" title=\"Eurostat; European Commission — Cohesion Policy data for Ireland\" target=\"_blank\" rel=\"noopener\">PREC-DATA-016</a> sýnir öran vöxt Írlands innan ESB á meðan <a href=\"https://www.oecd.org/en/publications/oecd-economic-surveys-finland-2025_985d0555-en.html\" title=\"OECD Economic Surveys: Finland 2025\" target=\"_blank\" rel=\"noopener\">PREC-DATA-013</a> lýsir stöðnun Finnlands eftir 2008. <a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG\" title=\"World Bank — World Development Indicators\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-009</a> sýnir mismunandi vaxtarmynstur Norðurlandanna. Rökin eru gild — ef ESB væri eina skýringin á stöðnun ætti hún að birtast jafnt í öllum aðildarríkjum.",
+      "supporting_evidence": [
+        {
+          "id": "PREC-DATA-016",
+          "source_name": "Eurostat; European Commission — Cohesion Policy data for Ireland",
+          "source_url": "https://cohesiondata.ec.europa.eu/countries/IE"
+        },
+        {
+          "id": "PREC-DATA-013",
+          "source_name": "OECD Economic Surveys: Finland 2025",
+          "source_url": "https://www.oecd.org/en/publications/oecd-economic-surveys-finland-2025_985d0555-en.html"
+        },
+        {
+          "id": "CURRENCY-DATA-009",
+          "source_name": "World Bank — World Development Indicators",
+          "source_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Samdrátturinn var alþjóðlegur og tengdist olíukreppum, ekki ESB-samstarfinu. Greinin sjálf nefnir þetta í síðari fullyrðingum.",
-      "confidence": 0.3,
+      "missing_context": "Þótt röksemdafærslan sé gild er hún ekki sönnun. Sameiginleg stefna (t.d. evran) gæti haft mismunandi áhrif á mismunandi hagkerfi — sem einmitt gæti verið hluti vandans.",
+      "confidence": 0.75,
       "speakers": [
         {
           "name": "Jean-Rémi Chareyre",
@@ -492,6 +380,28 @@
           "credibility": null
         }
       ]
+    },
+    {
+      "claim": {
+        "original_quote": "Engin afgerandi stefnubreyting varð á áttunda áratugnum sem getur útskýrt skyndilega hnignun hagvaxtarins.",
+        "claim_text": "Engin afgerandi stefnubreyting varð í ESB á áttunda áratugnum sem getur útskýrt skyndilega hnignun hagvaxtarins.",
+        "category": "other",
+        "claim_type": "opinion",
+        "confidence": 0.9
+      },
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en\" title=\"Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-024</a> og <a href=\"https://cohesiondata.ec.europa.eu/countries/IE\" title=\"Eurostat; European Commission — Cohesion Policy data for Ireland\" target=\"_blank\" rel=\"noopener\">PREC-DATA-016</a> benda til þess að hagvaxtarhnignun í Evrópu hafi verið knúin áfram af utanaðkomandi þáttum (olíukreppum) frekar en innri ESB-stefnubreytingum. Röksemdafærslan hefur vit — engin ein ESB-stefnubreyting skýrir skyndilega hnignun. Hins vegar er myndin flóknari en fullyrðingin gefur til kynna.",
+      "supporting_evidence": [
+        {
+          "id": "TRADE-DATA-024",
+          "source_name": "Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)",
+          "source_url": "https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Stækkun EBE 1973 (Bretland, Írland, Danmörk) og upphaf evrópska myntsamstarfsins (EMS) 1979 voru umtalsverðar stefnubreytingar — þó ekki endilega orsakir stöðnunar. Fullyrðingin einfaldar sögu ESB-samstarfsins.",
+      "confidence": 0.55,
+      "speakers": []
     }
   ],
   "participants": [
@@ -501,15 +411,42 @@
       "party": null,
       "role_in_article": "author",
       "attribution_type": "asserted",
-      "claim_count": 16,
+      "claim_count": 7,
       "verdicts": {
-        "unverifiable": 14,
-        "partially_supported": 2
+        "partially_supported": 5,
+        "supported": 2
       },
       "stance": "neutral",
       "slug": "jean-remi-chareyre",
       "mention_count": 1,
       "credibility": 0.64
+    },
+    {
+      "name": "Fjármálaráðherra",
+      "role": "fjármálaráðherra",
+      "party": null,
+      "role_in_article": "speaker",
+      "attribution_type": "quoted",
+      "claim_count": 1,
+      "verdicts": {
+        "partially_supported": 1
+      },
+      "stance": "neutral",
+      "slug": "fjarmalaradherra",
+      "mention_count": 1,
+      "credibility": 0.5
+    },
+    {
+      "name": "Ríkisstjórn Íslands",
+      "role": "ríkisstjórn",
+      "party": null,
+      "role_in_article": "speaker",
+      "attribution_type": "paraphrased",
+      "claim_count": 1,
+      "verdicts": {
+        "partially_supported": 1
+      },
+      "stance": "neutral"
     }
   ]
 }

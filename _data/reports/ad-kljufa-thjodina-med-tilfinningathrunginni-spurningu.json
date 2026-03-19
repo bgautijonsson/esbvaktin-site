@@ -10,14 +10,15 @@
   "summary": "Greindar 14 fullyrðingar .",
   "capsule": "Staðfest er að þrír stjórnarflokkar náðu samstöðu um að bera ESB-málið undir þjóðina og að Kristrún Frostadóttir lagði áherslu á þörfina fyrir víðtæka samstöðu áður en í viðræður yrði farið. Athyglisvert samhengi sem er vert að kanna nánar: verðbólga á Íslandi hefur að meðaltali verið um 5,5% árlega síðustu tvo áratugi á móti um 2,1% á evrusvæðinu, og vextir Seðlabankans hafa staðið mun hærra en hjá Seðlabanka Evrópu — þetta er eitt af lykilrökum bæði meðmælenda og andstæðinga evruupptöku sem er vert að kynna sér.",
   "verdict_counts": {
-    "supported": 6,
+    "supported": 8,
     "misleading": 1,
     "partially_supported": 1
   },
-  "claim_count": 8,
+  "claim_count": 10,
   "dominant_category": "party_positions",
   "categories": [
     "currency",
+    "housing",
     "party_positions",
     "precedents"
   ],
@@ -298,6 +299,39 @@
     },
     {
       "claim": {
+        "original_quote": "búið að leggja fram húsnæðispakka",
+        "claim_text": "Ríkisstjórnin hefur lagt fram húsnæðispakka.",
+        "category": "housing",
+        "claim_type": "legal_assertion",
+        "confidence": 0.85
+      },
+      "verdict": "supported",
+      "explanation": "<a href=\"https://px.hagstofa.is/pxis/pxweb/is/Samfelag/Samfelag__husnaedi/\" title=\"Hagstofa Íslands — Housing Statistics; Seðlabanki Íslands — Financial Stability Report 2025\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-008</a> vísar beint til „húsnæðispakkans“ frá ríkisstjórninni árið 2026, sem miðar að þeim að auka framboð. Þetta staðfestir að pakki hefur verið lagður fram.",
+      "supporting_evidence": [
+        {
+          "id": "HOUS-DATA-008",
+          "source_name": "Hagstofa Íslands — Housing Statistics; Seðlabanki Íslands — Financial Stability Report 2025",
+          "source_url": "https://px.hagstofa.is/pxis/pxweb/is/Samfelag/Samfelag__husnaedi/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Samkvæmt <a href=\"https://px.hagstofa.is/pxis/pxweb/is/Samfelag/Samfelag__husnaedi/\" title=\"Hagstofa Íslands — Housing Statistics; Seðlabanki Íslands — Financial Stability Report 2025\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-008</a> eru byggingðarvöndkvæði á Íslandi djúpstæð — lítill byggingargeiri, hátt efniskostnaður og stutt byggingartímabil. <a href=\"https://hms.is/frettir/manadarskyrsla-hagdeildar-hms-fyrir-juli-2023\" title=\"HMS — Húsnæðis- og mannvirkjastofnun; Hagstofa Íslands — Building permits and completions\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-002</a> áætlar að uppsafnaður skortur í höfuðborgarsvæðinu sé 4.000–6.000 íbuðir. Húsnæðispakkinn er aðgerð en árangurinn er óviss.",
+      "confidence": 0.85,
+      "speakers": [
+        {
+          "name": "Kristrún Frostadóttir",
+          "type": "individual",
+          "role": "forsætisráðherra",
+          "party": "Samfylkingin",
+          "stance": "pro_eu",
+          "attribution": "quoted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
         "original_quote": "„Pað var líka tilfinningarríkt mál að ganga í NATO. Vá, hvað það var tilfinningarríkt mál í áratuði.“",
         "claim_text": "NATO-aðild var tilfinningarríkt mál í áratuði á Íslandi.",
         "category": "precedents",
@@ -339,6 +373,49 @@
           "party": null,
           "stance": "neutral",
           "attribution": "mentioned",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "„Og það var líka tilfinningarríkt mál fyrir fólk að ganga í EES.“",
+        "claim_text": "EES-aðildin var einnig tilfinningarríkt mál á Íslandi.",
+        "category": "precedents",
+        "claim_type": "comparison",
+        "confidence": 0.6
+      },
+      "verdict": "supported",
+      "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application for membership of the European Union, SEC(2010) 153\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-020</a> staðfestir að EES-aðildin var umdeild á Íslandi og að pólitískt viðkvæm mál — einkum sjávarútvegur, landbúnaður og gjaldeyrisstefna — féllu utan samningsins. <a href=\"https://fel.hi.is/is/rannsoknir-spurningalistakannanir/simakannanir\" title=\"Félagsvísindastofnun — Methodology notes on EU polling; comparison of Gallup, MMR, and Maskína polls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-010</a> bendir á orðalag skoðanakannana um Evrópusambandsaðild sem vitnisburð um viðvarandi tilfinningu í kringum Evrópusamstarf. Jafnvel nú, meira en 30 árum síðar, enduróma tilfinningaleg rök í umræðunni um ESB-aðild — sama grundvallarandstæðan milli fullveldis og alþjóðasamstarfs. Heimildir um sögu flokkastefnu (POL-DATA-006) sýna að Sjálfstæðisflokkurinn studdi EES sem valkost við ESB-aðild á 10. áratugnum, sem undirstrikar pólitískan hita málsins.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-020",
+          "source_name": "European Commission — Opinion on Iceland's application for membership of the European Union, SEC(2010) 153",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "POL-DATA-006",
+          "source_name": "Sjálfstæðisflokkur — Party congresses and manifestos 1991–2025; Morgunblaðið archives",
+          "source_url": null
+        },
+        {
+          "id": "POLL-DATA-010",
+          "source_name": "Félagsvísindastofnun — Methodology notes on EU polling; comparison of Gallup, MMR, and Maskína polls",
+          "source_url": "https://fel.hi.is/is/rannsoknir-spurningalistakannanir/simakannanir"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Heimildir lýsa pólitískri sögu EES-aðildarinnar en fjalla ekki beint um tilfinningalegt andrúmsloft á sínum tíma (t.d. mótmæli, umræður í fjölmiðlum). Til þess að meta «tilfinningaríkt» nákvæmlega þyrfti samtímafréttir frá 1992–1994.",
+      "confidence": 0.6,
+      "speakers": [
+        {
+          "name": "Kristrún Frostadóttir",
+          "type": "individual",
+          "role": "forsætisráðherra",
+          "party": "Samfylkingin",
+          "stance": "pro_eu",
+          "attribution": "quoted",
           "stance_score": null,
           "credibility": null
         }
@@ -420,14 +497,14 @@
       "party": "Samfylkingin",
       "role_in_article": "speaker",
       "attribution_type": "quoted",
-      "claim_count": 5,
+      "claim_count": 7,
       "verdicts": {
-        "supported": 4,
+        "supported": 6,
         "misleading": 1
       },
       "stance": "pro_eu",
       "slug": "kristrun-frostadottir",
-      "mention_count": 22,
+      "mention_count": 23,
       "credibility": 0.72
     },
     {

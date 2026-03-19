@@ -10,14 +10,15 @@
   "summary": "Greindar 14 fullyrðingar. Niðurstöður: 9 stutt að hluta, 5 stutt af heimildum. Sjónarhorn: hallar á ESB-neikvæða hlið. Heildstæðni: 42%.",
   "capsule": "Þjóðaratkvæðagreiðslan 29. ágúst 2026 mun íslenska þjóðin spyrja hvort halda skuli áfram aðildarviðræðum — og greinin lýsir rétt því að jákvæð niðurstaða leiði til formlegra viðræðna um innleiðingu reglna ESB. Athyglisvert er þó að aðlögunartímabil — sem geta verið þrjú til tólf ár — hafa í eldri aðildarviðræðum gefið löndum verulegt svigrúm til innleiðingartímans, þannig að skrefið frá viðræðum til fullrar gildistöku er lengra en oft er gefið í skyn. Þetta samhengi kemur ítarlega fram í gögnum Evrópusambandsins um fyrri aðildarferlana.",
   "verdict_counts": {
-    "supported": 4,
-    "partially_supported": 6
+    "supported": 6,
+    "partially_supported": 8
   },
-  "claim_count": 10,
+  "claim_count": 14,
   "dominant_category": "eea_eu_law",
   "categories": [
     "eea_eu_law",
     "other",
+    "party_positions",
     "sovereignty"
   ],
   "claims": [
@@ -97,6 +98,55 @@
           "party": null,
           "stance": "neutral",
           "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "Lesi maður tillögu Þorgerðar til þingsályktunar stendur þar skýrt hver næstu skref eftir þjóðaratkvæðagreiðslu verða.",
+        "claim_text": "Tillaga Þorgerðar Katrínar til þingsályktunar kveður skýrt á um næstu skref eftir þjóðaratkvæðagreiðslu.",
+        "category": "eea_eu_law",
+        "claim_type": "legal_assertion",
+        "confidence": 0.9
+      },
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir að þingsályktunartillagan kveður á um þjóðaratkvæðagreiðslu 29. ágúst 2026 og spurninguna um framhald aðildarviðræðna. Þorgerður Katrín lýsti næstu skrefum ef þjóðin samþykkir: viðræður gætu hafist «um áramótin». <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> sýnir þó að andstöðuflokkar gagnrýndu tillöguna einmitt fyrir skort á nánari útlistun samningsmarkmiða — Guðrún Hafsteinsdóttir (<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T175023.html\" title=\"Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-003</a>) sagði «algjört lágmark» að upplýsa þjóðina um markmið áður en umboð er veitt. Tillagan kveður á um atkvæðagreiðslu og tímalínu en er ekki ítarleg um samningsmarkmið eða aðra málaflokka.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        },
+        {
+          "id": "SOV-PARL-004",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir (flutningsræða, 154. löggjafarþing); Logi Einarsson (flutningsræða, 153. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/154/rad20230919T175556.html"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "SOV-PARL-003",
+          "source_name": "Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T175023.html"
+        },
+        {
+          "id": "SOV-PARL-005",
+          "source_name": "Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)",
+          "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
+        }
+      ],
+      "missing_context": "Orðið «skýrt» í fullyrðingunni er umdeilanlegt — tillagan kveður á um dagsetningu og spurningarorðalag en andstöðuflokkar hafa einmitt gagnrýnt skort á skýrleika um efnisleg samningsmarkmið. Þjóðaratkvæðagreiðslan er ráðgefandi samkvæmt stjórnarskrá og ekki lagalega bindandi.",
+      "confidence": 0.6,
+      "speakers": [
+        {
+          "name": "Þorgerður Katrín",
+          "type": "individual",
+          "role": "þingmaður",
+          "party": null,
+          "stance": "pro_eu",
+          "attribution": "paraphrased",
           "stance_score": null,
           "credibility": null
         }
@@ -259,6 +309,44 @@
     },
     {
       "claim": {
+        "original_quote": "Verði niðurstaða þjóðaratkvæðagreiðslunnar sú að aðildarviðræðum verði haldið áfram tekur við tímabil innleiðingar á reglugerð Evrópusambandsins. Íslensk lög verða samræmd lögum Evrópusambandsins.",
+        "claim_text": "Verði niðurstaða þjóðaratkvæðagreiðslunnar jákvæð tekur við tímabil innleiðingar á regluverki ESB þar sem íslensk lög verða samræmd lögum ESB.",
+        "category": "sovereignty",
+        "claim_type": "legal_assertion",
+        "confidence": 0.9
+      },
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> staðfesta að aðildarviðræður snúist um upptöku og innleiðingu á regluverki ESB. Fullyrðingin segir þó að þetta «tímabil innleiðingar» hefjist beint eftir jákvæða niðurstöðu þjóðaratkvæðagreiðslunnar, sem er ónákvæmt — þjóðaratkvæðagreiðslan snýst um hvort hefja eigi aðildarviðræður, ekki um aðild sjálfa. Innleiðing á regluverki hefst ekki fyrr en aðildarsamningur hefur verið gerður og fullgiltur, sem getur tekið mörg ár. <a href=\"https://researchbriefings.files.parliament.uk/documents/CBP-9096/CBP-9096.pdf\" title=\"UK Parliament, House of Commons Library\" target=\"_blank\" rel=\"noopener\">PREC-DATA-003</a> sýnir að ferlið frá atkvæðagreiðslu til innleiðingar getur verið langt og flókið.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-017",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards joining' factsheet",
+          "source_url": "https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf"
+        },
+        {
+          "id": "EEA-LEGAL-021",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Fullyrðingin ruglar saman tveimur skrefum: jákvæð niðurstaða þjóðaratkvæðagreiðslunnar 29. ágúst 2026 heimilar aðildarviðræður, en innleiðing á regluverki ESB hefst ekki fyrr en eftir undirritun og fullgildingu aðildarsamnings — ferli sem tekur að jafnaði 5–10 ár. Aðlögunartímabil geta einnig lengt þetta enn frekar.",
+      "confidence": 0.65,
+      "speakers": [
+        {
+          "name": "Hjörvar Sigurðsson",
+          "type": "individual",
+          "role": "tölvunarfræðingur",
+          "party": null,
+          "stance": "neutral",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
         "original_quote": "Íslenskar stofnanir verða aðlagaðar að stofnunum Evrópusambandsins. Þetta liggur fyrir í opinberum gögnum, bæði ríkisstjórnarinnar sem og Evrópusambandsins.",
         "claim_text": "Verði niðurstaða þjóðaratkvæðagreiðslunnar jákvæð verða íslenskar stofnanir aðlagaðar að stofnunum ESB.",
         "category": "sovereignty",
@@ -290,6 +378,59 @@
           "party": null,
           "stance": "neutral",
           "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "Ítrekað er talað um að okkur standi til boða að sækja samning. Að kíkja í pakkann. Að þetta snúist bara um að skoða. Engin skuldbinding. Engar aðgerðir.",
+        "claim_text": "Talsmenn ESB-aðildar, fulltrúar ríkisstjórnarinnar og orðalag þjóðaratkvæðagreiðslunnar sjálfrar hafa lýst þjóðaratkvæðagreiðsluna sem tækifæri til að \"kíkja í pakkann\" og \"sækja samning\" án skuldbindingar.",
+        "category": "party_positions",
+        "claim_type": "opinion",
+        "confidence": 0.9
+      },
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir að utanríkisráðherra Þorgerður Katrín Gunnarsdóttir lýsti þjóðaratkvæðagreiðslunni sem tækifæri til samningaviðræðna og hét því að \"aldrei skrifa undir samning sem tryggir ekki okkar markmið og okkar yfirráð\" — sem endurspeglar hugmyndina um að \"sækja samning\" án skuldbindingar. <a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> sýnir að forsætisráðherra sagðist \"ekki reiðubúin að ganga í ESB á hvaða skilmálum sem er.\" <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T175023.html\" title=\"Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-003</a> sýnir að andstæðingar gagnrýndu einmitt þessa nálgun — Guðrún Hafsteinsdóttir benti á að ríkisstjórnin biðji um umboð til \"vegferðar\" án þess að hafa upplýst þjóðina um samningamarkmið. Nýjar heimildir styrkja: <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> sýna að ESB-regluverkið er í raun ekki samningsatriði — aðeins tímasetning innleiðingar, sem dregur í efa \"kíkja í pakkann\"-orðræðuna.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        },
+        {
+          "id": "PARTY-DATA-016",
+          "source_name": "Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16",
+          "source_url": "https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/"
+        },
+        {
+          "id": "SOV-PARL-003",
+          "source_name": "Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T175023.html"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "<a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> sýna að aðildarviðræður snúast um tímasetningu innleiðingar, ekki breytingar á regluverkinu sjálfu — munurinn á \"sækja samning\" og \"samþykkja regluverk ESB\" er verulega mikill. Andstæðingar telja orðræðuna villandi þar sem hún gefi í skyn meiri samningsmöguleika en raunverulega er til staðar.",
+      "confidence": 0.75,
+      "speakers": [
+        {
+          "name": "talsmenn ESB-aðildar",
+          "type": "institution",
+          "role": "talsmenn",
+          "party": null,
+          "stance": "pro_eu",
+          "attribution": "paraphrased",
+          "stance_score": null,
+          "credibility": null
+        },
+        {
+          "name": "ríkisstjórnin",
+          "type": "institution",
+          "role": "stjórnvöld",
+          "party": null,
+          "stance": "pro_eu",
+          "attribution": "paraphrased",
           "stance_score": null,
           "credibility": null
         }
@@ -416,6 +557,49 @@
     },
     {
       "claim": {
+        "original_quote": "[2] https://european-union.europa.eu/principles-countries-history/eu-enlargement_en",
+        "claim_text": "ESB birtir opinberlega að í aðildarviðræðum undirbýr umsóknarríkið innleiðingu regluverksins (acquis) — þetta kemur fram á vefsíðu european-union.europa.eu.",
+        "category": "eea_eu_law",
+        "claim_type": "legal_assertion",
+        "confidence": 0.9
+      },
+      "verdict": "supported",
+      "explanation": "Heimildir staðfesta þetta mjög vel. <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> vitna beint í opinber gögn framkvæmdastjórnar ESB sem lýsa aðildarviðræðum sem feli í sér innleiðingu regluverksins. Framkvæmdastjórnin notar orðalagið \"adoption, implementation and enforcement of all current EU rules (the acquis).\"",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-017",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards joining' factsheet",
+          "source_url": "https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf"
+        },
+        {
+          "id": "EEA-LEGAL-021",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        },
+        {
+          "id": "EEA-LEGAL-013",
+          "source_name": "European Commission — Steps towards joining; DG NEAR accession negotiation methodology",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Nákvæm slóð á vefsíðu ESB er ekki staðfest í heimildunum en efnislega er fullyrðingin rétt. Heimildir vísa í \"EU Accession Process: Steps towards joining\" og \"EU Accession Process: Steps towards Joining\" sem eru opinber gögn framkvæmdastjórnarinnar.",
+      "confidence": 0.9,
+      "speakers": [
+        {
+          "name": "Evrópusambandið",
+          "type": "institution",
+          "role": "alþjóðastofnun",
+          "party": null,
+          "stance": "neutral",
+          "attribution": "mentioned",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
         "original_quote": "[3] https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en",
         "claim_text": "Framkvæmdastjórn ESB lýsir skrefunum í átt að aðild, þar á meðal formlegum aðildarviðræðum, á vefsíðu enlargement.ec.europa.eu.",
         "category": "eea_eu_law",
@@ -465,15 +649,27 @@
       "party": null,
       "role_in_article": "author",
       "attribution_type": "asserted",
-      "claim_count": 5,
+      "claim_count": 6,
       "verdicts": {
         "supported": 1,
-        "partially_supported": 4
+        "partially_supported": 5
       },
       "stance": "neutral",
       "slug": "hjorvar-sigurdsson",
       "mention_count": 2,
       "credibility": 0.61
+    },
+    {
+      "name": "Þorgerður Katrín",
+      "role": "þingmaður",
+      "party": null,
+      "role_in_article": "speaker",
+      "attribution_type": "paraphrased",
+      "claim_count": 2,
+      "verdicts": {
+        "partially_supported": 2
+      },
+      "stance": "pro_eu"
     },
     {
       "name": "Evrópusambandið",
@@ -487,18 +683,30 @@
       },
       "stance": "neutral",
       "slug": "evropusambandid",
-      "mention_count": 39,
-      "credibility": 0.76
+      "mention_count": 42,
+      "credibility": 0.74
     },
     {
-      "name": "Þorgerður Katrín",
-      "role": "þingmaður",
+      "name": "talsmenn ESB-aðildar",
+      "role": "talsmenn",
       "party": null,
       "role_in_article": "speaker",
       "attribution_type": "paraphrased",
       "claim_count": 1,
       "verdicts": {
-        "partially_supported": 1
+        "supported": 1
+      },
+      "stance": "pro_eu"
+    },
+    {
+      "name": "ríkisstjórnin",
+      "role": "stjórnvöld",
+      "party": null,
+      "role_in_article": "speaker",
+      "attribution_type": "paraphrased",
+      "claim_count": 1,
+      "verdicts": {
+        "supported": 1
       },
       "stance": "pro_eu"
     }

@@ -10,38 +10,44 @@
   "summary": "Greindar 12 fullyrðingar. Niðurstöður: 6 ekki hægt að sannreyna, 5 stutt að hluta, 1 stutt af heimildum. Sjónarhorn: mjög ESB-neikvæð. Heildstæðni: 25%.",
   "capsule": "Íslenska er eina tunga stjórnsýslunnar og við ESB-aðild myndi hluti löggjafar- og dómsvalds færast til. Áhugavert samhengi til viðbótar: Ísland er nú þegar undir lögsögu EFTA-dómstólsins, sem fylgir ályktunum ESB-dómstólsins mjög náið — dómar hans eru formlega ráðgefandi en í reynd fylgdir. Þar að auki innleiðir Ísland þúsundir ESB-gerða í gegnum EES-samninginn, svo á mörgum sviðum er munurinn milli núverandi stöðu og fullrar aðildar minni en gjarnan er ráðið af umræðunni.",
   "verdict_counts": {
-    "unverifiable": 6,
-    "partially_supported": 1
+    "partially_supported": 5,
+    "supported": 1
   },
-  "claim_count": 7,
-  "dominant_category": "eea_eu_law",
+  "claim_count": 6,
+  "dominant_category": "sovereignty",
   "categories": [
-    "eea_eu_law",
+    "other",
     "sovereignty"
   ],
   "claims": [
     {
       "claim": {
-        "original_quote": "Eiríkur Rögnvaldsson, hefur bent á að íslenska mundi njóta stöðu opinbers tungumáls í sambandinu",
-        "claim_text": "Eiríkur Rögnvaldsson hefur bent á að íslenska myndi njóta stöðu opinbers tungumáls í Evrópusambandinu ef Ísland yrði aðili.",
+        "original_quote": "Íslenska er í dag eina tunga stjórnsýslu Íslands",
+        "claim_text": "Íslenska er í dag eina tunga stjórnsýslu Íslands.",
         "category": "sovereignty",
-        "claim_type": "opinion",
+        "claim_type": "legal_assertion",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Engin heimild í staðreyndagrunni staðfestir beint að Eiríkur Rögnvaldsson hafi sett þessa fullyrðingu fram. Réttarstaðan er þó skýr: samkvæmt stofnsáttmála ESB fær hvert aðildarríki að tilnefna opinbert tungumál, og íslenska myndi því njóta þeirrar stöðu við aðild. Heimildir eins og <a href=\"https://www.althingi.is/\" title=\"Althingi debate records; Snorri Másson — Op-eds and interviews\" target=\"_blank\" rel=\"noopener\">SOV-DATA-021</a> og <a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a> fjalla um fullveldisáhrif ESB-aðildar en engin þeirra nefnir tungumálastöðu sérstaklega.",
-      "supporting_evidence": [],
+      "verdict": "partially_supported",
+      "explanation": "Íslenska er formlega tungumál íslenskrar stjórnsýslu og engin heimild í staðreyndagrunninum bendir til annars. <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> staðfestir að Ísland er utan helstu stefnusviða ESB og heldur eigin stjórnsýslukerfi. Þó ber að nefna að <a href=\"https://www.eftasurv.int/newsroom/updates/efta-surveillance-authority-publishes-39th-internal-market-scoreboard\" title=\"EFTA Surveillance Authority — 55th and 56th Internal Market Scoreboards\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-015</a> sýnir að yfir 13.000 EES-gerðir hafa verið innleiddar í íslenskan rétt — og hluti þess regluverks er unninn á ensku áður en hann er þýddur. Fullyrðingin er í meginatriðum rétt um formlega stöðu en einfaldar mynd af fjöltyngdri daglegu starfsemi.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-022",
+          "source_name": "EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'",
+          "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Staðreyndagrunnurinn inniheldur enga heimild um opinber tungumál ESB eða reglur um tungumálastöðu nýrra aðildarríkja. Fullyrðingin sjálf — að íslenska fengi opinbera stöðu — er lagalega rétt samkvæmt reglugerð ráðsins nr. 1/1958, en ekki er hægt að sannreyna tilvísunina í Eirík Rögnvaldsson.",
-      "confidence": 0.4,
+      "missing_context": "Engin heimild í grunninum fjallar beint um tungumálalög Íslands (lög nr. 61/2011 um stöðu íslenskrar tungu). Íslensku sem formlegu stjórnsýslumáli er ekki vefengt, en raunveruleg starfsemi stofnana felur í sér umtalsverða notkun ensku í alþjóðlegum samskiptum og innleiðingu EES-gerða.",
+      "confidence": 0.6,
       "speakers": [
         {
-          "name": "Eiríkur Rögnvaldsson",
+          "name": "Haraldur Ólafsson",
           "type": "individual",
-          "role": "sérfræðingur",
+          "role": "pistlahöfundur",
           "party": null,
-          "stance": "pro_eu",
-          "attribution": "paraphrased",
+          "stance": "anti_eu",
+          "attribution": "asserted",
           "stance_score": null,
           "credibility": null
         }
@@ -49,36 +55,172 @@
     },
     {
       "claim": {
-        "original_quote": "sambandið hafi staðið fyrir margs konar þróunar- og uppbyggingarverkefnum á sviði þýðinga og máltækni og hafi stutt þjóðtungur",
-        "claim_text": "Evrópusambandið hefur staðið fyrir þróunar- og uppbyggingarverkefnum á sviði þýðinga og máltækni og stutt þjóðtungur.",
-        "category": "eea_eu_law",
+        "original_quote": "sem er eitt tæplega 200 sjálfstæðra ríkja í heiminum",
+        "claim_text": "Ísland er eitt af tæplega 200 sjálfstæðum ríkjum í heiminum.",
+        "category": "other",
+        "claim_type": "statistic",
+        "confidence": 0.9
+      },
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta óbeint að Ísland er sjálfstætt ríki — <a href=\"https://www.eeas.europa.eu/eeas/eu-arctic-policy_en\" title=\"European Commission — EU Arctic Policy, Joint Communication JOIN(2021) 27\" target=\"_blank\" rel=\"noopener\">SOV-DATA-001</a> lýsir Íslandi sem þátttakanda í Norðurskautsráðinu og Evrópuráðinu, og <a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a> fjallar um sjálfstæða viðskiptastefnu landsins. Talan «tæplega 200» er almennt viðurkennd (193 aðildarríki Sameinuðu þjóðanna auk nokkurra ríkja sem ekki eru aðilar), en engin heimild í grunninum staðfestir nákvæma tölu. Fullyrðingin er ólíklega röng en ekki hægt að sannreyna töluna beint.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-001",
+          "source_name": "European Commission — EU Arctic Policy, Joint Communication JOIN(2021) 27",
+          "source_url": "https://www.eeas.europa.eu/eeas/eu-arctic-policy_en"
+        },
+        {
+          "id": "SOV-LEGAL-032",
+          "source_name": "TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview",
+          "source_url": "https://www.efta.int/free-trade/free-trade-agreements"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Engin heimild nefnir fjölda sjálfstæðra ríkja í heiminum. Talan fer eftir skilgreiningu — 193 ríki eru aðilar að SÞ, 195 ef Vatíkanið og Palestína eru talin með, fleiri ef umdeild ríki eru reiknuð inn.",
+      "confidence": 0.7,
+      "speakers": [
+        {
+          "name": "Haraldur Ólafsson",
+          "type": "individual",
+          "role": "pistlahöfundur",
+          "party": null,
+          "stance": "anti_eu",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "Löggjafi, dómstólar, ríkisstjórn og stofnanir sem undir hana heyra starfa að heita má aðeins á íslensku",
+        "claim_text": "Löggjafi, dómstólar, ríkisstjórn og stofnanir á Íslandi starfa nær eingöngu á íslensku.",
+        "category": "sovereignty",
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Engin heimild í staðreyndagrunninum fjallar beint um máltækniverkefni ESB eða stuðning sambandsins við þjóðtungur. Heimildir sem fundust (<a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a>, <a href=\"https://www.stjornarradid.is/verkefni/utanrikismal/evropusamvinna/thjodaratkvaedagreidsla/\" title=\"Government of Iceland — Referendum information materials; Althingi debate records; RÚV coverage\" target=\"_blank\" rel=\"noopener\">POL-DATA-024</a>, <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/conditions-membership/chapters-acquis_en\" title=\"European Commission — Chapters of the Acquis; EUR-Lex legislative database\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-011</a>) snerta aðildarviðræður, upplýsingaherferðir og regluverksstærð — ekkert þeirra varðar tungumálastefnu ESB. Fullyrðingin kann vel að vera rétt þar sem ESB hefur til dæmis fjármagnað CEF-verkefni í máltækni, en staðreyndagrunnurinn nær ekki til þess.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "missing_context": "Staðreyndagrunnurinn inniheldur engar heimildir um máltækniverkefni ESB (t.d. CEF Automated Translation, European Language Grid, eða aðra tungumálastuðningssjóði). Til að meta þessa fullyrðingu þyrfti gögn um fjárframlög ESB til máltækni og þjóðtunguverndar.",
-      "confidence": 0.3,
-      "speakers": [
+      "verdict": "partially_supported",
+      "explanation": "Formlega starfa íslenskar stofnanir á íslensku og engin heimild bendir til annars. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61964CJ0006\" title=\"CJEU — Case 6/64 Costa v ENEL; Case 26/62 Van Gend en Loos; EEA Agreement Articles 6 and 7; EFTA Court advisory opinion mechanism\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-029</a> undirstrikar formlegt fullveldi Alþingis yfir löggjöf, og <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> staðfestir sjálfstætt stjórnkerfi utan EES-sviða. Þó sýnir <a href=\"https://www.eftasurv.int/newsroom/updates/efta-surveillance-authority-publishes-39th-internal-market-scoreboard\" title=\"EFTA Surveillance Authority — 55th and 56th Internal Market Scoreboards\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-015</a> að Ísland innleiðir yfir 13.000 EES-gerðir sem upphaflega eru samdar á ensku, og <a href=\"https://vinnurettur.asi.is/vinnurettarvefur/vinnurettur/icelandic-labour-law/\" title=\"ASÍ — Collective agreements overview; European Commission — Employment acquis\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-005</a> vitnar í fjölmörg ESB-tilskipun sem innleidd hafa verið. Fullyrðingin á vel við um formlegt tungumál, en daglegt starf — einkum á sviði alþjóðasamskipta og EES-innleiðingar — felur í sér umtalsverða ensku.",
+      "supporting_evidence": [
         {
-          "name": "Eiríkur Rögnvaldsson",
-          "type": "individual",
-          "role": "sérfræðingur",
-          "party": null,
-          "stance": "pro_eu",
-          "attribution": "paraphrased",
-          "stance_score": null,
-          "credibility": null
+          "id": "SOV-LEGAL-029",
+          "source_name": "CJEU — Case 6/64 Costa v ENEL; Case 26/62 Van Gend en Loos; EEA Agreement Articles 6 and 7; EFTA Court advisory opinion mechanism",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61964CJ0006"
         },
         {
-          "name": "Evrópusambandið",
-          "type": "institution",
-          "role": null,
+          "id": "EEA-LEGAL-022",
+          "source_name": "EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'",
+          "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Heimildir fjalla ekki beint um tungumálanotkun í stjórnsýslu. Íslensku stofnanir vinna mikið á ensku í samskiptum við ESA, EFTA og alþjóðlegar stofnanir. Dómstólar nota íslensku í úrskurðum en vísa reglulega í enskar heimildir, sérstaklega í EES-tengdum málum.",
+      "confidence": 0.65,
+      "speakers": [
+        {
+          "name": "Haraldur Ólafsson",
+          "type": "individual",
+          "role": "pistlahöfundur",
           "party": null,
-          "stance": "neutral",
-          "attribution": "mentioned",
+          "stance": "anti_eu",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "Með aðild að Evrópusambandinu flyttist umtalsverður hluti stjórnvaldsins úr landi.",
+        "claim_text": "Með ESB-aðild flyðist umtalsverður hluti stjórnvalds Íslands úr landi.",
+        "category": "sovereignty",
+        "claim_type": "opinion",
+        "confidence": 0.9
+      },
+      "verdict": "supported",
+      "explanation": "Heimildir staðfesta þetta í meginatriðum. <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> lýsir tilfærslu peningastefnuvalds til Seðlabanka Evrópu. <a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a> sýnir að viðskiptastefna færðist alfarið til ESB samkvæmt 207. grein TFEU. <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/170/greenland\" title=\"European Parliament — Greenland's withdrawal from the EEC; Treaty amending the Treaties of Rome\" target=\"_blank\" rel=\"noopener\">PREC-DATA-021</a> og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:1985:029:FULL\" title=\"Treaty amending the Treaties establishing the European Communities with regard to Greenland (1984); EU-Greenland fisheries partnership agreement\" target=\"_blank\" rel=\"noopener\">PREC-HIST-017</a> nefna sameiginlegu sjávarútvegsstefnuna sem lykilágreiningsefni Grænlands — svið sem Ísland hefur nú fulla lögsögu yfir. Orðalagið «umtalsverður hluti» er varfærið — valdið sem færist nær yfir viðskiptastefnu, peningastefnu, landbúnaðarstefnu og sjávarútveg, sem eru lykilsvið íslenskrar stjórnsýslu.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-LEGAL-005",
+          "source_name": "Central Bank of Iceland — Monetary policy framework",
+          "source_url": "https://sedlabanki.is/peningastefna/"
+        },
+        {
+          "id": "SOV-LEGAL-032",
+          "source_name": "TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview",
+          "source_url": "https://www.efta.int/free-trade/free-trade-agreements"
+        },
+        {
+          "id": "PREC-DATA-021",
+          "source_name": "European Parliament — Greenland's withdrawal from the EEC; Treaty amending the Treaties of Rome",
+          "source_url": "https://www.europarl.europa.eu/factsheets/en/sheet/170/greenland"
+        },
+        {
+          "id": "PREC-HIST-017",
+          "source_name": "Treaty amending the Treaties establishing the European Communities with regard to Greenland (1984); EU-Greenland fisheries partnership agreement",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:1985:029:FULL"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Ísland myndi einnig öðlast atkvæðisrétt í ráðherraráði ESB, Evrópuþinginu og öðrum stofnunum — fullyrðingin nefnir aðeins tilfærsluna en ekki þátttökuréttinn sem kemur á móti. Þá eru aðildarviðræður þar sem hægt er að semja um aðlögunartímabil.",
+      "confidence": 0.85,
+      "speakers": [
+        {
+          "name": "Haraldur Ólafsson",
+          "type": "individual",
+          "role": "pistlahöfundur",
+          "party": null,
+          "stance": "anti_eu",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "Íslendingar yrðu neyddir til að hlíta lögum sem samin eru í útlöndum af aðilum sem hafa hagsmuni ótalmargra annarra en Íslendinga til viðmiðunar við lagasmíðina.",
+        "claim_text": "Við ESB-aðild yrðu Íslendingar neyddir til að hlíta lögum sem samin eru erlendis af aðilum sem hafa hagsmuni ótalmargra annarra þjóða til viðmiðunar.",
+        "category": "sovereignty",
+        "claim_type": "legal_assertion",
+        "confidence": 0.9
+      },
+      "verdict": "partially_supported",
+      "explanation": "Kjarninn í fullyrðingunni er réttur — ESB-aðild myndi binda Ísland við löggjöf sem samin er á vettvangi 27+ ríkja. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Screening reports from Iceland's 2010–2013 negotiations; EUR-Lex — Directory of EU legislation\" target=\"_blank\" rel=\"noopener\">SOV-DATA-004</a> staðfestir að 3.000–5.000 viðbótargerðir bættust við umfram EES-skuldbindingar. <a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a> lýsir því hvernig viðskiptastefna færist til ESB þar sem Ísland væri eitt af 28+ ríkjum. Orðalagið «neyddir til að hlíta» er þó villandi þar sem Ísland hefði atkvæðagreiðslurétt í ráðherraráðinu og fulltrúa á Evrópuþinginu. <a href=\"https://www.eftasurv.int/state-aid\" title=\"EFTA Surveillance Authority — State aid decisions; EEA Agreement, Protocol 26\" target=\"_blank\" rel=\"noopener\">HOUSING-LEGAL-001</a> sýnir jafnframt að Ísland er nú þegar bundið af sambærilegum EES-reglum sem ESA framfylgir — breyting væri hlutfallsleg frekar en algjör.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-004",
+          "source_name": "European Commission — Screening reports from Iceland's 2010–2013 negotiations; EUR-Lex — Directory of EU legislation",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "SOV-LEGAL-032",
+          "source_name": "TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview",
+          "source_url": "https://www.efta.int/free-trade/free-trade-agreements"
+        },
+        {
+          "id": "EEA-LEGAL-009",
+          "source_name": "EFTA Surveillance Authority — Internal Market Scoreboard and Annual Reports",
+          "source_url": "https://www.eftasurv.int/internal-market/implementing-eea-law-national-law/internal-market-scoreboards"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "HOUSING-LEGAL-001",
+          "source_name": "EFTA Surveillance Authority — State aid decisions; EEA Agreement, Protocol 26",
+          "source_url": "https://www.eftasurv.int/state-aid"
+        }
+      ],
+      "missing_context": "Fullyrðingin sleppur því að Ísland hefði beinan þátt í lagasmíðinni sem ESB-aðili — atkvæðisrétt í ráðinu og þingfulltrúa — ólíkt EES-fyrirkomulaginu þar sem Ísland tekur við löggjöf án formlegs atkvæðisréttar. Þá tekur hún ekki tillit til þess að Ísland er nú þegar bundið af stórum hluta ESB-regluverks í gegnum EES.",
+      "confidence": 0.8,
+      "speakers": [
+        {
+          "name": "Haraldur Ólafsson",
+          "type": "individual",
+          "role": "pistlahöfundur",
+          "party": null,
+          "stance": "anti_eu",
+          "attribution": "asserted",
           "stance_score": null,
           "credibility": null
         }
@@ -126,114 +268,6 @@
           "credibility": null
         }
       ]
-    },
-    {
-      "claim": {
-        "original_quote": "Vísbendingar eru um að núverandi kerfi með mörgum opinberum tungumálum njóti takmarkaðs stuðnings þeirra sem fyrir það borga.",
-        "claim_text": "Núverandi kerfi Evrópusambandsins með mörgum opinberum tungumálum nýtur takmarkaðs stuðnings þeirra sem greiða fyrir kerfið.",
-        "category": "eea_eu_law",
-        "claim_type": "opinion",
-        "confidence": 0.9
-      },
-      "verdict": "unverifiable",
-      "explanation": "Engin heimild í staðreyndagrunninum fjallar um stuðning við fjöltyngdakerfi ESB eða viðhorf greiðenda til þess. Heimildir sem fundust (<a href=\"https://cohesiondata.ec.europa.eu/overview\" title=\"European Commission — Cohesion Policy 2021–2027; Eurostat regional GDP data\" target=\"_blank\" rel=\"noopener\">EEA-DATA-016</a>, <a href=\"https://www.europa.eda.admin.ch/en/overview-bilateral-path\" title=\"Swiss Federal Department of Foreign Affairs — Bilateral agreements overview; European Commission — EU-Switzerland relations factsheet\" target=\"_blank\" rel=\"noopener\">PREC-HIST-015</a>, <a href=\"https://eeagrants.org/en/fmo/about-us\" title=\"EEA Grants — Financial mechanism overview\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-001</a>) snúa að fjárhagslegum þáttum ESB-aðildar en nefna ekki tungumálakostnaðinn eða viðhorf til hans. Þýðingarþjónusta ESB kostar um eitt milljarð evra á ári, en sú staðreynd er ekki í grunninum.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "missing_context": "Staðreyndagrunnurinn inniheldur engar heimildir um viðhorf til fjöltyngdakerfis ESB, kostnað þýðingarþjónustu, eða Evrópuráðsumræður um tungumálastefnu. Fullyrðingin vísar í ótilgreindar «vísbendingar» sem ekki er hægt að sannreyna.",
-      "confidence": 0.3,
-      "speakers": [
-        {
-          "name": "Haraldur Ólafsson",
-          "type": "individual",
-          "role": "pistlahöfundur",
-          "party": null,
-          "stance": "anti_eu",
-          "attribution": "asserted",
-          "stance_score": null,
-          "credibility": null
-        }
-      ]
-    },
-    {
-      "claim": {
-        "original_quote": "tilraunir á vettvangi Evrópusambandsins til að auka rétt tungumála sem töluð eru af þjóðum, sem eru mun stærri en Íslendingar, mæta harðri andstöðu þeirra sem þar ráða",
-        "claim_text": "Tilraunir á vettvangi Evrópusambandsins til að auka rétt tungumála sem töluð eru af þjóðum stærri en Íslendingar mæta harðri andstöðu þeirra sem þar ráða.",
-        "category": "eea_eu_law",
-        "claim_type": "opinion",
-        "confidence": 0.9
-      },
-      "verdict": "unverifiable",
-      "explanation": "Engin heimild í staðreyndagrunninum fjallar um tungumálastefnu ESB eða tilraunir til að auka réttindi minni tungumála innan sambandsins. Heimildir sem fundust (<a href=\"https://fel.hi.is/is/rannsoknir-spurningalistakannanir/simakannanir\" title=\"Félagsvísindastofnun — Methodology notes on EU polling; comparison of Gallup, MMR, and Maskína polls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-010</a>, <a href=\"https://www.visir.is/g/20262853438d/thridjungur-and-vigur-at-kvaeda-greidslunni\" title=\"Gallup Ísland / Vísir — EU referendum survey, March 2026\" target=\"_blank\" rel=\"noopener\">POLL-DATA-015</a>, <a href=\"https://www.gallup.is/frettir/nato-og-esb/\" title=\"Gallup Ísland — EU support by party affiliation (November 2025)\" target=\"_blank\" rel=\"noopener\">POLL-DATA-011</a>) snúa að skoðanakönnunum um ESB-aðild Íslands og hafa ekkert með tungumálamál að gera. Fullyrðingin kann að vísa til raunverulegra atburða (t.d. umsókn Spánar um hlutbundna stöðu katalónsku) en það er ekki hægt að staðfesta úr tiltækum heimildum.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "missing_context": "Engar heimildir um tungumálastefnu ESB, stöðu svæðisbundinna tungumála, eða pólitískar umræður um tungumálaréttindi innan sambandsins. Þyrfti gögn um t.d. umsóknir um opinbera stöðu katalónsku, basknesku eða galísísku og afgreiðslu þeirra.",
-      "confidence": 0.3,
-      "speakers": [
-        {
-          "name": "Haraldur Ólafsson",
-          "type": "individual",
-          "role": "pistlahöfundur",
-          "party": null,
-          "stance": "anti_eu",
-          "attribution": "asserted",
-          "stance_score": null,
-          "credibility": null
-        }
-      ]
-    },
-    {
-      "claim": {
-        "original_quote": "Litlar sem engar horfur eru t.d. á að galísíska, baskneska eða jafnvel katalónska verði opinber mál Evrópusambandsins, þótt mun fleiri tali þau en íslensku.",
-        "claim_text": "Galísíska, baskneska og katalónska eru ekki opinber mál Evrópusambandsins þrátt fyrir að mun fleiri tali þau en íslensku.",
-        "category": "eea_eu_law",
-        "claim_type": "legal_assertion",
-        "confidence": 0.9
-      },
-      "verdict": "unverifiable",
-      "explanation": "Engin heimild í staðreyndagrunninum fjallar um opinber tungumál ESB eða stöðu svæðisbundinna tungumála eins og katalónsku, basknesku og galísísku. Fullyrðingin er að öllum líkindum rétt — ESB hefur 24 opinber tungumál og ekkert þessara þriggja er á meðal þeirra, og öll hafa fleiri málhafa en íslenska — en staðfesting er ekki möguleg úr tiltækum heimildum.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "missing_context": "Vantar heimildir um opinber tungumál ESB, reglur um hvernig tungumál öðlast opinbera stöðu (reglugerð ráðsins nr. 1/1958), og stöðu svæðisbundinna tungumála. Rétt er að opinber tungumál ESB eru tengd aðildarríkjum — Spánn hefur ekki farið fram á fulla opinbera stöðu fyrir þessi tungumál, þótt katalónska hafi fengið takmarkaðan rétt í ESB-stofnunum frá 2005.",
-      "confidence": 0.3,
-      "speakers": [
-        {
-          "name": "Haraldur Ólafsson",
-          "type": "individual",
-          "role": "pistlahöfundur",
-          "party": null,
-          "stance": "anti_eu",
-          "attribution": "asserted",
-          "stance_score": null,
-          "credibility": null
-        }
-      ]
-    },
-    {
-      "claim": {
-        "original_quote": "þar fara tímabundin verkefni sem öll er hægt að blása af þegar vindur snýst og tíska breytist í Evrópusambandinu",
-        "claim_text": "Verkefni Evrópusambandsins í þýðingum og máltækni eru tímabundin og hægt er að hætta við þau.",
-        "category": "eea_eu_law",
-        "claim_type": "opinion",
-        "confidence": 0.9
-      },
-      "verdict": "unverifiable",
-      "explanation": "Engin heimild í staðreyndagrunninum fjallar um eðli eða varanleikaábyrgð ESB-verkefna í máltækni og þýðingum. Heimildir sem fundust (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M050\" title=\"Treaty on European Union, Article 50\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-001</a>, <a href=\"https://link.springer.com/book/10.1057/9780230510302\" title=\"Grabbe, H. (2006) 'The EU's Transformative Power: Europeanization Through Conditionality in Central and Eastern Europe', Palgrave Macmillan\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-016</a>, <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a>) fjalla um úrsagnarrétt og regluverkið en ekki um tímabundna verkefnasjóði. Fullyrðingin felur í sér mat á pólitískri áhættu sem erfitt er að staðfesta eða hrekja — verkefni sem fjármögnuð eru úr fjárhagsáætlun ESB eru háð pólitískum ákvörðunum og geta breyst.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "missing_context": "Vantar heimildir um ESB-fjármögnuð máltækniverkefni, fjárlög þeirra, og hvort þau séu bundin í fjölárlegum fjármálaáætlunum eða háð árlegri endurnýjun. Réttur til opinbers tungumáls er hins vegar tryggður í stofnsáttmálum og er ekki tímabundið verkefni — mikilvægt er að greina á milli þýðingarþjónustu (tryggð í sáttmálum) og verkefnasjóða (sem eru tímabundnir).",
-      "confidence": 0.3,
-      "speakers": [
-        {
-          "name": "Haraldur Ólafsson",
-          "type": "individual",
-          "role": "pistlahöfundur",
-          "party": null,
-          "stance": "anti_eu",
-          "attribution": "asserted",
-          "stance_score": null,
-          "credibility": null
-        }
-      ]
     }
   ],
   "participants": [
@@ -243,28 +277,13 @@
       "party": null,
       "role_in_article": "author",
       "attribution_type": "asserted",
-      "claim_count": 5,
+      "claim_count": 6,
       "verdicts": {
-        "partially_supported": 1,
-        "unverifiable": 4
+        "partially_supported": 5,
+        "supported": 1
       },
       "stance": "anti_eu",
       "slug": "haraldur-olafsson",
-      "mention_count": 1,
-      "credibility": 0.58
-    },
-    {
-      "name": "Eiríkur Rögnvaldsson",
-      "role": "sérfræðingur",
-      "party": null,
-      "role_in_article": "speaker",
-      "attribution_type": "paraphrased",
-      "claim_count": 2,
-      "verdicts": {
-        "unverifiable": 2
-      },
-      "stance": "pro_eu",
-      "slug": "eirikur-rognvaldsson",
       "mention_count": 2,
       "credibility": 0.5
     }

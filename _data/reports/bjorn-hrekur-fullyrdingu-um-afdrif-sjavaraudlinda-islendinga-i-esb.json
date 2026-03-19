@@ -10,10 +10,11 @@
   "summary": "Greindar 15 fullyrðingar. Niðurstöður: 10 stutt að hluta, 3 ekki hægt að sannreyna, 2 stutt af heimildum. Sjónarhorn: hallar á ESB-jákvæða hlið. Heildstæðni: 30%.",
   "capsule": "Greiningin sýnir fram á að regluverk ESB verndar kvótahlutdeild aðildarríkja og að erlend skip geta ekki veitt í íslenskri lögsögu nema á íslenskum skilmálum. Athyglisvert er þó að kvótaskipting milli aðildarríkja byggist á meginreglunni um hlutfallslegan stöðugleika — varanlegir hlutir ríkjanna eru ákvarðaðir út frá sögulegum afla frá árunum 1973–1978, og sem nýtt aðildarríki þyrfti Ísland að semja um hlutdeild sína frá grunni. Þar að auki er vert að hafa í huga að heildareignavirði úthlutaðra kvóta á Íslandi er metið á um 1.500 milljarða króna — þetta gefur til kynna hversu mikið er í húfi þegar rætt er um framtíð sjávarauðlindarinnar.",
   "verdict_counts": {
-    "partially_supported": 6,
-    "supported": 6
+    "partially_supported": 8,
+    "supported": 6,
+    "unverifiable": 1
   },
-  "claim_count": 12,
+  "claim_count": 15,
   "dominant_category": "fisheries",
   "categories": [
     "fisheries",
@@ -119,8 +120,8 @@
         "claim_type": "legal_assertion",
         "confidence": 0.85
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://oceans-and-fisheries.ec.europa.eu/news/eu-fisheries-control-system-gets-major-revamp-2024-01-09_en\" title=\"European Commission — EU Fisheries Control System Revamp\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-004</a> staðfestir skýrt að endurskoðuð reglugerð ESB um sjávarútvegsstýringu (2023/2842) krefst rafrænna aflaskráninga, leikskýrslna og rafræns rekjanleikakerfis (CATCH). Þetta felur í sér stafrænar aflabækur, stafrænar löndunarskýrslur og fjareftirlit um borð í stærri skipum. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380\" title=\"Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-030</a> bætir við að 17. grein reglugerðar 1380/2013 krefst «transparent and objective criteria» í úthlutun kvóta. Fullyrðingin um gagnsæi og rekjanleika er rétt samkvæmt þessum heimildum.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://oceans-and-fisheries.ec.europa.eu/news/eu-fisheries-control-system-gets-major-revamp-2024-01-09_en\" title=\"European Commission — EU Fisheries Control System Revamp\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-004</a> staðfestir að endurskoðaðar eftirlitsreglur sameiginlegu sjávarútvegsstefnunnar (reglugerð 2023/2842) krefjast rafrænna aflaskráninga, stafræns CATCH-kerfis og myndavélabúnaðar um borð — eitt víðtækasta gagnsæiskerfi heimsins. Krafan um gagnsæi og rekjanleika á sér því stoð í löggjöfinni. Framkvæmd hefur þó verið misjöfn og Evrópski endurskoðunarréttarinn hefur bent á verulega vanráðningu á brottkastsboðinu, sem dregur úr trúverðugleika kerfisins í reynd.",
       "supporting_evidence": [
         {
           "id": "FISH-LEGAL-004",
@@ -131,11 +132,16 @@
           "id": "FISH-DATA-030",
           "source_name": "Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies",
           "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380"
+        },
+        {
+          "id": "FISH-LEGAL-001",
+          "source_name": "EU Regulation 1380/2013 of the European Parliament and of the Council",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Framkvæmd landkunarskyldunnar hefur verið misgóð — endurskoðunarskrifstofa ESB hefur bent á verulega vanskráningu á brottkasti. Kerfið er lagalegur rammi en virkni þess fer eftir aðildarríkjunum sjálfum.",
-      "confidence": 0.88,
+      "missing_context": "Lagalegur rammi krefst gagnsæis en framkvæmd er misjöfn milli aðildarríkja. Rafrænt eftirlitskerfi (myndavélar) fyrir skip yfir 18 metrum tekur ekki gildi fyrr en í janúar 2028 og stafrænt aflaskráningarkerfi frá janúar 2026. Brottkastsboðið hefur ekki náð fullum árangri samkvæmt Evrópska endurskoðunarréttinum. Ísland hefur þegar umfangsmikið eftirlit með eigin fiskveiðum sem er ekki beint sambærilegt.",
+      "confidence": 0.78,
       "speakers": [
         {
           "name": "Bjorn Levi Gunnarsson",
@@ -338,7 +344,7 @@
         {
           "id": "FISH-DATA-024",
           "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
-          "source_url": "https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda"
+          "source_url": "https://island.is/s/fiskistofa"
         }
       ],
       "contradicting_evidence": [],
@@ -376,7 +382,7 @@
         "confidence": 0.8
       },
       "verdict": "partially_supported",
-      "explanation": "Fullyrðingin segir að íslenska kvótakerfið flyti óslægðan afla í vinnslu erlendis og leggi sjávarpláss í eyði. <a href=\"https://link.springer.com/article/10.1007/s40152-018-0089-5\" title=\"Kokorsch & Benediktsson (2018) — 'Prosper or Perish? The Development of Icelandic Fishing Villages after the Privatisation of Fishing Rights', Maritime Studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-028</a> staðfestir verulega samþjöppun kvóta og fólksfækkun í sjávarplássum — um 5.100 störf (36%) töpuðust í sjávarútvegi 1990–2017 og nokkur sjávarþorp misstu meira en helming íbúa. <a href=\"https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> staðfestir samþjöppun kvóta hjá stórum fyrirtækjum. Hins vegar nefna heimildir ekki beint útflutning á óslægðum afla sem aðalvandamál kerfisins — <a href=\"https://hagstofa.is/talnaefni/atvinnuvegir/sjavarutvegur/\" title=\"Statistics Iceland — Industrial production; Samtök fyrirtækja í sjávarútvegi (SFS)\" target=\"_blank\" rel=\"noopener\">FISH-DATA-007</a> sýnir þvert á móti að hlutfall ferskrar vinnslu hafi hækkað úr 15% í yfir 35%. Fullyrðingin blandar saman tveimur atriðum sem tengjast en eru ekki jafn vel studd.",
+      "explanation": "Fullyrðingin segir að íslenska kvótakerfið flyti óslægðan afla í vinnslu erlendis og leggi sjávarpláss í eyði. <a href=\"https://link.springer.com/article/10.1007/s40152-018-0089-5\" title=\"Kokorsch & Benediktsson (2018) — 'Prosper or Perish? The Development of Icelandic Fishing Villages after the Privatisation of Fishing Rights', Maritime Studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-028</a> staðfestir verulega samþjöppun kvóta og fólksfækkun í sjávarplássum — um 5.100 störf (36%) töpuðust í sjávarútvegi 1990–2017 og nokkur sjávarþorp misstu meira en helming íbúa. <a href=\"https://island.is/s/fiskistofa\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> staðfestir samþjöppun kvóta hjá stórum fyrirtækjum. Hins vegar nefna heimildir ekki beint útflutning á óslægðum afla sem aðalvandamál kerfisins — <a href=\"https://hagstofa.is/talnaefni/atvinnuvegir/sjavarutvegur/\" title=\"Statistics Iceland — Industrial production; Samtök fyrirtækja í sjávarútvegi (SFS)\" target=\"_blank\" rel=\"noopener\">FISH-DATA-007</a> sýnir þvert á móti að hlutfall ferskrar vinnslu hafi hækkað úr 15% í yfir 35%. Fullyrðingin blandar saman tveimur atriðum sem tengjast en eru ekki jafn vel studd.",
       "supporting_evidence": [
         {
           "id": "FISH-DATA-028",
@@ -386,7 +392,7 @@
         {
           "id": "FISH-DATA-024",
           "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
-          "source_url": "https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda"
+          "source_url": "https://island.is/s/fiskistofa"
         }
       ],
       "contradicting_evidence": [
@@ -579,7 +585,7 @@
         "confidence": 0.8
       },
       "verdict": "supported",
-      "explanation": "Fullyrðingin bendir á þversögn: þau áhrif sem andstæðingar ESB-aðildar vara við (sjávarpláss leggjast af, fiskur fluttur óunninn úr landi) eiga sér nú þegar stað undir íslensku kvótakerfi. <a href=\"https://link.springer.com/article/10.1007/s40152-018-0089-5\" title=\"Kokorsch & Benediktsson (2018) — 'Prosper or Perish? The Development of Icelandic Fishing Villages after the Privatisation of Fishing Rights', Maritime Studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-028</a> staðfestir verulega fólksfækkun í sjávarplássum — 36% starfa í sjávarútvegi töpuðust 1990–2017, og nokkur þorp misstu meira en helming íbúa sinna vegna samþjöppunar kvóta. <a href=\"https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> lýsir samþjöppun kvóta hjá stórum fyrirtækjum. <a href=\"https://statice.is/statistics/economy/external-trade/\" title=\"Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður\" target=\"_blank\" rel=\"noopener\">FISH-DATA-027</a> sýnir að 90% afla fara til útflutnings. Nýju heimildirnar (<a href=\"https://www.gov.uk/government/collections/uk-sea-fisheries-annual-statistics\" title=\"UK Marine Management Organisation — UK Sea Fisheries Statistics; House of Lords European Affairs Committee — Brexit and fisheries (2023)\" target=\"_blank\" rel=\"noopener\">PREC-HIST-014</a>, <a href=\"https://www.fiskeridir.no/English/Fisheries/Statistics\" title=\"Norwegian Directorate of Fisheries — Statistics\" target=\"_blank\" rel=\"noopener\">FISH-COMP-001</a>) styrkja samhengið en breyta ekki grundvallarmati. Fullyrðingin er réttmæt sem gagnrýni á þessa þversögn.",
+      "explanation": "Fullyrðingin bendir á þversögn: þau áhrif sem andstæðingar ESB-aðildar vara við (sjávarpláss leggjast af, fiskur fluttur óunninn úr landi) eiga sér nú þegar stað undir íslensku kvótakerfi. <a href=\"https://link.springer.com/article/10.1007/s40152-018-0089-5\" title=\"Kokorsch & Benediktsson (2018) — 'Prosper or Perish? The Development of Icelandic Fishing Villages after the Privatisation of Fishing Rights', Maritime Studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-028</a> staðfestir verulega fólksfækkun í sjávarplássum — 36% starfa í sjávarútvegi töpuðust 1990–2017, og nokkur þorp misstu meira en helming íbúa sinna vegna samþjöppunar kvóta. <a href=\"https://island.is/s/fiskistofa\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> lýsir samþjöppun kvóta hjá stórum fyrirtækjum. <a href=\"https://statice.is/statistics/economy/external-trade/\" title=\"Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður\" target=\"_blank\" rel=\"noopener\">FISH-DATA-027</a> sýnir að 90% afla fara til útflutnings. Nýju heimildirnar (<a href=\"https://www.gov.uk/government/collections/uk-sea-fisheries-annual-statistics\" title=\"UK Marine Management Organisation — UK Sea Fisheries Statistics; House of Lords European Affairs Committee — Brexit and fisheries (2023)\" target=\"_blank\" rel=\"noopener\">PREC-HIST-014</a>, <a href=\"https://www.fiskeridir.no/English/Fisheries/Statistics\" title=\"Norwegian Directorate of Fisheries — Statistics\" target=\"_blank\" rel=\"noopener\">FISH-COMP-001</a>) styrkja samhengið en breyta ekki grundvallarmati. Fullyrðingin er réttmæt sem gagnrýni á þessa þversögn.",
       "supporting_evidence": [
         {
           "id": "FISH-DATA-028",
@@ -589,7 +595,7 @@
         {
           "id": "FISH-DATA-024",
           "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
-          "source_url": "https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda"
+          "source_url": "https://island.is/s/fiskistofa"
         },
         {
           "id": "FISH-DATA-027",
@@ -617,6 +623,139 @@
           "credibility": null
         }
       ]
+    },
+    {
+      "claim": {
+        "original_quote": "Útgerðina sem gerir upp í evrum.",
+        "claim_text": "Sum íslensk útgerðarfyrirtæki gera upp í evrum.",
+        "category": "fisheries",
+        "claim_type": "statistic",
+        "confidence": 0.65
+      },
+      "verdict": "supported",
+      "explanation": "<a href=\"https://statice.is/statistics/economy/external-trade/\" title=\"Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður\" target=\"_blank\" rel=\"noopener\">FISH-DATA-027</a> staðfestir beint að íslensk sjávarútvegsfyrirtæki geri upp í erlendum gjaldmiðlum, einkum evrum fyrir evrópska markaðinn. Meirihluti útflutnings sjávarafurða fer til ESB-landa (60–65%) þar sem uppgjör í evrum er algengast. <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__utanrikisverslun/\" title=\"Hagstofa Íslands — External trade statistics\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-001</a> staðfestir að ESB sé stærsti viðskiptaaðili Íslands. Fullyrðingin \"sum íslensk útgerðarfyrirtæki gera upp í evrum\" er þar með rétt — orðalagið \"sum\" er varfærið og nákvæmt.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-DATA-027",
+          "source_name": "Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður",
+          "source_url": "https://statice.is/statistics/economy/external-trade/"
+        },
+        {
+          "id": "TRADE-DATA-001",
+          "source_name": "Hagstofa Íslands — External trade statistics",
+          "source_url": "https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__utanrikisverslun/"
+        },
+        {
+          "id": "FISH-DATA-024",
+          "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
+          "source_url": "https://island.is/s/fiskistofa"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Uppgjör fer ekki eingöngu fram í evrum — hluti viðskipta er í Bandaríkjadölum (Asía, Ameríka) og innlent uppgjör á fiskmarkaði er í krónum. Heimildin tekur þetta sérstaklega fram sem mikilvæga nýansun.",
+      "confidence": 0.8,
+      "speakers": [
+        {
+          "name": "Bjorn Levi Gunnarsson",
+          "type": "individual",
+          "role": "fyrrverandi thingmadur",
+          "party": "Piratar",
+          "stance": "pro_eu",
+          "attribution": "quoted",
+          "stance_score": null,
+          "credibility": null
+        },
+        {
+          "name": "Íslenska stórútgerðin",
+          "type": "institution",
+          "role": "útgerðarfyrirtæki",
+          "party": null,
+          "stance": "anti_eu",
+          "attribution": "mentioned",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "við vitum alveg af brottkastinu, ísprósentunni, skiptaverðinu og aflandsfélögunum",
+        "claim_text": "Íslensk útgerð hefur nýtt sér aflandsfélög og þar hafa orðið brot tengd brottkasti, ísprósentu og skiptaverði.",
+        "category": "fisheries",
+        "claim_type": "opinion",
+        "confidence": 0.6
+      },
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://island.is/s/fiskistofa\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> staðfestir samþjöppun kvóta og nefnir helstu útgerðarfyrirtæki á Íslandi. Fullyrðingin felur þó í sér þrennt: aflandsfélög, brottkast/ísprósentu-brot og skiptaverðsbrot. Engin heimild í safninu fjallar beint um notkun aflandsfélaga af hálfu íslenskrar útgerðar eða tiltekin brot tengd brottkasti, ísprósentu og skiptaverði. <a href=\"https://statice.is/statistics/economy/external-trade/\" title=\"Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður\" target=\"_blank\" rel=\"noopener\">FISH-DATA-027</a> fjallar um gjaldmiðlauppgjör en ekki aflandsfélög í lagalegum skilningi.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-DATA-024",
+          "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
+          "source_url": "https://island.is/s/fiskistofa"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Fullyrðingin vísar til aflandsfélaganotkunar og tiltekinna brota sem engin heimild í safninu staðfestir eða hafnar. Brot tengd brottkasti og skiptaverði eru vel þekkt viðfangsefni í íslenskum sjávarútvegi en þyrftu staðfestingu frá Fiskistofu eða dómstólaskrám.",
+      "confidence": 0.25,
+      "speakers": [
+        {
+          "name": "Bjorn Levi Gunnarsson",
+          "type": "individual",
+          "role": "fyrrverandi thingmadur",
+          "party": "Piratar",
+          "stance": "pro_eu",
+          "attribution": "quoted",
+          "stance_score": null,
+          "credibility": null
+        },
+        {
+          "name": "Íslenska stórútgerðin",
+          "type": "institution",
+          "role": "útgerðarfyrirtæki",
+          "party": null,
+          "stance": "anti_eu",
+          "attribution": "mentioned",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "Sú útgerð er hrædd við að þurfa að gangast undir alvöru eftirlit og rekjanleika",
+        "claim_text": "Íslenska útgerðin er hrædd við alvöru eftirlit og rekjanleika sem ESB-aðild myndi krefjast.",
+        "category": "fisheries",
+        "claim_type": "opinion",
+        "confidence": 0.55
+      },
+      "verdict": "unverifiable",
+      "explanation": "Fullyrðingin heldur því fram að íslenska útgerðin sé «hrædd við alvöru eftirlit og rekjanleika» sem ESB-aðild myndi krefjast. Þetta er túlkunarfullyrðing um hvata útgerðarinnar, ekki staðreyndamat. POL-DATA-014 staðfestir að LÍÚ leggi harðlega gegn ESB-aðild og beini gagnrýni sinni að kvótakerfinu, deildri lögsögu og tilfærslu ákvarðanatöku til Brussel — en engin heimild segir beinlínis að eftirlit og rekjanleiki séu áhyggjuefni útgerðarinnar. Röksemdafærsla LÍÚ snýst um efnahagslega hagsmuni og sjálfstjórn, ekki um ótta við eftirlit.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [],
+      "missing_context": "Fullyrðingin gefur til kynna hvataspurning sem heimildir svara ekki. LÍÚ hefur lagt 500 milljónir króna í herferð gegn ESB-aðild og rökstyður andstöðu sína með efnahagslegum og stjórnunarlegum rökum (POL-DATA-014). Samtök iðnaðarins sýna vaxandi andstöðu meðal félagsmanna (<a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins (SI) — Membership survey, February/March 2026\" target=\"_blank\" rel=\"noopener\">ORG-DATA-001</a>). Engin heimild nefnir eftirlit eða rekjanleika sem sérstakt áhyggjuefni útgerðarinnar.",
+      "confidence": 0.8,
+      "speakers": [
+        {
+          "name": "Bjorn Levi Gunnarsson",
+          "type": "individual",
+          "role": "fyrrverandi thingmadur",
+          "party": "Piratar",
+          "stance": "pro_eu",
+          "attribution": "quoted",
+          "stance_score": null,
+          "credibility": null
+        },
+        {
+          "name": "Íslenska stórútgerðin",
+          "type": "institution",
+          "role": "útgerðarfyrirtæki",
+          "party": null,
+          "stance": "anti_eu",
+          "attribution": "mentioned",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
     }
   ],
   "participants": [
@@ -626,10 +765,11 @@
       "party": "Piratar",
       "role_in_article": "speaker",
       "attribution_type": "paraphrased",
-      "claim_count": 12,
+      "claim_count": 15,
       "verdicts": {
-        "partially_supported": 6,
-        "supported": 6
+        "partially_supported": 8,
+        "supported": 6,
+        "unverifiable": 1
       },
       "stance": "pro_eu"
     }

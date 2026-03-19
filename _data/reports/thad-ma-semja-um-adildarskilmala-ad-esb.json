@@ -10,21 +10,22 @@
   "summary": "Greindar 24 fullyrðingar .",
   "capsule": "Danafordæmið er sannleikskorn í greininni: Danir sömdu sér til varanlegrar undanþágu frá evrunni, hernaðarsamvinnu og dómsmálasamvinnu — og náðu því fram að Færeyjar og Grænland héldust utan ESB. Athyglisvert er þó að þessar undanþágur voru samdar við sérstakar söguhistorískar aðstæður og ESB hefur síðan þróað samningastefnu sína í átt að aðlögunartímabilum í stað varanlegra undanþágna — Króatía, sem gekk inn 2013, fékk engar verulegar undanþágur, einungis tímabundnar aðlögunarreglur. Þeir sem vilja kafa dýpra geta skoðað hvernig Lissabon-sáttmálinn og stækkun ESB árið 2004 breyttu grundvallarlega þeim samningamöguleikum sem nýjum aðildarríkjum standa til boða.",
   "verdict_counts": {
-    "partially_supported": 4,
-    "supported": 3,
-    "unverifiable": 8,
+    "partially_supported": 10,
+    "supported": 5,
+    "unverifiable": 2,
     "misleading": 1
   },
-  "claim_count": 16,
-  "dominant_category": "sovereignty",
+  "claim_count": 18,
+  "dominant_category": "precedents",
   "categories": [
     "agriculture",
     "currency",
+    "eea_eu_law",
     "fisheries",
+    "housing",
     "party_positions",
     "precedents",
-    "sovereignty",
-    "trade"
+    "sovereignty"
   ],
   "claims": [
     {
@@ -57,6 +58,54 @@
       "contradicting_evidence": [],
       "missing_context": "Undanþágan var samin við sérstakar aðstæður (höfnun Maastricht-sáttmálans) og ESB hefur síðan verið tregara til að veita nýjum aðildarríkjum svipaðar undanþágur. Samkvæmt <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> er formleg afstaða ESB sú að ný aðildarríki geti ekki samið um varanlegar undanþágur.",
       "confidence": 0.8,
+      "speakers": [
+        {
+          "name": "Ole Anton Bieltvedt",
+          "type": "individual",
+          "role": "samfélagsrýnir",
+          "party": null,
+          "stance": "pro_eu",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        },
+        {
+          "name": "Danir",
+          "type": "institution",
+          "role": "ESB aðildarríki",
+          "party": null,
+          "stance": "neutral",
+          "attribution": "mentioned",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "þeir vildu ekki taka þátt í varnar- eða hernaðarstarfssemi ESB þó að það hafi svo breytzt",
+        "claim_text": "Danir fengu undanþágu frá þátttöku í varnar- og hernaðarstarfsemi ESB.",
+        "category": "sovereignty",
+        "claim_type": "legal_assertion",
+        "confidence": 0.9
+      },
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.thedanishparliament.dk/en/eu-information-centre/the-danish-opt-outs-from-eu-cooperation\" title=\"Edinburgh Agreement (1992); Danish Ministry of Foreign Affairs — Denmark's EU opt-outs\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-010</a> og PREC-HIST-010 staðfesta bæði að Danir fengu undanþágu frá varnarmálum ESB í Edinburgh-samkomulaginu 1992. Fullyrðingin nefnir einnig réttilega að þetta hafi «svo breyst» — Danir afnámdu varnarundanþáguna í þjóðaratkvæðagreiðslu í júní 2022 (66,9% já), knúnir áfram af innrás Rússa í Úkraínu.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-023",
+          "source_name": "European Parliament — EU Treaties and Protocols; Accession Treaty texts",
+          "source_url": "https://eur-lex.europa.eu/collection/eu-law/treaties.html"
+        },
+        {
+          "id": "SOV-LEGAL-010",
+          "source_name": "Edinburgh Agreement (1992); Danish Ministry of Foreign Affairs — Denmark's EU opt-outs",
+          "source_url": "https://www.thedanishparliament.dk/en/eu-information-centre/the-danish-opt-outs-from-eu-cooperation"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Afnám varnarundanþágunnar 2022 sýnir að undanþágur eru ekki endanlegar — pólitískar aðstæður geta breytt forsendum. Þetta er mikilvægt samhengi þegar rætt er um möguleg fordæmi fyrir Ísland.",
+      "confidence": 0.95,
       "speakers": [
         {
           "name": "Ole Anton Bieltvedt",
@@ -294,6 +343,54 @@
     },
     {
       "claim": {
+        "original_quote": "takmörkun á kaupum annarra ESB-íbúa á fasteignum á Malta",
+        "claim_text": "Malta fékk undanþágu frá því að erlendum ESB-borgurum væri heimilt að kaupa fasteignir á Malta.",
+        "category": "housing",
+        "claim_type": "legal_assertion",
+        "confidence": 0.9
+      },
+      "verdict": "supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L:2003:236:TOC\" title=\"European Commission — 2003 Act of Accession; Eurostat\" target=\"_blank\" rel=\"noopener\">PREC-HIST-020</a> staðfestir skýrt að aðildarsáttmáli Möltu innihélt «derogation on the acquisition of secondary (holiday) residences by non-residents to prevent property market distortion». <a href=\"https://www.centralbankmalta.org/financial-stability\" title=\"Central Bank of Malta — Financial Stability Report; Eurostat — House price statistics\" target=\"_blank\" rel=\"noopener\">HOUSING-PRECEDENT-003</a> bætir við að Malta setti lágmarksverð á fasteignir sem erlendir aðilar geta keypt (275.000 evrur). Fullyrðingin er rétt.",
+      "supporting_evidence": [
+        {
+          "id": "PREC-HIST-020",
+          "source_name": "European Commission — 2003 Act of Accession; Eurostat",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L:2003:236:TOC"
+        },
+        {
+          "id": "HOUSING-PRECEDENT-003",
+          "source_name": "Central Bank of Malta — Financial Stability Report; Eurostat — House price statistics",
+          "source_url": "https://www.centralbankmalta.org/financial-stability"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Undanþágan náði til orlofshúsnæðis, ekki allra fasteignakaupa. Ísland hefur þegar frjálsa fjármagnsflutninga og búseturétt ESB-borgara í gegnum EES-samninginn, þannig að ESB-aðild myndi ekki breyta stöðunni varðandi fasteignakaup.",
+      "confidence": 0.9,
+      "speakers": [
+        {
+          "name": "Ole Anton Bieltvedt",
+          "type": "individual",
+          "role": "samfélagsrýnir",
+          "party": null,
+          "stance": "pro_eu",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        },
+        {
+          "name": "Malta",
+          "type": "institution",
+          "role": "ESB aðildarríki",
+          "party": null,
+          "stance": "neutral",
+          "attribution": "mentioned",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
         "original_quote": "fóstureyðingar fengust áfram bannaðar á Möltu",
         "claim_text": "Malta fékk undanþágu sem varðveitti bann við fóstureyðingum við inngöngu í ESB.",
         "category": "sovereignty",
@@ -379,18 +476,29 @@
     },
     {
       "claim": {
-        "original_quote": "eyjunni Gozo voru áfram tryggð þau sérstöku réttindi að hún væri «fríríki», þar sem vöru mætti selja án virðisaukaskatts",
-        "claim_text": "Eyjunni Gozo var tryggður sérstatur sem «fríríki» þar sem vöru mætti selja án virðisaukaskatts.",
-        "category": "trade",
+        "original_quote": "Pólland fékk undanþágu frá því að taka upp regluverk ESB um grunn mannréttindi (EU Charter of Fundamental Rights)",
+        "claim_text": "Pólland fékk undanþágu frá að taka upp regluverk ESB um grundvallarmannréttindi (EU Charter of Fundamental Rights).",
+        "category": "eea_eu_law",
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Engar heimildir í staðreyndagrunninum fjalla um sérstöðu Gozo-eyju innan ESB hvað varðar virðisaukaskatt eða fríhafnarstöðu. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L:2003:236:TOC\" title=\"European Commission — 2003 Act of Accession; Eurostat\" target=\"_blank\" rel=\"noopener\">PREC-HIST-020</a> nefnir ýmis sérákvæði í aðildarsáttmála Möltu en Gozo kemur hvergi fyrir. Ekki er hægt að staðfesta eða hrekja fullyrðinguna með fyrirliggjandi gögnum.",
-      "supporting_evidence": [],
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1\" title=\"Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-006</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> staðfesta að Pólland (og Bretland) hafa bókun (protocol) um sáttmála ESB um grundvallarréttindi. Orðið «undanþága» er þó ekki nákvæmt. Bókunin felur ekki í sér fulla undanþágu frá sáttmálanum heldur takmarkar túlkun hans — Evrópudómstóllinn hefur staðfest í dómi sínum (N.S. gegn Secretary of State, 2011) að bókunin veiti ekki raunverulega undanþágu. Réttara er að tala um «túlkunarbókun» en «undanþágu».",
+      "supporting_evidence": [
+        {
+          "id": "SOV-LEGAL-006",
+          "source_name": "Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1"
+        },
+        {
+          "id": "EEA-LEGAL-012",
+          "source_name": "European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Gozo-eyjan er ekki nefnd í neinum heimildum staðreyndagrunnsins. Fullyrðingin gæti átt við um tiltekna skattskilyrði eða sérákvæði í aðildarsáttmálanum sem liggja ekki fyrir í gögnum okkar.",
-      "confidence": 0.3,
+      "missing_context": "Bókun Póllands um sáttmála ESB um grundvallarréttindi var samþykkt með Lissabon-samningnum 2007 og ætlaður tilgangur hennar var að koma í veg fyrir að ESB-dómstóllinn beitti sáttmálanum til að útvíkka valdsvið ESB gagnvart pólskum lögum, einkum varðandi siðferðileg og félagsleg réttindi. Lagalegt mat er þó að bókunin veiti ekki raunverulega undanþágu — fullyrðingin er því of sterk í orðalagi sínu.",
+      "confidence": 0.65,
       "speakers": [
         {
           "name": "Ole Anton Bieltvedt",
@@ -403,7 +511,55 @@
           "credibility": null
         },
         {
-          "name": "Malta",
+          "name": "Pólland",
+          "type": "institution",
+          "role": "ESB aðildarríki",
+          "party": null,
+          "stance": "neutral",
+          "attribution": "mentioned",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "Svíþjóð tók sér undanþágu frá upptöku evru",
+        "claim_text": "Svíþjóð tók sér undanþágu frá upptöku evrunnar.",
+        "category": "currency",
+        "claim_type": "legal_assertion",
+        "confidence": 0.9
+      },
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014\" title=\"Treaty on the Functioning of the European Union, Article 140\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-004</a> staðfestir að nýjum aðildarríkjum beri skylda að taka upp evru en engin framfylgd eða tímafrestur fylgi. <a href=\"https://eur-lex.europa.eu/collection/eu-law/treaties.html\" title=\"European Parliament — EU Treaties and Protocols; Accession Treaty texts\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-023</a> lýsir stöðu Svíþjóðar nákvæmlega: Svíþjóð hefur «de facto undanþágu» — þrátt fyrir að ekkert formlegt undanþáguákvæði sé í aðildarsamningnum forðast Svíþjóð gengisgangráðið (ERM II) vísvitandi og Framkvæmdastjórnin samþykkir það. Fullyrðingin um «undanþágu» er því of sterk — réttara væri að lýsa þessu sem raunverulegri en ekki formlegri undanþágu.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-023",
+          "source_name": "European Parliament — EU Treaties and Protocols; Accession Treaty texts",
+          "source_url": "https://eur-lex.europa.eu/collection/eu-law/treaties.html"
+        },
+        {
+          "id": "SOV-LEGAL-004",
+          "source_name": "Treaty on the Functioning of the European Union, Article 140",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Svíþjóð hefur enga formlega undanþágu frá evruupptöku, ólíkt Danmörku sem samdi um lagalega bindandi undanþágu í Edinborgar-samningnum 1992 (<a href=\"https://www.thedanishparliament.dk/en/eu-information-centre/the-danish-opt-outs-from-eu-cooperation\" title=\"Edinburgh Agreement (1992); Danish Ministry of Foreign Affairs — Denmark's EU opt-outs\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-010</a>). Svíar héldu þjóðaratkvæðagreiðslu 2003 þar sem 55,9% greiddu atkvæði gegn evrunni og hafa síðan forðast ERM II. Þetta er «de facto» undanþága sem ESB hefur sætt sig við, ekki formleg lagaleg undanþága (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a>).",
+      "confidence": 0.88,
+      "speakers": [
+        {
+          "name": "Ole Anton Bieltvedt",
+          "type": "individual",
+          "role": "samfélagsrýnir",
+          "party": null,
+          "stance": "pro_eu",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        },
+        {
+          "name": "Svíþjóð",
           "type": "institution",
           "role": "ESB aðildarríki",
           "party": null,
@@ -465,76 +621,28 @@
     },
     {
       "claim": {
-        "original_quote": "Í september 2008 fór héðan svokölluð 12 manna Evrópunefnd forsætisráðuneytisins til Brussel til fundar við Olli Rehn, þá kommissar stækkunarmála",
-        "claim_text": "Í september 2008 fór 12 manna Evrópunefnd forsætisráðuneytisins Íslands til Brussel á fund með Olli Rehn, þáverandi kommissar stækkunarmála.",
-        "category": "precedents",
+        "original_quote": "Á 38. landsfundi Sjálfstæðisflokksins 2009 var ítarlega fjallað um mögulega aðild Íslands að ESB og upptöku evru.",
+        "claim_text": "Á 38. landsfundi Sjálfstæðisflokksins árið 2009 var fjallað ítarlega um mögulega ESB-aðild Íslands og evrutöku.",
+        "category": "party_positions",
         "claim_type": "statistic",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Engar heimildir í staðreyndagrunninum fjalla um Evrópunefnd forsætisráðuneytisins eða fund hennar við Olli Rehn í september 2008. <a href=\"https://ec.europa.eu/commission/presscorner/detail/en/ac_25_1887\" title=\"European Commission — Press Corner; EEAS\" target=\"_blank\" rel=\"noopener\">EEA-DATA-015</a> fjallar um fundi Kristrúnar Frostadóttur og von der Leyen 2025, sem er allt annað tímabil. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/\" title=\"Samningahóparnir — Utanríkisráðuneytið, Aðildarviðræður við Evrópusambandið\" target=\"_blank\" rel=\"noopener\">EEA-DATA-012</a> fjallar um aðildarviðræður 2010–2013 en nefnir ekki þennan fund. Gögn til staðfestingar eða hrekkingar skortir.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "missing_context": "Staðreyndagrunnurinn inniheldur ekki heimildir um forsögu ESB-umsóknar Íslands haustið 2008. Olli Rehn var raunverulega framkvæmdastjóri stækkunarmála ESB á þessum tíma, en sjálfur fundurinn er ekki sannreyndur.",
-      "confidence": 0.3,
-      "speakers": [
-        {
-          "name": "Ole Anton Bieltvedt",
-          "type": "individual",
-          "role": "samfélagsrýnir",
-          "party": null,
-          "stance": "pro_eu",
-          "attribution": "asserted",
-          "stance_score": null,
-          "credibility": null
-        },
-        {
-          "name": "Olli Rehn",
-          "type": "individual",
-          "role": "kommissar stækkunarmála",
-          "party": null,
-          "stance": "neutral",
-          "attribution": "mentioned",
-          "stance_score": null,
-          "credibility": null
-        },
-        {
-          "name": "12 manna Evrópunefnd forsætisráðuneytisins",
-          "type": "institution",
-          "role": "ríkisstofnun",
-          "party": null,
-          "stance": "neutral",
-          "attribution": "mentioned",
-          "stance_score": null,
-          "credibility": null
-        }
-      ]
-    },
-    {
-      "claim": {
-        "original_quote": "Viðmælendur nefndarinnar töldu líkur á, að Ísland gæti náð fram sérlausnum í fiskveiðistjórnun. Íslendingar hafi sérþekkingu á sviðinu og geti sýnt fram á árangur við verndun fiskistofna, stjórnun veiða og sjálfbæra þróun.",
-        "claim_text": "Skýrsla 12 manna Evrópunefndarinnar 2008 taldi líkur á að Ísland gæti náð fram sérlausnum í fiskveiðistjórnun við ESB-aðild.",
-        "category": "fisheries",
-        "claim_type": "opinion",
-        "confidence": 0.9
-      },
-      "verdict": "unverifiable",
-      "explanation": "Skýrsla Evrópunefndarinnar frá 2008 er ekki í staðreyndagrunninum. <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> nefnir skýrslu Hagfræðistofnunar Háskóla Íslands frá 2014 sem komst að þeirri niðurstöðu að varanlegar undanþágur frá sameiginlegri sjávarútvegsstefnu ESB væru ólíklegar. POL-DATA-005 staðfestir að sérþekking Íslands á fiskveiðistjórnun er almennt viðurkennd. Sjálfan efnisþáttinn má tengja við heimildir, en upprunaskýrslan er ekki í gagnagrunninum.",
+      "verdict": "partially_supported",
+      "explanation": "POL-DATA-006 staðfestir að á 38. landsfundi Sjálfstæðisflokksins hafi innri umræða átt sér stað um ESB — Bjarni Benediktsson lýsti skammri hreyfingu gagnvart endurskoðun ESB-málsins eftir hrunið 2008. <a href=\"https://uni.hi.is/baldurt/files/2012/08/Iceland-EU-Baldur-Alyson-Greham.pdf\" title=\"Capacent Gallup / Social Science Research Institute, University of Iceland\" target=\"_blank\" rel=\"noopener\">PREC-HIST-005</a> staðfestir að umsókn Íslands um ESB-aðild var lögð fram 2009 í kjölfar fjármálakreppunnar, þegar stuðningur náði hámarki. Þó heimildirnar nefni landsfund flokksins og ESB-umræðu á tímabilinu staðfesta þær ekki sérstaklega að 38. landsfundur hafi fjallað «ítarlega» um ESB-aðild og evrutöku. Nýju heimildirnar (<a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> og <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — EU membership polling series 2009–2026; Capacent/MMR — supplementary polls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-004</a>) fjalla um annað tímabil og breyta ekki þessari mynd.",
       "supporting_evidence": [
         {
-          "id": "POL-DATA-005",
-          "source_name": "POL-DATA-005",
+          "id": "POL-DATA-006",
+          "source_name": "Sjálfstæðisflokkur — Party congresses and manifestos 1991–2025; Morgunblaðið archives",
           "source_url": null
-        }
-      ],
-      "contradicting_evidence": [
+        },
         {
-          "id": "EEA-DATA-014",
-          "source_name": "Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)",
-          "source_url": "https://ioes.hi.is/en/institute-economic-studies"
+          "id": "PREC-HIST-005",
+          "source_name": "Capacent Gallup / Social Science Research Institute, University of Iceland",
+          "source_url": "https://uni.hi.is/baldurt/files/2012/08/Iceland-EU-Baldur-Alyson-Greham.pdf"
         }
       ],
-      "missing_context": "Skýrsla 12 manna nefndarinnar (2008) er ekki í staðreyndagrunni. <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> vísar til skýrslu Hagfræðistofnunar 2014 sem taldi varanlegar undanþágur ólíklegar og mælti með því að prófa samningastöðu í raunverulegum viðræðum. Formleg afstaða ESB er að sameiginlega sjávarútvegsstefnan sé ekki samningsatriði.",
+      "contradicting_evidence": [],
+      "missing_context": "Engin heimild lýsir dagskrá 38. landsfundar Sjálfstæðisflokksins nákvæmlega. Staðhæfingin um «ítarlega» umfjöllun um ESB-aðild og evrutöku er ekki staðfest beint — POL-DATA-006 nefnir aðeins almenna innri spennu innan flokksins um ESB-málið á þessu tímabili.",
       "confidence": 0.4,
       "speakers": [
         {
@@ -548,11 +656,11 @@
           "credibility": null
         },
         {
-          "name": "12 manna Evrópunefnd forsætisráðuneytisins",
-          "type": "institution",
-          "role": "ríkisstofnun",
-          "party": null,
-          "stance": "neutral",
+          "name": "Sjálfstæðisflokkurinn",
+          "type": "party",
+          "role": "pólitískur flokkur",
+          "party": "Sjálfstæðisflokkur",
+          "stance": "mixed",
           "attribution": "mentioned",
           "stance_score": null,
           "credibility": null
@@ -598,92 +706,39 @@
     },
     {
       "claim": {
-        "original_quote": "Aðlögunartíma fyrir úrvinnsluiðnað landbúnaðarins",
-        "claim_text": "Sjálfstæðisflokkurinn stefndi á aðlögunartíma fyrir úrvinnsluiðnað landbúnaðarins sem eitt af samningsmarkmiðum sínum 2009.",
-        "category": "agriculture",
+        "original_quote": "trygging sögulegra réttinda Íslendinga til veiða innan 200 mílna",
+        "claim_text": "Sjálfstæðisflokkurinn stefndi á að söguleg réttindi Íslendinga til veiða innan 200 mílna yrðu tryggð í ESB-samningi.",
+        "category": "fisheries",
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Engin heimild í staðreyndagrunninum staðfestir þetta tiltekna samningsmarkmið Sjálfstæðisflokksins. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Aðildarviðræður Íslands og ESB — Landbúnaðarkaflinn (Chapter 11); Utanríkisráðuneytið\" target=\"_blank\" rel=\"noopener\">EEA-DATA-013</a> nefnir aðlögunartímabil sem hluta af samningsstöðu ríkisstjórnarinnar í landbúnaði — «extended transition periods for tariff reduction» — en tengir þau ekki við Sjálfstæðisflokkinn sérstaklega. Þetta samræmist almennt samningamarkmiðum en staðfesting skortir.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "missing_context": "<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Aðildarviðræður Íslands og ESB — Landbúnaðarkaflinn (Chapter 11); Utanríkisráðuneytið\" target=\"_blank\" rel=\"noopener\">EEA-DATA-013</a> staðfestir að ríkisstjórnin (ekki Sjálfstæðisflokkurinn) stefndi á aðlögunartímabil í landbúnaði. Aðlögunartímabil eru stöðluð leið í ESB-viðræðum og eru eðlileg samningsmarkmið.",
-      "confidence": 0.35,
-      "speakers": [
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin segir að Sjálfstæðisflokkurinn hafi stefnt á að tryggja söguleg veiðiréttindi Íslendinga innan 200 mílna í ESB-samningi. Heimildir POL-DATA-006 og <a href=\"https://www.althingi.is/thingmenn/thingflokkar/thingflokkar/\" title=\"Althingi — Party platforms and election results\" target=\"_blank\" rel=\"noopener\">POL-DATA-002</a> staðfesta að flokkurinn hefur lengi lagt áherslu á sjávarútveg og fullveldi sem meginrökin gegn ESB-aðild. <a href=\"https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf\" title=\"Icelandic Act on the Exclusive Economic Zone No. 41/1979\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-002</a> lýsir efnahagslögsögu Íslands (758.000 km²). Ný heimild <a href=\"https://xd.is/2026/03/09/thjodin-a-betra-skilid/\" title=\"Sjálfstæðisflokkurinn — party website (xd.is); Miðflokkurinn — public statements; Gallup Þjóðarpúls party breakdown March 2026\" target=\"_blank\" rel=\"noopener\">POL-DATA-020</a> staðfestir andstöðu flokksins og áherslu á náttúruauðlindir. Hins vegar nefna heimildir ekki sérstaklega að flokkurinn hafi sett fram formlega stefnu um að tryggja veiðiréttindi «í ESB-samningi» — flokkurinn hefur fremur hafnað aðild í heild sinni en sett skilyrði um veiðiréttindi.",
+      "supporting_evidence": [
         {
-          "name": "Ole Anton Bieltvedt",
-          "type": "individual",
-          "role": "samfélagsrýnir",
-          "party": null,
-          "stance": "pro_eu",
-          "attribution": "asserted",
-          "stance_score": null,
-          "credibility": null
+          "id": "POL-DATA-006",
+          "source_name": "Sjálfstæðisflokkur — Party congresses and manifestos 1991–2025; Morgunblaðið archives",
+          "source_url": null
         },
         {
-          "name": "Sjálfstæðisflokkurinn",
-          "type": "party",
-          "role": "pólitískur flokkur",
-          "party": "Sjálfstæðisflokkur",
-          "stance": "mixed",
-          "attribution": "mentioned",
-          "stance_score": null,
-          "credibility": null
-        }
-      ]
-    },
-    {
-      "claim": {
-        "original_quote": "nýtingu vatns- og jarðhitaauðlinda",
-        "claim_text": "Sjálfstæðisflokkurinn stefndi á sérlausnir varðandi nýtingu vatns- og jarðhitaauðlinda sem samningsmarkmið 2009.",
-        "category": "sovereignty",
-        "claim_type": "legal_assertion",
-        "confidence": 0.9
-      },
-      "verdict": "unverifiable",
-      "explanation": "Heimildir innihalda ekki landsfundarskjöl Sjálfstæðisflokksins um þetta markmið. <a href=\"https://stjornlagarad.is/other_files/stjornlagarad/Frumvarp-enska.pdf\" title=\"Stjórnlagaráð — A Proposal for a new Constitution for the Republic of Iceland (English translation)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-017</a> fjallar um auðlindaákvæðið í drögum að nýrri stjórnarskrá sem fékk 82,9% stuðning í þjóðaratkvæðagreiðslu 2012, sem tengist náttúruauðlindum. Samhengið bendir til þess að auðlindamál hafi verið á dagskrá, en tengingin við Sjálfstæðisflokkinn sérstaklega er ekki staðfest.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "missing_context": "<a href=\"https://stjornlagarad.is/other_files/stjornlagarad/Frumvarp-enska.pdf\" title=\"Stjórnlagaráð — A Proposal for a new Constitution for the Republic of Iceland (English translation)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-017</a> og <a href=\"https://www.stjornarskrarfelagid.is/\" title=\"Stjórnarskrárfélagið — Public statements and press releases; 2012 constitutional referendum results\" target=\"_blank\" rel=\"noopener\">SOV-DATA-019</a> nefna almennar íslenskar umræður um auðlindavernd en staðfesta ekki þetta sem samningsmarkmið Sjálfstæðisflokksins. Auðlindamál hafa verið viðkvæm á Íslandi og náttúruauðlindir eru utan gildissviðs EES-samningsins.",
-      "confidence": 0.3,
-      "speakers": [
-        {
-          "name": "Ole Anton Bieltvedt",
-          "type": "individual",
-          "role": "samfélagsrýnir",
-          "party": null,
-          "stance": "pro_eu",
-          "attribution": "asserted",
-          "stance_score": null,
-          "credibility": null
+          "id": "POL-DATA-002",
+          "source_name": "Althingi — Party platforms and election results",
+          "source_url": "https://www.althingi.is/thingmenn/thingflokkar/thingflokkar/"
         },
         {
-          "name": "Sjálfstæðisflokkurinn",
-          "type": "party",
-          "role": "pólitískur flokkur",
-          "party": "Sjálfstæðisflokkur",
-          "stance": "mixed",
-          "attribution": "mentioned",
-          "stance_score": null,
-          "credibility": null
+          "id": "FISH-LEGAL-002",
+          "source_name": "Icelandic Act on the Exclusive Economic Zone No. 41/1979",
+          "source_url": "https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf"
+        },
+        {
+          "id": "POL-DATA-020",
+          "source_name": "Sjálfstæðisflokkurinn — party website (xd.is); Miðflokkurinn — public statements; Gallup Þjóðarpúls party breakdown March 2026",
+          "source_url": "https://xd.is/2026/03/09/thjodin-a-betra-skilid/"
         }
-      ]
-    },
-    {
-      "claim": {
-        "original_quote": "vörn íslenzks velferðarkerfis",
-        "claim_text": "Sjálfstæðisflokkurinn stefndi á sérlausnir til að vernda íslenska velferðarkerfið í hugsanlegum ESB-samningum 2009.",
-        "category": "party_positions",
-        "claim_type": "legal_assertion",
-        "confidence": 0.9
-      },
-      "verdict": "unverifiable",
-      "explanation": "Engin heimild í staðreyndagrunninum nefnir velferðarkerfi sem sérstakt samningsmarkmið Sjálfstæðisflokksins. POL-DATA-006 lýsir almennri afstöðu flokksins á ESB-mál en nefnir ekki velferðarmál sérstaklega. Flokkurinn hefur lagt áherslu á sjávarútveg og fullveldi sem meginstoðir andstöðu sinnar.",
-      "supporting_evidence": [],
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Velferðarmál eru almennt ekki meðal aðaláhyggjuefna í ESB-umræðu á Íslandi — ESB hefur takmarkaðar heimildir á sviði velferðarmála og helstu áhrifin kæmu í gegnum fjármagnsflutninga og vinnumarkaðsreglur sem þegar falla undir EES-samninginn.",
-      "confidence": 0.3,
+      "missing_context": "Sjálfstæðisflokkurinn hefur yfirleitt verið andvígur ESB-aðild frekar en að setja skilyrði um hana. Á árunum 2009–2013, þegar viðræður stóðu yfir, var Sjálfstæðisflokkurinn í stjórnarandstöðu (2009–2013) og síðan leiddi hann ríkisstjórn sem frysti viðræðurnar. Fullyrðingin kann að eiga við um afstöðu einstakra þingmanna eða tímabundna stefnu, en heimildir sýna ekki formlega flokksstefnu um að tryggja veiðiréttindi «í ESB-samningi».",
+      "confidence": 0.45,
       "speakers": [
         {
           "name": "Ole Anton Bieltvedt",
@@ -744,6 +799,82 @@
           "credibility": null
         }
       ]
+    },
+    {
+      "claim": {
+        "original_quote": "Samningaumleitanir milli Tyrkja og ESB hafa staðið meira eða minna í 37 ár.",
+        "claim_text": "Samningaumleitanir milli Tyrkja og ESB hafa staðið í meira eða minna í 37 ár.",
+        "category": "precedents",
+        "claim_type": "statistic",
+        "confidence": 0.9
+      },
+      "verdict": "partially_supported",
+      "explanation": "Tyrkland sótti um aðild að Evrópska efnahagsbandalaginu árið 1987, sem er 39 árum síðan miðað við 2026. Samkvæmt <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — Steps towards joining; DG NEAR accession negotiation methodology\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-013</a> hafa formlegar aðildarviðræður þó aðeins staðið frá 2005, og flestar samningalotum hafa verið lokaðar vegna pólitískra ágreiningsmála. Fullyrðingin um 37 ár vísar líklega til tímans frá umsókninni 1987, sem er nálægt en ekki nákvæmt — réttara væri um 39 ár. Auk þess jafngildir «samningaumleitanir» ekki formlegum viðræðum sem hófust 2005.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-013",
+          "source_name": "European Commission — Steps towards joining; DG NEAR accession negotiation methodology",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Heimildir greina ekki nákvæmlega hvenær Tyrkland sótti um aðild (1987) og talan 37 ár virðist miða við annan viðmiðunarpunkt. Formlegar viðræður hófust fyrst 2005 og hafa verið frystar að stórum hluta — ekki samfellt samningaferli í 37 ár.",
+      "confidence": 0.65,
+      "speakers": [
+        {
+          "name": "Ole Anton Bieltvedt",
+          "type": "individual",
+          "role": "samfélagsrýnir",
+          "party": null,
+          "stance": "pro_eu",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "ESB aðild Dana er eins og svissneskur ostur. Allur í götum.",
+        "claim_text": "ESB-aðild Dana hefur verið lýst sem svissneskum osti — allur í götum — vegna fjölda undanþágna.",
+        "category": "precedents",
+        "claim_type": "comparison",
+        "confidence": 0.9
+      },
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að Danmörk hefur fjölmargar undanþágur frá ESB-regluverkinu. <a href=\"https://www.thedanishparliament.dk/en/eu-information-centre/the-danish-opt-outs-from-eu-cooperation\" title=\"Edinburgh Agreement (1992); Danish Ministry of Foreign Affairs — Denmark's EU opt-outs\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-010</a> nefnir fjórar undanþágur frá Maastricht-samningnum (evra, varnarmál, dómsmál/innanríkismál og ESB-ríkisborgararéttur) og <a href=\"https://eur-lex.europa.eu/collection/eu-law/treaties.html\" title=\"European Parliament — EU Treaties and Protocols; Accession Treaty texts\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-023</a> bætir við að varnarundanþágan var felld niður 2022 en hinar þrjár eru enn í gildi. Samlíkingin við «svissneskan ost» er myndræn lýsing sem gefur til kynna að undanþágurnar séu svo fjölmargar að aðildin sé «öll í götum». Þrjár til fjórar undanþágur eru vissulega óvenjulega margar samanborið við önnur ESB-ríki, en myndlíkingin er ýkt — Danmörk tekur fullan þátt á flestum sviðum ESB-samstarfsins.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-LEGAL-006",
+          "source_name": "Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1"
+        },
+        {
+          "id": "SOV-LEGAL-010",
+          "source_name": "Edinburgh Agreement (1992); Danish Ministry of Foreign Affairs — Denmark's EU opt-outs",
+          "source_url": "https://www.thedanishparliament.dk/en/eu-information-centre/the-danish-opt-outs-from-eu-cooperation"
+        },
+        {
+          "id": "EEA-LEGAL-023",
+          "source_name": "European Parliament — EU Treaties and Protocols; Accession Treaty texts",
+          "source_url": "https://eur-lex.europa.eu/collection/eu-law/treaties.html"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Heimildir staðfesta undanþágurnar en ekki myndlíkinguna um «svissneskan ost». Þrátt fyrir undanþágurnar er Danmörk fullgilt aðildarríki á innri markaðinum, í sameiginlegri landbúnaðarstefnu, sameiginlegri sjávarútvegsstefnu og á öllum öðrum sviðum. Undanþágurnar taka einungis til afmarkaðra sviða og myndlíkingin gefur of sterka mynd af því hversu «götuð» aðildin er.",
+      "confidence": 0.7,
+      "speakers": [
+        {
+          "name": "Ole Anton Bieltvedt",
+          "type": "individual",
+          "role": "samfélagsrýnir",
+          "party": null,
+          "stance": "pro_eu",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
     }
   ],
   "participants": [
@@ -753,11 +884,11 @@
       "party": null,
       "role_in_article": "author",
       "attribution_type": "asserted",
-      "claim_count": 16,
+      "claim_count": 18,
       "verdicts": {
-        "partially_supported": 4,
-        "supported": 3,
-        "unverifiable": 8,
+        "partially_supported": 10,
+        "supported": 5,
+        "unverifiable": 2,
         "misleading": 1
       },
       "stance": "pro_eu",

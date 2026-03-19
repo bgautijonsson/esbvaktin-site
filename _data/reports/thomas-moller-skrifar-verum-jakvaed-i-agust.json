@@ -10,15 +10,17 @@
   "summary": "Greindar 21 fullyrðingar .",
   "capsule": "Ísland uppfyllir nú þegar flest inngönguskilyrði ESB hvað varðar efnahag, lýðræði og réttarríki — og sótti í raun um aðild árið 2009, enda eru aðildarviðræður ekki þversagnarkennt nýlunduferli heldur lyklaðar að sérstöðu hvers ríkis með sérákvæðum. Athyglisvert er þó að fiskveiðikafli viðræðnanna (kafli 13) var aldrei lokið árið 2013 og sjávarútvegsmál gætu verið þrálátari í samningaferlinu en greinin gefur í skyn. Jafnframt er vert að vita að evran kæmi ekki strax við aðild — samkvæmt fordæmum eins og Króatíu liður nokkur ár í ERM II áður en ríki fullnægir öllum skilyrðum gjaldmiðilsbreytingarinnar.",
   "verdict_counts": {
-    "supported": 3,
-    "unverifiable": 5,
+    "supported": 6,
     "misleading": 1,
-    "partially_supported": 7
+    "unverifiable": 2,
+    "partially_supported": 9
   },
-  "claim_count": 16,
+  "claim_count": 18,
   "dominant_category": "precedents",
   "categories": [
     "currency",
+    "eea_eu_law",
+    "energy",
     "fisheries",
     "other",
     "party_positions",
@@ -57,44 +59,6 @@
       "contradicting_evidence": [],
       "missing_context": null,
       "confidence": 0.98,
-      "speakers": [
-        {
-          "name": "Thomas Möller",
-          "type": "individual",
-          "role": "pistlahöfundur",
-          "party": "Viðreisn",
-          "stance": "pro_eu",
-          "attribution": "asserted",
-          "stance_score": null,
-          "credibility": null
-        }
-      ]
-    },
-    {
-      "claim": {
-        "original_quote": "Þingmenn úr öllum stjórnmálaflokkum á Alþingi greiddu atkvæði með umsókninni.",
-        "claim_text": "Þingmenn úr öllum stjórnmálaflokkum á Alþingi greiddu atkvæði með umsókninni um ESB-aðild árið 2009.",
-        "category": "party_positions",
-        "claim_type": "legal_assertion",
-        "confidence": 0.9
-      },
-      "verdict": "unverifiable",
-      "explanation": "Heimildir í staðreyndagrunni fjalla um umsóknina sjálfa og flokkafstöðu, en engin þeirra staðfestir beint að þingmenn úr öllum flokkum hafi greitt atkvæði með umsókninni. <a href=\"https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/\" title=\"Althingi — Historical records; European Commission accession records\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-010</a> sýnir að ríkisstjórn Samfylkingar og VG lagði fram umsóknina, en Sjálfstæðisflokkur og Framsóknarflokkur voru andvígir ESB-aðild. <a href=\"https://www.althingi.is/thingmenn/thingflokkar/thingflokkar/\" title=\"Althingi — Party platforms and election results\" target=\"_blank\" rel=\"noopener\">POL-DATA-001</a> staðfestir að aðeins Samfylking og Viðreisn styðja ESB-aðild formlega. Fullyrðingin kann að eiga við um einstaka þingmenn úr mörgum flokkum, en heimildir duga ekki til að staðfesta að þingmenn úr \"öllum\" flokkum hafi greitt atkvæði með.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [
-        {
-          "id": "POL-DATA-001",
-          "source_name": "Althingi — Party platforms and election results",
-          "source_url": "https://www.althingi.is/thingmenn/thingflokkar/thingflokkar/"
-        },
-        {
-          "id": "POLL-DATA-011",
-          "source_name": "Gallup Ísland — EU support by party affiliation (November 2025)",
-          "source_url": "https://www.gallup.is/frettir/nato-og-esb/"
-        }
-      ],
-      "missing_context": "Heimildir gefa ekki nákvæma sundurliðun atkvæðagreiðslunnar á Alþingi 2009. Til þess að staðfesta fullyrðinguna þyrfti fundargerð Alþingis um atkvæðagreiðsluna.",
-      "confidence": 0.5,
       "speakers": [
         {
           "name": "Thomas Möller",
@@ -213,6 +177,93 @@
     },
     {
       "claim": {
+        "original_quote": "Með aðild stækkar Evrópusambandið um 700 þúsund ferkílómetra af hafsvæðum auk þess sem Evrópa teygir sig inn á Norður Atlantshafið.",
+        "claim_text": "Með aðild Íslands að ESB stækkar Evrópusambandið um 700 þúsund ferkílómetra af hafsvæðum.",
+        "category": "fisheries",
+        "claim_type": "statistic",
+        "confidence": 0.9
+      },
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf\" title=\"Icelandic Act on the Exclusive Economic Zone No. 41/1979\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-002</a> staðfestir að efnahagslögsaga Íslands nái yfir um 758.000 ferkílómetra, sem er nálægt en ekki nákvæmlega 700.000 ferkílómetrar eins og fullyrðingin segir. Talan 700 þúsund er of lág um rúm 8%. Þá er rétt að ESB-aðild myndi færa þetta hafsvæði undir sameiginlegu sjávarútvegsstefnuna, en fullyrðingin notar orðið «stækkar» sem gefur til kynna sjálfkrafa tilfærslu — í reynd yrðu aðgangur og kvótaákvarðanir háðar samningaviðræðum, eins og <a href=\"https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf\" title=\"Icelandic Act on the Exclusive Economic Zone No. 41/1979\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-002</a> bendir á.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-LEGAL-002",
+          "source_name": "Icelandic Act on the Exclusive Economic Zone No. 41/1979",
+          "source_url": "https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Efnahagslögsagan er um 758.000 km² samkvæmt <a href=\"https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf\" title=\"Icelandic Act on the Exclusive Economic Zone No. 41/1979\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-002</a>, ekki 700.000. Hversu mikið af auðlindum lögsögunnar yrði «sameinað» undir sameiginlegu sjávarútvegsstefnunni fer eftir aðildarsamningi og aðlögunarfyrirkomulagi. Nýjar heimildir (<a href=\"https://www.gov.uk/government/statistics/uk-sea-fisheries-annual-statistics-report-2023\" title=\"UK Marine Management Organisation — UK Sea Fisheries Statistics 2023; UK Trade Info\" target=\"_blank\" rel=\"noopener\">FISH-COMP-005</a>, <a href=\"https://stecf.ec.europa.eu/reports_en\" title=\"European Commission — The EU Fishing Fleet reports (STECF Annual Economic Reports)\" target=\"_blank\" rel=\"noopener\">FISH-COMP-002</a>) lýsa reynslu annarra ríkja en breyta ekki grundvallarmyndinni um stærð svæðisins.",
+      "confidence": 0.82,
+      "speakers": [
+        {
+          "name": "Thomas Möller",
+          "type": "individual",
+          "role": "pistlahöfundur",
+          "party": "Viðreisn",
+          "stance": "pro_eu",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "Ísland uppfyllir nú þegar flest skilyrði sem eru sett af ESB um inngöngu hvað varðar efnahagslega stöðu, virkt markaðshagkerfi, stöðugt stjórnarfar, skilvirka stjórnsýslu, réttaríkið, stjórnsýslu, lýðræðishefð og grundvallarréttindi.",
+        "claim_text": "Ísland uppfyllir nú þegar flest skilyrði sem ESB setur um inngöngu hvað varðar efnahagslega stöðu, virkt markaðshagkerfi, stöðugt stjórnarfar, skilvirka stjórnsýslu, réttaríkið, lýðræðishefð og grundvallarréttindi.",
+        "category": "eea_eu_law",
+        "claim_type": "opinion",
+        "confidence": 0.9
+      },
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> staðfestir að Framkvæmdastjórn ESB mat Ísland sem «auðveldan» umsækjanda árið 2010 vegna sterkra lýðræðisstofnana og virks markaðshagkerfis. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application for membership of the European Union, SEC(2010) 153\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-020</a> bendir á að Ísland hafi lokað 11 af 27 samningaköflum á aðeins 18 mánuðum vegna mikils samræmis við regluverkið í gegnum EES. Hins vegar er fullyrðingin of víð þegar hún segir «flest skilyrði» — <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); OECD Economic Surveys: Iceland 2021\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-019</a> undirstrikar að landbúnaðarstefna, sem fellur utan EES, krefjist «algjörs endurskipulagningar», og <a href=\"https://eur-lex.europa.eu/statistics/legislative-acts-statistics.html\" title=\"EUR-Lex — Legislation statistics\" target=\"_blank\" rel=\"noopener\">EEA-DATA-003</a> bendir á að Ísland hefði þurft að taka upp löggjöf á sviðum sjávarútvegs, landbúnaðar, peningastefnu og réttarmála sem liggja utan EES. Efnahagsleg og stjórnarfarsleg skilyrði eru uppfyllt, en mikilvægir efnisþættir standa eftir.",
+      "supporting_evidence": [
+        {
+          "id": "TRADE-DATA-022",
+          "source_name": "European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "EEA-LEGAL-020",
+          "source_name": "European Commission — Opinion on Iceland's application for membership of the European Union, SEC(2010) 153",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "EEA-LEGAL-004",
+          "source_name": "Schengen Association Agreement with Iceland and Norway (2001)",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:21999A0710(02)"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "AGRI-DATA-019",
+          "source_name": "European Commission — Opinion on Iceland's application (SEC(2010) 153); OECD Economic Surveys: Iceland 2021",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "EEA-DATA-003",
+          "source_name": "EUR-Lex — Legislation statistics",
+          "source_url": "https://eur-lex.europa.eu/statistics/legislative-acts-statistics.html"
+        }
+      ],
+      "missing_context": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application for membership of the European Union, SEC(2010) 153\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-020</a> bendir á að forskot EES-aðildar gæti verið minna árið 2026 en 2010 vegna þess að regluverkið hefur stækkað á sviðum utan EES (Græni sáttmálinn, stafræn reglugerð, varnarmál). <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> bætir við að varanlegum undanþágum frá regluverkinu hafi verið hafnað í reynd síðan Króatía gekk inn 2013, og sjávarútvegur og landbúnaður krefjast nýrra viðræðna frá grunni. Fullyrðingin á rétt á sér um pólitísk og stofnanaleg skilyrði en vantar verulegt samhengi um efnislegar eyður.",
+      "confidence": 0.75,
+      "speakers": [
+        {
+          "name": "Thomas Möller",
+          "type": "individual",
+          "role": "pistlahöfundur",
+          "party": "Viðreisn",
+          "stance": "pro_eu",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
         "original_quote": "Við getum kennt öðrum Evrópulöndum að stýra sjálfbærum fiskveiðum.",
         "claim_text": "Ísland er meðal fremstu ríkja í heiminum í sjálfbærum fiskveiðum.",
         "category": "fisheries",
@@ -236,6 +287,49 @@
       "contradicting_evidence": [],
       "missing_context": "Heimildir fjalla um umfang veiða og kvótakerfið en meta ekki sjálfbærnivottanir eða stöðu fiskistofna sérstaklega. PREC-DATA-009 lýsir norskum fiskveiðum sem vel stýrðum, sem gefur til kynna að Ísland sé ekki eitt um framúrskarandi veiðistjórnun á Norðurlöndum.",
       "confidence": 0.65,
+      "speakers": [
+        {
+          "name": "Thomas Möller",
+          "type": "individual",
+          "role": "pistlahöfundur",
+          "party": "Viðreisn",
+          "stance": "pro_eu",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "Evrópa getur lært af okkur hvernig er best að vinna orku úr iðrum jarðar.",
+        "claim_text": "Ísland er meðal fremstu ríkja í heiminum í orkuvinnslu úr jarðhita.",
+        "category": "energy",
+        "claim_type": "opinion",
+        "confidence": 0.9
+      },
+      "verdict": "supported",
+      "explanation": "<a href=\"https://orkustofnun.is/en/information/numerical_data/heat\" title=\"Orkustofnun — Geothermal Development and Research in Iceland 2023\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-002</a> staðfestir að Ísland er \"the world leader in per capita geothermal energy use\" með uppsett afl um 755 MW og jarðhitaupphitun á um 90% heimila landsins. Samkvæmt <a href=\"https://orkustofnun.is/en/information/publication/energy_data\" title=\"Orkustofnun — Energy Statistics in Iceland 2023\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-001</a> er Ísland nær einsdæmi meðal Evrópuríkja — næstum 100% raforkuvinnsla úr endurnýjanlegum orkugjöfum, þar af 30% úr jarðhita. <a href=\"https://orkustofnun.is/en/information/numerical_data/energy\" title=\"Orkustofnun (National Energy Authority) — Energy Statistics 2024\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-005</a> staðfestir 85% endurnýjanlega hlutdeild í heildarorkubúskap, hæsta hlutfall í Evrópu.",
+      "supporting_evidence": [
+        {
+          "id": "ENERGY-DATA-002",
+          "source_name": "Orkustofnun — Geothermal Development and Research in Iceland 2023",
+          "source_url": "https://orkustofnun.is/en/information/numerical_data/heat"
+        },
+        {
+          "id": "ENERGY-DATA-001",
+          "source_name": "Orkustofnun — Energy Statistics in Iceland 2023",
+          "source_url": "https://orkustofnun.is/en/information/publication/energy_data"
+        },
+        {
+          "id": "ENERGY-DATA-005",
+          "source_name": "Orkustofnun (National Energy Authority) — Energy Statistics 2024",
+          "source_url": "https://orkustofnun.is/en/information/numerical_data/energy"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Jarðhitaauðlindir eru staðbundnar og háðar eldvirkni. Reynsla Íslands er ekki beint yfirfæranleg til allra Evrópuríkja þar sem jarðhiti er takmörkuð auðlind.",
+      "confidence": 0.92,
       "speakers": [
         {
           "name": "Thomas Möller",
@@ -318,6 +412,44 @@
     {
       "claim": {
         "original_quote": "ESB gerir þessa samninga í krafti stærðarhagkvæmni Evrópusambandsins með sína 450 milljónir íbúa og um 33 milljónir fyrirtækja.",
+        "claim_text": "Evrópusambandið hefur 450 milljónir íbúa.",
+        "category": "trade",
+        "claim_type": "statistic",
+        "confidence": 0.9
+      },
+      "verdict": "supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-002</a> og SOV-DATA-003 vísa bæði til heildaríbúafjölda ESB og nota tölur sem samrýmast um 450 milljónum. Ísland myndi bæta við sig um 390.000 íbúum, sem er hverfandi hlutfall — um 0,087% samkvæmt SOV-DATA-003. Talan 450 milljónir er réttur ákveðinn ávöl tala.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-017",
+          "source_name": "Treaty on European Union, Article 16(4); European Parliament allocation rules",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016"
+        },
+        {
+          "id": "SOV-LEGAL-002",
+          "source_name": "Treaty on European Union, Article 16(4)",
+          "source_url": "https://eur-lex.europa.eu/summary/glossary/qualified_majority.html"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": null,
+      "confidence": 0.92,
+      "speakers": [
+        {
+          "name": "Thomas Möller",
+          "type": "individual",
+          "role": "pistlahöfundur",
+          "party": "Viðreisn",
+          "stance": "pro_eu",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "ESB gerir þessa samninga í krafti stærðarhagkvæmni Evrópusambandsins með sína 450 milljónir íbúa og um 33 milljónir fyrirtækja.",
         "claim_text": "Evrópusambandið hefur um 33 milljónir fyrirtækja.",
         "category": "trade",
         "claim_type": "statistic",
@@ -344,18 +476,40 @@
     },
     {
       "claim": {
-        "original_quote": "Með aðild að ESB fær Ísland hlut í um 40 viðskiptasamningum við 70 lönd í öllum heiminum, nú síðast við ríki Suður-Ameríku.",
-        "claim_text": "ESB hefur gert viðskiptasamning við ríki Suður-Ameríku.",
-        "category": "trade",
-        "claim_type": "legal_assertion",
+        "original_quote": "Mjög líklega eykst stöðugleiki í hagkerfinu okkar eftir inngöngu í ESB.",
+        "claim_text": "ESB-aðild mun líklega auka stöðugleika í hagkerfi Íslands.",
+        "category": "currency",
+        "claim_type": "prediction",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Heimildir í staðreyndagrunni nefna viðskiptanet ESB almennt (<a href=\"https://www.wto.org/english/tratop_e/tpr_e/tp554_e.htm\" title=\"WTO — Trade Policy Review: Iceland 2024; Iceland-China FTA text\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-021</a> talar um \"70+ lönd\") en engin þeirra staðfestir sérstaklega nýlegan samning við ríki Suður-Ameríku. Almennt er vitað að ESB og Mercosur-ríkin náðu pólitísku samkomulagi í desember 2024, en þessi staðreynd er ekki skjalfest í heimildum staðreyndagrunnsins.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "missing_context": "ESB-Mercosur samningurinn (Brasilía, Argentína, Úrúgvæ, Paragvæ) var tilkynntur í desember 2024 en hefur ekki verið formlega undirritaður. Þessi heimild vantar í staðreyndagrunn.",
-      "confidence": 0.35,
+      "verdict": "partially_supported",
+      "explanation": "Rök fyrir auknum stöðugleika eru til staðar — CURR-DATA-004 sýnir að stýrivextir á Íslandi eru mun hærri en í evrusvæðinu (8% á móti 2,75%), og <a href=\"https://www.sa.is/frettir\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> bendir á að SA áætli 2–3 prósentustiga lækkun á fjármagnskostnaði. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — EU polls cross-referenced with Hagstofa consumer confidence index\" target=\"_blank\" rel=\"noopener\">POLL-DATA-009</a> sýnir sterka fylgni á milli efnahagsóstöðugleika og stuðnings við ESB-aðild. Á hinn bóginn varar CURR-DATA-004 við því að lægri vextir gætu aukið eignaverðsbólur, og <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> bendir á að tap á sjálfstæðri peningastefnu sé verulegur málamiðlun.",
+      "supporting_evidence": [
+        {
+          "id": "CURR-DATA-004",
+          "source_name": "CURR-DATA-004",
+          "source_url": null
+        },
+        {
+          "id": "POL-DATA-017",
+          "source_name": "Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)",
+          "source_url": "https://vi.is/skyrslur/1667"
+        },
+        {
+          "id": "POL-DATA-012",
+          "source_name": "SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions",
+          "source_url": "https://www.sa.is/frettir"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "SOV-LEGAL-005",
+          "source_name": "Central Bank of Iceland — Monetary policy framework",
+          "source_url": "https://sedlabanki.is/peningastefna/"
+        }
+      ],
+      "missing_context": "Fullyrðingin sleppur umræðu um hvað tapast — sjálfstæð peningastefna og sveigjanleiki gengis. Krónan féll um 50% í hruninu 2008 og sá sveigjanleiki er talinn hafa flýtt bata efnahagslífsins. Evruaðild útilokar þann aðlögunarbúnað.",
+      "confidence": 0.65,
       "speakers": [
         {
           "name": "Thomas Möller",
@@ -371,40 +525,34 @@
     },
     {
       "claim": {
-        "original_quote": "Mjög líklega eykst stöðugleiki í hagkerfinu okkar eftir inngöngu í ESB.",
-        "claim_text": "ESB-aðild mun líklega auka stöðugleika í hagkerfi Íslands.",
-        "category": "currency",
-        "claim_type": "prediction",
+        "original_quote": "Við fáum örugglega aukið fjármagn til samgönguframkvæmda eins og önnur ný aðildarríki hafa fengið.",
+        "claim_text": "Önnur ný aðildarríki ESB hafa fengið aukið fjármagn til samgönguframkvæmda.",
+        "category": "precedents",
+        "claim_type": "comparison",
         "confidence": 0.9
       },
-      "verdict": "partially_supported",
-      "explanation": "Rök fyrir auknum stöðugleika eru til staðar — CURR-DATA-004 sýnir að stýrivextir á Íslandi eru mun hærri en í evrusvæðinu (8% á móti 2,75%), og <a href=\"https://sa.is/frettatengt/frettir/vinna-hafin-vid-uttekt-a-stodu-adildarvidraedna-vid-evropusambandid\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> bendir á að SA áætli 2–3 prósentustiga lækkun á fjármagnskostnaði. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — EU polls cross-referenced with Hagstofa consumer confidence index\" target=\"_blank\" rel=\"noopener\">POLL-DATA-009</a> sýnir sterka fylgni á milli efnahagsóstöðugleika og stuðnings við ESB-aðild. Á hinn bóginn varar CURR-DATA-004 við því að lægri vextir gætu aukið eignaverðsbólur, og <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> bendir á að tap á sjálfstæðri peningastefnu sé verulegur málamiðlun.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://cohesiondata.ec.europa.eu/overview\" title=\"European Commission — Cohesion Policy 2021–2027; Eurostat regional GDP data\" target=\"_blank\" rel=\"noopener\">EEA-DATA-016</a> staðfestir að byggðasjóðir ESB (um 392 milljarðar evra 2021–2027) styðja meðal annars samgönguframkvæmdir í aðildarríkjum, sérstaklega á svæðum sem eiga við fámenni og einangrun að stríða. <a href=\"https://cohesiondata.ec.europa.eu/overview\" title=\"European Commission — Cohesion Policy data; ERDF Regulation (EU) 2021/1058\" target=\"_blank\" rel=\"noopener\">HOUSING-PRECEDENT-001</a> nefnir Eistland, Króatíu og Möltu sem dæmi um ný aðildarríki sem hafa fengið fjármagn úr byggðasjóðum. <a href=\"https://eur-lex.europa.eu/collection/eu-law/treaties.html\" title=\"European Parliament — EU Treaties and Protocols; Accession Treaty texts\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-023</a> nefnir Finnland sem fékk sérstakar ráðstafanir vegna dreifbýlis. Fullyrðingin er almenn en rétt — ný aðildarríki hafa sannanlega fengið aukið fjármagn til innviðaframkvæmda, þar á meðal samgangna.",
       "supporting_evidence": [
         {
-          "id": "CURR-DATA-004",
-          "source_name": "CURR-DATA-004",
-          "source_url": null
+          "id": "EEA-DATA-016",
+          "source_name": "European Commission — Cohesion Policy 2021–2027; Eurostat regional GDP data",
+          "source_url": "https://cohesiondata.ec.europa.eu/overview"
         },
         {
-          "id": "POL-DATA-017",
-          "source_name": "Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)",
-          "source_url": "https://vi.is/skyrslur/1667"
+          "id": "HOUSING-PRECEDENT-001",
+          "source_name": "European Commission — Cohesion Policy data; ERDF Regulation (EU) 2021/1058",
+          "source_url": "https://cohesiondata.ec.europa.eu/overview"
         },
         {
-          "id": "POL-DATA-012",
-          "source_name": "SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions",
-          "source_url": "https://sa.is/frettatengt/frettir/vinna-hafin-vid-uttekt-a-stodu-adildarvidraedna-vid-evropusambandid"
+          "id": "EEA-LEGAL-023",
+          "source_name": "European Parliament — EU Treaties and Protocols; Accession Treaty texts",
+          "source_url": "https://eur-lex.europa.eu/collection/eu-law/treaties.html"
         }
       ],
-      "contradicting_evidence": [
-        {
-          "id": "SOV-LEGAL-005",
-          "source_name": "Central Bank of Iceland — Monetary policy framework",
-          "source_url": "https://sedlabanki.is/peningastefna/"
-        }
-      ],
-      "missing_context": "Fullyrðingin sleppur umræðu um hvað tapast — sjálfstæð peningastefna og sveigjanleiki gengis. Krónan féll um 50% í hruninu 2008 og sá sveigjanleiki er talinn hafa flýtt bata efnahagslífsins. Evruaðild útilokar þann aðlögunarbúnað.",
-      "confidence": 0.65,
+      "contradicting_evidence": [],
+      "missing_context": "Ísland myndi líklega flokkast sem «þróaðra svæði» vegna hás landsframleiðslu á mann, sem takmarkar aðgang að byggðasjóðum. Þó gæti Ísland fengið sérstaka meðferð vegna fámennrar dreifbýlisbyggðar, eins og Finnland hefur gert.",
+      "confidence": 0.8,
       "speakers": [
         {
           "name": "Thomas Möller",
@@ -470,7 +618,7 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "CURR-DATA-004 staðfestir verulegan vaxtamun — 8% stýrivextir á Íslandi á móti 2,75% á evrusvæðinu, sem skilar sér í hærri húsnæðislánavöxtum (7–9% á móti 3–4%). <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> og <a href=\"https://sa.is/frettatengt/frettir/vinna-hafin-vid-uttekt-a-stodu-adildarvidraedna-vid-evropusambandid\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> styðja rökin um lægri fjármagnskostnað. Hins vegar varar <a href=\"https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en\" title=\"European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators\" target=\"_blank\" rel=\"noopener\">CURR-DATA-005</a> við því að evruaðild sé ekki sjálfgefin við ESB-inngöngu — Króatía þurfti 10 ár frá aðild til evruupptöku. Fullyrðingin um \"samkeppni á bankamarkaði\" er ekki beint studd af heimildum.",
+      "explanation": "CURR-DATA-004 staðfestir verulegan vaxtamun — 8% stýrivextir á Íslandi á móti 2,75% á evrusvæðinu, sem skilar sér í hærri húsnæðislánavöxtum (7–9% á móti 3–4%). <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> og <a href=\"https://www.sa.is/frettir\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> styðja rökin um lægri fjármagnskostnað. Hins vegar varar <a href=\"https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en\" title=\"European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators\" target=\"_blank\" rel=\"noopener\">CURR-DATA-005</a> við því að evruaðild sé ekki sjálfgefin við ESB-inngöngu — Króatía þurfti 10 ár frá aðild til evruupptöku. Fullyrðingin um \"samkeppni á bankamarkaði\" er ekki beint studd af heimildum.",
       "supporting_evidence": [
         {
           "id": "CURR-DATA-004",
@@ -485,7 +633,7 @@
         {
           "id": "POL-DATA-012",
           "source_name": "SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions",
-          "source_url": "https://sa.is/frettatengt/frettir/vinna-hafin-vid-uttekt-a-stodu-adildarvidraedna-vid-evropusambandid"
+          "source_url": "https://www.sa.is/frettir"
         }
       ],
       "contradicting_evidence": [
@@ -606,39 +754,6 @@
           "credibility": null
         }
       ]
-    },
-    {
-      "claim": {
-        "original_quote": "auk hótana hans um yfirtöku Grænlands sem sameinuðum Evrópuríkjum tókst að stöðva á ráðstefnunni í Davos nýlega.",
-        "claim_text": "Evrópuríkjum tókst að stöðva hótanir Trumps um yfirtöku Grænlands á ráðstefnunni í Davos.",
-        "category": "precedents",
-        "claim_type": "legal_assertion",
-        "confidence": 0.9
-      },
-      "verdict": "unverifiable",
-      "explanation": "<a href=\"https://www.reuters.com/world/\" title=\"Multiple news sources — Reuters, AP, BBC coverage of Trump Greenland statements (2025)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-011</a> staðfestir hótanir Trumps um Grænland — bæði frá fyrra forsetatímabili (2019) og í upphafi annars (2025) — og lýsir hernaðarlegum og auðlindatengdum hvötum. <a href=\"https://www.reuters.com/world/europe/norway-tariffs-trump-2025/\" title=\"Reuters, NRK, Financial Times — viðskipti Noregs og Bandaríkjanna 2025–2026\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-027</a> nefnir rammasamning um Grænland frá 21. janúar 2026. Hins vegar staðfestir engin heimild í staðreyndagrunni að \"Evrópuríkjum tókst að stöðva\" ógnanir Trumps \"á ráðstefnunni í Davos\" sérstaklega. Þetta er fullyrðing sem ekki er hægt að sannreyna með tiltækum heimildum.",
-      "supporting_evidence": [
-        {
-          "id": "SOV-DATA-011",
-          "source_name": "Multiple news sources — Reuters, AP, BBC coverage of Trump Greenland statements (2025)",
-          "source_url": "https://www.reuters.com/world/"
-        }
-      ],
-      "contradicting_evidence": [],
-      "missing_context": "Staðreyndagrunnur inniheldur ekki upplýsingar um Davos-ráðstefnuna eða hvort sameiginleg evrópsk aðgerð hafi stöðvað Grænlandsáform Trumps. Ráðstefna Alþjóðaefnahagsráðsins í Davos fer fram árlega í janúar — en heimildir styðja ekki beina tengingu við niðurstöðu Grænlandsmálsins.",
-      "confidence": 0.35,
-      "speakers": [
-        {
-          "name": "Thomas Möller",
-          "type": "individual",
-          "role": "pistlahöfundur",
-          "party": "Viðreisn",
-          "stance": "pro_eu",
-          "attribution": "asserted",
-          "stance_score": null,
-          "credibility": null
-        }
-      ]
     }
   ],
   "participants": [
@@ -648,11 +763,11 @@
       "party": "Viðreisn",
       "role_in_article": "author",
       "attribution_type": "asserted",
-      "claim_count": 14,
+      "claim_count": 16,
       "verdicts": {
-        "supported": 2,
-        "unverifiable": 5,
-        "partially_supported": 7
+        "supported": 5,
+        "unverifiable": 2,
+        "partially_supported": 9
       },
       "stance": "pro_eu",
       "slug": "thomas-moller",
@@ -671,8 +786,8 @@
       },
       "stance": "pro_eu",
       "slug": "thorgerdur-katrin-gunnarsdottir",
-      "mention_count": 27,
-      "credibility": 0.68,
+      "mention_count": 33,
+      "credibility": 0.66,
       "speech_count": 194
     }
   ]

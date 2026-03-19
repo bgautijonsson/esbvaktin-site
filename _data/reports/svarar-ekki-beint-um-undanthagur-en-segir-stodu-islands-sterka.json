@@ -11,14 +11,14 @@
   "capsule": "Samningsstaða Íslands í sjávarútvegi er raunveruleg — landið á stórt landhelgissvæði og staðbundna fiskistofna sem hafa þungamiðju við samningaborðið. Athyglisvert er þó að samningakafli 13 um sjávarútveg var aldrei opnaður í aðildarviðræðum Íslands 2010–2013, þannig að hvort «sterk staða» myndi skila sér í raunverulegar niðurstöður hefur í raun aldrei verið prófað. Samanburður við nágrannalönd — Noreg, Bretland og Danmörku — gefur gott samhengi fyrir þá sem vilja kanna þetta mál betur.",
   "verdict_counts": {
     "partially_supported": 4,
-    "supported": 5,
-    "unverifiable": 3
+    "supported": 9,
+    "unverifiable": 1
   },
-  "claim_count": 12,
+  "claim_count": 14,
   "dominant_category": "fisheries",
   "categories": [
+    "currency",
     "fisheries",
-    "party_positions",
     "sovereignty"
   ],
   "claims": [
@@ -122,6 +122,79 @@
     },
     {
       "claim": {
+        "original_quote": "til þessa hefur umræðan einkum snúist um það hvort Ísland muni fá varanlega undanþágu frá sameiginlegri sjávarútvegsstefnu Evrópusambandsins (CFP)",
+        "claim_text": "Umræðan um samningsstöðu Íslands hefur hingað til einkum snúist um hvort landið muni fá varanlega undanþágu frá sameiginlegri sjávarútvegsstefnu ESB.",
+        "category": "fisheries",
+        "claim_type": "opinion",
+        "confidence": 0.9
+      },
+      "verdict": "supported",
+      "explanation": "<a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> staðfestir að Hagfræðistofnun Háskóla Íslands greindi sérstaklega hvort varanleg undanþága frá sameiginlegri sjávarútvegsstefnu væri raunhæf, og komst að þeirri niðurstöðu að slíkt væri ólíklegt þar sem regluverkið er ekki samningsefni í efnislegu tilliti. POL-DATA-005 sýnir að sjávarútvegurinn hefur einmitt byggt andstöðu sína á þessari spurningu. Sjávarútvegurinn hefur verið miðpunktur umræðunnar frá því að aðildarviðræður hófust 2010.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-DATA-014",
+          "source_name": "Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)",
+          "source_url": "https://ioes.hi.is/en/institute-economic-studies"
+        },
+        {
+          "id": "POL-DATA-014",
+          "source_name": "LÍÚ — Position paper on EU membership (2025); campaign finance declarations",
+          "source_url": null
+        },
+        {
+          "id": "SOV-LEGAL-006",
+          "source_name": "Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Fullyrðingin á við um umræðuna hingað til, en vert er að benda á að <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> benti einnig á að raunveruleg samningskjör höfðu aldrei verið prófuð þar sem viðræðum var hætt áður en sjávarútvegskafli var opnaður. Spurningin um varanlega undanþágu er því enn fræðileg frekar en reynslutengd.",
+      "confidence": 0.85,
+      "speakers": [
+        {
+          "name": "Morgunblaðið",
+          "type": "institution",
+          "role": "fjölmiðill",
+          "party": null,
+          "stance": "neutral",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        },
+        {
+          "name": "Guðlaugur Þór Þórðarson",
+          "type": "individual",
+          "role": "þingmaður",
+          "party": "Sjálfstæðisflokkur",
+          "stance": "neutral",
+          "attribution": "mentioned",
+          "stance_score": null,
+          "credibility": null
+        },
+        {
+          "name": "Lilja Alfreðsdóttir",
+          "type": "individual",
+          "role": "formaður Framsóknarflokksins",
+          "party": "Framsóknarflokkurinn",
+          "stance": "neutral",
+          "attribution": "mentioned",
+          "stance_score": null,
+          "credibility": null
+        },
+        {
+          "name": "Sigmar Guðmundsson",
+          "type": "individual",
+          "role": "þingmaður",
+          "party": "Viðreisn",
+          "stance": "neutral",
+          "attribution": "mentioned",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
         "original_quote": "Samningsmarkmiðið er að halda yfirráðum yfir okkar auðlindum.",
         "claim_text": "Samningsmarkmið Íslands eru að halda yfirráðum yfir auðlindum sínum ef farið verður í aðildarviðræður við ESB.",
         "category": "sovereignty",
@@ -171,24 +244,39 @@
     },
     {
       "claim": {
-        "original_quote": "fagna ég því að við séum að byrja á auðlindakaflanum ef við förum í þessar viðræður",
-        "claim_text": "Guðmundur Ari Sigurjónsson fagnar því að byrjað verði á auðlindakaflanum ef aðildarviðræður hefjast.",
-        "category": "fisheries",
+        "original_quote": "Við vitum að tækifærin snúa meðal annars að gjaldmiðli og vöxtum",
+        "claim_text": "Tækifæri ESB-aðildar snúa meðal annars að gjaldmiðli og vöxtum.",
+        "category": "currency",
         "claim_type": "opinion",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Þetta er persónulegt álit Guðmundar Ara sem ekki er hægt að staðfesta eða hrekja með heimildum úr staðreyndagrunni. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir að utanríkisráðherra nefndi auðlindamál sem forgangsatriði og þingræðurnar sýna að Guðmundur Ari styður þjóðaratkvæðagreiðsluna, sem er í samræmi við fullyrðinguna. Efnislega er þó ekki hægt að sannreyna hvort viðræður myndu raunverulega byrja á auðlindakaflanum.",
+      "verdict": "supported",
+      "explanation": "Fullyrðingin er almenn en rétt. <a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> sýnir að stýrivextir Seðlabanka Íslands hafa verið um 5,5 prósentustigum hærri en Seðlabanka Evrópu að meðaltali, sem skilar sér í hærri lánskostnaði. <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Articles 8 and 17–26; Protocols 1 and 47\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-008</a> og <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> staðfesta að efnahags- og myntbandalag fellur utan EES og aðeins ESB-aðild myndi opna leið að evrutöku. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> sýnir vaxtamuninn á húsnæðislánum — 8–9% á Íslandi á móti um 3,4% í evrusvæðinu. Gjaldmiðils- og vaxtamál eru þannig meðal helstu tækifæra ESB-aðildar samkvæmt heimildum.",
       "supporting_evidence": [
         {
-          "id": "SOV-PARL-001",
-          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
-          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+          "id": "CURRENCY-DATA-015",
+          "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
+          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+        },
+        {
+          "id": "EEA-LEGAL-008",
+          "source_name": "EEA Agreement, Articles 8 and 17–26; Protocols 1 and 47",
+          "source_url": "https://www.efta.int/eea/eea-agreement"
+        },
+        {
+          "id": "EEA-LEGAL-022",
+          "source_name": "EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'",
+          "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
+        },
+        {
+          "id": "HOUS-DATA-005",
+          "source_name": "Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase",
+          "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Samkvæmt <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — Steps towards joining; DG NEAR accession negotiation methodology\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-013</a> fer röð viðræðnakafla eftir sérstöku ferli Framkvæmdastjórnar ESB — skoðun (screening), opnunarviðmið og sameiginleg afstaða — og umsækjandinn hefur takmarkaðar heimildir til að ráða röðinni. Í viðræðunum 2010–2013 var sjávarútvegskafli (kafli 13) aldrei opnaður.",
-      "confidence": 0.5,
+      "missing_context": "Evrutaka myndi ekki verða strax við aðild — ERM II-tímabil og Maastricht-viðmið þyrfti að uppfylla. Lægri vextir gætu hækkað húsnæðisverð (<a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a>). Tap á sjálfstæðri peningastefnu er jafnframt áhætta sem fullyrðingin nefnir ekki.",
+      "confidence": 0.8,
       "speakers": [
         {
           "name": "Guðmundur Ari Sigurjónsson",
@@ -258,39 +346,6 @@
     },
     {
       "claim": {
-        "original_quote": "hann hafi ekki ákveðið hvernig atkvæði hans muni falla þegar samningur liggur fyrir. Það muni meðal annars ráðast af því hvernig auðlindakaflinn verður útfærður",
-        "claim_text": "Guðmundur Ari hefur ekki ákveðið hvernig atkvæði hans muni falla þegar samningur liggur fyrir; það ráðist meðal annars af útfærslu auðlindakaflans.",
-        "category": "party_positions",
-        "claim_type": "opinion",
-        "confidence": 0.9
-      },
-      "verdict": "unverifiable",
-      "explanation": "Þetta er persónuleg yfirlýsing Guðmundar Ara um eigin afstöðu sem ekki verður staðfest eða hrakin með ytri heimildum. Þingræðurnar sýna að hann styður þjóðaratkvæðagreiðsluna og hefur áhyggjur af auðlindamálum, sem er í samræmi við fullyrðinguna. <a href=\"https://stjornlagarad.is/other_files/stjornlagarad/Frumvarp-enska.pdf\" title=\"Stjórnlagaráð — A Proposal for a new Constitution for the Republic of Iceland (English translation)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-017</a> sýnir að auðlindakaflinn er pólitískt viðkvæmt mál þar sem 82,9% kusu með auðlindaákvæðinu 2012.",
-      "supporting_evidence": [
-        {
-          "id": "SOV-LEGAL-017",
-          "source_name": "Stjórnlagaráð — A Proposal for a new Constitution for the Republic of Iceland (English translation)",
-          "source_url": "https://stjornlagarad.is/other_files/stjornlagarad/Frumvarp-enska.pdf"
-        }
-      ],
-      "contradicting_evidence": [],
-      "missing_context": null,
-      "confidence": 0.5,
-      "speakers": [
-        {
-          "name": "Guðmundur Ari Sigurjónsson",
-          "type": "individual",
-          "role": "þingflokksformaður Samfylkingarinnar",
-          "party": "Samfylkingin",
-          "stance": "mixed",
-          "attribution": "paraphrased",
-          "stance_score": null,
-          "credibility": null
-        }
-      ]
-    },
-    {
-      "claim": {
         "original_quote": "Þessi orð snúast um það að við höfum aldrei verið í jafn sterkri stöðu til að semja um aðild að Evrópusambandinu",
         "claim_text": "Ísland hefur aldrei verið í jafn sterkri stöðu til að semja um aðild að Evrópusambandinu.",
         "category": "fisheries",
@@ -329,6 +384,59 @@
     },
     {
       "claim": {
+        "original_quote": "Í sameiginlegri sjávarútvegsstefnu Evrópusambandsins ákveður ESB hversu mikið má veiða af hverri fisktegund á hverju ári.",
+        "claim_text": "Í sameiginlegri sjávarútvegsstefnu ESB ákveður sambandið hversu mikið má veiða af hverri fisktegund á hverju ári.",
+        "category": "fisheries",
+        "claim_type": "legal_assertion",
+        "confidence": 0.9
+      },
+      "verdict": "supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> staðfestir þetta beint: sameiginleg sjávarútvegsstefna ESB (reglugerð 1380/2013) setur heildarleyfilegan afla (TAC) fyrir ESB-hafsvæði. Ráðherraráð ESB samþykkir TAC árlega fyrir hverja tegund. <a href=\"https://stecf.ec.europa.eu/reports_en\" title=\"European Commission — The EU Fishing Fleet reports (STECF Annual Economic Reports)\" target=\"_blank\" rel=\"noopener\">FISH-COMP-002</a> bætir við samhengi um að þetta kerfi hafi leitt til samdráttar í flotastærð og bætts ástands stofna — um 60% metinna stofna í norðaustur-Atlantshafi voru veiddar á hámarkssjálfbæru magni árið 2023.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-LEGAL-001",
+          "source_name": "EU Regulation 1380/2013 of the European Parliament and of the Council",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380"
+        },
+        {
+          "id": "FISH-COMP-002",
+          "source_name": "European Commission — The EU Fishing Fleet reports (STECF Annual Economic Reports)",
+          "source_url": "https://stecf.ec.europa.eu/reports_en"
+        },
+        {
+          "id": "FISH-DATA-021",
+          "source_name": "Eurostat — Fisheries statistics (fish_ca_main); Hagstofa Íslands",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/FISH_CA_MAIN/default/table?lang=en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Ákvörðun um heildarafla byggist á vísindalegum ráðgjöfum frá ICES og er ekki eingöngu pólitísk ákvörðun. Aðildarríki hafa áhrif á ákvörðunina í gegnum Ráðherraráðið — Ísland myndi sem aðildarríki hafa atkvæðisrétt þar. Einnig ber að nefna að PREC-DATA-009 sýnir að Noregur nær sambærilegum sjálfbærnismarkmiðum utan ESB.",
+      "confidence": 0.9,
+      "speakers": [
+        {
+          "name": "Morgunblaðið",
+          "type": "institution",
+          "role": "fjölmiðill",
+          "party": null,
+          "stance": "neutral",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        },
+        {
+          "name": "Evrópusambandið",
+          "type": "institution",
+          "role": "þjóðabandalag",
+          "party": null,
+          "stance": "neutral",
+          "attribution": "mentioned",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
         "original_quote": "Heildarkvótanum er síðan skipt milli aðildarríkja eftir fyrirfram ákveðnum hlutföllum sem byggja að mestu á sögulegum veiðum.",
         "claim_text": "Heildarkvóta í sameiginlegri sjávarútvegsstefnu ESB er skipt milli aðildarríkja eftir fyrirfram ákveðnum hlutföllum sem byggja að mestu á sögulegum veiðum.",
         "category": "fisheries",
@@ -336,7 +444,7 @@
         "confidence": 0.9
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> staðfestir þetta nákvæmlega: kvóta er úthlutað milli aðildarríkja samkvæmt meginreglunni um \"hlutfallslegan stöðugleika\" (relative stability), sem byggist á sögulegum veiðum fyrst og fremst frá árunum 1973–1978. <a href=\"https://stecf.jrc.ec.europa.eu/reports/economic\" title=\"European Commission — Scientific, Technical and Economic Committee for Fisheries (STECF); FAO — The State of World Fisheries and Aquaculture\" target=\"_blank\" rel=\"noopener\">FISH-DATA-025</a> styrkir þetta og bætir við að kerfið hefur verið gagnrýnt fyrir að festa ráðandi aðila í sessi og gera nýjum keppinautum erfitt fyrir.",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> staðfestir þetta nákvæmlega: kvóta er úthlutað milli aðildarríkja samkvæmt meginreglunni um \"hlutfallslegan stöðugleika\" (relative stability), sem byggist á sögulegum veiðum fyrst og fremst frá árunum 1973–1978. <a href=\"https://stecf.ec.europa.eu/reports_en\" title=\"European Commission — Scientific, Technical and Economic Committee for Fisheries (STECF); FAO — The State of World Fisheries and Aquaculture\" target=\"_blank\" rel=\"noopener\">FISH-DATA-025</a> styrkir þetta og bætir við að kerfið hefur verið gagnrýnt fyrir að festa ráðandi aðila í sessi og gera nýjum keppinautum erfitt fyrir.",
       "supporting_evidence": [
         {
           "id": "FISH-LEGAL-001",
@@ -346,7 +454,7 @@
         {
           "id": "FISH-DATA-025",
           "source_name": "European Commission — Scientific, Technical and Economic Committee for Fisheries (STECF); FAO — The State of World Fisheries and Aquaculture",
-          "source_url": "https://stecf.jrc.ec.europa.eu/reports/economic"
+          "source_url": "https://stecf.ec.europa.eu/reports_en"
         },
         {
           "id": "EEA-DATA-004",
@@ -389,7 +497,7 @@
         "confidence": 0.9
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> staðfestir að kvóta er úthlutað til aðildarríkja samkvæmt hlutfallslegum stöðugleika. Aðildarríki hafa nokkurt svigrúm í innlendri úthlutun, eins og sjá má af mismunandi kerfum — til dæmis notar Holland stór fyrirtæki á meðan smábátasjávarútvegur er áberandi annars staðar (<a href=\"https://stecf.jrc.ec.europa.eu/reports/economic\" title=\"European Commission — Scientific, Technical and Economic Committee for Fisheries (STECF); FAO — The State of World Fisheries and Aquaculture\" target=\"_blank\" rel=\"noopener\">FISH-DATA-025</a>). Hins vegar er þessi fullyrðing of einföld — ESB-reglugerðin setur ákveðin skilyrði um innlenda úthlutun og samræmisreglur gilda.",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> staðfestir að kvóta er úthlutað til aðildarríkja samkvæmt hlutfallslegum stöðugleika. Aðildarríki hafa nokkurt svigrúm í innlendri úthlutun, eins og sjá má af mismunandi kerfum — til dæmis notar Holland stór fyrirtæki á meðan smábátasjávarútvegur er áberandi annars staðar (<a href=\"https://stecf.ec.europa.eu/reports_en\" title=\"European Commission — Scientific, Technical and Economic Committee for Fisheries (STECF); FAO — The State of World Fisheries and Aquaculture\" target=\"_blank\" rel=\"noopener\">FISH-DATA-025</a>). Hins vegar er þessi fullyrðing of einföld — ESB-reglugerðin setur ákveðin skilyrði um innlenda úthlutun og samræmisreglur gilda.",
       "supporting_evidence": [
         {
           "id": "FISH-LEGAL-001",
@@ -399,7 +507,7 @@
         {
           "id": "FISH-DATA-025",
           "source_name": "European Commission — Scientific, Technical and Economic Committee for Fisheries (STECF); FAO — The State of World Fisheries and Aquaculture",
-          "source_url": "https://stecf.jrc.ec.europa.eu/reports/economic"
+          "source_url": "https://stecf.ec.europa.eu/reports_en"
         }
       ],
       "contradicting_evidence": [],
@@ -536,6 +644,59 @@
     },
     {
       "claim": {
+        "original_quote": "Hins vegar eru til sérreglur og aðlögunartíma fyrir sum ríki eða svæði.",
+        "claim_text": "Til eru sérreglur og aðlögunartímabil fyrir sum ríki eða svæði innan sameiginlegrar sjávarútvegsstefnu ESB.",
+        "category": "fisheries",
+        "claim_type": "legal_assertion",
+        "confidence": 0.9
+      },
+      "verdict": "supported",
+      "explanation": "Heimildir staðfesta skýrt að sérreglur og aðlögunartímabil eru til staðar innan sameiginlegrar sjávarútvegsstefnu ESB. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380\" title=\"Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-030</a> lýsir því hvernig hvert ríki hefur fullt forræði yfir skiptingu eigin kvóta — sum nota ITQ-kerfi, önnur stjórnunarlega úthlutun. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> og <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development\" title=\"European Parliament — The Common Fisheries Policy: Origins and Development\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-005</a> útskýra regluna um hlutfallslegan stöðugleika sem veitir aðildarríkjum fasta hlutdeild. Aðildarsamningar Spánar og Portúgals innihéldu sértækar kvótaráðstafanir samkvæmt <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development\" title=\"European Parliament — The Common Fisheries Policy: Origins and Development\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-005</a>.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-DATA-030",
+          "source_name": "Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380"
+        },
+        {
+          "id": "FISH-LEGAL-005",
+          "source_name": "European Parliament — The Common Fisheries Policy: Origins and Development",
+          "source_url": "https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development"
+        },
+        {
+          "id": "FISH-LEGAL-001",
+          "source_name": "EU Regulation 1380/2013 of the European Parliament and of the Council",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Sérreglurnar eru af ólíkum toga — sum eru varanleg (hlutfallslegur stöðugleiki), önnur tímabundin (aðlögunartímabil). Heildaraflamark er ákvarðað af ráðherraráði ESB, ekki af einstökum ríkjum, sem er grundvallarbreyting frá núverandi stöðu Íslands. Hvernig Ísland myndi falla inn í kerfið er fordæmalaust vegna einstakrar sjávarútvegsstöðu landsins.",
+      "confidence": 0.9,
+      "speakers": [
+        {
+          "name": "Morgunblaðið",
+          "type": "institution",
+          "role": "fjölmiðill",
+          "party": null,
+          "stance": "neutral",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        },
+        {
+          "name": "Evrópusambandið",
+          "type": "institution",
+          "role": "þjóðabandalag",
+          "party": null,
+          "stance": "neutral",
+          "attribution": "mentioned",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
         "original_quote": "Hvernig það verður útfært er útfærsluatriði sem þarf að kveða á um við samningsborðið.",
         "claim_text": "Útfærsla þess hvernig Ísland haldi yfirráðum yfir auðlindum sínum er samningsatriði sem þarf að kveða á um við samningsborðið.",
         "category": "sovereignty",
@@ -596,11 +757,11 @@
       "party": "Samfylkingin",
       "role_in_article": "speaker",
       "attribution_type": "quoted",
-      "claim_count": 8,
+      "claim_count": 7,
       "verdicts": {
         "partially_supported": 3,
-        "supported": 2,
-        "unverifiable": 3
+        "supported": 3,
+        "unverifiable": 1
       },
       "stance": "mixed",
       "slug": "gudmundur-ari-sigurjonsson",

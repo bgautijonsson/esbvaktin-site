@@ -10,18 +10,19 @@
   "summary": "Greindar 17 fullyrðingar. Niðurstöður: 7 stutt að hluta, 6 ekki hægt að sannreyna, 3 stutt af heimildum, 1 ekki stutt. Sjónarhorn: hallar á ESB-jákvæða hlið. Heildstæðni: 25%.",
   "capsule": "Greinin fær rétt að losun alþjóðaflugs innan ESB falli undir ETS-viðskiptakerfið og að þjóðaratkvæðagreiðslan 2026 snúist um hvort halda eigi aðildarviðræðum áfram. Athyglisvert er að Ísland tekur nú þegar þátt í ETS-kerfinu í gegnum sérstakan tvíhliða samning við ESB — ekki í gegnum EES-samninginn — sem þýðir að þegar stendur á sérstökum lagalegum grundvelli sem gæti breyst við aðild. Þá er fróðlegt að vita að EEZ Íslands er 758.000 km² og árlegur afli um 1,0–1,2 milljónir tonna, en sameiginleg sjávarútvegsstefna ESB krefst þess að aðildarríki deili kvótum og veiðirétti — atriði sem skýrir af hverju fiskveiðimálin vega svo þungt í umræðunni um skilyrði hugsanlegrar aðildar.",
   "verdict_counts": {
-    "unverifiable": 1,
-    "supported": 7,
-    "partially_supported": 6,
+    "unverifiable": 2,
+    "partially_supported": 7,
+    "supported": 6,
     "misleading": 2
   },
-  "claim_count": 16,
+  "claim_count": 17,
   "dominant_category": "eea_eu_law",
   "categories": [
     "eea_eu_law",
     "fisheries",
     "party_positions",
-    "sovereignty"
+    "sovereignty",
+    "trade"
   ],
   "claims": [
     {
@@ -75,18 +76,18 @@
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://climate.ec.europa.eu/eu-action/transport/reducing-emissions-aviation_en\" title=\"European Commission — Reducing emissions from aviation; Directive 2008/101/EC; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-002</a> staðfestir beint að losun alþjóðaflugs innan Evrópska efnahagssvæðisins falli undir ETS-kerfið frá árinu 2008. Flug innan EES er undir kerfinu samkvæmt tilskipun 2008/101/EB og endurskoðaðri tilskipun (ESB) 2023/958. <a href=\"https://eur-lex.europa.eu/eli/dec/2007/146(2)/oj/eng\" title=\"EEA Joint Committee Decision No 146/2007; EUR-Lex; EFTA Court\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-001</a> staðfestir að Ísland taki þátt í ETS-kerfinu í gegnum EES-samninginn. Fullyrðingin er nákvæm hvað varðar flug innan ESB/EES.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://climate.ec.europa.eu/eu-action/transport-decarbonisation/reducing-emissions-aviation_en\" title=\"European Commission — Reducing emissions from aviation; Directive 2008/101/EC; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-002</a> staðfestir að losun flugs innan EES falli undir ETS-kerfið, en fullyrðingin segir «alþjóðaflugs» sem er víðtækara hugtak. Gildissvið kerfisins nær eingöngu til fluga innan EES — flug til og frá þriðju ríkjum utan CORSIA er undanskilið samkvæmt sömu heimild. Þetta takmarkaða gildissvið hefur verið framlengt ítrekað og gildir til byrjunar 2027. <a href=\"https://ust.is/atvinnulif/ets/\" title=\"Umhverfisstofnun — Iceland's participation in EU ETS; European Commission — EU ETS data\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-002</a> staðfestir þátttöku Íslands í ETS í gegnum EES-samninginn.",
       "supporting_evidence": [
         {
           "id": "ETS-LEGAL-002",
           "source_name": "European Commission — Reducing emissions from aviation; Directive 2008/101/EC; Directive (EU) 2023/958",
-          "source_url": "https://climate.ec.europa.eu/eu-action/transport/reducing-emissions-aviation_en"
+          "source_url": "https://climate.ec.europa.eu/eu-action/transport-decarbonisation/reducing-emissions-aviation_en"
         },
         {
-          "id": "ETS-LEGAL-001",
-          "source_name": "EEA Joint Committee Decision No 146/2007; EUR-Lex; EFTA Court",
-          "source_url": "https://eur-lex.europa.eu/eli/dec/2007/146(2)/oj/eng"
+          "id": "ENERGY-LEGAL-002",
+          "source_name": "Umhverfisstofnun — Iceland's participation in EU ETS; European Commission — EU ETS data",
+          "source_url": "https://ust.is/atvinnulif/ets/"
         },
         {
           "id": "ETS-DATA-003",
@@ -95,8 +96,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Gildissviðið nær aðeins til flugs innan EES en ekki til flugs til/frá þriðju ríkjum — sú takmörkun gildir til byrjunar 2027 og verður endurmetin í júlí 2026. Fullyrðingin segir «innan ESB» en réttara væri «innan EES» þar sem Ísland og Noregur taka þátt í gegnum EES-samninginn.",
-      "confidence": 0.85,
+      "missing_context": "Orðið «alþjóðaflug» gefur til kynna að öll millilandaflug falli undir kerfið, en einungis flug innan EES er tekið með — flug til þriðju ríkja fellur undir CORSIA. Gildissvið ETS fyrir flug hefur breyst margsinnis frá 2008 og Framkvæmdastjórnin mun meta útvíkkun í júlí 2026. Ísland samdi um sérstaka undanþágu varðandi ókeypis losunarheimildir til 2026 (<a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a>).",
+      "confidence": 0.82,
       "speakers": [
         {
           "name": "Silja Rún Sigurbjörnsdóttir",
@@ -129,7 +130,7 @@
         "confidence": 0.9
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/eli/dec/2007/146(2)/oj/eng\" title=\"EEA Joint Committee Decision No 146/2007; EUR-Lex; EFTA Court\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-001</a> staðfestir ótvírætt að Ísland tekur þátt í ETS-kerfinu í gegnum EES-samninginn — tilskipunin var tekin upp í XX. viðauka EES-samningsins með ákvörðun sameiginlegu EES-nefndarinnar nr. 146/2007. <a href=\"https://ust.is/atvinnulif/ets/\" title=\"Umhverfisstofnun — Iceland's participation in EU ETS; European Commission — EU ETS data\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-002</a> og <a href=\"https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341\" title=\"EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-003</a> styðja þetta enn frekar og staðfesta þátttöku frá 1. janúar 2008. Lögfræðilegur grundvöllur er ótvíræður samkvæmt heimildum.",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/eli/dec/2007/146(2)/oj/eng\" title=\"EEA Joint Committee Decision No 146/2007; EUR-Lex; EFTA Court\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-001</a> staðfestir ótvírætt að Ísland taki þátt í ETS-kerfinu í gegnum EES-samninginn — tilskipunin (2003/87/EB) var tekin upp í XX. viðauka EES-samningsins með ákvörðun sameiginlegu EES-nefndarinnar nr. 146/2007. <a href=\"https://ust.is/atvinnulif/ets/\" title=\"Umhverfisstofnun — Iceland's participation in EU ETS; European Commission — EU ETS data\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-002</a> styður þetta enn frekar og staðfestir þátttöku Íslands frá 1. janúar 2008. <a href=\"https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341\" title=\"EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-003</a> lýsir sömu lagalegu undirstöðu og sýnir að Ísland, Noregur og Liechtenstein tóku þátt á grundvelli sameiginlegrar EES-ákvörðunar.",
       "supporting_evidence": [
         {
           "id": "ETS-LEGAL-001",
@@ -153,7 +154,7 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Sum tengd loftslagslöggjöf, eins og reglugerð um sameiganlega ábyrgð (Effort Sharing), var tekin upp á öðrum lagagrundvelli (bókun 31) en ekki í gegnum XX. viðauka. Þetta skipar ETS-kerfið og aðra loftslagsskuldbindingar á mismunandi lagalegan grundvöll innan EES-samningsins.",
+      "missing_context": "<a href=\"https://eur-lex.europa.eu/eli/dec/2007/146(2)/oj/eng\" title=\"EEA Joint Committee Decision No 146/2007; EUR-Lex; EFTA Court\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-001</a> bendir á að tengd loftslagslöggjöf, eins og reglugerð um skiptingu ábyrgðar (Effort Sharing), hafi verið tekin upp í gegnum bókun 31 við EES-samninginn fremur en XX. viðauka — þessi greinarmunur getur verið uppruni ruglings um hvort þátttaka Íslands sé «tvíhliða» eða «EES-byggð». Fyrir ETS-kerfið sjálft er lagalegur grundvöllur hins vegar ótvírætt EES-samningurinn.",
       "confidence": 0.95,
       "speakers": [
         {
@@ -196,7 +197,7 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Samningur frá maí 2023 var lýstur sem «bráðabirgðasamningur» og háður formlegu samþykki. Óljóst er hvort fullyrðingin vísi til undanþágu sem rennur út í lok 2026 (ókeypis úthlutun) eða 2027 (landfræðilegt gildissvið). <a href=\"https://climate.ec.europa.eu/eu-action/transport/reducing-emissions-aviation_en\" title=\"European Commission — Reducing emissions from aviation; Directive 2008/101/EC; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-002</a> bendir til þess að gildissvið flugs í ETS sé til endurskoðunar í júlí 2026.",
+      "missing_context": "Samningur frá maí 2023 var lýstur sem «bráðabirgðasamningur» og háður formlegu samþykki. Óljóst er hvort fullyrðingin vísi til undanþágu sem rennur út í lok 2026 (ókeypis úthlutun) eða 2027 (landfræðilegt gildissvið). <a href=\"https://climate.ec.europa.eu/eu-action/transport-decarbonisation/reducing-emissions-aviation_en\" title=\"European Commission — Reducing emissions from aviation; Directive 2008/101/EC; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-002</a> bendir til þess að gildissvið flugs í ETS sé til endurskoðunar í júlí 2026.",
       "confidence": 0.72,
       "speakers": [
         {
@@ -219,28 +220,12 @@
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a> staðfestir beint að Ísland samdi um áframhaldandi ókeypis losunarheimildir til flugfélaga umfram almenna áætlun ESB. Samkvæmt <a href=\"https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/allocation-aviation-sector_en\" title=\"European Commission — Allocation to the aviation sector; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-DATA-001</a> er almenna reglan sú að ókeypis úthlutun til flugs minnkar um 25% árið 2024, 50% árið 2025, og fellur niður frá 2026. Ísland fékk undanþágu til að halda ókeypis úthlutun til og með 2026. Þótt orðið «niðurgreiða» sé ekki lagalega nákvæmt — um ráðstöfun losunarheimilda er að ræða, ekki beina niðurgreiðslu — lýsir <a href=\"https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/allocation-aviation-sector_en\" title=\"European Commission — Allocation to the aviation sector; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-DATA-001</a> efnahagslegum áhrifunum sem «verulegum óbeinum ávinningi» þar sem flugfélög þurfa ekki að kaupa heimildir á markaðsverði.",
-      "supporting_evidence": [
-        {
-          "id": "ETS-DATA-002",
-          "source_name": "Iceland Review; Carbon Pulse; European Commission",
-          "source_url": "https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/"
-        },
-        {
-          "id": "ETS-DATA-001",
-          "source_name": "European Commission — Allocation to the aviation sector; Directive (EU) 2023/958",
-          "source_url": "https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/allocation-aviation-sector_en"
-        },
-        {
-          "id": "ETS-LEGAL-002",
-          "source_name": "European Commission — Reducing emissions from aviation; Directive 2008/101/EC; Directive (EU) 2023/958",
-          "source_url": "https://climate.ec.europa.eu/eu-action/transport/reducing-emissions-aviation_en"
-        }
-      ],
+      "verdict": "unverifiable",
+      "explanation": "Engin heimild í gagnagrunninum fjallar um undanþágu tengda losunarheimildum flugfélaga. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E326\" title=\"Treaty on the Functioning of the European Union, Articles 326–334; European Commission — Enhanced cooperation factsheet\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-031</a> lýsir samstarfskerfi (enhanced cooperation) og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M050\" title=\"Treaty on European Union, Article 50\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-001</a> fjallar um 50. grein ESB-sáttmálans um úrsögn — hvorugt snertir flugumferðarlosun eða úthlutun losunarheimilda til flugfélaga. Án viðeigandi heimilda er fullyrðingin óstaðfestanleg.",
+      "supporting_evidence": [],
       "contradicting_evidence": [],
-      "missing_context": "Framkvæmdastjórn ESB lítur ekki á ókeypis úthlutun sem ríkisaðstoð heldur sem tímabundna aðgerð gegn kolefnisleka. Fyrirvarinn úr <a href=\"https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/allocation-aviation-sector_en\" title=\"European Commission — Allocation to the aviation sector; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-DATA-001</a> bendir á að lýsingin «niðurgreiðsla» sé umdeild — flugfélög halda því fram að úthlutunin vegi upp samkeppnisójöfnuð gagnvart flugfélögum utan ETS-kerfisins.",
-      "confidence": 0.8,
+      "missing_context": "Til staðfestingar þyrfti heimildir um ETS-kerfið og flugumferð, CORSIA-samninginn, eða sérstakar undanþágur EES/EFTA-ríkja vegna flugslosunar. Fullyrðingin virðist vísa í tiltekna undanþágu sem krefst sérhæfðra heimilda um flugmálastefnu ESB og tengsl hennar við EES.",
+      "confidence": 0.9,
       "speakers": [
         {
           "name": "Silja Rún Sigurbjörnsdóttir",
@@ -273,7 +258,7 @@
         "confidence": 0.9
       },
       "verdict": "misleading",
-      "explanation": "Fullyrðingin um framlengingu undanþágu til loka árs 2027 er villandi. Samkvæmt <a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a> náði Ísland samningi um framlengingu á ókeypis losunarheimildum til flugs til og með 2026, ekki 2027. Heimildin bendir sérstaklega á að fullyrðingar um framlengingu til 2027 rugli saman tveimur ólíkum hlutum: undanþágu Íslands frá greiðsluskyldu (til 2026) og víðtækari landfræðilegri takmörkun ETS-flugs á EES-flug sem var framlengd til ársbyrjunar 2027 samkvæmt <a href=\"https://climate.ec.europa.eu/eu-action/transport/reducing-emissions-aviation_en\" title=\"European Commission — Reducing emissions from aviation; Directive 2008/101/EC; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-002</a>.",
+      "explanation": "Fullyrðingin um framlengingu undanþágu til loka árs 2027 er villandi. Samkvæmt <a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a> náði Ísland samningi um framlengingu á ókeypis losunarheimildum til flugs til og með 2026, ekki 2027. Heimildin bendir sérstaklega á að fullyrðingar um framlengingu til 2027 rugli saman tveimur ólíkum hlutum: undanþágu Íslands frá greiðsluskyldu (til 2026) og víðtækari landfræðilegri takmörkun ETS-flugs á EES-flug sem var framlengd til ársbyrjunar 2027 samkvæmt <a href=\"https://climate.ec.europa.eu/eu-action/transport-decarbonisation/reducing-emissions-aviation_en\" title=\"European Commission — Reducing emissions from aviation; Directive 2008/101/EC; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-002</a>.",
       "supporting_evidence": [
         {
           "id": "ETS-DATA-002",
@@ -288,7 +273,7 @@
         {
           "id": "ETS-LEGAL-002",
           "source_name": "European Commission — Reducing emissions from aviation; Directive 2008/101/EC; Directive (EU) 2023/958",
-          "source_url": "https://climate.ec.europa.eu/eu-action/transport/reducing-emissions-aviation_en"
+          "source_url": "https://climate.ec.europa.eu/eu-action/transport-decarbonisation/reducing-emissions-aviation_en"
         }
       ],
       "contradicting_evidence": [],
@@ -643,8 +628,56 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Fullyrðingin gefur til kynna að sjávarútvegskafli væri upphafspunktur viðræðna, en reynslan frá 2010–2013 sýnir hið gagnstæða — kaflar þar sem EES tryggði forskot voru opnaðir fyrst. Aðildarviðræður eru einnig um mun meira en sjávarútveg; 33 kaflar voru á dagskrá. Ný heimild <a href=\"https://oceans-and-fisheries.ec.europa.eu/fisheries/common-fisheries-policy_en\" title=\"European Commission — Communication on the Common Fisheries Policy (2024); STECF stock assessments\" target=\"_blank\" rel=\"noopener\">FISH-COMP-003</a> um bætta sjávarútvegsstjórnun ESB í Norður-Atlantshafi breytir ekki þessu mati.",
+      "missing_context": "Fullyrðingin gefur til kynna að sjávarútvegskafli væri upphafspunktur viðræðna, en reynslan frá 2010–2013 sýnir hið gagnstæða — kaflar þar sem EES tryggði forskot voru opnaðir fyrst. Aðildarviðræður eru einnig um mun meira en sjávarútveg; 33 kaflar voru á dagskrá. Ný heimild <a href=\"https://oceans-and-fisheries.ec.europa.eu/policy/common-fisheries-policy-cfp_en\" title=\"European Commission — Communication on the Common Fisheries Policy (2024); STECF stock assessments\" target=\"_blank\" rel=\"noopener\">FISH-COMP-003</a> um bætta sjávarútvegsstjórnun ESB í Norður-Atlantshafi breytir ekki þessu mati.",
       "confidence": 0.55,
+      "speakers": [
+        {
+          "name": "Þorgerður Katrín Gunnarsdóttir",
+          "type": "individual",
+          "role": "formaður Viðreisnar og utanríkisráðherra",
+          "party": "Viðreisn",
+          "stance": "pro_eu",
+          "attribution": "quoted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "Það samband er gott",
+        "claim_text": "Sambandið milli Íslands og evrópskra ríkja er gott.",
+        "category": "trade",
+        "claim_type": "opinion",
+        "confidence": 0.9
+      },
+      "verdict": "supported",
+      "explanation": "Margar heimildir styðja þessa fullyrðingu. <a href=\"https://ec.europa.eu/eurostat/databrowser/view/ext_lt_maineu/\" title=\"Eurostat — International trade main aggregates (ext_lt_maineu)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-018</a> sýnir vaxandi viðskipti milli Íslands og ESB. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:21999A0710(02)\" title=\"Schengen Association Agreement with Iceland and Norway (2001)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-004</a> staðfestir Schengen-aðild Íslands sem stuðlar að góðum tengslum. <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> undirstrikar viðskiptatengsl og <a href=\"https://en.rannis.is/funding/research/\" title=\"University of Iceland — Rector's statement on EU membership; Rannís — Horizon Europe participation data\" target=\"_blank\" rel=\"noopener\">POL-DATA-018</a> nefnir rannsóknarsamstarf. <a href=\"https://data-explorer.oecd.org/vis?df%5Bds%5D=DisseminateFinalDMZ&df%5Bid%5D=DSD_TUD_CBC@DF_TUD&df%5Bag%5D=OECD.ELS.SAE\" title=\"OECD — Trade Union Density (OECD.Stat); ILO — Global Wage Report 2024/25\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-013</a> sýnir tengsl vinnumarkaða. Almennt benda heimildir til víðtækra og virkra tengsla, þótt \"gott samband\" sé óhlutlæg lýsing.",
+      "supporting_evidence": [
+        {
+          "id": "TRADE-DATA-018",
+          "source_name": "Eurostat — International trade main aggregates (ext_lt_maineu)",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/ext_lt_maineu/"
+        },
+        {
+          "id": "EEA-LEGAL-004",
+          "source_name": "Schengen Association Agreement with Iceland and Norway (2001)",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:21999A0710(02)"
+        },
+        {
+          "id": "POL-DATA-017",
+          "source_name": "Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)",
+          "source_url": "https://vi.is/skyrslur/1667"
+        },
+        {
+          "id": "POL-DATA-018",
+          "source_name": "University of Iceland — Rector's statement on EU membership; Rannís — Horizon Europe participation data",
+          "source_url": "https://en.rannis.is/funding/research/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Þrátt fyrir almennt gott samband hafa einnig verið ágreiningsefni, t.d. makríldeilan og innleiðsluhalli EES-löggjafar (<a href=\"https://www.eftasurv.int/esa-at-a-glance/publications/scoreboard/internal-market-scoreboard-no-53-february-2024\" title=\"EFTA Surveillance Authority — Internal Market Scoreboard 2024\" target=\"_blank\" rel=\"noopener\">EEA-DATA-007</a>). Sambandið er margslungið og \"gott\" er einföldun.",
+      "confidence": 0.75,
       "speakers": [
         {
           "name": "Þorgerður Katrín Gunnarsdóttir",
@@ -667,7 +700,7 @@
         "confidence": 0.9
       },
       "verdict": "supported",
-      "explanation": "Margar heimildir styðja þessa fullyrðingu. <a href=\"https://www.eeas.europa.eu/eeas/strategic-compass-security-and-defence-1_en\" title=\"EU Strategic Compass for Security and Defence (March 2022); NATO Allied Air Command — Icelandic Air Policing; IISS Strategic Survey 2023\" target=\"_blank\" rel=\"noopener\">SOV-HIST-003</a> lýsir auknu öryggissamstarfi eftir innrás Rússlands í Úkraínu. <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> og <a href=\"https://sa.is/frettatengt/frettir/vinna-hafin-vid-uttekt-a-stodu-adildarvidraedna-vid-evropusambandid\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> nefna dýpkun innri markaðarins og viðskiptavernd. <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins — Annual report 2025; SI policy briefs on CBAM and Horizon Europe\" target=\"_blank\" rel=\"noopener\">POL-DATA-016</a> lýsir aukinni vernd evrópskra fyrirtækja. <a href=\"https://commission.europa.eu/strategy-and-policy/strategy-documents/commission-work-programme_en\" title=\"EUR-Lex legislative database; European Commission Work Programmes 2014–2025\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-018</a> staðfestir umfangsmikla nýja löggjöf (Digital Services Act, AI Act, CBAM) sem endurspeglar dýpkun samstarfs og hagsmunavernd.",
+      "explanation": "Margar heimildir styðja þessa fullyrðingu. <a href=\"https://www.eeas.europa.eu/eeas/strategic-compass-security-and-defence-1_en\" title=\"EU Strategic Compass for Security and Defence (March 2022); NATO Allied Air Command — Icelandic Air Policing; IISS Strategic Survey 2023\" target=\"_blank\" rel=\"noopener\">SOV-HIST-003</a> lýsir auknu öryggissamstarfi eftir innrás Rússlands í Úkraínu. <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> og <a href=\"https://www.sa.is/frettir\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> nefna dýpkun innri markaðarins og viðskiptavernd. <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins — Annual report 2025; SI policy briefs on CBAM and Horizon Europe\" target=\"_blank\" rel=\"noopener\">POL-DATA-016</a> lýsir aukinni vernd evrópskra fyrirtækja. <a href=\"https://commission.europa.eu/strategy-and-policy/strategy-documents/commission-work-programme_en\" title=\"EUR-Lex legislative database; European Commission Work Programmes 2014–2025\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-018</a> staðfestir umfangsmikla nýja löggjöf (Digital Services Act, AI Act, CBAM) sem endurspeglar dýpkun samstarfs og hagsmunavernd.",
       "supporting_evidence": [
         {
           "id": "SOV-HIST-003",
@@ -779,8 +812,9 @@
       "attribution_type": "asserted",
       "claim_count": 6,
       "verdicts": {
-        "supported": 4,
-        "partially_supported": 1,
+        "partially_supported": 2,
+        "supported": 2,
+        "unverifiable": 1,
         "misleading": 1
       },
       "stance": "neutral",
@@ -794,17 +828,17 @@
       "party": "Viðreisn",
       "role_in_article": "speaker",
       "attribution_type": "quoted",
-      "claim_count": 10,
+      "claim_count": 11,
       "verdicts": {
         "unverifiable": 1,
         "partially_supported": 5,
         "misleading": 1,
-        "supported": 3
+        "supported": 4
       },
       "stance": "pro_eu",
       "slug": "thorgerdur-katrin-gunnarsdottir",
-      "mention_count": 27,
-      "credibility": 0.68,
+      "mention_count": 33,
+      "credibility": 0.66,
       "speech_count": 194
     },
     {
