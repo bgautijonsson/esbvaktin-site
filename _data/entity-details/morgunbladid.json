@@ -14,8 +14,9 @@
   },
   "althingi_stats": null,
   "scorecard": {
-    "supported": 11,
-    "partially_supported": 5
+    "supported": 12,
+    "partially_supported": 7,
+    "unsupported": 1
   },
   "claims": [
     {
@@ -228,23 +229,55 @@
     {
       "claim_text": "Þingsályktunartillaga um þjóðaratkvæðagreiðsluna var lögð fram á föstudag (7. mars 2026).",
       "original_quote": "fyrrnefnd þingsályktunartillaga var lögð fram á föstudag",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.althingi.is/\" title=\"Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-028</a> staðfestir beint að þingsályktunartillagan var lögð fram á föstudegi 7. mars 2026 af utanríkisráðherra Þorgerði Katrínu Gunnarsdóttur. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir einnig dagsetninguna og samhengið. Fullyrðingin er einföld staðreynd um dagsetningu og skjalaflokk sem heimildir sannreyna án fyrirvara.",
-      "missing_context": "Nákvæm dagsetning framlagningar þingsályktunartillögunnar er ekki skráð í staðreyndagrunninn. Sannreyna þarf dagsetninguna við þingskjöl Alþingis.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.althingi.is/\" title=\"Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-028</a> staðfestir að þingsályktunartillagan hafi verið lögð fram á föstudag 7. mars 2026 af utanríkisráðherra Þorgerði Katrínu Gunnarsdóttur. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> gefur hins vegar aðra dagsetningu — 9. mars 2026 — fyrir kynningu ráðherra á tillögunni á Alþingi. Misræmið bendir til þess að um tvo aðskilda atburði geti verið að ræða (formleg framlagning vs. flutningsræða), en fullyrðingin greinir ekki á milli þessara þátta. Meginatriðið — að tillagan hafi verið lögð fram á föstudegi — er staðfest, en dagsetningin er ekki óumdeild í heimildunum.",
+      "missing_context": "<a href=\"https://www.althingi.is/\" title=\"Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-028</a> bendir á að stjórnarandstaðan hafi gagnrýnt föstudagsframlagningu sem tilraun til að takmarka fjölmiðlaeftirlit og viðbrögð þingsins. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> nefnir 9. mars sem dagsetningu flutningsræðunnar, sem gefur til kynna að formleg framlagning og umræða hafi verið á mismunandi dögum. Þetta samhengi vantar í fullyrðinguna.",
       "supporting_evidence": [
         {
           "id": "SOV-LEGAL-028",
           "source_name": "Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24",
           "source_url": "https://www.althingi.is/"
-        },
+        }
+      ],
+      "contradicting_evidence": [
         {
           "id": "SOV-PARL-001",
           "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
           "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
         }
       ],
-      "contradicting_evidence": [],
       "category": "sovereignty",
+      "attribution": "asserted",
+      "article_slug": "ekki-vist-hvernig-evropusambandid-bregst-vid",
+      "article_title": "Ekki víst hvernig Evrópusambandið bregst við",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-09"
+    },
+    {
+      "claim_text": "Ísland lagði inn aðildarumsókn til Evrópusambandsins árið 2010.",
+      "original_quote": "umsókn sem Ísland lagði inn til Evrópusambandsins árið 2010 um mögulega aðild landsins að bandalaginu",
+      "verdict": "unsupported",
+      "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland: Accession negotiations status; Althingi records\" target=\"_blank\" rel=\"noopener\">EEA-DATA-009</a> og <a href=\"https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/\" title=\"Althingi — Historical records; European Commission accession records\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-010</a> staðfesta báðar að aðildarumsóknin var lögð inn 16. júlí 2009, ekki 2010. Aðildarviðræður hófust hins vegar í júlí 2010, sem gæti skýrt ruglinginn. <a href=\"https://uni.hi.is/baldurt/files/2012/08/Iceland-EU-Baldur-Alyson-Greham.pdf\" title=\"Capacent Gallup / Social Science Research Institute, University of Iceland\" target=\"_blank\" rel=\"noopener\">PREC-HIST-005</a> staðfestir einnig 2009 sem umsóknarárið. Fullyrðingin er röng um ártalið — umsóknin var lögð inn 2009 en viðræður hófust 2010.",
+      "missing_context": "Ísland lagði inn aðildarumsókn 16. júlí 2009. Aðildarviðræður hófust í júlí 2010, sem gæti skýrt þennan misskilning. Greinin sjálf vísar í \"umsókn ... árið 2010\" sem er rangt ártalsát.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [
+        {
+          "id": "EEA-DATA-009",
+          "source_name": "European Commission — Iceland: Accession negotiations status; Althingi records",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "POLITICAL-DATA-010",
+          "source_name": "Althingi — Historical records; European Commission accession records",
+          "source_url": "https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/"
+        },
+        {
+          "id": "PREC-HIST-005",
+          "source_name": "Capacent Gallup / Social Science Research Institute, University of Iceland",
+          "source_url": "https://uni.hi.is/baldurt/files/2012/08/Iceland-EU-Baldur-Alyson-Greham.pdf"
+        }
+      ],
+      "category": "eea_eu_law",
       "attribution": "asserted",
       "article_slug": "ekki-vist-hvernig-evropusambandid-bregst-vid",
       "article_title": "Ekki víst hvernig Evrópusambandið bregst við",
@@ -280,9 +313,9 @@
     {
       "claim_text": "Hugtakið upplýsingaóreiða hefur verið notað um umræðuna og sjónir beinast í auknum mæli að stjórnvöldum í þeim efnum.",
       "original_quote": "Hefur hugtakið upplýsingaóreiða verið notað í þessu sambandi og beinast sjónir nú í auknum mæli að stjórnvöldum í þeim efnum.",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://fjolmidlanefnd.is/2025/05/26/ny-skyrsla-falsfrettir-og-upplysingaoreida-i-addraganda-althingiskosninga-2024/\" title=\"Fjölmiðlanefnd/Maskína — Falsfréttir og upplýsingaóreiða í aðdraganda alþingiskosninga 2024\" target=\"_blank\" rel=\"noopener\">POLL-DATA-025</a> staðfestir beint að hugtakið «upplýsingaóreiða» hefur verið notað í opinberri umræðu — könnun Fjölmiðlanefndar og Maskínu sýndi að 62,1% þátttakenda höfðu séð rangar eða villandi upplýsingar. <a href=\"https://fjolmidlanefnd.is/2023/02/16/ny-skyrsla-upplysingaoreida-og-skautun-i-islensku-samfelagi/\" title=\"Fjölmiðlanefnd — Upplýsingaóreiða og skautun í íslensku samfélagi\" target=\"_blank\" rel=\"noopener\">POLL-DATA-026</a> vísar jafnframt til skýrslu Fjölmiðlanefndar sem ber heitið «Upplýsingaóreiða og skautun í íslensku samfélagi», sem staðfestir að hugtakið er í almennri notkun. <a href=\"https://www.stjornarradid.is/verkefni/utanrikismal/evropusamvinna/thjodaratkvaedagreidsla/\" title=\"Government of Iceland — Referendum information materials; Althingi debate records; RÚV coverage\" target=\"_blank\" rel=\"noopener\">POL-DATA-024</a> sýnir að stjórnvöld hafa verið gagnrýnd fyrir upplýsingagjöf sína og SOV-DATA-018 sýnir að Björn Bjarnason hefur beint gagnrýni að utanríkisráðuneytinu. Þetta staðfestir að sjónum hefur verið beint að stjórnvöldum í þessum efnum.",
-      "missing_context": "Könnun <a href=\"https://fjolmidlanefnd.is/2025/05/26/ny-skyrsla-falsfrettir-og-upplysingaoreida-i-addraganda-althingiskosninga-2024/\" title=\"Fjölmiðlanefnd/Maskína — Falsfréttir og upplýsingaóreiða í aðdraganda alþingiskosninga 2024\" target=\"_blank\" rel=\"noopener\">POLL-DATA-025</a> var gerð í aðdraganda alþingiskosninga 2024, ekki ESB-þjóðaratkvæðagreiðslunnar, þannig að tölurnar eiga ekki beint við ESB-umræðuna. Hvort upplýsingar sem þátttakendur sáu voru raunverulega rangar er ekki staðfest — könnunin mælir upplifun, ekki sannleiksgildi. Gagnrýni á stjórnvöld kemur aðallega frá stjórnarandstöðu og gæti verið herferðartaktík.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://fjolmidlanefnd.is/2025/05/26/ny-skyrsla-falsfrettir-og-upplysingaoreida-i-addraganda-althingiskosninga-2024/\" title=\"Fjölmiðlanefnd/Maskína — Falsfréttir og upplýsingaóreiða í aðdraganda alþingiskosninga 2024\" target=\"_blank\" rel=\"noopener\">POLL-DATA-025</a> staðfestir að hugtakið «upplýsingaóreiða» er virkt í íslenskri umræðu — 62,1% sögðust hafa séð rangar upplýsingar ætlaðar til að hafa áhrif á kosningar 2024. <a href=\"https://fjolmidlanefnd.is/2023/02/16/ny-skyrsla-upplysingaoreida-og-skautun-i-islensku-samfelagi/\" title=\"Fjölmiðlanefnd — Upplýsingaóreiða og skautun í íslensku samfélagi\" target=\"_blank\" rel=\"noopener\">POLL-DATA-026</a> fjallar um skautun og bergmálshella í fjölmiðlaneyslu. Gagnrýni á stjórnvöld kemur fram í <a href=\"https://www.stjornarradid.is/verkefni/utanrikismal/evropusamvinna/thjodaratkvaedagreidsla/\" title=\"Government of Iceland — Referendum information materials; Althingi debate records; RÚV coverage\" target=\"_blank\" rel=\"noopener\">POL-DATA-024</a> (andstaðan gagnrýnir upplýsingaherferð ríkisstjórnar sem hlutdræga) og SOV-DATA-018 (Björn Bjarnason gagnrýnir utanríkisráðuneytið). Hins vegar er orðalagið «í auknum mæli» óstaðfest — engin heimild sýnir mælanlega aukningu á gagnrýni á stjórnvöld yfir tíma.",
+      "missing_context": "Könnun <a href=\"https://fjolmidlanefnd.is/2025/05/26/ny-skyrsla-falsfrettir-og-upplysingaoreida-i-addraganda-althingiskosninga-2024/\" title=\"Fjölmiðlanefnd/Maskína — Falsfréttir og upplýsingaóreiða í aðdraganda alþingiskosninga 2024\" target=\"_blank\" rel=\"noopener\">POLL-DATA-025</a> var gerð í aðdraganda alþingiskosninga 2024, ekki ESB-þjóðaratkvæðagreiðslunnar. Gagnrýni á stjórnvöld kemur að mestu frá stjórnarandstöðunni og andstæðingum ESB-aðildar — hvort þetta endurspeglar almenna þróun eða eingöngu pólitískan ágreining er óljóst. Fyrirvari <a href=\"https://fjolmidlanefnd.is/2023/02/16/ny-skyrsla-upplysingaoreida-og-skautun-i-islensku-samfelagi/\" title=\"Fjölmiðlanefnd — Upplýsingaóreiða og skautun í íslensku samfélagi\" target=\"_blank\" rel=\"noopener\">POLL-DATA-026</a> bendir á að tölurnar um fjölmiðlaneyslu koma úr viðtali og þarfnast nánari staðfestingar á aðferðafræði.",
       "supporting_evidence": [
         {
           "id": "POLL-DATA-025",
@@ -295,14 +328,14 @@
           "source_url": "https://fjolmidlanefnd.is/2023/02/16/ny-skyrsla-upplysingaoreida-og-skautun-i-islensku-samfelagi/"
         },
         {
-          "id": "POL-DATA-024",
-          "source_name": "Government of Iceland — Referendum information materials; Althingi debate records; RÚV coverage",
-          "source_url": "https://www.stjornarradid.is/verkefni/utanrikismal/evropusamvinna/thjodaratkvaedagreidsla/"
-        },
-        {
           "id": "SOV-DATA-018",
           "source_name": "Björn Bjarnason — Op-eds and public statements; Morgunblaðið; Vísir",
           "source_url": null
+        },
+        {
+          "id": "POL-DATA-024",
+          "source_name": "Government of Iceland — Referendum information materials; Althingi debate records; RÚV coverage",
+          "source_url": "https://www.stjornarradid.is/verkefni/utanrikismal/evropusamvinna/thjodaratkvaedagreidsla/"
         }
       ],
       "contradicting_evidence": [],
@@ -345,10 +378,72 @@
       "article_date": "2026-03-09"
     },
     {
+      "claim_text": "Umræðan um samningsstöðu Íslands hefur hingað til einkum snúist um hvort landið muni fá varanlega undanþágu frá sameiginlegri sjávarútvegsstefnu ESB.",
+      "original_quote": "til þessa hefur umræðan einkum snúist um það hvort Ísland muni fá varanlega undanþágu frá sameiginlegri sjávarútvegsstefnu Evrópusambandsins (CFP)",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> staðfestir að Hagfræðistofnun Háskóla Íslands greindi sérstaklega hvort varanleg undanþága frá sameiginlegri sjávarútvegsstefnu væri raunhæf, og komst að þeirri niðurstöðu að slíkt væri ólíklegt þar sem regluverkið er ekki samningsefni í efnislegu tilliti. POL-DATA-005 sýnir að sjávarútvegurinn hefur einmitt byggt andstöðu sína á þessari spurningu. Sjávarútvegurinn hefur verið miðpunktur umræðunnar frá því að aðildarviðræður hófust 2010.",
+      "missing_context": "Fullyrðingin á við um umræðuna hingað til, en vert er að benda á að <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> benti einnig á að raunveruleg samningskjör höfðu aldrei verið prófuð þar sem viðræðum var hætt áður en sjávarútvegskafli var opnaður. Spurningin um varanlega undanþágu er því enn fræðileg frekar en reynslutengd.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-DATA-014",
+          "source_name": "Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)",
+          "source_url": "https://ioes.hi.is/en/institute-economic-studies"
+        },
+        {
+          "id": "POL-DATA-014",
+          "source_name": "LÍÚ — Position paper on EU membership (2025); campaign finance declarations",
+          "source_url": null
+        },
+        {
+          "id": "SOV-LEGAL-006",
+          "source_name": "Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "fisheries",
+      "attribution": "asserted",
+      "article_slug": "svarar-ekki-beint-um-undanthagur-en-segir-stodu-islands-sterka",
+      "article_title": "Svarar ekki beint um undanþágur en segir stöðu Íslands sterka",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-10"
+    },
+    {
+      "claim_text": "Í sameiginlegri sjávarútvegsstefnu ESB ákveður sambandið hversu mikið má veiða af hverri fisktegund á hverju ári.",
+      "original_quote": "Í sameiginlegri sjávarútvegsstefnu Evrópusambandsins ákveður ESB hversu mikið má veiða af hverri fisktegund á hverju ári.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> staðfestir þetta beint: sameiginleg sjávarútvegsstefna ESB (reglugerð 1380/2013) setur heildarleyfilegan afla (TAC) fyrir ESB-hafsvæði. Ráðherraráð ESB samþykkir TAC árlega fyrir hverja tegund. <a href=\"https://stecf.ec.europa.eu/reports_en\" title=\"European Commission — The EU Fishing Fleet reports (STECF Annual Economic Reports)\" target=\"_blank\" rel=\"noopener\">FISH-COMP-002</a> bætir við samhengi um að þetta kerfi hafi leitt til samdráttar í flotastærð og bætts ástands stofna — um 60% metinna stofna í norðaustur-Atlantshafi voru veiddar á hámarkssjálfbæru magni árið 2023.",
+      "missing_context": "Ákvörðun um heildarafla byggist á vísindalegum ráðgjöfum frá ICES og er ekki eingöngu pólitísk ákvörðun. Aðildarríki hafa áhrif á ákvörðunina í gegnum Ráðherraráðið — Ísland myndi sem aðildarríki hafa atkvæðisrétt þar. Einnig ber að nefna að PREC-DATA-009 sýnir að Noregur nær sambærilegum sjálfbærnismarkmiðum utan ESB.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-LEGAL-001",
+          "source_name": "EU Regulation 1380/2013 of the European Parliament and of the Council",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380"
+        },
+        {
+          "id": "FISH-COMP-002",
+          "source_name": "European Commission — The EU Fishing Fleet reports (STECF Annual Economic Reports)",
+          "source_url": "https://stecf.ec.europa.eu/reports_en"
+        },
+        {
+          "id": "FISH-DATA-021",
+          "source_name": "Eurostat — Fisheries statistics (fish_ca_main); Hagstofa Íslands",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/FISH_CA_MAIN/default/table?lang=en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "fisheries",
+      "attribution": "asserted",
+      "article_slug": "svarar-ekki-beint-um-undanthagur-en-segir-stodu-islands-sterka",
+      "article_title": "Svarar ekki beint um undanþágur en segir stöðu Íslands sterka",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-10"
+    },
+    {
       "claim_text": "Heildarkvóta í sameiginlegri sjávarútvegsstefnu ESB er skipt milli aðildarríkja eftir fyrirfram ákveðnum hlutföllum sem byggja að mestu á sögulegum veiðum.",
       "original_quote": "Heildarkvótanum er síðan skipt milli aðildarríkja eftir fyrirfram ákveðnum hlutföllum sem byggja að mestu á sögulegum veiðum.",
       "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> staðfestir þetta nákvæmlega: kvóta er úthlutað milli aðildarríkja samkvæmt meginreglunni um \"hlutfallslegan stöðugleika\" (relative stability), sem byggist á sögulegum veiðum fyrst og fremst frá árunum 1973–1978. <a href=\"https://stecf.jrc.ec.europa.eu/reports/economic\" title=\"European Commission — Scientific, Technical and Economic Committee for Fisheries (STECF); FAO — The State of World Fisheries and Aquaculture\" target=\"_blank\" rel=\"noopener\">FISH-DATA-025</a> styrkir þetta og bætir við að kerfið hefur verið gagnrýnt fyrir að festa ráðandi aðila í sessi og gera nýjum keppinautum erfitt fyrir.",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> staðfestir þetta nákvæmlega: kvóta er úthlutað milli aðildarríkja samkvæmt meginreglunni um \"hlutfallslegan stöðugleika\" (relative stability), sem byggist á sögulegum veiðum fyrst og fremst frá árunum 1973–1978. <a href=\"https://stecf.ec.europa.eu/reports_en\" title=\"European Commission — Scientific, Technical and Economic Committee for Fisheries (STECF); FAO — The State of World Fisheries and Aquaculture\" target=\"_blank\" rel=\"noopener\">FISH-DATA-025</a> styrkir þetta og bætir við að kerfið hefur verið gagnrýnt fyrir að festa ráðandi aðila í sessi og gera nýjum keppinautum erfitt fyrir.",
       "missing_context": "Lykilspurningin fyrir Ísland er hvernig hlutdeild þess yrði ákveðin sem nýs aðildarríkis. Sögulegar veiðir Íslands eru innan eigin efnahagslögsögu, ekki á ESB-hafsvæðum, og því þyrfti sérstakt samkomulag. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> nefnir þetta sérstaklega sem lykilsamningsatriði.",
       "supporting_evidence": [
         {
@@ -359,7 +454,7 @@
         {
           "id": "FISH-DATA-025",
           "source_name": "European Commission — Scientific, Technical and Economic Committee for Fisheries (STECF); FAO — The State of World Fisheries and Aquaculture",
-          "source_url": "https://stecf.jrc.ec.europa.eu/reports/economic"
+          "source_url": "https://stecf.ec.europa.eu/reports_en"
         },
         {
           "id": "EEA-DATA-004",
@@ -379,7 +474,7 @@
       "claim_text": "Aðildarríki ESB fá sinn hlut af heildarkvóta og ákveða sjálf hvernig honum er úthlutað til skipa eða fyrirtækja innan landsins.",
       "original_quote": "Aðildarríkin fá þannig sinn hlut af heildarkvótanum og ákveða sjálf hvernig honum er úthlutað til skipa eða fyrirtækja innan landsins.",
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> staðfestir að kvóta er úthlutað til aðildarríkja samkvæmt hlutfallslegum stöðugleika. Aðildarríki hafa nokkurt svigrúm í innlendri úthlutun, eins og sjá má af mismunandi kerfum — til dæmis notar Holland stór fyrirtæki á meðan smábátasjávarútvegur er áberandi annars staðar (<a href=\"https://stecf.jrc.ec.europa.eu/reports/economic\" title=\"European Commission — Scientific, Technical and Economic Committee for Fisheries (STECF); FAO — The State of World Fisheries and Aquaculture\" target=\"_blank\" rel=\"noopener\">FISH-DATA-025</a>). Hins vegar er þessi fullyrðing of einföld — ESB-reglugerðin setur ákveðin skilyrði um innlenda úthlutun og samræmisreglur gilda.",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> staðfestir að kvóta er úthlutað til aðildarríkja samkvæmt hlutfallslegum stöðugleika. Aðildarríki hafa nokkurt svigrúm í innlendri úthlutun, eins og sjá má af mismunandi kerfum — til dæmis notar Holland stór fyrirtæki á meðan smábátasjávarútvegur er áberandi annars staðar (<a href=\"https://stecf.ec.europa.eu/reports_en\" title=\"European Commission — Scientific, Technical and Economic Committee for Fisheries (STECF); FAO — The State of World Fisheries and Aquaculture\" target=\"_blank\" rel=\"noopener\">FISH-DATA-025</a>). Hins vegar er þessi fullyrðing of einföld — ESB-reglugerðin setur ákveðin skilyrði um innlenda úthlutun og samræmisreglur gilda.",
       "missing_context": "Þótt aðildarríki hafi visst svigrúm í innlendri úthlutun, þá setur reglugerð 1380/2013 ákveðnar skorður — meðal annars varðandi gagnsæi, jöfn tækifæri og sjálfbæra nýtingu. Íslenska aflamarkskerfið (ITQ) er frábrugðið flestum ESB-kerfum og samhæfni þess við regluverk ESB yrði samningsatriði (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13\" target=\"_blank\" rel=\"noopener\">EEA-DATA-004</a>).",
       "supporting_evidence": [
         {
@@ -390,7 +485,7 @@
         {
           "id": "FISH-DATA-025",
           "source_name": "European Commission — Scientific, Technical and Economic Committee for Fisheries (STECF); FAO — The State of World Fisheries and Aquaculture",
-          "source_url": "https://stecf.jrc.ec.europa.eu/reports/economic"
+          "source_url": "https://stecf.ec.europa.eu/reports_en"
         }
       ],
       "contradicting_evidence": [],
@@ -453,6 +548,37 @@
           "id": "POL-DATA-005",
           "source_name": "POL-DATA-005",
           "source_url": null
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "fisheries",
+      "attribution": "asserted",
+      "article_slug": "svarar-ekki-beint-um-undanthagur-en-segir-stodu-islands-sterka",
+      "article_title": "Svarar ekki beint um undanþágur en segir stöðu Íslands sterka",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-10"
+    },
+    {
+      "claim_text": "Til eru sérreglur og aðlögunartímabil fyrir sum ríki eða svæði innan sameiginlegrar sjávarútvegsstefnu ESB.",
+      "original_quote": "Hins vegar eru til sérreglur og aðlögunartíma fyrir sum ríki eða svæði.",
+      "verdict": "supported",
+      "explanation": "Heimildir staðfesta skýrt að sérreglur og aðlögunartímabil eru til staðar innan sameiginlegrar sjávarútvegsstefnu ESB. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380\" title=\"Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-030</a> lýsir því hvernig hvert ríki hefur fullt forræði yfir skiptingu eigin kvóta — sum nota ITQ-kerfi, önnur stjórnunarlega úthlutun. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> og <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development\" title=\"European Parliament — The Common Fisheries Policy: Origins and Development\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-005</a> útskýra regluna um hlutfallslegan stöðugleika sem veitir aðildarríkjum fasta hlutdeild. Aðildarsamningar Spánar og Portúgals innihéldu sértækar kvótaráðstafanir samkvæmt <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development\" title=\"European Parliament — The Common Fisheries Policy: Origins and Development\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-005</a>.",
+      "missing_context": "Sérreglurnar eru af ólíkum toga — sum eru varanleg (hlutfallslegur stöðugleiki), önnur tímabundin (aðlögunartímabil). Heildaraflamark er ákvarðað af ráðherraráði ESB, ekki af einstökum ríkjum, sem er grundvallarbreyting frá núverandi stöðu Íslands. Hvernig Ísland myndi falla inn í kerfið er fordæmalaust vegna einstakrar sjávarútvegsstöðu landsins.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-DATA-030",
+          "source_name": "Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380"
+        },
+        {
+          "id": "FISH-LEGAL-005",
+          "source_name": "European Parliament — The Common Fisheries Policy: Origins and Development",
+          "source_url": "https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development"
+        },
+        {
+          "id": "FISH-LEGAL-001",
+          "source_name": "EU Regulation 1380/2013 of the European Parliament and of the Council",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380"
         }
       ],
       "contradicting_evidence": [],
@@ -537,7 +663,7 @@
       "title": "Ekki víst hvernig Evrópusambandið bregst við",
       "source": "Morgunblaðið",
       "date": "2026-03-09",
-      "claim_count": 6,
+      "claim_count": 7,
       "attribution_types": [
         "asserted"
       ]
@@ -547,7 +673,7 @@
       "title": "Svarar ekki beint um undanþágur en segir stöðu Íslands sterka",
       "source": "Morgunblaðið",
       "date": "2026-03-10",
-      "claim_count": 4,
+      "claim_count": 7,
       "attribution_types": [
         "asserted"
       ]
@@ -577,21 +703,49 @@
   "icelandic": true,
   "outlet_articles": [
     {
+      "slug": "segir-samningavidraedur-vid-esb-thegar-hafnar",
+      "title": "Segir samningaviðræður við ESB þegar hafnar",
+      "date": "2026-03-18",
+      "source": "Morgunblaðið",
+      "claim_count": 1,
+      "verdict_counts": {
+        "partially_supported": 1
+      },
+      "dominant_category": "sovereignty",
+      "categories": [
+        "sovereignty"
+      ],
+      "participants": [
+        {
+          "name": "Ólafur Ragnar Grímsson",
+          "role": "fyrrverandi forseti Íslands",
+          "party": null,
+          "role_in_article": "speaker",
+          "attribution_type": "quoted",
+          "claim_count": 1,
+          "verdicts": {
+            "partially_supported": 1
+          },
+          "stance": "anti_eu",
+          "slug": "olafur-ragnar-grimsson",
+          "mention_count": 5,
+          "credibility": 0.56
+        }
+      ]
+    },
+    {
       "slug": "gagnryna-ad-adlogunarferli-se-kallad-samningavidraedur",
       "title": "Gagnrýna að aðlögunarferli sé kallað samningaviðræður",
       "date": "2026-03-16",
       "source": "Morgunblaðið",
-      "claim_count": 5,
+      "claim_count": 4,
       "verdict_counts": {
-        "supported": 2,
-        "unverifiable": 2,
+        "supported": 3,
         "partially_supported": 1
       },
       "dominant_category": "eea_eu_law",
       "categories": [
-        "eea_eu_law",
-        "org_positions",
-        "party_positions"
+        "eea_eu_law"
       ],
       "participants": [
         {
@@ -600,10 +754,9 @@
           "party": null,
           "role_in_article": "speaker",
           "attribution_type": "asserted",
-          "claim_count": 3,
+          "claim_count": 2,
           "verdicts": {
             "supported": 1,
-            "unverifiable": 1,
             "partially_supported": 1
           },
           "stance": "anti_eu",
@@ -617,9 +770,9 @@
           "party": null,
           "role_in_article": "speaker",
           "attribution_type": "quoted",
-          "claim_count": 1,
+          "claim_count": 2,
           "verdicts": {
-            "supported": 1
+            "supported": 2
           },
           "stance": "anti_eu",
           "slug": "erna-bjarnadottir",
@@ -633,14 +786,13 @@
       "title": "Fékk ekki áheyrn hjá æðstu ráðamönnum",
       "date": "2026-03-14",
       "source": "Morgunblaðið",
-      "claim_count": 8,
+      "claim_count": 1,
       "verdict_counts": {
-        "unverifiable": 8
+        "partially_supported": 1
       },
-      "dominant_category": "sovereignty",
+      "dominant_category": "party_positions",
       "categories": [
-        "sovereignty",
-        "trade"
+        "party_positions"
       ],
       "participants": [
         {
@@ -649,9 +801,9 @@
           "party": "Sjálfstæðisflokkur",
           "role_in_article": "speaker",
           "attribution_type": "paraphrased",
-          "claim_count": 8,
+          "claim_count": 1,
           "verdicts": {
-            "unverifiable": 8
+            "partially_supported": 1
           },
           "stance": "anti_eu",
           "slug": "gudlaugur-thor-thordarson",
@@ -666,12 +818,12 @@
       "title": "Segir baráttuna um Ísland hefjast á flokksráðsþingi",
       "date": "2026-03-14",
       "source": "Morgunblaðið",
-      "claim_count": 8,
+      "claim_count": 9,
       "verdict_counts": {
-        "unverifiable": 1,
-        "partially_supported": 7
+        "partially_supported": 8,
+        "misleading": 1
       },
-      "dominant_category": "party_positions",
+      "dominant_category": "sovereignty",
       "categories": [
         "eea_eu_law",
         "party_positions",
@@ -685,10 +837,10 @@
           "party": "Miðflokkurinn",
           "role_in_article": "speaker",
           "attribution_type": "quoted",
-          "claim_count": 8,
+          "claim_count": 9,
           "verdicts": {
-            "unverifiable": 1,
-            "partially_supported": 7
+            "partially_supported": 8,
+            "misleading": 1
           },
           "stance": "anti_eu",
           "slug": "sigmundur-david-gunnlaugsson",
@@ -699,91 +851,14 @@
       ]
     },
     {
-      "slug": "18-manudirnir-byggja-ekki-a-formlegum-samtolum",
-      "title": "18 mánuðirnir byggja ekki á formlegum samtölum",
-      "date": "2026-03-13",
-      "source": "Morgunblaðið",
-      "claim_count": 8,
-      "verdict_counts": {
-        "supported": 5,
-        "partially_supported": 2,
-        "unverifiable": 1
-      },
-      "dominant_category": "fisheries",
-      "categories": [
-        "eea_eu_law",
-        "fisheries",
-        "sovereignty"
-      ],
-      "participants": [
-        {
-          "name": "Þorgerður Katrín Gunnarsdóttir",
-          "role": "utanríkisráðherra",
-          "party": "Viðreisn",
-          "role_in_article": "speaker",
-          "attribution_type": "quoted",
-          "claim_count": 8,
-          "verdicts": {
-            "supported": 5,
-            "partially_supported": 2,
-            "unverifiable": 1
-          },
-          "stance": "pro_eu",
-          "slug": "thorgerdur-katrin-gunnarsdottir",
-          "mention_count": 27,
-          "credibility": 0.68,
-          "speech_count": 194
-        }
-      ]
-    },
-    {
-      "slug": "gjaldeyrisahaettan-thurrkadist-ut",
-      "title": "Gjaldeyrisáhættan þurrkaðist út",
-      "date": "2026-03-13",
-      "source": "Morgunblaðið",
-      "claim_count": 15,
-      "verdict_counts": {
-        "unverifiable": 10,
-        "supported": 3,
-        "partially_supported": 2
-      },
-      "dominant_category": "precedents",
-      "categories": [
-        "currency",
-        "labour",
-        "polling",
-        "precedents"
-      ],
-      "participants": [
-        {
-          "name": "Boris Vujčić",
-          "role": "seðlabankastjóri Króatíu",
-          "party": null,
-          "role_in_article": "speaker",
-          "attribution_type": "paraphrased",
-          "claim_count": 15,
-          "verdicts": {
-            "unverifiable": 10,
-            "supported": 3,
-            "partially_supported": 2
-          },
-          "stance": "pro_eu",
-          "slug": "boris-vujcic",
-          "mention_count": 1,
-          "credibility": 0.6
-        }
-      ]
-    },
-    {
       "slug": "kristrun-telur-thurfa-70-studning-vid-tilloguna",
       "title": "Kristrún telur þurfa 70% stuðning við tillöguna",
       "date": "2026-03-12",
       "source": "Morgunblaðið",
-      "claim_count": 10,
+      "claim_count": 11,
       "verdict_counts": {
-        "partially_supported": 6,
-        "supported": 3,
-        "unverifiable": 1
+        "partially_supported": 7,
+        "supported": 4
       },
       "dominant_category": "party_positions",
       "categories": [
@@ -799,13 +874,12 @@
           "attribution_type": "quoted",
           "claim_count": 5,
           "verdicts": {
-            "partially_supported": 2,
-            "supported": 2,
-            "unverifiable": 1
+            "partially_supported": 3,
+            "supported": 2
           },
           "stance": "anti_eu",
           "slug": "kristrun-frostadottir",
-          "mention_count": 22,
+          "mention_count": 23,
           "credibility": 0.72
         },
         {
@@ -820,8 +894,8 @@
           },
           "stance": "pro_eu",
           "slug": "thorgerdur-katrin-gunnarsdottir",
-          "mention_count": 27,
-          "credibility": 0.68,
+          "mention_count": 33,
+          "credibility": 0.66,
           "speech_count": 194
         },
         {
@@ -862,11 +936,11 @@
       "title": "Þorgerður: Bandaríkin greinilega ekki unnendur ESB",
       "date": "2026-03-12",
       "source": "Morgunblaðið",
-      "claim_count": 8,
+      "claim_count": 9,
       "verdict_counts": {
-        "unverifiable": 3,
-        "partially_supported": 2,
-        "supported": 3
+        "partially_supported": 4,
+        "misleading": 1,
+        "supported": 4
       },
       "dominant_category": "sovereignty",
       "categories": [
@@ -882,16 +956,16 @@
           "party": "Viðreisn",
           "role_in_article": "author",
           "attribution_type": "quoted",
-          "claim_count": 6,
+          "claim_count": 7,
           "verdicts": {
-            "unverifiable": 3,
-            "supported": 2,
-            "partially_supported": 1
+            "misleading": 1,
+            "partially_supported": 3,
+            "supported": 3
           },
           "stance": "pro_eu",
           "slug": "thorgerdur-katrin-gunnarsdottir",
-          "mention_count": 27,
-          "credibility": 0.68,
+          "mention_count": 33,
+          "credibility": 0.66,
           "speech_count": 194
         },
         {
@@ -900,9 +974,10 @@
           "party": null,
           "role_in_article": "speaker",
           "attribution_type": "quoted",
-          "claim_count": 2,
+          "claim_count": 3,
           "verdicts": {
-            "partially_supported": 2
+            "partially_supported": 2,
+            "misleading": 1
           },
           "stance": "anti_eu",
           "slug": "bandarikjastjorn",
@@ -931,11 +1006,11 @@
       "title": "Evrópusambandið fylgi hótunum sínum ekki eftir",
       "date": "2026-03-11",
       "source": "Morgunblaðið",
-      "claim_count": 7,
+      "claim_count": 12,
       "verdict_counts": {
-        "partially_supported": 3,
-        "supported": 2,
-        "unverifiable": 1,
+        "unverifiable": 2,
+        "partially_supported": 4,
+        "supported": 5,
         "misleading": 1
       },
       "dominant_category": "party_positions",
@@ -943,7 +1018,8 @@
         "eea_eu_law",
         "org_positions",
         "party_positions",
-        "polling"
+        "polling",
+        "sovereignty"
       ],
       "participants": [
         {
@@ -952,10 +1028,11 @@
           "party": "Miðflokkur",
           "role_in_article": "speaker",
           "attribution_type": "quoted",
-          "claim_count": 4,
+          "claim_count": 8,
           "verdicts": {
-            "supported": 2,
-            "partially_supported": 1,
+            "unverifiable": 1,
+            "supported": 4,
+            "partially_supported": 2,
             "misleading": 1
           },
           "stance": "anti_eu"
@@ -966,10 +1043,11 @@
           "party": null,
           "role_in_article": "speaker",
           "attribution_type": "quoted",
-          "claim_count": 3,
+          "claim_count": 4,
           "verdicts": {
+            "unverifiable": 1,
             "partially_supported": 2,
-            "unverifiable": 1
+            "supported": 1
           },
           "stance": "pro_eu",
           "slug": "magnus-arni-skjold-magnusson",
@@ -983,13 +1061,44 @@
           "party": null,
           "role_in_article": "speaker",
           "attribution_type": "quoted",
-          "claim_count": 1,
+          "claim_count": 2,
           "verdicts": {
-            "supported": 1
+            "supported": 1,
+            "partially_supported": 1
           },
           "stance": "anti_eu",
           "slug": "samtok-idnadarins",
           "mention_count": 4,
+          "credibility": 0.72
+        },
+        {
+          "name": "Samfylkingin",
+          "role": "stjórnmálaflokk",
+          "party": "Samfylkingin",
+          "role_in_article": "speaker",
+          "attribution_type": "paraphrased",
+          "claim_count": 2,
+          "verdicts": {
+            "supported": 2
+          },
+          "stance": "neutral",
+          "slug": "samfylkingin",
+          "mention_count": 5,
+          "credibility": 1.0
+        },
+        {
+          "name": "Kristrún Frostadóttir",
+          "role": "stjórnmálamenn",
+          "party": "Samfylkingin",
+          "role_in_article": "speaker",
+          "attribution_type": "quoted",
+          "claim_count": 1,
+          "verdicts": {
+            "supported": 1
+          },
+          "stance": "mixed",
+          "slug": "kristrun-frostadottir",
+          "mention_count": 23,
           "credibility": 0.72
         },
         {
@@ -1018,21 +1127,6 @@
           "slug": "vidreisn",
           "mention_count": 9,
           "credibility": 0.5
-        },
-        {
-          "name": "Samfylkingin",
-          "role": "stjórnmálaflokk",
-          "party": "Samfylkingin",
-          "role_in_article": "speaker",
-          "attribution_type": "paraphrased",
-          "claim_count": 1,
-          "verdicts": {
-            "supported": 1
-          },
-          "stance": "neutral",
-          "slug": "samfylkingin",
-          "mention_count": 5,
-          "credibility": 1.0
         }
       ]
     },
@@ -1043,30 +1137,33 @@
       "source": "Morgunblaðið",
       "claim_count": 7,
       "verdict_counts": {
-        "unverifiable": 2,
         "supported": 1,
-        "partially_supported": 4
+        "partially_supported": 5,
+        "misleading": 1
       },
       "dominant_category": "party_positions",
       "categories": [
         "eea_eu_law",
-        "party_positions"
+        "party_positions",
+        "precedents"
       ],
       "participants": [
         {
-          "name": "Andrés Magnússon",
-          "role": "fréttaritari",
-          "party": null,
-          "role_in_article": "author",
-          "attribution_type": "asserted",
-          "claim_count": 1,
+          "name": "Þorgerður Katrín Gunnarsdóttir",
+          "role": "utanríkisráðherra",
+          "party": "Viðreisn",
+          "role_in_article": "speaker",
+          "attribution_type": "quoted",
+          "claim_count": 4,
           "verdicts": {
-            "unverifiable": 1
+            "partially_supported": 3,
+            "misleading": 1
           },
-          "stance": "neutral",
-          "slug": "andres-magnusson",
-          "mention_count": 1,
-          "credibility": null
+          "stance": "pro_eu",
+          "slug": "thorgerdur-katrin-gunnarsdottir",
+          "mention_count": 33,
+          "credibility": 0.66,
+          "speech_count": 194
         },
         {
           "name": "Kristrún Frostadóttir",
@@ -1081,24 +1178,8 @@
           },
           "stance": "mixed",
           "slug": "kristrun-frostadottir",
-          "mention_count": 22,
+          "mention_count": 23,
           "credibility": 0.72
-        },
-        {
-          "name": "Þorgerður Katrín Gunnarsdóttir",
-          "role": "utanríkisráðherra",
-          "party": "Viðreisn",
-          "role_in_article": "speaker",
-          "attribution_type": "quoted",
-          "claim_count": 2,
-          "verdicts": {
-            "partially_supported": 2
-          },
-          "stance": "pro_eu",
-          "slug": "thorgerdur-katrin-gunnarsdottir",
-          "mention_count": 27,
-          "credibility": 0.68,
-          "speech_count": 194
         },
         {
           "name": "Guðlaugur Þór Þórðarson",
@@ -1123,16 +1204,17 @@
       "title": "Skýrt umboð skiptir máli",
       "date": "2026-03-11",
       "source": "Morgunblaðið",
-      "claim_count": 6,
+      "claim_count": 12,
       "verdict_counts": {
-        "partially_supported": 4,
-        "supported": 2
+        "supported": 6,
+        "partially_supported": 6
       },
       "dominant_category": "other",
       "categories": [
         "eea_eu_law",
         "other",
         "party_positions",
+        "precedents",
         "sovereignty"
       ],
       "participants": [
@@ -1142,14 +1224,14 @@
           "party": "Samfylkingin",
           "role_in_article": "speaker",
           "attribution_type": "quoted",
-          "claim_count": 6,
+          "claim_count": 12,
           "verdicts": {
-            "partially_supported": 4,
-            "supported": 2
+            "supported": 6,
+            "partially_supported": 6
           },
           "stance": "neutral",
           "slug": "kristrun-frostadottir",
-          "mention_count": 22,
+          "mention_count": 23,
           "credibility": 0.72
         }
       ]
@@ -1159,16 +1241,14 @@
       "title": "Hitnaði í kolunum vegna meintra MAGA-tengsla",
       "date": "2026-03-10",
       "source": "Morgunblaðið",
-      "claim_count": 4,
+      "claim_count": 5,
       "verdict_counts": {
-        "supported": 1,
-        "partially_supported": 1,
-        "unverifiable": 2
+        "supported": 2,
+        "partially_supported": 3
       },
       "dominant_category": "party_positions",
       "categories": [
-        "party_positions",
-        "sovereignty"
+        "party_positions"
       ],
       "participants": [
         {
@@ -1177,11 +1257,10 @@
           "party": "Samfylkingin",
           "role_in_article": "speaker",
           "attribution_type": "asserted",
-          "claim_count": 3,
+          "claim_count": 5,
           "verdicts": {
-            "supported": 1,
-            "partially_supported": 1,
-            "unverifiable": 1
+            "supported": 2,
+            "partially_supported": 3
           },
           "stance": "anti_eu",
           "slug": "dagur-b-eggertsson",
@@ -1195,9 +1274,10 @@
           "party": "Miðflokkurinn",
           "role_in_article": "speaker",
           "attribution_type": "paraphrased",
-          "claim_count": 1,
+          "claim_count": 2,
           "verdicts": {
-            "partially_supported": 1
+            "partially_supported": 1,
+            "supported": 1
           },
           "stance": "anti_eu",
           "slug": "sigmundur-david-gunnlaugsson",
@@ -1212,11 +1292,11 @@
       "title": "Ræða þarf alla kaflana á nýjan leik",
       "date": "2026-03-10",
       "source": "Morgunblaðið",
-      "claim_count": 36,
+      "claim_count": 38,
       "verdict_counts": {
-        "supported": 26,
-        "partially_supported": 6,
-        "unverifiable": 1,
+        "unverifiable": 3,
+        "partially_supported": 10,
+        "supported": 22,
         "misleading": 1,
         "unsupported": 2
       },
@@ -1235,11 +1315,11 @@
           "party": null,
           "role_in_article": "speaker",
           "attribution_type": "paraphrased",
-          "claim_count": 32,
+          "claim_count": 34,
           "verdicts": {
-            "supported": 23,
-            "partially_supported": 5,
-            "unverifiable": 1,
+            "unverifiable": 3,
+            "partially_supported": 9,
+            "supported": 19,
             "misleading": 1,
             "unsupported": 2
           },
@@ -1255,16 +1335,16 @@
       "title": "Svarar ekki beint um undanþágur en segir stöðu Íslands sterka",
       "date": "2026-03-10",
       "source": "Morgunblaðið",
-      "claim_count": 12,
+      "claim_count": 14,
       "verdict_counts": {
         "partially_supported": 4,
-        "supported": 5,
-        "unverifiable": 3
+        "supported": 9,
+        "unverifiable": 1
       },
       "dominant_category": "fisheries",
       "categories": [
+        "currency",
         "fisheries",
-        "party_positions",
         "sovereignty"
       ],
       "participants": [
@@ -1274,11 +1354,11 @@
           "party": "Samfylkingin",
           "role_in_article": "speaker",
           "attribution_type": "quoted",
-          "claim_count": 8,
+          "claim_count": 7,
           "verdicts": {
             "partially_supported": 3,
-            "supported": 2,
-            "unverifiable": 3
+            "supported": 3,
+            "unverifiable": 1
           },
           "stance": "mixed",
           "slug": "gudmundur-ari-sigurjonsson",
@@ -1293,15 +1373,17 @@
       "title": "Ekki víst hvernig Evrópusambandið bregst við",
       "date": "2026-03-09",
       "source": "Morgunblaðið",
-      "claim_count": 11,
+      "claim_count": 14,
       "verdict_counts": {
-        "partially_supported": 3,
-        "supported": 7,
-        "unverifiable": 1
+        "partially_supported": 5,
+        "supported": 5,
+        "unverifiable": 3,
+        "unsupported": 1
       },
       "dominant_category": "eea_eu_law",
       "categories": [
         "eea_eu_law",
+        "party_positions",
         "sovereignty"
       ],
       "participants": [
@@ -1378,8 +1460,8 @@
           },
           "stance": "neutral",
           "slug": "evropusambandid",
-          "mention_count": 39,
-          "credibility": 0.76
+          "mention_count": 42,
+          "credibility": 0.74
         }
       ]
     },
@@ -1388,20 +1470,20 @@
       "title": "Spursmál #115 — Er Ísland á leið inn í Evrópusambandið?",
       "date": "2026-03-09",
       "source": "Spursmál (mbl.is)",
-      "claim_count": 24,
+      "claim_count": 35,
       "verdict_counts": {
-        "supported": 10,
-        "partially_supported": 2,
-        "unverifiable": 11,
+        "supported": 24,
+        "partially_supported": 9,
+        "unverifiable": 1,
         "misleading": 1
       },
       "dominant_category": "eea_eu_law",
       "categories": [
         "currency",
         "eea_eu_law",
+        "fisheries",
         "housing",
         "org_positions",
-        "other",
         "party_positions",
         "polling",
         "precedents",
@@ -1410,16 +1492,32 @@
       ],
       "participants": [
         {
+          "name": "Magnús Árni Skjöld Magnússon",
+          "role": "formaður Evrópuhreyfingarinnar",
+          "party": null,
+          "role_in_article": "speaker",
+          "attribution_type": "asserted",
+          "claim_count": 16,
+          "verdicts": {
+            "supported": 15,
+            "partially_supported": 1
+          },
+          "stance": "pro_eu",
+          "slug": "magnus-arni-skjold-magnusson",
+          "mention_count": 4,
+          "credibility": 0.73,
+          "speech_count": 7
+        },
+        {
           "name": "Björn Ingi Hrafnsson",
           "role": "aðstoðarmaður formanns Miðflokksins",
           "party": "Miðflokkurinn",
           "role_in_article": "speaker",
           "attribution_type": "asserted",
-          "claim_count": 9,
+          "claim_count": 11,
           "verdicts": {
-            "partially_supported": 1,
-            "supported": 2,
-            "unverifiable": 5,
+            "partially_supported": 5,
+            "supported": 5,
             "misleading": 1
           },
           "stance": "anti_eu",
@@ -1433,48 +1531,16 @@
           "party": "Viðreisn",
           "role_in_article": "speaker",
           "attribution_type": "asserted",
-          "claim_count": 6,
+          "claim_count": 8,
           "verdicts": {
-            "supported": 3,
-            "unverifiable": 2,
-            "partially_supported": 1
+            "supported": 4,
+            "unverifiable": 1,
+            "partially_supported": 3
           },
           "stance": "pro_eu",
           "slug": "pawel-bartoszek",
           "mention_count": 3,
           "credibility": 0.75
-        },
-        {
-          "name": "Magnús Árni Skjöld Magnússon",
-          "role": "formaður Evrópuhreyfingarinnar",
-          "party": null,
-          "role_in_article": "speaker",
-          "attribution_type": "asserted",
-          "claim_count": 5,
-          "verdicts": {
-            "supported": 5
-          },
-          "stance": "pro_eu",
-          "slug": "magnus-arni-skjold-magnusson",
-          "mention_count": 4,
-          "credibility": 0.73,
-          "speech_count": 7
-        },
-        {
-          "name": "Jens Garðar Helgason",
-          "role": "varaformaður Sjálfstæðisflokksins, þingmaður",
-          "party": "Sjálfstæðisflokkur",
-          "role_in_article": "speaker",
-          "attribution_type": "asserted",
-          "claim_count": 5,
-          "verdicts": {
-            "unverifiable": 5
-          },
-          "stance": "anti_eu",
-          "slug": "jens-gardar-helgason",
-          "mention_count": 2,
-          "credibility": null,
-          "speech_count": 10
         }
       ]
     },
@@ -1483,10 +1549,11 @@
       "title": "Þjóðin á báðum áttum um viðræður: 52% gegn 48%",
       "date": "2026-03-09",
       "source": "Morgunblaðið",
-      "claim_count": 18,
+      "claim_count": 21,
       "verdict_counts": {
-        "supported": 17,
-        "unsupported": 1
+        "supported": 18,
+        "unsupported": 1,
+        "partially_supported": 2
       },
       "dominant_category": "polling",
       "categories": [
@@ -1497,34 +1564,33 @@
     }
   ],
   "outlet_scorecard": {
-    "supported": 91,
-    "unverifiable": 47,
-    "partially_supported": 48,
-    "misleading": 4,
-    "unsupported": 3
+    "partially_supported": 71,
+    "supported": 107,
+    "misleading": 7,
+    "unverifiable": 10,
+    "unsupported": 4
   },
   "outlet_stats": {
-    "article_count": 17,
-    "total_claims": 193,
-    "unique_speakers": 27,
+    "article_count": 16,
+    "total_claims": 199,
+    "unique_speakers": 25,
     "topic_distribution": {
-      "eea_eu_law": 11,
-      "org_positions": 3,
+      "sovereignty": 8,
+      "eea_eu_law": 10,
       "party_positions": 11,
-      "sovereignty": 9,
-      "trade": 4,
-      "precedents": 3,
-      "fisheries": 3,
-      "currency": 3,
-      "labour": 1,
-      "polling": 5,
-      "other": 2,
+      "precedents": 4,
+      "polling": 4,
+      "trade": 3,
+      "org_positions": 2,
+      "other": 1,
       "agriculture": 1,
+      "currency": 3,
+      "fisheries": 3,
       "housing": 1
     },
     "date_range": {
       "first": "2026-03-09",
-      "last": "2026-03-16"
+      "last": "2026-03-18"
     }
   }
 }

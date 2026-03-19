@@ -7,7 +7,7 @@
   "statement": "Iceland has a unique mortgage system featuring CPI-indexed loans (verðtryggð húsnæðislán) that fundamentally differs from conventional mortgages in Europe. In an indexed loan, the outstanding principal is adjusted monthly according to the Consumer Price Index. This means that with 5% annual inflation, a 40 million ISK loan grows to 42 million ISK in principal after one year, even as payments are made. The nominal interest rate on indexed loans is lower (typically 3.5–5.5% as of 2026) than on non-indexed loans (7–9%), but the real cost over the loan lifetime can be comparable or higher. Approximately 80% of Icelandic mortgages are CPI-indexed. This system means that comparing Icelandic and eurozone mortgage rates requires careful distinction between nominal and real rates. The oft-cited comparison of '8% Icelandic rates vs 3.2% eurozone rates' typically conflates non-indexed Icelandic rates with eurozone nominal rates, ignoring that most Icelanders actually hold indexed loans at 3.5–5.5% nominal (plus inflation adjustment).",
   "statement_is": "Ísland er með sérstætt verðtryggt húsnæðislánakerfi þar sem höfuðstóll lánsins breytist mánaðarlega eftir vísitölu neysluverðs — við 5% verðbólgu hækkar 40 milljóna króna lán í 42 milljónir á einu ári. Um 80% íslenskra húsnæðislána eru verðtryggð. Þessi sérstaða þýðir að algengur samanburður á 8% íslenskum vöxtum við 3,2% evrusvæðisvexti er villandi þar sem hann blandar saman nafnvöxtum úr ólíkum kerfum.",
   "source_name": "Seðlabanki Íslands — Financial Stability Report 2025; Húsnæðis- og mannvirkjastofnun (HMS) — Housing Market Overview",
-  "source_url": "https://www.sedlabanki.is/utgefid-efni/rit-og-skyrslur/fjarmalastodugleikaskyrsla/",
+  "source_url": "https://sedlabanki.is/fjarmalastodugleiki/",
   "source_date": "2025-12-01",
   "source_type": "official_statistics",
   "source_description_is": "Seðlabanki Íslands birtir fjármálastöðugleikaskýrslu með ítarlegri greiningu á húsnæðislánamarkaði og Húsnæðis- og mannvirkjastofnun gefur út yfirlitsskýrslur um húsnæðismarkaðinn.",
@@ -32,7 +32,7 @@
     {
       "report_slug": "af-hverju-ad-saekja-um-evropusambandsadild",
       "report_title": "Af hverju að sækja um Evrópusambandsaðild?",
-      "report_source": "Kratinn (Ungir jafnaðarmenn)",
+      "report_source": "Kratinn",
       "report_date": "2026-03-17",
       "claims": [
         {
@@ -49,14 +49,55 @@
       "report_date": "2024-08-11",
       "claims": [
         {
+          "claim_text": "Ungt fólk á Íslandi borgar 4,4 milljónum króna meira í vexti á fyrsta ári en Þjóðverjar sem taka 60 milljón króna (400 þúsund evru) húsnæðislán.",
+          "verdict": "misleading",
+          "role": "contradicting"
+        },
+        {
           "claim_text": "Íslensk heimili borga 367 þúsund krónum meira á mánuði í vexti en þýsk heimili, sem er um 500 þúsund krónur fyrir skatta.",
           "verdict": "misleading",
+          "role": "contradicting"
+        },
+        {
+          "claim_text": "Öll lán í krónum eru með krónuálagi sem nemur að minnsta kosti 5% umfram lán í evrum.",
+          "verdict": "partially_supported",
           "role": "contradicting"
         },
         {
           "claim_text": "Með upptöku evru yrðu vextir af húsnæðislánum allt að 60% lægri en í krónum.",
           "verdict": "misleading",
           "role": "contradicting"
+        },
+        {
+          "claim_text": "Heimili sem skulda 60 milljónir myndu hafa tæplega 400 þúsund krónur meira milli handanna á mánuði við upptöku evru.",
+          "verdict": "misleading",
+          "role": "contradicting"
+        }
+      ]
+    },
+    {
+      "report_slug": "otharfa-sannleiksleit",
+      "report_title": "Óþarfa sannleiksleit",
+      "report_source": "Vísir",
+      "report_date": "2026-03-18",
+      "claims": [
+        {
+          "claim_text": "Verðbólga á Íslandi hefur aðallega verið innanbúðarvandi.",
+          "verdict": "partially_supported",
+          "role": "supporting"
+        }
+      ]
+    },
+    {
+      "report_slug": "raunveruleg-svik-vid-fullveldi-thjodarinnar",
+      "report_title": "Raunveruleg svik við fullveldi þjóðarinnar",
+      "report_source": "Vísir",
+      "report_date": "2026-03-10",
+      "claims": [
+        {
+          "claim_text": "Íslendingar eru í erfiðri stöðu hvað húsnæðislán varðar.",
+          "verdict": "supported",
+          "role": "supporting"
         }
       ]
     },
@@ -100,5 +141,5 @@
       ]
     }
   ],
-  "citation_count": 6
+  "citation_count": 11
 }

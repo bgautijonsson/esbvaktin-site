@@ -15,8 +15,10 @@
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 9,
-    "supported": 6
+    "partially_supported": 12,
+    "supported": 17,
+    "unverifiable": 1,
+    "misleading": 1
   },
   "claims": [
     {
@@ -79,9 +81,9 @@
     {
       "claim_text": "Sameiginleg sjávarútvegsstefna ESB gerir kröfu um gagnsæi og rekjanleika í sjávarútvegi.",
       "original_quote": "Eins er gerð krafa um gagnsæi og rekjanleika.",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://oceans-and-fisheries.ec.europa.eu/news/eu-fisheries-control-system-gets-major-revamp-2024-01-09_en\" title=\"European Commission — EU Fisheries Control System Revamp\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-004</a> staðfestir skýrt að endurskoðuð reglugerð ESB um sjávarútvegsstýringu (2023/2842) krefst rafrænna aflaskráninga, leikskýrslna og rafræns rekjanleikakerfis (CATCH). Þetta felur í sér stafrænar aflabækur, stafrænar löndunarskýrslur og fjareftirlit um borð í stærri skipum. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380\" title=\"Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-030</a> bætir við að 17. grein reglugerðar 1380/2013 krefst «transparent and objective criteria» í úthlutun kvóta. Fullyrðingin um gagnsæi og rekjanleika er rétt samkvæmt þessum heimildum.",
-      "missing_context": "Framkvæmd landkunarskyldunnar hefur verið misgóð — endurskoðunarskrifstofa ESB hefur bent á verulega vanskráningu á brottkasti. Kerfið er lagalegur rammi en virkni þess fer eftir aðildarríkjunum sjálfum.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://oceans-and-fisheries.ec.europa.eu/news/eu-fisheries-control-system-gets-major-revamp-2024-01-09_en\" title=\"European Commission — EU Fisheries Control System Revamp\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-004</a> staðfestir að endurskoðaðar eftirlitsreglur sameiginlegu sjávarútvegsstefnunnar (reglugerð 2023/2842) krefjast rafrænna aflaskráninga, stafræns CATCH-kerfis og myndavélabúnaðar um borð — eitt víðtækasta gagnsæiskerfi heimsins. Krafan um gagnsæi og rekjanleika á sér því stoð í löggjöfinni. Framkvæmd hefur þó verið misjöfn og Evrópski endurskoðunarréttarinn hefur bent á verulega vanráðningu á brottkastsboðinu, sem dregur úr trúverðugleika kerfisins í reynd.",
+      "missing_context": "Lagalegur rammi krefst gagnsæis en framkvæmd er misjöfn milli aðildarríkja. Rafrænt eftirlitskerfi (myndavélar) fyrir skip yfir 18 metrum tekur ekki gildi fyrr en í janúar 2028 og stafrænt aflaskráningarkerfi frá janúar 2026. Brottkastsboðið hefur ekki náð fullum árangri samkvæmt Evrópska endurskoðunarréttinum. Ísland hefur þegar umfangsmikið eftirlit með eigin fiskveiðum sem er ekki beint sambærilegt.",
       "supporting_evidence": [
         {
           "id": "FISH-LEGAL-004",
@@ -92,6 +94,11 @@
           "id": "FISH-DATA-030",
           "source_name": "Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies",
           "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380"
+        },
+        {
+          "id": "FISH-LEGAL-001",
+          "source_name": "EU Regulation 1380/2013 of the European Parliament and of the Council",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380"
         }
       ],
       "contradicting_evidence": [],
@@ -211,7 +218,7 @@
         {
           "id": "FISH-DATA-024",
           "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
-          "source_url": "https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda"
+          "source_url": "https://island.is/s/fiskistofa"
         }
       ],
       "contradicting_evidence": [],
@@ -226,7 +233,7 @@
       "claim_text": "Íslenska kvótakerfið flytur óslægðan afla í vinnslu erlendis og leggur sjávarpláss í eyði.",
       "original_quote": "Kerfið sem leggur einmitt sjávarpláss í eyði og flytur óslægðan afla í vinnslu erlendis. Það kerfi er íslensk uppfinning.",
       "verdict": "partially_supported",
-      "explanation": "Fullyrðingin segir að íslenska kvótakerfið flyti óslægðan afla í vinnslu erlendis og leggi sjávarpláss í eyði. <a href=\"https://link.springer.com/article/10.1007/s40152-018-0089-5\" title=\"Kokorsch & Benediktsson (2018) — 'Prosper or Perish? The Development of Icelandic Fishing Villages after the Privatisation of Fishing Rights', Maritime Studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-028</a> staðfestir verulega samþjöppun kvóta og fólksfækkun í sjávarplássum — um 5.100 störf (36%) töpuðust í sjávarútvegi 1990–2017 og nokkur sjávarþorp misstu meira en helming íbúa. <a href=\"https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> staðfestir samþjöppun kvóta hjá stórum fyrirtækjum. Hins vegar nefna heimildir ekki beint útflutning á óslægðum afla sem aðalvandamál kerfisins — <a href=\"https://hagstofa.is/talnaefni/atvinnuvegir/sjavarutvegur/\" title=\"Statistics Iceland — Industrial production; Samtök fyrirtækja í sjávarútvegi (SFS)\" target=\"_blank\" rel=\"noopener\">FISH-DATA-007</a> sýnir þvert á móti að hlutfall ferskrar vinnslu hafi hækkað úr 15% í yfir 35%. Fullyrðingin blandar saman tveimur atriðum sem tengjast en eru ekki jafn vel studd.",
+      "explanation": "Fullyrðingin segir að íslenska kvótakerfið flyti óslægðan afla í vinnslu erlendis og leggi sjávarpláss í eyði. <a href=\"https://link.springer.com/article/10.1007/s40152-018-0089-5\" title=\"Kokorsch & Benediktsson (2018) — 'Prosper or Perish? The Development of Icelandic Fishing Villages after the Privatisation of Fishing Rights', Maritime Studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-028</a> staðfestir verulega samþjöppun kvóta og fólksfækkun í sjávarplássum — um 5.100 störf (36%) töpuðust í sjávarútvegi 1990–2017 og nokkur sjávarþorp misstu meira en helming íbúa. <a href=\"https://island.is/s/fiskistofa\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> staðfestir samþjöppun kvóta hjá stórum fyrirtækjum. Hins vegar nefna heimildir ekki beint útflutning á óslægðum afla sem aðalvandamál kerfisins — <a href=\"https://hagstofa.is/talnaefni/atvinnuvegir/sjavarutvegur/\" title=\"Statistics Iceland — Industrial production; Samtök fyrirtækja í sjávarútvegi (SFS)\" target=\"_blank\" rel=\"noopener\">FISH-DATA-007</a> sýnir þvert á móti að hlutfall ferskrar vinnslu hafi hækkað úr 15% í yfir 35%. Fullyrðingin blandar saman tveimur atriðum sem tengjast en eru ekki jafn vel studd.",
       "missing_context": "<a href=\"https://hagstofa.is/talnaefni/atvinnuvegir/sjavarutvegur/\" title=\"Statistics Iceland — Industrial production; Samtök fyrirtækja í sjávarútvegi (SFS)\" target=\"_blank\" rel=\"noopener\">FISH-DATA-007</a> sýnir að ferskur fiskur og virðisaukandi vinnsla hefur aukist verulega, sem bendir til þess að þróunin sé ekki einfaldlega í átt að útflutningi á óunnum afla. Fólksfækkun sjávarþorpa á sér margar orsakir — samþjöppun kvóta er meðal þeirra en þéttbýlismyndun og breytingar í þjónustu spila líka inn. Nýju heimildir (<a href=\"https://www.fiskeridir.no/English/Fisheries/Statistics\" title=\"Norwegian Directorate of Fisheries — Statistics\" target=\"_blank\" rel=\"noopener\">FISH-COMP-001</a>) sýna að Noregur hefur valið aðra leið til að verja sjávarþorp, án framseljanlegra kvóta.",
       "supporting_evidence": [
         {
@@ -237,7 +244,7 @@
         {
           "id": "FISH-DATA-024",
           "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
-          "source_url": "https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda"
+          "source_url": "https://island.is/s/fiskistofa"
         }
       ],
       "contradicting_evidence": [
@@ -341,7 +348,7 @@
       "claim_text": "Núverandi íslenskt kvótakerfi nær þegar þeim markmiðum sem andstæðingar ESB-aðildar vara við — þ.e. sjávarpláss leggjast af og fiskur er fluttur óunninn úr landi.",
       "original_quote": "Ef eitthvað, þá er núverandi alíslenskt kvótakerfi að ná þeim markmiðum nú þegar.",
       "verdict": "supported",
-      "explanation": "Fullyrðingin bendir á þversögn: þau áhrif sem andstæðingar ESB-aðildar vara við (sjávarpláss leggjast af, fiskur fluttur óunninn úr landi) eiga sér nú þegar stað undir íslensku kvótakerfi. <a href=\"https://link.springer.com/article/10.1007/s40152-018-0089-5\" title=\"Kokorsch & Benediktsson (2018) — 'Prosper or Perish? The Development of Icelandic Fishing Villages after the Privatisation of Fishing Rights', Maritime Studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-028</a> staðfestir verulega fólksfækkun í sjávarplássum — 36% starfa í sjávarútvegi töpuðust 1990–2017, og nokkur þorp misstu meira en helming íbúa sinna vegna samþjöppunar kvóta. <a href=\"https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> lýsir samþjöppun kvóta hjá stórum fyrirtækjum. <a href=\"https://statice.is/statistics/economy/external-trade/\" title=\"Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður\" target=\"_blank\" rel=\"noopener\">FISH-DATA-027</a> sýnir að 90% afla fara til útflutnings. Nýju heimildirnar (<a href=\"https://www.gov.uk/government/collections/uk-sea-fisheries-annual-statistics\" title=\"UK Marine Management Organisation — UK Sea Fisheries Statistics; House of Lords European Affairs Committee — Brexit and fisheries (2023)\" target=\"_blank\" rel=\"noopener\">PREC-HIST-014</a>, <a href=\"https://www.fiskeridir.no/English/Fisheries/Statistics\" title=\"Norwegian Directorate of Fisheries — Statistics\" target=\"_blank\" rel=\"noopener\">FISH-COMP-001</a>) styrkja samhengið en breyta ekki grundvallarmati. Fullyrðingin er réttmæt sem gagnrýni á þessa þversögn.",
+      "explanation": "Fullyrðingin bendir á þversögn: þau áhrif sem andstæðingar ESB-aðildar vara við (sjávarpláss leggjast af, fiskur fluttur óunninn úr landi) eiga sér nú þegar stað undir íslensku kvótakerfi. <a href=\"https://link.springer.com/article/10.1007/s40152-018-0089-5\" title=\"Kokorsch & Benediktsson (2018) — 'Prosper or Perish? The Development of Icelandic Fishing Villages after the Privatisation of Fishing Rights', Maritime Studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-028</a> staðfestir verulega fólksfækkun í sjávarplássum — 36% starfa í sjávarútvegi töpuðust 1990–2017, og nokkur þorp misstu meira en helming íbúa sinna vegna samþjöppunar kvóta. <a href=\"https://island.is/s/fiskistofa\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> lýsir samþjöppun kvóta hjá stórum fyrirtækjum. <a href=\"https://statice.is/statistics/economy/external-trade/\" title=\"Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður\" target=\"_blank\" rel=\"noopener\">FISH-DATA-027</a> sýnir að 90% afla fara til útflutnings. Nýju heimildirnar (<a href=\"https://www.gov.uk/government/collections/uk-sea-fisheries-annual-statistics\" title=\"UK Marine Management Organisation — UK Sea Fisheries Statistics; House of Lords European Affairs Committee — Brexit and fisheries (2023)\" target=\"_blank\" rel=\"noopener\">PREC-HIST-014</a>, <a href=\"https://www.fiskeridir.no/English/Fisheries/Statistics\" title=\"Norwegian Directorate of Fisheries — Statistics\" target=\"_blank\" rel=\"noopener\">FISH-COMP-001</a>) styrkja samhengið en breyta ekki grundvallarmati. Fullyrðingin er réttmæt sem gagnrýni á þessa þversögn.",
       "missing_context": "Fullyrðingin einfaldar þó að nokkru — <a href=\"https://hagstofa.is/talnaefni/atvinnuvegir/sjavarutvegur/\" title=\"Statistics Iceland — Industrial production; Samtök fyrirtækja í sjávarútvegi (SFS)\" target=\"_blank\" rel=\"noopener\">FISH-DATA-007</a> (úr fyrri fullyrðingu) sýnir að virðisaukandi fiskvinnsla hefur aukist, og samþjöppun kvóta og sameiginleg sjávarútvegsstefna eru ólík fyrirbæri með ólíkum orsakasamhengjum. Andstæðingar ESB-aðildar halda því fram að CFP myndi auka vandann enn frekar.",
       "supporting_evidence": [
         {
@@ -352,7 +359,7 @@
         {
           "id": "FISH-DATA-024",
           "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
-          "source_url": "https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda"
+          "source_url": "https://island.is/s/fiskistofa"
         },
         {
           "id": "FISH-DATA-027",
@@ -374,6 +381,341 @@
       "article_date": "2026-03-07"
     },
     {
+      "claim_text": "Sum íslensk útgerðarfyrirtæki gera upp í evrum.",
+      "original_quote": "Útgerðina sem gerir upp í evrum.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://statice.is/statistics/economy/external-trade/\" title=\"Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður\" target=\"_blank\" rel=\"noopener\">FISH-DATA-027</a> staðfestir beint að íslensk sjávarútvegsfyrirtæki geri upp í erlendum gjaldmiðlum, einkum evrum fyrir evrópska markaðinn. Meirihluti útflutnings sjávarafurða fer til ESB-landa (60–65%) þar sem uppgjör í evrum er algengast. <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__utanrikisverslun/\" title=\"Hagstofa Íslands — External trade statistics\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-001</a> staðfestir að ESB sé stærsti viðskiptaaðili Íslands. Fullyrðingin \"sum íslensk útgerðarfyrirtæki gera upp í evrum\" er þar með rétt — orðalagið \"sum\" er varfærið og nákvæmt.",
+      "missing_context": "Uppgjör fer ekki eingöngu fram í evrum — hluti viðskipta er í Bandaríkjadölum (Asía, Ameríka) og innlent uppgjör á fiskmarkaði er í krónum. Heimildin tekur þetta sérstaklega fram sem mikilvæga nýansun.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-DATA-027",
+          "source_name": "Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður",
+          "source_url": "https://statice.is/statistics/economy/external-trade/"
+        },
+        {
+          "id": "TRADE-DATA-001",
+          "source_name": "Hagstofa Íslands — External trade statistics",
+          "source_url": "https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__utanrikisverslun/"
+        },
+        {
+          "id": "FISH-DATA-024",
+          "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
+          "source_url": "https://island.is/s/fiskistofa"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "fisheries",
+      "attribution": "quoted",
+      "article_slug": "bjorn-hrekur-fullyrdingu-um-afdrif-sjavaraudlinda-islendinga-i-esb",
+      "article_title": "Björn hrekur fullyrðingu um afdrif sjávarauðlinda Íslendinga í ESB",
+      "article_source": "DV",
+      "article_date": "2026-03-07"
+    },
+    {
+      "claim_text": "Íslensk útgerð hefur nýtt sér aflandsfélög og þar hafa orðið brot tengd brottkasti, ísprósentu og skiptaverði.",
+      "original_quote": "við vitum alveg af brottkastinu, ísprósentunni, skiptaverðinu og aflandsfélögunum",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://island.is/s/fiskistofa\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> staðfestir samþjöppun kvóta og nefnir helstu útgerðarfyrirtæki á Íslandi. Fullyrðingin felur þó í sér þrennt: aflandsfélög, brottkast/ísprósentu-brot og skiptaverðsbrot. Engin heimild í safninu fjallar beint um notkun aflandsfélaga af hálfu íslenskrar útgerðar eða tiltekin brot tengd brottkasti, ísprósentu og skiptaverði. <a href=\"https://statice.is/statistics/economy/external-trade/\" title=\"Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður\" target=\"_blank\" rel=\"noopener\">FISH-DATA-027</a> fjallar um gjaldmiðlauppgjör en ekki aflandsfélög í lagalegum skilningi.",
+      "missing_context": "Fullyrðingin vísar til aflandsfélaganotkunar og tiltekinna brota sem engin heimild í safninu staðfestir eða hafnar. Brot tengd brottkasti og skiptaverði eru vel þekkt viðfangsefni í íslenskum sjávarútvegi en þyrftu staðfestingu frá Fiskistofu eða dómstólaskrám.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-DATA-024",
+          "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
+          "source_url": "https://island.is/s/fiskistofa"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "fisheries",
+      "attribution": "quoted",
+      "article_slug": "bjorn-hrekur-fullyrdingu-um-afdrif-sjavaraudlinda-islendinga-i-esb",
+      "article_title": "Björn hrekur fullyrðingu um afdrif sjávarauðlinda Íslendinga í ESB",
+      "article_source": "DV",
+      "article_date": "2026-03-07"
+    },
+    {
+      "claim_text": "Íslenska útgerðin er hrædd við alvöru eftirlit og rekjanleika sem ESB-aðild myndi krefjast.",
+      "original_quote": "Sú útgerð er hrædd við að þurfa að gangast undir alvöru eftirlit og rekjanleika",
+      "verdict": "unverifiable",
+      "explanation": "Fullyrðingin heldur því fram að íslenska útgerðin sé «hrædd við alvöru eftirlit og rekjanleika» sem ESB-aðild myndi krefjast. Þetta er túlkunarfullyrðing um hvata útgerðarinnar, ekki staðreyndamat. POL-DATA-014 staðfestir að LÍÚ leggi harðlega gegn ESB-aðild og beini gagnrýni sinni að kvótakerfinu, deildri lögsögu og tilfærslu ákvarðanatöku til Brussel — en engin heimild segir beinlínis að eftirlit og rekjanleiki séu áhyggjuefni útgerðarinnar. Röksemdafærsla LÍÚ snýst um efnahagslega hagsmuni og sjálfstjórn, ekki um ótta við eftirlit.",
+      "missing_context": "Fullyrðingin gefur til kynna hvataspurning sem heimildir svara ekki. LÍÚ hefur lagt 500 milljónir króna í herferð gegn ESB-aðild og rökstyður andstöðu sína með efnahagslegum og stjórnunarlegum rökum (POL-DATA-014). Samtök iðnaðarins sýna vaxandi andstöðu meðal félagsmanna (<a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins (SI) — Membership survey, February/March 2026\" target=\"_blank\" rel=\"noopener\">ORG-DATA-001</a>). Engin heimild nefnir eftirlit eða rekjanleika sem sérstakt áhyggjuefni útgerðarinnar.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [],
+      "category": "fisheries",
+      "attribution": "quoted",
+      "article_slug": "bjorn-hrekur-fullyrdingu-um-afdrif-sjavaraudlinda-islendinga-i-esb",
+      "article_title": "Björn hrekur fullyrðingu um afdrif sjávarauðlinda Íslendinga í ESB",
+      "article_source": "DV",
+      "article_date": "2026-03-07"
+    },
+    {
+      "claim_text": "Samkvæmt sameiginlegri sjávarútvegsstefnu ESB þyrftu erlend skip að fá leyfi samkvæmt íslenskum lögum og vera skráð undir íslenskan fána til þess að veiða í íslenskri lögsögu.",
+      "original_quote": "„Þessi erlendu skip yrðu samt að fá leyfi samkvæmt íslenskum lögum til þess að sigla undir íslenskum fána. Þannig að lagalega séð yrðu þau íslensk skip.“",
+      "verdict": "misleading",
+      "explanation": "Fullyrðingin blandar saman tveimur ólíkum hlutum og gefur villandi mynd. Samkvæmt <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> og <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> myndi sameiginleg sjávarútvegsstefna ESB taka yfir stjórnun fiskveiða í íslenskri lögsögu — kvótaákvarðanir yrðu sameiginlegar, ekki einvörðungu íslenskar. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216\" title=\"Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-002</a> og <a href=\"https://en.wikipedia.org/wiki/R_(Factortame_Ltd)_v_Secretary_of_State_for_Transport\" title=\"R (Factortame Ltd) v Secretary of State for Transport — European Court of Justice\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-006</a> (Factortame og Jaderow-málin) sýna að ESB-réttur bannar þjóðernisbundnar takmarkanir á eignarhaldi á fiskiskipum. Erlend skip þyrftu ekki \"leyfi samkvæmt íslenskum lögum\" né skráningu \"undir íslenskan fána\" til að veiða í íslenskri lögsögu — þau gætu verið skráð í öðru aðildarríki og veitt gegn kvóta sem úthlutað er til þess ríkis. Fullyrðingin lýsir því andstæðu við það sem sameiginleg sjávarútvegsstefna ESB myndi í raun hafa í för með sér.",
+      "missing_context": "ESB-ríki geta krafist \"raunverulegra efnahagslegra tengsla\" (genuine economic link) — t.d. að aflinn sé landaður í viðkomandi ríki — en geta ekki krafist þjóðernis eiganda eða áhafna. Kvótaúthlutun byggist á \"hlutfallslegu stöðugleika\" (relative stability) sem verndaði sögulegan aflarétt aðildarríkja en þýðir jafnframt að kvótaskipti milli ríkja eru eðlilegur hluti kerfisins.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [
+        {
+          "id": "FISH-LEGAL-001",
+          "source_name": "EU Regulation 1380/2013 of the European Parliament and of the Council",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380"
+        },
+        {
+          "id": "PREC-LEGAL-002",
+          "source_name": "Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216"
+        },
+        {
+          "id": "FISH-LEGAL-006",
+          "source_name": "R (Factortame Ltd) v Secretary of State for Transport — European Court of Justice",
+          "source_url": "https://en.wikipedia.org/wiki/R_(Factortame_Ltd)_v_Secretary_of_State_for_Transport"
+        },
+        {
+          "id": "EEA-LEGAL-022",
+          "source_name": "EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'",
+          "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
+        }
+      ],
+      "category": "fisheries",
+      "attribution": "asserted",
+      "article_slug": "sjavaraudlindin-i-esb",
+      "article_title": "Sjávarauðlindin í ESB",
+      "article_source": "Vísir",
+      "article_date": "2026-03-07"
+    },
+    {
+      "claim_text": "Jafnvel þó skip sé skráð undir íslensku fáni og með íslensku veiðileyfi þýðir það ekki sjálfkrafa að viðkomandi skip fái úthlutun úr kvóta.",
+      "original_quote": "„Og jafnvel þó skip sé skráð með íslensku fána og með íslensku veiðileyfi þá þýðir það ekki að viðkomandi skip fái úthlutun úr kvóta.“",
+      "verdict": "supported",
+      "explanation": "Rétt er að veiðileyfi og kvótaúthlutun eru aðskilin ferli. Samkvæmt <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> ákvarðar sameiginleg sjávarútvegsstefna ESB heildaraflamark (TAC) og skiptir á milli aðildarríkja, en hvert ríki ákveður sjálft hvernig kvótanum er útdeilt til einstakra skipa (grein 16(6)). Íslenski kvótakerfið (<a href=\"https://www.fao.org/faolex/results/details/en/c/LEX-FAOC003455/\" title=\"Icelandic Fisheries Management Act No. 116/2006\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-003</a>) staðfestir einnig þessa aðgreiningu: veiðileyfi veitir rétt til veiða en kvótaúthlutun fer eftir aflahlutdeildarkerfi.",
+      "missing_context": "Á Íslandi er kvótaúthlutun tengd aflahlutdeildarkerfi (ITQ) þar sem kvóti er framseljanlegur og ákvarðast af eignarhaldi hlutdeildar, ekki eingöngu af veiðileyfi. Þetta kerfi væri líklega breytingarþurft í aðildarviðræðum við ESB (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13\" target=\"_blank\" rel=\"noopener\">EEA-DATA-004</a>).",
+      "supporting_evidence": [
+        {
+          "id": "FISH-LEGAL-001",
+          "source_name": "EU Regulation 1380/2013 of the European Parliament and of the Council",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380"
+        },
+        {
+          "id": "FISH-LEGAL-003",
+          "source_name": "Icelandic Fisheries Management Act No. 116/2006",
+          "source_url": "https://www.fao.org/faolex/results/details/en/c/LEX-FAOC003455/"
+        },
+        {
+          "id": "FISH-COMP-001",
+          "source_name": "Norwegian Directorate of Fisheries — Statistics",
+          "source_url": "https://www.fiskeridir.no/English/Fisheries/Statistics"
+        },
+        {
+          "id": "EEA-DATA-004",
+          "source_name": "Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "fisheries",
+      "attribution": "asserted",
+      "article_slug": "sjavaraudlindin-i-esb",
+      "article_title": "Sjávarauðlindin í ESB",
+      "article_source": "Vísir",
+      "article_date": "2026-03-07"
+    },
+    {
+      "claim_text": "Heildarmagn veiðiheimilda fyrir tegund og svæði yrði ákveðið miðlægt innan ESB, á sama hátt og gert er í dag milli landa.",
+      "original_quote": "„Heildarmagn veiðiheimilda fyrir tegund og svæði yrði ákveðið miðlægt innan sambandsins. Á nákvæmlega sama hátt og það er gert í dag milli landa.“",
+      "verdict": "supported",
+      "explanation": "Samkvæmt <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> setur sameiginleg sjávarútvegsstefna ESB (reglugerð 1380/2013) heildaraflamark (TAC) fyrir ESB-hafsvæði og úthlutar kvóta milli aðildarríkja á grundvelli \"hlutfallslegs stöðugleika\" byggt á sögulegum aflabókum frá 1973–1978. Þetta þýðir í reynd að heildarmagn veiðiheimilda fyrir tegund og svæði er ákveðið miðlægt á vettvangi ESB, eins og fullyrðingin segir. Nýjar heimildir (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland screening report Chapter 13; Progress reports on Iceland 2011–2013\" target=\"_blank\" rel=\"noopener\">FISH-DATA-023</a>) staðfesta enn frekar að sjávarútvegsstefnukafli 13 var aldrei opnaður í aðildarviðræðum Íslands vegna grundvallarósamræmis milli íslenska kvótakerfisins og sameiginlegrar sjávarútvegsstefnunnar.",
+      "missing_context": "Hlutfallslegur stöðugleiki byggist á sögulegum veiðum 1973–1978, sem þýðir að hlutdeild Íslands yrði samningsatriði. Aðlögunartímabil og sérstakar ráðstafanir fyrir sjávarútveg gætu verið hluti af aðildarsamningi. Noregi, sem EES-ríki utan ESB, tekst að halda fullri stjórn á fiskveiðum sínum og semja tvíhliða um sameiginlega stofna.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-LEGAL-001",
+          "source_name": "EU Regulation 1380/2013 of the European Parliament and of the Council",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380"
+        },
+        {
+          "id": "FISH-DATA-023",
+          "source_name": "European Commission — Iceland screening report Chapter 13; Progress reports on Iceland 2011–2013",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "FISH-LEGAL-002",
+          "source_name": "Icelandic Act on the Exclusive Economic Zone No. 41/1979",
+          "source_url": "https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "fisheries",
+      "attribution": "asserted",
+      "article_slug": "sjavaraudlindin-i-esb",
+      "article_title": "Sjávarauðlindin í ESB",
+      "article_source": "Vísir",
+      "article_date": "2026-03-07"
+    },
+    {
+      "claim_text": "Heildarveiðiheimild er ákveðin fyrir hvern stofn og henni skipt á milli aðildarríkja sem hafa lögsögu á viðkomandi svæði.",
+      "original_quote": "„Það er ákveðin heildarveiðiheimild fyrir hvern stofn og þeirri veiðiheimild svo skipt á milli aðildarríkja sem hafa lögsögu á því svæði sem sá stofn er á.“",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> staðfestir að sameiginleg sjávarútvegsstefna (reglugerð 1380/2013) setur heildaraflamark (TAC) fyrir hvern stofn og skiptir kvóta milli aðildarríkja samkvæmt \"hlutfallslegu stöðugleika.\" <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development\" title=\"European Parliament — The Common Fisheries Policy: Origins and Development\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-005</a> útskýrir nánar að þessi skipting byggist á sögulegum veiðigögnum frá 1973–1978, þörfum sjávarútvegshéraða og bótum fyrir tap á veiðiheimildum. Fullyrðingin lýsir þessu ferli réttilega — heildaraflaheimildir eru ákvarðaðar og þeim skipt á milli þeirra ríkja sem hafa lögsögu á viðkomandi svæði.",
+      "missing_context": "Kerfið hefur verið gagnrýnt fyrir stífleika — hlutfallslegt stöðugleiki aðlagast ekki sjálfkrafa breytingum á stofnastærð eða dreifingu vegna loftslagsbreytinga. Hvernig kvóti Íslands yrði reiknaður er samningsatriði sem hefur ekkert beint fordæmi, en myndi líklega miðast við sögulegar veiðar Íslands í eigin lögsögu.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-LEGAL-001",
+          "source_name": "EU Regulation 1380/2013 of the European Parliament and of the Council",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380"
+        },
+        {
+          "id": "FISH-LEGAL-005",
+          "source_name": "European Parliament — The Common Fisheries Policy: Origins and Development",
+          "source_url": "https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development"
+        },
+        {
+          "id": "FISH-LEGAL-002",
+          "source_name": "Icelandic Act on the Exclusive Economic Zone No. 41/1979",
+          "source_url": "https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "fisheries",
+      "attribution": "asserted",
+      "article_slug": "sjavaraudlindin-i-esb",
+      "article_title": "Sjávarauðlindin í ESB",
+      "article_source": "Vísir",
+      "article_date": "2026-03-07"
+    },
+    {
+      "claim_text": "Hvert aðildarríki hefur nær allt um það að segja hvernig þeim veiðiheimildum sem því er úthlutað er útdeilt.",
+      "original_quote": "„Veiðiheimildirnar eru ekki bara teknar af einhverjum útlendingjum heldur hefur hvert aðildarríki nær allt um það að segja hvernig þeim veiðiheimildum sem því er úthlutað er útdeilt.“",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> lýsir kerfi ESB þar sem heildaraflamark er ákveðið á ESB-vettvangi en úthlutun til einstakra útgerða er á forræði hvers aðildarríkis — í samræmi við meginregluna um hlutfallslegan stöðugleika. Þetta staðfestir beint fullyrðinguna um að aðildarríki ráði nánast öllu um útdeilingu þeirra veiðiheimilda sem þeim er úthlutað. Nýjar heimildir (<a href=\"https://stecf.ec.europa.eu/reports_en\" title=\"European Commission — Scientific, Technical and Economic Committee for Fisheries (STECF); FAO — The State of World Fisheries and Aquaculture\" target=\"_blank\" rel=\"noopener\">FISH-DATA-025</a>) sýna í framkvæmd hvernig mismunandi ríki hafa þróað ólíkar útdeilingarleiðir — frá fjölskyldufyrirtækjum í Hollandi til stærri samsteypa í Spáni. POL-DATA-014 styður þetta óbeint með lýsingu á áhyggjum LÍÚ um „relative stability\" meginregluna, sem snýr að skiptingu milli ríkja en ekki innan þeirra.",
+      "missing_context": "Þótt aðildarríki ráði útdeilingu innan lands setja ESB-reglur ákveðnar skorður — til dæmis kröfur um smábátasjávarútveg og umhverfisskilyrði. Alger sjálfræði er því ekki til staðar, en meginreglan um innlenda útdeilingu er sterk. Sem nýtt aðildarríki þyrfti Ísland fyrst að semja um sinn hlut af heildaraflamarki, sem er sá þáttur sem veldur mestri óvissu.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-LEGAL-001",
+          "source_name": "EU Regulation 1380/2013 of the European Parliament and of the Council",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380"
+        },
+        {
+          "id": "FISH-DATA-025",
+          "source_name": "European Commission — Scientific, Technical and Economic Committee for Fisheries (STECF); FAO — The State of World Fisheries and Aquaculture",
+          "source_url": "https://stecf.ec.europa.eu/reports_en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "fisheries",
+      "attribution": "asserted",
+      "article_slug": "sjavaraudlindin-i-esb",
+      "article_title": "Sjávarauðlindin í ESB",
+      "article_source": "Vísir",
+      "article_date": "2026-03-07"
+    },
+    {
+      "claim_text": "Skilyrðin fyrir úthlutun veiðiheimilda eru að skip verði að vera undir fána aðildarríkisins og úthlutunin verði að vera gagnsæ og hlutlæg.",
+      "original_quote": "„Skilyrðin eru að skipin sem fá úthlutuðum veiðiheimildum verða að vera undir fána aðildarríkisins og úthlutunin verður að vera gagnsæ og hlutlæg.“",
+      "verdict": "supported",
+      "explanation": "Fullyrðingin samræmist greinum 16(6) og 17 í reglugerð 1380/2013. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> staðfestir að veiðiheimildir séu úthlutaðar á grundvelli fána og hlutlægra viðmiða. Fánakrafan er grunnforsenda kerfisins og gagnsæiskrafan kemur skýrt fram í grein 17.",
+      "missing_context": "Þetta eru ekki einu skilyrðin. Grein 17 krefst einnig umhverfislegra, félagslegra og efnahagslegra viðmiða, þ.m.t. áhrifa á smáútgerð og strandbyggðir. Þá geta ákvarðanir Dómstóls ESB haft áhrif á túlkun fánakröfunnar (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a>, <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13\" target=\"_blank\" rel=\"noopener\">EEA-DATA-004</a>).",
+      "supporting_evidence": [
+        {
+          "id": "FISH-LEGAL-001",
+          "source_name": "EU Regulation 1380/2013 of the European Parliament and of the Council",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380"
+        },
+        {
+          "id": "FISH-DATA-008",
+          "source_name": "Icelandic Ministry of Food, Agriculture and Fisheries — Veiðigjald",
+          "source_url": "https://www.government.is/topics/business-and-industry/fisheries-in-iceland/"
+        },
+        {
+          "id": "FISH-LEGAL-005",
+          "source_name": "European Parliament — The Common Fisheries Policy: Origins and Development",
+          "source_url": "https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development"
+        },
+        {
+          "id": "EEA-DATA-004",
+          "source_name": "Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "fisheries",
+      "attribution": "asserted",
+      "article_slug": "sjavaraudlindin-i-esb",
+      "article_title": "Sjávarauðlindin í ESB",
+      "article_source": "Vísir",
+      "article_date": "2026-03-07"
+    },
+    {
+      "claim_text": "Samkvæmt regluverki ESB verður að skrá veiði, votta löndun, skrá sölu og halda rekjanleika til verslanna.",
+      "original_quote": "„Það verður að skrá veiði, votta löndun, skrá sölu og halda rekjanleika til verslanna.“",
+      "verdict": "supported",
+      "explanation": "Fullyrðingin dregur réttilega saman grundvallaratriði eftirlitsreglugerðar ESB nr. 1224/2009: skráningu veiða, vottun á löndun (grein 59), söluskráningu og rekjanleika frá veiði til sölu (grein 58). <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> og PREC-DATA-009 staðfesta ítarlegt eftirlitskerfi CFP.",
+      "missing_context": "Ísland hefur þegar sambærilegt eftirlitskerfi: aflaskráning, vigtun við löndun og uppboðskerfi. Meginmunurinn liggur í umfangi og tæknilegri útfærslu ESB-kerfisins, sem tekur m.a. til rafrænnar skráningar og stöðugrar vöktunar (<a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a>). Kostnaður við aðlögun er ómetinn í tiltækum heimildum.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-022",
+          "source_name": "EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'",
+          "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
+        },
+        {
+          "id": "FISH-COMP-005",
+          "source_name": "UK Marine Management Organisation — UK Sea Fisheries Statistics 2023; UK Trade Info",
+          "source_url": "https://www.gov.uk/government/statistics/uk-sea-fisheries-annual-statistics-report-2023"
+        },
+        {
+          "id": "FISH-LEGAL-001",
+          "source_name": "EU Regulation 1380/2013 of the European Parliament and of the Council",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380"
+        },
+        {
+          "id": "PREC-DATA-018",
+          "source_name": "Norwegian Seafood Council (Norges sjømatråd); Statistics Norway (SSB)",
+          "source_url": "https://en.seafood.no/market-insight/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "fisheries",
+      "attribution": "asserted",
+      "article_slug": "sjavaraudlindin-i-esb",
+      "article_title": "Sjávarauðlindin í ESB",
+      "article_source": "Vísir",
+      "article_date": "2026-03-07"
+    },
+    {
+      "claim_text": "Útgerðin og stjórnmálaflokkar hennar hafa verið mótfallin því að eftirlitskerfi á borð við það sem ESB krefst verði gert að íslenskum lögum.",
+      "original_quote": "„Þetta er nákvæmlega það kerfi sem útgerðin og stjórnmálaflokkar hennar hafa verið mótfallin að verði gert að íslenskum lögum.“",
+      "verdict": "partially_supported",
+      "explanation": "POL-DATA-014 staðfestir skýrt að LÍÚ (Landssamband íslenskra útvegsmanna) er helsti skipulagði andstæðingur ESB-aðildar og hefur lagt 500 milljónum króna til andstöðuherferðar. <a href=\"https://www.althingi.is/thingmenn/thingflokkar/thingflokkar/\" title=\"Althingi — Party platforms and election results\" target=\"_blank\" rel=\"noopener\">POL-DATA-002</a> og <a href=\"https://xd.is/2026/03/09/thjodin-a-betra-skilid/\" title=\"Sjálfstæðisflokkurinn — party website (xd.is); Miðflokkurinn — public statements; Gallup Þjóðarpúls party breakdown March 2026\" target=\"_blank\" rel=\"noopener\">POL-DATA-020</a> staðfesta að Sjálfstæðisflokkurinn og Framsóknarflokkurinn — sem hafa söguleg tengsl við útgerðina — eru á móti ESB-aðild og nefna sjávarútveg sem lykilmál. Fullyrðingin um andstöðu við «eftirlitskerfi á borð við það sem ESB krefst» er þó óljós og heimildir staðfesta ekki sérstaklega að útgerðin sé á móti auknu eftirliti sem slíku. Andstaðan snýst samkvæmt POL-DATA-014 um kvótakerfið, lögsögu og yfirfærslu ákvarðanatöku til Brussel — ekki sérstaklega um eftirlitskerfi.",
+      "missing_context": "Fullyrðingin notar orðalagið «eftirlitskerfi á borð við það sem ESB krefst» en heimildir staðfesta ekki nákvæmlega þessa afstöðu. Andstaða útgerðarinnar beinist að sameiginlegri sjávarútvegsstefnu (kvótakerfisbreytingum, aðgangi erlendra fiskiskipa og flutningi ákvarðanatöku) — ekki sérstaklega að auknu eftirliti. POL-DATA-008 nefnir jafnframt að Vinstrihreyfingin er klofin um ESB, sem sýnir flóknari mynd en einfalda andstöðu útgerðar og bandamanna hennar.",
+      "supporting_evidence": [
+        {
+          "id": "POL-DATA-014",
+          "source_name": "LÍÚ — Position paper on EU membership (2025); campaign finance declarations",
+          "source_url": null
+        },
+        {
+          "id": "POL-DATA-002",
+          "source_name": "Althingi — Party platforms and election results",
+          "source_url": "https://www.althingi.is/thingmenn/thingflokkar/thingflokkar/"
+        },
+        {
+          "id": "POL-DATA-020",
+          "source_name": "Sjálfstæðisflokkurinn — party website (xd.is); Miðflokkurinn — public statements; Gallup Þjóðarpúls party breakdown March 2026",
+          "source_url": "https://xd.is/2026/03/09/thjodin-a-betra-skilid/"
+        },
+        {
+          "id": "POL-DATA-019",
+          "source_name": "Bændasamtök Íslands — public statements and position papers (2009–2026); Vísir reporting",
+          "source_url": "https://www.bondi.is/frettir/kynningarefni"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "fisheries",
+      "attribution": "asserted",
+      "article_slug": "sjavaraudlindin-i-esb",
+      "article_title": "Sjávarauðlindin í ESB",
+      "article_source": "Vísir",
+      "article_date": "2026-03-07"
+    },
+    {
       "claim_text": "Íslenska stórútgerðin hefur lagt fjölmörg sjávarþorp í eyði.",
       "original_quote": "„Útgerðina sem er búin að leggja fjölmörg sjávarþorp í eyði.“",
       "verdict": "partially_supported",
@@ -388,7 +730,64 @@
         {
           "id": "FISH-DATA-024",
           "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
-          "source_url": "https://www.fiskistofa.is/umfiskistofu/frettir/hlutdeildir-staerstu-utgerda"
+          "source_url": "https://island.is/s/fiskistofa"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "fisheries",
+      "attribution": "asserted",
+      "article_slug": "sjavaraudlindin-i-esb",
+      "article_title": "Sjávarauðlindin í ESB",
+      "article_source": "Vísir",
+      "article_date": "2026-03-07"
+    },
+    {
+      "claim_text": "Útgerðin gerir upp í evrum.",
+      "original_quote": "„Útgerðina sem gerir upp í evrum.“",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://statice.is/statistics/economy/external-trade/\" title=\"Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður\" target=\"_blank\" rel=\"noopener\">FISH-DATA-027</a> staðfestir að íslenskur sjávarútvegur selur afurðir sínar að stórum hluta á erlendum mörkuðum og gerir upp í erlendum gjaldmiðlum, einkum evrum fyrir evrópska markaðinn. Um 60–65% af sjávarafurðaútflutningi fer til ESB-landa. Fullyrðingin er rétt í meginatriðum — uppgjör í evrum er algengast þegar selt er til Evrópu.",
+      "missing_context": "Fullyrðingin er einföldun — hluti uppgjörs er í Bandaríkjadölum (fyrir Asíu- og Ameríkumarkaði) og innlend viðskipti eru í krónum. Uppgjörsmynstur fer eftir afurðategund og markaði.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-DATA-027",
+          "source_name": "Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður",
+          "source_url": "https://statice.is/statistics/economy/external-trade/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "fisheries",
+      "attribution": "asserted",
+      "article_slug": "sjavaraudlindin-i-esb",
+      "article_title": "Sjávarauðlindin í ESB",
+      "article_source": "Vísir",
+      "article_date": "2026-03-07"
+    },
+    {
+      "claim_text": "Breytingar á veiðistjórnunarkerfi Íslands sem höfundur óskar eftir rúmast innan regluverks ESB og skylda meira að segja góðan hluta þeirra.",
+      "original_quote": "„Ég sé að þær breytingar rúmast innan regluverks ESB og skylda meira að segja góðan hluta þeirra breytinga.“",
+      "verdict": "supported",
+      "explanation": "Nýja heimild <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380\" title=\"Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-030</a> staðfestir kjarna fullyrðingarinnar: samkvæmt 17. gr. reglugerðar ESB 1380/2013 hefur hvert aðildarríki fullt vald yfir því hvernig það úthlutar eigin kvótahlutdeild — hvort sem um er að ræða aflahlutdeildarkerfi (ITQ), framleiðendasamtök eða annað fyrirkomulag. Danmörk, Holland og Eistland nota ITQ-lík kerfi innan sameiginlegu sjávarútvegsstefnunnar. Heimild <a href=\"https://oceans-and-fisheries.ec.europa.eu/news/eu-fisheries-control-system-gets-major-revamp-2024-01-09_en\" title=\"European Commission — EU Fisheries Control System Revamp\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-004</a> sýnir að ESB krefst landana á öllum afla (brottkastsbann) og rafrænnar vöktunar, sem samrýmist kröfum um aukna gagnsæi. Heimildir <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13\" target=\"_blank\" rel=\"noopener\">EEA-DATA-004</a> og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> staðfesta hins vegar að heildaraflinn (TAC) yrði ákveðinn á ESB-vettvangi.",
+      "missing_context": "Þótt innri úthlutun sé í höndum aðildarríkja, yrði heildarafli (TAC) ákveðinn af ESB-ráðinu á grundvelli ráðgjafar ICES, ekki einhliða af Íslandi eins og nú. Þetta er grundvallarbreyting sem fullyrðingin tekur ekki tillit til. Auk þess gætu dómar Evrópudómstólsins takmarkað hvernig innri úthlutun megi haga.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-DATA-030",
+          "source_name": "Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380"
+        },
+        {
+          "id": "FISH-LEGAL-004",
+          "source_name": "European Commission — EU Fisheries Control System Revamp",
+          "source_url": "https://oceans-and-fisheries.ec.europa.eu/news/eu-fisheries-control-system-gets-major-revamp-2024-01-09_en"
+        },
+        {
+          "id": "FISH-LEGAL-001",
+          "source_name": "EU Regulation 1380/2013 of the European Parliament and of the Council",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380"
+        },
+        {
+          "id": "EEA-DATA-004",
+          "source_name": "Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
         }
       ],
       "contradicting_evidence": [],
@@ -403,13 +802,13 @@
       "claim_text": "Núverandi íslenska kvótakerfið flytur óslægðan afla í vinnslu erlendis og leggur sjávarpláss í eyði.",
       "original_quote": "„Kerfið sem leggur einmitt sjávarpláss í eyði og flytur óslægðan afla í vinnslu erlendis.“",
       "verdict": "partially_supported",
-      "explanation": "Samþjöppun kvóta er vel skjalfest — þrjú stærstu fyrirtækin ráða yfir 45–50% kvóta og tíu stærstu yfir 70% (<a href=\"https://www.fiskistofa.is/veidar/aflaheimildir/uthlutadaflamark/\" title=\"Fiskistofa — Quota holdings reports\" target=\"_blank\" rel=\"noopener\">FISH-DATA-005</a>). Gagnrýnendur tengja þetta við eyðingu smærri sjávarbyggða (<a href=\"https://www.fao.org/faolex/results/details/en/c/LEX-FAOC003455/\" title=\"Icelandic Fisheries Management Act No. 116/2006\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-003</a>). Aukinn útflutningur á óunnum fiski er hluti af þeirri þróun (<a href=\"https://hagstofa.is/talnaefni/atvinnuvegir/sjavarutvegur/\" title=\"Statistics Iceland — Industrial production; Samtök fyrirtækja í sjávarútvegi (SFS)\" target=\"_blank\" rel=\"noopener\">FISH-DATA-007</a>). Hins vegar sýna heimildir einnig að vinnsla hefur þróast í átt að verðmætari afurðum og einhver samþjöppun var óhjákvæmileg eftir ofveiðuárin.",
+      "explanation": "Samþjöppun kvóta er vel skjalfest — þrjú stærstu fyrirtækin ráða yfir 45–50% kvóta og tíu stærstu yfir 70% (<a href=\"https://island.is/s/fiskistofa\" title=\"Fiskistofa — Quota holdings reports\" target=\"_blank\" rel=\"noopener\">FISH-DATA-005</a>). Gagnrýnendur tengja þetta við eyðingu smærri sjávarbyggða (<a href=\"https://www.fao.org/faolex/results/details/en/c/LEX-FAOC003455/\" title=\"Icelandic Fisheries Management Act No. 116/2006\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-003</a>). Aukinn útflutningur á óunnum fiski er hluti af þeirri þróun (<a href=\"https://hagstofa.is/talnaefni/atvinnuvegir/sjavarutvegur/\" title=\"Statistics Iceland — Industrial production; Samtök fyrirtækja í sjávarútvegi (SFS)\" target=\"_blank\" rel=\"noopener\">FISH-DATA-007</a>). Hins vegar sýna heimildir einnig að vinnsla hefur þróast í átt að verðmætari afurðum og einhver samþjöppun var óhjákvæmileg eftir ofveiðuárin.",
       "missing_context": "Orsökin er flóknari en fullyrðingin gefur til kynna. Norska kerfið (<a href=\"https://www.fiskeridir.no/English/Fisheries/Statistics\" title=\"Norwegian Directorate of Fisheries — Statistics\" target=\"_blank\" rel=\"noopener\">FISH-COMP-001</a>) sýnir að ófamseljanlegt kvótakerfi getur haldið betur í dreifbýlisflotann. Á móti bendir <a href=\"https://island.is/en/permits-to-fish/quota-system\" title=\"Ministry of Food, Agriculture and Fisheries — Fisheries Management in Iceland; Marine and Freshwater Research Institute\" target=\"_blank\" rel=\"noopener\">FISH-DATA-022</a> til þess að ITQ-kerfið hafi aukið arðsemi og verndað fiskistofna. Samanburður á íslensku og evrópsku kvótakerfi er flóknari en einföld fullyrðing um eyðileggingu sjávarplássa.",
       "supporting_evidence": [
         {
           "id": "FISH-DATA-005",
           "source_name": "Fiskistofa — Quota holdings reports",
-          "source_url": "https://www.fiskistofa.is/veidar/aflaheimildir/uthlutadaflamark/"
+          "source_url": "https://island.is/s/fiskistofa"
         },
         {
           "id": "FISH-LEGAL-003",
@@ -430,6 +829,83 @@
           "id": "FISH-DATA-022",
           "source_name": "Ministry of Food, Agriculture and Fisheries — Fisheries Management in Iceland; Marine and Freshwater Research Institute",
           "source_url": "https://island.is/en/permits-to-fish/quota-system"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "fisheries",
+      "attribution": "asserted",
+      "article_slug": "sjavaraudlindin-i-esb",
+      "article_title": "Sjávarauðlindin í ESB",
+      "article_source": "Vísir",
+      "article_date": "2026-03-07"
+    },
+    {
+      "claim_text": "Núverandi vandkerfi í sjávarútveginni er íslensk uppfinning, ekki erlendir aðilar sem bjó það til.",
+      "original_quote": "„Það kerfi er íslensk uppfinning. Það voru engir vondir útlendingar sem bjuggu það kerfi til.“",
+      "verdict": "supported",
+      "explanation": "Íslenska aflahlutdeildarkerfið (ITQ) var tekið upp af Alþingi 1984 og gert varanlegt 1990 (<a href=\"https://www.fao.org/faolex/results/details/en/c/LEX-FAOC003455/\" title=\"Icelandic Fisheries Management Act No. 116/2006\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-003</a>). Þetta var innlend ákvörðun íslenskra stjórnvalda og löggjafans, ekki þrýstingur erlendra aðila. Kerfið var hannað til að bregðast við innlendum vanda um ofveiði og offjárfestingu í flotanum. Fullyrðingin er í meginatriðum rétt — ITQ-kerfið er íslenskt.",
+      "missing_context": "Þótt kerfið sé íslenskt var það ekki hannað í tómarúmi. Hugmyndin um framseljanlegar veiðiheimildir átti rætur í alþjóðlegum fræðiumræðum og Nýja-Sjáland innleiddi sambærilegt kerfi á svipuðum tíma. Gagnrýnin á kerfið er einnig innlend og hefur verið pólitískt viðkvæm allt frá upptöku þess (<a href=\"https://www.fao.org/faolex/results/details/en/c/LEX-FAOC003455/\" title=\"Icelandic Fisheries Management Act No. 116/2006\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-003</a>, <a href=\"https://island.is/s/fiskistofa\" title=\"Fiskistofa — Quota holdings reports\" target=\"_blank\" rel=\"noopener\">FISH-DATA-005</a>).",
+      "supporting_evidence": [
+        {
+          "id": "FISH-DATA-005",
+          "source_name": "Fiskistofa — Quota holdings reports",
+          "source_url": "https://island.is/s/fiskistofa"
+        },
+        {
+          "id": "FISH-DATA-022",
+          "source_name": "Ministry of Food, Agriculture and Fisheries — Fisheries Management in Iceland; Marine and Freshwater Research Institute",
+          "source_url": "https://island.is/en/permits-to-fish/quota-system"
+        },
+        {
+          "id": "FISH-LEGAL-003",
+          "source_name": "Icelandic Fisheries Management Act No. 116/2006",
+          "source_url": "https://www.fao.org/faolex/results/details/en/c/LEX-FAOC003455/"
+        },
+        {
+          "id": "POL-DATA-014",
+          "source_name": "LÍÚ — Position paper on EU membership (2025); campaign finance declarations",
+          "source_url": null
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "fisheries",
+      "attribution": "asserted",
+      "article_slug": "sjavaraudlindin-i-esb",
+      "article_title": "Sjávarauðlindin í ESB",
+      "article_source": "Vísir",
+      "article_date": "2026-03-07"
+    },
+    {
+      "claim_text": "Þeim veiðiheimildum sem Ísland fær útdeilir Ísland milli íslensku útgerðanna sem skráðar eru samkvæmt íslenskum lögum, svo lengi sem lögin uppfylla skilyrði um gagnsæi og hlutlægni.",
+      "original_quote": "„Þær veiðiheimildir sem Ísland fær á þeim stofnum og svæðum sem Ísland hefur aðgang að útdeilir Ísland svo milli þeirra íslensku útgerða sem hafa verið skráðar sem slíkar samkvæmt íslenskum lögum. Svo lengi sem þau lög uppfylla skilyrði um gagnsæi og hlutlægni.“",
+      "verdict": "supported",
+      "explanation": "Þetta samræmist greinum 16(6) og 17 í reglugerð 1380/2013. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> staðfestir að aðildarríki ráðstafa sínum hlut veiðiheimilda til skipa undir eigin fána og verða að fylgja skilyrðum um gagnsæi og hlutlægni. Fullyrðingin endurspeglar réttilega tvíþætta kerfið: ESB úthlutar á milli ríkja, ríkið úthlutar innan sinna raða.",
+      "missing_context": "Lykilfyrirvarinn er að heildarmagn þeirra veiðiheimilda sem Ísland fengi er ákvarðað af ráðherraráði ESB, ekki Íslandi sjálfu (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a>). Jafnframt getur skilyrði um gagnsæi og hlutlægni krafist verulegra breytinga á núverandi ITQ-kerfi þar sem upprunaleg úthlutun byggðist á sögulegum afla án opinbers útboðs (<a href=\"https://www.fao.org/faolex/results/details/en/c/LEX-FAOC003455/\" title=\"Icelandic Fisheries Management Act No. 116/2006\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-003</a>, <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13\" target=\"_blank\" rel=\"noopener\">EEA-DATA-004</a>).",
+      "supporting_evidence": [
+        {
+          "id": "FISH-LEGAL-001",
+          "source_name": "EU Regulation 1380/2013 of the European Parliament and of the Council",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380"
+        },
+        {
+          "id": "FISH-LEGAL-002",
+          "source_name": "Icelandic Act on the Exclusive Economic Zone No. 41/1979",
+          "source_url": "https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf"
+        },
+        {
+          "id": "FISH-LEGAL-004",
+          "source_name": "European Commission — EU Fisheries Control System Revamp",
+          "source_url": "https://oceans-and-fisheries.ec.europa.eu/news/eu-fisheries-control-system-gets-major-revamp-2024-01-09_en"
+        },
+        {
+          "id": "FISH-DATA-008",
+          "source_name": "Icelandic Ministry of Food, Agriculture and Fisheries — Veiðigjald",
+          "source_url": "https://www.government.is/topics/business-and-industry/fisheries-in-iceland/"
+        },
+        {
+          "id": "EEA-DATA-004",
+          "source_name": "Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
         }
       ],
       "contradicting_evidence": [],
@@ -480,6 +956,42 @@
       "article_title": "Sjávarauðlindin í ESB",
       "article_source": "Vísir",
       "article_date": "2026-03-07"
+    },
+    {
+      "claim_text": "Núverandi alíslenskt kvótakerfi er þegar að ná því markmiði að leggja sjávarpláss í eyði.",
+      "original_quote": "„Ef eitthvað, þá er núverandi alíslenskt kvótakerfi að ná þeim markmiðum nú þegar.“",
+      "verdict": "supported",
+      "explanation": "Heimildir staðfesta að íslenska kvótakerfið hefur leitt til verulegrar samþjöppunar og fólksfækkunar á sjávarplássum. <a href=\"https://link.springer.com/article/10.1007/s40152-018-0089-5\" title=\"Kokorsch & Benediktsson (2018) — 'Prosper or Perish? The Development of Icelandic Fishing Villages after the Privatisation of Fishing Rights', Maritime Studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-028</a> skráir 36% fækkun starfa í sjávarútvegi frá 1990, þar sem dreifbýl svæði töpuðu 38% sjávarútvegsstörfum og nokkur þorp misstu meira en helming íbúa. Samkvæmt <a href=\"https://island.is/s/fiskistofa\" title=\"Fiskistofa — Quota holdings reports\" target=\"_blank\" rel=\"noopener\">FISH-DATA-005</a> ráða tíu stærstu kvótahafar yfir um 70% heildarkvóta. <a href=\"https://www.fao.org/faolex/results/details/en/c/LEX-FAOC003455/\" title=\"Icelandic Fisheries Management Act No. 116/2006\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-003</a> staðfestir gagnrýni á «kvótaveldi» og samþjöppun eignarhalds. Orðalagið «þegar að ná markmiðinu» er vissulega pólitískt en kjarni fullyrðingarinnar — að kvótakerfið valdi eyðingu sjávarþorpa — er vel studdur í heimildum.",
+      "missing_context": "Kvótakerfið hefur jafnframt skilað jákvæðum árangri í sjálfbærni — þorskstofninn hefur nánast tvöfaldast síðan 2000. Fólksfækkun á landsbyggðinni er margþætt fyrirbæri sem tengist einnig þéttbýlismyndun og þjónustusamþjöppun. Norska kerfið (<a href=\"https://www.fiskeridir.no/English/Fisheries/Statistics\" title=\"Norwegian Directorate of Fisheries — Statistics\" target=\"_blank\" rel=\"noopener\">FISH-COMP-001</a>) sýnir að hægt er að stýra sjávarútvegi án sambærilegrar samþjöppunar, þótt aðstæður séu ekki alveg sambærilegar.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-DATA-028",
+          "source_name": "Kokorsch & Benediktsson (2018) — 'Prosper or Perish? The Development of Icelandic Fishing Villages after the Privatisation of Fishing Rights', Maritime Studies",
+          "source_url": "https://link.springer.com/article/10.1007/s40152-018-0089-5"
+        },
+        {
+          "id": "FISH-DATA-005",
+          "source_name": "Fiskistofa — Quota holdings reports",
+          "source_url": "https://island.is/s/fiskistofa"
+        },
+        {
+          "id": "FISH-DATA-022",
+          "source_name": "Ministry of Food, Agriculture and Fisheries — Fisheries Management in Iceland; Marine and Freshwater Research Institute",
+          "source_url": "https://island.is/en/permits-to-fish/quota-system"
+        },
+        {
+          "id": "FISH-LEGAL-003",
+          "source_name": "Icelandic Fisheries Management Act No. 116/2006",
+          "source_url": "https://www.fao.org/faolex/results/details/en/c/LEX-FAOC003455/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "fisheries",
+      "attribution": "asserted",
+      "article_slug": "sjavaraudlindin-i-esb",
+      "article_title": "Sjávarauðlindin í ESB",
+      "article_source": "Vísir",
+      "article_date": "2026-03-07"
     }
   ],
   "articles": [
@@ -488,7 +1000,7 @@
       "title": "Björn hrekur fullyrðingu um afdrif sjávarauðlinda Íslendinga í ESB",
       "source": "DV",
       "date": "2026-03-07",
-      "claim_count": 12,
+      "claim_count": 15,
       "attribution_types": [
         "paraphrased",
         "quoted"
@@ -499,7 +1011,7 @@
       "title": "Sjávarauðlindin í ESB",
       "source": "Vísir",
       "date": "2026-03-07",
-      "claim_count": 3,
+      "claim_count": 16,
       "attribution_types": [
         "asserted"
       ]

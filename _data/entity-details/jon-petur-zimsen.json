@@ -20,9 +20,9 @@
   },
   "scorecard": {
     "misleading": 1,
-    "supported": 3,
-    "partially_supported": 5,
-    "unverifiable": 5
+    "supported": 5,
+    "partially_supported": 7,
+    "unverifiable": 1
   },
   "claims": [
     {
@@ -72,6 +72,37 @@
           "id": "SOV-PARL-001",
           "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
           "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "asserted",
+      "article_slug": "hvad-gerist-ef-meirihlutinn-segir-ja-i-sumar",
+      "article_title": "Hvað gerist ef meirihlutinn segir „já“ í sumar?",
+      "article_source": "Vísir",
+      "article_date": "2026-03-14"
+    },
+    {
+      "claim_text": "Samkvæmt gögnum ESB er «upptaka og innleiðing regluverksins grundvöllur viðræðnanna» og markmið þeirra er að «umsóknarríkið taki upp regluverkið eins og það leggur sig».",
+      "original_quote": "«Upptaka og innleiðing regluverksins er grundvöllur viðræðnanna. [...] Hversu hratt viðræðurnar ganga fyrir sig fer eftir því hversu fljótt hvert ríki kemur á umbótum og aðlagast regluverki sambandsins. [...] Markmið viðræðnanna er að umsóknarríkið taki upp regluverkið eins og það leggur sig.»",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> staðfestir að opinber gögn Framkvæmdastjórnarinnar lýsa viðræðunum sem ferli um «skilyrði og tímasetningu fyrir upptöku, innleiðingu og framfylgd alls gildandi regluverks». Samningaumhverfi ráðsins fyrir alla umsækjendur inniheldur ákvæðið um að umsækjandi samþykki regluverkið eins og það er. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> bætir við að um 95% regluverksins séu ósemjanleg — aðeins tímasetning innleiðingar er til samningaviðræðna.",
+      "missing_context": "Aðlögunartímabil (3–12 ár) og tæknilegar lagfæringar eru raunverulegir samningamöguleikar. Pólland fékk 12 ára undanþágu frá kaupum erlendra aðila á landbúnaðarlandi — slíkt getur verið efnahagslega mikilvægt þótt það sé tímabundið.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-017",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards joining' factsheet",
+          "source_url": "https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf"
+        },
+        {
+          "id": "EEA-LEGAL-021",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        },
+        {
+          "id": "EEA-LEGAL-019",
+          "source_name": "European Commission — Communication on 'Enhancing the accession process: A credible EU perspective for the Western Balkans', COM(2020) 57 final",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
         }
       ],
       "contradicting_evidence": [],
@@ -199,63 +230,18 @@
       "article_date": "2026-03-14"
     },
     {
-      "claim_text": "Raforkuverð í Þýskalandi er um fimm sinnum dýrara en á Íslandi.",
-      "original_quote": "Í Þýskalandi er raforkuverð um fimm sinnum dýrara en á Íslandi",
-      "verdict": "unverifiable",
-      "explanation": "Engar beinar heimildir í staðreyndagrunninum bera saman raforkuverð Íslands og Þýskalands. <a href=\"https://orkustofnun.is/en/information/numerical_data/energy\" title=\"Orkustofnun (National Energy Authority) — Energy Statistics 2024\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-005</a> staðfestir að nánast öll raforka á Íslandi kemur frá endurnýjanlegum orkugjöfum (vatnsafl og jarðvarmi), sem gefur til kynna lágt raforkuverð. Almennt er raforkuverð á Íslandi meðal lægsta í Evrópu og í Þýskalandi meðal hæsta, svo hlutfallið fimm á móti einum gæti verið nálægt en ekki er hægt að staðfesta nákvæmt hlutfall af fyrirliggjandi heimildum.",
-      "missing_context": "Vantar beinar tölur um raforkuverð í Þýskalandi og á Íslandi til samanburðar. Raforkuverð ræðst af mörgum þáttum, m.a. sköttum og gjöldum, sem eru mismunandi eftir löndum og notendahópum (heimili vs stóriðja).",
+      "claim_text": "Á Spáni er nær þriðja hver ung manneskja atvinnulaus.",
+      "original_quote": "Á Spáni er nær þriðja hver ung manneskja atvinnulaus.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://px.hagstofa.is/pxen/pxweb/en/Samfelag/Samfelag__vinnumarkadur__vinnumarkadsrannsokn__3_arstolur/VIN00901.px\" title=\"Hagstofa Íslands — Labour Force Survey; Eurostat — Unemployment statistics\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-004</a> staðfestir að unglingaatvinnuleysi fari yfir 25% í suðurevrópskum ríkjum. Spánn er ekki nefnd sérstaklega en er þekkt sem eitt þeirra ríkja. «Þriðja hver ung manneskja» jafngildir um 33% atvinnuleysi, sem hefur verið nálægt raunveruleikanum á Spáni. Nákvæm tala er þó ekki staðfestanleg úr fyrirliggjandi heimildum.",
+      "missing_context": "Atvinnuleysi ungs fólks á Spáni hefur lækkað frá hámarki (yfir 50% árið 2013) og er um 27–30% samkvæmt nýlegum Eurostat-gögnum, sem er lægra en «þriðja hver». Fullyrðingin er þó ekki langt frá sanni.",
       "supporting_evidence": [
         {
-          "id": "ENERGY-DATA-005",
-          "source_name": "Orkustofnun (National Energy Authority) — Energy Statistics 2024",
-          "source_url": "https://orkustofnun.is/en/information/numerical_data/energy"
+          "id": "LABOUR-DATA-004",
+          "source_name": "Hagstofa Íslands — Labour Force Survey; Eurostat — Unemployment statistics",
+          "source_url": "https://px.hagstofa.is/pxen/pxweb/en/Samfelag/Samfelag__vinnumarkadur__vinnumarkadsrannsokn__3_arstolur/VIN00901.px"
         }
       ],
-      "contradicting_evidence": [],
-      "category": "energy",
-      "attribution": "asserted",
-      "article_slug": "hvad-gerist-ef-meirihlutinn-segir-ja-i-sumar",
-      "article_title": "Hvað gerist ef meirihlutinn segir „já“ í sumar?",
-      "article_source": "Vísir",
-      "article_date": "2026-03-14"
-    },
-    {
-      "claim_text": "Í Frakklandi fer um 14–15% af allri landsframleiðslu í lífeyriskerfið, sem er eitt hæsta hlutfall í heimi.",
-      "original_quote": "Í Frakklandi fer um 14–15% af allri landsframleiðslu í lífeyriskerfið, eitt hæsta hlutfall í heimi",
-      "verdict": "unverifiable",
-      "explanation": "Engar heimildir í staðreyndagrunninum fjalla um lífeyrisútgjöld Frakklands sem hlutfall af landsframleiðslu. Tiltækar heimildir snúa að sameiginlegu landbúnaðarstefnunni, íslenskum landbúnaðartollum og fjárlagahlutföllum ESB — ekkert þeirra nýtist til að sannreyna þessa tölulegu fullyrðingu. Ekki er hægt að meta hana á grundvelli fyrirliggjandi gagna.",
-      "missing_context": "Vantar gögn um opinber lífeyrisútgjöld Frakklands sem hlutfall af landsframleiðslu og samanburð við önnur ríki.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "category": "other",
-      "attribution": "asserted",
-      "article_slug": "hvad-gerist-ef-meirihlutinn-segir-ja-i-sumar",
-      "article_title": "Hvað gerist ef meirihlutinn segir „já“ í sumar?",
-      "article_source": "Vísir",
-      "article_date": "2026-03-14"
-    },
-    {
-      "claim_text": "Ríkisskuldir Frakklands eru yfir 110% af landsframleiðslu.",
-      "original_quote": "ríkisskuldir eru yfir 110% af landsframleiðslu",
-      "verdict": "unverifiable",
-      "explanation": "Staðreyndagrunnurinn inniheldur ekki gögn um ríkisskuldir Frakklands. <a href=\"https://www.government.is/topics/economic-affairs-and-public-finances/\" title=\"Fjármála- og efnahagsráðuneytið — Ríkisfjármál; Moody's, S&P, Fitch sovereign ratings for Iceland\" target=\"_blank\" rel=\"noopener\">SOV-DATA-013</a> fjallar um ríkisskuldir Íslands (um 65% af landsframleiðslu árið 2025) en segir ekkert um Frakkland. Ekki er hægt að staðfesta eða hafna fullyrðingunni á grundvelli tiltækra heimilda.",
-      "missing_context": "Vantar gögn um ríkisskuldir Frakklands. Samanburður á skuldastöðu ríkja er flókinn þar sem mismunandi mælikvarðar (brúttó- vs nettóskuldir) gefa ólíkar niðurstöður.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "category": "other",
-      "attribution": "asserted",
-      "article_slug": "hvad-gerist-ef-meirihlutinn-segir-ja-i-sumar",
-      "article_title": "Hvað gerist ef meirihlutinn segir „já“ í sumar?",
-      "article_source": "Vísir",
-      "article_date": "2026-03-14"
-    },
-    {
-      "claim_text": "Atvinnuleysi ungs fólks í Frakklandi er um 17–18%.",
-      "original_quote": "atvinnuleysi ungs fólks um 17–18%",
-      "verdict": "unverifiable",
-      "explanation": "Heimildir í staðreyndagrunninum fjalla um atvinnuleysi ungs fólks á Íslandi (7–9%) og meðaltal ESB (um 14%) samkvæmt <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Samfelag/Samfelag__vinnumarkadur__vinnumarkadsrannsokn__3_arstolur/VIN00901.px\" title=\"Hagstofa Íslands — Labour Force Survey; Eurostat — Unemployment statistics\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-004</a>, auk þess sem vísað er til yfir 25% atvinnuleysis í Suður-Evrópu. Engar tölur eru þó sérstaklega um Frakkland. Fullyrðingin er ekki staðfestanleg af fyrirliggjandi gögnum.",
-      "missing_context": "Vantar sértæk gögn um unglingaatvinnuleysi í Frakklandi. <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Samfelag/Samfelag__vinnumarkadur__vinnumarkadsrannsokn__3_arstolur/VIN00901.px\" title=\"Hagstofa Íslands — Labour Force Survey; Eurostat — Unemployment statistics\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-004</a> nefnir yfir 25% í sumum suðurevrópskum ríkjum en tilgreinir ekki Frakkland sérstaklega.",
-      "supporting_evidence": [],
       "contradicting_evidence": [],
       "category": "labour",
       "attribution": "asserted",
@@ -299,11 +285,37 @@
         {
           "id": "SOV-DATA-009",
           "source_name": "NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list",
-          "source_url": "https://www.nato.int/cps/en/natohq/topics_212802.htm"
+          "source_url": "https://www.nato.int/en/about-us/official-texts-and-resources/strategic-concepts/nato-2022-strategic-concept"
         }
       ],
       "contradicting_evidence": [],
       "category": "sovereignty",
+      "attribution": "asserted",
+      "article_slug": "hvad-gerist-ef-meirihlutinn-segir-ja-i-sumar",
+      "article_title": "Hvað gerist ef meirihlutinn segir „já“ í sumar?",
+      "article_source": "Vísir",
+      "article_date": "2026-03-14"
+    },
+    {
+      "claim_text": "Ísland er með fleiri tugi fríverslunarsamninga við ríki um allan heim, bæði á eigin vegum og í gegnum EFTA.",
+      "original_quote": "fleiri tugi fríverslunarsamninga við ríki um allan heim, bæði á eigin vegum og í gegnum Fríverslunarsamtök Evrópu (EFTA)",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a> staðfestir að Ísland semur um viðskiptasamninga bæði í gegnum EFTA og tvíhliða. EFTA hefur 31 fríverslunarsamning sem ná til 43 ríkja. <a href=\"https://www.wto.org/english/tratop_e/tpr_e/tp554_e.htm\" title=\"WTO — Trade Policy Review: Iceland 2024; Iceland-China FTA text\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-021</a> nefnir fríverslunarsamning Íslands og Kína frá 2013 sem dæmi um tvíhliða samning. «Fleiri tugir» samninga er nákvæm lýsing miðað við fjölda EFTA-samninga.",
+      "missing_context": "ESB-aðild myndi þýða að Ísland missti heimild til sjálfstæðra viðskiptasamninga en fengi aðgang að viðskiptasamningsneti ESB sem nær til yfir 70 ríkja. Hvort það væri hagstæðara fer eftir geiranum — fiskvinnsla myndi líklega njóta góðs en landbúnaður þyrfti að aðlagast.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-LEGAL-032",
+          "source_name": "TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview",
+          "source_url": "https://www.efta.int/free-trade/free-trade-agreements"
+        },
+        {
+          "id": "TRADE-DATA-021",
+          "source_name": "WTO — Trade Policy Review: Iceland 2024; Iceland-China FTA text",
+          "source_url": "https://www.wto.org/english/tratop_e/tpr_e/tp554_e.htm"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "trade",
       "attribution": "asserted",
       "article_slug": "hvad-gerist-ef-meirihlutinn-segir-ja-i-sumar",
       "article_title": "Hvað gerist ef meirihlutinn segir „já“ í sumar?",
@@ -337,6 +349,38 @@
       "article_date": "2026-03-14"
     },
     {
+      "claim_text": "Kjósendur fá ekki að greiða atkvæði um aðildarsamninginn fyrr en aðlögun Íslands að regluverki ESB er hafin.",
+      "original_quote": "Kjósendur fá ekki að koma að málinu og kjósa um samning verði niðurstaðan «já» fyrr en þetta verður orðinn hlutur.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79\" target=\"_blank\" rel=\"noopener\">SOV-DATA-002</a> staðfestir að þjóðaratkvæðagreiðslan 29. ágúst er ráðgefandi og snýst aðeins um hvort halda eigi áfram viðræðum. Ef viðræðum lýkur myndi lokasamningurinn þurfa samþykki Alþingis og hugsanlega stjórnarskrárbreytingu (<a href=\"https://www.government.is/library/01-Ministries/Prime-Ministrers-Office/constitution_of_iceland.pdf\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 2, 21, 79; Legal commentary by Ragnhildur Helgadóttir (2024)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-016</a>). Rétt er að kjósendur greiða ekki atkvæði um endanlegan aðildarsamning í þessari atkvæðagreiðslu. Hins vegar er orðalagið «fyrr en þetta verður orðinn hlutur» villandi — aðlögun hefst ekki sjálfkrafa og viðræður geta tekið mörg ár.",
+      "missing_context": "Íslensk stjórnmálahefð veitir þjóðaratkvæðagreiðslum þunga þótt þær séu ráðgefandi. Möguleg önnur þjóðaratkvæðagreiðsla um endanlegan aðildarsamning hefur ekki verið útilokuð en er heldur ekki tryggð.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-002",
+          "source_name": "Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79",
+          "source_url": "https://www.althingi.is/lagas/nuna/1944033.html"
+        },
+        {
+          "id": "SOV-LEGAL-016",
+          "source_name": "Stjórnarskrá lýðveldisins Íslands, Articles 2, 21, 79; Legal commentary by Ragnhildur Helgadóttir (2024)",
+          "source_url": "https://www.government.is/library/01-Ministries/Prime-Ministrers-Office/constitution_of_iceland.pdf"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "EEA-LEGAL-017",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards joining' factsheet",
+          "source_url": "https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf"
+        }
+      ],
+      "category": "eea_eu_law",
+      "attribution": "asserted",
+      "article_slug": "hvad-gerist-ef-meirihlutinn-segir-ja-i-sumar",
+      "article_title": "Hvað gerist ef meirihlutinn segir „já“ í sumar?",
+      "article_source": "Vísir",
+      "article_date": "2026-03-14"
+    },
+    {
       "claim_text": "Lágir vextir í Evrópu eru merki um hagkerfi sem þarf stöðugt á örvun að halda, ekki merki um sterkt hagkerfi.",
       "original_quote": "Lágir vextir í Evrópu eru ekki merki um sterkt hagkerfi heldur oft merki um hagkerfi sem þarf stöðugt á örvun að halda.",
       "verdict": "partially_supported",
@@ -351,7 +395,7 @@
         {
           "id": "HOUSING-DATA-011",
           "source_name": "Glaeser, Gottlieb & Gyourko, 'Can Cheap Credit Explain the Housing Boom?' (2012); ECB Economic Bulletin 2/2021 — 'The impact of monetary policy on housing'",
-          "source_url": "https://www.ecb.europa.eu/pub/economic-bulletin/articles/2021/html/ecb.ebart202102_01~830e7telecom.en.html"
+          "source_url": "https://www.ecb.europa.eu/press/economic-bulletin/articles/2021/html/ecb.ebart202107_03~36493e7b67.en.html"
         },
         {
           "id": "PREC-DATA-013",

@@ -16,8 +16,9 @@
   "althingi_stats": null,
   "scorecard": {
     "supported": 7,
+    "unverifiable": 1,
     "unsupported": 1,
-    "partially_supported": 1
+    "partially_supported": 3
   },
   "claims": [
     {
@@ -32,6 +33,27 @@
           "source_name": "Samtök iðnaðarins — Könnun meðal félagsmanna um ESB-aðild",
           "source_url": "https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb"
         },
+        {
+          "id": "ORG-DATA-001",
+          "source_name": "Samtök iðnaðarins (SI) — Membership survey, February/March 2026",
+          "source_url": "https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "org_positions",
+      "attribution": "paraphrased",
+      "article_slug": "idnadurinn-forherdist-i-andstodu-gegn-esb",
+      "article_title": "Iðnaðurinn forherðist í andstöðu gegn ESB",
+      "article_source": "Vísir",
+      "article_date": "2026-03-09"
+    },
+    {
+      "claim_text": "Könnunin meðal félagsmanna SI var gerð í febrúar og mars 2026.",
+      "original_quote": "könnunarinnar sem var gerð í febrúar og mars",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins (SI) — Membership survey, February/March 2026\" target=\"_blank\" rel=\"noopener\">ORG-DATA-001</a> staðfestir beinlínis að SI gerði félagsmannakönnum í febrúar/mars 2026 um viðhorf til ESB-aðildar. Tímasetningin er nákvæmlega sú sama og fullyrðingin segir.",
+      "missing_context": null,
+      "supporting_evidence": [
         {
           "id": "ORG-DATA-001",
           "source_name": "Samtök iðnaðarins (SI) — Membership survey, February/March 2026",
@@ -91,16 +113,10 @@
     {
       "claim_text": "Hlutfall þeirra sem voru mjög fylgjandi ESB-aðild fór úr sautján prósentum árið 2024 í tíu prósent árið 2026.",
       "original_quote": "fækkaði þeim sem voru mjög fylgjandi úr sautján prósentum árið 2024 í tíu prósent nú",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins — Könnun meðal félagsmanna um ESB-aðild\" target=\"_blank\" rel=\"noopener\">POLL-DATA-023</a> staðfestir að hlutfall félagsmanna SI sem voru \\\"mjög fylgjandi\\\" ESB-aðild féll úr um 17% árið 2024 í um 10% árið 2026. Tölurnar passa nákvæmlega við fullyrðinguna. Rétt er þó að taka fram að um könnun meðal iðnaðarfyrirtækja er að ræða — ekki almenningskönnun — og aðferðafræðin gæti verið breytileg milli ára.",
-      "missing_context": "Sundurliðun á stuðningshliðinni (hlutfall mjög fylgjandi og frekar fylgjandi) er ekki í staðreyndagrunni. Nákvæmar tölur úr könnuninni og samanburðarkönnuninni 2024 væru nauðsynlegar til að sannreyna þessa fullyrðingu.",
-      "supporting_evidence": [
-        {
-          "id": "POLL-DATA-023",
-          "source_name": "Samtök iðnaðarins — Könnun meðal félagsmanna um ESB-aðild",
-          "source_url": "https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb"
-        }
-      ],
+      "verdict": "unverifiable",
+      "explanation": "Engin heimild inniheldur íslensk skoðanakannanagögn sem sýna hlutfall «mjög fylgjandi» ESB-aðild á sautján prósentum árið 2024 eða tíu prósentum árið 2026. <a href=\"https://europa.eu/eurobarometer/surveys/detail/3131\" title=\"Standard Eurobarometer; OBR; ONS; Eurostat\" target=\"_blank\" rel=\"noopener\">PREC-DATA-017</a> fjallar um Eurobarometer-kannanir á ESB-ríkjum almennt en nær ekki til íslensku könnunargagna. Aðrar heimildir (<a href=\"https://commonslibrary.parliament.uk/research-briefings/cbp-7851/\" title=\"UK House of Commons Library, Statistics on UK-EU Trade (Research Briefing CBP-7851)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-001</a>, <a href=\"https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/\" title=\"UK Office for National Statistics — Trade statistics; Office for Budget Responsibility — Brexit impact assessment\" target=\"_blank\" rel=\"noopener\">PREC-HIST-012</a> o.fl.) fjalla um efnahagsleg áhrif Brexit á Bretland og hafa enga tengingu við íslenskar skoðanakannanir.",
+      "missing_context": "Sértækar íslenskar skoðanakannanir (t.d. Gallup, Maskína eða MMR) sem greina á milli stuðningsflokka vantar í gagnagrunninn. Tölurnar sautján prósent og tíu prósent gætu verið úr raunverulegri könnun en slík heimild er ekki til staðar meðal framlagðra gagna.",
+      "supporting_evidence": [],
       "contradicting_evidence": [],
       "category": "org_positions",
       "attribution": "paraphrased",
@@ -199,10 +215,41 @@
       "article_date": "2026-03-09"
     },
     {
+      "claim_text": "Samtök Atvinnulífsins og Samtök Iðnaðarins telja að forsætisráðherra geri of mikið úr sterkri samningastöðu Íslands.",
+      "original_quote": "Bæði Samtök Atvinnulífsins og Samtök Iðnaðarins telja að Kristrún geri of mikið úr sterkri stöðu Íslands.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins (SI) — Membership survey, February/March 2026\" target=\"_blank\" rel=\"noopener\">ORG-DATA-001</a> og <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins — Könnun meðal félagsmanna um ESB-aðild\" target=\"_blank\" rel=\"noopener\">POLL-DATA-023</a> sýna að meirihluti félagsmanna Samtaka iðnaðarins er andvígur ESB-aðild, og andstaðan hefur aukist. <a href=\"https://www.sa.is/frettir\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> lýsir afstöðu Samtaka atvinnulífsins, sem eru ESB-hlynnt. Hins vegar fjallar engin heimild beint um hvort SA eða SI hafi gagnrýnt forsætisráðherra sérstaklega fyrir að gera of mikið úr samningsstöðu Íslands. Fullyrðingin vísar til tiltekinnar gagnrýni sem heimildir staðfesta ekki orðrétt.",
+      "missing_context": "SA er ESB-hlynnt (<a href=\"https://www.sa.is/frettir\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a>) og ólíklegt að samtökin gagnrýni samningsstöðu forsætisráðherra á neikvæðan hátt. SI er ESB-efins (<a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins (SI) — Membership survey, February/March 2026\" target=\"_blank\" rel=\"noopener\">ORG-DATA-001</a>) en engin heimild sýnir beina gagnrýni á orð forsætisráðherra um samningsstöðu. Til staðfestingar þyrfti yfirlýsingar eða fundargerðir frá SA og SI.",
+      "supporting_evidence": [
+        {
+          "id": "ORG-DATA-001",
+          "source_name": "Samtök iðnaðarins (SI) — Membership survey, February/March 2026",
+          "source_url": "https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb"
+        },
+        {
+          "id": "POLL-DATA-023",
+          "source_name": "Samtök iðnaðarins — Könnun meðal félagsmanna um ESB-aðild",
+          "source_url": "https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb"
+        },
+        {
+          "id": "POL-DATA-012",
+          "source_name": "SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions",
+          "source_url": "https://www.sa.is/frettir"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "org_positions",
+      "attribution": "paraphrased",
+      "article_slug": "enginn-afslattur-gefinn-segi-thjodin-ja-vid-adildarvidraedum",
+      "article_title": "Enginn afsláttur gefinn segi þjóðin já við aðildarviðræðum",
+      "article_source": "RÚV",
+      "article_date": "2026-03-10"
+    },
+    {
       "claim_text": "Samtök Atvinnulífsins og Samtök Iðnaðarins hafa bent á að samningaviðræður um ESB-aðild snúast fyrst og fremst um hversu hratt umsóknarríki treysti sér til að aðlagast reglum Evrópusambandsins.",
       "original_quote": "hafa bent á að samningaviðræður snúist fyrst og fremst um hversu hratt umsóknarríki treysti sér til að aðlagast reglum Evrópusambandsins.",
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> staðfesta skýrt að aðildarviðræður snúist um hvenær og hvernig umsóknarríki innleiðir regluverkið — ekki hvort það geri það. Þetta samrýmist kjarna fullyrðingarinnar. <a href=\"https://sa.is/frettatengt/frettir/vinna-hafin-vid-uttekt-a-stodu-adildarvidraedna-vid-evropusambandid\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> staðfestir afstöðu SA og <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> afstöðu Viðskiptaráðs. Engin heimild staðfestir hins vegar beint að Samtök iðnaðarins (SI) hafi orðað málið á þennan hátt — <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins (SI) — Membership survey, February/March 2026\" target=\"_blank\" rel=\"noopener\">ORG-DATA-001</a> sýnir að 57% félagsmanna SI eru andvígir ESB-aðild, sem dregur í efa hvort SI sem heildarsamtök hafi sett fram þessa fullyrðingu. Tilvísun í SA er rétt en tilvísun í SI er veikari.",
+      "explanation": "<a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> staðfesta skýrt að aðildarviðræður snúist um hvenær og hvernig umsóknarríki innleiðir regluverkið — ekki hvort það geri það. Þetta samrýmist kjarna fullyrðingarinnar. <a href=\"https://www.sa.is/frettir\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> staðfestir afstöðu SA og <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> afstöðu Viðskiptaráðs. Engin heimild staðfestir hins vegar beint að Samtök iðnaðarins (SI) hafi orðað málið á þennan hátt — <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins (SI) — Membership survey, February/March 2026\" target=\"_blank\" rel=\"noopener\">ORG-DATA-001</a> sýnir að 57% félagsmanna SI eru andvígir ESB-aðild, sem dregur í efa hvort SI sem heildarsamtök hafi sett fram þessa fullyrðingu. Tilvísun í SA er rétt en tilvísun í SI er veikari.",
       "missing_context": "Heimildir staðfesta ekki beint að SI hafi sett þessa fullyrðingu fram. Könnun SI (<a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins (SI) — Membership survey, February/March 2026\" target=\"_blank\" rel=\"noopener\">ORG-DATA-001</a>) sýnir að meirihluti félagsmanna er andvígur ESB-aðild, sem gerir ólíklegt að samtökin í heild hafi stuðlað að þessu orðalagi. Aðildarviðræður bjóða upp á svigrúm til aðlögunartímabila sem geta verið efnahagslega og pólitískt mikilvæg — greinin á milli «semja um reglurnar» og «semja um hvenær reglurnar taka gildi» getur verið of einföld.",
       "supporting_evidence": [
         {
@@ -218,7 +265,7 @@
         {
           "id": "POL-DATA-012",
           "source_name": "SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions",
-          "source_url": "https://sa.is/frettatengt/frettir/vinna-hafin-vid-uttekt-a-stodu-adildarvidraedna-vid-evropusambandid"
+          "source_url": "https://www.sa.is/frettir"
         }
       ],
       "contradicting_evidence": [
@@ -240,7 +287,7 @@
       "original_quote": "Samtök iðnaðarins og Samtök atvinnulífsins voru að birta niðurstöður sinna félagsmanna núna, bara síðast í morgun, Samtök iðnaðarins, sem sýnir að meirihluti félagsmanna þeirra er andvígur inngöngu.",
       "verdict": "supported",
       "explanation": "Heimild <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins (SI) — Membership survey, February/March 2026\" target=\"_blank\" rel=\"noopener\">ORG-DATA-001</a> staðfestir beint að könnun Samtaka iðnaðarins í febrúar/mars 2026 sýndi 57% andstöðu meðal félagsmanna við ESB-aðild. <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins — Könnun meðal félagsmanna um ESB-aðild\" target=\"_blank\" rel=\"noopener\">POLL-DATA-023</a> sýnir einnig samdrátt í stuðningi við ESB-aðild meðal félagsmanna SI. Fullyrðingin um meirihluta andstöðu er rétt.",
-      "missing_context": "Heimildir benda til þess að Samtök atvinnulífsins (SA) hafi aftur á móti stutt ESB-aðild (POL-DATA-004, <a href=\"https://sa.is/frettatengt/frettir/vinna-hafin-vid-uttekt-a-stodu-adildarvidraedna-vid-evropusambandid\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a>). Fullyrðingin sameinar SI og SA á villandi hátt — niðurstöður SA-könnunar eru ekki staðfestar í heimildum sem andstöðu. Könnunaraðferðafræði SI hefur ekki verið óháð staðfest.",
+      "missing_context": "Heimildir benda til þess að Samtök atvinnulífsins (SA) hafi aftur á móti stutt ESB-aðild (POL-DATA-004, <a href=\"https://www.sa.is/frettir\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a>). Fullyrðingin sameinar SI og SA á villandi hátt — niðurstöður SA-könnunar eru ekki staðfestar í heimildum sem andstöðu. Könnunaraðferðafræði SI hefur ekki verið óháð staðfest.",
       "supporting_evidence": [
         {
           "id": "ORG-DATA-001",
@@ -260,6 +307,38 @@
       "article_title": "Evrópusambandið fylgi hótunum sínum ekki eftir",
       "article_source": "Morgunblaðið",
       "article_date": "2026-03-11"
+    },
+    {
+      "claim_text": "Samtök iðnaðarins keyrðu ESB-málið áfram fyrir hálfum öðrum áratug",
+      "original_quote": "Þetta eru samtökin, Magnús, sem keyrðu málið áfram hérna fyrir hálfum öðrum áratug.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins — Annual report 2025; SI policy briefs on CBAM and Horizon Europe\" target=\"_blank\" rel=\"noopener\">POL-DATA-016</a> staðfestir að forysta SI styður ESB-aðild og hefur rökstutt hana með markaðsaðgangi og regluverkslegum kostum. Hins vegar sýnir <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins (SI) — Membership survey, February/March 2026\" target=\"_blank\" rel=\"noopener\">ORG-DATA-001</a> að 57% félagsmanna SI eru andvígir ESB-aðild og <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins — Könnun meðal félagsmanna um ESB-aðild\" target=\"_blank\" rel=\"noopener\">POLL-DATA-023</a> staðfestir lækkandi stuðning meðal félagsmanna. Fullyrðingin um að SI hafi «keyrð ESB-málið áfram» endurspeglar afstöðu forystunnar en ekki félagsmanna. Tímasetningin «fyrir hálfum öðrum áratug» er líka óljós — heimildir gefa ekki nákvæma dagsetningu fyrir upphaf ESB-málflutnings SI.",
+      "missing_context": "Meirihluti félagsmanna SI (57%) er andvígur ESB-aðild samkvæmt könnun frá 2026 og hlutfall mjög andvígra hefur tvöfaldast frá 2024. Forysta SI styður ESB en félagsmenn gera það ekki, sem dregur úr fullyrðingunni um að samtökin í heild hafi keyrð málið áfram. Tímasetningin «hálfur annar áratugur» er ekki staðfest í heimildum.",
+      "supporting_evidence": [
+        {
+          "id": "POL-DATA-016",
+          "source_name": "Samtök iðnaðarins — Annual report 2025; SI policy briefs on CBAM and Horizon Europe",
+          "source_url": "https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "ORG-DATA-001",
+          "source_name": "Samtök iðnaðarins (SI) — Membership survey, February/March 2026",
+          "source_url": "https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb"
+        },
+        {
+          "id": "POLL-DATA-023",
+          "source_name": "Samtök iðnaðarins — Könnun meðal félagsmanna um ESB-aðild",
+          "source_url": "https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb"
+        }
+      ],
+      "category": "org_positions",
+      "attribution": "quoted",
+      "article_slug": "evropusambandid-fylgi-hotunum-sinum-ekki-eftir",
+      "article_title": "Evrópusambandið fylgi hótunum sínum ekki eftir",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-11"
     }
   ],
   "articles": [
@@ -268,7 +347,7 @@
       "title": "Iðnaðurinn forherðist í andstöðu gegn ESB",
       "source": "Vísir",
       "date": "2026-03-09",
-      "claim_count": 7,
+      "claim_count": 8,
       "attribution_types": [
         "paraphrased"
       ]
@@ -278,7 +357,7 @@
       "title": "Enginn afsláttur gefinn segi þjóðin já við aðildarviðræðum",
       "source": "RÚV",
       "date": "2026-03-10",
-      "claim_count": 1,
+      "claim_count": 2,
       "attribution_types": [
         "paraphrased"
       ]
@@ -288,7 +367,7 @@
       "title": "Evrópusambandið fylgi hótunum sínum ekki eftir",
       "source": "Morgunblaðið",
       "date": "2026-03-11",
-      "claim_count": 1,
+      "claim_count": 2,
       "attribution_types": [
         "quoted"
       ]

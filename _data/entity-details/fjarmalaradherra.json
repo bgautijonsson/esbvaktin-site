@@ -12,7 +12,53 @@
     "quoted": 1
   },
   "althingi_stats": null,
-  "scorecard": {},
-  "claims": [],
-  "articles": []
+  "scorecard": {
+    "partially_supported": 1
+  },
+  "claims": [
+    {
+      "claim_text": "Samkvæmt minnisblaði fjármálaráðherra hefur hagkerfið lítið sem ekkert vaxið, leiðrétt fyrir fólksfjölgun, í hartnær áratug.",
+      "original_quote": "Í nýlegu minnisblaði fjármálaráðherra segir: «Af hagtölum að dæma virðist [sem] drifkraftar tímabundins hagvaxtar [séu] í rénun og við blasir hagkerfi sem hefur lítið sem ekkert vaxið, leiðrétt fyrir fólksfjölgun, í hartnær áratug»",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=IS\" title=\"World Bank — GDP growth (annual %) (NY.GDP.MKTP.KD.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-014</a> sýnir sterkan heildarvöxt 2021–2023 (meðaltal 6,4%) en einnig COVID-samdrátt (−6,6% 2020). <a href=\"https://www.oecd.org/en/data/dashboards/oecd-dashboard-of-productivity-indicators.html\" title=\"OECD — Compendium of Productivity Indicators 2025; Eurostat — Labour productivity per hour worked\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-011</a> staðfestir lága framleiðni á vinnustund. Ef fólksfjölgun (um 15% á áratug) er dregin frá heildarvaxtartölum verður vöxtur á mann töluvert lægri, sem styður grunnrök fullyrðingarinnar.",
+      "missing_context": "Minnisblaðið sjálft er ekki í staðreyndagrunni — fullyrðingin er tilvitnun sem ekki er hægt að sannreyna beint. Sum einstök ár (2021–2023) sýna sterkan raunvöxt sem flækir mynd «hartnær áratugs» stöðnunar.",
+      "supporting_evidence": [
+        {
+          "id": "CURRENCY-DATA-014",
+          "source_name": "World Bank — GDP growth (annual %) (NY.GDP.MKTP.KD.ZG)",
+          "source_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=IS"
+        },
+        {
+          "id": "LABOUR-DATA-011",
+          "source_name": "OECD — Compendium of Productivity Indicators 2025; Eurostat — Labour productivity per hour worked",
+          "source_url": "https://www.oecd.org/en/data/dashboards/oecd-dashboard-of-productivity-indicators.html"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "CURRENCY-DATA-009",
+          "source_name": "World Bank — World Development Indicators",
+          "source_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG"
+        }
+      ],
+      "category": "trade",
+      "attribution": "quoted",
+      "article_slug": "er-esb-hnignunarbandalag",
+      "article_title": "Er ESB „hnignunarbandalag“?",
+      "article_source": "Vísir",
+      "article_date": "2026-03-13"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "er-esb-hnignunarbandalag",
+      "title": "Er ESB „hnignunarbandalag“?",
+      "source": "Vísir",
+      "date": "2026-03-13",
+      "claim_count": 1,
+      "attribution_types": [
+        "quoted"
+      ]
+    }
+  ]
 }
