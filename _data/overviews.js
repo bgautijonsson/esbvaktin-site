@@ -2,20 +2,24 @@ const fs = require("fs");
 const path = require("path");
 
 /* ── Icelandic slug (mirrors the isSlug filter in eleventy.config.js) ── */
+/* Also mirrors Python's icelandic_slugify() in src/esbvaktin/utils/slugify.py.
+   NFKD decomposition handles non-Icelandic diacritics (e.g. Croatian č→c). */
 function isSlug(str) {
   if (!str) return "";
   return str
-    .toLowerCase()
-    .replace(/[áà]/g, "a")
-    .replace(/[ðÐ]/g, "d")
-    .replace(/[éè]/g, "e")
-    .replace(/[íì]/g, "i")
-    .replace(/[óò]/g, "o")
-    .replace(/[úù]/g, "u")
-    .replace(/[ýỳ]/g, "y")
     .replace(/[þÞ]/g, "th")
+    .replace(/[ðÐ]/g, "d")
     .replace(/[æÆ]/g, "ae")
     .replace(/[öÖ]/g, "o")
+    .replace(/[áÁà]/g, "a")
+    .replace(/[éÉè]/g, "e")
+    .replace(/[íÍì]/g, "i")
+    .replace(/[óÓò]/g, "o")
+    .replace(/[úÚù]/g, "u")
+    .replace(/[ýÝỳ]/g, "y")
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-|-$/g, "");
 }
@@ -59,7 +63,10 @@ function enrichOverview(overview, entityMap, reportMap, claimByText, claimBySlug
   if (overview.active_entities) {
     overview.active_entities = overview.active_entities.map((ent) => {
       const detail = entityMap.get(ent.slug);
-      if (!detail) return ent;
+      if (!detail) {
+        console.warn(`[overviews] Entity slug not found in entity-details: ${ent.slug} (${ent.name})`);
+        return ent;
+      }
       return {
         ...ent,
         type: detail.type,
@@ -81,7 +88,10 @@ function enrichOverview(overview, entityMap, reportMap, claimByText, claimBySlug
     overview.articles = overview.articles.map((art) => {
       const slug = art.slug || isSlug(art.title);
       const report = reportMap.get(slug);
-      if (!report) return { ...art, slug };
+      if (!report) {
+        if (slug) console.warn(`[overviews] Report not found for article: ${slug} ("${art.title}")`);
+        return { ...art, slug };
+      }
       return {
         ...art,
         slug,

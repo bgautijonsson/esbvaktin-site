@@ -17,20 +17,25 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("robots.txt");
 
   // ── Icelandic slug filter ─────────────────────────────────────────
+  // Mirrors Python's icelandic_slugify() in src/esbvaktin/utils/slugify.py.
+  // Icelandic-specific replacements first, then NFKD decomposition for
+  // non-Icelandic diacritics (e.g. Croatian č→c, French ü→u).
   eleventyConfig.addFilter("isSlug", (str) => {
     if (!str) return "";
     return str
-      .toLowerCase()
-      .replace(/[áà]/g, "a")
-      .replace(/[ðÐ]/g, "d")
-      .replace(/[éè]/g, "e")
-      .replace(/[íì]/g, "i")
-      .replace(/[óò]/g, "o")
-      .replace(/[úù]/g, "u")
-      .replace(/[ýỳ]/g, "y")
       .replace(/[þÞ]/g, "th")
+      .replace(/[ðÐ]/g, "d")
       .replace(/[æÆ]/g, "ae")
       .replace(/[öÖ]/g, "o")
+      .replace(/[áÁà]/g, "a")
+      .replace(/[éÉè]/g, "e")
+      .replace(/[íÍì]/g, "i")
+      .replace(/[óÓò]/g, "o")
+      .replace(/[úÚù]/g, "u")
+      .replace(/[ýÝỳ]/g, "y")
+      .normalize("NFKD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/^-|-$/g, "");
   });
