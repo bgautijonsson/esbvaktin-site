@@ -34,6 +34,7 @@
 
   const VERDICT_ORDER = ["supported", "partially_supported", "unverifiable", "unsupported", "misleading"];
   const SORT_LABELS = {
+    claim_count: "Fullyrðingar",
     mention_count: "Tilvísanir",
     name: "Nafn",
     stance_score: "Afstaða",
@@ -51,7 +52,7 @@
       type: params.get("type") || "",
       party: params.get("party") || "",
       stance: params.get("stance") || "",
-      sort: params.get("sort") || "mention_count",
+      sort: params.get("sort") || "claim_count",
       sortDir: "DESC",
     },
     initialData: {
@@ -202,6 +203,7 @@
         className: "et-select",
         label: "Röðun",
         options: [
+          { value: "claim_count", label: "Fullyrðingar" },
           { value: "mention_count", label: "Tilvísanir" },
           { value: "name", label: "Nafn" },
           { value: "stance_score", label: "Afstaða" },
@@ -435,7 +437,7 @@
       chips.push({ key: "stance", text: `Afstaða: ${STANCE_FILTER_LABELS[filters.stance] || filters.stance}` });
     }
 
-    if (filters.sort && filters.sort !== "mention_count") {
+    if (filters.sort && filters.sort !== "claim_count") {
       chips.push({ key: "sort", text: `Röðun: ${SORT_LABELS[filters.sort] || filters.sort}` });
     }
 
@@ -454,7 +456,7 @@
     if (key === "party") patch.party = "";
     if (key === "stance") patch.stance = "";
     if (key === "sort") {
-      patch.sort = "mention_count";
+      patch.sort = "claim_count";
       patch.sortDir = "DESC";
     }
 
@@ -468,7 +470,7 @@
         type: "",
         party: "",
         stance: "",
-        sort: "mention_count",
+        sort: "claim_count",
         sortDir: "DESC",
       },
       "all",
@@ -484,7 +486,7 @@
       type: state.type,
       party: state.party,
       stance: state.stance,
-      sort: state.sort === "mention_count" ? "" : state.sort,
+      sort: state.sort === "claim_count" ? "" : state.sort,
     });
   });
 
