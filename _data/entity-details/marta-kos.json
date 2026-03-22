@@ -7,16 +7,17 @@
   "party": null,
   "stance": "pro_eu",
   "stance_score": 1.0,
-  "credibility": 0.5,
+  "credibility": 0.83,
   "attribution_counts": {
-    "quoted": 2,
+    "quoted": 4,
     "paraphrased": 4,
-    "mentioned": 1
+    "mentioned": 3
   },
   "althingi_stats": null,
   "scorecard": {
     "unverifiable": 1,
-    "partially_supported": 1
+    "partially_supported": 1,
+    "supported": 2
   },
   "claims": [
     {
@@ -54,6 +55,48 @@
       "article_title": "Stækkunarstjóri ætlar að flýta viðræðum við Ísland",
       "article_source": "Heimildin",
       "article_date": "2026-03-18"
+    },
+    {
+      "claim_text": "Marta Kos sagði að ef Íslendingar greiða atkvæði með því að hefja viðræður um aðild að ESB að nýju sé ESB staðráðið í að flýta fyrir samningaviðræðum um forgangsmál Íslands.",
+      "original_quote": "sagði að greiði Íslendingar með því að hefja viðræður um aðild að ESB að nýju sé ESB staðráðið í að flýta fyrir samningaviðræðum \"um forgangsmál Íslands.\"",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://commission.europa.eu/about/organisation/college-commissioners/marta-kos_en\" title=\"European Commission — Commissioner Profile + New Union Post\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-015</a> staðfestir þetta nákvæmlega. Kos sagði 18. mars 2026 að ef Íslendingar kjósi að halda áfram sé ESB «determined to fast-track negotiations on Iceland's priority issues». Fullyrðingin endurspeglar yfirlýsinguna trúlega.",
+      "missing_context": "Yfirlýsing Kos kom fram á X-síðu hennar og er pólitísk merki (political signalling), ekki formleg ákvörðun framkvæmdastjórnarinnar um að flýta samningum. Orðalagið «specific realities» er staðlað stækkuarmál ESB sem notað er við öll umsóknarríki.",
+      "supporting_evidence": [
+        {
+          "id": "POLITICAL-DATA-015",
+          "source_name": "European Commission — Commissioner Profile + New Union Post",
+          "source_url": "https://commission.europa.eu/about/organisation/college-commissioners/marta-kos_en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "sovereignty",
+      "attribution": "quoted",
+      "article_slug": "esb-vidraedurnar-eru-hafnar",
+      "article_title": "ESB-viðræðurnar eru hafnar",
+      "article_source": "Blog.is",
+      "article_date": "2026-03-19"
+    },
+    {
+      "claim_text": "Marta Kos sagðist hafa rætt við Þorgerði um «sérstakan veruleika Íslands».",
+      "original_quote": "Þá segist Kos hafa rætt við Þorgerði um \"sérstakan veruleika Íslands.\"",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://commission.europa.eu/about/organisation/college-commissioners/marta-kos_en\" title=\"European Commission — Commissioner Profile + New Union Post\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-015</a> staðfestir að Kos lýsti því að hún hefði rætt «Iceland's specific realities» við Þorgerði Katrínu. Fullyrðingin er nákvæm þýðing á yfirlýsingu Kos.",
+      "missing_context": "Orðasambandið «specific realities» er staðlað orðalag framkvæmdastjórnarinnar í stækkunarferlinu og er notað við öll umsóknarríki, ekki einungis Ísland. Þetta dregur úr vægi yfirlýsingarinnar sem sérstakrar skuldbindingar gagnvart Íslandi.",
+      "supporting_evidence": [
+        {
+          "id": "POLITICAL-DATA-015",
+          "source_name": "European Commission — Commissioner Profile + New Union Post",
+          "source_url": "https://commission.europa.eu/about/organisation/college-commissioners/marta-kos_en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "sovereignty",
+      "attribution": "quoted",
+      "article_slug": "esb-vidraedurnar-eru-hafnar",
+      "article_title": "ESB-viðræðurnar eru hafnar",
+      "article_source": "Blog.is",
+      "article_date": "2026-03-19"
     }
   ],
   "articles": [
@@ -65,6 +108,17 @@
       "claim_count": 2,
       "attribution_types": [
         "paraphrased",
+        "quoted"
+      ]
+    },
+    {
+      "slug": "esb-vidraedurnar-eru-hafnar",
+      "title": "ESB-viðræðurnar eru hafnar",
+      "source": "Blog.is",
+      "date": "2026-03-19",
+      "claim_count": 2,
+      "attribution_types": [
+        "mentioned",
         "quoted"
       ]
     }

@@ -7,9 +7,10 @@
   "party": null,
   "stance": "neutral",
   "stance_score": 0.0,
-  "credibility": null,
+  "credibility": 0.5,
   "attribution_counts": {
-    "mentioned": 2
+    "paraphrased": 1,
+    "mentioned": 4
   },
   "althingi_stats": {
     "speech_count": 52,
@@ -18,8 +19,48 @@
     "first_speech": "1991-05-16",
     "last_speech": "2005-04-26"
   },
-  "scorecard": {},
-  "claims": [],
-  "articles": [],
+  "scorecard": {
+    "partially_supported": 1
+  },
+  "claims": [
+    {
+      "claim_text": "Davíð Oddsson var formaður Seðlabanka Íslands á tímum bankahrunsins og náði að koma í veg fyrir algera lokun Íslands frá umheiminum.",
+      "original_quote": "Aðeins Seðlabanki Íslands undir forystu Davíðs heitins Oddsonar náði, Guði sé lof, að koma í veg fyrir algera lokun Íslands frá umheiminum.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að Seðlabanki Íslands gegndi lykilhlutverki á tímum bankahrunsins — m.a. með innleiðingu gjaldeyrishafta í nóvember 2008 (<a href=\"https://sedlabanki.is/hagtolur/gengi?PageID=289\" title=\"Seðlabanki Íslands — Capital account liberalisation reports\" target=\"_blank\" rel=\"noopener\">CURR-DATA-002</a>) og viðbrögðum við hruni krónunnar (<a href=\"https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/skyrsla-nefndarinnar/english/\" title=\"Seðlabanki Íslands — Special Investigation Commission report; Central Bank annual report 2009\" target=\"_blank\" rel=\"noopener\">CURR-DATA-001</a>). Heimildir nefna þó einnig að Seðlabankinn gat ekki virkað sem lánveitandi til þrautavara í erlendri mynt (<a href=\"https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/skyrsla-nefndarinnar/english/\" title=\"Seðlabanki Íslands — Special Investigation Commission report; Central Bank annual report 2009\" target=\"_blank\" rel=\"noopener\">CURR-DATA-001</a>), sem bendir til takmarkana í viðbrögðum hans. Hlutverk Davíðs Oddssonar sem seðlabankastjóra er ekki staðfest í heimildum, né fullyrðingin um að hann hafi «komið í veg fyrir algera lokun». Matið á árangri seðlabankans er umdeilanlegt — gjaldeyrishöftin voru bæði lofuð og gagnrýnd.",
+      "missing_context": "Heimildir staðfesta ekki beint að Davíð Oddsson hafi verið seðlabankastjóri né meta hlutverk hans sérstaklega. Samkvæmt <a href=\"https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/skyrsla-nefndarinnar/english/\" title=\"Seðlabanki Íslands — Special Investigation Commission report; Central Bank annual report 2009\" target=\"_blank\" rel=\"noopener\">CURR-DATA-001</a> gat Seðlabankinn ekki virkað sem lánveitandi til þrautavara í erlendri mynt, sem dregur úr fullyrðingunni um að bankinn hafi «komið í veg fyrir algera lokun». Gjaldeyrishöftin voru umdeild — þau vernduðu efnahaginn en komu í veg fyrir frjálsa fjármagnsflutninga í tæpan áratug.",
+      "supporting_evidence": [
+        {
+          "id": "CURR-DATA-001",
+          "source_name": "Seðlabanki Íslands — Special Investigation Commission report; Central Bank annual report 2009",
+          "source_url": "https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/skyrsla-nefndarinnar/english/"
+        },
+        {
+          "id": "CURR-DATA-002",
+          "source_name": "Seðlabanki Íslands — Capital account liberalisation reports",
+          "source_url": "https://sedlabanki.is/hagtolur/gengi?PageID=289"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "precedents",
+      "attribution": "paraphrased",
+      "article_slug": "malssokn-a-hendur-israel-og-framhald-esb-innlimunar-islands",
+      "article_title": "Málssókn á hendur Ísrael og framhald ESB-innlimunar Íslands",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-21"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "malssokn-a-hendur-israel-og-framhald-esb-innlimunar-islands",
+      "title": "Málssókn á hendur Ísrael og framhald ESB-innlimunar Íslands",
+      "source": "Morgunblaðið",
+      "date": "2026-03-21",
+      "claim_count": 1,
+      "attribution_types": [
+        "paraphrased"
+      ]
+    }
+  ],
   "subtype": "politician"
 }

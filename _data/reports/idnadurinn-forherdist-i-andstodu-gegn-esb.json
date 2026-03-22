@@ -10,8 +10,7 @@
   "summary": "Greindar 13 fullyrðingar .",
   "capsule": "Könnun meðal félagsmanna Samtaka iðnaðarins frá febrúar–mars 2026 sýnir að 57% þeirra eru andvíg ESB-aðild Íslands — og hlutfall mjög andvígra er tæplega tvöfalt hærra en í sambærilegri könnun árið 2024. Athyglisvert er þó að SI sem samtök hafa opinberlega stutt ESB-aðild og rökstutt hana m. a. með betri markaðsaðgangi og þátttöku í iðnaðarstefnu ESB — sem þýðir að félagsmenn og forysta samtakanna eru ekki á sama máli.",
   "verdict_counts": {
-    "supported": 10,
-    "unverifiable": 1,
+    "supported": 11,
     "unsupported": 1
   },
   "claim_count": 12,
@@ -232,12 +231,18 @@
         "claim_type": "statistic",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Engin heimild inniheldur íslensk skoðanakannanagögn sem sýna hlutfall «mjög fylgjandi» ESB-aðild á sautján prósentum árið 2024 eða tíu prósentum árið 2026. <a href=\"https://europa.eu/eurobarometer/surveys/detail/3131\" title=\"Standard Eurobarometer; OBR; ONS; Eurostat\" target=\"_blank\" rel=\"noopener\">PREC-DATA-017</a> fjallar um Eurobarometer-kannanir á ESB-ríkjum almennt en nær ekki til íslensku könnunargagna. Aðrar heimildir (<a href=\"https://commonslibrary.parliament.uk/research-briefings/cbp-7851/\" title=\"UK House of Commons Library, Statistics on UK-EU Trade (Research Briefing CBP-7851)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-001</a>, <a href=\"https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/\" title=\"UK Office for National Statistics — Trade statistics; Office for Budget Responsibility — Brexit impact assessment\" target=\"_blank\" rel=\"noopener\">PREC-HIST-012</a> o.fl.) fjalla um efnahagsleg áhrif Brexit á Bretland og hafa enga tengingu við íslenskar skoðanakannanir.",
-      "supporting_evidence": [],
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins — Könnun meðal félagsmanna um ESB-aðild\" target=\"_blank\" rel=\"noopener\">POLL-DATA-023</a> staðfestir þessar tölur beint: hlutfall «mjög fylgjandi» ESB-aðild meðal félagsmanna Samtaka iðnaðarins féll úr um 17% árið 2024 í um 10% árið 2026. Tölurnar í fullyrðingunni eru í samræmi við heimildir.",
+      "supporting_evidence": [
+        {
+          "id": "POLL-DATA-023",
+          "source_name": "Samtök iðnaðarins — Könnun meðal félagsmanna um ESB-aðild",
+          "source_url": "https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Sértækar íslenskar skoðanakannanir (t.d. Gallup, Maskína eða MMR) sem greina á milli stuðningsflokka vantar í gagnagrunninn. Tölurnar sautján prósent og tíu prósent gætu verið úr raunverulegri könnun en slík heimild er ekki til staðar meðal framlagðra gagna.",
-      "confidence": 0.92,
+      "missing_context": "Þessar tölur eiga við um félagsmenn Samtaka iðnaðarins, ekki almenning. Fullyrðingin tilgreinir ekki þetta gildissvið og gæti verið villandi ef lesandi skilur hana sem almenna skoðanakönnun. Aðferðafræði, úrtaksstærð og svarhlutfall kunna að breytast milli ára.",
+      "confidence": 0.85,
       "speakers": [
         {
           "name": "Samtök iðnaðarins",
@@ -492,8 +497,7 @@
       "attribution_type": "paraphrased",
       "claim_count": 8,
       "verdicts": {
-        "supported": 6,
-        "unverifiable": 1,
+        "supported": 7,
         "unsupported": 1
       },
       "stance": "neutral",

@@ -2,20 +2,20 @@
   "slug": "samtok-atvinnulifsins",
   "name": "Samtök Atvinnulífsins",
   "type": "institution",
-  "description": "Stofnun — blandað viðhorf til ESB-aðildar.",
+  "description": "Stofnun — hlutlaus um ESB-aðild.",
   "role": "hagsmunasamtök atvinnulífsins",
   "party": null,
-  "stance": "mixed",
-  "stance_score": 0.33,
-  "credibility": 0.75,
+  "stance": "neutral",
+  "stance_score": 0.0,
+  "credibility": 0.67,
   "attribution_counts": {
     "quoted": 1,
-    "paraphrased": 2,
-    "mentioned": 1
+    "paraphrased": 4,
+    "mentioned": 2
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 2,
+    "partially_supported": 3,
     "supported": 1
   },
   "claims": [
@@ -112,6 +112,48 @@
       "article_title": "Evrópusambandið fylgi hótunum sínum ekki eftir",
       "article_source": "Morgunblaðið",
       "article_date": "2026-03-11"
+    },
+    {
+      "claim_text": "Stjórnendur lítilla og meðalstórra fyrirtækja á Íslandi eru áhugasamir um að ljúka aðildarviðræðum við ESB, en forystumenn stærstu hagsmunasamtakanna eru það ekki.",
+      "original_quote": "Þú sem ég tala við, sem eru að reka bara lítil og meðalstór fyrirtæki, eru bara let's go. [...] Þannig að ég veit það ekki, kannski vantar bara meiri umræðu innan þeirra raða að það á að þrýsta á sína forystumenn í þessu.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir gefa blandaða mynd sem styður fullyrðinguna að hluta en stangast á við hana að öðru leyti. <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins (SI) — Membership survey, February/March 2026\" target=\"_blank\" rel=\"noopener\">ORG-DATA-001</a> sýnir að 57% félagsmanna SI eru á móti ESB-aðild, sem bendir til þess að meirihluti fyrirtækja sé ekki «let's go». <a href=\"https://www.sa.is/frettir\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> staðfestir að SA styður ESB-aðild og hefur lagt til 200 milljónir króna, sem stangast á við fullyrðinguna um að forystumenn stærstu samtakanna séu ekki áhugasamir. Forysta SI styður jafnframt ESB-aðild samkvæmt <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins — Annual report 2025; SI policy briefs on CBAM and Horizon Europe\" target=\"_blank\" rel=\"noopener\">POL-DATA-016</a>, þótt meirihluti félagsmanna sé á móti. Myndin er flóknari en fullyrðingin gefur til kynna.",
+      "missing_context": "Fullyrðingin byggir á persónulegri reynslu ræðumanns en engin kerfisbundin könnun meðal lítilla og meðalstórra fyrirtækja er í staðreyndagrunni. SA og SI — stærstu hagsmunasamtökin — hafa formlega stutt ESB-aðild á forystustigi, sem stangast á við fullyrðinguna. Athyglisvert er þó að meirihluti SI-félagsmanna er á móti, sem sýnir bil milli forystu og félagsmanna.",
+      "supporting_evidence": [
+        {
+          "id": "POL-DATA-013",
+          "source_name": "ASÍ — Executive board minutes and public statements; ASÍ annual congress 2024",
+          "source_url": "https://asi.is/thing2024/"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "POL-DATA-012",
+          "source_name": "SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions",
+          "source_url": "https://www.sa.is/frettir"
+        },
+        {
+          "id": "POL-DATA-016",
+          "source_name": "Samtök iðnaðarins — Annual report 2025; SI policy briefs on CBAM and Horizon Europe",
+          "source_url": "https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb"
+        },
+        {
+          "id": "ORG-DATA-001",
+          "source_name": "Samtök iðnaðarins (SI) — Membership survey, February/March 2026",
+          "source_url": "https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb"
+        },
+        {
+          "id": "POLL-DATA-023",
+          "source_name": "Samtök iðnaðarins — Könnun meðal félagsmanna um ESB-aðild",
+          "source_url": "https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb"
+        }
+      ],
+      "category": "org_positions",
+      "attribution": "paraphrased",
+      "article_slug": "heida-kristin-helgadottir-einkennilegt-ef-storu-samtokin-vilja-ekki-fa-botn-i-vidraedur-og-nidurstodu",
+      "article_title": "Heiða Kristín Helgadóttir: Einkennilegt ef stóru samtökin vilja ekki fá botn í viðræður og niðurstöðu",
+      "article_source": "DV",
+      "article_date": "2026-03-21"
     }
   ],
   "articles": [
@@ -133,6 +175,17 @@
       "claim_count": 1,
       "attribution_types": [
         "quoted"
+      ]
+    },
+    {
+      "slug": "heida-kristin-helgadottir-einkennilegt-ef-storu-samtokin-vilja-ekki-fa-botn-i-vidraedur-og-nidurstodu",
+      "title": "Heiða Kristín Helgadóttir: Einkennilegt ef stóru samtökin vilja ekki fá botn í viðræður og niðurstöðu",
+      "source": "DV",
+      "date": "2026-03-21",
+      "claim_count": 1,
+      "attribution_types": [
+        "mentioned",
+        "paraphrased"
       ]
     }
   ]

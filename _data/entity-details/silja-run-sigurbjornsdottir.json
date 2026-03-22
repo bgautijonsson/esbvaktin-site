@@ -13,9 +13,8 @@
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 3,
+    "partially_supported": 4,
     "supported": 5,
-    "unverifiable": 1,
     "misleading": 1
   },
   "claims": [
@@ -120,10 +119,16 @@
     {
       "claim_text": "Undanþágan felur í sér leyfi til að niðurgreiða losun flugfélaga með því að gefa þeim losunarheimildir.",
       "original_quote": "í henni felst leyfi til að niðurgreiða losun flugfélaga með því að gefa þeim losunarheimildir",
-      "verdict": "unverifiable",
-      "explanation": "Engin heimild í gagnagrunninum fjallar um undanþágu tengda losunarheimildum flugfélaga. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E326\" title=\"Treaty on the Functioning of the European Union, Articles 326–334; European Commission — Enhanced cooperation factsheet\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-031</a> lýsir samstarfskerfi (enhanced cooperation) og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M050\" title=\"Treaty on European Union, Article 50\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-001</a> fjallar um 50. grein ESB-sáttmálans um úrsögn — hvorugt snertir flugumferðarlosun eða úthlutun losunarheimilda til flugfélaga. Án viðeigandi heimilda er fullyrðingin óstaðfestanleg.",
-      "missing_context": "Til staðfestingar þyrfti heimildir um ETS-kerfið og flugumferð, CORSIA-samninginn, eða sérstakar undanþágur EES/EFTA-ríkja vegna flugslosunar. Fullyrðingin virðist vísa í tiltekna undanþágu sem krefst sérhæfðra heimilda um flugmálastefnu ESB og tengsl hennar við EES.",
-      "supporting_evidence": [],
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a> staðfestir að Ísland samdi um framlengingu á ókeypis losunarheimildum fyrir flugfélög til og með 2026, sem er eitt ár umfram almenna EES-áætlunina. Þetta felur í sér að flugfélög fá losunarheimildir án endurgjalds, sem dregur úr kostnaði þeirra. Orðið «niðurgreiða» í fullyrðingunni er þó túlkun ræðumannsins — formlega er um ókeypis úthlutun að ræða, ekki fjárhagslega niðurgreiðslu frá ríkinu. Kjarni fullyrðingarinnar um að undanþágan feli í sér gjafalosunarheimildir er staðfestur, en orðalagið um niðurgreiðslu er matskennt.",
+      "missing_context": "Munur er á «ókeypis úthlutun» losunarheimilda og beinum fjárhagslegum niðurgreiðslum. <a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a> lýsir ókeypis úthlutun (free allocation), sem hefur svipaðan efnahagslegan áhrif og niðurgreiðsla en er formlega ólíkt. Þá er undanþágan tímabundin (til 2026) og nákvæm skilmálar kunna að hafa breyst eftir bráðabirgðasamkomulagið í maí 2023.",
+      "supporting_evidence": [
+        {
+          "id": "ETS-DATA-002",
+          "source_name": "Iceland Review; Carbon Pulse; European Commission",
+          "source_url": "https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/"
+        }
+      ],
       "contradicting_evidence": [],
       "category": "eea_eu_law",
       "attribution": "asserted",

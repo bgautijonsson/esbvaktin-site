@@ -10,9 +10,8 @@
   "summary": "Greindar 15 fullyrðingar. Niðurstöður: 10 stutt að hluta, 3 ekki hægt að sannreyna, 2 stutt af heimildum. Sjónarhorn: hallar á ESB-jákvæða hlið. Heildstæðni: 30%.",
   "capsule": "Greiningin sýnir fram á að regluverk ESB verndar kvótahlutdeild aðildarríkja og að erlend skip geta ekki veitt í íslenskri lögsögu nema á íslenskum skilmálum. Athyglisvert er þó að kvótaskipting milli aðildarríkja byggist á meginreglunni um hlutfallslegan stöðugleika — varanlegir hlutir ríkjanna eru ákvarðaðir út frá sögulegum afla frá árunum 1973–1978, og sem nýtt aðildarríki þyrfti Ísland að semja um hlutdeild sína frá grunni. Þar að auki er vert að hafa í huga að heildareignavirði úthlutaðra kvóta á Íslandi er metið á um 1.500 milljarða króna — þetta gefur til kynna hversu mikið er í húfi þegar rætt er um framtíð sjávarauðlindarinnar.",
   "verdict_counts": {
-    "partially_supported": 11,
-    "supported": 3,
-    "unverifiable": 1
+    "partially_supported": 12,
+    "supported": 3
   },
   "claim_count": 15,
   "dominant_category": "fisheries",
@@ -724,12 +723,23 @@
         "claim_type": "opinion",
         "confidence": 0.55
       },
-      "verdict": "unverifiable",
-      "explanation": "Fullyrðingin heldur því fram að íslenska útgerðin sé «hrædd við alvöru eftirlit og rekjanleika» sem ESB-aðild myndi krefjast. Þetta er túlkunarfullyrðing um hvata útgerðarinnar, ekki staðreyndamat. POL-DATA-014 staðfestir að LÍÚ leggi harðlega gegn ESB-aðild og beini gagnrýni sinni að kvótakerfinu, deildri lögsögu og tilfærslu ákvarðanatöku til Brussel — en engin heimild segir beinlínis að eftirlit og rekjanleiki séu áhyggjuefni útgerðarinnar. Röksemdafærsla LÍÚ snýst um efnahagslega hagsmuni og sjálfstjórn, ekki um ótta við eftirlit.",
-      "supporting_evidence": [],
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin heldur því fram að íslenska útgerðin sé «hrædd við alvöru eftirlit og rekjanleika» sem ESB-aðild myndi krefjast. POL-DATA-014 staðfestir að LÍÚ, sem stendur fyrir 70% kvótans, sé harðasti skipulagði andstæðingur ESB-aðildar og nefnir meðal annars að stjórnunarákvarðanir yrðu fluttar til Brussel. <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins — Könnun meðal félagsmanna um ESB-aðild\" target=\"_blank\" rel=\"noopener\">POLL-DATA-023</a> og <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins (SI) — Membership survey, February/March 2026\" target=\"_blank\" rel=\"noopener\">ORG-DATA-001</a> sýna vaxandi andstöðu meðal atvinnulífsins. Hins vegar er orðalagið «hrædd við alvöru eftirlit» túlkun sem heimildirnar styðja ekki beint — andstæðan byggist á hagsmunagæslu og fullveldissjónarmiðum, ekki endilega ótta við eftirlit sem slíkt.",
+      "supporting_evidence": [
+        {
+          "id": "POL-DATA-014",
+          "source_name": "LÍÚ — Position paper on EU membership (2025); campaign finance declarations",
+          "source_url": null
+        },
+        {
+          "id": "POLL-DATA-023",
+          "source_name": "Samtök iðnaðarins — Könnun meðal félagsmanna um ESB-aðild",
+          "source_url": "https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Fullyrðingin gefur til kynna hvataspurning sem heimildir svara ekki. LÍÚ hefur lagt 500 milljónir króna í herferð gegn ESB-aðild og rökstyður andstöðu sína með efnahagslegum og stjórnunarlegum rökum (POL-DATA-014). Samtök iðnaðarins sýna vaxandi andstöðu meðal félagsmanna (<a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins (SI) — Membership survey, February/March 2026\" target=\"_blank\" rel=\"noopener\">ORG-DATA-001</a>). Engin heimild nefnir eftirlit eða rekjanleika sem sérstakt áhyggjuefni útgerðarinnar.",
-      "confidence": 0.8,
+      "missing_context": "Heimildir staðfesta andstöðu útgerðarinnar við ESB-aðild, en rök hennar snúa að fullveldi og kvótakerfi fremur en «ótta við eftirlit». Fullyrðingin notar túlkandi orðalag sem heimildirnar styðja ekki beinlínis. Einnig ber að hafa í huga að LÍÚ stendur fyrir kvótaeigendum (útgerðarmönnum), ekki sjómönnum eða fiskvinnslu, sem kunna að hafa ólíka hagsmuni.",
+      "confidence": 0.55,
       "speakers": [
         {
           "name": "Bjorn Levi Gunnarsson",
@@ -763,9 +773,8 @@
       "attribution_type": "paraphrased",
       "claim_count": 15,
       "verdicts": {
-        "partially_supported": 11,
-        "supported": 3,
-        "unverifiable": 1
+        "partially_supported": 12,
+        "supported": 3
       },
       "stance": "pro_eu"
     }
