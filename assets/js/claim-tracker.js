@@ -14,11 +14,7 @@
   const controllerLib = globalThis.ESBvaktinTrackerController || {};
   const createController = controllerLib.create;
   const createReportLookup = utils.createReportLookup || (() => ({ byArticleUrl: new Map(), byTitleDate: new Map() }));
-  const escapeHtml = utils.escapeHtml || ((value) => String(value ?? ""));
-  const buildReturnUrl = utils.buildReturnUrl || (() => "");
-  const findReportForSource = utils.findReportForSource || (() => null);
   const restoreReturnTarget = utils.restoreReturnTarget || (() => false);
-  const withReturnUrl = utils.withReturnUrl || ((url) => url);
   const createSortComparator = utils.createSortComparator;
   const createCommitState = utils.createCommitState;
   const createErrorHandler = utils.createErrorHandler;
@@ -29,20 +25,10 @@
   const CLAIMS_URL = `${DATA_BASE}/claims.json`;
   const REPORTS_URL = `${DATA_BASE}/reports.json`;
 
-  /** Turn plain evidence IDs (e.g. SOV-PARL-005) into hoverable .evidence-link anchors.
-   *  Applied AFTER escapeHtml — IDs only contain [A-Z0-9-] so they survive escaping. */
-  const EVIDENCE_ID_RE = /\b([A-Z]+-[A-Z]+-\d+)\b/g;
-  function linkifyEvidenceIds(html) {
-    return html.replace(
-      EVIDENCE_ID_RE,
-      (_, id) => `<a href="/heimildir/${id.toLowerCase()}/" class="evidence-link" data-evidence-id="${id}">${id}</a>`
-    );
-  }
+  const claimCard = globalThis.ESBvaktinClaimCard || {};
+
   const VERDICT_LABELS = TAXONOMY.verdictLabels || {};
-  const VERDICT_DESCRIPTIONS = TAXONOMY.verdictDescriptions || {};
   const CATEGORY_LABELS = TAXONOMY.categoryLabels || {};
-  const VERDICT_CLASSES = TAXONOMY.verdictClasses || {};
-  const SOURCE_TYPE_LABELS = TAXONOMY.claimSourceTypeLabels || {};
   const SORT_LABELS = {
     last_verified: "Síðast staðfest",
     sighting_count: "Tíðni",
@@ -248,7 +234,12 @@
 
     el.innerHTML = renderer.renderCollection({
       items: claims,
-      renderItem: renderClaimCard,
+      renderItem: function (claim) {
+        return claimCard.renderClaimCard(claim, {
+          focusedSlug: getFilters().claim,
+          reportLookup: getReportLookup(),
+        });
+      },
     });
     expandFocusedClaim();
     expandReturnClaimTarget();
@@ -270,135 +261,6 @@
     }
 
     el.textContent = `Sýni ${visibleCount} af ${totalCount} fullyrðingum.`;
-  }
-
-  function renderClaimCard(claim) {
-    const cardId = `ct-claim-${claim.claim_slug}`;
-    const verdictClass = VERDICT_CLASSES[claim.verdict] || "";
-    const verdictLabel = VERDICT_LABELS[claim.verdict] || claim.verdict;
-    const categoryLabel = CATEGORY_LABELS[claim.category] || claim.category;
-    const confidencePct = Math.round((claim.confidence || 0) * 100);
-    const isFocused = getFilters().claim === claim.claim_slug;
-
-    let detailsHtml = "";
-    if (claim.explanation_is) {
-      detailsHtml += `<div class="ct-detail"><strong>Útskýring:</strong> ${linkifyEvidenceIds(escapeHtml(claim.explanation_is))}</div>`;
-    }
-    if (claim.missing_context_is) {
-      detailsHtml += `<div class="ct-detail"><strong>Samhengi sem vantar:</strong> ${linkifyEvidenceIds(escapeHtml(claim.missing_context_is))}</div>`;
-    }
-    if (claim.canonical_text_en) {
-      detailsHtml += `<div class="ct-detail ct-english"><strong>English:</strong> ${escapeHtml(claim.canonical_text_en)}</div>`;
-    }
-
-    const supportingEvidence = claim.supporting_evidence || [];
-    const contradictingEvidence = claim.contradicting_evidence || [];
-    if (supportingEvidence.length > 0 || contradictingEvidence.length > 0) {
-      const renderEvidenceLinks = (evidenceList) =>
-        evidenceList
-          .map(
-            (evidence) =>
-              `<a href="${escapeHtml(withReturnUrl(`/heimildir/${evidence.slug}/`, buildReturnUrl(cardId)))}" class="evidence-link" data-evidence-id="${escapeHtml(evidence.id)}" data-evidence-source="${escapeHtml(evidence.source_name)}">${escapeHtml(evidence.id)}</a>`
-          )
-          .join(", ");
-
-      let evidenceHtml = '<div class="ct-detail ct-evidence">';
-      if (supportingEvidence.length > 0) {
-        evidenceHtml += `<div class="ct-evidence-group"><strong>Heimildir:</strong> ${renderEvidenceLinks(supportingEvidence)}</div>`;
-      }
-      if (contradictingEvidence.length > 0) {
-        evidenceHtml += `<div class="ct-evidence-group ct-evidence-contra"><strong>Andstæðar heimildir:</strong> ${renderEvidenceLinks(contradictingEvidence)}</div>`;
-      }
-      evidenceHtml += "</div>";
-      detailsHtml += evidenceHtml;
-    }
-
-    if (claim.sightings?.length) {
-      const reportLookup = getReportLookup();
-      const sightingCount = claim.sightings.length;
-      const sightingItems = claim.sightings
-        .map((sighting) => {
-          const typeLabel = SOURCE_TYPE_LABELS[sighting.source_type] || sighting.source_type || "";
-          const dateStr = sighting.source_date || "";
-          const title = sighting.source_title || sighting.source_url;
-          const meta = [typeLabel, dateStr].filter(Boolean).join(" · ");
-          const matchedReport = findReportForSource(sighting, reportLookup);
-          const internalHref = matchedReport?.slug
-            ? withReturnUrl(`/umraedan/${matchedReport.slug}/`, buildReturnUrl(cardId))
-            : "";
-          const href = internalHref || sighting.source_url || "";
-          const externalAttrs = internalHref ? "" : ' target="_blank" rel="noopener"';
-          const linkClass = internalHref
-            ? "ct-sighting-link"
-            : "ct-sighting-link ct-sighting-link--external";
-
-          const titleHtml = href
-            ? `<a href="${escapeHtml(href)}" class="${linkClass}"${externalAttrs}>${escapeHtml(title)}</a>`
-            : `<span class="${linkClass}">${escapeHtml(title)}</span>`;
-
-          return `<li class="ct-sighting-item">
-            ${titleHtml}
-            ${meta ? `<span class="ct-sighting-meta">${escapeHtml(meta)}</span>` : ""}
-          </li>`;
-        })
-        .join("");
-
-      detailsHtml += `<div class="ct-sightings-section">
-        <button class="ct-sightings-toggle" aria-expanded="false" type="button">
-          <span class="ct-sightings-label">Birtist í ${sightingCount} umræðu${sightingCount > 1 ? "m" : ""}</span>
-          <span class="ct-sightings-expand-icon">▸</span>
-        </button>
-        <div class="ct-sightings-details">
-          <ul class="ct-sighting-list">${sightingItems}</ul>
-        </div>
-      </div>`;
-    }
-
-    const sightingBadge =
-      claim.sighting_count > 0
-        ? `<span class="ct-sighting-count" title="Fjöldi tilvitana">${claim.sighting_count}×</span>`
-        : "";
-
-    return `
-      <div class="ct-card${isFocused ? " ct-card--focused" : ""}" id="${escapeHtml(cardId)}" data-slug="${escapeHtml(claim.claim_slug)}">
-        <div class="ct-card-header" role="button" tabindex="0" aria-expanded="false">
-          <div class="ct-card-main">
-            <span class="ct-verdict-pill ${verdictClass}" title="${VERDICT_DESCRIPTIONS[claim.verdict] || ""}">${verdictLabel}</span>
-            <span class="ct-category-tag">${categoryLabel}</span>
-            ${sightingBadge}
-          </div>
-          <p class="ct-claim-text">${escapeHtml(claim.canonical_text_is)}</p>
-          <div class="ct-card-meta">
-            <span class="ct-confidence" title="Vissustig">
-              <span class="ct-confidence-bar" style="width: ${confidencePct}%"></span>
-              ${confidencePct}%
-            </span>
-            <span class="ct-expand-icon">▸</span>
-          </div>
-        </div>
-        <div class="ct-card-details">
-          ${detailsHtml}
-        </div>
-      </div>
-    `;
-  }
-
-  function toggleSightings(toggle) {
-    const section = toggle.closest(".ct-sightings-section");
-    if (!section) return;
-
-    const expanded = !section.classList.contains("ct-sightings-expanded");
-    section.classList.toggle("ct-sightings-expanded", expanded);
-    toggle.setAttribute("aria-expanded", expanded);
-  }
-
-  function toggleClaimCard(header) {
-    const card = header.closest(".ct-card");
-    if (!card) return;
-
-    const expanded = !card.classList.contains("ct-expanded");
-    card.classList.toggle("ct-expanded", expanded);
-    header.setAttribute("aria-expanded", expanded);
   }
 
   function expandReturnClaimTarget() {
@@ -530,15 +392,15 @@
   });
 
   controller.bindClick(".ct-card-header", (target) => {
-    toggleClaimCard(target);
+    claimCard.toggleClaimCard(target);
   });
 
   controller.bindKeyActivate(".ct-card-header", (target) => {
-    toggleClaimCard(target);
+    claimCard.toggleClaimCard(target);
   });
 
   controller.bindClick(".ct-sightings-toggle", (target) => {
-    toggleSightings(target);
+    claimCard.toggleSightings(target);
   });
 
   controller.start();
