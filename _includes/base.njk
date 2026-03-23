@@ -25,7 +25,14 @@
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   <link rel="stylesheet" href="/assets/css/style.css">
   {% if extra_css or return_link_support %}<link rel="stylesheet" href="/assets/css/tracker-base.css">{% endif %}
-  {% if extra_css %}<link rel="stylesheet" href="{{ extra_css }}">{% endif %}
+  {% if extra_css %}
+    {% if extra_css is string %}
+      <link rel="stylesheet" href="{{ extra_css }}">
+    {% else %}
+      {% for css in extra_css %}<link rel="stylesheet" href="{{ css }}">
+      {% endfor %}
+    {% endif %}
+  {% endif %}
 </head>
   <body>
     <a href="#main-content" class="skip-link">Beint í efni</a>
