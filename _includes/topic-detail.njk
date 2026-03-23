@@ -1,6 +1,9 @@
 ---
 layout: base.njk
-extra_css: /assets/css/topic-detail.css
+extra_css:
+  - /assets/css/topic-detail.css
+  - /assets/css/claim-tracker.css
+extra_js: /assets/js/topic-claim-tracker.js
 return_link_support: true
 ---
 
@@ -159,40 +162,15 @@ return_link_support: true
   </section>
   {% endif %}
 
-  {# ── Claims ── #}
-  {% if topic.claims | length %}
-  <section class="td-claims">
+  {# ── Claims (embedded tracker) ── #}
+  <section class="td-claims" id="topic-claim-tracker"
+           data-category="{{ topic.slug }}"
+           data-base="/assets/data">
     <h2>Fullyrðingar ({{ topic.claims | length }})</h2>
-
-    {% for item in topic.claims %}
-    <details class="report-claim report-claim--{{ item.verdict | replace("partially_supported", "partial") }}">
-      <summary class="report-claim-header">
-        <span class="ct-verdict-pill verdict-{{ item.verdict | replace("partially_supported", "partial") }}" title="{{ item.verdict | verdictDescription }}">
-          {{ item.verdict | verdictLabel }}
-        </span>
-        <span class="report-claim-title">{{ item.canonical_text_is }}</span>
-        {% if item.sighting_count %}
-          <span class="td-sighting-count">{{ item.sighting_count }} tilvísun{{ "ir" if item.sighting_count > 1 else "" }}</span>
-        {% endif %}
-        <span class="report-claim-chevron" aria-hidden="true"></span>
-      </summary>
-      <div class="report-claim-body">
-        {% if item.speakers | length %}
-          <p class="td-claim-speakers">
-            Ræðumenn:
-            {% for speaker in item.speakers %}
-              <a href="/raddirnar/{{ speaker | isSlug }}/">{{ speaker }}</a>{% if not loop.last %}, {% endif %}
-            {% endfor %}
-          </p>
-        {% endif %}
-        {% if item.last_seen %}
-          <p class="td-claim-meta">Síðast séð: <time datetime="{{ item.last_seen }}">{{ item.last_seen | isDate }}</time></p>
-        {% endif %}
-      </div>
-    </details>
-    {% endfor %}
+    <noscript>
+      <p>Kveiktu á JavaScript til að skoða fullyrðingar.</p>
+    </noscript>
   </section>
-  {% endif %}
 
   {# ── Evidence ── #}
   {% if topic.evidence | length %}
