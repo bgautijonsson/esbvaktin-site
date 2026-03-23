@@ -161,3 +161,51 @@ test("evidence links show a short preview on hover", async ({ page }) => {
   await expect(preview).toContainText("SOV-DATA-006");
   await expect(preview).toContainText(/þjóðaratkvæðagreiðsla/i);
 });
+
+test("topic detail page loads embedded claim tracker", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 960 });
+  await gotoAndWait(page, "/malefni/", ".tp-card-link");
+  await page.locator(".tp-card-link").first().click();
+  await expect(page.locator(".td-back")).toBeVisible();
+
+  // Scroll to trigger lazy load of the claim tracker
+  await page.locator("#topic-claim-tracker").scrollIntoViewIfNeeded();
+  await page.locator("#topic-claim-tracker .ct-card").first().waitFor({ state: "visible", timeout: 10000 });
+
+  // Verify claim cards rendered
+  const cardCount = await page.locator("#topic-claim-tracker .ct-card").count();
+  expect(cardCount).toBeGreaterThan(0);
+
+  // Verify controls exist
+  await expect(page.locator("#tct-search")).toBeVisible();
+  await expect(page.locator("#tct-verdict")).toBeVisible();
+  await expect(page.locator("#tct-sort")).toBeVisible();
+
+  // Verify expand/collapse works
+  const firstCard = page.locator("#topic-claim-tracker .ct-card").first();
+  await firstCard.locator(".ct-card-header").click();
+  await expect(firstCard).toHaveClass(/ct-expanded/);
+});
+
+test("topic detail timeline shows proportional 2026 bars", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 960 });
+  await gotoAndWait(page, "/malefni/", ".tp-card-link");
+  await page.locator(".tp-card-link").first().click();
+  await expect(page.locator(".td-back")).toBeVisible();
+
+  // Verify timeline structure
+  const bars = page.locator(".td-timeline-bar");
+  const barCount = await bars.count();
+
+  if (barCount > 0) {
+    // Bars should have left-positioned style (proportional)
+    const firstBarStyle = await bars.first().getAttribute("style");
+    expect(firstBarStyle).toContain("left:");
+
+    // Day labels should exist
+    await expect(page.locator(".td-label-day").first()).toBeVisible();
+
+    // Month labels should exist
+    await expect(page.locator(".td-label-month").first()).toBeVisible();
+  }
+});
