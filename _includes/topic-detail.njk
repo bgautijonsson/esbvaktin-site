@@ -80,21 +80,81 @@ return_link_support: true
   {% endif %}
 
   {# ── Timeline ── #}
-  {% if topic.timeline | length %}
+  {% set timelineItems = [] %}
+  {% for w in topic.timeline %}
+    {% if w.week >= "2026-01-01" %}
+      {% set timelineItems = (timelineItems.push(w), timelineItems) %}
+    {% endif %}
+  {% endfor %}
+  {% if timelineItems | length %}
   <section class="td-timeline">
     <h2>Tímalína</h2>
-    <div class="td-timeline-bars">
-      {% set maxSightings = 0 %}
-      {% for w in topic.timeline %}
-        {% if w.sightings > maxSightings %}{% set maxSightings = w.sightings %}{% endif %}
-      {% endfor %}
-      {% for w in topic.timeline %}
-        {% set pct = (w.sightings / (maxSightings or 1) * 100) | round %}
-        <div class="td-timeline-bar" title="{{ w.week | isDate }}: {{ w.sightings }} tilvísanir, {{ w.new_claims }} nýjar fullyrðingar">
-          <div class="td-timeline-fill" style="height: {{ pct }}%"></div>
-          <span class="td-timeline-label">{{ w.week | isDate }}</span>
-        </div>
-      {% endfor %}
+    {# Compute time range: Jan 1 2026 to latest entry + 1 week buffer #}
+    {% set yearStartMs = 1767225600000 %}{# 2026-01-01T00:00:00Z #}
+    {% set lastWeekMs = 0 %}
+    {% set maxSightings = 0 %}
+    {% for w in timelineItems %}
+      {% set wMs = w.week | isDateToMs %}
+      {% if wMs > lastWeekMs %}{% set lastWeekMs = wMs %}{% endif %}
+      {% if w.sightings > maxSightings %}{% set maxSightings = w.sightings %}{% endif %}
+    {% endfor %}
+    {% set rangeEndMs = lastWeekMs + 604800000 %}{# +7 days buffer #}
+    {% set rangeMs = rangeEndMs - yearStartMs %}
+
+    {# Determine label thinning: ≤15 all, 16-30 every other, 30+ month-only #}
+    {% set barCount = timelineItems | length %}
+    {% set thinMode = "all" %}
+    {% if barCount > 30 %}{% set thinMode = "month" %}
+    {% elif barCount > 15 %}{% set thinMode = "everyOther" %}{% endif %}
+
+    <div class="td-timeline-chart">
+      <div class="td-timeline-bars">
+        {% for w in timelineItems %}
+          {% set wMs = w.week | isDateToMs %}
+          {% set leftPct = ((wMs - yearStartMs) / rangeMs * 100) | round(2) %}
+          {% set heightPct = (w.sightings / (maxSightings or 1) * 100) | round %}
+          <div class="td-timeline-bar" style="left: {{ leftPct }}%" title="{{ w.week | isDate }}: {{ w.sightings }} tilvísanir, {{ w.new_claims }} nýjar fullyrðingar">
+            <div class="td-timeline-fill" style="height: {{ heightPct }}%"></div>
+          </div>
+        {% endfor %}
+      </div>
+
+      {# ── Label rows ── #}
+      <div class="td-timeline-labels">
+        {# Row 1: Day of month #}
+        {% for w in timelineItems %}
+          {% set wMs = w.week | isDateToMs %}
+          {% set leftPct = ((wMs - yearStartMs) / rangeMs * 100) | round(2) %}
+          {% set showDay = true %}
+          {% if thinMode == "month" %}
+            {% set showDay = false %}
+          {% elif thinMode == "everyOther" %}
+            {% if loop.index0 % 2 != 0 %}{% set showDay = false %}{% endif %}
+          {% endif %}
+          {% if showDay %}
+          <span class="td-label-day" style="left: {{ leftPct }}%">{{ w.week | isDayOfMonth }}</span>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <div class="td-timeline-labels td-timeline-labels--month">
+        {# Row 2: Month name — only at first bar of each new month #}
+        {% set prevMonth = -1 %}
+        {% for w in timelineItems %}
+          {% set wMs = w.week | isDateToMs %}
+          {% set leftPct = ((wMs - yearStartMs) / rangeMs * 100) | round(2) %}
+          {% set curMonth = w.week | isMonth1 %}
+          {% if curMonth != prevMonth %}
+          <span class="td-label-month" style="left: {{ leftPct }}%">{{ w.week | isMonthShort }}</span>
+          {% set prevMonth = curMonth %}
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <div class="td-timeline-labels td-timeline-labels--year">
+        {# Row 3: Year — shown once at left edge (all data is 2026) #}
+        <span class="td-label-year" style="left: 0%">2026</span>
+      </div>
     </div>
   </section>
   {% endif %}
