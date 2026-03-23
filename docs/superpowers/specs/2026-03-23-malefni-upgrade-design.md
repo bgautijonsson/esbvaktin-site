@@ -54,7 +54,7 @@ The site is receiving significant media attention (Spursmál, Bylgjan, Rás 2). 
 |------|--------|
 | `_includes/topic-detail.njk` | Rewrite timeline section: filter to 2026, compute proportional positions, render three label rows |
 | `assets/css/topic-detail.css` | Rewrite `.td-timeline-*` styles: relative positioning, absolute bars, label row layout |
-| `eleventy.config.js` | Optional: add `isMonthShort` filter for 3-char Icelandic month abbreviations |
+| `eleventy.config.js` | Add `isMonthShort` filter for 3-char Icelandic month abbreviations (used by hierarchical label row 2) |
 
 ### 2. Claims Section — Embedded Tracker Instance
 
@@ -133,6 +133,16 @@ extra_css:
 extra_js: /assets/js/topic-claim-tracker.js
 ```
 
+**Loading `tracker-claim-card.js` in `base.njk`:** The new shared module must load after the existing shared infrastructure scripts (`tracker-renderer.js`, `tracker-controller.js`) but before the page-specific script. Add it to the auto-loaded chain in `base.njk`, gated on `extra_js` (same condition as the other shared scripts):
+
+```njk
+{% if extra_js %}<script src="/assets/js/tracker-controller.js" defer></script>{% endif %}
+{% if extra_js %}<script src="/assets/js/tracker-claim-card.js" defer></script>{% endif %}
+{% if return_link_support %}<script src="/assets/js/detail-return-link.js" defer></script>{% endif %}
+```
+
+This ensures `tracker-claim-card.js` is available on both `/fullyrdingar/` (which uses `claim-tracker.js`) and topic detail pages (which use `topic-claim-tracker.js`). The module attaches to `globalThis.ESBvaktinClaimCard` following the same IIFE + globalThis pattern used by all other shared modules in this codebase (not ES module exports).
+
 #### New file: `assets/js/topic-claim-tracker.js` (~150 lines)
 
 Glue script that:
@@ -149,8 +159,8 @@ Glue script that:
 
 | File | Change |
 |------|--------|
-| `_includes/topic-detail.njk` | Replace `td-claims` section with tracker mount point; update frontmatter for array `extra_css` and `extra_js` |
-| `_includes/base.njk` | Support array `extra_css` |
+| `_includes/topic-detail.njk` | Replace `td-claims` section with tracker mount point; update frontmatter for array `extra_css` |
+| `_includes/base.njk` | Support array `extra_css`; add `tracker-claim-card.js` to shared script loading chain |
 | `assets/js/tracker-claim-card.js` | **New** — extracted shared card rendering + interaction handlers |
 | `assets/js/claim-tracker.js` | Refactor to import from `tracker-claim-card.js` |
 | `assets/js/topic-claim-tracker.js` | **New** — topic-scoped claim tracker glue |
