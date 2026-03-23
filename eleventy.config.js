@@ -58,6 +58,31 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("isDate", formatIsDate);
 
+  const MONTHS_SHORT = [
+    "jan", "feb", "mar", "apr", "maí", "jún",
+    "júl", "ágú", "sep", "okt", "nóv", "des",
+  ];
+
+  eleventyConfig.addFilter("isMonthShort", (date) => {
+    if (!date) return "";
+    return MONTHS_SHORT[new Date(date).getUTCMonth()];
+  });
+
+  eleventyConfig.addFilter("isDayOfMonth", (date) => {
+    if (!date) return "";
+    return new Date(date).getUTCDate();
+  });
+
+  eleventyConfig.addFilter("isDateToMs", (date) => {
+    if (!date) return 0;
+    return new Date(date).getTime();
+  });
+
+  eleventyConfig.addFilter("isMonth1", (date) => {
+    if (!date) return 0;
+    return new Date(date).getUTCMonth() + 1;
+  });
+
   eleventyConfig.addFilter("isDateRange", (start, end) => {
     if (!start && !end) return "";
     if (!start) return formatIsDate(end);
