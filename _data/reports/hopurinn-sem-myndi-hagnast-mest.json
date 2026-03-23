@@ -10,8 +10,8 @@
   "summary": "Greindar 17 fullyrðingar .",
   "capsule": "Draghi-skýrslan gagnrýnir með fullum rétti of mikið reglufargan Evrópusambandsins og þetta staðfesta gögn frá ESB sjálfu. Athyglisvert er þó að meginniðurstaða skýrslunnar er einmitt að kalla eftir dýpri samþættingu og samræmdari fjárfestingu sem lausn — ekki minni aðild. Fríverzlunarsamningurinn sem Ísland og forveri ESB gerðu árið 1972 er einnig staðreynd og mótaði grunninn að þeim tollafrjálsu viðskiptum sem gilda í dag á iðnaðarvörum.",
   "verdict_counts": {
-    "supported": 5,
-    "partially_supported": 10,
+    "supported": 4,
+    "partially_supported": 11,
     "misleading": 1
   },
   "claim_count": 16,
@@ -666,28 +666,23 @@
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-002</a> staðfestir beint að aukinn meirihluti í ráðherraráði ESB krefst 55% aðildarríkja sem standa fyrir 65% íbúa sambandsins — íbúafjöldi er þannig lykilforsenda atkvæðavægi. SOV-DATA-003 útskýrir nánar hvernig kerfið virkar og hvernig Ísland myndi standa sig í því. Fullyrðingin segir að atkvæðavægi ráðist \"fyrst og fremst\" af íbúafjölda, sem er rétt — bæði ríkjafjöldaskilyrðið (55%) og íbúaskilyrðið (65%) gilda en íbúafjöldi er ráðandi þátturinn í þyngd hvers ríkis.",
+      "verdict": "partially_supported",
+      "explanation": "Íbúafjöldi er eitt af tveimur viðmiðum hæfðs meirihluta í ráðherraráðinu — <a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-002</a> og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> staðfesta að QMV krefst bæði 55% aðildarríkja og 65% íbúafjölda ESB. Fullyrðingin segir atkvæðavægi ráðist «fyrst og fremst» af íbúafjölda, en ríkjaviðmiðið gefur sérhverju ríki jafnt vægi óháð stærð. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> bendir sérstaklega á að lítil ríki hafi umfram áhrif á ríkjafjöldaviðmiðinu, og flest mál eru samþykkt með samstöðu án formlegrar atkvæðagreiðslu.",
       "supporting_evidence": [
-        {
-          "id": "SOV-DATA-017",
-          "source_name": "Treaty on European Union, Article 16(4); European Parliament allocation rules",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016"
-        },
         {
           "id": "SOV-LEGAL-002",
           "source_name": "Treaty on European Union, Article 16(4)",
           "source_url": "https://eur-lex.europa.eu/summary/glossary/qualified_majority.html"
         },
         {
-          "id": "SOV-LEGAL-003",
-          "source_name": "Treaty on European Union, Article 14(2)",
-          "source_url": "https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:12008M014:EN:HTML"
+          "id": "SOV-DATA-017",
+          "source_name": "Treaty on European Union, Article 16(4); European Parliament allocation rules",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Aukinn meirihluti krefst bæði 55% ríkja og 65% íbúa — smáríki hafa þannig hlutfallslega meira vald en íbúafjöldi einn gæfi til kynna þar sem hvert ríki telur jafnt í ríkjafjöldaskilyrðinu. Ísland gæti myndað stöðvunarminnihluta með öðrum smáríkjum. Fjölmörg mikilvæg málefni krefjast samhljóða samþykkis þar sem hvert ríki hefur neitunarvald.",
-      "confidence": 0.9,
+      "missing_context": "Tvöfalt viðmið QMV (55% ríkja + 65% íbúa) þýðir að varnarminnihluti getur byggt á hvoru viðmiðinu. Samkvæmt <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> eru flest ákvörðun ráðherraráðsins teknar með samstöðu án formlegrar atkvæðagreiðslu, sem dregur úr þýðingu atkvæðavægis. Fullyrðingin einfaldar kerfið um of með því að einblína á íbúafjölda og sleppa ríkjaviðmiðinu.",
+      "confidence": 0.85,
       "speakers": [
         {
           "name": "Magnús Árni Skjöld Magnússon",
@@ -750,8 +745,8 @@
       },
       "stance": "anti_eu",
       "slug": "hjortur-j-gudmundsson",
-      "mention_count": 9,
-      "credibility": 0.69
+      "mention_count": 10,
+      "credibility": 0.66
     },
     {
       "name": "Magnús Árni Skjöld Magnússon",
@@ -761,13 +756,12 @@
       "attribution_type": "paraphrased",
       "claim_count": 3,
       "verdicts": {
-        "partially_supported": 2,
-        "supported": 1
+        "partially_supported": 3
       },
       "stance": "pro_eu",
       "slug": "magnus-arni-skjold-magnusson",
       "mention_count": 5,
-      "credibility": 0.74,
+      "credibility": 0.72,
       "speech_count": 7
     },
     {

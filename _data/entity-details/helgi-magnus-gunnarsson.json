@@ -7,15 +7,15 @@
   "party": null,
   "stance": "anti_eu",
   "stance_score": -1.0,
-  "credibility": 0.61,
+  "credibility": 0.64,
   "attribution_counts": {
     "asserted": 22
   },
   "althingi_stats": null,
   "scorecard": {
     "misleading": 4,
-    "partially_supported": 8,
-    "supported": 10
+    "partially_supported": 12,
+    "supported": 6
   },
   "claims": [
     {
@@ -229,19 +229,14 @@
     {
       "claim_text": "Hlutfall fólks í eigin húsnæði er langt um hærra á Íslandi en til dæmis í Danmörku.",
       "original_quote": "það er dýrt að kaupa húsnæði en samt er hlutfall fólks í eigin húsnæði langt um hærra hér en t.d. í Danmörku.",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.hms.is/\" title=\"HMS — Rental market monitoring; Hagstofa Íslands — Housing tenure statistics\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-004</a> staðfestir að um 70% Íslendinga búa í eigin húsnæði og 25–30% leiga. <a href=\"https://ec.europa.eu/eurostat/databrowser/view/PRC_HPI_A/default/table\" title=\"Þjóðskrá Íslands (Registers Iceland) — Property Market Index; Eurostat — House price statistics\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-007</a> sýnir beinan samanburð við Kaupmannahöfn þar sem verð-til-tekjuhlutfall er 7,5x — sem gefur til kynna minna eignahald. Samkvæmt Eurostat-gögnum er eignahlutfall í Danmörku um 59–62%, sem er talsvert lægra en á Íslandi. Fullyrðingin um «langt um hærra» eignahlutfall stenst þegar gögn eru borin saman.",
-      "missing_context": "Heimildir gefa ekki nákvæmt eignahlutfall í Danmörku — samanburðurinn er óbeinn, byggður á leigumarkaðsgögnum og verð-til-tekjuhlutfalli. ESB-aðild hefur ekki bein áhrif á eignarhlutfall — munurinn endurspeglar húsnæðisstefnu, veðlánaumhverfi og menningarlega þætti frekar en ESB-tengsl.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.hms.is/\" title=\"HMS — Rental market monitoring; Hagstofa Íslands — Housing tenure statistics\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-004</a> bendir á um 70% eignarhlutfall á Íslandi (25–30% leigjendur). Engin heimild gefur upp nákvæmt eignarhlutfall í Danmörku til samanburðar. Þó er almennt vitað að eignarhlutfall í Danmörku er um 60–62%, sem er lægra en á Íslandi en ekki endilega «langt um hærra». Munurinn er um 8–10 prósentustig — merkjanlegur en orðalagið «langt um hærra» kann að vera ýkt.",
+      "missing_context": "Engin heimild gefur eignarhlutfall í Danmörku. Samkvæmt Eurostat (utan staðreyndagrunns) er hlutfallið í Danmörku um 60–62%, sem er lægra en á Íslandi (um 70%) en munurinn er um 8–10 prósentustig. Orðalagið «langt um hærra» gefur til kynna mun stærri mismun en gögnin styðja. Þá er samanburðurinn flóknari — Danmörk hefur mikla félagslega leigumarkaðinn sem skýrir lægra eignarhlutfall.",
       "supporting_evidence": [
         {
           "id": "HOUSING-DATA-004",
           "source_name": "HMS — Rental market monitoring; Hagstofa Íslands — Housing tenure statistics",
           "source_url": "https://www.hms.is/"
-        },
-        {
-          "id": "HOUSING-DATA-007",
-          "source_name": "Þjóðskrá Íslands (Registers Iceland) — Property Market Index; Eurostat — House price statistics",
-          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/PRC_HPI_A/default/table"
         }
       ],
       "contradicting_evidence": [],
@@ -255,27 +250,33 @@
     {
       "claim_text": "EES-samningurinn var gerður til að fá aðgang að mörkuðum ESB og halda jafnframt í fullveldið.",
       "original_quote": "EES-samningurinn var einmitt gerður til að fá aðgang að mörkuðum ESB og halda jafnframt í fullveldið.",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf\" title=\"EEA Agreement — Protocol 3 on trade in processed agricultural products\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-002</a> staðfestir að EES-samningurinn veiti Íslandi tollfríðan aðgang að innri markaði ESB fyrir flestar vörur, að undanskildum landbúnaðar- og sjávarafurðum. <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> lýsir þeim stefnusviðum sem EES-samningurinn útilokar — sjávarútvegsstefnu, landbúnaðarstefnu, tollbandalag, utanríkisstefnu og peningastefnu — sem Ísland heldur fullum yfirráðum yfir. Markaðsaðgangur ásamt varðveislu fullveldis á lykilsviðum var greinilega meginmarkmið samningsins. <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Articles 99–101\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-002</a> staðfestir þó að EFTA-ríki hafi enga atkvæðaréttindi við mótun reglna innri markaðarins.",
-      "missing_context": "<a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Articles 99–101\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-002</a> bendir á að EES-ríkin taki þátt í \"mótun\" (decision-shaping) en ekki \"ákvarðanatöku\" (decision-making), sem takmarkar raunverulegt fullveldi í framkvæmd. Ísland innleiðir í reynd meira af ESB-löggjöf en formlegar undanþágur gefa til kynna samkvæmt <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a>.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> staðfestir að EES-samningurinn nær til innri markaðarins (fjórfrelsis) en undanskilur sameiginlega landbúnaðar-, sjávarútvegs- og tollabandalagsstefnu, gjaldmiðla- og utanríkisstefnu. <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf\" title=\"EEA Agreement — Protocol 3 on trade in processed agricultural products\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-002</a> sýnir tollfrjálsan aðgang fyrir flestar vörur. Markaðsaðgangur var greinilega meginmarkmið samningsins og samningurinn varðveitir formlegt fullveldi á undanskildum sviðum. Hins vegar takmarkar <a href=\"https://www.si.is/frettasafn/ees-samningurinn-mikilvaegasti-vidskiptasamningur-islands\" title=\"Samtök iðnaðarins (SI) — Position on EEA Limitations\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-006</a> myndina verulega: Ísland hefur innleitt yfir 13.000 ESB-gerðir án atkvæðisréttar, sem hefur verið kallað «lýðræðishalli» EES-fyrirkomulagsins. Fullveldisþátturinn er því of einfaldaður í fullyrðingunni.",
+      "missing_context": "Ísland hefur formlegan rétt til að hafna einstökum ESB-gerðum (synjunarréttur) en hefur sjaldan nýtt sér hann vegna hugsanlegra afleiðinga. Mörkin á milli «EES-skylds» og «undanskilins» eru ekki alltaf skýr — nokkur ESB-löggjöf á undanskildum sviðum er innleidd ef hún hefur áhrif á innri markaðinn. Raunveruleg fullveldisskerðing er því meiri en formleg skipan samningsins gefur til kynna.",
       "supporting_evidence": [
-        {
-          "id": "TRADE-DATA-002",
-          "source_name": "EEA Agreement — Protocol 3 on trade in processed agricultural products",
-          "source_url": "https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf"
-        },
         {
           "id": "EEA-LEGAL-022",
           "source_name": "EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'",
           "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
         },
         {
-          "id": "EEA-LEGAL-002",
-          "source_name": "EEA Agreement, Articles 99–101",
-          "source_url": "https://www.efta.int/eea/eea-agreement"
+          "id": "TRADE-DATA-002",
+          "source_name": "EEA Agreement — Protocol 3 on trade in processed agricultural products",
+          "source_url": "https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf"
+        },
+        {
+          "id": "TRADE-DATA-040",
+          "source_name": "EU Council / European Commission Access2Markets",
+          "source_url": "https://www.consilium.europa.eu/en/policies/eu-tariffs-explained/"
         }
       ],
-      "contradicting_evidence": [],
+      "contradicting_evidence": [
+        {
+          "id": "TRADE-COMP-006",
+          "source_name": "Samtök iðnaðarins (SI) — Position on EEA Limitations",
+          "source_url": "https://www.si.is/frettasafn/ees-samningurinn-mikilvaegasti-vidskiptasamningur-islands"
+        }
+      ],
       "category": "eea_eu_law",
       "attribution": "asserted",
       "article_slug": "ef-vid-uppfyllum-skilyrdin-thurfum-vid-hvort-sem-er-ekki-esb",
@@ -317,9 +318,9 @@
     {
       "claim_text": "Undir EES-samningnum halda EES-ríki utan ESB fullum yfirráðum yfir auðlindum sínum.",
       "original_quote": "Héldum fullum yfirráðum yfir auðlindum okkar.",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> staðfestir skýrt að sjávarútvegsstefnan og landbúnaðarstefnan séu utan EES-samningsins og Ísland haldi fullum yfirráðum yfir fiskveiðilögsögu sinni. <a href=\"https://oceans-and-fisheries.ec.europa.eu/news/eu-fisheries-control-system-gets-major-revamp-2024-01-09_en\" title=\"European Commission — EU Fisheries Control System Revamp\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-004</a> sýnir að Noregur, sem EES-ríki, heldur fullum yfirráðum yfir sjávarútvegi sínum. <a href=\"https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf\" title=\"Icelandic Act on the Exclusive Economic Zone No. 41/1979\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-002</a> staðfestir yfirráðarétt Íslands yfir efnahagslögsögunni (758.000 km²). <a href=\"https://www.althingi.is/lagas/nuna/2003065.html\" title=\"Althingi — Raforkulög (Electricity Act); Treaty on the Functioning of the European Union, Art. 194\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-003</a> bendir á að íslensk lög tryggi þjóðareign á náttúruauðlindum og að 194. grein sáttmálans um starfshætti ESB viðurkenni rétt aðildarríkja til að ráða yfir orkuauðlindum.",
-      "missing_context": "<a href=\"https://www.althingi.is/lagas/nuna/2003065.html\" title=\"Althingi — Raforkulög (Electricity Act); Treaty on the Functioning of the European Union, Art. 194\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-003</a> bendir þó á að ESB-samkeppnisreglur og reglur um ríkisaðstoð geti takmarkað hvernig aðildarríki nýta auðlindir sínar, jafnvel þótt eignarhald sé varið. <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> bætir við að landamærin milli \"EES-tengds\" og \"útilokaðs\" séu ekki alltaf skýr — Ísland innleiðir í reynd hluta af orkuregluverk ESB í gegnum EES-samninginn.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> staðfestir að sameiginleg sjávarútvegsstefna, landbúnaðarstefna, tollastefna og fleiri svið séu undanskilin EES-samningnum — Ísland heldur sjálfstæði í þessum málaflokkum. Hins vegar gengur fullyrðingin of langt með orðunum «fullum yfirráðum» yfir auðlindum. <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EFTA Secretariat — The EEA Agreement; ESA Internal Market Scoreboard; EEA Joint Committee\" target=\"_blank\" rel=\"noopener\">EEA-DATA-010</a> og <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> benda á að mörkin á milli EES-tengdra og undanskilinna sviða séu ekki alltaf skýr — orkureglugerðir, umhverfislöggjöf og ETS-kerfið hafa áhrif á nýtingu auðlinda og eru innleiddar í gegnum EES-samninginn. Ísland innleiðir í reynd meiri ESB-löggjöf en formlegu útilokunin gefur til kynna.",
+      "missing_context": "Orkulöggjöf ESB hefur áhrif á nýtingu auðlinda á Íslandi þrátt fyrir formlega undanskilningu — Ísland tekur þátt í ETS-kerfinu og hefur innleitt þriðju orkupakkann með aðlögun (samkvæmt <a href=\"https://www.efta.int/about-efta/legal-documents/eea-legal-texts/annexes-agreement\" title=\"EFTA Secretariat — EEA Agreement Annex IV (Energy); Althingi EU Assessment Committee\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-001</a> úr fyrri fullyrðingunni). EES/EFTA-ríki hafa engin formleg áhrif á þessa löggjöf. Fullyrðingin um «full yfirráð» er því of afdráttarlaus þegar litið er til þess hvernig EES-samningurinn nær í reynd inn á auðlindanýtingu.",
       "supporting_evidence": [
         {
           "id": "EEA-LEGAL-022",
@@ -327,19 +328,14 @@
           "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
         },
         {
-          "id": "FISH-LEGAL-004",
-          "source_name": "European Commission — EU Fisheries Control System Revamp",
-          "source_url": "https://oceans-and-fisheries.ec.europa.eu/news/eu-fisheries-control-system-gets-major-revamp-2024-01-09_en"
+          "id": "EEA-DATA-010",
+          "source_name": "EFTA Secretariat — The EEA Agreement; ESA Internal Market Scoreboard; EEA Joint Committee",
+          "source_url": "https://www.efta.int/eea/eea-agreement"
         },
         {
-          "id": "FISH-LEGAL-002",
-          "source_name": "Icelandic Act on the Exclusive Economic Zone No. 41/1979",
-          "source_url": "https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf"
-        },
-        {
-          "id": "ENERGY-LEGAL-003",
-          "source_name": "Althingi — Raforkulög (Electricity Act); Treaty on the Functioning of the European Union, Art. 194",
-          "source_url": "https://www.althingi.is/lagas/nuna/2003065.html"
+          "id": "AGRI-DATA-008",
+          "source_name": "EEA Agreement Article 19; Icelandic Ministry for Foreign Affairs — EEA review documentation",
+          "source_url": "https://www.legislation.gov.uk/eut/eea-agreement/article/19"
         }
       ],
       "contradicting_evidence": [],
@@ -385,9 +381,9 @@
     {
       "claim_text": "Ísland hefur notið verndar Bandaríkjanna í rúm 80 ár.",
       "original_quote": "Við höfum notið verndar BNA í rúm 80 ár og við erum með samning við þau og erum á áhrifasvæði þeirra.",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://avalon.law.yale.edu/20th_century/ice001.asp\" title=\"Avalon Project, Yale Law Library — Defense of Iceland: Agreement Between the United States and the Republic of Iceland, May 5, 1951; Government of Iceland — Iceland and the US: Bilateral Relations\" target=\"_blank\" rel=\"noopener\">SOV-HIST-002</a> staðfestir að Bandaríkin og Ísland undirrituðu varnarsamning 5. maí 1951. Frá þeim tíma til dagsins í dag eru rúmlega 74 ár — fullyrðingin um «rúm 80 ár» er heldur ofmetin ef miðað er við 2026, þar sem réttara væri «rúm 75 ár». Ef vísað er til breiðara varnartengsla við Bandaríkin frá seinni heimsstyrjöld (1941–1945) nálgast tíminn 80 ár. <a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"1951 US-Iceland Defence Agreement; 2016 Iceland-US Security Cooperation Agreement; US Department of State bilateral relations factsheet\" target=\"_blank\" rel=\"noopener\">SOV-DATA-008</a> staðfestir samfelld hernaðartengsl, þar á meðal flugstöð Bandaríkjahers á Keflavíkurflugvelli 1951–2006 og öryggissamkomulag frá 2016.",
-      "missing_context": "Varnarsamningurinn er frá 1951 (75 ár frá 2026), ekki 80 ár. Ef miðað er við upphaf bandarískrar hersetningar á Íslandi 1941 eru um 85 ár — tímabilið veltur á hvaða viðmiðunarpunkt er notaður. Bandaríkjaher yfirgaf Keflavík 2006 en tvíhliða varnarsamningurinn er enn í gildi.",
+      "verdict": "partially_supported",
+      "explanation": "Varnarsamningur Íslands og Bandaríkjanna var undirritaður 5. maí 1951 (<a href=\"https://avalon.law.yale.edu/20th_century/ice001.asp\" title=\"Avalon Project, Yale Law Library — Defense of Iceland: Agreement Between the United States and the Republic of Iceland, May 5, 1951; Government of Iceland — Iceland and the US: Bilateral Relations\" target=\"_blank\" rel=\"noopener\">SOV-HIST-002</a>), sem þýðir um 75 ár en ekki «rúm 80 ár». Ísland varð þó stofnaðili NATO 1949 (<a href=\"https://www.visindavefur.is/svar.php?id=65203\" title=\"Vísindavefurinn — Gustav Pétursson (2013, updated 2026)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-031</a>), sem færir tímalínuna nær 77 árum. Heimildir staðfesta langvarandi varnarsamband en talan «rúm 80 ár» er ónákvæm miðað við bæði 1949 og 1951 sem viðmiðunarár. Bandaríkin héldu varnarstöð á Keflavíkurflugvelli til 2006 og samstarfið hefur haldið áfram í gegnum reglubundna dreifingu herskipa (<a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"1951 US-Iceland Defence Agreement; 2016 Iceland-US Security Cooperation Agreement; US Department of State bilateral relations factsheet\" target=\"_blank\" rel=\"noopener\">SOV-DATA-008</a>).",
+      "missing_context": "Varnarsamningurinn er frá 1951 (75 ár) og NATO-aðild frá 1949 (77 ár) — hvorugt nær «rúmum 80 árum» miðað við 2026. Ef átt er við öryggisverndarsamband frá síðari heimsstyrjöldinni (1941 hernám bandamanna) gætu 80+ ár átt við, en engin heimild staðfestir það viðmiðunarár.",
       "supporting_evidence": [
         {
           "id": "SOV-HIST-002",
@@ -400,9 +396,9 @@
           "source_url": "https://www.state.gov/u-s-relations-with-iceland/"
         },
         {
-          "id": "SOV-DATA-009",
-          "source_name": "NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list",
-          "source_url": "https://www.nato.int/en/about-us/official-texts-and-resources/strategic-concepts/nato-2022-strategic-concept"
+          "id": "SOV-DATA-031",
+          "source_name": "Vísindavefurinn — Gustav Pétursson (2013, updated 2026)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=65203"
         }
       ],
       "contradicting_evidence": [],

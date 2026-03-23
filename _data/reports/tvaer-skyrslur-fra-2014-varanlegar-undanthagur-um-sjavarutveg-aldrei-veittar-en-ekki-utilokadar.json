@@ -10,8 +10,8 @@
   "summary": "Greindar 34 fullyrdhingar .",
   "capsule": "Greiningin fær rétt að tvær úttektir voru gerðar eftir hlé á viðræðum árið 2013 — ein af Hagfræðistofnun HÍ og önnur af Alþjóðamálastofnun — og að meginregla sameiginlegrar sjávarútvegsstefnu ESB er jafn aðgangur að fiskimiðum. Athyglisvert er þó að aðildarríki mega samkvæmt reglugerð ESB halda eigin úthlutunarkerfum, þ. m. t. kvótakerfum, innan ramma stefnunnar — þannig gæti aflamarkskerfið að stórum hluta haldist jafnvel án formlegra undanþága. Jafnframt komst Alþjóðamálastofnunarskýrslan að þeirri niðurstöðu að Ísland gæti nýtt sér stöðu sína sem fyrsta fiskveiðiríki til að sækja um aðild sem samningslegar lykilforsendur.",
   "verdict_counts": {
-    "partially_supported": 13,
-    "supported": 15
+    "partially_supported": 14,
+    "supported": 14
   },
   "claim_count": 28,
   "dominant_category": "fisheries",
@@ -681,23 +681,24 @@
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> staðfestir að Hagfræðistofnun komst að þeirri niðurstöðu að varanlegar undanþágur frá kjarna-regluverki ESB væru ólíklegar. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-004</a> staðfestir sérstaklega að ekkert ríki hafi fengið varanlega undanþágu frá CAP. Sama á við um sjávarútveg samkvæmt tiltækum heimildum.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> lýsir niðurstöðu Hagfræðistofnunar þannig að varanlegar undanþágur frá kjarna regluverksins séu «ólíklegar» — ekki að þær hafi ekki fundist. Munurinn skiptir máli: «ólíklegt» er mat á líkindum en «engar» er alger fullyrðing. Auk þess sýnir <a href=\"https://eur-lex.europa.eu/collection/eu-law/treaties.html\" title=\"European Parliament — EU Treaties and Protocols; Accession Treaty texts\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-023</a> dæmi um varanlegar eða hálfvaranlegar undanþágur: 141./142. gr. aðildarsamnings Finnlands um landbúnaðaraðstoð, undanþágur Danmerkur frá Edinburgh-samningnum og bókun Írlands um hlutleysi. Fullyrðingin ofmetur þannig niðurstöðu skýrslunnar og vanmetur fordæmi annarra ríkja.",
       "supporting_evidence": [
         {
           "id": "EEA-DATA-014",
           "source_name": "Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)",
           "source_url": "https://ioes.hi.is/en/institute-economic-studies"
-        },
-        {
-          "id": "AGRI-LEGAL-004",
-          "source_name": "EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy",
-          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "<a href=\"https://eur-lex.europa.eu/collection/eu-law/treaties.html\" title=\"European Parliament — EU Treaties and Protocols; Accession Treaty texts\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-023</a> bendir á að finnsk og sænsk landbúnaðarstuðningur samkvæmt gr. 142 sé í reynd varanleg sérmeðferð, þótt hún sé ekki formlega «undanþága». Niðurstaða skýrsluhöfunda ræðst af því hvernig «varanleg undanþága» er skilgreind.",
-      "confidence": 0.8,
+      "contradicting_evidence": [
+        {
+          "id": "EEA-LEGAL-023",
+          "source_name": "European Parliament — EU Treaties and Protocols; Accession Treaty texts",
+          "source_url": "https://eur-lex.europa.eu/collection/eu-law/treaties.html"
+        }
+      ],
+      "missing_context": "Hagfræðistofnun sagði varanlegar undanþágur «ólíklegar» en ekki útiloknar — verulegur munur á orðalagi. Fordæmi Finnlands (141./142. gr.) sýna að hálfvaranlegar ráðstafanir hafa náðst, þótt þær þurfi reglulega endurnýjun. Skýrslan var unnin á tímabili pólitískrar andstöðu við ESB-aðild (2013–2017) og bæði hliðar hafa vitnað í hana á sinn hátt.",
+      "confidence": 0.78,
       "speakers": [
         {
           "name": "Hagfræðistofnun Háskóla Íslands",
@@ -763,26 +764,36 @@
         "confidence": 0.9
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> staðfestir að samningaviðræður snúast um «skilyrði og tímasetningu» innleiðingar — þ.e. aðlögunartímabil, ekki varanlegar undanþágur. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:21994A0103(01)\" title=\"Croatia Accession Treaty (2012); 2003 Accession Treaty (Poland, Czech Republic et al.)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-014</a> útskýrir muninn á tímabundnum undanþágum (3–12 ár) og varanlegum opt-out. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); OECD Economic Surveys: Iceland 2021\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-019</a> staðfestir að landbúnaður og fiskveiðar krefjast heildaraðlögunar.",
+      "explanation": "Heimildir staðfesta kjarna fullyrðingarinnar. Í aðildarviðræðum ESB eru aðeins veittar tímabundnar undanþágur (aðlögunartímar), ekki varanlegar (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a>, <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-004</a>). Þetta á við um landbúnað og fiskveiðar — engin aðildarríki hefur fengið varanlega undanþágu frá sameiginlegri landbúnaðarstefnu (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-004</a>) og sjávarútvegsstefnan (CFP) er ein af einkavaldssvæðum ESB (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003\" title=\"Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-030</a>). Fullyrðingin notar varfærið orðalag — «í grundvallaratriðum» og «hugsaðar sem aðlögunartími» — sem samræmist vel efni heimildanna.",
       "supporting_evidence": [
         {
-          "id": "EEA-LEGAL-021",
-          "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
+          "id": "EEA-LEGAL-012",
+          "source_name": "European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)",
           "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
         },
         {
-          "id": "EEA-LEGAL-014",
-          "source_name": "Croatia Accession Treaty (2012); 2003 Accession Treaty (Poland, Czech Republic et al.)",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:21994A0103(01)"
+          "id": "AGRI-LEGAL-004",
+          "source_name": "EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
         },
         {
-          "id": "AGRI-DATA-019",
-          "source_name": "European Commission — Opinion on Iceland's application (SEC(2010) 153); OECD Economic Surveys: Iceland 2021",
-          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+          "id": "SOV-LEGAL-030",
+          "source_name": "Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003"
+        },
+        {
+          "id": "FISH-LEGAL-001",
+          "source_name": "EU Regulation 1380/2013 of the European Parliament and of the Council",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380"
+        },
+        {
+          "id": "FISH-LEGAL-005",
+          "source_name": "European Parliament — The Common Fisheries Policy: Origins and Development",
+          "source_url": "https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Sumir fræðimenn telja að langur aðlögunartími geti í reynd virkað eins og undanþága. Pólland fékk 12 ára aðlögunartímabil á kaupum erlendra á landbúnaðarlandi.",
+      "missing_context": "Finnland og Svíþjóð fengu viðbótarstuðning (supplementary aid) við norðlægan landbúnað sem hefur verið viðhaldinn í áratugi — sumir líta á það sem raunverulega undanþágu þótt formlega sé um viðbót að ræða, ekki undanþágu (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-004</a>). Aðlögunartímar geta verið langir (allt að 12 ár), sem getur þýtt raunverulegan mun á meðan þeir vara.",
       "confidence": 0.85,
       "speakers": [
         {
@@ -1246,8 +1257,8 @@
       "attribution_type": "paraphrased",
       "claim_count": 12,
       "verdicts": {
-        "supported": 8,
-        "partially_supported": 4
+        "supported": 7,
+        "partially_supported": 5
       },
       "stance": "neutral",
       "slug": "hagfraedistofnun-haskola-islands",
@@ -1267,7 +1278,7 @@
       },
       "stance": "neutral",
       "slug": "evropusambandid",
-      "mention_count": 48,
+      "mention_count": 49,
       "credibility": 0.73
     },
     {
@@ -1298,8 +1309,8 @@
       },
       "stance": "pro_eu",
       "slug": "thorgerdur-katrin-gunnarsdottir",
-      "mention_count": 36,
-      "credibility": 0.68,
+      "mention_count": 39,
+      "credibility": 0.66,
       "speech_count": 197
     }
   ]

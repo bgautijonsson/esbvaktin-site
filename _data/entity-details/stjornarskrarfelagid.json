@@ -13,7 +13,8 @@
   },
   "althingi_stats": null,
   "scorecard": {
-    "supported": 8,
+    "supported": 9,
+    "partially_supported": 1,
     "misleading": 1
   },
   "claims": [
@@ -98,9 +99,9 @@
     {
       "claim_text": "Alþingi hefur ekki enn virt úrslit þjóðaratkvæðagreiðslunnar 2012 um nýja stjórnarskrá.",
       "original_quote": "„Alþingi hefur ekki enn virt úrslit þessarar þjóðaratkvæðagreiðslu.“",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.opendemocracy.net/en/can-europe-make-it/democracy-on-ice-post-mortem-of-icelandic-constitution/\" title=\"Stjórnarskrárfélagið (Constitutional Society of Iceland); Alþingi parliamentary records; Thorvaldur Gylfason, 'Democracy on Ice' (openDemocracy, 2016)\" target=\"_blank\" rel=\"noopener\">SOV-HIST-001</a> staðfestir að 66,9% kusu með því að nota drög Stjórnlagaráðs sem grundvöll nýrrar stjórnarskrár í ráðgefandi þjóðaratkvæðagreiðslu 2012, en ekkert ákvæði draganna hefur verið lögfest. Ríkisstjórnir á árunum 2013–2024 lögðu fram hluta-frumvörp en engin náðu fram að ganga (<a href=\"https://statice.is/publications/news-archive/elections/referendum-20-october-2012\" title=\"Landskjörstjórn (National Electoral Commission) — Official results of the 20 October 2012 referendum\" target=\"_blank\" rel=\"noopener\">SOV-DATA-005</a>). Alþingi hefur þannig ekki brugðist við úrslitum atkvæðagreiðslunnar, eins og fullyrðingin segir.",
-      "missing_context": "Atkvæðagreiðslan var ráðgefandi og Alþingi bar enga lagaskyldu til að bregðast við úrslitunum. Kosningaþátttaka var 48,9% — lægri en á þingkosningum — sem veikir rökin fyrir lýðræðislegu umboði. Sumir stjórnskipunarfræðingar hafa bent á tæknilega annmarka á drögunum sem réttlæti frekari endurskoðun. <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland), Articles 26, 65, 79; Althingi records on 2012 referendum follow-up\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-026</a> bendir á að fordæmið skapar óvissu um bindandi kraft 2026 þjóðaratkvæðagreiðslunnar.",
+      "verdict": "partially_supported",
+      "explanation": "Kjarninn í fullyrðingunni er staðreyndalega réttur: í ráðgefandi þjóðaratkvæðagreiðslunni 2012 studdu 66,9% tillögur Stjórnlagaráðs sem grundvöll nýrrar stjórnarskrár, en engin ákvæði dröganna hafa verið lögfest (<a href=\"https://www.opendemocracy.net/en/can-europe-make-it/democracy-on-ice-post-mortem-of-icelandic-constitution/\" title=\"Stjórnarskrárfélagið (Constitutional Society of Iceland); Alþingi parliamentary records; Thorvaldur Gylfason, 'Democracy on Ice' (openDemocracy, 2016)\" target=\"_blank\" rel=\"noopener\">SOV-HIST-001</a>, <a href=\"https://statice.is/publications/news-archive/elections/referendum-20-october-2012\" title=\"Landskjörstjórn (National Electoral Commission) — Official results of the 20 October 2012 referendum\" target=\"_blank\" rel=\"noopener\">SOV-DATA-005</a>). Orðalagið «hefur ekki enn virt úrslit» felur hins vegar í sér dóm um skyldu sem er umdeildur. Samkvæmt <a href=\"https://statice.is/publications/news-archive/elections/referendum-20-october-2012\" title=\"Landskjörstjórn (National Electoral Commission) — Official results of the 20 October 2012 referendum\" target=\"_blank\" rel=\"noopener\">SOV-DATA-005</a> og <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland), Articles 26, 65, 79; Althingi records on 2012 referendum follow-up\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-026</a> var atkvæðagreiðslan ráðgefandi og Alþingi bar enga lagalega skyldu til þess að bregðast við. Kosningaþátttaka var aðeins 48,9% sem veikir lýðræðislegt umboðsrök. Fullyrðingin er því rétt um staðreyndir en misleading í framsetningu, sem gerir hana «að hluta studda» frekar en fullstaðfesta.",
+      "missing_context": "Þjóðaratkvæðagreiðslan var ráðgefandi (ráðgefandi þjóðaratkvæðagreiðsla), ekki bindandi, og íslenska stjórnarskráin kveður ekki á um bindandi þjóðaratkvæðagreiðslur. Þátttaka var 48,9%, mun lægri en í alþingiskosningum (80–85%). Ýmsir stjórnskipunarsérfræðingar hafa bent á tæknilega galla í drögunum. Hvort «virða úrslit» ráðgefandi kosninga jafngildi lagaskyldu eða pólitískri skyldu er álitamál sem fræðimenn eru ósammála um.",
       "supporting_evidence": [
         {
           "id": "SOV-HIST-001",
@@ -111,6 +112,11 @@
           "id": "SOV-DATA-005",
           "source_name": "Landskjörstjórn (National Electoral Commission) — Official results of the 20 October 2012 referendum",
           "source_url": "https://statice.is/publications/news-archive/elections/referendum-20-october-2012"
+        },
+        {
+          "id": "SOV-DATA-022",
+          "source_name": "Icelandic Constitutional Law scholars; 2012 referendum precedent; Danish referendum practice",
+          "source_url": null
         },
         {
           "id": "SOV-LEGAL-026",
@@ -168,6 +174,53 @@
           "id": "ENERGY-LEGAL-003",
           "source_name": "Althingi — Raforkulög (Electricity Act); Treaty on the Functioning of the European Union, Art. 194",
           "source_url": "https://www.althingi.is/lagas/nuna/2003065.html"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "sovereignty",
+      "attribution": "asserted",
+      "article_slug": "treystu-thjodinni-opid-bref-til-forsaetisradherra-islands",
+      "article_title": "Treystu þjóðinni — Opið bréf til forsætisráðherra Íslands",
+      "article_source": "Vísir",
+      "article_date": "2026-03-09"
+    },
+    {
+      "claim_text": "Tillögurnar að nýrri stjórnarskrá inniheldu ákvæði um aukið persónukjör í kosningum.",
+      "original_quote": "„Þar eru fleiri óskamál landsmanna svo sem um aukið persónukjör í kosningum“",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://stjornlagarad.is/english/\" title=\"Stjórnlagaráð — Frumvarp til stjórnarskipunarlaga (2011); Stjórnlaganefnd\" target=\"_blank\" rel=\"noopener\">SOV-DATA-010</a> staðfestir beint að drög Stjórnlagaráðs innihéldu ákvæði um aukið persónukjör í alþingiskosningum, þar sem kjósendur gætu haft áhrif á hvaða frambjóðendur af listum flokkanna hlytu þingsæti. Þetta var eitt af sex lykilákvæðum frum­varpsins sem talið er upp í heimildinni. Þó ber að nefna að ákvæðið var ekki eins ítarlegt og sumir hafa lýst — drögin mörkuðu meginregluna en skildu útfærsluna eftir almennri löggjöf.",
+      "missing_context": "Drög Stjórnlagaráðs eru opinber og aðgengileg, en staðreyndagrunnurinn inniheldur ekki nægilegar heimildir um efni hverrar greinar til að meta þessa fullyrðingu.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-010",
+          "source_name": "Stjórnlagaráð — Frumvarp til stjórnarskipunarlaga (2011); Stjórnlaganefnd",
+          "source_url": "https://stjornlagarad.is/english/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "sovereignty",
+      "attribution": "asserted",
+      "article_slug": "treystu-thjodinni-opid-bref-til-forsaetisradherra-islands",
+      "article_title": "Treystu þjóðinni — Opið bréf til forsætisráðherra Íslands",
+      "article_source": "Vísir",
+      "article_date": "2026-03-09"
+    },
+    {
+      "claim_text": "Tillögurnar að nýrri stjórnarskrá inniheldu ákvæði um jafnt vægi atkvæða.",
+      "original_quote": "„Þar eru fleiri óskamál landsmanna svo sem um aukið persónukjör í kosningum og jafnt vægi atkvæða.“",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://stjornlagarad.is/english/\" title=\"Stjórnlagaráð — Frumvarp til stjórnarskipunarlaga (2011); Stjórnlaganefnd\" target=\"_blank\" rel=\"noopener\">SOV-DATA-010</a> staðfestir beint að drög Stjórnlagaráðs innihéldu ákvæði um jafnt vægi atkvæða — meginregluna 'einn maður, eitt atkvæði' (jafnt vægi atkvæða) — til þess að jafna vægi atkvæða milli kjördæma. Þetta átti að bregðast við langvarandi ójöfnuði þar sem atkvæði á landsbyggðinni vógu verulega meira en atkvæði í þéttbýli. <a href=\"https://statice.is/publications/news-archive/elections/referendum-20-october-2012\" title=\"Landskjörstjórn (National Electoral Commission) — Official results of the 20 October 2012 referendum\" target=\"_blank\" rel=\"noopener\">SOV-DATA-005</a> staðfestir einnig að tillögurnar voru samþykktar í ráðgefandi þjóðaratkvæðagreiðslu 2012 en hafa aldrei verið lögfestar.",
+      "missing_context": "Jafnt vægi atkvæða var eitt af þeim efnum sem fjallað var um í stjórnarskrárdrogög, en staðreyndagrunnurinn hefur ekki nægilegar heimildir til að meta þetta.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-010",
+          "source_name": "Stjórnlagaráð — Frumvarp til stjórnarskipunarlaga (2011); Stjórnlaganefnd",
+          "source_url": "https://stjornlagarad.is/english/"
+        },
+        {
+          "id": "SOV-DATA-005",
+          "source_name": "Landskjörstjórn (National Electoral Commission) — Official results of the 20 October 2012 referendum",
+          "source_url": "https://statice.is/publications/news-archive/elections/referendum-20-october-2012"
         }
       ],
       "contradicting_evidence": [],
@@ -259,7 +312,7 @@
       "title": "Treystu þjóðinni — Opið bréf til forsætisráðherra Íslands",
       "source": "Vísir",
       "date": "2026-03-09",
-      "claim_count": 9,
+      "claim_count": 11,
       "attribution_types": [
         "asserted"
       ]

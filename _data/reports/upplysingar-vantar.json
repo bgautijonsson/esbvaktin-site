@@ -10,8 +10,8 @@
   "summary": "Greindar 12 fullyrðingar .",
   "capsule": "Þingsályktunartillagan um þjóðaratkvæðagreiðslu er til staðar og samningsmarkmið áttu að vera lögð fyrir Alþingi í sérstakri skýrslu eftir víðtækt samráð — þetta kemur skýrt fram í greinargerðinni. Athyglisvert er þó að þjóðaratkvæðið sem rætt er um er ráðgefandi en ekki bindandi, sem þýðir að Alþingi er ekki lagalega bundið af niðurstöðunni og eðli þess «umboðs» sem kjósendur eru beðnir um að veita er því eitthvað sem vert er að kanna nánar. Jafnframt er áhugavert að bæði Svíþjóð og Finnland fengu landbúnaðarundanþágur við aðildarviðræður sínar og Danmörk og Malta fengu sérstakt fyrirkomulag vegna fasteignakaupa — þetta eru fordæmi sem koma við sögu þegar rætt er um hvað er raunhæft að sækja um í samningum.",
   "verdict_counts": {
-    "partially_supported": 6,
-    "supported": 3,
+    "partially_supported": 7,
+    "supported": 2,
     "unverifiable": 1
   },
   "claim_count": 10,
@@ -198,28 +198,23 @@
         "claim_type": "opinion",
         "confidence": 0.9
       },
-      "verdict": "supported",
-      "explanation": "Heimildir styðja þessa fullyrðingu skýrt. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T162602.html\" title=\"Alþingi — Kristrún Frostadóttir, forsætisráðherra (andsvar, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">PARTY-PARL-001</a> staðfestir að forsætisráðherra neitaði að tilgreina nákvæm samningsmarkmið á Alþingi og sagðist ekki ætla að «stilla upp nákvæmu orðalagi í þessari pontu». <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T175023.html\" title=\"Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-003</a> sýnir að Guðrún Hafsteinsdóttir gagnrýndi einmitt þetta og sagði ríkisstjórnina þurfa að upplýsa þjóðina um markmið sín áður en hún biður um umboð.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir sýna greinilegan mun á stuðningi við áframhald viðræðna (um 52%) og stuðningi við ESB-aðild (um 42%) samkvæmt <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Þjóðarpúls, February–March 2026; Capacent Gallup historical EU polling data (2009–2013)\" target=\"_blank\" rel=\"noopener\">POLL-DATA-021</a>, sem bendir til þess að hluti kjósenda vilji sjá samninginn áður en þeir skuldbinda sig. Þetta styður óbeint við fullyrðinguna um að kjósendur viti ekki nákvæmlega hver samningsmarkmiðin verða. Engin heimild fjallar þó beint um þekkingu kjósenda á samningsmarkmiðum — gögnin varpa ljósi á viðhorf og atkvæðagreiðsluhegðun, ekki á upplýsingastöðu kjósenda.",
       "supporting_evidence": [
         {
-          "id": "PARTY-PARL-001",
-          "source_name": "Alþingi — Kristrún Frostadóttir, forsætisráðherra (andsvar, 157. löggjafarþing)",
-          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T162602.html"
+          "id": "POLL-DATA-021",
+          "source_name": "Gallup Þjóðarpúls, February–March 2026; Capacent Gallup historical EU polling data (2009–2013)",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
         },
         {
-          "id": "SOV-PARL-003",
-          "source_name": "Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)",
-          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T175023.html"
-        },
-        {
-          "id": "SOV-PARL-005",
-          "source_name": "Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)",
-          "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
+          "id": "POLL-DATA-018",
+          "source_name": "Gallup Iceland / Þjóðarpúls",
+          "source_url": "https://www.gallup.is/frettir/nyr-thjodarpuls/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Þó ber að hafa í huga að ríkisstjórnin hefur tilgreint almenn «rauð flögg» varðandi orku og sjávarútveg (<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T162602.html\" title=\"Alþingi — Kristrún Frostadóttir, forsætisráðherra (andsvar, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">PARTY-PARL-001</a>), þótt nákvæm samningsmarkmið hafi ekki verið kynnt. Aðgreiningin milli almennra viðmiða og nákvæmra markmiða skiptir máli í þessu samhengi.",
-      "confidence": 0.85,
+      "missing_context": "Heimildir fjalla um skoðanakannanir og viðhorf til þjóðaratkvæðagreiðslunnar, ekki beint um hvað kjósendur vita eða vita ekki um samningsmarkmið. Bilið milli stuðnings við viðræður og stuðnings við aðild er vísbending, en ekki sönnun þess að kjósendur viti ekki hvert stefni í samningaviðræðum.",
+      "confidence": 0.55,
       "speakers": [
         {
           "name": "Bændablaðið",

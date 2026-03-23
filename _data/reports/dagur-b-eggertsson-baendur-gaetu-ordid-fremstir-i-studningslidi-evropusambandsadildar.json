@@ -10,8 +10,8 @@
   "summary": "Greindar 16 fullyrðingar .",
   "capsule": "Króatíudæmið sem greinin lýsir er vel skjalfest: landið tók upp evruna árið 2023 og ferðaþjónustan — um fimmtungur hagkerfisins — nýtur hennar sérstaklega vel. Athyglisvert er hins vegar að Króatía þurfti að uppfylla Maastricht-skilyrðin um verðlag og vexti og vera þátttakandi í ERM II-gengiskerfi í að minnsta kosti tvö ár áður en evran var tekin upp, skref sem Ísland hefur ekki hafið. Einnig er vert að vita að ESB-greiðslur til bænda í nýjum aðildarríkjum byrja á fjórðungi af því sem eldri aðildarríki fá og ná ekki fullu þrepi fyrr en eftir um áratug — ein af ástæðunum fyrir því að landbúnaðarkjör við aðild eru umdeilt efni meðal bænda.",
   "verdict_counts": {
-    "supported": 3,
-    "partially_supported": 10,
+    "supported": 2,
+    "partially_supported": 11,
     "misleading": 1
   },
   "claim_count": 14,
@@ -148,17 +148,17 @@
         "confidence": 0.9
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a> og <a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a> staðfesta að Króatía tók upp evruna 1. janúar 2023. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014\" title=\"Treaty on the Functioning of the European Union, Article 140\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-004</a> lýsir ERM II kerfinu sem skilyrði — ríki verða að vera í kerfinu í a.m.k. tvö ár áður en evran er tekin upp. <a href=\"https://data.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a> bætir við nýjum gögnum um vaxtasamdrátt í Króatíu eftir evrutöku. Króatía fékk aðgang að lausafjárfyrirgreiðslum Evrópska seðlabankans í gegnum ERM II áður en evran var formlega tekin upp, sem styður fullyrðinguna um «skjól» seðlabankans. Heimildir eru samhljóða um grundvallaratriðið.",
+      "explanation": "Króatía gekk í ERM II gengiskerfið áður en evran var tekin upp 1. janúar 2023. Heimildir staðfesta að króatíska kúnan var nátengd evrunni í tvo áratugi (<a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a>, <a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a>) og að Maastricht-viðmiðin krefjast a.m.k. tveggja ára gengistöðugleika í ERM II (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014\" title=\"Treaty on the Functioning of the European Union, Article 140\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-004</a>, <a href=\"https://www.visindavefur.is/svar.php?id=87971\" title=\"Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (March 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-011</a>). Innganga Króatíu í ERM II veitti aðgang að lausafjáraðstöðu ECB og fól í sér formleg tengsl við evrópska seðlabankakerfið — sem samrýmist fullyrðingunni um «skjól» seðlabankans.",
       "supporting_evidence": [
-        {
-          "id": "PREC-DATA-012",
-          "source_name": "Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review",
-          "source_url": "https://www.bis.org/review/r240131a.htm"
-        },
         {
           "id": "PREC-DATA-019",
           "source_name": "Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report",
           "source_url": "https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023"
+        },
+        {
+          "id": "PREC-DATA-012",
+          "source_name": "Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review",
+          "source_url": "https://www.bis.org/review/r240131a.htm"
         },
         {
           "id": "SOV-LEGAL-004",
@@ -166,14 +166,14 @@
           "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014"
         },
         {
-          "id": "PREC-DATA-020",
-          "source_name": "ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS",
-          "source_url": "https://data.ecb.europa.eu/"
+          "id": "CURR-DATA-011",
+          "source_name": "Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (March 2026)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=87971"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Króatía var í sérstöðu þar sem kúnan var nánast bundin evrunni í tvo áratugi fyrir evrutöku, sem gerði umskiptin auðveldari. Ísland, með frjálst flot krónunnar og hærri verðbólgu, myndi standa frammi fyrir meiri aðlögunarþraut í ERM II. Einnig er hugtakið «skjól» eitthvað ónákvæmt — ERM II veitir gengissvið en ekki ótakmarkað stuðningsnet.",
-      "confidence": 0.75,
+      "missing_context": "Króatía hafði þegar tengt kúnuna fast við evruna í áratugi fyrir formlega ERM II-aðild, svo breytingin var minni en hún væri fyrir Ísland þar sem krónan er frjálst fljótandi (<a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a>). Orðið «skjól» er túlkun — ERM II er gengiskerfi til undirbúnings evruupptöku, ekki neyðarúrræði eða verndarkerfi í hefðbundnum skilningi.",
+      "confidence": 0.78,
       "speakers": [
         {
           "name": "Dagur B. Eggertsson",
@@ -195,23 +195,28 @@
         "claim_type": "statistic",
         "confidence": 0.9
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a> og <a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a> staðfesta báðar að fjármálastöðugleiki jókst í Króatíu eftir upptöku evrunnar. Vextir á nýjum húsnæðislánum lækkuðu úr um 3,5% árið 2022 í 3,0% árið 2024 og urðu sambærilegir við meðaltal evrusvæðisins samkvæmt seðlabankastjóra Boris Vujčić. Gjaldmiðlaáhætta hvarf, viðskiptakostnaður minnkaði (áætlaður 0,3% af VLF árlega), og aðgangur að lausafjáraðstöðu Seðlabanka Evrópu opnaðist. Vaxtabilið á milli Króatíu og kjarnalanda evrusvæðisins minnkaði verulega — þetta styður fullyrðinguna um aukinn stöðugleika.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta ýmis jákvæð áhrif evruupptöku Króatíu á fjármálamarkað: lántökukostnaður lækkaði verulega (<a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a>), gjaldeyrisáhætta var útrýmd (<a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a>), og aðgangur að lausafjáraðstöðu ECB batnaði. Seðlabankastjóri Króatíu staðfesti þessa þróun (<a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a>). Hins vegar er fullyrðingin um «stöðugleika á banka- og fjármálamarkaði» víðtæk — heimildir benda jafnframt á hækkandi húsnæðisverð (14,8% á ári), vaxandi íbúðalán og þörf á hertum þjóðhagsvarúðarreglum (<a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a>, <a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a>). Reynslan er enn of stutt til að meta langtímaáhrif.",
       "supporting_evidence": [
+        {
+          "id": "PREC-DATA-019",
+          "source_name": "Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report",
+          "source_url": "https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023"
+        },
         {
           "id": "PREC-DATA-012",
           "source_name": "Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review",
           "source_url": "https://www.bis.org/review/r240131a.htm"
         },
         {
-          "id": "PREC-DATA-019",
-          "source_name": "Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report",
-          "source_url": "https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023"
+          "id": "PREC-DATA-020",
+          "source_name": "ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS",
+          "source_url": "https://data.ecb.europa.eu/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Króatíska bankakerfið var þegar evru-tengt fyrir formlega upptöku og kúnan var stýrð gagnvart evrunni, sem þýðir að umskiptin voru mýkri en þau yrðu fyrir Ísland. Húsnæðisverð hélt áfram að hækka og útistandandi húsnæðislán náðu methæð, sem bendir til þess að lægri vextir geti ýtt undir útlánavöxt. <a href=\"https://www.ecb.europa.eu/press/financial-stability-publications/fsr/html/index.en.html\" title=\"ECB Financial Stability Review; Ahearne, A. et al. (2005). 'House Prices and Monetary Policy: A Cross-Country Study.' BIS; Lane, P. (2012). 'The European Sovereign Debt Crisis.' Journal of Economic Perspectives\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-007</a> sýnir að evru-upptaka hefur í öðrum löndum (Írlandi, Spáni) leitt til útlánabólu.",
-      "confidence": 0.82,
+      "missing_context": "Húsnæðisverð hækkaði hratt eftir evruupptöku og útistandandi íbúðalán náðu methæðum (<a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a>). Króatíska seðlabankinn þurfti að herða þjóðhagsvarúðarreglur (<a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a>), sem bendir til nýrrar áhættu á fjármálamarkaði fremur en einfaldlegs stöðugleika. Aðeins tvö ár eru liðin frá evruupptöku og langtímaáhrif eru óþekkt. Króatíska bankakerfið var þegar mjög «evruað» (<a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a>), sem gerir reynsluna ekki beint samanburðarhæfa við Ísland.",
+      "confidence": 0.72,
       "speakers": [
         {
           "name": "Dagur B. Eggertsson",
@@ -610,8 +615,8 @@
       "attribution_type": "quoted",
       "claim_count": 14,
       "verdicts": {
-        "supported": 3,
-        "partially_supported": 10,
+        "supported": 2,
+        "partially_supported": 11,
         "misleading": 1
       },
       "stance": "pro_eu",

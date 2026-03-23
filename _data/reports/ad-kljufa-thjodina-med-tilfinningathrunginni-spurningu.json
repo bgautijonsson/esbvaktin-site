@@ -12,12 +12,14 @@
   "verdict_counts": {
     "supported": 8,
     "misleading": 1,
-    "partially_supported": 1
+    "partially_supported": 2,
+    "unsupported": 1
   },
-  "claim_count": 10,
+  "claim_count": 12,
   "dominant_category": "party_positions",
   "categories": [
     "currency",
+    "energy",
     "housing",
     "party_positions",
     "precedents"
@@ -299,6 +301,39 @@
     },
     {
       "claim": {
+        "original_quote": "Búið er að höggva á raforkuúnútinn",
+        "claim_text": "Búið er að höggva á raforkuúnútinn.",
+        "category": "energy",
+        "claim_type": "opinion",
+        "confidence": 0.2
+      },
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://orkustofnun.is/raforkueftirlit/raforkuspa\" title=\"Orkustofnun — Orkuspá og raforkuáætlun\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-007</a> staðfestir að á árunum 2022–2026 jókst umræða um orkuskort eftir áratuga orkuafgangs, og að Landsvirkjun tilkynnti 2024 að hún gæti ekki tekið við nýjum stórum viðskiptavinum. Orkustofnun varaði við í orkuspá sinni. Hugtakið \"raforkuúnútur\" var talið vera á undanhaldi. Fullyrðingin einfaldar þó stöðuna — réttara er að segja að framboð og eftirspurn séu nú nær jafnvægi en að úrinn hafi verið \"höggvinn á\" með endanlegum hætti, enda eru enn miklir virkjunarmöguleikar á Íslandi.",
+      "supporting_evidence": [
+        {
+          "id": "ENERGY-DATA-007",
+          "source_name": "Orkustofnun — Orkuspá og raforkuáætlun",
+          "source_url": "https://orkustofnun.is/raforkueftirlit/raforkuspa"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Ísland er enn með nánast 100% endurnýjanlega raforku og umtalsverða virkjunarmöguleika. Ný virkjun tekur 5–10 ár frá áformun til framleiðslu. Gagnamiðstöðvar og stóriðja hafa aukið eftirspurn umtalsvert. Orkuskorturinn er afstæður, ekki algildur.",
+      "confidence": 0.8,
+      "speakers": [
+        {
+          "name": "Kristrún Frostadóttir",
+          "type": "individual",
+          "role": "forsætisráðherra",
+          "party": "Samfylkingin",
+          "stance": "pro_eu",
+          "attribution": "quoted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
         "original_quote": "búið að leggja fram húsnæðispakka",
         "claim_text": "Ríkisstjórnin hefur lagt fram húsnæðispakka.",
         "category": "housing",
@@ -423,6 +458,39 @@
     },
     {
       "claim": {
+        "original_quote": "Guðrún Hafsteinsdóttir, formaður Sjálfstæðisflokksins",
+        "claim_text": "Guðrún Hafsteinsdóttir er formaður Sjálfstæðisflokksins.",
+        "category": "party_positions",
+        "claim_type": "statistic",
+        "confidence": 0.4
+      },
+      "verdict": "unsupported",
+      "explanation": "<a href=\"https://www.althingi.is/thingmenn/thingflokkar/sjalfstaedisflokkur/\" title=\"Althingi — Session 157 member registry\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-006</a> staðfestir að Guðrún Hafsteinsdóttir sé þingmaður Sjálfstæðisflokksins fyrir Suðurkjördæmi, en nefnir hana ekki sem formann flokksins. Engin heimild í staðreyndagrunninum staðfestir formannsembætti hennar. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T175023.html\" title=\"Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-003</a> sýnir hana tala fyrir hönd Sjálfstæðisflokksins á þingi, sem bendir til áberandi hlutverks, en \"tala fyrir hönd flokks\" þýðir ekki endilega formennsku.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [
+        {
+          "id": "POLITICAL-DATA-006",
+          "source_name": "Althingi — Session 157 member registry",
+          "source_url": "https://www.althingi.is/thingmenn/thingflokkar/sjalfstaedisflokkur/"
+        }
+      ],
+      "missing_context": "Heimildir tilgreina ekki formann Sjálfstæðisflokksins beint. Hafa ber í huga að <a href=\"https://www.althingi.is/thingmenn/althingismannatal/leit-i-althingismannatali/\" title=\"Althingi — Member directory; Government of Iceland cabinet listing\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-012</a> nefnir Þórdísi Kolbrúnu Reykfjörð Gylfadóttur sem leiðtoga Viðreisnar, ekki Sjálfstæðisflokksins — en enginn annar er nefndur sem formaður Sjálfstæðisflokksins í tiltækum heimildum.",
+      "confidence": 0.7,
+      "speakers": [
+        {
+          "name": "Guðrún Hafsteinsdóttir",
+          "type": "individual",
+          "role": "formaður Sjálfstæðisflokksins",
+          "party": "Sjálfstæðisflokkur",
+          "stance": "anti_eu",
+          "attribution": "mentioned",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
         "original_quote": "Guðrún Hafsteinsdóttir, formaður Sjálfstæðisflokksins, opnaði umræðu um aðildarviðræður við Evrópusambandið með fyrirspurn til Kristrúnar Frostadóttur forsrætisðaherra.",
         "claim_text": "Sjálfstæðisflokkurinn er á móti ESB-aðildarviðræðum.",
         "category": "party_positions",
@@ -497,10 +565,11 @@
       "party": "Samfylkingin",
       "role_in_article": "speaker",
       "attribution_type": "quoted",
-      "claim_count": 7,
+      "claim_count": 8,
       "verdicts": {
         "supported": 6,
-        "misleading": 1
+        "misleading": 1,
+        "partially_supported": 1
       },
       "stance": "pro_eu",
       "slug": "kristrun-frostadottir",
@@ -520,8 +589,8 @@
       },
       "stance": "anti_eu",
       "slug": "gudrun-hafsteinsdottir",
-      "mention_count": 4,
-      "credibility": 0.59,
+      "mention_count": 5,
+      "credibility": 0.6,
       "speech_count": 41
     }
   ]

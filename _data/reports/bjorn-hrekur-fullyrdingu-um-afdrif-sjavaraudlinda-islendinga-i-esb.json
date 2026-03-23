@@ -87,8 +87,18 @@
         "confidence": 0.85
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> staðfestir að ESB úthluti kvótum til aðildarríkja en láti eftir þeim hvernig þau skipta innan lands. Reglugerð 1380/2013 skilgreinir heildaraflamörk og úthlutun milli ríkja, en heimilar aðildarríkjum að velja eigin kerfi til úthlutningar innanlands — s.s. að viðhalda framseljanlegum kvótakerfum. Þó ber að hafa í huga að heildarúthlutun til ríkisins ráðst af hlutfallslegum stöðugleika, sem takmarkast við aðildarskilmála.",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380\" title=\"Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-030</a> staðfestir að samkvæmt 17. gr. reglugerðar ESB 1380/2013 heldur hvert aðildarríki fullum yfirráðum yfir því hvernig það úthlutar kvóta sínum innanlands, að uppfylltum gagnsæiskröfum. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380\" title=\"EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024\" target=\"_blank\" rel=\"noopener\">FISH-DATA-032</a> styður þetta enn frekar með tilvísun í 16. gr., 6. mgr., sömu reglugerðar — aðildarríki ákveða sjálf úthlutun veiðiheimilda meðal eigin skipa. Nokkur ESB-ríki nota aflamarkskerfi svipuð íslensku kvótakerfinu, þar á meðal Danmörk og Holland.",
       "supporting_evidence": [
+        {
+          "id": "FISH-DATA-030",
+          "source_name": "Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380"
+        },
+        {
+          "id": "FISH-DATA-032",
+          "source_name": "EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380"
+        },
         {
           "id": "FISH-LEGAL-001",
           "source_name": "EU Regulation 1380/2013 of the European Parliament and of the Council",
@@ -96,8 +106,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Innanlandsskipting veiðiheimilda er í valdi aðildarríkjanna, en heildarkvótinn sem skiptist ákvarðast á ESB-vísu. Ísland getur ekki haldið óbreyttu kvótakerfi ef heildaraflamark er ákveðið af Framkvæmdastjórn ESB. Að auki má nefna að POL-DATA-005 bendir á að íslenska ITQ-kerfið hafi verið talið ósamræmanlegt regluverki sameiginlegrar sjávarútvegsstefnu án verulegrar aðlögunar.",
-      "confidence": 0.75,
+      "missing_context": "Þótt innri úthlutun sé í höndum aðildarríkja setur ESB heildaraflamark (TAC) og skiptir því milli landa samkvæmt hlutfallslegu stöðugleikareglunni. Aðildarríki ráða ekki yfir heildaraflamarki heldur aðeins dreifingu eigin hlutdeildar. Jafnframt gildir regla um jafnan aðgang þar sem skip frá öðrum ESB-ríkjum mega veiða utan 12 sjómílna — veruleg takmörkun á fullveldi yfir fiskveiðilögsögu.",
+      "confidence": 0.9,
       "speakers": [
         {
           "name": "Bjorn Levi Gunnarsson",
@@ -628,7 +638,7 @@
         "confidence": 0.65
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://statice.is/statistics/economy/external-trade/\" title=\"Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður\" target=\"_blank\" rel=\"noopener\">FISH-DATA-027</a> staðfestir beint að íslensk sjávarútvegsfyrirtæki geri upp í erlendum gjaldmiðlum, einkum evrum fyrir evrópska markaðinn. Meirihluti útflutnings sjávarafurða fer til ESB-landa (60–65%) þar sem uppgjör í evrum er algengast. <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__utanrikisverslun/\" title=\"Hagstofa Íslands — External trade statistics\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-001</a> staðfestir að ESB sé stærsti viðskiptaaðili Íslands. Fullyrðingin \"sum íslensk útgerðarfyrirtæki gera upp í evrum\" er þar með rétt — orðalagið \"sum\" er varfærið og nákvæmt.",
+      "explanation": "<a href=\"https://statice.is/statistics/economy/external-trade/\" title=\"Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður\" target=\"_blank\" rel=\"noopener\">FISH-DATA-027</a> staðfestir beint að íslensk sjávarútvegsfyrirtæki geri upp í erlendum gjaldmiðlum, einkum evrum fyrir sölu til Evrópu. Um 60–65% af sjávarafurðaútflutningi fer til ESB-landa og uppgjör í evrum er algengast á þeim markaði. Fullyrðingin segir «sum» fyrirtæki, sem er hóflegt orðalag sem heimildin styður vel — ekki öll fyrirtæki gera upp í evrum, en þau sem selja til Evrópu gera það.",
       "supporting_evidence": [
         {
           "id": "FISH-DATA-027",
@@ -639,16 +649,11 @@
           "id": "TRADE-DATA-001",
           "source_name": "Hagstofa Íslands — External trade statistics",
           "source_url": "https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__utanrikisverslun/"
-        },
-        {
-          "id": "FISH-DATA-024",
-          "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
-          "source_url": "https://island.is/s/fiskistofa"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Uppgjör fer ekki eingöngu fram í evrum — hluti viðskipta er í Bandaríkjadölum (Asía, Ameríka) og innlent uppgjör á fiskmarkaði er í krónum. Heimildin tekur þetta sérstaklega fram sem mikilvæga nýansun.",
-      "confidence": 0.8,
+      "missing_context": "Samkvæmt <a href=\"https://statice.is/statistics/economy/external-trade/\" title=\"Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður\" target=\"_blank\" rel=\"noopener\">FISH-DATA-027</a> er uppgjör í Bandaríkjadölum einnig algengt fyrir sölu til Asíu og Ameríku, og innlent uppgjör (t.d. á fiskmarkaði) er í krónum. Fullyrðingin er rétt en gefur ekki heildarmyndina af gjaldmiðlanotkun útgerðarinnar.",
+      "confidence": 0.85,
       "speakers": [
         {
           "name": "Bjorn Levi Gunnarsson",

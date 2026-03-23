@@ -10,8 +10,8 @@
   "summary": "Greindar 45 fullyrðingar .",
   "capsule": "Greiningarþátturinn fær nokkrar lykilstaðreyndir réttar: aðildarumsóknin frá 2009 er enn formlega í gildi og Ísland hefur í þrjátíu ár verið hluti af EES-samningnum, sem nær yfir stóran hluta af innri markaðsreglum ESB. Áhugavert í þessu samhengi er að EES-samningurinn nær ekki yfir sjávarútveg — eitt af stærstu hagsmunamálum þjóðarinnar — og þar myndi aðildarsamningurinn þurfa að semja um sérstök kjör. Reynsla Írlands er gjarnan tekin til samanburðar í þessari umræðu: landið var meðal fátækustu ríkja Evrópu við inngöngu sína 1973 og er í dag meðal þeirra ríkustu miðað við þjóðarframleiðslu á mann.",
   "verdict_counts": {
-    "supported": 24,
-    "partially_supported": 9,
+    "supported": 18,
+    "partially_supported": 15,
     "unverifiable": 1,
     "misleading": 1
   },
@@ -191,17 +191,27 @@
         "confidence": 0.9
       },
       "verdict": "supported",
-      "explanation": "Heimildir vísa til þess að Írland hafi gengið í ESB árið 1973 (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:22013A0302(01)\" title=\"Treaty of Lisbon — Protocol on the concerns of the Irish people; Protocol 21 on UK and Ireland (JHA opt-in)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-011</a>). Þar segir að reglugerðir ESB hafi aukist verulega frá \"Ireland's accession in 1973\", sem staðfestir ártöluna.",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:22013A0302(01)\" title=\"Treaty of Lisbon — Protocol on the concerns of the Irish people; Protocol 21 on UK and Ireland (JHA opt-in)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-011</a> staðfestir beint að Írland hafi gengið í ESB (þá Efnahagsbandalag Evrópu) árið 1973. Fleiri heimildir vísa til þessa sem viðurkenndrar staðreyndar — til dæmis nefnir <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1\" title=\"Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-006</a> opt-out fyrirkomulag Írlands sem aðildarríkis og <a href=\"https://eur-lex.europa.eu/collection/eu-law/treaties.html\" title=\"European Parliament — EU Treaties and Protocols; Accession Treaty texts\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-023</a> staðfestir Íslandsaðild að bandalagsins frá 1973. Þetta er einföld söguleg staðreynd sem heimildir styðja án fyrirvara.",
       "supporting_evidence": [
         {
           "id": "SOV-LEGAL-011",
           "source_name": "Treaty of Lisbon — Protocol on the concerns of the Irish people; Protocol 21 on UK and Ireland (JHA opt-in)",
           "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:22013A0302(01)"
+        },
+        {
+          "id": "SOV-LEGAL-006",
+          "source_name": "Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1"
+        },
+        {
+          "id": "EEA-LEGAL-023",
+          "source_name": "European Parliament — EU Treaties and Protocols; Accession Treaty texts",
+          "source_url": "https://eur-lex.europa.eu/collection/eu-law/treaties.html"
         }
       ],
       "contradicting_evidence": [],
       "missing_context": null,
-      "confidence": 0.95,
+      "confidence": 0.98,
       "speakers": [
         {
           "name": "Magnús Árni Skjöld Magnússon",
@@ -223,8 +233,8 @@
         "claim_type": "comparison",
         "confidence": 0.9
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://cohesiondata.ec.europa.eu/countries/IE\" title=\"Eurostat; European Commission — Cohesion Policy data for Ireland\" target=\"_blank\" rel=\"noopener\">PREC-DATA-016</a> staðfestir báða hluta fullyrðingarinnar. Þegar Írland gekk í Efnahagsbandalag Evrópu árið 1973 var landsframleiðsla á mann um 60% af meðaltali bandalagsins — eitt fátækasta aðildarríkið. Árið 2024 var landsframleiðsla Írlands á mann um 220% af meðaltali ESB-27 samkvæmt Eurostat, sú hæsta innan sambandsins. Fullyrðingin er þar með staðfest að meginstefnu.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://cohesiondata.ec.europa.eu/countries/IE\" title=\"Eurostat; European Commission — Cohesion Policy data for Ireland\" target=\"_blank\" rel=\"noopener\">PREC-DATA-016</a> staðfestir að landsframleiðsla á mann á Írlandi var um 60% af meðaltali EBE þegar landið gekk í bandið 1973 — þannig var Írland meðal fátækustu aðildarríkjanna. Sama heimild sýnir að landsframleiðsla á mann (í PPS) var um 220% af meðaltali ESB árið 2024, sú hæsta í sambandinu. Hins vegar kemur fram í <a href=\"https://cohesiondata.ec.europa.eu/countries/IE\" title=\"Eurostat; European Commission — Cohesion Policy data for Ireland\" target=\"_blank\" rel=\"noopener\">PREC-DATA-016</a> að þessar tölur eru brenglandi vegna hagnaðarfærslu fjölþjóðlegra fyrirtækja; leiðrétt þjóðartekjumæling (GNI*) er nær 140% af ESB-meðaltali. Fullyrðingin nefnir ekki þennan mikilvæga fyrirvara og gefur því of einfalda mynd af efnahagslegri stöðu Írlands.",
       "supporting_evidence": [
         {
           "id": "PREC-DATA-016",
@@ -238,8 +248,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Háar tölur um landsframleiðslu Írlands á mann eru brenglmótunar af fjölþjóðlegum hagnaðarfærslum (svokölluð «Leprechaun-hagfræði»). Leiðrétt mælikvarði, Modified GNI*, var um 140% af ESB-meðaltali — enn há tala en verulega lægri. Auk þess þurfti Írland á ESB/AGS-björgunarpakka að halda í fjármálakreppunni 2008–2013 (67,5 milljarðar evra), sem sýnir að ESB-aðild útilokar ekki fjármálakreppur.",
-      "confidence": 0.88,
+      "missing_context": "Landsframleiðsla á mann á Írlandi er mjög brenglandi vegna bókhalds fjölþjóðlegra fyrirtækja — árið 2015 hækkaði VLF um 26,3% á einu ári vegna skráningarbreytinga. Leiðrétt mælikvarði (GNI*) sýnir enn háa stöðu (um 140% af ESB-meðaltali) en langt frá þeim 220% sem landsframleiðsla á mann gefur til kynna. Auk þess upplifði Írland alvarlega bankakreppu 2008–2013 sem krafðist 67,5 milljarða evra björgunaraðgerða frá ESB og AGS.",
+      "confidence": 0.82,
       "speakers": [
         {
           "name": "Magnús Árni Skjöld Magnússon",
@@ -391,14 +401,9 @@
         "claim_type": "comparison",
         "confidence": 0.9
       },
-      "verdict": "supported",
-      "explanation": "Samkvæmt heimildum hefur hvert aðildarríki einn framkvæmdastjóra í framkvæmdastjórninni (<a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-002</a>, SOV-DATA-003). Ef Ísland gengi í ESB væru aðildarríkin 28 og Ísland ætti einn framkvæmdastjóra. Talan 28 er rétt miðað við núverandi 27 ríki að viðbættu Íslandi.",
+      "verdict": "partially_supported",
+      "explanation": "Grundvallaratriðið er rétt: sérhvert ESB-aðildarríki á einn framkvæmdastjóra í Framkvæmdastjórn ESB. <a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-002</a> staðfestir þetta. Talan 28 er hins vegar úrelt eða ónákvæm — ESB hefur nú 27 aðildarríki eftir útgöngu Bretlands árið 2020, þannig að framkvæmdastjórar eru nú 27. Ef Ísland gengi í yrðu þeir 28 á ný, en fullyrðingin virðist miðast við tíma þegar ESB hafði 28 aðildarríki (þ.e. fyrir Brexit). Tölulegt misræmi gerir fullyrðinguna «að hluta studda».",
       "supporting_evidence": [
-        {
-          "id": "SOV-DATA-017",
-          "source_name": "Treaty on European Union, Article 16(4); European Parliament allocation rules",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016"
-        },
         {
           "id": "SOV-LEGAL-002",
           "source_name": "Treaty on European Union, Article 16(4)",
@@ -406,8 +411,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Ef önnur ríki gengi í ESB á sama tíma (t.d. ríki á Vestur-Balkanskaga) gæti heildarfjöldinn orðið hærri en 28.",
-      "confidence": 0.92,
+      "missing_context": "Þrátt fyrir lítið atkvæðavægi í ráðinu hefur sérhvert aðildarríki einn framkvæmdastjóra og eitt sæti í ráðinu. Smáríki eins og Lúxemborg og Malta hafa sýnt að áhrif eru möguleg með bandalagsmyndun. Ísland yrði minnsta ríkið í ESB (um 390 þúsund íbúar) og hefði hverfandi atkvæðavægi eitt og sér í aukinni meirihlutakosningu.",
+      "confidence": 0.82,
       "speakers": [
         {
           "name": "Magnús Árni Skjöld Magnússon",
@@ -467,28 +472,23 @@
         "claim_type": "statistic",
         "confidence": 0.9
       },
-      "verdict": "supported",
-      "explanation": "Heimildir staðfesta íbúafjölda Íslands um 395.000 (<a href=\"https://px.hagstofa.is/pxen/pxweb/en/Ibuar/Ibuar__mannfjoldaspa/MAN09010.px\" title=\"Hagstofa Íslands — Population projections 2024; Registers Iceland\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-005</a>) og innri markaður EES/ESB nær yfir um 450 milljónir manna. Tölurnar eru nákvæmar að áætlun.",
+      "verdict": "partially_supported",
+      "explanation": "Íbúafjöldi Íslands er nálægt 400 þúsund — <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Ibuar/Ibuar__mannfjoldi__3_bakgrunnur__Rikisfang/MAN04103.px\" title=\"Hagstofa Íslands — Population by citizenship and country of birth\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-002</a> gefur til kynna um 390 þúsund árið 2025, en <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Ibuar/Ibuar__mannfjoldaspa/MAN09010.px\" title=\"Hagstofa Íslands — Population projections 2024; Registers Iceland\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-005</a> segir um 395 þúsund snemma árs 2026. Hins vegar er talan «450 milljóna manna markaður» óljós; ef átt er við ESB-markaðinn hefur hann um 450 milljónir íbúa, en EES-markaðurinn (sem Ísland hefur þegar aðgang að) er svipaður. Engin heimild staðfestir nákvæmlega 450 milljónir sem viðskiptamarkað Íslands.",
       "supporting_evidence": [
+        {
+          "id": "LABOUR-DATA-002",
+          "source_name": "Hagstofa Íslands — Population by citizenship and country of birth",
+          "source_url": "https://px.hagstofa.is/pxen/pxweb/en/Ibuar/Ibuar__mannfjoldi__3_bakgrunnur__Rikisfang/MAN04103.px"
+        },
         {
           "id": "HOUSING-DATA-005",
           "source_name": "Hagstofa Íslands — Population projections 2024; Registers Iceland",
           "source_url": "https://px.hagstofa.is/pxen/pxweb/en/Ibuar/Ibuar__mannfjoldaspa/MAN09010.px"
-        },
-        {
-          "id": "SOV-DATA-017",
-          "source_name": "Treaty on European Union, Article 16(4); European Parliament allocation rules",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016"
-        },
-        {
-          "id": "SOV-LEGAL-002",
-          "source_name": "Treaty on European Union, Article 16(4)",
-          "source_url": "https://eur-lex.europa.eu/summary/glossary/qualified_majority.html"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": null,
-      "confidence": 0.93,
+      "missing_context": "Fullyrðingin gerir ekki grein fyrir því að Ísland hefur þegar aðgang að innri markaði ESB/EES í gegnum EES-samninginn. Talan 400 þúsund er nálgun — nýjustu gögn sýna 390–395 þúsund. Þá er 450 milljóna talan ekki staðfest beint af heimildum; ESB hefur um 450 milljónir íbúa en EES-markaðurinn er stærri.",
+      "confidence": 0.65,
       "speakers": [
         {
           "name": "Magnús Árni Skjöld Magnússon",
@@ -701,8 +701,8 @@
         "claim_type": "statistic",
         "confidence": 0.9
       },
-      "verdict": "supported",
-      "explanation": "Heimildir staðfesta að aðildarviðræður hófust í júlí 2010 og stóðu til 2013 (<a href=\"https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/\" title=\"Althingi — Historical records; European Commission accession records\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-010</a>, <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland accession progress reports\" target=\"_blank\" rel=\"noopener\">PREC-HIST-004</a>). Umsóknin var lögð fram 2009. Kjörtímabilið sem ríkisstjórn Jóhönnu Sigurðardóttur sat var einmitt frá 2009 til 2013, þannig að tímarammi fullyrðingarinnar er réttur.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin segir aðildarviðræður hafi átt sér stað «á kjörtímabilinu 2009 til 2013». Heimildir benda til þess að umsóknin hafi verið lögð fram 16.–17. júlí 2009 en formlegar viðræður hófust ekki fyrr en í júlí 2010 (<a href=\"https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/\" title=\"Althingi — Historical records; European Commission accession records\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-010</a>, <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland accession progress reports\" target=\"_blank\" rel=\"noopener\">PREC-HIST-004</a>, <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland: Accession negotiations status; Althingi records\" target=\"_blank\" rel=\"noopener\">EEA-DATA-009</a>, <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland Accession Progress Reports; Icelandic Ministry of Foreign Affairs\" target=\"_blank\" rel=\"noopener\">SOV-DATA-023</a>). Viðræðurnar sjálfar áttu sér því stað frá 2010 til 2013, ekki frá 2009. Fullyrðingin blandar saman umsóknarferlinu og formlegu aðildarviðræðunum — kjörtímabilið 2009–2013 var rétt tímabil ríkisstjórnarinnar sem stóð fyrir aðildarferlinu, en viðræðurnar sem slíkar hófust ári seinna.",
       "supporting_evidence": [
         {
           "id": "POLITICAL-DATA-010",
@@ -718,11 +718,16 @@
           "id": "EEA-DATA-009",
           "source_name": "European Commission — Iceland: Accession negotiations status; Althingi records",
           "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "SOV-DATA-023",
+          "source_name": "European Commission — Iceland Accession Progress Reports; Icelandic Ministry of Foreign Affairs",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Viðræðurnar sjálfar hófust ekki fyrr en í júlí 2010 — umsóknin var lögð fram 2009. Fullyrðingin vísar réttilega til kjörtímabilsins, þar sem bæði umsókn og viðræður áttu sér stað.",
-      "confidence": 0.95,
+      "missing_context": "Umsókn var lögð fram í júlí 2009 en formlegar aðildarviðræður hófust ekki fyrr en í júlí 2010. Munurinn skiptir máli ef fullyrðingin er lesin sem staðhæfing um aðildarviðræður frekar en aðildarferlið í heild.",
+      "confidence": 0.82,
       "speakers": [
         {
           "name": "Magnús Árni Skjöld Magnússon",
@@ -1041,8 +1046,8 @@
         "claim_type": "comparison",
         "confidence": 0.9
       },
-      "verdict": "supported",
-      "explanation": "Heimildir staðfesta töluvert hærri verðbólgu á Íslandi — meðalverðbólga 2005–2025 var 5,5% samanborið við 2,1% á evrusvæðinu (<a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__visitolur__1_vnv__1_vnv/VIS01005.px\" title=\"Hagstofa Íslands — Consumer price index; Eurostat — HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-003</a>). Seðlabankavextir hafa verið að meðaltali um 6,5% á Íslandi á móti 1,5% hjá ECB (<a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a>). Þetta mynstur nær yfir langan tíma.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__visitolur__1_vnv__1_vnv/VIS01005.px\" title=\"Hagstofa Íslands — Consumer price index; Eurostat — HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-003</a> og <a href=\"https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IS\" title=\"World Bank — World Development Indicators (FP.CPI.TOTL.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-013</a> staðfesta verulega hærri verðbólgu á Íslandi en á evrusvæðinu yfir tímabilið 2000–2025 (meðaltal um 4,7–5,5% á Íslandi á móti ~2,1% á evrusvæðinu). <a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> sýnir mun hærri stýrivexti á sama tímabili (meðaltal ~6,5% á Íslandi á móti ~1,5% hjá ESB). Þó er fullyrðingin of víð — «allan lýðveldistímann» nær aftur til 1944 en heimildir ná aðeins til u.þ.b. 2000–2025. Gildissviðið er því mun þrengra en fullyrðingin gefur til kynna.",
       "supporting_evidence": [
         {
           "id": "CURR-DATA-003",
@@ -1061,8 +1066,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Fullyrðingin segir \"allan lýðveldistímann\" (frá 1944) en heimildir ná aðeins til síðustu 20–25 ára. Þótt mynstrið sé vel þekkt sögulega er beinn stuðningur takmarkaður við nýrri gögn.",
-      "confidence": 0.85,
+      "missing_context": "Heimildir ná aðeins til 2000–2025 en fullyrðingin segir «allan lýðveldistímann» (frá 1944). Samanburðarlönd eru ekki tilgreind í fullyrðingunni. Hærri vextir og verðbólga endurspegla að hluta smæð og opið hagkerfi Íslands, gjaldmiðilsáhættu og launaviðræður — ekki eingöngu gjaldeyrisstefnu.",
+      "confidence": 0.75,
       "speakers": [
         {
           "name": "Pawel Bartoszek",
@@ -1084,23 +1089,12 @@
         "claim_type": "statistic",
         "confidence": 0.9
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland: Accession negotiations status; Althingi records\" target=\"_blank\" rel=\"noopener\">EEA-DATA-009</a> staðfestir að Tyrkland sótti um aðild 1987 og er enn á lista umsækjenda. <a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> nefna stöðu umsóknarríkja og staðfesta að Tyrkland er meðal þeirra. Fullyrðingin segir «um árið 1986» en rétt ár er 14. apríl 1987 — lítið frávik. Tyrkland fékk umsækjandastöðu 1999 og aðildarviðræður hófust 2005 en hafa nánast stöðvast.",
-      "supporting_evidence": [
-        {
-          "id": "EEA-DATA-009",
-          "source_name": "European Commission — Iceland: Accession negotiations status; Althingi records",
-          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
-        },
-        {
-          "id": "TRADE-DATA-022",
-          "source_name": "European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications",
-          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
-        }
-      ],
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin segir að Tyrkland hafi sótt um ESB-aðild «um árið 1986» en Tyrkland sótti í raun um aðild 14. apríl 1987 — eins árs mismunur sem gerir fullyrðinguna ónákvæma. Engin heimild í staðreyndagrunni staðfestir beint umsóknardaginn, en <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/167/the-enlargement-of-the-union\" title=\"European Parliament — Accession Referendums Database; Alþingi Parliamentary Records\" target=\"_blank\" rel=\"noopener\">PREC-DATA-024</a> nefnir ýmis aðildarríki og umsóknir án þess að fjalla sérstaklega um Tyrkland. Að Tyrkland sé enn á umsóknarlistanum er almennt vitað, en heimildir staðfesta það ekki beint.",
+      "supporting_evidence": [],
       "contradicting_evidence": [],
-      "missing_context": "Rétt ár umsóknar er 1987, ekki 1986 eins og fullyrðingin segir. Aðildarviðræður Tyrklands hafa í reynd stöðvast vegna ágreinings um mannréttindamál, Kýpur og réttarríkissjónarmið — Tyrkland er formlega enn umsækjandi en viðræður eru frosnar.",
-      "confidence": 0.8,
+      "missing_context": "Heimildir í staðreyndagrunni fjalla ekki um umsókn Tyrklands sérstaklega. Umsóknin var árið 1987, ekki 1986 eins og fullyrðingin heldur fram. Aðildarviðræður hófust formlega 2005 en hafa legið í dvala frá 2018. Staða Tyrklands er flókin — viðræður eru formlega opnar en hafa ekki miðað áfram í mörg ár.",
+      "confidence": 0.45,
       "speakers": [
         {
           "name": "Björn Ingi Hrafnsson",
@@ -1238,26 +1232,21 @@
         "confidence": 0.9
       },
       "verdict": "supported",
-      "explanation": "Fullyrðingin er staðreynd. <a href=\"https://www.thedanishparliament.dk/en/eu-information-centre/the-danish-opt-outs-from-eu-cooperation\" title=\"Edinburgh Agreement (1992); Danish Ministry of Foreign Affairs — Denmark's EU opt-outs\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-010</a> og PREC-HIST-010 staðfesta að Danmörk tryggði sér undanþágu frá evrunni í Edinburgh-samkomulaginu 1992 og heldur enn sinni eigin mynt, dönsku krónunni. Nýja heimildin <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> útskýrir hvernig evruaðild felur í sér yfirfærslu peningastefnu til Seðlabanka Evrópu — sem Danir hafa einmitt forðast. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014\" title=\"Treaty on the Functioning of the European Union, Article 140\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-004</a> staðfestir jafnframt að nýjum aðildarríkjum ber að taka upp evru en Danmörk nýtur gamalla undanþága.",
+      "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> staðfestir beinlínis að undanþága Danmerkur frá evrunni sé enn í gildi frá og með 2026 — Danir hafa ekki tekið upp evruna. <a href=\"https://cb.is/statistics/official-exchange-rate/\" title=\"Seðlabanki Íslands — Monetary Bulletin; ECB Statistical Data Warehouse\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-004</a> greinir frá dönsku krónunni (DKK) sem er tengd evrunni innan ERM II með ±2,25% svigrúmi, sem staðfestir að Danmörk er með eigin gjaldmiðil þrátt fyrir ESB-aðild. Fullyrðingin er nákvæm.",
       "supporting_evidence": [
         {
-          "id": "SOV-LEGAL-004",
-          "source_name": "Treaty on the Functioning of the European Union, Article 140",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014"
+          "id": "EEA-LEGAL-012",
+          "source_name": "European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
         },
         {
-          "id": "SOV-LEGAL-005",
-          "source_name": "Central Bank of Iceland — Monetary policy framework",
-          "source_url": "https://sedlabanki.is/peningastefna/"
-        },
-        {
-          "id": "SOV-LEGAL-010",
-          "source_name": "Edinburgh Agreement (1992); Danish Ministry of Foreign Affairs — Denmark's EU opt-outs",
-          "source_url": "https://www.thedanishparliament.dk/en/eu-information-centre/the-danish-opt-outs-from-eu-cooperation"
+          "id": "TRADE-COMP-004",
+          "source_name": "Seðlabanki Íslands — Monetary Bulletin; ECB Statistical Data Warehouse",
+          "source_url": "https://cb.is/statistics/official-exchange-rate/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Danmörk er ekki fullkomlegt fordæmi fyrir Ísland — undanþágur Danmerkur voru samið um í sérstökum aðstæðum 1992 eftir höfnun Maastricht-sáttmálans. ESB hefur verið síður tilbúið til undanþága síðan 2004 og Króatía fékk engar verulegar undanþágur árið 2013.",
+      "missing_context": "Danska krónan er fast tengd evrunni í gegnum ERM II og seðlabanki Danmerkur fylgir í reynd vaxtastefnu Seðlabanka Evrópu, þannig að peningamálastefna Danmerkur er mjög takmörkuð þrátt fyrir eigin gjaldmiðil. Þetta er annað en að vera með fullkomlega sjálfstæðan gjaldmiðil.",
       "confidence": 0.95,
       "speakers": [
         {
@@ -1460,13 +1449,13 @@
       "attribution_type": "asserted",
       "claim_count": 16,
       "verdicts": {
-        "supported": 15,
-        "partially_supported": 1
+        "supported": 11,
+        "partially_supported": 5
       },
       "stance": "pro_eu",
       "slug": "magnus-arni-skjold-magnusson",
       "mention_count": 5,
-      "credibility": 0.74,
+      "credibility": 0.72,
       "speech_count": 7
     },
     {
@@ -1477,8 +1466,8 @@
       "attribution_type": "asserted",
       "claim_count": 11,
       "verdicts": {
-        "partially_supported": 5,
-        "supported": 5,
+        "partially_supported": 6,
+        "supported": 4,
         "misleading": 1
       },
       "stance": "anti_eu",
@@ -1494,9 +1483,9 @@
       "attribution_type": "asserted",
       "claim_count": 8,
       "verdicts": {
-        "supported": 4,
+        "supported": 3,
         "unverifiable": 1,
-        "partially_supported": 3
+        "partially_supported": 4
       },
       "stance": "pro_eu",
       "slug": "pawel-bartoszek",

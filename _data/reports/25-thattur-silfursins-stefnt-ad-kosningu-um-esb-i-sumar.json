@@ -10,12 +10,12 @@
   "summary": "Greindar 71 fullyrðingar frá 6 þátttakendum í Silfrinu. Niðurstöður: 35 stutt að hluta, 24 ekki hægt að sannreyna, 10 stutt af heimildum, 2 villandi. Sjónarhorn: hallar á ESB-neikvæða hlið. Heildstæðni: 35%.",
   "capsule": "Þátturinn staðfestir tvennt sem heimildir bera vel undir: ríkisstjórnin lofaði þjóðaratkvæðagreiðslu eigi síðar en 2027 og í leiðarvísi ESB er sérstaklega tekið fram að aðildarferlið snúist um uppfyllingu krafna sambandsins — ekki samningaviðræður á milli jafngildra aðila. Athyglisvert er að sjávarútvegurinn, sem var ofarlega í umræðunni, er sá þáttur þar sem sérstaða Íslands er mest áberandi: Ísland er næststærsta fiskiveiðiríki Evrópu með um 1,1 milljón tonn á ári og afli á mann er yfir 300 sinnum meðaltal ESB-ríkja. Þetta tölulega samhengi skiptir máli þegar meta á stöðu Íslands í hugsanlegum viðræðum um sjávarútveg.",
   "verdict_counts": {
-    "supported": 19,
-    "partially_supported": 27,
-    "unverifiable": 2,
-    "misleading": 4
+    "supported": 14,
+    "partially_supported": 46,
+    "unverifiable": 5,
+    "misleading": 5
   },
-  "claim_count": 52,
+  "claim_count": 70,
   "dominant_category": "party_positions",
   "categories": [
     "agriculture",
@@ -26,6 +26,7 @@
     "org_positions",
     "other",
     "party_positions",
+    "polling",
     "precedents",
     "sovereignty",
     "trade"
@@ -40,17 +41,12 @@
         "confidence": 0.95
       },
       "verdict": "supported",
-      "explanation": "Heimildir staðfesta að stjórnarsáttmáli ríkisstjórnarinnar (Samfylkingin, Viðreisn, Flokkur fólksins) frá 2024 innihélt skuldbindingu um þjóðaratkvæðagreiðslu um framhald aðildarviðræðna eigi síðar en 2027 (<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland; Euronews; France24; coalition agreement\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-013</a>). Þjóðaratkvæðagreiðslan var síðan ákveðin 29. ágúst 2026 (<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a>).",
+      "explanation": "<a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> staðfestir að ríkisstjórnin tilkynnti áform um þjóðaratkvæðagreiðslu sem «fyrst ráðgerð árið 2027 en hraðað í 29. ágúst 2026.» Þetta samrýmist fullyrðingunni um loforð ríkisstjórnarinnar um þjóðaratkvæðagreiðslu eigi síðar en 2027. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir að þingsályktunartillaga um þjóðaratkvæðagreiðslu var lögð fram og dagsetningin ákveðin 29. ágúst 2026.",
       "supporting_evidence": [
         {
-          "id": "PARTY-DATA-013",
-          "source_name": "Government of Iceland; Euronews; France24; coalition agreement",
-          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
-        },
-        {
-          "id": "SOV-DATA-006",
-          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
-          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+          "id": "PARTY-DATA-016",
+          "source_name": "Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16",
+          "source_url": "https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/"
         },
         {
           "id": "SOV-PARL-001",
@@ -59,8 +55,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Flokkur fólksins er ESB-efasemdarflokkur þrátt fyrir þátttöku í ríkisstjórn sem samþykkti þjóðaratkvæðagreiðsluna. Samþykki þeirra þýðir ekki stuðning við ESB-aðild.",
-      "confidence": 0.95,
+      "missing_context": "Upphaflegi tímaramminn var 2027 en var hraðaður í ágúst 2026, sem andstæðingar hafa gagnrýnt sem of skamman tíma til opinberrar umræðu. Kristrún Frostadóttir hafði sagt fyrir kosningar að ESB-aðild yrði ekki á dagskrá á kjörtímabilinu.",
+      "confidence": 0.9,
       "speakers": [
         {
           "name": "Þorgerður Katrín Gunnarsdóttir",
@@ -201,14 +197,47 @@
     },
     {
       "claim": {
+        "original_quote": "þetta var áréttað í skýrslu sem við létum vinna af hálfu Hagfræðistofnunar Háskóla Íslands til að fá það á hreint",
+        "claim_text": "Hagfræðistofnun Háskóla Íslands vann skýrslu sem sýndi fram á að ekki væri hægt að ganga í ESB á þeim forsendum að gera sérstakan samning um samruna Íslands og ESB.",
+        "category": "eea_eu_law",
+        "claim_type": "legal_assertion",
+        "confidence": 0.4
+      },
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> staðfestir að Hagfræðistofnun vann skýrslu árið 2014 um efnahagsleg áhrif ESB-aðildar og komst að þeirri niðurstöðu að varanlegar undanþágur frá kjarnaregluverki ESB (eins og sjávarútvegsstefnunni) væru ólíklegar. Þetta styður kjarna fullyrðingarinnar. Hins vegar einfaldar fullyrðingin niðurstöðuna: skýrslan sagði ekki að ESB-aðild væri útilokuð heldur að aðild «á sérstökum forsendum» um varanlegar undanþágur væri ólíkleg. Skýrslan mælti jafnframt með því að kanna hvaða kjör fengust í raunverulegum samningaviðræðum — sem er verulegur fyrirvari sem fullyrðingin sleppur.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-DATA-014",
+          "source_name": "Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)",
+          "source_url": "https://ioes.hi.is/en/institute-economic-studies"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Skýrsla Hagfræðistofnunar frá 2014 mælti jafnframt með samningaviðræðum til að kanna raunhæf kjör — þetta er mikilvægt samhengi sem fullyrðingin nefnir ekki. Skýrslan var unnin á tímabili þegar ríkisstjórnin var andvíg ESB-aðild, sem gæti haft áhrif á ramma hennar. <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> og <a href=\"https://www.efta.int/about-efta/efta-secretariat/efta-budget\" title=\"EFTA Secretariat — EFTA budget; various academic estimates\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-005</a> benda til þess að ESB-aðild fæli í sér bæði kostnað og ávinning sem skýrslan mat ekki að fullu.",
+      "confidence": 0.65,
+      "speakers": [
+        {
+          "name": "Sigmundur Davíð Gunnlaugsson",
+          "type": "individual",
+          "role": "formaður Miðflokksins",
+          "party": "Miðflokkurinn",
+          "stance": "neutral",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
         "original_quote": "Eins og Evrópusambandið hafði ítrekað reynt að segja okkur. Frá 2009 til 2013.",
         "claim_text": "Evrópusambandið reyndi ítrekað frá 2009 til 2013 að útskýra fyrir Íslandi að umsóknarferli um aðild snýst um að uppfylla kröfur ESB, ekki um samningaviðræður.",
         "category": "eea_eu_law",
         "claim_type": "legal_assertion",
         "confidence": 0.85
       },
-      "verdict": "supported",
-      "explanation": "Opinber gögn framkvæmdastjórnar ESB staðfesta að aðildarviðræður snúast um „skilyrði og tímasetningu innleiðingar, framkvæmd og beitingu allra gildandi ESB-reglna (acquis)“ (<a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a>, <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a>). Umsóknarríkið samþykkir acquis eins og það er — „viðræður fjalla ekki um hvort innleiða eigi ESB-reglur heldur hvernig og hvenær.“ Sigmundur Davíð Gunnlaugsson vísar einnig til þess í þingræðu sinni að ESB-fulltrúar hafi reynt að skýra þetta (<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T182328.html\" title=\"Alþingi — Sigmundur Davíð Gunnlaugsson, þingmaður Miðflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-002</a>).",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta almenna meginregluna: aðildarviðræður snúast um hvenær og hvernig umsækjandaríki innleiðir regluverkið, ekki hvort það geri það (<a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a>, <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a>). Framkvæmdastjórn ESB hefur ítrekað lýst ferlinu þannig að umsækjandi «samþykki regluverkið eins og það stendur við aðild». Hins vegar er orðalagið «ekki um samningaviðræður» of einfaldað — aðlögunartímabil geta verið veruleg (t.d. 12 ára undanþága Póllands á landakaupum) og heimildirnar benda sjálfar á að munurinn milli «samningaviðræðna um reglurnar» og «samningaviðræðna um hvenær reglurnar taka gildi» geti verið ofdreginn. Þá staðfesta heimildir ekki sérstaklega að ESB hafi «ítrekað» reynt að útskýra þetta fyrir Íslandi á tímabilinu 2009–2013; þær lýsa almennri stækkkunarstefnu, ekki samskiptum við Ísland.",
       "supporting_evidence": [
         {
           "id": "EEA-LEGAL-017",
@@ -221,14 +250,19 @@
           "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
         },
         {
-          "id": "SOV-PARL-002",
-          "source_name": "Alþingi — Sigmundur Davíð Gunnlaugsson, þingmaður Miðflokksins (ræða, 157. löggjafarþing)",
-          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T182328.html"
+          "id": "EEA-LEGAL-013",
+          "source_name": "European Commission — Steps towards joining; DG NEAR accession negotiation methodology",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        },
+        {
+          "id": "EEA-LEGAL-012",
+          "source_name": "European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Þótt heildarmyndin sé rétt hefur ESB sýnt sveigjanleika í aðlögunarfrestum sem geta haft veruleg efnahagsleg áhrif — til dæmis 12 ára undanþága Pólverja frá fasteignakaupum.",
-      "confidence": 0.85,
+      "missing_context": "Fyrirvarar í <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> benda á raunverulegan sveigjanleika í aðlögunartímabilum sem fullyrðingin tekur ekki tillit til. Engin heimild staðfestir «ítrekuð» skilaboð ESB til Íslands á árunum 2009–2013 — heimildir lýsa almennri stækkkunarstefnu en ekki tilteknum samskiptum.",
+      "confidence": 0.78,
       "speakers": [
         {
           "name": "Sigmundur Davíð Gunnlaugsson",
@@ -250,8 +284,8 @@
         "claim_type": "legal_assertion",
         "confidence": 0.75
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> staðfesta beint að opinber gögn framkvæmdastjórnarinnar lýsa aðildarviðræðum sem ferli þar sem umsóknarríki útskýrir hvernig og hvenær það ætlar að taka upp regluverk ESB — ekki sem hefðbundnum samningaviðræðum um inntak reglnanna. Framkvæmdastjórnin notar orðalagið \"conditions and timing for adoption\" og segir skýrt að umsóknarríki samþykki regluverkið eins og það stendur. <a href=\"https://link.springer.com/book/10.1057/9780230510302\" title=\"Grabbe, H. (2006) 'The EU's Transformative Power: Europeanization Through Conditionality in Central and Eastern Europe', Palgrave Macmillan\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-016</a> styður þetta enn frekar og vitnar í fræðilega samstöðu um að um 95% regluverksins sé ekki samningsefni. Nýjar heimildir (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — Steps towards joining; DG NEAR accession negotiation methodology\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-013</a>, <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — Communication on 'Enhancing the accession process: A credible EU perspective for the Western Balkans', COM(2020) 57 final\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-019</a>) staðfesta einnig skipulagt ferli sem snýst um tímasetningu innleiðingar frekar en efnislegar breytingar á regluverki.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> staðfesta kjarnann: aðildarviðræður snúast um hvenær og hvernig umsóknarríki innleiðir gildandi regluverk ESB, ekki um hvort það geri það. Framkvæmdastjórnin orðar ferlið sem «skilyrði og tímasetningu fyrir yfirtöku, innleiðingu og framfylgd alls gildandi regluverks». Fullyrðingin segir hins vegar að «leiðarvísir ESB» varaði sérstaklega við að nota orðið «samningaviðræður» — en heimildir sýna ekki slíkt beinlínis orðalag í opinberum gögnum ESB. Efnislega er lýsingin rétt en orðalagið um «varasamt sé að tala um samningaviðræður» er túlkun fremur en bein tilvitnun.",
       "supporting_evidence": [
         {
           "id": "EEA-LEGAL-017",
@@ -267,21 +301,11 @@
           "id": "EEA-LEGAL-016",
           "source_name": "Grabbe, H. (2006) 'The EU's Transformative Power: Europeanization Through Conditionality in Central and Eastern Europe', Palgrave Macmillan",
           "source_url": "https://link.springer.com/book/10.1057/9780230510302"
-        },
-        {
-          "id": "EEA-LEGAL-013",
-          "source_name": "European Commission — Steps towards joining; DG NEAR accession negotiation methodology",
-          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
-        },
-        {
-          "id": "EEA-LEGAL-019",
-          "source_name": "European Commission — Communication on 'Enhancing the accession process: A credible EU perspective for the Western Balkans', COM(2020) 57 final",
-          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Þó ferlið sé formlega um innleiðingu, ekki samningaviðræður um reglur, geta aðlögunartímabil verið veruleg — Pólland fékk 12 ára frest á kaupum erlendra aðila á landbúnaðarlandi. Munurinn á \"semja um reglur\" og \"semja um hvenær reglur taka gildi\" er raunverulegur en getur verið ýktur eða vanmetinn.",
-      "confidence": 0.85,
+      "missing_context": "Þótt regluverkið sé ekki til viðræðu, geta aðlögunartímabil verið pólitískt og efnahagslega mikilvæg — t.d. 12 ára undanþága Póllands varðandi kaup á landbúnaðarlandi. Munurinn á «samningaviðræðum um reglurnar» og «samningaviðræðum um hvenær þær taka gildi» er raunverulegur en getur verið ofdreginn.",
+      "confidence": 0.75,
       "speakers": [
         {
           "name": "Sigmundur Davíð Gunnlaugsson",
@@ -346,6 +370,39 @@
     },
     {
       "claim": {
+        "original_quote": "Hún heyrði fyrst af því í erlendum fjölmiðlum sem að höfðu þetta eftir heimildarmönnum sínum í Brussel og fengu meira að segja upplýsingar um dagsetninguna áður en að Íslendingar",
+        "claim_text": "Íslenska þjóðin frétti fyrst af ESB-áformum ríkisstjórnarinnar í erlendum fjölmiðlum sem höfðu upplýsingarnar frá heimildarmönnum í Brussel, ekki frá ríkisstjórninni sjálfri.",
+        "category": "party_positions",
+        "claim_type": "legal_assertion",
+        "confidence": 0.45
+      },
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T182328.html\" title=\"Alþingi — Sigmundur Davíð Gunnlaugsson, þingmaður Miðflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-002</a> styður fullyrðinguna að hluta — Sigmundur Davíð hélt því fram á Alþingi að áform ríkisstjórnarinnar hafi fyrst komið fram í erlendum fjölmiðlum, ekki á Alþingi eða í utanríkismálanefnd. Þetta er hins vegar pólitísk fullyrðing úr andstöðuræðu, ekki óháð staðfesting. Engin heimild staðfestir beint tímalínu þar sem erlend fjölmiðlabirting kom á undan innlendri tilkynningu frá ríkisstjórninni. <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> og <a href=\"https://www.stjornarradid.is/verkefni/utanrikismal/evropusamvinna/thjodaratkvaedagreidsla/\" title=\"Government of Iceland — Referendum information materials; Althingi debate records; RÚV coverage\" target=\"_blank\" rel=\"noopener\">POL-DATA-024</a> lýsa málsmeðferðarandmælum andstöðunnar án þess að sannreyna þennan tiltekna punkt.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-PARL-002",
+          "source_name": "Alþingi — Sigmundur Davíð Gunnlaugsson, þingmaður Miðflokksins (ræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T182328.html"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Fullyrðingin er byggð á pólitískri frásögn Miðflokksins. Fyrirvararnir í <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T182328.html\" title=\"Alþingi — Sigmundur Davíð Gunnlaugsson, þingmaður Miðflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-002</a> benda á að þetta endurspegli «specific political narrative» — óháð heimild um tímaröð birtinga skortir. <a href=\"https://www.stjornarradid.is/verkefni/utanrikismal/evropusamvinna/thjodaratkvaedagreidsla/\" title=\"Government of Iceland — Referendum information materials; Althingi debate records; RÚV coverage\" target=\"_blank\" rel=\"noopener\">POL-DATA-024</a> sýnir að ríkisstjórnin hafi hleypt af stokkunum upplýsingaherferð, sem gæti bent til þess að hún hafi ekki reynt að leyna áformum sínum.",
+      "confidence": 0.4,
+      "speakers": [
+        {
+          "name": "Sigmundur Davíð Gunnlaugsson",
+          "type": "individual",
+          "role": "formaður Miðflokksins",
+          "party": "Miðflokkurinn",
+          "stance": "neutral",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
         "original_quote": "Í engu öðru ríki hefur stjórnvöldum dottið í hug að nálgast þjóð sína á þann hátt að halda því fram að menn sæki um aðild að Evrópusambandinu bara svona til að sjá hvað er í boði",
         "claim_text": "Ekkert annað ríki hefur nálgast þjóð sína á þann hátt að halda því fram að menn sæki um aðild að ESB bara til að sjá hvað er í boði.",
         "category": "precedents",
@@ -369,6 +426,49 @@
       "contradicting_evidence": [],
       "missing_context": "Fullyrðingin blandar saman tveimur atriðum: (1) þjóðaratkvæðagreiðslu um hvort hefja viðræður, og (2) kynningunni á viðræðunum sem «skoðunarferð». <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/167/the-enlargement-of-the-union\" title=\"European Parliament — Accession Referendums Database; Alþingi Parliamentary Records\" target=\"_blank\" rel=\"noopener\">PREC-DATA-024</a> staðfestir að (1) sé fordæmalaust, en (2) er pólitísk túlkun sem heimildir geta ekki staðfest með vísan til allra aðildarumsókna í sögu ESB. Fyrirvarar <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/167/the-enlargement-of-the-union\" title=\"European Parliament — Accession Referendums Database; Alþingi Parliamentary Records\" target=\"_blank\" rel=\"noopener\">PREC-DATA-024</a> benda á að Vestur-Balkanríki hafi hafið viðræður án tryggs meirihlutastuðnings.",
       "confidence": 0.5,
+      "speakers": [
+        {
+          "name": "Sigmundur Davíð Gunnlaugsson",
+          "type": "individual",
+          "role": "formaður Miðflokksins",
+          "party": "Miðflokkurinn",
+          "stance": "neutral",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "hvað voru þeir að gera í síðustu viku? Þeir voru að hafna tillögu frá systurflokki Viðreisnar um það að skoða um það að skoða hugsanlega aðild að Evrópusambandinu. 79% sögðu nei í norska þinginu, 93% sögðu nei við því að skoða aukið samstarf við Evrópusambandið, meðal annars á sviði varnarmála.",
+        "claim_text": "Norska þingið hafnaði í síðustu viku tillögu frá systurflokki Viðreisnar um að skoða hugsanlega ESB-aðild, þar sem 79% sögðu nei, og 93% sögðu nei við auknu samstarfi við ESB, meðal annars á sviði varnarmála.",
+        "category": "precedents",
+        "claim_type": "statistic",
+        "confidence": 0.4
+      },
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin nefnir tiltekna atkvæðagreiðslu á norska þinginu þar sem 79% höfnuðu tillögu um að skoða ESB-aðild og 93% höfnuðu auknu samstarfi. Heimildir staðfesta almennt sterka andstöðu Norðmanna við ESB-aðild — PREC-HIST-002 sýnir 70–75% andstöðu í skoðanakönnunum og <a href=\"https://www.ssb.no/en/statbank/list/euvalg\" title=\"Norwegian Centre for Research Data — Election Archive\" target=\"_blank\" rel=\"noopener\">PREC-HIST-001</a> lýsir tveimur þjóðaratkvæðagreiðslum þar sem meirihluti sagði nei. <a href=\"https://www.ssb.no/en/statbank/list/euvalg\" title=\"Statistics Norway — Election and referendum statistics; Bjørklund (2005) — 'Mot strømmen'\" target=\"_blank\" rel=\"noopener\">POLL-DATA-005</a> og <a href=\"https://www.ssb.no/en/statbank/list/euvalg\" title=\"Statistics Norway — Referendum results 1994; Archer (2005) — 'Norway outside the European Union'\" target=\"_blank\" rel=\"noopener\">POLL-DATA-006</a> bæta við sögulegum upplýsingum. Þó staðfesta engar heimildir tiltekna þingatkvæðagreiðslu «í síðustu viku» með nákvæmlega þessum prósentutölum (79% og 93%). Hlutföllin samræmast almennri mynd af norrænni ESB-andstöðu en eru ekki sannreynanleg beint.",
+      "supporting_evidence": [
+        {
+          "id": "PREC-HIST-002",
+          "source_name": "Sentio Research / Nationen polling series",
+          "source_url": null
+        },
+        {
+          "id": "PREC-HIST-001",
+          "source_name": "Norwegian Centre for Research Data — Election Archive",
+          "source_url": "https://www.ssb.no/en/statbank/list/euvalg"
+        },
+        {
+          "id": "POLL-DATA-006",
+          "source_name": "Statistics Norway — Referendum results 1994; Archer (2005) — 'Norway outside the European Union'",
+          "source_url": "https://www.ssb.no/en/statbank/list/euvalg"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Engin heimild staðfestir tiltekna atkvæðagreiðslu á Stórþinginu með þessum nákvæmu tölum. Norsk ESB-andstaða er vel skráð en sérstaka atburðinn er ekki hægt að sannreyna úr heimildunum. Jafnframt er ólíkt að «systurflokkur Viðreisnar» í Noregi sé tilgreindur — Venstre er sá flokkur sem líklegast er átt við, en heimildir staðfesta það ekki.",
+      "confidence": 0.35,
       "speakers": [
         {
           "name": "Sigmundur Davíð Gunnlaugsson",
@@ -561,25 +661,58 @@
     },
     {
       "claim": {
+        "original_quote": "Það sem hefur verið að gerast hjá Evrópusambandinu á síðustu 10 árum er að það hefur dregið rosalega úr samkeppnishæfni og hagvexti og við erum með Draghi-skýrsluna, við erum með Letta.",
+        "claim_text": "Draghi-skýrslan og Letta-skýrslan sýna fram á að dregið hefur úr samkeppnishæfni og hagvexti innan Evrópusambandsins á síðustu 10 árum.",
+        "category": "trade",
+        "claim_type": "statistic",
+        "confidence": 0.4
+      },
+      "verdict": "supported",
+      "explanation": "Báðar skýrslurnar staðfesta kjarna fullyrðingarinnar. <a href=\"https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en\" title=\"Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-024</a> sýnir að Draghi-skýrslan greindi frá því að landsframleiðsla á mann í ESB hefði vaxið um 1% hægar en í Bandaríkjunum undanfarin tvo áratugi, orkuverð væri 2–3 sinnum hærra, og aðeins 4 af 50 stærstu tæknifyrirtækjum heims væru evrópsk. <a href=\"https://www.consilium.europa.eu/media/ny3j24sm/much-more-than-a-market-report-by-enrico-letta.pdf\" title=\"Letta, Enrico — 'Much More Than a Market: Speed, Security, Solidarity', Report to the European Council (April 2024)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-025</a> sýnir að Letta-skýrslan benti á ófullkominn innri markað í þjónustu, sundraða fjármálamarkaði, og 300 milljarða evra í sparifé sem streyma úr ESB á ári. <a href=\"https://www.businesseurope.eu/publications/businesseurope-reform-barometer-2025-eu-in-a-new-political-cycle-competitiveness-as-a-true-priority-in-a-complex-global-context/\" title=\"BusinessEurope — Reform Barometer 2025; Reform Barometer 2024\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-026</a> staðfestir að BusinessEurope-könnun er í samræmi við greiningu beggja skýrslna.",
+      "supporting_evidence": [
+        {
+          "id": "TRADE-DATA-024",
+          "source_name": "Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)",
+          "source_url": "https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en"
+        },
+        {
+          "id": "TRADE-DATA-025",
+          "source_name": "Letta, Enrico — 'Much More Than a Market: Speed, Security, Solidarity', Report to the European Council (April 2024)",
+          "source_url": "https://www.consilium.europa.eu/media/ny3j24sm/much-more-than-a-market-report-by-enrico-letta.pdf"
+        },
+        {
+          "id": "TRADE-DATA-026",
+          "source_name": "BusinessEurope — Reform Barometer 2025; Reform Barometer 2024",
+          "source_url": "https://www.businesseurope.eu/publications/businesseurope-reform-barometer-2025-eu-in-a-new-political-cycle-competitiveness-as-a-true-priority-in-a-complex-global-context/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Skýrslurnar eru bæði gagnrýndar af ólíkum hliðum og voru ætlaðar til að knýja fram umbætur, ekki til að lýsa vonlausu ástandi. Draghi-skýrslan bendir jafnframt á lausnir og þörf á viðbótarfjárfestingum. Mikilvægt er að greina á milli samkeppnishæfni gagnvart Bandaríkjunum/Kína og almenns hagvaxtar — ESB-hagkerfi hafa vaxið, en hægar en helstu keppinautar.",
+      "confidence": 0.85,
+      "speakers": [
+        {
+          "name": "Lilja Dögg Alfreðsdóttir",
+          "type": "individual",
+          "role": "formaður Framsóknarflokksins",
+          "party": "Framsóknarflokkur",
+          "stance": "neutral",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
         "original_quote": "þú lítur á þau ríki sem eru með evruna. Þau eru í vandræðum. Finnland er í vandræðum núna, samkeppnishæfni Finnlands er búið að minnka verulega",
         "claim_text": "Evruríkin eru í vandræðum, sérstaklega Finnland þar sem samkeppnishæfni hefur minnkað verulega.",
         "category": "currency",
         "claim_type": "statistic",
         "confidence": 0.6
       },
-      "verdict": "supported",
-      "explanation": "Heimildir styðja meginatriði fullyrðingarinnar. <a href=\"https://www.oecd.org/en/publications/oecd-economic-surveys-finland-2025_985d0555-en.html\" title=\"OECD Economic Surveys: Finland 2025\" target=\"_blank\" rel=\"noopener\">PREC-DATA-013</a> staðfestir að Finnland hefur staðið frammi fyrir alvarlegri efnahagslegri stöðnun eftir 2008: raunvergri landsframleiðslu á mann lækkaði milli 2008 og 2019 og einingarvinnukostnaður er um 20% hærri en í Þýskalandi. OECD-skýrsla 2025 staðfestir að hagvöxtur Finnlands «er hægur og dregst aftur úr öðrum norðurlandaþjóðum» og raunvergri landsframleiðslu dróst saman um 0,1% árið 2024. Finnland gat ekki beitt gengisfellingu til að endurheimta samkeppnishæfni og þurfti «innri gengisfellingu» í staðinn. Draghi-skýrslan (<a href=\"https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en\" title=\"Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-024</a>) staðfestir víðtækari samkeppnisvandamál innan ESB. Nýjar heimildir (PREC-HIST-009) undirstrika sömu mynd — gengissveigjuleiki tapaðist við evrutöku.",
+      "verdict": "partially_supported",
+      "explanation": "Draghi-skýrslan (<a href=\"https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en\" title=\"Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-024</a>) og BusinessEurope-könnun (<a href=\"https://www.businesseurope.eu/publications/businesseurope-reform-barometer-2025-eu-in-a-new-political-cycle-competitiveness-as-a-true-priority-in-a-complex-global-context/\" title=\"BusinessEurope — Reform Barometer 2025; Reform Barometer 2024\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-026</a>) staðfesta samkeppnishæfnisvandamál innan ESB — framleiðnimunur við Bandaríkin, hátt orkuverð og viðvörun um «hæga dauðaþjáningu». Þetta styður almenna fullyrðinguna um vandræði. Hins vegar fjalla heimildir um ESB í heild en ekki sérstaklega um evruríkin eða evrusvæðið. Enn fremur er engin heimild sem staðfestir sérstaklega að samkeppnishæfni Finnlands hafi minnkað verulega — Finnland er aðeins nefnt í HDI-samanburði (<a href=\"https://hdr.undp.org/data-center/human-development-index\" title=\"UNDP Human Development Report 2024; OECD Better Life Index\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-030</a>), ekki í samkeppnishæfnisgögnum.",
       "supporting_evidence": [
-        {
-          "id": "PREC-DATA-013",
-          "source_name": "OECD Economic Surveys: Finland 2025",
-          "source_url": "https://www.oecd.org/en/publications/oecd-economic-surveys-finland-2025_985d0555-en.html"
-        },
-        {
-          "id": "PREC-HIST-018",
-          "source_name": "Statistics Finland — EU membership impact assessments; Eurostat — convergence indicators",
-          "source_url": "https://stat.fi/en/statistics/khi"
-        },
         {
           "id": "TRADE-DATA-024",
           "source_name": "Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)",
@@ -592,8 +725,41 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Efnahagserfiðleikar Finnlands eiga sér fjölþættar orsakir — Nokia-hrunið, viðskiptaþvinganir vegna Rússlands, niðursveifla í skógiðnaði og öldrun þjóðarinnar. Ekki er hægt að rekja allt til evruaðildarinnar. Þó ber að hafa í huga að fullyrðingin um «evruríkin» almennt er of víð — efnahagsstaða evrulönda er mjög ólík og mörg þeirra hafa haft traustan hagvöxt.",
-      "confidence": 0.78,
+      "missing_context": "Fullyrðingin talar um «evruríkin» en heimildir fjalla um ESB-ríki almennt — þetta er ekki sama gildissviðið. Sértæk gögn um samkeppnishæfni Finnlands vantar algjörlega. Draghi-skýrslan greinir frá ESB-vandamálum en leggur jafnframt til umbætur, og ESB-stuðningsmenn túlka hana sem sönnun þess að ESB viðurkenni vandann og bregðist við.",
+      "confidence": 0.62,
+      "speakers": [
+        {
+          "name": "Lilja Dögg Alfreðsdóttir",
+          "type": "individual",
+          "role": "formaður Framsóknarflokksins",
+          "party": "Framsóknarflokkur",
+          "stance": "neutral",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "Draghi-skýrslan er bara mjög skýr. Hún segir: Ef Evrópa ætlar að ná vopnum sínum, þá verðum við að fara í umfangsmiklar kerfisbreytingar.",
+        "claim_text": "Draghi-skýrslan segir að Evrópa þurfi umfangsmiklar kerfisbreytingar til að ná vopnum sínum.",
+        "category": "trade",
+        "claim_type": "legal_assertion",
+        "confidence": 0.35
+      },
+      "verdict": "supported",
+      "explanation": "<a href=\"https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en\" title=\"Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-024</a> staðfestir kjarnann í fullyrðingunni. Draghi-skýrslan varaði við \"hægri dauða\" (slow agony) ef ESB gripi ekki til aðgerða og lagði til umfangsmiklar kerfisbreytingar: samþættingu fjármagnsmarkaða, endurskoðun samkeppnisreglna, samræmda iðnaðarstefnu og stórfellda einföldun regluverks. Fjárfestingarþörf var metin á 750–800 milljarða evra á ári — um 4,5% af vergri landsframleiðslu ESB.",
+      "supporting_evidence": [
+        {
+          "id": "TRADE-DATA-024",
+          "source_name": "Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)",
+          "source_url": "https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Draghi-skýrslan var hugsuð sem innri umbótaáætlun fyrir ESB, ekki sem rök gegn aðild nýrra ríkja.",
+      "confidence": 0.9,
       "speakers": [
         {
           "name": "Lilja Dögg Alfreðsdóttir",
@@ -653,8 +819,8 @@
         "claim_type": "statistic",
         "confidence": 0.65
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://hdr.undp.org/data-center/human-development-index\" title=\"UNDP Human Development Report 2024; OECD Better Life Index\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-030</a> staðfestir að Ísland var í þriðja sæti á mannþróunarvísitölu Sameinuðu þjóðanna (HDI) 2024 með vísitölu 0,959 — á eftir Sviss og Noregi. Fullyrðingin um «fyrsta sæti» er þó ekki nákvæm samkvæmt nýjustu gögnum, en Ísland hefur áður verið í fyrsta sæti á HDI-listanum og hefur stöðugt verið í efstu sætum. Þar sem fullyrðingin tilgreinir ekki tiltekið ár og Ísland hefur raunverulega verið í efstu sætum, telst hún studd í meginatriðum.",
+      "verdict": "partially_supported",
+      "explanation": "Samkvæmt <a href=\"https://hdr.undp.org/data-center/human-development-index\" title=\"UNDP Human Development Report 2024; OECD Better Life Index\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-030</a> var Ísland í þriðja sæti á mannþróunarvísitölu (HDI) Sameinuðu þjóðanna árið 2024 (gögn frá 2022), á eftir Sviss og Noregi, með HDI-gildi 0,959. <a href=\"https://www.europarl.europa.eu/thinktank/en/document/EPRS_BRI(2026)782591\" title=\"IMF World Economic Outlook; Eurostat; EPRS Briefing on EU-Iceland Relations\" target=\"_blank\" rel=\"noopener\">PREC-DATA-025</a> segir hins vegar að Ísland sé í fyrsta sæti með 0,972, sem stangast á við hina heimildina. Fullyrðingin um «fyrsta sæti» er of víðtæk miðað við áreiðanlegri heimild (<a href=\"https://hdr.undp.org/data-center/human-development-index\" title=\"UNDP Human Development Report 2024; OECD Better Life Index\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-030</a>) sem sýnir þriðja sæti. Ísland er óumdeilanlega meðal fremstu ríkja, en ekki sannanlega í fyrsta sæti.",
       "supporting_evidence": [
         {
           "id": "TRADE-DATA-030",
@@ -662,14 +828,20 @@
           "source_url": "https://hdr.undp.org/data-center/human-development-index"
         },
         {
-          "id": "TRADE-COMP-002",
-          "source_name": "IMF World Economic Outlook Database — October 2024",
-          "source_url": "https://www.imf.org/en/Publications/WEO"
+          "id": "PREC-DATA-025",
+          "source_name": "IMF World Economic Outlook; Eurostat; EPRS Briefing on EU-Iceland Relations",
+          "source_url": "https://www.europarl.europa.eu/thinktank/en/document/EPRS_BRI(2026)782591"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Samkvæmt nýjustu gögnum (HDI 2024, gögn frá 2022) var Ísland í 3. sæti, ekki 1. sæti. HDI mælir lífslíkur, menntun og þjóðartekjur en nær ekki yfir húsnæðiskostnað, tekjudreifingu né efnahagslegan stöðugleika. Öll þrjú efstu ríkin á HDI-listanum (Sviss, Noregur, Ísland) standa utan ESB, en heimild bendir réttilega á að orsakatengsl við ESB-stöðu séu rökvilla.",
-      "confidence": 0.75,
+      "contradicting_evidence": [
+        {
+          "id": "TRADE-DATA-030",
+          "source_name": "UNDP Human Development Report 2024; OECD Better Life Index",
+          "source_url": "https://hdr.undp.org/data-center/human-development-index"
+        }
+      ],
+      "missing_context": "Heimildir stangast á um sætistölu Íslands — <a href=\"https://hdr.undp.org/data-center/human-development-index\" title=\"UNDP Human Development Report 2024; OECD Better Life Index\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-030</a> sýnir 3. sæti (HDI 0,959) en <a href=\"https://www.europarl.europa.eu/thinktank/en/document/EPRS_BRI(2026)782591\" title=\"IMF World Economic Outlook; Eurostat; EPRS Briefing on EU-Iceland Relations\" target=\"_blank\" rel=\"noopener\">PREC-DATA-025</a> segir 1. sæti (HDI 0,972). Mismunurinn gæti stafað af mismunandi útgáfum eða gagnaárum. HDI mælir lífslíkur, menntun og þjóðartekjur en tekur ekki tillit til tekjudreifingar, húsnæðiskostnaðar eða efnahagslegs stöðugleika.",
+      "confidence": 0.72,
       "speakers": [
         {
           "name": "Lilja Dögg Alfreðsdóttir",
@@ -691,28 +863,12 @@
         "claim_type": "legal_assertion",
         "confidence": 0.8
       },
-      "verdict": "supported",
-      "explanation": "Skoðanakannanir sýna stöðuga klofningu þjóðarinnar í ESB-málinu undanfarin ár, með stuðningi á bilinu 30–45% og andstöðu á bilinu 40–50% (<a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — EU polls cross-referenced with Hagstofa consumer confidence index\" target=\"_blank\" rel=\"noopener\">POLL-DATA-009</a>). ESB-málið hefur verið pólitískt viðkvæmt síðan ríkisstjórnin dró umsóknina til baka 2015 (<a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a>) og ESB-stefna hefur verið lykilatriði í myndun ríkisstjórna (<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/\" title=\"Coalition agreements 2009, 2013, 2016, 2017, 2021, 2024; Althingi records\" target=\"_blank\" rel=\"noopener\">POL-DATA-010</a>).",
-      "supporting_evidence": [
-        {
-          "id": "POLL-DATA-009",
-          "source_name": "Gallup Ísland — EU polls cross-referenced with Hagstofa consumer confidence index",
-          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
-        },
-        {
-          "id": "POL-DATA-010",
-          "source_name": "Coalition agreements 2009, 2013, 2016, 2017, 2021, 2024; Althingi records",
-          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/"
-        },
-        {
-          "id": "PARTY-DATA-011",
-          "source_name": "Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews",
-          "source_url": "https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/"
-        }
-      ],
+      "verdict": "unverifiable",
+      "explanation": "Engin heimild í staðreyndagrunni fjallar um skoðanakannanir um ESB-aðild á Íslandi eða skiptingu þjóðarinnar í ESB-málinu undanfarin ár. Heimildir sem boðnar eru fjalla um lagalega ramma ESB (grein 50, stækkunarstefnu, samningaviðræðuferli) en ekkert þar af varpar ljósi á viðhorf íslensks almennings eða hversu klofin þjóðin hefur verið. Fullyrðinguna er ekki hægt að meta með fyrirliggjandi gögnum.",
+      "supporting_evidence": [],
       "contradicting_evidence": [],
-      "missing_context": null,
-      "confidence": 0.8,
+      "missing_context": "Til þyrftu skoðanakannanir (t.d. frá Gallup, MMR eða Maskínu) um afstöðu Íslendinga til ESB-aðildar frá 2013 til 2026. Einnig vantar heimildir um pólitískar ákvarðanir um að taka ESB-málið «af borðinu» (t.d. beiðni ríkisstjórnarinnar 2015 um afturköllun umsóknar).",
+      "confidence": 0.88,
       "speakers": [
         {
           "name": "Guðmundur Ari Sigurjónsson",
@@ -913,6 +1069,115 @@
           "role": "þingflokksformaður Samfylkingarinnar",
           "party": "Samfylkingin",
           "stance": "neutral",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "Ísland stendur í mun sterkari stöðu, til dæmis heldur en síðast þegar við vorum í þessum aðildarviðræðum, er það að þá var uppsjávaraflinn að miklu leyti nýbyrjaður að ganga inn í íslenska lögsögu. En nú erum við komin með sterka veiðireynslu og jafnvel byrjuð að semja um okkar aðild að þessum flökkustofnum.",
+        "claim_text": "Ísland stendur nú í mun sterkari stöðu í aðildarviðræðum um sjávarútveg en síðast vegna þess að uppsjávarafli var þá nýbyrjaður að ganga inn í íslenska lögsögu en nú er Ísland komið með sterka veiðireynslu og byrjað að semja um aðild að flökkustofnum.",
+        "category": "fisheries",
+        "claim_type": "comparison",
+        "confidence": 0.4
+      },
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin samanstendur af tveimur meginþáttum. <a href=\"https://ec.europa.eu/eurostat/databrowser/view/FISH_CA_MAIN/default/table?lang=en\" title=\"Eurostat — Fisheries statistics (fish_ca_main); Hagstofa Íslands\" target=\"_blank\" rel=\"noopener\">FISH-DATA-021</a> staðfestir mikilvægi uppsjávarafla — Ísland veiðir 1,0–1,2 milljónir tonna árlega og er næststærsta veiðiþjóð Evrópu. <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> bendir á að viðræðum 2010–2013 hafi ekki verið lokið í erfiðustu köflum og að raunveruleg samningastaða þurfi að prófast. Hins vegar eru fullyrðingar um tímasetningu uppsjávarafla og «sterka veiðireynslu» ekki beint staðfestar — <a href=\"https://island.is/s/fiskistofa\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> nefnir makrílveiðar eftir 2007 en tengir það ekki við samningastöðu. Þá er mat á samningastöðu í eðli sínu pólitískt mat frekar en staðreynd.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-DATA-021",
+          "source_name": "Eurostat — Fisheries statistics (fish_ca_main); Hagstofa Íslands",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/FISH_CA_MAIN/default/table?lang=en"
+        },
+        {
+          "id": "FISH-DATA-024",
+          "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
+          "source_url": "https://island.is/s/fiskistofa"
+        },
+        {
+          "id": "EEA-DATA-014",
+          "source_name": "Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)",
+          "source_url": "https://ioes.hi.is/en/institute-economic-studies"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Fullyrðingin er blanda af staðreyndum og pólitísku mati. Makríllinn gekk inn í íslenska lögsögu eftir 2007, en fullyrðingin um að Ísland sé «komið með sterka veiðireynslu» er matskennd. POL-DATA-014 bendir á að sameiginleg sjávarútvegsstefna ESB hafi breyst verulega frá 2013 og að sérsniðnar lausnir yrðu hluti samninganna.",
+      "confidence": 0.5,
+      "speakers": [
+        {
+          "name": "Guðmundur Ari Sigurjónsson",
+          "type": "individual",
+          "role": "þingflokksformaður Samfylkingarinnar",
+          "party": "Samfylkingin",
+          "stance": "neutral",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "Erlend fjárfesting er nú þegar heimil upp á 30% af þeim fyrirtækjum sem eru í Kauphöllinni",
+        "claim_text": "Erlend fjárfesting er nú þegar heimil upp á 30% í fyrirtækjum sem eru í Kauphöllinni.",
+        "category": "trade",
+        "claim_type": "statistic",
+        "confidence": 0.35
+      },
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.althingi.is/lagas/nuna/1991034.html\" title=\"Lög um fjárfestingu erlendra aðila í atvinnurekstri nr. 34/1991; Lög um verðbréfaviðskipti\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-023</a> fjallar beint um regluverk erlendrar fjárfestingar í skráðum fyrirtækjum og segir að eftir afnám gjaldeyrishafta 2017 sé erlend verðbréfafjárfesting í skráðum fyrirtækjum «largely open». Heimildin bendir á að 30% mörkin kunni að vísa til samþykkta einstakra fyrirtækja eða eldri haftatímabilsins, en staðfestir ekki að 30% hámark sé almennt lagalegt viðmið. Þvert á móti bendir heimildin til þess að almennt sé engin slík takmörkun í gildi — aðeins geirasértækar takmarkanir (sjávarútvegur, orka, flug). Fullyrðingin er því villandi sem almenn lýsing á gildandi lögum.",
+      "supporting_evidence": [
+        {
+          "id": "TRADE-DATA-023",
+          "source_name": "Lög um fjárfestingu erlendra aðila í atvinnurekstri nr. 34/1991; Lög um verðbréfaviðskipti",
+          "source_url": "https://www.althingi.is/lagas/nuna/1991034.html"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Heimildir staðfesta ekki 30% hámark sem almenna reglu. <a href=\"https://www.althingi.is/lagas/nuna/1991034.html\" title=\"Lög um fjárfestingu erlendra aðila í atvinnurekstri nr. 34/1991; Lög um verðbréfaviðskipti\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-023</a> bendir á að erlend fjárfesting í skráðum fyrirtækjum sé að mestu frjáls eftir afnám gjaldeyrishafta, og að 30% takmarkið gæti átt við samþykktir einstakra fyrirtækja eða eldri höft. Geirasértækar takmarkanir gilda um sjávarútveg, orku og flug.",
+      "confidence": 0.5,
+      "speakers": [
+        {
+          "name": "Þorgerður Katrín Gunnarsdóttir",
+          "type": "individual",
+          "role": "formaður Viðreisnar og utanríkisráðherra",
+          "party": "Viðreisn",
+          "stance": "pro_eu",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "í þeirri skýrslu að það sé einmitt, á eftir að láta á það reyna, hvað er raunverulega hægt að fá með samningum við Evrópusambandið í þessu",
+        "claim_text": "Hagfræðiskýrsla Hagfræðistofnunar frá 2014 benti á að enn ætti eftir að láta á það reyna hvað raunverulega væri hægt að fá með samningum við ESB.",
+        "category": "eea_eu_law",
+        "claim_type": "legal_assertion",
+        "confidence": 0.35
+      },
+      "verdict": "supported",
+      "explanation": "<a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> staðfestir beinlínis að Hagfræðistofnun Háskóla Íslands birti skýslu árið 2014 sem komst að þeirri niðurstöðu að full efnahagsleg áhrif ESB-aðildar væru óviss vegna þess að raunverulegir samningsskilmálar í sjávarútvegiog landbúnaði höfðu aldrei verið reyndir. Skýslan mælti með því að kanna þetta í raunverulegum viðræðum frekar en gefa sér forsendur.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-DATA-014",
+          "source_name": "Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)",
+          "source_url": "https://ioes.hi.is/en/institute-economic-studies"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": null,
+      "confidence": 0.85,
+      "speakers": [
+        {
+          "name": "Þorgerður Katrín Gunnarsdóttir",
+          "type": "individual",
+          "role": "formaður Viðreisnar og utanríkisráðherra",
+          "party": "Viðreisn",
+          "stance": "pro_eu",
           "attribution": "asserted",
           "stance_score": null,
           "credibility": null
@@ -1137,19 +1402,52 @@
     },
     {
       "claim": {
+        "original_quote": "Kristrún þorir ekki einu sinni að mæta hér í þáttinn... hún tók ekki þátt í umræðunni í dag, hefði ekki tjáð sig um Evrópusambandið ef að hún hefði ekki fengið spurningar í óundirbúnum fyrirspurnatíma. Hún gekk út úr þingsal um leið og umræður hófust",
+        "claim_text": "Kristrún Frostadóttir mætti ekki í Silfurbergið til að ræða ESB-málið og tók ekki þátt í þingumræðunni; hún gekk út úr þingsalnum um leið og umræður hófust.",
+        "category": "party_positions",
+        "claim_type": "legal_assertion",
+        "confidence": 0.4
+      },
+      "verdict": "misleading",
+      "explanation": "Fullyrðingin segir að Kristrún Frostadóttir hafi ekki tekið þátt í þingumræðunni og gengið út úr þingsalnum. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T162602.html\" title=\"Alþingi — Kristrún Frostadóttir, forsætisráðherra (andsvar, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">PARTY-PARL-001</a> staðfestir hins vegar að hún tók beinlínis þátt í umræðunni 9. mars 2026 — hún svaraði spurningum og lýsti afstöðu sinni til auðlinda- og sjávarútvegsmála í ESB-samningaviðræðum. Sá hluti fullyrðingarinnar sem varðar þingumræðuna er þannig hrakinn af heimildum. Hvort hún mætti í Silfurbergið er ekki hægt að staðfesta eða hrekja.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [
+        {
+          "id": "PARTY-PARL-001",
+          "source_name": "Alþingi — Kristrún Frostadóttir, forsætisráðherra (andsvar, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T162602.html"
+        }
+      ],
+      "missing_context": null,
+      "confidence": 0.8,
+      "speakers": [
+        {
+          "name": "Guðrún Hafsteinsdóttir",
+          "type": "individual",
+          "role": "formaður Sjálfstæðisflokksins",
+          "party": "Sjálfstæðisflokkur",
+          "stance": "neutral",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
         "original_quote": "Það er ekki meirihluti fyrir því á þingi að ganga í Evrópusambandið. Það var heldur ekki meirihluti fyrir því þegar að var farið í þessa vegferð 2009 í tíð Samfylkingar og Jóhönnu Sigurðardóttur.",
         "claim_text": "Ekki var meirihluti á Alþingi fyrir ESB-aðild þegar farið var í aðildarviðræður 2009 í tíð Samfylkingar og Jóhönnu Sigurðardóttur.",
         "category": "party_positions",
         "claim_type": "legal_assertion",
         "confidence": 0.6
       },
-      "verdict": "supported",
-      "explanation": "Nýjar heimildir styrkja þessa fullyrðingu verulega. <a href=\"https://uni.hi.is/baldurt/files/2012/08/Iceland-EU-Baldur-Alyson-Greham.pdf\" title=\"Capacent Gallup / Social Science Research Institute, University of Iceland\" target=\"_blank\" rel=\"noopener\">PREC-HIST-005</a> staðfestir að ESB-umsóknin 2009 var lögð fram í kjölfar fjármálahrunsins, og <a href=\"https://www.althingi.is/thingmenn/thingflokkar/samfylkingin/\" title=\"Althingi — Session 157 member registry\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-008</a> sýnir að Samfylkingin bar hana fram. Ríkisstjórnin 2009–2013 var Samfylkingin og Vinstri hreyfingin — grænt framboð, en POL-DATA-006 staðfestir að Sjálfstæðisflokkurinn var andvígur ESB-aðild. <a href=\"https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/\" title=\"Althingi records; coalition agreements 2009, 2013, 2017, 2021, 2024; Icelandic media archives\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-011</a> lýsir aðstæðunum: umsóknin var sett fram án þess að skýr meirihluti væri fyrir aðild. VG var skiptur í ESB-málinu og nokkrir þingmenn flokksins greiddu atkvæði gegn umsókninni.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að Samfylkingin leiddi umsóknarferlið 2009 undir forystu Jóhönnu Sigurðardóttur, en engin heimild staðfestir beint að meirihluti á Alþingi hafi verið á móti ESB-aðild á þeim tíma. Samkvæmt <a href=\"https://www.althingi.is/thingmenn/thingflokkar/thingflokkar/\" title=\"Althingi — Party platforms and election results\" target=\"_blank\" rel=\"noopener\">POL-DATA-001</a> höfðu Samfylkingin og Vinstri græn (ríkisstjórnin) ekki einir og sér meirihluta ESB-sinnaðra þingmanna, en atkvæðagreiðslan um umsóknina náði samt fram að ganga. <a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> staðfestir að Samfylkingin stóð að umsókninni 2009. Hins vegar vantar beina heimild um nákvæma afstöðu Alþingis sem heild — fullyrðingin er of víð til að fá fullan stuðning.",
       "supporting_evidence": [
         {
-          "id": "PREC-HIST-005",
-          "source_name": "Capacent Gallup / Social Science Research Institute, University of Iceland",
-          "source_url": "https://uni.hi.is/baldurt/files/2012/08/Iceland-EU-Baldur-Alyson-Greham.pdf"
+          "id": "PARTY-DATA-016",
+          "source_name": "Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16",
+          "source_url": "https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/"
         },
         {
           "id": "POLITICAL-DATA-008",
@@ -1157,25 +1455,63 @@
           "source_url": "https://www.althingi.is/thingmenn/thingflokkar/samfylkingin/"
         },
         {
-          "id": "POL-DATA-006",
-          "source_name": "Sjálfstæðisflokkur — Party congresses and manifestos 1991–2025; Morgunblaðið archives",
-          "source_url": null
-        },
-        {
-          "id": "POLITICAL-DATA-011",
-          "source_name": "Althingi records; coalition agreements 2009, 2013, 2017, 2021, 2024; Icelandic media archives",
-          "source_url": "https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/"
+          "id": "POL-DATA-001",
+          "source_name": "Althingi — Party platforms and election results",
+          "source_url": "https://www.althingi.is/thingmenn/thingflokkar/thingflokkar/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Þótt ekki hafi verið meirihluti fyrir ESB-aðild á Alþingi, samþykkti Alþingi umsóknina með atkvæðum þann 16. júlí 2009. Afstaða einstakra þingmanna skipti meira máli en flokkslínur. Núverandi aðstæður (2026) eru ólíkar kreppuástandi 2009.",
-      "confidence": 0.75,
+      "missing_context": "Engin heimild sýnir nákvæma niðurstöðu atkvæðagreiðslunnar á Alþingi 2009 um ESB-umsóknina. Fullyrðingin segir að meirihluti hafi ekki verið fyrir ESB-aðild, en Alþingi samþykkti umsóknina engu að síður — sem bendir til þess að meirihluti hafi a.m.k. stutt viðræður. Munur er á að styðja aðildarviðræður og að vera «fyrir ESB-aðild». Samkvæmt <a href=\"https://www.althingi.is/thingmenn/thingflokkar/thingflokkar/\" title=\"Althingi — Party platforms and election results\" target=\"_blank\" rel=\"noopener\">POL-DATA-002</a> voru fjórir flokkar á móti ESB-aðild með 33–35 þingsæti, en heimildir ná ekki til þinglegrar afstöðu 2009 sérstaklega.",
+      "confidence": 0.6,
       "speakers": [
         {
           "name": "Guðrún Hafsteinsdóttir",
           "type": "individual",
           "role": "formaður Sjálfstæðisflokksins",
           "party": "Sjálfstæðisflokkur",
+          "stance": "neutral",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "Svein Harald Øygard. Ég ræddi nú þessi mál við hann Svein Harald núna ekki fyrir svo löngu og hann sagði: Þetta var þannig, Verkamannaflokkurinn var opinn fyrir þessu og var að berjast fyrir þessu. En þegar við vorum búin að reikna þetta út, hvað þetta væri mikill kostnaður fyrir norsku þjóðina, þá var bara mjög erfitt að sannfæra hana",
+        "claim_text": "Norskur aðstoðarráðuneytisstjóri, síðar seðlabankastjóri Svein Harald Øygard, sagði að þegar kostnaður ESB-aðildar var reiknaður út fyrir norsku þjóðina hafi verið mjög erfitt að sannfæra hana um inngöngu.",
+        "category": "precedents",
+        "claim_type": "legal_assertion",
+        "confidence": 0.35
+      },
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta bakgrunn fullyrðingarinnar. <a href=\"https://www.ssb.no/en/statbank/list/euvalg\" title=\"Statistics Norway — Election and referendum statistics; Bjørklund (2005) — 'Mot strømmen'\" target=\"_blank\" rel=\"noopener\">POLL-DATA-005</a> og <a href=\"https://www.ssb.no/en/statbank/list/euvalg\" title=\"Statistics Norway — Referendum results 1994; Archer (2005) — 'Norway outside the European Union'\" target=\"_blank\" rel=\"noopener\">POLL-DATA-006</a> sýna að Noregur hafnaði ESB-aðild tvisvar (53,5% árið 1972 og 52,2% árið 1994) þar sem kostnaðarmat og áhyggjur af sjávarútvegi og landbúnaði voru lykilþættir. PREC-HIST-002 staðfestir að 70–75% Norðmanna eru enn andvígir aðild. Engin heimild nefnir hins vegar Svein Harald Øygard sérstaklega, né staðfestir að hann hafi verið aðstoðarráðuneytisstjóri eða seðlabankastjóri sem sagði þessi tilgreindu orð. Kjarninn í fullyrðingunni — að kynning á kostnaði hafi gert sannfæringu erfiða — samrýmist norskum atkvæðagreiðslum, en tilvitnunin er óstaðfest.",
+      "supporting_evidence": [
+        {
+          "id": "POLL-DATA-005",
+          "source_name": "Statistics Norway — Election and referendum statistics; Bjørklund (2005) — 'Mot strømmen'",
+          "source_url": "https://www.ssb.no/en/statbank/list/euvalg"
+        },
+        {
+          "id": "POLL-DATA-006",
+          "source_name": "Statistics Norway — Referendum results 1994; Archer (2005) — 'Norway outside the European Union'",
+          "source_url": "https://www.ssb.no/en/statbank/list/euvalg"
+        },
+        {
+          "id": "PREC-HIST-002",
+          "source_name": "Sentio Research / Nationen polling series",
+          "source_url": null
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Norska fordæmið styður meginatriðið en Svein Harald Øygard er ekki nefndur í neinum heimildum gagnagrunnsins. Auk þess er efnahagslegt samanburðarhæfi takmarkað: Noregur býr yfir miklum olíuauði sem gefur öðruvísi forsendur en á Íslandi (PREC-HIST-002).",
+      "confidence": 0.55,
+      "speakers": [
+        {
+          "name": "Lilja Dögg Alfreðsdóttir",
+          "type": "individual",
+          "role": "formaður Framsóknarflokksins",
+          "party": "Framsóknarflokkur",
           "stance": "neutral",
           "attribution": "asserted",
           "stance_score": null,
@@ -1239,23 +1575,12 @@
         "claim_type": "legal_assertion",
         "confidence": 0.85
       },
-      "verdict": "supported",
-      "explanation": "Bændasamtök Íslands hafa stöðugt lýst yfir andstöðu við ESB-aðild og bent á alvarleg vandamál fyrir íslenskan landbúnað (<a href=\"https://www.bondi.is/frettir/kynningarefni\" title=\"Bændasamtök Íslands — public statements and position papers (2009–2026); Vísir reporting\" target=\"_blank\" rel=\"noopener\">POL-DATA-019</a>, ORG-DATA-002, <a href=\"https://www.bondi.is/frettir/kynningarefni\" title=\"Bændasamtök Íslands — EU membership impact assessment (2025); Ministry of Agriculture — subsidy data\" target=\"_blank\" rel=\"noopener\">POL-DATA-015</a>). Samtökin hafa varað við tapi á tollvernd og samkeppni frá stærri ESB-framleiðendum. Þetta er í samræmi við opinbera afstöðu þeirra.",
-      "supporting_evidence": [
-        {
-          "id": "POL-DATA-015",
-          "source_name": "Bændasamtök Íslands — EU membership impact assessment (2025); Ministry of Agriculture — subsidy data",
-          "source_url": "https://www.bondi.is/frettir/kynningarefni"
-        },
-        {
-          "id": "POL-DATA-019",
-          "source_name": "Bændasamtök Íslands — public statements and position papers (2009–2026); Vísir reporting",
-          "source_url": "https://www.bondi.is/frettir/kynningarefni"
-        }
-      ],
+      "verdict": "unverifiable",
+      "explanation": "Engin heimild í staðreyndagrunninum vitnar beint í yfirlýsingu Bændasamtaka Íslands um að núverandi stefna ESB henti ekki íslenskum landbúnaði. POL-DATA-007 fjallar um afstöðu Framsóknarflokksins, ekki Bændasamtakanna. Efnislega er afstaða landbúnaðarins vel þekkt og samræmist fullyrðingunni, en «Bændasamtökin sögðu í dag» vísar til ákveðinnar yfirlýsingar á ákveðnum degi sem heimildir staðfesta ekki.",
+      "supporting_evidence": [],
       "contradicting_evidence": [],
-      "missing_context": "Bændasamtökin hafa einnig mótað „lágmarkskröfur“ sem sýna að þau undirbúa sig fyrir mögulega ESB-aðild. Innri skiptar skoðanir eru til staðar. Þar að auki gætu ESB-styrkir bætt nokkuð upp tap á tollvernd.",
-      "confidence": 0.85,
+      "missing_context": "Heimildir staðfesta almennt að íslenskur landbúnaður nýtur mikillar tollverndar (40–60% tollar) og að sameiginleg landbúnaðarstefna ESB myndi krefjast grundvallarbreytinga. Bændasamtökin eru þekkt fyrir andstöðu sína við ESB-aðild en engin bein tilvitnun er í boði.",
+      "confidence": 0.65,
       "speakers": [
         {
           "name": "Lilja Dögg Alfreðsdóttir",
@@ -1342,6 +1667,44 @@
       "contradicting_evidence": [],
       "missing_context": "Fullyrðingin felur í sér orsakatengsl sem engin heimild staðfestir óháð — heimildir sýna að andstöðuflokkar hafi haldið þessu fram sem pólitískt rök. Kristrún hefur rökstutt stefnubreytinguna með breyttum alþjóðlegum aðstæðum (stríðið í Úkraínu, Trump-stjórnin) frekar en þroti í efnahagsmálum.",
       "confidence": 0.45,
+      "speakers": [
+        {
+          "name": "Sigmundur Davíð Gunnlaugsson",
+          "type": "individual",
+          "role": "formaður Miðflokksins",
+          "party": "Miðflokkurinn",
+          "stance": "neutral",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "Samfylkingin fór fyrst að rísa þegar að hún setti Evrópumálin til hliðar.",
+        "claim_text": "Samfylkingin fór fyrst að rísa í skoðanakönnunum þegar hún setti Evrópumálin til hliðar.",
+        "category": "polling",
+        "claim_type": "statistic",
+        "confidence": 0.3
+      },
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> staðfestir að Kristrún Frostadóttir hafi sagt fyrir kosningar 2024 að ESB-aðild yrði ekki á dagskrá og sett efnahagsmál í forgang — sem samrýmist hugmyndinni um að Samfylkingin hafi «sett Evrópumálin til hliðar». <a href=\"https://www.althingi.is/thingmenn/thingflokkar/thingflokkar/\" title=\"Althingi — Party platforms and election results\" target=\"_blank\" rel=\"noopener\">POL-DATA-001</a> sýnir að Samfylkingin hafi stutt ESB-aðild frá 2007, sem þýðir að slík hliðrun var athyglisverð. Engin heimild sýnir þó beint orsakasamband milli þess að setja ESB-mál til hliðar og hækkunar í skoðanakönnunum. <a href=\"https://www.visir.is/g/20262853438d/thridjungur-and-vigur-at-kvaeda-greidslunni\" title=\"Gallup Ísland / Vísir — EU referendum survey, March 2026\" target=\"_blank\" rel=\"noopener\">POLL-DATA-016</a> og <a href=\"https://www.gallup.is/frettir/nato-og-esb/\" title=\"Gallup Ísland — EU support by party affiliation (November 2025)\" target=\"_blank\" rel=\"noopener\">POLL-DATA-011</a> sýna flokksbundna skiptingu í ESB-stuðningi en gefa engar upplýsingar um tímalínu stuðnings við Samfylkinguna.",
+      "supporting_evidence": [
+        {
+          "id": "PARTY-DATA-016",
+          "source_name": "Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16",
+          "source_url": "https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/"
+        },
+        {
+          "id": "POL-DATA-001",
+          "source_name": "Althingi — Party platforms and election results",
+          "source_url": "https://www.althingi.is/thingmenn/thingflokkar/thingflokkar/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Heimildir staðfesta aðeins að Samfylkingin hafi sett ESB-málin til hliðar og fengið góðan árangur í kosningum 2024. Orsakatengsl milli þessara tveggja atburða eru ekki sýnd í neinum gögnum — margir þættir gætu hafa ráðið styrk Samfylkingarinnar (nýr formaður, efnahagsmál, andstaða við sitjandi ríkisstjórn). Tímalína kannanastuðnings skortir í heimildunum.",
+      "confidence": 0.4,
       "speakers": [
         {
           "name": "Sigmundur Davíð Gunnlaugsson",
@@ -1534,6 +1897,116 @@
     },
     {
       "claim": {
+        "original_quote": "ef við hefðum ekki farið sjálf í neyðarlögin áður en að sjóðurinn, Alþjóðagjaldeyrissjóðurinn, kom, þá hefðum við ekki getað gert það sem við erum að gera",
+        "claim_text": "Ef Ísland hefði ekki farið sjálft í neyðarlögin áður en AGS kom hefði landið ekki getað gert það sem það gerði.",
+        "category": "sovereignty",
+        "claim_type": "legal_assertion",
+        "confidence": 0.4
+      },
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.althingi.is/lagas/150a/2008125.html\" title=\"Alþingi — Lög nr. 125/2008 um heimild til fjárveitingar úr ríkissjóði vegna sérstakra aðstæðna á fjármálamarkaði o.fl.\" target=\"_blank\" rel=\"noopener\">SOV-DATA-014</a> staðfestir kjarnann í fullyrðingunni. Alþingi samþykkti neyðarlög (lög nr. 125/2008) þann 6. október 2008, þremur vikum áður en Ísland leitaði formlega til AGS þann 24. október. Lögin heimiluðu yfirvöldum að aðgreina innlenda starfsemi bankanna frá erlendum skuldbindingum og stofna nýja banka — forsenda þess að vernda innlánseigendur og halda uppi grunnfjármálaþjónustu. Þetta fyrirkomulag hefði ekki verið mögulegt undir hefðbundnu AGS-áætluninni, sem hefði takmarkað svigrúm yfirvalda.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-014",
+          "source_name": "Alþingi — Lög nr. 125/2008 um heimild til fjárveitingar úr ríkissjóði vegna sérstakra aðstæðna á fjármálamarkaði o.fl.",
+          "source_url": "https://www.althingi.is/lagas/150a/2008125.html"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Heimild bendir á að önnur lögleg úrræði gætu hafa verið möguleg, þótt tíminn hefði verið þröngur. Fullyrðingin um algjöra ómöguleika er því sterk — en meginpunkturinn um mikilvægi tímasetningarinnar er vel studdur. Nýjar heimildir (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:22013A0302(01)\" title=\"Treaty of Lisbon — Protocol on the concerns of the Irish people; Protocol 21 on UK and Ireland (JHA opt-in)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-011</a>, <a href=\"https://eur-lex.europa.eu/statistics/legislative-acts-statistics.html\" title=\"EUR-Lex — Legislation statistics\" target=\"_blank\" rel=\"noopener\">EEA-DATA-003</a>) fjalla ekki um neyðarlögin heldur um fullveldis- og regluverksmál ESB.",
+      "confidence": 0.8,
+      "speakers": [
+        {
+          "name": "Lilja Dögg Alfreðsdóttir",
+          "type": "individual",
+          "role": "formaður Framsóknarflokksins",
+          "party": "Framsóknarflokkur",
+          "stance": "neutral",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "við fengum ekki afgreiðslu á þessu láni vegna þess að Hollendingar blokkeruðu það þannig að við drógum aldrei á það",
+        "claim_text": "Hollendingar blokkeruðu afgreiðslu AGS-lánsins til Íslands vegna þrýstings frá ESB og Ísland dró aldrei á það lán.",
+        "category": "sovereignty",
+        "claim_type": "legal_assertion",
+        "confidence": 0.3
+      },
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.imf.org/en/Countries/ISL\" title=\"IMF — Iceland: Stand-By Arrangement; EFTA Court Case E-16/11 (Icesave)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-012</a> staðfestir meginatriðin: Holland blokkerade endurskoðun AGS-lánsins og tengdi málið við Icesave-deiluna. Heimildin segir að Holland hafi «initially blocked IMF loan disbursement review in late 2008/early 2009, linking it to the Icesave dispute resolution». Fullyrðingin heldur því fram að þrýstingur hafi verið «frá ESB» — en heimildin lýsir þessu sem aðgerð Hollands og Bretlands sem aðildarríkja AGS, ekki sem formlegum ESB-þrýstingi. Hvað varðar lánið sjálft, er ekkert í heimildunum sem staðfestir beint að Ísland hafi «aldrei dregið á» AGS-lánið — heimildin segir aðeins að endurskoðun útborgunar hafi verið tafin.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-012",
+          "source_name": "IMF — Iceland: Stand-By Arrangement; EFTA Court Case E-16/11 (Icesave)",
+          "source_url": "https://www.imf.org/en/Countries/ISL"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Fyrirvarar <a href=\"https://www.imf.org/en/Countries/ISL\" title=\"IMF — Iceland: Stand-By Arrangement; EFTA Court Case E-16/11 (Icesave)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-012</a> benda á að «the exact nature and extent of EU member state pressure on IMF proceedings regarding Iceland is disputed». Fullyrðingin um «þrýsting frá ESB» ofeinfaldar aðstæður — Holland og Bretland beittu þrýstingi sem einstök ríki í AGS-stjórn, ekki í gegnum ESB-stofnanir. Staðfesting á því hvort Ísland hafi aldrei dregið á lánið skortir í heimildunum.",
+      "confidence": 0.45,
+      "speakers": [
+        {
+          "name": "Lilja Dögg Alfreðsdóttir",
+          "type": "individual",
+          "role": "formaður Framsóknarflokksins",
+          "party": "Framsóknarflokkur",
+          "stance": "neutral",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "út af þessum þrýstingi frá Evrópusambandinu þá vorum við meira að segja einangruð innan stjórnar Alþjóðagjaldeyrissjóðsins og bæta því við, það var ekki fyrr en að Bandaríkjamenn fóru að hjálpa okkur",
+        "claim_text": "Ísland var einangrað innan stjórnar AGS vegna þrýstings frá ESB og það var ekki fyrr en Bandaríkjamenn fóru að hjálpa að ástandið breyttist.",
+        "category": "sovereignty",
+        "claim_type": "legal_assertion",
+        "confidence": 0.3
+      },
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.imf.org/en/Countries/ISL\" title=\"IMF — Iceland: Stand-By Arrangement; EFTA Court Case E-16/11 (Icesave)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-012</a> staðfestir að Holland hindraði endurskoðun AGS-lána vegna Icesave-deilunnar, sem skapaði þrýsting á Ísland innan AGS. Orðalagið «einangrað» ýkir þó stöðuna — heimildin lýsir þrýstingi frá einstökum ESB-ríkjum, ekki formlegri einangrun. Hvað varðar Bandaríkjamenn staðfesta <a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"1951 US-Iceland Defence Agreement; 2016 Iceland-US Security Cooperation Agreement; US Department of State bilateral relations factsheet\" target=\"_blank\" rel=\"noopener\">SOV-DATA-008</a> og <a href=\"https://www.nato.int/en/about-us/official-texts-and-resources/strategic-concepts/nato-2022-strategic-concept\" title=\"NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list\" target=\"_blank\" rel=\"noopener\">SOV-DATA-009</a> að engin skjalfest sönnun sé til um beina bandaríska afskipti af AGS-ferlinu til hagsbóta fyrir Ísland. Norðurlöndin, ekki Bandaríkin, veittu viðbótarlán. <a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"US State Department — Bilateral Relations Factsheet; Icelandic media reports (Heimildin, Stundin); Altinget.no\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-021</a> og <a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"US State Department; IISS Strategic Survey; Alcoa and Century Aluminum annual reports; academic analyses of US-Iceland relations\" target=\"_blank\" rel=\"noopener\">SOV-DATA-020</a> fjalla um bandaríska hagsmuni en engin þeirra heimilda staðfestir þá tilteknu frásögn sem fullyrðingin setur fram.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-012",
+          "source_name": "IMF — Iceland: Stand-By Arrangement; EFTA Court Case E-16/11 (Icesave)",
+          "source_url": "https://www.imf.org/en/Countries/ISL"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "SOV-DATA-009",
+          "source_name": "NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list",
+          "source_url": "https://www.nato.int/en/about-us/official-texts-and-resources/strategic-concepts/nato-2022-strategic-concept"
+        },
+        {
+          "id": "SOV-DATA-008",
+          "source_name": "1951 US-Iceland Defence Agreement; 2016 Iceland-US Security Cooperation Agreement; US Department of State bilateral relations factsheet",
+          "source_url": "https://www.state.gov/u-s-relations-with-iceland/"
+        }
+      ],
+      "missing_context": "Eðli og umfang þrýstings ESB-ríkja á AGS-stjórn er umdeilt samkvæmt <a href=\"https://www.imf.org/en/Countries/ISL\" title=\"IMF — Iceland: Stand-By Arrangement; EFTA Court Case E-16/11 (Icesave)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-012</a>. Íslensku stjórnin neitaði á sínum tíma að ESB-umsóknin tengdist fjármálakreppunni. Norðurlöndin og Pólland veittu tvíhliða lán til viðbótar AGS-áætluninni — sú aðstoð kemur ekki fram í fullyrðingunni.",
+      "confidence": 0.4,
+      "speakers": [
+        {
+          "name": "Lilja Dögg Alfreðsdóttir",
+          "type": "individual",
+          "role": "formaður Framsóknarflokksins",
+          "party": "Framsóknarflokkur",
+          "stance": "neutral",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
         "original_quote": "þessi ríkisstjórn, við erum búin að fara af stað með fleiri hjúkrunarrými heldur en öll sjö ár síðustu ríkisstjórnar",
         "claim_text": "Þessi ríkisstjórn hefur farið af stað með fleiri hjúkrunarrými heldur en öll sjö ár síðustu ríkisstjórnar.",
         "category": "other",
@@ -1546,6 +2019,39 @@
       "contradicting_evidence": [],
       "missing_context": null,
       "confidence": 0.2,
+      "speakers": [
+        {
+          "name": "Þorgerður Katrín Gunnarsdóttir",
+          "type": "individual",
+          "role": "formaður Viðreisnar og utanríkisráðherra",
+          "party": "Viðreisn",
+          "stance": "pro_eu",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "Við erum búin að greiða niður skuldir um og lækka skuldir ríkissjóðs um tæplega 8%.",
+        "claim_text": "Ríkisstjórnin hefur lækkað skuldir ríkissjóðs um tæplega 8%.",
+        "category": "other",
+        "claim_type": "statistic",
+        "confidence": 0.35
+      },
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.government.is/topics/economic-affairs-and-economic-outlook/\" title=\"Fjármála- og efnahagsráðuneytið — Ríkisfjármál; Moody's, S&P, Fitch sovereign ratings for Iceland\" target=\"_blank\" rel=\"noopener\">SOV-DATA-013</a> staðfestir að brúttóskuldir ríkissjóðs lækkuðu úr hámarki um 95% af VLF árið 2011 í um 65% árið 2025, sem er um 30 prósentustig á 14 árum. Þar kemur einnig fram að skuldaminnkunin hófst undir ríkisstjórn 2013–2017 og hefur haldið áfram undir öllum síðari ríkisstjórnum. Fullyrðingin um «tæplega 8%» lækkun gæti átt við tiltekið tímabil núverandi ríkisstjórnar, en heimildir greina ekki frá nákvæmri sundurliðun eftir kjörtímabilum. Ekki er hægt að staðfesta hvort 8% sé rétt hlutfall fyrir þá ríkisstjórn sem vísað er til.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-013",
+          "source_name": "Fjármála- og efnahagsráðuneytið — Ríkisfjármál; Moody's, S&P, Fitch sovereign ratings for Iceland",
+          "source_url": "https://www.government.is/topics/economic-affairs-and-economic-outlook/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Heimildin greinir ekki skuldalækkun eftir einstökum ríkisstjórnum. Mismunandi mælikvarðar (brúttó- á móti nettóskuldum, hlutfall af VLF á móti nafnvirði) gefa ólíkar niðurstöður. Lánshæfismatsfyrirtæki benda á að skuldaminnkun ráðist af mörgum þáttum umfram ríkisfjármálastefnu, þar á meðal hagvexti og ytri aðstæðum.",
+      "confidence": 0.4,
       "speakers": [
         {
           "name": "Þorgerður Katrín Gunnarsdóttir",
@@ -1832,34 +2338,56 @@
     },
     {
       "claim": {
+        "original_quote": "Það er pólitísk ákvörðun að setja 40 milljarða, að verja gjaldeyrisforðann á hverju einasta ári en ekki setja það í velferðarkerfið, ekki setja það í göng, ekki setja það í innviðauppbyggingu.",
+        "claim_text": "Það er pólitísk ákvörðun að verja 40 milljörðum króna á hverju ári í gjaldeyrisforðann í stað þess að setja fjármunina í velferðarkerfið, göng eða innviðauppbyggingu.",
+        "category": "currency",
+        "claim_type": "statistic",
+        "confidence": 0.4
+      },
+      "verdict": "supported",
+      "explanation": "<a href=\"https://sedlabanki.is/library/Skraarsafn/Hagtolur/Gjaldeyrisfordi/\" title=\"Seðlabanki Íslands — Alþjóðaforðinn; Fjármálastöðugleikaskýrsla\" target=\"_blank\" rel=\"noopener\">CURR-DATA-006</a> staðfestir bæði töluna og pólitíska eðli ákvörðunarinnar. Áætlaður árlegur kostnaður við gjaldeyrisforðann er 30–50 milljarðar króna, sem samræmist fullyrðingunni um 40 milljarða. Heimildin bendir sérstaklega á að þessi kostnaður sé oft nefndur sem «verð peningalegrar sjálfstæðis» sem mætti nýta annars staðar ef Ísland tæki upp evruna. <a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> undirstrikar vaxtamuninn á milli Seðlabanka Íslands og Seðlabanka Evrópu sem skýrir flutningskostnaðinn. Pólitískt eðli ákvörðunarinnar er augljóst — val milli gjaldmiðilsstöðugleika og innviðafjárfestingar er pólitísk forgangsröðun.",
+      "supporting_evidence": [
+        {
+          "id": "CURR-DATA-006",
+          "source_name": "Seðlabanki Íslands — Alþjóðaforðinn; Fjármálastöðugleikaskýrsla",
+          "source_url": "https://sedlabanki.is/library/Skraarsafn/Hagtolur/Gjaldeyrisfordi/"
+        },
+        {
+          "id": "CURRENCY-DATA-015",
+          "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
+          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Talan 40 milljarðar er gróft mat sem sveiflast eftir vaxtamun og stærð forðans — raunverulegur kostnaður hefur verið á bilinu 30–50 milljarðar. Gjaldeyrisforðinn er ekki einungis kostnaður heldur einnig trygging gegn gjaldeyriskreppum. Upptaka evru myndi afnema þörf á sjálfstæðum forða en jafnframt fjarlægja getu Íslands til að nota gengi og vexti sem aðlögunarverkfæri í efnahagslegum áföllum.",
+      "confidence": 0.83,
+      "speakers": [
+        {
+          "name": "Þorgerður Katrín Gunnarsdóttir",
+          "type": "individual",
+          "role": "formaður Viðreisnar og utanríkisráðherra",
+          "party": "Viðreisn",
+          "stance": "pro_eu",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
         "original_quote": "langar mig að vitna í Joseph Stiglitz sem er nú með Nóbelsverðlaunin í hagfræði. Hann varar ríki við að taka við evru þar sem efnahagssamsetningin er eins og hjá okkur.",
         "claim_text": "Joseph Stiglitz, Nóbelsverðlaunahafi í hagfræði, varar ríki við að taka við evru þar sem efnahagssamsetningin er eins og á Íslandi.",
         "category": "currency",
         "claim_type": "legal_assertion",
         "confidence": 0.55
       },
-      "verdict": "supported",
-      "explanation": "Nýja heimild <a href=\"https://www.jstor.org/stable/1812792\" title=\"Mundell (1961) 'A Theory of Optimum Currency Areas'; Stiglitz (2016) 'The Euro'; CBI Working Papers\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-019</a> staðfestir bæði að Stiglitz hlaut Nóbelsverðlaunin (2001) og að hann hefur ítrekað varað við evrunni, einkum í bók sinni «The Euro» (2016). Þar leggur hann áherslu á að án nægilegra ríkisfjármálatilfærslna og vinnuafls hreyfanleika neyðist aðlögun í gegnum atvinnuleysi frekar en gengislækkun — sérstaklega hætta fyrir lítil jaðarhagkerfi. Ísland uppfyllir ekki viðmið um ákjósanlegt myntsvæði samkvæmt sömu heimild: sérháð hagkerfi (sjávarútvegur, ál, ferðaþjónusta), lítill hreyfanleiki vinnuafls við evrusvæðið og engar ríkisfjármálatilfærslur. Þetta samrýmist vel efni fullyrðingarinnar.",
-      "supporting_evidence": [
-        {
-          "id": "CURRENCY-DATA-019",
-          "source_name": "Mundell (1961) 'A Theory of Optimum Currency Areas'; Stiglitz (2016) 'The Euro'; CBI Working Papers",
-          "source_url": "https://www.jstor.org/stable/1812792"
-        },
-        {
-          "id": "SOV-LEGAL-004",
-          "source_name": "Treaty on the Functioning of the European Union, Article 140",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014"
-        },
-        {
-          "id": "CURR-DATA-005",
-          "source_name": "European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators",
-          "source_url": "https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en"
-        }
-      ],
+      "verdict": "unverifiable",
+      "explanation": "Engin heimild í staðreyndagrunninum fjallar um afstöðu Joseph Stiglitz til evrunnar eða ráðleggingar hans til ríkja með svipaða efnahagssamsetningu og Ísland. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — EU polls cross-referenced with Hagstofa consumer confidence index\" target=\"_blank\" rel=\"noopener\">POLL-DATA-009</a> fjallar um tengsl efnahagslegrar vanlíðunar og ESB-stuðnings á Íslandi, en nefnir ekki Stiglitz. Aðrar heimildir fjalla um viðhorf til ESB-aðildar almennt, háskólasamfélagið eða verkalýðshreyfinguna — ekkert þeirra snertir fullyrðinguna beint.",
+      "supporting_evidence": [],
       "contradicting_evidence": [],
-      "missing_context": "Gagnrýnendur Stiglitz benda á að evrusvæðið hafi þróast frá útgáfu bókar hans, m.a. með Evrópska stöðugleikasjóðnum og NextGenerationEU. Svíþjóð hefur sýnt að hægt er að forðast evruaðild í framkvæmd þótt lögbundin skylda sé til staðar. Heimildin nefnir einnig að margir stofnaðildarríki (Ítalía, Grikkland) uppfylla ekki OCA-viðmið, sem dregur úr hagnýtri þýðingu kenningarinnar sem einfalds prófs.",
-      "confidence": 0.8,
+      "missing_context": "Heimildir úr staðreyndagrunni ná ekki til yfirlýsinga Stiglitz um evruna eða Ísland. Til að staðfesta þyrfti beina heimild úr ritum eða ræðum Stiglitz þar sem hann varar ríki við evrunni í samhengi við efnahagssamsetningu svipaða þeirri sem er á Íslandi.",
+      "confidence": 0.4,
       "speakers": [
         {
           "name": "Lilja Dögg Alfreðsdóttir",
@@ -2016,6 +2544,49 @@
     },
     {
       "claim": {
+        "original_quote": "sagði forsætisráðherra á föstudag á blaðamannafundinum og ítrekaði það í þinginu í dag að þjóðin þarf nú bara ekki að verða einhver sérfræðingur í ESB til að geta kosið 29.",
+        "claim_text": "Forsætisráðherra sagði á blaðamannafundi á föstudagi og ítrekaði í þinginu í dag að þjóðin þurfi ekki að verða sérfræðingar í ESB til að kjósa 29. ágúst.",
+        "category": "sovereignty",
+        "claim_type": "legal_assertion",
+        "confidence": 0.4
+      },
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> staðfestir að forsætisráðherra Kristrún Frostadóttir hafi flutt ræðu á Alþingi í febrúar 2026 og <a href=\"https://www.ruv.is/\" title=\"Althingi debate records; RÚV interviews with PM Kristrún Frostadóttir, February–March 2026\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-019</a> lýsir yfirlýsingum hennar í þingumræðum og viðtölum snemma árs 2026. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> vitnar í ræðu utanríkisráðherra 9. mars 2026 um þjóðaratkvæðagreiðsluna. <a href=\"https://www.stjornarradid.is/verkefni/utanrikismal/evropusamvinna/thjodaratkvaedagreidsla/\" title=\"Government of Iceland — Referendum information materials; Althingi debate records; RÚV coverage\" target=\"_blank\" rel=\"noopener\">POL-DATA-024</a> staðfestir upplýsingaherferð ríkisstjórnarinnar. Engin heimild vitnar þó beint í yfirlýsingu forsætisráðherra um að «þjóðin þurfi ekki að verða sérfræðingar í ESB til að kjósa». Þetta tiltekna orðalag er ekki staðfest, þótt almennt samræmist það boðskap ríkisstjórnarinnar um að þjóðaratkvæðagreiðslan sé lýðræðisæfing sem allir geti tekið þátt í.",
+      "supporting_evidence": [
+        {
+          "id": "PARTY-DATA-016",
+          "source_name": "Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16",
+          "source_url": "https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/"
+        },
+        {
+          "id": "PARTY-DATA-019",
+          "source_name": "Althingi debate records; RÚV interviews with PM Kristrún Frostadóttir, February–March 2026",
+          "source_url": "https://www.ruv.is/"
+        },
+        {
+          "id": "SOV-DATA-006",
+          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Nákvæmt orðalag fullyrðingarinnar — að þjóðin þurfi ekki að verða sérfræðingar — er ekki staðfest í neinum heimildum. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T175023.html\" title=\"Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-003</a> sýnir andstæðu sjónarhorn Sjálfstæðisflokksins, sem krefst þess að ríkisstjórnin upplýsi þjóðina betur áður en kosið er. Tilvísunin í «blaðamannafund á föstudegi» er óstaðfest í heimildum.",
+      "confidence": 0.35,
+      "speakers": [
+        {
+          "name": "Guðrún Hafsteinsdóttir",
+          "type": "individual",
+          "role": "formaður Sjálfstæðisflokksins",
+          "party": "Sjálfstæðisflokkur",
+          "stance": "neutral",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
         "original_quote": "það er algjörlega fordæmalaust að eitthvað ríki hafi ætlað að sækja um aðild að Evrópusambandinu og það sé ekki meirihluti fyrir því á þingi og ekki einu sinni í ríkisstjórn",
         "claim_text": "Það er fordæmalaust að ríki ætli að sækja um ESB-aðild þar sem ekki er meirihluti fyrir því á þingi og ekki einu sinni í ríkisstjórn.",
         "category": "precedents",
@@ -2113,18 +2684,18 @@
         "claim_type": "statistic",
         "confidence": 0.55
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://sedlabanki.is/peningastefna/peningastefnunefnd/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a> staðfestir að Seðlabanki Íslands lækkaði stýrivexti úr 9,25% í 7,25% — samtals um 2,0 prósentustig — á tímabilinu frá hausti 2024 til mars 2026. Fullyrðingin um 2% vaxtarlækkun er þar af leiðandi rétt. Fimm lækkanir í röð frá haustinu 2024 til maí 2025 og síðan tvær til viðbótar náðu þessu markmiði.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> staðfestir að Seðlabankinn hafi lækkað stýrivexti um 2 prósentustig samtals (úr 9,25% niður í 7,25% frá og með byrjun árs 2026). Tölulegi kjarninn er því réttur. Fullyrðingin er þó of óljós — hún tilgreinir hvorki tímaramma, tegund vaxta, né aðrar aðstæður sem setja lækkunina í samhengi. Stýrivextir eru enn langt yfir meðaltali ESB og vaxtalækkun um 2 prósentustig merkir ólíka hluti eftir því hvaða vaxtaumhverfi ræðir.",
       "supporting_evidence": [
         {
-          "id": "CURRENCY-DATA-017",
-          "source_name": "Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar",
-          "source_url": "https://sedlabanki.is/peningastefna/peningastefnunefnd/"
+          "id": "CURRENCY-DATA-015",
+          "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
+          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Spár bentu til frekari lækkana niður í ~5% árið 2027. Seðlabankinn varaði við óvissu vegna launahækkana og húsnæðisverðs. Lækkunin er í prósentustigum, ekki prósentum — munurinn skiptir máli í nákvæmri umræðu.",
-      "confidence": 0.92,
+      "missing_context": "Vextir Seðlabankans standa enn í 7,25% samanborið við 2,75% hjá ESB. Lækkun um 2 prósentustig felur ekki í sér að vaxtamunur við evrusvæðið hafi minnkað á sama tímabili. Fullyrðingin vantar samhengi um tímabil og hvaða vextir er átt við.",
+      "confidence": 0.72,
       "speakers": [
         {
           "name": "Guðmundur Ari Sigurjónsson",
@@ -2189,9 +2760,63 @@
         "claim_type": "statistic",
         "confidence": 0.85
       },
-      "verdict": "supported",
-      "explanation": "Skoðanakönnun SI (febrúar/mars 2026) sýndi að 57% félagsmanna voru andvígir ESB-aðild og hlutfall harðrar andstöðu hafði u.þ.b. tvöfaldast frá 2024 (<a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins (SI) — Membership survey, February/March 2026\" target=\"_blank\" rel=\"noopener\">ORG-DATA-001</a>). Þetta staðfestir bæði vaxandi andstöðu og meirihlutaandstöðu.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta meginatriði fullyrðingarinnar. <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins (SI) — Membership survey, February/March 2026\" target=\"_blank\" rel=\"noopener\">ORG-DATA-001</a> sýnir að 57% félagsmanna SI voru andvígir ESB-aðild í könnun febrúar/mars 2026, þar af 43% mjög andvígir. <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins — Könnun meðal félagsmanna um ESB-aðild\" target=\"_blank\" rel=\"noopener\">POLL-DATA-023</a> sýnir að hlutfall mjög hlyntra félagsmanna lækkaði úr ~17% í ~10% á milli 2024 og 2026, sem styður fullyrðinguna um vaxandi andstöðu. Hins vegar bendir <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins — Annual report 2025; SI policy briefs on CBAM and Horizon Europe\" target=\"_blank\" rel=\"noopener\">POL-DATA-016</a> á að forysta SI styður ESB-aðild, sem sýnir togstreitu innan samtakanna. Fullyrðingin segir «andstaða er að aukast» en heimildir sýna aðeins tvö mælipunkta (2024 og 2026) og aðferðafræði könnunarinnar (úrtaksstærð, svörunarhlutfall) hefur ekki verið staðfest óháð. Meginstefna er studd en orðalagið er afdráttarlausara en gögnin réttlæta.",
       "supporting_evidence": [
+        {
+          "id": "ORG-DATA-001",
+          "source_name": "Samtök iðnaðarins (SI) — Membership survey, February/March 2026",
+          "source_url": "https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb"
+        },
+        {
+          "id": "POLL-DATA-023",
+          "source_name": "Samtök iðnaðarins — Könnun meðal félagsmanna um ESB-aðild",
+          "source_url": "https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "POL-DATA-016",
+          "source_name": "Samtök iðnaðarins — Annual report 2025; SI policy briefs on CBAM and Horizon Europe",
+          "source_url": "https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb"
+        }
+      ],
+      "missing_context": "<a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins — Annual report 2025; SI policy briefs on CBAM and Horizon Europe\" target=\"_blank\" rel=\"noopener\">POL-DATA-016</a> bendir á að forysta SI styður ESB-aðild þrátt fyrir niðurstöðu könnunarinnar — afstaða félagsmanna og forystu er því ekki samhljóða. Könnunin endurspeglar sjónarmið atvinnurekenda og stjórnenda, ekki almennings eða launafólks. Aðferðafræði könnunarinnar (úrtaksstærð, svörunarhlutfall, orðalag spurninga) hefur ekki verið óháð staðfest samkvæmt fyrirvaranum í <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins (SI) — Membership survey, February/March 2026\" target=\"_blank\" rel=\"noopener\">ORG-DATA-001</a>.",
+      "confidence": 0.8,
+      "speakers": [
+        {
+          "name": "Guðrún Hafsteinsdóttir",
+          "type": "individual",
+          "role": "formaður Sjálfstæðisflokksins",
+          "party": "Sjálfstæðisflokkur",
+          "stance": "neutral",
+          "attribution": "asserted",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
+        "original_quote": "stærstu atvinnurekendasamtök Evrópu, Business Europe, skoðanakönnun, þar sem að 80% félagsmanna atvinnulífs í Evrópu sagði að samkeppnishæfni álfunnar og þeirra fyrirtækja væri að fara hratt versnandi",
+        "claim_text": "Stærstu atvinnurekendasamtök Evrópu, Business Europe, birtu skoðanakönnun í síðustu viku þar sem 80% félagsmanna sögðu að samkeppnishæfni fyrirtækja og álfunnar væri að fara hratt versnandi.",
+        "category": "trade",
+        "claim_type": "statistic",
+        "confidence": 0.35
+      },
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.businesseurope.eu/publications/businesseurope-reform-barometer-2025-eu-in-a-new-political-cycle-competitiveness-as-a-true-priority-in-a-complex-global-context/\" title=\"BusinessEurope — Reform Barometer 2025; Reform Barometer 2024\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-026</a> staðfestir fullyrðinguna beint. BusinessEurope gaf út Reform Barometer 2024 þar sem um 80% svarenda töldu samkeppnishæfni fyrirtækja í landi sínu hafa versnað miðað við keppinautaríki utan ESB. Heimildin nefnir sérstaklega áhyggjur af regluverki, orkukostnaði og tækninýsköpunarglufunni gagnvart Bandaríkjunum og Kína. Draghi-skýrslan (<a href=\"https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en\" title=\"Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-024</a>) styður þessa mynd og lýsir skipulagslegum samkeppnisvanda ESB. Nýju heimildarnar bæta við innlendu samhengi — <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins (SI) — Membership survey, February/March 2026\" target=\"_blank\" rel=\"noopener\">ORG-DATA-001</a> og <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins — Könnun meðal félagsmanna um ESB-aðild\" target=\"_blank\" rel=\"noopener\">POLL-DATA-023</a> sýna vaxandi ESB-andstöðu meðal íslenskra atvinnurekenda, sem tengist sömu áhyggjum um samkeppnishæfni.",
+      "supporting_evidence": [
+        {
+          "id": "TRADE-DATA-026",
+          "source_name": "BusinessEurope — Reform Barometer 2025; Reform Barometer 2024",
+          "source_url": "https://www.businesseurope.eu/publications/businesseurope-reform-barometer-2025-eu-in-a-new-political-cycle-competitiveness-as-a-true-priority-in-a-complex-global-context/"
+        },
+        {
+          "id": "TRADE-DATA-024",
+          "source_name": "Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)",
+          "source_url": "https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en"
+        },
         {
           "id": "ORG-DATA-001",
           "source_name": "Samtök iðnaðarins (SI) — Membership survey, February/March 2026",
@@ -2199,8 +2824,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Skoðanakannanir atvinnurekendasamtaka endurspegla sjónarmið eigenda og stjórnenda, ekki starfsmanna eða almennings. Aðferðafræði könnunarinnar hefur ekki verið staðfest af óháðum aðilum.",
-      "confidence": 0.85,
+      "missing_context": "Svarendur BusinessEurope eru landssamtök atvinnurekenda, ekki einstök fyrirtæki — talan 80% á ekki við um 80% evrópskra fyrirtækja. Fullyrðingin segir «í síðustu viku» en ekki er hægt að sannreyna nákvæman útgáfudag könnunarinnar gagnvart fullyrðingunni. Auk þess endurspegla skoðanakannanir atvinnurekenda ekki endilega heildstæða efnahagslega mynd.",
+      "confidence": 0.82,
       "speakers": [
         {
           "name": "Guðrún Hafsteinsdóttir",
@@ -2222,8 +2847,8 @@
         "claim_type": "legal_assertion",
         "confidence": 0.65
       },
-      "verdict": "supported",
-      "explanation": "Fullyrðingin hefur þrjá þætti og allir eiga sér stoð. <a href=\"https://enlargement.ec.europa.eu/countries/montenegro_en\" title=\"European Commission — Montenegro progress reports 2012–2025\" target=\"_blank\" rel=\"noopener\">PREC-HIST-016</a> staðfestir að Svartfjallaland — með svipað stærð og Ísland — eigi í erfiðleikum með stjórnsýslubyrðar 33 samningakafla, og bendir á að Ísland, með enn minni skrifstofu, myndi standa frammi fyrir sömu áskorunum. <a href=\"https://www.eftasurv.int/esa-at-a-glance/publications/scoreboard/internal-market-scoreboard-no-53-february-2024\" title=\"EFTA Surveillance Authority — Internal Market Scoreboard 2024\" target=\"_blank\" rel=\"noopener\">EEA-DATA-007</a> sýnir að ESA opnaði 25–35 brotamál á ári gegn Íslandi, sem gefur til kynna takmarkaða getu til innleiðingar. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland accession progress reports\" target=\"_blank\" rel=\"noopener\">PREC-HIST-004</a> staðfestir að í viðræðunum 2010–2013 náðist aldrei að loka neinum kafla endanlega. Hvað kostnaðarmat varðar styðja heimildir fullyrðinguna óbeint — engin heimild vísar í slíkt mat og <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Institute of International Affairs, University of Iceland — EU membership cost analysis\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-010</a> sýnir einungis áætluð framlög til ESB-fjárhagsáætlunar (100–180 milljónir evra nettó á ári).",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin inniheldur þrjár aðskildar staðhæfingar: (1) Ísland hafi litla stjórnsýslu, (2) aðlögunarviðræður myndu leggjast þungt á stjórnkerfið, og (3) kostnaðarmat hafi ekki verið lagt fram. <a href=\"https://enlargement.ec.europa.eu/countries/montenegro_en\" title=\"European Commission — Montenegro progress reports 2012–2025\" target=\"_blank\" rel=\"noopener\">PREC-HIST-016</a> staðfestir að Svartfjallaland — með stærri stjórnsýslu en Ísland — glímir við afkastaskorð í 33 samningaköflum, og <a href=\"https://eur-lex.europa.eu/EN/legal-content/summary/iceland-agriculture-fisheries-and-food-safety.html\" title=\"EUR-Lex — Iceland agriculture assessment; European Commission screening reports\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-024</a> sýnir að Framkvæmdastjórnin taldi íslenska stjórnsýslu vanbúna til að innleiða sameiginlegu landbúnaðarstefnuna. Þetta styður fyrstu tvær staðhæfingarnar. Hins vegar staðfesta engar heimildir þriðju staðhæfinguna um að kostnaðarmat hafi ekki verið lagt fram — <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> nefnir að Hagfræðistofnun HÍ birti greiningu á efnahagslegum áhrifum ESB-aðildar árið 2014.",
       "supporting_evidence": [
         {
           "id": "PREC-HIST-016",
@@ -2231,24 +2856,30 @@
           "source_url": "https://enlargement.ec.europa.eu/countries/montenegro_en"
         },
         {
-          "id": "EEA-DATA-007",
-          "source_name": "EFTA Surveillance Authority — Internal Market Scoreboard 2024",
-          "source_url": "https://www.eftasurv.int/esa-at-a-glance/publications/scoreboard/internal-market-scoreboard-no-53-february-2024"
+          "id": "AGRI-DATA-024",
+          "source_name": "EUR-Lex — Iceland agriculture assessment; European Commission screening reports",
+          "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/iceland-agriculture-fisheries-and-food-safety.html"
         },
         {
-          "id": "PREC-HIST-004",
-          "source_name": "European Commission — Iceland accession progress reports",
+          "id": "PREC-DATA-037",
+          "source_name": "European Commission Iceland Progress Reports / Althingi committee records",
+          "source_url": "https://www.consilium.europa.eu/en/topics/eu-enlargement/"
+        },
+        {
+          "id": "EEA-LEGAL-020",
+          "source_name": "European Commission — Opinion on Iceland's application for membership of the European Union, SEC(2010) 153",
           "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
-        },
-        {
-          "id": "TRADE-COMP-005",
-          "source_name": "EFTA Secretariat — EFTA budget; various academic estimates",
-          "source_url": "https://www.efta.int/about-efta/efta-secretariat/efta-budget"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Ísland er þegar búið að innleiða um 70–75% af regluverki innri markaðarins í gegnum EES-samninginn (<a href=\"https://www.eftasurv.int/internal-market/implementing-eea-law-national-law/internal-market-scoreboards\" title=\"EFTA Surveillance Authority — Internal Market Scoreboard\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-001</a>, SOV-LEGAL-009), sem dregur úr byrðinni miðað við ríki sem hefja innleiðingu frá grunni. Reynsla aðildarviðræðnanna 2010–2013 sýndi hröð framvindu (27 kaflar opnaðir á 3 árum) einmitt vegna þessarar lögsamræmingar. Fullyrðingin um «marga milljarða króna» er ekki staðfest með beinum tölum — heimildir sýna aðeins áætlaðar fjárhagslegar skuldbindingar við ESB-fjárhagsáætlun, ekki heildarkostnað vegferðarinnar.",
-      "confidence": 0.7,
+      "contradicting_evidence": [
+        {
+          "id": "EEA-DATA-014",
+          "source_name": "Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)",
+          "source_url": "https://ioes.hi.is/en/institute-economic-studies"
+        }
+      ],
+      "missing_context": "Reynsla Íslands frá 2010–2013 sýnir að 11 af 27 opnuðum köflum lokuðust á aðeins 18 mánuðum vegna mikillar EES-samræmingar, sem dregur úr ímynd fullkominnar stjórnsýsluþrengingar. Auk þess birti Hagfræðistofnun HÍ efnahagslega greiningu 2014 — þótt hún sé ekki formlegt kostnaðarmat ríkisstjórnarinnar bendir hún til þess að einhver greining hafi farið fram. Fullyrðingin er of víð um kostnaðarmatið án þess að tilgreina nákvæmlega hvers konar mat vanti.",
+      "confidence": 0.6,
       "speakers": [
         {
           "name": "Guðrún Hafsteinsdóttir",
@@ -2313,17 +2944,17 @@
       "party": "Viðreisn",
       "role_in_article": "guest",
       "attribution_type": "asserted",
-      "claim_count": 13,
+      "claim_count": 17,
       "verdicts": {
-        "supported": 3,
-        "partially_supported": 7,
+        "supported": 5,
+        "partially_supported": 9,
         "unverifiable": 2,
         "misleading": 1
       },
       "stance": "pro_eu",
       "slug": "thorgerdur-katrin-gunnarsdottir",
-      "mention_count": 36,
-      "credibility": 0.68,
+      "mention_count": 39,
+      "credibility": 0.66,
       "speech_count": 197
     },
     {
@@ -2332,35 +2963,18 @@
       "party": "Framsóknarflokkur",
       "role_in_article": "guest",
       "attribution_type": "asserted",
-      "claim_count": 11,
+      "claim_count": 17,
       "verdicts": {
-        "partially_supported": 5,
-        "supported": 5,
-        "misleading": 1
+        "partially_supported": 10,
+        "supported": 4,
+        "misleading": 1,
+        "unverifiable": 2
       },
       "stance": "neutral",
       "slug": "lilja-dogg-alfredsdottir",
       "mention_count": 5,
-      "credibility": 0.61,
+      "credibility": 0.55,
       "speech_count": 17
-    },
-    {
-      "name": "Guðrún Hafsteinsdóttir",
-      "role": "formaður Sjálfstæðisflokksins",
-      "party": "Sjálfstæðisflokkur",
-      "role_in_article": "guest",
-      "attribution_type": "asserted",
-      "claim_count": 11,
-      "verdicts": {
-        "misleading": 1,
-        "partially_supported": 5,
-        "supported": 5
-      },
-      "stance": "neutral",
-      "slug": "gudrun-hafsteinsdottir",
-      "mention_count": 4,
-      "credibility": 0.59,
-      "speech_count": 41
     },
     {
       "name": "Sigmundur Davíð Gunnlaugsson",
@@ -2368,17 +2982,35 @@
       "party": "Miðflokkurinn",
       "role_in_article": "guest",
       "attribution_type": "asserted",
-      "claim_count": 10,
+      "claim_count": 14,
       "verdicts": {
-        "supported": 3,
+        "partially_supported": 12,
         "misleading": 1,
-        "partially_supported": 6
+        "supported": 1
       },
       "stance": "neutral",
       "slug": "sigmundur-david-gunnlaugsson",
       "mention_count": 11,
-      "credibility": 0.57,
+      "credibility": 0.58,
       "speech_count": 259
+    },
+    {
+      "name": "Guðrún Hafsteinsdóttir",
+      "role": "formaður Sjálfstæðisflokksins",
+      "party": "Sjálfstæðisflokkur",
+      "role_in_article": "guest",
+      "attribution_type": "asserted",
+      "claim_count": 14,
+      "verdicts": {
+        "misleading": 2,
+        "partially_supported": 9,
+        "supported": 3
+      },
+      "stance": "neutral",
+      "slug": "gudrun-hafsteinsdottir",
+      "mention_count": 5,
+      "credibility": 0.6,
+      "speech_count": 41
     },
     {
       "name": "Guðmundur Ari Sigurjónsson",
@@ -2386,15 +3018,16 @@
       "party": "Samfylkingin",
       "role_in_article": "guest",
       "attribution_type": "asserted",
-      "claim_count": 6,
+      "claim_count": 7,
       "verdicts": {
-        "supported": 3,
-        "partially_supported": 3
+        "unverifiable": 1,
+        "partially_supported": 5,
+        "supported": 1
       },
       "stance": "neutral",
       "slug": "gudmundur-ari-sigurjonsson",
       "mention_count": 3,
-      "credibility": 0.68,
+      "credibility": 0.66,
       "speech_count": 3
     },
     {
@@ -2410,7 +3043,7 @@
       "stance": "neutral",
       "slug": "asthildur-loa-thorsdottir",
       "mention_count": 1,
-      "credibility": 0.5,
+      "credibility": null,
       "speech_count": 16
     }
   ],

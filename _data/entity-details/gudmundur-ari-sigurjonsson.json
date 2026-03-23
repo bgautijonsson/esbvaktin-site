@@ -7,7 +7,7 @@
   "party": "Samfylkingin",
   "stance": "mixed",
   "stance_score": 0.33,
-  "credibility": 0.68,
+  "credibility": 0.66,
   "attribution_counts": {
     "asserted": 7,
     "quoted": 17,
@@ -21,9 +21,9 @@
     "last_speech": "2026-03-10"
   },
   "scorecard": {
-    "partially_supported": 9,
-    "supported": 8,
-    "unverifiable": 1
+    "partially_supported": 12,
+    "supported": 5,
+    "unverifiable": 2
   },
   "claims": [
     {
@@ -140,32 +140,28 @@
     {
       "claim_text": "Tækifæri ESB-aðildar snúa meðal annars að gjaldmiðli og vöxtum.",
       "original_quote": "Við vitum að tækifærin snúa meðal annars að gjaldmiðli og vöxtum",
-      "verdict": "supported",
-      "explanation": "Fullyrðingin er almenn en rétt. <a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> sýnir að stýrivextir Seðlabanka Íslands hafa verið um 5,5 prósentustigum hærri en Seðlabanka Evrópu að meðaltali, sem skilar sér í hærri lánskostnaði. <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Articles 8 and 17–26; Protocols 1 and 47\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-008</a> og <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> staðfesta að efnahags- og myntbandalag fellur utan EES og aðeins ESB-aðild myndi opna leið að evrutöku. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> sýnir vaxtamuninn á húsnæðislánum — 8–9% á Íslandi á móti um 3,4% í evrusvæðinu. Gjaldmiðils- og vaxtamál eru þannig meðal helstu tækifæra ESB-aðildar samkvæmt heimildum.",
-      "missing_context": "Evrutaka myndi ekki verða strax við aðild — ERM II-tímabil og Maastricht-viðmið þyrfti að uppfylla. Lægri vextir gætu hækkað húsnæðisverð (<a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a>). Tap á sjálfstæðri peningastefnu er jafnframt áhætta sem fullyrðingin nefnir ekki.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> staðfestir að ESB-aðild myndi ná til peningamálastefnu (evrunnar) sem fellur utan EES. Gjaldmiðils- og vaxtamál eru því meðal þess sem breytist við ESB-aðild. Fullyrðingin er þó mjög almenn — «tækifæri ESB-aðildar snúa meðal annars að gjaldmiðli og vöxtum» — og heimildir gefa blandaða mynd. <a href=\"https://px.hagstofa.is/pxis/pxweb/is/Samfelag/Samfelag__husnaedi/\" title=\"Hagstofa Íslands — Housing Statistics; Seðlabanki Íslands — Financial Stability Report 2025\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-008</a> bendir á að lægri vextir án aukins framboðs myndu fyrst og fremst hækka fasteignaverð, sem er ekki einhlítt tækifæri.",
+      "missing_context": "Hvort lægri vextir eru «tækifæri» fer eftir samhengi — á húsnæðismarkaði gætu þeir aukið verðbólgu eigna. Ísland þyrfti að uppfylla Maastricht-viðmið áður en það gæti tekið upp evruna, sem gæti tekið mörg ár. Sjálfstæð peningamálastefna (vaxtastig, gengi) myndi tapast, sem er bæði áhætta og tækifæri.",
       "supporting_evidence": [
-        {
-          "id": "CURRENCY-DATA-015",
-          "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
-          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
-        },
-        {
-          "id": "EEA-LEGAL-008",
-          "source_name": "EEA Agreement, Articles 8 and 17–26; Protocols 1 and 47",
-          "source_url": "https://www.efta.int/eea/eea-agreement"
-        },
         {
           "id": "EEA-LEGAL-022",
           "source_name": "EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'",
           "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
         },
         {
-          "id": "HOUS-DATA-005",
-          "source_name": "Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase",
-          "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
+          "id": "EEA-LEGAL-003",
+          "source_name": "EEA Agreement, Article 1 and Protocol 47",
+          "source_url": "https://www.efta.int/eea/eea-agreement"
         }
       ],
-      "contradicting_evidence": [],
+      "contradicting_evidence": [
+        {
+          "id": "HOUS-DATA-008",
+          "source_name": "Hagstofa Íslands — Housing Statistics; Seðlabanki Íslands — Financial Stability Report 2025",
+          "source_url": "https://px.hagstofa.is/pxis/pxweb/is/Samfelag/Samfelag__husnaedi/"
+        }
+      ],
       "category": "currency",
       "attribution": "quoted",
       "article_slug": "svarar-ekki-beint-um-undanthagur-en-segir-stodu-islands-sterka",
@@ -286,26 +282,10 @@
     {
       "claim_text": "Í yfir tíu ár hefur þjóðin verið klofin um ESB-málið eftir að kosturinn var tekinn af borðinu.",
       "original_quote": "Í yfir tíu ár hefur þjóðin í rauninni, hún hefur verið klofin vegna þess að þessi kostur var tekinn af borðinu",
-      "verdict": "supported",
-      "explanation": "Skoðanakannanir sýna stöðuga klofningu þjóðarinnar í ESB-málinu undanfarin ár, með stuðningi á bilinu 30–45% og andstöðu á bilinu 40–50% (<a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — EU polls cross-referenced with Hagstofa consumer confidence index\" target=\"_blank\" rel=\"noopener\">POLL-DATA-009</a>). ESB-málið hefur verið pólitískt viðkvæmt síðan ríkisstjórnin dró umsóknina til baka 2015 (<a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a>) og ESB-stefna hefur verið lykilatriði í myndun ríkisstjórna (<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/\" title=\"Coalition agreements 2009, 2013, 2016, 2017, 2021, 2024; Althingi records\" target=\"_blank\" rel=\"noopener\">POL-DATA-010</a>).",
-      "missing_context": null,
-      "supporting_evidence": [
-        {
-          "id": "POLL-DATA-009",
-          "source_name": "Gallup Ísland — EU polls cross-referenced with Hagstofa consumer confidence index",
-          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
-        },
-        {
-          "id": "POL-DATA-010",
-          "source_name": "Coalition agreements 2009, 2013, 2016, 2017, 2021, 2024; Althingi records",
-          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/"
-        },
-        {
-          "id": "PARTY-DATA-011",
-          "source_name": "Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews",
-          "source_url": "https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/"
-        }
-      ],
+      "verdict": "unverifiable",
+      "explanation": "Engin heimild í staðreyndagrunni fjallar um skoðanakannanir um ESB-aðild á Íslandi eða skiptingu þjóðarinnar í ESB-málinu undanfarin ár. Heimildir sem boðnar eru fjalla um lagalega ramma ESB (grein 50, stækkunarstefnu, samningaviðræðuferli) en ekkert þar af varpar ljósi á viðhorf íslensks almennings eða hversu klofin þjóðin hefur verið. Fullyrðinguna er ekki hægt að meta með fyrirliggjandi gögnum.",
+      "missing_context": "Til þyrftu skoðanakannanir (t.d. frá Gallup, MMR eða Maskínu) um afstöðu Íslendinga til ESB-aðildar frá 2013 til 2026. Einnig vantar heimildir um pólitískar ákvarðanir um að taka ESB-málið «af borðinu» (t.d. beiðni ríkisstjórnarinnar 2015 um afturköllun umsóknar).",
+      "supporting_evidence": [],
       "contradicting_evidence": [],
       "category": "party_positions",
       "attribution": "asserted",
@@ -414,16 +394,47 @@
       "article_date": "2026-03-10"
     },
     {
-      "claim_text": "Vextir hafa lækkað um 2% á Íslandi.",
-      "original_quote": "hér eru vextir búnir að lækka um 2%.",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://sedlabanki.is/peningastefna/peningastefnunefnd/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a> staðfestir að Seðlabanki Íslands lækkaði stýrivexti úr 9,25% í 7,25% — samtals um 2,0 prósentustig — á tímabilinu frá hausti 2024 til mars 2026. Fullyrðingin um 2% vaxtarlækkun er þar af leiðandi rétt. Fimm lækkanir í röð frá haustinu 2024 til maí 2025 og síðan tvær til viðbótar náðu þessu markmiði.",
-      "missing_context": "Spár bentu til frekari lækkana niður í ~5% árið 2027. Seðlabankinn varaði við óvissu vegna launahækkana og húsnæðisverðs. Lækkunin er í prósentustigum, ekki prósentum — munurinn skiptir máli í nákvæmri umræðu.",
+      "claim_text": "Ísland stendur nú í mun sterkari stöðu í aðildarviðræðum um sjávarútveg en síðast vegna þess að uppsjávarafli var þá nýbyrjaður að ganga inn í íslenska lögsögu en nú er Ísland komið með sterka veiðireynslu og byrjað að semja um aðild að flökkustofnum.",
+      "original_quote": "Ísland stendur í mun sterkari stöðu, til dæmis heldur en síðast þegar við vorum í þessum aðildarviðræðum, er það að þá var uppsjávaraflinn að miklu leyti nýbyrjaður að ganga inn í íslenska lögsögu. En nú erum við komin með sterka veiðireynslu og jafnvel byrjuð að semja um okkar aðild að þessum flökkustofnum.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin samanstendur af tveimur meginþáttum. <a href=\"https://ec.europa.eu/eurostat/databrowser/view/FISH_CA_MAIN/default/table?lang=en\" title=\"Eurostat — Fisheries statistics (fish_ca_main); Hagstofa Íslands\" target=\"_blank\" rel=\"noopener\">FISH-DATA-021</a> staðfestir mikilvægi uppsjávarafla — Ísland veiðir 1,0–1,2 milljónir tonna árlega og er næststærsta veiðiþjóð Evrópu. <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> bendir á að viðræðum 2010–2013 hafi ekki verið lokið í erfiðustu köflum og að raunveruleg samningastaða þurfi að prófast. Hins vegar eru fullyrðingar um tímasetningu uppsjávarafla og «sterka veiðireynslu» ekki beint staðfestar — <a href=\"https://island.is/s/fiskistofa\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> nefnir makrílveiðar eftir 2007 en tengir það ekki við samningastöðu. Þá er mat á samningastöðu í eðli sínu pólitískt mat frekar en staðreynd.",
+      "missing_context": "Fullyrðingin er blanda af staðreyndum og pólitísku mati. Makríllinn gekk inn í íslenska lögsögu eftir 2007, en fullyrðingin um að Ísland sé «komið með sterka veiðireynslu» er matskennd. POL-DATA-014 bendir á að sameiginleg sjávarútvegsstefna ESB hafi breyst verulega frá 2013 og að sérsniðnar lausnir yrðu hluti samninganna.",
       "supporting_evidence": [
         {
-          "id": "CURRENCY-DATA-017",
-          "source_name": "Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar",
-          "source_url": "https://sedlabanki.is/peningastefna/peningastefnunefnd/"
+          "id": "FISH-DATA-021",
+          "source_name": "Eurostat — Fisheries statistics (fish_ca_main); Hagstofa Íslands",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/FISH_CA_MAIN/default/table?lang=en"
+        },
+        {
+          "id": "FISH-DATA-024",
+          "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
+          "source_url": "https://island.is/s/fiskistofa"
+        },
+        {
+          "id": "EEA-DATA-014",
+          "source_name": "Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)",
+          "source_url": "https://ioes.hi.is/en/institute-economic-studies"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "fisheries",
+      "attribution": "asserted",
+      "article_slug": "25-thattur-silfursins-stefnt-ad-kosningu-um-esb-i-sumar",
+      "article_title": "25. þáttur Silfursins: Stefnt að kosningu um ESB í sumar",
+      "article_source": "Silfrið (RÚV)",
+      "article_date": "2026-03-10"
+    },
+    {
+      "claim_text": "Vextir hafa lækkað um 2% á Íslandi.",
+      "original_quote": "hér eru vextir búnir að lækka um 2%.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> staðfestir að Seðlabankinn hafi lækkað stýrivexti um 2 prósentustig samtals (úr 9,25% niður í 7,25% frá og með byrjun árs 2026). Tölulegi kjarninn er því réttur. Fullyrðingin er þó of óljós — hún tilgreinir hvorki tímaramma, tegund vaxta, né aðrar aðstæður sem setja lækkunina í samhengi. Stýrivextir eru enn langt yfir meðaltali ESB og vaxtalækkun um 2 prósentustig merkir ólíka hluti eftir því hvaða vaxtaumhverfi ræðir.",
+      "missing_context": "Vextir Seðlabankans standa enn í 7,25% samanborið við 2,75% hjá ESB. Lækkun um 2 prósentustig felur ekki í sér að vaxtamunur við evrusvæðið hafi minnkað á sama tímabili. Fullyrðingin vantar samhengi um tímabil og hvaða vextir er átt við.",
+      "supporting_evidence": [
+        {
+          "id": "CURRENCY-DATA-015",
+          "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
+          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
         }
       ],
       "contradicting_evidence": [],
@@ -629,7 +640,7 @@
       "title": "25. þáttur Silfursins: Stefnt að kosningu um ESB í sumar",
       "source": "Silfrið (RÚV)",
       "date": "2026-03-10",
-      "claim_count": 6,
+      "claim_count": 7,
       "attribution_types": [
         "asserted"
       ]

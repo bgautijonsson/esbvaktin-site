@@ -10,8 +10,8 @@
   "summary": "Greindar 24 fullyrðingar .",
   "capsule": "Hagvöxtur Póllands — á bilinu 3–5% árlega — og kyrrstæðni Ítalíu á síðustu tveimur áratugum eru vel skjalfestar staðreyndir sem greinin hefur rétt. Athyglisvert er að greinin tengir orkuháðan hagvöxt við ESB-löndin, en sleppir því að Ísland er þegar komið lengst allra OECD-ríkja í endurnýjanlegri raforku með nánast 100% hlutfall — sem gerir samanburð á orkukjörum Íslands og meginlands Evrópu talsvert flóknari. Þeim sem vilja kafa dýpra er ráðlegt að skoða Draghi-skýrsluna frá september 2024, sem er viðurkenndasta nýlega greining á samkeppnisfalli ESB og fjallar sérstaklega um hvernig tvö- til þrefalt hærra orkuverð í ESB borið saman við Bandaríkin er einn helsti orsakaþátturinn.",
   "verdict_counts": {
-    "partially_supported": 8,
-    "supported": 2
+    "partially_supported": 9,
+    "supported": 1
   },
   "claim_count": 10,
   "dominant_category": "trade",
@@ -346,28 +346,28 @@
         "claim_type": "opinion",
         "confidence": 0.9
       },
-      "verdict": "supported",
-      "explanation": "Heimildir staðfesta mikinn mun á hagþróun ESB-ríkja. <a href=\"https://cohesiondata.ec.europa.eu/countries/IE\" title=\"Eurostat; European Commission — Cohesion Policy data for Ireland\" target=\"_blank\" rel=\"noopener\">PREC-DATA-016</a> sýnir öran vöxt Írlands innan ESB á meðan <a href=\"https://www.oecd.org/en/publications/oecd-economic-surveys-finland-2025_985d0555-en.html\" title=\"OECD Economic Surveys: Finland 2025\" target=\"_blank\" rel=\"noopener\">PREC-DATA-013</a> lýsir stöðnun Finnlands eftir 2008. <a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG\" title=\"World Bank — World Development Indicators\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-009</a> sýnir mismunandi vaxtarmynstur Norðurlandanna. Rökin eru gild — ef ESB væri eina skýringin á stöðnun ætti hún að birtast jafnt í öllum aðildarríkjum.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://ec.europa.eu/eurostat/databrowser/view/sdg_10_10/default/table\" title=\"Eurostat GDP per capita in PPS; European Commission Enlargement Reviews\" target=\"_blank\" rel=\"noopener\">PREC-DATA-023</a> sýnir augljósan mun á efnahagslegri þróun ESB-ríkja: Pólland hækkaði úr 49% í 81% af ESB-meðaltali en Grikkland lenti í skuldakreppu. <a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG\" title=\"World Bank — World Development Indicators\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-009</a> og <a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=IS\" title=\"World Bank — GDP growth (annual %) (NY.GDP.MKTP.KD.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-014</a> sýna misjafna hagvaxtarsveiflur meðal Norðurlandanna. Þessi gögn styðja fyrri hluta fullyrðingarinnar — að efnahagsleg frammistaða hafi verið mismunandi. Hins vegar er seinni hlutinn, þ.e. orsakaályktunin um að ESB-samstarfið sem slíkt sé ekki skýring, túlkun höfundar sem gögnin ein og sér rökstyðja ekki. Mismunandi árangur gæti stafað af mörgum þáttum umfram ESB-aðild.",
       "supporting_evidence": [
         {
-          "id": "PREC-DATA-016",
-          "source_name": "Eurostat; European Commission — Cohesion Policy data for Ireland",
-          "source_url": "https://cohesiondata.ec.europa.eu/countries/IE"
-        },
-        {
-          "id": "PREC-DATA-013",
-          "source_name": "OECD Economic Surveys: Finland 2025",
-          "source_url": "https://www.oecd.org/en/publications/oecd-economic-surveys-finland-2025_985d0555-en.html"
+          "id": "PREC-DATA-023",
+          "source_name": "Eurostat GDP per capita in PPS; European Commission Enlargement Reviews",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/sdg_10_10/default/table"
         },
         {
           "id": "CURRENCY-DATA-009",
           "source_name": "World Bank — World Development Indicators",
           "source_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG"
+        },
+        {
+          "id": "CURRENCY-DATA-014",
+          "source_name": "World Bank — GDP growth (annual %) (NY.GDP.MKTP.KD.ZG)",
+          "source_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=IS"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Þótt röksemdafærslan sé gild er hún ekki sönnun. Sameiginleg stefna (t.d. evran) gæti haft mismunandi áhrif á mismunandi hagkerfi — sem einmitt gæti verið hluti vandans.",
-      "confidence": 0.75,
+      "missing_context": "Fylgni milli mismunandi efnahagslegrar þróunar og ESB-aðildar er flókin — samanburður verður að taka tillit til upphafsaðstæðna, stærðar hagkerfis og innlendrar stefnu. Heimildir staðfesta misjafnan árangur en sanna ekki orsakasamhengið sem fullyrðingin dregur ályktanir um. Einnig fjalla heimildir ekki sérstaklega um «stöðnun» heldur um ólíkan vöxt.",
+      "confidence": 0.65,
       "speakers": [
         {
           "name": "Jean-Rémi Chareyre",
@@ -413,8 +413,8 @@
       "attribution_type": "asserted",
       "claim_count": 7,
       "verdicts": {
-        "partially_supported": 5,
-        "supported": 2
+        "partially_supported": 6,
+        "supported": 1
       },
       "stance": "neutral",
       "slug": "jean-remi-chareyre",
