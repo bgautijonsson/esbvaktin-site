@@ -21,9 +21,9 @@
     "last_speech": "2026-03-10"
   },
   "scorecard": {
-    "partially_supported": 12,
+    "partially_supported": 13,
     "supported": 5,
-    "unverifiable": 2
+    "unverifiable": 1
   },
   "claims": [
     {
@@ -282,10 +282,26 @@
     {
       "claim_text": "Í yfir tíu ár hefur þjóðin verið klofin um ESB-málið eftir að kosturinn var tekinn af borðinu.",
       "original_quote": "Í yfir tíu ár hefur þjóðin í rauninni, hún hefur verið klofin vegna þess að þessi kostur var tekinn af borðinu",
-      "verdict": "unverifiable",
-      "explanation": "Engin heimild í staðreyndagrunni fjallar um skoðanakannanir um ESB-aðild á Íslandi eða skiptingu þjóðarinnar í ESB-málinu undanfarin ár. Heimildir sem boðnar eru fjalla um lagalega ramma ESB (grein 50, stækkunarstefnu, samningaviðræðuferli) en ekkert þar af varpar ljósi á viðhorf íslensks almennings eða hversu klofin þjóðin hefur verið. Fullyrðinguna er ekki hægt að meta með fyrirliggjandi gögnum.",
-      "missing_context": "Til þyrftu skoðanakannanir (t.d. frá Gallup, MMR eða Maskínu) um afstöðu Íslendinga til ESB-aðildar frá 2013 til 2026. Einnig vantar heimildir um pólitískar ákvarðanir um að taka ESB-málið «af borðinu» (t.d. beiðni ríkisstjórnarinnar 2015 um afturköllun umsóknar).",
-      "supporting_evidence": [],
+      "verdict": "partially_supported",
+      "explanation": "Skoðanakannanir staðfesta skýra klofningu þjóðarinnar. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — Þjóðarpúls, February–March 2026\" target=\"_blank\" rel=\"noopener\">POLL-DATA-014</a> sýnir 42% hlynnt ESB-aðild og 42% andvíg, og <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-017</a> staðfestir svipaða skiptingu. Aðildarviðræðum var frestað 2013 og umsókn formlega afturkölluð 2015 — þannig liggur ESB-málið óleyst í rúman áratug. Hins vegar er orsakatengingin — að klofningurinn stafi af því að «kosturinn var tekinn af borðinu» — pólitískt mat sem heimildir staðfesta ekki beint.",
+      "missing_context": "Heimildir sýna klofningu en ekki hvort hún sé afleiðing afturköllunar umsóknar eða annarra þátta. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — EU polls cross-referenced with Hagstofa consumer confidence index\" target=\"_blank\" rel=\"noopener\">POLL-DATA-009</a> bendir á að stuðningur við ESB sveiflist með efnahagsástandinu, sem gefur til kynna flóknari orsök en einfaldlega að «kosturinn hafi verið tekinn af borðinu». Könnunaraðferðir (netvænar kannanir) geta vanmetið eldri og dreifbýlishópa.",
+      "supporting_evidence": [
+        {
+          "id": "POLL-DATA-014",
+          "source_name": "Gallup Ísland — Þjóðarpúls, February–March 2026",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+        },
+        {
+          "id": "POLL-DATA-017",
+          "source_name": "Gallup Iceland / Þjóðarpúls",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+        },
+        {
+          "id": "POLL-DATA-021",
+          "source_name": "Gallup Þjóðarpúls, February–March 2026; Capacent Gallup historical EU polling data (2009–2013)",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+        }
+      ],
       "contradicting_evidence": [],
       "category": "party_positions",
       "attribution": "asserted",

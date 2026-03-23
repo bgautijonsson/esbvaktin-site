@@ -7,43 +7,47 @@
   "party": null,
   "stance": "neutral",
   "stance_score": 0.0,
-  "credibility": 0.75,
+  "credibility": 0.78,
   "attribution_counts": {
     "asserted": 18,
     "mentioned": 3
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 8,
-    "supported": 4,
+    "supported": 6,
+    "partially_supported": 6,
     "unverifiable": 2
   },
   "claims": [
     {
       "claim_text": "Þjóðaratkvæðagreiðslan um ESB-aðild var kynnt í þingsályktunartillögu sem ríkisstjórnin lagði fram á föstudaginn 6. mars 2026.",
       "original_quote": "Evrópumálin eru komin kyrfilega á dagskrá eftir að ríkisstjórnin kynnti á föstudag þingsályktunartillögu um þjóðaratkvæðagreiðslu í lok ágúst.",
-      "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.althingi.is/\" title=\"Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-028</a> staðfestir að þingsályktunartillagan var lögð fram á föstudegi af utanríkisráðherra, en tilgreinir dagsetninguna sem 7. mars 2026 — ekki 6. mars eins og fullyrðingin segir. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> segir flutningsræðuna hafi verið 9. mars 2026. Ósamræmi er á milli heimilda um nákvæma dagsetningu, og fullyrðingin stemmir ekki við neina þeirra. Efnislega er lýsingin rétt — um var að ræða þingsályktunartillögu frá ríkisstjórninni sem lögð var fram á föstudegi — en dagsetningin er röng samkvæmt tiltækum heimildum.",
-      "missing_context": "Heimildir gefa tvær dagsetningar: <a href=\"https://www.althingi.is/\" title=\"Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-028</a> segir 7. mars (föstudagur) en <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> segir 9. mars (sunnudagur) fyrir flutningsræðu. Fullyrðingin segir 6. mars sem passar ekki við aðra hvora heimildina. Tímasetning framlagningarinnar — á föstudegi — var gagnrýnd af stjórnarandstöðu sem tilraun til að forðast fjölmiðlagaumgæslu.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir að utanríkisráðherra Þorgerður Katrín Gunnarsdóttir kynnti þingsályktunartillögu 9. mars 2026 um þjóðaratkvæðagreiðslu þann 29. ágúst 2026. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> og <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland; Euronews; France24; coalition agreement\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-013</a> staðfesta þetta óháð hvort öðru. Þó ber að hafa í huga að það var utanríkisráðherra sem lagði tillöguna fram, en forsætisráðherra ríkisstjórnarinnar stendur að baki henni.",
+      "missing_context": "Tillagan var lögð fram 9. mars 2026 (mánudag), ekki föstudaginn 6. mars. Upprunaleg frásögn í greininni gæti vísa til kynningar eða fréttatilkynningar sem kom á föstudegi.",
       "supporting_evidence": [
-        {
-          "id": "SOV-LEGAL-028",
-          "source_name": "Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24",
-          "source_url": "https://www.althingi.is/"
-        },
         {
           "id": "SOV-PARL-001",
           "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
           "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
-        }
-      ],
-      "contradicting_evidence": [
+        },
         {
-          "id": "SOV-LEGAL-028",
-          "source_name": "Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24",
-          "source_url": "https://www.althingi.is/"
+          "id": "SOV-DATA-006",
+          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+        },
+        {
+          "id": "PARTY-DATA-013",
+          "source_name": "Government of Iceland; Euronews; France24; coalition agreement",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+        },
+        {
+          "id": "SOV-PARL-004",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir (flutningsræða, 154. löggjafarþing); Logi Einarsson (flutningsræða, 153. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/154/rad20230919T175556.html"
         }
       ],
+      "contradicting_evidence": [],
       "category": "party_positions",
       "attribution": "asserted",
       "article_slug": "enginn-afslattur-gefinn-segi-thjodin-ja-vid-adildarvidraedum",
@@ -54,23 +58,18 @@
     {
       "claim_text": "Í þingsályktunartillögunni er þjóðaratkvæðagreiðslan ákveðin þannig að spurt verður: \"Á að halda áfram viðræðum um aðild Íslands að Evrópusambandinu?\"",
       "original_quote": "Spurt verður: \"Á að halda áfram viðræðum um aðild Íslands að Evrópusambandinu?\"",
-      "verdict": "partially_supported",
-      "explanation": "Heimildir staðfesta að þjóðaratkvæðagreiðslan snýst um áframhald aðildarviðræðna, sem er í samræmi við fullyrðinguna. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Þjóðarpúls, February–March 2026; Capacent Gallup historical EU polling data (2009–2013)\" target=\"_blank\" rel=\"noopener\">POLL-DATA-021</a> nefnir sérstaklega bilið milli stuðnings við viðræður og stuðnings við aðild, sem gefur til kynna hvert spurningin beinist. Nákvæm orðalag spurningarinnar — «Á að halda áfram viðræðum um aðild Íslands að Evrópusambandinu?» — er hins vegar ekki staðfest í neinum þeim heimildum sem lagðar eru hér fram, sem eru allar skoðanakannanir en ekki þingsályktunartillagan sjálf.",
-      "missing_context": "Engin heimild í þessari lotu inniheldur beina tilvísun í þingsályktunartillöguna eða nákvæmt orðalag spurningarinnar. Til að staðfesta fullyrðinguna að fullu þyrfti tilvísun í tillöguna sjálfa eða formlega tilkynningu frá ríkisstjórn.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir nákvæmt orðalag spurningarinnar: «Á að halda áfram viðræðum um aðild Íslands að Evrópusambandinu?» Þingsályktunartillagan var lögð fram af utanríkisráðherra 9. mars 2026 og kveður á um þjóðaratkvæðagreiðslu 29. ágúst 2026 með þessari spurningu. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Þjóðarpúls, February–March 2026; Capacent Gallup historical EU polling data (2009–2013)\" target=\"_blank\" rel=\"noopener\">POLL-DATA-021</a> staðfestir muninn á milli stuðnings við viðræður og stuðnings við aðild, sem samrýmist orðalagi spurningarinnar.",
+      "missing_context": "Spurningin snýst um framhald viðræðna, ekki um ESB-aðild beint — bilið milli stuðnings við viðræður (~52%) og stuðnings við aðild (~42%) samkvæmt <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Þjóðarpúls, February–March 2026; Capacent Gallup historical EU polling data (2009–2013)\" target=\"_blank\" rel=\"noopener\">POLL-DATA-021</a> er mikilvægt samhengi sem lesendur þurfa til að skilja pólitíska þýðingu spurningarinnar.",
       "supporting_evidence": [
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        },
         {
           "id": "POLL-DATA-021",
           "source_name": "Gallup Þjóðarpúls, February–March 2026; Capacent Gallup historical EU polling data (2009–2013)",
-          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
-        },
-        {
-          "id": "POLL-DATA-020",
-          "source_name": "Gallup hf. — Þjóðarpúls; Vísir",
-          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
-        },
-        {
-          "id": "POLL-DATA-017",
-          "source_name": "Gallup Iceland / Þjóðarpúls",
           "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
         }
       ],
@@ -641,9 +640,9 @@
       "source": "Silfrið (RÚV)",
       "claim_count": 70,
       "verdict_counts": {
-        "supported": 14,
+        "supported": 15,
         "partially_supported": 46,
-        "unverifiable": 5,
+        "unverifiable": 4,
         "misleading": 5
       },
       "dominant_category": "party_positions",
@@ -727,8 +726,8 @@
           "claim_count": 14,
           "verdicts": {
             "misleading": 2,
-            "partially_supported": 9,
-            "supported": 3
+            "partially_supported": 8,
+            "supported": 4
           },
           "stance": "neutral",
           "slug": "gudrun-hafsteinsdottir",
@@ -744,8 +743,7 @@
           "attribution_type": "asserted",
           "claim_count": 7,
           "verdicts": {
-            "unverifiable": 1,
-            "partially_supported": 5,
+            "partially_supported": 6,
             "supported": 1
           },
           "stance": "neutral",
@@ -833,8 +831,8 @@
       "source": "RÚV",
       "claim_count": 19,
       "verdict_counts": {
-        "partially_supported": 14,
-        "supported": 4,
+        "supported": 7,
+        "partially_supported": 11,
         "unsupported": 1
       },
       "dominant_category": "party_positions",
@@ -855,8 +853,8 @@
           "attribution_type": "paraphrased",
           "claim_count": 14,
           "verdicts": {
-            "supported": 3,
-            "partially_supported": 10,
+            "supported": 4,
+            "partially_supported": 9,
             "unsupported": 1
           },
           "stance": "pro_eu",
@@ -1109,8 +1107,8 @@
       "verdict_counts": {
         "partially_supported": 18,
         "supported": 8,
-        "misleading": 2,
-        "unverifiable": 1
+        "misleading": 1,
+        "unverifiable": 2
       },
       "dominant_category": "precedents",
       "categories": [
@@ -1134,8 +1132,9 @@
           "claim_count": 10,
           "verdicts": {
             "partially_supported": 6,
-            "misleading": 2,
-            "supported": 2
+            "misleading": 1,
+            "supported": 2,
+            "unverifiable": 1
           },
           "stance": "anti_eu",
           "slug": "gudlaugur-thor-thordarson",
@@ -1229,10 +1228,10 @@
     }
   ],
   "outlet_scorecard": {
-    "partially_supported": 135,
-    "supported": 60,
+    "partially_supported": 132,
+    "supported": 64,
     "unverifiable": 13,
-    "misleading": 10,
+    "misleading": 9,
     "unsupported": 2
   },
   "outlet_stats": {

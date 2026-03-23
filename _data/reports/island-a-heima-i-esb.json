@@ -398,11 +398,11 @@
         "confidence": 0.9
       },
       "verdict": "unverifiable",
-      "explanation": "Engin heimild staðfestir eða hrekur töluna um 250 íslensk fyrirtæki sem hafi hætt notkun krónunnar. <a href=\"https://www.sedlabanki.is/hagtolur/gengi/\" title=\"Seðlabanki Íslands — Exchange rate data\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-007</a> og <a href=\"https://cb.is/statistics/official-exchange-rate/\" title=\"Central Bank of Iceland — Official exchange rate; Wise/XE historical data\" target=\"_blank\" rel=\"noopener\">CURR-DATA-010</a> fjalla um gengissveiflur íslensku krónunnar, og <a href=\"https://sedlabanki.is/library/Skraarsafn/Hagtolur/Gjaldeyrisfordi/\" title=\"Seðlabanki Íslands — Alþjóðaforðinn; Fjármálastöðugleikaskýrsla\" target=\"_blank\" rel=\"noopener\">CURR-DATA-006</a> fjallar um kostnað af gjaldeyrisforða. Þessar heimildir sýna vel hvers vegna fyrirtæki gætu viljað nota erlenda gjaldmiðla, en engin þeirra inniheldur gögn um fjölda fyrirtækja sem hafi raunverulega tekið slíkt skref.",
+      "explanation": "Engin heimild staðfestir eða hrekur töluna um 250 fyrirtæki. <a href=\"https://www.sedlabanki.is/hagtolur/gengi/\" title=\"Seðlabanki Íslands — Exchange rate data\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-007</a> og <a href=\"https://cb.is/statistics/official-exchange-rate/\" title=\"Central Bank of Iceland — Official exchange rate; Wise/XE historical data\" target=\"_blank\" rel=\"noopener\">CURR-DATA-010</a> fjalla um gengissveiflur krónunnar og <a href=\"https://sedlabanki.is/library/Skraarsafn/Hagtolur/Gjaldeyrisfordi/\" title=\"Seðlabanki Íslands — Alþjóðaforðinn; Fjármálastöðugleikaskýrsla\" target=\"_blank\" rel=\"noopener\">CURR-DATA-006</a> um kostnað gjaldeyrisforða, sem skýra hvers vegna fyrirtæki gætu viljað nota erlenda gjaldmiðla. Þrjár af fjórum greiningum úrskurða fullyrðinguna sem «partially_supported» en þær virðast byggja á almennum gjaldmiðlaheimildum frekar en gögnum um fjölda fyrirtækja.",
       "supporting_evidence": [],
       "contradicting_evidence": [],
-      "missing_context": "Til þarf heimildir um fjölda íslenskra fyrirtækja sem nota erlenda gjaldmiðla í uppgjörum. Fullyrðingin er mjög sérhæfð tölulega (um 250 fyrirtæki) og krefst beinnar heimildar, t.d. frá Seðlabanka Íslands eða Samtökum atvinnulífsins.",
-      "confidence": 0.9,
+      "missing_context": "Tölur um fjölda fyrirtækja sem gera upp í erlendum gjaldmiðli koma væntanlega frá Samtökum atvinnulífsins eða Seðlabanka Íslands en eru ekki í staðreyndagrunninum. Ein heimild úr greiningum nefnir 265 fyrirtæki, önnur 230 — þessi frávik benda til þess að nákvæm tala sé óviss. Grundvallarfullyrðingin um að mörg íslensk fyrirtæki geri upp í evrum er trúverðug en ósönnuð með fyrirliggjandi heimildum.",
+      "confidence": 0.7,
       "speakers": [
         {
           "name": "Thomas Möller",
@@ -469,23 +469,27 @@
         "confidence": 0.9
       },
       "verdict": "misleading",
-      "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland: Accession negotiations status; Althingi records\" target=\"_blank\" rel=\"noopener\">EEA-DATA-009</a> staðfestir að 27 af 33 samningaköflum hafi verið opnaðir og 11 bráðabirgðalokað á árunum 2010–2013. Hlutfallið 11/33 (33% bráðabirgðalokað) er langt frá 90%. Jafnvel 27/33 opnaðir kaflar þýðir ekki að 82% séu «klárir» — opnun kafla er aðeins upphaf samninganna. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> undirstrikar að samningaviðræður snúast um tímaáætlun innleiðingar, ekki hvort taka eigi upp reglurnar.",
-      "supporting_evidence": [
+      "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland: Accession negotiations status; Althingi records\" target=\"_blank\" rel=\"noopener\">EEA-DATA-009</a> og <a href=\"https://www.consilium.europa.eu/en/topics/eu-enlargement/\" title=\"European Commission Iceland Progress Reports / Althingi committee records\" target=\"_blank\" rel=\"noopener\">PREC-DATA-037</a> staðfesta að 27 af 33 samningaköflum voru opnaðir og aðeins 11 bráðabirgðalokaðir á tímabilinu 2010–2013. Hlutfallið 90% á sér enga stoð í gögnum — 11/33 bráðabirgðalokaðir jafngildir um 33%, og jafnvel 27/33 opnaðir kaflar þýðir ekki að þeir séu «klárir» heldur eingöngu að umræður hafi hafist. Erfiðustu kaflarnir — sjávarútvegur og landbúnaður — voru aldrei opnaðir.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [
         {
           "id": "EEA-DATA-009",
           "source_name": "European Commission — Iceland: Accession negotiations status; Althingi records",
           "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
-        }
-      ],
-      "contradicting_evidence": [
+        },
         {
-          "id": "EEA-LEGAL-021",
-          "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
-          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+          "id": "PREC-DATA-037",
+          "source_name": "European Commission Iceland Progress Reports / Althingi committee records",
+          "source_url": "https://www.consilium.europa.eu/en/topics/eu-enlargement/"
+        },
+        {
+          "id": "AGRI-DATA-018",
+          "source_name": "European Commission — Iceland progress reports 2011–2013; Screening report Chapter 11",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
         }
       ],
-      "missing_context": "Sjávarútvegs- og landbúnaðarkaflarnir (auk fjármagnsfrelsis) voru meðal erfiðustu samningamálanna og voru enn óleystir þegar viðræðum var frestað. Að segja að aðeins hafi átt eftir sjávarútveg og landbúnað er einföldun — aðrir kaflar sem aðeins voru opnaðir en ekki lokaðir voru ekki endanlega klárir. Auk þess hafa ESB-reglur breyst verulega frá 2013.",
-      "confidence": 0.8,
+      "missing_context": "Opnun kafla er fyrsta skrefið í samningaferli, ekki sönnun þess að samið hafi verið um viðkomandi svið. Sjávarútvegs- og landbúnaðarkaflarnir — hin umdeildustu viðfangsefni Íslands — voru aldrei teknir til formlegrar umfjöllunar.",
+      "confidence": 0.9,
       "speakers": [
         {
           "name": "Thomas Möller",

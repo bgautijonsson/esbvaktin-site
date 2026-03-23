@@ -12,8 +12,8 @@
   "verdict_counts": {
     "partially_supported": 18,
     "supported": 8,
-    "misleading": 2,
-    "unverifiable": 1
+    "misleading": 1,
+    "unverifiable": 2
   },
   "claim_count": 29,
   "dominant_category": "precedents",
@@ -573,18 +573,12 @@
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
-      "verdict": "misleading",
-      "explanation": "Heimild <a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a> staðfestir að framkvæmdastjórn ESB telur umsókn Íslands frá 2009 tæknilega enn í gildi — ESB hefur aldrei formlega viðurkennt afturköllunina frá 2015. Fullyrðingin er því villandi: Ísland gæti í raun enn verið skráð sem umsækjandi í gögnum ESB, þótt viðræður séu frystar.",
+      "verdict": "unverifiable",
+      "explanation": "Engin heimild í staðreyndagrunni staðfestir eða hrekur beint hvort Ísland sé skráð á lista yfir umsóknarríki á vefsíðum ESB. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> nefnir viðræðurnar 2010–2013 en fjallar ekki um skráningarstöðu. Núverandi útskýring vísar í <a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a> en sú heimild er ekki meðal þeirra heimilda sem lagðar eru til grundvallar hér. Án beinna gagna um skráningarstöðu í kerfum ESB er fullyrðingin óstaðfestanleg.",
       "supporting_evidence": [],
-      "contradicting_evidence": [
-        {
-          "id": "PARTY-DATA-011",
-          "source_name": "Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews",
-          "source_url": "https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/"
-        }
-      ],
-      "missing_context": "Réttarstaða umsóknar Íslands er umdeild. Framkvæmdastjórn ESB sagði í mars 2026 að umsóknin sé enn gild. Bréf utanríkisráðherra Gunnars Braga Sveinssonar frá 2015 var aldrei formlega samþykkt af Alþingi.",
-      "confidence": 0.75,
+      "contradicting_evidence": [],
+      "missing_context": "Framkvæmdastjórn ESB hefur samkvæmt fyrri greiningum ekki formlega viðurkennt afturköllun umsóknar Íslands frá 2015. Þetta er þó ekki meðal heimilda sem lagðar eru hér til grundvallar og er því ekki hægt að byggja mat á þeirri fullyrðingu. Staða Íslands á opinberum listum ESB krefst beinnar heimildar.",
+      "confidence": 0.6,
       "speakers": [
         {
           "name": "Guðlaugur Þór Þórðarson",
@@ -1194,8 +1188,9 @@
       "claim_count": 10,
       "verdicts": {
         "partially_supported": 6,
-        "misleading": 2,
-        "supported": 2
+        "misleading": 1,
+        "supported": 2,
+        "unverifiable": 1
       },
       "stance": "anti_eu",
       "slug": "gudlaugur-thor-thordarson",

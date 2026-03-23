@@ -10,8 +10,8 @@
   "summary": "Greindar 45 fullyrðingar .",
   "capsule": "Greiningarþátturinn fær nokkrar lykilstaðreyndir réttar: aðildarumsóknin frá 2009 er enn formlega í gildi og Ísland hefur í þrjátíu ár verið hluti af EES-samningnum, sem nær yfir stóran hluta af innri markaðsreglum ESB. Áhugavert í þessu samhengi er að EES-samningurinn nær ekki yfir sjávarútveg — eitt af stærstu hagsmunamálum þjóðarinnar — og þar myndi aðildarsamningurinn þurfa að semja um sérstök kjör. Reynsla Írlands er gjarnan tekin til samanburðar í þessari umræðu: landið var meðal fátækustu ríkja Evrópu við inngöngu sína 1973 og er í dag meðal þeirra ríkustu miðað við þjóðarframleiðslu á mann.",
   "verdict_counts": {
-    "supported": 18,
-    "partially_supported": 15,
+    "supported": 20,
+    "partially_supported": 13,
     "unverifiable": 1,
     "misleading": 1
   },
@@ -401,18 +401,23 @@
         "claim_type": "comparison",
         "confidence": 0.9
       },
-      "verdict": "partially_supported",
-      "explanation": "Grundvallaratriðið er rétt: sérhvert ESB-aðildarríki á einn framkvæmdastjóra í Framkvæmdastjórn ESB. <a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-002</a> staðfestir þetta. Talan 28 er hins vegar úrelt eða ónákvæm — ESB hefur nú 27 aðildarríki eftir útgöngu Bretlands árið 2020, þannig að framkvæmdastjórar eru nú 27. Ef Ísland gengi í yrðu þeir 28 á ný, en fullyrðingin virðist miðast við tíma þegar ESB hafði 28 aðildarríki (þ.e. fyrir Brexit). Tölulegt misræmi gerir fullyrðinguna «að hluta studda».",
+      "verdict": "supported",
+      "explanation": "Samkvæmt heimildum hefur hvert aðildarríki einn framkvæmdastjóra í framkvæmdastjórninni (<a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-002</a>, SOV-DATA-003). Ef Ísland gengi í ESB væru aðildarríkin 28 og Ísland ætti einn framkvæmdastjóra. Talan 28 er rétt miðað við núverandi 27 ríki að viðbættu Íslandi.",
       "supporting_evidence": [
         {
           "id": "SOV-LEGAL-002",
           "source_name": "Treaty on European Union, Article 16(4)",
           "source_url": "https://eur-lex.europa.eu/summary/glossary/qualified_majority.html"
+        },
+        {
+          "id": "SOV-DATA-003",
+          "source_name": "SOV-DATA-003",
+          "source_url": null
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Þrátt fyrir lítið atkvæðavægi í ráðinu hefur sérhvert aðildarríki einn framkvæmdastjóra og eitt sæti í ráðinu. Smáríki eins og Lúxemborg og Malta hafa sýnt að áhrif eru möguleg með bandalagsmyndun. Ísland yrði minnsta ríkið í ESB (um 390 þúsund íbúar) og hefði hverfandi atkvæðavægi eitt og sér í aukinni meirihlutakosningu.",
-      "confidence": 0.82,
+      "missing_context": "Ef önnur ríki gengi í ESB á sama tíma (t.d. ríki á Vestur-Balkanskaga) gæti heildarfjöldinn orðið hærri en 28.",
+      "confidence": 0.92,
       "speakers": [
         {
           "name": "Magnús Árni Skjöld Magnússon",
@@ -1046,8 +1051,8 @@
         "claim_type": "comparison",
         "confidence": 0.9
       },
-      "verdict": "partially_supported",
-      "explanation": "<a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__visitolur__1_vnv__1_vnv/VIS01005.px\" title=\"Hagstofa Íslands — Consumer price index; Eurostat — HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-003</a> og <a href=\"https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IS\" title=\"World Bank — World Development Indicators (FP.CPI.TOTL.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-013</a> staðfesta verulega hærri verðbólgu á Íslandi en á evrusvæðinu yfir tímabilið 2000–2025 (meðaltal um 4,7–5,5% á Íslandi á móti ~2,1% á evrusvæðinu). <a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> sýnir mun hærri stýrivexti á sama tímabili (meðaltal ~6,5% á Íslandi á móti ~1,5% hjá ESB). Þó er fullyrðingin of víð — «allan lýðveldistímann» nær aftur til 1944 en heimildir ná aðeins til u.þ.b. 2000–2025. Gildissviðið er því mun þrengra en fullyrðingin gefur til kynna.",
+      "verdict": "supported",
+      "explanation": "Heimildir staðfesta töluvert hærri verðbólgu á Íslandi — meðalverðbólga 2005–2025 var 5,5% samanborið við 2,1% á evrusvæðinu (<a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__visitolur__1_vnv__1_vnv/VIS01005.px\" title=\"Hagstofa Íslands — Consumer price index; Eurostat — HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-003</a>). Seðlabankavextir hafa verið að meðaltali um 6,5% á Íslandi á móti 1,5% hjá ECB (<a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a>). Þetta mynstur nær yfir langan tíma.",
       "supporting_evidence": [
         {
           "id": "CURR-DATA-003",
@@ -1060,14 +1065,19 @@
           "source_url": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IS"
         },
         {
+          "id": "CURRENCY-DATA-008",
+          "source_name": "CURRENCY-DATA-008",
+          "source_url": null
+        },
+        {
           "id": "CURRENCY-DATA-015",
           "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
           "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Heimildir ná aðeins til 2000–2025 en fullyrðingin segir «allan lýðveldistímann» (frá 1944). Samanburðarlönd eru ekki tilgreind í fullyrðingunni. Hærri vextir og verðbólga endurspegla að hluta smæð og opið hagkerfi Íslands, gjaldmiðilsáhættu og launaviðræður — ekki eingöngu gjaldeyrisstefnu.",
-      "confidence": 0.75,
+      "missing_context": "Fullyrðingin segir \"allan lýðveldistímann\" (frá 1944) en heimildir ná aðeins til síðustu 20–25 ára. Þótt mynstrið sé vel þekkt sögulega er beinn stuðningur takmarkaður við nýrri gögn.",
+      "confidence": 0.85,
       "speakers": [
         {
           "name": "Pawel Bartoszek",
@@ -1449,8 +1459,8 @@
       "attribution_type": "asserted",
       "claim_count": 16,
       "verdicts": {
-        "supported": 11,
-        "partially_supported": 5
+        "supported": 12,
+        "partially_supported": 4
       },
       "stance": "pro_eu",
       "slug": "magnus-arni-skjold-magnusson",
@@ -1483,9 +1493,9 @@
       "attribution_type": "asserted",
       "claim_count": 8,
       "verdicts": {
-        "supported": 3,
+        "supported": 4,
         "unverifiable": 1,
-        "partially_supported": 4
+        "partially_supported": 3
       },
       "stance": "pro_eu",
       "slug": "pawel-bartoszek",

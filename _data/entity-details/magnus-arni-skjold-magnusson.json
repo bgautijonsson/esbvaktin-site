@@ -21,8 +21,8 @@
     "last_speech": "2024-02-01"
   },
   "scorecard": {
-    "partially_supported": 30,
-    "supported": 28,
+    "partially_supported": 29,
+    "supported": 29,
     "misleading": 3,
     "unverifiable": 3
   },
@@ -1092,14 +1092,19 @@
     {
       "claim_text": "Ef Ísland gengi í ESB væri það með einn af 28 framkvæmdastjórum sambandsins.",
       "original_quote": "Við myndum vera með einn af 28, ef við gengjum inn, framkvæmdastjórum sambandsins.",
-      "verdict": "partially_supported",
-      "explanation": "Grundvallaratriðið er rétt: sérhvert ESB-aðildarríki á einn framkvæmdastjóra í Framkvæmdastjórn ESB. <a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-002</a> staðfestir þetta. Talan 28 er hins vegar úrelt eða ónákvæm — ESB hefur nú 27 aðildarríki eftir útgöngu Bretlands árið 2020, þannig að framkvæmdastjórar eru nú 27. Ef Ísland gengi í yrðu þeir 28 á ný, en fullyrðingin virðist miðast við tíma þegar ESB hafði 28 aðildarríki (þ.e. fyrir Brexit). Tölulegt misræmi gerir fullyrðinguna «að hluta studda».",
-      "missing_context": "Þrátt fyrir lítið atkvæðavægi í ráðinu hefur sérhvert aðildarríki einn framkvæmdastjóra og eitt sæti í ráðinu. Smáríki eins og Lúxemborg og Malta hafa sýnt að áhrif eru möguleg með bandalagsmyndun. Ísland yrði minnsta ríkið í ESB (um 390 þúsund íbúar) og hefði hverfandi atkvæðavægi eitt og sér í aukinni meirihlutakosningu.",
+      "verdict": "supported",
+      "explanation": "Samkvæmt heimildum hefur hvert aðildarríki einn framkvæmdastjóra í framkvæmdastjórninni (<a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-002</a>, SOV-DATA-003). Ef Ísland gengi í ESB væru aðildarríkin 28 og Ísland ætti einn framkvæmdastjóra. Talan 28 er rétt miðað við núverandi 27 ríki að viðbættu Íslandi.",
+      "missing_context": "Ef önnur ríki gengi í ESB á sama tíma (t.d. ríki á Vestur-Balkanskaga) gæti heildarfjöldinn orðið hærri en 28.",
       "supporting_evidence": [
         {
           "id": "SOV-LEGAL-002",
           "source_name": "Treaty on European Union, Article 16(4)",
           "source_url": "https://eur-lex.europa.eu/summary/glossary/qualified_majority.html"
+        },
+        {
+          "id": "SOV-DATA-003",
+          "source_name": "SOV-DATA-003",
+          "source_url": null
         }
       ],
       "contradicting_evidence": [],
