@@ -42,6 +42,7 @@
       party_positions: "Flokkastefnur",
       org_positions: "Samtakastefnur",
       energy: "Orkumál",
+      other: "Annað",
     },
     evidenceSourceTypeLabels: {
       official_statistics: "Opinber tölfræði",
