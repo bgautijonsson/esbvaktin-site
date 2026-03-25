@@ -6,10 +6,10 @@
   "role": "fyrrverandi ráðherra og alþingismaður",
   "party": "Sjálfstæðisflokkur",
   "stance": "anti_eu",
-  "stance_score": -0.8,
-  "credibility": 0.61,
+  "stance_score": -0.5,
+  "credibility": 0.59,
   "attribution_counts": {
-    "asserted": 15,
+    "asserted": 17,
     "quoted": 2,
     "paraphrased": 2
   },
@@ -22,7 +22,7 @@
   },
   "scorecard": {
     "supported": 4,
-    "partially_supported": 10,
+    "partially_supported": 12,
     "misleading": 1
   },
   "claims": [
@@ -498,6 +498,53 @@
       "article_title": "RÚV birtir ekki gagnrýni Ólafs Ragnars",
       "article_source": "Nútíminn",
       "article_date": "2026-03-21"
+    },
+    {
+      "claim_text": "Höfundurinn (Björn Bjarnason) var formaður utanríkismálanefndar Alþingis á þeim tíma sem EES-samningurinn var gerður og fylgdist náið með framvindu mála.",
+      "original_quote": "Ég var á þessum tíma formaður utanríkismálanefndar alþingis og fylgdist náið með framvindu mála",
+      "verdict": "partially_supported",
+      "explanation": "SOV-DATA-018 staðfestir að Björn Bjarnason var þingmaður Sjálfstæðisflokksins til margra ára og gegndi embætti dómsmálaráðherra 2003–2009. <a href=\"https://www.government.is/library/01-Ministries/Ministry-for-Foreign-Affairs/PDF-skjol/Sky%CC%81rsla%20starfsho%CC%81ps%20um%20EES-samstarfi%C3%B0%200919.pdf\" title=\"Utanríkisráðuneytið — Skýrsla starfshóps um EES-samstarfið (september 2019)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-018</a> sýnir að hann stýrði starfshópi um EES-samstarfið sem skilaði skýrslu 2019, sem bendir til djúprar þekkingar á EES-málum. Engin heimild staðfestir þó sérstaklega að hann hafi verið formaður utanríkismálanefndar á árunum 1992–1993 þegar EES-samningurinn var til umfjöllunar.",
+      "missing_context": "Heimildir staðfesta feril Björns Bjarnasonar sem þingmanns og ráðherra, en tilgreina ekki sérstaklega nefndarformennsku hans. Hann hefur greinilega djúpa þekkingu á EES-málum og hefur stýrt opinberri skýrslugerð um EES-samstarfið, sem styður fullyrðinguna óbeint.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-018",
+          "source_name": "Björn Bjarnason — Op-eds and public statements; Morgunblaðið; Vísir",
+          "source_url": null
+        },
+        {
+          "id": "EEA-DATA-018",
+          "source_name": "Utanríkisráðuneytið — Skýrsla starfshóps um EES-samstarfið (september 2019)",
+          "source_url": "https://www.government.is/library/01-Ministries/Ministry-for-Foreign-Affairs/PDF-skjol/Sky%CC%81rsla%20starfsho%CC%81ps%20um%20EES-samstarfi%C3%B0%200919.pdf"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "asserted",
+      "article_slug": "david-og-ees",
+      "article_title": "Davíð og EES",
+      "article_source": "bjorn_is",
+      "article_date": "2026-03-22"
+    },
+    {
+      "claim_text": "Sjálfstæðismenn lögðu til þann atkvæðafjölda á Alþingi sem dugði til að koma EES-samningnum í höfn, þrátt fyrir framgöngu Jóns Baldvins við afgreiðslu hans.",
+      "original_quote": "að sjálfsögðu voru það við sjálfstæðismenn, sem lögðum til þann atkvæðafjölda á þingi, sem dugði til að koma þessum samningi í höfn",
+      "verdict": "partially_supported",
+      "explanation": "POL-DATA-006 staðfestir að Sjálfstæðisflokkurinn studdi EES-samninginn undir forystu Davíðs Oddssonar og var stærsti flokkur Alþingis á þessum tíma. Ef flokkurinn var stærstur og leiddi ríkisstjórnina, er líklegt að hann lagði til stærstan hluta atkvæðanna. Engar heimildir í staðreyndagrunni sýna þó nákvæma atkvæðatalningu við afgreiðslu EES-samningsins á Alþingi, svo ekki er hægt að staðfesta fullyrðinguna til fulls.",
+      "missing_context": "Atkvæðagreiðsla Alþingis um staðfestingu EES-samningsins er ekki skráð í staðreyndagrunninn. Á þessum tíma sat Sjálfstæðisflokkurinn í ríkisstjórn með Alþýðuflokki og Þjóðvarnaflokki. Fleiri flokkar studdu samninginn, þótt Sjálfstæðismenn hafi líklega lagt til flest atkvæði vegna stærðar sinnar. Fullyrðingin dregur úr hlutverki annarra flokka.",
+      "supporting_evidence": [
+        {
+          "id": "POL-DATA-006",
+          "source_name": "Sjálfstæðisflokkur — Party congresses and manifestos 1991–2025; Morgunblaðið archives",
+          "source_url": null
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "asserted",
+      "article_slug": "david-og-ees",
+      "article_title": "Davíð og EES",
+      "article_source": "bjorn_is",
+      "article_date": "2026-03-22"
     }
   ],
   "articles": [
@@ -539,6 +586,16 @@
       "claim_count": 2,
       "attribution_types": [
         "quoted"
+      ]
+    },
+    {
+      "slug": "david-og-ees",
+      "title": "Davíð og EES",
+      "source": "bjorn_is",
+      "date": "2026-03-22",
+      "claim_count": 2,
+      "attribution_types": [
+        "asserted"
       ]
     }
   ],

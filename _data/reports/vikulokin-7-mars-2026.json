@@ -10,10 +10,10 @@
   "summary": "Greindar 44 fullyrðingar .",
   "capsule": "Forsætisráðherra Kristrún Frostadóttir setti fram þrenn skilyrði fyrir ESB-vegferð þar sem m. a. er krafist breiðs stuðnings í þjóðfélaginu — og þetta er staðfest í skráðum yfirlýsingum hennar. Athyglisvert er hvernig EES-samningurinn virkar í reynd: hann krefst þess að Ísland taki upp löggjöf innri markaðarins sem ESB samþykkir í gegnum sameiginlegu EES-nefndina, og lítið svigrúm er til að hafna slíkri löggjöf án þess að grafa undan EES-þátttökunni. Þjóðaratkvæðagreiðslan 29. ágúst 2026 snýst um hvort hefja eigi aðildarviðræður — ekki um að samþykkja ESB-aðild — og í slíkum viðræðum mætti sérstaklega semja um sjávarútveg og aðrar lykilgreinar.",
   "verdict_counts": {
-    "partially_supported": 18,
+    "partially_supported": 19,
     "supported": 8,
     "misleading": 1,
-    "unverifiable": 2
+    "unverifiable": 1
   },
   "claim_count": 29,
   "dominant_category": "precedents",
@@ -573,12 +573,23 @@
         "claim_type": "legal_assertion",
         "confidence": 0.9
       },
-      "verdict": "unverifiable",
-      "explanation": "Engin heimild í staðreyndagrunni staðfestir eða hrekur beint hvort Ísland sé skráð á lista yfir umsóknarríki á vefsíðum ESB. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> nefnir viðræðurnar 2010–2013 en fjallar ekki um skráningarstöðu. Núverandi útskýring vísar í <a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a> en sú heimild er ekki meðal þeirra heimilda sem lagðar eru til grundvallar hér. Án beinna gagna um skráningarstöðu í kerfum ESB er fullyrðingin óstaðfestanleg.",
-      "supporting_evidence": [],
+      "verdict": "partially_supported",
+      "explanation": "Engin heimild staðfestir beint hvort Ísland sé skráð sem umsækjandi í gögnum ESB. Þó kemur fram í fyrirvörum <a href=\"https://eur-lex.europa.eu/EN/legal-content/summary/iceland-agriculture-fisheries-and-food-safety.html\" title=\"EUR-Lex — Iceland agriculture assessment; European Commission screening reports\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-024</a> að aðildarumsóknin var dregin til baka árið 2015, og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> bendir til þess að Ísland þyrfti að «sækja aftur um» ef það vildi hefja viðræður á ný. Þetta styður óbeint við fullyrðinguna — ef umsóknin var formlega dregin til baka ætti Ísland ekki lengur að vera skráð sem umsækjandi. Hins vegar vantar beina staðfestingu úr gagnagrunni ESB eða opinberum skrám um stöðu umsækjenda.",
+      "supporting_evidence": [
+        {
+          "id": "AGRI-DATA-024",
+          "source_name": "EUR-Lex — Iceland agriculture assessment; European Commission screening reports",
+          "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/iceland-agriculture-fisheries-and-food-safety.html"
+        },
+        {
+          "id": "TRADE-DATA-022",
+          "source_name": "European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Framkvæmdastjórn ESB hefur samkvæmt fyrri greiningum ekki formlega viðurkennt afturköllun umsóknar Íslands frá 2015. Þetta er þó ekki meðal heimilda sem lagðar eru hér til grundvallar og er því ekki hægt að byggja mat á þeirri fullyrðingu. Staða Íslands á opinberum listum ESB krefst beinnar heimildar.",
-      "confidence": 0.6,
+      "missing_context": "Heimildir staðfesta afturköllun umsóknar (2015) og að Ísland þyrfti að sækja aftur um, en engin heimild sýnir beint hvernig Ísland er skráð í opinberum gögnum ESB (t.d. hjá DG NEAR eða í stækkunarskýrslum). Munurinn á «afturköllun umsóknar» og «ekki skráð sem umsækjandi» gæti skipt máli — sum lönd hafa dregið umsóknir til baka en haldið ákveðinni stöðu í skjölum ESB.",
+      "confidence": 0.55,
       "speakers": [
         {
           "name": "Guðlaugur Þór Þórðarson",
@@ -1187,10 +1198,9 @@
       "attribution_type": "quoted",
       "claim_count": 10,
       "verdicts": {
-        "partially_supported": 6,
+        "partially_supported": 7,
         "misleading": 1,
-        "supported": 2,
-        "unverifiable": 1
+        "supported": 2
       },
       "stance": "anti_eu",
       "slug": "gudlaugur-thor-thordarson",
@@ -1211,7 +1221,7 @@
       },
       "stance": "pro_eu",
       "slug": "gudmundur-ari-sigurjonsson",
-      "mention_count": 3,
+      "mention_count": 4,
       "credibility": 0.66,
       "speech_count": 3
     },

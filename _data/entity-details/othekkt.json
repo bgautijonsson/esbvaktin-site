@@ -2,15 +2,100 @@
   "slug": "othekkt",
   "name": "Óþekkt",
   "type": "individual",
-  "description": "Fréttaritari — hlutlaus um ESB-aðild.",
+  "description": "Fréttaritari — blandað viðhorf til ESB-aðildar.",
   "role": "fréttaritari",
   "party": null,
-  "stance": "neutral",
-  "stance_score": 0.0,
-  "credibility": null,
-  "attribution_counts": {},
+  "stance": "mixed",
+  "stance_score": -0.25,
+  "credibility": 0.75,
+  "attribution_counts": {
+    "asserted": 2
+  },
   "althingi_stats": null,
-  "scorecard": {},
-  "claims": [],
-  "articles": []
+  "scorecard": {
+    "partially_supported": 1,
+    "supported": 1
+  },
+  "claims": [
+    {
+      "claim_text": "Afgerandi meirihluti þingmanna á norska stórþinginu ákvað að hrófla ekki við EES-samstarfið á þessu kjörtímabili, til ársins 2029.",
+      "original_quote": "Mat ráðherrans á stöðu mála er allt annað en birtist á norska stórþinginu þegar afgerandi meirihluti þingmanna ákvað að hrófla ekki við EES-samstarfið á þessu kjörtímabili, það er til ársins 2029.",
+      "verdict": "partially_supported",
+      "explanation": "PREC-HIST-002 staðfestir að 70–75% Norðmanna eru á móti ESB-aðild, og <a href=\"https://www.ssb.no/en/statbank/list/euvalg\" title=\"Statistics Norway — Referendum results 1994; Archer (2005) — 'Norway outside the European Union'\" target=\"_blank\" rel=\"noopener\">POLL-DATA-006</a> sýnir söguleg niðurstöður norskra þjóðaratkvæðagreiðslna. Engin heimild staðfestir þó beinlínis þingákvörðun stórþingsins um að hrófla ekki við EES á þessu kjörtímabili. <a href=\"https://www.ruv.is/english/2025-08-01-trump-hits-iceland-with-15-tariff-450009\" title=\"Multiple Norwegian and Icelandic media sources\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-041</a> bendir hins vegar til þess að NHO (atvinnurekendafélag Noregs) hafi farið að tala opinberlega fyrir tollabandalagi við ESB — sem gefur til kynna umræðu um breytingar á EES-fyrirkomulaginu. Fullyrðingin um «afgerandi meirihluta» á stórþinginu er ekki staðfest í heimildunum.",
+      "missing_context": "Heimildir staðfesta almennan norskann stuðning við núverandi fyrirkomulag en ekki beinlínis þingákvörðun. NHO-umræðan (<a href=\"https://www.ruv.is/english/2025-08-01-trump-hits-iceland-with-15-tariff-450009\" title=\"Multiple Norwegian and Icelandic media sources\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-041</a>) sýnir að breyttar aðstæður vegna bandarískra tolla eru að hreyfa umræðuna í Noregi, þótt það sé ekki opinber stórþingsstefna.",
+      "supporting_evidence": [
+        {
+          "id": "PREC-HIST-002",
+          "source_name": "Sentio Research / Nationen polling series",
+          "source_url": null
+        },
+        {
+          "id": "POLL-DATA-006",
+          "source_name": "Statistics Norway — Referendum results 1994; Archer (2005) — 'Norway outside the European Union'",
+          "source_url": "https://www.ssb.no/en/statbank/list/euvalg"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "TRADE-DATA-041",
+          "source_name": "Multiple Norwegian and Icelandic media sources",
+          "source_url": "https://www.ruv.is/english/2025-08-01-trump-hits-iceland-with-15-tariff-450009"
+        }
+      ],
+      "category": "eea_eu_law",
+      "attribution": "asserted",
+      "article_slug": "brenglad-stodumat-vegna-esb",
+      "article_title": "Brenglað stöðumat vegna ESB",
+      "article_source": "bjorn_is",
+      "article_date": "2026-03-20"
+    },
+    {
+      "claim_text": "Ríkisstjórn Íslands reisir stöðumat sitt á því að «geópólítík og alþjóðasamkeppni» hafi í ríkara mæli áhrif á stefnumótun ESB og afstöðuna til innri markaðarins.",
+      "original_quote": "Stöðumat ríkisstjórnar Íslands er reist á því að \"geópólítík og alþjóðasamkeppni\" hafi í ríkara mæli áhrif á stefnumótun ESB og þar með talið á afstöðuna til sameiginlega evrópska markaðarins.",
+      "verdict": "supported",
+      "explanation": "Þessi greining endurspeglar vel skjalfesta þróun í ESB-stefnumótun. <a href=\"https://www.eeas.europa.eu/eeas/strategic-compass-security-and-defence-1_en\" title=\"EU Strategic Compass for Security and Defence (March 2022); NATO Allied Air Command — Icelandic Air Policing; IISS Strategic Survey 2023\" target=\"_blank\" rel=\"noopener\">SOV-HIST-003</a> lýsir öryggis- og varnaruppbyggingu ESB eftir innrás Rússa í Úkraínu, þar á meðal 150 milljarða evra varnarútgjaldaáætlun. <a href=\"https://www.eeas.europa.eu/eeas/eu-iceland-joint-press-release-signature-security-and-defence-partnership_en\" title=\"EEAS Joint Press Release\" target=\"_blank\" rel=\"noopener\">SOV-DATA-025</a> sýnir að Ísland undirritaði öryggis- og varnarsamstarfsyfirlýsingu við ESB í mars 2026 — sem bendir til þess að ríkisstjórnin viðurkenni þessa geópólitísku þróun. <a href=\"https://www.stjornarradid.is/verkefni/utanrikismal/evropusamvinna/thjodaratkvaedagreidsla/\" title=\"Government of Iceland — Referendum information materials; Althingi debate records; RÚV coverage\" target=\"_blank\" rel=\"noopener\">POL-DATA-024</a> staðfestir upplýsingaherferð ríkisstjórnarinnar um ESB-viðræður, sem er hluti af þessu stöðumati.",
+      "missing_context": "Andstöðuflokkar hafa gagnrýnt upplýsingaherferð ríkisstjórnarinnar sem hlutdræga (<a href=\"https://www.stjornarradid.is/verkefni/utanrikismal/evropusamvinna/thjodaratkvaedagreidsla/\" title=\"Government of Iceland — Referendum information materials; Althingi debate records; RÚV coverage\" target=\"_blank\" rel=\"noopener\">POL-DATA-024</a>). Stöðumatið er pólitískt mat ríkisstjórnarinnar, ekki hlutlaus greining, þótt undirliggjandi þróunin í ESB sé vel skjalfest.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-HIST-003",
+          "source_name": "EU Strategic Compass for Security and Defence (March 2022); NATO Allied Air Command — Icelandic Air Policing; IISS Strategic Survey 2023",
+          "source_url": "https://www.eeas.europa.eu/eeas/strategic-compass-security-and-defence-1_en"
+        },
+        {
+          "id": "SOV-DATA-025",
+          "source_name": "EEAS Joint Press Release",
+          "source_url": "https://www.eeas.europa.eu/eeas/eu-iceland-joint-press-release-signature-security-and-defence-partnership_en"
+        },
+        {
+          "id": "POL-DATA-024",
+          "source_name": "Government of Iceland — Referendum information materials; Althingi debate records; RÚV coverage",
+          "source_url": "https://www.stjornarradid.is/verkefni/utanrikismal/evropusamvinna/thjodaratkvaedagreidsla/"
+        },
+        {
+          "id": "SOV-DATA-030",
+          "source_name": "Vísindavefurinn — Baldur Þórhallsson, Professor of Political Science, University of Iceland (2025)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=88080"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "sovereignty",
+      "attribution": "asserted",
+      "article_slug": "brenglad-stodumat-vegna-esb",
+      "article_title": "Brenglað stöðumat vegna ESB",
+      "article_source": "bjorn_is",
+      "article_date": "2026-03-20"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "brenglad-stodumat-vegna-esb",
+      "title": "Brenglað stöðumat vegna ESB",
+      "source": "bjorn_is",
+      "date": "2026-03-20",
+      "claim_count": 2,
+      "attribution_types": [
+        "asserted"
+      ]
+    }
+  ]
 }

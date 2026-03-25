@@ -7,12 +7,100 @@
   "party": null,
   "stance": "neutral",
   "stance_score": 0.0,
-  "credibility": null,
+  "credibility": 0.5,
   "attribution_counts": {
-    "mentioned": 3
+    "quoted": 2,
+    "mentioned": 4
   },
   "althingi_stats": null,
-  "scorecard": {},
-  "claims": [],
-  "articles": []
+  "scorecard": {
+    "partially_supported": 2
+  },
+  "claims": [
+    {
+      "claim_text": "POLITICO greindi frá því mánudaginn 23. febrúar 2026, með vísan til nafnlausra heimildarmanna, að tal Trumps um Grænland hefði valdið öryggisótta á Íslandi og aukið stemninguna fyrir ESB-aðild.",
+      "original_quote": "það sem POLITICO hafði eftir nafnlausum heimildarmönnum mánudaginn 23. febrúar að tal Trumps um Grænland hefði valdið svo miklum öryggisótta á Íslandi að stemningin fyrir ESB-aðild ykist",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.reuters.com/world/\" title=\"Multiple news sources — Reuters, AP, BBC coverage of Trump Greenland statements (2025)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-011</a> staðfestir yfirlýsingar Trumps um Grænland á öðru kjörtímabili hans og auknar hernaðaráherslur hans á svæðinu. <a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"US State Department — Bilateral Relations Factsheet; Icelandic media reports (Heimildin, Stundin); Altinget.no\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-021</a> staðfestir umræðu í íslenskum og alþjóðlegum fjölmiðlum um áhrif Trump-stjórnarinnar á ESB-umræðuna á Íslandi, þar á meðal vangaveltur um tengsl við aukinn ESB-stuðning. Hins vegar staðfesta engar heimildir sérstaklega POLITICO-greinina frá 23. febrúar 2026 eða nákvæmlega þær fullyrðingar sem þar komu fram.",
+      "missing_context": "Staðreyndagrunnurinn inniheldur ekki POLITICO-greinina beint og getur því ekki staðfest nákvæma dagsetningu (23. febrúar) né orðrétt efni hennar. Almennt samhengi er staðfest en sértæk fullyrðing um POLITICO-fréttina er ekki sannreynanleg.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-011",
+          "source_name": "Multiple news sources — Reuters, AP, BBC coverage of Trump Greenland statements (2025)",
+          "source_url": "https://www.reuters.com/world/"
+        },
+        {
+          "id": "PARTY-DATA-021",
+          "source_name": "US State Department — Bilateral Relations Factsheet; Icelandic media reports (Heimildin, Stundin); Altinget.no",
+          "source_url": "https://www.state.gov/u-s-relations-with-iceland/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "party_positions",
+      "attribution": "quoted",
+      "article_slug": "brusselspuni-um-oryggismal",
+      "article_title": "Brusselspuni um öryggismál",
+      "article_source": "bjorn_is",
+      "article_date": "2026-02-27"
+    },
+    {
+      "claim_text": "POLITICO greindi frá því að aukinn stuðningur við ESB-aðild á Íslandi væri einkum knúinn áfram af öryggissjónarmiðum og ótta við Trump, fremur en efnahagslegum hvötum.",
+      "original_quote": "POLITICO sagði að aukinn stuðningur við aðild hér væri einkum knúinn áfram af öryggissjónarmiðum og ótta við Trump fremur en efnahagslegum hvötum",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að öryggissjónarmið og ótti við Trump hafi verið hluti af umræðunni um aukinn ESB-stuðning. <a href=\"https://www.reuters.com/world/\" title=\"Multiple news sources — Reuters, AP, BBC coverage of Trump Greenland statements (2025)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-011</a> staðfestir ásælni Trumps gagnvart Grænlandi og <a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"US State Department — Bilateral Relations Factsheet; Icelandic media reports (Heimildin, Stundin); Altinget.no\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-021</a> greinir frá vangaveltum um afstöðu Trump-stjórnarinnar til íslenskrar ESB-aðildar. Hins vegar sýnir <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — EU polls cross-referenced with Hagstofa consumer confidence index\" target=\"_blank\" rel=\"noopener\">POLL-DATA-009</a> að ESB-stuðningur á Íslandi tengist sterkt efnahagslegri óvissu — fylgni milli neytendatrausts og ESB-stuðnings er um -0,6. Fullyrðingin um að öryggismál séu «einkum» drifkrafturinn er mat POLITICO-greinarinnar sem einföldar flókna mynd. Engin heimild í staðreyndagrunni staðfestir beint efni POLITICO-greinarinnar.",
+      "missing_context": "<a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — EU polls cross-referenced with Hagstofa consumer confidence index\" target=\"_blank\" rel=\"noopener\">POLL-DATA-009</a> sýnir sterka söguleg tengsl milli efnahagskreppu og ESB-stuðnings, sem bendir til þess að efnahagshvatar séu mikilvægur þáttur samhliða öryggismálum. Fullyrðingin er tilvísun í fjölmiðlagrein og staðreyndagrunnurinn inniheldur ekki POLITICO-greinina sjálfa til staðfestingar á efni hennar.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-011",
+          "source_name": "Multiple news sources — Reuters, AP, BBC coverage of Trump Greenland statements (2025)",
+          "source_url": "https://www.reuters.com/world/"
+        },
+        {
+          "id": "PARTY-DATA-021",
+          "source_name": "US State Department — Bilateral Relations Factsheet; Icelandic media reports (Heimildin, Stundin); Altinget.no",
+          "source_url": "https://www.state.gov/u-s-relations-with-iceland/"
+        },
+        {
+          "id": "SOV-DATA-009",
+          "source_name": "NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list",
+          "source_url": "https://www.nato.int/en/about-us/official-texts-and-resources/strategic-concepts/nato-2022-strategic-concept"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "POLL-DATA-009",
+          "source_name": "Gallup Ísland — EU polls cross-referenced with Hagstofa consumer confidence index",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+        }
+      ],
+      "category": "polling",
+      "attribution": "quoted",
+      "article_slug": "rikisstjorn-a-reki-til-esb",
+      "article_title": "Ríkisstjórn á reki til ESB",
+      "article_source": "bjorn_is",
+      "article_date": "2026-02-26"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "brusselspuni-um-oryggismal",
+      "title": "Brusselspuni um öryggismál",
+      "source": "bjorn_is",
+      "date": "2026-02-27",
+      "claim_count": 1,
+      "attribution_types": [
+        "quoted"
+      ]
+    },
+    {
+      "slug": "rikisstjorn-a-reki-til-esb",
+      "title": "Ríkisstjórn á reki til ESB",
+      "source": "bjorn_is",
+      "date": "2026-02-26",
+      "claim_count": 1,
+      "attribution_types": [
+        "quoted"
+      ]
+    }
+  ]
 }

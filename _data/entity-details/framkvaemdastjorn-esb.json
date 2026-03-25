@@ -6,16 +6,16 @@
   "role": "framkvæmdastjórn",
   "party": null,
   "stance": "mixed",
-  "stance_score": 0.33,
-  "credibility": 0.58,
+  "stance_score": 0.2,
+  "credibility": 0.64,
   "attribution_counts": {
-    "paraphrased": 6,
-    "mentioned": 2
+    "paraphrased": 7,
+    "mentioned": 3
   },
   "althingi_stats": null,
   "scorecard": {
     "partially_supported": 5,
-    "supported": 1
+    "supported": 2
   },
   "claims": [
     {
@@ -173,6 +173,37 @@
       "article_title": "Ísland og ESB – óskhyggja og staðreyndir",
       "article_source": "Heimssýn",
       "article_date": "2025-08-13"
+    },
+    {
+      "claim_text": "Framkvæmdastjórn ESB hefur staðfest að aðildarumsókn Íslands frá 2009 sé enn í gildi.",
+      "original_quote": "Framkvæmdastjórn ESB hafi þvert á mótt staðfest að umsóknin sé enn í gildi eins og fram hafi komið í fréttum",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a> staðfestir að framkvæmdastjórn ESB hafi lýst því yfir að bréf Gunnars Braga Sveinssonar hafi ekki jafngilt formlegri afturköllun og að umsóknin sé tæknilega enn í gildi. Framkvæmdastjórnin staðfesti þetta aftur í mars 2026 samkvæmt sömu heimild. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> nefnir einnig að ESB hafi staðfest gildi umsóknarinnar.",
+      "missing_context": "Lagaleg staða umsóknarinnar er flóknari en staðfesting framkvæmdastjórnarinnar gefur til kynna. Regluverkið hefur breyst verulega frá 2013 (<a href=\"https://commission.europa.eu/strategy-and-policy/strategy-documents/commission-work-programme_en\" title=\"EUR-Lex legislative database; European Commission Work Programmes 2014–2025\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-018</a>), og endurræsing viðræðna gæti krafist endurskoðunar kafla sem áður voru lokaðir tímabundið.",
+      "supporting_evidence": [
+        {
+          "id": "PARTY-DATA-011",
+          "source_name": "Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews",
+          "source_url": "https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/"
+        },
+        {
+          "id": "POLITICAL-DATA-010",
+          "source_name": "Althingi — Historical records; European Commission accession records",
+          "source_url": "https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/"
+        },
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "paraphrased",
+      "article_slug": "utanrikisraduneytid-fellur-a-fyrsta-profinu",
+      "article_title": "Utanríkisráðuneytið fellur á fyrsta prófinu",
+      "article_source": "bjorn_is",
+      "article_date": "2026-03-07"
     }
   ],
   "articles": [
@@ -191,6 +222,16 @@
       "title": "Ísland og ESB – óskhyggja og staðreyndir",
       "source": "Heimssýn",
       "date": "2025-08-13",
+      "claim_count": 1,
+      "attribution_types": [
+        "paraphrased"
+      ]
+    },
+    {
+      "slug": "utanrikisraduneytid-fellur-a-fyrsta-profinu",
+      "title": "Utanríkisráðuneytið fellur á fyrsta prófinu",
+      "source": "bjorn_is",
+      "date": "2026-03-07",
       "claim_count": 1,
       "attribution_types": [
         "paraphrased"

@@ -7,12 +7,86 @@
   "party": null,
   "stance": "pro_eu",
   "stance_score": 1.0,
-  "credibility": null,
+  "credibility": 0.5,
   "attribution_counts": {
-    "mentioned": 1
+    "paraphrased": 2,
+    "mentioned": 2
   },
   "althingi_stats": null,
-  "scorecard": {},
-  "claims": [],
-  "articles": []
+  "scorecard": {
+    "unverifiable": 1,
+    "partially_supported": 1
+  },
+  "claims": [
+    {
+      "claim_text": "Utanríkisráðherra Íslands hefur sagt í erlendum miðlum að Ísland geti verið komið inn í ESB á 12-18 mánuðum.",
+      "original_quote": "Utanríkisráðherra segir það í erlendum miðlum að Ísland geti verið komið inn á 12-18 mánuðum.",
+      "verdict": "unverifiable",
+      "explanation": "Engar heimildir í staðreyndagrunni staðfesta eða hrekja að utanríkisráðherra hafi sett fram þennan tímaramma í erlendum miðlum. <a href=\"https://visitukraine.today/blog/2963/eu-membership-how-long-did-it-take-between-the-start-of-negotiations-and-accession\" title=\"Visit Ukraine / EU Council enlargement data\" target=\"_blank\" rel=\"noopener\">PREC-DATA-036</a> sýnir að hraðasta ESB-aðild sögunnar (Austurríki, Finnland, Svíþjóð) tók tæp tvö ár, en þau lönd höfðu ekki sambærilegar áskoranir í sjávarútvegi eða landbúnaði. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — Steps towards joining; DG NEAR accession negotiation methodology\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-013</a> bendir til þess að aðildarviðræður taki yfirleitt 5-10 ár. Tímaramminn 12-18 mánuðir væri fordæmalaus jafnvel miðað við hagstæðustu sögulegu dæmin.",
+      "missing_context": "Heimildir staðfesta ekki að utanríkisráðherra hafi sett fram þennan tímaramma. Hraðasta aðild sögunnar tók nær tveimur árum og náðist við aðstæður sem ólíkt Íslandi fólu ekki í sér flókna sjávarútvegs- eða landbúnaðarkafla. Tímarammi Íslands 2010-2013 sýndi hraðan framgang en viðræðum var frestað áður en þeim lauk.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [
+        {
+          "id": "PREC-DATA-036",
+          "source_name": "Visit Ukraine / EU Council enlargement data",
+          "source_url": "https://visitukraine.today/blog/2963/eu-membership-how-long-did-it-take-between-the-start-of-negotiations-and-accession"
+        },
+        {
+          "id": "EEA-LEGAL-013",
+          "source_name": "European Commission — Steps towards joining; DG NEAR accession negotiation methodology",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        }
+      ],
+      "category": "party_positions",
+      "attribution": "paraphrased",
+      "article_slug": "lilja-hvoss-hun-tekur-enga-abyrgd",
+      "article_title": "Lilja hvöss: Hún tekur enga ábyrgð",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-22"
+    },
+    {
+      "claim_text": "Allir í Evrópu halda að Ísland sé á leiðinni inn í ESB vegna þess hvernig utanríkisráðherra talar um málið.",
+      "original_quote": "Það halda allir í Evrópu að við séum á leiðinni inn vegna þess að utanríkisráðherrann talar með þessum hætti.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin er augljóslega ýkt — «allir í Evrópu» er alhæfing sem engin gögn geta staðfest. <a href=\"https://commission.europa.eu/about/organisation/college-commissioners/marta-kos_en\" title=\"European Commission — Commissioner Profile + New Union Post\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-015</a> sýnir þó að Marta Kos, stækkunarstjóri ESB, lýsti yfir vilja til hraðviðræðna eftir fund með utanríkisráðherra 18. mars 2026. <a href=\"https://ec.europa.eu/commission/presscorner/detail/en/ac_25_1887\" title=\"European Commission — Press Corner; EEAS\" target=\"_blank\" rel=\"noopener\">EEA-DATA-015</a> staðfestir að samskipti íslensku ríkisstjórnarinnar við ESB hafa verið umfangsmeiri en í áratugi. Þetta gefur til kynna að í huga evrópskra ákvarðanatakara er Ísland á leið í viðræður. Á hinn bóginn fjallar <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> um ráðgefandi þjóðaratkvæðagreiðslu sem er ólokið ferli.",
+      "missing_context": "Orðalagið «allir í Evrópu» er pólitísk ýkja. Heimildir sýna að evrópskir leiðtogar hafa tekið eftir íslensku ferlinu, en viðbrögð þeirra endurspegla venjulegt diplómatískt viðmót — ekki staðfestingu á aðild. Munurinn á viðræðuferlinu og raunverulegri aðild er verulegur.",
+      "supporting_evidence": [
+        {
+          "id": "POLITICAL-DATA-015",
+          "source_name": "European Commission — Commissioner Profile + New Union Post",
+          "source_url": "https://commission.europa.eu/about/organisation/college-commissioners/marta-kos_en"
+        },
+        {
+          "id": "EEA-DATA-015",
+          "source_name": "European Commission — Press Corner; EEAS",
+          "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ac_25_1887"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "SOV-DATA-006",
+          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+        }
+      ],
+      "category": "party_positions",
+      "attribution": "paraphrased",
+      "article_slug": "lilja-hvoss-hun-tekur-enga-abyrgd",
+      "article_title": "Lilja hvöss: Hún tekur enga ábyrgð",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-22"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "lilja-hvoss-hun-tekur-enga-abyrgd",
+      "title": "Lilja hvöss: Hún tekur enga ábyrgð",
+      "source": "Morgunblaðið",
+      "date": "2026-03-22",
+      "claim_count": 2,
+      "attribution_types": [
+        "paraphrased"
+      ]
+    }
+  ]
 }

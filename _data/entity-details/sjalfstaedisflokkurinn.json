@@ -6,24 +6,67 @@
   "role": "stjórnmálaflokkur",
   "party": "Sjálfstæðisflokkur",
   "stance": "anti_eu",
-  "stance_score": -0.75,
-  "credibility": null,
+  "stance_score": -0.65,
+  "credibility": 0.5,
   "attribution_counts": {
-    "mentioned": 20
+    "asserted": 1,
+    "paraphrased": 1,
+    "mentioned": 26
   },
   "althingi_stats": null,
-  "scorecard": {},
-  "claims": [],
-  "articles": [],
+  "scorecard": {
+    "partially_supported": 1
+  },
+  "claims": [
+    {
+      "claim_text": "Sjálfstæðisflokkurinn og fleiri flokkar gáfu kosningaloforð fyrir þingkosningar 2013 um ESB-aðild samkvæmt fullyrðingum Kristrúnar Frostadóttur og Þorgerðar Katrínar Gunnarsdóttur.",
+      "original_quote": "Eitt af meginstefjunum í málflutningi Kristrúnar og Þorgerðar Katrínar Gunnarsdóttur utanríkisráðherra er að með tillögunni um þjóðaratkvæðagreiðsluna nú séu þær að «að efna hér svikið loforð» Sjálfstæðisflokksins og annarra flokka í minnihluta á alþingi nú sem gefið hafi verið fyrir þingkosningar 2013.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.visindavefur.is/svar.php?id=72714\" title=\"Vísindavefurinn — Stefanía Óskarsdóttir, Professor of Political Science, University of Iceland (2016)\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-024</a> staðfestir hluta fullyrðingarinnar: fræðileg greining frá Háskóla Íslands sýndi að Sjálfstæðisflokkurinn lofaði þjóðaratkvæðagreiðslu um ESB-aðildarviðræður fyrir kosningarnar 2013. Bjarni Benediktsson sagði í apríl 2013 að flokkurinn hefði «opnað á þjóðaratkvæðagreiðslu». <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir að utanríkisráðherra vísar til þessara «sviknu loforða» í flutningsræðu sinni. Þó ber að hafa í huga að loforðið var um þjóðaratkvæðagreiðslu, ekki beinlínis um að styðja ESB-aðild, og ræðumaðurinn Bjarni sagði fimm dögum áður að hann vildi bara hætta viðræðum.",
+      "missing_context": "<a href=\"https://www.visindavefur.is/svar.php?id=72714\" title=\"Vísindavefurinn — Stefanía Óskarsdóttir, Professor of Political Science, University of Iceland (2016)\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-024</a> bendir á innri mótsagnir í málflutningi Sjálfstæðisflokksins — Bjarni Benediktsson talaði bæði fyrir þjóðaratkvæðagreiðslu og fyrir stöðvun viðræðna á fimm daga tímabili. Loforðið var um þjóðaratkvæðagreiðslu, ekki um ESB-aðild sjálfa. Hvaða «fleiri flokkar» gáfu sambærileg loforð er ekki nánar tilgreint í heimildum.",
+      "supporting_evidence": [
+        {
+          "id": "PARTY-DATA-024",
+          "source_name": "Vísindavefurinn — Stefanía Óskarsdóttir, Professor of Political Science, University of Iceland (2016)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=72714"
+        },
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "party_positions",
+      "attribution": "paraphrased",
+      "article_slug": "kristrun-og-thjodaratkvaedagreidslan",
+      "article_title": "Kristrún og þjóðaratkvæðagreiðslan",
+      "article_source": "bjorn_is",
+      "article_date": "2026-03-10"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "kristrun-og-thjodaratkvaedagreidslan",
+      "title": "Kristrún og þjóðaratkvæðagreiðslan",
+      "source": "bjorn_is",
+      "date": "2026-03-10",
+      "claim_count": 1,
+      "attribution_types": [
+        "mentioned",
+        "paraphrased"
+      ]
+    }
+  ],
   "icelandic": true,
   "party_members": [
     {
       "slug": "gudrun-hafsteinsdottir",
       "name": "Guðrún Hafsteinsdóttir",
       "role": "þingmaður",
-      "stance_score": -0.8,
-      "credibility": 0.6,
-      "claim_count": 44
+      "stance_score": -0.83,
+      "credibility": 0.66,
+      "claim_count": 52
     },
     {
       "slug": "gudlaugur-thor-thordarson",
@@ -34,6 +77,22 @@
       "claim_count": 42
     },
     {
+      "slug": "dilja-mist-einarsdottir",
+      "name": "Diljá Mist Einarsdóttir",
+      "role": "þingmaður",
+      "stance_score": -0.83,
+      "credibility": 0.8,
+      "claim_count": 26
+    },
+    {
+      "slug": "bjorn-bjarnason",
+      "name": "Björn Bjarnason",
+      "role": "fyrrverandi ráðherra og alþingismaður",
+      "stance_score": -0.5,
+      "credibility": 0.59,
+      "claim_count": 21
+    },
+    {
       "slug": "thordis-kolbrun-reykfjord-gylfadottir",
       "name": "Þórdís Kolbrún Reykfjörð Gylfadóttir",
       "role": "þingmaður",
@@ -42,26 +101,10 @@
       "claim_count": 21
     },
     {
-      "slug": "bjorn-bjarnason",
-      "name": "Björn Bjarnason",
-      "role": "fyrrverandi ráðherra og alþingismaður",
-      "stance_score": -0.8,
-      "credibility": 0.61,
-      "claim_count": 19
-    },
-    {
-      "slug": "dilja-mist-einarsdottir",
-      "name": "Diljá Mist Einarsdóttir",
-      "role": "þingmaður",
-      "stance_score": -1.0,
-      "credibility": 0.75,
-      "claim_count": 18
-    },
-    {
       "slug": "jon-petur-zimsen",
       "name": "Jón Pétur Zimsen",
       "role": "þingmaður",
-      "stance_score": -1.0,
+      "stance_score": -0.5,
       "credibility": 0.65,
       "claim_count": 18
     },
@@ -69,9 +112,17 @@
       "slug": "thordis-kolbrun",
       "name": "Þórdís Kolbrún",
       "role": "þingmaður",
-      "stance_score": 0.0,
-      "credibility": 0.75,
-      "claim_count": 10
+      "stance_score": 0.5,
+      "credibility": 0.72,
+      "claim_count": 12
+    },
+    {
+      "slug": "david-oddsson",
+      "name": "Davíð Oddsson",
+      "role": "fyrrverandi forsætisráðherra",
+      "stance_score": 0.17,
+      "credibility": 0.5,
+      "claim_count": 6
     },
     {
       "slug": "hildur-sverrisdottir",
@@ -85,7 +136,7 @@
       "slug": "jens-gardar-helgason",
       "name": "Jens Garðar Helgason",
       "role": "þingmaður",
-      "stance_score": -0.67,
+      "stance_score": -0.5,
       "credibility": null,
       "claim_count": 5
     },
@@ -106,6 +157,22 @@
       "claim_count": 1
     },
     {
+      "slug": "geir-h-haarde",
+      "name": "Geir H. Haarde",
+      "role": "fyrrverandi forsætisráðherra og sendiherra",
+      "stance_score": -1.0,
+      "credibility": null,
+      "claim_count": 1
+    },
+    {
+      "slug": "sigurdur-kari-kristjansson",
+      "name": "Sigurður Kári Kristjánsson",
+      "role": "fyrrverandi alþingismaður",
+      "stance_score": -1.0,
+      "credibility": null,
+      "claim_count": 1
+    },
+    {
       "slug": "bjarni-benediktsson-eldri",
       "name": "Bjarni Benediktsson eldri",
       "role": "þingmaður",
@@ -118,14 +185,6 @@
       "name": "Kristrún Fladal",
       "role": "utanríkisráðherra",
       "stance_score": 1.0,
-      "credibility": null,
-      "claim_count": 0
-    },
-    {
-      "slug": "sigurdur-kari-kristjansson",
-      "name": "Sigurður Kári Kristjánsson",
-      "role": "fyrrverandi alþingismaður",
-      "stance_score": -1.0,
       "credibility": null,
       "claim_count": 0
     },

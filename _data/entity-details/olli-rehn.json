@@ -7,13 +7,54 @@
   "party": null,
   "stance": "neutral",
   "stance_score": 0.0,
-  "credibility": null,
+  "credibility": 0.5,
   "attribution_counts": {
     "quoted": 1,
+    "paraphrased": 1,
     "mentioned": 1
   },
   "althingi_stats": null,
-  "scorecard": {},
-  "claims": [],
-  "articles": []
+  "scorecard": {
+    "partially_supported": 1
+  },
+  "claims": [
+    {
+      "claim_text": "Olli Rehn, þáverandi stækkunarráðherra ESB, sagði eftir umsókn Íslands 2009 að Ísland hefði tekið upp tvo þriðju löggjafar ESB, en þær upplýsingar komu frá íslenskum ESB-sinnum.",
+      "original_quote": "Haft var eftir Olli Rehn, þáverandi stækkunarráðherra Evrópusambandsins, í fjölmiðlum eftir að þáverandi ríkisstjórn Samfylkingarinnar og Vinstri grænna hafði sótt um inngöngu í sambandið 2009 að Ísland hefði tekið upp tvo þriðju löggjafar þess en hann reyndist hins vegar hafa það hlutfall frá hérlendum Evrópusambandssinnum.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/statistics/legislative-acts-statistics.html\" title=\"EUR-Lex — Legislation statistics\" target=\"_blank\" rel=\"noopener\">EEA-DATA-003</a> staðfestir sambærilega tölu — Ísland hafi þegar tekið upp «um þriðjung» (approximately one-third) af ESB-regluverkinu í gegnum EES-samninginn við umsókn 2009. Talan «tveir þriðju» sem Rehn nefndi er tvöfalt hærri en «þriðjungur» sem framkvæmdastjórnin sjálf notaði. Heimildir staðfesta þannig að fullyrðingin um ónákvæma tölu er trúverðug. Hins vegar er hin sértæka fullyrðing — að Rehn hafi fengið töluna frá íslenskum ESB-sinnum — ekki staðfest í heimildum.",
+      "missing_context": "Uppspretta tölunnar sem Rehn notaði er ekki skráð í heimildum. Framkvæmdastjórnin sjálf talaði um «þriðjung» en ESA-tölur um innri markaðinn (70%) gætu hafa verið uppistaðan í misskilningi. Fullyrðingin um uppruna frá íslenskum ESB-sinnum er ósannreynd.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-DATA-003",
+          "source_name": "EUR-Lex — Legislation statistics",
+          "source_url": "https://eur-lex.europa.eu/statistics/legislative-acts-statistics.html"
+        },
+        {
+          "id": "EEA-DATA-017",
+          "source_name": "Utanríkisráðuneytið — Gengið til góðs: Skref í átt að bættri framkvæmd EES-samningsins (apríl 2018)",
+          "source_url": "https://www.government.is/library/01-Ministries/Ministry-for-Foreign-Affairs/PDF-skjol/EES_skyrsla_15.pdf"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "paraphrased",
+      "article_slug": "vid-hofum-ekki-tekid-upp-80-af-reglum-esb",
+      "article_title": "Við höfum ekki tekið upp 80% af reglum ESB",
+      "article_source": "Stjórnmálin",
+      "article_date": "2026-03-24"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "vid-hofum-ekki-tekid-upp-80-af-reglum-esb",
+      "title": "Við höfum ekki tekið upp 80% af reglum ESB",
+      "source": "Stjórnmálin",
+      "date": "2026-03-24",
+      "claim_count": 1,
+      "attribution_types": [
+        "paraphrased"
+      ]
+    }
+  ]
 }

@@ -6,13 +6,59 @@
   "role": "þing",
   "party": null,
   "stance": "mixed",
-  "stance_score": 0.33,
-  "credibility": null,
+  "stance_score": 0.25,
+  "credibility": 0.5,
   "attribution_counts": {
-    "mentioned": 10
+    "paraphrased": 1,
+    "mentioned": 11
   },
   "althingi_stats": null,
-  "scorecard": {},
-  "claims": [],
-  "articles": []
+  "scorecard": {
+    "partially_supported": 1
+  },
+  "claims": [
+    {
+      "claim_text": "Evrópuþingið telur húsnæðiskreppu ríkja í álfunni vegna þess að húsnæði er of dýrt miðað við tekjur og framboðsskortur er á fasteignum í stærri borgum.",
+      "original_quote": "Í stuttu máli telur Evrópuþingið húsnæðiskreppu ríkja í álfunni vegna þess að húsnæði er of dýrt miðað við tekjur og framboðsskortur er á fasteignum í stærri borgum.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að húsnæðisvandi er víðtækur í Evrópu — <a href=\"https://cb.is/financial-stability/\" title=\"Seðlabanki Íslands — Financial Stability Report; Hagstofa Íslands — Housing price index\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-001</a> sýnir að 25% ESB-leigjenda verja yfir 30% tekna í húsnæði og <a href=\"https://px.hagstofa.is/pxis/pxweb/is/Samfelag/Samfelag__husnaedi/\" title=\"Hagstofa Íslands — Housing Statistics; Seðlabanki Íslands — Financial Stability Report 2025\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-008</a> lýsir framboðsskorti. Enga beina heimild er þó að finna í staðreyndagrunninum um ályktun Evrópuþingsins sem slíka. Kjarni fullyrðingarinnar — húsnæðisvandi vegna verðhækkana og framboðsskorts — er í samræmi við tiltæk gögn.",
+      "missing_context": "Staðreyndagrunnurinn inniheldur enga beina heimild um ályktun Evrópuþingsins um húsnæðiskreppu. Fullyrðingin um afstöðu Evrópuþingsins er ekki sannreynanleg með fyrirliggjandi gögnum, þó undirliggjandi staðreyndir séu studdar.",
+      "supporting_evidence": [
+        {
+          "id": "HOUSING-DATA-001",
+          "source_name": "Seðlabanki Íslands — Financial Stability Report; Hagstofa Íslands — Housing price index",
+          "source_url": "https://cb.is/financial-stability/"
+        },
+        {
+          "id": "HOUSING-DATA-007",
+          "source_name": "Þjóðskrá Íslands (Registers Iceland) — Property Market Index; Eurostat — House price statistics",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/PRC_HPI_A/default/table"
+        },
+        {
+          "id": "HOUS-DATA-008",
+          "source_name": "Hagstofa Íslands — Housing Statistics; Seðlabanki Íslands — Financial Stability Report 2025",
+          "source_url": "https://px.hagstofa.is/pxis/pxweb/is/Samfelag/Samfelag__husnaedi/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "housing",
+      "attribution": "paraphrased",
+      "article_slug": "greidsluthreyta-og-konnunarfarid-sem-er-a-leid-til-brussel",
+      "article_title": "Greiðsluþreyta og könnunarfarið sem er á leið til Brussel",
+      "article_source": "Viðskiptablaðið",
+      "article_date": "2026-03-22"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "greidsluthreyta-og-konnunarfarid-sem-er-a-leid-til-brussel",
+      "title": "Greiðsluþreyta og könnunarfarið sem er á leið til Brussel",
+      "source": "Viðskiptablaðið",
+      "date": "2026-03-22",
+      "claim_count": 1,
+      "attribution_types": [
+        "paraphrased"
+      ]
+    }
+  ]
 }

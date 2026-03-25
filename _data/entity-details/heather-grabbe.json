@@ -7,17 +7,17 @@
   "party": null,
   "stance": "neutral",
   "stance_score": 0.0,
-  "credibility": 0.5,
+  "credibility": 0.54,
   "attribution_counts": {
     "asserted": 1,
     "quoted": 8,
-    "paraphrased": 2,
+    "paraphrased": 4,
     "mentioned": 1
   },
   "althingi_stats": null,
   "scorecard": {
     "partially_supported": 7,
-    "supported": 3,
+    "supported": 4,
     "misleading": 1
   },
   "claims": [
@@ -416,6 +416,48 @@
       "article_title": "Fengu hvorugt varanlegar undanþágur",
       "article_source": "Vísir",
       "article_date": "2026-03-14"
+    },
+    {
+      "claim_text": "Varanlegur undanþágukerfið (opt-out) er ekki lengur í boði fyrir ný aðildarríki að Evrópusambandinu.",
+      "original_quote": "Þá er slíkt ekki í boði lengur eins og Heather Grabbe, sérfræðingur við Bruegel-hugveituna í Brussel, benti á í kvöldfréttum Ríkisútvarpsins þann 6. marz síðastliðinn.",
+      "verdict": "supported",
+      "explanation": "Heimildir staðfesta skýrt að frá Lissabon-sáttmálanum (2009) hefur formlega stefna ESB verið sú að ný aðildarríki geti ekki samið um varanlegar undanþágur (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a>). Stækkununarfulltrúi Stefan Füle staðfesti ítrekað að öll ný aðildarríki þurfi að samþykkja allt regluverkið. Aðild Króatíu 2013 staðfesti þessa meginreglu — engar varanlegar undanþágur voru veittar. Aðgreiningu á opt-out og aðlögunarskeiðum er lýst í <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:21994A0103(01)\" title=\"Croatia Accession Treaty (2012); 2003 Accession Treaty (Poland, Czech Republic et al.)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-014</a>.",
+      "missing_context": "Þrátt fyrir formlega stefnu bendir <a href=\"https://eur-lex.europa.eu/collection/eu-law/treaties.html\" title=\"European Parliament — EU Treaties and Protocols; Accession Treaty texts\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-023</a> á að ESB hafi sýnt raunsæislegan sveigjanleika í tilteknum tilvikum. Sumir lögfræðingar halda því fram að 49. gr. Sáttmálans um Evrópusambandið heimili tæknilega sérhverja samningsniðurstöðu, þótt pólitísk samstaða gegn nýjum undanþágum sé mjög sterk. Einnig getur verið óljóst hvar mörkin liggja á milli langra aðlögunarskeiða og undanþága í framkvæmd.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-012",
+          "source_name": "European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        },
+        {
+          "id": "EEA-LEGAL-014",
+          "source_name": "Croatia Accession Treaty (2012); 2003 Accession Treaty (Poland, Czech Republic et al.)",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:21994A0103(01)"
+        },
+        {
+          "id": "AGRI-LEGAL-004",
+          "source_name": "EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        },
+        {
+          "id": "PREC-DATA-004",
+          "source_name": "Centre for European Reform; UK in a Changing Europe",
+          "source_url": "https://www.cer.eu/insights/gap-between-brexit-reset-rhetoric-and-reality"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "EEA-LEGAL-023",
+          "source_name": "European Parliament — EU Treaties and Protocols; Accession Treaty texts",
+          "source_url": "https://eur-lex.europa.eu/collection/eu-law/treaties.html"
+        }
+      ],
+      "category": "eea_eu_law",
+      "attribution": "paraphrased",
+      "article_slug": "valdid-faeri-annars-til-brussel",
+      "article_title": "Valdið færi annars til Brussel",
+      "article_source": "stjornmalin",
+      "article_date": "2026-03-23"
     }
   ],
   "articles": [
@@ -456,6 +498,16 @@
       "title": "Fengu hvorugt varanlegar undanþágur",
       "source": "Vísir",
       "date": "2026-03-14",
+      "claim_count": 1,
+      "attribution_types": [
+        "paraphrased"
+      ]
+    },
+    {
+      "slug": "valdid-faeri-annars-til-brussel",
+      "title": "Valdið færi annars til Brussel",
+      "source": "stjornmalin",
+      "date": "2026-03-23",
       "claim_count": 1,
       "attribution_types": [
         "paraphrased"

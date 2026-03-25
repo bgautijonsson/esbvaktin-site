@@ -7,9 +7,12 @@
   "party": null,
   "stance": "anti_eu",
   "stance_score": -1.0,
-  "credibility": 0.33,
+  "credibility": 0.5,
   "attribution_counts": {
-    "asserted": 9
+    "asserted": 9,
+    "quoted": 1,
+    "paraphrased": 6,
+    "mentioned": 2
   },
   "althingi_stats": {
     "speech_count": 120,
@@ -20,9 +23,10 @@
   },
   "scorecard": {
     "unsupported": 3,
-    "partially_supported": 2,
+    "partially_supported": 5,
     "misleading": 1,
-    "supported": 1
+    "supported": 3,
+    "unverifiable": 1
   },
   "claims": [
     {
@@ -257,6 +261,173 @@
       "article_title": "Umboðslaus undirskrift utanríkisráðherra",
       "article_source": "Blog.is",
       "article_date": "2026-03-18"
+    },
+    {
+      "claim_text": "Aðildarferlið er byggt upp þannig að hverjum samningskafla er aðeins lokað að settum skilyrðum uppfylltum — þ.e. viðeigandi löggjöf hefur verið breytt, stjórnsýsla sem uppfyllir kröfur ESB hefur verið sett upp og framkvæmd hennar tryggð.",
+      "original_quote": "Aðildarferlið er byggt upp þannig að eftir að viðræður um einstaka kafla hafa farið fram verður hverjum samningskafla aðeins lokað að settum skilyrðum uppfylltum. Með öðrum orðum: viðeigandi löggjöf hefur verið breytt, stjórnsýsla sem uppfyllir kröfur ESB hefur verið sett upp og framkvæmd hennar tryggð.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — Steps towards joining; DG NEAR accession negotiation methodology\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-013</a> staðfesta að aðildarviðræður ESB fela í sér skimun, opnunarviðmið og lokunarviðmið sem umsóknarríkið þarf að uppfylla. Framkvæmdastjórnin metur hvort löggjöf hafi verið innleidd, stjórnsýsla sett á fót og framkvæmd hennar tryggð áður en kafla er lokað. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> undirstrikar að viðræðurnar snúast um «hvenær og hvernig» reglur eru teknar upp, ekki «hvort» — sem staðfestir lýsinguna á ferlinu.",
+      "missing_context": "Endurskoðuð aðferðafræði stækkunar frá 2020 (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — Communication on 'Enhancing the accession process: A credible EU perspective for the Western Balkans', COM(2020) 57 final\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-019</a>) bætir við «afturkræfni» — hægt er að opna aftur kafla sem þegar hafa verið lokaðir ef ríkið dregst aftur úr. Þá getur umsóknarríki samið um aðlögunartímabil þar sem full innleiðing er seinkuð, þótt skuldbinding liggi fyrir.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-017",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards joining' factsheet",
+          "source_url": "https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf"
+        },
+        {
+          "id": "EEA-LEGAL-013",
+          "source_name": "European Commission — Steps towards joining; DG NEAR accession negotiation methodology",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        },
+        {
+          "id": "EEA-LEGAL-021",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "paraphrased",
+      "article_slug": "erna-og-jon-utskyra-lok-lok-og-laes-lokunarskilyrdi-adildarferlisins",
+      "article_title": "Erna og Jón útskýra lok, lok og læs -- lokunarskilyrði aðildarferlisins",
+      "article_source": "Heimssýn",
+      "article_date": "2026-03-22"
+    },
+    {
+      "claim_text": "Þegar samningskafla er lokað hafa annað hvort verið innleiddar þær reglur sem þarf að lögfesta, eða liggi fyrir nákvæm og fyrirvaralaus skuldbinding um að það verði gert og hvenær.",
+      "original_quote": "Þegar samningskafla er lokað hafa allir endar verið hnýttir. Annað hvort hefur Alþingi þegar innleitt viðkomandi reglur sem þarf að lögfesta ella liggi fyrir nákvæm og fyrirvaralaus skuldbinding um að það verði gert og hvenær.",
+      "verdict": "supported",
+      "explanation": "Þessi fullyrðing er nákvæmari en fullyrðing 2 og tekur tillit til þess að lokun kafla getur falið í sér annað hvort raunverulega innleiðingu eða bindandi skuldbindingu um tímasetta innleiðingu. <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> staðfesta þetta tvennt: lokunarviðmið krefjast annaðhvort fullrar innleiðingar eða samkomulags um aðlögunartímabil með skýrri áætlun. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — Steps towards joining; DG NEAR accession negotiation methodology\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-013</a> lýsir ferlinu þar sem bæði lokunarviðmið og eftirfylgni eru hluti af lokunarskilyrðunum.",
+      "missing_context": "Fullyrðingin nefnir Alþingi sérstaklega, en samkvæmt <a href=\"https://www.visindavefur.is/svar.php?id=68561\" title=\"Vísindavefurinn — Þórhildur Hagalín, European Studies scholar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-024</a> eru flestar ESB-gerðir innleiddar með reglugerðum framkvæmdarvaldsins, ekki með lögum Alþingis. Aðeins aðgerðir sem krefjast lagabreytinga þurfa þingafgreiðslu. Þá getur framkvæmdastjórnin opnað kafla aftur ef umsóknarríki bregst skyldum sínum.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-017",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards joining' factsheet",
+          "source_url": "https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf"
+        },
+        {
+          "id": "EEA-LEGAL-021",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        },
+        {
+          "id": "EEA-LEGAL-013",
+          "source_name": "European Commission — Steps towards joining; DG NEAR accession negotiation methodology",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "paraphrased",
+      "article_slug": "erna-og-jon-utskyra-lok-lok-og-laes-lokunarskilyrdi-adildarferlisins",
+      "article_title": "Erna og Jón útskýra lok, lok og læs -- lokunarskilyrði aðildarferlisins",
+      "article_source": "Heimssýn",
+      "article_date": "2026-03-22"
+    },
+    {
+      "claim_text": "Frá samþykkt Lissabon-sáttmálans 2009 er lokun samningskafla ófrávíkjanlegt ferli.",
+      "original_quote": "Frá samþykkt Lissabon-sáttmálans 2009 er þetta ófrávíkjanlegt ferli",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> staðfestir að frá Lissabon-sáttmálanum hafa ný aðildarríki ekki getað samið um varanlegar undanþágur — aðeins aðlögunartímabil. Lokuferlið hefur hert verulega. Fullyrðingin um að ferlið sé «ófrávíkjanlegt» er þó of sterk. <a href=\"https://eur-lex.europa.eu/collection/eu-law/treaties.html\" title=\"European Parliament — EU Treaties and Protocols; Accession Treaty texts\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-023</a> sýnir að nokkur ríki hafa náð sérstökum fyrirkomulagi sem virka sem varanlegar undanþágur í reynd — þar á meðal Svíþjóð með evrunni og Finnland með landbúnaðarstuðningi. Sumir fræðimenn telja að 49. grein ESB-sáttmálans heimili tæknilega séð hvaða niðurstöðu sem er.",
+      "missing_context": "Orðið «ófrávíkjanlegt» gefur til kynna að engin sveigjanleiki sé mögulegur, en pólitísk og lagaleg staða er blæbrigðaríkari. Endurskoðuð stækkunaraðferðafræði 2020 styrkti skilyrðasetningar en bjó ekki til nýja undanþágumöguleika. Kroatía (2013) fékk enga varanlega undanþágu, en fékk aðlögunartímabil sem ennþá hafa áhrif.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-012",
+          "source_name": "European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "EEA-LEGAL-023",
+          "source_name": "European Parliament — EU Treaties and Protocols; Accession Treaty texts",
+          "source_url": "https://eur-lex.europa.eu/collection/eu-law/treaties.html"
+        }
+      ],
+      "category": "eea_eu_law",
+      "attribution": "paraphrased",
+      "article_slug": "erna-og-jon-utskyra-lok-lok-og-laes-lokunarskilyrdi-adildarferlisins",
+      "article_title": "Erna og Jón útskýra lok, lok og læs -- lokunarskilyrði aðildarferlisins",
+      "article_source": "Heimssýn",
+      "article_date": "2026-03-22"
+    },
+    {
+      "claim_text": "Þetta ófrávíkjanlega ferli við lokun samningskafla var að mestu leyti þegar komið til framkvæmdar þegar ríkin 10 sem gengu í ESB 1. maí 2004 gerðu sína aðildarsamninga.",
+      "original_quote": "og var að mestu leyti þegar komið til framkvæmdar þegar ríkin 10 sem gengu í sambandið 1. maí 2004 gerðu sína aðildarsamninga.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-2023-27_en\" title=\"2003 Accession Treaty; 2005 Accession Treaty (Bulgaria/Romania); 2011 Croatia Accession Treaty; European Commission CAP reform documentation\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-016</a> og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L:2003:236:TOC\" title=\"European Commission — 2003 Act of Accession; Eurostat\" target=\"_blank\" rel=\"noopener\">PREC-HIST-020</a> staðfesta að stækkunin 2004 fylgdi ströngu aðildarferli með ítarlegum skilyrðum og aðlögunartímabilum. Kröfugerðin var miklu strangari en í fyrri stækkunum. <a href=\"https://visitukraine.today/blog/2963/eu-membership-how-long-did-it-take-between-the-start-of-negotiations-and-accession\" title=\"Visit Ukraine / EU Council enlargement data\" target=\"_blank\" rel=\"noopener\">PREC-DATA-036</a> sýnir þó að viðræður 2004-ríkjanna hófust um 1998–2000, áður en Lissabon-sáttmálinn var samþykktur. Fullyrðingin segir ferlið hafi verið «að mestu leyti» komið til framkvæmdar, sem er sanngjörn orðalag — en formleg herðing á reglum, svo sem bann við varanlegum undanþágum, var ekki lögfest fyrr en síðar.",
+      "missing_context": "Heimildirnar staðfesta ekki beint fullyrðinguna um að ferlið hafi verið «að mestu leyti» til staðar 2004 — þetta er pólitískt mat sem erfitt er að sannreyna nákvæmlega. Formleg stefna gegn varanlegum undanþágum var styrkt eftir Lissabon (2009), en 2004-stækkunin var vissulega strangari en 1995-stækkunin. Malta fékk hlutfallslega fáar sérstakar ráðstafanir samanborið við eldri aðildarríki.",
+      "supporting_evidence": [
+        {
+          "id": "AGRI-DATA-016",
+          "source_name": "2003 Accession Treaty; 2005 Accession Treaty (Bulgaria/Romania); 2011 Croatia Accession Treaty; European Commission CAP reform documentation",
+          "source_url": "https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-2023-27_en"
+        },
+        {
+          "id": "PREC-HIST-020",
+          "source_name": "European Commission — 2003 Act of Accession; Eurostat",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L:2003:236:TOC"
+        },
+        {
+          "id": "PREC-DATA-036",
+          "source_name": "Visit Ukraine / EU Council enlargement data",
+          "source_url": "https://visitukraine.today/blog/2963/eu-membership-how-long-did-it-take-between-the-start-of-negotiations-and-accession"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "precedents",
+      "attribution": "paraphrased",
+      "article_slug": "erna-og-jon-utskyra-lok-lok-og-laes-lokunarskilyrdi-adildarferlisins",
+      "article_title": "Erna og Jón útskýra lok, lok og læs -- lokunarskilyrði aðildarferlisins",
+      "article_source": "Heimssýn",
+      "article_date": "2026-03-22"
+    },
+    {
+      "claim_text": "Sá tími sem liður eftir brottför Jóns Bjarnasonar úr ráðherrasæti — rúmt ár — er tveir þriðju þess tíma sem utanríkisráðherra áætlar nú að aðildarviðræðurnar muni taka.",
+      "original_quote": "tvo þriðju þess tíma sem utanríkisráðherra áætlar nú að viðræðurnar muni taka.",
+      "verdict": "unverifiable",
+      "explanation": "Til þess að sannreyna þessa fullyrðingu þarf annars vegar staðfestingu á áætlaðri lengd viðræðna samkvæmt utanríkisráðherra og hins vegar staðfestingu á tímalengd viðræðna eftir brottför Jóns. Engin heimild í grunninum gefur upp tímaáætlun utanríkisráðherra. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> nefnir að viðræður gætu hafist «um áramótin» en tilgreinir enga heildarlengd. Ef áætlunin er u.þ.b. 2 ár (sem samræmist hraðri EFTA-aðild á borð við Austurríki/Finnland/Svíþjóð), þá væri rúmt ár reyndar um tveir þriðju af tveimur árum.",
+      "missing_context": "Heimildir vantar um opinbera tímaáætlun utanríkisráðherra. <a href=\"https://visitukraine.today/blog/2963/eu-membership-how-long-did-it-take-between-the-start-of-negotiations-and-accession\" title=\"Visit Ukraine / EU Council enlargement data\" target=\"_blank\" rel=\"noopener\">PREC-DATA-036</a> sýnir að aðildarviðræður hafa verið frá tæpum 2 árum (Austurríki/Finnland/Svíþjóð) upp í 7+ ár (Króatía). Hraðasta fordæmið er 1 ár og 11 mánuðir.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [],
+      "category": "precedents",
+      "attribution": "paraphrased",
+      "article_slug": "erna-og-jon-utskyra-lok-lok-og-laes-lokunarskilyrdi-adildarferlisins",
+      "article_title": "Erna og Jón útskýra lok, lok og læs -- lokunarskilyrði aðildarferlisins",
+      "article_source": "Heimssýn",
+      "article_date": "2026-03-22"
+    },
+    {
+      "claim_text": "Þjóðaratkvæðagreiðsla eftir að búið er að innleiða laga- og regluverk Evrópusambandsins í íslensk lög er ekki raunverulegt val.",
+      "original_quote": "þjóðaratkvæðagreiðsla eftir að búið er að innleiða laga- og regluverk Evrópusambandsins í íslensk lög er ekki raunverulegt val. Hún er sýndarleikrit.",
+      "verdict": "partially_supported",
+      "explanation": "Rökfræðin á sér stoð — <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> staðfestir að aðildarferlið krefst innleiðingar á regluverkinu áður en aðild er formleg, sem gæti takmarkað raunverulegt val í lokaatkvæðagreiðslu. Hins vegar er þetta of einföld mynd. <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79\" target=\"_blank\" rel=\"noopener\">SOV-DATA-002</a> og <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland), Articles 26, 65, 79; Althingi records on 2012 referendum follow-up\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-026</a> staðfesta að þjóðaratkvæðagreiðslan 2026 er ráðgefandi og snýst um áframhald viðræðna, ekki endanlega aðild — lokaatkvæðagreiðsla um aðildarsamning kæmi síðar. Ríki geta dregið umsókn til baka hvenær sem er, eins og Ísland gerði 2015.",
+      "missing_context": "Þjóðaratkvæðagreiðslan 29. ágúst 2026 snýst um áframhald viðræðna, ekki um endanlega aðild. Lokaatkvæðagreiðsla um fullgerðan aðildarsamning yrði aðskilin. Fullyrðingin gerir ráð fyrir að innleiðing regluverks sé óafturkræf, en Ísland dró umsókn sína til baka 2015 eftir margra ára viðræður. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M050\" title=\"Treaty on European Union, Article 50\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-001</a> staðfestir einnig úrsagnarrétt úr ESB samkvæmt 50. grein.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-021",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "SOV-DATA-002",
+          "source_name": "Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79",
+          "source_url": "https://www.althingi.is/lagas/nuna/1944033.html"
+        },
+        {
+          "id": "SOV-LEGAL-026",
+          "source_name": "Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland), Articles 26, 65, 79; Althingi records on 2012 referendum follow-up",
+          "source_url": "https://www.althingi.is/lagas/nuna/1944033.html"
+        }
+      ],
+      "category": "sovereignty",
+      "attribution": "quoted",
+      "article_slug": "erna-og-jon-utskyra-lok-lok-og-laes-lokunarskilyrdi-adildarferlisins",
+      "article_title": "Erna og Jón útskýra lok, lok og læs -- lokunarskilyrði aðildarferlisins",
+      "article_source": "Heimssýn",
+      "article_date": "2026-03-22"
     }
   ],
   "articles": [
@@ -268,6 +439,18 @@
       "claim_count": 7,
       "attribution_types": [
         "asserted"
+      ]
+    },
+    {
+      "slug": "erna-og-jon-utskyra-lok-lok-og-laes-lokunarskilyrdi-adildarferlisins",
+      "title": "Erna og Jón útskýra lok, lok og læs -- lokunarskilyrði aðildarferlisins",
+      "source": "Heimssýn",
+      "date": "2026-03-22",
+      "claim_count": 6,
+      "attribution_types": [
+        "mentioned",
+        "paraphrased",
+        "quoted"
       ]
     }
   ],

@@ -2,17 +2,493 @@
   "slug": "utanrikisraduneytid",
   "name": "Utanríkisráðuneytið",
   "type": "institution",
-  "description": "Stofnun — hlutlaus um ESB-aðild.",
+  "description": "Stofnun — blandað viðhorf til ESB-aðildar.",
   "role": "ráðuneyti",
   "party": null,
-  "stance": "neutral",
-  "stance_score": 0.0,
-  "credibility": null,
+  "stance": "mixed",
+  "stance_score": 0.25,
+  "credibility": 0.69,
   "attribution_counts": {
-    "mentioned": 3
+    "quoted": 1,
+    "paraphrased": 16,
+    "mentioned": 14
   },
   "althingi_stats": null,
-  "scorecard": {},
-  "claims": [],
-  "articles": []
+  "scorecard": {
+    "partially_supported": 8,
+    "supported": 5
+  },
+  "claims": [
+    {
+      "claim_text": "Utanríkisráðuneytið stóð sjálft að því að Ísland var tekið af stækkunarlista ESB árið 2015.",
+      "original_quote": "Ráðuneytið stóð þó sjálft að því að Ísland var tekið af stækkunarlista ESB árið 2015.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a> staðfestir að utanríkisráðherra Gunnar Bragi Sveinsson sendi bréfið 12. mars 2015 sem tilkynnti ESB að Ísland teldi sig ekki lengur umsóknarríki — sem bendir til þess að frumkvæðið hafi komið frá ráðuneytinu. Hins vegar er orðalagið «tekið af stækkunarlista» villandi: ESB viðurkenndi aldrei formlega afturköllunina og Framkvæmdastjórnin hefur lýst því yfir að umsóknin sé enn í gildi.",
+      "missing_context": "Ísland var ekki formlega tekið af umsóknarríkjalista ESB — ESB viðurkenndi aldrei afturköllunina. Frumvarp um formlega afturköllun féll á Alþingi og utanríkisráðherra fór fram hjá þinginu með einhliða bréfi. Fullyrðingin er rétt um frumkvæði ráðuneytisins, en orðalagið um að landið hafi verið «tekið af stækkunarlista» endurspeglar ekki lagalega stöðu málsins.",
+      "supporting_evidence": [
+        {
+          "id": "PARTY-DATA-011",
+          "source_name": "Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews",
+          "source_url": "https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/"
+        },
+        {
+          "id": "SOV-DATA-023",
+          "source_name": "European Commission — Iceland Accession Progress Reports; Icelandic Ministry of Foreign Affairs",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "POLITICAL-DATA-010",
+          "source_name": "Althingi — Historical records; European Commission accession records",
+          "source_url": "https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/"
+        }
+      ],
+      "category": "precedents",
+      "attribution": "paraphrased",
+      "article_slug": "vafasom-spurning-um-esb-vidraedur",
+      "article_title": "Vafasöm spurning um ESB-viðræður",
+      "article_source": "bjorn_is",
+      "article_date": "2026-03-08"
+    },
+    {
+      "claim_text": "Í þjóðaratkvæðagreiðslunni verður spurt: «Á að halda áfram viðræðum um aðild Íslands að Evrópusambandinu?»",
+      "original_quote": "spurt verði \"Á að halda áfram viðræðum um aðild Íslands að Evrópusambandinu?\"",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir orðalag spurningarinnar beint: «Á að halda áfram viðræðum um aðild Íslands að Evrópusambandinu?» Þetta er nákvæmlega sama orðalag og fullyrðingin notar. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> staðfestir jafnframt að spurningin snúist um hvort halda eigi áfram aðildarviðræðum sem settar voru á ís 2013.",
+      "missing_context": "Mikilvægt samhengi sem vert er að nefna: <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Þjóðarpúls, February–March 2026; Capacent Gallup historical EU polling data (2009–2013)\" target=\"_blank\" rel=\"noopener\">POLL-DATA-021</a> bendir á að munur sé á stuðningi við áframhald viðræðna (~52%) og stuðningi við ESB-aðild (~42%). Spurningin snýst um viðræður, ekki aðild beint.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        },
+        {
+          "id": "SOV-DATA-006",
+          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "sovereignty",
+      "attribution": "paraphrased",
+      "article_slug": "utanrikisraduneytid-fellur-a-fyrsta-profinu",
+      "article_title": "Utanríkisráðuneytið fellur á fyrsta prófinu",
+      "article_source": "bjorn_is",
+      "article_date": "2026-03-07"
+    },
+    {
+      "claim_text": "Utanríkisráðuneytið lýsir þjóðaratkvæðagreiðslunni þannig að kosið sé einvörðungu um hvort íslensk stjórnvöld eigi að halda áfram aðildarviðræðum sem þáverandi stjórnvöld ákváðu að setja á ís árið 2013.",
+      "original_quote": "Utanríkisráðuneytið segir einvörðungu kosið \"um hvort íslensk stjórnvöld eigi að halda áfram aðildarviðræðum við ESB sem þáverandi stjórnvöld ákváðu að setja á ís árið 2013\"",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> staðfestir að þjóðaratkvæðagreiðslan snúist um hvort halda eigi áfram aðildarviðræðum sem stöðvuðu 2013, og <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> sýnir orðalag þingsályktunartillögunnar. Heimildir staðfesta efnislega lýsingu ráðuneytisins. Orðið «einvörðungu» undirstrikar þrönga túlkun sem andstæðingar eins og Guðrún Hafsteinsdóttir (<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T175023.html\" title=\"Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-003</a>) hafa mótmælt — hún telur þetta ekki svo einfalt, heldur pólitíska ákvörðun um að setja Ísland aftur á aðildarbraut. Ráðuneytislýsingin er því rétt hvað varðar formlegt efni en umdeilanlegt hvort það sé «einvörðungu» spurningin.",
+      "missing_context": "Andstæðingar benda á að aðildarviðræður séu ekki hlutlaust ferli heldur feli í sér skuldbindingu um laga- og stofnanaaðlögun (<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T182328.html\" title=\"Alþingi — Sigmundur Davíð Gunnlaugsson, þingmaður Miðflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-002</a>). Spurningin getur þannig haft víðtækari afleiðingar en formleg lýsing ráðuneytisins gefur til kynna.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-006",
+          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+        },
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        },
+        {
+          "id": "SOV-PARL-004",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir (flutningsræða, 154. löggjafarþing); Logi Einarsson (flutningsræða, 153. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/154/rad20230919T175556.html"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "SOV-PARL-003",
+          "source_name": "Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T175023.html"
+        }
+      ],
+      "category": "sovereignty",
+      "attribution": "paraphrased",
+      "article_slug": "utanrikisraduneytid-fellur-a-fyrsta-profinu",
+      "article_title": "Utanríkisráðuneytið fellur á fyrsta prófinu",
+      "article_source": "bjorn_is",
+      "article_date": "2026-03-07"
+    },
+    {
+      "claim_text": "Samkvæmt upplýsingasíðu utanríkisráðuneytisins, ef þjóðin greiðir já atkvæði, verður framhald viðræðna staðfest á formlegri ríkjaráðstefnu milli Íslands og aðildarríkja ESB.",
+      "original_quote": "segi þjóðin já verði framhald viðræðna síðan staðfest á formlegri ríkjaráðstefnu milli Íslands og aðildarríkjanna",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir að utanríkisráðherra sagði viðræður gætu hafist «um áramót» ef þjóðin samþykkir. Ekkert í heimildum úr staðreyndagrunni staðfestir nákvæmlega lýsinguna á «formlegri ríkjaráðstefnu» (intergovernmental conference) sem næsta skref. Þetta er eðlileg lýsing á hefðbundnu ferli aðildarviðræðna samkvæmt ESB-reglum (<a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a>), en heimildir staðfesta ekki beint að þetta standi á upplýsingasíðu ráðuneytisins.",
+      "missing_context": "Staðreyndagrunnurinn inniheldur ekki beina heimild frá upplýsingasíðu utanríkisráðuneytisins. Fullyrðingin vísar í tiltekna upplýsingasíðu sem ekki er meðal heimilda. Ríkjaráðstefna er staðlað ESB-ferli við upphaf aðildarviðræðna.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        },
+        {
+          "id": "EEA-LEGAL-017",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards joining' factsheet",
+          "source_url": "https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "paraphrased",
+      "article_slug": "utanrikisraduneytid-fellur-a-fyrsta-profinu",
+      "article_title": "Utanríkisráðuneytið fellur á fyrsta prófinu",
+      "article_source": "bjorn_is",
+      "article_date": "2026-03-07"
+    },
+    {
+      "claim_text": "Aðildarumsókn Íslands frá 2009 er talin enn í gildi og þar af leiðandi er hægt að taka upp þráðinn aftur án þess að sækja um á ný.",
+      "original_quote": "Þar sem aðildarumsókn Íslands teljist enn í gildi yrði í reynd hægt að taka upp þráðinn aftur verði niðurstaða þjóðaratkvæðagreiðslu sú að ákveðið verði að ganga til áframhaldandi aðildarviðræðna við ESB",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a> staðfestir að ESB hefur haldið áfram að líta á umsókn Íslands sem tæknilega í gildi og framkvæmdastjórnin staðfesti þetta í mars 2026. <a href=\"https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/\" title=\"Althingi — Historical records; European Commission accession records\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-010</a> nefnir einnig að ESB hafi ekki viðurkennt formlega afturköllun umsóknarinnar. Þó eru verulegar lögfræðilegar og pólitískar álitaefni: <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland Accession Progress Reports; Icelandic Ministry of Foreign Affairs\" target=\"_blank\" rel=\"noopener\">SOV-DATA-023</a> bendir á að álitamál sé hvort hægt sé að «endurræsa» eða hvort nýja umsókn þurfi, og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland: Accession negotiations status; Althingi records\" target=\"_blank\" rel=\"noopener\">EEA-DATA-009</a> nefnir að regluverkið hafi breyst verulega frá 2013.",
+      "missing_context": "Lagaleg staða umsóknarinnar er umdeild. Þótt ESB líti á hana sem tæknilega í gildi getur «endurræsing» krafist endurskoðunar allra kafla vegna breytinga á regluverkinu (<a href=\"https://commission.europa.eu/strategy-and-policy/strategy-documents/commission-work-programme_en\" title=\"EUR-Lex legislative database; European Commission Work Programmes 2014–2025\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-018</a>). Fullyrðingin einfaldar flókna lagalega stöðu þar sem «í gildi» þýðir ekki endilega að allt haldi áfram óbreytt.",
+      "supporting_evidence": [
+        {
+          "id": "PARTY-DATA-011",
+          "source_name": "Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews",
+          "source_url": "https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/"
+        },
+        {
+          "id": "POLITICAL-DATA-010",
+          "source_name": "Althingi — Historical records; European Commission accession records",
+          "source_url": "https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/"
+        },
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "SOV-DATA-023",
+          "source_name": "European Commission — Iceland Accession Progress Reports; Icelandic Ministry of Foreign Affairs",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "EEA-DATA-009",
+          "source_name": "European Commission — Iceland: Accession negotiations status; Althingi records",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        }
+      ],
+      "category": "eea_eu_law",
+      "attribution": "paraphrased",
+      "article_slug": "utanrikisraduneytid-fellur-a-fyrsta-profinu",
+      "article_title": "Utanríkisráðuneytið fellur á fyrsta prófinu",
+      "article_source": "bjorn_is",
+      "article_date": "2026-03-07"
+    },
+    {
+      "claim_text": "Aðildarviðræðum Íslands við ESB var hætt árið 2013 en aðildarumsóknin frá 2009 var aldrei dregin til baka.",
+      "original_quote": "þótt aðildarviðræðum Íslands hafi verið hætt árið 2013 hafi aðildarumsókn Íslands frá árinu 2009 aldrei verið dregin til baka",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland accession progress reports\" target=\"_blank\" rel=\"noopener\">PREC-HIST-004</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland Accession Progress Reports; Icelandic Ministry of Foreign Affairs\" target=\"_blank\" rel=\"noopener\">SOV-DATA-023</a> staðfesta að aðildarviðræðum var frestað 2013 og <a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a> segir frá bréfi Gunnars Braga Sveinssonar frá 12. mars 2015 þar sem hann bað ESB um að líta ekki lengur á Ísland sem umsóknarríki. Fullyrðingin um að umsóknin hafi «aldrei verið dregin til baka» er umdeilanleg: bréfið var sent þótt Alþingi hafi aldrei samþykkt formlega afturköllun. ESB viðurkenndi ekki bréfið sem formlega afturköllun, en frá íslenskri hlið var ætlunin skýr. Réttara er að segja að afturköllunarferlið hafi verið ófullkomið lagalega.",
+      "missing_context": "Ríkisstjórnin reyndi að draga umsóknina til baka 2015 — frumvarp var lagt fram á Alþingi en náði ekki fram að ganga. Utanríkisráðherra sendi bréf einhliða en ESB viðurkenndi það ekki sem formlega afturköllun (<a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a>). Það er því réttara að segja að afturköllunin hafi ekki tekist formlega frekar en að hún hafi «aldrei» verið reynd.",
+      "supporting_evidence": [
+        {
+          "id": "PREC-HIST-004",
+          "source_name": "European Commission — Iceland accession progress reports",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "SOV-DATA-023",
+          "source_name": "European Commission — Iceland Accession Progress Reports; Icelandic Ministry of Foreign Affairs",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "EEA-DATA-009",
+          "source_name": "European Commission — Iceland: Accession negotiations status; Althingi records",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "PARTY-DATA-011",
+          "source_name": "Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews",
+          "source_url": "https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "POLITICAL-DATA-010",
+          "source_name": "Althingi — Historical records; European Commission accession records",
+          "source_url": "https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/"
+        },
+        {
+          "id": "PREC-HIST-004",
+          "source_name": "European Commission — Iceland accession progress reports",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        }
+      ],
+      "category": "precedents",
+      "attribution": "paraphrased",
+      "article_slug": "utanrikisraduneytid-fellur-a-fyrsta-profinu",
+      "article_title": "Utanríkisráðuneytið fellur á fyrsta prófinu",
+      "article_source": "bjorn_is",
+      "article_date": "2026-03-07"
+    },
+    {
+      "claim_text": "Framkvæmdastjórn ESB hefur staðfest að aðildarumsókn Íslands frá 2009 sé enn í gildi.",
+      "original_quote": "Framkvæmdastjórn ESB hafi þvert á mótt staðfest að umsóknin sé enn í gildi eins og fram hafi komið í fréttum",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a> staðfestir að framkvæmdastjórn ESB hafi lýst því yfir að bréf Gunnars Braga Sveinssonar hafi ekki jafngilt formlegri afturköllun og að umsóknin sé tæknilega enn í gildi. Framkvæmdastjórnin staðfesti þetta aftur í mars 2026 samkvæmt sömu heimild. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> nefnir einnig að ESB hafi staðfest gildi umsóknarinnar.",
+      "missing_context": "Lagaleg staða umsóknarinnar er flóknari en staðfesting framkvæmdastjórnarinnar gefur til kynna. Regluverkið hefur breyst verulega frá 2013 (<a href=\"https://commission.europa.eu/strategy-and-policy/strategy-documents/commission-work-programme_en\" title=\"EUR-Lex legislative database; European Commission Work Programmes 2014–2025\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-018</a>), og endurræsing viðræðna gæti krafist endurskoðunar kafla sem áður voru lokaðir tímabundið.",
+      "supporting_evidence": [
+        {
+          "id": "PARTY-DATA-011",
+          "source_name": "Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews",
+          "source_url": "https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/"
+        },
+        {
+          "id": "POLITICAL-DATA-010",
+          "source_name": "Althingi — Historical records; European Commission accession records",
+          "source_url": "https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/"
+        },
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "paraphrased",
+      "article_slug": "utanrikisraduneytid-fellur-a-fyrsta-profinu",
+      "article_title": "Utanríkisráðuneytið fellur á fyrsta prófinu",
+      "article_source": "bjorn_is",
+      "article_date": "2026-03-07"
+    },
+    {
+      "claim_text": "Utanríkisráðuneytið hefur sjálft sagt opinberlega að íslenska ríkisstjórnin hafi dregið umsóknina til baka.",
+      "original_quote": "Utanríkisráðuneytið hefur síðan sjálft sagt opinberlega að íslenska ríkisstjórnin hafi dregið umsókn sína til baka",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a> og <a href=\"https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/\" title=\"Althingi — Historical records; European Commission accession records\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-010</a> staðfesta að utanríkisráðherra (í umboði ríkisstjórnarinnar og þar með ráðuneytisins) lýsti yfir afturköllun með bréfi 2015. <a href=\"https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/\" title=\"Althingi records; coalition agreements 2009, 2013, 2017, 2021, 2024; Icelandic media archives\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-011</a> nefnir einnig að afturköllunin hafi verið «formally done in March 2015». Frá sjónarhóli íslenskra stjórnvalda er þetta rétt — ráðuneytið leit á bréfið sem formlega yfirlýsingu. Heimildir staðfesta þó ekki beint hvaða opinberar yfirlýsingar utanríkisráðuneytið hefur gefið um þetta á upplýsingasíðu sinni eða annars staðar.",
+      "missing_context": "Athyglisvert er að ESB hefur aldrei viðurkennt þetta sem formlega afturköllun (<a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a>), sem skapar togstreitu milli afstöðu íslenska ráðuneytisins og ESB. Þannig er líklegt að utanríkisráðuneytið hafi sagt þetta en staðreyndagrunnurinn inniheldur ekki beina tilvísun í opinbera yfirlýsingu frá ráðuneytinu sjálfu.",
+      "supporting_evidence": [
+        {
+          "id": "PARTY-DATA-011",
+          "source_name": "Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews",
+          "source_url": "https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/"
+        },
+        {
+          "id": "POLITICAL-DATA-010",
+          "source_name": "Althingi — Historical records; European Commission accession records",
+          "source_url": "https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/"
+        },
+        {
+          "id": "POLITICAL-DATA-011",
+          "source_name": "Althingi records; coalition agreements 2009, 2013, 2017, 2021, 2024; Icelandic media archives",
+          "source_url": "https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "precedents",
+      "attribution": "paraphrased",
+      "article_slug": "utanrikisraduneytid-fellur-a-fyrsta-profinu",
+      "article_title": "Utanríkisráðuneytið fellur á fyrsta prófinu",
+      "article_source": "bjorn_is",
+      "article_date": "2026-03-07"
+    },
+    {
+      "claim_text": "Í síðustu aðildarviðræðum samþykkti Ísland að ráðast ekki í meiriháttar breytingar sem krafist er vegna aðildar nema ljóst yrði að Ísland yrði aðili að ESB.",
+      "original_quote": "Ráðuneytið segir að stjórnvöld hafi í síðustu viðræðum verið skýr um að ekki yrði ráðist í meiriháttar breytingar sem væri krafist vegna aðildar, nema ljóst væri að Ísland yrði aðili að ESB.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland Accession Progress Reports; Icelandic Ministry of Foreign Affairs\" target=\"_blank\" rel=\"noopener\">SOV-DATA-023</a> staðfestir að Ísland sótti um aðild 2009 og viðræður stóðu 2010-2013, en nefnir ekki beinlínis þessa samningsskilyrði. Hins vegar styður <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> hugmyndina á óbeinan hátt — Þorgerður Katrín Gunnarsdóttir lýsti yfir skýrum fyrirvörum um fullveldi og undirritun. Einnig styður <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> við þennan skilning, þar sem tekið er fram að aðildarviðræður fjalli um tímaáætlun innleiðingar, ekki um hvort reglur séu teknar upp, og að aðlögunartímabil séu viðurkennt samningaatriði. Engin heimild staðfestir þó beint að formlegt samkomulag hafi náðst um frestun stofnanabreytinga.",
+      "missing_context": "Heimildir staðfesta viðræðuferlið og meginreglurnar um aðlögunartímabil, en engin heimild í staðreyndagrunni vitnar beint í formlegt samkomulag milli Íslands og ESB um að fresta stofnanabreytingum þar til aðild væri tryggð. Þetta samkomulag kann að vera skráð í samningaskjölum viðræðnanna sem eru ekki í gagnagrunni.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-023",
+          "source_name": "European Commission — Iceland Accession Progress Reports; Icelandic Ministry of Foreign Affairs",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "EEA-LEGAL-021",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "sovereignty",
+      "attribution": "paraphrased",
+      "article_slug": "ovissa-um-kostnad-vegna-mogulegs-framhalds-adildarvidraedna",
+      "article_title": "Óvissa um kostnað vegna mögulegs framhalds aðildarviðræðna",
+      "article_source": "RÚV",
+      "article_date": "2026-03-24"
+    },
+    {
+      "claim_text": "Snemma í viðræðunum 2009 til 2013 náðu íslensk stjórnvöld og ESB samkomulagi um að Ísland myndi ekki ráðast í stofnanar- og lagabreytingar sem af aðild leiða fyrr en að afstaðinni þjóðaratkvæðagreiðslu.",
+      "original_quote": "Snemma í viðræðum sem fram fóru á árunum 2009 til 2013 hafi íslensk stjórnvöld og ESB náð saman um að Ísland myndi ekki ráðast í breytingar á stofnunum og þær lagabreytingar sem af aðild leiða fyrr en að afstaðinni þjóðaratkvæðagreiðslu.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland Accession Progress Reports; Icelandic Ministry of Foreign Affairs\" target=\"_blank\" rel=\"noopener\">SOV-DATA-023</a> staðfestir að aðildarviðræður fóru fram 2010-2013 og <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> sýnir skýra yfirlýsingu utanríkisráðherra um fullveldisvernd í aðildarviðræðum. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> undirstrikar að aðlögunartímabil séu hefðbundið samningaatriði. Þó staðfestir engin heimild beint það samkomulag sem lýst er — að breytingar yrðu ekki gerðar fyrr en eftir þjóðaratkvæðagreiðslu. <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79\" target=\"_blank\" rel=\"noopener\">SOV-DATA-002</a> bendir á að þjóðaratkvæðagreiðslan er ráðgefandi samkvæmt stjórnarskránni, sem flækir þessa fullyrðingu. Einnig nefnir <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> að ESB hefur hertar kröfur til nýrra aðildarríkja frá Lissabon-sáttmálanum.",
+      "missing_context": "Engin heimild í gagnagrunni sýnir beint þetta samkomulag milli Íslands og ESB. Þetta kann að vera nákvæm lýsing á samningslegri afstöðu Íslands í viðræðunum, en án frumheimilda (t.d. samningapöntana eða bókanir frá viðræðufundum) er ekki hægt að staðfesta nákvæmlega. Fullyrðingin gerir ráð fyrir formlegum samningi en heimildir benda frekar að þetta hafi verið íslensk afstaða, ekki tvíhliða samkomulag.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-023",
+          "source_name": "European Commission — Iceland Accession Progress Reports; Icelandic Ministry of Foreign Affairs",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        },
+        {
+          "id": "EEA-LEGAL-021",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "sovereignty",
+      "attribution": "paraphrased",
+      "article_slug": "ovissa-um-kostnad-vegna-mogulegs-framhalds-adildarvidraedna",
+      "article_title": "Óvissa um kostnað vegna mögulegs framhalds aðildarviðræðna",
+      "article_source": "RÚV",
+      "article_date": "2026-03-24"
+    },
+    {
+      "claim_text": "Innleiðing löggjafar á grundvelli EES-aðildar hélt áfram í viðræðutímanum þrátt fyrir samkomulagið um að fresta stofnanabreytingum.",
+      "original_quote": "Innleiðing löggjafar á grundvelli EES-aðildarinnar myndi þó halda áfram, hér eftir sem hingað til.",
+      "verdict": "supported",
+      "explanation": "Heimildir staðfesta skýrt að EES-innleiðing hélt áfram óháð aðildarviðræðunum. <a href=\"https://www.eftasurv.int/esa-at-a-glance/publications?type=21\" title=\"EFTA Surveillance Authority — Annual Report 2024\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-007</a> sýnir að stöðugt voru 400-500 EES-gerðir í innleiðingarbiðröð, sem bendir til viðvarandi innleiðingarstarfsemi. <a href=\"https://www.eftasurv.int/esa-at-a-glance/publications/scoreboard/internal-market-scoreboard-no-53-february-2024\" title=\"EFTA Surveillance Authority — Internal Market Scoreboard 2024\" target=\"_blank\" rel=\"noopener\">EEA-DATA-007</a> staðfestir að Ísland er í stöðugu innleiðingarferli EES-löggjafar, þar sem innleiðingarhalli mælist 1,4-2,1%. <a href=\"https://eur-lex.europa.eu/eli/dec/2007/146(2)/oj/eng\" title=\"EEA Joint Committee Decision No 146/2007; EUR-Lex; EFTA Court\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-001</a> sýnir að Ísland tók þátt í ETS-kerfinu frá 2008 gegnum EES-samninginn — innleiðing sem hélt áfram á viðræðutímanum. EES-innleiðingin er sjálfstæð lagaskylda sem helst í gildi hvort sem aðildarviðræður standa eður ei.",
+      "missing_context": "Fullyrðingin vísar til samkomulags um frestun stofnanabreytinga sem er ekki staðfest í heimildum (sjá fullyrðingu 5 og 6). Greinarmunurinn milli EES-innleiðingar (skylda) og stofnanabreytinga vegna ESB-aðildar (valkvæðar á viðræðustigi) er þó vel studdur.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-007",
+          "source_name": "EFTA Surveillance Authority — Annual Report 2024",
+          "source_url": "https://www.eftasurv.int/esa-at-a-glance/publications?type=21"
+        },
+        {
+          "id": "EEA-DATA-007",
+          "source_name": "EFTA Surveillance Authority — Internal Market Scoreboard 2024",
+          "source_url": "https://www.eftasurv.int/esa-at-a-glance/publications/scoreboard/internal-market-scoreboard-no-53-february-2024"
+        },
+        {
+          "id": "ETS-LEGAL-001",
+          "source_name": "EEA Joint Committee Decision No 146/2007; EUR-Lex; EFTA Court",
+          "source_url": "https://eur-lex.europa.eu/eli/dec/2007/146(2)/oj/eng"
+        },
+        {
+          "id": "ETS-LEGAL-003",
+          "source_name": "EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission",
+          "source_url": "https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "quoted",
+      "article_slug": "ovissa-um-kostnad-vegna-mogulegs-framhalds-adildarvidraedna",
+      "article_title": "Óvissa um kostnað vegna mögulegs framhalds aðildarviðræðna",
+      "article_source": "RÚV",
+      "article_date": "2026-03-24"
+    },
+    {
+      "claim_text": "Almennt er gengið út frá því að ríki sem sækist eftir ESB-aðild taki upp reglur sambandsins, að teknu tilliti til niðurstöðu samningaviðræðna, til að mynda um sérlausnir, aðlaganir á löggjöf ESB eða aðlögunartímabil.",
+      "original_quote": "Almennt sé gengið út frá því að ríki sem sækist eftir aðild að ESB taki upp reglur sambandsins, að teknu tilliti til niðurstöðu samningaviðræðna, til að mynda um sérlausnir, aðlaganir á löggjöf ESB eða aðlögunartímabil.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> staðfestir orðrétt að aðildarviðræður fjalli um «the conditions and timing for the candidate's adoption, implementation and enforcement of all current EU rules» — umsóknarríkið tekur upp reglurnar, en semur um tímaáætlun og aðlögun. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> bætir við að í reynd geti ríki samið um aðlögunartímabil (3-12 ár), tæknilegar aðlaganir og fjármálafyrirkomulag. Sú heimild nefnir meðal annars 12 ára undanþágu Póllands vegna landakaupa. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — Steps towards joining; DG NEAR accession negotiation methodology\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-013</a> lýsir ferlinu í 33-35 samningaköflum þar sem opnunarskilyrði og lokaskilyrði eru sett. Fullyrðingin lýsir þessu ferli af nákvæmni og viðurkennir bæði grunnregluna (ríki taka upp reglurnar) og svigrúmið (sérlausnir, aðlaganir, aðlögunartímabil).",
+      "missing_context": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> tekur fram að frá Lissabon-sáttmálanum (2009) hafa varanlegar undanþágur ekki verið veittar nýjum aðildarríkjum — Króatía fékk engar 2013. Þannig er svigrúmið fyrir «sérlausnir» takmarkaðra en áður, þótt aðlögunartímabil séu enn viðurkennt samningsatriði. Fullyrðingin gæti gefið of rúman skilning á hugtakinu «sérlausnir» í ljósi þessarar þróunar.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-017",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards joining' factsheet",
+          "source_url": "https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf"
+        },
+        {
+          "id": "EEA-LEGAL-021",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        },
+        {
+          "id": "EEA-LEGAL-013",
+          "source_name": "European Commission — Steps towards joining; DG NEAR accession negotiation methodology",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "paraphrased",
+      "article_slug": "ovissa-um-kostnad-vegna-mogulegs-framhalds-adildarvidraedna",
+      "article_title": "Óvissa um kostnað vegna mögulegs framhalds aðildarviðræðna",
+      "article_source": "RÚV",
+      "article_date": "2026-03-24"
+    },
+    {
+      "claim_text": "Ísland hefur tekið upp töluverðan hluta reglna ESB í gegnum EES-samninginn og Schengen-samstarfið, ólíkt öðrum ríkjum sem hafa gengið í sambandið.",
+      "original_quote": "Ólíkt öðrum ríkjum sem hafa gengið í sambandið hafi Ísland tekið upp töluverðan hluta reglna sambandsins, bæði í gegnum EES-samninginn og Schengen-samstarfið.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.government.is/library/01-Ministries/Ministry-for-Foreign-Affairs/PDF-skjol/EES_skyrsla_15.pdf\" title=\"Utanríkisráðuneytið — Gengið til góðs: Skref í átt að bættri framkvæmd EES-samningsins (apríl 2018)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-017</a> sýnir að Ísland hafði tekið upp 9.028 ESB-gerðir í gegnum EES-samninginn frá 1994 til 2016, sem svarar til 13,4% af öllu regluverki ESB á sama tímabili. Innan ramma innri markaðarins er hlutfallið um 70% samkvæmt sömu heimild. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:21999A0710(02)\" title=\"Schengen Association Agreement with Iceland and Norway (2001)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-004</a> staðfestir að Ísland hefur verið Schengen-aðili frá 2001 og <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> telur upp helstu EES-svið: fjórfrelsið, orkumál, umhverfismál og fleira. <a href=\"https://island.is/en/o/directorate-of-immigration\" title=\"EFTA Surveillance Authority — EEA Agreement provisions; Útlendingastofnun (Directorate of Immigration)\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-001</a> undirstrikar að frjáls för launafólks er þegar í gildi og <a href=\"https://www.efta.int/about-efta/legal-documents/eea-legal-texts/annexes-agreement\" title=\"EFTA Secretariat — EEA Agreement Annex IV (Energy); Althingi EU Assessment Committee\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-001</a> nefnir innleiðingu orkustefnu ESB. Þetta undirbyggir vel að Ísland sé í allt öðru aðildarstöðu en t.d. ríki Vestur-Balkans sem hófust handa án slíks lagalegrar samþættingar.",
+      "missing_context": "<a href=\"https://www.government.is/library/01-Ministries/Ministry-for-Foreign-Affairs/PDF-skjol/EES_skyrsla_15.pdf\" title=\"Utanríkisráðuneytið — Gengið til góðs: Skref í átt að bættri framkvæmd EES-samningsins (apríl 2018)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-017</a> nefnir að 13,4% hlutfallið mæli heildarregluverkið, þar á meðal svið sem EES-samningurinn nær ekki til (landbúnaður, sjávarútvegur, tollabandalag, utanríkismál). Innan ramma EES er innleiðingarhlutfallið hærra. Þó ber að nefna að <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> sýnir umfangsmikil svið sem EES-samningurinn nær ekki til — sameiginleg landbúnaðar- og sjávarútvegsstefna, tollabandalag, utanríkis- og öryggisstefna, refsiréttur og gjaldmiðilsstefna — sem nýtt aðildarríki þyrfti allt að taka upp.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-DATA-017",
+          "source_name": "Utanríkisráðuneytið — Gengið til góðs: Skref í átt að bættri framkvæmd EES-samningsins (apríl 2018)",
+          "source_url": "https://www.government.is/library/01-Ministries/Ministry-for-Foreign-Affairs/PDF-skjol/EES_skyrsla_15.pdf"
+        },
+        {
+          "id": "EEA-LEGAL-004",
+          "source_name": "Schengen Association Agreement with Iceland and Norway (2001)",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:21999A0710(02)"
+        },
+        {
+          "id": "EEA-LEGAL-022",
+          "source_name": "EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'",
+          "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
+        },
+        {
+          "id": "LABOUR-DATA-001",
+          "source_name": "EFTA Surveillance Authority — EEA Agreement provisions; Útlendingastofnun (Directorate of Immigration)",
+          "source_url": "https://island.is/en/o/directorate-of-immigration"
+        },
+        {
+          "id": "ENERGY-LEGAL-001",
+          "source_name": "EFTA Secretariat — EEA Agreement Annex IV (Energy); Althingi EU Assessment Committee",
+          "source_url": "https://www.efta.int/about-efta/legal-documents/eea-legal-texts/annexes-agreement"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "paraphrased",
+      "article_slug": "ovissa-um-kostnad-vegna-mogulegs-framhalds-adildarvidraedna",
+      "article_title": "Óvissa um kostnað vegna mögulegs framhalds aðildarviðræðna",
+      "article_source": "RÚV",
+      "article_date": "2026-03-24"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "vafasom-spurning-um-esb-vidraedur",
+      "title": "Vafasöm spurning um ESB-viðræður",
+      "source": "bjorn_is",
+      "date": "2026-03-08",
+      "claim_count": 1,
+      "attribution_types": [
+        "mentioned",
+        "paraphrased"
+      ]
+    },
+    {
+      "slug": "utanrikisraduneytid-fellur-a-fyrsta-profinu",
+      "title": "Utanríkisráðuneytið fellur á fyrsta prófinu",
+      "source": "bjorn_is",
+      "date": "2026-03-07",
+      "claim_count": 7,
+      "attribution_types": [
+        "paraphrased"
+      ]
+    },
+    {
+      "slug": "ovissa-um-kostnad-vegna-mogulegs-framhalds-adildarvidraedna",
+      "title": "Óvissa um kostnað vegna mögulegs framhalds aðildarviðræðna",
+      "source": "RÚV",
+      "date": "2026-03-24",
+      "claim_count": 5,
+      "attribution_types": [
+        "paraphrased",
+        "quoted"
+      ]
+    }
+  ]
 }

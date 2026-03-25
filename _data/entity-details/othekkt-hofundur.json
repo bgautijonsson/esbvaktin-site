@@ -2,19 +2,20 @@
   "slug": "othekkt-hofundur",
   "name": "Óþekkt höfundur",
   "type": "individual",
-  "description": "Samfélagsrýnir og áhugamaður um alþjóðastjórnmál — blandað viðhorf til ESB-aðildar.",
+  "description": "Samfélagsrýnir og áhugamaður um alþjóðastjórnmál — hlutlaus um ESB-aðild.",
   "role": "samfélagsrýnir og áhugamaður um alþjóðastjórnmál",
   "party": null,
-  "stance": "mixed",
-  "stance_score": 0.33,
-  "credibility": 0.62,
+  "stance": "neutral",
+  "stance_score": 0.0,
+  "credibility": 0.61,
   "attribution_counts": {
-    "asserted": 26
+    "asserted": 29
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 16,
-    "supported": 4
+    "partially_supported": 18,
+    "supported": 4,
+    "unverifiable": 1
   },
   "claims": [
     {
@@ -670,6 +671,94 @@
       "article_title": "ESB-viðræðurnar eru hafnar",
       "article_source": "Blog.is",
       "article_date": "2026-03-19"
+    },
+    {
+      "claim_text": "ESB veitir ekki varanlegar undanþágur — umsóknarríki verður að fallast á innleiðingu á öllum lagabálki ESB (acquis communautaire).",
+      "original_quote": "Spurningin er reist á þeirri staðreynd að ESB veitir ekki varanlegar undanþágur. Umsóknarríki verður að fallast á innleiðingu á öllum lagabálki ESB.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að frá Lissabon-sáttmálanum (2009) hefur stefna ESB verið sú að ný aðildarríki fái ekki varanlegar undanþágur (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a>). Framkvæmdastjórnin hefur ítrekað tekið fram að umsóknarríki þurfi að samþykkja alla acquis-lagabálkinn (<a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a>, <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a>). Fullyrðingin er þó of fortakslaus. Eldri aðildarríki hafa fengið varanlegar undanþágur — Danmörk frá evrunni, Írland frá tilteknum dóms- og innanríkismálum — og sumir lögfræðingar benda á að 49. gr. ESB-sáttmálans heimili tæknilega séð hvaða samningsniðurstöðu sem er (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a>, <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a>). Aukin samstarfskerfi (enhanced cooperation) veita ákveðinn sveigjanleika (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E326\" title=\"Treaty on the Functioning of the European Union, Articles 326–334; European Commission — Enhanced cooperation factsheet\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-031</a>). Fullyrðingin endurspeglar núgildandi pólitískan raunveruleika en vantar blæbrigðin um lagalegt svigrúm.",
+      "missing_context": "Þrátt fyrir sterka pólitíska samstöðu gegn nýjum undanþágum benda lögfræðingar á að 49. gr. ESB-sáttmálans takmarki ekki formlega hvað hægt er að semja um. Eldri undanþágur (Danmörk, Írland) eru enn í gildi. Aðlögunartímabil geta í reynd virkað sem undanþágur ef þau eru nógu löng (t.d. 12 ára frestun Póllands á landi kaupum).",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-012",
+          "source_name": "European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        },
+        {
+          "id": "EEA-LEGAL-017",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards joining' factsheet",
+          "source_url": "https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf"
+        },
+        {
+          "id": "EEA-LEGAL-021",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        },
+        {
+          "id": "AGRI-LEGAL-004",
+          "source_name": "EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "SOV-LEGAL-031",
+          "source_name": "Treaty on the Functioning of the European Union, Articles 326–334; European Commission — Enhanced cooperation factsheet",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E326"
+        }
+      ],
+      "category": "eea_eu_law",
+      "attribution": "asserted",
+      "article_slug": "kristrun-i-esb-vidraedum",
+      "article_title": "Kristrún í ESB-viðræðum",
+      "article_source": "bjorn_is",
+      "article_date": "2026-02-17"
+    },
+    {
+      "claim_text": "Ef aðildarríki á í vandræðum með einhver atriði í regluverki ESB getur það fengið aðlögunartímabil, en hægt er að binda enda á það með meirihlutaákvörðun í stjórnsýslukerfi ESB.",
+      "original_quote": "Ef ríki á í vandræðum með einhver atriði í honum kann það að fá tíma til aðlögunar. Unnt er að binda enda á hann með meirihlutaákvörðun í stjórnsýslukerfi ESB",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að umsóknarríki geta samið um aðlögunartímabil (<a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a>, <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a>). Tímabilin eru tímabundin og reglurnar sjálfar óumræðanlegar — einungis tímasetningin er til samningsviðræðna. Hins vegar er seinni hluti fullyrðingarinnar — að meirihlutaákvörðun í stjórnsýslukerfi ESB geti bundið enda á aðlögunartímabilið — ekki beint studdur af neinu gagni í staðreyndagrunninum. Heimildir lýsa aðlögunartímabilum sem föstum tímaramma sem samið er um í aðildarsamningi, ekki sem einhliða úrskurði sem ESB-stjórnsýslan geti stypt. Þetta er mikilvæg fullyrðing sem krefst beinna lagaheimilda.",
+      "missing_context": "Engin heimild í staðreyndagrunninum staðfestir sérstaklega að meirihlutaákvörðun í stjórnsýslukerfi ESB geti bundið enda á aðlögunartímabil. Aðlögunartímabil eru venjulega skilgreind í aðildarsamningnum sjálfum og eru þar með hluti af frumrétti ESB. Framkvæmdastjórnin getur hins vegar gripið til aðfararaðgerða ef ríki uppfyllir ekki skilyrði aðlögunartímabilsins.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-017",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards joining' factsheet",
+          "source_url": "https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf"
+        },
+        {
+          "id": "EEA-LEGAL-021",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        },
+        {
+          "id": "EEA-LEGAL-016",
+          "source_name": "Grabbe, H. (2006) 'The EU's Transformative Power: Europeanization Through Conditionality in Central and Eastern Europe', Palgrave Macmillan",
+          "source_url": "https://link.springer.com/book/10.1057/9780230510302"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "asserted",
+      "article_slug": "kristrun-i-esb-vidraedum",
+      "article_title": "Kristrún í ESB-viðræðum",
+      "article_source": "bjorn_is",
+      "article_date": "2026-02-17"
+    },
+    {
+      "claim_text": "Hægt er að binda enda á aðlögunartímabil ESB-aðildarríkis með úrskurði ESB-dómstólsins.",
+      "original_quote": "Unnt er að binda enda á hann með meirihlutaákvörðun í stjórnsýslukerfi ESB eða með úrskurði ESB-dómstólsins.",
+      "verdict": "unverifiable",
+      "explanation": "Engin heimild í staðreyndagrunninum fjallar beint um hvort ESB-dómstóllinn geti bundið enda á aðlögunartímabil aðildarríkis. <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/the-surveillance-and-court-agreement/agreement-annexes-and-protocols/Surveillance-and-Court-Agreement-consolidated.pdf\" title=\"Agreement establishing the EFTA Surveillance Authority and the EFTA Court, Article 3\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-005</a> lýsir dómsvaldi ESB-dómstólsins almennt og <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> lýsir aðlögunartímabilum, en ekkert gagn tengir þetta tvennt beint saman. Þetta er sérhæfð lagafullyrðing sem krefst tilvísunar í ESB-sáttmálann eða dómstólafordæmi sem eru ekki til staðar í staðreyndagrunninum.",
+      "missing_context": "Staðreyndagrunnurinn inniheldur ekki nógu sértækar upplýsingar um valdsvið ESB-dómstólsins gagnvart aðlögunartímabilum sem ákveðin eru í aðildarsamningum. Dómstóllinn hefur víðtækt vald til að túlka ESB-rétt, en hvort hann geti stypt aðlögunartíma í aðildarsamningi er sérhæft lagaspursmál sem krefst frekari heimilda.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "asserted",
+      "article_slug": "kristrun-i-esb-vidraedum",
+      "article_title": "Kristrún í ESB-viðræðum",
+      "article_source": "bjorn_is",
+      "article_date": "2026-02-17"
     }
   ],
   "articles": [
@@ -699,6 +788,16 @@
       "source": "Blog.is",
       "date": "2026-03-19",
       "claim_count": 4,
+      "attribution_types": [
+        "asserted"
+      ]
+    },
+    {
+      "slug": "kristrun-i-esb-vidraedum",
+      "title": "Kristrún í ESB-viðræðum",
+      "source": "bjorn_is",
+      "date": "2026-02-17",
+      "claim_count": 3,
       "attribution_types": [
         "asserted"
       ]

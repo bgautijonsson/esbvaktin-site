@@ -7,8 +7,9 @@
   "party": null,
   "stance": "neutral",
   "stance_score": 0.0,
-  "credibility": null,
+  "credibility": 0.5,
   "attribution_counts": {
+    "quoted": 1,
     "paraphrased": 1,
     "mentioned": 2
   },
@@ -19,8 +20,64 @@
     "first_speech": "1991-10-16",
     "last_speech": "2005-03-15"
   },
-  "scorecard": {},
-  "claims": [],
-  "articles": [],
+  "scorecard": {
+    "partially_supported": 1
+  },
+  "claims": [
+    {
+      "claim_text": "Halldór Ásgrímsson, þáverandi utanríkisráðherra, sagði 14. mars 2002 í ræðu í Berlín að Ísland hefði tekið upp um 80% af öllu regluverki ESB í gegnum EES-samninginn.",
+      "original_quote": "Through the EEA Agreement we participate in the EU internal market and have taken over about 80% of all its legislation.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta ekki 80% töluna sem Halldór Ásgrímsson nefndi. Samkvæmt <a href=\"https://www.government.is/library/01-Ministries/Ministry-for-Foreign-Affairs/PDF-skjol/EES_skyrsla_15.pdf\" title=\"Utanríkisráðuneytið — Gengið til góðs: Skref í átt að bættri framkvæmd EES-samningsins (apríl 2018)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-017</a> nam hlutdeild Íslands í regluverki ESB aðeins 13,4% af heildarregluverki sambandsins (9.028 gerðir af 67.158) á tímabilinu 1994–2016. <a href=\"https://www.eftasurv.int/internal-market/implementing-eea-law-national-law/internal-market-scoreboards\" title=\"EFTA Surveillance Authority — Internal Market Scoreboard\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-001</a> sýnir að um 70% af löggjöf innri markaðarins hafi verið innleidd, en fullyrðing Halldórs vísar til «alls regluverks» ESB, ekki eingöngu innri markaðarins. Upprunaleg tilvitnun hans — «about 80% of all its legislation» — er því verulega ofmetin miðað við tiltæk gögn, hvort sem borið er saman við heildarregluverk (13,4%) eða innri markaðslöggjöf (70%).",
+      "missing_context": "Fullyrðingin er frá 2002 og engin heimild sýnir hvernig Halldór komst að 80% tölunni. Munur á «öllu regluverki ESB» og «innri markaðslöggjöf» skiptir sköpum — 70% talan frá ESA á aðeins við innri markaðinn en 13,4% talan nær yfir allt regluverk. Ræðan var á ensku og orðalag getur hafa verið einföldun í diplómatísku samhengi.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-001",
+          "source_name": "EFTA Surveillance Authority — Internal Market Scoreboard",
+          "source_url": "https://www.eftasurv.int/internal-market/implementing-eea-law-national-law/internal-market-scoreboards"
+        },
+        {
+          "id": "EEA-DATA-006",
+          "source_name": "EFTA Secretariat — EEA Agreement factsheet; ESA Annual Report 2024",
+          "source_url": "https://www.efta.int/eea/eea-agreement"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "EEA-DATA-017",
+          "source_name": "Utanríkisráðuneytið — Gengið til góðs: Skref í átt að bættri framkvæmd EES-samningsins (apríl 2018)",
+          "source_url": "https://www.government.is/library/01-Ministries/Ministry-for-Foreign-Affairs/PDF-skjol/EES_skyrsla_15.pdf"
+        },
+        {
+          "id": "EEA-DATA-018",
+          "source_name": "Utanríkisráðuneytið — Skýrsla starfshóps um EES-samstarfið (september 2019)",
+          "source_url": "https://www.government.is/library/01-Ministries/Ministry-for-Foreign-Affairs/PDF-skjol/Sky%CC%81rsla%20starfsho%CC%81ps%20um%20EES-samstarfi%C3%B0%200919.pdf"
+        },
+        {
+          "id": "EEA-DATA-003",
+          "source_name": "EUR-Lex — Legislation statistics",
+          "source_url": "https://eur-lex.europa.eu/statistics/legislative-acts-statistics.html"
+        }
+      ],
+      "category": "eea_eu_law",
+      "attribution": "quoted",
+      "article_slug": "vid-hofum-ekki-tekid-upp-80-af-reglum-esb",
+      "article_title": "Við höfum ekki tekið upp 80% af reglum ESB",
+      "article_source": "Stjórnmálin",
+      "article_date": "2026-03-24"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "vid-hofum-ekki-tekid-upp-80-af-reglum-esb",
+      "title": "Við höfum ekki tekið upp 80% af reglum ESB",
+      "source": "Stjórnmálin",
+      "date": "2026-03-24",
+      "claim_count": 1,
+      "attribution_types": [
+        "quoted"
+      ]
+    }
+  ],
   "subtype": "politician"
 }
