@@ -127,7 +127,7 @@ return_link_support: true
         {% for claim in report.claims %}
         <li class="ev-citation-claim">
           <span class="ct-verdict-pill verdict-{{ claim.verdict | replace("partially_supported", "partial") }}" title="{{ claim.verdict | verdictDescription }}">
-            {{ claim.verdict | verdictLabel }}
+            {{ claim.verdict | verdictLabel(claim.epistemic_type) }}
           </span>
           <span class="ev-citation-role ev-role-{{ claim.role }}">
             {{ "Styður" if claim.role == "supporting" else "Andmælir" }}
