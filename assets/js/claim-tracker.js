@@ -28,6 +28,7 @@
   const claimCard = globalThis.ESBvaktinClaimCard || {};
 
   const VERDICT_LABELS = (TAXONOMY.verdictLabels && TAXONOMY.verdictLabels.factual) || {};
+  const EPISTEMIC_TYPE_LABELS = TAXONOMY.epistemicTypeLabels || {};
   const CATEGORY_LABELS = TAXONOMY.categoryLabels || {};
   const SORT_LABELS = {
     last_verified: "Síðast staðfest",
@@ -48,6 +49,7 @@
       search: params.get("q") || "",
       category: params.get("category") || "",
       verdict: params.get("verdict") || "",
+      epistemic_type: params.get("epistemic_type") || "",
       sort: params.get("sort") || "last_verified",
       sortDir: "DESC",
     },
@@ -121,6 +123,10 @@
       results = results.filter((claim) => claim.verdict === filters.verdict);
     }
 
+    if (filters.epistemic_type) {
+      results = results.filter((claim) => (claim.epistemic_type || "factual") === filters.epistemic_type);
+    }
+
     results.sort(createSortComparator(filters.sort || "sighting_count", filters.sortDir || "DESC"));
 
     return results;
@@ -175,6 +181,14 @@
               placeholder: "Allir úrskurðir",
               options: Object.entries(VERDICT_LABELS).map(([value, label]) => ({ value, label })),
               selectedValue: filters.verdict,
+            }),
+            renderer.renderSelect({
+              id: "ct-epistemic-type",
+              className: "ct-select",
+              label: "Tegund fullyrðingar",
+              placeholder: "Allar tegundir",
+              options: Object.entries(EPISTEMIC_TYPE_LABELS).map(([value, label]) => ({ value, label })),
+              selectedValue: filters.epistemic_type,
             }),
             renderer.renderSelect({
               id: "ct-sort",
@@ -316,6 +330,10 @@
       chips.push({ key: "verdict", text: `Úrskurður: ${VERDICT_LABELS[filters.verdict] || filters.verdict}` });
     }
 
+    if (filters.epistemic_type) {
+      chips.push({ key: "epistemic_type", text: `Tegund: ${EPISTEMIC_TYPE_LABELS[filters.epistemic_type] || filters.epistemic_type}` });
+    }
+
     if (filters.sort && filters.sort !== "last_verified") {
       chips.push({ key: "sort", text: `Röðun: ${SORT_LABELS[filters.sort] || filters.sort}` });
     }
@@ -334,6 +352,7 @@
     if (key === "claim") patch.claim = "";
     if (key === "category") patch.category = "";
     if (key === "verdict") patch.verdict = "";
+    if (key === "epistemic_type") patch.epistemic_type = "";
     if (key === "sort") patch.sort = "last_verified";
 
     commitState(patch, "all", api);
@@ -346,6 +365,7 @@
         claim: "",
         category: "",
         verdict: "",
+        epistemic_type: "",
         sort: "last_verified",
       },
       "all",
@@ -359,6 +379,7 @@
       claim: state.claim,
       category: state.category,
       verdict: state.verdict,
+      epistemic_type: state.epistemic_type,
       sort: state.sort === "last_verified" ? "" : state.sort,
     }));
   });
@@ -377,6 +398,10 @@
 
   controller.bindChange("#ct-verdict", (value, _target, _event, api) => {
     commitState({ verdict: value, claim: "" }, "results", api);
+  });
+
+  controller.bindChange("#ct-epistemic-type", (value, _target, _event, api) => {
+    commitState({ epistemic_type: value, claim: "" }, "results", api);
   });
 
   controller.bindChange("#ct-sort", (value, _target, _event, api) => {

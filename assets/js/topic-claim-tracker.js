@@ -23,6 +23,7 @@
   var renderActiveFilterChips = utils.renderActiveFilterChips;
 
   var VERDICT_LABELS = (TAXONOMY.verdictLabels && TAXONOMY.verdictLabels.factual) || {};
+  var EPISTEMIC_TYPE_LABELS = TAXONOMY.epistemicTypeLabels || {};
 
   var root = document.getElementById("topic-claim-tracker");
   if (!root || !renderer || !createController) return;
@@ -38,6 +39,7 @@
     initialState: {
       search: "",
       verdict: "",
+      epistemic_type: "",
       sort: "sighting_count",
       sortDir: "DESC",
     },
@@ -101,6 +103,10 @@
       results = results.filter(function (claim) { return claim.verdict === filters.verdict; });
     }
 
+    if (filters.epistemic_type) {
+      results = results.filter(function (claim) { return (claim.epistemic_type || "factual") === filters.epistemic_type; });
+    }
+
     results.sort(createSortComparator(filters.sort || "sighting_count", filters.sortDir || "DESC"));
     return results;
   }
@@ -144,6 +150,14 @@
               placeholder: "Allir úrskurðir",
               options: Object.entries(VERDICT_LABELS).map(function (entry) { return { value: entry[0], label: entry[1] }; }),
               selectedValue: filters.verdict,
+            }),
+            renderer.renderSelect({
+              id: "tct-epistemic-type",
+              className: "ct-select",
+              label: "Tegund fullyrðingar",
+              placeholder: "Allar tegundir",
+              options: Object.entries(EPISTEMIC_TYPE_LABELS).map(function (entry) { return { value: entry[0], label: entry[1] }; }),
+              selectedValue: filters.epistemic_type,
             }),
             renderer.renderSelect({
               id: "tct-sort",
@@ -224,6 +238,9 @@
     if (filters.verdict) {
       chips.push({ key: "verdict", text: "Úrskurður: " + (VERDICT_LABELS[filters.verdict] || filters.verdict) });
     }
+    if (filters.epistemic_type) {
+      chips.push({ key: "epistemic_type", text: "Tegund: " + (EPISTEMIC_TYPE_LABELS[filters.epistemic_type] || filters.epistemic_type) });
+    }
     if (filters.sort && filters.sort !== "sighting_count") {
       var sortLabels = { last_verified: "Síðast staðfest", confidence: "Vissustig" };
       chips.push({ key: "sort", text: "Röðun: " + (sortLabels[filters.sort] || filters.sort) });
@@ -239,12 +256,13 @@
     var patch = {};
     if (key === "search") patch.search = "";
     if (key === "verdict") patch.verdict = "";
+    if (key === "epistemic_type") patch.epistemic_type = "";
     if (key === "sort") patch.sort = "sighting_count";
     api.setState(patch, "all");
   }
 
   function clearAllFilters(api) {
-    api.setState({ search: "", verdict: "", sort: "sighting_count" }, "all");
+    api.setState({ search: "", verdict: "", epistemic_type: "", sort: "sighting_count" }, "all");
   }
 
   // ── Event bindings ──
@@ -259,6 +277,10 @@
 
   controller.bindChange("#tct-verdict", function (value, _target, _event, api) {
     api.setState({ verdict: value }, "results");
+  });
+
+  controller.bindChange("#tct-epistemic-type", function (value, _target, _event, api) {
+    api.setState({ epistemic_type: value }, "results");
   });
 
   controller.bindChange("#tct-sort", function (value, _target, _event, api) {

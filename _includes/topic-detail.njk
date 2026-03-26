@@ -79,6 +79,23 @@ return_link_support: true
         {% endif %}
       {% endfor %}
     </div>
+
+    {% if topic.epistemic_counts %}
+    <div class="td-epistemic-row" style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.75rem;">
+      {% if topic.epistemic_counts.factual %}
+      <span class="ct-category-tag">Staðreyndir: {{ topic.epistemic_counts.factual }}</span>
+      {% endif %}
+      {% if topic.epistemic_counts.prediction %}
+      <span class="ct-epistemic-badge epistemic-prediction">Spár: {{ topic.epistemic_counts.prediction }}</span>
+      {% endif %}
+      {% if topic.epistemic_counts.counterfactual %}
+      <span class="ct-epistemic-badge epistemic-counterfactual">Tilgátur: {{ topic.epistemic_counts.counterfactual }}</span>
+      {% endif %}
+      {% if topic.epistemic_counts.hearsay %}
+      <span class="ct-epistemic-badge epistemic-hearsay">Orðsagnir: {{ topic.epistemic_counts.hearsay }}</span>
+      {% endif %}
+    </div>
+    {% endif %}
   </section>
   {% endif %}
 
