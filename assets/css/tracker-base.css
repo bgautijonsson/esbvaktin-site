@@ -263,6 +263,44 @@
   white-space: nowrap;
 }
 
+/* ── Epistemic type badge ─────────────────────────────────────────── */
+
+.ct-epistemic-badge {
+  display: inline-block;
+  padding: 0.1rem 0.4rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.epistemic-prediction {
+  background: rgba(59, 130, 246, 0.12);
+  color: #2563eb;
+  border: 1px solid rgba(59, 130, 246, 0.25);
+}
+
+.epistemic-counterfactual {
+  background: rgba(124, 58, 237, 0.1);
+  color: #6d28d9;
+  border: 1px solid rgba(124, 58, 237, 0.2);
+}
+
+.epistemic-hearsay {
+  background: var(--bg-alt, #f3f4f6);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+}
+
+.ct-epistemic-context {
+  font-style: italic;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
 /* ── Card grids ──────────────────────────────────────────────────── */
 
 .dt-grid,
@@ -491,5 +529,10 @@
   .dt-card-meta,
   .st-card-meta {
     flex-wrap: wrap;
+  }
+
+  .ct-epistemic-badge {
+    font-size: 0.6rem;
+    padding: 0.08rem 0.3rem;
   }
 }
