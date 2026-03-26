@@ -22,7 +22,7 @@
   var createErrorHandler = utils.createErrorHandler;
   var renderActiveFilterChips = utils.renderActiveFilterChips;
 
-  var VERDICT_LABELS = TAXONOMY.verdictLabels || {};
+  var VERDICT_LABELS = (TAXONOMY.verdictLabels && TAXONOMY.verdictLabels.factual) || {};
 
   var root = document.getElementById("topic-claim-tracker");
   if (!root || !renderer || !createController) return;

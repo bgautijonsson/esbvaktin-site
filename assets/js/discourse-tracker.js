@@ -27,7 +27,7 @@
     ? utils.getDataBase(document.currentScript, "/assets/data")
     : (document.currentScript?.dataset.base || "/assets/data");
   const JSON_URL = `${DATA_BASE}/reports.json`;
-  const VERDICT_LABELS = TAXONOMY.verdictLabels || {};
+  const VERDICT_LABELS = (TAXONOMY.verdictLabels && TAXONOMY.verdictLabels.factual) || {};
   const VERDICT_DESCRIPTIONS = TAXONOMY.verdictDescriptions || {};
   const CATEGORY_LABELS = TAXONOMY.categoryLabels || {};
   const VERDICT_CLASSES = TAXONOMY.verdictClasses || {};

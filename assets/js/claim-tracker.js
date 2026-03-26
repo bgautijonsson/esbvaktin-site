@@ -27,7 +27,7 @@
 
   const claimCard = globalThis.ESBvaktinClaimCard || {};
 
-  const VERDICT_LABELS = TAXONOMY.verdictLabels || {};
+  const VERDICT_LABELS = (TAXONOMY.verdictLabels && TAXONOMY.verdictLabels.factual) || {};
   const CATEGORY_LABELS = TAXONOMY.categoryLabels || {};
   const SORT_LABELS = {
     last_verified: "Síðast staðfest",

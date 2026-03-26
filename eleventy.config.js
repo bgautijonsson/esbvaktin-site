@@ -109,7 +109,7 @@ module.exports = function (eleventyConfig) {
   });
 
   // ── Verdict label filter ──────────────────────────────────────────
-  eleventyConfig.addFilter("verdictLabel", (v) => taxonomy.verdictLabels[v] || v);
+  eleventyConfig.addFilter("verdictLabel", (v, epistemicType) => taxonomy.verdictLabel(v, epistemicType));
   eleventyConfig.addFilter("verdictDescription", (v) => taxonomy.verdictDescriptions[v] || v);
 
   // ── Category label filter ─────────────────────────────────────────

@@ -8,11 +8,42 @@
 })(typeof globalThis !== "undefined" ? globalThis : this, function () {
   return {
     verdictLabels: {
-      supported: "Staðfest",
-      partially_supported: "Að hluta staðfest",
-      unsupported: "Óstutt",
-      misleading: "Þarfnast samhengis",
-      unverifiable: "Heimildir vantar",
+      factual: {
+        supported: "Staðfest",
+        partially_supported: "Að hluta staðfest",
+        unsupported: "Óstutt",
+        misleading: "Þarfnast samhengis",
+        unverifiable: "Heimildir vantar",
+      },
+      prediction: {
+        supported: "Víðtæk samstaða",
+        partially_supported: "Nokkur stoð",
+        unsupported: "Órökstudd",
+        misleading: "Ofeinföldun",
+        unverifiable: "Heimildir vantar",
+      },
+      counterfactual: {
+        supported: "Víðtæk samstaða",
+        partially_supported: "Nokkur stoð",
+        unsupported: "Órökstudd",
+        misleading: "Ofeinföldun",
+        unverifiable: "Heimildir vantar",
+      },
+      hearsay: {
+        unverifiable: "Óstaðfest heimild",
+      },
+    },
+    epistemicTypeLabels: {
+      factual: "Staðreynd",
+      prediction: "Spá",
+      counterfactual: "Tilgáta",
+      hearsay: "Orðsögn",
+    },
+    // Flat access helper for backward compatibility
+    verdictLabel: function(verdict, epistemicType) {
+      var type = epistemicType || "factual";
+      var labels = this.verdictLabels[type] || this.verdictLabels.factual;
+      return labels[verdict] || verdict;
     },
     verdictDescriptions: {
       supported: "Heimildir styðja þessa fullyrðingu",

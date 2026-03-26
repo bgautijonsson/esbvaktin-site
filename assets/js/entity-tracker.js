@@ -28,7 +28,7 @@
   const TYPE_LABELS = TAXONOMY.entityTypeLabels || {};
   const TYPE_FILTER_LABELS = TAXONOMY.entityTypeFilterLabels || {};
   const STANCE_FILTER_LABELS = TAXONOMY.stanceFilterLabels || {};
-  const VERDICT_LABELS = TAXONOMY.verdictLabels || {};
+  const VERDICT_LABELS = (TAXONOMY.verdictLabels && TAXONOMY.verdictLabels.factual) || {};
   const VERDICT_CLASSES = TAXONOMY.verdictClasses || {};
   const PARTY_CLASSES = TAXONOMY.partyClasses || {};
 

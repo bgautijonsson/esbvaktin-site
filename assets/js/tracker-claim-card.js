@@ -16,7 +16,7 @@
   var TAXONOMY = (typeof globalThis !== "undefined" && globalThis.ESBvaktinTaxonomy) || {};
   var utils = (typeof globalThis !== "undefined" && globalThis.ESBvaktinTrackerUtils) || {};
 
-  var VERDICT_LABELS = TAXONOMY.verdictLabels || {};
+  var VERDICT_LABELS = (TAXONOMY.verdictLabels && TAXONOMY.verdictLabels.factual) || {};
   var VERDICT_DESCRIPTIONS = TAXONOMY.verdictDescriptions || {};
   var VERDICT_CLASSES = TAXONOMY.verdictClasses || {};
   var CATEGORY_LABELS = TAXONOMY.categoryLabels || {};
