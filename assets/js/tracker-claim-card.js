@@ -71,7 +71,11 @@
     };
 
     var detailsHtml = "";
-    if (epistemicType !== "factual" && EPISTEMIC_CONTEXT[epistemicType]) {
+    if (epistemicType === "hearsay") {
+      detailsHtml += '<div class="ct-hearsay-warning">' +
+        '<strong>⚠ Óstaðfest heimild</strong> — Þessi fullyrðing byggir á ónafngreindum heimildum og hefur ekki verið staðfest. ' +
+        'Hún birtist hér til upplýsinga en telst ekki staðfestanleg.</div>';
+    } else if (epistemicType !== "factual" && EPISTEMIC_CONTEXT[epistemicType]) {
       detailsHtml += '<div class="ct-detail ct-epistemic-context">' +
         escapeHtml(EPISTEMIC_CONTEXT[epistemicType]) + '</div>';
     }
