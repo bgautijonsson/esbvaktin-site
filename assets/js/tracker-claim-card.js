@@ -17,6 +17,7 @@
   var utils = (typeof globalThis !== "undefined" && globalThis.ESBvaktinTrackerUtils) || {};
 
   var VERDICT_LABELS = (TAXONOMY.verdictLabels && TAXONOMY.verdictLabels.factual) || {};
+  var EPISTEMIC_TYPE_LABELS = TAXONOMY.epistemicTypeLabels || {};
   var VERDICT_DESCRIPTIONS = TAXONOMY.verdictDescriptions || {};
   var VERDICT_CLASSES = TAXONOMY.verdictClasses || {};
   var CATEGORY_LABELS = TAXONOMY.categoryLabels || {};
@@ -49,13 +50,31 @@
     opts = opts || {};
     var cardId = "ct-claim-" + claim.claim_slug;
     var verdictClass = VERDICT_CLASSES[claim.verdict] || "";
-    var verdictLabel = VERDICT_LABELS[claim.verdict] || claim.verdict;
+    var epistemicType = claim.epistemic_type || "factual";
+    var verdictLabel = TAXONOMY.verdictLabel
+      ? TAXONOMY.verdictLabel(claim.verdict, epistemicType)
+      : (VERDICT_LABELS[claim.verdict] || claim.verdict);
+    var epistemicBadgeHtml = "";
+    if (epistemicType !== "factual" && EPISTEMIC_TYPE_LABELS[epistemicType]) {
+      epistemicBadgeHtml = '<span class="ct-epistemic-badge epistemic-' + epistemicType + '">' +
+        escapeHtml(EPISTEMIC_TYPE_LABELS[epistemicType]) + '</span>';
+    }
     var categoryLabel = CATEGORY_LABELS[claim.category] || claim.category;
     var confidencePct = Math.round((claim.confidence || 0) * 100);
     var isFocused = opts.focusedSlug === claim.claim_slug;
     var reportLookup = opts.reportLookup;
 
+    var EPISTEMIC_CONTEXT = {
+      prediction: "Þetta er spá — mat byggir á samstöðu heimilda og gæðum rökfærslu.",
+      counterfactual: "Þetta er tilgáta um atburði sem gerðust ekki.",
+      hearsay: "Þetta byggir á ónafngreindum heimildum sem ekki er hægt að staðfesta.",
+    };
+
     var detailsHtml = "";
+    if (epistemicType !== "factual" && EPISTEMIC_CONTEXT[epistemicType]) {
+      detailsHtml += '<div class="ct-detail ct-epistemic-context">' +
+        escapeHtml(EPISTEMIC_CONTEXT[epistemicType]) + '</div>';
+    }
     if (claim.explanation_is) {
       detailsHtml += '<div class="ct-detail"><strong>Útskýring:</strong> ' + linkifyEvidenceIds(escapeHtml(claim.explanation_is)) + '</div>';
     }
@@ -137,6 +156,7 @@
       '<div class="ct-card-header" role="button" tabindex="0" aria-expanded="false">' +
         '<div class="ct-card-main">' +
           '<span class="ct-verdict-pill ' + verdictClass + '" title="' + (VERDICT_DESCRIPTIONS[claim.verdict] || "") + '">' + verdictLabel + '</span>' +
+          epistemicBadgeHtml +
           '<span class="ct-category-tag">' + categoryLabel + '</span>' +
           sightingBadge +
         '</div>' +
