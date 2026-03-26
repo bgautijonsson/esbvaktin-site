@@ -30,6 +30,8 @@
 
   var topicCategory = (root.dataset.category || "").replace(/-/g, "_");
   var dataBase = root.dataset.base || "/assets/data";
+  var topicSlug = (root.dataset.category || "").toLowerCase();
+  var TOPIC_CLAIMS_URL = dataBase + "/topic-claims/" + topicSlug + ".json";
   var CLAIMS_URL = dataBase + "/claims.json";
   var REPORTS_URL = dataBase + "/reports.json";
 
@@ -48,8 +50,15 @@
       reportLookup: createReportLookup([]),
     },
     load: async function (api) {
-      var allClaims = await api.loadJson(CLAIMS_URL);
-      var claims = allClaims.filter(function (c) { return c.category === topicCategory; });
+      var claims;
+      try {
+        // Try per-topic file first (much smaller than full claims.json)
+        claims = await api.loadJson(TOPIC_CLAIMS_URL);
+      } catch (_) {
+        // Fall back to full claims.json + client-side filter
+        var allClaims = await api.loadJson(CLAIMS_URL);
+        claims = allClaims.filter(function (c) { return c.category === topicCategory; });
+      }
       var reports = [];
       try {
         reports = await api.loadJson(REPORTS_URL);
