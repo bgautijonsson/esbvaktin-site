@@ -295,10 +295,23 @@
 }
 
 .ct-epistemic-context {
-  font-style: italic;
-  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 0.75rem;
   font-size: 0.85rem;
   margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.ct-epistemic-context.epistemic-prediction {
+  background: rgba(59, 130, 246, 0.08);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  color: #1e40af;
+}
+
+.ct-epistemic-context.epistemic-counterfactual {
+  background: rgba(124, 58, 237, 0.06);
+  border: 1px solid rgba(124, 58, 237, 0.15);
+  color: #5b21b6;
 }
 
 .ct-hearsay-warning {

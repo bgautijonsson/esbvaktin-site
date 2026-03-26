@@ -76,7 +76,9 @@
         '<strong>⚠ Óstaðfest heimild</strong> — Þessi fullyrðing byggir á ónafngreindum heimildum og hefur ekki verið staðfest. ' +
         'Hún birtist hér til upplýsinga en telst ekki staðfestanleg.</div>';
     } else if (epistemicType !== "factual" && EPISTEMIC_CONTEXT[epistemicType]) {
-      detailsHtml += '<div class="ct-detail ct-epistemic-context">' +
+      var contextLabel = epistemicType === "prediction" ? "ℹ Spá" : "ℹ Tilgáta";
+      detailsHtml += '<div class="ct-epistemic-context epistemic-' + epistemicType + '">' +
+        '<strong>' + contextLabel + '</strong> — ' +
         escapeHtml(EPISTEMIC_CONTEXT[epistemicType]) + '</div>';
     }
     if (claim.explanation_is) {
