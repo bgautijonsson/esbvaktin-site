@@ -34,15 +34,7 @@ extra_css: /assets/css/nytt.css
           {% for item in group.items %}
           <li class="nytt-item nytt-item--{{ item.type }}">
             <span class="nytt-type-label">{{ item.typeLabel }}</span>
-            {% if item.type == "brennidepill" %}
-            <h3 class="nytt-item-title">
-              <a href="{{ item.href }}">
-                <span class="nytt-spike-badge">{{ item.title }}</span>
-              </a>
-            </h3>
-            {% else %}
             <h3 class="nytt-item-title"><a href="{{ item.href }}">{{ item.title }}</a></h3>
-            {% endif %}
             <div class="nytt-item-meta">
               {% if item.verdict %}
               <span class="nytt-verdict nytt-verdict--{{ item.verdict | replace("partially_supported", "partial") }}" aria-label="{{ item.verdictLabel }}">{{ item.verdictLabel }}</span>
@@ -72,14 +64,11 @@ extra_css: /assets/css/nytt.css
       <p class="nytt-sidebar-label">Málefni</p>
       <h2 class="nytt-sidebar-heading">Virkasta vikunnar</h2>
     </div>
-    {% set topicsSorted = nytt.items | selectattr("type", "equalto", "brennidepill") %}
-    {% for topic in nytt.items %}
-    {% if topic.type == "brennidepill" %}
+    {% for topic in nytt.spiking %}
     <a href="{{ topic.href }}" class="nytt-sidebar-topic">
       <span class="nytt-spike-badge">{{ topic.title }}</span>
       <span class="nytt-sidebar-topic-meta">{{ topic.meta }}</span>
     </a>
-    {% endif %}
     {% endfor %}
 
     <div class="nytt-sidebar-section" style="margin-top: var(--sp-xl)">

@@ -138,7 +138,7 @@ module.exports = function () {
         date: todayStr,
         title: label,
         href: `/malefni/${slug}/`,
-        meta: `${count7d} tilvísanir síðustu 7 daga — ${(count7d / weeklyAvg).toFixed(1)}× meðaltal`,
+        meta: `Mun umræddara en venjulega — ${count7d} tilvísanir síðustu 7 daga`,
         spikeRatio: count7d / weeklyAvg,
       });
     }
@@ -188,17 +188,21 @@ module.exports = function () {
     resurfaced: items.filter((i) => i.type === "endurvakin" && i.date >= cutoff7dStr).length,
   };
 
-  // ── Interleave item types for a varied feed, then cap at 30 ──
-  // Priority: brennidepill first, then interleave greining/fullyrding/endurvakin
+  // ── Separate timeline items from sidebar-only items ──
+  // Brennidepill (spiking topics) are weekly trends, not daily events.
+  // They go in the sidebar only. The timeline shows dated events.
+  const spiking = items.filter((i) => i.type === "brennidepill");
+  const timelinePool = items.filter((i) => i.type !== "brennidepill");
+
+  // ── Interleave event types for a varied feed, then cap at 30 ──
   const byType = {
-    brennidepill: items.filter((i) => i.type === "brennidepill"),
-    greining: items.filter((i) => i.type === "greining"),
-    endurvakin: items.filter((i) => i.type === "endurvakin"),
-    fullyrding: items.filter((i) => i.type === "fullyrding"),
+    greining: timelinePool.filter((i) => i.type === "greining"),
+    endurvakin: timelinePool.filter((i) => i.type === "endurvakin"),
+    fullyrding: timelinePool.filter((i) => i.type === "fullyrding"),
   };
 
   const MAX_ITEMS = 30;
-  const feed = [...byType.brennidepill]; // all spiking topics first
+  const feed = [];
   const pools = ["greining", "endurvakin", "fullyrding"];
   const cursors = { greining: 0, endurvakin: 0, fullyrding: 0 };
 
@@ -229,16 +233,17 @@ module.exports = function () {
     currentGroup.items.push(item);
   }
 
-  // Recompute counts from the actual feed (not the full pool)
+  // Counts from the actual feed
   const feedCounts = {
     claims: feed.filter((i) => i.type === "fullyrding").length,
     reports: feed.filter((i) => i.type === "greining").length,
-    spiking: feed.filter((i) => i.type === "brennidepill").length,
+    spiking: spiking.length,
     resurfaced: feed.filter((i) => i.type === "endurvakin").length,
   };
 
   return {
     items: feed,
+    spiking,
     grouped,
     counts: feedCounts,
     cutoff7d: cutoff7dStr,
