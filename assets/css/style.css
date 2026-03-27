@@ -606,6 +606,23 @@ img { max-width: 100%; height: auto; }
   color: var(--text-muted);
 }
 
+.home-hero-cta {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-family: var(--font-ui);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.home-hero-cta:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .home-hero-meta-strip {
   display: flex;
   flex-wrap: wrap;

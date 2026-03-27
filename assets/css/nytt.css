@@ -1,0 +1,348 @@
+/* ── /nytt — Debate Delta timeline ──────────────────────────────────────
+ * Editorial timeline layout. No cards, no shadows. Lines, blocks, stamps.
+ * DESIGN.md tokens throughout.
+ */
+
+/* ── Hero heading ── */
+
+.nytt-hero {
+  padding: var(--sp-xl) 0 var(--sp-md);
+}
+
+h1.nytt-heading {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 500;
+  line-height: 1.12;
+  margin: 0;
+}
+
+/* ── Anchor slab ── */
+
+.nytt-anchor {
+  background: var(--bg-surface);
+  border-top: 3px solid var(--rule-strong);
+  padding: var(--sp-lg) var(--sp-lg);
+  margin-bottom: var(--sp-xl);
+}
+
+.nytt-anchor-counts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-sm) var(--sp-lg);
+}
+
+.nytt-anchor-stat {
+  font-family: var(--font-ui);
+  font-size: 0.9375rem;
+  color: var(--text);
+}
+
+.nytt-anchor-stat strong {
+  font-family: var(--font-data);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--accent);
+  margin-right: var(--sp-xs);
+}
+
+.nytt-anchor-since {
+  margin: var(--sp-sm) 0 0;
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+/* ── Grid: timeline + sidebar ── */
+
+.nytt-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.58fr) minmax(250px, 0.58fr);
+  gap: 1.5rem;
+  column-gap: 2.5rem;
+  align-items: start;
+}
+
+/* ── Timeline feed ── */
+
+.nytt-timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nytt-date-group {
+  margin-bottom: var(--sp-lg);
+}
+
+h2.nytt-date-header {
+  font-family: var(--font-ui);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin: 0 0 var(--sp-sm);
+  padding-bottom: var(--sp-xs);
+  border-bottom: 1px solid var(--rule);
+}
+
+.nytt-date-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Timeline item ── */
+
+.nytt-item {
+  padding: var(--sp-md) 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.nytt-item:last-child {
+  border-bottom: none;
+}
+
+.nytt-type-label {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  margin-bottom: var(--sp-xs);
+}
+
+.nytt-item--brennidepill .nytt-type-label {
+  color: var(--warning);
+}
+
+.nytt-item--endurvakin .nytt-type-label {
+  color: var(--text-muted);
+}
+
+h3.nytt-item-title {
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0 0 var(--sp-xs);
+}
+
+.nytt-item-title a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.nytt-item-title a:hover {
+  color: var(--accent);
+}
+
+.nytt-item-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-xs) var(--sp-md);
+  font-family: var(--font-data);
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* ── Verdict stamps ── */
+
+.nytt-verdict {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 1px var(--sp-sm);
+  border-radius: var(--radius-sm);
+}
+
+.nytt-verdict--supported { color: var(--v-supported); background: rgba(46, 106, 79, 0.08); }
+.nytt-verdict--partial { color: var(--v-partial); background: rgba(138, 106, 30, 0.08); }
+.nytt-verdict--unsupported { color: var(--v-unsupported); background: rgba(166, 58, 43, 0.08); }
+.nytt-verdict--misleading { color: var(--v-misleading); background: rgba(139, 61, 94, 0.08); }
+.nytt-verdict--unverifiable { color: var(--v-unverifiable); background: rgba(107, 99, 88, 0.08); }
+
+@media (prefers-color-scheme: dark) {
+  .nytt-verdict--supported { background: rgba(74, 222, 128, 0.1); }
+  .nytt-verdict--partial { background: rgba(251, 191, 36, 0.1); }
+  .nytt-verdict--unsupported { background: rgba(248, 113, 113, 0.1); }
+  .nytt-verdict--misleading { background: rgba(192, 132, 252, 0.1); }
+  .nytt-verdict--unverifiable { background: rgba(156, 148, 136, 0.1); }
+}
+
+/* ── Spiking topic badge ── */
+
+.nytt-spike-badge {
+  display: inline;
+  background: var(--accent-muted);
+  color: var(--accent);
+  padding: 2px var(--sp-sm);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 0.9375rem;
+}
+
+/* ── Empty / caught-up states ── */
+
+.nytt-empty,
+.nytt-caught-up {
+  padding: var(--sp-2xl) 0;
+  text-align: center;
+  color: var(--text-muted);
+  font-family: var(--font-ui);
+  font-size: 1rem;
+}
+
+.nytt-empty a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.nytt-caught-up {
+  color: var(--v-supported);
+}
+
+/* ── Sidebar ── */
+
+.nytt-sidebar {
+  position: sticky;
+  top: var(--sp-lg);
+}
+
+.nytt-sidebar-section {
+  margin-bottom: var(--sp-md);
+}
+
+.nytt-sidebar-label {
+  font-family: var(--font-ui);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin: 0 0 var(--sp-2xs);
+}
+
+h2.nytt-sidebar-heading {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.nytt-sidebar-topic,
+.nytt-sidebar-resurfaced {
+  display: block;
+  padding: var(--sp-sm) 0;
+  border-bottom: 1px solid var(--rule);
+  text-decoration: none;
+  color: var(--text);
+  transition: color var(--transition);
+}
+
+.nytt-sidebar-topic:hover,
+.nytt-sidebar-resurfaced:hover {
+  color: var(--accent);
+}
+
+.nytt-sidebar-topic:last-of-type,
+.nytt-sidebar-resurfaced:last-of-type {
+  border-bottom: none;
+}
+
+.nytt-sidebar-topic-meta {
+  display: block;
+  font-family: var(--font-data);
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  margin-top: var(--sp-2xs);
+}
+
+.nytt-sidebar-resurfaced-title {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  line-height: 1.45;
+}
+
+/* ── Skeleton loading ── */
+
+.nytt-skeleton {
+  padding: var(--sp-md) 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.nytt-skeleton-line {
+  height: 0.875rem;
+  background: var(--rule);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--sp-sm);
+  animation: nytt-pulse 1.5s ease-in-out infinite;
+}
+
+.nytt-skeleton-line--short { width: 40%; }
+.nytt-skeleton-line--medium { width: 75%; }
+.nytt-skeleton-line--long { width: 90%; }
+
+@keyframes nytt-pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 768px) {
+  .nytt-grid {
+    grid-template-columns: 1fr;
+    column-gap: 1.5rem;
+  }
+
+  .nytt-anchor {
+    padding: var(--sp-md);
+  }
+
+  .nytt-anchor-stat strong {
+    font-size: 1.25rem;
+  }
+
+  .nytt-sidebar {
+    position: static;
+    border-top: 2px solid var(--rule-strong);
+    padding-top: var(--sp-xl);
+    margin-top: var(--sp-lg);
+  }
+}
+
+/* ── Touch targets ── */
+
+.nytt-item-title a,
+.nytt-sidebar-topic,
+.nytt-sidebar-resurfaced {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.nytt-item-title a {
+  display: inline;
+}
+
+.nytt-sidebar-topic,
+.nytt-sidebar-resurfaced {
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 44px;
+}
