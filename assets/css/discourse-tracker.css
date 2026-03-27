@@ -8,7 +8,7 @@
 
 #discourse-tracker {
   padding: 0;
-  font-family: var(--font);
+  font-family: var(--font-body);
   color: var(--text);
 }
 
@@ -21,7 +21,7 @@
   justify-content: center;
   margin-bottom: 1rem;
   font-size: 0.75rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
 }
 
 .dt-legend-item {
@@ -65,7 +65,7 @@
 
 .dt-card-summary {
   font-size: 0.82rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
   margin: 0;
   line-height: 1.5;
   display: -webkit-box;
@@ -92,7 +92,7 @@
 
 .dt-card-count {
   font-size: 0.75rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
   white-space: nowrap;
 }
 
@@ -137,13 +137,13 @@
 .source-stundin { background: #d97706; color: #fff; }
 .source-frettabladid { background: #4b5563; color: #fff; }
 .source-silfrid { background: #991b1b; color: #fff; }
-.source-other { background: var(--grey); color: #fff; }
+.source-other { background: var(--v-unverifiable); color: #fff; }
 
 /* ── Panel show participant badge ───────────────────────────────── */
 
 .dt-participants-badge {
   font-size: 0.78rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
   white-space: nowrap;
 }
 
