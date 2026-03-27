@@ -25,6 +25,12 @@ module.exports = function () {
 
   const reportSourceLookup = trackerUtils.createNewsSourceLookup(claims);
 
+  // Build URL→slug lookup so resurfaced claims can link to the report
+  const reportSlugByUrl = {};
+  for (const r of reports) {
+    if (r.article_url) reportSlugByUrl[r.article_url] = r.slug;
+  }
+
   const now = new Date();
   const todayStr = now.toISOString().slice(0, 10);
 
@@ -84,12 +90,19 @@ module.exports = function () {
   // Limit to most recent 15 substantive claims for the feed
   for (const claim of newClaims.slice(0, 15)) {
     const date = (claim.created_at || "").slice(0, 10);
+    // Link to the report where this claim first appeared, or the topic page
+    const firstSighting = (claim.sightings || [])[claim.sightings.length - 1];
+    const claimReportSlug = firstSighting ? reportSlugByUrl[firstSighting.source_url] : null;
+    const claimHref = claimReportSlug
+      ? `/umraedan/${claimReportSlug}/`
+      : `/malefni/${(claim.category || "").replace(/_/g, "-")}/`;
+
     items.push({
       type: "fullyrding",
       typeLabel: "Ný fullyrðing",
       date,
       title: claim.canonical_text_is,
-      href: `/fullyrdingar/#${claim.claim_slug}`,
+      href: claimHref,
       meta: [
         claim.category ? taxonomy.categoryLabels[claim.category] || claim.category : null,
         claim.sighting_count ? `${claim.sighting_count} tilvísanir` : null,
@@ -159,12 +172,19 @@ module.exports = function () {
     const gapDays = (new Date(latest) - new Date(prev)) / 86400000;
     if (gapDays < 14) continue;
 
+    // Link to the report that resurfaced this claim, if we have it
+    const latestSighting = sightings.find((s) => s.source_date === latest);
+    const reportSlug = latestSighting ? reportSlugByUrl[latestSighting.source_url] : null;
+    const href = reportSlug
+      ? `/umraedan/${reportSlug}/`
+      : `/malefni/${(claim.category || "").replace(/_/g, "-")}/`;
+
     items.push({
       type: "endurvakin",
       typeLabel: "Endurvakin",
       date: latest,
       title: claim.canonical_text_is,
-      href: `/fullyrdingar/#${claim.claim_slug}`,
+      href,
       meta: [
         `${Math.round(gapDays)} daga hlé`,
         claim.category ? taxonomy.categoryLabels[claim.category] || claim.category : null,
