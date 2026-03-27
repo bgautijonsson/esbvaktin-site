@@ -9,7 +9,7 @@
 
 #speeches-tracker {
   padding: 0;
-  font-family: var(--font);
+  font-family: var(--font-body);
   color: var(--text);
 }
 
@@ -22,9 +22,9 @@
   gap: 1rem 1.5rem;
   padding: 0.9rem 1rem;
   margin-bottom: 1rem;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
+  background: var(--bg-surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-md);
 }
 
 .st-period-copy {
@@ -42,13 +42,13 @@
 
 .st-period-title {
   margin: 0 0 0.35rem;
-  font-family: var(--font-heading);
+  font-family: var(--font-display);
   font-size: 1.1rem;
 }
 
 .st-period-note {
   margin: 0;
-  color: var(--text-secondary);
+  color: var(--text-muted);
   line-height: 1.5;
 }
 
@@ -67,8 +67,8 @@
   min-width: 8.5rem;
   padding: 0.55rem 0.75rem;
   background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-md);
   color: var(--text);
   cursor: pointer;
   transition: border-color var(--transition), background var(--transition), color var(--transition);
@@ -79,7 +79,7 @@
 }
 
 .st-period-button.is-active {
-  background: var(--bg-alt);
+  background: var(--bg-surface);
   border-color: var(--accent);
 }
 
@@ -90,7 +90,7 @@
 
 .st-period-button-count {
   font-size: 0.74rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
 }
 
 .st-period-button.is-active .st-period-button-count {
@@ -104,9 +104,9 @@
   align-items: center;
   gap: 0.75rem;
   padding: 0.5rem 0.75rem;
-  background: var(--bg-card);
+  background: var(--bg-surface);
   border: 1px solid var(--accent);
-  border-radius: var(--radius);
+  border-radius: var(--radius-md);
   font-size: 0.85rem;
   margin-bottom: 1rem;
 }
@@ -126,7 +126,7 @@
 }
 
 .st-clear-speaker:hover {
-  background: var(--bg-alt);
+  background: var(--bg-surface);
 }
 
 /* ── Results ─────────────────────────────────────────────────────── */
@@ -142,7 +142,7 @@
 .st-expand-scope {
   padding: 0.55rem 0.9rem;
   border: 1px solid var(--accent);
-  border-radius: var(--radius);
+  border-radius: var(--radius-md);
   background: transparent;
   color: var(--accent);
   font-weight: 600;
@@ -150,7 +150,7 @@
 }
 
 .st-expand-scope:hover {
-  background: var(--bg-alt);
+  background: var(--bg-surface);
 }
 
 /* ── Session badge ───────────────────────────────────────────────── */
@@ -161,9 +161,9 @@
   border-radius: var(--radius-sm);
   font-size: 0.7rem;
   font-weight: 600;
-  background: var(--bg-alt);
-  color: var(--text-secondary);
-  border: 1px solid var(--border);
+  background: var(--bg-surface);
+  color: var(--text-muted);
+  border: 1px solid var(--rule);
   white-space: nowrap;
 }
 
@@ -194,7 +194,7 @@
   flex-wrap: wrap;
   gap: 0.35rem;
   font-size: 0.75rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
 }
 
 .st-speaker-name {
@@ -215,7 +215,7 @@
   margin-top: auto;
   padding-top: 0.5rem;
   font-size: 0.75rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
 }
 
 .st-card-stat {

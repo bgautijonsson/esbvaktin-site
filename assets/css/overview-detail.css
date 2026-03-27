@@ -39,12 +39,12 @@
 
 .od-section {
   padding-top: 1.5rem;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid var(--rule);
   margin-top: 0.5rem;
 }
 
 .od-section-label {
-  font-family: var(--font-heading);
+  font-family: var(--font-display);
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -103,7 +103,7 @@
   background: none;
   border: none;
   padding: 0;
-  font-family: var(--font);
+  font-family: var(--font-body);
 }
 
 .od-editorial-toggle:hover {
@@ -120,8 +120,8 @@
   gap: 1rem;
   margin-bottom: 1.5rem;
   padding: 1rem;
-  background: var(--surface);
-  border: 1px solid var(--border);
+  background: var(--bg-surface);
+  border: 1px solid var(--rule);
   border-radius: 8px;
 }
 
@@ -186,7 +186,7 @@
 
 .od-snapshot-topic-track {
   height: 5px;
-  background: var(--border);
+  background: var(--rule);
   border-radius: 3px;
   overflow: hidden;
 }
@@ -227,8 +227,8 @@
 /* ── Fact card ── */
 
 .od-fact-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
+  background: var(--bg-surface);
+  border: 1px solid var(--rule);
   border-left: 3px solid var(--green, #22c55e);
   border-radius: 0 8px 8px 0;
   overflow: hidden;
@@ -264,9 +264,9 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  background: var(--bg-alt, var(--bg));
+  background: var(--bg-surface);
   color: var(--text-muted);
-  border: 1px solid var(--border);
+  border: 1px solid var(--rule);
   border-radius: var(--radius-sm);
 }
 
@@ -286,7 +286,7 @@
 
 .od-fact-card .ct-expand-icon {
   font-size: 0.8rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
   transition: transform var(--transition);
 }
 
@@ -299,7 +299,7 @@
   align-items: center;
   gap: 0.35rem;
   font-size: 0.75rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
 }
 
 .od-fact-card .ct-confidence-bar {
@@ -328,12 +328,12 @@
   padding: 0 0.9rem 0.65rem;
   font-size: 0.88rem;
   line-height: 1.5;
-  color: var(--text-secondary);
+  color: var(--text-muted);
 }
 
 .od-fact-detail:first-child {
   padding-top: 0.35rem;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid var(--rule);
 }
 
 .od-fact-detail strong {
@@ -352,7 +352,7 @@
 /* Caveat callout — slightly different background to draw attention */
 
 .od-fact-caveat {
-  background: var(--bg-alt, var(--bg));
+  background: var(--bg-surface);
   margin: 0 0.5rem 0.65rem;
   padding: 0.5rem 0.65rem;
   border-radius: 6px;
@@ -407,7 +407,7 @@
 
 .od-topic-bar-track {
   height: 6px;
-  background: var(--border);
+  background: var(--rule);
   border-radius: 3px;
   overflow: hidden;
 }
@@ -432,8 +432,8 @@
 
 .od-claims-alert {
   padding: 0.55rem 0.8rem;
-  background: color-mix(in srgb, var(--verdict-misleading, #7c3aed) 8%, transparent);
-  border: 1px solid color-mix(in srgb, var(--verdict-misleading, #7c3aed) 25%, transparent);
+  background: color-mix(in srgb, var(--v-misleading, #7c3aed) 8%, transparent);
+  border: 1px solid color-mix(in srgb, var(--v-misleading, #7c3aed) 25%, transparent);
   border-radius: var(--radius-sm, 4px);
   font-size: 0.85rem;
   margin-bottom: 0.75rem;
@@ -463,8 +463,8 @@
 
 .od-claim-card {
   background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-md);
   overflow: hidden;
   transition: border-color var(--transition), background var(--transition);
 }
@@ -523,7 +523,7 @@
   align-items: center;
   gap: 0.35rem;
   font-size: 0.75rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
 }
 
 .od-claim-card .ct-confidence-bar {
@@ -539,7 +539,7 @@
 
 .od-claim-card .ct-expand-icon {
   font-size: 0.8rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
   transition: transform var(--transition);
 }
 
@@ -562,12 +562,12 @@
   padding: 0 0.9rem 0.65rem;
   font-size: 0.88rem;
   line-height: 1.5;
-  color: var(--text-secondary);
+  color: var(--text-muted);
 }
 
 .od-claim-card .ct-detail:first-child {
   padding-top: 0.35rem;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid var(--rule);
 }
 
 .od-claim-card .ct-detail strong {
@@ -595,8 +595,8 @@
   flex-direction: column;
   gap: 0.1rem;
   padding: 0.3rem 0.5rem;
-  background: var(--bg-alt);
-  border: 1px solid var(--border);
+  background: var(--bg-surface);
+  border: 1px solid var(--rule);
   border-radius: var(--radius-sm);
 }
 
@@ -613,14 +613,14 @@
 
 .od-claim-card .ct-sighting-meta {
   font-size: 0.72rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
 }
 
 /* ── Deep link to Fullyrðingar ────────────────────────────────── */
 
 .od-claim-deeplink {
   padding-top: 0.35rem;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid var(--rule);
 }
 
 .od-claim-deeplink a {
@@ -658,9 +658,9 @@
   flex-direction: column;
   gap: 0.3rem;
   padding: 0.85rem;
-  border: 1px solid var(--border);
+  border: 1px solid var(--rule);
   border-left: 2px solid hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 45%);
-  background: var(--surface);
+  background: var(--bg-surface);
   border-radius: 8px;
   text-decoration: none;
   color: var(--text);
@@ -717,14 +717,14 @@
 .od-entity-stat {
   font-size: 0.76rem;
   color: var(--text-muted);
-  background: var(--bg-alt, var(--bg));
+  background: var(--bg-surface);
   padding: 0.12rem 0.4rem;
   border-radius: 4px;
 }
 
 .od-entity-topics {
   font-size: 0.72rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
   background: none;
   padding: 0;
 }
@@ -753,8 +753,8 @@
   flex-direction: column;
   gap: 0.3rem;
   padding: 0.85rem;
-  border: 1px solid var(--border);
-  background: var(--surface);
+  border: 1px solid var(--rule);
+  background: var(--bg-surface);
   border-radius: 8px;
   text-decoration: none;
   color: var(--text);
@@ -853,8 +853,8 @@
 .od-article-speaker {
   display: inline-block;
   padding: 0.05rem 0.35rem;
-  background: var(--bg-alt, var(--bg));
-  border: 1px solid var(--border);
+  background: var(--bg-surface);
+  border: 1px solid var(--rule);
   border-radius: 3px;
   font-size: 0.7rem;
   color: var(--text-muted);
