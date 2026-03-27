@@ -45,24 +45,12 @@
       <nav class="site-nav" aria-label="Aðalvalmynd">
         <a href="/" class="site-logo">{{ site.title }}</a>
         <div id="site-menu" class="site-menu">
-          <div class="site-menu-group">
-            <p class="nav-group-label">Gagnasíður</p>
-            <ul class="nav-list nav-list--primary">
-              {% for item in navigation.primary %}
-              {% set isCurrent = page.url | navCurrent(item) %}
-              <li><a href="{{ item.href }}"{% if isCurrent %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
-              {% endfor %}
-            </ul>
-          </div>
-          <div class="site-menu-group site-menu-group--utility">
-            <p class="nav-group-label">Yfirlit og hjálp</p>
-            <ul class="nav-list nav-list--utility">
-              {% for item in navigation.utility %}
-              {% set isCurrent = page.url | navCurrent(item) %}
-              <li><a href="{{ item.href }}"{% if isCurrent %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
-              {% endfor %}
-            </ul>
-          </div>
+          <ul class="nav-list">
+            {% for item in navigation.primary %}
+            {% set isCurrent = page.url | navCurrent(item) %}
+            <li><a href="{{ item.href }}"{% if isCurrent %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+            {% endfor %}
+          </ul>
         </div>
         <div class="nav-controls">
           <button class="nav-toggle" type="button" aria-label="Opna valmynd" title="Opna valmynd" aria-controls="site-menu" aria-expanded="false">
