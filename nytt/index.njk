@@ -8,17 +8,18 @@ extra_css: /assets/css/nytt.css
 
 <section class="nytt-hero">
   <h1 class="nytt-heading">Hvað er nýtt</h1>
+  <p class="nytt-deck">Yfirlit yfir nýjustu greiningar, fullyrðingar og málefni í ESB-umræðunni — raðað eftir dögum.</p>
 </section>
 
-{# ── Anchor slab — counts updated client-side for "since last visit" ── #}
-<div class="nytt-anchor" aria-live="polite" id="nytt-anchor">
-  <div class="nytt-anchor-counts" id="nytt-counts">
+{# ── Anchor slab ── #}
+<div class="nytt-anchor">
+  <div class="nytt-anchor-counts">
     {% if nytt.counts.reports %}<span class="nytt-anchor-stat"><strong>{{ nytt.counts.reports }}</strong> {{ "ný greining" if nytt.counts.reports == 1 else "nýjar greiningar" }}</span>{% endif %}
     {% if nytt.counts.claims %}<span class="nytt-anchor-stat"><strong>{{ nytt.counts.claims }}</strong> {{ "ný fullyrðing" if nytt.counts.claims == 1 else "nýjar fullyrðingar" }}</span>{% endif %}
     {% if nytt.counts.spiking %}<span class="nytt-anchor-stat"><strong>{{ nytt.counts.spiking }}</strong> {{ "málefni" if nytt.counts.spiking == 1 else "málefni" }} í brennidepli</span>{% endif %}
     {% if nytt.counts.resurfaced %}<span class="nytt-anchor-stat"><strong>{{ nytt.counts.resurfaced }}</strong> {{ "endurvakin fullyrðing" if nytt.counts.resurfaced == 1 else "endurvaknar fullyrðingar" }}</span>{% endif %}
   </div>
-  <p class="nytt-anchor-since" id="nytt-since">Síðustu 7 daga</p>
+  <p class="nytt-anchor-since">Síðustu 7 daga</p>
 </div>
 
 {# ── Main content grid ── #}
@@ -58,13 +59,11 @@ extra_css: /assets/css/nytt.css
       {% endfor %}
     </ol>
 
-    {# ── Empty / caught-up states (hidden by default, shown via JS) ── #}
-    <div class="nytt-empty" id="nytt-empty" hidden>
-      <p>Ekkert nýtt síðustu 7 daga. <a href="/vikuyfirlit/">Vikuyfirlitið &rarr;</a></p>
+    {% if nytt.grouped | length == 0 %}
+    <div class="nytt-empty">
+      <p>Ekkert nýtt síðustu 7 daga.</p>
     </div>
-    <div class="nytt-caught-up" id="nytt-caught-up" hidden>
-      <p>&check; Þú ert í takt. Nýtt vikuyfirlit birtist á mánudegi.</p>
-    </div>
+    {% endif %}
   </div>
 
   {# ── Sidebar: Topic pulse ── #}
@@ -99,5 +98,3 @@ extra_css: /assets/css/nytt.css
     {% endfor %}
   </aside>
 </div>
-
-<script src="/assets/js/nytt-client.js" defer></script>
