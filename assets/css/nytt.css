@@ -162,7 +162,15 @@ h3.nytt-item-title {
   line-height: 1.5;
 }
 
-/* ── Verdict stamps ── */
+/* ── Verdict bar (compact, for reports) ── */
+
+.nytt-verdict-bar {
+  height: 0.5rem;
+  margin-bottom: var(--sp-xs);
+  border-radius: 2px;
+}
+
+/* ── Verdict stamps (for individual claims) ── */
 
 .nytt-verdict {
   font-family: var(--font-ui);

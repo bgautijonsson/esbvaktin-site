@@ -67,10 +67,7 @@ module.exports = function () {
         enriched.article_source,
         `${report.claim_count || 0} fullyrðingar`,
       ].filter(Boolean).join(" · "),
-      verdict: dominantVerdict(report.verdict_counts),
-      verdictLabel: dominantVerdict(report.verdict_counts)
-        ? taxonomy.verdictLabel(dominantVerdict(report.verdict_counts))
-        : null,
+      verdictCounts: report.verdict_counts || {},
       category: report.dominant_category,
       categoryLabel: report.dominant_category
         ? taxonomy.categoryLabels[report.dominant_category] || report.dominant_category

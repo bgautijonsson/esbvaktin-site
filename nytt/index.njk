@@ -35,8 +35,28 @@ extra_css: /assets/css/nytt.css
           <li class="nytt-item nytt-item--{{ item.type }}">
             <span class="nytt-type-label">{{ item.typeLabel }}</span>
             <h3 class="nytt-item-title"><a href="{{ item.href }}">{{ item.title }}</a></h3>
+            {% if item.type == "greining" and item.verdictCounts %}
+            {% set vc = item.verdictCounts %}
+            {% set vtotal = (vc.supported or 0) + (vc.partially_supported or 0) + (vc.unverifiable or 0) + (vc.unsupported or 0) + (vc.misleading or 0) %}
+            {% if vtotal > 0 %}
+            <div class="nytt-verdict-bar report-verdict-bar" role="img" aria-label="Dreifing niðurstaðna">
+              {% set verdictOrder = ["supported", "partially_supported", "unverifiable", "unsupported", "misleading"] %}
+              {% for v in verdictOrder %}
+                {% set count = vc[v] or 0 %}
+                {% if count %}
+                  {% set pct = (count / vtotal * 100) | round(1) %}
+                  <span class="report-bar-seg home-verdict-bg--{{ v | replace("partially_supported", "partial") }}"
+                        style="width:{{ pct }}%"
+                        title="{{ v | verdictLabel }}: {{ count }}">
+                    {%- if pct >= 20 %}{{ pct | round }}%{% endif -%}
+                  </span>
+                {% endif %}
+              {% endfor %}
+            </div>
+            {% endif %}
+            {% endif %}
             <div class="nytt-item-meta">
-              {% if item.verdict %}
+              {% if item.verdict and item.type != "greining" %}
               <span class="nytt-verdict nytt-verdict--{{ item.verdict | replace("partially_supported", "partial") }}" aria-label="{{ item.verdictLabel }}">{{ item.verdictLabel }}</span>
               {% endif %}
               {% if item.categoryLabel and item.type == "greining" %}
