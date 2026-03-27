@@ -8,7 +8,7 @@
 /* ── Layout ──────────────────────────────────────────────────────── */
 
 #entity-tracker {
-  font-family: var(--font);
+  font-family: var(--font-body);
   color: var(--text);
 }
 
@@ -26,9 +26,9 @@
   flex-direction: column;
   gap: 0.3rem;
   background: var(--bg);
-  border: 1px solid var(--border);
+  border: 1px solid var(--rule);
   border-left: 3px solid hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 45%);
-  border-radius: var(--radius);
+  border-radius: var(--radius-md);
   padding: 0.95rem;
   transition: border-color var(--transition), background var(--transition);
 }
@@ -85,7 +85,7 @@
 
 .et-card-role {
   font-size: 0.85rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
   margin: 0;
 }
 
@@ -94,16 +94,16 @@
 .et-type-badge {
   display: inline-block;
   padding: 0.1rem 0.4rem;
-  border: 1px solid var(--border);
+  border: 1px solid var(--rule);
   border-radius: var(--radius-sm);
   font-size: 0.7rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
   white-space: nowrap;
 }
 
 .et-type-party { border-color: var(--accent); color: var(--accent); }
-.et-type-institution { border-color: var(--green); color: var(--green); }
-.et-type-individual { border-color: var(--yellow); color: var(--yellow); }
+.et-type-institution { border-color: var(--v-supported); color: var(--v-supported); }
+.et-type-individual { border-color: var(--v-partial); color: var(--v-partial); }
 
 /* ── Party pill (sits above stretched link) ──────────────────────── */
 
@@ -141,8 +141,8 @@
 
 .et-card-stat {
   font-size: 0.76rem;
-  color: var(--text-secondary);
-  background: var(--bg-alt);
+  color: var(--text-muted);
+  background: var(--bg-surface);
   padding: 0.12rem 0.4rem;
   border-radius: var(--radius-sm);
 }
@@ -166,7 +166,7 @@
 
 .et-section-count {
   font-weight: 400;
-  color: var(--text-secondary);
+  color: var(--text-muted);
   font-size: 0.9rem;
 }
 
@@ -181,8 +181,8 @@
 }
 
 .et-pager-btn {
-  background: var(--bg-alt);
-  border: 1px solid var(--border);
+  background: var(--bg-surface);
+  border: 1px solid var(--rule);
   border-radius: var(--radius-sm);
   padding: 0.35rem 0.75rem;
   font-size: 0.8rem;
@@ -194,7 +194,7 @@
 
 .et-pager-btn:hover:not(:disabled) {
   border-color: var(--accent);
-  background: var(--bg-card);
+  background: var(--bg-surface);
 }
 
 .et-pager-btn:disabled {
@@ -204,7 +204,7 @@
 
 .et-pager-info {
   font-size: 0.8rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
   white-space: nowrap;
 }
 
@@ -213,11 +213,11 @@
 .et-note {
   margin-top: 2rem;
   padding: 0.9rem 1rem;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
+  background: var(--bg-surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-md);
   font-size: 0.9rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
 }
 
 .et-note p { margin: 0; }
@@ -248,8 +248,8 @@
   flex-direction: column;
   gap: 0.25rem;
   padding: 1rem 1.25rem;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
+  background: var(--bg-surface);
+  border: 1px solid var(--rule);
   border-radius: var(--radius-lg);
   text-decoration: none;
   color: inherit;
@@ -269,7 +269,7 @@
 
 .cmp-gateway-desc {
   font-size: 0.85rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
   margin: 0;
 }
 

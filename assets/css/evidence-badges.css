@@ -10,7 +10,7 @@
   white-space: nowrap;
 }
 
-.ev-st-official_statistics { border-color: #3b82f6; color: #3b82f6; }
+.ev-st-official_statistics { border-color: var(--accent); color: var(--accent); }
 .ev-st-legal_text          { border-color: #8b5cf6; color: #8b5cf6; }
 .ev-st-academic_paper      { border-color: #10b981; color: #10b981; }
 .ev-st-expert_analysis     { border-color: #f59e0b; color: #f59e0b; }
@@ -27,16 +27,16 @@
   letter-spacing: 0.04em;
 }
 
-.ev-conf-high   { background: var(--green); color: #fff; }
-.ev-conf-medium { background: var(--yellow); color: #000; }
-.ev-conf-low    { background: var(--red); color: #fff; }
+.ev-conf-high   { background: var(--v-supported); color: #fff; }
+.ev-conf-medium { background: var(--v-partial); color: #000; }
+.ev-conf-low    { background: var(--error); color: #fff; }
 
 .ev-topic-tag {
   display: inline-block;
   padding: 0.1rem 0.4rem;
-  background: var(--bg-alt, #f1f5f9);
+  background: var(--bg-surface);
   border-radius: var(--radius-sm);
   font-size: 0.7rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
   white-space: nowrap;
 }

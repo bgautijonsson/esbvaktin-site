@@ -10,7 +10,7 @@
 
 .ev-stats {
   font-size: 0.85rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
   margin-bottom: 1.25rem;
 }
 
@@ -34,8 +34,8 @@
   display: block;
   padding: 0.95rem 1rem;
   background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-md);
   text-decoration: none;
   color: inherit;
   transition: background var(--transition), border-color var(--transition);
@@ -73,7 +73,7 @@
   gap: 0.4rem;
   flex-wrap: wrap;
   font-size: 0.75rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
 }
 
 .ev-card-source {
@@ -85,7 +85,7 @@
   gap: 0.35rem;
   margin-top: 0.35rem;
   font-size: 0.72rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
 }
 
 /* Badges: see evidence-badges.css (shared with detail pages) */
@@ -95,17 +95,17 @@
 .ev-note {
   margin-top: 2rem;
   font-size: 0.85rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
 }
 
 /* ── Dark mode ─────────────────────────────────────────────────────── */
 
 @media (prefers-color-scheme: dark) {
   .ev-topic-tag {
-    background: var(--bg-alt, #1e293b);
+    background: var(--bg-surface);
   }
 }
 
 [data-theme="dark"] .ev-topic-tag {
-  background: var(--bg-alt, #1e293b);
+  background: var(--bg-surface);
 }
