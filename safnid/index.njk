@@ -1,0 +1,23 @@
+---
+layout: base.njk
+title: Safnið
+description: Gagnasöfn ESB Vaktinar — raddir í umræðunni, heimildir og þingræður.
+extra_css: /assets/css/safnid.css
+---
+
+<section class="safnid-hero">
+  <h1 class="safnid-heading">Safnið</h1>
+  <p class="safnid-deck">Gagnasöfn ESB Vaktinar. Hér er hægt að skoða alla aðila í umræðunni, heimildir sem fullyrðingar byggja á og þingræður um ESB-málið.</p>
+</section>
+
+<div class="safnid-cards">
+  {% for stat in home.signal_stats %}
+  {% if stat.href == "/raddirnar/" or stat.href == "/heimildir/" or stat.href == "/thingraedur/" %}
+  <a href="{{ stat.href }}" class="safnid-card">
+    <span class="safnid-card-count">{{ stat.value | localeString }}</span>
+    <span class="safnid-card-label">{{ stat.label }}</span>
+    <span class="safnid-card-note">{{ stat.note }}</span>
+  </a>
+  {% endif %}
+  {% endfor %}
+</div>

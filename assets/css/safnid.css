@@ -1,0 +1,71 @@
+/* ── /safnid — Collection hub ── */
+
+.safnid-hero {
+  padding: var(--sp-xl) 0 var(--sp-lg);
+}
+
+h1.safnid-heading {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 500;
+  line-height: 1.12;
+  margin: 0;
+}
+
+.safnid-deck {
+  max-width: 56ch;
+  margin: var(--sp-sm) 0 0;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+.safnid-cards {
+  display: grid;
+  gap: 0;
+}
+
+.safnid-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--sp-xs) var(--sp-md);
+  padding: var(--sp-lg) 0;
+  border-bottom: 1px solid var(--rule);
+  text-decoration: none;
+  color: var(--text);
+  transition: background var(--transition);
+  min-height: 44px;
+}
+
+.safnid-card:first-child {
+  border-top: 3px solid var(--rule-strong);
+}
+
+.safnid-card:hover {
+  background: var(--bg-surface);
+  padding-left: var(--sp-md);
+  padding-right: var(--sp-md);
+  margin-left: calc(-1 * var(--sp-md));
+  margin-right: calc(-1 * var(--sp-md));
+}
+
+.safnid-card-count {
+  font-family: var(--font-data);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+.safnid-card-label {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.safnid-card-note {
+  flex-basis: 100%;
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
