@@ -10,8 +10,7 @@
   "summary": "Greindar 11 fullyrðingar. Niðurstöður: 4 ekki hægt að sannreyna, 4 stutt að hluta, 2 ekki stutt, 1 stutt af heimildum. Sjónarhorn: hallar á ESB-neikvæða hlið. Heildstæðni: 35%.",
   "capsule": "Verðbólga upp á 5,2 prósent í febrúar 2026 og háir stýrivextir eru raunverulegar staðreyndir sem gögn Hagstofunnar og Seðlabankans staðfesta. Áhugavert er þó að um 80 prósent íslenskra húsnæðislána eru verðtryggð — á þeim lánum eru vextir lægri en á óverðtryggðum en höfuðstóllinn hækkar með verðlagi, svo raunáhrif vaxtalækkana á greiðslubyrði eru flóknari en einfaldur prósentureikningur gefur til kynna. Þeir sem vilja kafa dýpra geta skoðað skýrslur Seðlabankans um uppbyggingu lánabaka heimilanna.",
   "verdict_counts": {
-    "supported": 1,
-    "unsupported": 1,
+    "supported": 2,
     "partially_supported": 5
   },
   "claim_count": 7,
@@ -74,28 +73,18 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "unsupported",
-      "explanation": "Fullyrðingin stangast beint á við heimildir. <a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a> staðfestir að Seðlabankinn hefur verið að lækka stýrivexti — úr 9,25% niður í 7,25% í mars 2026 — ekki hækka þá. Stýrivextir voru 7,25% í mars 2026 samkvæmt <a href=\"https://www.sedlabanki.is/\" title=\"Central Bank of Iceland; ECB; Eurostat HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-007</a> og <a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a>, ekki 7,5%. Fullyrðingin er röng bæði hvað varðar átt breytingarinnar (hækkun í stað lækkunar) og vaxtastigið (7,5% í stað 7,25%).",
-      "supporting_evidence": [],
-      "contradicting_evidence": [
+      "verdict": "supported",
+      "explanation": "Seðlabanki Íslands tilkynnti 18. mars 2026 hækkun stýrivaxta um 0,25 prósentur í 7,50%. Þetta var viðsnúningur frá fimm lækkunum í röð.",
+      "supporting_evidence": [
         {
-          "id": "CURRENCY-DATA-017",
-          "source_name": "Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar",
-          "source_url": "https://www.sedlabanki.is/peningastefna/vaxtaakvardir/"
-        },
-        {
-          "id": "CURR-DATA-007",
-          "source_name": "Central Bank of Iceland; ECB; Eurostat HICP",
-          "source_url": "https://www.sedlabanki.is/"
-        },
-        {
-          "id": "CURRENCY-DATA-015",
-          "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
-          "source_url": "https://www.sedlabanki.is/peningastefna/vaxtaakvardir/"
+          "id": "CURR-DATA-698",
+          "source_name": "CURR-DATA-698",
+          "source_url": null
         }
       ],
+      "contradicting_evidence": [],
       "missing_context": "Ef greinin var birt eftir mars 2026 er hugsanlegt að ný vaxtaákvörðun hafi átt sér stað sem heimildir ná ekki til. Þó benda allar heimildir til áframhaldandi lækkunar, ekki hækkunar — spár í <a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a> miðuðu við frekari lækkanir niður í ~5% árið 2027.",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "speakers": [
         {
           "name": "Seðlabanki Íslands",
