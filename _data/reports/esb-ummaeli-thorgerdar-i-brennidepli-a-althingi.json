@@ -10,7 +10,11 @@
   "summary": "Greindar 11 fullyrðingar. Niðurstöður: 7 stutt að hluta, 4 ekki hægt að sannreyna. Sjónarhorn: hlutlaus en ófullnægjandi. Heildstæðni: 35%.",
   "capsule": "Þorgerður Katrín staðfesti á Alþingi að samningaviðræður við ESB séu ekki hafnar og að nefndarmenn í utanríkismálanefnd hafi ítrekað óskað eftir upplýsingum um fundi ráðamanna með ESB-fulltrúum — þetta er vel skjalfest í þingfundargerðum. Áhugavert samhengi vantar þó í umræðurnar: írska fordæmið sýnir að þótt Írland eigi aðgang að fiskveiðikommissarseti í Brussel fékk landið aðeins um 3,5% af heildarkvótum ESB í eigin lögsögu þrátt fyrir að lögsagan nái yfir um 12% af sjávarsvæðum sambandsins. Kommissarsæti er pólitískur samningur, ekki löglegur réttur — og hvað hann þýðir í framkvæmd er eitthvað sem þess virðist vera vert að kanna nánar.",
   "verdict_counts": {
-    "partially_supported": 7
+    "partially_supported": 6,
+    "unverifiable": 1
+  },
+  "epistemic_counts": {
+    "hearsay": 1
   },
   "claim_count": 7,
   "dominant_category": "sovereignty",
@@ -86,10 +90,10 @@
         "category": "fisheries",
         "claim_type": "opinion",
         "confidence": 0.9,
-        "epistemic_type": "prediction"
+        "epistemic_type": "hearsay"
       },
-      "verdict": "partially_supported",
-      "explanation": "<a href=\"https://commission.europa.eu/about/organisation/college-commissioners_en\" title=\"European Commission — College of Commissioners; EUR-Lex — Commission composition\" target=\"_blank\" rel=\"noopener\">FISH-DATA-033</a> staðfestir að lítil ríki hafi fengið sjávarútvegseignasafnið — Kýpur fékk kommissarastöðuna 2024 og Malta 2014–2019. Ísland hefði sterka röksemd vegna stærðar sjávarútvegs síns. Hins vegar er engin sáttmálaákvæði sem tryggir tilteknu ríki ákveðna stöðu; forseti framkvæmdastjórnarinnar skipar eignasöfn að eigin geðþótta. Fullyrðingin um að þetta «kæmi í hlut Íslendinga» er of afgerandi — réttara væri að Ísland hefði góða möguleika en enga tryggingu.",
+      "verdict": "unverifiable",
+      "explanation": "Fullyrðingin byggir á frásögnum þriggja ónafngreindra fundargesta sem vitnuðu í ráðherrann við Morgunblaðið. Þorgerður Katrín neitaði þessu sjálf á fundi utanríkismálanefndar og sagði ummælin hafa verið létt vangaveltur Norðmanna sem hefðu verið settar fram í gríni.",
       "supporting_evidence": [
         {
           "id": "FISH-DATA-033",
@@ -99,7 +103,7 @@
       ],
       "contradicting_evidence": [],
       "missing_context": "<a href=\"https://commission.europa.eu/about/organisation/college-commissioners_en\" title=\"European Commission — College of Commissioners; EUR-Lex — Commission composition\" target=\"_blank\" rel=\"noopener\">FISH-DATA-033</a> bendir skýrt á að engin sáttmálaákvæði tryggja tilteknu ríki ákveðið eignasafn. Forseti framkvæmdastjórnarinnar ráðstafar stöðunum og tekur tillit til reynslu og forgangsröðunar hvers ríkis, en endanleg ákvörðun er hans/hennar. Einnig vantar staðfestingu á að Þorgerður Katrín hafi í raun sagt þetta — fullyrðingin er byggð á sögn fundargestanna.",
-      "confidence": 0.7428455999999999,
+      "confidence": 0.5,
       "speakers": [
         {
           "name": "Þorgerður Katrín Gunnarsdóttir",
@@ -369,7 +373,8 @@
       "attribution_type": "paraphrased",
       "claim_count": 3,
       "verdicts": {
-        "partially_supported": 3
+        "partially_supported": 2,
+        "unverifiable": 1
       },
       "stance": "pro_eu",
       "slug": "thorgerdur-katrin-gunnarsdottir",
@@ -433,7 +438,7 @@
       "attribution_type": "quoted",
       "claim_count": 1,
       "verdicts": {
-        "partially_supported": 1
+        "unverifiable": 1
       },
       "stance": "neutral",
       "slug": "thrir-fundargestir",
