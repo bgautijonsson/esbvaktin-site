@@ -351,12 +351,12 @@ evidence_preview: true
     {% for item in entity.claims %}
     <details class="report-claim report-claim--{{ item.verdict | replace("partially_supported", "partial") }}">
       <summary class="report-claim-header">
-        <span class="ct-verdict-pill verdict-{{ item.verdict | replace("partially_supported", "partial") }}" title="{{ item.verdict | verdictDescription }}">
-          {{ item.verdict | verdictLabel(item.epistemic_type) }}
-        </span>
         {% set eType = item.epistemic_type or "factual" %}
+        <span class="ct-verdict-pill verdict-{{ item.verdict | replace("partially_supported", "partial") }}" title="{{ item.verdict | verdictDescription(eType) }}">
+          {{ item.verdict | verdictLabel(eType) }}
+        </span>
         {% if eType != "factual" %}
-        <span class="ct-epistemic-badge epistemic-{{ eType }}">{{ eType | epistemicTypeLabel }}</span>
+        <span class="ct-epistemic-badge epistemic-{{ eType }}" title="{{ eType | epistemicTypeDescription }}">{{ eType | epistemicTypeLabel }}</span>
         {% endif %}
         <span class="report-claim-title">{{ item.claim_text }}</span>
         <span class="ed-attr-badge ed-attr-{{ item.attribution }}">{{ item.attribution | attributionLabel }}</span>

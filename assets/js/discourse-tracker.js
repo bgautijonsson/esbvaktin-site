@@ -28,9 +28,11 @@
     : (document.currentScript?.dataset.base || "/assets/data");
   const JSON_URL = `${DATA_BASE}/reports.json`;
   const VERDICT_LABELS = (TAXONOMY.verdictLabels && TAXONOMY.verdictLabels.factual) || {};
-  const VERDICT_DESCRIPTIONS = TAXONOMY.verdictDescriptions || {};
+  const VERDICT_DESCRIPTIONS = (TAXONOMY.verdictDescriptions && TAXONOMY.verdictDescriptions.factual) || TAXONOMY.verdictDescriptions || {};
   const CATEGORY_LABELS = TAXONOMY.categoryLabels || {};
   const VERDICT_CLASSES = TAXONOMY.verdictClasses || {};
+  const EPISTEMIC_TYPE_LABELS = TAXONOMY.epistemicTypeLabels || {};
+  const EPISTEMIC_TYPE_DESCRIPTIONS = TAXONOMY.epistemicTypeDescriptions || {};
 
   const VERDICT_ORDER = [
     "supported",
@@ -39,6 +41,23 @@
     "misleading",
     "unsupported",
   ];
+
+  // Normalize inconsistent source names from legacy data
+  const SOURCE_ALIASES = {
+    "ruv": "RÚV",
+    "dv": "DV",
+    "vb": "Viðskiptablaðið",
+    "Bjorn Bjarnason": "Björn Bjarnason",
+    "bjorn_is": "Björn Bjarnason",
+    "bjorn.blog.is": "Björn Bjarnason",
+    "blog_is": "Blog.is",
+    "blogis": "Blog.is",
+    "stjornmalin": "Stjórnmálin",
+    "Stjornmalin": "Stjórnmálin",
+  };
+  function normalizeSource(source) {
+    return SOURCE_ALIASES[source] || source;
+  }
 
   const SOURCE_CLASSES = {
     "Vísir": "source-visir",
@@ -86,6 +105,7 @@
       return Array.isArray(reports)
         ? reports.map((report) => ({
             ...report,
+            article_source: normalizeSource(report.article_source || ""),
             summary: normalizeReportSummary(report.summary),
           }))
         : [];
@@ -326,6 +346,19 @@
     el.textContent = `Sýni ${visibleCount} af ${totalCount} greiningum.`;
   }
 
+  function renderEpistemicBadges(counts) {
+    if (!counts) return "";
+    const badges = ["prediction", "counterfactual", "hearsay"]
+      .filter((type) => counts[type])
+      .map((type) => {
+        const label = EPISTEMIC_TYPE_LABELS[type] || type;
+        const desc = EPISTEMIC_TYPE_DESCRIPTIONS[type] || "";
+        return `<span class="ct-epistemic-badge epistemic-${type}" title="${escapeHtml(desc)}">${escapeHtml(label)}: ${counts[type]}</span>`;
+      })
+      .join("");
+    return badges ? `<span class="dt-epistemic-counts">${badges}</span>` : "";
+  }
+
   function renderReportCard(report) {
     const cardId = `dt-report-${report.slug}`;
     const sourceClass = SOURCE_CLASSES[report.article_source] || "source-other";
@@ -386,7 +419,7 @@
         </div>
         ${report.capsule ? `<p class="dt-card-summary">${escapeHtml(report.capsule)}</p><span class="dt-card-ai-tag">Samantekt gervigreindar</span>` : report.summary ? `<p class="dt-card-summary">${escapeHtml(report.summary)}</p>` : ""}
         <div class="dt-card-footer">
-          <span class="dt-card-count">${report.claim_count} fullyrðingar</span>
+          <span class="dt-card-count">${report.claim_count} fullyrðingar</span>${renderEpistemicBadges(report.epistemic_counts)}
           <div class="dt-verdict-bar">${verdicts}</div>
         </div>
       </div>

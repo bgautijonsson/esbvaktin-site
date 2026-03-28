@@ -53,6 +53,24 @@ Fullyrðingum er skipt í fimm trúverðugleikaflokka:
 - **Þarfnast samhengis** — fullyrðingin er ekki röng í sjálfu sér en heimildir sýna mikilvægt samhengi sem vantar
 - **Heimildir vantar** — við höfum ekki enn heimildir til að meta þessa fullyrðingu
 
+### Tegundir fullyrðinga
+
+Flestar fullyrðingar eru staðreyndir sem hægt er að bera beint saman við gögn. En umræðan felur einnig í sér spár, tilgátur og orðsagnir sem krefjast annars konar mats. Kerfið flokkar allar fullyrðingar í fjóra flokka:
+
+- **Staðreynd** — fullyrðing um atburð, tölu eða ástand sem hægt er að staðfesta. Þetta er langstærstur hluti fullyrðinga.
+- **Spá** — fullyrðing um framtíðina (t.d. „ef aðild næðist myndi..."). Mat byggir á gæðum rökfærslu og samstöðu heimilda, ekki á því hvort spáin „rætist" — enginn getur vitað það fyrirfram.
+- **Tilgáta** — fullyrðing um hvað hefði gerst ef aðstæður væru öðruvísi (t.d. „ef Ísland hefði gengið í ESB árið 2009..."). Metin á sama hátt og spár.
+- **Orðsögn** — fullyrðing sem vísar í ónafngreinda heimild sem ekki er hægt að staðfesta. Birtist á síðunni með viðvörun en er ekki metin.
+
+Spár og tilgátur fá aðlöguð úrskurðarheiti sem endurspegla eðli matsins:
+
+| Merking | Staðreyndir | Spár og tilgátur |
+|:--|:--|:--|
+| Stutt af heimildum | Staðfest | Víðtæk samstaða |
+| Stutt að hluta | Að hluta staðfest | Nokkur stoð |
+| Ekki stutt | Óstutt | Órökstudd |
+| Vantar samhengi | Þarfnast samhengis | Ofeinföldun |
+| Ekki metið | Heimildir vantar | Heimildir vantar |
 
 ## Sjálfbatnandi kerfi
 

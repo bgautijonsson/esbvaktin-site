@@ -121,9 +121,13 @@ evidence_preview: true
       {# ── Clickable header (expand/collapse) ── #}
       <div class="od-fact-header" role="button" tabindex="0" aria-expanded="false">
         <div class="od-fact-header-top">
-          <span class="ct-verdict-pill verdict-{{ fact.verdict | replace('partially_supported', 'partial') }}" title="{{ fact.verdict | verdictDescription }}">
-            {{ fact.verdict | verdictLabel(fact.epistemic_type) }}
+          {% set factEType = fact.epistemic_type or "factual" %}
+          <span class="ct-verdict-pill verdict-{{ fact.verdict | replace('partially_supported', 'partial') }}" title="{{ fact.verdict | verdictDescription(factEType) }}">
+            {{ fact.verdict | verdictLabel(factEType) }}
           </span>
+          {% if factEType != "factual" %}
+          <span class="ct-epistemic-badge epistemic-{{ factEType }}" title="{{ factEType | epistemicTypeDescription }}">{{ factEType | epistemicTypeLabel }}</span>
+          {% endif %}
           <span class="ct-category-tag">{{ fact.category_is }}</span>
           {% if fact.claim_type == "statistic" %}
             <span class="od-fact-type-badge">Tölulegt</span>
@@ -199,12 +203,12 @@ evidence_preview: true
         {# ── Clickable header (expand/collapse) ── #}
         <div class="ct-card-header" role="button" tabindex="0" aria-expanded="false">
           <div class="ct-card-main">
-            <span class="ct-verdict-pill verdict-{{ item.verdict | replace('partially_supported', 'partial') }}" title="{{ item.verdict | verdictDescription }}">
-              {{ item.verdict | verdictLabel(item.epistemic_type) }}
-            </span>
             {% set eType = item.epistemic_type or "factual" %}
+            <span class="ct-verdict-pill verdict-{{ item.verdict | replace('partially_supported', 'partial') }}" title="{{ item.verdict | verdictDescription(eType) }}">
+              {{ item.verdict | verdictLabel(eType) }}
+            </span>
             {% if eType != "factual" %}
-            <span class="ct-epistemic-badge epistemic-{{ eType }}">{{ eType | epistemicTypeLabel }}</span>
+            <span class="ct-epistemic-badge epistemic-{{ eType }}" title="{{ eType | epistemicTypeDescription }}">{{ eType | epistemicTypeLabel }}</span>
             {% endif %}
             <span class="ct-category-tag">{{ item.category_is }}</span>
             {% if item.sighting_count and item.sighting_count > 1 %}

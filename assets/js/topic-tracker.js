@@ -25,7 +25,7 @@
     : (document.currentScript?.dataset.base || "/assets/data");
   const TOPICS_URL = `${DATA_BASE}/topics.json`;
   const VERDICT_LABELS = (TAXONOMY.verdictLabels && TAXONOMY.verdictLabels.factual) || {};
-  const VERDICT_DESCRIPTIONS = TAXONOMY.verdictDescriptions || {};
+  const VERDICT_DESCRIPTIONS = (TAXONOMY.verdictDescriptions && TAXONOMY.verdictDescriptions.factual) || TAXONOMY.verdictDescriptions || {};
   const VERDICT_ORDER = ["supported", "partially_supported", "unverifiable", "unsupported", "misleading"];
   const SORT_LABELS = {
     claim_count: "Fullyrðingar",

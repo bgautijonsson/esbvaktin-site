@@ -18,7 +18,8 @@
 
   var VERDICT_LABELS = (TAXONOMY.verdictLabels && TAXONOMY.verdictLabels.factual) || {};
   var EPISTEMIC_TYPE_LABELS = TAXONOMY.epistemicTypeLabels || {};
-  var VERDICT_DESCRIPTIONS = TAXONOMY.verdictDescriptions || {};
+  var VERDICT_DESCRIPTIONS = (TAXONOMY.verdictDescriptions && TAXONOMY.verdictDescriptions.factual) || TAXONOMY.verdictDescriptions || {};
+  var EPISTEMIC_TYPE_DESCRIPTIONS = TAXONOMY.epistemicTypeDescriptions || {};
   var VERDICT_CLASSES = TAXONOMY.verdictClasses || {};
   var CATEGORY_LABELS = TAXONOMY.categoryLabels || {};
   var SOURCE_TYPE_LABELS = TAXONOMY.claimSourceTypeLabels || {};
@@ -56,7 +57,9 @@
       : (VERDICT_LABELS[claim.verdict] || claim.verdict);
     var epistemicBadgeHtml = "";
     if (epistemicType !== "factual" && EPISTEMIC_TYPE_LABELS[epistemicType]) {
-      epistemicBadgeHtml = '<span class="ct-epistemic-badge epistemic-' + epistemicType + '">' +
+      var epistemicTooltip = EPISTEMIC_TYPE_DESCRIPTIONS[epistemicType] || "";
+      epistemicBadgeHtml = '<span class="ct-epistemic-badge epistemic-' + epistemicType + '"' +
+        (epistemicTooltip ? ' title="' + escapeHtml(epistemicTooltip) + '"' : '') + '>' +
         escapeHtml(EPISTEMIC_TYPE_LABELS[epistemicType]) + '</span>';
     }
     var categoryLabel = CATEGORY_LABELS[claim.category] || claim.category;
@@ -161,7 +164,7 @@
     return '<div class="ct-card' + (isFocused ? " ct-card--focused" : "") + '" id="' + escapeHtml(cardId) + '" data-slug="' + escapeHtml(claim.claim_slug) + '">' +
       '<div class="ct-card-header" role="button" tabindex="0" aria-expanded="false">' +
         '<div class="ct-card-main">' +
-          '<span class="ct-verdict-pill ' + verdictClass + '" title="' + (VERDICT_DESCRIPTIONS[claim.verdict] || "") + '">' + verdictLabel + '</span>' +
+          '<span class="ct-verdict-pill ' + verdictClass + '" title="' + escapeHtml(TAXONOMY.verdictDescription ? TAXONOMY.verdictDescription(claim.verdict, epistemicType) : (VERDICT_DESCRIPTIONS[claim.verdict] || "")) + '">' + verdictLabel + '</span>' +
           epistemicBadgeHtml +
           '<span class="ct-category-tag">' + categoryLabel + '</span>' +
           sightingBadge +
