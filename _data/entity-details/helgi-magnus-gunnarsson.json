@@ -13,33 +13,34 @@
   },
   "althingi_stats": null,
   "scorecard": {
-    "misleading": 4,
-    "partially_supported": 12,
-    "supported": 6
+    "partially_supported": 13,
+    "supported": 6,
+    "misleading": 3
   },
   "claims": [
     {
       "claim_text": "Lægri vextir í Evrópu skýrast af því að seðlabankar ríkjanna berjast gegn verðhjöðnun með neikvæðum vöxtum þar sem hagvöxtur er lítill sem enginn.",
       "original_quote": "Lægri vextir í Evrópu skýrast víða af því að seðlabankar ríkjanna eru að reyna með neikvæðum vöxtum að berjast gegn verðhjöðnun þar sem hagvöxtur er lítill sem enginn.",
-      "verdict": "misleading",
-      "explanation": "Fullyrðingin lýsir aðstæðum sem voru viðeigandi á árunum 2014–2022 en eiga ekki lengur við. <a href=\"https://sedlabanki.is/peningastefna/peningastefnunefnd/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a> sýnir að stýrivextir Seðlabanka Íslands eru 7,25% í mars 2026 og hafa verið á niðurleið. Samkvæmt <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> stendur innlánsvextir ESB í um 2,75% — hærri en á tímum neikvæðra vaxta. Seðlabanki Evrópu hætti neikvæðum vöxtum sumarið 2022. Fullyrðingin gefur úrelta mynd af evrópskri peningastefnu og hunsar að vaxtamunur er líka knúinn af mismunandi verðbólgu, stærð fjármagnsmarkaða og gjaldmiðlaáhættu.",
-      "missing_context": "Neikvæðum vöxtum á evrusvæðinu lauk sumarið 2022. Vaxtamunur milli Íslands og evrusvæðisins skýrist einnig af smæð íslensks fjármagnsmarkaðar og gjaldmiðlaáhættu samkvæmt <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a>.",
-      "supporting_evidence": [],
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin lýsir aðstæðum sem áttu að hluta til við á árunum 2014–2022 þegar Seðlabanki Evrópu beitti neikvæðum vöxtum og hagvöxtur var hægur. Samkvæmt <a href=\"https://ec.europa.eu/eurostat/web/hicp\" title=\"Eurostat HICP Flash Estimate; ECB Monetary Policy Decisions\" target=\"_blank\" rel=\"noopener\">CURR-DATA-008</a> hefur staðan þó breyst verulega — stýrivextir ESB hafa verið hækkaðir úr neikvæðu upp í 4,0% og síðan lækkaðir í 2,0% í febrúar 2026, á meðan verðbólga hefur náð markmiði bankans (1,9% HICP). Lækkunarferill ESB endurspeglar nú árangur í baráttu við háa verðbólgu, ekki verðhjöðnun eða stöðnun. <a href=\"https://www.visindavefur.is/svar.php?id=60990\" title=\"Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-016</a> sýnir að vaxtamunur innan evrusvæðisins hefur verið flókinn og ójafn.",
+      "missing_context": "Fullyrðingin virðist lýsa aðstæðum frá fyrri árum (2014–2022) en nýjustu gögn sýna að ESB hefur hækkað og síðan lækkað stýrivexti í kjölfar mikillar verðbólgu — ekki verðhjöðnunar. <a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a> sýnir einnig að stýrivextir á Íslandi eru nú 7,50% eftir hækkun í mars 2026, og verðbólga á Íslandi er 5,2% samanborið við 1,9% á evrusvæðinu.",
+      "supporting_evidence": [
+        {
+          "id": "CURR-DATA-016",
+          "source_name": "Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=60990"
+        },
+        {
+          "id": "CURR-DATA-015",
+          "source_name": "Vísindavefurinn — Jón Þór Sturluson, Associate Professor of Economics, Reykjavík University School of Business (2012)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=60906"
+        }
+      ],
       "contradicting_evidence": [
         {
-          "id": "CURRENCY-DATA-015",
-          "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
-          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
-        },
-        {
-          "id": "CURRENCY-DATA-017",
-          "source_name": "Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar",
-          "source_url": "https://sedlabanki.is/peningastefna/peningastefnunefnd/"
-        },
-        {
-          "id": "HOUS-DATA-005",
-          "source_name": "Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase",
-          "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
+          "id": "CURR-DATA-008",
+          "source_name": "Eurostat HICP Flash Estimate; ECB Monetary Policy Decisions",
+          "source_url": "https://ec.europa.eu/eurostat/web/hicp"
         }
       ],
       "category": "currency",
@@ -158,7 +159,7 @@
       "original_quote": "Lágir langtímavextir: Langtímavextir mega ekki vera meira en 2 prósentustigum hærri en að meðaltali í ríkjunum þremur sem hafa lægsta verðbólguna.",
       "verdict": "supported",
       "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014\" title=\"Treaty on the Functioning of the European Union, Article 140\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-004</a> staðfestir vaxtaskilyrðið orðrétt: langtímavextir mega ekki vera meira en 2 prósentustigum yfir meðaltali þriggja bestu ríkjanna. <a href=\"https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en\" title=\"European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators\" target=\"_blank\" rel=\"noopener\">CURR-DATA-005</a> endurtekir skilyrðið og bendir á að Ísland uppfylli það ekki sem stendur. Fullyrðingin er rétt lýsing á fjórða Maastricht-viðmiðinu.",
-      "missing_context": "<a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> sýnir að meðalstýrivextir Seðlabanka Íslands hafa verið um 6,5% á tímabilinu 2000–2025, borið saman við 1,5% hjá Seðlabanka Evrópu. Vaxtamunurinn endurspeglar meðal annars hærri verðbólgu og gjaldmiðlaáhættu á Íslandi.",
+      "missing_context": "<a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> sýnir að meðalstýrivextir Seðlabanka Íslands hafa verið um 6,5% á tímabilinu 2000–2025, borið saman við 1,5% hjá Seðlabanka Evrópu. Vaxtamunurinn endurspeglar meðal annars hærri verðbólgu og gjaldmiðlaáhættu á Íslandi.",
       "supporting_evidence": [
         {
           "id": "SOV-LEGAL-004",
@@ -183,7 +184,7 @@
       "claim_text": "Krónan hefur þann eiginleika að fylgja efnahagsþróun íslenska hagkerfisins og ef illa árar sígur hún og lagast þar með samkeppnisstaða útflutningsins.",
       "original_quote": "Þar að auki hefur krónan þann eiginleika að fylgja efnahagsþróun íslenska hagkerfisins. Ef illa árar þá sígur hún og þá lagast samkeppnisstaða útflutningsins sem minnkar áhrif á atvinnuleysi, og styrkist ella.",
       "verdict": "partially_supported",
-      "explanation": "Fullyrðingin lýsir grundvallareiginleika fljótandi gjaldmiðils á réttmætan hátt. <a href=\"https://sedlabanki.is/hagtolur/gengi?PageID=289\" title=\"Central Bank of Iceland — Exchange rate data; ECB — Statistical Data Warehouse\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-016</a> og <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> staðfesta að krónan lækkaði um 50% í kreppunni 2008, sem stuðlaði að bata útflutningsgreina. <a href=\"https://www.sedlabanki.is/hagtolur/gengi/\" title=\"Seðlabanki Íslands — Exchange rate data\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-007</a> sýnir einnig gengislækkun í COVID-19-kreppunni 2020. Sjálfvirk aðlögun gengis er vel skjalfestur eiginleiki fljótandi gjaldmiðla. Hins vegar vantar á fullyrðinguna verulegan fyrirvara: gengisveiking veldur einnig verðbólgu og hækkar innflutningsverð, sem dregur úr ávinningi samkeppnisstöðunnar. Krónan hefur einnig sýnt óstöðugleika sem er ekki einungis «aðlögun» heldur einnig uppspretta efnahagsáfalla.",
+      "explanation": "Fullyrðingin lýsir grundvallareiginleika fljótandi gjaldmiðils á réttmætan hátt. CURRENCY-DATA-016 og <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> staðfesta að krónan lækkaði um 50% í kreppunni 2008, sem stuðlaði að bata útflutningsgreina. <a href=\"https://www.sedlabanki.is/hagtolur/gengi/\" title=\"Seðlabanki Íslands — Exchange rate data\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-007</a> sýnir einnig gengislækkun í COVID-19-kreppunni 2020. Sjálfvirk aðlögun gengis er vel skjalfestur eiginleiki fljótandi gjaldmiðla. Hins vegar vantar á fullyrðinguna verulegan fyrirvara: gengisveiking veldur einnig verðbólgu og hækkar innflutningsverð, sem dregur úr ávinningi samkeppnisstöðunnar. Krónan hefur einnig sýnt óstöðugleika sem er ekki einungis «aðlögun» heldur einnig uppspretta efnahagsáfalla.",
       "missing_context": "Fullyrðingin nefnir eingöngu jákvæðu hliðina á gengissveigjanleikanum. Gengisveiking krónunnar 2008 olli einnig gríðarlegri verðbólgu og gjaldeyrishöftum sem stóðu í níu ár (2008–2017). Fræðilega umræðan um hagstæð myntsvæði (<a href=\"https://www.jstor.org/stable/1812792\" title=\"Mundell (1961) 'A Theory of Optimum Currency Areas'; Stiglitz (2016) 'The Euro'; CBI Working Papers\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-019</a>) bendir til þess að Ísland sé of lítið og sérhæft fyrir sjálfstæðan gjaldmiðil — sérfræðingar eru ósammála um hvort sveigjanleikinn vegi upp á móti óstöðugleikanum. Krónan hefur ítrekað valdið innfluttri verðbólgu sem bitnar á kaupmætti.",
       "supporting_evidence": [
         {
@@ -194,7 +195,7 @@
         {
           "id": "CURRENCY-DATA-016",
           "source_name": "Central Bank of Iceland — Exchange rate data; ECB — Statistical Data Warehouse",
-          "source_url": "https://sedlabanki.is/hagtolur/gengi?PageID=289"
+          "source_url": null
         },
         {
           "id": "TRADE-DATA-007",
@@ -413,8 +414,8 @@
       "claim_text": "Ísland er meðal ríkustu þjóða miðað við höfðatölu og yrði því að greiða hátt í ESB-sjóði í samræmi við það.",
       "original_quote": "Við erum meðal ríkustu þjóða miðað við höfðatölu og yrðum að greiða í samræmi við það.",
       "verdict": "supported",
-      "explanation": "<a href=\"https://www.imf.org/en/Publications/WEO\" title=\"IMF World Economic Outlook Database — October 2024\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-002</a> staðfestir að VLF Íslands á mann (PPP) sé um 72.000 USD, um 29% yfir meðaltali ESB. <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Institute of International Affairs, University of Iceland — EU membership cost analysis\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-010</a> áætlar hreint framlag Íslands við ESB-sjóðina í 100–180 milljónir evra á ári. Til samanburðar greiðir Ísland nú um 9,6 milljónir evra á ári í gegnum EES-sjóðina samkvæmt <a href=\"https://eeagrants.org/en/fmo/about-us\" title=\"EEA Grants — Financial Mechanism Committee; European Commission — EU budget figures\" target=\"_blank\" rel=\"noopener\">EEA-DATA-008</a>. Ísland yrði nettógreiðandi í fjárhagsáætlun ESB vegna hárra tekna á mann.",
-      "missing_context": "<a href=\"https://www.imf.org/en/Publications/WEO\" title=\"IMF World Economic Outlook Database — October 2024\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-002</a> bendir á að VLF á mann geti verið bjagað af stóriðju í eigu erlendra aðila — þjóðartekjur (GNI) gefa e.t.v. réttari mynd. <a href=\"https://eeagrants.org/en/fmo/about-us\" title=\"EEA Grants — Financial Mechanism Committee; European Commission — EU budget figures\" target=\"_blank\" rel=\"noopener\">EEA-DATA-008</a> tekur fram að lítil jaðarríki hafi í sögulegu tilliti verið nettóþegar ESB-sjóða, ekki greiðendur, sem gæti dregið úr nettóframlagi Íslands. Ísland myndi einnig fá fjármagn til baka í gegnum byggðasjóði, Horizon Europe og landbúnaðarstefnu ESB.",
+      "explanation": "<a href=\"https://www.imf.org/en/Publications/WEO\" title=\"IMF World Economic Outlook Database — October 2024\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-002</a> staðfestir að VLF Íslands á mann (PPP) sé um 72.000 USD, um 29% yfir meðaltali ESB. <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Institute of International Affairs, University of Iceland — EU membership cost analysis\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-010</a> áætlar hreint framlag Íslands við ESB-sjóðina í 100–180 milljónir evra á ári. Til samanburðar greiðir Ísland nú um 9,6 milljónir evra á ári í gegnum EES-sjóðina samkvæmt <a href=\"https://eeagrants.org/\" title=\"EEA Grants — Financial Mechanism Committee; European Commission — EU budget figures\" target=\"_blank\" rel=\"noopener\">EEA-DATA-008</a>. Ísland yrði nettógreiðandi í fjárhagsáætlun ESB vegna hárra tekna á mann.",
+      "missing_context": "<a href=\"https://www.imf.org/en/Publications/WEO\" title=\"IMF World Economic Outlook Database — October 2024\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-002</a> bendir á að VLF á mann geti verið bjagað af stóriðju í eigu erlendra aðila — þjóðartekjur (GNI) gefa e.t.v. réttari mynd. <a href=\"https://eeagrants.org/\" title=\"EEA Grants — Financial Mechanism Committee; European Commission — EU budget figures\" target=\"_blank\" rel=\"noopener\">EEA-DATA-008</a> tekur fram að lítil jaðarríki hafi í sögulegu tilliti verið nettóþegar ESB-sjóða, ekki greiðendur, sem gæti dregið úr nettóframlagi Íslands. Ísland myndi einnig fá fjármagn til baka í gegnum byggðasjóði, Horizon Europe og landbúnaðarstefnu ESB.",
       "supporting_evidence": [
         {
           "id": "TRADE-COMP-002",
@@ -429,7 +430,7 @@
         {
           "id": "EEA-DATA-008",
           "source_name": "EEA Grants — Financial Mechanism Committee; European Commission — EU budget figures",
-          "source_url": "https://eeagrants.org/en/fmo/about-us"
+          "source_url": "https://eeagrants.org/"
         }
       ],
       "contradicting_evidence": [],
@@ -554,7 +555,7 @@
       "claim_text": "Íslenskt þjóðfélag telur 380 þúsund íbúa og hefur því engar stærðarhagkvæmni í verslun.",
       "original_quote": "verandi 380 þúsund, engin stærðarhagkvæmni þar",
       "verdict": "partially_supported",
-      "explanation": "Íbúafjöldi Íslands er réttilega tilgreindur — <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> staðfestir um 380 þúsund íbúa og <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Ibuar/Ibuar__mannfjoldaspa/MAN09010.px\" title=\"Hagstofa Íslands — Population projections 2024; Registers Iceland\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-005</a> nefnir 395 þúsund í byrjun 2026. Ályktunin um að lítil þjóð hafi «engar stærðarhagkvæmni í verslun» er hins vegar of einföld. <a href=\"https://px.hagstofa.is/pxis/pxweb/is/Samfelag/Samfelag__husnaedi/\" title=\"Hagstofa Íslands — Housing Statistics; Seðlabanki Íslands — Financial Stability Report 2025\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-008</a> og <a href=\"https://www.oecd.org/en/publications/agricultural-policy-monitoring-and-evaluation-2023_b14de474-en/full-report/iceland_fc821635.html\" title=\"Hagstofa Íslands — National accounts; OECD — Agricultural Policy Monitoring and Evaluation\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-013</a> sýna að smæð markaðar veldur háum kostnaði í byggingariðnaði og landbúnaði, sem styður hugmyndina um takmarkaðar stærðarhagkvæmni. <a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a> undirstrikar þó að Ísland nýtur þegar aðgangs að ESB-markaðnum í gegnum EES og hefur 31 fríverslunarsamning gegnum EFTA. Fullyrðingin er rétt um stærðartakmarkanir en ofdrífur niðurstöðuna með orðunum «engar stærðarhagkvæmni».",
+      "explanation": "Íbúafjöldi Íslands er réttilega tilgreindur — <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> staðfestir um 380 þúsund íbúa og <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Ibuar/Ibuar__mannfjoldaspa/MAN09010.px\" title=\"Hagstofa Íslands — Population projections 2024; Registers Iceland\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-005</a> nefnir 395 þúsund í byrjun 2026. Ályktunin um að lítil þjóð hafi «engar stærðarhagkvæmni í verslun» er hins vegar of einföld. <a href=\"https://px.hagstofa.is/pxis/pxweb/is/Samfelag/Samfelag__husnaedi/\" title=\"Hagstofa Íslands — Housing Statistics; Seðlabanki Íslands — Financial Stability Report 2025\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-008</a> og AGRI-DATA-013 sýna að smæð markaðar veldur háum kostnaði í byggingariðnaði og landbúnaði, sem styður hugmyndina um takmarkaðar stærðarhagkvæmni. <a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a> undirstrikar þó að Ísland nýtur þegar aðgangs að ESB-markaðnum í gegnum EES og hefur 31 fríverslunarsamning gegnum EFTA. Fullyrðingin er rétt um stærðartakmarkanir en ofdrífur niðurstöðuna með orðunum «engar stærðarhagkvæmni».",
       "missing_context": "Ísland hefur náð umtalsverðri hagkvæmni í sjávarútvegi (<a href=\"https://ec.europa.eu/eurostat/databrowser/view/fish_ca_main/\" title=\"Eurostat — Catches by fishing area (fish_ca_main)\" target=\"_blank\" rel=\"noopener\">FISH-DATA-019</a> sýnir 2.800 kg afla á íbúa) og orkuframleiðslu þrátt fyrir smæð. Stærðarhagkvæmni í verslun fer ekki eingöngu eftir íbúafjölda heldur einnig eftir viðskiptasamningum, landfræðilegri legu og sérhæfingu. <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Ibuar/Ibuar__mannfjoldi__3_bakgrunnur__Rikisfang/MAN04103.px\" title=\"Hagstofa Íslands — Population by citizenship and country of birth\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-002</a> sýnir að innflytjendur hafa aukið vinnuafl verulega, sem dregur úr sumarri stærðartakmörkun.",
       "supporting_evidence": [
         {
@@ -570,7 +571,7 @@
         {
           "id": "AGRI-DATA-013",
           "source_name": "Hagstofa Íslands — National accounts; OECD — Agricultural Policy Monitoring and Evaluation",
-          "source_url": "https://www.oecd.org/en/publications/agricultural-policy-monitoring-and-evaluation-2023_b14de474-en/full-report/iceland_fc821635.html"
+          "source_url": null
         },
         {
           "id": "HOUSING-DATA-005",

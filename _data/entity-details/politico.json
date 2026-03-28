@@ -9,19 +9,20 @@
   "stance_score": 0.0,
   "credibility": 0.5,
   "attribution_counts": {
-    "quoted": 2,
+    "quoted": 3,
     "mentioned": 4
   },
   "althingi_stats": null,
   "scorecard": {
+    "unverifiable": 1,
     "partially_supported": 2
   },
   "claims": [
     {
       "claim_text": "POLITICO greindi frá því mánudaginn 23. febrúar 2026, með vísan til nafnlausra heimildarmanna, að tal Trumps um Grænland hefði valdið öryggisótta á Íslandi og aukið stemninguna fyrir ESB-aðild.",
       "original_quote": "það sem POLITICO hafði eftir nafnlausum heimildarmönnum mánudaginn 23. febrúar að tal Trumps um Grænland hefði valdið svo miklum öryggisótta á Íslandi að stemningin fyrir ESB-aðild ykist",
-      "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.reuters.com/world/\" title=\"Multiple news sources — Reuters, AP, BBC coverage of Trump Greenland statements (2025)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-011</a> staðfestir yfirlýsingar Trumps um Grænland á öðru kjörtímabili hans og auknar hernaðaráherslur hans á svæðinu. <a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"US State Department — Bilateral Relations Factsheet; Icelandic media reports (Heimildin, Stundin); Altinget.no\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-021</a> staðfestir umræðu í íslenskum og alþjóðlegum fjölmiðlum um áhrif Trump-stjórnarinnar á ESB-umræðuna á Íslandi, þar á meðal vangaveltur um tengsl við aukinn ESB-stuðning. Hins vegar staðfesta engar heimildir sérstaklega POLITICO-greinina frá 23. febrúar 2026 eða nákvæmlega þær fullyrðingar sem þar komu fram.",
+      "verdict": "unverifiable",
+      "explanation": "Fullyrðingin byggir á ónafngreindum heimildum sem ekki er hægt að staðfesta.",
       "missing_context": "Staðreyndagrunnurinn inniheldur ekki POLITICO-greinina beint og getur því ekki staðfest nákvæma dagsetningu (23. febrúar) né orðrétt efni hennar. Almennt samhengi er staðfest en sértæk fullyrðing um POLITICO-fréttina er ekki sannreynanleg.",
       "supporting_evidence": [
         {
@@ -79,6 +80,32 @@
       "article_title": "Ríkisstjórn á reki til ESB",
       "article_source": "bjorn_is",
       "article_date": "2026-02-26"
+    },
+    {
+      "claim_text": "POLITICO greindi frá þjóðaratkvæðagreiðslunni 23. febrúar og sagði að hún yrði haldin í ágúst.",
+      "original_quote": "allar fréttir til þess frá því að POLITICO sagði 23. febrúar að þjóðaratkvæðagreiðslan yrði hér í ágúst",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> staðfestir að ríkisstjórnin tilkynnti um þjóðaratkvæðagreiðslu 29. ágúst 2026, og <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir að utanríkisráðherra lagði fram þingsályktunartillögu þann 9. mars 2026 um dagsetninguna. Þjóðaratkvæðagreiðsla í ágúst er þannig staðfest. Hins vegar inniheldur gagnagrunurinn engar heimildir sem sannreyna nákvæmlega að POLITICO hafi greint frá þessu einmitt 23. febrúar — dagsetning og miðill eru ósannreynanlegir í fyrirliggjandi heimildum. Meginatriðið, að þjóðaratkvæðagreiðslan sé ákveðin í ágúst, er stutt.",
+      "missing_context": "Staðreyndagrunnurinn staðfestir dagsetninguna 29. ágúst 2026 en inniheldur ekki heimildir um POLITICO-fréttina eða tímasetningu hennar. Fullyrðingin er aðallega notaður sem tímamót í umfjölluninni.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-006",
+          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+        },
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "other",
+      "attribution": "quoted",
+      "article_slug": "draumaheimur-utanrikisradherra",
+      "article_title": "Draumaheimur utanríkisráðherra",
+      "article_source": "Bjorn Bjarnason",
+      "article_date": "2026-03-24"
     }
   ],
   "articles": [
@@ -97,6 +124,16 @@
       "title": "Ríkisstjórn á reki til ESB",
       "source": "bjorn_is",
       "date": "2026-02-26",
+      "claim_count": 1,
+      "attribution_types": [
+        "quoted"
+      ]
+    },
+    {
+      "slug": "draumaheimur-utanrikisradherra",
+      "title": "Draumaheimur utanríkisráðherra",
+      "source": "Bjorn Bjarnason",
+      "date": "2026-03-24",
       "claim_count": 1,
       "attribution_types": [
         "quoted"

@@ -6,15 +6,16 @@
   "role": "seðlabankastjóri Króatíu",
   "party": null,
   "stance": "pro_eu",
-  "stance_score": 1.0,
-  "credibility": 0.6,
+  "stance_score": 0.67,
+  "credibility": 0.59,
   "attribution_counts": {
-    "quoted": 4,
-    "paraphrased": 31
+    "quoted": 6,
+    "paraphrased": 35,
+    "mentioned": 2
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 18,
+    "partially_supported": 21,
     "supported": 6,
     "misleading": 1
   },
@@ -664,6 +665,100 @@
       "article_title": "Gjaldeyrisáhættan þurrkaðist út",
       "article_source": "Morgunblaðið",
       "article_date": "2026-03-13"
+    },
+    {
+      "claim_text": "Boris Vujcic sagði að vextir hafi snarlækkað strax eftir upptöku evru í Króatíu vegna stöðugleikans sem fylgdi öflugum gjaldmiðli.",
+      "original_quote": "Sem dæmi nefnir hann að vextir hafi snarlækkað strax eftir upptöku evru vegna stöðugleikans sem fylgdi öflum gjaldmiðli.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a> og <a href=\"https://sdw.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a> staðfesta að Vujčić lýsti vaxtafalli eftir evruaðild — húsnæðislánavextir féllu úr um 3,5% í 2022 niður í 3,64% í janúar 2024, og niður í 3,0% árið 2025. Orðið «snarlækkað» er þó yfirdrifið þar sem lækkunin var hófleg (ekki snarpur brotthvarf). Jafnframt varpar fullyrðingin of einfaldri orsök á ferlið — Vujčić vísaði til lægri áhættuálags, regluverkssamræmingar og lausafjár banka, ekki eingöngu «stöðugleika öflugs gjaldmiðils». Króatíska kúnan var auk þess nánast fest við evru í tvo áratugi áður.",
+      "missing_context": "Vujčić nefndi lægri áhættuálag, regluverkssamræmingu og lausafjárstöðu banka sem orsakir — ekki eingöngu «stöðugleika gjaldmiðils». Króatía hafði nánast fast gengi gagnvart evru í 20 ár þannig aðlögunin var mun minni en hún yrði fyrir Ísland (þar sem krónan er frjálst fljótandi). Húsnæðisverð hélt áfram að hækka þrátt fyrir vaxtafallið, og rannsóknir (<a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a>) sýna að lægri vextir geta hækkað húsnæðisverð frekar en lækkað.",
+      "supporting_evidence": [
+        {
+          "id": "PREC-DATA-012",
+          "source_name": "Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review",
+          "source_url": "https://www.bis.org/review/r240131a.htm"
+        },
+        {
+          "id": "PREC-DATA-020",
+          "source_name": "ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS",
+          "source_url": "https://sdw.ecb.europa.eu/"
+        },
+        {
+          "id": "PREC-DATA-019",
+          "source_name": "Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report",
+          "source_url": "https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "currency",
+      "attribution": "paraphrased",
+      "article_slug": "thomas-moller-skrifar-med-eda-a-moti-esb-hver-hefur-rett-fyrir-ser",
+      "article_title": "Thomas Möller skrifar: Með eða á móti ESB – hver hefur rétt fyrir sér?",
+      "article_source": "DV",
+      "article_date": "2026-03-25"
+    },
+    {
+      "claim_text": "Verðbólga í Króatíu fór úr um 12% niður í um 3,5% eftir upptöku evru.",
+      "original_quote": "verðstöðugleiki hefði aukist verulega með stöðugu gengi sem hefði leið til lágrar og stöðugrar verðbólgu sem fór fljótlega úr um 12% niður í um 3,5%",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://sdw.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a> staðfestir að verðbólga í Króatíu féll úr hámarki 13,1% í byrjun 2023 niður í um 3,4% seint á árinu 2024. <a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a> nefnir verðbólgu 10,7% árið 2022 og 8,4% árið 2023. Tölurnar eru nálægt fullyrðingunni (um 12% → 3,5%). Hins vegar er orsökusamhengið of einfalt — verðbólgufallið var hluti af almennri evróskri þróun (ESB-meðaltal féll einnig verulega á sama tíma) og tengist ekki eingöngu evruaðild.",
+      "missing_context": "Verðbólgufallið í Króatíu átti sér samsvörun í öllu evrusvæðinu — ESB-meðaltal féll einnig úr hámarki 10,6% (október 2022) niður í undir 3% seint 2023. Króatía var nú þegar nánast bundin við evru í tvo áratugi. Fullyrðingin gefur til kynna orsakatengsl milli evruaðildar og verðbólgufalls sem eru of einföld — aðrir þættir (vextir ESB, orkuverð, framboðskeðjur) höfðu jafnvel meiri áhrif. Króatísk verðbólga var enn hærri en meðaltal evrusvæðisins eftir aðild.",
+      "supporting_evidence": [
+        {
+          "id": "PREC-DATA-020",
+          "source_name": "ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS",
+          "source_url": "https://sdw.ecb.europa.eu/"
+        },
+        {
+          "id": "PREC-DATA-019",
+          "source_name": "Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report",
+          "source_url": "https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "currency",
+      "attribution": "paraphrased",
+      "article_slug": "thomas-moller-skrifar-med-eda-a-moti-esb-hver-hefur-rett-fyrir-ser",
+      "article_title": "Thomas Möller skrifar: Með eða á móti ESB – hver hefur rétt fyrir sér?",
+      "article_source": "DV",
+      "article_date": "2026-03-25"
+    },
+    {
+      "claim_text": "Boris Vujcic sagði að aðalkostir evrunnar séu minni áhætta, lægri fjármagnakostnaður og meiri þjóðhagslegur sveigjanleiki.",
+      "original_quote": "Varðandi evruna sagði Boris «að aðalkostir þess að vera með evruna væru minni áhætta, lægri fjármagnkostnaður og meiri þjóðhagslegur sveigjanleiki.»",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a> og <a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a> staðfesta að Vujčić hefur lýst lægri áhættuálagi og lægri fjármagnakostnaði sem ávinningi evruaðildar Króatíu. Tveir af þremur «aðalkostum» eru þannig studdir. Hins vegar er þriðji kosturinn — «meiri þjóðhagslegur sveigjanleiki» — í mótsögn við almennan hagfræðiskilning: evruaðild dregur úr þjóðhagslegum sveigjanleika með því að afnema sjálfstæða peningastefnu og gengissveiflu sem aðlögunartæki (sbr. <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a>). Ef Vujčić notaði þetta orð gæti hann hafa átt við «fjárhagslegan sveigjanleika» (betri aðgengi að fjármálamörkuðum) frekar en «þjóðhagslegan sveigjanleika» í hefðbundnum skilningi.",
+      "missing_context": "Orðið «þjóðhagslegur sveigjanleiki» er umdeilt í þessu samhengi. Gagnrýnendur evrunnar telja hana draga úr sveigjanleika (tap á sjálfstæðri peningastefnu, gengisleiðréttingu). Stuðningsmenn telja evruna veita meiri fjárhagslegan sveigjanleika (aðgengi að ESB-lausafjársjóðum, minni áhættuálag). Bein tilvitnun er ekki staðfest í tiltækum heimildum.",
+      "supporting_evidence": [
+        {
+          "id": "PREC-DATA-019",
+          "source_name": "Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report",
+          "source_url": "https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023"
+        },
+        {
+          "id": "PREC-DATA-012",
+          "source_name": "Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review",
+          "source_url": "https://www.bis.org/review/r240131a.htm"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "SOV-LEGAL-005",
+          "source_name": "Central Bank of Iceland — Monetary policy framework",
+          "source_url": "https://sedlabanki.is/peningastefna/"
+        },
+        {
+          "id": "CURR-DATA-010",
+          "source_name": "Central Bank of Iceland — Official exchange rate; Wise/XE historical data",
+          "source_url": "https://cb.is/statistics/official-exchange-rate/"
+        }
+      ],
+      "category": "currency",
+      "attribution": "quoted",
+      "article_slug": "thomas-moller-skrifar-med-eda-a-moti-esb-hver-hefur-rett-fyrir-ser",
+      "article_title": "Thomas Möller skrifar: Með eða á móti ESB – hver hefur rétt fyrir sér?",
+      "article_source": "DV",
+      "article_date": "2026-03-25"
     }
   ],
   "articles": [
@@ -673,6 +768,17 @@
       "source": "Morgunblaðið",
       "date": "2026-03-13",
       "claim_count": 25,
+      "attribution_types": [
+        "paraphrased",
+        "quoted"
+      ]
+    },
+    {
+      "slug": "thomas-moller-skrifar-med-eda-a-moti-esb-hver-hefur-rett-fyrir-ser",
+      "title": "Thomas Möller skrifar: Með eða á móti ESB – hver hefur rétt fyrir sér?",
+      "source": "DV",
+      "date": "2026-03-25",
+      "claim_count": 3,
       "attribution_types": [
         "paraphrased",
         "quoted"

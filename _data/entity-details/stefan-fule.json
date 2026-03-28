@@ -7,15 +7,16 @@
   "party": null,
   "stance": "neutral",
   "stance_score": 0.0,
-  "credibility": 1.0,
+  "credibility": 0.83,
   "attribution_counts": {
-    "quoted": 2,
+    "quoted": 3,
     "paraphrased": 1,
     "mentioned": 1
   },
   "althingi_stats": null,
   "scorecard": {
-    "supported": 3
+    "supported": 3,
+    "partially_supported": 1
   },
   "claims": [
     {
@@ -121,6 +122,37 @@
       "article_title": "Ákall til ESB-sinna: Hvar eru undanþágurnar?",
       "article_source": "Vísir",
       "article_date": "2025-08-25"
+    },
+    {
+      "claim_text": "Stefan Fule, stækkunarstjóri ESB, tilkynnti undir lok árs 2012 að ekki yrði hægt að opna sjávarútvegskaflann nema samið yrði um makríl.",
+      "original_quote": "Undir lok árs tilkynnti svo Stefan Fule stækkunarstjóri að ekki yrði hægt að opna sjávarútvegskaflann nema samið yrði um makríl. «Ég er upp við vegg,» sagði hann mínu fólki.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að Štefan Füle var stækkunarstjóri ESB á þessum tíma (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> nefnir hann sem Commissioner for Enlargement 2010–2014). <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland screening report Chapter 13; Progress reports on Iceland 2011–2013\" target=\"_blank\" rel=\"noopener\">FISH-DATA-023</a> staðfestir að kafli 13 var aldrei opnaður og að makríll var lykilhindrun. Tilvitnunin um «ég er upp við vegg» og tilkynning Füle um tengsl makríldeilunnar við sjávarútvegskaflann er ekki staðfest beint í heimildum, en samhengið er samrýmanlegt.",
+      "missing_context": "Engin heimild staðfestir beint orð Füle um tengsl makríls og sjávarútvegskaflans eða tilvitnunina «ég er upp við vegg». Almenn staðfesting á stöðu Füle og stöðvun sjávarútvegskafla er til staðar.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-DATA-023",
+          "source_name": "European Commission — Iceland screening report Chapter 13; Progress reports on Iceland 2011–2013",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "EEA-LEGAL-012",
+          "source_name": "European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        },
+        {
+          "id": "EEA-DATA-004",
+          "source_name": "Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "fisheries",
+      "attribution": "quoted",
+      "article_slug": "sigmundur-david-helsti-ahrifavaldur-a-afstodu-ossurar-i-esb-malinu",
+      "article_title": "Sigmundur Davíð helsti áhrifavaldur á afstöðu Össurar í ESB-málinu",
+      "article_source": "Vísir",
+      "article_date": "2026-03-25"
     }
   ],
   "articles": [
@@ -152,6 +184,16 @@
       "claim_count": 1,
       "attribution_types": [
         "paraphrased"
+      ]
+    },
+    {
+      "slug": "sigmundur-david-helsti-ahrifavaldur-a-afstodu-ossurar-i-esb-malinu",
+      "title": "Sigmundur Davíð helsti áhrifavaldur á afstöðu Össurar í ESB-málinu",
+      "source": "Vísir",
+      "date": "2026-03-25",
+      "claim_count": 1,
+      "attribution_types": [
+        "quoted"
       ]
     }
   ]

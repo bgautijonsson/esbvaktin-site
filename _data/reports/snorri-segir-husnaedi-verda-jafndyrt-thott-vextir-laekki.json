@@ -10,8 +10,8 @@
   "summary": "Greindar 16 fullyrðingar .",
   "capsule": "Vaxtasamanburðurinn í greininni er rétt staðsettur — vextir á húsnæðislánum eru um 8% á Íslandi á meðan algengir vextir í ESB-ríkjum eru á bilinu 3,2–3,5%. Athyglisvert er þó að rannsóknir sýna að á mörkuðum með ósveigjanlegt framboð — eins og á Íslandi — tengjast lægri vextir gjarnan hækkun fasteignaverðs en ekki lækkun; ein prósenta í vaxtalækkun hefur tengst 6–8% verðhækkun í sambærilegum löndum. Spurningin um hvort lægri vextir gagnist húsnæðiskaupendum er því flóknari en hér kemur fram.",
   "verdict_counts": {
-    "supported": 8,
-    "partially_supported": 5,
+    "supported": 9,
+    "partially_supported": 4,
     "misleading": 2
   },
   "claim_count": 15,
@@ -32,7 +32,8 @@
         "claim_text": "Vextir á húsnæðislán á Íslandi eru frá 8 prósentum.",
         "category": "housing",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "Heimildir staðfesta þetta. Samkvæmt <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> eru óverðtryggðir breytilegir húsnæðisvextir á Íslandi frá um 8–9% í byrjun árs 2026, og stýrivextir Seðlabankans stóðu í 8,5%. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a> sýnir samsvarandi mynd — meðalvextir á nýjum verðtryggðum húsnæðislánum eru um 7,5–8,5%. Þó ber að hafa í huga að samanburður við evrusvæðið er flókinn vegna verðtryggingarkerfis Íslands, þar sem raunvextir eru lægri en nafnvextir.",
@@ -70,7 +71,8 @@
         "claim_text": "Algengir vextir húsnæðislána í Evrópusambandinu eru frá 3,2% til 3,5%, samkvæmt Seðlabanka Evrópu.",
         "category": "housing",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> staðfestir að meðalvextir húsnæðislána á evrusvæðinu voru um 3,4% seint á árinu 2025. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a> sýnir að bilið var 3,2–3,8% eftir lánstíma og aðildarríki, sem fellur vel að fullyrðingunni. Tölurnar eru raunverulegar og réttilega eignaðar Seðlabanka Evrópu.",
@@ -123,25 +125,26 @@
         "claim_text": "Talsmenn ESB-aðildar segja að aðild og hugsanleg upptaka evru sé líkleg til að lækka vaxtakostnað heimila á Íslandi.",
         "category": "currency",
         "claim_type": "prediction",
-        "confidence": 0.85
+        "confidence": 0.85,
+        "epistemic_type": "factual"
       },
-      "verdict": "partially_supported",
-      "explanation": "Heimildir staðfesta að ESB-aðildarsínungar halda fram að aðild og evra myndu lækka vaxtakostnað (<a href=\"https://www.sa.is/frettir\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a>, <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a>). Vaxtamunur milli Íslands og evrusvæðisins er verulegur: stýrivextir Seðlabankans um 7,25% á móti 2,75% hjá ECB (<a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a>), og húsnæðislán á Íslandi bera mun hærri vexti en á evrusvæðinu (<a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a>). Hins vegar benda þrjár heimildir (<a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a>, <a href=\"https://www.ecb.europa.eu/press/economic-bulletin/articles/2021/html/ecb.ebart202107_03~36493e7b67.en.html\" title=\"Glaeser, Gottlieb & Gyourko, 'Can Cheap Credit Explain the Housing Boom?' (2012); ECB Economic Bulletin 2/2021 — 'The impact of monetary policy on housing'\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-011</a>, <a href=\"https://doi.org/10.1016/j.jue.2008.07.007\" title=\"Glaeser, E., Gyourko, J., & Saiz, A. (2008). Housing supply and housing bubbles. Journal of Urban Economics; Himmelberg, C., Mayer, C., & Sinai, T. (2005). Assessing high house prices. Journal of Economic Perspectives; IMF Working Paper WP/19/73 — House Prices and Interest Rates\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-006</a>) á að lægri vextir í framboðsþrengdu húsnæðismarkaði hækka húsnæðisverð frekar en lækka húsnæðiskostnað — sem er mikilvægur fyrirvari sem fullyrðingin sleppur.",
+      "verdict": "supported",
+      "explanation": "Fullyrðingin lýsir afstöðu ESB-aðildarsinna og er rétt sem slík. <a href=\"https://www.visindavefur.is/svar.php?id=60906\" title=\"Vísindavefurinn — Jón Þór Sturluson, Associate Professor of Economics, Reykjavík University School of Business (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-015</a> staðfestir að evruaðild gæti lækkað vexti um 3–4 prósentustig til lengri tíma, og <a href=\"https://www.visindavefur.is/svar.php?id=87971\" title=\"Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (March 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-011</a> bendir til þess að vextir yrðu líklega lægri með evrunni. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> sýnir verulegan vaxtamun milli Íslands og evrusvæðisins sem er grundvöllur þessarar röksemdafærslu. Heimildir staðfesta því að þessi röksemdafærsla er raunveruleg og byggist á mælanlegum vaxtamun.",
       "supporting_evidence": [
         {
-          "id": "POL-DATA-012",
-          "source_name": "SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions",
-          "source_url": "https://www.sa.is/frettir"
+          "id": "CURR-DATA-015",
+          "source_name": "Vísindavefurinn — Jón Þór Sturluson, Associate Professor of Economics, Reykjavík University School of Business (2012)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=60906"
         },
         {
-          "id": "POL-DATA-017",
-          "source_name": "Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)",
-          "source_url": "https://vi.is/skyrslur/1667"
+          "id": "CURR-DATA-011",
+          "source_name": "Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (March 2026)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=87971"
         },
         {
-          "id": "CURRENCY-DATA-015",
-          "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
-          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+          "id": "HOUS-DATA-005",
+          "source_name": "Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase",
+          "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
         },
         {
           "id": "HOUSING-DATA-008",
@@ -149,25 +152,9 @@
           "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
         }
       ],
-      "contradicting_evidence": [
-        {
-          "id": "HOUSING-DATA-009",
-          "source_name": "Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023",
-          "source_url": "https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html"
-        },
-        {
-          "id": "HOUSING-DATA-011",
-          "source_name": "Glaeser, Gottlieb & Gyourko, 'Can Cheap Credit Explain the Housing Boom?' (2012); ECB Economic Bulletin 2/2021 — 'The impact of monetary policy on housing'",
-          "source_url": "https://www.ecb.europa.eu/press/economic-bulletin/articles/2021/html/ecb.ebart202107_03~36493e7b67.en.html"
-        },
-        {
-          "id": "HOUS-DATA-006",
-          "source_name": "Glaeser, E., Gyourko, J., & Saiz, A. (2008). Housing supply and housing bubbles. Journal of Urban Economics; Himmelberg, C., Mayer, C., & Sinai, T. (2005). Assessing high house prices. Journal of Economic Perspectives; IMF Working Paper WP/19/73 — House Prices and Interest Rates",
-          "source_url": "https://doi.org/10.1016/j.jue.2008.07.007"
-        }
-      ],
-      "missing_context": "Fullyrðingin lýsir réttilega afstöðu ESB-sinna en sleppur mikilvægu samhengi. Fræðirannsóknir sýna að 1 prósentustigs vaxtalækkun leiðir til 6–8% hækkunar húsnæðisverðs á framboðsþrengdum mörkuðum (<a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a>). Ísland hefur eitt þrengtasta húsnæðisframboð Evrópu. Auk þess myndi evruaðild ekki sjálfkrafa skila ECB-vöxtum — innlend áhættuálag og bankakostnaður héldu áfram að hafa áhrif (<a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a>). Andstæðuheimildir vega þungt og útskýra hvers vegna mat helst «að hluta staðfest».",
-      "confidence": 0.78,
+      "contradicting_evidence": [],
+      "missing_context": "Heimildir benda þó til þess að lægri vextir leiði ekki endilega til lægri húsnæðiskostnaðar. <a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a> og <a href=\"https://www.ecb.europa.eu/press/economic-bulletin/articles/2021/html/ecb.ebart202107_03~36493e7b67.en.html\" title=\"Glaeser, Gottlieb & Gyourko, 'Can Cheap Credit Explain the Housing Boom?' (2012); ECB Economic Bulletin 2/2021 — 'The impact of monetary policy on housing'\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-011</a> sýna að lægri vextir hafa tilhneigingu til að hækka húsnæðisverð á framboðsþröngu mörkuðum eins og Íslandi — fræðilegt mat bendir til 15–25% verðhækkunar ef húsnæðisvextir lækki um 2 prósentustig án aukins framboðs. <a href=\"https://www.visindavefur.is/svar.php?id=60635\" title=\"Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-017</a> bendir einnig til þess að ESB-aðild ein og sér breyti litlu um vaxtakostnað — evruaðild skipti meira máli en ESB-aðild.",
+      "confidence": 0.85,
       "speakers": [
         {
           "name": "Heimildin fréttastofa",
@@ -187,7 +174,8 @@
         "claim_text": "Snorri Másson heldur því fram að lægri vextir á húsnæðislánum myndu ekki gera húsnæði ódýrara vegna þess að framboð og eftirspurn á húsnæðismarkaði haldist óbreytt.",
         "category": "housing",
         "claim_type": "opinion",
-        "confidence": 0.8
+        "confidence": 0.8,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "Heimildir styðja fullyrðingu Snorra Mássonar eindregið. <a href=\"https://doi.org/10.1016/j.jue.2008.07.007\" title=\"Glaeser, E., Gyourko, J., & Saiz, A. (2008). Housing supply and housing bubbles. Journal of Urban Economics; Himmelberg, C., Mayer, C., & Sinai, T. (2005). Assessing high house prices. Journal of Economic Perspectives; IMF Working Paper WP/19/73 — House Prices and Interest Rates\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-006</a>, <a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a> og <a href=\"https://www.ecb.europa.eu/press/economic-bulletin/articles/2021/html/ecb.ebart202107_03~36493e7b67.en.html\" title=\"Glaeser, Gottlieb & Gyourko, 'Can Cheap Credit Explain the Housing Boom?' (2012); ECB Economic Bulletin 2/2021 — 'The impact of monetary policy on housing'\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-011</a> sýna öll að lægri vextir leiða til hærra húsnæðisverðs á mörkuðum með takmarkað framboð — svokölluð eiginfjárvæðing (capitalisation effect). Rannsóknir Glaeser o.fl. sýna að 1 prósentustigs lækkun raunvaxta tengist 6–8% hækkun húsnæðisverðs á framboðsskertum mörkuðum. Ísland hefur einmitt takmarkað framboð vegna smæðar byggingargeirans og skipulagshindrana. <a href=\"https://sedlabanki.is/fjarmalastodugleiki/\" title=\"Seðlabanki Íslands — Financial Stability Report 2025; Húsnæðis- og mannvirkjastofnun (HMS) — Housing Market Overview\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-010</a> og <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a> bæta mikilvægu samhengi við — samanburður íslenskra og evrópskra vaxta er flókinn vegna verðtryggða kerfisins. Nýju heimildarnar styrkja fyrra mat nægilega til að færa niðurstöðuna í \"staðfest\".",
@@ -240,7 +228,8 @@
         "claim_text": "Miðflokkurinn leggst gegn ESB-aðild Íslands.",
         "category": "party_positions",
         "claim_type": "legal_assertion",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://www.althingi.is/thingmenn/thingflokkar/midflokkurinn/\" title=\"Althingi — Session 157 member registry\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-005</a> staðfestir skýrt að Miðflokkurinn tekur sterka afstöðu gegn ESB-aðild og leggst jafnframt gegn frekari EES-samþættingu. <a href=\"https://www.althingi.is/thingmenn/thingflokkar/thingflokkar/\" title=\"Althingi — Party platforms and election results\" target=\"_blank\" rel=\"noopener\">POL-DATA-002</a> sýnir að flokkurinn er meðal fjögurra þingflokka sem leggjast gegn aðild. Þetta er vel skjalfest afstaða sem hefur verið óbreytt frá stofnun flokksins árið 2017.",
@@ -278,7 +267,8 @@
         "claim_text": "Sjálfstæðisflokkur, Framsóknarflokkur og Flokkur fólksins leggjast gegn ESB-aðild ásamt Miðflokknum.",
         "category": "party_positions",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://www.althingi.is/thingmenn/thingflokkar/thingflokkar/\" title=\"Althingi — Party platforms and election results\" target=\"_blank\" rel=\"noopener\">POL-DATA-002</a> staðfestir beint að Sjálfstæðisflokkurinn, Framsóknarflokkurinn, Miðflokkurinn og Flokkur fólksins leggjast allir gegn ESB-aðild. Ný heimild <a href=\"https://xd.is/2026/03/09/thjodin-a-betra-skilid/\" title=\"Sjálfstæðisflokkurinn — party website (xd.is); Miðflokkurinn — public statements; Gallup Þjóðarpúls party breakdown March 2026\" target=\"_blank\" rel=\"noopener\">POL-DATA-020</a> staðfestir þetta enn frekar og lýsir afstöðu hvers flokks í mars 2026. <a href=\"https://politpro.eu/en/iceland/political-parties/flokkur-folksins\" title=\"Flokkur fólksins party platform; Gallup Þjóðarpúls cross-tabulations by party (February 2026); Althingi coalition agreement 2024\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-014</a> bætir við mikilvægu samhengi um sérstöðu Flokks fólksins sem stjórnarflokkur sem er andvígur ESB-aðild á sama tíma og hann situr í ríkisstjórn sem stendur að þjóðaratkvæðagreiðslunni.",
@@ -366,7 +356,8 @@
         "claim_text": "Þingsályktunartillaga um þjóðaratkvæðagreiðslu um aðildarviðræður Íslands að ESB var tekin til umræðu á Alþingi þann 10. mars 2026.",
         "category": "sovereignty",
         "claim_type": "legal_assertion",
-        "confidence": 0.85
+        "confidence": 0.85,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir að utanríkisráðherra lagði fram þingsályktunartillögu um þjóðaratkvæðagreiðslu, en dagsetningin í fullyrðingunni (10. mars 2026) stemmir ekki nákvæmlega við heimildir. Samkvæmt <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> flutti ráðherra ræðu sína 9. mars og <a href=\"https://www.althingi.is/\" title=\"Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-028</a> segir tillöguna hafa verið lögð fram 7. mars 2026. Nýja heimildin <a href=\"https://www.althingi.is/altext/raeda/154/rad20230919T175556.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir (flutningsræða, 154. löggjafarþing); Logi Einarsson (flutningsræða, 153. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-004</a> bendir til þess að tillagan hafi verið tekin til umræðu í byrjun mars en nefnir ekki 10. mars sérstaklega. Hugsanlega var 10. mars dagur fyrstu þingumræðu, en heimildir staðfesta ekki þá dagsetningu beint.",
@@ -414,7 +405,8 @@
         "claim_text": "Íslendingar innleiða nú þegar megnið af regluverki Evrópusambandsins.",
         "category": "eea_eu_law",
         "claim_type": "legal_assertion",
-        "confidence": 0.85
+        "confidence": 0.85,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "<a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EFTA Secretariat — EEA Agreement factsheet; ESA Annual Report 2024\" target=\"_blank\" rel=\"noopener\">EEA-DATA-006</a> og <a href=\"https://www.eftasurv.int/internal-market/implementing-eea-law-national-law/internal-market-scoreboards\" title=\"EFTA Surveillance Authority — Internal Market Scoreboard\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-001</a> sýna að um 70–75% af löggjöf innri markaðarins hafa verið innleidd í íslenskan rétt — um 13.000 lagagerðir frá 1994. Orðið \"megnið\" er því nokkuð réttmætt hvað varðar innri markaðinn. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Screening reports from Iceland's 2010–2013 negotiations; EUR-Lex — Directory of EU legislation\" target=\"_blank\" rel=\"noopener\">SOV-DATA-004</a> bendir hins vegar á að ESB-aðild myndi bæta við 3.000–5.000 lagagerðum til viðbótar á sviðum sem EES-samningurinn nær ekki til: landbúnaður, sjávarútvegur, tollabandalag, skattamál og dóms- og innanríkismál. Fullyrðingin sleppur þessum undanskildu sviðum.",
@@ -463,7 +455,8 @@
         "claim_text": "Snorri Másson segir að ESB-aðild fæli í sér algjöra grundvallarbreytingu á stöðu Íslands, þar sem landið sé sjálfstætt þjóðríki sem heldur utan um sína eigin hagsmuni.",
         "category": "sovereignty",
         "claim_type": "opinion",
-        "confidence": 0.8
+        "confidence": 0.8,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://www.althingi.is/\" title=\"Althingi debate records; Snorri Másson — Op-eds and interviews\" target=\"_blank\" rel=\"noopener\">SOV-DATA-021</a> staðfestir beint að Snorri Másson, þingmaður Miðflokksins, hefur haldið því fram að ESB-aðild fæli í sér grundvallarbreytingu á stöðu Íslands sem sjálfstæðs þjóðríkis. Hann hefur sagt Ísland vera sjálfstætt þjóðríki sem ráði yfir eigin auðlindum og ESB-aðild myndi breyta þeirri stöðu. Heimildirnar staðfesta fullyrðinguna orðrétt. POL-DATA-006 styður samhengið og sýnir hvernig Sjálfstæðisflokkurinn og tengdir flokkar hafa byggt andstöðu sína á fullveldis- og sjávarútvegsrökum.",
@@ -501,7 +494,8 @@
         "claim_text": "Brexit hafi verið mjög erfitt fyrir Breta og þeir séu enn að glíma við afleiðingar þess.",
         "category": "precedents",
         "claim_type": "comparison",
-        "confidence": 0.8
+        "confidence": 0.8,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "Heimildir styðja þessa fullyrðingu vel. <a href=\"https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/\" title=\"UK Office for Budget Responsibility — Economic and fiscal outlook 2023; Centre for European Reform; Bank of England\" target=\"_blank\" rel=\"noopener\">PREC-DATA-008</a> og <a href=\"https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/\" title=\"Office for Budget Responsibility, Brexit Analysis\" target=\"_blank\" rel=\"noopener\">PREC-DATA-002</a> sýna að OBR áætlar um 4% samdrátt í landsframleiðslu Bretlands til lengri tíma. <a href=\"https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/\" title=\"UK Office for National Statistics — Trade statistics; Office for Budget Responsibility — Brexit impact assessment\" target=\"_blank\" rel=\"noopener\">PREC-HIST-012</a> staðfestir að vöruviðskipti Bretlands við ESB drógust saman um 15% og viðskiptahalli jókst. <a href=\"https://www.gov.uk/government/statistics/uk-sea-fisheries-annual-statistics-report-2023\" title=\"UK Marine Management Organisation — UK Sea Fisheries Statistics 2023; UK Trade Info\" target=\"_blank\" rel=\"noopener\">FISH-COMP-005</a> sýnir 18% samdrátt í sjávarafurðaútflutningi til ESB. OBR sagði árið 2024 að spáin væri \"broadly on track\". Efnahagsleg erfiðleikar eru vel skjalfestir.",
@@ -549,7 +543,8 @@
         "claim_text": "Ekki sé auðvelt að yfirgefa Evrópusambandið þegar í það er komið.",
         "category": "precedents",
         "claim_type": "opinion",
-        "confidence": 0.8
+        "confidence": 0.8,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "Heimildir styðja eindregið að erfitt sé að yfirgefa ESB þegar aðild hefst. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M050\" title=\"Treaty on European Union, Article 50\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-001</a> lýsir tveggja ára úrsagnarferli samkvæmt 50. grein Lissabon-samningsins. PREC-HIST-003 sýnir að Brexit-ferlið tók í raun yfir fjögur ár og OBR áætlaði 4% samdrátt í landsframleiðslu. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> staðfestir að ný aðildarríki fá ekki varanlegar undanþágur, sem þýðir að ákvörðun um aðild er nánast óafturkræf í framkvæmd. Nýja heimildin <a href=\"https://link.springer.com/book/10.1057/9780230510302\" title=\"Grabbe, H. (2006) 'The EU's Transformative Power: Europeanization Through Conditionality in Central and Eastern Europe', Palgrave Macmillan\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-016</a> undirstrikar að 95% regluverksins er ósamningsatriði, og <a href=\"https://www.cer.eu/insights/gap-between-brexit-reset-rhetoric-and-reality\" title=\"Centre for European Reform; UK in a Changing Europe\" target=\"_blank\" rel=\"noopener\">PREC-DATA-004</a> staðfestir að engin einfölduð leið til endurinnngöngu sé til staðar. Fullyrðingin er studd — þó úrsögn sé lagalega möguleg, sýna heimildir að hún sé mjög flókin og kostnaðarsöm.",
@@ -602,7 +597,8 @@
         "claim_text": "Verkefni Evrópusambandsins snúist um að stækka.",
         "category": "eea_eu_law",
         "claim_type": "opinion",
-        "confidence": 0.7
+        "confidence": 0.7,
+        "epistemic_type": "factual"
       },
       "verdict": "misleading",
       "explanation": "Fullyrðingin gefur of einfaldaða mynd af Evrópusambandinu. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> sýnir að stækkun er ein af mörgum stefnuáherslum ESB, en Ísland er ekki í forgangi — Vestur-Balkan og Úkraína eru framar á dagskrá. <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> lýsir aðildarferlinu sem skilyrtu og ítarlegu, ekki sem sjálfvirku stækkunarverkefni. <a href=\"https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en\" title=\"European Commission — CAP at a glance; MFF 2021–2027 Regulation (EU) 2020/2093\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-015</a> og AGRI-LEGAL-001 sýna að innri stefnumótun (sameiginleg landbúnaðarstefna, innri markaðurinn) er stór hluti af starfsemi ESB. Stækkun er hluti af starfseminni en fjarri því eina verkefnið.",
@@ -656,7 +652,8 @@
         "claim_text": "Ísland sé mjög eftirsóknarvert fyrir Evrópusambandið að fá inn vegna sterks efnahagslífs.",
         "category": "trade",
         "claim_type": "comparison",
-        "confidence": 0.75
+        "confidence": 0.75,
+        "epistemic_type": "factual"
       },
       "verdict": "misleading",
       "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> lýsir áhuga ESB á Íslandi sem \"aldrei forgangsmáli\" — ESB fagnaði umsókninni 2010 en Ísland er efnahagslega örlítið (VLF um 25 milljarðar evra) og hefur lágmarksáhrif á efnahag sambandsins. Helstu ástæður áhugans eru landfræðilegar og pólitískar — norðurslóðastaða, sjávarútvegur og \"merki\" um stækkun til norræns lýðræðisríkis — en ekki sterkt efnahagslíf. Fullyrðingin ofmetur áhuga ESB verulega. <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> og <a href=\"https://www.sa.is/frettir\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> sýna að íslenskir hagsmunaaðilar halda þessu fram, en <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> staðfestir beinlínis að ESB \"myndi fagna en er ekki virkt að sækjast eftir\" Íslandi.",
@@ -695,7 +692,8 @@
         "claim_text": "Snorri heldur því fram að sum ríki sem gætu gengið í ESB séu í miklu verri stöðu en Ísland, og að Ísland geri stækkunarpakkann betra.",
         "category": "precedents",
         "claim_type": "comparison",
-        "confidence": 0.7
+        "confidence": 0.7,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "<a href=\"https://www.althingi.is/\" title=\"Althingi debate records; Snorri Másson — Op-eds and interviews\" target=\"_blank\" rel=\"noopener\">SOV-DATA-021</a> staðfestir að Snorri Másson, þingmaður Miðflokksins, hefur tekið afstöðu í ESB-umræðunni, þótt sú heimild fjallar um fullveldisafstöðu hans fremur en stækkun. <a href=\"https://www.europarl.europa.eu/thinktank/en/document/EPRS_BRI(2026)782591\" title=\"IMF World Economic Outlook; Eurostat; EPRS Briefing on EU-Iceland Relations\" target=\"_blank\" rel=\"noopener\">PREC-DATA-025</a> styður efnislegan kjarna fullyrðingarinnar: Ísland er langt umfram öll önnur umsóknarríki ESB í landsframleiðslu á mann og myndi líklega vera hreinn greiðandi í fjárhagsáætlun sambandsins, ólíkt öðrum umsóknarríkjum. Heimildin tekur þó skýrt fram að stækkun ESB sé ekki pakkadíll þar sem auður eins ríkis vegi upp á móti fátækt annars.",
@@ -743,7 +741,8 @@
         "claim_text": "Snorri segir að aðrir hagsmunir gildi í Evrópusambandinu og að Ísland yrði bara að verða fyrir skaðanum, þótt margir kostir séu við EES-samninginn.",
         "category": "eea_eu_law",
         "claim_type": "opinion",
-        "confidence": 0.7
+        "confidence": 0.7,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "<a href=\"https://www.althingi.is/\" title=\"Althingi debate records; Snorri Másson — Op-eds and interviews\" target=\"_blank\" rel=\"noopener\">SOV-DATA-021</a> staðfestir afstöðu Snorra Mássonar sem «fullveldissinns» sem telur ESB-aðild ósamrýmanlega sjálfstæði Íslands. Fullyrðingin endurspeglar þessa afstöðu — að aðrir hagsmunir gildi í ESB og Ísland «yrði bara að verða fyrir skaðanum». <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf\" title=\"EEA Agreement — Protocol 3 on trade in processed agricultural products\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-002</a> og <a href=\"https://www.legislation.gov.uk/eut/eea-agreement/article/19\" title=\"EEA Agreement Article 19; Icelandic Ministry for Foreign Affairs — EEA review documentation\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-008</a> staðfesta að EES-samningurinn veiti umtalsverð fríverslunarréttindi en <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> sýnir hvaða svið falla utan hans. Hins vegar er fullyrðingin alhæfing sem heimildir styðja ekki að fullu — ESB-ríki hafa samningsstöðu innan stofnana og lítil ríki hafa náð undanþágum (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1\" title=\"Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-006</a>). Kostir EES-samningsins eru staðfestir en ályktunin um «skaða» er pólitískt mat, ekki staðreynd.",

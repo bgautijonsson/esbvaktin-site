@@ -4,16 +4,16 @@
   "domain": "economic",
   "topic": "currency",
   "subtopic": "iceland_eurozone_interest_rate_spread_2026",
-  "statement": "As of February 2026, the Central Bank of Iceland's key interest rate stands at 7.25%, having been cut in five steps from 9.25% since mid-2024. The ECB deposit facility rate is 2.00% (after cuts from 4.00% beginning June 2024). The spread is 5.25 percentage points. Icelandic non-indexed mortgage rates range from approximately 8.15% to 10.6%, while indexed (inflation-linked) mortgage rates are approximately 4.1% in real terms. In Germany, average mortgage rates are approximately 3.7%. Iceland's inflation (HICP) was 5.2% in February 2026, compared to 1.9% in the eurozone. Over the life of a 25-year mortgage, the difference in total interest paid between Iceland's rates (approximately 9%) and a typical eurozone rate (approximately 3.5%) means Icelandic borrowers pay roughly 3–4 times more in total interest costs.",
+  "statement": "As of March 2026, the Central Bank of Iceland's key interest rate stands at 7.50%, having been raised by 0.25 percentage points on 18 March 2026 — reversing a cutting cycle that had brought rates from 9.25% down to 7.25%. The ECB deposit facility rate is 2.00% (after cuts from 4.00% beginning June 2024). The spread is 5.50 percentage points. Icelandic non-indexed mortgage rates range from approximately 8.15% to 10.6%, while indexed (inflation-linked) mortgage rates are approximately 4.1% in real terms. In Germany, average mortgage rates are approximately 3.7%. Iceland's inflation (HICP) was 5.2% in February 2026, compared to 1.9% in the eurozone. Over the life of a 25-year mortgage, the difference in total interest paid between Iceland's rates (approximately 9%) and a typical eurozone rate (approximately 3.5%) means Icelandic borrowers pay roughly 3–4 times more in total interest costs.",
   "statement_is": "Í febrúar 2026 er stýrivextir Seðlabanka Íslands 7,25% á móti 2,00% hjá Seðlabanka Evrópu — munurinn er 5,25 prósentustig. Íslenskar óverðtryggðar fasteignaveðlán eru á bilinu 8,15–10,6%, en meðaltal fasteignaveðlána í Þýskalandi er um 3,7%; yfir líftíma 25 ára láns þýðir þetta að íslenskir lántakendur greiða á heildina litið um þrisvar sinnum til fjórum sinnum meira í vexti.",
   "source_name": "Central Bank of Iceland; ECB; Eurostat HICP",
-  "source_url": "https://sedlabanki.is/gagnatorg/verdbolga/",
-  "source_date": "2026-02-28",
+  "source_url": "https://www.sedlabanki.is/",
+  "source_date": "2026-03-18",
   "source_type": "official_statistics",
   "source_description_is": "Seðlabanki Íslands er opinber peningamálastofnun með ábyrgð á peningastefnu og fjármálastöðugleika; Seðlabanki Evrópu (ECB) er seðlabanki evrusvæðisins; Eurostat er tölfræðiskrifstofa Evrópusambandsins.",
   "confidence": "high",
   "caveats": "Í íslenska kerfinu með verðtryggð lán er höfuðstóll lánsins tengdur við vísitölu neysluverðs (VNV), sem þýðir að raunvextir eru lægri en nafnvextir á óverðtryggðum lánum, en heildarendurgreiðsla fer eftir þróun verðbólgu. Samanburðurinn á 3–4 sinnum hærri heildarvöxtum miðast við nafnvexti óverðtryggðra lána; verðtryggð lán eru ódýrari en bera verðbólguáhættu. Vaxtamunurinn endurspeglar að hluta til hærri verðbólguvæntingar á Íslandi og áhættuálag vegna gjaldmiðilsins, sem myndi ekki hverfa sjálfkrafa við upptöku evru – Maastricht-skilyrðin krefjast samleitni fyrst. Vaxtalækkanir Seðlabanka Evrópu (ECB) árin 2024–2025 minnkuðu vaxtamuninn frá hámarki sínu árið 2023, sem var um 5,25 prósentustig.",
-  "last_verified": "2026-03-14",
+  "last_verified": "2026-03-27",
   "related_entries": [
     {
       "slug": "currency-data-015",
@@ -36,6 +36,37 @@
   ],
   "citations": [
     {
+      "report_slug": "aetla-ser-ad-tryggja-yfirrad-islands",
+      "report_title": "Ætla sér að tryggja yfirráð Íslands",
+      "report_source": "Morgunblaðið",
+      "report_date": "2026-03-25",
+      "claims": [
+        {
+          "claim_text": "Hvert prósent í lægri vöxtum vegna upptöku evru myndi skila 32 milljörðum króna í lægri vexti",
+          "verdict": "partially_supported",
+          "role": "supporting"
+        },
+        {
+          "claim_text": "Stýrivextir á Íslandi eru almennt 3–5 prósentustigum hærri en á evrusvæðinu",
+          "verdict": "supported",
+          "role": "supporting"
+        }
+      ]
+    },
+    {
+      "report_slug": "af-hverju-ad-saekja-um-evropusambandsadild",
+      "report_title": "Af hverju að sækja um Evrópusambandsaðild?",
+      "report_source": "Kratinn",
+      "report_date": "2026-03-17",
+      "claims": [
+        {
+          "claim_text": "Hár fjármagnskostnaður vegna vaxta og verðbólgu er eitt stærsta hagsmunamál fyrirtækja og heimila á Íslandi",
+          "verdict": "supported",
+          "role": "supporting"
+        }
+      ]
+    },
+    {
       "report_slug": "ekki-nefna-vextina",
       "report_title": "Ekki nefna vextina!",
       "report_source": "DV",
@@ -43,11 +74,42 @@
       "claims": [
         {
           "claim_text": "Munurinn á húsnæðisvaxtastigi Íslands og Þýskalands er 7,35 prósentustig.",
-          "verdict": "partially_supported",
-          "role": "supporting"
+          "verdict": "misleading",
+          "role": "contradicting"
         },
         {
-          "claim_text": "Öll lán í krónum eru með krónuálagi sem nemur að minnsta kosti 5% umfram lán í evrum.",
+          "claim_text": "Seðlabanki Evrópu hefur nýlega lækkað stýrivexti og eru þeir um 4%.",
+          "verdict": "unsupported",
+          "role": "contradicting"
+        }
+      ]
+    },
+    {
+      "report_slug": "fer-eins-fyrir-stjornmalaferli-kristrunar-og-johonnu",
+      "report_title": "Fer eins fyrir stjórnmálaferli Kristrúnar og Jóhönnu",
+      "report_source": "Viðskiptablaðið",
+      "report_date": "2026-03-26",
+      "claims": [
+        {
+          "claim_text": "Verðbólgan er 5,4% (í mars 2026).",
+          "verdict": "partially_supported",
+          "role": "supporting"
+        }
+      ]
+    },
+    {
+      "report_slug": "greid-leid-til-laekkunar-styrivaxta",
+      "report_title": "Greið leið til lækkunar stýrivaxta",
+      "report_source": "Vísir",
+      "report_date": "2026-03-26",
+      "claims": [
+        {
+          "claim_text": "Allt stefnir í að stýrivextir Seðlabankans hækki á næsta vaxtaákvörðunardegi í maí að óbreyttu",
+          "verdict": "unsupported",
+          "role": "contradicting"
+        },
+        {
+          "claim_text": "Hvert prósentustig í stýrivöxtum skilar tugum þúsunda króna lægri mánaðarlegri afborgun af húsnæðisláni",
           "verdict": "partially_supported",
           "role": "supporting"
         }
@@ -72,13 +134,31 @@
       ]
     },
     {
-      "report_slug": "island-yrdi-i-aftursaetinu-rett-eins-og-samfylkingin-er-i-aftursaetinu-hja-vidreisn",
-      "report_title": "Ísland yrði í aftursætinu, rétt eins og Samfylkingin er í aftursætinu hjá Viðreisn",
-      "report_source": "RÚV",
-      "report_date": "2026-03-21",
+      "report_slug": "ordhengilshattur-vill-einkenna-esb-umraeduna",
+      "report_title": "Orðhengilsháttur vill einkenna ESB-umræðuna",
+      "report_source": "Vísir",
+      "report_date": "2026-03-11",
       "claims": [
         {
-          "claim_text": "Verðbólga er 5,2% og atvinnuleysi hefur tvöfaldast.",
+          "claim_text": "Ísland á í erfiðleikum með háa vexti og verðbólgu á þeim tíma sem rætt er um ESB-aðild.",
+          "verdict": "supported",
+          "role": "supporting"
+        }
+      ]
+    },
+    {
+      "report_slug": "thorsteinn-palsson-skrifar-salarastand-sem-thorbergur-kalladi-ruglandi",
+      "report_title": "Þorsteinn Pálsson skrifar: Sálarástand sem Þórbergur kallaði: Ruglandi",
+      "report_source": "DV",
+      "report_date": "2026-03-26",
+      "claims": [
+        {
+          "claim_text": "Gengisstöðugleiki krónunnar er greiddur með 3,5% raunvöxtum, sem þýðir að nafnvextir komast ekki mikið niður fyrir 6% þegar best lætur.",
+          "verdict": "partially_supported",
+          "role": "supporting"
+        },
+        {
+          "claim_text": "Ísland borgar hærra gjald en nokkur önnur vestræn þjóð fyrir stöðugt gengi, mælt í raunvöxtum.",
           "verdict": "partially_supported",
           "role": "supporting"
         }
@@ -91,17 +171,30 @@
       "report_date": "2026-03-07",
       "claims": [
         {
-          "claim_text": "Háir vextir á Íslandi stafa meðal annars af smæð gjaldmiðilsins, sveiflukenndri efnahagsþróun og áhættu sem fylgir krónunni.",
-          "verdict": "supported",
-          "role": "supporting"
-        },
-        {
           "claim_text": "Vextir á húsnæðislánum og fyrirtækjalánum í evrulöndum eru almennt mun lægri en á Íslandi.",
           "verdict": "partially_supported",
           "role": "supporting"
         }
       ]
+    },
+    {
+      "report_slug": "vill-fresta-atkvaedagreidslunni-til-ad-greida-fyrir-vaxtalaekkun",
+      "report_title": "Vill fresta atkvæðagreiðslunni til að greiða fyrir vaxtalækkun",
+      "report_source": "Vísir",
+      "report_date": "2026-03-26",
+      "claims": [
+        {
+          "claim_text": "Verðbólga á Íslandi var 5,2 prósent í febrúar 2026.",
+          "verdict": "supported",
+          "role": "supporting"
+        },
+        {
+          "claim_text": "Seðlabanki Íslands hækkaði stýrivexti um 25 punkta í 7,5 prósent í síðustu viku.",
+          "verdict": "unsupported",
+          "role": "contradicting"
+        }
+      ]
     }
   ],
-  "citation_count": 7
+  "citation_count": 16
 }

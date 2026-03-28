@@ -10,9 +10,9 @@
   "summary": "Greindar 14 fullyrðingar .",
   "capsule": "Staðfest er að þrír stjórnarflokkar náðu samstöðu um að bera ESB-málið undir þjóðina og að Kristrún Frostadóttir lagði áherslu á þörfina fyrir víðtæka samstöðu áður en í viðræður yrði farið. Athyglisvert samhengi sem er vert að kanna nánar: verðbólga á Íslandi hefur að meðaltali verið um 5,5% árlega síðustu tvo áratugi á móti um 2,1% á evrusvæðinu, og vextir Seðlabankans hafa staðið mun hærra en hjá Seðlabanka Evrópu — þetta er eitt af lykilrökum bæði meðmælenda og andstæðinga evruupptöku sem er vert að kynna sér.",
   "verdict_counts": {
-    "supported": 8,
+    "supported": 9,
     "misleading": 1,
-    "partially_supported": 2,
+    "partially_supported": 1,
     "unsupported": 1
   },
   "claim_count": 12,
@@ -31,7 +31,8 @@
         "claim_text": "Kristrún Frostadóttir sagði í ágúst 2024 að þetta væri ekki rétti tíminn til að fara í aðildarviðræður við ESB.",
         "category": "party_positions",
         "claim_type": "opinion",
-        "confidence": 0.55
+        "confidence": 0.55,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> staðfestir þetta beint: Kristrún Frostadóttir sagði skýrt fyrir alþingiskosningarnar í nóvember 2024 að ESB-aðild yrði ekki á dagskrá á næsta kjörtímabili. Forgangsverkefnin yrðu efnahagsmál, ríkisfjármál og heilbrigðismál — ekki aðildarviðræður. Þetta samræmist fullyrðingunni þótt tímasetningin \"ágúst 2024\" sé ekki staðfest nákvæmlega — heimildin vísar til yfirlýsinga \"fyrir alþingiskosningarnar í nóvember 2024\". Efnislega er afstaðan sú sama: ekki rétti tíminn fyrir aðildarviðræður.",
@@ -74,7 +75,8 @@
         "claim_text": "Kristrún Frostadóttir sagði að aðildarferli krefðist ofboðslega sterks umboðs og víðtækrar samstöðu í samfélaginu.",
         "category": "party_positions",
         "claim_type": "opinion",
-        "confidence": 0.65
+        "confidence": 0.65,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://www.ruv.is/\" title=\"Althingi debate records; RÚV interviews with PM Kristrún Frostadóttir, February–March 2026\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-019</a> staðfestir fullyrðinguna beint: forsætisráðherra sagði að aðildarferli krefðist «ofboðslega sterks umboðs» og víðtækrar samstöðu í samfélaginu. Hún sagði í viðtölum og á Alþingi að mjór meirihluti dygði ekki til að hefja aðildarviðræður. POL-DATA-022 styður þetta og lýsir áherslu hennar á víðtæka samstöðu sem lykilþætti í pólitískri nálgun hennar.",
@@ -127,7 +129,8 @@
         "claim_text": "Þrjár stjórnarflokkar náðu samstöðu um að leita til þjóðarinnar í ESB-málinu.",
         "category": "party_positions",
         "claim_type": "legal_assertion",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "Heimildir staðfesta þetta skýrt. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland; Euronews; France24; coalition agreement\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-013</a> sýnir að stjórnarsamstarfið — Samfylkingin, Viðreisn og Flokkur fólksins — samþykktist í stjórnarsáttmála um að efna til þjóðaratkvæðagreiðslu. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> staðfestir að þessir þrfr flokkar stuðli við að halda atkvæðagreiðsluna 29. ágúst 2026.",
@@ -180,7 +183,8 @@
         "claim_text": "Fyrri ríkisstjórnir lofuðu þjóðaratkvæðagreiðslu um ESB-aðild en efndu ekki loforðið.",
         "category": "party_positions",
         "claim_type": "legal_assertion",
-        "confidence": 0.8
+        "confidence": 0.8,
+        "epistemic_type": "factual"
       },
       "verdict": "misleading",
       "explanation": "Fullyrðingin gefur of einfalda mynd. <a href=\"https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/\" title=\"Althingi records; coalition agreements 2009, 2013, 2017, 2021, 2024; Icelandic media archives\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-011</a> sýnir að ríkisstjórnin 2009–2013 skuldbatt sig til þjóðaratkvæðagreiðslu um lokaaðildarsamning — sem aldrei varð til. Aðrar stjórnir lofuðu ekki þjóðaratkvæðagreiðslu beint heldur deildu um afturkollun umsóknarinnar. Hvað telst „svikið loforð“ fer eftir túlkun — mis ríkisstjórnir skuldbundu sig til ólíkra hluta.",
@@ -224,11 +228,17 @@
         "claim_text": "Ekki hefur tekist að berja niður verðbólgu á Íslandi.",
         "category": "currency",
         "claim_type": "statistic",
-        "confidence": 0.8
+        "confidence": 0.8,
+        "epistemic_type": "factual"
       },
-      "verdict": "partially_supported",
-      "explanation": "Heimildir sýna að verðbólga á Íslandi hefur verið viðvarandi hærri en á evrusvæðinu. <a href=\"https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IS\" title=\"World Bank — World Development Indicators (FP.CPI.TOTL.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-013</a> sýnir 4,7% meðalverðbólgu 2000–2024 og <a href=\"https://ec.europa.eu/eurostat/web/hicp\" title=\"Eurostat HICP Flash Estimate; ECB Monetary Policy Decisions\" target=\"_blank\" rel=\"noopener\">CURR-DATA-008</a> sýnir 5,2% á Íslandi í febrúar 2026 samanborið við 1,9% á evrusvæðinu. Fullyrðingin er þó of víð — verðbólga hefur sveiflast talsvert og var undir 3% á árunum 2014–2019. Orðalagið «ekki hefur tekist að berja niður» gefur til kynna algjört mistakmark, en Seðlabankinn hefur náð árangri tímabundið þótt verðbólga hafi jafnan verið yfir markmiði til lengri tíma.",
+      "verdict": "supported",
+      "explanation": "Heimildir staðfesta að verðbólga á Íslandi hefur verið viðvarandi há. Samkvæmt <a href=\"https://ec.europa.eu/eurostat/web/hicp\" title=\"Eurostat HICP Flash Estimate; ECB Monetary Policy Decisions\" target=\"_blank\" rel=\"noopener\">CURR-DATA-008</a> var HICP-verðbólga á Íslandi 5,2% í febrúar 2026, langt yfir 2,5%-markmiði Seðlabankans. <a href=\"https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IS\" title=\"World Bank — World Development Indicators (FP.CPI.TOTL.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-013</a> sýnir að meðalverðbólga á Íslandi var um 4,7% á árunum 2000–2024, og <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__visitolur__1_vnv__1_vnv/VIS01005.px\" title=\"Hagstofa Íslands — Consumer price index; Eurostat — HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-003</a> mælir hana í 5,5% á árunum 2005–2025. <a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a> staðfestir vaxtahækkun Seðlabankans í mars 2026 vegna versnandi verðbólguhorfa, sem styrkir enn fremur fullyrðinguna.",
       "supporting_evidence": [
+        {
+          "id": "CURR-DATA-008",
+          "source_name": "Eurostat HICP Flash Estimate; ECB Monetary Policy Decisions",
+          "source_url": "https://ec.europa.eu/eurostat/web/hicp"
+        },
         {
           "id": "CURRENCY-DATA-013",
           "source_name": "World Bank — World Development Indicators (FP.CPI.TOTL.ZG)",
@@ -240,14 +250,14 @@
           "source_url": "https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__visitolur__1_vnv__1_vnv/VIS01005.px"
         },
         {
-          "id": "CURR-DATA-008",
-          "source_name": "Eurostat HICP Flash Estimate; ECB Monetary Policy Decisions",
-          "source_url": "https://ec.europa.eu/eurostat/web/hicp"
+          "id": "CURRENCY-DATA-015",
+          "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
+          "source_url": "https://www.sedlabanki.is/peningastefna/vaxtaakvardir/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Verðbólga á Íslandi fór niður í um 2% á árunum 2014–2019, sem sýnir tímabundinn árangur. Smæð hagkerfisins, innflutningsháð og gengisáhætta skýra hærri verðbólgu sem myndi ekki hverfa sjálfkrafa með evruaðild. Samkvæmt <a href=\"https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en\" title=\"European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators\" target=\"_blank\" rel=\"noopener\">CURR-DATA-005</a> þyrfti Ísland að uppfylla Maastricht-viðmið áður en evran yrði tekin upp, sem þýðir að verðbólga þyrfti að lækka fyrir aðild að evrusvæðinu.",
-      "confidence": 0.82,
+      "missing_context": "Verðbólga hefur þó sveiflast verulega milli ára — á tímabilinu 2014–2019 var hún að meðaltali 2,3% sem er nálægt markmiði. Ísland er smátt og opið hagkerfi sem er skipulagslega hættara við verðbólgu vegna innflutningsskuldsetningar og gengisáhrifa, og evruaðild myndi ekki sjálfkrafa leysa þann vanda. Seðlabankinn sneri við vaxtastefnunni í mars 2026 eftir lækkun úr 9,25% niður í 7,25%, sem bendir til þess að baráttunni sé langt frá lokum.",
+      "confidence": 0.88,
       "speakers": [
         {
           "name": "Guðrún Hafsteinsdóttir",
@@ -267,15 +277,16 @@
         "claim_text": "Ekki hefur tekist að ná niður vöxtum á Íslandi.",
         "category": "currency",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
-      "explanation": "Heimildir staðfesta að vextir á Íslandi hafa verið þverfóldum hærri en í evrusvæðinu. <a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> sýnir að stýrivextir Seðlabankans hafa að meðaltali verið um 6,5% frá 2000 borið saman við ~1,5% hjá Evrópuseðlabankanum. Sem stóð í byrjun árs 2026 voru stýrivextir um 8–8,5% á Íslandi en um 2,75–3% í evrusvæðinu. Það er augljóst að vextir hafa ekki nað niður í viðjafnanlegt stig við nágrannalönd.",
+      "explanation": "Heimildir staðfesta að vextir á Íslandi hafa verið þverfóldum hærri en í evrusvæðinu. <a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> sýnir að stýrivextir Seðlabankans hafa að meðaltali verið um 6,5% frá 2000 borið saman við ~1,5% hjá Evrópuseðlabankanum. Sem stóð í byrjun árs 2026 voru stýrivextir um 8–8,5% á Íslandi en um 2,75–3% í evrusvæðinu. Það er augljóst að vextir hafa ekki nað niður í viðjafnanlegt stig við nágrannalönd.",
       "supporting_evidence": [
         {
           "id": "CURRENCY-DATA-015",
           "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
-          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+          "source_url": "https://www.sedlabanki.is/peningastefna/vaxtaakvardir/"
         },
         {
           "id": "CURR-DATA-004",
@@ -305,15 +316,16 @@
         "claim_text": "Búið er að höggva á raforkuúnútinn.",
         "category": "energy",
         "claim_type": "opinion",
-        "confidence": 0.2
+        "confidence": 0.2,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://orkustofnun.is/raforkueftirlit/raforkuspa\" title=\"Orkustofnun — Orkuspá og raforkuáætlun\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-007</a> staðfestir að á árunum 2022–2026 jókst umræða um orkuskort eftir áratuga orkuafgangs, og að Landsvirkjun tilkynnti 2024 að hún gæti ekki tekið við nýjum stórum viðskiptavinum. Orkustofnun varaði við í orkuspá sinni. Hugtakið \"raforkuúnútur\" var talið vera á undanhaldi. Fullyrðingin einfaldar þó stöðuna — réttara er að segja að framboð og eftirspurn séu nú nær jafnvægi en að úrinn hafi verið \"höggvinn á\" með endanlegum hætti, enda eru enn miklir virkjunarmöguleikar á Íslandi.",
+      "explanation": "<a href=\"https://orkustofnun.is/raforkumal/raforkuspa/\" title=\"Orkustofnun — Orkuspá og raforkuáætlun\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-007</a> staðfestir að á árunum 2022–2026 jókst umræða um orkuskort eftir áratuga orkuafgangs, og að Landsvirkjun tilkynnti 2024 að hún gæti ekki tekið við nýjum stórum viðskiptavinum. Orkustofnun varaði við í orkuspá sinni. Hugtakið \"raforkuúnútur\" var talið vera á undanhaldi. Fullyrðingin einfaldar þó stöðuna — réttara er að segja að framboð og eftirspurn séu nú nær jafnvægi en að úrinn hafi verið \"höggvinn á\" með endanlegum hætti, enda eru enn miklir virkjunarmöguleikar á Íslandi.",
       "supporting_evidence": [
         {
           "id": "ENERGY-DATA-007",
           "source_name": "Orkustofnun — Orkuspá og raforkuáætlun",
-          "source_url": "https://orkustofnun.is/raforkueftirlit/raforkuspa"
+          "source_url": "https://orkustofnun.is/raforkumal/raforkuspa/"
         }
       ],
       "contradicting_evidence": [],
@@ -338,7 +350,8 @@
         "claim_text": "Ríkisstjórnin hefur lagt fram húsnæðispakka.",
         "category": "housing",
         "claim_type": "legal_assertion",
-        "confidence": 0.85
+        "confidence": 0.85,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://px.hagstofa.is/pxis/pxweb/is/Samfelag/Samfelag__husnaedi/\" title=\"Hagstofa Íslands — Housing Statistics; Seðlabanki Íslands — Financial Stability Report 2025\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-008</a> vísar beint til „húsnæðispakkans“ frá ríkisstjórninni árið 2026, sem miðar að þeim að auka framboð. Þetta staðfestir að pakki hefur verið lagður fram.",
@@ -371,7 +384,8 @@
         "claim_text": "NATO-aðild var tilfinningarríkt mál í áratuði á Íslandi.",
         "category": "precedents",
         "claim_type": "comparison",
-        "confidence": 0.85
+        "confidence": 0.85,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://avalon.law.yale.edu/20th_century/ice001.asp\" title=\"Avalon Project, Yale Law Library — Defense of Iceland: Agreement Between the United States and the Republic of Iceland, May 5, 1951; Government of Iceland — Iceland and the US: Bilateral Relations\" target=\"_blank\" rel=\"noopener\">SOV-HIST-002</a> staðfestir að Ísland gerðist stofnmeðlimur NATO árið 1949 og gekkst undir varnarsamning við Bandaríkin 1951, sem fól í sér hernaðarviðvera á Keflavíkurflugvelli til 2006. Þessi ákvarðanir komu á miðri kalda stríðinu og voru déilumál í áratuði. <a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"1951 US-Iceland Defence Agreement; 2016 Iceland-US Security Cooperation Agreement; US Department of State bilateral relations factsheet\" target=\"_blank\" rel=\"noopener\">SOV-DATA-008</a> undirstrikar sögulegt gildi bandalagsins og þá togstreitu sem hernæmið olli í íslenskum stjórnmálum.",
@@ -419,7 +433,8 @@
         "claim_text": "EES-aðildin var einnig tilfinningarríkt mál á Íslandi.",
         "category": "precedents",
         "claim_type": "comparison",
-        "confidence": 0.6
+        "confidence": 0.6,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application for membership of the European Union, SEC(2010) 153\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-020</a> staðfestir að EES-aðildin var umdeild á Íslandi og að pólitískt viðkvæm mál — einkum sjávarútvegur, landbúnaður og gjaldeyrisstefna — féllu utan samningsins. <a href=\"https://fel.hi.is/is/rannsoknir-spurningalistakannanir/simakannanir\" title=\"Félagsvísindastofnun — Methodology notes on EU polling; comparison of Gallup, MMR, and Maskína polls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-010</a> bendir á orðalag skoðanakannana um Evrópusambandsaðild sem vitnisburð um viðvarandi tilfinningu í kringum Evrópusamstarf. Jafnvel nú, meira en 30 árum síðar, enduróma tilfinningaleg rök í umræðunni um ESB-aðild — sama grundvallarandstæðan milli fullveldis og alþjóðasamstarfs. Heimildir um sögu flokkastefnu (POL-DATA-006) sýna að Sjálfstæðisflokkurinn studdi EES sem valkost við ESB-aðild á 10. áratugnum, sem undirstrikar pólitískan hita málsins.",
@@ -462,7 +477,8 @@
         "claim_text": "Guðrún Hafsteinsdóttir er formaður Sjálfstæðisflokksins.",
         "category": "party_positions",
         "claim_type": "statistic",
-        "confidence": 0.4
+        "confidence": 0.4,
+        "epistemic_type": "factual"
       },
       "verdict": "unsupported",
       "explanation": "<a href=\"https://www.althingi.is/thingmenn/thingflokkar/sjalfstaedisflokkur/\" title=\"Althingi — Session 157 member registry\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-006</a> staðfestir að Guðrún Hafsteinsdóttir sé þingmaður Sjálfstæðisflokksins fyrir Suðurkjördæmi, en nefnir hana ekki sem formann flokksins. Engin heimild í staðreyndagrunninum staðfestir formannsembætti hennar. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T175023.html\" title=\"Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-003</a> sýnir hana tala fyrir hönd Sjálfstæðisflokksins á þingi, sem bendir til áberandi hlutverks, en \"tala fyrir hönd flokks\" þýðir ekki endilega formennsku.",
@@ -495,7 +511,8 @@
         "claim_text": "Sjálfstæðisflokkurinn er á móti ESB-aðildarviðræðum.",
         "category": "party_positions",
         "claim_type": "opinion",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "Heimildir staðfesta þetta skýrt. <a href=\"https://www.althingi.is/thingmenn/thingflokkar/thingflokkar/\" title=\"Althingi — Party platforms and election results\" target=\"_blank\" rel=\"noopener\">POL-DATA-002</a> sýnir að Sjálfstæðisflokkurinn er á móti ESB-aðild og hefur sögulega verið sterkasti andstöðungaðilinn. <a href=\"https://xd.is/2026/03/09/thjodin-a-betra-skilid/\" title=\"Sjálfstæðisflokkurinn — party website (xd.is); Miðflokkurinn — public statements; Gallup Þjóðarpúls party breakdown March 2026\" target=\"_blank\" rel=\"noopener\">POL-DATA-020</a> staðfestir að flokkurinn leggur áherslu á fullveldi, auðlindastjórn og EES-fyrirkomulag. Fyrrverandi formaður flokksins lagði sex sinnum fram þingsályktunartillögu um að draga ESB-umsókn til baka.",
@@ -573,8 +590,8 @@
       },
       "stance": "pro_eu",
       "slug": "kristrun-frostadottir",
-      "mention_count": 37,
-      "credibility": 0.69
+      "mention_count": 42,
+      "credibility": 0.71
     },
     {
       "name": "Guðrún Hafsteinsdóttir",
@@ -584,8 +601,7 @@
       "attribution_type": "quoted",
       "claim_count": 4,
       "verdicts": {
-        "supported": 3,
-        "partially_supported": 1
+        "supported": 4
       },
       "stance": "anti_eu",
       "slug": "gudrun-hafsteinsdottir",

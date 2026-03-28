@@ -10,10 +10,10 @@
   "summary": "Greindar 24 fullyrðingar .",
   "capsule": "Matarverð á Íslandi er meðal þess hæsta í heiminum og vextir af óverðtryggðum húsnæðislánum eru mun hærri hér en í löndum sem nota evru — þetta er rétt og vel staðfest af gögnum. Athyglisvert er þó að um 80% íslenskra húsnæðislána eru verðtryggð með lægri nafnvöxtum, svo samanburðurinn á 10,75% íslenskum vöxtum við 3,4% þýska gefur ekki fulla mynd af raunverulegum kostnaðarmun. Jafnframt er vert að vita að nýir ESB-aðilar þurfa að uppfylla strangar kröfur — svokölluð Maastricht-skilyrði — áður en þeir mega taka upp evru, og ferð Króatíu frá aðild til evrutöku tók tíu ár.",
   "verdict_counts": {
-    "partially_supported": 7,
+    "partially_supported": 5,
     "unverifiable": 2,
     "supported": 1,
-    "misleading": 5,
+    "misleading": 7,
     "unsupported": 3
   },
   "claim_count": 18,
@@ -31,7 +31,8 @@
         "claim_text": "Matarverð á Íslandi er það þriðja hæsta í heiminum samkvæmt nýlegum könnunum.",
         "category": "trade",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "Heimildir staðfesta að matarverð á Íslandi er meðal þess hæsta í heiminum, en «þriðja hæsta» er ekki hægt að sannreyna nákvæmlega. <a href=\"https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/\" title=\"Eurostat — Comparative price levels (prc_ppp_ind); Hagstofa Íslands — Consumer Price Index\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-014</a> sýnir að Ísland er á bak við Sviss og Noreg meðal evrópskra ríkja, en það á eingöngu við um Evrópu — heimildir bera ekki saman við alla heimsálfu. <a href=\"https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/\" title=\"Eurostat — Purchasing power parities (prc_ppp_ind)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-007</a> sýnir vísitölu matvælaverðs 143,9 (ESB-27 = 100) sem er lægri en <a href=\"https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/\" title=\"Eurostat — Comparative price levels (prc_ppp_ind); Hagstofa Íslands — Consumer Price Index\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-014</a> sem sýnir 155. Mismunur milli heimilda bendir til þess að mæliaðferðir skipti máli. Fullyrðingin er í stórum dráttum rétt en «þriðja hæsta í heiminum» er ekki staðfest af tiltækum gögnum.",
@@ -79,7 +80,8 @@
         "claim_text": "Bjórverð á Íslandi er allt að fjórfalt hærra en í Þýskalandi.",
         "category": "trade",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "unverifiable",
       "explanation": "Engar heimildir í staðreyndagrunni fjalla sérstaklega um bjórverð eða áfengisverð í samanburði við Þýskaland. <a href=\"https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/\" title=\"Eurostat — Comparative price levels of consumer goods and services (prc_ppp_ind)\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-003</a> staðfestir að almennt neysluverð á Íslandi er um 50% yfir ESB-meðaltali, en bjór ber háa áfengisskatta og álagningar ÁTVR sem gætu margfaldað verðmuninn umfram almenna verðvísitölu. Fullyrðinguna er ekki hægt að sannreyna út frá fyrirliggjandi gögnum.",
@@ -106,7 +108,8 @@
         "claim_text": "Húsnæðislán í Þýskalandi bera um 3,4% vexti (10 ára lán í evrum).",
         "category": "currency",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> staðfestir að meðalvextir húsnæðislána á evrusvæðinu voru um 3,4% seint á árinu 2025. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a> sýnir bilið 3,2–3,8% eftir binditíma og aðildarríki. Talan 3,4% fyrir Þýskaland fellur vel innan þess bils. <a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a> sýnir að vextir í Þýskalandi voru 4,22% í janúar 2024 en hafa lækkað síðan — sem samræmist fullyrðingunni.",
@@ -149,10 +152,11 @@
         "claim_text": "Húsnæðislán hjá Landsbankanum á Íslandi bera 10,75% vexti (í íslenskum krónum).",
         "category": "currency",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> og <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a> sýna að óverðtryggð breytileg húsnæðislán á Íslandi bera um 7,5–9% vexti í byrjun 2026. Talan 10,75% er hærri en þetta bil, en gæti átt við ákveðna lánsgerð hjá Landsbankanum sem er ekki nákvæmlega tilgreind í heimildum. Stýrivextir Seðlabankans voru 7,25% samkvæmt <a href=\"https://sedlabanki.is/peningastefna/peningastefnunefnd/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a>, og álag banka gæti fært endanlega vexti nær 10,75% fyrir tiltekna afurð.",
+      "explanation": "<a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> og <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a> sýna að óverðtryggð breytileg húsnæðislán á Íslandi bera um 7,5–9% vexti í byrjun 2026. Talan 10,75% er hærri en þetta bil, en gæti átt við ákveðna lánsgerð hjá Landsbankanum sem er ekki nákvæmlega tilgreind í heimildum. Stýrivextir Seðlabankans voru 7,25% samkvæmt <a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a>, og álag banka gæti fært endanlega vexti nær 10,75% fyrir tiltekna afurð.",
       "supporting_evidence": [
         {
           "id": "HOUS-DATA-005",
@@ -167,7 +171,7 @@
         {
           "id": "CURRENCY-DATA-017",
           "source_name": "Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar",
-          "source_url": "https://sedlabanki.is/peningastefna/peningastefnunefnd/"
+          "source_url": "https://www.sedlabanki.is/peningastefna/vaxtaakvardir/"
         }
       ],
       "contradicting_evidence": [],
@@ -192,30 +196,31 @@
         "claim_text": "Munurinn á húsnæðisvaxtastigi Íslands og Þýskalands er 7,35 prósentustig.",
         "category": "currency",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
-      "verdict": "partially_supported",
-      "explanation": "<a href=\"https://sedlabanki.is/gagnatorg/verdbolga/\" title=\"Central Bank of Iceland; ECB; Eurostat HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-007</a> gefur bestu tölurnar: óverðtryggðir íslenskir húsnæðisvextir eru um 8,15–10,6% og meðalvextir í Þýskalandi um 3,7%. Munurinn er þar með á bilinu 4,45–6,9 prósentustig, ekki 7,35 prósentustig eins og fullyrðingin segir. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a> sýnir svipað mynstur: óverðtryggðir vextir á Íslandi 7,5–8,5% og evrusvæðið 3,2–3,8%. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> staðfestir svipaðar tölur. Talan 7,35 er því utan þess bils sem heimildir sýna, nema miðað sé við hæstu íslensku vextina. Þar að auki er samanburðurinn flókinn þar sem 80% íslenskra húsnæðislána eru verðtryggð og bera 3,5–5,5% nafnvexti auk verðbóta.",
-      "supporting_evidence": [
+      "verdict": "misleading",
+      "explanation": "Talan 7,35 prósentustig fær ekki stoð í heimildum. <a href=\"https://www.sedlabanki.is/\" title=\"Central Bank of Iceland; ECB; Eurostat HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-007</a> sýnir að óverðtryggðir húsnæðisvextir á Íslandi eru 8,15–10,6% og meðalvextir í Þýskalandi um 3,7%. Jafnvel með hæstu íslensku vextina (10,6%) er munurinn 6,9 prósentustig, og miðað við lægstu (8,15%) er hann 4,45 prósentustig. Fullyrðingin notar tiltekna tölu sem passar ekki við tiltæk gögn. Þar að auki benda <a href=\"https://sedlabanki.is/fjarmalastodugleiki/\" title=\"Seðlabanki Íslands — Financial Stability Report 2025; Húsnæðis- og mannvirkjastofnun (HMS) — Housing Market Overview\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-010</a> og <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a> á að um 80% íslenskra húsnæðislána eru verðtryggð með nafnvöxtum 3,5–5,5%, sem þrengir bilið verulega. Samanburður sem einblínir á óverðtryggð lán gefur ranga mynd af raunstöðunni.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [
         {
           "id": "CURR-DATA-007",
           "source_name": "Central Bank of Iceland; ECB; Eurostat HICP",
-          "source_url": "https://sedlabanki.is/gagnatorg/verdbolga/"
+          "source_url": "https://www.sedlabanki.is/"
+        },
+        {
+          "id": "HOUSING-DATA-010",
+          "source_name": "Seðlabanki Íslands — Financial Stability Report 2025; Húsnæðis- og mannvirkjastofnun (HMS) — Housing Market Overview",
+          "source_url": "https://sedlabanki.is/fjarmalastodugleiki/"
         },
         {
           "id": "HOUSING-DATA-008",
           "source_name": "European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report",
           "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
-        },
-        {
-          "id": "HOUS-DATA-005",
-          "source_name": "Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase",
-          "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Flestir íslenskir lántakendur eru á verðtryggðum lánum (80%) þar sem nafnvextir eru 3,5–5,5% — samanburður við Þýskaland á grundvelli óverðtryggðra vaxta er villandi. Evruaðild myndi ekki sjálfkrafa lækka vexti á Ísland í evrusvæðisstig — áhættuálag, bankakostnaður og húsnæðismarkaður hafa áhrif. <a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a> sýnir að Króatía upplifði vaxtajöfnun eftir evruupptöku en aðstæður eru ólíkar.",
-      "confidence": 0.55,
+      "missing_context": "Engin heimild staðfestir nákvæmlega 7,35 prósentustiga mun. Verðtryggð íslensk lán bera nafnvexti 3,5–5,5% — munurinn á þeim og þýskum vöxtum (3,7%) er nánast enginn á nafnvöxtum, þótt verðtrygging bætist við. Samanburðurinn er auk þess háður hvaða vexti eru valdir á hvorri hlið. <a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a> sýnir fordæmi frá Króatíu þar sem húsnæðisvextir færðust nálægt evrusvæðismeðaltali eftir evruaðild, en sú reynsla á ekki beint við um mun Íslands og Þýskalands.",
+      "confidence": 0.82,
       "speakers": [
         {
           "name": "Thomas Möller",
@@ -235,7 +240,8 @@
         "claim_text": "Ungt fólk á Íslandi borgar 4,4 milljónum króna meira í vexti á fyrsta ári en Þjóðverjar sem taka 60 milljón króna (400 þúsund evru) húsnæðislán.",
         "category": "currency",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "misleading",
       "explanation": "Reikningurinn byggir á forsendum fullyrðinga 3–5: 60M x (10,75% - 3,4%) = 4,41M kr. Stærðfræðin er rétt miðað við þessar forsendur. Hins vegar er samanburðurinn villandi samkvæmt <a href=\"https://sedlabanki.is/fjarmalastodugleiki/\" title=\"Seðlabanki Íslands — Financial Stability Report 2025; Húsnæðis- og mannvirkjastofnun (HMS) — Housing Market Overview\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-010</a> þar sem um 80% íslenskra lántaka eru með verðtryggð lán á 3,5–5,5% nafnvöxtum, ekki 10,75%. Fyrir dæmigerðan íslenskan lántaka er vaxtamunurinn mun minni.",
@@ -279,7 +285,8 @@
         "claim_text": "Íslensk heimili borga 367 þúsund krónum meira á mánuði í vexti en þýsk heimili, sem er um 500 þúsund krónur fyrir skatta.",
         "category": "currency",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "misleading",
       "explanation": "Talan 367 þúsund kr./mán. er 4,4M kr./12 og byggir á sama villandi samanburði og fullyrðing 6 — hæstu íslensku óverðtryggðu vextir bornar saman við evrumeðaltal. <a href=\"https://sedlabanki.is/fjarmalastodugleiki/\" title=\"Seðlabanki Íslands — Financial Stability Report 2025; Húsnæðis- og mannvirkjastofnun (HMS) — Housing Market Overview\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-010</a> sýnir að 80% íslenskra húsnæðislána eru verðtryggð á 3,5–5,5% nafnvöxtum. Þar af leiðandi er raunmunurinn á mánaðarlegum vöxtum mun minni en haldið er fram.",
@@ -323,15 +330,16 @@
         "claim_text": "265 fyrirtæki á Íslandi hafa yfirgefið krónuna og gera upp rekstur sinn aðallega í evrum.",
         "category": "currency",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "unverifiable",
-      "explanation": "Engin heimild í staðreyndagrunni staðfestir töluna 265 fyrirtæki. <a href=\"https://statice.is/statistics/economy/external-trade/\" title=\"Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður\" target=\"_blank\" rel=\"noopener\">FISH-DATA-027</a> staðfestir að sjávarútvegsfyrirtæki selja vörur sínar að stórum hluta í erlendum gjaldmiðlum og <a href=\"https://www.sa.is/frettir\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> nefnir rök SA um gjaldeyrisáhættu, en hvorug heimildin nefnir nákvæma tölu fyrirtækja sem «hafa yfirgefið krónuna».",
+      "explanation": "Engin heimild í staðreyndagrunni staðfestir töluna 265 fyrirtæki. <a href=\"https://hagstofa.is/talnaefni/efnahagsmal/utanrikisverslun/\" title=\"Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður\" target=\"_blank\" rel=\"noopener\">FISH-DATA-027</a> staðfestir að sjávarútvegsfyrirtæki selja vörur sínar að stórum hluta í erlendum gjaldmiðlum og <a href=\"https://www.sa.is/frettir\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> nefnir rök SA um gjaldeyrisáhættu, en hvorug heimildin nefnir nákvæma tölu fyrirtækja sem «hafa yfirgefið krónuna».",
       "supporting_evidence": [
         {
           "id": "FISH-DATA-027",
           "source_name": "Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður",
-          "source_url": "https://statice.is/statistics/economy/external-trade/"
+          "source_url": "https://hagstofa.is/talnaefni/efnahagsmal/utanrikisverslun/"
         }
       ],
       "contradicting_evidence": [],
@@ -356,24 +364,25 @@
         "claim_text": "Öll lán í krónum eru með krónuálagi sem nemur að minnsta kosti 5% umfram lán í evrum.",
         "category": "currency",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
-      "verdict": "partially_supported",
-      "explanation": "Vaxtamunur milli Íslands og evrusvæðisins er verulegur en fullyrðingin einfaldar of mikið. Samkvæmt <a href=\"https://sedlabanki.is/gagnatorg/verdbolga/\" title=\"Central Bank of Iceland; ECB; Eurostat HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-007</a> er stýrivextamunur um 5,25 prósentustig (7,25% á Íslandi á móti 2,00% hjá ECB) og óverðtryggð húsnæðislán á Íslandi eru á bilinu 8–10,6% á móti um 3,5–3,7% í Þýskalandi. Hins vegar sýna <a href=\"https://sedlabanki.is/fjarmalastodugleiki/\" title=\"Seðlabanki Íslands — Financial Stability Report 2025; Húsnæðis- og mannvirkjastofnun (HMS) — Housing Market Overview\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-010</a> og <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> að um 80% íslenskra húsnæðislána eru verðtryggð með nafnvexti á bilinu 3,5–5,5% — sem er nær evrópskum vöxtum en fullyrðingin gefur til kynna. Fullyrðingin um «að minnsta kosti 5%» álag á öll lán í krónum er of víð þar sem hún gerir ekki greinarmun á verðtryggðum og óverðtryggðum lánum.",
+      "verdict": "misleading",
+      "explanation": "Fullyrðingin segir að «öll lán í krónum» beri a.m.k. 5% álag umfram evrulán. Samkvæmt <a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> er munur stýrivaxta Seðlabankans og Seðlabanka Evrópu 5,50 prósentustig (7,50% á móti 2,00%) í mars 2026, en stýrivextir eru ekki það sama og útlánsvextir. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a> og <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> sýna að óverðtryggð íslensk húsnæðislán bera 7,5–8,5% vexti á móti u.þ.b. 3,4% meðaltali á evrusvæðinu — munur um 4–5 prósentustig. Hins vegar eru u.þ.b. 80% íslenskra húsnæðislána verðtryggð (<a href=\"https://sedlabanki.is/fjarmalastodugleiki/\" title=\"Seðlabanki Íslands — Financial Stability Report 2025; Húsnæðis- og mannvirkjastofnun (HMS) — Housing Market Overview\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-010</a>) með 3,5–5,5% nafnvöxtum auk verðbótaálags, og samanburður við evrulán er þar mun flóknari. Fullyrðingin er villandi af tveimur ástæðum: hún á ekki við «öll lán» þar sem verðtryggð lán bera lægri nafnvexti, og 5% viðmiðið er of einfalt þegar horft er til heildarlánskostnaðar.",
       "supporting_evidence": [
         {
           "id": "CURRENCY-DATA-015",
           "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
-          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
-        },
-        {
-          "id": "CURR-DATA-007",
-          "source_name": "Central Bank of Iceland; ECB; Eurostat HICP",
-          "source_url": "https://sedlabanki.is/gagnatorg/verdbolga/"
+          "source_url": "https://www.sedlabanki.is/peningastefna/vaxtaakvardir/"
         },
         {
           "id": "HOUS-DATA-005",
           "source_name": "Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase",
+          "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
+        },
+        {
+          "id": "HOUSING-DATA-008",
+          "source_name": "European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report",
           "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
         }
       ],
@@ -382,15 +391,10 @@
           "id": "HOUSING-DATA-010",
           "source_name": "Seðlabanki Íslands — Financial Stability Report 2025; Húsnæðis- og mannvirkjastofnun (HMS) — Housing Market Overview",
           "source_url": "https://sedlabanki.is/fjarmalastodugleiki/"
-        },
-        {
-          "id": "HOUSING-DATA-008",
-          "source_name": "European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report",
-          "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
         }
       ],
-      "missing_context": "Verðtryggð húsnæðislán (80% íslenskra lána) bera nafnvexti nálægt 3,5–5,5% sem er mun nær evrópskum vöxtum — en höfuðstóll hækkar með verðbólgu, sem gerir heildargreiðslubyrðina háðan verðbólguþróun. Samanburður milli kerfa krefst greiningar á raunvöxtum, ekki nafnvöxtum eingöngu. Þá myndi evruaðild ekki sjálfkrafa leiða til evrópskra vaxta á Íslandi vegna Maastricht-skilyrða og staðbundinna áhættuálaga.",
-      "confidence": 0.75,
+      "missing_context": "Verðtryggð lán (80% húsnæðislána) bera lægri nafnvexti en 5% álag gefur til kynna, en höfuðstóllinn hækkar með verðbólgu. Heildarkostnaður yfir lánstíma getur verið sambærilegur eða hærri (<a href=\"https://arxiv.org/abs/1302.4112\" title=\"Ólafsson (2013) — 'An Examination of the Effect on the Icelandic Banking System of Verðtryggð Lán', arXiv:1302.4112\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-018</a> nefnir 4,6-föld endurgreiðslu). Þá myndi evruaðild ekki sjálfkrafa tryggja evruvexti — Maastricht-skilyrði og innlent áhættuálag skipta þar máli.",
+      "confidence": 0.8,
       "speakers": [
         {
           "name": "Thomas Möller",
@@ -410,7 +414,8 @@
         "claim_text": "Í öllum löndum í norðurhluta Evrópu sem nota evrur eru vextir af húsnæðislánum um 4%.",
         "category": "currency",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "<a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a> staðfestir að meðalvextir húsnæðislána á evrusvæðinu voru 3,2–3,8% seint á árinu 2025/byrjun 2026. <a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a> sýnir evrumeðaltal um 4,05% í janúar 2024 og Þýskaland 4,22%. Fullyrðingin «um 4%» er rétt sem gróf alhæfing, en <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a> bendir á að vextir séu nær 3,2–3,8% í byrjun 2026, ekki nákvæmlega 4%.",
@@ -453,20 +458,31 @@
         "claim_text": "Seðlabanki Evrópu hefur nýlega lækkað stýrivexti og eru þeir um 4%.",
         "category": "currency",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "unsupported",
-      "explanation": "CURR-DATA-004 og <a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> staðfesta báðar að stýrivextir ECB (deposit facility rate) voru um 2,75% í byrjun 2026. Fullyrðingin um «um 4%» er röng — stýrivextir ECB hafa lækkað úr hámarki ~4% árið 2023 niður í 2,75%. Rétt er að ECB hefur nýlega lækkað vexti, en vaxtastigið er ekki lengur um 4%.",
+      "explanation": "Fullyrðingin segir að stýrivextir Seðlabanka Evrópu séu «um 4%» en samkvæmt <a href=\"https://ec.europa.eu/eurostat/web/hicp\" title=\"Eurostat HICP Flash Estimate; ECB Monetary Policy Decisions\" target=\"_blank\" rel=\"noopener\">CURR-DATA-008</a> lækkaði Seðlabanki Evrópu innlánsvexti sjö sinnum frá júní 2024 og þeir stóðu í 2,00% í febrúar 2026. <a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> staðfestir sama: ECB deposit facility rate er 2,00%. Talan 4% átti við upphafsgildi lækkunarferilsins (4,00% í júní 2024) en hefur verið helminguð síðan. Rétt er að Seðlabanki Evrópu hefur nýlega lækkað vexti, en núverandi vaxtastig er 2%, ekki «um 4%». Fullyrðingin byggir á úreltu gildi.",
       "supporting_evidence": [],
       "contradicting_evidence": [
         {
+          "id": "CURR-DATA-008",
+          "source_name": "Eurostat HICP Flash Estimate; ECB Monetary Policy Decisions",
+          "source_url": "https://ec.europa.eu/eurostat/web/hicp"
+        },
+        {
           "id": "CURRENCY-DATA-015",
           "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
-          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+          "source_url": "https://www.sedlabanki.is/peningastefna/vaxtaakvardir/"
+        },
+        {
+          "id": "CURR-DATA-007",
+          "source_name": "Central Bank of Iceland; ECB; Eurostat HICP",
+          "source_url": "https://www.sedlabanki.is/"
         }
       ],
-      "missing_context": "Greinarmunur milli stýrivaxta ECB (2,75%) og meðalvaxta húsnæðislána á evrusvæðinu (3,2–3,8%) skiptir máli. Greinarhöfundur kann að hafa ruglað saman þessum tveimur, þar sem húsnæðisvextir eru nær 4% en stýrivextir eru mun lægri.",
-      "confidence": 0.85,
+      "missing_context": "Stýrivextir Seðlabanka Evrópu stóðu í 4,00% í júní 2024 og hafa verið lækkaðir sjö sinnum í 2,00%. Fullyrðingin kann að endurspegla upplýsingar sem voru réttar á fyrri hluta árs 2024 en eru nú úreltar. Munurinn er verulegur: 2% er helmingi lægra en 4%.",
+      "confidence": 0.95,
       "speakers": [
         {
           "name": "Thomas Möller",
@@ -486,7 +502,8 @@
         "claim_text": "Ef Ísland tæki upp evru sem gjaldmiðil yrðu húsnæðisvextir um 4% eins og í öðrum evrulöndum en ekki 10,75%.",
         "category": "currency",
         "claim_type": "prediction",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "misleading",
       "explanation": "Fullyrðingin gefur í skyn sjálfvirka og fulla vaxtajöfnun sem heimildir hafna. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a> bendir sérstaklega á að evruaðild myndi ekki sjálfkrafa leiða til evrumeðalvaxta vegna innlendra áhættuþátta. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> undirstrikar að evruaðild gæti einungis orðið mörgum árum eftir ESB-aðild. Auk þess varar <a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a> við því að lægri vextir geti hækkað húsnæðisverð í stað þess að bæta kjör.",
@@ -540,7 +557,8 @@
         "claim_text": "Með upptöku evru yrðu vextir af húsnæðislánum allt að 60% lægri en í krónum.",
         "category": "currency",
         "claim_type": "prediction",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "misleading",
       "explanation": "Ef borinn er saman 10,75% (íslenskt hámark) og ~4% (evrumeðaltal) fæst um 63% lækkun, sem stærðfræðilega styður fullyrðinguna. En <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a> hafnar sjálfvirkri vaxtajöfnun og bendir á innlenda áhættuþætti. <a href=\"https://sedlabanki.is/fjarmalastodugleiki/\" title=\"Seðlabanki Íslands — Financial Stability Report 2025; Húsnæðis- og mannvirkjastofnun (HMS) — Housing Market Overview\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-010</a> sýnir að 80% Íslendinga eru á verðtryggðum vöxtum (3,5–5,5%) — munurinn frá evrusvæðinu er þá mun minni. Rangt er að gefa í skyn 60% lækkun fyrir alla lántaka.",
@@ -589,7 +607,8 @@
         "claim_text": "Heimili sem skulda 60 milljónir myndu hafa tæplega 400 þúsund krónur meira milli handanna á mánuði við upptöku evru.",
         "category": "currency",
         "claim_type": "prediction",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "prediction"
       },
       "verdict": "misleading",
       "explanation": "Útreikningurinn byggir á forsendunni 60M x (10,75% - 4%) / 12 ≈ 338 þ.kr., sem er nálægt «tæplega 400 þúsund» ef reiknað er örlítið hærra. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a> og <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> hafna þó forsendinni um sjálfvirka vaxtajöfnun. Samkvæmt <a href=\"https://sedlabanki.is/fjarmalastodugleiki/\" title=\"Seðlabanki Íslands — Financial Stability Report 2025; Húsnæðis- og mannvirkjastofnun (HMS) — Housing Market Overview\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-010</a> eru 80% íslenskra húsnæðislána verðtryggð á 3,5–5,5% — sparnaðurinn yrði mun minni.",
@@ -633,7 +652,8 @@
         "claim_text": "Upptaka evru mun leiða til aukinnar samkeppni á bankamarkaði og í tryggingum þar sem erlend fyrirtæki munu koma til landsins í auknum mæli, eins og hefur gerst í öllum löndum sem taka upp evru.",
         "category": "currency",
         "claim_type": "prediction",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "prediction"
       },
       "verdict": "partially_supported",
       "explanation": "Grunnhugmyndin — að evruupptaka auki samkeppni á fjármálamarkaði — hefur nokkurn stuðning. <a href=\"https://www.sa.is/frettir\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> lýsir mati Samtaka atvinnulífsins um að aðild myndi lækka fjármagnskostnað um 2–3 prósentustig vegna minnkaðs gjaldmiðlaáhættuálags. <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> staðfestir að evruupptaka flyti peningamálastefnu til Seðlabanka Evrópu. Hins vegar er fullyrðingin of víðtæk á tvo vegu: Í fyrsta lagi staðfestir engin heimild að erlend fjármálafyrirtæki «komi til landsins í auknum mæli í öllum löndum» sem taka upp evru — <a href=\"https://www.ecb.europa.eu/press/financial-stability-publications/fsr/html/index.en.html\" title=\"ECB Financial Stability Review; Ahearne, A. et al. (2005). 'House Prices and Monetary Policy: A Cross-Country Study.' BIS; Lane, P. (2012). 'The European Sovereign Debt Crisis.' Journal of Economic Perspectives\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-007</a> sýnir þvert á móti mjög ólíka reynslu milli landa. Í öðru lagi veitir EES-samningurinn nú þegar aðgang að innri markaðnum fyrir fjármálaþjónustu, svo evran ein og sér myndi ekki opna markað sem er þegar opinn að formi til.",
@@ -677,7 +697,8 @@
         "claim_text": "Háir vextir á Íslandi valda hækkun húsnæðisverðs og þar með vísitöluhækkun, hærra matarverði og kynda undir verðbólgu.",
         "category": "currency",
         "claim_type": "opinion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "unsupported",
       "explanation": "Fullyrðingin stangast á við hefðbundin hagfræðikenningar og heimildir. <a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a> og <a href=\"https://doi.org/10.1016/j.jue.2008.07.007\" title=\"Glaeser, E., Gyourko, J., & Saiz, A. (2008). Housing supply and housing bubbles. Journal of Urban Economics; Himmelberg, C., Mayer, C., & Sinai, T. (2005). Assessing high house prices. Journal of Economic Perspectives; IMF Working Paper WP/19/73 — House Prices and Interest Rates\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-006</a> sýna mikla rannsóknarvinnu sem staðfestir hið gagnstæða: lágir vextir auka eftirspurn og hækka húsnæðisverð, sérstaklega á framboðsþrengdum mörkuðum. Háir vextir eru almennt ætlaðir til að hemja verðbólgu, ekki kynda undir henni. Tengsl hávaxtaumhverfis við matarverð eru ekki studd af heimildum.",
@@ -720,7 +741,8 @@
         "claim_text": "Viðreisn er eini flokkurinn á Alþingi sem vill að Ísland gangi í ESB og taki upp evru.",
         "category": "party_positions",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "unsupported",
       "explanation": "<a href=\"https://www.althingi.is/thingmenn/thingflokkar/thingflokkar/\" title=\"Althingi — Party platforms and election results\" target=\"_blank\" rel=\"noopener\">POL-DATA-001</a> staðfestir skýrt að bæði Samfylkingin og Viðreisn styðja formlega ESB-aðild. <a href=\"https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/\" title=\"Althingi — Government composition, session 157\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-002</a> og <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Coalition agreement (stjórnarsáttmáli) 2024; party platforms; media reporting March 2026\" target=\"_blank\" rel=\"noopener\">POL-DATA-021</a> staðfesta að ríkisstjórnin samanstendur af tveimur ESB-jákvæðum flokkum. Viðreisn er því ekki eini flokkurinn — Samfylkingin hefur stutt ESB-aðild síðan 2007 og leiddi umsóknarferlið 2009.",
@@ -763,15 +785,16 @@
         "claim_text": "ESB-aðild og upptaka evru eru nauðsynleg til að Ísland geti tekið upp stöðugan gjaldmiðil.",
         "category": "sovereignty",
         "claim_type": "opinion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://sedlabanki.is/hagtolur/gengi?PageID=289\" title=\"Central Bank of Iceland — Exchange rate data; ECB — Statistical Data Warehouse\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-016</a> og <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> staðfesta veikleika krónunnar og miklar sveiflur. <a href=\"https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en\" title=\"European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators\" target=\"_blank\" rel=\"noopener\">CURR-DATA-005</a> lýsir leiðinni að evrutöku í gegnum ESB-aðild og Maastricht-viðmið. Fullyrðingin um að þetta sé eina leiðin er hins vegar of afdráttarlaus — <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014\" title=\"Treaty on the Functioning of the European Union, Article 140\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-004</a> nefnir að Svíþjóð hafi forðast evrutöku innan ESB, og aðrar leiðir (t.d. gengistenging eins og Danmörk) eru fræðilega mögulegar.",
+      "explanation": "CURRENCY-DATA-016 og <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> staðfesta veikleika krónunnar og miklar sveiflur. <a href=\"https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en\" title=\"European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators\" target=\"_blank\" rel=\"noopener\">CURR-DATA-005</a> lýsir leiðinni að evrutöku í gegnum ESB-aðild og Maastricht-viðmið. Fullyrðingin um að þetta sé eina leiðin er hins vegar of afdráttarlaus — <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014\" title=\"Treaty on the Functioning of the European Union, Article 140\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-004</a> nefnir að Svíþjóð hafi forðast evrutöku innan ESB, og aðrar leiðir (t.d. gengistenging eins og Danmörk) eru fræðilega mögulegar.",
       "supporting_evidence": [
         {
           "id": "CURRENCY-DATA-016",
           "source_name": "Central Bank of Iceland — Exchange rate data; ECB — Statistical Data Warehouse",
-          "source_url": "https://sedlabanki.is/hagtolur/gengi?PageID=289"
+          "source_url": null
         },
         {
           "id": "SOV-LEGAL-005",
@@ -816,16 +839,16 @@
       "attribution_type": "asserted",
       "claim_count": 17,
       "verdicts": {
-        "partially_supported": 7,
+        "partially_supported": 5,
         "unverifiable": 2,
         "supported": 1,
-        "misleading": 5,
+        "misleading": 7,
         "unsupported": 2
       },
       "stance": "pro_eu",
       "slug": "thomas-moller",
-      "mention_count": 3,
-      "credibility": 0.48
+      "mention_count": 4,
+      "credibility": 0.52
     }
   ]
 }

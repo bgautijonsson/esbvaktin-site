@@ -10,9 +10,9 @@
   "summary": "Greindar 24 fullyrðingar .",
   "capsule": "Maastricht-skilyrðin sem greinin fjallar um eru nákvæmlega þau skilyrði sem eru skilgreind í Sáttmálanum um starfshætti ESB — verðbólga, fjárlagahalli, skuldir og gengisþátttaka í ERM II — og þeim er rétt lýst. Athyglisvert er þó að Svíþjóð hefur verið ESB-ríki síðan 1995 en er enn með sína eigin krónu: ríki geta af meðvituðum pólitískum ástæðum sneiðst hjá þátttöku í ERM II og þar með seinkað evruþátttöku um óákveðinn tíma — evruvæðing er því ekki sjálfkrafa afleiðing aðildar. Einnig er vert að vita að stærsta efnahagslega spurningin í ESB-aðildarviðræðum Íslands hefur aldrei komið við sögu í þessari grein: hvað gerist með fiskveiðilögsöguna og stjórnun sjávarauðlinda?",
   "verdict_counts": {
-    "misleading": 4,
-    "partially_supported": 13,
-    "supported": 6
+    "partially_supported": 14,
+    "supported": 6,
+    "misleading": 3
   },
   "claim_count": 23,
   "dominant_category": "currency",
@@ -32,30 +32,32 @@
         "claim_text": "Lægri vextir í Evrópu skýrast af því að seðlabankar ríkjanna berjast gegn verðhjöðnun með neikvæðum vöxtum þar sem hagvöxtur er lítill sem enginn.",
         "category": "currency",
         "claim_type": "comparison",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
-      "verdict": "misleading",
-      "explanation": "Fullyrðingin lýsir aðstæðum sem voru viðeigandi á árunum 2014–2022 en eiga ekki lengur við. <a href=\"https://sedlabanki.is/peningastefna/peningastefnunefnd/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a> sýnir að stýrivextir Seðlabanka Íslands eru 7,25% í mars 2026 og hafa verið á niðurleið. Samkvæmt <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> stendur innlánsvextir ESB í um 2,75% — hærri en á tímum neikvæðra vaxta. Seðlabanki Evrópu hætti neikvæðum vöxtum sumarið 2022. Fullyrðingin gefur úrelta mynd af evrópskri peningastefnu og hunsar að vaxtamunur er líka knúinn af mismunandi verðbólgu, stærð fjármagnsmarkaða og gjaldmiðlaáhættu.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin lýsir aðstæðum sem áttu að hluta til við á árunum 2014–2022 þegar Seðlabanki Evrópu beitti neikvæðum vöxtum og hagvöxtur var hægur. Samkvæmt <a href=\"https://ec.europa.eu/eurostat/web/hicp\" title=\"Eurostat HICP Flash Estimate; ECB Monetary Policy Decisions\" target=\"_blank\" rel=\"noopener\">CURR-DATA-008</a> hefur staðan þó breyst verulega — stýrivextir ESB hafa verið hækkaðir úr neikvæðu upp í 4,0% og síðan lækkaðir í 2,0% í febrúar 2026, á meðan verðbólga hefur náð markmiði bankans (1,9% HICP). Lækkunarferill ESB endurspeglar nú árangur í baráttu við háa verðbólgu, ekki verðhjöðnun eða stöðnun. <a href=\"https://www.visindavefur.is/svar.php?id=60990\" title=\"Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-016</a> sýnir að vaxtamunur innan evrusvæðisins hefur verið flókinn og ójafn.",
+      "supporting_evidence": [
         {
-          "id": "CURRENCY-DATA-015",
-          "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
-          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+          "id": "CURR-DATA-016",
+          "source_name": "Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=60990"
         },
         {
-          "id": "CURRENCY-DATA-017",
-          "source_name": "Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar",
-          "source_url": "https://sedlabanki.is/peningastefna/peningastefnunefnd/"
-        },
-        {
-          "id": "HOUS-DATA-005",
-          "source_name": "Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase",
-          "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
+          "id": "CURR-DATA-015",
+          "source_name": "Vísindavefurinn — Jón Þór Sturluson, Associate Professor of Economics, Reykjavík University School of Business (2012)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=60906"
         }
       ],
-      "missing_context": "Neikvæðum vöxtum á evrusvæðinu lauk sumarið 2022. Vaxtamunur milli Íslands og evrusvæðisins skýrist einnig af smæð íslensks fjármagnsmarkaðar og gjaldmiðlaáhættu samkvæmt <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a>.",
-      "confidence": 0.85,
+      "contradicting_evidence": [
+        {
+          "id": "CURR-DATA-008",
+          "source_name": "Eurostat HICP Flash Estimate; ECB Monetary Policy Decisions",
+          "source_url": "https://ec.europa.eu/eurostat/web/hicp"
+        }
+      ],
+      "missing_context": "Fullyrðingin virðist lýsa aðstæðum frá fyrri árum (2014–2022) en nýjustu gögn sýna að ESB hefur hækkað og síðan lækkað stýrivexti í kjölfar mikillar verðbólgu — ekki verðhjöðnunar. <a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a> sýnir einnig að stýrivextir á Íslandi eru nú 7,50% eftir hækkun í mars 2026, og verðbólga á Íslandi er 5,2% samanborið við 1,9% á evrusvæðinu.",
+      "confidence": 0.8,
       "speakers": [
         {
           "name": "Helgi Magnús Gunnarsson",
@@ -75,7 +77,8 @@
         "claim_text": "Ísland hefur aldrei uppfyllt skilyrði þess að ganga inn í myntbandalag Evrópu.",
         "category": "currency",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "<a href=\"https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en\" title=\"European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators\" target=\"_blank\" rel=\"noopener\">CURR-DATA-005</a> staðfestir að Ísland uppfyllir ekki verðbólgu- eða vaxtaviðmið Maastricht-skilyrðanna sem stendur. Ríkisfjármálaviðmiðin (halli og skuldir) eru hins vegar nálægt eða uppfyllt — halli er um 1% af VLF og skuldir um 65% (aðeins yfir 60% viðmiðinu en á niðurleið). Fullyrðingin segir að Ísland hafi «aldrei» uppfyllt skilyrðin, en heimildir fjalla aðeins um stöðuna snemma árs 2026 — engin heimild rennir stoðum undir eða afsannar hvort Ísland hafi einhvern tíma uppfyllt öll skilyrðin samtímis.",
@@ -113,7 +116,8 @@
         "claim_text": "Skilyrði fyrir inngöngu í myntbandalag ESB eru meðal annars að verðbólga megi ekki vera meiri en 1,5 prósentustigum yfir meðaltali þriggja ESB-ríkja með lægstu verðbólguna.",
         "category": "currency",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014\" title=\"Treaty on the Functioning of the European Union, Article 140\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-004</a> staðfestir þetta nákvæmlega: verðbólga má ekki vera meiri en 1,5 prósentustigum yfir meðaltali þriggja bestu ríkjanna. <a href=\"https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en\" title=\"European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators\" target=\"_blank\" rel=\"noopener\">CURR-DATA-005</a> endurtekur sama viðmiðið. Fullyrðingin er rétt lýsing á Maastricht-verðbólguskilyrðinu samkvæmt 140. grein sáttmálans um starfshætti Evrópusambandsins.",
@@ -151,7 +155,8 @@
         "claim_text": "Skilyrði fyrir inngöngu í myntbandalag ESB eru að hlutfall fjárlagahalla af VLF megi ekki vera yfir 3% og skuldir hins opinbera megi ekki fara yfir 60% af VLF.",
         "category": "currency",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "Bæði <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014\" title=\"Treaty on the Functioning of the European Union, Article 140\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-004</a> og <a href=\"https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en\" title=\"European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators\" target=\"_blank\" rel=\"noopener\">CURR-DATA-005</a> staðfesta þessi tvö fjármálaskilyrði Maastricht-viðmiðanna orðrétt: fjárlagahalli undir 3% af VLF og opinberar skuldir undir 60% af VLF. Þetta er beinn lagatexti úr sáttmálanum um starfshætti ESB.",
@@ -189,7 +194,8 @@
         "claim_text": "Skilyrði fyrir inngöngu í myntbandalag ESB eru að gjaldmiðillinn verði að hafa verið innan eðlilegra sveiflumarka í gengissamstarfi ESB (ERM II) í að minnsta kosti tvö ár.",
         "category": "currency",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014\" title=\"Treaty on the Functioning of the European Union, Article 140\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-004</a> staðfestir skilyrðið um gengisstöðugleika í ERM II í a.m.k. tvö ár sem hluta af Maastricht-viðmiðunum. <a href=\"https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en\" title=\"European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators\" target=\"_blank\" rel=\"noopener\">CURR-DATA-005</a> endurtekir sömu kröfu og bætir við að Ísland hafi aldrei reynt þátttöku í ERM II. Fullyrðingin er nákvæm lýsing á gengisskilyrðinu.",
@@ -227,7 +233,8 @@
         "claim_text": "Skilyrði fyrir inngöngu í myntbandalag ESB eru að langtímavextir megi ekki vera meira en 2 prósentustigum hærri en að meðaltali í ríkjunum þremur sem hafa lægsta verðbólguna.",
         "category": "currency",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014\" title=\"Treaty on the Functioning of the European Union, Article 140\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-004</a> staðfestir vaxtaskilyrðið orðrétt: langtímavextir mega ekki vera meira en 2 prósentustigum yfir meðaltali þriggja bestu ríkjanna. <a href=\"https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en\" title=\"European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators\" target=\"_blank\" rel=\"noopener\">CURR-DATA-005</a> endurtekir skilyrðið og bendir á að Ísland uppfylli það ekki sem stendur. Fullyrðingin er rétt lýsing á fjórða Maastricht-viðmiðinu.",
@@ -244,7 +251,7 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "<a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> sýnir að meðalstýrivextir Seðlabanka Íslands hafa verið um 6,5% á tímabilinu 2000–2025, borið saman við 1,5% hjá Seðlabanka Evrópu. Vaxtamunurinn endurspeglar meðal annars hærri verðbólgu og gjaldmiðlaáhættu á Íslandi.",
+      "missing_context": "<a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> sýnir að meðalstýrivextir Seðlabanka Íslands hafa verið um 6,5% á tímabilinu 2000–2025, borið saman við 1,5% hjá Seðlabanka Evrópu. Vaxtamunurinn endurspeglar meðal annars hærri verðbólgu og gjaldmiðlaáhættu á Íslandi.",
       "confidence": 0.95,
       "speakers": [
         {
@@ -265,10 +272,11 @@
         "claim_text": "Krónan hefur þann eiginleika að fylgja efnahagsþróun íslenska hagkerfisins og ef illa árar sígur hún og lagast þar með samkeppnisstaða útflutningsins.",
         "category": "currency",
         "claim_type": "opinion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "Fullyrðingin lýsir grundvallareiginleika fljótandi gjaldmiðils á réttmætan hátt. <a href=\"https://sedlabanki.is/hagtolur/gengi?PageID=289\" title=\"Central Bank of Iceland — Exchange rate data; ECB — Statistical Data Warehouse\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-016</a> og <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> staðfesta að krónan lækkaði um 50% í kreppunni 2008, sem stuðlaði að bata útflutningsgreina. <a href=\"https://www.sedlabanki.is/hagtolur/gengi/\" title=\"Seðlabanki Íslands — Exchange rate data\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-007</a> sýnir einnig gengislækkun í COVID-19-kreppunni 2020. Sjálfvirk aðlögun gengis er vel skjalfestur eiginleiki fljótandi gjaldmiðla. Hins vegar vantar á fullyrðinguna verulegan fyrirvara: gengisveiking veldur einnig verðbólgu og hækkar innflutningsverð, sem dregur úr ávinningi samkeppnisstöðunnar. Krónan hefur einnig sýnt óstöðugleika sem er ekki einungis «aðlögun» heldur einnig uppspretta efnahagsáfalla.",
+      "explanation": "Fullyrðingin lýsir grundvallareiginleika fljótandi gjaldmiðils á réttmætan hátt. CURRENCY-DATA-016 og <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> staðfesta að krónan lækkaði um 50% í kreppunni 2008, sem stuðlaði að bata útflutningsgreina. <a href=\"https://www.sedlabanki.is/hagtolur/gengi/\" title=\"Seðlabanki Íslands — Exchange rate data\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-007</a> sýnir einnig gengislækkun í COVID-19-kreppunni 2020. Sjálfvirk aðlögun gengis er vel skjalfestur eiginleiki fljótandi gjaldmiðla. Hins vegar vantar á fullyrðinguna verulegan fyrirvara: gengisveiking veldur einnig verðbólgu og hækkar innflutningsverð, sem dregur úr ávinningi samkeppnisstöðunnar. Krónan hefur einnig sýnt óstöðugleika sem er ekki einungis «aðlögun» heldur einnig uppspretta efnahagsáfalla.",
       "supporting_evidence": [
         {
           "id": "SOV-LEGAL-005",
@@ -278,7 +286,7 @@
         {
           "id": "CURRENCY-DATA-016",
           "source_name": "Central Bank of Iceland — Exchange rate data; ECB — Statistical Data Warehouse",
-          "source_url": "https://sedlabanki.is/hagtolur/gengi?PageID=289"
+          "source_url": null
         },
         {
           "id": "TRADE-DATA-007",
@@ -324,7 +332,8 @@
         "claim_text": "Hlutfall fólks í eigin húsnæði er langt um hærra á Íslandi en til dæmis í Danmörku.",
         "category": "housing",
         "claim_type": "comparison",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "<a href=\"https://www.hms.is/\" title=\"HMS — Rental market monitoring; Hagstofa Íslands — Housing tenure statistics\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-004</a> bendir á um 70% eignarhlutfall á Íslandi (25–30% leigjendur). Engin heimild gefur upp nákvæmt eignarhlutfall í Danmörku til samanburðar. Þó er almennt vitað að eignarhlutfall í Danmörku er um 60–62%, sem er lægra en á Íslandi en ekki endilega «langt um hærra». Munurinn er um 8–10 prósentustig — merkjanlegur en orðalagið «langt um hærra» kann að vera ýkt.",
@@ -357,7 +366,8 @@
         "claim_text": "ESB hefur innleitt kolefnisgjöld á skipaflutninga sem hafa hækkað kostnað og vöruverð á Íslandi.",
         "category": "trade",
         "claim_type": "opinion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "ESB hefur raunverulega innleitt kolefnisgjöld sem ná til skipasamgangna — ETS-kerfið var útvíkkað og kolefnistollur (CBAM) tekur gildi 2026. <a href=\"https://ust.is/atvinnulif/ets/\" title=\"Umhverfisstofnun — Iceland's participation in EU ETS; European Commission — EU ETS data\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-002</a> staðfestir þátttöku Íslands í ETS-kerfinu í gegnum EES-samninginn, og <a href=\"https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en\" title=\"European Commission — Carbon Border Adjustment Mechanism\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-029</a> lýsir CBAM-kerfinu. Hins vegar er fullyrðingin villandi á tvo vegu: Í fyrsta lagi eru þetta ekki «skattar» í hefðbundnum skilningi heldur losunarheimildir og kolefnistollar. Í öðru lagi er ekki sýnt fram á að þessi gjöld hafi þegar hækkað vöruverð á Íslandi — Ísland og EES-ríkin eru undanþegin CBAM sem innri markaðsaðilar samkvæmt <a href=\"https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en\" title=\"European Commission — Carbon Border Adjustment Mechanism\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-029</a>. Kostnaðaráhrif ETS-kerfisins á iðnað eru staðfest, en bein áhrif á vöruverð til neytenda eru ekki skjalfest í heimildum.",
@@ -390,7 +400,8 @@
         "claim_text": "EES-samningurinn var gerður til að fá aðgang að mörkuðum ESB og halda jafnframt í fullveldið.",
         "category": "eea_eu_law",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "<a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> staðfestir að EES-samningurinn nær til innri markaðarins (fjórfrelsis) en undanskilur sameiginlega landbúnaðar-, sjávarútvegs- og tollabandalagsstefnu, gjaldmiðla- og utanríkisstefnu. <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf\" title=\"EEA Agreement — Protocol 3 on trade in processed agricultural products\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-002</a> sýnir tollfrjálsan aðgang fyrir flestar vörur. Markaðsaðgangur var greinilega meginmarkmið samningsins og samningurinn varðveitir formlegt fullveldi á undanskildum sviðum. Hins vegar takmarkar <a href=\"https://www.si.is/frettasafn/ees-samningurinn-mikilvaegasti-vidskiptasamningur-islands\" title=\"Samtök iðnaðarins (SI) — Position on EEA Limitations\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-006</a> myndina verulega: Ísland hefur innleitt yfir 13.000 ESB-gerðir án atkvæðisréttar, sem hefur verið kallað «lýðræðishalli» EES-fyrirkomulagsins. Fullveldisþátturinn er því of einfaldaður í fullyrðingunni.",
@@ -439,7 +450,8 @@
         "claim_text": "Undir EES-samningnum eru engin bein réttaráhrif gerða ESB, enginn ESB-dómstóll eða framkvæmdastjórn, heldur EFTA-dómstóll og ESA, og engir bindandi dómar ESB-dómstóls.",
         "category": "eea_eu_law",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://eftacourt.int/press-publications/annual-report-2024/\" title=\"EEA Agreement, Article 108; EFTA Court — Annual Report 2024; CJEU — Annual Report 2024\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-013</a> staðfestir að EFTA-dómstóllinn hafi lögsögu yfir EES-rétti í EFTA-ríkjum og að úrskurðir hans séu ráðgefandi (advisory) en ekki bindandi, ólíkt dómum ESB-dómstólsins. <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/the-surveillance-and-court-agreement/agreement-annexes-and-protocols/Surveillance-and-Court-Agreement-consolidated.pdf\" title=\"Agreement establishing the EFTA Surveillance Authority and the EFTA Court, Article 3\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-005</a> staðfestir að EFTA-dómstóllinn sé aðskilin stofnun frá ESB-dómstólnum. <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Articles 99–101\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-002</a> staðfestir að ESA (Eftirlitsstofnun EFTA) gegni hlutverki Framkvæmdastjórnar ESB gagnvart EFTA-ríkjunum. Fullyrðingin er rétt í formlegu tilliti.",
@@ -482,7 +494,8 @@
         "claim_text": "Undir EES-samningnum halda EES-ríki utan ESB fullum yfirráðum yfir auðlindum sínum.",
         "category": "sovereignty",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "<a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> staðfestir að sameiginleg sjávarútvegsstefna, landbúnaðarstefna, tollastefna og fleiri svið séu undanskilin EES-samningnum — Ísland heldur sjálfstæði í þessum málaflokkum. Hins vegar gengur fullyrðingin of langt með orðunum «fullum yfirráðum» yfir auðlindum. <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EFTA Secretariat — The EEA Agreement; ESA Internal Market Scoreboard; EEA Joint Committee\" target=\"_blank\" rel=\"noopener\">EEA-DATA-010</a> og <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> benda á að mörkin á milli EES-tengdra og undanskilinna sviða séu ekki alltaf skýr — orkureglugerðir, umhverfislöggjöf og ETS-kerfið hafa áhrif á nýtingu auðlinda og eru innleiddar í gegnum EES-samninginn. Ísland innleiðir í reynd meiri ESB-löggjöf en formlegu útilokunin gefur til kynna.",
@@ -525,7 +538,8 @@
         "claim_text": "Svíþjóð og Finnland gengu í NATO fyrir 2–3 árum án þess að telja ESB-aðild nauðsynlega til að tryggja öryggishagsmuni.",
         "category": "precedents",
         "claim_type": "comparison",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "misleading",
       "explanation": "PREC-HIST-009 staðfestir að Finnland gekk í NATO í apríl 2023 og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M042\" title=\"Treaty on European Union, Article 42; NATO Treaty, Article 5\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-008</a> nefnir að Svíþjóð hafi gengið í NATO 2023–2024 — þetta var fyrir 2–3 árum frá mars 2026. Hins vegar er fullyrðingin villandi vegna þess að bæði Svíþjóð og Finnland voru nú þegar ESB-aðildarríki þegar þau gengu í NATO. Finnland gekk í ESB 1995 og Svíþjóð sama ár. NATO-aðildin var viðbót við ESB-aðild, ekki staðgengill hennar. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M042\" title=\"Treaty on European Union, Article 42; NATO Treaty, Article 5\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-008</a> skýrir að öryggis- og varnarstefna ESB (CSDP) virki samhliða NATO, ekki í stað þess — 23 af 27 ESB-ríkjum eru einnig NATO-aðilar.",
@@ -569,7 +583,8 @@
         "claim_text": "Ísland hefur notið verndar Bandaríkjanna í rúm 80 ár.",
         "category": "sovereignty",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "Varnarsamningur Íslands og Bandaríkjanna var undirritaður 5. maí 1951 (<a href=\"https://avalon.law.yale.edu/20th_century/ice001.asp\" title=\"Avalon Project, Yale Law Library — Defense of Iceland: Agreement Between the United States and the Republic of Iceland, May 5, 1951; Government of Iceland — Iceland and the US: Bilateral Relations\" target=\"_blank\" rel=\"noopener\">SOV-HIST-002</a>), sem þýðir um 75 ár en ekki «rúm 80 ár». Ísland varð þó stofnaðili NATO 1949 (<a href=\"https://www.visindavefur.is/svar.php?id=65203\" title=\"Vísindavefurinn — Gustav Pétursson (2013, updated 2026)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-031</a>), sem færir tímalínuna nær 77 árum. Heimildir staðfesta langvarandi varnarsamband en talan «rúm 80 ár» er ónákvæm miðað við bæði 1949 og 1951 sem viðmiðunarár. Bandaríkin héldu varnarstöð á Keflavíkurflugvelli til 2006 og samstarfið hefur haldið áfram í gegnum reglubundna dreifingu herskipa (<a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"1951 US-Iceland Defence Agreement; 2016 Iceland-US Security Cooperation Agreement; US Department of State bilateral relations factsheet\" target=\"_blank\" rel=\"noopener\">SOV-DATA-008</a>).",
@@ -612,10 +627,11 @@
         "claim_text": "Ísland er meðal ríkustu þjóða miðað við höfðatölu og yrði því að greiða hátt í ESB-sjóði í samræmi við það.",
         "category": "trade",
         "claim_type": "opinion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "prediction"
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://www.imf.org/en/Publications/WEO\" title=\"IMF World Economic Outlook Database — October 2024\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-002</a> staðfestir að VLF Íslands á mann (PPP) sé um 72.000 USD, um 29% yfir meðaltali ESB. <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Institute of International Affairs, University of Iceland — EU membership cost analysis\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-010</a> áætlar hreint framlag Íslands við ESB-sjóðina í 100–180 milljónir evra á ári. Til samanburðar greiðir Ísland nú um 9,6 milljónir evra á ári í gegnum EES-sjóðina samkvæmt <a href=\"https://eeagrants.org/en/fmo/about-us\" title=\"EEA Grants — Financial Mechanism Committee; European Commission — EU budget figures\" target=\"_blank\" rel=\"noopener\">EEA-DATA-008</a>. Ísland yrði nettógreiðandi í fjárhagsáætlun ESB vegna hárra tekna á mann.",
+      "explanation": "<a href=\"https://www.imf.org/en/Publications/WEO\" title=\"IMF World Economic Outlook Database — October 2024\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-002</a> staðfestir að VLF Íslands á mann (PPP) sé um 72.000 USD, um 29% yfir meðaltali ESB. <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Institute of International Affairs, University of Iceland — EU membership cost analysis\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-010</a> áætlar hreint framlag Íslands við ESB-sjóðina í 100–180 milljónir evra á ári. Til samanburðar greiðir Ísland nú um 9,6 milljónir evra á ári í gegnum EES-sjóðina samkvæmt <a href=\"https://eeagrants.org/\" title=\"EEA Grants — Financial Mechanism Committee; European Commission — EU budget figures\" target=\"_blank\" rel=\"noopener\">EEA-DATA-008</a>. Ísland yrði nettógreiðandi í fjárhagsáætlun ESB vegna hárra tekna á mann.",
       "supporting_evidence": [
         {
           "id": "TRADE-COMP-002",
@@ -630,11 +646,11 @@
         {
           "id": "EEA-DATA-008",
           "source_name": "EEA Grants — Financial Mechanism Committee; European Commission — EU budget figures",
-          "source_url": "https://eeagrants.org/en/fmo/about-us"
+          "source_url": "https://eeagrants.org/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "<a href=\"https://www.imf.org/en/Publications/WEO\" title=\"IMF World Economic Outlook Database — October 2024\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-002</a> bendir á að VLF á mann geti verið bjagað af stóriðju í eigu erlendra aðila — þjóðartekjur (GNI) gefa e.t.v. réttari mynd. <a href=\"https://eeagrants.org/en/fmo/about-us\" title=\"EEA Grants — Financial Mechanism Committee; European Commission — EU budget figures\" target=\"_blank\" rel=\"noopener\">EEA-DATA-008</a> tekur fram að lítil jaðarríki hafi í sögulegu tilliti verið nettóþegar ESB-sjóða, ekki greiðendur, sem gæti dregið úr nettóframlagi Íslands. Ísland myndi einnig fá fjármagn til baka í gegnum byggðasjóði, Horizon Europe og landbúnaðarstefnu ESB.",
+      "missing_context": "<a href=\"https://www.imf.org/en/Publications/WEO\" title=\"IMF World Economic Outlook Database — October 2024\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-002</a> bendir á að VLF á mann geti verið bjagað af stóriðju í eigu erlendra aðila — þjóðartekjur (GNI) gefa e.t.v. réttari mynd. <a href=\"https://eeagrants.org/\" title=\"EEA Grants — Financial Mechanism Committee; European Commission — EU budget figures\" target=\"_blank\" rel=\"noopener\">EEA-DATA-008</a> tekur fram að lítil jaðarríki hafi í sögulegu tilliti verið nettóþegar ESB-sjóða, ekki greiðendur, sem gæti dregið úr nettóframlagi Íslands. Ísland myndi einnig fá fjármagn til baka í gegnum byggðasjóði, Horizon Europe og landbúnaðarstefnu ESB.",
       "confidence": 0.85,
       "speakers": [
         {
@@ -655,7 +671,8 @@
         "claim_text": "Við samningaviðræður um EES-samninginn naut Ísland samflots Norðmanna, Sviss, Liechtenstein og á sínum tíma Svía og Finna.",
         "category": "eea_eu_law",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "Fullyrðingin segir að Ísland hafi notið samflots Norðmanna, Sviss, Liechtenstein, Svía og Finna við EES-samningaviðræðurnar. Heimildir <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Articles 99–101\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-002</a> og <a href=\"https://www.si.is/frettasafn/ees-samningurinn-mikilvaegasti-vidskiptasamningur-islands\" title=\"Samtök iðnaðarins (SI) — Position on EEA Limitations\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-006</a> staðfesta að EFTA-ríkin (Ísland, Noregur, Liechtenstein) eru aðilar að EES-samningnum, og <a href=\"https://www.si.is/frettasafn/ees-samningurinn-mikilvaegasti-vidskiptasamningur-islands\" title=\"Samtök iðnaðarins (SI) — Position on EEA Limitations\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-006</a> lýsir samstarfi þeirra. Sviss var upphaflega hluti af EFTA-samningaviðræðunum en sagði sig frá EES-samningnum eftir þjóðaratkvæðagreiðslu í desember 1992. Svíþjóð og Finnland voru hluti af EFTA og EES-samningaviðræðum en gengu í ESB 1995. Fullyrðingin er rétt um að þessi ríki voru hluti af samningahópnum en engin heimild lýsir sérstaklega «samfloti» eða samstöðu þessara landa í viðræðunum.",
@@ -693,7 +710,8 @@
         "claim_text": "Við ESB-aðildarviðræður er ekkert um að semja annað en hvenær Ísland taki upp reglur ESB og fullnægi kröfum þeirra — engar undanþágur nema tímabundnar.",
         "category": "sovereignty",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> staðfestir að aðildarviðræður snúist um \"skilyrði og tímasetningu\" innleiðingar regluverksins, ekki um hvort reglurnar séu teknar upp. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> staðfestir að frá Lissabon-samningnum 2009 hafi ný aðildarríki ekki fengið varanlegar undanþágur — Króatía (2013) fékk engar. Fullyrðingin er í meginatriðum rétt en of einföld: <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1\" title=\"Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-006</a> bendir á að Danmörk, Írland og Pólland hafi fengið ýmsar undanþágur og bókanir, og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-004</a> sýnir að Finnland og Svíþjóð fengu sérstaka landbúnaðaraðstoð sem viðbót við sameiginlegu landbúnaðarstefnuna.",
@@ -747,7 +765,8 @@
         "claim_text": "Það er ósatt að Ísland geti fengið varanlegar undanþágur við ESB-aðildarviðræður.",
         "category": "sovereignty",
         "claim_type": "opinion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "Heimildir styðja að varanlegar undanþágur frá kjarnastefnum ESB séu mjög ólíklegar en ekki algjörlega útilokaðar. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> staðfestir að frá Lissabon-sáttmálanum (2009) hefur ESB stefnt að því að nýir aðildarríkir samþykki allan «acquis» án varanlegra undanþága — Króatía (2013) fékk engar. <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> (Hagfræðistofnun HÍ) komst að sömu niðurstöðu. Hins vegar benda <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1\" title=\"Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-006</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> á að tæknilega leyfir 49. grein ESB-sáttmálans hvaða samningsniðurstöðu sem er, og aðlögunartímabil geta í raun virkað sem undanþágur. Nýjar heimildir (<a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a>, <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T175023.html\" title=\"Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-003</a>) bæta við pólitísku samhengi en breyta ekki kjarnamatinu.",
@@ -801,10 +820,11 @@
         "claim_text": "Íslenskt þjóðfélag telur 380 þúsund íbúa og hefur því engar stærðarhagkvæmni í verslun.",
         "category": "trade",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "Íbúafjöldi Íslands er réttilega tilgreindur — <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> staðfestir um 380 þúsund íbúa og <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Ibuar/Ibuar__mannfjoldaspa/MAN09010.px\" title=\"Hagstofa Íslands — Population projections 2024; Registers Iceland\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-005</a> nefnir 395 þúsund í byrjun 2026. Ályktunin um að lítil þjóð hafi «engar stærðarhagkvæmni í verslun» er hins vegar of einföld. <a href=\"https://px.hagstofa.is/pxis/pxweb/is/Samfelag/Samfelag__husnaedi/\" title=\"Hagstofa Íslands — Housing Statistics; Seðlabanki Íslands — Financial Stability Report 2025\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-008</a> og <a href=\"https://www.oecd.org/en/publications/agricultural-policy-monitoring-and-evaluation-2023_b14de474-en/full-report/iceland_fc821635.html\" title=\"Hagstofa Íslands — National accounts; OECD — Agricultural Policy Monitoring and Evaluation\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-013</a> sýna að smæð markaðar veldur háum kostnaði í byggingariðnaði og landbúnaði, sem styður hugmyndina um takmarkaðar stærðarhagkvæmni. <a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a> undirstrikar þó að Ísland nýtur þegar aðgangs að ESB-markaðnum í gegnum EES og hefur 31 fríverslunarsamning gegnum EFTA. Fullyrðingin er rétt um stærðartakmarkanir en ofdrífur niðurstöðuna með orðunum «engar stærðarhagkvæmni».",
+      "explanation": "Íbúafjöldi Íslands er réttilega tilgreindur — <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> staðfestir um 380 þúsund íbúa og <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Ibuar/Ibuar__mannfjoldaspa/MAN09010.px\" title=\"Hagstofa Íslands — Population projections 2024; Registers Iceland\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-005</a> nefnir 395 þúsund í byrjun 2026. Ályktunin um að lítil þjóð hafi «engar stærðarhagkvæmni í verslun» er hins vegar of einföld. <a href=\"https://px.hagstofa.is/pxis/pxweb/is/Samfelag/Samfelag__husnaedi/\" title=\"Hagstofa Íslands — Housing Statistics; Seðlabanki Íslands — Financial Stability Report 2025\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-008</a> og AGRI-DATA-013 sýna að smæð markaðar veldur háum kostnaði í byggingariðnaði og landbúnaði, sem styður hugmyndina um takmarkaðar stærðarhagkvæmni. <a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a> undirstrikar þó að Ísland nýtur þegar aðgangs að ESB-markaðnum í gegnum EES og hefur 31 fríverslunarsamning gegnum EFTA. Fullyrðingin er rétt um stærðartakmarkanir en ofdrífur niðurstöðuna með orðunum «engar stærðarhagkvæmni».",
       "supporting_evidence": [
         {
           "id": "SOV-DATA-017",
@@ -819,7 +839,7 @@
         {
           "id": "AGRI-DATA-013",
           "source_name": "Hagstofa Íslands — National accounts; OECD — Agricultural Policy Monitoring and Evaluation",
-          "source_url": "https://www.oecd.org/en/publications/agricultural-policy-monitoring-and-evaluation-2023_b14de474-en/full-report/iceland_fc821635.html"
+          "source_url": null
         },
         {
           "id": "HOUSING-DATA-005",
@@ -860,7 +880,8 @@
         "claim_text": "Laun innan ESB eru víða kannski bara helmingur af því sem er á Íslandi.",
         "category": "labour",
         "claim_type": "comparison",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "<a href=\"https://px.hagstofa.is/pxen/pxweb/en/Samfelag/Samfelag__launogtekjur__1_laun__1_laun/VIN02001.px\" title=\"Hagstofa Íslands — Wages and income; Eurostat — Structure of Earnings Survey\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-003</a> staðfestir að laun á Íslandi séu 15–20% yfir meðaltali ESB-ríkja þegar leiðrétt er fyrir kaupmætti. Fullyrðingin um að laun í ESB séu «víða kannski bara helmingur» af íslensku launum er ýkt þegar litið er til meðaltals, en gæti átt við ákveðin láglauna ESB-ríki eins og Búlgaríu eða Rúmeníu þar sem launamunurinn er mun meiri. <a href=\"https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/\" title=\"Eurostat — Comparative price levels of consumer goods and services (prc_ppp_ind)\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-003</a> sýnir að verðlag á Íslandi er 50% yfir ESB-meðaltali, sem dregur úr raunverulegum kaupmætti háu launanna. Fullyrðingin er of víð þar sem ESB nær yfir lönd frá Lúxemborg til Búlgaríu — launamunurinn er gífurlegur innan sambandsins.",
@@ -898,7 +919,8 @@
         "claim_text": "Íslenskar aðildarviðræður við ESB myndu ekki fela í sér samningsniðurstöðu um skilyrði inngöngu heldur áætlun um hvenær innganga yrði.",
         "category": "sovereignty",
         "claim_type": "opinion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "prediction"
       },
       "verdict": "misleading",
       "explanation": "Fullyrðingin er villandi vegna þess að hún segir aðildarviðræður feli ekki í sér samningsniðurstöðu um skilyrði inngöngu — en það er einmitt megintilgangur viðræðnanna. <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> staðfesta bæði að viðræðurnar snúast um «skilyrði og tímasetningu fyrir innleiðingu alls gildandi regluverks» hjá umsóknarríkinu. Rétt er að regluverkið sjálft er ekki til samningaviðræðna, en aðlögunartímabil, fjárhagsleg fyrirkomulag og tæknilegar aðlaganir eru raunverulegur samningsgrundvöllur samkvæmt <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — Steps towards joining; DG NEAR accession negotiation methodology\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-013</a>. Fullyrðingin ofeinfaldar ferlið með því að halda fram að viðræður snúist eingöngu um tímasetningu inngöngu, en <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> bendir á að Hagfræðistofnun HÍ taldi raunverulegar samninganiðurstöður í sjávarútvegi og landbúnaði aldrei hafa verið prófaðar vegna þess að viðræður voru stöðvaðar.",
@@ -956,7 +978,8 @@
         "claim_text": "Mörg af stærstu ríkjum ESB eru í kreppu og efnahagur þeirra á brauðfótum.",
         "category": "trade",
         "claim_type": "opinion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "misleading",
       "explanation": "<a href=\"https://www.businesseurope.eu/publications/businesseurope-reform-barometer-2025-eu-in-a-new-political-cycle-competitiveness-as-a-true-priority-in-a-complex-global-context/\" title=\"BusinessEurope — Reform Barometer 2025; Reform Barometer 2024\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-026</a> staðfestir samkeppnisáhyggjur innan ESB — könnun BusinessEurope sýnir að meirihluti aðildarsamtaka telur samkeppnisstöðu ESB hafa versnað. Draghi-skýrslan og Letta-skýrslan greindu skipulagslegar áskoranir. Þetta eru raunverulegar áskoranir en fullyrðingin er stórlega ýkt: \"gjaldþrota\", \"á brauðfótum\" og \"í kreppu\" lýsa ekki raunverulegri stöðu stærstu ríkja ESB. Þýskaland, Frakkland og Ítalía standa frammi fyrir vexti og hagvaxtaáskorunum en eru langt frá gjaldþroti. Orðalagið \"gjaldþrota fyrirbæri\" um ESB í heild á sér enga stoð í heimildum.",
@@ -999,7 +1022,8 @@
         "claim_text": "Brexit varð erfitt fyrir Breta þrátt fyrir að vera stórt ríki og það yrði enn erfiðara fyrir Ísland að ganga úr ESB ef til þess kæmi.",
         "category": "precedents",
         "claim_type": "comparison",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "PREC-HIST-003 og <a href=\"https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/\" title=\"UK Office for Budget Responsibility — Economic and fiscal outlook 2023; Centre for European Reform; Bank of England\" target=\"_blank\" rel=\"noopener\">PREC-DATA-008</a> staðfesta að Brexit hafði veruleg neikvæð efnahagsleg áhrif — OBR áætlaði 4% samdrátt í langtíma-VLF og vöruviðskipti við ESB minnkuðu. <a href=\"https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/\" title=\"UK Office for National Statistics — Trade statistics; Office for Budget Responsibility — Brexit impact assessment\" target=\"_blank\" rel=\"noopener\">PREC-HIST-012</a> sýnir umtalsverða viðskiptahnignun eftir Brexit. Fullyrðingin um að Brexit hafi verið erfitt er vel studd. Hins vegar er ályktunin um að úrsögn yrði \"enn erfiðari\" fyrir Ísland ályktunarspurning sem heimildir svara ekki beint. <a href=\"https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/\" title=\"UK Office for Budget Responsibility — Economic and fiscal outlook 2023; Centre for European Reform; Bank of England\" target=\"_blank\" rel=\"noopener\">PREC-DATA-008</a> bendir þó á mikilvægan mun: Ísland er lítið hagkerfi sem er nú þegar í EES — að ganga í ESB og síðan úr því væri \"mun minni skref\" en Brexit vegna EES-öryggisnetstins.",
@@ -1052,9 +1076,9 @@
       "attribution_type": "asserted",
       "claim_count": 22,
       "verdicts": {
-        "misleading": 4,
-        "partially_supported": 12,
-        "supported": 6
+        "partially_supported": 13,
+        "supported": 6,
+        "misleading": 3
       },
       "stance": "anti_eu",
       "slug": "helgi-magnus-gunnarsson",

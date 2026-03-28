@@ -30,7 +30,8 @@
         "claim_text": "Aðildarviðræður Íslands við ESB runnu út í sandinn árið 2012.",
         "category": "precedents",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "Aðildarviðræður runnu ekki út í sandinn árið 2012 heldur voru frystar af ríkisstjórn Sigmundar Davíðs Gunnlaugssonar vorið 2013. Samkvæmt <a href=\"https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/\" title=\"Althingi — Historical records; European Commission accession records\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-010</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland accession progress reports\" target=\"_blank\" rel=\"noopener\">PREC-HIST-004</a> hófust viðræðurnar í júlí 2010, 27 kaflar voru opnaðir og 11 lokaðir bráðabirgða áður en nýkjörin miðjuhægri ríkisstjórn frestaði þeim í maí 2013. Umsóknin var formlega dregin til baka í mars 2015. Ártalið 2012 er því rangt og ferlið var pólitísk ákvörðun, ekki að viðræðurnar hafi «runnið út».",
@@ -48,18 +49,18 @@
         {
           "id": "EEA-DATA-009",
           "source_name": "European Commission — Iceland: Accession negotiations status; Althingi records",
-          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+          "source_url": null
         }
       ],
       "contradicting_evidence": [
         {
           "id": "SOV-DATA-023",
           "source_name": "European Commission — Iceland Accession Progress Reports; Icelandic Ministry of Foreign Affairs",
-          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+          "source_url": "https://neighbourhood-enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
         }
       ],
       "missing_context": "Viðræðurnar voru frystar vorið 2013, ekki 2012. Þær «runnu» ekki út í sandinn heldur var þeim hætt með pólitískri ákvörðun nýrrar ríkisstjórnar. ESB hefur aldrei formlega viðurkennt afturköllun umsóknarinnar.",
-      "confidence": 0.8573749999999999,
+      "confidence": 0.8745224999999999,
       "speakers": [
         {
           "name": "Unnamed columnist",
@@ -79,7 +80,8 @@
         "claim_text": "Íbúð keypt á 50 milljónir króna í sæmilega vinsælu hverfi í Reykjavík myndi í dag seljast á um 110 milljónir króna.",
         "category": "housing",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "prediction"
       },
       "verdict": "partially_supported",
       "explanation": "Fullyrðingin gefur til kynna um 120% raunhækkun. <a href=\"https://px.hagstofa.is/pxis/pxweb/is/Samfelag/Samfelag__husnaedi/\" title=\"Hagstofa Íslands — Housing Statistics; Seðlabanki Íslands — Financial Stability Report 2025\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-008</a> sýnir að íbúðaverð á höfuðborgarsvæðinu hefur hækkað um 80–100% að raunvirði frá 2010. <a href=\"https://cb.is/financial-stability/\" title=\"Seðlabanki Íslands — Financial Stability Report; Hagstofa Íslands — Housing price index\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-001</a> staðfestir 55% raunhækkun frá 2015 til 2025. Ef miðað er við kaup fyrir 10–15 árum er 120% hækkun í hærra lagi en ekki útilokuð, sérstaklega í vinsælum hverfum þar sem hækkunin getur verið yfir meðaltali.",
@@ -106,7 +108,8 @@
         "claim_text": "Evrópuþingið telur húsnæðiskreppu ríkja í álfunni vegna þess að húsnæði er of dýrt miðað við tekjur og framboðsskortur er á fasteignum í stærri borgum.",
         "category": "housing",
         "claim_type": "opinion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "Heimildir staðfesta að húsnæðisvandi er víðtækur í Evrópu — <a href=\"https://cb.is/financial-stability/\" title=\"Seðlabanki Íslands — Financial Stability Report; Hagstofa Íslands — Housing price index\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-001</a> sýnir að 25% ESB-leigjenda verja yfir 30% tekna í húsnæði og <a href=\"https://px.hagstofa.is/pxis/pxweb/is/Samfelag/Samfelag__husnaedi/\" title=\"Hagstofa Íslands — Housing Statistics; Seðlabanki Íslands — Financial Stability Report 2025\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-008</a> lýsir framboðsskorti. Enga beina heimild er þó að finna í staðreyndagrunninum um ályktun Evrópuþingsins sem slíka. Kjarni fullyrðingarinnar — húsnæðisvandi vegna verðhækkana og framboðsskorts — er í samræmi við tiltæk gögn.",
@@ -119,7 +122,7 @@
         {
           "id": "HOUSING-DATA-007",
           "source_name": "Þjóðskrá Íslands (Registers Iceland) — Property Market Index; Eurostat — House price statistics",
-          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/PRC_HPI_A/default/table"
+          "source_url": null
         },
         {
           "id": "HOUS-DATA-008",
@@ -149,16 +152,17 @@
         "claim_text": "Hlutfall ráðstöfunartekna íslenskra heimila sem fór í húsnæðiskostnað var einna lægst á Norðurlöndunum samkvæmt nýlegum tölum Seðlabankans.",
         "category": "housing",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "Heimildir sýna misvísandi mynd. <a href=\"https://ec.europa.eu/eurostat/databrowser/view/PRC_HPI_A/default/table\" title=\"Þjóðskrá Íslands (Registers Iceland) — Property Market Index; Eurostat — House price statistics\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-007</a> staðfestir að verð-til-tekjuhlutfallið á Íslandi (8,5x) er hærra en í Kaupmannahöfn (7,5x), Stokkhólmi (6,5x) og Helsinki (5,5x) — sem bendir til lakari stöðu, ekki betri. <a href=\"https://cb.is/financial-stability/\" title=\"Seðlabanki Íslands — Financial Stability Report; Hagstofa Íslands — Housing price index\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-001</a> greinir frá því að 35–40% íslenskra leigjenda verji yfir 30% tekna í húsnæði, samanborið við 25% ESB-meðaltal. Fullyrðingin vísar þó í Seðlabankann sem heimild og gæti byggt á öðrum mælikvarða (t.d. húsnæðiskostnaður sem hlutfall af heildarneyslu) sem hefur aðra niðurstöðu en verð-til-tekjuhlutfall.",
+      "explanation": "Heimildir sýna misvísandi mynd. HOUSING-DATA-007 staðfestir að verð-til-tekjuhlutfallið á Íslandi (8,5x) er hærra en í Kaupmannahöfn (7,5x), Stokkhólmi (6,5x) og Helsinki (5,5x) — sem bendir til lakari stöðu, ekki betri. <a href=\"https://cb.is/financial-stability/\" title=\"Seðlabanki Íslands — Financial Stability Report; Hagstofa Íslands — Housing price index\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-001</a> greinir frá því að 35–40% íslenskra leigjenda verji yfir 30% tekna í húsnæði, samanborið við 25% ESB-meðaltal. Fullyrðingin vísar þó í Seðlabankann sem heimild og gæti byggt á öðrum mælikvarða (t.d. húsnæðiskostnaður sem hlutfall af heildarneyslu) sem hefur aðra niðurstöðu en verð-til-tekjuhlutfall.",
       "supporting_evidence": [],
       "contradicting_evidence": [
         {
           "id": "HOUSING-DATA-007",
           "source_name": "Þjóðskrá Íslands (Registers Iceland) — Property Market Index; Eurostat — House price statistics",
-          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/PRC_HPI_A/default/table"
+          "source_url": null
         },
         {
           "id": "HOUSING-DATA-001",
@@ -187,16 +191,17 @@
         "claim_text": "Ísland kemur vel út í samanburði við flest Evrópulönd þegar húsnæðiskostnaður sem hlutfall af neyslu heimila er skoðaður.",
         "category": "housing",
         "claim_type": "comparison",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "Ef miðað er við Eurostat-neysluflokkun (22,3% á Íslandi borið saman við 26–30% í mörgum ríkjum) kann fullyrðingin að vera rétt. Heimildir í staðreyndagrunninum sýna hins vegar aðra hlið: <a href=\"https://ec.europa.eu/eurostat/databrowser/view/PRC_HPI_A/default/table\" title=\"Þjóðskrá Íslands (Registers Iceland) — Property Market Index; Eurostat — House price statistics\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-007</a> sýnir að verð-til-tekjuhlutfall á höfuðborgarsvæðinu (8,5x) er hæst á Norðurlöndum og <a href=\"https://cb.is/financial-stability/\" title=\"Seðlabanki Íslands — Financial Stability Report; Hagstofa Íslands — Housing price index\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-001</a> bendir til þess að 35–40% íslenskra leigjenda verji yfir 30% tekna í húsnæði — verra en ESB-meðaltal (25%). Myndin er blæbrigðarík og fer eftir mælikvarða.",
+      "explanation": "Ef miðað er við Eurostat-neysluflokkun (22,3% á Íslandi borið saman við 26–30% í mörgum ríkjum) kann fullyrðingin að vera rétt. Heimildir í staðreyndagrunninum sýna hins vegar aðra hlið: HOUSING-DATA-007 sýnir að verð-til-tekjuhlutfall á höfuðborgarsvæðinu (8,5x) er hæst á Norðurlöndum og <a href=\"https://cb.is/financial-stability/\" title=\"Seðlabanki Íslands — Financial Stability Report; Hagstofa Íslands — Housing price index\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-001</a> bendir til þess að 35–40% íslenskra leigjenda verji yfir 30% tekna í húsnæði — verra en ESB-meðaltal (25%). Myndin er blæbrigðarík og fer eftir mælikvarða.",
       "supporting_evidence": [],
       "contradicting_evidence": [
         {
           "id": "HOUSING-DATA-007",
           "source_name": "Þjóðskrá Íslands (Registers Iceland) — Property Market Index; Eurostat — House price statistics",
-          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/PRC_HPI_A/default/table"
+          "source_url": null
         },
         {
           "id": "HOUSING-DATA-001",
@@ -214,7 +219,8 @@
         "claim_text": "Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra og formaður Viðreisnar, sagðist útiloka að hún myndi samþykkja aðildarsamning ef ekki væri tryggt að íslensk stjórnvöld hefðu full yfirráð yfir auðlindum sínum.",
         "category": "party_positions",
         "claim_type": "opinion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir yfirlýsingu Þorgerðar Katrínar í flutningsræðu á Alþingi: «Ég mun aldrei skrifa undir samning sem tryggir ekki okkar markmið og okkar yfirráð» — sérstaklega um sjávarútveg. <a href=\"https://www.althingi.is/thingmenn/thingflokkar/vidreisn/\" title=\"Althingi — Session 157; Viðreisn party platform\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-004</a> staðfestir stöðu hennar sem utanríkisráðherra og formaður Viðreisnar. Fullyrðingin endurspeglar þekkta afstöðu hennar réttilega, þótt orðalagið «full yfirráð» sé afdráttarlausara en orðalag þingsræðunnar.",
@@ -237,7 +243,7 @@
       ],
       "contradicting_evidence": [],
       "missing_context": "Orðalag Þorgerðar Katrínar á Alþingi var «okkar markmið og okkar yfirráð» sem er víðtækara en «full yfirráð yfir auðlindum». Þetta er pólitísk yfirlýsing, ekki lagalega bindandi loforð. Sérfræðingar benda á að fullkomin undanþága frá sameiginlegri sjávarútvegsstefnu ESB sé ólíkleg samkvæmt fordæmum.",
-      "confidence": 0.8075,
+      "confidence": 0.82365,
       "speakers": [
         {
           "name": "Þorgerður Katrín Gunnarsdóttir",
@@ -257,10 +263,11 @@
         "claim_text": "Sjávarútvegsmálin voru einn af þeim köflum sem ekki var hægt að opna þegar íslensk stjórnvöld áttu í aðlögunarviðræðum við ESB á árunum 2009 til 2013.",
         "category": "fisheries",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland screening report Chapter 13; Progress reports on Iceland 2011–2013\" target=\"_blank\" rel=\"noopener\">FISH-DATA-023</a> staðfestir að kafli 13 (sjávarútvegur) var aldrei opnaður. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland accession progress reports\" target=\"_blank\" rel=\"noopener\">PREC-HIST-004</a> bendir á að hann var meðal 8 kafla sem aldrei voru opnaðir. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland Accession Progress Reports; Icelandic Ministry of Foreign Affairs\" target=\"_blank\" rel=\"noopener\">SOV-DATA-023</a> tilgreinir kafla 13 sérstaklega meðal þeirra sex sem aldrei komu til viðræðna. Viðræðurnar hófust formlega í júlí 2010 (ekki 2009), en þar sem umsóknin var lögð fram í júlí 2009 er tímabilið «2009 til 2013» eðlilegt ef miðað er við allt ferlið.",
+      "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland screening report Chapter 13; Progress reports on Iceland 2011–2013\" target=\"_blank\" rel=\"noopener\">FISH-DATA-023</a> staðfestir að kafli 13 (sjávarútvegur) var aldrei opnaður. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland accession progress reports\" target=\"_blank\" rel=\"noopener\">PREC-HIST-004</a> bendir á að hann var meðal 8 kafla sem aldrei voru opnaðir. <a href=\"https://neighbourhood-enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland Accession Progress Reports; Icelandic Ministry of Foreign Affairs\" target=\"_blank\" rel=\"noopener\">SOV-DATA-023</a> tilgreinir kafla 13 sérstaklega meðal þeirra sex sem aldrei komu til viðræðna. Viðræðurnar hófust formlega í júlí 2010 (ekki 2009), en þar sem umsóknin var lögð fram í júlí 2009 er tímabilið «2009 til 2013» eðlilegt ef miðað er við allt ferlið.",
       "supporting_evidence": [
         {
           "id": "FISH-DATA-023",
@@ -275,12 +282,12 @@
         {
           "id": "SOV-DATA-023",
           "source_name": "European Commission — Iceland Accession Progress Reports; Icelandic Ministry of Foreign Affairs",
-          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+          "source_url": "https://neighbourhood-enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
         },
         {
           "id": "EEA-DATA-009",
           "source_name": "European Commission — Iceland: Accession negotiations status; Althingi records",
-          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+          "source_url": null
         }
       ],
       "contradicting_evidence": [],
@@ -305,7 +312,8 @@
         "claim_text": "Evrópusambandið leit svo á að Ísland uppfyllti ekki þau opnunarskilyrði sem ríkjabandalagið setti fyrir aðlögunarviðræðum um sjávarútveg, landbúnað og dóms- og innanríkismál.",
         "category": "fisheries",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "<a href=\"https://eur-lex.europa.eu/EN/legal-content/summary/iceland-agriculture-fisheries-and-food-safety.html\" title=\"EUR-Lex — Iceland agriculture assessment; European Commission screening reports\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-024</a> staðfestir að framkvæmdastjórnin greindi frá vanrækslu á stofnanaforsendum fyrir landbúnaðarkaflanum (kafli 11). <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland screening report Chapter 13; Progress reports on Iceland 2011–2013\" target=\"_blank\" rel=\"noopener\">FISH-DATA-023</a> staðfestir að grundvallarósamræmi var greint í sjávarútvegskaflanum (kafli 13). Hins vegar segja heimildir einnig að Ísland hafi aldrei lagt fram samningsstöðu um landbúnað (<a href=\"https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782591/EPRS_BRI(2026)782591_EN.pdf\" title=\"Summary of findings: Status of the accession negotiations between Iceland and the EU (Icelandic Ministry for Foreign Affairs, 2013); European Parliament briefing on EU-Iceland relations (2026)\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-003</a>) — þannig var vandinn ekki eingöngu að ESB synjaði um opnun, heldur einnig að Ísland greip aldrei til nauðsynlegra aðgerða. Dóms- og innanríkismál (kafli 24) er ekki nefnd sérstaklega í heimildunum.",
@@ -363,7 +371,8 @@
         "claim_text": "Sjávarútvegskaflinn var aldrei opnaður í aðlögunarviðræðunum 2009–2013 þar sem íslensk stjórnvöld höfðu engan hug á að gangast undir sameiginlegu sjávarútvegsstefnu ESB.",
         "category": "fisheries",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland screening report Chapter 13; Progress reports on Iceland 2011–2013\" target=\"_blank\" rel=\"noopener\">FISH-DATA-023</a> og <a href=\"https://www.consilium.europa.eu/en/topics/eu-enlargement/\" title=\"European Commission Iceland Progress Reports / Althingi committee records\" target=\"_blank\" rel=\"noopener\">PREC-DATA-037</a> staðfesta að sjávarútvegskaflinn var aldrei opnaður. Ástæðan var þó margþætt. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland screening report Chapter 13; Progress reports on Iceland 2011–2013\" target=\"_blank\" rel=\"noopener\">FISH-DATA-023</a> bendir á grundvallarósamræmi sem framkvæmdastjórnin greindi, <a href=\"https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782591/EPRS_BRI(2026)782591_EN.pdf\" title=\"Summary of findings: Status of the accession negotiations between Iceland and the EU (Icelandic Ministry for Foreign Affairs, 2013); European Parliament briefing on EU-Iceland relations (2026)\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-003</a> nefnir að sex kaflar voru aldrei opnaðir og <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> bendir á að íslensk stjórnvöld trúðu ekki að varanlegar undanþágur væru mögulegar. Að segja einfaldlega að íslensk stjórnvöld hafi «haft engan hug á» einfaldar flókna stöðu þar sem bæði innlend pólitík og tæknilegar hindranir af hálfu ESB spiluðu hlutverk.",
@@ -412,7 +421,8 @@
         "claim_text": "Þorgerður Katrín Gunnarsdóttir sagði í Silfrinu að strax yrði farið í sjávarútvegskaflann í aðlögunarviðræðunum ef landsmenn samþykktu áframhald í þjóðaratkvæðagreiðslunni í ágúst.",
         "category": "fisheries",
         "claim_type": "opinion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir að Þorgerður Katrín sagði á Alþingi að viðræður gætu hafist «um áramót» ef þjóðin samþykkti og lofaði að tryggja yfirráð yfir sjávarútvegi. Fullyrðingin vísar þó í Silfrið, en heimildir staðreyndagrunnsins eru úr þingræðu, ekki sjónvarpsþætti. Efni afstöðunnar er stutt en orðið «strax» er sterkara en «um áramót».",
@@ -450,7 +460,8 @@
         "claim_text": "Heildstæðir samningar um skiptingu norsk-íslensku sildarinnar, makrílsins og kolmunnans hafa ekki verið í gildi um árabil.",
         "category": "fisheries",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland screening report Chapter 13; Progress reports on Iceland 2011–2013\" target=\"_blank\" rel=\"noopener\">FISH-DATA-023</a> nefnir að sameiginlegir stofnar (svo sem makríll og síld) myndu falla undir ESB-ákvörðunartöku við aðild og staðfestir þar með að deilur um skiptingu eru viðvarandi vandamál. <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development\" title=\"European Parliament — The Common Fisheries Policy: Origins and Development\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-005</a> fjallar um «relative stability» og sameiginlega stofna. Fullyrðingin um að heildstæðir samningar hafi ekki verið í gildi «um árabil» er þekkt staðreynd í íslenskum sjávarútvegi (sér í lagi makríldeilan), en engin heimild staðfestir þetta beint.",
@@ -483,7 +494,8 @@
         "claim_text": "Með aðild að sameiginlegu sjávarútvegsstefnu ESB færu mál er varða norsk-íslensku sildina, makrílinn og kolmunnann til Brusselvaldsins.",
         "category": "fisheries",
         "claim_type": "prediction",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "prediction"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003\" title=\"Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-030</a> staðfestir að verndun sjávarauðlinda undir sameiginlegu sjávarútvegsstefnunni er einkaverkefni ESB (exclusive competence). <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland screening report Chapter 13; Progress reports on Iceland 2011–2013\" target=\"_blank\" rel=\"noopener\">FISH-DATA-023</a> útskýrir að sameiginlegir stofnar myndu falla undir ESB-ákvörðunartöku. <a href=\"https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf\" title=\"Icelandic Act on the Exclusive Economic Zone No. 41/1979\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-002</a> staðfestir að efnahagslögsaga Íslands færðist undir sjávarútvegsstefnu ESB við aðild. Þar sem heildaraflamark (TAC) fyrir sameiginlega stofna er ákveðið á ESB-vettvangi er fullyrðingin rétt — Ísland myndi semja á ESB-vettvangi við Noreg, ekki tvíhliða.",
@@ -531,7 +543,8 @@
         "claim_text": "Aðildarviðræður ríkis við ESB fela meðal annars í sér aðlögun innlends regluverks að reglum ESB og innleiðingu regluverks ESB í innlenda löggjöf áður en samningurinn sjálfur er borinn undir þjóðina.",
         "category": "eea_eu_law",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> staðfestir að aðildarviðræður snúast um «aðstæður og tímasetningu fyrir innleiðingu og framkvæmd allra gildandi reglna ESB». <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> útskýrir að umsóknarríkið samþykkir regelverkið eins og það er og semur um aðlögunartíma. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — Steps towards joining; DG NEAR accession negotiation methodology\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-013</a> lýsir ferli skoðunar, opnunar, viðmiðunarreglna og lokunarskilyrða sem felur í sér aðlögunarskref. Fullyrðingin er rétt — aðlögun fer fram á viðræðutímabilinu.",
@@ -584,7 +597,8 @@
         "claim_text": "Það væri alger nýlunda ef aðildarviðræður fælu aðeins í sér að teikna upp samninginn sjálfan án nokkurra aðlögunar- og innleiðingarskrefa.",
         "category": "eea_eu_law",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "prediction"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> staðfestir að öll aðildarviðræður í sögu ESB hafa falið í sér innleiðingu og aðlögun regluverks — kröfugrunnar framkvæmdastjórnarinnar eru skýrar. <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> lýsir fjögurra skrefa ferli sem alltaf felur í sér aðlögunarþætti. <a href=\"https://link.springer.com/book/10.1057/9780230510302\" title=\"Grabbe, H. (2006) 'The EU's Transformative Power: Europeanization Through Conditionality in Central and Eastern Europe', Palgrave Macmillan\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-016</a> staðfestir sérfræðingasamstöðu um að 95% regluverksins sé ósemjanlegt. Engin fordæmi eru um aðild án aðlögunar.",
@@ -632,7 +646,8 @@
         "claim_text": "Erlendir sérfræðingar og stækkunarstjóri ESB hafa lýst því yfir að aðildarviðræður feli í sér aðlögunar- og innleiðingarskref áður en samningur er borinn undir þjóðina.",
         "category": "eea_eu_law",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> vísar beint í opinbert efni framkvæmdastjórnarinnar sem staðfestir þetta. <a href=\"https://link.springer.com/book/10.1057/9780230510302\" title=\"Grabbe, H. (2006) 'The EU's Transformative Power: Europeanization Through Conditionality in Central and Eastern Europe', Palgrave Macmillan\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-016</a> vitnar í fræðimanninn Heather Grabbe og viðurkennda sérfræðingasamstöðu. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> staðfestir að stækkunarefni á vef ESB lýsir þessu skýrt. Fullyrðingin er vel studd.",
@@ -680,7 +695,8 @@
         "claim_text": "Á vef stjórnarráðsins má nálgast fréttabréf sem nefnist Brussel-vaktin.",
         "category": "other",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "<a href=\"https://www.stjornarradid.is/sendiskrifstofur/sendirad-islands-i-brussel/brussel-vaktin/stok-faersla/2026/03/13/Idnadarhradall-Made-in-Europe/\" title=\"Brussel-vaktin (Sendiráð Íslands í Brussel) — 13. mars 2026, cross-referencing earlier issues\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-044</a> vitnar í «Brussel-vaktin (Sendiráð Íslands í Brussel)» sem heimild og staðfestir þar með tilvist fréttabréfsins. Þó er heimildavísunin til sendiráðsins, ekki endilega vefs stjórnarráðsins. Fréttabréfið er til en nákvæm dreifing (á vef stjórnarráðs eða sendiráðs) er ekki að fullu staðfest.",
@@ -742,7 +758,7 @@
       },
       "stance": "pro_eu",
       "slug": "thorgerdur-katrin-gunnarsdottir",
-      "mention_count": 53,
+      "mention_count": 69,
       "credibility": 0.65,
       "speech_count": 197
     },

@@ -22,8 +22,8 @@
     "last_speech": "2026-03-16"
   },
   "scorecard": {
-    "supported": 18,
-    "partially_supported": 23,
+    "supported": 19,
+    "partially_supported": 22,
     "misleading": 2
   },
   "claims": [
@@ -82,10 +82,15 @@
     {
       "claim_text": "Ekki hefur tekist að berja niður verðbólgu á Íslandi.",
       "original_quote": "Að berja niður verðbólgu með sleggju hefur ekki tekist",
-      "verdict": "partially_supported",
-      "explanation": "Heimildir sýna að verðbólga á Íslandi hefur verið viðvarandi hærri en á evrusvæðinu. <a href=\"https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IS\" title=\"World Bank — World Development Indicators (FP.CPI.TOTL.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-013</a> sýnir 4,7% meðalverðbólgu 2000–2024 og <a href=\"https://ec.europa.eu/eurostat/web/hicp\" title=\"Eurostat HICP Flash Estimate; ECB Monetary Policy Decisions\" target=\"_blank\" rel=\"noopener\">CURR-DATA-008</a> sýnir 5,2% á Íslandi í febrúar 2026 samanborið við 1,9% á evrusvæðinu. Fullyrðingin er þó of víð — verðbólga hefur sveiflast talsvert og var undir 3% á árunum 2014–2019. Orðalagið «ekki hefur tekist að berja niður» gefur til kynna algjört mistakmark, en Seðlabankinn hefur náð árangri tímabundið þótt verðbólga hafi jafnan verið yfir markmiði til lengri tíma.",
-      "missing_context": "Verðbólga á Íslandi fór niður í um 2% á árunum 2014–2019, sem sýnir tímabundinn árangur. Smæð hagkerfisins, innflutningsháð og gengisáhætta skýra hærri verðbólgu sem myndi ekki hverfa sjálfkrafa með evruaðild. Samkvæmt <a href=\"https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en\" title=\"European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators\" target=\"_blank\" rel=\"noopener\">CURR-DATA-005</a> þyrfti Ísland að uppfylla Maastricht-viðmið áður en evran yrði tekin upp, sem þýðir að verðbólga þyrfti að lækka fyrir aðild að evrusvæðinu.",
+      "verdict": "supported",
+      "explanation": "Heimildir staðfesta að verðbólga á Íslandi hefur verið viðvarandi há. Samkvæmt <a href=\"https://ec.europa.eu/eurostat/web/hicp\" title=\"Eurostat HICP Flash Estimate; ECB Monetary Policy Decisions\" target=\"_blank\" rel=\"noopener\">CURR-DATA-008</a> var HICP-verðbólga á Íslandi 5,2% í febrúar 2026, langt yfir 2,5%-markmiði Seðlabankans. <a href=\"https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IS\" title=\"World Bank — World Development Indicators (FP.CPI.TOTL.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-013</a> sýnir að meðalverðbólga á Íslandi var um 4,7% á árunum 2000–2024, og <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__visitolur__1_vnv__1_vnv/VIS01005.px\" title=\"Hagstofa Íslands — Consumer price index; Eurostat — HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-003</a> mælir hana í 5,5% á árunum 2005–2025. <a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a> staðfestir vaxtahækkun Seðlabankans í mars 2026 vegna versnandi verðbólguhorfa, sem styrkir enn fremur fullyrðinguna.",
+      "missing_context": "Verðbólga hefur þó sveiflast verulega milli ára — á tímabilinu 2014–2019 var hún að meðaltali 2,3% sem er nálægt markmiði. Ísland er smátt og opið hagkerfi sem er skipulagslega hættara við verðbólgu vegna innflutningsskuldsetningar og gengisáhrifa, og evruaðild myndi ekki sjálfkrafa leysa þann vanda. Seðlabankinn sneri við vaxtastefnunni í mars 2026 eftir lækkun úr 9,25% niður í 7,25%, sem bendir til þess að baráttunni sé langt frá lokum.",
       "supporting_evidence": [
+        {
+          "id": "CURR-DATA-008",
+          "source_name": "Eurostat HICP Flash Estimate; ECB Monetary Policy Decisions",
+          "source_url": "https://ec.europa.eu/eurostat/web/hicp"
+        },
         {
           "id": "CURRENCY-DATA-013",
           "source_name": "World Bank — World Development Indicators (FP.CPI.TOTL.ZG)",
@@ -97,9 +102,9 @@
           "source_url": "https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__visitolur__1_vnv__1_vnv/VIS01005.px"
         },
         {
-          "id": "CURR-DATA-008",
-          "source_name": "Eurostat HICP Flash Estimate; ECB Monetary Policy Decisions",
-          "source_url": "https://ec.europa.eu/eurostat/web/hicp"
+          "id": "CURRENCY-DATA-015",
+          "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
+          "source_url": "https://www.sedlabanki.is/peningastefna/vaxtaakvardir/"
         }
       ],
       "contradicting_evidence": [],
@@ -114,13 +119,13 @@
       "claim_text": "Ekki hefur tekist að ná niður vöxtum á Íslandi.",
       "original_quote": "að ná niður vöxtum hefur ekki tekist",
       "verdict": "supported",
-      "explanation": "Heimildir staðfesta að vextir á Íslandi hafa verið þverfóldum hærri en í evrusvæðinu. <a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> sýnir að stýrivextir Seðlabankans hafa að meðaltali verið um 6,5% frá 2000 borið saman við ~1,5% hjá Evrópuseðlabankanum. Sem stóð í byrjun árs 2026 voru stýrivextir um 8–8,5% á Íslandi en um 2,75–3% í evrusvæðinu. Það er augljóst að vextir hafa ekki nað niður í viðjafnanlegt stig við nágrannalönd.",
+      "explanation": "Heimildir staðfesta að vextir á Íslandi hafa verið þverfóldum hærri en í evrusvæðinu. <a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> sýnir að stýrivextir Seðlabankans hafa að meðaltali verið um 6,5% frá 2000 borið saman við ~1,5% hjá Evrópuseðlabankanum. Sem stóð í byrjun árs 2026 voru stýrivextir um 8–8,5% á Íslandi en um 2,75–3% í evrusvæðinu. Það er augljóst að vextir hafa ekki nað niður í viðjafnanlegt stig við nágrannalönd.",
       "missing_context": "Hærri vextir endurspegla að hluta hærri verðbólgu og gjaldmiðlaáhættu. Samkvæmt CURR-DATA-004 er raunáhriftamunurinn minni en nafnmunurinn gefur til kynna. Evruaðild myndi lækka vexti en gæti ógnað eignaverðsbóluð án viðeigandi varnaðarreglna.",
       "supporting_evidence": [
         {
           "id": "CURRENCY-DATA-015",
           "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
-          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+          "source_url": "https://www.sedlabanki.is/peningastefna/vaxtaakvardir/"
         },
         {
           "id": "CURR-DATA-004",
@@ -438,18 +443,13 @@
       "claim_text": "Verðbólga er 5,2% og atvinnuleysi hefur tvöfaldast.",
       "original_quote": "niðurstaðan 5,2% verðbólga og tvöföldun atvinnuleysis",
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://ec.europa.eu/eurostat/web/hicp\" title=\"Eurostat HICP Flash Estimate; ECB Monetary Policy Decisions\" target=\"_blank\" rel=\"noopener\">CURR-DATA-008</a> og <a href=\"https://sedlabanki.is/gagnatorg/verdbolga/\" title=\"Central Bank of Iceland; ECB; Eurostat HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-007</a> staðfesta báðar að verðbólga á Íslandi (HICP) var 5,2% í febrúar 2026, sem samsvarar nákvæmlega fullyrðingunni. Hins vegar eru engar heimildir í staðreyndagrunninum um atvinnuleysi eða þróun þess, svo staðhæfingin um tvöföldun atvinnuleysis er ekki sannreynanleg með fyrirliggjandi gögnum.",
-      "missing_context": "Verðbólgutalan er staðfest en fullyrðingin um tvöföldun atvinnuleysis er hvorki studd né hrakin af heimildum í staðreyndagrunninum. Til mats þyrfti gögn frá Hagstofu Íslands eða Vinnumálastofnun um þróun atvinnuleysis.",
+      "explanation": "<a href=\"https://ec.europa.eu/eurostat/web/hicp\" title=\"Eurostat HICP Flash Estimate; ECB Monetary Policy Decisions\" target=\"_blank\" rel=\"noopener\">CURR-DATA-008</a> staðfestir að verðbólga á Íslandi var 5,2% í febrúar 2026 (HICP-mæling), sem samsvarar fullyrðingunni. Varðandi tvöföldun atvinnuleysis er engin heimild í staðreyndagrunni sem staðfestir eða hafnar þessari tölu. Verðbólgutalan er rétt samkvæmt heimildum, en atvinnuleysisfullyrðingin er ósannreynanleg með fyrirliggjandi gögnum.",
+      "missing_context": "Verðbólgutalan 5,2% er staðfest en samhengið skiptir máli: hún er 3,3 prósentustigum yfir meðaltali evrusvæðisins (<a href=\"https://ec.europa.eu/eurostat/web/hicp\" title=\"Eurostat HICP Flash Estimate; ECB Monetary Policy Decisions\" target=\"_blank\" rel=\"noopener\">CURR-DATA-008</a>) og langt yfir verðbólgumarkmiði Seðlabankans (2,5%). Seðlabankinn hækkaði stýrivexti 18. mars 2026 sökum viðvarandi verðbólgu (<a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a>). Engar heimildir liggja fyrir um atvinnuleysi eða tvöföldun þess, svo sá hluti fullyrðingarinnar er ósannanlegur.",
       "supporting_evidence": [
         {
           "id": "CURR-DATA-008",
           "source_name": "Eurostat HICP Flash Estimate; ECB Monetary Policy Decisions",
           "source_url": "https://ec.europa.eu/eurostat/web/hicp"
-        },
-        {
-          "id": "CURR-DATA-007",
-          "source_name": "Central Bank of Iceland; ECB; Eurostat HICP",
-          "source_url": "https://sedlabanki.is/gagnatorg/verdbolga/"
         }
       ],
       "contradicting_evidence": [],
@@ -464,23 +464,18 @@
       "claim_text": "Verðbólga og háir vextir eru afleiðingar pólitískra ákvarðana, ekki náttúrulögmál.",
       "original_quote": "sagði verðbólgu og háa vexti ekki náttúrulögmál heldur afleiðingar pólitískra ákvarðana",
       "verdict": "partially_supported",
-      "explanation": "Fullyrðingin hefur nokkra stoð í heimildum. <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__visitolur__1_vnv__1_vnv/VIS01005.px\" title=\"Hagstofa Íslands — Consumer price index; Eurostat — HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-003</a> sýnir að Ísland hefur búið við umtalsvert hærri verðbólgu en evrusvæðið í áratugi, og <a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> staðfestir að Seðlabankinn hefur viðhaldið hærri vöxtum. Þetta bendir til þess að peningastefna og stofnanaumgjörð skipti máli. <a href=\"https://sedlabanki.is/fjarmalastodugleiki/\" title=\"Seðlabanki Íslands — Financial Stability Report 2025; Húsnæðis- og mannvirkjastofnun (HMS) — Housing Market Overview\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-010</a> lýsir verðtryggðu húsnæðislánakerfi Íslands sem pólitísk ákvörðun sem eykur verðbólguáhrif á heimili. Þó er myndin flóknari — <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__visitolur__1_vnv__1_vnv/VIS01005.px\" title=\"Hagstofa Íslands — Consumer price index; Eurostat — HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-003</a> bendir á að smæð hagkerfisins og innflutningsháð séu skipulagsleg vandamál sem ekki er hægt að leysa eingöngu með pólitískum ákvörðunum.",
-      "missing_context": "Fullyrðingin einfaldar flókið efnahagslegt samspil. Smæð hagkerfisins, innflutningsháð, launahækkanir og gengi krónunnar eru skipulagsleg vandamál sem hafa áhrif á verðbólgu og vexti — ekki eingöngu pólitískar ákvarðanir. Hækkun vaxta Seðlabankans er meðal annars viðbragð við verðbólgu, ekki bara orsök hennar.",
+      "explanation": "Fullyrðingin segir verðbólgu og háa vexti vera afleiðingar pólitískra ákvarðana, ekki náttúrulögmál. Heimildir sýna að peningastefna er vissulega pólitísk ákvörðun — <a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a> lýsir vaxtaákvörðunum Seðlabankans sem meðvituðum stefnubreytingum (t.d. vaxtahækkun 18. mars 2026 eftir ákvörðun nefndar með 3-2 atkvæðum). <a href=\"https://www.visindavefur.is/svar.php?id=60990\" title=\"Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-016</a> sýnir hvernig mismunandi stefnuval innan evrusvæðisins leiddi til mismunandi útkomu milli landa. Þó er fullyrðingin of einföld: <a href=\"https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IS\" title=\"World Bank — World Development Indicators (FP.CPI.TOTL.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-013</a> og <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__visitolur__1_vnv__1_vnv/VIS01005.px\" title=\"Hagstofa Íslands — Consumer price index; Eurostat — HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-003</a> benda til þess að skipulagslegir þættir eins og smæð hagkerfisins, innflutningshá, kjarasamningar og verðbólguhneigð séu ekki eingöngu niðurstaða pólitískra ákvarðana heldur einnig efnahagslegra aðstæðna.",
+      "missing_context": "Hár vaxtamunur Íslands við evrusvæðið endurspeglar að hluta til skipulagslega eiginleika hagkerfisins — smæð, innflutningsháð, sveiflukennt gengi — sem eru ekki eingöngu afleiðing pólitískra ákvarðana (<a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__visitolur__1_vnv__1_vnv/VIS01005.px\" title=\"Hagstofa Íslands — Consumer price index; Eurostat — HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-003</a>, <a href=\"https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IS\" title=\"World Bank — World Development Indicators (FP.CPI.TOTL.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-013</a>). Val um sjálfstæðan gjaldmiðil er pólitísk ákvörðun, en verðbólga ræðst einnig af ytri aðstæðum og skipulagi vinnumarkaðar. Verðtryggða lánakerfið (<a href=\"https://sedlabanki.is/fjarmalastodugleiki/\" title=\"Seðlabanki Íslands — Financial Stability Report 2025; Húsnæðis- og mannvirkjastofnun (HMS) — Housing Market Overview\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-010</a>, <a href=\"https://arxiv.org/abs/1302.4112\" title=\"Ólafsson (2013) — 'An Examination of the Effect on the Icelandic Banking System of Verðtryggð Lán', arXiv:1302.4112\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-018</a>) er vissulega afleiðing stefnuvals en hefur einnig dýpri sögulegar rætur.",
       "supporting_evidence": [
         {
-          "id": "CURR-DATA-003",
-          "source_name": "Hagstofa Íslands — Consumer price index; Eurostat — HICP",
-          "source_url": "https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__visitolur__1_vnv__1_vnv/VIS01005.px"
+          "id": "CURRENCY-DATA-017",
+          "source_name": "Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar",
+          "source_url": "https://www.sedlabanki.is/peningastefna/vaxtaakvardir/"
         },
         {
-          "id": "CURRENCY-DATA-015",
-          "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
-          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
-        },
-        {
-          "id": "HOUSING-DATA-010",
-          "source_name": "Seðlabanki Íslands — Financial Stability Report 2025; Húsnæðis- og mannvirkjastofnun (HMS) — Housing Market Overview",
-          "source_url": "https://sedlabanki.is/fjarmalastodugleiki/"
+          "id": "CURR-DATA-016",
+          "source_name": "Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=60990"
         }
       ],
       "contradicting_evidence": [],
@@ -578,7 +573,7 @@
       "original_quote": "Ísland gæti ekki lengur haft sína eigin tollastefnu eða gert fríverslunarsamninga við önnur ríki. Slíkir samningar yrðu gerðir af ESB fyrir okkar hönd.",
       "verdict": "supported",
       "explanation": "Þetta er lagalega rétt. <a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a> staðfestir að sameiginleg viðskiptastefna ESB (207. grein TFEU) og tollabandalagið (28. grein TFEU) útiloka sjálfstæða tollastefnu og fríverslunarsamninga aðildarríkja. <a href=\"https://www.consilium.europa.eu/en/policies/eu-tariffs-explained/\" title=\"EU Council / European Commission Access2Markets\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-040</a> undirstrikar sama atriði — Framkvæmdastjórnin semur fyrir hönd allra 27 aðildarríkja. <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> staðfestir að tollabandalag er utan EES og verður því fyrst raunverulegt við fulla aðild.",
-      "missing_context": "Orðalagið «gerðir af ESB fyrir okkar hönd» er tæknilega rétt en einfaldar samfélagið — Ísland myndi eiga sæti í ráðherraráði ESB og taka þátt í mótun viðskiptastefnunnar, þótt sem eitt af 28+ ríkjum (<a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a>). Þá er Íslands-Kína fríverslunarsamningurinn (2013) dæmi um samning sem myndi falla niður við aðild, en ESB-netið nær til fleiri landa (<a href=\"https://www.wto.org/english/tratop_e/tpr_e/tp554_e.htm\" title=\"WTO — Trade Policy Review: Iceland 2024; Iceland-China FTA text\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-021</a>).",
+      "missing_context": "Orðalagið «gerðir af ESB fyrir okkar hönd» er tæknilega rétt en einfaldar samfélagið — Ísland myndi eiga sæti í ráðherraráði ESB og taka þátt í mótun viðskiptastefnunnar, þótt sem eitt af 28+ ríkjum (<a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a>). Þá er Íslands-Kína fríverslunarsamningurinn (2013) dæmi um samning sem myndi falla niður við aðild, en ESB-netið nær til fleiri landa (TRADE-DATA-021).",
       "supporting_evidence": [
         {
           "id": "SOV-LEGAL-032",
@@ -753,7 +748,7 @@
         {
           "id": "TRADE-DATA-021",
           "source_name": "WTO — Trade Policy Review: Iceland 2024; Iceland-China FTA text",
-          "source_url": "https://www.wto.org/english/tratop_e/tpr_e/tp554_e.htm"
+          "source_url": null
         }
       ],
       "contradicting_evidence": [],
@@ -804,7 +799,7 @@
       "claim_text": "Ísland gæti ekki lengur haft sína eigin tollastefnu eða gert fríverslunarsamninga við önnur ríki ef það gengi í ESB; slíkir samningar yrðu gerðir af ESB fyrir hönd Íslands.",
       "original_quote": "Ísland gæti ekki lengur haft sína eigin tollastefnu eða gert fríverslunarsamninga við önnur ríki. Slíkir samningar yrðu gerðir af ESB fyrir okkar hönd.",
       "verdict": "supported",
-      "explanation": "<a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a> staðfestir að sameiginleg viðskiptastefna ESB (207. gr. TFEU) er á einkaforræði sambandsins og Framkvæmdastjórnin semur viðskiptasamninga fyrir hönd allra aðildarríkja. <a href=\"https://www.consilium.europa.eu/en/policies/eu-tariffs-explained/\" title=\"EU Council / European Commission Access2Markets\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-040</a> útskýrir að ESB-ríki beita sameiginlegum ytri tollum og geta ekki samið tvíhliða. Fullyrðingin er rétt — Ísland missti núverandi EFTA-samninga (31 samningur við 43 ríki) og Ísland-Kína-fríverslunarsamninginn, eins og <a href=\"https://www.wto.org/english/tratop_e/tpr_e/tp554_e.htm\" title=\"WTO — Trade Policy Review: Iceland 2024; Iceland-China FTA text\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-021</a> nefnir sérstaklega.",
+      "explanation": "<a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a> staðfestir að sameiginleg viðskiptastefna ESB (207. gr. TFEU) er á einkaforræði sambandsins og Framkvæmdastjórnin semur viðskiptasamninga fyrir hönd allra aðildarríkja. <a href=\"https://www.consilium.europa.eu/en/policies/eu-tariffs-explained/\" title=\"EU Council / European Commission Access2Markets\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-040</a> útskýrir að ESB-ríki beita sameiginlegum ytri tollum og geta ekki samið tvíhliða. Fullyrðingin er rétt — Ísland missti núverandi EFTA-samninga (31 samningur við 43 ríki) og Ísland-Kína-fríverslunarsamninginn, eins og TRADE-DATA-021 nefnir sérstaklega.",
       "missing_context": "Ísland fengi þess í stað hlut af viðskiptasamningum ESB við yfir 70 ríki, þar á meðal Japan og Mercosur-blokkin þar sem EFTA-samningar ná ekki til. Þá myndi Ísland eiga rödd í ráðherraráðinu um viðskiptastefnu — þótt aðeins sem eitt af 28+ aðildarríkjum, samkvæmt <a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a>.",
       "supporting_evidence": [
         {
@@ -825,7 +820,7 @@
         {
           "id": "TRADE-DATA-021",
           "source_name": "WTO — Trade Policy Review: Iceland 2024; Iceland-China FTA text",
-          "source_url": "https://www.wto.org/english/tratop_e/tpr_e/tp554_e.htm"
+          "source_url": null
         },
         {
           "id": "EEA-LEGAL-022",
@@ -876,7 +871,7 @@
         {
           "id": "AGRI-DATA-013",
           "source_name": "Hagstofa Íslands — National accounts; OECD — Agricultural Policy Monitoring and Evaluation",
-          "source_url": "https://www.oecd.org/en/publications/agricultural-policy-monitoring-and-evaluation-2023_b14de474-en/full-report/iceland_fc821635.html"
+          "source_url": null
         }
       ],
       "contradicting_evidence": [
@@ -1038,7 +1033,7 @@
       "claim_text": "Aðildarviðræður Jóhönnu Sigurðardóttur og Steingríms J. Sigfússonar steytti á skeri; þau gátu ekki klárað málið og gátu ekki farið með það í þjóðaratkvæðagreiðslu vegna þess að þau sáu að þau fengju ekki þær undanþágur sem ríkisstjórnarflokkarnir nú halda að þeir fái.",
       "original_quote": "þessar aðlögunarviðræður sem þá voru í gangi undir forystu Samfylkingar og Jóhönnu Sigurðardóttur, og Steingríms J. Sigfússonar, að það mál var löngu steytt á skeri. Þau gátu ekki klárað málið, þau gátu ekki farið með það í þjóðaratkvæðagreiðslu vegna þess að þau sáu það, þau fengju ekki þær undanþágur",
       "verdict": "misleading",
-      "explanation": "Viðræður 2010–2013 gengu hratt — 27 kaflar opnaðir og 11 lokaðir á óvenju stuttum tíma vegna EES-samræmis (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland accession progress reports\" target=\"_blank\" rel=\"noopener\">PREC-HIST-004</a>, <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland: Accession negotiations status; Althingi records\" target=\"_blank\" rel=\"noopener\">EEA-DATA-009</a>). Erfiðustu kaflarnir (sjávarútvegur, landbúnaður) voru aldrei opnaðir (<a href=\"https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782591/EPRS_BRI(2026)782591_EN.pdf\" title=\"Summary of findings: Status of the accession negotiations between Iceland and the EU (Icelandic Ministry for Foreign Affairs, 2013); European Parliament briefing on EU-Iceland relations (2026)\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-003</a>). Viðræðunum lauk vegna stjórnarskipta 2013 þegar hægristjórn tók við og fraus ferlið (<a href=\"https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/\" title=\"Althingi — Historical records; European Commission accession records\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-010</a>), ekki vegna þess að viðræðurnar sjálfar hefðu „steytt á skeri“.",
+      "explanation": "Viðræður 2010–2013 gengu hratt — 27 kaflar opnaðir og 11 lokaðir á óvenju stuttum tíma vegna EES-samræmis (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland accession progress reports\" target=\"_blank\" rel=\"noopener\">PREC-HIST-004</a>, EEA-DATA-009). Erfiðustu kaflarnir (sjávarútvegur, landbúnaður) voru aldrei opnaðir (<a href=\"https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782591/EPRS_BRI(2026)782591_EN.pdf\" title=\"Summary of findings: Status of the accession negotiations between Iceland and the EU (Icelandic Ministry for Foreign Affairs, 2013); European Parliament briefing on EU-Iceland relations (2026)\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-003</a>). Viðræðunum lauk vegna stjórnarskipta 2013 þegar hægristjórn tók við og fraus ferlið (<a href=\"https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/\" title=\"Althingi — Historical records; European Commission accession records\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-010</a>), ekki vegna þess að viðræðurnar sjálfar hefðu „steytt á skeri“.",
       "missing_context": "Viðræðunum lauk vegna stjórnarskipta 2013, ekki vegna þess að samningagerð hefði mistekist. Erfiðustu kaflarnir höfðu ekki enn verið opnaðir svo engin niðurstaða lá fyrir um undanþágur.",
       "supporting_evidence": [
         {
@@ -1051,7 +1046,7 @@
         {
           "id": "EEA-DATA-009",
           "source_name": "European Commission — Iceland: Accession negotiations status; Althingi records",
-          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+          "source_url": null
         },
         {
           "id": "POLITICAL-DATA-010",

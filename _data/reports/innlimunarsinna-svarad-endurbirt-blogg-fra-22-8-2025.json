@@ -34,15 +34,16 @@
         "claim_text": "Vextir eru þrisvar sinnum lægri hjá ESB-löndum en á Íslandi.",
         "category": "currency",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "Heimildir staðfesta umtalsverðan vaxtamun milli Íslands og evrusvæðisins. Samkvæmt <a href=\"https://sedlabanki.is/gagnatorg/verdbolga/\" title=\"Central Bank of Iceland; ECB; Eurostat HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-007</a> er stýrivextir Seðlabankans 7,25% á móti 2,00% hjá ECB, og <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> sýnir að óverðtryggðir íslenskir húsnæðisvextir eru 7,5–8,5% á móti 3,4% á evrusvæðinu. Þetta er u.þ.b. tvöfaldur munur á stýrivöxtum, ekki þrefaldur. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a> bendir þó á að samanburðurinn sé flóknari vegna verðtryggðra lána á Íslandi. Fullyrðingin ýkir muninn nokkuð.",
+      "explanation": "Heimildir staðfesta umtalsverðan vaxtamun milli Íslands og evrusvæðisins. Samkvæmt <a href=\"https://www.sedlabanki.is/\" title=\"Central Bank of Iceland; ECB; Eurostat HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-007</a> er stýrivextir Seðlabankans 7,25% á móti 2,00% hjá ECB, og <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> sýnir að óverðtryggðir íslenskir húsnæðisvextir eru 7,5–8,5% á móti 3,4% á evrusvæðinu. Þetta er u.þ.b. tvöfaldur munur á stýrivöxtum, ekki þrefaldur. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a> bendir þó á að samanburðurinn sé flóknari vegna verðtryggðra lána á Íslandi. Fullyrðingin ýkir muninn nokkuð.",
       "supporting_evidence": [
         {
           "id": "CURR-DATA-007",
           "source_name": "Central Bank of Iceland; ECB; Eurostat HICP",
-          "source_url": "https://sedlabanki.is/gagnatorg/verdbolga/"
+          "source_url": "https://www.sedlabanki.is/"
         },
         {
           "id": "HOUS-DATA-005",
@@ -57,7 +58,7 @@
         {
           "id": "CURRENCY-DATA-015",
           "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
-          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+          "source_url": "https://www.sedlabanki.is/peningastefna/vaxtaakvardir/"
         }
       ],
       "contradicting_evidence": [],
@@ -82,7 +83,8 @@
         "claim_text": "Vaxtastig er mismunandi milli aðildarríkja ESB; til dæmis er vaxtastig í Ungverjalandi annað en í Hollandi.",
         "category": "currency",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "Heimildir staðfesta að vextir innan ESB eru mismunandi. <a href=\"https://www.visindavefur.is/svar.php?id=60990\" title=\"Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-016</a> lýsir því hvernig vaxtamunur á evrusvæðinu var raunverulegur, sérstaklega í kreppunni 2010–2012. Enn fremur er Ungverjaland ekki aðili að evrusvæðinu og heldur eigin gjaldmiðli (forint), sem þýðir að vaxtamunurinn við Holland er enn meiri. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> staðfestir einnig umtalsverðan breytileika í húsnæðislánavöxtum á milli ESB-landa.",
@@ -135,7 +137,8 @@
         "claim_text": "Vextir á Íslandi myndu ekki breytast við aðild að ESB.",
         "category": "currency",
         "claim_type": "prediction",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "prediction"
       },
       "verdict": "partially_supported",
       "explanation": "Fullyrðingin er rétt að hluta: ESB-aðild ein og sér myndi hafa takmörkuð áhrif á vexti þar sem Ísland myndi halda krónunni í fyrstu. <a href=\"https://www.visindavefur.is/svar.php?id=60906\" title=\"Vísindavefurinn — Jón Þór Sturluson, Associate Professor of Economics, Reykjavík University School of Business (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-015</a> staðfestir að ESB-aðild án evruaðildar myndi hafa lítil áhrif á húsnæðislánamarkaðinn þar sem Ísland er þegar í EES. Hins vegar bendir <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> á mat Viðskiptaráðs um lægri vexti og <a href=\"https://www.visindavefur.is/svar.php?id=87971\" title=\"Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (March 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-011</a> gerir ráð fyrir að vextir yrðu «nokkuð lægri» við evruaðild. Fullyrðingin er of afdráttarlaus; vextir myndu líklega lækka við evruaðild, þó tímalínan sé löng.",
@@ -189,7 +192,8 @@
         "claim_text": "Verðlag á Íslandi er það hæsta í Evrópu.",
         "category": "trade",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "Samkvæmt <a href=\"https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/\" title=\"Eurostat — Comparative price levels of consumer goods and services (prc_ppp_ind)\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-003</a> var almennt verðlag á Íslandi um 50% yfir meðaltali ESB-27, sem er hæst í Evrópu á eftir Sviss. <a href=\"https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/\" title=\"Eurostat — Purchasing power parities (prc_ppp_ind)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-007</a> staðfestir að verðlagsstuðull Íslands var 152,9 (ESB-27 = 100) árið 2024. Ísland er þannig næsthæst í Evrópu, ekki hæst — Sviss er hærra. Fullyrðingin er nærri lagi en tæknilega ónákvæm.",
@@ -232,7 +236,8 @@
         "claim_text": "Laun á Íslandi eru há í alþjóðasamanburði.",
         "category": "labour",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://px.hagstofa.is/pxen/pxweb/en/Samfelag/Samfelag__launogtekjur__1_laun__1_laun/VIN02001.px\" title=\"Hagstofa Íslands — Wages and income; Eurostat — Structure of Earnings Survey\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-003</a> staðfestir að laun á Íslandi séu meðal þeirra hæstu í Evrópu, um 15–20% yfir meðaltali ESB-27 miðað við kaupmáttarjafnvægi. <a href=\"https://www.imf.org/en/Publications/WEO\" title=\"IMF World Economic Outlook Database — October 2024\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-002</a> sýnir að VLF á mann er u.þ.b. $72.000 (PPP) og <a href=\"https://www.europarl.europa.eu/thinktank/en/document/EPRS_BRI(2026)782591\" title=\"IMF World Economic Outlook; Eurostat; EPRS Briefing on EU-Iceland Relations\" target=\"_blank\" rel=\"noopener\">PREC-DATA-025</a> bendir á að Ísland sé ríkasti umsækjandi ESB-aðildar í sögunni. Fullyrðingin er í meginatriðum rétt.",
@@ -280,7 +285,8 @@
         "claim_text": "Að minnsta kosti 5 aðildarríki ESB hafa svipað há laun og Ísland en hafa þó ekki þetta háa verðlag.",
         "category": "labour",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "<a href=\"https://px.hagstofa.is/pxen/pxweb/en/Samfelag/Samfelag__launogtekjur__1_laun__1_laun/VIN02001.px\" title=\"Hagstofa Íslands — Wages and income; Eurostat — Structure of Earnings Survey\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-003</a> sýnir að laun á Íslandi séu sambærileg við Danmörku og Lúxemborg. <a href=\"https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/\" title=\"Eurostat — Comparative price levels of consumer goods and services (prc_ppp_ind)\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-003</a> sýnir hins vegar að verðlag í mörgum ESB-ríkjum er talsvert lægra en á Íslandi (Ísland +50%, Danmörk +40%, Svíþjóð +15%). Nokkur ESB-ríki eru þannig með há laun og lægra verðlag. Erfitt er þó að staðfesta nákvæmlega 5 ríki með «svipuð há laun og Ísland» úr fyrirliggjandi heimildum — heimildir nefna aðeins Danmörku og Lúxemborg sem sambærileg.",
@@ -318,7 +324,8 @@
         "claim_text": "Laun á Íslandi eru þau hæstu í Evrópu.",
         "category": "labour",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "Samkvæmt <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Samfelag/Samfelag__launogtekjur__1_laun__1_laun/VIN02001.px\" title=\"Hagstofa Íslands — Wages and income; Eurostat — Structure of Earnings Survey\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-003</a> eru laun á Íslandi meðal þeirra hæstu í Evrópu, «sambærileg við Danmörku og Lúxemborg». Þetta bendir til þess að laun á Íslandi séu ekki endilega þau hæstu heldur á svipuðu róli og ríki eins og Danmörk og Lúxemborg. Upprunalega tilvitnunin fullyrðir að «ekkert ESB-ríki sé með hærri laun» en heimildir segja «sambærileg» frekar en «hæst».",
@@ -371,7 +378,8 @@
         "claim_text": "Verðbólga er venjulega 2–3 sinnum hærri á Íslandi en í Evrópu.",
         "category": "currency",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "Gögn úr <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__visitolur__1_vnv__1_vnv/VIS01005.px\" title=\"Hagstofa Íslands — Consumer price index; Eurostat — HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-003</a> sýna að meðalverðbólga á Íslandi var um 5,5% á árunum 2005–2025 samanborið við 2,1% á evrusvæðinu — hlutfallið er um 2,6x. <a href=\"https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IS\" title=\"World Bank — World Development Indicators (FP.CPI.TOTL.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-013</a> sýnir 4,7% gegn um 2% markmiði Seðlabanka Evrópu á lengra tímabili (2000–2024), sem gefur hlutfall um 2,4x. Hlutfallið «2–3 sinnum» á þannig að mestu leyti við en er of vítt orðað sem almenn regla. Á rólegum tímum (2014–2019) var munurinn minni, um 2,3% á Íslandi samanborið við nálægt 1% á evrusvæðinu, þar sem hlutfallið gat verið nær 2x. Í kreppum fór hlutfallið hins vegar yfir 3x.",
@@ -389,7 +397,7 @@
       ],
       "contradicting_evidence": [],
       "missing_context": "Samanburðurinn flækist af mismunandi aðferðafræði vísitölu neysluverðs og uppbyggingu húsnæðismarkaðar. Verðbólga á Íslandi er kerfisbundið hærri vegna innflutningsháðrar, smárrar hagkerfis og launaviðræðna — en þeir þættir myndu ekki hverfa sjálfkrafa við upptöku evru, eins og reynsla Eystrasaltsríkjanna sýnir.",
-      "confidence": 0.8,
+      "confidence": 0.722,
       "speakers": [
         {
           "name": "Ágúst Ólafur Ágústsson",
@@ -409,10 +417,11 @@
         "claim_text": "Verðbólga í Hollandi er undir 3%.",
         "category": "currency",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://ec.europa.eu/eurostat/web/hicp\" title=\"Eurostat HICP Flash Estimate; ECB Monetary Policy Decisions\" target=\"_blank\" rel=\"noopener\">CURR-DATA-008</a> staðfestir að verðbólga á evrusvæðinu var 1,9% í febrúar 2026 og <a href=\"https://sedlabanki.is/gagnatorg/verdbolga/\" title=\"Central Bank of Iceland; ECB; Eurostat HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-007</a> bendir einnig á 1,9% meðaltal. Holland er á evrusvæðinu og getur því haft verðbólgu nálægt meðaltalinu. Fullyrðingin er sennilega rétt en heimildir gefa ekki sértæka tölu fyrir Holland.",
+      "explanation": "<a href=\"https://ec.europa.eu/eurostat/web/hicp\" title=\"Eurostat HICP Flash Estimate; ECB Monetary Policy Decisions\" target=\"_blank\" rel=\"noopener\">CURR-DATA-008</a> staðfestir að verðbólga á evrusvæðinu var 1,9% í febrúar 2026 og <a href=\"https://www.sedlabanki.is/\" title=\"Central Bank of Iceland; ECB; Eurostat HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-007</a> bendir einnig á 1,9% meðaltal. Holland er á evrusvæðinu og getur því haft verðbólgu nálægt meðaltalinu. Fullyrðingin er sennilega rétt en heimildir gefa ekki sértæka tölu fyrir Holland.",
       "supporting_evidence": [
         {
           "id": "CURR-DATA-008",
@@ -442,15 +451,16 @@
         "claim_text": "Verðbólga á Íslandi er um 5%.",
         "category": "currency",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://sedlabanki.is/gagnatorg/verdbolga/\" title=\"Central Bank of Iceland; ECB; Eurostat HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-007</a> staðfestir að HICP-verðbólga á Íslandi var 5,2% í febrúar 2026. <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__visitolur__1_vnv__1_vnv/VIS01005.px\" title=\"Hagstofa Íslands — Consumer price index; Eurostat — HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-003</a> og <a href=\"https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IS\" title=\"World Bank — World Development Indicators (FP.CPI.TOTL.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-013</a> staðfesta einnig að íslensk verðbólga hefur verið í kringum 5–6% á undanförnum árum. Fullyrðingin «um 5%» er í samræmi við tiltæk gögn.",
+      "explanation": "<a href=\"https://www.sedlabanki.is/\" title=\"Central Bank of Iceland; ECB; Eurostat HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-007</a> staðfestir að HICP-verðbólga á Íslandi var 5,2% í febrúar 2026. <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__visitolur__1_vnv__1_vnv/VIS01005.px\" title=\"Hagstofa Íslands — Consumer price index; Eurostat — HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-003</a> og <a href=\"https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IS\" title=\"World Bank — World Development Indicators (FP.CPI.TOTL.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-013</a> staðfesta einnig að íslensk verðbólga hefur verið í kringum 5–6% á undanförnum árum. Fullyrðingin «um 5%» er í samræmi við tiltæk gögn.",
       "supporting_evidence": [
         {
           "id": "CURR-DATA-007",
           "source_name": "Central Bank of Iceland; ECB; Eurostat HICP",
-          "source_url": "https://sedlabanki.is/gagnatorg/verdbolga/"
+          "source_url": "https://www.sedlabanki.is/"
         },
         {
           "id": "CURR-DATA-003",
@@ -485,7 +495,8 @@
         "claim_text": "Það er rangt að verðbólga sé 2–3 sinnum hærri á Íslandi en í Evrópu.",
         "category": "currency",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "unsupported",
       "explanation": "Fullyrðingin hrekkur staðhæfingu sem gögn styðja vel. <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__visitolur__1_vnv__1_vnv/VIS01005.px\" title=\"Hagstofa Íslands — Consumer price index; Eurostat — HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-003</a> sýnir meðalverðbólgu 5,5% á Íslandi á móti 2,1% á evrusvæðinu (2,6x). <a href=\"https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IS\" title=\"World Bank — World Development Indicators (FP.CPI.TOTL.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-013</a> sýnir 4,7% á móti ~2% (2,35x). <a href=\"https://ec.europa.eu/eurostat/web/hicp\" title=\"Eurostat HICP Flash Estimate; ECB Monetary Policy Decisions\" target=\"_blank\" rel=\"noopener\">CURR-DATA-008</a> staðfestir núverandi hlutfall 5,2% á móti 1,9% (2,7x). Allar heimildir benda til þess að verðbólga á Íslandi sé raunverulega 2–3 sinnum hærri en á evrusvæðinu sem meðaltalsreiknun.",
@@ -528,15 +539,16 @@
         "claim_text": "Um 230 stærstu fyrirtæki landsins, þar á meðal sjávarútvegsrisarnir, hafa yfirgefið krónuna sem gjaldmiðil og nota nú þegar evru eða dollar.",
         "category": "currency",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://statice.is/statistics/economy/external-trade/\" title=\"Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður\" target=\"_blank\" rel=\"noopener\">FISH-DATA-027</a> staðfestir að sjávarútvegsfyrirtæki gera upp í erlendum gjaldmiðlum (evrum og dollurum) vegna útflutnings, þar sem um 90% sjávarafurða eru fluttar út. <a href=\"https://www.sedlabanki.is/hagtolur/gengi/\" title=\"Seðlabanki Íslands — Exchange rate data\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-007</a> og <a href=\"https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/skyrsla-nefndarinnar/english/\" title=\"Seðlabanki Íslands — Special Investigation Commission report; Central Bank annual report 2009\" target=\"_blank\" rel=\"noopener\">CURR-DATA-001</a> vísa til mikillar gengisáhættu krónunnar sem hvetur fyrirtæki til að nota erlendan gjaldmiðil. Hins vegar er stór munur á að «nota evru í uppgjöri» og «yfirgefa krónuna sem gjaldmiðil». Fyrirtækin borga laun, skatta og innlendan kostnað í krónum. Talan 230 er ekki staðfest í heimildum.",
+      "explanation": "<a href=\"https://hagstofa.is/talnaefni/efnahagsmal/utanrikisverslun/\" title=\"Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður\" target=\"_blank\" rel=\"noopener\">FISH-DATA-027</a> staðfestir að sjávarútvegsfyrirtæki gera upp í erlendum gjaldmiðlum (evrum og dollurum) vegna útflutnings, þar sem um 90% sjávarafurða eru fluttar út. <a href=\"https://www.sedlabanki.is/hagtolur/gengi/\" title=\"Seðlabanki Íslands — Exchange rate data\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-007</a> og <a href=\"https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/skyrsla-nefndarinnar/english/\" title=\"Seðlabanki Íslands — Special Investigation Commission report; Central Bank annual report 2009\" target=\"_blank\" rel=\"noopener\">CURR-DATA-001</a> vísa til mikillar gengisáhættu krónunnar sem hvetur fyrirtæki til að nota erlendan gjaldmiðil. Hins vegar er stór munur á að «nota evru í uppgjöri» og «yfirgefa krónuna sem gjaldmiðil». Fyrirtækin borga laun, skatta og innlendan kostnað í krónum. Talan 230 er ekki staðfest í heimildum.",
       "supporting_evidence": [
         {
           "id": "FISH-DATA-027",
           "source_name": "Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður",
-          "source_url": "https://statice.is/statistics/economy/external-trade/"
+          "source_url": "https://hagstofa.is/talnaefni/efnahagsmal/utanrikisverslun/"
         },
         {
           "id": "TRADE-DATA-007",
@@ -566,7 +578,8 @@
         "claim_text": "Notkun evru er bundin þeim skilyrðum að viðkomandi ríki þurfi að vera aðili að ESB.",
         "category": "eea_eu_law",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "<a href=\"https://www.cer.eu/insights/gap-between-brexit-reset-rhetoric-and-reality\" title=\"Centre for European Reform; UK in a Changing Europe\" target=\"_blank\" rel=\"noopener\">PREC-DATA-004</a> staðfestir að nýir aðildarumsækjendur þurfa að skuldbinda sig til evruaðildar, og <a href=\"https://www.visindavefur.is/svar.php?id=5921\" title=\"Vísindavefurinn — EDS & Gylfi Magnússon, University of Iceland (2006/2017, updated 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-012</a> bendir á að örstátar eins og San Marínó og Mónakó nota evruna án ESB-aðildar. <a href=\"https://www.visindavefur.is/svar.php?id=87971\" title=\"Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (March 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-011</a> lýsir Maastricht-viðmiðunum sem ríki verða að uppfylla. Fullyrðingin er rétt í grunninn — formlega þarf ESB-aðild til að taka upp evruna sem opinberan gjaldmiðil — en hún sleppir undantekningum eins og örríkjum og einhliða evrunotkun (t.d. Kosovo, Svartfjallaland).",
@@ -609,7 +622,8 @@
         "claim_text": "Samkvæmt reglum ESB fá eingöngu þjóðir með nýlega veiðireynslu að veiða fisk í lögsögu aðildarríkja.",
         "category": "fisheries",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> og <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development\" title=\"European Parliament — The Common Fisheries Policy: Origins and Development\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-005</a> staðfesta að sameiginleg sjávarútvegsstefna ESB byggir á meginreglunni um «hlutfallslegan stöðugleika» (relative stability) þar sem söguleg veiðiskýrsla (aðallega 1973–1978) ákvarðar fasta hlutdeild hvers ríkis. Þetta er skylt veiðireynslu en er ekki beint «nýleg» veiðireynsla heldur söguleg. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380\" title=\"EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024\" target=\"_blank\" rel=\"noopener\">FISH-DATA-032</a> staðfestir regluna um jafnan aðgang að ESB-hafsvæðum fyrir öll aðildarríki, sem stangast á við hugmyndina um takmörkun byggða á veiðireynslu.",
@@ -633,7 +647,7 @@
         }
       ],
       "missing_context": "Fullyrðingin einfaldar reglurnar. Sameiginleg sjávarútvegsstefnan byggir á sögulegri veiðireynslu (frá áttunda áratugnum) frekar en «nýlegri» reynslu. Meginreglan um jafnan aðgang (equal access) þýðir að öll ESB-skip hafa aðgang að ESB-hafsvæðum utan 12 sjómílna, þó kvótar séu deilt samkvæmt sögulegum viðmiðum.",
-      "confidence": 0.6,
+      "confidence": 0.5813999999999999,
       "speakers": [
         {
           "name": "Ágúst Ólafur Ágústsson",
@@ -653,7 +667,8 @@
         "claim_text": "Eingöngu Íslendingar hafa veiðireynslu í íslenskri lögsögu og því sætu íslensk skip áfram ein að íslenskum miðum eftir aðild.",
         "category": "fisheries",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "misleading",
       "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380\" title=\"EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024\" target=\"_blank\" rel=\"noopener\">FISH-DATA-032</a> lýsir meginreglunni um jafnan aðgang (equal access) þar sem skip allra ESB-ríkja hafa rétt til veiða í hafsvæðum aðildarríkja utan 12 sjómílna — ekki aðeins þau skip sem hafa söguleg veiðitilvik. <a href=\"https://ireland.representation.ec.europa.eu/news-and-events/news/facts-and-figures-impact-eu-membership-irelands-fisheries-2024-06-06_en\" title=\"European Commission Representation in Ireland / Marine Institute\" target=\"_blank\" rel=\"noopener\">FISH-PREC-004</a> sýnir fordæmi Írlands þar sem írskir útgerðarmenn fá aðeins ~35% afla úr eigin hafsvæði. <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development\" title=\"European Parliament — The Common Fisheries Policy: Origins and Development\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-005</a> útskýrir að kvótar nýrra aðildarríkja eru samningsbundnir í aðildarsamningi, ekki sjálfkrafa tengdir eingöngu innlendri veiðireynslu.",
@@ -701,7 +716,8 @@
         "claim_text": "Aðildarríki ráða sjálf hvernig þau útdeila kvóta sínum.",
         "category": "fisheries",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380\" title=\"EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024\" target=\"_blank\" rel=\"noopener\">FISH-DATA-032</a> staðfestir berum orðum að «each member state has full sovereignty over how it distributes its quota internally» og vísar til greinar 16(6) í reglugerð 1380/2013. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380\" title=\"Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-030</a> staðfestir einnig þessa meginreglu og nefnir að Danmörk, Holland og Eistland nota aflahlutdeildir (ITQ) innan ramma CFP. Fullyrðingin er rétt — innri dreifing kvóta er alfarið á forræði aðildarríkjanna.",
@@ -744,7 +760,8 @@
         "claim_text": "Sameiginleg sjávarútvegsstefna ESB hefur aldrei byggt á veiðireynslu.",
         "category": "fisheries",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "unsupported",
       "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> staðfestir skýrlega að kvótar eru útdeildir á grundvelli «hlutfallslegs stöðugleika» (relative stability) sem byggir á «historical catch records (primarily from 1973–1978)». <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development\" title=\"European Parliament — The Common Fisheries Policy: Origins and Development\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-005</a> útskýrir einnig að hlutdeildir byggjast á sögulegum veiðiskýrslum og þörfum sjávarútvegshérða. Söguleg veiðireynsla er þannig hornsteinn kerfisins, þvert á fullyrðinguna.",
@@ -787,7 +804,8 @@
         "claim_text": "Allar auðlindir utan 12 sjómílna lögsögu aðildarríkis eru sameiginleg eign viðkomandi ríkis og ESB.",
         "category": "fisheries",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003\" title=\"Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-030</a> staðfestir að varðveisla sjávarauðlinda er í einkavaldssvæði ESB samkvæmt grein 3 TFEU. <a href=\"https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf\" title=\"Icelandic Act on the Exclusive Economic Zone No. 41/1979\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-002</a> staðfestir að ESB-aðild myndi færa íslenska efnahagslögsöguna undir sameiginlega sjávarútvegsstefnu. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380\" title=\"EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024\" target=\"_blank\" rel=\"noopener\">FISH-DATA-032</a> bendir á jafnan aðgang utan 12 sjómílna. Fullyrðingin er í grunninn rétt varðandi sjávarauðlindir en of víð: hún segir «allar auðlindir» en CFP nær aðeins til sjávarauðlinda, ekki til t.d. jarðefnaauðlinda á landgrunni sem haldast undir fullveldi ríkisins.",
@@ -835,7 +853,8 @@
         "claim_text": "Ef Ísland gengur í ESB myndi ESB stjórna fiskveiðum í íslenskri landhelgi utan 12 sjómílna.",
         "category": "fisheries",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "prediction"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf\" title=\"Icelandic Act on the Exclusive Economic Zone No. 41/1979\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-002</a> staðfestir að ESB-aðild myndi færa íslenska efnahagslögsöguna undir sameiginlega sjávarútvegsstefnu ESB. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003\" title=\"Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-030</a> sýnir að varðveisla sjávarauðlinda er einkavaldssvæði ESB. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13\" target=\"_blank\" rel=\"noopener\">EEA-DATA-004</a> staðfestir að sjávarútvegurinn var erfiðasti kaflinn í aðildarviðræðum. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380\" title=\"EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024\" target=\"_blank\" rel=\"noopener\">FISH-DATA-032</a> bendir á jafnan aðgang ESB-skipa utan 12 sjómílna. Þetta er rétt lýsing á því sem ESB-aðild myndi hafa í för með sér.",
@@ -883,7 +902,8 @@
         "claim_text": "Malta hélt öllum sínum fiskveiðiréttindum við aðild að ESB.",
         "category": "fisheries",
         "claim_type": "comparison",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "unverifiable",
       "explanation": "Engin heimild í staðreyndagrunni fjallar sérstaklega um fiskveiðiréttindi Möltu við ESB-aðild. <a href=\"https://commission.europa.eu/about/organisation/college-commissioners_en\" title=\"European Commission — College of Commissioners; EUR-Lex — Commission composition\" target=\"_blank\" rel=\"noopener\">FISH-DATA-033</a> nefnir Malta í tengslum við framkvæmdastjórasæti (Karmenu Vella) en ekki um fiskveiðiréttindi. Fordæmi Írlands (<a href=\"https://ireland.representation.ec.europa.eu/news-and-events/news/facts-and-figures-impact-eu-membership-irelands-fisheries-2024-06-06_en\" title=\"European Commission Representation in Ireland / Marine Institute\" target=\"_blank\" rel=\"noopener\">FISH-PREC-004</a>) er nefnt en Möltu-fordæmið er ekki til staðar í gögnum. Samanburður Möltu og Íslands er einnig vandmeðfarinn þar sem sjávarútvegur Möltu er hverfandi miðað við Ísland.",
@@ -899,7 +919,8 @@
         "claim_text": "Aðild Íslands að ESB hefur engin áhrif á eignarhald og nýtingu orkuauðlinda.",
         "category": "energy",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "prediction"
       },
       "verdict": "partially_supported",
       "explanation": "<a href=\"https://www.althingi.is/lagas/nuna/2003065.html\" title=\"Althingi — Raforkulög (Electricity Act); Treaty on the Functioning of the European Union, Art. 194\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-003</a> og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12016E194\" title=\"Treaty on the Functioning of the European Union, Article 194\" target=\"_blank\" rel=\"noopener\">ENERGY-TREATY-001</a> staðfesta að grein 194(2) TFEU verndar rétt aðildarríkja til að ákveða skilyrði nýtingar orkuauðlinda og val á orkugjöfum. Eignarhald orkuauðlinda yrði ekki breytt. Hins vegar bendir <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12016E194\" title=\"Treaty on the Functioning of the European Union, Article 194\" target=\"_blank\" rel=\"noopener\">ENERGY-TREATY-001</a> á að ESB-orkustefna er sameiginlegt valdsvið og «EU legislation can set binding targets and market rules that constrain national policy discretion in practice». <a href=\"https://www.efta.int/about-efta/legal-documents/eea-legal-texts/annexes-agreement\" title=\"EFTA Secretariat — EEA Agreement Annex IV (Energy); Althingi EU Assessment Committee\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-001</a> bendir einnig á að full aðild myndi afnema getu Íslands til að semja um aðlaganir.",
@@ -923,7 +944,7 @@
         }
       ],
       "missing_context": "Þótt grein 194 TFEU verndi eignarhald orkuauðlinda geta samkeppnisreglur ESB, ríkisaðstoðarreglur og orkumarkaðsreglur haft óbein áhrif á nýtingu. Orkuverðssamningar álvera gætu komið til endurskoðunar. Dómstóll ESB túlkar þessar reglur og hefur þrengt raunverulegt svigrúm aðildarríkja. Mismunur er á «engin áhrif» og «eignarhald breytist ekki» — hið fyrra er of vítt.",
-      "confidence": 0.7,
+      "confidence": 0.6649999999999999,
       "speakers": [
         {
           "name": "Ágúst Ólafur Ágústsson",
@@ -943,10 +964,11 @@
         "claim_text": "Þar sem Ísland hefur engan sæstreng til orkuflutnings mun nýting á orkuauðlindum ekki breytast við aðild.",
         "category": "energy",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.visindavefur.is/svar.php?id=62314\" title=\"Vísindavefurinn — Þorvarður Kjerulf Sigurjónsson, Evrópuvefurinn project manager (2012)\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-008</a> staðfestir að Ísland hefur þegar innleitt ESB-orkutilskipanir í gegnum EES og ESB-aðild myndi ekki bæta við regluverki á því sviði. <a href=\"https://orkustofnun.is/en/information/numerical_data/energy\" title=\"Orkustofnun (National Energy Authority) — Energy Statistics 2024\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-005</a> bendir á að Ísland tengist ekki evrópska raforkumarkaðnum. Hins vegar bendir <a href=\"https://www.efta.int/about-efta/legal-documents/eea-legal-texts/annexes-agreement\" title=\"EFTA Secretariat — EEA Agreement Annex IV (Energy); Althingi EU Assessment Committee\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-001</a> á að full aðild myndi afnema getu Íslands til aðlagana og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12016E194\" title=\"Treaty on the Functioning of the European Union, Article 194\" target=\"_blank\" rel=\"noopener\">ENERGY-TREATY-001</a> bendir á óbein áhrif ESB-regluverks. Fullyrðingin er rök­rétt að hluta en of einföld — sæstrengur er ekki eina leiðin sem ESB-aðild gæti haft áhrif.",
+      "explanation": "<a href=\"https://www.visindavefur.is/svar.php?id=62314\" title=\"Vísindavefurinn — Þorvarður Kjerulf Sigurjónsson, Evrópuvefurinn project manager (2012)\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-008</a> staðfestir að Ísland hefur þegar innleitt ESB-orkutilskipanir í gegnum EES og ESB-aðild myndi ekki bæta við regluverki á því sviði. <a href=\"https://orkustofnun.is/\" title=\"Orkustofnun (National Energy Authority) — Energy Statistics 2024\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-005</a> bendir á að Ísland tengist ekki evrópska raforkumarkaðnum. Hins vegar bendir <a href=\"https://www.efta.int/about-efta/legal-documents/eea-legal-texts/annexes-agreement\" title=\"EFTA Secretariat — EEA Agreement Annex IV (Energy); Althingi EU Assessment Committee\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-001</a> á að full aðild myndi afnema getu Íslands til aðlagana og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12016E194\" title=\"Treaty on the Functioning of the European Union, Article 194\" target=\"_blank\" rel=\"noopener\">ENERGY-TREATY-001</a> bendir á óbein áhrif ESB-regluverks. Fullyrðingin er rök­rétt að hluta en of einföld — sæstrengur er ekki eina leiðin sem ESB-aðild gæti haft áhrif.",
       "supporting_evidence": [
         {
           "id": "ENERGY-DATA-008",
@@ -956,7 +978,7 @@
         {
           "id": "ENERGY-DATA-005",
           "source_name": "Orkustofnun (National Energy Authority) — Energy Statistics 2024",
-          "source_url": "https://orkustofnun.is/en/information/numerical_data/energy"
+          "source_url": "https://orkustofnun.is/"
         }
       ],
       "contradicting_evidence": [
@@ -987,7 +1009,8 @@
         "claim_text": "Það er engin skylda að leggja sæstreng við aðild að ESB.",
         "category": "energy",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "Engin heimild í staðreyndagrunni bendir á beina lagalega skyldu til að leggja sæstreng sem skilyrði ESB-aðildar. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12016E194\" title=\"Treaty on the Functioning of the European Union, Article 194\" target=\"_blank\" rel=\"noopener\">ENERGY-TREATY-001</a> staðfestir að grein 194 TFEU verndar rétt aðildarríkja til orkuvals. Hins vegar gerir engin heimild ráð fyrir skýru lagaákvæði sem skyldar eða undanþiggur sæstreng — málið er ekki fjallað um beint í heimildum.",
@@ -1020,7 +1043,8 @@
         "claim_text": "Með bókun 35 vildi ESB ná til sín löggjafarvaldinu, framkvæmdavaldinu og dómsvaldinu.",
         "category": "eea_eu_law",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "misleading",
       "explanation": "<a href=\"https://www.althingi.is/altext/raeda/156/rad20250918T000000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 156. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">EEA-PARL-001</a> útskýrir bókun 35 (Protocol 35): hún kemur á takmarkaðri forgangsreglu þar sem íslensk lög sem innleiða EES-skuldbindingar ganga framar öðrum lögum ef þau stangast á. Utanríkisráðherra lýsti henni sem vernd einstaklinga og fyrirtækja, ekki yfirfærslu valds. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61964CJ0006\" title=\"CJEU — Case 6/64 Costa v ENEL; Case 26/62 Van Gend en Loos; EEA Agreement Articles 6 and 7; EFTA Court advisory opinion mechanism\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-029</a> útskýrir mun á EES-fyrirkomulagi og ESB-yfirræði — EFTA-dómstóllinn gefur ráðgefandi álit en dómar hans eru ekki bindandi. Fullyrðingin ýkir mjög tilgang bókunar 35.",
@@ -1058,7 +1082,8 @@
         "claim_text": "Ef Ísland gerist aðili að ESB er ekki lengur á valdi Alþingis að ákveða hvort sæstrengur verði lagður.",
         "category": "sovereignty",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "prediction"
       },
       "verdict": "partially_supported",
       "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12016E194\" title=\"Treaty on the Functioning of the European Union, Article 194\" target=\"_blank\" rel=\"noopener\">ENERGY-TREATY-001</a> staðfestir að orkustefna er sameiginlegt valdsvið og grein 194(2) TFEU verndar rétt aðildarríkja til nýtingar orkuauðlinda. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003\" title=\"Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-030</a> lýsir þremur flokkum ESB-valds þar sem orkumál eru sameiginlegt valdsvið, ekki einkavaldssvæði ESB. Þetta þýðir að Alþingi myndi ekki missa allt vald en ESB-regluverk gæti takmarkað svigrúm. Fullyrðingin er of afdráttarlaus.",
@@ -1097,7 +1122,8 @@
         "claim_text": "Evrópuþingmenn raða sér í þingflokka eftir stjórnmálaskoðunum en ekki eftir þjóðernum.",
         "category": "sovereignty",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://ecrgroup.eu/ecr/mep/adam_bielan\" title=\"ECR Group — Adam Bielan MEP profile; Wikipedia — European Conservatives and Reformists Party\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-015</a> staðfestir að ECR-flokkahópurinn samanstendur af þingmönnum úr 15 löndum sem deila pólitískri sýn frekar en þjóðerni. <a href=\"https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:12008M014:EN:HTML\" title=\"Treaty on European Union, Article 14(2)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-003</a> útskýrir að Evrópuþingið hefur 720 sæti og fulltrúar úr sama landi sitja í ólíkum flokkahópum. Sjálfstæðisflokkurinn er t.d. aðili að ECR á meðan flestir Norðurlandaflokkar tilheyra öðrum hópum. Þetta er grundvallareinkenni Evrópuþingsins.",
@@ -1135,7 +1161,8 @@
         "claim_text": "Flestar ákvarðanir yrðu eftir sem áður teknar á Alþingi Íslendinga við ESB-aðild.",
         "category": "sovereignty",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "prediction"
       },
       "verdict": "partially_supported",
       "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003\" title=\"Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-030</a> staðfestir þrískipt valdssvið ESB: einkavaldssvið (tollabandalag, samkeppni, sjávarútvegur, viðskiptastefna, gjaldmiðill), sameiginlegt valdsvið (innri markaður, landbúnaður, umhverfi, samgöngur, orka), og stuðningsvaldssvið (menntun, menning, ferðaþjónusta). Margar ákvarðanir yrðu áfram teknar á Alþingi (skattar, heilbrigðismál, menntamál, félagsmál). Hins vegar færast lykilsvið eins og viðskiptastefna, sjávarútvegur og gjaldmiðill til ESB. Orðið «flestar» er umdeilanlegt.",
@@ -1179,7 +1206,8 @@
         "claim_text": "Við ESB-aðild yrðu öll viðskipti og netinnkaup Íslendinga án tolla og annarra gjalda milli Evrópuríkja.",
         "category": "trade",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "<a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf\" title=\"EEA Agreement — Protocol 3 on trade in processed agricultural products\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-002</a> staðfestir að EES-samningurinn veitir þegar tollafrjálsan aðgang fyrir flestar iðnaðarvörur og <a href=\"https://www.consilium.europa.eu/en/policies/eu-tariffs-explained/\" title=\"EU Council / European Commission Access2Markets\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-040</a> útskýrir að ESB-aðild myndi fela í sér tollabandalag sem fjarlægir alla innri tolla. <a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a> staðfestir þetta einnig. Hins vegar er orðalagið «án annarra gjalda» of vítt — virðisaukaskattur og önnur gjöld yrðu áfram til staðar. Netinnkaup frá ESB-ríkjum yrðu tollfrjáls en ekki gjaldfrjáls.",
@@ -1222,7 +1250,8 @@
         "claim_text": "Utanríkisviðskipti Íslands við ESB eru undir 40% af heildarviðskiptunum.",
         "category": "trade",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "unsupported",
       "explanation": "<a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__utanrikisverslun/\" title=\"Hagstofa Íslands — External trade statistics\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-001</a> staðfestir að um 50% af vöruútflutningi og 60% af vöruinnflutningi fer til ESB-ríkja. <a href=\"https://www.hagstofa.is/utgafur/frettasafn/utanrikisverslun/voruvidskipti-arid-2024-lokatolur/\" title=\"Hagstofa Íslands — Vöruviðskipti árið 2024, lokatölur\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-031</a> sýnir að 77% af heildarútflutningi fer til ESB/EES-landa. Jafnvel ef aðeins er litið til ESB-27 (án EES-EFTA-ríkja) er hlutfallið um 50%, sem er verulega yfir 40%. Fullyrðingin er röng.",
@@ -1249,7 +1278,8 @@
         "claim_text": "Innlimunarsinna hafa haldið því fram að útflutningur til ESB-ríkja sé rúmlega 70%.",
         "category": "trade",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "<a href=\"https://www.hagstofa.is/utgafur/frettasafn/utanrikisverslun/voruvidskipti-arid-2024-lokatolur/\" title=\"Hagstofa Íslands — Vöruviðskipti árið 2024, lokatölur\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-031</a> staðfestir að 77% af vöruútflutningi fer til ESB/EES-landa, en þessi tala nær til EES-ríkja (þ.m.t. Noregs, Sviss, Liechtenstein) en ekki eingöngu ESB-27. <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__utanrikisverslun/\" title=\"Hagstofa Íslands — External trade statistics\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-001</a> sýnir að um 50% fer til ESB-27 eingöngu. Fullyrðingin er rétt ef ESB/EES eru sameinuð en villandi ef átt er sérstaklega við ESB-27. Aðildarsinnar nota líklega víðari töluna.",
@@ -1288,7 +1318,8 @@
         "claim_text": "Álið er rúmlega 30% af útflutningi Íslands.",
         "category": "trade",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://www.hagstofa.is/utgafur/frettasafn/utanrikisverslun/voruvidskipti-arid-2024-lokatolur/\" title=\"Hagstofa Íslands — Vöruviðskipti árið 2024, lokatölur\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-031</a> staðfestir að ál og álvörur voru 33% af heildarverðmæti vöruútflutnings árið 2024. <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__utanrikisverslun/\" title=\"Hagstofa Íslands — External trade statistics\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-003</a> sýnir einnig um 33% hlutdeild áls í vöruútflutningi. Fullyrðingin «rúmlega 30%» er í samræmi við nýjustu gögn Hagstofunnar.",
@@ -1326,7 +1357,8 @@
         "claim_text": "Íslenkt ál er flutt til Rotterdam og síðan umskipað þar og flutt til Kína, en talið sem útflutningur til ESB.",
         "category": "trade",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "<a href=\"https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20250326-1\" title=\"Eurostat — EU recorded a trade deficit of EUR 11.1 billion in aluminium (March 2025)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-033</a> staðfestir að Ísland flutti ál fyrir 2,1 milljarð evra til ESB árið 2024 og er fjórði stærsti álbirgjinn. <a href=\"https://www.islandsbanki.is/en/news/iceland-and-the-impact-of-a-trade-war\" title=\"Íslandsbanki Economic Analysis / Iceland Review\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-039</a> bendir á að ál sé «sold almost entirely to Europe» sem stangast á við hugmyndina um að allt fari til Kína. <a href=\"https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/scope-eu-ets_en\" title=\"European Commission — Scope of the EU ETS; International Carbon Action Partnership (ICAP); Green by Iceland\" target=\"_blank\" rel=\"noopener\">ETS-DATA-003</a> staðfestir umfangsmikla álframleiðslu á Íslandi. Ekki er hægt að útiloka umskipun á hluta álsins en fullyrðingin um að «allt» álið fari til Kína er ekki studd af heimildum — gögn sýna að ESB er stór neytandi áls.",
@@ -1365,7 +1397,8 @@
         "claim_text": "Framkvæmdastjórar ESB hafa staðfest að vegna EES-samningsins hafa Íslendingar þegar tekið um 75% af meginlöggjöf ESB.",
         "category": "eea_eu_law",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "<a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EFTA Secretariat — EEA Agreement factsheet; ESA Annual Report 2024\" target=\"_blank\" rel=\"noopener\">EEA-DATA-006</a> staðfestir að EES nái til «roughly 75% of the EU single market legislation». <a href=\"https://www.eftasurv.int/internal-market/implementing-eea-law-national-law/internal-market-scoreboards\" title=\"EFTA Surveillance Authority — Internal Market Scoreboard\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-001</a> segir «approximately 70%» og <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EFTA Secretariat — The EEA Agreement; ESA Internal Market Scoreboard; EEA Joint Committee\" target=\"_blank\" rel=\"noopener\">EEA-DATA-010</a> staðfestir «70–75%». Hins vegar er mikilvægur greinarmunur: þetta er 75% af löggjöf innri markaðarins, ekki 75% af «meginlöggjöf ESB» sem heildinni. <a href=\"https://www.government.is/library/01-Ministries/Ministry-for-Foreign-Affairs/PDF-skjol/EES_skyrsla_15.pdf\" title=\"Utanríkisráðuneytið — Gengið til góðs: Skref í átt að bættri framkvæmd EES-samningsins (apríl 2018)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-017</a> sýnir að raunverulegt hlutfall af allri ESB-löggjöf er aðeins 13,4%. Fullyrðingin er villandi í gildissviði.",
@@ -1409,7 +1442,8 @@
         "claim_text": "Íslendingar hafa innleitt á milli 13% og 17% af löggjöf ESB.",
         "category": "eea_eu_law",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://www.government.is/library/01-Ministries/Ministry-for-Foreign-Affairs/PDF-skjol/EES_skyrsla_15.pdf\" title=\"Utanríkisráðuneytið — Gengið til góðs: Skref í átt að bættri framkvæmd EES-samningsins (apríl 2018)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-017</a> staðfestir 13,4% hlutfall (9.028 gerðir af 67.158) samkvæmt skýrslu utanríkisráðuneytisins frá 2018. <a href=\"https://www.government.is/library/01-Ministries/Ministry-for-Foreign-Affairs/PDF-skjol/Sky%CC%81rsla%20starfsho%CC%81ps%20um%20EES-samstarfi%C3%B0%200919.pdf\" title=\"Utanríkisráðuneytið — Skýrsla starfshóps um EES-samstarfið (september 2019)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-018</a> sýnir að 16% laga á Alþingi eiga beint upphaf í EES-samningnum. Bilið 13–17% er þannig vel stutt af tveimur sjálfstæðum rannsóknum sem nota ólíkar aðferðir.",
@@ -1447,7 +1481,8 @@
         "claim_text": "Ísland hefur ekki nokkur áhrif á löggjöf ESB sem það tekur yfir vegna EES-samningsins.",
         "category": "eea_eu_law",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "<a href=\"https://www.efta.int/eea-relations-eu/decision-shaping\" title=\"EFTA Secretariat — EEA Decision-Shaping; Althingi European Affairs Committee annual reports; Frosti Sigurjónsson, 'Iceland and the EEA: Policy Without Voice' (2023)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-011</a> staðfestir umtalsvert lýðræðishalla: Ísland innleiðir ~13.000 ESB-gerðir án atkvæðis í ráðherraráði eða þinginu. Ísland hefur aldrei beitt neitunarvaldi (Article 102). Hins vegar staðfestir sama heimild að Ísland hefur formlegt «decision-shaping» hlutverk og sérfræðingar þess taka þátt í hundruðum ESB-vinnuhópa. Orðalagið «ekki nokkur áhrif» er of afdráttarlaust — áhrifin eru takmörkuð en ekki engin.",
@@ -1474,7 +1509,8 @@
         "claim_text": "ESB er ekki með her á sinni könnu og getur ekki séð um eigin varnir.",
         "category": "sovereignty",
         "claim_type": "opinion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M042\" title=\"Treaty on European Union, Article 42; NATO Treaty, Article 5\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-008</a> staðfestir að ESB hefur ekki eigin her — CSDP starfar samhliða NATO og kemur ekki í stað þess. Hins vegar bendir <a href=\"https://www.eeas.europa.eu/eeas/strategic-compass-security-and-defence-1_en\" title=\"EU Strategic Compass for Security and Defence (March 2022); NATO Allied Air Command — Icelandic Air Policing; IISS Strategic Survey 2023\" target=\"_blank\" rel=\"noopener\">SOV-HIST-003</a> á að ESB hefur aukið varnarsamstarf: Strategic Compass frá 2022 inniheldur 5.000 manna snögg-beita-sveit og 150 milljarða evra varnarstefnu frá 2025. Fullyrðingin um «engan her» er tæknilega rétt en vantar samhengi um vaxandi varnarsamstarf ESB og að 23 af 27 aðildarríkjum eru í NATO.",
@@ -1513,7 +1549,8 @@
         "claim_text": "Ísland er aðili að NATO.",
         "category": "sovereignty",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://www.visindavefur.is/svar.php?id=65203\" title=\"Vísindavefurinn — Gustav Pétursson (2013, updated 2026)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-031</a> staðfestir skýrt að Ísland var stofnaðili NATO þann 4. apríl 1949. <a href=\"https://www.nato.int/en/about-us/official-texts-and-resources/strategic-concepts/nato-2022-strategic-concept\" title=\"NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list\" target=\"_blank\" rel=\"noopener\">SOV-DATA-009</a> staðfestir einnig að Ísland er «a founding NATO member without a military». <a href=\"https://eur-lex.europa.eu/EN/legal-content/summary/iceland-external-relations-common-foreign-and-security-policy.html\" title=\"TEU, Title V — CFSP provisions; Icelandic Ministry for Foreign Affairs — Annual alignment reports\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-014</a> og <a href=\"https://avalon.law.yale.edu/20th_century/ice001.asp\" title=\"Avalon Project, Yale Law Library — Defense of Iceland: Agreement Between the United States and the Republic of Iceland, May 5, 1951; Government of Iceland — Iceland and the US: Bilateral Relations\" target=\"_blank\" rel=\"noopener\">SOV-HIST-002</a> vísa til sömu staðreyndar. Þetta er ómálaleg staðreynd.",
@@ -1561,7 +1598,8 @@
         "claim_text": "Ísland er með varnarsamning við Bandaríkin.",
         "category": "sovereignty",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://avalon.law.yale.edu/20th_century/ice001.asp\" title=\"Avalon Project, Yale Law Library — Defense of Iceland: Agreement Between the United States and the Republic of Iceland, May 5, 1951; Government of Iceland — Iceland and the US: Bilateral Relations\" target=\"_blank\" rel=\"noopener\">SOV-HIST-002</a> staðfestir að Ísland og Bandaríkin undirrituðu tvíhliða varnarsamning 5. maí 1951 þar sem Bandaríkin tóku á sig ábyrgð á vörnum Íslands. <a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"1951 US-Iceland Defence Agreement; 2016 Iceland-US Security Cooperation Agreement; US Department of State bilateral relations factsheet\" target=\"_blank\" rel=\"noopener\">SOV-DATA-008</a> staðfestir að samningurinn er enn í gildi þótt herflotadeild Bandaríkjanna á Keflavíkurflugvelli hafi lokað árið 2006. Tvíhliða varnarsamstarf hélt áfram með 2016-samningnum.",
@@ -1604,7 +1642,8 @@
         "claim_text": "Danmörk, Írland, Frakkland, Svíþjóð, Holland, Belgía, Spánn og Lúxemborg eru aðilar að ESB og eru fullvalda ríki með eigin fjárlög og eigin skattastefnu.",
         "category": "sovereignty",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003\" title=\"Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-030</a> staðfestir skipan valds ESB þar sem skattamál eru að mestu á forræði aðildarríkja (ESB hefur aðeins stuðningsvaldssvæði í skattamálum). <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1\" title=\"Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-006</a> staðfestir að Danmörk og Írland hafa sérstaka undanþágusamþykkta. Öll nefnd ríki eru sannarlega ESB-aðildarríki sem halda eigin fjárlögum og skattastefnu. Fullyrðingin er rétt í meginatriðum.",
@@ -1647,7 +1686,8 @@
         "claim_text": "ESB-aðild með evru tryggir lægri vexti, minni verðbólgu, lægra verðlag og afnám verðtryggingar.",
         "category": "currency",
         "claim_type": "prediction",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "Heimildir styðja hluta fullyrðingarinnar en orðalagið «tryggir» er of sterkt. <a href=\"https://www.visindavefur.is/svar.php?id=87971\" title=\"Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (March 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-011</a> og <a href=\"https://www.visindavefur.is/svar.php?id=60906\" title=\"Vísindavefurinn — Jón Þór Sturluson, Associate Professor of Economics, Reykjavík University School of Business (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-015</a> benda til lægri vaxta og líklegs afnáms verðtryggingar við evruaðild. <a href=\"https://www.visindavefur.is/svar.php?id=60635\" title=\"Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-017</a> styður lægri verðbólgu gegnum Maastricht-viðmið. Hins vegar bendir <a href=\"https://www.visindavefur.is/svar.php?id=60990\" title=\"Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-016</a> á að vaxtasamruni í evrulandakreppunni var «blekking» og <a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a> sýnir að lægri vextir hafa leitt til hærra húsnæðisverðs í evruríkjum. Fullyrðingin um «lægra verðlag» er sérstakt vandamál — heimildir styðja hana ekki.",

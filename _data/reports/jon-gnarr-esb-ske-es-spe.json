@@ -30,7 +30,8 @@
         "claim_text": "Ísland fékk samkeppnislög og neytendavernd frá Evrópusambandinu",
         "category": "eea_eu_law",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "EES-samningurinn fól í sér innleiðingu umfangsmikillar löggjafar á sviði innri markaðarins, þar á meðal samkeppnisreglna og neytendaverndar (<a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EFTA Secretariat — The EEA Agreement; ESA Internal Market Scoreboard; EEA Joint Committee\" target=\"_blank\" rel=\"noopener\">EEA-DATA-010</a>). Tæknilega séð er þó of einfalt að segja að Ísland hafi «fengið» þessi lög «frá ESB» — EES-samningurinn er tvíhliða rammi þar sem EFTA-ríki innleiða viðeigandi ESB-löggjöf, ekki bein aðild. Samkvæmt <a href=\"https://www.efta.int/about-efta/legal-documents/eea-legal-texts/annexes-agreement\" title=\"EFTA Secretariat — EEA Agreement Annex IV (Energy); Althingi EU Assessment Committee\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-001</a> hefur Ísland þegar innleitt stóran hluta ESB-orkuregluverksins í gegnum EES, oft með aðlögunum sem fullverð aðild myndi útiloka.",
@@ -83,15 +84,16 @@
         "claim_text": "Mörg íslensk fyrirtæki gera upp í evrum en ekki íslenskum krónum",
         "category": "currency",
         "claim_type": "opinion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://statice.is/statistics/economy/external-trade/\" title=\"Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður\" target=\"_blank\" rel=\"noopener\">FISH-DATA-027</a> staðfestir að íslensk sjávarútvegsfyrirtæki gera að stórum hluta upp í erlendum gjaldmiðlum, einkum evrum og Bandaríkjadölum — um 90% sjávarafurða eru fluttar út og meirihluti fer til ESB-landa. Þó er uppgjör í evrum aðeins hluti myndarinnar; viðskipti við Asíu og Ameríku fara fram í dollurum og innlend viðskipti eru í krónum. <a href=\"https://www.sa.is/frettir\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> bendir á að SA hefur lagt áherslu á gjaldmiðilsáhættu sem viðskiptahindrun, en fullyrðingin einskorðast ekki við útflutningsfyrirtæki og er því of víð.",
+      "explanation": "<a href=\"https://hagstofa.is/talnaefni/efnahagsmal/utanrikisverslun/\" title=\"Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður\" target=\"_blank\" rel=\"noopener\">FISH-DATA-027</a> staðfestir að íslensk sjávarútvegsfyrirtæki gera að stórum hluta upp í erlendum gjaldmiðlum, einkum evrum og Bandaríkjadölum — um 90% sjávarafurða eru fluttar út og meirihluti fer til ESB-landa. Þó er uppgjör í evrum aðeins hluti myndarinnar; viðskipti við Asíu og Ameríku fara fram í dollurum og innlend viðskipti eru í krónum. <a href=\"https://www.sa.is/frettir\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> bendir á að SA hefur lagt áherslu á gjaldmiðilsáhættu sem viðskiptahindrun, en fullyrðingin einskorðast ekki við útflutningsfyrirtæki og er því of víð.",
       "supporting_evidence": [
         {
           "id": "FISH-DATA-027",
           "source_name": "Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður",
-          "source_url": "https://statice.is/statistics/economy/external-trade/"
+          "source_url": "https://hagstofa.is/talnaefni/efnahagsmal/utanrikisverslun/"
         },
         {
           "id": "POL-DATA-012",
@@ -121,7 +123,8 @@
         "claim_text": "Danmörk er aðili að Evrópusambandinu og er talin fullvalda ríki",
         "category": "sovereignty",
         "claim_type": "opinion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "Danmörk hefur verið aðili að ESB frá 1973 og er fullvalda ríki. <a href=\"https://www.thedanishparliament.dk/en/eu-information-centre/the-danish-opt-outs-from-eu-cooperation\" title=\"Edinburgh Agreement (1992); Danish Ministry of Foreign Affairs — Denmark's EU opt-outs\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-010</a> staðfestir að Danmörk hefur auk þess tryggt sér undanþágur frá lykilsviðum ESB (evru, dómsmálum, borgararétti) sem sýna sjálfstæði innan sambandsins. <a href=\"https://ec.europa.eu/eurostat/web/fisheries\" title=\"Danish Ministry of Food, Agriculture and Fisheries; Eurostat fisheries statistics\" target=\"_blank\" rel=\"noopener\">FISH-COMP-004</a> staðfestir aðild Danmerkur og <a href=\"https://agricultureandfood.dk/statistics/\" title=\"Danish Agriculture & Food Council — Facts & Figures; Statistics Denmark\" target=\"_blank\" rel=\"noopener\">PREC-DATA-014</a> lýsir öflugri danskri atvinnustarfsemi innan ESB. Umræðan um Grænland undirstrikar þjóðréttarlega stöðu Danmerkur sem fullvalda ríkis.",
@@ -190,7 +193,8 @@
         "claim_text": "ESB-aðild gæti fært landbúnað á Íslandi til betri vegar",
         "category": "agriculture",
         "claim_type": "opinion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "Heimildir sýna blendna mynd. <a href=\"https://chamber.is/intros/iceland-accession-negotiations-with-the-eu\" title=\"Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-009</a> bendir á að sameiginleg landbúnaðarstefna gæti lækkað tekjur bænda um 30–50% án sérstakra ráðstafana, en jafnframt að ESB-aðild gæti nútímavætt greinina með byggðasjóðum. <a href=\"https://www.oecd.org/agriculture/topics/agricultural-policy-monitoring-and-evaluation/\" title=\"OECD Producer Support Estimate database — Iceland; Bændasamtök Íslands (Farmers Association) annual reports; European Commission CAP indicators\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-022</a> sýnir að CAP-greiðslur yrðu líklega lægri en núverandi stuðningur (€80–120 milljónir á móti €170–200 milljónum). Bændasamtökin telja ESB-aðild «eyðileggjandi» án varanlegra undanþága (<a href=\"https://www.bondi.is/frettir/kynningarefni\" title=\"Bændasamtök Íslands — public statements and position papers (2009–2026); Vísir reporting\" target=\"_blank\" rel=\"noopener\">POL-DATA-019</a>), en viðurkenna þó nauðsyn undirbúnings.",
@@ -215,7 +219,7 @@
         {
           "id": "AGRI-DATA-013",
           "source_name": "Hagstofa Íslands — National accounts; OECD — Agricultural Policy Monitoring and Evaluation",
-          "source_url": "https://www.oecd.org/en/publications/agricultural-policy-monitoring-and-evaluation-2023_b14de474-en/full-report/iceland_fc821635.html"
+          "source_url": null
         }
       ],
       "missing_context": "Fullyrðingin er of einföld — áhrif ESB-aðildar á landbúnað ráðast af samningaskilmálum sem aldrei voru prófaðir (kafli 11 var aldrei opnaður, <a href=\"https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782591/EPRS_BRI(2026)782591_EN.pdf\" title=\"Summary of findings: Status of the accession negotiations between Iceland and the EU (Icelandic Ministry for Foreign Affairs, 2013); European Parliament briefing on EU-Iceland relations (2026)\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-003</a>). Finnland og Svíþjóð náðu sérstökum stuðningsúrræðum fyrir norðlægan landbúnað sem gætu orðið fordæmi, en slíkt er ekki tryggt. Neytendur gætu hagnast á lægra matvælaverði (15–25% samkvæmt <a href=\"https://chamber.is/intros/iceland-accession-negotiations-with-the-eu\" title=\"Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-009</a>) á kostnað bænda.",
@@ -249,15 +253,16 @@
         "claim_text": "Evran myndi stórbæta efnahagskerfið, vextir muni lækka og kaupmáttur aukast",
         "category": "currency",
         "claim_type": "opinion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "prediction"
       },
       "verdict": "partially_supported",
-      "explanation": "Reynsla Króatíu (<a href=\"https://data.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a>) sýnir að vextir á húsnæðislánum lækkuðu eftir upptöku evru og hagvöxtur var kröftugur. <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> áætlar 2–4% hækkun vergrar landsframleiðslu á 10 árum. Hins vegar er orðalagið «stórbæta» of sterkt — <a href=\"https://ec.europa.eu/eurostat/web/housing-price-statistics\" title=\"Eurostat — House price index; European Commission — Post-accession economic developments in the Baltic States\" target=\"_blank\" rel=\"noopener\">HOUSING-PRECEDENT-002</a> sýnir að lægri vextir geta kveikt eignaverðsbólur, eins og raunin varð á Írlandi og Spáni. <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> undirstrikar að Ísland missti sjálfstæða peningastefnu, sem er mikilvægt aðlögunartæki fyrir lítið og opið hagkerfi.",
+      "explanation": "Reynsla Króatíu (<a href=\"https://sdw.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a>) sýnir að vextir á húsnæðislánum lækkuðu eftir upptöku evru og hagvöxtur var kröftugur. <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> áætlar 2–4% hækkun vergrar landsframleiðslu á 10 árum. Hins vegar er orðalagið «stórbæta» of sterkt — <a href=\"https://ec.europa.eu/eurostat/web/housing-price-statistics\" title=\"Eurostat — House price index; European Commission — Post-accession economic developments in the Baltic States\" target=\"_blank\" rel=\"noopener\">HOUSING-PRECEDENT-002</a> sýnir að lægri vextir geta kveikt eignaverðsbólur, eins og raunin varð á Írlandi og Spáni. <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> undirstrikar að Ísland missti sjálfstæða peningastefnu, sem er mikilvægt aðlögunartæki fyrir lítið og opið hagkerfi.",
       "supporting_evidence": [
         {
           "id": "PREC-DATA-020",
           "source_name": "ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS",
-          "source_url": "https://data.ecb.europa.eu/"
+          "source_url": "https://sdw.ecb.europa.eu/"
         },
         {
           "id": "POL-DATA-017",
@@ -308,7 +313,8 @@
         "claim_text": "Evran er stöðugari gjaldmiðill en krónan",
         "category": "currency",
         "claim_type": "comparison",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://cb.is/statistics/official-exchange-rate/\" title=\"Seðlabanki Íslands — Monetary Bulletin; ECB Statistical Data Warehouse\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-004</a> staðfestir að árleg sveifla íslensku krónunnar gagnvart evru hefur verið 10–12% á tímabilinu 2010–2024, á meðan sveifla evrusvæðisgjaldmiðla er nánast engin. <a href=\"https://www.sedlabanki.is/hagtolur/gengi/\" title=\"Seðlabanki Íslands — Exchange rate data\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-007</a> sýnir stórkostlegt hrun krónunnar 2008–2009 (úr ~90 í yfir 180 á móti evru). Verðbólga á Íslandi hefur verið að meðaltali 4,5% samanborið við 2,5% á evrusvæðinu. Gagnvart ytri samanburði er evran augljóslega stöðugri.",
@@ -351,7 +357,8 @@
         "claim_text": "Norðmenn hafa kosið tvisvar um ESB-aðild og féll hún í bæði skiptin",
         "category": "precedents",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://www.ssb.no/en/statbank/list/euvalg\" title=\"Norwegian Centre for Research Data — Election Archive\" target=\"_blank\" rel=\"noopener\">PREC-HIST-001</a> og <a href=\"https://www.ssb.no/en/statbank/list/euvalg\" title=\"Statistics Norway — Election and referendum statistics; Bjørklund (2005) — 'Mot strømmen'\" target=\"_blank\" rel=\"noopener\">POLL-DATA-005</a>/<a href=\"https://www.ssb.no/en/statbank/list/euvalg\" title=\"Statistics Norway — Referendum results 1994; Archer (2005) — 'Norway outside the European Union'\" target=\"_blank\" rel=\"noopener\">POLL-DATA-006</a> staðfesta þetta ótvírætt. Noregur greiddi atkvæði 1972 (53,5% á móti) og 1994 (52,2% á móti). Í báðum tilvikum var niðurstaðan nei, þótt munurinn minnkaði á milli kosninga.",
@@ -394,7 +401,8 @@
         "claim_text": "Ísland var í samningaferlinu um ESB-aðild en málið var tekið af dagskrá",
         "category": "sovereignty",
         "claim_type": "legal_assertion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland accession progress reports\" target=\"_blank\" rel=\"noopener\">PREC-HIST-004</a> staðfestir að Ísland hóf aðildarviðræður í júlí 2010, opnaði 27 af 33 samningaköflum og lokaði 11 bráðabirgða — en miðju-hægri ríkisstjórnin sem tók við 2013 fraus viðræðurnar og Ísland dró umsóknina formlega til baka í mars 2015. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland progress reports 2011–2013; Screening report Chapter 11\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-018</a> og <a href=\"https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782591/EPRS_BRI(2026)782591_EN.pdf\" title=\"Summary of findings: Status of the accession negotiations between Iceland and the EU (Icelandic Ministry for Foreign Affairs, 2013); European Parliament briefing on EU-Iceland relations (2026)\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-003</a> staðfesta að erfiðustu kaflarnir (landbúnaður, sjávarútvegur) voru aldrei opnaðir. Fullyrðingin um að málið hafi verið «tekið af dagskrá» er rétt lýsing á því sem gerðist.",
@@ -437,7 +445,8 @@
         "claim_text": "Allir flokkar á Alþingi virtust sammála um að ljúka samningaviðræðum og láta þjóðina kjósa",
         "category": "party_positions",
         "claim_type": "opinion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland; Euronews; France24; coalition agreement\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-013</a> sýnir að ríkisstjórnin 2009–2013 (Samfylkingin og Vinstri hreyfingin) rak viðræðurnar, en Sjálfstæðisflokkurinn og Framsóknarflokkurinn voru andvígir. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/\" title=\"Coalition agreements 2009, 2013, 2016, 2017, 2021, 2024; Althingi records\" target=\"_blank\" rel=\"noopener\">POL-DATA-010</a> lýsir því hvernig ESB-stefna hefur verið skoðanadeilumál í stjórnarmyndun frá 2007. Fullyrðingin um «alla flokka» er of víð — ríkisstjórnarflokkarnir studdu ferlið en sterkur andstöðustraumur var til staðar, og miðju-hægri ríkisstjórnin sem tók við 2013 fraus viðræðurnar strax.",
@@ -491,7 +500,8 @@
         "claim_text": "Það er talið óraunhæft að Ísland fái undanþágur eða sérmeðferð við ESB-aðild",
         "category": "sovereignty",
         "claim_type": "opinion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
       "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> staðfestir að formlega hefur ESB hafnað varanlegum undanþágum fyrir nýja aðildarríki frá Lissabon-samningnum. Króatía (2013) fékk engar varanlegar undanþágur. <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> bendir á að varanlegar undanþágur frá kjarnareglum eins og sjávarútvegsstefnunni séu ólíklegar. Á hinn bóginn sýna <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-004</a> og <a href=\"https://eur-lex.europa.eu/collection/eu-law/treaties.html\" title=\"European Parliament — EU Treaties and Protocols; Accession Treaty texts\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-023</a> raunveruleg fordæmi: Finnland og Svíþjóð fengu viðbótarstuðning fyrir norðlægan landbúnað, og Danmörk hélt undanþágum. Svarið er því blæbrigðaríkt — ekki algjörlega óraunhæft, en talsvert erfiðara en áður.",
@@ -540,7 +550,8 @@
         "claim_text": "Ísland hefur sjálfstæðan sveigjanlegaan gjaldmiðil sem er kostur",
         "category": "currency",
         "claim_type": "opinion",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://www.sedlabanki.is/hagtolur/gengi/\" title=\"Seðlabanki Íslands — Exchange rate data\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-007</a> lýsir því hvernig gengislækkun krónunnar 2008–2009 hjálpaði Íslandi að ná aftur samkeppnishæfni hraðar en evruríkjum í kreppu. <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> staðfestir að sjálfstæð peningastefna veitir möguleika á vaxtabreytingum og gengisaðlögun. <a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=IS\" title=\"World Bank — GDP growth (annual %) (NY.GDP.MKTP.KD.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-014</a> sýnir þó að sjálfstæður gjaldmiðill eykur líka sveiflur í hagkerfinu — sveiflubilið í hagvexti Íslands er 17,1 prósentustig samanborið við 9,4 hjá Danmörku.",
@@ -593,7 +604,8 @@
         "claim_text": "Svíþjóð gekk í Nato þrátt fyrir að þótt það hafi þótt útilokað áður",
         "category": "precedents",
         "claim_type": "statistic",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "epistemic_type": "factual"
       },
       "verdict": "supported",
       "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M042\" title=\"Treaty on European Union, Article 42; NATO Treaty, Article 5\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-008</a> staðfestir að Svíþjóð gekk í NATO 2023–2024, eftir áratuga hlutleysisstefnu. <a href=\"https://eur-lex.europa.eu/collection/eu-law/treaties.html\" title=\"European Parliament — EU Treaties and Protocols; Accession Treaty texts\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-023</a> nefnir einnig að Svíþjóð og Finnland gengu í NATO á þessu tímabili. Innrás Rússlands í Úkraínu 2022 var hvatinn — «ytri aðstæður» sem höfundur nefnir. Sænskt hlutleysi var djúpt rótgróið og NATO-aðild þótti lengi útilokuð hjá flestum sænsku kjósendum.",

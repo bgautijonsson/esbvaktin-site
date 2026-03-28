@@ -20,23 +20,38 @@
       "claim_text": "Ísland á í erfiðleikum með háa vexti og verðbólgu á þeim tíma sem rætt er um ESB-aðild.",
       "original_quote": "hvort þetta gæti verið rétti tíminn þegar háir vextir og verðbólga ríkis á Íslandi. Fólk eigi erfitt með að borga af lánum sínum",
       "verdict": "supported",
-      "explanation": "<a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> staðfestir að óverðtryggðir vextir húsnæðislána eru 8–9% á Íslandi miðað við 3,4% á evrusvæðinu. <a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> sýnir að stýrivextir Seðlabankans eru um 8,5% samanborið við 2,75–3% hjá ECB. Þessar tölur styðja lýsinguna á háum vöxtum.",
-      "missing_context": "Vaxtamunurinn endurspeglar að hluta verðbólguálag og gjaldmiðlaáhættu krónu. Evruupptaka myndi ekki eiga sér stað fyrr en mörgum árum eftir hugsanlega ESB-aðild. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — EU polls cross-referenced with Hagstofa consumer confidence index\" target=\"_blank\" rel=\"noopener\">POLL-DATA-009</a> bendir til þess að efnahagsleg vanlíðan auki stuðning við ESB-aðild.",
+      "explanation": "Heimildir staðfesta skýrt að Ísland glímir við háa vexti og verðbólgu á umræðutíma ESB-aðildar. Samkvæmt <a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a> og <a href=\"https://www.sedlabanki.is/\" title=\"Central Bank of Iceland; ECB; Eurostat HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-007</a> standa stýrivextir Seðlabanka Íslands í 7,50% (mars 2026) og verðbólga mælist 5,2% (HICP, febrúar 2026). Til samanburðar er stýrivaxtamunurinn við evrusvæðið 5,50 prósentustig og verðbólgumunurinn 3,3 prósentustig. <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__visitolur__1_vnv__1_vnv/VIS01005.px\" title=\"Hagstofa Íslands — Consumer price index; Eurostat — HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-003</a> og <a href=\"https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IS\" title=\"World Bank — World Development Indicators (FP.CPI.TOTL.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-013</a> sýna að verðbólga á Íslandi hefur verið viðvarandi hærri en á evrusvæðinu síðustu tvo áratugi, og <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — EU polls cross-referenced with Hagstofa consumer confidence index\" target=\"_blank\" rel=\"noopener\">POLL-DATA-009</a> staðfestir að ESB-stuðningur tengist efnahagslegri vanlíðan.",
+      "missing_context": "Verðbólga á Íslandi er skipulagslega hærri vegna lítils opins hagkerfis, innflutningshámælis og launasamningamynsturs — evruaðild myndi ekki sjálfkrafa tryggja verðbólgu á stigi evrusvæðisins. Stýrivextir voru á lækkunarferli 2024–2025 en hækkun í mars 2026 sneri þeirri þróun við, sem bendir til þess að vandinn sé ekki á undanhaldi.",
       "supporting_evidence": [
         {
-          "id": "CURRENCY-DATA-015",
-          "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
-          "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+          "id": "CURRENCY-DATA-017",
+          "source_name": "Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar",
+          "source_url": "https://www.sedlabanki.is/peningastefna/vaxtaakvardir/"
         },
         {
-          "id": "HOUS-DATA-005",
-          "source_name": "Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase",
-          "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
+          "id": "CURR-DATA-007",
+          "source_name": "Central Bank of Iceland; ECB; Eurostat HICP",
+          "source_url": "https://www.sedlabanki.is/"
+        },
+        {
+          "id": "CURR-DATA-003",
+          "source_name": "Hagstofa Íslands — Consumer price index; Eurostat — HICP",
+          "source_url": "https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__visitolur__1_vnv__1_vnv/VIS01005.px"
+        },
+        {
+          "id": "CURRENCY-DATA-013",
+          "source_name": "World Bank — World Development Indicators (FP.CPI.TOTL.ZG)",
+          "source_url": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IS"
         },
         {
           "id": "POLL-DATA-009",
           "source_name": "Gallup Ísland — EU polls cross-referenced with Hagstofa consumer confidence index",
           "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+        },
+        {
+          "id": "HOUS-DATA-005",
+          "source_name": "Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase",
+          "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
         }
       ],
       "contradicting_evidence": [],
