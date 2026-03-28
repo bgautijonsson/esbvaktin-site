@@ -10,12 +10,12 @@
   "summary": "Greindar 14 fullyrðingar .",
   "capsule": "Staðfest er að þrír stjórnarflokkar náðu samstöðu um að bera ESB-málið undir þjóðina og að Kristrún Frostadóttir lagði áherslu á þörfina fyrir víðtæka samstöðu áður en í viðræður yrði farið. Athyglisvert samhengi sem er vert að kanna nánar: verðbólga á Íslandi hefur að meðaltali verið um 5,5% árlega síðustu tvo áratugi á móti um 2,1% á evrusvæðinu, og vextir Seðlabankans hafa staðið mun hærra en hjá Seðlabanka Evrópu — þetta er eitt af lykilrökum bæði meðmælenda og andstæðinga evruupptöku sem er vert að kynna sér.",
   "verdict_counts": {
-    "supported": 9,
+    "supported": 10,
     "misleading": 1,
     "partially_supported": 1,
     "unsupported": 1
   },
-  "claim_count": 12,
+  "claim_count": 13,
   "dominant_category": "party_positions",
   "categories": [
     "currency",
@@ -312,6 +312,40 @@
     },
     {
       "claim": {
+        "original_quote": "Kristrún vísadi í breytingar á lánshæfismati ríkissjóðs og sagði bjart fram undan.",
+        "claim_text": "Lánshæfismat ríkissjóðs hefur batnað.",
+        "category": "currency",
+        "claim_type": "statistic",
+        "confidence": 0.3,
+        "epistemic_type": "factual"
+      },
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.government.is/topics/economic-affairs-and-economic-outlook/\" title=\"Fjármála- og efnahagsráðuneytið — Ríkisfjármál; Moody's, S&P, Fitch sovereign ratings for Iceland\" target=\"_blank\" rel=\"noopener\">SOV-DATA-013</a> staðfestir skýrt að lánshæfismat ríkissjóðs hefur batnað verulega frá fjármálakreppunni 2008. Moody's hækkaði matið úr Baa3 í A2, S&P úr BBB+ í A og Fitch gefur einnig A-einkunn. Skuldir hins opinbera lækkuðu úr hámarki um 95% af vergri landsframleiðslu árið 2011 í um 65% árið 2025. Fullyrðingin er studd af heimildum.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-013",
+          "source_name": "Fjármála- og efnahagsráðuneytið — Ríkisfjármál; Moody's, S&P, Fitch sovereign ratings for Iceland",
+          "source_url": "https://www.government.is/topics/economic-affairs-and-economic-outlook/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "missing_context": "Lánshæfismatið endurspeglar marga þætti umfram ríkisfjármálastefnu, þar á meðal hagvöxt, ytri stöðu og stofnanagæði. Ekki er ljóst hvaða tímabil fullyrðingin vísar til — hvort átt sé við nýlegar hækkanir eða langtímaþróun frá hruninu. Mismunandi mælikvarðar á ríkisfjármál (brúttóskuldir, nettóskuldir, frumjöfnuður) geta gefið ólíka mynd.",
+      "confidence": 0.9,
+      "speakers": [
+        {
+          "name": "Kristrún Frostadóttir",
+          "type": "individual",
+          "role": "forsætisráðherra",
+          "party": "Samfylkingin",
+          "stance": "pro_eu",
+          "attribution": "paraphrased",
+          "stance_score": null,
+          "credibility": null
+        }
+      ]
+    },
+    {
+      "claim": {
         "original_quote": "Búið er að höggva á raforkuúnútinn",
         "claim_text": "Búið er að höggva á raforkuúnútinn.",
         "category": "energy",
@@ -582,9 +616,9 @@
       "party": "Samfylkingin",
       "role_in_article": "speaker",
       "attribution_type": "quoted",
-      "claim_count": 8,
+      "claim_count": 9,
       "verdicts": {
-        "supported": 6,
+        "supported": 7,
         "misleading": 1,
         "partially_supported": 1
       },
