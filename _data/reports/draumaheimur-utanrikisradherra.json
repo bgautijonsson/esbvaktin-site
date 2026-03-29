@@ -10,11 +10,13 @@
   "summary": "Greindar 6 fullyrðingar. Niðurstöður: 4 stutt að hluta, 1 stutt af heimildum, 1 ekki hægt að sannreyna. Sjónarhorn: mjög ESB-neikvæð. Heildstæðni: 25%.",
   "capsule": "Sameiginleg sjávarútvegsstefna ESB skiptir aflaheimildum milli aðildarríkja í gegnum ráðið, þar sem meirihluti ákvarðar leyfilegt heildaraflamagn. Þessu er rétt lýst í greininni. Áhugavert samhengi sem greinin nefnir ekki: nokkur ESB-ríki, þar á meðal Danmörk og Holland, nota þegar einstaklingsbundin framseljanleg kvótakerfi (ITQ) líkt og það íslenska, sem þýðir að munurinn á «ESB tekur yfir kerfið» og «Ísland heldur kerfinu innanlands» á sér raunveruleg fordæmi innan sambandsins.",
   "verdict_counts": {
-    "partially_supported": 4,
-    "supported": 1
+    "partially_supported": 3,
+    "supported": 1,
+    "unverifiable": 1
   },
   "epistemic_counts": {
-    "prediction": 2
+    "prediction": 1,
+    "hearsay": 1
   },
   "claim_count": 5,
   "dominant_category": "fisheries",
@@ -140,10 +142,10 @@
         "category": "fisheries",
         "claim_type": "opinion",
         "confidence": 0.9,
-        "epistemic_type": "prediction"
+        "epistemic_type": "hearsay"
       },
-      "verdict": "partially_supported",
-      "explanation": "<a href=\"https://commission.europa.eu/about/organisation/college-commissioners_en\" title=\"European Commission — College of Commissioners; EUR-Lex — Commission composition\" target=\"_blank\" rel=\"noopener\">FISH-DATA-033</a> staðfestir að lítil aðildarríki hafa gegnt embætti sjávarútvegsmálastjóra — Malta (Karmenu Vella, 2014–2019) og Kýpur (Costas Kadis, frá 2024). Ísland hefði sterka röksemd vegna yfirburðar sjávarútvegs í efnahagslífinu. Þó ber heimildin skýrt fram að engin sáttmálaákvæði tryggja neinu aðildarríki tiltekinn ráðherrapóst — ráðherraformaður framkvæmdastjórnarinnar ræður úthlutun embætta. Fullyrðingin er sett fram sem trúverðug skoðun, en orðalagið «koma í hlut» gefur til kynna meiri vissu en grundvöllur er fyrir.",
+      "verdict": "unverifiable",
+      "explanation": "Fullyrðingin byggir á frásögnum þriggja ónafngreindra fundargesta sem vitnuðu í ráðherrann við Morgunblaðið. Þorgerður Katrín neitaði þessu sjálf á fundi utanríkismálanefndar og sagði ummælin hafa verið létt vangaveltur Norðmanna sem hefðu verið settar fram í gríni.",
       "supporting_evidence": [
         {
           "id": "FISH-DATA-033",
@@ -152,8 +154,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Engin sáttmálaákvæði tryggja neinu ríki tiltekið embætti í framkvæmdastjórninni — þetta er pólitísk samningagerð, ekki réttur. Ráðherraformaðurinn (forseti framkvæmdastjórnarinnar) ákvarðar úthlutun embætta eftir eigin mati. Þótt reynsla Möltu og Kýpur styðji líkurnar á íslensku embætti tengt sjávarútvegi, myndi slíkt embætti einnig ná til umhverfismála og sjávarmála í víðara samhengi.",
-      "confidence": 0.65,
+      "missing_context": "<a href=\"https://commission.europa.eu/about/organisation/college-commissioners_en\" title=\"European Commission — College of Commissioners; EUR-Lex — Commission composition\" target=\"_blank\" rel=\"noopener\">FISH-DATA-033</a> bendir skýrt á að engin sáttmálaákvæði tryggja tilteknu ríki ákveðið eignasafn. Forseti framkvæmdastjórnarinnar ráðstafar stöðunum og tekur tillit til reynslu og forgangsröðunar hvers ríkis, en endanleg ákvörðun er hans/hennar. Einnig vantar staðfestingu á að Þorgerður Katrín hafi í raun sagt þetta — fullyrðingin er byggð á sögn fundargestanna.",
+      "confidence": 0.5,
       "speakers": [
         {
           "name": "Þorgerður Katrín Gunnarsdóttir",
@@ -265,7 +267,8 @@
       "attribution_type": "paraphrased",
       "claim_count": 2,
       "verdicts": {
-        "partially_supported": 2
+        "partially_supported": 1,
+        "unverifiable": 1
       },
       "stance": "anti_eu",
       "slug": "thorgerdur-katrin-gunnarsdottir",

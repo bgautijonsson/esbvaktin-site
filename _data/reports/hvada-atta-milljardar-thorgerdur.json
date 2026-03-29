@@ -15,7 +15,7 @@
     "unverifiable": 1
   },
   "epistemic_counts": {
-    "prediction": 8
+    "prediction": 9
   },
   "claim_count": 19,
   "dominant_category": "trade",
@@ -174,13 +174,8 @@
         "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://eeagrants.org/en/fmo/about-us\" title=\"EEA Grants Financial Mechanism Committee; European Commission budget data\" target=\"_blank\" rel=\"noopener\">EEA-DATA-005</a> áætlar hlutdeild Íslands við 10–12 milljónir evra á ári og <a href=\"https://eeagrants.org/\" title=\"EEA Grants — Financial Mechanism Committee; European Commission — EU budget figures\" target=\"_blank\" rel=\"noopener\">EEA-DATA-008</a> um 9,6 milljónir evra á ári. Þessar upphæðir samsvara um 1,4–1,8 milljörðum ISK á gengi 2026. Talan 1,7 milljarðar er rétt stærðargráða en ráðist af gengi krónunnar á hverjum tíma. <a href=\"https://eeagrants.org/resources/financial-guidance-financial-mechanism-2021-2028\" title=\"EEA Grants — Financial Mechanism 2021–2028\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-009</a> nefnir ~13 milljónir evra á ári (~1,9 ma.kr.) sem nær yfir EES-styrki en ekki öll framlög.",
+      "explanation": "Heimildirnar gefa ekki bein gögn um 12 milljarða króna heildartölu. <a href=\"https://eeagrants.org/\" title=\"EEA Grants — Financial Mechanism Committee; European Commission — EU budget figures\" target=\"_blank\" rel=\"noopener\">EEA-DATA-008</a> nefnir heildarhlutdeild Íslands í EES/Noregssjóðum við um 67,5 milljónir evra fyrir tímabilið 2021–2028, sem samsvarar um 10 milljörðum ISK á gengi 2026. <a href=\"https://eeagrants.org/resources/financial-guidance-financial-mechanism-2021-2028\" title=\"EEA Grants — Financial Mechanism 2021–2028\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-009</a> áætlar um 13 milljónir evra á ári (~1,9 ma.kr.), sem gefur um 13 ma.kr. á sjö ára tímabili. Talan 12 milljarðar er því sennileg stærðargráða, en nákvæm upphæð ráðist af gengisbreytingum og hvort tvíhliða framlög séu meðtalin.",
       "supporting_evidence": [
-        {
-          "id": "EEA-DATA-005",
-          "source_name": "EEA Grants Financial Mechanism Committee; European Commission budget data",
-          "source_url": "https://eeagrants.org/en/fmo/about-us"
-        },
         {
           "id": "EEA-DATA-008",
           "source_name": "EEA Grants — Financial Mechanism Committee; European Commission — EU budget figures",
@@ -190,11 +185,16 @@
           "id": "TRADE-DATA-009",
           "source_name": "EEA Grants — Financial Mechanism 2021–2028",
           "source_url": "https://eeagrants.org/resources/financial-guidance-financial-mechanism-2021-2028"
+        },
+        {
+          "id": "EEA-DATA-005",
+          "source_name": "EEA Grants Financial Mechanism Committee; European Commission budget data",
+          "source_url": "https://eeagrants.org/en/fmo/about-us"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Talan fer eftir gengi ISK/EUR og hvort einungis EES-styrkir eða einnig tvíhliða framlög og EFTA-fjárhagsáætlun eru meðtalin. Gengisveiflur geta breytt krónutölunni umtalsvert.",
-      "confidence": 0.7,
+      "missing_context": "Fullyrðingin vísar til upplýsinga frá utanríkisráðuneytinu sem ekki eru beint í staðreyndagrunni. Gengissveiflur ISK/EUR hafa veruleg áhrif á krónutöluna. EES-sjóðstímabilið er formlega 2021–2028, ekki 2022–2028 eins og fullyrðingin segir.",
+      "confidence": 0.612,
       "speakers": [
         {
           "name": "Hjörtur J. Guðmundsson",
@@ -603,14 +603,14 @@
         "category": "currency",
         "claim_type": "statistic",
         "confidence": 0.9,
-        "epistemic_type": "factual"
+        "epistemic_type": "prediction"
       },
       "verdict": "unverifiable",
-      "explanation": "Engin heimild í staðreyndagrunni staðfestir eða hafnar tölunni 32 milljarðar. <a href=\"https://sedlabanki.is/fjarmalastodugleiki/\" title=\"Seðlabanki Íslands — Financial Stability Report 2025; Húsnæðis- og mannvirkjastofnun (HMS) — Housing Market Overview\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-010</a> nefnir að um 80% íslenskra húsnæðislána séu verðtryggð, sem flækir útreikninga á vaxtaáhrifum. <a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> staðfestir vaxtamun Íslands og evrusvæðisins, en getur ekki metið krónutölu. Til þess að staðfesta töluna þyrfti upplýsingar um heildarveðskuldir heimila, sem staðreyndagrunnurinn inniheldur ekki.",
+      "explanation": "Engin heimild í staðreyndagrunni staðfestir eða hafnar tölunni 32 milljarðar króna á hvert prósentustig í lægri vöxtum. Til að reikna slíka tölu þyrfti upplýsingar um heildarútlánastöðu íslenskra heimila, sem enga heimild er að finna um hér. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a> og <a href=\"https://www.sedlabanki.is/\" title=\"Central Bank of Iceland; ECB; Eurostat HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-007</a> staðfesta verulegan vaxtamun milli Íslands og evrusvæðisins (5,50 prósentustig í stýrivaxtamun), svo grunnforsenda um mun á vöxtum er rétt. Tölulega fullyrðingin sjálf er hins vegar ekki sannreynanleg með fyrirliggjandi heimildum.",
       "supporting_evidence": [],
       "contradicting_evidence": [],
-      "missing_context": "<a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a> og <a href=\"https://www.ecb.europa.eu/press/economic-bulletin/articles/2021/html/ecb.ebart202107_03~36493e7b67.en.html\" title=\"Glaeser, Gottlieb & Gyourko, 'Can Cheap Credit Explain the Housing Boom?' (2012); ECB Economic Bulletin 2/2021 — 'The impact of monetary policy on housing'\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-011</a> benda til þess að lægri vextir leiði oft til hærra húsnæðisverðs frekar en lægri heildarkostnaðar — vaxtaávinningur getur horfið í hærra eignaverð. Verðtryggð lán (80% markaðarins) gera einfalda vaxtasamanburð villandi. Talan 32 milljarðar þyrfti staðfestingu úr gögnum Seðlabankans um heildarveðskuldir.",
-      "confidence": 0.35,
+      "missing_context": "Heimildir staðfesta háan vaxtamun (<a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a>, <a href=\"https://www.sedlabanki.is/\" title=\"Central Bank of Iceland; ECB; Eurostat HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-007</a>) en gefa enga vísbendingu um heildarútlánastöðu heimila sem þyrfti til að reikna 32 milljarða töluna. Þá ber að hafa í huga að lægri vextir leiða ekki endilega til lægri heildarkostnaðar — <a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a> og <a href=\"https://doi.org/10.1016/j.jue.2008.07.007\" title=\"Glaeser, E., Gyourko, J., & Saiz, A. (2008). Housing supply and housing bubbles. Journal of Urban Economics; Himmelberg, C., Mayer, C., & Sinai, T. (2005). Assessing high house prices. Journal of Economic Perspectives; IMF Working Paper WP/19/73 — House Prices and Interest Rates\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-006</a> sýna að lægri vextir tengjast hærra húsnæðisverði á mörkuðum með takmarkað framboð eins og á Íslandi.",
+      "confidence": 0.4,
       "speakers": [
         {
           "name": "Þorgerður Katrín Gunnarsdóttir",
@@ -634,17 +634,27 @@
         "epistemic_type": "prediction"
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> sýnir talsverðan vaxtamun — stýrivextir Seðlabankans eru 7,25% á móti 2,0% hjá ECB. Viðskiptaráð (<a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a>) telur ESB-aðild geta aukið VLF um 2–4% á áratug, m.a. vegna lægri vaxta. Röksemdafærslan er trúverðug í grundvallaratriðum. Hins vegar benda <a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a> og <a href=\"https://www.oecd.org/en/publications/oecd-economic-surveys-finland-2025_985d0555-en.html\" title=\"OECD Economic Surveys: Finland 2025\" target=\"_blank\" rel=\"noopener\">PREC-DATA-013</a> til verulegra áhættuþátta — lægri vextir geta ýtt undir eignabólur (Króatía, Eistland), og Finnlands reynsla sýnir að evruan getur hamlað efnahagslegri aðlögun. <a href=\"https://www.visindavefur.is/svar.php?id=87971\" title=\"Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (March 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-011</a> bendir til þess að vaxtalækkun yrði ekki sjálfvirk og fer eftir aga í ríkisfjármálum.",
+      "explanation": "Fullyrðingin segir ávinning af lægri vöxtum geta vegið þyngra en aðildargjöld til ESB. <a href=\"https://www.efta.int/about-efta/efta-secretariat/efta-budget\" title=\"EFTA Secretariat — EFTA budget; various academic estimates\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-005</a> áætlar nettóframlag Íslands til ESB á bilinu 100–180 milljónir evra á ári. <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> áætlar 2–4% hagvöxt af ESB-aðild á tíu árum, og <a href=\"https://ec.europa.eu/eurostat/databrowser/view/sdg_10_10/default/table\" title=\"Eurostat GDP per capita in PPS; European Commission Enlargement Reviews\" target=\"_blank\" rel=\"noopener\">PREC-DATA-023</a> sýnir víðtæk fordæmi um hagvöxt nýrra aðildarríkja. <a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> staðfestir 5,50 prósentustiga vaxtamun, sem gefur til kynna verulegan mögulegan ávinning. Rökin eru þó flóknari en fullyrðingin gefur til kynna: <a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a> og <a href=\"https://www.ecb.europa.eu/press/financial-stability-publications/fsr/html/index.en.html\" title=\"ECB Financial Stability Review; Ahearne, A. et al. (2005). 'House Prices and Monetary Policy: A Cross-Country Study.' BIS; Lane, P. (2012). 'The European Sovereign Debt Crisis.' Journal of Economic Perspectives\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-007</a> sýna að lægri vextir geta leitt til hærra húsnæðisverðs frekar en sparnaðar, og <a href=\"https://stat.fi/en/statistics/khi\" title=\"Statistics Finland — EU membership impact assessments; Eurostat — convergence indicators\" target=\"_blank\" rel=\"noopener\">PREC-HIST-018</a> bendir til þess að hagnaður af evruaðild sé breytilegur milli landa.",
       "supporting_evidence": [
         {
-          "id": "CURRENCY-DATA-015",
-          "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
-          "source_url": "https://www.sedlabanki.is/peningastefna/vaxtaakvardir/"
+          "id": "TRADE-COMP-005",
+          "source_name": "EFTA Secretariat — EFTA budget; various academic estimates",
+          "source_url": "https://www.efta.int/about-efta/efta-secretariat/efta-budget"
         },
         {
           "id": "POL-DATA-017",
           "source_name": "Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)",
           "source_url": "https://vi.is/skyrslur/1667"
+        },
+        {
+          "id": "PREC-DATA-023",
+          "source_name": "Eurostat GDP per capita in PPS; European Commission Enlargement Reviews",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/sdg_10_10/default/table"
+        },
+        {
+          "id": "PREC-DATA-016",
+          "source_name": "Eurostat; European Commission — Cohesion Policy data for Ireland",
+          "source_url": "https://cohesiondata.ec.europa.eu/countries/IE"
         }
       ],
       "contradicting_evidence": [
@@ -654,17 +664,12 @@
           "source_url": "https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html"
         },
         {
-          "id": "PREC-DATA-013",
-          "source_name": "OECD Economic Surveys: Finland 2025",
-          "source_url": "https://www.oecd.org/en/publications/oecd-economic-surveys-finland-2025_985d0555-en.html"
-        },
-        {
-          "id": "CURR-DATA-016",
-          "source_name": "Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)",
-          "source_url": "https://www.visindavefur.is/svar.php?id=60990"
+          "id": "HOUS-DATA-007",
+          "source_name": "ECB Financial Stability Review; Ahearne, A. et al. (2005). 'House Prices and Monetary Policy: A Cross-Country Study.' BIS; Lane, P. (2012). 'The European Sovereign Debt Crisis.' Journal of Economic Perspectives",
+          "source_url": "https://www.ecb.europa.eu/press/financial-stability-publications/fsr/html/index.en.html"
         }
       ],
-      "missing_context": "Vaxtamunurinn endurspeglar ekki eingöngu gjaldmiðilsval heldur einnig verðbólgu og áhættuálag Íslands. Evruaðild tryggir ekki ECB-vexti ef fjármálastöðugleiki er ófullnægjandi. Lægri vextir geta einnig leitt til hærra húsnæðisverðs og eignabólu frekar en raunverulegrar hagræðingar fyrir heimili.",
+      "missing_context": "Beinn samanburður á vaxtaávinningi og aðildargjöldum er flókinn. Evruaðild myndi ekki koma strax — aðildarviðræður, ERM II-tímabil og Maastricht-skilyrði þyrftu að standast fyrst (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014\" title=\"Treaty on the Functioning of the European Union, Article 140\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-004</a> á fyrri fullyrðingu, <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a>). Reynsla Írlands (<a href=\"https://cohesiondata.ec.europa.eu/countries/IE\" title=\"Eurostat; European Commission — Cohesion Policy data for Ireland\" target=\"_blank\" rel=\"noopener\">PREC-DATA-016</a>) sýnir bæði mikinn ávinning og alvarlegar bankakreppur þrátt fyrir aðild. Lægri vextir geta aukið húsnæðisverð í stað þess að lækka kostnað (<a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a>). Raunveruleg nettóframlög ráðast af samningaviðræðum sem ekki er hægt að spá nákvæmlega fyrir um.",
       "confidence": 0.55,
       "speakers": [
         {

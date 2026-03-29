@@ -14,7 +14,9 @@
     "supported": 7,
     "unverifiable": 1
   },
-  "epistemic_counts": null,
+  "epistemic_counts": {
+    "prediction": 2
+  },
   "claim_count": 15,
   "dominant_category": "sovereignty",
   "categories": [
@@ -428,25 +430,26 @@
         "category": "sovereignty",
         "claim_type": "statistic",
         "confidence": 0.9,
-        "epistemic_type": "factual"
+        "epistemic_type": "prediction"
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> staðfestir að hlutfall Íslands af heildaríbúafjölda ESB (um 380.000 af 450 milljónum) sé um 0,08%, sem er rétt tala fyrir íbúafjöldaviðmiðið í meirihlutakosningu (QMV). Hins vegar er villandi að jafna þetta hlutfall við «vægi» Íslands í ráðherraráðinu í heild. Í QMV-kerfinu þarf bæði 55% aðildarríkja og 65% íbúafjölda, og í fyrra viðmiðinu hefur Ísland jafnt vægi og Þýskaland — eitt ríki, eitt atkvæði. Auk þess eru flestar ákvarðanir teknar með samstöðu án formlegrar atkvæðagreiðslu (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a>).",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> staðfestir að Ísland myndi standa fyrir u.þ.b. 0,08% af heildaríbúafjölda ESB og þar með sama hlutfall af íbúafjöldaviðmiðinu í auknum meirihlutaatkvæðum. Talan er rétt fyrir íbúafjöldaþáttinn. Hins vegar gefur fullyrðingin til kynna að þetta sé heildarvægi Íslands, en <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> og <a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-002</a> benda á að í ríkjaviðmiðinu (55% aðildarríkja) hafi Ísland jafnt vægi og stærstu ríkin — þar er hlutdeild Íslands ~3,6% (1/28) sem er 45-falt meira en 0,08%.",
       "supporting_evidence": [
         {
           "id": "SOV-DATA-017",
           "source_name": "Treaty on European Union, Article 16(4); European Parliament allocation rules",
           "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016"
-        },
+        }
+      ],
+      "contradicting_evidence": [
         {
           "id": "SOV-LEGAL-002",
           "source_name": "Treaty on European Union, Article 16(4)",
           "source_url": "https://eur-lex.europa.eu/summary/glossary/qualified_majority.html"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Talan 0,08% á einungis við um íbúafjöldaviðmiðið í meirihlutakosningu (QMV) en segir ekki alla söguna um raunverulegt vægi smáríkja. Hvert aðildarríki hefur einn fulltrúa í ráðinu og einn framkvæmdastjóra. Smáríki eins og Malta og Lúxemborg hafa náð umtalsverðum árangri í bandalagsgerð. Flestar ákvarðanir ráðsins eru teknar með samstöðu frekar en formlegri atkvæðagreiðslu.",
-      "confidence": 0.8,
+      "missing_context": "Talan 0,08% á aðeins við um íbúafjöldaþátt aukinna meirihlutaatkvæða en segir ekkert um ríkjaviðmiðið þar sem Ísland fengi jafnvægi. Flest ákvörðun í Ráðherraráðinu eru tekin með samstöðu, og 0,08%-talan ofmetur valdleysi Íslands samkvæmt fyrirvörum heimildanna sjálfra.",
+      "confidence": 0.85,
       "speakers": [
         {
           "name": "Hjörtur J. Guðmundsson",
@@ -467,20 +470,25 @@
         "category": "sovereignty",
         "claim_type": "comparison",
         "confidence": 0.9,
-        "epistemic_type": "factual"
+        "epistemic_type": "prediction"
       },
       "verdict": "partially_supported",
-      "explanation": "Stærðfræðilega: ef Alþingi hefur 63 þingmenn þá er einn þingmaður 1/63 ≈ 1,59% af heildinni. 0,08% / 1,59% ≈ 5% af einum þingmanni, þannig að reikningurinn gengur upp (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> staðfestir 0,08% töluna). Samanburðurinn er þó villandi vegna þess að hann ber saman ólík kerfi — Alþingi er eins komu ríkisþing, en ráðherraráð ESB er samráðsvettvangur 27+ ríkja. Auk þess er hlutur hvers ríkis í ráðinu tvíþættur (ríkjafjöldi og íbúafjöldi) og margir ákvarðanir teknar með samstöðu.",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> staðfestir að Ísland með um 380.000 íbúa myndi vega um 0,08% af íbúafjölda ESB, sem er rétt hluti fullyrðingarinnar. Samanburðurinn við «5% hlutdeild í einum þingmanni á Alþingi» er hinsvegar óvenjulegur og ekki staðfestur í heimildum — enginn viðmiðunarreikningur af þessu tagi birtist í gögnunum. Þá vantar í fullyrðinguna mikilvægt samhengi: í ráðherraráðinu telur hvert ríki eitt atkvæði þegar meta þarf 55% meirihluta ríkja, sem gefur Íslandi jafnt vægi og Þýskalandi á þeirri kvarða.",
       "supporting_evidence": [
         {
           "id": "SOV-DATA-017",
           "source_name": "Treaty on European Union, Article 16(4); European Parliament allocation rules",
           "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016"
+        },
+        {
+          "id": "SOV-LEGAL-002",
+          "source_name": "Treaty on European Union, Article 16(4)",
+          "source_url": "https://eur-lex.europa.eu/summary/glossary/qualified_majority.html"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Samanburðurinn einfaldar mjög muninn á milli þingmanns á Alþingi og fulltrúa í ráðherraráði ESB. Hvert aðildarríki hefur neitunarvald á tilteknum sviðum (einstaklingsbundnar ákvarðanir) og raunverulegt vald ríkja í ráðinu ræðst af bandalögum og samningahæfni frekar en hlutfallslegu stærðfræðilegu vægi.",
-      "confidence": 0.7,
+      "missing_context": "Talan 0,08% á við um íbúafjöldaviðmiðið í aukinni meirihlutakosningu, en ráðherraráðið notar tvöfalt viðmið þar sem hvert ríki hefur eitt atkvæði. Ísland fengi a.m.k. 6 þingmenn á Evrópuþinginu (0,83% sæta). Flest ákvörðun í ráðherraráðinu eru teknar með samstöðu án formlegrar atkvæðagreiðslu. Samanburðurinn við «5% hlutdeild í þingmanni» er ekki staðfestur í heimildum.",
+      "confidence": 0.78,
       "speakers": [
         {
           "name": "Hjörtur J. Guðmundsson",
@@ -548,22 +556,22 @@
         "epistemic_type": "factual"
       },
       "verdict": "supported",
-      "explanation": "Heimildir staðfesta að Ísland hefur um 380.000–395.000 íbúa (<a href=\"https://px.hagstofa.is/pxen/pxweb/en/Ibuar/Ibuar__mannfjoldaspa/MAN09010.px\" title=\"Hagstofa Íslands — Population projections 2024; Registers Iceland\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-005</a>, <a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-002</a>). Ef Írland hefur 5,4 milljónir íbúa er hlutfallið 5.400.000 / 390.000 ≈ 13,8, sem er réttilega námundað í «um 14 sinnum». Þótt engar heimildir í staðreyndagrunninum tilgreini beint íbúafjölda Írlands er talan 5,4 milljónir í samræmi við opinber gögn og hlutfallið reiknast rétt miðað við íbúafjölda Íslands.",
+      "explanation": "<a href=\"https://theskipper.ie/blocking-irelands-hague-preferences-open-act-of-agression/\" title=\"The Skipper / The Fishing Daily / Donegal Daily\" target=\"_blank\" rel=\"noopener\">FISH-PREC-006</a> tilgreinir íbúafjölda Írlands sem 5,4 milljónir, sem staðfestir þá tölu. <a href=\"https://fel.hi.is/is/utgefid-efni/thjodmalakonnun\" title=\"Félagsvísindastofnun Háskóla Íslands — Social Science Research Institute\" target=\"_blank\" rel=\"noopener\">POLL-DATA-002</a> gefur íbúafjölda Íslands sem um 390.000, og 5.400.000 ÷ 390.000 ≈ 13,8 — sem er í samræmi við «rúmlega 13 sinnum fjölmennari». Tölurnar standast.",
       "supporting_evidence": [
         {
-          "id": "HOUSING-DATA-005",
-          "source_name": "Hagstofa Íslands — Population projections 2024; Registers Iceland",
-          "source_url": "https://px.hagstofa.is/pxen/pxweb/en/Ibuar/Ibuar__mannfjoldaspa/MAN09010.px"
+          "id": "FISH-PREC-006",
+          "source_name": "The Skipper / The Fishing Daily / Donegal Daily",
+          "source_url": "https://theskipper.ie/blocking-irelands-hague-preferences-open-act-of-agression/"
         },
         {
-          "id": "SOV-LEGAL-002",
-          "source_name": "Treaty on European Union, Article 16(4)",
-          "source_url": "https://eur-lex.europa.eu/summary/glossary/qualified_majority.html"
+          "id": "POLL-DATA-002",
+          "source_name": "Félagsvísindastofnun Háskóla Íslands — Social Science Research Institute",
+          "source_url": "https://fel.hi.is/is/utgefid-efni/thjodmalakonnun"
         }
       ],
       "contradicting_evidence": [],
       "missing_context": "Staðreyndagrunnurinn inniheldur ekki beina heimild um íbúafjölda Írlands, en talan 5,4 milljónir samræmist almennum lýðfræðiupplýsingum. Hlutfallið 14:1 er eðlilegt mat miðað við íbúafjölda Íslands (um 390.000).",
-      "confidence": 0.85,
+      "confidence": 0.9,
       "speakers": [
         {
           "name": "Hjörtur J. Guðmundsson",
@@ -587,7 +595,7 @@
         "epistemic_type": "factual"
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir beint að Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra og formaður Viðreisnar, sagði í flutningsræðu sinni á Alþingi 9. mars 2026: «Ég mun aldrei skrifa undir samning sem tryggir ekki okkar markmið og okkar yfirráð» — sérstaklega varðandi sjávarútveg. <a href=\"https://www.althingi.is/thingmenn/thingflokkar/vidreisn/\" title=\"Althingi — Session 157; Viðreisn party platform\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-004</a> staðfestir stöðu hennar sem formanns Viðreisnar og utanríkisráðherra.",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir yfirlýsingu Þorgerðar Katrínar í flutningsræðu á Alþingi: «Ég mun aldrei skrifa undir samning sem tryggir ekki okkar markmið og okkar yfirráð» — sérstaklega um sjávarútveg. <a href=\"https://www.althingi.is/thingmenn/thingflokkar/vidreisn/\" title=\"Althingi — Session 157; Viðreisn party platform\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-004</a> staðfestir stöðu hennar sem utanríkisráðherra og formaður Viðreisnar. Fullyrðingin endurspeglar þekkta afstöðu hennar réttilega, þótt orðalagið «full yfirráð» sé afdráttarlausara en orðalag þingsræðunnar.",
       "supporting_evidence": [
         {
           "id": "SOV-PARL-001",
@@ -606,8 +614,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Þetta er pólitísk yfirlýsing um markmið en ekki lagalega bindandi skuldbinding. Hvort «full yfirráð» yfir sjávarútvegsmálum sé raunhæft markmið innan sameiginlegu sjávarútvegsstefnunnar er umdeilanlegt — aðild að ESB felur í sér yfirfærslu á sjávarútvegsstjórnun sem einkarétti ESB samkvæmt 3. gr. TFEU.",
-      "confidence": 0.9,
+      "missing_context": "Orðalag Þorgerðar Katrínar á Alþingi var «okkar markmið og okkar yfirráð» sem er víðtækara en «full yfirráð yfir auðlindum». Þetta er pólitísk yfirlýsing, ekki lagalega bindandi loforð. Sérfræðingar benda á að fullkomin undanþága frá sameiginlegri sjávarútvegsstefnu ESB sé ólíkleg samkvæmt fordæmum.",
+      "confidence": 0.82365,
       "speakers": [
         {
           "name": "Þorgerður Katrín Gunnarsdóttir",

@@ -10,10 +10,9 @@
   "summary": "Greindar 18 fullyrðingar .",
   "capsule": "Nokkrar lykilstaðreyndir greinarinnar eru vel studdar: þjóðaratkvæðagreiðslan 29. ágúst var kynnt á blaðamannafundi á föstudegi og málið fór til þingsins strax eftir helgi án þess að fara í samráðsgátt stjórnvalda. Áhugavert til viðbótar er að þjóðaratkvæðagreiðslan er að lögum ráðgefandi — Alþingi hefur lokaorðið óháð niðurstöðunni, eitthvað sem er vert að hafa í huga þegar litið er á raunverulega skuldbindingu þjóðarinnar. Jafnframt er vert að vita að hugmyndin um aðildarviðræður var opið kynnt á þingi af stjórnarandstæðingum — Logi Einarsson árið 2022 og Þorgerður Katrín Gunnarsdóttir árið 2023 — löngu áður en núverandi ríkisstjórn tók við.",
   "verdict_counts": {
-    "partially_supported": 8,
+    "partially_supported": 9,
     "supported": 6,
-    "misleading": 1,
-    "unverifiable": 1
+    "misleading": 1
   },
   "epistemic_counts": null,
   "claim_count": 16,
@@ -316,18 +315,23 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "unverifiable",
-      "explanation": "Engin heimild í staðreyndagrunninum staðfestir eða hrekur hvað nákvæmlega birtist á vefsíðum ESB um stöðu Íslands. <a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a> bendir þó á að Framkvæmdastjórnin hafi í mars 2026 lýst yfir að umsóknin væri enn gild — sem stangast á við þá ályktun að Ísland sé ekki umsóknarríki.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [
+      "verdict": "partially_supported",
+      "explanation": "Engin heimild staðfestir beint hvort Ísland sé skráð sem umsækjandi í gögnum ESB. Þó kemur fram í fyrirvörum <a href=\"https://eur-lex.europa.eu/EN/legal-content/summary/iceland-agriculture-fisheries-and-food-safety.html\" title=\"EUR-Lex — Iceland agriculture assessment; European Commission screening reports\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-024</a> að aðildarumsóknin var dregin til baka árið 2015, og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> bendir til þess að Ísland þyrfti að «sækja aftur um» ef það vildi hefja viðræður á ný. Þetta styður óbeint við fullyrðinguna — ef umsóknin var formlega dregin til baka ætti Ísland ekki lengur að vera skráð sem umsækjandi. Hins vegar vantar beina staðfestingu úr gagnagrunni ESB eða opinberum skrám um stöðu umsækjenda.",
+      "supporting_evidence": [
         {
-          "id": "PARTY-DATA-011",
-          "source_name": "Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews",
-          "source_url": "https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/"
+          "id": "AGRI-DATA-024",
+          "source_name": "EUR-Lex — Iceland agriculture assessment; European Commission screening reports",
+          "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/iceland-agriculture-fisheries-and-food-safety.html"
+        },
+        {
+          "id": "TRADE-DATA-022",
+          "source_name": "European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
         }
       ],
-      "missing_context": "Mismunur getur verið á flokkun vefsíðna og formlegri lagastöðu. Jafnvel þótt Ísland sé ekki á virku stækkunarlista ESB þýðir það ekki endilega að umsóknin sé ógild. Framkvæmdastjórnin hefur sérstaklega tekið fram að umsóknin standi enn.",
-      "confidence": 0.4,
+      "contradicting_evidence": [],
+      "missing_context": "Heimildir staðfesta afturköllun umsóknar (2015) og að Ísland þyrfti að sækja aftur um, en engin heimild sýnir beint hvernig Ísland er skráð í opinberum gögnum ESB (t.d. hjá DG NEAR eða í stækkunarskýrslum). Munurinn á «afturköllun umsóknar» og «ekki skráð sem umsækjandi» gæti skipt máli — sum lönd hafa dregið umsóknir til baka en haldið ákveðinni stöðu í skjölum ESB.",
+      "confidence": 0.55,
       "speakers": [
         {
           "name": "Sigmundur Davíð Gunnlaugsson",
@@ -469,12 +473,17 @@
         "epistemic_type": "factual"
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — Steps towards joining; DG NEAR accession negotiation methodology\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-013</a> staðfesta að aðildarferlið felur í sér innleiðingu og framfylgd regluverksins, ekki aðeins kynningu. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — Steps towards joining; DG NEAR accession negotiation methodology\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-013</a> lýsir viðmiðunarreglum sem þarf að uppfylla áður en kaflar eru opnaðir eða lokaðir. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Screening reports from Iceland's 2010–2013 negotiations; EUR-Lex — Directory of EU legislation\" target=\"_blank\" rel=\"noopener\">SOV-DATA-004</a> bendir á að Ísland þyrfti að innleiða 3.000–5.000 lagagerðir til viðbótar, sem kallar á stofnanalegar breytingar.",
+      "explanation": "Heimildir staðfesta grunninn að þessari fullyrðingu. <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> lýsa aðildarferlinu þar sem umsóknarríki þurfa að laga löggjöf sína að regluverki ESB — skimun kafla, uppfylling viðmiða og eftirfylgni innleiðingar eru hluti ferlisins frá upphafi. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Screening reports from Iceland's 2010–2013 negotiations; EUR-Lex — Directory of EU legislation\" target=\"_blank\" rel=\"noopener\">SOV-DATA-004</a> staðfestir að Ísland þyrfti að innleiða 3.000–5.000 lagagerðir til viðbótar við EES-skuldbindingar. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — Steps towards joining; DG NEAR accession negotiation methodology\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-013</a> lýsir hvernig skimun og viðmiðauppfylling hefst strax eftir opnun viðræðna. Nýju heimildarnar styrkja myndina — <a href=\"https://www.cer.eu/insights/gap-between-brexit-reset-rhetoric-and-reality\" title=\"Centre for European Reform; UK in a Changing Europe\" target=\"_blank\" rel=\"noopener\">PREC-DATA-004</a> og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014\" title=\"Treaty on the Functioning of the European Union, Article 140\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-004</a> sýna að skuldbindingar um evru og annað hefjast strax sem formlegar kröfur, og <a href=\"https://www.government.is/library/01-Ministries/Prime-Ministrers-Office/constitution_of_iceland.pdf\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 2, 21, 79; Legal commentary by Ragnhildur Helgadóttir (2024)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-016</a> bendir á mögulega stjórnarskrárbreytingu sem viðbótarverkefni.",
       "supporting_evidence": [
         {
           "id": "EEA-LEGAL-017",
           "source_name": "European Commission — 'EU Accession Process: Steps towards joining' factsheet",
           "source_url": "https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf"
+        },
+        {
+          "id": "EEA-LEGAL-021",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
         },
         {
           "id": "EEA-LEGAL-013",
@@ -485,11 +494,21 @@
           "id": "SOV-DATA-004",
           "source_name": "European Commission — Screening reports from Iceland's 2010–2013 negotiations; EUR-Lex — Directory of EU legislation",
           "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "SOV-LEGAL-016",
+          "source_name": "Stjórnarskrá lýðveldisins Íslands, Articles 2, 21, 79; Legal commentary by Ragnhildur Helgadóttir (2024)",
+          "source_url": "https://www.government.is/library/01-Ministries/Prime-Ministrers-Office/constitution_of_iceland.pdf"
+        },
+        {
+          "id": "PREC-DATA-004",
+          "source_name": "Centre for European Reform; UK in a Changing Europe",
+          "source_url": "https://www.cer.eu/insights/gap-between-brexit-reset-rhetoric-and-reality"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application for membership of the European Union, SEC(2010) 153\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-020</a> bendir á að Ísland hafi þegar forskot vegna EES-aðildar — um þriðjungur regluverksins er þegar innleiddur. Aðlögunin myndi því verða viðráðanlegri en hjá flestum umsóknarríkjum, þótt hún sé engu að síður umfangsmikil.",
-      "confidence": 0.85,
+      "missing_context": "Orðalagið \"strax\" er nokkuð ákveðið — í raun er aðlögunarferlið stigvaxandi og flest fer ekki fram \"strax\" heldur yfir nokkurra ára tímabil. Aðlögunartímabil geta verið 3–12 ár og hafa verulega þýðingu (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a>). Ísland er í sérstöðu þar sem EES-samningurinn tryggir að stór hluti regluverksins er þegar innleiddur, sem minnkar byrðina umtalsvert.",
+      "confidence": 0.76,
       "speakers": [
         {
           "name": "Sigmundur Davíð Gunnlaugsson",
@@ -686,7 +705,7 @@
         "epistemic_type": "factual"
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://www.althingi.is/thingmenn/thingflokkar/midflokkurinn/\" title=\"Althingi — Session 157 member registry\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-005</a> lýsir Miðflokknum sem sterklega andvígum ESB-aðild og frekari EES-samþættingu. <a href=\"https://europeelects.eu/iceland/\" title=\"Altinget.no; Heimildin; Europe Elects party classification\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-012</a> staðfestir þetta og bætir við tengslum við ECR-hópinn á evrópskum vettvangi. <a href=\"https://www.althingi.is/thingmenn/thingflokkar/thingflokkar/\" title=\"Althingi — Party platforms and election results\" target=\"_blank\" rel=\"noopener\">POL-DATA-002</a> og <a href=\"https://xd.is/2026/03/09/thjodin-a-betra-skilid/\" title=\"Sjálfstæðisflokkurinn — party website (xd.is); Miðflokkurinn — public statements; Gallup Þjóðarpúls party breakdown March 2026\" target=\"_blank\" rel=\"noopener\">POL-DATA-020</a> styðja enn fremur að Miðflokkurinn sé harðasti andstæðingur ESB-aðildar á Alþingi.",
+      "explanation": "<a href=\"https://www.althingi.is/thingmenn/thingflokkar/midflokkurinn/\" title=\"Althingi — Session 157 member registry\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-005</a> staðfestir skýrt að Miðflokkurinn tekur sterka afstöðu gegn ESB-aðild og leggst jafnframt gegn frekari EES-samþættingu. <a href=\"https://www.althingi.is/thingmenn/thingflokkar/thingflokkar/\" title=\"Althingi — Party platforms and election results\" target=\"_blank\" rel=\"noopener\">POL-DATA-002</a> sýnir að flokkurinn er meðal fjögurra þingflokka sem leggjast gegn aðild. Þetta er vel skjalfest afstaða sem hefur verið óbreytt frá stofnun flokksins árið 2017.",
       "supporting_evidence": [
         {
           "id": "POLITICAL-DATA-005",
@@ -694,24 +713,14 @@
           "source_url": "https://www.althingi.is/thingmenn/thingflokkar/midflokkurinn/"
         },
         {
-          "id": "PARTY-DATA-012",
-          "source_name": "Altinget.no; Heimildin; Europe Elects party classification",
-          "source_url": "https://europeelects.eu/iceland/"
-        },
-        {
           "id": "POL-DATA-002",
           "source_name": "Althingi — Party platforms and election results",
           "source_url": "https://www.althingi.is/thingmenn/thingflokkar/thingflokkar/"
-        },
-        {
-          "id": "POL-DATA-020",
-          "source_name": "Sjálfstæðisflokkurinn — party website (xd.is); Miðflokkurinn — public statements; Gallup Þjóðarpúls party breakdown March 2026",
-          "source_url": "https://xd.is/2026/03/09/thjodin-a-betra-skilid/"
         }
       ],
       "contradicting_evidence": [],
       "missing_context": null,
-      "confidence": 0.95,
+      "confidence": 0.9025,
       "speakers": [
         {
           "name": "Sigmundur Davíð Gunnlaugsson",
@@ -853,10 +862,9 @@
       "attribution_type": "asserted",
       "claim_count": 15,
       "verdicts": {
-        "partially_supported": 7,
+        "partially_supported": 8,
         "supported": 6,
-        "misleading": 1,
-        "unverifiable": 1
+        "misleading": 1
       },
       "stance": "anti_eu",
       "slug": "sigmundur-david-gunnlaugsson",

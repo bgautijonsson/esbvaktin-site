@@ -13,7 +13,9 @@
     "partially_supported": 10,
     "supported": 9
   },
-  "epistemic_counts": null,
+  "epistemic_counts": {
+    "prediction": 1
+  },
   "claim_count": 19,
   "dominant_category": "sovereignty",
   "categories": [
@@ -30,25 +32,26 @@
         "category": "sovereignty",
         "claim_type": "statistic",
         "confidence": 0.9,
-        "epistemic_type": "factual"
+        "epistemic_type": "prediction"
       },
       "verdict": "partially_supported",
-      "explanation": "Talan 0,08% er rétt sem hlutfall af heildaríbúafjölda ESB (380.000 af 450 milljónum) samkvæmt <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a>. Hún á þó aðeins við um annan hluta tvöföldu meirihlutareglunnar — íbúaþyngd. Í ráðherraráðinu gildir einnig regla um fjölda ríkja (55% aðildarríkja), þar sem hvert ríki hefur eitt atkvæði óháð stærð. Fullyrðingin sleppur þessu og gefur þannig of einfalda mynd af raunverulegu vægi Íslands.",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> staðfestir að Ísland myndi standa fyrir u.þ.b. 0,08% af heildaríbúafjölda ESB og þar með sama hlutfall af íbúafjöldaviðmiðinu í auknum meirihlutaatkvæðum. Talan er rétt fyrir íbúafjöldaþáttinn. Hins vegar gefur fullyrðingin til kynna að þetta sé heildarvægi Íslands, en <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> og <a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-002</a> benda á að í ríkjaviðmiðinu (55% aðildarríkja) hafi Ísland jafnt vægi og stærstu ríkin — þar er hlutdeild Íslands ~3,6% (1/28) sem er 45-falt meira en 0,08%.",
       "supporting_evidence": [
         {
           "id": "SOV-DATA-017",
           "source_name": "Treaty on European Union, Article 16(4); European Parliament allocation rules",
           "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016"
-        },
+        }
+      ],
+      "contradicting_evidence": [
         {
           "id": "SOV-LEGAL-002",
           "source_name": "Treaty on European Union, Article 16(4)",
           "source_url": "https://eur-lex.europa.eu/summary/glossary/qualified_majority.html"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> bendir á að flest mál í ráðherraráðinu séu samþykkt með samstöðu án formlegrar atkvæðagreiðslu. Smáríki eins og Malta hafa haft áhrif á stefnumótun með bandalagsmyndun. Ísland hefði jafnframt einn framkvæmdastjóra og a.m.k. 6 þingmenn á Evrópuþinginu — atriði sem 0,08%-talan tekur ekki til.",
-      "confidence": 0.9,
+      "missing_context": "Talan 0,08% á aðeins við um íbúafjöldaþátt aukinna meirihlutaatkvæða en segir ekkert um ríkjaviðmiðið þar sem Ísland fengi jafnvægi. Flest ákvörðun í Ráðherraráðinu eru tekin með samstöðu, og 0,08%-talan ofmetur valdleysi Íslands samkvæmt fyrirvörum heimildanna sjálfra.",
+      "confidence": 0.85,
       "speakers": [
         {
           "name": "Hjörtur J. Guðmundsson",

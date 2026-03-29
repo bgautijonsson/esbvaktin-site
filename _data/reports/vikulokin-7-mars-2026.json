@@ -10,13 +10,15 @@
   "summary": "Greindar 44 fullyrðingar .",
   "capsule": "Forsætisráðherra Kristrún Frostadóttir setti fram þrenn skilyrði fyrir ESB-vegferð þar sem m. a. er krafist breiðs stuðnings í þjóðfélaginu — og þetta er staðfest í skráðum yfirlýsingum hennar. Athyglisvert er hvernig EES-samningurinn virkar í reynd: hann krefst þess að Ísland taki upp löggjöf innri markaðarins sem ESB samþykkir í gegnum sameiginlegu EES-nefndina, og lítið svigrúm er til að hafna slíkri löggjöf án þess að grafa undan EES-þátttökunni. Þjóðaratkvæðagreiðslan 29. ágúst 2026 snýst um hvort hefja eigi aðildarviðræður — ekki um að samþykkja ESB-aðild — og í slíkum viðræðum mætti sérstaklega semja um sjávarútveg og aðrar lykilgreinar.",
   "verdict_counts": {
-    "partially_supported": 20,
-    "supported": 7,
+    "partially_supported": 18,
+    "supported": 8,
     "misleading": 1,
     "unverifiable": 1
   },
-  "epistemic_counts": null,
-  "claim_count": 29,
+  "epistemic_counts": {
+    "prediction": 1
+  },
+  "claim_count": 28,
   "dominant_category": "precedents",
   "categories": [
     "agriculture",
@@ -138,17 +140,27 @@
         "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "Heimild <a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a> staðfestir að norska Stórþingið ræddi tillögu Vinstreflokkanna um ESB-aðild í byrjun mars 2026 og hún var felld af miklum meirihluta, en heimildin gefur til kynna 79% atkvæða á móti, ekki 80%. Munurinn er óverulegur en talan 80% er örlítið ónákvæm.",
+      "explanation": "Fullyrðingin nefnir tiltekna atkvæðagreiðslu á norska þinginu þar sem 79% höfnuðu tillögu um að skoða ESB-aðild og 93% höfnuðu auknu samstarfi. Heimildir staðfesta almennt sterka andstöðu Norðmanna við ESB-aðild — PREC-HIST-002 sýnir 70–75% andstöðu í skoðanakönnunum og <a href=\"https://www.ssb.no/en/statbank/list/euvalg\" title=\"Norwegian Centre for Research Data — Election Archive\" target=\"_blank\" rel=\"noopener\">PREC-HIST-001</a> lýsir tveimur þjóðaratkvæðagreiðslum þar sem meirihluti sagði nei. <a href=\"https://www.ssb.no/en/statbank/list/euvalg\" title=\"Statistics Norway — Election and referendum statistics; Bjørklund (2005) — 'Mot strømmen'\" target=\"_blank\" rel=\"noopener\">POLL-DATA-005</a> og <a href=\"https://www.ssb.no/en/statbank/list/euvalg\" title=\"Statistics Norway — Referendum results 1994; Archer (2005) — 'Norway outside the European Union'\" target=\"_blank\" rel=\"noopener\">POLL-DATA-006</a> bæta við sögulegum upplýsingum. Þó staðfesta engar heimildir tiltekna þingatkvæðagreiðslu «í síðustu viku» með nákvæmlega þessum prósentutölum (79% og 93%). Hlutföllin samræmast almennri mynd af norrænni ESB-andstöðu en eru ekki sannreynanleg beint.",
       "supporting_evidence": [
         {
-          "id": "PREC-DATA-012",
-          "source_name": "Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review",
-          "source_url": "https://www.bis.org/review/r240131a.htm"
+          "id": "PREC-HIST-002",
+          "source_name": "Sentio Research / Nationen polling series",
+          "source_url": null
+        },
+        {
+          "id": "PREC-HIST-001",
+          "source_name": "Norwegian Centre for Research Data — Election Archive",
+          "source_url": "https://www.ssb.no/en/statbank/list/euvalg"
+        },
+        {
+          "id": "POLL-DATA-006",
+          "source_name": "Statistics Norway — Referendum results 1994; Archer (2005) — 'Norway outside the European Union'",
+          "source_url": "https://www.ssb.no/en/statbank/list/euvalg"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Heimildin nefnir að 79% talan gæti átt við atkvæðagreiðslu um tillöguna sjálfa eða málsmeðferðartillögu. Tillagan kom frá Venstre, litlum flokki, og var ekki vænst samþykktar. Samanburður við Ísland er takmarkaður vegna ólíkra aðstæðna.",
-      "confidence": 0.8,
+      "missing_context": "Engin heimild staðfestir tiltekna atkvæðagreiðslu á Stórþinginu með þessum nákvæmu tölum. Norsk ESB-andstaða er vel skráð en sérstaka atburðinn er ekki hægt að sannreyna úr heimildunum. Jafnframt er ólíkt að «systurflokkur Viðreisnar» í Noregi sé tilgreindur — Venstre er sá flokkur sem líklegast er átt við, en heimildir staðfesta það ekki.",
+      "confidence": 0.35,
       "speakers": [
         {
           "name": "Lilja Alfreðsdóttir",
@@ -206,27 +218,27 @@
         "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "Heimildir staðfesta að Ísland og Noregur eru með háa landsframleiðslu á mann (<a href=\"https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS\" title=\"World Bank — World Development Indicators\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-011</a>, <a href=\"https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD\" title=\"World Bank — World Development Indicators\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-012</a>) og lága atvinnuleysi. Sviss er ekki nefnd sérstaklega í heimildum en er almennt viðurkennt sem velmegunarlönd. Fullyrðingin er þó villandi að svo miklu leyti sem hún gefur til kynna orsakasamband — að vera utan ESB skýri lífsgæðin — en heimildir benda á að Noregur eigi sinn árangur meðal annars olíuauðlindum (PREC-HIST-002).",
+      "explanation": "<a href=\"https://hdr.undp.org/data-center/human-development-index\" title=\"UNDP Human Development Report 2024; OECD Better Life Index\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-030</a> staðfestir röðun á HDI: Sviss (1.), Noregur (2.) og Ísland (3.) eru þrjú efstu Evrópuríkin og standa öll utan ESB. Tölurnar eru réttar. Fullyrðingin gefur þó í skyn orsakasamband sem heimildin hafnar sérstaklega — <a href=\"https://hdr.undp.org/data-center/human-development-index\" title=\"UNDP Human Development Report 2024; OECD Better Life Index\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-030</a> bendir á að hátt HDI þessara ríkja skýrist af náttúruauðlindum, fjármálaþjónustu og sterkum stofnunum, ekki af ESB-stöðu. Öll þrjú ríkin eru djúpt samþætt ESB í gegnum EES eða tvíhliða samninga. <a href=\"https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS\" title=\"World Bank — World Development Indicators\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-011</a> styður mynd af lágri atvinnuleysi á Íslandi og Noregi en tengir það ekki ESB-stöðu.",
       "supporting_evidence": [
+        {
+          "id": "TRADE-DATA-030",
+          "source_name": "UNDP Human Development Report 2024; OECD Better Life Index",
+          "source_url": "https://hdr.undp.org/data-center/human-development-index"
+        },
         {
           "id": "CURRENCY-DATA-011",
           "source_name": "World Bank — World Development Indicators",
           "source_url": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS"
         },
         {
-          "id": "CURRENCY-DATA-012",
-          "source_name": "World Bank — World Development Indicators",
-          "source_url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD"
-        },
-        {
-          "id": "TRADE-COMP-003",
-          "source_name": "Eurostat — Comparative price levels of consumer goods and services (prc_ppp_ind)",
-          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/"
+          "id": "PREC-HIST-002",
+          "source_name": "Sentio Research / Nationen polling series",
+          "source_url": null
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Fjölmörg ESB-ríki eru einnig með lífsgæði í efsta flokki (Danmörk, Svíþjóð, Finnland, Holland). Samanburðurinn sleppur þessu og gefur til kynna að staða utan ESB sé skýringin, en önnur þættir — olíuauð Noregs, fjármálaþjónusta Sviss — skipta meiru máli.",
-      "confidence": 0.75,
+      "missing_context": "Fullyrðingin gefur til kynna orsakasamband sem heimildir styðja ekki — <a href=\"https://hdr.undp.org/data-center/human-development-index\" title=\"UNDP Human Development Report 2024; OECD Better Life Index\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-030</a> segir beinlínis að fylgnin milli ESB-stöðu og HDI sé veik og ESB-ríki eins og Írland og Lúxemborg séu einnig hátt á listanum. Hátt verðlag á Íslandi (<a href=\"https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/\" title=\"Eurostat — Comparative price levels of consumer goods and services (prc_ppp_ind)\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-003</a>: 50% yfir ESB-meðaltali) og hátt matvælaverð (<a href=\"https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/default/table?lang=en\" title=\"Eurostat — Comparative price levels (prc_ppp_ind)\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-001</a>, <a href=\"https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/\" title=\"Eurostat — Comparative price levels (prc_ppp_ind); Hagstofa Íslands — Consumer Price Index\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-014</a>) draga úr raunverulegum kaupmætti sem HDI mælir ekki beint.",
+      "confidence": 0.88,
       "speakers": [
         {
           "name": "Lilja Alfreðsdóttir",
@@ -388,8 +400,8 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "partially_supported",
-      "explanation": "Heimildir staðfesta að af 33 köflum voru 27 skimaðir og 11 opnaðir (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland accession progress reports\" target=\"_blank\" rel=\"noopener\">PREC-HIST-004</a>). Sex kaflar voru aldrei opnaðir (<a href=\"https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782591/EPRS_BRI(2026)782591_EN.pdf\" title=\"Summary of findings: Status of the accession negotiations between Iceland and the EU (Icelandic Ministry for Foreign Affairs, 2013); European Parliament briefing on EU-Iceland relations (2026)\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-003</a> nefnir landbúnað, sjávarútveg o.fl. meðal þeirra). Enginn kafli var formlega lokaður. Fullyrðingin um \"fimmtán ekki klárað\" er þó ruglings­valdi — heimildin <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application for membership of the European Union, SEC(2010) 153\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-020</a> segir 11 kafla hafi verið opnaðir (ekki 15) á um 18 mánuðum af virkum viðræðum. Tölurnar í fullyrðingunni passa ekki nákvæmlega við heimildir.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland accession progress reports\" target=\"_blank\" rel=\"noopener\">PREC-HIST-004</a> staðfestir að af 33 samningaköflum voru 27 rýndir og 11 formlega opnaðir. <a href=\"https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782591/EPRS_BRI(2026)782591_EN.pdf\" title=\"Summary of findings: Status of the accession negotiations between Iceland and the EU (Icelandic Ministry for Foreign Affairs, 2013); European Parliament briefing on EU-Iceland relations (2026)\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-003</a> nefnir sérstaklega sex kafla sem aldrei voru opnaðir, þar á meðal landbúnað, sjávarútveg, matvælaöryggi, umhverfismál, byggðastefnu og þjónustufrelsið. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland progress reports 2011–2013; Screening report Chapter 11\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-018</a> staðfestir sömu niðurstöðu.",
       "supporting_evidence": [
         {
           "id": "PREC-HIST-004",
@@ -400,17 +412,21 @@
           "id": "AGRI-LEGAL-003",
           "source_name": "Summary of findings: Status of the accession negotiations between Iceland and the EU (Icelandic Ministry for Foreign Affairs, 2013); European Parliament briefing on EU-Iceland relations (2026)",
           "source_url": "https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782591/EPRS_BRI(2026)782591_EN.pdf"
-        }
-      ],
-      "contradicting_evidence": [
+        },
         {
-          "id": "EEA-LEGAL-020",
-          "source_name": "European Commission — Opinion on Iceland's application for membership of the European Union, SEC(2010) 153",
+          "id": "AGRI-DATA-018",
+          "source_name": "European Commission — Iceland progress reports 2011–2013; Screening report Chapter 11",
           "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "EEA-DATA-009",
+          "source_name": "European Commission — Iceland: Accession negotiations status; Althingi records",
+          "source_url": null
         }
       ],
-      "missing_context": "Virkar viðræður stóðu í um 18 mánuði, ekki þrjú ár. Framgangurinn var í raun mjög hraður miðað við önnur umsækjendaríki, vegna EES-forsögu Íslands. Enginn kafli var formlega lokaður — en það er venjulegt í viðræðum sem stöðvast.",
-      "confidence": 0.65,
+      "contradicting_evidence": [],
+      "missing_context": "Tölulegar upplýsingar í heimildum eru ekki alveg samhljóða um fjölda opnaðra kafla: sumar segja 11, aðrar 27. Fullyrðingin um sex óopnaða kafla er staðfest í <a href=\"https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782591/EPRS_BRI(2026)782591_EN.pdf\" title=\"Summary of findings: Status of the accession negotiations between Iceland and the EU (Icelandic Ministry for Foreign Affairs, 2013); European Parliament briefing on EU-Iceland relations (2026)\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-003</a> og vísar til þeirra viðkvæmustu kafla sem aldrei voru opnaðir til viðræðna.",
+      "confidence": 0.7824675,
       "speakers": [
         {
           "name": "Guðlaugur Þór Þórðarson",
@@ -763,31 +779,25 @@
         "category": "fisheries",
         "claim_type": "legal_assertion",
         "confidence": 0.9,
-        "epistemic_type": "factual"
+        "epistemic_type": "prediction"
       },
       "verdict": "partially_supported",
-      "explanation": "Rétt er að ESB-ríki úthluta sínum hlut af aflaheimildum samkvæmt innlendum reglum (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a>). Sameiginlega sjávarútvegsstefnan setur heildaraflamark (TAC) og deilir hlutfallslega milli ríkja (\"relative stability\"). Fullyrðingin einfaldar þó verulega — ESB setur einnig reglur um aðgang að miðum (\"equal access\" meginreglan), tæknileg varúðarráðstöfun, og eftirlit. Sjávarútvegsstefnan snýst um miklu meira en bara heildarmagn.",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380\" title=\"Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-030</a> og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380\" title=\"EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024\" target=\"_blank\" rel=\"noopener\">FISH-DATA-032</a> staðfesta skýrt að innri skipting kvóta sé í höndum hvers aðildarríkis samkvæmt 17. grein reglugerðar 1380/2013, og að Danmörk, Holland og Eistland noti ITQ-kerfi innan sameiginlegu sjávarútvegsstefnunnar. Ísland gæti þannig haldið kvótakerfinu sínu að formi til. Þó er fullyrðingin villandi í heild sinni vegna þess sem hún sleppur: ríkið myndi ekki lengur «stýra úthlutun» eins og nú, því heildaraflamark (TAC) yrði sett af Ráðherraráði ESB, ekki Íslandi einu og sér. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380\" title=\"Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-030</a> undirstrikar þetta sem grundvallarbreytingu. Aðgangur erlendra skipa að efnahagslögsögu Íslands utan 12 sjómílna yrði einnig opnaður.",
       "supporting_evidence": [
         {
-          "id": "FISH-LEGAL-001",
-          "source_name": "EU Regulation 1380/2013 of the European Parliament and of the Council",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380"
-        }
-      ],
-      "contradicting_evidence": [
-        {
-          "id": "EEA-DATA-004",
-          "source_name": "Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13",
-          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+          "id": "FISH-DATA-030",
+          "source_name": "Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380"
         },
         {
-          "id": "FISH-LEGAL-002",
-          "source_name": "Icelandic Act on the Exclusive Economic Zone No. 41/1979",
-          "source_url": "https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf"
+          "id": "FISH-DATA-032",
+          "source_name": "EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380"
         }
       ],
-      "missing_context": "Sameiginlega sjávarútvegsstefnan felur einnig í sér meginregluna um jafnan aðgang að miðum (\"equal access to EU waters\"), eftirlit framkvæmdastjórnar ESB, og reglu um \"relative stability\" sem byggir á sögulegum veiðirétti 1973–1978. Þetta takmarkar fullveldi aðildarríkja umtalsvert umfram það sem fullyrðingin gefur til kynna.",
-      "confidence": 0.7,
+      "contradicting_evidence": [],
+      "missing_context": "Fullyrðingin sleppur veigamestu breytingunni: Ísland myndi missa einhliða stjórn á heildaraflamarki og aðgangi að lögsögunni. Jafnframt myndi jafnréttisregla ESB um aðgang að fiskveiðisvæðum (utan 12 sjómílna) gilda. <a href=\"https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf\" title=\"Icelandic Act on the Exclusive Economic Zone No. 41/1979\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-002</a> bendir á að efnahagslögsaga Íslands yrði háð sameiginlegu sjávarútvegsstefnunni, og <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> staðfestir að sjávarútvegsstefnan er utan EES-samningsins.",
+      "confidence": 0.88,
       "speakers": [
         {
           "name": "Guðmundur Ari Sigurjónsson",
@@ -917,7 +927,7 @@
         "epistemic_type": "factual"
       },
       "verdict": "supported",
-      "explanation": "Heimildir staðfesta skýrt að Noregur hafnaði ESB/EBE-aðild í tveimur þjóðaratkvæðagreiðslum: 1972 (53,5% á móti) og 1994 (52,2% á móti) (<a href=\"https://www.ssb.no/en/statbank/list/euvalg\" title=\"Norwegian Centre for Research Data — Election Archive\" target=\"_blank\" rel=\"noopener\">PREC-HIST-001</a>, <a href=\"https://www.ssb.no/en/statbank/list/euvalg\" title=\"Statistics Norway — Election and referendum statistics; Bjørklund (2005) — 'Mot strømmen'\" target=\"_blank\" rel=\"noopener\">POLL-DATA-005</a>, <a href=\"https://www.ssb.no/en/statbank/list/euvalg\" title=\"Statistics Norway — Referendum results 1994; Archer (2005) — 'Norway outside the European Union'\" target=\"_blank\" rel=\"noopener\">POLL-DATA-006</a>).",
+      "explanation": "<a href=\"https://www.ssb.no/en/statbank/list/euvalg\" title=\"Norwegian Centre for Research Data — Election Archive\" target=\"_blank\" rel=\"noopener\">PREC-HIST-001</a> staðfestir beint að Noregur hélt þjóðaratkvæðagreiðslur um aðild árið 1972 (EBE-aðild, 53,5% á móti) og 1994 (ESB-aðild, 52,2% á móti), báðar með neikvæðri niðurstöðu. Fullyrðingin er staðreyndarlega rétt. PREC-HIST-002 staðfestir ennfremur að skoðanakannanir sýna að um 70–75% Norðmanna eru enn á móti ESB-aðild.",
       "supporting_evidence": [
         {
           "id": "PREC-HIST-001",
@@ -925,18 +935,13 @@
           "source_url": "https://www.ssb.no/en/statbank/list/euvalg"
         },
         {
-          "id": "POLL-DATA-005",
-          "source_name": "Statistics Norway — Election and referendum statistics; Bjørklund (2005) — 'Mot strømmen'",
-          "source_url": "https://www.ssb.no/en/statbank/list/euvalg"
-        },
-        {
-          "id": "POLL-DATA-006",
-          "source_name": "Statistics Norway — Referendum results 1994; Archer (2005) — 'Norway outside the European Union'",
-          "source_url": "https://www.ssb.no/en/statbank/list/euvalg"
+          "id": "PREC-HIST-002",
+          "source_name": "Sentio Research / Nationen polling series",
+          "source_url": null
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": null,
+      "missing_context": "Þrátt fyrir að hafa hafnað ESB-aðild tvisvar gekk Noregur í EES árið 1994 (<a href=\"https://www.ssb.no/en/statbank/list/euvalg\" title=\"Norwegian Centre for Research Data — Election Archive\" target=\"_blank\" rel=\"noopener\">PREC-HIST-001</a>). Efnahagslegur árangur Noregs utan ESB er að mestu drifinn áfram af olíuauði, sem gerir hann að takmörkuðu samanburðarlandi við Ísland (PREC-HIST-002). Fullyrðingin um „gífurlegan þrýsting\" er ekki sérstaklega studd af heimildunum.",
       "confidence": 0.95,
       "speakers": [
         {
@@ -1115,50 +1120,6 @@
     },
     {
       "claim": {
-        "original_quote": "yfir áratug þá hefur þjóðinni verið í rauninni, þjóðin hefur verið klofin í þessu máli út af því að þessi valmöguleiki var tekinn af borðinu án þess að spyrja þjóðina.",
-        "claim_text": "Þjóðin hefur verið klofin í ESB-málinu í yfir áratug vegna þess að valmöguleikinn var tekinn af borðinu án þess að spyrja þjóðina.",
-        "category": "party_positions",
-        "claim_type": "legal_assertion",
-        "confidence": 0.9,
-        "epistemic_type": "factual"
-      },
-      "verdict": "partially_supported",
-      "explanation": "Heimildir staðfesta að ESB-málið hefur verið pólitískt deilt og margir ráðherrar hafa lofað eða rætt þjóðaratkvæðagreiðslu án þess að halda hana (<a href=\"https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/\" title=\"Althingi records; coalition agreements 2009, 2013, 2017, 2021, 2024; Icelandic media archives\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-011</a>). Afturköllunarákvörðunin 2015 var tekin einhliða af utanríkisráðherra án þingsamþykktar (<a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a>), sem styður fullyrðinguna um að valkosturinn hafi verið tekinn af borðinu. Könnunarniðurstöður sýna skipta þjóð (<a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — Þjóðarpúls, February–March 2026\" target=\"_blank\" rel=\"noopener\">POLL-DATA-014</a>: 42% á móti 42%).",
-      "supporting_evidence": [
-        {
-          "id": "POLITICAL-DATA-011",
-          "source_name": "Althingi records; coalition agreements 2009, 2013, 2017, 2021, 2024; Icelandic media archives",
-          "source_url": "https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/"
-        },
-        {
-          "id": "PARTY-DATA-011",
-          "source_name": "Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews",
-          "source_url": "https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/"
-        },
-        {
-          "id": "POLL-DATA-014",
-          "source_name": "Gallup Ísland — Þjóðarpúls, February–March 2026",
-          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
-        }
-      ],
-      "contradicting_evidence": [],
-      "missing_context": "Ríkisstjórn Jóhönnu Sigurðardóttur lofaði þjóðaratkvæðagreiðslu um lokasamning en komst aldrei svo langt. Ríkisstjórnin 2013–2016 dró umsóknina til baka. Hvort um \"svikasamning\" eða \"lögmæta pólitíska ákvörðun\" er að ræða er túlkunaratriði.",
-      "confidence": 0.7,
-      "speakers": [
-        {
-          "name": "Guðmundur Ari Sigurjónsson",
-          "type": "individual",
-          "role": "þingflokksformaður",
-          "party": "Samfylkingin",
-          "stance": "pro_eu",
-          "attribution": "quoted",
-          "stance_score": null,
-          "credibility": null
-        }
-      ]
-    },
-    {
-      "claim": {
         "original_quote": "Við erum hluti af alþjóðlegu kerfi og við höfum þurft að semja...",
         "claim_text": "Uppsjávarfiskurinn er hluti af alþjóðlegu kerfi og Ísland þarf að semja um hlutdeild þar hvort sem er innan eða utan ESB.",
         "category": "fisheries",
@@ -1228,32 +1189,15 @@
       "attribution_type": "quoted",
       "claim_count": 10,
       "verdicts": {
-        "partially_supported": 7,
+        "partially_supported": 6,
         "misleading": 1,
-        "supported": 2
+        "supported": 3
       },
       "stance": "anti_eu",
       "slug": "gudlaugur-thor-thordarson",
       "mention_count": 8,
       "credibility": 0.59,
       "speech_count": 241
-    },
-    {
-      "name": "Guðmundur Ari Sigurjónsson",
-      "role": "þingflokksformaður",
-      "party": "Samfylkingin",
-      "role_in_article": "guest",
-      "attribution_type": "quoted",
-      "claim_count": 5,
-      "verdicts": {
-        "partially_supported": 4,
-        "supported": 1
-      },
-      "stance": "pro_eu",
-      "slug": "gudmundur-ari-sigurjonsson",
-      "mention_count": 4,
-      "credibility": 0.66,
-      "speech_count": 3
     },
     {
       "name": "Lilja Alfreðsdóttir",
@@ -1284,6 +1228,23 @@
       "mention_count": 2,
       "credibility": 0.7,
       "speech_count": 30
+    },
+    {
+      "name": "Guðmundur Ari Sigurjónsson",
+      "role": "þingflokksformaður",
+      "party": "Samfylkingin",
+      "role_in_article": "guest",
+      "attribution_type": "quoted",
+      "claim_count": 4,
+      "verdicts": {
+        "partially_supported": 3,
+        "supported": 1
+      },
+      "stance": "pro_eu",
+      "slug": "gudmundur-ari-sigurjonsson",
+      "mention_count": 4,
+      "credibility": 0.66,
+      "speech_count": 3
     }
   ],
   "source_type": "panel_show"

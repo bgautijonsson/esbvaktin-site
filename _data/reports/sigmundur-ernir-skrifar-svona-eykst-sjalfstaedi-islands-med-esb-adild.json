@@ -14,7 +14,9 @@
     "supported": 6,
     "unverifiable": 1
   },
-  "epistemic_counts": null,
+  "epistemic_counts": {
+    "prediction": 1
+  },
   "claim_count": 14,
   "dominant_category": "eea_eu_law",
   "categories": [
@@ -511,10 +513,10 @@
         "category": "sovereignty",
         "claim_type": "legal_assertion",
         "confidence": 0.9,
-        "epistemic_type": "factual"
+        "epistemic_type": "prediction"
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:12008M014:EN:HTML\" title=\"Treaty on European Union, Article 14(2)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-003</a> staðfestir að samkvæmt 14. gr. 2. mgr. sáttmálans um Evrópusambandið eigi hvert aðildarríki a.m.k. sex sæti á Evrópuþinginu. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> bætir við að Ísland myndi líklega fá sex sæti — lágmarkið — í ljósi smæðar þjóðarinnar (um 380.000 íbúar). Malta, Lúxemborg og Kýpur hafa öll þetta lágmark.",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:12008M014:EN:HTML\" title=\"Treaty on European Union, Article 14(2)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-003</a> staðfestir að Ísland fengi lágmark 6 þingsæti samkvæmt sáttmálanum, en heildarfjöldi þingsæta er 720 — sem telst «vel yfir 700». Malta, Lúxemborg og Kýpur hafa öll 6 þingsæti nú þegar. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> staðfestir sömu tölur og bendir á að 6 sæti af 720 jafngildi u.þ.b. 0,83% hlutdeildar.",
       "supporting_evidence": [
         {
           "id": "SOV-LEGAL-003",
@@ -528,8 +530,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": null,
-      "confidence": 0.95,
+      "missing_context": "Nákvæmur fjöldi þingsæta yrði ákveðinn af leiðtogaráðinu en sáttmálinn tryggir 6 sem lágmark. Raunveruleg áhrif þingmanna ráðast af flokkahópum á Evrópuþinginu frekar en af fjölda fulltrúa hvers ríkis.",
+      "confidence": 0.92055,
       "speakers": [
         {
           "name": "Sigmundur Ernir",

@@ -10,8 +10,7 @@
   "summary": "Greindar 6 fullyrðingar. Niðurstöður: 2 stutt að hluta, 2 ekki hægt að sannreyna, 1 stutt af heimildum, 1 ekki stutt. Sjónarhorn: hallar á ESB-neikvæða hlið. Heildstæðni: 35%.",
   "capsule": "Greinin fær rétt að verðbólga á Íslandi er hærri en hjá nágrannaríkjum og að stýrivextir hafa bein áhrif á mánaðarlegar afborganir óverðtryggðra húsnæðislána. Áhugavert samhengi er þó að um 80% íslenskra húsnæðislána eru verðtryggð — þar hækkar höfuðstóllinn með verðlagi og tengsl stýrivaxta og mánaðarlegrar afborgunar eru mun óbeinni en oft er gefið til kynna. Rannsóknir sýna líka að lægri vextir hafa tilhneigingu til að skila sér í hærra húsnæðisverði þar sem framboð er takmarkað, frekar en lægri kostnaði fyrir kaupendur.",
   "verdict_counts": {
-    "supported": 1,
-    "partially_supported": 2,
+    "partially_supported": 3,
     "unsupported": 1
   },
   "epistemic_counts": {
@@ -33,8 +32,8 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__visitolur__1_vnv__1_vnv/VIS01005.px\" title=\"Hagstofa Íslands — Consumer price index; Eurostat — HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-003</a> og <a href=\"https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IS\" title=\"World Bank — World Development Indicators (FP.CPI.TOTL.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-013</a> staðfesta að verðbólga á Íslandi hefur verið kerfisbundið hærri en á evrusvæðinu: um 5,5% á árunum 2005–2025 samanborið við 2,1% á evrusvæðinu. Þetta mynstur helst jafnvel á rólegum tímabilum — meðalverðbólga var 2,3% á Íslandi á árunum 2014–2019 en nálægt 1% á evrusvæðinu. <a href=\"https://ec.europa.eu/eurostat/web/hicp\" title=\"Eurostat HICP Flash Estimate; ECB Monetary Policy Decisions\" target=\"_blank\" rel=\"noopener\">CURR-DATA-008</a> sýnir sömu sögu fyrir febrúar 2026, þar sem verðbólga á Íslandi var 5,2% en 1,9% á evrusvæðinu.",
+      "verdict": "partially_supported",
+      "explanation": "Gögn úr <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__visitolur__1_vnv__1_vnv/VIS01005.px\" title=\"Hagstofa Íslands — Consumer price index; Eurostat — HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-003</a> sýna að meðalverðbólga á Íslandi var um 5,5% á árunum 2005–2025 samanborið við 2,1% á evrusvæðinu — hlutfallið er um 2,6x. <a href=\"https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IS\" title=\"World Bank — World Development Indicators (FP.CPI.TOTL.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-013</a> sýnir 4,7% gegn um 2% markmiði Seðlabanka Evrópu á lengra tímabili (2000–2024), sem gefur hlutfall um 2,4x. Hlutfallið «2–3 sinnum» á þannig að mestu leyti við en er of vítt orðað sem almenn regla. Á rólegum tímum (2014–2019) var munurinn minni, um 2,3% á Íslandi samanborið við nálægt 1% á evrusvæðinu, þar sem hlutfallið gat verið nær 2x. Í kreppum fór hlutfallið hins vegar yfir 3x.",
       "supporting_evidence": [
         {
           "id": "CURR-DATA-003",
@@ -45,21 +44,11 @@
           "id": "CURRENCY-DATA-013",
           "source_name": "World Bank — World Development Indicators (FP.CPI.TOTL.ZG)",
           "source_url": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IS"
-        },
-        {
-          "id": "CURR-DATA-008",
-          "source_name": "Eurostat HICP Flash Estimate; ECB Monetary Policy Decisions",
-          "source_url": "https://ec.europa.eu/eurostat/web/hicp"
-        },
-        {
-          "id": "CURRENCY-DATA-015",
-          "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
-          "source_url": "https://www.sedlabanki.is/peningastefna/vaxtaakvardir/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Fullyrðingin nefnir «nágrannaríki» en heimildir bera Ísland saman við evrusvæðið, ekki öll nágrannaríki (t.d. Noreg, Danmörk sem standa utan evru). Þó ber að hafa í huga að hærri verðbólga á Íslandi er að hluta til kerfisbundin vegna smæðar og innflutningsháðs hagkerfis — ekki einungis afleiðing stefnuákvarðana, eins og fullyrðingin gefur til kynna (<a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__visitolur__1_vnv__1_vnv/VIS01005.px\" title=\"Hagstofa Íslands — Consumer price index; Eurostat — HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-003</a> caveats).",
-      "confidence": 0.85,
+      "missing_context": "Samanburðurinn flækist af mismunandi aðferðafræði vísitölu neysluverðs og uppbyggingu húsnæðismarkaðar. Verðbólga á Íslandi er kerfisbundið hærri vegna innflutningsháðrar, smárrar hagkerfis og launaviðræðna — en þeir þættir myndu ekki hverfa sjálfkrafa við upptöku evru, eins og reynsla Eystrasaltsríkjanna sýnir.",
+      "confidence": 0.722,
       "speakers": [
         {
           "name": "Bogi Nils Bogason",
@@ -83,11 +72,17 @@
         "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "Fyrra mat úr fullyrðingabanka (líkindi 0.935) staðfestir að engin heimild í staðreyndagrunni vitnar beint í «skýr skilaboð» Seðlabankans um ríkisútgjöld eða vinnumarkaðsmódelið. <a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a> nefnir að Seðlabankinn «varaði við áframhaldandi óvissu, meðal annars vegna launahækkana og húsnæðisverðs» — þetta er í samræmi við almenna áherslu á aga en er óbeinna en fullyrðingin segir til um. Engar nýjar heimildir fundust til að styðja eða afsanna fullyrðinguna frekar.",
-      "supporting_evidence": [],
+      "explanation": "<a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a> staðfestir að Seðlabankinn hækkaði stýrivexti 18. mars 2026 vegna viðvarandi verðbólgu (5,2%) og versnandi verðbólguhorfa — sem bendir til áhyggjuskilaboða um efnahagsstöðuna. Tveir af fimm nefndarmönnum vildu jafnvel stærri hækkun. Vaxtahækkun endurspeglar í raun ótilsögð «skilaboð» um nauðsyn aðhalds. Þó staðfestir engin af tilgreindum heimildum orðrétt að Seðlabankinn hafi sent «skýr skilaboð» um þörf á aðhaldi í ríkisútgjöldum eða á vinnumarkaðsmódelinu — heimildir fjalla um vaxtaákvarðanir, ekki opinberar yfirlýsingar bankans um fjármálastefnu ríkisins eða vinnumarkaðinn sérstaklega.",
+      "supporting_evidence": [
+        {
+          "id": "CURRENCY-DATA-017",
+          "source_name": "Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar",
+          "source_url": "https://www.sedlabanki.is/peningastefna/vaxtaakvardir/"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Staðreyndagrunnurinn nær ekki til allra yfirlýsinga Seðlabankans. Vaxtaákvarðanir, ræður seðlabankastjóra og Fjármálastöðugleikaskýrsla gætu innihaldið skýrari skilaboð um ríkisútgjöld og vinnumarkaðsaga en það sem kemur fram í fyrirliggjandi heimildum.",
-      "confidence": 0.5,
+      "missing_context": "Heimildir ná til vaxtaákvarðana Seðlabankans en enga tilvísun er að finna í beinar yfirlýsingar seðlabankastjóra eða peningastefnunefndar um ríkisútgjöld eða vinnumarkaðsmódelið. Peningastefnuyfirlýsingar Seðlabankans gætu innihaldið slíka orðsendingu, en þær eru ekki meðal heimildanna. <a href=\"https://www.government.is/topics/economic-affairs-and-economic-outlook/\" title=\"Fjármála- og efnahagsráðuneytið — Ríkisfjármál; Moody's, S&P, Fitch sovereign ratings for Iceland\" target=\"_blank\" rel=\"noopener\">SOV-DATA-013</a> fjallar um fjármálaaga ríkissjóðs en tengist ekki skilaboðum Seðlabankans.",
+      "confidence": 0.45,
       "speakers": [
         {
           "name": "Seðlabankinn",
@@ -220,9 +215,8 @@
       "attribution_type": "asserted",
       "claim_count": 3,
       "verdicts": {
-        "supported": 1,
-        "unsupported": 1,
-        "partially_supported": 1
+        "partially_supported": 2,
+        "unsupported": 1
       },
       "stance": "neutral",
       "slug": "bogi-nils-bogason",

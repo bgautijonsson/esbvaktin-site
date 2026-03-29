@@ -10,9 +10,8 @@
   "summary": "Greindar 14 fullyrðingar. Niðurstöður: 6 stutt að hluta, 4 stutt af heimildum, 4 ekki hægt að sannreyna. Sjónarhorn: hallar á ESB-neikvæða hlið. Heildstæðni: 30%.",
   "capsule": "Hanna Katrín Friðriksson atvinnuvegaráðherra flutti á ársfundi Íslandsstofu áhyggjur sínar af þróun EES-samningsins — og þær áhyggjur eru ekki einangraðar. Bæði Ísland, Noregur og Liechtenstein sendu sameiginlega athugasemd til ESB árið 2025 þar sem þau lýstu yfir að ESB-löggjöf sé í auknum mæli að fjalla um málefni sem ganga út fyrir rammann sem EES-samningurinn setur. Áhugasamt er að þetta samhengi — sem er til staðar í opinberum gögnum EFTA-ríkjanna sjálfra — styður að hluta þá greiningu sem ráðherrann lagði fram.",
   "verdict_counts": {
-    "partially_supported": 6,
-    "supported": 4,
-    "unverifiable": 1
+    "partially_supported": 7,
+    "supported": 4
   },
   "epistemic_counts": {
     "prediction": 2
@@ -401,12 +400,28 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "unverifiable",
-      "explanation": "Engin heimild í staðreyndagrunninum staðfestir beinlínis átök innan leiðtogaráðs ESB um þessi málefni. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E326\" title=\"Treaty on the Functioning of the European Union, Articles 326–334; European Commission — Enhanced cooperation factsheet\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-031</a> nefnir aukið samstarf (enhanced cooperation) sem lausn þegar ESB nær ekki samkomulagi, og <a href=\"https://www.consilium.europa.eu/en/\" title=\"Press conference statements — Donald Tusk, PM of Poland (2025–2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-011</a> lýsir umræðum um umbætur. Þessar heimildir benda óbeint til pólitísks ágreinings en staðfesta ekki beinlínis «átök» um varnarmál eða Úkraínustuðning.",
-      "supporting_evidence": [],
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.eeas.europa.eu/eeas/strategic-compass-security-and-defence-1_en\" title=\"EU Strategic Compass for Security and Defence (March 2022); NATO Allied Air Command — Icelandic Air Policing; IISS Strategic Survey 2023\" target=\"_blank\" rel=\"noopener\">SOV-HIST-003</a> staðfestir vaxandi varnaráherslur ESB, þar á meðal 150 milljarða evra varnarútgjaldaáætlun og Stefnuáttavísi öryggis- og varnarmála frá 2022. <a href=\"https://www.eeas.europa.eu/eeas/eu-iceland-joint-press-release-signature-security-and-defence-partnership_en\" title=\"EEAS Joint Press Release\" target=\"_blank\" rel=\"noopener\">SOV-DATA-025</a> sýnir að öryggis- og varnarsamstarfsyfirlýsingin við Ísland nefnir beinlínis stuðning við Úkraínu. Fullyrðingin um að þetta sé «höfuðáhersla» einfaldar þó mynd ESB, þar sem samkeppnishæfni (<a href=\"https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en\" title=\"Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-024</a>, Draghi-skýrslan), iðnaðarstefna, stækkun og loftslagsaðgerðir eru einnig á forgangslista.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-HIST-003",
+          "source_name": "EU Strategic Compass for Security and Defence (March 2022); NATO Allied Air Command — Icelandic Air Policing; IISS Strategic Survey 2023",
+          "source_url": "https://www.eeas.europa.eu/eeas/strategic-compass-security-and-defence-1_en"
+        },
+        {
+          "id": "SOV-DATA-025",
+          "source_name": "EEAS Joint Press Release",
+          "source_url": "https://www.eeas.europa.eu/eeas/eu-iceland-joint-press-release-signature-security-and-defence-partnership_en"
+        },
+        {
+          "id": "SOV-LEGAL-008",
+          "source_name": "Treaty on European Union, Article 42; NATO Treaty, Article 5",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M042"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Staðreyndagrunnurinn inniheldur ekki nýlegar heimildir um innri deilur í leiðtogaráðinu um varnarmál eða fjárhagsaðstoð við Úkraínu. Slík átök eru vel þekkt í evrópskri umræðu en heimildir skortir til að staðfesta fullyrðinguna.",
-      "confidence": 0.4,
+      "missing_context": "ESB hefur margþætta forgangsröðun — varnar- og öryggismál eru ein af mörgum áherslum ásamt samkeppnishæfni (Draghi-skýrsla), stækkun, og loftslagsaðgerðum. Orðið «höfuðáhersla» gefur til kynna að þetta sé eina forgangsverkefnið, sem er ofeinföldun.",
+      "confidence": 0.6649999999999999,
       "speakers": [
         {
           "name": "Evrópusambandið",

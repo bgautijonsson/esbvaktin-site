@@ -10,9 +10,9 @@
   "summary": "Greindar 11 fullyrðingar. Niðurstöður: 6 ekki hægt að sannreyna, 4 stutt að hluta, 1 stutt af heimildum. Sjónarhorn: hlutlaus en ófullnægjandi. Heildstæðni: 55%.",
   "capsule": "Samstarfsyfirlýsingin staðfestir að Ísland fær aukinn aðgang að varnarkerfum og varnariðnaði ESB og NATO er í henni talið áfram grunnstoð sameiginlegra varna — þetta er í samræmi við heimildir. Áhugavert er að svipuð varnarsamstarfsyfirlýsing var undirrituð við Bretland og Kanada, sem eru bæði utan ESB, sem gefur til kynna að þessi tegund samstarfs er ekki sjálfkrafa tengd við aðildarferlið. Lesendur sem vilja kafa dýpra geta skoðað þróunarsögu varnarsamninga Noregs við ESB — sem hafa byggst upp yfir mörg ár — sem fordæmi fyrir það sem Ísland er nú að hefja.",
   "verdict_counts": {
-    "unverifiable": 2,
+    "supported": 2,
     "partially_supported": 4,
-    "supported": 1
+    "unverifiable": 1
   },
   "epistemic_counts": null,
   "claim_count": 7,
@@ -31,12 +31,28 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "unverifiable",
-      "explanation": "Heimildir í staðreyndagrunninum staðfesta ekki beint að Noregur, Kanada og Bretland hafi undirritað sambærilegar varnar- og öryggisyfirlýsingar við ESB. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1\" title=\"Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-006</a> og <a href=\"https://eur-lex.europa.eu/collection/eu-law/treaties.html\" title=\"European Parliament — EU Treaties and Protocols; Accession Treaty texts\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-023</a> fjalla um undanþágur aðildarríkja en ekki um tvíhliða varnarsamstarfsyfirlýsingar ríkja utan ESB. <a href=\"https://www.ssb.no/en/statbank/list/euvalg\" title=\"Norwegian Centre for Research Data — Election Archive\" target=\"_blank\" rel=\"noopener\">PREC-HIST-001</a> fjallar um norsku þjóðaratkvæðagreiðslurnar en nefnir ekki varnarsamstarf Noregs við ESB sérstaklega. Fullyrðingin er trúverðug í ljósi þekktra samskipta þessara ríkja við ESB, en staðreyndagrunnurinn inniheldur ekki beinar heimildir.",
-      "supporting_evidence": [],
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.consilium.europa.eu/en/policies/security-defence-partnerships/timeline-security-defence-partnerships/\" title=\"Council of the EU — Security and Defence Partnerships Timeline\" target=\"_blank\" rel=\"noopener\">SOV-DATA-026</a> staðfestir beint að ESB undirritaði öryggis- og varnarsamstarf (Security and Defence Partnership) við Noreg í maí 2024 og Kanada í júní 2025. Bæði löndin eru á lista yfir 12 ríki sem hafa gert slíka samninga. <a href=\"https://www.eeas.europa.eu/eeas/eu-iceland-joint-press-release-signature-security-and-defence-partnership_en\" title=\"EEAS Joint Press Release\" target=\"_blank\" rel=\"noopener\">SOV-DATA-025</a> veitir nánari upplýsingar um eðli þessara samninga. Fyrri úrskurður «partially_supported» átti við þegar engin heimild staðfesti sérstaklega samningsgerð Kanada, en nýleg heimild (<a href=\"https://www.consilium.europa.eu/en/policies/security-defence-partnerships/timeline-security-defence-partnerships/\" title=\"Council of the EU — Security and Defence Partnerships Timeline\" target=\"_blank\" rel=\"noopener\">SOV-DATA-026</a>) breytir því.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-026",
+          "source_name": "Council of the EU — Security and Defence Partnerships Timeline",
+          "source_url": "https://www.consilium.europa.eu/en/policies/security-defence-partnerships/timeline-security-defence-partnerships/"
+        },
+        {
+          "id": "SOV-DATA-025",
+          "source_name": "EEAS Joint Press Release",
+          "source_url": "https://www.eeas.europa.eu/eeas/eu-iceland-joint-press-release-signature-security-and-defence-partnership_en"
+        },
+        {
+          "id": "SOV-LEGAL-014",
+          "source_name": "TEU, Title V — CFSP provisions; Icelandic Ministry for Foreign Affairs — Annual alignment reports",
+          "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/iceland-external-relations-common-foreign-and-security-policy.html"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Engar heimildir í grunninum fjalla um tvíhliða varnar- og öryggisyfirlýsingar Noregs, Kanada eða Bretlands við ESB. Til að sannreyna þyrfti aðgang að opinberum samningaskrám EEAS.",
-      "confidence": 0.3,
+      "missing_context": "Yfirlýsingarnar eru pólitískar, ekki lagalega bindandi samningar. Utanríkisráðuneytið hefur skýrt tekið fram að yfirlýsingin felur ekki í sér skuldbindingar eða fjárframlög. Orðið «samningar» í fullyrðingunni gæti gefið til kynna sterkari skuldbindingu en raunin er.",
+      "confidence": 0.85,
       "speakers": [
         {
           "name": "RÚV",

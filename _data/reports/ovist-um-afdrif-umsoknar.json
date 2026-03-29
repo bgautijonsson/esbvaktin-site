@@ -10,8 +10,8 @@
   "summary": "Greindar 5 fullyrðingar. Niðurstöður: 3 stutt að hluta, 2 stutt af heimildum. Sjónarhorn: hlutlaus en ófullnægjandi. Heildstæðni: 30%.",
   "capsule": "Hvað gerist með aðildarumsókn Íslands að ESB ef þjóðin greiðir nei í þjóðaratkvæðagreiðslunni? Þetta er ályktunarspurningin í greininni, og hún er réttilega sett fram — ríkisstjórnin hefur ekki tekið afstöðu til þessa. Áhugavert samhengi sem gæti auðgað umræðuna er að framkvæmdastjórn ESB staðfesti í mars 2026 að upphaflega umsóknin frá 2009 sé enn talin í gildi, enda hafi ESB aldrei formlega viðurkennt bréf utanríkisráðherra Gunnars Braga Sveinssonar frá 2015 sem löglega brottför — spurningin um hvort þörf sé á formlegri afturköllun er því enn opin.",
   "verdict_counts": {
-    "partially_supported": 3,
-    "supported": 2
+    "partially_supported": 4,
+    "supported": 1
   },
   "epistemic_counts": {
     "prediction": 2
@@ -214,8 +214,8 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "Efnislega er þessi fullyrðing studd af sömu heimildum og fullyrðing 4 — <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> sýnir að utanríkisráðherra hefur skýrt frá því að viðræður gætu hafist «um áramótin» ef þjóðin samþykki, sem staðfestir óbeint núverandi stöðu. Tilvitnunin er afdráttarlaus yfirlýsing ráðherra sem engar heimildir stangast á við. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> og <a href=\"https://www.eeas.europa.eu/eeas/eu-iceland-joint-press-release-signature-security-and-defence-partnership_en\" title=\"EEAS Joint Press Release\" target=\"_blank\" rel=\"noopener\">SOV-DATA-025</a> staðfesta að samskipti Íslands og ESB hafa hingað til verið óformleg — öryggis- og varnarsamningurinn var sérstaklega merktur sem óskuldbindandi og ekki hluti af aðildarferlinu.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir að Þorgerður Katrín hefur lagt fram þingsályktunartillögu um þjóðaratkvæðagreiðslu og sagt að viðræður gætu hafist «um áramótin» ef þjóðin samþykki — sem þýðir óbeint að viðræður séu ekki hafnar. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T162602.html\" title=\"Alþingi — Kristrún Frostadóttir, forsætisráðherra (andsvar, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">PARTY-PARL-001</a> sýnir einnig að forsætisráðherra talar um «grundvallarprinsipp» sem þyrfti að virða «í viðræðum», en tilgreinir ekki að þær séu hafnar. Þessar heimildir styðja efnislega afstöðuna um að formlegar aðildarviðræður séu ekki hafnar, en engin heimild staðfestir beint tilvist yfirlýsingarinnar sem vísað er til.",
       "supporting_evidence": [
         {
           "id": "SOV-PARL-001",
@@ -223,19 +223,14 @@
           "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
         },
         {
-          "id": "SOV-DATA-006",
-          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
-          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
-        },
-        {
-          "id": "SOV-DATA-025",
-          "source_name": "EEAS Joint Press Release",
-          "source_url": "https://www.eeas.europa.eu/eeas/eu-iceland-joint-press-release-signature-security-and-defence-partnership_en"
+          "id": "PARTY-PARL-001",
+          "source_name": "Alþingi — Kristrún Frostadóttir, forsætisráðherra (andsvar, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T162602.html"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Þótt formlegar samningaviðræður séu ekki hafnar hafa átt sér stað veruleg samskipti milli Íslands og ESB sem gætu talist undirbúningur — heimsókn forseta framkvæmdastjórnarinnar til Íslands í júlí 2025 (<a href=\"https://ec.europa.eu/commission/presscorner/detail/en/ac_25_1887\" title=\"European Commission — Press Corner; EEAS\" target=\"_blank\" rel=\"noopener\">EEA-DATA-015</a>), undirritun öryggis- og varnarsamstarfssamnings í mars 2026, og fundir á hæsta stigi. Stjórnarandstaðan hefur bent á þessa staðreynd sem rök gegn yfirlýsingu ráðherra (<a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a>). Aðgreiningin á «samningaviðræðum» og «samskiptum» er pólitískt umdeild.",
-      "confidence": 0.82,
+      "missing_context": "Yfirlýsingin sjálf er ekki í staðreyndagrunni. Heimildir staðfesta efnislega afstöðu ráðherra — að formlegar viðræður séu ekki hafnar — en ekki tilvísun í sérstaka yfirlýsingu vegna fréttarinnar. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T182328.html\" title=\"Alþingi — Sigmundur Davíð Gunnlaugsson, þingmaður Miðflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-002</a> sýnir einnig að stjórnarandstaðan hefur sagt ferlið vera lengra komið en ríkisstjórnin viðurkennir.",
+      "confidence": 0.5523299999999999,
       "speakers": [
         {
           "name": "Þorgerður Katrín Gunnarsdóttir",
@@ -259,8 +254,7 @@
       "attribution_type": "paraphrased",
       "claim_count": 3,
       "verdicts": {
-        "partially_supported": 2,
-        "supported": 1
+        "partially_supported": 3
       },
       "stance": "pro_eu",
       "slug": "thorgerdur-katrin-gunnarsdottir",

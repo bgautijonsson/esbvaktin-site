@@ -10,8 +10,8 @@
   "summary": "Greindar 16 fullyrðingar. Niðurstöður: 9 stutt af heimildum, 6 stutt að hluta, 1 ekki hægt að sannreyna. Sjónarhorn: mjög ESB-jákvæð. Heildstæðni: 25%.",
   "capsule": "Þjóðaratkvæðagreiðslan 29. ágúst er staðfest í stjórnarsáttmála og umsókn Íslands um aðild að ESB var aldrei formlega dregin til baka — þetta fær greinin rétt. Athyglisvert er þó að kannanir greina á milli tveggja mismunandi spurninga: um 58% Íslendinga vilja að atkvæðagreiðsla fari fram, en þegar spurt er hvort þeir styðji ESB-aðild beint skiptist þjóðin nær jafnt. Þessar tvær spurningar eru oft ruglaðar saman í umræðunni — og það er gagnlegt að þekkja muninn áður en maður les næstu könnun.",
   "verdict_counts": {
-    "partially_supported": 6,
-    "supported": 9
+    "partially_supported": 7,
+    "supported": 8
   },
   "epistemic_counts": null,
   "claim_count": 15,
@@ -38,27 +38,23 @@
         "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "Heimildir staðfesta að þingsályktunartillagan var lögð fram á Alþingi 7. mars 2026 af utanríkisráðherra (<a href=\"https://www.althingi.is/\" title=\"Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-028</a>) og mælt var fyrir henni 9. mars (<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a>). Hins vegar nota heimildir orðið «lögð fram» og «mælt fyrir» fremur en «samþykkt í ríkisstjórn» — greinin gefur til kynna að tillagan hafi verið samþykkt í ríkisstjórn, en heimildir staðfesta aðeins að hún hafi verið lögð fram á Alþingi. Munurinn á «samþykkt í ríkisstjórn» og «lögð fram á þingi» er efnislegur þótt niðurstaðan sé svipuð.",
+      "explanation": "<a href=\"https://www.althingi.is/\" title=\"Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-028</a> staðfestir að þingsályktunartillagan hafi verið lögð fram á föstudag 7. mars 2026 af utanríkisráðherra Þorgerði Katrínu Gunnarsdóttur. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> gefur hins vegar aðra dagsetningu — 9. mars 2026 — fyrir kynningu ráðherra á tillögunni á Alþingi. Misræmið bendir til þess að um tvo aðskilda atburði geti verið að ræða (formleg framlagning vs. flutningsræða), en fullyrðingin greinir ekki á milli þessara þátta. Meginatriðið — að tillagan hafi verið lögð fram á föstudegi — er staðfest, en dagsetningin er ekki óumdeild í heimildunum.",
       "supporting_evidence": [
         {
           "id": "SOV-LEGAL-028",
           "source_name": "Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24",
           "source_url": "https://www.althingi.is/"
-        },
+        }
+      ],
+      "contradicting_evidence": [
         {
           "id": "SOV-PARL-001",
           "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
           "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
-        },
-        {
-          "id": "SOV-DATA-006",
-          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
-          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Heimildir staðfesta framlagninguna á Alþingi en ekki sérstaklega ríkisstjórnarsamþykktina. Tímasetning á föstudegi (7. mars) var gagnrýnd af stjórnarandstöðu sem tilraun til að takmarka umfjöllun.",
-      "confidence": 0.7,
+      "missing_context": "<a href=\"https://www.althingi.is/\" title=\"Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-028</a> bendir á að stjórnarandstaðan hafi gagnrýnt föstudagsframlagningu sem tilraun til að takmarka fjölmiðlaeftirlit og viðbrögð þingsins. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> nefnir 9. mars sem dagsetningu flutningsræðunnar, sem gefur til kynna að formleg framlagning og umræða hafi verið á mismunandi dögum. Þetta samhengi vantar í fullyrðinguna.",
+      "confidence": 0.7124999999999999,
       "speakers": [
         {
           "name": "Kratinn",
@@ -140,8 +136,8 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "Heimildir staðfesta að ríkisstjórnin (mynduð í desember 2024) hefur skuldbundið sig til þjóðaratkvæðagreiðslu. Samkvæmt <a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> var þjóðaratkvæðagreiðslan fyrst ráðgerð 2027 en hraðað í 29. ágúst 2026. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> staðfestir áform ríkisstjórnarinnar og <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> sýnir þingsályktunartillöguna sem lögð var fram 9. mars 2026. Fullyrðingin er í samræmi við þessar heimildir.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að ríkisstjórnin ákvað þjóðaratkvæðagreiðslu um ESB-aðildarviðræður og að fyrst var ráðgert 2027 en síðan hraðað í 29. ágúst 2026 (<a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a>). <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir þingsályktunartillöguna frá 9. mars 2026 og <a href=\"https://www.althingi.is/altext/raeda/154/rad20230919T175556.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir (flutningsræða, 154. löggjafarþing); Logi Einarsson (flutningsræða, 153. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-004</a> sýnir að hugmyndin var þróuð yfir nokkur löggjafarþing. Fullyrðingin segir hins vegar að «kveðið hafi verið á um» þetta «í stjórnarsáttmálanum» — engin heimildin vitnar beint í texta stjórnarsáttmálans. <a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> nefnir að ríkisstjórnin «tilkynnti um áform» en staðfestir ekki beinlínis orðalag eða ákvæði stjórnarsáttmálans sjálfs.",
       "supporting_evidence": [
         {
           "id": "PARTY-DATA-016",
@@ -149,19 +145,19 @@
           "source_url": "https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/"
         },
         {
-          "id": "SOV-DATA-006",
-          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
-          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
-        },
-        {
           "id": "SOV-PARL-001",
           "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
           "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        },
+        {
+          "id": "SOV-PARL-004",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir (flutningsræða, 154. löggjafarþing); Logi Einarsson (flutningsræða, 153. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/154/rad20230919T175556.html"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Upphafleg áætlun var 2027 en hún var hraðað. Forsætisráðherra sagðist ekki ætla að ganga í ESB á hvaða skilmálum sem er, sem bendir til fyrirvara innan stjórnarliðsins.",
-      "confidence": 0.85,
+      "missing_context": "Heimildir staðfesta áform ríkisstjórnarinnar um þjóðaratkvæðagreiðslu og tímalínuna, en engin þeirra vitnar beint í texta stjórnarsáttmálans. Fullyrðingin segir «fyrir árslok 2027» en <a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> nefnir aðeins árið 2027. Nákvæm orðalag stjórnarsáttmálans er ekki staðfest í þessum heimildum.",
+      "confidence": 0.68,
       "speakers": [
         {
           "name": "Kratinn",
@@ -185,8 +181,13 @@
         "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "Gallup-könnun frá febrúar–mars 2026 sýnir að um 57% styðja þjóðaratkvæðagreiðslu (<a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — Þjóðarpúls, February–March 2026\" target=\"_blank\" rel=\"noopener\">POLL-DATA-014</a>, <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-017</a>). Þetta er meirihluti en varla «mikill meirihluti». Auk þess vantar söguleg gögn í heimildirnar til að staðfesta að þetta hafi verið raunin «nær alla tíð». <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — EU membership polling\" target=\"_blank\" rel=\"noopener\">POLL-DATA-001</a> sýnir þróun frá 2022 til 2026 en aðeins um stuðning við aðild, ekki stuðning við þjóðaratkvæðagreiðslu sérstaklega.",
+      "explanation": "<a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Þjóðarpúls, February–March 2026; Capacent Gallup historical EU polling data (2009–2013)\" target=\"_blank\" rel=\"noopener\">POLL-DATA-021</a> staðfestir að um 52% styðji áframhaldandi viðræður, sem er nálægt «rúmlega 52%» í fullyrðingunni. Þó ber að hafa í huga mikilvæga aðgreiningu: <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — Þjóðarpúls, February–March 2026\" target=\"_blank\" rel=\"noopener\">POLL-DATA-014</a> sýnir 42/42 skiptingu um ESB-aðild sjálfa og 57% stuðning við að halda þjóðaratkvæðagreiðslu. Fullyrðingin virðist nota rétta viðræðutöluna en orðalagið «myndu kjósa með» getur villt um fyrir lesanda sem greinir ekki á milli stuðnings við viðræður og stuðnings við aðild.",
       "supporting_evidence": [
+        {
+          "id": "POLL-DATA-021",
+          "source_name": "Gallup Þjóðarpúls, February–March 2026; Capacent Gallup historical EU polling data (2009–2013)",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+        },
         {
           "id": "POLL-DATA-014",
           "source_name": "Gallup Ísland — Þjóðarpúls, February–March 2026",
@@ -196,16 +197,11 @@
           "id": "POLL-DATA-017",
           "source_name": "Gallup Iceland / Þjóðarpúls",
           "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
-        },
-        {
-          "id": "POLL-DATA-020",
-          "source_name": "Gallup hf. — Þjóðarpúls; Vísir",
-          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Mikill munur er á stuðningi við þjóðaratkvæðagreiðslu (57%) og stuðningi við ESB-aðild (42%). Orðið «mikill meirihluti» ýkir niðurstöðurnar — 57% er einfaldur meirihluti, ekki mikill. Söguleg gögn um viðhorf til þjóðaratkvæðagreiðslunnar ná aðeins aftur til 2022–2026 í þessum heimildum.",
-      "confidence": 0.75,
+      "missing_context": "Bilið milli stuðnings við viðræður (~52%) og aðild (~42%) er um 10 prósentustig — verulegur hópur vill semja en er ekki skuldbundinn til aðildar. Könnunin var gerð á netpaneli Gallup (n≈810, svörunartíðni 42,7%) sem getur valdið skekkju gagnvart eldri og dreifbýlisíbúum. Tölur eru innan skekkjumarka og geta sveiflast í aðdraganda atkvæðagreiðslu.",
+      "confidence": 0.6839999999999999,
       "speakers": [
         {
           "name": "Kratinn",
@@ -532,21 +528,16 @@
         "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L:2003:236:TOC\" title=\"European Commission — 2003 Act of Accession; Eurostat\" target=\"_blank\" rel=\"noopener\">PREC-HIST-020</a> staðfestir að aðildarsamningur Malta innihélt undanþágu (derogation) frá kaupum erlendra aðila á sumareignum til að vernda fasteignamarkað. Hins vegar lýsa heimildir þessu sem undanþágu frá kaupum á «secondary (holiday) residences» — ekki sem almennu banni við fasteignakaupum útlendinga. <a href=\"https://eur-lex.europa.eu/collection/eu-law/treaties.html\" title=\"European Parliament — EU Treaties and Protocols; Accession Treaty texts\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-023</a> nefnir einnig undanþágu Malta en tilgreinir ekki hvort hún sé varanleg eða tímabundin.",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> nefnir takmarkanir á fasteignakaupum á Malta sem fordæmi í ræðu utanríkisráðherra, sem styður að slíkt fyrirkomulag sé til staðar. Engin heimild í staðreyndagrunninum lýsir þó nákvæmum skilmálum undanþágunnar — t.d. hvort hún nái til allra erlendra ESB-borgara eða eingöngu ákveðinna tegunda fasteigna. <a href=\"https://www.visindavefur.is/svar.php?id=60135\" title=\"Vísindavefurinn — Helga Melkorka Óttarsdóttir, lawyer (2011)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-027</a> fjallar um íslensku eignarhaldstakmarkanirnar en segir ekkert um Möltu sérstaklega. Fullyrðingin er í aðalatriðum studd en upplýsingar um umfang og nákvæma skilmála vantar.",
       "supporting_evidence": [
         {
-          "id": "PREC-HIST-020",
-          "source_name": "European Commission — 2003 Act of Accession; Eurostat",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L:2003:236:TOC"
-        },
-        {
-          "id": "EEA-LEGAL-023",
-          "source_name": "European Parliament — EU Treaties and Protocols; Accession Treaty texts",
-          "source_url": "https://eur-lex.europa.eu/collection/eu-law/treaties.html"
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Undanþágan nær til sumareigna (secondary residences), ekki allra fasteignakaupa. Heimildir gefa ekki skýra vísbendingu um hvort undanþágan sé formlega varanleg eða hvort hún sé tímabundin aðlögun. <a href=\"https://www.centralbankmalta.org/financial-stability\" title=\"Central Bank of Malta — Financial Stability Report; Eurostat — House price statistics\" target=\"_blank\" rel=\"noopener\">HOUSING-PRECEDENT-003</a> sýnir að Malta hefur þrátt fyrir allt upplifað mikla fasteignaverðshækkun eftir ESB-aðild.",
+      "missing_context": "Heimildir lýsa undanþágunni aðeins í einni setningu sem fordæmi. Til að staðfesta fullyrðinguna að fullu þyrfti heimildir um aðildarsamning Möltu frá 2003 og bókun 6 sem kveður á um takmarkanir á eignarhaldi fasteigna á tilgreindum svæðum.",
       "confidence": 0.65,
       "speakers": [
         {
@@ -571,14 +562,8 @@
         "epistemic_type": "factual"
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://www.consilium.europa.eu/en/\" title=\"Press conference statements — Donald Tusk, PM of Poland (2025–2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-011</a> staðfestir að Donald Tusk er forsætisráðherra Póllands og var forseti leiðtogaráðs ESB frá 2014 til 2019. Þetta er einfalt staðreyndaatriði sem heimildir staðfesta skýrt.",
-      "supporting_evidence": [
-        {
-          "id": "PREC-DATA-011",
-          "source_name": "Press conference statements — Donald Tusk, PM of Poland (2025–2026)",
-          "source_url": "https://www.consilium.europa.eu/en/"
-        }
-      ],
+      "explanation": "Donald Tusk starfaði sem forseti Evrópuráðsins 2014-2019 og var kjörinn forsætisráðherra Póllands aftur í lok árs 2023 eftir að hafa gegnt þeirri stöðu 2007-2014. Hann er þannig forsætisráðherra í annað sinn og er einn þekktasti pólítísk leiðtogi í Evrópu. Heimildir í gagnagrunni gefa ekki beinan stuðning við þessa staðhæfingu, en þetta er almennþekkt staðreynd sem ekki þarfnast heimildarstuðnings.",
+      "supporting_evidence": [],
       "contradicting_evidence": [],
       "missing_context": null,
       "confidence": 0.95,
@@ -605,7 +590,7 @@
         "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.consilium.europa.eu/en/\" title=\"Press conference statements — Donald Tusk, PM of Poland (2025–2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-011</a> staðfestir að Tusk hafi sagt opinberlega að ESB þyrfti að laga sig að löndum eins og Íslandi og hlusta á smærri lönd. Nákvæm orðalag og samhengi — hvort þetta hafi verið á blaðamannafundi með Kristrúnu sérstaklega — eru þó ekki staðfest í heimildinni. Fyrirvari í heimildinni bendir á að nákvæmt orðalag eigi að sannreyna gegn frumheimildum.",
+      "explanation": "<a href=\"https://www.consilium.europa.eu/en/\" title=\"Press conference statements — Donald Tusk, PM of Poland (2025–2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-011</a> staðfestir að Donald Tusk hafi sagt opinberlega að ESB ætti að hlusta á smærri ríki eins og stór — í samhengi við umræðu um stækkun og aðlögun ESB. Heimildin nefnir hins vegar að nákvæmt orðalag og samhengi yrði að staðfesta við frumheimildir (blaðamannafundaupptökur). Fullyrðingin segir «á blaðamannafundi» sem heimildin staðfestir ekki sérstaklega — hún nefnir almennt opinberar yfirlýsingar. Þar sem fyrirvari heimildarinnar leggur áherslu á að staðfesta nákvæmt orðalag er rétt að meta þetta sem að hluta stutt.",
       "supporting_evidence": [
         {
           "id": "PREC-DATA-011",
@@ -614,8 +599,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Heimildin nefnir yfirlýsingar Tusks um smærri ríki í almennum skilningi en staðfestir ekki sérstaklega blaðamannafund með Kristrúnu. Tusk hefur stutt ESB-stækkun en forgangsraðað Austur-Evrópu (Úkraínu, Vestur-Balkan) fremur en norrænum ríkjum.",
-      "confidence": 0.65,
+      "missing_context": "Fyrirvari <a href=\"https://www.consilium.europa.eu/en/\" title=\"Press conference statements — Donald Tusk, PM of Poland (2025–2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-011</a> varar sérstaklega við að staðfesta þurfi nákvæmt orðalag við frumheimildir. Tusk var forseti Lúxemborgarráðsins 2014–2019 og þekkir vel stofnanir ESB, en opinberar yfirlýsingar hans um stækkun kunna að vera ólíkar raunverulegum samningsstöðum. Forgangsmál Póllands hafa verið austurstækkun (Úkraína, Vestur-Balkan) fremur en norræn aðild.",
+      "confidence": 0.6,
       "speakers": [
         {
           "name": "Kratinn",
@@ -659,27 +644,27 @@
         "epistemic_type": "factual"
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://www.althingi.is/\" title=\"Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-028</a> staðfestir að þingsályktunartillagan var lögð fram 7. mars 2026, og <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> staðfestir dagsetninguna 29. ágúst 2026. Frá 7. mars til 29. ágúst eru tæplega sex mánuðir, sem samsvarar «tæpt hálft ár». Tímalínan er rétt reikuð.",
+      "explanation": "Dagsetningin 29. ágúst 2026 er staðfest af fjölmörgum heimildum. <a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> lýsir ákvörðun ríkisstjórnarinnar um þjóðaratkvæðagreiðsluna og <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-017</a> og <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup hf. — Þjóðarpúls; Vísir\" target=\"_blank\" rel=\"noopener\">POLL-DATA-020</a> fjalla um hana sem fyrirhugað atburðarás. Yfirgnæfandi meirihluti heimildamata (22 af 25) úrskurðar fullyrðinguna sem studda, og dagsetningin er samhljóða í öllum greiningum.",
       "supporting_evidence": [
         {
-          "id": "SOV-LEGAL-028",
-          "source_name": "Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24",
-          "source_url": "https://www.althingi.is/"
+          "id": "POLL-DATA-017",
+          "source_name": "Gallup Iceland / Þjóðarpúls",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
         },
         {
-          "id": "SOV-DATA-006",
-          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
-          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+          "id": "POLL-DATA-020",
+          "source_name": "Gallup hf. — Þjóðarpúls; Vísir",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
         },
         {
-          "id": "SOV-PARL-001",
-          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
-          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+          "id": "POLL-DATA-014",
+          "source_name": "Gallup Ísland — Þjóðarpúls, February–March 2026",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Stjórnarandstaðan hefur gagnrýnt dagsetninguna sem of skjóta og bendir á að sumarorlof dragi úr umræðutíma. Hugmyndin um þjóðaratkvæðagreiðslu var þó rædd árum saman á Alþingi áður en tillagan var lögð fram.",
-      "confidence": 0.9,
+      "missing_context": "Þingsályktunartillaga þarf formlegt samþykki Alþingis til að atkvæðagreiðslan fari fram. Einnig er vert að greina á milli viðfangsefnis kosningarinnar — sumar heimildir tala um «áframhald viðræðna» en aðrar um «ESB-aðild» sem eru ólík spursmál.",
+      "confidence": 0.95,
       "speakers": [
         {
           "name": "Kratinn",

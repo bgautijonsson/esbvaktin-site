@@ -10,13 +10,13 @@
   "summary": "Greindar 21 fullyrðingar .",
   "capsule": "Ísland uppfyllir nú þegar flest inngönguskilyrði ESB hvað varðar efnahag, lýðræði og réttarríki — og sótti í raun um aðild árið 2009, enda eru aðildarviðræður ekki þversagnarkennt nýlunduferli heldur lyklaðar að sérstöðu hvers ríkis með sérákvæðum. Athyglisvert er þó að fiskveiðikafli viðræðnanna (kafli 13) var aldrei lokið árið 2013 og sjávarútvegsmál gætu verið þrálátari í samningaferlinu en greinin gefur í skyn. Jafnframt er vert að vita að evran kæmi ekki strax við aðild — samkvæmt fordæmum eins og Króatíu liður nokkur ár í ERM II áður en ríki fullnægir öllum skilyrðum gjaldmiðilsbreytingarinnar.",
   "verdict_counts": {
-    "supported": 5,
+    "supported": 4,
     "misleading": 1,
     "unverifiable": 2,
-    "partially_supported": 10
+    "partially_supported": 11
   },
   "epistemic_counts": {
-    "prediction": 1
+    "prediction": 4
   },
   "claim_count": 18,
   "dominant_category": "precedents",
@@ -42,13 +42,9 @@
         "epistemic_type": "factual"
       },
       "verdict": "supported",
-      "explanation": "Heimildir staðfesta þetta. Samkvæmt EEA-DATA-009 og <a href=\"https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/\" title=\"Althingi — Historical records; European Commission accession records\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-010</a> sótti Ísland um ESB-aðild 16. júlí 2009, undir forystu ríkisstjórnar Jóhönnu Sigurðardóttur. <a href=\"https://uni.hi.is/baldurt/files/2012/08/Iceland-EU-Baldur-Alyson-Greham.pdf\" title=\"Capacent Gallup / Social Science Research Institute, University of Iceland\" target=\"_blank\" rel=\"noopener\">PREC-HIST-005</a> staðfestir einnig umsóknina og tengir hana fjármálahruninu 2008.",
-      "supporting_evidence": [
-        {
-          "id": "PREC-HIST-005",
-          "source_name": "Capacent Gallup / Social Science Research Institute, University of Iceland",
-          "source_url": "https://uni.hi.is/baldurt/files/2012/08/Iceland-EU-Baldur-Alyson-Greham.pdf"
-        },
+      "explanation": "Heimildir EEA-DATA-009, <a href=\"https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/\" title=\"Althingi — Historical records; European Commission accession records\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-010</a> og <a href=\"https://uni.hi.is/baldurt/files/2012/08/Iceland-EU-Baldur-Alyson-Greham.pdf\" title=\"Capacent Gallup / Social Science Research Institute, University of Iceland\" target=\"_blank\" rel=\"noopener\">PREC-HIST-005</a> staðfesta allar að Ísland lagði inn formlega aðildarumsókn til Evrópusambandsins 16. júlí 2009. Aðildarviðræður hófust síðan í júlí 2010.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [
         {
           "id": "EEA-DATA-009",
           "source_name": "European Commission — Iceland: Accession negotiations status; Althingi records",
@@ -58,11 +54,15 @@
           "id": "POLITICAL-DATA-010",
           "source_name": "Althingi — Historical records; European Commission accession records",
           "source_url": "https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/"
+        },
+        {
+          "id": "PREC-HIST-005",
+          "source_name": "Capacent Gallup / Social Science Research Institute, University of Iceland",
+          "source_url": "https://uni.hi.is/baldurt/files/2012/08/Iceland-EU-Baldur-Alyson-Greham.pdf"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": null,
-      "confidence": 0.98,
+      "missing_context": "Aðildarviðræður hófust í júlí 2010, sem gæti skýrt þann rugling að sumir telja umsóknina hafa verið lögð inn 2010. Viðræðunum var frestað 2013 og umsóknin var formlega afturkölluð 2015, þótt lagaleg staða hennar sé umdeild.",
+      "confidence": 0.95,
       "speakers": [
         {
           "name": "Thomas Möller",
@@ -491,15 +491,15 @@
         "category": "currency",
         "claim_type": "prediction",
         "confidence": 0.9,
-        "epistemic_type": "factual"
+        "epistemic_type": "prediction"
       },
       "verdict": "partially_supported",
-      "explanation": "Rök fyrir auknum stöðugleika eru til staðar — CURR-DATA-004 sýnir að stýrivextir á Íslandi eru mun hærri en í evrusvæðinu (8% á móti 2,75%), og <a href=\"https://www.sa.is/frettir\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> bendir á að SA áætli 2–3 prósentustiga lækkun á fjármagnskostnaði. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — EU polls cross-referenced with Hagstofa consumer confidence index\" target=\"_blank\" rel=\"noopener\">POLL-DATA-009</a> sýnir sterka fylgni á milli efnahagsóstöðugleika og stuðnings við ESB-aðild. Á hinn bóginn varar CURR-DATA-004 við því að lægri vextir gætu aukið eignaverðsbólur, og <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> bendir á að tap á sjálfstæðri peningastefnu sé verulegur málamiðlun.",
+      "explanation": "<a href=\"https://www.sa.is/frettir\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> og <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> staðfesta að samtök atvinnulífsins og Viðskiptaráð telja ESB-aðild myndu auka fyrirsjáanleika og stöðugleika — SA nefnir minni gjaldeyrisáhættu og betri regluumhverfi, Viðskiptaráð áætlar 2–4% hagvöxt á áratug. <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf\" title=\"EEA Agreement — Protocol 3 on trade in processed agricultural products\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-002</a> sýnir að EES-samningurinn veitir þegar umtalsverðan markaðsaðgang. Fullyrðingin er þó of víð og algild: heimildir benda til aukakostnaðar (tap á sjálfstæðri viðskiptastefnu samkvæmt <a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a>, sjávarútvegsáhætta) og <a href=\"https://www.ela.europa.eu/\" title=\"European Labour Authority — Annual Report 2024; EU Directive 2005/36/EC on professional qualifications\" target=\"_blank\" rel=\"noopener\">HOUSING-ANALYSIS-001</a> undirstrikar að EES veitir nú þegar sambærilega réttindi á mörgum sviðum. Ávinningurinn er raunverulegur en ekki eins víðtækur og fullyrðingin gefur til kynna.",
       "supporting_evidence": [
         {
-          "id": "CURR-DATA-004",
-          "source_name": "CURR-DATA-004",
-          "source_url": null
+          "id": "POL-DATA-012",
+          "source_name": "SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions",
+          "source_url": "https://www.sa.is/frettir"
         },
         {
           "id": "POL-DATA-017",
@@ -507,20 +507,20 @@
           "source_url": "https://vi.is/skyrslur/1667"
         },
         {
-          "id": "POL-DATA-012",
-          "source_name": "SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions",
-          "source_url": "https://www.sa.is/frettir"
+          "id": "TRADE-DATA-002",
+          "source_name": "EEA Agreement — Protocol 3 on trade in processed agricultural products",
+          "source_url": "https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf"
         }
       ],
       "contradicting_evidence": [
         {
-          "id": "SOV-LEGAL-005",
-          "source_name": "Central Bank of Iceland — Monetary policy framework",
-          "source_url": "https://sedlabanki.is/peningastefna/"
+          "id": "SOV-LEGAL-032",
+          "source_name": "TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview",
+          "source_url": "https://www.efta.int/free-trade/free-trade-agreements"
         }
       ],
-      "missing_context": "Fullyrðingin sleppur umræðu um hvað tapast — sjálfstæð peningastefna og sveigjanleiki gengis. Krónan féll um 50% í hruninu 2008 og sá sveigjanleiki er talinn hafa flýtt bata efnahagslífsins. Evruaðild útilokar þann aðlögunarbúnað.",
-      "confidence": 0.65,
+      "missing_context": "ESB-aðild myndi einnig draga úr sveigjanleika — Ísland myndi missa sjálfstæða viðskiptastefnu og verða hluti af tollabandalagi. EES-samningurinn veitir nú þegar mikinn fyrirsjáanleika á innri markaðinum. Ávinningur aðildar er raunverulegur en fullyrðingin tekur ekki tillit til þess sem tapast eða þess sem EES-samningurinn veitir nú þegar.",
+      "confidence": 0.6,
       "speakers": [
         {
           "name": "Thomas Möller",
@@ -575,15 +575,15 @@
         "category": "trade",
         "claim_type": "prediction",
         "confidence": 0.9,
-        "epistemic_type": "factual"
+        "epistemic_type": "prediction"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf\" title=\"EEA Agreement — Protocol 3 on trade in processed agricultural products\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-002</a> staðfestir að ESB-aðild myndi útvíkka tollfrjálsan aðgang að innri markaðnum til fullrar tollbandalagsstöðu og afnema þá tolla sem enn eru á landbúnaðar- og sjávarafurðum. <a href=\"https://www.legislation.gov.uk/eut/eea-agreement/article/19\" title=\"EEA Agreement Article 19; Icelandic Ministry for Foreign Affairs — EEA review documentation\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-008</a> styrkir þetta — EES-samningurinn útilokar landbúnaðarvörur að miklu leyti en fullri aðild fylgdi afnám innri tolla. Þetta er tæknilega rétt: innri tollar hverfa í tollbandalagi.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin er rétt um landbúnaðarvörur — TRADE-DATA-021 staðfestir að Ísland leggur 30–100%+ tolla á mjólkurvörur, kjöt og grænmeti sem myndu falla niður við aðild. Rannsóknir benda til 15–25% lækkunar matvælaverðs (<a href=\"https://chamber.is/intros/iceland-accession-negotiations-with-the-eu\" title=\"Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-009</a>). Hins vegar er forsenda fullyrðingarinnar röng hvað varðar «allan innflutning» — <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf\" title=\"EEA Agreement — Protocol 3 on trade in processed agricultural products\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-002</a> bendir á að Ísland hefur nú þegar tollfrítt aðgengi að innri markaðnum fyrir flestar iðnaðarvörur í gegnum EES-samninginn. Megnið af tollalækkuninni snýr þannig að landbúnaðarvörum, ekki öllum vörum.",
       "supporting_evidence": [
         {
-          "id": "TRADE-DATA-002",
-          "source_name": "EEA Agreement — Protocol 3 on trade in processed agricultural products",
-          "source_url": "https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf"
+          "id": "TRADE-DATA-021",
+          "source_name": "WTO — Trade Policy Review: Iceland 2024; Iceland-China FTA text",
+          "source_url": null
         },
         {
           "id": "AGRI-DATA-008",
@@ -591,14 +591,30 @@
           "source_url": "https://www.legislation.gov.uk/eut/eea-agreement/article/19"
         },
         {
-          "id": "TRADE-DATA-021",
-          "source_name": "WTO — Trade Policy Review: Iceland 2024; Iceland-China FTA text",
-          "source_url": null
+          "id": "AGRI-DATA-009",
+          "source_name": "Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers",
+          "source_url": "https://chamber.is/intros/iceland-accession-negotiations-with-the-eu"
+        },
+        {
+          "id": "SOV-LEGAL-032",
+          "source_name": "TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview",
+          "source_url": "https://www.efta.int/free-trade/free-trade-agreements"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Fullyrðingin segir ekki frá hinu megin peningsins — Ísland þyrfti jafnframt að taka upp sameiginlega tollskrá ESB, sem myndi lækka verndartolla á innfluttar landbúnaðarvörur (30–100%+). Tollfrelsi á útflutningi er rétt, en innflutningsverndin breytist samhliða.",
-      "confidence": 0.85,
+      "contradicting_evidence": [
+        {
+          "id": "TRADE-DATA-002",
+          "source_name": "EEA Agreement — Protocol 3 on trade in processed agricultural products",
+          "source_url": "https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf"
+        },
+        {
+          "id": "HOUSING-DATA-006",
+          "source_name": "Samtök iðnaðarins — Construction cost analysis; Hagstofa Íslands — Building cost index",
+          "source_url": "https://statice.is/statistics/economy/prices/building-cost-index/"
+        }
+      ],
+      "missing_context": "EES-samningurinn tryggir nú þegar tollfríðindi á iðnaðarvörum, þannig að viðbótaráhrifin af ESB-aðild snúast að mestu um landbúnaðarvörur (<a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf\" title=\"EEA Agreement — Protocol 3 on trade in processed agricultural products\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-002</a>). Tolllækkun á matvælum myndi lækka neysluverð en ógna innlendum bændum — Bændasamtökin áætla 30–50% tekjufall (<a href=\"https://chamber.is/intros/iceland-accession-negotiations-with-the-eu\" title=\"Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-009</a>). Byggingarefni njóta nú þegar tollfríðinda í gegnum EES og kostnaðarmunur stafar af flutningskostnaði, ekki tollum (<a href=\"https://statice.is/statistics/economy/prices/building-cost-index/\" title=\"Samtök iðnaðarins — Construction cost analysis; Hagstofa Íslands — Building cost index\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-006</a>).",
+      "confidence": 0.918,
       "speakers": [
         {
           "name": "Thomas Möller",
@@ -619,15 +635,15 @@
         "category": "currency",
         "claim_type": "prediction",
         "confidence": 0.9,
-        "epistemic_type": "factual"
+        "epistemic_type": "prediction"
       },
       "verdict": "partially_supported",
-      "explanation": "CURR-DATA-004 staðfestir verulegan vaxtamun — 8% stýrivextir á Íslandi á móti 2,75% á evrusvæðinu, sem skilar sér í hærri húsnæðislánavöxtum (7–9% á móti 3–4%). <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> og <a href=\"https://www.sa.is/frettir\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> styðja rökin um lægri fjármagnskostnað. Hins vegar varar <a href=\"https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en\" title=\"European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators\" target=\"_blank\" rel=\"noopener\">CURR-DATA-005</a> við því að evruaðild sé ekki sjálfgefin við ESB-inngöngu — Króatía þurfti 10 ár frá aðild til evruupptöku. Fullyrðingin um \"samkeppni á bankamarkaði\" er ekki beint studd af heimildum.",
+      "explanation": "Fullyrðingin inniheldur þrjá aðskilda þætti. Lægri vextir: SA og Viðskiptaráð meta vaxtamun á 2–3 prósentustigum vegna gjaldmiðilsáhættu (<a href=\"https://www.sa.is/frettir\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a>, <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a>), og Króatía sýndi vaxtalækkun eftir evruupptöku (<a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a>). Sterkari gjaldmiðill: evran er stöðugri en krónan sem sveiflist um 10–12% árlega (<a href=\"https://cb.is/statistics/official-exchange-rate/\" title=\"Seðlabanki Íslands — Monetary Bulletin; ECB Statistical Data Warehouse\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-004</a>), en «sterkari» er matskennt — krónan getur verið bæði of sterk og of veik. Samkeppnisumhverfi: heimildir styðja ekki beint fullyrðingu um «öflugra samkeppnisumhverfi» í banka- og tryggingageiranum; EES veitir nú þegar aðgang að innri markaðinum. Auk þess benda heimildir á að lægri vextir geta hækkað húsnæðisverð (<a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a>) — sem er verulegur fyrirvari sem fullyrðingin sleppur.",
       "supporting_evidence": [
         {
-          "id": "CURR-DATA-004",
-          "source_name": "CURR-DATA-004",
-          "source_url": null
+          "id": "POL-DATA-012",
+          "source_name": "SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions",
+          "source_url": "https://www.sa.is/frettir"
         },
         {
           "id": "POL-DATA-017",
@@ -635,25 +651,25 @@
           "source_url": "https://vi.is/skyrslur/1667"
         },
         {
-          "id": "POL-DATA-012",
-          "source_name": "SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions",
-          "source_url": "https://www.sa.is/frettir"
+          "id": "TRADE-COMP-004",
+          "source_name": "Seðlabanki Íslands — Monetary Bulletin; ECB Statistical Data Warehouse",
+          "source_url": "https://cb.is/statistics/official-exchange-rate/"
+        },
+        {
+          "id": "PREC-DATA-019",
+          "source_name": "Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report",
+          "source_url": "https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023"
         }
       ],
       "contradicting_evidence": [
         {
-          "id": "SOV-LEGAL-005",
-          "source_name": "Central Bank of Iceland — Monetary policy framework",
-          "source_url": "https://sedlabanki.is/peningastefna/"
-        },
-        {
-          "id": "CURR-DATA-005",
-          "source_name": "European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators",
-          "source_url": "https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en"
+          "id": "HOUSING-DATA-009",
+          "source_name": "Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023",
+          "source_url": "https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html"
         }
       ],
-      "missing_context": "Evruaðild kemur ekki samstundis — Ísland þyrfti fyrst að uppfylla Maastricht-skilyrði og dvelja í ERM II í a.m.k. tvö ár. Króatía tók 10 ár. Lægri vextir gætu einnig aukið hættu á eignaverðsbólum ef þeim fylgir ekki nægilegt eftirlitsumhverfi.",
-      "confidence": 0.6,
+      "missing_context": "Fullyrðingin sleppur verulegum fyrirvörum: lægri vextir tengjast hærra húsnæðisverði samkvæmt rannsóknum (<a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a>); evruupptaka myndi þýða tap á sjálfstæðri peningastefnu (<a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a>); samkeppnisumhverfi í banka- og tryggingageiranum er þegar undir EES-reglum; og Maastricht-skilyrði þyrfti að uppfylla áður en evra yrði tekin upp. Draghi-skýrslan bendir jafnframt á samkeppnisvanda ESB gagnvart BNA.",
+      "confidence": 0.62,
       "speakers": [
         {
           "name": "Thomas Möller",
@@ -771,9 +787,9 @@
       "attribution_type": "asserted",
       "claim_count": 16,
       "verdicts": {
-        "supported": 4,
+        "supported": 3,
         "unverifiable": 2,
-        "partially_supported": 10
+        "partially_supported": 11
       },
       "stance": "pro_eu",
       "slug": "thomas-moller",

@@ -20,7 +20,7 @@
   },
   "scorecard": {
     "partially_supported": 18,
-    "supported": 8,
+    "supported": 7,
     "misleading": 1
   },
   "claims": [
@@ -220,23 +220,23 @@
       "claim_text": "Laun á Íslandi eru þau hæstu í Evrópu.",
       "original_quote": "LAUN á Íslandi séu þau LANGHÆSTU í Evrópu og ég gat ekki fundið eitt einasta ríki innan ESB sem er með HÆRRI laun",
       "verdict": "partially_supported",
-      "explanation": "Samkvæmt <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Samfelag/Samfelag__launogtekjur__1_laun__1_laun/VIN02001.px\" title=\"Hagstofa Íslands — Wages and income; Eurostat — Structure of Earnings Survey\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-003</a> eru laun á Íslandi meðal þeirra hæstu í Evrópu, «sambærileg við Danmörku og Lúxemborg». Þetta bendir til þess að laun á Íslandi séu ekki endilega þau hæstu heldur á svipuðu róli og ríki eins og Danmörk og Lúxemborg. Upprunalega tilvitnunin fullyrðir að «ekkert ESB-ríki sé með hærri laun» en heimildir segja «sambærileg» frekar en «hæst».",
-      "missing_context": "Laun á Íslandi eru meðal þeirra allra hæstu en ekki sannanlega «langhæst». Danmörk og Lúxemborg eru á sambærilegum stað. Samanburðurinn veltur á mælikvarða — PPP-leiðrétt laun gefa aðra mynd en nafnlaun í evrum, og gengi krónunnar hefur mikil áhrif á samanburð.",
+      "explanation": "Samkvæmt <a href=\"https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/\" title=\"Eurostat — Comparative price levels of consumer goods and services (prc_ppp_ind)\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-003</a> var almennt verðlag á Íslandi um 50% yfir meðaltali ESB-27, sem er hæst í Evrópu á eftir Sviss. <a href=\"https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/\" title=\"Eurostat — Purchasing power parities (prc_ppp_ind)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-007</a> staðfestir að verðlagsstuðull Íslands var 152,9 (ESB-27 = 100) árið 2024. Ísland er þannig næsthæst í Evrópu, ekki hæst — Sviss er hærra. Fullyrðingin er nærri lagi en tæknilega ónákvæm.",
+      "missing_context": "Sviss er með hærra verðlag en Ísland samkvæmt Eurostat-gögnum. Hátt verðlag á Íslandi skýrist af mörgum þáttum: litlum innlendum markaði, háum launum, flutningskostnaði, sköttum og takmörkuðum samkeppni, ekki eingöngu gjaldmiðla- eða viðskiptastefnu.",
       "supporting_evidence": [
         {
-          "id": "LABOUR-DATA-003",
-          "source_name": "Hagstofa Íslands — Wages and income; Eurostat — Structure of Earnings Survey",
-          "source_url": "https://px.hagstofa.is/pxen/pxweb/en/Samfelag/Samfelag__launogtekjur__1_laun__1_laun/VIN02001.px"
+          "id": "TRADE-COMP-003",
+          "source_name": "Eurostat — Comparative price levels of consumer goods and services (prc_ppp_ind)",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/"
         },
         {
-          "id": "TRADE-COMP-002",
-          "source_name": "IMF World Economic Outlook Database — October 2024",
-          "source_url": "https://www.imf.org/en/Publications/WEO"
+          "id": "CURRENCY-DATA-007",
+          "source_name": "Eurostat — Purchasing power parities (prc_ppp_ind)",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/"
         },
         {
-          "id": "CURRENCY-DATA-012",
-          "source_name": "World Bank — World Development Indicators",
-          "source_url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD"
+          "id": "AGRI-DATA-014",
+          "source_name": "Eurostat — Comparative price levels (prc_ppp_ind); Hagstofa Íslands — Consumer Price Index",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/"
         }
       ],
       "contradicting_evidence": [],
@@ -263,32 +263,6 @@
           "id": "CURRENCY-DATA-013",
           "source_name": "World Bank — World Development Indicators (FP.CPI.TOTL.ZG)",
           "source_url": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IS"
-        }
-      ],
-      "contradicting_evidence": [],
-      "category": "currency",
-      "attribution": "paraphrased",
-      "article_slug": "innlimunarsinna-svarad-endurbirt-blogg-fra-22-8-2025",
-      "article_title": "INNLIMUNARSINNA SVARAÐ (Endurbirt blogg frá 22.8.2025)",
-      "article_source": "Blog.is",
-      "article_date": "2026-03-17"
-    },
-    {
-      "claim_text": "Um 230 stærstu fyrirtæki landsins, þar á meðal sjávarútvegsrisarnir, hafa yfirgefið krónuna sem gjaldmiðil og nota nú þegar evru eða dollar.",
-      "original_quote": "Flest stærri fyrirtækja landsins, eða um 230 talsins, og þar á meðal eru sjávarútvegsrisarnir, hafa yfirgefið krónuna sem gjaldmiðil og nota nú þegar evru eða dollar.",
-      "verdict": "partially_supported",
-      "explanation": "<a href=\"https://hagstofa.is/talnaefni/efnahagsmal/utanrikisverslun/\" title=\"Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður\" target=\"_blank\" rel=\"noopener\">FISH-DATA-027</a> staðfestir að sjávarútvegsfyrirtæki gera upp í erlendum gjaldmiðlum (evrum og dollurum) vegna útflutnings, þar sem um 90% sjávarafurða eru fluttar út. <a href=\"https://www.sedlabanki.is/hagtolur/gengi/\" title=\"Seðlabanki Íslands — Exchange rate data\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-007</a> og <a href=\"https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/skyrsla-nefndarinnar/english/\" title=\"Seðlabanki Íslands — Special Investigation Commission report; Central Bank annual report 2009\" target=\"_blank\" rel=\"noopener\">CURR-DATA-001</a> vísa til mikillar gengisáhættu krónunnar sem hvetur fyrirtæki til að nota erlendan gjaldmiðil. Hins vegar er stór munur á að «nota evru í uppgjöri» og «yfirgefa krónuna sem gjaldmiðil». Fyrirtækin borga laun, skatta og innlendan kostnað í krónum. Talan 230 er ekki staðfest í heimildum.",
-      "missing_context": "Fullyrðingin er villandi í orðalagi. Fyrirtækin hafa ekki «yfirgefið» krónuna — þau nota erlendan gjaldmiðil til útflutningsuppgjörs en starfa áfram í krónum á innlendum markaði. Talan 230 er ekki staðfest og orðalagið «yfirgefið krónuna» er of sterkt.",
-      "supporting_evidence": [
-        {
-          "id": "FISH-DATA-027",
-          "source_name": "Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður",
-          "source_url": "https://hagstofa.is/talnaefni/efnahagsmal/utanrikisverslun/"
-        },
-        {
-          "id": "TRADE-DATA-007",
-          "source_name": "Seðlabanki Íslands — Exchange rate data",
-          "source_url": "https://www.sedlabanki.is/hagtolur/gengi/"
         }
       ],
       "contradicting_evidence": [],
@@ -754,9 +728,9 @@
     {
       "claim_text": "Ísland er með varnarsamning við Bandaríkin.",
       "original_quote": "við erum LÍKA MEÐ VARNARSAMNING við Bandaríkin",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://avalon.law.yale.edu/20th_century/ice001.asp\" title=\"Avalon Project, Yale Law Library — Defense of Iceland: Agreement Between the United States and the Republic of Iceland, May 5, 1951; Government of Iceland — Iceland and the US: Bilateral Relations\" target=\"_blank\" rel=\"noopener\">SOV-HIST-002</a> staðfestir að Ísland og Bandaríkin undirrituðu tvíhliða varnarsamning 5. maí 1951 þar sem Bandaríkin tóku á sig ábyrgð á vörnum Íslands. <a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"1951 US-Iceland Defence Agreement; 2016 Iceland-US Security Cooperation Agreement; US Department of State bilateral relations factsheet\" target=\"_blank\" rel=\"noopener\">SOV-DATA-008</a> staðfestir að samningurinn er enn í gildi þótt herflotadeild Bandaríkjanna á Keflavíkurflugvelli hafi lokað árið 2006. Tvíhliða varnarsamstarf hélt áfram með 2016-samningnum.",
-      "missing_context": null,
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að Bandaríkin og Ísland undirrituðu tvíhliða varnarsamning 1951 þar sem Bandaríkin tóku á sig ábyrgð á vörnum Íslands (<a href=\"https://avalon.law.yale.edu/20th_century/ice001.asp\" title=\"Avalon Project, Yale Law Library — Defense of Iceland: Agreement Between the United States and the Republic of Iceland, May 5, 1951; Government of Iceland — Iceland and the US: Bilateral Relations\" target=\"_blank\" rel=\"noopener\">SOV-HIST-002</a>). Ísland er stofnaðili að NATO og á enga herlið. Bandaríkin höfðu varanlega herstöð í Keflavík til 2006. Hins vegar sýna heimildir einnig að hernaðarviðveru Bandaríkjanna lauk 2006, þótt varnarsamningurinn sé enn í gildi (<a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"1951 US-Iceland Defence Agreement; 2016 Iceland-US Security Cooperation Agreement; US Department of State bilateral relations factsheet\" target=\"_blank\" rel=\"noopener\">SOV-DATA-008</a>). NATO-lofthernaðareftirlit á Keflavíkurflugvelli er á snúningskerfi meðal NATO-ríkja, ekki eingöngu bandarískt (<a href=\"https://www.eeas.europa.eu/eeas/strategic-compass-security-and-defence-1_en\" title=\"EU Strategic Compass for Security and Defence (March 2022); NATO Allied Air Command — Icelandic Air Policing; IISS Strategic Survey 2023\" target=\"_blank\" rel=\"noopener\">SOV-HIST-003</a>). Fullyrðingin er rétt í grófum dráttum en einfaldar varnarfyrirkomulagið.",
+      "missing_context": "Bandaríkin lokuðu flugherstöðinni í Keflavík 2006 og viðhaldslaust hernaðarnávist er ekki lengur til staðar — aðeins reglubundnar sendingar. Varnir Íslands byggjast á NATO-samstarfi (hóp ríkja) frekar en eingöngu á Bandaríkjunum, þótt tvíhliða samningurinn frá 1951 sé enn í gildi. Ísland undirritaði einnig öryggis- og varnarsamstarf við ESB í mars 2026 (<a href=\"https://www.eeas.europa.eu/eeas/eu-iceland-joint-press-release-signature-security-and-defence-partnership_en\" title=\"EEAS Joint Press Release\" target=\"_blank\" rel=\"noopener\">SOV-DATA-025</a>), sem sýnir fjölbreyttari öryggisfyrirkomulag en fullyrðingin gefur til kynna.",
       "supporting_evidence": [
         {
           "id": "SOV-HIST-002",
@@ -862,7 +836,7 @@
       "title": "INNLIMUNARSINNA SVARAÐ (Endurbirt blogg frá 22.8.2025)",
       "source": "Blog.is",
       "date": "2026-03-17",
-      "claim_count": 27,
+      "claim_count": 26,
       "attribution_types": [
         "paraphrased"
       ]

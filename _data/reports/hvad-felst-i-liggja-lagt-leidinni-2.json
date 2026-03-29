@@ -14,7 +14,9 @@
     "supported": 3,
     "unverifiable": 1
   },
-  "epistemic_counts": null,
+  "epistemic_counts": {
+    "prediction": 1
+  },
   "claim_count": 11,
   "dominant_category": "sovereignty",
   "categories": [
@@ -223,29 +225,19 @@
         "category": "trade",
         "claim_type": "legal_assertion",
         "confidence": 0.9,
-        "epistemic_type": "factual"
+        "epistemic_type": "prediction"
       },
       "verdict": "supported",
-      "explanation": "Sem aðili að tollabandalagi ESB myndi Ísland njóta sameiginlegrar viðskiptastefnu bandalagsins, þar sem tollar á eitt aðildarríki jafngilda tollum á öll (<a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a>, <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf\" title=\"EEA Agreement — Protocol 3 on trade in processed agricultural products\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-002</a>). Þetta er réttarstaða sem leiðir beint af 28. og 207. grein TFEU. Noregur, sem stendur utan tollabandalagsins, stendur frammi fyrir tolla-aðgerðum Bandaríkjanna eitt og sér — dæmi sem undirstrikar muninn (<a href=\"https://www.reuters.com/world/europe/norway-tariffs-trump-2025/\" title=\"Reuters, NRK, Financial Times — viðskipti Noregs og Bandaríkjanna 2025–2026\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-027</a>).",
+      "explanation": "<a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf\" title=\"EEA Agreement — Protocol 3 on trade in processed agricultural products\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-002</a> staðfestir að ESB-aðild myndi færa Ísland í tollabandalagið, sem þýðir sameiginlegan utanríkistoll. Þar af leiðandi gæti ekkert ríki lagt sérstaka tolla á Ísland án þess að leggja þá á allt ESB — þetta er grundvallareinkenni tollabandalags. Rökfræðilega er fullyrðingin rétt sem lýsing á tollabandalagi.",
       "supporting_evidence": [
-        {
-          "id": "SOV-LEGAL-032",
-          "source_name": "TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview",
-          "source_url": "https://www.efta.int/free-trade/free-trade-agreements"
-        },
         {
           "id": "TRADE-DATA-002",
           "source_name": "EEA Agreement — Protocol 3 on trade in processed agricultural products",
           "source_url": "https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf"
-        },
-        {
-          "id": "TRADE-DATA-027",
-          "source_name": "Reuters, NRK, Financial Times — viðskipti Noregs og Bandaríkjanna 2025–2026",
-          "source_url": "https://www.reuters.com/world/europe/norway-tariffs-trump-2025/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Ísland nýtur þegar umtalsverðrar viðskiptaverndar í gegnum EES-samninginn. Auk þess gætu innbyrðis ágreiningur og hagsmunaskipti ESB-ríkja leitt til þess að ESB samþykki viðskiptasamninga sem henta stórum aðildarríkjum betur en litlum — Ísland yrði eitt af 28+ ríkjum sem hafa áhrif á viðskiptastefnu (<a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a>).",
+      "missing_context": "Ísland hefur þegar víðtækan tollfríðan markaðsaðgang gegnum EES-samninginn (nema sjávarafurðir og landbúnaðarvörur). Viðbótarvernd tollabandalagsins skiptir aðallega máli í tollastríðsaðstæðum eins og lýst er í samhengi fullyrðingarinnar.",
       "confidence": 0.85,
       "speakers": [
         {
@@ -270,7 +262,7 @@
         "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> staðfestir að stjórnarandstaðan hefur kvartað yfir því að utanríkisráðherra mætti ekki á umbeðinn fund utanríkismálanefndar til að ræða þingsályktunartillöguna um þjóðaratkvæðagreiðsluna. Sigmundur Davíð Gunnlaugsson sakaði ríkisstjórnina um «baktjaldamakk» og sagði upplýsingar hafa birst fyrst í erlendum fjölmiðlum (<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T182328.html\" title=\"Alþingi — Sigmundur Davíð Gunnlaugsson, þingmaður Miðflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-002</a>). Þó fjalla þessar heimildir um þingsályktunartillöguna og ESB-viðræður almennt, en engin heimild fjallar sérstaklega um hvort utanríkisráðherra hafi upplýst nefndina um viðræður Húss atvinnulífsins.",
+      "explanation": "<a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> staðfestir að stjórnarandstaðan hefur kvartað yfir því að utanríkisráðherra sinnti ekki fundarbeiðni utanríkismálanefndar um ESB-málefni. <a href=\"https://www.althingi.is/lagas/nuna/1991055.html\" title=\"Lög um þingsköp Alþingis nr. 55/1991; Alþingi official website\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-019</a> staðfestir skyldu ríkisstjórnar til að bera «meiri háttar utanríkismál» undir nefndina. Viðræður Húss atvinnulífsins við Bandaríkin eru hins vegar ekki nefndar í neinum heimild, svo ekki er hægt að staðfesta hvort þessi tiltekin upplýsingagjöf hafi átt sér stað eða ekki.",
       "supporting_evidence": [
         {
           "id": "SOV-PARL-005",
@@ -278,14 +270,14 @@
           "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
         },
         {
-          "id": "SOV-PARL-002",
-          "source_name": "Alþingi — Sigmundur Davíð Gunnlaugsson, þingmaður Miðflokksins (ræða, 157. löggjafarþing)",
-          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T182328.html"
+          "id": "SOV-LEGAL-019",
+          "source_name": "Lög um þingsköp Alþingis nr. 55/1991; Alþingi official website",
+          "source_url": "https://www.althingi.is/lagas/nuna/1991055.html"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Heimildir fjalla um upplýsingaskort varðandi ESB-þjóðaratkvæðagreiðsluna, ekki sérstaklega um viðræður Húss atvinnulífsins um raforkusölu. Fullyrðingin blandar saman tveimur ólíkum málum — almennri gagnrýni á upplýsingagjöf ráðherra og tilteknum viðræðum sem ekki er fjallað um í staðreyndagrunni.",
-      "confidence": 0.4,
+      "missing_context": "Fullyrðingin blandar saman tveimur atriðum: almennri gagnrýni á upplýsingagjöf utanríkisráðherra og sérstökum viðræðum Húss atvinnulífsins. Fyrra atriðið er vel stutt; seinna atriðið er ósannreynt.",
+      "confidence": 0.45,
       "speakers": [
         {
           "name": null,

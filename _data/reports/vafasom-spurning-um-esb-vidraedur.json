@@ -10,8 +10,8 @@
   "summary": "Greindar 11 fullyrðingar. Niðurstöður: 5 stutt af heimildum, 3 stutt að hluta, 2 villandi, 1 ekki hægt að sannreyna. Sjónarhorn: hallar á ESB-neikvæða hlið. Heildstæðni: 27%.",
   "capsule": "Aðildarviðræður Íslands við ESB voru stöðvaðar árið 2013 og íslensk stjórnvöld lýstu því yfir 2015 að Ísland teldi sig ekki lengur umsóknarríki — báðar þessar staðreyndir eru réttar. Áhugavert samhengi sem auðgar myndina: Framkvæmdastjórn ESB lýsti í mars 2026 yfir því að umsókn Íslands frá 2009 sé enn formlega gild að hennar mati, sem þýðir að hvort viðræður yrðu «nýjar» eða «framhald» er í raun lögfræðilega umdeilt. Þjóðaratkvæðagreiðslan 29. ágúst er ráðgefandi — Alþingi er ekki lagalega bundið af niðurstöðunni.",
   "verdict_counts": {
-    "supported": 5,
-    "misleading": 2,
+    "supported": 4,
+    "misleading": 3,
     "partially_supported": 3
   },
   "epistemic_counts": null,
@@ -71,28 +71,18 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a> staðfestir að utanríkisráðherra Gunnar Bragi Sveinsson sendi bréf til ESB 12. mars 2015, þar sem hann tilkynnti að Ísland ætti ekki lengur að teljast umsóknarríki. Fullyrðingin endurspeglar þetta réttilega. <a href=\"https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/\" title=\"Althingi — Historical records; European Commission accession records\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-010</a> og <a href=\"https://neighbourhood-enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland Accession Progress Reports; Icelandic Ministry of Foreign Affairs\" target=\"_blank\" rel=\"noopener\">SOV-DATA-023</a> styðja einnig þennan atburðarás.",
-      "supporting_evidence": [
+      "verdict": "misleading",
+      "explanation": "<a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a> sýnir að réttarstaða umsóknarinnar er umdeild. Framkvæmdastjórn ESB lýsti því yfir að bréf Gunnars Braga Sveinssonar frá mars 2015 fæli ekki í sér formlega afturköllun. Í mars 2026 staðfesti Framkvæmdastjórnin enn fremur að umsóknin frá 2009 væri enn gild. Fullyrðingin gefur í skyn að ESB hafi samþykkt afturköllunina — en heimildir benda til hins gagnstæða.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [
         {
           "id": "PARTY-DATA-011",
           "source_name": "Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews",
           "source_url": "https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/"
-        },
-        {
-          "id": "POLITICAL-DATA-010",
-          "source_name": "Althingi — Historical records; European Commission accession records",
-          "source_url": "https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/"
-        },
-        {
-          "id": "SOV-DATA-023",
-          "source_name": "European Commission — Iceland Accession Progress Reports; Icelandic Ministry of Foreign Affairs",
-          "source_url": "https://neighbourhood-enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Ákvörðunin var tekin einhliða af utanríkisráðherra án samþykkis Alþingis — frumvarp um formlega afturköllun náði ekki fram að ganga á þingi. ESB viðurkenndi aldrei formlega afturköllunina og Framkvæmdastjórnin hefur lýst því yfir að umsóknin frá 2009 sé enn í gildi.",
-      "confidence": 0.92,
+      "missing_context": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland accession progress reports\" target=\"_blank\" rel=\"noopener\">PREC-HIST-004</a> bendir á að viðræður hafi verið frystar en engin formleg afturköllun samþykkt af ESB. Lagaleg staða umsóknarinnar er flókin: Ísland segist hafa dregið hana til baka, ESB segir hana enn gilda. Fullyrðingin gefur aðeins aðra hlið þessa ágreinings.",
+      "confidence": 0.8075,
       "speakers": [
         {
           "name": "Íslensk stjórnvöld",
@@ -243,32 +233,27 @@
         "epistemic_type": "factual"
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir orðrétt að spurningin sé «Á að halda áfram viðræðum um aðild Íslands að Evrópusambandinu?» og að hún hafi verið lögð fram af utanríkisráðherra 9. mars 2026. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> staðfestir dagsetninguna 29. ágúst 2026 og að þjóðaratkvæðagreiðslan snúist um áframhaldandi viðræður, ekki beina aðild.",
+      "explanation": "Dagsetningin 29. ágúst 2026 er staðfest af fjölmörgum heimildum. <a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> lýsir ákvörðun ríkisstjórnarinnar um þjóðaratkvæðagreiðsluna og <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-017</a> og <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup hf. — Þjóðarpúls; Vísir\" target=\"_blank\" rel=\"noopener\">POLL-DATA-020</a> fjalla um hana sem fyrirhugað atburðarás. Yfirgnæfandi meirihluti heimildamata (22 af 25) úrskurðar fullyrðinguna sem studda, og dagsetningin er samhljóða í öllum greiningum.",
       "supporting_evidence": [
         {
-          "id": "SOV-PARL-001",
-          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
-          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+          "id": "POLL-DATA-017",
+          "source_name": "Gallup Iceland / Þjóðarpúls",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
         },
         {
-          "id": "SOV-DATA-006",
-          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
-          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+          "id": "POLL-DATA-020",
+          "source_name": "Gallup hf. — Þjóðarpúls; Vísir",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
         },
         {
-          "id": "SOV-PARL-004",
-          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir (flutningsræða, 154. löggjafarþing); Logi Einarsson (flutningsræða, 153. löggjafarþing)",
-          "source_url": "https://www.althingi.is/altext/raeda/154/rad20230919T175556.html"
-        },
-        {
-          "id": "SOV-LEGAL-026",
-          "source_name": "Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland), Articles 26, 65, 79; Althingi records on 2012 referendum follow-up",
-          "source_url": "https://www.althingi.is/lagas/nuna/1944033.html"
+          "id": "POLL-DATA-014",
+          "source_name": "Gallup Ísland — Þjóðarpúls, February–March 2026",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Þjóðaratkvæðagreiðslan er ráðgefandi (advisory), ekki bindandi samkvæmt íslenskum stjórnskipunarrétti. Mikilvægt er einnig að greina á milli stuðnings við áframhaldandi viðræður og stuðnings við ESB-aðild — könnun Gallup sýnir um 10 prósentustiga bil á milli þessara tveggja.",
-      "confidence": 0.97,
+      "missing_context": "Þingsályktunartillaga þarf formlegt samþykki Alþingis til að atkvæðagreiðslan fari fram. Einnig er vert að greina á milli viðfangsefnis kosningarinnar — sumar heimildir tala um «áframhald viðræðna» en aðrar um «ESB-aðild» sem eru ólík spursmál.",
+      "confidence": 0.95,
       "speakers": [
         {
           "name": "Óþekktur höfundur",
@@ -380,28 +365,17 @@
         "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a> staðfestir að utanríkisráðherra Gunnar Bragi Sveinsson sendi bréfið 12. mars 2015 sem tilkynnti ESB að Ísland teldi sig ekki lengur umsóknarríki — sem bendir til þess að frumkvæðið hafi komið frá ráðuneytinu. Hins vegar er orðalagið «tekið af stækkunarlista» villandi: ESB viðurkenndi aldrei formlega afturköllunina og Framkvæmdastjórnin hefur lýst því yfir að umsóknin sé enn í gildi.",
+      "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland accession progress reports\" target=\"_blank\" rel=\"noopener\">PREC-HIST-004</a> staðfestir að Ísland dró umsókn sína formlega til baka í mars 2015, sem styður að opinber skjöl hafi verið til um ferlið. Fullyrðingin um að fréttatilkynningar utanríkisráðuneytisins innihaldi skjölin er sennileg í ljósi þess að ráðuneytið stóð að afturkölluninni, en staðreyndagrunnurinn inniheldur ekki beinar heimildir um þessar tilteknu fréttatilkynningar. Enginn grundvöllur er til að efast um fullyrðinguna, en hún er ekki staðfest beint.",
       "supporting_evidence": [
         {
-          "id": "PARTY-DATA-011",
-          "source_name": "Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews",
-          "source_url": "https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/"
-        },
-        {
-          "id": "SOV-DATA-023",
-          "source_name": "European Commission — Iceland Accession Progress Reports; Icelandic Ministry of Foreign Affairs",
-          "source_url": "https://neighbourhood-enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+          "id": "PREC-HIST-004",
+          "source_name": "European Commission — Iceland accession progress reports",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
         }
       ],
-      "contradicting_evidence": [
-        {
-          "id": "POLITICAL-DATA-010",
-          "source_name": "Althingi — Historical records; European Commission accession records",
-          "source_url": "https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/"
-        }
-      ],
-      "missing_context": "Ísland var ekki formlega tekið af umsóknarríkjalista ESB — ESB viðurkenndi aldrei afturköllunina. Frumvarp um formlega afturköllun féll á Alþingi og utanríkisráðherra fór fram hjá þinginu með einhliða bréfi. Fullyrðingin er rétt um frumkvæði ráðuneytisins, en orðalagið um að landið hafi verið «tekið af stækkunarlista» endurspeglar ekki lagalega stöðu málsins.",
-      "confidence": 0.8,
+      "contradicting_evidence": [],
+      "missing_context": "Fréttatilkynningar utanríkisráðuneytisins frá 2015 eru ekki beint aðgengilegar í staðreyndagrunninum. Staðfesting byggist á óbeinum vísbendingum um ferlið frekar en beinum tilvísunum í tilkynningarnar sjálfar.",
+      "confidence": 0.5,
       "speakers": [
         {
           "name": "Utanríkisráðuneytið",
@@ -485,7 +459,7 @@
       "attribution_type": "paraphrased",
       "claim_count": 2,
       "verdicts": {
-        "supported": 1,
+        "misleading": 1,
         "partially_supported": 1
       },
       "stance": "pro_eu",

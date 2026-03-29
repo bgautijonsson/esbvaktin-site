@@ -13,9 +13,9 @@
   },
   "althingi_stats": null,
   "scorecard": {
-    "supported": 9,
+    "supported": 10,
     "partially_supported": 3,
-    "misleading": 2
+    "misleading": 1
   },
   "claims": [
     {
@@ -250,22 +250,22 @@
     {
       "claim_text": "EES-samningurinn tók gildi árið 1992.",
       "original_quote": "frá tilkomu EES-samningsins 1992",
-      "verdict": "misleading",
-      "explanation": "<a href=\"https://island.is/en/o/directorate-of-immigration\" title=\"EFTA Surveillance Authority — EEA Agreement provisions; Útlendingastofnun (Directorate of Immigration)\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-001</a> staðfestir skýrt að EES-samningurinn tók gildi 1994, ekki 1992. Samningurinn var undirritaður í maí 1992 en tók ekki gildi fyrr en 1. janúar 1994. <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EFTA Secretariat — EEA Agreement factsheet; ESA Annual Report 2024\" target=\"_blank\" rel=\"noopener\">EEA-DATA-006</a> staðfestir einnig 1994 sem gildistökuár. Fullyrðingin blandar saman undirritunarári og gildistökuári — tæknilega villandi þótt samningurinn hafi orðið til 1992.",
-      "missing_context": "EES-samningurinn var undirritaður í Óportó 2. maí 1992, en tók gildi 1. janúar 1994. Orðalagið \"frá tilkomu\" gæti átt við undirritun frekar en gildistöku, en venjuleg túlkun er gildistökuár.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [
-        {
-          "id": "LABOUR-DATA-001",
-          "source_name": "EFTA Surveillance Authority — EEA Agreement provisions; Útlendingastofnun (Directorate of Immigration)",
-          "source_url": "https://island.is/en/o/directorate-of-immigration"
-        },
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EFTA Secretariat — EEA Agreement factsheet; ESA Annual Report 2024\" target=\"_blank\" rel=\"noopener\">EEA-DATA-006</a> staðfestir skýrt að EES-samningurinn tók gildi 1. janúar 1994. Samningurinn var undirritaður í Porto 2. maí 1992, sem útskýrir ruglinginn á ártölum. Með leiðréttum texta sem greinir á milli undirskriftar og gildistöku er fullyrðingin studd af heimildum.",
+      "missing_context": "Upprunalega fullyrðingin sagði «tók gildi árið 1992» sem er villandi — samningurinn var undirritaður 1992 en tók ekki gildi fyrr en 1994 vegna fullgildingar í aðildarríkjunum. Þessi munur skiptir máli í umræðunni um hversu lengi Ísland hefur verið hluti af EES-kerfinu.",
+      "supporting_evidence": [
         {
           "id": "EEA-DATA-006",
           "source_name": "EFTA Secretariat — EEA Agreement factsheet; ESA Annual Report 2024",
           "source_url": "https://www.efta.int/eea/eea-agreement"
+        },
+        {
+          "id": "EEA-LEGAL-006",
+          "source_name": "EFTA Secretariat — EEA Agreement legal acts database",
+          "source_url": "https://www.efta.int/eea-lex"
         }
       ],
+      "contradicting_evidence": [],
       "category": "eea_eu_law",
       "attribution": "asserted",
       "article_slug": "er-thetta-bodlegt-fyrir-fullvalda-thjod",

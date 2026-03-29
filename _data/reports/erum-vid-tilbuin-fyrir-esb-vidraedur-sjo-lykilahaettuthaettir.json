@@ -10,8 +10,8 @@
   "summary": "Greindar 15 fullyrðingar. Niðurstöður: 11 stutt að hluta, 4 stutt af heimildum. Sjónarhorn: hallar á ESB-neikvæða hlið. Heildstæðni: 30%.",
   "capsule": "Sameiginlega sjávarútvegsstefna ESB hefur þróast á ólíkan hátt en mörg gera ráð fyrir: kvótasamþjöppun er til staðar í mörgum ESB-löndum — Hollandi, Danmörku og á Spáni — og er því víðtækt fyrirbæri í fiskiðnaði, ekki sérstaklega íslenskt vandamál. Greinin fær rétt að veiðiréttindin séu eignfærð hjá kvótaleyfishöfum og að þetta hafi samningslegar afleiðingar — heimildir staðfesta að samningsstaðan nær að þjóðarréttarlegu umboði en ekki eignarréttarlegu. Áhugavert er að bera þetta saman við reynslu annarra fiskveiðiþjóða innan ESB, þar sem sambærileg kerfi hafa verið hluti af samningaviðræðunum.",
   "verdict_counts": {
-    "partially_supported": 11,
-    "supported": 4
+    "partially_supported": 12,
+    "supported": 3
   },
   "epistemic_counts": {
     "prediction": 2
@@ -326,18 +326,18 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.responsiblefisheries.is/seafood-industry/fisheries-management/\" title=\"Icelandic Fisheries Management Act + Supreme Court Jurisprudence\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-008</a> staðfestir þetta beint: «The Supreme Court has confirmed that fishing resources around Iceland are the common property of the Icelandic nation.» Heimildin vísar í lög um stjórn fiskveiða sem segja beinlínis að kvótar séu ekki eignarréttur. Þetta er vel þekkt lagaákvæði (1. grein laga nr. 116/2006). Fyrra mat (partially_supported) byggðist á því að engin heimild vitnaði beint í lagaákvæðið, en <a href=\"https://www.responsiblefisheries.is/seafood-industry/fisheries-management/\" title=\"Icelandic Fisheries Management Act + Supreme Court Jurisprudence\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-008</a> gerir einmitt það — bæði með tilvísun í lögin og dóm Hæstaréttar.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin segir að fiskauðlindin sé sameign þjóðarinnar samkvæmt lögum. Engin heimild í safninu vitnar beint í íslensk lög um sameign þjóðarinnar á fiskauðlindinni (1. grein laga nr. 116/2006 um stjórn fiskveiða). <a href=\"https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf\" title=\"Icelandic Act on the Exclusive Economic Zone No. 41/1979\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-002</a> staðfestir fullveldisrétt Íslands yfir auðlindum efnahagslögsögunnar samkvæmt UNCLOS og íslenskum lögum, sem er skylt hugtak en ekki sama yfirlýsingin. Heimildir fjalla frekar um sameiginlegu sjávarútvegsstefnuna og kvótakerfi en ekki beint um lagaákvæðið um sameign þjóðarinnar.",
       "supporting_evidence": [
         {
-          "id": "FISH-LEGAL-008",
-          "source_name": "Icelandic Fisheries Management Act + Supreme Court Jurisprudence",
-          "source_url": "https://www.responsiblefisheries.is/seafood-industry/fisheries-management/"
+          "id": "FISH-LEGAL-002",
+          "source_name": "Icelandic Act on the Exclusive Economic Zone No. 41/1979",
+          "source_url": "https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Þótt fiskimiðin séu formlega sameign þjóðarinnar hafa kvótahafar stjórnarskrárvarin atvinnuréttindi sem takmarka möguleika ríkisins til að endurúthluta kvóta. Spenna ríkir á milli formlegrar sameignar og raunverulegra réttinda kvótahafa — <a href=\"https://www.responsiblefisheries.is/seafood-industry/fisheries-management/\" title=\"Icelandic Fisheries Management Act + Supreme Court Jurisprudence\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-008</a> bendir á að kvótar séu «used as loan collateral, subject to inheritance tax, and treated as property in divorce proceedings». Huginn-málið (2025) undirstrikaði þessa spennu frekar.",
-      "confidence": 0.92,
+      "missing_context": "Heimildir í staðreyndagrunni vitna ekki beint í ákvæði íslenskra laga um að fiskauðlindin sé sameign þjóðarinnar. Þetta er vel þekkt lagaákvæði (1. gr. laga nr. 116/2006) en staðfesting byggir á almennri vitneskju frekar en heimild úr gagnagrunni. Fullveldisréttur yfir efnahagslögsögu (<a href=\"https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf\" title=\"Icelandic Act on the Exclusive Economic Zone No. 41/1979\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-002</a>) er skylt hugtak en ekki sama yfirlýsingin.",
+      "confidence": 0.57,
       "speakers": [
         {
           "name": "Sigurður Sigurðsson",
@@ -736,8 +736,8 @@
       "attribution_type": "asserted",
       "claim_count": 15,
       "verdicts": {
-        "partially_supported": 11,
-        "supported": 4
+        "partially_supported": 12,
+        "supported": 3
       },
       "stance": "anti_eu",
       "slug": "sigurdur-sigurdsson",

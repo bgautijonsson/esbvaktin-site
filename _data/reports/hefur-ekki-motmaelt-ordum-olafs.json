@@ -10,12 +10,11 @@
   "summary": "Greindar 8 fullyrðingar. Niðurstöður: 4 stutt að hluta, 2 ekki hægt að sannreyna, 2 stutt af heimildum. Sjónarhorn: hallar á ESB-neikvæða hlið. Heildstæðni: 25%.",
   "capsule": "Þjóðaratkvæðagreiðslan um ESB-aðild er staðfest og á dagskrá í lok ágúst — þetta kemur fram í greininni og er studd heimildum. Áhugavert er þó að skoða nánar hvað stækkunarráðherra ESB, Marta Kos, sagði í raun: Samkvæmt skráðum gögnum lýsti hún yfir því að ESB myndi «gera sig fljótt við» á forgangsmálum Íslands — en eingöngu ef Íslendingar greiddu já-atkvæði. Þetta er grundvallarmunur á skilyrðisbundinni yfirlýsingu um framtíð og þeirri mynd sem sumir telja að sé að vera dregin upp — að viðræður séu nú þegar hafnar.",
   "verdict_counts": {
-    "partially_supported": 4,
-    "supported": 2,
-    "unverifiable": 1
+    "partially_supported": 5,
+    "supported": 2
   },
   "epistemic_counts": {
-    "prediction": 1
+    "prediction": 2
   },
   "claim_count": 7,
   "dominant_category": "sovereignty",
@@ -165,14 +164,36 @@
         "category": "sovereignty",
         "claim_type": "statistic",
         "confidence": 0.9,
-        "epistemic_type": "factual"
+        "epistemic_type": "prediction"
       },
-      "verdict": "unverifiable",
-      "explanation": "Staðreyndagrunnurinn inniheldur engar beinar heimildir um að Þorgerður Katrín hafi sagt þetta í erlendum miðlum. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> sýnir að hún sagði á Alþingi að viðræður gætu hafist «um áramótin» ef þjóðin samþykkti, en engin heimild vitnar í tímaramma um 12–18 mánuði. <a href=\"https://commission.europa.eu/about/organisation/college-commissioners/marta-kos_en\" title=\"European Commission — Commissioner Profile + New Union Post\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-015</a> nefnir «fast-track» í samhengi við Mörtu Kos, ekki utanríkisráðherra sjálfa.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "missing_context": "Til þess að meta þessa fullyrðingu þyrfti beint aðgengi að viðtölum utanríkisráðherra í erlendum fjölmiðlum þar sem 12–18 mánaða tímaramminn er nefndur. Slíkar heimildir eru ekki í staðreyndagrunni. Sögulegt samhengi: aðildarviðræður annarra ríkja hafa tekið árum saman — jafnvel löngu lengur en 18 mánuði.",
-      "confidence": 0.5,
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að Þorgerður Katrín hefur lagt fram tillögu um þjóðaratkvæðagreiðslu og talað um hraðar viðræður. Samkvæmt <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> sagði hún í flutningsræðu sinni á Alþingi að viðræður gætu hafist «um áramót» ef þjóðin samþykkti. Hins vegar talar <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — Steps towards joining; DG NEAR accession negotiation methodology\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-013</a> um að aðildarviðræður taki yfirleitt 5-10 ár, þótt Austurríki hafi lokið þeim á um þremur árum. Fullyrðingin segir viðræðum geti «lokið» á 18 mánuðum, en heimildir í staðreyndagrunni staðfesta ekki beinlínis yfirlýsingu í Politico-viðtalinu — aðeins sambærilegar yfirlýsingar á Alþingi.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        },
+        {
+          "id": "SOV-PARL-004",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir (flutningsræða, 154. löggjafarþing); Logi Einarsson (flutningsræða, 153. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/154/rad20230919T175556.html"
+        },
+        {
+          "id": "POLITICAL-DATA-004",
+          "source_name": "Althingi — Session 157; Viðreisn party platform",
+          "source_url": "https://www.althingi.is/thingmenn/thingflokkar/vidreisn/"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "EEA-LEGAL-013",
+          "source_name": "European Commission — Steps towards joining; DG NEAR accession negotiation methodology",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        }
+      ],
+      "missing_context": "Aðildarviðræður taka yfirleitt 5-10 ár samkvæmt <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — Steps towards joining; DG NEAR accession negotiation methodology\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-013</a>, þótt fordæmi séu fyrir styttri viðræðum (Austurríki ~3 ár). Tímaáætlun utanríkisráðherra er pólitískt mat, ekki formleg niðurstaða samtala við ESB. Heimildir staðreyndagrunns ná aðeins til Alþingisræðna, ekki Politico-viðtalsins sjálfs.",
+      "confidence": 0.5684396249999999,
       "speakers": [
         {
           "name": "Þorgerður Katrín Gunnarsdóttir",
@@ -235,17 +256,12 @@
         "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "Fullyrðingin er skoðun fyrrverandi forseta og heimildir staðfesta að hann hafi sett hana fram. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> og <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> sýna að þjóðaratkvæðagreiðsla er fyrirhuguð 29. ágúst og formlegar samningaviðræður hafa ekki verið opnaðar. Ríkisstjórnin hefur hins vegar átt samskipti við ESB — <a href=\"https://commission.europa.eu/about/organisation/college-commissioners/marta-kos_en\" title=\"European Commission — Commissioner Profile + New Union Post\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-015</a> staðfestir fund utanríkisráðherra og stækkunarráðherra, og <a href=\"https://www.eeas.europa.eu/eeas/eu-iceland-joint-press-release-signature-security-and-defence-partnership_en\" title=\"EEAS Joint Press Release\" target=\"_blank\" rel=\"noopener\">SOV-DATA-025</a> staðfestir undirritun öryggis- og varnarsamstarfssamnings. Andstöðuþingmenn hafa sett fram sambærilega gagnrýni: samkvæmt <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T182328.html\" title=\"Alþingi — Sigmundur Davíð Gunnlaugsson, þingmaður Miðflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-002</a> sakaði Sigmundur Davíð ríkisstjórnina um «baktjaldamakk», og Guðrún Hafsteinsdóttir (<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T175023.html\" title=\"Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-003</a>) gagnrýndi ferlið. Þó er verulegur munur á pólitískum samskiptum og formlegum aðildarviðræðum samkvæmt stækkunarferli ESB.",
+      "explanation": "Fullyrðingin endurspeglar skoðun Ólafs Ragnars og heimildir sýna samhengi sem skýrir hana. <a href=\"https://www.eeas.europa.eu/eeas/eu-iceland-joint-press-release-signature-security-and-defence-partnership_en\" title=\"EEAS Joint Press Release\" target=\"_blank\" rel=\"noopener\">SOV-DATA-025</a> staðfestir undirritun öryggis- og varnarsamnings í Brussel 18. mars og <a href=\"https://commission.europa.eu/about/organisation/college-commissioners/marta-kos_en\" title=\"European Commission — Commissioner Profile + New Union Post\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-015</a> greinir frá fundi Mörtu Kos við utanríkisráðherra þar sem rætt var um forgangsverkefni Íslands í aðildarviðræðum. Hins vegar leggur <a href=\"https://www.eeas.europa.eu/eeas/eu-iceland-joint-press-release-signature-security-and-defence-partnership_en\" title=\"EEAS Joint Press Release\" target=\"_blank\" rel=\"noopener\">SOV-DATA-025</a> áherslu á að samningurinn sé «ekki hluti af aðildarferlinu» og <a href=\"https://commission.europa.eu/about/organisation/college-commissioners/marta-kos_en\" title=\"European Commission — Commissioner Profile + New Union Post\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-015</a> bendir á að yfirlýsingar Kos séu pólitísk merki en ekki formlegar aðildarviðræður. Ólafur Ragnar túlkar umfang samskiptanna sem viðræður — en formleg skilgreining á aðildarviðræðum styður það ekki.",
       "supporting_evidence": [
         {
-          "id": "SOV-PARL-001",
-          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
-          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
-        },
-        {
-          "id": "SOV-DATA-006",
-          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
-          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+          "id": "SOV-DATA-025",
+          "source_name": "EEAS Joint Press Release",
+          "source_url": "https://www.eeas.europa.eu/eeas/eu-iceland-joint-press-release-signature-security-and-defence-partnership_en"
         },
         {
           "id": "POLITICAL-DATA-015",
@@ -253,19 +269,9 @@
           "source_url": "https://commission.europa.eu/about/organisation/college-commissioners/marta-kos_en"
         },
         {
-          "id": "SOV-DATA-025",
-          "source_name": "EEAS Joint Press Release",
-          "source_url": "https://www.eeas.europa.eu/eeas/eu-iceland-joint-press-release-signature-security-and-defence-partnership_en"
-        },
-        {
-          "id": "SOV-PARL-002",
-          "source_name": "Alþingi — Sigmundur Davíð Gunnlaugsson, þingmaður Miðflokksins (ræða, 157. löggjafarþing)",
-          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T182328.html"
-        },
-        {
-          "id": "SOV-PARL-003",
-          "source_name": "Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)",
-          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T175023.html"
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
         }
       ],
       "contradicting_evidence": [
@@ -273,15 +279,10 @@
           "id": "SOV-DATA-006",
           "source_name": "Government of Iceland announcement; Althingi parliamentary records",
           "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
-        },
-        {
-          "id": "SOV-PARL-001",
-          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
-          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
         }
       ],
-      "missing_context": "Ólafur Ragnar notar orðið «viðræður» í víðu pólitísku samhengi. Formlegar aðildarviðræður hafa ekki hafist — slíkt krefst opnunar samningakafla. Ríkisstjórnin hefur átt ýmis samskipti við ESB (fundur Kos, öryggissamstarfssamningur) sem eru ekki hluti af aðildarvegferð. Fullyrðingin blandar saman þessu tvennu og ber að meta sem pólitíska skoðun fremur en staðreyndalýsingu.",
-      "confidence": 0.75,
+      "missing_context": "Greinarmunurinn á pólitískum undirbúningsviðræðum og formlegum aðildarviðræðum skiptir máli. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> staðfestir að þjóðaratkvæðagreiðslan snýst um hvort hefja eigi viðræður — sem gefur til kynna að þær hafi ekki formlega hafist. Ólafur Ragnar vísar líklega til þess að efnisleg umræða um aðildarskilmála fari þegar fram á pólitísku stigi, sem er túlkunaratriði fremur en staðreynd.",
+      "confidence": 0.7,
       "speakers": [
         {
           "name": "Ólafur Ragnar Grímsson",
@@ -305,31 +306,26 @@
         "epistemic_type": "factual"
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> staðfestir að ríkisstjórnin ákvað að halda þjóðaratkvæðagreiðslu 29. ágúst 2026. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir dagsetninguna í þingsályktunartillögu utanríkisráðherra. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — Þjóðarpúls, February–March 2026\" target=\"_blank\" rel=\"noopener\">POLL-DATA-014</a> og <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-017</a> vísa einnig til atkvæðagreiðslunnar á þessari dagsetningu. Vert er þó að taka fram samkvæmt <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> að atkvæðagreiðslan snýst um hvort halda eigi áfram aðildarviðræðum, ekki um ESB-aðild beint.",
+      "explanation": "Dagsetningin 29. ágúst 2026 er staðfest af fjölmörgum heimildum. <a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> lýsir ákvörðun ríkisstjórnarinnar um þjóðaratkvæðagreiðsluna og <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-017</a> og <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup hf. — Þjóðarpúls; Vísir\" target=\"_blank\" rel=\"noopener\">POLL-DATA-020</a> fjalla um hana sem fyrirhugað atburðarás. Yfirgnæfandi meirihluti heimildamata (22 af 25) úrskurðar fullyrðinguna sem studda, og dagsetningin er samhljóða í öllum greiningum.",
       "supporting_evidence": [
         {
-          "id": "SOV-DATA-006",
-          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
-          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+          "id": "POLL-DATA-017",
+          "source_name": "Gallup Iceland / Þjóðarpúls",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
         },
         {
-          "id": "SOV-PARL-001",
-          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
-          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+          "id": "POLL-DATA-020",
+          "source_name": "Gallup hf. — Þjóðarpúls; Vísir",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
         },
         {
           "id": "POLL-DATA-014",
           "source_name": "Gallup Ísland — Þjóðarpúls, February–March 2026",
           "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
-        },
-        {
-          "id": "POLL-DATA-017",
-          "source_name": "Gallup Iceland / Þjóðarpúls",
-          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Spurningin sem lögð verður fyrir þjóðina er: «Á að halda áfram viðræðum um aðild Íslands að Evrópusambandinu?» — þ.e. um viðræður, ekki aðild beint. Þetta er ráðgefandi þjóðaratkvæðagreiðsla sem bindur Alþingi ekki lagalega. Dagsetningin 29. ágúst hefur sætt gagnrýni frá stjórnarandstöðunni (sbr. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T182328.html\" title=\"Alþingi — Sigmundur Davíð Gunnlaugsson, þingmaður Miðflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-002</a>) vegna þess hve seint er á sumarfrí.",
+      "missing_context": "Þingsályktunartillaga þarf formlegt samþykki Alþingis til að atkvæðagreiðslan fari fram. Einnig er vert að greina á milli viðfangsefnis kosningarinnar — sumar heimildir tala um «áframhald viðræðna» en aðrar um «ESB-aðild» sem eru ólík spursmál.",
       "confidence": 0.95,
       "speakers": []
     }
@@ -375,7 +371,7 @@
       "attribution_type": "paraphrased",
       "claim_count": 1,
       "verdicts": {
-        "unverifiable": 1
+        "partially_supported": 1
       },
       "stance": "pro_eu",
       "slug": "thorgerdur-katrin-gunnarsdottir",

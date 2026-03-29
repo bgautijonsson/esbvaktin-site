@@ -10,13 +10,13 @@
   "summary": "Greindar 15 fullyrðingar. Niðurstöður: 7 stutt að hluta, 5 stutt af heimildum, 3 ekki hægt að sannreyna. Sjónarhorn: hallar á ESB-jákvæða hlið. Heildstæðni: 25%.",
   "capsule": "Aðildarákvörðun Íslands í ESB er formlega milli Íslands og aðildarríkja Evrópusambandsins — Bandaríkin hafa ekkert lögformlegt vald til að stöðva eða samþykkja slíkt. Áhugavert er að 23 af 32 NATO-ríkjum eru jafnframt í ESB, sem þýðir að NATO-aðild Íslands myndi haldast óbreytt við hugsanlega inngöngu. Hvort pólitískar þrýstingsaðgerðir frá Bandaríkjunum gætu haft raunhæf áhrif á íslenska stefnumótun er spurning sem fróðlegt er að rekja í opinberum gögnum.",
   "verdict_counts": {
-    "supported": 5,
-    "partially_supported": 5,
+    "supported": 4,
+    "partially_supported": 6,
     "unverifiable": 2
   },
   "epistemic_counts": {
     "hearsay": 2,
-    "prediction": 2
+    "prediction": 3
   },
   "claim_count": 12,
   "dominant_category": "sovereignty",
@@ -340,38 +340,39 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "Margar heimildir staðfesta þetta skýrt. <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf\" title=\"EEA Agreement — Protocol 3 on trade in processed agricultural products\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-002</a> segir að Ísland hafi tollafrjálsan aðgang að innri markaði ESB fyrir flestar vörur í gegnum EES-samninginn. <a href=\"https://www.consilium.europa.eu/en/policies/eu-tariffs-explained/\" title=\"EU Council / European Commission Access2Markets\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-040</a> útskýrir að EES-EFTA-ríkin njóta tollafrjáls aðgangs fyrir iðnaðarvörur en séu ekki hluti af tollabandalagi ESB. <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> lýsir hinum fjórum frelsum sem EES-samningurinn nær yfir.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> og <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Article 1 and Protocol 47\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-003</a> staðfesta bæði að EES-samningurinn veitir aðgang að innri markaðinum og undanskilur sjávarútvegsstefnuna. <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf\" title=\"EEA Agreement — Protocol 3 on trade in processed agricultural products\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-002</a> staðfestir tollfrjálsan aðgang að mestu leyti. Fullyrðingin er í meginatriðum rétt en orðalagið «tryggir aðgang» án fyrirvara er of einfalt — aðgangurinn kemur á kostnað þess að Ísland innleiðir ESB-reglur án atkvæðisréttar (<a href=\"https://www.si.is/frettasafn/ees-samningurinn-mikilvaegasti-vidskiptasamningur-islands\" title=\"Samtök iðnaðarins (SI) — Position on EEA Limitations\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-006</a>).",
       "supporting_evidence": [
-        {
-          "id": "TRADE-DATA-002",
-          "source_name": "EEA Agreement — Protocol 3 on trade in processed agricultural products",
-          "source_url": "https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf"
-        },
-        {
-          "id": "TRADE-DATA-040",
-          "source_name": "EU Council / European Commission Access2Markets",
-          "source_url": "https://www.consilium.europa.eu/en/policies/eu-tariffs-explained/"
-        },
         {
           "id": "EEA-LEGAL-022",
           "source_name": "EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'",
           "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
         },
         {
-          "id": "LABOUR-DATA-001",
-          "source_name": "EFTA Surveillance Authority — EEA Agreement provisions; Útlendingastofnun (Directorate of Immigration)",
-          "source_url": "https://island.is/en/o/directorate-of-immigration"
+          "id": "EEA-LEGAL-003",
+          "source_name": "EEA Agreement, Article 1 and Protocol 47",
+          "source_url": "https://www.efta.int/eea/eea-agreement"
         },
+        {
+          "id": "TRADE-DATA-002",
+          "source_name": "EEA Agreement — Protocol 3 on trade in processed agricultural products",
+          "source_url": "https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf"
+        },
+        {
+          "id": "EEA-DATA-010",
+          "source_name": "EFTA Secretariat — The EEA Agreement; ESA Internal Market Scoreboard; EEA Joint Committee",
+          "source_url": "https://www.efta.int/eea/eea-agreement"
+        }
+      ],
+      "contradicting_evidence": [
         {
           "id": "TRADE-COMP-006",
           "source_name": "Samtök iðnaðarins (SI) — Position on EEA Limitations",
           "source_url": "https://www.si.is/frettasafn/ees-samningurinn-mikilvaegasti-vidskiptasamningur-islands"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "EES-samningurinn nær ekki til allra sviða innri markaðarins — landbúnaðarvörur eru að mestu undanskildar (<a href=\"https://www.legislation.gov.uk/eut/eea-agreement/article/19\" title=\"EEA Agreement Article 19; Icelandic Ministry for Foreign Affairs — EEA review documentation\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-008</a>) og sjávarafurðir hafa sérstök ákvæði (<a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf\" title=\"EEA Agreement — Protocol 3 on trade in processed agricultural products\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-002</a>). Þannig er aðgangurinn ekki fullkominn jafnvel að innri markaðinum heldur gildir fyrst og fremst um iðnaðarvörur, þjónustu, fjármagn og fólk.",
-      "confidence": 0.95,
+      "missing_context": "EES-samningurinn veitir ekki fullan aðgang — landbúnaðarvörur eru að mestu undanskildar og Ísland er utan viðskiptasamninga ESB við þriðju lönd (<a href=\"https://www.si.is/frettasafn/ees-samningurinn-mikilvaegasti-vidskiptasamningur-islands\" title=\"Samtök iðnaðarins (SI) — Position on EEA Limitations\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-006</a>). Ísland innleiðir yfir 13.000 ESB-lagagerðir án atkvæðisréttar um þær, sem sumir kalla «lýðræðishalla» EES-samstarfsins. Mörkin á milli EES og utan-EES eru ekki alltaf skýr (<a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Articles 8 and 17–26; Protocols 1 and 47\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-008</a>, fyrirvarar).",
+      "confidence": 0.741,
       "speakers": [
         {
           "name": "Ísland",
@@ -402,25 +403,15 @@
         "category": "fisheries",
         "claim_type": "legal_assertion",
         "confidence": 0.9,
-        "epistemic_type": "factual"
+        "epistemic_type": "prediction"
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/EN/legal-content/summary/iceland-external-relations-common-foreign-and-security-policy.html\" title=\"TEU, Title V — CFSP provisions; Icelandic Ministry for Foreign Affairs — Annual alignment reports\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-014</a> staðfestir að ESB-aðild myndi færa Ísland inn í sameiginlega utanríkis- og öryggisstefnu (CFSP) og sameiginlega öryggis- og varnarstefnu (CSDP). <a href=\"https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf\" title=\"Icelandic Act on the Exclusive Economic Zone No. 41/1979\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-002</a> staðfestir að efnahagslögsaga Íslands félli undir sameiginlega sjávarútvegsstefnu ESB. <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> lýsir bæði CFSP og sjávarútvegsstefnu sem sviðum sem EES-samningurinn nær ekki yfir en full aðild myndi ná til.",
+      "explanation": "Fullyrðingin er bein og rétt. <a href=\"https://eur-lex.europa.eu/EN/legal-content/summary/iceland-external-relations-common-foreign-and-security-policy.html\" title=\"TEU, Title V — CFSP provisions; Icelandic Ministry for Foreign Affairs — Annual alignment reports\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-014</a> staðfestir að ESB-aðild myndi færa Ísland inn í sameiginlegu utanríkis- og öryggisstefnuna (CFSP) og sameiginlega öryggis- og varnarstefnu (CSDP). <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M042\" title=\"Treaty on European Union, Article 42; NATO Treaty, Article 5\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-008</a> bendir á að 42. gr. sáttmálans um Evrópusambandið (TEU) segi fyrir um þessa stefnu. Þetta er grundvallarbreyting frá núverandi stöðu þar sem Ísland fylgir sjálfviljugt 70–80% af CFSP-yfirlýsingum ESB en er ekki skuldbundið.",
       "supporting_evidence": [
         {
           "id": "SOV-LEGAL-014",
           "source_name": "TEU, Title V — CFSP provisions; Icelandic Ministry for Foreign Affairs — Annual alignment reports",
           "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/iceland-external-relations-common-foreign-and-security-policy.html"
-        },
-        {
-          "id": "FISH-LEGAL-002",
-          "source_name": "Icelandic Act on the Exclusive Economic Zone No. 41/1979",
-          "source_url": "https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf"
-        },
-        {
-          "id": "EEA-LEGAL-022",
-          "source_name": "EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'",
-          "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
         },
         {
           "id": "SOV-LEGAL-008",
@@ -431,11 +422,16 @@
           "id": "SOV-HIST-003",
           "source_name": "EU Strategic Compass for Security and Defence (March 2022); NATO Allied Air Command — Icelandic Air Policing; IISS Strategic Survey 2023",
           "source_url": "https://www.eeas.europa.eu/eeas/strategic-compass-security-and-defence-1_en"
+        },
+        {
+          "id": "SOV-DATA-025",
+          "source_name": "EEAS Joint Press Release",
+          "source_url": "https://www.eeas.europa.eu/eeas/eu-iceland-joint-press-release-signature-security-and-defence-partnership_en"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Ýmis svið CFSP og CSDP eru valfrjáls — ákvarðanir í utanríkisstefnu krefjast samhljóða samþykkis í ráðinu og ESB-aðildarríki eins og Írland og Austurríki sýna að hernaðarleg hlutleysi samrýmist aðild (<a href=\"https://eur-lex.europa.eu/EN/legal-content/summary/iceland-external-relations-common-foreign-and-security-policy.html\" title=\"TEU, Title V — CFSP provisions; Icelandic Ministry for Foreign Affairs — Annual alignment reports\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-014</a>, <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M042\" title=\"Treaty on European Union, Article 42; NATO Treaty, Article 5\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-008</a>). Þá yrðu aðildarviðræður um sjávarútveg erfiðar og gætu leitt til aðlögunartímabila (<a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a>).",
-      "confidence": 0.95,
+      "missing_context": "Ákvarðanir um utanríkis- og öryggisstefnu ESB krefjast samhljóða samþykkis í ráðinu, þannig að Ísland gæti beitt neitunarvaldi gegn hvaða afstöðu sem er. Varnarstefna ESB er sjálfboðaliðavinna — Írland, Austurríki og Malta sýna að herleysi eða hlutleysi er samrýmanlegt aðild. Ísland tekur nú þegar þátt í öryggissamstarfi við ESB, m.a. með undirritun samstarfsyfirlýsingar í mars 2026 (<a href=\"https://www.eeas.europa.eu/eeas/eu-iceland-joint-press-release-signature-security-and-defence-partnership_en\" title=\"EEAS Joint Press Release\" target=\"_blank\" rel=\"noopener\">SOV-DATA-025</a>).",
+      "confidence": 0.93,
       "speakers": [
         {
           "name": "Óþekkt bloggari",
