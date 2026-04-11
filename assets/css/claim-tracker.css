@@ -138,14 +138,27 @@
 .ct-confidence-label {
   font-size: 0.65rem;
 }
-.ct-first-assessment {
+.ct-maturity {
   display: inline-block;
   padding: 0.05rem 0.3rem;
-  border: 1px dashed var(--clr-muted, #999);
   border-radius: var(--radius-sm);
   font-size: 0.6rem;
-  color: var(--clr-muted, #999);
   white-space: nowrap;
+}
+
+.ct-maturity--first_assessment {
+  border: 1px dashed var(--clr-muted, #999);
+  color: var(--clr-muted, #999);
+}
+
+.ct-maturity--corroborated {
+  border: 1px solid var(--v-supported, #4a7c59);
+  color: var(--v-supported, #4a7c59);
+}
+
+.ct-maturity--contested {
+  border: 1px solid var(--v-partial, #b8860b);
+  color: var(--v-partial, #b8860b);
 }
 
 /* ── Expand/collapse ─────────────────────────────────────────────── */

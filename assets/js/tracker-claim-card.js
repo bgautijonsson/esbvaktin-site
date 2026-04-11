@@ -280,9 +280,28 @@
           claim.sighting_count +
           "×</span>"
         : "";
-    var firstAssessmentBadge =
-      claim.sighting_count === 1
-        ? '<span class="ct-first-assessment" title="Einungis eitt mat á þessari fullyrðingu">Fyrsta mat</span>'
+    var maturity =
+      claim.maturity ||
+      (claim.sighting_count <= 1 ? "first_assessment" : "corroborated");
+    var maturityLabels = {
+      first_assessment: "Fyrsta mat",
+      corroborated: "Staðfest",
+      contested: "Umdeilanlegt",
+    };
+    var maturityTitles = {
+      first_assessment: "Einungis eitt mat á þessari fullyrðingu",
+      corroborated: "Fleiri en ein heimild styðja þetta mat",
+      contested: "Heimildir meta þessa fullyrðingu á mismunandi veg",
+    };
+    var maturityBadge =
+      maturity !== "corroborated" || claim.sighting_count >= 3
+        ? '<span class="ct-maturity ct-maturity--' +
+          maturity +
+          '" title="' +
+          escapeHtml(maturityTitles[maturity] || "") +
+          '">' +
+          escapeHtml(maturityLabels[maturity] || maturity) +
+          "</span>"
         : "";
 
     return (
@@ -311,7 +330,7 @@
       categoryLabel +
       "</span>" +
       sightingBadge +
-      firstAssessmentBadge +
+      maturityBadge +
       "</div>" +
       '<p class="ct-claim-text">' +
       escapeHtml(claim.canonical_text_is) +

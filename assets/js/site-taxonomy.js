@@ -163,6 +163,16 @@
       mixed: "Blandað/hlutlaus",
       insufficient_data: "Of fá gögn",
     },
+    maturityLabels: {
+      first_assessment: "Fyrsta mat",
+      corroborated: "Staðfest",
+      contested: "Umdeilanlegt",
+    },
+    maturityDescriptions: {
+      first_assessment: "Einungis eitt mat á þessari fullyrðingu",
+      corroborated: "Fleiri en ein heimild styðja þetta mat",
+      contested: "Heimildir meta þessa fullyrðingu á mismunandi veg",
+    },
     attributionLabels: {
       quoted: "Tilvitnað",
       asserted: "Fullyrt",
