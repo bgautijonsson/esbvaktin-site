@@ -7,15 +7,15 @@
   "party": "Viðreisn",
   "stance": "pro_eu",
   "stance_score": 1.0,
-  "credibility": 0.52,
+  "credibility": 0.48,
   "attribution_counts": {
     "asserted": 83
   },
   "althingi_stats": null,
   "scorecard": {
-    "supported": 14,
-    "unverifiable": 4,
-    "partially_supported": 29,
+    "supported": 9,
+    "unverifiable": 5,
+    "partially_supported": 33,
     "misleading": 13,
     "unsupported": 2
   },
@@ -24,10 +24,9 @@
       "claim_text": "Ísland sótti um aðild að Evrópusambandinu árið 2009.",
       "original_quote": "Ísland sótti um aðild að Evrópusambandinu árið 2009.",
       "verdict": "supported",
-      "explanation": "Heimildir EEA-DATA-009, <a href=\"https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/\" title=\"Althingi — Historical records; European Commission accession records\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-010</a> og <a href=\"https://uni.hi.is/baldurt/files/2012/08/Iceland-EU-Baldur-Alyson-Greham.pdf\" title=\"Capacent Gallup / Social Science Research Institute, University of Iceland\" target=\"_blank\" rel=\"noopener\">PREC-HIST-005</a> staðfesta allar að Ísland lagði inn formlega aðildarumsókn til Evrópusambandsins 16. júlí 2009. Aðildarviðræður hófust síðan í júlí 2010.",
-      "missing_context": "Aðildarviðræður hófust í júlí 2010, sem gæti skýrt þann rugling að sumir telja umsóknina hafa verið lögð inn 2010. Viðræðunum var frestað 2013 og umsóknin var formlega afturkölluð 2015, þótt lagaleg staða hennar sé umdeild.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [
+      "explanation": "EEA-DATA-009 staðfestir að Ísland lagði inn aðildarumsókn til ESB 16. júlí 2009 undir stjórn Jóhönnu Sigurðardóttur. Fleiri heimildir (<a href=\"https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/\" title=\"Althingi — Historical records; European Commission accession records\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-010</a>, <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application for membership of the European Union, SEC(2010) 153\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-020</a>) styðja þessa grundvallarstaðreynd. Engar andstæðar heimildir eru til staðar — þetta er óumdeild söguleg staðreynd.",
+      "missing_context": null,
+      "supporting_evidence": [
         {
           "id": "EEA-DATA-009",
           "source_name": "European Commission — Iceland: Accession negotiations status; Althingi records",
@@ -39,11 +38,12 @@
           "source_url": "https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/"
         },
         {
-          "id": "PREC-HIST-005",
-          "source_name": "Capacent Gallup / Social Science Research Institute, University of Iceland",
-          "source_url": "https://uni.hi.is/baldurt/files/2012/08/Iceland-EU-Baldur-Alyson-Greham.pdf"
+          "id": "EEA-LEGAL-020",
+          "source_name": "European Commission — Opinion on Iceland's application for membership of the European Union, SEC(2010) 153",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
         }
       ],
+      "contradicting_evidence": [],
       "category": "precedents",
       "attribution": "asserted",
       "article_slug": "thomas-moller-skrifar-verum-jakvaed-i-agust",
@@ -196,9 +196,14 @@
       "claim_text": "Ísland er meðal fremstu ríkja í heiminum í orkuvinnslu úr jarðhita.",
       "original_quote": "Evrópa getur lært af okkur hvernig er best að vinna orku úr iðrum jarðar.",
       "verdict": "supported",
-      "explanation": "<a href=\"https://orkustofnun.is/en/information/publication/energy_data\" title=\"Orkustofnun — Energy Statistics in Iceland 2023\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-001</a> og <a href=\"https://orkustofnun.is/\" title=\"Orkustofnun (National Energy Authority) — Energy Statistics 2024\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-005</a> staðfesta að um 30% af raforkuframleiðslu Íslands kemur frá jarðhita og u.þ.b. 90% heimila eru hituð með jarðvarma. Ísland er einstakt meðal Evrópuríkja hvað orkuvinnslu úr jarðhita varðar og telst án efa meðal fremstu ríkja heimsins á þessu sviði. Fullyrðingin er nákvæm og vel studd af gögnum Orkustofnunar.",
-      "missing_context": "Jarðhitaorkuvinnsla er ekki eina orkuauðlind Íslands — vatnsafl skilar um 70% af rafmagni. Þótt Ísland sé í fremstu röð í jarðhitanýtingu er u.þ.b. 15% af heildarorkuþörf landsins enn háð innfluttum jarðefnaeldsneyti, aðallega vegna samgangna og fiskiskipa.",
+      "explanation": "<a href=\"https://orkustofnun.is/en/information/numerical_data/heat\" title=\"Orkustofnun — Geothermal Development and Research in Iceland 2023\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-002</a> staðfestir að Ísland er fremst í heiminum í jarðhitanýtingu á mann — «world leader in per capita geothermal energy use». Uppsett afl er um 755 MW og jarðhiti veitir um 90% húshitunar. <a href=\"https://orkustofnun.is/en/information/publication/energy_data\" title=\"Orkustofnun — Energy Statistics in Iceland 2023\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-001</a> og <a href=\"https://orkustofnun.is/\" title=\"Orkustofnun (National Energy Authority) — Energy Statistics 2024\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-005</a> staðfesta sérstöðu Íslands á þessu sviði meðal Evrópuríkja. Fullyrðingin er efnislega rétt.",
+      "missing_context": "Ísland er fremst á mann fjölda en ekki endilega í heildarorkuvinnslu — Bandaríkin, Indónesía og Filippseyjar framleiða meira í heildarmagni. Jarðhitaauðlindir eru staðbundnar og sumir jarðhitareitir hafa sýnt þrýstingsminnkun eftir áratuga nýtingu.",
       "supporting_evidence": [
+        {
+          "id": "ENERGY-DATA-002",
+          "source_name": "Orkustofnun — Geothermal Development and Research in Iceland 2023",
+          "source_url": "https://orkustofnun.is/en/information/numerical_data/heat"
+        },
         {
           "id": "ENERGY-DATA-001",
           "source_name": "Orkustofnun — Energy Statistics in Iceland 2023",
@@ -263,19 +268,19 @@
     {
       "claim_text": "Evrópusambandið hefur 450 milljónir íbúa.",
       "original_quote": "ESB gerir þessa samninga í krafti stærðarhagkvæmni Evrópusambandsins með sína 450 milljónir íbúa og um 33 milljónir fyrirtækja.",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-002</a> og SOV-DATA-003 vísa bæði til heildaríbúafjölda ESB og nota tölur sem samrýmast um 450 milljónum. Ísland myndi bæta við sig um 390.000 íbúum, sem er hverfandi hlutfall — um 0,087% samkvæmt SOV-DATA-003. Talan 450 milljónir er réttur ákveðinn ávöl tala.",
-      "missing_context": null,
+      "verdict": "partially_supported",
+      "explanation": "Heimild <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> tilgreinir íbúafjölda ESB sem «approximately 450 million» og <a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-002</a> vísar til sama fjölda. Talan 450 milljónir er algeng ávölun en í raun rúmlega 447–449 milljónir (eftir Brexit). Fullyrðingin notar heiltöluna 450 milljónir sem nálgun, ekki nákvæma tölu. Heimildir staðfesta þetta sem sanngjarna nálgun en ekki nákvæma staðhæfingu.",
+      "missing_context": "Íbúafjöldi ESB (27 ríki) var um 448,4 milljónir árið 2024 samkvæmt Eurostat, og hefur farið lítillega minnkandi. Talan 450 milljónir er slétt nálgun sem er notuð bæði í heimildum og almennri umræðu.",
       "supporting_evidence": [
-        {
-          "id": "SOV-DATA-017",
-          "source_name": "Treaty on European Union, Article 16(4); European Parliament allocation rules",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016"
-        },
         {
           "id": "SOV-LEGAL-002",
           "source_name": "Treaty on European Union, Article 16(4)",
           "source_url": "https://eur-lex.europa.eu/summary/glossary/qualified_majority.html"
+        },
+        {
+          "id": "SOV-DATA-017",
+          "source_name": "Treaty on European Union, Article 16(4); European Parliament allocation rules",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016"
         }
       ],
       "contradicting_evidence": [],
@@ -524,21 +529,10 @@
     {
       "claim_text": "Alþingi samþykkti NATO-aðild Íslands árið 1949.",
       "original_quote": "1949 þegar Alþingi samþykkti aðildina að NATO",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://avalon.law.yale.edu/20th_century/ice001.asp\" title=\"Avalon Project, Yale Law Library — Defense of Iceland: Agreement Between the United States and the Republic of Iceland, May 5, 1951; Government of Iceland — Iceland and the US: Bilateral Relations\" target=\"_blank\" rel=\"noopener\">SOV-HIST-002</a> staðfestir að Ísland sé stofnaðili að NATO frá 1949. Þá staðfestir <a href=\"https://www.nato.int/en/about-us/official-texts-and-resources/strategic-concepts/nato-2022-strategic-concept\" title=\"NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list\" target=\"_blank\" rel=\"noopener\">SOV-DATA-009</a> að Ísland sé «founding NATO member». Fullyrðingin um samþykkt Alþingis er samrýmanleg þessum heimildum þótt þær nefni ekki Alþingi sérstaklega — stofnaðild krefðist samþykkis löggjafarvaldsins.",
-      "missing_context": "Heimildir staðfesta stofnaðild en taka ekki á því að samþykktin var mjög umdeild og leiddi til mótmæla á Austurvelli. NATO-aðildin var samþykkt í Alþingi 30. mars 1949.",
-      "supporting_evidence": [
-        {
-          "id": "SOV-HIST-002",
-          "source_name": "Avalon Project, Yale Law Library — Defense of Iceland: Agreement Between the United States and the Republic of Iceland, May 5, 1951; Government of Iceland — Iceland and the US: Bilateral Relations",
-          "source_url": "https://avalon.law.yale.edu/20th_century/ice001.asp"
-        },
-        {
-          "id": "SOV-DATA-009",
-          "source_name": "NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list",
-          "source_url": "https://www.nato.int/en/about-us/official-texts-and-resources/strategic-concepts/nato-2022-strategic-concept"
-        }
-      ],
+      "verdict": "unverifiable",
+      "explanation": "Engin heimild í þessum gagnagrunni staðfestir eða hafnar fullyrðingunni um að Alþingi hafi samþykkt NATO-aðild Íslands árið 1949. <a href=\"https://www.ssb.no/en/statbank/list/euvalg\" title=\"Norwegian Centre for Research Data — Election Archive\" target=\"_blank\" rel=\"noopener\">PREC-HIST-001</a> fjallar um norsku ESB-þjóðaratkvæðagreiðslurnar, <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L:2003:236:TOC\" title=\"European Commission — 2003 Act of Accession; Eurostat\" target=\"_blank\" rel=\"noopener\">PREC-HIST-020</a> um aðild Möltu að ESB og <a href=\"https://www.thedanishparliament.dk/en/eu-information-centre/the-danish-opt-outs-from-eu-cooperation\" title=\"Edinburgh Agreement (1992); Danish Ministry of Foreign Affairs — Denmark's EU opt-outs\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-010</a> um danskar undanþágur — engin þeirra nefnir NATO-aðild Íslands. Þótt fullyrðingin sé líklega rétt samkvæmt almennum sögufræðilegum heimildum er ekki hægt að staðfesta hana á grundvelli þeirra heimilda sem liggja fyrir.",
+      "missing_context": "Heimildir í þessum gagnagrunni fjalla um ESB- og EES-tengd efni en ekki NATO-sögu Íslands. Ísland gekk í NATO 30. mars 1949 og Alþingi samþykkti aðildina eftir umfangsmikla umræðu, en ekkert í fyrirliggjandi heimildum staðfestir þetta beint.",
+      "supporting_evidence": [],
       "contradicting_evidence": [],
       "category": "precedents",
       "attribution": "asserted",
@@ -777,7 +771,7 @@
       "original_quote": "bændur munu fá ríflegan stuðning frá ESB við jarðrækt og umhverfisverkefni",
       "verdict": "partially_supported",
       "explanation": "AGRI-LEGAL-001 staðfestir að sameiginleg landbúnaðarstefna ESB veiti beingreiðslur og stuðning við byggðaþróun og umhverfisverkefni. <a href=\"https://www.gov.ie/en/publication/76026-common-agricultural-policy-cap-post-2020/\" title=\"Department of Agriculture, Food and the Marine (Ireland) — CAP Strategic Plan 2023–2027; ACRES scheme documentation\" target=\"_blank\" rel=\"noopener\">PREC-DATA-015</a> sýnir írska ACRES-kerfið sem greiðir bændum fyrir mælanlegan umhverfisárangur. <a href=\"https://www.oecd.org/agriculture/topics/agricultural-policy-monitoring-and-evaluation/\" title=\"OECD Producer Support Estimate database — Iceland; Bændasamtök Íslands (Farmers Association) annual reports; European Commission CAP indicators\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-022</a> áætlar þó að Ísland gæti fengið 80–120 milljónir evra á ári, verulega minna en núverandi innlendur stuðningur. Orðalagið «ríflegan stuðning» er því of jákvætt.",
-      "missing_context": "Bændasamtök Íslands (ORG-DATA-002) hafa lýst verulegum áhyggjum af áhrifum ESB-aðildar. Íslenskur landbúnaður nýtur nú stuðnings sem nemur um 55% af brúttótekjum bænda (<a href=\"https://www.oecd.org/agriculture/topics/agricultural-policy-monitoring-and-evaluation/\" title=\"OECD — Agricultural Policy Monitoring and Evaluation 2024; Bændasamtök Íslands\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-004</a>) — mun meira en meðaltal ESB (19%). Aðild gæti falið í sér lægri stuðning og aukin samkeppni frá stærri evrópskum framleiðendum. Finnland og Svíþjóð fengu sérstaka norðlæga stuðning við inngöngu sína.",
+      "missing_context": "Bændasamtök Íslands (<a href=\"https://www.nutiminn.is/forsida/atvinnulifid-snyst-gegn-esb-vidraedum/\" title=\"Nútíminn / Félag atvinnurekenda\" target=\"_blank\" rel=\"noopener\">ORG-DATA-002</a>) hafa lýst verulegum áhyggjum af áhrifum ESB-aðildar. Íslenskur landbúnaður nýtur nú stuðnings sem nemur um 55% af brúttótekjum bænda (<a href=\"https://www.oecd.org/agriculture/topics/agricultural-policy-monitoring-and-evaluation/\" title=\"OECD — Agricultural Policy Monitoring and Evaluation 2024; Bændasamtök Íslands\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-004</a>) — mun meira en meðaltal ESB (19%). Aðild gæti falið í sér lægri stuðning og aukin samkeppni frá stærri evrópskum framleiðendum. Finnland og Svíþjóð fengu sérstaka norðlæga stuðning við inngöngu sína.",
       "supporting_evidence": [
         {
           "id": "AGRI-LEGAL-001",
@@ -798,8 +792,8 @@
         },
         {
           "id": "ORG-DATA-002",
-          "source_name": "ORG-DATA-002",
-          "source_url": null
+          "source_name": "Nútíminn / Félag atvinnurekenda",
+          "source_url": "https://www.nutiminn.is/forsida/atvinnulifid-snyst-gegn-esb-vidraedum/"
         }
       ],
       "category": "agriculture",
@@ -1408,24 +1402,24 @@
     {
       "claim_text": "Aðeins 156 dagar eru til þjóðaratkvæðagreiðslu um framhald ESB-aðildarviðræðna frá og með 25. mars 2026.",
       "original_quote": "enda eru í dag aðeins 156 dagar til þjóðaratkvæðagreiðslu um framhald viðræðna",
-      "verdict": "supported",
-      "explanation": "Dagsetningin 29. ágúst 2026 er staðfest af fjölmörgum heimildum. <a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> lýsir ákvörðun ríkisstjórnarinnar um þjóðaratkvæðagreiðsluna og <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-017</a> og <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup hf. — Þjóðarpúls; Vísir\" target=\"_blank\" rel=\"noopener\">POLL-DATA-020</a> fjalla um hana sem fyrirhugað atburðarás. Yfirgnæfandi meirihluti heimildamata (22 af 25) úrskurðar fullyrðinguna sem studda, og dagsetningin er samhljóða í öllum greiningum.",
-      "missing_context": "Þingsályktunartillaga þarf formlegt samþykki Alþingis til að atkvæðagreiðslan fari fram. Einnig er vert að greina á milli viðfangsefnis kosningarinnar — sumar heimildir tala um «áframhald viðræðna» en aðrar um «ESB-aðild» sem eru ólík spursmál.",
+      "verdict": "partially_supported",
+      "explanation": "Dagsetningin 29. ágúst 2026 er rétt staðfest af <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> og <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a>. Hins vegar er fullyrðingin um «áframhald aðildarviðræðna» aðeins ónákvæm. Spurningin sem lögð verður fyrir þjóðina er samkvæmt <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a>: «Á að halda áfram viðræðum um aðild Íslands að Evrópusambandinu?» — sem er víðtækari en «áframhald aðildarviðræðna» gefur til kynna. Auk þess er um ráðgefandi þjóðaratkvæðagreiðslu að ræða samkvæmt <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a>, en fullyrðingin nefnir ekki þennan mikilvæga fyrirvara.",
+      "missing_context": "Þjóðaratkvæðagreiðslan er ráðgefandi (ráðgefandi þjóðaratkvæðagreiðsla) en ekki bindandi — Alþingi er ekki skuldbundið af niðurstöðunni, þótt pólitísk hefð leggi þunga áherslu á virðingu fyrir vilja þjóðarinnar. Stjórnarandstaðan hefur gagnrýnt dagsetninguna sem of snemma og talið að nægileg umræða geti ekki átt sér stað yfir sumartímann. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-017</a> bendir á mikilvægan mun á stuðningi við þjóðaratkvæðagreiðsluna sjálfa (57%) og stuðningi við ESB-aðild (42%).",
       "supporting_evidence": [
         {
-          "id": "POLL-DATA-017",
-          "source_name": "Gallup Iceland / Þjóðarpúls",
-          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+          "id": "SOV-DATA-006",
+          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
         },
         {
-          "id": "POLL-DATA-020",
-          "source_name": "Gallup hf. — Þjóðarpúls; Vísir",
-          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
         },
         {
-          "id": "POLL-DATA-014",
-          "source_name": "Gallup Ísland — Þjóðarpúls, February–March 2026",
-          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+          "id": "SOV-INTL-001",
+          "source_name": "POLITICO Europe / Bloomberg / Government of Iceland",
+          "source_url": "https://www.politico.eu/article/iceland-eu-referendum-accession-talks/"
         }
       ],
       "contradicting_evidence": [],
@@ -1439,27 +1433,23 @@
     {
       "claim_text": "Nýjustu kannanir sýna að þjóðin skiptist í tvo nánast jafn stóra hópa, með og á móti ESB-aðild.",
       "original_quote": "Nýjustu kannanir sýna að þjóðin skiptist í tvo nánast jafn stóra hópa: með og á móti … já eða nei.",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — Þjóðarpúls, February–March 2026\" target=\"_blank\" rel=\"noopener\">POLL-DATA-014</a> staðfestir þetta beint: Gallup Þjóðarpúls (febrúar-mars 2026) sýndi 42% hlynnt ESB-aðild og 42% andvíg, með um 16% óákveðna. Þetta er í fullu samræmi við fullyrðinguna um tvö nánast jafn stór fylki. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — EU membership polling\" target=\"_blank\" rel=\"noopener\">POLL-DATA-001</a> styður einnig þróunina — stuðningur og andstaða eru nálægt jafnvægi.",
-      "missing_context": "Skiptingin 42/42 er innan skekkjumarka könnunarinnar. Mikilvægur munur er á stuðningi við «framhald viðræðna» (57%) og stuðningi við «ESB-aðild» (42%) — um 10% vilja semja en eru ekki skuldbundin til aðildar. Netpanelkannanir geta vanmetið eldri og dreifbýla kjósendur sem hafa tilhneigingu til að vera ESB-andvígari.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — Þjóðarpúls, February–March 2026\" target=\"_blank\" rel=\"noopener\">POLL-DATA-014</a> sýnir að í Þjóðarpúlsi Gallup (febrúar–mars 2026) voru 42% fylgjandi ESB-aðild og 42% á móti, með um 16% óákveðna — þetta styður kjarnann í fullyrðingunni um tvo nánast jafn stóra hópa. Hins vegar er orðalagið «nýjustu kannanir» of vítt þar sem aðrar kannanir (t.d. um framhald viðræðna) sýna skýrari meirihluta hlynntum — <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup hf. — Þjóðarpúls; Vísir\" target=\"_blank\" rel=\"noopener\">POLL-DATA-020</a> sýnir um 60% fylgjandi framhaldi viðræðna. Niðurstaðan veltur mjög á orðalagi spurningarinnar, eins og <a href=\"https://fel.hi.is/is/rannsoknir-spurningalistakannanir/netpanell\" title=\"Félagsvísindastofnun Háskóla Íslands — Rannsóknir á viðhorfum til Evrópumála; Gallup methodology notes\" target=\"_blank\" rel=\"noopener\">POLL-DATA-022</a> greinir frá: munur á stuðningi við «aðild» og «framhald viðræðna» er 8–12 prósentustig.",
+      "missing_context": "Könnunin um 42/42 skiptinguna er innan skekkjumarka. Munur á spurningunum «styðja aðild» og «styðja framhald viðræðna» er verulegur — um 10% kjósenda vilja semja en hafa ekki ákveðið sig um aðild. Netkannanir geta vanmetið eldri og dreifbýla kjósendur sem hneigðast meira í átt til ESB-efasemda. Kynjamunstur er einnig áberandi: 62% kvenna styðja framhald viðræðna á móti 52% karla.",
       "supporting_evidence": [
         {
           "id": "POLL-DATA-014",
           "source_name": "Gallup Ísland — Þjóðarpúls, February–March 2026",
           "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
-        },
-        {
-          "id": "POLL-DATA-001",
-          "source_name": "Gallup Ísland — EU membership polling",
-          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
-        },
-        {
-          "id": "POLL-DATA-002",
-          "source_name": "Félagsvísindastofnun Háskóla Íslands — Social Science Research Institute",
-          "source_url": "https://fel.hi.is/is/utgefid-efni/thjodmalakonnun"
         }
       ],
-      "contradicting_evidence": [],
+      "contradicting_evidence": [
+        {
+          "id": "POLL-DATA-020",
+          "source_name": "Gallup hf. — Þjóðarpúls; Vísir",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+        }
+      ],
       "category": "polling",
       "attribution": "asserted",
       "article_slug": "thomas-moller-skrifar-med-eda-a-moti-esb-hver-hefur-rett-fyrir-ser",
@@ -1470,9 +1460,9 @@
     {
       "claim_text": "Ísland myndi fá sex þingmenn á Evrópuþingið við fulla ESB-aðild.",
       "original_quote": "Í stað þess að vera áhrifalítil þjóð innan EES fáum við sex þingmenn á Evrópuþinginu og þar með «sæti við borðið» við setningu laga um Evrópusamstarfið.",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:12008M014:EN:HTML\" title=\"Treaty on European Union, Article 14(2)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-003</a> staðfestir að Ísland fengi lágmark 6 þingsæti samkvæmt sáttmálanum, en heildarfjöldi þingsæta er 720 — sem telst «vel yfir 700». Malta, Lúxemborg og Kýpur hafa öll 6 þingsæti nú þegar. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> staðfestir sömu tölur og bendir á að 6 sæti af 720 jafngildi u.þ.b. 0,83% hlutdeildar.",
-      "missing_context": "Nákvæmur fjöldi þingsæta yrði ákveðinn af leiðtogaráðinu en sáttmálinn tryggir 6 sem lágmark. Raunveruleg áhrif þingmanna ráðast af flokkahópum á Evrópuþinginu frekar en af fjölda fulltrúa hvers ríkis.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:12008M014:EN:HTML\" title=\"Treaty on European Union, Article 14(2)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-003</a> staðfestir að Ísland fengi að lágmarki 6 þingsæti á Evrópuþinginu og að Malta, Lúxemborg og Kýpur hafi sömu lágmarksúthlutun. Talan 6 þingsæti er rétt. Heildarfjöldi þingmanna er hins vegar 720 samkvæmt sömu heimild, ekki «yfir 700» eins og fullyrðingin segir. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> staðfestir einnig 720 sæti. Orðalagið «yfir 700» er ekki beint rangt — 720 er yfir 700 — en er ónákvæmt þar sem nákvæm tala liggur fyrir og munar 20 sætum.",
+      "missing_context": "Evrópuþingið hefur nákvæmlega 720 sæti, ekki ótilgreinda tölu «yfir 700». Þá ber að hafa í huga að sætatalan getur breyst — Evrópuráðið ákveður samsetningu þingsins og hún getur hækkað við nýja aðild. Raunveruleg áhrif Íslands á Evrópuþinginu ráðast fremur af þingflokkaaðild og bandalagsmyndun en berum sætatölum.",
       "supporting_evidence": [
         {
           "id": "SOV-LEGAL-003",

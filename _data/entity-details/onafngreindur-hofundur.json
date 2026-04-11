@@ -7,14 +7,14 @@
   "party": null,
   "stance": "pro_eu",
   "stance_score": 1.0,
-  "credibility": 0.68,
+  "credibility": 0.63,
   "attribution_counts": {
-    "asserted": 15
+    "asserted": 31
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 7,
-    "supported": 4,
+    "partially_supported": 20,
+    "supported": 7,
     "unverifiable": 2
   },
   "claims": [
@@ -137,19 +137,14 @@
     {
       "claim_text": "Evrópa er á eftir Bandaríkjunum á mörgum sviðum verðmætasköpunar.",
       "original_quote": "Andstæðingar aðildar Íslands að ESB hafa notað sem rök fyrir sínum málflutningi að Evrópa sé að dragast aftur úr Bandaríkjunum á mörgum sviðum. Flestum segja einhverjir þeirra. Verðmætasköpun sé meiri í Bandaríkjunum en í ESB.",
-      "verdict": "supported",
-      "explanation": "Draghi-skýrslan (<a href=\"https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en\" title=\"Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-024</a>) greinir frá verulegu framleiðni- og samkeppnishæfnisbili milli ESB og Bandaríkjanna: landsframleiðsla á mann jókst um 1% hægar á ári í ESB undanfarin tvo áratugi, aðeins 4 af 50 stærstu tæknifyrirtækjum heims eru evrópsk, og orkuverð er 2–3 sinnum hærra. <a href=\"https://www.businesseurope.eu/publications/businesseurope-reform-barometer-2025-eu-in-a-new-political-cycle-competitiveness-as-a-true-priority-in-a-complex-global-context/\" title=\"BusinessEurope — Reform Barometer 2025; Reform Barometer 2024\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-026</a> staðfestir að 80% aðildarsamtaka BusinessEurope töldu samkeppnisstöðu versna gagnvart erlendum keppinautum. Letta-skýrslan (<a href=\"https://www.consilium.europa.eu/media/ny3j24sm/much-more-than-a-market-report-by-enrico-letta.pdf\" title=\"Letta, Enrico — 'Much More Than a Market: Speed, Security, Solidarity', Report to the European Council (April 2024)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-025</a>) bætir við nánari greiningu á ófullkomnum innri markaði.",
-      "missing_context": "Draghi-skýrslan hefur sætt gagnrýni frá ýmsum hliðum og viðeigandi hæfni hennar fyrir íslenska umræðu er umdeild. Gagnrýnendur ESB-aðildar nota hana sem sönnun þess að ESB standi höllum fæti, en stuðningsmenn benda á að ESB viðurkenni vandamálin og sé að umbylta.",
+      "verdict": "partially_supported",
+      "explanation": "Draghi-skýrslan (<a href=\"https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en\" title=\"Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-024</a>) staðfestir samkeppnisbil milli ESB og Bandaríkjanna: hægari vöxtur landsframleiðslu á mann (u.þ.b. 1% á ári), aðeins 4 af 50 stærstu tæknifyrirtækjum heimsins evrópsk, og orkuverð 2–3 sinnum hærra. Letta-skýrslan (<a href=\"https://www.consilium.europa.eu/media/ny3j24sm/much-more-than-a-market-report-by-enrico-letta.pdf\" title=\"Letta, Enrico — 'Much More Than a Market: Speed, Security, Solidarity', Report to the European Council (April 2024)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-025</a>) undirstrikar ófullkominn þjónustumarkað og fjármagnsflutt til Bandaríkjanna. Fullyrðingin segir «á mörgum sviðum verðmætasköpunar» sem er stutt af þessum heimildum. Þó vantar samhengi — Evrópa stendur Bandaríkjunum framar á ákveðnum sviðum (velferðarkerfi, jöfnuður, umhverfisstefna) og fullyrðingin einfaldar flókna samanburðarmynd.",
+      "missing_context": "Draghi-skýrslan hefur sætt gagnrýni frá ýmsum hliðum og fjárfestingartölur hennar teljast óraunhæfar af sumum. Samanburðurinn á VLF á mann tekur ekki tillit til kaupmáttarjafnvægis, vinnustundamunar eða velferðarkerfis. Evrópa stendur Bandaríkjunum framar á sviðum eins og jöfnuði, umhverfisstefnu og félagslegu öryggisneti — fullyrðingin nær ekki yfir þessi svið.",
       "supporting_evidence": [
         {
           "id": "TRADE-DATA-024",
           "source_name": "Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)",
           "source_url": "https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en"
-        },
-        {
-          "id": "TRADE-DATA-026",
-          "source_name": "BusinessEurope — Reform Barometer 2025; Reform Barometer 2024",
-          "source_url": "https://www.businesseurope.eu/publications/businesseurope-reform-barometer-2025-eu-in-a-new-political-cycle-competitiveness-as-a-true-priority-in-a-complex-global-context/"
         },
         {
           "id": "TRADE-DATA-025",
@@ -396,6 +391,480 @@
       "article_title": "ESB-aðild: Eldstormur geisar",
       "article_source": "DV",
       "article_date": "2025-08-01"
+    },
+    {
+      "claim_text": "Lissabon-samningurinn skilgreinir þau lagasvæði þar sem Evrópusambandið hefur eingöngu rétt til að setja og stjórna löggjöf.",
+      "original_quote": "Evrópusambandið starfar eftir ákveðnum atriðum sem voru sett í lög þegar Lissabon sáttmálinn tók gildi.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003\" title=\"Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-030</a> staðfestir að sáttmálinn um starfshætti ESB (TFEU) — hluti Lissabon-sáttmálans — skilgreinir þrjá flokka valdheimilda: einkaréttarsvið (3. gr.), sameiginleg svið (4. gr.) og stuðningssvið (6. gr.). Á einkaréttarsviðunum má aðeins ESB setja löggjöf. Fullyrðingin er rétt að þessu leyti, þótt hún einblíni á einkaréttarsviðin og nefni ekki sameiginleg svið eða stuðningssvið sem Lissabon-sáttmálinn skilgreinir einnig.",
+      "missing_context": "Lissabon-sáttmálinn skilgreinir ekki aðeins einkaréttarsvið heldur einnig sameiginleg svið og stuðningssvið — alls þrjá flokka valdheimilda. Auk þess er mörkin á milli einkaréttar og sameiginlegra sviða oft óskýr í framkvæmd vegna «valdheimildasýkingar» (competence creep) þar sem ESB-löggjöf kemur í veg fyrir aðgerðir aðildarríkja á formlega sameiginlegum sviðum.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-LEGAL-030",
+          "source_name": "Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003"
+        },
+        {
+          "id": "EEA-LEGAL-022",
+          "source_name": "EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'",
+          "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "asserted",
+      "article_slug": "island-i-evropusambandinu",
+      "article_title": "Ísland í Evrópusambandinu",
+      "article_source": "Vísir",
+      "article_date": "2026-03-29"
+    },
+    {
+      "claim_text": "Evrópusambandið hefur einkarétt til að setja löggjöf á sviði tollabandalags, myntbandalags (evran), verndunar fiskistofna og sjávar, sameiginlegrar sjávarútvegsstefnu og ákveðinna alþjóðlegra sáttmála.",
+      "original_quote": "Til Vinstri á þessari mynd eru þau málefni sem Evrópusambandið hefur eingöngu rétt á að setja og stjórna. Þetta er tollabandalag, myntbandalag þar sem evran er gjaldmiðill, verndun fiskistofna og sjávar. Sameiginleg Sjávarútvegs stefna, ákveðir alþjóðlegir sáttmálar.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003\" title=\"Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-030</a> tilgreinir nákvæmlega þessi fimm svið sem einkavaldbærni ESB samkvæmt 3. gr. TFEU: tollabandalag, samkeppnisreglur, sameiginleg viðskiptastefna, myntstefna (evrusvæðisins) og verndun sjávarlífs undir sameiginlegri sjávarútvegsstefnu. Fullyrðingin er rétt í öllum atriðum og samsvarar formlega sáttmálatextanum.",
+      "missing_context": "Fullyrðingin segir «meðal annars» sem er rétt — þetta er ekki tæmandi listi. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003\" title=\"Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-030</a> bendir einnig á að praktísk mörk einkavaldbærni og dreifðrar valdbærni eru oft óskýr vegna löggjafar sem kemur í veg fyrir aðgerðir aðildarríkja á sviðum sem formlega eru sameiginleg.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-LEGAL-030",
+          "source_name": "Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003"
+        },
+        {
+          "id": "EEA-LEGAL-008",
+          "source_name": "EEA Agreement, Articles 8 and 17–26; Protocols 1 and 47",
+          "source_url": "https://www.efta.int/eea/eea-agreement"
+        },
+        {
+          "id": "EEA-LEGAL-022",
+          "source_name": "EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'",
+          "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
+        },
+        {
+          "id": "EEA-DATA-010",
+          "source_name": "EFTA Secretariat — The EEA Agreement; ESA Internal Market Scoreboard; EEA Joint Committee",
+          "source_url": "https://www.efta.int/eea/eea-agreement"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "asserted",
+      "article_slug": "island-i-evropusambandinu",
+      "article_title": "Ísland í Evrópusambandinu",
+      "article_source": "Vísir",
+      "article_date": "2026-03-29"
+    },
+    {
+      "claim_text": "Á sviðum þar sem Evrópusambandið hefur sett stefnu — þ.á.m. landbúnaður, fiskveiðar, umhverfismál, neytendavernd, innri markaður, samfélagsmál, efnahagsmál, samheldni samfélaga og orkumál — geta aðildarríki ekki sett eigin stefnu.",
+      "original_quote": "Í atriði tvö er fjallað um atriði þar sem aðildarríki getur ekki sett eigin stefnu, hafi Evrópusambandið sett stefnu í þeim málaflokki. Þetta er meðal annars, landbúnaður, fiskveiðar, umhverfismál, neytendavernd, innri markaður, samfélags málefni, efnahagsmál og samheldni samfélaga, orkumál og fleira og fleira.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin lýsir sameiginlegum valdheimildum (4. gr. TFEU) en er of afdráttarlaus. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003\" title=\"Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-030</a> staðfestir að þessir málaflokkar falli undir sameiginlegt vald — en á þeim sviðum mega aðildarríki setja eigin stefnu svo lengi sem ESB hefur ekki nýtt sitt vald. Fullyrðingin segir «geta ekki sett eigin stefnu» sem gefur til kynna algjört bann, en raunin er flóknari: aðildarríkin halda valdi sínu á sameiginlegum sviðum nema ESB hafi sett bindandi löggjöf. Þá geta aðildarríki jafnvel farið lengra en ESB í sumum málaflokkum (t.d. umhverfismálum).",
+      "missing_context": "Á sameiginlegum valdheimildasviðum (shared competences) mega aðildarríki setja eigin lög á þeim sviðum þar sem ESB hefur ekki nýtt vald sitt. Jafnvel þar sem ESB-löggjöf gildir mega aðildarríki oft setja strangari reglur (t.d. í umhverfismálum). Fullyrðingin einfaldar þetta of mikið með því að segja að ríkin «geta ekki» sett eigin stefnu.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-LEGAL-030",
+          "source_name": "Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003"
+        },
+        {
+          "id": "EEA-LEGAL-008",
+          "source_name": "EEA Agreement, Articles 8 and 17–26; Protocols 1 and 47",
+          "source_url": "https://www.efta.int/eea/eea-agreement"
+        },
+        {
+          "id": "EEA-LEGAL-003",
+          "source_name": "EEA Agreement, Article 1 and Protocol 47",
+          "source_url": "https://www.efta.int/eea/eea-agreement"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "asserted",
+      "article_slug": "island-i-evropusambandinu",
+      "article_title": "Ísland í Evrópusambandinu",
+      "article_source": "Vísir",
+      "article_date": "2026-03-29"
+    },
+    {
+      "claim_text": "Ísland myndi fá sex þingmenn á Evrópuþinginu við aðild að Evrópusambandinu.",
+      "original_quote": "Íslandi mundi fá sex Evrópuþingmenn.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:12008M014:EN:HTML\" title=\"Treaty on European Union, Article 14(2)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-003</a> staðfestir að sáttmálinn um Evrópusambandið (14. gr. 2. mgr.) tryggi hverju aðildarríki lágmark sex sæti á Evrópuþinginu. Malta, Lúxemborg og Kýpur hafa öll sex sæti. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> staðfestir einnig að Ísland myndi líklega fá sex sæti — lágmarksúthlutuninni. Nákvæm tala yrði ákveðin af leiðtogaráðinu en sáttmálinn tryggir lágmarkið.",
+      "missing_context": "Nákvæm sætaúthlutun yrði ákveðin af leiðtogaráðinu en sáttmálinn tryggir lágmark sex sæti. Evrópuþingið hefur alls 720 sæti, þannig að sex sæti eru um 0,83% heildarinnar.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-LEGAL-003",
+          "source_name": "Treaty on European Union, Article 14(2)",
+          "source_url": "https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:12008M014:EN:HTML"
+        },
+        {
+          "id": "SOV-DATA-017",
+          "source_name": "Treaty on European Union, Article 16(4); European Parliament allocation rules",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "sovereignty",
+      "attribution": "asserted",
+      "article_slug": "island-i-evropusambandinu",
+      "article_title": "Ísland í Evrópusambandinu",
+      "article_source": "Vísir",
+      "article_date": "2026-03-29"
+    },
+    {
+      "claim_text": "Hlutfall þingmanna Íslands á Evrópuþinginu yrði um eitt sæti á hverja 65.000 íbúa.",
+      "original_quote": "Þetta er rúmlega eitt sæti fyrir hverja 65.000 íbúa Íslands.",
+      "verdict": "supported",
+      "explanation": "Reikningurinn gengur upp: <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> tilgreinir íbúafjölda Íslands um 380.000 og sex sæti á Evrópuþinginu. 380.000 deilt með 6 gefur tæplega 63.333 íbúa á sæti, sem samrýmist «rúmlega eitt sæti á hverja 65.000 íbúa» — sérstaklega ef miðað er við nýjustu mannfjöldatölur (um 390.000). Þá fæst 390.000/6 = 65.000 nákvæmlega. Fullyrðingin er stærðfræðilega rétt.",
+      "missing_context": "Til samanburðar hefur Þýskaland eitt sæti á hverja 860.000 íbúa — smáríki njóta mun betri fulltrúa á höfðatölu á Evrópuþinginu samkvæmt meginreglunni um rýrandi hlutfallskosningu (degressive proportionality).",
+      "supporting_evidence": [
+        {
+          "id": "SOV-LEGAL-003",
+          "source_name": "Treaty on European Union, Article 14(2)",
+          "source_url": "https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:12008M014:EN:HTML"
+        },
+        {
+          "id": "SOV-DATA-017",
+          "source_name": "Treaty on European Union, Article 16(4); European Parliament allocation rules",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "sovereignty",
+      "attribution": "asserted",
+      "article_slug": "island-i-evropusambandinu",
+      "article_title": "Ísland í Evrópusambandinu",
+      "article_source": "Vísir",
+      "article_date": "2026-03-29"
+    },
+    {
+      "claim_text": "Ísland myndi skipa einn fulltrúa í Framkvæmdastjórn Evrópusambandsins við aðild.",
+      "original_quote": "Í Framkvæmdastjórn Evrópusambandsins skipar Ísland einn aðila eftir málaflokki.",
+      "verdict": "partially_supported",
+      "explanation": "Engin heimild staðfestir beint réttinn til framkvæmdastjóra í Framkvæmdastjórn ESB. <a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a> nefnir að Ísland yrði «eitt af 28+ aðildarríkjum» í ráðherraráðinu, sem gefur vísbendingu um fullgilda aðild að stofnunum ESB. <a href=\"https://ec.europa.eu/commission/presscorner/detail/en/ac_25_1887\" title=\"European Commission — Press Corner; EEAS\" target=\"_blank\" rel=\"noopener\">EEA-DATA-015</a> lýsir samskiptum Íslands við forseta framkvæmdastjórnarinnar en ekki skipan hennar. Núverandi ESB-sáttmálar (Lissabon-samningurinn) kveða á um einn framkvæmdastjóra frá hverju aðildarríki, þannig að fullyrðingin er efnislega rétt, en heimildir í staðreyndagrunni staðfesta þetta ekki beint.",
+      "missing_context": "Lissabon-samningurinn kveður á um möguleikann á að fækka framkvæmdastjórum í tvo þriðju af fjölda aðildarríkja (23. gr. ESB-sáttmálans), en Evrópuráðið ákvað 2009 að halda einum framkvæmdastjóra á hvert ríki. Þessi ákvörðun er pólitísk og gæti breyst. Engin heimild í gagnagrunni staðfestir beint skipan framkvæmdastjórnarinnar.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-LEGAL-032",
+          "source_name": "TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview",
+          "source_url": "https://www.efta.int/free-trade/free-trade-agreements"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "sovereignty",
+      "attribution": "asserted",
+      "article_slug": "island-i-evropusambandinu",
+      "article_title": "Ísland í Evrópusambandinu",
+      "article_source": "Vísir",
+      "article_date": "2026-03-29"
+    },
+    {
+      "claim_text": "Aðildarsáttmálar Evrópusambandsins geta aðeins breyst með nýrri lagasetningu í samræmi við óskir viðkomandi aðildarríkis og þurfa samþykki allra aðildarríkja.",
+      "original_quote": "Aðildarrsáttmálar eru lög hjá Evrópusambandinu og þeim eru eingöngu hægt að breyta með annari lagasetningu sem eru í sama flokki og viðkomandi lög. Aðildarrsáttmálar þurfa að fá samþykki allra aðildarríkjanna áður en þeir taka gildi.",
+      "verdict": "partially_supported",
+      "explanation": "Rétt er að aðildarsáttmálar hafa lagagildi frumréttar (primary law) og að breytingar á frumrétti krefjast samþykkis allra aðildarríkja í gegnum sáttmálabreytingarferli. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> staðfestir að breytingar á sáttmálum krefjast einróma samþykkis. Hins vegar vantar í fullyrðinguna að aðildarsáttmálar eru ekki aðeins háðir óskum eins aðildarríkis — sáttmálabreytingaferlið krefst samráðs allra aðildarríkja, framkvæmdastjórnarinnar og þingsins, auk þjóðfundar (Convention) í flestum tilfellum.",
+      "missing_context": "Fullyrðingin er rétt að sáttmálabreytingar krefjast einróma samþykkis, en gæti verið villandi að segja «í samræmi við óskir viðkomandi aðildarríkis» — aðrar stofnanir og öll aðildarríki taka þátt í ferlinu. Heimildir ná ekki til nákvæms sáttmálabreytingarferlis (48. gr. TEU) sem felur í sér þjóðfund, ríkjaráðstefnu og fullgildingu allra aðildarríkja.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-LEGAL-030",
+          "source_name": "Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003"
+        },
+        {
+          "id": "EEA-LEGAL-012",
+          "source_name": "European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "asserted",
+      "article_slug": "island-i-evropusambandinu",
+      "article_title": "Ísland í Evrópusambandinu",
+      "article_source": "Vísir",
+      "article_date": "2026-03-29"
+    },
+    {
+      "claim_text": "Ferli við að fá samþykki allra aðildarríkja á aðildarsáttmála tekur yfirleitt um eitt til þrjú ár.",
+      "original_quote": "yfirleitt tekur það ferli um eitt til þrjú ár.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir fjalla ekki beint um tímalengd fullgildingarferlis aðildarsáttmála í aðildarríkjunum. <a href=\"https://visitukraine.today/blog/2963/eu-membership-how-long-did-it-take-between-the-start-of-negotiations-and-accession\" title=\"Visit Ukraine / EU Council enlargement data\" target=\"_blank\" rel=\"noopener\">PREC-DATA-036</a> sýnir heildartíma aðildarviðræðna (frá 1 ári og 11 mánuðum upp í 7+ ár) en greinir ekki á milli samningatíma og fullgildingarferlis. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — Steps towards joining; DG NEAR accession negotiation methodology\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-013</a> lýsir viðræðuferlinu sjálfu sem 5–10 ár. Fullyrðingin gæti átt við fullgildingarferlið eftir að aðildarsáttmáli er undirritaður, en ekkert í heimildunum staðfestir eða afsannar tiltekna tímarammann «eitt til þrjú ár» sérstaklega fyrir fullgildingarskrefið.",
+      "missing_context": "Engar heimildir staðfesta sérstaklega hversu langan tíma fullgildingarferlið tekur eftir undirritun aðildarsáttmálans. Króatíu var síðasta aðildarríkið (2013) og fullgildingarferlið tók um eitt og hálft ár frá undirritun til gildistöku — sem samrýmist fullyrðingunni, en þessi sértæka staðfesting kemur ekki fram í heimildunum.",
+      "supporting_evidence": [
+        {
+          "id": "PREC-DATA-036",
+          "source_name": "Visit Ukraine / EU Council enlargement data",
+          "source_url": "https://visitukraine.today/blog/2963/eu-membership-how-long-did-it-take-between-the-start-of-negotiations-and-accession"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "asserted",
+      "article_slug": "island-i-evropusambandinu",
+      "article_title": "Ísland í Evrópusambandinu",
+      "article_source": "Vísir",
+      "article_date": "2026-03-29"
+    },
+    {
+      "claim_text": "Allar undanþágur, aðlögunartímabil og sérlausnir sem gilda um nýtt aðildarríki eru hluti af aðildarsáttmálanum og verða ekki breyttar nema með nýrri lagasetningu.",
+      "original_quote": "Í aðildarsáttmála fara allar undanþágur, aðlögunartímabil og sérlausnir sem gilda um viðkomandi nýja aðildarríki. Hvort sem þær eru til styttri, lengri eða varanlegar. Þessum lausnum verður ekki breytt að neinu leyti nema með nýrri lagasetningu í samræmi við óskir viðkomandi aðildarríkis.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:21994A0103(01)\" title=\"Croatia Accession Treaty (2012); 2003 Accession Treaty (Poland, Czech Republic et al.)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-014</a> og <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> staðfesta að aðlögunartímabil og sérlausnir séu samið um í aðildarviðræðum og verði hluti aðildarsáttmálans. Þar sem aðildarsáttmálar hafa gildi frumréttar er rétt að þeim verði ekki breytt nema með sáttmálabreytingu sem krefst einróma samþykkis. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> undirstrikar þó að frá Lissabon-sáttmálanum (2009) hafa ný aðildarríki ekki fengið varanlegar undanþágur — eingöngu tímabundin aðlögunartímabil. Fullyrðingin nefnir «varanlegar» lausnir sem möguleika, en heimildir sýna að slíkt er nánast útilokað fyrir ný ríki.",
+      "missing_context": "Frá Lissabon-sáttmálanum hafa ný aðildarríki ekki fengið varanlegar undanþágur (opt-outs) — eldri undanþágur Danmerkur og Írlands voru veittar við sérstakar sögulegar aðstæður. Fullyrðingin gefur til kynna að varanlegar lausnir séu eðlilegur valkostur, en allar nýlegar aðildarviðræður hafa eingöngu boðið tímabundin aðlögunartímabil (3–12 ár).",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-014",
+          "source_name": "Croatia Accession Treaty (2012); 2003 Accession Treaty (Poland, Czech Republic et al.)",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:21994A0103(01)"
+        },
+        {
+          "id": "EEA-LEGAL-017",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards joining' factsheet",
+          "source_url": "https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf"
+        },
+        {
+          "id": "EEA-LEGAL-021",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        },
+        {
+          "id": "EEA-LEGAL-012",
+          "source_name": "European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "asserted",
+      "article_slug": "island-i-evropusambandinu",
+      "article_title": "Ísland í Evrópusambandinu",
+      "article_source": "Vísir",
+      "article_date": "2026-03-29"
+    },
+    {
+      "claim_text": "Tollar á hrávörur frá ríkjum utan Evrópusambandsins eru lægri en tollar á fullunnar vörur, sem er ástæðan fyrir því að fiskur er ekki fullunninn á Íslandi í dag.",
+      "original_quote": "Ástæðan fyrir því að fiskur er ekki fullunnin á Íslandi í dag er sú að tollar á hrávörur frá ríkjum utan Evrópusambandsins eru lægri.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2024/12/27/Nyir-tollfrjalsir-kvotar-Evropusambandsins-a-islenskum-sjavar-og-eldisafurdum-taka-gildi-1.-januar-2025/\" title=\"Stjórnarráðið — 27. desember 2024: Nýir tollfríir kvótar Evrópusambandsins á íslenskum sjávar- og eldisafurðum\" target=\"_blank\" rel=\"noopener\">FISH-DATA-036</a> staðfestir að tollkvótar ESB á íslenskum sjávarafurðum séu skipulagðir eftir vinnslustigum og <a href=\"https://www.consilium.europa.eu/en/policies/eu-tariffs-explained/\" title=\"EU Council / European Commission Access2Markets\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-040</a> lýsir tollaumhverfi utan tollabandalags. Tollstigvaxandi kerfi ESB (tariff escalation) er vel þekkt fyrirbæri þar sem hærri tollar leggjast á unnar vörur. Hins vegar er fullyrðingin um að þetta sé «ástæðan» fyrir því að fiskur sé ekki fullunninn á Íslandi of einföld. <a href=\"https://hagstofa.is/talnaefni/atvinnuvegir/sjavarutvegur/\" title=\"Statistics Iceland — Industrial production; Samtök fyrirtækja í sjávarútvegi (SFS)\" target=\"_blank\" rel=\"noopener\">FISH-DATA-007</a> sýnir að fullvinnsla á Íslandi hefur vaxið umtalsvert — hlutfall ferskra og unninna afurða hækkaði úr 15% í yfir 35% milli 2005 og 2024. Fiskur er þannig fullunninn á Íslandi í vaxandi mæli.",
+      "missing_context": "<a href=\"https://hagstofa.is/talnaefni/atvinnuvegir/sjavarutvegur/\" title=\"Statistics Iceland — Industrial production; Samtök fyrirtækja í sjávarútvegi (SFS)\" target=\"_blank\" rel=\"noopener\">FISH-DATA-007</a> sýnir að hlutfall ferskra og verðmætari afurða í íslenskum sjávarafurðaútflutningi hefur hækkað úr 15% í yfir 35% frá 2005 til 2024 — fiskur er fullunninn á Íslandi í vaxandi mæli. Fullyrðingin er of afdráttarlaus þegar hún segir að fiskur sé «ekki fullunninn» á Íslandi. Aðrar ástæður en tollar hafa áhrif á vinnsluákvörðun, þar á meðal flutningskostnaður, aðgengi að hráefni og vinnuaflskostnaður.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-DATA-036",
+          "source_name": "Stjórnarráðið — 27. desember 2024: Nýir tollfríir kvótar Evrópusambandsins á íslenskum sjávar- og eldisafurðum",
+          "source_url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2024/12/27/Nyir-tollfrjalsir-kvotar-Evropusambandsins-a-islenskum-sjavar-og-eldisafurdum-taka-gildi-1.-januar-2025/"
+        },
+        {
+          "id": "TRADE-DATA-040",
+          "source_name": "EU Council / European Commission Access2Markets",
+          "source_url": "https://www.consilium.europa.eu/en/policies/eu-tariffs-explained/"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "FISH-DATA-007",
+          "source_name": "Statistics Iceland — Industrial production; Samtök fyrirtækja í sjávarútvegi (SFS)",
+          "source_url": "https://hagstofa.is/talnaefni/atvinnuvegir/sjavarutvegur/"
+        }
+      ],
+      "category": "fisheries",
+      "attribution": "asserted",
+      "article_slug": "island-i-evropusambandinu",
+      "article_title": "Ísland í Evrópusambandinu",
+      "article_source": "Vísir",
+      "article_date": "2026-03-29"
+    },
+    {
+      "claim_text": "Við ESB-aðild yrði hægt að fullvinna fisk á Íslandi og selja hann sem fullunninn fisk frá Íslandi á innri markaðnum.",
+      "original_quote": "Við aðild Íslands að Evrópusambandinu er hægt að fullvinna fisk á Íslandi og selja í Evrópusambandinu sem fullunnin fisk frá Íslandi.",
+      "verdict": "partially_supported",
+      "explanation": "Rétt er að ESB-aðild myndi afnema tolla á sjávarafurðir og veita íslenskum afurðum fullan aðgang að innri markaðnum án tollkvóta. <a href=\"https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2024/12/27/Nyir-tollfrjalsir-kvotar-Evropusambandsins-a-islenskum-sjavar-og-eldisafurdum-taka-gildi-1.-januar-2025/\" title=\"Stjórnarráðið — 27. desember 2024: Nýir tollfríir kvótar Evrópusambandsins á íslenskum sjávar- og eldisafurðum\" target=\"_blank\" rel=\"noopener\">FISH-DATA-036</a> staðfestir núverandi tollkvótakerfi og <a href=\"https://www.gov.uk/government/statistics/uk-sea-fisheries-annual-statistics-report-2023\" title=\"UK Marine Management Organisation — UK Sea Fisheries Statistics 2023; UK Trade Info\" target=\"_blank\" rel=\"noopener\">FISH-COMP-005</a> sýnir hvernig viðskiptahindranir hafa áhrif á sjávarafurðaviðskipti. Þó ber að hafa í huga að <a href=\"https://hagstofa.is/talnaefni/atvinnuvegir/sjavarutvegur/\" title=\"Statistics Iceland — Industrial production; Samtök fyrirtækja í sjávarútvegi (SFS)\" target=\"_blank\" rel=\"noopener\">FISH-DATA-007</a> sýnir að fullvinnsla á fiski á Íslandi er þegar veruleg (35%+ af útflutningi). Fullyrðingin gefur ranga mynd af stöðunni með því að gefa til kynna að fullvinnsla sé ekki möguleg í dag — hún er það þegar, en tollar draga úr samkeppnishæfni fullunninna vara.",
+      "missing_context": "Fullvinnsla á fiski á Íslandi er þegar umtalsverð og hefur vaxið. Aðild myndi afnema tollhindranir en myndi einnig leiða til þátttöku í sameiginlegri sjávarútvegsstefnu, sem hefði víðtæk áhrif á kvótastjórnun og aðgang að lögsögu. Óvíst er hvort aukin markaðsaðgangur myndi meira en vega upp á móti breytingum á sjávarútvegsstjórnun.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-DATA-036",
+          "source_name": "Stjórnarráðið — 27. desember 2024: Nýir tollfríir kvótar Evrópusambandsins á íslenskum sjávar- og eldisafurðum",
+          "source_url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2024/12/27/Nyir-tollfrjalsir-kvotar-Evropusambandsins-a-islenskum-sjavar-og-eldisafurdum-taka-gildi-1.-januar-2025/"
+        },
+        {
+          "id": "TRADE-DATA-040",
+          "source_name": "EU Council / European Commission Access2Markets",
+          "source_url": "https://www.consilium.europa.eu/en/policies/eu-tariffs-explained/"
+        },
+        {
+          "id": "FISH-COMP-005",
+          "source_name": "UK Marine Management Organisation — UK Sea Fisheries Statistics 2023; UK Trade Info",
+          "source_url": "https://www.gov.uk/government/statistics/uk-sea-fisheries-annual-statistics-report-2023"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "FISH-DATA-007",
+          "source_name": "Statistics Iceland — Industrial production; Samtök fyrirtækja í sjávarútvegi (SFS)",
+          "source_url": "https://hagstofa.is/talnaefni/atvinnuvegir/sjavarutvegur/"
+        }
+      ],
+      "category": "fisheries",
+      "attribution": "asserted",
+      "article_slug": "island-i-evropusambandinu",
+      "article_title": "Ísland í Evrópusambandinu",
+      "article_source": "Vísir",
+      "article_date": "2026-03-29"
+    },
+    {
+      "claim_text": "ESB-aðild myndi bæta stöðu sjómanna á strandveiðum með því að þeir gætu selt afla beint á markað í Evrópu án milligöngu stórfyrirtækja.",
+      "original_quote": "Aðild að Evrópusambandinu mundi einnig bæta stöðu sjómanna sem stunda strandveiðar. Þeir gætu nefnilega selt allt sem þeir veiða beint á markað í Evrópu án þess að þurfa að fara í gegnum hin íslensku stórfyrirtæki í sjávarútvegi.",
+      "verdict": "partially_supported",
+      "explanation": "Tollfrjáls aðgangur myndi tæknilega auðvelda smáútgerðum að selja beint á evrópska markaði. <a href=\"https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2024/12/27/Nyir-tollfrjalsir-kvotar-Evropusambandsins-a-islenskum-sjavar-og-eldisafurdum-taka-gildi-1.-januar-2025/\" title=\"Stjórnarráðið — 27. desember 2024: Nýir tollfríir kvótar Evrópusambandsins á íslenskum sjávar- og eldisafurðum\" target=\"_blank\" rel=\"noopener\">FISH-DATA-036</a> staðfestir núverandi tollkvótakerfi sem takmarkar aðgang. Hins vegar sýnir <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development\" title=\"European Parliament Research Service — Fisheries Ownership and Concentration in the EU\" target=\"_blank\" rel=\"noopener\">FISH-DATA-029</a> að samþjöppun í sjávarútvegi er alþjóðlegt fyrirbæri — smábátaflotinn í ESB (skip undir 12 metrum) er 73% flota en hefur aðeins 6% af heildartonnaþunga og lítinn hlut af kvótum. Fullyrðingin ofmetur hvernig tollbreytingar einnar breyta markaðsaðstæðum smáútgerða sem þurfa enn dreifikerfi, gæðavottanir og viðskiptatengsl.",
+      "missing_context": "Reynsla ESB-ríkja sýnir að smábátaútgerð hefur erfitt uppdráttar jafnvel innan innri markaðarins — 73% ESB-flota eru smábátar en þeir ná aðeins 6% af tonnunum. Beinn aðgangur að markaðnum krefst dreifikerfa, gæðavottana og viðskiptasamskipta sem stórfyrirtæki ráða yfir. Engar heimildir styðja beint þá ályktun að tollbreytingar ein og sér myndu rjúfa markaðsyfirráð stórfyrirtækja yfir útflutningi.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-DATA-036",
+          "source_name": "Stjórnarráðið — 27. desember 2024: Nýir tollfríir kvótar Evrópusambandsins á íslenskum sjávar- og eldisafurðum",
+          "source_url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2024/12/27/Nyir-tollfrjalsir-kvotar-Evropusambandsins-a-islenskum-sjavar-og-eldisafurdum-taka-gildi-1.-januar-2025/"
+        },
+        {
+          "id": "TRADE-DATA-040",
+          "source_name": "EU Council / European Commission Access2Markets",
+          "source_url": "https://www.consilium.europa.eu/en/policies/eu-tariffs-explained/"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "FISH-DATA-029",
+          "source_name": "European Parliament Research Service — Fisheries Ownership and Concentration in the EU",
+          "source_url": "https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development"
+        },
+        {
+          "id": "FISH-DATA-025",
+          "source_name": "European Commission — Scientific, Technical and Economic Committee for Fisheries (STECF); FAO — The State of World Fisheries and Aquaculture",
+          "source_url": "https://stecf.ec.europa.eu/reports_en"
+        }
+      ],
+      "category": "fisheries",
+      "attribution": "asserted",
+      "article_slug": "island-i-evropusambandinu",
+      "article_title": "Ísland í Evrópusambandinu",
+      "article_source": "Vísir",
+      "article_date": "2026-03-29"
+    },
+    {
+      "claim_text": "Íslensk stórfyrirtæki í sjávarútvegi stjórna öllum útflutningi á fiski frá Íslandi til Evrópusambandsins í dag.",
+      "original_quote": "sem stjórna öllum útflutning á fiski í dag frá Íslandi til Evrópusambandsins.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://island.is/s/fiskistofa\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> staðfestir umtalsverða samþjöppun í íslenskum sjávarútvegi — fá stórfyrirtæki (Brim, Samherji, Skinney-Þinganes, Síldarvinnslan, Eskja) ráða meirihluta kvóta. <a href=\"https://hagstofa.is/talnaefni/efnahagsmal/utanrikisverslun/\" title=\"Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður\" target=\"_blank\" rel=\"noopener\">FISH-DATA-027</a> sýnir að 90% sjávarafurða séu flutt út og meirihluti fari til ESB. Orðalagið «öllum útflutningi» er hins vegar of afdráttarlaust. Strandveiðimenn og smærri útgerðir selja einnig á erlenda markaði, þótt stórfyrirtækin ráði langstærstum hluta útflutnings.",
+      "missing_context": "Heimildir staðfesta verulega samþjöppun en ekki algjöra einokun á útflutningi. Fiskmarkaðir á Íslandi og smærri útgerðir hafa einnig aðgang að erlendum mörkuðum, þótt stórfyrirtækin séu ráðandi. Orðalagið «öllum» er ýkt framsetning.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-DATA-024",
+          "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
+          "source_url": "https://island.is/s/fiskistofa"
+        },
+        {
+          "id": "FISH-DATA-027",
+          "source_name": "Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður",
+          "source_url": "https://hagstofa.is/talnaefni/efnahagsmal/utanrikisverslun/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "fisheries",
+      "attribution": "asserted",
+      "article_slug": "island-i-evropusambandinu",
+      "article_title": "Ísland í Evrópusambandinu",
+      "article_source": "Vísir",
+      "article_date": "2026-03-29"
+    },
+    {
+      "claim_text": "Landbúnaður á Íslandi hefur verið í höndum einokunar.",
+      "original_quote": "Landbúnaður á Íslandi hefur lengi verið í höndum einokunar.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.oecd.org/agriculture/topics/agricultural-policy-monitoring-and-evaluation/\" title=\"OECD — Agricultural Policy Monitoring and Evaluation 2023; Hagstofa Íslands; Bændasamtök Íslands\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-017</a> staðfestir að íslenskur landbúnaður sé einn sá verndaðasti í OECD — stuðningur við bændur nemur 55–60% af brúttótekjum og tollar fara yfir 100% á sumum vörum. <a href=\"https://www.bondi.is/frettir/kynningarefni\" title=\"Bændasamtök Íslands — public statements and position papers (2009–2026); Vísir reporting\" target=\"_blank\" rel=\"noopener\">POL-DATA-019</a> lýsir sterku stöðu Bændasamtaka Íslands og pólitísku áhrifavaldi þeirra. Þetta bendir til mjög verndunar og samþjöppunar í geiranum. Hins vegar er orðið «einokun» tæknilega rangt — landbúnaður á Íslandi er rekinn af um 2.300–3.500 býlum, ekki einum aðila. Rettara er að tala um mjög verndaðan geira með sterkum hagsmunaaðilum.",
+      "missing_context": "Heimildir staðfesta mjög verndað kerfi og sterkt áhrifavald Bændasamtaka Íslands, en lýsa ekki «einokun» í hefðbundinni merkingu orðsins. Um 2.300–3.500 bú eru í rekstri. Hugtakið «einokun» gæti átt við samkeppnishindranir og verðstýringu í einstökum undirgreinum (t.d. mjólk) en heimildir ná ekki til þessarar sértæku greiningar.",
+      "supporting_evidence": [
+        {
+          "id": "AGRI-DATA-017",
+          "source_name": "OECD — Agricultural Policy Monitoring and Evaluation 2023; Hagstofa Íslands; Bændasamtök Íslands",
+          "source_url": "https://www.oecd.org/agriculture/topics/agricultural-policy-monitoring-and-evaluation/"
+        },
+        {
+          "id": "AGRI-DATA-013",
+          "source_name": "Hagstofa Íslands — National accounts; OECD — Agricultural Policy Monitoring and Evaluation",
+          "source_url": null
+        },
+        {
+          "id": "POL-DATA-019",
+          "source_name": "Bændasamtök Íslands — public statements and position papers (2009–2026); Vísir reporting",
+          "source_url": "https://www.bondi.is/frettir/kynningarefni"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "agriculture",
+      "attribution": "asserted",
+      "article_slug": "island-i-evropusambandinu",
+      "article_title": "Ísland í Evrópusambandinu",
+      "article_source": "Vísir",
+      "article_date": "2026-03-29"
+    },
+    {
+      "claim_text": "ESB-aðild Íslands myndi krefjast þess að einokun í landbúnaðargeiranum yrði afnumin.",
+      "original_quote": "Það þarf að vinda ofan af því kerfi við aðild að Evrópusambandinu.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); OECD Economic Surveys: Iceland 2021\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-019</a> staðfestir að framkvæmdastjórnin taldi landbúnað krefjast víðtækustu aðlögunarinnar allra málasviða við ESB-aðild og að kerfisbreytingar væru óhjákvæmilegar. AGRI-DATA-013 og <a href=\"https://www.oecd.org/agriculture/topics/agricultural-policy-monitoring-and-evaluation/\" title=\"OECD — Agricultural Policy Monitoring and Evaluation 2023; Hagstofa Íslands; Bændasamtök Íslands\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-017</a> staðfesta að tollvernd yrði afnumin og innlendu stuðningskerfi skipt út fyrir sameiginlegu landbúnaðarstefnuna. Grunnhugmyndin er rétt — ESB-aðild myndi krefjast grundvallarbreytinga á íslenskum landbúnaði. Hugtakið «einokun» er þó umdeilt (sjá fullyrðingu 14) og heimildir tala frekar um verndun og tollhindranir en einokun í hefðbundinni merkingu.",
+      "missing_context": "Heimildir staðfesta nauðsyn kerfisbreytinga en hugtakið «einokun» er pólitískt og ónákvæmt. Aðlögunartímabil gætu dregið úr áhrifum breytinganna — Finnland og Svíþjóð fengu stuðning við norðlægan landbúnað við aðild 1995. Aðild myndi einnig opna aðgang að beingreiðslum og landsbyggðarsjóðum sameiginlegu landbúnaðarstefnunnar sem gætu mildað áhrifin.",
+      "supporting_evidence": [
+        {
+          "id": "AGRI-DATA-019",
+          "source_name": "European Commission — Opinion on Iceland's application (SEC(2010) 153); OECD Economic Surveys: Iceland 2021",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "AGRI-DATA-013",
+          "source_name": "Hagstofa Íslands — National accounts; OECD — Agricultural Policy Monitoring and Evaluation",
+          "source_url": null
+        },
+        {
+          "id": "POL-DATA-019",
+          "source_name": "Bændasamtök Íslands — public statements and position papers (2009–2026); Vísir reporting",
+          "source_url": "https://www.bondi.is/frettir/kynningarefni"
+        },
+        {
+          "id": "POL-DATA-015",
+          "source_name": "Bændasamtök Íslands — EU membership impact assessment (2025); Ministry of Agriculture — subsidy data",
+          "source_url": "https://www.bondi.is/frettir/kynningarefni"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "agriculture",
+      "attribution": "asserted",
+      "article_slug": "island-i-evropusambandinu",
+      "article_title": "Ísland í Evrópusambandinu",
+      "article_source": "Vísir",
+      "article_date": "2026-03-29"
+    },
+    {
+      "claim_text": "Við ESB-aðild yrði íslenska opinbert tungumál Evrópusambandsins og öll skjöl og lög gefin út á íslensku.",
+      "original_quote": "Við aðild að Evrópusambandinu yrði íslenska opinbert tungumál Evrópusambandsins. Það þýðir að öll skjöl, lög og slíkt yrði gefið út á íslensku.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.visindavefur.is/svar.php?id=88509\" title=\"Vísindavefurinn — Eiríkur Rögnvaldsson, Professor Emeritus of Icelandic, University of Iceland (March 2026)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-032</a> staðfestir að íslenska yrði sjálfkrafa opinbert tungumál ESB við aðild og <a href=\"https://www.visindavefur.is/svar.php?id=88510\" title=\"Vísindavefurinn — Eiríkur Rögnvaldsson, Professor Emeritus of Icelandic, University of Iceland (March 2026)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-034</a> styður þetta enn frekar. Fyrri hluti fullyrðingarinnar er ótvírætt réttur. Seinni hlutinn — «öll skjöl, lög og slíkt» gefið út á íslensku — er hins vegar of víður. <a href=\"https://www.visindavefur.is/svar.php?id=88509\" title=\"Vísindavefurinn — Eiríkur Rögnvaldsson, Professor Emeritus of Icelandic, University of Iceland (March 2026)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-032</a> varar sérstaklega við að gæði og tímanleiki þýðinga á smærri tungumál sé misjafn og nefnir viðvarandi þýðingahalla á maltnesku. Formlega eiga öll lög og grundvallarskjöl að birtast á öllum opinberum tungumálum, en í framkvæmd er þetta ófullkomið.",
+      "missing_context": "Þrátt fyrir formlegan rétt á þýðingum hafa smærri tungumál átt við þýðingahalla að stríða — maltneska er sérstaklega nefnd sem dæmi. Raunverulegt framboð þýðinga á öllum skjölum er ekki tryggt í framkvæmd. Auk þess er vinnumál ESB-stofnana fyrst og fremst enska, franska og þýska — daglegt starf fer ekki fram á öllum 24 (verðandi 25) tungumálum.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-032",
+          "source_name": "Vísindavefurinn — Eiríkur Rögnvaldsson, Professor Emeritus of Icelandic, University of Iceland (March 2026)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=88509"
+        },
+        {
+          "id": "SOV-DATA-034",
+          "source_name": "Vísindavefurinn — Eiríkur Rögnvaldsson, Professor Emeritus of Icelandic, University of Iceland (March 2026)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=88510"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "sovereignty",
+      "attribution": "asserted",
+      "article_slug": "island-i-evropusambandinu",
+      "article_title": "Ísland í Evrópusambandinu",
+      "article_source": "Vísir",
+      "article_date": "2026-03-29"
     }
   ],
   "articles": [
@@ -405,6 +874,16 @@
       "source": "DV",
       "date": "2025-08-01",
       "claim_count": 13,
+      "attribution_types": [
+        "asserted"
+      ]
+    },
+    {
+      "slug": "island-i-evropusambandinu",
+      "title": "Ísland í Evrópusambandinu",
+      "source": "Vísir",
+      "date": "2026-03-29",
+      "claim_count": 16,
       "attribution_types": [
         "asserted"
       ]

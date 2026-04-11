@@ -7,17 +7,17 @@
   "party": null,
   "stance": "neutral",
   "stance_score": 0.0,
-  "credibility": 0.68,
+  "credibility": 0.67,
   "attribution_counts": {
-    "quoted": 12,
+    "quoted": 13,
     "paraphrased": 8,
     "mentioned": 1
   },
   "althingi_stats": null,
   "scorecard": {
     "unsupported": 1,
-    "partially_supported": 12,
-    "supported": 7
+    "partially_supported": 17,
+    "supported": 3
   },
   "claims": [
     {
@@ -173,24 +173,29 @@
     {
       "claim_text": "Margar breytingar hafa átt sér stað í alþjóðamálum undanfarin tíu ár sem hafa áhrif á samningaviðræður.",
       "original_quote": "þó hafi margar breytingar átt sér stað í alþjóðamálum undanfarin tíu ár",
-      "verdict": "supported",
-      "explanation": "Heimildir staðfesta fjölda verulegra breytinga á alþjóðavettvangi síðan 2013: innrás Rússlands í Úkraínu 2022 breytti öryggisumhverfi Evrópu og aukið hernaðarlegt mikilvægi Íslands (<a href=\"https://www.eeas.europa.eu/eeas/strategic-compass-security-and-defence-1_en\" title=\"EU Strategic Compass for Security and Defence (March 2022); NATO Allied Air Command — Icelandic Air Policing; IISS Strategic Survey 2023\" target=\"_blank\" rel=\"noopener\">SOV-HIST-003</a>), útganga Bretlands úr ESB breytti samstarfsformum (PREC-HIST-003), og regluverk ESB hefur stækkað verulega með Evrópska græna sáttmálanum og stafrænni reglugerð (<a href=\"https://commission.europa.eu/strategy-and-policy/strategy-documents/commission-work-programme_en\" title=\"EUR-Lex legislative database; European Commission Work Programmes 2014–2025\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-018</a>). Þessar breytingar hafa bein áhrif á forsendur aðildarviðræðna.",
-      "missing_context": "Breytingarnar hafa áhrif á samningaviðræður í báðar áttir — aukin öryggisþörf gæti styrkt rök fyrir aðild, á meðan stækkað regluverk gerir viðræður flóknari. Einnig hafa breytingar á bandarískri utanríkisstefnu og vaxandi áhersla ESB á varnarmál áhrif.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin er svo almenn að erfitt er að meta hana á nákvæman hátt. Heimildir benda vissulega til breytinga á alþjóðavettvangi — <a href=\"https://www.consilium.europa.eu/en/\" title=\"Press conference statements — Donald Tusk, PM of Poland (2025–2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-011</a> nefnir öryggisbreytingar vegna innrásar Rússa í Úkraínu og pólitíska breytinga í Bandaríkjunum, og <a href=\"https://eur-lex.europa.eu/collection/eu-law/treaties.html\" title=\"European Parliament — EU Treaties and Protocols; Accession Treaty texts\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-023</a> sýnir þróun ESB-stækkunarstefnunnar. <a href=\"https://www.visindavefur.is/svar.php?id=60120\" title=\"Vísindavefurinn — Vilborg Ása Guðjónsdóttir & Þorsteinn Vilhjálmsson, University of Iceland (2011)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-033</a> lýsir breyttum atkvæðagreiðslureglum eftir Lissabon-samninginn. Þó tengja heimildir ekki beint allar þessar breytingar við samningaviðræður Íslands sérstaklega, og fullyrðingin er svo víð að nánast allt gæti fallið undir hana.",
+      "missing_context": "Fullyrðingin er of víð til að vera fullstaðfest — hún tilgreinir ekki hvaða breytingar séu átt við eða hvernig þær hafi áhrif á samningaviðræður. Heimildir staðfesta ýmsar alþjóðlegar breytingar en tengingin við samningastöðu Íslands sérstaklega er ódýpt. Tímabilið «undanfarin tíu ár» er óljóst þar sem sumar heimildir ná aftar (Lissabon-samningurinn 2009) og sumar framarlega (2025–2026).",
       "supporting_evidence": [
         {
-          "id": "SOV-HIST-003",
-          "source_name": "EU Strategic Compass for Security and Defence (March 2022); NATO Allied Air Command — Icelandic Air Policing; IISS Strategic Survey 2023",
-          "source_url": "https://www.eeas.europa.eu/eeas/strategic-compass-security-and-defence-1_en"
+          "id": "PREC-DATA-011",
+          "source_name": "Press conference statements — Donald Tusk, PM of Poland (2025–2026)",
+          "source_url": "https://www.consilium.europa.eu/en/"
         },
         {
-          "id": "EEA-LEGAL-018",
-          "source_name": "EUR-Lex legislative database; European Commission Work Programmes 2014–2025",
-          "source_url": "https://commission.europa.eu/strategy-and-policy/strategy-documents/commission-work-programme_en"
+          "id": "EEA-LEGAL-023",
+          "source_name": "European Parliament — EU Treaties and Protocols; Accession Treaty texts",
+          "source_url": "https://eur-lex.europa.eu/collection/eu-law/treaties.html"
         },
         {
-          "id": "SOV-DATA-001",
-          "source_name": "European Commission — EU Arctic Policy, Joint Communication JOIN(2021) 27",
-          "source_url": "https://www.eeas.europa.eu/eeas/eu-arctic-policy_en"
+          "id": "SOV-DATA-033",
+          "source_name": "Vísindavefurinn — Vilborg Ása Guðjónsdóttir & Þorsteinn Vilhjálmsson, University of Iceland (2011)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=60120"
+        },
+        {
+          "id": "SOV-LEGAL-006",
+          "source_name": "Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1"
         }
       ],
       "contradicting_evidence": [],
@@ -278,34 +283,24 @@
     {
       "claim_text": "Efnahagslegar og hernaðarlegar breytingar í heiminum hafa breytt forsendum ESB-umræðunnar.",
       "original_quote": "breyttum aðstæðum, efnahagslega, hernaðarlega",
-      "verdict": "supported",
-      "explanation": "Fullyrðingin er almenn og víðtæk — efnahagslegar og hernaðarlegar breytingar hafi breytt forsendum ESB-umræðunnar. Heimildir staðfesta þetta frá mörgum hliðum. Innrás Rússlands í Úkraínu 2022 jók hernaðarlega þýðingu Íslands verulega og NATO-sveitir hófu aftur reglulegar loftrýmisgæsluflugferðir til Keflavíkur (<a href=\"https://www.eeas.europa.eu/eeas/strategic-compass-security-and-defence-1_en\" title=\"EU Strategic Compass for Security and Defence (March 2022); NATO Allied Air Command — Icelandic Air Policing; IISS Strategic Survey 2023\" target=\"_blank\" rel=\"noopener\">SOV-HIST-003</a>). ESB samþykkti Hernaðaráttavísinn (Strategic Compass) 2022 og EUR 150 milljarða varnaráætlun. Regluumhverfi ESB hefur stækkað gríðarlega (European Green Deal, stafræn reglugerð, AI Act — sjá <a href=\"https://commission.europa.eu/strategy-and-policy/strategy-documents/commission-work-programme_en\" title=\"EUR-Lex legislative database; European Commission Work Programmes 2014–2025\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-018</a>). Nýr öryggissamningur ESB og Íslands var undirritaður í mars 2026 (<a href=\"https://www.eeas.europa.eu/eeas/eu-iceland-joint-press-release-signature-security-and-defence-partnership_en\" title=\"EEAS Joint Press Release\" target=\"_blank\" rel=\"noopener\">SOV-DATA-025</a>). Norðurslóðamálin hafa breyst eftir stöðvun samstarfs Rússlands í Norðurskautsráðinu (<a href=\"https://www.eeas.europa.eu/eeas/eu-arctic-policy_en\" title=\"European Commission — EU Arctic Policy, Joint Communication JOIN(2021) 27\" target=\"_blank\" rel=\"noopener\">SOV-DATA-001</a>).",
-      "missing_context": "Fullyrðingin er víð og almenns eðlis — nánast hvaða breyting sem er gæti talist «breyta forsendum». Heimildir staðfesta bæði hernaðarlegar og efnahagslegar breytingar, en túlkunin á því hvernig þær breyta forsendum fer eftir pólitísku sjónarhorni. Sumar breytingar (t.d. vaxandi varnarsamstarf ESB) gætu talað bæði með og á móti aðild.",
+      "verdict": "partially_supported",
+      "explanation": "Kjarninn í fullyrðingunni — að breytingar í heiminum hafi breytt forsendum ESB-umræðunnar — er studdur af heimildum. <a href=\"https://www.stjornarradid.is/sendiskrifstofur/sendirad-islands-i-brussel/brussel-vaktin/stok-faersla/2026/03/13/Idnadarhradall-Made-in-Europe/\" title=\"Brussel-vaktin (Sendiráð Íslands í Brussel) — 13. mars 2026, cross-referencing earlier issues\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-044</a> lýsir stefnubreytingu ESB frá loftslagsforgangi yfir í iðnaðarsamkeppni og hernaðarlegan sjálfstæðisvilja. <a href=\"https://europa.eu/eurobarometer/surveys/detail/3131\" title=\"Standard Eurobarometer; OBR; ONS; Eurostat\" target=\"_blank\" rel=\"noopener\">PREC-DATA-017</a> sýnir hvernig Brexit-reynslan og Rússlands-innrásin í Úkraínu hafa gjörbreytt pólitísku samhengi ESB. Fullyrðingin er þó mjög víð og ónákvæm — hún tilgreinir ekki hvaða breytingar eða hvernig forsendur hafi breyst, sem gerir hana erfitt matshæfa. Heimildir styðja almennan grunn fullyrðingarinnar en hún er svo víð að hún er nánast ómótmælanleg.",
+      "missing_context": "Fullyrðingin er svo almenn að erfitt er að meta hana gagngert. Heimildir sýna ákveðnar breytingar (Brexit, innrás Rússlands, stefnubreyting ESB í iðnaðarstefnu, breytt öryggisumhverfi) en fullyrðingin tilgreinir engar þeirra. Ólíkir aðilar geta túlkað «breytt forsendur» á gjörólíkan hátt — sumir sem rök fyrir aðild, aðrir á móti.",
       "supporting_evidence": [
         {
-          "id": "SOV-HIST-003",
-          "source_name": "EU Strategic Compass for Security and Defence (March 2022); NATO Allied Air Command — Icelandic Air Policing; IISS Strategic Survey 2023",
-          "source_url": "https://www.eeas.europa.eu/eeas/strategic-compass-security-and-defence-1_en"
+          "id": "TRADE-DATA-044",
+          "source_name": "Brussel-vaktin (Sendiráð Íslands í Brussel) — 13. mars 2026, cross-referencing earlier issues",
+          "source_url": "https://www.stjornarradid.is/sendiskrifstofur/sendirad-islands-i-brussel/brussel-vaktin/stok-faersla/2026/03/13/Idnadarhradall-Made-in-Europe/"
         },
         {
-          "id": "EEA-LEGAL-018",
-          "source_name": "EUR-Lex legislative database; European Commission Work Programmes 2014–2025",
-          "source_url": "https://commission.europa.eu/strategy-and-policy/strategy-documents/commission-work-programme_en"
+          "id": "PREC-DATA-017",
+          "source_name": "Standard Eurobarometer; OBR; ONS; Eurostat",
+          "source_url": "https://europa.eu/eurobarometer/surveys/detail/3131"
         },
         {
-          "id": "SOV-DATA-025",
-          "source_name": "EEAS Joint Press Release",
-          "source_url": "https://www.eeas.europa.eu/eeas/eu-iceland-joint-press-release-signature-security-and-defence-partnership_en"
-        },
-        {
-          "id": "SOV-DATA-001",
-          "source_name": "European Commission — EU Arctic Policy, Joint Communication JOIN(2021) 27",
-          "source_url": "https://www.eeas.europa.eu/eeas/eu-arctic-policy_en"
-        },
-        {
-          "id": "TRADE-DATA-022",
-          "source_name": "European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications",
-          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+          "id": "PREC-DATA-011",
+          "source_name": "Press conference statements — Donald Tusk, PM of Poland (2025–2026)",
+          "source_url": "https://www.consilium.europa.eu/en/"
         }
       ],
       "contradicting_evidence": [],
@@ -419,9 +414,9 @@
     {
       "claim_text": "Umræða er í Bretlandi um að útgangan hafi verið mistök.",
       "original_quote": "Frekar er umræða í Bretlandi um að það hafi verið mistök að gera það.",
-      "verdict": "supported",
-      "explanation": "Heimildir staðfesta þetta vel. Skoðanakannanir sýna stöðugt að um 55% Breta telja Brexit hafa verið mistök (<a href=\"https://www.cer.eu/insights/gap-between-brexit-reset-rhetoric-and-reality\" title=\"Centre for European Reform; UK in a Changing Europe\" target=\"_blank\" rel=\"noopener\">PREC-DATA-004</a>). Ríkisfjármálaskrifstofan (OBR) áætlar 4% samdrátt í landsframleiðslu vegna Brexit (PREC-HIST-003) og vöruviðskipti við ESB drógust saman um 15% (<a href=\"https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/\" title=\"UK Office for National Statistics — Trade statistics; Office for Budget Responsibility — Brexit impact assessment\" target=\"_blank\" rel=\"noopener\">PREC-HIST-012</a>). Þrátt fyrir þessa umræðu hefur hvorugur aðalflokkurinn — Verkamannaflokkurinn né Íhaldsflokkurinn — mælt með enduraðild (<a href=\"https://www.cer.eu/insights/gap-between-brexit-reset-rhetoric-and-reality\" title=\"Centre for European Reform; UK in a Changing Europe\" target=\"_blank\" rel=\"noopener\">PREC-DATA-004</a>).",
-      "missing_context": "Þótt margir Bretar telji Brexit hafa verið mistök hefur hvorugur stóri flokkurinn í Bretlandi mælt með enduraðild. Verkamannastjórnin leggur áherslu á nánara samstarf innan núverandi ramma (TCA) frekar en enduraðild (<a href=\"https://www.cer.eu/insights/gap-between-brexit-reset-rhetoric-and-reality\" title=\"Centre for European Reform; UK in a Changing Europe\" target=\"_blank\" rel=\"noopener\">PREC-DATA-004</a>). Umræðan er því til staðar í almenningsáliti en ekki enn í stjórnmálalegri framkvæmd.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.cer.eu/insights/gap-between-brexit-reset-rhetoric-and-reality\" title=\"Centre for European Reform; UK in a Changing Europe\" target=\"_blank\" rel=\"noopener\">PREC-DATA-004</a> staðfestir beint að um 55% Breta telja Brexit hafa verið mistök (2025), og hvorugur stórflokkurinn (Verkamannaflokkur né Íhaldsflokurinn) talar þó fyrir endurkomu í ESB. <a href=\"https://www.nber.org/papers/w34459\" title=\"NBER Working Paper No. 34459 — The Economic Impact of Brexit (Bloom, Chen, Mizen)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-041</a> og <a href=\"https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/\" title=\"Office for Budget Responsibility, Brexit Analysis\" target=\"_blank\" rel=\"noopener\">PREC-DATA-002</a> sýna efnahagslegan kostnað sem styður umræðuna um mistök — OBR áætlar 4% minni framleiðni til lengri tíma og NBER áætlar 6–8% minni landsframleiðslu. Fullyrðingin er rétt um að umræða sé í gangi, en hún gefur of einfalda mynd — umræðan hefur ekki leitt til pólitísks stuðnings við endurkomu og snýst fremur um betri samkomulag innan núverandi TCA-ramma.",
+      "missing_context": "Þótt könnunarniðurstöður sýni eftirsjá, hefur enginn stórflokkur í Bretlandi talað fyrir ESB-endurkomu. Verkamannastjórnin einbeitir sér að «endurstillingu» sambandsins innan gildandi samnings (TCA). Endurganga krefðist fulls aðildarferlis og Bretar myndu líklega þurfa að skuldbinda sig til evrusvæðisins og Schengen, sem dregur úr pólitísku raunhæfi endurkomu á næstunni.",
       "supporting_evidence": [
         {
           "id": "PREC-DATA-004",
@@ -429,13 +424,18 @@
           "source_url": "https://www.cer.eu/insights/gap-between-brexit-reset-rhetoric-and-reality"
         },
         {
-          "id": "PREC-DATA-008",
-          "source_name": "UK Office for Budget Responsibility — Economic and fiscal outlook 2023; Centre for European Reform; Bank of England",
+          "id": "PREC-DATA-041",
+          "source_name": "NBER Working Paper No. 34459 — The Economic Impact of Brexit (Bloom, Chen, Mizen)",
+          "source_url": "https://www.nber.org/papers/w34459"
+        },
+        {
+          "id": "PREC-DATA-002",
+          "source_name": "Office for Budget Responsibility, Brexit Analysis",
           "source_url": "https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/"
         },
         {
-          "id": "PREC-HIST-012",
-          "source_name": "UK Office for National Statistics — Trade statistics; Office for Budget Responsibility — Brexit impact assessment",
+          "id": "PREC-DATA-040",
+          "source_name": "UK Office for Budget Responsibility — Brexit Analysis",
           "source_url": "https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/"
         }
       ],
@@ -565,24 +565,24 @@
     {
       "claim_text": "Stærstu spurningarnar um ESB-aðild Íslands lúta að þeim atriðum sem semja þarf um og hvort niðurstaðan verði ásættanleg.",
       "original_quote": "Hún segir stærstu spurningarnar lúta að þeim atriðum sem semja þurfi um og hvort hægt sé að komast að ásættanlegri niðurstöðu fyrir Íslendinga",
-      "verdict": "supported",
-      "explanation": "Þetta er vel stutt af heimildum. Könnunargögn sýna að sjávarútvegsstefna (60%), fullveldi (50%), gjaldmiðill (45%) og landbúnaðarstefna (30%) eru þau mál sem kjósendur telja mikilvægust (<a href=\"https://maskina.is/53-hlynnt-aframhaldandi-adildarvidraedum-vid-esb/\" title=\"Maskína — Voter priorities survey\" target=\"_blank\" rel=\"noopener\">POLL-DATA-003</a>). Þetta eru einmitt þau mál sem falla utan EES og sem þyrfti að semja um í aðildarviðræðum (<a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a>). Árangur samninganna í þessum málaflokkum myndi ráða miklu um hvort Íslendingar myndu samþykkja aðild (<a href=\"https://fel.hi.is/is/rannsoknir-spurningalistakannanir/simakannanir\" title=\"Félagsvísindastofnun — Methodology notes on EU polling; comparison of Gallup, MMR, and Maskína polls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-010</a>).",
-      "missing_context": "Munurinn á milli orðalags í skoðanakönnunum (t.d. \"sækja um aðild\" vs. \"ganga í ESB\") getur breytt stuðningi um 5–8 prósentustig (<a href=\"https://fel.hi.is/is/rannsoknir-spurningalistakannanir/simakannanir\" title=\"Félagsvísindastofnun — Methodology notes on EU polling; comparison of Gallup, MMR, and Maskína polls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-010</a>). Þetta bendir til þess að margir kjósendur séu opnir fyrir ferlinu en óvissir um niðurstöðuna — nákvæmlega eins og fullyrðingin gefur til kynna.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin er almenn yfirlýsing um eðli ESB-umræðunnar. <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> staðfesta að aðildarviðræður snúast um skilmála og tímasetningu innleiðingar á regluverkinu — hvað er samningsatriði og á hvaða skilmálum. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1\" title=\"Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-006</a> bendir á að undanþágur og sérkjör séu lykilatriði. Þó er fullyrðingin of einföld — «stærstu spurningarnar» ná víðar en samningaatriði. Heimildir sýna að spurningar um fullveldi (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M050\" title=\"Treaty on European Union, Article 50\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-001</a>), sjávarútveg og landbúnað eru jafn stórar og samningsspurningarnar sjálfar. Almenn pólitísk afstaða og lýðræðisleg sjónarmið eru ekki eingöngu spurning um samningsniðurstöður.",
+      "missing_context": "Fullyrðingin afmarkar umræðuna við samningsatriði og «ásættanlega niðurstöðu» en margir telja grundvallarspurninguna vera hvort yfirfærsla valds til ESB sé ásættanleg í sjálfu sér — óháð samningsskilmálum. Heimildir benda til þess að regluverkið sé að mestu leyti ósemjanlegt (um 95%) og aðeins tímasetning innleiðingar sé viðræðuefni, sem gerir «hvað semja þarf um» að þrengri spurningu en fullyrðingin gefur til kynna.",
       "supporting_evidence": [
-        {
-          "id": "POLL-DATA-003",
-          "source_name": "Maskína — Voter priorities survey",
-          "source_url": "https://maskina.is/53-hlynnt-aframhaldandi-adildarvidraedum-vid-esb/"
-        },
-        {
-          "id": "POLL-DATA-010",
-          "source_name": "Félagsvísindastofnun — Methodology notes on EU polling; comparison of Gallup, MMR, and Maskína polls",
-          "source_url": "https://fel.hi.is/is/rannsoknir-spurningalistakannanir/simakannanir"
-        },
         {
           "id": "EEA-LEGAL-017",
           "source_name": "European Commission — 'EU Accession Process: Steps towards joining' factsheet",
           "source_url": "https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf"
+        },
+        {
+          "id": "EEA-LEGAL-021",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        },
+        {
+          "id": "SOV-LEGAL-006",
+          "source_name": "Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1"
         }
       ],
       "contradicting_evidence": [],
@@ -633,29 +633,29 @@
     {
       "claim_text": "Einhver málamiðlun þyrfti að nást í aðildarviðræðum Íslands við ESB.",
       "original_quote": "Það þyrfti að vera einhver málamiðlun",
-      "verdict": "supported",
-      "explanation": "Fullyrðingin er almenn og segir aðeins að «einhver málamiðlun» þyrfti að nást í aðildarviðræðum. Þetta er augljóslega rétt og heimildir staðfesta það ríkulega. Forsætisráðherra Kristrún Frostadóttir talaði um «grundvallarprinsipp sem þarf að virða» og «skýr rauð flögg» varðandi auðlindir og orku (<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T162602.html\" title=\"Alþingi — Kristrún Frostadóttir, forsætisráðherra (andsvar, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">PARTY-PARL-001</a>). Utanríkisráðherra nefndi sérstaklega fordæmi um samninga — norrænar landbúnaðarundanþágur og eignakaupatakmörkun Dana og Maltverja — sem dæmi um hvernig málamiðlanir hafa verið náðar (<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a>). Samningsramminn sjálfur felur í sér aðlögunartímabil og sérstök ákvæði sem kalla á málamiðlanir (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a>, <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-004</a> úr öðrum fullyrðingum).",
-      "missing_context": "Fullyrðingin er svo almenn að hún segir lítið umfram hið augljósa — allar aðildarviðræður fela í sér einhverja málamiðlun. Spurningin er fremur hversu víðtæk málamiðlunin þyrfti að vera, sérstaklega í sjávarútvegi og landbúnaði þar sem hagsmunir Íslands og ESB stangast hvað mest á.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin er svo almenn að hún verður varla röng — auðvitað þyrfti einhver málamiðlun að nást í aðildarviðræðum. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> og <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> staðfesta þó að viðræður snúast um «skilyrði og tímasetningu» innleiðingar, ekki um breytingar á regluverkinu sjálfu. Aðlögunartímabil eru svigrúmið — ekki undanþágur. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1\" title=\"Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-006</a> bendir á að færri undanþágur hafa verið veittar eftir 2004 og Króatía (2013) fékk engar merkjanlegar undanþágur. <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> staðfestir niðurstöðu Hagfræðistofnunar HÍ um að varanlegar undanþágur frá grunnregluverkinu séu ólíklegar. Fullyrðingin er rétt í víðum skilningi en gefur villandi mynd ef hún er túlkuð sem vísbending um veruleg pólitísk sérfyrirkomulag.",
+      "missing_context": "Aðildarviðræður snúast samkvæmt heimildum ekki um hvort regluverkið sé tekið upp, heldur hvenær og hvernig. Aðlögunartímabil geta verið umtalsverð (Pólland fékk 12 ára undanþágu frá landakaupum) en eru tímabundin. Varanlegar undanþágur á borð við dönsku undanþágurnar voru samdar við sérstakar sögulegar aðstæður (1992) og hafa ekki verið endurteknar í nýlegum aðildum. Sjávarútvegur og landbúnaður eru utan EES og myndu krefjast nýrra viðræðna frá grunni.",
       "supporting_evidence": [
         {
-          "id": "PARTY-PARL-001",
-          "source_name": "Alþingi — Kristrún Frostadóttir, forsætisráðherra (andsvar, 157. löggjafarþing)",
-          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T162602.html"
+          "id": "EEA-LEGAL-021",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
         },
         {
-          "id": "SOV-PARL-001",
-          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
-          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+          "id": "EEA-LEGAL-017",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards joining' factsheet",
+          "source_url": "https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf"
         },
         {
-          "id": "SOV-PARL-003",
-          "source_name": "Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)",
-          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T175023.html"
+          "id": "SOV-LEGAL-006",
+          "source_name": "Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1"
         },
         {
-          "id": "PARTY-DATA-019",
-          "source_name": "Althingi debate records; RÚV interviews with PM Kristrún Frostadóttir, February–March 2026",
-          "source_url": "https://www.ruv.is/"
+          "id": "EEA-DATA-014",
+          "source_name": "Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)",
+          "source_url": "https://ioes.hi.is/en/institute-economic-studies"
         }
       ],
       "contradicting_evidence": [],
@@ -670,9 +670,14 @@
       "claim_text": "Það er erfitt á þessum tímapunkti að segja hvort hægt sé að semja um ESB-samning sem er ásættanlegur fyrir Íslendinga.",
       "original_quote": "á þessum tímapunkti mjög erfitt að segja hvort hægt sé að semja um samning sem er ásættanlegur fyrir Íslendinga",
       "verdict": "supported",
-      "explanation": "Þetta er vel rökstutt sjónarhorn. Heimildir benda til þess að meginþættir samninganna — sjávarútvegsstefna, landbúnaðarstefna og gjaldmiðill — séu utan EES og hafi aldrei verið samið um þá (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application for membership of the European Union, SEC(2010) 153\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-020</a>, <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a>). Landbúnaðarkaflinn var aldrei opnaður í viðræðunum 2010–2013 vegna innri ágreinings (<a href=\"https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782591/EPRS_BRI(2026)782591_EN.pdf\" title=\"Summary of findings: Status of the accession negotiations between Iceland and the EU (Icelandic Ministry for Foreign Affairs, 2013); European Parliament briefing on EU-Iceland relations (2026)\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-003</a>) og sjávarútvegskaflinn var aldrei opnaður. Bændasamtökin áætla 40–60% búa yrðu órekstrarfær (<a href=\"https://www.bondi.is/frettir/kynningarefni\" title=\"Bændasamtök Íslands — EU membership impact assessment (2025); Ministry of Agriculture — subsidy data\" target=\"_blank\" rel=\"noopener\">POL-DATA-015</a>). Á sama tíma er 95% regluverksins formlega ekki til samningamála — aðeins tímalínan (<a href=\"https://link.springer.com/book/10.1057/9780230510302\" title=\"Grabbe, H. (2006) 'The EU's Transformative Power: Europeanization Through Conditionality in Central and Eastern Europe', Palgrave Macmillan\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-016</a>).",
-      "missing_context": "Fullyrðingin er viturlegt viðhorf. Engin viðræður hafa enn farið fram um erfiðustu málaflokka (sjávarútveg og landbúnað) og niðurstöður slíkra viðræðna eru ófyrirsjáanlegar. Þetta er ein helsta ástæða þess að margir sérfræðingar leggja áherslu á að viðræðurnar verði að fara fram áður en hægt er að dæma um niðurstöðuna.",
+      "explanation": "Fullyrðingin er varfærin og víðtæk — hún segir einungis að erfitt sé að segja hvort samningur sé mögulegur sem Íslendingar samþykktu. <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> staðfestir þessa óvissu beint: skýrsla Hagfræðistofnunar frá 2014 benti á að raunveruleg samningsskilmál í landbúnaði og sjávarútvegi höfðu aldrei verið prófuð þar sem viðræðum var hætt áður en erfiðustu kaflarnir voru leystir. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> og <a href=\"https://link.springer.com/book/10.1057/9780230510302\" title=\"Grabbe, H. (2006) 'The EU's Transformative Power: Europeanization Through Conditionality in Central and Eastern Europe', Palgrave Macmillan\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-016</a> styrkja þetta enn frekar — um 95% regluverksins er ekki samningsefni heldur aðeins aðlögunartímabil. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1\" title=\"Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-006</a> sýnir að undanþágur fyrir nýja aðildarríki hafa farið minnkandi og Króatía fékk engar veigamiklar undanþágur árið 2013.",
+      "missing_context": "Fullyrðingin er matskennd og þar af leiðandi erfitt að staðfesta eða hrekja. Þó ber að hafa í huga að <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> var unnin á tímabili þegar miðju-hægri ríkisstjórn hafði frosið viðræðurnar, sem gæti litað framsetningu niðurstaðna. Jafnframt hafa sumir fræðimenn bent á að 49. grein sáttmálans um Evrópusambandið heimilar í raun hvaða samningsniðurstöðu sem er, og langir aðlögunartímar geta virkað eins og undanþágur í framkvæmd.",
       "supporting_evidence": [
+        {
+          "id": "EEA-DATA-014",
+          "source_name": "Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)",
+          "source_url": "https://ioes.hi.is/en/institute-economic-studies"
+        },
         {
           "id": "EEA-LEGAL-021",
           "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
@@ -684,9 +689,9 @@
           "source_url": "https://link.springer.com/book/10.1057/9780230510302"
         },
         {
-          "id": "EEA-LEGAL-017",
-          "source_name": "European Commission — 'EU Accession Process: Steps towards joining' factsheet",
-          "source_url": "https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf"
+          "id": "SOV-LEGAL-006",
+          "source_name": "Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1"
         }
       ],
       "contradicting_evidence": [],
@@ -696,6 +701,27 @@
       "article_title": "Engin fordæmi fyrir leið Íslands í átt að ESB",
       "article_source": "RÚV",
       "article_date": "2026-03-10"
+    },
+    {
+      "claim_text": "Vilborg Ása Guðjónsdóttir alþjóðastjórnmálafræðingur hefur sagt að engin fordæmi séu fyrir þeirri leið sem Ísland hefur farið í átt að ESB.",
+      "original_quote": "Vilborg Ása Guðjónsdóttir alþjóðastjórnmálafræðingur segir: Engin fordæmi fyrir leið Íslands í átt að ESB.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/167/the-enlargement-of-the-union\" title=\"European Parliament — Accession Referendums Database; Alþingi Parliamentary Records\" target=\"_blank\" rel=\"noopener\">PREC-DATA-024</a> staðfestir skýrt að engin fordæmi eru í stækkunarsögu ESB fyrir þeirri leið sem Ísland fer — þ.e. að halda þjóðaratkvæðagreiðslu um hvort hefja eigi viðræður frekar en um niðurstöðu viðræðna. Öll fyrri aðildarríki gengu til viðræðna með skýrum meirihluta á þingi og meðal almennings. Íslands nálgun 2026 — þjóðaratkvæðagreiðsla um heimild til viðræðna — er nýlunda sem engar beinar hliðstæður finnast fyrir.",
+      "missing_context": "Sum ríki hófu viðræður án tryggðs stuðnings almennings (t.d. Svartfjallaland og ríki á Vestur-Balkanskaga) samkvæmt <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/167/the-enlargement-of-the-union\" title=\"European Parliament — Accession Referendums Database; Alþingi Parliamentary Records\" target=\"_blank\" rel=\"noopener\">PREC-DATA-024</a>. Greinarmunurinn á milli þess að semja og ganga í er mikilvægur — viðræður skuldbinda ekki til aðildar. Heimildir staðfesta ekki hvaða sérfræðingur sé Vilborg Ása Guðjónsdóttir, en efni fullyrðingarinnar er í samræmi við gögn.",
+      "supporting_evidence": [
+        {
+          "id": "PREC-DATA-024",
+          "source_name": "European Parliament — Accession Referendums Database; Alþingi Parliamentary Records",
+          "source_url": "https://www.europarl.europa.eu/factsheets/en/sheet/167/the-enlargement-of-the-union"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "precedents",
+      "attribution": "quoted",
+      "article_slug": "ekki-minn-kaffibolli",
+      "article_title": "Ekki minn kaffibolli",
+      "article_source": "Vísir",
+      "article_date": "2026-03-27"
     }
   ],
   "articles": [
@@ -707,6 +733,16 @@
       "claim_count": 20,
       "attribution_types": [
         "paraphrased",
+        "quoted"
+      ]
+    },
+    {
+      "slug": "ekki-minn-kaffibolli",
+      "title": "Ekki minn kaffibolli",
+      "source": "Vísir",
+      "date": "2026-03-27",
+      "claim_count": 1,
+      "attribution_types": [
         "quoted"
       ]
     }

@@ -40,7 +40,7 @@
       hearsay: "Orðsögn",
     },
     // Flat access helper for backward compatibility
-    verdictLabel: function(verdict, epistemicType) {
+    verdictLabel: function (verdict, epistemicType) {
       var type = epistemicType || "factual";
       var labels = this.verdictLabels[type] || this.verdictLabels.factual;
       return labels[verdict] || verdict;
@@ -48,38 +48,49 @@
     verdictDescriptions: {
       factual: {
         supported: "Heimildir styðja þessa fullyrðingu",
-        partially_supported: "Heimildir styðja hluta fullyrðingarinnar en ekki alla",
+        partially_supported:
+          "Heimildir styðja hluta fullyrðingarinnar en ekki alla",
         unsupported: "Heimildir sem við höfum styðja ekki þessa fullyrðingu",
-        misleading: "Fullyrðingin er ekki röng í sjálfu sér en heimildir sýna mikilvægt samhengi sem vantar",
-        unverifiable: "Við höfum ekki enn heimildir til að meta þessa fullyrðingu",
+        misleading:
+          "Fullyrðingin er ekki röng í sjálfu sér en heimildir sýna mikilvægt samhengi sem vantar",
+        unverifiable:
+          "Við höfum ekki enn heimildir til að meta þessa fullyrðingu",
       },
       prediction: {
         supported: "Heimildir og sérfræðingar styðja víðtækt þessa spá",
-        partially_supported: "Heimildir styðja spána að hluta en ekki alla þætti hennar",
+        partially_supported:
+          "Heimildir styðja spána að hluta en ekki alla þætti hennar",
         unsupported: "Heimildir sem við höfum styðja ekki rökfærslu spárinnar",
-        misleading: "Spáin einfaldar of mikið — heimildir sýna mikilvægt samhengi sem vantar",
+        misleading:
+          "Spáin einfaldar of mikið — heimildir sýna mikilvægt samhengi sem vantar",
         unverifiable: "Við höfum ekki enn heimildir til að meta þessa spá",
       },
       counterfactual: {
         supported: "Heimildir og sérfræðingar styðja víðtækt þessa tilgátu",
-        partially_supported: "Heimildir styðja tilgátuna að hluta en ekki alla þætti hennar",
-        unsupported: "Heimildir sem við höfum styðja ekki rökfærslu tilgátunnar",
-        misleading: "Tilgátan einfaldar of mikið — heimildir sýna mikilvægt samhengi sem vantar",
+        partially_supported:
+          "Heimildir styðja tilgátuna að hluta en ekki alla þætti hennar",
+        unsupported:
+          "Heimildir sem við höfum styðja ekki rökfærslu tilgátunnar",
+        misleading:
+          "Tilgátan einfaldar of mikið — heimildir sýna mikilvægt samhengi sem vantar",
         unverifiable: "Við höfum ekki enn heimildir til að meta þessa tilgátu",
       },
       hearsay: {
-        unverifiable: "Fullyrðing byggð á ónafngreindum heimildum sem ekki er hægt að staðfesta",
+        unverifiable:
+          "Fullyrðing byggð á ónafngreindum heimildum sem ekki er hægt að staðfesta",
       },
     },
     // Flat access helper — returns description for verdict + epistemic type
-    verdictDescription: function(verdict, epistemicType) {
+    verdictDescription: function (verdict, epistemicType) {
       var type = epistemicType || "factual";
-      var descs = this.verdictDescriptions[type] || this.verdictDescriptions.factual;
-      return descs[verdict] || (this.verdictDescriptions.factual[verdict] || "");
+      var descs =
+        this.verdictDescriptions[type] || this.verdictDescriptions.factual;
+      return descs[verdict] || this.verdictDescriptions.factual[verdict] || "";
     },
     epistemicTypeDescriptions: {
       factual: "Fullyrðing um staðreyndir sem hægt er að bera saman við gögn",
-      prediction: "Spá um framtíðina — mat byggir á gæðum rökfærslu og samstöðu heimilda",
+      prediction:
+        "Spá um framtíðina — mat byggir á gæðum rökfærslu og samstöðu heimilda",
       counterfactual: "Tilgáta um hvað hefði gerst ef aðstæður væru öðruvísi",
       hearsay: "Fullyrðing sem byggir á ónafngreindum heimildum",
     },
@@ -150,6 +161,7 @@
       pro_eu: "ESB-jákvæð",
       anti_eu: "ESB-gagnrýnin",
       mixed: "Blandað/hlutlaus",
+      insufficient_data: "Of fá gögn",
     },
     attributionLabels: {
       quoted: "Tilvitnað",
@@ -158,26 +170,26 @@
       mentioned: "Nefnt",
     },
     partyClasses: {
-      "Sjálfstæðisflokkur": "party-xd",
-      "Samfylkingin": "party-s",
-      "Framsóknarflokkur": "party-b",
-      "Miðflokkurinn": "party-m",
-      "Viðreisn": "party-c",
+      Sjálfstæðisflokkur: "party-xd",
+      Samfylkingin: "party-s",
+      Framsóknarflokkur: "party-b",
+      Miðflokkurinn: "party-m",
+      Viðreisn: "party-c",
       "Vinstrihreyfingin - grænt framboð": "party-v",
-      "Píratar": "party-p",
+      Píratar: "party-p",
       "Flokkur fólksins": "party-f",
-      "Hreyfingin": "party-hr",
+      Hreyfingin: "party-hr",
     },
     partyShortLabels: {
-      "Sjálfstæðisflokkur": "xD",
-      "Samfylkingin": "Sam",
-      "Framsóknarflokkur": "Fram",
-      "Miðflokkurinn": "Miðfl",
-      "Viðreisn": "Viðr",
+      Sjálfstæðisflokkur: "xD",
+      Samfylkingin: "Sam",
+      Framsóknarflokkur: "Fram",
+      Miðflokkurinn: "Miðfl",
+      Viðreisn: "Viðr",
       "Vinstrihreyfingin - grænt framboð": "VG",
-      "Píratar": "Pír",
+      Píratar: "Pír",
       "Flokkur fólksins": "FF",
-      "Hreyfingin": "Hreyfing",
+      Hreyfingin: "Hreyfing",
     },
   };
 });

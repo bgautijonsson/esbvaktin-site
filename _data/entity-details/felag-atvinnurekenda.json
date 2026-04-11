@@ -2,21 +2,20 @@
   "slug": "felag-atvinnurekenda",
   "name": "Félag atvinnurekenda",
   "type": "institution",
-  "description": "Stofnun — hlynnt ESB-aðild.",
+  "description": "Stofnun — hlutlaus um ESB-aðild.",
   "role": "atvinnustofnun",
   "party": null,
-  "stance": "pro_eu",
-  "stance_score": 0.5,
-  "credibility": 0.67,
+  "stance": "neutral",
+  "stance_score": 0.0,
+  "credibility": 0.5,
   "attribution_counts": {
     "paraphrased": 10,
-    "mentioned": 13
+    "mentioned": 22
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 2,
-    "unverifiable": 1,
-    "supported": 1
+    "partially_supported": 3,
+    "unverifiable": 1
   },
   "claims": [
     {
@@ -94,14 +93,19 @@
     {
       "claim_text": "Vegna smæðar úrtaksins eru tölfræðileg vikmörk í könnunum Félags atvinnurekenda há.",
       "original_quote": "vegna smæðar úrtaksins eru tölfræðileg vikmörk í þessum könnunum há",
-      "verdict": "supported",
-      "explanation": "Þetta er rétt ályktun sem leiðir beint af úrtaksstærð FA-könnunarinnar. Samkvæmt fullyrðingu 21 bárust 61 svör af 153 félagsmönnum. Við 95% öryggismörk gefa 61 svör vikmörk á bilinu ±10–13 prósentustig, sem er ótvírætt hátt. <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins — Könnun meðal félagsmanna um ESB-aðild\" target=\"_blank\" rel=\"noopener\">POLL-DATA-023</a> nefnir sérstaklega að aðferðafræði SI-kannana (og þar með FA-kannana) hefur ekki verið óháð staðfest. Greinin sjálf nefnir þetta atriði, sem er til marks um gagnsæi.",
-      "missing_context": "Til samanburðar hafa vikmörk Gallup Þjóðarpúls (~810 svör) verið ~±3,5 prósentustig (<a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup hf. — Þjóðarpúls; Vísir\" target=\"_blank\" rel=\"noopener\">POLL-DATA-019</a>). FA-könnunin hefur þannig um þrefalt meiri skekkju. Þetta þýðir að niðurstöður nálægt 50/50 (eins og fullyrðingar 1 og 2) eru ekki tölfræðilega marktækar.",
+      "verdict": "partially_supported",
+      "explanation": "Almenna meginreglan um smáar kannanir og há vikmörk er rétt, en heimildir staðfesta ekki fullyrðinguna um «Félag atvinnurekenda» sérstaklega. <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins — Könnun meðal félagsmanna um ESB-aðild\" target=\"_blank\" rel=\"noopener\">POLL-DATA-023</a> fjallar um kannanir Samtaka iðnaðarins (SI) meðal félagsmanna sinna, ekki kannanir SA. Þó nefnir heimildin að aðferðafræði, úrtaksstærð og svörunarhlutfall geti verið breytilegt milli ára, sem styður þá hugmynd að vikmörk geti verið há í slíkum könnunum. Ekki er hægt að staðfesta fullyrðinguna að fullu án beinna gagna um kannanir SA.",
+      "missing_context": "Heimildir fjalla um kannanir SI, ekki SA (Samtök atvinnurekenda). Engar beinar upplýsingar liggja fyrir um úrtaksstærð eða vikmörk í könnunum SA. <a href=\"https://fel.hi.is/is/rannsoknir-spurningalistakannanir/netpanell\" title=\"Félagsvísindastofnun Háskóla Íslands — Rannsóknir á viðhorfum til Evrópumála; Gallup methodology notes\" target=\"_blank\" rel=\"noopener\">POLL-DATA-022</a> bendir á að orðalag spurninga hefur mikil áhrif á niðurstöður, sem bætir við óvissu um túlkun kannana almennt.",
       "supporting_evidence": [
         {
           "id": "POLL-DATA-023",
           "source_name": "Samtök iðnaðarins — Könnun meðal félagsmanna um ESB-aðild",
           "source_url": "https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb"
+        },
+        {
+          "id": "POLL-DATA-022",
+          "source_name": "Félagsvísindastofnun Háskóla Íslands — Rannsóknir á viðhorfum til Evrópumála; Gallup methodology notes",
+          "source_url": "https://fel.hi.is/is/rannsoknir-spurningalistakannanir/netpanell"
         }
       ],
       "contradicting_evidence": [],

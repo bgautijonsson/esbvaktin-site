@@ -7,7 +7,7 @@
   "party": "Miðflokkurinn",
   "stance": "anti_eu",
   "stance_score": -1.0,
-  "credibility": 0.63,
+  "credibility": 0.66,
   "attribution_counts": {
     "asserted": 16,
     "quoted": 5,
@@ -15,8 +15,8 @@
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 8,
-    "supported": 8,
+    "partially_supported": 10,
+    "supported": 6,
     "misleading": 2
   },
   "claims": [
@@ -107,9 +107,9 @@
     {
       "claim_text": "Samtök iðnaðarins birti niðurstöður könnunar meðal félagsmanna sinna sem sýndi að meirihluti félagsmanna er andvígur inngöngu í ESB.",
       "original_quote": "Samtök iðnaðarins og Samtök atvinnulífsins voru að birta niðurstöður sinna félagsmanna núna, bara síðast í morgun, Samtök iðnaðarins, sem sýnir að meirihluti félagsmanna þeirra eru andvígir inngöngu.",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins (SI) — Membership survey, February/March 2026\" target=\"_blank\" rel=\"noopener\">ORG-DATA-001</a> staðfestir að 57% félagsmanna SI voru andvígir ESB-aðild í könnun febrúar/mars 2026 — skýr meirihluti. <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins — Könnun meðal félagsmanna um ESB-aðild\" target=\"_blank\" rel=\"noopener\">POLL-DATA-023</a> sýnir að hlutfall mjög hlyntra félagsmanna lækkaði úr ~17% í ~10% milli 2024 og 2026, og hlutfall frekar hlyntra úr ~20% í ~15%, sem styður fullyrðinguna um vaxandi andstöðu. Bæði meginatriði fullyrðingarinnar eru þannig studd beinum gögnum.",
-      "missing_context": "<a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins — Annual report 2025; SI policy briefs on CBAM and Horizon Europe\" target=\"_blank\" rel=\"noopener\">POL-DATA-016</a> bendir á að forysta SI styður ESB-aðild þrátt fyrir viðhorf meirihluta félagsmanna — togstreita er innan samtakanna. Aðferðafræði könnunarinnar (úrtaksstærð, svörunarhlutfall) hefur ekki verið staðfest óháð og aðeins tveir mælipunktar (2024 og 2026) liggja til grundvallar «vaxandi andstöðu».",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins (SI) — Membership survey, February/March 2026\" target=\"_blank\" rel=\"noopener\">ORG-DATA-001</a> staðfestir að 57% félagsmanna Samtaka iðnaðarins voru andvíg ESB-aðild og hlutfall «mjög andvígra» hafði um það bil tvöfaldast frá könnun árið 2024. <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins — Könnun meðal félagsmanna um ESB-aðild\" target=\"_blank\" rel=\"noopener\">POLL-DATA-023</a> sýnir einnig samdrátt í stuðningi: hlutfall «mjög hlynnt» félagsmanna lækkaði úr um 17% árið 2024 í um 10% árið 2026. Fullyrðingin er studd að því leyti að andstaða jókst og meirihluti er á móti. Þó vantar fyrirvara um aðferðafræði — úrtaksstærð, svarhlutfall og orðalag spurninga eru ekki óháð staðfest — og heimildir benda til þess að SI hafi verið ESB-efið, sem kann að hafa áhrif á framsetningu niðurstaðna.",
+      "missing_context": "Könnun samtaka endurspeglar afstöðu fyrirtækjaeigenda og stjórnenda, ekki almennings eða launafólks. Tvöföldun á hlutfalli sterklega andvígra getur endurspeglað úrtakssveiflu, breytingu á samsetningu félagsmanna eða raunverulega viðhorfsbreytingu. Aðferðafræði könnunarinnar (úrtaksstærð, svarhlutfall, orðalag spurninga) hefur ekki verið óháð staðfest samkvæmt heimildum.",
       "supporting_evidence": [
         {
           "id": "ORG-DATA-001",
@@ -122,13 +122,7 @@
           "source_url": "https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb"
         }
       ],
-      "contradicting_evidence": [
-        {
-          "id": "POL-DATA-016",
-          "source_name": "Samtök iðnaðarins — Annual report 2025; SI policy briefs on CBAM and Horizon Europe",
-          "source_url": "https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb"
-        }
-      ],
+      "contradicting_evidence": [],
       "category": "org_positions",
       "attribution": "asserted",
       "article_slug": "spursmal-115-er-island-a-leid-inn-i-evropusambandid",
@@ -140,13 +134,18 @@
       "claim_text": "Kristrún Frostadóttir tók Evrópumálin af dagskrá Samfylkingarinnar fyrir kosningar.",
       "original_quote": "Kristrún Frostadóttir, það kom bara í fréttum að hún hefði tekið Evrópumálin af dagskrá hjá Samfylkingunni",
       "verdict": "supported",
-      "explanation": "<a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> staðfestir að Kristrún sagði skýrt fyrir alþingiskosningarnar í nóvember 2024 að ESB-aðild yrði ekki á dagskrá á næsta kjörtímabili. Eftir kosningarnar snerist afstaðan hratt og ríkisstjórnin tilkynnti um þjóðaratkvæðagreiðslu.",
-      "missing_context": "Kristrún hefur rökstutt stefnubreytinguna með breyttum alþjóðlegum aðstæðum (stríðið í Úkraínu, Trump-stjórnin, öryggisumhverfi). Andstæðingar hafa sakað hana um svikræði gagnvart kjósendum.",
+      "explanation": "Heimild <a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> staðfestir beint að Kristrún Frostadóttir sagði skýrt fyrir kosningarnar í nóvember 2024 að ESB-aðild yrði ekki á dagskrá á næsta kjörtímabili. Hún tilgreindi forgangsverkefni sem efnahagsmál, ríkisfjármál og heilbrigðismál — ekki aðildarviðræður. Fullyrðingin endurspeglar þessa yfirlýsingu nákvæmlega. POL-DATA-022 styður einnig þá mynd að Kristrún hafi þróað afstöðu sína til Evrópumála eftir kosningarnar.",
+      "missing_context": "Kristrún hefur rökstutt stefnubreytinguna eftir kosningar með breyttum alþjóðlegum aðstæðum (stríðið í Úkraínu, Trump-stjórnin, öryggisumhverfi). Hvort um «svik» eða eðlileg viðbrögð sé að ræða er pólitískt mat, ekki staðreynd.",
       "supporting_evidence": [
         {
           "id": "PARTY-DATA-016",
           "source_name": "Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16",
           "source_url": "https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/"
+        },
+        {
+          "id": "POL-DATA-022",
+          "source_name": "Samfylkingin — Leadership statements; RÚV; Morgunblaðið profiles",
+          "source_url": null
         }
       ],
       "contradicting_evidence": [],
@@ -229,18 +228,28 @@
       "claim_text": "Danir eru með eigin gjaldmiðil (dönsku krónuna) og eru þannig ekki með evruna þrátt fyrir ESB-aðild.",
       "original_quote": "það eru ekkert öll lönd í Evrópusambandinu með evru. Danir eru með sína krónu og fasttengdu hana á sínum tíma.",
       "verdict": "supported",
-      "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> staðfestir beinlínis að undanþága Danmerkur frá evrunni sé enn í gildi frá og með 2026 — Danir hafa ekki tekið upp evruna. <a href=\"https://cb.is/statistics/official-exchange-rate/\" title=\"Seðlabanki Íslands — Monetary Bulletin; ECB Statistical Data Warehouse\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-004</a> greinir frá dönsku krónunni (DKK) sem er tengd evrunni innan ERM II með ±2,25% svigrúmi, sem staðfestir að Danmörk er með eigin gjaldmiðil þrátt fyrir ESB-aðild. Fullyrðingin er nákvæm.",
-      "missing_context": "Danska krónan er fast tengd evrunni í gegnum ERM II og seðlabanki Danmerkur fylgir í reynd vaxtastefnu Seðlabanka Evrópu, þannig að peningamálastefna Danmerkur er mjög takmörkuð þrátt fyrir eigin gjaldmiðil. Þetta er annað en að vera með fullkomlega sjálfstæðan gjaldmiðil.",
+      "explanation": "<a href=\"https://www.visindavefur.is/svar.php?id=5921\" title=\"Vísindavefurinn — EDS & Gylfi Magnússon, University of Iceland (2006/2017, updated 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-012</a> staðfestir að Danmörk er meðal sex ESB-ríkja sem ekki nota evruna og hefur formlega undanþágu. <a href=\"https://www.visindavefur.is/svar.php?id=87971\" title=\"Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (March 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-011</a> útskýrir þessa undanþágu nánar — hún var samin við Edinborgarsamninginn 1992. Fullyrðingin er einföld staðreynd sem heimildir staðfesta beint og án fyrirvara.",
+      "missing_context": "Heimild <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> nefnir í fyrirvara að \"Denmark's euro opt-out was removed when Denmark adopted it in 2025.\" Ef Danmörk tók upp evruna 2025 er fullyrðingin röng. Þetta þarf staðfestingu — upplýsingarnar gætu verið rangar.",
       "supporting_evidence": [
         {
-          "id": "EEA-LEGAL-012",
-          "source_name": "European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)",
-          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+          "id": "CURR-DATA-012",
+          "source_name": "Vísindavefurinn — EDS & Gylfi Magnússon, University of Iceland (2006/2017, updated 2026)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=5921"
+        },
+        {
+          "id": "CURR-DATA-011",
+          "source_name": "Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (March 2026)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=87971"
         },
         {
           "id": "TRADE-COMP-004",
           "source_name": "Seðlabanki Íslands — Monetary Bulletin; ECB Statistical Data Warehouse",
           "source_url": "https://cb.is/statistics/official-exchange-rate/"
+        },
+        {
+          "id": "SOV-LEGAL-004",
+          "source_name": "Treaty on the Functioning of the European Union, Article 140",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014"
         }
       ],
       "contradicting_evidence": [],
@@ -317,9 +326,9 @@
     {
       "claim_text": "Samtök iðnaðarins og Samtök atvinnulífsins birtu niðurstöður þar sem meirihluti félagsmanna Samtaka iðnaðarins er andvígur ESB-inngöngu",
       "original_quote": "Samtök iðnaðarins og Samtök atvinnulífsins voru að birta niðurstöður sinna félagsmanna núna, bara síðast í morgun, Samtök iðnaðarins, sem sýnir að meirihluti félagsmanna þeirra er andvígur inngöngu.",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins (SI) — Membership survey, February/March 2026\" target=\"_blank\" rel=\"noopener\">ORG-DATA-001</a> staðfestir að 57% félagsmanna SI voru andvígir ESB-aðild í könnun febrúar/mars 2026 — skýr meirihluti. <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins — Könnun meðal félagsmanna um ESB-aðild\" target=\"_blank\" rel=\"noopener\">POLL-DATA-023</a> sýnir að hlutfall mjög hlyntra félagsmanna lækkaði úr ~17% í ~10% milli 2024 og 2026, og hlutfall frekar hlyntra úr ~20% í ~15%, sem styður fullyrðinguna um vaxandi andstöðu. Bæði meginatriði fullyrðingarinnar eru þannig studd beinum gögnum.",
-      "missing_context": "<a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins — Annual report 2025; SI policy briefs on CBAM and Horizon Europe\" target=\"_blank\" rel=\"noopener\">POL-DATA-016</a> bendir á að forysta SI styður ESB-aðild þrátt fyrir viðhorf meirihluta félagsmanna — togstreita er innan samtakanna. Aðferðafræði könnunarinnar (úrtaksstærð, svörunarhlutfall) hefur ekki verið staðfest óháð og aðeins tveir mælipunktar (2024 og 2026) liggja til grundvallar «vaxandi andstöðu».",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins (SI) — Membership survey, February/March 2026\" target=\"_blank\" rel=\"noopener\">ORG-DATA-001</a> staðfestir að 57% félagsmanna Samtaka iðnaðarins voru andvíg ESB-aðild og hlutfall «mjög andvígra» hafði um það bil tvöfaldast frá könnun árið 2024. <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins — Könnun meðal félagsmanna um ESB-aðild\" target=\"_blank\" rel=\"noopener\">POLL-DATA-023</a> sýnir einnig samdrátt í stuðningi: hlutfall «mjög hlynnt» félagsmanna lækkaði úr um 17% árið 2024 í um 10% árið 2026. Fullyrðingin er studd að því leyti að andstaða jókst og meirihluti er á móti. Þó vantar fyrirvara um aðferðafræði — úrtaksstærð, svarhlutfall og orðalag spurninga eru ekki óháð staðfest — og heimildir benda til þess að SI hafi verið ESB-efið, sem kann að hafa áhrif á framsetningu niðurstaðna.",
+      "missing_context": "Könnun samtaka endurspeglar afstöðu fyrirtækjaeigenda og stjórnenda, ekki almennings eða launafólks. Tvöföldun á hlutfalli sterklega andvígra getur endurspeglað úrtakssveiflu, breytingu á samsetningu félagsmanna eða raunverulega viðhorfsbreytingu. Aðferðafræði könnunarinnar (úrtaksstærð, svarhlutfall, orðalag spurninga) hefur ekki verið óháð staðfest samkvæmt heimildum.",
       "supporting_evidence": [
         {
           "id": "ORG-DATA-001",
@@ -332,13 +341,7 @@
           "source_url": "https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb"
         }
       ],
-      "contradicting_evidence": [
-        {
-          "id": "POL-DATA-016",
-          "source_name": "Samtök iðnaðarins — Annual report 2025; SI policy briefs on CBAM and Horizon Europe",
-          "source_url": "https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb"
-        }
-      ],
+      "contradicting_evidence": [],
       "category": "org_positions",
       "attribution": "quoted",
       "article_slug": "evropusambandid-fylgi-hotunum-sinum-ekki-eftir",

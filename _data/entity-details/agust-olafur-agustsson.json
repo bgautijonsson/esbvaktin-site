@@ -7,7 +7,7 @@
   "party": null,
   "stance": "pro_eu",
   "stance_score": 1.0,
-  "credibility": 0.65,
+  "credibility": 0.59,
   "attribution_counts": {
     "paraphrased": 29
   },
@@ -19,8 +19,8 @@
     "last_speech": "2021-04-19"
   },
   "scorecard": {
-    "partially_supported": 18,
-    "supported": 7,
+    "partially_supported": 20,
+    "supported": 5,
     "misleading": 1
   },
   "claims": [
@@ -64,8 +64,8 @@
       "claim_text": "Vaxtastig er mismunandi milli aðildarríkja ESB; til dæmis er vaxtastig í Ungverjalandi annað en í Hollandi.",
       "original_quote": "Það er fullkomlega rangt að VEXTIR séu þeir sömu allstaðar í ESB löndunum til dæmis er allt annað vaxtastig í Ungverjalandi en í Hollandi og svo framvegis.",
       "verdict": "supported",
-      "explanation": "Heimildir staðfesta að vextir innan ESB eru mismunandi. <a href=\"https://www.visindavefur.is/svar.php?id=60990\" title=\"Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-016</a> lýsir því hvernig vaxtamunur á evrusvæðinu var raunverulegur, sérstaklega í kreppunni 2010–2012. Enn fremur er Ungverjaland ekki aðili að evrusvæðinu og heldur eigin gjaldmiðli (forint), sem þýðir að vaxtamunurinn við Holland er enn meiri. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> staðfestir einnig umtalsverðan breytileika í húsnæðislánavöxtum á milli ESB-landa.",
-      "missing_context": "Mikilvægt samhengi vantar: Ungverjaland er ESB-ríki en ekki á evrusvæðinu. Vaxtamunur milli evruríkja er minni en milli evruríkja og ESB-ríkja utan evrunnar. Fullyrðingin blandar saman ESB-aðild og evruaðild.",
+      "explanation": "Fullyrðingin er einföld og rétt: vaxtastig er mismunandi milli ESB-ríkja. <a href=\"https://www.visindavefur.is/svar.php?id=60990\" title=\"Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-016</a> útskýrir hvernig vaxtamunur milli evrulandanna jókst verulega í kreppunni 2010–2012 þrátt fyrir sameiginlegan gjaldmiðil. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a> sýnir að vaxtakjör á húsnæðislánum eru breytileg milli aðildarríkja eftir aðstæðum á hverjum stað. Ungverjaland er utan evrusvæðisins og hefur eigin seðlabanka, en Holland notar evruna — þetta skýrir hluta vaxtamunarins.",
+      "missing_context": "Vaxtamunur á ESB-svæðinu stafar bæði af gjaldmiðlaaðstæðum (evrusvæði vs utan þess) og áhættumati á hverju ríki. Ungverjaland er utan evrusvæðisins og notar eigin gjaldmiðil (forint) sem gerir samanburðinn enn skýrari, en fullyrðingin tilgreinir ekki þennan grundvallarmun.",
       "supporting_evidence": [
         {
           "id": "CURR-DATA-016",
@@ -73,14 +73,14 @@
           "source_url": "https://www.visindavefur.is/svar.php?id=60990"
         },
         {
-          "id": "HOUS-DATA-005",
-          "source_name": "Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase",
-          "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
-        },
-        {
           "id": "HOUSING-DATA-008",
           "source_name": "European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report",
           "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
+        },
+        {
+          "id": "CURR-DATA-007",
+          "source_name": "Central Bank of Iceland; ECB; Eurostat HICP",
+          "source_url": "https://www.sedlabanki.is/"
         }
       ],
       "contradicting_evidence": [],
@@ -375,9 +375,9 @@
     {
       "claim_text": "Aðildarríki ráða sjálf hvernig þau útdeila kvóta sínum.",
       "original_quote": "Aðildarríki ráða sömuleiðis sjálf hvernig þau útdeila kvótanum sínum.",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380\" title=\"EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024\" target=\"_blank\" rel=\"noopener\">FISH-DATA-032</a> staðfestir berum orðum að «each member state has full sovereignty over how it distributes its quota internally» og vísar til greinar 16(6) í reglugerð 1380/2013. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380\" title=\"Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-030</a> staðfestir einnig þessa meginreglu og nefnir að Danmörk, Holland og Eistland nota aflahlutdeildir (ITQ) innan ramma CFP. Fullyrðingin er rétt — innri dreifing kvóta er alfarið á forræði aðildarríkjanna.",
-      "missing_context": "Þó aðildarríki ráði innri dreifingu þarf að hafa í huga að heildaraflamark (TAC) er sett af ráðherraráði ESB og hlutfallslegur stöðugleiki (relative stability) ákvarðar hvað hvert ríki fær. Aðildarríki ráða þannig «hvernig» en ekki «hversu miklu» er útdeilt. Dómstóll ESB takmarkar einnig hversu mismunandi dreifing getur verið.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380\" title=\"EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024\" target=\"_blank\" rel=\"noopener\">FISH-DATA-032</a> og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380\" title=\"Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-030</a> staðfesta að aðildarríki ráði sjálf hvernig þau útdeili kvóta sínum innan ramma sameiginlegu sjávarútvegsstefnunnar. Grein 16(6) í reglugerð 1380/2013 segir skýrt að aðildarríki «ákveði úthlutun veiðiheimilda» meðal eigin skipa, og grein 17 útskýrir að ríkin noti «gagnsæ og hlutlæg viðmið». Nokkur ríki nota kvótakerfi líkt íslensku aflamarkskerfinu. Hins vegar vantar í fullyrðinguna mikilvægt samhengi: kvótinn sem úthlutað er er ákveðinn af ráðherraráðinu samkvæmt «hlutfallslegum stöðugleika» og hámarksafla (TAC), svo aðildarríkin ráða aðeins yfir innri dreifingu — ekki yfir heildarmagni.",
+      "missing_context": "Fullyrðingin er rétt á bókstaflegum nótum en gefur of einfalda mynd. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380\" title=\"EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024\" target=\"_blank\" rel=\"noopener\">FISH-DATA-032</a> undirstrikar að meginafsalið felist í hámarksaflanum (TAC) og aðgangi annarra ESB-skipa að efnahagslögsögunni, ekki í innri úthlutun. <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development\" title=\"European Parliament — The Common Fisheries Policy: Origins and Development\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-005</a> bendir á að hlutfallslegur stöðugleiki byggist á sögulegum veiðum og það sé alveg óljóst hvernig hlutdeild Íslands yrði reiknuð. Þá setja reglur um brottkastsbanns, flotastærð og eftirlit frekari skorður á úthlutunarkerfið.",
       "supporting_evidence": [
         {
           "id": "FISH-DATA-032",
@@ -388,11 +388,6 @@
           "id": "FISH-DATA-030",
           "source_name": "Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies",
           "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380"
-        },
-        {
-          "id": "FISH-LEGAL-005",
-          "source_name": "European Parliament — The Common Fisheries Policy: Origins and Development",
-          "source_url": "https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development"
         }
       ],
       "contradicting_evidence": [],
@@ -759,27 +754,33 @@
     {
       "claim_text": "Danmörk, Írland, Frakkland, Svíþjóð, Holland, Belgía, Spánn og Lúxemborg eru aðilar að ESB og eru fullvalda ríki með eigin fjárlög og eigin skattastefnu.",
       "original_quote": "Danmörk, Írland, Frakkland, Svíþjóð, Holland, Belgía, Spánn og Lúxemborg eru allt fullvalda ríki með eigin fjárlög, eigin skattastefnu og sín eigin innlendu deilumál þrátt fyrir að vera aðilar að ESB.",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003\" title=\"Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-030</a> staðfestir skipan valds ESB þar sem skattamál eru að mestu á forræði aðildarríkja (ESB hefur aðeins stuðningsvaldssvæði í skattamálum). <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1\" title=\"Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-006</a> staðfestir að Danmörk og Írland hafa sérstaka undanþágusamþykkta. Öll nefnd ríki eru sannarlega ESB-aðildarríki sem halda eigin fjárlögum og skattastefnu. Fullyrðingin er rétt í meginatriðum.",
-      "missing_context": "Þótt aðildarríki hafi eigin fjárlög og skattastefnu eru þau bundin af reglum eins og Stability and Growth Pact sem takmarkar fjárlagahalla (undir 3% af VLF) og opinberar skuldir (undir 60% af VLF). ESB-reglur um samkeppni, ríkisaðstoð og VSK setja einnig ákveðin takmörk á skattastefnu.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að Danmörk og Írland eru ESB-ríki sem hafa samið um undanþágur (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1\" title=\"Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-006</a>), og <a href=\"https://www.eeas.europa.eu/eeas/eu-arctic-policy_en\" title=\"European Commission — EU Arctic Policy, Joint Communication JOIN(2021) 27\" target=\"_blank\" rel=\"noopener\">SOV-DATA-001</a> staðfestir sjálfstæða stöðu aðildarríkja á alþjóðavettvangi. Þó er fullyrðingin of einföld — ESB-aðild felur í sér framsal ákveðinna valdheimilda, einkum á sviði viðskiptastefnu (<a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a>) og innri markaðar (<a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a>). Aðildarríki hafa eigin fjárlög og skattastefnu, en þau lúta sameiginlegum reglum um ríkisaðstoð, samkeppni og fjárlagaaga evrusvæðisins. Fullyrðingin skapar þannig of svart-hvíta mynd af fullveldi innan ESB.",
+      "missing_context": "ESB-aðild felur í sér framsal viðskiptastefnu til ESB samkvæmt 207. gr. TFEU (<a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a>). Aðildarríki eru bundin af reglum um fjárlagaaga, sérstaklega á evrusvæðinu. Danmörk hefur undanþágu frá evrunni en flest ný aðildarríki fá ekki sambærilegar undanþágur (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1\" title=\"Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-006</a>).",
       "supporting_evidence": [
-        {
-          "id": "SOV-LEGAL-030",
-          "source_name": "Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003"
-        },
         {
           "id": "SOV-LEGAL-006",
           "source_name": "Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols",
           "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1"
         },
         {
-          "id": "SOV-LEGAL-014",
-          "source_name": "TEU, Title V — CFSP provisions; Icelandic Ministry for Foreign Affairs — Annual alignment reports",
-          "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/iceland-external-relations-common-foreign-and-security-policy.html"
+          "id": "SOV-DATA-001",
+          "source_name": "European Commission — EU Arctic Policy, Joint Communication JOIN(2021) 27",
+          "source_url": "https://www.eeas.europa.eu/eeas/eu-arctic-policy_en"
         }
       ],
-      "contradicting_evidence": [],
+      "contradicting_evidence": [
+        {
+          "id": "SOV-LEGAL-032",
+          "source_name": "TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview",
+          "source_url": "https://www.efta.int/free-trade/free-trade-agreements"
+        },
+        {
+          "id": "EEA-LEGAL-022",
+          "source_name": "EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'",
+          "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
+        }
+      ],
       "category": "sovereignty",
       "attribution": "paraphrased",
       "article_slug": "innlimunarsinna-svarad-endurbirt-blogg-fra-22-8-2025",

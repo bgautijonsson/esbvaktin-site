@@ -30,7 +30,9 @@
   border-left: 3px solid hsl(var(--stance-hue, 60), var(--stance-sat, 10%), 45%);
   border-radius: var(--radius-md);
   padding: 0.95rem;
-  transition: border-color var(--transition), background var(--transition);
+  transition:
+    border-color var(--transition),
+    background var(--transition);
 }
 
 /* ── Badge row (type + party + stance dot) ───────────────────────── */
@@ -55,6 +57,17 @@
   flex-shrink: 0;
   background: hsl(var(--sh, 60), var(--ss, 10%), 92%);
   color: hsl(var(--sh, 60), var(--ss, 10%), 30%);
+}
+.et-stance-insufficient {
+  border: 1px dashed var(--clr-muted, #999);
+  background: var(--clr-bg-muted, #f5f5f0);
+  color: var(--clr-muted, #999);
+  font-weight: 400;
+}
+.et-obs-count {
+  font-weight: 400;
+  font-size: 0.58rem;
+  opacity: 0.7;
 }
 
 /* ── Name (prominent h3, carries stretched link) ─────────────────── */
@@ -101,9 +114,18 @@
   white-space: nowrap;
 }
 
-.et-type-party { border-color: var(--accent); color: var(--accent); }
-.et-type-institution { border-color: var(--v-supported); color: var(--v-supported); }
-.et-type-individual { border-color: var(--v-partial); color: var(--v-partial); }
+.et-type-party {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.et-type-institution {
+  border-color: var(--v-supported);
+  color: var(--v-supported);
+}
+.et-type-individual {
+  border-color: var(--v-partial);
+  color: var(--v-partial);
+}
 
 /* ── Party pill (sits above stretched link) ──────────────────────── */
 
@@ -189,7 +211,9 @@
   font-weight: 500;
   color: var(--text);
   cursor: pointer;
-  transition: border-color var(--transition), background var(--transition);
+  transition:
+    border-color var(--transition),
+    background var(--transition);
 }
 
 .et-pager-btn:hover:not(:disabled) {
@@ -220,7 +244,9 @@
   color: var(--text-muted);
 }
 
-.et-note p { margin: 0; }
+.et-note p {
+  margin: 0;
+}
 
 /* ── Dark mode ───────────────────────────────────────────────────── */
 
@@ -253,7 +279,9 @@
   border-radius: var(--radius-lg);
   text-decoration: none;
   color: inherit;
-  transition: box-shadow var(--transition), border-color var(--transition);
+  transition:
+    box-shadow var(--transition),
+    border-color var(--transition);
 }
 
 .cmp-gateway:hover {
@@ -283,5 +311,7 @@
 /* ── Responsive ──────────────────────────────────────────────────── */
 
 @media (max-width: 600px) {
-  .cmp-gateways { grid-template-columns: 1fr; }
+  .cmp-gateways {
+    grid-template-columns: 1fr;
+  }
 }

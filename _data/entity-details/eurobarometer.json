@@ -7,15 +7,15 @@
   "party": null,
   "stance": "neutral",
   "stance_score": 0.0,
-  "credibility": 0.75,
+  "credibility": 0.5,
   "attribution_counts": {
     "paraphrased": 2,
-    "mentioned": 5
+    "mentioned": 10
   },
   "althingi_stats": null,
   "scorecard": {
     "partially_supported": 1,
-    "supported": 1
+    "unverifiable": 1
   },
   "claims": [
     {
@@ -42,21 +42,10 @@
     {
       "claim_text": "Stuðningur Íra við ESB-aðild er með því hæsta í Evrópu.",
       "original_quote": "stuðningur við aðild er með því hæsta í Evrópu",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://europa.eu/eurobarometer/surveys/detail/3372\" title=\"European Commission — Standard Eurobarometer 103\" target=\"_blank\" rel=\"noopener\">POLL-INTL-001</a> staðfestir þetta beint: landsbundnar tölur sveiflast frá um 50% í sumum Mið-Evrópuríkjum til yfir 90% á Írlandi og í Lúxemborg. Þar sem ESB-meðaltalið er 73% er Írland greinilega meðal þeirra landa þar sem ánægja með ESB-aðild er mest. <a href=\"https://cohesiondata.ec.europa.eu/countries/IE\" title=\"Eurostat; European Commission — Cohesion Policy data for Ireland\" target=\"_blank\" rel=\"noopener\">PREC-DATA-016</a> styður þetta óbeint með gögnum um efnahagslegan árangur Írlands eftir inngöngu.",
-      "missing_context": "Lúxemborg er sambærilegt eða jafnvel hærra — Írland er ekki endilega efst eitt og sér. Einnig ber að hafa í huga að spurningin mælir skynjað hagræði til lands, ekki persónulegt hagræði, og orðalag getur haft áhrif á svör.",
-      "supporting_evidence": [
-        {
-          "id": "POLL-INTL-001",
-          "source_name": "European Commission — Standard Eurobarometer 103",
-          "source_url": "https://europa.eu/eurobarometer/surveys/detail/3372"
-        },
-        {
-          "id": "PREC-DATA-016",
-          "source_name": "Eurostat; European Commission — Cohesion Policy data for Ireland",
-          "source_url": "https://cohesiondata.ec.europa.eu/countries/IE"
-        }
-      ],
+      "verdict": "unverifiable",
+      "explanation": "Engin heimild í staðreyndagrunninum fjallar um stuðning Íra við ESB-aðild eða samanburð á ESB-stuðningi milli Evrópuríkja. <a href=\"https://cohesiondata.ec.europa.eu/countries/IE\" title=\"Eurostat; European Commission — Cohesion Policy data for Ireland\" target=\"_blank\" rel=\"noopener\">PREC-DATA-016</a> lýsir efnahagslegri sögu Írlands í ESB en nefnir ekki skoðanakannanir um stuðning. Aðrar heimildir fjalla um íslenskar skoðanakannanir og hafa ekkert gildi til að meta þessa fullyrðingu.",
+      "missing_context": "Staðreyndagrunnurinn inniheldur ekki Eurobarometer-gögn eða aðrar heimildir um ESB-stuðning í einstökum aðildarríkjum. Slík gögn þyrfti til að staðfesta eða hrekja fullyrðinguna.",
+      "supporting_evidence": [],
       "contradicting_evidence": [],
       "category": "polling",
       "attribution": "paraphrased",

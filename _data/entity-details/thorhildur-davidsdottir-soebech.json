@@ -7,14 +7,13 @@
   "party": null,
   "stance": "pro_eu",
   "stance_score": 1.0,
-  "credibility": 0.58,
+  "credibility": 0.54,
   "attribution_counts": {
     "asserted": 13
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 11,
-    "supported": 1
+    "partially_supported": 12
   },
   "claims": [
     {
@@ -88,19 +87,19 @@
     {
       "claim_text": "Evrópski markaðurinn hýsir um hálfan milljarð neytenda.",
       "original_quote": "hinum evrópska markaði; sem hýsir um hálfan milljarð neytenda",
-      "verdict": "supported",
-      "explanation": "Heimildir staðfesta að ESB hefur um 450 milljón íbúa (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> nefnir «approximately 450 million»). Með EES-ríkjunum nær markaðurinn yfir hálfan milljarð manna. <a href=\"https://www.consilium.europa.eu/en/press/press-releases/2026/01/09/eu-mercosur-council-greenlights-signature-of-the-comprehensive-partnership-and-trade-agreement/\" title=\"Council of the European Union — EU-Mercosur Agreement\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-028</a> nefnir að ESB-Mercosur samningurinn myndi skapa markað 780 milljóna manna, sem staðfestir stærð ESB-markaðarins sem veigamikinn hluta. Fullyrðingin um «um hálfan milljarð» er rétt ávölun.",
-      "missing_context": "Íbúafjöldi ESB er um 450 milljónir — «hálfur milljarður» er nákvæmara ef EES og nálæg ríki eru talin með. Munurinn er lítill en vert að taka fram.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.consilium.europa.eu/en/policies/eu-tariffs-explained/\" title=\"EU Council / European Commission Access2Markets\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-040</a> vísar til 450 milljóna neytenda á ESB-markaðnum. Fullyrðingin segir «um hálfan milljarð» sem þýðir um 500 milljónir — tæplega 11% hærra en raunverulegar tölur. Jafnvel þótt innri markaðurinn nái yfir EES-ríkin (með Noregi, Íslandi og Liechtenstein) bætast aðeins rúmlega 5 milljónir neytenda við, sem gefur um 455 milljónir. <a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-002</a> staðfestir íbúafjölda ESB í svipuðum stærðargráðum. Fullyrðingin er því ónákvæm þótt hún sé rétt á stærðargráðu.",
+      "missing_context": "Íbúafjöldi ESB-27 er um 450 milljónir (ekki 500 milljónir). Innri markaðurinn með EES-ríkjum nær til um 455 milljóna. Munurinn á «hálfum milljarði» og raunverulegum tölum er umtalsverður í samhengi við nákvæma umfjöllun.",
       "supporting_evidence": [
         {
-          "id": "SOV-DATA-017",
-          "source_name": "Treaty on European Union, Article 16(4); European Parliament allocation rules",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016"
+          "id": "TRADE-DATA-040",
+          "source_name": "EU Council / European Commission Access2Markets",
+          "source_url": "https://www.consilium.europa.eu/en/policies/eu-tariffs-explained/"
         },
         {
-          "id": "TRADE-DATA-028",
-          "source_name": "Council of the European Union — EU-Mercosur Agreement",
-          "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/01/09/eu-mercosur-council-greenlights-signature-of-the-comprehensive-partnership-and-trade-agreement/"
+          "id": "SOV-LEGAL-002",
+          "source_name": "Treaty on European Union, Article 16(4)",
+          "source_url": "https://eur-lex.europa.eu/summary/glossary/qualified_majority.html"
         }
       ],
       "contradicting_evidence": [],

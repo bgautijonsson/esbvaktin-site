@@ -7,15 +7,15 @@
   "party": null,
   "stance": "pro_eu",
   "stance_score": 1.0,
-  "credibility": 0.77,
+  "credibility": 0.63,
   "attribution_counts": {
     "asserted": 9,
     "quoted": 13
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 8,
-    "supported": 9
+    "partially_supported": 12,
+    "supported": 5
   },
   "claims": [
     {
@@ -52,24 +52,24 @@
     {
       "claim_text": "Íslenska krónan er ekki gjaldgeng utan landsteinanna",
       "original_quote": "krónan er ekki gjaldgeng utan landsteinanna",
-      "verdict": "supported",
-      "explanation": "Íslenska krónan er ein minnsta sjálfstæða gjaldmiðilssvæði í heimi og telst ekki alþjóðlega viðskiptalegur gjaldmiðill. <a href=\"https://sedlabanki.is/library/Skraarsafn/Hagtolur/Gjaldeyrisfordi/\" title=\"Seðlabanki Íslands — Alþjóðaforðinn; Fjármálastöðugleikaskýrsla\" target=\"_blank\" rel=\"noopener\">CURR-DATA-006</a> staðfestir að Ísland þarf að halda umfangsmiklum gjaldeyrisforða einmitt vegna þess að krónan er ekki alþjóðlega gjaldgeng. Gengissagan sem CURRENCY-DATA-016 og <a href=\"https://www.sedlabanki.is/hagtolur/gengi/\" title=\"Seðlabanki Íslands — Exchange rate data\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-007</a> lýsa — þar á meðal gjaldeyrishöft 2008–2017 — undirstrikar takmarkaðan alþjóðlegan viðskiptaflöt krónunnar.",
-      "missing_context": "Krónan er tæknilega viðskiptaleg á gjaldeyrismarkaði (hægt að skipta henni) en hefur enga beina notkun sem greiðslumiðill erlendis. Munurinn á «ekki gjaldgeng» og «ekki almennt viðurkennd» skiptir máli í nákvæmri umfjöllun.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin er í grófum dráttum rétt en of einföld. Krónan er gjaldmiðill smáríkis með um 400.000 íbúa og þrjá viðskiptavaka (<a href=\"https://www.visindavefur.is/svar.php?id=5921\" title=\"Vísindavefurinn — EDS & Gylfi Magnússon, University of Iceland (2006/2017, updated 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-012</a>), sem takmarkar verulega notagildi hennar á alþjóðavettvangi. <a href=\"https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/skyrsla-nefndarinnar/english/\" title=\"Seðlabanki Íslands — Special Investigation Commission report; Central Bank annual report 2009\" target=\"_blank\" rel=\"noopener\">CURR-DATA-001</a> og CURRENCY-DATA-016 lýsa gengisstöðugleysinu — krónan tapaði um 50% gagnvart evru í hruninu 2008 og gjaldeyrishöft voru í gildi frá 2008 til 2017. Hins vegar er orðalagið «ekki gjaldgeng utan landsteinanna» of aftrátt; krónan er tæknilega skiptanleg á gjaldeyrismarkaði og er notuð í alþjóðlegum viðskiptum, þótt markaðurinn sé mjög grunnur og lausafjárstaðan slæm.",
+      "missing_context": "Engin heimild staðfestir beint að krónan sé «ekki gjaldgeng» erlendis — heimildir fjalla um gengisstöðuleysi og smæð markaðarins. <a href=\"https://www.visindavefur.is/svar.php?id=5921\" title=\"Vísindavefurinn — EDS & Gylfi Magnússon, University of Iceland (2006/2017, updated 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-012</a> nefnir að eingöngu þrír viðskiptavakar ákvarða gengi krónunnar, sem sýnir þröngan markað, en þetta er ekki sama og að krónan sé «ekki gjaldgeng». Ýmsar erlendar gjaldeyrisskiptiþjónustur bjóða upp á krónuviðskipti, þótt álag sé oft hátt.",
       "supporting_evidence": [
         {
-          "id": "CURR-DATA-006",
-          "source_name": "Seðlabanki Íslands — Alþjóðaforðinn; Fjármálastöðugleikaskýrsla",
-          "source_url": "https://sedlabanki.is/library/Skraarsafn/Hagtolur/Gjaldeyrisfordi/"
+          "id": "CURR-DATA-012",
+          "source_name": "Vísindavefurinn — EDS & Gylfi Magnússon, University of Iceland (2006/2017, updated 2026)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=5921"
+        },
+        {
+          "id": "CURR-DATA-001",
+          "source_name": "Seðlabanki Íslands — Special Investigation Commission report; Central Bank annual report 2009",
+          "source_url": "https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/skyrsla-nefndarinnar/english/"
         },
         {
           "id": "CURRENCY-DATA-016",
           "source_name": "Central Bank of Iceland — Exchange rate data; ECB — Statistical Data Warehouse",
           "source_url": null
-        },
-        {
-          "id": "TRADE-DATA-007",
-          "source_name": "Seðlabanki Íslands — Exchange rate data",
-          "source_url": "https://www.sedlabanki.is/hagtolur/gengi/"
         }
       ],
       "contradicting_evidence": [],
@@ -234,8 +234,8 @@
       "claim_text": "Ísland hefur gengið miklu verr en Danmörk að halda verðlagi og gengi stöðugu síðan krónan kvaddi þá dönsku",
       "original_quote": "þann tíma hefur okkur gengið miklu verr heldur en Dönum, ef við notum það nú bara sem mælikvarða, að halda verðlagi og gengi stöðugu",
       "verdict": "supported",
-      "explanation": "<a href=\"https://cb.is/statistics/official-exchange-rate/\" title=\"Seðlabanki Íslands — Monetary Bulletin; ECB Statistical Data Warehouse\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-004</a> sýnir að gengissveiflur krónunnar hafa verið 10–12% á ársgrundvelli samanborið við 4–6% hjá dönsku krónunni, og verðbólga á Íslandi 4,5% á móti 2,5% á evrusvæðinu. CURRENCY-DATA-016 staðfestir þrjú alvarlegar gengiskreppur frá 2000. Landsframleiðslusveifla Íslands er 17,1 prósentustig samanborið við 9,4 í Danmörku (<a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=IS\" title=\"World Bank — GDP growth (annual %) (NY.GDP.MKTP.KD.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-014</a>). Öll gögn styðja fullyrðinguna skýrt.",
-      "missing_context": "Danir nota ERM II-tengingu við evruna sem takmarkar sjálfstæði peningastefnunnar — samanburðurinn ber saman sjálfstæðan gjaldmiðil við nánast fasta gengistengingu. Gengissveifla er einnig eðlilega meiri í smærri hagkerfum, óháð gjaldmiðilsfyrirkomulagi (<a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=IS\" title=\"World Bank — GDP growth (annual %) (NY.GDP.MKTP.KD.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-014</a>).",
+      "explanation": "<a href=\"https://cb.is/statistics/official-exchange-rate/\" title=\"Seðlabanki Íslands — Monetary Bulletin; ECB Statistical Data Warehouse\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-004</a> sýnir að sveiflur íslensku krónunnar gagnvart evru hafa verið 10–12% á ársgrundvelli á tímabilinu 2010–2024, samanborið við nálægt núlli hjá evrusvæðisríkjum og 4–6% hjá dönsku krónunni sem er bundin evrunni. Verðbólga á Íslandi hefur verið um 4,5% á meðaltali á sama tímabili, samanborið við 2,5% á evrusvæðinu. CURRENCY-DATA-016 lýsir þremur meiriháttar kreppuskeiðum krónunnar frá árinu 2000, og <a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=IS\" title=\"World Bank — GDP growth (annual %) (NY.GDP.MKTP.KD.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-014</a> staðfestir mun meiri sveiflur í vergri landsframleiðslu á Íslandi en í Danmörku (17,1 prósentustiga svið á móti 9,4).",
+      "missing_context": "Danmörk heldur fastgengisstefnu gagnvart evru (ERM II) sem takmarkar peningastefnusjálfstæði hennar verulega — samanburðurinn er því milli sjálfstæðrar krónu og krónu sem er í reynd bundin evru. Gengissveiflur krónunnar hjálpuðu einnig við efnahagsbata eftir 2008 — sveigjanleikinn er bæði veikleiki og styrkur. Hvenær «krónan kvaddi þá dönsku» er ekki tilgreint nákvæmlega í heimildum.",
       "supporting_evidence": [
         {
           "id": "TRADE-COMP-004",
@@ -341,14 +341,14 @@
     {
       "claim_text": "Ef Ísland tæki upp evruna þyrfti að vera með miklu harðari stjórn á ríkisfjármálum, launaákvörðunum á vinnumarkaði og fleiru",
       "original_quote": "ef við tækjum upp evruna þá þyrftum við að vera með miklu harðari stjórn á ýmsu, ekki bara peningamálum, sem færu nú svolítið úr okkar höndum, heldur yfir í ríkisfjármálin og launaákvarðanir um kaup og kjör á vinnumarkaði",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014\" title=\"Treaty on the Functioning of the European Union, Article 140\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-004</a> og <a href=\"https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en\" title=\"European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators\" target=\"_blank\" rel=\"noopener\">CURR-DATA-005</a> staðfesta að evruupptaka krefst Maastricht-viðmiða: hámark 3% halli, 60% skuldir af VLF, verðbólgu- og vaxtaviðmið. Þetta setur raunverulegar hömlur á ríkisfjármál. <a href=\"https://vinnurettur.asi.is/vinnurettarvefur/vinnurettur/icelandic-labour-law/\" title=\"ASÍ — Collective agreements overview; European Commission — Employment acquis\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-005</a> lýsir séríslenskum vinnumarkaðsaðstæðum þar sem laun ráðast af kjarasamningum — án gengissveiflna sem öryggisventils þyrfti launaþróun að vera í meira samræmi við framleiðni. <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> staðfestir að peningamálastefnan færist til ECB.",
-      "missing_context": "Kjarasamningskerfið á Íslandi (90% stéttarfélagsaðild) virkar öðruvísi en í flestum ESB-ríkjum. Norrænu ESB-ríkin hafa samið um vernd sinna kjarasamningskerfa (<a href=\"https://vinnurettur.asi.is/vinnurettarvefur/vinnurettur/icelandic-labour-law/\" title=\"ASÍ — Collective agreements overview; European Commission — Employment acquis\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-005</a>). Þó er rétt að án gengisleiðréttinga verður agi í ríkisfjármálum og launaákvörðunum enn mikilvægari.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að evruaðild krefst uppfyllingar Maastricht-skilyrða: skuldir undir 60% af VLF, halli undir 3%, verðbólga og vextir innan ákveðinna marka (<a href=\"https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en\" title=\"European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators\" target=\"_blank\" rel=\"noopener\">CURR-DATA-005</a>, <a href=\"https://www.visindavefur.is/svar.php?id=60635\" title=\"Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-017</a>). Þetta felur ótvírætt í sér «harðari stjórn á ríkisfjármálum». Fullyrðingin nefnir þó einnig «launaákvarðanir á vinnumarkaði» en ekkert í heimildunum fjallar beint um takmarkanir á launastefnu eða kjarasamningum. Þessi hluti fullyrðingarinnar er ósannaður af fyrirliggjandi gögnum, þótt óbeint megi færa rök fyrir honum — án gengislækkunar sem hagstjórnartækis þrengist svigrúm til launahækkana.",
+      "missing_context": "Heimildir fjalla ekki beint um áhrif evruaðildar á launaákvarðanir eða kjarasamningskerfi. <a href=\"https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en\" title=\"European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators\" target=\"_blank\" rel=\"noopener\">CURR-DATA-005</a> bendir á að tímalína evruupptöku sé löng (Króatía 10 ár, Búlgaría 19 ár) og Ísland þyrfti fyrst að uppfylla öll skilyrðin. ERM II-tímabilið (a.m.k. 2 ár með föstu gengi) myndi skapa viðkvæma aðlögun þar sem spákaupmenn gætu beitt þrýstingi á krónuna. Ísland uppfyllir nú ekki verðbólgu- eða vaxtaskilyrðin.",
       "supporting_evidence": [
         {
-          "id": "SOV-LEGAL-004",
-          "source_name": "Treaty on the Functioning of the European Union, Article 140",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014"
+          "id": "CURR-DATA-017",
+          "source_name": "Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=60635"
         },
         {
           "id": "CURR-DATA-005",
@@ -356,14 +356,9 @@
           "source_url": "https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en"
         },
         {
-          "id": "SOV-LEGAL-005",
-          "source_name": "Central Bank of Iceland — Monetary policy framework",
-          "source_url": "https://sedlabanki.is/peningastefna/"
-        },
-        {
-          "id": "LABOUR-DATA-005",
-          "source_name": "ASÍ — Collective agreements overview; European Commission — Employment acquis",
-          "source_url": "https://vinnurettur.asi.is/vinnurettarvefur/vinnurettur/icelandic-labour-law/"
+          "id": "CURR-DATA-011",
+          "source_name": "Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (March 2026)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=87971"
         }
       ],
       "contradicting_evidence": [],
@@ -377,24 +372,19 @@
     {
       "claim_text": "Peningamál færu úr höndum Íslands við upptöku evru yfir í Evrópska seðlabankann",
       "original_quote": "ekki bara peningamálum, sem færu nú svolítið úr okkar höndum",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> staðfestir beint: «Adopting the euro would transfer monetary policy authority from Seðlabanki Íslands to the European Central Bank.» Ísland myndi missa stjórn á stýrivöxtum og gengisstefnu. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014\" title=\"Treaty on the Functioning of the European Union, Article 140\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-004</a> staðfestir að nýir aðildarríki skuldbinda sig til evruupptöku, og <a href=\"https://sedlabanki.is/library/Skraarsafn/Hagtolur/Gjaldeyrisfordi/\" title=\"Seðlabanki Íslands — Alþjóðaforðinn; Fjármálastöðugleikaskýrsla\" target=\"_blank\" rel=\"noopener\">CURR-DATA-006</a> lýsir afleiðingunum — t.d. að gjaldeyrisforði yrði óþarfur.",
-      "missing_context": "Ísland fengi sæti í bankaráði ECB og myndi þar hafa atkvæðisrétt um peningamálastefnu evrusvæðisins. Valdaflutningurinn er raunverulegur en ekki alger — smá þátttöku er betri en engin. Þá er rétt að Svíþjóð hefur forðast evruupptöku innan ESB (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014\" title=\"Treaty on the Functioning of the European Union, Article 140\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-004</a>) og Ísland gæti hugsanlega fylgt sömu leið.",
+      "verdict": "partially_supported",
+      "explanation": "Grunnhugmyndin er rétt — við upptöku evru myndi peningastefna Íslands flytjast til Evrópska seðlabankans. <a href=\"https://www.visindavefur.is/svar.php?id=5921\" title=\"Vísindavefurinn — EDS & Gylfi Magnússon, University of Iceland (2006/2017, updated 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-012</a> staðfestir að 21 af 27 aðildarríkjum hafa tekið upp evru. Þó er fullyrðingin of einföld þar sem hún gerir ráð fyrir sjálfvirkri evruupptöku. Samkvæmt <a href=\"https://www.visindavefur.is/svar.php?id=87971\" title=\"Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (March 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-011</a> er evruupptaka ekki sjálfkrafa heldur háð samleitniviðmiðum, og tíminn frá aðild til evruupptöku getur verið mjög langur — Búlgaría þurfti 19 ár. Svíþjóð hefur í reynd komist hjá evru frá 2003 án refsinga. Danmörk semdi um formlega undanþágu.",
+      "missing_context": "Fullyrðingin vantar mikilvægan tímaþátt. Peningamál færast ekki «úr höndum Íslands» við ESB-aðild heldur fyrst við evruupptöku, sem gæti orðið áratugi eftir aðild. Nýjum aðildarríkjum er skylt að stefna að evruupptöku en enginn tímafrestur er framfylgjanlegur — fordæmi Svíþjóðar sýnir að hægt er að fresta upptöku um óákveðinn tíma.",
       "supporting_evidence": [
         {
-          "id": "SOV-LEGAL-005",
-          "source_name": "Central Bank of Iceland — Monetary policy framework",
-          "source_url": "https://sedlabanki.is/peningastefna/"
+          "id": "CURR-DATA-012",
+          "source_name": "Vísindavefurinn — EDS & Gylfi Magnússon, University of Iceland (2006/2017, updated 2026)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=5921"
         },
         {
-          "id": "SOV-LEGAL-004",
-          "source_name": "Treaty on the Functioning of the European Union, Article 140",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014"
-        },
-        {
-          "id": "CURR-DATA-006",
-          "source_name": "Seðlabanki Íslands — Alþjóðaforðinn; Fjármálastöðugleikaskýrsla",
-          "source_url": "https://sedlabanki.is/library/Skraarsafn/Hagtolur/Gjaldeyrisfordi/"
+          "id": "CURR-DATA-011",
+          "source_name": "Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (March 2026)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=87971"
         }
       ],
       "contradicting_evidence": [],
@@ -444,9 +434,9 @@
     {
       "claim_text": "Það hefur töluverða kosti að vera með stóran og stöðugan gjaldmiðil",
       "original_quote": "þá hefur það óneitanlega töluverða kosti að vera með stóran og stöðugan gjaldmiðil",
-      "verdict": "supported",
-      "explanation": "Heimildir styðja vel þá fullyrðingu að stór og stöðugur gjaldmiðill hafi töluverða kosti. <a href=\"https://sedlabanki.is/library/Skraarsafn/Hagtolur/Gjaldeyrisfordi/\" title=\"Seðlabanki Íslands — Alþjóðaforðinn; Fjármálastöðugleikaskýrsla\" target=\"_blank\" rel=\"noopener\">CURR-DATA-006</a> sýnir að Ísland ber árlegan kostnað upp á 30–50 milljarða króna vegna gjaldeyrisforðans — kostnað sem fellur niður við evruaðild. <a href=\"https://cb.is/statistics/official-exchange-rate/\" title=\"Central Bank of Iceland — Official exchange rate; Wise/XE historical data\" target=\"_blank\" rel=\"noopener\">CURR-DATA-010</a> staðfestir mikla sögulega sveiflukennda krónu (frá 90 í 340 krónur á evru 2008) samanborið við litla nýlega sveiflu evrunnar. <a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Bank for International Settlements — Boris Vujčić speech: One Year with the Euro\" target=\"_blank\" rel=\"noopener\">CURR-DATA-018</a> sýnir reynslu Króatíu þar sem gjaldeyrisáhætta hvarf nánast yfir nótt við evruaðild og lánshæfiseinkunn batnaði. <a href=\"https://www.jstor.org/stable/1812792\" title=\"Mundell (1961) 'A Theory of Optimum Currency Areas'; Stiglitz (2016) 'The Euro'; CBI Working Papers\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-019</a> vísar í fræðilegan grundvöll Mundells um hagstæðustu gjaldmiðlasvæðiskenninguna þar sem viðskiptatengsl Íslands við evrusvæðið eru sterk.",
-      "missing_context": "Fullyrðingin er almenn og nefnir ekki gagnhliðina: stór gjaldmiðill felur einnig í sér tap á sjálfstæðri peningastefnu og getu til gengisaðlögunar. Samkvæmt <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> tapaði Ísland þessari getu, sem getur verið sérstaklega mikilvæg fyrir lítið hagkerfi sem verður fyrir ólíkum áföllum en meginland Evrópu. Stiglitz hefur auk þess varað við því að evrusvæðið uppfylli ekki skilyrði hagstæðasta gjaldmiðlasvæðis og þvingað aðlögun gegnum atvinnuleysi í stað gengisbreytinga.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að stór og stöðugur gjaldmiðill hefur ákveðna kosti — <a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Bank for International Settlements — Boris Vujčić speech: One Year with the Euro\" target=\"_blank\" rel=\"noopener\">CURR-DATA-018</a> sýnir að Króatía losnaði við gjaldeyrisáhættu og bætti lánshæfismat eftir upptöku evru, og <a href=\"https://sedlabanki.is/library/Skraarsafn/Hagtolur/Gjaldeyrisfordi/\" title=\"Seðlabanki Íslands — Alþjóðaforðinn; Fjármálastöðugleikaskýrsla\" target=\"_blank\" rel=\"noopener\">CURR-DATA-006</a> bendir á verulegan kostnað við að halda sjálfstæðum gjaldeyrisforða (áætlaður á 30–50 milljarða króna á ári). Þó eru verulegir fyrirvarar: samkvæmt <a href=\"https://www.jstor.org/stable/1812792\" title=\"Mundell (1961) 'A Theory of Optimum Currency Areas'; Stiglitz (2016) 'The Euro'; CBI Working Papers\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-019</a> uppfyllir Ísland ekki viðmið Mundells um hagstætt myntsvæði, og Stiglitz hefur bent á að evrusvæðið þvingi aðlögun í gegnum atvinnuleysi frekar en gengisleiðréttingar. <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> undirstrikar að Ísland myndi missa sjálfstæða peningamálastefnu — gengissveiflur krónunnar hafa verið vandamál, en sveigjanleiki hennar getur líka verið aðlögunartæki í kreppu.",
+      "missing_context": "Fullyrðingin er almenn og víð — kostir stórs gjaldmiðils eru háðir aðstæðum hvers ríkis. Króatía hafði bundið gengi kúnunnar í áratugi fyrir evruaðild, ólíkt Íslandi. Ísland hefur lítinn og sérhæfðan hagkerfi sem verður fyrir sértækum áföllum sem evrusvæðið deilir ekki. Auk þess er tapað sjálfstæði peningamálastefnu verulegur gallinn sem fullyrðingin nefnir ekki.",
       "supporting_evidence": [
         {
           "id": "CURR-DATA-006",
@@ -454,27 +444,28 @@
           "source_url": "https://sedlabanki.is/library/Skraarsafn/Hagtolur/Gjaldeyrisfordi/"
         },
         {
-          "id": "SOV-LEGAL-005",
-          "source_name": "Central Bank of Iceland — Monetary policy framework",
-          "source_url": "https://sedlabanki.is/peningastefna/"
-        },
-        {
-          "id": "CURR-DATA-010",
-          "source_name": "Central Bank of Iceland — Official exchange rate; Wise/XE historical data",
-          "source_url": "https://cb.is/statistics/official-exchange-rate/"
-        },
-        {
           "id": "CURR-DATA-018",
           "source_name": "Bank for International Settlements — Boris Vujčić speech: One Year with the Euro",
           "source_url": "https://www.bis.org/review/r240131a.htm"
         },
         {
+          "id": "CURR-DATA-015",
+          "source_name": "Vísindavefurinn — Jón Þór Sturluson, Associate Professor of Economics, Reykjavík University School of Business (2012)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=60906"
+        }
+      ],
+      "contradicting_evidence": [
+        {
           "id": "CURRENCY-DATA-019",
           "source_name": "Mundell (1961) 'A Theory of Optimum Currency Areas'; Stiglitz (2016) 'The Euro'; CBI Working Papers",
           "source_url": "https://www.jstor.org/stable/1812792"
+        },
+        {
+          "id": "SOV-LEGAL-005",
+          "source_name": "Central Bank of Iceland — Monetary policy framework",
+          "source_url": "https://sedlabanki.is/peningastefna/"
         }
       ],
-      "contradicting_evidence": [],
       "category": "currency",
       "attribution": "quoted",
       "article_slug": "gylfi-magnusson-eini-raunhaefi-kosturinn-er-esb-og-evra",

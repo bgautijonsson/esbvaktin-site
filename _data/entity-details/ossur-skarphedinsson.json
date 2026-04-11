@@ -6,12 +6,12 @@
   "role": "þáverandi utanríkisráðherra",
   "party": "Samfylkingin",
   "stance": "mixed",
-  "stance_score": 0.33,
-  "credibility": 0.65,
+  "stance_score": 0.3,
+  "credibility": 0.63,
   "attribution_counts": {
     "asserted": 1,
     "quoted": 34,
-    "paraphrased": 6,
+    "paraphrased": 7,
     "mentioned": 7
   },
   "althingi_stats": {
@@ -22,8 +22,8 @@
     "last_speech": "2016-09-13"
   },
   "scorecard": {
-    "partially_supported": 17,
-    "supported": 8,
+    "partially_supported": 18,
+    "supported": 7,
     "unverifiable": 1
   },
   "claims": [
@@ -418,9 +418,9 @@
     {
       "claim_text": "Vextir í Króatíu urðu sambærilegir eða lægri en í Þýskalandi eftir að Króatar tóku upp evruna, þvert á hrakspár.",
       "original_quote": "Þvert á allar hrakspár leiddi tengingin við evruna til þess að vextir í Króatíu urðu sambærilegir, jafnvel lægri en í Þýskalandi.",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://sdw.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a> staðfestir skýrt að króatískir húsnæðislánavextir voru 3,0% í september 2025 á meðan þýskir voru 3,71%. <a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a> staðfestir að seðlabankastjóri Króatíu Boris Vujčić sagði vexti vera «entirely comparable, or, in certain segments, even lower» en evrusvæðismeðaltalið. Gögn styðja fullyrðinguna um að vextir séu sambærilegir eða lægri.",
-      "missing_context": "Vaxtasamanburðurinn er að hluta tímaháður — þýskir vextir voru óvenju háir 2024 vegna vaxtahækkana Seðlabanka Evrópu. Króatía hafði þegar fast gengi krúnu gagnvart evru í tvo áratugi, sem minnkaði áhrifin af gjaldmiðilsbreytingunni. Samanburðurinn á ekki beint við Ísland þar sem íslenska krónan er frjáls á gjaldeyrismarkaði.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://sdw.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a> og <a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a> staðfesta að vextir á húsnæðislánum í Króatíu lækkuðu verulega eftir upptöku evrunnar og urðu lægri en í Þýskalandi — 3,0% á móti 3,71% (september/desember 2025) og 3,64% á móti 4,22% (janúar 2024). Að vextir urðu «sambærilegir eða lægri» er þannig staðfest. Orðalagið «þvert á hrakspár» er hins vegar óstutt af heimildum — engin heimild lýsir sérstökum spám um háa vexti í Króatíu eftir evruna. Þá benda fyrirvarar á að króatísk króna var raunhæft tengd evrunni í tvo áratugi fyrir upptökuna (<a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a>), og hluti vaxtasamleitninnar skýrist af hækkun evrópskra vaxta (<a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a>).",
+      "missing_context": "Króatía hafði bundið gjaldmiðilinn við evruna í áratugi — aðstæður eru gjörólíkar Íslands þar sem krónan sveiflast frjálslega (<a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a>, <a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Bank for International Settlements — Boris Vujčić speech: One Year with the Euro\" target=\"_blank\" rel=\"noopener\">CURR-DATA-018</a>). Vaxtasamleitnin skýrist að hluta af hækkun ECB-vaxta sem nálgaði þýska vexti króatískum, ekki eingöngu lækkun króatískra vaxta (<a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a> fyrirvarar). <a href=\"https://www.visindavefur.is/svar.php?id=60990\" title=\"Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-016</a> varar við því að vaxtasamleitni eftir evruna geti verið blekking — reynslan af Grikklandi, Írlandi og Portúgal sýndi að ódýrt lánsfé getur ýtt undir bólur.",
       "supporting_evidence": [
         {
           "id": "PREC-DATA-020",
@@ -431,11 +431,6 @@
           "id": "PREC-DATA-012",
           "source_name": "Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review",
           "source_url": "https://www.bis.org/review/r240131a.htm"
-        },
-        {
-          "id": "PREC-DATA-019",
-          "source_name": "Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report",
-          "source_url": "https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023"
         }
       ],
       "contradicting_evidence": [],

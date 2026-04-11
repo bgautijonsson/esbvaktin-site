@@ -7,7 +7,7 @@
   "party": null,
   "stance": "mixed",
   "stance_score": 0.22,
-  "credibility": 0.68,
+  "credibility": 0.64,
   "attribution_counts": {
     "asserted": 1,
     "quoted": 1,
@@ -16,8 +16,8 @@
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 10,
-    "supported": 4
+    "partially_supported": 11,
+    "supported": 3
   },
   "claims": [
     {
@@ -45,8 +45,8 @@
       "claim_text": "Í þjóðaratkvæðagreiðslunni verður spurt: «Á að halda áfram viðræðum um aðild Íslands að Evrópusambandinu?»",
       "original_quote": "spurt verði \"Á að halda áfram viðræðum um aðild Íslands að Evrópusambandinu?\"",
       "verdict": "supported",
-      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir nákvæmt orðalag spurningarinnar: «Á að halda áfram viðræðum um aðild Íslands að Evrópusambandinu?» Þingsályktunartillagan var lögð fram af utanríkisráðherra 9. mars 2026 og kveður á um þjóðaratkvæðagreiðslu 29. ágúst 2026 með þessari spurningu. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Þjóðarpúls, February–March 2026; Capacent Gallup historical EU polling data (2009–2013)\" target=\"_blank\" rel=\"noopener\">POLL-DATA-021</a> staðfestir muninn á milli stuðnings við viðræður og stuðnings við aðild, sem samrýmist orðalagi spurningarinnar.",
-      "missing_context": "Spurningin snýst um framhald viðræðna, ekki um ESB-aðild beint — bilið milli stuðnings við viðræður (~52%) og stuðnings við aðild (~42%) samkvæmt <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Þjóðarpúls, February–March 2026; Capacent Gallup historical EU polling data (2009–2013)\" target=\"_blank\" rel=\"noopener\">POLL-DATA-021</a> er mikilvægt samhengi sem lesendur þurfa til að skilja pólitíska þýðingu spurningarinnar.",
+      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir beint að utanríkisráðherra hafi lagt fram þingsályktunartillögu 9. mars 2026 þar sem spurt sé: «Á að halda áfram viðræðum um aðild Íslands að Evrópusambandinu?» Orðalagið í fullyrðingunni samsvarar nákvæmlega spurningunni samkvæmt heimildinni. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> staðfestir einnig að þjóðaratkvæðagreiðslan byggist á þingsályktunartillögu frá utanríkisráðherra.",
+      "missing_context": "Þjóðaratkvæðagreiðslan er ráðgefandi (ekki bindandi) samkvæmt íslenskum stjórnskipunarrétti, eins og <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> bendir á. Munur er á stuðningi við viðræður og stuðningi við ESB-aðild — skoðanakannanir sýna um 10 prósentustiga bil milli þessara tveggja spurninga.",
       "supporting_evidence": [
         {
           "id": "SOV-PARL-001",
@@ -54,9 +54,14 @@
           "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
         },
         {
-          "id": "POLL-DATA-021",
-          "source_name": "Gallup Þjóðarpúls, February–March 2026; Capacent Gallup historical EU polling data (2009–2013)",
-          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+          "id": "SOV-DATA-006",
+          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+        },
+        {
+          "id": "SOV-PARL-004",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir (flutningsræða, 154. löggjafarþing); Logi Einarsson (flutningsræða, 153. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/154/rad20230919T175556.html"
         }
       ],
       "contradicting_evidence": [],
@@ -341,19 +346,14 @@
     {
       "claim_text": "Innleiðing löggjafar á grundvelli EES-aðildar hélt áfram í viðræðutímanum þrátt fyrir samkomulagið um að fresta stofnanabreytingum.",
       "original_quote": "Innleiðing löggjafar á grundvelli EES-aðildarinnar myndi þó halda áfram, hér eftir sem hingað til.",
-      "verdict": "supported",
-      "explanation": "Heimildir staðfesta skýrt að EES-innleiðing hélt áfram óháð aðildarviðræðunum. <a href=\"https://www.eftasurv.int/esa-at-a-glance/publications?type=21\" title=\"EFTA Surveillance Authority — Annual Report 2024\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-007</a> sýnir að stöðugt voru 400-500 EES-gerðir í innleiðingarbiðröð, sem bendir til viðvarandi innleiðingarstarfsemi. <a href=\"https://www.eftasurv.int/\" title=\"EFTA Surveillance Authority — Internal Market Scoreboard 2024\" target=\"_blank\" rel=\"noopener\">EEA-DATA-007</a> staðfestir að Ísland er í stöðugu innleiðingarferli EES-löggjafar, þar sem innleiðingarhalli mælist 1,4-2,1%. <a href=\"https://eur-lex.europa.eu/eli/dec/2007/146(2)/oj/eng\" title=\"EEA Joint Committee Decision No 146/2007; EUR-Lex; EFTA Court\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-001</a> sýnir að Ísland tók þátt í ETS-kerfinu frá 2008 gegnum EES-samninginn — innleiðing sem hélt áfram á viðræðutímanum. EES-innleiðingin er sjálfstæð lagaskylda sem helst í gildi hvort sem aðildarviðræður standa eður ei.",
-      "missing_context": "Fullyrðingin vísar til samkomulags um frestun stofnanabreytinga sem er ekki staðfest í heimildum (sjá fullyrðingu 5 og 6). Greinarmunurinn milli EES-innleiðingar (skylda) og stofnanabreytinga vegna ESB-aðildar (valkvæðar á viðræðustigi) er þó vel studdur.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341\" title=\"EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-003</a> og <a href=\"https://eur-lex.europa.eu/eli/dec/2007/146(2)/oj/eng\" title=\"EEA Joint Committee Decision No 146/2007; EUR-Lex; EFTA Court\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-001</a> staðfesta að EES-innleiðing hélt áfram á meðan aðildarviðræður stóðu yfir (2010-2013) — t.d. var ESB-losunarkvótakerfið innleitt 2008 og flugumhverfisgerðin innlimuð síðar. <a href=\"https://www.eftasurv.int/esa-at-a-glance/publications?type=21\" title=\"EFTA Surveillance Authority — Annual Report 2024\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-007</a> staðfestir að EES-innleiðing er samfellt ferli óháð aðildarviðræðum. Fullyrðingin nefnir þó «samkomulag um að fresta stofnanabreytingum» sem engin heimild staðfestir beint. Ísland «frysti» viðræðurnar 2013 en heimildir lýsa ekki formlegum samkomulagi um frestun stofnanabreytinga á viðræðutímanum sjálfum.",
+      "missing_context": "Engin heimild staðfestir «samkomulag um að fresta stofnanabreytingum» á viðræðutímanum. Aðildarviðræðurnar voru frystar 2013 en það er ólíkt formlegri frestun stofnanabreytinga. EES-innleiðing er sjálfstætt ferli frá aðildarviðræðum og hefði haldið áfram hvort sem viðræður stóðu yfir eða ekki.",
       "supporting_evidence": [
         {
-          "id": "EEA-LEGAL-007",
-          "source_name": "EFTA Surveillance Authority — Annual Report 2024",
-          "source_url": "https://www.eftasurv.int/esa-at-a-glance/publications?type=21"
-        },
-        {
-          "id": "EEA-DATA-007",
-          "source_name": "EFTA Surveillance Authority — Internal Market Scoreboard 2024",
-          "source_url": "https://www.eftasurv.int/"
+          "id": "ETS-LEGAL-003",
+          "source_name": "EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission",
+          "source_url": "https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341"
         },
         {
           "id": "ETS-LEGAL-001",
@@ -361,9 +361,9 @@
           "source_url": "https://eur-lex.europa.eu/eli/dec/2007/146(2)/oj/eng"
         },
         {
-          "id": "ETS-LEGAL-003",
-          "source_name": "EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission",
-          "source_url": "https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341"
+          "id": "EEA-LEGAL-007",
+          "source_name": "EFTA Surveillance Authority — Annual Report 2024",
+          "source_url": "https://www.eftasurv.int/esa-at-a-glance/publications?type=21"
         }
       ],
       "contradicting_evidence": [],

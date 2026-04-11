@@ -7,16 +7,16 @@
   "party": null,
   "stance": "anti_eu",
   "stance_score": -1.0,
-  "credibility": 0.6,
+  "credibility": 0.57,
   "attribution_counts": {
     "asserted": 27,
     "paraphrased": 1
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 15,
+    "partially_supported": 24,
     "misleading": 1,
-    "supported": 11
+    "supported": 2
   },
   "claims": [
     {
@@ -110,19 +110,24 @@
     {
       "claim_text": "Þegar erlend útgerð kaupir íslenskt sjávarútvegsfyrirtæki fylgja aflaheimildirnar (kvótinn) með — þetta kallast kvótahopp.",
       "original_quote": "Þegar erlend útgerð kaupir íslenskt sjávarútvegsfyrirtæki fylgja aflaheimildirnar með. Þetta kallast kvótahopp.",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.fao.org/faolex/results/details/en/c/LEX-FAOC003455/\" title=\"Icelandic Fisheries Management Act No. 116/2006\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-003</a> og FISH-DATA-022 staðfesta að íslenska ITQ-kerfið leyfir kvóta að fylgja með við sölu á útgerðarfyrirtækjum — kvótinn er framseljanlegt eign sem gengur kaupum og sölu. Þetta er rétt lýsing á því hvernig kerfið virkar. Kvótahoppið sem hugtak á við þegar erlend aðili kaupir sig inn í heimarétthafa með þessum hætti.",
-      "missing_context": "Rétt að bæta við að við núverandi íslensk lög er eignataka erlendra aðila takmörkuð (25% beint, 33% óbeint). Kvótahoppið sem vandamál væri því fyrst og fremst við ESB-aðild þar sem þessar eignatakmarkanir yrðu prófaðar gagnvart fjórfrelsinu.",
+      "verdict": "partially_supported",
+      "explanation": "Hugtakið «kvótahopp» er réttilega tengt við erlenda aðila sem eignast skip eða fyrirtæki í öðru ríki til að nýta veiðiheimildir þess. <a href=\"https://commonslibrary.parliament.uk/research-briefings/sn04281/\" title=\"UK House of Commons Library — Quota Hopping; DEFRA reports on Anglo-Spanish fleet\" target=\"_blank\" rel=\"noopener\">FISH-DATA-031</a> og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61989CJ0213\" title=\"Court of Justice of the EU — Cases C-213/89, C-221/89, C-48/93; House of Lords — R v Secretary of State for Transport, ex parte Factortame Ltd\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-001</a> lýsa fyrirbærinu í samhengi Bretlands þar sem spænskir aðilar keyptu bresk skip til að nýta breskan kvóta. Fullyrðingin einfaldar þó ferlið — kvótahopp felst ekki eingöngu í kaupum á sjávarútvegsfyrirtæki heldur snýst um skráningu skipa undir fána aðildarríkis til að fá aðgang að veiðiheimildum þess. Auk þess hefur dómaframkvæmd (Factortame) staðfest að ríki mega krefjast «raunverulegra efnahagslegra tengsla» (economic link) en ekki þjóðernisskyldu, sem fullyrðingin nefnir ekki.",
+      "missing_context": "Íslenskt kvótakerfi byggist á varanlegum hlutdeildum, ekki skipaskráningu eins og í breska kerfinu — því gæti kvótahopp birst öðruvísi á Íslandi. <a href=\"https://www.responsiblefisheries.is/seafood-industry/fisheries-management/\" title=\"Icelandic Fisheries Management Act + Supreme Court Jurisprudence\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-008</a> bendir á að samkvæmt íslenskum lögum séu veiðiheimildir ekki eignarréttindi heldur «atvinnuréttindi» — hvort og hvernig þau myndu «fylgja með» við kaup erlends aðila er flóknara en fullyrðingin gefur til kynna. Bretland setti «economic link»-skilyrði sem ESB-dómstóllinn samþykkti sem lögmætt mótvægi.",
       "supporting_evidence": [
         {
-          "id": "FISH-LEGAL-003",
-          "source_name": "Icelandic Fisheries Management Act No. 116/2006",
-          "source_url": "https://www.fao.org/faolex/results/details/en/c/LEX-FAOC003455/"
+          "id": "FISH-DATA-031",
+          "source_name": "UK House of Commons Library — Quota Hopping; DEFRA reports on Anglo-Spanish fleet",
+          "source_url": "https://commonslibrary.parliament.uk/research-briefings/sn04281/"
         },
         {
-          "id": "FISH-DATA-022",
-          "source_name": "Ministry of Food, Agriculture and Fisheries — Fisheries Management in Iceland; Marine and Freshwater Research Institute",
-          "source_url": null
+          "id": "PREC-LEGAL-001",
+          "source_name": "Court of Justice of the EU — Cases C-213/89, C-221/89, C-48/93; House of Lords — R v Secretary of State for Transport, ex parte Factortame Ltd",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61989CJ0213"
+        },
+        {
+          "id": "FISH-LEGAL-006",
+          "source_name": "R (Factortame Ltd) v Secretary of State for Transport — European Court of Justice",
+          "source_url": "https://en.wikipedia.org/wiki/R_(Factortame_Ltd)_v_Secretary_of_State_for_Transport"
         }
       ],
       "contradicting_evidence": [],
@@ -136,9 +141,9 @@
     {
       "claim_text": "Á níunda áratugnum keyptu spænskar útgerðir upp bresk fiskiskip til að komast yfir breskan kvóta.",
       "original_quote": "Á níunda áratugnum keyptu spænskar útgerðir upp bresk fiskiskip til að komast yfir breskan kvóta.",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61989CJ0213\" title=\"Court of Justice of the EU — Cases C-213/89, C-221/89, C-48/93; House of Lords — R v Secretary of State for Transport, ex parte Factortame Ltd\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-001</a> staðfestir beint að spænskar útgerðir keyptu bresk fiskiskip á níunda áratugnum til að nýta breskan kvóta — svokallaðir «quota hoppers». Um 90–100 skip í spænskri eigu voru skráð í Bretlandi árið 1988, sem leiddi til Merchant Shipping Act 1988 og Factortame-málanna fyrir Evrópudómstólnum. <a href=\"https://commonslibrary.parliament.uk/research-briefings/sn04281/\" title=\"UK House of Commons Library — Quota Hopping; DEFRA reports on Anglo-Spanish fleet\" target=\"_blank\" rel=\"noopener\">FISH-DATA-031</a> staðfestir einnig þetta mynstur og nefnir að um 73 «Anglo-Spanish» skip voru virk á hámarki.",
-      "missing_context": "Fyrirvari í <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61989CJ0213\" title=\"Court of Justice of the EU — Cases C-213/89, C-221/89, C-48/93; House of Lords — R v Secretary of State for Transport, ex parte Factortame Ltd\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-001</a> bendir á að Factortame-málin spönnuðu yfir áratug (1988–2000) og skaðabæturnar (55 milljón punda) voru flóknar. Samanburður við stöðu Íslands er takmarkaður þar sem Ísland myndi ganga í ESB af fúsum og frjálsum vilja, ólíkt Bretlandi sem var þegar aðildarríki þegar kvótakaup áttu sér stað.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61989CJ0213\" title=\"Court of Justice of the EU — Cases C-213/89, C-221/89, C-48/93; House of Lords — R v Secretary of State for Transport, ex parte Factortame Ltd\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-001</a> staðfestir kjarna fullyrðingarinnar — spænskar útgerðir keyptu bresk fiskiskip til að komast yfir breskan kvóta á níunda áratugnum. Hins vegar eru smáatriðin flóknari en fullyrðingin gefur í skyn. Samkvæmt <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61989CJ0213\" title=\"Court of Justice of the EU — Cases C-213/89, C-221/89, C-48/93; House of Lords — R v Secretary of State for Transport, ex parte Factortame Ltd\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-001</a> voru um 90–100 skip í spænskri eigu skráð í Bretlandi árið 1988, en þessi skip voru skráð sem bresk skip til að fá aðgang að breskum kvóta — ekki «keypt upp» á hefðbundinn hátt. <a href=\"https://commonslibrary.parliament.uk/research-briefings/sn04281/\" title=\"UK House of Commons Library — Quota Hopping; DEFRA reports on Anglo-Spanish fleet\" target=\"_blank\" rel=\"noopener\">FISH-DATA-031</a> bendir á að toppurinn hafi verið um 73 skip á fyrstu árum þúsund. Tímasetningin «á níunda áratugnum» er rétt en ferlið var viðvarandi og náði yfir áratuginn og lengur.",
+      "missing_context": "Samkvæmt <a href=\"https://commonslibrary.parliament.uk/research-briefings/sn04281/\" title=\"UK House of Commons Library — Quota Hopping; DEFRA reports on Anglo-Spanish fleet\" target=\"_blank\" rel=\"noopener\">FISH-DATA-031</a> var efnahagslegt umfang kvótahofsins takmarkaðra en óttast var — um 26 milljónir punda á ári þegar mest var. Bretland setti «efnahagsleg tengsl»-skilyrði sem kröfðust þess að skip lönduðu a.m.k. 50% afla í breskum höfnum, sem var staðfest af dómstóli ESB. Factortame-dómarnir (1990–2000) leiddu til þess að slíkar þjóðernistakmarkanir á eignarhaldi fiskiskipa voru taldar brjóta gegn stofnrétti ESB. Ísland er ólíkt Bretlandi að því leyti að fiskimið þess eru hlutfallslega mun verðmætari og hvati ESB-útgerða til aðgangs væri meiri.",
       "supporting_evidence": [
         {
           "id": "PREC-LEGAL-001",
@@ -167,9 +172,9 @@
     {
       "claim_text": "Bretar settu lög (Merchant Shipping Act 1988) sem kröfðust þess að skip skráð í Bretlandi væru að meirihluta í eigu breskra ríkisborgara.",
       "original_quote": "Bretar brugðust við með lögum (Merchant Shipping Act 1988) sem kröfðust þess að skip skráð í Bretlandi væru að meirihluta í eigu breskra ríkisborgara.",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://en.wikipedia.org/wiki/R_(Factortame_Ltd)_v_Secretary_of_State_for_Transport\" title=\"R (Factortame Ltd) v Secretary of State for Transport — European Court of Justice\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-006</a> og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61989CJ0213\" title=\"Court of Justice of the EU — Cases C-213/89, C-221/89, C-48/93; House of Lords — R v Secretary of State for Transport, ex parte Factortame Ltd\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-001</a> staðfesta báðar að Merchant Shipping Act 1988 krafðist 75% breskrar eignarhalds á skipum skráðum í Bretlandi — sem er vel yfir meirihluta. Lögin voru sett sérstaklega til að koma í veg fyrir kvótaveiðar spænskra útgerða (quota hopping). <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61989CJ0213\" title=\"Court of Justice of the EU — Cases C-213/89, C-221/89, C-48/93; House of Lords — R v Secretary of State for Transport, ex parte Factortame Ltd\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-001</a> lýsir nákvæmlega hvernig nýjar skráningarskilyrði kröfðust þess að raunverulegir eigendur væru breskir ríkisborgarar eða fyrirtæki í 75% breskri eigu.",
-      "missing_context": "Evrópudómstóllinn úrskurðaði síðar að þessi lög brytu gegn staðfesturétti ESB (49. gr. TFEU). Bretland þurfti að greiða um 55 milljónir punda í skaðabætur til spænskra útgerða. Eftir Brexit eru Bretar ekki lengur bundnir af Factortame-fordæminu.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að Merchant Shipping Act 1988 krafðist 75% breskrar eignaraðildar á fiskiskipum sem skráð voru í Bretlandi (<a href=\"https://en.wikipedia.org/wiki/R_(Factortame_Ltd)_v_Secretary_of_State_for_Transport\" title=\"R (Factortame Ltd) v Secretary of State for Transport — European Court of Justice\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-006</a>, <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61989CJ0213\" title=\"Court of Justice of the EU — Cases C-213/89, C-221/89, C-48/93; House of Lords — R v Secretary of State for Transport, ex parte Factortame Ltd\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-001</a>). Fullyrðingin segir hins vegar «að meirihluta í eigu breskra ríkisborgara» sem er ónákvæmt á tvo vegu: krafan var 75% (ekki einfaldur «meirihluti» eins og 51%), og hún tók einnig til búsetu og aðsetur — ekki eingöngu ríkisborgararéttar. Þar sem fullyrðingin undirsýnir bæði þröskuldinn og önnur skilyrði laganna er hún aðeins að hluta studd.",
+      "missing_context": "Lögin kröfðust einnig búsetu og aðseturs (domicile) auk eignaraðildar. Tilgangurinn var að koma í veg fyrir «quota hopping» spænskra útgerða sem nýttu breska kvóta. Evrópudómstóllinn dæmdi lögin andstæð staðfesturétti ESB.",
       "supporting_evidence": [
         {
           "id": "FISH-LEGAL-006",
@@ -193,9 +198,9 @@
     {
       "claim_text": "Evrópudómstóllinn dæmdi bresku lögin (Merchant Shipping Act 1988) ólögmæt í Factortame-málinu þar sem þau brutu gegn staðfesturétti ESB.",
       "original_quote": "Evrópudómstóllinn dæmdi bresku lögin ólögmæt í hinu þekkta Factortame-máli, þar sem þau brutu gegn staðfesturétti ESB.",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61989CJ0213\" title=\"Court of Justice of the EU — Cases C-213/89, C-221/89, C-48/93; House of Lords — R v Secretary of State for Transport, ex parte Factortame Ltd\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-001</a> og <a href=\"https://en.wikipedia.org/wiki/R_(Factortame_Ltd)_v_Secretary_of_State_for_Transport\" title=\"R (Factortame Ltd) v Secretary of State for Transport — European Court of Justice\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-006</a> staðfesta að Evrópudómstóllinn úrskurðaði í máli C-221/89 (25. júlí 1991) að ríkisfangskröfur bresku Merchant Shipping Act 1988 brutu gegn staðfesturétti samkvæmt EBE-sáttmálanum (nú 49. gr. TFEU). Lögin kröfðust 75% breskrar eignaraðildar og voru sérstaklega ætluð gegn spænskum «kvótahoppurum». Dómstóllinn féllst þó á að aðildarríki mættu krefjast raunverulegra efnahagslegra tengsla við landið.",
-      "missing_context": "Dómstóllinn samþykkti að ríki mætti krefjast þess að skipum væri stýrt frá viðkomandi ríki — þannig var ekki alfarið lokað á skilyrði, aðeins þau sem byggðust á ríkisfangi. Einnig stóð Factortame-málaferlin yfir í áratug (1988–2000) og leiddu til skaðabóta upp á um 55 milljónir punda.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61989CJ0213\" title=\"Court of Justice of the EU — Cases C-213/89, C-221/89, C-48/93; House of Lords — R v Secretary of State for Transport, ex parte Factortame Ltd\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-001</a> og <a href=\"https://en.wikipedia.org/wiki/R_(Factortame_Ltd)_v_Secretary_of_State_for_Transport\" title=\"R (Factortame Ltd) v Secretary of State for Transport — European Court of Justice\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-006</a> staðfesta kjarna Factortame-málsins: Evrópudómstóllinn úrskurðaði að Merchant Shipping Act 1988 bryti gegn staðfesturétti ESB. Þó er fullyrðingin ofeinföld — dómstóllinn lýsti ekki lögin «ólögmæt» í heild sinni heldur úrskurðaði að ríkisfangskilyrðin í lögunum brytu gegn ESB-rétti. Samkvæmt <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61989CJ0213\" title=\"Court of Justice of the EU — Cases C-213/89, C-221/89, C-48/93; House of Lords — R v Secretary of State for Transport, ex parte Factortame Ltd\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-001</a> fól málið í sér fjölda dómsúrskurða (C-213/89, C-221/89, C-48/93) sem tóku á mismunandi þáttum — bráðabirgðaúrræðum, efnislegu broti og ríkisábyrgð. Dómstóllinn viðurkenndi jafnframt að aðildarríki mættu krefjast raunverulegra efnahagslegra tengsla.",
+      "missing_context": "Fullyrðingin einfaldar flókna réttarfarsögu. Factortame-málin spannuðu áratug og fjölda dómsúrskurða. Dómstóllinn hafnaði ekki öllu í Merchant Shipping Act heldur sérstaklega ríkisfangsskilyrðum. <a href=\"https://en.wikipedia.org/wiki/R_(Factortame_Ltd)_v_Secretary_of_State_for_Transport\" title=\"R (Factortame Ltd) v Secretary of State for Transport — European Court of Justice\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-006</a> bendir á að dómstóllinn staðfesti rétt aðildarríkja til að krefjast þess að skip væru stjórnuð frá yfirráðasvæði þeirra — sú blæbrigðagrein vantar úr fullyrðingunni.",
       "supporting_evidence": [
         {
           "id": "PREC-LEGAL-001",
@@ -251,8 +256,8 @@
       "claim_text": "Eftir Factortame-málið reyndu Bretar að setja skilyrði um að útgerðir yrðu að sýna fram á raunveruleg efnahagsleg tengsl við Bretland.",
       "original_quote": "Eftir að hafa tapað Factortame-málinu reyndu Bretar að bjarga því sem bjargað varð með því að setja skilyrði um að útgerðir yrðu að sýna fram á raunveruleg efnahagsleg tengsl við Bretland.",
       "verdict": "supported",
-      "explanation": "<a href=\"https://commonslibrary.parliament.uk/research-briefings/sn04281/\" title=\"UK House of Commons Library — Quota Hopping; DEFRA reports on Anglo-Spanish fleet\" target=\"_blank\" rel=\"noopener\">FISH-DATA-031</a> staðfestir beint að Bretar brugðust við Factortame-úrskurðunum með því að setja svokölluð «economic link»-skilyrði — kröfu um að útgerðir lönduðu a.m.k. 50% afla í breskum höfnum, ráðnir hefðu breska áhöfnarmenn, eða sýndu fram á önnur efnahagsleg tengsl við bresk sjávarútvegssamfélög. Þessi leið var valin í stað þjóðernisskilyrða sem ESB-dómstóllinn hafði bannað. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216\" title=\"Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-002</a> og <a href=\"https://en.wikipedia.org/wiki/R_(Factortame_Ltd)_v_Secretary_of_State_for_Transport\" title=\"R (Factortame Ltd) v Secretary of State for Transport — European Court of Justice\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-006</a> staðfesta einnig að ESB-dómstóllinn féllst á «genuine economic link»-skilyrði sem lögmæt.",
-      "missing_context": "Efnahagstenglaskilyrðin drógu úr en útrýmdu ekki kvótaflutningi (quota hopping). Aðstæður Íslands væru aðrar — sjávarútvegur er mun stærri hluti hagkerfisins og hvati erlendra útgerða til aðgangs að íslenskri lögsögu væri meiri en í breska tilvikinu.",
+      "explanation": "<a href=\"https://commonslibrary.parliament.uk/research-briefings/sn04281/\" title=\"UK House of Commons Library — Quota Hopping; DEFRA reports on Anglo-Spanish fleet\" target=\"_blank\" rel=\"noopener\">FISH-DATA-031</a> staðfestir beint að Bretar brugðust við Factortame-málunum með «economic link» skilyrðum — kröfum um að útgerðir lönduðu a.m.k. 50% afla síns í breskum höfnum, réðu breskan áhöfn eða sýndu fram á önnur efnahagsleg tengsl. <a href=\"https://en.wikipedia.org/wiki/R_(Factortame_Ltd)_v_Secretary_of_State_for_Transport\" title=\"R (Factortame Ltd) v Secretary of State for Transport — European Court of Justice\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-006</a> og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216\" title=\"Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-002</a> styrkja þetta samhengi — Evrópudómstóllinn hafnaði þjóðernistakmörkunum en samþykkti skilyrði um raunveruleg efnahagsleg tengsl. Fullyrðingin lýsir þessu ferli réttilega.",
+      "missing_context": "Evrópudómstóllinn hafnaði þjóðerniskröfum (75% breskt eignarhald) en samþykkti efnahagslegar tengingarkröfur svo framarlega sem þær væru hlutlausar gagnvart þjóðerni. Aðstæður Íslands eru ólíkar — sjávarútvegur vegur miklu meira í hagkerfinu og hvatar erlendra útgerða til að nýta íslenskt kvótakerfi gætu verið meiri.",
       "supporting_evidence": [
         {
           "id": "FISH-DATA-031",
@@ -260,14 +265,19 @@
           "source_url": "https://commonslibrary.parliament.uk/research-briefings/sn04281/"
         },
         {
+          "id": "FISH-LEGAL-006",
+          "source_name": "R (Factortame Ltd) v Secretary of State for Transport — European Court of Justice",
+          "source_url": "https://en.wikipedia.org/wiki/R_(Factortame_Ltd)_v_Secretary_of_State_for_Transport"
+        },
+        {
           "id": "PREC-LEGAL-002",
           "source_name": "Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate",
           "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216"
         },
         {
-          "id": "FISH-LEGAL-006",
-          "source_name": "R (Factortame Ltd) v Secretary of State for Transport — European Court of Justice",
-          "source_url": "https://en.wikipedia.org/wiki/R_(Factortame_Ltd)_v_Secretary_of_State_for_Transport"
+          "id": "PREC-LEGAL-002",
+          "source_name": "Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216"
         }
       ],
       "contradicting_evidence": [],
@@ -344,9 +354,9 @@
     {
       "claim_text": "ESB-dómstóllinn úrskurðaði að ekki mætti krefjast þess að meirihluti áhafnar skips væri breskir ríkisborgarar — nóg væri að þeir væru frá hvaða ESB-landi sem er.",
       "original_quote": "Til dæmis mátti ekki einu sinni krefjast þess að áhöfnin væri meirihluti breskra ríkisborgara - það dugði að þeir væru frá hvaða ESB landi sem er.",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216\" title=\"Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-002</a> staðfestir beint í Agegate-málinu (C-3/87) að Bretland krafðist þess að 75% áhafnar fiskiskipa væru breskir ríkisborgarar eða búsettir í Bretlandi, og Evrópudómstóllinn úrskurðaði að þetta bryti gegn staðfesturétti (52. gr. EBE, nú 49. gr. TFEU). Dómurinn staðfesti þannig að ríkisfangsskilyrði á áhöfn væru ólögmæt — nóg væri að skipverjar væru frá hvaða ESB-ríki sem er. <a href=\"https://en.wikipedia.org/wiki/R_(Factortame_Ltd)_v_Secretary_of_State_for_Transport\" title=\"R (Factortame Ltd) v Secretary of State for Transport — European Court of Justice\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-006</a> styður og bætir við að dómstóllinn leyfði þó kröfur um raunveruleg efnahagsleg tengsl.",
-      "missing_context": "Dómstóllinn féllst á að ríki mættu krefjast «raunverulegra efnahagslegra tengsla» (t.d. löndun afla í viðkomandi landi eða rekstur frá höfnum þess) svo framarlega sem slík skilyrði væru meðalhófs og án mismununar. Þetta dró úr áhrifum úrskurðarins í framkvæmd þótt ríkisfangskröfur væru bannaðar.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin lýsir kjarna Factortame- og Agegate-dómanna nokkuð rétt, en orðalagið er ónákvæmt. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61987CJ0216\" title=\"Court of Justice of the EU — Case C-216/87 Jaderow; Case C-3/87 Agegate\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-002</a> staðfestir að í Agegate-málinu (C-3/87) úrskurðaði ESB-dómstóllinn að krafan um 75% breska áhöfn bryti gegn staðfesturétti. Þó sneru dómarnir ekki eingöngu að áhöfnarsamsetningu heldur öllu viðmiðinu — eignarhaldi, búsetu og rekstrarstjórnun — eins og <a href=\"https://en.wikipedia.org/wiki/R_(Factortame_Ltd)_v_Secretary_of_State_for_Transport\" title=\"R (Factortame Ltd) v Secretary of State for Transport — European Court of Justice\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-006</a> og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61989CJ0213\" title=\"Court of Justice of the EU — Cases C-213/89, C-221/89, C-48/93; House of Lords — R v Secretary of State for Transport, ex parte Factortame Ltd\" target=\"_blank\" rel=\"noopener\">PREC-LEGAL-001</a> sýna. Dómstóllinn sagði jafnframt að ríki mættu krefjast raunverulegra efnahagstengsla (t.d. löndun afla) svo lengi sem skilyrðin væru hlutlaus gagnvart þjóðerni. Fullyrðingin einblínir þannig á einn hluta dómsins og slepir þessum mikilvæga fyrirvara.",
+      "missing_context": "Factortame-málin voru fjölþætt og tóku yfir áratug (1988–2000). Dómstóllinn úrskurðaði einnig um bráðabirgðaúrræði (C-213/89), skaðabætur ríkisins (C-48/93) og staðfesturétt almennt — ekki eingöngu áhafnarkröfur. Aðildarríki geta krafist «raunverulegra efnahagstengsla» (economic link) án þess að brjóta gegn ESB-rétti, sem mildar áhrif dómsins verulega.",
       "supporting_evidence": [
         {
           "id": "PREC-LEGAL-002",
@@ -401,9 +411,9 @@
     {
       "claim_text": "ESB hvílir á fjórum frelsisréttindum (fjórfrelsið) — þar á meðal staðfesturétti og frjálsu flæði fjármagns.",
       "original_quote": "ESB hvílir á fjórfrelsinu. Staðfesturétturinn sem tryggir erlendum ESB-fyrirtækjum rétt til að stofna og reka fyrirtæki... Frjálsu flæði fjármagns sem gerir ríkjum algjörlega ókleift að banna erlendum aðilum að kaupa hlutafé í innlendum fyrirtækjum.",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Article 1 and Protocol 47\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-003</a>, <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> og <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EFTA Secretariat — The EEA Agreement; ESA Internal Market Scoreboard; EEA Joint Committee\" target=\"_blank\" rel=\"noopener\">EEA-DATA-010</a> staðfesta að fjórfrelsið — vörur, þjónusta, fólk og fjármagn — er grunnur EES-samningsins og ESB. Staðfesturéttur og frjálst fjármagnsflæði eru þar meðal. Þetta er grundvallarlagaleg staðreynd sem er ótvírætt studd af heimildum.",
-      "missing_context": "Fullyrðingin um fjórfrelsið er rétt en vísaði í áhyggjufullan þátt — að frjálst fjármagnsflæði geri það 'algjörlega ókleift' að setja takmarkanir. Það er of einföldun: aðildarríki geta sett hlutlægar og lögmætar takmarkanir af öryggis- eða almannahagsmunarástæðum án þess að brjóta gegn fjórfrelsinu.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Article 1 and Protocol 47\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-003</a> og <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> staðfesta fjórfrelsið: frjálst flæði vöru, þjónustu, fjármagns og fólks. Fullyrðingin nefnir «staðfesturétt» sérstaklega, en staðfesturéttur er hluti af frelsi þjónustu og fjármagns — ekki sjálfstætt frelsi. Fjórfrelsið er hefðbundið nefnt sem: vörur, þjónusta, fjármagn og fólk. Fullyrðingin er rétt um kjarnann en orðalag hennar gefur til kynna að «staðfesturéttur» og «frjálst flæði fjármagns» séu tvö af fjórum frelsisréttindum, sem er ónákvæm upptalning á fjórfrelsinu.",
+      "missing_context": "Fjórfrelsið samanstendur af frjálsu flæði vöru, þjónustu, fjármagns og fólks. Staðfesturéttur fellur undir frelsi þjónustu (48. gr. TFEU) og er ekki sérstakt «frelsi» í hefðbundnum skilningi. Fullyrðingin nefnir tvö atriði en sleppur tveimur af fjórum grundvallarfrelsisréttindum (vörum og fólki).",
       "supporting_evidence": [
         {
           "id": "EEA-LEGAL-003",
@@ -416,14 +426,14 @@
           "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
         },
         {
+          "id": "SOV-LEGAL-030",
+          "source_name": "Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003"
+        },
+        {
           "id": "EEA-DATA-010",
           "source_name": "EFTA Secretariat — The EEA Agreement; ESA Internal Market Scoreboard; EEA Joint Committee",
           "source_url": "https://www.efta.int/eea/eea-agreement"
-        },
-        {
-          "id": "ENERGY-TREATY-001",
-          "source_name": "Treaty on the Functioning of the European Union, Article 194",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12016E194"
         }
       ],
       "contradicting_evidence": [],
@@ -561,9 +571,9 @@
     {
       "claim_text": "Innganga í ESB snýst um að innleiða acquis communautaire — allt regluverk sambandsins",
       "original_quote": "Innganga snýst um að innleiða acquis communautaire – allt regluverk sambandsins.",
-      "verdict": "supported",
-      "explanation": "Þetta er rétt lýsing á aðildarferlinu. <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> vitnar beint í stækkunargögn Framkvæmdastjórnar ESB sem segja að aðildarviðræður snúist um «skilyrði og tímaáætlun fyrir upptöku, innleiðingu og framfylgd alls gildandi regluverks ESB». Samkvæmt <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> inniheldur samningaviðmið allra núverandi umsækjenda staðlaðan texta um að umsækjandinn samþykki regluverkið eins og það stendur við aðild. <a href=\"https://eur-lex.europa.eu/statistics/legislative-acts-statistics.html\" title=\"EUR-Lex — Legislation statistics\" target=\"_blank\" rel=\"noopener\">EEA-DATA-003</a> staðfestir að Ísland þyrfti að taka upp allt regluverkið — um þriðjungur er þegar innleiddur í gegnum EES-samninginn.",
-      "missing_context": "Orðalagið «allt regluverk» er rétt en gefur ekki til kynna þá sveigjanleika sem felst í aðlögunartímabilum — ný ríki geta samið um tímasetta aðlögun (3–12 ár) og tæknilegar aðlaganir, þótt reglurnar sjálfar séu ósamninga. Ísland hefur þegar innleitt um þriðjung regluverksins í gegnum EES-samninginn.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> staðfesta að aðildarviðræður snúist um innleiðingu acquis communautaire og að umsóknarríki samþykki regluverkið eins og það er. Fullyrðingin er þó of einföld á tvo vegu. Í fyrsta lagi er aðildarferlið meira en innleiðing — það felur einnig í sér samningaviðræður um aðlögunartímabil, fjárhagsleg skilyrði og stofnanatengsl. Í öðru lagi er orðalagið «allt regluverk sambandsins» villandi þar sem aðlögunartímabil og tæknilegar aðlaganir þýða að nýtt ríki innleiðir ekki allt á sama tíma. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> bendir sérstaklega á að 12 ára undanþága Póllands frá kaupum á landi hafi verið veruleg ívilnun innan rammans.",
+      "missing_context": "Ísland hefur þegar innleitt um þriðjung regluverksins í gegnum EES-samninginn, aðallega á sviði innri markaðarins. Ný löggjöf frá 2013 (m.a. evrópski græni sáttmálinn, gervigreindarreglugerð, lög um stafræna þjónustu) myndi bætast ofan á fyrra regluverk samkvæmt <a href=\"https://commission.europa.eu/strategy-and-policy/strategy-documents/commission-work-programme_en\" title=\"EUR-Lex legislative database; European Commission Work Programmes 2014–2025\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-018</a>. Aðlögunartímabil geta verið 3–12 ár og hafa raunveruleg efnahagsleg áhrif — greinarmunurinn á «samþykkja reglurnar» og «samþykkja hvenær þær taka gildi» er raunverulegur en getur verið ofmetinn.",
       "supporting_evidence": [
         {
           "id": "EEA-LEGAL-017",
@@ -707,27 +717,33 @@
     {
       "claim_text": "ESB er ekki að sækja um aðild að Íslandi — Ísland sækir um aðild að ESB sem er klúbbur með fastmótaðar reglur",
       "original_quote": "Veruleikinn er sá að ESB er ekki að sækja um aðild að Íslandi. Ísland sækir um aðild að klúbbi með fastmótaðar reglur.",
-      "verdict": "supported",
-      "explanation": "Þetta er í eðli sínu rétt lýsing á eðli aðildarviðræðna. <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> staðfesta bæði að umsækjendur samþykki regluverkið eins og það stendur — viðræðurnar snúast um hvenær og hvernig reglurnar eru innleiddar, ekki hvort þær séu innleiddar. <a href=\"https://link.springer.com/book/10.1057/9780230510302\" title=\"Grabbe, H. (2006) 'The EU's Transformative Power: Europeanization Through Conditionality in Central and Eastern Europe', Palgrave Macmillan\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-016</a> vitnar til fræðimannsins Heather Grabbe sem lýsir regluverkinu sem «take-it-or-leave-it» pakka. Fullyrðingin endurspeglar þessa staðreynd á hnitmiðaðan hátt.",
-      "missing_context": "Fullyrðingin er réttnefnd en einfaldar mynd aðildarviðræðna nokkuð. Samkvæmt <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> eru aðlögunartímabil, tæknilegar aðlaganir og fjárhagslegar ráðstafanir samningsatriði sem geta haft verulega þýðingu. Pólland fékk 12 ára undanþágu frá landkaupum erlendra aðila. Einnig hafa aðildarríki rödd í reglugerðarferlinu eftir aðild — þau verða hluti af ákvarðanatökukeðjunni, ólíkt EES-aðild.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin lýsir ESB sem «klúbbi með fastmótaðar reglur» sem Ísland sæki um aðild að — ekki öfugt. Þetta er í grundvallaratriðum rétt: aðildarferlið krefst þess að umsóknarríki uppfylli Kaupmannahafnarviðmiðin og taki upp regluverkið. Hins vegar er myndin einföldari en heimildir gefa til kynna. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:22013A0302(01)\" title=\"Treaty of Lisbon — Protocol on the concerns of the Irish people; Protocol 21 on UK and Ireland (JHA opt-in)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-011</a> sýnir að Írland náði fjölmörgum undanþágum (Schengen, hlutleysi, réttarvörslumál) og <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79\" target=\"_blank\" rel=\"noopener\">SOV-DATA-002</a> bendir á að aðild krefjist stjórnarskrárbreytingar á Íslandi — ferlið er því ekki einfaldlega «klúbbur tekur við nýjum meðlim». Reglurnar eru ekki algjörlega «fastmótaðar» þar sem samningaviðræður bjóða upp á aðlögun.",
+      "missing_context": "Fordæmi Írlands (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:22013A0302(01)\" title=\"Treaty of Lisbon — Protocol on the concerns of the Irish people; Protocol 21 on UK and Ireland (JHA opt-in)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-011</a>) sýna að ESB-reglur eru ekki algjörlega «fastmótaðar» — aðildarríki hafa samið um undanþágur á ýmsum sviðum. Ísland ræður aðildarferli sínu sjálft og þyrfti stjórnarskrárbreytingu samkvæmt 79. grein (<a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79\" target=\"_blank\" rel=\"noopener\">SOV-DATA-002</a>). Þjóðaratkvæðagreiðslan er ráðgefandi og Alþingi fer endanlega með ákvörðunarvaldið.",
       "supporting_evidence": [
         {
-          "id": "EEA-LEGAL-017",
-          "source_name": "European Commission — 'EU Accession Process: Steps towards joining' factsheet",
-          "source_url": "https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf"
+          "id": "SOV-DATA-002",
+          "source_name": "Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79",
+          "source_url": "https://www.althingi.is/lagas/nuna/1944033.html"
         },
         {
-          "id": "EEA-LEGAL-021",
-          "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
-          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+          "id": "TRADE-DATA-002",
+          "source_name": "EEA Agreement — Protocol 3 on trade in processed agricultural products",
+          "source_url": "https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf"
         },
         {
-          "id": "EEA-LEGAL-016",
-          "source_name": "Grabbe, H. (2006) 'The EU's Transformative Power: Europeanization Through Conditionality in Central and Eastern Europe', Palgrave Macmillan",
-          "source_url": "https://link.springer.com/book/10.1057/9780230510302"
+          "id": "EEA-DATA-024",
+          "source_name": "Vísindavefurinn — Þórhildur Hagalín, European Studies scholar (2014)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=68561"
         }
       ],
-      "contradicting_evidence": [],
+      "contradicting_evidence": [
+        {
+          "id": "SOV-LEGAL-011",
+          "source_name": "Treaty of Lisbon — Protocol on the concerns of the Irish people; Protocol 21 on UK and Ireland (JHA opt-in)",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:22013A0302(01)"
+        }
+      ],
       "category": "sovereignty",
       "attribution": "asserted",
       "article_slug": "draumurinn-um-esb-samning-er-uppgjof",
@@ -807,15 +823,10 @@
     {
       "claim_text": "Ísland á einstakt tækifæri í gagnaverum og orkufrekum iðnaði",
       "original_quote": "Ísland á einstakt tækifæri í gagnaverum og orkufrekum iðnaði.",
-      "verdict": "supported",
-      "explanation": "Heimildir styðja þetta vel. <a href=\"https://ec.europa.eu/eurostat/\" title=\"Eurostat — Electricity prices for household and non-household consumers; Orkustofnun\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-003</a> sýnir að orkuverð til stóriðju á Íslandi er langt undir ESB-meðaltali (25–35 USD/MWh á móti 100–150 EUR/MWh). <a href=\"https://orkustofnun.is/\" title=\"Orkustofnun (National Energy Authority) — Energy Statistics 2024\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-005</a> staðfestir að Ísland er með hæsta hlutfall endurnýjanlegrar orku í Evrópu (um 85%), og <a href=\"https://orkustofnun.is/en/information/publication/energy_data\" title=\"Orkustofnun — Energy Statistics in Iceland 2023\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-001</a> bendir á nánast 100% endurnýjanlega raforku. Samsetning ódýrrar og hreinnar orku, kalt loftslag (kæling gagnavera) og sterk stafræn innviðabygging (<a href=\"https://digital-strategy.ec.europa.eu/en/policies/desi\" title=\"Hagstofa Íslands — ICT usage survey; European Commission — Digital Economy and Society Index (DESI)\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-015</a> nefnir 98% háhraðanettengingu) skapa raunverulegt samkeppnisforskot.",
-      "missing_context": "<a href=\"https://orkustofnun.is/raforkumal/raforkuspa/\" title=\"Orkustofnun — Orkuspá og raforkuáætlun\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-007</a> varar við orkuskorti á Íslandi — Landsvirkjun getur ekki tekið við nýjum stórum viðskiptavinum til skamms tíma og ný virkjun tekur 5–10 ár. Tækifærið er raunverulegt en háð auknu orkuframboði. Álver nota nú þegar um 70% raforku landsins, sem takmarkar svigrúm fyrir nýja aðila eins og gagnaveri.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin um «einstakt tækifæri» í gagnaverum og orkufrekum iðnaði á sér stoð í orkuauðlindum Íslands — <a href=\"https://orkustofnun.is/\" title=\"Orkustofnun (National Energy Authority) — Energy Statistics 2024\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-005</a> og <a href=\"https://orkustofnun.is/en/information/publication/energy_data\" title=\"Orkustofnun — Energy Statistics in Iceland 2023\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-001</a> staðfesta nánast 100% endurnýjanlega raforku og mikla virkjunarmöguleika. <a href=\"https://orkustofnun.is/en/information/numerical_data/heat\" title=\"Orkustofnun — Geothermal Development and Research in Iceland 2023\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-002</a> sýnir 1.500–2.000 MW af óvirkjuðum jarðvarma. Þó ber <a href=\"https://orkustofnun.is/raforkumal/raforkuspa/\" title=\"Orkustofnun — Orkuspá og raforkuáætlun\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-007</a> skýrt vitni um orkuskort á Íslandi 2022–2026: Landsvirkjun gat ekki tekið við nýjum stórum viðskiptavinum og ný virkjun tekur 5–10 ár. Þetta takmarkar «tækifærið» verulega til skamms tíma. Fullyrðingin er of einföld þar sem hún nefnir ekki þessar skorður.",
+      "missing_context": "Orkuskortur á Íslandi er afstæður en raunverulegur til skamms tíma — Landsvirkjun getur ekki þjónustað nýja stóra viðskiptavini (<a href=\"https://orkustofnun.is/raforkumal/raforkuspa/\" title=\"Orkustofnun — Orkuspá og raforkuáætlun\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-007</a>). Ný virkjun krefst 5–10 ára undirbúnings vegna leyfisveitinga og umhverfismats. Jarðvarmavirkjanir hafa sýnt minnkandi þrýsting eftir áratuga nýtingar. Álver nota þegar um 70% raforku landsins, sem takmarkar rými fyrir gagnamiðstöðvar verulega. Fullyrðingin nefnir ekki ESB-aðild sérstaklega og tengist orkustefnumálum frekar en ESB-umræðunni beint.",
       "supporting_evidence": [
-        {
-          "id": "ENERGY-DATA-003",
-          "source_name": "Eurostat — Electricity prices for household and non-household consumers; Orkustofnun",
-          "source_url": "https://ec.europa.eu/eurostat/"
-        },
         {
           "id": "ENERGY-DATA-005",
           "source_name": "Orkustofnun (National Energy Authority) — Energy Statistics 2024",
@@ -830,11 +841,6 @@
           "id": "ENERGY-DATA-002",
           "source_name": "Orkustofnun — Geothermal Development and Research in Iceland 2023",
           "source_url": "https://orkustofnun.is/en/information/numerical_data/heat"
-        },
-        {
-          "id": "LABOUR-DATA-015",
-          "source_name": "Hagstofa Íslands — ICT usage survey; European Commission — Digital Economy and Society Index (DESI)",
-          "source_url": "https://digital-strategy.ec.europa.eu/en/policies/desi"
         }
       ],
       "contradicting_evidence": [

@@ -23,16 +23,23 @@
   const renderActiveFilterChips = utils.renderActiveFilterChips;
   const DATA_BASE = utils.getDataBase
     ? utils.getDataBase(document.currentScript, "/assets/data")
-    : (document.currentScript?.dataset.base || "/assets/data");
+    : document.currentScript?.dataset.base || "/assets/data";
   const ENTITIES_URL = `${DATA_BASE}/entities.json`;
   const TYPE_LABELS = TAXONOMY.entityTypeLabels || {};
   const TYPE_FILTER_LABELS = TAXONOMY.entityTypeFilterLabels || {};
   const STANCE_FILTER_LABELS = TAXONOMY.stanceFilterLabels || {};
-  const VERDICT_LABELS = (TAXONOMY.verdictLabels && TAXONOMY.verdictLabels.factual) || {};
+  const VERDICT_LABELS =
+    (TAXONOMY.verdictLabels && TAXONOMY.verdictLabels.factual) || {};
   const VERDICT_CLASSES = TAXONOMY.verdictClasses || {};
   const PARTY_CLASSES = TAXONOMY.partyClasses || {};
 
-  const VERDICT_ORDER = ["supported", "partially_supported", "unverifiable", "unsupported", "misleading"];
+  const VERDICT_ORDER = [
+    "supported",
+    "partially_supported",
+    "unverifiable",
+    "unsupported",
+    "misleading",
+  ];
   const SORT_LABELS = {
     claim_count: "Fullyrðingar",
     mention_count: "Tilvísanir",
@@ -98,14 +105,19 @@
           entity.name?.toLowerCase().includes(q) ||
           entity.role?.toLowerCase().includes(q) ||
           entity.party?.toLowerCase().includes(q) ||
-          entity.description?.toLowerCase().includes(q)
+          entity.description?.toLowerCase().includes(q),
       );
     }
 
     if (filters.type === "politician") {
-      results = results.filter((entity) => entity.type === "individual" && entity.subtype === "politician");
+      results = results.filter(
+        (entity) =>
+          entity.type === "individual" && entity.subtype === "politician",
+      );
     } else if (filters.type === "media") {
-      results = results.filter((entity) => entity.type === "institution" && entity.subtype === "media");
+      results = results.filter(
+        (entity) => entity.type === "institution" && entity.subtype === "media",
+      );
     } else if (filters.type) {
       results = results.filter((entity) => entity.type === filters.type);
     }
@@ -116,7 +128,9 @@
 
     if (filters.stance) {
       if (filters.stance === "mixed") {
-        results = results.filter((entity) => entity.stance === "mixed" || entity.stance === "neutral");
+        results = results.filter(
+          (entity) => entity.stance === "mixed" || entity.stance === "neutral",
+        );
       } else {
         results = results.filter((entity) => entity.stance === filters.stance);
       }
@@ -132,10 +146,17 @@
     return {
       total: entities.length,
       parties: entities.filter((entity) => entity.type === "party").length,
-      politicians: entities.filter((entity) => entity.type === "individual" && entity.subtype === "politician").length,
-      media: entities.filter((entity) => entity.type === "institution" && entity.subtype === "media").length,
-      institutions: entities.filter((entity) => entity.type === "institution").length,
-      individuals: entities.filter((entity) => entity.type === "individual").length,
+      politicians: entities.filter(
+        (entity) =>
+          entity.type === "individual" && entity.subtype === "politician",
+      ).length,
+      media: entities.filter(
+        (entity) => entity.type === "institution" && entity.subtype === "media",
+      ).length,
+      institutions: entities.filter((entity) => entity.type === "institution")
+        .length,
+      individuals: entities.filter((entity) => entity.type === "individual")
+        .length,
     };
   }
 
@@ -171,7 +192,10 @@
         className: "et-select",
         label: "Tegund",
         placeholder: "Allar tegundir",
-        options: Object.entries(TYPE_FILTER_LABELS).map(([value, label]) => ({ value, label })),
+        options: Object.entries(TYPE_FILTER_LABELS).map(([value, label]) => ({
+          value,
+          label,
+        })),
         selectedValue: filters.type,
       }),
     ];
@@ -185,7 +209,7 @@
           placeholder: "Allir flokkar",
           options: buildPartyOptions(),
           selectedValue: filters.party,
-        })
+        }),
       );
     }
 
@@ -195,7 +219,10 @@
         className: "et-select",
         label: "Afstaða",
         placeholder: "Öll viðhorf",
-        options: Object.entries(STANCE_FILTER_LABELS).map(([value, label]) => ({ value, label })),
+        options: Object.entries(STANCE_FILTER_LABELS).map(([value, label]) => ({
+          value,
+          label,
+        })),
         selectedValue: filters.stance,
       }),
       renderer.renderSelect({
@@ -209,7 +236,7 @@
           { value: "stance_score", label: "Afstaða" },
         ],
         selectedValue: filters.sort,
-      })
+      }),
     );
 
     root.innerHTML = `
@@ -225,10 +252,12 @@
           placeholder: "Leita í aðilum…",
           value: filters.search,
         },
-        rows: [{
-          className: "et-filter-row",
-          controls: filterControls,
-        }],
+        rows: [
+          {
+            className: "et-filter-row",
+            controls: filterControls,
+          },
+        ],
       })}
 
       <div id="et-active-filters"></div>
@@ -269,7 +298,10 @@
     renderActiveFilters();
 
     if (entities.length === 0) {
-      el.innerHTML = renderer.renderMessage("Engir aðilar fundust.", "et-empty");
+      el.innerHTML = renderer.renderMessage(
+        "Engir aðilar fundust.",
+        "et-empty",
+      );
       updateVisibleCount(0);
       return;
     }
@@ -287,10 +319,24 @@
 
     const sections = [];
     if (individuals.length > 0) {
-      sections.push(renderSection("individuals", "Einstaklingar", individuals, pages.individuals));
+      sections.push(
+        renderSection(
+          "individuals",
+          "Einstaklingar",
+          individuals,
+          pages.individuals,
+        ),
+      );
     }
     if (other.length > 0) {
-      sections.push(renderSection("other", "Flokkar, samtök og stofnanir", other, pages.other));
+      sections.push(
+        renderSection(
+          "other",
+          "Flokkar, samtök og stofnanir",
+          other,
+          pages.other,
+        ),
+      );
     }
 
     el.innerHTML = sections.join("");
@@ -308,7 +354,8 @@
       containerClass: "et-grid",
     });
 
-    const pagerHtml = totalPages > 1 ? renderPager(key, page, totalPages, items.length) : "";
+    const pagerHtml =
+      totalPages > 1 ? renderPager(key, page, totalPages, items.length) : "";
 
     return `
       <section class="et-section" data-section="${key}">
@@ -320,8 +367,8 @@
   }
 
   function renderPager(key, page, totalPages, totalItems) {
-    const prevDisabled = page <= 1 ? ' disabled' : '';
-    const nextDisabled = page >= totalPages ? ' disabled' : '';
+    const prevDisabled = page <= 1 ? " disabled" : "";
+    const nextDisabled = page >= totalPages ? " disabled" : "";
     const start = (page - 1) * PAGE_SIZE + 1;
     const end = Math.min(page * PAGE_SIZE, totalItems);
 
@@ -342,10 +389,14 @@
   function renderEntityCard(entity) {
     const cardId = `et-entity-${entity.slug}`;
     const score = entity.stance_score ?? 0;
-    const hue = stanceHue(score);
-    const sat = 10 + Math.abs(score) * 60;
-    const label = stanceLabel(score);
-    const detailUrl = withReturnUrl(`/raddirnar/${entity.slug}/`, buildReturnUrl(cardId));
+    const isInsufficient = entity.stance === "insufficient_data";
+    const hue = isInsufficient ? 0 : stanceHue(score);
+    const sat = isInsufficient ? 0 : 10 + Math.abs(score) * 60;
+    const label = stanceLabel(score, entity);
+    const detailUrl = withReturnUrl(
+      `/raddirnar/${entity.slug}/`,
+      buildReturnUrl(cardId),
+    );
 
     const typeBadge = `<span class="et-type-badge et-type-${entity.type}">${TYPE_LABELS[entity.type] || entity.type}</span>`;
 
@@ -356,7 +407,13 @@
       partyPillHtml = `<a href="/raddirnar/${escapeHtml(entity.party_slug)}/" class="et-party-pill ${partyClass}">${escapeHtml(partyLabel)}</a>`;
     }
 
-    const stancePillHtml = `<span class="et-stance-pill" style="--sh: ${hue}; --ss: ${sat}%">${label}</span>`;
+    const insufficientClass = isInsufficient ? " et-stance-insufficient" : "";
+    const obsCount = entity.stance_observation_count ?? 0;
+    const obsHint =
+      obsCount < 5 && obsCount > 0
+        ? ` <span class="et-obs-count">(n=${obsCount})</span>`
+        : "";
+    const stancePillHtml = `<span class="et-stance-pill${insufficientClass}" style="--sh: ${hue}; --ss: ${sat}%">${label}${obsHint}</span>`;
 
     const roleHtml = entity.role
       ? `<p class="et-card-role">${escapeHtml(capitalize(entity.role))}</p>`
@@ -366,8 +423,10 @@
 
     const claimCount = entity.claims?.length || 0;
     let statsHtml = '<div class="et-card-stats">';
-    if (claimCount) statsHtml += `<span class="et-card-stat">${claimCount} fullyrðing${claimCount > 1 ? "ar" : ""}</span>`;
-    if (entity.althingi_stats) statsHtml += `<span class="et-card-stat et-althingi-badge">${entity.althingi_stats.speech_count} þingræður</span>`;
+    if (claimCount)
+      statsHtml += `<span class="et-card-stat">${claimCount} fullyrðing${claimCount > 1 ? "ar" : ""}</span>`;
+    if (entity.althingi_stats)
+      statsHtml += `<span class="et-card-stat et-althingi-badge">${entity.althingi_stats.speech_count} þingræður</span>`;
     statsHtml += "</div>";
 
     return `
@@ -383,11 +442,13 @@
 
   function renderEntityVerdictBar(entity) {
     const scorecard = entity.scorecard || {};
-    const total = VERDICT_ORDER.reduce((sum, v) => sum + (scorecard[v] || 0), 0);
+    const total = VERDICT_ORDER.reduce(
+      (sum, v) => sum + (scorecard[v] || 0),
+      0,
+    );
     if (total === 0) return "";
 
-    const segments = VERDICT_ORDER
-      .filter((v) => scorecard[v])
+    const segments = VERDICT_ORDER.filter((v) => scorecard[v])
       .map((v) => {
         const count = scorecard[v];
         const pct = ((count / total) * 100).toFixed(1);
@@ -404,7 +465,8 @@
     return score >= 0 ? 60 + score * 150 : 60 + score * 60;
   }
 
-  function stanceLabel(score) {
+  function stanceLabel(score, entity) {
+    if (entity?.stance === "insufficient_data") return "Of fá gögn";
     if (score >= 0.5) return "ESB-jákvæð";
     if (score <= -0.5) return "ESB-gagnrýnin";
     if (Math.abs(score) < 0.1) return "Hlutlaus";
@@ -425,34 +487,52 @@
     }
 
     if (filters.type) {
-      chips.push({ key: "type", text: `Tegund: ${TYPE_FILTER_LABELS[filters.type] || filters.type}` });
+      chips.push({
+        key: "type",
+        text: `Tegund: ${TYPE_FILTER_LABELS[filters.type] || filters.type}`,
+      });
     }
 
     if (filters.party) {
-      const partyName = getEntities().find((e) => e.party_slug === filters.party)?.party || filters.party;
+      const partyName =
+        getEntities().find((e) => e.party_slug === filters.party)?.party ||
+        filters.party;
       chips.push({ key: "party", text: `Flokkur: ${partyName}` });
     }
 
     if (filters.stance) {
-      chips.push({ key: "stance", text: `Afstaða: ${STANCE_FILTER_LABELS[filters.stance] || filters.stance}` });
+      chips.push({
+        key: "stance",
+        text: `Afstaða: ${STANCE_FILTER_LABELS[filters.stance] || filters.stance}`,
+      });
     }
 
     if (filters.sort && filters.sort !== "claim_count") {
-      chips.push({ key: "sort", text: `Röðun: ${SORT_LABELS[filters.sort] || filters.sort}` });
+      chips.push({
+        key: "sort",
+        text: `Röðun: ${SORT_LABELS[filters.sort] || filters.sort}`,
+      });
     }
 
     return chips;
   }
 
   function renderActiveFilters() {
-    renderActiveFilterChips("et-active-filters", renderer, getActiveFilterChips);
+    renderActiveFilterChips(
+      "et-active-filters",
+      renderer,
+      getActiveFilterChips,
+    );
   }
 
   function clearFilter(key, api) {
     const patch = {};
 
     if (key === "search") patch.search = "";
-    if (key === "type") { patch.type = ""; patch.party = ""; }
+    if (key === "type") {
+      patch.type = "";
+      patch.party = "";
+    }
     if (key === "party") patch.party = "";
     if (key === "stance") patch.stance = "";
     if (key === "sort") {
@@ -474,7 +554,7 @@
         sortDir: "DESC",
       },
       "all",
-      api
+      api,
     );
   }
 
@@ -495,13 +575,18 @@
     (value, _target, _event, api) => {
       commitState({ search: value }, "results", api);
     },
-    { debounceMs: 200, trim: true }
+    { debounceMs: 200, trim: true },
   );
 
   controller.bindChange("#et-type", (value, _target, _event, api) => {
     // Clear party when switching to a type where party filter is irrelevant
-    const clearParty = value && value !== "politician" && value !== "individual";
-    commitState({ type: value, ...(clearParty ? { party: "" } : {}) }, "all", api);
+    const clearParty =
+      value && value !== "politician" && value !== "individual";
+    commitState(
+      { type: value, ...(clearParty ? { party: "" } : {}) },
+      "all",
+      api,
+    );
   });
 
   controller.bindChange("#et-party", (value, _target, _event, api) => {
@@ -519,7 +604,7 @@
         sortDir: value === "name" ? "ASC" : "DESC",
       },
       "results",
-      api
+      api,
     );
   });
 
@@ -530,7 +615,9 @@
     if (dir === "prev") pages[section]--;
     api.rerender("results");
     // Scroll the section heading into view
-    const heading = root.querySelector(`[data-section="${section}"] .et-section-heading`);
+    const heading = root.querySelector(
+      `[data-section="${section}"] .et-section-heading`,
+    );
     if (heading) heading.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 
