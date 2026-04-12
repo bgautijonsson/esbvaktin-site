@@ -5,28 +5,48 @@ const pageChecks = [
   { path: "/", selector: ".home-hero", title: "ESB Vaktin" },
   { path: "/vikuyfirlit/", selector: ".ov-card", title: "Vikuyfirlit" },
   { path: "/malefni/", selector: ".tp-card", title: "Málefni" },
-  { path: "/fullyrdingar/", selector: "#ct-results .ct-card", title: "Fullyrðingavakt" },
+  {
+    path: "/fullyrdingar/",
+    selector: "#ct-results .ct-card",
+    title: "Fullyrðingavakt",
+  },
   { path: "/umraedan/", selector: "#dt-results .dt-card", title: "Umræðan" },
   { path: "/heimildir/", selector: ".ev-card", title: "Heimildir" },
   { path: "/raddirnar/", selector: "#et-results .et-card", title: "Raddirnar" },
-  { path: "/thingraedur/", selector: "#st-results .st-card", title: "Þingræður um ESB" },
+  {
+    path: "/thingraedur/",
+    selector: "#st-results .st-card",
+    title: "Þingræður um ESB",
+  },
 ];
 
-test("desktop navbar keeps primary and utility links visible", async ({ page }) => {
+test("desktop navbar shows flat 5-item nav", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 960 });
   await gotoAndWait(page, "/", ".home-hero");
   const nav = page.locator(".site-nav");
 
   await expect(nav.locator(".nav-toggle")).toBeHidden();
-  await expect(nav.locator(".nav-list--primary")).toBeVisible();
-  await expect(nav.locator(".nav-list--utility")).toBeVisible();
-  await expect(nav.getByRole("link", { name: "Fullyrðingar", exact: true })).toBeVisible();
-  await expect(nav.getByRole("link", { name: "Málefni", exact: true })).toBeVisible();
-  await expect(nav.getByRole("link", { name: "Aðferðafræði", exact: true })).toBeVisible();
-  await expect(nav.getByRole("button", { name: "Sjálfvirkt" })).toBeVisible();
+  await expect(nav.locator(".nav-list")).toBeVisible();
+  await expect(
+    nav.getByRole("link", { name: "Nýtt", exact: true }),
+  ).toBeVisible();
+  await expect(
+    nav.getByRole("link", { name: "Fullyrðingar", exact: true }),
+  ).toBeVisible();
+  await expect(
+    nav.getByRole("link", { name: "Umræðan", exact: true }),
+  ).toBeVisible();
+  await expect(
+    nav.getByRole("link", { name: "Málefni", exact: true }),
+  ).toBeVisible();
+  await expect(
+    nav.getByRole("link", { name: "Safnið", exact: true }),
+  ).toBeVisible();
 });
 
-test("mobile navbar opens grouped menu and closes with escape", async ({ page }) => {
+test("mobile navbar opens flat menu and closes with escape", async ({
+  page,
+}) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await gotoAndWait(page, "/", ".home-hero");
 
@@ -40,8 +60,12 @@ test("mobile navbar opens grouped menu and closes with escape", async ({ page })
   await openMobileMenu(page);
 
   await expect(toggle).toHaveAttribute("aria-expanded", "true");
-  await expect(menu.getByText("Gagnasíður", { exact: true })).toBeVisible();
-  await expect(menu.getByRole("link", { name: "Þingræður", exact: true })).toBeVisible();
+  await expect(
+    menu.getByRole("link", { name: "Nýtt", exact: true }),
+  ).toBeVisible();
+  await expect(
+    menu.getByRole("link", { name: "Safnið", exact: true }),
+  ).toBeVisible();
 
   await page.keyboard.press("Escape");
 
@@ -58,7 +82,9 @@ test("core public pages render their main content", async ({ page }) => {
   }
 });
 
-test("listing pages can reach representative detail pages", async ({ page }) => {
+test("listing pages can reach representative detail pages", async ({
+  page,
+}) => {
   await page.setViewportSize({ width: 1440, height: 960 });
 
   await gotoAndWait(page, "/umraedan/", "#dt-results .dt-card-link");
@@ -92,7 +118,9 @@ test("listing pages can reach representative detail pages", async ({ page }) => 
   await expect(page).toHaveURL(/\/vikuyfirlit\/.+\/\?return=/);
 });
 
-test("claim tracker article links prefer internal reports and preserve the original source on the report page", async ({ page }) => {
+test("claim tracker article links prefer internal reports and preserve the original source on the report page", async ({
+  page,
+}) => {
   await page.setViewportSize({ width: 1440, height: 960 });
   await gotoAndWait(page, "/fullyrdingar/", "#ct-results .ct-card");
 
@@ -102,21 +130,32 @@ test("claim tracker article links prefer internal reports and preserve the origi
   await expect(card).toContainText("undanþágur");
   await card.locator(".ct-card-header").click();
 
-  const sightingLink = card.locator('.ct-sighting-item a[href*="/umraedan/"]').first();
+  const sightingLink = card
+    .locator('.ct-sighting-item a[href*="/umraedan/"]')
+    .first();
   await expect(sightingLink).toBeVisible();
-  await expect(sightingLink).toHaveAttribute("href", /\/umraedan\/esb-pakkinn-er-galopinn\/\?return=/);
+  await expect(sightingLink).toHaveAttribute(
+    "href",
+    /\/umraedan\/esb-pakkinn-er-galopinn\/\?return=/,
+  );
 
   await sightingLink.click();
 
-  await expect(page).toHaveURL(/\/umraedan\/esb-pakkinn-er-galopinn\/\?return=/);
-  await expect(page.locator(".report-header h1")).toContainText("ESB-pakkinn er galopinn");
+  await expect(page).toHaveURL(
+    /\/umraedan\/esb-pakkinn-er-galopinn\/\?return=/,
+  );
+  await expect(page.locator(".report-header h1")).toContainText(
+    "ESB-pakkinn er galopinn",
+  );
   await expect(page.locator(".report-source-link")).toHaveAttribute(
     "href",
-    /visir\.is\/g\/20262853296d\/esb-pakkinn-er-galopinn/
+    /visir\.is\/g\/20262853296d\/esb-pakkinn-er-galopinn/,
   );
 });
 
-test("detail back links preserve list context and highlight the prior result", async ({ page }) => {
+test("detail back links preserve list context and highlight the prior result", async ({
+  page,
+}) => {
   await page.setViewportSize({ width: 1440, height: 960 });
 
   await gotoAndWait(page, "/umraedan/", "#dt-results .dt-card-link");
@@ -136,18 +175,28 @@ test("detail back links preserve list context and highlight the prior result", a
   await expect(page.locator(`#${cardId}`)).toHaveClass(/tracker-return-target/);
 });
 
-test("homepage keeps the front page focused on datasets and current activity", async ({ page }) => {
+test("homepage keeps the front page focused on datasets and current activity", async ({
+  page,
+}) => {
   await page.setViewportSize({ width: 1440, height: 960 });
 
   await gotoAndWait(page, "/", ".home-sidebar");
   await expect(page.locator(".home-signal-card")).toHaveCount(5);
-  await expect(page.locator(".home-sidebar-section").first()).toContainText("Oftast nefnd");
-  await expect(page.locator(".home-sidebar-section").nth(1)).toContainText("Nýjustu greiningar");
+  await expect(page.locator(".home-sidebar-section").first()).toContainText(
+    "Oftast nefnd",
+  );
+  await expect(page.locator(".home-sidebar-section").nth(1)).toContainText(
+    "Nýjustu greiningar",
+  );
 });
 
 test("evidence links show a short preview on hover", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 960 });
-  await gotoAndWait(page, "/umraedan/treystu-thjodinni-opid-bref-til-forsaetisradherra-islands/", ".report-toggle-all");
+  await gotoAndWait(
+    page,
+    "/umraedan/treystu-thjodinni-opid-bref-til-forsaetisradherra-islands/",
+    ".report-toggle-all",
+  );
 
   await page.getByRole("button", { name: "Opna allar" }).click();
 
@@ -170,7 +219,10 @@ test("topic detail page loads embedded claim tracker", async ({ page }) => {
 
   // Scroll to trigger lazy load of the claim tracker
   await page.locator("#topic-claim-tracker").scrollIntoViewIfNeeded();
-  await page.locator("#topic-claim-tracker .ct-card").first().waitFor({ state: "visible", timeout: 10000 });
+  await page
+    .locator("#topic-claim-tracker .ct-card")
+    .first()
+    .waitFor({ state: "visible", timeout: 10000 });
 
   // Verify claim cards rendered
   const cardCount = await page.locator("#topic-claim-tracker .ct-card").count();

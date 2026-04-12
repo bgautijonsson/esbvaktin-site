@@ -19,7 +19,8 @@
   const withReturnUrl = utils.withReturnUrl || ((url) => url);
   const DATA_BASE = utils.getDataBase
     ? utils.getDataBase(document.currentScript, "/assets/data")
-    : (document.querySelector("[data-base]")?.getAttribute("data-base") || "/assets/data");
+    : document.querySelector("[data-base]")?.getAttribute("data-base") ||
+      "/assets/data";
   const JSON_URL = `${DATA_BASE}/evidence.json`;
   const TOPIC_LABELS = TAXONOMY.categoryLabels || {};
   const SOURCE_TYPE_LABELS = TAXONOMY.evidenceSourceTypeLabels || {};
@@ -65,7 +66,10 @@
     renderResults: renderAll,
     initialRender: "results",
     onError(error) {
-      root.innerHTML = renderer.renderMessage("Gat ekki hlaðið gögnum.", "ev-empty");
+      root.innerHTML = renderer.renderMessage(
+        "Gat ekki hlaðið gögnum.",
+        "ev-empty",
+      );
       console.error("Evidence tracker: failed to load data", error);
     },
   });
@@ -89,7 +93,7 @@
           evidence.evidence_id.toLowerCase().includes(q) ||
           evidence.statement.toLowerCase().includes(q) ||
           evidence.source_name.toLowerCase().includes(q) ||
-          (TOPIC_LABELS[evidence.topic] || "").toLowerCase().includes(q)
+          (TOPIC_LABELS[evidence.topic] || "").toLowerCase().includes(q),
       );
     }
 
@@ -98,15 +102,21 @@
     }
 
     if (state.sourceType) {
-      filtered = filtered.filter((evidence) => evidence.source_type === state.sourceType);
+      filtered = filtered.filter(
+        (evidence) => evidence.source_type === state.sourceType,
+      );
     }
 
     if (state.domain) {
-      filtered = filtered.filter((evidence) => evidence.domain === state.domain);
+      filtered = filtered.filter(
+        (evidence) => evidence.domain === state.domain,
+      );
     }
 
     if (state.confidence) {
-      filtered = filtered.filter((evidence) => evidence.confidence === state.confidence);
+      filtered = filtered.filter(
+        (evidence) => evidence.confidence === state.confidence,
+      );
     }
 
     return filtered;
@@ -118,14 +128,19 @@
 
     switch (state.sort) {
       case "source_date":
-        sorted.sort((a, b) => (b.source_date || "").localeCompare(a.source_date || ""));
+        sorted.sort((a, b) =>
+          (b.source_date || "").localeCompare(a.source_date || ""),
+        );
         break;
       case "related_count":
         sorted.sort((a, b) => (b.related_count || 0) - (a.related_count || 0));
         break;
       case "topic":
         sorted.sort((a, b) =>
-          (TOPIC_LABELS[a.topic] || a.topic).localeCompare(TOPIC_LABELS[b.topic] || b.topic, "is")
+          (TOPIC_LABELS[a.topic] || a.topic).localeCompare(
+            TOPIC_LABELS[b.topic] || b.topic,
+            "is",
+          ),
         );
         break;
       case "evidence_id":
@@ -154,7 +169,8 @@
           break;
         case "source_type":
           key = evidence.source_type;
-          label = SOURCE_TYPE_LABELS[evidence.source_type] || evidence.source_type;
+          label =
+            SOURCE_TYPE_LABELS[evidence.source_type] || evidence.source_type;
           break;
         case "domain":
           key = evidence.domain;
@@ -175,14 +191,18 @@
       groups.get(key).items.push(evidence);
     }
 
-    return Array.from(groups.values()).sort((a, b) => a.label.localeCompare(b.label, "is"));
+    return Array.from(groups.values()).sort((a, b) =>
+      a.label.localeCompare(b.label, "is"),
+    );
   }
 
   function renderCard(evidence) {
     const cardId = `ev-evidence-${evidence.slug}`;
     const topicLabel = TOPIC_LABELS[evidence.topic] || evidence.topic;
-    const sourceTypeLabel = SOURCE_TYPE_LABELS[evidence.source_type] || evidence.source_type;
-    const confidenceLabel = CONFIDENCE_LABELS[evidence.confidence] || evidence.confidence;
+    const sourceTypeLabel =
+      SOURCE_TYPE_LABELS[evidence.source_type] || evidence.source_type;
+    const confidenceLabel =
+      CONFIDENCE_LABELS[evidence.confidence] || evidence.confidence;
     const datePart = evidence.source_date
       ? `<time datetime="${escapeHtml(evidence.source_date)}">${formatIsDate(evidence.source_date)}</time>`
       : "";
@@ -217,12 +237,24 @@
     const sorted = sortEvidence(filtered);
     const groups = groupEvidence(sorted);
 
-    const topics = [...new Set(allEvidence.map((evidence) => evidence.topic))]
-      .sort((a, b) => (TOPIC_LABELS[a] || a).localeCompare(TOPIC_LABELS[b] || b, "is"));
-    const sourceTypes = [...new Set(allEvidence.map((evidence) => evidence.source_type))]
-      .sort((a, b) => (SOURCE_TYPE_LABELS[a] || a).localeCompare(SOURCE_TYPE_LABELS[b] || b, "is"));
-    const domains = [...new Set(allEvidence.map((evidence) => evidence.domain))]
-      .sort((a, b) => (DOMAIN_LABELS[a] || a).localeCompare(DOMAIN_LABELS[b] || b, "is"));
+    const topics = [
+      ...new Set(allEvidence.map((evidence) => evidence.topic)),
+    ].sort((a, b) =>
+      (TOPIC_LABELS[a] || a).localeCompare(TOPIC_LABELS[b] || b, "is"),
+    );
+    const sourceTypes = [
+      ...new Set(allEvidence.map((evidence) => evidence.source_type)),
+    ].sort((a, b) =>
+      (SOURCE_TYPE_LABELS[a] || a).localeCompare(
+        SOURCE_TYPE_LABELS[b] || b,
+        "is",
+      ),
+    );
+    const domains = [
+      ...new Set(allEvidence.map((evidence) => evidence.domain)),
+    ].sort((a, b) =>
+      (DOMAIN_LABELS[a] || a).localeCompare(DOMAIN_LABELS[b] || b, "is"),
+    );
 
     let html = "";
 
@@ -279,7 +311,9 @@
               className: "ev-filter-confidence",
               label: "Áreiðanleiki",
               placeholder: "Öll áreiðanleikastig",
-              options: Object.entries(CONFIDENCE_LABELS).map(([value, label]) => ({ value, label })),
+              options: Object.entries(CONFIDENCE_LABELS).map(
+                ([value, label]) => ({ value, label }),
+              ),
               selectedValue: state.confidence,
             }),
           ],
@@ -322,6 +356,8 @@
       });
     }
 
+    html += `<p class="ct-results-meta" aria-live="polite">${filtered.length === 0 ? "Engar heimildir fundust." : "Sýni " + filtered.length + " af " + allEvidence.length + " heimildum."}</p>`;
+
     if (filtered.length !== allEvidence.length) {
       html += `<p class="ev-stats"><strong>${filtered.length}</strong> af ${allEvidence.length} heimild${allEvidence.length !== 1 ? "um" : ""}</p>`;
     }
@@ -353,27 +389,45 @@
     }
 
     if (state.topic) {
-      chips.push({ key: "topic", text: `Efnisflokkur: ${TOPIC_LABELS[state.topic] || state.topic}` });
+      chips.push({
+        key: "topic",
+        text: `Efnisflokkur: ${TOPIC_LABELS[state.topic] || state.topic}`,
+      });
     }
 
     if (state.sourceType) {
-      chips.push({ key: "source_type", text: `Heimildagerð: ${SOURCE_TYPE_LABELS[state.sourceType] || state.sourceType}` });
+      chips.push({
+        key: "source_type",
+        text: `Heimildagerð: ${SOURCE_TYPE_LABELS[state.sourceType] || state.sourceType}`,
+      });
     }
 
     if (state.domain) {
-      chips.push({ key: "domain", text: `Svið: ${DOMAIN_LABELS[state.domain] || state.domain}` });
+      chips.push({
+        key: "domain",
+        text: `Svið: ${DOMAIN_LABELS[state.domain] || state.domain}`,
+      });
     }
 
     if (state.confidence) {
-      chips.push({ key: "confidence", text: `Áreiðanleiki: ${CONFIDENCE_LABELS[state.confidence] || state.confidence}` });
+      chips.push({
+        key: "confidence",
+        text: `Áreiðanleiki: ${CONFIDENCE_LABELS[state.confidence] || state.confidence}`,
+      });
     }
 
     if (state.groupBy && state.groupBy !== "topic") {
-      chips.push({ key: "group", text: `Flokkun: ${GROUP_LABELS[state.groupBy] || state.groupBy}` });
+      chips.push({
+        key: "group",
+        text: `Flokkun: ${GROUP_LABELS[state.groupBy] || state.groupBy}`,
+      });
     }
 
     if (state.sort && state.sort !== "source_date") {
-      chips.push({ key: "sort", text: `Röðun: ${SORT_LABELS[state.sort] || state.sort}` });
+      chips.push({
+        key: "sort",
+        text: `Röðun: ${SORT_LABELS[state.sort] || state.sort}`,
+      });
     }
 
     return chips;
@@ -423,33 +477,42 @@
         groupBy: "topic",
         sort: "source_date",
       },
-      api
+      api,
     );
   }
 
   controller.bindInput(
     ".ev-search",
     (value, _target, _event, api) => {
-      commitState({ search: value }, api, { render: "results", focusSelector: ".ev-search" });
+      commitState({ search: value }, api, {
+        render: "results",
+        focusSelector: ".ev-search",
+      });
     },
-    { debounceMs: 200 }
+    { debounceMs: 200 },
   );
 
   controller.bindChange(".ev-filter-topic", (value, _target, _event, api) => {
     commitState({ topic: value }, api);
   });
 
-  controller.bindChange(".ev-filter-source-type", (value, _target, _event, api) => {
-    commitState({ sourceType: value }, api);
-  });
+  controller.bindChange(
+    ".ev-filter-source-type",
+    (value, _target, _event, api) => {
+      commitState({ sourceType: value }, api);
+    },
+  );
 
   controller.bindChange(".ev-filter-domain", (value, _target, _event, api) => {
     commitState({ domain: value }, api);
   });
 
-  controller.bindChange(".ev-filter-confidence", (value, _target, _event, api) => {
-    commitState({ confidence: value }, api);
-  });
+  controller.bindChange(
+    ".ev-filter-confidence",
+    (value, _target, _event, api) => {
+      commitState({ confidence: value }, api);
+    },
+  );
 
   controller.bindChange(".ev-group-by", (value, _target, _event, api) => {
     commitState({ groupBy: value }, api);

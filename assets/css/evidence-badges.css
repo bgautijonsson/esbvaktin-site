@@ -10,12 +10,30 @@
   white-space: nowrap;
 }
 
-.ev-st-official_statistics { border-color: var(--accent); color: var(--accent); }
-.ev-st-legal_text          { border-color: #8b5cf6; color: #8b5cf6; }
-.ev-st-academic_paper      { border-color: #10b981; color: #10b981; }
-.ev-st-expert_analysis     { border-color: #f59e0b; color: #f59e0b; }
-.ev-st-international_org   { border-color: #06b6d4; color: #06b6d4; }
-.ev-st-parliamentary_record { border-color: #f97316; color: #f97316; }
+.ev-st-official_statistics {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.ev-st-legal_text {
+  border-color: var(--ev-legal);
+  color: var(--ev-legal);
+}
+.ev-st-academic_paper {
+  border-color: var(--ev-academic);
+  color: var(--ev-academic);
+}
+.ev-st-expert_analysis {
+  border-color: var(--ev-expert);
+  color: var(--ev-expert);
+}
+.ev-st-international_org {
+  border-color: var(--ev-intl-org);
+  color: var(--ev-intl-org);
+}
+.ev-st-parliamentary_record {
+  border-color: var(--ev-parliament);
+  color: var(--ev-parliament);
+}
 
 .ev-confidence-badge {
   display: inline-block;
@@ -27,9 +45,18 @@
   letter-spacing: 0.04em;
 }
 
-.ev-conf-high   { background: var(--v-supported); color: #fff; }
-.ev-conf-medium { background: var(--v-partial); color: #000; }
-.ev-conf-low    { background: var(--error); color: #fff; }
+.ev-conf-high {
+  background: var(--v-supported);
+  color: #fff;
+}
+.ev-conf-medium {
+  background: var(--v-partial);
+  color: #000;
+}
+.ev-conf-low {
+  background: var(--error);
+  color: #fff;
+}
 
 .ev-topic-tag {
   display: inline-block;

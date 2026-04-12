@@ -262,6 +262,7 @@
 
       <div id="et-active-filters"></div>
 
+      <p class="ct-results-meta" id="et-results-meta" aria-live="polite"></p>
       <div id="et-results">
         ${renderer.renderMessage("Hleð aðilum…", "et-loading")}
       </div>
@@ -291,6 +292,13 @@
   const PAGE_SIZE = 9;
   const pages = { individuals: 1, other: 1 };
 
+  function updateResultsMeta(count) {
+    const el = document.getElementById("et-results-meta");
+    if (el)
+      el.textContent =
+        count === 0 ? "Engir aðilar fundust." : "Sýni " + count + " aðila.";
+  }
+
   function renderResults() {
     const entities = queryEntities();
     const el = document.getElementById("et-results");
@@ -303,6 +311,7 @@
         "et-empty",
       );
       updateVisibleCount(0);
+      updateResultsMeta(0);
       return;
     }
 
@@ -316,6 +325,7 @@
     pages.other = Math.min(pages.other, maxOtherPage);
 
     updateVisibleCount(entities.length);
+    updateResultsMeta(entities.length);
 
     const sections = [];
     if (individuals.length > 0) {
