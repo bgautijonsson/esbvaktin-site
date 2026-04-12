@@ -8,6 +8,16 @@ evidence_preview: true
 {# ── Compute total claims for verdict bar widths ── #}
 {% set totalClaims = report.claims | length %}
 
+{# ── ClaimReview structured data (first claim as primary review) ── #}
+{% set verdictRating = {
+  "supported": "True",
+  "partially_supported": "Mostly True",
+  "unsupported": "False",
+  "misleading": "Misleading",
+  "unverifiable": "Unverifiable",
+  "insufficient_evidence": "Unverifiable"
+} %}
+
 <article class="report">
   <nav class="report-nav" aria-label="Til baka">
     <a href="/umraedan/" class="report-back" data-return-link data-return-fallback="/umraedan/" data-return-label="← Til baka í fyrri niðurstöður">&larr; Til baka í greinayfirlit</a>
@@ -179,6 +189,41 @@ evidence_preview: true
     {% endfor %}
   </section>
 </article>
+
+{# ── ClaimReview JSON-LD for Google rich results ── #}
+{% if report.claims | length %}
+{% set pc = report.claims[0] %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ClaimReview",
+  "url": "{{ site.url }}{{ page.url }}",
+  "claimReviewed": {{ (pc.claim.claim_text or pc.claim.original_quote) | dump | safe }},
+  "author": {
+    "@type": "Organization",
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}"
+  },
+  "datePublished": "{{ report.article_date or report.created_at }}",
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "{{ verdictRating[pc.verdict] or pc.verdict }}",
+    "bestRating": "True",
+    "worstRating": "False",
+    "alternateName": "{{ pc.verdict | verdictLabel }}"
+  },
+  "itemReviewed": {
+    "@type": "CreativeWork",
+    "author": {
+      "@type": "{% if report.article_author %}Person{% else %}Organization{% endif %}",
+      "name": {{ (report.article_author or report.article_source or "Óþekkt") | dump | safe }}
+    },
+    "datePublished": "{{ report.article_date }}"{% if report.article_url %},
+    "url": "{{ report.article_url }}"{% endif %}
+  }
+}
+</script>
+{% endif %}
 
 <script>
 (function () {

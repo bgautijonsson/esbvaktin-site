@@ -33,6 +33,28 @@
 
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/feed.xml">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+  {# ── Structured data ── #}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}",
+    "description": "{{ site.description }}",
+    "inLanguage": "{{ site.lang }}",
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{ site.title }}",
+      "url": "{{ site.url }}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ site.url }}/assets/img/social-card.png"
+      }
+    }
+  }
+  </script>
+
   <link rel="stylesheet" href="/assets/css/style.css">
   {% if extra_css or return_link_support %}<link rel="stylesheet" href="/assets/css/tracker-base.css">{% endif %}
   {% if extra_css %}
