@@ -10,8 +10,8 @@
   "summary": "Greindar 17 fullyrðingar. Niðurstöður: 11 stutt að hluta, 4 stutt af heimildum, 2 ekki hægt að sannreyna. Sjónarhorn: hallar á ESB-jákvæða hlið. Heildstæðni: 45%.",
   "capsule": "Þjóðaratkvæðagreiðslan 29. ágúst 2026 um hvort hefja eigi aðildarviðræður er staðfest í lögum og tímaáætlun ríkisstjórnarinnar — að viðræður klárist á kjörtímabilinu — er í takt við það sem Alþingi hefur lýst yfir. Áhugavert samhengi sem fer á milli línanna: sameiginlega sjávarútvegsstefnan ESB (CFP) felur í sér að heildaraflamark ákvarðast af öllum aðildarríkjum í sameiningu, ekki einstaka ríkjum. Þetta er grundvallarmunur á núverandi íslensku fyrirkomulagi þar sem Íslendingar setja eigin kvóta. Þetta samningsatriði hefur aldrei verið prófað formlega, enda var 13. kafli viðræðnanna um sjávarútveg aldrei opnaður í viðræðunum 2010–2013.",
   "verdict_counts": {
-    "supported": 4,
-    "partially_supported": 11
+    "partially_supported": 12,
+    "supported": 3
   },
   "epistemic_counts": {
     "prediction": 5
@@ -33,28 +33,28 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "Dagsetningin 29. ágúst 2026 er staðfest af fjölmörgum heimildum. <a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> lýsir ákvörðun ríkisstjórnarinnar um þjóðaratkvæðagreiðsluna og <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-017</a> og <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup hf. — Þjóðarpúls; Vísir\" target=\"_blank\" rel=\"noopener\">POLL-DATA-020</a> fjalla um hana sem fyrirhugað atburðarás. Yfirgnæfandi meirihluti heimildamata (22 af 25) úrskurðar fullyrðinguna sem studda, og dagsetningin er samhljóða í öllum greiningum.",
+      "verdict": "partially_supported",
+      "explanation": "Dagsetningin 29. ágúst 2026 er rétt staðfest af <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> og <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a>. Hins vegar er fullyrðingin um «áframhald aðildarviðræðna» aðeins ónákvæm. Spurningin sem lögð verður fyrir þjóðina er samkvæmt <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a>: «Á að halda áfram viðræðum um aðild Íslands að Evrópusambandinu?» — sem er víðtækari en «áframhald aðildarviðræðna» gefur til kynna. Auk þess er um ráðgefandi þjóðaratkvæðagreiðslu að ræða samkvæmt <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a>, en fullyrðingin nefnir ekki þennan mikilvæga fyrirvara.",
       "supporting_evidence": [
         {
-          "id": "POLL-DATA-017",
-          "source_name": "Gallup Iceland / Þjóðarpúls",
-          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+          "id": "SOV-DATA-006",
+          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
         },
         {
-          "id": "POLL-DATA-020",
-          "source_name": "Gallup hf. — Þjóðarpúls; Vísir",
-          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
         },
         {
-          "id": "POLL-DATA-014",
-          "source_name": "Gallup Ísland — Þjóðarpúls, February–March 2026",
-          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+          "id": "SOV-INTL-001",
+          "source_name": "POLITICO Europe / Bloomberg / Government of Iceland",
+          "source_url": "https://www.politico.eu/article/iceland-eu-referendum-accession-talks/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Þingsályktunartillaga þarf formlegt samþykki Alþingis til að atkvæðagreiðslan fari fram. Einnig er vert að greina á milli viðfangsefnis kosningarinnar — sumar heimildir tala um «áframhald viðræðna» en aðrar um «ESB-aðild» sem eru ólík spursmál.",
-      "confidence": 0.95,
+      "missing_context": "Þjóðaratkvæðagreiðslan er ráðgefandi (ráðgefandi þjóðaratkvæðagreiðsla) en ekki bindandi — Alþingi er ekki skuldbundið af niðurstöðunni, þótt pólitísk hefð leggi þunga áherslu á virðingu fyrir vilja þjóðarinnar. Stjórnarandstaðan hefur gagnrýnt dagsetninguna sem of snemma og talið að nægileg umræða geti ekki átt sér stað yfir sumartímann. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-017</a> bendir á mikilvægan mun á stuðningi við þjóðaratkvæðagreiðsluna sjálfa (57%) og stuðningi við ESB-aðild (42%).",
+      "confidence": 0.6812530274999998,
       "speakers": [
         {
           "name": "Sunna Sæmundsdóttir",
@@ -384,7 +384,7 @@
       ],
       "contradicting_evidence": [],
       "missing_context": "Fræðileg deila stendur um hvort stjórnarskrárbreyting sé lagalega nauðsynleg — sumir lögfræðingar halda því fram að EES-samningurinn feli þegar í sér raunverulega fullveldisyfirfærslu (<a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands; Stjórnlaganefnd (2011) report\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-027</a>). Dómstólar hafa ekki leyst úr þessu. Ef breyting er nauðsynleg krefst hún samþykkis tveggja þinga með kosningum á milli samkvæmt 79. gr., sem lengir ferlið um a.m.k. 1–2 ár (<a href=\"https://www.government.is/library/01-Ministries/Prime-Ministrers-Office/constitution_of_iceland.pdf\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 2, 21, 79; Legal commentary by Ragnhildur Helgadóttir (2024)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-016</a>).",
-      "confidence": 0.8363999999999999,
+      "confidence": 0.87019056,
       "speakers": [
         {
           "name": "Sunna Sæmundsdóttir",
@@ -560,7 +560,7 @@
       ],
       "contradicting_evidence": [],
       "missing_context": "Yfirlýsingin sjálf er ekki í staðreyndagrunni. Heimildir staðfesta efnislega afstöðu ráðherra — að formlegar viðræður séu ekki hafnar — en ekki tilvísun í sérstaka yfirlýsingu vegna fréttarinnar. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T182328.html\" title=\"Alþingi — Sigmundur Davíð Gunnlaugsson, þingmaður Miðflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-002</a> sýnir einnig að stjórnarandstaðan hefur sagt ferlið vera lengra komið en ríkisstjórnin viðurkennir.",
-      "confidence": 0.5523299999999999,
+      "confidence": 0.5633765999999999,
       "speakers": [
         {
           "name": "Þorgerður Katrín Gunnarsdóttir",
@@ -732,8 +732,8 @@
       "attribution_type": "asserted",
       "claim_count": 8,
       "verdicts": {
-        "supported": 3,
-        "partially_supported": 5
+        "partially_supported": 6,
+        "supported": 2
       },
       "stance": "neutral",
       "slug": "sunna-saemundsdottir",
@@ -753,8 +753,8 @@
       },
       "stance": "pro_eu",
       "slug": "thorgerdur-katrin-gunnarsdottir",
-      "mention_count": 69,
-      "credibility": 0.65,
+      "mention_count": 74,
+      "credibility": 0.62,
       "speech_count": 197
     }
   ]

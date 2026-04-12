@@ -10,9 +10,9 @@
   "summary": "Greindar 71 fullyrðingar frá 6 þátttakendum í Silfrinu. Niðurstöður: 35 stutt að hluta, 24 ekki hægt að sannreyna, 10 stutt af heimildum, 2 villandi. Sjónarhorn: hallar á ESB-neikvæða hlið. Heildstæðni: 35%.",
   "capsule": "Þátturinn staðfestir tvennt sem heimildir bera vel undir: ríkisstjórnin lofaði þjóðaratkvæðagreiðslu eigi síðar en 2027 og í leiðarvísi ESB er sérstaklega tekið fram að aðildarferlið snúist um uppfyllingu krafna sambandsins — ekki samningaviðræður á milli jafngildra aðila. Athyglisvert er að sjávarútvegurinn, sem var ofarlega í umræðunni, er sá þáttur þar sem sérstaða Íslands er mest áberandi: Ísland er næststærsta fiskiveiðiríki Evrópu með um 1,1 milljón tonn á ári og afli á mann er yfir 300 sinnum meðaltal ESB-ríkja. Þetta tölulega samhengi skiptir máli þegar meta á stöðu Íslands í hugsanlegum viðræðum um sjávarútveg.",
   "verdict_counts": {
-    "supported": 14,
-    "partially_supported": 45,
+    "partially_supported": 51,
     "unverifiable": 2,
+    "supported": 8,
     "misleading": 4
   },
   "epistemic_counts": {
@@ -45,23 +45,28 @@
         "confidence": 0.95,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> staðfestir að ríkisstjórnin tilkynnti áform um þjóðaratkvæðagreiðslu sem «fyrst ráðgerð árið 2027 en hraðað í 29. ágúst 2026.» <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir framlagninguna á þingsályktunartillögu um atkvæðagreiðslu 29. ágúst 2026. Fullyrðingin um loforð ríkisstjórnarinnar um þjóðaratkvæðagreiðslu eigi síðar en 2027 samrýmist þessu að fullu.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland; Euronews; France24; coalition agreement\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-013</a> staðfestir að ríkisstjórnin samþykkti í stjórnarsáttmála að halda þjóðaratkvæðagreiðslu um framhald aðildarviðræðna «eigi síðar en 2027». Hins vegar var upphaflegt loforð bundið við tímaramma (eigi síðar en 2027), en þjóðaratkvæðagreiðslan var síðan færð fram á 29. ágúst 2026 — seinna en loforðið sagði til um, en fyrr en tímamarkið. Fullyrðingin nefnir ekki að spurningin snýst um framhald viðræðna, ekki um ESB-aðild sjálfa, sem er mikilvægur munur. Þá er Flokkur fólksins ESB-efasemdarflokkur innan ríkisstjórnarinnar — samþykki hans varðar aðeins greiðsluna, ekki stuðning við aðild (<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland; Euronews; France24; coalition agreement\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-013</a>).",
       "supporting_evidence": [
+        {
+          "id": "PARTY-DATA-013",
+          "source_name": "Government of Iceland; Euronews; France24; coalition agreement",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+        },
+        {
+          "id": "POLITICAL-DATA-011",
+          "source_name": "Althingi records; coalition agreements 2009, 2013, 2017, 2021, 2024; Icelandic media archives",
+          "source_url": "https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/"
+        },
         {
           "id": "PARTY-DATA-016",
           "source_name": "Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16",
           "source_url": "https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/"
-        },
-        {
-          "id": "SOV-PARL-001",
-          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
-          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Forsætisráðherra Kristrún Frostadóttir sagði skýrt fyrir kosningarnar 2024 að ESB-aðild yrði ekki á dagskrá á næsta kjörtímabili — áform um þjóðaratkvæðagreiðslu urðu afgerandi stefnubreyting eftir myndun ríkisstjórnar (<a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a>). Andstæðingar hafa sakað ríkisstjórnina um svikræði gagnvart kjósendum vegna þessarar breytingar.",
-      "confidence": 0.8122499999999999,
+      "missing_context": "Fullyrðingin segir «ESB-málið» en spurningin í þjóðaratkvæðagreiðslunni varðar framhald aðildarviðræðna, ekki aðild sem slíka. Þessi einföldun getur gefið ranga mynd af efni atkvæðagreiðslunnar. Auk þess er ákvæðið í stjórnarsáttmálanum um «eigi síðar en 2027» en dagsetningin 29. ágúst 2026 varð raunin.",
+      "confidence": 0.82,
       "speakers": [
         {
           "name": "Þorgerður Katrín Gunnarsdóttir",
@@ -189,7 +194,7 @@
       ],
       "contradicting_evidence": [],
       "missing_context": "Skýrsla Hagfræðistofnunar frá 2014 mælti jafnframt með samningaviðræðum til að kanna raunhæf kjör — þetta er mikilvægt samhengi sem fullyrðingin nefnir ekki. Skýrslan var unnin á tímabili þegar ríkisstjórnin var andvíg ESB-aðild, sem gæti haft áhrif á ramma hennar. <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> og <a href=\"https://www.efta.int/about-efta/efta-secretariat/efta-budget\" title=\"EFTA Secretariat — EFTA budget; various academic estimates\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-005</a> benda til þess að ESB-aðild fæli í sér bæði kostnað og ávinning sem skýrslan mat ekki að fullu.",
-      "confidence": 0.65,
+      "confidence": 0.6174999999999999,
       "speakers": [
         {
           "name": "Sigmundur Davíð Gunnlaugsson",
@@ -653,8 +658,8 @@
         "confidence": 0.4,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "Báðar skýrslurnar staðfesta kjarna fullyrðingarinnar. <a href=\"https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en\" title=\"Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-024</a> sýnir að Draghi-skýrslan greindi frá því að landsframleiðsla á mann í ESB hefði vaxið um 1% hægar en í Bandaríkjunum undanfarin tvo áratugi, orkuverð væri 2–3 sinnum hærra, og aðeins 4 af 50 stærstu tæknifyrirtækjum heims væru evrópsk. <a href=\"https://www.consilium.europa.eu/media/ny3j24sm/much-more-than-a-market-report-by-enrico-letta.pdf\" title=\"Letta, Enrico — 'Much More Than a Market: Speed, Security, Solidarity', Report to the European Council (April 2024)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-025</a> sýnir að Letta-skýrslan benti á ófullkominn innri markað í þjónustu, sundraða fjármálamarkaði, og 300 milljarða evra í sparifé sem streyma úr ESB á ári. <a href=\"https://www.businesseurope.eu/publications/businesseurope-reform-barometer-2025-eu-in-a-new-political-cycle-competitiveness-as-a-true-priority-in-a-complex-global-context/\" title=\"BusinessEurope — Reform Barometer 2025; Reform Barometer 2024\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-026</a> staðfestir að BusinessEurope-könnun er í samræmi við greiningu beggja skýrslna.",
+      "verdict": "partially_supported",
+      "explanation": "Draghi-skýrslan og Letta-skýrslan greina báðar frá samkeppnisvanda Evrópu og fullyrðingin er rétt að því leyti. Draghi-skýrslan bendir á að hagvöxtur á mann í ESB hafi verið um 1 prósentustigi lægri en í Bandaríkjunum á «síðustu tveimur áratugum» og orkuverð 2–3 sinnum hærra. Letta-skýrslan greinir ófullkominn innri markað í þjónustu og sundraða fjármálamarkaði. Hins vegar gengur fullyrðingin of langt á tvo vegu: í fyrsta lagi segja skýrslurnar um «tvo áratugi», ekki «10 ár» eins og fullyrðingin heldur fram; í öðru lagi lýsa skýrslurnar hlutfallslegri versnun gagnvart Bandaríkjunum og Kína, ekki endilega algeru samdráttar í samkeppnishæfni eða hagvexti.",
       "supporting_evidence": [
         {
           "id": "TRADE-DATA-024",
@@ -670,11 +675,16 @@
           "id": "TRADE-DATA-026",
           "source_name": "BusinessEurope — Reform Barometer 2025; Reform Barometer 2024",
           "source_url": "https://www.businesseurope.eu/publications/businesseurope-reform-barometer-2025-eu-in-a-new-political-cycle-competitiveness-as-a-true-priority-in-a-complex-global-context/"
+        },
+        {
+          "id": "TRADE-DATA-044",
+          "source_name": "Brussel-vaktin (Sendiráð Íslands í Brussel) — 13. mars 2026, cross-referencing earlier issues",
+          "source_url": "https://www.stjornarradid.is/sendiskrifstofur/sendirad-islands-i-brussel/brussel-vaktin/stok-faersla/2026/03/13/Idnadarhradall-Made-in-Europe/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Skýrslurnar eru bæði gagnrýndar af ólíkum hliðum og voru ætlaðar til að knýja fram umbætur, ekki til að lýsa vonlausu ástandi. Draghi-skýrslan bendir jafnframt á lausnir og þörf á viðbótarfjárfestingum. Mikilvægt er að greina á milli samkeppnishæfni gagnvart Bandaríkjunum/Kína og almenns hagvaxtar — ESB-hagkerfi hafa vaxið, en hægar en helstu keppinautar.",
-      "confidence": 0.85,
+      "missing_context": "Draghi-skýrslan hefur verið gagnrýnd frá mörgum hliðum — sumir telja fjárfestingartölurnar óraunhæfar, aðrir að áhersla á «evrópsk stórfyrirtæki» grafi undan samkeppni. Skýrslurnar eru tillögur til úrbóta, ekki eingöngu greining á hnignun. ESB-stuðningsmenn benda á að skýrslurnar sýni að ESB viðurkenni vandann og sé að bregðast við. Tímabilið sem vísað er til er rangt í fullyrðingunni (10 ár vs. 20 ár).",
+      "confidence": 0.75,
       "speakers": [
         {
           "name": "Lilja Dögg Alfreðsdóttir",
@@ -886,7 +896,7 @@
         }
       ],
       "missing_context": "Fullyrðingin sleppur verulegum fyrirvörum: lægri vextir tengjast hærra húsnæðisverði samkvæmt rannsóknum (<a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a>); evruupptaka myndi þýða tap á sjálfstæðri peningastefnu (<a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a>); samkeppnisumhverfi í banka- og tryggingageiranum er þegar undir EES-reglum; og Maastricht-skilyrði þyrfti að uppfylla áður en evra yrði tekin upp. Draghi-skýrslan bendir jafnframt á samkeppnisvanda ESB gagnvart BNA.",
-      "confidence": 0.62,
+      "confidence": 0.7121851139425535,
       "speakers": [
         {
           "name": "Guðmundur Ari Sigurjónsson",
@@ -909,8 +919,8 @@
         "confidence": 0.7,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "Heimildir staðfesta grunninn að þessari fullyrðingu. <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> lýsa aðildarferlinu þar sem umsóknarríki þurfa að laga löggjöf sína að regluverki ESB — skimun kafla, uppfylling viðmiða og eftirfylgni innleiðingar eru hluti ferlisins frá upphafi. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Screening reports from Iceland's 2010–2013 negotiations; EUR-Lex — Directory of EU legislation\" target=\"_blank\" rel=\"noopener\">SOV-DATA-004</a> staðfestir að Ísland þyrfti að innleiða 3.000–5.000 lagagerðir til viðbótar við EES-skuldbindingar. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — Steps towards joining; DG NEAR accession negotiation methodology\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-013</a> lýsir hvernig skimun og viðmiðauppfylling hefst strax eftir opnun viðræðna. Nýju heimildarnar styrkja myndina — <a href=\"https://www.cer.eu/insights/gap-between-brexit-reset-rhetoric-and-reality\" title=\"Centre for European Reform; UK in a Changing Europe\" target=\"_blank\" rel=\"noopener\">PREC-DATA-004</a> og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014\" title=\"Treaty on the Functioning of the European Union, Article 140\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-004</a> sýna að skuldbindingar um evru og annað hefjast strax sem formlegar kröfur, og <a href=\"https://www.government.is/library/01-Ministries/Prime-Ministrers-Office/constitution_of_iceland.pdf\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 2, 21, 79; Legal commentary by Ragnhildur Helgadóttir (2024)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-016</a> bendir á mögulega stjórnarskrárbreytingu sem viðbótarverkefni.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> staðfesta að umsóknarríki þurfa að tileinka sér allt regluverkið og undirgangast skipulega skoðun (screening), viðmið og eftirfylgni. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — Steps towards joining; DG NEAR accession negotiation methodology\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-013</a> lýsir skipulögðu ferli sem tekur yfirleitt 5–10 ár. Í því felst lagabreytingar og stofnanaleg aðlögun. Orðið «strax» ýkir þó tímaramma ferlisins — aðlögun er stigvaxandi og fer eftir niðurstöðum skoðunarferils, ekki krafa sem fellur á umsóknarríki þá þegar. <a href=\"https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en\" title=\"European Commission — CAP direct payments: phasing-in for new member states; Regulation (EU) 2021/2115 (CAP Strategic Plans)\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-020</a> sýnir til dæmis að beingreiðslur fást aðeins í áföngum á 10 árum. Sérstök fullyrðing um «nýjar stofnanir» og «fleiri embættismenn» á sér ekki beina stoð í heimildunum þótt hún sé sennilegt afleiðing.",
       "supporting_evidence": [
         {
           "id": "EEA-LEGAL-017",
@@ -928,24 +938,14 @@
           "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
         },
         {
-          "id": "SOV-DATA-004",
-          "source_name": "European Commission — Screening reports from Iceland's 2010–2013 negotiations; EUR-Lex — Directory of EU legislation",
-          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
-        },
-        {
-          "id": "SOV-LEGAL-016",
-          "source_name": "Stjórnarskrá lýðveldisins Íslands, Articles 2, 21, 79; Legal commentary by Ragnhildur Helgadóttir (2024)",
-          "source_url": "https://www.government.is/library/01-Ministries/Prime-Ministrers-Office/constitution_of_iceland.pdf"
-        },
-        {
-          "id": "PREC-DATA-004",
-          "source_name": "Centre for European Reform; UK in a Changing Europe",
-          "source_url": "https://www.cer.eu/insights/gap-between-brexit-reset-rhetoric-and-reality"
+          "id": "AGRI-DATA-020",
+          "source_name": "European Commission — CAP direct payments: phasing-in for new member states; Regulation (EU) 2021/2115 (CAP Strategic Plans)",
+          "source_url": "https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Orðalagið \"strax\" er nokkuð ákveðið — í raun er aðlögunarferlið stigvaxandi og flest fer ekki fram \"strax\" heldur yfir nokkurra ára tímabil. Aðlögunartímabil geta verið 3–12 ár og hafa verulega þýðingu (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a>). Ísland er í sérstöðu þar sem EES-samningurinn tryggir að stór hluti regluverksins er þegar innleiddur, sem minnkar byrðina umtalsvert.",
-      "confidence": 0.76,
+      "missing_context": "Aðlögunarferlið er stigvaxandi og tekur 5–10 ár — orðið «strax» er villandi. Ísland hefur þegar innleitt stóran hluta regluverksins í gegnum EES-samninginn (um 75%), sem flýtir ferlinu. Tímalengd samningaviðræðna er mjög mismunandi: 2 ár (Austurríki) til 13+ ár (Svartfjallaland).",
+      "confidence": 0.741,
       "speakers": [
         {
           "name": "Sigmundur Davíð Gunnlaugsson",
@@ -1346,7 +1346,7 @@
         "epistemic_type": "factual"
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> staðfestir beint bæði hluta fullyrðingarinnar: Kristrún sagði skýrt fyrir kosningarnar 2024 að ESB-aðild yrði ekki á dagskrá á næsta kjörtímabili og endurtók þá afstöðu. Heimildin nefnir einnig áramótaávarpssamhengið. Nýjar heimildir styrkja myndina — <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T162602.html\" title=\"Alþingi — Kristrún Frostadóttir, forsætisráðherra (andsvar, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">PARTY-PARL-001</a> sýnir að Kristrún tók síðar afstöðu um \"skýr rauð flögg\" í sjávarútvegi og orku, sem samræmist fyrri yfirlýsingum um að hún myndi ekki ganga í ESB á hvaða skilmálum sem er. Fullyrðingin um forsögu hennar fyrir kosningar og endurtekningu er staðfest.",
+      "explanation": "<a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> staðfestir fullyrðinguna beint: Kristrún sagði «skýrt fyrir alþingiskosningarnar í nóvember 2024 að ESB-aðild yrði ekki á dagskrá á næsta kjörtímabili» og nefndi efnahagsmál, ríkisfjármál og heilbrigðismál sem forgangsverkefni. POL-DATA-022 staðfestir einnig að pólitísk þróun Kristrúnar á ESB-málinu hefur verið skráð. Fullyrðingin nefnir áramótaávarp sérstaklega, sem heimildir nefna ekki beinlínis, en yfirlýsingin fyrir kosningarnar er ótvíræð.",
       "supporting_evidence": [
         {
           "id": "PARTY-DATA-016",
@@ -1354,14 +1354,14 @@
           "source_url": "https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/"
         },
         {
-          "id": "PARTY-PARL-001",
-          "source_name": "Alþingi — Kristrún Frostadóttir, forsætisráðherra (andsvar, 157. löggjafarþing)",
-          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T162602.html"
+          "id": "POL-DATA-022",
+          "source_name": "Samfylkingin — Leadership statements; RÚV; Morgunblaðið profiles",
+          "source_url": null
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Útvarp Saga, sem er aðalheimildin, tekur oft gagnrýna afstöðu gagnvart ESB-aðild en úrdrátturinn byggist á opinberum yfirlýsingum. Kristrún hefur rökstutt stefnubreytinguna með breyttum alþjóðlegum aðstæðum. Nákvæmt orðalag áramótaávarpið er ekki beint vitnað í heimildinni.",
-      "confidence": 0.85,
+      "missing_context": "Heimildir staðfesta yfirlýsinguna í aðdraganda kosninga en nefna ekki áramótaávarpið sérstaklega. <a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> kemur frá Útvarpi Sögu, sem samkvæmt fyrirvörum tekur oft afstöðu gegn ESB-aðild, en úrdráttur þeirra á opinberum yfirlýsingum Kristrúnar er sagður byggður á staðreyndum. Eftir kosningarnar snerist afstaðan hratt og ríkisstjórnin tilkynnti um þjóðaratkvæðagreiðslu.",
+      "confidence": 0.82,
       "speakers": [
         {
           "name": "Guðrún Hafsteinsdóttir",
@@ -1506,8 +1506,8 @@
         "confidence": 0.85,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "Framkvæmdastjórnin setur opnunarviðmið sem þarf að uppfylla áður en kafli er opnaður (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — Steps towards joining; DG NEAR accession negotiation methodology\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-013</a>). Sjávarútvegskafli (13) og landbúnaðarkafli (11) voru aldrei opnaðir í viðræðunum 2010–2013 (<a href=\"https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782591/EPRS_BRI(2026)782591_EN.pdf\" title=\"Summary of findings: Status of the accession negotiations between Iceland and the EU (Icelandic Ministry for Foreign Affairs, 2013); European Parliament briefing on EU-Iceland relations (2026)\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-003</a>, <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland progress reports 2011–2013; Screening report Chapter 11\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-018</a>). Lýsingin á ferlinu sem „aðlögunarviðræðum“ endurspeglar raunverulega uppbyggingu þess samkvæmt ESB-gögnum (<a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a>).",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> staðfesta að aðildarviðræður snúast um «skilyrði og tímasetningu innleiðingar á gildandi regluverki ESB» — umsækjandinn samþykkir reglur eins og þær standa. Að kalla þetta «aðlögunarviðræður» er því efnislega rétt að mestu leyti. <a href=\"https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782591/EPRS_BRI(2026)782591_EN.pdf\" title=\"Summary of findings: Status of the accession negotiations between Iceland and the EU (Icelandic Ministry for Foreign Affairs, 2013); European Parliament briefing on EU-Iceland relations (2026)\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-003</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland progress reports 2011–2013; Screening report Chapter 11\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-018</a> staðfesta að kaflar um sjávarútveg og landbúnað kröfðust sérstakra skilyrða og voru aldrei opnaðir í viðræðum 2010–2013. Þó ber að geta þess að aðlögunartímabil geta verið umtalsverð — allt að 12 ár eins og í tilfelli Póllands — og raunverulegur svigrúm í viðræðum er meiri en orðalagið «aðlögunarviðræður» gefur til kynna.",
       "supporting_evidence": [
         {
           "id": "EEA-LEGAL-017",
@@ -1515,8 +1515,8 @@
           "source_url": "https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf"
         },
         {
-          "id": "EEA-LEGAL-013",
-          "source_name": "European Commission — Steps towards joining; DG NEAR accession negotiation methodology",
+          "id": "EEA-LEGAL-021",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
           "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
         },
         {
@@ -1528,11 +1528,16 @@
           "id": "AGRI-DATA-018",
           "source_name": "European Commission — Iceland progress reports 2011–2013; Screening report Chapter 11",
           "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "AGRI-DATA-019",
+          "source_name": "European Commission — Opinion on Iceland's application (SEC(2010) 153); OECD Economic Surveys: Iceland 2021",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Þótt lýsingin „aðlögunarviðræður“ sé efnislega rétt er raunverulegur sveigjanleiki í aðlögunarfrestum sem hafa verulega efnahagslega þýðingu.",
-      "confidence": 0.85,
+      "missing_context": "Heimildir benda á verulegan sveigjanleika innan aðlögunartímabila sem getur haft raunveruleg efnahagsleg og pólitísk áhrif — Pólland fékk 12 ára undanþágu frá landakaupum. Einnig er rétt að geta þess að 6 af 33 samningaköflum voru aldrei opnaðir í fyrri viðræðum, þar á meðal sjávarútvegur og landbúnaður — en einnig umhverfismál, samgöngur og fjárhagsmál.",
+      "confidence": 0.867,
       "speakers": [
         {
           "name": "Lilja Dögg Alfreðsdóttir",
@@ -2071,7 +2076,7 @@
         }
       ],
       "missing_context": "Síðan Lissabon-samningurinn tók gildi hefur ESB ekki veitt nýjum aðildarríkjum varanlegar undanþágur (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a>) — Króatía fékk engar. Sveigjanleikinn felst í aðlögunartímabilum, ekki breytingum á regluverk. Að «tekið sé mið af umhverfi og raunveruleika» getur þýtt margt — frá raunverulegum sérákvæðum til ómerkra loforða. Engin heimild vitnar beint í Mörtu Kos um þessar yfirlýsingar.",
-      "confidence": 0.4,
+      "confidence": 0.38,
       "speakers": [
         {
           "name": "Þorgerður Katrín Gunnarsdóttir",
@@ -2360,8 +2365,8 @@
         "confidence": 0.85,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "Víðtækar rannsóknir staðfesta að lægri vextir tengjast hærra húsnæðisverði, sérstaklega á mörkuðum þar sem framboð er takmarkað. Glaeser o.fl. (2012) sýndu að 1 prósentustigs lækkun vaxta hækkar húsnæðisverð um 6–8% (<a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a>, <a href=\"https://doi.org/10.1016/j.jue.2008.07.007\" title=\"Glaeser, E., Gyourko, J., & Saiz, A. (2008). Housing supply and housing bubbles. Journal of Urban Economics; Himmelberg, C., Mayer, C., & Sinai, T. (2005). Assessing high house prices. Journal of Economic Perspectives; IMF Working Paper WP/19/73 — House Prices and Interest Rates\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-006</a>). Ísland hefur takmarkað húsnæðisframboð (<a href=\"https://www.ecb.europa.eu/press/economic-bulletin/articles/2021/html/ecb.ebart202107_03~36493e7b67.en.html\" title=\"Glaeser, Gottlieb & Gyourko, 'Can Cheap Credit Explain the Housing Boom?' (2012); ECB Economic Bulletin 2/2021 — 'The impact of monetary policy on housing'\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-011</a>). Seðlabanki Evrópu staðfesti einnig þessi áhrif á evrusvæðinu (ECB Financial Stability Review 2023).",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir styðja kjarnann í fullyrðingunni: <a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a>, <a href=\"https://doi.org/10.1016/j.jue.2008.07.007\" title=\"Glaeser, E., Gyourko, J., & Saiz, A. (2008). Housing supply and housing bubbles. Journal of Urban Economics; Himmelberg, C., Mayer, C., & Sinai, T. (2005). Assessing high house prices. Journal of Economic Perspectives; IMF Working Paper WP/19/73 — House Prices and Interest Rates\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-006</a> og <a href=\"https://www.ecb.europa.eu/press/economic-bulletin/articles/2021/html/ecb.ebart202107_03~36493e7b67.en.html\" title=\"Glaeser, Gottlieb & Gyourko, 'Can Cheap Credit Explain the Housing Boom?' (2012); ECB Economic Bulletin 2/2021 — 'The impact of monetary policy on housing'\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-011</a> staðfesta öll að lágir vextir tengist hærra húsnæðisverði, einkum á framboðsskertum mörkuðum. Samband vaxta og húsnæðisverðs er þó ekki «lögmál» heldur háð framboðsteygni — á mörkuðum þar sem framboð bregst hratt við eftirspurn geta lágir vextir leitt til meiri byggingar frekar en hærra verðs. Fullyrðingin einfaldar þetta samband of mikið þegar hún kallar það «lögmál».",
       "supporting_evidence": [
         {
           "id": "HOUSING-DATA-009",
@@ -2380,8 +2385,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Tengsl vaxta og húsnæðisverðs fara eftir framboðssveigjanleika. Ef ESB-aðild eykur einnig framboð (mannafli, fjármögnun) gætu áhrifin verið minni. „Lögmál“ er of sterkt orð — þetta er sterk tilhneiging, ekki einhlít regla.",
-      "confidence": 0.85,
+      "missing_context": "Samkvæmt <a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a> og <a href=\"https://doi.org/10.1016/j.jue.2008.07.007\" title=\"Glaeser, E., Gyourko, J., & Saiz, A. (2008). Housing supply and housing bubbles. Journal of Urban Economics; Himmelberg, C., Mayer, C., & Sinai, T. (2005). Assessing high house prices. Journal of Economic Perspectives; IMF Working Paper WP/19/73 — House Prices and Interest Rates\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-006</a> er sambandið háð framboðsteygni húsnæðismarkaðar. Á mörkuðum þar sem framboð svarar hratt (elastic supply) geta lágir vextir aukið byggingu frekar en verð. Ísland hefur tiltölulega ósveigjamlegan húsnæðismarkað, en fullyrðingin gerir ekkert ráð fyrir þessu skilyrði. Auk þess benda <a href=\"https://www.ecb.europa.eu/press/economic-bulletin/articles/2021/html/ecb.ebart202107_03~36493e7b67.en.html\" title=\"Glaeser, Gottlieb & Gyourko, 'Can Cheap Credit Explain the Housing Boom?' (2012); ECB Economic Bulletin 2/2021 — 'The impact of monetary policy on housing'\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-011</a> og <a href=\"https://www.visindavefur.is/svar.php?id=60906\" title=\"Vísindavefurinn — Jón Þór Sturluson, Associate Professor of Economics, Reykjavík University School of Business (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-015</a> á að ESB-aðild gæti líka stuðlað að auknu framboði (t.d. gegnum byggingarstarfsfólk, byggðasjóði) sem myndi draga úr verðáhrifunum.",
+      "confidence": 0.8,
       "speakers": [
         {
           "name": "Guðrún Hafsteinsdóttir",
@@ -2674,8 +2679,8 @@
         "confidence": 0.85,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins (SI) — Membership survey, February/March 2026\" target=\"_blank\" rel=\"noopener\">ORG-DATA-001</a> staðfestir að 57% félagsmanna SI voru andvígir ESB-aðild í könnun febrúar/mars 2026 — skýr meirihluti. <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins — Könnun meðal félagsmanna um ESB-aðild\" target=\"_blank\" rel=\"noopener\">POLL-DATA-023</a> sýnir að hlutfall mjög hlyntra félagsmanna lækkaði úr ~17% í ~10% milli 2024 og 2026, og hlutfall frekar hlyntra úr ~20% í ~15%, sem styður fullyrðinguna um vaxandi andstöðu. Bæði meginatriði fullyrðingarinnar eru þannig studd beinum gögnum.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins (SI) — Membership survey, February/March 2026\" target=\"_blank\" rel=\"noopener\">ORG-DATA-001</a> staðfestir að 57% félagsmanna Samtaka iðnaðarins voru andvíg ESB-aðild og hlutfall «mjög andvígra» hafði um það bil tvöfaldast frá könnun árið 2024. <a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins — Könnun meðal félagsmanna um ESB-aðild\" target=\"_blank\" rel=\"noopener\">POLL-DATA-023</a> sýnir einnig samdrátt í stuðningi: hlutfall «mjög hlynnt» félagsmanna lækkaði úr um 17% árið 2024 í um 10% árið 2026. Fullyrðingin er studd að því leyti að andstaða jókst og meirihluti er á móti. Þó vantar fyrirvara um aðferðafræði — úrtaksstærð, svarhlutfall og orðalag spurninga eru ekki óháð staðfest — og heimildir benda til þess að SI hafi verið ESB-efið, sem kann að hafa áhrif á framsetningu niðurstaðna.",
       "supporting_evidence": [
         {
           "id": "ORG-DATA-001",
@@ -2688,15 +2693,9 @@
           "source_url": "https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb"
         }
       ],
-      "contradicting_evidence": [
-        {
-          "id": "POL-DATA-016",
-          "source_name": "Samtök iðnaðarins — Annual report 2025; SI policy briefs on CBAM and Horizon Europe",
-          "source_url": "https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb"
-        }
-      ],
-      "missing_context": "<a href=\"https://www.si.is/frettasafn/meirihluti-felagsmanna-si-andvigur-adild-ad-esb\" title=\"Samtök iðnaðarins — Annual report 2025; SI policy briefs on CBAM and Horizon Europe\" target=\"_blank\" rel=\"noopener\">POL-DATA-016</a> bendir á að forysta SI styður ESB-aðild þrátt fyrir viðhorf meirihluta félagsmanna — togstreita er innan samtakanna. Aðferðafræði könnunarinnar (úrtaksstærð, svörunarhlutfall) hefur ekki verið staðfest óháð og aðeins tveir mælipunktar (2024 og 2026) liggja til grundvallar «vaxandi andstöðu».",
-      "confidence": 0.6923303125,
+      "contradicting_evidence": [],
+      "missing_context": "Könnun samtaka endurspeglar afstöðu fyrirtækjaeigenda og stjórnenda, ekki almennings eða launafólks. Tvöföldun á hlutfalli sterklega andvígra getur endurspeglað úrtakssveiflu, breytingu á samsetningu félagsmanna eða raunverulega viðhorfsbreytingu. Aðferðafræði könnunarinnar (úrtaksstærð, svarhlutfall, orðalag spurninga) hefur ekki verið óháð staðfest samkvæmt heimildum.",
+      "confidence": 0.6823899067499999,
       "speakers": [
         {
           "name": "Guðrún Hafsteinsdóttir",
@@ -2863,14 +2862,14 @@
       "attribution_type": "asserted",
       "claim_count": 15,
       "verdicts": {
-        "supported": 4,
-        "partially_supported": 10,
+        "partially_supported": 11,
+        "supported": 3,
         "misleading": 1
       },
       "stance": "pro_eu",
       "slug": "thorgerdur-katrin-gunnarsdottir",
-      "mention_count": 69,
-      "credibility": 0.65,
+      "mention_count": 74,
+      "credibility": 0.62,
       "speech_count": 197
     },
     {
@@ -2881,14 +2880,14 @@
       "attribution_type": "asserted",
       "claim_count": 15,
       "verdicts": {
-        "partially_supported": 10,
-        "supported": 4,
+        "partially_supported": 12,
+        "supported": 2,
         "misleading": 1
       },
       "stance": "neutral",
       "slug": "lilja-dogg-alfredsdottir",
       "mention_count": 7,
-      "credibility": 0.56,
+      "credibility": 0.54,
       "speech_count": 17
     },
     {
@@ -2899,14 +2898,13 @@
       "attribution_type": "asserted",
       "claim_count": 14,
       "verdicts": {
-        "partially_supported": 11,
-        "unverifiable": 2,
-        "supported": 1
+        "partially_supported": 12,
+        "unverifiable": 2
       },
       "stance": "neutral",
       "slug": "sigmundur-david-gunnlaugsson",
       "mention_count": 17,
-      "credibility": 0.58,
+      "credibility": 0.57,
       "speech_count": 261
     },
     {
@@ -2918,13 +2916,13 @@
       "claim_count": 14,
       "verdicts": {
         "misleading": 2,
-        "partially_supported": 8,
-        "supported": 4
+        "partially_supported": 10,
+        "supported": 2
       },
       "stance": "neutral",
       "slug": "gudrun-hafsteinsdottir",
       "mention_count": 6,
-      "credibility": 0.66,
+      "credibility": 0.64,
       "speech_count": 41
     },
     {
@@ -2941,7 +2939,7 @@
       "stance": "neutral",
       "slug": "gudmundur-ari-sigurjonsson",
       "mention_count": 4,
-      "credibility": 0.66,
+      "credibility": 0.62,
       "speech_count": 3
     },
     {

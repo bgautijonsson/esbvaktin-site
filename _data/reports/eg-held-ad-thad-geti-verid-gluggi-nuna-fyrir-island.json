@@ -10,8 +10,8 @@
   "summary": "Greindar 8 fullyrðingar. Niðurstöður: 5 stutt af heimildum, 2 stutt að hluta, 1 ekki hægt að sannreyna. Sjónarhorn: hallar á ESB-jákvæða hlið. Heildstæðni: 30%.",
   "capsule": "Þjóðaratkvæðagreiðslan 29. ágúst 2026 er ráðgefandi — Alþingi er ekki lagalega bundið af niðurstöðunni, enda þótt hún hafi pólitíska þyngd. Kristrún Frostadóttir og Samfylkingin greiða atkvæði með áframhaldandi aðildarviðræðum en formaðurinn hefur skýrt tekið fram að hún myndi aðeins styðja fulla aðild ef tryggt yrði forræði yfir auðlindum þjóðarinnar — lykillinn er samningurinn, ekki aðildin í sjálfu sér.",
   "verdict_counts": {
-    "supported": 5,
-    "partially_supported": 2
+    "supported": 2,
+    "partially_supported": 5
   },
   "epistemic_counts": {
     "prediction": 3
@@ -81,13 +81,18 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "Þetta er bein tilvitnun í Kristrún Frostadóttir og samræmist vel skjalfestri afstöðu hennar. <a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> staðfestir að Kristrún og ríkisstjórnin hafa ýtt á þjóðaratkvæðagreiðsluna og hún hefur tjáð sig jákvætt um áframhald viðræðna. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Coalition agreement (stjórnarsáttmáli) 2024; party platforms; media reporting March 2026\" target=\"_blank\" rel=\"noopener\">POL-DATA-021</a> og <a href=\"https://www.althingi.is/thingmenn/thingflokkar/samfylkingin/\" title=\"Althingi — Session 157 member registry\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-008</a> undirstrika að Samfylkingin er skýrt ESB-hlynnt og forsætisráðherra hefur verið í fararbroddi. POL-DATA-022 lýsir henni sem «pragmatic pro-European» sem styður aðildarviðræður.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að Kristrún Frostadóttir er formaður Samfylkingarinnar og forsætisráðherra, og að flokkurinn er ESB-jákvæður (<a href=\"https://www.althingi.is/thingmenn/thingflokkar/samfylkingin/\" title=\"Althingi — Session 157 member registry\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-008</a>, POL-DATA-022). Ríkisstjórnin boðaði þjóðaratkvæðagreiðslu 29. ágúst 2026 um áframhaldandi aðildarviðræður (<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland; Euronews; France24; coalition agreement\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-013</a>). Fullyrðingin segir þó að Kristrún muni «greiða atkvæði með áframhaldandi aðildarviðræðum» sem einföld staðhæfing, en heimildir benda til flóknari myndar — hún hefur ítrekað sagt að hún sé «ekki reiðubúin að ganga í ESB á hvaða skilmálum sem er» og krefst «ofboðslega sterks umboðs» (<a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a>, <a href=\"https://www.ruv.is/\" title=\"Althingi debate records; RÚV interviews with PM Kristrún Frostadóttir, February–March 2026\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-019</a>). Engin heimild staðfestir beint hvernig hún mun persónulega greiða atkvæði.",
       "supporting_evidence": [
         {
           "id": "PARTY-DATA-016",
           "source_name": "Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16",
           "source_url": "https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/"
+        },
+        {
+          "id": "POL-DATA-022",
+          "source_name": "Samfylkingin — Leadership statements; RÚV; Morgunblaðið profiles",
+          "source_url": null
         },
         {
           "id": "PARTY-DATA-013",
@@ -100,19 +105,14 @@
           "source_url": "https://www.althingi.is/thingmenn/thingflokkar/samfylkingin/"
         },
         {
-          "id": "POL-DATA-021",
-          "source_name": "Coalition agreement (stjórnarsáttmáli) 2024; party platforms; media reporting March 2026",
-          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
-        },
-        {
-          "id": "POL-DATA-022",
-          "source_name": "Samfylkingin — Leadership statements; RÚV; Morgunblaðið profiles",
-          "source_url": null
+          "id": "PARTY-DATA-019",
+          "source_name": "Althingi debate records; RÚV interviews with PM Kristrún Frostadóttir, February–March 2026",
+          "source_url": "https://www.ruv.is/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Kristrún hefur jafnframt sagt sig «ekki reiðubúna að ganga í ESB á hvaða skilmálum sem er» og krafist «ofboðslega sterks umboðs» samkvæmt <a href=\"https://www.ruv.is/\" title=\"Althingi debate records; RÚV interviews with PM Kristrún Frostadóttir, February–March 2026\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-019</a> — stuðningur hennar við viðræður er því ekki skilyrðislaus stuðningur við aðild.",
-      "confidence": 0.95,
+      "missing_context": "Þjóðaratkvæðagreiðslan fjallar um hvort halda eigi áfram aðildarviðræðum, ekki um inngöngu í ESB. Kristrún hefur lagt áherslu á fyrirvara um auðlindir og sjávarútveg (<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T162602.html\" title=\"Alþingi — Kristrún Frostadóttir, forsætisráðherra (andsvar, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">PARTY-PARL-001</a>). Þótt allt bendi til þess að hún styðji áframhaldandi viðræður hefur hún ekki gefið beina yfirlýsingu um hvernig hún muni greiða atkvæði.",
+      "confidence": 0.75,
       "speakers": [
         {
           "name": "Kristrún Frostadóttir",
@@ -229,8 +229,8 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> staðfestir að þjóðaratkvæðagreiðslan er áætluð 29. ágúst 2026, sem er í lok sumars. Alþingi er jafnan í sumarleyfi frá júní til september og er því ekki að störfum þann tíma. <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> sýnir að stjórnarandstaðan hefur gagnrýnt dagsetninguna sem of snemma til að tryggja næga umræðu, og <a href=\"https://www.althingi.is/\" title=\"Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-028</a> staðfestir að andstæðingar hafa gert athugasemdir við tímasetninguna. Báðir hlutar fullyrðingarinnar — lok sumars og að þingið er ekki að störfum — eru í samræmi við heimildir.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> staðfestir að þjóðaratkvæðagreiðslan er áætluð 29. ágúst 2026, sem er í lok sumars. Hins vegar staðfesta heimildir ekki beint þann hluta fullyrðingarinnar sem segir að «þingið er ekki að störfum» á þeim tíma. Alþingi hefur reglulega haustþing sem hefst 1. október samkvæmt stjórnarskrá, en sumarhlé þingsins hefst yfirleitt í júní. Heimildir fjalla ekki um hvort þingmenn séu formlega í sumarleyfi 29. ágúst eða hvort Alþingi gæti verið kallað saman, og fullyrðingin gæti gefið ranga mynd ef þing er í raun rekið til þess tíma.",
       "supporting_evidence": [
         {
           "id": "SOV-DATA-006",
@@ -238,19 +238,14 @@
           "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
         },
         {
-          "id": "SOV-PARL-005",
-          "source_name": "Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)",
-          "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
-        },
-        {
-          "id": "SOV-LEGAL-028",
-          "source_name": "Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24",
-          "source_url": "https://www.althingi.is/"
+          "id": "SOV-LEGAL-026",
+          "source_name": "Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland), Articles 26, 65, 79; Althingi records on 2012 referendum follow-up",
+          "source_url": "https://www.althingi.is/lagas/nuna/1944033.html"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Andstæðingar hafa gagnrýnt tímasetninguna á þeim forsendum að veruleg umræða geti ekki átt sér stað yfir sumarfrí. Fullyrðingin er sett fram sem hlutlaus lýsing en er jafnframt pólitískt röksemdafærsla — að sumarfrítíminn dragi úr þinglegri íhlutun, sem sumir telja kost en aðrir ókost.",
-      "confidence": 0.918,
+      "missing_context": "Heimildir staðfesta dagsetninguna 29. ágúst 2026 en engin þeirra fjallar beint um hvort Alþingi sé formlega í sumarleyfi á þeim degi. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> nefnir gagnrýni á dagsetninguna sem «of bráða» (too soon) en tengir hana ekki sérstaklega við þinghlé. Fullyrðingin gefur í skyn gagnrýni á tímasetningu — en staðfesting á því hvort þingið sé í raun ekki «að störfum» krefst frekari heimilda um þingáætlun 157. löggjafarþings.",
+      "confidence": 0.72,
       "speakers": [
         {
           "name": "Kristrún Frostadóttir",
@@ -273,8 +268,8 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> staðfestir að Kristrún hefur rökstutt stefnubreytinguna með breyttum alþjóðlegum aðstæðum, þar á meðal stríðinu í Úkraínu, Trump-stjórninni og öryggisumhverfinu. POL-DATA-022 lýsir henni sem «pragmatic pro-European» sem leggur áherslu á hagrænar forsendur og hefur aukið áherslu á breiða samstöðu. <a href=\"https://ec.europa.eu/commission/presscorner/detail/en/ac_25_1887\" title=\"European Commission — Press Corner; EEAS\" target=\"_blank\" rel=\"noopener\">EEA-DATA-015</a> sýnir hlýrri samskipti við ESB á æðsta stigi árið 2025, þar á meðal heimsókn forseta framkvæmdastjórnar til Íslands og undirritun öryggissamstarfssamnings.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að Kristrún Frostadóttir hefur stutt þjóðaratkvæðagreiðslu um ESB-aðild og sett málið á dagskrá, en fullyrðingin um að hún telji «núverandi stöðu í Evrópu og alþjóðamálum skapa tækifæri» er aðeins að hluta studd. <a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> nefnir í fyrirvörum að Kristrún hafi rökstutt stefnubreytinguna með breyttum alþjóðlegum aðstæðum (stríð í Úkraínu, Trump-stjórn, öryggisumhverfi) en þetta kemur úr Útvarpi Sögu, ekki beint frá Kristrúni. POL-DATA-022 lýsir henni sem «pragmatic pro-European» en tengir afstöðuna frekar við efnahagslega röksemdafærslu en alþjóðlega stöðu. <a href=\"https://ec.europa.eu/commission/presscorner/detail/en/ac_25_1887\" title=\"European Commission — Press Corner; EEAS\" target=\"_blank\" rel=\"noopener\">EEA-DATA-015</a> sýnir virk samskipti Íslands og ESB um öryggissamstarf en ekki bein tengsl við mat Kristrúnar á tækifæri til aðildar.",
       "supporting_evidence": [
         {
           "id": "PARTY-DATA-016",
@@ -293,8 +288,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Kristrún sagði skýrt fyrir kosningarnar 2024 að ESB-aðild yrði ekki á dagskrá — stefnubreytingin er umdeild og andstæðingar hafa sakað hana um svikræði samkvæmt <a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a>. Fullyrðingin er skoðun forsætisráðherra, ekki hlutlægt mat á alþjóðlegu ástandi.",
-      "confidence": 0.9,
+      "missing_context": "Orðrétt yfirlýsing Kristrúnar um að alþjóðastaðan «skapi tækifæri» fyrir ESB-aðild kemur ekki beint fram í heimildum. Fyrirvari <a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> nefnir alþjóðlegar aðstæður sem rök hennar, en þetta er túlkun fjölmiðils (Útvarps Sögu) á afstöðunni. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T162602.html\" title=\"Alþingi — Kristrún Frostadóttir, forsætisráðherra (andsvar, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">PARTY-PARL-001</a> sýnir jafnframt að Kristrún sagði á Alþingi að ákvörðun um þjóðaratkvæðagreiðslu hafi verið hluti af stjórnarsáttmála, ekki viðbrögð við efnahagsástandi.",
+      "confidence": 0.72,
       "speakers": [
         {
           "name": "Kristrún Frostadóttir",
@@ -367,13 +362,13 @@
       "attribution_type": "quoted",
       "claim_count": 7,
       "verdicts": {
-        "supported": 5,
-        "partially_supported": 2
+        "supported": 2,
+        "partially_supported": 5
       },
       "stance": "pro_eu",
       "slug": "kristrun-frostadottir",
-      "mention_count": 42,
-      "credibility": 0.71
+      "mention_count": 44,
+      "credibility": 0.67
     }
   ]
 }

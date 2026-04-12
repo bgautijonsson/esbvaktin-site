@@ -10,8 +10,8 @@
   "summary": "Greindar 25 fullyrðingar. Niðurstöður: 10 stutt að hluta, 9 stutt af heimildum, 6 ekki hægt að sannreyna. Sjónarhorn: mjög ESB-jákvæð. Heildstæðni: 35%.",
   "capsule": "Vægi Íslands í ráðherraráði ESB — 0,08% við aðild, en nákvæmlega 0% í dag — er ein af þeim staðreyndum sem heimildir staðfesta. Áhugavert samhengi sem greinin snertir ekki: ef Ísland gengi í ESB yrðu íslenskir fiskimið hluti af sameiginlegri sjávarútvegsstefnu Evrópu, þar sem kvótahlutdeild yrði til umfjöllunar á sameiginlegum vettvangi. Þetta er eitt þyngsta viðfangsefni ESB-umræðunnar og fordæmi frá öðrum fiskveiðiþjóðum gefa til kynna að þar séu flóknir hagsmunaárekstrar á ferðinni.",
   "verdict_counts": {
-    "partially_supported": 10,
-    "supported": 9
+    "partially_supported": 12,
+    "supported": 7
   },
   "epistemic_counts": {
     "prediction": 1
@@ -300,8 +300,8 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__utanrikisverslun/\" title=\"Hagstofa Íslands — External trade statistics\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-001</a> staðfestir að ESB sé stærsti viðskiptaaðili Íslands — um 50% vöruútflutnings og 60% vöruinnflutnings. Íbúafjöldi ESB er um 450 milljónir samkvæmt <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a>. <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EFTA Secretariat — The EEA Agreement; ESA Internal Market Scoreboard; EEA Joint Committee\" target=\"_blank\" rel=\"noopener\">EEA-DATA-010</a> sýnir að Ísland hefur þegar innleitt yfir 13.000 lagagerðir ESB í gegnum EES-samninginn. Þessi gögn styðja fullyrðinguna um bæði markaðsstærð og háðleika Íslands.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> staðfestir að ESB-markaðurinn nær til um 450 milljóna manna, og TRADE-DATA-020 sýnir mikilvægi ESB/EES-verslunar fyrir Ísland — um 55–60% ferðamanna koma frá ESB/EES-ríkjum samkvæmt <a href=\"https://www.ferdamalastofa.is/en/recearch-and-statistics\" title=\"Ferðamálastofa (Icelandic Tourist Board) — Tourism statistics\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-005</a>. Orðið «háð» er þó of sterkt; Ísland á einnig umtalsverð viðskiptatengsl utan ESB, þar á meðal við Bandaríkin (um 25% ferðamanna, 8% vöruútflutnings) og Bretland (um 12% vöruútflutnings). Ísland hefur aðgang að innri markaðnum í gegnum EES-samninginn og er þannig þegar hluti af þessum markaði, sem dregur úr gildi fullyrðingarinnar sem rök fyrir ESB-aðild.",
       "supporting_evidence": [
         {
           "id": "SOV-DATA-017",
@@ -309,19 +309,19 @@
           "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016"
         },
         {
-          "id": "TRADE-DATA-001",
-          "source_name": "Hagstofa Íslands — External trade statistics",
-          "source_url": "https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__utanrikisverslun/"
+          "id": "TRADE-DATA-020",
+          "source_name": "Ferðamálastofa (Icelandic Tourist Board) — Tourism statistics; Hagstofa Íslands — Balance of payments",
+          "source_url": null
         },
         {
-          "id": "EEA-DATA-010",
-          "source_name": "EFTA Secretariat — The EEA Agreement; ESA Internal Market Scoreboard; EEA Joint Committee",
-          "source_url": "https://www.efta.int/eea/eea-agreement"
+          "id": "TRADE-DATA-005",
+          "source_name": "Ferðamálastofa (Icelandic Tourist Board) — Tourism statistics",
+          "source_url": "https://www.ferdamalastofa.is/en/recearch-and-statistics"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Háðleikinn er misjafn eftir atvinnugreinum — sjávarútvegur er undanskilinn EES-samningnum (<a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a>) og landbúnaður er að mestu utan hans. Þá eiga Ísland viðskipti við önnur ríki, þ.m.t. Bretland (~12%), Bandaríkin (~8%) og Kína (~4%) samkvæmt <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__utanrikisverslun/\" title=\"Hagstofa Íslands — External trade by country\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-004</a>.",
-      "confidence": 0.9,
+      "missing_context": "Ísland nýtur nú þegar tollfrjáls aðgangs að innri markaðnum í gegnum EES-samninginn, þannig að reglur ESB gilda þegar að verulegu leyti. <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__utanrikisverslun/\" title=\"Hagstofa Íslands — External trade by country\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-004</a> sýnir að verulegur hluti útflutnings fer til ríkja utan ESB. Orðið «háð» einfaldar flókið viðskiptamynstur þar sem Ísland á viðskiptasamninga við mörg ríki utan ESB.",
+      "confidence": 0.78,
       "speakers": [
         {
           "name": "Magnús Árni Skjöld Magnússon",
@@ -522,7 +522,7 @@
         "epistemic_type": "factual"
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/skyrsla-nefndarinnar/english/\" title=\"Seðlabanki Íslands — Special Investigation Commission report; Central Bank annual report 2009\" target=\"_blank\" rel=\"noopener\">CURR-DATA-001</a> staðfestir að krónan hafi fallið úr um 90 ISK/EUR í byrjun 2008 í yfir 180 ISK/EUR í nóvember 2008 — um 50% gengisfall á nokkrum vikum. CURRENCY-DATA-016 og <a href=\"https://www.sedlabanki.is/hagtolur/gengi/\" title=\"Seðlabanki Íslands — Exchange rate data\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-007</a> staðfesta sömu tölur. Fullyrðingin er rétt.",
+      "explanation": "Margar heimildir staðfesta fullyrðinguna. <a href=\"https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/skyrsla-nefndarinnar/english/\" title=\"Seðlabanki Íslands — Special Investigation Commission report; Central Bank annual report 2009\" target=\"_blank\" rel=\"noopener\">CURR-DATA-001</a> greinir frá því að krónan hafi tapað um 50% af verðgildi sínu gagnvart evru á nokkrum vikum — úr um 90 ISK/EUR snemma árs 2008 í yfir 180 ISK/EUR í nóvember 2008. CURRENCY-DATA-016 staðfestir sömu þróun, sem og <a href=\"https://www.sedlabanki.is/hagtolur/gengi/\" title=\"Seðlabanki Íslands — Exchange rate data\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-007</a> og <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a>. Fullyrðingin um «helming verðgildis» og «nokkrar vikur» er nákvæm og studd af öllum tiltækum heimildum.",
       "supporting_evidence": [
         {
           "id": "CURR-DATA-001",
@@ -538,10 +538,15 @@
           "id": "TRADE-DATA-007",
           "source_name": "Seðlabanki Íslands — Exchange rate data",
           "source_url": "https://www.sedlabanki.is/hagtolur/gengi/"
+        },
+        {
+          "id": "SOV-LEGAL-005",
+          "source_name": "Central Bank of Iceland — Monetary policy framework",
+          "source_url": "https://sedlabanki.is/peningastefna/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Heimildir benda á að gengisfallið hafi einnig stuðlað að bata útflutningsgreina — ódýrari króna gerði íslenskar vörur og ferðaþjónustu samkeppnishæfari á erlendum mörkuðum (<a href=\"https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/skyrsla-nefndarinnar/english/\" title=\"Seðlabanki Íslands — Special Investigation Commission report; Central Bank annual report 2009\" target=\"_blank\" rel=\"noopener\">CURR-DATA-001</a>, CURRENCY-DATA-016). Þetta tvíþætta eðli gengisfallsins kemur ekki fram í fullyrðingunni.",
+      "missing_context": "Gengisfallið hafði margar orsakir umfram gjaldmiðilsstefnu, þ.á m. óhóflegan vöxt bankakerfisins, ófullnægjandi eftirlit og alþjóðlega fjármálakreppu. Seðlabankinn gat ekki starfað sem lánveitandi til þrautavara í erlendum gjaldmiðli. Gengislækkun krónunnar stuðlaði einnig að bata útflutningsgreina á eftirkrepputímabilinu. <a href=\"https://cb.is/statistics/official-exchange-rate/\" title=\"Central Bank of Iceland — Official exchange rate; Wise/XE historical data\" target=\"_blank\" rel=\"noopener\">CURR-DATA-010</a> sýnir jafnvel meiri gengislækkun — niður í um 340 ISK/EUR — en það hlutfall gæti átt við frjálsan markað meðan gjaldeyrishöft voru enn að taka gildi.",
       "confidence": 0.95,
       "speakers": [
         {
@@ -653,33 +658,28 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/\" title=\"UK Office for National Statistics — Trade statistics; Office for Budget Responsibility — Brexit impact assessment\" target=\"_blank\" rel=\"noopener\">PREC-HIST-012</a> staðfestir að vöruviðskipti Bretlands við ESB drógust saman um 15% í raungildi frá 2019 til 2024 og að ógjaldtækar viðskiptahindranir (tollskýrslur, upprunareglur, dýralæknisstjórnun) reyndust kostnaðarsamari en tollar. <a href=\"https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/\" title=\"UK Office for Budget Responsibility — Economic and fiscal outlook 2023; Centre for European Reform; Bank of England\" target=\"_blank\" rel=\"noopener\">PREC-DATA-008</a> nefnir 4% samdrátt í landsframleiðslu samkvæmt mati OBR. <a href=\"https://commonslibrary.parliament.uk/research-briefings/cbp-7851/\" title=\"UK House of Commons Library, Statistics on UK-EU Trade (Research Briefing CBP-7851)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-001</a> sýnir 18% raunlækkun á vöruútflutningi til ESB. <a href=\"https://www.gov.uk/government/statistics/uk-sea-fisheries-annual-statistics-report-2023\" title=\"UK Marine Management Organisation — UK Sea Fisheries Statistics 2023; UK Trade Info\" target=\"_blank\" rel=\"noopener\">FISH-COMP-005</a> staðfestir sérstaklega aukið skrifræði á sjávarafurðum. Þessar heimildir styðja fullyrðinguna eindregið.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að Bretland hefur fundið fríverslunarsamning við ESB flóknari í framkvæmd en aðild — þetta kemur óbeint fram í samanburðarheimildum. <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf\" title=\"EEA Agreement — Protocol 3 on trade in processed agricultural products\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-002</a> og <a href=\"https://www.consilium.europa.eu/en/policies/eu-tariffs-explained/\" title=\"EU Council / European Commission Access2Markets\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-040</a> sýna muninn á EES-aðild og fullri aðild að tollasambandi, þar sem tollsambandið útilokar upprunalandsvottorð og tollafgreiðslu. <a href=\"https://www.europa.eda.admin.ch/en/overview-bilateral-path\" title=\"Swiss Federal Department of Foreign Affairs — Bilateral agreements overview; European Commission — EU-Switzerland relations factsheet\" target=\"_blank\" rel=\"noopener\">PREC-HIST-015</a> lýsir hvernig svissneska tvíhliða samningakerfið er flóknara en EES, og Brexit er hliðstæðari þeirri stöðu. Hins vegar fjalla engar af þessum heimildum beint um reynslu Bretlands eftir Brexit — engin þeirra nefnir Trade and Cooperation Agreement (TCA) eða skrifræði Bretlands á landamærum ESB. Fullyrðingin er í eðli sínu um Brexit-reynsluna, en heimildir lýsa innri markaðnum og tollasambandinu almennt, ekki breskum aðstæðum sérstaklega.",
       "supporting_evidence": [
         {
-          "id": "PREC-HIST-012",
-          "source_name": "UK Office for National Statistics — Trade statistics; Office for Budget Responsibility — Brexit impact assessment",
-          "source_url": "https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/"
+          "id": "TRADE-DATA-002",
+          "source_name": "EEA Agreement — Protocol 3 on trade in processed agricultural products",
+          "source_url": "https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf"
         },
         {
-          "id": "PREC-DATA-008",
-          "source_name": "UK Office for Budget Responsibility — Economic and fiscal outlook 2023; Centre for European Reform; Bank of England",
-          "source_url": "https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/"
+          "id": "TRADE-DATA-040",
+          "source_name": "EU Council / European Commission Access2Markets",
+          "source_url": "https://www.consilium.europa.eu/en/policies/eu-tariffs-explained/"
         },
         {
-          "id": "PREC-DATA-001",
-          "source_name": "UK House of Commons Library, Statistics on UK-EU Trade (Research Briefing CBP-7851)",
-          "source_url": "https://commonslibrary.parliament.uk/research-briefings/cbp-7851/"
-        },
-        {
-          "id": "FISH-COMP-005",
-          "source_name": "UK Marine Management Organisation — UK Sea Fisheries Statistics 2023; UK Trade Info",
-          "source_url": "https://www.gov.uk/government/statistics/uk-sea-fisheries-annual-statistics-report-2023"
+          "id": "PREC-HIST-015",
+          "source_name": "Swiss Federal Department of Foreign Affairs — Bilateral agreements overview; European Commission — EU-Switzerland relations factsheet",
+          "source_url": "https://www.europa.eda.admin.ch/en/overview-bilateral-path"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Samanburðurinn við Ísland er takmarkaður — <a href=\"https://obr.uk/forecasts-in-depth/the-economy-forecast/brexit-analysis/\" title=\"UK Office for Budget Responsibility — Economic and fiscal outlook 2023; Centre for European Reform; Bank of England\" target=\"_blank\" rel=\"noopener\">PREC-DATA-008</a> bendir á að staða Íslands sé «grundvallarólík» þar sem Ísland er lítið hagkerfi í EES-samningnum, meðan Bretland yfirgaf fulla aðild. Þá blandast áhrif Covid-faraldursins og orkukreppunnar saman við áhrif útgöngunnar, sem gerir einangruð áhrif erfið að meta (<a href=\"https://commonslibrary.parliament.uk/research-briefings/cbp-7851/\" title=\"UK House of Commons Library, Statistics on UK-EU Trade (Research Briefing CBP-7851)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-001</a>).",
-      "confidence": 0.9,
+      "missing_context": "Engin heimild fjallar beint um reynslu Bretlands eftir útgöngu — heimildir fjalla um EES-aðild og tollasambandið almennt. Fullyrðingin er trúverðug í ljósi almennrar þekkingar á Brexit, en staðreyndagrunnurinn inniheldur ekki heimildir sem staðfesta sérstaklega aukið skrifræði á landamærum Bretlands eða tilteknar hindranir í vöruflæði milli Bretlands og ESB.",
+      "confidence": 0.65,
       "speakers": [
         {
           "name": "Magnús Árni Skjöld Magnússon",
@@ -859,13 +859,13 @@
       "attribution_type": "asserted",
       "claim_count": 18,
       "verdicts": {
-        "partially_supported": 9,
-        "supported": 9
+        "partially_supported": 11,
+        "supported": 7
       },
       "stance": "pro_eu",
       "slug": "magnus-arni-skjold-magnusson",
-      "mention_count": 5,
-      "credibility": 0.72,
+      "mention_count": 7,
+      "credibility": 0.69,
       "speech_count": 7
     },
     {
@@ -880,8 +880,8 @@
       },
       "stance": "anti_eu",
       "slug": "hjortur-j-gudmundsson",
-      "mention_count": 18,
-      "credibility": 0.66
+      "mention_count": 20,
+      "credibility": 0.58
     }
   ]
 }

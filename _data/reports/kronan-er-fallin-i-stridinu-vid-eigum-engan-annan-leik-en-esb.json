@@ -10,8 +10,7 @@
   "summary": "Greindar 11 fullyrðingar. Niðurstöður: 7 stutt að hluta, 3 ekki hægt að sannreyna, 1 stutt af heimildum. Sjónarhorn: mjög ESB-jákvæð. Heildstæðni: 20%.",
   "capsule": "Greinin fær rétt að krónan sé viðkvæm fyrir alþjóðlegum áhrifum og að evran sé að styrkjast sem gjaldmiðill á heimsvísu. Áhugavert er að nýir ESB-meðlimir eru lagalega skyldugir til að taka upp evru þegar þeir uppfylla Maastricht-skilyrðin — en sú ferð tekur venjulega 7–10 ár samkvæmt fordæmum annarra ríkja, þannig að ESB-aðild myndi ekki þýða skjóta evruupptöku. Hvort gjaldmiðilssjálfstæðið sé styrkur eða veikleiki er ein af mestu hagfræðilegu deiluspurningunum í aðildarumræðunni.",
   "verdict_counts": {
-    "partially_supported": 6,
-    "supported": 1,
+    "partially_supported": 7,
     "unverifiable": 1
   },
   "epistemic_counts": {
@@ -61,7 +60,7 @@
           "name": "Óþekkt höfundur",
           "type": "individual",
           "role": "samfélagsrýnir og áhugamaður um alþjóðastjórnmál",
-          "party": null,
+          "party": "Sjálfstæðisflokkur",
           "stance": "pro_eu",
           "attribution": "asserted",
           "stance_score": null,
@@ -78,44 +77,29 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "Heimildir staðfesta skýrt að krónan er mjög sveiflukennd og viðkvæm fyrir utanaðkomandi áföllum. <a href=\"https://cb.is/statistics/official-exchange-rate/\" title=\"Seðlabanki Íslands — Monetary Bulletin; ECB Statistical Data Warehouse\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-004</a> sýnir að árleg sveifla krónunnar gagnvart evru hefur verið 10–12% á tímabilinu 2010–2024, samanborið við 4–6% hjá sænsku og dönsku myntunum. CURRENCY-DATA-016 greinir frá þremur stórum kreppuskeiðum síðan 2000 — bankahruninu 2008, heimsfaraldrinum 2020 og veikingu 2023–2024 — sem öll tengdust alþjóðlegum atburðum. <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> staðfestir að krónan hafi fallið um 50% í bankahruninu.",
+      "verdict": "partially_supported",
+      "explanation": "Krónan hefur sannarlega sýnt miklar sveiflur í kjölfar alþjóðlegra áfalla — CURRENCY-DATA-016 sýnir að hún féll um 50% í hruninu 2008 og um 17% við upphaf COVID-19. <a href=\"https://cb.is/statistics/official-exchange-rate/\" title=\"Central Bank of Iceland — Official exchange rate; Wise/XE historical data\" target=\"_blank\" rel=\"noopener\">CURR-DATA-010</a> staðfestir einnig sögulega sveiflur en bendir á að nýleg flökt hafi verið lítið (0,2–0,4% á 30–90 daga tímabili). Fullyrðingin um «viðkvæmni fyrir alþjóðlegum vindáttum» á við um kreppuskeið en lýsir ekki nútímastöðu krónunnar, sem hefur verið tiltölulega stöðug frá 2017.",
       "supporting_evidence": [
-        {
-          "id": "TRADE-COMP-004",
-          "source_name": "Seðlabanki Íslands — Monetary Bulletin; ECB Statistical Data Warehouse",
-          "source_url": "https://cb.is/statistics/official-exchange-rate/"
-        },
         {
           "id": "CURRENCY-DATA-016",
           "source_name": "Central Bank of Iceland — Exchange rate data; ECB — Statistical Data Warehouse",
           "source_url": null
         },
         {
-          "id": "SOV-LEGAL-005",
-          "source_name": "Central Bank of Iceland — Monetary policy framework",
-          "source_url": "https://sedlabanki.is/peningastefna/"
-        },
-        {
-          "id": "TRADE-DATA-007",
-          "source_name": "Seðlabanki Íslands — Exchange rate data",
-          "source_url": "https://www.sedlabanki.is/hagtolur/gengi/"
-        },
-        {
-          "id": "CURR-DATA-001",
-          "source_name": "Seðlabanki Íslands — Special Investigation Commission report; Central Bank annual report 2009",
-          "source_url": "https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/skyrsla-nefndarinnar/english/"
+          "id": "CURR-DATA-010",
+          "source_name": "Central Bank of Iceland — Official exchange rate; Wise/XE historical data",
+          "source_url": "https://cb.is/statistics/official-exchange-rate/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Þó ber að hafa í huga að sveiflur krónunnar tengjast ekki einungis alþjóðastjórnmálum heldur einnig innlendum þáttum eins og bankakerfinu 2008. Auk þess hafa sveiflurnar einnig virkað sem aðlögunarbúnaður — gengisfallið 2008–2009 hraðaði endurreisninni samanborið við evruríki á jaðrinum, samkvæmt <a href=\"https://www.sedlabanki.is/hagtolur/gengi/\" title=\"Seðlabanki Íslands — Exchange rate data\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-007</a>.",
-      "confidence": 0.9,
+      "missing_context": "Heimildir benda jafnframt á að sveigjanleiki krónunnar geti verið kostur — Ísland náði sér fyrr en evruríki á jaðri ESB eftir 2008 einmitt vegna gengisfalls. Hvort lítið gengjumynt sé ókostur eða sjálfvirkt jafnvægisstýritæki fer eftir efnahagsaðstæðum og ytri áföllum.",
+      "confidence": 0.75,
       "speakers": [
         {
           "name": "Óþekkt höfundur",
           "type": "individual",
           "role": "samfélagsrýnir og áhugamaður um alþjóðastjórnmál",
-          "party": null,
+          "party": "Sjálfstæðisflokkur",
           "stance": "pro_eu",
           "attribution": "asserted",
           "stance_score": null,
@@ -159,7 +143,7 @@
           "name": "Óþekkt höfundur",
           "type": "individual",
           "role": "samfélagsrýnir og áhugamaður um alþjóðastjórnmál",
-          "party": null,
+          "party": "Sjálfstæðisflokkur",
           "stance": "pro_eu",
           "attribution": "asserted",
           "stance_score": null,
@@ -209,7 +193,7 @@
           "name": "Óþekkt höfundur",
           "type": "individual",
           "role": "samfélagsrýnir og áhugamaður um alþjóðastjórnmál",
-          "party": null,
+          "party": "Sjálfstæðisflokkur",
           "stance": "pro_eu",
           "attribution": "asserted",
           "stance_score": null,
@@ -253,7 +237,7 @@
           "name": "Óþekkt höfundur",
           "type": "individual",
           "role": "samfélagsrýnir og áhugamaður um alþjóðastjórnmál",
-          "party": null,
+          "party": "Sjálfstæðisflokkur",
           "stance": "pro_eu",
           "attribution": "asserted",
           "stance_score": null,
@@ -308,7 +292,7 @@
           "name": "Óþekkt höfundur",
           "type": "individual",
           "role": "samfélagsrýnir og áhugamaður um alþjóðastjórnmál",
-          "party": null,
+          "party": "Sjálfstæðisflokkur",
           "stance": "pro_eu",
           "attribution": "asserted",
           "stance_score": null,
@@ -336,7 +320,7 @@
           "name": "Óþekkt höfundur",
           "type": "individual",
           "role": "samfélagsrýnir og áhugamaður um alþjóðastjórnmál",
-          "party": null,
+          "party": "Sjálfstæðisflokkur",
           "stance": "pro_eu",
           "attribution": "asserted",
           "stance_score": null,
@@ -375,7 +359,7 @@
           "name": "Óþekkt höfundur",
           "type": "individual",
           "role": "samfélagsrýnir og áhugamaður um alþjóðastjórnmál",
-          "party": null,
+          "party": "Sjálfstæðisflokkur",
           "stance": "pro_eu",
           "attribution": "asserted",
           "stance_score": null,
@@ -388,19 +372,18 @@
     {
       "name": "Óþekkt höfundur",
       "role": "samfélagsrýnir og áhugamaður um alþjóðastjórnmál",
-      "party": null,
+      "party": "Sjálfstæðisflokkur",
       "role_in_article": "author",
       "attribution_type": "asserted",
       "claim_count": 8,
       "verdicts": {
-        "partially_supported": 6,
-        "supported": 1,
+        "partially_supported": 7,
         "unverifiable": 1
       },
       "stance": "pro_eu",
       "slug": "othekkt-hofundur",
-      "mention_count": 4,
-      "credibility": 0.61
+      "mention_count": 5,
+      "credibility": 0.52
     }
   ]
 }

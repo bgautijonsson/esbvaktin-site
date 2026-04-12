@@ -10,8 +10,7 @@
   "summary": "Greindar 4 fullyrðingar. Niðurstöður: 2 stutt af heimildum, 1 ekki hægt að sannreyna, 1 stutt að hluta. Sjónarhorn: hallar á ESB-jákvæða hlið. Heildstæðni: 30%.",
   "capsule": "Spurningin um ESB-aðild Íslands var meðal þeirra stóru mála sem ekki náðu á dagskrá í aðdraganda síðustu Alþingiskosninga — og það styður heimildir. Áhugavert er þó að kannanir sýna um tíu prósentustiga mun á stuðningi við «að halda áfram viðræðum» annars vegar og «ESB-aðild» hins vegar, enda eru þetta tvær ólíkar spurningar. Orðalag í þjóðaratkvæðagreiðslu skiptir máli.",
   "verdict_counts": {
-    "supported": 2,
-    "partially_supported": 1
+    "partially_supported": 3
   },
   "epistemic_counts": null,
   "claim_count": 3,
@@ -30,23 +29,28 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "Heimildir staðfesta að ESB-aðild snerti öll þessi svið. <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> lýsir umfangi ESB-aðildar umfram EES — landbúnaðarstefnu, sjávarútvegsstefnu, tollbandalagi, utanríkis- og öryggismálum og peningamálastefnu. <a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a> sýnir áhrif á viðskiptafullveldi og tollastefnu. <a href=\"https://www.efta.int/about-efta/efta-secretariat/efta-budget\" title=\"EFTA Secretariat — EFTA budget; various academic estimates\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-005</a> varpar ljósi á efnahagslegan mun milli EES og ESB-aðildar. Þetta er almenn lýsing á umfangi ESB-aðildar og heimildir styðja hana ótvírætt.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin segir að ESB-aðild snerta efnahag, fullveldi, viðskipti, gildi og alþjóðlega stöðu Íslands. Flestar þessara vídda eru studdar af heimildum: <a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a> staðfestir viðskipta- og efnahagsáhrif; <a href=\"https://www.visindavefur.is/svar.php?id=23088\" title=\"Vísindavefurinn — Ragnhildur Helgadóttir & Bjarni Már Magnússon, University of Iceland Faculty of Law (2018, updated 2026)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-027</a> og <a href=\"https://www.althingi.is/\" title=\"Althingi debate records; Snorri Másson — Op-eds and interviews\" target=\"_blank\" rel=\"noopener\">SOV-DATA-021</a> fjalla um fullveldisþáttinn; <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> og <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EFTA Secretariat — The EEA Agreement; ESA Internal Market Scoreboard; EEA Joint Committee\" target=\"_blank\" rel=\"noopener\">EEA-DATA-010</a> lýsa stefnusviðum sem ESB-aðild nær til. Hins vegar falla «gildi» (values) ekki auðveldlega undir neina af hinum sjö heimildunum — engin þeirra fjallar sérstaklega um gildi eða verðmæti í siðferðilegum eða menningarlegum skilningi sem ESB-aðild snertir beint.",
       "supporting_evidence": [
-        {
-          "id": "EEA-LEGAL-022",
-          "source_name": "EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'",
-          "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
-        },
         {
           "id": "SOV-LEGAL-032",
           "source_name": "TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview",
           "source_url": "https://www.efta.int/free-trade/free-trade-agreements"
         },
         {
-          "id": "TRADE-COMP-005",
-          "source_name": "EFTA Secretariat — EFTA budget; various academic estimates",
-          "source_url": "https://www.efta.int/about-efta/efta-secretariat/efta-budget"
+          "id": "EEA-LEGAL-022",
+          "source_name": "EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'",
+          "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
+        },
+        {
+          "id": "SOV-DATA-027",
+          "source_name": "Vísindavefurinn — Ragnhildur Helgadóttir & Bjarni Már Magnússon, University of Iceland Faculty of Law (2018, updated 2026)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=23088"
+        },
+        {
+          "id": "EEA-DATA-010",
+          "source_name": "EFTA Secretariat — The EEA Agreement; ESA Internal Market Scoreboard; EEA Joint Committee",
+          "source_url": "https://www.efta.int/eea/eea-agreement"
         },
         {
           "id": "EEA-LEGAL-003",
@@ -55,8 +59,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Fullyrðingin er almenn og nefnir ekki hvaða áhrif ESB-aðild hefði á hvert svið. Þó ber að hafa í huga að umfang áhrifanna er mjög ólíkt eftir sviðum — t.d. eru viðskipti þegar að mestu háð EES-samningnum (<a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf\" title=\"EEA Agreement — Protocol 3 on trade in processed agricultural products\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-002</a>), en sjávarútvegsstefna og landbúnaðarstefna væru grundvallarbreytingar.",
-      "confidence": 0.9,
+      "missing_context": "Heimildir styðja vel þá hluta fullyrðingarinnar sem varða efnahag, fullveldi, viðskipti og alþjóðlega stöðu. Víddin «gildi» er hins vegar ekki studd af neinum af þeim heimildum sem lagðar eru fram. Fullyrðingin er að auki víðtæk og almenn — nánast hvaða alþjóðlega stéttarfélagsaðild sem er «snertir» þessi svið á einhvern hátt, svo fullyrðingin er nær óhrekjandi en jafnframt lítils upplýsingagildis.",
+      "confidence": 0.78,
       "speakers": [
         {
           "name": "Helga Vala Helgadóttir",
@@ -79,23 +83,24 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> staðfestir þetta beint: Kristrún Frostadóttir, formaður Samfylkingarinnar, sagði skýrt fyrir alþingiskosningarnar í nóvember 2024 að ESB-aðild yrði ekki á dagskrá á næsta kjörtímabili — forgangsverkefnin voru efnahagsmál, ríkisfjármál og heilbrigðismál. Eftir kosningarnar snerist afstaðan hratt og ríkisstjórnin tilkynnti um þjóðaratkvæðagreiðslu. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/\" title=\"Coalition agreements 2009, 2013, 2016, 2017, 2021, 2024; Althingi records\" target=\"_blank\" rel=\"noopener\">POL-DATA-010</a> staðfestir að ESB-málið hefur verið samningaspil í ríkisstjórnarmyndun en var ekki forgangsmál í kosningabaráttunni 2024.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> styður fullyrðinguna verulega: Kristrún Frostadóttir sagði skýrt fyrir kosningarnar 2024 að ESB-aðild yrði ekki á dagskrá á næsta kjörtímabili og forgangsverkefnin yrðu efnahagsmál, ríkisfjármál og heilbrigðismál. Þetta bendir til þess að ESB-mál hafi ekki verið meðal stóru málanna. Hins vegar staðfesta heimildir ekki beint hvort ESB-mál hafi yfir höfuð verið «á dagskrá» í kosningabaráttunni sem slíkri — aðeins að forustumaður Samfylkingarinnar hafi vísað málinu frá. Viðreisn lagði til ESB-þjóðaratkvæðagreiðslu á Alþingi 2023 (<a href=\"https://www.althingi.is/altext/raeda/154/rad20230919T175556.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir (flutningsræða, 154. löggjafarþing); Logi Einarsson (flutningsræða, 153. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-004</a>), sem bendir til þess að málið hafi verið til umræðu meðal einstakra flokka þrátt fyrir að vera ekki meðal «stóru málanna» í kosningum.",
       "supporting_evidence": [
         {
           "id": "PARTY-DATA-016",
           "source_name": "Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16",
           "source_url": "https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/"
-        },
-        {
-          "id": "POL-DATA-010",
-          "source_name": "Coalition agreements 2009, 2013, 2016, 2017, 2021, 2024; Althingi records",
-          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "<a href=\"https://www.althingi.is/altext/raeda/154/rad20230919T175556.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir (flutningsræða, 154. löggjafarþing); Logi Einarsson (flutningsræða, 153. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-004</a> sýnir að Viðreisn og Samfylkingin höfðu lagt fram þingsályktunartillögur um þjóðaratkvæðagreiðslu á fyrri þingum (2022 og 2023), þannig að málið var ekki algjörlega fjarverandi úr pólitískri umræðu — en það náði ekki á oddinn í kosningabaráttunni sjálfri.",
-      "confidence": 0.76,
+      "contradicting_evidence": [
+        {
+          "id": "SOV-PARL-004",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir (flutningsræða, 154. löggjafarþing); Logi Einarsson (flutningsræða, 153. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/154/rad20230919T175556.html"
+        }
+      ],
+      "missing_context": "Heimildir ná ekki yfir kosningabaráttu 2024 í heild — einungis eru tiltækar yfirlýsingar einstakra stjórnmálamanna og flokkstillögur. Hvort ESB-mál voru «stórt mál» í kosningum er mat sem veltur á skilgreiningu: málið var til umræðu (Viðreisn, Samfylkingin höfðu afstöðu) en ekki meðal forgangsverkefna samkvæmt yfirlýsingu forsætisráðherraefnis.",
+      "confidence": 0.65,
       "speakers": [
         {
           "name": "Greinarhöfundur Vísar",
@@ -163,7 +168,7 @@
       "attribution_type": "asserted",
       "claim_count": 1,
       "verdicts": {
-        "supported": 1
+        "partially_supported": 1
       },
       "stance": "pro_eu",
       "slug": "helga-vala-helgadottir",

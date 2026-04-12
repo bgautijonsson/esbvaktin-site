@@ -10,8 +10,8 @@
   "summary": "Greindar 20 fullyrðingar. Niðurstöður: 14 stutt að hluta, 4 stutt af heimildum, 2 ekki hægt að sannreyna. Sjónarhorn: mjög ESB-neikvæð. Heildstæðni: 20%.",
   "capsule": "Greiðslur Íslands í Uppbyggingarsjóð EES nema um 1,7 milljörðum króna á ári samkvæmt gildandi samkomulagi — tala sem er til staðfestingar í skjölum utanríkisráðuneytisins. Áhugavert samhengi við vaxtasamanburðinn: um 80% íslenskra húsnæðislána eru verðtryggð, sem þýðir að beinn samanburður á nafnvöxtum milli Íslands og evrusvæðisins gefur ekki heildarmyndina — kerfin eru ólík að uppbyggingu.",
   "verdict_counts": {
-    "partially_supported": 14,
-    "supported": 4,
+    "partially_supported": 16,
+    "supported": 2,
     "unverifiable": 1
   },
   "epistemic_counts": {
@@ -217,13 +217,18 @@
         "confidence": 0.9,
         "epistemic_type": "prediction"
       },
-      "verdict": "supported",
-      "explanation": "Framlag aðildarríkja til fjárhagsáætlunar ESB byggist aðallega á þjóðartekjum (GNI), og heildarframlag hvers ríkis nemur yfirleitt um 1% af GNI. <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Institute of International Affairs, University of Iceland — EU membership cost analysis\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-010</a> áætlar brúttóframlag Íslands við 200–250 milljónir evra á ári. Þjóðartekjur Íslands eru á bilinu 25–30 milljarðar evra, þannig að 200–250 milljónir evra samsvarar um 0,7–1,0% af GNI. Orðalagið «rúmlega 1%» er sennilegt ef tekið er með öllum framlagsþáttum (GNI-framlag, tollur, VSK-hlutdeild). Heimildir styðja þessa stærðargráðu.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir styðja að beinar greiðslur Íslands til ESB myndu nema umtalsverðri fjárhæð. <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Institute of International Affairs, University of Iceland — EU membership cost analysis\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-010</a> áætlar heildarframlag á bilinu 200–250 milljónir evra á ári og <a href=\"https://eeagrants.org/en/fmo/about-us\" title=\"EEA Grants Financial Mechanism Committee; European Commission budget data\" target=\"_blank\" rel=\"noopener\">EEA-DATA-005</a> staðfestir svipað bil. Þó er fullyrðingin um «rúmlega 1% af þjóðartekjum» ekki nákvæmlega staðfest — heimildir gefa upp heildarfjárhæðir en tengja þær ekki við ákveðna hlutfallstölu af þjóðartekjum. <a href=\"https://www.visindavefur.is/svar.php?id=60980\" title=\"Vísindavefurinn — Vilborg Ása Guðjónsdóttir, Evrópuvefur project manager (2011)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-035</a> sýnir mikið bil í áætlunum (7,2–14,9 milljarðar króna) sem endurspeglar raunverulega óvissu um endanlega upphæð. Mikilvægt er einnig að greina á milli vergra greiðslna og hreins framlags eftir endurgreiðslur.",
       "supporting_evidence": [
         {
           "id": "TRADE-DATA-010",
           "source_name": "Institute of International Affairs, University of Iceland — EU membership cost analysis",
           "source_url": "https://ioes.hi.is/en/institute-economic-studies"
+        },
+        {
+          "id": "TRADE-DATA-035",
+          "source_name": "Vísindavefurinn — Vilborg Ása Guðjónsdóttir, Evrópuvefur project manager (2011)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=60980"
         },
         {
           "id": "EEA-DATA-005",
@@ -234,16 +239,11 @@
           "id": "EEA-DATA-008",
           "source_name": "EEA Grants — Financial Mechanism Committee; European Commission — EU budget figures",
           "source_url": "https://eeagrants.org/"
-        },
-        {
-          "id": "TRADE-DATA-035",
-          "source_name": "Vísindavefurinn — Vilborg Ása Guðjónsdóttir, Evrópuvefur project manager (2011)",
-          "source_url": "https://www.visindavefur.is/svar.php?id=60980"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Nákvæmt hlutfall ráðist af aðildarviðræðum og mögulegum afsláttum (eins og Danmörk fékk). Raunverulegt hlutfall getur vikið frá 1% eftir fjárhagsramma ESB á hverjum tíma.",
-      "confidence": 0.6317499999999999,
+      "missing_context": "Áætlanirnar eru frá 2002–2010 og byggjast á eldri efnahagsaðstæðum (<a href=\"https://www.visindavefur.is/svar.php?id=60980\" title=\"Vísindavefurinn — Vilborg Ása Guðjónsdóttir, Evrópuvefur project manager (2011)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-035</a>). Endanleg upphæð ræðst af samningaviðræðum og fjölára fjármálaáætlun ESB. Greina þarf á milli vergra greiðslna og hreinnar stöðu — Ísland myndi einnig fá fé úr byggðasjóðum og öðrum áætlunum. Hlutfallið «rúmlega 1%» er ekki staðfest beint í heimildum.",
+      "confidence": 0.6503035930847999,
       "speakers": [
         {
           "name": "Hjörtur J. Guðmundsson",
@@ -425,7 +425,7 @@
       ],
       "contradicting_evidence": [],
       "missing_context": "Ríkin gengu formlega í ESB 1. janúar 1995, ekki 1994. Finnland var fyrst nettóþegi vegna uppbyggingarstyrkja og landbúnaðargreiðslna en varð síðar nettógreiðandi. Nettóstaðan er ekki algild staðreynd — hún sveiflast eftir árum og uppbyggingaráætlunum.",
-      "confidence": 0.7,
+      "confidence": 0.6782999999999999,
       "speakers": [
         {
           "name": "Hjörtur J. Guðmundsson",
@@ -483,7 +483,7 @@
         "epistemic_type": "factual"
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://europa.eu/eurobarometer/surveys/detail/3131\" title=\"Standard Eurobarometer; OBR; ONS; Eurostat\" target=\"_blank\" rel=\"noopener\">PREC-DATA-017</a> staðfestir skýrt að Úkraína og Moldóva fengu frambjóðandastöðu (candidate status) í júní 2022. Þetta er vel þekkt og óumdeild staðreynd í ESB-stækkunarferlinu.",
+      "explanation": "<a href=\"https://europa.eu/eurobarometer/surveys/detail/3131\" title=\"Standard Eurobarometer; OBR; ONS; Eurostat\" target=\"_blank\" rel=\"noopener\">PREC-DATA-017</a> staðfestir að Úkraína og Moldóva fengu stöðu umsóknarríkja (candidate status) í júní 2022. Fullyrðingin notar orðalagið «samþykktra umsóknarríkja» sem samsvarar því að ESB hafi samþykkt umsóknir þeirra og veitt þeim frambjóðandastöðu.",
       "supporting_evidence": [
         {
           "id": "PREC-DATA-017",
@@ -492,8 +492,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Frambjóðandastaða (candidate status) þýðir ekki sjálfkrafa aðild — aðildarviðræður geta tekið mörg ár eða áratugi, og niðurstaðan er ekki fyrirfram ákveðin.",
-      "confidence": 0.95,
+      "missing_context": "Frambjóðandasamþykkt þýðir ekki að aðildarviðræður hafi hafist eða að aðild sé yfirvofandi. Moldóva og Úkraína eru enn langt frá aðild og þurfa að uppfylla umfangsmikil skilyrði. Aðildarumsóknir þeirra eru nátengdar innrás Rússa í Úkraínu árið 2022, ekki eingöngu almennri stækkuðarstefnu ESB.",
+      "confidence": 0.92,
       "speakers": [
         {
           "name": "Hjörtur J. Guðmundsson",
@@ -738,8 +738,8 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD\" title=\"World Bank — World Development Indicators\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-012</a> sýnir VLF Íslands um 84.300 Bandaríkjadali á mann (kaupmáttarleiðrétt), og heildarvergri landsframleiðslu Íslands um 3.500–4.000 milljarðar ISK. Eitt prósentustig af þeirri upphæð nemur 35–40 milljörðum ISK. Fullyrðingin um «tugi milljarða» er því stærðarfræðilega rétt og raunar frekar varlega orðuð. Þetta er einföld útreikningur sem á sér skýra stoð í opinberum hagtölum.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin um að hvert prósentustig í minni hagvexti kosti tugi milljarða er í grófum dráttum samrýmanleg opinberum gögnum, en heimildir staðfesta ekki þetta nákvæmlega. Samkvæmt <a href=\"https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD\" title=\"World Bank — World Development Indicators\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-012</a> var landsframleiðsla Íslands um 84.300 bandaríkjadalir á mann árið 2024, sem þýðir að heildarframleiðslan nemur nokkrum þúsundum milljarða króna — eitt prósentustig gæti þannig numið tugum milljarða. <a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=IS\" title=\"World Bank — GDP growth (annual %) (NY.GDP.MKTP.KD.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-014</a> sýnir að hagvöxtur Íslands er sérstaklega sveiflukenndur og getur haft mikil áhrif á þjóðarbúskapinn. Hins vegar er fullyrðingin of víð og heimildir gefa ekki nákvæma staðfestingu á «tugum milljarða» án nánari skilgreiningar á landsframleiðslu á hverjum tíma.",
       "supporting_evidence": [
         {
           "id": "CURRENCY-DATA-012",
@@ -753,8 +753,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Fullyrðingin er stærðarfræðilega rétt en felur í sér forsenduna að hagvöxtur myndi raunverulega lækka um heilt prósentustig. Samhengið skiptir máli — hvort átt er við tímabundinn eða langvarandi vöxtumun, og hvort orsakatengingin sé við evruaðild eða aðra þætti.",
-      "confidence": 0.85,
+      "missing_context": "Fullyrðingin tilgreinir ekki á hvaða ári eða við hvaða landsframleiðslu er miðað. Samkvæmt <a href=\"https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD\" title=\"World Bank — World Development Indicators\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-012</a> er landsframleiðsla Íslands há en breytist mikið milli ára. Eitt prósentustig getur numið mismunandi fjárhæðum eftir árinu. Þá nefna heimildir einnig að sveiflur í litlum hagkerfum eru skipulagslega meiri óháð gjaldmiðlakerfi (<a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=IS\" title=\"World Bank — GDP growth (annual %) (NY.GDP.MKTP.KD.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-014</a>), sem dregur úr tengingu við krónu sérstaklega.",
+      "confidence": 0.65,
       "speakers": [
         {
           "name": "Hjörtur J. Guðmundsson",
@@ -799,7 +799,7 @@
         }
       ],
       "missing_context": "Tilvísunin í «gögn ESB» er óljós — framkvæmdastjórnin gaf jákvætt álit 2010 sem ekki nefndi stórauka á opinbera geiranum sem forsenduskilyrði. ESB-aðild krefst ákveðinna stofnana (landbúnaðargreiðslur, sjávarútvegsstjórnun, sjálfstætt samkeppniseftirlit) en Ísland hefur nú þegar mörg þessara kerfa í gegnum EES.",
-      "confidence": 0.55,
+      "confidence": 0.5722200000000001,
       "speakers": [
         {
           "name": "Hjörtur J. Guðmundsson",
@@ -878,13 +878,13 @@
       "attribution_type": "asserted",
       "claim_count": 15,
       "verdicts": {
-        "partially_supported": 11,
-        "supported": 4
+        "partially_supported": 13,
+        "supported": 2
       },
       "stance": "anti_eu",
       "slug": "hjortur-j-gudmundsson",
-      "mention_count": 18,
-      "credibility": 0.66
+      "mention_count": 20,
+      "credibility": 0.58
     },
     {
       "name": "Þorgerður Katrín Gunnarsdóttir",
@@ -899,8 +899,8 @@
       },
       "stance": "pro_eu",
       "slug": "thorgerdur-katrin-gunnarsdottir",
-      "mention_count": 69,
-      "credibility": 0.65,
+      "mention_count": 74,
+      "credibility": 0.62,
       "speech_count": 197
     }
   ]

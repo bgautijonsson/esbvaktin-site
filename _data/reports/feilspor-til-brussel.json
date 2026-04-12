@@ -11,8 +11,8 @@
   "capsule": "Þjóðaratkvæðagreiðslutillagan um ESB-aðild var lögð fram 6. mars 2026, og rök ráðherra hafa einkum snúist um öryggis- og varnarmál í kjölfar yfirlýsinga Donalds Trump. Áhugavert er þó að 23 af 32 NATO-ríkjum eru jafnframt ESB-meðlimir — þar á meðal nánu bandalagsríki Bandaríkjanna eins og Frakkland og Þýskaland — án þess að það skapi hagsmunaárekstra í varnarmálum. Það samhengi er vert að hafa í huga þegar tengsl NATO-aðildar og ESB-aðildar eru til umræðu.",
   "verdict_counts": {
     "unverifiable": 2,
-    "supported": 2,
-    "partially_supported": 5
+    "partially_supported": 6,
+    "supported": 1
   },
   "epistemic_counts": null,
   "claim_count": 9,
@@ -91,28 +91,18 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/\" title=\"Althingi — Ministers registry, session 157\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-003</a> staðfestir að ríkisstjórnin var skipuð 21. desember 2024 og að Þorgerður Katrín Gunnarsdóttir (Viðreisn) gegnir embætti utanríkisráðherra. <a href=\"https://www.althingi.is/thingmenn/althingismannatal/leit-i-althingismannatali/\" title=\"Althingi — Member directory; Government of Iceland cabinet listing\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-012</a> staðfestir einnig að hún gegnir embættinu í ríkisstjórninni sem mynduð var «seint á árinu 2024». Dagsetningin samræmist þessum heimildum.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/\" title=\"Althingi — Ministers registry, session 157\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-003</a> staðfestir að Þorgerður Katrín Gunnarsdóttir gegnir embætti utanríkisráðherra og að ríkisstjórnin tók við 21. desember 2024. Heimildin segir hins vegar einnig að ráðaneytaskipan hafi tekið breytingum tvisvar síðan — og fullyrðingin tilgreinir einungis skipunardaginn án þess samhengis. Grundvallaratriðið — að hún hafi orðið utanríkisráðherra þennan dag — er stutt, en fyrirvari um síðari ráðherrabreytingar er til staðar.",
       "supporting_evidence": [
         {
           "id": "POLITICAL-DATA-003",
           "source_name": "Althingi — Ministers registry, session 157",
           "source_url": "https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/"
-        },
-        {
-          "id": "POLITICAL-DATA-012",
-          "source_name": "Althingi — Member directory; Government of Iceland cabinet listing",
-          "source_url": "https://www.althingi.is/thingmenn/althingismannatal/leit-i-althingismannatali/"
-        },
-        {
-          "id": "POLITICAL-DATA-004",
-          "source_name": "Althingi — Session 157; Viðreisn party platform",
-          "source_url": "https://www.althingi.is/thingmenn/thingflokkar/vidreisn/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": null,
-      "confidence": 0.855,
+      "missing_context": "Heimildin nefnir tvær ráðherraskiptingar síðan ríkisstjórnin tók við (mars 2025 og janúar 2026), þótt þær hafi ekki snert embætti utanríkisráðherra. Fullyrðingin er í raun rétt en einföld staðhæfing sem vantar samhengi um ríkisstjórnarmyndunina.",
+      "confidence": 0.82,
       "speakers": [
         {
           "name": "Þorgerður Katrín Gunnarsdóttir",
@@ -465,8 +455,8 @@
       },
       "stance": "pro_eu",
       "slug": "thorgerdur-katrin-gunnarsdottir",
-      "mention_count": 69,
-      "credibility": 0.65,
+      "mention_count": 74,
+      "credibility": 0.62,
       "speech_count": 197
     }
   ]

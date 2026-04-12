@@ -2,17 +2,291 @@
   "slug": "asgeir-jonsson",
   "name": "Ásgeir Jónsson",
   "type": "individual",
-  "description": "Seðlabankastjóri Íslands — hlutlaus um ESB-aðild.",
+  "description": "Seðlabankastjóri Íslands",
   "role": "seðlabankastjóri Íslands",
   "party": null,
-  "stance": "neutral",
+  "stance": "insufficient_data",
   "stance_score": 0.0,
-  "credibility": null,
+  "credibility": 0.69,
   "attribution_counts": {
+    "quoted": 8,
+    "paraphrased": 2,
     "mentioned": 1
   },
   "althingi_stats": null,
-  "scorecard": {},
-  "claims": [],
-  "articles": []
+  "scorecard": {
+    "partially_supported": 5,
+    "supported": 3
+  },
+  "claims": [
+    {
+      "claim_text": "Laun á Íslandi eru þau hæstu í Evrópu samkvæmt tölum Eurostat.",
+      "original_quote": "ætla megi að laun á Íslandi séu þau hæstu í heimi, í það minnsta þau hæstu í Evrópu samkvæmt tölum Eurostat",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://px.hagstofa.is/pxen/pxweb/en/Samfelag/Samfelag__launogtekjur__1_laun__1_laun/VIN02001.px\" title=\"Hagstofa Íslands — Wages and income; Eurostat — Structure of Earnings Survey\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-003</a> staðfestir að laun á Íslandi eru «meðal þeirra hæstu í Evrópu» og 15–20% yfir meðaltali ESB-27 að kaupmætti, sambærileg við Danmörku og Lúxemborg. Fullyrðingin segir hins vegar «þau hæstu» — ekki «meðal þeirra hæstu» — sem er tæknilega ónákvæmt þar sem Danmörk og Lúxemborg eru á svipuðum slóðum. Fyrra mat úr fullyrðingabanka fjallaði um verðlag (<a href=\"https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/\" title=\"Eurostat — Comparative price levels of consumer goods and services (prc_ppp_ind)\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-003</a>), en þessi fullyrðing snýst um laun, þar sem <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Samfelag/Samfelag__launogtekjur__1_laun__1_laun/VIN02001.px\" title=\"Hagstofa Íslands — Wages and income; Eurostat — Structure of Earnings Survey\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-003</a> er rétta heimildin.",
+      "missing_context": "Kaupmáttur ræður mestu: hátt verðlag á Íslandi (um 50% yfir ESB-meðaltali samkvæmt <a href=\"https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/\" title=\"Eurostat — Comparative price levels of consumer goods and services (prc_ppp_ind)\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-003</a>) étur verulegan hluta launaforskotins. Samanburður á launum í evrum er óáreiðanlegur á stuttum tímabilum vegna gengissveiflna krónunnar. Danmörk og Lúxemborg eru á svipuðu stigi og Ísland samkvæmt Eurostat.",
+      "supporting_evidence": [
+        {
+          "id": "LABOUR-DATA-003",
+          "source_name": "Hagstofa Íslands — Wages and income; Eurostat — Structure of Earnings Survey",
+          "source_url": "https://px.hagstofa.is/pxen/pxweb/en/Samfelag/Samfelag__launogtekjur__1_laun__1_laun/VIN02001.px"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "labour",
+      "attribution": "quoted",
+      "article_slug": "haetta-a-sarsaukafullri-adlogun-an-breytts-models",
+      "article_title": "Hætta á sársaukafullri aðlögun án breytts módels",
+      "article_source": "Viðskiptablaðið",
+      "article_date": "2026-04-09"
+    },
+    {
+      "claim_text": "Evrópusambandið tekur ekki ábyrgð á efnahagsmálum aðildarlanda — íslensk efnahagsmál verða alltaf á ábyrgð Íslendinga.",
+      "original_quote": "Evrópusambandið tekur ekki ábyrgð á efnahagsmálum aðildarlanda. Íslensk efnahagsmál eru og verða alltaf á okkar eigin ábyrgð.",
+      "verdict": "partially_supported",
+      "explanation": "Rétt er að aðildarríki ESB bera ábyrgð á eigin fjármálastefnu og fullyrðingin á sér stoð að hluta. Hins vegar er hún of víð. <a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a> staðfestir að ESB-aðild myndi flytja viðskiptastefnu til ESB (einkaréttarvald samkvæmt 207. gr. TFEU). <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> sýnir að ESB-aðild nær til peningastefnu (evruupptaka), tollasambands og sameiginlegrar utanríkisstefnu — allt efnahagslega mikilvæg svið. Auk þess setja stöðugleika- og vaxtarsáttmálinn og Maastricht-skilyrðin skorður á fjárlög aðildarríkja.",
+      "missing_context": "ESB-aðild felur í sér yfirfærslu peningastefnuvalds til Seðlabanka Evrópu (evruupptaka), aðild að tollasambandi og sameiginlegri viðskiptastefnu, og bindandi ríkisfjármálareglur (halli undir 3% af VLF, skuldir undir 60%). Þótt ríki beri formlega ábyrgð á eigin fjárlögum eru svigrúm þeirra takmörkuð af reglum ESB. Fullyrðingin sleppur þessum veigamiklu takmörkunum.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-022",
+          "source_name": "EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'",
+          "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
+        },
+        {
+          "id": "EEA-LEGAL-008",
+          "source_name": "EEA Agreement, Articles 8 and 17–26; Protocols 1 and 47",
+          "source_url": "https://www.efta.int/eea/eea-agreement"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "SOV-LEGAL-032",
+          "source_name": "TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview",
+          "source_url": "https://www.efta.int/free-trade/free-trade-agreements"
+        },
+        {
+          "id": "EEA-LEGAL-002",
+          "source_name": "EEA Agreement, Articles 99–101",
+          "source_url": "https://www.efta.int/eea/eea-agreement"
+        }
+      ],
+      "category": "sovereignty",
+      "attribution": "quoted",
+      "article_slug": "haetta-a-sarsaukafullri-adlogun-an-breytts-models",
+      "article_title": "Hætta á sársaukafullri aðlögun án breytts módels",
+      "article_source": "Viðskiptablaðið",
+      "article_date": "2026-04-09"
+    },
+    {
+      "claim_text": "Samkvæmt ERM-II ferlinu verða ný aðildarríki ESB að sýna með óyggjandi hætti fram á að þau geti haldið þjóðhagslegu jafnvægi áður en þau taka upp evru.",
+      "original_quote": "Strangar reglur gildi um upptöku evru samkvæmt hinu svo kallaða ERM-II ferli þar sem ný aðildarríki verða að sýna með óyggjandi hætti fram á að þau geti haldið þjóðhagslegu jafnvægi.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en\" title=\"European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators\" target=\"_blank\" rel=\"noopener\">CURR-DATA-005</a> staðfestir Maastricht-skilyrðin: verðbólga, vextir, fjárlagahalli, skuldir og gengisstöðugleiki (ERM II í a.m.k. tvö ár). <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014\" title=\"Treaty on the Functioning of the European Union, Article 140\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-004</a> vísar beint í 140. grein TFEU sem kveður á um þessi skilyrði. <a href=\"https://www.visindavefur.is/svar.php?id=87971\" title=\"Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (March 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-011</a> staðfestir einnig kröfuna og bendir á löng aðlögunartímabil í reynd — Króatía 10 ár, Búlgaría 19 ár. Kjarni fullyrðingarinnar er réttur: strangar reglur gilda og ríki verða að uppfylla samanburðarskilyrði áður en evra er tekin upp.",
+      "missing_context": "Þótt skilyrðin séu ströng er framfylgdin sveigjanleg. Svíþjóð hefur forðast evruupptöku frá 2003 með því að ganga ekki í ERM II, án refsinga (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014\" title=\"Treaty on the Functioning of the European Union, Article 140\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-004</a>). Tímalínan er á valdi hvers ríkis — engin tímamörk eru sett. Ísland uppfyllir nú ríkisfjármálaskilyrðin (halli ~1%, skuldir ~65%) en ekki verðbólgu- eða vaxtaskilyrðin (<a href=\"https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en\" title=\"European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators\" target=\"_blank\" rel=\"noopener\">CURR-DATA-005</a>).",
+      "supporting_evidence": [
+        {
+          "id": "CURR-DATA-005",
+          "source_name": "European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators",
+          "source_url": "https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en"
+        },
+        {
+          "id": "SOV-LEGAL-004",
+          "source_name": "Treaty on the Functioning of the European Union, Article 140",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014"
+        },
+        {
+          "id": "CURR-DATA-011",
+          "source_name": "Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (March 2026)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=87971"
+        },
+        {
+          "id": "CURR-DATA-017",
+          "source_name": "Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=60635"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "currency",
+      "attribution": "paraphrased",
+      "article_slug": "haetta-a-sarsaukafullri-adlogun-an-breytts-models",
+      "article_title": "Hætta á sársaukafullri aðlögun án breytts módels",
+      "article_source": "Viðskiptablaðið",
+      "article_date": "2026-04-09"
+    },
+    {
+      "claim_text": "Ef Ísland tæki upp evru og íslenskar launahækkanir héldu áfram umfram það sem gerist hjá öðrum þjóðum, myndi það leiða til mjög alvarlegra efnahagserfiðleika og sársaukafullrar aðlögunar.",
+      "original_quote": "ef evran yrði gjaldmiðill hér í kjölfar aðildar að Evrópusambandinu og Íslendingar héldu uppteknum hætti við að hækka laun sín umfram það sem þekkist hjá öðrum þjóðum, þá myndi það leiða til mjög alvarlegra efnahagserfiðleika og sársaukafullrar aðlögunar",
+      "verdict": "supported",
+      "explanation": "Rökfærslan byggir á viðurkenndum hagfræðikenningum um bestu gjaldmiðlasvæði. <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> staðfestir að evruupptaka myndi flytja peningastefnuvald til Seðlabanka Evrópu — Ísland gæti ekki lengur brugðist við samkeppnishæfnisvanda með gengislækkun. <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Samfelag/Samfelag__vinnumarkadur__vinnumarkadsrannsokn__3_arstolur/VIN00901.px\" title=\"Hagstofa Íslands — Labour Force Survey; Eurostat — Unemployment statistics\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-004</a> bendir á að gengislækkun krónunnar hafi flýtt bata eftir 2008-kreppuna, hraðar en í flestum ESB-ríkjum. <a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=IS\" title=\"World Bank — GDP growth (annual %) (NY.GDP.MKTP.KD.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-014</a> sýnir mikla sveiflu í hagvexti Íslands, sem undirstrikar þörfina á aðlögunartækjum. Fordæmi frá Grikklandi, Spáni og Írlandi 2009–2014 staðfesta þessa niðurstöðu — launahækkanir umfram framleiðnivöxt leiddu til kreppu þegar gengisaðlögun var ekki möguleg.",
+      "missing_context": "Tímalína evruupptöku er löng og óviss (<a href=\"https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en\" title=\"European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators\" target=\"_blank\" rel=\"noopener\">CURR-DATA-005</a>, <a href=\"https://www.visindavefur.is/svar.php?id=87971\" title=\"Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (March 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-011</a>). Ísland hefur einstakt kjarasamningskerfi með 90% stéttarfélagsaðild (<a href=\"https://data-explorer.oecd.org/vis?df%5Bds%5D=DisseminateFinalDMZ&df%5Bid%5D=DSD_TUD_CBC@DF_TUD&df%5Bag%5D=OECD.ELS.SAE\" title=\"OECD — Trade Union Density (OECD.Stat); ILO — Global Wage Report 2024/25\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-013</a>) og miðstýrðum samningum — annað kerfi en í Suður-Evrópu. Hvort launaþróun myndi breytast vegna breyttra hvata við evruupptöku er óvíst. Fullyrðingin gerir ráð fyrir «hélt áfram» — sem er sjálft forsenda sem ekki er sjálfgefin.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-LEGAL-005",
+          "source_name": "Central Bank of Iceland — Monetary policy framework",
+          "source_url": "https://sedlabanki.is/peningastefna/"
+        },
+        {
+          "id": "LABOUR-DATA-004",
+          "source_name": "Hagstofa Íslands — Labour Force Survey; Eurostat — Unemployment statistics",
+          "source_url": "https://px.hagstofa.is/pxen/pxweb/en/Samfelag/Samfelag__vinnumarkadur__vinnumarkadsrannsokn__3_arstolur/VIN00901.px"
+        },
+        {
+          "id": "CURRENCY-DATA-014",
+          "source_name": "World Bank — GDP growth (annual %) (NY.GDP.MKTP.KD.ZG)",
+          "source_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=IS"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "currency",
+      "attribution": "quoted",
+      "article_slug": "haetta-a-sarsaukafullri-adlogun-an-breytts-models",
+      "article_title": "Hætta á sársaukafullri aðlögun án breytts módels",
+      "article_source": "Viðskiptablaðið",
+      "article_date": "2026-04-09"
+    },
+    {
+      "claim_text": "Vandamál á íslenskum vinnumarkaði leysast ekki sjálfkrafa við breytingar í gjaldeyrismálum.",
+      "original_quote": "Hann sagði vandamál á íslenskum vinnumarkaði leysast ekki sjálfkrafa við breytingar í gjaldeyrismálum.",
+      "verdict": "supported",
+      "explanation": "Heimildir staðfesta þessa fullyrðingu frá fleiri en einu sjónarhorni. <a href=\"https://vinnurettur.asi.is/vinnurettarvefur/vinnurettur/icelandic-labour-law/\" title=\"ASÍ — Collective agreements overview; European Commission — Employment acquis\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-005</a> sýnir að séríslensk vinnumarkaðseinkenni — 90% stéttarfélagsaðild, miðstýrðir kjarasamningar, ekkert lögbundið lágmarkslaun — eru óháð gjaldmiðli. <a href=\"https://island.is/en/o/directorate-of-labour\" title=\"Vinnumálastofnun (Directorate of Labour) — Skills shortage reports 2025; SA — Labour market surveys\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-007</a> bendir á viðvarandi skortssvæði (heilbrigðisþjónusta, byggingariðnaður, tæknigeirinn) sem tengjast uppbyggingu mannauðs, ekki gjaldmiðli. <a href=\"https://www.ela.europa.eu/\" title=\"European Labour Authority — Annual Report 2024; EU Directive 2005/36/EC on professional qualifications\" target=\"_blank\" rel=\"noopener\">HOUSING-ANALYSIS-001</a> staðfestir einnig að helstu hindranir (húsnæðiskostnaður, afskekkt lega, gengissveiflur) leysast ekki sjálfkrafa með ESB-aðild.",
+      "missing_context": "<a href=\"https://px.hagstofa.is/pxen/pxweb/en/Samfelag/Samfelag__vinnumarkadur__vinnumarkadsrannsokn__3_arstolur/VIN00901.px\" title=\"Hagstofa Íslands — Labour Force Survey; Eurostat — Unemployment statistics\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-004</a> bendir á að gengislækkun krónunnar hafi stutt við eftirspurn og dregið úr atvinnuleysi eftir kreppur — gjaldmiðilinn hefur þannig óbein áhrif á vinnumarkað, þótt hann «leysi» ekki undirliggjandi vandamál. <a href=\"https://www.visindavefur.is/svar.php?id=88538\" title=\"Vísindavefurinn — Margrét Einarsdóttir, Professor, Law Faculty, University of Iceland (March 2026)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-029</a> sýnir dæmi um Ísland sem herðir reglur umfram ESB-kröfur, sem bendir til þess að stjórnmálalegar ákvarðanir, ekki gjaldmiðill, ráði mestu um regluumhverfið.",
+      "supporting_evidence": [
+        {
+          "id": "LABOUR-DATA-005",
+          "source_name": "ASÍ — Collective agreements overview; European Commission — Employment acquis",
+          "source_url": "https://vinnurettur.asi.is/vinnurettarvefur/vinnurettur/icelandic-labour-law/"
+        },
+        {
+          "id": "LABOUR-DATA-007",
+          "source_name": "Vinnumálastofnun (Directorate of Labour) — Skills shortage reports 2025; SA — Labour market surveys",
+          "source_url": "https://island.is/en/o/directorate-of-labour"
+        },
+        {
+          "id": "HOUSING-ANALYSIS-001",
+          "source_name": "European Labour Authority — Annual Report 2024; EU Directive 2005/36/EC on professional qualifications",
+          "source_url": "https://www.ela.europa.eu/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "labour",
+      "attribution": "paraphrased",
+      "article_slug": "haetta-a-sarsaukafullri-adlogun-an-breytts-models",
+      "article_title": "Hætta á sársaukafullri aðlögun án breytts módels",
+      "article_source": "Viðskiptablaðið",
+      "article_date": "2026-04-09"
+    },
+    {
+      "claim_text": "Ef Ísland gengi í ESB og tæki upp evru myndi það vera mjög brýnt verkefni að tryggja aga og sveigjanleika á vinnumarkaði, þ.m.t. möguleika á að lækka nafnlaun sem viðbragð við atvinnuleysi.",
+      "original_quote": "Það verður a.m.k. mjög brýnt verkefni að tryggja aga og sveigjanleika á vinnumarkaði þegar sjálfstæð peningastefna hverfur út úr myndinni, svo sem að hægt verði að lækka nafnlaun sem viðbragð við atvinnuleysi.",
+      "verdict": "partially_supported",
+      "explanation": "Fyrri hluti fullyrðingarinnar — um þörf á auknum sveigjanleika án sjálfstæðrar peningastefnu — er vel studdur af hagfræðikenningum og heimildum. <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> staðfestir yfirfærslu peningastefnuvalds og <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Samfelag/Samfelag__vinnumarkadur__vinnumarkadsrannsokn__3_arstolur/VIN00901.px\" title=\"Hagstofa Íslands — Labour Force Survey; Eurostat — Unemployment statistics\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-004</a> sýnir mikilvægi gengislækkunar sem aðlögunartækis. Seinni hlutinn — um nafnlaunalækkanir sem viðbragð við atvinnuleysi — er hins vegar afar umdeildur og gengur lengra en heimildir styðja. <a href=\"https://data-explorer.oecd.org/vis?df%5Bds%5D=DisseminateFinalDMZ&df%5Bid%5D=DSD_TUD_CBC@DF_TUD&df%5Bag%5D=OECD.ELS.SAE\" title=\"OECD — Trade Union Density (OECD.Stat); ILO — Global Wage Report 2024/25\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-013</a> sýnir 90% stéttarfélagsaðild og <a href=\"https://asi.is/thing2024/\" title=\"ASÍ — Executive board minutes and public statements; ASÍ annual congress 2024\" target=\"_blank\" rel=\"noopener\">POL-DATA-013</a> undirstrikar verndun kjarasamningskerfisins. Nafnlaunalækkun er í reynd næstum óþekkt á Norðurlöndum, jafnvel á evrusvæðinu.",
+      "missing_context": "Kjarasamningskerfi Íslands með nær 100% kjarasamningsþekju (<a href=\"https://data-explorer.oecd.org/vis?df%5Bds%5D=DisseminateFinalDMZ&df%5Bid%5D=DSD_TUD_CBC@DF_TUD&df%5Bag%5D=OECD.ELS.SAE\" title=\"OECD — Trade Union Density (OECD.Stat); ILO — Global Wage Report 2024/25\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-013</a>) gerir nafnlaunalækkanir í reynd ómögulegar nema með samkomulagi stéttarfélaga. Fordæmi Norðurlandanna á evrusvæðinu (Finnland) sýna að launasamningar halda áfram í hefðbundnum farvegi þrátt fyrir evruaðild. Aðlögun hefur í evruríkjum frekar komið fram sem launastöðnun (e. wage moderation) en bein nafnlaunalækkun, nema í alvarlegum krepputilvikum eins og í Grikklandi.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-LEGAL-005",
+          "source_name": "Central Bank of Iceland — Monetary policy framework",
+          "source_url": "https://sedlabanki.is/peningastefna/"
+        },
+        {
+          "id": "LABOUR-DATA-004",
+          "source_name": "Hagstofa Íslands — Labour Force Survey; Eurostat — Unemployment statistics",
+          "source_url": "https://px.hagstofa.is/pxen/pxweb/en/Samfelag/Samfelag__vinnumarkadur__vinnumarkadsrannsokn__3_arstolur/VIN00901.px"
+        },
+        {
+          "id": "LABOUR-DATA-005",
+          "source_name": "ASÍ — Collective agreements overview; European Commission — Employment acquis",
+          "source_url": "https://vinnurettur.asi.is/vinnurettarvefur/vinnurettur/icelandic-labour-law/"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "LABOUR-DATA-013",
+          "source_name": "OECD — Trade Union Density (OECD.Stat); ILO — Global Wage Report 2024/25",
+          "source_url": "https://data-explorer.oecd.org/vis?df%5Bds%5D=DisseminateFinalDMZ&df%5Bid%5D=DSD_TUD_CBC@DF_TUD&df%5Bag%5D=OECD.ELS.SAE"
+        },
+        {
+          "id": "POL-DATA-013",
+          "source_name": "ASÍ — Executive board minutes and public statements; ASÍ annual congress 2024",
+          "source_url": "https://asi.is/thing2024/"
+        }
+      ],
+      "category": "labour",
+      "attribution": "quoted",
+      "article_slug": "haetta-a-sarsaukafullri-adlogun-an-breytts-models",
+      "article_title": "Hætta á sársaukafullri aðlögun án breytts módels",
+      "article_source": "Viðskiptablaðið",
+      "article_date": "2026-04-09"
+    },
+    {
+      "claim_text": "Fyrirheitið um evruuppöku í kjölfar ESB-aðildar gæti mögulega skapað nægilegan hvata til þess að Íslendingar tækju á séríslenska verðbólguvanda.",
+      "original_quote": "Mögulega má færa rök fyrir því að fyrirheitið um upptöku evru í kjölfar aðildar að Evrópusambandinu muni skapa nægilega hvata eða nægjanlegan alvarleika til þess að Íslendingar taki á sínum málum.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.visindavefur.is/svar.php?id=60635\" title=\"Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-017</a> styður grunnröksemdina: Maastricht-skilyrðin myndu kalla á aukinn aga í ríkisfjármálum og verðstöðugleika, og verðbólgulækkun kæmi fyrst og fremst af agakröfum, ekki gjaldmiðlinum sjálfum. Þetta er viðurkennd hagfræðileg röksemd um «aga gegnum skuldbindingu» (e. commitment device). Fullyrðingin er þó gædd eigin fyrirvara — «mögulega» — og heimildir benda til misgengis í framkvæmd. <a href=\"https://www.visindavefur.is/svar.php?id=87971\" title=\"Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (March 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-011</a> sýnir að Búlgaría þurfti 19 ár frá aðild til evruupptöku, og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014\" title=\"Treaty on the Functioning of the European Union, Article 140\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-004</a> bendir á að Svíþjóð hefur komist hjá evrunni ótímabundið.",
+      "missing_context": "<a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — EU polls cross-referenced with Hagstofa consumer confidence index\" target=\"_blank\" rel=\"noopener\">POLL-DATA-009</a> sýnir að ESB-stuðningur á Íslandi eykst í efnahagskreppu en dvínar í góðæri — sem bendir til þess að «hvatinn» sé háður efnahagsástandi hverju sinni. ERM II-tímabilið (a.m.k. tvö ár með hálfföstu gengi) skapar viðkvæmt aðlögunarskeið þar sem íslenska krónan yrði útsett fyrir spákaupmennsku (<a href=\"https://www.visindavefur.is/svar.php?id=60635\" title=\"Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-017</a>). Reynsla Suður-Evrópu sýnir að «aginn» virkaði ekki nægilega vel til að koma í veg fyrir ósjálfbæra þróun jafnvel innan evrusvæðisins.",
+      "supporting_evidence": [
+        {
+          "id": "CURR-DATA-017",
+          "source_name": "Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=60635"
+        },
+        {
+          "id": "CURR-DATA-011",
+          "source_name": "Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (March 2026)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=87971"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "SOV-LEGAL-004",
+          "source_name": "Treaty on the Functioning of the European Union, Article 140",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014"
+        }
+      ],
+      "category": "currency",
+      "attribution": "quoted",
+      "article_slug": "haetta-a-sarsaukafullri-adlogun-an-breytts-models",
+      "article_title": "Hætta á sársaukafullri aðlögun án breytts módels",
+      "article_source": "Viðskiptablaðið",
+      "article_date": "2026-04-09"
+    },
+    {
+      "claim_text": "Lausnin á núverandi stöðu Íslands, þ.e. vaxandi verðbólgu, háu olíuverði og vaxandi atvinnuleysi, liggur í samhæfðu átaki Seðlabankans, vinnumarkaðarins og stjórnvalda.",
+      "original_quote": "lausnin á núverandi stöðu, þ.e. vaxandi verðbólgu, háu olíuverði og vaxandi atvinnuleysi, liggur í samhæfðu átaki Seðlabankans, vinnumarkaðarins og stjórnvalda",
+      "verdict": "partially_supported",
+      "explanation": "Hugmyndin um samhæfingu peningastefnu, fjármálastefnu og vinnumarkaðar er viðurkennd í hagfræði og heimildir styðja hana að hluta. <a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a> sýnir að Seðlabankinn hefur brugðist við verðbólgu með vaxtahækkunum (7,50% í mars 2026), en verðbólga helst þrálátt yfir 5%. <a href=\"https://www.government.is/topics/economic-affairs-and-economic-outlook/\" title=\"Fjármála- og efnahagsráðuneytið — Ríkisfjármál; Moody's, S&P, Fitch sovereign ratings for Iceland\" target=\"_blank\" rel=\"noopener\">SOV-DATA-013</a> sýnir framfarir í ríkisfjármálum (skuldir úr 95% í 65% af VLF). Fullyrðingin er þó almenn og nefnir aðeins innlend tæki — hún sleppur þeim þáttum sem liggja utan íslensks valds, eins og alþjóðlegu olíuverði og innfluttu verðlagi.",
+      "missing_context": "Verðbólga á Íslandi er 5,2% (mars 2026) þrátt fyrir háa stýrivexti (7,50%), sem bendir til þess að peningastefna ein og sér nægi ekki (<a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a>). Hátt olíuverð er ytri þáttur sem innlent samhæft átak getur ekki breytt beint. Fullyrðingin er sett fram sem svar við þeirri spurningu hvort ESB-aðild leysi vandann — en heimildir styðja ekki mat á hvort innlent átak sé nægilegt eða hvort evra myndi bæta ástandið.",
+      "supporting_evidence": [
+        {
+          "id": "CURRENCY-DATA-017",
+          "source_name": "Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar",
+          "source_url": "https://www.sedlabanki.is/peningastefna/vaxtaakvardir/"
+        },
+        {
+          "id": "SOV-DATA-013",
+          "source_name": "Fjármála- og efnahagsráðuneytið — Ríkisfjármál; Moody's, S&P, Fitch sovereign ratings for Iceland",
+          "source_url": "https://www.government.is/topics/economic-affairs-and-economic-outlook/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "currency",
+      "attribution": "quoted",
+      "article_slug": "haetta-a-sarsaukafullri-adlogun-an-breytts-models",
+      "article_title": "Hætta á sársaukafullri aðlögun án breytts módels",
+      "article_source": "Viðskiptablaðið",
+      "article_date": "2026-04-09"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "haetta-a-sarsaukafullri-adlogun-an-breytts-models",
+      "title": "Hætta á sársaukafullri aðlögun án breytts módels",
+      "source": "Viðskiptablaðið",
+      "date": "2026-04-09",
+      "claim_count": 8,
+      "attribution_types": [
+        "paraphrased",
+        "quoted"
+      ]
+    }
+  ]
 }

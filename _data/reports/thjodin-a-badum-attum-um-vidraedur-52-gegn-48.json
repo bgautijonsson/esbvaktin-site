@@ -10,9 +10,9 @@
   "summary": "Greindar 21 fullyrðingar .",
   "capsule": "Könnunin staðfestir 52/48 skiptingu um framhald aðildarviðræðna og 57% eru hlynnt þjóðaratkvæðagreiðslu um málið — tölur sem standa á traustum grunni. Athyglisvert er þó að stuðningur við ESB-aðild sjálfa er lægri: um 42% gegn 42% samkvæmt sömu könnun, sem þýðir að um 10% kjósenda vilja halda viðræðum áfram án þess að vera skuldbundnir aðild. Þessi greinarmunur — milli stuðnings við viðræður og stuðnings við aðild — er gagnleg vísbending þegar við reynum að skilja hvar þjóðin stendur.",
   "verdict_counts": {
-    "supported": 17,
-    "unsupported": 1,
-    "partially_supported": 3
+    "supported": 12,
+    "partially_supported": 8,
+    "unsupported": 1
   },
   "epistemic_counts": null,
   "claim_count": 21,
@@ -149,18 +149,23 @@
         "confidence": 0.88,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "POLL-DATA-007 gefur til kynna að um 12% svarenda hafi verið hlutlaus eða óákveðin. Þetta samræmist fullyrðingunni. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup hf. — Þjóðarpúls; Vísir\" target=\"_blank\" rel=\"noopener\">POLL-DATA-020</a> nefnir svípaða tölu, um 10%, sem er nálægt en ekki alveg eins.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin segir að 12% landsmanna séu hvorki hlynnt né andvíg þjóðaratkvæðagreiðslu um framhald aðildarviðræðna. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-017</a> sýnir að um 12% voru hlutlaus eða óákveðin um hvort halda eigi þjóðaratkvæðagreiðslu, en tölurnar í <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — Þjóðarpúls, February–March 2026\" target=\"_blank\" rel=\"noopener\">POLL-DATA-014</a> gefa til kynna um 13% óákveðna þegar horft er á sömu spurningu. Hlutfallið er nálægt en ekki nákvæmlega 12% í öllum heimildum — og <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-017</a> bendir á að 42,7% svarhlutfall og netpanelrannsókn geti skekkt niðurstöður.",
       "supporting_evidence": [
         {
           "id": "POLL-DATA-017",
           "source_name": "Gallup Iceland / Þjóðarpúls",
           "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+        },
+        {
+          "id": "POLL-DATA-014",
+          "source_name": "Gallup Ísland — Þjóðarpúls, February–March 2026",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "<a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — Þjóðarpúls, February–March 2026\" target=\"_blank\" rel=\"noopener\">POLL-DATA-014</a> sýnir að þá óákveðnu eru um 16% þegar spurt er um ESB-aðild sjálfa, fremur en um aðildarviðræður. Hlutfall óákveðinna veltur á orðalagi spurningarinnar.",
-      "confidence": 0.88,
+      "missing_context": "Mikilvægt er að greina á milli tveggja ólíkra spurninga: stuðningur við þjóðaratkvæðagreiðslu annars vegar (57% hlynnt, ~30% andvíg, ~12% hlutlaus) og afstaða til ESB-aðildar hins vegar (42/42/16). Samkvæmt <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-017</a> getur svarhlutfall (42,7%) og netpanel leitt til ofmats á stuðningi. Tölur eru í kringum 12-13% en ekki nákvæmlega 12%.",
+      "confidence": 0.78,
       "speakers": [
         {
           "name": "Ritstjórn mbl.is",
@@ -247,23 +252,23 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "POLL-DATA-008 staðfestir að íbúar Höfuðborgarsvæðisins voru hlynntari en þeir á landsbyggðinni. <a href=\"https://fel.hi.is/is/utgefid-efni/thjodmalakonnun\" title=\"Félagsvísindastofnun Háskóla Íslands — Social Science Research Institute\" target=\"_blank\" rel=\"noopener\">POLL-DATA-002</a> styður þetta enn frekar — um 50% borgarbúa styðja ESB-aðild borið saman við um 45% andstöðu meðal íbúa dreifbýla.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.gallup.is/frettir/nyr-thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-018</a> staðfestir að íbúar höfuðborgarsvæðisins séu hlynntari framhaldi viðræðna en íbúar landsbyggðarinnar. <a href=\"https://fel.hi.is/is/utgefid-efni/thjodmalakonnun\" title=\"Félagsvísindastofnun Háskóla Íslands — Social Science Research Institute\" target=\"_blank\" rel=\"noopener\">POLL-DATA-002</a> styður þetta enn frekar og sýnir um 50% stuðning á höfuðborgarsvæðinu á móti um 55% andstöðu á landsbyggðinni. Fullyrðingin segir hins vegar «hlynntir þjóðaratkvæðagreiðslu» en heimildir fjalla um stuðning við framhald aðildarviðræðna — ekki hvort halda eigi þjóðaratkvæðagreiðslu sem slíka. Þetta gildissviðsmisræmi dregur úr nákvæmni fullyrðingarinnar.",
       "supporting_evidence": [
-        {
-          "id": "POLL-DATA-002",
-          "source_name": "Félagsvísindastofnun Háskóla Íslands — Social Science Research Institute",
-          "source_url": "https://fel.hi.is/is/utgefid-efni/thjodmalakonnun"
-        },
         {
           "id": "POLL-DATA-018",
           "source_name": "Gallup Iceland / Þjóðarpúls",
           "source_url": "https://www.gallup.is/frettir/nyr-thjodarpuls/"
+        },
+        {
+          "id": "POLL-DATA-002",
+          "source_name": "Félagsvísindastofnun Háskóla Íslands — Social Science Research Institute",
+          "source_url": "https://fel.hi.is/is/utgefid-efni/thjodmalakonnun"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Nákvæm prósentutöluskipting milli höfuðborgarsvæðis og landsbyggðar er ekki birt í opinberri samantekt þjóðarpúls-könnunarinnar, þannig að nákvæmni samanburðarins er óvís.",
-      "confidence": 0.9,
+      "missing_context": "Heimildir greina á milli stuðnings við þjóðaratkvæðagreiðslu og stuðnings við framhald viðræðna — fullyrðingin blandar saman þessum tveimur spurningum. Auk þess eru undirflokkar í könnunum með þröngra skekkjumörkum vegna fámennis Íslands, sem eykur óvissu um nákvæm hlutföll eftir búsetu.",
+      "confidence": 0.78,
       "speakers": [
         {
           "name": "Ritstjórn mbl.is",
@@ -346,32 +351,27 @@
         "epistemic_type": "factual"
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://www.visir.is/g/20262853438d/thridjungur-and-vigur-at-kvaeda-greidslunni\" title=\"Gallup Ísland / Vísir — EU referendum survey, March 2026\" target=\"_blank\" rel=\"noopener\">POLL-DATA-016</a> staðfestir að kjósendur Viðreisnar eru mest hlynntir framhaldi aðildarviðræðna, og kjósendur Samfylkingarinnar koma þar á eftir. <a href=\"https://www.gallup.is/frettir/nato-og-esb/\" title=\"Gallup Ísland — EU support by party affiliation (November 2025)\" target=\"_blank\" rel=\"noopener\">POLL-DATA-011</a> sýnir sömu mynstur: um 90% kjósenda Viðreisnar og 75% kjósenda Samfýlkingarinnar styðja ESB-aðild.",
+      "explanation": "<a href=\"https://www.visir.is/g/20262853438d/thridjungur-and-vigur-at-kvaeda-greidslunni\" title=\"Gallup Ísland / Vísir — EU referendum survey, March 2026\" target=\"_blank\" rel=\"noopener\">POLL-DATA-016</a> staðfestir beint að kjósendur Viðreisnar séu hlynntastir framhaldi viðræðna, og kjósendur Samfylkingarinnar komi þar á eftir. <a href=\"https://www.gallup.is/frettir/nato-og-esb/\" title=\"Gallup Ísland — EU support by party affiliation (November 2025)\" target=\"_blank\" rel=\"noopener\">POLL-DATA-011</a> styður þetta með tölum: um 90% stuðningur meðal kjósenda Viðreisnar og um 75% meðal kjósenda Samfylkingarinnar við ESB-aðild. <a href=\"https://www.althingi.is/thingmenn/thingflokkar/thingflokkar/\" title=\"Althingi — Party platforms and election results\" target=\"_blank\" rel=\"noopener\">POL-DATA-001</a> staðfestir að þessir tveir flokkar séu formlega hlynntir ESB-aðild. Fullyrðingin er nákvæm og vel studd.",
       "supporting_evidence": [
-        {
-          "id": "POLL-DATA-011",
-          "source_name": "Gallup Ísland — EU support by party affiliation (November 2025)",
-          "source_url": "https://www.gallup.is/frettir/nato-og-esb/"
-        },
         {
           "id": "POLL-DATA-016",
           "source_name": "Gallup Ísland / Vísir — EU referendum survey, March 2026",
           "source_url": "https://www.visir.is/g/20262853438d/thridjungur-and-vigur-at-kvaeda-greidslunni"
         },
         {
-          "id": "POLL-DATA-018",
-          "source_name": "Gallup Iceland / Þjóðarpúls",
-          "source_url": "https://www.gallup.is/frettir/nyr-thjodarpuls/"
+          "id": "POLL-DATA-011",
+          "source_name": "Gallup Ísland — EU support by party affiliation (November 2025)",
+          "source_url": "https://www.gallup.is/frettir/nato-og-esb/"
         },
         {
-          "id": "POLL-DATA-020",
-          "source_name": "Gallup hf. — Þjóðarpúls; Vísir",
-          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+          "id": "POL-DATA-001",
+          "source_name": "Althingi — Party platforms and election results",
+          "source_url": "https://www.althingi.is/thingmenn/thingflokkar/thingflokkar/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Undirhópar eftir flokkum hafa víðari skekkjumörk vegna fámennra úrtökuhópa. Einnig mælir könnunin stuðning við framhald viðræðna, ekki ESB-aðild beinlínis.",
-      "confidence": 0.94,
+      "missing_context": "Undirflokkar eftir flokkum hafa víð skekkjumörk vegna lítilla úrtaka. Könnunin mælir stuðning við «framhald viðræðna» en ekki ESB-aðild sem slíka — fullyrðingin notar orðalagið «þjóðaratkvæðagreiðslu um framhald aðildarviðræðna» sem er hins vegar nákvæmt.",
+      "confidence": 0.9,
       "speakers": [
         {
           "name": "Ritstjórn mbl.is",
@@ -563,7 +563,7 @@
       ],
       "contradicting_evidence": [],
       "missing_context": "Bilið milli stuðnings við viðræður (~52%) og aðild (~42%) er um 10 prósentustig — verulegur hópur vill semja en er ekki skuldbundinn til aðildar. Könnunin var gerð á netpaneli Gallup (n≈810, svörunartíðni 42,7%) sem getur valdið skekkju gagnvart eldri og dreifbýlisíbúum. Tölur eru innan skekkjumarka og geta sveiflast í aðdraganda atkvæðagreiðslu.",
-      "confidence": 0.6839999999999999,
+      "confidence": 0.6497999999999999,
       "speakers": [
         {
           "name": "Ritstjórn mbl.is",
@@ -606,8 +606,8 @@
         "confidence": 0.93,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — Þjóðarpúls, February–March 2026\" target=\"_blank\" rel=\"noopener\">POLL-DATA-014</a> sýnir að 48% myndu kjósa á móti framhaldi aðildarviðræðna, sem samræmist fullyrðingunni. Bilin milli 52% og 48% er þf innan skekkjumarka könnunarinnar (±3,5 prósentustig samkvæmt <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup hf. — Þjóðarpúls; Vísir\" target=\"_blank\" rel=\"noopener\">POLL-DATA-019</a>).",
+      "verdict": "partially_supported",
+      "explanation": "Talan «tæplega 48%» finnst ekki í tiltækum heimildum. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — Þjóðarpúls, February–March 2026\" target=\"_blank\" rel=\"noopener\">POLL-DATA-014</a> og <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-017</a> sýna að 42% séu andvíg ESB-aðild og um 30% séu andvíg þjóðaratkvæðagreiðslunni. Á spurningu um atkvæðagreiðslu um framhald viðræðna er bilið á milli stuðnings og andstöðu nálægt — en 48% kemur hvergi fram. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Þjóðarpúls, February–March 2026; Capacent Gallup historical EU polling data (2009–2013)\" target=\"_blank\" rel=\"noopener\">POLL-DATA-021</a> útskýrir að bilið á milli stuðnings við viðræður og stuðnings við aðild er um 10 prósentustig, sem gæti skýrt mismunandi tölur eftir spurningaformi.",
       "supporting_evidence": [
         {
           "id": "POLL-DATA-014",
@@ -618,11 +618,16 @@
           "id": "POLL-DATA-017",
           "source_name": "Gallup Iceland / Þjóðarpúls",
           "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+        },
+        {
+          "id": "POLL-DATA-021",
+          "source_name": "Gallup Þjóðarpúls, February–March 2026; Capacent Gallup historical EU polling data (2009–2013)",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Skekkjumörk könnunarinnar eru um ±3,5 prósentustig við 95% öryggi. Þetta það er munurinn milli 52% og 48% er ekki tölfræðilega marktækur — niðurstaðan er í reynd jafntefli.",
-      "confidence": 0.93,
+      "missing_context": "Nánasta tala úr heimildum er 42% andvíg aðild, ekki 48%. Munurinn gæti stafað af mismunandi spurningaformi, öðru könnunarfyrirtæki eða nýrri könnun sem liggur ekki fyrir í heimildum. Netkannanir geta vanmetið eldri og dreifbýla kjósendur sem eru ESB-gagnrýnni. Óákveðnir kjósendur (~16%) gætu breytt myndinni ef þeir skipta sér.",
+      "confidence": 0.6782999999999999,
       "speakers": [
         {
           "name": "Ritstjórn mbl.is",
@@ -656,7 +661,7 @@
         "epistemic_type": "factual"
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://www.visir.is/g/20262853438d/thridjungur-and-vigur-at-kvaeda-greidslunni\" title=\"Gallup Ísland / Vísir — EU referendum survey, March 2026\" target=\"_blank\" rel=\"noopener\">POLL-DATA-015</a> staðfestir skýrt kynjabil: 62% kvenna styðja framhald aðildarviðræðna á móti 52% karla. Munurinn er um 10 prósentustig, sem er í samræmi við söguleg mynstur í íslenskum ESB-könnunum þar sem konur hafa stöðugt verið hlýnntari ESB-aðild um 10–15 prósentustig.",
+      "explanation": "<a href=\"https://www.visir.is/g/20262853438d/thridjungur-and-vigur-at-kvaeda-greidslunni\" title=\"Gallup Ísland / Vísir — EU referendum survey, March 2026\" target=\"_blank\" rel=\"noopener\">POLL-DATA-015</a> staðfestir verulegan kynjamun: 62% kvenna styðja framhald aðildarviðræðna á móti 52% karla, og aðeins 22% kvenna andvígar á móti 39% karla. Þetta er í samræmi við sögulegt mynstur þar sem konur hafa stöðugt verið jákvæðari gagnvart ESB um 10–15 prósentustig. <a href=\"https://www.gallup.is/frettir/nyr-thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-018</a> staðfestir einnig kynjamuninn sem eitt af helstu lýðfræðilegu mynstrum könnunarinnar.",
       "supporting_evidence": [
         {
           "id": "POLL-DATA-015",
@@ -670,8 +675,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Tölurnar mæla stuðning við framhald viðræðna, ekki ESB-aðild beinlínis. Kynjabilið við spurninguna um sjálfa aðildina getur verið öðruvísi. Undirhópar eftir kyni hafa um 400 svarendur hvorn, með víðari skekkjumörkum.",
-      "confidence": 0.94,
+      "missing_context": "Tölurnar eiga við um framhald viðræðna, ekki ESB-aðild sem slíka — kynjamunurinn á endanlegu aðildarspurningunni gæti verið annar. Undirúrtök eftir kyni hafa um 400 svarendur hvort og þar af leiðandi víðari skekkjumörk.",
+      "confidence": 0.88,
       "speakers": [
         {
           "name": "Ritstjórn mbl.is",
@@ -896,8 +901,8 @@
         "confidence": 0.92,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "POLL-DATA-008 staðfestir þetta beinlínis: \"nánast allir svarendur sem andmæla þjóðaratkvæðagreiðslunni myndu kjósa með því að hætta viðræðum ef kæmi til atkvæðagreiðslu.\" Þetta er röklæg niðurstaða: þeir sem vilja ekki halda atkvæðagreiðslu eru einnig andvígir efnisútkomu.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.gallup.is/frettir/nyr-thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-018</a> staðfestir að «nánast allir» sem eru andvígir þjóðaratkvæðagreiðslunni myndu kjósa gegn áframhaldandi viðræðum. Þetta er í samræmi við fullyrðinguna. Hins vegar nefna heimildir ekki nákvæmar prósentutölur til að staðfesta «nánast allir» á megindlegan hátt — <a href=\"https://www.gallup.is/frettir/nyr-thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-018</a> vísar til «nearly all» en sundurliðunin eftir lýðfræðilegum hópum er ekki birt. Fullyrðingin er studd af almennum niðurstöðum en skortir tölulega staðfestingu á «nánast allir».",
       "supporting_evidence": [
         {
           "id": "POLL-DATA-018",
@@ -906,8 +911,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Athyglisvert er að hið gagnstæða gildir ekki: verulegur hluti þeirra sem styðja þjóðaratkvæðagreiðsluna myndi engu að síður kjósa á móti framhaldi viðræðna. Stuðningur við lýðræðislegt ferli jafngildir því ekki stuðningi við þa niðurstöðu sem felið er bæð um.",
-      "confidence": 0.92,
+      "missing_context": "Heimildir nefna einnig að verulegur minnihluti þeirra sem styðja þjóðaratkvæðagreiðsluna myndi samt kjósa gegn framhaldi viðræðna — sem undirstrikar að stuðningur við lýðræðislegt ferli er ekki jafngildi stuðnings við niðurstöðuna. Nákvæmar prósentutölur eftir lýðfræðilegum hópum voru ekki birtar í opinberu samantektinni.",
+      "confidence": 0.72,
       "speakers": [
         {
           "name": "Ritstjórn mbl.is",
@@ -975,22 +980,22 @@
         "epistemic_type": "factual"
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup hf. — Þjóðarpúls; Vísir\" target=\"_blank\" rel=\"noopener\">POLL-DATA-019</a> staðfestir að Gallup Þjóðarpúls-könnunin var framkvæmd á netinu frá 19. febrúar til 4. mars 2026. POLL-DATA-007 og <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-017</a> staðfesta sömu dagsetningar. Fullyrðingin er rétt.",
+      "explanation": "<a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup hf. — Þjóðarpúls; Vísir\" target=\"_blank\" rel=\"noopener\">POLL-DATA-019</a> og <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-017</a> staðfesta báðar að Gallup Þjóðarpúls-könnunin fór fram á netinu á tímabilinu 19. febrúar til 4. mars 2026. Úrtakið var dregið úr netþátttökuhópi Gallup og 810 svöruðu af 1.898 sem fengu könnunina. Fullyrðingin er einföld staðreynd sem heimildir staðfesta beint.",
       "supporting_evidence": [
-        {
-          "id": "POLL-DATA-017",
-          "source_name": "Gallup Iceland / Þjóðarpúls",
-          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
-        },
         {
           "id": "POLL-DATA-019",
           "source_name": "Gallup hf. — Þjóðarpúls; Vísir",
           "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+        },
+        {
+          "id": "POLL-DATA-017",
+          "source_name": "Gallup Iceland / Þjóðarpúls",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Könnunin notaði sjálfsútfyllta netsnið með völdu úrtöku úr Gallup-sjálfboðalíðspjaldi. Sjálfboðalíðspjald gefur tilefni til sjálfsvalsínar skekkju þrátt fyrir vigunarleiðýréttingar.",
-      "confidence": 0.97,
+      "missing_context": "Svarhlutfall var 42,7% og aðferðafræðin var netkönnun eingöngu, sem getur vanmetið eldri hópa. Gallup beitti þyngdarstuðlum til leiðréttingar.",
+      "confidence": 0.95,
       "speakers": [
         {
           "name": "Ritstjórn mbl.is",
@@ -1073,22 +1078,27 @@
         "epistemic_type": "factual"
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup hf. — Þjóðarpúls; Vísir\" target=\"_blank\" rel=\"noopener\">POLL-DATA-019</a> staðfestir að þátttökuhlutfallið var 42,7%. POLL-DATA-007 og <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-017</a> gefa sömu tölu. Þetta þátttökuhlutfall er viðunandi samkvæmt núverændi könnunarstöðlum, en lægra en venjulegt í íslenskum könnunum.",
+      "explanation": "Þrjár óháðar heimildir staðfesta þátttökuhlutfallið 42,7% orðrétt. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup hf. — Þjóðarpúls; Vísir\" target=\"_blank\" rel=\"noopener\">POLL-DATA-019</a> greinir frá því að 810 svarendur af 1.898 úrtaki hafi lokið könnuninni, sem gefur svarhlutfall upp á 42,7%. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-017</a> og <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — Þjóðarpúls, February–March 2026\" target=\"_blank\" rel=\"noopener\">POLL-DATA-014</a> staðfesta sömu tölu. Fullyrðingin er nákvæm og samræmist heimildum að öllu leyti.",
       "supporting_evidence": [
+        {
+          "id": "POLL-DATA-019",
+          "source_name": "Gallup hf. — Þjóðarpúls; Vísir",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+        },
         {
           "id": "POLL-DATA-017",
           "source_name": "Gallup Iceland / Þjóðarpúls",
           "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
         },
         {
-          "id": "POLL-DATA-019",
-          "source_name": "Gallup hf. — Þjóðarpúls; Vísir",
+          "id": "POLL-DATA-014",
+          "source_name": "Gallup Ísland — Þjóðarpúls, February–March 2026",
           "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Samkvæmt <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup hf. — Þjóðarpúls; Vísir\" target=\"_blank\" rel=\"noopener\">POLL-DATA-019</a> er þátttökuhlutfallið lægra en sögulega hefur tíðkast í íslenskum könnunum. Netkönnun getur vantframá eldra fólk sem er minna vant stáfrænu umái. Skekkjumörk við þennan svarendafjölda eru um ±3,5 prósentustig.",
-      "confidence": 0.96,
+      "missing_context": "Svarhlutfallið 42,7% er ásættanlegt samkvæmt núverandi stöðlum en lægra en hefðbundið í íslenskum könnunum (<a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup hf. — Þjóðarpúls; Vísir\" target=\"_blank\" rel=\"noopener\">POLL-DATA-019</a>). Netkönnunin getur vanmetið eldri hópa og dreifbýli. Gallup beitir eftirvögun (post-stratification weighting) eftir aldri, kyni, búsetu og menntun til að leiðrétta skekkju.",
+      "confidence": 0.95,
       "speakers": [
         {
           "name": "Ritstjórn mbl.is",
@@ -1121,23 +1131,29 @@
         "confidence": 0.93,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — Þjóðarpúls, February–March 2026\" target=\"_blank\" rel=\"noopener\">POLL-DATA-014</a> sýnir 52% hlynnt á móti 48% andvíg framhaldi aðildarviðræðna, sem er í reynd jafntefli innan skekkjumarka könnunarinnar. Það er rétt að landsmenn skiptist í tvo nánast jafnstóra hópa. Greinin notar orðið \"virðast\" sem er viðeigandi varsemdarorð þegar munurinn er innan skekkjumarka.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-017</a> og <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Þjóðarpúls, February–March 2026; Capacent Gallup historical EU polling data (2009–2013)\" target=\"_blank\" rel=\"noopener\">POLL-DATA-021</a> staðfesta að þegar spurt er um ESB-aðild skiptist þjóðin í tvo álíka stóra hópa: um 42% styðja og 42% eru á móti, með 16% óákveðna. Fullyrðingin um «tvo álíka stóra hópa» á þannig við um aðildarspurninguna. Aftur á móti er fullyrðingin um «þjóðaratkvæðagreiðslu um framhald aðildarviðræðna» — en þar sýna sömu kannanir að um 52% styðja framhald viðræðna á móti um 35% sem eru á móti, sem er ekki jafnt skipt. Munurinn á stuðningi við viðræður og stuðningi við aðild er 10 prósentustig samkvæmt <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Þjóðarpúls, February–March 2026; Capacent Gallup historical EU polling data (2009–2013)\" target=\"_blank\" rel=\"noopener\">POLL-DATA-021</a>.",
       "supporting_evidence": [
-        {
-          "id": "POLL-DATA-014",
-          "source_name": "Gallup Ísland — Þjóðarpúls, February–March 2026",
-          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
-        },
         {
           "id": "POLL-DATA-017",
           "source_name": "Gallup Iceland / Þjóðarpúls",
           "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+        },
+        {
+          "id": "POLL-DATA-021",
+          "source_name": "Gallup Þjóðarpúls, February–March 2026; Capacent Gallup historical EU polling data (2009–2013)",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Bilin milli 52% og 48% er innan skekkjumarka könnunarinnar (±3,5 prósentustig). Einnig er vert að benda á að þegar spurt er um ESB-aðild beinlínis (ekki aðildarviðræður) er niðurstaðan enn nánari jafntefli: 42% gegn 42% samkvæmt <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — Þjóðarpúls, February–March 2026\" target=\"_blank\" rel=\"noopener\">POLL-DATA-014</a>.",
-      "confidence": 0.9011699999999999,
+      "contradicting_evidence": [
+        {
+          "id": "POLL-DATA-020",
+          "source_name": "Gallup hf. — Þjóðarpúls; Vísir",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+        }
+      ],
+      "missing_context": "Fullyrðingin blandar saman tveimur spurningum: stuðningi við framhald viðræðna (þar sem stuðningur er meiri) og stuðningi við ESB-aðild (þar sem skiptingin er jöfn). Ef átt er við aðildina sjálfa stenst fullyrðingin vel, en þjóðaratkvæðagreiðslan snýst um viðræður, þar sem stuðningurinn er meiri. Kannanir hafa einnig skekkjumörk og svarbrottfall getur skekkt niðurstöður.",
+      "confidence": 0.7,
       "speakers": [
         {
           "name": "Ritstjórn mbl.is",

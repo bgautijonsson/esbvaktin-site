@@ -10,10 +10,10 @@
   "summary": "Greindar 10 fullyrðingar. Niðurstöður: 4 stutt að hluta, 4 stutt af heimildum, 1 villandi, 1 ekki hægt að sannreyna. Sjónarhorn: hallar á ESB-neikvæða hlið. Heildstæðni: 30%.",
   "capsule": "Sex þingmenn á Evrópuþinginu og 0,08% atkvæðavægi í ráðherraráðinu — þessar tölur eru réttar og endurspegla vel hvernig íbúafjöldi ræður vægi í ESB-stofnunum. Áhugavert samhengi vantar þó: Ísland hefur þegar tekið upp um þrettán þúsund ESB-gerðir í gegnum EES-samninginn, en án nokkurs formlegs atkvæðisréttar í þeim stofnunum sem setja þær. ESB-aðild myndi því í raun bæta þátttöku Íslands í lýðræðilegri ákvarðanatöku — frá núlli og upp í sex þingmenn og eitt sæti við borðið.",
   "verdict_counts": {
-    "partially_supported": 4,
-    "supported": 4,
+    "partially_supported": 5,
     "misleading": 1,
-    "unverifiable": 1
+    "unverifiable": 1,
+    "supported": 3
   },
   "epistemic_counts": {
     "prediction": 4
@@ -73,8 +73,8 @@
         "confidence": 0.9,
         "epistemic_type": "prediction"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:12008M014:EN:HTML\" title=\"Treaty on European Union, Article 14(2)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-003</a> staðfestir að Ísland fengi lágmark 6 þingsæti samkvæmt sáttmálanum, en heildarfjöldi þingsæta er 720 — sem telst «vel yfir 700». Malta, Lúxemborg og Kýpur hafa öll 6 þingsæti nú þegar. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> staðfestir sömu tölur og bendir á að 6 sæti af 720 jafngildi u.þ.b. 0,83% hlutdeildar.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:12008M014:EN:HTML\" title=\"Treaty on European Union, Article 14(2)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-003</a> staðfestir að Ísland fengi að lágmarki 6 þingsæti á Evrópuþinginu og að Malta, Lúxemborg og Kýpur hafi sömu lágmarksúthlutun. Talan 6 þingsæti er rétt. Heildarfjöldi þingmanna er hins vegar 720 samkvæmt sömu heimild, ekki «yfir 700» eins og fullyrðingin segir. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> staðfestir einnig 720 sæti. Orðalagið «yfir 700» er ekki beint rangt — 720 er yfir 700 — en er ónákvæmt þar sem nákvæm tala liggur fyrir og munar 20 sætum.",
       "supporting_evidence": [
         {
           "id": "SOV-LEGAL-003",
@@ -88,8 +88,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Nákvæmur fjöldi þingsæta yrði ákveðinn af leiðtogaráðinu en sáttmálinn tryggir 6 sem lágmark. Raunveruleg áhrif þingmanna ráðast af flokkahópum á Evrópuþinginu frekar en af fjölda fulltrúa hvers ríkis.",
-      "confidence": 0.92055,
+      "missing_context": "Evrópuþingið hefur nákvæmlega 720 sæti, ekki ótilgreinda tölu «yfir 700». Þá ber að hafa í huga að sætatalan getur breyst — Evrópuráðið ákveður samsetningu þingsins og hún getur hækkað við nýja aðild. Raunveruleg áhrif Íslands á Evrópuþinginu ráðast fremur af þingflokkaaðild og bandalagsmyndun en berum sætatölum.",
+      "confidence": 0.6516049999999999,
       "speakers": [
         {
           "name": "Hjörtur J. Guðmundsson",
@@ -481,15 +481,15 @@
       "attribution_type": "asserted",
       "claim_count": 10,
       "verdicts": {
-        "partially_supported": 4,
-        "supported": 4,
+        "partially_supported": 5,
         "misleading": 1,
-        "unverifiable": 1
+        "unverifiable": 1,
+        "supported": 3
       },
       "stance": "anti_eu",
       "slug": "hjortur-j-gudmundsson",
-      "mention_count": 18,
-      "credibility": 0.66
+      "mention_count": 20,
+      "credibility": 0.58
     }
   ]
 }

@@ -10,9 +10,9 @@
   "summary": "Greindar 18 fullyrðingar. Niðurstöður: 8 ekki hægt að sannreyna, 7 stutt að hluta, 3 stutt af heimildum. Sjónarhorn: hallar á ESB-jákvæða hlið. Heildstæðni: 30%.",
   "capsule": "Þjóðaratkvæðagreiðslan í haust gefur kjósendum tækifæri til að halda báðum leiðum opnum uns aðildarviðræðum lýkur — og það er greinin rétt með. Áhugavert er þó að «liggja lágt»-leiðin er ekki einangrun í viðskiptamálum: Ísland nýtur þegar tollfrjáls aðgangs að innri markaði ESB í gegnum EES-samninginn, ásamt meira en þrjátíu fríverzlunarsamningum í gegnum EFTA. Þegar kemur að sjávarútvegi er sameiginlega sjávarútvegsstefna ESB lykilspurningin sem bíður svara: Hvernig myndi hún hafa áhrif á yfirráð Íslands yfir eigin efnahagslögsögu?",
   "verdict_counts": {
-    "partially_supported": 7,
-    "supported": 3,
-    "unverifiable": 1
+    "partially_supported": 9,
+    "unverifiable": 1,
+    "supported": 1
   },
   "epistemic_counts": {
     "prediction": 1
@@ -79,8 +79,8 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "Heimildir staðfesta að full ESB-aðild feli í sér tollabandalag. <a href=\"https://www.consilium.europa.eu/en/policies/eu-tariffs-explained/\" title=\"EU Council / European Commission Access2Markets\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-040</a> útskýrir sérstaklega muninn á EES og tollabandalagi ESB: aðildarríki beita sameiginlegum ytri tollum og Framkvæmdastjórnin semur um viðskiptasamninga fyrir hönd allra ríkja. <a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a> staðfestir að samkvæmt 28. gr. TFEU yrði Ísland hluti af tollabandalaginu og missti sjálfstæða viðskiptastefnu. Orðalagið «þjóðum sem vilja tryggja frjáls viðskipti» er einföldun á tilgangi tollabandalags, en er ekki villandi í meginatriðum þar sem frjáls viðskipti innan svæðisins eru meginmarkmiðið.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.consilium.europa.eu/en/policies/eu-tariffs-explained/\" title=\"EU Council / European Commission Access2Markets\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-040</a> og <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> staðfesta að full ESB-aðild feli í sér tollabandalag sem er undanskilið EES-samningnum. Fullyrðingin er þó of einföld — tollabandalagið snýst ekki eingöngu um «frjáls viðskipti» heldur einnig um sameiginlegan ytri toll og sameiginlega viðskiptastefnu þar sem Framkvæmdastjórnin semur fyrir hönd allra aðildarríkja (<a href=\"https://www.consilium.europa.eu/en/policies/eu-tariffs-explained/\" title=\"EU Council / European Commission Access2Markets\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-040</a>). Þetta þýðir bæði frjálsari viðskipti innan sambandsins og missi sjálfstæðrar viðskiptastefnu — þátt sem fullyrðingin sleppur.",
       "supporting_evidence": [
         {
           "id": "TRADE-DATA-040",
@@ -88,9 +88,9 @@
           "source_url": "https://www.consilium.europa.eu/en/policies/eu-tariffs-explained/"
         },
         {
-          "id": "SOV-LEGAL-032",
-          "source_name": "TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview",
-          "source_url": "https://www.efta.int/free-trade/free-trade-agreements"
+          "id": "EEA-LEGAL-022",
+          "source_name": "EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'",
+          "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
         },
         {
           "id": "TRADE-DATA-002",
@@ -101,16 +101,11 @@
           "id": "EEA-LEGAL-003",
           "source_name": "EEA Agreement, Article 1 and Protocol 47",
           "source_url": "https://www.efta.int/eea/eea-agreement"
-        },
-        {
-          "id": "EEA-LEGAL-022",
-          "source_name": "EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'",
-          "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Ísland hefur nú þegar tollfría aðgang að innri markaðnum fyrir flestar iðnaðarvörur í gegnum EES-samninginn. Helstu viðbótaráhrif tollabandalagsins myndu snúa að landbúnaðarvörum og afnámi upprunareglna. Á móti myndi Ísland missa sjálfstæða viðskiptastefnu, þar á meðal getu til að semja tvíhliða samninga (t.d. fríverslunarsamning Íslands og Kína frá 2013).",
-      "confidence": 0.87,
+      "missing_context": "Fullyrðingin lýsir tollabandalaginu einungis sem tæki til að «tryggja frjáls viðskipti» en nefnir ekki hina hliðina: tap á sjálfstæðri viðskiptastefnu og ytri tollsetningu. Ísland myndi þurfa að segja upp tvíhliða viðskiptasamningum (t.d. Ísland-Kína FTA) og taka upp sameiginlegan ytri toll ESB. Auk þess nýtur Ísland þegar víðtæks tollfríðinda á innri markaðnum í gegnum EES-samninginn — helstu undantekningarnar eru landbúnaðarvörur.",
+      "confidence": 0.76,
       "speakers": [
         {
           "name": null,
@@ -227,9 +222,19 @@
         "confidence": 0.9,
         "epistemic_type": "prediction"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf\" title=\"EEA Agreement — Protocol 3 on trade in processed agricultural products\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-002</a> staðfestir að ESB-aðild myndi færa Ísland í tollabandalagið, sem þýðir sameiginlegan utanríkistoll. Þar af leiðandi gæti ekkert ríki lagt sérstaka tolla á Ísland án þess að leggja þá á allt ESB — þetta er grundvallareinkenni tollabandalags. Rökfræðilega er fullyrðingin rétt sem lýsing á tollabandalagi.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a> staðfestir að ESB-aðild myndi flytja viðskiptavald til sambandsins — 207. grein sáttmálans um starfshætti ESB veitir sambandinu einkarétt á sameiginlegri viðskiptastefnu. <a href=\"https://www.consilium.europa.eu/en/policies/eu-tariffs-explained/\" title=\"EU Council / European Commission Access2Markets\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-040</a> undirstrikar að tollabandalag ESB þýðir sameiginlega utanríkistolla og sameiginlegan samningsstyrk 450 milljón manna markaðar. Kjarni fullyrðingarinnar — að tollógnun gegn Íslandi yrði tollógnun gegn öllu ESB — á sér stoð. Hins vegar er fullyrðingin of alger: ríki geta beitt sértækum aðgerðum gegn einstökum atvinnugreinum innan ESB (eins og bandarískir tollar á ESB-stál sýndu), og viðskiptadeilur geta beinst að ákveðnum geirum þótt sambandið svari sameiginlega.",
       "supporting_evidence": [
+        {
+          "id": "SOV-LEGAL-032",
+          "source_name": "TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview",
+          "source_url": "https://www.efta.int/free-trade/free-trade-agreements"
+        },
+        {
+          "id": "TRADE-DATA-040",
+          "source_name": "EU Council / European Commission Access2Markets",
+          "source_url": "https://www.consilium.europa.eu/en/policies/eu-tariffs-explained/"
+        },
         {
           "id": "TRADE-DATA-002",
           "source_name": "EEA Agreement — Protocol 3 on trade in processed agricultural products",
@@ -237,8 +242,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Ísland hefur þegar víðtækan tollfríðan markaðsaðgang gegnum EES-samninginn (nema sjávarafurðir og landbúnaðarvörur). Viðbótarvernd tollabandalagsins skiptir aðallega máli í tollastríðsaðstæðum eins og lýst er í samhengi fullyrðingarinnar.",
-      "confidence": 0.85,
+      "missing_context": "EES-samningurinn veitir Íslandi nú þegar tollfrítt aðgengi að innri markaðnum fyrir flestar iðnaðarvörur (<a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf\" title=\"EEA Agreement — Protocol 3 on trade in processed agricultural products\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-002</a>). Ísland gæti einnig tapað sjálfstæðri viðskiptastefnu — núverandi EFTA-samningar ná til 43 ríkja. Tollvernd ESB verndar gegn stórum tollógnunum en útilokar ekki sértækar viðskiptadeilur gegn einstökum atvinnugreinum.",
+      "confidence": 0.78,
       "speakers": [
         {
           "name": null,
@@ -538,8 +543,7 @@
       "attribution_type": "asserted",
       "claim_count": 6,
       "verdicts": {
-        "partially_supported": 3,
-        "supported": 2,
+        "partially_supported": 5,
         "unverifiable": 1
       },
       "stance": "pro_eu"

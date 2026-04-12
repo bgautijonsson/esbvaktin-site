@@ -10,8 +10,8 @@
   "summary": "Greindar 8 fullyrðingar. Niðurstöður: 4 stutt af heimildum, 4 stutt að hluta. Sjónarhorn: hallar á ESB-jákvæða hlið. Heildstæðni: 20%.",
   "capsule": "EES-samningurinn hefur þegar innleitt innri markaðsreglur ESB á Íslandi, sem gefur raunverulegt forskot í aðildarferlinu — þetta fær greinin rétt. Sjávarútvegur er hins vegar undanþeginn EES og fellur undir einkaforræði ESB í sameiginlegu sjávarútvegsstefnunni, sem þýðir að samningaviðræður um hann hefðu snúið um mun dýpri breytingar en greinin gefur til kynna. Áhugavert er að þetta var umdeildasti kafli aðildarviðræðnanna 2010–2013, þegar íslenska samninganefndin hafnaði öllum tillögum um að gera aðgang að íslenskum miðum að skilyrði aðildar.",
   "verdict_counts": {
-    "supported": 4,
-    "partially_supported": 4
+    "partially_supported": 6,
+    "supported": 2
   },
   "epistemic_counts": {
     "prediction": 1
@@ -34,8 +34,8 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "Heimildir staðfesta að aðildarferli ESB eru sérsniðin að aðstæðum hvers umsóknarlands. <a href=\"https://ec.europa.eu/eurostat/databrowser/view/sdg_10_10/default/table\" title=\"Eurostat GDP per capita in PPS; European Commission Enlargement Reviews\" target=\"_blank\" rel=\"noopener\">PREC-DATA-023</a> sýnir mikinn mun á efnahagslegum árangri aðildarríkja — allt frá hraðri samleitni í Eystrasaltsríkjunum til skuldakreppu Grikklands. <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> lýsir því að samningaviðræður snúast um «aðstæður og tímasetningu» innleiðingar, þar sem hvert land fær sérsniðin aðlögunartímabil. Fordæmi Króatíu, sem hlaut engar undanþágur, og Danmerkur, sem náði fjórum, undirstrika þennan mismun.",
+      "verdict": "partially_supported",
+      "explanation": "Grunnhugmyndin er rétt — aðildarferli eru mismunandi eftir löndum. <a href=\"https://ec.europa.eu/eurostat/databrowser/view/sdg_10_10/default/table\" title=\"Eurostat GDP per capita in PPS; European Commission Enlargement Reviews\" target=\"_blank\" rel=\"noopener\">PREC-DATA-023</a> sýnir mikinn mun á reynslu aðildarríkja: Pólland og Eistland sáu hraðan hagvöxt, Grikkland lenti í skuldakreppu, og Króatía glímir við fólksflutninga. <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> staðfestir að aðlögunartímabil og viðmið séu samningsbundin. Hins vegar fá engar heimildir nákvæmlega stuðning við orðalagið «engin tvö aðildarferli eru eins» — samningsramminn er sá sami og ferlið fylgir sömu skrefum (skönnun, viðmið, samningar), þótt útfærsla og tímalengd séu breytileg.",
       "supporting_evidence": [
         {
           "id": "PREC-DATA-023",
@@ -48,19 +48,14 @@
           "source_url": "https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf"
         },
         {
-          "id": "SOV-LEGAL-030",
-          "source_name": "Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003"
-        },
-        {
           "id": "EEA-LEGAL-022",
           "source_name": "EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'",
           "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Þótt ferlin séu ólík er grundvallarreglan sú sama: umsóknarríki samþykkir regluverkið (acquis) eins og það er. Mismunurinn felst fyrst og fremst í aðlögunartímabilum og pólitísku samhengi, ekki í reglum sem samið er um.",
-      "confidence": 0.9,
+      "missing_context": "Formleg aðildarferlin fylgja öllu sömu skrefunum (Copenhagen-viðmið, 35 samningskaflar, skönnun og samningar) en útfærsla, tímalengd og aðlögunartímabil eru breytileg. Fullyrðingin einfaldar þetta — ferlið er staðlað þótt niðurstöður séu ólíkar. Reynsla Íslands 2010–2013, þar sem 11 kaflar voru bráðabirgðalokað á 18 mánuðum vegna EES-samræmis, sýnir vel hvernig fyrri tengsl breyta gangi viðræðna.",
+      "confidence": 0.75,
       "speakers": [
         {
           "name": "Marta Kos",
@@ -320,8 +315,8 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.eeas.europa.eu/eeas/eu-arctic-policy_en\" title=\"European Commission — EU Arctic Policy, Joint Communication JOIN(2021) 27\" target=\"_blank\" rel=\"noopener\">SOV-DATA-001</a> staðfestir að Norður-Atlantshafslega Íslands (GIUK-bilið) hefur aukið hernaðarlega þýðingu og ESB hefur skýra norðurslóðastefnu þar sem Ísland gegnir lykilhlutverki. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> nefnir landfræðilega legu Íslands sérstaklega sem einn af hernaðar- og stefnumótunarþáttum sem gera Ísland áhugavert sem aðildarríki. Enn fremur sýnir <a href=\"https://www.nato.int/en/about-us/official-texts-and-resources/strategic-concepts/nato-2022-strategic-concept\" title=\"NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list\" target=\"_blank\" rel=\"noopener\">SOV-DATA-009</a> að staðsetning Íslands í GIUK-bilinu er lykilatriði í Norður-Atlantshafsvarnarkerfi NATO.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að landfræðileg lega Íslands og alþjóðamál skipta máli í umræðunni um ESB-aðild. <a href=\"https://www.eeas.europa.eu/eeas/eu-arctic-policy_en\" title=\"European Commission — EU Arctic Policy, Joint Communication JOIN(2021) 27\" target=\"_blank\" rel=\"noopener\">SOV-DATA-001</a> lýsir mikilvægi Íslands í Norðurheimskautsráðinu og breyttum norðurslóðapólitík. <a href=\"https://www.visindavefur.is/svar.php?id=65203\" title=\"Vísindavefurinn — Gustav Pétursson (2013, updated 2026)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-031</a> fjallar um hernaðarlega þýðingu GIUK-bilsins sem var lykilástæða NATO-aðildar. <a href=\"https://www.nato.int/en/about-us/official-texts-and-resources/strategic-concepts/nato-2022-strategic-concept\" title=\"NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list\" target=\"_blank\" rel=\"noopener\">SOV-DATA-009</a> útskýrir tengsl NATO og ESB. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application for membership of the European Union, SEC(2010) 153\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-020</a> sýnir að EES-aðild veitti forskot í aðildarviðræðum. Fullyrðingin er þó of almenn og víðtæk — orðin «leika mikilvægt hlutverk í aðildarferlinu» eru ekki nákvæmlega studd sem heild af heimildunum, sem fjalla frekar um pólitískt samhengi en formlegt ferli.",
       "supporting_evidence": [
         {
           "id": "SOV-DATA-001",
@@ -329,9 +324,9 @@
           "source_url": "https://www.eeas.europa.eu/eeas/eu-arctic-policy_en"
         },
         {
-          "id": "TRADE-DATA-022",
-          "source_name": "European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications",
-          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+          "id": "SOV-DATA-031",
+          "source_name": "Vísindavefurinn — Gustav Pétursson (2013, updated 2026)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=65203"
         },
         {
           "id": "SOV-DATA-009",
@@ -339,14 +334,14 @@
           "source_url": "https://www.nato.int/en/about-us/official-texts-and-resources/strategic-concepts/nato-2022-strategic-concept"
         },
         {
-          "id": "SOV-DATA-031",
-          "source_name": "Vísindavefurinn — Gustav Pétursson (2013, updated 2026)",
-          "source_url": "https://www.visindavefur.is/svar.php?id=65203"
+          "id": "EEA-LEGAL-020",
+          "source_name": "European Commission — Opinion on Iceland's application for membership of the European Union, SEC(2010) 153",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Aðildarferlið er formlega byggt á uppfyllingu Kaupmannahafnarskilyrðanna og innleiðingu regluverksins — landfræðileg og öryggispólitísk sjónarmið koma ekki beint inn í hina formlegu aðferðafræði. Hins vegar geta þessi sjónarmið haft áhrif á pólitískan vilja aðildarríkja til að hraða eða hægja á ferlinu.",
-      "confidence": 0.85,
+      "missing_context": "Engin heimild tengir landfræðilega legu beint við formlegt aðildarferli (samningakafla, Kaupmannahafnarskilyrði). Áhrifin eru fremur á pólitískan vilja og samningsstöðu. Norðurslóðapólitík hefur breyst mikið eftir að Rússland var vikið úr samstarfi í Norðurheimskautsráðinu 2022. Hernaðarleg mikilvægi Íslands (GIUK-bilið) gæti bæði stutt og flækt sjálfstæða stöðu landsins í viðræðum.",
+      "confidence": 0.72,
       "speakers": [
         {
           "name": "Marta Kos",
@@ -419,13 +414,13 @@
       "attribution_type": "quoted",
       "claim_count": 8,
       "verdicts": {
-        "supported": 4,
-        "partially_supported": 4
+        "partially_supported": 6,
+        "supported": 2
       },
       "stance": "pro_eu",
       "slug": "marta-kos",
-      "mention_count": 8,
-      "credibility": 0.75
+      "mention_count": 10,
+      "credibility": 0.68
     }
   ]
 }

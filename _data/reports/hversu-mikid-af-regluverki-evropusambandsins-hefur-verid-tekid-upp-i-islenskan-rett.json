@@ -10,8 +10,8 @@
   "summary": "Greindar 17 fullyrðingar. Niðurstöður: 9 stutt af heimildum, 7 stutt að hluta, 1 ekki hægt að sannreyna. Sjónarhorn: hallar á ESB-neikvæða hlið. Heildstæðni: 35%.",
   "capsule": "Talan 13,4% — hlutfall alls regluverks ESB sem Ísland hefur innleitt — og talan 70–80% eru báðar réttar en mæla mismunandi hluti: fyrri talan nær yfir allt regluverk ESB, sú síðari nær eingöngu yfir reglur innri markaðarins sem EES-samningurinn tekur til. Áhugavert samhengi sem greinin snertir ekki: norska ríkisstjórnargreinargerðin NOU 2012:2 komst að þeirri niðurstöðu að þátttaka í sérfræðingahópum framkvæmdastjórnarinnar veiti «takmörkuð» áhrif á endanlegar ákvarðanir — þótt Noregur og Ísland sitji við samningstöfluna á sniðgöngustiginu er atkvæðarétturinn ekki þar.",
   "verdict_counts": {
-    "partially_supported": 7,
-    "supported": 9,
+    "partially_supported": 10,
+    "supported": 6,
     "unverifiable": 1
   },
   "epistemic_counts": null,
@@ -471,8 +471,8 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> staðfestir ótvírætt að peningamálastefna og evran falli utan EES-samningsins — Ísland heldur eigin gjaldmiðli og seðlabanka. Efnahags- og myntbandalag ESB er meðal undanskilinna sviða. Fullyrðingin er rétt að mestu. Þó ber að nefna að sumar fjármálareglur ESB (t.d. um fjármálamarkaði) falla undir EES vegna tengsla við innri markaðinn.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin er rétt að mestu — Ísland notar hvorki evru né lýtur fjárlagareglum ESB. EES-samningurinn útilokar peningamálastefnu og ríkisfjármálaeftirlit sambandsins, eins og <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> staðfestir. Hins vegar er orðalagið «alfarið utan EES» of vítt. Samkvæmt <a href=\"https://www.visindavefur.is/svar.php?id=6777\" title=\"Vísindavefurinn — Arndís Anna K. Gunnarsdóttir, doctoral student, University of Strasbourg (2007, updated 2026)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-023</a> og <a href=\"https://www.visindavefur.is/svar.php?id=68561\" title=\"Vísindavefurinn — Þórhildur Hagalín, European Studies scholar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-024</a> tekur Ísland upp umfangsmikla löggjöf innri markaðarins, þar á meðal reglur um ríkisaðstoð (<a href=\"https://www.visindavefur.is/svar.php?id=60266\" title=\"Vísindavefurinn — Vilborg Ása Guðjónsdóttir, Evrópuvefur project manager (2011)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-026</a>) sem hafa óbein fjárhagsleg áhrif. Þótt evra og fjárlagareglur séu ekki hluti EES-samningsins eru ýmsar aðrar skyldur sem tengjast efnahagsstjórn þar inni.",
       "supporting_evidence": [
         {
           "id": "EEA-LEGAL-022",
@@ -480,14 +480,25 @@
           "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
         },
         {
-          "id": "EEA-LEGAL-008",
-          "source_name": "EEA Agreement, Articles 8 and 17–26; Protocols 1 and 47",
-          "source_url": "https://www.efta.int/eea/eea-agreement"
+          "id": "EEA-DATA-023",
+          "source_name": "Vísindavefurinn — Arndís Anna K. Gunnarsdóttir, doctoral student, University of Strasbourg (2007, updated 2026)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=6777"
+        },
+        {
+          "id": "EEA-DATA-024",
+          "source_name": "Vísindavefurinn — Þórhildur Hagalín, European Studies scholar (2014)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=68561"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Þótt Ísland sé alfarið utan evrusvæðisins, hefur EES-samningurinn í för með sér ýmsar fjármálareglur sem tengjast innri markaðnum (t.d. tilskipanir um fjármálaeftirlit, greiðsluþjónustu og fjármagnshreyfingar). Orðalagið «alfarið utan EES» á vel við um evruna og stöðugleikasáttmálann, en fjármálaregluverk ESB hefur víðtækari áhrif á Ísland en fullyrðingin gefur til kynna.",
-      "confidence": 0.85,
+      "contradicting_evidence": [
+        {
+          "id": "EEA-DATA-026",
+          "source_name": "Vísindavefurinn — Vilborg Ása Guðjónsdóttir, Evrópuvefur project manager (2011)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=60266"
+        }
+      ],
+      "missing_context": "EES-samningurinn útilokar peningamálastefnu og fjárlagareglur en nær til reglna um ríkisaðstoð og samkeppni sem hafa óbein fjárhagsáhrif. Orðið «alfarið» gefur til kynna algera aðskilnað sem er ekki alveg nákvæmur.",
+      "confidence": 0.78,
       "speakers": [
         {
           "name": "Gunnar Ármannsson",
@@ -625,7 +636,7 @@
       ],
       "contradicting_evidence": [],
       "missing_context": "Staðreyndagrunnurinn inniheldur ekki nefndarálit meirihluta utanríkismálanefndar frá 1993. Síðan þá hefur fræðileg umræða viðurkennt spennu milli 2. gr. stjórnarskrárinnar og þeirrar raunveruleikamyndar sem EES-samningurinn skapar — þar sem Ísland innleiðir reglur sem það hefur ekki áhrif á. <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands; Stjórnlaganefnd (2011) report\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-027</a> nefnir að «sumir lögfræðingar» telji stjórnarskrárbreytingu ónauðsynlega ef formlegt fullveldi er varðveitt.",
-      "confidence": 0.6,
+      "confidence": 0.612,
       "speakers": [
         {
           "name": "Meirihluti utanríkismálanefndar",
@@ -648,8 +659,8 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.visindavefur.is/svar.php?id=6777\" title=\"Vísindavefurinn — Arndís Anna K. Gunnarsdóttir, doctoral student, University of Strasbourg (2007, updated 2026)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-023</a> staðfestir þetta beint: lög nr. 2/1993 veita EES-samningnum lagagildi á Íslandi, krefjast þess að íslensk lög séu túlkuð í samræmi við samninginn og að EES-reglur gangi framar innlendri löggjöf í áreksturstilfellum (viðauki 35). Heimildin nefnir þó að ESB-reglur hafi ekki bein réttaráhrif á Íslandi — þær verða að vera formlega innleiddar í íslenskan rétt.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.visindavefur.is/svar.php?id=6777\" title=\"Vísindavefurinn — Arndís Anna K. Gunnarsdóttir, doctoral student, University of Strasbourg (2007, updated 2026)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-023</a> staðfestir að lög nr. 2/1993 krefjist þess að íslensk lög séu túlkuð í samræmi við EES-samninginn, og viðauki 35 krefjist þess að EES-reglur gangi framar innlendri löggjöf. Fullyrðingin um að «meginmál EES-samningsins» hafi lagagildi er í aðalatriðum rétt. Þó er mikilvægt samhengi ófullnægjandi — ESB-reglur hafa ekki bein réttaráhrif á Íslandi og öðlast aðeins gildi eftir formlega innleiðingu, sem takmarkar hvernig «lagagildi» verður skilið.",
       "supporting_evidence": [
         {
           "id": "EEA-DATA-023",
@@ -663,8 +674,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Þótt meginmál EES-samningsins hafi lagagildi, hafa ESB-gerðir ekki bein réttaráhrif á Íslandi. Þær verða að vera innleiddar sérstaklega í íslenskan rétt. Þetta er grundvallarmunur á EES og ESB — í ESB hafa reglugerðir bein áhrif án innlendrar lögfestingar.",
-      "confidence": 0.9,
+      "missing_context": "<a href=\"https://www.visindavefur.is/svar.php?id=6777\" title=\"Vísindavefurinn — Arndís Anna K. Gunnarsdóttir, doctoral student, University of Strasbourg (2007, updated 2026)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-023</a> undirstrikar að ESB-reglur hafi ekki bein réttaráhrif á Íslandi — þær verða ekki bindandi nema innleiðar formlega í íslenskan rétt. Munurinn á lagagildi meginmáls EES-samningsins annars vegar og innleiðingu einstakra gerða hins vegar er verulegur í lagalegum skilningi. Lögin tryggja túlkunarsamræmi en ekki sjálfvirkt lagagildi allra reglna sem falla undir samninginn.",
+      "confidence": 0.75,
       "speakers": [
         {
           "name": "Gunnar Ármannsson",
@@ -687,8 +698,8 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.government.is/library/01-Ministries/Ministry-for-Foreign-Affairs/PDF-skjol/EES_skyrsla_15.pdf\" title=\"Utanríkisráðuneytið — Gengið til góðs: Skref í átt að bættri framkvæmd EES-samningsins (apríl 2018)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-017</a> útskýrir þennan mismun nákvæmlega: 13,4% talan (nálægt 15–20%) mælir hlut af heildarregluverki ESB, en 70% talan mælir innleiðingu innan innri markaðarins eingöngu. Heimildin nefnir beinlínis að tölurnar svari ólíkum spurningum og séu báðar aðferðafræðilega réttar. Þetta er rétt útskýring á muninum.",
+      "verdict": "partially_supported",
+      "explanation": "Grundvallarskýringin er rétt: mismunurinn stafar af ólíku gildissviði (heildarregluverk ESB annars vegar, EES-viðeigandi löggjöf hins vegar). <a href=\"https://www.government.is/library/01-Ministries/Ministry-for-Foreign-Affairs/PDF-skjol/EES_skyrsla_15.pdf\" title=\"Utanríkisráðuneytið — Gengið til góðs: Skref í átt að bættri framkvæmd EES-samningsins (apríl 2018)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-017</a> sýnir 13,4% hlutfall miðað við allt regluverk ESB og <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EFTA Secretariat — The EEA Agreement; ESA Internal Market Scoreboard; EEA Joint Committee\" target=\"_blank\" rel=\"noopener\">EEA-DATA-010</a> sýnir 70–75% miðað við innri markaðslöggjöf. Tölurnar í fullyrðingunni — 15–20% og 75–80% — eru þó ekki nákvæmar. Heimildirnar sýna 13,4% (ekki 15–20%) og 70–75% (ekki 75–80%). Meginreglan er rétt en tölurnar eru ónákvæmar.",
       "supporting_evidence": [
         {
           "id": "EEA-DATA-017",
@@ -696,19 +707,19 @@
           "source_url": "https://www.government.is/library/01-Ministries/Ministry-for-Foreign-Affairs/PDF-skjol/EES_skyrsla_15.pdf"
         },
         {
-          "id": "EEA-LEGAL-001",
-          "source_name": "EFTA Surveillance Authority — Internal Market Scoreboard",
-          "source_url": "https://www.eftasurv.int/internal-market/implementing-eea-law-national-law/internal-market-scoreboards"
-        },
-        {
           "id": "EEA-DATA-010",
           "source_name": "EFTA Secretariat — The EEA Agreement; ESA Internal Market Scoreboard; EEA Joint Committee",
           "source_url": "https://www.efta.int/eea/eea-agreement"
+        },
+        {
+          "id": "EEA-LEGAL-001",
+          "source_name": "EFTA Surveillance Authority — Internal Market Scoreboard",
+          "source_url": "https://www.eftasurv.int/internal-market/implementing-eea-law-national-law/internal-market-scoreboards"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Þótt útskýringin sé í meginatriðum rétt er 15–20% bilið örlítið hærra en hin mælda tala (13,4%). Auk þess eru flestar heimildir með 70–75% frekar en 75–80% fyrir innri markaðinn. Mismunurinn er þó í raun flóknari — ekki bara gildissvið heldur einnig aðferðafræði (hvaða gerðir eru taldar, tímabil, o.s.frv.).",
-      "confidence": 0.9,
+      "missing_context": "Hlutföllin eru háð aðferðafræði — hvort taldar eru gerðir, síður eða stefnusvið. Þegar miðað er við stefnusvið nær EES til mun minni hlutfalls vegna þess að heilir málaflokkar (sjávarútvegur, landbúnaður, myntmál) eru undanskildir. Talan 13,4% nær til 1994–2016 og telur gerðir sem hafa síðan verið felldar úr gildi.",
+      "confidence": 0.82,
       "speakers": [
         {
           "name": "Gunnar Ármannsson",
@@ -781,13 +792,13 @@
       "attribution_type": "asserted",
       "claim_count": 12,
       "verdicts": {
-        "partially_supported": 4,
-        "supported": 8
+        "partially_supported": 7,
+        "supported": 5
       },
       "stance": "neutral",
       "slug": "gunnar-armannsson",
       "mention_count": 1,
-      "credibility": 0.83
+      "credibility": 0.75
     }
   ]
 }

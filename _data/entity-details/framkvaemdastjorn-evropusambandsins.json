@@ -7,12 +7,49 @@
   "party": null,
   "stance": "neutral",
   "stance_score": 0.0,
-  "credibility": null,
+  "credibility": 0.5,
   "attribution_counts": {
-    "mentioned": 8
+    "paraphrased": 1,
+    "mentioned": 10
   },
   "althingi_stats": null,
-  "scorecard": {},
-  "claims": [],
-  "articles": []
+  "scorecard": {
+    "partially_supported": 1
+  },
+  "claims": [
+    {
+      "claim_text": "Framkvæmdastjórn ESB hafði gert allt sem í hennar valdi stóð til að þvinga Ísland til að samþykkja óhagstæða Icesave-samninga við Bretland og Holland.",
+      "original_quote": "þrátt fyrir að framkvæmdastjórn Evrópusambandsins hefði gert allt sem í hennar valdi stóð til að þvinga Ísland til að samþykkja óhagstæða Icesave-samninga við Bretland og Holland",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.imf.org/en/Countries/ISL\" title=\"IMF — Iceland: Stand-By Arrangement; EFTA Court Case E-16/11 (Icesave)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-012</a> lýsir diplómatískum og fjárhagslegum þrýstingi ESB-aðildarríkja á Ísland vegna Icesave, þar á meðal hindrun Hollands á útgreiðslum AGS. Þó ber að nefna að heimildin greinir á milli ESB-aðildarríkja (Bretlands og Hollands) og framkvæmdastjórnar ESB — og kveður á um að «eðli og umfang þrýstings ESB-aðildarríkja» sé umdeilt. Fullyrðingin um að framkvæmdastjórnin sjálf hafi gert «allt í hennar valdi» er of sterk miðað við fyrirliggjandi heimildir.",
+      "missing_context": "Heimildir greina á milli aðgerða einstakra ESB-ríkja (Bretlands og Hollands) og framkvæmdastjórnarinnar sem stofnunar. Orðalagið «allt sem í hennar valdi stóð» gefur til kynna yfirgripsmeira átak framkvæmdastjórnarinnar en heimildir styðja. ESA (Eftirlitsstofnun EFTA), ekki framkvæmdastjórnin, bar ábyrgð á eftirliti í Icesave-málinu.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-012",
+          "source_name": "IMF — Iceland: Stand-By Arrangement; EFTA Court Case E-16/11 (Icesave)",
+          "source_url": "https://www.imf.org/en/Countries/ISL"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "paraphrased",
+      "article_slug": "ekki-framhald-a-esb-vidraedum",
+      "article_title": "Ekki framhald á ESB-viðræðum",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-03-31"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "ekki-framhald-a-esb-vidraedum",
+      "title": "Ekki framhald á ESB-viðræðum",
+      "source": "Morgunblaðið",
+      "date": "2026-03-31",
+      "claim_count": 1,
+      "attribution_types": [
+        "mentioned",
+        "paraphrased"
+      ]
+    }
+  ]
 }

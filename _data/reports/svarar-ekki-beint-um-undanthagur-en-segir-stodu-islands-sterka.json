@@ -10,8 +10,8 @@
   "summary": "Greindar 16 fullyrðingar. Niðurstöður: 7 stutt af heimildum, 6 stutt að hluta, 3 ekki hægt að sannreyna. Sjónarhorn: hallar á ESB-jákvæða hlið. Heildstæðni: 25%.",
   "capsule": "Samningsstaða Íslands í sjávarútvegi er raunveruleg — landið á stórt landhelgissvæði og staðbundna fiskistofna sem hafa þungamiðju við samningaborðið. Athyglisvert er þó að samningakafli 13 um sjávarútveg var aldrei opnaður í aðildarviðræðum Íslands 2010–2013, þannig að hvort «sterk staða» myndi skila sér í raunverulegar niðurstöður hefur í raun aldrei verið prófað. Samanburður við nágrannalönd — Noreg, Bretland og Danmörku — gefur gott samhengi fyrir þá sem vilja kanna þetta mál betur.",
   "verdict_counts": {
-    "partially_supported": 6,
-    "supported": 7,
+    "partially_supported": 8,
+    "supported": 5,
     "unverifiable": 1
   },
   "epistemic_counts": null,
@@ -132,28 +132,44 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> staðfestir að Hagfræðistofnun Háskóla Íslands greindi sérstaklega hvort varanleg undanþága frá sameiginlegri sjávarútvegsstefnu væri raunhæf, og komst að þeirri niðurstöðu að slíkt væri ólíklegt þar sem regluverkið er ekki samningsefni í efnislegu tilliti. POL-DATA-005 sýnir að sjávarútvegurinn hefur einmitt byggt andstöðu sína á þessari spurningu. Sjávarútvegurinn hefur verið miðpunktur umræðunnar frá því að aðildarviðræður hófust 2010.",
+      "verdict": "partially_supported",
+      "explanation": "Sjávarútvegsstefnan er vissulega kjarninn í samningsstöðuumræðunni og margar heimildir staðfesta það. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> fjallar um kvótauthlutun, <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:1985:029:FULL\" title=\"Treaty amending the Treaties establishing the European Communities with regard to Greenland (1984); EU-Greenland fisheries partnership agreement\" target=\"_blank\" rel=\"noopener\">PREC-HIST-017</a> sýnir fordæmi Grænlands þar sem sjávarútvegur var meginástæða úrsagnar, og <a href=\"https://ireland.representation.ec.europa.eu/news-and-events/news/facts-and-figures-impact-eu-membership-irelands-fisheries-2024-06-06_en\" title=\"European Commission Representation in Ireland / Marine Institute\" target=\"_blank\" rel=\"noopener\">FISH-PREC-004</a> lýsir reynslu Írlands. Þó er fullyrðingin of afgerandi með orðinu «einkum» — <a href=\"https://eur-lex.europa.eu/collection/eu-law/treaties.html\" title=\"European Parliament — EU Treaties and Protocols; Accession Treaty texts\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-023</a> og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1\" title=\"Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-006</a> sýna að undanþágur frá evru, varnar- og réttarmálum hafa einnig verið áberandi í umræðunni, ásamt landbúnaðarstefnunni. Sjávarútvegurinn er lykilmálið en ekki eina málið í umræðunni um samningsstöðu.",
       "supporting_evidence": [
         {
-          "id": "EEA-DATA-014",
-          "source_name": "Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)",
-          "source_url": "https://ioes.hi.is/en/institute-economic-studies"
+          "id": "FISH-LEGAL-001",
+          "source_name": "EU Regulation 1380/2013 of the European Parliament and of the Council",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380"
         },
         {
-          "id": "POL-DATA-014",
-          "source_name": "LÍÚ — Position paper on EU membership (2025); campaign finance declarations",
-          "source_url": null
+          "id": "PREC-HIST-017",
+          "source_name": "Treaty amending the Treaties establishing the European Communities with regard to Greenland (1984); EU-Greenland fisheries partnership agreement",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:1985:029:FULL"
         },
+        {
+          "id": "FISH-PREC-004",
+          "source_name": "European Commission Representation in Ireland / Marine Institute",
+          "source_url": "https://ireland.representation.ec.europa.eu/news-and-events/news/facts-and-figures-impact-eu-membership-irelands-fisheries-2024-06-06_en"
+        },
+        {
+          "id": "FISH-DATA-034",
+          "source_name": "Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (2007)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=6781"
+        }
+      ],
+      "contradicting_evidence": [
         {
           "id": "SOV-LEGAL-006",
           "source_name": "Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols",
           "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1"
+        },
+        {
+          "id": "EEA-LEGAL-023",
+          "source_name": "European Parliament — EU Treaties and Protocols; Accession Treaty texts",
+          "source_url": "https://eur-lex.europa.eu/collection/eu-law/treaties.html"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Fullyrðingin á við um umræðuna hingað til, en vert er að benda á að <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> benti einnig á að raunveruleg samningskjör höfðu aldrei verið prófuð þar sem viðræðum var hætt áður en sjávarútvegskafli var opnaður. Spurningin um varanlega undanþágu er því enn fræðileg frekar en reynslutengd.",
-      "confidence": 0.867,
+      "missing_context": "Umræðan hefur einnig snúist um mögulegar undanþágur frá evrusvæðinu, sameiginlegri landbúnaðarstefnu og varnar- og réttarmálum, eins og fordæmi Danmerkur og Írlands sýna. Hlutdeild sjávarútvegs af VLF hefur fallið úr 15% í um 5% en geirinn er áfram pólitískt viðkvæmur, sérstaklega utan höfuðborgarsvæðisins.",
+      "confidence": 0.72,
       "speakers": [
         {
           "name": "Morgunblaðið",
@@ -395,8 +411,8 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> staðfestir þetta beint: sameiginleg sjávarútvegsstefna ESB (reglugerð 1380/2013) setur heildarleyfilegan afla (TAC) fyrir ESB-hafsvæði. Ráðherraráð ESB samþykkir TAC árlega fyrir hverja tegund. <a href=\"https://stecf.ec.europa.eu/reports_en\" title=\"European Commission — The EU Fishing Fleet reports (STECF Annual Economic Reports)\" target=\"_blank\" rel=\"noopener\">FISH-COMP-002</a> bætir við samhengi um að þetta kerfi hafi leitt til samdráttar í flotastærð og bætts ástands stofna — um 60% metinna stofna í norðaustur-Atlantshafi voru veiddar á hámarkssjálfbæru magni árið 2023.",
+      "verdict": "partially_supported",
+      "explanation": "Kjarni fullyrðingarinnar er réttur — samkvæmt <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> og <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development\" title=\"European Parliament — The Common Fisheries Policy: Origins and Development\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-005</a> setur ESB heildaraflamark (TAC) fyrir hverja fisktegund. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380\" title=\"EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024\" target=\"_blank\" rel=\"noopener\">FISH-DATA-032</a> og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380\" title=\"Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-030</a> staðfesta jafnframt þetta ferli. Hins vegar er orðalagið «sambandið ákveður» of einfalt. Ráðherraráðið ákveður heildaraflamark á grundvelli tillagna framkvæmdastjórnarinnar og vísindaráðgjafar ICES — aðildarríkin sitja við borðið og greiða atkvæði. Þetta er sameiginleg ákvörðun, ekki einráð «sambandsins». Aðildarríki eiga fulltrúa í ráðherraráðinu og hafa atkvæðisrétt, sem fullyrðingin gefur ekki til kynna.",
       "supporting_evidence": [
         {
           "id": "FISH-LEGAL-001",
@@ -404,19 +420,24 @@
           "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380"
         },
         {
-          "id": "FISH-COMP-002",
-          "source_name": "European Commission — The EU Fishing Fleet reports (STECF Annual Economic Reports)",
-          "source_url": "https://stecf.ec.europa.eu/reports_en"
+          "id": "FISH-LEGAL-005",
+          "source_name": "European Parliament — The Common Fisheries Policy: Origins and Development",
+          "source_url": "https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development"
         },
         {
-          "id": "FISH-DATA-021",
-          "source_name": "Eurostat — Fisheries statistics (fish_ca_main); Hagstofa Íslands",
-          "source_url": null
+          "id": "FISH-DATA-030",
+          "source_name": "Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380"
+        },
+        {
+          "id": "FISH-DATA-032",
+          "source_name": "EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Ákvörðun um heildarafla byggist á vísindalegum ráðgjöfum frá ICES og er ekki eingöngu pólitísk ákvörðun. Aðildarríki hafa áhrif á ákvörðunina í gegnum Ráðherraráðið — Ísland myndi sem aðildarríki hafa atkvæðisrétt þar. Einnig ber að nefna að PREC-DATA-009 sýnir að Noregur nær sambærilegum sjálfbærnismarkmiðum utan ESB.",
-      "confidence": 0.918,
+      "missing_context": "Fullyrðingin vantar mikilvægt samhengi um ákvarðanaferlið. Heildaraflamark er ákveðið af ráðherraráðinu þar sem aðildarríkin eiga fulltrúa — það er ekki einhliða ákvörðun ESB sem stofnunar. Ísland myndi sitja við borðið og greiða atkvæði um aflahömlur, þótt það réði ekki eitt um niðurstöðuna. Fyrirvarar <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380\" title=\"Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-030</a> taka sérstaklega fram að Ísland myndi «taka þátt í ákvörðunum um heildaraflamark en ráða þeim ekki» — grundvallarmunur frá núverandi stöðu þar sem Ísland setur eigin aflamark.",
+      "confidence": 0.76,
       "speakers": [
         {
           "name": "Morgunblaðið",
@@ -782,7 +803,7 @@
       "stance": "mixed",
       "slug": "gudmundur-ari-sigurjonsson",
       "mention_count": 4,
-      "credibility": 0.66,
+      "credibility": 0.62,
       "speech_count": 3
     }
   ]

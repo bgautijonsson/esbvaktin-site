@@ -10,10 +10,10 @@
   "summary": "Greindar 21 fullyrðingar .",
   "capsule": "Ísland uppfyllir nú þegar flest inngönguskilyrði ESB hvað varðar efnahag, lýðræði og réttarríki — og sótti í raun um aðild árið 2009, enda eru aðildarviðræður ekki þversagnarkennt nýlunduferli heldur lyklaðar að sérstöðu hvers ríkis með sérákvæðum. Athyglisvert er þó að fiskveiðikafli viðræðnanna (kafli 13) var aldrei lokið árið 2013 og sjávarútvegsmál gætu verið þrálátari í samningaferlinu en greinin gefur í skyn. Jafnframt er vert að vita að evran kæmi ekki strax við aðild — samkvæmt fordæmum eins og Króatíu liður nokkur ár í ERM II áður en ríki fullnægir öllum skilyrðum gjaldmiðilsbreytingarinnar.",
   "verdict_counts": {
-    "supported": 4,
+    "supported": 3,
     "misleading": 1,
     "unverifiable": 2,
-    "partially_supported": 11
+    "partially_supported": 12
   },
   "epistemic_counts": {
     "prediction": 4
@@ -42,9 +42,8 @@
         "epistemic_type": "factual"
       },
       "verdict": "supported",
-      "explanation": "Heimildir EEA-DATA-009, <a href=\"https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/\" title=\"Althingi — Historical records; European Commission accession records\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-010</a> og <a href=\"https://uni.hi.is/baldurt/files/2012/08/Iceland-EU-Baldur-Alyson-Greham.pdf\" title=\"Capacent Gallup / Social Science Research Institute, University of Iceland\" target=\"_blank\" rel=\"noopener\">PREC-HIST-005</a> staðfesta allar að Ísland lagði inn formlega aðildarumsókn til Evrópusambandsins 16. júlí 2009. Aðildarviðræður hófust síðan í júlí 2010.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [
+      "explanation": "EEA-DATA-009 staðfestir að Ísland lagði inn aðildarumsókn til ESB 16. júlí 2009 undir stjórn Jóhönnu Sigurðardóttur. Fleiri heimildir (<a href=\"https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/\" title=\"Althingi — Historical records; European Commission accession records\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-010</a>, <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application for membership of the European Union, SEC(2010) 153\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-020</a>) styðja þessa grundvallarstaðreynd. Engar andstæðar heimildir eru til staðar — þetta er óumdeild söguleg staðreynd.",
+      "supporting_evidence": [
         {
           "id": "EEA-DATA-009",
           "source_name": "European Commission — Iceland: Accession negotiations status; Althingi records",
@@ -56,12 +55,13 @@
           "source_url": "https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/"
         },
         {
-          "id": "PREC-HIST-005",
-          "source_name": "Capacent Gallup / Social Science Research Institute, University of Iceland",
-          "source_url": "https://uni.hi.is/baldurt/files/2012/08/Iceland-EU-Baldur-Alyson-Greham.pdf"
+          "id": "EEA-LEGAL-020",
+          "source_name": "European Commission — Opinion on Iceland's application for membership of the European Union, SEC(2010) 153",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
         }
       ],
-      "missing_context": "Aðildarviðræður hófust í júlí 2010, sem gæti skýrt þann rugling að sumir telja umsóknina hafa verið lögð inn 2010. Viðræðunum var frestað 2013 og umsóknin var formlega afturkölluð 2015, þótt lagaleg staða hennar sé umdeild.",
+      "contradicting_evidence": [],
+      "missing_context": null,
       "confidence": 0.95,
       "speakers": [
         {
@@ -257,7 +257,7 @@
         }
       ],
       "missing_context": "Kaupmannahafnarviðmiðin fjalla um lýðræði, markaðshagkerfi og getu til að innleiða regluverkið. Ísland stendur vel í fyrstu tveimur en geta til innleiðingar á öllu regluverki ESB er ósönnuð — erfiðustu kaflarnir voru aldrei opnaðir. EES-forskotið gæti verið minna árið 2026 en 2010 vegna nýrrar löggjafar (evrópski græni sáttmálinn, stafrænir markaðir).",
-      "confidence": 0.82,
+      "confidence": 0.8363999999999999,
       "speakers": [
         {
           "name": "Thomas Möller",
@@ -320,8 +320,13 @@
         "epistemic_type": "factual"
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://orkustofnun.is/en/information/publication/energy_data\" title=\"Orkustofnun — Energy Statistics in Iceland 2023\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-001</a> og <a href=\"https://orkustofnun.is/\" title=\"Orkustofnun (National Energy Authority) — Energy Statistics 2024\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-005</a> staðfesta að um 30% af raforkuframleiðslu Íslands kemur frá jarðhita og u.þ.b. 90% heimila eru hituð með jarðvarma. Ísland er einstakt meðal Evrópuríkja hvað orkuvinnslu úr jarðhita varðar og telst án efa meðal fremstu ríkja heimsins á þessu sviði. Fullyrðingin er nákvæm og vel studd af gögnum Orkustofnunar.",
+      "explanation": "<a href=\"https://orkustofnun.is/en/information/numerical_data/heat\" title=\"Orkustofnun — Geothermal Development and Research in Iceland 2023\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-002</a> staðfestir beint að Ísland sé heimsleiðandi í jarðhitanýtingu á mann og eitt fárra ríkja þar sem jarðhiti leggur til verulegan hluta bæði rafmagns og húshitunar. Uppsett jarðhitaafl er um 755 MW og jarðhiti hitar um 90% heimila á Íslandi. <a href=\"https://orkustofnun.is/en/information/publication/energy_data\" title=\"Orkustofnun — Energy Statistics in Iceland 2023\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-001</a> og <a href=\"https://orkustofnun.is/\" title=\"Orkustofnun (National Energy Authority) — Energy Statistics 2024\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-005</a> undirstrika einstaka stöðu Íslands: nánast 100% endurnýjanleg raforkuframleiðsla, þar af um 30% jarðhiti. Enginn annar Evrópuríki hefur sambærilega stöðu í jarðhitanýtingu.",
       "supporting_evidence": [
+        {
+          "id": "ENERGY-DATA-002",
+          "source_name": "Orkustofnun — Geothermal Development and Research in Iceland 2023",
+          "source_url": "https://orkustofnun.is/en/information/numerical_data/heat"
+        },
         {
           "id": "ENERGY-DATA-001",
           "source_name": "Orkustofnun — Energy Statistics in Iceland 2023",
@@ -334,8 +339,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Jarðhitaorkuvinnsla er ekki eina orkuauðlind Íslands — vatnsafl skilar um 70% af rafmagni. Þótt Ísland sé í fremstu röð í jarðhitanýtingu er u.þ.b. 15% af heildarorkuþörf landsins enn háð innfluttum jarðefnaeldsneyti, aðallega vegna samgangna og fiskiskipa.",
-      "confidence": 0.92,
+      "missing_context": "Jarðhitaauðlindir eru staðbundnar og háðar eldfjallastarfsemi, svo reynsla Íslands er ekki beint yfirfæranleg. Sumir jarðhitasvæðir hafa sýnt þrýstingsfall eftir áratuga nýtingu og þarfnast varfærinnar auðlindastjórnunar, eins og <a href=\"https://orkustofnun.is/en/information/numerical_data/heat\" title=\"Orkustofnun — Geothermal Development and Research in Iceland 2023\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-002</a> bendir á.",
+      "confidence": 0.95,
       "speakers": [
         {
           "name": "Thomas Möller",
@@ -426,23 +431,23 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-002</a> og SOV-DATA-003 vísa bæði til heildaríbúafjölda ESB og nota tölur sem samrýmast um 450 milljónum. Ísland myndi bæta við sig um 390.000 íbúum, sem er hverfandi hlutfall — um 0,087% samkvæmt SOV-DATA-003. Talan 450 milljónir er réttur ákveðinn ávöl tala.",
+      "verdict": "partially_supported",
+      "explanation": "Heimild <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> tilgreinir íbúafjölda ESB sem «approximately 450 million» og <a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-002</a> vísar til sama fjölda. Talan 450 milljónir er algeng ávölun en í raun rúmlega 447–449 milljónir (eftir Brexit). Fullyrðingin notar heiltöluna 450 milljónir sem nálgun, ekki nákvæma tölu. Heimildir staðfesta þetta sem sanngjarna nálgun en ekki nákvæma staðhæfingu.",
       "supporting_evidence": [
-        {
-          "id": "SOV-DATA-017",
-          "source_name": "Treaty on European Union, Article 16(4); European Parliament allocation rules",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016"
-        },
         {
           "id": "SOV-LEGAL-002",
           "source_name": "Treaty on European Union, Article 16(4)",
           "source_url": "https://eur-lex.europa.eu/summary/glossary/qualified_majority.html"
+        },
+        {
+          "id": "SOV-DATA-017",
+          "source_name": "Treaty on European Union, Article 16(4); European Parliament allocation rules",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": null,
-      "confidence": 0.92,
+      "missing_context": "Íbúafjöldi ESB (27 ríki) var um 448,4 milljónir árið 2024 samkvæmt Eurostat, og hefur farið lítillega minnkandi. Talan 450 milljónir er slétt nálgun sem er notuð bæði í heimildum og almennri umræðu.",
+      "confidence": 0.82,
       "speakers": [
         {
           "name": "Thomas Möller",
@@ -669,7 +674,7 @@
         }
       ],
       "missing_context": "Fullyrðingin sleppur verulegum fyrirvörum: lægri vextir tengjast hærra húsnæðisverði samkvæmt rannsóknum (<a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a>); evruupptaka myndi þýða tap á sjálfstæðri peningastefnu (<a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a>); samkeppnisumhverfi í banka- og tryggingageiranum er þegar undir EES-reglum; og Maastricht-skilyrði þyrfti að uppfylla áður en evra yrði tekin upp. Draghi-skýrslan bendir jafnframt á samkeppnisvanda ESB gagnvart BNA.",
-      "confidence": 0.62,
+      "confidence": 0.7121851139425535,
       "speakers": [
         {
           "name": "Thomas Möller",
@@ -787,14 +792,14 @@
       "attribution_type": "asserted",
       "claim_count": 16,
       "verdicts": {
-        "supported": 3,
+        "supported": 2,
         "unverifiable": 2,
-        "partially_supported": 11
+        "partially_supported": 12
       },
       "stance": "pro_eu",
       "slug": "thomas-moller",
       "mention_count": 4,
-      "credibility": 0.52
+      "credibility": 0.48
     },
     {
       "name": "Þorgerður Katrín Gunnarsdóttir",
@@ -808,8 +813,8 @@
       },
       "stance": "pro_eu",
       "slug": "thorgerdur-katrin-gunnarsdottir",
-      "mention_count": 69,
-      "credibility": 0.65,
+      "mention_count": 74,
+      "credibility": 0.62,
       "speech_count": 197
     }
   ]

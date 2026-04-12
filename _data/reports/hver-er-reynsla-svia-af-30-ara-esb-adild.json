@@ -10,9 +10,9 @@
   "summary": "Greindar 31 fullyrðingar. Niðurstöður: 15 stutt að hluta, 12 ekki hægt að sannreyna, 4 stutt af heimildum. Sjónarhorn: mjög ESB-neikvæð. Heildstæðni: 15%.",
   "capsule": "Laval-dómurinn frá 2007 er réttilega nefndur sem mikilvæg réttarfarsleg viðmiðun — Evrópudómstóllinn dæmdi í því máli að verkalýðsfélög megi ekki krefjast sænskra kjarasamninga fyrir erlenda farandverkamenn og sænskum félögum var gert að greiða skaðabætur. Áhugavert er hins vegar að tilskipun ESB um lágmarkslaun frá 2022 var sérstaklega sett saman til að vernda norræn kjarasamningsleg fyrirkomulag — hún krefst ekki lögbundinna lágmarkslauna þar sem samningstrygging er yfir 80%, sem er einmitt það sem einkennir norræna vinnumarkaðslíkanið. Þjóðaratkvæðagreiðslan snýst því ekki um val milli lýðræðislegrar þátttöku og þátttökuleysis, heldur um hvort Ísland taki þátt í að móta reglurnar — eða lúti þeim án atkvæðisréttar eins og nú í gegnum EES.",
   "verdict_counts": {
-    "supported": 4,
-    "partially_supported": 15,
-    "unverifiable": 1
+    "partially_supported": 16,
+    "unverifiable": 1,
+    "supported": 3
   },
   "epistemic_counts": {
     "prediction": 1
@@ -38,38 +38,28 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "Heimildir staðfesta að ESB-aðild þýðir innleiðingu á umfangsmiklu regluverki. Samkvæmt <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EFTA Secretariat — EEA Agreement factsheet; ESA Annual Report 2024\" target=\"_blank\" rel=\"noopener\">EEA-DATA-006</a> og <a href=\"https://www.efta.int/eea-lex\" title=\"EFTA Secretariat — EEA Agreement legal acts database\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-006</a> hefur Ísland þegar innleitt um 13.000 ESB-lagagerðir gegnum EES-samninginn, sem nær yfir um 70–75% af löggjöf innri markaðarins (<a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EFTA Secretariat — The EEA Agreement; ESA Internal Market Scoreboard; EEA Joint Committee\" target=\"_blank\" rel=\"noopener\">EEA-DATA-010</a>). Full ESB-aðild myndi bæta við 3.000–5.000 lagagerðum til viðbótar (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Screening reports from Iceland's 2010–2013 negotiations; EUR-Lex — Directory of EU legislation\" target=\"_blank\" rel=\"noopener\">SOV-DATA-004</a>). Fullyrðingin um að «stór hluti löggjafar» sé innleiðing á ESB-tilskipunum er því vel studd af gögnum.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin hefur rétt fyrir sér um grundvallaratriðið: ESB-aðild þýðir að stór hluti löggjafar er innleiðing á tilskipunum og reglugerðum ESB. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Screening reports from Iceland's 2010–2013 negotiations; EUR-Lex — Directory of EU legislation\" target=\"_blank\" rel=\"noopener\">SOV-DATA-004</a> staðfestir umfang viðbótar-regluverksins og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61964CJ0006\" title=\"CJEU — Case 6/64 Costa v ENEL; Case 26/62 Van Gend en Loos; EEA Agreement Articles 6 and 7; EFTA Court advisory opinion mechanism\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-029</a> útskýrir hvernig forgang ESB-réttar (supremacy) og bein áhrif (direct effect) breyta lagaumhverfinu. Orðalagið «öll lög hættu að vera samin eingöngu innanlands» er hins vegar of víðtækt. Aðildarríki halda löggjafarvaldi á mörgum sviðum — menntun, heilbrigðiskerfi, húsnæðismál, refsiréttur og fleira falla að mestu utan ESB-valdsviðs.",
       "supporting_evidence": [
-        {
-          "id": "EEA-DATA-006",
-          "source_name": "EFTA Secretariat — EEA Agreement factsheet; ESA Annual Report 2024",
-          "source_url": "https://www.efta.int/eea/eea-agreement"
-        },
-        {
-          "id": "EEA-LEGAL-006",
-          "source_name": "EFTA Secretariat — EEA Agreement legal acts database",
-          "source_url": "https://www.efta.int/eea-lex"
-        },
-        {
-          "id": "EEA-DATA-010",
-          "source_name": "EFTA Secretariat — The EEA Agreement; ESA Internal Market Scoreboard; EEA Joint Committee",
-          "source_url": "https://www.efta.int/eea/eea-agreement"
-        },
         {
           "id": "SOV-DATA-004",
           "source_name": "European Commission — Screening reports from Iceland's 2010–2013 negotiations; EUR-Lex — Directory of EU legislation",
           "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
         },
         {
-          "id": "TRADE-COMP-006",
-          "source_name": "Samtök iðnaðarins (SI) — Position on EEA Limitations",
-          "source_url": "https://www.si.is/frettasafn/ees-samningurinn-mikilvaegasti-vidskiptasamningur-islands"
+          "id": "SOV-LEGAL-029",
+          "source_name": "CJEU — Case 6/64 Costa v ENEL; Case 26/62 Van Gend en Loos; EEA Agreement Articles 6 and 7; EFTA Court advisory opinion mechanism",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61964CJ0006"
+        },
+        {
+          "id": "SOV-LEGAL-032",
+          "source_name": "TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview",
+          "source_url": "https://www.efta.int/free-trade/free-trade-agreements"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Fullyrðingin nefnir ekki að aðildarríki halda áfram að setja umtalsverða innlenda löggjöf á sviðum sem ESB hefur ekki valdheimildir á (heilbrigðismál, menntamál, menningarmál o.fl.). Hlutfall ESB-löggjafar af heildarlöggjöf aðildarríkis er mismunandi eftir aðferðafræði — sumar rannsóknir segja 15–20%, aðrar mun meira.",
-      "confidence": 0.85,
+      "missing_context": "<a href=\"https://en.wikipedia.org/wiki/PostNord\" title=\"PostNord / EU Postal Services Directive — Historical overview\" target=\"_blank\" rel=\"noopener\">PREC-DATA-032</a> sýnir að Svíþjóð tók einmitt frumkvæði að frjálsvæðingu póstþjónustu á eigin forsendum, fjórum árum áður en ESB-tilskipun krafðist þess — dæmi um innlenda löggjöf óháð ESB. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A61964CJ0006\" title=\"CJEU — Case 6/64 Costa v ENEL; Case 26/62 Van Gend en Loos; EEA Agreement Articles 6 and 7; EFTA Court advisory opinion mechanism\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-029</a> bendir til þess að munur á EES (óformlegt forræði) og ESB (formlegt forræði) skipti máli en sé umdeildur meðal fræðimanna. Fullyrðingin einfaldar flókið lagalegt landslag þar sem valdsvið ESB og aðildarríkja skarast.",
+      "confidence": 0.75,
       "speakers": [
         {
           "name": "Per Hernmar",
@@ -896,14 +886,14 @@
       "attribution_type": "asserted",
       "claim_count": 20,
       "verdicts": {
-        "supported": 4,
-        "partially_supported": 15,
-        "unverifiable": 1
+        "partially_supported": 16,
+        "unverifiable": 1,
+        "supported": 3
       },
       "stance": "anti_eu",
       "slug": "per-hernmar",
       "mention_count": 1,
-      "credibility": 0.61
+      "credibility": 0.58
     }
   ]
 }

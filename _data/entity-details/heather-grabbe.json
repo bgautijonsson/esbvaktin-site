@@ -7,10 +7,10 @@
   "party": null,
   "stance": "neutral",
   "stance_score": 0.0,
-  "credibility": 0.61,
+  "credibility": 0.63,
   "attribution_counts": {
     "asserted": 1,
-    "quoted": 10,
+    "quoted": 11,
     "paraphrased": 4,
     "mentioned": 1
   },
@@ -18,7 +18,7 @@
   "scorecard": {
     "partially_supported": 7,
     "unverifiable": 1,
-    "supported": 5,
+    "supported": 6,
     "misleading": 1
   },
   "claims": [
@@ -516,6 +516,32 @@
       "article_title": "Ekki minn kaffibolli",
       "article_source": "Vísir",
       "article_date": "2026-03-27"
+    },
+    {
+      "claim_text": "Heather Grabbe, sérfræðingur í stækkunarmálum ESB og ráðgjafi Olli Rehn stækkunarstjóra ESB á árunum 2004–2010, hefur sagt í íslenskum fjölmiðlum að 95% regluverks sambandsins sé ófrávíkjanlegt og að undanþágur frá grunnstoðum þess séu ekki veittar.",
+      "original_quote": "Heather Grabbe, sérfræðingur í stækkunarmálum ESB (hún var ráðgjafi Olli Rehn stækkunarstjóra ESB á árunum 2004-2010), hefur nýlega sagt í íslenskum fjölmiðlum að 95% regluverks sambandsins sé ófrávíkjanlegt og að undanþágur frá grunnstoðum þess séu ekki veittar.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://link.springer.com/book/10.1057/9780230510302\" title=\"Grabbe, H. (2006) 'The EU's Transformative Power: Europeanization Through Conditionality in Central and Eastern Europe', Palgrave Macmillan\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-016</a> staðfestir bæði bakgrunn Heather Grabbe (fyrrverandi starfsmaður stækkunarteymis framkvæmdastjórnarinnar) og 95%-töluna, og útskýrir að eina samningaefnið séu aðlögunartímabil, tæknilegar breytingar og fjárhagsleg fyrirkomulag. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> styður þetta enn frekar með tilvísun í opinbert efni framkvæmdastjórnarinnar. Fullyrðingin er í samræmi við almennan skilning fræðimanna á stækkunarferlinu.",
+      "missing_context": "Talan 95% er nálgunartala sem stækkunarsérfræðingar nota, ekki nákvæm lagaleg úttekt. Aðlögunartímabil geta verið veruleg — Pólland fékk t.d. 12 ára undanþágu frá landakaupum. Sumir fræðimenn benda á að 49. gr. sáttmálans heimili í raun hvaða niðurstöðu sem er (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a>).",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-016",
+          "source_name": "Grabbe, H. (2006) 'The EU's Transformative Power: Europeanization Through Conditionality in Central and Eastern Europe', Palgrave Macmillan",
+          "source_url": "https://link.springer.com/book/10.1057/9780230510302"
+        },
+        {
+          "id": "EEA-LEGAL-021",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "quoted",
+      "article_slug": "hvad-kostar-moguleg-adild-islands-ad-evropusambandinu",
+      "article_title": "Hvað kostar möguleg aðild Íslands að Evrópusambandinu?",
+      "article_source": "Vísir",
+      "article_date": "2026-03-31"
     }
   ],
   "articles": [
@@ -577,6 +603,16 @@
       "source": "Vísir",
       "date": "2026-03-27",
       "claim_count": 2,
+      "attribution_types": [
+        "quoted"
+      ]
+    },
+    {
+      "slug": "hvad-kostar-moguleg-adild-islands-ad-evropusambandinu",
+      "title": "Hvað kostar möguleg aðild Íslands að Evrópusambandinu?",
+      "source": "Vísir",
+      "date": "2026-03-31",
+      "claim_count": 1,
       "attribution_types": [
         "quoted"
       ]

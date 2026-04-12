@@ -10,9 +10,9 @@
   "summary": "Greindar 23 fullyrðingar .",
   "capsule": "Atvinnulíf á Íslandi starfar þegar að stórum hluta innan regluramma ESB í gegnum EES-samninginn og greinin fær rétt að full aðild myndi auka fyrirsjáanleika og öryggi í viðskiptum. Athyglisvert er þó að sjávarútvegur og landbúnaður falla utan EES-samningsins — þar sem aðild að ESB myndi fela í sér þátttöku í sameiginlegri sjávarútvegsstefnu með kvótakerfi og sameiginlegri landbúnaðarstefnu sem hefur aldrei gefið varanlegar undanþágur. Þetta er efni sem þó er ekki þess eðlis að það útiloki aðild, heldur eitt af mörgum atriðum sem þarf að semja um.",
   "verdict_counts": {
-    "partially_supported": 11,
-    "supported": 8,
-    "misleading": 3
+    "partially_supported": 16,
+    "misleading": 3,
+    "supported": 3
   },
   "epistemic_counts": {
     "prediction": 9
@@ -109,8 +109,8 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://icelandmonitor.mbl.is/news/news/2025/11/18/iceland_and_norway_not_granted_exemption/\" title=\"Iceland Monitor — Iceland and Norway not granted exemption (November 2025)\" target=\"_blank\" rel=\"noopener\">TRADE-LEGAL-002</a> staðfestir beint að Framkvæmdastjórn ESB hafnaði kröfu Íslands og Noregs um undanþágu frá verndaraðgerðum vegna kísilmálms, þrátt fyrir rök um frjálsa vöruflutninga samkvæmt EES-samningnum. Framkvæmdastjórnin flokkaði aðgerðirnar sem alþjóðlegar viðskiptavarnir utan gildissviðs innri markaðarins. <a href=\"https://www.si.is/frettasafn/ees-samningurinn-mikilvaegasti-vidskiptasamningur-islands\" title=\"Samtök iðnaðarins (SI) — Position on EEA Limitations\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-006</a> styður einnig þetta og nefnir varanir Samtaka iðnaðarins árið 2024 um áhrif undirboðsaðgerða á íslenska framleiðendur án þess að þeir hefðu atkvæðisrétt.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://icelandmonitor.mbl.is/news/news/2025/11/18/iceland_and_norway_not_granted_exemption/\" title=\"Iceland Monitor — Iceland and Norway not granted exemption (November 2025)\" target=\"_blank\" rel=\"noopener\">TRADE-LEGAL-002</a> staðfestir að umræðan átti sér stað: Framkvæmdastjórn ESB hafnaði kröfu Íslands og Noregs um undanþágu frá verndaraðgerðum vegna kísilmálms og taldi aðgerðirnar vera WTO-samhæfar og utan gildissviðs EES-samningsins. Þetta sýnir vissulega takmörk EES-aðildar. Hins vegar er lagalegri úrlausn ólokið — Ísland og Noregur hafa vísað málinu til EES-sameiginlegu nefndarinnar og hugsanlega EFTA-dómstólsins. Fullyrðingin notar orðalagið «sýndi» sem gefur til kynna fullkláraða niðurstöðu, en úrlausn málsins er enn í vinnslu.",
       "supporting_evidence": [
         {
           "id": "TRADE-LEGAL-002",
@@ -124,8 +124,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Lagaleg rök Íslands og Noregs eru enn óleyst — EFTA-dómstóllinn hefur ekki úrskurðað um þetta tiltekna álitaefni. Afstaða Framkvæmdastjórnarinnar gæti breyst í þríggja mánaða samráðsferlinu. Þetta er fordæmislaust mál um mörk markaðsaðgangs á grundvelli EES-samningsins.",
-      "confidence": 0.88,
+      "missing_context": "Lagaleg rök eru enn óútkljáðuð og EFTA-dómstóllinn hefur ekki úrskurðað í þessu tiltekna máli. Hvort EES-ríki eigi að vera undanþegin verndaraðgerðum ESB er nýtt lagalegt álitamál án skýrs fordæmis. Afstaða Framkvæmdastjórnarinnar gæti þróast meðan á viðræðum stendur.",
+      "confidence": 0.78,
       "speakers": [
         {
           "name": "Magnús Árni Skjöld Magnússon",
@@ -289,7 +289,7 @@
       ],
       "contradicting_evidence": [],
       "missing_context": "Samanburður er flókinn vegna þess að Ísland er þegar með mjög háa landsframleiðslu á mann og víðtækan markaðsaðgang í gegnum EES. Samleitni sem einkenndi 2004-ríkin (frá 50–80% af ESB-meðaltali) á ekki við Ísland sem er vel yfir meðaltali. Grikkland og Kýpur sýna að aðild án traustrar innlendrar stefnu getur aukið á veikleika. Aukinn erlend fjárfesting í Mið- og Austur-Evrópu skýrist að hluta af alþjóðavæðingu og stofnanavæðingu, ekki eingöngu ESB-aðild.",
-      "confidence": 0.6174999999999999,
+      "confidence": 0.6424469999999999,
       "speakers": [
         {
           "name": "Magnús Árni Skjöld Magnússon",
@@ -427,12 +427,12 @@
         "epistemic_type": "prediction"
       },
       "verdict": "supported",
-      "explanation": "SOV-DATA-003 og <a href=\"https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:12008M014:EN:HTML\" title=\"Treaty on European Union, Article 14(2)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-003</a> staðfesta að Ísland fengi a.m.k. 6 sæti í Evrópuþinginu, einn framkvæmdastjóra og sæti í ráðherraráðinu — sambærilegt við Möltu og Lúxemborg. <a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-002</a> bendir á að auðvitað væri atkvæðavægi Íslands í ráðherraráðinu lítið (0,087% íbúahlutfalls) en smáríki hafa engu að síður úrslitamátt í bandalagsmyndun.",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:12008M014:EN:HTML\" title=\"Treaty on European Union, Article 14(2)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-003</a> staðfestir að Ísland myndi fá að lágmarki 6 þingsæti í Evrópuþinginu — sama og Malta, Lúxemborg og Kýpur. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> staðfestir fulltrúa í ráðherraráðinu þar sem hvert aðildarríki hefur eitt atkvæði í 55%-viðmiðinu. <a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-002</a> styður þetta og bendir á fulltrúa í framkvæmdastjórninni. Fullyrðingin nefnir Möltu, Eistland og Slóveníu sem samanburðarríki, og heimildir styðja að smáríki fái fulltrúa í öllum helstu stofnunum ESB.",
       "supporting_evidence": [
         {
-          "id": "EEA-LEGAL-002",
-          "source_name": "EEA Agreement, Articles 99–101",
-          "source_url": "https://www.efta.int/eea/eea-agreement"
+          "id": "SOV-LEGAL-003",
+          "source_name": "Treaty on European Union, Article 14(2)",
+          "source_url": "https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:12008M014:EN:HTML"
         },
         {
           "id": "SOV-DATA-017",
@@ -443,16 +443,11 @@
           "id": "SOV-LEGAL-002",
           "source_name": "Treaty on European Union, Article 16(4)",
           "source_url": "https://eur-lex.europa.eu/summary/glossary/qualified_majority.html"
-        },
-        {
-          "id": "SOV-LEGAL-003",
-          "source_name": "Treaty on European Union, Article 14(2)",
-          "source_url": "https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:12008M014:EN:HTML"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Raunveruleg áhrif smáríkja eru takmörkuð í einfaldan meirihluta eða aukinn meirihluta, en SOV-DATA-003 bendir á að fjögur smáríki saman geti myndað hindrunarminnihluta. Á móti kemur að ESB-aðild myndi einnig þýða ný stefnusvið þar sem Ísland yrði háð sameiginlegum ákvörðunum — atkvæðisréttur kemur á kostnað þess fullveldis sem nú er til staðar utan EES-sviðanna (<a href=\"https://www.eeas.europa.eu/eeas/eu-arctic-policy_en\" title=\"European Commission — EU Arctic Policy, Joint Communication JOIN(2021) 27\" target=\"_blank\" rel=\"noopener\">SOV-DATA-001</a>).",
-      "confidence": 0.9,
+      "missing_context": "Raunveruleg áhrif smáríkja ráðast fremur af bandalagsmyndun og diplómatískum tengslum en formlegu atkvæðamagni. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> bendir á að 0,08% af íbúafjölda ESB gefi lítið atkvæðavægi í auknum meirihlutaatkvæðum. Fullyrðingin lýsir hins vegar formlegu fulltrúarétti, sem er rétt.",
+      "confidence": 0.8,
       "speakers": [
         {
           "name": "Magnús Árni Skjöld Magnússon",
@@ -475,33 +470,23 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> staðfestir að stýrivextir Seðlabankans hafa að meðaltali verið um 6,5% á tímabilinu 2000–2025, samanborið við 1,5% hjá ECB — margfalt hærri í alþjóðlegum samanburði. Nýjustu gögn (mars 2026) sýna 7,50% á Íslandi gegn 2,00% í evrusvæðinu, 5,50 prósentustiga bil. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> staðfestir að munurinn hefur verið viðvarandi og ristist af smæð fjármagnsmarkaðar, hærri stýrivöxtum og gjaldmiðilsáhættu. <a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a> sýnir að Seðlabankinn hækkaði vexti aftur í mars 2026, sem undirstrikar að hávaxtaumhverfið er viðvarandi. Fullyrðingin er vel studd þótt orðalagið «nánast alla tíð» sé vítt — heimildir ná til 2000–2026 og sýna stöðugt mikinn mun.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG\" title=\"World Bank — World Development Indicators\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-009</a> staðfestir að meðalvöxtur Íslands 2000–2023 var 3,0% — hærri en annarra Norðurlanda — en með verulega meiri sveiflu (staðalfrávik 4,2 prósentustig). Þetta styður að Ísland búi við «tiltölulega háa vexti í alþjóðlegum samanburði». Fullyrðingin segir hins vegar «nánast alla tíð» sem er of víðtækt miðað við heimildir sem ná aðeins yfir 2000–2023. Á þessu tímabili lenti Ísland í -8,3% samdrætti árið 2009, sem undirstrikar að háir vextir voru alls ekki stöðug staða yfir allt tímabilið. <a href=\"https://www.europarl.europa.eu/thinktank/en/document/EPRS_BRI(2026)782591\" title=\"IMF World Economic Outlook; Eurostat; EPRS Briefing on EU-Iceland Relations\" target=\"_blank\" rel=\"noopener\">PREC-DATA-025</a> styður að Ísland sé með hæsta VLF á mann í Evrópu, en hátt VLF á mann þýðir ekki endilega viðvarandi háa vexti.",
       "supporting_evidence": [
         {
-          "id": "CURRENCY-DATA-015",
-          "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
-          "source_url": "https://www.sedlabanki.is/peningastefna/vaxtaakvardir/"
+          "id": "CURRENCY-DATA-009",
+          "source_name": "World Bank — World Development Indicators",
+          "source_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG"
         },
         {
-          "id": "CURRENCY-DATA-017",
-          "source_name": "Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar",
-          "source_url": "https://www.sedlabanki.is/peningastefna/vaxtaakvardir/"
-        },
-        {
-          "id": "HOUS-DATA-005",
-          "source_name": "Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase",
-          "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
-        },
-        {
-          "id": "TRADE-COMP-004",
-          "source_name": "Seðlabanki Íslands — Monetary Bulletin; ECB Statistical Data Warehouse",
-          "source_url": "https://cb.is/statistics/official-exchange-rate/"
+          "id": "PREC-DATA-025",
+          "source_name": "IMF World Economic Outlook; Eurostat; EPRS Briefing on EU-Iceland Relations",
+          "source_url": "https://www.europarl.europa.eu/thinktank/en/document/EPRS_BRI(2026)782591"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Heimildir ná aftur til ársins 2000 en fullyrðingin segir «nánast alla tíð» sem gæti átt við lengra tímabil. Vextir á Íslandi voru lágir á árunum 2014–2017 (stýrivextir 4,25–5,25%) — þó enn hærri en í evrusvæðinu á sama tíma. Háir vextir endurspegla ekki eingöngu gjaldmiðilsfyrirkomulag heldur einnig smæð hagkerfisins, verðbólgusögu og innlendan eftirspurnarþrýsting.",
-      "confidence": 0.88,
+      "missing_context": "Heimildir ná aðeins yfir 2000–2023, sem nær ekki til fullyrðingarinnar um «nánast alla tíð». Þá var Ísland í djúpum samdrætti 2009–2010, sem dregur úr mynd af stöðugum háum vexti. <a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG\" title=\"World Bank — World Development Indicators\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-009</a> bendir á að háir vextir endurspegli ekki eingöngu styrk, heldur einnig þröngt útflutningsgrundvöll og efnahagssveiflur. Engin heimild ber saman vaxtarsögu Íslands yfir lengra tímabil (t.d. frá 1960) sem gæti staðfest eða hrakið «nánast alla tíð».",
+      "confidence": 0.72,
       "speakers": [
         {
           "name": "Magnús Árni Skjöld Magnússon",
@@ -525,17 +510,12 @@
         "epistemic_type": "factual"
       },
       "verdict": "supported",
-      "explanation": "Heimildir staðfesta beint alla þrjá þætti fullyrðingarinnar. <a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> tengir vaxtamuninn sérstaklega við «Iceland's higher inflation, currency risk premium, and the CBI's need to defend the króna» — sem samsvara nákvæmlega smæð gjaldmiðils, áhættu og sveiflukenndri þróun. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> staðfestir að hærri vextir ráðist af smæð fjármagnsmarkaðar og viðkvæmni krónunnar. <a href=\"https://cb.is/statistics/official-exchange-rate/\" title=\"Seðlabanki Íslands — Monetary Bulletin; ECB Statistical Data Warehouse\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-004</a> sýnir að sveiflur krónunnar (10–12% árlegt frávik) eru margfalt meiri en í evrusvæðinu eða hjá öðrum norrænum gjaldmiðlum. <a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG\" title=\"World Bank — World Development Indicators\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-009</a> skráir sveiflukenndari hagvöxt á Íslandi en í öðrum Norðurlöndum.",
+      "explanation": "<a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> tengir vaxtamuninn við verðbólgu, gjaldmiðilsáhættu og þörf Seðlabankans á að verja krónuna. <a href=\"https://cb.is/statistics/official-exchange-rate/\" title=\"Seðlabanki Íslands — Monetary Bulletin; ECB Statistical Data Warehouse\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-004</a> staðfestir miklar sveiflur krónunnar — 10–12% meðalsveiflur á ári samanborið við nánast engar í evrusvæðinu. <a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG\" title=\"World Bank — World Development Indicators\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-009</a> sýnir sveiflukenndari hagþróun Íslands (staðalfrávik 4,2 prósentustig á móti 1,5–2,4 í öðrum Norðurlöndum). Fullyrðingin notar «meðal annars» sem gefur réttilega til kynna að þessir þættir séu hluti af stærri mynd.",
       "supporting_evidence": [
         {
           "id": "CURRENCY-DATA-015",
           "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
           "source_url": "https://www.sedlabanki.is/peningastefna/vaxtaakvardir/"
-        },
-        {
-          "id": "HOUS-DATA-005",
-          "source_name": "Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase",
-          "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
         },
         {
           "id": "TRADE-COMP-004",
@@ -548,14 +528,14 @@
           "source_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG"
         },
         {
-          "id": "SOV-LEGAL-005",
-          "source_name": "Central Bank of Iceland — Monetary policy framework",
-          "source_url": "https://sedlabanki.is/peningastefna/"
+          "id": "HOUS-DATA-005",
+          "source_name": "Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase",
+          "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Smæð gjaldmiðils og sveiflukennd hagþróun eru ekki einu skýringarnar — <a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG\" title=\"World Bank — World Development Indicators\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-009</a> bendir á að smæð hagkerfisins og þröngur útflutningsgrunnur skipti líka máli, óháð gjaldmiðli. Finnland (evrusvæðisaðili) sýnir einnig tiltölulega miklar sveiflur (staðalfrávik 2,9%), sem bendir til þess að sjálfstæður gjaldmiðill sé ekki eini orsakavaldurinn. Fullyrðingin notar «meðal annars» sem skilur rúm fyrir aðra þætti, og er því vel afmörkuð.",
-      "confidence": 0.88,
+      "missing_context": "Verðbólga er ein helsta orsök hárra vaxta á Íslandi en er ekki nefnd sérstaklega í fullyrðingunni — <a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> nefnir «higher inflation» fyrst meðal orsaka. Einnig er umdeilt hvort lægri vextir myndu sjálfkrafa leiða af ESB-aðild og evru, þar sem <a href=\"https://www.visindavefur.is/svar.php?id=60990\" title=\"Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-016</a> sýnir að vaxtasamrás í evrusvæðinu reyndist tímabundin og mat á áhættu einstakra aðildarríkja skiptir máli.",
+      "confidence": 0.85,
       "speakers": [
         {
           "name": "Magnús Árni Skjöld Magnússon",
@@ -747,7 +727,7 @@
       ],
       "contradicting_evidence": [],
       "missing_context": "Heimildir staðfesta ekki beint að byggðasjóðir séu «eitt stærsta útgjaldasvið» ESB — sameiginlega landbúnaðarstefnan er stærst. Samheldnissjóðir eru næststærsti liðurinn (um þriðjungur fjárhagsáætlunar ESB), en engin heimild í safninu staðfestir þá tölu. Tilgangur sjóðanna er einnig víðtækari en lýsingin gefur til kynna — þeir styðja við efnahagsleg og félagsleg skilyrði almennt, ekki eingöngu dreifbýli.",
-      "confidence": 0.6,
+      "confidence": 0.57,
       "speakers": [
         {
           "name": "Magnús Árni Skjöld Magnússon",
@@ -780,9 +760,14 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://cohesiondata.ec.europa.eu/overview\" title=\"European Commission — Cohesion Policy data; ERDF Regulation (EU) 2021/1058\" target=\"_blank\" rel=\"noopener\">HOUSING-PRECEDENT-001</a> staðfestir notkun ESB-sjóða til orkuskiptaverkefna (t.d. 200 milljónir evra í Eistlandi, 300 milljónir í Króatíu). <a href=\"https://en.rannis.is/funding/research/\" title=\"University of Iceland — Rector's statement on EU membership; Rannís — Horizon Europe participation data\" target=\"_blank\" rel=\"noopener\">POL-DATA-018</a> nefnir rannsóknarfjármögnun í gegnum Horizon Europe og <a href=\"https://www.efta.int/about-efta/efta-secretariat/efta-budget\" title=\"EFTA Secretariat — EFTA budget; various academic estimates\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-005</a> vísar til aðgangs að byggðasjóðum, rannsóknarfjármögnun og Erasmus+. Lýsingin er í samræmi við þekkta starfsemi ESB-sjóðanna.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að byggðasjóðir ESB hafa fjármagnað fjölbreyttar framkvæmdir í Evrópu. <a href=\"https://cohesiondata.ec.europa.eu/overview\" title=\"European Commission — Cohesion Policy 2021–2027; Eurostat regional GDP data\" target=\"_blank\" rel=\"noopener\">EEA-DATA-016</a> lýsir 392 milljarða evra fjárveitingu til 2021–2027, ætlaðri til innviða, nýsköpunar, menntunar og efnahagslegrar samþættingar. <a href=\"https://cohesiondata.ec.europa.eu/overview\" title=\"European Commission — Cohesion Policy data; ERDF Regulation (EU) 2021/1058\" target=\"_blank\" rel=\"noopener\">HOUSING-PRECEDENT-001</a> gefur dæmi um orkuskiptafjárfestingar í Eistlandi og Króatíu. <a href=\"https://en.rannis.is/funding/research/\" title=\"University of Iceland — Rector's statement on EU membership; Rannís — Horizon Europe participation data\" target=\"_blank\" rel=\"noopener\">POL-DATA-018</a> nefnir Horizon Europe og rannsóknarinnviði. Hins vegar nefnir fullyrðingin «stafræna innviði» og «græn orkuskipti» sérstaklega, og heimildir staðfesta ekki öll atriðin jafn skýrt — sérstaklega eru dæmin um stafræna innviði ekki beinlínis nefnd í þessum heimildum. Fullyrðingin er í aðalatriðum rétt en of nákvæm í einstökum liðum miðað við framlagðar heimildir.",
       "supporting_evidence": [
+        {
+          "id": "EEA-DATA-016",
+          "source_name": "European Commission — Cohesion Policy 2021–2027; Eurostat regional GDP data",
+          "source_url": "https://cohesiondata.ec.europa.eu/overview"
+        },
         {
           "id": "HOUSING-PRECEDENT-001",
           "source_name": "European Commission — Cohesion Policy data; ERDF Regulation (EU) 2021/1058",
@@ -794,14 +779,14 @@
           "source_url": "https://en.rannis.is/funding/research/"
         },
         {
-          "id": "TRADE-COMP-005",
-          "source_name": "EFTA Secretariat — EFTA budget; various academic estimates",
-          "source_url": "https://www.efta.int/about-efta/efta-secretariat/efta-budget"
+          "id": "PREC-DATA-023",
+          "source_name": "Eurostat GDP per capita in PPS; European Commission Enlargement Reviews",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/sdg_10_10/default/table"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Fullyrðingin sleppur mikilvægu samhengi: Ísland tekur nú þegar þátt í Horizon Europe sem aðildarríki (<a href=\"https://en.rannis.is/funding/research/\" title=\"University of Iceland — Rector's statement on EU membership; Rannís — Horizon Europe participation data\" target=\"_blank\" rel=\"noopener\">POL-DATA-018</a>) og greiðir til EES-sjóðanna (<a href=\"https://eeagrants.org/en/fmo/about-us\" title=\"EEA Grants — Financial mechanism overview\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-001</a>). Umfang fjármögnunar frá byggðasjóðum ræðst af efnahagslegum viðmiðum og Ísland myndi líklega fá takmarkað fjármagn vegna hárrar landsframleiðslu á mann (<a href=\"https://cohesiondata.ec.europa.eu/overview\" title=\"European Commission — Cohesion Policy data; ERDF Regulation (EU) 2021/1058\" target=\"_blank\" rel=\"noopener\">HOUSING-PRECEDENT-001</a>).",
-      "confidence": 0.85,
+      "missing_context": "Ísland myndi líklega falla í flokk «þróaðra svæða» (VLF yfir 100% af ESB-meðaltali) og fá takmarkað fjármagn úr byggðasjóðum (<a href=\"https://cohesiondata.ec.europa.eu/overview\" title=\"European Commission — Cohesion Policy 2021–2027; Eurostat regional GDP data\" target=\"_blank\" rel=\"noopener\">EEA-DATA-016</a>). Finnland fær þó um 3 milljarða evra í byggðafjármögnun 2021–2027 þrátt fyrir háa landsframleiðslu, vegna sérákvæða um strjálbýl svæði á norðurslóðum. Flestar greiningar benda til þess að Ísland yrði nettógreiðandi í ESB-fjárlagakerfið.",
+      "confidence": 0.78,
       "speakers": [
         {
           "name": "Magnús Árni Skjöld Magnússon",
@@ -835,7 +820,7 @@
         "epistemic_type": "prediction"
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13\" target=\"_blank\" rel=\"noopener\">EEA-DATA-004</a> staðfestir að sjávarútvegur (13. kafli) hafi verið umdeildasti kaflinn í aðildarviðræðum 2010–2013. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); OECD Economic Surveys: Iceland 2021\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-019</a> bendir á að framkvæmdastjórnin hafi árið 2010 nefnt landbúnað sem krefjist mest aðlögunar allra stefnusviða. <a href=\"https://maskina.is/53-hlynnt-aframhaldandi-adildarvidraedum-vid-esb/\" title=\"Maskína — Voter priorities survey\" target=\"_blank\" rel=\"noopener\">POLL-DATA-003</a> sýnir að kjósendur sjálfir setja sjávarútveg í fyrsta sæti meðal álitamála (um 60%).",
+      "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); OECD Economic Surveys: Iceland 2021\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-019</a> staðfestir að Framkvæmdastjórn ESB greindi landbúnað sem svið sem krefðist mestu aðlögunar við aðild Íslands, og sjávarútvegur og landbúnaður falla utan EES-samningsins. <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> sýnir að Hagfræðistofnun HÍ mat sjávarútveg, landbúnað og byggðamál sem helstu áhrifasvið ESB-aðildar. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Aðildarviðræður Íslands og ESB — Landbúnaðarkaflinn (Chapter 11); Utanríkisráðuneytið\" target=\"_blank\" rel=\"noopener\">EEA-DATA-013</a> lýsir ítarlegum varnarmarkmiðum Íslands í landbúnaðarkaflanum (11. kafli). Þetta er vel studd fullyrðing sem endurspeglar bæði fræðilega greiningu og reynslu af viðræðunum 2010–2013.",
       "supporting_evidence": [
         {
           "id": "AGRI-DATA-019",
@@ -843,29 +828,29 @@
           "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
         },
         {
-          "id": "AGRI-LEGAL-003",
-          "source_name": "Summary of findings: Status of the accession negotiations between Iceland and the EU (Icelandic Ministry for Foreign Affairs, 2013); European Parliament briefing on EU-Iceland relations (2026)",
-          "source_url": "https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782591/EPRS_BRI(2026)782591_EN.pdf"
+          "id": "EEA-DATA-014",
+          "source_name": "Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)",
+          "source_url": "https://ioes.hi.is/en/institute-economic-studies"
         },
         {
-          "id": "EEA-DATA-004",
-          "source_name": "Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13",
-          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+          "id": "EEA-DATA-013",
+          "source_name": "Aðildarviðræður Íslands og ESB — Landbúnaðarkaflinn (Chapter 11); Utanríkisráðuneytið",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
         },
         {
-          "id": "POL-DATA-014",
-          "source_name": "LÍÚ — Position paper on EU membership (2025); campaign finance declarations",
-          "source_url": null
+          "id": "EEA-DATA-028",
+          "source_name": "Vísindavefurinn — Eiríkur Bergmann, Associate Professor, Bifröst University (2006)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=5590"
         },
         {
-          "id": "POLL-DATA-003",
-          "source_name": "Maskína — Voter priorities survey",
-          "source_url": "https://maskina.is/53-hlynnt-aframhaldandi-adildarvidraedum-vid-esb/"
+          "id": "FISH-COMP-005",
+          "source_name": "UK Marine Management Organisation — UK Sea Fisheries Statistics 2023; UK Trade Info",
+          "source_url": "https://www.gov.uk/government/statistics/uk-sea-fisheries-annual-statistics-report-2023"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Hvorugur kaflinn — sjávarútvegur né landbúnaður — var opnaður í viðræðunum 2010–2013 (<a href=\"https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782591/EPRS_BRI(2026)782591_EN.pdf\" title=\"Summary of findings: Status of the accession negotiations between Iceland and the EU (Icelandic Ministry for Foreign Affairs, 2013); European Parliament briefing on EU-Iceland relations (2026)\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-003</a>). Endurnýjaðar viðræður myndu þurfa að byrja nánast frá grunni á þessum sviðum og regluverkið hefur breyst verulega síðan.",
-      "confidence": 0.95,
+      "missing_context": "Fullyrðingin er spá (prediction) um framtíðarviðræður. Hún byggist á sterkum fordæmum en nýja stækkunaraðferðafræðin frá 2020 skipuleggur samningakafla í sex þemaklasa, sem gæti breytt formlegu sniði viðræðnanna þó efnisleg áhersla á sjávarútveg og landbúnað haldist.",
+      "confidence": 0.8,
       "speakers": [
         {
           "name": "Magnús Árni Skjöld Magnússon",
@@ -918,7 +903,7 @@
           "source_url": null
         }
       ],
-      "missing_context": "Rannsóknir sýna mögulega 30–50% tekjuskerðingu bænda án sérstakra verndarráðstafana (<a href=\"https://chamber.is/intros/iceland-accession-negotiations-with-the-eu\" title=\"Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-009</a>). Sameiginleg sjávarútvegsstefna krefst kvótadeilingar og jafns aðgangs að auðlindum sem er í grundvallarandstöðu við íslenska kerfið (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13\" target=\"_blank\" rel=\"noopener\">EEA-DATA-004</a>). Áheyrnarsamtök þessara greina eru í sterkri andstöðu (POL-DATA-005, ORG-DATA-002). Orðalagið \"engin ástæða\" er of afgerandi miðað við heimildir sem benda á alvarlegar áskoranir.",
+      "missing_context": "Rannsóknir sýna mögulega 30–50% tekjuskerðingu bænda án sérstakra verndarráðstafana (<a href=\"https://chamber.is/intros/iceland-accession-negotiations-with-the-eu\" title=\"Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-009</a>). Sameiginleg sjávarútvegsstefna krefst kvótadeilingar og jafns aðgangs að auðlindum sem er í grundvallarandstöðu við íslenska kerfið (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13\" target=\"_blank\" rel=\"noopener\">EEA-DATA-004</a>). Áheyrnarsamtök þessara greina eru í sterkri andstöðu (POL-DATA-005, <a href=\"https://www.nutiminn.is/forsida/atvinnulifid-snyst-gegn-esb-vidraedum/\" title=\"Nútíminn / Félag atvinnurekenda\" target=\"_blank\" rel=\"noopener\">ORG-DATA-002</a>). Orðalagið \"engin ástæða\" er of afgerandi miðað við heimildir sem benda á alvarlegar áskoranir.",
       "confidence": 0.85,
       "speakers": [
         {
@@ -942,8 +927,8 @@
         "confidence": 0.9,
         "epistemic_type": "prediction"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en\" title=\"European Commission — CAP at a glance; MFF 2021–2027 Regulation (EU) 2020/2093\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-015</a> sýnir að sameiginlega landbúnaðarstefnan (CAP) nemar um 31% af fjárhagsáætlun ESB — 387 milljarðar evra á tímabilinu 2021–2027 — og hefur verið stærsti einstaki útgjaldaliðurinn síðan á sjöunda áratugnum, þótt hlutfallið hafi lækkað úr 70%. AGRI-LEGAL-001 staðfestir almennt hlutverk stefnunnar. Engin heimild bendir til grundvallarbreytinga á landbúnaðarstuðningi ESB.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að landbúnaðarstefna hafi verið eitt af höfuðmarkmiðum Evrópusamstarfsins frá upphafi — <a href=\"https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en\" title=\"European Commission — CAP at a glance; MFF 2021–2027 Regulation (EU) 2020/2093\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-015</a> sýnir að sameiginlega landbúnaðarstefnan (CAP) er stærsti einstaki liður í fjárhagsáætlun ESB (31% eða 386,6 milljarðar evra 2021–2027). Hins vegar segir fullyrðingin «engar líkur á að það breytist» sem er of víðtækt. Samkvæmt sömu heimild hefur hlutfall CAP fallið úr um 70% á níunda áratugnum í 31% nú, sem sýnir stöðugt minnkandi vægi. <a href=\"https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782591/EPRS_BRI(2026)782591_EN.pdf\" title=\"Summary of findings: Status of the accession negotiations between Iceland and the EU (Icelandic Ministry for Foreign Affairs, 2013); European Parliament briefing on EU-Iceland relations (2026)\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-003</a> nefnir einnig að umbætur á CAP eftir 2027 eru í umræðu og gætu breytt uppbyggingu stefnunnar verulega.",
       "supporting_evidence": [
         {
           "id": "AGRI-DATA-015",
@@ -954,11 +939,16 @@
           "id": "AGRI-LEGAL-004",
           "source_name": "EU accession treaties (1995, 2003, 2005, 2011); European Commission enlargement policy",
           "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        },
+        {
+          "id": "EEA-DATA-013",
+          "source_name": "Aðildarviðræður Íslands og ESB — Landbúnaðarkaflinn (Chapter 11); Utanríkisráðuneytið",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Hlutfall landbúnaðar af fjárhagsáætluninni hefur þó lækkað verulega — úr um 70% á níunda áratugnum í 31% nú (<a href=\"https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en\" title=\"European Commission — CAP at a glance; MFF 2021–2027 Regulation (EU) 2020/2093\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-015</a>). Verndun evrópsks landbúnaðar þýðir ekki endilega verndun íslensks landbúnaðar — <a href=\"https://www.oecd.org/agriculture/topics/agricultural-policy-monitoring-and-evaluation/\" title=\"OECD — Agricultural Policy Monitoring and Evaluation 2024; Bændasamtök Íslands\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-004</a> sýnir að íslenski stuðningurinn (55–60% af brúttótekjum bænda) er mun hærri en ESB-meðaltalið (19%) og umbreyting í sameiginlega stefnuna gæti leitt til lægri stuðnings.",
-      "confidence": 0.85,
+      "missing_context": "Hlutfall CAP af fjárhagsáætlun ESB hefur lækkað úr um 70% í 31% á fjórum áratugum og eftir-2027 umbætur gætu breytt uppbyggingunni enn frekar. Þótt vernd landbúnaðar sé enn meginmarkmið er áherslan á breytingu — frá tollvernd yfir í beinar greiðslur og sjálfbærni (Green Deal, Farm to Fork). Fullyrðingin um «engar líkur á breytingu» vanmetur þessa þróun.",
+      "confidence": 0.8,
       "speakers": [
         {
           "name": "Magnús Árni Skjöld Magnússon",
@@ -1025,28 +1015,28 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.gov.uk/government/collections/uk-sea-fisheries-annual-statistics\" title=\"UK Marine Management Organisation — UK Sea Fisheries Statistics; House of Lords European Affairs Committee — Brexit and fisheries (2023)\" target=\"_blank\" rel=\"noopener\">PREC-HIST-014</a> sýnir að sjávarútvegur Bretlands hafi numið um 0,1% af landsframleiðslu. <a href=\"https://www.gov.uk/government/statistics/uk-sea-fisheries-annual-statistics-report-2023\" title=\"UK Marine Management Organisation — UK Sea Fisheries Statistics 2023; UK Trade Info\" target=\"_blank\" rel=\"noopener\">FISH-COMP-005</a> staðfestir að breskur sjávarútvegur hafi verið umtalsverður hluti ESB-veiðanna og útganga þeirra hafi dregið úr sjávarútvegsvægi ESB. Til samanburðar nema veiðar Íslands um 8% af landsframleiðslu þegar afleidd starfsemi er talin með (POL-DATA-005).",
+      "verdict": "partially_supported",
+      "explanation": "FISH-DATA-021 sýnir að sjávarútvegur vegur mun minna í einstökum ESB-ríkjum en á Íslandi — heildarafli ESB-27 er um 4,2 milljónir tonna, sem samsvarar aðeins um 9 kg á mann á ári samanborið við 2.800 kg á Íslandi. Þessi hlutfallslegi munur styður kjarnann í fullyrðingunni. Þó er orðið «alger aukabúgrein» of aftrátt — í ríkjum eins og Spáni (850.000 tonn), Danmörku (700.000 tonn) og Frakklandi (500.000 tonn) er sjávarútvegur umtalsverður atvinnuvegur, þótt hann skipti minna máli en á Íslandi. Fullyrðingin um áhrif Brexit-útgöngu Bretlands á ESB-sjávarútveg er studd af <a href=\"https://www.gov.uk/government/statistics/uk-sea-fisheries-annual-statistics-report-2023\" title=\"UK Marine Management Organisation — UK Sea Fisheries Statistics 2023; UK Trade Info\" target=\"_blank\" rel=\"noopener\">FISH-COMP-005</a> sem sýnir umtalsverðan breskann afla (640.000 tonn), en heimildir staðfesta ekki beint að sjávarútvegur sé «alger aukabúgrein» í öllum ESB-ríkjum eftir útgöngu Bretlands.",
       "supporting_evidence": [
         {
-          "id": "PREC-HIST-014",
-          "source_name": "UK Marine Management Organisation — UK Sea Fisheries Statistics; House of Lords European Affairs Committee — Brexit and fisheries (2023)",
-          "source_url": "https://www.gov.uk/government/collections/uk-sea-fisheries-annual-statistics"
+          "id": "FISH-DATA-021",
+          "source_name": "Eurostat — Fisheries statistics (fish_ca_main); Hagstofa Íslands",
+          "source_url": null
+        },
+        {
+          "id": "FISH-DATA-020",
+          "source_name": "Eurostat — Catches by fishing area (fish_ca_main)",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/fish_ca_main/"
         },
         {
           "id": "FISH-COMP-005",
           "source_name": "UK Marine Management Organisation — UK Sea Fisheries Statistics 2023; UK Trade Info",
           "source_url": "https://www.gov.uk/government/statistics/uk-sea-fisheries-annual-statistics-report-2023"
-        },
-        {
-          "id": "TRADE-DATA-001",
-          "source_name": "Hagstofa Íslands — External trade statistics",
-          "source_url": "https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__utanrikisverslun/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Þrátt fyrir lágt hlutfall af landsframleiðslu hefur sjávarútvegur pólitískt vægi í ákveðnum ESB-ríkjum, t.d. Spáni, Frakklandi og Danmörku, og sameiginleg sjávarútvegsstefna er enn umdeild (<a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development\" title=\"European Parliament — The Common Fisheries Policy: Origins and Development\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-005</a>). Orðalagið \"alger aukabúgrein\" á við um ESB-meðaltal en ekki endilega öll ríki.",
-      "confidence": 0.85,
+      "missing_context": "Aflasamanburður í tonnum endurspeglar ekki endilega efnahagslegt vægi — sum ESB-ríki veiða verðmætari tegundir. Spánn, Danmörk og Frakkland hafa verulegan sjávarútveg og í strandbyggðum getur greinin verið lykilatvinnuvegur (<a href=\"https://stecf.ec.europa.eu/reports_en\" title=\"European Commission — The EU Fishing Fleet reports (STECF Annual Economic Reports)\" target=\"_blank\" rel=\"noopener\">FISH-COMP-002</a>). Orðalagið «alger aukabúgrein í nánast öllum ESB-ríkjum» er of vítt.",
+      "confidence": 0.78,
       "speakers": [
         {
           "name": "Magnús Árni Skjöld Magnússon",
@@ -1159,7 +1149,7 @@
           "source_url": "https://www.bondi.is/frettir/kynningarefni"
         }
       ],
-      "missing_context": "Bændasamtök Íslands (ORG-DATA-002) og Landssamband íslenskra útvegsmanna (POL-DATA-005) hafa rökstuddar áhyggjur og vísa í rannsóknir og gögn. Bændasamtökin hafa sjálf bent á \"upplýsingaóreiðu\" í ESB-umræðunni (ORG-DATA-002). Auðvitað má deila um umfang áhættunnar — en að kalla áhyggjur sem styðjast við rannsóknir og faglegar greiningar \"hræðsluáróður\" er villandi einföldun sem lýsir meira afstöðu höfundarins en efnislegu mati.",
+      "missing_context": "Bændasamtök Íslands (<a href=\"https://www.nutiminn.is/forsida/atvinnulifid-snyst-gegn-esb-vidraedum/\" title=\"Nútíminn / Félag atvinnurekenda\" target=\"_blank\" rel=\"noopener\">ORG-DATA-002</a>) og Landssamband íslenskra útvegsmanna (POL-DATA-005) hafa rökstuddar áhyggjur og vísa í rannsóknir og gögn. Bændasamtökin hafa sjálf bent á \"upplýsingaóreiðu\" í ESB-umræðunni (<a href=\"https://www.nutiminn.is/forsida/atvinnulifid-snyst-gegn-esb-vidraedum/\" title=\"Nútíminn / Félag atvinnurekenda\" target=\"_blank\" rel=\"noopener\">ORG-DATA-002</a>). Auðvitað má deila um umfang áhættunnar — en að kalla áhyggjur sem styðjast við rannsóknir og faglegar greiningar \"hræðsluáróður\" er villandi einföldun sem lýsir meira afstöðu höfundarins en efnislegu mati.",
       "confidence": 0.8,
       "speakers": [
         {
@@ -1184,14 +1174,14 @@
       "attribution_type": "asserted",
       "claim_count": 22,
       "verdicts": {
-        "partially_supported": 11,
-        "supported": 8,
-        "misleading": 3
+        "partially_supported": 16,
+        "misleading": 3,
+        "supported": 3
       },
       "stance": "pro_eu",
       "slug": "magnus-arni-skjold-magnusson",
-      "mention_count": 5,
-      "credibility": 0.72,
+      "mention_count": 7,
+      "credibility": 0.69,
       "speech_count": 7
     }
   ]

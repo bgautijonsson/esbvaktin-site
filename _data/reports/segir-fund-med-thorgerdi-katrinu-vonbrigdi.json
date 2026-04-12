@@ -10,8 +10,8 @@
   "summary": "Greindar 11 fullyrðingar. Niðurstöður: 4 stutt af heimildum, 4 stutt að hluta, 3 ekki hægt að sannreyna. Sjónarhorn: hallar á ESB-neikvæða hlið. Heildstæðni: 30%.",
   "capsule": "Fundur utanríkismálanefndar um ESB-aðild var opinn fundur sem hafði það hlutverk að veita þingmönnum og þjóðinni upplýsingar fyrir þjóðaratkvæðagreiðsluna — greinin fær þennan ramma rétt. Áhugavert er hins vegar að Írland tapaði um 57.000 tonnum í fiskveiðikvóta árið 2026 eftir að fjögur aðildarríki ESB lokuðu fyrir sérstaka kvótavernd þess, sem sýnir hvernig stór ríki geta hnekkt smærri í sjávarútvegsmálum innan ESB. Þetta fordæmi hefur aldrei komið opinberlega til umræðu á þinginu — þótt það sé nákvæmlega sú tegund gagna sem nefndin var sett saman til að kanna.",
   "verdict_counts": {
-    "supported": 4,
-    "partially_supported": 4
+    "partially_supported": 6,
+    "supported": 2
   },
   "epistemic_counts": null,
   "claim_count": 8,
@@ -31,8 +31,8 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir að þjóðaratkvæðagreiðslan snýst um hvort halda eigi áfram viðræðum sem voru stöðvaðar árið 2013. Viðræður hafa ekki verið teknar upp aftur og umsókn Íslands frá 2009 er enn í biðstöðu. <a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a> staðfestir einnig að bréf Gunnars Braga Sveinssonar til ESB frá 2015 leiddi ekki til formlegrar afturköllunar, en viðræður hafa engu að síður ekki hafist á ný. Fullyrðingin er í samræmi við þekkt réttarstaða máls.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra, flutti þingsályktunartillögu um þjóðaratkvæðagreiðslu þar sem spurningin hljóðaði: «Á að halda áfram viðræðum um aðild Íslands að Evrópusambandinu?» (<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a>). Orðalagið «halda áfram» gefur til kynna að viðræður hafi þegar átt sér stað. Samkvæmt <a href=\"https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/\" title=\"Althingi — Historical records; European Commission accession records\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-010</a> fóru aðildarviðræður fram á árunum 2010–2013 og Össur Skarphéðinsson leiddi ferlið sem utanríkisráðherra. Fullyrðingin um að «engar aðildarviðræður» hafi verið hafnar samræmist ekki þessum heimildum — viðræður hófust 2010 þótt þeim hafi verið frestað 2013.",
       "supporting_evidence": [
         {
           "id": "SOV-PARL-001",
@@ -40,19 +40,20 @@
           "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
         },
         {
-          "id": "PARTY-DATA-011",
-          "source_name": "Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews",
-          "source_url": "https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/"
-        },
-        {
-          "id": "SOV-PARL-004",
-          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir (flutningsræða, 154. löggjafarþing); Logi Einarsson (flutningsræða, 153. löggjafarþing)",
-          "source_url": "https://www.althingi.is/altext/raeda/154/rad20230919T175556.html"
+          "id": "POLITICAL-DATA-004",
+          "source_name": "Althingi — Session 157; Viðreisn party platform",
+          "source_url": "https://www.althingi.is/thingmenn/thingflokkar/vidreisn/"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Réttarstaðan er þó flóknari en fullyrðingin gefur til kynna. ESB hefur aldrei viðurkennt formlega afturköllun umsóknarinnar, sem þýðir að Ísland er tæknilega enn umsóknarríki. Aðildarviðræður hófust í reynd árið 2010 og nokkrir samningskaflar voru opnaðir áður en þær voru stöðvaðar 2013 — þannig að réttara væri að segja að viðræður séu ekki «yfirstandandi» frekar en að þær hafi aldrei hafist.",
-      "confidence": 0.85,
+      "contradicting_evidence": [
+        {
+          "id": "POLITICAL-DATA-010",
+          "source_name": "Althingi — Historical records; European Commission accession records",
+          "source_url": "https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/"
+        }
+      ],
+      "missing_context": "Hugsanlegt er að Þorgerður Katrín hafi átt við að engar nýjar viðræður hafi verið hafnar undir núverandi ríkisstjórn, en heimildir staðfesta ekki þá nákvæmu orðanotkun. Aðildarviðræður 2010–2013 voru frystar en aldrei formlega afturkallaðar samkvæmt ESB.",
+      "confidence": 0.65,
       "speakers": [
         {
           "name": "Þorgerður Katrín Gunnarsdóttir",
@@ -232,8 +233,8 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> staðfestir að þjóðaratkvæðagreiðslan er áætluð 29. ágúst 2026, sem er í lok sumars. Alþingi er jafnan í sumarleyfi frá júní til september og er því ekki að störfum þann tíma. <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> sýnir að stjórnarandstaðan hefur gagnrýnt dagsetninguna sem of snemma til að tryggja næga umræðu, og <a href=\"https://www.althingi.is/\" title=\"Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-028</a> staðfestir að andstæðingar hafa gert athugasemdir við tímasetninguna. Báðir hlutar fullyrðingarinnar — lok sumars og að þingið er ekki að störfum — eru í samræmi við heimildir.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> staðfestir að þjóðaratkvæðagreiðslan er áætluð 29. ágúst 2026, sem er í lok sumars. Hins vegar staðfesta heimildir ekki beint þann hluta fullyrðingarinnar sem segir að «þingið er ekki að störfum» á þeim tíma. Alþingi hefur reglulega haustþing sem hefst 1. október samkvæmt stjórnarskrá, en sumarhlé þingsins hefst yfirleitt í júní. Heimildir fjalla ekki um hvort þingmenn séu formlega í sumarleyfi 29. ágúst eða hvort Alþingi gæti verið kallað saman, og fullyrðingin gæti gefið ranga mynd ef þing er í raun rekið til þess tíma.",
       "supporting_evidence": [
         {
           "id": "SOV-DATA-006",
@@ -241,19 +242,14 @@
           "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
         },
         {
-          "id": "SOV-PARL-005",
-          "source_name": "Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)",
-          "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
-        },
-        {
-          "id": "SOV-LEGAL-028",
-          "source_name": "Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24",
-          "source_url": "https://www.althingi.is/"
+          "id": "SOV-LEGAL-026",
+          "source_name": "Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland), Articles 26, 65, 79; Althingi records on 2012 referendum follow-up",
+          "source_url": "https://www.althingi.is/lagas/nuna/1944033.html"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Andstæðingar hafa gagnrýnt tímasetninguna á þeim forsendum að veruleg umræða geti ekki átt sér stað yfir sumarfrí. Fullyrðingin er sett fram sem hlutlaus lýsing en er jafnframt pólitískt röksemdafærsla — að sumarfrítíminn dragi úr þinglegri íhlutun, sem sumir telja kost en aðrir ókost.",
-      "confidence": 0.918,
+      "missing_context": "Heimildir staðfesta dagsetninguna 29. ágúst 2026 en engin þeirra fjallar beint um hvort Alþingi sé formlega í sumarleyfi á þeim degi. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> nefnir gagnrýni á dagsetninguna sem «of bráða» (too soon) en tengir hana ekki sérstaklega við þinghlé. Fullyrðingin gefur í skyn gagnrýni á tímasetningu — en staðfesting á því hvort þingið sé í raun ekki «að störfum» krefst frekari heimilda um þingáætlun 157. löggjafarþings.",
+      "confidence": 0.72,
       "speakers": [
         {
           "name": "Þorgerður Katrín Gunnarsdóttir",
@@ -425,7 +421,7 @@
       "stance": "anti_eu",
       "slug": "dilja-mist-einarsdottir",
       "mention_count": 12,
-      "credibility": 0.69,
+      "credibility": 0.66,
       "speech_count": 54
     },
     {
@@ -436,13 +432,12 @@
       "attribution_type": "paraphrased",
       "claim_count": 2,
       "verdicts": {
-        "supported": 1,
-        "partially_supported": 1
+        "partially_supported": 2
       },
       "stance": "pro_eu",
       "slug": "thorgerdur-katrin-gunnarsdottir",
-      "mention_count": 69,
-      "credibility": 0.65,
+      "mention_count": 74,
+      "credibility": 0.62,
       "speech_count": 197
     }
   ]

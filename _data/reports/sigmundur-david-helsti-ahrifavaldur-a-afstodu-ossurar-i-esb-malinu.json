@@ -10,8 +10,8 @@
   "summary": "Greindar 41 fullyrðingar. Niðurstöður: 19 stutt að hluta, 13 ekki hægt að sannreyna, 8 stutt af heimildum, 1 ekki stutt. Sjónarhorn: hallar á ESB-jákvæða hlið. Heildstæðni: 38%.",
   "capsule": "Makríllinn var kjarni deilunnar þegar Ísland sat við aðildarviðræðuborðið 2010–2013 — og bæði Bretar og Írar beittu neitunarvaldi sínu til að loka sjávarútvegskaflanum meðan ágreiningur um makrílkvóta leystist ekki. Áhugavert samhengi sem sjaldan er nefnt: eftir Brexit 2020 harðnaði ESB í afstöðu sinni til sjávarútvegs við samningaborðið og þær takmarkanir sem Bretar þáðu — 25% kvótaskerðing og jafn aðgangur að lögsögunni — gætu orðið viðmiðunarpunktur í framtíðarviðræðum við Ísland. Þetta þýðir að það hvernig sjávarútvegsmál líta út í nýjum viðræðum er e. t. v. flóknara en við Brexit, frekar en einfaldara.",
   "verdict_counts": {
-    "partially_supported": 19,
-    "supported": 8,
+    "partially_supported": 21,
+    "supported": 6,
     "unverifiable": 1,
     "unsupported": 1
   },
@@ -102,7 +102,7 @@
       ],
       "contradicting_evidence": [],
       "missing_context": "Heimildirnar innihalda ekki beina staðfestingu á því að Bretar og Írar hafi formlega beitt neitunarvaldi í þessu tilviki. Allar ESB-þjóðir hafa neitunarvald í stækkunarsamningum, sem er rétt staðhæfing.",
-      "confidence": 0.6,
+      "confidence": 0.612,
       "speakers": [
         {
           "name": "Bretar",
@@ -756,8 +756,8 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://sdw.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a> staðfestir skýrt að króatískir húsnæðislánavextir voru 3,0% í september 2025 á meðan þýskir voru 3,71%. <a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a> staðfestir að seðlabankastjóri Króatíu Boris Vujčić sagði vexti vera «entirely comparable, or, in certain segments, even lower» en evrusvæðismeðaltalið. Gögn styðja fullyrðinguna um að vextir séu sambærilegir eða lægri.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://sdw.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a> og <a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a> staðfesta að vextir á húsnæðislánum í Króatíu lækkuðu verulega eftir upptöku evrunnar og urðu lægri en í Þýskalandi — 3,0% á móti 3,71% (september/desember 2025) og 3,64% á móti 4,22% (janúar 2024). Að vextir urðu «sambærilegir eða lægri» er þannig staðfest. Orðalagið «þvert á hrakspár» er hins vegar óstutt af heimildum — engin heimild lýsir sérstökum spám um háa vexti í Króatíu eftir evruna. Þá benda fyrirvarar á að króatísk króna var raunhæft tengd evrunni í tvo áratugi fyrir upptökuna (<a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a>), og hluti vaxtasamleitninnar skýrist af hækkun evrópskra vaxta (<a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a>).",
       "supporting_evidence": [
         {
           "id": "PREC-DATA-020",
@@ -768,16 +768,11 @@
           "id": "PREC-DATA-012",
           "source_name": "Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review",
           "source_url": "https://www.bis.org/review/r240131a.htm"
-        },
-        {
-          "id": "PREC-DATA-019",
-          "source_name": "Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report",
-          "source_url": "https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Vaxtasamanburðurinn er að hluta tímaháður — þýskir vextir voru óvenju háir 2024 vegna vaxtahækkana Seðlabanka Evrópu. Króatía hafði þegar fast gengi krúnu gagnvart evru í tvo áratugi, sem minnkaði áhrifin af gjaldmiðilsbreytingunni. Samanburðurinn á ekki beint við Ísland þar sem íslenska krónan er frjáls á gjaldeyrismarkaði.",
-      "confidence": 0.85,
+      "missing_context": "Króatía hafði bundið gjaldmiðilinn við evruna í áratugi — aðstæður eru gjörólíkar Íslands þar sem krónan sveiflast frjálslega (<a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a>, <a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Bank for International Settlements — Boris Vujčić speech: One Year with the Euro\" target=\"_blank\" rel=\"noopener\">CURR-DATA-018</a>). Vaxtasamleitnin skýrist að hluta af hækkun ECB-vaxta sem nálgaði þýska vexti króatískum, ekki eingöngu lækkun króatískra vaxta (<a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a> fyrirvarar). <a href=\"https://www.visindavefur.is/svar.php?id=60990\" title=\"Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-016</a> varar við því að vaxtasamleitni eftir evruna geti verið blekking — reynslan af Grikklandi, Írlandi og Portúgal sýndi að ódýrt lánsfé getur ýtt undir bólur.",
+      "confidence": 0.72,
       "speakers": [
         {
           "name": "Össur Skarphéðinsson",
@@ -915,7 +910,7 @@
       ],
       "contradicting_evidence": [],
       "missing_context": "Hugtakið «sameiginleg efnahagslögsaga» er ekki nákvæmt — Noregur og ESB hafa sameiginlega fiskistofna (t.d. þorsk, makríl, síld) sem fara á milli lögsagna, ekki sameiginlega efnahagslögsögu. Ísland á einnig í deilum um sameiginlega stofna (makríll) þótt umfangið sé minna.",
-      "confidence": 0.6,
+      "confidence": 0.57,
       "speakers": [
         {
           "name": "Össur Skarphéðinsson",
@@ -1223,8 +1218,8 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.eeas.europa.eu/eeas/eu-arctic-policy_en\" title=\"European Commission — EU Arctic Policy, Joint Communication JOIN(2021) 27\" target=\"_blank\" rel=\"noopener\">SOV-DATA-001</a> staðfestir að ESB uppfærði Norðurslóðastefnu sína 2021 og hefur sóst eftir áheyrnaraðild í Norðurskautsráðinu. <a href=\"https://www.eeas.europa.eu/eeas/strategic-compass-security-and-defence-1_en\" title=\"EU Strategic Compass for Security and Defence (March 2022); NATO Allied Air Command — Icelandic Air Policing; IISS Strategic Survey 2023\" target=\"_blank\" rel=\"noopener\">SOV-HIST-003</a> staðfestir aukna hernaðarlega þýðingu Íslands eftir innrás Rússa í Úkraínu og GIUK-gapið. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> staðfestir hernaðarlega og norðurslóðaþýðingu Íslands í augum ESB. Heimildir styðja skýrt aukið vægi Norðurslóða hjá ESB og hlutverk Íslands.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir styðja fyrri hluta fullyrðingarinnar um aukið vægi Norðurslóða hjá ESB. <a href=\"https://www.eeas.europa.eu/eeas/eu-arctic-policy_en\" title=\"European Commission — EU Arctic Policy, Joint Communication JOIN(2021) 27\" target=\"_blank\" rel=\"noopener\">SOV-DATA-001</a> staðfestir að ESB uppfærði Norðurslóðastefnu sína 2021 og hefur lengi reynt að fá áheyrnaraðild að Norðurskautsráðinu. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> nefnir landsvæði Íslands á Norður-Atlantshafi sem einn af þeim þáttum sem vekja áhuga ESB. <a href=\"https://www.eeas.europa.eu/eeas/strategic-compass-security-and-defence-1_en\" title=\"EU Strategic Compass for Security and Defence (March 2022); NATO Allied Air Command — Icelandic Air Policing; IISS Strategic Survey 2023\" target=\"_blank\" rel=\"noopener\">SOV-HIST-003</a> sýnir að innrás Rússa í Úkraínu 2022 jók hernaðarlegt mikilvægi Íslands á GIUK-bilinu. Hins vegar er tengingin við Grænland ekki studd beint í heimildum — engin heimild nefnir Ísland sem «mikilvægan hlekk vegna nálægðar við Grænland» í samhengi ESB-áhuga.",
       "supporting_evidence": [
         {
           "id": "SOV-DATA-001",
@@ -1232,19 +1227,19 @@
           "source_url": "https://www.eeas.europa.eu/eeas/eu-arctic-policy_en"
         },
         {
-          "id": "SOV-HIST-003",
-          "source_name": "EU Strategic Compass for Security and Defence (March 2022); NATO Allied Air Command — Icelandic Air Policing; IISS Strategic Survey 2023",
-          "source_url": "https://www.eeas.europa.eu/eeas/strategic-compass-security-and-defence-1_en"
-        },
-        {
           "id": "TRADE-DATA-022",
           "source_name": "European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications",
           "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "SOV-HIST-003",
+          "source_name": "EU Strategic Compass for Security and Defence (March 2022); NATO Allied Air Command — Icelandic Air Policing; IISS Strategic Survey 2023",
+          "source_url": "https://www.eeas.europa.eu/eeas/strategic-compass-security-and-defence-1_en"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Fullyrðingin um að ESB «vissi varla af» Norðurslóðum 2009 er ýkt — ESB sótti um áheyrnaraðild í Norðurskautsráðinu 2008. Aukin áhersla er þó vel skjalfest.",
-      "confidence": 0.8,
+      "missing_context": "Heimildir staðfesta aukinn áhuga ESB á Norðurslóðum og aukið hernaðarlegt mikilvægi Íslands eftir 2022, en engin þeirra tengir ESB-áhuga á Íslandi sérstaklega við nálægð landsins við Grænland. Fullyrðingin um Grænlandstengslin er óstaðfest í þessum heimildum. Þá er ESB-aðild Íslands ekki forgangsmál ESB — stækkun beinist nú fyrst og fremst að Vestur-Balkan og Úkraínu.",
+      "confidence": 0.6,
       "speakers": [
         {
           "name": "Össur Skarphéðinsson",
@@ -1351,14 +1346,14 @@
       "attribution_type": "quoted",
       "claim_count": 23,
       "verdicts": {
-        "partially_supported": 15,
-        "supported": 7,
+        "partially_supported": 17,
+        "supported": 5,
         "unverifiable": 1
       },
       "stance": "pro_eu",
       "slug": "ossur-skarphedinsson",
-      "mention_count": 9,
-      "credibility": 0.65,
+      "mention_count": 10,
+      "credibility": 0.62,
       "speech_count": 350
     },
     {
@@ -1402,7 +1397,7 @@
       "stance": "pro_eu",
       "slug": "sigmundur-david-gunnlaugsson",
       "mention_count": 17,
-      "credibility": 0.58,
+      "credibility": 0.57,
       "speech_count": 261
     }
   ]

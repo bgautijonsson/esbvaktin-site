@@ -10,8 +10,8 @@
   "summary": "Greindar 44 fullyrðingar. Niðurstöður: 22 stutt að hluta, 12 stutt af heimildum, 5 ekki hægt að sannreyna, 3 ekki stutt, 2 villandi. Sjónarhorn: mjög ESB-neikvæð. Heildstæðni: 20%.",
   "capsule": "Greinin staðfestir réttilega að verðlag á Íslandi er meðal þess hæsta í Evrópu og að laun eru há í alþjóðasamanburði — og það passar við gögn frá Eurostat og Hagstofunni. Áhugavert er hins vegar að spurningin um vexti er flóknari en greinin gefur til kynna: aðild að ESB myndi að lokum fela í sér skyldu til að taka upp evru og stýrivextir Seðlabanka Evrópu voru í febrúar 2026 um 2% — samanborið við 7,25% á Íslandi — sem er grundvallarmunur sem hefur bein áhrif á húsnæðislán og lífskjör. Þetta er ástæðan fyrir því að vaxtaspurningin er ein þeirra sem hlutlægar heimildir gefa skýrustu myndir af.",
   "verdict_counts": {
-    "partially_supported": 24,
-    "supported": 10,
+    "partially_supported": 28,
+    "supported": 6,
     "misleading": 2,
     "unsupported": 2,
     "unverifiable": 1
@@ -90,7 +90,7 @@
         "epistemic_type": "factual"
       },
       "verdict": "supported",
-      "explanation": "Heimildir staðfesta að vextir innan ESB eru mismunandi. <a href=\"https://www.visindavefur.is/svar.php?id=60990\" title=\"Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-016</a> lýsir því hvernig vaxtamunur á evrusvæðinu var raunverulegur, sérstaklega í kreppunni 2010–2012. Enn fremur er Ungverjaland ekki aðili að evrusvæðinu og heldur eigin gjaldmiðli (forint), sem þýðir að vaxtamunurinn við Holland er enn meiri. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> staðfestir einnig umtalsverðan breytileika í húsnæðislánavöxtum á milli ESB-landa.",
+      "explanation": "Fullyrðingin er einföld og rétt: vaxtastig er mismunandi milli ESB-ríkja. <a href=\"https://www.visindavefur.is/svar.php?id=60990\" title=\"Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-016</a> útskýrir hvernig vaxtamunur milli evrulandanna jókst verulega í kreppunni 2010–2012 þrátt fyrir sameiginlegan gjaldmiðil. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a> sýnir að vaxtakjör á húsnæðislánum eru breytileg milli aðildarríkja eftir aðstæðum á hverjum stað. Ungverjaland er utan evrusvæðisins og hefur eigin seðlabanka, en Holland notar evruna — þetta skýrir hluta vaxtamunarins.",
       "supporting_evidence": [
         {
           "id": "CURR-DATA-016",
@@ -98,19 +98,19 @@
           "source_url": "https://www.visindavefur.is/svar.php?id=60990"
         },
         {
-          "id": "HOUS-DATA-005",
-          "source_name": "Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase",
-          "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
-        },
-        {
           "id": "HOUSING-DATA-008",
           "source_name": "European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report",
           "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
+        },
+        {
+          "id": "CURR-DATA-007",
+          "source_name": "Central Bank of Iceland; ECB; Eurostat HICP",
+          "source_url": "https://www.sedlabanki.is/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Mikilvægt samhengi vantar: Ungverjaland er ESB-ríki en ekki á evrusvæðinu. Vaxtamunur milli evruríkja er minni en milli evruríkja og ESB-ríkja utan evrunnar. Fullyrðingin blandar saman ESB-aðild og evruaðild.",
-      "confidence": 0.85,
+      "missing_context": "Vaxtamunur á ESB-svæðinu stafar bæði af gjaldmiðlaaðstæðum (evrusvæði vs utan þess) og áhættumati á hverju ríki. Ungverjaland er utan evrusvæðisins og notar eigin gjaldmiðil (forint) sem gerir samanburðinn enn skýrari, en fullyrðingin tilgreinir ekki þennan grundvallarmun.",
+      "confidence": 0.88,
       "speakers": [
         {
           "name": "Rúnar Már Bragason",
@@ -219,7 +219,7 @@
       ],
       "contradicting_evidence": [],
       "missing_context": "Sviss er með hærra verðlag en Ísland samkvæmt Eurostat-gögnum. Hátt verðlag á Íslandi skýrist af mörgum þáttum: litlum innlendum markaði, háum launum, flutningskostnaði, sköttum og takmörkuðum samkeppni, ekki eingöngu gjaldmiðla- eða viðskiptastefnu.",
-      "confidence": 0.85,
+      "confidence": 0.867,
       "speakers": [
         {
           "name": "Ágúst Ólafur Ágústsson",
@@ -351,7 +351,7 @@
       ],
       "contradicting_evidence": [],
       "missing_context": "Sviss er með hærra verðlag en Ísland samkvæmt Eurostat-gögnum. Hátt verðlag á Íslandi skýrist af mörgum þáttum: litlum innlendum markaði, háum launum, flutningskostnaði, sköttum og takmörkuðum samkeppni, ekki eingöngu gjaldmiðla- eða viðskiptastefnu.",
-      "confidence": 0.85,
+      "confidence": 0.867,
       "speakers": [
         {
           "name": "Rúnar Már Bragason",
@@ -678,8 +678,8 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380\" title=\"EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024\" target=\"_blank\" rel=\"noopener\">FISH-DATA-032</a> staðfestir berum orðum að «each member state has full sovereignty over how it distributes its quota internally» og vísar til greinar 16(6) í reglugerð 1380/2013. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380\" title=\"Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-030</a> staðfestir einnig þessa meginreglu og nefnir að Danmörk, Holland og Eistland nota aflahlutdeildir (ITQ) innan ramma CFP. Fullyrðingin er rétt — innri dreifing kvóta er alfarið á forræði aðildarríkjanna.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380\" title=\"EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024\" target=\"_blank\" rel=\"noopener\">FISH-DATA-032</a> og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380\" title=\"Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-030</a> staðfesta að aðildarríki ráði sjálf hvernig þau útdeili kvóta sínum innan ramma sameiginlegu sjávarútvegsstefnunnar. Grein 16(6) í reglugerð 1380/2013 segir skýrt að aðildarríki «ákveði úthlutun veiðiheimilda» meðal eigin skipa, og grein 17 útskýrir að ríkin noti «gagnsæ og hlutlæg viðmið». Nokkur ríki nota kvótakerfi líkt íslensku aflamarkskerfinu. Hins vegar vantar í fullyrðinguna mikilvægt samhengi: kvótinn sem úthlutað er er ákveðinn af ráðherraráðinu samkvæmt «hlutfallslegum stöðugleika» og hámarksafla (TAC), svo aðildarríkin ráða aðeins yfir innri dreifingu — ekki yfir heildarmagni.",
       "supporting_evidence": [
         {
           "id": "FISH-DATA-032",
@@ -690,16 +690,11 @@
           "id": "FISH-DATA-030",
           "source_name": "Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies",
           "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380"
-        },
-        {
-          "id": "FISH-LEGAL-005",
-          "source_name": "European Parliament — The Common Fisheries Policy: Origins and Development",
-          "source_url": "https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Þó aðildarríki ráði innri dreifingu þarf að hafa í huga að heildaraflamark (TAC) er sett af ráðherraráði ESB og hlutfallslegur stöðugleiki (relative stability) ákvarðar hvað hvert ríki fær. Aðildarríki ráða þannig «hvernig» en ekki «hversu miklu» er útdeilt. Dómstóll ESB takmarkar einnig hversu mismunandi dreifing getur verið.",
-      "confidence": 0.9,
+      "missing_context": "Fullyrðingin er rétt á bókstaflegum nótum en gefur of einfalda mynd. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380\" title=\"EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024\" target=\"_blank\" rel=\"noopener\">FISH-DATA-032</a> undirstrikar að meginafsalið felist í hámarksaflanum (TAC) og aðgangi annarra ESB-skipa að efnahagslögsögunni, ekki í innri úthlutun. <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development\" title=\"European Parliament — The Common Fisheries Policy: Origins and Development\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-005</a> bendir á að hlutfallslegur stöðugleiki byggist á sögulegum veiðum og það sé alveg óljóst hvernig hlutdeild Íslands yrði reiknuð. Þá setja reglur um brottkastsbanns, flotastærð og eftirlit frekari skorður á úthlutunarkerfið.",
+      "confidence": 0.82,
       "speakers": [
         {
           "name": "Ágúst Ólafur Ágústsson",
@@ -815,8 +810,8 @@
         "confidence": 0.9,
         "epistemic_type": "prediction"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf\" title=\"Icelandic Act on the Exclusive Economic Zone No. 41/1979\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-002</a> staðfestir að ESB-aðild myndi færa íslenska efnahagslögsöguna undir sameiginlega sjávarútvegsstefnu ESB. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003\" title=\"Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-030</a> sýnir að varðveisla sjávarauðlinda er einkavaldssvæði ESB. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13\" target=\"_blank\" rel=\"noopener\">EEA-DATA-004</a> staðfestir að sjávarútvegurinn var erfiðasti kaflinn í aðildarviðræðum. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380\" title=\"EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024\" target=\"_blank\" rel=\"noopener\">FISH-DATA-032</a> bendir á jafnan aðgang ESB-skipa utan 12 sjómílna. Þetta er rétt lýsing á því sem ESB-aðild myndi hafa í för með sér.",
+      "verdict": "partially_supported",
+      "explanation": "Grunnhugmyndin er rétt — sameiginleg sjávarútvegsstefna ESB (CFP) myndi ná til íslenskrar lögsögu utan 12 mílna. <a href=\"https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf\" title=\"Icelandic Act on the Exclusive Economic Zone No. 41/1979\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-002</a> staðfestir að ESB-aðild myndi færa efnahagslögsögu Íslands (758.000 km²) undir sjávarútvegsstefnu ESB þar sem aðgangur og kvótaákvarðanir yrðu teknar sameiginlega. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13\" target=\"_blank\" rel=\"noopener\">EEA-DATA-004</a> sýnir að sjávarútvegur var erfiðasti kaflinn í aðildarviðræðum Íslands. Fullyrðingin er þó of einföld þegar hún segir að «ESB myndi stjórna» — Ísland sem aðildarríki myndi hafa atkvæðisrétt í kvótaákvörðunum og gæti samið um aðlögunartímabil eða sérreglur (<a href=\"https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf\" title=\"Icelandic Act on the Exclusive Economic Zone No. 41/1979\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-002</a>). Tólf mílna mörkin eru heldur ekki sjálfgefin — undanþágur geta verið samningsatriði.",
       "supporting_evidence": [
         {
           "id": "FISH-LEGAL-002",
@@ -824,24 +819,14 @@
           "source_url": "https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf"
         },
         {
-          "id": "SOV-LEGAL-030",
-          "source_name": "Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003"
-        },
-        {
           "id": "EEA-DATA-004",
           "source_name": "Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13",
           "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
-        },
-        {
-          "id": "FISH-DATA-032",
-          "source_name": "EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Ísland myndi taka þátt í ákvörðunum um heildaraflamark (TAC) í gegnum ráðherraráð ESB og innri dreifing kvóta yrði áfram á forræði Íslands. Aðildarsamningur gæti innihaldið bráðabirgðaákvæði. Orðalagið «ESB stjórnar» er rétt í þeim skilningi að TAC-ákvarðanir og aðgangur eru á forræði ESB, en Ísland yrði hluti af þeim ákvarðanatökuferli.",
-      "confidence": 0.85,
+      "missing_context": "Fullyrðingin gefur til kynna einhliða stjórn ESB en Ísland myndi sem aðildarríki sitja við borðið í kvótaákvörðunum. Samkvæmt <a href=\"https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf\" title=\"Icelandic Act on the Exclusive Economic Zone No. 41/1979\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-002</a> eru umfang og fyrirkomulag kvótaskiptingar samningsatriði í aðildarviðræðum. Reynsla Írlands (<a href=\"https://ireland.representation.ec.europa.eu/news-and-events/news/facts-and-figures-impact-eu-membership-irelands-fisheries-2024-06-06_en\" title=\"European Commission Representation in Ireland / Marine Institute\" target=\"_blank\" rel=\"noopener\">FISH-PREC-004</a>) sýnir flókna kvótaskiptingu — hlutdeild Íslands myndi ráðast af viðræðum, ekki einhliða ákvörðun ESB. Sjávarútvegur stóð fyrir 40% af vöruútflutningi Íslands á meðan aðildarviðræðum stóðu en hefur minnkað í um 3–4% af VLF (<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"Icelandic Ministry of Foreign Affairs — EU accession negotiation position papers; European Commission screening report on Chapter 13\" target=\"_blank\" rel=\"noopener\">EEA-DATA-004</a>).",
+      "confidence": 0.8160000000000001,
       "speakers": [
         {
           "name": "Rúnar Már Bragason",
@@ -1404,8 +1389,8 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.government.is/library/01-Ministries/Ministry-for-Foreign-Affairs/PDF-skjol/EES_skyrsla_15.pdf\" title=\"Utanríkisráðuneytið — Gengið til góðs: Skref í átt að bættri framkvæmd EES-samningsins (apríl 2018)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-017</a> staðfestir 13,4% hlutfall (9.028 gerðir af 67.158) samkvæmt skýrslu utanríkisráðuneytisins frá 2018. <a href=\"https://www.government.is/library/01-Ministries/Ministry-for-Foreign-Affairs/PDF-skjol/Sky%CC%81rsla%20starfsho%CC%81ps%20um%20EES-samstarfi%C3%B0%200919.pdf\" title=\"Utanríkisráðuneytið — Skýrsla starfshóps um EES-samstarfið (september 2019)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-018</a> sýnir að 16% laga á Alþingi eiga beint upphaf í EES-samningnum. Bilið 13–17% er þannig vel stutt af tveimur sjálfstæðum rannsóknum sem nota ólíkar aðferðir.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir styðja tölurnar að hluta en fullyrðingin einfaldar flókið mælingarumhverfi. <a href=\"https://www.government.is/library/01-Ministries/Ministry-for-Foreign-Affairs/PDF-skjol/EES_skyrsla_15.pdf\" title=\"Utanríkisráðuneytið — Gengið til góðs: Skref í átt að bættri framkvæmd EES-samningsins (apríl 2018)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-017</a> staðfestir 13,4% hlutfallið (9.028 gerðir af 67.158) samkvæmt skýrslu utanríkisráðuneytisins frá 2018. <a href=\"https://www.government.is/library/01-Ministries/Ministry-for-Foreign-Affairs/PDF-skjol/Sky%CC%81rsla%20starfsho%CC%81ps%20um%20EES-samstarfi%C3%B0%200919.pdf\" title=\"Utanríkisráðuneytið — Skýrsla starfshóps um EES-samstarfið (september 2019)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-018</a> sýnir 16% hlutfall samþykktra laga Alþingis (485 af 3.100) með beint uppruna í EES frá 1992–2019. Þó gefa þessar tölur mismunandi myndir — 13,4% mælir EES-innleiðingar á móti allri ESB-löggjöf, en 16% mælir hlut Alþingislaga með beinan EES-uppruna. Fullyrðingin nefnir bæði hlutföllin en gerir ekki grein fyrir því að þau mæla gjörólíka hluti.",
       "supporting_evidence": [
         {
           "id": "EEA-DATA-017",
@@ -1419,8 +1404,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Þessar tölur mæla mismunandi hluti: 13,4% mælir hlutfall af öllum bindandi ESB-gerðum innleiddum í gegnum EES, en 16% mælir þingsett lög á Alþingi sem eiga beint upphaf í EES. Bæði eru rétt en svara ólíkum spurningum. Einnig gæti óbeint áhrif EES-samningsins verið meiri — eldri rannsókn fann 21,7% viðbótarlög með óbeint EES-upphaf.",
-      "confidence": 0.85,
+      "missing_context": "Þessar tölur (13–17%) mæla annað en hin tíðtilvitnaða 70–75% tala ESA, sem mælir innleiðingu innan EES-gildissviðsins. Munurinn stafar af nefnaranum — 13% er á móti allri ESB-löggjöf (þ.m.t. sjávarútvegs-, landbúnaðar- og tollareglugerðum sem falla utan EES) en 70% er einungis á móti innri markaðslöggjöf. Einnig mældi <a href=\"https://www.government.is/library/01-Ministries/Ministry-for-Foreign-Affairs/PDF-skjol/Sky%CC%81rsla%20starfsho%CC%81ps%20um%20EES-samstarfi%C3%B0%200919.pdf\" title=\"Utanríkisráðuneytið — Skýrsla starfshóps um EES-samstarfið (september 2019)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-018</a> að 21,7% til viðbótar hefðu óbeinan EES-uppruna, sem hækkar heildaráhrifin verulega.",
+      "confidence": 0.867,
       "speakers": [
         {
           "name": "Rúnar Már Bragason",
@@ -1604,28 +1589,34 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003\" title=\"Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-030</a> staðfestir skipan valds ESB þar sem skattamál eru að mestu á forræði aðildarríkja (ESB hefur aðeins stuðningsvaldssvæði í skattamálum). <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1\" title=\"Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-006</a> staðfestir að Danmörk og Írland hafa sérstaka undanþágusamþykkta. Öll nefnd ríki eru sannarlega ESB-aðildarríki sem halda eigin fjárlögum og skattastefnu. Fullyrðingin er rétt í meginatriðum.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að Danmörk og Írland eru ESB-ríki sem hafa samið um undanþágur (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1\" title=\"Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-006</a>), og <a href=\"https://www.eeas.europa.eu/eeas/eu-arctic-policy_en\" title=\"European Commission — EU Arctic Policy, Joint Communication JOIN(2021) 27\" target=\"_blank\" rel=\"noopener\">SOV-DATA-001</a> staðfestir sjálfstæða stöðu aðildarríkja á alþjóðavettvangi. Þó er fullyrðingin of einföld — ESB-aðild felur í sér framsal ákveðinna valdheimilda, einkum á sviði viðskiptastefnu (<a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a>) og innri markaðar (<a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a>). Aðildarríki hafa eigin fjárlög og skattastefnu, en þau lúta sameiginlegum reglum um ríkisaðstoð, samkeppni og fjárlagaaga evrusvæðisins. Fullyrðingin skapar þannig of svart-hvíta mynd af fullveldi innan ESB.",
       "supporting_evidence": [
-        {
-          "id": "SOV-LEGAL-030",
-          "source_name": "Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003"
-        },
         {
           "id": "SOV-LEGAL-006",
           "source_name": "Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols",
           "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1"
         },
         {
-          "id": "SOV-LEGAL-014",
-          "source_name": "TEU, Title V — CFSP provisions; Icelandic Ministry for Foreign Affairs — Annual alignment reports",
-          "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/iceland-external-relations-common-foreign-and-security-policy.html"
+          "id": "SOV-DATA-001",
+          "source_name": "European Commission — EU Arctic Policy, Joint Communication JOIN(2021) 27",
+          "source_url": "https://www.eeas.europa.eu/eeas/eu-arctic-policy_en"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Þótt aðildarríki hafi eigin fjárlög og skattastefnu eru þau bundin af reglum eins og Stability and Growth Pact sem takmarkar fjárlagahalla (undir 3% af VLF) og opinberar skuldir (undir 60% af VLF). ESB-reglur um samkeppni, ríkisaðstoð og VSK setja einnig ákveðin takmörk á skattastefnu.",
-      "confidence": 0.85,
+      "contradicting_evidence": [
+        {
+          "id": "SOV-LEGAL-032",
+          "source_name": "TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview",
+          "source_url": "https://www.efta.int/free-trade/free-trade-agreements"
+        },
+        {
+          "id": "EEA-LEGAL-022",
+          "source_name": "EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'",
+          "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
+        }
+      ],
+      "missing_context": "ESB-aðild felur í sér framsal viðskiptastefnu til ESB samkvæmt 207. gr. TFEU (<a href=\"https://www.efta.int/free-trade/free-trade-agreements\" title=\"TFEU Articles 28, 207; EFTA — Free Trade Agreements list; European Commission — Trade agreements overview\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-032</a>). Aðildarríki eru bundin af reglum um fjárlagaaga, sérstaklega á evrusvæðinu. Danmörk hefur undanþágu frá evrunni en flest ný aðildarríki fá ekki sambærilegar undanþágur (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1\" title=\"Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-006</a>).",
+      "confidence": 0.765,
       "speakers": [
         {
           "name": "Ágúst Ólafur Ágústsson",
@@ -1704,15 +1695,15 @@
       "attribution_type": "asserted",
       "claim_count": 13,
       "verdicts": {
-        "supported": 4,
-        "partially_supported": 7,
+        "supported": 2,
+        "partially_supported": 9,
         "unsupported": 1,
         "misleading": 1
       },
       "stance": "anti_eu",
       "slug": "runar-mar-bragason",
       "mention_count": 1,
-      "credibility": 0.54
+      "credibility": 0.5
     },
     {
       "name": "Ágúst Ólafur Ágústsson",
@@ -1722,14 +1713,14 @@
       "attribution_type": "paraphrased",
       "claim_count": 26,
       "verdicts": {
-        "partially_supported": 18,
-        "supported": 7,
+        "partially_supported": 20,
+        "supported": 5,
         "misleading": 1
       },
       "stance": "pro_eu",
       "slug": "agust-olafur-agustsson",
       "mention_count": 1,
-      "credibility": 0.65,
+      "credibility": 0.59,
       "speech_count": 8
     }
   ]

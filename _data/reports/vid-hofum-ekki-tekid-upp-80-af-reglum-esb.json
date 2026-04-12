@@ -10,8 +10,8 @@
   "summary": "Greindar 21 fullyrðingar. Niðurstöður: 11 stutt að hluta, 5 ekki hægt að sannreyna, 5 stutt af heimildum. Sjónarhorn: hallar á ESB-neikvæða hlið. Heildstæðni: 35%.",
   "capsule": "Talan um 80% af reglum ESB á sér raunverulegan uppruna — hún kom fyrst frá Halldóri Ásgrímssyni í ræðu árið 2002 en hvort heldur hún var nákvæm eða hnökruð fer eftir því hvað er verið að mæla. Þegar mælt er hlutfall innri markaðarlöggjafar ESB sem fellur undir EES-samninginn koma upp tölur á bilinu 70–75% — en þær gilda einungis um þann hluta ESB-reglna sem samningurinn nær yfir (innri markaðurinn), en ekki sjávarútveg, landbúnað eða tollabandalag. Áhugavert er að þessar tvær mælieiningar svara gjörólíkum spurningum og geta báðar verið réttar samtímis — greinarmunurinn skýrir stóran hluta þeirrar deilunnar sem greinin fjallar um.",
   "verdict_counts": {
-    "partially_supported": 11,
-    "supported": 5
+    "partially_supported": 14,
+    "supported": 2
   },
   "epistemic_counts": null,
   "claim_count": 16,
@@ -405,28 +405,34 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/EN/legal-content/summary/iceland-agriculture-fisheries-and-food-safety.html\" title=\"EUR-Lex — Iceland agriculture assessment; European Commission screening reports\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-024</a> staðfestir beint að rýnivinna framkvæmdastjórnarinnar í landbúnaðarkaflanum leiddi í ljós að Ísland skorti nauðsynlega stjórnsýsluramma — sérstaklega vottaða greiðslustofu (paying agency) og samþætt stjórnunar- og eftirlitskerfi (IACS) fyrir sameiginlegu landbúnaðarstefnuna. Skýrslan benti á að «meirihluti» landbúnaðarstefnu Íslands væri ekki í takt við ESB-ákvæði. <a href=\"https://www.eftasurv.int/\" title=\"EFTA Surveillance Authority — Internal Market Scoreboard 2024\" target=\"_blank\" rel=\"noopener\">EEA-DATA-007</a> sýnir einnig innleiðingarhalla og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application for membership of the European Union, SEC(2010) 153\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-020</a> nefnir að erfiðustu kaflarnir — sjávarútvegur, landbúnaður, gjaldmiðill — voru utan EES og kröfðust algjörlega nýrra viðræðna.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin segir að rýnivinna ESB hafi leitt í ljós verulegan skort og þörf á stofnanauppbyggingu. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Screening reports from Iceland's 2010–2013 negotiations; EUR-Lex — Directory of EU legislation\" target=\"_blank\" rel=\"noopener\">SOV-DATA-004</a> staðfestir að innleiðing á 3.000–5.000 lagagerðum til viðbótar þyrfti að eiga sér stað umfram núverandi EES-skuldbindingar. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application for membership of the European Union, SEC(2010) 153\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-020</a> bendir á að Ísland hafi lokað 11 af 27 köflum á 18 mánuðum — sem sýnir bæði framfarir og eftirstandandi vinnu. Hins vegar gefa heimildir ekki til kynna að «mikið hafi vantað upp á» í þeim skilningi að grundvallarskortir hafi verið á öllu sviðinu; EES-aðildin tryggði umtalsverða samsvörun á innri markaðssvæðum. Orðalagið «mikið vantaði» er of víðtækt miðað við heimildir.",
       "supporting_evidence": [
         {
-          "id": "AGRI-DATA-024",
-          "source_name": "EUR-Lex — Iceland agriculture assessment; European Commission screening reports",
-          "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/iceland-agriculture-fisheries-and-food-safety.html"
+          "id": "SOV-DATA-004",
+          "source_name": "European Commission — Screening reports from Iceland's 2010–2013 negotiations; EUR-Lex — Directory of EU legislation",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "EEA-LEGAL-020",
+          "source_name": "European Commission — Opinion on Iceland's application for membership of the European Union, SEC(2010) 153",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
         },
         {
           "id": "EEA-DATA-007",
           "source_name": "EFTA Surveillance Authority — Internal Market Scoreboard 2024",
           "source_url": "https://www.eftasurv.int/"
-        },
+        }
+      ],
+      "contradicting_evidence": [
         {
           "id": "EEA-LEGAL-020",
           "source_name": "European Commission — Opinion on Iceland's application for membership of the European Union, SEC(2010) 153",
           "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Stofnanauppbygging var aðallega nauðsynleg á sviðum utan EES-samningsins (landbúnaður, sjávarútvegur). Á sviði innri markaðarins var Ísland þegar vel samstillt. Rýnivinna var framkvæmd 2010–2013 og aðstæður geta hafa breyst síðan.",
-      "confidence": 0.85,
+      "missing_context": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application for membership of the European Union, SEC(2010) 153\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-020</a> undirstrikar að 11 kaflar lokuðust hratt vegna mikillar EES-samsvörunar, sem bendir til þess að á mörgum sviðum «vantaði» ekki mikið. Erfiðustu kaflarnir — sjávarútvegur, landbúnaður, efnahagsstefna — falla utan EES og krefjast nýrra viðræðna. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Screening reports from Iceland's 2010–2013 negotiations; EUR-Lex — Directory of EU legislation\" target=\"_blank\" rel=\"noopener\">SOV-DATA-004</a> nefnir að mat á umfangi viðbótarregluverksins kann að vera úrelt þar sem ESB hefur samþykkt umtalsverð ný lög (lög um stafræna þjónustu, gervigreindarreglugerð, Evrópski græni sáttmálinn) frá síðustu rýningu.",
+      "confidence": 0.65,
       "speakers": [
         {
           "name": "Hjörtur J. Guðmundsson",
@@ -459,9 +465,14 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "Heimildir staðfesta skýrt að gapið milli Íslands og ESB-regluverks var langstærst á sviðum utan EES. <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Articles 8 and 17–26; Protocols 1 and 47\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-008</a> tilgreinir undanskildu svæðin: landbúnaðarstefna, sjávarútvegsstefna, tollabandalag, viðskiptastefna, utanríkisstefna, réttarmál og innri mál, og myntmál. <a href=\"https://eur-lex.europa.eu/EN/legal-content/summary/iceland-agriculture-fisheries-and-food-safety.html\" title=\"EUR-Lex — Iceland agriculture assessment; European Commission screening reports\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-024</a> staðfestir að landbúnaðarkaflinn var aldrei opnaður vegna djúps misræmis. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application for membership of the European Union, SEC(2010) 153\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-020</a> nefnir að Ísland gat lokað 11 af 27 opnuðum köflum hratt vegna mikils EES-samræmis — á meðan erfiðustu kaflarnir (sjávarútvegur, landbúnaður, myntmál) féllu utan EES.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin segir að ESB-rýnivinna hafi sýnt að bilið væri «einkum» í málaflokkum utan EES-samningsins. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application for membership of the European Union, SEC(2010) 153\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-020</a> staðfestir þetta að hluta — erfiðustu kaflarnir (sjávarútvegur, landbúnaður, gjaldeyrisstefna) falla utan EES. Hins vegar bendir sama heimild á að forskotið hafi minnkað frá 2010 og að ný regluverkssvið (loftslagsmál, stafræn mál, varnarmál) falli ekki greiðlega undir EES-innleiðingu. <a href=\"https://www.eftasurv.int/\" title=\"EFTA Surveillance Authority — Internal Market Scoreboard 2024\" target=\"_blank\" rel=\"noopener\">EEA-DATA-007</a> sýnir innleiðingarvanskil á 400–500 gerðum jafnvel innan EES, og <a href=\"https://link.springer.com/book/10.1057/9780230510302\" title=\"Grabbe, H. (2006) 'The EU's Transformative Power: Europeanization Through Conditionality in Central and Eastern Europe', Palgrave Macmillan\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-016</a> bendir á að 95% regluverksins sé ósemjanlegt. Orðið «einkum» (mainly) er tæknilega rétt en einfaldar myndina of mikið — veruleg bil eru einnig á EES-tengdum sviðum þar sem Ísland er á eftir.",
       "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-020",
+          "source_name": "European Commission — Opinion on Iceland's application for membership of the European Union, SEC(2010) 153",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
         {
           "id": "EEA-LEGAL-008",
           "source_name": "EEA Agreement, Articles 8 and 17–26; Protocols 1 and 47",
@@ -473,24 +484,20 @@
           "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
         },
         {
-          "id": "AGRI-DATA-024",
-          "source_name": "EUR-Lex — Iceland agriculture assessment; European Commission screening reports",
-          "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/iceland-agriculture-fisheries-and-food-safety.html"
-        },
-        {
-          "id": "EEA-LEGAL-020",
-          "source_name": "European Commission — Opinion on Iceland's application for membership of the European Union, SEC(2010) 153",
-          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
-        },
-        {
           "id": "EEA-DATA-010",
           "source_name": "EFTA Secretariat — The EEA Agreement; ESA Internal Market Scoreboard; EEA Joint Committee",
           "source_url": "https://www.efta.int/eea/eea-agreement"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Höfundur fullyrðingarinnar notar orðin «ófáu málaflokkum» sem gefur til kynna fá svið utan EES. Í raun eru undanskildu svæðin umtalsverð — landbúnaður, sjávarútvegur, tollamál, utanríkismál, réttarmál, myntmál — og ná yfir stóran hluta ESB-regluverks þótt þau séu fá í fjölda.",
-      "confidence": 0.88,
+      "contradicting_evidence": [
+        {
+          "id": "EEA-DATA-007",
+          "source_name": "EFTA Surveillance Authority — Internal Market Scoreboard 2024",
+          "source_url": "https://www.eftasurv.int/"
+        }
+      ],
+      "missing_context": "Innleiðingarvanskil EES-gerða (400–500 gerðir, <a href=\"https://www.eftasurv.int/\" title=\"EFTA Surveillance Authority — Internal Market Scoreboard 2024\" target=\"_blank\" rel=\"noopener\">EEA-DATA-007</a>) sýna að bil var einnig á EES-tengdum sviðum, ekki eingöngu utan EES-samningsins. Þá er regluverkið stærra 2026 en 2010 — ný svið eins og evrópski græni sáttmálinn, gervigreindarreglugerðin og lög um stafræna þjónustu gera greiningu á «innan» og «utan» EES flóknari en fullyrðingin gefur til kynna.",
+      "confidence": 0.75,
       "speakers": [
         {
           "name": "Hjörtur J. Guðmundsson",
@@ -661,8 +668,8 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.government.is/library/01-Ministries/Ministry-for-Foreign-Affairs/PDF-skjol/EES_skyrsla_15.pdf\" title=\"Utanríkisráðuneytið — Gengið til góðs: Skref í átt að bættri framkvæmd EES-samningsins (apríl 2018)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-017</a> staðfestir beint 13,4% töluna úr skýrslu utanríkisráðuneytisins «Gengið til góðs» frá apríl 2018 sem sýndi að Ísland hafði tekið upp 9.028 ESB-gerðir af 67.158 á tímabilinu 1994–2016. <a href=\"https://www.althingi.is/thingmenn/thingflokkar/sjalfstaedisflokkur/\" title=\"Althingi — Session 157 member registry\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-006</a> staðfestir Diljá Mistu sem þingmann Sjálfstæðisflokksins. Fullyrðingin er rétt hvað varðar bæði uppruna tölunnar og inntak hennar.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.government.is/library/01-Ministries/Ministry-for-Foreign-Affairs/PDF-skjol/EES_skyrsla_15.pdf\" title=\"Utanríkisráðuneytið — Gengið til góðs: Skref í átt að bættri framkvæmd EES-samningsins (apríl 2018)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-017</a> staðfestir að úttekt utanríkisráðuneytisins frá 2018 (Gengið til góðs) sýndi hlutfallið 13,4% — Ísland tók upp 9.028 ESB-gerðir af 67.158 á árunum 1994–2016. <a href=\"https://www.althingi.is/thingmenn/thingflokkar/sjalfstaedisflokkur/\" title=\"Althingi — Session 157 member registry\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-006</a> staðfestir jafnframt að Diljá Mist Einarsdóttir er þingmaður Sjálfstæðisflokksins. Hins vegar staðfesta heimildir ekki beint að Diljá Mist hafi vísað í þessa úttekt í tilteknu samhengi. Tölulegt efni fullyrðingarinnar er staðfest en tilvitnunin til þingmannsins er ósannreynd.",
       "supporting_evidence": [
         {
           "id": "EEA-DATA-017",
@@ -676,8 +683,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "13,4% talan mælir hlutdeild Íslands í heildarregluverki ESB (þ.m.t. svið utan EES eins og landbúnað og sjávarútveg). Hún er ekki sambærileg við 70% töluna sem á við innri markað einan. Aðferðafræðin telur allar bindandi gerðir (reglugerðir, tilskipanir, ákvarðanir), þar á meðal úreltar gerðir.",
-      "confidence": 0.92,
+      "missing_context": "Talan 13,4% mælir hlutdeild heildarregluverks ESB sem tekið hefur verið upp í EES — þar á meðal svið utan gildissviðs EES (sjávarútvegur, landbúnaður, utanríkismál). Hún er ekki samanburðarhæf við 70% töluna sem mælir innleiðingu á innri markaðslöggjöf eingöngu. Báðar tölurnar eru aðferðafræðilega réttar en svara ólíkum spurningum.",
+      "confidence": 0.75,
       "speakers": [
         {
           "name": "Diljá Mist Einarsdóttir",
@@ -799,7 +806,7 @@
       ],
       "contradicting_evidence": [],
       "missing_context": "Greinargerðin sjálf er ekki í staðreyndagrunni — aðeins ræða utanríkisráðherra og umfjöllun um þingsályktunartillöguna. Orðalagið «fyrst og fremst» gæti verið túlkun höfundar á innihaldi greinargerðarinnar.",
-      "confidence": 0.612,
+      "confidence": 0.62424,
       "speakers": [
         {
           "name": "Hjörtur J. Guðmundsson",
@@ -833,13 +840,13 @@
       "attribution_type": "asserted",
       "claim_count": 12,
       "verdicts": {
-        "partially_supported": 9,
-        "supported": 3
+        "partially_supported": 11,
+        "supported": 1
       },
       "stance": "neutral",
       "slug": "hjortur-j-gudmundsson",
-      "mention_count": 18,
-      "credibility": 0.66
+      "mention_count": 20,
+      "credibility": 0.58
     },
     {
       "name": "Evrópusambandið",
@@ -849,13 +856,12 @@
       "attribution_type": "asserted",
       "claim_count": 3,
       "verdicts": {
-        "partially_supported": 1,
-        "supported": 2
+        "partially_supported": 3
       },
       "stance": "neutral",
       "slug": "evropusambandid",
-      "mention_count": 58,
-      "credibility": 0.74
+      "mention_count": 68,
+      "credibility": 0.67
     },
     {
       "name": "Íslenskir Evrópusambandssinnar",
@@ -960,8 +966,8 @@
       },
       "stance": "pro_eu",
       "slug": "dagur-b-eggertsson",
-      "mention_count": 10,
-      "credibility": 0.56,
+      "mention_count": 11,
+      "credibility": 0.55,
       "speech_count": 20
     },
     {
@@ -976,7 +982,7 @@
       },
       "stance": "pro_eu",
       "slug": "gunnar-thor-petursson",
-      "mention_count": 2,
+      "mention_count": 4,
       "credibility": 0.5
     },
     {
@@ -987,12 +993,12 @@
       "attribution_type": "paraphrased",
       "claim_count": 1,
       "verdicts": {
-        "supported": 1
+        "partially_supported": 1
       },
       "stance": "anti_eu",
       "slug": "dilja-mist-einarsdottir",
       "mention_count": 12,
-      "credibility": 0.69,
+      "credibility": 0.66,
       "speech_count": 54
     }
   ]

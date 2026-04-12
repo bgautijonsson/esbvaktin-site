@@ -2,19 +2,22 @@
   "slug": "eftirlitsstofnun-efta-esa",
   "name": "Eftirlitsstofnun EFTA (ESA)",
   "type": "institution",
-  "description": "Stofnun — hlutlaus um ESB-aðild.",
+  "description": "Stofnun — blandað viðhorf til ESB-aðildar.",
   "role": "eftirlitsstofnun EES-samningsins",
   "party": null,
-  "stance": "neutral",
-  "stance_score": 0.0,
-  "credibility": 0.75,
+  "stance": "mixed",
+  "stance_score": -0.33,
+  "credibility": 0.56,
   "attribution_counts": {
-    "asserted": 5
+    "asserted": 11,
+    "quoted": 2,
+    "paraphrased": 3,
+    "mentioned": 2
   },
   "althingi_stats": null,
   "scorecard": {
     "supported": 1,
-    "partially_supported": 1
+    "partially_supported": 8
   },
   "claims": [
     {
@@ -68,6 +71,194 @@
       "article_title": "ESA krefur íslenska ríkið svara um fyrirkomulag áfengissölu",
       "article_source": "RÚV",
       "article_date": "2026-03-18"
+    },
+    {
+      "claim_text": "Rekstur fríhafnarinnar á Keflavíkurflugvelli er í höndum einkaaðila og stendur hún fyrir umtalsverðum hluta innlendrar áfengissölu.",
+      "original_quote": "Hvaða áhrif hefur það að rekstur fríhafnarinnar á Keflavíkurflugvelli — sem stendur fyrir umtalsverðum hluta innlendrar áfengissölu — sé í höndum einkaaðila?",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.who.int/europe/news/item/03-02-2025-who-europe-highlights-nordic-alcohol-monopolies-as-a-comprehensive-model-for-reducing-alcohol-consumption-and-harm\" title=\"WHO Europe — Nordic Alcohol Monopolies as Public Health Model\" target=\"_blank\" rel=\"noopener\">EEA-DATA-033</a> staðfestir að einkaréttur ÁTVR hefur rýrnað, m.a. vegna undanþága og netverslunar erlendra aðila, en nefnir ekki fríhöfnina á Keflavíkurflugvelli sérstaklega. Fullyrðingin um «umtalsverðan hluta» innlendrar áfengissölu er óstudd tölulega — engin heimild gefur hlutfallstölur um sölu fríhafnarinnar. Að reksturinn sé í höndum einkaaðila er almennt þekkt en staðreyndagrunnurinn inniheldur ekki heimild sem staðfestir það beint.",
+      "missing_context": "Engar tölulegar heimildir um hlutdeild fríhafnarinnar í innlendri áfengissölu liggja fyrir í staðreyndagrunni. Hugtakið «umtalsverður hluti» er matskennt og krefst tölulegs stuðnings.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-DATA-033",
+          "source_name": "WHO Europe — Nordic Alcohol Monopolies as Public Health Model",
+          "source_url": "https://www.who.int/europe/news/item/03-02-2025-who-europe-highlights-nordic-alcohol-monopolies-as-a-comprehensive-model-for-reducing-alcohol-consumption-and-harm"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "paraphrased",
+      "article_slug": "profmal-a-braudfotum-esa-threngir-ad-einkaretti-atvr",
+      "article_title": "Prófmál á brauðfótum: ESA þrengir að einkarétti ÁTVR",
+      "article_source": "Viðskiptablaðið",
+      "article_date": "2026-04-07"
+    },
+    {
+      "claim_text": "Innlendir framleiðendur mega selja áfengi á framleiðslustað en ekki erlendir framleiðendur.",
+      "original_quote": "Hvernig réttlætir ríkið að innlendir framleiðendur megi selja áfengi á framleiðslustað en ekki erlendir?",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.who.int/europe/news/item/03-02-2025-who-europe-highlights-nordic-alcohol-monopolies-as-a-comprehensive-model-for-reducing-alcohol-consumption-and-harm\" title=\"WHO Europe — Nordic Alcohol Monopolies as Public Health Model\" target=\"_blank\" rel=\"noopener\">EEA-DATA-033</a> staðfestir undanþágu frá 2022 sem heimilar innlendum brugghúsum beina sölu, og nefnir jafnframt «gap» þar sem erlendir netverslunaraðilar hafa í raun meiri smásölufrelsi en innlendir. <a href=\"https://eftacourt.int/cases/e-04-01/\" title=\"EFTA Court — Case E-4/01 Karl K. Karlsson hf. v Iceland\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-030</a> undirstrikar að 16. gr. EES-samningsins krefst jafnræðis og bann við mismunun milli innlendra og erlendra aðila. Fullyrðingin endurspeglar raunverulegt misræmi, en myndin er flóknari en hún gefur til kynna — erlendir aðilar hafa á vissan hátt meiri aðgang gegnum netverslun.",
+      "missing_context": "Undanþágan frá 2022 er takmörkuð að umfangi og nær til brugghúsa. Samhliða henni geta erlendir netverslunaraðilar selt áfengi til íslenskra neytenda, sem skapar öfugt misræmi — erlendir aðilar njóta á vissan hátt meiri smásölufrelsis en innlendir. Réttarstaða netverslunarinnar er til meðferðar í dómsmáli (Smáríkið).",
+      "supporting_evidence": [
+        {
+          "id": "EEA-DATA-033",
+          "source_name": "WHO Europe — Nordic Alcohol Monopolies as Public Health Model",
+          "source_url": "https://www.who.int/europe/news/item/03-02-2025-who-europe-highlights-nordic-alcohol-monopolies-as-a-comprehensive-model-for-reducing-alcohol-consumption-and-harm"
+        },
+        {
+          "id": "EEA-LEGAL-030",
+          "source_name": "EFTA Court — Case E-4/01 Karl K. Karlsson hf. v Iceland",
+          "source_url": "https://eftacourt.int/cases/e-04-01/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "paraphrased",
+      "article_slug": "profmal-a-braudfotum-esa-threngir-ad-einkaretti-atvr",
+      "article_title": "Prófmál á brauðfótum: ESA þrengir að einkarétti ÁTVR",
+      "article_source": "Viðskiptablaðið",
+      "article_date": "2026-04-07"
+    },
+    {
+      "claim_text": "ESA telur réttlætingarástæður einkaréttar ÁTVR vafasamar í ljósi 16. gr. EES-samningsins.",
+      "original_quote": "það er í raun opinber viðurkenning alþjóðastofnunar sem hefur eftirlit með hlítni við EES-samninginn á því að réttlætingarástæður einkaréttar ÁTVR séu vafasamar.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.eftasurv.int/internal-market/implementing-eea-law-national-law/internal-market-scoreboards\" title=\"EFTA Surveillance Authority — Internal Market Scoreboard and Annual Reports\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-009</a> staðfestir eftirlitshlutverk ESA og að stofnunin opni reglulega brotamál gegn EES/EFTA-ríkjum. <a href=\"https://eftacourt.int/cases/e-04-01/\" title=\"EFTA Court — Case E-4/01 Karl K. Karlsson hf. v Iceland\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-030</a> staðfestir 16. gr. EES-samningsins og Karl K. Karlsson fordæmið um skaðabótaskyldu vegna einkasölu sem brýtur gegn samningnum. Þessar heimildir styðja lagalegan ramma fullyrðingarinnar. Hins vegar inniheldur staðreyndagrunnurinn ekki bréf ESA eða formlega afstöðu stofnunarinnar um einkarétt ÁTVR. Grein milli spurningabréfs og formlegrar niðurstöðu um samræmisbrest skiptir máli — spurningar eru ekki jafngilt efnislegri afstöðu.",
+      "missing_context": "Munur er á spurningabréfi ESA og formlegri niðurstöðu. Fullyrðingin túlkar spurningar ESA sem vísbendingu um efasemdir, sem er eðlileg ályktun en ekki jafngildi formlegum úrskurði. Bréf ESA er ekki í staðreyndagrunni.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-009",
+          "source_name": "EFTA Surveillance Authority — Internal Market Scoreboard and Annual Reports",
+          "source_url": "https://www.eftasurv.int/internal-market/implementing-eea-law-national-law/internal-market-scoreboards"
+        },
+        {
+          "id": "EEA-LEGAL-030",
+          "source_name": "EFTA Court — Case E-4/01 Karl K. Karlsson hf. v Iceland",
+          "source_url": "https://eftacourt.int/cases/e-04-01/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "paraphrased",
+      "article_slug": "profmal-a-braudfotum-esa-threngir-ad-einkaretti-atvr",
+      "article_title": "Prófmál á brauðfótum: ESA þrengir að einkarétti ÁTVR",
+      "article_source": "Viðskiptablaðið",
+      "article_date": "2026-04-07"
+    },
+    {
+      "claim_text": "Eftirlitsstofnun EFTA (ESA) hefur hafið formlega málsmeðferð gegn Íslandi fyrir að hafa ekki fylgt EES-reglum um flutning á dýraafurðum milli EES-ríkja sem eiga uppruna í þriðju ríkjum.",
+      "original_quote": "Eftirlitsstofnun EFTA (ESA) hefur hafið formlega málsmeðferð gegn Íslandi fyrir að hafa ekki fylgt EES-reglum um flutning á dýraafurðum milli EES-ríkja sem eiga uppruna í þriðju ríkjum.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að ESA hefur formlega krafist þess að Ísland fari að EES-reglum um innflutningseftirlit með dýraafurðum. <a href=\"https://www.eftasurv.int/newsroom/updates/esa-asks-iceland-comply-eea-rules-veterinary-import-controls\" title=\"EFTA Surveillance Authority\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-027</a> (sjá fullyrðingu 5) lýsir því sérstaklega að ESA hafi beint formlegum kröfum að Íslandi vegna ófullnægjandi eftirlits með dýraafurðum í umflutningi, og <a href=\"https://www.eftasurv.int/internal-market/implementing-eea-law-national-law/internal-market-scoreboards\" title=\"EFTA Surveillance Authority — Internal Market Scoreboard and Annual Reports\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-009</a> staðfestir almennt framfylgdarhlutverk ESA. Hins vegar eru heimildir ekki nægjanlega sértækar um hvort málið varði einmitt flutning á dýraafurðum «milli EES-ríkja sem eiga uppruna í þriðju ríkjum» — <a href=\"https://www.eftasurv.int/newsroom/updates/esa-asks-iceland-comply-eea-rules-veterinary-import-controls\" title=\"EFTA Surveillance Authority\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-027</a> nefnir umflutningseftirlit en skilgreinir ekki nákvæmlega þessa aðstöðu.",
+      "missing_context": "Heimildir greina ekki sérstaklega hvort ESA-málsmeðferðin beinist að viðbótarkröfum Íslands um dýraafurðir frá þriðju ríkjum sem þegar eru komnar inn á EES-svæðið, eða hvort um sé að ræða almennari innleiðingarvandamál. <a href=\"https://www.visindavefur.is/svar.php?id=68324\" title=\"Vísindavefurinn — Þórhildur Hagalín, European Studies scholar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-025</a> bendir til þess að Ísland njóti varanlegra undanþága á sviði dýraheilbrigðis, sem flækir myndina.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-009",
+          "source_name": "EFTA Surveillance Authority — Internal Market Scoreboard and Annual Reports",
+          "source_url": "https://www.eftasurv.int/internal-market/implementing-eea-law-national-law/internal-market-scoreboards"
+        },
+        {
+          "id": "EEA-DATA-007",
+          "source_name": "EFTA Surveillance Authority — Internal Market Scoreboard 2024",
+          "source_url": "https://www.eftasurv.int/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "asserted",
+      "article_slug": "esa-hefur-hafid-formlega-malsmedferd-gegn-islandi",
+      "article_title": "ESA hefur hafið formlega málsmeðferð gegn Íslandi",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-04-08"
+    },
+    {
+      "claim_text": "Samkvæmt íslenskum reglum er ákveðnum dýraafurðum sem hafa þegar verið fluttar inn á EES-svæðið gert að uppfylla viðbótarkröfur áður en þær mega koma til landsins, þrátt fyrir að þær hafi uppfyllt allar innflutningskröfur EES.",
+      "original_quote": "samkvæmt íslenskum reglum sé ákveðnum dýraafurðum sem hafa þegar verið fluttar inn á EES-svæðið gert að uppfylla viðbótarkröfur áður en þær mega koma til landsins, þrátt fyrir að þær hafi uppfyllt allar innflutningskröfur EES.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.visindavefur.is/svar.php?id=68324\" title=\"Vísindavefurinn — Þórhildur Hagalín, European Studies scholar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-025</a> staðfestir að Ísland hefur varanlegar undanþágur frá tilteknum ESB-tilskipunum á sviði dýraheilbrigðis, og <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Articles 8 and 17–26; Protocols 1 and 47\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-008</a> bendir til þess að EFTA-ríki hafi sértækar aðlaganir á sviði dýraheilbrigðis- og plöntuheilbrigðisreglna. Þetta styður þá grundvallarstaðhæfingu að Ísland beiti viðbótarkröfum. <a href=\"https://food.ec.europa.eu/animals/animal-products-movements_en\" title=\"European Commission Food Safety / EUR-Lex\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-006</a> staðfestir einnig að Ísland viðheldur strangri innflutningsvernd á sviði búfjárheilbrigðis. Fullyrðingin er þó sett fram sem lýsing á ólögmætum hindrunum, en heimildir gefa til kynna að íslensku reglurnar gætu átt sér stoð í undanþágum EES-samningsins.",
+      "missing_context": "Heimildir ná ekki til þess hvaða sérstakar viðbótarkröfur Ísland setur á dýraafurðir sem þegar hafa verið fluttar inn á EES-svæðið. <a href=\"https://www.visindavefur.is/svar.php?id=68324\" title=\"Vísindavefurinn — Þórhildur Hagalín, European Studies scholar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-025</a> nefnir varanlegar undanþágur en tilgreinir ekki umfang þeirra eða mikilvægi. Spurningin er hvort viðbótarkröfurnar falli innan undanþáganna eða gangi lengra en þær.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-DATA-025",
+          "source_name": "Vísindavefurinn — Þórhildur Hagalín, European Studies scholar (2014)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=68324"
+        },
+        {
+          "id": "EEA-LEGAL-008",
+          "source_name": "EEA Agreement, Articles 8 and 17–26; Protocols 1 and 47",
+          "source_url": "https://www.efta.int/eea/eea-agreement"
+        },
+        {
+          "id": "AGRI-LEGAL-006",
+          "source_name": "European Commission Food Safety / EUR-Lex",
+          "source_url": "https://food.ec.europa.eu/animals/animal-products-movements_en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "asserted",
+      "article_slug": "esa-hefur-hafid-formlega-malsmedferd-gegn-islandi",
+      "article_title": "ESA hefur hafið formlega málsmeðferð gegn Íslandi",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-04-08"
+    },
+    {
+      "claim_text": "ESA telur að kröfur Íslands um viðbótarleyfi og frystingu á fersku og hráu kjöti séu ósamrýmanlegar EES-reglum, sem heimili ekki ríkjum að setja frekari skilyrði um dýraafurðir sem hafa verið löglega fluttar inn á innri markaðinn.",
+      "original_quote": "ESA telur að kröfur Íslands um viðbótarleyfi og frystingu á fersku og hráu kjöti séu ósamrýmanlegar EES-reglum, sem heimili ekki ríkjum að setja frekari skilyrði um dýraafurðir sem hafa verið löglega fluttar inn á innri markaðinn.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.eftasurv.int/newsroom/updates/esa-asks-iceland-comply-eea-rules-veterinary-import-controls\" title=\"EFTA Surveillance Authority\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-027</a> staðfestir að ESA hefur formlega krafist þess að Ísland fari að EES-reglum um eftirlit með dýraafurðum og nefnir ófullnægjandi eftirlit sem brot á EES-löggjöf. Þetta styður þá meginmynd að ESA telji íslensku viðbótarkröfurnar ósamrýmanlegar EES-rétti. Á hinn bóginn tekur <a href=\"https://www.visindavefur.is/svar.php?id=68324\" title=\"Vísindavefurinn — Þórhildur Hagalín, European Studies scholar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-025</a> sérstaklega fram að Ísland hafi varanlegar undanþágur á sviði dýraheilbrigðis, og <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Articles 8 and 17–26; Protocols 1 and 47\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-008</a> staðfestir sértækar aðlaganir. Fullyrðingin er of afdráttarlaus þegar hún segir að EES-reglur «heimili ekki» frekari skilyrði — heimildir sýna blæbrigðaríkari mynd þar sem undanþágur og aðlaganir eru mögulegar.",
+      "missing_context": "Greinarmunur er á almennri meginreglu EES um frjálsan vöruflutning og sérstökum undanþágum sem Ísland nýtur. <a href=\"https://www.eftasurv.int/newsroom/updates/esa-asks-iceland-comply-eea-rules-veterinary-import-controls\" title=\"EFTA Surveillance Authority\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-027</a> varðar umflutningseftirlit, ekki endilega viðbótarkröfur á innri markaði. Spurningin hvort tilteknar íslensku kröfurnar falli innan eða utan varanlegra undanþága er ekki svarað í heimildum.",
+      "supporting_evidence": [
+        {
+          "id": "AGRI-DATA-027",
+          "source_name": "EFTA Surveillance Authority",
+          "source_url": "https://www.eftasurv.int/newsroom/updates/esa-asks-iceland-comply-eea-rules-veterinary-import-controls"
+        },
+        {
+          "id": "EEA-LEGAL-009",
+          "source_name": "EFTA Surveillance Authority — Internal Market Scoreboard and Annual Reports",
+          "source_url": "https://www.eftasurv.int/internal-market/implementing-eea-law-national-law/internal-market-scoreboards"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "EEA-DATA-025",
+          "source_name": "Vísindavefurinn — Þórhildur Hagalín, European Studies scholar (2014)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=68324"
+        },
+        {
+          "id": "EEA-LEGAL-008",
+          "source_name": "EEA Agreement, Articles 8 and 17–26; Protocols 1 and 47",
+          "source_url": "https://www.efta.int/eea/eea-agreement"
+        }
+      ],
+      "category": "eea_eu_law",
+      "attribution": "quoted",
+      "article_slug": "esa-hefur-hafid-formlega-malsmedferd-gegn-islandi",
+      "article_title": "ESA hefur hafið formlega málsmeðferð gegn Íslandi",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-04-08"
+    },
+    {
+      "claim_text": "Formlegt áminningarbréf er fyrsta skrefið í samningsbrotamáli gegn EES EFTA-ríki.",
+      "original_quote": "Fram kemur að formlegt áminningarbréf sé fyrsta skrefið í samningsbrotamáli gegn EES EFTA-ríki",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.eftasurv.int/internal-market/implementing-eea-law-national-law/internal-market-scoreboards\" title=\"EFTA Surveillance Authority — Internal Market Scoreboard and Annual Reports\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-009</a> staðfestir að ESA getur gefið út rökstudd álit og höfðað mál fyrir EFTA-dómstólnum, sem er í samræmi við hefðbundin samningsbrotamálsferli. Ferli ESA endurspeglar ferli Framkvæmdastjórnar ESB þar sem formlegt áminningarbréf (letter of formal notice) er raunar fyrsta skrefið. Heimildir lýsa þó ekki sérstaklega skrefunum í réttri röð — <a href=\"https://www.eftasurv.int/internal-market/implementing-eea-law-national-law/internal-market-scoreboards\" title=\"EFTA Surveillance Authority — Internal Market Scoreboard and Annual Reports\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-009</a> nefnir «reasoned opinions» og «infringement cases» en útskýrir ekki hvort áminningarbréf komi á undan.",
+      "missing_context": "Heimildir staðfesta almennt framfylgdarhlutverk ESA en lýsa ekki formlega skrefunum í samningsbrotamálsferli (áminningarbréf → rökstutt álit → mál fyrir EFTA-dómstólnum). Fullyrðingin er í samræmi við þekkt ferli sambærilegra stofnana en heimildir sanna hana ekki beint.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-LEGAL-009",
+          "source_name": "EFTA Surveillance Authority — Internal Market Scoreboard and Annual Reports",
+          "source_url": "https://www.eftasurv.int/internal-market/implementing-eea-law-national-law/internal-market-scoreboards"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "asserted",
+      "article_slug": "esa-hefur-hafid-formlega-malsmedferd-gegn-islandi",
+      "article_title": "ESA hefur hafið formlega málsmeðferð gegn Íslandi",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-04-08"
     }
   ],
   "articles": [
@@ -79,6 +270,28 @@
       "claim_count": 2,
       "attribution_types": [
         "asserted"
+      ]
+    },
+    {
+      "slug": "profmal-a-braudfotum-esa-threngir-ad-einkaretti-atvr",
+      "title": "Prófmál á brauðfótum: ESA þrengir að einkarétti ÁTVR",
+      "source": "Viðskiptablaðið",
+      "date": "2026-04-07",
+      "claim_count": 3,
+      "attribution_types": [
+        "mentioned",
+        "paraphrased"
+      ]
+    },
+    {
+      "slug": "esa-hefur-hafid-formlega-malsmedferd-gegn-islandi",
+      "title": "ESA hefur hafið formlega málsmeðferð gegn Íslandi",
+      "source": "Morgunblaðið",
+      "date": "2026-04-08",
+      "claim_count": 4,
+      "attribution_types": [
+        "asserted",
+        "quoted"
       ]
     }
   ]

@@ -10,8 +10,8 @@
   "summary": "Greindar 24 fullyrðingar .",
   "capsule": "Maastricht-skilyrðin sem greinin fjallar um eru nákvæmlega þau skilyrði sem eru skilgreind í Sáttmálanum um starfshætti ESB — verðbólga, fjárlagahalli, skuldir og gengisþátttaka í ERM II — og þeim er rétt lýst. Athyglisvert er þó að Svíþjóð hefur verið ESB-ríki síðan 1995 en er enn með sína eigin krónu: ríki geta af meðvituðum pólitískum ástæðum sneiðst hjá þátttöku í ERM II og þar með seinkað evruþátttöku um óákveðinn tíma — evruvæðing er því ekki sjálfkrafa afleiðing aðildar. Einnig er vert að vita að stærsta efnahagslega spurningin í ESB-aðildarviðræðum Íslands hefur aldrei komið við sögu í þessari grein: hvað gerist með fiskveiðilögsöguna og stjórnun sjávarauðlinda?",
   "verdict_counts": {
-    "partially_supported": 14,
-    "supported": 6,
+    "partially_supported": 18,
+    "supported": 2,
     "misleading": 3
   },
   "epistemic_counts": {
@@ -122,8 +122,8 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014\" title=\"Treaty on the Functioning of the European Union, Article 140\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-004</a> staðfestir þetta nákvæmlega: verðbólga má ekki vera meiri en 1,5 prósentustigum yfir meðaltali þriggja bestu ríkjanna. <a href=\"https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en\" title=\"European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators\" target=\"_blank\" rel=\"noopener\">CURR-DATA-005</a> endurtekur sama viðmiðið. Fullyrðingin er rétt lýsing á Maastricht-verðbólguskilyrðinu samkvæmt 140. grein sáttmálans um starfshætti Evrópusambandsins.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin segir að verðbólguskilyrðið sé miðað við «meðaltal þriggja ESB-ríkja með lægstu verðbólguna». <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014\" title=\"Treaty on the Functioning of the European Union, Article 140\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-004</a> og <a href=\"https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en\" title=\"European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators\" target=\"_blank\" rel=\"noopener\">CURR-DATA-005</a> nota orðalagið «three best-performing member states» sem getur haft víðtækari merkingu en einungis þrjú lægstu verðbólguríkin — viðmiðið byggir á «best-performing» sem er skilgreint í framkvæmd sem lægsta verðbólga, en undanskilur ríki þar sem verðhjöðnun er talin afbrigðileg. <a href=\"https://www.visindavefur.is/svar.php?id=87971\" title=\"Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (March 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-011</a> nefnir «three lowest eurozone rates» sem takmarkast við evrusvæðið, en hið formlega viðmið í sáttmálanum nær til allra ESB-ríkja, ekki eingöngu evruríkja. Kjarni fullyrðingarinnar — 1,5 prósentustig yfir viðmiðunarverðbólgu — er rétt, en orðalagið «meðaltal þriggja ESB-ríkja með lægstu verðbólguna» er lítillega ónákvæmt. Formlega er viðmiðið þrjú «bestu» ríkin (e. best-performing), og framkvæmdastjórnin getur undanskilið ríki með afbrigðilega lága verðbólgu (t.d. verðhjöðnun) úr viðmiðunarhópnum.",
       "supporting_evidence": [
         {
           "id": "SOV-LEGAL-004",
@@ -134,11 +134,21 @@
           "id": "CURR-DATA-005",
           "source_name": "European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators",
           "source_url": "https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en"
+        },
+        {
+          "id": "CURR-DATA-011",
+          "source_name": "Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (March 2026)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=87971"
+        },
+        {
+          "id": "CURR-DATA-017",
+          "source_name": "Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=60635"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014\" title=\"Treaty on the Functioning of the European Union, Article 140\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-004</a> bendir á að þótt evruaðild sé formlega skylda fyrir ný aðildarríki, þá er enginn framkvæmdaraðili eða tímafrestur. Svíþjóð hefur forðast evruaðild síðan 2003 með því að ganga ekki í ERM II.",
-      "confidence": 0.95,
+      "missing_context": "Hið formlega Maastricht-viðmið miðast við «three best-performing member states» sem þýðir ekki endilega þrjú lægst eins og fullyrðingin gefur til kynna — framkvæmdastjórnin getur undanskilið ríki með verðhjöðnun eða ólíklega lága verðbólgu. Enginn tímafrestur eða framfylgdarbúnaður er til staðar fyrir upptöku evru. Svíþjóð hefur forðast evruupptöku síðan 2003 með því að ganga ekki í ERM II. Danmörk samdi um formlega undanþágu sem tæplega stendur nýjum aðildarríkjum til boða.",
+      "confidence": 0.82,
       "speakers": [
         {
           "name": "Helgi Magnús Gunnarsson",
@@ -239,8 +249,8 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014\" title=\"Treaty on the Functioning of the European Union, Article 140\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-004</a> staðfestir þetta nákvæmlega: verðbólga má ekki vera meiri en 1,5 prósentustigum yfir meðaltali þriggja bestu ríkjanna. <a href=\"https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en\" title=\"European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators\" target=\"_blank\" rel=\"noopener\">CURR-DATA-005</a> endurtekur sama viðmiðið. Fullyrðingin er rétt lýsing á Maastricht-verðbólguskilyrðinu samkvæmt 140. grein sáttmálans um starfshætti Evrópusambandsins.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin segir að verðbólguskilyrðið sé miðað við «meðaltal þriggja ESB-ríkja með lægstu verðbólguna». <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014\" title=\"Treaty on the Functioning of the European Union, Article 140\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-004</a> og <a href=\"https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en\" title=\"European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators\" target=\"_blank\" rel=\"noopener\">CURR-DATA-005</a> nota orðalagið «three best-performing member states» sem getur haft víðtækari merkingu en einungis þrjú lægstu verðbólguríkin — viðmiðið byggir á «best-performing» sem er skilgreint í framkvæmd sem lægsta verðbólga, en undanskilur ríki þar sem verðhjöðnun er talin afbrigðileg. <a href=\"https://www.visindavefur.is/svar.php?id=87971\" title=\"Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (March 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-011</a> nefnir «three lowest eurozone rates» sem takmarkast við evrusvæðið, en hið formlega viðmið í sáttmálanum nær til allra ESB-ríkja, ekki eingöngu evruríkja. Kjarni fullyrðingarinnar — 1,5 prósentustig yfir viðmiðunarverðbólgu — er rétt, en orðalagið «meðaltal þriggja ESB-ríkja með lægstu verðbólguna» er lítillega ónákvæmt. Formlega er viðmiðið þrjú «bestu» ríkin (e. best-performing), og framkvæmdastjórnin getur undanskilið ríki með afbrigðilega lága verðbólgu (t.d. verðhjöðnun) úr viðmiðunarhópnum.",
       "supporting_evidence": [
         {
           "id": "SOV-LEGAL-004",
@@ -251,11 +261,21 @@
           "id": "CURR-DATA-005",
           "source_name": "European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators",
           "source_url": "https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en"
+        },
+        {
+          "id": "CURR-DATA-011",
+          "source_name": "Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (March 2026)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=87971"
+        },
+        {
+          "id": "CURR-DATA-017",
+          "source_name": "Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=60635"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014\" title=\"Treaty on the Functioning of the European Union, Article 140\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-004</a> bendir á að þótt evruaðild sé formlega skylda fyrir ný aðildarríki, þá er enginn framkvæmdaraðili eða tímafrestur. Svíþjóð hefur forðast evruaðild síðan 2003 með því að ganga ekki í ERM II.",
-      "confidence": 0.95,
+      "missing_context": "Hið formlega Maastricht-viðmið miðast við «three best-performing member states» sem þýðir ekki endilega þrjú lægst eins og fullyrðingin gefur til kynna — framkvæmdastjórnin getur undanskilið ríki með verðhjöðnun eða ólíklega lága verðbólgu. Enginn tímafrestur eða framfylgdarbúnaður er til staðar fyrir upptöku evru. Svíþjóð hefur forðast evruupptöku síðan 2003 með því að ganga ekki í ERM II. Danmörk samdi um formlega undanþágu sem tæplega stendur nýjum aðildarríkjum til boða.",
+      "confidence": 0.82,
       "speakers": [
         {
           "name": "Helgi Magnús Gunnarsson",
@@ -456,14 +476,9 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://eftacourt.int/press-publications/annual-report-2024/\" title=\"EEA Agreement, Article 108; EFTA Court — Annual Report 2024; CJEU — Annual Report 2024\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-013</a> staðfestir að EFTA-dómstóllinn hafi lögsögu yfir EES-rétti í EFTA-ríkjum og að úrskurðir hans séu ráðgefandi (advisory) en ekki bindandi, ólíkt dómum ESB-dómstólsins. <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/the-surveillance-and-court-agreement/agreement-annexes-and-protocols/Surveillance-and-Court-Agreement-consolidated.pdf\" title=\"Agreement establishing the EFTA Surveillance Authority and the EFTA Court, Article 3\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-005</a> staðfestir að EFTA-dómstóllinn sé aðskilin stofnun frá ESB-dómstólnum. <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Articles 99–101\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-002</a> staðfestir að ESA (Eftirlitsstofnun EFTA) gegni hlutverki Framkvæmdastjórnar ESB gagnvart EFTA-ríkjunum. Fullyrðingin er rétt í formlegu tilliti.",
+      "verdict": "partially_supported",
+      "explanation": "Meginstoðir fullyrðingarinnar standast — <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/the-surveillance-and-court-agreement/agreement-annexes-and-protocols/Surveillance-and-Court-Agreement-consolidated.pdf\" title=\"Agreement establishing the EFTA Surveillance Authority and the EFTA Court, Article 3\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-005</a> staðfestir að EFTA-dómstóllinn dæmir í EES-málum, ekki ESB-dómstóllinn, og <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Articles 99–101\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-002</a> staðfestir tilvist ESA. Rétt er að ESB-gerðir hafa ekki bein réttaráhrif undir EES-samningnum (<a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EFTA Secretariat — The EEA Agreement; ESA Internal Market Scoreboard; EEA Joint Committee\" target=\"_blank\" rel=\"noopener\">EEA-DATA-010</a>). Hins vegar er fullyrðingin um «engin bindandi dómar ESB-dómstóls» of einföld. Samkvæmt <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/the-surveillance-and-court-agreement/agreement-annexes-and-protocols/Surveillance-and-Court-Agreement-consolidated.pdf\" title=\"Agreement establishing the EFTA Surveillance Authority and the EFTA Court, Article 3\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-005</a> er EFTA-dómstólnum skylt að fylgja dómaframkvæmd ESB-dómstólsins í ákvæðum sem eru efnislega samhljóða ESB-rétti. Þar með hafa dómar ESB-dómstólsins óbein en raunveruleg áhrif á réttarframkvæmd á Íslandi.",
       "supporting_evidence": [
-        {
-          "id": "SOV-LEGAL-013",
-          "source_name": "EEA Agreement, Article 108; EFTA Court — Annual Report 2024; CJEU — Annual Report 2024",
-          "source_url": "https://eftacourt.int/press-publications/annual-report-2024/"
-        },
         {
           "id": "EEA-LEGAL-005",
           "source_name": "Agreement establishing the EFTA Surveillance Authority and the EFTA Court, Article 3",
@@ -473,11 +488,16 @@
           "id": "EEA-LEGAL-002",
           "source_name": "EEA Agreement, Articles 99–101",
           "source_url": "https://www.efta.int/eea/eea-agreement"
+        },
+        {
+          "id": "EEA-DATA-010",
+          "source_name": "EFTA Secretariat — The EEA Agreement; ESA Internal Market Scoreboard; EEA Joint Committee",
+          "source_url": "https://www.efta.int/eea/eea-agreement"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "<a href=\"https://eftacourt.int/press-publications/annual-report-2024/\" title=\"EEA Agreement, Article 108; EFTA Court — Annual Report 2024; CJEU — Annual Report 2024\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-013</a> bendir á mikilvægan fyrirvara: í reynd fylgja íslenskir dómstólar almennt ráðgefandi álitum EFTA-dómstólsins, og EFTA-dómstóllinn fylgir dómafordæmum ESB-dómstólsins. Formlegur munurinn er því meiri en raunverulegur munur í framkvæmd. ESB-aðild myndi leiða til beinnar réttaráhrifa ESB-réttar og yfirráða ESB-dómstólsins.",
-      "confidence": 0.85,
+      "missing_context": "EFTA-dómstólnum er skylt að fylgja fordæmum ESB-dómstólsins í samhljóða ákvæðum — þannig hafa dómar ESB-dómstólsins raunveruleg réttaráhrif þrátt fyrir formlega sjálfstöðu EFTA-dómstólsins. Auk þess skapar EES-samningurinn sterka hvata til samræmis vegna hættu á frysti á hlutum samningsins ef löggjöf er ekki innleidd.",
+      "confidence": 0.82,
       "speakers": [
         {
           "name": "Helgi Magnús Gunnarsson",
@@ -633,9 +653,14 @@
         "confidence": 0.9,
         "epistemic_type": "prediction"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.imf.org/en/Publications/WEO\" title=\"IMF World Economic Outlook Database — October 2024\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-002</a> staðfestir að VLF Íslands á mann (PPP) sé um 72.000 USD, um 29% yfir meðaltali ESB. <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Institute of International Affairs, University of Iceland — EU membership cost analysis\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-010</a> áætlar hreint framlag Íslands við ESB-sjóðina í 100–180 milljónir evra á ári. Til samanburðar greiðir Ísland nú um 9,6 milljónir evra á ári í gegnum EES-sjóðina samkvæmt <a href=\"https://eeagrants.org/\" title=\"EEA Grants — Financial Mechanism Committee; European Commission — EU budget figures\" target=\"_blank\" rel=\"noopener\">EEA-DATA-008</a>. Ísland yrði nettógreiðandi í fjárhagsáætlun ESB vegna hárra tekna á mann.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.europarl.europa.eu/thinktank/en/document/EPRS_BRI(2026)782591\" title=\"IMF World Economic Outlook; Eurostat; EPRS Briefing on EU-Iceland Relations\" target=\"_blank\" rel=\"noopener\">PREC-DATA-025</a> og <a href=\"https://www.imf.org/en/Publications/WEO\" title=\"IMF World Economic Outlook Database — October 2024\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-002</a> staðfesta að Ísland sé meðal ríkustu þjóða í Evrópu miðað við höfðatölu — VLF á mann (PPP) er um 29% yfir meðaltali ESB. <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Institute of International Affairs, University of Iceland — EU membership cost analysis\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-010</a> áætlar nettóframlag Íslands í ESB-sjóði á bilinu 100–180 milljónir evra á ári, sem staðfestir að Ísland yrði nettógreiðandi. Hins vegar er orðalagið «hátt í ESB-sjóði í samræmi við það» of vítt. Heimildir benda á að áætlað nettóframlag sé hóflegt í algildum tölum vegna fámennis Íslands. Auk þess gæti Ísland fengið styrki úr byggðasjóðum vegna strjálbýlis og afskekktrar legu, sem draga úr nettóframlaginu. <a href=\"https://www.imf.org/en/Publications/WEO\" title=\"IMF World Economic Outlook Database — October 2024\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-002</a> bendir á að VLF á mann sé upphækkað vegna áliðnaðar og <a href=\"https://cohesiondata.ec.europa.eu/overview\" title=\"European Commission — Cohesion Policy 2021–2027; Eurostat regional GDP data\" target=\"_blank\" rel=\"noopener\">EEA-DATA-016</a> bendir á að Finnland fái umtalsvert úr byggðasjóðum þrátt fyrir háar tekjur.",
       "supporting_evidence": [
+        {
+          "id": "PREC-DATA-025",
+          "source_name": "IMF World Economic Outlook; Eurostat; EPRS Briefing on EU-Iceland Relations",
+          "source_url": "https://www.europarl.europa.eu/thinktank/en/document/EPRS_BRI(2026)782591"
+        },
         {
           "id": "TRADE-COMP-002",
           "source_name": "IMF World Economic Outlook Database — October 2024",
@@ -645,16 +670,11 @@
           "id": "TRADE-DATA-010",
           "source_name": "Institute of International Affairs, University of Iceland — EU membership cost analysis",
           "source_url": "https://ioes.hi.is/en/institute-economic-studies"
-        },
-        {
-          "id": "EEA-DATA-008",
-          "source_name": "EEA Grants — Financial Mechanism Committee; European Commission — EU budget figures",
-          "source_url": "https://eeagrants.org/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "<a href=\"https://www.imf.org/en/Publications/WEO\" title=\"IMF World Economic Outlook Database — October 2024\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-002</a> bendir á að VLF á mann geti verið bjagað af stóriðju í eigu erlendra aðila — þjóðartekjur (GNI) gefa e.t.v. réttari mynd. <a href=\"https://eeagrants.org/\" title=\"EEA Grants — Financial Mechanism Committee; European Commission — EU budget figures\" target=\"_blank\" rel=\"noopener\">EEA-DATA-008</a> tekur fram að lítil jaðarríki hafi í sögulegu tilliti verið nettóþegar ESB-sjóða, ekki greiðendur, sem gæti dregið úr nettóframlagi Íslands. Ísland myndi einnig fá fjármagn til baka í gegnum byggðasjóði, Horizon Europe og landbúnaðarstefnu ESB.",
-      "confidence": 0.85,
+      "missing_context": "VLF á mann (PPP) getur verið villandi fyrir smáríki með orkufrekan iðnað — þjóðartekjur (GNI) gætu gefið betri mynd þar sem þær undanskilja tekjur erlendra fyrirtækja. Ísland gæti átt rétt á byggðasjóðum fyrir strjálbýl svæði (fordæmi Finnlands). Nákvæmt framlag ræðst af samningum, en raunhæfar áætlanir sýna hóflegt nettóframlag í algildum tölum vegna fámennis.",
+      "confidence": 0.7124999999999999,
       "speakers": [
         {
           "name": "Helgi Magnús Gunnarsson",
@@ -951,7 +971,7 @@
         }
       ],
       "missing_context": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1\" title=\"Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-006</a> bendir á að Danmörk, Írland og Pólland hafi samið um undanþágur, en ESB hefur verið síður tilbúið að veita þær frá stækkun 2004. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T175023.html\" title=\"Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-003</a> sýnir stjórnmálaumræðu þar sem Guðrún Hafsteinsdóttir gagnrýndi skort á skýrum samningsmarkmiðum, sem tengist ólíkum skoðunum á hvað viðræður fela í sér.",
-      "confidence": 0.7789999999999999,
+      "confidence": 0.7030474999999998,
       "speakers": [
         {
           "name": "Helgi Magnús Gunnarsson",
@@ -995,7 +1015,7 @@
       ],
       "contradicting_evidence": [],
       "missing_context": "Heimildir staðfesta samkeppnisáskoranir en ekki \"kreppu\" eða \"gjaldþrot\". <a href=\"https://www.businesseurope.eu/publications/businesseurope-reform-barometer-2025-eu-in-a-new-political-cycle-competitiveness-as-a-true-priority-in-a-complex-global-context/\" title=\"BusinessEurope — Reform Barometer 2025; Reform Barometer 2024\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-026</a> tekur sérstaklega fram að könnun BusinessEurope endurspegli sjónarmið atvinnurekenda, ekki endilega heildarhagræna mynd. ESB er stærsti viðskiptamarkaður heims og VLF ESB-27 er um 17 billjónir evra.",
-      "confidence": 0.8,
+      "confidence": 0.8160000000000001,
       "speakers": [
         {
           "name": "Helgi Magnús Gunnarsson",
@@ -1079,14 +1099,14 @@
       "attribution_type": "asserted",
       "claim_count": 22,
       "verdicts": {
-        "partially_supported": 13,
-        "supported": 6,
+        "partially_supported": 17,
+        "supported": 2,
         "misleading": 3
       },
       "stance": "anti_eu",
       "slug": "helgi-magnus-gunnarsson",
       "mention_count": 1,
-      "credibility": 0.64
+      "credibility": 0.52
     }
   ]
 }

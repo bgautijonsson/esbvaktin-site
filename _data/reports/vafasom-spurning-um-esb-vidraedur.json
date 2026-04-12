@@ -10,9 +10,9 @@
   "summary": "Greindar 11 fullyrðingar. Niðurstöður: 5 stutt af heimildum, 3 stutt að hluta, 2 villandi, 1 ekki hægt að sannreyna. Sjónarhorn: hallar á ESB-neikvæða hlið. Heildstæðni: 27%.",
   "capsule": "Aðildarviðræður Íslands við ESB voru stöðvaðar árið 2013 og íslensk stjórnvöld lýstu því yfir 2015 að Ísland teldi sig ekki lengur umsóknarríki — báðar þessar staðreyndir eru réttar. Áhugavert samhengi sem auðgar myndina: Framkvæmdastjórn ESB lýsti í mars 2026 yfir því að umsókn Íslands frá 2009 sé enn formlega gild að hennar mati, sem þýðir að hvort viðræður yrðu «nýjar» eða «framhald» er í raun lögfræðilega umdeilt. Þjóðaratkvæðagreiðslan 29. ágúst er ráðgefandi — Alþingi er ekki lagalega bundið af niðurstöðunni.",
   "verdict_counts": {
-    "supported": 4,
+    "supported": 3,
     "misleading": 3,
-    "partially_supported": 3
+    "partially_supported": 4
   },
   "epistemic_counts": null,
   "claim_count": 10,
@@ -121,7 +121,7 @@
         }
       ],
       "missing_context": "Lagaleg staða umsóknarinnar er enn umdeild. Framkvæmdastjórn ESB lýsti yfir í mars 2026 að umsóknin sé enn í gildi. Orðalag fullyrðingarinnar gefur til kynna að ESB hafi tekið ákvörðunina, en heimildirnar sýna að frumkvæðið kom frá íslensku ríkisstjórninni og ESB samþykkti aldrei formlega afturköllunina.",
-      "confidence": 0.9,
+      "confidence": 0.9363600000000001,
       "speakers": [
         {
           "name": "Evrópusambandið",
@@ -220,7 +220,7 @@
       ],
       "contradicting_evidence": [],
       "missing_context": "Heimildir í staðreyndagrunni lýsa aðildarferlinu almennt en gefa ekki nákvæmar upplýsingar um atkvæðagreiðslureglur við opnun viðræðna. Ferlið felur í sér álit Framkvæmdastjórnarinnar, ákvörðun ráðsins og pólitískt samþykki leiðtogaráðsins, en krafan um samhljóða samþykki allra 27 ríkja er ekki sérstaklega staðfest.",
-      "confidence": 0.55,
+      "confidence": 0.5225,
       "speakers": []
     },
     {
@@ -232,28 +232,28 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "Dagsetningin 29. ágúst 2026 er staðfest af fjölmörgum heimildum. <a href=\"https://utvarpsaga.is/hvad-sagdi-kristrun-um-esb-fyrir-sidustu-althingiskosningar/\" title=\"Útvarp Saga — Hvað sagði Kristrún um ESB; Alþingi — ræða forsætisráðherra 2026-02-16\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-016</a> lýsir ákvörðun ríkisstjórnarinnar um þjóðaratkvæðagreiðsluna og <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-017</a> og <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup hf. — Þjóðarpúls; Vísir\" target=\"_blank\" rel=\"noopener\">POLL-DATA-020</a> fjalla um hana sem fyrirhugað atburðarás. Yfirgnæfandi meirihluti heimildamata (22 af 25) úrskurðar fullyrðinguna sem studda, og dagsetningin er samhljóða í öllum greiningum.",
+      "verdict": "partially_supported",
+      "explanation": "Dagsetningin 29. ágúst 2026 er rétt staðfest af <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> og <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a>. Hins vegar er fullyrðingin um «áframhald aðildarviðræðna» aðeins ónákvæm. Spurningin sem lögð verður fyrir þjóðina er samkvæmt <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a>: «Á að halda áfram viðræðum um aðild Íslands að Evrópusambandinu?» — sem er víðtækari en «áframhald aðildarviðræðna» gefur til kynna. Auk þess er um ráðgefandi þjóðaratkvæðagreiðslu að ræða samkvæmt <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a>, en fullyrðingin nefnir ekki þennan mikilvæga fyrirvara.",
       "supporting_evidence": [
         {
-          "id": "POLL-DATA-017",
-          "source_name": "Gallup Iceland / Þjóðarpúls",
-          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+          "id": "SOV-DATA-006",
+          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
         },
         {
-          "id": "POLL-DATA-020",
-          "source_name": "Gallup hf. — Þjóðarpúls; Vísir",
-          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
         },
         {
-          "id": "POLL-DATA-014",
-          "source_name": "Gallup Ísland — Þjóðarpúls, February–March 2026",
-          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+          "id": "SOV-INTL-001",
+          "source_name": "POLITICO Europe / Bloomberg / Government of Iceland",
+          "source_url": "https://www.politico.eu/article/iceland-eu-referendum-accession-talks/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Þingsályktunartillaga þarf formlegt samþykki Alþingis til að atkvæðagreiðslan fari fram. Einnig er vert að greina á milli viðfangsefnis kosningarinnar — sumar heimildir tala um «áframhald viðræðna» en aðrar um «ESB-aðild» sem eru ólík spursmál.",
-      "confidence": 0.95,
+      "missing_context": "Þjóðaratkvæðagreiðslan er ráðgefandi (ráðgefandi þjóðaratkvæðagreiðsla) en ekki bindandi — Alþingi er ekki skuldbundið af niðurstöðunni, þótt pólitísk hefð leggi þunga áherslu á virðingu fyrir vilja þjóðarinnar. Stjórnarandstaðan hefur gagnrýnt dagsetninguna sem of snemma og talið að nægileg umræða geti ekki átt sér stað yfir sumartímann. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-017</a> bendir á mikilvægan mun á stuðningi við þjóðaratkvæðagreiðsluna sjálfa (57%) og stuðningi við ESB-aðild (42%).",
+      "confidence": 0.6812530274999998,
       "speakers": [
         {
           "name": "Óþekktur höfundur",
@@ -443,13 +443,13 @@
       "attribution_type": "asserted",
       "claim_count": 3,
       "verdicts": {
-        "partially_supported": 1,
-        "supported": 2
+        "partially_supported": 2,
+        "supported": 1
       },
       "stance": "neutral",
       "slug": "othekktur-hofundur",
-      "mention_count": 5,
-      "credibility": 0.58
+      "mention_count": 7,
+      "credibility": 0.68
     },
     {
       "name": "Íslensk stjórnvöld",
@@ -480,7 +480,7 @@
       "stance": "pro_eu",
       "slug": "utanrikisraduneytid",
       "mention_count": 9,
-      "credibility": 0.68
+      "credibility": 0.64
     }
   ]
 }

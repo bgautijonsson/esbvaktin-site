@@ -10,8 +10,8 @@
   "summary": "Greindar 20 fullyrðingar. Niðurstöður: 9 stutt að hluta, 7 ekki hægt að sannreyna, 4 stutt af heimildum. Sjónarhorn: mjög ESB-jákvæð. Heildstæðni: 25%.",
   "capsule": "Danska undanþágukerfi ESB á sér sérstaka sögu: þegar Danmörk samþykkti Maastricht-sáttmálann árið 1993 — eftir að hafna honum fyrst — samdi hún um fjórar varanlegar undanþágur sem náðu til evru, varnarmála, dóms- og innanríkismála og ríkisborgararéttar. Áhugavert er að Ísland myndi líklega standa frammi fyrir annarri samningsstöðu, enda hafa ESB-ríki almennt veitt nýjum aðildarríkjum eftir 2004 mun færri undanþágur. Norðmenn, sem viðtalið nefnir sem dæmi um takmörkuð áhrif, hafa tvisvar hafnað ESB-aðild í þjóðaratkvæðagreiðslum — meðvitað val sem gefur samhengi við umræðuna um stöðu þeirra í EES.",
   "verdict_counts": {
-    "supported": 4,
-    "partially_supported": 9
+    "partially_supported": 12,
+    "supported": 1
   },
   "epistemic_counts": null,
   "claim_count": 13,
@@ -32,33 +32,28 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "Heimildir staðfesta að Danmörk gekk í Efnahagsbandalag Evrópu (EBE) 1. janúar 1973. Samkvæmt <a href=\"https://stat.fi/en/statistics/khi\" title=\"Statistics Finland — EU membership impact assessments; Eurostat — convergence indicators\" target=\"_blank\" rel=\"noopener\">PREC-HIST-018</a> gekk Finnland í ESB 1995 og <a href=\"https://www.ssb.no/en/statbank/list/euvalg\" title=\"Norwegian Centre for Research Data — Election Archive\" target=\"_blank\" rel=\"noopener\">PREC-HIST-001</a> greinir frá norsku þjóðaratkvæðagreiðslunum 1972 og 1994, sem báðar höfnuðu aðild. Svíþjóð gekk einnig í 1995. Danmörk var þannig fyrsta Norðurlandaþjóðin til að ganga í Evrópubandalagið.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin segir að Danmörk hafi gengið í «Evrópusambandið» árið 1973, en á þeim tíma hét stofnunin Evrópubandalagið (EBE/EEC) — Evrópusambandið var ekki formlega stofnað fyrr en með Maastricht-sáttmálanum 1992/1993. Heimildir staðfesta að Danmörk (ásamt Grænlandi sem hluta Danmerkur) gekk í EBE 1. janúar 1973 (<a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/170/greenland\" title=\"European Parliament — Greenland's withdrawal from the EEC; Treaty amending the Treaties of Rome\" target=\"_blank\" rel=\"noopener\">PREC-DATA-021</a>, <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:1985:029:FULL\" title=\"Treaty amending the Treaties establishing the European Communities with regard to Greenland (1984); EU-Greenland fisheries partnership agreement\" target=\"_blank\" rel=\"noopener\">PREC-HIST-017</a>). Danmörk var fyrsta Norðurlandaþjóðin til aðildar, en Svíþjóð og Finnland gengu ekki til liðs fyrr en 1995 (<a href=\"https://stat.fi/en/statistics/khi\" title=\"Statistics Finland — EU membership impact assessments; Eurostat — convergence indicators\" target=\"_blank\" rel=\"noopener\">PREC-HIST-018</a>) og Noregur hefur aldrei gengið í sambandið. Tilvísun í «Evrópusambandið» frekar en EBE er ónákvæm en algeng einföldun.",
       "supporting_evidence": [
-        {
-          "id": "SOV-LEGAL-010",
-          "source_name": "Edinburgh Agreement (1992); Danish Ministry of Foreign Affairs — Denmark's EU opt-outs",
-          "source_url": "https://www.thedanishparliament.dk/en/eu-information-centre/the-danish-opt-outs-from-eu-cooperation"
-        },
         {
           "id": "PREC-DATA-021",
           "source_name": "European Parliament — Greenland's withdrawal from the EEC; Treaty amending the Treaties of Rome",
           "source_url": "https://www.europarl.europa.eu/factsheets/en/sheet/170/greenland"
         },
         {
+          "id": "PREC-HIST-017",
+          "source_name": "Treaty amending the Treaties establishing the European Communities with regard to Greenland (1984); EU-Greenland fisheries partnership agreement",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:1985:029:FULL"
+        },
+        {
           "id": "PREC-HIST-018",
           "source_name": "Statistics Finland — EU membership impact assessments; Eurostat — convergence indicators",
           "source_url": "https://stat.fi/en/statistics/khi"
-        },
-        {
-          "id": "PREC-HIST-001",
-          "source_name": "Norwegian Centre for Research Data — Election Archive",
-          "source_url": "https://www.ssb.no/en/statbank/list/euvalg"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Fullyrðingin notar hugtakið «Evrópusambandið» en árið 1973 hét stofnunin Efnahagsbandalag Evrópu (EBE/EEC). ESB var ekki formlega stofnað fyrr en 1993 með Maastricht-sáttmálanum. Þetta er algeng einföldun en tæknilega ónákvæm.",
-      "confidence": 0.9,
+      "missing_context": "Danmörk gekk í Evrópubandalagið (EBE), ekki Evrópusambandið (ESB) sem var stofnað 1992/1993. Írland gekk einnig í EBE sama dag (1. janúar 1973) ásamt Bretlandi. Noregur hafnaði aðild í þjóðaratkvæðagreiðslu 1972.",
+      "confidence": 0.82,
       "speakers": [
         {
           "name": "Danmörk",
@@ -81,28 +76,18 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.thedanishparliament.dk/en/eu-information-centre/the-danish-opt-outs-from-eu-cooperation\" title=\"Edinburgh Agreement (1992); Danish Ministry of Foreign Affairs — Denmark's EU opt-outs\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-010</a> staðfestir að Danir felldu Maastricht-sáttmálann í þjóðaratkvæðagreiðslu 1992. Í kjölfarið tryggði Danmörk sér fjórar undanþágur með Edinburgh-samkomulaginu, þar á meðal undanþágu frá evrunni. Fullyrðingin er rétt í meginatriðum — Danir greiddu atkvæði gegn sáttmálanum og fengu í framhaldinu undanþágu frá evrunni.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.thedanishparliament.dk/en/eu-information-centre/the-danish-opt-outs-from-eu-cooperation\" title=\"Edinburgh Agreement (1992); Danish Ministry of Foreign Affairs — Denmark's EU opt-outs\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-010</a> staðfestir að Danir felldu Maastricht-sáttmálann í þjóðaratkvæðagreiðslu og fengu í kjölfarið fjórar undanþágur (Edinburgh-samkomulagið 1992). Fullyrðingin segir hins vegar að «Maastricht-sáttmálinn, og þar með upptaka evru» hafi verið felldur. Þetta er ónákvæmt á tvo vegu: Maastricht-sáttmálinn var yfirgripsmeiri en aðeins evran — hann stofnaði Evrópusambandið og náði til margra sviða — og hann tók gildi eftir aðra þjóðaratkvæðagreiðslu í Danmörku (1993) þegar undanþágur höfðu verið samþykktar. Sáttmálinn var því felldur í fyrstu kosningu en samþykktur síðar.",
       "supporting_evidence": [
         {
           "id": "SOV-LEGAL-010",
           "source_name": "Edinburgh Agreement (1992); Danish Ministry of Foreign Affairs — Denmark's EU opt-outs",
           "source_url": "https://www.thedanishparliament.dk/en/eu-information-centre/the-danish-opt-outs-from-eu-cooperation"
-        },
-        {
-          "id": "SOV-LEGAL-006",
-          "source_name": "Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1"
-        },
-        {
-          "id": "EEA-LEGAL-023",
-          "source_name": "European Parliament — EU Treaties and Protocols; Accession Treaty texts",
-          "source_url": "https://eur-lex.europa.eu/collection/eu-law/treaties.html"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Danir samþykktu Maastricht-sáttmálann í annarri þjóðaratkvæðagreiðslu 1993 eftir að Edinburgh-undanþágurnar höfðu verið tryggðar. Sáttmálinn var því ekki endanlega felldur heldur felldur í fyrstu atkvæðagreiðslunni.",
-      "confidence": 0.85,
+      "missing_context": "Samkvæmt <a href=\"https://www.thedanishparliament.dk/en/eu-information-centre/the-danish-opt-outs-from-eu-cooperation\" title=\"Edinburgh Agreement (1992); Danish Ministry of Foreign Affairs — Denmark's EU opt-outs\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-010</a> fengu Danir fjórar undanþágur: evru, varnar, réttarmála og ríkisborgararéttar ESB. Fullyrðingin nefnir aðeins evruna en sáttmálinn náði til miklu fleiri þátta. Danir samþykktu sáttmálann í annarri þjóðaratkvæðagreiðslu 1993 eftir Edinburgh-samkomulagið — hann var því ekki «felldur» endanlega heldur felldur í fyrstu atkvæðagreiðslu og samþykktur í þeirri seinni. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> leggur áherslu á að líkurnar á að ný aðildarríki fái svipaðar undanþágur séu litlar.",
+      "confidence": 0.7789999999999999,
       "speakers": [
         {
           "name": "Danmörk",
@@ -195,7 +180,7 @@
       ],
       "contradicting_evidence": [],
       "missing_context": "Heimildir staðfesta ekki atkvæðagreiðslu um dóms- og innanríkismál árið 2025. Þekkt er að Danir höfnuðu afnámi undanþágunnar í þjóðaratkvæðagreiðslu í desember 2015 (53,1% á móti). Ártalið 2025 í fullyrðingunni virðist rangt — líklega er átt við 2015.",
-      "confidence": 0.8,
+      "confidence": 0.76,
       "speakers": [
         {
           "name": "Danmörk",
@@ -516,28 +501,18 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.thedanishparliament.dk/en/eu-information-centre/the-danish-opt-outs-from-eu-cooperation\" title=\"Edinburgh Agreement (1992); Danish Ministry of Foreign Affairs — Denmark's EU opt-outs\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-010</a> greinir ítarlega frá sögu Danmerkur í ESB — höfnun Maastricht-sáttmálans 1992, fjórum undanþágum Edinburgh-samkomulagsins og þjóðaratkvæðagreiðslum um afnám undanþága. <a href=\"https://eur-lex.europa.eu/collection/eu-law/treaties.html\" title=\"European Parliament — EU Treaties and Protocols; Accession Treaty texts\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-023</a> bætir við dæmum um hvernig Danmörk hefur ítrekað nýtt þjóðaratkvæðagreiðslur til að móta ESB-þátttöku sína. Danska ESB-sagan er vel skráð og hefur augljós áhrif á viðhorf Dana — sérstaklega vegna undanþáganna sem minna á sérstöðu Danmerkur innan sambandsins.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin er mjög óljós og erfitt er að staðfesta hana nákvæmlega. <a href=\"https://www.thedanishparliament.dk/en/eu-information-centre/the-danish-opt-outs-from-eu-cooperation\" title=\"Edinburgh Agreement (1992); Danish Ministry of Foreign Affairs — Denmark's EU opt-outs\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-010</a> lýsir dönsku undanþágunum frá Maastricht-sáttmálanum eftir «nei»-niðurstöðu þjóðaratkvæðagreiðslunnar 1992, sem endurspeglar einstakt samband Dana við evrópska samvinnu. <a href=\"https://agricultureandfood.dk/statistics/\" title=\"Danish Agriculture & Food Council — Facts & Figures; Statistics Denmark\" target=\"_blank\" rel=\"noopener\">PREC-DATA-014</a> nefnir danskan landbúnað og matvælaútflutning. Engin heimild í þessari lotu fjallar þó beint um «tiltölulega nýlega sögu» Danmerkur í Evrópu né hvernig hún hafi áhrif á viðhorf Dana til ESB. Fullyrðingin gæti átt við ýmislegt — sögu Dana sem sjálfstæðs ríkis, sögu í EBE/ESB, eða eitthvað annað — og heimildir duga ekki til að staðfesta slíka víða fullyrðingu.",
       "supporting_evidence": [
         {
           "id": "SOV-LEGAL-010",
           "source_name": "Edinburgh Agreement (1992); Danish Ministry of Foreign Affairs — Denmark's EU opt-outs",
           "source_url": "https://www.thedanishparliament.dk/en/eu-information-centre/the-danish-opt-outs-from-eu-cooperation"
-        },
-        {
-          "id": "SOV-LEGAL-006",
-          "source_name": "Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1"
-        },
-        {
-          "id": "EEA-LEGAL-023",
-          "source_name": "European Parliament — EU Treaties and Protocols; Accession Treaty texts",
-          "source_url": "https://eur-lex.europa.eu/collection/eu-law/treaties.html"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Fullyrðingin er almenn og vísar líklega einnig til annarrar heimsstyrjaldar og þýska hernámsins 1940–1945, sem hafði djúpstæð áhrif á danskt viðhorf til evrópskrar samvinnu. Heimildir í staðreyndagrunni nefna einungis ESB-tengda sögu en ekki styrjaldarsöguna.",
-      "confidence": 0.85,
+      "missing_context": "Fullyrðingin tilgreinir ekki hvað átt er við með «tiltölulega nýlega sögu» — er átt við sjálfstæði Danmerkur frá Svíþjóð (1523), aðild að EBE (1973), eða Maastricht-deilurnar (1992)? Heimildir staðfesta danskan evrópusefa en tengja hann ekki beint við «nýlega sögu». Samhengi vantar um hvernig saga Dana ólíkist öðrum Norðurlandaþjóðum.",
+      "confidence": 0.5,
       "speakers": [
         {
           "name": "Stine Bosse",
@@ -611,13 +586,12 @@
       "attribution_type": "quoted",
       "claim_count": 7,
       "verdicts": {
-        "partially_supported": 6,
-        "supported": 1
+        "partially_supported": 7
       },
       "stance": "pro_eu",
       "slug": "stine-bosse",
       "mention_count": 1,
-      "credibility": 0.57
+      "credibility": 0.5
     }
   ]
 }

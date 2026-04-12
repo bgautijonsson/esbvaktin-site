@@ -10,8 +10,8 @@
   "summary": "Greindar 12 fullyrðingar .",
   "capsule": "Forsætisráðherra staðfestir tvo lykilþætti sem eru rannsakanlegar staðreyndir: þjóðaratkvæðagreiðslan er ráðgefandi að eðli sínu og tvær atkvæðagreiðslur þarf til að ljúka aðildarferlinu. Áhugavert samhengi sem auðgar þessa umræðu er að ráðgefandi þjóðaratkvæðagreiðsla er ekki lagalega bindandi — Alþingi er ekki skuldbundið af niðurstöðunni samkvæmt stjórnarskránni sem þýðir að spurningin um «nógu sterkt umboð» er í grundvallaratriðum pólitísk, ekki lagaleg. Þetta hjálpar lesandanum að meta hvað er raunverulega í húfi þegar rætt er um meirihlutaþröskuldana.",
   "verdict_counts": {
-    "supported": 5,
-    "partially_supported": 6
+    "supported": 3,
+    "partially_supported": 8
   },
   "epistemic_counts": {
     "prediction": 1
@@ -36,7 +36,7 @@
         "epistemic_type": "factual"
       },
       "verdict": "supported",
-      "explanation": "Heimildir staðfesta þetta ótvírætt. Samkvæmt <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland), Articles 26, 65, 79; Althingi records on 2012 referendum follow-up\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-026</a> er þjóðaratkvæðagreiðslan 29. ágúst 2026 ráðgefandi (advisory) — stjórnarskrá Íslands kveður ekki á um bindandi þjóðaratkvæðagreiðslur nema samkvæmt 26. grein, sem gildir eingöngu um synjunarvald forseta. <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79\" target=\"_blank\" rel=\"noopener\">SOV-DATA-002</a> staðfestir að þjóðaratkvæðagreiðslan er byggð á almennu lagaboði, ekki 26. grein. Þrátt fyrir lögformlega ráðgefandi stöðu hafa stjórnarflokkarnir skuldbundið sig pólitískt til að virða niðurstöðuna.",
+      "explanation": "<a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland), Articles 26, 65, 79; Althingi records on 2012 referendum follow-up\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-026</a> staðfestir skýrt að þjóðaratkvæðagreiðslan 29. ágúst 2026 er ráðgefandi (ráðgefandi þjóðaratkvæðagreiðsla), ekki bindandi. <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79\" target=\"_blank\" rel=\"noopener\">SOV-DATA-002</a> útskýrir að íslenska stjórnarskráin kveður ekki á um bindandi þjóðaratkvæðagreiðslur um stefnumál — 26. grein nær aðeins til forseta sem vísar lagafrumvörpum til þjóðaratkvæðis. SOV-DATA-022 styður einnig þetta og bendir á fordæmi: allar þjóðaratkvæðagreiðslur á Íslandi hafa verið ráðgefandi, og Alþingi hefur endanlegt vald.",
       "supporting_evidence": [
         {
           "id": "SOV-LEGAL-026",
@@ -49,13 +49,18 @@
           "source_url": "https://www.althingi.is/lagas/nuna/1944033.html"
         },
         {
-          "id": "SOV-DATA-006",
-          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
-          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+          "id": "SOV-DATA-022",
+          "source_name": "Icelandic Constitutional Law scholars; 2012 referendum precedent; Danish referendum practice",
+          "source_url": null
+        },
+        {
+          "id": "SOV-PARL-003",
+          "source_name": "Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T175023.html"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Fordæmið frá 2012, þegar Alþingi virði niðurstöðu ráðgefandi þjóðaratkvæðagreiðslu um stjórnarskrá að vettugi, sýnir að ráðgefandi atkvæðagreiðslur hafa ekki lagalega bindandi áhrif. Hversu «skýr» niðurstaða þarf að vera til að hún teljist pólitískt bindandi hefur ekki verið skilgreint.",
+      "missing_context": "Þótt þjóðaratkvæðagreiðslan sé formlega ráðgefandi hefur hún verulegan pólitískan þunga. SOV-DATA-022 bendir á að fordæmið frá 2012 — þar sem Alþingi brást ekki við niðurstöðu ráðgefandi þjóðaratkvæðagreiðslu um nýja stjórnarskrá — hafi verið harðlega gagnrýnt sem lýðræðisbrestur. Ríkisstjórnin hefur lýst því yfir að hún muni virða niðurstöðuna. Forsætisráðherra hefur þó sagt «ofboðslega sterkt umboð» þurfi, sem gæti veikt skuldbindinguna við niðurstöðu ef munurinn er lítill.",
       "confidence": 0.95,
       "speakers": [
         {
@@ -79,28 +84,29 @@
         "confidence": 0.9,
         "epistemic_type": "prediction"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T162602.html\" title=\"Alþingi — Kristrún Frostadóttir, forsætisráðherra (andsvar, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">PARTY-PARL-001</a> staðfestir að forsætisráðherra Kristrún Frostadóttir hafi lýst yfir grundvallarprinsippum sem þurfi að virða í aðildarviðræðum, og <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland), Articles 26, 65, 79; Althingi records on 2012 referendum follow-up\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-026</a> bendir á að ríkisstjórnin hafi skuldbundið sig til að virða niðurstöðuna. Þá staðfestir <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> að stjórnarflokkarnir þrír styðji þjóðaratkvæðagreiðsluna. Fullyrðingin endurspeglar opinbera afstöðu ríkisstjórnarinnar.",
+      "verdict": "partially_supported",
+      "explanation": "SOV-DATA-022 staðfestir að forsætisráðherra Kristrún Frostadóttir hafi lýst því yfir að ríkisstjórnin muni virða niðurstöðu þjóðaratkvæðagreiðslunnar. Hins vegar benda <a href=\"https://www.ruv.is/\" title=\"Althingi debate records; RÚV interviews with PM Kristrún Frostadóttir, February–March 2026\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-019</a> til þess að hún hafi einnig sett skilyrði um «ofboðslega sterkt umboð» — sem gæti þýtt að þröng niðurstaða nægi ekki. Þetta samrýmist ekki alveg fullyrðingunni um að ríkisstjórnin fylgi niðurstöðunni «hvort sem hún sé já eða nei» án fyrirvara.",
       "supporting_evidence": [
+        {
+          "id": "SOV-DATA-022",
+          "source_name": "Icelandic Constitutional Law scholars; 2012 referendum precedent; Danish referendum practice",
+          "source_url": null
+        },
         {
           "id": "PARTY-PARL-001",
           "source_name": "Alþingi — Kristrún Frostadóttir, forsætisráðherra (andsvar, 157. löggjafarþing)",
           "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T162602.html"
-        },
-        {
-          "id": "SOV-LEGAL-026",
-          "source_name": "Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland), Articles 26, 65, 79; Althingi records on 2012 referendum follow-up",
-          "source_url": "https://www.althingi.is/lagas/nuna/1944033.html"
-        },
-        {
-          "id": "SOV-DATA-006",
-          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
-          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Forsætisráðherra hefur þó ekki skilgreint hvað teljist nægjanlegur meirihluti — hvort 51% dugi eða hvort þörf sé á skýrari sigri. Fordæmið frá 2012 sýnir að pólitísk skuldbinding um að fylgja niðurstöðu ráðgefandi atkvæðagreiðslu er ekki trygging.",
-      "confidence": 0.8,
+      "contradicting_evidence": [
+        {
+          "id": "PARTY-DATA-019",
+          "source_name": "Althingi debate records; RÚV interviews with PM Kristrún Frostadóttir, February–March 2026",
+          "source_url": "https://www.ruv.is/"
+        }
+      ],
+      "missing_context": "Forsætisráðherra hefur sett fram fyrirvarann um «ofboðslega sterkt umboð» sem gæti gefið ríkisstjórninni svigrúm til að bregðast ekki við niðurstöðu ef hún er þröng. Þjóðaratkvæðagreiðslan er ráðgefandi samkvæmt stjórnarskrárétti og Alþingi heldur fullri ákvörðunarvaldi. Fordæmi 2012 stjórnarskráratkvæðagreiðslunnar sýnir að niðurstöður hafa verið hunsaðar áður.",
+      "confidence": 0.72,
       "speakers": [
         {
           "name": "Kristrún Frostadóttir",
@@ -442,18 +448,23 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir orðalag þjóðaratkvæðagreiðslunnar: «Á að halda áfram viðræðum um aðild Íslands að Evrópusambandinu?» — spurningin snýst um viðræður, ekki aðild. <a href=\"https://www.ruv.is/\" title=\"Althingi debate records; RÚV interviews with PM Kristrún Frostadóttir, February–March 2026\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-019</a> greinir frá því að forsætisráðherra hafi ítrekað lagt áherslu á þessa aðgreiningu og sagt að aðildarsamningur þyrfti sérstaka þingafgreiðslu og hugsanlega aðra þjóðaratkvæðagreiðslu. <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> staðfestir að þingsályktunartillagan snýst um heimild til viðræðna. Ríkisstjórnin biður þannig um umboð til viðræðna, ekki beint umboð til aðildar.",
+      "verdict": "partially_supported",
+      "explanation": "Grunnhugmyndin er rétt: þjóðaratkvæðagreiðslan snýst um viðræður, ekki um aðild sjálfa. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> staðfestir að spurningin snúist um «whether Iceland should resume the accession negotiations,» og <a href=\"https://www.ruv.is/\" title=\"Althingi debate records; RÚV interviews with PM Kristrún Frostadóttir, February–March 2026\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-019</a> undirstrikar að «the referendum is about resuming negotiations, not about joining the EU.» Hins vegar segir fullyrðingin «hefja» aðildarviðræður en spurning þjóðaratkvæðagreiðslunnar er «halda áfram viðræðum» — Ísland hóf aðildarviðræður 2010 og þeim var frestað 2013. Ríkisstjórnin biður þannig um umboð til að endurtaka viðræður, ekki hefja þær.",
       "supporting_evidence": [
         {
-          "id": "SOV-PARL-001",
-          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
-          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+          "id": "SOV-DATA-006",
+          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
         },
         {
           "id": "PARTY-DATA-019",
           "source_name": "Althingi debate records; RÚV interviews with PM Kristrún Frostadóttir, February–March 2026",
           "source_url": "https://www.ruv.is/"
+        },
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
         },
         {
           "id": "SOV-PARL-005",
@@ -462,8 +473,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Andstæðingar halda því fram að atkvæðagreiðslan sé í reynd skref á braut að aðild og gagnrýna að ríkisstjórnin hafi ekki gert grein fyrir samningamarkmiðum sínum (<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T175023.html\" title=\"Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-003</a>). Aðgreiningin milli viðræðna og aðildar er formleg en pólitísk raunveruleikinn kann að vera annar — samþykkt viðræðna getur skapað pólitískan skriðþunga í átt að aðild.",
-      "confidence": 0.88,
+      "missing_context": "Þjóðaratkvæðagreiðslan er ráðgefandi (<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a>) — Alþingi er ekki lagalega bundið af niðurstöðunni, þótt pólitísk hefð veiti henni vægi. Forsætisráðherra hefur sagt að þörf sé á «ofboðslega sterku umboði» til að halda áfram, sem er pólitískt viðmið en ekki lagalegt skilyrði (<a href=\"https://www.ruv.is/\" title=\"Althingi debate records; RÚV interviews with PM Kristrún Frostadóttir, February–March 2026\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-019</a>). Gagnrýnendur benda á að ríkisstjórnin hafi ekki gert grein fyrir samningamarkmiðum sínum áður en þjóðin er beðin um umboð (<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T175023.html\" title=\"Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-003</a>).",
+      "confidence": 0.85,
       "speakers": [
         {
           "name": "Kristrún Frostadóttir",
@@ -526,13 +537,13 @@
       "attribution_type": "quoted",
       "claim_count": 11,
       "verdicts": {
-        "supported": 5,
-        "partially_supported": 6
+        "supported": 3,
+        "partially_supported": 8
       },
       "stance": "neutral",
       "slug": "kristrun-frostadottir",
-      "mention_count": 42,
-      "credibility": 0.71
+      "mention_count": 44,
+      "credibility": 0.67
     }
   ]
 }

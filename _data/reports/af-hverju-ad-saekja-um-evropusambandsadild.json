@@ -10,8 +10,8 @@
   "summary": "Greindar 12 fullyrðingar. Niðurstöður: 6 stutt að hluta, 3 ekki hægt að sannreyna, 2 stutt af heimildum, 1 villandi. Sjónarhorn: mjög ESB-jákvæð. Heildstæðni: 25%.",
   "capsule": "Samræming við Evrópureglur í kjölfar EES-samningsins var hagstæð fyrir íslenskt atvinnulíf — þetta er vel stutt af gögnum, og fordæmin sýna að slíkar hrakspár um fullveldisframsal gengust ekki eftir þegar samningurinn tók gildi. Áhugavert er hins vegar að tímalínan frá aðild að ESB til evruaðildar er síður einföld en oft er látið í ljós: Króatía, sem gengist er við sem dæmið til að fylgja, tók sjö til tíu ár að uppfylla Maastricht-skilyrðin eftir inngöngu, skilyrði sem snerta bæði verðlag og vexti. Hvata til að kanna þessa tímalínu nánar er auðfundinn í þeim gögnum sem liggja opinberlega fyrir.",
   "verdict_counts": {
-    "partially_supported": 6,
-    "supported": 2,
+    "partially_supported": 7,
+    "supported": 1,
     "misleading": 1
   },
   "epistemic_counts": {
@@ -230,8 +230,8 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "Heimildir staðfesta að hár fjármagnskostnaður er meðal helstu hagsmunamála á Íslandi. Stýrivextir Seðlabankans standa í 7,50% (<a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a>) og verðbólga er 5,2% (<a href=\"https://ec.europa.eu/eurostat/web/hicp\" title=\"Eurostat HICP Flash Estimate; ECB Monetary Policy Decisions\" target=\"_blank\" rel=\"noopener\">CURR-DATA-008</a>). Óverðtryggðir húsnæðisvextir eru á bilinu 7,5–8,5% (<a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a>) og verðtryggð lán bera 3,5–4,5% auk verðbótaauka — á meðan meðalvextir á evrusvæðinu eru um 3,4%. <a href=\"https://sedlabanki.is/fjarmalastodugleiki/\" title=\"Seðlabanki Íslands — Financial Stability Report 2025; Húsnæðis- og mannvirkjastofnun (HMS) — Housing Market Overview\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-010</a> staðfestir sérstöðu Íslands með verðtryggða lánakerfinu þar sem höfuðstóll hækkar með verðbólgu, sem eykur raunbyrði lántakenda. Munurinn á heildarvaxtakostnaði yfir 25 ára lán getur orðið þrefaldur til fjórfaldur (<a href=\"https://www.sedlabanki.is/\" title=\"Central Bank of Iceland; ECB; Eurostat HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-007</a>).",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að vextir á Íslandi eru háir (stýrivextir 7,50% í mars 2026) og verðbólga viðvarandi (5,2% í febrúar og mars 2026). Fjármagnskostnaður er því sannanlega hár miðað við evrusvæðið. Fullyrðingin gengur þó lengra og segir þetta vera «eitt stærsta hagsmunamál» fyrirtækja og heimila, sem er matskennd forgangsröðun. Heimildir lýsa vaxtastigi og verðbólgu en rökstyðja ekki beint að þetta sé eitt stærsta hagsmunamálið umfram önnur úrlausnarefni á borð við húsnæðisskort eða launamál.",
       "supporting_evidence": [
         {
           "id": "CURRENCY-DATA-017",
@@ -242,26 +242,11 @@
           "id": "HOUSING-DATA-010",
           "source_name": "Seðlabanki Íslands — Financial Stability Report 2025; Húsnæðis- og mannvirkjastofnun (HMS) — Housing Market Overview",
           "source_url": "https://sedlabanki.is/fjarmalastodugleiki/"
-        },
-        {
-          "id": "HOUS-DATA-005",
-          "source_name": "Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase",
-          "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
-        },
-        {
-          "id": "CURR-DATA-007",
-          "source_name": "Central Bank of Iceland; ECB; Eurostat HICP",
-          "source_url": "https://www.sedlabanki.is/"
-        },
-        {
-          "id": "CURR-DATA-008",
-          "source_name": "Eurostat HICP Flash Estimate; ECB Monetary Policy Decisions",
-          "source_url": "https://ec.europa.eu/eurostat/web/hicp"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Fullyrðingin notar orðalagið «eitt stærsta hagsmunamál» sem er matskennt og erfitt að sannprófa beint — heimildir staðfesta háan vaxtamun en raða ekki hagsmunamálum eftir mikilvægi. Verðtryggð lán bera lægri nafnvexti en raunbyrðin veltur á verðbólguþróun. Vaxtahækkun í mars 2026 sneri lækkunarferlinum við og tveir nefndarmenn vildu enn stærri hækkun.",
-      "confidence": 0.88,
+      "missing_context": "Engin heimild staðfestir forgangsröðun hagsmunamála með könnun eða viðhorfsrannsókn. Verðtryggð lán flækja samanburð við evrusvæðið — flestir íslenskir lántakendur eru á 3,5–5,5% verðtryggðum vöxtum, ekki 7–8% óverðtryggðum.",
+      "confidence": 0.72,
       "speakers": [
         {
           "name": "Dagur B. Eggertsson",
@@ -454,7 +439,7 @@
       ],
       "contradicting_evidence": [],
       "missing_context": "Fullyrðingin gefur í skyn að Ísland sé berskjaldað utan tollabandalags, en EES-samningurinn veitir þegar verulega vernd á innri markaðnum. Tollabandalag myndi einnig þýða að Ísland tæki upp sameiginlegan ytri toll ESB, sem gæti hækkað toll á tilteknum innflutningi. Ísland myndi jafnframt missa möguleikann á sjálfstæðum viðskiptasamningum, svo sem FTA-samninginn við Kína.",
-      "confidence": 0.65,
+      "confidence": 0.663,
       "speakers": [
         {
           "name": "Dagur B. Eggertsson",
@@ -488,14 +473,14 @@
       "attribution_type": "asserted",
       "claim_count": 9,
       "verdicts": {
-        "partially_supported": 6,
-        "supported": 2,
+        "partially_supported": 7,
+        "supported": 1,
         "misleading": 1
       },
       "stance": "pro_eu",
       "slug": "dagur-b-eggertsson",
-      "mention_count": 10,
-      "credibility": 0.56,
+      "mention_count": 11,
+      "credibility": 0.55,
       "speech_count": 20
     }
   ]
