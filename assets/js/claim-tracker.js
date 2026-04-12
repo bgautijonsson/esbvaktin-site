@@ -13,7 +13,9 @@
   const renderer = globalThis.ESBvaktinTrackerRenderer;
   const controllerLib = globalThis.ESBvaktinTrackerController || {};
   const createController = controllerLib.create;
-  const createReportLookup = utils.createReportLookup || (() => ({ byArticleUrl: new Map(), byTitleDate: new Map() }));
+  const createReportLookup =
+    utils.createReportLookup ||
+    (() => ({ byArticleUrl: new Map(), byTitleDate: new Map() }));
   const restoreReturnTarget = utils.restoreReturnTarget || (() => false);
   const createSortComparator = utils.createSortComparator;
   const createCommitState = utils.createCommitState;
@@ -21,13 +23,14 @@
   const renderActiveFilterChips = utils.renderActiveFilterChips;
   const DATA_BASE = utils.getDataBase
     ? utils.getDataBase(document.currentScript, "/assets/data")
-    : (document.currentScript?.dataset.base || "/assets/data");
+    : document.currentScript?.dataset.base || "/assets/data";
   const CLAIMS_URL = `${DATA_BASE}/claims.json`;
   const REPORTS_URL = `${DATA_BASE}/reports.json`;
 
   const claimCard = globalThis.ESBvaktinClaimCard || {};
 
-  const VERDICT_LABELS = (TAXONOMY.verdictLabels && TAXONOMY.verdictLabels.factual) || {};
+  const VERDICT_LABELS =
+    (TAXONOMY.verdictLabels && TAXONOMY.verdictLabels.factual) || {};
   const EPISTEMIC_TYPE_LABELS = TAXONOMY.epistemicTypeLabels || {};
   const CATEGORY_LABELS = TAXONOMY.categoryLabels || {};
   const SORT_LABELS = {
@@ -111,7 +114,7 @@
         (claim) =>
           claim.canonical_text_is?.toLowerCase().includes(q) ||
           claim.explanation_is?.toLowerCase().includes(q) ||
-          claim.missing_context_is?.toLowerCase().includes(q)
+          claim.missing_context_is?.toLowerCase().includes(q),
       );
     }
 
@@ -124,10 +127,18 @@
     }
 
     if (filters.epistemic_type) {
-      results = results.filter((claim) => (claim.epistemic_type || "factual") === filters.epistemic_type);
+      results = results.filter(
+        (claim) =>
+          (claim.epistemic_type || "factual") === filters.epistemic_type,
+      );
     }
 
-    results.sort(createSortComparator(filters.sort || "sighting_count", filters.sortDir || "DESC"));
+    results.sort(
+      createSortComparator(
+        filters.sort || "sighting_count",
+        filters.sortDir || "DESC",
+      ),
+    );
 
     return results;
   }
@@ -137,11 +148,18 @@
     return {
       total: claims.length,
       supported: claims.filter((claim) => claim.verdict === "supported").length,
-      partial: claims.filter((claim) => claim.verdict === "partially_supported").length,
-      unsupported: claims.filter((claim) => claim.verdict === "unsupported").length,
-      misleading: claims.filter((claim) => claim.verdict === "misleading").length,
-      unverifiable: claims.filter((claim) => claim.verdict === "unverifiable").length,
-      totalSightings: claims.reduce((sum, claim) => sum + (claim.sighting_count || 0), 0),
+      partial: claims.filter((claim) => claim.verdict === "partially_supported")
+        .length,
+      unsupported: claims.filter((claim) => claim.verdict === "unsupported")
+        .length,
+      misleading: claims.filter((claim) => claim.verdict === "misleading")
+        .length,
+      unverifiable: claims.filter((claim) => claim.verdict === "unverifiable")
+        .length,
+      totalSightings: claims.reduce(
+        (sum, claim) => sum + (claim.sighting_count || 0),
+        0,
+      ),
     };
   }
 
@@ -161,49 +179,55 @@
           placeholder: "Leita í fullyrðingum…",
           value: filters.search,
         },
-        rows: [{
-          className: "ct-filter-row",
-          controls: [
-            renderer.renderSelect({
-              id: "ct-category",
-              className: "ct-select",
-              label: "Efnisflokkur",
-              placeholder: "Allir flokkar",
-              options: Object.entries(CATEGORY_LABELS)
-                .sort((a, b) => a[1].localeCompare(b[1], "is"))
-                .map(([value, label]) => ({ value, label })),
-              selectedValue: filters.category,
-            }),
-            renderer.renderSelect({
-              id: "ct-verdict",
-              className: "ct-select",
-              label: "Úrskurður",
-              placeholder: "Allir úrskurðir",
-              options: Object.entries(VERDICT_LABELS).map(([value, label]) => ({ value, label })),
-              selectedValue: filters.verdict,
-            }),
-            renderer.renderSelect({
-              id: "ct-epistemic-type",
-              className: "ct-select",
-              label: "Tegund fullyrðingar",
-              placeholder: "Allar tegundir",
-              options: Object.entries(EPISTEMIC_TYPE_LABELS).map(([value, label]) => ({ value, label })),
-              selectedValue: filters.epistemic_type,
-            }),
-            renderer.renderSelect({
-              id: "ct-sort",
-              className: "ct-select",
-              label: "Röðun",
-              options: [
-                { value: "last_verified", label: "Síðast staðfest" },
-                { value: "sighting_count", label: "Tíðni" },
-                { value: "category", label: "Flokkur" },
-                { value: "confidence", label: "Vissustig" },
-              ],
-              selectedValue: filters.sort,
-            }),
-          ],
-        }],
+        rows: [
+          {
+            className: "ct-filter-row",
+            controls: [
+              renderer.renderSelect({
+                id: "ct-category",
+                className: "ct-select",
+                label: "Efnisflokkur",
+                placeholder: "Allir flokkar",
+                options: Object.entries(CATEGORY_LABELS)
+                  .sort((a, b) => a[1].localeCompare(b[1], "is"))
+                  .map(([value, label]) => ({ value, label })),
+                selectedValue: filters.category,
+              }),
+              renderer.renderSelect({
+                id: "ct-verdict",
+                className: "ct-select",
+                label: "Úrskurður",
+                placeholder: "Allir úrskurðir",
+                options: Object.entries(VERDICT_LABELS).map(
+                  ([value, label]) => ({ value, label }),
+                ),
+                selectedValue: filters.verdict,
+              }),
+              renderer.renderSelect({
+                id: "ct-epistemic-type",
+                className: "ct-select",
+                label: "Tegund fullyrðingar",
+                placeholder: "Allar tegundir",
+                options: Object.entries(EPISTEMIC_TYPE_LABELS).map(
+                  ([value, label]) => ({ value, label }),
+                ),
+                selectedValue: filters.epistemic_type,
+              }),
+              renderer.renderSelect({
+                id: "ct-sort",
+                className: "ct-select",
+                label: "Röðun",
+                options: [
+                  { value: "last_verified", label: "Síðast staðfest" },
+                  { value: "sighting_count", label: "Tíðni" },
+                  { value: "category", label: "Flokkur" },
+                  { value: "confidence", label: "Vissustig" },
+                ],
+                selectedValue: filters.sort,
+              }),
+            ],
+          },
+        ],
       })}
 
       <div id="ct-active-filters"></div>
@@ -225,29 +249,113 @@
       items: [
         { value: stats.total, label: "fullyrðingar" },
         { value: stats.totalSightings, label: "tilvitnanir" },
-        { value: stats.supported, label: "staðfestar", className: "ct-stat-supported" },
-        { value: stats.partial, label: "að hluta", className: "ct-stat-partial" },
-        { value: stats.unsupported, label: "óstutt", className: "ct-stat-unsupported" },
-        { value: stats.misleading, label: "samhengi vantar", className: "ct-stat-misleading" },
-        { value: stats.unverifiable, label: "heimildir vantar", className: "ct-stat-unverifiable" },
+        {
+          value: stats.supported,
+          label: "staðfestar",
+          className: "ct-stat-supported",
+        },
+        {
+          value: stats.partial,
+          label: "að hluta",
+          className: "ct-stat-partial",
+        },
+        {
+          value: stats.unsupported,
+          label: "óstutt",
+          className: "ct-stat-unsupported",
+        },
+        {
+          value: stats.misleading,
+          label: "samhengi vantar",
+          className: "ct-stat-misleading",
+        },
+        {
+          value: stats.unverifiable,
+          label: "heimildir vantar",
+          className: "ct-stat-unverifiable",
+        },
       ],
     });
   }
 
+  var PAGE_SIZE = 50;
+  var renderedCount = 0;
+  var currentClaims = [];
+  var loadMoreObserver = null;
+
+  function renderClaimBatch(el, from, to) {
+    var batch = currentClaims.slice(from, to);
+    var html = "";
+    for (var i = 0; i < batch.length; i++) {
+      html += claimCard.renderClaimCard(batch[i], {
+        focusedSlug: getFilters().claim,
+        reportLookup: getReportLookup(),
+      });
+    }
+    return html;
+  }
+
+  function setupLoadMore(el) {
+    if (loadMoreObserver) {
+      loadMoreObserver.disconnect();
+      loadMoreObserver = null;
+    }
+
+    var sentinel = document.getElementById("ct-load-more");
+    if (!sentinel || renderedCount >= currentClaims.length) return;
+
+    loadMoreObserver = new IntersectionObserver(
+      function (entries) {
+        if (!entries[0].isIntersecting) return;
+        loadMoreObserver.disconnect();
+
+        var nextEnd = Math.min(renderedCount + PAGE_SIZE, currentClaims.length);
+        sentinel.insertAdjacentHTML(
+          "beforebegin",
+          renderClaimBatch(el, renderedCount, nextEnd),
+        );
+        renderedCount = nextEnd;
+
+        // Update sentinel or remove it
+        if (renderedCount < currentClaims.length) {
+          sentinel.textContent =
+            "Sýni " +
+            renderedCount +
+            " af " +
+            currentClaims.length +
+            " — skrolla til að sjá fleiri";
+          setupLoadMore(el);
+        } else {
+          sentinel.remove();
+        }
+      },
+      { rootMargin: "200px" },
+    );
+
+    loadMoreObserver.observe(sentinel);
+  }
+
   function renderResults() {
-    const claims = queryClaims();
-    const el = document.getElementById("ct-results");
+    currentClaims = queryClaims();
+    var el = document.getElementById("ct-results");
     if (!el) return;
     renderActiveFilters();
-    updateResultsMeta(claims.length, getClaims().length);
+    updateResultsMeta(currentClaims.length, getClaims().length);
 
-    if (claims.length === 0) {
-      el.innerHTML = renderer.renderMessage("Engar fullyrðingar fundust.", "ct-empty");
+    if (currentClaims.length === 0) {
+      el.innerHTML = renderer.renderMessage(
+        "Engar fullyrðingar fundust.",
+        "ct-empty",
+      );
+      renderedCount = 0;
       return;
     }
 
+    var initialCount = Math.min(PAGE_SIZE, currentClaims.length);
+    renderedCount = initialCount;
+
     el.innerHTML = renderer.renderCollection({
-      items: claims,
+      items: currentClaims.slice(0, initialCount),
       renderItem: function (claim) {
         return claimCard.renderClaimCard(claim, {
           focusedSlug: getFilters().claim,
@@ -255,6 +363,20 @@
         });
       },
     });
+
+    if (currentClaims.length > initialCount) {
+      el.insertAdjacentHTML(
+        "beforeend",
+        '<p id="ct-load-more" class="ct-results-meta" style="text-align:center;padding:var(--sp-lg)">' +
+          "Sýni " +
+          initialCount +
+          " af " +
+          currentClaims.length +
+          " — skrolla til að sjá fleiri</p>",
+      );
+      setupLoadMore(el);
+    }
+
     expandFocusedClaim();
     expandReturnClaimTarget();
     restoreReturnTarget(el);
@@ -265,7 +387,9 @@
     if (!el) return;
 
     if (getFilters().claim) {
-      el.textContent = visibleCount ? "Sýni valda fullyrðingu." : "Valin fullyrðing fannst ekki.";
+      el.textContent = visibleCount
+        ? "Sýni valda fullyrðingu."
+        : "Valin fullyrðing fannst ekki.";
       return;
     }
 
@@ -278,7 +402,12 @@
   }
 
   function expandReturnClaimTarget() {
-    if (typeof window === "undefined" || !window.location || !window.location.hash) return;
+    if (
+      typeof window === "undefined" ||
+      !window.location ||
+      !window.location.hash
+    )
+      return;
 
     const cardId = decodeURIComponent(window.location.hash.slice(1));
     if (!cardId) return;
@@ -316,33 +445,52 @@
     }
 
     if (filters.claim) {
-      const claim = getClaims().find((item) => item.claim_slug === filters.claim);
+      const claim = getClaims().find(
+        (item) => item.claim_slug === filters.claim,
+      );
       const label = claim?.canonical_text_is || filters.claim;
-      const shortened = label.length > 72 ? `${label.slice(0, 71).trimEnd()}…` : label;
+      const shortened =
+        label.length > 72 ? `${label.slice(0, 71).trimEnd()}…` : label;
       chips.push({ key: "claim", text: `Fullyrðing: ${shortened}` });
     }
 
     if (filters.category) {
-      chips.push({ key: "category", text: `Efnisflokkur: ${CATEGORY_LABELS[filters.category] || filters.category}` });
+      chips.push({
+        key: "category",
+        text: `Efnisflokkur: ${CATEGORY_LABELS[filters.category] || filters.category}`,
+      });
     }
 
     if (filters.verdict) {
-      chips.push({ key: "verdict", text: `Úrskurður: ${VERDICT_LABELS[filters.verdict] || filters.verdict}` });
+      chips.push({
+        key: "verdict",
+        text: `Úrskurður: ${VERDICT_LABELS[filters.verdict] || filters.verdict}`,
+      });
     }
 
     if (filters.epistemic_type) {
-      chips.push({ key: "epistemic_type", text: `Tegund: ${EPISTEMIC_TYPE_LABELS[filters.epistemic_type] || filters.epistemic_type}` });
+      chips.push({
+        key: "epistemic_type",
+        text: `Tegund: ${EPISTEMIC_TYPE_LABELS[filters.epistemic_type] || filters.epistemic_type}`,
+      });
     }
 
     if (filters.sort && filters.sort !== "last_verified") {
-      chips.push({ key: "sort", text: `Röðun: ${SORT_LABELS[filters.sort] || filters.sort}` });
+      chips.push({
+        key: "sort",
+        text: `Röðun: ${SORT_LABELS[filters.sort] || filters.sort}`,
+      });
     }
 
     return chips;
   }
 
   function renderActiveFilters() {
-    renderActiveFilterChips("ct-active-filters", renderer, getActiveFilterChips);
+    renderActiveFilterChips(
+      "ct-active-filters",
+      renderer,
+      getActiveFilterChips,
+    );
   }
 
   function clearFilter(key, api) {
@@ -369,19 +517,19 @@
         sort: "last_verified",
       },
       "all",
-      api
+      api,
     );
   }
 
   const commitState = createCommitState(function syncUrl(state) {
-    (utils.updateUrlQuery || function () {})(({
+    (utils.updateUrlQuery || function () {})({
       q: state.search,
       claim: state.claim,
       category: state.category,
       verdict: state.verdict,
       epistemic_type: state.epistemic_type,
       sort: state.sort === "last_verified" ? "" : state.sort,
-    }));
+    });
   });
 
   controller.bindInput(
@@ -389,7 +537,7 @@
     (value, _target, _event, api) => {
       commitState({ search: value, claim: "" }, "results", api);
     },
-    { debounceMs: 200, trim: true }
+    { debounceMs: 200, trim: true },
   );
 
   controller.bindChange("#ct-category", (value, _target, _event, api) => {
