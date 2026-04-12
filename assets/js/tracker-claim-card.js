@@ -245,9 +245,22 @@
               escapeHtml(title) +
               "</span>";
 
+          var sightingVerdictPill = sighting.verdict
+            ? '<span class="ct-sighting-verdict verdict-' +
+              sighting.verdict.replace("_", "-") +
+              '">' +
+              escapeHtml(
+                TAXONOMY.verdictLabel
+                  ? TAXONOMY.verdictLabel(sighting.verdict, epistemicType)
+                  : sighting.verdict,
+              ) +
+              "</span>"
+            : "";
+
           return (
             '<li class="ct-sighting-item">' +
             titleHtml +
+            sightingVerdictPill +
             (meta
               ? '<span class="ct-sighting-meta">' + escapeHtml(meta) + "</span>"
               : "") +
@@ -255,6 +268,76 @@
           );
         })
         .join("");
+
+      // Sighting verdict distribution bar (if available)
+      var verdictDistHtml = "";
+      var svd = claim.sighting_verdict_distribution;
+      if (svd && Object.keys(svd).length > 0) {
+        var totalSvd = Object.values(svd).reduce(function (a, b) {
+          return a + b;
+        }, 0);
+        var verdictOrder = [
+          "supported",
+          "partially_supported",
+          "unsupported",
+          "misleading",
+          "unverifiable",
+        ];
+        var svdLabels = {
+          supported: "Studd",
+          partially_supported: "Hluta studd",
+          unsupported: "Óstudd",
+          misleading: "Villandi",
+          unverifiable: "Óstaðfestanleg",
+        };
+        var segments = verdictOrder
+          .filter(function (v) {
+            return svd[v];
+          })
+          .map(function (v) {
+            var pct = ((svd[v] / totalSvd) * 100).toFixed(1);
+            return (
+              '<span class="ct-svd-segment verdict-' +
+              v.replace("_", "-") +
+              '" style="width: ' +
+              pct +
+              '%" title="' +
+              escapeHtml(svdLabels[v] || v) +
+              ": " +
+              svd[v] +
+              "/" +
+              totalSvd +
+              '"></span>'
+            );
+          })
+          .join("");
+        var legend = verdictOrder
+          .filter(function (v) {
+            return svd[v];
+          })
+          .map(function (v) {
+            return (
+              '<span class="ct-svd-legend-item verdict-' +
+              v.replace("_", "-") +
+              '">' +
+              escapeHtml(svdLabels[v] || v) +
+              " " +
+              svd[v] +
+              "</span>"
+            );
+          })
+          .join("");
+        verdictDistHtml =
+          '<div class="ct-sighting-verdict-dist">' +
+          '<div class="ct-svd-label">Mat heimilda:</div>' +
+          '<div class="ct-svd-bar">' +
+          segments +
+          "</div>" +
+          '<div class="ct-svd-legend">' +
+          legend +
+          "</div>" +
+          "</div>";
+      }
 
       detailsHtml +=
         '<div class="ct-sightings-section">' +
@@ -267,6 +350,7 @@
         '<span class="ct-sightings-expand-icon">▸</span>' +
         "</button>" +
         '<div class="ct-sightings-details">' +
+        verdictDistHtml +
         '<ul class="ct-sighting-list">' +
         sightingItems +
         "</ul>" +

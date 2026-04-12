@@ -161,6 +161,94 @@
   color: var(--v-partial, #b8860b);
 }
 
+/* ── Sighting verdict distribution ──────────────────────────────── */
+
+.ct-sighting-verdict-dist {
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--rule, #e5e2dd);
+}
+
+.ct-svd-label {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.ct-svd-bar {
+  display: flex;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  gap: 1px;
+}
+
+.ct-svd-segment {
+  min-width: 4px;
+}
+
+.ct-svd-segment.verdict-supported {
+  background: var(--v-supported, #4a7c59);
+}
+
+.ct-svd-segment.verdict-partially-supported {
+  background: var(--v-partial, #b8860b);
+}
+
+.ct-svd-segment.verdict-unsupported {
+  background: var(--v-unsupported, #8b4513);
+}
+
+.ct-svd-segment.verdict-misleading {
+  background: var(--v-misleading, #a0522d);
+}
+
+.ct-svd-segment.verdict-unverifiable {
+  background: var(--v-unverifiable, #6b6358);
+}
+
+.ct-svd-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+  font-size: 0.6rem;
+}
+
+.ct-svd-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.ct-svd-legend-item::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+}
+
+.ct-svd-legend-item.verdict-supported::before {
+  background: var(--v-supported, #4a7c59);
+}
+
+.ct-svd-legend-item.verdict-partially-supported::before {
+  background: var(--v-partial, #b8860b);
+}
+
+.ct-svd-legend-item.verdict-unsupported::before {
+  background: var(--v-unsupported, #8b4513);
+}
+
+.ct-svd-legend-item.verdict-misleading::before {
+  background: var(--v-misleading, #a0522d);
+}
+
+.ct-svd-legend-item.verdict-unverifiable::before {
+  background: var(--v-unverifiable, #6b6358);
+}
+
 /* ── Expand/collapse ─────────────────────────────────────────────── */
 
 .ct-expand-icon {
@@ -316,6 +404,38 @@
 .ct-sighting-meta {
   font-size: 0.72rem;
   color: var(--text-muted);
+}
+
+.ct-sighting-verdict {
+  font-size: 0.6rem;
+  padding: 0.05rem 0.3rem;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+}
+
+.ct-sighting-verdict.verdict-supported {
+  color: var(--v-supported, #4a7c59);
+  border: 1px solid var(--v-supported, #4a7c59);
+}
+
+.ct-sighting-verdict.verdict-partially-supported {
+  color: var(--v-partial, #b8860b);
+  border: 1px solid var(--v-partial, #b8860b);
+}
+
+.ct-sighting-verdict.verdict-unsupported {
+  color: var(--v-unsupported, #8b4513);
+  border: 1px solid var(--v-unsupported, #8b4513);
+}
+
+.ct-sighting-verdict.verdict-misleading {
+  color: var(--v-misleading, #a0522d);
+  border: 1px solid var(--v-misleading, #a0522d);
+}
+
+.ct-sighting-verdict.verdict-unverifiable {
+  color: var(--v-unverifiable, #6b6358);
+  border: 1px solid var(--v-unverifiable, #6b6358);
 }
 
 /* ── Responsive ──────────────────────────────────────────────────── */
