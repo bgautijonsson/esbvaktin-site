@@ -10,9 +10,10 @@
   "summary": "Greindar 17 fullyrðingar. Niðurstöður: 7 stutt að hluta, 6 ekki hægt að sannreyna, 3 stutt af heimildum, 1 ekki stutt. Sjónarhorn: hallar á ESB-jákvæða hlið. Heildstæðni: 25%.",
   "capsule": "Greinin fær rétt að losun alþjóðaflugs innan ESB falli undir ETS-viðskiptakerfið og að þjóðaratkvæðagreiðslan 2026 snúist um hvort halda eigi aðildarviðræðum áfram. Athyglisvert er að Ísland tekur nú þegar þátt í ETS-kerfinu í gegnum sérstakan tvíhliða samning við ESB — ekki í gegnum EES-samninginn — sem þýðir að þegar stendur á sérstökum lagalegum grundvelli sem gæti breyst við aðild. Þá er fróðlegt að vita að EEZ Íslands er 758.000 km² og árlegur afli um 1,0–1,2 milljónir tonna, en sameiginleg sjávarútvegsstefna ESB krefst þess að aðildarríki deili kvótum og veiðirétti — atriði sem skýrir af hverju fiskveiðimálin vega svo þungt í umræðunni um skilyrði hugsanlegrar aðildar.",
   "verdict_counts": {
-    "partially_supported": 12,
-    "supported": 2,
-    "misleading": 2
+    "partially_supported": 10,
+    "supported": 3,
+    "misleading": 2,
+    "unverifiable": 1
   },
   "epistemic_counts": {
     "counterfactual": 1,
@@ -316,23 +317,18 @@
         "confidence": 0.9,
         "epistemic_type": "counterfactual"
       },
-      "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/154/rad20231129T000000.html\" title=\"Alþingi — Guðlaugur Þór Þórðarson, þingmaður Sjálfstæðisflokksins (flutningsræða, 154. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">ETS-PARL-001</a> staðfestir að Guðlaugur Þór Þórðarson lagði fram frumvarp á Alþingi um þátttöku Íslands í ETS-kerfinu í nóvember 2023, sem bendir til þinglegrar umræðu um ETS-samningaviðræður. <a href=\"https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341\" title=\"EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-003</a> sýnir að rúm fjögur ár liðu frá samþykkt ETS-tilskipunarinnar (2003) til innleiðingar í EES-samninginn (2007) og að Ísland fylgdi almennri EES/EFTA-tímaáætlun frekar en að taka frumkvæði. Þó ber að hafa í huga að þetta er matskennda fullyrðing — hvort fyrri stjórnvöld «hefðu mátt» stíga fastar er ómögulegt að sanna eða hrekja með vissu. EES/EFTA-ríki hafa takmarkað formlegt vald í löggjafaferli ESB og geta aðeins haft áhrif í gegnum samráðsferli.",
+      "verdict": "unverifiable",
+      "explanation": "Fullyrðingin er gildismat — að fyrri stjórnvöld «hefðu mátt stíga fastar inn» í ETS-viðræður. <a href=\"https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341\" title=\"EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-003</a> lýsir tímalínunni: ETS-tilskipunin var samþykkt 2003 og tekin inn í EES-samninginn 2007, sem samsvarar hefðbundinni EES/EFTA-aðlögun. Heimildin bendir á að EES/EFTA-ríki hafi takmarkað formlegt vald yfir ESB-löggjöf og geti ekki breytt henni beint. Hvort fyrri ríkisstjórnir hefðu átt að beita sér frekar er pólitískt gildismat sem heimildir staðfesta né hrekja ekki.",
       "supporting_evidence": [
         {
           "id": "ETS-LEGAL-003",
           "source_name": "EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission",
           "source_url": "https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341"
-        },
-        {
-          "id": "ETS-PARL-001",
-          "source_name": "Alþingi — Guðlaugur Þór Þórðarson, þingmaður Sjálfstæðisflokksins (flutningsræða, 154. löggjafarþing)",
-          "source_url": "https://www.althingi.is/altext/raeda/154/rad20231129T000000.html"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Fullyrðingin er matskennd og ólöguð — heimildir staðfesta tímalínu og formleg takmörk EES-áhrifavalda en geta ekki svarað þeirri gagnlegu spurningu hvort önnur nálgun hefði skilað öðrum árangri. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> nefnir að utanríkisráðherra hafi vísað í samningafyrirheit um sjávarútveg og orkumál, sem sýnir að samningaaðferðir eru pólitískt álitamál.",
-      "confidence": 0.55,
+      "missing_context": "EES/EFTA-ríki hafa ekki atkvæðisrétt í ESB-löggjöf en geta haft áhrif gegnum samráðsferli (<a href=\"https://www.efta.int/EEA/news/Climate-policy-and-EEA-Agreement-63341\" title=\"EFTA — Climate policy and the EEA Agreement; EEA Joint Committee records; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-003</a>). Ísland samdi um undanþágu frá flugvélahluta ETS sem gildir til 2026 (<a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a>), sem sýnir að samningaviðleitni skilar árangri þegar henni er beitt. Draghi-skýrslan staðfesti áhyggjur Íslands af samkeppnisstöðu Keflavíkurflugvallar (<a href=\"https://www.stjornarradid.is/sendiskrifstofur/sendirad-islands-i-brussel/brussel-vaktin/stok-faersla/2024/09/13/Skyrsla-Draghi-Draghi-enduromar-gagnryni-Islands-a-nylegar-breytingar-a-vidskiptakerfi-ESB-med-losunarheimildir-fyrir-flug/\" title=\"Brussel-vaktin (Sendiráð Íslands í Brussel) — 13. september 2024 og 2. maí 2025\" target=\"_blank\" rel=\"noopener\">ENERGY-DATA-011</a>).",
+      "confidence": 0.5,
       "speakers": [
         {
           "name": "Þorgerður Katrín Gunnarsdóttir",
@@ -537,18 +533,13 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "partially_supported",
-      "explanation": "Fullyrðingin er pólitísk krafa um að tryggja yfirráð Íslands yfir fiskveiðiauðlindinni í hugsanlegum aðildarsamningi. Heimildir staðfesta að þetta er raunhæft samningaatriði: sameiginleg sjávarútvegsstefna ESB (CFP) myndi færa ákvörðunarvald um heildarafla (TAC) og aðgang að efnahagslögsögu til ESB-stofnana (<a href=\"https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf\" title=\"Icelandic Act on the Exclusive Economic Zone No. 41/1979\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-002</a>, <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380\" title=\"Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-030</a>). Innri skipting kvóta yrði áfram í höndum Íslands (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380\" title=\"EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024\" target=\"_blank\" rel=\"noopener\">FISH-DATA-032</a>). Hagfræðistofnun HÍ (<a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a>) bendir á að varanlegar undanþágur frá kjarnastefnum ESB séu ólíklegar, en aðildarsamningar geta falið í sér sérákvæði. Fullyrðingin er rétt sem pólitískt markmið en heimildir sýna að fullkomin yfirráð yfir auðlindinni samrýmast illa aðild að CFP.",
+      "verdict": "supported",
+      "explanation": "Fullyrðingin endurspeglar meginsjónarmið í umræðunni um ESB-aðild og fiskveiðar. <a href=\"https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf\" title=\"Icelandic Act on the Exclusive Economic Zone No. 41/1979\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-002</a> staðfestir að ESB-aðild myndi færa efnahagslögsögu Íslands undir sameiginlegu sjávarútvegsstefnuna, þar sem aðgangur og kvótar yrðu sameiginleg ákvörðun. Utanríkisráðherra lofaði sjálf í Alþingi að skrifa aldrei undir samning sem tryggði ekki yfirráð Íslands yfir auðlindinni (<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a>). Þetta er pólitískt kröfuákvæði sem nýtur víðtæks stuðnings — jafnvel ESB-sinnar viðurkenna mikilvægi þess.",
       "supporting_evidence": [
         {
           "id": "FISH-LEGAL-002",
           "source_name": "Icelandic Act on the Exclusive Economic Zone No. 41/1979",
           "source_url": "https://www.government.is/library/04-Legislation/Act%20No%2041%201979%20as%20amended%20by%20Act%20No%2058%202017%20and%20Act%20No%2044%202018.pdf"
-        },
-        {
-          "id": "FISH-DATA-030",
-          "source_name": "Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380"
         },
         {
           "id": "FISH-LEGAL-005",
@@ -561,20 +552,19 @@
           "source_url": null
         },
         {
-          "id": "EEA-DATA-014",
-          "source_name": "Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)",
-          "source_url": "https://ioes.hi.is/en/institute-economic-studies"
-        }
-      ],
-      "contradicting_evidence": [
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        },
         {
           "id": "FISH-DATA-032",
           "source_name": "EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024",
           "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380"
         }
       ],
-      "missing_context": "Heimildir benda til þess að aðildarríki haldi innri kvótastjórnun en missi einræði yfir heildaraflasetningu og aðgangi annarra ESB-skipa að efnahagslögsögu. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380\" title=\"EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024\" target=\"_blank\" rel=\"noopener\">FISH-DATA-032</a> bendir á að «equal access» meginreglan þýðir að erlend ESB-skip megi veiða í efnahagslögsögu Íslands utan 12 sjómílna. Þetta myndi fela í sér verulegt framsal yfirráða jafnvel þótt innra kvótakerfi héldist.",
-      "confidence": 0.7594920000000001,
+      "contradicting_evidence": [],
+      "missing_context": "Aðildarríki ESB halda fullum yfirráðum yfir innri úthlutun kvóta (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380\" title=\"EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024\" target=\"_blank\" rel=\"noopener\">FISH-DATA-032</a>), en grundvallarákvarðanir um heildarafla og aðgang að miðum eru teknar sameiginlega. Ísland veiðir u.þ.b. 1,0–1,2 milljónir tonna á ári — meira en nokkurt einstakt ESB-ríki (FISH-DATA-021). Engin beint samanburðarhæf fordæmi eru til um ríki með jafn ríkjandi sjávarútveg og gengi í ESB.",
+      "confidence": 0.88,
       "speakers": [
         {
           "name": "Þorgerður Katrín Gunnarsdóttir",
@@ -811,14 +801,15 @@
       "attribution_type": "quoted",
       "claim_count": 10,
       "verdicts": {
-        "partially_supported": 8,
+        "partially_supported": 6,
+        "unverifiable": 1,
         "misleading": 1,
-        "supported": 1
+        "supported": 2
       },
       "stance": "pro_eu",
       "slug": "thorgerdur-katrin-gunnarsdottir",
       "mention_count": 80,
-      "credibility": 0.61,
+      "credibility": 0.62,
       "speech_count": 197
     },
     {

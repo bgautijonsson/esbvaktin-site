@@ -7,14 +7,13 @@
   "party": null,
   "stance": "insufficient_data",
   "stance_score": -1.0,
-  "credibility": 0.62,
+  "credibility": 0.5,
   "attribution_counts": {
     "asserted": 9
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 3,
-    "supported": 1
+    "partially_supported": 4
   },
   "claims": [
     {
@@ -104,9 +103,9 @@
     {
       "claim_text": "Kvótaeigendur hafa safnað upp milljörðum í þrjá áratugi vegna kvótakerfisins",
       "original_quote": "þá milljarðasjóði sem hafa safnast í vasa kvótaeigenda í þrjá áratugi",
-      "verdict": "supported",
-      "explanation": "FISH-DATA-022 staðfestir að heildareignavirði kvóta sé um 1.500 milljarðar ISK (~30% af VLF) árið 2025. Kvótakerfið var gert varanlegt 1990, sem samsvarar rúmlega þremur áratugum. <a href=\"https://island.is/s/fiskistofa\" title=\"Fiskistofa — Quota holdings reports\" target=\"_blank\" rel=\"noopener\">FISH-DATA-005</a> sýnir að þrír stærstu kvótaeigendur eiga 45–50% af þorskígildum og tíu stærstu um 70%, sem staðfestir verulega samþjöppun. Samkvæmt <a href=\"https://island.is/s/fiskistofa\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> hafa stór sjávarútvegsfyrirtæki fjölbreytt í fasteignir, ferðaþjónustu og fjárfestingar.",
-      "missing_context": "Orðalagið «safnast í vasa» gefur til kynna einkaauðgun sem gæti verið of einföld mynd — kvótaeigendur reka einnig fjármagnsfreka starfsemi og bera áhættu. <a href=\"https://link.springer.com/article/10.1007/s40152-018-0089-5\" title=\"Kokorsch & Benediktsson (2018) — 'Prosper or Perish? The Development of Icelandic Fishing Villages after the Privatisation of Fishing Rights', Maritime Studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-028</a> bendir á að 5.100 störf hafi tapast frá 1990 og byggðarlög misst íbúa, sem sýnir að ávinningur kvótakerfisins hefur ekki dreifst jafnt. Eignarhald er einnig flóknara en «vasar kvótaeigenda» — sum fyrirtæki eru skráð á markað.",
+      "verdict": "partially_supported",
+      "explanation": "FISH-DATA-022 sýnir að heildareignavirði kvótans var áætlað um 1.500 milljarðar króna árið 2025, sem staðfestir að um verulegar fjárhæðir er að ræða. Kvótakerfið var gert varanlegt árið 1990, sem þýðir rúmlega þrjá áratugi af söfnun verðmæta. <a href=\"https://island.is/s/fiskistofa\" title=\"Fiskistofa — Quota holdings reports\" target=\"_blank\" rel=\"noopener\">FISH-DATA-005</a> staðfestir aukna samþjöppun — tíu stærstu handhafarnir fóru úr 35% í 70% af heildarkvóta. Þó er orðalagið «kvótaeigendur hafa safnað upp milljörðum» of vítt — heildareignavirðið er markaðsvirði kvótaréttindanna en ekki endilega raunverulegur auður sem eigendurnir hafa «safnað upp» í hefðbundinni merkingu.",
+      "missing_context": "Markaðsvirði kvóta endurspeglar væntingar um framtíðartekjur, ekki innleyst hagnaðarsöfnun. Samþjöppun kvótaeignar er staðfest en erfitt er að greina nákvæmlega hversu mikla auðlegð einstakir kvótaeigendur hafa safnað. Gagnrýnendur tala um «kvótaklíku» en eignaformið er flókið — sum fyrirtæki eru skráð á markað og önnur í fjölskyldueigu.",
       "supporting_evidence": [
         {
           "id": "FISH-DATA-022",
@@ -119,14 +118,14 @@
           "source_url": "https://island.is/s/fiskistofa"
         },
         {
-          "id": "FISH-DATA-024",
-          "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
-          "source_url": "https://island.is/s/fiskistofa"
+          "id": "FISH-LEGAL-003",
+          "source_name": "Icelandic Fisheries Management Act No. 116/2006",
+          "source_url": "https://www.fao.org/faolex/results/details/en/c/LEX-FAOC003455/"
         },
         {
-          "id": "FISH-DATA-028",
-          "source_name": "Kokorsch & Benediktsson (2018) — 'Prosper or Perish? The Development of Icelandic Fishing Villages after the Privatisation of Fishing Rights', Maritime Studies",
-          "source_url": "https://link.springer.com/article/10.1007/s40152-018-0089-5"
+          "id": "FISH-DATA-038",
+          "source_name": "European Parliament — Rights-Based Fisheries Management in Iceland",
+          "source_url": "https://www.europarl.europa.eu/RegData/etudes/note/join/2012/474531/IPOL-PECH_NT(2012)474531_EN.pdf"
         }
       ],
       "contradicting_evidence": [],

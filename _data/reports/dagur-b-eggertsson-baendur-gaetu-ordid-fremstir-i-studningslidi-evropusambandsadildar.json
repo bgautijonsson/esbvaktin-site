@@ -10,8 +10,8 @@
   "summary": "Greindar 16 fullyrðingar .",
   "capsule": "Króatíudæmið sem greinin lýsir er vel skjalfest: landið tók upp evruna árið 2023 og ferðaþjónustan — um fimmtungur hagkerfisins — nýtur hennar sérstaklega vel. Athyglisvert er hins vegar að Króatía þurfti að uppfylla Maastricht-skilyrðin um verðlag og vexti og vera þátttakandi í ERM II-gengiskerfi í að minnsta kosti tvö ár áður en evran var tekin upp, skref sem Ísland hefur ekki hafið. Einnig er vert að vita að ESB-greiðslur til bænda í nýjum aðildarríkjum byrja á fjórðungi af því sem eldri aðildarríki fá og ná ekki fullu þrepi fyrr en eftir um áratug — ein af ástæðunum fyrir því að landbúnaðarkjör við aðild eru umdeilt efni meðal bænda.",
   "verdict_counts": {
-    "supported": 1,
-    "partially_supported": 12,
+    "supported": 4,
+    "partially_supported": 9,
     "misleading": 1
   },
   "epistemic_counts": null,
@@ -113,23 +113,18 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a> staðfestir að króatískt bankakerfi var «heavily euroised» fyrir formlega upptöku evrunnar og að bankakerfið bjó yfir «large excess liquidity». <a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a> nefnir að kúnan var «heavily managed against the euro» í áratugi. Þessar heimildir styðja grunnhugmyndina um mikla evrutengingu fyrir 2023, en engin heimild staðfestir töluna «um 70%» sérstaklega. <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> og <a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> veita bakgrunn um gengisstefnu en ekki um hlutfall evruverðtryggðra lána í Króatíu.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Bank for International Settlements — Boris Vujčić speech: One Year with the Euro\" target=\"_blank\" rel=\"noopener\">CURR-DATA-018</a> staðfestir beint að skuldir í erlendum gjaldmiðlum í Króatíu voru um 70% af heildarskuldum áður en evran var tekin upp, og féllu niður í undir 1% eftir upptöku hennar. Seðlabankastjóri Króatíu, Boris Vujčić, nefndi þetta sem mikilvægasta skipulagslega ávinninginn af evruupptökunni.",
       "supporting_evidence": [
         {
-          "id": "PREC-DATA-012",
-          "source_name": "Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review",
+          "id": "CURR-DATA-018",
+          "source_name": "Bank for International Settlements — Boris Vujčić speech: One Year with the Euro",
           "source_url": "https://www.bis.org/review/r240131a.htm"
-        },
-        {
-          "id": "PREC-DATA-019",
-          "source_name": "Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report",
-          "source_url": "https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Talan «um 70%» er ekki staðfest af neinum heimild í gagnagrunninum. Heimildir staðfesta almenna «euroisation» króatíska bankakerfisins en gefa ekki nákvæmt hlutfall lána í evrum. Aðstæður Króatíu eru ólíkar aðstæðum Íslands — krónan sveiflast frjálst á meðan kúnan var nánast föst gagnvart evrunni.",
-      "confidence": 0.45,
+      "missing_context": "Fullyrðingin talar um lán en heimildin nefnir skuldir í erlendum gjaldmiðlum sem er víðtækara hugtak en einungis lán. Þó er meginefnið rétt — stór hluti skulda var í evrum. Einnig ber að hafa í huga að kúnan var fest við evruna í tvo áratugi, þannig að gjaldmiðlaáhættan hafði þegar verið að hluta dregin úr áður en evran var formlega tekin upp (<a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Bank for International Settlements — Boris Vujčić speech: One Year with the Euro\" target=\"_blank\" rel=\"noopener\">CURR-DATA-018</a>).",
+      "confidence": 0.8,
       "speakers": [
         {
           "name": "Dagur B. Eggertsson",
@@ -153,16 +148,11 @@
         "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "Króatía gekk að evrunni 1. janúar 2023 og tók þátt í ERM II kerfinu á undan því. Heimildir staðfesta að ERM II-þátttakan fól í sér aukna tengingu við Evrópska seðlabankann. Þó er orðalagið «fékk skjól» of víðtækt — samkvæmt <a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Bank for International Settlements — Boris Vujčić speech: One Year with the Euro\" target=\"_blank\" rel=\"noopener\">CURR-DATA-018</a> og <a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a> var kúnan þegar föst við evruna í tvo áratugi fyrir formlega evrutöku, og gjaldmiðlaáhættan var því að hluta til friðuð áður en ERM II hófst. Aðstæður Íslands eru grundvallarlega ólíkar þar sem krónan svífur frjálslega.",
+      "explanation": "Heimildir staðfesta að Króatía tók upp evruna 1. janúar 2023, og <a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Bank for International Settlements — Boris Vujčić speech: One Year with the Euro\" target=\"_blank\" rel=\"noopener\">CURR-DATA-018</a> lýsir verulegum ávinningi í formi minni gjaldmiðlaáhættu og bætts lánshæfismats. Hins vegar er fullyrðingin um skjól Evrópska seðlabankans í ERM II kerfinu ekki beinlínis staðfest í heimildum. Engin heimild lýsir sérstaklega ERM II þátttöku Króatíu eða hvernig hún veitti skjól. Heimildir vísa til þess að kúnan var fest við evruna í áratugi (<a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Bank for International Settlements — Boris Vujčić speech: One Year with the Euro\" target=\"_blank\" rel=\"noopener\">CURR-DATA-018</a>, <a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a>) en nefna ekki ERM II beint sem verndarkerfi.",
       "supporting_evidence": [
         {
           "id": "CURR-DATA-018",
           "source_name": "Bank for International Settlements — Boris Vujčić speech: One Year with the Euro",
-          "source_url": "https://www.bis.org/review/r240131a.htm"
-        },
-        {
-          "id": "PREC-DATA-012",
-          "source_name": "Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review",
           "source_url": "https://www.bis.org/review/r240131a.htm"
         },
         {
@@ -172,8 +162,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Fullyrðingin segir að Króatía hafi «fengið skjól» Evrópska seðlabankans í ERM II, en heimildir undirstrika að kúnan var þegar fast tengd evrunni og gjaldmiðlaáhættan var að mestu leyti úr sögunni áður en ERM II hófst. Þetta þýðir að «skjólið» var takmarkaðra en fullyrðingin gefur í skyn. Enginn beinn samanburður við aðstæður Íslands.",
-      "confidence": 0.72,
+      "missing_context": "ERM II kerfið er ekki nefnt sérstaklega í neinum heimildum. Króatía gekk í ERM II í júlí 2020 og var þar í rúm tvö ár áður en evran var tekin upp, en heimildir fjalla ekki um þetta tímabil eða hvaða vernd kerfið veitti. Fullyrðingin um skjól er túlkun sem heimildir styðja ekki beint, þótt almennt sé vitað að ERM II sé hluti af evruaðlögunarferlinu.",
+      "confidence": 0.45,
       "speakers": [
         {
           "name": "Dagur B. Eggertsson",
@@ -196,28 +186,33 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "partially_supported",
-      "explanation": "Heimildir staðfesta ýmis jákvæð áhrif evruupptöku Króatíu á fjármálamarkað: lántökukostnaður lækkaði verulega (<a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a>), gjaldeyrisáhætta var útrýmd (<a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a>), og aðgangur að lausafjáraðstöðu ECB batnaði. Seðlabankastjóri Króatíu staðfesti þessa þróun (<a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a>). Hins vegar er fullyrðingin um «stöðugleika á banka- og fjármálamarkaði» víðtæk — heimildir benda jafnframt á hækkandi húsnæðisverð (14,8% á ári), vaxandi íbúðalán og þörf á hertum þjóðhagsvarúðarreglum (<a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a>, <a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a>). Reynslan er enn of stutt til að meta langtímaáhrif.",
+      "verdict": "supported",
+      "explanation": "Margar heimildir styðja þessa fullyrðingu. <a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Bank for International Settlements — Boris Vujčić speech: One Year with the Euro\" target=\"_blank\" rel=\"noopener\">CURR-DATA-018</a> sýnir að skuldir í erlendum gjaldmiðlum féllu úr 70% í undir 1%, sem dró verulega úr kerfisáhættu. <a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a> staðfestir að lántökukostnaður lækkaði og seðlabankastjóri Króatíu sagði evruupptökuna hafa útrýmt gjaldmiðlaáhættu og veitt aðgang að lausafjáraðstöðu Evrópska seðlabankans. <a href=\"https://sdw.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a> sýnir að vextir á húsnæðislánum lækkuðu umtalsvert. Lánshæfismat Króatíu batnaði frá BB í BBB+ á árunum fyrir evruupptöku.",
       "supporting_evidence": [
+        {
+          "id": "CURR-DATA-018",
+          "source_name": "Bank for International Settlements — Boris Vujčić speech: One Year with the Euro",
+          "source_url": "https://www.bis.org/review/r240131a.htm"
+        },
         {
           "id": "PREC-DATA-019",
           "source_name": "Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report",
           "source_url": "https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023"
         },
         {
-          "id": "PREC-DATA-012",
-          "source_name": "Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review",
-          "source_url": "https://www.bis.org/review/r240131a.htm"
-        },
-        {
           "id": "PREC-DATA-020",
           "source_name": "ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS",
           "source_url": "https://sdw.ecb.europa.eu/"
+        },
+        {
+          "id": "PREC-HIST-011",
+          "source_name": "European Commission — Croatia post-accession monitoring reports; Croatian Bureau of Statistics",
+          "source_url": "https://enlargement.ec.europa.eu/croatia_en"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Húsnæðisverð hækkaði hratt eftir evruupptöku og útistandandi íbúðalán náðu methæðum (<a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a>). Króatíska seðlabankinn þurfti að herða þjóðhagsvarúðarreglur (<a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a>), sem bendir til nýrrar áhættu á fjármálamarkaði fremur en einfaldlegs stöðugleika. Aðeins tvö ár eru liðin frá evruupptöku og langtímaáhrif eru óþekkt. Króatíska bankakerfið var þegar mjög «evruað» (<a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a>), sem gerir reynsluna ekki beint samanburðarhæfa við Ísland.",
-      "confidence": 0.749088,
+      "missing_context": "Kúnan var fest við evruna í tvo áratugi, þannig að breytingin var smærri en hún hefði verið fyrir land með frjálst gengi eins og Ísland (<a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Bank for International Settlements — Boris Vujčić speech: One Year with the Euro\" target=\"_blank\" rel=\"noopener\">CURR-DATA-018</a>, <a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a>). Lánshæfismatsbótin endurspeglar marga þætti — ekki eingöngu evruupptöku heldur einnig fjármálaaðhald og skipulagsumbætur. Reynsla Króatíu er enn mjög ný og langtímaáhrif eru ekki ljós. Jafnframt benti <a href=\"https://www.visindavefur.is/svar.php?id=60990\" title=\"Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-016</a> á að vaxtasamruni á evrusvæðinu hafi áður skapað lánabólur í Írlandi, Portúgal og Spáni.",
+      "confidence": 0.8,
       "speakers": [
         {
           "name": "Dagur B. Eggertsson",
@@ -240,8 +235,8 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a> staðfestir að ferðaþjónusta sé um 20% af vergri landsframleiðslu Króatíu, sem styður þann hluta fullyrðingarinnar. Sama heimild nefnir að ferðaþjónustan hafi notið góðs af afnámi gjaldmiðlaskipta fyrir gesti úr evrusvæðinu eftir upptöku evrunnar í janúar 2023. <a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a> og <a href=\"https://sdw.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a> staðfesta jákvæð efnahagsleg áhrif evruaðildar Króatíu almennt. Orðalagið «nýtur mjög góðs» er þó ójafnvægt — heimildir benda til jákvæðra áhrifa en taka einnig fram að króatíska krónan var þegar stýrð gagnvart evru í áratugi, þannig að breytingin var minni en ella.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a> staðfestir bæði að ferðaþjónusta sé um 20% af vergri landsframleiðslu Króatíu og að greinin hafi notið góðs af evruupptöku — viðskiptakostnaður vegna gjaldmiðlaskipta hvarf fyrir gestir af evrusvæðinu. <a href=\"https://enlargement.ec.europa.eu/croatia_en\" title=\"European Commission — Croatia post-accession monitoring reports; Croatian Bureau of Statistics\" target=\"_blank\" rel=\"noopener\">PREC-HIST-011</a> nefnir einnig ferðaþjónustu sem einn af tækifærunum sem aðild og evra skapa. Tölurnar og meginefni fullyrðingarinnar eru vel studd.",
       "supporting_evidence": [
         {
           "id": "PREC-DATA-019",
@@ -249,24 +244,19 @@
           "source_url": "https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023"
         },
         {
-          "id": "PREC-DATA-012",
-          "source_name": "Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review",
-          "source_url": "https://www.bis.org/review/r240131a.htm"
+          "id": "PREC-HIST-011",
+          "source_name": "European Commission — Croatia post-accession monitoring reports; Croatian Bureau of Statistics",
+          "source_url": "https://enlargement.ec.europa.eu/croatia_en"
         },
         {
           "id": "PREC-DATA-020",
           "source_name": "ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS",
           "source_url": "https://sdw.ecb.europa.eu/"
-        },
-        {
-          "id": "PREC-HIST-011",
-          "source_name": "European Commission — Croatia post-accession monitoring reports; Croatian Bureau of Statistics",
-          "source_url": "https://enlargement.ec.europa.eu/croatia_en"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Króatía hafði þegar stýrt gengi gagnvart evru í tvo áratugi, svo áhrifin af formlegri upptöku voru minni en orðalagið «nýtur mjög góðs» gefur til kynna. Verðlagshækkun eftir evrubreytingu var áhyggjuefni — skynjað verðlag hækkaði meira en opinberar tölur sýndu. Ferðaþjónustan ræðst einkum af náttúruauðlindum, innviðum og flugsamgöngum, sem eru að mestu óháð gjaldmiðli.",
-      "confidence": 0.6,
+      "missing_context": "Sterkur hagvöxtur Króatíu 2023–2024 skýrist ekki eingöngu af evruupptöku heldur einnig af endurreisn ferðaþjónustu eftir heimsfaraldur, byggðasjóðum ESB og vinnumarkaðsumbótum (<a href=\"https://sdw.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a>). Kúnan var þegar fest við evruna, þannig að gjaldmiðlaskipti höfðu takmarkaðan kostnað jafnvel fyrir evruupptöku. Skynjuð verðhækkun eftir gjaldmiðlaskiptin var pólitískt umdeild (<a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a>).",
+      "confidence": 0.8,
       "speakers": [
         {
           "name": "Dagur B. Eggertsson",
@@ -408,7 +398,7 @@
         "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "PREC-HIST-009 staðfestir að Finnland gekk í ESB 1995. <a href=\"https://www.nutiminn.is/forsida/atvinnulifid-snyst-gegn-esb-vidraedum/\" title=\"Nútíminn / Félag atvinnurekenda\" target=\"_blank\" rel=\"noopener\">ORG-DATA-002</a> og <a href=\"https://chamber.is/intros/iceland-accession-negotiations-with-the-eu\" title=\"Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-009</a> vísa til þess að «Finland and Sweden's experience suggests that Arctic/sub-Arctic supplements are possible». Finnsk og sænsk fordæmi um norðurslóðastuðning eru raunveruleg og gætu átt við um Ísland. Fullyrðingin um «a.m.k. jafngóð kjör» er hins vegar óviss — rannsóknir benda til verulegrar tekjulækkunar bænda án sérstakra ráðstafana (<a href=\"https://chamber.is/intros/iceland-accession-negotiations-with-the-eu\" title=\"Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-009</a>).",
+      "explanation": "PREC-HIST-009 staðfestir að Finnland gekk í ESB 1995. <a href=\"https://www.bondi.is/\" title=\"Bændasamtök Íslands — Official statements and press releases\" target=\"_blank\" rel=\"noopener\">ORG-DATA-002</a> og <a href=\"https://chamber.is/intros/iceland-accession-negotiations-with-the-eu\" title=\"Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-009</a> vísa til þess að «Finland and Sweden's experience suggests that Arctic/sub-Arctic supplements are possible». Finnsk og sænsk fordæmi um norðurslóðastuðning eru raunveruleg og gætu átt við um Ísland. Fullyrðingin um «a.m.k. jafngóð kjör» er hins vegar óviss — rannsóknir benda til verulegrar tekjulækkunar bænda án sérstakra ráðstafana (<a href=\"https://chamber.is/intros/iceland-accession-negotiations-with-the-eu\" title=\"Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-009</a>).",
       "supporting_evidence": [
         {
           "id": "PREC-HIST-009",
@@ -417,8 +407,8 @@
         },
         {
           "id": "ORG-DATA-002",
-          "source_name": "Nútíminn / Félag atvinnurekenda",
-          "source_url": "https://www.nutiminn.is/forsida/atvinnulifid-snyst-gegn-esb-vidraedum/"
+          "source_name": "Bændasamtök Íslands — Official statements and press releases",
+          "source_url": "https://www.bondi.is/"
         }
       ],
       "contradicting_evidence": [
@@ -513,8 +503,8 @@
       "contradicting_evidence": [
         {
           "id": "ORG-DATA-002",
-          "source_name": "Nútíminn / Félag atvinnurekenda",
-          "source_url": "https://www.nutiminn.is/forsida/atvinnulifid-snyst-gegn-esb-vidraedum/"
+          "source_name": "Bændasamtök Íslands — Official statements and press releases",
+          "source_url": "https://www.bondi.is/"
         },
         {
           "id": "POLL-DATA-008",
@@ -625,14 +615,14 @@
       "attribution_type": "quoted",
       "claim_count": 14,
       "verdicts": {
-        "supported": 1,
-        "partially_supported": 12,
+        "supported": 4,
+        "partially_supported": 9,
         "misleading": 1
       },
       "stance": "pro_eu",
       "slug": "dagur-b-eggertsson",
       "mention_count": 11,
-      "credibility": 0.55,
+      "credibility": 0.56,
       "speech_count": 20
     }
   ]

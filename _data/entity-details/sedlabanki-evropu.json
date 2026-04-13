@@ -14,15 +14,15 @@
   },
   "althingi_stats": null,
   "scorecard": {
-    "misleading": 1
+    "unsupported": 1
   },
   "claims": [
     {
       "claim_text": "Fullyrðing um að vextir hafi lækkað í Króatíu með upptöku evru á sér ekki stoð í tölum króatíska seðlabankans",
       "original_quote": "Í heimsókn kemur maður úr evrópska seðlabankanum og sú saga fer á kreik að vextir hafi lækkað í Króatíu með upptöku evru. Það rímar illa við tölur króatíska seðlabankans",
-      "verdict": "misleading",
-      "explanation": "Fullyrðingin stangast beint á við tölur króatíska seðlabankans. <a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a> sýnir að seðlabankastjórinn Boris Vujčić sagði sjálfur að vextir á húsnæðislánum og fyrirtækjalánum væru orðnir «sambærilegir eða jafnvel lægri» en meðaltal evrusvæðisins — meðalvextir á nýjum húsnæðislánum voru 3,64% í janúar 2024 samanborið við 4,22% í Þýskalandi. <a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a> og <a href=\"https://sdw.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a> staðfesta þessa þróun enn frekar: vextir féllu verulega eftir upptöku evru og króatíski seðlabankinn tilgreindi sjálfur lækkun lántökukostnaðar sem ávinning. Gögn króatíska seðlabankans styðja því fullyrðinguna um vaxtasækkun — ekki öfugt.",
-      "missing_context": "Vaxtabreytingin skýrist ekki eingöngu af evruaðild heldur einnig af vaxtabreytingum Evrópska seðlabankans og almennri markaðsþróun (<a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a>). Króatía hafði þegar bundið kúnuna náið við evruna í áratugi, sem dró úr skellinum (<a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a>). Þá héldu húsnæðisverð áfram að hækka þrátt fyrir lægri vexti, og heildarlántökur náðu methæðum — lægri vextir þýddu því ekki endilega lægri heildarkostnað neytenda.",
+      "verdict": "unsupported",
+      "explanation": "Fullyrðingin heldur því fram að vaxtalækkun í Króatíu eigi sér ekki stoð í tölum seðlabankans, en heimildir sýna hið gagnstæða. <a href=\"https://sdw.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a> staðfestir að króatískir húsnæðislánsvextir lækkuðu verulega eftir upptöku evru — niður í um 3,0% í september 2025 samanborið við 3,71% í Þýskalandi. Seðlabankastjórinn Boris Vujčić sagði þetta sjálfur á BIS-ráðstefnu (<a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Bank for International Settlements — Boris Vujčić speech: One Year with the Euro\" target=\"_blank\" rel=\"noopener\">CURR-DATA-018</a>). Tölur króatíska seðlabankans styðja þannig vaxtaáhrifin, þótt ástæðurnar séu flóknari en svo að evruan ein skýri þær.",
+      "missing_context": "Króatía hafði tengt kúnuna náið við evruna í áratugi, sem þýðir að breytingin var minni en ella. Vaxtastýring Seðlabanka Evrópu og almenn vaxtaþróun í evrusvæðinu skýra einnig hluta lækkunarinnar. Þó er grundvallaratriðið skýrt: króatíski seðlabankinn sjálfur staðfesti lægri vexti eftir upptöku evru.",
       "supporting_evidence": [],
       "contradicting_evidence": [
         {
@@ -31,14 +31,14 @@
           "source_url": "https://sdw.ecb.europa.eu/"
         },
         {
+          "id": "CURR-DATA-018",
+          "source_name": "Bank for International Settlements — Boris Vujčić speech: One Year with the Euro",
+          "source_url": "https://www.bis.org/review/r240131a.htm"
+        },
+        {
           "id": "PREC-DATA-019",
           "source_name": "Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report",
           "source_url": "https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023"
-        },
-        {
-          "id": "PREC-DATA-012",
-          "source_name": "Boris Vujčić (CNB Governor) — 'One Year with the Euro', BIS Review",
-          "source_url": "https://www.bis.org/review/r240131a.htm"
         }
       ],
       "category": "currency",

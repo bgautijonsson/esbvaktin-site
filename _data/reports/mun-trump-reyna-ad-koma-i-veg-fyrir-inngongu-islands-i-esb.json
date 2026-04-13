@@ -11,8 +11,8 @@
   "capsule": "Aðildarákvörðun Íslands í ESB er formlega milli Íslands og aðildarríkja Evrópusambandsins — Bandaríkin hafa ekkert lögformlegt vald til að stöðva eða samþykkja slíkt. Áhugavert er að 23 af 32 NATO-ríkjum eru jafnframt í ESB, sem þýðir að NATO-aðild Íslands myndi haldast óbreytt við hugsanlega inngöngu. Hvort pólitískar þrýstingsaðgerðir frá Bandaríkjunum gætu haft raunhæf áhrif á íslenska stefnumótun er spurning sem fróðlegt er að rekja í opinberum gögnum.",
   "verdict_counts": {
     "supported": 2,
-    "partially_supported": 8,
-    "unverifiable": 2
+    "partially_supported": 7,
+    "unverifiable": 3
   },
   "epistemic_counts": {
     "hearsay": 2,
@@ -146,28 +146,12 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "partially_supported",
-      "explanation": "Heimildir staðfesta að Trump-stjórnin hefur verið efasemdarfull gagnvart fjölþjóðlegum stofnunum og ESB. <a href=\"https://www.state.gov/u-s-relations-with-iceland/\" title=\"US State Department — Bilateral Relations Factsheet; Icelandic media reports (Heimildin, Stundin); Altinget.no\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-021</a> nefnir «broader US scepticism toward multilateral institutions and Trump's transactional approach to alliances» og <a href=\"https://www.nato.int/en/about-us/official-texts-and-resources/strategic-concepts/nato-2022-strategic-concept\" title=\"NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list\" target=\"_blank\" rel=\"noopener\">SOV-DATA-009</a> bendir á að einstök stjórnarskeið (einkum Trump 2017–2021) hafi verið gagnrýnni á ESB. Þó skortir beina tilvísun í staðreyndagrunni í tiltekin ummæli Trumps um ESB sem stofnun — heimildir staðfesta almenna stefnu en ekki tíðni eða eðli gagnrýninnar.",
-      "supporting_evidence": [
-        {
-          "id": "PARTY-DATA-021",
-          "source_name": "US State Department — Bilateral Relations Factsheet; Icelandic media reports (Heimildin, Stundin); Altinget.no",
-          "source_url": "https://www.state.gov/u-s-relations-with-iceland/"
-        },
-        {
-          "id": "SOV-DATA-009",
-          "source_name": "NATO Strategic Concept 2022; US-EU Summit Joint Statement, October 2023; NATO member states list",
-          "source_url": "https://www.nato.int/en/about-us/official-texts-and-resources/strategic-concepts/nato-2022-strategic-concept"
-        },
-        {
-          "id": "PARTY-DATA-012",
-          "source_name": "Altinget.no; Heimildin; Europe Elects party classification",
-          "source_url": "https://europeelects.eu/iceland/"
-        }
-      ],
+      "verdict": "unverifiable",
+      "explanation": "Engin heimild í staðreyndagrunninum fjallar beint um afstöðu Trumps til ESB eða tvíhliða samskiptastefnu hans. <a href=\"https://www.visindavefur.is/svar.php?id=51593\" title=\"Vísindavefurinn — Árni Helgason, lawyer (2009)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-037</a> nefnir NAFTA/USMCA sem dæmi um tvíhliða viðskiptasamning en tengir það ekki við Trump. <a href=\"https://www.consilium.europa.eu/en/\" title=\"Press conference statements — Donald Tusk, PM of Poland (2025–2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-011</a> vísar til stefnubreytinga Bandaríkjanna undir Trump og segir «US policy shifts under Trump's second term» sem bakgrunn, en útfærir ekki afstöðu hans til ESB. Þótt fullyrðingin kunni að vera vel þekkt af öðrum heimildum, er hún ekki sannprófanleg á grundvelli fyrirliggjandi gagna.",
+      "supporting_evidence": [],
       "contradicting_evidence": [],
-      "missing_context": "Staðreyndagrunnurinn inniheldur ekki beinar tilvísanir í tiltekin ummæli Trumps um ESB heldur lýsir almennri stefnusýn. Fullyrðingin er almennt viðurkennd í alþjóðlegri umræðu en heimildir hér styðja hana aðeins óbeint.",
-      "confidence": 0.7,
+      "missing_context": "Heimildir fjalla ekki um afstöðu Trumps til ESB sem stofnunar eða tvíhliða samskiptastefnu hans. <a href=\"https://www.consilium.europa.eu/en/\" title=\"Press conference statements — Donald Tusk, PM of Poland (2025–2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-011</a> nefnir Trump aðeins í víðu samhengi öryggismála, ekki í viðskiptasamhengi.",
+      "confidence": 0.35,
       "speakers": [
         {
           "name": "Donald Trump",
@@ -216,7 +200,7 @@
         {
           "id": "PARTY-DATA-012",
           "source_name": "Altinget.no; Heimildin; Europe Elects party classification",
-          "source_url": "https://europeelects.eu/iceland/"
+          "source_url": null
         }
       ],
       "contradicting_evidence": [
@@ -805,12 +789,13 @@
       "attribution_type": "paraphrased",
       "claim_count": 2,
       "verdicts": {
-        "partially_supported": 2
+        "unverifiable": 1,
+        "partially_supported": 1
       },
       "stance": "anti_eu",
       "slug": "donald-trump",
       "mention_count": 7,
-      "credibility": 0.42
+      "credibility": 0.4
     }
   ]
 }

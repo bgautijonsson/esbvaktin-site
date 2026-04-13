@@ -10,8 +10,8 @@
   "summary": "Greindar 20 fullyrðingar. Niðurstöður: 10 stutt að hluta, 9 stutt af heimildum, 1 ekki hægt að sannreyna. Sjónarhorn: hallar á ESB-neikvæða hlið. Heildstæðni: 35%.",
   "capsule": "Sameiginlega sjávarútvegsstefna ESB setur heildaraflamark (TAC) á milli ríkja — en hvernig hvert aðildarríki úthlutar innbyrðis sínum eigin kvóta er í höndum ríkisins sjálfs. Danmörk, Holland og Eistland nota til dæmis einstaklingsbundin, framseljanleg kvótaréttindi — sama kerfi og Ísland hefur notað í áratugi. Haag-viðmiðin, sem greinin fjallar um, eru ekki sáttmálafest undanþága heldur hluti af framkvæmd stefnunnar — og deilan um framkvæmd þeirra er sérstakt efni sem er óháð spurningunni um hverjir úthluta kvóta innbyrðis.",
   "verdict_counts": {
-    "supported": 7,
-    "partially_supported": 12
+    "supported": 8,
+    "partially_supported": 11
   },
   "epistemic_counts": null,
   "claim_count": 19,
@@ -243,9 +243,14 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "partially_supported",
-      "explanation": "Heimildir styðja þá almennu meginreglu að engar varanlegar undanþágur séu veittar frá sameiginlegri sjávarútvegsstefnu. <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development\" title=\"European Parliament — The Common Fisheries Policy: Origins and Development\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-005</a> lýsir hlutfallslegum stöðugleika sem innri úthlutunarlykli stefnunnar, ekki undanþágu. <a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> staðfestir að varanlegar undanþágur frá kjarnaþáttum regluverksins séu ólíklegar. Þó skorta beinar heimildir um lagalega stöðu Haag-viðmiða sérstaklega.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.europeanmovement.ie/40-years-of-ireland-common-fisheries-policy/\" title=\"European Movement Ireland / The Fishing Daily\" target=\"_blank\" rel=\"noopener\">FISH-PREC-001</a> staðfestir að Haag-viðmið voru sett árið 1976 sem hluti af kvótauthlutunarkerfinu innan sameiginlegrar sjávarútvegsstefnu — þau eru hluti af «relative stability» rammanum, ekki sérstakur sáttmáli. Heimildin tekur skýrt fram að viðmiðin séu «part of the CFP's relative stability framework, not a separate treaty». <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development\" title=\"European Parliament — The Common Fisheries Policy: Origins and Development\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-005</a> og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380\" title=\"EU Regulation 1380/2013 of the European Parliament and of the Council\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-001</a> útskýra hvernig kvótahlutföll eru ákveðin innan rammans og staðfesta að aðlögun er ólík varanlegri undanþágu.",
       "supporting_evidence": [
+        {
+          "id": "FISH-PREC-001",
+          "source_name": "European Movement Ireland / The Fishing Daily",
+          "source_url": "https://www.europeanmovement.ie/40-years-of-ireland-common-fisheries-policy/"
+        },
         {
           "id": "FISH-LEGAL-005",
           "source_name": "European Parliament — The Common Fisheries Policy: Origins and Development",
@@ -255,16 +260,11 @@
           "id": "FISH-LEGAL-001",
           "source_name": "EU Regulation 1380/2013 of the European Parliament and of the Council",
           "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380"
-        },
-        {
-          "id": "EEA-DATA-014",
-          "source_name": "Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)",
-          "source_url": "https://ioes.hi.is/en/institute-economic-studies"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Engin heimild í staðreyndagrunninum fjallar sérstaklega um lagalega stöðu Haag-viðmiðanna — hvort þau séu reglugerðarákvæði, ályktun ráðherraráðsins eða hefðbundið fyrirkomulag. Þetta skiptir máli fyrir mat á endurskoðanleikaþeirra.",
-      "confidence": 0.57,
+      "missing_context": "Lagaleg staða Haag-viðmiða hefur verið umdeild og réttarframkvæmd þeirra er ekki algjörlega skýr. Viðmiðin eiga aðeins við um tiltekin fiskistofna og virkjast einungis þegar heildarafli fer undir ákveðin viðmiðunarmörk — þau veita ekki almenna vernd. Fordæmi Írlands sýnir að jafnvel með Haag-viðmiðum getur kvótaúthlutun verið talin ósanngjörn.",
+      "confidence": 0.8,
       "speakers": [
         {
           "name": "Andrés Pétursson",
@@ -873,8 +873,8 @@
       "attribution_type": "asserted",
       "claim_count": 18,
       "verdicts": {
-        "supported": 6,
-        "partially_supported": 12
+        "supported": 7,
+        "partially_supported": 11
       },
       "stance": "anti_eu",
       "slug": "andres-petursson",
