@@ -29,7 +29,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-54fcc67639071d86cd5d03758c76d956.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-8952a129c28a03acf2078b892c678875.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -126,7 +126,7 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
+<section id="title-slide" data-notes="[0:00–0:15] Titilglæra — sýnileg meðan allir setjast. Ekki tala." class="quarto-title-block center">
   <h1 class="title">Hvað segir umræðan?</h1>
   <p class="subtitle">Kerfisbundin greining á ESB-umræðunni</p>
 
@@ -139,35 +139,16 @@ Brynjólfur Gauti Jónsson
 </div>
 
 </section>
-<section id="section" class="slide level2 center" data-name="Titill">
+<section id="section" class="slide level2 center centered-text" data-name="Upphaf">
 <h2></h2>
-<div style="margin-top: 3rem;">
-<p><span style="font-family: Fraunces; font-size: 3.5rem; font-weight: 500; color: #1C1A17; letter-spacing: -0.02em;">Hvað segir umræðan?</span></p>
-<p><span style="font-family: 'Source Serif 4'; font-size: 1.5rem; color: #6B6358; display: block; margin-top: 1rem;">Kerfisbundin greining á ESB-umræðunni</span></p>
-<p><span style="font-family: 'Source Serif 4'; font-size: 1.1rem; color: #1C1A17; display: block; margin-top: 3rem;">Brynjólfur Gauti Jónsson</span></p>
-<p><span style="font-family: 'DM Sans'; font-size: 0.85rem; color: #6B6358; letter-spacing: 0.06em; display: block; margin-top: 0.5rem;">esbvaktin.is</span></p>
+<div class="hero-statement">
+<p>Spurningin 29. ágúst er hvort við eigum að <strong>hefja viðræður</strong> — ekki hvort við eigum að ganga í ESB.</p>
+</div>
+<div class="hero-follow">
+<p>En umræðan gerir nánast engan greinarmun á þessu tvennu.</p>
 </div>
 <aside class="notes">
-<p>Titilglæra — sýnileg meðan allir setjast.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="section-1" class="slide level2 center" data-name="Upphaf">
-<h2></h2>
-<div style="margin-top: 2rem;">
-<p><span style="font-family: 'Source Serif 4'; font-size: 1.8rem; color: #1C1A17; line-height: 1.5;">Spurningin 29. ágúst er hvort við eigum að <strong>hefja viðræður</strong> — ekki hvort við eigum að ganga í ESB.</span></p>
-<p><span style="font-family: 'Source Serif 4'; font-size: 1.4rem; color: #6B6358; display: block; margin-top: 2rem;">En umræðan gerir nánast engan greinarmun á þessu tvennu.</span></p>
-</div>
-<aside class="notes">
+<p>[0:15–0:35 · ~50 orð]</p>
 <p>Spurningin 29. ágúst er hvort við eigum að hefja viðræður — ekki hvort við eigum að ganga í ESB. En umræðan gerir nánast engan greinarmun á þessu tvennu.</p>
 <p>Við lögðum af stað til að kortleggja umræðuna kerfisbundið. Ekki til að svara spurningu pallborðsins — heldur til að sjá hvernig Ísland ræðir hana. Og kortið sýnir að samtalið er ekki þar sem maður myndi búast við.</p>
 <style type="text/css">
@@ -182,29 +163,31 @@ Brynjólfur Gauti Jónsson
           display:block!important;
       }</style></aside>
 </section>
-<section id="section-2" class="slide level2 center" data-name="Aðferð">
+<section id="section-1" class="slide level2 center" data-name="Aðferð">
 <h2></h2>
 <div class="pipeline">
-<div class="pipeline-step">
+<div class="pipeline-step fragment">
 <p><span class="pipeline-number">333 greinar</span></p>
 <p><span class="pipeline-arrow">→ Fullyrðingagreining (Claude)</span></p>
 </div>
-<div class="pipeline-step">
+<div class="pipeline-step fragment">
 <p><span class="pipeline-number">2.101 fullyrðingar</span></p>
 <p><span class="pipeline-arrow">→ Mat á sannanir (Claude)</span></p>
 </div>
-<div class="pipeline-step">
+<div class="pipeline-step fragment">
 <p><span class="pipeline-number">499 heimildir</span></p>
 <p><span class="pipeline-detail">handlesnar · lagatextar · Eurostat · sáttmálar</span></p>
 </div>
 </div>
-<div class="key-line" style="margin-top: 2rem;">
+<div class="key-line fragment" style="margin-top: 2rem;">
 <p>Hvert skref er rekjanlegt. Heimildir → gögn → mat → þú getur athugað.</p>
 </div>
 <aside class="notes">
-<p>ESBvaktin fylgist kerfisbundið með ESB-umræðunni á Íslandi. Við notum Claude — gervigreindakerfi — til að lesa greinar og draga út fullyrðingar. Þær eru bornar saman við heimildagrunn sem ég les saman — lagatexta, Eurostat-gögn, sáttmálaákvæði, þingræður. Hvert mat vísar til heimilda. Hver heimild vísar til frumheimildar. Keðjan er rekjanleg frá upphafi til enda.</p>
-<p>Claude er vélin. Heimildasöfnun, ritstjórnarstefna og lokayfirferð er mannleg.</p>
-<p>Af þessum 2.101 fullyrðingum eru 75% að hluta studdar — ekki rangar, en samhengið vantar. Umræðan er ekki að ljúga. Hún er að segja hálfa söguna.</p>
+<p>[0:35–0:55 · ~60 orð · 3 smellir]</p>
+<p>[Smellur 1: 333 greinar] Við lesum greinar og drögum út fullyrðingar.</p>
+<p>[Smellur 2: 2.101 fullyrðingar] Þær eru bornar saman við heimildagrunn — lagatexta, Eurostat-gögn, sáttmálaákvæði, þingræður.</p>
+<p>[Smellur 3: 499 heimildir] Hvert mat vísar til heimilda. Hver heimild vísar til frumheimildar.</p>
+<p>[Smellur 4: Lykilsetning] Keðjan er rekjanleg frá upphafi til enda. Claude er vélin — heimildasöfnun og lokayfirferð er mannleg.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -219,9 +202,10 @@ Brynjólfur Gauti Jónsson
 </section>
 <section id="ófullkomin-ekki-röng" class="slide level2 center" data-name="Gæði">
 <h2>Ófullkomin, ekki röng</h2>
-
-<img data-src="figures/verdicts.png" style="width:100.0%" class="r-stretch"><aside class="notes">
-<p>Af þessum 2.101 fullyrðingum eru 75 prósent að hluta studdar — ekki rangar, en samhengið vantar. Minna en ein af hverjum fimmtíu er beinlínis röng. Vandamálið er ekki lygar — vandamálið er hálfur sannleikur. Og þetta á við beggja vegna.</p>
+<p><img data-src="figures/verdicts.png" style="width:100.0%"></p>
+<aside class="notes">
+<p>[0:55–1:15 · ~40 orð]</p>
+<p>75 prósent fullyrðinga eru að hluta studdar — ekki rangar, en samhengið vantar. Minna en ein af fimmtíu er beinlínis röng. Vandamálið er ekki lygar — vandamálið er hálfur sannleikur. Og þetta á við beggja vegna.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -234,52 +218,76 @@ Brynjólfur Gauti Jónsson
           display:block!important;
       }</style></aside>
 </section>
-<section id="section-3" class="slide level2 center" data-name="Tafla">
+<section id="section-2" class="slide level2 no-heading center" data-name="Tafla">
 <h2></h2>
 <div class="discourse-table">
-<table class="caption-top">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
+<table>
 <thead>
-<tr class="header">
-<th></th>
-<th>Hvað umræðan endurtekur</th>
-<th>Hvað enginn spyr</th>
+<tr>
+<th>
+</th>
+<th>
+Hvað umræðan endurtekur
+</th>
+<th>
+Hvað enginn spyr
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><span class="topic-label"><strong>EES-réttur</strong></span></td>
-<td>Báðar hliðar vitna í „70%” — engin segir hvaða nefnara hún notar. Sömu gögnin, gagnstæð rök</td>
-<td>Geta 380 þúsund innleitt allt regluverkið? 400–500 tilskipanir bíða þegar</td>
+<tr class="fragment">
+<td>
+<span class="topic-label"><strong>EES-réttur</strong></span>
+</td>
+<td>
+Báðar hliðar vitna í „70%” — engin segir hvaða nefnara hún notar. Sömu gögnin, gagnstæð rök
+</td>
+<td>
+Geta 380 þúsund innleitt allt regluverkið? 400–500 tilskipanir bíða þegar
+</td>
 </tr>
-<tr class="even">
-<td><span class="topic-label"><strong>Sjávarútvegur</strong></span></td>
-<td>14 af 20 fullyrðingum: hvað við myndum tapa. Engin: hvaða skilmála við gætum samið</td>
-<td>800–1.000 ma.kr. í kvótaeignum — ekki meðal topp 20</td>
+<tr class="fragment">
+<td>
+<span class="topic-label"><strong>Sjávarútvegur</strong></span>
+</td>
+<td>
+14 af 20 fullyrðingum: hvað við myndum tapa. Engin: hvaða skilmála við gætum samið
+</td>
+<td>
+800–1.000 ma.kr. í kvótaeignum — ekki meðal topp 20
+</td>
 </tr>
-<tr class="odd">
-<td><span class="topic-label"><strong>Landbúnaður</strong></span></td>
-<td>6:1 framleiðendamiðað. Eitt blað ræður 36% umfjöllunar</td>
-<td>50–70% matvælaverðsálag (Eurostat). Kemur fyrir í 2 af 20</td>
+<tr class="fragment">
+<td>
+<span class="topic-label"><strong>Landbúnaður</strong></span>
+</td>
+<td>
+6:1 framleiðendamiðað. Eitt blað ræður 36% umfjöllunar
+</td>
+<td>
+50–70% matvælaverðsálag (Eurostat). Kemur fyrir í 2 af 20
+</td>
 </tr>
-<tr class="even">
-<td><span class="topic-label"><strong>Fullveldi</strong></span></td>
-<td>Mest endurtekið: dagsetning atkvæðagreiðslu (49×). Viðræður og aðild blandað saman</td>
-<td>Afturkræfni: 0 af 25. Dönskur varnarmálaundanþága (felld 2022): enn nefnd</td>
+<tr class="fragment">
+<td>
+<span class="topic-label"><strong>Fullveldi</strong></span>
+</td>
+<td>
+Mest endurtekið: dagsetning atkvæðagreiðslu (49×). Viðræður og aðild blandað saman
+</td>
+<td>
+Afturkræfni: 0 af 25. Dönskur varnarmálaundanþága (felld 2022): enn nefnd
+</td>
 </tr>
 </tbody>
 </table>
 </div>
 <aside class="notes">
-<p>Hér er það sem 333 greinar og 2.101 fullyrðingar sýna okkur. Fjögur stærstu málefnin — og hvað fólk endurtekir annars vegar, og hvað enginn spyr hins vegar.</p>
-<p><strong>EES-réttur:</strong> Mest endurtekna fullyrðingin — sextán tilvísanir — er að Ísland hafi innleitt 70 prósent af löggjöf ESB. Báðar hliðar nota hana. Engin segir hvaða nefnara hún notar. 13,4 prósent ef þú telur allt regluverkið. 75 prósent ef þú telur aðeins innri markaðinn. Sömu staðreyndin — þrjú mismunandi rök. Og enginn ræðir hvort ríki sem er með 380 þúsund íbúa geti tekið á sig allt regluverkið þegar 400 til 500 tilskipanir bíða nú þegar.</p>
-<p><strong>Sjávarútvegur:</strong> Af tuttugustu umræddustu fullyrðingunum fjalla fjórtán um það sem Ísland myndi tapa. Fjórar um hvað það gæti lært. Engin spyr: hvaða skilmála gæti Ísland samið um? Sjávarútvegskaflinn var aldrei opnaður í viðræðunum 2010 til 2013. Og svo er kvótinn sjálfur: 800 til 1.000 milljarðar króna í eignaverðmæti — á pari við landsframleiðsluna. Ekki meðal topp tuttugu.</p>
-<p><strong>Landbúnaður:</strong> Sex á móti einu á hlið framleiðenda. Eitt blað — Bændablaðið — ræður 35 prósentum allrar umfjöllunar. Matvælaverð á Íslandi er 50 til 70 prósent yfir meðaltali ESB. Þetta kemur fyrir í tveimur af topp tuttugu. Sama tolltalan þýðir vernd fyrir bóndann í Borgarfirði og kostnað fyrir einstætt foreldri á Breiðholti.</p>
-<p><strong>Fullveldi:</strong> Mest endurtekna fullyrðingin — 49 tilvísanir — er dagsetning þjóðaratkvæðagreiðslunnar. Mikilvæg, en aðallega um form. Umræðan blandar viðræðum og aðild saman, eins og já-atkvæði 29. ágúst þýði inngöngu. Ferlið er afturkræft á öllum stigum — greitt úr viðræðum, greitt úr aðild. Þessi staðreynd kemur hvergi fram í topp 25. Og danska varnarmálaundanþágan — felld í júní 2022 — er enn nefnd í umræðunni eins og hún sé í gildi. Umræðan leiðréttir ekki sjálfa sig, ekki einu sinni þegar auðvelt er að athuga.</p>
+<p>[1:15–2:15 · ~120 orð · 4 smellir, ~15s á röð]</p>
+<p>[Smellur 1: EES-réttur] Mest endurtekna fullyrðingin: Ísland hafi innleitt 70 prósent af löggjöf ESB. Báðar hliðar nota hana. Engin segir hvaða nefnara. 13,4 prósent ef þú telur allt. 75 prósent ef þú telur aðeins innri markaðinn. Og enginn spyr hvort 380 þúsund geti innleitt allt regluverkið.</p>
+<p>[Smellur 2: Sjávarútvegur] Fjórtán af tuttugu: hvað við myndum tapa. Engin: hvaða skilmála gætum við samið? Kvótinn — 800 til 1.000 milljarðar — ekki meðal topp tuttugu.</p>
+<p>[Smellur 3: Landbúnaður] Sex á móti einu á hlið framleiðenda. Matvælaverð 50 til 70 prósent yfir meðaltali ESB — kemur fyrir í tveimur af tuttugu.</p>
+<p>[Smellur 4: Fullveldi] Mest endurtekið: dagsetning atkvæðagreiðslunnar, 49 sinnum. Ferlið er afturkræft á öllum stigum — kemur hvergi fram í topp 25. Danska varnarmálaundanþágan, felld 2022, er enn nefnd eins og hún sé í gildi.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -294,9 +302,10 @@ Brynjólfur Gauti Jónsson
 </section>
 <section id="hvar-er-umræðan" class="slide level2 center" data-name="Umræðan">
 <h2>Hvar er umræðan?</h2>
-
-<img data-src="figures/topics.png" style="width:100.0%" class="r-stretch"><aside class="notes">
-<p>En stærsta niðurstaðan snýst ekki um þessi fjögur efni. Hér sést hvar umræðan er. EES-réttur, fullveldi, sjávarútvegur — yfir helmingur samtalanna. Orkumál, vinnumarkaður, húsnæðismál — undir þrjú prósent samtals. Efnin sem skipta mestu máli í daglegu lífi eru efnin sem samtalið hefur ekki enn náð til. Þjóðaratkvæðagreiðslan er eftir fjóra og hálfan mánuð. Samtalið hefur tíma til þess — en aðeins ef við tökum eftir eyðunni.</p>
+<p><img data-src="figures/topics.png" style="width:100.0%"></p>
+<aside class="notes">
+<p>[2:15–2:35 · ~50 orð]</p>
+<p>Stærsta niðurstaðan. EES-réttur, fullveldi, sjávarútvegur — yfir helmingur samtalanna. Orkumál, vinnumarkaður, húsnæðismál — undir þrjú prósent samtals. Efnin sem skipta mestu máli í daglegu lífi eru efnin sem samtalið hefur ekki enn náð til. Samtalið hefur tíma — en aðeins ef við tökum eftir eyðunni.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -309,25 +318,30 @@ Brynjólfur Gauti Jónsson
           display:block!important;
       }</style></aside>
 </section>
-<section id="section-4" class="slide level2 center" data-name="Lokaorð">
+<section id="section-3" class="slide level2 center centered-text" data-name="Lokaorð">
 <h2></h2>
-<div style="margin-top: 1.5rem;">
 <div class="three-questions">
+<div class="fragment fade-in">
 <p><span class="question">1. Er ég forvitinn — eða er ég að verja afstöðu?</span> <span class="attribution">— Tim Harford</span></p>
+</div>
+<div class="fragment fade-in">
 <p><span class="question">2. Er þetta sett fram til að upplýsa mig — eða til að sannfæra mig?</span> <span class="attribution">— David Spiegelhalter</span></p>
+</div>
+<div class="fragment fade-in">
 <p><span class="question">3. Get ég athugað þetta sjálfur?</span> <span class="attribution">— Onora O’Neill</span></p>
 </div>
-<div style="margin-top: 2.5rem;">
-<p><span class="closing-question">Hvaða spurningum getum við svarað — og hvaða spurningar snúast í raun um val, ekki vitneskju?</span></p>
 </div>
+<div class="closing-question fragment fade-in">
+<p>Hvaða spurningum getum við svarað — og hvaða spurningar snúast í raun um val, ekki vitneskju?</p>
 </div>
 <aside class="notes">
-<p>Sumt vitum við — og getum athugað. Sumt myndum við læra í viðræðum. Sumt er óvíst hvað sem gerist. Og sum ágreiningur snýst ekki um vitneskju heldur um gildi.</p>
+<p>[2:35–3:00 · ~60 orð · 4 smellir]</p>
 <p>Þegar þið lesið um þjóðaratkvæðagreiðsluna héðan til ágúst, þrjár spurningar munu nýtast vel.</p>
-<p>Sú fyrsta, frá Tim Harford: Er ég forvitinn, eða er ég að verja afstöðu sem ég hef þegar tekið?</p>
-<p>Sú önnur, frá David Spiegelhalter: Er þessu sett fram til að upplýsa mig, eða til að sannfæra mig?</p>
-<p>Sú þriðja, frá Onora O’Neill: Get ég athugað þetta sjálfur? Og ef ekki — af hverju leggur einhver þetta fram sem staðreynd?</p>
-<p>Við lögðum ekki af stað til að svara spurningu pallborðsins. Við lögðum af stað til að kortleggja hvernig Ísland ræðir hana. Kortið sýnir að samtalið hefur ekki náð til þeirra spurninga sem mestu máli skipta.</p>
+<p>[Smellur 1] Frá Tim Harford: Er ég forvitinn — eða er ég að verja afstöðu?</p>
+<p>[Smellur 2] Frá David Spiegelhalter: Er þessu sett fram til að upplýsa — eða sannfæra?</p>
+<p>[Smellur 3] Frá Onora O’Neill: Get ég athugað þetta sjálfur?</p>
+<p>[Smellur 4 — hljótt] Hvaða spurningum getum við svarað — og hvaða spurningar snúast um val, ekki vitneskju?</p>
+<p>[Þögn. Takk.]</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -344,7 +358,7 @@ Brynjólfur Gauti Jónsson
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<p>esbvaktin.is</p>
+<p>esbvaktin.is · 14. apríl 2026</p>
 </div>
 </div></div>
 
@@ -484,7 +498,7 @@ Brynjólfur Gauti Jónsson
         // Specify the average time in seconds that you think you will spend
         // presenting each slide. This is used to show a pacing timer in the
         // speaker view
-        defaultTiming: null,
+        defaultTiming: 30,
 
         // Enable slide navigation via mouse wheel
         mouseWheel: false,
@@ -502,10 +516,10 @@ Brynjólfur Gauti Jónsson
         previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'none',
+        transition: 'fade',
 
         // Transition speed (default/fast/slow)
-        transitionSpeed: 'default',
+        transitionSpeed: 'fast',
 
         // Transition style for full page slide backgrounds
         // (none/fade/slide/convex/concave/zoom)
