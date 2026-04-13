@@ -12,6 +12,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addWatchTarget("assets/data");
 
+  // Presentation slides (rendered by Quarto, passed through as-is)
+  eleventyConfig.addPassthroughCopy("althjodastofnun");
+
   // CNAME for GitHub Pages custom domain
   eleventyConfig.addPassthroughCopy("CNAME");
   eleventyConfig.addPassthroughCopy("robots.txt");
@@ -50,8 +53,18 @@ module.exports = function (eleventyConfig) {
     if (!date) return "";
     const d = new Date(date);
     const months = [
-      "janúar", "febrúar", "mars", "apríl", "maí", "júní",
-      "júlí", "ágúst", "september", "október", "nóvember", "desember",
+      "janúar",
+      "febrúar",
+      "mars",
+      "apríl",
+      "maí",
+      "júní",
+      "júlí",
+      "ágúst",
+      "september",
+      "október",
+      "nóvember",
+      "desember",
     ];
     return `${d.getUTCDate()}. ${months[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
   };
@@ -59,8 +72,18 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("isDate", formatIsDate);
 
   const MONTHS_SHORT = [
-    "jan", "feb", "mar", "apr", "maí", "jún",
-    "júl", "ágú", "sep", "okt", "nóv", "des",
+    "jan",
+    "feb",
+    "mar",
+    "apr",
+    "maí",
+    "jún",
+    "júl",
+    "ágú",
+    "sep",
+    "okt",
+    "nóv",
+    "des",
   ];
 
   eleventyConfig.addFilter("isMonthShort", (date) => {
@@ -93,8 +116,18 @@ module.exports = function (eleventyConfig) {
     const sameYear = from.getUTCFullYear() === to.getUTCFullYear();
     const sameMonth = sameYear && from.getUTCMonth() === to.getUTCMonth();
     const months = [
-      "janúar", "febrúar", "mars", "apríl", "maí", "júní",
-      "júlí", "ágúst", "september", "október", "nóvember", "desember",
+      "janúar",
+      "febrúar",
+      "mars",
+      "apríl",
+      "maí",
+      "júní",
+      "júlí",
+      "ágúst",
+      "september",
+      "október",
+      "nóvember",
+      "desember",
     ];
 
     if (sameMonth) {
@@ -109,36 +142,64 @@ module.exports = function (eleventyConfig) {
   });
 
   // ── Verdict label filter ──────────────────────────────────────────
-  eleventyConfig.addFilter("verdictLabel", (v, epistemicType) => taxonomy.verdictLabel(v, epistemicType));
+  eleventyConfig.addFilter("verdictLabel", (v, epistemicType) =>
+    taxonomy.verdictLabel(v, epistemicType),
+  );
   eleventyConfig.addFilter("verdictDescription", (v, epistemicType) => {
-    return taxonomy.verdictDescription ? taxonomy.verdictDescription(v, epistemicType) : v;
+    return taxonomy.verdictDescription
+      ? taxonomy.verdictDescription(v, epistemicType)
+      : v;
   });
-  eleventyConfig.addFilter("epistemicTypeLabel", (v) => taxonomy.epistemicTypeLabels[v] || v);
-  eleventyConfig.addFilter("epistemicTypeDescription", (v) => taxonomy.epistemicTypeDescriptions[v] || v);
+  eleventyConfig.addFilter(
+    "epistemicTypeLabel",
+    (v) => taxonomy.epistemicTypeLabels[v] || v,
+  );
+  eleventyConfig.addFilter(
+    "epistemicTypeDescription",
+    (v) => taxonomy.epistemicTypeDescriptions[v] || v,
+  );
 
   // ── Category label filter ─────────────────────────────────────────
-  eleventyConfig.addFilter("categoryLabel", (c) => taxonomy.categoryLabels[c] || c);
-  eleventyConfig.addFilter("topicLabel", (c) => taxonomy.categoryLabels[c] || c);
+  eleventyConfig.addFilter(
+    "categoryLabel",
+    (c) => taxonomy.categoryLabels[c] || c,
+  );
+  eleventyConfig.addFilter(
+    "topicLabel",
+    (c) => taxonomy.categoryLabels[c] || c,
+  );
 
   // ── Source type label filter ─────────────────────────────────────
-  eleventyConfig.addFilter("sourceTypeLabel", (s) => taxonomy.evidenceSourceTypeLabels[s] || s);
+  eleventyConfig.addFilter(
+    "sourceTypeLabel",
+    (s) => taxonomy.evidenceSourceTypeLabels[s] || s,
+  );
 
   // ── Domain label filter ─────────────────────────────────────────
   eleventyConfig.addFilter("domainLabel", (d) => taxonomy.domainLabels[d] || d);
-  eleventyConfig.addFilter("confidenceLabel", (c) => taxonomy.confidenceLabels[c] || c);
-  eleventyConfig.addFilter("entityTypeLabel", (t) => taxonomy.entityTypeLabels[t] || t);
-  eleventyConfig.addFilter("attributionLabel", (a) => taxonomy.attributionLabels[a] || a);
+  eleventyConfig.addFilter(
+    "confidenceLabel",
+    (c) => taxonomy.confidenceLabels[c] || c,
+  );
+  eleventyConfig.addFilter(
+    "entityTypeLabel",
+    (t) => taxonomy.entityTypeLabels[t] || t,
+  );
+  eleventyConfig.addFilter(
+    "attributionLabel",
+    (a) => taxonomy.attributionLabels[a] || a,
+  );
 
   // ── Source domain → display name + CSS class ───────────────────
   const sourceDomainMap = {
-    "visir.is":    { name: "Vísir",        css: "source-visir" },
-    "ruv.is":      { name: "RÚV",          css: "source-ruv" },
-    "mbl.is":      { name: "Morgunblaðið", css: "source-mbl" },
-    "heimildin.is":{ name: "Heimildin",    css: "source-heimildin" },
-    "kjarninn.is": { name: "Kjarninn",     css: "source-kjarninn" },
-    "stundin.is":  { name: "Stundin",      css: "source-stundin" },
+    "visir.is": { name: "Vísir", css: "source-visir" },
+    "ruv.is": { name: "RÚV", css: "source-ruv" },
+    "mbl.is": { name: "Morgunblaðið", css: "source-mbl" },
+    "heimildin.is": { name: "Heimildin", css: "source-heimildin" },
+    "kjarninn.is": { name: "Kjarninn", css: "source-kjarninn" },
+    "stundin.is": { name: "Stundin", css: "source-stundin" },
     "frettabladid.is": { name: "Fréttablaðið", css: "source-frettabladid" },
-    "althingi.is": { name: "Alþingi",      css: "source-althingi" },
+    "althingi.is": { name: "Alþingi", css: "source-althingi" },
   };
   eleventyConfig.addFilter("sourceName", (domain) => {
     const entry = sourceDomainMap[domain];
@@ -156,7 +217,10 @@ module.exports = function (eleventyConfig) {
   });
 
   // ── Party CSS class filter ────────────────────────────────────────
-  eleventyConfig.addFilter("partyClass", (p) => taxonomy.partyClasses[p] || "party-other");
+  eleventyConfig.addFilter(
+    "partyClass",
+    (p) => taxonomy.partyClasses[p] || "party-other",
+  );
 
   // ── Navigation state filter ───────────────────────────────────────
   eleventyConfig.addFilter("navCurrent", (pageUrl, item) => {
@@ -172,7 +236,8 @@ module.exports = function (eleventyConfig) {
     if (!html) return html;
     return html.replace(
       /<a\s+href="[^"]*"[^>]*>([A-Z]+-[A-Z]+-\d+)<\/a>/g,
-      (_, id) => `<a href="/heimildir/${id.toLowerCase()}/" class="evidence-link" data-evidence-id="${id}">${id}</a>`
+      (_, id) =>
+        `<a href="/heimildir/${id.toLowerCase()}/" class="evidence-link" data-evidence-id="${id}">${id}</a>`,
     );
   });
 
@@ -181,7 +246,8 @@ module.exports = function (eleventyConfig) {
     if (!text) return text;
     return text.replace(
       /\b([A-Z]+-[A-Z]+-\d+)\b/g,
-      (_, id) => `<a href="/heimildir/${id.toLowerCase()}/" class="evidence-link" data-evidence-id="${id}">${id}</a>`
+      (_, id) =>
+        `<a href="/heimildir/${id.toLowerCase()}/" class="evidence-link" data-evidence-id="${id}">${id}</a>`,
     );
   });
 
