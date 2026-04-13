@@ -45,26 +45,17 @@ This repo now reflects that direction.
 
 ### Navigation
 
-Primary navigation is now:
+Primary navigation is a flat 5-item row (based on GoatCounter traffic data):
 
-- `Byrja hér`
-- `Vikuyfirlit`
-- `Málefni`
+- `Nýtt` — `/nytt/` debate delta feed
+- `Fullyrðingar` — `/fullyrdingar/` claim tracker
+- `Umræðan` — `/umraedan/` analysis reports
+- `Málefni` — `/malefni/` topic deep-dives
+- `Safnið` — `/safnid/` hub for Raddirnar, Heimildir, Þingræður
 
-Utility navigation is now:
+No utility nav group. `Um okkur` and `Aðferðafræði` are footer-only.
 
-- `Fullyrðingar`
-- `Umræðan`
-- `Raddirnar`
-- `Heimildir`
-- `Þingræður`
-- `Aðferðafræði`
-- `Um okkur`
-
-On mobile, the nav is deliberately grouped into:
-
-- `Yfirlit`
-- `Kafa dýpra`
+**Note (2026-03-11):** The earlier plan proposed Byrja hér / Vikuyfirlit / Málefni as primary nav with the rest as utility. This was revised to the current flat 5-item structure based on traffic patterns.
 
 Relevant file:
 

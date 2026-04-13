@@ -1,7 +1,11 @@
 _site/
 node_modules/
 .DS_Store
-.claude/
+.claude/*
+!.claude/settings.json
+!.claude/rules/
+!.claude/website-handoff.md
+!.claude/launch.json
 .superpowers/
 playwright-report/
 test-results/
