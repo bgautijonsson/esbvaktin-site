@@ -7,14 +7,15 @@
   "party": null,
   "stance": "neutral",
   "stance_score": 0.0,
-  "credibility": 0.79,
+  "credibility": 0.75,
   "attribution_counts": {
-    "asserted": 15
+    "asserted": 16,
+    "mentioned": 2
   },
   "althingi_stats": null,
   "scorecard": {
     "supported": 4,
-    "partially_supported": 3
+    "partially_supported": 4
   },
   "claims": [
     {
@@ -204,6 +205,37 @@
       "article_title": "ESB aðild: Gjá milli borgar og landsbyggðar",
       "article_source": "Viðskiptablaðið",
       "article_date": "2026-04-09"
+    },
+    {
+      "claim_text": "Í nýrri Gallup-könnun, gerðri fyrir Viðskiptablaðið, voru 54% þátttakenda sem tóku afstöðu andvígir inngöngu Íslands í ESB og 46% hlynnt.",
+      "original_quote": "Af þeim sem tóku afstöðu voru 54% andvígir inngöngu í ESB og 46% hlynnt.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að Gallup Þjóðarpúls frá febrúar–mars 2026 mældi um 42% stuðning við ESB-aðild og 42% andstöðu, með um 16% óákveðna (<a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — Þjóðarpúls, February–March 2026\" target=\"_blank\" rel=\"noopener\">POLL-DATA-014</a>, <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-017</a>). Þegar óákveðnir eru fjarlægðir og aðeins litið til þeirra sem tóku afstöðu skilar það hlutfalli nálægt 50/50 — sem er í samræmi við fullyrðinguna um 54/46 skiptingu. Hins vegar vísar fullyrðingin í könnun gerða «fyrir Viðskiptablaðið» en engin heimild í staðreyndagrunni staðfestir þá tilteknu könnun; heimildir ná aðeins til Þjóðarpúls-kannana birtar á Vísi. Munurinn gæti skýrst af mismunandi spurningaorðalagi, tímasetningu eða úrtaki.",
+      "missing_context": "Engin heimild staðfestir sérstaklega könnun gerða fyrir Viðskiptablaðið — aðeins Þjóðarpúls/Vísir-kannanir eru í staðreyndagrunni. <a href=\"https://fel.hi.is/is/rannsoknir-spurningalistakannanir/simakannanir\" title=\"Félagsvísindastofnun — Methodology notes on EU polling; comparison of Gallup, MMR, and Maskína polls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-010</a> bendir til þess að spurningaorðalag geti breytt mældum stuðningi um 5–10 prósentustig. Svarhlutfall Þjóðarpúls var 42,7% sem kann að valda bjaga. Þjóðarpúls-kannanirnar sýna nánast jafna skiptingu (42/42) meðal allra svarenda, sem gefur ekki beint 54/46 þegar óákveðnir eru fjarlægðir — raunveruleg skipting ræðst af spurningaorðalagi.",
+      "supporting_evidence": [
+        {
+          "id": "POLL-DATA-014",
+          "source_name": "Gallup Ísland — Þjóðarpúls, February–March 2026",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+        },
+        {
+          "id": "POLL-DATA-017",
+          "source_name": "Gallup Iceland / Þjóðarpúls",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+        },
+        {
+          "id": "POLL-DATA-021",
+          "source_name": "Gallup Þjóðarpúls, February–March 2026; Capacent Gallup historical EU polling data (2009–2013)",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "polling",
+      "attribution": "asserted",
+      "article_slug": "egill-politiskur-omoguleiki-ad-koma-islandi-inn-i-esb",
+      "article_title": "Egill: Pólitískur ómöguleiki að koma Íslandi inn í ESB",
+      "article_source": "Viðskiptablaðið",
+      "article_date": "2026-04-08"
     }
   ],
   "articles": [
@@ -223,6 +255,16 @@
       "source": "Viðskiptablaðið",
       "date": "2026-04-09",
       "claim_count": 6,
+      "attribution_types": [
+        "asserted"
+      ]
+    },
+    {
+      "slug": "egill-politiskur-omoguleiki-ad-koma-islandi-inn-i-esb",
+      "title": "Egill: Pólitískur ómöguleiki að koma Íslandi inn í ESB",
+      "source": "Viðskiptablaðið",
+      "date": "2026-04-08",
+      "claim_count": 1,
       "attribution_types": [
         "asserted"
       ]

@@ -301,6 +301,87 @@
   "icelandic": true,
   "outlet_articles": [
     {
+      "slug": "oljost-hvort-minnihlutinn-virdi-thjodaratkvaedagreidslu",
+      "title": "Óljóst hvort minnihlutinn virði þjóðaratkvæðagreiðslu",
+      "date": "2026-04-07",
+      "source": "Heimildin",
+      "claim_count": 3,
+      "verdict_counts": {
+        "supported": 1,
+        "partially_supported": 2
+      },
+      "dominant_category": "org_positions",
+      "categories": [
+        "currency",
+        "org_positions"
+      ],
+      "participants": []
+    },
+    {
+      "slug": "hagsmunasamtokin-farthegar-a-skutu-eda-flokid-hjonaband",
+      "title": "Hagsmunasamtokin: Farthegar a skutu eda flokid hjonaband?",
+      "date": "2026-04-04",
+      "source": "Heimildin",
+      "claim_count": 4,
+      "verdict_counts": {
+        "supported": 1,
+        "partially_supported": 2,
+        "unsupported": 1
+      },
+      "dominant_category": "sovereignty",
+      "categories": [
+        "eea_eu_law",
+        "sovereignty"
+      ],
+      "participants": [
+        {
+          "name": "Óþekkt höfundur",
+          "role": "pistlahöfundur",
+          "party": "Sjálfstæðisflokkur",
+          "role_in_article": "author",
+          "attribution_type": "asserted",
+          "claim_count": 1,
+          "verdicts": {
+            "unsupported": 1
+          },
+          "stance": "anti_eu",
+          "slug": "othekkt-hofundur",
+          "mention_count": 6,
+          "credibility": 0.5
+        },
+        {
+          "name": "Evrópuhreyfingin",
+          "role": null,
+          "party": null,
+          "role_in_article": "speaker",
+          "attribution_type": "paraphrased",
+          "claim_count": 1,
+          "verdicts": {
+            "partially_supported": 1
+          },
+          "stance": "pro_eu",
+          "slug": "evropuhreyfingin",
+          "mention_count": 5,
+          "credibility": 0.5
+        },
+        {
+          "name": "Framkvæmdastjóri Evrópuhreyfingarinnar",
+          "role": "framkvæmdastjóri",
+          "party": null,
+          "role_in_article": "speaker",
+          "attribution_type": "paraphrased",
+          "claim_count": 1,
+          "verdicts": {
+            "partially_supported": 1
+          },
+          "stance": "pro_eu",
+          "slug": "framkvaemdastjori-evropuhreyfingarinnar",
+          "mention_count": 1,
+          "credibility": 0.5
+        }
+      ]
+    },
+    {
       "slug": "island-og-esb-komin-i-varnarsamstarf",
       "title": "Ísland og ESB komin í varnarsamstarf",
       "date": "2026-03-18",
@@ -347,8 +428,8 @@
           },
           "stance": "pro_eu",
           "slug": "thorgerdur-katrin-gunnarsdottir",
-          "mention_count": 74,
-          "credibility": 0.62,
+          "mention_count": 80,
+          "credibility": 0.61,
           "speech_count": 197
         },
         {
@@ -363,8 +444,8 @@
           },
           "stance": "pro_eu",
           "slug": "evropusambandid",
-          "mention_count": 68,
-          "credibility": 0.67
+          "mention_count": 72,
+          "credibility": 0.66
         }
       ]
     },
@@ -413,8 +494,8 @@
           },
           "stance": "pro_eu",
           "slug": "thorgerdur-katrin-gunnarsdottir",
-          "mention_count": 74,
-          "credibility": 0.62,
+          "mention_count": 80,
+          "credibility": 0.61,
           "speech_count": 197
         }
       ]
@@ -533,28 +614,30 @@
     }
   ],
   "outlet_scorecard": {
-    "partially_supported": 26,
+    "supported": 7,
+    "partially_supported": 30,
+    "unsupported": 1,
     "unverifiable": 5,
-    "supported": 5,
     "misleading": 4
   },
   "outlet_stats": {
-    "article_count": 4,
-    "total_claims": 40,
-    "unique_speakers": 8,
+    "article_count": 6,
+    "total_claims": 47,
+    "unique_speakers": 11,
     "topic_distribution": {
+      "currency": 2,
+      "org_positions": 1,
+      "eea_eu_law": 2,
+      "sovereignty": 5,
       "other": 3,
-      "sovereignty": 4,
       "precedents": 2,
       "party_positions": 2,
       "trade": 2,
-      "currency": 1,
-      "eea_eu_law": 1,
       "housing": 1
     },
     "date_range": {
       "first": "2026-03-09",
-      "last": "2026-03-18"
+      "last": "2026-04-07"
     }
   }
 }

@@ -6,16 +6,18 @@
   "role": "dálkahöfundur",
   "party": null,
   "stance": "insufficient_data",
-  "stance_score": 0.0,
-  "credibility": 0.75,
+  "stance_score": -0.5,
+  "credibility": 0.5,
   "attribution_counts": {
-    "asserted": 11
+    "asserted": 15,
+    "mentioned": 1
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 1,
+    "partially_supported": 2,
     "supported": 1,
-    "unverifiable": 1
+    "unverifiable": 1,
+    "misleading": 1
   },
   "claims": [
     {
@@ -115,6 +117,74 @@
       "article_title": "Fer eins fyrir stjórnmálaferli Kristrúnar og Jóhönnu",
       "article_source": "Viðskiptablaðið",
       "article_date": "2026-03-26"
+    },
+    {
+      "claim_text": "Ísland er ekki með þingmeirihluta fyrir ESB-aðildarumsókninni á Alþingi.",
+      "original_quote": "sem er ekki einu sinni þingmeirihluti fyrir á alþingi.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.althingi.is/thingmenn/thingflokkar/thingflokkar/\" title=\"Althingi — Party platforms and election results\" target=\"_blank\" rel=\"noopener\">POL-DATA-002</a> staðfestir að flokkar sem andmæla ESB-aðild (Sjálfstæðisflokkurinn, Framsóknarflokkurinn, Miðflokkurinn, Flokkur fólksins) hafa samtals 33-35 þingsæti af 63. Flokkur fólksins (8 sæti) er þó í ríkisstjórninni og samþykkti að halda þjóðaratkvæðagreiðsluna (<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland; Euronews; France24; coalition agreement\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-013</a>). Ef fullyrðingin á við ESB-aðild sjálfa (ekki viðræðurnar) er hún studd: tveir formlega ESB-jákvæðir flokkar (Samfylkingin + Viðreisn) hafa 24 af 63 sætum (<a href=\"https://www.althingi.is/thingmenn/thingflokkar/thingflokkar/\" title=\"Althingi — Party platforms and election results\" target=\"_blank\" rel=\"noopener\">POL-DATA-001</a>). Ef hún á við þingsályktunartillöguna um þjóðaratkvæðagreiðslu er staðan önnur, þar sem ríkisstjórnarflokkarnir hafa 32 sæti.",
+      "missing_context": "Greinarmunur er á þingmeirihluta fyrir ESB-aðild og meirihluta fyrir þjóðaratkvæðagreiðslunni. Ríkisstjórnin (32 af 63 sætum) hefur meirihluta fyrir viðræðuferlinu en Flokkur fólksins er andvígur aðildinni sjálfri. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> staðfestir að þjóðaratkvæðagreiðslan er ráðgefandi.",
+      "supporting_evidence": [
+        {
+          "id": "POL-DATA-002",
+          "source_name": "Althingi — Party platforms and election results",
+          "source_url": "https://www.althingi.is/thingmenn/thingflokkar/thingflokkar/"
+        },
+        {
+          "id": "POL-DATA-001",
+          "source_name": "Althingi — Party platforms and election results",
+          "source_url": "https://www.althingi.is/thingmenn/thingflokkar/thingflokkar/"
+        },
+        {
+          "id": "POL-DATA-020",
+          "source_name": "Sjálfstæðisflokkurinn — party website (xd.is); Miðflokkurinn — public statements; Gallup Þjóðarpúls party breakdown March 2026",
+          "source_url": "https://xd.is/2026/03/09/thjodin-a-betra-skilid/"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "PARTY-DATA-013",
+          "source_name": "Government of Iceland; Euronews; France24; coalition agreement",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+        }
+      ],
+      "category": "party_positions",
+      "attribution": "asserted",
+      "article_slug": "mun-evropusambandid-eydileggja-feril-kristrunar",
+      "article_title": "Mun Evrópusambandið eyðileggja feril Kristrúnar?",
+      "article_source": "Viðskiptablaðið",
+      "article_date": "2026-04-06"
+    },
+    {
+      "claim_text": "Íslenskt losunarlíkan ESB er hannað fyrir lestir en ekki skip og flugvélar, en Ísland reiðir sig á skip og flugvélar sem eyþjóð.",
+      "original_quote": "Hún gerir ekkert í að minnka fráleitar álögur Evrópusambandsins á Ísland vegna losunarkerfis sem hannað er fyrir lestir en ekki skip og flugvélar eins og eyþjóð reiðir sig á.",
+      "verdict": "misleading",
+      "explanation": "Fullyrðingin er tæknilega röng í grunnforsendu sinni. <a href=\"https://climate.ec.europa.eu/eu-action/transport-decarbonisation/reducing-emissions-aviation_en\" title=\"European Commission — Reducing emissions from aviation; Directive 2008/101/EC; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-LEGAL-002</a> staðfestir að flugvélar voru teknar inn í viðskiptakerfi ESB með tilskipun 2008/101/EB og hafa verið hluti kerfisins frá 2012. <a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a> sýnir jafnframt að Ísland samdi sérstaklega um fríar losunarheimildir fyrir flug til 2026 vegna landfræðilegrar einangrunar. <a href=\"https://ust.is/atvinnulif/ets/\" title=\"Umhverfisstofnun — Iceland's participation in EU ETS; European Commission — EU ETS data\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-002</a> staðfestir að iðnaður (álver) er meginþáttur í ETS-þátttöku Íslands. Skipaflutninga er ekki getið sérstaklega í heimildum. Fullyrðingin um að kerfið sé «hannað fyrir lestir» er ónákvæm einföldun á viðskiptakerfi sem tekur til iðnaðar, orkuvinnslu og flugs.",
+      "missing_context": "Viðskiptakerfi ESB nær til iðnaðar, orkuvinnslu og flugs; siglingar bættust við 2024 (ETS-2). Ísland samdi um sérstaka undanþágu fyrir flug (<a href=\"https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/\" title=\"Iceland Review; Carbon Pulse; European Commission\" target=\"_blank\" rel=\"noopener\">ETS-DATA-002</a>). Kerfið var ekki «hannað fyrir lestir» heldur upphaflega fyrir stóriðju og orkuframleiðslu. Fullyrðingin sleppur einnig því að Ísland tekur þátt í ETS í gegnum EES-samninginn, ekki sem ESB-aðildarríki.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [
+        {
+          "id": "ETS-LEGAL-002",
+          "source_name": "European Commission — Reducing emissions from aviation; Directive 2008/101/EC; Directive (EU) 2023/958",
+          "source_url": "https://climate.ec.europa.eu/eu-action/transport-decarbonisation/reducing-emissions-aviation_en"
+        },
+        {
+          "id": "ETS-DATA-002",
+          "source_name": "Iceland Review; Carbon Pulse; European Commission",
+          "source_url": "https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/"
+        },
+        {
+          "id": "ENERGY-LEGAL-002",
+          "source_name": "Umhverfisstofnun — Iceland's participation in EU ETS; European Commission — EU ETS data",
+          "source_url": "https://ust.is/atvinnulif/ets/"
+        }
+      ],
+      "category": "eea_eu_law",
+      "attribution": "asserted",
+      "article_slug": "mun-evropusambandid-eydileggja-feril-kristrunar",
+      "article_title": "Mun Evrópusambandið eyðileggja feril Kristrúnar?",
+      "article_source": "Viðskiptablaðið",
+      "article_date": "2026-04-06"
     }
   ],
   "articles": [
@@ -126,6 +196,17 @@
       "claim_count": 3,
       "attribution_types": [
         "asserted"
+      ]
+    },
+    {
+      "slug": "mun-evropusambandid-eydileggja-feril-kristrunar",
+      "title": "Mun Evrópusambandið eyðileggja feril Kristrúnar?",
+      "source": "Viðskiptablaðið",
+      "date": "2026-04-06",
+      "claim_count": 2,
+      "attribution_types": [
+        "asserted",
+        "mentioned"
       ]
     }
   ]

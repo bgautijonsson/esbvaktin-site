@@ -6,15 +6,16 @@
   "role": "sagnfræðingur og alþjóðastjórnmálafræðingur",
   "party": null,
   "stance": "mixed",
-  "stance_score": -0.29,
+  "stance_score": -0.3,
   "credibility": 0.58,
   "attribution_counts": {
     "asserted": 130,
-    "paraphrased": 1
+    "paraphrased": 2,
+    "mentioned": 1
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 72,
+    "partially_supported": 73,
     "misleading": 4,
     "supported": 23,
     "unverifiable": 2
@@ -3090,6 +3091,32 @@
       "article_title": "Tala þvert á það sem ESB sjálft segir",
       "article_source": "Vísir",
       "article_date": "2026-04-09"
+    },
+    {
+      "claim_text": "Írski samningurinn um forgang að írskum miðum reyndist haldlaus þegar á reyndi.",
+      "original_quote": "samningur sem Írar höfðu gert um forgang sinn að írskum miðum ef kæmi til mikils niðurskurðar á aflaheimildum reyndist haldlaus þegar á reyndi",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.rte.ie/news/ireland/2025/1213/1548841-fishing-quota-agreement/\" title=\"RTÉ News / The Fishing Daily / The Skipper\" target=\"_blank\" rel=\"noopener\">FISH-PREC-002</a> staðfestir að í desember 2025 höfnuðu fjögur ESB-ríki — Frakkland, Þýskaland, Pólland og Holland — beitingu Haag-viðmiðanna í ESB-sjávarútvegsráðinu, í fyrsta skipti á næstum 50 árum. Afleiðingarnar voru alvarlegar: 57.000 tonn minni kvóti, þar á meðal 70% niðurskurður á makríl. Fullyrðingin er þó of einföld — Haag-viðmiðin virkuðu í áratugi áður en þau voru höfnuð, og lagaleg réttmæti höfnunarinnar er enn umdeild. Að kalla fyrirkomulagið «haldlaust» er villandi einföldun á flóknu lagalegu ágreiningsefni.",
+      "missing_context": "Haag-viðmiðin virkuðu í næstum 50 ár áður en þau voru höfnuð í desember 2025, þannig að kalla þau «haldlaus» er ónákvæmt. Lagaspurningar eru enn óleystar um hvort fjögur ríki geti talist nægilegur hindrunarminnihluti samkvæmt atkvæðagreiðslureglum ESB. Kvótaniðurskurðurinn var einnig drifinn áfram af vísindalegum ráðleggingum um ofveiðar þriðju ríkja á makríl, ekki eingöngu af höfnun Haag-viðmiðanna.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-PREC-002",
+          "source_name": "RTÉ News / The Fishing Daily / The Skipper",
+          "source_url": "https://www.rte.ie/news/ireland/2025/1213/1548841-fishing-quota-agreement/"
+        },
+        {
+          "id": "FISH-PREC-006",
+          "source_name": "The Skipper / The Fishing Daily / Donegal Daily",
+          "source_url": "https://theskipper.ie/blocking-irelands-hague-preferences-open-act-of-agression/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "fisheries",
+      "attribution": "paraphrased",
+      "article_slug": "hreppaflutningar-umraedunnar",
+      "article_title": "Hreppaflutningar umræðunnar",
+      "article_source": "Blog.is (Heimssýn)",
+      "article_date": "2026-03-30"
     }
   ],
   "articles": [
@@ -3241,6 +3268,17 @@
       "claim_count": 7,
       "attribution_types": [
         "asserted"
+      ]
+    },
+    {
+      "slug": "hreppaflutningar-umraedunnar",
+      "title": "Hreppaflutningar umræðunnar",
+      "source": "Blog.is (Heimssýn)",
+      "date": "2026-03-30",
+      "claim_count": 1,
+      "attribution_types": [
+        "mentioned",
+        "paraphrased"
       ]
     }
   ]

@@ -10,7 +10,7 @@
   "credibility": 0.54,
   "attribution_counts": {
     "asserted": 3,
-    "quoted": 9,
+    "quoted": 10,
     "paraphrased": 5,
     "mentioned": 3
   },
@@ -22,7 +22,7 @@
     "last_speech": "1993-04-27"
   },
   "scorecard": {
-    "partially_supported": 10,
+    "partially_supported": 11,
     "supported": 2,
     "unsupported": 1
   },
@@ -464,6 +464,43 @@
       "article_title": "Hefur ekki mótmælt orðum Ólafs",
       "article_source": "Stjórnmálin",
       "article_date": "2026-03-23"
+    },
+    {
+      "claim_text": "Ólafur Ragnar Grímsson fullyrti á samfélagsmiðlinum X að samningaviðræður við ESB séu þegar hafnar og þjóðaratkvæðagreiðslan í lok ágúst sé hunsuð.",
+      "original_quote": "Ljóst er að samningaviðræður við #ESB ERU ÞEGAR HAFNAR; þjóðaratkvæðagreiðslan í lok ágúst er hundsuð.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin er skoðun Ólafs Ragnars sem byggist á túlkun á samskiptum ríkisstjórnarinnar við ESB. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> staðfestir að þjóðaratkvæðagreiðslan 29. ágúst snýst einmitt um hvort hefja eigi viðræður, sem gefur til kynna að þær hafi ekki formlega hafist. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> sýnir að utanríkisráðherra hefur rætt um forgangsverkefni í hugsanlegum viðræðum, og <a href=\"https://www.politico.eu/article/iceland-eu-referendum-accession-talks/\" title=\"POLITICO Europe / Bloomberg / Government of Iceland\" target=\"_blank\" rel=\"noopener\">SOV-INTL-001</a> greinir frá pólitískum undirbúningi. Greinarmunurinn á pólitískum undirbúningi og formlegum aðildarviðræðum skiptir máli; á formlegu stigi hafa viðræður ekki hafist.",
+      "missing_context": "<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> staðfestir að þjóðaratkvæðagreiðslan er ráðgefandi og fjallar um hvort hefja eigi viðræður. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T182328.html\" title=\"Alþingi — Sigmundur Davíð Gunnlaugsson, þingmaður Miðflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-002</a> vitnar í gagnrýni Sigmundar Davíðs á «baktjaldamakk» sem endurspeglar sömu túlkun og Ólafur Ragnar hefur. Formleg aðildarviðræður í skilningi ESB-sáttmálans krefjast ákvörðunar ráðherraráðsins og hafa ekki hafist.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-006",
+          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+        },
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        },
+        {
+          "id": "SOV-INTL-001",
+          "source_name": "POLITICO Europe / Bloomberg / Government of Iceland",
+          "source_url": "https://www.politico.eu/article/iceland-eu-referendum-accession-talks/"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "SOV-DATA-006",
+          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+        }
+      ],
+      "category": "sovereignty",
+      "attribution": "quoted",
+      "article_slug": "mun-evropusambandid-eydileggja-feril-kristrunar",
+      "article_title": "Mun Evrópusambandið eyðileggja feril Kristrúnar?",
+      "article_source": "Viðskiptablaðið",
+      "article_date": "2026-04-06"
     }
   ],
   "articles": [
@@ -525,6 +562,16 @@
       "source": "Stjórnmálin",
       "date": "2026-03-23",
       "claim_count": 2,
+      "attribution_types": [
+        "quoted"
+      ]
+    },
+    {
+      "slug": "mun-evropusambandid-eydileggja-feril-kristrunar",
+      "title": "Mun Evrópusambandið eyðileggja feril Kristrúnar?",
+      "source": "Viðskiptablaðið",
+      "date": "2026-04-06",
+      "claim_count": 1,
       "attribution_types": [
         "quoted"
       ]
