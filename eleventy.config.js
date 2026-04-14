@@ -14,6 +14,7 @@ module.exports = function (eleventyConfig) {
 
   // Presentation slides (rendered by Quarto, passed through as-is)
   eleventyConfig.addPassthroughCopy("althjodastofnun");
+  eleventyConfig.addPassthroughCopy("althjodamalastofnun");
 
   // CNAME for GitHub Pages custom domain
   eleventyConfig.addPassthroughCopy("CNAME");
