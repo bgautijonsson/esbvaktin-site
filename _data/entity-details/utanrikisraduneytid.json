@@ -6,17 +6,17 @@
   "role": "ráðuneyti",
   "party": null,
   "stance": "mixed",
-  "stance_score": 0.2,
-  "credibility": 0.63,
+  "stance_score": 0.18,
+  "credibility": 0.62,
   "attribution_counts": {
     "asserted": 1,
-    "quoted": 2,
+    "quoted": 3,
     "paraphrased": 16,
-    "mentioned": 16
+    "mentioned": 18
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 12,
+    "partially_supported": 13,
     "supported": 3
   },
   "claims": [
@@ -492,6 +492,37 @@
       "article_title": "Ótæk stefna Viðreisnar",
       "article_source": "Björn Bjarnason",
       "article_date": "2026-04-13"
+    },
+    {
+      "claim_text": "Niðurstaða utanríkisráðuneytisins var sú að bréf íslenskra yfirvalda til ESB árið 2015 hafi ekki falið í sér formlega afturköllun aðildarumsóknar Íslands, heldur aðeins áréttingu á því að viðræðum hefði verið hætt.",
+      "original_quote": "\"Hvorki orðalag ofangreindra bréfa né málsmeðferð fyrir þinginu bera með sér að um formlega afturköllun á aðildarumsókn Íslands að ESB hafi verið að ræða heldur áréttingu á því að viðræðum hefði verið hætt og ekki ætti að líta á Ísland sem umsóknarríki.\"",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a> staðfestir að Framkvæmdastjórn ESB leit aldrei á bréf Gunnars Braga sem formlega afturköllun, og <a href=\"https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/\" title=\"Althingi — Historical records; European Commission accession records\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-010</a> styður þetta. Efnislega er niðurstaðan — að bréfið hafi ekki verið formleg afturköllun — í samræmi við afstöðu ESB. Heimildir staðfesta hins vegar ekki beint að þetta hafi verið niðurstaða utanríkisráðuneytisins sjálfs; greinargerð ráðuneytisins frá ágúst 2025 er ekki í staðreyndagrunninum.",
+      "missing_context": "Heimildir staðfesta afstöðu ESB en greinargerð utanríkisráðuneytisins sem fullyrðingin vísar til er ekki í staðreyndagrunninum. Til staðfestingar á að þetta sé niðurstaða ráðuneytisins sjálfs þyrfti aðgang að greinargerðinni frá ágúst 2025.",
+      "supporting_evidence": [
+        {
+          "id": "PARTY-DATA-011",
+          "source_name": "Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews",
+          "source_url": "https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/"
+        },
+        {
+          "id": "POLITICAL-DATA-010",
+          "source_name": "Althingi — Historical records; European Commission accession records",
+          "source_url": "https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/"
+        },
+        {
+          "id": "SOV-DATA-023",
+          "source_name": "European Commission — Iceland Accession Progress Reports; Icelandic Ministry of Foreign Affairs",
+          "source_url": "https://neighbourhood-enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "sovereignty",
+      "attribution": "quoted",
+      "article_slug": "ljosid-elt-ut-i-haug",
+      "article_title": "Ljósið elt út í haug",
+      "article_source": "Vísir",
+      "article_date": "2026-04-12"
     }
   ],
   "articles": [
@@ -545,6 +576,16 @@
       "claim_count": 1,
       "attribution_types": [
         "mentioned",
+        "quoted"
+      ]
+    },
+    {
+      "slug": "ljosid-elt-ut-i-haug",
+      "title": "Ljósið elt út í haug",
+      "source": "Vísir",
+      "date": "2026-04-12",
+      "claim_count": 1,
+      "attribution_types": [
         "quoted"
       ]
     }

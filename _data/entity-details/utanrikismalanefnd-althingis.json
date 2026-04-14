@@ -2,18 +2,63 @@
   "slug": "utanrikismalanefnd-althingis",
   "name": "Utanríkismálanefnd alþingis",
   "type": "institution",
-  "description": "Stofnun",
+  "description": "Stofnun — blandað viðhorf til ESB-aðildar.",
   "role": "nefnd alþingis",
   "party": null,
-  "stance": "insufficient_data",
-  "stance_score": -0.5,
-  "credibility": null,
+  "stance": "mixed",
+  "stance_score": -0.33,
+  "credibility": 0.5,
   "attribution_counts": {
-    "paraphrased": 2,
-    "mentioned": 2
+    "paraphrased": 3,
+    "mentioned": 3
   },
   "althingi_stats": null,
-  "scorecard": {},
-  "claims": [],
-  "articles": []
+  "scorecard": {
+    "partially_supported": 1
+  },
+  "claims": [
+    {
+      "claim_text": "Utanríkismálanefnd Alþingis hefur heimild til að óska eftir þeim gögnum sem Gunnar Bragi vísar til.",
+      "original_quote": "Björn Bjarnason veit líka fullvel að utanríkismálanefnd getur óskað eftir þeim gögnum sem Gunnar Bragi vísar til.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.althingi.is/lagas/nuna/1991055.html\" title=\"Lög um þingsköp Alþingis nr. 55/1991; Alþingi official website\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-019</a> staðfestir að 24. grein þingskapa leggur ríkisstjórninni skyldu á herðar að bera meiri háttar utanríkismál undir utanríkismálanefnd. <a href=\"https://www.althingi.is/\" title=\"Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-028</a> sýnir að nefndin hefur í raun óskað eftir upplýsingum. Heimildin kveður þó á um samráðsskyldu, ekki beint um gagnaöflunarvald nefndarinnar — mismunur er á skyldu til samráðs og heimild til gagnaóska.",
+      "missing_context": "Grein 24 í þingsköpum kveður á um samráðsskyldu ríkisstjórnar við utanríkismálanefnd en almennt gagnaöflunarvald þingnefnda er reglað í öðrum ákvæðum þingskapa sem ekki er vísað til í heimildunum. Upplýsingaréttur þingnefnda er víðtækari en almennings samkvæmt lögum um Stjórnarráð Íslands, en þau ákvæði eru ekki í staðreyndagrunninum.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-LEGAL-019",
+          "source_name": "Lög um þingsköp Alþingis nr. 55/1991; Alþingi official website",
+          "source_url": "https://www.althingi.is/lagas/nuna/1991055.html"
+        },
+        {
+          "id": "SOV-LEGAL-028",
+          "source_name": "Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24",
+          "source_url": "https://www.althingi.is/"
+        },
+        {
+          "id": "SOV-PARL-005",
+          "source_name": "Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)",
+          "source_url": "https://www.althingi.is/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "sovereignty",
+      "attribution": "paraphrased",
+      "article_slug": "ljosid-elt-ut-i-haug",
+      "article_title": "Ljósið elt út í haug",
+      "article_source": "Vísir",
+      "article_date": "2026-04-12"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "ljosid-elt-ut-i-haug",
+      "title": "Ljósið elt út í haug",
+      "source": "Vísir",
+      "date": "2026-04-12",
+      "claim_count": 1,
+      "attribution_types": [
+        "paraphrased"
+      ]
+    }
+  ]
 }

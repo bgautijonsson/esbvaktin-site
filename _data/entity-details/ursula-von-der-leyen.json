@@ -6,14 +6,65 @@
   "role": "forseti framkvæmdastjórnar Evrópusambandsins",
   "party": null,
   "stance": "mixed",
-  "stance_score": 0.33,
-  "credibility": null,
+  "stance_score": 0.4,
+  "credibility": 0.5,
   "attribution_counts": {
+    "paraphrased": 1,
     "mentioned": 9
   },
   "althingi_stats": null,
-  "scorecard": {},
-  "claims": [],
-  "articles": [],
+  "scorecard": {
+    "partially_supported": 1
+  },
+  "claims": [
+    {
+      "claim_text": "Ursula von der Leyen forseti framkvæmdarstjórnar ESB hefur sagt að aðildarumsókn Íslands sé enn virk.",
+      "original_quote": "Áður hefur Ursula von der Leyen forseti framkvæmdarstjórnar sagt að umsóknin sé enn virk.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að framkvæmdastjórn ESB lítur á umsókn Íslands sem enn í gildi. <a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a> nefnir að framkvæmdastjórnin lýsti því í mars 2026 að umsóknin væri virk, og <a href=\"https://www.stjornmalin.is/?p=49609\" title=\"Stjórnmálin.is (secondary) / Marta Kos Facebook video + NRK interview\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-016</a> sýnir að stækkunarstjóri Marta Kos lýsti Íslandsmálinu sem auðveldustu aðildarviðræðum. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> vitnar í utanríkisráðherra sem staðfestir þetta. <a href=\"https://ec.europa.eu/commission/presscorner/detail/en/ac_25_1887\" title=\"European Commission — Press Corner; EEAS\" target=\"_blank\" rel=\"noopener\">EEA-DATA-015</a> lýsir fundum Frostadóttur forsætisráðherra við von der Leyen en nefnir ekki beint yfirlýsingu hennar um umsóknina. Fullyrðingin er rétt í grundvallaratriðum en heimildir eigna yfirlýsinguna framkvæmdastjórninni sem stofnun fremur en von der Leyen persónulega.",
+      "missing_context": "Heimildir staðfesta afstöðu framkvæmdastjórnarinnar sem stofnunar en bein tilvitnun í von der Leyen persónulega liggur ekki fyrir í staðreyndagrunninum. <a href=\"https://ec.europa.eu/commission/presscorner/detail/en/ac_25_1887\" title=\"European Commission — Press Corner; EEAS\" target=\"_blank\" rel=\"noopener\">EEA-DATA-015</a> lýsir fundum hennar og forsætisráðherra en opinber umgjörð þeirra var öryggissamstarf, ekki ESB-aðild beint. Framkvæmdastjórnin ræður ekki ein hvort viðræður hefjist — ráðherraráðið tekur lokaákvörðun.",
+      "supporting_evidence": [
+        {
+          "id": "PARTY-DATA-011",
+          "source_name": "Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews",
+          "source_url": "https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/"
+        },
+        {
+          "id": "POLITICAL-DATA-016",
+          "source_name": "Stjórnmálin.is (secondary) / Marta Kos Facebook video + NRK interview",
+          "source_url": "https://www.stjornmalin.is/?p=49609"
+        },
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        },
+        {
+          "id": "EEA-DATA-015",
+          "source_name": "European Commission — Press Corner; EEAS",
+          "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ac_25_1887"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "sovereignty",
+      "attribution": "paraphrased",
+      "article_slug": "ovarfaerid-ordalag-geti-ordid-til-vandraeda-i-aratugi",
+      "article_title": "Óvarfærið orðalag geti orðið til vandræða í áratugi",
+      "article_source": "Vísir",
+      "article_date": "2026-04-13"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "ovarfaerid-ordalag-geti-ordid-til-vandraeda-i-aratugi",
+      "title": "Óvarfærið orðalag geti orðið til vandræða í áratugi",
+      "source": "Vísir",
+      "date": "2026-04-13",
+      "claim_count": 1,
+      "attribution_types": [
+        "paraphrased"
+      ]
+    }
+  ],
   "subtype": "politician"
 }
