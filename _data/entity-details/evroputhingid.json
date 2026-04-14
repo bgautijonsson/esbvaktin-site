@@ -6,15 +6,15 @@
   "role": "þing",
   "party": null,
   "stance": "mixed",
-  "stance_score": 0.2,
+  "stance_score": 0.33,
   "credibility": 0.5,
   "attribution_counts": {
-    "paraphrased": 1,
-    "mentioned": 12
+    "paraphrased": 3,
+    "mentioned": 13
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 1
+    "partially_supported": 2
   },
   "claims": [
     {
@@ -47,6 +47,32 @@
       "article_title": "Greiðsluþreyta og könnunarfarið sem er á leið til Brussel",
       "article_source": "Viðskiptablaðið",
       "article_date": "2026-03-22"
+    },
+    {
+      "claim_text": "Frá árinu 2010 hefur íbúðaverð í ESB hækkað um 55% og leiguverð um tæplega 30%, á meðan tekjur hafa að meðaltali einungis aukist um 20%.",
+      "original_quote": "Frá árinu 2010 hefur íbúðaverð hækkað um 55% og leiguverð um tæplega 30%. Á sama tíma hafa tekjur að meðaltali einungis aukist um 20%.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://cb.is/financial-stability/\" title=\"Seðlabanki Íslands — Financial Stability Report; Hagstofa Íslands — Housing price index\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-001</a> staðfestir 55% raunhækkun íbúðaverðs á Íslandi 2015–2025, en fullyðingin virðist eiga við ESB í heild frá 2010. <a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a> nefnir 30–60% hækkun fasteignaverðs í ESB-ríkjum á tímabilinu 2014–2022 vegna lágra vaxta. Tölurnar eru í réttri stærðargráðu en engin heimild staðfestir nákvæmlega 55%/30%/20% fyrir ESB í heild frá 2010.",
+      "missing_context": "Fullyðingin virðist eiga við um meðaltal ESB en heimildir í grunninum eru ýmist um Ísland eða um einstakar rannsóknir á evrusvæðinu. Nákvæm Eurostat-gögn um ESB-meðaltöl frá 2010 liggja ekki fyrir í staðreyndagrunninum. Þá skiptir máli hvort verið er að tala um nafnverð eða raunverð.",
+      "supporting_evidence": [
+        {
+          "id": "HOUSING-DATA-001",
+          "source_name": "Seðlabanki Íslands — Financial Stability Report; Hagstofa Íslands — Housing price index",
+          "source_url": "https://cb.is/financial-stability/"
+        },
+        {
+          "id": "HOUSING-DATA-009",
+          "source_name": "Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023",
+          "source_url": "https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "housing",
+      "attribution": "paraphrased",
+      "article_slug": "evropuhradlestin-fer-ut-af-sporinu",
+      "article_title": "Evrópuhraðlestin fer út af sporinu",
+      "article_source": "Viðskiptablaðið",
+      "article_date": "2026-04-12"
     }
   ],
   "articles": [
@@ -55,6 +81,16 @@
       "title": "Greiðsluþreyta og könnunarfarið sem er á leið til Brussel",
       "source": "Viðskiptablaðið",
       "date": "2026-03-22",
+      "claim_count": 1,
+      "attribution_types": [
+        "paraphrased"
+      ]
+    },
+    {
+      "slug": "evropuhradlestin-fer-ut-af-sporinu",
+      "title": "Evrópuhraðlestin fer út af sporinu",
+      "source": "Viðskiptablaðið",
+      "date": "2026-04-12",
       "claim_count": 1,
       "attribution_types": [
         "paraphrased"

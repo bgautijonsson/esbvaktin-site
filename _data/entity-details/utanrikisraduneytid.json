@@ -6,17 +6,17 @@
   "role": "ráðuneyti",
   "party": null,
   "stance": "mixed",
-  "stance_score": 0.22,
-  "credibility": 0.64,
+  "stance_score": 0.2,
+  "credibility": 0.63,
   "attribution_counts": {
     "asserted": 1,
-    "quoted": 1,
+    "quoted": 2,
     "paraphrased": 16,
-    "mentioned": 14
+    "mentioned": 16
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 11,
+    "partially_supported": 12,
     "supported": 3
   },
   "claims": [
@@ -466,6 +466,32 @@
       "article_title": "Viðreisn í ESB-tímahraki",
       "article_source": "Björn Bjarnason",
       "article_date": "2026-03-26"
+    },
+    {
+      "claim_text": "Utanríkisráðuneytið lét hjá líða að eiga lögbundið samráð við landskjörstjórn um orðalag spurningarinnar.",
+      "original_quote": "Utanríkisráðuneytið lét t.d. hjá líða að eiga lögbundið samráð við landskjörstjórn um orðalag spurningarinnar.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að almennt samráð var ekki haft áður en tillagan var lögð fram (<a href=\"https://www.althingi.is/\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a>, <a href=\"https://www.althingi.is/\" title=\"Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-028</a>). Hins vegar nefna engar heimildir sérstaklega landskjörstjórn eða lögbundna skyldu til samráðs við hana um efni spurningarinnar. <a href=\"https://www.althingi.is/lagas/nuna/1991055.html\" title=\"Lög um þingsköp Alþingis nr. 55/1991; Alþingi official website\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-019</a> fjallar um samráðsskyldu við utanríkismálanefnd samkvæmt 24. grein þingskapalaga — ekki við landskjörstjórn. Fullyrðingin um að samráð við landskjörstjórn hafi verið «lögbundið» er því ekki staðfest af fyrirliggjandi heimildum.",
+      "missing_context": "Engin heimild í staðreyndagrunni staðfestir hvort lög kveða á um samráð utanríkisráðuneytisins við landskjörstjórn um efni þjóðaratkvæðagreiðsluspurningar. Þingskapalög (nr. 55/1991, 24. gr.) fjalla um samráð við utanríkismálanefnd, ekki landskjörstjórn. Lagagrundvöllur fullyrðingarinnar er óljós án nánari viðmiðunar í lög um þjóðaratkvæðagreiðslur eða kosningalög.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-PARL-005",
+          "source_name": "Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)",
+          "source_url": "https://www.althingi.is/"
+        },
+        {
+          "id": "SOV-LEGAL-028",
+          "source_name": "Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24",
+          "source_url": "https://www.althingi.is/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "sovereignty",
+      "attribution": "quoted",
+      "article_slug": "otaek-stefna-vidreisnar",
+      "article_title": "Ótæk stefna Viðreisnar",
+      "article_source": "Björn Bjarnason",
+      "article_date": "2026-04-13"
     }
   ],
   "articles": [
@@ -509,6 +535,17 @@
       "claim_count": 1,
       "attribution_types": [
         "asserted"
+      ]
+    },
+    {
+      "slug": "otaek-stefna-vidreisnar",
+      "title": "Ótæk stefna Viðreisnar",
+      "source": "Björn Bjarnason",
+      "date": "2026-04-13",
+      "claim_count": 1,
+      "attribution_types": [
+        "mentioned",
+        "quoted"
       ]
     }
   ]

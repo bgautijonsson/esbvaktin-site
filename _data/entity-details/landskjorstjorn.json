@@ -7,13 +7,76 @@
   "party": null,
   "stance": "insufficient_data",
   "stance_score": 0.0,
-  "credibility": null,
+  "credibility": 0.5,
   "attribution_counts": {
     "asserted": 1,
-    "mentioned": 1
+    "quoted": 3,
+    "mentioned": 2
   },
   "althingi_stats": null,
-  "scorecard": {},
-  "claims": [],
-  "articles": []
+  "scorecard": {
+    "unverifiable": 1,
+    "partially_supported": 1
+  },
+  "claims": [
+    {
+      "claim_text": "Umsögn landskjörstjórnar um tillögu utanríkisráðherra um ESB-þjóðaratkvæðagreiðsluna birtist föstudaginn 10. apríl 2026.",
+      "original_quote": "Áfellisdómur yfir málatilbúnaði Þorgerðar Katrínar Gunnarsdóttur utanríkisráðherra birtist föstudaginn 10. apríl í umsögn landskjörstjórnar um tillöguna um ESB-þjóðaratkvæðagreiðsluna.",
+      "verdict": "unverifiable",
+      "explanation": "Engin heimild í staðreyndagrunni staðfestir dagsetningu umsagnar landskjörstjórnar. <a href=\"https://www.althingi.is/\" title=\"Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-028</a> staðfestir að tillagan var lögð fram 7. mars 2026, en nefnir hvorki landskjörstjórn né umsögn frá 10. apríl. Fyrra mat úr fullyrðingabanka vísar til annarrar fullyrðingar um framlagninguna sjálfa, ekki þessa tilteknu umsögn.",
+      "missing_context": "Dagsetningin 10. apríl 2026 og tilvist umsagnar landskjörstjórnar eru ekki staðfestar í heimildum. Umsögnin gæti verið aðgengileg á vef Alþingis eða landskjörstjórnar, en staðreyndagrunnurinn nær ekki til hennar.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [],
+      "category": "sovereignty",
+      "attribution": "quoted",
+      "article_slug": "otaek-stefna-vidreisnar",
+      "article_title": "Ótæk stefna Viðreisnar",
+      "article_source": "Björn Bjarnason",
+      "article_date": "2026-04-13"
+    },
+    {
+      "claim_text": "Landskjörstjórn gerði athugasemdir við tímasetningu atkvæðagreiðslunnar, svigrúmið til kynningarstarfs og efni og form spurningarinnar.",
+      "original_quote": "Tímasetning atkvæðagreiðslunnar, svigrúmið til viðunandi kynningarstarfs og síðast en ekki síst efni spurningarinnar sjálfrar og form hennar sæta athugasemdum frá landskjörstjórn.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að tímasetning og spurningaorðalag hafa verið umdeild, en gagnrýnin kemur frá stjórnarandstöðuflokkum, ekki frá landskjörstjórn sérstaklega. <a href=\"https://www.althingi.is/\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> lýsir athugasemdum við málshraða og samráðsleysi; <a href=\"https://www.althingi.is/\" title=\"Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-028</a> nefnir gagnrýni á föstudagstímasetningu; <a href=\"https://www.xd.is/\" title=\"Althingi debate records; Sjálfstæðisflokkur — Press releases; Morgunblaðið coverage\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-020</a> staðfestir gagnrýni Sjálfstæðisflokksins á tímaramma atkvæðagreiðslunnar. Engin heimild staðfestir þó beint að landskjörstjórn hafi gert þessar athugasemdir.",
+      "missing_context": "Staðreyndagrunnurinn inniheldur enga beina heimild um umsögn landskjörstjórnar. Gagnrýnin sem lýst er í heimildum kemur frá þingmönnum og stjórnmálaflokkum, ekki frá landskjörstjórn sem stofnun. Ef landskjörstjórn gaf út slíka umsögn er hún aðgengileg á opinberum vettvangi en fellur utan staðreyndagrunnsins.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-PARL-005",
+          "source_name": "Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)",
+          "source_url": "https://www.althingi.is/"
+        },
+        {
+          "id": "SOV-LEGAL-028",
+          "source_name": "Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24",
+          "source_url": "https://www.althingi.is/"
+        },
+        {
+          "id": "PARTY-DATA-020",
+          "source_name": "Althingi debate records; Sjálfstæðisflokkur — Press releases; Morgunblaðið coverage",
+          "source_url": "https://www.xd.is/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "sovereignty",
+      "attribution": "quoted",
+      "article_slug": "otaek-stefna-vidreisnar",
+      "article_title": "Ótæk stefna Viðreisnar",
+      "article_source": "Björn Bjarnason",
+      "article_date": "2026-04-13"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "otaek-stefna-vidreisnar",
+      "title": "Ótæk stefna Viðreisnar",
+      "source": "Björn Bjarnason",
+      "date": "2026-04-13",
+      "claim_count": 2,
+      "attribution_types": [
+        "mentioned",
+        "quoted"
+      ]
+    }
+  ]
 }

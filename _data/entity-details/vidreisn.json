@@ -7,17 +7,18 @@
   "party": "Viðreisn",
   "stance": "pro_eu",
   "stance_score": 0.88,
-  "credibility": 0.69,
+  "credibility": 0.61,
   "attribution_counts": {
     "asserted": 6,
-    "quoted": 1,
+    "quoted": 2,
     "paraphrased": 2,
-    "mentioned": 32
+    "mentioned": 36
   },
   "althingi_stats": null,
   "scorecard": {
     "partially_supported": 5,
-    "supported": 3
+    "supported": 3,
+    "unverifiable": 1
   },
   "claims": [
     {
@@ -277,6 +278,37 @@
       "article_title": "Hvað þýðir góður samningur?",
       "article_source": "Bændablaðið",
       "article_date": "2026-03-23"
+    },
+    {
+      "claim_text": "Viðreisn var stofnaður með það eitt markmið að koma Íslandi í ESB.",
+      "original_quote": "en sá flokkur var stofnaður á hvítasunnu fyrir réttum 10 árum með það eitt að markmiði að koma Íslandi í ESB.",
+      "verdict": "unverifiable",
+      "explanation": "Fullyrðingin byggir á ónafngreindum heimildum sem ekki er hægt að staðfesta.",
+      "missing_context": "Stofnendur Viðreisnar höfðu margvíslega hvata — flokkurinn spratt úr Sjálfstæðisflokknum vegna pólitísks ágreinings sem náði lengra en ESB-spurningin (<a href=\"https://www.vidreisn.is/stefna\" title=\"Viðreisn — Founding manifesto (2014); Viðreisn party statutes; Landskjörstjórn election results\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-017</a>). Orðalagið «í þeim tilgangi» gefur til kynna einn tilgang; réttara er að ESB-aðild var eitt af helstu stofnmarkmiðum.",
+      "supporting_evidence": [
+        {
+          "id": "PARTY-DATA-017",
+          "source_name": "Viðreisn — Founding manifesto (2014); Viðreisn party statutes; Landskjörstjórn election results",
+          "source_url": "https://www.vidreisn.is/stefna"
+        },
+        {
+          "id": "POLITICAL-DATA-004",
+          "source_name": "Althingi — Session 157; Viðreisn party platform",
+          "source_url": "https://www.althingi.is/thingmenn/thingflokkar/vidreisn/"
+        },
+        {
+          "id": "POL-DATA-001",
+          "source_name": "Althingi — Party platforms and election results",
+          "source_url": "https://www.althingi.is/thingmenn/thingflokkar/thingflokkar/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "party_positions",
+      "attribution": "quoted",
+      "article_slug": "otaek-stefna-vidreisnar",
+      "article_title": "Ótæk stefna Viðreisnar",
+      "article_source": "Björn Bjarnason",
+      "article_date": "2026-04-13"
     }
   ],
   "articles": [
@@ -319,6 +351,17 @@
       "attribution_types": [
         "quoted"
       ]
+    },
+    {
+      "slug": "otaek-stefna-vidreisnar",
+      "title": "Ótæk stefna Viðreisnar",
+      "source": "Björn Bjarnason",
+      "date": "2026-04-13",
+      "claim_count": 1,
+      "attribution_types": [
+        "mentioned",
+        "quoted"
+      ]
     }
   ],
   "icelandic": true,
@@ -327,9 +370,9 @@
       "slug": "thorgerdur-katrin-gunnarsdottir",
       "name": "Þorgerður Katrín Gunnarsdóttir",
       "role": "þingmaður",
-      "stance_score": 0.84,
-      "credibility": 0.62,
-      "claim_count": 228
+      "stance_score": 0.85,
+      "credibility": 0.61,
+      "claim_count": 235
     },
     {
       "slug": "thomas-moller",
@@ -408,6 +451,14 @@
       "name": "Daði Már Kristófersson",
       "role": "þingmaður",
       "stance_score": 0.0,
+      "credibility": null,
+      "claim_count": 0
+    },
+    {
+      "slug": "thorgerdur-katria-gunnarsdottir",
+      "name": "Þorgerður Katría Gunnarsdóttir",
+      "role": "utanríkisráðherra",
+      "stance_score": 1.0,
       "credibility": null,
       "claim_count": 0
     }
