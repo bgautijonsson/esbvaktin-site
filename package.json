@@ -4,6 +4,8 @@
   "private": true,
   "description": "Static site for esbvaktin.is",
   "scripts": {
+    "validate": "python3 scripts/validate_export.py",
+    "prebuild": "python3 scripts/validate_export.py",
     "build": "npm run clean && eleventy && bash tools/minify.sh",
     "serve": "eleventy --serve",
     "clean": "rm -rf _site",
