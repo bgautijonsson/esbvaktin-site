@@ -9,12 +9,13 @@
   "stance_score": 0.0,
   "credibility": 0.58,
   "attribution_counts": {
-    "asserted": 6
+    "asserted": 9
   },
   "althingi_stats": null,
   "scorecard": {
     "partially_supported": 5,
-    "supported": 1
+    "supported": 1,
+    "unverifiable": 1
   },
   "claims": [
     {
@@ -227,6 +228,27 @@
       "article_title": "Óvarfærið orðalag geti orðið til vandræða í áratugi",
       "article_source": "Vísir",
       "article_date": "2026-04-13"
+    },
+    {
+      "claim_text": "Andstaða við ESB-aðild jókst um rúm sex prósentustig milli 2025 og 2026 samkvæmt könnun Maskínu.",
+      "original_quote": "Þeim sem eru andvígir því fjölgað um rúm sex prósent milli ára.",
+      "verdict": "unverifiable",
+      "explanation": "Ef Maskínu-tölurnar (39,8% árið 2025 og 46% árið 2026) eru réttar er breytingin um 6,2 prósentustig, sem samræmist fullyrðingunni. Gallup-gögn (<a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — EU membership polling\" target=\"_blank\" rel=\"noopener\">POLL-DATA-001</a>) sýna hins vegar þróun í gagnstæða átt — andstaða lækkaði úr ~50% árið 2022 í ~40% seint á árinu 2025. Þetta þýðir ekki endilega að Maskínu-tölurnar séu rangar, heldur endurspeglar það ólíkar mælingar og tímabil.",
+      "missing_context": "Gallup-gögn sýna ólíka þróun (minnkandi andstöðu 2022–2025). Munurinn gæti stafað af mismunandi spurningaorðalagi, úrtaksaðferð eða mælitíma. Maskínu-könnunin er ekki í staðreyndagrunni og niðurstöðurnar eru því ekki sannreynanlegar úr fyrirliggjandi heimildum.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [
+        {
+          "id": "POLL-DATA-001",
+          "source_name": "Gallup Ísland — EU membership polling",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+        }
+      ],
+      "category": "polling",
+      "attribution": "asserted",
+      "article_slug": "fleiri-andvigir-adild-nu-en-i-fyrra",
+      "article_title": "Fleiri andvígir aðild nú en í fyrra",
+      "article_source": "Vísir",
+      "article_date": "2026-04-15"
     }
   ],
   "articles": [
@@ -236,6 +258,16 @@
       "source": "Vísir",
       "date": "2026-04-13",
       "claim_count": 6,
+      "attribution_types": [
+        "asserted"
+      ]
+    },
+    {
+      "slug": "fleiri-andvigir-adild-nu-en-i-fyrra",
+      "title": "Fleiri andvígir aðild nú en í fyrra",
+      "source": "Vísir",
+      "date": "2026-04-15",
+      "claim_count": 1,
       "attribution_types": [
         "asserted"
       ]

@@ -7,16 +7,15 @@
   "party": "Til Vinstri við ESB",
   "stance": "insufficient_data",
   "stance_score": -1.0,
-  "credibility": 0.5,
+  "credibility": 0.54,
   "attribution_counts": {
     "asserted": 16
   },
   "althingi_stats": null,
   "scorecard": {
     "supported": 2,
-    "partially_supported": 8,
-    "misleading": 1,
-    "unsupported": 1
+    "partially_supported": 9,
+    "misleading": 1
   },
   "claims": [
     {
@@ -220,18 +219,13 @@
       "claim_text": "Maastricht-samningurinn setur skorður á möguleika á kjarabótum innan aðildarríkja ESB.",
       "original_quote": "möguleikarnir á kjarabótum verða þó alltaf háðir þeim skorðum sem Maastricht samningurinn setur þeim",
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014\" title=\"Treaty on the Functioning of the European Union, Article 140\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-004</a> og <a href=\"https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en\" title=\"European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators\" target=\"_blank\" rel=\"noopener\">CURR-DATA-005</a> staðfesta að Maastricht-viðmiðin setja skorður á ríkisfjármál aðildarríkja (hámarkshalli 3% af VLF, skuldir undir 60%). Þessar skorður geta óbeint haft áhrif á fjárframlög til opinbers vinnumarkaðar. Hins vegar bendir <a href=\"https://vinnurettur.asi.is/vinnurettarvefur/vinnurettur/icelandic-labour-law/\" title=\"ASÍ — Collective agreements overview; European Commission — Employment acquis\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-005</a> á að ESB-tilskipun um lágmarkslaun verndar norrænt kjarasamningakerfi, og Norðurlönd ESB hafa náð verulegum kjarabótum þrátt fyrir Maastricht-viðmiðin. Fullyrðingin er því of víð — skorðurnar eru aðallega á ríkisfjármálasvið, ekki beint á kjarasamninga.",
-      "missing_context": "Maastricht-viðmiðin takmarka ríkisfjármálastefnu en ekki kjarasamninga beint. Danmörk, Svíþjóð og Finnland hafa náð kjarabótum innan ESB og sömu ríkisfjármálaviðmiða. Fullyrðingin blandast saman fjármálastefnu ríkja og kjarasamningaferli.",
+      "explanation": "Maastricht-sáttmálinn og afleiður hans setja afmarkaðar skorður á ESB-vettvangi, en grein 153(5) TFEU undanskilur beinlínis launaákvarðanir frá valdsviði ESB. Tilskipun 2022/2041 um lágmarkslaun (<a href=\"https://eur-lex.europa.eu/eli/dir/2022/2041/oj/eng\" title=\"EUR-Lex — Directive (EU) 2022/2041\" target=\"_blank\" rel=\"noopener\">LABOUR-LEGAL-002</a>) hefur skýra norræna undanþágu fyrir lönd með yfir 80% þekju kjarasamninga, og dómur Evrópudómstólsins (mál C-19/23, nóvember 2025) felldi úr gildi þau ákvæði tilskipunarinnar sem snertu launaákvarðanir of náið. Skorðurnar eru því mun afmarkaðri en fullyrðingin gefur til kynna — Maastricht-rammi heimilar áfram kjarabaráttu og kjarasamninga á þjóðlegu sviði.",
+      "missing_context": "Tilskipunin um lágmarkslaun er ekki enn (apríl 2026) komin inn í EES-samninginn og bindur því ekki Ísland. Norræn ríki innan ESB (Danmörk, Svíþjóð, Finnland) viðhalda eigin kjarasamningakerfum þrátt fyrir Maastricht-rammann. Fullyrðingin tilgreinir ekki hvers konar «kjarabætur» er átt við — laun, lífeyrir, vinnutími o.s.frv. — og því er erfitt að meta nákvæmni hennar að fullu.",
       "supporting_evidence": [
         {
-          "id": "SOV-LEGAL-004",
-          "source_name": "Treaty on the Functioning of the European Union, Article 140",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:ec0014"
-        },
-        {
-          "id": "CURR-DATA-005",
-          "source_name": "European Commission — Convergence criteria; Seðlabanki Íslands — Economic indicators",
-          "source_url": "https://economy-finance.ec.europa.eu/euro/enlargement-euro-area/convergence-criteria-joining_en"
+          "id": "LABOUR-LEGAL-002",
+          "source_name": "EUR-Lex — Directive (EU) 2022/2041",
+          "source_url": "https://eur-lex.europa.eu/eli/dir/2022/2041/oj/eng"
         }
       ],
       "contradicting_evidence": [
@@ -239,6 +233,11 @@
           "id": "LABOUR-DATA-005",
           "source_name": "ASÍ — Collective agreements overview; European Commission — Employment acquis",
           "source_url": "https://vinnurettur.asi.is/vinnurettarvefur/vinnurettur/icelandic-labour-law/"
+        },
+        {
+          "id": "LABOUR-DATA-013",
+          "source_name": "OECD — Trade Union Density (OECD.Stat); ILO — Global Wage Report 2024/25",
+          "source_url": "https://data-explorer.oecd.org/vis?df%5Bds%5D=DisseminateFinalDMZ&df%5Bid%5D=DSD_TUD_CBC@DF_TUD&df%5Bag%5D=OECD.ELS.SAE"
         }
       ],
       "category": "labour",
@@ -314,19 +313,35 @@
       "claim_text": "Fjórfrelsi Evrópusambandsins hefur leitt til þess að réttindi verkafólks hafa molnað.",
       "original_quote": "Staðreyndin er þó sú að fjórfrelsi Evrópusambandsins hefur molað sundur réttindi",
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EEA Agreement, Article 1 and Protocol 47\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-003</a> staðfestir að fjórfrelsið (vörur, þjónusta, fjármagn, fólk) er kjarni innri markaðarins. <a href=\"https://island.is/en/o/directorate-of-immigration\" title=\"EFTA Surveillance Authority — EEA Agreement provisions; Útlendingastofnun (Directorate of Immigration)\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-001</a> bendir á að frjáls för launafólks geti haft áhrif á vinnumarkað, en engin heimild staðfestir beint að fjórfrelsið hafi «molað sundur» réttindi. Þvert á móti bendir <a href=\"https://vinnurettur.asi.is/vinnurettarvefur/vinnurettur/icelandic-labour-law/\" title=\"ASÍ — Collective agreements overview; European Commission — Employment acquis\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-005</a> á að ESB-tilskipanir setja lágmarksréttindi og vernda norræn kjarakerfi. <a href=\"https://eur-lex.europa.eu/eli/dir/2018/957/oj/eng\" title=\"European Commission — Posted Workers Directive; Icelandic Ministry of Social Affairs — transposition records\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-008</a> sýnir að útsendra-starfsmannatilskipunin tryggir sömu kjör. Fullyrðingin er pólitískt mat sem heimildir styðja ekki að fullu — sum vísbendingar eru til um þrýsting á laun í tilteknum geirum, en alhæfingin er of sterk.",
-      "missing_context": "Umræðan um áhrif fjórfrelsisins á réttindi verkafólks er margslungin. Útsendra-starfsmannatilskipunin og lágmarkslaunatilskipunin voru einmitt settar til að mæta áhyggjum af félagslegum undirboðum. Áhrifin eru mismunandi eftir löndum og geirum.",
-      "supporting_evidence": [],
+      "explanation": "Fjórfrelsið hefur valdið raunverulegri spennu við vinnumarkaðsréttindi — Laval-dómurinn (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62005CJ0341\" title=\"EUR-Lex / CJEU — Case C-341/05 Laval un Partneri Ltd\" target=\"_blank\" rel=\"noopener\">LABOUR-LEGAL-001</a>) staðfesti að réttur kjarabaráttu getur takmarkast af þjónustufrelsinu, og lex Laval (2010) takmarkaði verkfallsrétt sænskra verkalýðsfélaga. Fullyrðingin um almennt molnun er hins vegar of víðtæk: Svíþjóð felldi úr gildi lykilákvæði lex Laval árið 2017 (<a href=\"https://www.eurofound.europa.eu/en/resources/article/2017/sweden-repeal-lex-laval\" title=\"Eurofound — Sweden: The repeal of Lex Laval\" target=\"_blank\" rel=\"noopener\">LABOUR-PREC-002</a>), 28. grein réttindaskrár ESB tryggir réttinn til kjarabaráttu, og endurskoðuð tilskipun um farandverkamenn (2018/957) krefst nú jafnra launa fyrir jafna vinnu. Réttindi hafa því fengið bæði áföll og bakslag — heimildir styðja ekki einhliða mynd af stöðugri rýrnun.",
+      "missing_context": "Á Íslandi er stéttarfélagsaðild um 90% — sú hæsta innan OECD — og kjarasamningar ná til nær allra launþega gegnum sjálfvirka útvíkkun. Tilskipun um farandverkamenn er þegar í íslenskum lögum gegnum EES-samninginn. Grísku breytingarnar (<a href=\"https://www.eurofound.europa.eu/en/resources/article/2012/troika-approves-new-set-changes-jobs-and-pay\" title=\"Eurofound — Troika approves new set of changes in jobs and pay; ETUC — The Functioning of the Troika\" target=\"_blank\" rel=\"noopener\">LABOUR-PREC-001</a>) voru afleiðingar lánaprógrammseðla, ekki almennrar ESB-stefnu, og hafa að hluta verið dregnar til baka.",
+      "supporting_evidence": [
+        {
+          "id": "LABOUR-LEGAL-001",
+          "source_name": "EUR-Lex / CJEU — Case C-341/05 Laval un Partneri Ltd",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62005CJ0341"
+        },
+        {
+          "id": "LABOUR-PREC-001",
+          "source_name": "Eurofound — Troika approves new set of changes in jobs and pay; ETUC — The Functioning of the Troika",
+          "source_url": "https://www.eurofound.europa.eu/en/resources/article/2012/troika-approves-new-set-changes-jobs-and-pay"
+        }
+      ],
       "contradicting_evidence": [
         {
-          "id": "LABOUR-DATA-005",
-          "source_name": "ASÍ — Collective agreements overview; European Commission — Employment acquis",
-          "source_url": "https://vinnurettur.asi.is/vinnurettarvefur/vinnurettur/icelandic-labour-law/"
+          "id": "LABOUR-PREC-002",
+          "source_name": "Eurofound — Sweden: The repeal of Lex Laval",
+          "source_url": "https://www.eurofound.europa.eu/en/resources/article/2017/sweden-repeal-lex-laval"
         },
         {
           "id": "LABOUR-DATA-008",
           "source_name": "European Commission — Posted Workers Directive; Icelandic Ministry of Social Affairs — transposition records",
           "source_url": "https://eur-lex.europa.eu/eli/dir/2018/957/oj/eng"
+        },
+        {
+          "id": "LABOUR-DATA-001",
+          "source_name": "EFTA Surveillance Authority — EEA Agreement provisions; Útlendingastofnun (Directorate of Immigration)",
+          "source_url": "https://island.is/en/o/directorate-of-immigration"
         }
       ],
       "category": "labour",
@@ -339,10 +354,16 @@
     {
       "claim_text": "Með ESB-aðild myndi stéttarbarátta láglaunafólks á Íslandi veikjast verulega eða leggjast af.",
       "original_quote": "Íslenskt launafólk væri steypt í markaðslaunamódel þar sem stéttabarátta láglaunafólks myndi veikjast verulega ef þá ekki með öllu leggjast af",
-      "verdict": "unsupported",
-      "explanation": "<a href=\"https://vinnurettur.asi.is/vinnurettarvefur/vinnurettur/icelandic-labour-law/\" title=\"ASÍ — Collective agreements overview; European Commission — Employment acquis\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-005</a> bendir skýrt á að lágmarkslaunatilskipun ESB (2022/2041) verndar sérstaklega kerfi þar sem þekja kjarasamninga er yfir 80% — Ísland er vel yfir þeim mörkum. <a href=\"https://data-explorer.oecd.org/vis?df%5Bds%5D=DisseminateFinalDMZ&df%5Bid%5D=DSD_TUD_CBC@DF_TUD&df%5Bag%5D=OECD.ELS.SAE\" title=\"OECD — Trade Union Density (OECD.Stat); ILO — Global Wage Report 2024/25\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-013</a> staðfestir að ESB-aðild sé ólíkleg til að ógna kjarasamningakerfi Íslands. Norðurlöndin innan ESB — Danmörk, Svíþjóð og Finnland — halda öflugum stéttarfélögum og kjarasamningum. Fullyrðingin um að stéttarbarátta myndi «leggjast af» er verulega ýkt og ekki studd af fyrirliggjandi heimildum.",
-      "missing_context": "Norðurlöndin innan ESB sýna fordæmi um sterk verkalýðsfélög og kjarasamninga innan ESB. Tilskipun ESB um lágmarkslaun var sérstaklega hönnuð til að vernda norrænt samningakerfi. Fullyrðingin tekur ekki tillit til þessara fordæma.",
-      "supporting_evidence": [],
+      "verdict": "partially_supported",
+      "explanation": "Heimildir styðja ekki spádóm um veruleg veikingu eða dauða stéttarbaráttu láglaunafólks við ESB-aðild. Tilskipun um lágmarkslaun (<a href=\"https://vinnurettur.asi.is/vinnurettarvefur/vinnurettur/icelandic-labour-law/\" title=\"ASÍ — Collective agreements overview; European Commission — Employment acquis\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-005</a>) verndar berum orðum norræn kjarasamningakerfi með yfir 80% þekju, og íslensk félagsaðild upp á 90% (<a href=\"https://data-explorer.oecd.org/vis?df%5Bds%5D=DisseminateFinalDMZ&df%5Bid%5D=DSD_TUD_CBC@DF_TUD&df%5Bag%5D=OECD.ELS.SAE\" title=\"OECD — Trade Union Density (OECD.Stat); ILO — Global Wage Report 2024/25\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-013</a>) er lang ofan við þröskuldinn. ASÍ hefur sjálft bent á að norræna fyrirmyndin sé varin í ESB-rammanum (<a href=\"https://asi.is/thing2024/\" title=\"ASÍ — Executive board minutes and public statements; ASÍ annual congress 2024\" target=\"_blank\" rel=\"noopener\">POL-DATA-013</a>). Á móti kemur að Laval-dómurinn og grísku breytingarnar (<a href=\"https://www.eurofound.europa.eu/en/resources/article/2012/troika-approves-new-set-changes-jobs-and-pay\" title=\"Eurofound — Troika approves new set of changes in jobs and pay; ETUC — The Functioning of the Troika\" target=\"_blank\" rel=\"noopener\">LABOUR-PREC-001</a>) sýna raunverulega spennu, en hvort tveggja er afmarkað dæmi — krísusvar fyrir Grikkland og dómur sem Svíþjóð sneri að mestu við 2017.",
+      "missing_context": "Spádómur um framtíðarþróun við ESB-aðild byggir á rökleiðslu fremur en beinum sönnunum. Reynsla annarra norrænna ESB-ríkja (Danmörk, Svíþjóð, Finnland) sýnir að stéttarfélög geta starfað innan ESB með háum kjarasamningaþekju. Hámarks confidence fyrir spádóma er 0,8.",
+      "supporting_evidence": [
+        {
+          "id": "LABOUR-PREC-001",
+          "source_name": "Eurofound — Troika approves new set of changes in jobs and pay; ETUC — The Functioning of the Troika",
+          "source_url": "https://www.eurofound.europa.eu/en/resources/article/2012/troika-approves-new-set-changes-jobs-and-pay"
+        }
+      ],
       "contradicting_evidence": [
         {
           "id": "LABOUR-DATA-005",
@@ -353,6 +374,16 @@
           "id": "LABOUR-DATA-013",
           "source_name": "OECD — Trade Union Density (OECD.Stat); ILO — Global Wage Report 2024/25",
           "source_url": "https://data-explorer.oecd.org/vis?df%5Bds%5D=DisseminateFinalDMZ&df%5Bid%5D=DSD_TUD_CBC@DF_TUD&df%5Bag%5D=OECD.ELS.SAE"
+        },
+        {
+          "id": "POL-DATA-013",
+          "source_name": "ASÍ — Executive board minutes and public statements; ASÍ annual congress 2024",
+          "source_url": "https://asi.is/thing2024/"
+        },
+        {
+          "id": "LABOUR-DATA-008",
+          "source_name": "European Commission — Posted Workers Directive; Icelandic Ministry of Social Affairs — transposition records",
+          "source_url": "https://eur-lex.europa.eu/eli/dir/2018/957/oj/eng"
         }
       ],
       "category": "labour",

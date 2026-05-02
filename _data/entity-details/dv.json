@@ -7,13 +7,15 @@
   "party": null,
   "stance": "neutral",
   "stance_score": 0.0,
-  "credibility": 1.0,
+  "credibility": 0.75,
   "attribution_counts": {
-    "paraphrased": 1
+    "asserted": 1,
+    "paraphrased": 2
   },
   "althingi_stats": null,
   "scorecard": {
-    "supported": 1
+    "supported": 1,
+    "partially_supported": 1
   },
   "claims": [
     {
@@ -41,6 +43,37 @@
       "article_title": "Björn hrekur fullyrðingu um afdrif sjávarauðlinda Íslendinga í ESB",
       "article_source": "DV",
       "article_date": "2026-03-07"
+    },
+    {
+      "claim_text": "Stóra spurningin sem Íslendingar velta fyrir sér varðandi ESB-aðild tengist vaxtakjörum.",
+      "original_quote": "stóra spurningin sem fólk er að velta fyrir sér er varðandi vaxtakjör",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> staðfestir verulegan vaxtamun milli Íslands og evrusvæðisins (7,5–8,5% vs 3,4%) sem gerir vaxtakjör að mikilvægu efni. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — EU polls cross-referenced with Hagstofa consumer confidence index\" target=\"_blank\" rel=\"noopener\">POLL-DATA-009</a> sýnir að stuðningur við ESB-aðild eykst í efnahagsþrengingum, sem styður óbeint að efnahagslegir þættir séu áhrifamiklir í umræðunni. Hins vegar staðfesta heimildirnar ekki að vaxtakjör séu «stóra spurningin» umfram önnur efni — fullveldi, sjávarútvegur og landbúnaður eru jafnframt fyrirferðarmikil í umræðunni.",
+      "missing_context": "Heimildir geyma ekki kannanir sem raða áhyggjum kjósenda eftir mikilvægi. Vaxtakjör tengjast evruupptöku sem kemur ekki sjálfkrafa við ESB-aðild — Maastricht-skilyrðin og ERM II-tímabil bætast við. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — EU polls cross-referenced with Hagstofa consumer confidence index\" target=\"_blank\" rel=\"noopener\">POLL-DATA-009</a> sýnir að stuðningur við ESB-aðild fer eftir efnahagslegri sveiflu.",
+      "supporting_evidence": [
+        {
+          "id": "HOUS-DATA-005",
+          "source_name": "Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase",
+          "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
+        },
+        {
+          "id": "POLL-DATA-009",
+          "source_name": "Gallup Ísland — EU polls cross-referenced with Hagstofa consumer confidence index",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+        },
+        {
+          "id": "HOUSING-DATA-008",
+          "source_name": "European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report",
+          "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "currency",
+      "attribution": "asserted",
+      "article_slug": "halla-hrund-logadottir-evropusambandsadild-eykur-likur-a-vaxtalaekkunum",
+      "article_title": "Halla Hrund Logadóttir: Evrópusambandsaðild eykur líkur á vaxtalækkunum",
+      "article_source": "DV",
+      "article_date": "2026-04-29"
     }
   ],
   "articles": [
@@ -53,11 +86,336 @@
       "attribution_types": [
         "paraphrased"
       ]
+    },
+    {
+      "slug": "halla-hrund-logadottir-evropusambandsadild-eykur-likur-a-vaxtalaekkunum",
+      "title": "Halla Hrund Logadóttir: Evrópusambandsaðild eykur líkur á vaxtalækkunum",
+      "source": "DV",
+      "date": "2026-04-29",
+      "claim_count": 1,
+      "attribution_types": [
+        "asserted"
+      ]
     }
   ],
   "subtype": "media",
   "icelandic": true,
   "outlet_articles": [
+    {
+      "slug": "david-thor-bjorgvinsson-skrifar-yfirthjodlegt-vald-esb",
+      "title": "Davíð Þór Björgvinsson skrifar: Yfirþjóðlegt vald ESB",
+      "date": "2026-04-29",
+      "source": "DV",
+      "claim_count": 29,
+      "verdict_counts": {
+        "supported": 21,
+        "partially_supported": 8
+      },
+      "dominant_category": "eea_eu_law",
+      "categories": [
+        "currency",
+        "eea_eu_law",
+        "fisheries",
+        "sovereignty",
+        "trade"
+      ],
+      "participants": [
+        {
+          "name": "Davíð Þór Björgvinsson",
+          "role": "hæstaréttarlögmaður",
+          "party": null,
+          "role_in_article": "author",
+          "attribution_type": "asserted",
+          "claim_count": 29,
+          "verdicts": {
+            "supported": 21,
+            "partially_supported": 8
+          },
+          "stance": "neutral",
+          "slug": "david-thor-bjorgvinsson",
+          "mention_count": 10,
+          "credibility": 0.73
+        }
+      ]
+    },
+    {
+      "slug": "halla-hrund-logadottir-evropusambandsadild-eykur-likur-a-vaxtalaekkunum",
+      "title": "Halla Hrund Logadóttir: Evrópusambandsaðild eykur líkur á vaxtalækkunum",
+      "date": "2026-04-29",
+      "source": "DV",
+      "claim_count": 11,
+      "verdict_counts": {
+        "partially_supported": 7,
+        "supported": 4
+      },
+      "dominant_category": "eea_eu_law",
+      "categories": [
+        "agriculture",
+        "currency",
+        "eea_eu_law",
+        "other",
+        "party_positions",
+        "sovereignty",
+        "trade"
+      ],
+      "participants": [
+        {
+          "name": "Halla Hrund Logadóttir",
+          "role": "þingmaður framsóknar",
+          "party": "Framsóknarflokkur",
+          "role_in_article": "speaker",
+          "attribution_type": "quoted",
+          "claim_count": 11,
+          "verdicts": {
+            "partially_supported": 7,
+            "supported": 4
+          },
+          "stance": "mixed",
+          "slug": "halla-hrund-logadottir",
+          "mention_count": 3,
+          "credibility": 0.69,
+          "speech_count": 14
+        },
+        {
+          "name": "Ólafur Arnarson",
+          "role": "þátthöfundur",
+          "party": null,
+          "role_in_article": "speaker",
+          "attribution_type": "paraphrased",
+          "claim_count": 1,
+          "verdicts": {
+            "supported": 1
+          },
+          "stance": "neutral"
+        }
+      ]
+    },
+    {
+      "slug": "maria-rut-kristinsdottir-skrifar-vidreisnarvor-um-allt-land",
+      "title": "María Rut Kristinsdóttir skrifar: Viðreisnarvor um allt land",
+      "date": "2026-04-29",
+      "source": "DV",
+      "claim_count": 1,
+      "verdict_counts": {
+        "partially_supported": 1
+      },
+      "dominant_category": "trade",
+      "categories": [
+        "trade"
+      ],
+      "participants": [
+        {
+          "name": "María Rut Kristinsdóttir",
+          "role": "pistlahöfundur",
+          "party": "Viðreisn",
+          "role_in_article": "author",
+          "attribution_type": "asserted",
+          "claim_count": 1,
+          "verdicts": {
+            "partially_supported": 1
+          },
+          "stance": "pro_eu",
+          "slug": "maria-rut-kristinsdottir",
+          "mention_count": 1,
+          "credibility": 0.5,
+          "speech_count": 5
+        }
+      ]
+    },
+    {
+      "slug": "halla-hrund-logadottir-styd-thjodaratkvaedagreidsluna-vil-skyr-raud-strik-i-sandinn",
+      "title": "Halla Hrund Logadóttir: Styð þjóðaratkvæðagreiðsluna – vil skýr rauð strik í sandinn",
+      "date": "2026-04-28",
+      "source": "DV",
+      "claim_count": 7,
+      "verdict_counts": {
+        "supported": 4,
+        "partially_supported": 3
+      },
+      "dominant_category": "party_positions",
+      "categories": [
+        "other",
+        "party_positions",
+        "sovereignty"
+      ],
+      "participants": [
+        {
+          "name": "Halla Hrund Logadóttir",
+          "role": "þingmaður",
+          "party": "Framsóknarflokkur",
+          "role_in_article": "author",
+          "attribution_type": "asserted",
+          "claim_count": 5,
+          "verdicts": {
+            "supported": 3,
+            "partially_supported": 2
+          },
+          "stance": "pro_eu",
+          "slug": "halla-hrund-logadottir",
+          "mention_count": 3,
+          "credibility": 0.69,
+          "speech_count": 14
+        },
+        {
+          "name": "Ólafur Arnarson",
+          "role": "hlaðvarpshöfundur",
+          "party": null,
+          "role_in_article": "speaker",
+          "attribution_type": "quoted",
+          "claim_count": 1,
+          "verdicts": {
+            "partially_supported": 1
+          },
+          "stance": "neutral"
+        }
+      ]
+    },
+    {
+      "slug": "david-thor-bjorgvinsson-thankar-i-tilefni-af-umsogn-landskjorstjornar",
+      "title": "Davíð Þór Björgvinsson: Þankar í tilefni af umsögn landskjörstjórnar",
+      "date": "2026-04-16",
+      "source": "DV",
+      "claim_count": 18,
+      "verdict_counts": {
+        "supported": 8,
+        "partially_supported": 10
+      },
+      "dominant_category": "sovereignty",
+      "categories": [
+        "eea_eu_law",
+        "precedents",
+        "sovereignty"
+      ],
+      "participants": [
+        {
+          "name": "Davíð Þór Björgvinsson",
+          "role": "pistlahöfundur",
+          "party": null,
+          "role_in_article": "author",
+          "attribution_type": "asserted",
+          "claim_count": 4,
+          "verdicts": {
+            "partially_supported": 3,
+            "supported": 1
+          },
+          "stance": "neutral",
+          "slug": "david-thor-bjorgvinsson",
+          "mention_count": 10,
+          "credibility": 0.73
+        },
+        {
+          "name": "Landskjörstjórn",
+          "role": "kjörborgir",
+          "party": null,
+          "role_in_article": "speaker",
+          "attribution_type": "paraphrased",
+          "claim_count": 7,
+          "verdicts": {
+            "supported": 2,
+            "partially_supported": 5
+          },
+          "stance": "neutral",
+          "slug": "landskjorstjorn",
+          "mention_count": 9,
+          "credibility": 0.64
+        },
+        {
+          "name": "ESB",
+          "role": "alþjóðleg stofnun",
+          "party": null,
+          "role_in_article": "speaker",
+          "attribution_type": "paraphrased",
+          "claim_count": 2,
+          "verdicts": {
+            "supported": 1,
+            "partially_supported": 1
+          },
+          "stance": "neutral",
+          "slug": "esb",
+          "mention_count": 9,
+          "credibility": 0.75
+        },
+        {
+          "name": "Utanríkisráðuneytið",
+          "role": "ráðuneyti",
+          "party": null,
+          "role_in_article": "speaker",
+          "attribution_type": "paraphrased",
+          "claim_count": 1,
+          "verdicts": {
+            "partially_supported": 1
+          },
+          "stance": "neutral",
+          "slug": "utanrikisraduneytid",
+          "mention_count": 16,
+          "credibility": 0.61
+        },
+        {
+          "name": "Ríkisstjórnin",
+          "role": "stjórn",
+          "party": null,
+          "role_in_article": "speaker",
+          "attribution_type": "paraphrased",
+          "claim_count": 1,
+          "verdicts": {
+            "supported": 1
+          },
+          "stance": "neutral"
+        }
+      ]
+    },
+    {
+      "slug": "david-thor-bjorgvinsson-skrifar-thankar-i-tilefni-af-umsogn-landskjorstjornar",
+      "title": "Davíð Þór Björgvinsson skrifar: Þankar í tilefni af umsögn Landskjörstjórnar",
+      "date": "2026-04-15",
+      "source": "DV",
+      "claim_count": 14,
+      "verdict_counts": {
+        "supported": 7,
+        "partially_supported": 7
+      },
+      "dominant_category": "sovereignty",
+      "categories": [
+        "eea_eu_law",
+        "other",
+        "precedents",
+        "sovereignty"
+      ],
+      "participants": [
+        {
+          "name": "Davíð Þór Björgvinsson",
+          "role": "prófessor og lögfræðingur",
+          "party": null,
+          "role_in_article": "author",
+          "attribution_type": "asserted",
+          "claim_count": 12,
+          "verdicts": {
+            "supported": 6,
+            "partially_supported": 6
+          },
+          "stance": "neutral",
+          "slug": "david-thor-bjorgvinsson",
+          "mention_count": 10,
+          "credibility": 0.73
+        },
+        {
+          "name": "Landskjörstjórn",
+          "role": "Electoral Commission",
+          "party": null,
+          "role_in_article": "speaker",
+          "attribution_type": "paraphrased",
+          "claim_count": 5,
+          "verdicts": {
+            "partially_supported": 3,
+            "supported": 2
+          },
+          "stance": "neutral",
+          "slug": "landskjorstjorn",
+          "mention_count": 9,
+          "credibility": 0.64
+        }
+      ]
+    },
     {
       "slug": "thorunn-sveinbjarnardottir-markvisst-unnid-ad-thvi-ad-afvegaleida-umraeduna",
       "title": "Þórunn Sveinbjarnardóttir: Markvisst unnið að því að afvegaleiða umræðuna",
@@ -139,9 +497,9 @@
           },
           "stance": "pro_eu",
           "slug": "dagur-b-eggertsson",
-          "mention_count": 11,
+          "mention_count": 12,
           "credibility": 0.56,
-          "speech_count": 20
+          "speech_count": 22
         }
       ]
     },
@@ -300,8 +658,8 @@
           },
           "stance": "neutral",
           "slug": "david-thor-bjorgvinsson",
-          "mention_count": 7,
-          "credibility": 0.68
+          "mention_count": 10,
+          "credibility": 0.73
         }
       ]
     },
@@ -367,7 +725,7 @@
           },
           "stance": "anti_eu",
           "slug": "stjornarandstadan",
-          "mention_count": 7,
+          "mention_count": 8,
           "credibility": 0.5
         },
         {
@@ -414,8 +772,8 @@
           },
           "stance": "pro_eu",
           "slug": "david-thor-bjorgvinsson",
-          "mention_count": 7,
-          "credibility": 0.68
+          "mention_count": 10,
+          "credibility": 0.73
         }
       ]
     },
@@ -532,8 +890,8 @@
           },
           "stance": "neutral",
           "slug": "david-thor-bjorgvinsson",
-          "mention_count": 7,
-          "credibility": 0.68
+          "mention_count": 10,
+          "credibility": 0.73
         }
       ]
     },
@@ -572,7 +930,7 @@
           "slug": "sigmundur-ernir",
           "mention_count": 2,
           "credibility": 0.68,
-          "speech_count": 37
+          "speech_count": 38
         },
         {
           "name": "Sjálfstæðisflokkurinn",
@@ -601,7 +959,7 @@
           },
           "stance": "mixed",
           "slug": "framsoknarflokkurinn",
-          "mention_count": 9,
+          "mention_count": 10,
           "credibility": 0.5
         },
         {
@@ -668,8 +1026,8 @@
           },
           "stance": "neutral",
           "slug": "othekktur-hofundur",
-          "mention_count": 9,
-          "credibility": 0.66
+          "mention_count": 12,
+          "credibility": 0.64
         },
         {
           "name": "Bogi Nils Bogason",
@@ -957,7 +1315,7 @@
           "slug": "sigmundur-ernir",
           "mention_count": 2,
           "credibility": 0.68,
-          "speech_count": 37
+          "speech_count": 38
         }
       ]
     },
@@ -1284,8 +1642,8 @@
           },
           "stance": "pro_eu",
           "slug": "david-thor-bjorgvinsson",
-          "mention_count": 7,
-          "credibility": 0.68
+          "mention_count": 10,
+          "credibility": 0.73
         },
         {
           "name": "Þorgerður Katrín Gunnarsdóttir",
@@ -1300,9 +1658,9 @@
           },
           "stance": "pro_eu",
           "slug": "thorgerdur-katrin-gunnarsdottir",
-          "mention_count": 83,
-          "credibility": 0.61,
-          "speech_count": 197
+          "mention_count": 91,
+          "credibility": 0.62,
+          "speech_count": 201
         }
       ]
     },
@@ -1360,9 +1718,9 @@
           },
           "stance": "pro_eu",
           "slug": "thorgerdur-katrin-gunnarsdottir",
-          "mention_count": 83,
-          "credibility": 0.61,
-          "speech_count": 197
+          "mention_count": 91,
+          "credibility": 0.62,
+          "speech_count": 201
         }
       ]
     },
@@ -1425,7 +1783,7 @@
           },
           "stance": "anti_eu",
           "slug": "ossur-skarphedinsson",
-          "mention_count": 11,
+          "mention_count": 12,
           "credibility": 0.63,
           "speech_count": 350
         },
@@ -1441,7 +1799,7 @@
           },
           "stance": "anti_eu",
           "slug": "dilja-mist-einarsdottir",
-          "mention_count": 12,
+          "mention_count": 15,
           "credibility": 0.66,
           "speech_count": 54
         },
@@ -1457,9 +1815,9 @@
           },
           "stance": "anti_eu",
           "slug": "sigmundur-david-gunnlaugsson",
-          "mention_count": 17,
-          "credibility": 0.57,
-          "speech_count": 261
+          "mention_count": 19,
+          "credibility": 0.58,
+          "speech_count": 265
         },
         {
           "name": "Þorgerður Katrín Gunnarsdóttur",
@@ -1485,8 +1843,8 @@
           },
           "stance": "pro_eu",
           "slug": "gunnar-bragi-sveinsson",
-          "mention_count": 6,
-          "credibility": 0.5,
+          "mention_count": 8,
+          "credibility": 0.55,
           "speech_count": 352
         },
         {
@@ -1538,7 +1896,7 @@
           "slug": "gudrun-hafsteinsdottir",
           "mention_count": 8,
           "credibility": 0.64,
-          "speech_count": 41
+          "speech_count": 45
         },
         {
           "name": "Sigmundur Davíð Gunnlaugsson",
@@ -1553,9 +1911,9 @@
           },
           "stance": "anti_eu",
           "slug": "sigmundur-david-gunnlaugsson",
-          "mention_count": 17,
-          "credibility": 0.57,
-          "speech_count": 261
+          "mention_count": 19,
+          "credibility": 0.58,
+          "speech_count": 265
         }
       ]
     },
@@ -1657,8 +2015,8 @@
           },
           "stance": "pro_eu",
           "slug": "othekkt-hofundur",
-          "mention_count": 6,
-          "credibility": 0.52
+          "mention_count": 7,
+          "credibility": 0.54
         }
       ]
     },
@@ -1697,9 +2055,9 @@
           },
           "stance": "pro_eu",
           "slug": "dagur-b-eggertsson",
-          "mention_count": 11,
+          "mention_count": 12,
           "credibility": 0.56,
-          "speech_count": 20
+          "speech_count": 22
         }
       ]
     },
@@ -1872,8 +2230,8 @@
           },
           "stance": "neutral",
           "slug": "david-thor-bjorgvinsson",
-          "mention_count": 7,
-          "credibility": 0.68
+          "mention_count": 10,
+          "credibility": 0.73
         },
         {
           "name": "Íslands ríkisstjórn",
@@ -1924,9 +2282,9 @@
           },
           "stance": "pro_eu",
           "slug": "dagur-b-eggertsson",
-          "mention_count": 11,
+          "mention_count": 12,
           "credibility": 0.56,
-          "speech_count": 20
+          "speech_count": 22
         }
       ]
     },
@@ -1961,8 +2319,8 @@
           },
           "stance": "pro_eu",
           "slug": "david-thor-bjorgvinsson",
-          "mention_count": 7,
-          "credibility": 0.68
+          "mention_count": 10,
+          "credibility": 0.73
         },
         {
           "name": "Þorgerður Katrín Gunnarsdóttir",
@@ -1976,9 +2334,9 @@
           },
           "stance": "pro_eu",
           "slug": "thorgerdur-katrin-gunnarsdottir",
-          "mention_count": 83,
-          "credibility": 0.61,
-          "speech_count": 197
+          "mention_count": 91,
+          "credibility": 0.62,
+          "speech_count": 201
         }
       ]
     },
@@ -2010,9 +2368,9 @@
           },
           "stance": "mixed",
           "slug": "gudlaugur-thor-thordarson",
-          "mention_count": 9,
+          "mention_count": 12,
           "credibility": 0.57,
-          "speech_count": 241
+          "speech_count": 243
         }
       ]
     },
@@ -2165,26 +2523,26 @@
     }
   ],
   "outlet_scorecard": {
-    "partially_supported": 324,
-    "supported": 111,
+    "supported": 155,
+    "partially_supported": 360,
     "unsupported": 5,
     "unverifiable": 18,
     "misleading": 19
   },
   "outlet_stats": {
-    "article_count": 42,
-    "total_claims": 477,
-    "unique_speakers": 58,
+    "article_count": 48,
+    "total_claims": 557,
+    "unique_speakers": 64,
     "topic_distribution": {
-      "eea_eu_law": 21,
-      "other": 12,
-      "party_positions": 19,
-      "sovereignty": 29,
-      "precedents": 19,
-      "trade": 17,
-      "agriculture": 8,
-      "currency": 16,
-      "fisheries": 10,
+      "currency": 18,
+      "eea_eu_law": 25,
+      "fisheries": 11,
+      "sovereignty": 34,
+      "trade": 20,
+      "agriculture": 9,
+      "other": 15,
+      "party_positions": 21,
+      "precedents": 21,
       "housing": 3,
       "org_positions": 4,
       "polling": 8,
@@ -2193,7 +2551,7 @@
     },
     "date_range": {
       "first": "2024-04-23",
-      "last": "2026-04-13"
+      "last": "2026-04-29"
     }
   }
 }

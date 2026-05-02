@@ -7,12 +7,59 @@
   "party": null,
   "stance": "neutral",
   "stance_score": 0.0,
-  "credibility": null,
+  "credibility": 1.0,
   "attribution_counts": {
-    "mentioned": 23
+    "asserted": 1,
+    "mentioned": 27
   },
   "althingi_stats": null,
-  "scorecard": {},
-  "claims": [],
-  "articles": []
+  "scorecard": {
+    "supported": 1
+  },
+  "claims": [
+    {
+      "claim_text": "Alþingi samþykkti aðildarumsókn að ESB sumarið 2009.",
+      "original_quote": "samþykkt Alþingis um aðildarumsókn, sumarið 2009",
+      "verdict": "supported",
+      "explanation": "Heimildir staðfesta þetta með ótvíræðum hætti. <a href=\"https://www.althingi.is/altext/137/s/0249.html\" title=\"Alþingi — Nefndarálit utanríkismálanefndar (þingskjal 249, 137. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-006</a> segir að Alþingi hafi samþykkt þingsályktun 1/137 (þingskjal 283/137) þann 16. júlí 2009 með 33 atkvæðum gegn 28 og falið ríkisstjórninni að leggja fram aðildarumsókn. <a href=\"https://neighbourhood-enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland Accession Progress Reports; Icelandic Ministry of Foreign Affairs\" target=\"_blank\" rel=\"noopener\">SOV-DATA-023</a> og EEA-DATA-009 staðfesta báðar að umsóknin var lögð fram 16. eða 17. júlí 2009.",
+      "missing_context": "<a href=\"https://www.althingi.is/altext/137/s/0249.html\" title=\"Alþingi — Nefndarálit utanríkismálanefndar (þingskjal 249, 137. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-006</a> áréttar að atkvæðin voru naum (33–28) og að nefndarálit utanríkismálanefndar bar með sér að «innan flestra stjórnmálaflokka eru skiptar skoðanir» á aðild. <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/167/the-enlargement-of-the-union\" title=\"European Parliament — Accession Referendums Database; Alþingi Parliamentary Records\" target=\"_blank\" rel=\"noopener\">PREC-DATA-024</a> minnir á að sú nauma niðurstaða (54%) er óvenjulega lág í samanburði við aðrar aðildarumsóknir Evrópuríkja.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-PARL-006",
+          "source_name": "Alþingi — Nefndarálit utanríkismálanefndar (þingskjal 249, 137. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/137/s/0249.html"
+        },
+        {
+          "id": "SOV-DATA-023",
+          "source_name": "European Commission — Iceland Accession Progress Reports; Icelandic Ministry of Foreign Affairs",
+          "source_url": "https://neighbourhood-enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "EEA-DATA-009",
+          "source_name": "European Commission — Iceland: Accession negotiations status; Althingi records",
+          "source_url": null
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "sovereignty",
+      "attribution": "asserted",
+      "article_slug": "framhald-vidraedna-eda-ny-umsokn",
+      "article_title": "Framhald viðræðna eða ný umsókn",
+      "article_source": "Blog.is",
+      "article_date": "2026-04-28"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "framhald-vidraedna-eda-ny-umsokn",
+      "title": "Framhald viðræðna eða ný umsókn",
+      "source": "Blog.is",
+      "date": "2026-04-28",
+      "claim_count": 1,
+      "attribution_types": [
+        "asserted",
+        "mentioned"
+      ]
+    }
+  ]
 }

@@ -7,10 +7,95 @@
   "party": null,
   "stance": "neutral",
   "stance_score": 0.0,
-  "credibility": null,
-  "attribution_counts": {},
+  "credibility": 0.75,
+  "attribution_counts": {
+    "quoted": 1,
+    "paraphrased": 1
+  },
   "althingi_stats": null,
-  "scorecard": {},
-  "claims": [],
-  "articles": []
+  "scorecard": {
+    "partially_supported": 1,
+    "supported": 1
+  },
+  "claims": [
+    {
+      "claim_text": "Formaður Framsóknarflokksins hefur tekið afgerandi afstöðu gegn Evrópusambandinu.",
+      "original_quote": "Formaður þinn hefur tekið mjög afgerandi afstöðu gegn Evrópusambandinu.",
+      "verdict": "partially_supported",
+      "explanation": "POL-DATA-007 staðfestir að Sigurður Ingi Jóhannsson, formaður Framsóknarflokksins, hafi haldið hinni opinberu andstöðu flokksins við ESB-aðild en jafnframt stutt þjóðaratkvæðagreiðsluna sem lýðræðislega æfingu. <a href=\"https://www.althingi.is/thingmenn/thingflokkar/thingflokkar/\" title=\"Althingi — Party platforms and election results\" target=\"_blank\" rel=\"noopener\">POL-DATA-002</a> og <a href=\"https://xd.is/2026/03/09/thjodin-a-betra-skilid/\" title=\"Sjálfstæðisflokkurinn — party website (xd.is); Miðflokkurinn — public statements; Gallup Þjóðarpúls party breakdown March 2026\" target=\"_blank\" rel=\"noopener\">POL-DATA-020</a> staðfesta að flokkurinn er á móti ESB-aðild. Hugtakið «mjög afgerandi afstaða» er þó sterkara en heimildir sýna — afstaðan er hefðbundin andstaða flokksins frekar en sérstaklega afgerandi yfirlýsingar formannsins. <a href=\"https://xd.is/2026/03/09/thjodin-a-betra-skilid/\" title=\"Sjálfstæðisflokkurinn — party website (xd.is); Miðflokkurinn — public statements; Gallup Þjóðarpúls party breakdown March 2026\" target=\"_blank\" rel=\"noopener\">POL-DATA-020</a> nefnir einnig að flokkurinn sé «innri klofinn».",
+      "missing_context": "Heimildirnar lýsa flokknum sem innri klofnum og benda á að einstakir þingmenn taki pragmatískari afstöðu. Formaðurinn sjálfur hefur stutt að þjóðin fái að kjósa þótt hann sé persónulega á móti aðild, sem dregur úr hve «afgerandi» afstaða hans er.",
+      "supporting_evidence": [
+        {
+          "id": "POL-DATA-007",
+          "source_name": "Framsóknarflokkur — Policy platform 2024; Althingi debate records",
+          "source_url": null
+        },
+        {
+          "id": "POL-DATA-002",
+          "source_name": "Althingi — Party platforms and election results",
+          "source_url": "https://www.althingi.is/thingmenn/thingflokkar/thingflokkar/"
+        },
+        {
+          "id": "POL-DATA-020",
+          "source_name": "Sjálfstæðisflokkurinn — party website (xd.is); Miðflokkurinn — public statements; Gallup Þjóðarpúls party breakdown March 2026",
+          "source_url": "https://xd.is/2026/03/09/thjodin-a-betra-skilid/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "party_positions",
+      "attribution": "quoted",
+      "article_slug": "halla-hrund-logadottir-styd-thjodaratkvaedagreidsluna-vil-skyr-raud-strik-i-sandinn",
+      "article_title": "Halla Hrund Logadóttir: Styð þjóðaratkvæðagreiðsluna – vil skýr rauð strik í sandinn",
+      "article_source": "DV",
+      "article_date": "2026-04-28"
+    },
+    {
+      "claim_text": "Ísland er ekki hluti af tollabandalagi ESB.",
+      "original_quote": "við erum heldur ekki hluti af tollabandalaginu sem felst í aðild að ESB",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.consilium.europa.eu/en/policies/eu-tariffs-explained/\" title=\"EU Council / European Commission Access2Markets\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-040</a> staðfestir beint að EES-aðild felur ekki í sér aðild að tollabandalagi ESB — Ísland setur eigin tolla á þriðju ríki og semur sjálft fríverslunarsamninga. TRADE-DATA-021 nefnir Ísland-Kína fríverslunarsamninginn frá 2013 sem dæmi um þennan sjálfstæða samningarétt, sem væri ómögulegur innan tollabandalags ESB.",
+      "missing_context": "ESB-aðild myndi færa Ísland inn í tollabandalagið með sameiginlegan ytri toll og afnema getu til sjálfstæðra viðskiptasamninga. Á móti kæmi aðild að EES-fríverslunarsamninganeti við 70+ ríki.",
+      "supporting_evidence": [
+        {
+          "id": "TRADE-DATA-040",
+          "source_name": "EU Council / European Commission Access2Markets",
+          "source_url": "https://www.consilium.europa.eu/en/policies/eu-tariffs-explained/"
+        },
+        {
+          "id": "TRADE-DATA-021",
+          "source_name": "WTO — Trade Policy Review: Iceland 2024; Iceland-China FTA text",
+          "source_url": null
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "trade",
+      "attribution": "paraphrased",
+      "article_slug": "halla-hrund-logadottir-evropusambandsadild-eykur-likur-a-vaxtalaekkunum",
+      "article_title": "Halla Hrund Logadóttir: Evrópusambandsaðild eykur líkur á vaxtalækkunum",
+      "article_source": "DV",
+      "article_date": "2026-04-29"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "halla-hrund-logadottir-styd-thjodaratkvaedagreidsluna-vil-skyr-raud-strik-i-sandinn",
+      "title": "Halla Hrund Logadóttir: Styð þjóðaratkvæðagreiðsluna – vil skýr rauð strik í sandinn",
+      "source": "DV",
+      "date": "2026-04-28",
+      "claim_count": 1,
+      "attribution_types": [
+        "quoted"
+      ]
+    },
+    {
+      "slug": "halla-hrund-logadottir-evropusambandsadild-eykur-likur-a-vaxtalaekkunum",
+      "title": "Halla Hrund Logadóttir: Evrópusambandsaðild eykur líkur á vaxtalækkunum",
+      "source": "DV",
+      "date": "2026-04-29",
+      "claim_count": 1,
+      "attribution_types": [
+        "paraphrased"
+      ]
+    }
+  ]
 }
