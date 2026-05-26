@@ -2,17 +2,69 @@
   "slug": "danir",
   "name": "Danir",
   "type": "institution",
-  "description": "Stofnun",
+  "description": "Stofnun — hlutlaus um ESB-aðild.",
   "role": "ESB aðildarríki",
   "party": null,
-  "stance": "insufficient_data",
+  "stance": "neutral",
   "stance_score": 0.0,
-  "credibility": null,
+  "credibility": 0.5,
   "attribution_counts": {
-    "mentioned": 5
+    "paraphrased": 1,
+    "mentioned": 8
   },
   "althingi_stats": null,
-  "scorecard": {},
-  "claims": [],
-  "articles": []
+  "scorecard": {
+    "partially_supported": 1
+  },
+  "claims": [
+    {
+      "claim_text": "Danir fengu varanlega undanþágu frá því að taka upp evru vegna þess að þjóðin vildi ekki sleppa hendinni af dönsku krónunni.",
+      "original_quote": "fengu varanlega undanþágu frá því að taka upp evru þar sem þjóðin vildi ekki sleppa hendinni af dönsku krónunni.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.thedanishparliament.dk/eu-information-centre/the-danish-opt-outs-from-eu-cooperation\" title=\"Edinburgh Agreement (1992); Danish Ministry of Foreign Affairs — Denmark's EU opt-outs\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-010</a> staðfestir að Danir hafi tryggt sér fjórar undanþágur úr Maastricht-sáttmálanum 1992, þar á meðal frá evrunni, eftir að upphaflega þjóðaratkvæðagreiðslan hafnaði sáttmálanum. <a href=\"https://www.visindavefur.is/svar.php?id=87971\" title=\"Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (March 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-011</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> staðfesta að evruundanþága Dana sé enn í gildi árið 2026. Hins vegar eru heimildirnar varkárari um ástæðuna — pólitískt samhengi (höfnun Maastricht-sáttmálans 1992) er nefnt fremur en bein vilji þjóðarinnar til að halda krónunni.",
+      "missing_context": "Hugtakið «varanleg undanþága» er rétt — Edinborgar-samkomulagið 1992 veitti Dönum opt-out sem enn er í gildi (<a href=\"https://eur-lex.europa.eu/collection/eu-law/treaties.html\" title=\"European Parliament — EU Treaties and Protocols; Accession Treaty texts\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-023</a>). Ástæðan í heimildum er fremur tengd pólitísku samhengi 1992 en sérstökum vilja til að halda krónunni. <a href=\"https://www.thedanishparliament.dk/eu-information-centre/the-danish-opt-outs-from-eu-cooperation\" title=\"Edinburgh Agreement (1992); Danish Ministry of Foreign Affairs — Denmark's EU opt-outs\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-010</a> bendir á að ESB hafi orðið ófúsari að veita nýjum aðildarríkjum slíkar undanþágur eftir 2004.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-LEGAL-010",
+          "source_name": "Edinburgh Agreement (1992); Danish Ministry of Foreign Affairs — Denmark's EU opt-outs",
+          "source_url": "https://www.thedanishparliament.dk/eu-information-centre/the-danish-opt-outs-from-eu-cooperation"
+        },
+        {
+          "id": "CURR-DATA-011",
+          "source_name": "Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (March 2026)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=87971"
+        },
+        {
+          "id": "EEA-LEGAL-012",
+          "source_name": "European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        },
+        {
+          "id": "EEA-LEGAL-023",
+          "source_name": "European Parliament — EU Treaties and Protocols; Accession Treaty texts",
+          "source_url": "https://eur-lex.europa.eu/collection/eu-law/treaties.html"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "currency",
+      "attribution": "paraphrased",
+      "article_slug": "innganga-i-erm-ii",
+      "article_title": "Innganga í ERM II",
+      "article_source": "Heimildin",
+      "article_date": "2026-05-05"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "innganga-i-erm-ii",
+      "title": "Innganga í ERM II",
+      "source": "Heimildin",
+      "date": "2026-05-05",
+      "claim_count": 1,
+      "attribution_types": [
+        "mentioned",
+        "paraphrased"
+      ]
+    }
+  ]
 }

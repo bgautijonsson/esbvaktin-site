@@ -6,19 +6,19 @@
   "role": "alþjóðastofnun",
   "party": null,
   "stance": "neutral",
-  "stance_score": 0.05,
-  "credibility": 0.68,
+  "stance_score": 0.06,
+  "credibility": 0.67,
   "attribution_counts": {
-    "asserted": 12,
+    "asserted": 13,
     "quoted": 14,
-    "paraphrased": 12,
-    "mentioned": 217
+    "paraphrased": 14,
+    "mentioned": 256
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 19,
-    "supported": 11,
+    "partially_supported": 22,
     "misleading": 2,
+    "supported": 10,
     "unverifiable": 1
   },
   "claims": [
@@ -56,31 +56,10 @@
     {
       "claim_text": "Samkvæmt upplýsingabæklingi ESB getur hugtakið „samningaviðræður“ verið villandi í samhengi aðildarviðræðna.",
       "original_quote": "„í því tilliti geti hugtakið samningaviðræður verið villandi“",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> staðfesta að opinbert efni Framkvæmdastjórnar ESB lýsir aðildarviðræðum sem viðræðum um «skilyrði og tímasetningu» innleiðingar regluverksins, ekki um hvort taka eigi við reglunum. Stækkunarfulltrúi ESB, Marta Kos, sagði beinlínis «við köllum þetta ekki samningaviðræður» samkvæmt <a href=\"https://www.stjornmalin.is/?p=49609\" title=\"Stjórnmálin.is (secondary) / Marta Kos Facebook video + NRK interview\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-016</a>. Þetta styður fullyrðinguna um að hugtakið «samningaviðræður» geti verið villandi.",
-      "missing_context": "Þrátt fyrir að formlega sé regluverkið ekki til samningakaups, geta aðlögunartímabil verið efnahagslega og pólitískt mikilvæg — til dæmis 12 ára frestun Póllands á fasteignakaupum erlendra ríkisborgara. Munurinn á «að semja um reglurnar» og «að semja um hvenær þær taka gildi» er raunverulegur en getur verið ofdreginn.",
-      "supporting_evidence": [
-        {
-          "id": "EEA-LEGAL-017",
-          "source_name": "European Commission — 'EU Accession Process: Steps towards joining' factsheet",
-          "source_url": "https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf"
-        },
-        {
-          "id": "EEA-LEGAL-021",
-          "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
-          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
-        },
-        {
-          "id": "POLITICAL-DATA-016",
-          "source_name": "Stjórnmálin.is (secondary) / Marta Kos Facebook video + NRK interview",
-          "source_url": "https://www.stjornmalin.is/?p=49609"
-        },
-        {
-          "id": "EEA-LEGAL-016",
-          "source_name": "Grabbe, H. (2006) 'The EU's Transformative Power: Europeanization Through Conditionality in Central and Eastern Europe', Palgrave Macmillan",
-          "source_url": "https://link.springer.com/book/10.1057/9780230510302"
-        }
-      ],
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin er í samræmi við opinber gögn Framkvæmdastjórnarinnar. <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> sýna báðar að aðildarviðræður snúast ekki um hvort reglurnar verði teknar upp heldur eingöngu um hvenær og hvernig. Orðið „samningaviðræður“ gæti því gefið ranga mynd af ferlinu, þar sem umsóknarríkið semur í raun ekki um efni reglnanna. <a href=\"https://fel.hi.is/is/rannsoknir-spurningalistakannanir/simakannanir\" title=\"Félagsvísindastofnun — Methodology notes on EU polling; comparison of Gallup, MMR, and Maskína polls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-010</a> styður jafnframt þann skilning að orðaval skipti verulegu máli í ESB-umræðunni á Íslandi.",
+      "missing_context": "Heimildir benda þó til þess að svigrúm sé raunverulegt innan rammans — aðlögunartímabil geta verið pólitískt og efnahagslega mikilvæg (t.d. 7 ára frestun á frjálsri för launafólks eftir stækkun 2004). Munurinn á „semja um reglur“ og „semja um innleiðingarhraða“ er raunverulegur en getur verið ofmetinn.",
+      "supporting_evidence": [],
       "contradicting_evidence": [],
       "category": "eea_eu_law",
       "attribution": "paraphrased",
@@ -1094,6 +1073,58 @@
       "article_title": "Hvenær slítur maður viðræðum og hvenær slítur maður þeim ekki?",
       "article_source": "Vísir",
       "article_date": "2026-04-28"
+    },
+    {
+      "claim_text": "ESB áformaði að rjúfa samstarf á vettvangi EES og leggja verndartoll á kísilmálma frá Íslandi, en hækkanir þessar ganga í bága við EES-samninginn.",
+      "original_quote": "hún samþykkti að gæta leyndar um þá fyrirætlun ESB að rjúfa samstarf á vettvangi EES og leggja verndartoll á kísilmálma frá Íslandi, en hækkanir þessar fara í bága við EES samninginn og eru til þess fallnar að skaða íslenskt efnahagslíf og atvinnuhagsmuni hundruða, ef ekki þúsunda, Íslendinga.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://eurometal.net/eu-imposes-safeguards-on-silicon-and-manganese-based-ferroalloy-imports/\" title=\"European Commission — Definitive Safeguard Regulation on Ferroalloys (November 2025)\" target=\"_blank\" rel=\"noopener\">TRADE-LEGAL-001</a> staðfestir að ESB lagði á endanlegar verndaraðgerðir á járnblöndur frá Íslandi í nóvember 2025 með kvóta upp á 53.060 tonn. <a href=\"https://icelandmonitor.mbl.is/news/news/2025/11/18/iceland_and_norway_not_granted_exemption/\" title=\"Iceland Monitor — Iceland and Norway not granted exemption (November 2025)\" target=\"_blank\" rel=\"noopener\">TRADE-LEGAL-002</a> staðfestir að Ísland og Noregur héldu því fram að þeim ætti að undanþiggjast samkvæmt EES-samningnum sem tryggir frjálst flæði vöru milli EES-ríkja. Hins vegar hafnaði framkvæmdastjórn ESB þessum rökum og flokkaði aðgerðina sem WTO-samrýmanlega viðskiptavarnaraðgerð utan við gildissvið EES innri markaðsreglna. Fullyrðingin að aðgerðirnar gangi «í bága við EES-samninginn» er því deilumál, ekki staðreynd — Ísland og Noregur halda þessu fram, en ESB er ósammála.",
+      "missing_context": "Spurningin hvort EES-samningurinn nái yfir verndaraðgerðir ESB gegn þriðju ríkjum er óleyst lagaleg deila — EFTA-dómstóllinn hefur ekki úrskurðað um málið. Aðgerðin er WTO-samrýmanleg en áhrif hennar á EES-samstarf eru í deilumeðferð gegnum EES-samningsnefnd og hugsanlega EFTA-dómstól samkvæmt <a href=\"https://icelandmonitor.mbl.is/news/news/2025/11/18/iceland_and_norway_not_granted_exemption/\" title=\"Iceland Monitor — Iceland and Norway not granted exemption (November 2025)\" target=\"_blank\" rel=\"noopener\">TRADE-LEGAL-002</a>. Fullyrðingin um «rof á samstarfi» á vettvangi EES er sterkara orðalag en heimildir styðja.",
+      "supporting_evidence": [
+        {
+          "id": "TRADE-LEGAL-001",
+          "source_name": "European Commission — Definitive Safeguard Regulation on Ferroalloys (November 2025)",
+          "source_url": "https://eurometal.net/eu-imposes-safeguards-on-silicon-and-manganese-based-ferroalloy-imports/"
+        },
+        {
+          "id": "TRADE-LEGAL-002",
+          "source_name": "Iceland Monitor — Iceland and Norway not granted exemption (November 2025)",
+          "source_url": "https://icelandmonitor.mbl.is/news/news/2025/11/18/iceland_and_norway_not_granted_exemption/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "trade",
+      "attribution": "paraphrased",
+      "article_slug": "kaera-a-hendur-utanrikisradherra-vegna-meintra-landrada-stada-malsins",
+      "article_title": "Kæra á hendur utanríkisráðherra vegna meintra landráða – staða málsins",
+      "article_source": "Blog.is",
+      "article_date": "2026-05-15"
+    },
+    {
+      "claim_text": "Elkem framleiðir kísilmálm á Íslandi og ESB hefur hafnað því að falla frá hækkun verndartolla á þessar framleiðsluvörur.",
+      "original_quote": "sú ákvörðun ESB að falla ekki frá hækkun verndartolla á framleiðsluvörur Elkem á Íslandi",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://eurometal.net/eu-imposes-safeguards-on-silicon-and-manganese-based-ferroalloy-imports/\" title=\"Eurostat COMEXT / EU Commission Safeguard Investigation (2024-2025)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-032</a> staðfestir að Elkem Iceland er einn af tveimur helstu kísilframleiðendum landsins (ásamt PCC BakkiSilicon) og að útflutningur kísils og járnblendis er um 40 milljarðar króna á ári. <a href=\"https://eurometal.net/eu-imposes-safeguards-on-silicon-and-manganese-based-ferroalloy-imports/\" title=\"European Commission — Definitive Safeguard Regulation on Ferroalloys (November 2025)\" target=\"_blank\" rel=\"noopener\">TRADE-LEGAL-001</a> staðfestir að ESB innleiddi varanlegar verndaraðgerðir í nóvember 2025 sem leggja kvóta og tolla á innflutning kísilblendis frá Íslandi þrátt fyrir kröfu Íslands og Noregs um EES-undanþágu.",
+      "missing_context": "Heimildir staðfesta að ESB hafnaði EES-undanþágu fyrir Ísland og Noreg, en gefa ekki nákvæmar upplýsingar um hvort sérstakar viðræður hafi verið hafnar eftir nóvember 2025. <a href=\"https://eurometal.net/eu-imposes-safeguards-on-silicon-and-manganese-based-ferroalloy-imports/\" title=\"European Commission — Definitive Safeguard Regulation on Ferroalloys (November 2025)\" target=\"_blank\" rel=\"noopener\">TRADE-LEGAL-001</a> nefnir þó þríhliða samráð milli ESB, Noregs og Íslands á þriggja mánaða fresti.",
+      "supporting_evidence": [
+        {
+          "id": "TRADE-LEGAL-001",
+          "source_name": "European Commission — Definitive Safeguard Regulation on Ferroalloys (November 2025)",
+          "source_url": "https://eurometal.net/eu-imposes-safeguards-on-silicon-and-manganese-based-ferroalloy-imports/"
+        },
+        {
+          "id": "TRADE-DATA-032",
+          "source_name": "Eurostat COMEXT / EU Commission Safeguard Investigation (2024-2025)",
+          "source_url": "https://eurometal.net/eu-imposes-safeguards-on-silicon-and-manganese-based-ferroalloy-imports/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "trade",
+      "attribution": "asserted",
+      "article_slug": "bokaspjall-frelsid-eftir-mill-med-hannesi-holmsteini",
+      "article_title": "Bókaspjall: Frelsið eftir Mill með Hannesi Hólmsteini",
+      "article_source": "Spursmál (mbl.is)",
+      "article_date": "2026-05-14"
     }
   ],
   "articles": [
@@ -1241,6 +1272,28 @@
       "title": "Hvenær slítur maður viðræðum og hvenær slítur maður þeim ekki?",
       "source": "Vísir",
       "date": "2026-04-28",
+      "claim_count": 1,
+      "attribution_types": [
+        "asserted",
+        "mentioned"
+      ]
+    },
+    {
+      "slug": "kaera-a-hendur-utanrikisradherra-vegna-meintra-landrada-stada-malsins",
+      "title": "Kæra á hendur utanríkisráðherra vegna meintra landráða – staða málsins",
+      "source": "Blog.is",
+      "date": "2026-05-15",
+      "claim_count": 1,
+      "attribution_types": [
+        "mentioned",
+        "paraphrased"
+      ]
+    },
+    {
+      "slug": "bokaspjall-frelsid-eftir-mill-med-hannesi-holmsteini",
+      "title": "Bókaspjall: Frelsið eftir Mill með Hannesi Hólmsteini",
+      "source": "Spursmál (mbl.is)",
+      "date": "2026-05-14",
       "claim_count": 1,
       "attribution_types": [
         "asserted",

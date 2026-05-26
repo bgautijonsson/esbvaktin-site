@@ -10,9 +10,9 @@
   "summary": "Greindar 10 fullyrðingar. Niðurstöður: 4 stutt að hluta, 3 ekki hægt að sannreyna, 3 stutt af heimildum. Sjónarhorn: hallar á ESB-jákvæða hlið. Heildstæðni: 35%.",
   "capsule": "Stýrivextir á Íslandi hafa í áratugi verið 3–5 prósentustigum hærri en á evrusvæðinu — það staðfesta gögn Seðlabankans og samanburður við evruríki á sama tímabili. Áhugavert er að sameiginleg sjávarútvegsstefna ESB (CFP) gerir greinarmun á innri kvótahlutdeild, sem ríki ráðstafa sjálfstætt, og heildaraflamarki (TAC) sem ráðherraráðið ákveður sameiginlega — þannig er «yfirráð» yfir fiskveiðilögsögunni flóknara hugtak en við fyrstu sýn. Fordæmið frá Írlandi, þar sem kvótahlutdeild minnkaði þegar verndarákvæði var blokkerað á ESB-vettvangi, sýnir að samningsstaðan getur skipt sköpum.",
   "verdict_counts": {
-    "partially_supported": 4,
-    "supported": 2,
-    "unverifiable": 1
+    "partially_supported": 5,
+    "supported": 1,
+    "unsupported": 1
   },
   "epistemic_counts": {
     "prediction": 4
@@ -57,7 +57,7 @@
         }
       ],
       "missing_context": "Eldri áætlanir (2002–2010) á verðlagi síns tíma sýna 7,2–14,9 milljarða ISK, en nýrri áætlanir á evrum gefa til kynna hærri brúttótölur. Nettóframlag fer algjörlega eftir samningaviðræðum — hvaða sjóðum Ísland fengi aðgang að, sérstaklega í landbúnaði og sjávarútvegi. Gengi krónu gagnvart evru hefur mikil áhrif á ISK-jafngildi.",
-      "confidence": 0.561,
+      "confidence": 0.53295,
       "speakers": [
         {
           "name": "Þorgerður Katrín Gunnarsdóttir",
@@ -112,7 +112,7 @@
         }
       ],
       "missing_context": "Heimildir sýna bein fjárframlög Íslands á bilinu 10–13 milljónir evra á ári (EES-styrkir), ekki 8 milljarða króna. Ef reiknaður er inn kostnaður við innleiðingu regluverks og annar óbeinn kostnaður gæti talan hækkað, en slíkur útreikningur er ekki í heimildum. Mismunur á milli gengis 2010 og 2026 gæti skýrt hluta af bilinu en ekki allt.",
-      "confidence": 0.5633766,
+      "confidence": 0.53520777,
       "speakers": [
         {
           "name": "Þorgerður Katrín Gunnarsdóttir",
@@ -135,8 +135,8 @@
         "confidence": 0.9,
         "epistemic_type": "prediction"
       },
-      "verdict": "supported",
-      "explanation": "Fullyrðingin er rökrétt og studd af uppbyggingu EES-samningsins. <a href=\"https://eeagrants.org/en/fmo/about-us\" title=\"EEA Grants Financial Mechanism Committee; European Commission budget data\" target=\"_blank\" rel=\"noopener\">EEA-DATA-005</a> og <a href=\"https://eeagrants.org/resources/financial-guidance-financial-mechanism-2021-2028\" title=\"EEA Grants — Financial Mechanism 2021–2028\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-009</a> útskýra EES/EFTA-styrktarkerfið, sem tekur eingöngu til EFTA-ríkja innan EES — Íslands, Noregs og Liechtenstein. Við ESB-aðild myndi Ísland hætta í EFTA og þar með falla út úr EES/EFTA-styrktarkerfinu. <a href=\"https://www.efta.int/about-efta/efta-secretariat/efta-budget\" title=\"EFTA Secretariat — EFTA budget; various academic estimates\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-005</a> og <a href=\"https://eeagrants.org/\" title=\"EEA Grants — Financial Mechanism Committee; European Commission — EU budget figures\" target=\"_blank\" rel=\"noopener\">EEA-DATA-008</a> bera saman EES-greiðslur og ESB-fjárlagaframlag sem aðskilin kerfi. Ísland myndi í staðinn greiða ESB-fjárlagaframlag sem áætlað er mun hærra.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://eeagrants.org/en/fmo/about-us\" title=\"EEA Grants Financial Mechanism Committee; European Commission budget data\" target=\"_blank\" rel=\"noopener\">EEA-DATA-005</a> staðfestir að núverandi EEA Grants-framlag Íslands sé um 10–12 milljónir evra á ári en að ESB-framlag væri áætlað 150–250 milljónir evra á ári brúttó. Það rökstyður að EES-greiðslur falli niður við aðild og leysist af hólmi með framlagi í fjárlög ESB — engin heimild segir þó berum orðum að EES-framlögin «falli niður». Rökrétt afleiðing breytinga á stöðu Íslands úr EFTA/EES í fulla aðild styður fullyrðinguna óbeint.",
       "supporting_evidence": [
         {
           "id": "EEA-DATA-005",
@@ -144,24 +144,14 @@
           "source_url": "https://eeagrants.org/en/fmo/about-us"
         },
         {
-          "id": "TRADE-DATA-009",
-          "source_name": "EEA Grants — Financial Mechanism 2021–2028",
-          "source_url": "https://eeagrants.org/resources/financial-guidance-financial-mechanism-2021-2028"
-        },
-        {
-          "id": "TRADE-COMP-005",
-          "source_name": "EFTA Secretariat — EFTA budget; various academic estimates",
-          "source_url": "https://www.efta.int/about-efta/efta-secretariat/efta-budget"
-        },
-        {
-          "id": "EEA-DATA-008",
-          "source_name": "EEA Grants — Financial Mechanism Committee; European Commission — EU budget figures",
-          "source_url": "https://eeagrants.org/"
+          "id": "EEA-LEGAL-022",
+          "source_name": "EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'",
+          "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "ESB-fjárlagaframlag Íslands er áætlað á bilinu 150–250 milljónir evra á ári brúttó, mun hærra en núverandi EES-greiðslur. Nettóstaða Íslands fer eftir samningum um aðgang að byggðasjóðum, landbúnaðarstefnunni og öðrum sjóðum.",
-      "confidence": 0.7124999999999999,
+      "missing_context": "Engin heimild í lotunni staðfestir beint að EES-greiðslur Íslands myndu sjálfkrafa falla niður — niðurstaðan er rökrétt afleiðing af því að EES-samningurinn gildi ekki um ESB-aðildarríki. <a href=\"https://eeagrants.org/en/fmo/about-us\" title=\"EEA Grants Financial Mechanism Committee; European Commission budget data\" target=\"_blank\" rel=\"noopener\">EEA-DATA-005</a> sýnir þó að framlag í ESB-fjárlögin yrði margfalt hærra (allt að 15-falt) en núverandi EES Grants-framlag. Nettóstaða Íslands eftir aðild er óviss og fer eftir endurgreiðslum úr CAP, Byggðasjóðum og öðrum áætlunum.",
+      "confidence": 0.7,
       "speakers": [
         {
           "name": "Þorgerður Katrín Gunnarsdóttir",
@@ -185,12 +175,12 @@
         "epistemic_type": "prediction"
       },
       "verdict": "partially_supported",
-      "explanation": "Stærðfræðin gengur upp ef heimildaskuldir eru 3.200 milljarðar króna — 1% af þeirri upphæð er einmitt 32 milljarðar. Útreikningurinn er hins vegar gróflega einfaldaður. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a> og <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> benda á að stór hluti íslenskra húsnæðislána sé verðtryggður (raunvextir 3,5–5,5%) og bregðist ekki beint við breytingum á stýrivöxtum. <a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> staðfestir vaxtamun milli Íslands og evrusvæðisins, en bendir jafnframt á að lægri vextir myndu ekki sjálfkrafa fylgja af evruaðild ef fjármálastöðugleiki eða ríkisfjármál vekja áhyggjur. Fullyrðingin er tæknilega rétt í einfaldri greiðslubyrðarreikningi en vantar mikilvægar forsendur.",
+      "explanation": "Stærðfræðin gengur upp ef heimildaskuldir eru 3.200 milljarðar króna — 1% af þeirri upphæð er einmitt 32 milljarðar. Útreikningurinn er hins vegar gróflega einfaldaður. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a> og <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> benda á að stór hluti íslenskra húsnæðislána sé verðtryggður (raunvextir 3,5–5,5%) og bregðist ekki beint við breytingum á stýrivöxtum. <a href=\"https://sedlabanki.is/peningastefna/peningastefnunefnd/\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> staðfestir vaxtamun milli Íslands og evrusvæðisins, en bendir jafnframt á að lægri vextir myndu ekki sjálfkrafa fylgja af evruaðild ef fjármálastöðugleiki eða ríkisfjármál vekja áhyggjur. Fullyrðingin er tæknilega rétt í einfaldri greiðslubyrðarreikningi en vantar mikilvægar forsendur.",
       "supporting_evidence": [
         {
           "id": "CURRENCY-DATA-015",
           "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
-          "source_url": "https://www.sedlabanki.is/peningastefna/vaxtaakvardir/"
+          "source_url": "https://sedlabanki.is/peningastefna/peningastefnunefnd/"
         },
         {
           "id": "CURR-DATA-007",
@@ -235,12 +225,12 @@
         "epistemic_type": "factual"
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> staðfestir að meðalstýrivextir Seðlabankans voru um 6,5% á árunum 2000–2025, samanborið við um 1,5% hjá Seðlabanka Evrópu — munur upp á 5 prósentustig að meðaltali. <a href=\"https://www.sedlabanki.is/\" title=\"Central Bank of Iceland; ECB; Eurostat HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-007</a> sýnir að í mars 2026 stóð munurinn í 5,25 prósentustigum (7,25% á Íslandi, 2,00% á evrusvæðinu). Bilið 3–5 prósentustig er þannig varfærið mat sem endurspeglar vel raunstöðuna — munurinn hefur stundum verið meiri en 5 stig.",
+      "explanation": "<a href=\"https://sedlabanki.is/peningastefna/peningastefnunefnd/\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> staðfestir að meðalstýrivextir Seðlabankans voru um 6,5% á árunum 2000–2025, samanborið við um 1,5% hjá Seðlabanka Evrópu — munur upp á 5 prósentustig að meðaltali. <a href=\"https://www.sedlabanki.is/\" title=\"Central Bank of Iceland; ECB; Eurostat HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-007</a> sýnir að í mars 2026 stóð munurinn í 5,25 prósentustigum (7,25% á Íslandi, 2,00% á evrusvæðinu). Bilið 3–5 prósentustig er þannig varfærið mat sem endurspeglar vel raunstöðuna — munurinn hefur stundum verið meiri en 5 stig.",
       "supporting_evidence": [
         {
           "id": "CURRENCY-DATA-015",
           "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
-          "source_url": "https://www.sedlabanki.is/peningastefna/vaxtaakvardir/"
+          "source_url": "https://sedlabanki.is/peningastefna/peningastefnunefnd/"
         },
         {
           "id": "CURR-DATA-007",
@@ -278,12 +268,28 @@
         "confidence": 0.9,
         "epistemic_type": "prediction"
       },
-      "verdict": "unverifiable",
-      "explanation": "Talan 90–150 milljarðar króna í mögulegan sparnað af evrunotkun er ekki staðfest í neinum heimildum í staðreyndagrunni. Heimildir fjalla um aðildargjöld (<a href=\"https://www.efta.int/about-efta/efta-secretariat/efta-budget\" title=\"EFTA Secretariat — EFTA budget; various academic estimates\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-005</a>: nettóframlag 100–180 milljónir evra á ári; <a href=\"https://eeagrants.org/en/fmo/about-us\" title=\"EEA Grants Financial Mechanism Committee; European Commission budget data\" target=\"_blank\" rel=\"noopener\">EEA-DATA-005</a>, <a href=\"https://eeagrants.org/\" title=\"EEA Grants — Financial Mechanism Committee; European Commission — EU budget figures\" target=\"_blank\" rel=\"noopener\">EEA-DATA-008</a>: brúttóframlag 200–250 milljónir evra) og almenn áhrif aðildar (<a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a>: 2–4% hagvöxtur á tíu árum), en engin heimild reiknar út heildarsparnað af evrunotkun í íslenskum krónum á bilinu sem fullyrðingin nefnir. Ekki er hægt að sannreyna töluna eða forsendur hennar.",
+      "verdict": "unsupported",
+      "explanation": "Heimildir styðja ekki sparnaðarmat á bilinu 90–150 milljarðar króna. <a href=\"https://www.cb.is/statistics/international-reserves/\" title=\"Seðlabanki Íslands — Alþjóðaforðinn; Fjármálastöðugleikaskýrsla\" target=\"_blank\" rel=\"noopener\">CURR-DATA-006</a> nefnir áætlaðan árlegan kostnað gjaldeyrisforðans á bilinu 30–50 milljarðar króna (um 180–300 milljónir evra) — sem er langtum lægri tala. Aðrar heimildir um framlag til ESB-fjárlaga (<a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Institute of International Affairs, University of Iceland — EU membership cost analysis\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-010</a>, <a href=\"https://eeagrants.org/en/fmo/about-us\" title=\"EEA Grants Financial Mechanism Committee; European Commission budget data\" target=\"_blank\" rel=\"noopener\">EEA-DATA-005</a>, <a href=\"https://eeagrants.org/\" title=\"EEA Grants — Financial Mechanism Committee; European Commission — EU budget figures\" target=\"_blank\" rel=\"noopener\">EEA-DATA-008</a>) gefa nettóframlag á bilinu 100–180 milljónir evra á ári, sem dregur úr hugsanlegum heildarsparnaði.",
       "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "missing_context": "Fullyrðingin gæti byggt á útreikningum um vaxtasparnað, gjaldeyrisviðskiptakostnað og gjaldeyrisforða, en engin heimild í grunni sundurliðar slíkan sparnað. <a href=\"https://www.cb.is/statistics/international-reserves/\" title=\"Seðlabanki Íslands — Alþjóðaforðinn; Fjármálastöðugleikaskýrsla\" target=\"_blank\" rel=\"noopener\">CURR-DATA-006</a> áætlar árlegan kostnað gjaldeyrisforða á ISK 30–50 milljarða, sem er aðeins hluti af nefndu bili. Vaxtasparnaður heimila fer eftir heildarútlánastöðu sem ekki er tiltækur í heimildum. Jafnframt ber að nefna að sparnaður af lægri vöxtum gæti birst sem hærra húsnæðisverð (<a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a>, <a href=\"https://www.ecb.europa.eu/press/economic-bulletin/articles/2021/html/ecb.ebart202107_03~36493e7b67.en.html\" title=\"Glaeser, Gottlieb & Gyourko, 'Can Cheap Credit Explain the Housing Boom?' (2012); ECB Economic Bulletin 2/2021 — 'The impact of monetary policy on housing'\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-011</a>) frekar en sem hrein innistæða á reikningi heimilanna.",
-      "confidence": 0.35,
+      "contradicting_evidence": [
+        {
+          "id": "CURR-DATA-006",
+          "source_name": "Seðlabanki Íslands — Alþjóðaforðinn; Fjármálastöðugleikaskýrsla",
+          "source_url": "https://www.cb.is/statistics/international-reserves/"
+        },
+        {
+          "id": "TRADE-DATA-010",
+          "source_name": "Institute of International Affairs, University of Iceland — EU membership cost analysis",
+          "source_url": "https://ioes.hi.is/en/institute-economic-studies"
+        },
+        {
+          "id": "EEA-DATA-005",
+          "source_name": "EEA Grants Financial Mechanism Committee; European Commission budget data",
+          "source_url": "https://eeagrants.org/en/fmo/about-us"
+        }
+      ],
+      "missing_context": "Talan «90–150 milljarðar» á uppruna sinn óljósan í heimildum gagnagrunnsins. <a href=\"https://www.cb.is/statistics/international-reserves/\" title=\"Seðlabanki Íslands — Alþjóðaforðinn; Fjármálastöðugleikaskýrsla\" target=\"_blank\" rel=\"noopener\">CURR-DATA-006</a> nefnir að talan «40 milljarðar á ári» sem stundum kemur upp í íslenskri umræðu sé gróf áætlun og sveiflist verulega með vaxtaskilum. Auk þess þyrfti að draga frá hugsanlegan ESB-fjárlagaframlag, áhrif á útflutningsgreinar og kostnað við aðlögun. Heildarsparnaðarmat krefst víðtækari greiningar en heimildirnar styðja.",
+      "confidence": 0.75,
       "speakers": [
         {
           "name": "Þorgerður Katrín Gunnarsdóttir",
@@ -351,15 +357,15 @@
       "attribution_type": "paraphrased",
       "claim_count": 7,
       "verdicts": {
-        "partially_supported": 4,
-        "supported": 2,
-        "unverifiable": 1
+        "partially_supported": 5,
+        "supported": 1,
+        "unsupported": 1
       },
       "stance": "pro_eu",
       "slug": "thorgerdur-katrin-gunnarsdottir",
-      "mention_count": 91,
-      "credibility": 0.62,
-      "speech_count": 201
+      "mention_count": 102,
+      "credibility": 0.61,
+      "speech_count": 205
     }
   ]
 }

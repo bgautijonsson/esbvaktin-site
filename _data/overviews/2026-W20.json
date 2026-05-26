@@ -1,0 +1,678 @@
+{
+  "slug": "2026-W20",
+  "period_start": "2026-05-11",
+  "period_end": "2026-05-17",
+  "period_type": "weekly",
+  "key_numbers": {
+    "articles_analysed": 14,
+    "new_claims": 59,
+    "new_claims_published": 59,
+    "verdict_breakdown": {
+      "partially_supported": 34,
+      "supported": 23,
+      "unsupported": 2
+    },
+    "entities_active": 12,
+    "topics_active": 10,
+    "diversity_score": 0.8447
+  },
+  "previous_period": {
+    "articles_analysed": 25,
+    "new_claims_published": 106,
+    "diversity_score": 0.8548
+  },
+  "topic_activity": [
+    {
+      "topic": "sovereignty",
+      "label_is": "Fullveldi",
+      "sightings": 24,
+      "new_claims": 20,
+      "delta": "-23",
+      "slug": "sovereignty"
+    },
+    {
+      "topic": "currency",
+      "label_is": "Gjaldmiðill og peningamál",
+      "sightings": 9,
+      "new_claims": 8,
+      "delta": "-7",
+      "slug": "currency"
+    },
+    {
+      "topic": "eea_eu_law",
+      "label_is": "EES og löggjöf ESB",
+      "sightings": 9,
+      "new_claims": 9,
+      "delta": "-11",
+      "slug": "eea-eu-law"
+    },
+    {
+      "topic": "trade",
+      "label_is": "Viðskipti og verslun",
+      "sightings": 6,
+      "new_claims": 5,
+      "delta": "-1",
+      "slug": "trade"
+    },
+    {
+      "topic": "agriculture",
+      "label_is": "Landbúnaður",
+      "sightings": 5,
+      "new_claims": 5,
+      "delta": "+5",
+      "slug": "agriculture"
+    },
+    {
+      "topic": "precedents",
+      "label_is": "Fordæmi annarra ríkja",
+      "sightings": 4,
+      "new_claims": 4,
+      "delta": "-1",
+      "slug": "precedents"
+    },
+    {
+      "topic": "party_positions",
+      "label_is": "Afstaða stjórnmálaflokka",
+      "sightings": 3,
+      "new_claims": 2,
+      "delta": "-8",
+      "slug": "party-positions"
+    },
+    {
+      "topic": "polling",
+      "label_is": "Könnanir og þjóðarvilji",
+      "sightings": 3,
+      "new_claims": 3,
+      "delta": "+3",
+      "slug": "polling"
+    },
+    {
+      "topic": "fisheries",
+      "label_is": "Sjávarútvegur",
+      "sightings": 2,
+      "new_claims": 2,
+      "delta": "-2",
+      "slug": "fisheries"
+    },
+    {
+      "topic": "other",
+      "label_is": "Annað",
+      "sightings": 1,
+      "new_claims": 1,
+      "delta": "-10",
+      "slug": "other"
+    }
+  ],
+  "top_claims": [
+    {
+      "canonical_text_is": "Ekkert Norðurlandanna er með evru nema Finnland.",
+      "claim_slug": "ekkert-nordurlandanna-er-med-evru-nema-finnland",
+      "verdict": "supported",
+      "category": "currency",
+      "category_is": "Gjaldmiðill og peningamál",
+      "missing_context": "Þrjú Norðurlönd eru í ESB (Danmörk, Svíþjóð og Finnland) en aðeins Finnland hefur tekið upp evruna. Danmörk er með formlega undanþágu en heldur krónunni bundinni evru, og Svíþjóð hafnaði evrunni 2003. Þetta er mikilvægt samhengi þegar borið er saman gjaldmiðlaval.",
+      "explanation": "CURR-DATA-012 staðfestir að af Norðurlöndunum hefur Danmörk formlega undanþágu frá evru, Svíþjóð hefur ekki tekið upp evruna (hafnaði henni í þjóðaratkvæðagreiðslu 2003 samkvæmt CURR-DATA-011), og Noregur og Ísland eru ekki í ESB. PREC-HIST-018 staðfestir að Finnland tók upp evruna 1999 og hefur verið staðfastur evruaðili. Fullyrðingin stenst því prófið.",
+      "epistemic_type": "factual",
+      "confidence": 0.9025,
+      "sighting_count": 2,
+      "sources": [
+        {
+          "title": "Segir evruumræðu ESB-liða minna á gömlu kommana",
+          "slug": "segir-evruumraedu-esb-lida-minna-a-gomlu-kommana"
+        },
+        {
+          "title": "Sjálfskapaður vandi Evrópu",
+          "slug": "sjalfskapadur-vandi-evropu"
+        }
+      ]
+    },
+    {
+      "canonical_text_is": "Mat á líklegum kostnaði Íslands við ESB-aðild hljóðaði upp á 118 milljarða króna á ári",
+      "claim_slug": "mat-a-liklegum-kostnadi-islands-vid-esb-adild-hljodadi-upp-a-118-milljarda-krona",
+      "verdict": "unsupported",
+      "category": "trade",
+      "category_is": "Viðskipti og verslun",
+      "missing_context": "Tölulegar áætlanir í heimildum eru margfalt lægri en 118 milljarðar króna. Brúttóframlag er metið á 30–37 milljarða króna á núverandi gengi og nettóframlag enn lægra þegar styrkir frá ESB eru reiknaðir á móti. Greinin tilgreinir hvorki forsendur né heimild fyrir 118 milljarða tölunni, og óljóst er hvort styrkir, aðlögunarákvæði eða aðrir liðir séu meðtaldir í þeirri tölu.",
+      "explanation": "Heimildir staðreyndagrunnsins styðja ekki töluna 118 milljarða króna á ári. TRADE-DATA-010 metur áætlað brúttóframlag Íslands til ESB-fjárhagsáætlunar á um 200–250 milljónir evra á ári (um 30–37 milljarða króna á gengi 2024), og nettóframlag 100–180 milljónir evra. TRADE-DATA-035 nefnir 7,2–14,9 milljarða króna í beint árlegt framlag samkvæmt mati áranna 2002–2010. Engin heimild nefnir 118 milljarða króna sem heildarkostnað.",
+      "epistemic_type": "factual",
+      "confidence": 0.867,
+      "sighting_count": 2,
+      "sources": [
+        {
+          "title": "Meira tap",
+          "slug": "meira-tap"
+        },
+        {
+          "title": "„Vísatripp“ Viðreisnar",
+          "slug": "visatripp-vidreisnar"
+        }
+      ]
+    },
+    {
+      "canonical_text_is": "Nálægustu nágrannalönd Íslands — Grænland, Færeyjar, Noregur og Bretland — eru ekki í ESB.",
+      "claim_slug": "nalaegustu-nagrannalond-islands-graenland-faereyjar-noregur-og-bretland-eru-e",
+      "verdict": "supported",
+      "category": "sovereignty",
+      "category_is": "Fullveldi",
+      "missing_context": "Þótt löndin séu öll utan ESB er samband þeirra við sambandið ólíkt. Noregur er fullgildur EES-aðili, Bretland hefur fríverslunarsamning eftir Brexit, Grænland er hluti af Konungsríki Danmerkur (en gekk úr EB 1985) og Færeyjar hafa sérsamning. Heimildirnar fjalla ekki sérstaklega um Grænland og Færeyjar sem ríki utan ESB.",
+      "explanation": "Heimildirnar staðfesta þetta óbeint. PREC-DATA-012 og PREC-HIST-002 lýsa Noregi sem ríki utan ESB með EES-samning. SOV-DATA-026 listar Bretland sem ríki utan ESB sem hefur gert öryggis- og varnarsamstarf við ESB eftir Brexit. Grænland gekk úr Evrópubandalaginu 1985 og Færeyjar hafa aldrei verið aðilar þótt þau séu hluti Konungsríkis Danmerkur — sá hluti er almennt þekktur og er ekki dreginn í efa af heimildum.",
+      "epistemic_type": "factual",
+      "confidence": 0.918,
+      "sighting_count": 2,
+      "sources": [
+        {
+          "title": "Segir evruumræðu ESB-liða minna á gömlu kommana",
+          "slug": "segir-evruumraedu-esb-lida-minna-a-gomlu-kommana"
+        },
+        {
+          "title": "Sjálfskapaður vandi Evrópu",
+          "slug": "sjalfskapadur-vandi-evropu"
+        }
+      ]
+    },
+    {
+      "canonical_text_is": "Ríkisstjórnin lofaði að fara með ESB-málið í þjóðaratkvæðagreiðslu eigi síðar en 2027.",
+      "claim_slug": "rikisstjornin-lofadi-ad-fara-med-esb-malid-i-thjodaratkvaedagreidslu-eigi-sidar-en-2027",
+      "verdict": "partially_supported",
+      "category": "party-positions",
+      "category_is": "Afstaða stjórnmálaflokka",
+      "missing_context": "Fullyrðingin segir «ESB-málið» en spurningin í þjóðaratkvæðagreiðslunni varðar framhald aðildarviðræðna, ekki aðild sem slíka. Þessi einföldun getur gefið ranga mynd af efni atkvæðagreiðslunnar. Auk þess er ákvæðið í stjórnarsáttmálanum um «eigi síðar en 2027» en dagsetningin 29. ágúst 2026 varð raunin.",
+      "explanation": "PARTY-DATA-013 staðfestir að ríkisstjórnin samþykkti í stjórnarsáttmála að halda þjóðaratkvæðagreiðslu um framhald aðildarviðræðna «eigi síðar en 2027». Hins vegar var upphaflegt loforð bundið við tímaramma (eigi síðar en 2027), en þjóðaratkvæðagreiðslan var síðan færð fram á 29. ágúst 2026 — seinna en loforðið sagði til um, en fyrr en tímamarkið. Fullyrðingin nefnir ekki að spurningin snýst um framhald viðræðna, ekki um ESB-aðild sjálfa, sem er mikilvægur munur. Þá er Flokkur fólksins ESB-efasemdarflokkur innan ríkisstjórnarinnar — samþykki hans varðar aðeins greiðsluna, ekki stuðning við aðild (PARTY-DATA-013).",
+      "epistemic_type": "factual",
+      "confidence": 0.7400499999999999,
+      "sighting_count": 2,
+      "sources": [
+        {
+          "title": "Segir evruumræðu ESB-liða minna á gömlu kommana",
+          "slug": "segir-evruumraedu-esb-lida-minna-a-gomlu-kommana"
+        },
+        {
+          "title": "Var orðalag spurningarinnar mótað í Brussel?",
+          "slug": "var-ordalag-spurningarinnar-motad-i-brussel"
+        }
+      ]
+    },
+    {
+      "canonical_text_is": "Utanríkisráðherra lagði fram þingsályktunartillögu um þjóðaratkvæðagreiðslu um áframhaldandi aðildarviðræður.",
+      "claim_slug": "utanrikisradherra-lagdi-fram-thingsalyktunartillogu-um-thjodaratkvaedagreidslu-um-aframhaldandi-adildarvidraedur",
+      "verdict": "supported",
+      "category": "sovereignty",
+      "category_is": "Fullveldi",
+      "missing_context": "",
+      "explanation": "SOV-LEGAL-018 staðfestir að þingsályktunartillaga um þjóðaratkvæðagreiðslu var lögformlega lögð fram 6. mars 2026. POLITICAL-DATA-004 staðfestir að Þorgerður Katrín Gunnarsdóttir, leiðtogi Viðreisnar, gegnir embætti utanríkisráðherra í núve randi ríkisstjórn. Þetta staðfestir bæði að tillögtin var lögð fram og að utanríkisráðherra bar hana fram.",
+      "epistemic_type": "factual",
+      "confidence": 0.828495,
+      "sighting_count": 2,
+      "sources": [
+        {
+          "title": "Kæra á hendur utanríkisráðherra vegna meintra landráða – staða málsins",
+          "slug": "kaera-a-hendur-utanrikisradherra-vegna-meintra-landrada-stada-malsins"
+        },
+        {
+          "title": "Var orðalag spurningarinnar mótað í Brussel?",
+          "slug": "var-ordalag-spurningarinnar-motad-i-brussel"
+        }
+      ]
+    },
+    {
+      "canonical_text_is": "Þingsályktunartillaga um þjóðaratkvæðagreiðslu um aðildarviðræður Íslands að ESB var tekin til umræðu á Alþingi þann 10. mars 2026.",
+      "claim_slug": "thingsalyktunartillaga-um-thjodaratkvaedagreidslu-um-adildarvidraedur-islands-ad-esb-var-tekin-til-umraedu-a-althingi-thann-10-mars-2026",
+      "verdict": "partially_supported",
+      "category": "sovereignty",
+      "category_is": "Fullveldi",
+      "missing_context": "Heimildir nefna 7. mars (framlagning) og 9. mars (flutningsræða) en ekki 10. mars. Tillagan var þingsályktunartillaga (ekki lagafrumvarp) og þjóðaratkvæðagreiðslan er ráðgefandi samkvæmt SOV-DATA-006. Dagsetningarmismunurinn gæti stafað af mismun á framlagningardegi og umræðudegi.",
+      "explanation": "SOV-PARL-001 staðfestir að utanríkisráðherra lagði fram þingsályktunartillögu um þjóðaratkvæðagreiðslu, en dagsetningin í fullyrðingunni (10. mars 2026) stemmir ekki nákvæmlega við heimildir. Samkvæmt SOV-PARL-001 flutti ráðherra ræðu sína 9. mars og SOV-LEGAL-028 segir tillöguna hafa verið lögð fram 7. mars 2026. Nýja heimildin SOV-PARL-004 bendir til þess að tillagan hafi verið tekin til umræðu í byrjun mars en nefnir ekki 10. mars sérstaklega. Hugsanlega var 10. mars dagur fyrstu þingumræðu, en heimildir staðfesta ekki þá dagsetningu beint.",
+      "epistemic_type": "factual",
+      "confidence": 0.574644132,
+      "sighting_count": 2,
+      "sources": [
+        {
+          "title": "Forvirkt samstarf við Evrópusinnaða stjórn",
+          "slug": "forvirkt-samstarf-vid-evropusinnada-stjorn"
+        },
+        {
+          "title": "Segir evruumræðu ESB-liða minna á gömlu kommana",
+          "slug": "segir-evruumraedu-esb-lida-minna-a-gomlu-kommana"
+        }
+      ]
+    },
+    {
+      "canonical_text_is": "Þjóðaratkvæðagreiðsla um áframhald aðildarviðræðna við ESB er áætluð 29. ágúst 2026.",
+      "claim_slug": "thjodaratkvaedagreidsla-um-aframhald-adildarvidraedna-vid-esb-er-aaetlud-29-agust-2026",
+      "verdict": "partially_supported",
+      "category": "sovereignty",
+      "category_is": "Fullveldi",
+      "missing_context": "Þjóðaratkvæðagreiðslan er ráðgefandi (ráðgefandi þjóðaratkvæðagreiðsla) en ekki bindandi — Alþingi er ekki skuldbundið af niðurstöðunni, þótt pólitísk hefð leggi þunga áherslu á virðingu fyrir vilja þjóðarinnar. Stjórnarandstaðan hefur gagnrýnt dagsetninguna sem of snemma og talið að nægileg umræða geti ekki átt sér stað yfir sumartímann. POLL-DATA-017 bendir á mikilvægan mun á stuðningi við þjóðaratkvæðagreiðsluna sjálfa (57%) og stuðningi við ESB-aðild (42%).",
+      "explanation": "Dagsetningin 29. ágúst 2026 er rétt staðfest af SOV-DATA-006 og SOV-PARL-001. Hins vegar er fullyrðingin um «áframhald aðildarviðræðna» aðeins ónákvæm. Spurningin sem lögð verður fyrir þjóðina er samkvæmt SOV-PARL-001: «Á að halda áfram viðræðum um aðild Íslands að Evrópusambandinu?» — sem er víðtækari en «áframhald aðildarviðræðna» gefur til kynna. Auk þess er um ráðgefandi þjóðaratkvæðagreiðslu að ræða samkvæmt SOV-DATA-006, en fullyrðingin nefnir ekki þennan mikilvæga fyrirvara.",
+      "epistemic_type": "factual",
+      "confidence": 0.4647523344913495,
+      "sighting_count": 2,
+      "sources": [
+        {
+          "title": "Bíður þetta böl lands og þjóðar?",
+          "slug": "bidur-thetta-bol-lands-og-thjodar"
+        },
+        {
+          "title": "Forvirkt samstarf við Evrópusinnaða stjórn",
+          "slug": "forvirkt-samstarf-vid-evropusinnada-stjorn"
+        }
+      ]
+    },
+    {
+      "canonical_text_is": "Áætlaður árlegur kostnaður ESB-aðildar jafngildir tæpri tíund af tekjum ríkisins",
+      "claim_slug": "aaetladur-arlegur-kostnadur-esb-adildar-jafngildir-taepri-tiund-af-tekjum-rikisins",
+      "verdict": "unsupported",
+      "category": "trade",
+      "category_is": "Viðskipti og verslun",
+      "missing_context": "Hlutfallið er reiknað af tölu sem ekki finnst í heimildum og því er afleidda fullyrðingin einnig óstudd. Heimildir benda til þess að árlegt nettóframlag yrði 100–180 milljónir evra (um 15–27 milljarðar króna) — sem væri mun lægra en tíundi hluti tekna ríkisins.",
+      "explanation": "Hlutfallið byggir á 118 milljarða króna tölu sem heimildir styðja ekki. CURR-DATA-013 nefnir 7,5% af ríkisútgjöldum Íslands 2011 vegna hugsanlegra björgunarframlaga eurosvæðisins — en það er allt annað og sértækara mat en árlegt aðildarframlag. Þegar tölur úr TRADE-DATA-010 og TRADE-DATA-035 eru bornar við tekjur ríkisins fæst hlutfall sem er aðeins brot af „tíund».",
+      "epistemic_type": "factual",
+      "confidence": 0.8,
+      "sighting_count": 1,
+      "sources": [
+        {
+          "title": "„Vísatripp“ Viðreisnar",
+          "slug": "visatripp-vidreisnar"
+        }
+      ]
+    },
+    {
+      "canonical_text_is": "Afstaðan í skýrslu EPRS um að umsókn Íslands sé áfram «lifandi» er umdeild á Íslandi.",
+      "claim_slug": "afstadan-i-skyrslu-eprs-um-ad-umsokn-islands-se-afram-lifandi-er-umdeild-a-isl",
+      "verdict": "supported",
+      "category": "sovereignty",
+      "category_is": "Fullveldi",
+      "missing_context": "Deilan er ekki bara akademísk — hún hefur áhrif á orðalag þjóðaratkvæðagreiðslunnar (SOV-PARL-008) og á hvort niðurstaðan verði túlkuð sem heimild til að halda áfram fyrri viðræðum eða hefja nýja umsókn. Þingræða Gunnars Braga 2021 sýnir að málið var einnig umdeilt löngu fyrir 2026.",
+      "explanation": "SOV-PARL-008 staðfestir með beinum hætti að staða umsóknarinnar er umdeild — Landskjörstjórn benti á að spurning þjóðaratkvæðagreiðslunnar geri ráð fyrir að viðræðum hafi ekki verið slitið, sem sé sjálft umdeilt. SOV-PARL-010 lýsir bréfi Gunnars Braga 2015 sem var ætlað að slíta viðræðum. PARTY-DATA-011 staðfestir að lagaleg staða umsóknarinnar er enn umdeild. Þetta er kjarnaspurning íslenska ESB-umræðunnar 2026.",
+      "epistemic_type": "factual",
+      "confidence": 0.85,
+      "sighting_count": 1,
+      "sources": [
+        {
+          "title": "Var orðalag spurningarinnar mótað í Brussel?",
+          "slug": "var-ordalag-spurningarinnar-motad-i-brussel"
+        }
+      ]
+    },
+    {
+      "canonical_text_is": "Árið 2015 sendi þáverandi utanríkisráðherra Gunnar Bragi Sveinsson bréf til ESB þar sem óskað var eftir því að Ísland yrði ekki lengur talið umsóknarríki, án þess að málið hafi verið borið undir utanríkismálanefnd.",
+      "claim_slug": "arid-2015-sendi-thaverandi-utanrikisradherra-gunnar-bragi-sveinsson-bref-til-esb",
+      "verdict": "partially_supported",
+      "category": "eea-eu-law",
+      "category_is": "EES og löggjöf ESB",
+      "missing_context": "EEA-DATA-009 vísar til ríkisstjórnarinnar í heild, ekki til tiltekins ráðherra eða stjórnarflokks. Ekki er hægt að ráða af þessum heimildum hvort málið hafi farið um utanríkismálanefnd áður en bréfið var sent — það atriði krefst frekari heimilda úr þingskjölum eða samtímaheimildum. Önnur atriði fullyrðingarinnar (ár, efni bréfsins, formleg ósk um að Ísland yrði ekki lengur talið umsóknarríki) eru í samræmi við EEA-DATA-009.",
+      "explanation": "Heimildir staðfesta hluta fullyrðingarinnar en ekki alla. EEA-DATA-009 staðfestir að ríkisstjórn Íslands óskaði formlega eftir því í mars 2015 að Ísland yrði fjarlægt af lista yfir umsóknarríki ESB, sem samrýmist tímasetningu og efni fullyrðingarinnar. Hins vegar tilgreina heimildirnar í þessari lotu hvorki Gunnar Braga Sveinsson sem undirritaðan ráðherra né hvort málið hafi verið borið undir utanríkismálanefnd Alþingis — þeir þættir verða óstaðfestir út frá þeim heimildum sem hér liggja fyrir.",
+      "epistemic_type": "factual",
+      "confidence": 0.6324,
+      "sighting_count": 1,
+      "sources": [
+        {
+          "title": "Var orðalag spurningarinnar mótað í Brussel?",
+          "slug": "var-ordalag-spurningarinnar-motad-i-brussel"
+        }
+      ]
+    }
+  ],
+  "active_entities": [
+    {
+      "name": "Ólafur Ragnar Grímsson",
+      "claims_made": 8,
+      "top_topics": [
+        "Fullveldi",
+        "Gjaldmiðill og peningamál",
+        "EES og löggjöf ESB"
+      ],
+      "slug": "olafur-ragnar-grimsson"
+    },
+    {
+      "name": "Þorvaldur Ingi Jónsson",
+      "claims_made": 6,
+      "top_topics": [
+        "Fordæmi annarra ríkja",
+        "Viðskipti og verslun",
+        "EES og löggjöf ESB"
+      ],
+      "slug": "thorvaldur-ingi-jonsson"
+    },
+    {
+      "name": "Hjörtur Smárason",
+      "claims_made": 5,
+      "top_topics": [
+        "Fullveldi",
+        "Sjávarútvegur"
+      ],
+      "slug": "hjortur-smarason"
+    },
+    {
+      "name": "Einar G. Harðarson",
+      "claims_made": 4,
+      "top_topics": [
+        "Fullveldi",
+        "Viðskipti og verslun"
+      ],
+      "slug": "einar-g-hardarson"
+    },
+    {
+      "name": "Hannes Hólmsteinn Gissurarson",
+      "claims_made": 4,
+      "top_topics": [
+        "Fordæmi annarra ríkja",
+        "EES og löggjöf ESB",
+        "Sjávarútvegur"
+      ],
+      "slug": "hannes-holmsteinn-gissurarson"
+    },
+    {
+      "name": "Anonymous",
+      "claims_made": 3,
+      "top_topics": [
+        "Gjaldmiðill og peningamál",
+        "Viðskipti og verslun"
+      ],
+      "slug": "anonymous"
+    },
+    {
+      "name": "Gunnar Bragi Sveinsson",
+      "claims_made": 3,
+      "top_topics": [
+        "Fullveldi"
+      ],
+      "slug": "gunnar-bragi-sveinsson"
+    },
+    {
+      "name": "Fyrrverandi landbúnaðarráðherra",
+      "claims_made": 3,
+      "top_topics": [
+        "Landbúnaður"
+      ],
+      "slug": "fyrrverandi-landbunadarradherra"
+    },
+    {
+      "name": "Óþekkt höfundur",
+      "claims_made": 2,
+      "top_topics": [
+        "Viðskipti og verslun"
+      ],
+      "slug": "othekkt-hofundur"
+    },
+    {
+      "name": "Sigmundur Davíð Gunnlaugsson",
+      "claims_made": 1,
+      "top_topics": [
+        "Fullveldi"
+      ],
+      "slug": "sigmundur-david-gunnlaugsson"
+    },
+    {
+      "name": "Donald Trump",
+      "claims_made": 1,
+      "top_topics": [
+        "Viðskipti og verslun"
+      ],
+      "slug": "donald-trump"
+    },
+    {
+      "name": "Sif Sigmarsdóttir",
+      "claims_made": 1,
+      "top_topics": [
+        "Annað"
+      ],
+      "slug": "sif-sigmarsdottir"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Aðild að ESB mundi rústa íslenskum landbúnaði",
+      "source": "bbl.is",
+      "url": "http://www.bbl.is/skodun/adild-ad-esb-mundi-rusta-islenskum-landbunadi",
+      "date": "2026-05-12",
+      "claim_count": 3,
+      "dominant_category": "agriculture",
+      "slug": "adild-ad-esb-mundi-rusta-islenskum-landbunadi"
+    },
+    {
+      "title": "Schengen: „Við óttuðumst það sem varð\"",
+      "source": "mbl.is",
+      "url": "https://www.mbl.is/frettir/innlent/2026/05/12/schengen_vid_ottudumst_thad_sem_vard",
+      "date": "2026-05-12",
+      "claim_count": 3,
+      "dominant_category": "eea_eu_law",
+      "slug": "schengen-vid-ottudumst-thad-sem-vard"
+    },
+    {
+      "title": "Segir evruumræðu ESB-liða minna á gömlu kommana",
+      "source": "vb.is",
+      "url": "https://www.vb.is/frettir/segir-evruumraedu-esb-lida-minna-a-gomlu-kommana",
+      "date": "2026-05-12",
+      "claim_count": 8,
+      "dominant_category": "sovereignty",
+      "slug": "segir-evruumraedu-esb-lida-minna-a-gomlu-kommana"
+    },
+    {
+      "title": "Umræða tengd afstöðu Ólafs Ragnars varðandi ESB – skoðum fleiri hliðar og framtíðina",
+      "source": "visir.is",
+      "url": "https://www.visir.is/g/20262882012d/umraeda-tengd-afstodu-olafs-ragnars-vardandi-esb-skodum-fleiri-hlidar-og-framtidina",
+      "date": "2026-05-12",
+      "claim_count": 6,
+      "dominant_category": "currency",
+      "slug": "umraeda-tengd-afstodu-olafs-ragnars-vardandi-esb-skodum-fleiri-hlidar-og-framtidina"
+    },
+    {
+      "title": "Sjálfskapaður vandi Evrópu",
+      "source": "visir.is",
+      "url": "https://www.visir.is/g/20262883440d/sjalfskapadur-vandi-evropu",
+      "date": "2026-05-14",
+      "claim_count": 4,
+      "dominant_category": "sovereignty",
+      "slug": "sjalfskapadur-vandi-evropu"
+    },
+    {
+      "title": "„Vísatripp“ Viðreisnar",
+      "source": "heimssyn.blog.is",
+      "url": "https://heimssyn.blog.is/blog/heimssyn/entry/2325100",
+      "date": "2026-05-14",
+      "claim_count": 3,
+      "dominant_category": "trade",
+      "slug": "visatripp-vidreisnar"
+    },
+    {
+      "title": "Fullveldið er falið í gagnaeign",
+      "source": "visir.is",
+      "url": "https://www.visir.is/g/20262883189d/fullveldid-er-falid-i-gagnaeign",
+      "date": "2026-05-14",
+      "claim_count": 5,
+      "dominant_category": "sovereignty",
+      "slug": "fullveldid-er-falid-i-gagnaeign"
+    },
+    {
+      "title": "Bíður þetta böl lands og þjóðar?",
+      "source": "visir.is",
+      "url": "https://www.visir.is/g/20262883406d/bidur-thetta-bol-lands-og-thjodar-",
+      "date": "2026-05-14",
+      "claim_count": 1,
+      "dominant_category": "sovereignty",
+      "slug": "bidur-thetta-bol-lands-og-thjodar"
+    },
+    {
+      "title": "Meira tap",
+      "source": "heimssyn.blog.is",
+      "url": "https://heimssyn.blog.is/blog/heimssyn/entry/2325183",
+      "date": "2026-05-15",
+      "claim_count": 4,
+      "dominant_category": "currency",
+      "slug": "meira-tap"
+    },
+    {
+      "title": "Kæra á hendur utanríkisráðherra vegna meintra landráða – staða málsins",
+      "source": "juliusvalsson.blog.is",
+      "url": "https://juliusvalsson.blog.is/blog/juliusvalsson/entry/2325172",
+      "date": "2026-05-15",
+      "claim_count": 8,
+      "dominant_category": "sovereignty",
+      "slug": "kaera-a-hendur-utanrikisradherra-vegna-meintra-landrada-stada-malsins"
+    },
+    {
+      "title": "Forvirkt samstarf við Evrópusinnaða stjórn",
+      "source": "mbl.is",
+      "url": "https://www.mbl.is/frettir/innlent/2026/05/15/forvirkt_samstarf_vid_evropusinnada_stjorn",
+      "date": "2026-05-15",
+      "claim_count": 4,
+      "dominant_category": "sovereignty",
+      "slug": "forvirkt-samstarf-vid-evropusinnada-stjorn"
+    },
+    {
+      "title": "„Viðreisnarbotar“ valda usla",
+      "source": "mbl.is",
+      "url": "https://www.mbl.is/frettir/innlent/2026/05/15/vidreisnarbotar_valda_usla",
+      "date": "2026-05-15",
+      "claim_count": 1,
+      "dominant_category": "sovereignty",
+      "slug": "vidreisnarbotar-valda-usla"
+    },
+    {
+      "title": "Stjórnvöld blekktu Breta um ESB",
+      "source": "mbl.is",
+      "url": "https://www.mbl.is/mogginn/bladid/grein/1912790",
+      "date": "2026-05-15",
+      "claim_count": 4,
+      "dominant_category": "precedents",
+      "slug": "stjornvold-blekktu-breta-um-esb"
+    },
+    {
+      "title": "Var orðalag spurningarinnar mótað í Brussel?",
+      "source": "visir.is",
+      "url": "https://www.visir.is/g/20262884034d/var-ordalag-spurningarinnar-motad-i-brussel-",
+      "date": "2026-05-15",
+      "claim_count": 12,
+      "dominant_category": "sovereignty",
+      "slug": "var-ordalag-spurningarinnar-motad-i-brussel"
+    }
+  ],
+  "source_breakdown": {
+    "visir.is": 5,
+    "mbl.is": 4,
+    "heimssyn.blog.is": 2,
+    "bbl.is": 1,
+    "juliusvalsson.blog.is": 1,
+    "vb.is": 1
+  },
+  "key_facts": [
+    {
+      "claim_text": "Finnskt ríki veitir viðbótarframlög til bænda umfram það sem kemur úr sjóðum ESB fyrir landbúnað norðan 62. breiddargráðu.",
+      "claim_slug": "finnskt-riki-veitir-vidbotarframlog-til-baenda-umfram-thad-sem-kemur-ur-sjodum-esb",
+      "category": "agriculture",
+      "category_is": "Landbúnaður",
+      "claim_type": "statistic",
+      "verdict": "supported",
+      "explanation": "Heimildir staðfesta fullyrðinguna ótvírætt. AGRI-LEGAL-002 sýnir að Finnland fékk varanlega heimild til viðbótarframlaga undir 142. grein aðildarsamningsins (um 290 milljónir evra á ári), og AGRI-LEGAL-007 og AGRI-PREC-002 staðfesta að framlögin renna sérstaklega til svæða norðan 62. breiddargráðu. Þessi framlög koma til viðbótar venjulegum CAP-greiðslum.",
+      "caveat": "Þó ber að hafa í huga að framlögin koma ekki í stað CAP heldur til viðbótar, og þau mega ekki leiða til aukinnar framleiðslu né fara yfir framlag fyrir aðild (AGRI-LEGAL-002). Heildarhámark er 574,5 milljónir evra á ári fyrir tímabilið 2022–2027.",
+      "confidence": 0.9,
+      "supporting_evidence": [
+        "AGRI-LEGAL-002",
+        "AGRI-LEGAL-007",
+        "AGRI-PREC-002",
+        "AGRI-PREC-001"
+      ],
+      "contradicting_evidence": []
+    },
+    {
+      "claim_text": "Ekkert Norðurlandanna er með evru nema Finnland.",
+      "claim_slug": "ekkert-nordurlandanna-er-med-evru-nema-finnland",
+      "category": "currency",
+      "category_is": "Gjaldmiðill og peningamál",
+      "claim_type": "statistic",
+      "verdict": "supported",
+      "explanation": "CURR-DATA-012 staðfestir að af Norðurlöndunum hefur Danmörk formlega undanþágu frá evru, Svíþjóð hefur ekki tekið upp evruna (hafnaði henni í þjóðaratkvæðagreiðslu 2003 samkvæmt CURR-DATA-011), og Noregur og Ísland eru ekki í ESB. PREC-HIST-018 staðfestir að Finnland tók upp evruna 1999 og hefur verið staðfastur evruaðili. Fullyrðingin stenst því prófið.",
+      "caveat": "Þrjú Norðurlönd eru í ESB (Danmörk, Svíþjóð og Finnland) en aðeins Finnland hefur tekið upp evruna. Danmörk er með formlega undanþágu en heldur krónunni bundinni evru, og Svíþjóð hafnaði evrunni 2003. Þetta er mikilvægt samhengi þegar borið er saman gjaldmiðlaval.",
+      "confidence": 0.9025,
+      "supporting_evidence": [
+        "CURR-DATA-012",
+        "CURR-DATA-011",
+        "PREC-HIST-018"
+      ],
+      "contradicting_evidence": []
+    },
+    {
+      "claim_text": "Schengen-samstarfið nær í dag til 27 ríkja, flestra ríkja ESB og EES-landanna.",
+      "claim_slug": "schengen-samstarfid-naer-i-dag-til-27-rikja-flestra-rikja-esb-og-ees-landanna",
+      "category": "eea-eu-law",
+      "category_is": "EES og löggjöf ESB",
+      "claim_type": "statistic",
+      "verdict": "supported",
+      "explanation": "EEA-LEGAL-004 staðfestir beint að Schengen-svæðið nær til 27 Evrópuríkja og að Ísland hafi verið hluti þess frá 2001 í gegnum sérstakan samstarfssamning. Fjöldatalan 27 ríki er nákvæmlega sú sama og fullyrðingin nefnir, og lýsingin á samsetningu (flest ESB-ríki ásamt EES-löndum) er rétt.",
+      "caveat": "Schengen-svæðið inniheldur einnig ríki utan ESB og EES í strangri merkingu (Sviss er hluti af því en ekki í EES). Ekki öll ESB-ríki eru aðilar að Schengen — Írland stendur utan þess. Fullyrðingin er þó nógu almenn til að þetta hróflar ekki við matinu.",
+      "confidence": 0.918,
+      "supporting_evidence": [
+        "EEA-LEGAL-004"
+      ],
+      "contradicting_evidence": []
+    },
+    {
+      "claim_text": "Sjálfstætt Ísland á 20. öldinni þurfti að eiga hafsvæði sitt og réttinn á fiskveiðum.",
+      "claim_slug": "sjalfstaett-island-a-20-oldinni-thurfti-ad-eiga-hafsvaedi-sitt-og-rettinn-a-fiskve",
+      "category": "fisheries",
+      "category_is": "Sjávarútvegur",
+      "claim_type": "comparison",
+      "verdict": "supported",
+      "explanation": "FISH-LEGAL-002 staðfestir að lögsaga Íslands (efnahagslögsagan, um 758.000 km²) og fullveldisréttindi yfir fiskveiðum byggja á lögum nr. 41/1979 og hafréttarsáttmála Sameinuðu þjóðanna (UNCLOS). FISH-LEGAL-008 staðfestir að fiskveiðiréttindi eru sameign íslensku þjóðarinnar samkvæmt lögum. Útfærsla efnahagslögsögunnar í áföngum á 20. öld var grundvallaratriði í efnahagslegu sjálfstæði Íslands.",
+      "caveat": "Fullyrðingin er almenn söguleg lýsing sem heimildir styðja í meginatriðum. Þó ber að hafa í huga að orðalagið «þurfti að eiga» er gildishlaðið — staðreyndalega tókst Íslandi að tryggja yfirráð yfir fiskveiðilögsögu sinni í áföngum (1952, 1958, 1972, 1975) með diplómatískum og lagalegum hætti, óháð því hvort þetta var nauðsynlegt skilyrði sjálfstæðis.",
+      "confidence": 0.75,
+      "supporting_evidence": [
+        "FISH-LEGAL-002",
+        "FISH-LEGAL-008",
+        "FISH-DATA-022"
+      ],
+      "contradicting_evidence": []
+    },
+    {
+      "claim_text": "Spánn og Portúgal gengu í ESB árið 1986.",
+      "claim_slug": "spann-og-portugal-gengu-i-esb-arid-1986",
+      "category": "precedents",
+      "category_is": "Fordæmi annarra ríkja",
+      "claim_type": "statistic",
+      "verdict": "supported",
+      "explanation": "FISH-LEGAL-005 staðfestir að úthlutun Spánar og Portúgals í sameiginlegu sjávarútvegsstefnunni hafi verið ákveðin í aðildarsamningum 1985, sem þýðir aðild árið 1986. PREC-DATA-036 nefnir einnig viðræðutíma Spánar (um 6 ár 10 mánuðir) og Portúgals (7 ár 2 mánuðir) sem leiddu til aðildar á níunda áratugnum. Þessar heimildir styðja ártalið beint þótt þær séu ekki helgaðar tímalínunni sjálfri.",
+      "caveat": "Heimildir gefa ekki nákvæmt aðildardag (1. janúar 1986) en staðfesta ártalið óbeint. Lýsing greinarinnar á Spáni og Portúgal sem «öflugum fiskveiðiþjóðum» er stutt af FISH-LEGAL-005 sem nefnir þessi lönd sérstaklega í sögu sameiginlegu sjávarútvegsstefnunnar.",
+      "confidence": 0.9,
+      "supporting_evidence": [
+        "FISH-LEGAL-005",
+        "PREC-DATA-036"
+      ],
+      "contradicting_evidence": []
+    },
+    {
+      "claim_text": "Nálægustu nágrannalönd Íslands — Grænland, Færeyjar, Noregur og Bretland — eru ekki í ESB.",
+      "claim_slug": "nalaegustu-nagrannalond-islands-graenland-faereyjar-noregur-og-bretland-eru-e",
+      "category": "sovereignty",
+      "category_is": "Fullveldi",
+      "claim_type": "statistic",
+      "verdict": "supported",
+      "explanation": "Heimildirnar staðfesta þetta óbeint. PREC-DATA-012 og PREC-HIST-002 lýsa Noregi sem ríki utan ESB með EES-samning. SOV-DATA-026 listar Bretland sem ríki utan ESB sem hefur gert öryggis- og varnarsamstarf við ESB eftir Brexit. Grænland gekk úr Evrópubandalaginu 1985 og Færeyjar hafa aldrei verið aðilar þótt þau séu hluti Konungsríkis Danmerkur — sá hluti er almennt þekktur og er ekki dreginn í efa af heimildum.",
+      "caveat": "Þótt löndin séu öll utan ESB er samband þeirra við sambandið ólíkt. Noregur er fullgildur EES-aðili, Bretland hefur fríverslunarsamning eftir Brexit, Grænland er hluti af Konungsríki Danmerkur (en gekk úr EB 1985) og Færeyjar hafa sérsamning. Heimildirnar fjalla ekki sérstaklega um Grænland og Færeyjar sem ríki utan ESB.",
+      "confidence": 0.918,
+      "supporting_evidence": [
+        "PREC-DATA-012",
+        "PREC-HIST-002",
+        "SOV-DATA-026"
+      ],
+      "contradicting_evidence": []
+    },
+    {
+      "claim_text": "Evrópski markaðurinn hýsir um hálfan milljarð neytenda.",
+      "claim_slug": "evropski-markadurinn-hysir-um-halfan-milljard-neytenda",
+      "category": "trade",
+      "category_is": "Viðskipti og verslun",
+      "claim_type": "statistic",
+      "verdict": "partially_supported",
+      "explanation": "TRADE-DATA-040 vísar til 450 milljóna neytenda á ESB-markaðnum. Fullyrðingin segir «um hálfan milljarð» sem þýðir um 500 milljónir — tæplega 11% hærra en raunverulegar tölur. Jafnvel þótt innri markaðurinn nái yfir EES-ríkin (með Noregi, Íslandi og Liechtenstein) bætast aðeins rúmlega 5 milljónir neytenda við, sem gefur um 455 milljónir. SOV-LEGAL-002 staðfestir íbúafjölda ESB í svipuðum stærðargráðum. Fullyrðingin er því ónákvæm þótt hún sé rétt á stærðargráðu.",
+      "caveat": "Íbúafjöldi ESB-27 er um 450 milljónir (ekki 500 milljónir). Innri markaðurinn með EES-ríkjum nær til um 455 milljóna. Munurinn á «hálfum milljarði» og raunverulegum tölum er umtalsverður í samhengi við nákvæma umfjöllun.",
+      "confidence": 0.867,
+      "supporting_evidence": [
+        "TRADE-DATA-040",
+        "SOV-LEGAL-002"
+      ],
+      "contradicting_evidence": []
+    }
+  ],
+  "editorial": ""
+}

@@ -7,15 +7,15 @@
   "party": null,
   "stance": "insufficient_data",
   "stance_score": 1.0,
-  "credibility": 0.61,
+  "credibility": 0.56,
   "attribution_counts": {
     "quoted": 10,
     "paraphrased": 4
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 7,
-    "supported": 2
+    "partially_supported": 8,
+    "supported": 1
   },
   "claims": [
     {
@@ -265,9 +265,9 @@
     {
       "claim_text": "Íslenskur sjávarútvegur hefur verið hryggjarstykkið í efnahagslegri hagsæld þjóðarinnar um langa hríð.",
       "original_quote": "Íslenskur sjávarútvegur hefur verið hryggjarstykkið í efnahagslegri hagsæld þjóðarinnar um langa hríð.",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.statice.is/statistics/economy/national-accounts/\" title=\"Statistics Iceland — National accounts by activity\" target=\"_blank\" rel=\"noopener\">FISH-DATA-003</a> staðfestir að sjávarútvegur og fiskvinnsla stóðu saman undir um 8% af vergri landsframleiðslu 2024, en hlutfallið var enn hærra áður — 12% árið 2005 og yfir 16% um 1990. <a href=\"https://www.visindavefur.is/svar.php?id=6781\" title=\"Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (2007)\" target=\"_blank\" rel=\"noopener\">FISH-DATA-034</a> sýnir að greinin stóð undir allt að 80% af vöruútflutningi og 10% atvinnu árið 1991, og FISH-DATA-021 undirstrikar að Ísland er næststærsta sjávarútvegsstjórn Evrópu með 2.800 kg afla á mann. Greinin var augljóslega «hryggjarstykkið» í íslenskri hagsæld um langa hríð, þótt hlutfallsleg þýðing hafi minnkað undanfarna áratugi.",
-      "missing_context": "Hlutdeild sjávarútvegs í VLF hefur lækkað úr yfir 16% (1990) í um 8% (2024) og greinin er ekki lengur jafn ráðandi og áður. Þó er hlutfallslega áhrif greinarinnar meira utan höfuðborgarsvæðisins — <a href=\"https://www.visindavefur.is/svar.php?id=6781\" title=\"Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (2007)\" target=\"_blank\" rel=\"noopener\">FISH-DATA-034</a> sýnir 11,5% atvinnu á landsbyggðinni samanborið við 1,5% á höfuðborgarsvæðinu (2006). Margfeldisáhrif (1,5–2,0) þýða einnig að bein VLF-tala vanmetur raunverulega þýðingu greinarinnar.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildirnar staðfesta sögulega þýðingu sjávarútvegs en sýna jafnframt að hlutdeild greinarinnar í efnahagslífi þjóðarinnar hefur farið minnkandi. <a href=\"https://www.statice.is/statistics/economy/national-accounts/\" title=\"Statistics Iceland — National accounts by activity\" target=\"_blank\" rel=\"noopener\">FISH-DATA-003</a> sýnir að sjávarútvegur og fiskvinnsla höfðu um 16% af VLF árið 1990 en eru komin niður í um 8% árið 2024. <a href=\"https://www.visindavefur.is/svar.php?id=6781\" title=\"Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (2007)\" target=\"_blank\" rel=\"noopener\">FISH-DATA-034</a> staðfestir samdrátt úr 15% í 6% af VLF milli 1991 og 2005, og úr 80% í 51% af vöruútflutningi. Fullyrðingin um «langa hríð» og «hryggjarstykki» er sögulega rétt en gefur úrelta mynd af núverandi stöðu.",
+      "missing_context": "Þrátt fyrir samdrátt í hlutdeild sjávarútvegs í VLF gegnir greinin enn óvenju þýðingarmiklu hlutverki utan höfuðborgarsvæðisins — atvinnuhlutfall í sjávarútvegi var 11,5% á landsbyggðinni 2006 móti 1,5% á höfuðborgarsvæðinu. Margfeldisáhrif greinarinnar eru áætluð 1,5–2,0. Ísland er enn næststærsta fiskveiðiþjóð Evrópu á eftir Noregi.",
       "supporting_evidence": [
         {
           "id": "FISH-DATA-003",
@@ -275,14 +275,14 @@
           "source_url": "https://www.statice.is/statistics/economy/national-accounts/"
         },
         {
-          "id": "FISH-DATA-034",
-          "source_name": "Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (2007)",
-          "source_url": "https://www.visindavefur.is/svar.php?id=6781"
-        },
-        {
           "id": "FISH-DATA-021",
           "source_name": "Eurostat — Fisheries statistics (fish_ca_main); Hagstofa Íslands",
           "source_url": null
+        },
+        {
+          "id": "FISH-DATA-034",
+          "source_name": "Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (2007)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=6781"
         },
         {
           "id": "FISH-DATA-024",

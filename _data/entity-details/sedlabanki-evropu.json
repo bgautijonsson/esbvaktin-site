@@ -2,33 +2,34 @@
   "slug": "sedlabanki-evropu",
   "name": "Seðlabanki Evrópu",
   "type": "institution",
-  "description": "Stofnun — hlutlaus um ESB-aðild.",
+  "description": "Stofnun — blandað viðhorf til ESB-aðildar.",
   "role": "seðlabanki",
   "party": null,
-  "stance": "neutral",
-  "stance_score": 0.0,
-  "credibility": 0.0,
+  "stance": "mixed",
+  "stance_score": 0.25,
+  "credibility": 0.25,
   "attribution_counts": {
-    "paraphrased": 1,
+    "paraphrased": 3,
     "mentioned": 2
   },
   "althingi_stats": null,
   "scorecard": {
-    "unsupported": 1
+    "unsupported": 1,
+    "partially_supported": 1
   },
   "claims": [
     {
       "claim_text": "Fullyrðing um að vextir hafi lækkað í Króatíu með upptöku evru á sér ekki stoð í tölum króatíska seðlabankans",
       "original_quote": "Í heimsókn kemur maður úr evrópska seðlabankanum og sú saga fer á kreik að vextir hafi lækkað í Króatíu með upptöku evru. Það rímar illa við tölur króatíska seðlabankans",
       "verdict": "unsupported",
-      "explanation": "Fullyrðingin heldur því fram að vaxtalækkun í Króatíu eigi sér ekki stoð í tölum seðlabankans, en heimildir sýna hið gagnstæða. <a href=\"https://sdw.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a> staðfestir að króatískir húsnæðislánsvextir lækkuðu verulega eftir upptöku evru — niður í um 3,0% í september 2025 samanborið við 3,71% í Þýskalandi. Seðlabankastjórinn Boris Vujčić sagði þetta sjálfur á BIS-ráðstefnu (<a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Bank for International Settlements — Boris Vujčić speech: One Year with the Euro\" target=\"_blank\" rel=\"noopener\">CURR-DATA-018</a>). Tölur króatíska seðlabankans styðja þannig vaxtaáhrifin, þótt ástæðurnar séu flóknari en svo að evruan ein skýri þær.",
+      "explanation": "Fullyrðingin heldur því fram að vaxtalækkun í Króatíu eigi sér ekki stoð í tölum seðlabankans, en heimildir sýna hið gagnstæða. <a href=\"https://data.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a> staðfestir að króatískir húsnæðislánsvextir lækkuðu verulega eftir upptöku evru — niður í um 3,0% í september 2025 samanborið við 3,71% í Þýskalandi. Seðlabankastjórinn Boris Vujčić sagði þetta sjálfur á BIS-ráðstefnu (<a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Bank for International Settlements — Boris Vujčić speech: One Year with the Euro\" target=\"_blank\" rel=\"noopener\">CURR-DATA-018</a>). Tölur króatíska seðlabankans styðja þannig vaxtaáhrifin, þótt ástæðurnar séu flóknari en svo að evruan ein skýri þær.",
       "missing_context": "Króatía hafði tengt kúnuna náið við evruna í áratugi, sem þýðir að breytingin var minni en ella. Vaxtastýring Seðlabanka Evrópu og almenn vaxtaþróun í evrusvæðinu skýra einnig hluta lækkunarinnar. Þó er grundvallaratriðið skýrt: króatíski seðlabankinn sjálfur staðfesti lægri vexti eftir upptöku evru.",
       "supporting_evidence": [],
       "contradicting_evidence": [
         {
           "id": "PREC-DATA-020",
           "source_name": "ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS",
-          "source_url": "https://sdw.ecb.europa.eu/"
+          "source_url": "https://data.ecb.europa.eu/"
         },
         {
           "id": "CURR-DATA-018",
@@ -47,6 +48,32 @@
       "article_title": "Staða nokkurra mála í Íslandsfarsa",
       "article_source": "blogis",
       "article_date": "2026-03-17"
+    },
+    {
+      "claim_text": "Myntráð er þóknanlegt Seðlabanka Evrópu og hafa nokkur lönd nýtt sér það fyrirkomulag fyrir evruvæðingu.",
+      "original_quote": "Myntráð er hins vegar þóknanlegt Seðlabanka Evrópu og hafa nokkur lönd nýtt sér það fyrirkomulag fyrir evruvæðingu.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.visindavefur.is/svar.php?id=87971\" title=\"Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (March 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-011</a> og <a href=\"https://www.visindavefur.is/svar.php?id=5921\" title=\"Vísindavefurinn — EDS & Gylfi Magnússon, University of Iceland (2006/2017, updated 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-012</a> staðfesta að Búlgaría tók upp evru snemma árs 2026, og fullyrðing 17 sjálf bendir á að Búlgaría hafi verið í ERM II með myntráð. Þetta styður þá staðreynd að nokkur ríki hafi notað myntráð sem aðdraganda evruupptöku (Eistland, Litháen, Búlgaría eru þekkt dæmi). Heimildirnar innihalda þó ekki beina tilvísun í «þóknanleika» ECB eða formlega samþykkt á myntráðsleiðinni.",
+      "missing_context": "Búlgaría, Eistland og Litháen notuðu myntráð fyrir evruupptöku — söguleg staðreynd sem birtist óbeint í <a href=\"https://www.visindavefur.is/svar.php?id=87971\" title=\"Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (March 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-011</a>. Bein tilvísun í afstöðu ECB til myntráða sem leiðar að evrunni er þó ekki að finna í heimildunum sem fyrirfinnast hér.",
+      "supporting_evidence": [
+        {
+          "id": "CURR-DATA-011",
+          "source_name": "Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (March 2026)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=87971"
+        },
+        {
+          "id": "CURR-DATA-012",
+          "source_name": "Vísindavefurinn — EDS & Gylfi Magnússon, University of Iceland (2006/2017, updated 2026)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=5921"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "currency",
+      "attribution": "paraphrased",
+      "article_slug": "innganga-i-erm-ii",
+      "article_title": "Innganga í ERM II",
+      "article_source": "Heimildin",
+      "article_date": "2026-05-05"
     }
   ],
   "articles": [
@@ -55,6 +82,16 @@
       "title": "Staða nokkurra mála í Íslandsfarsa",
       "source": "blogis",
       "date": "2026-03-17",
+      "claim_count": 1,
+      "attribution_types": [
+        "paraphrased"
+      ]
+    },
+    {
+      "slug": "innganga-i-erm-ii",
+      "title": "Innganga í ERM II",
+      "source": "Heimildin",
+      "date": "2026-05-05",
       "claim_count": 1,
       "attribution_types": [
         "paraphrased"

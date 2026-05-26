@@ -10,8 +10,8 @@
   "summary": "Greindar 34 fullyrdhingar .",
   "capsule": "Greiningin fær rétt að tvær úttektir voru gerðar eftir hlé á viðræðum árið 2013 — ein af Hagfræðistofnun HÍ og önnur af Alþjóðamálastofnun — og að meginregla sameiginlegrar sjávarútvegsstefnu ESB er jafn aðgangur að fiskimiðum. Athyglisvert er þó að aðildarríki mega samkvæmt reglugerð ESB halda eigin úthlutunarkerfum, þ. m. t. kvótakerfum, innan ramma stefnunnar — þannig gæti aflamarkskerfið að stórum hluta haldist jafnvel án formlegra undanþága. Jafnframt komst Alþjóðamálastofnunarskýrslan að þeirri niðurstöðu að Ísland gæti nýtt sér stöðu sína sem fyrsta fiskveiðiríki til að sækja um aðild sem samningslegar lykilforsendur.",
   "verdict_counts": {
-    "partially_supported": 17,
-    "supported": 10,
+    "partially_supported": 18,
+    "supported": 9,
     "unverifiable": 1
   },
   "epistemic_counts": {
@@ -559,8 +559,8 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/collection/eu-law/treaties.html\" title=\"European Parliament — EU Treaties and Protocols; Accession Treaty texts\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-023</a> staðfestir að aðildarsamningar hafa í reynd innihaldið undanþágur og sérstök fyrirkomulag. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> bendir á að fræðimenn telja 49. grein TEU leyfa hvaða samningsniðurstöðu sem er. Meginreglan er að aðildarlög (Acts of Accession) eru frumréttarleg og geta kveðið á um undanþágur ef þær eru skýrt tilgreindar.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/collection/eu-law/treaties.html\" title=\"European Parliament — EU Treaties and Protocols; Accession Treaty texts\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-023</a> staðfestir beint að aðildarsamningar einstakra ríkja hafi falið í sér varanlegar eða nær-varanlegar undanþágur — Danmörk fékk fjórar undanþágur með Edinborgar-samkomulaginu 1992, Írland fékk lagalegar tryggingar um hlutleysi og fleira í Lissabon-bókun 2009 og Finnland fékk sérákvæði um landbúnað norðan 62. breiddargráðu (greinar 141/142). Þessir samningar sýna að skýr ákvæði í aðildarsamningi geta veitt langvarandi sérmeðferð. Orðalag fullyrðingarinnar um «dómafordæmi» (case law) er á hinn bóginn ónákvæmt — heimildir tala um samningsfordæmi, ekki um dómaframkvæmd Evrópudómstólsins.",
       "supporting_evidence": [
         {
           "id": "EEA-LEGAL-023",
@@ -568,14 +568,25 @@
           "source_url": "https://eur-lex.europa.eu/collection/eu-law/treaties.html"
         },
         {
+          "id": "SOV-LEGAL-011",
+          "source_name": "Treaty of Lisbon — Protocol on the concerns of the Irish people; Protocol 21 on UK and Ireland (JHA opt-in)",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:22013A0302(01)"
+        }
+      ],
+      "contradicting_evidence": [
+        {
           "id": "EEA-LEGAL-021",
           "source_name": "European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks",
           "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
+        },
+        {
+          "id": "EEA-LEGAL-017",
+          "source_name": "European Commission — 'EU Accession Process: Steps towards joining' factsheet",
+          "source_url": "https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Fullyrðingin vísar til «ákveðins dómafordæmis» sem ekki er tilgreint í heimildum. Heimildir staðfesta meginregluna en ekki tilvísunina í tiltekinn dóm.",
-      "confidence": 0.7124999999999999,
+      "missing_context": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> og <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> leggja áherslu á að framkvæmdastjórn ESB heldur því fram opinberlega að regluverkið sjálft sé óumsemjanlegt — aðeins megi semja um aðlögunartímabil og tæknilegar útfærslur. Eftir 2004-stækkun hefur færri varanlegum undanþágum verið náð. Hugtakið «dómafordæmi» er heldur ekki í samræmi við hvernig heimildir lýsa undanþágunum — þær eru bókanir og samningsákvæði, ekki niðurstöður Evrópudómstólsins.",
+      "confidence": 0.7,
       "speakers": [
         {
           "name": "Hagfræðistofnun Háskóla Íslands",
@@ -707,32 +718,17 @@
         "epistemic_type": "factual"
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://hhi.hi.is/\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> staðfestir beinlínis niðurstöðu Hagfræðistofnunar: varanlegar undanþágur frá kjarnaregluverki ESB — þar á meðal sameiginlegri sjávarútvegsstefnu — eru ólíklegar samkvæmt samningasögu sambandsins. Heimildin tekur fram að ESB hefur stöðugt haldið því fram að regluverkið sé ósamningsatriði að efni til og einungis aðlögunartímabil standi til boða, ekki varanlegar frávik. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> staðfestir að Króatía (2013) fékk engar varanlegar undanþágur. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); OECD Economic Surveys: Iceland 2021\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-019</a> styður einnig þessa mynd.",
+      "explanation": "<a href=\"https://hhi.hi.is/\" title=\"Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-014</a> staðfestir beint að skýrsla Hagfræðistofnunar Háskóla Íslands frá 2014 komst að þeirri niðurstöðu að varanlegar undanþágur frá kjarnaákvæðum regluverksins (þar á meðal sameiginlegri sjávarútvegsstefnu) væru ólíklegar þar sem regluverkið sé óumsemjanlegt í efnisatriðum. Einungis aðlögunartímabil eru í boði, ekki varanlegar undanþágur — undantekningar á borð við undanþágur Danmerkur frá 1992 voru samdar undir sérstökum pólitískum kringumstæðum.",
       "supporting_evidence": [
         {
           "id": "EEA-DATA-014",
           "source_name": "Hagfræðistofnun Háskóla Íslands — Greining á efnahagslegum áhrifum ESB-aðildar (2014)",
           "source_url": "https://hhi.hi.is/"
-        },
-        {
-          "id": "EEA-LEGAL-012",
-          "source_name": "European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)",
-          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en"
-        },
-        {
-          "id": "AGRI-DATA-019",
-          "source_name": "European Commission — Opinion on Iceland's application (SEC(2010) 153); OECD Economic Surveys: Iceland 2021",
-          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
-        },
-        {
-          "id": "AGRI-LEGAL-003",
-          "source_name": "Summary of findings: Status of the accession negotiations between Iceland and the EU (Icelandic Ministry for Foreign Affairs, 2013); European Parliament briefing on EU-Iceland relations (2026)",
-          "source_url": "https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782591/EPRS_BRI(2026)782591_EN.pdf"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Skýrsluhöfundar bentu jafnframt á að raunveruleg samningsskilmál í sjávarútvegi og landbúnaði voru aldrei prófuð — viðræðum var slitið áður en erfiðustu kaflarnir voru opnaðir. Þá hafa sumir lögfræðingar bent á að 49. grein sáttmálans um Evrópusambandið heimilar tæknilega séð hvaða samningsniðurstöðu sem er, þótt pólitísk samstaða sé gegn nýjum undanþágum.",
-      "confidence": 0.8,
+      "missing_context": "Heimildin tekur fram að efnahagsleg áhrif aðildar séu enn óviss vegna þess að erfiðustu kaflarnir í sjávarútvegi og landbúnaði voru aldrei opnaðir. Hagfræðistofnun mælti með að prófa raunverulega samningsstöðu með viðræðum frekar en að gefa sér niðurstöður. <a href=\"https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782591/EPRS_BRI(2026)782591_EN.pdf\" title=\"Summary of findings: Status of the accession negotiations between Iceland and the EU (Icelandic Ministry for Foreign Affairs, 2013); European Parliament briefing on EU-Iceland relations (2026)\" target=\"_blank\" rel=\"noopener\">AGRI-LEGAL-003</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Iceland progress reports 2011–2013; Screening report Chapter 11\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-018</a> staðfesta að landbúnaðar- og sjávarútvegskaflarnir voru aldrei opnaðir í viðræðunum 2010–2013.",
+      "confidence": 0.85,
       "speakers": [
         {
           "name": "Hagfræðistofnun Háskóla Íslands",
@@ -1316,13 +1312,13 @@
       "attribution_type": "paraphrased",
       "claim_count": 12,
       "verdicts": {
-        "partially_supported": 7,
-        "supported": 5
+        "partially_supported": 8,
+        "supported": 4
       },
       "stance": "neutral",
       "slug": "hagfraedistofnun-haskola-islands",
       "mention_count": 3,
-      "credibility": 0.71
+      "credibility": 0.68
     },
     {
       "name": "Evrópusambandið",
@@ -1338,8 +1334,8 @@
       },
       "stance": "neutral",
       "slug": "evropusambandid",
-      "mention_count": 79,
-      "credibility": 0.68
+      "mention_count": 95,
+      "credibility": 0.67
     },
     {
       "name": "Alþjóðamálastofnun Háskóla Íslands",
@@ -1369,9 +1365,9 @@
       },
       "stance": "pro_eu",
       "slug": "thorgerdur-katrin-gunnarsdottir",
-      "mention_count": 91,
-      "credibility": 0.62,
-      "speech_count": 201
+      "mention_count": 102,
+      "credibility": 0.61,
+      "speech_count": 205
     }
   ]
 }

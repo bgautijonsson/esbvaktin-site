@@ -20,8 +20,8 @@
       "claim_text": "Verðbólga á Íslandi var 5,2 prósent í febrúar 2026.",
       "original_quote": "samanborið við 5,2 prósent í febrúar",
       "verdict": "supported",
-      "explanation": "<a href=\"https://ec.europa.eu/eurostat/web/hicp\" title=\"Eurostat HICP Flash Estimate; ECB Monetary Policy Decisions\" target=\"_blank\" rel=\"noopener\">CURR-DATA-008</a> staðfestir beint að verðbólga á Íslandi (HICP) var 5,2% í febrúar 2026. <a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a> staðfestir sömu tölu og nefnir «viðvarandi verðbólgu (5,2% í febrúar og mars 2026)». Tölurnar eru samhljóða í báðum heimildum og fullyrðingin er rétt.",
-      "missing_context": "Til samanburðar var verðbólga á evrusvæðinu 1,9% sama mánuð, sem þýðir 3,3 prósentustiga bil. Seðlabanki Íslands brást við viðvarandi verðbólgu með vaxtahækkun 18. mars 2026, þeirri fyrstu síðan ágúst 2023, sem sneri við lækkunarferli stýrivaxta.",
+      "explanation": "<a href=\"https://ec.europa.eu/eurostat/web/hicp\" title=\"Eurostat HICP Flash Estimate; ECB Monetary Policy Decisions\" target=\"_blank\" rel=\"noopener\">CURR-DATA-008</a> staðfestir beint að samræmd vísitala neysluverðs (HICP) á Íslandi var 5,2% í febrúar 2026, samanborið við 1,9% á evrusvæðinu. <a href=\"https://sedlabanki.is/peningastefna/peningastefnunefnd/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a> staðfestir sömu tölu og vísar einnig til þess að verðbólgan hafi verið 5,2% í mars 2026. Heimildin var grunnur fyrir vaxtahækkun Seðlabankans 18. mars 2026.",
+      "missing_context": "Talan 5,2% vísar til HICP-mælikvarða samkvæmt Eurostat. Innlend VNV-mæling Hagstofunnar getur gefið örlítið aðra tölu vegna munandi körfusamsetningar.",
       "supporting_evidence": [
         {
           "id": "CURR-DATA-008",
@@ -31,7 +31,12 @@
         {
           "id": "CURRENCY-DATA-017",
           "source_name": "Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar",
-          "source_url": "https://www.sedlabanki.is/peningastefna/vaxtaakvardir/"
+          "source_url": "https://sedlabanki.is/peningastefna/peningastefnunefnd/"
+        },
+        {
+          "id": "CURR-DATA-007",
+          "source_name": "Central Bank of Iceland; ECB; Eurostat HICP",
+          "source_url": "https://www.sedlabanki.is/"
         }
       ],
       "contradicting_evidence": [],

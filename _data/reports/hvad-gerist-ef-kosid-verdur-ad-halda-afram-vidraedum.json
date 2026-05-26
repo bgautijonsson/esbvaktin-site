@@ -10,8 +10,8 @@
   "summary": "Greindar 14 fullyrðingar. Niðurstöður: 9 stutt að hluta, 5 stutt af heimildum. Sjónarhorn: hallar á ESB-neikvæða hlið. Heildstæðni: 42%.",
   "capsule": "Þjóðaratkvæðagreiðslan 29. ágúst 2026 mun íslenska þjóðin spyrja hvort halda skuli áfram aðildarviðræðum — og greinin lýsir rétt því að jákvæð niðurstaða leiði til formlegra viðræðna um innleiðingu reglna ESB. Athyglisvert er þó að aðlögunartímabil — sem geta verið þrjú til tólf ár — hafa í eldri aðildarviðræðum gefið löndum verulegt svigrúm til innleiðingartímans, þannig að skrefið frá viðræðum til fullrar gildistöku er lengra en oft er gefið í skyn. Þetta samhengi kemur ítarlega fram í gögnum Evrópusambandsins um fyrri aðildarferlana.",
   "verdict_counts": {
-    "partially_supported": 10,
-    "supported": 4
+    "supported": 4,
+    "partially_supported": 10
   },
   "epistemic_counts": {
     "prediction": 1
@@ -34,13 +34,13 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "partially_supported",
-      "explanation": "Dagsetningin 29. ágúst 2026 er rétt staðfest af <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> og <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a>. Hins vegar er fullyrðingin um «áframhald aðildarviðræðna» aðeins ónákvæm. Spurningin sem lögð verður fyrir þjóðina er samkvæmt <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a>: «Á að halda áfram viðræðum um aðild Íslands að Evrópusambandinu?» — sem er víðtækari en «áframhald aðildarviðræðna» gefur til kynna. Auk þess er um ráðgefandi þjóðaratkvæðagreiðslu að ræða samkvæmt <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a>, en fullyrðingin nefnir ekki þennan mikilvæga fyrirvara.",
+      "verdict": "supported",
+      "explanation": "Margar heimildir staðfesta dagsetninguna 29. ágúst 2026. <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — bill 516 (157th session)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-007</a> vísar í frumvarp 516 frá 6. mars 2026 þar sem dagsetningin er sett fram, og <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir hana í flutningsræðu utanríkisráðherra 9. mars 2026. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> og <a href=\"https://www.nordiskpost.com/2026/03/08/eu-commission-iceland-application-valid/\" title=\"European Commission statement, March 2026 (reported via NordiskPost 8 March 2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-011</a> styðja einnig dagsetninguna.",
       "supporting_evidence": [
         {
-          "id": "SOV-DATA-006",
-          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
-          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+          "id": "SOV-PARL-007",
+          "source_name": "Alþingi — bill 516 (157th session)",
+          "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
         },
         {
           "id": "SOV-PARL-001",
@@ -48,14 +48,19 @@
           "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
         },
         {
-          "id": "SOV-INTL-001",
-          "source_name": "POLITICO Europe / Bloomberg / Government of Iceland",
-          "source_url": "https://www.politico.eu/article/iceland-eu-referendum-accession-talks/"
+          "id": "SOV-DATA-006",
+          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+        },
+        {
+          "id": "SOV-PARL-011",
+          "source_name": "European Commission statement, March 2026 (reported via NordiskPost 8 March 2026)",
+          "source_url": "https://www.nordiskpost.com/2026/03/08/eu-commission-iceland-application-valid/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Þjóðaratkvæðagreiðslan er ráðgefandi (ráðgefandi þjóðaratkvæðagreiðsla) en ekki bindandi — Alþingi er ekki skuldbundið af niðurstöðunni, þótt pólitísk hefð leggi þunga áherslu á virðingu fyrir vilja þjóðarinnar. Stjórnarandstaðan hefur gagnrýnt dagsetninguna sem of snemma og talið að nægileg umræða geti ekki átt sér stað yfir sumartímann. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-017</a> bendir á mikilvægan mun á stuðningi við þjóðaratkvæðagreiðsluna sjálfa (57%) og stuðningi við ESB-aðild (42%).",
-      "confidence": 0.5314355370975012,
+      "missing_context": "Þjóðaratkvæðagreiðslan er ráðgefandi en ekki bindandi fyrir Alþingi. Stjórnarandstaðan hefur gagnrýnt dagsetninguna sem of nálæga til að tryggja næga umræðu samkvæmt <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a>.",
+      "confidence": 0.95,
       "speakers": [
         {
           "name": "Hjörvar Sigurðsson",
@@ -94,7 +99,7 @@
       ],
       "contradicting_evidence": [],
       "missing_context": "Heimildir staðfesta ekki nákvæmt orðalag atkvæðaseðilsins. <a href=\"https://fel.hi.is/is/rannsoknir-spurningalistakannanir/simakannanir\" title=\"Félagsvísindastofnun — Methodology notes on EU polling; comparison of Gallup, MMR, and Maskína polls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-010</a> bendir á að orðalag hefur veruleg áhrif á mælda afstöðu — munur getur verið allt að 10 prósentustig eftir spurningarformi. Greiðslan er ráðgefandi (<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a>) og <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Þjóðarpúls, February–March 2026; Capacent Gallup historical EU polling data (2009–2013)\" target=\"_blank\" rel=\"noopener\">POLL-DATA-021</a> undirstrikar bilið milli stuðnings við viðræður og ESB-aðild.",
-      "confidence": 0.7343999999999999,
+      "confidence": 0.69768,
       "speakers": [
         {
           "name": "Hjörvar Sigurðsson",
@@ -140,7 +145,7 @@
         {
           "id": "SOV-PARL-005",
           "source_name": "Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)",
-          "source_url": "https://www.althingi.is/"
+          "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
         }
       ],
       "missing_context": "Guðrún Hafsteinsdóttir (<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T175023.html\" title=\"Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-003</a>) gagnrýndi einmitt að tillagan upplýsti þjóðina ekki nægilega um samningamarkmið og skilyrði. Hvort tillagan sé \"skýr\" ræðst af túlkun — stuðningsmenn telja hana nægilega skýra en andstæðingar segja hana ónákvæma.",
@@ -419,7 +424,7 @@
         {
           "id": "SOV-PARL-005",
           "source_name": "Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)",
-          "source_url": "https://www.althingi.is/"
+          "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
         }
       ],
       "contradicting_evidence": [],
@@ -552,7 +557,7 @@
         "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "Heimildir staðfesta að þingsályktunartillaga var lögð fram af utanríkisráðherra á 157. löggjafarþingi (<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a>, <a href=\"https://www.althingi.is/\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a>). Nákvæmt þingskjalsnúmer (875) er ekki staðfest í heimildunum þótt tillagan sjálf sé vel skjalfest.",
+      "explanation": "Heimildir staðfesta að þingsályktunartillaga var lögð fram af utanríkisráðherra á 157. löggjafarþingi (<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a>, <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a>). Nákvæmt þingskjalsnúmer (875) er ekki staðfest í heimildunum þótt tillagan sjálf sé vel skjalfest.",
       "supporting_evidence": [
         {
           "id": "SOV-PARL-001",
@@ -562,7 +567,7 @@
         {
           "id": "SOV-PARL-005",
           "source_name": "Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)",
-          "source_url": "https://www.althingi.is/"
+          "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
         }
       ],
       "contradicting_evidence": [],
@@ -579,8 +584,8 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> staðfestir að opinber gögn Framkvæmdastjórnar ESB lýsi aðildarviðræðum þannig að þær snúist um «conditions and timing for the candidate's adoption, implementation and enforcement of all current EU rules (the acquis).» <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> endurspeglar sömu lýsingu og bætir við að umsóknarríkið samþykki regluverkið eins og það stendur við aðild. Fullyrðingin er rétt — ESB birtir þetta opinberlega á vefsíðu sinni.",
+      "verdict": "partially_supported",
+      "explanation": "Efnisleg fullyrðing er staðfest af <a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> — opinber gögn framkvæmdastjórnar ESB segja beint að aðildarviðræður snúist um «the conditions and timing for the candidate's adoption, implementation and enforcement of alla current EU rules (the acquis)». Hins vegar er sérstök tilvísun fullyrðingarinnar í vefsíðuna «european-union.europa.eu» ekki sannprófuð beint í heimildum — heimildir vísa í «EU Accession Process: Steps towards Joining» staðreyndablað án nákvæmrar vefslóðar.",
       "supporting_evidence": [
         {
           "id": "EEA-LEGAL-017",
@@ -599,8 +604,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Þótt ESB lýsi ferlinu sem innleiðingu regluverks þá felst í reynd töluverður samningssveigjanleiki í aðlögunartímabilum. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> bendir á að Pólland hafi fengið 12 ára aðlögunartímabil á jarðakaupum og að langur frestur geti í reynd líkst undanþágu. Munurinn á «samningum um reglurnar» og «samningum um hvenær reglurnar taka gildi» er raunverulegur en kann að vera ýktur samkvæmt heimildum.",
-      "confidence": 0.88,
+      "missing_context": "<a href=\"https://enlargement.ec.europa.eu/system/files/2022-10/eu_accession_process_clusters%20(oct%202022).pdf\" title=\"European Commission — 'EU Accession Process: Steps towards joining' factsheet\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-017</a> og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission — 'EU Accession Process: Steps towards Joining'; Council negotiating frameworks\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-021</a> benda á að þetta orðalag, þótt tæknilega rétt, geti vanmetið raunverulegt svigrúm innan aðlögunartímabila. Aðlögunartímabil geta verið efnahagslega og pólitískt þýðingarmikil (t.d. 7 ára frestur á frjálsri för verkamanna eftir 2004-stækkun, 12 ára landkaupafrestur Póllands). Mörkin milli «að semja um reglurnar» og «að semja um hvenær reglurnar gilda» eru raunveruleg en geta verið ýkt.",
+      "confidence": 0.75,
       "speakers": [
         {
           "name": "Evrópusambandið",
@@ -668,7 +673,8 @@
       "attribution_type": "asserted",
       "claim_count": 6,
       "verdicts": {
-        "partially_supported": 6
+        "supported": 1,
+        "partially_supported": 5
       },
       "stance": "neutral",
       "slug": "hjorvar-sigurdsson",
@@ -699,8 +705,8 @@
       },
       "stance": "neutral",
       "slug": "evropusambandid",
-      "mention_count": 79,
-      "credibility": 0.68
+      "mention_count": 95,
+      "credibility": 0.67
     },
     {
       "name": "talsmenn ESB-aðildar",

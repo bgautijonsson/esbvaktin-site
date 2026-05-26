@@ -10,8 +10,9 @@
   "summary": "Greindar 11 fullyrðingar. Niðurstöður: 6 stutt að hluta, 4 stutt af heimildum, 1 ekki hægt að sannreyna. Sjónarhorn: hallar á ESB-neikvæða hlið. Heildstæðni: 35%.",
   "capsule": "Þjóðaratkvæðagreiðslan 29. ágúst 2026 er ráðgefandi en ekki bindandi — lögformlegt endanlegt vald hvílir á Alþingi. Forsætisráðherra Kristrún Frostadóttir hefur lýst því yfir að hún muni aldrei leggja til aðildarsamning sem tryggir ekki fullveldi og efnahagslega hagsmuni til lengri tíma, og heimildir staðfesta að hún gæti neitað að undirrita slíkan samning. Áhugavert samhengi sem gæti dýpkað skilning: aðlögun að ESB-reglum hefst ekki strax eftir já-atkvæði — allar breytingar ganga í gegnum samningsferlið og verða óafturkræfar fyrst þegar Alþingi samþykkir endanlega aðild.",
   "verdict_counts": {
-    "supported": 4,
-    "partially_supported": 6
+    "supported": 3,
+    "partially_supported": 6,
+    "unverifiable": 1
   },
   "epistemic_counts": null,
   "claim_count": 10,
@@ -179,8 +180,8 @@
         "confidence": 0.95,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "Þetta er almenn lýsing á þingræðisreglu sem gildir í íslensku stjórnskipulagi. <a href=\"https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/\" title=\"Althingi — Ministers registry, session 157\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-003</a> sýnir að ríkisstjórnin byggir á samstarfi þriggja flokka með 32 þingsætum af 63, og þingmeirihluti er forsenda ríkisstjórnar. Þingmeirihluti getur fellt ríkisstjórn með vantraustyfirlýsingu — þetta er grundvallarregla þingræðis sem þarf ekki sérstaka skjalfestingu.",
+      "verdict": "unverifiable",
+      "explanation": "Engin af heimildunum sjö fjallar beint um þingbundna ríkisstjórnarhefð eða aðferðir til að víkja forsætisráðherra úr embætti. <a href=\"https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/\" title=\"Althingi — Ministers registry, session 157\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-003</a> telur upp ráðherra í ríkisstjórn 157. löggjafarþings en lýsir ekki stjórnskipulegum mekanisma. <a href=\"https://www.althingi.is/lagas/nuna/1991055.html\" title=\"Lög um þingsköp Alþingis nr. 55/1991; Alþingi official website\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-019</a> fjallar um samráðsskyldu við utanríkismálanefnd en ekki um vantraustsyfirlýsingar. Heimildirnar duga ekki til að staðfesta eða hrekja fullyrðinguna.",
       "supporting_evidence": [
         {
           "id": "POLITICAL-DATA-003",
@@ -189,8 +190,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Heimildir lýsa ekki vantraustferlinu beint en almenn þingræðisregla á Íslandi er vel þekkt. Sjálfstæðisflokkurinn og Miðflokkurinn í stjórnarandstöðu gætu þó ekki einir fellt ríkisstjórnina þar sem meirihlutinn er stjórnarflokkanna.",
-      "confidence": 0.85,
+      "missing_context": "Þingbundin ríkisstjórnarhefð á Íslandi byggir á stjórnarskránni og óskráðum venjum, en heimildaflokkurinn sem fylgir þessari fullyrðingu fjallar fyrst og fremst um hagsmunaárekstra, samráðsskyldur og biðtíma fyrir fyrrverandi ráðherra. Vantar bein heimild um vantraustsyfirlýsingar og embættismissi forsætisráðherra.",
+      "confidence": 0.7,
       "speakers": [
         {
           "name": "Pawel Bartoszek",
@@ -302,7 +303,7 @@
         {
           "id": "SOV-PARL-005",
           "source_name": "Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)",
-          "source_url": "https://www.althingi.is/"
+          "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
         }
       ],
       "contradicting_evidence": [],
@@ -448,7 +449,7 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Þrátt fyrir formlega vörnina hafa stjórnarandstöðuflokkar gagnrýnt málsmeðferð (<a href=\"https://www.althingi.is/\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a>) — utanríkisráðherra mætti ekki á fund utanríkismálanefndar fyrir framlagningu þingsályktunartillögu og samráð var takmarkað. <a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a> sýnir fordæmi þess að utanríkisráðherra (Gunnar Bragi 2015) reyndi að taka einhliða ákvörðun um afturköllun ESB-umsóknar án þingsmeðferðar.",
+      "missing_context": "Þrátt fyrir formlega vörnina hafa stjórnarandstöðuflokkar gagnrýnt málsmeðferð (<a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a>) — utanríkisráðherra mætti ekki á fund utanríkismálanefndar fyrir framlagningu þingsályktunartillögu og samráð var takmarkað. <a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a> sýnir fordæmi þess að utanríkisráðherra (Gunnar Bragi 2015) reyndi að taka einhliða ákvörðun um afturköllun ESB-umsóknar án þingsmeðferðar.",
       "confidence": 0.8,
       "speakers": [
         {
@@ -474,12 +475,13 @@
       "claim_count": 6,
       "verdicts": {
         "partially_supported": 3,
-        "supported": 3
+        "unverifiable": 1,
+        "supported": 2
       },
       "stance": "pro_eu",
       "slug": "pawel-bartoszek",
-      "mention_count": 9,
-      "credibility": 0.77
+      "mention_count": 14,
+      "credibility": 0.72
     },
     {
       "name": "Nanna Margrét Gunnlaugsdóttir",
@@ -495,7 +497,7 @@
       "slug": "nanna-margret-gunnlaugsdottir",
       "mention_count": 2,
       "credibility": 0.5,
-      "speech_count": 30
+      "speech_count": 51
     },
     {
       "name": "Kristrún Frostadóttir",
@@ -509,8 +511,8 @@
       },
       "stance": "mixed",
       "slug": "kristrun-frostadottir",
-      "mention_count": 61,
-      "credibility": 0.65
+      "mention_count": 70,
+      "credibility": 0.64
     }
   ]
 }

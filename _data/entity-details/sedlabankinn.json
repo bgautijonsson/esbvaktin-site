@@ -2,31 +2,33 @@
   "slug": "sedlabankinn",
   "name": "Seðlabankinn",
   "type": "institution",
-  "description": "Stofnun",
+  "description": "Stofnun — hlutlaus um ESB-aðild.",
   "role": "Seðlabanki Íslands (Central Bank of Iceland)",
   "party": null,
-  "stance": "insufficient_data",
+  "stance": "neutral",
   "stance_score": 0.0,
   "credibility": 0.5,
   "attribution_counts": {
-    "paraphrased": 1
+    "paraphrased": 8,
+    "mentioned": 4
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 1
+    "partially_supported": 1,
+    "unverifiable": 1
   },
   "claims": [
     {
       "claim_text": "Seðlabankinn hefur sent skýr skilaboð um nauðsyn þess að koma böndum á ríkisútgjöld og meiri aga á vinnumarkaðsmódelið á Íslandi",
       "original_quote": "Á undanförnum mánuðum hefur Seðlabankinn sent skýr skilaboð og bent á þær aðgerðir sem við þurfum að ráðast í. Það þurfi að koma böndum á ríkisútgjöld og meiri aga á vinnumarkaðsmódelið á Íslandi, því útgjöld geta ekki endalaust aukist umfram framleiðni.",
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a> staðfestir að Seðlabankinn hækkaði stýrivexti 18. mars 2026 vegna viðvarandi verðbólgu (5,2%) og versnandi verðbólguhorfa — sem bendir til áhyggjuskilaboða um efnahagsstöðuna. Tveir af fimm nefndarmönnum vildu jafnvel stærri hækkun. Vaxtahækkun endurspeglar í raun ótilsögð «skilaboð» um nauðsyn aðhalds. Þó staðfestir engin af tilgreindum heimildum orðrétt að Seðlabankinn hafi sent «skýr skilaboð» um þörf á aðhaldi í ríkisútgjöldum eða á vinnumarkaðsmódelinu — heimildir fjalla um vaxtaákvarðanir, ekki opinberar yfirlýsingar bankans um fjármálastefnu ríkisins eða vinnumarkaðinn sérstaklega.",
-      "missing_context": "Heimildir ná til vaxtaákvarðana Seðlabankans en enga tilvísun er að finna í beinar yfirlýsingar seðlabankastjóra eða peningastefnunefndar um ríkisútgjöld eða vinnumarkaðsmódelið. Peningastefnuyfirlýsingar Seðlabankans gætu innihaldið slíka orðsendingu, en þær eru ekki meðal heimildanna. <a href=\"https://www.government.is/topics/economic-affairs-and-public-finances/\" title=\"Fjármála- og efnahagsráðuneytið — Ríkisfjármál; Moody's, S&P, Fitch sovereign ratings for Iceland\" target=\"_blank\" rel=\"noopener\">SOV-DATA-013</a> fjallar um fjármálaaga ríkissjóðs en tengist ekki skilaboðum Seðlabankans.",
+      "explanation": "<a href=\"https://sedlabanki.is/peningastefna/peningastefnunefnd/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a> staðfestir að Seðlabankinn hækkaði stýrivexti 18. mars 2026 vegna viðvarandi verðbólgu (5,2%) og versnandi verðbólguhorfa — sem bendir til áhyggjuskilaboða um efnahagsstöðuna. Tveir af fimm nefndarmönnum vildu jafnvel stærri hækkun. Vaxtahækkun endurspeglar í raun ótilsögð «skilaboð» um nauðsyn aðhalds. Þó staðfestir engin af tilgreindum heimildum orðrétt að Seðlabankinn hafi sent «skýr skilaboð» um þörf á aðhaldi í ríkisútgjöldum eða á vinnumarkaðsmódelinu — heimildir fjalla um vaxtaákvarðanir, ekki opinberar yfirlýsingar bankans um fjármálastefnu ríkisins eða vinnumarkaðinn sérstaklega.",
+      "missing_context": "Heimildir ná til vaxtaákvarðana Seðlabankans en enga tilvísun er að finna í beinar yfirlýsingar seðlabankastjóra eða peningastefnunefndar um ríkisútgjöld eða vinnumarkaðsmódelið. Peningastefnuyfirlýsingar Seðlabankans gætu innihaldið slíka orðsendingu, en þær eru ekki meðal heimildanna. <a href=\"https://www.stjornarradid.is/raduneyti/fjarmala-og-efnahagsraduneytid/\" title=\"Fjármála- og efnahagsráðuneytið — Ríkisfjármál; Moody's, S&P, Fitch sovereign ratings for Iceland\" target=\"_blank\" rel=\"noopener\">SOV-DATA-013</a> fjallar um fjármálaaga ríkissjóðs en tengist ekki skilaboðum Seðlabankans.",
       "supporting_evidence": [
         {
           "id": "CURRENCY-DATA-017",
           "source_name": "Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar",
-          "source_url": "https://www.sedlabanki.is/peningastefna/vaxtaakvardir/"
+          "source_url": "https://sedlabanki.is/peningastefna/peningastefnunefnd/"
         }
       ],
       "contradicting_evidence": [],
@@ -36,6 +38,27 @@
       "article_title": "Greið leið til lækkunar stýrivaxta",
       "article_source": "Vísir",
       "article_date": "2026-03-26"
+    },
+    {
+      "claim_text": "Samkvæmt spá Seðlabankans verður verðbólga 5,5 prósent á síðasta ársfjórðungi 2026.",
+      "original_quote": "verður 5,5 prósent á síðasta ársfjórðungi þessa árs, gangi spáin eftir",
+      "verdict": "unverifiable",
+      "explanation": "Þetta er bein tilvitnun í spá Seðlabankans en engin heimild í staðreyndagrunni staðfestir eða hafnar þessari tilteknu spá um 5,5% verðbólgu á síðasta ársfjórðungi 2026. <a href=\"https://sedlabanki.is/peningastefna/peningastefnunefnd/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a> staðfestir aðeins «versnandi verðbólguhorfur» almennt og að peningastefnunefnd hækkaði vexti í mars 2026 vegna þess.",
+      "missing_context": "Heimildir staðfesta almennt slæmar verðbólguhorfur en innihalda ekki tilteknar ársfjórðungsspár Seðlabankans um Peningamál. Talan 5,5% er talin koma úr nýjustu Peningamálum bankans en sú útgáfa er ekki í staðreyndagrunni. Hér er um framsýna spá að ræða með hámarks öryggi 0,8.",
+      "supporting_evidence": [
+        {
+          "id": "CURRENCY-DATA-017",
+          "source_name": "Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar",
+          "source_url": "https://sedlabanki.is/peningastefna/peningastefnunefnd/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "currency",
+      "attribution": "paraphrased",
+      "article_slug": "munum-aldrei-geta-tekid-upp-evru-nema-koma-vinnumarkadinum-fyrst-i-lag",
+      "article_title": "„Munum aldrei“ geta tekið upp evru nema koma vinnumarkaðinum fyrst í lag",
+      "article_source": "Vísir",
+      "article_date": "2026-05-22"
     }
   ],
   "articles": [
@@ -46,6 +69,17 @@
       "date": "2026-03-26",
       "claim_count": 1,
       "attribution_types": [
+        "paraphrased"
+      ]
+    },
+    {
+      "slug": "munum-aldrei-geta-tekid-upp-evru-nema-koma-vinnumarkadinum-fyrst-i-lag",
+      "title": "„Munum aldrei“ geta tekið upp evru nema koma vinnumarkaðinum fyrst í lag",
+      "source": "Vísir",
+      "date": "2026-05-22",
+      "claim_count": 1,
+      "attribution_types": [
+        "mentioned",
         "paraphrased"
       ]
     }

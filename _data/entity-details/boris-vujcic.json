@@ -7,7 +7,7 @@
   "party": null,
   "stance": "pro_eu",
   "stance_score": 0.67,
-  "credibility": 0.58,
+  "credibility": 0.54,
   "attribution_counts": {
     "quoted": 6,
     "paraphrased": 35,
@@ -15,10 +15,9 @@
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 20,
-    "supported": 5,
-    "misleading": 1,
-    "unverifiable": 2
+    "partially_supported": 22,
+    "supported": 4,
+    "misleading": 2
   },
   "claims": [
     {
@@ -306,17 +305,17 @@
     {
       "claim_text": "Í mars 2023 voru erlendar skuldir Króatíu komnar niður í 0,5 milljarða evra eða 0,7% af VLF vegna upptöku evrunnar",
       "original_quote": "Í mars árið 2023 voru erlendu skuldirnar komnar niður í 0,5 milljarða evra (77 milljarða króna) eða 0,7% af vergri landsframleiðslu. Þarna þurrkaðist á einni nóttu nánast út öll áhætta við erlend viðskipti.",
-      "verdict": "unverifiable",
-      "explanation": "Fullyrðingin nefnir sérstakar tölur — erlendar skuldir Króatíu hafi verið 0,5 milljarðar evra eða 0,7% af VLF í mars 2023. <a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Bank for International Settlements — Boris Vujčić speech: One Year with the Euro\" target=\"_blank\" rel=\"noopener\">CURR-DATA-018</a> staðfestir að gjaldeyrisskuldahlutfall féll úr um 70% í undir 1% eftir upptöku evrunnar, en gefur hvorki upp nákvæma krónutölu í milljörðum evra né tiltekið hlutfall af VLF. Engin heimild í staðreyndagrunni staðfestir eða hrekur þessar nákvæmu tölur.",
-      "missing_context": "Heimildir staðfesta almenna þróunina — gjaldeyrisskuldahlutfallið lækkaði verulega — en nákvæmu tölurnar (0,5 milljarðar evra, 0,7% af VLF) eru ekki staðfestar í neinum tiltækum gögnum. Þá ber að hafa í huga að króatíska kúnan var bundin evrunni í tvo áratugi fyrir formlega upptöku, þannig að umfang breytingarinnar var minna en ella.",
-      "supporting_evidence": [
+      "verdict": "misleading",
+      "explanation": "Fullyrðingin virðist rugla saman tveimur ólíkum stærðum. <a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Bank for International Settlements — Boris Vujčić speech: One Year with the Euro\" target=\"_blank\" rel=\"noopener\">CURR-DATA-018</a> vitnar í Boris Vujčić, seðlabankastjóra Króatíu, sem sagði að erlendgjaldeyrisskuldir (foreign-currency-denominated debt) hefðu fallið úr um 70% af heildarskuldum niður í minna en 1% eftir evruupptökuna — þetta er hlutfall af heildarskuldum sem voru í erlendri mynt, ekki heildarupphæð erlendra skulda í evrum. <a href=\"https://data.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a> og <a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a> staðfesta jákvæð áhrif evruupptöku Króatíu en hvergi koma fram tölurnar 0,5 milljarðar evra eða 0,7% af VLF. Fullyrðingin virðist umorða gengisáhættutölu í alranga staðtölu um erlendar skuldir.",
+      "missing_context": "Tölurnar 0,5 milljarðar og 0,7% af VLF eru ekki staðfestar. Fullyrðingin um að «nánast öll áhætta við erlend viðskipti» hafi þurrkast út er of víð — gjaldeyrisáhætta gagnvart gjaldmiðlum utan evrusvæðisins (USD, GBP o.fl.) er áfram til staðar.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [
         {
           "id": "CURR-DATA-018",
           "source_name": "Bank for International Settlements — Boris Vujčić speech: One Year with the Euro",
           "source_url": "https://www.bis.org/review/r240131a.htm"
         }
       ],
-      "contradicting_evidence": [],
       "category": "currency",
       "attribution": "paraphrased",
       "article_slug": "gjaldeyrisahaettan-thurrkadist-ut",
@@ -344,7 +343,7 @@
         {
           "id": "PREC-DATA-020",
           "source_name": "ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS",
-          "source_url": "https://sdw.ecb.europa.eu/"
+          "source_url": "https://data.ecb.europa.eu/"
         }
       ],
       "contradicting_evidence": [],
@@ -359,13 +358,13 @@
       "claim_text": "Vextir á íbúðalánum og fyrirtækjalánum í Króatíu eru nú þeir sömu og í Þýskalandi",
       "original_quote": "landsmenn hefðu gjarnan spurt í gegnum tíðina hvenær þeir gætu fengið íbúðalán á sömu kjörum og Þjóðverjar. [...] Og nú eru vextir þeir sömu og í Þýskalandi.",
       "verdict": "partially_supported",
-      "explanation": "Samkvæmt <a href=\"https://sdw.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a> voru íbúðalánsvextir í Króatíu um 3,0% í september 2025 en í Þýskalandi 3,71% í desember 2025 — króatískir vextir voru reyndar lægri en þýskir, ekki «þeir sömu». Hvað varðar fyrirtækjalán segir heimildin aðeins að þau hafi einnig lækkað, en gefur engar nákvæmar tölur til samanburðar við Þýskaland. Fullyrðingin er því ónákvæm á tvo vegu: hún segir vextina «sömu» þegar króatískir eru í raun lægri á íbúðalánum, og hún fullyrðir jafnframt sömu þróun á fyrirtækjalánum án þess að gögn staðfesti það beint.",
+      "explanation": "Samkvæmt <a href=\"https://data.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a> voru íbúðalánsvextir í Króatíu um 3,0% í september 2025 en í Þýskalandi 3,71% í desember 2025 — króatískir vextir voru reyndar lægri en þýskir, ekki «þeir sömu». Hvað varðar fyrirtækjalán segir heimildin aðeins að þau hafi einnig lækkað, en gefur engar nákvæmar tölur til samanburðar við Þýskaland. Fullyrðingin er því ónákvæm á tvo vegu: hún segir vextina «sömu» þegar króatískir eru í raun lægri á íbúðalánum, og hún fullyrðir jafnframt sömu þróun á fyrirtækjalánum án þess að gögn staðfesti það beint.",
       "missing_context": "Vaxtasamanburðurinn er flóknari en fullyrðingin gefur til kynna. Króatía hafði bundið kúnuna við evruna í áratugi — vaxtasamleitni var þegar hafin. Ísland er í gjörólíkri stöðu með frjálsa krónu og mun hærri stýrivexti (7,50% á móti 2,00% hjá Seðlabanka Evrópu). Vextir á íbúðalánum á Íslandi eru um 7,5–10,6% (óverðtryggð) samkvæmt <a href=\"https://www.sedlabanki.is/\" title=\"Central Bank of Iceland; ECB; Eurostat HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-007</a>, þannig að bilið gagnvart evrusvæðinu er miklu stærra en í króatíska dæminu.",
       "supporting_evidence": [
         {
           "id": "PREC-DATA-020",
           "source_name": "ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS",
-          "source_url": "https://sdw.ecb.europa.eu/"
+          "source_url": "https://data.ecb.europa.eu/"
         },
         {
           "id": "PREC-DATA-019",
@@ -389,11 +388,38 @@
     {
       "claim_text": "Pólland og Ungverjaland eru með hærri vexti en Króatía vegna þess að þau eru ekki með evruna",
       "original_quote": "Pólland, Ungverjaland og fleiri lönd sem ekki eru með evruna eru með hærri vexti",
-      "verdict": "unverifiable",
-      "explanation": "Fullyrðingin heldur því fram að Pólland og Ungverjaland séu með hærri vexti en Króatía vegna þess að þau noti ekki evruna. Engin heimild í staðreyndagrunni gefur upp vaxtastig í Póllandi eða Ungverjalandi. <a href=\"https://sdw.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a> og <a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Bank for International Settlements — Boris Vujčić speech: One Year with the Euro\" target=\"_blank\" rel=\"noopener\">CURR-DATA-018</a> staðfesta vaxtaskerðingu í Króatíu eftir upptöku evrunnar og <a href=\"https://www.visindavefur.is/svar.php?id=5921\" title=\"Vísindavefurinn — EDS & Gylfi Magnússon, University of Iceland (2006/2017, updated 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-012</a> nefnir bæði Pólland og Ungverjaland sem ESB-ríki utan evrusvæðisins, en veitir engar vaxtaupplýsingar um þau. Orsakatengslið — að hærri vextir stafi sérstaklega af því að evran sé ekki notuð — er ekki hægt að staðfesta eða hrekja með fyrirliggjandi heimildum.",
-      "missing_context": "Heimildir skortir um vaxtastig í Póllandi og Ungverjalandi. Þá felur fullyrðingin í sér einfalda orsakakeðju (ekki evra → hærri vextir) en í raun hafa margir þættir áhrif á vaxtastig, svo sem peningastefna, verðbólga, ríkisfjármál og lánshæfismat.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta hluta af orsakatengingunni en ekki hana alla. <a href=\"https://data.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a> og <a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a> sýna að vextir á húsnæðislánum í Króatíu lækkuðu eftir evruupptöku árið 2023 og urðu lægri en í Þýskalandi (um 3,0% borið saman við 3,71%). <a href=\"https://www.visindavefur.is/svar.php?id=5921\" title=\"Vísindavefurinn — EDS & Gylfi Magnússon, University of Iceland (2006/2017, updated 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-012</a> staðfestir að Pólland og Ungverjaland nota enn eigin gjaldmiðla. Þó ber að hafa í huga að vaxtamismunur milli ríkja ræðst af mörgum þáttum — verðbólguvæntingum, ríkisfjármálum, lánsfjárhættu og peningastefnu — ekki einungis gjaldmiðlinum. <a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG\" title=\"World Bank — World Development Indicators\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-009</a> og <a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=IS\" title=\"World Bank — GDP growth (annual %) (NY.GDP.MKTP.KD.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-014</a> sýna einnig að gjaldmiðlasvæðisaðild ein og sér útilokar ekki sveiflur.",
+      "missing_context": "Beinar vaxtaupplýsingar um Pólland og Ungverjaland vantar í staðreyndagrunninn. Orsakasamband milli gjaldmiðils og vaxtastigs er flóknara en fullyrðingin gefur til kynna — verðbólga, ríkisfjármálastefna og seðlabankastefna skipta einnig máli.",
+      "supporting_evidence": [
+        {
+          "id": "PREC-DATA-020",
+          "source_name": "ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS",
+          "source_url": "https://data.ecb.europa.eu/"
+        },
+        {
+          "id": "PREC-DATA-019",
+          "source_name": "Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report",
+          "source_url": "https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023"
+        },
+        {
+          "id": "CURR-DATA-012",
+          "source_name": "Vísindavefurinn — EDS & Gylfi Magnússon, University of Iceland (2006/2017, updated 2026)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=5921"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "CURRENCY-DATA-009",
+          "source_name": "World Bank — World Development Indicators",
+          "source_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG"
+        },
+        {
+          "id": "CURRENCY-DATA-014",
+          "source_name": "World Bank — GDP growth (annual %) (NY.GDP.MKTP.KD.ZG)",
+          "source_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=IS"
+        }
+      ],
       "category": "currency",
       "attribution": "paraphrased",
       "article_slug": "gjaldeyrisahaettan-thurrkadist-ut",
@@ -602,29 +628,14 @@
     {
       "claim_text": "Löndin sem fóru í ESB-aðildarviðræður árið 1998 og 2000 eru nú öll orðin hluti af ESB",
       "original_quote": "Löndin eru nú öll orðin hluti af ESB.",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-2023-27_en\" title=\"2003 Accession Treaty; 2005 Accession Treaty (Bulgaria/Romania); 2011 Croatia Accession Treaty; European Commission CAP reform documentation\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-016</a> staðfestir aðild ríkjanna sem gengu í 2004 (Tékkland, Kýpur, Eistland, Ungverjaland, Lettland, Litáen, Malta, Pólland, Slóvakía, Slóvenía) og Búlgaríu og Rúmeníu sem gengu í 2007. Öll löndin sem nefnd voru í fullyrðingum 9 og 10 eru nú ESB-aðildarríki. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1\" title=\"Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-006</a> staðfestir einnig stækkun 2004.",
-      "missing_context": null,
+      "verdict": "partially_supported",
+      "explanation": "Heimildirnar staðfesta ekki beint hvaða ríki hófu aðildarviðræður árin 1998 og 2000. <a href=\"https://visitukraine.today/blog/2963/eu-membership-how-long-did-it-take-between-the-start-of-negotiations-and-accession\" title=\"Visit Ukraine / EU Council enlargement data\" target=\"_blank\" rel=\"noopener\">PREC-DATA-036</a> nefnir ríkin sem gengu inn 2004 (10 ríki úr Lúxemborg- og Helsinki-hópnum) og 2007 (Búlgaría, Rúmenía), en án þess að rekja hvenær viðræður hófust fyrir hvert ríki. Sögulega er rétt að öll ríkin sem hófu viðræður 1998 og 2000 hafi á endanum gengið í ESB, en heimildirnar staðfesta þetta ekki með beinum hætti.",
+      "missing_context": "Lúxemborg-hópurinn (viðræður hófust 1998: Kýpur, Tékkland, Eistland, Ungverjaland, Pólland, Slóvenía) og Helsinki-hópurinn (viðræður hófust 2000: Búlgaría, Lettland, Litháen, Malta, Rúmenía, Slóvakía) gengu allir inn í ESB á tímabilinu 2004–2007, en heimildirnar fela ekki í sér beina staðfestingu á þessari upptalningu.",
       "supporting_evidence": [
         {
-          "id": "AGRI-DATA-016",
-          "source_name": "2003 Accession Treaty; 2005 Accession Treaty (Bulgaria/Romania); 2011 Croatia Accession Treaty; European Commission CAP reform documentation",
-          "source_url": "https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-2023-27_en"
-        },
-        {
-          "id": "SOV-LEGAL-006",
-          "source_name": "Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1"
-        },
-        {
-          "id": "HOUSING-PRECEDENT-002",
-          "source_name": "Eurostat — House price index; European Commission — Post-accession economic developments in the Baltic States",
-          "source_url": "https://ec.europa.eu/eurostat/web/housing-price-statistics"
-        },
-        {
-          "id": "PREC-HIST-020",
-          "source_name": "European Commission — 2003 Act of Accession; Eurostat",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L:2003:236:TOC"
+          "id": "PREC-DATA-036",
+          "source_name": "Visit Ukraine / EU Council enlargement data",
+          "source_url": "https://visitukraine.today/blog/2963/eu-membership-how-long-did-it-take-between-the-start-of-negotiations-and-accession"
         }
       ],
       "contradicting_evidence": [],
@@ -665,7 +676,7 @@
       "claim_text": "Boris Vujcic sagði að vextir hafi snarlækkað strax eftir upptöku evru í Króatíu vegna stöðugleikans sem fylgdi öflugum gjaldmiðli.",
       "original_quote": "Sem dæmi nefnir hann að vextir hafi snarlækkað strax eftir upptöku evru vegna stöðugleikans sem fylgdi öflum gjaldmiðli.",
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.stortinget.no/\" title=\"Stortinget — Votering over representantforslag om norsk EU-medlemskap (mars 2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a> og <a href=\"https://sdw.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a> staðfesta að Vujčić lýsti vaxtafalli eftir evruaðild — húsnæðislánavextir féllu úr um 3,5% í 2022 niður í 3,64% í janúar 2024, og niður í 3,0% árið 2025. Orðið «snarlækkað» er þó yfirdrifið þar sem lækkunin var hófleg (ekki snarpur brotthvarf). Jafnframt varpar fullyrðingin of einfaldri orsök á ferlið — Vujčić vísaði til lægri áhættuálags, regluverkssamræmingar og lausafjár banka, ekki eingöngu «stöðugleika öflugs gjaldmiðils». Króatíska kúnan var auk þess nánast fest við evru í tvo áratugi áður.",
+      "explanation": "<a href=\"https://www.stortinget.no/\" title=\"Stortinget — Votering over representantforslag om norsk EU-medlemskap (mars 2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a> og <a href=\"https://data.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a> staðfesta að Vujčić lýsti vaxtafalli eftir evruaðild — húsnæðislánavextir féllu úr um 3,5% í 2022 niður í 3,64% í janúar 2024, og niður í 3,0% árið 2025. Orðið «snarlækkað» er þó yfirdrifið þar sem lækkunin var hófleg (ekki snarpur brotthvarf). Jafnframt varpar fullyrðingin of einfaldri orsök á ferlið — Vujčić vísaði til lægri áhættuálags, regluverkssamræmingar og lausafjár banka, ekki eingöngu «stöðugleika öflugs gjaldmiðils». Króatíska kúnan var auk þess nánast fest við evru í tvo áratugi áður.",
       "missing_context": "Vujčić nefndi lægri áhættuálag, regluverkssamræmingu og lausafjárstöðu banka sem orsakir — ekki eingöngu «stöðugleika gjaldmiðils». Króatía hafði nánast fast gengi gagnvart evru í 20 ár þannig aðlögunin var mun minni en hún yrði fyrir Ísland (þar sem krónan er frjálst fljótandi). Húsnæðisverð hélt áfram að hækka þrátt fyrir vaxtafallið, og rannsóknir (<a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a>) sýna að lægri vextir geta hækkað húsnæðisverð frekar en lækkað.",
       "supporting_evidence": [
         {
@@ -676,7 +687,7 @@
         {
           "id": "PREC-DATA-020",
           "source_name": "ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS",
-          "source_url": "https://sdw.ecb.europa.eu/"
+          "source_url": "https://data.ecb.europa.eu/"
         },
         {
           "id": "PREC-DATA-019",
@@ -696,13 +707,13 @@
       "claim_text": "Verðbólga í Króatíu fór úr um 12% niður í um 3,5% eftir upptöku evru.",
       "original_quote": "verðstöðugleiki hefði aukist verulega með stöðugu gengi sem hefði leið til lágrar og stöðugrar verðbólgu sem fór fljótlega úr um 12% niður í um 3,5%",
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://sdw.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a> staðfestir að verðbólga í Króatíu féll úr hámarki 13,1% í byrjun 2023 niður í um 3,4% seint á árinu 2024. <a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a> nefnir verðbólgu 10,7% árið 2022 og 8,4% árið 2023. Tölurnar eru nálægt fullyrðingunni (um 12% → 3,5%). Hins vegar er orsökusamhengið of einfalt — verðbólgufallið var hluti af almennri evróskri þróun (ESB-meðaltal féll einnig verulega á sama tíma) og tengist ekki eingöngu evruaðild.",
+      "explanation": "<a href=\"https://data.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a> staðfestir að verðbólga í Króatíu féll úr hámarki 13,1% í byrjun 2023 niður í um 3,4% seint á árinu 2024. <a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a> nefnir verðbólgu 10,7% árið 2022 og 8,4% árið 2023. Tölurnar eru nálægt fullyrðingunni (um 12% → 3,5%). Hins vegar er orsökusamhengið of einfalt — verðbólgufallið var hluti af almennri evróskri þróun (ESB-meðaltal féll einnig verulega á sama tíma) og tengist ekki eingöngu evruaðild.",
       "missing_context": "Verðbólgufallið í Króatíu átti sér samsvörun í öllu evrusvæðinu — ESB-meðaltal féll einnig úr hámarki 10,6% (október 2022) niður í undir 3% seint 2023. Króatía var nú þegar nánast bundin við evru í tvo áratugi. Fullyrðingin gefur til kynna orsakatengsl milli evruaðildar og verðbólgufalls sem eru of einföld — aðrir þættir (vextir ESB, orkuverð, framboðskeðjur) höfðu jafnvel meiri áhrif. Króatísk verðbólga var enn hærri en meðaltal evrusvæðisins eftir aðild.",
       "supporting_evidence": [
         {
           "id": "PREC-DATA-020",
           "source_name": "ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS",
-          "source_url": "https://sdw.ecb.europa.eu/"
+          "source_url": "https://data.ecb.europa.eu/"
         },
         {
           "id": "PREC-DATA-019",
@@ -722,7 +733,7 @@
       "claim_text": "Boris Vujcic sagði að aðalkostir evrunnar séu minni áhætta, lægri fjármagnakostnaður og meiri þjóðhagslegur sveigjanleiki.",
       "original_quote": "Varðandi evruna sagði Boris «að aðalkostir þess að vera með evruna væru minni áhætta, lægri fjármagnkostnaður og meiri þjóðhagslegur sveigjanleiki.»",
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Bank for International Settlements — Boris Vujčić speech: One Year with the Euro\" target=\"_blank\" rel=\"noopener\">CURR-DATA-018</a> staðfestir að Vujčić talaði um minni gjaldeyrisáhættu sem «mikilvægasta skipulagslega ávinninginn» og lægri fjármagnakostnað vegna betri lánshæfismats og brotthvarfs gjaldmiðlaáhættu. <a href=\"https://sdw.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a> styður lægri vexti. Orðið «þjóðhagslegur sveigjanleiki» kemur hins vegar hvergi beint fram í heimildum sem yfirlýsing Vujčić — heimildir nefna fremur brotthvarf gjaldmiðlaáhættu, aðgang að lausafjáraðstöðu Seðlabanka Evrópu og lægri viðskiptakostnað. Fullyrðingin endurspeglar inntak yfirlýsinga hans að mestu, en «sveigjanleiki» er ekki nákvæm lýsing á því sem hann sagði.",
+      "explanation": "<a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Bank for International Settlements — Boris Vujčić speech: One Year with the Euro\" target=\"_blank\" rel=\"noopener\">CURR-DATA-018</a> staðfestir að Vujčić talaði um minni gjaldeyrisáhættu sem «mikilvægasta skipulagslega ávinninginn» og lægri fjármagnakostnað vegna betri lánshæfismats og brotthvarfs gjaldmiðlaáhættu. <a href=\"https://data.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a> styður lægri vexti. Orðið «þjóðhagslegur sveigjanleiki» kemur hins vegar hvergi beint fram í heimildum sem yfirlýsing Vujčić — heimildir nefna fremur brotthvarf gjaldmiðlaáhættu, aðgang að lausafjáraðstöðu Seðlabanka Evrópu og lægri viðskiptakostnað. Fullyrðingin endurspeglar inntak yfirlýsinga hans að mestu, en «sveigjanleiki» er ekki nákvæm lýsing á því sem hann sagði.",
       "missing_context": "Vujčić nefndi brotthvarf gjaldmiðlaáhættu, aðgang að ECB-lausafjáraðstöðu og lægri viðskiptakostnað (0,3% af VLF árlega) samkvæmt <a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a>. Hugtakið «þjóðhagslegur sveigjanleiki» er ekki notað í heimildum og gæti jafnvel stangast á við gagnrýni á evrusvæðið þar sem tap á sjálfstæðri peningastefnu dregur úr þjóðhagslegum sveigjanleika.",
       "supporting_evidence": [
         {
@@ -733,7 +744,7 @@
         {
           "id": "PREC-DATA-020",
           "source_name": "ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS",
-          "source_url": "https://sdw.ecb.europa.eu/"
+          "source_url": "https://data.ecb.europa.eu/"
         }
       ],
       "contradicting_evidence": [],

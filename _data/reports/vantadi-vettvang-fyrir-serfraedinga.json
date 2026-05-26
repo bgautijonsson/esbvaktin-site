@@ -10,8 +10,8 @@
   "summary": "Greindar 8 fullyrðingar. Niðurstöður: 3 stutt af heimildum, 3 ekki hægt að sannreyna, 2 stutt að hluta. Sjónarhorn: hlutlaus en ófullnægjandi. Heildstæðni: 25%.",
   "capsule": "Reynsla Íslands og Noregs af sjálfbærri fiskveiðistjórnun er vel skjalfest og bæði löndin flytja út stærstan hluta afla síns á alþjóðamarkaði. Áhugavert er að bæði löndin stýra sjálfstætt heildarveiðiheimildum sínum — þær ákvarðanir myndu flytjast til Brussel við ESB-aðild, enda var sjávarútvegskafli eitt þyngsta viðfangsefnið þegar Ísland var í aðildarviðræðum 2010–2013 og hann var aldrei formlega opnaður.",
   "verdict_counts": {
-    "supported": 3,
-    "partially_supported": 2
+    "partially_supported": 3,
+    "supported": 2
   },
   "epistemic_counts": null,
   "claim_count": 5,
@@ -29,8 +29,8 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "Heimildir staðfesta að bæði Ísland og Noregur hafa þróað viðurkennd fiskveiðistjórnunarkerfi. Samkvæmt FISH-DATA-022 er íslenska kvótakerfið (ITQ) talið eitt árangursríkasta í heiminum, innleitt 1984 og gert varanlegt 1990 — þorskveiðistofn hefur u.þ.b. tvöfaldast frá upphafi 21. aldar. <a href=\"https://www.fiskeridir.no/English/Fisheries/Statistics\" title=\"Norwegian Directorate of Fisheries — Statistics\" target=\"_blank\" rel=\"noopener\">FISH-COMP-001</a> sýnir að Noregur beitir öðru kerfi, sem byggist á óframseljanlegum kvótum og svæðisdreifingu, en er einnig vel þróað. Báðar nálganir njóta alþjóðlegrar viðurkenningar.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta reynslu Íslands og Noregs af fiskveiðistjórnun. FISH-DATA-022 segir að íslenska kvótakerfið frá 1984 sé eitt það árangursríkasta í heiminum. <a href=\"https://www.fiskeridir.no/English/Fisheries/Statistics\" title=\"Norwegian Directorate of Fisheries — Statistics\" target=\"_blank\" rel=\"noopener\">FISH-COMP-001</a> lýsir norska kerfinu og bendir á að það er oft nefnt af gagnrýnendum íslenska kerfisins. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380\" title=\"EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024\" target=\"_blank\" rel=\"noopener\">FISH-DATA-032</a> sýnir að Danmörk og Holland hafa innleitt svipuð framseljanleg kvótakerfi. Hins vegar staðfesta heimildir ekki beint að þessi reynsla hafi verið nýtt af öðrum ríkjum á skipulagðan hátt eða með formlegri þekkingarmiðlun.",
       "supporting_evidence": [
         {
           "id": "FISH-DATA-022",
@@ -41,11 +41,16 @@
           "id": "FISH-COMP-001",
           "source_name": "Norwegian Directorate of Fisheries — Statistics",
           "source_url": "https://www.fiskeridir.no/English/Fisheries/Statistics"
+        },
+        {
+          "id": "FISH-DATA-032",
+          "source_name": "EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Gagnrýni á íslenska ITQ-kerfið — kvótasamþjöppun hefur minnkað aðgengi smærri útgerða — kemur ekki fram í fullyrðingunni. Þá er Ísland og Noregur utan sameiginlegrar sjávarútvegsstefnu ESB, sem takmarkar beina samanburðarmöguleika við ESB-ríki.",
-      "confidence": 0.8,
+      "missing_context": "FISH-DATA-022 nefnir að íslenska kvótakerfið hefur verið gagnrýnt fyrir samþjöppun eignarhalds. <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development\" title=\"European Parliament Research Service — Fisheries Ownership and Concentration in the EU\" target=\"_blank\" rel=\"noopener\">FISH-DATA-029</a> sýnir að innan ESB hafa Danmörk, Holland og Eistland innleitt svipuð kerfi, en það er ekki sett fram sem afurð íslenskrar eða norskrar þekkingarmiðlunar. Fullyrðingin um að reynslan «nýtist öðrum ríkjum» er almennari en heimildir staðfesta beint.",
+      "confidence": 0.7,
       "speakers": [
         {
           "name": "Ísland",

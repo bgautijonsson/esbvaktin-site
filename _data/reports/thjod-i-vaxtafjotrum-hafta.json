@@ -10,8 +10,8 @@
   "summary": "Greindar 12 fullyrðingar. Niðurstöður: 7 stutt að hluta, 3 stutt af heimildum, 2 ekki hægt að sannreyna. Sjónarhorn: mjög ESB-jákvæð. Heildstæðni: 25%.",
   "capsule": "Samanburður á vöxtum á Íslandi og á Norðurlöndunum á við rök — íslenskar fjölskyldur greiða hlutfallslega meira í vexti en sambærilegar fjölskyldur í nágrannalöndunum, og það er stutt af gögnum. Áhugavert er að Eurostat-tölur sýna að Noregur — sem er utan ESB og sameiginlegrar landbúnaðarstefnu en er á EES eins og Ísland — hefur mjög svipað matvælaverð og Ísland, sem bendir til þess að verndartollar séu aðeins ein af mörgum ástæðum hárs matvælaverðs; flutningskostnaður, einangrun og markaðsstærð spila einnig inn.",
   "verdict_counts": {
-    "supported": 3,
-    "partially_supported": 7
+    "partially_supported": 8,
+    "supported": 2
   },
   "epistemic_counts": {
     "prediction": 3
@@ -34,8 +34,8 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.sedlabanki.is/\" title=\"Central Bank of Iceland; ECB; Eurostat HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-007</a> staðfestir að stýrivextir Seðlabankans eru 7,50% samanborið við 2,00% hjá ECB — bilið er 5,50 prósentustig. Óverðtryggðir húsnæðisvextir á Íslandi eru 8,15–10,6% á meðan þeir eru um 3,7% í Þýskalandi. Samkvæmt <a href=\"https://arxiv.org/abs/1302.4112\" title=\"Ólafsson (2013) — 'An Examination of the Effect on the Icelandic Banking System of Verðtryggð Lán', arXiv:1302.4112\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-018</a> endurgreiðir íslenskur lántaki með verðtryggt lán um 4,6-sinnum höfuðstól lánsins, samanborið við 1,3–1,5 á evrusvæðinu. Þessi gögn styðja fullyrðinguna um verulegan vaxtamun.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.sedlabanki.is/\" title=\"Central Bank of Iceland; ECB; Eurostat HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-007</a> staðfestir að íslensk heimili greiða 3–4 sinnum meira í heildarvexti á 25 ára húsnæðisláni en sambærilegar fjölskyldur á evrusvæðinu — íslenskir nafnvextir eru um 9% á móti um 3,5% á evrusvæðinu. Heimildir styðja þó samanburðinn fyrst og fremst við evrusvæðið og Þýskaland sérstaklega, ekki Norðurlöndin sem heild. Danmörk, Svíþjóð og Noregur eru ekki á evrusvæðinu og hafa eigin myntir og vaxtarsögu.",
       "supporting_evidence": [
         {
           "id": "CURR-DATA-007",
@@ -46,16 +46,11 @@
           "id": "CURRENCY-DATA-018",
           "source_name": "Ólafsson (2013) — 'An Examination of the Effect on the Icelandic Banking System of Verðtryggð Lán', arXiv:1302.4112",
           "source_url": "https://arxiv.org/abs/1302.4112"
-        },
-        {
-          "id": "HOUS-DATA-005",
-          "source_name": "Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase",
-          "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Samanburðurinn er ekki beinlínis á milli Íslands og annarra Norðurlanda (Danmerkur, Noregs, Svíþjóðar, Finnlands) heldur milli Íslands og evrusvæðisins almennt. Verðtryggð lán á Íslandi hafa lægri nafnvexti (3,5–4,5%) en höfuðstóll hækkar með verðbólgu, sem gerir beinan samanburð flókinn. Margfeldið 4,6x úr <a href=\"https://arxiv.org/abs/1302.4112\" title=\"Ólafsson (2013) — 'An Examination of the Effect on the Icelandic Banking System of Verðtryggð Lán', arXiv:1302.4112\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-018</a> er byggt á forsendum frá 2013 og endurspeglar ekki endilega núverandi aðstæður.",
-      "confidence": 0.867,
+      "missing_context": "Heimildir bera saman Ísland við evrusvæðið og Þýskaland en ekki sérstaklega við hin Norðurlöndin. Þrjú Norðurlönd (Danmörk, Svíþjóð, Noregur) eru með sjálfstæða mynt og því ekki að fullu sambærileg við evrusvæðisgögnin. Verðtryggð lán á Íslandi hafa lægri raunvexti (um 4,1%) en óverðtryggð, sem flækir samanburðinn. Vaxtamunur endurspeglar einnig verðbólguvæntingar og gjaldmiðilsáhættu sem hyrfu ekki sjálfkrafa við upptöku evru — Maastricht-skilyrðin krefjast samleitni fyrst.",
+      "confidence": 0.7,
       "speakers": [
         {
           "name": "Sveinn Atli Gunnarsson",
@@ -419,7 +414,7 @@
         "epistemic_type": "prediction"
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://chamber.is/intros/iceland-accession-negotiations-with-the-eu\" title=\"Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-009</a> áætlar 15–25% lækkun á matvælaverði við tollafnám, sem bendir til lægra hráefnisverðs. <a href=\"https://www.oecd.org/agriculture/topics/agricultural-policy-monitoring-and-evaluation/\" title=\"OECD — Agricultural Policy Monitoring and Evaluation 2023; Hagstofa Íslands; Bændasamtök Íslands\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-017</a> staðfestir háa tolla (40–60% að meðaltali) sem myndu falla brott við ESB-aðild. Fjármagnskostnaður gæti lækkað ef evru-aðild næðist, en <a href=\"https://www.visindavefur.is/svar.php?id=60906\" title=\"Vísindavefurinn — Jón Þór Sturluson, Associate Professor of Economics, Reykjavík University School of Business (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-015</a> bendir á að sú breyting gerist ekki fyrr en árum eftir inngöngu. Þó ber að gæta að: <a href=\"https://www.legislation.gov.uk/eut/eea-agreement/article/19\" title=\"EEA Agreement Article 19; Icelandic Ministry for Foreign Affairs — EEA review documentation\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-008</a> bendir á að hátt framleiðslukostnaður (veðurfar, smá stærð) haldist óháð tollabreytingum, og lægra hráefnisverð frá innflutningi þýðir aukna samkeppni sem ógnar innlendri framleiðslu.",
+      "explanation": "<a href=\"https://chamber.is/intros/iceland-accession-negotiations-with-the-eu\" title=\"Viðskiptaráð Íslands — Assessment of EU accession negotiations (2012); Hagfræðistofnun Háskóla Íslands; Bændasamtök Íslands position papers\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-009</a> áætlar 15–25% lækkun á matvælaverði við tollafnám, sem bendir til lægra hráefnisverðs. <a href=\"https://www.oecd.org/en/publications/agricultural-policy-monitoring-and-evaluation-2023_b14de474-en/full-report/iceland_fc821635.html\" title=\"OECD — Agricultural Policy Monitoring and Evaluation 2023; Hagstofa Íslands; Bændasamtök Íslands\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-017</a> staðfestir háa tolla (40–60% að meðaltali) sem myndu falla brott við ESB-aðild. Fjármagnskostnaður gæti lækkað ef evru-aðild næðist, en <a href=\"https://www.visindavefur.is/svar.php?id=60906\" title=\"Vísindavefurinn — Jón Þór Sturluson, Associate Professor of Economics, Reykjavík University School of Business (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-015</a> bendir á að sú breyting gerist ekki fyrr en árum eftir inngöngu. Þó ber að gæta að: <a href=\"https://www.legislation.gov.uk/eut/eea-agreement/article/19\" title=\"EEA Agreement Article 19; Icelandic Ministry for Foreign Affairs — EEA review documentation\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-008</a> bendir á að hátt framleiðslukostnaður (veðurfar, smá stærð) haldist óháð tollabreytingum, og lægra hráefnisverð frá innflutningi þýðir aukna samkeppni sem ógnar innlendri framleiðslu.",
       "supporting_evidence": [
         {
           "id": "AGRI-DATA-009",
@@ -429,7 +424,7 @@
         {
           "id": "AGRI-DATA-017",
           "source_name": "OECD — Agricultural Policy Monitoring and Evaluation 2023; Hagstofa Íslands; Bændasamtök Íslands",
-          "source_url": "https://www.oecd.org/agriculture/topics/agricultural-policy-monitoring-and-evaluation/"
+          "source_url": "https://www.oecd.org/en/publications/agricultural-policy-monitoring-and-evaluation-2023_b14de474-en/full-report/iceland_fc821635.html"
         },
         {
           "id": "TRADE-DATA-021",
@@ -523,13 +518,13 @@
       "attribution_type": "asserted",
       "claim_count": 10,
       "verdicts": {
-        "supported": 3,
-        "partially_supported": 7
+        "partially_supported": 8,
+        "supported": 2
       },
       "stance": "pro_eu",
       "slug": "sveinn-atli-gunnarsson",
-      "mention_count": 1,
-      "credibility": 0.59
+      "mention_count": 2,
+      "credibility": 0.56
     }
   ]
 }

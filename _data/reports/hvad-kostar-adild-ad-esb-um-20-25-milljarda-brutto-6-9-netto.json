@@ -10,8 +10,9 @@
   "summary": "Greindar 32 fullyrðingar. Niðurstöður: 16 stutt að hluta, 8 stutt af heimildum, 8 ekki hægt að sannreyna. Sjónarhorn: hlutlaus en ófullnægjandi. Heildstæðni: 52%.",
   "capsule": "Útreikningar greinarinnar á brúttó- og nettóframlagi Íslands til ESB-fjárlaga eru studdir af samanburðargögnum frá Danmörku, Svíþjóð og Finnlandi og þykja traustar spár um stærðargráðu kostnaðarins. Áhugavert er þó að greinin tekur fram að hún meti ekki hvað Ísland fengi úr sameiginlegri landbúnaðarstefnu ESB — fordæmi frá Norðurlöndunum benda til þess að slíkar greiðslur gætu numið tugum milljarða króna á ári þegar aðlögunartímabili lýkur, sem myndi lækka nettóframlagið töluvert frá þeim tölum sem greinin birtir. Þá eru gjaldmiðilsáhrif aðildar — og mögulega evruupptaka — aðskilinn þáttur sem greinin snertir ekki.",
   "verdict_counts": {
-    "partially_supported": 16,
-    "supported": 8
+    "partially_supported": 15,
+    "supported": 8,
+    "unsupported": 1
   },
   "epistemic_counts": {
     "prediction": 4,
@@ -555,7 +556,7 @@
         "epistemic_type": "factual"
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://cohesiondata.ec.europa.eu/overview\" title=\"European Commission — Cohesion Policy 2021–2027; Eurostat regional GDP data\" target=\"_blank\" rel=\"noopener\">EEA-DATA-016</a> staðfestir beint að fjárhagsrammi ESB 2021–2027 er í gildi og nefnir «2021–2027 programming period» með heildarupphæð um 392 milljarða evra í byggðasjóði. <a href=\"https://www.efta.int/eea-relations-eu/policy-areas/horizontal-policies/eu-programmes-eea-efta-participation\" title=\"EFTA — EU Programmes with EEA EFTA Participation (2021-2027)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-019</a> staðfestir einnig tímabilið og nefnir 15 ESB-áætlanir sem EFTA-ríki taka þátt í á tímabilinu 2021–2027. <a href=\"https://commission.europa.eu/strategy-and-policy/strategy-documents/commission-work-programme_en\" title=\"EUR-Lex legislative database; European Commission Work Programmes 2014–2025\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-018</a> vísar til landbúnaðarstefnu ESB 2023–2027 sem hluta af þessum ramma. Fullyrðingin er rétt og einföld staðreyndafullyrðing.",
+      "explanation": "<a href=\"https://cohesiondata.ec.europa.eu/overview\" title=\"European Commission — Cohesion Policy 2021–2027; Eurostat regional GDP data\" target=\"_blank\" rel=\"noopener\">EEA-DATA-016</a> staðfestir beint að núgildandi byggðasjóðir og samheldnisstefna ESB tekur til 2021–2027 tímabilsins með um 392 milljarða evra fjárramma. <a href=\"https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en\" title=\"European Commission — CAP direct payments: phasing-in for new member states; Regulation (EU) 2021/2115 (CAP Strategic Plans)\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-020</a> vísar einnig í sameiginlega landbúnaðarstefnu 2023–2027 sem hluta af þeim ramma. <a href=\"https://www.efta.int/eea-relations-eu/policy-areas/horizontal-policies/eu-programmes-eea-efta-participation\" title=\"EFTA — EU Programmes with EEA EFTA Participation (2021-2027)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-019</a> staðfestir að EFTA-ríki EES taka þátt í ESB-áætlunum 2021–2027.",
       "supporting_evidence": [
         {
           "id": "EEA-DATA-016",
@@ -568,14 +569,14 @@
           "source_url": "https://www.efta.int/eea-relations-eu/policy-areas/horizontal-policies/eu-programmes-eea-efta-participation"
         },
         {
-          "id": "EEA-LEGAL-018",
-          "source_name": "EUR-Lex legislative database; European Commission Work Programmes 2014–2025",
-          "source_url": "https://commission.europa.eu/strategy-and-policy/strategy-documents/commission-work-programme_en"
+          "id": "AGRI-DATA-020",
+          "source_name": "European Commission — CAP direct payments: phasing-in for new member states; Regulation (EU) 2021/2115 (CAP Strategic Plans)",
+          "source_url": "https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Athygli vekur að <a href=\"https://eeagrants.org/en/fmo/about-us\" title=\"EEA Grants Financial Mechanism Committee; European Commission budget data\" target=\"_blank\" rel=\"noopener\">EEA-DATA-005</a> vísar til EES/Noregssjóðanna á tímabilinu 2021–2028 sem er lengra tímabil en fjárhagsrammi ESB, þar sem þeir sjóðir fylgja eigin tímalínu. Viðræður um næsta fjárhagsramma ESB (eftir 2027) eru þegar hafnar og niðurstaða þeirra hefði áhrif á fjárhagsskilmála Íslands kæmi til ESB-aðildar.",
-      "confidence": 0.95,
+      "missing_context": null,
+      "confidence": 0.92,
       "speakers": [
         {
           "name": "Evrópustraumar",
@@ -642,18 +643,18 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "partially_supported",
-      "explanation": "Fullyrðingin vísar í «traditional own resources» ESB — tolltekjur sem aðildarríki innheimta fyrir hönd sambandsins. Heimildir staðfesta ekki beint hlutfallið 75%. <a href=\"https://www.visindavefur.is/svar.php?id=60980\" title=\"Vísindavefurinn — Vilborg Ása Guðjónsdóttir, Evrópuvefur project manager (2011)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-035</a> nefnir tolltekjur sem einn af fjórum tekjustofnum ESB, en gefur ekki nákvæmt hlutfall. Rétt er að ESB fær megnið af tolltekjum aðildarríkja, en hlutfallið hefur verið 80% (ekki 75%) — ríkin halda 20% eftir sem innheimtuþóknun (síðar hækkað í 25% innheimtuþóknun, þ.e. 75% renna til ESB). Fullyrðingin gæti þannig verið rétt en er ekki staðfest af heimildum í grunninum.",
-      "supporting_evidence": [
+      "verdict": "unsupported",
+      "explanation": "Fullyrðingin um að 75% tolltekna aðildarríkja renni til sameiginlegra sjóða ESB er röng samkvæmt heimildum. <a href=\"https://www.visindavefur.is/svar.php?id=60980\" title=\"Vísindavefurinn — Vilborg Ása Guðjónsdóttir, Evrópuvefur project manager (2011)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-035</a> sýnir að 75%-talan á við um GNI-tengdar greiðslur sem hlutdeild af heildarfjárlögum ESB, EKKI um tolltekjur. Tollar (custom duties) eru sérstakur fjárflokkur og eru ekki 75% af fjárlögunum. Heimildir gefa ekki tilefni til þeirrar fullyrðingar að 75% af tolltekjum aðildarríkja renni til sameiginlegra sjóða ESB.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [
         {
           "id": "TRADE-DATA-035",
           "source_name": "Vísindavefurinn — Vilborg Ása Guðjónsdóttir, Evrópuvefur project manager (2011)",
           "source_url": "https://www.visindavefur.is/svar.php?id=60980"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Staðreyndagrunnurinn inniheldur ekki nákvæma sundurliðun á tolltekjum ESB. Innheimtuþóknun aðildarríkja hefur breyst — hún var 10%, síðan 20%, og var hækkuð í 25% á kjörtímabili 2021–2027, sem þýðir að 75% tolltekna renna til ESB. Fullyrðingin er líklega rétt en á grundvelli nýlegra breytinga.",
-      "confidence": 0.5,
+      "missing_context": "Hefðbundnar eigin tekjur ESB (tollar og sykurskattar) renna að mestu til sameiginlegra sjóða, en aðildarríki halda eftir innheimtukostnaði (um 25%). Þetta er allt annað en það sem fullyrðingin segir. Heimildir gefa engar nákvæmar tölur um hlutfall tolltekna sem renna til ESB.",
+      "confidence": 0.7,
       "speakers": [
         {
           "name": "Evrópustraumar",
@@ -760,12 +761,12 @@
         "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.thedanishparliament.dk/en/eu-information-centre/the-danish-opt-outs-from-eu-cooperation\" title=\"Edinburgh Agreement (1992); Danish Ministry of Foreign Affairs — Denmark's EU opt-outs\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-010</a> staðfestir að Danmörk fékk sérstöðu með Edinburgh-samkomulaginu 1992, en tengir það ekki beint við Bretland. <a href=\"https://eur-lex.europa.eu/collection/eu-law/treaties.html\" title=\"European Parliament — EU Treaties and Protocols; Accession Treaty texts\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-023</a> nefnir Danska undanþágu en ekki sögulegan uppruna hennar. Almennt er þekkt að afsláttur stórra nettógreiðenda á rætur í Breska afslættinum (UK rebate) sem Margaret Thatcher samdi um 1984, og önnur ríki fengu «jafnvægisafslætti» í kjölfarið. Heimildir í grunninum staðfesta þó ekki þessa sögulegu keðju beint.",
+      "explanation": "<a href=\"https://www.thedanishparliament.dk/eu-information-centre/the-danish-opt-outs-from-eu-cooperation\" title=\"Edinburgh Agreement (1992); Danish Ministry of Foreign Affairs — Denmark's EU opt-outs\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-010</a> staðfestir að Danmörk fékk sérstöðu með Edinburgh-samkomulaginu 1992, en tengir það ekki beint við Bretland. <a href=\"https://eur-lex.europa.eu/collection/eu-law/treaties.html\" title=\"European Parliament — EU Treaties and Protocols; Accession Treaty texts\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-023</a> nefnir Danska undanþágu en ekki sögulegan uppruna hennar. Almennt er þekkt að afsláttur stórra nettógreiðenda á rætur í Breska afslættinum (UK rebate) sem Margaret Thatcher samdi um 1984, og önnur ríki fengu «jafnvægisafslætti» í kjölfarið. Heimildir í grunninum staðfesta þó ekki þessa sögulegu keðju beint.",
       "supporting_evidence": [
         {
           "id": "SOV-LEGAL-010",
           "source_name": "Edinburgh Agreement (1992); Danish Ministry of Foreign Affairs — Denmark's EU opt-outs",
-          "source_url": "https://www.thedanishparliament.dk/en/eu-information-centre/the-danish-opt-outs-from-eu-cooperation"
+          "source_url": "https://www.thedanishparliament.dk/eu-information-centre/the-danish-opt-outs-from-eu-cooperation"
         },
         {
           "id": "EEA-LEGAL-023",
@@ -799,12 +800,12 @@
         "epistemic_type": "factual"
       },
       "verdict": "supported",
-      "explanation": "Margar heimildir staðfesta þetta. <a href=\"https://www.thedanishparliament.dk/en/eu-information-centre/the-danish-opt-outs-from-eu-cooperation\" title=\"Edinburgh Agreement (1992); Danish Ministry of Foreign Affairs — Denmark's EU opt-outs\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-010</a> nefnir dóms- og innanríkismálaundanþágu sem einn af fjórum Edinburgh-undanþágum Danmerkur. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> staðfestir að Danmörk hefur «opt-out from justice/home affairs». <a href=\"https://eur-lex.europa.eu/collection/eu-law/treaties.html\" title=\"European Parliament — EU Treaties and Protocols; Accession Treaty texts\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-023</a> greinir frá sömu undanþágu og nefnir að Danmörk hefur haldið henni þrátt fyrir að hafa afnumið varnarundanþáguna 2022.",
+      "explanation": "Margar heimildir staðfesta þetta. <a href=\"https://www.thedanishparliament.dk/eu-information-centre/the-danish-opt-outs-from-eu-cooperation\" title=\"Edinburgh Agreement (1992); Danish Ministry of Foreign Affairs — Denmark's EU opt-outs\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-010</a> nefnir dóms- og innanríkismálaundanþágu sem einn af fjórum Edinburgh-undanþágum Danmerkur. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/steps-towards-joining_en\" title=\"European Commission Enlargement Policy; Treaty of Lisbon; Croatia Accession Treaty (2012)\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-012</a> staðfestir að Danmörk hefur «opt-out from justice/home affairs». <a href=\"https://eur-lex.europa.eu/collection/eu-law/treaties.html\" title=\"European Parliament — EU Treaties and Protocols; Accession Treaty texts\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-023</a> greinir frá sömu undanþágu og nefnir að Danmörk hefur haldið henni þrátt fyrir að hafa afnumið varnarundanþáguna 2022.",
       "supporting_evidence": [
         {
           "id": "SOV-LEGAL-010",
           "source_name": "Edinburgh Agreement (1992); Danish Ministry of Foreign Affairs — Denmark's EU opt-outs",
-          "source_url": "https://www.thedanishparliament.dk/en/eu-information-centre/the-danish-opt-outs-from-eu-cooperation"
+          "source_url": "https://www.thedanishparliament.dk/eu-information-centre/the-danish-opt-outs-from-eu-cooperation"
         },
         {
           "id": "EEA-LEGAL-012",

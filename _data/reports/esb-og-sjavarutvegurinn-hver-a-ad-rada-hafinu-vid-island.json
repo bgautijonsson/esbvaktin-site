@@ -10,8 +10,7 @@
   "summary": "Greindar 14 fullyrðingar. Niðurstöður: 8 stutt að hluta, 4 stutt af heimildum, 2 ekki hægt að sannreyna. Sjónarhorn: mjög ESB-neikvæð. Heildstæðni: 25%.",
   "capsule": "Greinin bendir réttilega á að sameiginleg sjávarútvegsstefna ESB (CFP) er pólitísk niðurstaða samninga milli ríkja og að íslenska fiskveiðistjórnunarkerfið hefur hlotið viðurkenningu á alþjóðavettvangi. Athyglisvert er þó að hlutfall fiskistofna í Atlantshafi sem veiddur er við sjálfbærar takmarkanir hefur hækkað úr um 5–10% árið 2003 í um 60% árið 2023 — sem gefur til kynna að CFP hafi skilað árangri á undanförnum áratugum. Til fróðleiks er einnig vert að vita að meginreglan um hlutfallslegan stöðugleika í CFP úthlutar kvótum á grundvelli sögulegra aflaupplýsinga, sem þýðir að íslenskur sögulegur afli myndi vera hornsteinn í kvótaviðræðum við ESB — ekki pólitískar málamiðlanir frá grunni.",
   "verdict_counts": {
-    "partially_supported": 12,
-    "supported": 2
+    "partially_supported": 14
   },
   "epistemic_counts": {
     "prediction": 4
@@ -86,8 +85,8 @@
         "confidence": 0.8,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "FISH-DATA-022 lýsir íslenska ITQ-kerfið sem \"eitt hið áhrifaríkasta fiskveiðistjórnunarkerfi í heiminum\" og tekur fram að þorskstofninn hafi nærri tvöfaldast í massa frá því snemma á 2000-ári. <a href=\"https://www.fao.org/faolex/results/details/en/c/LEX-FAOC003455/\" title=\"Icelandic Fisheries Management Act No. 116/2006\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-003</a> staðfestir einnig að kerfið \"hefur hlotið viðurkenningu\" þótt það sé gagnrýnt innlendis. Þetta er pólitísk fullyrðing um orðspor, sem heimildir styðja.",
+      "verdict": "partially_supported",
+      "explanation": "FISH-DATA-022 staðfestir að íslenska ITQ-kerfið sé talið «one of the world's mest successful fisheries management frameworks» og að þorskstofninn hafi um það bil tvöfaldast frá byrjun aldarinnar. Heimildin styður almennt orðalag fullyrðingarinnar um að kerfið hafi verið nefnt sem fyrirmynd. Á móti kemur að heimildir nefna talsverða gagnrýni — kvótasamþjöppun, áhrif á smærri byggðir og að Noregur og fleiri ríki noti viljandi annað kerfi sem fyrirmynd (<a href=\"https://www.fiskeridir.no/English/Fisheries/Statistics\" title=\"Norwegian Directorate of Fisheries — Statistics\" target=\"_blank\" rel=\"noopener\">FISH-COMP-001</a>, <a href=\"https://www.fiskistofa.is/\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a>).",
       "supporting_evidence": [
         {
           "id": "FISH-DATA-022",
@@ -95,14 +94,25 @@
           "source_url": null
         },
         {
-          "id": "FISH-LEGAL-003",
-          "source_name": "Icelandic Fisheries Management Act No. 116/2006",
-          "source_url": "https://www.fao.org/faolex/results/details/en/c/LEX-FAOC003455/"
+          "id": "FISH-COMP-003",
+          "source_name": "European Commission — Communication on the Common Fisheries Policy (2024); STECF stock assessments",
+          "source_url": "https://oceans-and-fisheries.ec.europa.eu/policy/common-fisheries-policy-cfp_en"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Kerfið er þó umdeilt innanlands — <a href=\"https://www.fao.org/faolex/results/details/en/c/LEX-FAOC003455/\" title=\"Icelandic Fisheries Management Act No. 116/2006\" target=\"_blank\" rel=\"noopener\">FISH-LEGAL-003</a> bendir á að það hafi þéttað kvótaeignarhald á fáar hendur og leitt til gagnrýni um \"kvótaræningja\". Alþjóðleg viðurkenning á virkni kerfis og pólitísk viðurkenning á réttlæti þess eru tvennt.",
-      "confidence": 0.76,
+      "contradicting_evidence": [
+        {
+          "id": "FISH-COMP-001",
+          "source_name": "Norwegian Directorate of Fisheries — Statistics",
+          "source_url": "https://www.fiskeridir.no/English/Fisheries/Statistics"
+        },
+        {
+          "id": "FISH-DATA-024",
+          "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
+          "source_url": "https://www.fiskistofa.is/"
+        }
+      ],
+      "missing_context": "Heimildir fjalla um árangur kerfisins en nefna ekki beint nafngreindar alþjóðastofnanir eða ríki sem hafi formlega tekið íslenska ITQ-kerfið upp sem fyrirmynd. Norski fyrirvarinn (<a href=\"https://www.fiskeridir.no/English/Fisheries/Statistics\" title=\"Norwegian Directorate of Fisheries — Statistics\" target=\"_blank\" rel=\"noopener\">FISH-COMP-001</a>) bendir á að Noregur, sem er einnig leiðandi fiskveiðiþjóð, hafi vísvitandi valið ólíkt kerfi til að viðhalda byggðafestu. Slík andstæð fordæmi takmarka hversu víðtækt orðalag um «fyrirmynd á alþjóðavettvangi» er.",
+      "confidence": 0.7,
       "speakers": [
         {
           "name": "Svanur Guðmundsson",
@@ -620,8 +630,8 @@
         "confidence": 0.82,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "Heimildir staðfesta sérstöðu Íslands í sjávarútvegsstjórnun á alþjóðavísu. FISH-DATA-022 lýsir kvótakerfinu (ITQ) sem einu farsælasta fiskveiðistjórnunarkerfi heims, þar sem þorskstofninn hefur tvöfaldast frá árþúsundamótum. Afli Íslands er næststærstur í Evrópu á eftir Noregi samkvæmt FISH-DATA-021 — og afli á mann er langmestur. Jafnframt sýnir <a href=\"https://oceans-and-fisheries.ec.europa.eu/policy/common-fisheries-policy-cfp_en\" title=\"European Commission — Communication on the Common Fisheries Policy (2024); STECF stock assessments\" target=\"_blank\" rel=\"noopener\">FISH-COMP-003</a> að sjávarútvegsstjórnun ESB er misjöfn eftir svæðum, sem undirstrikar sérstöðu Íslands.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta hluta fullyrðingarinnar en orðalagið «alþjóðlega viðurkennd sérstaða» er sterkt. FISH-DATA-022 lýsir kvótakerfinu sem «one of the world's most successful fisheries management frameworks» og að þorskstofninn hafi um það bil tvöfaldast frá byrjun 2000. <a href=\"https://oceans-and-fisheries.ec.europa.eu/policy/common-fisheries-policy-cfp_en\" title=\"European Commission — Communication on the Common Fisheries Policy (2024); STECF stock assessments\" target=\"_blank\" rel=\"noopener\">FISH-COMP-003</a> sýnir að íslensk stofnstjórnun hafi almennt verið sterk samanborið við ESB-svæðin, einkum Miðjarðarhafið. Hins vegar setja <a href=\"https://www.fiskistofa.is/\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> og <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development\" title=\"European Parliament Research Service — Fisheries Ownership and Concentration in the EU\" target=\"_blank\" rel=\"noopener\">FISH-DATA-029</a> mikilvæga fyrirvara um eignakerjun og samanburðargildi.",
       "supporting_evidence": [
         {
           "id": "FISH-DATA-022",
@@ -629,19 +639,25 @@
           "source_url": null
         },
         {
-          "id": "FISH-DATA-021",
-          "source_name": "Eurostat — Fisheries statistics (fish_ca_main); Hagstofa Íslands",
-          "source_url": null
-        },
-        {
           "id": "FISH-COMP-003",
           "source_name": "European Commission — Communication on the Common Fisheries Policy (2024); STECF stock assessments",
           "source_url": "https://oceans-and-fisheries.ec.europa.eu/policy/common-fisheries-policy-cfp_en"
+        },
+        {
+          "id": "FISH-DATA-021",
+          "source_name": "Eurostat — Fisheries statistics (fish_ca_main); Hagstofa Íslands",
+          "source_url": null
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Kvótakerfið hefur sætt gagnrýni fyrir samþjöppun kvótaeignar í fáum hendur samkvæmt <a href=\"https://www.fiskistofa.is/\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> og <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development\" title=\"European Parliament Research Service — Fisheries Ownership and Concentration in the EU\" target=\"_blank\" rel=\"noopener\">FISH-DATA-029</a>, sem sýnir að svipaðar samþjöppunarmyndir eru í ESB-ríkjum. Auk þess hefur sameiginleg sjávarútvegsstefna ESB batnað verulega síðan 2013 (<a href=\"https://oceans-and-fisheries.ec.europa.eu/policy/common-fisheries-policy-cfp_en\" title=\"European Commission — Communication on the Common Fisheries Policy (2024); STECF stock assessments\" target=\"_blank\" rel=\"noopener\">FISH-COMP-003</a>). Sérstöðumat veltur á skilgreiningu — kerfið er alþjóðlega viðurkennt en ekki gagnrýnislaust.",
-      "confidence": 0.8075,
+      "contradicting_evidence": [
+        {
+          "id": "FISH-DATA-024",
+          "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
+          "source_url": "https://www.fiskistofa.is/"
+        }
+      ],
+      "missing_context": "FISH-DATA-022 og <a href=\"https://www.fiskistofa.is/\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> staðfesta gagnrýni á kvótakerfið vegna mikils eignarsamþjöppunar í höndum fárra fyrirtækja og óhagstæðs ástands smærri sjávarbyggða. <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development\" title=\"European Parliament Research Service — Fisheries Ownership and Concentration in the EU\" target=\"_blank\" rel=\"noopener\">FISH-DATA-029</a> bendir á að samjöfnuður við ESB sé flóknari en oft er haldið fram — Holland og Danmörk eru með sambærilega samþjöppun. «Alþjóðlega viðurkennd sérstaða» er sterkari fullyrðing en heimildirnar bera að fullu — þær lýsa árangri en ekki formlegri alþjóðlegri viðurkenningu.",
+      "confidence": 0.72,
       "speakers": [
         {
           "name": "Svanur Guðmundsson",
@@ -665,13 +681,12 @@
       "attribution_type": "asserted",
       "claim_count": 14,
       "verdicts": {
-        "partially_supported": 12,
-        "supported": 2
+        "partially_supported": 14
       },
       "stance": "anti_eu",
       "slug": "svanur-gudmundsson",
       "mention_count": 1,
-      "credibility": 0.67
+      "credibility": 0.62
     }
   ]
 }

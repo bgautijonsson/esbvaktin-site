@@ -7,14 +7,16 @@
   "party": null,
   "stance": "neutral",
   "stance_score": 0.0,
-  "credibility": 0.5,
+  "credibility": 0.75,
   "attribution_counts": {
+    "quoted": 1,
     "paraphrased": 1,
     "mentioned": 14
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 1
+    "partially_supported": 1,
+    "supported": 1
   },
   "claims": [
     {
@@ -37,6 +39,37 @@
       "article_title": "Ekki framhald á ESB-viðræðum",
       "article_source": "Morgunblaðið",
       "article_date": "2026-03-31"
+    },
+    {
+      "claim_text": "Blaðafulltrúi stækkunardeildar framkvæmdastjórnar ESB upplýsti að stækkunardeildin liti þannig á að umsókn Íslands um aðild að ESB sem alþingi samþykkti 16. júlí 2009 væri enn gild.",
+      "original_quote": "Þá ræddi Björn Malmquist, fréttaritari ríkisútvarpsins, við blaðafulltrúa stækkunardeildar framkvæmdastjórnar ESB sem upplýsti óvænt að stækkunardeildin liti þannig á að umsókn Íslands um aðild að ESB sem alþingi samþykkti 16. júlí 2009 væri enn gild.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.nordiskpost.com/2026/03/08/eu-commission-iceland-application-valid/\" title=\"European Commission statement, March 2026 (reported via NordiskPost 8 March 2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-011</a> staðfestir beinlínis að framkvæmdastjórn ESB hafi opinberlega lýst því yfir í mars 2026 að umsókn Íslands frá 16. júlí 2009 sé enn gild. <a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a> og <a href=\"https://euobserver.com/eu-political/ar3e6db024\" title=\"EUobserver — 'Iceland says final EU goodbye', March 2015 (citing Sveinsson letter)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-010</a> styðja að ESB hafi alla tíð litið svo á að 2015-bréf Sveinssonar hafi ekki verið formleg afturköllun, og því standi umsóknin tæknilega óhreyfð.",
+      "missing_context": "Heimildirnar staðfesta gildi umsóknarinnar en taka ekki á því hvort endurupptaka viðræðna færi fram undir 2009-rammanum eða krefðist nýs umboðs frá ráðherraráðinu. Þeir kaflar sem höfðu verið lokaðir til bráðabirgða þyrftu líklega endurskimun vegna breytinga á regluverki ESB frá 2013.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-PARL-011",
+          "source_name": "European Commission statement, March 2026 (reported via NordiskPost 8 March 2026)",
+          "source_url": "https://www.nordiskpost.com/2026/03/08/eu-commission-iceland-application-valid/"
+        },
+        {
+          "id": "PARTY-DATA-011",
+          "source_name": "Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews",
+          "source_url": "https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/"
+        },
+        {
+          "id": "SOV-PARL-010",
+          "source_name": "EUobserver — 'Iceland says final EU goodbye', March 2015 (citing Sveinsson letter)",
+          "source_url": "https://euobserver.com/eu-political/ar3e6db024"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "quoted",
+      "article_slug": "ny-esb-spurning-nyjar-forsendur",
+      "article_title": "Ný ESB-spurning - nýjar forsendur",
+      "article_source": "Björn Bjarnason",
+      "article_date": "2026-05-05"
     }
   ],
   "articles": [
@@ -49,6 +82,16 @@
       "attribution_types": [
         "mentioned",
         "paraphrased"
+      ]
+    },
+    {
+      "slug": "ny-esb-spurning-nyjar-forsendur",
+      "title": "Ný ESB-spurning - nýjar forsendur",
+      "source": "Björn Bjarnason",
+      "date": "2026-05-05",
+      "claim_count": 1,
+      "attribution_types": [
+        "quoted"
       ]
     }
   ]

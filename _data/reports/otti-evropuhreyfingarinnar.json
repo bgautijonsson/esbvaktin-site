@@ -10,8 +10,8 @@
   "summary": "Greindar 16 fullyrðingar. Niðurstöður: 6 stutt að hluta, 5 ekki hægt að sannreyna, 2 stutt af heimildum, 2 villandi, 1 ekki stutt. Sjónarhorn: mjög ESB-neikvæð. Heildstæðni: 20%.",
   "capsule": "Samtök atvinnulífsins studdu ESB-aðild opinberlega og lögðu til 200 milljóna króna framlag til já-hliðarinnar í þjóðaratkvæðagreiðslunni — þetta er atriði sem gefur heildarmyndina af stuðningi hagsmunasamtaka öðruvísi sniði en greinin lýsir. Gallup Þjóðarpúls frá febrúar–mars 2026 sýnir 42% á hvora hlið, sem bendir til jafnvægis fremur en hrörnunar í stuðningi. Merkilegt er líka að konur eru mun jákvæðari gagnvart aðild en karlar samkvæmt sömu könnun — kynjahlutfallið er gjarnan vanræktur þáttur í þessari umræðu.",
   "verdict_counts": {
-    "supported": 2,
-    "partially_supported": 6,
+    "partially_supported": 7,
+    "supported": 1,
     "unsupported": 1,
     "unverifiable": 1,
     "misleading": 2
@@ -35,8 +35,8 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> staðfestir að þjóðaratkvæðagreiðslan snýst um hvort halda eigi áfram aðildarviðræðum sem stöðvuðust 2013, ekki um beina aðild. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> sýnir að spurning þjóðaratkvæðagreiðslunnar er orðrétt: «Á að halda áfram viðræðum um aðild Íslands að Evrópusambandinu?» Þessi aðgreining er lykilatriði í framsetningu Magnúsar Skjaldar og samrýmist formlegu orðalagi atkvæðagreiðslunnar.",
+      "verdict": "partially_supported",
+      "explanation": "Efnislega er fullyrðingin staðfest af heimildum. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a>, <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> og <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — bill 516 (157th session)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-007</a> staðfesta að þjóðaratkvæðagreiðslan 29. ágúst 2026 snýst um hvort halda eigi áfram aðildarviðræðum, ekki um aðild að ESB sem slíka. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Þjóðarpúls, February–March 2026; Capacent Gallup historical EU polling data (2009–2013)\" target=\"_blank\" rel=\"noopener\">POLL-DATA-021</a> sýnir einnig að stuðningur við að halda áfram viðræðum (52%) er meiri en stuðningur við aðild (42%). Engin heimild í lotunni staðfestir þó beint að Magnús Skjöld, formaður Evrópuhreyfingarinnar, hafi haldið þessari yfirlýsingu fram 29. mars 2026.",
       "supporting_evidence": [
         {
           "id": "SOV-DATA-006",
@@ -49,14 +49,19 @@
           "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
         },
         {
-          "id": "SOV-PARL-004",
-          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir (flutningsræða, 154. löggjafarþing); Logi Einarsson (flutningsræða, 153. löggjafarþing)",
-          "source_url": "https://www.althingi.is/altext/raeda/154/rad20230919T175556.html"
+          "id": "SOV-PARL-007",
+          "source_name": "Alþingi — bill 516 (157th session)",
+          "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
+        },
+        {
+          "id": "POLL-DATA-021",
+          "source_name": "Gallup Þjóðarpúls, February–March 2026; Capacent Gallup historical EU polling data (2009–2013)",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Þó er rétt að benda á að andstæðingar telja aðgreiningu milli viðræðna og aðildar villandi — samkvæmt <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T182328.html\" title=\"Alþingi — Sigmundur Davíð Gunnlaugsson, þingmaður Miðflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-002</a> hélt Sigmundur Davíð því fram að aðildarviðræður feli í sér skuldbindingu um lagaaðlögun, ekki aðeins «skoðunarferð». <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland), Articles 26, 65, 79; Althingi records on 2012 referendum follow-up\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-026</a> nefnir einnig að þjóðaratkvæðagreiðslan er ráðgefandi, sem þýðir að niðurstaðan er ekki lagalega bindandi.",
-      "confidence": 0.9,
+      "missing_context": "Sá efnislegi grunnur fullyrðingarinnar er rétt rökstuddur — þjóðaratkvæðagreiðslan snýst formlega um viðræður, ekki aðild. Hins vegar staðfestir engin heimild í þessari lotu beina yfirlýsingu Magnúsar Skjöldar frá 29. mars 2026. Til að staðfesta tilvitnaða yfirlýsingu þyrfti aðgang að frumheimild — t.d. viðtali eða blaðagrein frá þeim degi.",
+      "confidence": 0.65,
       "speakers": [
         {
           "name": "Magnús Skjöld",
@@ -184,13 +189,13 @@
         "epistemic_type": "factual"
       },
       "verdict": "unsupported",
-      "explanation": "<a href=\"https://www.sa.is/frettir\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> staðfestir þvert gegn fullyrðingunni — Samtök atvinnulífsins (SA) eru «the most prominent organisational supporter of EU membership» og hafa lagt 200 milljónir króna í herferð fyrir ESB-aðild. SA hafa birt stefnuskjal þar sem aðild er rökstudd með lækkuðum fjármögnunarkostnaði, bættu regluverki og aðgengi að byggðasjóðum. Fullyrðingin er röng hvað SA varðar.",
+      "explanation": "<a href=\"https://www.sa.is/\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> staðfestir þvert gegn fullyrðingunni — Samtök atvinnulífsins (SA) eru «the most prominent organisational supporter of EU membership» og hafa lagt 200 milljónir króna í herferð fyrir ESB-aðild. SA hafa birt stefnuskjal þar sem aðild er rökstudd með lækkuðum fjármögnunarkostnaði, bættu regluverki og aðgengi að byggðasjóðum. Fullyrðingin er röng hvað SA varðar.",
       "supporting_evidence": [],
       "contradicting_evidence": [
         {
           "id": "POL-DATA-012",
           "source_name": "SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions",
-          "source_url": "https://www.sa.is/frettir"
+          "source_url": "https://www.sa.is/"
         }
       ],
       "missing_context": "Sjávarútvegsfélög innan SA (SFS) hafa andmælt ESB-afstöðu forystunnar, sem skapar innri spennu. Engu að síður er opinber afstaða SA skýrt jákvæð gagnvart ESB-aðild.",
@@ -218,7 +223,7 @@
         "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "POL-DATA-014 staðfestir að Landssamband íslenskra útvegsmanna (LÍÚ) er harðasti andstæðingur ESB-aðildar og hefur lagt 500 milljónum króna í andherferðina. LÍÚ táknar um 70% af kvóta landsins. Fullyrðingin nefnir «Samtök fyrirtækja í sjávarútvegi» (SFS) en heimildirnar fjalla um LÍÚ — þetta eru skyldar en aðskildar stofnanir. <a href=\"https://www.sa.is/frettir\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> bendir til þess að SFS hafi andmælt ESB-afstöðu SA innanfrá, sem styður almennt andstöðuna.",
+      "explanation": "POL-DATA-014 staðfestir að Landssamband íslenskra útvegsmanna (LÍÚ) er harðasti andstæðingur ESB-aðildar og hefur lagt 500 milljónum króna í andherferðina. LÍÚ táknar um 70% af kvóta landsins. Fullyrðingin nefnir «Samtök fyrirtækja í sjávarútvegi» (SFS) en heimildirnar fjalla um LÍÚ — þetta eru skyldar en aðskildar stofnanir. <a href=\"https://www.sa.is/\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> bendir til þess að SFS hafi andmælt ESB-afstöðu SA innanfrá, sem styður almennt andstöðuna.",
       "supporting_evidence": [
         {
           "id": "POL-DATA-014",
@@ -228,7 +233,7 @@
         {
           "id": "POL-DATA-012",
           "source_name": "SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions",
-          "source_url": "https://www.sa.is/frettir"
+          "source_url": "https://www.sa.is/"
         }
       ],
       "contradicting_evidence": [],
@@ -540,8 +545,8 @@
       },
       "stance": "anti_eu",
       "slug": "bjorn-bjarnason",
-      "mention_count": 13,
-      "credibility": 0.59,
+      "mention_count": 19,
+      "credibility": 0.58,
       "speech_count": 60
     },
     {
@@ -558,7 +563,7 @@
       "stance": "neutral",
       "slug": "david-thor-bjorgvinsson",
       "mention_count": 10,
-      "credibility": 0.73
+      "credibility": 0.72
     },
     {
       "name": "Magnús Skjöld",
@@ -568,12 +573,12 @@
       "attribution_type": "quoted",
       "claim_count": 1,
       "verdicts": {
-        "supported": 1
+        "partially_supported": 1
       },
       "stance": "pro_eu",
       "slug": "magnus-skjold",
       "mention_count": 1,
-      "credibility": 1.0,
+      "credibility": 0.5,
       "speech_count": 7
     },
     {
@@ -589,7 +594,7 @@
       "stance": "mixed",
       "slug": "samtok-idnadarins",
       "mention_count": 8,
-      "credibility": 0.71
+      "credibility": 0.64
     },
     {
       "name": "Framkvæmdastjórn ESB",
@@ -603,7 +608,7 @@
       },
       "stance": "pro_eu",
       "slug": "framkvaemdastjorn-esb",
-      "mention_count": 9,
+      "mention_count": 10,
       "credibility": 0.62
     }
   ]

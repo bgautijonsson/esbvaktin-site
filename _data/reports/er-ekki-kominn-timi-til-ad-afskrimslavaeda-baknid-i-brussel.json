@@ -10,7 +10,8 @@
   "summary": "Greindar 16 fullyrðingar. Niðurstöður: 10 stutt að hluta, 4 ekki hægt að sannreyna, 2 stutt af heimildum. Sjónarhorn: mjög ESB-jákvæð. Heildstæðni: 25%.",
   "capsule": "Lög um stafræna þjónustu (DSA) og GDPR eru raunveruleg dæmi um ESB-regluverk með tönn — Framkvæmdastjórnin hefur þegar sektað tæknirisa eins og Google og Meta og hafið rannsókn á X (Twitter) á grundvelli þessara laga. Áhugavert er þó að Ísland nýtur þegar þessara sömu verndarreglna í gegnum EES-samninginn, án þess að vera formlegt aðildarríki — stafræn neytendavernd ESB gildir á Íslandi í dag. Þetta þýðir að spurningin um aðild snýst að miklu leyti um annað en reglurnar sjálfar: um atkvæðisrétt að borðinu þar sem þær eru mótaðar.",
   "verdict_counts": {
-    "partially_supported": 12
+    "unverifiable": 1,
+    "partially_supported": 11
   },
   "epistemic_counts": null,
   "claim_count": 12,
@@ -30,18 +31,12 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "partially_supported",
-      "explanation": "Heimild <a href=\"https://commission.europa.eu/strategy-and-policy/strategy-documents/commission-work-programme_en\" title=\"EUR-Lex legislative database; European Commission Work Programmes 2014–2025\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-018</a> staðfestir að Digital Services Act (DSA) var samþykkt árið 2022 og er hluti af stafrænu regluverkspakka ESB. Engin heimild í staðreyndagrunni staðfestir hins vegar beint að Framkvæmdastjórnin hafi opnað formlega rannsókn á X/Twitter á grundvelli DSA. Tilvist DSA er staðfest, en beitingin á X er ekki sannreynanleg með tiltækum heimildum.",
-      "supporting_evidence": [
-        {
-          "id": "EEA-LEGAL-018",
-          "source_name": "EUR-Lex legislative database; European Commission Work Programmes 2014–2025",
-          "source_url": "https://commission.europa.eu/strategy-and-policy/strategy-documents/commission-work-programme_en"
-        }
-      ],
+      "verdict": "unverifiable",
+      "explanation": "Heimildir í gagnagrunninum staðfesta hvorki né hrekja fullyrðinguna um að framkvæmdastjórn ESB hafi hafið rannsókn á X (Twitter) á grundvelli laga um stafræna þjónustu. <a href=\"https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng\" title=\"EU Digital Services Act — Official Regulation Text\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-029</a> lýsir uppbyggingu DSA-reglugerðarinnar og hvernig hún beinist að stórum kerfispöllum (>45 milljón ESB-notendur), en nefnir ekki sérstaklega X eða Twitter sem rannsóknarefni. Engar heimildir í úrtakinu fjalla beint um þá rannsókn sem fullyrðingin nefnir.",
+      "supporting_evidence": [],
       "contradicting_evidence": [],
-      "missing_context": "Staðreyndagrunnurinn inniheldur ekki upplýsingar um framkvæmd DSA gagnvart tilteknum fyrirtækjum eins og X/Twitter. Þörf er á heimildum frá Framkvæmdastjórn ESB um einstaka rannsóknarmál.",
-      "confidence": 0.475,
+      "missing_context": "Heimildir í gagnagrunninum lýsa DSA-reglugerðinni almennt en innihalda engar tilteknar upplýsingar um rannsókn framkvæmdastjórnarinnar á X. <a href=\"https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng\" title=\"EU Digital Services Act — Official Regulation Text\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-029</a> staðfestir að DSA gildir um mjög stóra kerfispalla og að viðurlög geta verið allt að 6% af heildarveltu á heimsvísu. DSA hefur ekki enn verið formlega innleitt í EES-samninginn.",
+      "confidence": 0.5,
       "speakers": [
         {
           "name": "Þórhildur Davíðsdóttir Söebech",
@@ -193,7 +188,7 @@
       ],
       "contradicting_evidence": [],
       "missing_context": "Íbúafjöldi ESB-27 er um 450 milljónir (ekki 500 milljónir). Innri markaðurinn með EES-ríkjum nær til um 455 milljóna. Munurinn á «hálfum milljarði» og raunverulegum tölum er umtalsverður í samhengi við nákvæma umfjöllun.",
-      "confidence": 0.85,
+      "confidence": 0.867,
       "speakers": [
         {
           "name": "Þórhildur Davíðsdóttir Söebech",
@@ -447,7 +442,7 @@
       ],
       "contradicting_evidence": [],
       "missing_context": "Munurinn á 70–75% innri markaðarins og 13,4% heildarregluverksins er lykilatriði. Aðferðafræði skiptir máli: <a href=\"https://www.government.is/library/01-Ministries/Ministry-for-Foreign-Affairs/PDF-skjol/EES_skyrsla_15.pdf\" title=\"Utanríkisráðuneytið — Gengið til góðs: Skref í átt að bættri framkvæmd EES-samningsins (apríl 2018)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-017</a> telur allar bindandi gerðir ESB (þar á meðal á sviðum utan EES) en <a href=\"https://www.eftasurv.int/internal-market/implementing-eea-law-national-law/internal-market-scoreboards\" title=\"EFTA Surveillance Authority — Internal Market Scoreboard\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-001</a> mælir aðeins innleiðingu innan gildissviðs EES. Margar innleiddar gerðir eru tæknilegar og hafa takmarkaða stefnumótunarþýðingu.",
-      "confidence": 0.7842627112998294,
+      "confidence": 0.799947965525826,
       "speakers": [
         {
           "name": "Þórhildur Davíðsdóttir Söebech",
@@ -575,12 +570,13 @@
       "attribution_type": "asserted",
       "claim_count": 12,
       "verdicts": {
-        "partially_supported": 12
+        "unverifiable": 1,
+        "partially_supported": 11
       },
       "stance": "pro_eu",
       "slug": "thorhildur-davidsdottir-soebech",
       "mention_count": 1,
-      "credibility": 0.54
+      "credibility": 0.55
     },
     {
       "name": "Framkvæmdastjórn ESB",
@@ -590,11 +586,12 @@
       "attribution_type": "paraphrased",
       "claim_count": 5,
       "verdicts": {
-        "partially_supported": 5
+        "unverifiable": 1,
+        "partially_supported": 4
       },
       "stance": "pro_eu",
       "slug": "framkvaemdastjorn-esb",
-      "mention_count": 9,
+      "mention_count": 10,
       "credibility": 0.62
     },
     {
@@ -605,12 +602,12 @@
       "attribution_type": "quoted",
       "claim_count": 1,
       "verdicts": {
-        "partially_supported": 1
+        "unverifiable": 1
       },
       "stance": "pro_eu",
       "slug": "thomas-regnier",
       "mention_count": 1,
-      "credibility": 0.5
+      "credibility": null
     }
   ]
 }

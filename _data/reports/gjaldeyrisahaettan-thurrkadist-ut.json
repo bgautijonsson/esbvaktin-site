@@ -10,10 +10,9 @@
   "summary": "Greindar 35 fullyrðingar .",
   "capsule": "Króatía er dæmigert fordæmi þegar rætt er um ESB-aðild: rétt er að aðildarviðræðurnar tóku sex ár og lauk 2011, og að útflutningur og innflutningur jukust töluvert eftir inngöngu í innri markaðinn 2013. Athyglisvert er þó að Króatía hafði þegar bundið krónu sína þétt við evruna áður en hún tók hana formlega upp — ólíkt íslensku krónunni, sem hefur sveiflast um 50% í efnahagsáföllum og gegnir hlutverki sjálfvirks leiðréttingarbúnaðar við ytri áföll. Þeir sem vilja kafa dýpra geta skoðað hvernig evruríki án þessa búnaðar — eins og Grikkland og Portúgal eftir hrun 2008 — stóðu frammi fyrir mun þyngri aðlögunarkjörum.",
   "verdict_counts": {
-    "partially_supported": 17,
-    "supported": 5,
-    "misleading": 1,
-    "unverifiable": 2
+    "partially_supported": 19,
+    "supported": 4,
+    "misleading": 2
   },
   "epistemic_counts": null,
   "claim_count": 25,
@@ -460,18 +459,18 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "unverifiable",
-      "explanation": "Fullyrðingin nefnir sérstakar tölur — erlendar skuldir Króatíu hafi verið 0,5 milljarðar evra eða 0,7% af VLF í mars 2023. <a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Bank for International Settlements — Boris Vujčić speech: One Year with the Euro\" target=\"_blank\" rel=\"noopener\">CURR-DATA-018</a> staðfestir að gjaldeyrisskuldahlutfall féll úr um 70% í undir 1% eftir upptöku evrunnar, en gefur hvorki upp nákvæma krónutölu í milljörðum evra né tiltekið hlutfall af VLF. Engin heimild í staðreyndagrunni staðfestir eða hrekur þessar nákvæmu tölur.",
-      "supporting_evidence": [
+      "verdict": "misleading",
+      "explanation": "Fullyrðingin virðist rugla saman tveimur ólíkum stærðum. <a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Bank for International Settlements — Boris Vujčić speech: One Year with the Euro\" target=\"_blank\" rel=\"noopener\">CURR-DATA-018</a> vitnar í Boris Vujčić, seðlabankastjóra Króatíu, sem sagði að erlendgjaldeyrisskuldir (foreign-currency-denominated debt) hefðu fallið úr um 70% af heildarskuldum niður í minna en 1% eftir evruupptökuna — þetta er hlutfall af heildarskuldum sem voru í erlendri mynt, ekki heildarupphæð erlendra skulda í evrum. <a href=\"https://data.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a> og <a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a> staðfesta jákvæð áhrif evruupptöku Króatíu en hvergi koma fram tölurnar 0,5 milljarðar evra eða 0,7% af VLF. Fullyrðingin virðist umorða gengisáhættutölu í alranga staðtölu um erlendar skuldir.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [
         {
           "id": "CURR-DATA-018",
           "source_name": "Bank for International Settlements — Boris Vujčić speech: One Year with the Euro",
           "source_url": "https://www.bis.org/review/r240131a.htm"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Heimildir staðfesta almenna þróunina — gjaldeyrisskuldahlutfallið lækkaði verulega — en nákvæmu tölurnar (0,5 milljarðar evra, 0,7% af VLF) eru ekki staðfestar í neinum tiltækum gögnum. Þá ber að hafa í huga að króatíska kúnan var bundin evrunni í tvo áratugi fyrir formlega upptöku, þannig að umfang breytingarinnar var minna en ella.",
-      "confidence": 0.4,
+      "missing_context": "Tölurnar 0,5 milljarðar og 0,7% af VLF eru ekki staðfestar. Fullyrðingin um að «nánast öll áhætta við erlend viðskipti» hafi þurrkast út er of víð — gjaldeyrisáhætta gagnvart gjaldmiðlum utan evrusvæðisins (USD, GBP o.fl.) er áfram til staðar.",
+      "confidence": 0.7,
       "speakers": [
         {
           "name": "Boris Vujčić",
@@ -510,7 +509,7 @@
         {
           "id": "PREC-DATA-020",
           "source_name": "ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS",
-          "source_url": "https://sdw.ecb.europa.eu/"
+          "source_url": "https://data.ecb.europa.eu/"
         }
       ],
       "contradicting_evidence": [],
@@ -539,12 +538,12 @@
         "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "Samkvæmt <a href=\"https://sdw.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a> voru íbúðalánsvextir í Króatíu um 3,0% í september 2025 en í Þýskalandi 3,71% í desember 2025 — króatískir vextir voru reyndar lægri en þýskir, ekki «þeir sömu». Hvað varðar fyrirtækjalán segir heimildin aðeins að þau hafi einnig lækkað, en gefur engar nákvæmar tölur til samanburðar við Þýskaland. Fullyrðingin er því ónákvæm á tvo vegu: hún segir vextina «sömu» þegar króatískir eru í raun lægri á íbúðalánum, og hún fullyrðir jafnframt sömu þróun á fyrirtækjalánum án þess að gögn staðfesti það beint.",
+      "explanation": "Samkvæmt <a href=\"https://data.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a> voru íbúðalánsvextir í Króatíu um 3,0% í september 2025 en í Þýskalandi 3,71% í desember 2025 — króatískir vextir voru reyndar lægri en þýskir, ekki «þeir sömu». Hvað varðar fyrirtækjalán segir heimildin aðeins að þau hafi einnig lækkað, en gefur engar nákvæmar tölur til samanburðar við Þýskaland. Fullyrðingin er því ónákvæm á tvo vegu: hún segir vextina «sömu» þegar króatískir eru í raun lægri á íbúðalánum, og hún fullyrðir jafnframt sömu þróun á fyrirtækjalánum án þess að gögn staðfesti það beint.",
       "supporting_evidence": [
         {
           "id": "PREC-DATA-020",
           "source_name": "ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS",
-          "source_url": "https://sdw.ecb.europa.eu/"
+          "source_url": "https://data.ecb.europa.eu/"
         },
         {
           "id": "PREC-DATA-019",
@@ -582,12 +581,39 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "unverifiable",
-      "explanation": "Fullyrðingin heldur því fram að Pólland og Ungverjaland séu með hærri vexti en Króatía vegna þess að þau noti ekki evruna. Engin heimild í staðreyndagrunni gefur upp vaxtastig í Póllandi eða Ungverjalandi. <a href=\"https://sdw.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a> og <a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Bank for International Settlements — Boris Vujčić speech: One Year with the Euro\" target=\"_blank\" rel=\"noopener\">CURR-DATA-018</a> staðfesta vaxtaskerðingu í Króatíu eftir upptöku evrunnar og <a href=\"https://www.visindavefur.is/svar.php?id=5921\" title=\"Vísindavefurinn — EDS & Gylfi Magnússon, University of Iceland (2006/2017, updated 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-012</a> nefnir bæði Pólland og Ungverjaland sem ESB-ríki utan evrusvæðisins, en veitir engar vaxtaupplýsingar um þau. Orsakatengslið — að hærri vextir stafi sérstaklega af því að evran sé ekki notuð — er ekki hægt að staðfesta eða hrekja með fyrirliggjandi heimildum.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [],
-      "missing_context": "Heimildir skortir um vaxtastig í Póllandi og Ungverjalandi. Þá felur fullyrðingin í sér einfalda orsakakeðju (ekki evra → hærri vextir) en í raun hafa margir þættir áhrif á vaxtastig, svo sem peningastefna, verðbólga, ríkisfjármál og lánshæfismat.",
-      "confidence": 0.35,
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta hluta af orsakatengingunni en ekki hana alla. <a href=\"https://data.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a> og <a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a> sýna að vextir á húsnæðislánum í Króatíu lækkuðu eftir evruupptöku árið 2023 og urðu lægri en í Þýskalandi (um 3,0% borið saman við 3,71%). <a href=\"https://www.visindavefur.is/svar.php?id=5921\" title=\"Vísindavefurinn — EDS & Gylfi Magnússon, University of Iceland (2006/2017, updated 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-012</a> staðfestir að Pólland og Ungverjaland nota enn eigin gjaldmiðla. Þó ber að hafa í huga að vaxtamismunur milli ríkja ræðst af mörgum þáttum — verðbólguvæntingum, ríkisfjármálum, lánsfjárhættu og peningastefnu — ekki einungis gjaldmiðlinum. <a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG\" title=\"World Bank — World Development Indicators\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-009</a> og <a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=IS\" title=\"World Bank — GDP growth (annual %) (NY.GDP.MKTP.KD.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-014</a> sýna einnig að gjaldmiðlasvæðisaðild ein og sér útilokar ekki sveiflur.",
+      "supporting_evidence": [
+        {
+          "id": "PREC-DATA-020",
+          "source_name": "ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS",
+          "source_url": "https://data.ecb.europa.eu/"
+        },
+        {
+          "id": "PREC-DATA-019",
+          "source_name": "Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report",
+          "source_url": "https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023"
+        },
+        {
+          "id": "CURR-DATA-012",
+          "source_name": "Vísindavefurinn — EDS & Gylfi Magnússon, University of Iceland (2006/2017, updated 2026)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=5921"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "CURRENCY-DATA-009",
+          "source_name": "World Bank — World Development Indicators",
+          "source_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG"
+        },
+        {
+          "id": "CURRENCY-DATA-014",
+          "source_name": "World Bank — GDP growth (annual %) (NY.GDP.MKTP.KD.ZG)",
+          "source_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=IS"
+        }
+      ],
+      "missing_context": "Beinar vaxtaupplýsingar um Pólland og Ungverjaland vantar í staðreyndagrunninn. Orsakasamband milli gjaldmiðils og vaxtastigs er flóknara en fullyrðingin gefur til kynna — verðbólga, ríkisfjármálastefna og seðlabankastefna skipta einnig máli.",
+      "confidence": 0.55,
       "speakers": [
         {
           "name": "Boris Vujčić",
@@ -912,33 +938,18 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-2023-27_en\" title=\"2003 Accession Treaty; 2005 Accession Treaty (Bulgaria/Romania); 2011 Croatia Accession Treaty; European Commission CAP reform documentation\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-016</a> staðfestir aðild ríkjanna sem gengu í 2004 (Tékkland, Kýpur, Eistland, Ungverjaland, Lettland, Litáen, Malta, Pólland, Slóvakía, Slóvenía) og Búlgaríu og Rúmeníu sem gengu í 2007. Öll löndin sem nefnd voru í fullyrðingum 9 og 10 eru nú ESB-aðildarríki. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1\" title=\"Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-006</a> staðfestir einnig stækkun 2004.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildirnar staðfesta ekki beint hvaða ríki hófu aðildarviðræður árin 1998 og 2000. <a href=\"https://visitukraine.today/blog/2963/eu-membership-how-long-did-it-take-between-the-start-of-negotiations-and-accession\" title=\"Visit Ukraine / EU Council enlargement data\" target=\"_blank\" rel=\"noopener\">PREC-DATA-036</a> nefnir ríkin sem gengu inn 2004 (10 ríki úr Lúxemborg- og Helsinki-hópnum) og 2007 (Búlgaría, Rúmenía), en án þess að rekja hvenær viðræður hófust fyrir hvert ríki. Sögulega er rétt að öll ríkin sem hófu viðræður 1998 og 2000 hafi á endanum gengið í ESB, en heimildirnar staðfesta þetta ekki með beinum hætti.",
       "supporting_evidence": [
         {
-          "id": "AGRI-DATA-016",
-          "source_name": "2003 Accession Treaty; 2005 Accession Treaty (Bulgaria/Romania); 2011 Croatia Accession Treaty; European Commission CAP reform documentation",
-          "source_url": "https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-2023-27_en"
-        },
-        {
-          "id": "SOV-LEGAL-006",
-          "source_name": "Treaty protocols — Edinburgh Agreement, Lisbon Treaty protocols",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:41992X1231&rid=1"
-        },
-        {
-          "id": "HOUSING-PRECEDENT-002",
-          "source_name": "Eurostat — House price index; European Commission — Post-accession economic developments in the Baltic States",
-          "source_url": "https://ec.europa.eu/eurostat/web/housing-price-statistics"
-        },
-        {
-          "id": "PREC-HIST-020",
-          "source_name": "European Commission — 2003 Act of Accession; Eurostat",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L:2003:236:TOC"
+          "id": "PREC-DATA-036",
+          "source_name": "Visit Ukraine / EU Council enlargement data",
+          "source_url": "https://visitukraine.today/blog/2963/eu-membership-how-long-did-it-take-between-the-start-of-negotiations-and-accession"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": null,
-      "confidence": 0.9,
+      "missing_context": "Lúxemborg-hópurinn (viðræður hófust 1998: Kýpur, Tékkland, Eistland, Ungverjaland, Pólland, Slóvenía) og Helsinki-hópurinn (viðræður hófust 2000: Búlgaría, Lettland, Litháen, Malta, Rúmenía, Slóvakía) gengu allir inn í ESB á tímabilinu 2004–2007, en heimildirnar fela ekki í sér beina staðfestingu á þessari upptalningu.",
+      "confidence": 0.7,
       "speakers": [
         {
           "name": "Boris Vujčić",
@@ -1001,15 +1012,14 @@
       "attribution_type": "paraphrased",
       "claim_count": 25,
       "verdicts": {
-        "partially_supported": 17,
-        "supported": 5,
-        "misleading": 1,
-        "unverifiable": 2
+        "partially_supported": 19,
+        "supported": 4,
+        "misleading": 2
       },
       "stance": "pro_eu",
       "slug": "boris-vujcic",
       "mention_count": 3,
-      "credibility": 0.58
+      "credibility": 0.54
     }
   ]
 }

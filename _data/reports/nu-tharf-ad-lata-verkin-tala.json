@@ -10,8 +10,8 @@
   "summary": "Greindar 16 fullyrðingar. Niðurstöður: 8 ekki hægt að sannreyna, 6 stutt að hluta, 2 stutt af heimildum. Sjónarhorn: hallar á ESB-neikvæða hlið. Heildstæðni: 30%.",
   "capsule": "Ríkisstuðningur við íslenskan landbúnað er meðal hæstu í OECD — um 55–60% af vergri framleiðsluverðmæti — og tollvernd á mjólkurvörur og kjöt er í efstu sætunum á heimsvísu. Þjóðaratkvæðagreiðsla um aðildarviðræður er áætluð í ágúst 2026 og rétt er að spyrja hvort og hvernig stuðningskerfið myndi líta út á hinum megin: rannsóknir benda til þess að Ísland gæti fengið 80–120 milljónir evra árlega í greiðslur úr sameiginlegu landbúnaðarstefnu ESB, sem gætu komið að hluta til í stað þess stuðnings sem bændur njóta nú.",
   "verdict_counts": {
-    "partially_supported": 7,
-    "supported": 1
+    "supported": 2,
+    "partially_supported": 6
   },
   "epistemic_counts": null,
   "claim_count": 8,
@@ -31,13 +31,13 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "partially_supported",
-      "explanation": "Dagsetningin 29. ágúst 2026 er rétt staðfest af <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> og <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a>. Hins vegar er fullyrðingin um «áframhald aðildarviðræðna» aðeins ónákvæm. Spurningin sem lögð verður fyrir þjóðina er samkvæmt <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a>: «Á að halda áfram viðræðum um aðild Íslands að Evrópusambandinu?» — sem er víðtækari en «áframhald aðildarviðræðna» gefur til kynna. Auk þess er um ráðgefandi þjóðaratkvæðagreiðslu að ræða samkvæmt <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a>, en fullyrðingin nefnir ekki þennan mikilvæga fyrirvara.",
+      "verdict": "supported",
+      "explanation": "Margar heimildir staðfesta dagsetninguna 29. ágúst 2026. <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — bill 516 (157th session)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-007</a> vísar í frumvarp 516 frá 6. mars 2026 þar sem dagsetningin er sett fram, og <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir hana í flutningsræðu utanríkisráðherra 9. mars 2026. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> og <a href=\"https://www.nordiskpost.com/2026/03/08/eu-commission-iceland-application-valid/\" title=\"European Commission statement, March 2026 (reported via NordiskPost 8 March 2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-011</a> styðja einnig dagsetninguna.",
       "supporting_evidence": [
         {
-          "id": "SOV-DATA-006",
-          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
-          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+          "id": "SOV-PARL-007",
+          "source_name": "Alþingi — bill 516 (157th session)",
+          "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
         },
         {
           "id": "SOV-PARL-001",
@@ -45,14 +45,19 @@
           "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
         },
         {
-          "id": "SOV-INTL-001",
-          "source_name": "POLITICO Europe / Bloomberg / Government of Iceland",
-          "source_url": "https://www.politico.eu/article/iceland-eu-referendum-accession-talks/"
+          "id": "SOV-DATA-006",
+          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+        },
+        {
+          "id": "SOV-PARL-011",
+          "source_name": "European Commission statement, March 2026 (reported via NordiskPost 8 March 2026)",
+          "source_url": "https://www.nordiskpost.com/2026/03/08/eu-commission-iceland-application-valid/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Þjóðaratkvæðagreiðslan er ráðgefandi (ráðgefandi þjóðaratkvæðagreiðsla) en ekki bindandi — Alþingi er ekki skuldbundið af niðurstöðunni, þótt pólitísk hefð leggi þunga áherslu á virðingu fyrir vilja þjóðarinnar. Stjórnarandstaðan hefur gagnrýnt dagsetninguna sem of snemma og talið að nægileg umræða geti ekki átt sér stað yfir sumartímann. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-017</a> bendir á mikilvægan mun á stuðningi við þjóðaratkvæðagreiðsluna sjálfa (57%) og stuðningi við ESB-aðild (42%).",
-      "confidence": 0.5314355370975012,
+      "missing_context": "Þjóðaratkvæðagreiðslan er ráðgefandi en ekki bindandi fyrir Alþingi. Stjórnarandstaðan hefur gagnrýnt dagsetninguna sem of nálæga til að tryggja næga umræðu samkvæmt <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a>.",
+      "confidence": 0.95,
       "speakers": [
         {
           "name": "Bændablaðið",
@@ -140,7 +145,7 @@
       ],
       "contradicting_evidence": [],
       "missing_context": "Engar beinar rannsóknir eru tiltækar um áhrif ESB-óvissu á fjárfestingu í íslenskum landbúnaði. Íslenskur landbúnaður er mjög háður ríkisstyrkjum (55-60% af brúttótekjum) og tollvernd, sem gæti dregið úr áhrifum slíkrar óvissu á fjárfestingarákvarðanir þar sem stuðningsumhverfið ræðst af búvörusamningum, ekki ESB-viðræðum. Brexit-fordæmið á við allt annað efnahagskerfi.",
-      "confidence": 0.43605,
+      "confidence": 0.444771,
       "speakers": [
         {
           "name": "Formaður Bændasamtakanna",
@@ -203,7 +208,7 @@
         "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "Fullyrðingin inniheldur tvo hluta. Annars vegar að tollvernd hafi slaknað — heimildir (<a href=\"https://www.skatturinn.is/\" title=\"Icelandic customs tariff schedule — Tollskrá\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-002</a>, TRADE-DATA-021, <a href=\"https://www.oecd.org/agriculture/topics/agricultural-policy-monitoring-and-evaluation/\" title=\"OECD — Agricultural Policy Monitoring and Evaluation 2023; Hagstofa Íslands; Bændasamtök Íslands\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-017</a>) sýna að tollar eru enn meðal þeirra hæstu í OECD (30–100%+) en engar heimildir staðfesta né hafna breytingum yfir tíma. Hins vegar að tollvernd sé nauðsynleg — þetta er skoðun, en <a href=\"https://www.skatturinn.is/\" title=\"Icelandic customs tariff schedule — Tollskrá\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-002</a> og <a href=\"https://www.bondi.is/frettir/kynningarefni\" title=\"Bændasamtök Íslands — EU membership impact assessment (2025); Ministry of Agriculture — subsidy data\" target=\"_blank\" rel=\"noopener\">POL-DATA-015</a> styðja röksemdafærsluna um mikilvægi tollverndar fyrir samkeppnishæfni geirans.",
+      "explanation": "Fullyrðingin inniheldur tvo hluta. Annars vegar að tollvernd hafi slaknað — heimildir (<a href=\"https://www.skatturinn.is/\" title=\"Icelandic customs tariff schedule — Tollskrá\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-002</a>, TRADE-DATA-021, <a href=\"https://www.oecd.org/en/publications/agricultural-policy-monitoring-and-evaluation-2023_b14de474-en/full-report/iceland_fc821635.html\" title=\"OECD — Agricultural Policy Monitoring and Evaluation 2023; Hagstofa Íslands; Bændasamtök Íslands\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-017</a>) sýna að tollar eru enn meðal þeirra hæstu í OECD (30–100%+) en engar heimildir staðfesta né hafna breytingum yfir tíma. Hins vegar að tollvernd sé nauðsynleg — þetta er skoðun, en <a href=\"https://www.skatturinn.is/\" title=\"Icelandic customs tariff schedule — Tollskrá\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-002</a> og <a href=\"https://www.bondi.is/frettir/kynningarefni\" title=\"Bændasamtök Íslands — EU membership impact assessment (2025); Ministry of Agriculture — subsidy data\" target=\"_blank\" rel=\"noopener\">POL-DATA-015</a> styðja röksemdafærsluna um mikilvægi tollverndar fyrir samkeppnishæfni geirans.",
       "supporting_evidence": [
         {
           "id": "AGRI-DATA-002",
@@ -222,7 +227,7 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Tiltækar heimildir sýna tollvernd sem enn mjög háa í alþjóðlegum samanburði. Fullyrðingin um «verulega» slökun staðfestist ekki beint — <a href=\"https://www.oecd.org/agriculture/topics/agricultural-policy-monitoring-and-evaluation/\" title=\"OECD — Agricultural Policy Monitoring and Evaluation 2023; Hagstofa Íslands; Bændasamtök Íslands\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-017</a> sýnir að Ísland er enn með hæstu landbúnaðartolla í OECD. Þó eru dæmi um einstaka tollalækkanir í kjölfar EES-endurskoðana (EEA Article 19) sem gætu stutt fullyrðinguna um einhverja slökun.",
+      "missing_context": "Tiltækar heimildir sýna tollvernd sem enn mjög háa í alþjóðlegum samanburði. Fullyrðingin um «verulega» slökun staðfestist ekki beint — <a href=\"https://www.oecd.org/en/publications/agricultural-policy-monitoring-and-evaluation-2023_b14de474-en/full-report/iceland_fc821635.html\" title=\"OECD — Agricultural Policy Monitoring and Evaluation 2023; Hagstofa Íslands; Bændasamtök Íslands\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-017</a> sýnir að Ísland er enn með hæstu landbúnaðartolla í OECD. Þó eru dæmi um einstaka tollalækkanir í kjölfar EES-endurskoðana (EEA Article 19) sem gætu stutt fullyrðinguna um einhverja slökun.",
       "confidence": 0.5,
       "speakers": [
         {
@@ -291,12 +296,12 @@
         "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "Heildarstuðningur við landbúnað er umtalsverður — <a href=\"https://www.visindavefur.is/svar.php?id=82059\" title=\"Vísindavefurinn — Þórólfur Matthíasson, Professor Emeritus, University of Iceland (2021, updated 2026)\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-025</a> sýnir 57% af framleiðsluverðmæti og <a href=\"https://www.oecd.org/agriculture/topics/agricultural-policy-monitoring-and-evaluation/\" title=\"OECD — Agricultural Policy Monitoring and Evaluation 2024; Bændasamtök Íslands\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-004</a> tilgreinir 54% PSE. Fullyrðingin vísar þó sérstaklega til fjárfestingarstuðnings, sem gæti verið takmarkaður þrátt fyrir háan heildarstuðning. <a href=\"https://www.oecd.org/agriculture/topics/agricultural-policy-monitoring-and-evaluation/\" title=\"OECD Producer Support Estimate database — Iceland; Bændasamtök Íslands (Farmers Association) annual reports; European Commission CAP indicators\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-022</a> greinir stuðning í beinar greiðslur og tollvernd en nefnir ekki fjárfestingarstuðning sérstaklega.",
+      "explanation": "Heildarstuðningur við landbúnað er umtalsverður — <a href=\"https://www.visindavefur.is/svar.php?id=82059\" title=\"Vísindavefurinn — Þórólfur Matthíasson, Professor Emeritus, University of Iceland (2021, updated 2026)\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-025</a> sýnir 57% af framleiðsluverðmæti og <a href=\"https://www.oecd.org/en/publications/agricultural-policy-monitoring-and-evaluation-2024_74da57ed-en.html\" title=\"OECD — Agricultural Policy Monitoring and Evaluation 2024; Bændasamtök Íslands\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-004</a> tilgreinir 54% PSE. Fullyrðingin vísar þó sérstaklega til fjárfestingarstuðnings, sem gæti verið takmarkaður þrátt fyrir háan heildarstuðning. <a href=\"https://www.oecd.org/content/dam/oecd/en/topics/policy-issues/agricultural-policy-monitoring/psecse-mon2024-cookbooks/cookbook-isl-2024.pdf\" title=\"OECD Producer Support Estimate database — Iceland; Bændasamtök Íslands (Farmers Association) annual reports; European Commission CAP indicators\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-022</a> greinir stuðning í beinar greiðslur og tollvernd en nefnir ekki fjárfestingarstuðning sérstaklega.",
       "supporting_evidence": [
         {
           "id": "AGRI-DATA-022",
           "source_name": "OECD Producer Support Estimate database — Iceland; Bændasamtök Íslands (Farmers Association) annual reports; European Commission CAP indicators",
-          "source_url": "https://www.oecd.org/agriculture/topics/agricultural-policy-monitoring-and-evaluation/"
+          "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-issues/agricultural-policy-monitoring/psecse-mon2024-cookbooks/cookbook-isl-2024.pdf"
         }
       ],
       "contradicting_evidence": [
@@ -308,10 +313,10 @@
         {
           "id": "AGRI-DATA-004",
           "source_name": "OECD — Agricultural Policy Monitoring and Evaluation 2024; Bændasamtök Íslands",
-          "source_url": "https://www.oecd.org/agriculture/topics/agricultural-policy-monitoring-and-evaluation/"
+          "source_url": "https://www.oecd.org/en/publications/agricultural-policy-monitoring-and-evaluation-2024_74da57ed-en.html"
         }
       ],
-      "missing_context": "Stuðningur hins opinbera er háður skilgreiningu. Heildarstuðningur (bein greiðslur + tollvernd) er meðal þeirra hæstu í OECD samkvæmt <a href=\"https://www.oecd.org/agriculture/topics/agricultural-policy-monitoring-and-evaluation/\" title=\"OECD — Agricultural Policy Monitoring and Evaluation 2024; Bændasamtök Íslands\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-004</a>. Sértæk gögn um fjárfestingarstuðning (t.d. byggingarstyrki, tækjakaupastyrki) vantar í staðreyndagrunn — mögulegur munur er á beinum greiðslum til rekstrar annars vegar og fjárfestingarstuðningi hins vegar.",
+      "missing_context": "Stuðningur hins opinbera er háður skilgreiningu. Heildarstuðningur (bein greiðslur + tollvernd) er meðal þeirra hæstu í OECD samkvæmt <a href=\"https://www.oecd.org/en/publications/agricultural-policy-monitoring-and-evaluation-2024_74da57ed-en.html\" title=\"OECD — Agricultural Policy Monitoring and Evaluation 2024; Bændasamtök Íslands\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-004</a>. Sértæk gögn um fjárfestingarstuðning (t.d. byggingarstyrki, tækjakaupastyrki) vantar í staðreyndagrunn — mögulegur munur er á beinum greiðslum til rekstrar annars vegar og fjárfestingarstuðningi hins vegar.",
       "confidence": 0.5,
       "speakers": [
         {

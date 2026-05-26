@@ -11,7 +11,7 @@
   "capsule": "Könnunargögn frá mars 2026 sýna að um helmingur þjóðarinnar styður að halda þjóðaratkvæðagreiðslu um aðildarviðræður — en stuðningur við ESB-aðild sjálfa er um tíu prósentustigum lægri. Þessi munur er lykilsamhengi þegar metið er hversu víst niðurstaðan yrði. Áhugavert er jafnframt að forsætisráðherra Þorgerður Katrín Gunnarsdóttir lýsti því yfir í mars 2026 að hún myndi aldrei skrifa undir samning sem tryggir ekki íslensk markmið á lykilsviðum — sem bendir til þess að undanþáguspurningin sé í raun hluti af opinberri samningsstefnu, ekki bara umræðupunktur gagnrýnenda.",
   "verdict_counts": {
     "partially_supported": 8,
-    "unsupported": 1
+    "supported": 1
   },
   "epistemic_counts": {
     "prediction": 1,
@@ -300,18 +300,28 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "unsupported",
-      "explanation": "<a href=\"https://www.althingi.is/thingmenn/thingflokkar/sjalfstaedisflokkur/\" title=\"Althingi — Session 157 member registry\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-006</a> staðfestir að Guðrún Hafsteinsdóttir sé þingmaður Sjálfstæðisflokksins fyrir Suðurkjördæmi, en nefnir hana ekki sem formann flokksins. Engin heimild í staðreyndagrunninum staðfestir formannsembætti hennar. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T175023.html\" title=\"Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-003</a> sýnir hana tala fyrir hönd Sjálfstæðisflokksins á þingi, sem bendir til áberandi hlutverks, en \"tala fyrir hönd flokks\" þýðir ekki endilega formennsku.",
-      "supporting_evidence": [],
-      "contradicting_evidence": [
+      "verdict": "supported",
+      "explanation": "<a href=\"https://www.visir.is/g/20252695625d/gudrun-hafsteinsdottir-kjorin-formadur-sjalfstaedisflokksins\" title=\"Vísir 2025-03-02 (Guðrún kjörin formaður); Morgunblaðið 2025-03-02 (Kosningu til varaformanns lokið); Heimildin (Jens Garðar nýr varaformaður); xd.is/landsfundur-2025/ — Sjálfstæðisflokkurinn\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-025</a> staðfestir beint að Guðrún Hafsteinsdóttir var kjörin formaður Sjálfstæðisflokksins á 45. landsfundi í Laugardalshöll 2. mars 2025 með 50,11% atkvæða (931 á móti 912 atkvæðum Áslaugar Örnu Sigurbjörnsdóttur). Hún er tíundi formaður flokksins og fyrsta konan til að gegna embættinu í nær 100 ár, og tók við af Bjarna Benediktssyni. <a href=\"https://www.xd.is/\" title=\"Althingi debate records; Sjálfstæðisflokkur — Press releases; Morgunblaðið coverage\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-020</a> og <a href=\"https://www.althingi.is/thingmenn/thingflokkar/sjalfstaedisflokkur/\" title=\"Althingi — Session 157 member registry\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-006</a> staðfesta einnig stöðu hennar sem formanns.",
+      "supporting_evidence": [
+        {
+          "id": "PARTY-DATA-025",
+          "source_name": "Vísir 2025-03-02 (Guðrún kjörin formaður); Morgunblaðið 2025-03-02 (Kosningu til varaformanns lokið); Heimildin (Jens Garðar nýr varaformaður); xd.is/landsfundur-2025/ — Sjálfstæðisflokkurinn",
+          "source_url": "https://www.visir.is/g/20252695625d/gudrun-hafsteinsdottir-kjorin-formadur-sjalfstaedisflokksins"
+        },
+        {
+          "id": "PARTY-DATA-020",
+          "source_name": "Althingi debate records; Sjálfstæðisflokkur — Press releases; Morgunblaðið coverage",
+          "source_url": "https://www.xd.is/"
+        },
         {
           "id": "POLITICAL-DATA-006",
           "source_name": "Althingi — Session 157 member registry",
           "source_url": "https://www.althingi.is/thingmenn/thingflokkar/sjalfstaedisflokkur/"
         }
       ],
-      "missing_context": "Heimildir tilgreina ekki formann Sjálfstæðisflokksins beint. Hafa ber í huga að <a href=\"https://www.althingi.is/\" title=\"Althingi — Member directory; Government of Iceland cabinet listing\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-012</a> nefnir Þórdísi Kolbrúnu Reykfjörð Gylfadóttur sem leiðtoga Viðreisnar, ekki Sjálfstæðisflokksins — en enginn annar er nefndur sem formaður Sjálfstæðisflokksins í tiltækum heimildum.",
-      "confidence": 0.6317499999999999,
+      "contradicting_evidence": [],
+      "missing_context": "Atkvæðatölur (931 á móti 912, 50,11%) eru fengnar úr fréttaflutningi af landsfundinum, en fréttatilkynning Sjálfstæðisflokksins á xd.is er aðalheimildin. Guðrún var áður dómsmálaráðherra 2023–2024 og tók fyrst sæti á Alþingi fyrir flokkinn 2021 fyrir Suðurkjördæmi.",
+      "confidence": 0.95,
       "speakers": [
         {
           "name": "Guðrún Hafsteinsdóttir",

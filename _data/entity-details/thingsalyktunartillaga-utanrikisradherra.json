@@ -7,22 +7,22 @@
   "party": null,
   "stance": "insufficient_data",
   "stance_score": 0.0,
-  "credibility": 0.75,
+  "credibility": 0.62,
   "attribution_counts": {
     "quoted": 4
   },
   "althingi_stats": null,
   "scorecard": {
-    "supported": 2,
-    "partially_supported": 2
+    "partially_supported": 3,
+    "supported": 1
   },
   "claims": [
     {
       "claim_text": "Aðildarumsókn Íslands að Evrópusambandinu frá 2009 er enn í gildi samkvæmt þingsályktunartillögu utanríkisráðherra.",
       "original_quote": "Í þingsályktunartillögu utanríkisráðherra er kveðið á um að aðildarumsókn Íslands að Evrópusambandinu frá 2009 sé enn í gildi",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir beint að utanríkisráðherra Þorgerður Katrín Gunnarsdóttir hafi í flutningsræðu sinni 9. mars 2026 fyrir þingsályktunartillögu um þjóðaratkvæðagreiðslu lýst því yfir að umsóknin frá 2009 sé enn í gildi, staðfest af ESB sjálfu. <a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a> styður að framkvæmdastjórn ESB hafi aldrei viðurkennt bréfið frá 2015 sem formlega afturköllun.",
-      "missing_context": "Lögfræðileg staða umsóknarinnar er enn umdeild — sumir íslenskir lögfræðingar telja að bréf utanríkisráðherra Gunnars Braga Sveinssonar frá 2015 hafi haft réttaráhrif. EEA-DATA-009 bendir á að nýjar viðræður gætu þurft endurskoðun á þeim köflum sem voru bráðabirgðalokaðir vegna breytinga á regluverki ESB.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin er rétt að hluta en orðalagið er villandi. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir að Þorgerður Katrín Gunnarsdóttir sagði í flutningsræðu sinni að umsóknin frá 2009 væri enn í gildi, og <a href=\"https://www.nordiskpost.com/2026/03/08/eu-commission-iceland-application-valid/\" title=\"European Commission statement, March 2026 (reported via NordiskPost 8 March 2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-011</a> staðfestir að framkvæmdastjórn ESB hefur staðfest þetta opinberlega í mars 2026. Hins vegar er staða umsóknarinnar enn deilumál — sumir íslenskir lögfræðingar telja að bréf Gunnars Braga frá 2015 hafi dregið umsóknina til baka (<a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a>). Fullyrðingin segir «samkvæmt þingsályktunartillögu» en það er flutningsræðan sem inniheldur þá fullyrðingu, ekki sjálf tillagan.",
+      "missing_context": "Lagaleg staða umsóknarinnar er umdeild meðal íslenskra lögfræðinga (<a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a>, <a href=\"https://euobserver.com/eu-political/ar3e6db024\" title=\"EUobserver — 'Iceland says final EU goodbye', March 2015 (citing Sveinsson letter)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-010</a>). Bréf Gunnars Braga frá 12. mars 2015 var sent án samþykkis Alþingis eftir að afturköllunarfrumvarp féll vegna málþófs. Framkvæmdastjórn ESB staðfesti í mars 2026 að umsóknin er á skrá (<a href=\"https://www.nordiskpost.com/2026/03/08/eu-commission-iceland-application-valid/\" title=\"European Commission statement, March 2026 (reported via NordiskPost 8 March 2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-011</a>), en hvort viðræður myndu hefjast «þar sem frá var horfið» eða krefjast nýrrar umboðsveitingar er enn óljóst.",
       "supporting_evidence": [
         {
           "id": "SOV-PARL-001",
@@ -30,17 +30,23 @@
           "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
         },
         {
+          "id": "SOV-PARL-011",
+          "source_name": "European Commission statement, March 2026 (reported via NordiskPost 8 March 2026)",
+          "source_url": "https://www.nordiskpost.com/2026/03/08/eu-commission-iceland-application-valid/"
+        },
+        {
+          "id": "SOV-PARL-010",
+          "source_name": "EUobserver — 'Iceland says final EU goodbye', March 2015 (citing Sveinsson letter)",
+          "source_url": "https://euobserver.com/eu-political/ar3e6db024"
+        }
+      ],
+      "contradicting_evidence": [
+        {
           "id": "PARTY-DATA-011",
           "source_name": "Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews",
           "source_url": "https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/"
-        },
-        {
-          "id": "POLITICAL-DATA-010",
-          "source_name": "Althingi — Historical records; European Commission accession records",
-          "source_url": "https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/"
         }
       ],
-      "contradicting_evidence": [],
       "category": "eea_eu_law",
       "attribution": "quoted",
       "article_slug": "svona-er-ferlid-ef-thjodin-samthykkir-ad-kikja-i-pakkann",
@@ -52,18 +58,18 @@
       "claim_text": "Þingsályktunartillaga utanríkisráðherra er til meðferðar á Alþingi og til stendur að önnur umræða og atkvæðagreiðsla á þingi verði eftir sveitarstjórnarkosningarnar í maí.",
       "original_quote": "Þingsályktunartillaga utanríkisráðherra er til meðferðar á Alþingi og til stendur að önnur umræða um ályktunina, og loks atkvæðagreiðsla á þingi, verði eftir sveitarstjórnarkosningarnar í maí.",
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.althingi.is/\" title=\"Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-028</a> staðfestir að þingsályktunartillagan var lögð fram á Alþingi 7. mars 2026 og <a href=\"https://www.althingi.is/\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> staðfestir að hún er til meðferðar. Fyrri hluti fullyrðingarinnar er vel studdur. Hins vegar er engum heimildum í staðreyndagrunninum til að dreifa um að önnur umræða og atkvæðagreiðsla sé fyrirhuguð sérstaklega eftir sveitarstjórnarkosningar — þetta virðist vera nýjustu fréttir sem heimildir ná ekki til.",
+      "explanation": "<a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-028</a> staðfestir að þingsályktunartillagan var lögð fram á Alþingi 7. mars 2026 og <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> staðfestir að hún er til meðferðar. Fyrri hluti fullyrðingarinnar er vel studdur. Hins vegar er engum heimildum í staðreyndagrunninum til að dreifa um að önnur umræða og atkvæðagreiðsla sé fyrirhuguð sérstaklega eftir sveitarstjórnarkosningar — þetta virðist vera nýjustu fréttir sem heimildir ná ekki til.",
       "missing_context": "Tímasetning annarrar umræðu í tengslum við sveitarstjórnarkosningar í maí er ekki staðfest í tiltækum heimildum. Þetta kann að vera nýleg ákvörðun sem er ekki komin í staðreyndagrunn.",
       "supporting_evidence": [
         {
           "id": "SOV-LEGAL-028",
           "source_name": "Althingi — Parliamentary record, 7 March 2026; Lög um þingsköp Alþingis nr. 55/1991, Article 24",
-          "source_url": "https://www.althingi.is/"
+          "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
         },
         {
           "id": "SOV-PARL-005",
           "source_name": "Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)",
-          "source_url": "https://www.althingi.is/"
+          "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
         },
         {
           "id": "SOV-PARL-001",

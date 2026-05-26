@@ -10,8 +10,8 @@
   "summary": "Greindar 8 fullyrðingar. Niðurstöður: 3 ekki hægt að sannreyna, 3 stutt að hluta, 2 stutt af heimildum. Sjónarhorn: hallar á ESB-neikvæða hlið. Heildstæðni: 30%.",
   "capsule": "Heimsókn Þorgerðar Katrínar Gunnarsdóttur til Brussel í mars 2026 er staðfest — fundir með fulltrúum ESB fóru fram og þjóðaratkvæðagreiðslan er á dagskrá 29. ágúst nk. Áhugavert er þó að samkvæmt tilkynningum utanríkisráðuneytisins leiddi fundurinn af sér undirritun öryggis- og varnarsamstarfssamnings, en ráðuneytið tók sérstaklega fram að yfirlýsingin sé ekki bindandi og feli í sér engar fjármálalegar skuldbindingar. Þeir sem vilja kynna sér muninn á pólitískum merkjum frá ESB og formlegri ákvörðun framkvæmdastjórnarinnar geta flett upp í gögnum ESB um stækkunarferla.",
   "verdict_counts": {
-    "supported": 1,
-    "partially_supported": 4
+    "supported": 2,
+    "partially_supported": 3
   },
   "epistemic_counts": null,
   "claim_count": 5,
@@ -78,13 +78,13 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "partially_supported",
-      "explanation": "Dagsetningin 29. ágúst 2026 er rétt staðfest af <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> og <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a>. Hins vegar er fullyrðingin um «áframhald aðildarviðræðna» aðeins ónákvæm. Spurningin sem lögð verður fyrir þjóðina er samkvæmt <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a>: «Á að halda áfram viðræðum um aðild Íslands að Evrópusambandinu?» — sem er víðtækari en «áframhald aðildarviðræðna» gefur til kynna. Auk þess er um ráðgefandi þjóðaratkvæðagreiðslu að ræða samkvæmt <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a>, en fullyrðingin nefnir ekki þennan mikilvæga fyrirvara.",
+      "verdict": "supported",
+      "explanation": "Margar heimildir staðfesta dagsetninguna 29. ágúst 2026. <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — bill 516 (157th session)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-007</a> vísar í frumvarp 516 frá 6. mars 2026 þar sem dagsetningin er sett fram, og <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir hana í flutningsræðu utanríkisráðherra 9. mars 2026. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> og <a href=\"https://www.nordiskpost.com/2026/03/08/eu-commission-iceland-application-valid/\" title=\"European Commission statement, March 2026 (reported via NordiskPost 8 March 2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-011</a> styðja einnig dagsetninguna.",
       "supporting_evidence": [
         {
-          "id": "SOV-DATA-006",
-          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
-          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+          "id": "SOV-PARL-007",
+          "source_name": "Alþingi — bill 516 (157th session)",
+          "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
         },
         {
           "id": "SOV-PARL-001",
@@ -92,14 +92,19 @@
           "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
         },
         {
-          "id": "SOV-INTL-001",
-          "source_name": "POLITICO Europe / Bloomberg / Government of Iceland",
-          "source_url": "https://www.politico.eu/article/iceland-eu-referendum-accession-talks/"
+          "id": "SOV-DATA-006",
+          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+        },
+        {
+          "id": "SOV-PARL-011",
+          "source_name": "European Commission statement, March 2026 (reported via NordiskPost 8 March 2026)",
+          "source_url": "https://www.nordiskpost.com/2026/03/08/eu-commission-iceland-application-valid/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Þjóðaratkvæðagreiðslan er ráðgefandi (ráðgefandi þjóðaratkvæðagreiðsla) en ekki bindandi — Alþingi er ekki skuldbundið af niðurstöðunni, þótt pólitísk hefð leggi þunga áherslu á virðingu fyrir vilja þjóðarinnar. Stjórnarandstaðan hefur gagnrýnt dagsetninguna sem of snemma og talið að nægileg umræða geti ekki átt sér stað yfir sumartímann. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-017</a> bendir á mikilvægan mun á stuðningi við þjóðaratkvæðagreiðsluna sjálfa (57%) og stuðningi við ESB-aðild (42%).",
-      "confidence": 0.5314355370975012,
+      "missing_context": "Þjóðaratkvæðagreiðslan er ráðgefandi en ekki bindandi fyrir Alþingi. Stjórnarandstaðan hefur gagnrýnt dagsetninguna sem of nálæga til að tryggja næga umræðu samkvæmt <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a>.",
+      "confidence": 0.95,
       "speakers": [
         {
           "name": "Nútíminn",
@@ -237,7 +242,7 @@
         "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "Gagnrýnin á skort á umboði kemur fram hjá fleiri aðilum. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T175023.html\" title=\"Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-003</a> sýnir að Guðrún Hafsteinsdóttir krafðist þess að ríkisstjórnin upplýsti þjóðina áður en hún fæði umboð til viðræðna. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T182328.html\" title=\"Alþingi — Sigmundur Davíð Gunnlaugsson, þingmaður Miðflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-002</a> lýsir ásökunum Sigmundar Davíðs um «baktjaldamakk». Heimildir staðfesta þannig að ESB-gagnrýnendur telja ríkisstjórnina fara á undan umboði þjóðarinnar. Þó ber að hafa í huga að <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> og <a href=\"https://www.althingi.is/\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> sýna að ríkisstjórnin rökstyður málið með þingályktunarferlinu — utanríkisráðherra hefur lagt tillögu fyrir Alþingi og þjóðaratkvæðagreiðslan er sjálft umboðsferlið.",
+      "explanation": "Gagnrýnin á skort á umboði kemur fram hjá fleiri aðilum. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T175023.html\" title=\"Alþingi — Guðrún Hafsteinsdóttir, þingmaður Sjálfstæðisflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-003</a> sýnir að Guðrún Hafsteinsdóttir krafðist þess að ríkisstjórnin upplýsti þjóðina áður en hún fæði umboð til viðræðna. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T182328.html\" title=\"Alþingi — Sigmundur Davíð Gunnlaugsson, þingmaður Miðflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-002</a> lýsir ásökunum Sigmundar Davíðs um «baktjaldamakk». Heimildir staðfesta þannig að ESB-gagnrýnendur telja ríkisstjórnina fara á undan umboði þjóðarinnar. Þó ber að hafa í huga að <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> og <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-005</a> sýna að ríkisstjórnin rökstyður málið með þingályktunarferlinu — utanríkisráðherra hefur lagt tillögu fyrir Alþingi og þjóðaratkvæðagreiðslan er sjálft umboðsferlið.",
       "supporting_evidence": [
         {
           "id": "SOV-PARL-003",
@@ -252,7 +257,7 @@
         {
           "id": "SOV-PARL-005",
           "source_name": "Alþingi — Þingfundir og ræður, 157. löggjafarþing (2026)",
-          "source_url": "https://www.althingi.is/"
+          "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
         },
         {
           "id": "SOV-DATA-018",
@@ -296,8 +301,8 @@
       },
       "stance": "anti_eu",
       "slug": "olafur-ragnar-grimsson",
-      "mention_count": 10,
-      "credibility": 0.54,
+      "mention_count": 14,
+      "credibility": 0.59,
       "speech_count": 79
     },
     {
@@ -312,8 +317,8 @@
       },
       "stance": "anti_eu",
       "slug": "bjorn-bjarnason",
-      "mention_count": 13,
-      "credibility": 0.59,
+      "mention_count": 19,
+      "credibility": 0.58,
       "speech_count": 60
     }
   ]

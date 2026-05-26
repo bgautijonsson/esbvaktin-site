@@ -6,14 +6,15 @@
   "role": "framkvæmdastjórn",
   "party": null,
   "stance": "mixed",
-  "stance_score": 0.33,
+  "stance_score": 0.4,
   "credibility": 0.62,
   "attribution_counts": {
-    "paraphrased": 8,
-    "mentioned": 7
+    "paraphrased": 9,
+    "mentioned": 8
   },
   "althingi_stats": null,
   "scorecard": {
+    "unverifiable": 1,
     "partially_supported": 6,
     "supported": 2
   },
@@ -21,16 +22,10 @@
     {
       "claim_text": "Framkvæmdastjórn ESB hóf rannsókn á X (Twitter) á grundvelli laga um stafræna þjónustu (Digital Services Act).",
       "original_quote": "hóf Framkvæmdastjórn ESB rannsókn á X sem felur í sér áhættumat og mótvægisaðgerðir tæknirisans. Rannsóknin byggist á regluverki ESB varðandi stafræna þjónustu, eða Digital Services Act (DSA)",
-      "verdict": "partially_supported",
-      "explanation": "Heimild <a href=\"https://commission.europa.eu/strategy-and-policy/strategy-documents/commission-work-programme_en\" title=\"EUR-Lex legislative database; European Commission Work Programmes 2014–2025\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-018</a> staðfestir að Digital Services Act (DSA) var samþykkt árið 2022 og er hluti af stafrænu regluverkspakka ESB. Engin heimild í staðreyndagrunni staðfestir hins vegar beint að Framkvæmdastjórnin hafi opnað formlega rannsókn á X/Twitter á grundvelli DSA. Tilvist DSA er staðfest, en beitingin á X er ekki sannreynanleg með tiltækum heimildum.",
-      "missing_context": "Staðreyndagrunnurinn inniheldur ekki upplýsingar um framkvæmd DSA gagnvart tilteknum fyrirtækjum eins og X/Twitter. Þörf er á heimildum frá Framkvæmdastjórn ESB um einstaka rannsóknarmál.",
-      "supporting_evidence": [
-        {
-          "id": "EEA-LEGAL-018",
-          "source_name": "EUR-Lex legislative database; European Commission Work Programmes 2014–2025",
-          "source_url": "https://commission.europa.eu/strategy-and-policy/strategy-documents/commission-work-programme_en"
-        }
-      ],
+      "verdict": "unverifiable",
+      "explanation": "Heimildir í gagnagrunninum staðfesta hvorki né hrekja fullyrðinguna um að framkvæmdastjórn ESB hafi hafið rannsókn á X (Twitter) á grundvelli laga um stafræna þjónustu. <a href=\"https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng\" title=\"EU Digital Services Act — Official Regulation Text\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-029</a> lýsir uppbyggingu DSA-reglugerðarinnar og hvernig hún beinist að stórum kerfispöllum (>45 milljón ESB-notendur), en nefnir ekki sérstaklega X eða Twitter sem rannsóknarefni. Engar heimildir í úrtakinu fjalla beint um þá rannsókn sem fullyrðingin nefnir.",
+      "missing_context": "Heimildir í gagnagrunninum lýsa DSA-reglugerðinni almennt en innihalda engar tilteknar upplýsingar um rannsókn framkvæmdastjórnarinnar á X. <a href=\"https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng\" title=\"EU Digital Services Act — Official Regulation Text\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-029</a> staðfestir að DSA gildir um mjög stóra kerfispalla og að viðurlög geta verið allt að 6% af heildarveltu á heimsvísu. DSA hefur ekki enn verið formlega innleitt í EES-samninginn.",
+      "supporting_evidence": [],
       "contradicting_evidence": [],
       "category": "eea_eu_law",
       "attribution": "paraphrased",
@@ -230,6 +225,32 @@
       "article_title": "Ótti Evrópuhreyfingarinnar",
       "article_source": "Björn Bjarnason",
       "article_date": "2026-03-29"
+    },
+    {
+      "claim_text": "Framkvæmdastjórn ESB telur nauðsynlegt að hraða uppbyggingu raforkuneta til að tryggja orkuskipti, iðnvæðingu og aukið orkuöryggi.",
+      "original_quote": "Framkvæmdastjórnin telur nauðsynlegt að hraða uppbyggingu raforkuneta til að tryggja orkuskipti, iðnvæðingu og aukið orkuöryggi",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12016E194\" title=\"Treaty on the Functioning of the European Union, Article 194\" target=\"_blank\" rel=\"noopener\">ENERGY-TREATY-001</a> staðfestir að 194. grein TFEU hafi sem markmið ESB-orkustefnu m.a. orkuöryggi, orkunýtni, endurnýjanlega orku og samtengingu raforkukerfa — sem rímar við lýst markmið framkvæmdastjórnarinnar. <a href=\"https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal_en\" title=\"European Commission — European Green Deal; Fit for 55 legislative package\" target=\"_blank\" rel=\"noopener\">ENERGY-ANALYSIS-001</a> staðfestir einnig að evrópski græni sáttmálinn frá 2019 stefni að 55% samdrætti losunar fyrir 2030 og kolefnishlutleysi fyrir 2050, sem krefst umfangsmikilla orkuinnviða. Heimildir staðreyndagrunnsins meta þó ekki beint þessa tilteknu stefnumótun framkvæmdastjórnarinnar.",
+      "missing_context": "Heimildirnar styðja almenn markmið ESB á sviði orku en fjalla ekki beint um tiltekna áætlun framkvæmdastjórnarinnar um miðlægt raforkunet eða þá afstöðu sem fullyrðingin lýsir.",
+      "supporting_evidence": [
+        {
+          "id": "ENERGY-TREATY-001",
+          "source_name": "Treaty on the Functioning of the European Union, Article 194",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12016E194"
+        },
+        {
+          "id": "ENERGY-ANALYSIS-001",
+          "source_name": "European Commission — European Green Deal; Fit for 55 legislative package",
+          "source_url": "https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal_en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "energy",
+      "attribution": "paraphrased",
+      "article_slug": "fimm-esb-riki-gegn-raforkuneti-esb",
+      "article_title": "Fimm ESB-ríki gegn raforkuneti ESB",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-05-15"
     }
   ],
   "articles": [
@@ -268,6 +289,16 @@
       "title": "Ótti Evrópuhreyfingarinnar",
       "source": "Björn Bjarnason",
       "date": "2026-03-29",
+      "claim_count": 1,
+      "attribution_types": [
+        "paraphrased"
+      ]
+    },
+    {
+      "slug": "fimm-esb-riki-gegn-raforkuneti-esb",
+      "title": "Fimm ESB-ríki gegn raforkuneti ESB",
+      "source": "Morgunblaðið",
+      "date": "2026-05-15",
       "claim_count": 1,
       "attribution_types": [
         "paraphrased"

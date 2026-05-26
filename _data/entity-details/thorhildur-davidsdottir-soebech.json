@@ -7,28 +7,23 @@
   "party": null,
   "stance": "insufficient_data",
   "stance_score": 1.0,
-  "credibility": 0.54,
+  "credibility": 0.55,
   "attribution_counts": {
     "asserted": 13
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 12
+    "unverifiable": 1,
+    "partially_supported": 11
   },
   "claims": [
     {
       "claim_text": "Framkvæmdastjórn ESB hóf rannsókn á X (Twitter) á grundvelli laga um stafræna þjónustu (Digital Services Act).",
       "original_quote": "hóf Framkvæmdastjórn ESB rannsókn á X sem felur í sér áhættumat og mótvægisaðgerðir tæknirisans. Rannsóknin byggist á regluverki ESB varðandi stafræna þjónustu, eða Digital Services Act (DSA)",
-      "verdict": "partially_supported",
-      "explanation": "Heimild <a href=\"https://commission.europa.eu/strategy-and-policy/strategy-documents/commission-work-programme_en\" title=\"EUR-Lex legislative database; European Commission Work Programmes 2014–2025\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-018</a> staðfestir að Digital Services Act (DSA) var samþykkt árið 2022 og er hluti af stafrænu regluverkspakka ESB. Engin heimild í staðreyndagrunni staðfestir hins vegar beint að Framkvæmdastjórnin hafi opnað formlega rannsókn á X/Twitter á grundvelli DSA. Tilvist DSA er staðfest, en beitingin á X er ekki sannreynanleg með tiltækum heimildum.",
-      "missing_context": "Staðreyndagrunnurinn inniheldur ekki upplýsingar um framkvæmd DSA gagnvart tilteknum fyrirtækjum eins og X/Twitter. Þörf er á heimildum frá Framkvæmdastjórn ESB um einstaka rannsóknarmál.",
-      "supporting_evidence": [
-        {
-          "id": "EEA-LEGAL-018",
-          "source_name": "EUR-Lex legislative database; European Commission Work Programmes 2014–2025",
-          "source_url": "https://commission.europa.eu/strategy-and-policy/strategy-documents/commission-work-programme_en"
-        }
-      ],
+      "verdict": "unverifiable",
+      "explanation": "Heimildir í gagnagrunninum staðfesta hvorki né hrekja fullyrðinguna um að framkvæmdastjórn ESB hafi hafið rannsókn á X (Twitter) á grundvelli laga um stafræna þjónustu. <a href=\"https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng\" title=\"EU Digital Services Act — Official Regulation Text\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-029</a> lýsir uppbyggingu DSA-reglugerðarinnar og hvernig hún beinist að stórum kerfispöllum (>45 milljón ESB-notendur), en nefnir ekki sérstaklega X eða Twitter sem rannsóknarefni. Engar heimildir í úrtakinu fjalla beint um þá rannsókn sem fullyrðingin nefnir.",
+      "missing_context": "Heimildir í gagnagrunninum lýsa DSA-reglugerðinni almennt en innihalda engar tilteknar upplýsingar um rannsókn framkvæmdastjórnarinnar á X. <a href=\"https://eur-lex.europa.eu/eli/reg/2022/2065/oj/eng\" title=\"EU Digital Services Act — Official Regulation Text\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-029</a> staðfestir að DSA gildir um mjög stóra kerfispalla og að viðurlög geta verið allt að 6% af heildarveltu á heimsvísu. DSA hefur ekki enn verið formlega innleitt í EES-samninginn.",
+      "supporting_evidence": [],
       "contradicting_evidence": [],
       "category": "eea_eu_law",
       "attribution": "asserted",

@@ -7,7 +7,7 @@
   "party": null,
   "stance": "insufficient_data",
   "stance_score": 1.0,
-  "credibility": 1.0,
+  "credibility": 0.5,
   "attribution_counts": {
     "quoted": 1
   },
@@ -19,15 +19,15 @@
     "last_speech": "2024-02-01"
   },
   "scorecard": {
-    "supported": 1
+    "partially_supported": 1
   },
   "claims": [
     {
       "claim_text": "Magnús Skjöld, formaður Evrópuhreyfingarinnar, hélt því fram 29. mars 2026 að þjóðaratkvæðagreiðslan í haust snúist ekki um aðild að ESB heldur um hvort halda eigi áfram viðræðum.",
       "original_quote": "Það sem hefur komið mér mest á óvart í umræðunni síðustu daga er hversu margir virðast halda að við séum að kjósa um aðild að Evrópusambandinu í haust. Við erum ekki að því. Við erum að kjósa um hvort við viljum halda áfram viðræðum.",
-      "verdict": "supported",
-      "explanation": "<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> staðfestir að þjóðaratkvæðagreiðslan snýst um hvort halda eigi áfram aðildarviðræðum sem stöðvuðust 2013, ekki um beina aðild. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> sýnir að spurning þjóðaratkvæðagreiðslunnar er orðrétt: «Á að halda áfram viðræðum um aðild Íslands að Evrópusambandinu?» Þessi aðgreining er lykilatriði í framsetningu Magnúsar Skjaldar og samrýmist formlegu orðalagi atkvæðagreiðslunnar.",
-      "missing_context": "Þó er rétt að benda á að andstæðingar telja aðgreiningu milli viðræðna og aðildar villandi — samkvæmt <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T182328.html\" title=\"Alþingi — Sigmundur Davíð Gunnlaugsson, þingmaður Miðflokksins (ræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-002</a> hélt Sigmundur Davíð því fram að aðildarviðræður feli í sér skuldbindingu um lagaaðlögun, ekki aðeins «skoðunarferð». <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland), Articles 26, 65, 79; Althingi records on 2012 referendum follow-up\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-026</a> nefnir einnig að þjóðaratkvæðagreiðslan er ráðgefandi, sem þýðir að niðurstaðan er ekki lagalega bindandi.",
+      "verdict": "partially_supported",
+      "explanation": "Efnislega er fullyrðingin staðfest af heimildum. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a>, <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> og <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — bill 516 (157th session)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-007</a> staðfesta að þjóðaratkvæðagreiðslan 29. ágúst 2026 snýst um hvort halda eigi áfram aðildarviðræðum, ekki um aðild að ESB sem slíka. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Þjóðarpúls, February–March 2026; Capacent Gallup historical EU polling data (2009–2013)\" target=\"_blank\" rel=\"noopener\">POLL-DATA-021</a> sýnir einnig að stuðningur við að halda áfram viðræðum (52%) er meiri en stuðningur við aðild (42%). Engin heimild í lotunni staðfestir þó beint að Magnús Skjöld, formaður Evrópuhreyfingarinnar, hafi haldið þessari yfirlýsingu fram 29. mars 2026.",
+      "missing_context": "Sá efnislegi grunnur fullyrðingarinnar er rétt rökstuddur — þjóðaratkvæðagreiðslan snýst formlega um viðræður, ekki aðild. Hins vegar staðfestir engin heimild í þessari lotu beina yfirlýsingu Magnúsar Skjöldar frá 29. mars 2026. Til að staðfesta tilvitnaða yfirlýsingu þyrfti aðgang að frumheimild — t.d. viðtali eða blaðagrein frá þeim degi.",
       "supporting_evidence": [
         {
           "id": "SOV-DATA-006",
@@ -40,9 +40,14 @@
           "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
         },
         {
-          "id": "SOV-PARL-004",
-          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir (flutningsræða, 154. löggjafarþing); Logi Einarsson (flutningsræða, 153. löggjafarþing)",
-          "source_url": "https://www.althingi.is/altext/raeda/154/rad20230919T175556.html"
+          "id": "SOV-PARL-007",
+          "source_name": "Alþingi — bill 516 (157th session)",
+          "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
+        },
+        {
+          "id": "POLL-DATA-021",
+          "source_name": "Gallup Þjóðarpúls, February–March 2026; Capacent Gallup historical EU polling data (2009–2013)",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
         }
       ],
       "contradicting_evidence": [],

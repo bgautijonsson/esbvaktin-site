@@ -10,8 +10,7 @@
   "summary": "Greindar 4 fullyrðingar. Niðurstöður: 2 stutt að hluta, 1 stutt af heimildum, 1 ekki hægt að sannreyna. Sjónarhorn: mjög ESB-neikvæð. Heildstæðni: 15%.",
   "capsule": "Samkeppnishæfnivandi Evrópusambandsins er vel skjalfestur — Draghi-skýrslan frá 2024 og könnun BusinessEurope frá 2025 staðfesta báðar að ESB hefur dregið lappirnar í samanburði við Bandaríkin og Kína. Áhugavert er þó að íslensk hagnaðarþátttaka í ESB-efnahagnum er þegar mikil: um helmingur vöruútflutnings Íslands fer til ESB-ríkja í gegnum EES-samninginn, þannig að þróun í efnahag ESB hefur bein áhrif á Ísland hvort sem verður af aðild eða ekki. Þá er það lítið þekkt að EES-ríki — ólíkt fullgildum ESB-meðlimum — geti ekki nýtt sér samningsstyrk sambandsins í viðskiptadeilum við þriðju lönd.",
   "verdict_counts": {
-    "partially_supported": 2,
-    "supported": 1
+    "partially_supported": 3
   },
   "epistemic_counts": null,
   "claim_count": 3,
@@ -95,23 +94,34 @@
         "confidence": 0.7,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en\" title=\"Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-024</a> staðfestir viðvarandi samkeppnisvanda ESB: hagvöxtur á mann hefur verið um 1% hægari en í Bandaríkjunum síðastliðna tvo áratugi, orkuverð er margfalt hærra og aðeins 4 af 50 stærstu tæknifyrirtækjum heims eru evrópsk. Draghi varaði sérstaklega við «hægri dauðsyfju» (slow agony) ef ESB bregðist ekki við. <a href=\"https://www.businesseurope.eu/publications/businesseurope-reform-barometer-2025-eu-in-a-new-political-cycle-competitiveness-as-a-true-priority-in-a-complex-global-context/\" title=\"BusinessEurope — Reform Barometer 2025; Reform Barometer 2024\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-026</a> styrkir þetta — 80% atvinnurekendafélaga sögðu samkeppnishæfni hafa versnað. Heimildir staðfesta þannig bæði vandann og að hann hefur verið viðvarandi.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en\" title=\"Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-024</a> (Draghi-skýrslan frá september 2024) staðfestir að ESB hafi glímt við viðvarandi framleiðni- og samkeppnishæfnigap gagnvart Bandaríkjunum og Kína undanfarin 20 ár. Hins vegar sýnir <a href=\"https://europa.eu/eurobarometer/surveys/detail/3372\" title=\"European Commission — Standard Eurobarometer 103\" target=\"_blank\" rel=\"noopener\">POLL-INTL-001</a> að 73% íbúa ESB telja aðild gagnlega — hæsta hlutfall síðan 1983 — og <a href=\"https://ec.europa.eu/eurostat/databrowser/view/ext_lt_maineu/\" title=\"Eurostat — International trade main aggregates (ext_lt_maineu)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-018</a> sýnir vaxandi viðskipti ESB við Ísland. Fullyrðingin er of einsleit og sleppir andstæðum vísbendingum.",
       "supporting_evidence": [
         {
           "id": "TRADE-DATA-024",
           "source_name": "Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)",
           "source_url": "https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en"
-        },
-        {
-          "id": "TRADE-DATA-026",
-          "source_name": "BusinessEurope — Reform Barometer 2025; Reform Barometer 2024",
-          "source_url": "https://www.businesseurope.eu/publications/businesseurope-reform-barometer-2025-eu-in-a-new-political-cycle-competitiveness-as-a-true-priority-in-a-complex-global-context/"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Draghi-skýrslan hefur verið gagnrýnd úr ýmsum áttum — sumir telja fjárfestingartölurnar óraunhæfar og áherslu á «evrópska meistara» geti grafið undan samkeppni. Þá ber að hafa í huga að ESB hefur brugðist við með stórfelldri fjárfestingaráætlun (NextGenerationEU, 807 milljarðar evra) og nýrri stafrænni löggjöf, sem sýnir viðbragðsgetu. <a href=\"https://ec.europa.eu/eurostat/databrowser/view/ext_lt_maineu/\" title=\"Eurostat — International trade main aggregates (ext_lt_maineu)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-018</a> bendir á stöðugan vöxt í viðskiptum ESB og Íslands þrátt fyrir vandann.",
-      "confidence": 0.85,
+      "contradicting_evidence": [
+        {
+          "id": "POLL-INTL-001",
+          "source_name": "European Commission — Standard Eurobarometer 103",
+          "source_url": "https://europa.eu/eurobarometer/surveys/detail/3372"
+        },
+        {
+          "id": "PREC-DATA-022",
+          "source_name": "European Commission — Standard Eurobarometer 103, Spring 2025",
+          "source_url": "https://europa.eu/eurobarometer/"
+        },
+        {
+          "id": "TRADE-DATA-018",
+          "source_name": "Eurostat — International trade main aggregates (ext_lt_maineu)",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/ext_lt_maineu/"
+        }
+      ],
+      "missing_context": "Þótt Draghi-skýrslan greini frá samkeppnishæfnigapinu sýna heimildir samhliða að stuðningur við ESB-aðild meðal íbúa sé í sögulegum hæðum og engin önnur aðildarríki hafi farið af stað í úrsagnarferli síðan Bretland. Fullyrðingin um «viðvarandi efnahagslegan vanda» er rétt að hluta — gapið gagnvart Bandaríkjunum og Kína er staðfest — en sleppir því að ESB hefur einnig sýnt vöxt og pólitískan styrk.",
+      "confidence": 0.7,
       "speakers": [
         {
           "name": null,
@@ -205,8 +215,7 @@
       "attribution_type": "asserted",
       "claim_count": 3,
       "verdicts": {
-        "partially_supported": 2,
-        "supported": 1
+        "partially_supported": 3
       },
       "stance": "neutral"
     }

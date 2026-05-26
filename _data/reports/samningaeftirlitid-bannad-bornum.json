@@ -10,7 +10,8 @@
   "summary": "Greindar 4 fullyrðingar. Niðurstöður: 3 stutt að hluta, 1 stutt af heimildum. Sjónarhorn: mjög ESB-jákvæð. Heildstæðni: 15%.",
   "capsule": "Þjóðaratkvæðagreiðslan 29. ágúst spyr hvort halda eigi áfram aðildarviðræðum — rétt eins og greinin lýsir — en áhugavert er að allar þjóðaratkvæðagreiðslur á Íslandi eru ráðgefandi, ekki bindandi, og Alþingi er ekki lagalega skylt að fylgja niðurstöðunni. Jafnframt er vert að hafa í huga að lægri vextir í Evrópu fylgja aðild að evrusvæðinu, sem er sérstök ákvörðun sem kæmi til sögu mun síðar í ferlinu — ESB-aðild ein og sér hefur takmarkaðar beinar afleiðingar á vexti.",
   "verdict_counts": {
-    "partially_supported": 4
+    "supported": 1,
+    "partially_supported": 3
   },
   "epistemic_counts": {
     "prediction": 1
@@ -31,13 +32,13 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "partially_supported",
-      "explanation": "Dagsetningin 29. ágúst 2026 er rétt staðfest af <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> og <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a>. Hins vegar er fullyrðingin um «áframhald aðildarviðræðna» aðeins ónákvæm. Spurningin sem lögð verður fyrir þjóðina er samkvæmt <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a>: «Á að halda áfram viðræðum um aðild Íslands að Evrópusambandinu?» — sem er víðtækari en «áframhald aðildarviðræðna» gefur til kynna. Auk þess er um ráðgefandi þjóðaratkvæðagreiðslu að ræða samkvæmt <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a>, en fullyrðingin nefnir ekki þennan mikilvæga fyrirvara.",
+      "verdict": "supported",
+      "explanation": "Margar heimildir staðfesta dagsetninguna 29. ágúst 2026. <a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Alþingi — bill 516 (157th session)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-007</a> vísar í frumvarp 516 frá 6. mars 2026 þar sem dagsetningin er sett fram, og <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir hana í flutningsræðu utanríkisráðherra 9. mars 2026. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> og <a href=\"https://www.nordiskpost.com/2026/03/08/eu-commission-iceland-application-valid/\" title=\"European Commission statement, March 2026 (reported via NordiskPost 8 March 2026)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-011</a> styðja einnig dagsetninguna.",
       "supporting_evidence": [
         {
-          "id": "SOV-DATA-006",
-          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
-          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+          "id": "SOV-PARL-007",
+          "source_name": "Alþingi — bill 516 (157th session)",
+          "source_url": "https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516"
         },
         {
           "id": "SOV-PARL-001",
@@ -45,14 +46,19 @@
           "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
         },
         {
-          "id": "SOV-INTL-001",
-          "source_name": "POLITICO Europe / Bloomberg / Government of Iceland",
-          "source_url": "https://www.politico.eu/article/iceland-eu-referendum-accession-talks/"
+          "id": "SOV-DATA-006",
+          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+        },
+        {
+          "id": "SOV-PARL-011",
+          "source_name": "European Commission statement, March 2026 (reported via NordiskPost 8 March 2026)",
+          "source_url": "https://www.nordiskpost.com/2026/03/08/eu-commission-iceland-application-valid/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Þjóðaratkvæðagreiðslan er ráðgefandi (ráðgefandi þjóðaratkvæðagreiðsla) en ekki bindandi — Alþingi er ekki skuldbundið af niðurstöðunni, þótt pólitísk hefð leggi þunga áherslu á virðingu fyrir vilja þjóðarinnar. Stjórnarandstaðan hefur gagnrýnt dagsetninguna sem of snemma og talið að nægileg umræða geti ekki átt sér stað yfir sumartímann. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-017</a> bendir á mikilvægan mun á stuðningi við þjóðaratkvæðagreiðsluna sjálfa (57%) og stuðningi við ESB-aðild (42%).",
-      "confidence": 0.5314355370975012,
+      "missing_context": "Þjóðaratkvæðagreiðslan er ráðgefandi en ekki bindandi fyrir Alþingi. Stjórnarandstaðan hefur gagnrýnt dagsetninguna sem of nálæga til að tryggja næga umræðu samkvæmt <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a>.",
+      "confidence": 0.95,
       "speakers": [
         {
           "name": "Hannes Friðriksson",
@@ -126,12 +132,12 @@
         "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> staðfestir verulegan stýrivaxtamun: Seðlabanki Íslands var með 7,25% stýrivexti snemma árs 2026 á móti 2,75% hjá Seðlabanka Evrópu. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a> sýnir að óverðtryggð húsnæðislán á Íslandi bera 7,5–8,5% vexti samanborið við 3,2–3,8% í evrusvæðinu. Þó er samanburðurinn flóknari en fullyrðingin gefur til kynna — um 80% íslenskra húsnæðislána eru verðtryggð með nafnvöxtum á bilinu 3,5–5,5%, sem er nær evrópsku meðaltali. Munurinn á stýrivöxtum endurspeglar hærri verðbólgu og gjaldmiðilsáhættu frekar en skipulegan galla.",
+      "explanation": "<a href=\"https://sedlabanki.is/peningastefna/peningastefnunefnd/\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> staðfestir verulegan stýrivaxtamun: Seðlabanki Íslands var með 7,25% stýrivexti snemma árs 2026 á móti 2,75% hjá Seðlabanka Evrópu. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a> sýnir að óverðtryggð húsnæðislán á Íslandi bera 7,5–8,5% vexti samanborið við 3,2–3,8% í evrusvæðinu. Þó er samanburðurinn flóknari en fullyrðingin gefur til kynna — um 80% íslenskra húsnæðislána eru verðtryggð með nafnvöxtum á bilinu 3,5–5,5%, sem er nær evrópsku meðaltali. Munurinn á stýrivöxtum endurspeglar hærri verðbólgu og gjaldmiðilsáhættu frekar en skipulegan galla.",
       "supporting_evidence": [
         {
           "id": "CURRENCY-DATA-015",
           "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
-          "source_url": "https://www.sedlabanki.is/peningastefna/vaxtaakvardir/"
+          "source_url": "https://sedlabanki.is/peningastefna/peningastefnunefnd/"
         },
         {
           "id": "HOUSING-DATA-008",
@@ -145,7 +151,7 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Fullyrðingin nefnir «vexti» án nánari skilgreiningar. Samanburður á húsnæðislánavöxtum er flóknari en svo — verðtryggð íslensk lán bera nafnvexti sem eru nær evrópsku meðaltali (<a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a>). <a href=\"https://www.visindavefur.is/svar.php?id=60990\" title=\"Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-016</a> sýnir að vaxtasamrás í evrusvæðinu reyndist berskjölduð í skuldakreppunni 2010–2012 og stýrivextir greindust aftur á milli landa. <a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a> bendir á að lægri vextir leiða oft til hærra húsnæðisverðs, ekki lægri húsnæðiskostnaðar. Vaxtamunurinn er að hluta til endurspeglun á verðbólgu og gjaldmiðilsáhættu á Íslandi (<a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a>), ekki eingöngu skipulagslegur munur.",
+      "missing_context": "Fullyrðingin nefnir «vexti» án nánari skilgreiningar. Samanburður á húsnæðislánavöxtum er flóknari en svo — verðtryggð íslensk lán bera nafnvexti sem eru nær evrópsku meðaltali (<a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a>). <a href=\"https://www.visindavefur.is/svar.php?id=60990\" title=\"Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-016</a> sýnir að vaxtasamrás í evrusvæðinu reyndist berskjölduð í skuldakreppunni 2010–2012 og stýrivextir greindust aftur á milli landa. <a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a> bendir á að lægri vextir leiða oft til hærra húsnæðisverðs, ekki lægri húsnæðiskostnaðar. Vaxtamunurinn er að hluta til endurspeglun á verðbólgu og gjaldmiðilsáhættu á Íslandi (<a href=\"https://sedlabanki.is/peningastefna/peningastefnunefnd/\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a>), ekki eingöngu skipulagslegur munur.",
       "confidence": 0.82,
       "speakers": [
         {
@@ -170,12 +176,12 @@
         "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.althingi.is/\" title=\"Althingi debate records; Snorri Másson — Op-eds and interviews\" target=\"_blank\" rel=\"noopener\">SOV-DATA-021</a> staðfestir að fullveldisrök eru kjarni í andstöðu við ESB-aðild — Snorri Másson hefur lýst yfir að ESB-aðild sé ósamrýmanleg íslensku sjálfstæði. Fullveldishlutinn er vel studdur sem lýsing á afstöðu gagnrýnenda. Hins vegar er hagvaxtarhlutinn — «hagvöxtur enginn» í Evrópu — ekki staðfestur af tiltækum heimildum. <a href=\"https://www.businesseurope.eu/publications/businesseurope-reform-barometer-2025-eu-in-a-new-political-cycle-competitiveness-as-a-true-priority-in-a-complex-global-context/\" title=\"BusinessEurope — Reform Barometer 2025; Reform Barometer 2024\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-026</a> lýsir áhyggjum BusinessEurope af samkeppnishæfni en fjallar ekki um hagvaxtarleysi. Enginn hluti heimildanna staðfestir fullyrðinguna um að hagvöxtur sé enginn í Evrópu.",
+      "explanation": "<a href=\"https://www.althingi.is/altext/cv/is/?nfaerslunr=1526\" title=\"Althingi debate records; Snorri Másson — Op-eds and interviews\" target=\"_blank\" rel=\"noopener\">SOV-DATA-021</a> staðfestir að fullveldisrök eru kjarni í andstöðu við ESB-aðild — Snorri Másson hefur lýst yfir að ESB-aðild sé ósamrýmanleg íslensku sjálfstæði. Fullveldishlutinn er vel studdur sem lýsing á afstöðu gagnrýnenda. Hins vegar er hagvaxtarhlutinn — «hagvöxtur enginn» í Evrópu — ekki staðfestur af tiltækum heimildum. <a href=\"https://www.businesseurope.eu/publications/businesseurope-reform-barometer-2025-eu-in-a-new-political-cycle-competitiveness-as-a-true-priority-in-a-complex-global-context/\" title=\"BusinessEurope — Reform Barometer 2025; Reform Barometer 2024\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-026</a> lýsir áhyggjum BusinessEurope af samkeppnishæfni en fjallar ekki um hagvaxtarleysi. Enginn hluti heimildanna staðfestir fullyrðinguna um að hagvöxtur sé enginn í Evrópu.",
       "supporting_evidence": [
         {
           "id": "SOV-DATA-021",
           "source_name": "Althingi debate records; Snorri Másson — Op-eds and interviews",
-          "source_url": "https://www.althingi.is/"
+          "source_url": "https://www.althingi.is/altext/cv/is/?nfaerslunr=1526"
         },
         {
           "id": "SOV-LEGAL-032",
@@ -184,7 +190,7 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Fullyrðingin blandar saman tveimur ólíkum röksemdum — fullveldismissi og hagvaxtarskorti — en heimildir styðja aðeins þá fyrrnefndu. <a href=\"https://www.althingi.is/\" title=\"Althingi debate records; Snorri Másson — Op-eds and interviews\" target=\"_blank\" rel=\"noopener\">SOV-DATA-021</a> bendir á að fullveldisröksemd gagnrýnenda lítur á fullveldi sem óskiptanlegt, en alþjóðaréttarfræðingar líta almennt á fullveldi sem safn réttinda sem ríki deila reglulega í gegnum alþjóðasamninga. <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> sýnir að ESB-aðild myndi útvíkka valdsvið ESB umfram EES-samninginn á mörgum sviðum (landbúnaður, sjávarútvegur, tollamál, utanríkisstefna), sem gefur fullveldisröksemdinni efnislegan grundvöll.",
+      "missing_context": "Fullyrðingin blandar saman tveimur ólíkum röksemdum — fullveldismissi og hagvaxtarskorti — en heimildir styðja aðeins þá fyrrnefndu. <a href=\"https://www.althingi.is/altext/cv/is/?nfaerslunr=1526\" title=\"Althingi debate records; Snorri Másson — Op-eds and interviews\" target=\"_blank\" rel=\"noopener\">SOV-DATA-021</a> bendir á að fullveldisröksemd gagnrýnenda lítur á fullveldi sem óskiptanlegt, en alþjóðaréttarfræðingar líta almennt á fullveldi sem safn réttinda sem ríki deila reglulega í gegnum alþjóðasamninga. <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> sýnir að ESB-aðild myndi útvíkka valdsvið ESB umfram EES-samninginn á mörgum sviðum (landbúnaður, sjávarútvegur, tollamál, utanríkisstefna), sem gefur fullveldisröksemdinni efnislegan grundvöll.",
       "confidence": 0.72,
       "speakers": [
         {
@@ -209,7 +215,8 @@
       "attribution_type": "asserted",
       "claim_count": 3,
       "verdicts": {
-        "partially_supported": 3
+        "supported": 1,
+        "partially_supported": 2
       },
       "stance": "pro_eu",
       "slug": "hannes-fridriksson",

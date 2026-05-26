@@ -522,7 +522,7 @@
         "epistemic_type": "factual"
       },
       "verdict": "supported",
-      "explanation": "Margar heimildir staðfesta fullyrðinguna. <a href=\"https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/skyrsla-nefndarinnar/english/\" title=\"Seðlabanki Íslands — Special Investigation Commission report; Central Bank annual report 2009\" target=\"_blank\" rel=\"noopener\">CURR-DATA-001</a> greinir frá því að krónan hafi tapað um 50% af verðgildi sínu gagnvart evru á nokkrum vikum — úr um 90 ISK/EUR snemma árs 2008 í yfir 180 ISK/EUR í nóvember 2008. CURRENCY-DATA-016 staðfestir sömu þróun, sem og <a href=\"https://www.sedlabanki.is/hagtolur/gengi/\" title=\"Seðlabanki Íslands — Exchange rate data\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-007</a> og <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a>. Fullyrðingin um «helming verðgildis» og «nokkrar vikur» er nákvæm og studd af öllum tiltækum heimildum.",
+      "explanation": "<a href=\"https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/skyrsla-nefndarinnar/english/\" title=\"Seðlabanki Íslands — Special Investigation Commission report; Central Bank annual report 2009\" target=\"_blank\" rel=\"noopener\">CURR-DATA-001</a> staðfestir beint að íslenska krónan tapaði um 50% af verðgildi sínu gagnvart evru «á nokkrum vikum» í október-nóvember 2008, frá um 90 í yfir 180 ISK/EUR. <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> og <a href=\"https://www.sedlabanki.is/hagtolur/gengi/\" title=\"Seðlabanki Íslands — Exchange rate data\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-007</a> styðja töluna um 50% lækkun í kjölfar bankahrunsins.",
       "supporting_evidence": [
         {
           "id": "CURR-DATA-001",
@@ -530,9 +530,9 @@
           "source_url": "https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/skyrsla-nefndarinnar/english/"
         },
         {
-          "id": "CURRENCY-DATA-016",
-          "source_name": "Central Bank of Iceland — Exchange rate data; ECB — Statistical Data Warehouse",
-          "source_url": null
+          "id": "SOV-LEGAL-005",
+          "source_name": "Central Bank of Iceland — Monetary policy framework",
+          "source_url": "https://sedlabanki.is/peningastefna/"
         },
         {
           "id": "TRADE-DATA-007",
@@ -540,14 +540,14 @@
           "source_url": "https://www.sedlabanki.is/hagtolur/gengi/"
         },
         {
-          "id": "SOV-LEGAL-005",
-          "source_name": "Central Bank of Iceland — Monetary policy framework",
-          "source_url": "https://sedlabanki.is/peningastefna/"
+          "id": "CURRENCY-DATA-016",
+          "source_name": "Central Bank of Iceland — Exchange rate data; ECB — Statistical Data Warehouse",
+          "source_url": null
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Gengisfallið hafði margar orsakir umfram gjaldmiðilsstefnu, þ.á m. óhóflegan vöxt bankakerfisins, ófullnægjandi eftirlit og alþjóðlega fjármálakreppu. Seðlabankinn gat ekki starfað sem lánveitandi til þrautavara í erlendum gjaldmiðli. Gengislækkun krónunnar stuðlaði einnig að bata útflutningsgreina á eftirkrepputímabilinu. <a href=\"https://cb.is/statistics/official-exchange-rate/\" title=\"Central Bank of Iceland — Official exchange rate; Wise/XE historical data\" target=\"_blank\" rel=\"noopener\">CURR-DATA-010</a> sýnir jafnvel meiri gengislækkun — niður í um 340 ISK/EUR — en það hlutfall gæti átt við frjálsan markað meðan gjaldeyrishöft voru enn að taka gildi.",
-      "confidence": 0.95,
+      "missing_context": "CURRENCY-DATA-016 setur niðursveifluna í lengri tímaramma (frá mitt ári 2007 til byrjun 2009) en <a href=\"https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/skyrsla-nefndarinnar/english/\" title=\"Seðlabanki Íslands — Special Investigation Commission report; Central Bank annual report 2009\" target=\"_blank\" rel=\"noopener\">CURR-DATA-001</a> staðfestir engu að síður að megnið af gengisfalli átti sér stað á nokkrum vikum í október-nóvember 2008. Gengið hélt áfram að veikjast eftir það en stærsta stökkið var bundið við vikurnar í kringum bankahrunið.",
+      "confidence": 0.92,
       "speakers": [
         {
           "name": "Magnús Árni Skjöld Magnússon",
@@ -635,7 +635,7 @@
       ],
       "contradicting_evidence": [],
       "missing_context": "Efnahagsvöxtur Íslands á þessu tímabili átti sér margar orsakir. Sjávarútvegur — sem er utan EES-samningsins — er ein af stærstu útflutningsgreinum landsins. Ferðaþjónusta (EES-tengd en dreifin af öðrum þáttum) varð stærsta útflutningsgreinin eftir 2010. Noregur — einnig EES-ríki — hefur einnig dafnað en olíuauður er stór hluti þess (PREC-HIST-002). Íslenskt kvótakerfi, orkuframleiðsla og innlend efnahagsstefna hafa skipt jafn miklu máli.",
-      "confidence": 0.714,
+      "confidence": 0.6782999999999999,
       "speakers": [
         {
           "name": "Magnús Árni Skjöld Magnússon",
@@ -864,7 +864,7 @@
       },
       "stance": "pro_eu",
       "slug": "magnus-arni-skjold-magnusson",
-      "mention_count": 8,
+      "mention_count": 10,
       "credibility": 0.69,
       "speech_count": 7
     },
@@ -880,8 +880,8 @@
       },
       "stance": "anti_eu",
       "slug": "hjortur-j-gudmundsson",
-      "mention_count": 23,
-      "credibility": 0.58
+      "mention_count": 25,
+      "credibility": 0.59
     }
   ]
 }

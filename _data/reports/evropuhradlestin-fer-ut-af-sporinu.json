@@ -10,8 +10,8 @@
   "summary": "Greindar 36 fullyrðingar. Niðurstöður: 18 stutt að hluta, 13 ekki hægt að sannreyna, 5 stutt af heimildum. Sjónarhorn: mjög ESB-neikvæð. Heildstæðni: 25%.",
   "capsule": "Húsnæðisverð í ESB hefur hækkað um 55% frá 2010 á meðan tekjur hafa að meðaltali einungis aukist um 20% — þessar tölur eru staðfestar af Eurostat og greinir greinin þær rétt. Áhugavert er að Stöðugleika- og vaxtarsáttmálinn, sem oft er nefndur í umræðunni um fjárhagslegt sjálfræði, hefur sérstaka undantekningarreglu fyrir náttúruhamfarir og sérstakar efnahagsaðstæður — sömu reglu og Finnland notaði í eigin fjárhagsferli hjá ESB. Hvort slík undantekning kæmi til greina fyrir Ísland, t. d. í kjölfar eldgosa, er óprófað en ekki útilokað.",
   "verdict_counts": {
-    "supported": 5,
-    "partially_supported": 18
+    "supported": 4,
+    "partially_supported": 19
   },
   "epistemic_counts": {
     "prediction": 2,
@@ -689,17 +689,17 @@
         "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "Viðmiðin 3% halli og 60% skuldir eru vel þekktará kjarnareglu SGP og koma frá Maastricht-sáttmálanum. Engin heimild fjallar beint um SGP en <a href=\"https://www.government.is/topics/economic-affairs-and-public-finances/\" title=\"Fjármála- og efnahagsráðuneytið — Ríkisfjármál; Moody's, S&P, Fitch sovereign ratings for Iceland\" target=\"_blank\" rel=\"noopener\">SOV-DATA-013</a> nefnir skuldir Íslands um 65% af VLF, sem sýnir samhengi við 60%-mörkin. SGP var endurbætt 2024 og ný reglurnar leggja meiri áherslu á skuldaleiðir en fast viðmið.",
+      "explanation": "Viðmiðin 3% halli og 60% skuldir eru vel þekktará kjarnareglu SGP og koma frá Maastricht-sáttmálanum. Engin heimild fjallar beint um SGP en <a href=\"https://www.stjornarradid.is/raduneyti/fjarmala-og-efnahagsraduneytid/\" title=\"Fjármála- og efnahagsráðuneytið — Ríkisfjármál; Moody's, S&P, Fitch sovereign ratings for Iceland\" target=\"_blank\" rel=\"noopener\">SOV-DATA-013</a> nefnir skuldir Íslands um 65% af VLF, sem sýnir samhengi við 60%-mörkin. SGP var endurbætt 2024 og ný reglurnar leggja meiri áherslu á skuldaleiðir en fast viðmið.",
       "supporting_evidence": [
         {
           "id": "SOV-DATA-013",
           "source_name": "Fjármála- og efnahagsráðuneytið — Ríkisfjármál; Moody's, S&P, Fitch sovereign ratings for Iceland",
-          "source_url": "https://www.government.is/topics/economic-affairs-and-public-finances/"
+          "source_url": "https://www.stjornarradid.is/raduneyti/fjarmala-og-efnahagsraduneytid/"
         }
       ],
       "contradicting_evidence": [],
       "missing_context": "SGP var endurbætt 2024 og nýju reglurnar leggja meiri áherslu á skuldaleiðir hvers ríkis frekar en föst 3%/60% viðmið. Viðmiðin eru enn til staðar en beiting þeirra er sveigjanlegri en áður.",
-      "confidence": 0.714,
+      "confidence": 0.7428455999999999,
       "speakers": [
         {
           "name": "Viðskiptablaðið",
@@ -795,7 +795,7 @@
         "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=IS\" title=\"World Bank — GDP growth (annual %) (NY.GDP.MKTP.KD.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-014</a> sýnir miklar sveiflur í hagvexti Íslands sem bendir til þess að fjárlagahalli hafi líklega farið yfir 3% á samdráttartímum. <a href=\"https://www.government.is/topics/economic-affairs-and-public-finances/\" title=\"Fjármála- og efnahagsráðuneytið — Ríkisfjármál; Moody's, S&P, Fitch sovereign ratings for Iceland\" target=\"_blank\" rel=\"noopener\">SOV-DATA-013</a> nefnir skuldir Íslands um 65% af VLF 2025. Engin heimild staðfestir beint fjárlagahalla vegna Grindavíkur en COVID-19 og hrunið 2008 ollu vafalaust halla yfir 3%.",
+      "explanation": "<a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=IS\" title=\"World Bank — GDP growth (annual %) (NY.GDP.MKTP.KD.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-014</a> sýnir miklar sveiflur í hagvexti Íslands sem bendir til þess að fjárlagahalli hafi líklega farið yfir 3% á samdráttartímum. <a href=\"https://www.stjornarradid.is/raduneyti/fjarmala-og-efnahagsraduneytid/\" title=\"Fjármála- og efnahagsráðuneytið — Ríkisfjármál; Moody's, S&P, Fitch sovereign ratings for Iceland\" target=\"_blank\" rel=\"noopener\">SOV-DATA-013</a> nefnir skuldir Íslands um 65% af VLF 2025. Engin heimild staðfestir beint fjárlagahalla vegna Grindavíkur en COVID-19 og hrunið 2008 ollu vafalaust halla yfir 3%.",
       "supporting_evidence": [
         {
           "id": "CURRENCY-DATA-014",
@@ -805,7 +805,7 @@
         {
           "id": "SOV-DATA-013",
           "source_name": "Fjármála- og efnahagsráðuneytið — Ríkisfjármál; Moody's, S&P, Fitch sovereign ratings for Iceland",
-          "source_url": "https://www.government.is/topics/economic-affairs-and-public-finances/"
+          "source_url": "https://www.stjornarradid.is/raduneyti/fjarmala-og-efnahagsraduneytid/"
         }
       ],
       "contradicting_evidence": [],
@@ -839,7 +839,7 @@
         {
           "id": "SOV-DATA-013",
           "source_name": "Fjármála- og efnahagsráðuneytið — Ríkisfjármál; Moody's, S&P, Fitch sovereign ratings for Iceland",
-          "source_url": "https://www.government.is/topics/economic-affairs-and-public-finances/"
+          "source_url": "https://www.stjornarradid.is/raduneyti/fjarmala-og-efnahagsraduneytid/"
         }
       ],
       "contradicting_evidence": [],
@@ -867,19 +867,9 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> staðfestir að QMV krefst 55% ríkja og 65% íbúa til samþyktar. Þar af leiðandi þarf hindrunarminnihluti a.m.k. 4 ríki og yfir 35% íbúa til að stöðva ákvörðun. <a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-002</a> styður þetta og <a href=\"https://www.visindavefur.is/svar.php?id=60120\" title=\"Vísindavefurinn — Vilborg Ása Guðjónsdóttir & Þorsteinn Vilhjálmsson, University of Iceland (2011)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-033</a> útskýrir Lissabon-sáttmálann.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin lýsir grundvallaratriði tvöfalds meirihluta í ráðherraráði ESB, þ.e. að hindrunarminnihluti krefjist a.m.k. fjögurra ríkja sem fulltrúa meira en 35% af íbúafjölda. <a href=\"https://www.visindavefur.is/svar.php?id=60120\" title=\"Vísindavefurinn — Vilborg Ása Guðjónsdóttir & Þorsteinn Vilhjálmsson, University of Iceland (2011)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-033</a> staðfestir tvöfalda meirihluta-kerfið (55% ríkja, 65% íbúa). Hins vegar tilgreina heimildirnar ekki sérstaklega EDP-ferlið (Excessive Deficit Procedure) — fullyrðingin gæti gilt almennt um QMV-atkvæðagreiðslu en heimildirnar staðfesta ekki sérstaka beitingu á EDP.",
       "supporting_evidence": [
-        {
-          "id": "SOV-DATA-017",
-          "source_name": "Treaty on European Union, Article 16(4); European Parliament allocation rules",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016"
-        },
-        {
-          "id": "SOV-LEGAL-002",
-          "source_name": "Treaty on European Union, Article 16(4)",
-          "source_url": "https://eur-lex.europa.eu/summary/glossary/qualified_majority.html"
-        },
         {
           "id": "SOV-DATA-033",
           "source_name": "Vísindavefurinn — Vilborg Ása Guðjónsdóttir & Þorsteinn Vilhjálmsson, University of Iceland (2011)",
@@ -887,8 +877,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Flestar ákvarðanir í ráðherraráðinu eru teknar með samstöðu án formlegrar atkvaeðagreiðslu. Hindrunarminnihlutinn er fræðilega mikilvægur en í reynd fer mestu um samningaviðræður.",
-      "confidence": 0.85,
+      "missing_context": "Heimildirnar lýsa almennri QMV-atkvæðagreiðslu en taka ekki sérstaklega fram regluna um hindrunarminnihluta í EDP-ferlinu. Reglan um fjögur ríki og 35% íbúafjöldans er hluti af grundvallarframsetningu Lissabon-sáttmálans, en sértæk útfærsla EDP-ferlisins er ekki staðfest í heimildunum.",
+      "confidence": 0.65,
       "speakers": [
         {
           "name": "Viðskiptablaðið",
@@ -1049,9 +1039,9 @@
       },
       "stance": "pro_eu",
       "slug": "thorgerdur-katrin-gunnarsdottir",
-      "mention_count": 91,
-      "credibility": 0.62,
-      "speech_count": 201
+      "mention_count": 102,
+      "credibility": 0.61,
+      "speech_count": 205
     },
     {
       "name": "Evrópuþingið",
@@ -1065,7 +1055,7 @@
       },
       "stance": "pro_eu",
       "slug": "evroputhingid",
-      "mention_count": 7,
+      "mention_count": 9,
       "credibility": 0.5
     }
   ]

@@ -37,7 +37,7 @@
         "epistemic_type": "factual"
       },
       "verdict": "supported",
-      "explanation": "Heimildir staðfesta eindregið að bæði verðbólga og vextir hafa verið hærri á Íslandi en í samanburðarlöndum. <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__visitolur__1_vnv__1_vnv/VIS01005.px\" title=\"Hagstofa Íslands — Consumer price index; Eurostat — HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-003</a> sýnir að meðalverðbólga á Íslandi var um 5,5% á árunum 2005–2025 samanborið við 2,1% á evrusvæðinu. <a href=\"https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IS\" title=\"World Bank — World Development Indicators (FP.CPI.TOTL.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-013</a> gefur svipaða mynd: um 4,7% meðaltal 2000–2024 á Íslandi. Hvað vexti varðar staðfestir <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> að óverðtryggðir húsnæðisvextir á Íslandi eru um 7,5–8,5% samanborið við um 3,4% á evrusvæðinu. <a href=\"https://cb.is/statistics/official-exchange-rate/\" title=\"Seðlabanki Íslands — Monetary Bulletin; ECB Statistical Data Warehouse\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-004</a> undirstrikar einnig verðbólgumuninn: 4,5% meðaltal á Íslandi á móti 2,5% á evrusvæðinu 2010–2024.",
+      "explanation": "Margar heimildir staðfesta beint að bæði vextir og verðbólga hafa verið hærri á Íslandi en í samanburðarlöndum undanfarna áratugi. <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__visitolur__1_vnv__1_vnv/VIS01005.px\" title=\"Hagstofa Íslands — Consumer price index; Eurostat — HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-003</a> sýnir að meðalverðbólga á Íslandi 2005–2025 var um 5,5% samanborið við 2,1% á evrusvæðinu. <a href=\"https://sedlabanki.is/peningastefna/peningastefnunefnd/\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> sýnir að stýrivextir Seðlabanka Íslands hafa að meðaltali verið 6,5% á tímabilinu 2000–2025, samanborið við 1,5% hjá ECB. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"Seðlabanki Íslands — Financial Stability Report; ECB Statistical Data Warehouse — Bank interest rates on new loans to households for house purchase\" target=\"_blank\" rel=\"noopener\">HOUS-DATA-005</a> staðfestir að íslenskir húsnæðisvextir eru margfalt hærri en á evrusvæðinu.",
       "supporting_evidence": [
         {
           "id": "CURR-DATA-003",
@@ -48,6 +48,11 @@
           "id": "CURRENCY-DATA-013",
           "source_name": "World Bank — World Development Indicators (FP.CPI.TOTL.ZG)",
           "source_url": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IS"
+        },
+        {
+          "id": "CURRENCY-DATA-015",
+          "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
+          "source_url": "https://sedlabanki.is/peningastefna/peningastefnunefnd/"
         },
         {
           "id": "TRADE-COMP-004",
@@ -61,8 +66,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Lítið hagkerfi Íslands er skipulagslega næmara fyrir verðbólgu vegna innflutningshámældar og launaviðræðna, eins og <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__visitolur__1_vnv__1_vnv/VIS01005.px\" title=\"Hagstofa Íslands — Consumer price index; Eurostat — HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-003</a> bendir á. Verðtryggð lán á Íslandi flækja vaxtasamanburðinn — nafnvextir eru lægri en höfuðstóll hækkar með verðlagi. Evruaðild myndi ekki sjálfkrafa tryggja lága verðbólgu eða vexti, eins og reynsla Eystrasaltsríkjanna sýnir.",
-      "confidence": 0.9486000000000001,
+      "missing_context": "Samanburður á verðbólgu þarf að taka tillit til mismunar í samsetningu vísitölu og þróun fasteignamarkaðar. Lítið, opið hagkerfi Íslands er uppbyggingarlega verðbólguhættara vegna innflutningsstærðar og launasamninga. <a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=IS\" title=\"World Bank — GDP growth (annual %) (NY.GDP.MKTP.KD.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-014</a> nefnir að einnig hafi GDP-vöxtur verið mun sveiflukenndari á Íslandi en í norrænum ESB-ríkjum. Upptaka evru myndi ekki sjálfkrafa færa Ísland niður í evruverðbólgu — Maastricht-skilyrðin krefjast þess að samleitni eigi sér stað fyrst.",
+      "confidence": 0.92,
       "speakers": [
         {
           "name": "Kristján Reykjalín Vigfússon",
@@ -130,12 +135,12 @@
         "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a> og <a href=\"https://www.sedlabanki.is/\" title=\"Central Bank of Iceland; ECB; Eurostat HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-007</a> staðfesta stýrivexti Seðlabanka Íslands í 7,50%. <a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> sýnir ECB-innlánsvexti í 2,00%, ekki 2,15% eins og fullyrðingin segir. Tölurnar um Danmörku og Svíþjóð eru ekki staðfestar beint í heimildunum, en lenda í sæmilegu samræmi við þekktar stærðir. Munurinn á milli Íslands og ECB-vaxta er 5,50 prósentustig samkvæmt <a href=\"https://www.sedlabanki.is/\" title=\"Central Bank of Iceland; ECB; Eurostat HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-007</a>, ekki «yfir 6%» eins og fullyrðingin heldur fram.",
+      "explanation": "<a href=\"https://sedlabanki.is/peningastefna/peningastefnunefnd/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a> og <a href=\"https://www.sedlabanki.is/\" title=\"Central Bank of Iceland; ECB; Eurostat HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-007</a> staðfesta stýrivexti Seðlabanka Íslands í 7,50%. <a href=\"https://sedlabanki.is/peningastefna/peningastefnunefnd/\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> sýnir ECB-innlánsvexti í 2,00%, ekki 2,15% eins og fullyrðingin segir. Tölurnar um Danmörku og Svíþjóð eru ekki staðfestar beint í heimildunum, en lenda í sæmilegu samræmi við þekktar stærðir. Munurinn á milli Íslands og ECB-vaxta er 5,50 prósentustig samkvæmt <a href=\"https://www.sedlabanki.is/\" title=\"Central Bank of Iceland; ECB; Eurostat HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-007</a>, ekki «yfir 6%» eins og fullyrðingin heldur fram.",
       "supporting_evidence": [
         {
           "id": "CURRENCY-DATA-017",
           "source_name": "Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar",
-          "source_url": "https://www.sedlabanki.is/peningastefna/vaxtaakvardir/"
+          "source_url": "https://sedlabanki.is/peningastefna/peningastefnunefnd/"
         },
         {
           "id": "CURR-DATA-007",
@@ -145,7 +150,7 @@
         {
           "id": "CURRENCY-DATA-015",
           "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
-          "source_url": "https://www.sedlabanki.is/peningastefna/vaxtaakvardir/"
+          "source_url": "https://sedlabanki.is/peningastefna/peningastefnunefnd/"
         }
       ],
       "contradicting_evidence": [],
@@ -257,12 +262,12 @@
         "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> staðfestir meðalstýrivexti Seðlabanka Íslands um 6,5% á árunum 2000–2025 samanborið við 1,5% meðaltal ECB — sem gefur meðalmun um 5 prósentustig og fellur innan «4–6%» bilsins. Stýrivextirnir voru 9,25% árið 2023 (<a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a>) en í hruni 2008 hækkuðu þeir tímabundið í 18% sem gæti skýrt 16% skammtímamuninn. Heimildir staðfesta þó ekki beint 16% töluna sem hámark vaxtamunar. Einnig var evran tekin í notkun sem bókfærslumynt 1999 og sem raunveruleg mynt 2002 — fullyrðingin segir «stofnun evrunnar árið 2002» sem er aðeins einföldun.",
+      "explanation": "<a href=\"https://sedlabanki.is/peningastefna/peningastefnunefnd/\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> staðfestir meðalstýrivexti Seðlabanka Íslands um 6,5% á árunum 2000–2025 samanborið við 1,5% meðaltal ECB — sem gefur meðalmun um 5 prósentustig og fellur innan «4–6%» bilsins. Stýrivextirnir voru 9,25% árið 2023 (<a href=\"https://sedlabanki.is/peningastefna/peningastefnunefnd/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a>) en í hruni 2008 hækkuðu þeir tímabundið í 18% sem gæti skýrt 16% skammtímamuninn. Heimildir staðfesta þó ekki beint 16% töluna sem hámark vaxtamunar. Einnig var evran tekin í notkun sem bókfærslumynt 1999 og sem raunveruleg mynt 2002 — fullyrðingin segir «stofnun evrunnar árið 2002» sem er aðeins einföldun.",
       "supporting_evidence": [
         {
           "id": "CURRENCY-DATA-015",
           "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
-          "source_url": "https://www.sedlabanki.is/peningastefna/vaxtaakvardir/"
+          "source_url": "https://sedlabanki.is/peningastefna/peningastefnunefnd/"
         },
         {
           "id": "CURR-DATA-007",
@@ -272,7 +277,7 @@
         {
           "id": "CURRENCY-DATA-017",
           "source_name": "Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar",
-          "source_url": "https://www.sedlabanki.is/peningastefna/vaxtaakvardir/"
+          "source_url": "https://sedlabanki.is/peningastefna/peningastefnunefnd/"
         }
       ],
       "contradicting_evidence": [],
@@ -321,7 +326,7 @@
         {
           "id": "CURRENCY-DATA-015",
           "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
-          "source_url": "https://www.sedlabanki.is/peningastefna/vaxtaakvardir/"
+          "source_url": "https://sedlabanki.is/peningastefna/peningastefnunefnd/"
         }
       ],
       "contradicting_evidence": [
@@ -356,12 +361,12 @@
         "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://sdw.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a> og <a href=\"https://www.stortinget.no/\" title=\"Stortinget — Votering over representantforslag om norsk EU-medlemskap (mars 2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a> staðfesta að húsnæðisvextir í Króatíu lækkuðu verulega eftir evruupptöku — niður í um 3,0% árið 2025 og undir þýsk meðalvexti. Verðbólga náði samræmi við evrusvæðið: úr 13,1% hámarki niður í um 3,4% seint á árinu 2024 (<a href=\"https://sdw.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a>). Hins vegar er yfirskriftin «mikil lækkun stýrivaxta» villandi — Króatía missti sjálfstæða peningastefnu og hlaut ECB-vexti, sem í raun voru hærri en króatísku vextirnir höfðu verið. <a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a> bendir á að kúnan var þegar fast tengd evrunni í áratugi, svo umskiptin voru mun minni en þau yrðu á Íslandi.",
+      "explanation": "<a href=\"https://data.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a> og <a href=\"https://www.stortinget.no/\" title=\"Stortinget — Votering over representantforslag om norsk EU-medlemskap (mars 2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a> staðfesta að húsnæðisvextir í Króatíu lækkuðu verulega eftir evruupptöku — niður í um 3,0% árið 2025 og undir þýsk meðalvexti. Verðbólga náði samræmi við evrusvæðið: úr 13,1% hámarki niður í um 3,4% seint á árinu 2024 (<a href=\"https://data.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a>). Hins vegar er yfirskriftin «mikil lækkun stýrivaxta» villandi — Króatía missti sjálfstæða peningastefnu og hlaut ECB-vexti, sem í raun voru hærri en króatísku vextirnir höfðu verið. <a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a> bendir á að kúnan var þegar fast tengd evrunni í áratugi, svo umskiptin voru mun minni en þau yrðu á Íslandi.",
       "supporting_evidence": [
         {
           "id": "PREC-DATA-020",
           "source_name": "ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS",
-          "source_url": "https://sdw.ecb.europa.eu/"
+          "source_url": "https://data.ecb.europa.eu/"
         },
         {
           "id": "PREC-DATA-012",
@@ -400,12 +405,12 @@
         "epistemic_type": "prediction"
       },
       "verdict": "partially_supported",
-      "explanation": "Fordæmi Króatíu sýnir raunan ávinning af evruupptöku hvað varðar lántökukostnað og verðbólgusamleitni (<a href=\"https://sdw.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a>, <a href=\"https://www.stortinget.no/\" title=\"Stortinget — Votering over representantforslag om norsk EU-medlemskap (mars 2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a>). Þó er samanburðurinn takmarkaður: króatíska kúnan var fest við evruna í tvo áratugi áður, á meðan íslenska krónan svífur frjálst og verðbólga er skipulagslega hærri (<a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a>). Reynsla Eystrasaltsríkjanna sýnir einnig að lægri vextir geta leitt til eignaverðsbólu og efnahagskreppu (<a href=\"https://ec.europa.eu/eurostat/web/housing-price-statistics\" title=\"Eurostat — House price index; European Commission — Post-accession economic developments in the Baltic States\" target=\"_blank\" rel=\"noopener\">HOUSING-PRECEDENT-002</a>). <a href=\"https://www.visindavefur.is/svar.php?id=60906\" title=\"Vísindavefurinn — Jón Þór Sturluson, Associate Professor of Economics, Reykjavík University School of Business (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-015</a> bendir á að 3–4 prósentustiga vaxtalækkun sé möguleg til lengri tíma, en <a href=\"https://www.visindavefur.is/svar.php?id=60635\" title=\"Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-017</a> undirstrikar að Maastricht-skilyrðin krefjast samleitni áður en evra yrði tekin upp.",
+      "explanation": "Fordæmi Króatíu sýnir raunan ávinning af evruupptöku hvað varðar lántökukostnað og verðbólgusamleitni (<a href=\"https://data.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a>, <a href=\"https://www.stortinget.no/\" title=\"Stortinget — Votering over representantforslag om norsk EU-medlemskap (mars 2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a>). Þó er samanburðurinn takmarkaður: króatíska kúnan var fest við evruna í tvo áratugi áður, á meðan íslenska krónan svífur frjálst og verðbólga er skipulagslega hærri (<a href=\"https://www.hnb.hr/en/-/croatia-to-introduce-the-euro-on-1-january-2023\" title=\"Croatian National Bank (HNB); Eurostat; European Commission — Convergence Report\" target=\"_blank\" rel=\"noopener\">PREC-DATA-019</a>). Reynsla Eystrasaltsríkjanna sýnir einnig að lægri vextir geta leitt til eignaverðsbólu og efnahagskreppu (<a href=\"https://ec.europa.eu/eurostat/web/housing-price-statistics\" title=\"Eurostat — House price index; European Commission — Post-accession economic developments in the Baltic States\" target=\"_blank\" rel=\"noopener\">HOUSING-PRECEDENT-002</a>). <a href=\"https://www.visindavefur.is/svar.php?id=60906\" title=\"Vísindavefurinn — Jón Þór Sturluson, Associate Professor of Economics, Reykjavík University School of Business (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-015</a> bendir á að 3–4 prósentustiga vaxtalækkun sé möguleg til lengri tíma, en <a href=\"https://www.visindavefur.is/svar.php?id=60635\" title=\"Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-017</a> undirstrikar að Maastricht-skilyrðin krefjast samleitni áður en evra yrði tekin upp.",
       "supporting_evidence": [
         {
           "id": "PREC-DATA-020",
           "source_name": "ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS",
-          "source_url": "https://sdw.ecb.europa.eu/"
+          "source_url": "https://data.ecb.europa.eu/"
         },
         {
           "id": "PREC-DATA-012",
@@ -455,7 +460,7 @@
         "epistemic_type": "factual"
       },
       "verdict": "supported",
-      "explanation": "<a href=\"https://ec.europa.eu/eurostat/web/hicp\" title=\"Eurostat HICP Flash Estimate; ECB Monetary Policy Decisions\" target=\"_blank\" rel=\"noopener\">CURR-DATA-008</a> staðfestir beint að verðbólga á Íslandi (HICP) var 5,2% í febrúar 2026. <a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a> staðfestir sömu tölu og nefnir «viðvarandi verðbólgu (5,2% í febrúar og mars 2026)». Tölurnar eru samhljóða í báðum heimildum og fullyrðingin er rétt.",
+      "explanation": "<a href=\"https://ec.europa.eu/eurostat/web/hicp\" title=\"Eurostat HICP Flash Estimate; ECB Monetary Policy Decisions\" target=\"_blank\" rel=\"noopener\">CURR-DATA-008</a> staðfestir beint að samræmd vísitala neysluverðs (HICP) á Íslandi var 5,2% í febrúar 2026, samanborið við 1,9% á evrusvæðinu. <a href=\"https://sedlabanki.is/peningastefna/peningastefnunefnd/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a> staðfestir sömu tölu og vísar einnig til þess að verðbólgan hafi verið 5,2% í mars 2026. Heimildin var grunnur fyrir vaxtahækkun Seðlabankans 18. mars 2026.",
       "supporting_evidence": [
         {
           "id": "CURR-DATA-008",
@@ -465,12 +470,17 @@
         {
           "id": "CURRENCY-DATA-017",
           "source_name": "Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar",
-          "source_url": "https://www.sedlabanki.is/peningastefna/vaxtaakvardir/"
+          "source_url": "https://sedlabanki.is/peningastefna/peningastefnunefnd/"
+        },
+        {
+          "id": "CURR-DATA-007",
+          "source_name": "Central Bank of Iceland; ECB; Eurostat HICP",
+          "source_url": "https://www.sedlabanki.is/"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Til samanburðar var verðbólga á evrusvæðinu 1,9% sama mánuð, sem þýðir 3,3 prósentustiga bil. Seðlabanki Íslands brást við viðvarandi verðbólgu með vaxtahækkun 18. mars 2026, þeirri fyrstu síðan ágúst 2023, sem sneri við lækkunarferli stýrivaxta.",
-      "confidence": 0.7350918906249998,
+      "missing_context": "Heimildir staðfesta 5,2% verðbólgu en frá febrúar, ekki janúar eins og fullyrðingin segir. Kjörverðbólga í þjónustu á evrusvæðinu var 3,8% samkvæmt <a href=\"https://ec.europa.eu/eurostat/web/hicp\" title=\"Eurostat HICP Flash Estimate; ECB Monetary Policy Decisions\" target=\"_blank\" rel=\"noopener\">CURR-DATA-008</a>, sem sýnir að undirliggjandi verðþrýstingur er meiri en heildarverðbólgan gefur til kynna. Sum ESB-ríki gætu verið yfir 2,5%-mörkum fullyrðingarinnar.",
+      "confidence": 0.95,
       "speakers": [
         {
           "name": "Kristján Reykjalín Vigfússon",
@@ -538,7 +548,7 @@
         "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland; Euronews; France24; coalition agreement\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-013</a> staðfestir að ríkisstjórnin samþykkti í stjórnarsáttmála að halda þjóðaratkvæðagreiðslu um hvort hefja ætti aðildarviðræður. <a href=\"https://www.althingi.is/\" title=\"Althingi records; coalition agreements 2009, 2013, 2017, 2021, 2024; Icelandic media archives\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-011</a> staðfestir að þjóðaratkvæðagreiðsla var ákveðin 29. ágúst 2026. Heimildir staðfesta hins vegar ekki beint að þingsályktunartillaga hafi verið lögð fram — þær vísa í stjórnarsáttmála og tilkynningu ríkisstjórnar, sem er ekki sama og þingsályktunartillaga.",
+      "explanation": "<a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland; Euronews; France24; coalition agreement\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-013</a> staðfestir að ríkisstjórnin samþykkti í stjórnarsáttmála að halda þjóðaratkvæðagreiðslu um hvort hefja ætti aðildarviðræður. <a href=\"https://www.stjornarradid.is/verkefni/utanrikismal/evropusamvinna/\" title=\"Althingi records; coalition agreements 2009, 2013, 2017, 2021, 2024; Icelandic media archives\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-011</a> staðfestir að þjóðaratkvæðagreiðsla var ákveðin 29. ágúst 2026. Heimildir staðfesta hins vegar ekki beint að þingsályktunartillaga hafi verið lögð fram — þær vísa í stjórnarsáttmála og tilkynningu ríkisstjórnar, sem er ekki sama og þingsályktunartillaga.",
       "supporting_evidence": [
         {
           "id": "PARTY-DATA-013",
@@ -548,12 +558,12 @@
         {
           "id": "POLITICAL-DATA-011",
           "source_name": "Althingi records; coalition agreements 2009, 2013, 2017, 2021, 2024; Icelandic media archives",
-          "source_url": "https://www.althingi.is/"
+          "source_url": "https://www.stjornarradid.is/verkefni/utanrikismal/evropusamvinna/"
         },
         {
           "id": "POLITICAL-DATA-012",
           "source_name": "Althingi — Member directory; Government of Iceland cabinet listing",
-          "source_url": "https://www.althingi.is/"
+          "source_url": "https://www.althingi.is/altext/cv/is/?nfaerslunr=632"
         }
       ],
       "contradicting_evidence": [],
@@ -610,7 +620,7 @@
         "epistemic_type": "factual"
       },
       "verdict": "partially_supported",
-      "explanation": "<a href=\"https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/\" title=\"Eurostat — Comparative price levels of consumer goods and services (prc_ppp_ind)\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-003</a> staðfestir að verðlag á Íslandi er um 50% yfir ESB-meðaltali og <a href=\"https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/default/table?lang=en\" title=\"Eurostat — Comparative price levels (prc_ppp_ind)\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-001</a> sýnir matvælaverð 50–70% yfir ESB. <a href=\"https://www.sedlabanki.is/peningastefna/vaxtaakvardir/\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> og <a href=\"https://www.sedlabanki.is/\" title=\"Central Bank of Iceland; ECB; Eurostat HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-007</a> staðfesta vaxtamuninn. Kostnaðarhluti fullyrðingarinnar er vel studdur. Rekstrarumhverfi og samkeppnisstaðan er flóknari — <a href=\"https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en\" title=\"Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-024</a> (Draghi-skýrslan) bendir á samkeppnisvanda ESB sjálfs, og <a href=\"https://www.oecd.org/en/data/dashboards/oecd-dashboard-of-productivity-indicators.html\" title=\"OECD — Compendium of Productivity Indicators 2025; Eurostat — Labour productivity per hour worked\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-011</a> sýnir lægri framleiðni á klukkustund á Íslandi. Fullyrðingin einfaldar þó orsakasamhengið með því að binda hærri kostnað eingöngu við stýrivexti.",
+      "explanation": "<a href=\"https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/\" title=\"Eurostat — Comparative price levels of consumer goods and services (prc_ppp_ind)\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-003</a> staðfestir að verðlag á Íslandi er um 50% yfir ESB-meðaltali og <a href=\"https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/default/table?lang=en\" title=\"Eurostat — Comparative price levels (prc_ppp_ind)\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-001</a> sýnir matvælaverð 50–70% yfir ESB. <a href=\"https://sedlabanki.is/peningastefna/peningastefnunefnd/\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> og <a href=\"https://www.sedlabanki.is/\" title=\"Central Bank of Iceland; ECB; Eurostat HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-007</a> staðfesta vaxtamuninn. Kostnaðarhluti fullyrðingarinnar er vel studdur. Rekstrarumhverfi og samkeppnisstaðan er flóknari — <a href=\"https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en\" title=\"Draghi, Mario — 'The Future of European Competitiveness', European Commission (September 2024)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-024</a> (Draghi-skýrslan) bendir á samkeppnisvanda ESB sjálfs, og <a href=\"https://www.oecd.org/en/data/dashboards/oecd-dashboard-of-productivity-indicators.html\" title=\"OECD — Compendium of Productivity Indicators 2025; Eurostat — Labour productivity per hour worked\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-011</a> sýnir lægri framleiðni á klukkustund á Íslandi. Fullyrðingin einfaldar þó orsakasamhengið með því að binda hærri kostnað eingöngu við stýrivexti.",
       "supporting_evidence": [
         {
           "id": "TRADE-COMP-003",
