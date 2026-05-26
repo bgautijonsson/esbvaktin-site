@@ -10,8 +10,8 @@
   "summary": "Greindar 36 fullyrðingar. Niðurstöður: 18 stutt að hluta, 13 ekki hægt að sannreyna, 5 stutt af heimildum. Sjónarhorn: mjög ESB-neikvæð. Heildstæðni: 25%.",
   "capsule": "Húsnæðisverð í ESB hefur hækkað um 55% frá 2010 á meðan tekjur hafa að meðaltali einungis aukist um 20% — þessar tölur eru staðfestar af Eurostat og greinir greinin þær rétt. Áhugavert er að Stöðugleika- og vaxtarsáttmálinn, sem oft er nefndur í umræðunni um fjárhagslegt sjálfræði, hefur sérstaka undantekningarreglu fyrir náttúruhamfarir og sérstakar efnahagsaðstæður — sömu reglu og Finnland notaði í eigin fjárhagsferli hjá ESB. Hvort slík undantekning kæmi til greina fyrir Ísland, t. d. í kjölfar eldgosa, er óprófað en ekki útilokað.",
   "verdict_counts": {
-    "supported": 4,
-    "partially_supported": 19
+    "supported": 5,
+    "partially_supported": 18
   },
   "epistemic_counts": {
     "prediction": 2,
@@ -699,7 +699,7 @@
       ],
       "contradicting_evidence": [],
       "missing_context": "SGP var endurbætt 2024 og nýju reglurnar leggja meiri áherslu á skuldaleiðir hvers ríkis frekar en föst 3%/60% viðmið. Viðmiðin eru enn til staðar en beiting þeirra er sveigjanlegri en áður.",
-      "confidence": 0.7428455999999999,
+      "confidence": 0.7,
       "speakers": [
         {
           "name": "Viðskiptablaðið",
@@ -867,9 +867,19 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "partially_supported",
-      "explanation": "Fullyrðingin lýsir grundvallaratriði tvöfalds meirihluta í ráðherraráði ESB, þ.e. að hindrunarminnihluti krefjist a.m.k. fjögurra ríkja sem fulltrúa meira en 35% af íbúafjölda. <a href=\"https://www.visindavefur.is/svar.php?id=60120\" title=\"Vísindavefurinn — Vilborg Ása Guðjónsdóttir & Þorsteinn Vilhjálmsson, University of Iceland (2011)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-033</a> staðfestir tvöfalda meirihluta-kerfið (55% ríkja, 65% íbúa). Hins vegar tilgreina heimildirnar ekki sérstaklega EDP-ferlið (Excessive Deficit Procedure) — fullyrðingin gæti gilt almennt um QMV-atkvæðagreiðslu en heimildirnar staðfesta ekki sérstaka beitingu á EDP.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> staðfestir að QMV krefst 55% ríkja og 65% íbúa til samþyktar. Þar af leiðandi þarf hindrunarminnihluti a.m.k. 4 ríki og yfir 35% íbúa til að stöðva ákvörðun. <a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-002</a> styður þetta og <a href=\"https://www.visindavefur.is/svar.php?id=60120\" title=\"Vísindavefurinn — Vilborg Ása Guðjónsdóttir & Þorsteinn Vilhjálmsson, University of Iceland (2011)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-033</a> útskýrir Lissabon-sáttmálann.",
       "supporting_evidence": [
+        {
+          "id": "SOV-DATA-017",
+          "source_name": "Treaty on European Union, Article 16(4); European Parliament allocation rules",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016"
+        },
+        {
+          "id": "SOV-LEGAL-002",
+          "source_name": "Treaty on European Union, Article 16(4)",
+          "source_url": "https://eur-lex.europa.eu/summary/glossary/qualified_majority.html"
+        },
         {
           "id": "SOV-DATA-033",
           "source_name": "Vísindavefurinn — Vilborg Ása Guðjónsdóttir & Þorsteinn Vilhjálmsson, University of Iceland (2011)",
@@ -877,8 +887,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Heimildirnar lýsa almennri QMV-atkvæðagreiðslu en taka ekki sérstaklega fram regluna um hindrunarminnihluta í EDP-ferlinu. Reglan um fjögur ríki og 35% íbúafjöldans er hluti af grundvallarframsetningu Lissabon-sáttmálans, en sértæk útfærsla EDP-ferlisins er ekki staðfest í heimildunum.",
-      "confidence": 0.65,
+      "missing_context": "Flestar ákvarðanir í ráðherraráðinu eru teknar með samstöðu án formlegrar atkvaeðagreiðslu. Hindrunarminnihlutinn er fræðilega mikilvægur en í reynd fer mestu um samningaviðræður.",
+      "confidence": 0.85,
       "speakers": [
         {
           "name": "Viðskiptablaðið",

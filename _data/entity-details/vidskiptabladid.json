@@ -14,8 +14,8 @@
   },
   "althingi_stats": null,
   "scorecard": {
-    "supported": 6,
-    "partially_supported": 17
+    "supported": 7,
+    "partially_supported": 16
   },
   "claims": [
     {
@@ -110,7 +110,7 @@
       "claim_text": "Fólk með háskólapróf er hlynntara ESB-aðild en fólk með grunnskóla- eða framhaldsskólapróf.",
       "original_quote": "fólk með háskólapróf er hlynntara inngöngu en fólk með grunnskóla- eða framahaldsskólapróf.",
       "verdict": "supported",
-      "explanation": "<a href=\"https://fel.hi.is/is/utgefid-efni/thjodmalakonnun\" title=\"Félagsvísindastofnun Háskóla Íslands — Social Science Research Institute\" target=\"_blank\" rel=\"noopener\">POLL-DATA-002</a> staðfestir að um 52% háskólamenntaðra styðja ESB-aðild og <a href=\"https://www.gallup.is/frettir/nyr-thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-018</a> staðfestir að háskólamenntaðir séu hlynntari áframhaldandi viðræðum en þeir sem hafa minni formlega menntun. Mynstrið er stöðugt í íslenskum og norrænum könnunum.",
+      "explanation": "<a href=\"https://fel.hi.is/is/utgefid-efni/thjodmalakonnun\" title=\"Félagsvísindastofnun Háskóla Íslands — Social Science Research Institute\" target=\"_blank\" rel=\"noopener\">POLL-DATA-002</a> staðfestir að um 52% háskólamenntaðra styðja ESB-aðild og <a href=\"https://www.gallup.is/frettir/nyr-thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-018</a> staðfestir að háskólamenntaðir eru hlynntari áframhaldandi viðræðum en þeir sem hafa minni formlega menntun. Mynstrið er stöðugt í íslenskum og norrænum könnunum.",
       "missing_context": "Undirhópar í íslenskum könnunum eru tiltölulega smáir vegna fámennis þjóðarinnar (um 390 þúsund), sem eykur skekkjumörk fyrir hverja flokkun. <a href=\"https://www.gallup.is/frettir/nyr-thjodarpuls/\" title=\"Gallup Iceland / Þjóðarpúls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-018</a> birti ekki tölulegar sundurliðanir eftir menntun í opinberri samantekt, þannig að nákvæmt umfang munarins er ekki staðfest.",
       "supporting_evidence": [
         {
@@ -454,10 +454,20 @@
     {
       "claim_text": "Til að stöðva EDP-ferli í ráðherraráði ESB þarf svokallaðan «hindrunar minnihluta» — að minnsta kosti fjóra meðlimi sem eru fulltrþar meira en 35% af mannfjölda allra aðildarríkjanna.",
       "original_quote": "Til þess þarf að minnsta kosti fjóra meðlimi sem eru fulltrþar meira en 35% af mannfjölda allra aðildarríkjanna.",
-      "verdict": "partially_supported",
-      "explanation": "Fullyrðingin lýsir grundvallaratriði tvöfalds meirihluta í ráðherraráði ESB, þ.e. að hindrunarminnihluti krefjist a.m.k. fjögurra ríkja sem fulltrúa meira en 35% af íbúafjölda. <a href=\"https://www.visindavefur.is/svar.php?id=60120\" title=\"Vísindavefurinn — Vilborg Ása Guðjónsdóttir & Þorsteinn Vilhjálmsson, University of Iceland (2011)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-033</a> staðfestir tvöfalda meirihluta-kerfið (55% ríkja, 65% íbúa). Hins vegar tilgreina heimildirnar ekki sérstaklega EDP-ferlið (Excessive Deficit Procedure) — fullyrðingin gæti gilt almennt um QMV-atkvæðagreiðslu en heimildirnar staðfesta ekki sérstaka beitingu á EDP.",
-      "missing_context": "Heimildirnar lýsa almennri QMV-atkvæðagreiðslu en taka ekki sérstaklega fram regluna um hindrunarminnihluta í EDP-ferlinu. Reglan um fjögur ríki og 35% íbúafjöldans er hluti af grundvallarframsetningu Lissabon-sáttmálans, en sértæk útfærsla EDP-ferlisins er ekki staðfest í heimildunum.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> staðfestir að QMV krefst 55% ríkja og 65% íbúa til samþyktar. Þar af leiðandi þarf hindrunarminnihluti a.m.k. 4 ríki og yfir 35% íbúa til að stöðva ákvörðun. <a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-002</a> styður þetta og <a href=\"https://www.visindavefur.is/svar.php?id=60120\" title=\"Vísindavefurinn — Vilborg Ása Guðjónsdóttir & Þorsteinn Vilhjálmsson, University of Iceland (2011)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-033</a> útskýrir Lissabon-sáttmálann.",
+      "missing_context": "Flestar ákvarðanir í ráðherraráðinu eru teknar með samstöðu án formlegrar atkvaeðagreiðslu. Hindrunarminnihlutinn er fræðilega mikilvægur en í reynd fer mestu um samningaviðræður.",
       "supporting_evidence": [
+        {
+          "id": "SOV-DATA-017",
+          "source_name": "Treaty on European Union, Article 16(4); European Parliament allocation rules",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016"
+        },
+        {
+          "id": "SOV-LEGAL-002",
+          "source_name": "Treaty on European Union, Article 16(4)",
+          "source_url": "https://eur-lex.europa.eu/summary/glossary/qualified_majority.html"
+        },
         {
           "id": "SOV-DATA-033",
           "source_name": "Vísindavefurinn — Vilborg Ása Guðjónsdóttir & Þorsteinn Vilhjálmsson, University of Iceland (2011)",
@@ -580,8 +590,8 @@
       "claim_text": "Finnland getur sem ESB-ríki og NATO-meðlimur ekki komið í veg fyrir sektir frá ESB kjósi ESB að beita heimild sinni.",
       "original_quote": "Finnland getur sem ESB ríki og meðlimur NATO ekki komið í veg fyrir þessar sektir kjósi ESB að beita heimild sinni.",
       "verdict": "partially_supported",
-      "explanation": "Að hluta studd: <a href=\"https://eur-lex.europa.eu/EN/legal-content/summary/iceland-external-relations-common-foreign-and-security-policy.html\" title=\"TEU, Title V — CFSP provisions; Icelandic Ministry for Foreign Affairs — Annual alignment reports\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-014</a> staðfestir að ESB-aðildarríki taka á sig skuldbindingar Common Foreign and Security Policy og fjárhagsaga gegnum SGP, og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M042\" title=\"Treaty on European Union, Article 42; NATO Treaty, Article 5\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-008</a> sýnir að NATO-aðild og ESB-aðild lifa saman. Hins vegar er pólitísk virkjun EDP-sekta sjaldgæf — ákvarðanir í ráði ESB krefjast aukins meirihluta og fordæmi er ekki fyrir formlegri sekt. Fullyrðingin um að Finnland geti «ekki komið í veg fyrir» sektir er því tæknilega rétt en lætur það undan að ákvörðunarferlið er pólitískt og hægt að hafa áhrif á það.",
-      "missing_context": "EDP-sektir hafa aldrei verið innheimtar í sögu ESB þrátt fyrir mörg EDP-ferli. Ákvörðun um sekt krefst aukins meirihluta í ráði ESB og ríki sem standa frammi fyrir EDP geta haft áhrif á niðurstöðu með pólitísku samtali og aðlögunaráætlun. NATO-aðildin sjálf hefur engin bein áhrif á EDP-ferlið — það er aukatengsl sem höfundur greinarinnar tekur upp.",
+      "explanation": "Að hluta stutt: <a href=\"https://eur-lex.europa.eu/EN/legal-content/summary/iceland-external-relations-common-foreign-and-security-policy.html\" title=\"TEU, Title V — CFSP provisions; Icelandic Ministry for Foreign Affairs — Annual alignment reports\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-014</a> staðfestir að ESB-aðildarríki taka á sig skuldbindingar Common Foreign and Security Policy og fjárhagsaga gegnum SGP, og <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M042\" title=\"Treaty on European Union, Article 42; NATO Treaty, Article 5\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-008</a> sýnir að NATO-aðild og ESB-aðild lifa saman. Hins vegar er pólitísk virkjun EDP-sekta sjaldgæf — ákvarðanir í ráði ESB krefjast aukins meirihluta og fordæmi er ekki fyrir formlegri sekt. Fullyrðingin um að Finnland geti «ekki komið í veg fyrir» sektir er því tæknilega rétt en lætur það undan að ákvörðunarferlið er pólitískt og hægt að hafa áhrif á það.",
+      "missing_context": "EDP-sektir hafa aldrei verið innheimtar í sögu ESB þrátt fyrir mörg EDP-ferli. Ákvörðun um sekt krefst aukins meirihluta í ráði ESB og ríki sem standa frammi fyrir EDP geta haft áhrif á niðurstöðu með pólitísku samtali og aðlögunaráætlun. NATO-aðildin sjálf hefur engin bein áhrif á EDP-ferlið — það eru aukatengsl sem höfundur greinarinnar tekur upp.",
       "supporting_evidence": [
         {
           "id": "SOV-LEGAL-014",

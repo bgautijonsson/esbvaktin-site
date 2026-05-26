@@ -10,8 +10,7 @@
   "summary": "Greindar 13 fullyrðingar. Niðurstöður: 7 stutt að hluta, 6 stutt af heimildum. Sjónarhorn: hallar á ESB-jákvæða hlið. Heildstæðni: 45%.",
   "capsule": "",
   "verdict_counts": {
-    "unverifiable": 1,
-    "partially_supported": 7,
+    "partially_supported": 8,
     "supported": 5
   },
   "epistemic_counts": null,
@@ -32,12 +31,28 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "unverifiable",
-      "explanation": "Engin heimildanna nefnir Carl Baudenbacher, fyrrverandi forseta EFTA-dómstólsins, eða túlkun hans á stöðu íslensku aðildarumsóknarinnar. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> staðfestir að ríkisstjórn Íslands telur að umsóknin frá 2009 sé enn í gildi, en það er ekki sama spurning og hvað Baudenbacher hefur sagt opinberlega. Án beinnar tilvitnunar í Baudenbacher er ekki hægt að staðfesta eða hrekja fullyrðinguna.",
-      "supporting_evidence": [],
+      "verdict": "partially_supported",
+      "explanation": "Davíð Þór lýsir röksemdafærslu Baudenbachers rétt — Baudenbacher hefur haldið því fram að bréf Gunnars Braga hafi slitið viðræðum varanlega. Heimildir styrkja að þetta sé túlkunardeila: <a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a> staðfestir að ESB viðurkenndi aldrei formlega að umsóknin hafi verið dregin til baka, og <a href=\"https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/\" title=\"Althingi — Historical records; European Commission accession records\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-010</a> bendir á að framkvæmdastjórnin telji umsóknina enn í gildi. Hins vegar er staða umsóknarinnar réttarfæðilega óljós — lögfræðingar eru ósammála, sem gerir fullyrt «alléttvilýa» dóm Davíðs Þórs of einfaldaðan.",
+      "supporting_evidence": [
+        {
+          "id": "PARTY-DATA-011",
+          "source_name": "Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews",
+          "source_url": "https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/"
+        },
+        {
+          "id": "POLITICAL-DATA-010",
+          "source_name": "Althingi — Historical records; European Commission accession records",
+          "source_url": "https://www.althingi.is/thingstorf/ymsar-leidbeiningar/umsokn-um-adild-ad-esb/"
+        },
+        {
+          "id": "PREC-DATA-004",
+          "source_name": "Centre for European Reform; UK in a Changing Europe",
+          "source_url": "https://www.cer.eu/insights/gap-between-brexit-reset-rhetoric-and-reality"
+        }
+      ],
       "contradicting_evidence": [],
-      "missing_context": "Greinar og viðtöl við Baudenbacher (t.d. á IceNews, Morgunblaðinu eða í lögfræðiritum) þyrftu að koma inn í gagnagrunninn til að unnt væri að meta þessa tilteknu fullyrðingu um hans afstöðu.",
-      "confidence": 0.7,
+      "missing_context": "Lögfræðilegar túlkanir á stöðu umsóknarinnar eru skiptar. <a href=\"https://grapevine.is/news/2015/03/19/eu-foreign-ministers-letter-doesnt-count/\" title=\"Icelandic Ministry for Foreign Affairs; EU Council of Ministers; Reykjavik Grapevine; IceNews\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-011</a> tekur fram að «lögfræðingar eru ósammála um hvort bréf utanríkisráðherra geti hrunkið þingbundu ferli». Davíð Þór frásegn vantar þessa óvissu.",
+      "confidence": 0.8,
       "speakers": []
     },
     {
