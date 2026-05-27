@@ -201,5 +201,23 @@
       "Flokkur fólksins": "FF",
       Hreyfingin: "Hreyfing",
     },
+    sourceDomainMap: {
+      "visir.is": { name: "Vísir", css: "source-visir" },
+      "ruv.is": { name: "RÚV", css: "source-ruv" },
+      "mbl.is": { name: "Morgunblaðið", css: "source-mbl" },
+      "heimildin.is": { name: "Heimildin", css: "source-heimildin" },
+      "kjarninn.is": { name: "Kjarninn", css: "source-kjarninn" },
+      "stundin.is": { name: "Stundin", css: "source-stundin" },
+      "frettabladid.is": { name: "Fréttablaðið", css: "source-frettabladid" },
+      "althingi.is": { name: "Alþingi", css: "source-althingi" },
+    },
+    sourceName: function (domain) {
+      var entry = this.sourceDomainMap[domain];
+      return entry ? entry.name : domain;
+    },
+    sourceClass: function (domain) {
+      var entry = this.sourceDomainMap[domain];
+      return entry ? entry.css : "source-other";
+    },
   };
 });

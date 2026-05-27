@@ -6,15 +6,24 @@ The referendum is scheduled for 29 August 2026.
 
 ## What the site shows
 
+Top navigation (5 items):
+
 | Section | Description |
 |---|---|
+| **Nýtt** | What changed today — debate deltas and spiking topics |
 | **Fullyrðingar** | Claim tracker with five-level verdict scale |
 | **Umræðan** | Article-by-article analysis with extracted claims |
+| **Málefni** | Issue-level overviews across all claims |
+| **Safnið** | Hub linking to all underlying trackers |
+
+Linked from Safnið:
+
+| Section | Description |
+|---|---|
 | **Raddirnar** | Entities — politicians, parties, institutions — and their claim profiles |
 | **Heimildir** | Evidence library backing each verdict |
 | **Þingræður** | Alþingi debate coverage |
 | **Vikuyfirlit** | Weekly review of what changed |
-| **Málefni** | Issue-level overviews across all claims |
 
 ## Tech stack
 
@@ -26,9 +35,9 @@ The referendum is scheduled for 29 August 2026.
 ## Quick start
 
 ```bash
-npm install
-npm run serve   # Dev server at http://localhost:8080
-npm run build   # Build to _site/
+pnpm install
+pnpm run serve   # Dev server at http://localhost:8080
+pnpm run build   # Build to _site/
 ```
 
 ## How it works

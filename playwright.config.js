@@ -13,14 +13,14 @@ module.exports = defineConfig({
   reporter: [["list"], ["html", { open: "never" }]],
   outputDir: "test-results/playwright",
   use: {
-    baseURL: "http://127.0.0.1:8080",
+    baseURL: "http://127.0.0.1:8091",
     trace: "on-first-retry",
     screenshot: "only-on-failure",
     video: "retain-on-failure",
   },
   webServer: {
-    command: "npm run serve",
-    url: "http://127.0.0.1:8080",
+    command: "pnpm exec eleventy --serve --port=8091",
+    url: "http://127.0.0.1:8091",
     reuseExistingServer: !process.env.CI,
     timeout: 120_000,
   },

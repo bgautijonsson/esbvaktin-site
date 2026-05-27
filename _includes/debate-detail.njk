@@ -128,11 +128,7 @@ return_link_support: true
   </section>
   {% endif %}
 
-  <script>
-    document.querySelectorAll('.dd-speech-full').forEach(el => {
-      el.addEventListener('click', () => el.closest('details').removeAttribute('open'));
-    });
-  </script>
+  <script src="/assets/js/debate-detail.js" defer></script>
 
   <nav class="dd-back">
     <a href="/thingraedur/" data-return-link data-return-fallback="/thingraedur/" data-return-label="← Til baka í fyrri niðurstöður">&larr; Til baka í þingræður</a>

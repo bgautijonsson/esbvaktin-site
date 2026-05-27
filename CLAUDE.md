@@ -18,10 +18,12 @@ Static site for esbvaktin.is — Iceland's EU referendum civic information platf
 ## Key Commands
 
 ```bash
-npm run serve    # Dev server with live reload (http://localhost:8080)
-npm run build    # Build to _site/
-npm run clean    # Remove _site/
+pnpm run serve    # Dev server with live reload (http://localhost:8080)
+pnpm run build    # Build to _site/
+pnpm run clean    # Remove _site/
 ```
+
+Package manager: **pnpm** (not npm). The 30-day install cooldown in `~/.npmrc` (`minimum-release-age=43200`) is only honored by pnpm — using `npm install` here will silently bypass the cooldown.
 
 ## Structure
 

@@ -1,11 +1,39 @@
+const crypto = require("crypto");
 const taxonomy = require("./assets/js/site-taxonomy.js");
 const markdownIt = require("markdown-it");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
+
+const INLINE_SCRIPT_RE = /<script(?![^>]*\bsrc=)([^>]*)>([\s\S]*?)<\/script>/g;
 
 /** @type {import("@11ty/eleventy").UserConfig} */
-module.exports = function (eleventyConfig) {
+module.exports = async function (eleventyConfig) {
   // ── Plugins ─────────────────────────────────────────────────────
+  // eleventy-plugin-rss is ESM-only since v3; load via dynamic import from this CJS config.
+  const { default: pluginRss } = await import("@11ty/eleventy-plugin-rss");
   eleventyConfig.addPlugin(pluginRss);
+
+  // ── CSP hash injection ──────────────────────────────────────────
+  // Scan every rendered page for inline <script> blocks (JSON-LD), hash them,
+  // and replace 'unsafe-inline' in the CSP script-src with per-page sha256 allowlist.
+  // style-src keeps 'unsafe-inline' (the BMAC widget injects inline styles).
+  eleventyConfig.addTransform("cspScriptHashes", function (content, outputPath) {
+    if (!outputPath || !outputPath.endsWith(".html")) return content;
+
+    const hashes = new Set();
+    INLINE_SCRIPT_RE.lastIndex = 0;
+    let match;
+    while ((match = INLINE_SCRIPT_RE.exec(content)) !== null) {
+      const body = match[2];
+      const hash = crypto.createHash("sha256").update(body).digest("base64");
+      hashes.add(`'sha256-${hash}'`);
+    }
+
+    if (!hashes.size) return content;
+    const hashList = [...hashes].join(" ");
+    return content.replace(
+      "script-src 'self' 'unsafe-inline' https://cdnjs.buymeacoffee.com https://gc.zgo.at",
+      `script-src 'self' ${hashList} https://cdnjs.buymeacoffee.com https://gc.zgo.at`,
+    );
+  });
 
   // ── Passthrough copy ──────────────────────────────────────────────
   // Assets served as-is — 11ty never processes JS, CSS, or data files
@@ -192,24 +220,13 @@ module.exports = function (eleventyConfig) {
   );
 
   // ── Source domain → display name + CSS class ───────────────────
-  const sourceDomainMap = {
-    "visir.is": { name: "Vísir", css: "source-visir" },
-    "ruv.is": { name: "RÚV", css: "source-ruv" },
-    "mbl.is": { name: "Morgunblaðið", css: "source-mbl" },
-    "heimildin.is": { name: "Heimildin", css: "source-heimildin" },
-    "kjarninn.is": { name: "Kjarninn", css: "source-kjarninn" },
-    "stundin.is": { name: "Stundin", css: "source-stundin" },
-    "frettabladid.is": { name: "Fréttablaðið", css: "source-frettabladid" },
-    "althingi.is": { name: "Alþingi", css: "source-althingi" },
-  };
-  eleventyConfig.addFilter("sourceName", (domain) => {
-    const entry = sourceDomainMap[domain];
-    return entry ? entry.name : domain;
-  });
-  eleventyConfig.addFilter("sourceClass", (domain) => {
-    const entry = sourceDomainMap[domain];
-    return entry ? entry.css : "source-other";
-  });
+  // Map lives in assets/js/site-taxonomy.js so the Eleventy filter and client JS share one definition.
+  eleventyConfig.addFilter("sourceName", (domain) =>
+    taxonomy.sourceName(domain),
+  );
+  eleventyConfig.addFilter("sourceClass", (domain) =>
+    taxonomy.sourceClass(domain),
+  );
 
   // ── Number formatting ───────────────────────────────────────────
   eleventyConfig.addFilter("localeString", (n) => {

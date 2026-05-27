@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "description": "Static site for esbvaktin.is",
+  "packageManager": "pnpm@9.11.0",
   "scripts": {
     "validate": "python3 scripts/validate_export.py",
     "prebuild": "python3 scripts/validate_export.py",
-    "build": "npm run clean && eleventy && bash tools/minify.sh",
+    "build": "rm -rf _site && eleventy && bash tools/minify.sh",
     "serve": "eleventy --serve",
     "clean": "rm -rf _site",
     "browser:test": "playwright test",
@@ -17,10 +18,10 @@
     "stats": "node tools/stats.js"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0",
-    "@11ty/eleventy-plugin-rss": "^2.0.4",
-    "@playwright/test": "^1.58.2",
+    "@11ty/eleventy": "^3.1.5",
+    "@11ty/eleventy-plugin-rss": "^3.0.0",
+    "@playwright/test": "^1.60.0",
     "clean-css-cli": "^5.6.3",
-    "terser": "^5.46.1"
+    "terser": "^5.48.0"
   }
 }

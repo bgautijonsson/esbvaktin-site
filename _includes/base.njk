@@ -3,6 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {# CSP allowlist: own origin, BMAC widget (script + iframe + images), GoatCounter (script + beacon), Google Fonts.
+     script-src has 'unsafe-inline' as a placeholder — the `cspScriptHashes` transform in
+     eleventy.config.js rewrites it to a per-page sha256 allowlist for the remaining inline JSON-LD.
+     style-src keeps 'unsafe-inline' (vendor-injected styles from BMAC). #}
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.buymeacoffee.com https://gc.zgo.at; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://cdn.buymeacoffee.com https://img.buymeacoffee.com https://esbvaktin.goatcounter.com; connect-src 'self' https://esbvaktin.goatcounter.com; frame-src https://www.buymeacoffee.com; base-uri 'self'; form-action 'self'; object-src 'none';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
   <title>{{ title }}{% if title !== site.title %} — {{ site.title }}{% endif %}</title>
   <meta name="description" content="{{ description or site.description }}">
 
@@ -17,7 +26,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300..900;1,300..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300..900;1,300..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" media="print" data-font-deferred>
 
   <!-- Open Graph -->
   <meta property="og:title" content="{{ title }}">
@@ -83,7 +92,7 @@
           <button class="nav-toggle" type="button" aria-label="Opna valmynd" title="Opna valmynd" aria-controls="site-menu" aria-expanded="false">
             <span class="nav-hamburger"></span>
           </button>
-          <button type="button" class="nav-support-btn" onclick="document.querySelector('#bmc-wbtn')?.click()">Styrkja</button>
+          <button type="button" class="nav-support-btn" data-action="open-bmac">Styrkja</button>
         </div>
       </nav>
     </header>
@@ -114,6 +123,8 @@
   {% if extra_js %}<script src="{{ extra_js }}" defer{% if extra_js_data %} {{ extra_js_data | safe }}{% endif %}></script>{% endif %}
   <script data-name="BMC-Widget"
     src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+    integrity="sha384-Ix5rVKHOmV5CEwVkvVF0OJsmX53F8y01q+sE3+b41ZLmPZWgufB7atrf9pwA7r1e"
+    crossorigin="anonymous"
     data-id="bggj"
     data-description="Styðja ESB Vaktina"
     data-message="Styðja verkefnið — framlög fara í rekstur vefsíðu og gagnavinnslu."
@@ -122,23 +133,14 @@
     data-x_margin="18"
     data-y_margin="18"
     defer></script>
-  <!-- GoatCounter analytics (privacy-friendly, no cookies) -->
+  {# GoatCounter analytics (privacy-friendly, no cookies).
+     No SRI — count.js is not version-pinned and GoatCounter updates it; an SRI hash would
+     break the script on each upstream change. CSP script-src allowlist limits the blast radius.
+     Pinned to https:// (rather than protocol-relative) so the dev server matches production. #}
   <script data-goatcounter="https://esbvaktin.goatcounter.com/count"
-    async src="//gc.zgo.at/count.js"></script>
+    async src="https://gc.zgo.at/count.js"></script>
   <script src="/assets/js/site-analytics.js" defer></script>
-  <script>
-    // Hide the BMAC widget tooltip (classless div appended to body)
-    new MutationObserver((_, obs) => {
-      const btn = document.getElementById('bmc-wbtn');
-      if (!btn) return;
-      for (const el of document.body.children) {
-        if (el.tagName === 'DIV' && !el.id && !el.className && el !== btn && el.style.position === 'fixed' && el.style.maxWidth) {
-          el.remove();
-          obs.disconnect();
-          return;
-        }
-      }
-    }).observe(document.body, { childList: true });
-  </script>
+  <script src="/assets/js/bmac-tooltip-cleaner.js" defer></script>
+  <script src="/assets/js/inline-handlers.js" defer></script>
 </body>
 </html>

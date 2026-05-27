@@ -11,13 +11,13 @@ JS_DIR="$SITE_DIR/assets/js"
 echo "Minifying CSS..."
 for f in "$CSS_DIR"/*.css; do
   [ -f "$f" ] || continue
-  npx cleancss -O1 --inline none -o "$f" "$f"
+  pnpm exec cleancss -O1 --inline none -o "$f" "$f"
 done
 
 echo "Minifying JS..."
 for f in "$JS_DIR"/*.js; do
   [ -f "$f" ] || continue
-  npx terser "$f" --compress --mangle -o "$f"
+  pnpm exec terser "$f" --compress --mangle -o "$f"
 done
 
 # Report savings
