@@ -2,20 +2,20 @@
   "slug": "bogi-nils-bogason",
   "name": "Bogi Nils Bogason",
   "type": "individual",
-  "description": "Forstjóri Icelandair (Sjálfstæðisflokkur) — hlutlaus um ESB-aðild.",
+  "description": "Forstjóri Icelandair (Sjálfstæðisflokkur) — blandað viðhorf til ESB-aðildar.",
   "role": "forstjóri Icelandair",
   "party": "Sjálfstæðisflokkur",
-  "stance": "neutral",
-  "stance_score": 0.0,
+  "stance": "mixed",
+  "stance_score": -0.2,
   "credibility": 0.5,
   "attribution_counts": {
     "asserted": 7,
     "quoted": 7,
-    "paraphrased": 8
+    "paraphrased": 10
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 11,
+    "partially_supported": 12,
     "unsupported": 1
   },
   "claims": [
@@ -383,6 +383,48 @@
       "article_title": "Orðið á götunni: Börnin okkar eiga það skilið!",
       "article_source": "DV",
       "article_date": "2026-03-27"
+    },
+    {
+      "claim_text": "Bogi Nils Bogason heldur því fram að með skynsömum efnahagsaðgerðum sé hægt að lækka vexti og bæta efnahag landsmanna án ESB-aðildar.",
+      "original_quote": "Með skynsömum efnahagsaðgerðum sé hægt að lækka vexti og bæta efnahag landsmanna.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin er spá og verður að meta á grundvelli rökfærslu og fordæma. Heimildir veita mótsagnakennda mynd: <a href=\"https://www.sa.is/\" title=\"SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions\" target=\"_blank\" rel=\"noopener\">POL-DATA-012</a> og <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> leggja til að ESB-aðild myndi lækka vexti með brotthvarfi gengisáhættuálags (~2–3 prósentustig), en CURRENCY-DATA-016 og <a href=\"https://www.sedlabanki.is/hagtolur/gengi/\" title=\"Seðlabanki Íslands — Exchange rate data\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-007</a> sýna einnig að gengissveigjanleiki krónunnar hefur stutt við efnahagsbata eftir áföll. Spáin um sjálfstæðar efnahagsaðgerðir án ESB-aðildar er fræðilega möguleg en hefur takmarkaða fordæmisfestu.",
+      "missing_context": "<a href=\"https://data.ecb.europa.eu/\" title=\"ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS\" target=\"_blank\" rel=\"noopener\">PREC-DATA-020</a> sýnir að Króatía lækkaði fasteignalánavexti niður fyrir Þýskaland eftir evrutöku — sterkt fordæmi fyrir vaxtaábata af aðild. <a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Bank for International Settlements — Boris Vujčić speech: One Year with the Euro\" target=\"_blank\" rel=\"noopener\">CURR-DATA-018</a> staðfestir að gjaldeyrisáhætta hvarf næstum eftir evrutöku í Króatíu. Sjálfstæðar peningastefnuaðgerðir Seðlabanka Íslands hafa skilað 4,5% verðbólgu að meðaltali (<a href=\"https://cb.is/statistics/official-exchange-rate/\" title=\"Seðlabanki Íslands — Monetary Bulletin; ECB Statistical Data Warehouse\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-004</a>) samanborið við 2,5% á evrusvæðinu. Hámarks öryggi fyrir spár er 0,8.",
+      "supporting_evidence": [
+        {
+          "id": "TRADE-DATA-007",
+          "source_name": "Seðlabanki Íslands — Exchange rate data",
+          "source_url": "https://www.sedlabanki.is/hagtolur/gengi/"
+        },
+        {
+          "id": "CURRENCY-DATA-016",
+          "source_name": "Central Bank of Iceland — Exchange rate data; ECB — Statistical Data Warehouse",
+          "source_url": null
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "POL-DATA-012",
+          "source_name": "SA — 'Iceland and Europe: The Business Case' (2025); SA annual congress resolutions",
+          "source_url": "https://www.sa.is/"
+        },
+        {
+          "id": "POL-DATA-017",
+          "source_name": "Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)",
+          "source_url": "https://vi.is/skyrslur/1667"
+        },
+        {
+          "id": "PREC-DATA-020",
+          "source_name": "ECB Statistical Data Warehouse — MFI Interest Rates; Croatian National Bank; BIS",
+          "source_url": "https://data.ecb.europa.eu/"
+        }
+      ],
+      "category": "trade",
+      "attribution": "paraphrased",
+      "article_slug": "esb-sinni-stadinn-ad-undirferli",
+      "article_title": "ESB-sinni staðinn að undirferli",
+      "article_source": "Blog.is",
+      "article_date": "2026-03-28"
     }
   ],
   "articles": [
@@ -415,6 +457,16 @@
       "claim_count": 5,
       "attribution_types": [
         "asserted",
+        "paraphrased"
+      ]
+    },
+    {
+      "slug": "esb-sinni-stadinn-ad-undirferli",
+      "title": "ESB-sinni staðinn að undirferli",
+      "source": "Blog.is",
+      "date": "2026-03-28",
+      "claim_count": 1,
+      "attribution_types": [
         "paraphrased"
       ]
     }

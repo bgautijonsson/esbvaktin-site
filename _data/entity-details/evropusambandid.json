@@ -6,17 +6,17 @@
   "role": "alþjóðastofnun",
   "party": null,
   "stance": "neutral",
-  "stance_score": 0.06,
-  "credibility": 0.67,
+  "stance_score": 0.07,
+  "credibility": 0.65,
   "attribution_counts": {
-    "asserted": 13,
+    "asserted": 15,
     "quoted": 14,
     "paraphrased": 14,
-    "mentioned": 256
+    "mentioned": 264
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 22,
+    "partially_supported": 23,
     "misleading": 2,
     "supported": 10,
     "unverifiable": 1
@@ -1125,6 +1125,38 @@
       "article_title": "Bókaspjall: Frelsið eftir Mill með Hannesi Hólmsteini",
       "article_source": "Spursmál (mbl.is)",
       "article_date": "2026-05-14"
+    },
+    {
+      "claim_text": "Evrópusambandið á að skipa eigin herráði og hraðsveitum sem starfa undir merkjum þess",
+      "original_quote": "hefur Evrópusambandið á að skipa eigin herráði og hraðsveitum sem starfa undir merkjum þess",
+      "verdict": "partially_supported",
+      "explanation": "ESB hefur raunverulega komið sér upp hraðliðsgetu: <a href=\"https://www.eeas.europa.eu/eeas/strategic-compass-security-and-defence-1_en\" title=\"EU Strategic Compass for Security and Defence (March 2022); NATO Allied Air Command — Icelandic Air Policing; IISS Strategic Survey 2023\" target=\"_blank\" rel=\"noopener\">SOV-HIST-003</a> staðfestir að Strategic Compass frá mars 2022 setti upp 5.000 manna hraðliðsgetu (EU Rapid Deployment Capacity). Orðalagið um «eigin herráð og hraðsveitir undir merkjum þess» ofmælir hins vegar umfangið — <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M042\" title=\"Treaty on European Union, Article 42; NATO Treaty, Article 5\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-008</a> og <a href=\"https://eur-lex.europa.eu/EN/legal-content/summary/iceland-external-relations-common-foreign-and-security-policy.html\" title=\"TEU, Title V — CFSP provisions; Icelandic Ministry for Foreign Affairs — Annual alignment reports\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-014</a> sýna að sameiginleg öryggis- og varnarstefna (CSDP) starfar við hlið NATO en kemur ekki í staðinn fyrir það, þátttaka aðildarríkja er valfrjáls og krefst ekki stofnunar herafla. Fullyrðingin nær því réttu kjarnaatriði en sleppir mikilvægum blæbrigðum um valfrelsi og samspil við NATO.",
+      "missing_context": "Strategic Compass kveður beint á um að varnir ESB séu «til viðbótar NATO» (complementary to NATO), og samkvæmt <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M042\" title=\"Treaty on European Union, Article 42; NATO Treaty, Article 5\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-008</a> og <a href=\"https://eur-lex.europa.eu/EN/legal-content/summary/iceland-external-relations-common-foreign-and-security-policy.html\" title=\"TEU, Title V — CFSP provisions; Icelandic Ministry for Foreign Affairs — Annual alignment reports\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-014</a> er þátttaka í varnarverkefnum ESB valfrjáls og krefst ekki herafla. Hraðliðsgetan telur 5.000 manns, ekki sjálfstæðan fastaher. Þróun varnarmetnaðar ESB er ör eftir innrás Rússlands 2022, en formleg ákvarðanataka í utanríkis- og varnarmálum krefst einhugar í ráðinu.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-HIST-003",
+          "source_name": "EU Strategic Compass for Security and Defence (March 2022); NATO Allied Air Command — Icelandic Air Policing; IISS Strategic Survey 2023",
+          "source_url": "https://www.eeas.europa.eu/eeas/strategic-compass-security-and-defence-1_en"
+        },
+        {
+          "id": "SOV-LEGAL-008",
+          "source_name": "Treaty on European Union, Article 42; NATO Treaty, Article 5",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A12016M042"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "SOV-LEGAL-014",
+          "source_name": "TEU, Title V — CFSP provisions; Icelandic Ministry for Foreign Affairs — Annual alignment reports",
+          "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/iceland-external-relations-common-foreign-and-security-policy.html"
+        }
+      ],
+      "category": "sovereignty",
+      "attribution": "asserted",
+      "article_slug": "mikill-meirihluti-vill-evropusambandsher",
+      "article_title": "Mikill meirihluti vill Evrópusambandsher",
+      "article_source": "stjornmalin",
+      "article_date": "2026-05-28"
     }
   ],
   "articles": [
@@ -1294,6 +1326,17 @@
       "title": "Bókaspjall: Frelsið eftir Mill með Hannesi Hólmsteini",
       "source": "Spursmál (mbl.is)",
       "date": "2026-05-14",
+      "claim_count": 1,
+      "attribution_types": [
+        "asserted",
+        "mentioned"
+      ]
+    },
+    {
+      "slug": "mikill-meirihluti-vill-evropusambandsher",
+      "title": "Mikill meirihluti vill Evrópusambandsher",
+      "source": "stjornmalin",
+      "date": "2026-05-28",
       "claim_count": 1,
       "attribution_types": [
         "asserted",

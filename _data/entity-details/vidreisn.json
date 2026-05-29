@@ -11,12 +11,12 @@
   "attribution_counts": {
     "asserted": 31,
     "quoted": 2,
-    "paraphrased": 6,
-    "mentioned": 55
+    "paraphrased": 8,
+    "mentioned": 64
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 21,
+    "partially_supported": 22,
     "supported": 4,
     "unverifiable": 1
   },
@@ -776,6 +776,37 @@
       "article_title": "Síðasta tækifærið er núna",
       "article_source": "Miðflokkurinn",
       "article_date": "2026-05-15"
+    },
+    {
+      "claim_text": "Tíu ára ESB-stefna Viðreisnar er: fyrst skal kjósa og síðan ákveða um hvað hafi verið kosið.",
+      "original_quote": "Tíu ára ESB-stefna Viðreisnar: fyrst skal kjósa og síðan ákveða um hvað hafi verið kosið.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta tímalínuna en lýsa stefnunni öðruvísi. <a href=\"https://www.vidreisn.is/stefna\" title=\"Viðreisn — Founding manifesto (2014); Viðreisn party statutes; Landskjörstjórn election results\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-017</a> og <a href=\"https://www.althingi.is/thingmenn/thingflokkar/vidreisn/\" title=\"Althingi — Session 157; Viðreisn party platform\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-004</a> sýna að Viðreisn var stofnuð 2014 og hefur ESB-aðild sem grunnstefnu — það er u.þ.b. tíu ára saga. <a href=\"https://www.althingi.is/altext/raeda/154/rad20230919T175556.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir (flutningsræða, 154. löggjafarþing); Logi Einarsson (flutningsræða, 153. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-004</a> staðfestir að Þorgerður Katrín lagði fram sambærilega tillögu í september 2023 með sama orðalagi — að halda viðræðum áfram. Stefnan að «kjósa fyrst» er staðfest af heimildum, en fullyrðingin um að ákvarðanir séu teknar eftirá er pólitísk túlkun á þjóðaratkvæðagreiðsluferlinu.",
+      "missing_context": "Þjóðaratkvæðagreiðslan snýst um hvort halda eigi viðræðum áfram, ekki um aðild sem slíka. Viðræðumarkmið og endanlegur samningur eru ekki fullskilgreindir fyrir kosningu — þetta er almenn aðferð í aðildarferlum og var notuð í Noregi (1972, 1994) og Danmörku (1972), eins og <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Þjóðarpúls, February–March 2026; Capacent Gallup historical EU polling data (2009–2013)\" target=\"_blank\" rel=\"noopener\">POLL-DATA-021</a> vísar til. Hvort þetta sé óvenjuleg aðferð eða stöðluð aðildarvinnubrögð er matsatriði.",
+      "supporting_evidence": [
+        {
+          "id": "PARTY-DATA-017",
+          "source_name": "Viðreisn — Founding manifesto (2014); Viðreisn party statutes; Landskjörstjórn election results",
+          "source_url": "https://www.vidreisn.is/stefna"
+        },
+        {
+          "id": "SOV-PARL-004",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir (flutningsræða, 154. löggjafarþing); Logi Einarsson (flutningsræða, 153. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/154/rad20230919T175556.html"
+        },
+        {
+          "id": "POLITICAL-DATA-004",
+          "source_name": "Althingi — Session 157; Viðreisn party platform",
+          "source_url": "https://www.althingi.is/thingmenn/thingflokkar/vidreisn/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "party_positions",
+      "attribution": "paraphrased",
+      "article_slug": "oljos-outfylltur-tekki",
+      "article_title": "Óljós óútfylltur tékki",
+      "article_source": "Björn Bjarnason",
+      "article_date": "2026-04-26"
     }
   ],
   "articles": [
@@ -859,6 +890,16 @@
       "attribution_types": [
         "paraphrased"
       ]
+    },
+    {
+      "slug": "oljos-outfylltur-tekki",
+      "title": "Óljós óútfylltur tékki",
+      "source": "Björn Bjarnason",
+      "date": "2026-04-26",
+      "claim_count": 1,
+      "attribution_types": [
+        "paraphrased"
+      ]
     }
   ],
   "icelandic": true,
@@ -867,9 +908,9 @@
       "slug": "thorgerdur-katrin-gunnarsdottir",
       "name": "Þorgerður Katrín Gunnarsdóttir",
       "role": "þingmaður",
-      "stance_score": 0.79,
+      "stance_score": 0.77,
       "credibility": 0.61,
-      "claim_count": 278
+      "claim_count": 304
     },
     {
       "slug": "thomas-moller",
@@ -888,6 +929,14 @@
       "claim_count": 44
     },
     {
+      "slug": "pawel-bartoszek",
+      "name": "Pawel Bartoszek",
+      "role": "formaður utanríkismálanefndar Alþingis",
+      "stance_score": 0.5,
+      "credibility": 0.7,
+      "claim_count": 43
+    },
+    {
       "slug": "heida-kristin-helgadottir",
       "name": "Heiða Kristín Helgadóttir",
       "role": "ráðgjafi utanríkisráðherra",
@@ -896,20 +945,12 @@
       "claim_count": 36
     },
     {
-      "slug": "pawel-bartoszek",
-      "name": "Pawel Bartoszek",
-      "role": "formaður utanríkismálanefndar Alþingis",
-      "stance_score": 0.53,
-      "credibility": 0.72,
-      "claim_count": 33
-    },
-    {
       "slug": "hanna-katrin-fridriksson",
       "name": "Hanna Katrín Friðriksson",
       "role": "þingmaður",
-      "stance_score": 0.5,
+      "stance_score": 0.38,
       "credibility": 0.63,
-      "claim_count": 28
+      "claim_count": 32
     },
     {
       "slug": "grimur-grimsson",
@@ -955,7 +996,7 @@
       "slug": "dadi-mar-kristofersson",
       "name": "Daði Már Kristófersson",
       "role": "þingmaður",
-      "stance_score": -0.33,
+      "stance_score": 0.0,
       "credibility": 0.5,
       "claim_count": 5
     },
@@ -973,6 +1014,14 @@
       "role": "framkvæmdastjóri flokks",
       "stance_score": 1.0,
       "credibility": 0.67,
+      "claim_count": 3
+    },
+    {
+      "slug": "thorvaldur-ingi-sigurdsson",
+      "name": "Þorvaldur Ingi Sigurðsson",
+      "role": "greinarhöfundur, stjórnarmaður í öldungaráði Viðreisnar",
+      "stance_score": 1.0,
+      "credibility": 0.75,
       "claim_count": 3
     },
     {

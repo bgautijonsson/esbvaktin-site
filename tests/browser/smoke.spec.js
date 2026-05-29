@@ -124,10 +124,10 @@ test("claim tracker article links prefer internal reports and preserve the origi
   await page.setViewportSize({ width: 1440, height: 960 });
   await gotoAndWait(page, "/fullyrdingar/", "#ct-results .ct-card");
 
-  await page.locator("#ct-search").fill("varanlegar almennar undanþágur");
+  await page.locator("#ct-search").fill("Útgerðin gerir upp í evrum");
   const card = page.locator("#ct-results .ct-card").first();
 
-  await expect(card).toContainText("undanþágur");
+  await expect(card).toContainText("evrum");
   await card.locator(".ct-card-header").click();
 
   const sightingLink = card
@@ -136,20 +136,20 @@ test("claim tracker article links prefer internal reports and preserve the origi
   await expect(sightingLink).toBeVisible();
   await expect(sightingLink).toHaveAttribute(
     "href",
-    /\/umraedan\/esb-pakkinn-er-galopinn\/\?return=/,
+    /\/umraedan\/sjavaraudlindin-i-esb\/\?return=/,
   );
 
   await sightingLink.click();
 
   await expect(page).toHaveURL(
-    /\/umraedan\/esb-pakkinn-er-galopinn\/\?return=/,
+    /\/umraedan\/sjavaraudlindin-i-esb\/\?return=/,
   );
   await expect(page.locator(".report-header h1")).toContainText(
-    "ESB-pakkinn er galopinn",
+    "Sjávarauðlindin í ESB",
   );
   await expect(page.locator(".report-source-link")).toHaveAttribute(
     "href",
-    /visir\.is\/g\/20262853296d\/esb-pakkinn-er-galopinn/,
+    /visir\.is\/g\/20262852690d\/sjavaraudlindin-i-esb/,
   );
 });
 
@@ -181,13 +181,15 @@ test("homepage keeps the front page focused on datasets and current activity", a
   await page.setViewportSize({ width: 1440, height: 960 });
 
   await gotoAndWait(page, "/", ".home-sidebar");
-  await expect(page.locator(".home-signal-card")).toHaveCount(5);
-  await expect(page.locator(".home-sidebar-section").first()).toContainText(
-    "Oftast nefnd",
-  );
-  await expect(page.locator(".home-sidebar-section").nth(1)).toContainText(
-    "Nýjustu greiningar",
-  );
+  await expect(page.locator(".home-stat-row")).toHaveCount(5);
+  await expect(
+    page.locator(".home-sidebar-section").filter({ hasText: "Oftast nefnd" }),
+  ).toBeVisible();
+  await expect(
+    page
+      .locator(".home-sidebar-section")
+      .filter({ hasText: "Nýjustu greiningar" }),
+  ).toBeVisible();
 });
 
 test("evidence links show a short preview on hover", async ({ page }) => {

@@ -2,19 +2,20 @@
   "slug": "flokkur-folksins",
   "name": "Flokkur fólksins",
   "type": "party",
-  "description": "Stjórnmálaflokkur — blandað viðhorf til ESB-aðildar.",
+  "description": "Stjórnmálaflokkur — andvíg/ur ESB-aðild.",
   "role": "stjórnmálaflokkur",
   "party": "Flokkur fólksins",
-  "stance": "mixed",
-  "stance_score": -0.44,
-  "credibility": 1.0,
+  "stance": "anti_eu",
+  "stance_score": -0.5,
+  "credibility": 0.75,
   "attribution_counts": {
-    "paraphrased": 1,
+    "paraphrased": 2,
     "mentioned": 11
   },
   "althingi_stats": null,
   "scorecard": {
-    "supported": 1
+    "supported": 1,
+    "partially_supported": 1
   },
   "claims": [
     {
@@ -57,6 +58,37 @@
       "article_title": "Að ESB umræðu, þjóðaratkvæði og hugsanlega aðildarviðræðu að þjóðinni forspurðri",
       "article_source": "Blog.is",
       "article_date": "2026-05-05"
+    },
+    {
+      "claim_text": "Flokkur fólksins setur þau skilyrði fyrir ESB-aðild að Ísland fái full og óafturkræf yfirráð yfir auðlindum sínum.",
+      "original_quote": "ef við fáum ekki varanleg og óafturkræf yfirráð yfir okkar auðlindum þá er ekkert um að tala",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta að Flokkur fólksins sé andsnúinn ESB-aðild og leggi áherslu á fullveldi og auðlindir (<a href=\"https://www.flokkurfolksins.is/\" title=\"Coalition agreement 2024; Flokkur fólksins — Party statements; Althingi records\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-018</a>, <a href=\"https://politpro.eu/en/iceland/political-parties/flokkur-folksins\" title=\"Flokkur fólksins party platform; Gallup Þjóðarpúls cross-tabulations by party (February 2026); Althingi coalition agreement 2024\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-014</a>, <a href=\"https://www.althingi.is/thingmenn/thingflokkar/flokkur-folksins/\" title=\"Althingi — Session 157 member registry\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-009</a>). Hins vegar lýsa heimildirnar fyrst og fremst almennri ESB-skepsis flokksins og baráttu hans gegn aðild, ekki útfærðum skilyrðum um óafturkræf yfirráð yfir auðlindum sem formlegri stefnu. Ummælin í tilvitnuninni eru afstaða Ingu Sæland persónulega, og staðreyndagrunnurinn hefur ekki opinber stefnuskjöl Flokks fólksins sem staðfesta þessi tilteknu skilyrði.",
+      "missing_context": "Heimildir tilgreina ekki formlega stefnuskrá Flokks fólksins um skilyrði aðildarviðræðna. <a href=\"https://www.flokkurfolksins.is/\" title=\"Coalition agreement 2024; Flokkur fólksins — Party statements; Althingi records\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-018</a> segir að flokkurinn muni berjast fyrir nei-niðurstöðu óháð skilyrðum — sem bendir til þess að flokkurinn telji aðild í sjálfu sér ósamrýmanlega, ekki bara háða skilyrðum um auðlindir. Þetta veikir túlkun á því að flokkurinn setji raunhæf skilyrði fremur en að hafna aðild í heild.",
+      "supporting_evidence": [
+        {
+          "id": "PARTY-DATA-018",
+          "source_name": "Coalition agreement 2024; Flokkur fólksins — Party statements; Althingi records",
+          "source_url": "https://www.flokkurfolksins.is/"
+        },
+        {
+          "id": "POLITICAL-DATA-014",
+          "source_name": "Flokkur fólksins party platform; Gallup Þjóðarpúls cross-tabulations by party (February 2026); Althingi coalition agreement 2024",
+          "source_url": "https://politpro.eu/en/iceland/political-parties/flokkur-folksins"
+        },
+        {
+          "id": "POLITICAL-DATA-009",
+          "source_name": "Althingi — Session 157 member registry",
+          "source_url": "https://www.althingi.is/thingmenn/thingflokkar/flokkur-folksins/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "sovereignty",
+      "attribution": "paraphrased",
+      "article_slug": "inga-vill-ekki-setja-tugi-milljarda-i-loftslagsmal",
+      "article_title": "Inga vill ekki setja „tugi milljarða í loftslagsmál“",
+      "article_source": "Vísir",
+      "article_date": "2026-04-27"
     }
   ],
   "articles": [
@@ -69,10 +101,28 @@
       "attribution_types": [
         "paraphrased"
       ]
+    },
+    {
+      "slug": "inga-vill-ekki-setja-tugi-milljarda-i-loftslagsmal",
+      "title": "Inga vill ekki setja „tugi milljarða í loftslagsmál“",
+      "source": "Vísir",
+      "date": "2026-04-27",
+      "claim_count": 1,
+      "attribution_types": [
+        "paraphrased"
+      ]
     }
   ],
   "icelandic": true,
   "party_members": [
+    {
+      "slug": "inga-saeland",
+      "name": "Inga Sæland",
+      "role": "þingmaður",
+      "stance_score": -0.22,
+      "credibility": 0.71,
+      "claim_count": 15
+    },
     {
       "slug": "kolbrun-aslaugar-baldursdottir",
       "name": "Kolbrún Áslaugar Baldursdóttir",
@@ -82,12 +132,12 @@
       "claim_count": 7
     },
     {
-      "slug": "inga-saeland",
-      "name": "Inga Sæland",
+      "slug": "lilja-rafney-magnusdottir",
+      "name": "Lilja Rafney Magnúsdóttir",
       "role": "þingmaður",
-      "stance_score": -0.14,
-      "credibility": 0.88,
-      "claim_count": 6
+      "stance_score": -1.0,
+      "credibility": null,
+      "claim_count": 5
     },
     {
       "slug": "eyjolfur-armannsson",

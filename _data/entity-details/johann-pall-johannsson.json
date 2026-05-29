@@ -6,12 +6,12 @@
   "role": "þingmaður",
   "party": "Samfylkingin",
   "stance": "mixed",
-  "stance_score": 0.17,
-  "credibility": 0.79,
+  "stance_score": 0.25,
+  "credibility": 0.6,
   "attribution_counts": {
-    "quoted": 3,
-    "paraphrased": 4,
-    "mentioned": 4
+    "quoted": 4,
+    "paraphrased": 6,
+    "mentioned": 5
   },
   "althingi_stats": {
     "speech_count": 25,
@@ -22,7 +22,8 @@
   },
   "scorecard": {
     "supported": 4,
-    "partially_supported": 3
+    "partially_supported": 4,
+    "unsupported": 1
   },
   "claims": [
     {
@@ -252,6 +253,68 @@
       "article_title": "ESB-tillaga Þorgerðar Katrínar hangir á bláþræði",
       "article_source": "Nútíminn",
       "article_date": "2026-05-24"
+    },
+    {
+      "claim_text": "Kristrún Frostadóttir forsætisráðherra og Jóhann Páll Jóhannsson orkumálaráðherra stýra Samfylkingunni.",
+      "original_quote": "Nú hefur tvíeykið sem ræður Samfylkingunni, Kristrún og Jóhann Páll Jóhannsson orkumálaráðherra",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/\" title=\"Althingi — Ministers registry, session 157\" target=\"_blank\" rel=\"noopener\">POLITICAL-DATA-003</a> staðfestir að Kristrún Frostadóttir er forsætisráðherra og Jóhann Páll Jóhannsson umhverfis-, orku- og loftslagsráðherra, bæði fyrir Samfylkinguna. POL-DATA-022 staðfestir að Kristrún er leiðtogi Samfylkingarinnar síðan 2022. Engin heimild styður hins vegar að Jóhann Páll hafi sambærilega leiðtogastöðu í flokknum — fullyrðingin um «tvíeyki sem ræður» er pólitísk túlkun fremur en lýsing á formlegri stöðu.",
+      "missing_context": "Heimildir lýsa Kristrúnu sem formanni og leiðtoga Samfylkingarinnar en ekki Jóhanni Páli í sömu stöðu. Hann er ráðherra og þingmaður flokksins en hefur ekki formlega leiðtogastöðu samkvæmt heimildum í gagnagrunninum.",
+      "supporting_evidence": [
+        {
+          "id": "POLITICAL-DATA-003",
+          "source_name": "Althingi — Ministers registry, session 157",
+          "source_url": "https://www.althingi.is/thingmenn/embaetti/radherrar---rikisstjorn/"
+        },
+        {
+          "id": "POL-DATA-022",
+          "source_name": "Samfylkingin — Leadership statements; RÚV; Morgunblaðið profiles",
+          "source_url": null
+        },
+        {
+          "id": "POLITICAL-DATA-008",
+          "source_name": "Althingi — Session 157 member registry",
+          "source_url": "https://www.althingi.is/thingmenn/thingflokkar/samfylkingin/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "party_positions",
+      "attribution": "quoted",
+      "article_slug": "kristrun-ytir-thorgerdi-katrinu-til-hlidar",
+      "article_title": "Kristrún ýtir Þorgerði Katrínu til hliðar",
+      "article_source": "Björn Bjarnason",
+      "article_date": "2026-05-25"
+    },
+    {
+      "claim_text": "Forsætisráðherra og Jóhann Páll Jóhannsson hafa áskilið sér rétt til að hindra að niðurstaða aðlögunarviðræðna Þorgerðar Katrínar við ESB verði borin undir þjóðina.",
+      "original_quote": "Þau áskilja sér rétt til að hindra að niðurstaða í aðlögunarviðræðum Þorgerðar Katrínar við ESB verði yfirleitt borin undir þjóðina.",
+      "verdict": "unsupported",
+      "explanation": "Engin heimild styður þá fullyrðingu að Kristrún og Jóhann Páll hafi áskilið sér rétt til að hindra að niðurstaða viðræðna verði borin undir þjóðina. <a href=\"https://www.ruv.is/\" title=\"Althingi debate records; RÚV interviews with PM Kristrún Frostadóttir, February–March 2026\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-019</a> sýnir að Kristrún hefur talað um þörf á sterku umboði og að lokasamningur þurfi sérstaka fullgildingu, en það er ekki sama og að hindra þjóðaratkvæðagreiðslu. <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T162602.html\" title=\"Alþingi — Kristrún Frostadóttir, forsætisráðherra (andsvar, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">PARTY-PARL-001</a> lýsir varúðarafstöðu Kristrúnar gagnvart auðlindum og fullveldi, ekki hindrun á þjóðaratkvæði.",
+      "missing_context": "Heimildir lýsa frekar hinu gagnstæða: <a href=\"https://www.ruv.is/\" title=\"Althingi debate records; RÚV interviews with PM Kristrún Frostadóttir, February–March 2026\" target=\"_blank\" rel=\"noopener\">PARTY-DATA-019</a> sýnir að Kristrún hefur sagt að hugsanlega þurfi aðra þjóðaratkvæðagreiðslu og SOV-DATA-022 staðfestir að ríkisstjórnin hefur lýst því yfir að hún muni virða niðurstöðu. Hugtakið «aðlögunarviðræður» er pólitískt hugtak andstæðinga ESB-aðildar — ríkisstjórnin nefnir þetta «aðildarviðræður».",
+      "supporting_evidence": [],
+      "contradicting_evidence": [
+        {
+          "id": "PARTY-DATA-019",
+          "source_name": "Althingi debate records; RÚV interviews with PM Kristrún Frostadóttir, February–March 2026",
+          "source_url": "https://www.ruv.is/"
+        },
+        {
+          "id": "PARTY-PARL-001",
+          "source_name": "Alþingi — Kristrún Frostadóttir, forsætisráðherra (andsvar, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T162602.html"
+        },
+        {
+          "id": "SOV-DATA-022",
+          "source_name": "Icelandic Constitutional Law scholars; 2012 referendum precedent; Danish referendum practice",
+          "source_url": null
+        }
+      ],
+      "category": "sovereignty",
+      "attribution": "paraphrased",
+      "article_slug": "kristrun-ytir-thorgerdi-katrinu-til-hlidar",
+      "article_title": "Kristrún ýtir Þorgerði Katrínu til hliðar",
+      "article_source": "Björn Bjarnason",
+      "article_date": "2026-05-25"
     }
   ],
   "articles": [
@@ -285,6 +348,17 @@
       "date": "2026-05-24",
       "claim_count": 1,
       "attribution_types": [
+        "quoted"
+      ]
+    },
+    {
+      "slug": "kristrun-ytir-thorgerdi-katrinu-til-hlidar",
+      "title": "Kristrún ýtir Þorgerði Katrínu til hliðar",
+      "source": "Björn Bjarnason",
+      "date": "2026-05-25",
+      "claim_count": 2,
+      "attribution_types": [
+        "paraphrased",
         "quoted"
       ]
     }

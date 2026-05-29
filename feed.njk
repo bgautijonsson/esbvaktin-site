@@ -13,7 +13,7 @@ eleventyExcludeFromCollections: true
   <author>
     <name>ESB Vaktin</name>
   </author>
-  {%- for item in collections.reports | reverse %}
+  {%- for item in collections.reports | sort(true, false, 'data.report.analysis_date') %}
   {%- if loop.index <= 20 %}
   <entry>
     <title>{{ item.data.report.article_title }}</title>
