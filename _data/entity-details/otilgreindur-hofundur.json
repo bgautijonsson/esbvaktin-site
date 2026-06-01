@@ -6,14 +6,14 @@
   "role": "sagnfræðingur og alþjóðastjórnmálafræðingur",
   "party": null,
   "stance": "insufficient_data",
-  "stance_score": -1.0,
-  "credibility": 0.64,
+  "stance_score": -0.5,
+  "credibility": 0.68,
   "attribution_counts": {
-    "asserted": 22
+    "asserted": 28
   },
   "althingi_stats": null,
   "scorecard": {
-    "supported": 6,
+    "supported": 8,
     "partially_supported": 11,
     "misleading": 1
   },
@@ -508,6 +508,73 @@
       "article_title": "Valdið yfir sjávarútvegsmálunum færi til Brussel",
       "article_source": "Viðskiptablaðið",
       "article_date": "2026-03-27"
+    },
+    {
+      "claim_text": "Hár launakostnaður skýrir ekki nema að hluta hvers vegna verðlag á helstu vörum og þjónustu er svo hátt miðað við samanburðarlönd.",
+      "original_quote": "í greiningu Visku segir efnislega að hár launakostnaður skýri ekki nema að hluta hvers vegna verðlag á helstu vörum og þjónustu sé svo hátt miðað við samanburðarlönd",
+      "verdict": "supported",
+      "explanation": "Heimildir staðfesta að launakostnaður sé aðeins einn af mörgum þáttum að baki háu verðlagi. <a href=\"https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/\" title=\"Eurostat — Comparative price levels of consumer goods and services (prc_ppp_ind)\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-003</a> telur upp smæð heimamarkaðar, há laun, flutningskostnað, skatta og takmarkaða samkeppni sem samverkandi orsakir, og <a href=\"https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/default/table?lang=en\" title=\"Eurostat — Comparative price levels (prc_ppp_ind)\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-001</a> nefnir flutningskostnað, tollvernd og virðisaukaskatt. <a href=\"https://www.oecd.org/en/data/dashboards/oecd-dashboard-of-productivity-indicators.html\" title=\"OECD — Compendium of Productivity Indicators 2025; Eurostat — Labour productivity per hour worked\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-011</a> sýnir auk þess að framleiðni á vinnustund á Íslandi sé 10–15% undir meðaltali ESB-15, svo há laun endurspeglast ekki að fullu í verðmæti á klukkustund.",
+      "missing_context": "Fyrirvarar í <a href=\"https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/\" title=\"Eurostat — Comparative price levels of consumer goods and services (prc_ppp_ind)\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-003</a> árétta að ESB-aðild myndi fjarlægja suma verðþætti (landbúnaðartolla, upprunareglur) en ekki útrýma byggingarþáttum hás verðlags. Heimildir mæla ekki nákvæmlega hve stór hluti verðmunarins stafar af launum gagnvart öðrum þáttum, svo nákvæm vigtun liggur ekki fyrir.",
+      "supporting_evidence": [
+        {
+          "id": "TRADE-COMP-003",
+          "source_name": "Eurostat — Comparative price levels of consumer goods and services (prc_ppp_ind)",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/"
+        },
+        {
+          "id": "AGRI-DATA-001",
+          "source_name": "Eurostat — Comparative price levels (prc_ppp_ind)",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/default/table?lang=en"
+        },
+        {
+          "id": "LABOUR-DATA-011",
+          "source_name": "OECD — Compendium of Productivity Indicators 2025; Eurostat — Labour productivity per hour worked",
+          "source_url": "https://www.oecd.org/en/data/dashboards/oecd-dashboard-of-productivity-indicators.html"
+        },
+        {
+          "id": "AGRI-DATA-005",
+          "source_name": "Eurostat — Purchasing power parities, comparative price levels (prc_ppp_ind)",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/default/table"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "trade",
+      "attribution": "asserted",
+      "article_slug": "verdbolgan-og-stadreyndir-um-fakeppni",
+      "article_title": "Verðbólgan og staðreyndir um fákeppni",
+      "article_source": "Viðskiptablaðið",
+      "article_date": "2026-05-31"
+    },
+    {
+      "claim_text": "Tollar á innflutningi matvöru eru á forræði stjórnvalda.",
+      "original_quote": "Tollar á innflutningi matvöru eru auðvitað á forræði stjórnvalda, eins og margt annað sem hefur áhrif á verðlag dagvöru hér á landi.",
+      "verdict": "supported",
+      "explanation": "Heimildir staðfesta að Ísland ákveði eigin tolla á innfluttar landbúnaðarvörur. <a href=\"https://www.consilium.europa.eu/en/policies/eu-tariffs-explained/\" title=\"EU Council / European Commission Access2Markets\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-040</a> segir skýrt að EES-ríki utan tollabandalags ESB setji sjálf ytri tolla sína gagnvart þriðju ríkjum, og TRADE-DATA-021 sýnir að Ísland leggi háa tolla á matvöru (30% á mjólkurvörur, 40–80% á kjöt) sem innlend stjórnvöld ákveða. Þetta er rétt á meðan Ísland stendur utan ESB.",
+      "missing_context": "Forræðið helst aðeins utan ESB-aðildar. TRADE-DATA-021 og <a href=\"https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf\" title=\"EEA Agreement — Protocol 3 on trade in processed agricultural products\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-002</a> árétta að við ESB-aðild myndu þessir tollar víkja fyrir sameiginlegri ytri tollskrá ESB og forræði stjórnvalda yfir matvælatollum þar með falla niður. Fullyrðingin lýsir núverandi réttarstöðu en ekki stöðu eftir hugsanlega aðild.",
+      "supporting_evidence": [
+        {
+          "id": "TRADE-DATA-040",
+          "source_name": "EU Council / European Commission Access2Markets",
+          "source_url": "https://www.consilium.europa.eu/en/policies/eu-tariffs-explained/"
+        },
+        {
+          "id": "TRADE-DATA-021",
+          "source_name": "WTO — Trade Policy Review: Iceland 2024; Iceland-China FTA text",
+          "source_url": null
+        },
+        {
+          "id": "TRADE-DATA-002",
+          "source_name": "EEA Agreement — Protocol 3 on trade in processed agricultural products",
+          "source_url": "https://www.efta.int/sites/default/files/documents/legal-texts/eea/the-eea-agreement/Protocols%20to%20the%20Agreement/protocol3.pdf"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "trade",
+      "attribution": "asserted",
+      "article_slug": "verdbolgan-og-stadreyndir-um-fakeppni",
+      "article_title": "Verðbólgan og staðreyndir um fákeppni",
+      "article_source": "Viðskiptablaðið",
+      "article_date": "2026-05-31"
     }
   ],
   "articles": [
@@ -517,6 +584,16 @@
       "source": "Viðskiptablaðið",
       "date": "2026-03-27",
       "claim_count": 18,
+      "attribution_types": [
+        "asserted"
+      ]
+    },
+    {
+      "slug": "verdbolgan-og-stadreyndir-um-fakeppni",
+      "title": "Verðbólgan og staðreyndir um fákeppni",
+      "source": "Viðskiptablaðið",
+      "date": "2026-05-31",
+      "claim_count": 2,
       "attribution_types": [
         "asserted"
       ]

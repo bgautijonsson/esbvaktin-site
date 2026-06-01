@@ -9,13 +9,14 @@
   "stance_score": 0.0,
   "credibility": 0.5,
   "attribution_counts": {
+    "asserted": 2,
     "quoted": 3,
-    "mentioned": 12
+    "mentioned": 13
   },
   "althingi_stats": null,
   "scorecard": {
     "unverifiable": 1,
-    "partially_supported": 2
+    "partially_supported": 4
   },
   "claims": [
     {
@@ -106,6 +107,69 @@
       "article_title": "Draumaheimur utanríkisráðherra",
       "article_source": "Bjorn Bjarnason",
       "article_date": "2026-03-24"
+    },
+    {
+      "claim_text": "Die Welt og Politico halda því fram að fyrri stækkunarbylgjur ESB hafi að miklu leyti verið knúnar áfram af efnahagslegum hvötum umsóknarríkjanna.",
+      "original_quote": "Í greininni er því haldið fram að fyrri stækkunarbylgjur Evrópusambandsins hafi að miklu leyti verið knúnar áfram af efnahagslegum hvötum umsóknarríkjanna.",
+      "verdict": "partially_supported",
+      "explanation": "Efnislega er staðhæfingin studd að hluta. <a href=\"https://ec.europa.eu/eurostat/databrowser/view/sdg_10_10/default/table\" title=\"Eurostat GDP per capita in PPS; European Commission Enlargement Reviews\" target=\"_blank\" rel=\"noopener\">PREC-DATA-023</a> sýnir mikla efnahagslega samleitni og fjárfestingu í ríkjum sem gengu í ESB 2004, og <a href=\"https://www.evropuvefur.is/svar.php?id=88602\" title=\"Evropuvefur - Margret Einarsdottir, \"Copenhagen criteria and Iceland's accession context\" (professor, Reykjavik University Law Faculty, 2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-048</a> lýsir Kaupmannahafnarviðmiðunum sem mótuðust í samhengi austurstækkunarinnar þegar fyrrum austantjaldsríki sóttust eftir aðild. Efnahagslegir hvatar voru því ríkur þáttur. Heimildir draga þó fram að stækkun réðst einnig af lýðræðis-, stofnana- og öryggissjónarmiðum, og sjálf Die Welt/Politico-greinin er ekki í grunninum.",
+      "missing_context": "<a href=\"https://www.evropuvefur.is/svar.php?id=88602\" title=\"Evropuvefur - Margret Einarsdottir, \"Copenhagen criteria and Iceland's accession context\" (professor, Reykjavik University Law Faculty, 2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-048</a> sýnir að Kaupmannahafnarviðmiðin lögðu jafna áherslu á stöðug lýðræðisleg stofnanaverk og virkt markaðshagkerfi — stækkun snerist ekki eingöngu um efnahagslega hvata umsóknarríkjanna. Orðin «að miklu leyti» einfalda fjölþætta drifkrafta sögulegrar stækkunar.",
+      "supporting_evidence": [
+        {
+          "id": "PREC-DATA-023",
+          "source_name": "Eurostat GDP per capita in PPS; European Commission Enlargement Reviews",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/sdg_10_10/default/table"
+        },
+        {
+          "id": "PREC-DATA-048",
+          "source_name": "Evropuvefur - Margret Einarsdottir, \"Copenhagen criteria and Iceland's accession context\" (professor, Reykjavik University Law Faculty, 2026)",
+          "source_url": "https://www.evropuvefur.is/svar.php?id=88602"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "PREC-DATA-048",
+          "source_name": "Evropuvefur - Margret Einarsdottir, \"Copenhagen criteria and Iceland's accession context\" (professor, Reykjavik University Law Faculty, 2026)",
+          "source_url": "https://www.evropuvefur.is/svar.php?id=88602"
+        }
+      ],
+      "category": "precedents",
+      "attribution": "asserted",
+      "article_slug": "kristrun-og-thorgerdur-segja-graenlandsdeiluna-hafa-ahrif-a-esb-umraeduna",
+      "article_title": "Kristrún og Þorgerður segja Grænlandsdeiluna hafa áhrif á ESB-umræðuna",
+      "article_source": "Nútíminn",
+      "article_date": "2026-05-31"
+    },
+    {
+      "claim_text": "Die Welt og Politico halda því fram að áherslur ESB við stækkun hafi breyst og öryggis- og varnarmál orðið stærri þáttur í umræðunni.",
+      "original_quote": "Nú hafi áherslurnar breyst og öryggis- og varnarmál orðið stærri þáttur í umræðunni.",
+      "verdict": "partially_supported",
+      "explanation": "Breyttar áherslur ESB í átt að öryggis- og varnarmálum eru studdar af heimildum. <a href=\"https://europa.eu/eurobarometer/\" title=\"European Commission — Standard Eurobarometer 103, Spring 2025\" target=\"_blank\" rel=\"noopener\">PREC-DATA-022</a> sýnir aukna dýpkun samstarfs í sameiginlegum varnarinnkaupum og <a href=\"https://www.consilium.europa.eu/en/\" title=\"Press conference statements — Donald Tusk, PM of Poland (2025–2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-011</a> lýsir endurstillingu öryggisstefnu vegna innrásar Rússa í Úkraínu og stefnu Bandaríkjanna. <a href=\"https://www.eeas.europa.eu/eeas/eu-iceland-joint-press-release-signature-security-and-defence-partnership_en\" title=\"EEAS Joint Press Release\" target=\"_blank\" rel=\"noopener\">SOV-DATA-025</a> staðfestir varnarsamstarfssamning ESB og Íslands frá mars 2026. Fullyrðingin er þó almenn og sjálf greinin er ekki í gagnagrunninum.",
+      "missing_context": "Fyrra mat varaði réttilega við að fullyrðingin er svo víð að hún sé nánast óhrekjanleg. Heimildir staðfesta að öryggismál hafa fengið aukið vægi, en hvernig það á sérstaklega við Ísland og hvort það styrki rök með eða á móti aðild er umdeilt.",
+      "supporting_evidence": [
+        {
+          "id": "PREC-DATA-022",
+          "source_name": "European Commission — Standard Eurobarometer 103, Spring 2025",
+          "source_url": "https://europa.eu/eurobarometer/"
+        },
+        {
+          "id": "PREC-DATA-011",
+          "source_name": "Press conference statements — Donald Tusk, PM of Poland (2025–2026)",
+          "source_url": "https://www.consilium.europa.eu/en/"
+        },
+        {
+          "id": "SOV-DATA-025",
+          "source_name": "EEAS Joint Press Release",
+          "source_url": "https://www.eeas.europa.eu/eeas/eu-iceland-joint-press-release-signature-security-and-defence-partnership_en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "precedents",
+      "attribution": "asserted",
+      "article_slug": "kristrun-og-thorgerdur-segja-graenlandsdeiluna-hafa-ahrif-a-esb-umraeduna",
+      "article_title": "Kristrún og Þorgerður segja Grænlandsdeiluna hafa áhrif á ESB-umræðuna",
+      "article_source": "Nútíminn",
+      "article_date": "2026-05-31"
     }
   ],
   "articles": [
@@ -137,6 +201,16 @@
       "claim_count": 1,
       "attribution_types": [
         "quoted"
+      ]
+    },
+    {
+      "slug": "kristrun-og-thorgerdur-segja-graenlandsdeiluna-hafa-ahrif-a-esb-umraeduna",
+      "title": "Kristrún og Þorgerður segja Grænlandsdeiluna hafa áhrif á ESB-umræðuna",
+      "source": "Nútíminn",
+      "date": "2026-05-31",
+      "claim_count": 2,
+      "attribution_types": [
+        "asserted"
       ]
     }
   ]

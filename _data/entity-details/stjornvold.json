@@ -2,17 +2,90 @@
   "slug": "stjornvold",
   "name": "Stjórnvöld",
   "type": "institution",
-  "description": "Stofnun",
+  "description": "Stofnun — blandað viðhorf til ESB-aðildar.",
   "role": "stjórn",
   "party": null,
-  "stance": "insufficient_data",
-  "stance_score": 0.5,
-  "credibility": 0.5,
+  "stance": "mixed",
+  "stance_score": 0.33,
+  "credibility": 0.67,
   "attribution_counts": {
-    "paraphrased": 2
+    "paraphrased": 6,
+    "mentioned": 1
   },
   "althingi_stats": null,
-  "scorecard": {},
-  "claims": [],
-  "articles": []
+  "scorecard": {
+    "partially_supported": 1,
+    "supported": 1
+  },
+  "claims": [
+    {
+      "claim_text": "Samkvæmt skýrslunni hafa laun á Íslandi hækkað hraðar en framleiðni.",
+      "original_quote": "laun hér á landi hafi hækkað hraðar en framleiðni",
+      "verdict": "partially_supported",
+      "explanation": "Heimildirnar styðja við þá lýsingu að framleiðni á Íslandi sé lægri en í nágrannaríkjum: <a href=\"https://www.oecd.org/en/data/dashboards/oecd-dashboard-of-productivity-indicators.html\" title=\"OECD — Compendium of Productivity Indicators 2025; Eurostat — Labour productivity per hour worked\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-011</a> sýnir að verg landsframleiðsla á hverja vinnustund er um 10-15% undir meðaltali ESB-15 og fjórðungi lægri en í Danmörku og Noregi, og að há landsframleiðsla á mann náist að hluta með lengri vinnutíma fremur en meiri framleiðni á klukkustund. <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Samfelag/Samfelag__launogtekjur__1_laun__1_laun/VIN02001.px\" title=\"Hagstofa Íslands — Wages and income; Eurostat — Structure of Earnings Survey\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-003</a> staðfestir hóflegan raunlaunavöxt frá 2020 þegar verðbólga hefur étið upp nafnlaunahækkanir. Hins vegar mæla þessar heimildir ekki beinan samanburð á vexti launa og framleiðni yfir tíma, sem er kjarni fullyrðingarinnar.",
+      "missing_context": "Heimildirnar lýsa lágri framleiðni og hóflegum raunlaunavexti hvorri í sínu lagi en bjóða ekki bein tímaraðargögn um launaþróun á móti framleiðniþróun. Fullyrðingin vísar í skýrsluna sjálfa, sem ekki er í grunninum. <a href=\"https://www.oecd.org/en/data/dashboards/oecd-dashboard-of-productivity-indicators.html\" title=\"OECD — Compendium of Productivity Indicators 2025; Eurostat — Labour productivity per hour worked\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-011</a> minnir á að atvinnuvegasamsetning Íslands (stór sjávarútvegs- og ferðaþjónustugeiri) lækkar framleiðni á klukkustund af náttúrulegum orsökum og að samanburður á kaupmáttarjöfnuðu verði sé næmur fyrir aðferðafræði.",
+      "supporting_evidence": [
+        {
+          "id": "LABOUR-DATA-011",
+          "source_name": "OECD — Compendium of Productivity Indicators 2025; Eurostat — Labour productivity per hour worked",
+          "source_url": "https://www.oecd.org/en/data/dashboards/oecd-dashboard-of-productivity-indicators.html"
+        },
+        {
+          "id": "LABOUR-DATA-003",
+          "source_name": "Hagstofa Íslands — Wages and income; Eurostat — Structure of Earnings Survey",
+          "source_url": "https://px.hagstofa.is/pxen/pxweb/en/Samfelag/Samfelag__launogtekjur__1_laun__1_laun/VIN02001.px"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "labour",
+      "attribution": "paraphrased",
+      "article_slug": "evran-kemur-ekki-ein-dadi-mar",
+      "article_title": "Evran kemur ekki ein, Daði Már",
+      "article_source": "Heimssýn",
+      "article_date": "2026-05-31"
+    },
+    {
+      "claim_text": "Samkvæmt skýrslunni myndi Ísland missa möguleikann á að laga samkeppnisstöðu með gengisbreytingum við upptöku evru.",
+      "original_quote": "með upptöku evru hyrfi möguleikinn á að laga samkeppnisstöðu með gengisbreytingum",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> staðfestir beint að upptaka evru myndi færa peningastefnuvaldið frá Seðlabanka Íslands til Seðlabanka Evrópu og að Ísland missti getuna til að stýra gengi sínu sjálfstætt. <a href=\"https://www.visindavefur.is/svar.php?id=87971\" title=\"Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (March 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-011</a> og <a href=\"https://www.visindavefur.is/svar.php?id=60906\" title=\"Vísindavefurinn — Jón Þór Sturluson, Associate Professor of Economics, Reykjavík University School of Business (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-015</a> styðja sömu rökfærslu: sjálfstæð gengisaðlögun hverfur við evruupptöku. Þetta er rótgróin og almennt viðurkennd niðurstaða í hagfræði sem margar trúverðugar heimildir eru sammála um.",
+      "missing_context": "<a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> bendir á að um sé að ræða málamiðlun: sumir hagfræðingar telja að ávinningur af gengisstöðugleika undir evru gæti vegið þyngra en tapið á sjálfstæðri peningastefnu fyrir lítið og opið hagkerfi, en aðrir telja sveigjanleika krónunnar mikilvægan aðlögunarbúnað. Sem spáfullyrðing er hámark öryggis 0,8.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-LEGAL-005",
+          "source_name": "Central Bank of Iceland — Monetary policy framework",
+          "source_url": "https://sedlabanki.is/peningastefna/"
+        },
+        {
+          "id": "CURR-DATA-011",
+          "source_name": "Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (March 2026)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=87971"
+        },
+        {
+          "id": "CURR-DATA-015",
+          "source_name": "Vísindavefurinn — Jón Þór Sturluson, Associate Professor of Economics, Reykjavík University School of Business (2012)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=60906"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "currency",
+      "attribution": "paraphrased",
+      "article_slug": "evran-kemur-ekki-ein-dadi-mar",
+      "article_title": "Evran kemur ekki ein, Daði Már",
+      "article_source": "Heimssýn",
+      "article_date": "2026-05-31"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "evran-kemur-ekki-ein-dadi-mar",
+      "title": "Evran kemur ekki ein, Daði Már",
+      "source": "Heimssýn",
+      "date": "2026-05-31",
+      "claim_count": 2,
+      "attribution_types": [
+        "paraphrased"
+      ]
+    }
+  ]
 }

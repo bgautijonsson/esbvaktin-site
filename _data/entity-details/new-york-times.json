@@ -7,12 +7,153 @@
   "party": null,
   "stance": "insufficient_data",
   "stance_score": 0.0,
-  "credibility": null,
+  "credibility": 0.75,
   "attribution_counts": {
+    "asserted": 4,
     "mentioned": 3
   },
   "althingi_stats": null,
-  "scorecard": {},
-  "claims": [],
-  "articles": []
+  "scorecard": {
+    "partially_supported": 2,
+    "supported": 2
+  },
+  "claims": [
+    {
+      "claim_text": "New York Times skrifar að áhugi á ESB hafi aukist á Íslandi samhliða aukinni umræðu um öryggismál og stöðu norðurslóða.",
+      "original_quote": "Í fréttinni er því lýst hvernig áhugi á Evrópusambandinu hafi aukist á Íslandi á sama tíma og umræða um öryggismál og stöðu norðurslóða hefur færst í aukana.",
+      "verdict": "partially_supported",
+      "explanation": "Sá efnislegi kjarni að stuðningur við ESB-aðild hafi aukist er vel studdur: <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — EU membership polling\" target=\"_blank\" rel=\"noopener\">POLL-DATA-001</a> og <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — EU membership polling series 2009–2026; Capacent/MMR — supplementary polls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-004</a> sýna að fylgi reis úr um 30% árið 2022 í um 45% undir lok árs 2025. <a href=\"https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2026/04/15/Islendingar-vilja-raekta-althjodasamstarf-/\" title=\"Stjórnarráðið — „Íslendingar vilja rækta alþjóðasamstarf'\" target=\"_blank\" rel=\"noopener\">POLL-DATA-027</a> staðfestir jafnframt vaxandi áhyggjur almennings af alþjóðamálum og öryggi. Fullyrðingin er þó endursögn á efni New York Times-greinar sem ekki er í grunninum, og orsakatenging milli öryggisumræðu og ESB-áhuga er túlkun fremur en mæld staðreynd.",
+      "missing_context": "<a href=\"https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2026/04/15/Islendingar-vilja-raekta-althjodasamstarf-/\" title=\"Stjórnarráðið — „Íslendingar vilja rækta alþjóðasamstarf'\" target=\"_blank\" rel=\"noopener\">POLL-DATA-027</a> mælir viðhorf til alþjóðamála almennt, ekki ESB-stuðning sérstaklega, og varar við að vaxandi áhyggjur samrýmist mörgum stefnuviðbrögðum. <a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — EU polls cross-referenced with Hagstofa consumer confidence index\" target=\"_blank\" rel=\"noopener\">POLL-DATA-009</a> minnir á að ESB-stuðningur fylgir efnahagslegri óvissu, svo öryggisumræðan ein skýrir ekki þróunina.",
+      "supporting_evidence": [
+        {
+          "id": "POLL-DATA-001",
+          "source_name": "Gallup Ísland — EU membership polling",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+        },
+        {
+          "id": "POLL-DATA-004",
+          "source_name": "Gallup Ísland — EU membership polling series 2009–2026; Capacent/MMR — supplementary polls",
+          "source_url": "https://www.gallup.is/nidurstodur/thjodarpuls/"
+        },
+        {
+          "id": "POLL-DATA-027",
+          "source_name": "Stjórnarráðið — „Íslendingar vilja rækta alþjóðasamstarf'",
+          "source_url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2026/04/15/Islendingar-vilja-raekta-althjodasamstarf-/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "polling",
+      "attribution": "asserted",
+      "article_slug": "kristrun-og-thorgerdur-segja-graenlandsdeiluna-hafa-ahrif-a-esb-umraeduna",
+      "article_title": "Kristrún og Þorgerður segja Grænlandsdeiluna hafa áhrif á ESB-umræðuna",
+      "article_source": "Nútíminn",
+      "article_date": "2026-05-31"
+    },
+    {
+      "claim_text": "New York Times heldur því fram að áhugi Íslands á ESB sé gagnkvæmur og að Evrópusambandið líti til Íslands.",
+      "original_quote": "Nierenberg skrifar að áhuginn sé gagnkvæmur og að Ísland sé eftirsóknarvert fyrir Evrópusambandið",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> staðfestir að Ísland hefur strategískt gildi fyrir ESB — vegna legu á Norður-Atlantshafi og norðurslóðum, fiskveiðiauðlinda og þess pólitíska merkis að bæta velmegandi norrænu lýðræðisríki við sambandið. <a href=\"https://www.europarl.europa.eu/thinktank/en/document/EPRS_BRI(2026)782591\" title=\"IMF World Economic Outlook; Eurostat; EPRS Briefing on EU-Iceland Relations\" target=\"_blank\" rel=\"noopener\">PREC-DATA-025</a> bætir við að Ísland yrði auðugasta umsóknarríki sögunnar. Þó dregur <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> skýrt fram að lýsing um að ESB «vilji» Ísland virkt ofmeti stöðuna: sambandið myndi taka Íslandi fagnandi en sækist ekki virkt eftir aðild þess.",
+      "missing_context": "Samkvæmt fyrirvara <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> hafa stækkunaráherslur ESB færst til Vestur-Balkanskaga og Úkraínu, og aðild Íslands hefur aldrei verið forgangsmál sambandsins. Orðið «gagnkvæmur» gefur til kynna jafna ásókn beggja, sem heimildir styðja ekki að fullu.",
+      "supporting_evidence": [
+        {
+          "id": "TRADE-DATA-022",
+          "source_name": "European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "PREC-DATA-025",
+          "source_name": "IMF World Economic Outlook; Eurostat; EPRS Briefing on EU-Iceland Relations",
+          "source_url": "https://www.europarl.europa.eu/thinktank/en/document/EPRS_BRI(2026)782591"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "TRADE-DATA-022",
+          "source_name": "European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        }
+      ],
+      "category": "other",
+      "attribution": "asserted",
+      "article_slug": "kristrun-og-thorgerdur-segja-graenlandsdeiluna-hafa-ahrif-a-esb-umraeduna",
+      "article_title": "Kristrún og Þorgerður segja Grænlandsdeiluna hafa áhrif á ESB-umræðuna",
+      "article_source": "Nútíminn",
+      "article_date": "2026-05-31"
+    },
+    {
+      "claim_text": "New York Times lýsir Íslandi sem eftirsóknarverðu fyrir Evrópusambandið vegna legu landsins á Norður-Atlantshafi.",
+      "original_quote": "Ísland sé eftirsóknarvert fyrir Evrópusambandið vegna legu landsins á Norður-Atlantshafi",
+      "verdict": "supported",
+      "explanation": "Lega Íslands sem aðdráttarafl fyrir ESB er beinlínis studd. <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> tilgreinir staðsetningu landsins á Norður-Atlantshafi og norðurslóðum sem einn af strategísku þáttunum sem gera Ísland áhugavert fyrir sambandið, samhliða fiskveiðiauðlindum. <a href=\"https://www.eeas.europa.eu/eeas/eu-arctic-policy_en\" title=\"European Commission — EU Arctic Policy, Joint Communication JOIN(2021) 27\" target=\"_blank\" rel=\"noopener\">SOV-DATA-001</a> staðfestir mikilvægi GIUK-hliðsins og að hernaðarlegt vægi Íslands hafi aukist eftir 2022.",
+      "missing_context": "<a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> áréttar að þrátt fyrir strategískt gildi legunnar hafi aðild Íslands aldrei verið forgangsmál ESB og efnahagsleg áhrif yrðu lítil sökum smæðar landsins.",
+      "supporting_evidence": [
+        {
+          "id": "TRADE-DATA-022",
+          "source_name": "European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications",
+          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+        },
+        {
+          "id": "SOV-DATA-001",
+          "source_name": "European Commission — EU Arctic Policy, Joint Communication JOIN(2021) 27",
+          "source_url": "https://www.eeas.europa.eu/eeas/eu-arctic-policy_en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "sovereignty",
+      "attribution": "asserted",
+      "article_slug": "kristrun-og-thorgerdur-segja-graenlandsdeiluna-hafa-ahrif-a-esb-umraeduna",
+      "article_title": "Kristrún og Þorgerður segja Grænlandsdeiluna hafa áhrif á ESB-umræðuna",
+      "article_source": "Nútíminn",
+      "article_date": "2026-05-31"
+    },
+    {
+      "claim_text": "New York Times lýsir Íslandi sem rík og vel statt samfélag.",
+      "original_quote": "auk þess sem Ísland sé ríkt og vel statt samfélag",
+      "verdict": "supported",
+      "explanation": "Lýsingin á Íslandi sem auðugu og vel stæðu samfélagi er rækilega studd gögnum. <a href=\"https://hdr.undp.org/data-center/human-development-index\" title=\"UNDP Human Development Report 2024; OECD Better Life Index\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-030</a> sýnir að Ísland var í 3. sæti á þróunarvísitölu SÞ 2024, og <a href=\"https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD\" title=\"World Bank — World Development Indicators\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-012</a> staðfestir landsframleiðslu á mann (PPP) um 84.300 dali — næsthæst meðal Norðurlanda. <a href=\"https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/\" title=\"Eurostat — Purchasing power parities (prc_ppp_ind)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-006</a> og <a href=\"https://www.imf.org/en/Publications/WEO\" title=\"IMF World Economic Outlook Database — October 2024\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-002</a> staðfesta enn fremur að Ísland er vel yfir meðaltali ESB.",
+      "missing_context": "Há landsframleiðsla á mann endurspeglar að hluta hátt verðlag (<a href=\"https://cb.is/financial-stability/\" title=\"Seðlabanki Íslands — Financial Stability Report; Hagstofa Íslands — Housing price index\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-001</a> sýnir dýran húsnæðismarkað) og orkufrekan áliðnað í erlendri eigu. Vinnuframleiðni á klukkustund er undir meðaltali ESB-15 samkvæmt <a href=\"https://www.oecd.org/en/data/dashboards/oecd-dashboard-of-productivity-indicators.html\" title=\"OECD — Compendium of Productivity Indicators 2025; Eurostat — Labour productivity per hour worked\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-011</a>, svo velsældin byggist að hluta á löngum vinnutíma.",
+      "supporting_evidence": [
+        {
+          "id": "TRADE-DATA-030",
+          "source_name": "UNDP Human Development Report 2024; OECD Better Life Index",
+          "source_url": "https://hdr.undp.org/data-center/human-development-index"
+        },
+        {
+          "id": "CURRENCY-DATA-012",
+          "source_name": "World Bank — World Development Indicators",
+          "source_url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD"
+        },
+        {
+          "id": "CURRENCY-DATA-006",
+          "source_name": "Eurostat — Purchasing power parities (prc_ppp_ind)",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/"
+        },
+        {
+          "id": "TRADE-COMP-002",
+          "source_name": "IMF World Economic Outlook Database — October 2024",
+          "source_url": "https://www.imf.org/en/Publications/WEO"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "other",
+      "attribution": "asserted",
+      "article_slug": "kristrun-og-thorgerdur-segja-graenlandsdeiluna-hafa-ahrif-a-esb-umraeduna",
+      "article_title": "Kristrún og Þorgerður segja Grænlandsdeiluna hafa áhrif á ESB-umræðuna",
+      "article_source": "Nútíminn",
+      "article_date": "2026-05-31"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "kristrun-og-thorgerdur-segja-graenlandsdeiluna-hafa-ahrif-a-esb-umraeduna",
+      "title": "Kristrún og Þorgerður segja Grænlandsdeiluna hafa áhrif á ESB-umræðuna",
+      "source": "Nútíminn",
+      "date": "2026-05-31",
+      "claim_count": 4,
+      "attribution_types": [
+        "asserted"
+      ]
+    }
+  ]
 }

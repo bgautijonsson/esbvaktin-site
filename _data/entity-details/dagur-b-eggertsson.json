@@ -6,25 +6,25 @@
   "role": "þingmaður",
   "party": "Samfylkingin",
   "stance": "pro_eu",
-  "stance_score": 0.69,
+  "stance_score": 0.59,
   "credibility": 0.54,
   "attribution_counts": {
     "asserted": 20,
-    "quoted": 28,
+    "quoted": 30,
     "paraphrased": 10,
     "mentioned": 3
   },
   "althingi_stats": {
-    "speech_count": 33,
-    "total_words": 7706,
+    "speech_count": 35,
+    "total_words": 8011,
     "issues": 6,
     "first_speech": "2025-02-13",
-    "last_speech": "2026-05-21"
+    "last_speech": "2026-05-28"
   },
   "scorecard": {
     "supported": 6,
     "unverifiable": 4,
-    "partially_supported": 33,
+    "partially_supported": 35,
     "misleading": 2,
     "unsupported": 1
   },
@@ -1394,6 +1394,63 @@
       "article_title": "Kristrún ýtir Þorgerði Katrínu til hliðar",
       "article_source": "Björn Bjarnason",
       "article_date": "2026-05-25"
+    },
+    {
+      "claim_text": "Stærstu sjávarútvegsfyrirtæki landsins hafa fjárfest í minni sjávarútvegsfyrirtækjum og alls óskyldum atvinnurekstri á síðastliðnum árum.",
+      "original_quote": "Stærstu sjávarútvegsfyrirtæki landsins hafa fjárfest gríðarlega í minni sjávarútvegsfyrirtækjum og alls óskyldum atvinnurekstri á síðastliðnum árum.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://www.fiskistofa.is/\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> staðfestir kjarna fullyrðingarinnar: stærri útgerðir hafa fært sig út í fasteignir, ferðaþjónustu og fjárfestingar, og ITQ-kerfið hefur leitt til verulegrar samþjöppunar þar sem fá fyrirtæki ráða yfir meirihluta aflaheimilda. Heimildin sundurliðar hins vegar ekki umfang þessara fjárfestinga, svo orðið „gríðarlega“ verður ekki magnbundið. Fjárfesting stærri fyrirtækja í minni útgerðum fellur undir lýsingu á samþjöppun heimildanna en er ekki tölulega staðfest.",
+      "missing_context": "<a href=\"https://www.fiskistofa.is/\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> tekur fram að eignarhaldsuppbygging greinarinnar sé flókin — sum fyrirtæki eru skráð á markað, önnur í eigu fjölskyldna — og að lýsingin á greininni sem „fárra auðugra fjölskyldna“ sé pólitískt hlaðin. Magn fjárfestinga í óskyldum rekstri kemur ekki fram í tölum, svo styrkleikaorðið „gríðarlega“ er ekki sannreynanlegt út frá heimildum.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-DATA-024",
+          "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
+          "source_url": "https://www.fiskistofa.is/"
+        },
+        {
+          "id": "FISH-DATA-003",
+          "source_name": "Statistics Iceland — National accounts by activity",
+          "source_url": "https://www.statice.is/statistics/economy/national-accounts/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "fisheries",
+      "attribution": "quoted",
+      "article_slug": "schumpeter-og-samfylkingin",
+      "article_title": "Schumpeter og Samfylkingin",
+      "article_source": "Viðskiptablaðið",
+      "article_date": "2026-05-31"
+    },
+    {
+      "claim_text": "Samþjöppun sjávarútvegsfyrirtækja er gríðarleg og Ísland hefur lengi verið land fákeppni.",
+      "original_quote": "Samþjöppunin er orðin gríðarleg. Ísland hefur lengi verið land fákeppni.",
+      "verdict": "partially_supported",
+      "explanation": "Samþjöppun í sjávarútvegi er vel studd: <a href=\"https://www.fiskistofa.is/\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> lýsir greininni sem mjög samþjappaðri þar sem fá fyrirtæki ráða yfir meirihluta aflaheimilda eftir innleiðingu ITQ-kerfisins, og POL-DATA-014 staðfestir að LÍÚ eitt fari með um 70% kvótans miðað við magn. Fyrra mat fullyrðingabanka komst að sömu niðurstöðu (partially_supported, öryggi 0,80) og ég fellst á hana. Almenna fullyrðingin um að Ísland hafi „lengi verið land fákeppni“ nær hins vegar út fyrir sjávarútveg og er ekki staðfest fyrir hagkerfið í heild — heimildirnar fjalla aðeins um samþjöppun innan greinarinnar.",
+      "missing_context": "<a href=\"https://www.fiskistofa.is/\" title=\"Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur\" target=\"_blank\" rel=\"noopener\">FISH-DATA-024</a> áréttar að einkenning greinarinnar sem „fárra auðugra fjölskyldna“ sé pólitískt hlaðin og eignarhald flóknara en svo. <a href=\"https://stecf.jrc.ec.europa.eu/\" title=\"European Commission — Scientific, Technical and Economic Committee for Fisheries (STECF); FAO — The State of World Fisheries and Aquaculture\" target=\"_blank\" rel=\"noopener\">FISH-DATA-025</a> og <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/114/the-common-fisheries-policy-origins-and-development\" title=\"European Parliament Research Service — Fisheries Ownership and Concentration in the EU\" target=\"_blank\" rel=\"noopener\">FISH-DATA-029</a> sýna að samþjöppun er ekki einsdæmi á Íslandi heldur ríkjandi víða í ESB (Holland, Spánn) þar sem fá fjölskyldufyrirtæki ráða yfir meginhluta uppsjávarkvóta. Fullyrðingin um fákeppni á öllu Íslandi ristir dýpra en sjávarútveg og krefst gagna um aðrar atvinnugreinar sem ekki liggja fyrir.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-DATA-024",
+          "source_name": "Fiskistofa — Úthlutunaryfirlit; Hagstofa Íslands — Sjávarútvegur",
+          "source_url": "https://www.fiskistofa.is/"
+        },
+        {
+          "id": "POL-DATA-014",
+          "source_name": "LÍÚ — Position paper on EU membership (2025); campaign finance declarations",
+          "source_url": null
+        },
+        {
+          "id": "FISH-DATA-025",
+          "source_name": "European Commission — Scientific, Technical and Economic Committee for Fisheries (STECF); FAO — The State of World Fisheries and Aquaculture",
+          "source_url": "https://stecf.jrc.ec.europa.eu/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "fisheries",
+      "attribution": "quoted",
+      "article_slug": "schumpeter-og-samfylkingin",
+      "article_title": "Schumpeter og Samfylkingin",
+      "article_source": "Viðskiptablaðið",
+      "article_date": "2026-05-31"
     }
   ],
   "articles": [
@@ -1489,6 +1546,16 @@
       "claim_count": 1,
       "attribution_types": [
         "paraphrased"
+      ]
+    },
+    {
+      "slug": "schumpeter-og-samfylkingin",
+      "title": "Schumpeter og Samfylkingin",
+      "source": "Viðskiptablaðið",
+      "date": "2026-05-31",
+      "claim_count": 2,
+      "attribution_types": [
+        "quoted"
       ]
     }
   ],

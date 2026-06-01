@@ -7,13 +7,15 @@
   "party": null,
   "stance": "insufficient_data",
   "stance_score": -1.0,
-  "credibility": 1.0,
+  "credibility": 0.5,
   "attribution_counts": {
-    "asserted": 2
+    "asserted": 5
   },
   "althingi_stats": null,
   "scorecard": {
-    "supported": 1
+    "supported": 1,
+    "unsupported": 1,
+    "partially_supported": 1
   },
   "claims": [
     {
@@ -51,6 +53,64 @@
       "article_title": "Mótsagnakenndir ESB sinnar",
       "article_source": "Blog.is",
       "article_date": "2026-05-27"
+    },
+    {
+      "claim_text": "ESB er miðstýrt ríkjasamband með ólýðræðislega stjórn",
+      "original_quote": "ESB er miðstýrt ríkjasamband með ólýðræðislega stjórn sem stefnir að því að gera þjóðríkin að varanlegum aðildarríkjum í miðstýrðu sambandsríki.",
+      "verdict": "unsupported",
+      "explanation": "Heimildir stangast á við lýsinguna á ESB sem miðstýrðu og ólýðræðislegu ríkjasambandi. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003\" title=\"Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-030</a> sýnir að ESB starfar á grundvelli veitingarreglunnar (5. gr. sáttmála ESB) — sambandið má aðeins beita þeim valdheimildum sem aðildarríkin fela því — og að valdheimildum er skipt í einkavald, sameiginlegt vald og stuðningsvald, þar sem ríkin halda löggjafarvaldi á flestum sviðum. <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> staðfestir að aðildarríki halda fullveldi á fjölmörgum sviðum og samkvæmt <a href=\"https://www.althingi.is/altext/cv/is/?nfaerslunr=1526\" title=\"Althingi debate records; Snorri Másson — Op-eds and interviews\" target=\"_blank\" rel=\"noopener\">SOV-DATA-021</a> hafa þau rétt til úrsagnar samkvæmt 50. gr. Lýsingin á «ólýðræðislegri stjórn» horfir fram hjá Evrópuþinginu, sem er beinkjörið, og er pólitísk afstaða fremur en staðreynd sem heimildir styðja.",
+      "missing_context": "Fullyrðingin sleppir veitingarreglunni (5. gr. sáttmála ESB), sem takmarkar vald ESB við það sem ríkin fela því. <a href=\"https://www.althingi.is/altext/cv/is/?nfaerslunr=1526\" title=\"Althingi debate records; Snorri Másson — Op-eds and interviews\" target=\"_blank\" rel=\"noopener\">SOV-DATA-021</a> bendir á að hugmyndin um «ódeilanlegt fullveldi» sé pólitísk-heimspekileg afstaða, ekki lögfræðileg staðreynd — þjóðaréttarfræðingar líta almennt á fullveldi sem knippi réttinda sem ríki deila reglulega gegnum samninga og alþjóðastofnanir, og Ísland deilir nú þegar fullveldi gegnum NATO, EES og WTO. <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003\" title=\"Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-030</a> nefnir þó að gagnrýnt sé að valdheimildir ESB «smitist» inn á svið sem formlega heyra undir ríkin.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [
+        {
+          "id": "SOV-LEGAL-030",
+          "source_name": "Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003"
+        },
+        {
+          "id": "EEA-LEGAL-022",
+          "source_name": "EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'",
+          "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
+        },
+        {
+          "id": "SOV-DATA-021",
+          "source_name": "Althingi debate records; Snorri Másson — Op-eds and interviews",
+          "source_url": "https://www.althingi.is/altext/cv/is/?nfaerslunr=1526"
+        }
+      ],
+      "category": "sovereignty",
+      "attribution": "asserted",
+      "article_slug": "menningarleg-tengsl-islands-vid-bretland-og-bandarikin-eru-mun-meiri-en-vid-esb",
+      "article_title": "Menningarleg tengsl Íslands við Bretland og Bandaríkin eru mun meiri en við ESB",
+      "article_source": "blog_is",
+      "article_date": "2026-05-26"
+    },
+    {
+      "claim_text": "ESB stefnir að því að gera þjóðríkin að varanlegum aðildarríkjum í miðstýrðu sambandsríki",
+      "original_quote": "ESB er miðstýrt ríkjasamband með ólýðræðislega stjórn sem stefnir að því að gera þjóðríkin að varanlegum aðildarríkjum í miðstýrðu sambandsríki.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir sýna að umræða um aukinn samruna er raunveruleg en hvergi staðfesta þær yfirlýsta stefnu um «miðstýrt sambandsríki». <a href=\"https://www.stjornarradid.is/sendiskrifstofur/sendirad-islands-i-brussel/brussel-vaktin/stok-faersla/?NewsDate=2022-05-13&NewsName=Macron-vill-bjoda-Evropurikjum-utan-ESB-upp-a-nanara-samstarf\" title=\"Brussel-vaktin (Sendiráð Íslands í Brussel) — 13. maí 2022\" target=\"_blank\" rel=\"noopener\">SOV-DATA-036</a> lýsir Ráðstefnunni um framtíð Evrópu (2022), sem lagði til 325 tillögur — meðal annars að afnema neitunarvald á tilteknum sviðum og veita Evrópuþinginu frumkvæðisrétt — og von der Leyen lýsti vilja til sáttmálabreytinga. Á móti vegur að tillögurnar eru ráðgefandi en ekki bindandi, sáttmálabreytingar krefjast einróma samþykkis og 13 aðildarríki, þar á meðal Norðurlönd og ríki sem eru hefðbundnir bandamenn Íslands, lögðust gegn snemmbúinni endurskoðun. Rökin um stefnu að miðstýrðu sambandsríki eru því túlkun á þróunarferli fremur en staðfest markmið.",
+      "missing_context": "<a href=\"https://www.stjornarradid.is/sendiskrifstofur/sendirad-islands-i-brussel/brussel-vaktin/stok-faersla/?NewsDate=2022-05-13&NewsName=Macron-vill-bjoda-Evropurikjum-utan-ESB-upp-a-nanara-samstarf\" title=\"Brussel-vaktin (Sendiráð Íslands í Brussel) — 13. maí 2022\" target=\"_blank\" rel=\"noopener\">SOV-DATA-036</a> leggur áherslu á að tillögur Ráðstefnunnar um framtíð Evrópu séu meðmæli en ekki bindandi skuldbindingar, og að sáttmálabreytingar krefjist einróma samþykkis allra aðildarríkja — 13 ríki andmæltu, sem gerir aðlögun ólíklega í náinni framtíð. Andstöðublokk Norðurlanda og Austur-Evrópu skarast verulega við hefðbundna bandamenn Íslands. Veitingarreglan (sjá <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003\" title=\"Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-030</a>) takmarkar enn fremur möguleika ESB til að færa sig inn á ný valdsvið án samþykkis ríkjanna.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-036",
+          "source_name": "Brussel-vaktin (Sendiráð Íslands í Brussel) — 13. maí 2022",
+          "source_url": "https://www.stjornarradid.is/sendiskrifstofur/sendirad-islands-i-brussel/brussel-vaktin/stok-faersla/?NewsDate=2022-05-13&NewsName=Macron-vill-bjoda-Evropurikjum-utan-ESB-upp-a-nanara-samstarf"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "SOV-DATA-036",
+          "source_name": "Brussel-vaktin (Sendiráð Íslands í Brussel) — 13. maí 2022",
+          "source_url": "https://www.stjornarradid.is/sendiskrifstofur/sendirad-islands-i-brussel/brussel-vaktin/stok-faersla/?NewsDate=2022-05-13&NewsName=Macron-vill-bjoda-Evropurikjum-utan-ESB-upp-a-nanara-samstarf"
+        }
+      ],
+      "category": "sovereignty",
+      "attribution": "asserted",
+      "article_slug": "menningarleg-tengsl-islands-vid-bretland-og-bandarikin-eru-mun-meiri-en-vid-esb",
+      "article_title": "Menningarleg tengsl Íslands við Bretland og Bandaríkin eru mun meiri en við ESB",
+      "article_source": "blog_is",
+      "article_date": "2026-05-26"
     }
   ],
   "articles": [
@@ -60,6 +120,16 @@
       "source": "Blog.is",
       "date": "2026-05-27",
       "claim_count": 1,
+      "attribution_types": [
+        "asserted"
+      ]
+    },
+    {
+      "slug": "menningarleg-tengsl-islands-vid-bretland-og-bandarikin-eru-mun-meiri-en-vid-esb",
+      "title": "Menningarleg tengsl Íslands við Bretland og Bandaríkin eru mun meiri en við ESB",
+      "source": "blog_is",
+      "date": "2026-05-26",
+      "claim_count": 2,
       "attribution_types": [
         "asserted"
       ]

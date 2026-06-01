@@ -7,15 +7,61 @@
   "party": null,
   "stance": "insufficient_data",
   "stance_score": -1.0,
-  "credibility": null,
+  "credibility": 0.5,
   "attribution_counts": {
     "asserted": 1,
-    "quoted": 4,
-    "paraphrased": 3,
+    "quoted": 8,
+    "paraphrased": 5,
     "mentioned": 1
   },
   "althingi_stats": null,
-  "scorecard": {},
-  "claims": [],
-  "articles": []
+  "scorecard": {
+    "partially_supported": 1
+  },
+  "claims": [
+    {
+      "claim_text": "Strangar peningaþvættisnreglur leiða til hærri kostnaðar og hærra vöruverðs hjá þeim sem falla undir þær.",
+      "original_quote": "sem á endanum leiði til hærri kostnaðar og vöruverðs",
+      "verdict": "partially_supported",
+      "explanation": "Orsök-afleiðing keðjan er trúverðug í grunninn: aukinn regluverkskostnaður leggst að jafnaði á neytendur. <a href=\"https://www.visindavefur.is/svar.php?id=87522\" title=\"Vísindavefurinn — Þórólfur Matthíasson, Professor Emeritus, University of Iceland (2025)\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-036</a> sýnir með sögulegum dæmum að kostnaður af viðskiptahindrunum lendir á endanum á neytendum, og <a href=\"https://www.visindavefur.is/svar.php?id=88538\" title=\"Vísindavefurinn — Margrét Einarsdóttir, Professor, Law Faculty, University of Iceland (March 2026)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-029</a> staðfestir að gullhúðun «eykur kostnað við að uppfylla kröfur». Hins vegar fjallar engin heimild beint um peningaþvættisreglur og hvergi er lögð fram mæling á því hve mikið slíkur kostnaður færist út í vöruverð.",
+      "missing_context": "Þótt almenn hagfræðirök styðji að reglubyrði geti hækkað verð, sýnir <a href=\"https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/\" title=\"Eurostat — Comparative price levels of consumer goods and services (prc_ppp_ind)\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-003</a> að hátt verðlag á Íslandi (um 50% yfir meðaltali ESB) ræðst af mörgum þáttum — smáum markaði, háum launum, flutningskostnaði og takmarkaðri samkeppni — fremur en einstökum regluverksþáttum. Áhrif peningaþvættisreglna á heildarvöruverð eru því líklega lítil og ómæld; fullyrðingin alhæfir út frá einu fyrirtæki án gagna um umfang. Sem spá er hámarkstrú 0,8.",
+      "supporting_evidence": [
+        {
+          "id": "TRADE-DATA-036",
+          "source_name": "Vísindavefurinn — Þórólfur Matthíasson, Professor Emeritus, University of Iceland (2025)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=87522"
+        },
+        {
+          "id": "EEA-DATA-029",
+          "source_name": "Vísindavefurinn — Margrét Einarsdóttir, Professor, Law Faculty, University of Iceland (March 2026)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=88538"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "TRADE-COMP-003",
+          "source_name": "Eurostat — Comparative price levels of consumer goods and services (prc_ppp_ind)",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/"
+        }
+      ],
+      "category": "trade",
+      "attribution": "paraphrased",
+      "article_slug": "regluverkid-kallad-blythung-gullhudun",
+      "article_title": "Regluverkið kallað „blýþung gullhúðun“",
+      "article_source": "Morgunblaðið",
+      "article_date": "2026-05-26"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "regluverkid-kallad-blythung-gullhudun",
+      "title": "Regluverkið kallað „blýþung gullhúðun“",
+      "source": "Morgunblaðið",
+      "date": "2026-05-26",
+      "claim_count": 1,
+      "attribution_types": [
+        "paraphrased"
+      ]
+    }
+  ]
 }
