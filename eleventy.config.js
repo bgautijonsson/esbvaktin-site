@@ -1,6 +1,7 @@
 const crypto = require("crypto");
 const taxonomy = require("./assets/js/site-taxonomy.js");
 const markdownIt = require("markdown-it");
+const { isSlug } = require("./lib/slug.js");
 
 const INLINE_SCRIPT_RE = /<script(?![^>]*\bsrc=)([^>]*)>([\s\S]*?)<\/script>/g;
 
@@ -52,25 +53,9 @@ module.exports = async function (eleventyConfig) {
   // Mirrors Python's icelandic_slugify() in src/esbvaktin/utils/slugify.py.
   // Icelandic-specific replacements first, then NFKD decomposition for
   // non-Icelandic diacritics (e.g. Croatian č→c, French ü→u).
-  eleventyConfig.addFilter("isSlug", (str) => {
-    if (!str) return "";
-    return str
-      .replace(/[þÞ]/g, "th")
-      .replace(/[ðÐ]/g, "d")
-      .replace(/[æÆ]/g, "ae")
-      .replace(/[öÖ]/g, "o")
-      .replace(/[áÁà]/g, "a")
-      .replace(/[éÉè]/g, "e")
-      .replace(/[íÍì]/g, "i")
-      .replace(/[óÓò]/g, "o")
-      .replace(/[úÚù]/g, "u")
-      .replace(/[ýÝỳ]/g, "y")
-      .normalize("NFKD")
-      .replace(/[\u0300-\u036f]/g, "")
-      .toLowerCase()
-      .replace(/[^a-z0-9]+/g, "-")
-      .replace(/^-|-$/g, "");
-  });
+  // Delegates to lib/slug.js — the single JS slug source, parity-tested against the
+  // Python icelandic_slugify() via tests/fixtures/slug_parity.json (xrepo-05).
+  eleventyConfig.addFilter("isSlug", isSlug);
 
   // ── Date formatting ───────────────────────────────────────────────
   eleventyConfig.addFilter("isoDate", (date) => {
