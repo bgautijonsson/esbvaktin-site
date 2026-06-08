@@ -130,6 +130,11 @@ test("claim tracker article links prefer internal reports and preserve the origi
   await expect(card).toContainText("evrum");
   await card.locator(".ct-card-header").click();
 
+  // The sighting list is collapsed behind a "Birtist í …" toggle; expand it
+  // before the links inside become visible (CSS keeps .ct-sightings-details at
+  // max-height:0 until .ct-sightings-expanded is set on click).
+  await card.locator(".ct-sightings-toggle").click();
+
   const sightingLink = card
     .locator('.ct-sighting-item a[href*="/umraedan/"]')
     .first();
