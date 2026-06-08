@@ -100,6 +100,10 @@
     --ev-expert: #fbbf24;
     --ev-intl-org: #22d3ee;
     --ev-parliament: #fb923c;
+
+    /* Match the focus-ring box-shadow to the dark-mode accent — the light
+       teal at 30% alpha resolves to ~1.26:1 on the dark surface (invisible). */
+    --focus-ring: 0 0 0 2px rgba(45, 212, 191, 0.5);
   }
 }
 

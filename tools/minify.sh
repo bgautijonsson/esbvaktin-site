@@ -8,6 +8,21 @@ SITE_DIR="${1:-_site}"
 CSS_DIR="$SITE_DIR/assets/css"
 JS_DIR="$SITE_DIR/assets/js"
 
+# ── Prune dev-only deck artifacts ──────────────────────────────────────
+# The Quarto decks (althjodastofnun/, althjodamalastofnun/) are passthrough-
+# copied with reveal.js sourcemaps, legacy .ttf/.eot font fallbacks, and PDF
+# figure exports that never ship to a browser (.woff covers every font; the
+# slides render from HTML, not the PDFs). Strip them from the build output
+# only — source dirs are untouched, so the next Quarto re-export is unaffected.
+echo "Pruning dev-only deck artifacts..."
+for deck in althjodastofnun althjodamalastofnun; do
+  deck_dir="$SITE_DIR/$deck"
+  [ -d "$deck_dir" ] || continue
+  find "$deck_dir" -type f \( \
+    -name '*.pdf' -o -name '*.map' -o -name '*.ttf' -o -name '*.eot' \
+  \) -delete
+done
+
 echo "Minifying CSS..."
 for f in "$CSS_DIR"/*.css; do
   [ -f "$f" ] || continue
