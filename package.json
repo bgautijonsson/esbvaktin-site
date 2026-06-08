@@ -15,7 +15,7 @@
     "browser:smoke": "playwright test tests/browser/smoke.spec.js",
     "browser:screens": "playwright test tests/browser/screenshots.spec.js",
     "browser:nav": "playwright test tests/browser/navbar.spec.js",
-    "test:unit": "node --test tests/",
+    "test:unit": "node --test 'tests/**/*.test.js'",
     "stats": "node tools/stats.js"
   },
   "devDependencies": {
