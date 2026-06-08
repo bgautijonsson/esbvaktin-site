@@ -6,23 +6,24 @@
   "role": "þingmaður",
   "party": "Samfylkingin",
   "stance": "pro_eu",
-  "stance_score": 0.8,
-  "credibility": 0.62,
+  "stance_score": 0.83,
+  "credibility": 0.55,
   "attribution_counts": {
     "asserted": 9,
-    "quoted": 2,
+    "quoted": 7,
     "paraphrased": 4
   },
   "althingi_stats": {
     "speech_count": 80,
-    "total_words": 15044,
+    "total_words": 25013,
     "issues": 10,
     "first_speech": "2024-04-16",
     "last_speech": "2026-05-28"
   },
   "scorecard": {
     "supported": 2,
-    "partially_supported": 6
+    "partially_supported": 8,
+    "unsupported": 1
   },
   "claims": [
     {
@@ -289,6 +290,121 @@
       "article_title": "ESB fyrir elítuna – eða al­menning í landinu?",
       "article_source": "visir",
       "article_date": "2026-05-26"
+    },
+    {
+      "claim_text": "Íslenska krónan er fjötur um fót fyrir samkeppnishæft umhverfi á Íslandi.",
+      "original_quote": "örmyntin okkar, íslenska krónan, sem okkur mörgum hverjum þykir vænt um, er okkur fjötur um fót hvað sem öðru líður í því samkeppnishæfa umhverfi sem við viljum skapa hér á Íslandi",
+      "verdict": "partially_supported",
+      "explanation": "Gögn um gengissveiflur styðja að krónan skapi óvissu, en bein tengsl við samkeppnishæfni eru óbein. <a href=\"https://www.sedlabanki.is/hagtolur/gengi/\" title=\"Seðlabanki Íslands — Exchange rate data\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-007</a> og CURRENCY-DATA-016 sýna miklar sveiflur (um 10–12% á ári fyrir höft) og þrjú gengishrun síðan 2000, og <a href=\"https://www.evropuvefur.is/svar.php?id=88690\" title=\"Evropuvefur - Gylfi Magnusson, \"Icelandic export commodities priced in foreign currency\" (prófessor í hagfræði við HÍ (University of Iceland), 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-030</a> lýsir því hvernig útflytjendur verðleggja í erlendri mynt vegna takmarkaðs áhuga á krónu. Engin heimild mælir þó beint áhrif krónunnar á samkeppnishæfni atvinnulífsins sem heild.",
+      "missing_context": "Fyrra mat benti á að engar heimildir fjalla beint um samkeppnisaðstæður tiltekinna geira, og rökin eru óbein. Gylfi Magnússon lýsir í <a href=\"https://www.evropuvefur.is/svar.php?id=88690\" title=\"Evropuvefur - Gylfi Magnusson, \"Icelandic export commodities priced in foreign currency\" (prófessor í hagfræði við HÍ (University of Iceland), 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-030</a> verðlagningu í erlendri mynt sem venjulegri fyrirtækjahegðun frekar en óvenjulegum vanda, og <a href=\"https://www.evropuvefur.is/svar.php?id=88690\" title=\"Evropuvefur - Gylfi Magnusson, \"Legal basis for foreign-currency accounting by Icelandic companies\" (prófessor í hagfræði við HÍ (University of Iceland), 2026)\" target=\"_blank\" rel=\"noopener\">CURR-LEGAL-001</a> sýnir að íslensk fyrirtæki geta þegar fært reikninga í starfrækslumynt. <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> minnir á að sveigjanleiki krónunnar geti líka verið kostur.",
+      "supporting_evidence": [
+        {
+          "id": "TRADE-DATA-007",
+          "source_name": "Seðlabanki Íslands — Exchange rate data",
+          "source_url": "https://www.sedlabanki.is/hagtolur/gengi/"
+        },
+        {
+          "id": "CURRENCY-DATA-016",
+          "source_name": "Central Bank of Iceland — Exchange rate data; ECB — Statistical Data Warehouse",
+          "source_url": null
+        },
+        {
+          "id": "CURR-DATA-030",
+          "source_name": "Evropuvefur - Gylfi Magnusson, \"Icelandic export commodities priced in foreign currency\" (prófessor í hagfræði við HÍ (University of Iceland), 2026)",
+          "source_url": "https://www.evropuvefur.is/svar.php?id=88690"
+        },
+        {
+          "id": "CURR-DATA-031",
+          "source_name": "Evropuvefur - Gylfi Magnusson, \"Post-2008 restrictions on foreign-currency loans in Iceland\" (prófessor í hagfræði við HÍ (University of Iceland), 2026)",
+          "source_url": "https://www.evropuvefur.is/svar.php?id=88690"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "SOV-LEGAL-005",
+          "source_name": "Central Bank of Iceland — Monetary policy framework",
+          "source_url": "https://sedlabanki.is/peningastefna/"
+        }
+      ],
+      "category": "currency",
+      "attribution": "quoted",
+      "article_slug": "fjotrar-ormyntar-kostnadurinn-vid-kronuna-verulegur-og-margthaettur",
+      "article_title": "Fjötrar örmyntar: Kostnaðurinn við krónuna „verulegur“ og „margþættur“",
+      "article_source": "Kratinn (Ungir jafnaðarmenn)",
+      "article_date": "2026-06-02"
+    },
+    {
+      "claim_text": "Fyrri ríkisstjórnir á Íslandi buðu upp á engan hagvöxt á mann síðustu tíu ár.",
+      "original_quote": "innviðaskuld sem byggst hefur upp í boði fyrri ríkisstjórna sem buðu okkur engan hagvöxt á mann síðustu tíu ár",
+      "verdict": "unsupported",
+      "explanation": "Gögnin stangast á við að enginn hagvöxtur á mann hafi orðið síðasta áratug. <a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG\" title=\"World Bank — World Development Indicators\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-009</a> sýnir að meðalhagvöxtur Íslands 2000–2023 var 3,0% á ári — hæstur Norðurlanda — og <a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=IS\" title=\"World Bank — GDP growth (annual %) (NY.GDP.MKTP.KD.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-014</a> staðfestir tvö tímabil hraðs vaxtar (2021–2023 að meðaltali 6,4%). <a href=\"https://www.imf.org/en/Publications/WEO\" title=\"IMF World Economic Outlook Database — October 2024\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-002</a> sýnir að VLF á mann (PPP) var um 72.000 dalir 2024, um 29% yfir meðaltali ESB. Heildarhagvöxtur er þó ekki sama og hagvöxtur á mann, og engin heimild einangrar hagvöxt á mann síðustu tíu árin sérstaklega.",
+      "missing_context": "Heimildirnar mæla heildarhagvöxt en ekki beinlínis hagvöxt á mann, sem skiptir máli vegna mikillar fólksfjölgunar á Íslandi af völdum aðflutnings (<a href=\"https://www.visindavefur.is/svar.php?id=87163\" title=\"Vísindavefurinn — Þórólfur Matthíasson, Professor Emeritus, University of Iceland (December 2024)\" target=\"_blank\" rel=\"noopener\">LABOUR-DATA-018</a> sýnir sterk tengsl hagvaxtar og aðfluttra). Ör fólksfjölgun getur þýtt að hagvöxtur á mann sé lægri en heildarhagvöxtur. Til að meta fullyrðinguna nákvæmlega þyrfti gögn um VLF á mann fyrir tiltekinn tíu ára tíma, sem grunninn skortir — en jafnvel þá benda fyrirliggjandi gögn til vaxtar, ekki kyrrstöðu.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [
+        {
+          "id": "CURRENCY-DATA-009",
+          "source_name": "World Bank — World Development Indicators",
+          "source_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG"
+        },
+        {
+          "id": "CURRENCY-DATA-014",
+          "source_name": "World Bank — GDP growth (annual %) (NY.GDP.MKTP.KD.ZG)",
+          "source_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=IS"
+        },
+        {
+          "id": "TRADE-COMP-002",
+          "source_name": "IMF World Economic Outlook Database — October 2024",
+          "source_url": "https://www.imf.org/en/Publications/WEO"
+        }
+      ],
+      "category": "trade",
+      "attribution": "quoted",
+      "article_slug": "fjotrar-ormyntar-kostnadurinn-vid-kronuna-verulegur-og-margthaettur",
+      "article_title": "Fjötrar örmyntar: Kostnaðurinn við krónuna „verulegur“ og „margþættur“",
+      "article_source": "Kratinn (Ungir jafnaðarmenn)",
+      "article_date": "2026-06-02"
+    },
+    {
+      "claim_text": "Aðild að ESB myndi auðvelda vöxt og stækkun efnahagslífsins á Íslandi.",
+      "original_quote": "mikið ótrúlega yrði þetta verkefni til vaxtar auðveldara ef við losnuðum undan fjötrum örmyntarinnar",
+      "verdict": "partially_supported",
+      "explanation": "Spáin nýtur stuðnings frá fordæmum og sérfræðimati en með verulegum fyrirvörum. <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> metur að ESB-aðild gæti aukið VLF um 2–4% á tíu árum, og <a href=\"https://ec.europa.eu/eurostat/databrowser/view/sdg_10_10/default/table\" title=\"Eurostat GDP per capita in PPS; European Commission Enlargement Reviews\" target=\"_blank\" rel=\"noopener\">PREC-DATA-023</a> sýnir hagvöxt og samleitni nýrra aðildarríkja eftir 2004 — mynstur sem á helst við um lítil opin hagkerfi eins og Ísland. Á móti vegur að Ísland er nú þegar með næsthæsta VLF á mann í Evrópu (<a href=\"https://www.europarl.europa.eu/thinktank/en/document/EPRS_BRI(2026)782591\" title=\"IMF World Economic Outlook; Eurostat; EPRS Briefing on EU-Iceland Relations\" target=\"_blank\" rel=\"noopener\">PREC-DATA-025</a>), svo samleitnigangverkið virkar öðruvísi, og fjárhagsmatið er hagsmunatengt og líkanaháð.",
+      "missing_context": "Fordæmin eru ekki fullkomlega sambærileg: <a href=\"https://ec.europa.eu/eurostat/databrowser/view/sdg_10_10/default/table\" title=\"Eurostat GDP per capita in PPS; European Commission Enlargement Reviews\" target=\"_blank\" rel=\"noopener\">PREC-DATA-023</a> bendir á að samleitni nýrra ríkja átti sér margar orsakir umfram ESB-aðild og að óháð Evrópuríki (Noregur, Sviss, Ísland) hafi líka vaxið. <a href=\"https://www.europarl.europa.eu/thinktank/en/document/EPRS_BRI(2026)782591\" title=\"IMF World Economic Outlook; Eurostat; EPRS Briefing on EU-Iceland Relations\" target=\"_blank\" rel=\"noopener\">PREC-DATA-025</a> áréttar að Ísland yrði auðugasta umsóknarríki sögunnar og líklega nettógreiðandi í sjóði ESB (<a href=\"https://ioes.hi.is/en/institute-economic-studies\" title=\"Institute of International Affairs, University of Iceland — EU membership cost analysis\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-010</a>, <a href=\"https://cohesiondata.ec.europa.eu/overview\" title=\"European Commission — Cohesion Policy 2021–2027; Eurostat regional GDP data\" target=\"_blank\" rel=\"noopener\">EEA-DATA-016</a>). Matið er hámarkað við 0,8 öryggi enda spá. Vaxtaröksemdin um örmyntina sleppir fyrirvörum um tap á sjálfstæðri peningastefnu.",
+      "supporting_evidence": [
+        {
+          "id": "POL-DATA-017",
+          "source_name": "Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)",
+          "source_url": "https://vi.is/skyrslur/1667"
+        },
+        {
+          "id": "PREC-DATA-023",
+          "source_name": "Eurostat GDP per capita in PPS; European Commission Enlargement Reviews",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/sdg_10_10/default/table"
+        },
+        {
+          "id": "PREC-DATA-025",
+          "source_name": "IMF World Economic Outlook; Eurostat; EPRS Briefing on EU-Iceland Relations",
+          "source_url": "https://www.europarl.europa.eu/thinktank/en/document/EPRS_BRI(2026)782591"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "TRADE-DATA-010",
+          "source_name": "Institute of International Affairs, University of Iceland — EU membership cost analysis",
+          "source_url": "https://ioes.hi.is/en/institute-economic-studies"
+        },
+        {
+          "id": "EEA-DATA-016",
+          "source_name": "European Commission — Cohesion Policy 2021–2027; Eurostat regional GDP data",
+          "source_url": "https://cohesiondata.ec.europa.eu/overview"
+        }
+      ],
+      "category": "currency",
+      "attribution": "quoted",
+      "article_slug": "fjotrar-ormyntar-kostnadurinn-vid-kronuna-verulegur-og-margthaettur",
+      "article_title": "Fjötrar örmyntar: Kostnaðurinn við krónuna „verulegur“ og „margþættur“",
+      "article_source": "Kratinn (Ungir jafnaðarmenn)",
+      "article_date": "2026-06-02"
     }
   ],
   "articles": [
@@ -320,6 +436,16 @@
       "claim_count": 6,
       "attribution_types": [
         "asserted"
+      ]
+    },
+    {
+      "slug": "fjotrar-ormyntar-kostnadurinn-vid-kronuna-verulegur-og-margthaettur",
+      "title": "Fjötrar örmyntar: Kostnaðurinn við krónuna „verulegur“ og „margþættur“",
+      "source": "Kratinn (Ungir jafnaðarmenn)",
+      "date": "2026-06-02",
+      "claim_count": 3,
+      "attribution_types": [
+        "quoted"
       ]
     }
   ],

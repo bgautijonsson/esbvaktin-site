@@ -7,12 +7,53 @@
   "party": null,
   "stance": "neutral",
   "stance_score": 0.0,
-  "credibility": null,
+  "credibility": 0.5,
   "attribution_counts": {
-    "mentioned": 13
+    "paraphrased": 1,
+    "mentioned": 15
   },
   "althingi_stats": null,
-  "scorecard": {},
-  "claims": [],
-  "articles": []
+  "scorecard": {
+    "partially_supported": 1
+  },
+  "claims": [
+    {
+      "claim_text": "Seðlabanki Íslands yrði hluti af evrópska seðlabankakerfinu og hefði heimild til að prenta evrur sem lánveitandi til þrautavara.",
+      "original_quote": "Seðlabanki Íslands yrði hluti af evrópska seðlabankakerfinu og hefði heimild til að prenta evrur sem lánveitandi til þrautavara",
+      "verdict": "partially_supported",
+      "explanation": "Fyrri hluti fullyrðingarinnar er réttur en seinni hlutinn er ónákvæmur. <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> staðfestir að upptaka evru flytti peningastefnuvaldið til ECB, og Seðlabankinn yrði þá hluti af evrópska seðlabankakerfinu. <a href=\"https://www.evropuvefur.is/svar.php?id=65443\" title=\"Evropuvefur - Gylfi Magnusson, \"Hvad kostar ad halda uppi gjaldeyrisforda fyrir kronuna?\" (University of Iceland, 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-025</a> styður að ECB-aðild veiti lánveitanda til þrautavara sem sjálfstæður seðlabanki Íslands getur ekki jafnað. Hins vegar «prentar» Seðlabanki Íslands ekki sjálfur evrur — heimild til útgáfu evra liggur hjá ECB og evrópska seðlabankakerfinu sameiginlega, ekki hjá einstökum aðildarseðlabönkum sjálfstætt.",
+      "missing_context": "Lánveitandahlutverkið gegnvart þrautavara er á forræði ECB og evrópska seðlabankakerfisins í heild — einstök aðildarríki «prenta» ekki evrur að eigin frumkvæði. <a href=\"https://www.evropuvefur.is/svar.php?id=65443\" title=\"Evropuvefur - Gylfi Magnusson, \"Hvad kostar ad halda uppi gjaldeyrisforda fyrir kronuna?\" (University of Iceland, 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-025</a> áréttar að orsakatúlkun um «whatever it takes»-yfirlýsingu Draghi sé umdeild meðal hagfræðinga. Aðildin að kerfinu fæli í sér aðgang að sameiginlegu öryggisneti en einnig tap á sjálfstæði í vaxtaákvörðunum (<a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a>). Hámarksöryggi 0,8 á við um spár.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-LEGAL-005",
+          "source_name": "Central Bank of Iceland — Monetary policy framework",
+          "source_url": "https://sedlabanki.is/peningastefna/"
+        },
+        {
+          "id": "CURR-DATA-025",
+          "source_name": "Evropuvefur - Gylfi Magnusson, \"Hvad kostar ad halda uppi gjaldeyrisforda fyrir kronuna?\" (University of Iceland, 2026)",
+          "source_url": "https://www.evropuvefur.is/svar.php?id=65443"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "currency",
+      "attribution": "paraphrased",
+      "article_slug": "leidin-ad-laegri-voxtum-se-su-sama-med-kronu-og-evru",
+      "article_title": "Leiðin að lægri vöxtum sé sú sama með krónu og evru",
+      "article_source": "Vísir",
+      "article_date": "2026-06-02"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "leidin-ad-laegri-voxtum-se-su-sama-med-kronu-og-evru",
+      "title": "Leiðin að lægri vöxtum sé sú sama með krónu og evru",
+      "source": "Vísir",
+      "date": "2026-06-02",
+      "claim_count": 1,
+      "attribution_types": [
+        "paraphrased"
+      ]
+    }
+  ]
 }

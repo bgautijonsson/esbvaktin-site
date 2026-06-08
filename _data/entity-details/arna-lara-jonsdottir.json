@@ -9,7 +9,7 @@
   "stance_score": 1.0,
   "credibility": 0.5,
   "attribution_counts": {
-    "quoted": 1,
+    "quoted": 3,
     "paraphrased": 1
   },
   "althingi_stats": {
@@ -20,7 +20,7 @@
     "last_speech": "2026-05-26"
   },
   "scorecard": {
-    "partially_supported": 1
+    "partially_supported": 3
   },
   "claims": [
     {
@@ -69,6 +69,94 @@
       "article_title": "Leyndarhyggja stjórnarandstöðunnar: Þau vilja ekki að þjóðin fái að sjá aðildarsamning",
       "article_source": "Kratinn (Ungir jafnaðarmenn)",
       "article_date": "2026-05-22"
+    },
+    {
+      "claim_text": "Kostnaður við íslensku krónuna felst í beinum kostnaði, áhættuálagi, óhagkvæmni, varúðarkostnaði og töpuðum tækifærum.",
+      "original_quote": "Hann er blanda af beinum kostnaði sem af henni hlýst, áhættuálagi, óhagkvæmni, varúðarkostnaði og töpuðum tækifærum",
+      "verdict": "partially_supported",
+      "explanation": "Heimildir staðfesta nokkra af þessum kostnaðarliðum en ekki alla sem aðgreinda, mælda þætti. <a href=\"https://www.cb.is/statistics/international-reserves/\" title=\"Seðlabanki Íslands — Alþjóðaforðinn; Fjármálastöðugleikaskýrsla\" target=\"_blank\" rel=\"noopener\">CURR-DATA-006</a> og <a href=\"https://www.evropuvefur.is/svar.php?id=65443\" title=\"Evropuvefur - Gylfi Magnusson, \"Hvad kostar ad halda uppi gjaldeyrisforda fyrir kronuna?\" (University of Iceland, 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-022</a> sýna beinan vaxtamunarkostnað af gjaldeyrisforðanum (um 30–50 milljarða króna á ári, eða um 6 milljarða á hvert prósentustig), og <a href=\"https://www.evropuvefur.is/svar.php?id=65443\" title=\"Evropuvefur - Gylfi Magnusson, \"Hvad kostar ad halda uppi gjaldeyrisforda fyrir kronuna?\" (University of Iceland, 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-023</a> styður áhættuálag smárrar myntar. <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> og CURRENCY-DATA-016 staðfesta gengisáhættu og töpuð tækifæri. Upptalningin er þó að hluta retorísk flokkun frekar en bein endurspeglun á heimildunum.",
+      "missing_context": "Heimildirnar leggja áherslu á fyrirvara sem fullyrðingin sleppir: forðinn þjónar líka sem tryggingarsjóður og gengisakkeri (<a href=\"https://www.cb.is/statistics/international-reserves/\" title=\"Seðlabanki Íslands — Alþjóðaforðinn; Fjármálastöðugleikaskýrsla\" target=\"_blank\" rel=\"noopener\">CURR-DATA-006</a>), og krónan veitir sjálfstætt aðlögunartæki sem fluttu Íslandi hraðar út úr kreppu en evrulönd (CURRENCY-DATA-016). <a href=\"https://www.evropuvefur.is/svar.php?id=65443\" title=\"Evropuvefur - Gylfi Magnusson, \"Hvad kostar ad halda uppi gjaldeyrisforda fyrir kronuna?\" (University of Iceland, 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-021</a> sýnir að kostnaðurinn sveiflast — Seðlabankinn tapaði 58 milljörðum 2021–2024 en hagnaðist um 126 milljarða 2018–2020. Talan «40 milljarðar á ári» sem oft er nefnd er gróft mat sem ræðst af vaxtamun hverju sinni.",
+      "supporting_evidence": [
+        {
+          "id": "CURR-DATA-006",
+          "source_name": "Seðlabanki Íslands — Alþjóðaforðinn; Fjármálastöðugleikaskýrsla",
+          "source_url": "https://www.cb.is/statistics/international-reserves/"
+        },
+        {
+          "id": "CURR-DATA-022",
+          "source_name": "Evropuvefur - Gylfi Magnusson, \"Hvad kostar ad halda uppi gjaldeyrisforda fyrir kronuna?\" (University of Iceland, 2026)",
+          "source_url": "https://www.evropuvefur.is/svar.php?id=65443"
+        },
+        {
+          "id": "CURR-DATA-023",
+          "source_name": "Evropuvefur - Gylfi Magnusson, \"Hvad kostar ad halda uppi gjaldeyrisforda fyrir kronuna?\" (University of Iceland, 2026)",
+          "source_url": "https://www.evropuvefur.is/svar.php?id=65443"
+        },
+        {
+          "id": "SOV-LEGAL-005",
+          "source_name": "Central Bank of Iceland — Monetary policy framework",
+          "source_url": "https://sedlabanki.is/peningastefna/"
+        },
+        {
+          "id": "CURRENCY-DATA-016",
+          "source_name": "Central Bank of Iceland — Exchange rate data; ECB — Statistical Data Warehouse",
+          "source_url": null
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "currency",
+      "attribution": "quoted",
+      "article_slug": "fjotrar-ormyntar-kostnadurinn-vid-kronuna-verulegur-og-margthaettur",
+      "article_title": "Fjötrar örmyntar: Kostnaðurinn við krónuna „verulegur“ og „margþættur“",
+      "article_source": "Kratinn (Ungir jafnaðarmenn)",
+      "article_date": "2026-06-02"
+    },
+    {
+      "claim_text": "Kostnaður við íslensku krónuna er verulegur, margþættur og nær örugglega mun meiri en ábatinn sem af henni hlýst.",
+      "original_quote": "kostnaður við að halda okkur við íslensku krónuna væri, sama hvernig á er litið, verulegur, margþættur og nær örugglega mun meiri en ábatinn sem af henni hlýst",
+      "verdict": "partially_supported",
+      "explanation": "Að kostnaðurinn sé verulegur og margþættur fær stuðning, en niðurstaðan að hann sé «nær örugglega mun meiri en ábatinn» gengur lengra en heimildir leyfa. <a href=\"https://www.cb.is/statistics/international-reserves/\" title=\"Seðlabanki Íslands — Alþjóðaforðinn; Fjármálastöðugleikaskýrsla\" target=\"_blank\" rel=\"noopener\">CURR-DATA-006</a>, <a href=\"https://www.evropuvefur.is/svar.php?id=65443\" title=\"Evropuvefur - Gylfi Magnusson, \"Hvad kostar ad halda uppi gjaldeyrisforda fyrir kronuna?\" (University of Iceland, 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-022</a> og <a href=\"https://www.evropuvefur.is/svar.php?id=65443\" title=\"Evropuvefur - Gylfi Magnusson, \"Hvad kostar ad halda uppi gjaldeyrisforda fyrir kronuna?\" (University of Iceland, 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-023</a> staðfesta verulegan og margþættan kostnað smárrar sjálfstæðrar myntar. Heimildirnar setja hins vegar ábatann fram sem raunverulegt mótvægi — ekki sem augljóslega minni en kostnaðinn.",
+      "missing_context": "Heimildirnar lýsa raunverulegum ábata krónunnar sem fullyrðingin gerir lítið úr. <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> bendir á að sumir hagfræðingar telji sveigjanleika krónunnar mikilvægt aðlögunartæki, og <a href=\"https://www.cb.is/statistics/international-reserves/\" title=\"Seðlabanki Íslands — Alþjóðaforðinn; Fjármálastöðugleikaskýrsla\" target=\"_blank\" rel=\"noopener\">CURR-DATA-006</a> nefnir tryggingargildi forðans. <a href=\"https://www.evropuvefur.is/svar.php?id=65443\" title=\"Evropuvefur - Gylfi Magnusson, \"Hvad kostar ad halda uppi gjaldeyrisforda fyrir kronuna?\" (University of Iceland, 2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-042</a> sýnir að líka stórir seðlabankar (Sviss) bera gengisáhættu. Heildarsamanburður kostnaðar og ábata er háður forsendum og fræðilega umdeildur — engin heimild kvarðar að ábatinn sé «mun minni».",
+      "supporting_evidence": [
+        {
+          "id": "CURR-DATA-006",
+          "source_name": "Seðlabanki Íslands — Alþjóðaforðinn; Fjármálastöðugleikaskýrsla",
+          "source_url": "https://www.cb.is/statistics/international-reserves/"
+        },
+        {
+          "id": "CURR-DATA-022",
+          "source_name": "Evropuvefur - Gylfi Magnusson, \"Hvad kostar ad halda uppi gjaldeyrisforda fyrir kronuna?\" (University of Iceland, 2026)",
+          "source_url": "https://www.evropuvefur.is/svar.php?id=65443"
+        },
+        {
+          "id": "CURR-DATA-023",
+          "source_name": "Evropuvefur - Gylfi Magnusson, \"Hvad kostar ad halda uppi gjaldeyrisforda fyrir kronuna?\" (University of Iceland, 2026)",
+          "source_url": "https://www.evropuvefur.is/svar.php?id=65443"
+        },
+        {
+          "id": "CURR-DATA-026",
+          "source_name": "Evropuvefur - Gylfi Magnusson, \"Euro adoption and Denmark's krone peg\" (University of Iceland, 2026)",
+          "source_url": "https://www.evropuvefur.is/svar.php?id=87971"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "SOV-LEGAL-005",
+          "source_name": "Central Bank of Iceland — Monetary policy framework",
+          "source_url": "https://sedlabanki.is/peningastefna/"
+        },
+        {
+          "id": "PREC-DATA-042",
+          "source_name": "Evropuvefur - Gylfi Magnusson, \"Hvad kostar ad halda uppi gjaldeyrisforda fyrir kronuna?\" (University of Iceland, 2026)",
+          "source_url": "https://www.evropuvefur.is/svar.php?id=65443"
+        }
+      ],
+      "category": "currency",
+      "attribution": "quoted",
+      "article_slug": "fjotrar-ormyntar-kostnadurinn-vid-kronuna-verulegur-og-margthaettur",
+      "article_title": "Fjötrar örmyntar: Kostnaðurinn við krónuna „verulegur“ og „margþættur“",
+      "article_source": "Kratinn (Ungir jafnaðarmenn)",
+      "article_date": "2026-06-02"
     }
   ],
   "articles": [
@@ -80,6 +168,16 @@
       "claim_count": 1,
       "attribution_types": [
         "paraphrased"
+      ]
+    },
+    {
+      "slug": "fjotrar-ormyntar-kostnadurinn-vid-kronuna-verulegur-og-margthaettur",
+      "title": "Fjötrar örmyntar: Kostnaðurinn við krónuna „verulegur“ og „margþættur“",
+      "source": "Kratinn (Ungir jafnaðarmenn)",
+      "date": "2026-06-02",
+      "claim_count": 2,
+      "attribution_types": [
+        "quoted"
       ]
     }
   ],
