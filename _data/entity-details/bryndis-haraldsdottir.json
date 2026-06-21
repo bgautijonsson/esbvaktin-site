@@ -7,8 +7,9 @@
   "party": "Sjálfstæðisflokkur",
   "stance": "neutral",
   "stance_score": 0.0,
-  "credibility": 0.67,
+  "credibility": 0.73,
   "attribution_counts": {
+    "asserted": 9,
     "quoted": 4,
     "paraphrased": 2
   },
@@ -20,8 +21,8 @@
     "last_speech": "2026-05-28"
   },
   "scorecard": {
-    "partially_supported": 2,
-    "supported": 1
+    "partially_supported": 6,
+    "supported": 5
   },
   "claims": [
     {
@@ -116,6 +117,256 @@
       "article_title": "Landskjörstjórn samþykk tveimur nýjum tillögum að orðalagi í ESB-atkvæðagreiðslu",
       "article_source": "RÚV",
       "article_date": "2026-05-04"
+    },
+    {
+      "claim_text": "Fullyrðingar um að heimilin gætu grætt hundruð milljarða króna við upptöku evru eiga sér ekki beina stoð í skýrslunni um valkosti Íslands í gjaldmiðlamálum",
+      "original_quote": "Slíkar fullyrðingar eiga sér ekki beina stoð í skýrslunni. Þær skapa væntingar sem hvorki skýrslan né sérfræðingar hafa staðfest.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildirnar gefa enga beina stoð fyrir tölu á borð við «hundruð milljarða króna» í sparnaði heimila, en þær styðja kjarna fullyrðingarinnar um að slíkar tölur séu ekki staðfestar. <a href=\"https://www.evropuvefur.is/svar.php?id=87971\" title=\"Evropuvefur - Gylfi Magnusson, \"Euro adoption and pension fund bond yields\" (University of Iceland, 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-029</a> lýsir aðeins «líklega nokkuð lægri» vöxtum sem matskenndu mati Gylfa Magnússonar, ekki módelaðri spá. Sjálft skjalið sem fullyrðingin vísar í — gjaldmiðlaskýrsluna — er ekki meðal heimildanna, svo ekki er unnt að staðfesta nákvæmlega hvað í henni stendur.",
+      "missing_context": "Sjálf gjaldmiðlaskýrslan er ekki meðal heimildanna, svo ekki er unnt að bera fullyrðinguna beint saman við efni hennar. <a href=\"https://www.evropuvefur.is/svar.php?id=87971\" title=\"Evropuvefur - Gylfi Magnusson, \"Euro adoption and pension fund bond yields\" (University of Iceland, 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-029</a> hefur þann fyrirvara að mat Gylfa er hikandi orðað í frumheimild («Líklegt er», «hefði áhrif») og er ekki módeluð spá. Þingræða Þorgerðar Katrínar 28. maí 2026 nefnir hins vegar 100 milljarða á ári í vaxtasparnað — sú tala er pólitísk fullyrðing sem heimildirnar staðfesta ekki.",
+      "supporting_evidence": [
+        {
+          "id": "CURR-DATA-029",
+          "source_name": "Evropuvefur - Gylfi Magnusson, \"Euro adoption and pension fund bond yields\" (University of Iceland, 2026)",
+          "source_url": "https://www.evropuvefur.is/svar.php?id=87971"
+        },
+        {
+          "id": "CURR-DATA-006",
+          "source_name": "Seðlabanki Íslands — Alþjóðaforðinn; Fjármálastöðugleikaskýrsla",
+          "source_url": "https://www.cb.is/statistics/international-reserves/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "currency",
+      "attribution": "asserted",
+      "article_slug": "krona-eda-evra-umraeda-sem-a-skilid-meira-en-slagord",
+      "article_title": "Króna eða evra? Um­ræða sem á skilið meira en slag­orð",
+      "article_source": "Sjálfstæðisflokkurinn",
+      "article_date": "2026-06-04"
+    },
+    {
+      "claim_text": "Með stærri gjaldmiðli myndi gjaldeyrisáhætta minnka, viðskiptakostnaður lækka og aðgangur að stærra fjármálasvæði aukast",
+      "original_quote": "Með stærri gjaldmiðli myndi gjaldeyrisáhætta minnka, viðskiptakostnaður lækka og aðgangur að stærra fjármálasvæði aukast.",
+      "verdict": "partially_supported",
+      "explanation": "Reynsla Króatíu styður kjarna fullyrðingarinnar: <a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Bank for International Settlements — Boris Vujčić speech: One Year with the Euro\" target=\"_blank\" rel=\"noopener\">CURR-DATA-018</a> sýnir að gjaldeyrisáhætta hvarf nánast alveg eftir evruupptöku (erlend skuldsetning féll úr ~70% í <1%) og lánshæfismat batnaði. <a href=\"https://www.cb.is/statistics/international-reserves/\" title=\"Seðlabanki Íslands — Alþjóðaforðinn; Fjármálastöðugleikaskýrsla\" target=\"_blank\" rel=\"noopener\">CURR-DATA-006</a> staðfestir verulegan kostnað við sjálfstæðan gjaldeyrisforða. Fullyrðingin sleppir hins vegar stærsta gallanum — tapaðri sjálfstæðri peningastefnu (<a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a>) — og að Ísland uppfyllir ekki viðmið Mundells um hagstætt myntsvæði (<a href=\"https://www.sfu.ca/~kkasa/mundell_61.pdf\" title=\"Mundell (1961) 'A Theory of Optimum Currency Areas'; Stiglitz (2016) 'The Euro'; CBI Working Papers\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-019</a>).",
+      "missing_context": "Króatía hafði bundið gengi kúnunnar við evru í áratugi fyrir upptöku, ólíkt fljótandi krónu Íslands (fyrirvari í <a href=\"https://www.bis.org/review/r240131a.htm\" title=\"Bank for International Settlements — Boris Vujčić speech: One Year with the Euro\" target=\"_blank\" rel=\"noopener\">CURR-DATA-018</a>). Kostirnir sem fullyrðingin nefnir koma á móti verulegum galla: Ísland missti sjálfstæða peningastefnu og gengissveigjanleika sem hefur verið aðlögunartæki í kreppu (<a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a>). Stiglitz bendir á í <a href=\"https://www.sfu.ca/~kkasa/mundell_61.pdf\" title=\"Mundell (1961) 'A Theory of Optimum Currency Areas'; Stiglitz (2016) 'The Euro'; CBI Working Papers\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-019</a> að evrusvæðið þvingi aðlögun í gegnum atvinnuleysi fremur en gengisleiðréttingar — sérstök áhætta fyrir lítil, sérhæfð hagkerfi.",
+      "supporting_evidence": [
+        {
+          "id": "CURR-DATA-018",
+          "source_name": "Bank for International Settlements — Boris Vujčić speech: One Year with the Euro",
+          "source_url": "https://www.bis.org/review/r240131a.htm"
+        },
+        {
+          "id": "CURR-DATA-006",
+          "source_name": "Seðlabanki Íslands — Alþjóðaforðinn; Fjármálastöðugleikaskýrsla",
+          "source_url": "https://www.cb.is/statistics/international-reserves/"
+        },
+        {
+          "id": "SOV-LEGAL-005",
+          "source_name": "Central Bank of Iceland — Monetary policy framework",
+          "source_url": "https://sedlabanki.is/peningastefna/"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "CURRENCY-DATA-019",
+          "source_name": "Mundell (1961) 'A Theory of Optimum Currency Areas'; Stiglitz (2016) 'The Euro'; CBI Working Papers",
+          "source_url": "https://www.sfu.ca/~kkasa/mundell_61.pdf"
+        }
+      ],
+      "category": "currency",
+      "attribution": "asserted",
+      "article_slug": "krona-eda-evra-umraeda-sem-a-skilid-meira-en-slagord",
+      "article_title": "Króna eða evra? Um­ræða sem á skilið meira en slag­orð",
+      "article_source": "Sjálfstæðisflokkurinn",
+      "article_date": "2026-06-04"
+    },
+    {
+      "claim_text": "Stærra fjármálasvæði gæti stuðlað að aukinni samkeppni og lægri fjármagnskostnaði",
+      "original_quote": "Það gæti stuðlað að aukinni samkeppni og lægri fjármagnskostnaði.",
+      "verdict": "partially_supported",
+      "explanation": "Spáin er varlega orðuð («gæti») og á sér nokkra stoð: <a href=\"https://www.visindavefur.is/svar.php?id=60906\" title=\"Vísindavefurinn — Jón Þór Sturluson, Associate Professor of Economics, Reykjavík University School of Business (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-015</a> metur að evruaðild gæti lækkað vexti um 3–4 prósentustig til langs tíma og <a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a> vísar í mat Viðskiptaráðs um lægri vexti og aukna erlenda fjárfestingu. <a href=\"https://www.sfu.ca/~kkasa/mundell_61.pdf\" title=\"Mundell (1961) 'A Theory of Optimum Currency Areas'; Stiglitz (2016) 'The Euro'; CBI Working Papers\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-019</a> dregur þó fram að ávinningur stærra myntsvæðis sé háður aðstæðum, og <a href=\"https://www.visindavefur.is/svar.php?id=60990\" title=\"Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-016</a> sýnir að vaxtasamleitni evrusvæðisins reyndist tálsýn í kreppunni 2010–2012. Lægri fjármagnskostnaður er því mögulegur en hvorki sjálfvirkur né tryggður.",
+      "missing_context": "<a href=\"https://www.visindavefur.is/svar.php?id=60906\" title=\"Vísindavefurinn — Jón Þór Sturluson, Associate Professor of Economics, Reykjavík University School of Business (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-015</a> er frá 2012 og fyrirvari heimildarinnar segir að 3–4 prósentustiga lækkunin geti ofmetið ávinninginn þar sem íslenskir vextir hafa lækkað verulega síðan. <a href=\"https://www.visindavefur.is/svar.php?id=60990\" title=\"Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-016</a> sýnir að vaxtasamleitni evrusvæðisins eftir 2002 reyndist tálsýn — fjármagnsflótti hækkaði vexti í veikari ríkjum í kreppunni þrátt fyrir sameiginlegan gjaldmiðil. Mat Viðskiptaráðs (<a href=\"https://vi.is/skyrslur/1667\" title=\"Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)\" target=\"_blank\" rel=\"noopener\">POL-DATA-017</a>) er líkanaháð og kann að ofmeta ávinning alþjóðlega tengdra fyrirtækja.",
+      "supporting_evidence": [
+        {
+          "id": "CURR-DATA-015",
+          "source_name": "Vísindavefurinn — Jón Þór Sturluson, Associate Professor of Economics, Reykjavík University School of Business (2012)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=60906"
+        },
+        {
+          "id": "POL-DATA-017",
+          "source_name": "Viðskiptaráð Íslands — 'The Economic Case for EU Membership' (2025)",
+          "source_url": "https://vi.is/skyrslur/1667"
+        },
+        {
+          "id": "CURR-DATA-016",
+          "source_name": "Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=60990"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "CURRENCY-DATA-019",
+          "source_name": "Mundell (1961) 'A Theory of Optimum Currency Areas'; Stiglitz (2016) 'The Euro'; CBI Working Papers",
+          "source_url": "https://www.sfu.ca/~kkasa/mundell_61.pdf"
+        }
+      ],
+      "category": "currency",
+      "attribution": "asserted",
+      "article_slug": "krona-eda-evra-umraeda-sem-a-skilid-meira-en-slagord",
+      "article_title": "Króna eða evra? Um­ræða sem á skilið meira en slag­orð",
+      "article_source": "Sjálfstæðisflokkurinn",
+      "article_date": "2026-06-04"
+    },
+    {
+      "claim_text": "Upptaka evru felur í sér að Ísland afsalar sér sjálfstæðri peningastefnu",
+      "original_quote": "Á móti kemur að upptaka evru felur í sér að Ísland afsalar sér sjálfstæðri peningastefnu.",
+      "verdict": "supported",
+      "explanation": "Heimildir staðfesta þetta beint. <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> segir skýrt að upptaka evru flytji vald yfir peningastefnu frá Seðlabanka Íslands til Seðlabanka Evrópu og að Ísland missi getuna til að ákveða eigin vexti og stýra gengi sjálfstætt. <a href=\"https://www.cb.is/statistics/international-reserves/\" title=\"Seðlabanki Íslands — Alþjóðaforðinn; Fjármálastöðugleikaskýrsla\" target=\"_blank\" rel=\"noopener\">CURR-DATA-006</a> staðfestir sömu staðreynd — að evruupptaka fjarlægi getuna til að nota peningastefnu sem aðlögunartæki. <a href=\"https://www.visindavefur.is/svar.php?id=87971\" title=\"Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (March 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-011</a> bætir við að ESB-aðild krefjist evruupptöku nema undanþága sé samin.",
+      "missing_context": "<a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> bætir við þeim fyrirvara að sumir hagfræðingar telji kosti gengisstöðugleika undir evru geta vegið þyngra en tap sjálfstæðrar peningastefnu fyrir lítið og opið hagkerfi, meðan aðrir telja sveigjanleika krónunnar mikilvægt aðlögunartæki. <a href=\"https://www.evropuvefur.is/svar.php?id=87971\" title=\"Evropuvefur - Gylfi Magnusson, \"Euro adoption and Denmark's krone peg\" (University of Iceland, 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-026</a> minnir á að Danmörk heldur formlega eigin krónu en hefur fest gengi hennar við evru, svo formlegt sjálfstæði er ekki alltaf raunverulegt.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-LEGAL-005",
+          "source_name": "Central Bank of Iceland — Monetary policy framework",
+          "source_url": "https://sedlabanki.is/peningastefna/"
+        },
+        {
+          "id": "CURR-DATA-006",
+          "source_name": "Seðlabanki Íslands — Alþjóðaforðinn; Fjármálastöðugleikaskýrsla",
+          "source_url": "https://www.cb.is/statistics/international-reserves/"
+        },
+        {
+          "id": "CURR-DATA-011",
+          "source_name": "Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (March 2026)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=87971"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "currency",
+      "attribution": "asserted",
+      "article_slug": "krona-eda-evra-umraeda-sem-a-skilid-meira-en-slagord",
+      "article_title": "Króna eða evra? Um­ræða sem á skilið meira en slag­orð",
+      "article_source": "Sjálfstæðisflokkurinn",
+      "article_date": "2026-06-04"
+    },
+    {
+      "claim_text": "Við evru yrðu vaxtaákvarðanir teknar með hagsmuni evrusvæðisins í huga en ekki íslensks hagkerfis sérstaklega",
+      "original_quote": "Vaxtaákvarðanir yrðu teknar með hagsmuni evrusvæðisins í huga en ekki íslensks hagkerfis sérstaklega.",
+      "verdict": "supported",
+      "explanation": "Fullyrðingin endurspeglar staðfesta virkni evrusvæðisins. <a href=\"https://sedlabanki.is/peningastefna/\" title=\"Central Bank of Iceland — Monetary policy framework\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-005</a> staðfestir að ECB tæki yfir vaxtaákvarðanir og Ísland missti getuna til að setja eigin vexti — ECB setur vexti með hagsmuni alls svæðisins í huga. <a href=\"https://www.visindavefur.is/svar.php?id=60990\" title=\"Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-016</a> sýnir áþreifanlega afleiðingu: í kreppunni 2010–2012 hækkuðu vextir í veikari ríkjum þrátt fyrir sameiginlega stefnu, því stefnan miðaðist ekki við þeirra sértæku aðstæður. <a href=\"https://www.sfu.ca/~kkasa/mundell_61.pdf\" title=\"Mundell (1961) 'A Theory of Optimum Currency Areas'; Stiglitz (2016) 'The Euro'; CBI Working Papers\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-019</a> styður þetta með rökum Stiglitz um að sameiginlegur gjaldmiðill þvingi aðlögun gegnum atvinnuleysi.",
+      "missing_context": "Þetta er almenn afleiðing myntbandalags fremur en sértæk fyrir Ísland. Hafa ber í huga að viðskipti Íslands eru að miklu leyti við evrusvæðið (ESB er um 50% af vöruviðskiptum, sbr. <a href=\"https://www.sfu.ca/~kkasa/mundell_61.pdf\" title=\"Mundell (1961) 'A Theory of Optimum Currency Areas'; Stiglitz (2016) 'The Euro'; CBI Working Papers\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-019</a>) og hagsveiflan hefur orðið samstilltari ESB eftir EES-aðild — sem dregur úr líkum á að stefna ECB henti Íslandi illa, þótt sértæk áföll í sjávarútvegi eða ferðaþjónustu deilist ekki með svæðinu.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-LEGAL-005",
+          "source_name": "Central Bank of Iceland — Monetary policy framework",
+          "source_url": "https://sedlabanki.is/peningastefna/"
+        },
+        {
+          "id": "CURR-DATA-016",
+          "source_name": "Vísindavefurinn — Ólafur Margeirsson, doctoral student in economics, University of Exeter (2012)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=60990"
+        },
+        {
+          "id": "CURRENCY-DATA-019",
+          "source_name": "Mundell (1961) 'A Theory of Optimum Currency Areas'; Stiglitz (2016) 'The Euro'; CBI Working Papers",
+          "source_url": "https://www.sfu.ca/~kkasa/mundell_61.pdf"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "currency",
+      "attribution": "asserted",
+      "article_slug": "krona-eda-evra-umraeda-sem-a-skilid-meira-en-slagord",
+      "article_title": "Króna eða evra? Um­ræða sem á skilið meira en slag­orð",
+      "article_source": "Sjálfstæðisflokkurinn",
+      "article_date": "2026-06-04"
+    },
+    {
+      "claim_text": "Norðurlöndin hafa byggt upp samfélagssátt um efnahagslegan stöðugleika sem hefur skilað lágri verðbólgu og lægra vaxtastigi",
+      "original_quote": "Þar hafa menn byggt upp samfélagssátt um efnahagslegan stöðugleika sem hefur skilað lágri verðbólgu og lægra vaxtastigi.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildirnar styðja að hin Norðurlöndin hafi haft stöðugri hagvöxt og lægri vexti en Ísland, en rekja það til annarra þátta en «samfélagssáttar». <a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG\" title=\"World Bank — World Development Indicators\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-009</a> sýnir að Noregur, Danmörk og Svíþjóð höfðu mun lægri hagvaxtarsveiflur en Ísland 2000–2023, og <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a> staðfestir mun lægra vaxtastig á evrusvæðinu. Gögnin tengja þetta þó við sjálfstæða og fljótandi krónu, verðbólguálag og stærð hagkerfisins fremur en «samfélagssátt», sem ekkert gagn nefnir beint.",
+      "missing_context": "Hugtakið «samfélagssátt» er ekki staðfest af neinni heimild — orsakatengslin sem fullyrðingin gefur til kynna eru ekki bein. <a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG\" title=\"World Bank — World Development Indicators\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-009</a> bendir á að meiri hagvaxtarsveiflur Íslands endurspegli að hluta smátt hagkerfi og þröngan útflutningsgrunn, ekki aðeins gjaldmiðilinn; Finnland á evrusvæðinu hafði einnig miklar sveiflur. Lægri vextir Norðurlanda tengjast því fremur stærra og fjölbreyttara hagkerfi og lægra verðbólguálagi en pólitískri sátt sem slíkri.",
+      "supporting_evidence": [
+        {
+          "id": "CURRENCY-DATA-009",
+          "source_name": "World Bank — World Development Indicators",
+          "source_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG"
+        },
+        {
+          "id": "HOUSING-DATA-008",
+          "source_name": "European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report",
+          "source_url": "https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "precedents",
+      "attribution": "asserted",
+      "article_slug": "krona-eda-evra-umraeda-sem-a-skilid-meira-en-slagord",
+      "article_title": "Króna eða evra? Um­ræða sem á skilið meira en slag­orð",
+      "article_source": "Sjálfstæðisflokkurinn",
+      "article_date": "2026-06-04"
+    },
+    {
+      "claim_text": "Sum Norðurlöndin nota evru en önnur ekki",
+      "original_quote": "Sum lönd nota evru, önnur ekki.",
+      "verdict": "supported",
+      "explanation": "Þetta er rétt og staðfest af heimildum. <a href=\"https://stat.fi/en/statistics/khi\" title=\"Statistics Finland — EU membership impact assessments; Eurostat — convergence indicators\" target=\"_blank\" rel=\"noopener\">PREC-HIST-018</a> staðfestir að Finnland tók upp evru árið 1999 og hefur verið í evrusvæðinu síðan. PREC-HIST-002 og <a href=\"https://www.stortinget.no/\" title=\"Stortinget — Votering over representantforslag om norsk EU-medlemskap (mars 2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-012</a> staðfesta að Noregur stendur utan ESB og notar eigin krónu, og <a href=\"https://www.evropuvefur.is/svar.php?id=65443\" title=\"Evropuvefur - Gylfi Magnusson, \"Hvad kostar ad halda uppi gjaldeyrisforda fyrir kronuna?\" (University of Iceland, 2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-042</a> vísar í íslensku krónuna sem sjálfstæðan gjaldmiðil. Danmörk og Svíþjóð halda einnig eigin gjaldmiðli, svo skiptingin sem fullyrðingin lýsir er staðreynd.",
+      "missing_context": "Engin heimild sundurliðar öll Norðurlöndin sérstaklega í einu gagni, en saman staðfesta þær myndina: Finnland notar evru, Noregur og Ísland eigin krónu utan ESB, og Danmörk og Svíþjóð halda eigin gjaldmiðli innan ESB (Danmörk með fastgengi við evru, sbr. <a href=\"https://www.evropuvefur.is/svar.php?id=87971\" title=\"Evropuvefur - Gylfi Magnusson, \"Euro adoption and Denmark's krone peg\" (University of Iceland, 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-026</a>). Fullyrðingin er einföld staðreynd sem stenst.",
+      "supporting_evidence": [
+        {
+          "id": "PREC-HIST-018",
+          "source_name": "Statistics Finland — EU membership impact assessments; Eurostat — convergence indicators",
+          "source_url": "https://stat.fi/en/statistics/khi"
+        },
+        {
+          "id": "PREC-HIST-002",
+          "source_name": "Sentio Research / Nationen polling series",
+          "source_url": null
+        },
+        {
+          "id": "PREC-DATA-012",
+          "source_name": "Stortinget — Votering over representantforslag om norsk EU-medlemskap (mars 2026)",
+          "source_url": "https://www.stortinget.no/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "precedents",
+      "attribution": "asserted",
+      "article_slug": "krona-eda-evra-umraeda-sem-a-skilid-meira-en-slagord",
+      "article_title": "Króna eða evra? Um­ræða sem á skilið meira en slag­orð",
+      "article_source": "Sjálfstæðisflokkurinn",
+      "article_date": "2026-06-04"
+    },
+    {
+      "claim_text": "Ísland hefur í gegnum tíðina þurft að takast á við náttúruhamfarir, sveiflur í sjávarútvegi, fjármálakreppur og heimsfaraldra",
+      "original_quote": "lítið og opið hagkerfi sem hefur í gegnum tíðina þurft að takast á við náttúruhamfarir, sveiflur í sjávarútvegi, fjármálakreppur, heimsfaraldra og aðrar séríslenskar áskoranir.",
+      "verdict": "supported",
+      "explanation": "Heimildir staðfesta þrjá af fjórum þáttum fullyrðingarinnar beint. CURRENCY-DATA-016 staðfestir bæði fjármálakreppuna 2008 (krónan féll um ~50%) og heimsfaraldurinn 2020 (~17% gengisfall), og <a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=IS\" title=\"World Bank — GDP growth (annual %) (NY.GDP.MKTP.KD.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-014</a> sýnir tvö djúp samdráttarskeið — 2008-kreppuna og COVID-áfallið. <a href=\"https://sedlabanki.is/hagtolur/gengi?PageID=289\" title=\"Seðlabanki Íslands — Capital account liberalisation reports\" target=\"_blank\" rel=\"noopener\">CURR-DATA-002</a> staðfestir fjármagnshöft í kjölfar bankahrunsins. Fullyrðingin er almenn lýsing á sögulegri reynslu Íslands sem gögnin styðja vel.",
+      "missing_context": "Heimildirnar staðfesta fjármálakreppur, heimsfaraldur og óbeint sveiflur tengdar smáu hagkerfi, en náttúruhamfarir sem slíkar eru ekki sérstaklega skjalfestar í þessum gögnum. <a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=IS\" title=\"World Bank — GDP growth (annual %) (NY.GDP.MKTP.KD.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-014</a> minnir á að mikil hagvaxtarsveifla í smáum hagkerfum sé að hluta byggingarleg óháð gjaldmiðli. Fullyrðingin er almenn og óumdeild lýsing fremur en töluleg staðhæfing.",
+      "supporting_evidence": [
+        {
+          "id": "CURRENCY-DATA-016",
+          "source_name": "Central Bank of Iceland — Exchange rate data; ECB — Statistical Data Warehouse",
+          "source_url": null
+        },
+        {
+          "id": "CURRENCY-DATA-014",
+          "source_name": "World Bank — GDP growth (annual %) (NY.GDP.MKTP.KD.ZG)",
+          "source_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=IS"
+        },
+        {
+          "id": "CURR-DATA-002",
+          "source_name": "Seðlabanki Íslands — Capital account liberalisation reports",
+          "source_url": "https://sedlabanki.is/hagtolur/gengi?PageID=289"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "currency",
+      "attribution": "asserted",
+      "article_slug": "krona-eda-evra-umraeda-sem-a-skilid-meira-en-slagord",
+      "article_title": "Króna eða evra? Um­ræða sem á skilið meira en slag­orð",
+      "article_source": "Sjálfstæðisflokkurinn",
+      "article_date": "2026-06-04"
     }
   ],
   "articles": [
@@ -138,6 +389,16 @@
       "attribution_types": [
         "paraphrased",
         "quoted"
+      ]
+    },
+    {
+      "slug": "krona-eda-evra-umraeda-sem-a-skilid-meira-en-slagord",
+      "title": "Króna eða evra? Um­ræða sem á skilið meira en slag­orð",
+      "source": "Sjálfstæðisflokkurinn",
+      "date": "2026-06-04",
+      "claim_count": 8,
+      "attribution_types": [
+        "asserted"
       ]
     }
   ],

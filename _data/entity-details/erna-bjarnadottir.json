@@ -9,17 +9,18 @@
   "stance_score": -0.14,
   "credibility": 0.72,
   "attribution_counts": {
-    "asserted": 52,
+    "asserted": 76,
     "quoted": 15,
     "paraphrased": 25,
     "mentioned": 2
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 52,
-    "supported": 27,
+    "partially_supported": 57,
+    "supported": 33,
     "misleading": 1,
-    "unsupported": 2
+    "unsupported": 3,
+    "unverifiable": 1
   },
   "claims": [
     {
@@ -2577,6 +2578,384 @@
       "article_title": "Hvenær eiga stjórnvöld að standa með eigin atvinnulífi?",
       "article_source": "Vísir",
       "article_date": "2026-05-12"
+    },
+    {
+      "claim_text": "Eurobarometer-könnunin mælir viðhorf til ESB en segir ekkert um hvort ESB sé eftirsóknarverðara fyrirkomulag en EES.",
+      "original_quote": "Könnunin mælir hins vegar ekki það sem ályktunin gefur í skyn. Hún mælir viðhorf, ekki hvort annað fyrirkomulagið sé hinu eftirsóknarverðara.",
+      "verdict": "supported",
+      "explanation": "Heimildir staðfesta þetta. <a href=\"https://europa.eu/eurobarometer/surveys/detail/3372\" title=\"European Commission — Standard Eurobarometer 103\" target=\"_blank\" rel=\"noopener\">POLL-INTL-001</a> tekur fram að spurningin snýst um hvort fólk telji land sitt hafa hagnast á aðild — viðhorfsmæling — og að engin sambærileg gögn séu til fyrir EES-ríki utan ESB. Aðferðafræðiheimildirnar <a href=\"https://fel.hi.is/is/rannsoknir-spurningalistakannanir/simakannanir\" title=\"Félagsvísindastofnun — Methodology notes on EU polling; comparison of Gallup, MMR, and Maskína polls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-010</a> og <a href=\"https://fel.hi.is/is/rannsoknir-spurningalistakannanir/netpanell\" title=\"Félagsvísindastofnun Háskóla Íslands — Rannsóknir á viðhorfum til Evrópumála; Gallup methodology notes\" target=\"_blank\" rel=\"noopener\">POLL-DATA-022</a> sýna enn fremur hve næmar slíkar mælingar eru fyrir orðalagi og því illa til þess fallnar að bera saman tvö ólík fyrirkomulag.",
+      "missing_context": "Eurobarometer mælir aðeins ESB-ríki, svo enginn beinn samanburður við EES-viðhorf Íslendinga er mögulegur úr þeim gögnum. Orðalagsáhrif eru veruleg samkvæmt <a href=\"https://fel.hi.is/is/rannsoknir-spurningalistakannanir/simakannanir\" title=\"Félagsvísindastofnun — Methodology notes on EU polling; comparison of Gallup, MMR, and Maskína polls\" target=\"_blank\" rel=\"noopener\">POLL-DATA-010</a> og <a href=\"https://fel.hi.is/is/rannsoknir-spurningalistakannanir/netpanell\" title=\"Félagsvísindastofnun Háskóla Íslands — Rannsóknir á viðhorfum til Evrópumála; Gallup methodology notes\" target=\"_blank\" rel=\"noopener\">POLL-DATA-022</a>, sem styrkir þá röksemd að viðhorfstala ein og sér segi ekki til um hvort fyrirkomulag sé eftirsóknarverðara.",
+      "supporting_evidence": [
+        {
+          "id": "POLL-INTL-001",
+          "source_name": "European Commission — Standard Eurobarometer 103",
+          "source_url": "https://europa.eu/eurobarometer/surveys/detail/3372"
+        },
+        {
+          "id": "POLL-DATA-010",
+          "source_name": "Félagsvísindastofnun — Methodology notes on EU polling; comparison of Gallup, MMR, and Maskína polls",
+          "source_url": "https://fel.hi.is/is/rannsoknir-spurningalistakannanir/simakannanir"
+        },
+        {
+          "id": "POLL-DATA-022",
+          "source_name": "Félagsvísindastofnun Háskóla Íslands — Rannsóknir á viðhorfum til Evrópumála; Gallup methodology notes",
+          "source_url": "https://fel.hi.is/is/rannsoknir-spurningalistakannanir/netpanell"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "polling",
+      "attribution": "asserted",
+      "article_slug": "er-esb-i-alvoru-svona-vinsaelt",
+      "article_title": "Er ESB í al­vöru svona vin­sælt?",
+      "article_source": "Vísir",
+      "article_date": "2026-06-04"
+    },
+    {
+      "claim_text": "Eurobarometer-könnunin sýnir ekki hvort Danir hefðu verið jafn ánægðir utan ESB, hvort Íslendingar yrðu ánægðari innan ESB, eða hvort munurinn stafi af aðildinni sjálfri.",
+      "original_quote": "Hún segir ekkert um hvort Danir væru jafn ánægðir utan ESB, hvort Íslendingar yrðu ánægðari innan ESB eða hvort munurinn stafi yfirleitt af aðildinni sjálfri.",
+      "verdict": "supported",
+      "explanation": "Rökfærslan er traust og samrýmist heimildunum. <a href=\"https://europa.eu/eurobarometer/surveys/detail/3372\" title=\"European Commission — Standard Eurobarometer 103\" target=\"_blank\" rel=\"noopener\">POLL-INTL-001</a> mælir aðeins ríkjandi viðhorf í ESB-ríkjum og getur eðli máls samkvæmt ekki sýnt gagnstæðar sviðsmyndir — hvað Danir teldu utan ESB eða Íslendingar innan þess. Engin könnun sem mælir núverandi viðhorf getur einangrað orsakatengsl aðildar frá öðrum þáttum.",
+      "missing_context": "Þetta er gagnstæð sviðsmynd (counterfactual): orsakagreining krefst samanburðar við ástand sem ekki er til staðar. <a href=\"https://ec.europa.eu/eurostat/databrowser/view/sdg_10_10/default/table\" title=\"Eurostat GDP per capita in PPS; European Commission Enlargement Reviews\" target=\"_blank\" rel=\"noopener\">PREC-DATA-023</a> bendir á að efnahagsleg samleitni nýrra ríkja hafi ráðist af mörgum þáttum umfram aðild og að gagnstæð greining sé erfið, sem styður þá ályktun að einföld viðhorfsmæling sýni ekki orsök.",
+      "supporting_evidence": [
+        {
+          "id": "POLL-INTL-001",
+          "source_name": "European Commission — Standard Eurobarometer 103",
+          "source_url": "https://europa.eu/eurobarometer/surveys/detail/3372"
+        },
+        {
+          "id": "PREC-DATA-023",
+          "source_name": "Eurostat GDP per capita in PPS; European Commission Enlargement Reviews",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/sdg_10_10/default/table"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "polling",
+      "attribution": "asserted",
+      "article_slug": "er-esb-i-alvoru-svona-vinsaelt",
+      "article_title": "Er ESB í al­vöru svona vin­sælt?",
+      "article_source": "Vísir",
+      "article_date": "2026-06-04"
+    },
+    {
+      "claim_text": "Í flestum aðildarríkjum Evrópusambandsins eru heilar kynslóðir sem hafa aldrei upplifað annað fyrirkomulag en ESB-aðild og hafa aldrei kosið um aðild.",
+      "original_quote": "Í flestum aðildarríkjum Evrópusambandsins eru nú heilar kynslóðir fæddar og uppaldar innan sambandsins og hafa aldrei upplifað annað fyrirkomulag. Þessar kynslóðir hafa aldrei kosið um aðild",
+      "verdict": "partially_supported",
+      "explanation": "Meginatriðið stenst en með fyrirvörum. Stofnríki og þau sem gengu inn fyrir áratugum hafa vissulega heilar kynslóðir sem aldrei kusu um aðild, en <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/167/the-enlargement-of-the-union\" title=\"European Parliament — Accession Referendums Database; Alþingi Parliamentary Records\" target=\"_blank\" rel=\"noopener\">PREC-DATA-024</a> sýnir að mörg nýrri ríki héldu þjóðaratkvæðagreiðslur (Austurríki, Finnland, Svíþjóð, ríkin 2004, Króatía 2013). Fullyrðingin um að kynslóðir hafi \"aldrei kosið um aðild\" á því ekki við um öll aðildarríki.",
+      "missing_context": "<a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/167/the-enlargement-of-the-union\" title=\"European Parliament — Accession Referendums Database; Alþingi Parliamentary Records\" target=\"_blank\" rel=\"noopener\">PREC-DATA-024</a> staðfestir að fjölmörg aðildarríki héldu aðildarþjóðaratkvæðagreiðslur, en sumum (t.d. Búlgaríu og Rúmeníu 2007) var einungis hleypt inn með þingsamþykki. Hjá stofnríkjum ESB var aðild oftast ekki borin undir þjóðaratkvæði, svo fullyrðingin á sterkast við um þau elstu, ekki nýrri ríki.",
+      "supporting_evidence": [
+        {
+          "id": "PREC-DATA-024",
+          "source_name": "European Parliament — Accession Referendums Database; Alþingi Parliamentary Records",
+          "source_url": "https://www.europarl.europa.eu/factsheets/en/sheet/167/the-enlargement-of-the-union"
+        },
+        {
+          "id": "PREC-DATA-022",
+          "source_name": "European Commission — Standard Eurobarometer 103, Spring 2025",
+          "source_url": "https://europa.eu/eurobarometer/"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "PREC-DATA-024",
+          "source_name": "European Parliament — Accession Referendums Database; Alþingi Parliamentary Records",
+          "source_url": "https://www.europarl.europa.eu/factsheets/en/sheet/167/the-enlargement-of-the-union"
+        }
+      ],
+      "category": "precedents",
+      "attribution": "asserted",
+      "article_slug": "er-esb-i-alvoru-svona-vinsaelt",
+      "article_title": "Er ESB í al­vöru svona vin­sælt?",
+      "article_source": "Vísir",
+      "article_date": "2026-06-04"
+    },
+    {
+      "claim_text": "Spánn gerðist aðili að Evrópusambandinu (þá Evrópubandalaginu) áður en 1995, þannig að Spánverjar fæddir 1995 hafa aldrei búið í landi utan sambandsins.",
+      "original_quote": "Spánverji fæddur árið 1995",
+      "verdict": "supported",
+      "explanation": "Heimildir staðfesta þetta. <a href=\"https://www.evropuvefur.is/svar.php?id=88601\" title=\"Evrópuvefurinn — Margrét Einarsdóttir, „Er eitthvað um að semja þegar ríki gera aðildarsamning við ESB?\" (prófessor við lagadeild HR / Reykjavík University, 2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-046</a> segir beint að Spánn hafi gengið í Evrópubandalagið árið 1986, sem er níu árum fyrir 1995. Spánverjar fæddir 1995 hafa því alla ævi búið í aðildarríki.",
+      "missing_context": "<a href=\"https://www.evropuvefur.is/svar.php?id=88601\" title=\"Evrópuvefurinn — Margrét Einarsdóttir, „Er eitthvað um að semja þegar ríki gera aðildarsamning við ESB?\" (prófessor við lagadeild HR / Reykjavík University, 2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-046</a> tekur fram að Spánn fékk langan aðlögunartíma í landbúnaði og sjávarútvegi við inngönguna, en það breytir ekki aðildardagsetningunni 1986 sem er kjarni fullyrðingarinnar.",
+      "supporting_evidence": [
+        {
+          "id": "PREC-DATA-046",
+          "source_name": "Evrópuvefurinn — Margrét Einarsdóttir, „Er eitthvað um að semja þegar ríki gera aðildarsamning við ESB?\" (prófessor við lagadeild HR / Reykjavík University, 2026)",
+          "source_url": "https://www.evropuvefur.is/svar.php?id=88601"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "precedents",
+      "attribution": "asserted",
+      "article_slug": "er-esb-i-alvoru-svona-vinsaelt",
+      "article_title": "Er ESB í al­vöru svona vin­sælt?",
+      "article_source": "Vísir",
+      "article_date": "2026-06-04"
+    },
+    {
+      "claim_text": "Pólland gerðist aðili að Evrópusambandinu árið 2004, þannig að Pólverjar fæddir árið 2004 hafa aldrei búið í landi utan sambandsins.",
+      "original_quote": "Pólverji fæddur árið 2004",
+      "verdict": "supported",
+      "explanation": "Heimildir staðfesta þetta. <a href=\"https://www.evropuvefur.is/svar.php?id=88601\" title=\"Evrópuvefurinn — Margrét Einarsdóttir, „Er eitthvað um að semja þegar ríki gera aðildarsamning við ESB?\" (prófessor við lagadeild HR / Reykjavík University, 2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-045</a> og <a href=\"https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-2023-27_en\" title=\"2003 Accession Treaty; 2005 Accession Treaty (Bulgaria/Romania); 2011 Croatia Accession Treaty; European Commission CAP reform documentation\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-016</a> staðfesta báðar að Pólland gekk í ESB árið 2004. Pólverjar fæddir það ár hafa því alla ævi átt heima í aðildarríki.",
+      "missing_context": "<a href=\"https://www.evropuvefur.is/svar.php?id=88601\" title=\"Evrópuvefurinn — Margrét Einarsdóttir, „Er eitthvað um að semja þegar ríki gera aðildarsamning við ESB?\" (prófessor við lagadeild HR / Reykjavík University, 2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-045</a> nefnir að Pólland fékk aðlögunartíma í landbúnaði og varðandi kaup útlendinga á landi, en þeir fyrirvarar haggast ekki við aðildarárið 2004 sem fullyrðingin byggir á.",
+      "supporting_evidence": [
+        {
+          "id": "PREC-DATA-045",
+          "source_name": "Evrópuvefurinn — Margrét Einarsdóttir, „Er eitthvað um að semja þegar ríki gera aðildarsamning við ESB?\" (prófessor við lagadeild HR / Reykjavík University, 2026)",
+          "source_url": "https://www.evropuvefur.is/svar.php?id=88601"
+        },
+        {
+          "id": "AGRI-DATA-016",
+          "source_name": "2003 Accession Treaty; 2005 Accession Treaty (Bulgaria/Romania); 2011 Croatia Accession Treaty; European Commission CAP reform documentation",
+          "source_url": "https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-2023-27_en"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "precedents",
+      "attribution": "asserted",
+      "article_slug": "er-esb-i-alvoru-svona-vinsaelt",
+      "article_title": "Er ESB í al­vöru svona vin­sælt?",
+      "article_source": "Vísir",
+      "article_date": "2026-06-04"
+    },
+    {
+      "claim_text": "Samkvæmt Mannþróunarvísitölu Sameinuðu þjóðanna (HDI) er Ísland í efsta sæti heimslistans.",
+      "original_quote": "Samkvæmt HumanDevelopmentIndex Sameinuðu þjóðanna (HDI) situr Ísland í efsta sæti heimslistans.",
+      "verdict": "partially_supported",
+      "explanation": "<a href=\"https://hdr.undp.org/data-center/human-development-index\" title=\"UNDP Human Development Report 2024; OECD Better Life Index\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-030</a> setur Ísland í 3. sæti á mannþróunarvísitölu Sameinuðu þjóðanna árið 2024 (gögn frá 2022) með HDI-gildið 0,959, á eftir Sviss (0,967) og Noregi (0,966). <a href=\"https://www.europarl.europa.eu/thinktank/en/document/EPRS_BRI(2026)782591\" title=\"IMF World Economic Outlook; Eurostat; EPRS Briefing on EU-Iceland Relations\" target=\"_blank\" rel=\"noopener\">PREC-DATA-025</a> nefnir hins vegar 1. sæti með 0,972, sem stangast á við áreiðanlegri og nákvæmari heimildina. Ísland er óumdeilanlega meðal fremstu ríkja heims, en «efsta sæti» er of víðtæk fullyrðing miðað við <a href=\"https://hdr.undp.org/data-center/human-development-index\" title=\"UNDP Human Development Report 2024; OECD Better Life Index\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-030</a>.",
+      "missing_context": "Heimildir stangast á um sætistölu Íslands — <a href=\"https://hdr.undp.org/data-center/human-development-index\" title=\"UNDP Human Development Report 2024; OECD Better Life Index\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-030</a> (HDI 2024, gögn 2022) sýnir 3. sæti með 0,959 en <a href=\"https://www.europarl.europa.eu/thinktank/en/document/EPRS_BRI(2026)782591\" title=\"IMF World Economic Outlook; Eurostat; EPRS Briefing on EU-Iceland Relations\" target=\"_blank\" rel=\"noopener\">PREC-DATA-025</a> segir 1. sæti með 0,972. Munurinn stafar líklega af mismunandi útgáfum eða gagnaárum. HDI mælir lífslíkur, menntun og þjóðartekjur en tekur ekki tillit til tekjudreifingar, húsnæðiskostnaðar eða efnahagslegs stöðugleika.",
+      "supporting_evidence": [
+        {
+          "id": "TRADE-DATA-030",
+          "source_name": "UNDP Human Development Report 2024; OECD Better Life Index",
+          "source_url": "https://hdr.undp.org/data-center/human-development-index"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "PREC-DATA-025",
+          "source_name": "IMF World Economic Outlook; Eurostat; EPRS Briefing on EU-Iceland Relations",
+          "source_url": "https://www.europarl.europa.eu/thinktank/en/document/EPRS_BRI(2026)782591"
+        }
+      ],
+      "category": "other",
+      "attribution": "asserted",
+      "article_slug": "thegar-umraedan-og-stadreyndirnar-fara-ekki-saman",
+      "article_title": "Þegar um­ræðan og stað­reyndirnar fara ekki saman",
+      "article_source": "Vísir",
+      "article_date": "2026-06-02"
+    },
+    {
+      "claim_text": "Af ríkjum Evrópusambandsins er Danmörk efst í HDI-röðun heimsins, í 4. sæti.",
+      "original_quote": "Af ríkjum Evrópusambandsins er Danmörk efst í 4. sæti",
+      "verdict": "unsupported",
+      "explanation": "<a href=\"https://hdr.undp.org/data-center/human-development-index\" title=\"UNDP Human Development Report 2024; OECD Better Life Index\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-030</a> staðfestir að Danmörk var í 7. sæti á mannþróunarvísitölunni 2024 (gögn 2022) með HDI 0,952 — ekki 4. sæti eins og fullyrt er. Þótt heimildin staðfesti að ekkert ESB-ríki hafi raðast ofar Íslandi, kemur sætistalan «4.» hvergi fram. Sætið sem nefnt er er rangt samkvæmt einu heimildinni sem geymir HDI-röðun.",
+      "missing_context": "<a href=\"https://hdr.undp.org/data-center/human-development-index\" title=\"UNDP Human Development Report 2024; OECD Better Life Index\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-030</a> byggir á HDI-skýrslunni 2024 sem notar gögn frá 2022 — sama gagnaári og fullyrðingin vísar til. Danmörk situr þar í 7. sæti, Svíþjóð í 8. og Finnland í 12. Hugsanlega er stuðst við aðra HDI-útgáfu, en gagnagrunnurinn geymir ekki röðun sem styður 4. sæti Danmerkur.",
+      "supporting_evidence": [
+        {
+          "id": "TRADE-DATA-030",
+          "source_name": "UNDP Human Development Report 2024; OECD Better Life Index",
+          "source_url": "https://hdr.undp.org/data-center/human-development-index"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "TRADE-DATA-030",
+          "source_name": "UNDP Human Development Report 2024; OECD Better Life Index",
+          "source_url": "https://hdr.undp.org/data-center/human-development-index"
+        }
+      ],
+      "category": "other",
+      "attribution": "asserted",
+      "article_slug": "thegar-umraedan-og-stadreyndirnar-fara-ekki-saman",
+      "article_title": "Þegar um­ræðan og stað­reyndirnar fara ekki saman",
+      "article_source": "Vísir",
+      "article_date": "2026-06-02"
+    },
+    {
+      "claim_text": "Ísland og önnur Norðurlönd hafa um langt árabil mælst meðal þeirra samfélaga heims þar sem tekjuójöfnuður er hvað minnstur.",
+      "original_quote": "Ísland og önnur Norðurlönd hafa um langt árabil mælst meðal þeirra samfélaga heims þar sem tekjuójöfnuður er hvað minnstur.",
+      "verdict": "unverifiable",
+      "explanation": "Engin heimild í gagnagrunninum mælir tekjuójöfnuð beint — hvorki Gini-stuðla né aðra dreifingarmælikvarða fyrir Ísland eða Norðurlöndin. <a href=\"https://hdr.undp.org/data-center/human-development-index\" title=\"UNDP Human Development Report 2024; OECD Better Life Index\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-030</a> nefnir þvert á móti að Ísland skori lægra á tekjudreifingu í OECD Better Life Index. Heimildirnar fjalla um VLF, verðlag og atvinnuleysi en veita ekki gögn til að staðfesta að norrænn tekjuójöfnuður sé með þeim minnsta í heimi.",
+      "missing_context": "Beinar mælingar á tekjuójöfnuði (Gini-stuðlar, tekjudreifing) vantar í gagnagrunninn. <a href=\"https://hdr.undp.org/data-center/human-development-index\" title=\"UNDP Human Development Report 2024; OECD Better Life Index\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-030</a> bendir á að Ísland skori lægra á tekjudreifingu og húsnæðisaðgengi í OECD Better Life Index, sem flækir myndina. Þótt norrænn tekjujöfnuður sé vel þekktur í alþjóðlegum mælingum styðja fyrirliggjandi heimildir hann ekki með tölum.",
+      "supporting_evidence": [
+        {
+          "id": "TRADE-DATA-030",
+          "source_name": "UNDP Human Development Report 2024; OECD Better Life Index",
+          "source_url": "https://hdr.undp.org/data-center/human-development-index"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "TRADE-DATA-030",
+          "source_name": "UNDP Human Development Report 2024; OECD Better Life Index",
+          "source_url": "https://hdr.undp.org/data-center/human-development-index"
+        }
+      ],
+      "category": "other",
+      "attribution": "asserted",
+      "article_slug": "thegar-umraedan-og-stadreyndirnar-fara-ekki-saman",
+      "article_title": "Þegar um­ræðan og stað­reyndirnar fara ekki saman",
+      "article_source": "Vísir",
+      "article_date": "2026-06-02"
+    },
+    {
+      "claim_text": "Gini-stuðullinn í Tékkland árið 2022 var 24,8 stig, sem er tiltölulega jöfn tekjudreifing, en þjóðartekjur og kaupmáttur á mann eru mun lægri en á Íslandi.",
+      "original_quote": "Sum Austur-Evrópuríki, svo sem Tékkland (24,8) og Slóvenía (23,1), búa við tiltölulega jafna tekjudreifingu en eru engu að síður með mun lægri þjóðartekjur og kaupmátt á mann en Ísland.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin er tvíþætt. Gini-talan 24,8 fyrir Tékkland verður ekki sannreynd — engin heimild geymir Gini-stuðla einstakra ríkja. Síðari hluti fullyrðingarinnar er hins vegar studdur: <a href=\"https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/\" title=\"Eurostat — Purchasing power parities (prc_ppp_ind)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-006</a> og <a href=\"https://www.imf.org/en/Publications/WEO\" title=\"IMF World Economic Outlook Database — October 2024\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-002</a> sýna að VLF á mann á Íslandi er um 29–32% yfir meðaltali ESB, og Tékkland er undir því meðaltali, svo kaupmáttur og þjóðartekjur þar eru sannanlega lægri en á Íslandi.",
+      "missing_context": "Gini-stuðullinn 24,8 fyrir Tékkland liggur ekki fyrir í gagnagrunninum og er ósannreynanlegur. Heimildirnar gefa VLF á mann fyrir Ísland og meðaltal ESB en ekki sérstaka tölu fyrir Tékkland; samanburðurinn um lægri kaupmátt byggir á því að Tékkland er undir meðaltali ESB, sem Ísland er vel yfir.",
+      "supporting_evidence": [
+        {
+          "id": "CURRENCY-DATA-006",
+          "source_name": "Eurostat — Purchasing power parities (prc_ppp_ind)",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/"
+        },
+        {
+          "id": "TRADE-COMP-002",
+          "source_name": "IMF World Economic Outlook Database — October 2024",
+          "source_url": "https://www.imf.org/en/Publications/WEO"
+        },
+        {
+          "id": "CURRENCY-DATA-012",
+          "source_name": "World Bank — World Development Indicators",
+          "source_url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "other",
+      "attribution": "asserted",
+      "article_slug": "thegar-umraedan-og-stadreyndirnar-fara-ekki-saman",
+      "article_title": "Þegar um­ræðan og stað­reyndirnar fara ekki saman",
+      "article_source": "Vísir",
+      "article_date": "2026-06-02"
+    },
+    {
+      "claim_text": "Gini-stuðullinn í Búlgaríu árið 2022 var 38,4 stig og þjóðartekjur á íbúa verulega lægri en á Íslandi.",
+      "original_quote": "Á hinn bóginn glíma til dæmis Búlgaría (38,4), Lettland (36,2) og Litháen (34,3) við meiri ójöfnuð auk þess sem þjóðartekjur á íbúa eru verulega lægri en á Íslandi.",
+      "verdict": "partially_supported",
+      "explanation": "Fullyrðingin skiptist í tvennt. Gini-talan 38,4 fyrir Búlgaríu er ósannreynanleg — gagnagrunnurinn geymir engar Gini-tölur. Hluti fullyrðingarinnar um lægri þjóðartekjur stenst hins vegar: <a href=\"https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/\" title=\"Eurostat — Purchasing power parities (prc_ppp_ind)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-006</a> og <a href=\"https://www.imf.org/en/Publications/WEO\" title=\"IMF World Economic Outlook Database — October 2024\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-002</a> sýna að VLF á mann á Íslandi er um 29–32% yfir meðaltali ESB, og Búlgaría er meðal fátækustu ESB-ríkjanna, svo þjóðartekjur þar eru sannanlega mun lægri.",
+      "missing_context": "Gini-stuðullinn 38,4 fyrir Búlgaríu er ekki í gagnagrunninum og verður ekki staðfestur. Heimildirnar gefa enga sérstaka VLF-tölu fyrir Búlgaríu; ályktunin um lægri þjóðartekjur byggir á stöðu Íslands langt yfir meðaltali ESB og almennri stöðu Búlgaríu undir því.",
+      "supporting_evidence": [
+        {
+          "id": "CURRENCY-DATA-006",
+          "source_name": "Eurostat — Purchasing power parities (prc_ppp_ind)",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind/"
+        },
+        {
+          "id": "TRADE-COMP-002",
+          "source_name": "IMF World Economic Outlook Database — October 2024",
+          "source_url": "https://www.imf.org/en/Publications/WEO"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "other",
+      "attribution": "asserted",
+      "article_slug": "thegar-umraedan-og-stadreyndirnar-fara-ekki-saman",
+      "article_title": "Þegar um­ræðan og stað­reyndirnar fara ekki saman",
+      "article_source": "Vísir",
+      "article_date": "2026-06-02"
+    },
+    {
+      "claim_text": "Evrópusambandið er ekki eitt samræmt félagslegt eða efnahagslegt líkan — aðild tryggir hvorki sjálfkrafa meiri jöfnuð né betri lífskjör.",
+      "original_quote": "Þetta sýnir glöggt að Evrópusambandið er ekki eitt samræmt félagslegt eða efnahagslegt módel. Lífskjör, félagslegt öryggi og tekjudreifing ráðast af fjölmörgum þáttum og aðild að sambandinu tryggir hvorki sjálfkrafa meiri jöfnuð né betri lífskjör.",
+      "verdict": "supported",
+      "explanation": "Heimildir staðfesta að ESB-ríki dreifast yfir allan skala lífsgæða og tekjudreifingar. <a href=\"https://hdr.undp.org/data-center/human-development-index\" title=\"UNDP Human Development Report 2024; OECD Better Life Index\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-030</a> segir berum orðum að tengsl ESB-aðildar og HDI séu veik — bæði ESB-ríki og ríki utan þess birtast á öllu rófinu — og að orsakatenging milli lífskjara og aðildarstöðu sé rökleysa. <a href=\"https://www.efta.int/eea/eea-agreement/eea-basic-features\" title=\"EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'\" target=\"_blank\" rel=\"noopener\">EEA-LEGAL-022</a> og <a href=\"https://www.efta.int/eea/eea-agreement\" title=\"EFTA Secretariat — The EEA Agreement; ESA Internal Market Scoreboard; EEA Joint Committee\" target=\"_blank\" rel=\"noopener\">EEA-DATA-010</a> sýna jafnframt að mörg samræmingarsvið (landbúnaður, sjávarútvegur, gjaldmiðill, skattamál) standa utan sameiginlegs ESB-ramma, sem rennir stoðum undir að sambandið sé ekki eitt samræmt líkan.",
+      "missing_context": "<a href=\"https://hdr.undp.org/data-center/human-development-index\" title=\"UNDP Human Development Report 2024; OECD Better Life Index\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-030</a> bendir á að há lífsgæði geti haft margar orsakir og að orsakatenging við aðildarstöðu sé veik í báðar áttir. Fullyrðingin er almenns eðlis og heimildirnar styðja kjarna hennar, þótt þær fjalli ekki sérstaklega um tekjudreifingu sem mælikvarða.",
+      "supporting_evidence": [
+        {
+          "id": "TRADE-DATA-030",
+          "source_name": "UNDP Human Development Report 2024; OECD Better Life Index",
+          "source_url": "https://hdr.undp.org/data-center/human-development-index"
+        },
+        {
+          "id": "EEA-LEGAL-022",
+          "source_name": "EEA Agreement, Protocol 47 and Annexes I–XXII; EFTA Secretariat — 'The EEA Agreement: Coverage and Scope'",
+          "source_url": "https://www.efta.int/eea/eea-agreement/eea-basic-features"
+        },
+        {
+          "id": "EEA-DATA-010",
+          "source_name": "EFTA Secretariat — The EEA Agreement; ESA Internal Market Scoreboard; EEA Joint Committee",
+          "source_url": "https://www.efta.int/eea/eea-agreement"
+        },
+        {
+          "id": "EEA-LEGAL-003",
+          "source_name": "EEA Agreement, Article 1 and Protocol 47",
+          "source_url": "https://www.efta.int/eea/eea-agreement"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "other",
+      "attribution": "asserted",
+      "article_slug": "thegar-umraedan-og-stadreyndirnar-fara-ekki-saman",
+      "article_title": "Þegar um­ræðan og stað­reyndirnar fara ekki saman",
+      "article_source": "Vísir",
+      "article_date": "2026-06-02"
+    },
+    {
+      "claim_text": "Alþjóðlegar mælingar benda til þess að Ísland standi mjög sterkt þegar kemur að lífsgæðum, tekjudreifingu og félagslegu öryggi í samanburði við flest önnur ríki Evrópu.",
+      "original_quote": "Alþjóðlegar mælingar benda þvert á móti til þess að Ísland standi enn mjög sterkt þegar kemur að lífsgæðum, tekjudreifingu og félagslegu öryggi í samanburði við flest önnur ríki Evrópu.",
+      "verdict": "partially_supported",
+      "explanation": "Lífsgæðahlutinn er vel studdur: <a href=\"https://hdr.undp.org/data-center/human-development-index\" title=\"UNDP Human Development Report 2024; OECD Better Life Index\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-030</a> setur Ísland í 3. sæti á HDI og <a href=\"https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS\" title=\"World Bank — World Development Indicators\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-011</a> sýnir lægsta atvinnuleysi meðal Norðurlanda. Tekjudreifingarhlutinn er hins vegar veikari — <a href=\"https://hdr.undp.org/data-center/human-development-index\" title=\"UNDP Human Development Report 2024; OECD Better Life Index\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-030</a> nefnir þvert á móti að Ísland skori lægra á tekjudreifingu í OECD Better Life Index, og engin heimild gefur dreifingartölur sem staðfesta sterka stöðu Íslands á því sviði sérstaklega.",
+      "missing_context": "<a href=\"https://hdr.undp.org/data-center/human-development-index\" title=\"UNDP Human Development Report 2024; OECD Better Life Index\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-030</a> staðfestir sterka stöðu Íslands á lífsgæðum en bendir um leið á að Ísland skori lægra á tekjudreifingu og húsnæðisaðgengi í OECD Better Life Index. Beinar mælingar á tekjuójöfnuði og félagslegu öryggi vantar í gagnagrunninn, svo þeir hlutar fullyrðingarinnar standa ekki á jafn traustum grunni og lífsgæðahlutinn.",
+      "supporting_evidence": [
+        {
+          "id": "TRADE-DATA-030",
+          "source_name": "UNDP Human Development Report 2024; OECD Better Life Index",
+          "source_url": "https://hdr.undp.org/data-center/human-development-index"
+        },
+        {
+          "id": "CURRENCY-DATA-011",
+          "source_name": "World Bank — World Development Indicators",
+          "source_url": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS"
+        },
+        {
+          "id": "TRADE-COMP-002",
+          "source_name": "IMF World Economic Outlook Database — October 2024",
+          "source_url": "https://www.imf.org/en/Publications/WEO"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "TRADE-DATA-030",
+          "source_name": "UNDP Human Development Report 2024; OECD Better Life Index",
+          "source_url": "https://hdr.undp.org/data-center/human-development-index"
+        }
+      ],
+      "category": "other",
+      "attribution": "asserted",
+      "article_slug": "thegar-umraedan-og-stadreyndirnar-fara-ekki-saman",
+      "article_title": "Þegar um­ræðan og stað­reyndirnar fara ekki saman",
+      "article_source": "Vísir",
+      "article_date": "2026-06-02"
+    },
+    {
+      "claim_text": "Fá ríki í heiminum mælast jafn hátt og Ísland þegar kemur að lífsgæðum, heilsu, menntun og félagslegu öryggi.",
+      "original_quote": "Fá ríki í heiminum mælast jafn hátt og Ísland þegar kemur að lífsgæðum, heilsu, menntun og félagslegu öryggi.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://hdr.undp.org/data-center/human-development-index\" title=\"UNDP Human Development Report 2024; OECD Better Life Index\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-030</a> staðfestir að Ísland raðast jafnan meðal fremstu ríkja heims á lífsgæðavísitölum og var í 3. sæti á mannþróunarvísitölu Sameinuðu þjóðanna 2024, þar sem HDI mælir einmitt lífslíkur, menntun og þjóðartekjur. <a href=\"https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS\" title=\"World Bank — World Development Indicators\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-011</a> sýnir auk þess lægsta atvinnuleysi meðal Norðurlanda. Fullyrðingin um að «fá ríki mælist jafn hátt» er hófleg og samrýmist gögnunum.",
+      "missing_context": "<a href=\"https://hdr.undp.org/data-center/human-development-index\" title=\"UNDP Human Development Report 2024; OECD Better Life Index\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-030</a> minnir á að HDI tekur ekki til tekjudreifingar, húsnæðiskostnaðar eða efnahagslegs stöðugleika, og að Ísland skori lægra á tekjudreifingu og húsnæðisaðgengi í OECD Better Life Index. Fullyrðingin nær einkum lífsgæðum, heilsu og menntun, þar sem staða Íslands er sannanlega sterk; félagslegt öryggi er ekki mælt beint í heimildunum.",
+      "supporting_evidence": [
+        {
+          "id": "TRADE-DATA-030",
+          "source_name": "UNDP Human Development Report 2024; OECD Better Life Index",
+          "source_url": "https://hdr.undp.org/data-center/human-development-index"
+        },
+        {
+          "id": "CURRENCY-DATA-011",
+          "source_name": "World Bank — World Development Indicators",
+          "source_url": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS"
+        },
+        {
+          "id": "CURRENCY-DATA-012",
+          "source_name": "World Bank — World Development Indicators",
+          "source_url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "other",
+      "attribution": "asserted",
+      "article_slug": "thegar-umraedan-og-stadreyndirnar-fara-ekki-saman",
+      "article_title": "Þegar um­ræðan og stað­reyndirnar fara ekki saman",
+      "article_source": "Vísir",
+      "article_date": "2026-06-02"
     }
   ],
   "articles": [
@@ -2668,6 +3047,26 @@
       "source": "Vísir",
       "date": "2026-05-12",
       "claim_count": 1,
+      "attribution_types": [
+        "asserted"
+      ]
+    },
+    {
+      "slug": "er-esb-i-alvoru-svona-vinsaelt",
+      "title": "Er ESB í al­vöru svona vin­sælt?",
+      "source": "Vísir",
+      "date": "2026-06-04",
+      "claim_count": 5,
+      "attribution_types": [
+        "asserted"
+      ]
+    },
+    {
+      "slug": "thegar-umraedan-og-stadreyndirnar-fara-ekki-saman",
+      "title": "Þegar um­ræðan og stað­reyndirnar fara ekki saman",
+      "source": "Vísir",
+      "date": "2026-06-02",
+      "claim_count": 8,
       "attribution_types": [
         "asserted"
       ]

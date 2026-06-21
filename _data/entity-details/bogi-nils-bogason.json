@@ -6,16 +6,16 @@
   "role": "forstjóri Icelandair",
   "party": "Sjálfstæðisflokkur",
   "stance": "mixed",
-  "stance_score": -0.2,
+  "stance_score": -0.17,
   "credibility": 0.5,
   "attribution_counts": {
     "asserted": 7,
-    "quoted": 7,
-    "paraphrased": 10
+    "quoted": 8,
+    "paraphrased": 11
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 12,
+    "partially_supported": 13,
     "unsupported": 1
   },
   "claims": [
@@ -425,6 +425,37 @@
       "article_title": "ESB-sinni staðinn að undirferli",
       "article_source": "Blog.is",
       "article_date": "2026-03-28"
+    },
+    {
+      "claim_text": "Forstjóri Icelandair hefur sagt að ETS-gjöld muni þrefaldast að óbreyttu þegar sérlausnin rennur út.",
+      "original_quote": "„Bogi hefur sagt að gjöldin muni því þrefaldast að óbreyttu.\"",
+      "verdict": "partially_supported",
+      "explanation": "Heimildirnar styðja orsakakeðjuna að baki spánni: fríúthlutun í flugi fellur niður frá 2026 (<a href=\"https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/allocation-aviation-sector_en\" title=\"European Commission — Allocation to the aviation sector; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-DATA-001</a>) og kolefnisverð hefur legið á bilinu 50–80 evrur á tonn (<a href=\"https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/allocation-aviation-sector_en\" title=\"European Commission — Allocation to the aviation sector; Directive (EU) 2023/958\" target=\"_blank\" rel=\"noopener\">ETS-DATA-001</a>, <a href=\"https://ust.is/atvinnulif/ets/\" title=\"Umhverfisstofnun — Iceland's participation in EU ETS; European Commission — EU ETS data\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-002</a>), svo brottfall sérlausnar leiðir rökrétt til verulegrar hækkunar gjalda. Tiltekna þreföldunin er hins vegar mat forstjórans sjálfs sem engin heimild reiknar eða staðfestir. Sem spá um framtíð er stuðningurinn bundinn rökfærslunni, ekki nákvæmu margfeldinu.",
+      "missing_context": "Nákvæm þreföldun ræðst af kolefnisverði og losunarmagni sem sveiflast; engin heimild gefur þennan margfaldara. <a href=\"https://ust.is/atvinnulif/ets/\" title=\"Umhverfisstofnun — Iceland's participation in EU ETS; European Commission — EU ETS data\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-002</a> bendir á að verð á losunarheimildum hafi margfaldast frá 2018, svo stærðargráðan er trúverðug en talan sjálf er órekjanleg.",
+      "supporting_evidence": [
+        {
+          "id": "ETS-DATA-001",
+          "source_name": "European Commission — Allocation to the aviation sector; Directive (EU) 2023/958",
+          "source_url": "https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/allocation-aviation-sector_en"
+        },
+        {
+          "id": "ENERGY-LEGAL-002",
+          "source_name": "Umhverfisstofnun — Iceland's participation in EU ETS; European Commission — EU ETS data",
+          "source_url": "https://ust.is/atvinnulif/ets/"
+        },
+        {
+          "id": "ETS-DATA-002",
+          "source_name": "Iceland Review; Carbon Pulse; European Commission",
+          "source_url": "https://www.icelandreview.com/news/icelands-free-emissions-allowances-extended-until-2026/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "quoted",
+      "article_slug": "loftslagsgjoldin-ordin-milljardakostnadur-i-thungum-rekstri-icelandair",
+      "article_title": "Lofts­lags­gjöldin orðin milljarða­kostnaður í þungum rekstri Icelandair",
+      "article_source": "Vísir",
+      "article_date": "2026-06-04"
     }
   ],
   "articles": [
@@ -468,6 +499,16 @@
       "claim_count": 1,
       "attribution_types": [
         "paraphrased"
+      ]
+    },
+    {
+      "slug": "loftslagsgjoldin-ordin-milljardakostnadur-i-thungum-rekstri-icelandair",
+      "title": "Lofts­lags­gjöldin orðin milljarða­kostnaður í þungum rekstri Icelandair",
+      "source": "Vísir",
+      "date": "2026-06-04",
+      "claim_count": 1,
+      "attribution_types": [
+        "quoted"
       ]
     }
   ],

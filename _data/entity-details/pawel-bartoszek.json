@@ -6,19 +6,21 @@
   "role": "formaður utanríkismálanefndar Alþingis",
   "party": "Viðreisn",
   "stance": "pro_eu",
-  "stance_score": 0.53,
-  "credibility": 0.69,
+  "stance_score": 0.58,
+  "credibility": 0.65,
   "attribution_counts": {
     "asserted": 15,
     "quoted": 14,
-    "paraphrased": 26,
-    "mentioned": 8
+    "paraphrased": 33,
+    "mentioned": 10
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 20,
-    "supported": 9,
-    "unverifiable": 2
+    "partially_supported": 21,
+    "supported": 10,
+    "unverifiable": 3,
+    "misleading": 1,
+    "unsupported": 1
   },
   "claims": [
     {
@@ -1043,6 +1045,155 @@
       "article_title": "Króatía sem viðvörunarsaga",
       "article_source": "Blog.is",
       "article_date": "2026-06-19"
+    },
+    {
+      "claim_text": "Samkvæmt Eurobarometer-könnun eru 58% íbúa ESB-aðildarríkja jákvæð í garð aðildar síns lands að Evrópusambandinu.",
+      "original_quote": "58% íbúanna séu jákvæð í garð aðildar lands síns að sambandinu",
+      "verdict": "misleading",
+      "explanation": "Talan 58% kemur hvergi fram í heimildunum. <a href=\"https://europa.eu/eurobarometer/surveys/detail/3372\" title=\"European Commission — Standard Eurobarometer 103\" target=\"_blank\" rel=\"noopener\">POLL-INTL-001</a> mælir 73% sem telja að land sitt hafi hagnast á ESB-aðild — það er önnur spurning en hvort fólk sé jákvætt í garð aðildar. Hér er töluverður munur bæði á tölunni og á því sem könnunin spyr um.",
+      "missing_context": "Eurobarometer 103 spyr hvort fólk telji land sitt hafa hagnast á aðildinni, ekki hvort það styðji aðild. <a href=\"https://europa.eu/eurobarometer/surveys/detail/3372\" title=\"European Commission — Standard Eurobarometer 103\" target=\"_blank\" rel=\"noopener\">POLL-INTL-001</a> nefnir 73% sem ESB-meðaltal, ekki 58%, og bætir við að hlutfallið sé mjög breytilegt milli landa (frá ~50% upp í >90%). Orðalag spurningarinnar skiptir máli og uppgefin tala finnst ekki í gögnunum.",
+      "supporting_evidence": [
+        {
+          "id": "POLL-INTL-001",
+          "source_name": "European Commission — Standard Eurobarometer 103",
+          "source_url": "https://europa.eu/eurobarometer/surveys/detail/3372"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "POLL-INTL-001",
+          "source_name": "European Commission — Standard Eurobarometer 103",
+          "source_url": "https://europa.eu/eurobarometer/surveys/detail/3372"
+        }
+      ],
+      "category": "polling",
+      "attribution": "paraphrased",
+      "article_slug": "er-esb-i-alvoru-svona-vinsaelt",
+      "article_title": "Er ESB í al­vöru svona vin­sælt?",
+      "article_source": "Vísir",
+      "article_date": "2026-06-04"
+    },
+    {
+      "claim_text": "82% Svía eru jákvæð í garð ESB-aðildar samkvæmt Eurobarometer-könnuninni.",
+      "original_quote": "sömuleiðis 82% Svía",
+      "verdict": "unverifiable",
+      "explanation": "Landstala fyrir Svíþjóð kemur ekki fram í neinni heimild. <a href=\"https://europa.eu/eurobarometer/surveys/detail/3372\" title=\"European Commission — Standard Eurobarometer 103\" target=\"_blank\" rel=\"noopener\">POLL-INTL-001</a> birtir einungis ESB-meðaltalið 73% án sundurliðunar eftir ríkjum. Fyrra bankamatið sem birtist hér á við aðra tölu — 52,3% Svía sem greiddu atkvæði með aðild 1994 — og snýr ekki að Eurobarometer-viðhorfsmælingu.",
+      "missing_context": "Fyrra mat úr fullyrðingabanka vísar í <a href=\"https://www.europarl.europa.eu/factsheets/en/sheet/167/the-enlargement-of-the-union\" title=\"European Parliament — Accession Referendums Database; Alþingi Parliamentary Records\" target=\"_blank\" rel=\"noopener\">PREC-DATA-024</a> og söguleg úrslit þjóðaratkvæðagreiðslunnar 1994 (52,3%), ekki í Eurobarometer-viðhorf. Þessi fullyrðing snýr að allt öðru — núverandi viðhorfi Svía í Eurobarometer — og fyrir það liggja engin landssundurliðuð gögn fyrir í grunninum.",
+      "supporting_evidence": [
+        {
+          "id": "POLL-INTL-001",
+          "source_name": "European Commission — Standard Eurobarometer 103",
+          "source_url": "https://europa.eu/eurobarometer/surveys/detail/3372"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "polling",
+      "attribution": "paraphrased",
+      "article_slug": "er-esb-i-alvoru-svona-vinsaelt",
+      "article_title": "Er ESB í al­vöru svona vin­sælt?",
+      "article_source": "Vísir",
+      "article_date": "2026-06-04"
+    },
+    {
+      "claim_text": "58% Íslendinga eru jákvæð í garð EES-samningsins — sama hlutfall og þeirra sem eru jákvæðir gagnvart ESB í Eurobarometer-könnuninni.",
+      "original_quote": "58% Íslendinga séu jákvæð í garð EES-samningsins (sama hlutfall og þeirra sem eru jákvæðir gagnvart ESB í könnun Eurobarometer)",
+      "verdict": "unsupported",
+      "explanation": "Hvorki talan 58% um EES-stuðning Íslendinga né samanburðurinn við Eurobarometer finnst í heimildunum. <a href=\"https://europa.eu/eurobarometer/surveys/detail/3372\" title=\"European Commission — Standard Eurobarometer 103\" target=\"_blank\" rel=\"noopener\">POLL-INTL-001</a> tekur sérstaklega fram að Eurobarometer nái aðeins til ESB-ríkja og að engin sambærileg gögn séu til fyrir EES-ríki utan ESB á borð við Ísland. Samanburðurinn byggir því á tölum sem ekki eru samanburðarhæfar.",
+      "missing_context": "Eurobarometer mælir aðeins ESB-ríki; ekkert sambærilegt Eurobarometer-tal er til fyrir Ísland. Innlendar kannanir í grunninum (<a href=\"https://www.gallup.is/nidurstodur/thjodarpuls/\" title=\"Gallup Ísland — Þjóðarpúls, February–March 2026\" target=\"_blank\" rel=\"noopener\">POLL-DATA-014</a>) mæla stuðning við ESB-aðild eða viðræður (um 42%), ekki viðhorf til EES-samningsins, og engin heimild gefur 58% EES-stuðning. Samanburður á EES-viðhorfi Íslendinga og ESB-viðhorfi í Eurobarometer er því ekki á sömu mælistiku.",
+      "supporting_evidence": [
+        {
+          "id": "POLL-INTL-001",
+          "source_name": "European Commission — Standard Eurobarometer 103",
+          "source_url": "https://europa.eu/eurobarometer/surveys/detail/3372"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "POLL-INTL-001",
+          "source_name": "European Commission — Standard Eurobarometer 103",
+          "source_url": "https://europa.eu/eurobarometer/surveys/detail/3372"
+        }
+      ],
+      "category": "polling",
+      "attribution": "paraphrased",
+      "article_slug": "er-esb-i-alvoru-svona-vinsaelt",
+      "article_title": "Er ESB í al­vöru svona vin­sælt?",
+      "article_source": "Vísir",
+      "article_date": "2026-06-04"
+    },
+    {
+      "claim_text": "Evrópusambandið hefur stækkað jafnt og þétt frá stofnun þess.",
+      "original_quote": "Evrópusambandið hafi stækkað jafnt og þétt frá stofnun þess",
+      "verdict": "partially_supported",
+      "explanation": "Meginstefið er rétt en vantar blæbrigði. <a href=\"https://www.evropuvefur.is/svar.php?id=88509\" title=\"Evropuvefur - Eirikur Rognvaldsson, \"Hver eru opinber tungumal ESB og hver er malstefna sambandsins i stuttu mali?\" (Professor Emeritus of Icelandic Linguistics, University of Iceland, 2026)\" target=\"_blank\" rel=\"noopener\">SOV-DATA-037</a> staðfestir að sambandinu hefur fjölgað úr sex opinberum tungumálum við stofnun í 24, sem endurspeglar verulega stækkun aðildarríkja frá 1957. Þróunin hefur þó ekki verið einhliða: Grænland sagði sig úr Evrópubandalaginu 1985 (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:1985:029:FULL\" title=\"Treaty amending the Treaties establishing the European Communities with regard to Greenland (1984); EU-Greenland fisheries partnership agreement\" target=\"_blank\" rel=\"noopener\">PREC-HIST-017</a>) og Bretland gekk úr ESB 2020 (<a href=\"https://europa.eu/eurobarometer/\" title=\"European Commission — Standard Eurobarometer 103, Spring 2025\" target=\"_blank\" rel=\"noopener\">PREC-DATA-022</a>), svo orðalagið «jafnt og þétt» einfaldar feril sem hefur líka falið í sér úrsagnir.",
+      "missing_context": "Heimildirnar sýna stækkun í aðildarríkjum en geyma jafnframt fyrirvara um að tvær einingar hafi yfirgefið sambandið — Grænland (1985) og Bretland (2020). Stækkunin hefur því ekki verið samfelld án undantekninga, þótt heildarstefnan hafi verið vöxtur.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-037",
+          "source_name": "Evropuvefur - Eirikur Rognvaldsson, \"Hver eru opinber tungumal ESB og hver er malstefna sambandsins i stuttu mali?\" (Professor Emeritus of Icelandic Linguistics, University of Iceland, 2026)",
+          "source_url": "https://www.evropuvefur.is/svar.php?id=88509"
+        },
+        {
+          "id": "PREC-DATA-023",
+          "source_name": "Eurostat GDP per capita in PPS; European Commission Enlargement Reviews",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/sdg_10_10/default/table"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "PREC-HIST-017",
+          "source_name": "Treaty amending the Treaties establishing the European Communities with regard to Greenland (1984); EU-Greenland fisheries partnership agreement",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:1985:029:FULL"
+        },
+        {
+          "id": "PREC-DATA-022",
+          "source_name": "European Commission — Standard Eurobarometer 103, Spring 2025",
+          "source_url": "https://europa.eu/eurobarometer/"
+        }
+      ],
+      "category": "precedents",
+      "attribution": "paraphrased",
+      "article_slug": "undanbrogd-vidreisnar",
+      "article_title": "Undanbrögð Viðreisnar",
+      "article_source": "Björn Bjarnason",
+      "article_date": "2026-06-02"
+    },
+    {
+      "claim_text": "Fá ríki hafa viljað yfirgefa Evrópusambandið eftir að hafa gengið inn í það.",
+      "original_quote": "fá ríki hafi viljað yfirgefa sambandið eftir að hafa gengið inn í það",
+      "verdict": "supported",
+      "explanation": "Heimildir staðfesta þetta. <a href=\"https://europa.eu/eurobarometer/\" title=\"European Commission — Standard Eurobarometer 103, Spring 2025\" target=\"_blank\" rel=\"noopener\">PREC-DATA-022</a> og <a href=\"https://europa.eu/eurobarometer/surveys/detail/3131\" title=\"Standard Eurobarometer; OBR; ONS; Eurostat\" target=\"_blank\" rel=\"noopener\">PREC-DATA-017</a> sýna að ekkert aðildarríki hefur hafið úrsagnarferli (50. gr.) eftir útgöngu Bretlands 2020, og <a href=\"https://www.thelocal.com/20240506/from-swexit-to-frexit-how-europes-far-right-parties-have-ditched-plans-to-leave-eu\" title=\"The Local — European far-right parties ditch EU exit plans; European Social Survey\" target=\"_blank\" rel=\"noopener\">PREC-DATA-026</a> staðfestir að evrópskir flokkar sem áður kröfðust útgöngu hafa fallið frá þeirri afstöðu. Stuðningur við aðild náði sögulegu hámarki — 74% töldu aðild gagnlega vorið 2025.",
+      "missing_context": "Tvö dæmi eru um útgöngu: Bretland (2020) og Grænland (1985), sem <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:1985:029:FULL\" title=\"Treaty amending the Treaties establishing the European Communities with regard to Greenland (1984); EU-Greenland fisheries partnership agreement\" target=\"_blank\" rel=\"noopener\">PREC-HIST-017</a> lýsir. Fullyrðingin um að «fá» ríki hafi viljað yfirgefa sambandið stenst þó þessi dæmi, enda undirstrika heimildirnar að þau séu undantekningar. Fyrirvarar <a href=\"https://europa.eu/eurobarometer/\" title=\"European Commission — Standard Eurobarometer 103, Spring 2025\" target=\"_blank\" rel=\"noopener\">PREC-DATA-022</a> minna á að evrópskeptík hefur ekki horfið heldur færst yfir í «umbætur innan frá».",
+      "supporting_evidence": [
+        {
+          "id": "PREC-DATA-022",
+          "source_name": "European Commission — Standard Eurobarometer 103, Spring 2025",
+          "source_url": "https://europa.eu/eurobarometer/"
+        },
+        {
+          "id": "PREC-DATA-017",
+          "source_name": "Standard Eurobarometer; OBR; ONS; Eurostat",
+          "source_url": "https://europa.eu/eurobarometer/surveys/detail/3131"
+        },
+        {
+          "id": "PREC-DATA-026",
+          "source_name": "The Local — European far-right parties ditch EU exit plans; European Social Survey",
+          "source_url": "https://www.thelocal.com/20240506/from-swexit-to-frexit-how-europes-far-right-parties-have-ditched-plans-to-leave-eu"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "PREC-HIST-017",
+          "source_name": "Treaty amending the Treaties establishing the European Communities with regard to Greenland (1984); EU-Greenland fisheries partnership agreement",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:1985:029:FULL"
+        }
+      ],
+      "category": "precedents",
+      "attribution": "paraphrased",
+      "article_slug": "undanbrogd-vidreisnar",
+      "article_title": "Undanbrögð Viðreisnar",
+      "article_source": "Björn Bjarnason",
+      "article_date": "2026-06-02"
     }
   ],
   "articles": [
@@ -1133,6 +1284,26 @@
       "title": "Króatía sem viðvörunarsaga",
       "source": "Blog.is",
       "date": "2026-06-19",
+      "claim_count": 2,
+      "attribution_types": [
+        "paraphrased"
+      ]
+    },
+    {
+      "slug": "er-esb-i-alvoru-svona-vinsaelt",
+      "title": "Er ESB í al­vöru svona vin­sælt?",
+      "source": "Vísir",
+      "date": "2026-06-04",
+      "claim_count": 3,
+      "attribution_types": [
+        "paraphrased"
+      ]
+    },
+    {
+      "slug": "undanbrogd-vidreisnar",
+      "title": "Undanbrögð Viðreisnar",
+      "source": "Björn Bjarnason",
+      "date": "2026-06-02",
       "claim_count": 2,
       "attribution_types": [
         "paraphrased"

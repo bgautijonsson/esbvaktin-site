@@ -7,18 +7,19 @@
   "party": "Viðreisnar",
   "stance": "pro_eu",
   "stance_score": 1.0,
-  "credibility": 0.71,
+  "credibility": 0.7,
   "attribution_counts": {
-    "asserted": 48,
+    "asserted": 57,
     "quoted": 1,
     "paraphrased": 1,
     "mentioned": 1
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 22,
-    "supported": 17,
-    "misleading": 1
+    "partially_supported": 27,
+    "supported": 18,
+    "misleading": 1,
+    "unverifiable": 1
   },
   "claims": [
     {
@@ -1371,6 +1372,212 @@
       "article_title": "Hvaða lög­gjöf verður á­fram í höndum Al­þingis ef til aðildar að ESB kemur?",
       "article_source": "Vísir",
       "article_date": "2026-06-02"
+    },
+    {
+      "claim_text": "Íslenska krónan hefur verið viðskiptamyntin á Íslandi í meira en hundrað ár.",
+      "original_quote": "Í meira en hundrað ár hefur íslenska krónan verið viðskiptamyntin í gegnum brim og boðaföll íslenska efnahagslífsins.",
+      "verdict": "unverifiable",
+      "explanation": "Heimildirnar í grunninum fjalla allar um sveiflur, gengisfall og kostnað krónunnar á síðustu tveimur áratugum (<a href=\"https://www.sedlabanki.is/hagtolur/gengi/\" title=\"Seðlabanki Íslands — Exchange rate data\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-007</a>, <a href=\"https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/skyrsla-nefndarinnar/english/\" title=\"Seðlabanki Íslands — Special Investigation Commission report; Central Bank annual report 2009\" target=\"_blank\" rel=\"noopener\">CURR-DATA-001</a>, CURRENCY-DATA-016), en engin þeirra tímasetur upphaf krónunnar sem gjaldmiðils. Sögulega er rétt að krónan á sér meira en aldarlanga sögu, en sú tímalengd er ekki staðfest í neinni framlagðri heimild.",
+      "missing_context": "Engin heimild tilgreinir hvenær krónan varð viðskiptamynt á Íslandi. Tölfræðiheimildirnar einbeita sér að tímabilinu eftir 2000 og veita því ekki grundvöll til að sannreyna aldarlanga samfellu.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [],
+      "category": "currency",
+      "attribution": "asserted",
+      "article_slug": "gjaldmidlamalid-islenski-smabaturinn-eda-stora-skipid-sem-tholir-olgusjo",
+      "article_title": "Gjaldmiðlamálið: ís­lenski smábáturinn eða stóra skipið sem þolir ólgu­sjó?",
+      "article_source": "Vísir",
+      "article_date": "2026-06-04"
+    },
+    {
+      "claim_text": "Ísland hefur þjáðst af sífelldum gengisfellningum, verðbólgu og óvissu sem bitnar á almenningi.",
+      "original_quote": "Sífelldar gengisfellingar, verðbólga og óvissa sem bitnar mjög illa á almenningi.",
+      "verdict": "partially_supported",
+      "explanation": "Óstöðugleiki krónunnar og þráláta verðbólgan eru vel skjalfest: <a href=\"https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IS\" title=\"World Bank — World Development Indicators (FP.CPI.TOTL.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-013</a> sýnir 4,7% meðalverðbólgu 2000–2024 á móti 2% markmiði ECB, og <a href=\"https://cb.is/statistics/official-exchange-rate/\" title=\"Seðlabanki Íslands — Monetary Bulletin; ECB Statistical Data Warehouse\" target=\"_blank\" rel=\"noopener\">TRADE-COMP-004</a> mælir 10–12% árlega gengissveiflu á móti nær núlli innan evrusvæðisins. <a href=\"https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=IS\" title=\"World Bank — GDP growth (annual %) (NY.GDP.MKTP.KD.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-014</a> staðfestir mun meiri hagsveiflu en hjá evrulöndum. Orðalagið «sífelldar gengisfellingar» er þó ýkt — sveiflurnar tengjast einkum afmörkuðum áföllum (2008, 2020) frekar en stöðugri rýrnun.",
+      "missing_context": "Heimildirnar leggja áherslu á að sveigjanleiki krónunnar virkaði sem aðlögunartæki í kreppum og flýtti bata (CURRENCY-DATA-016, <a href=\"https://www.rna.is/eldri-nefndir/addragandi-og-orsakir-falls-islensku-bankanna-2008/skyrsla-nefndarinnar/english/\" title=\"Seðlabanki Íslands — Special Investigation Commission report; Central Bank annual report 2009\" target=\"_blank\" rel=\"noopener\">CURR-DATA-001</a>). Þá benda þær á að lítið opið hagkerfi Íslands sé strúktúrlega verðbólguhneigt vegna innflutningsfíknar, og að evruupptaka myndi ekki sjálfkrafa skila verðbólgu á evrusvæðiskvarða (<a href=\"https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IS\" title=\"World Bank — World Development Indicators (FP.CPI.TOTL.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-013</a>, <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__visitolur__1_vnv__1_vnv/VIS01005.px\" title=\"Hagstofa Íslands — Consumer price index; Eurostat — HICP\" target=\"_blank\" rel=\"noopener\">CURR-DATA-003</a>).",
+      "supporting_evidence": [
+        {
+          "id": "CURRENCY-DATA-013",
+          "source_name": "World Bank — World Development Indicators (FP.CPI.TOTL.ZG)",
+          "source_url": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IS"
+        },
+        {
+          "id": "TRADE-COMP-004",
+          "source_name": "Seðlabanki Íslands — Monetary Bulletin; ECB Statistical Data Warehouse",
+          "source_url": "https://cb.is/statistics/official-exchange-rate/"
+        },
+        {
+          "id": "CURRENCY-DATA-014",
+          "source_name": "World Bank — GDP growth (annual %) (NY.GDP.MKTP.KD.ZG)",
+          "source_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=IS"
+        },
+        {
+          "id": "CURR-DATA-003",
+          "source_name": "Hagstofa Íslands — Consumer price index; Eurostat — HICP",
+          "source_url": "https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__visitolur__1_vnv__1_vnv/VIS01005.px"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "currency",
+      "attribution": "asserted",
+      "article_slug": "gjaldmidlamalid-islenski-smabaturinn-eda-stora-skipid-sem-tholir-olgusjo",
+      "article_title": "Gjaldmiðlamálið: ís­lenski smábáturinn eða stóra skipið sem þolir ólgu­sjó?",
+      "article_source": "Vísir",
+      "article_date": "2026-06-04"
+    },
+    {
+      "claim_text": "Þegar olíuverð hækkar, fjármálamarkaðir sveiflast eða alþjóðleg áföll dynja yfir, hækka vextir á Íslandi, verðbólga eykst og kaupmáttur rýrnar.",
+      "original_quote": "Þegar olíuverð hækkar, fjármálamarkaðir sveiflast eða alþjóðleg áföll dynja yfir finnur almenningur á Íslandi strax fyrir því. Vextir hækka, verðbólga eykst og kaupmáttur rýrnar.",
+      "verdict": "partially_supported",
+      "explanation": "Keðjan álag-verðbólga-vaxtahækkun er studd að hluta: <a href=\"https://sedlabanki.is/peningastefna/peningastefnunefnd/\" title=\"Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-017</a> sýnir að Seðlabankinn hækkaði stýrivexti í mars 2026 vegna viðvarandi 5,2% verðbólgu, og <a href=\"https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IS\" title=\"World Bank — World Development Indicators (FP.CPI.TOTL.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-013</a> staðfestir að krónuhrun ýtti verðbólgu í 12,7% árið 2008. Heimildirnar tengja innflutningsfíkn og gengissveiflur við verðbólgu, sem styður almenna rökfærsluna. Engin heimild fjallar þó beint um olíuverð eða mælir orsakakeðjuna frá ytri áföllum yfir í kaupmátt, svo fullyrðingin er almenn lýsing fremur en staðfest af tölum.",
+      "missing_context": "Heimildirnar sýna að verðbólguhneigð Íslands er strúktúrleg og myndi ekki hverfa að fullu með evru (<a href=\"https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IS\" title=\"World Bank — World Development Indicators (FP.CPI.TOTL.ZG)\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-013</a>). Ekkert gagn fjallar sérstaklega um olíuverð sem orsök, og umfangsmikill hluti gengnanna heimilda snýr þvert á móti að vaxta- og húsnæðissamhengi (<a href=\"https://www.ecb.europa.eu/pub/financial-stability/html/index.en.html\" title=\"Glaeser, Gottlieb & Gyourko (2012) 'Can Cheap Credit Explain the Housing Boom?', NBER Working Paper; ESRB Risk Dashboard; ECB Financial Stability Review 2023\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-009</a>, <a href=\"https://www.ecb.europa.eu/press/economic-bulletin/articles/2021/html/ecb.ebart202107_03~36493e7b67.en.html\" title=\"Glaeser, Gottlieb & Gyourko, 'Can Cheap Credit Explain the Housing Boom?' (2012); ECB Economic Bulletin 2/2021 — 'The impact of monetary policy on housing'\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-011</a>) frekar en að bein tengsl ytri áfalla við kaupmátt almennings.",
+      "supporting_evidence": [
+        {
+          "id": "CURRENCY-DATA-017",
+          "source_name": "Seðlabanki Íslands — Vaxtaákvarðanir peningastefnunefndar",
+          "source_url": "https://sedlabanki.is/peningastefna/peningastefnunefnd/"
+        },
+        {
+          "id": "CURRENCY-DATA-013",
+          "source_name": "World Bank — World Development Indicators (FP.CPI.TOTL.ZG)",
+          "source_url": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=IS"
+        },
+        {
+          "id": "CURR-DATA-003",
+          "source_name": "Hagstofa Íslands — Consumer price index; Eurostat — HICP",
+          "source_url": "https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__visitolur__1_vnv__1_vnv/VIS01005.px"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "currency",
+      "attribution": "asserted",
+      "article_slug": "gjaldmidlamalid-islenski-smabaturinn-eda-stora-skipid-sem-tholir-olgusjo",
+      "article_title": "Gjaldmiðlamálið: ís­lenski smábáturinn eða stóra skipið sem þolir ólgu­sjó?",
+      "article_source": "Vísir",
+      "article_date": "2026-06-04"
+    },
+    {
+      "claim_text": "Fyrir hundrað árum byggði útflutningur á Íslandi nánast eingöngu á sjávarútvegi.",
+      "original_quote": "Fyrir hundrað árum byggði útflutningur í hagkerfinu nánast eingöngu á sjávarútvegi.",
+      "verdict": "partially_supported",
+      "explanation": "Að sjávarútvegur hafi verið yfirgnæfandi í útflutningi Íslands er vel studd söguleg þróun: <a href=\"https://statice.is/statistics/economy/external-trade/\" title=\"Statistics Iceland — External trade\" target=\"_blank\" rel=\"noopener\">FISH-DATA-002</a> og <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__utanrikisverslun/\" title=\"Hagstofa Íslands — External trade statistics\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-003</a> staðfesta að hlutdeild sjávarafurða var yfir 70% á tíunda áratugnum og <a href=\"https://www.visindavefur.is/svar.php?id=6781\" title=\"Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (2007)\" target=\"_blank\" rel=\"noopener\">FISH-DATA-034</a> sýnir 59% hlutdeild í heildarútflutningi árið 1991, niður í 33% árið 2006. Heimildirnar ná þó aðeins aftur til um 1991 — engin þeirra mælir stöðuna fyrir hundrað árum (um 1926), svo nákvæm tímasetning fullyrðingarinnar er ekki staðfest.",
+      "missing_context": "Tölfræðin í grunninum spannar tímabilið frá um 1991 og fram á 2020-tug, ekki upphaf 20. aldar. Þótt þróunin styðji almennt að sjávarútvegur hafi verið ráðandi vantar gögn til að sannreyna að útflutningur hafi byggst «nánast eingöngu» á honum fyrir réttri öld.",
+      "supporting_evidence": [
+        {
+          "id": "FISH-DATA-034",
+          "source_name": "Vísindavefurinn — Gylfi Magnússon, Professor of Economics, University of Iceland (2007)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=6781"
+        },
+        {
+          "id": "FISH-DATA-002",
+          "source_name": "Statistics Iceland — External trade",
+          "source_url": "https://statice.is/statistics/economy/external-trade/"
+        },
+        {
+          "id": "TRADE-DATA-003",
+          "source_name": "Hagstofa Íslands — External trade statistics",
+          "source_url": "https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__utanrikisverslun/"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "trade",
+      "attribution": "asserted",
+      "article_slug": "gjaldmidlamalid-islenski-smabaturinn-eda-stora-skipid-sem-tholir-olgusjo",
+      "article_title": "Gjaldmiðlamálið: ís­lenski smábáturinn eða stóra skipið sem þolir ólgu­sjó?",
+      "article_source": "Vísir",
+      "article_date": "2026-06-04"
+    },
+    {
+      "claim_text": "Í dag hefur Ísland öflugar stoðir undir hagkerfið: ferðaþjónustu, tæknifyrirtæki, hugvit, nýsköpun og sérþekkingu sem selst um allan heim.",
+      "original_quote": "Í dag höfum við öflugar ferðaþjónustu, tæknifyrirtæki, hugvit, nýsköpun og sérþekkingu sem selst um allan heim. Við höfum fleiri stoðir undir hagkerfinu en nokkru sinni fyrr.",
+      "verdict": "partially_supported",
+      "explanation": "Fjölbreyting hagkerfisins er staðfest: TRADE-DATA-020 sýnir ferðaþjónustu sem stærsta útflutningsgrein (um 500 milljarða króna 2024) og <a href=\"https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__utanrikisverslun/\" title=\"Hagstofa Íslands — External trade statistics\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-003</a> rekur hvernig sjávarafurðir eru komnar niður í um 39% vöruútflutnings á móti áli og iðnaðarvörum. Þjónustuútflutningur jafnast nú á við vöruútflutning (<a href=\"https://statice.is/publications/news-archive/external-trade/trade-in-services-by-classification-and-countries-2024\" title=\"Hagstofa Íslands — Trade in services by classification and countries 2024\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-034</a>). Heimildirnar staðfesta vel ferðaþjónustu og fjölbreytni, en mæla ekki sérstaklega umfang «tæknifyrirtækja, hugvits og nýsköpunar», svo sá hluti er studdur óbeint fremur en með beinum tölum.",
+      "missing_context": "Heimildirnar minna á að helstu drifkraftar ferðaþjónustu (náttúra, flugtengingar) eru óháðir ESB-aðild (TRADE-DATA-020) og að þjónustutölur eru viðkvæmar fyrir ytri áföllum. Sérstök gögn um stærð tækni- og nýsköpunargeirans liggja ekki fyrir í grunninum.",
+      "supporting_evidence": [
+        {
+          "id": "TRADE-DATA-020",
+          "source_name": "Ferðamálastofa (Icelandic Tourist Board) — Tourism statistics; Hagstofa Íslands — Balance of payments",
+          "source_url": null
+        },
+        {
+          "id": "TRADE-DATA-003",
+          "source_name": "Hagstofa Íslands — External trade statistics",
+          "source_url": "https://px.hagstofa.is/pxen/pxweb/en/Efnahagur/Efnahagur__utanrikisverslun/"
+        },
+        {
+          "id": "TRADE-DATA-034",
+          "source_name": "Hagstofa Íslands — Trade in services by classification and countries 2024",
+          "source_url": "https://statice.is/publications/news-archive/external-trade/trade-in-services-by-classification-and-countries-2024"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "trade",
+      "attribution": "asserted",
+      "article_slug": "gjaldmidlamalid-islenski-smabaturinn-eda-stora-skipid-sem-tholir-olgusjo",
+      "article_title": "Gjaldmiðlamálið: ís­lenski smábáturinn eða stóra skipið sem þolir ólgu­sjó?",
+      "article_source": "Vísir",
+      "article_date": "2026-06-04"
+    },
+    {
+      "claim_text": "Þjóðaratkvæðagreiðslan í ágúst 2026 snýst ekki um að taka upp evru daginn eftir, heldur um hvort Íslendingar vilji halda áfram að kanna þann möguleika.",
+      "original_quote": "Þjóðaratkvæðagreiðslan í ágúst snýst ekki um að taka upp evru daginn eftir. Hún snýst um hvort við viljum halda áfram að kanna þann möguleika.",
+      "verdict": "supported",
+      "explanation": "Heimildirnar staðfesta efni fullyrðingarinnar afdráttarlaust. <a href=\"https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum\" title=\"Government of Iceland announcement; Althingi parliamentary records\" target=\"_blank\" rel=\"noopener\">SOV-DATA-006</a> og <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> sýna að spurningin 29. ágúst 2026 snýst um hvort halda eigi áfram aðildarviðræðum sem voru stöðvaðar 2013 — ekki um aðild sjálfa, hvað þá um evruupptöku. Atkvæðagreiðslan er ráðgefandi (<a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands, Articles 26 and 79\" target=\"_blank\" rel=\"noopener\">SOV-DATA-002</a>, <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland), Articles 26, 65, 79; Althingi records on 2012 referendum follow-up\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-026</a>), og evruupptaka fæli auk þess í sér aðild fyrst og uppfyllingu Maastricht-skilyrða, svo hún gæti ekki orðið «daginn eftir».",
+      "missing_context": "Rétt er að halda til haga að atkvæðagreiðslan er aðeins ráðgefandi og bindur ekki Alþingi (<a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland), Articles 26, 65, 79; Althingi records on 2012 referendum follow-up\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-026</a>). Innan þingsins er einnig ágreiningur um hvort spurningin sé í reynd um aðild — Rósa Guðbjartsdóttir lýsti henni sem «atkvæðagreiðslu um aðild», sem sýnir að rammasetning málsins er umdeild.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-DATA-006",
+          "source_name": "Government of Iceland announcement; Althingi parliamentary records",
+          "source_url": "https://www.government.is/topics/foreign-affairs/iceland-in-europe/referendum"
+        },
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        },
+        {
+          "id": "SOV-LEGAL-026",
+          "source_name": "Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland), Articles 26, 65, 79; Althingi records on 2012 referendum follow-up",
+          "source_url": "https://www.althingi.is/lagas/nuna/1944033.html"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "currency",
+      "attribution": "asserted",
+      "article_slug": "gjaldmidlamalid-islenski-smabaturinn-eda-stora-skipid-sem-tholir-olgusjo",
+      "article_title": "Gjaldmiðlamálið: ís­lenski smábáturinn eða stóra skipið sem þolir ólgu­sjó?",
+      "article_source": "Vísir",
+      "article_date": "2026-06-04"
+    },
+    {
+      "claim_text": "Fáir útvaldir á Íslandi geta nýtt sér traustari gjaldmiðla á meðan almenningur er skilinn eftir með krónuna.",
+      "original_quote": "Hér er mesta meinsemd íslensks samfélags, þar sem fáir útvaldir fá að nýta traustari gjaldmiðla á meðan almenningur er skilinn eftir.",
+      "verdict": "partially_supported",
+      "explanation": "Heimildirnar staðfesta kjarnann í að sumir aðilar hafi aðgang að erlendum gjaldmiðlum sem almenningi stendur ekki til boða: <a href=\"https://www.evropuvefur.is/svar.php?id=88690\" title=\"Evropuvefur - Gylfi Magnusson, \"Legal basis for foreign-currency accounting by Icelandic companies\" (prófessor í hagfræði við HÍ (University of Iceland), 2026)\" target=\"_blank\" rel=\"noopener\">CURR-LEGAL-001</a> sýnir að útflutningsfyrirtæki fá undanþágu til að gera upp í erlendri mynt, og <a href=\"https://www.evropuvefur.is/svar.php?id=88690\" title=\"Evropuvefur - Gylfi Magnusson, \"Post-2008 restrictions on foreign-currency loans in Iceland\" (prófessor í hagfræði við HÍ (University of Iceland), 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-031</a> lýsir því að bann var sett á gjaldeyrislán til þeirra sem hafa krónutekjur eftir 2008 — útflutningsfyrirtæki með erlendar tekjur eru þó áfram heimil. <a href=\"https://www.evropuvefur.is/svar.php?id=88690\" title=\"Evropuvefur - Gylfi Magnusson, \"Icelandic export commodities priced in foreign currency\" (prófessor í hagfræði við HÍ (University of Iceland), 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-030</a> og <a href=\"https://hagstofa.is/talnaefni/efnahagsmal/utanrikisverslun/\" title=\"Hagstofa Íslands — Utanríkisverslun; Seðlabanki Íslands — Greiðslujöfnuður\" target=\"_blank\" rel=\"noopener\">FISH-DATA-027</a> staðfesta að útflytjendur verðleggja og gera upp í evrum og dölum. Rammasetningin «fáir útvaldir … mesta meinsemd» er hins vegar gildishlaðin túlkun fremur en hlutlæg lýsing: undanþágan ræðst af eðli rekstrar, ekki forréttindum.",
+      "missing_context": "<a href=\"https://www.evropuvefur.is/svar.php?id=88690\" title=\"Evropuvefur - Gylfi Magnusson, \"Post-2008 restrictions on foreign-currency loans in Iceland\" (prófessor í hagfræði við HÍ (University of Iceland), 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-031</a> skýrir að bann við gjaldeyrislánum til krónutekjuhafa var sett til verndar eftir að slík lán «enduðu illa» 2008 — það er neytendavernd, ekki útilokun útvaldra. <a href=\"https://www.evropuvefur.is/svar.php?id=88690\" title=\"Evropuvefur - Gylfi Magnusson, \"Legal basis for foreign-currency accounting by Icelandic companies\" (prófessor í hagfræði við HÍ (University of Iceland), 2026)\" target=\"_blank\" rel=\"noopener\">CURR-LEGAL-001</a> bætir við að jafnan sé enginn sérstakur fjárhagslegur ávinningur af uppgjöri í einni mynt umfram aðra; ávinningurinn er skýrari rekstrarmynd. Aðgangur útflutningsfyrirtækja byggist þannig á samsvörun tekna og kostnaðar í erlendri mynt, ekki á forréttindum fárra.",
+      "supporting_evidence": [
+        {
+          "id": "CURR-LEGAL-001",
+          "source_name": "Evropuvefur - Gylfi Magnusson, \"Legal basis for foreign-currency accounting by Icelandic companies\" (prófessor í hagfræði við HÍ (University of Iceland), 2026)",
+          "source_url": "https://www.evropuvefur.is/svar.php?id=88690"
+        },
+        {
+          "id": "CURR-DATA-031",
+          "source_name": "Evropuvefur - Gylfi Magnusson, \"Post-2008 restrictions on foreign-currency loans in Iceland\" (prófessor í hagfræði við HÍ (University of Iceland), 2026)",
+          "source_url": "https://www.evropuvefur.is/svar.php?id=88690"
+        },
+        {
+          "id": "CURR-DATA-030",
+          "source_name": "Evropuvefur - Gylfi Magnusson, \"Icelandic export commodities priced in foreign currency\" (prófessor í hagfræði við HÍ (University of Iceland), 2026)",
+          "source_url": "https://www.evropuvefur.is/svar.php?id=88690"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "currency",
+      "attribution": "asserted",
+      "article_slug": "gjaldmidlamalid-islenski-smabaturinn-eda-stora-skipid-sem-tholir-olgusjo",
+      "article_title": "Gjaldmiðlamálið: ís­lenski smábáturinn eða stóra skipið sem þolir ólgu­sjó?",
+      "article_source": "Vísir",
+      "article_date": "2026-06-04"
     }
   ],
   "articles": [
@@ -1420,6 +1627,16 @@
       "source": "Vísir",
       "date": "2026-06-02",
       "claim_count": 11,
+      "attribution_types": [
+        "asserted"
+      ]
+    },
+    {
+      "slug": "gjaldmidlamalid-islenski-smabaturinn-eda-stora-skipid-sem-tholir-olgusjo",
+      "title": "Gjaldmiðlamálið: ís­lenski smábáturinn eða stóra skipið sem þolir ólgu­sjó?",
+      "source": "Vísir",
+      "date": "2026-06-04",
+      "claim_count": 7,
       "attribution_types": [
         "asserted"
       ]
