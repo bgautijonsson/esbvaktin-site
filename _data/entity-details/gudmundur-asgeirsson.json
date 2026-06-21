@@ -6,14 +6,15 @@
   "role": "lesandi",
   "party": null,
   "stance": "anti_eu",
-  "stance_score": -0.83,
-  "credibility": 0.31,
+  "stance_score": -0.86,
+  "credibility": 0.33,
   "attribution_counts": {
-    "asserted": 10
+    "asserted": 10,
+    "paraphrased": 1
   },
   "althingi_stats": null,
   "scorecard": {
-    "partially_supported": 5,
+    "partially_supported": 6,
     "unsupported": 3
   },
   "claims": [
@@ -308,6 +309,37 @@
       "article_title": "Af hverju er ekki spurt hvort fólk hafi kynnt sér ESB?",
       "article_source": "Blog.is",
       "article_date": "2026-04-07"
+    },
+    {
+      "claim_text": "Allar reglur ESB um lánveitingar til neytenda gilda þegar á Íslandi í gegnum EES-samninginn.",
+      "original_quote": "allar reglur ESB um lánveitingar til neytenda gilda nú þegar á Íslandi í gegnum EES samninginn. Ekkert myndi breytast um þá stöðu ef Íslandi gengi í ESB.",
+      "verdict": "partially_supported",
+      "explanation": "Meginreglan er rétt en orðalagið «allar reglur» er of víðtækt fyrir heimildirnar. <a href=\"https://www.visindavefur.is/svar.php?id=6777\" title=\"Vísindavefurinn — Arndís Anna K. Gunnarsdóttir, doctoral student, University of Strasbourg (2007, updated 2026)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-023</a> og <a href=\"https://www.visindavefur.is/svar.php?id=60266\" title=\"Vísindavefurinn — Vilborg Ása Guðjónsdóttir, Evrópuvefur project manager (2011)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-026</a> staðfesta að Ísland innleiðir reglur innri markaðarins um neytenda- og ríkisaðstoðarmál gegnum EES og að efnisreglur breytast lítið við ESB-aðild — það sem breytist er eftirlitsstofnunin, þar sem ESA víkur fyrir framkvæmdastjórn ESB. Hins vegar nefnir engin heimild beinlínis lánveitingar til neytenda eða staðfestir að bókstaflega allar slíkar reglur séu innleiddar.",
+      "missing_context": "Heimildir sýna að innleiðing EES getur dregist á eftir samþykkt ESB-gerða — það er biðlisti óinnleiddra gerða (<a href=\"https://www.efta.int/about-efta/legal-documents/eea-legal-texts/annexes-agreement\" title=\"EFTA Secretariat — EEA Agreement Annex IV (Energy); Althingi EU Assessment Committee\" target=\"_blank\" rel=\"noopener\">ENERGY-LEGAL-001</a>) — og að Ísland heldur varanlegum undanþágum á sumum sviðum (<a href=\"https://www.visindavefur.is/svar.php?id=68324\" title=\"Vísindavefurinn — Þórhildur Hagalín, European Studies scholar (2014)\" target=\"_blank\" rel=\"noopener\">EEA-DATA-025</a>). Því er fullyrðingin um að allar reglur gildi þegar nákvæmari sem meginregla en sem bókstafur. <a href=\"https://arxiv.org/abs/1302.4112\" title=\"Ólafsson (2013) — 'An Examination of the Effect on the Icelandic Banking System of Verðtryggð Lán', arXiv:1302.4112\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-018</a> nefnir að verðtrygging gæti staðist illa sanngirnispróf tilskipunar 93/13/EBE.",
+      "supporting_evidence": [
+        {
+          "id": "EEA-DATA-023",
+          "source_name": "Vísindavefurinn — Arndís Anna K. Gunnarsdóttir, doctoral student, University of Strasbourg (2007, updated 2026)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=6777"
+        },
+        {
+          "id": "EEA-DATA-026",
+          "source_name": "Vísindavefurinn — Vilborg Ása Guðjónsdóttir, Evrópuvefur project manager (2011)",
+          "source_url": "https://www.visindavefur.is/svar.php?id=60266"
+        },
+        {
+          "id": "HOUSING-LEGAL-001",
+          "source_name": "EFTA Surveillance Authority — State aid decisions; EEA Agreement, Protocol 26",
+          "source_url": "https://www.eftasurv.int/state-aid"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "eea_eu_law",
+      "attribution": "paraphrased",
+      "article_slug": "kroatia-sem-vidvorunarsaga",
+      "article_title": "Króatía sem viðvörunarsaga",
+      "article_source": "Blog.is",
+      "article_date": "2026-06-19"
     }
   ],
   "articles": [
@@ -359,6 +391,16 @@
       "claim_count": 1,
       "attribution_types": [
         "asserted"
+      ]
+    },
+    {
+      "slug": "kroatia-sem-vidvorunarsaga",
+      "title": "Króatía sem viðvörunarsaga",
+      "source": "Blog.is",
+      "date": "2026-06-19",
+      "claim_count": 1,
+      "attribution_types": [
+        "paraphrased"
       ]
     }
   ]

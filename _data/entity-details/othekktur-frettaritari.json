@@ -7,10 +7,131 @@
   "party": null,
   "stance": "insufficient_data",
   "stance_score": 0.0,
-  "credibility": null,
-  "attribution_counts": {},
+  "credibility": 0.38,
+  "attribution_counts": {
+    "asserted": 4
+  },
   "althingi_stats": null,
-  "scorecard": {},
-  "claims": [],
-  "articles": []
+  "scorecard": {
+    "partially_supported": 3,
+    "unsupported": 1
+  },
+  "claims": [
+    {
+      "claim_text": "Ef þjóðin segir nei í þjóðaratkvæðagreiðslunni er kosturinn á frekara mati á stöðu Íslands í tollabandalagi úr sögunni án þess að umræða um það hafi farið fram.",
+      "original_quote": "Klípan er sú að segi þjóðin nei er þessi kostur úr sögunni án þess að þetta frekara mat og umræða um það hafi farið fram.",
+      "verdict": "partially_supported",
+      "explanation": "Spádómurinn byggir á rökréttri keðju: spurning þjóðaratkvæðagreiðslunnar snýst um framhald aðildarviðræðna (<a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a>), og full ESB-aðild — sem tollabandalagsaðild krefst — yrði ekki möguleg ef viðræðum yrði hafnað. SOV-DATA-022 og <a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland), Articles 26, 65, 79; Althingi records on 2012 referendum follow-up\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-026</a> staðfesta að þótt atkvæðagreiðslan sé ráðgefandi hefur ríkisstjórnin skuldbundið sig til að virða niðurstöðuna, sem styður að nei-niðurstaða myndi í reynd loka á áframhald. Fullyrðingin um að málið yrði «úr sögunni» til frambúðar er þó of afdráttarlaus, því ekkert lagalega bindur framtíðarþing.",
+      "missing_context": "<a href=\"https://www.althingi.is/lagas/nuna/1944033.html\" title=\"Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland), Articles 26, 65, 79; Althingi records on 2012 referendum follow-up\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-026</a> tekur fram að atkvæðagreiðslan er ráðgefandi og Alþingi heldur fullu löggjafarvaldi óháð niðurstöðu — nei-niðurstaða útilokar því ekki lagalega að málið verði tekið upp síðar. <a href=\"https://www.evropuvefur.is/svar.php?id=88600\" title=\"Evrópuvefurinn — Margrét Einarsdóttir, prófessor við lagadeild HR, „Skiptir einhverju máli hvort viðræður Íslands við ESB byrja upp á nýtt eða fyrri viðræðum er haldið áfram?\" (2026)\" target=\"_blank\" rel=\"noopener\">PREC-DATA-043</a> bendir á að umsókn Íslands frá 2009 er enn í gildi að mati framkvæmdastjórnar ESB, sem dregur úr fullyrðingunni um að kosturinn yrði endanlega «úr sögunni». Tollabandalagsaðild er auk þess ekki sjálfstæður valkostur heldur fylgir fullri ESB-aðild.",
+      "supporting_evidence": [
+        {
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
+        },
+        {
+          "id": "SOV-DATA-022",
+          "source_name": "Icelandic Constitutional Law scholars; 2012 referendum precedent; Danish referendum practice",
+          "source_url": null
+        },
+        {
+          "id": "SOV-LEGAL-026",
+          "source_name": "Stjórnarskrá lýðveldisins Íslands (Constitution of Iceland), Articles 26, 65, 79; Althingi records on 2012 referendum follow-up",
+          "source_url": "https://www.althingi.is/lagas/nuna/1944033.html"
+        }
+      ],
+      "contradicting_evidence": [
+        {
+          "id": "PREC-DATA-043",
+          "source_name": "Evrópuvefurinn — Margrét Einarsdóttir, prófessor við lagadeild HR, „Skiptir einhverju máli hvort viðræður Íslands við ESB byrja upp á nýtt eða fyrri viðræðum er haldið áfram?\" (2026)",
+          "source_url": "https://www.evropuvefur.is/svar.php?id=88600"
+        }
+      ],
+      "category": "sovereignty",
+      "attribution": "asserted",
+      "article_slug": "a-island-heima-i-tollabandalagi-i-tollastridi",
+      "article_title": "Á Ísland heima í tollabandalagi í tollastríði?",
+      "article_source": "DV",
+      "article_date": "2026-06-18"
+    },
+    {
+      "claim_text": "Íslensk fyrirtæki á innlendum samkeppnismarkaði starfa í umhverfi þrefalt hærri vaxta en útflutningsfyrirtæki.",
+      "original_quote": "fyrirtækjum á innlendum samkeppnismarkaði sé gert að starfa í umhverfi þrefalt hærri vaxta",
+      "verdict": "partially_supported",
+      "explanation": "Undirstaða fullyrðingarinnar fær stuðning: <a href=\"https://sedlabanki.is/peningastefna/peningastefnunefnd/\" title=\"Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates\" target=\"_blank\" rel=\"noopener\">CURRENCY-DATA-015</a> sýnir að stýrivextir Seðlabanka Íslands stóðu í 7,50% í mars 2026 á móti 2,00% hjá Seðlabanka Evrópu — munur sem nálgast þreföldun. <a href=\"https://www.evropuvefur.is/svar.php?id=88690\" title=\"Evropuvefur - Gylfi Magnusson, \"Icelandic export commodities priced in foreign currency\" (prófessor í hagfræði við HÍ (University of Iceland), 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-030</a> og <a href=\"https://www.evropuvefur.is/svar.php?id=88690\" title=\"Evropuvefur - Gylfi Magnusson, \"Post-2008 restrictions on foreign-currency loans in Iceland\" (prófessor í hagfræði við HÍ (University of Iceland), 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-031</a> staðfesta að útflutningsfyrirtæki verðleggja og fjármagna sig oft í erlendri mynt og mega taka erlend lán á lægri vöxtum, ólíkt fyrirtækjum með krónutekjur. Hin nákvæma tala «þrefalt hærri» er þó ekki bein tilvitnun í neina heimild heldur samantekt sem byggir á vaxtamun króna- og evrulána.",
+      "missing_context": "Engin heimild gefur upp beina þrefalda vaxtamargfeldistölu milli innlendra samkeppnisfyrirtækja og útflutningsfyrirtækja. <a href=\"https://www.evropuvefur.is/svar.php?id=88690\" title=\"Evropuvefur - Gylfi Magnusson, \"Post-2008 restrictions on foreign-currency loans in Iceland\" (prófessor í hagfræði við HÍ (University of Iceland), 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-031</a> tekur fram að erlend lán til útflutningsfyrirtækja teljast ekki áhættusöm einmitt vegna þess að tekjur þeirra eru í sömu mynt, en að ströng höft gildi á erlend lán til þeirra sem hafa krónutekjur. Verðtryggð krónulán bera einnig lægri nafnvexti (3,5–5,5% auk verðbóta, sbr. <a href=\"https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/bank_interest_rates/html/index.en.html\" title=\"European Central Bank — Statistical Data Warehouse: MFI interest rate statistics; Seðlabanki Íslands — Financial Stability report\" target=\"_blank\" rel=\"noopener\">HOUSING-DATA-008</a>), sem flækir hreinan vaxtasamanburð.",
+      "supporting_evidence": [
+        {
+          "id": "CURRENCY-DATA-015",
+          "source_name": "Central Bank of Iceland — Monetary policy decisions; ECB — Key interest rates",
+          "source_url": "https://sedlabanki.is/peningastefna/peningastefnunefnd/"
+        },
+        {
+          "id": "CURR-DATA-030",
+          "source_name": "Evropuvefur - Gylfi Magnusson, \"Icelandic export commodities priced in foreign currency\" (prófessor í hagfræði við HÍ (University of Iceland), 2026)",
+          "source_url": "https://www.evropuvefur.is/svar.php?id=88690"
+        },
+        {
+          "id": "CURR-DATA-031",
+          "source_name": "Evropuvefur - Gylfi Magnusson, \"Post-2008 restrictions on foreign-currency loans in Iceland\" (prófessor í hagfræði við HÍ (University of Iceland), 2026)",
+          "source_url": "https://www.evropuvefur.is/svar.php?id=88690"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "currency",
+      "attribution": "asserted",
+      "article_slug": "a-island-heima-i-tollabandalagi-i-tollastridi",
+      "article_title": "Á Ísland heima í tollabandalagi í tollastríði?",
+      "article_source": "DV",
+      "article_date": "2026-06-18"
+    },
+    {
+      "claim_text": "Ísland hefur umfangsmesta gjaldeyrishöft sem þekkjast í vestrænum markaðsbúskap.",
+      "original_quote": "Þau hafa heldur ekki skoðun á umfangsmestu gjaldeyrishöftum, sem þekkjast í vestrænum markaðsbúskap.",
+      "verdict": "unsupported",
+      "explanation": "Heimildirnar styðja ekki fullyrðinguna um umfangsmestu gjaldeyrishöftin í vestrænum markaðsbúskap. <a href=\"https://www.evropuvefur.is/svar.php?id=65443\" title=\"Evropuvefur - Gylfi Magnusson, \"Hvad kostar ad halda uppi gjaldeyrisforda fyrir kronuna?\" (University of Iceland, 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-023</a>, <a href=\"https://www.cb.is/statistics/international-reserves/\" title=\"Seðlabanki Íslands — Alþjóðaforðinn; Fjármálastöðugleikaskýrsla\" target=\"_blank\" rel=\"noopener\">CURR-DATA-006</a> og <a href=\"https://www.evropuvefur.is/svar.php?id=65443\" title=\"Evropuvefur - Gylfi Magnusson, \"Hvad kostar ad halda uppi gjaldeyrisforda fyrir kronuna?\" (University of Iceland, 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-019</a> fjalla um stóran gjaldeyrisforða Seðlabankans miðað við landsframleiðslu og kostnað við að halda honum uppi — það er annað en formleg gjaldeyrishöft. Eiginleg fjármagnshöft Íslands eftir hrun voru afnumin í áföngum og engin heimild metur núverandi höft sem þau umfangsmestu á Vesturlöndum. Samanburðurinn sem fullyrðingin byggir á er ekki til staðar í gögnunum.",
+      "missing_context": "Heimildirnar lýsa stærð gjaldeyrisforða (<a href=\"https://www.cb.is/statistics/international-reserves/\" title=\"Seðlabanki Íslands — Alþjóðaforðinn; Fjármálastöðugleikaskýrsla\" target=\"_blank\" rel=\"noopener\">CURR-DATA-006</a>, <a href=\"https://www.evropuvefur.is/svar.php?id=65443\" title=\"Evropuvefur - Gylfi Magnusson, \"Hvad kostar ad halda uppi gjaldeyrisforda fyrir kronuna?\" (University of Iceland, 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-019</a>, <a href=\"https://www.evropuvefur.is/svar.php?id=65443\" title=\"Evropuvefur - Gylfi Magnusson, \"Hvad kostar ad halda uppi gjaldeyrisforda fyrir kronuna?\" (University of Iceland, 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-023</a>) en ekki umfangi formlegra gjaldeyris- eða fjármagnshafta. <a href=\"https://www.evropuvefur.is/svar.php?id=88690\" title=\"Evropuvefur - Gylfi Magnusson, \"Post-2008 restrictions on foreign-currency loans in Iceland\" (prófessor í hagfræði við HÍ (University of Iceland), 2026)\" target=\"_blank\" rel=\"noopener\">CURR-DATA-031</a> vísar til hafta á erlend lán til aðila með krónutekjur eftir 2008, en ekkert mat er lagt á hvort heildarhöftin séu þau mestu í vestrænum markaðsbúskap. Greinarmunur á gjaldeyrisforða og gjaldeyrishöftum er lykilatriði sem fullyrðingin gætir ekki að.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [],
+      "category": "currency",
+      "attribution": "asserted",
+      "article_slug": "a-island-heima-i-tollabandalagi-i-tollastridi",
+      "article_title": "Á Ísland heima í tollabandalagi í tollastríði?",
+      "article_source": "DV",
+      "article_date": "2026-06-18"
+    },
+    {
+      "claim_text": "Samtök atvinnulífsins og Samtök iðnaðarins hafa ekki lagt mat á samkeppnisstöðu Íslands gagnvart ESB-tollabandalaginu, ólíkt sambærilegum samtökum í Noregi og Bretlandi.",
+      "original_quote": "eins og sambærileg samtök í Noregi og Bretlandi hafa gert",
+      "verdict": "partially_supported",
+      "explanation": "Heimildirnar sýna að norsku samtökin (NHO) hafa raunverulega hreyft málinu — <a href=\"https://www.ruv.is/english/2025-08-01-trump-hits-iceland-with-15-tariff-450009\" title=\"Multiple Norwegian and Icelandic media sources\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-041</a> staðfestir að NHO hóf 2026 að hvetja til könnunar á tollabandalagsfyrirkomulagi, drifin áfram af tollum Bandaríkjanna. Engin heimild í grunninum staðfestir hins vegar að Samtök atvinnulífsins eða Samtök iðnaðarins á Íslandi hafi lagt fram sambærilegt mat á tollabandalaginu. Fyrra mat úr fullyrðingabanka benti þó á að SI hafi tekið þátt í ESB-umræðunni með könnun meðal félagsmanna og afstöðu forystu, þótt það mat sé úrelt og snerist um ESB-aðild almennt fremur en tollabandalagsmat sérstaklega.",
+      "missing_context": "Ekkert í grunninum staðfestir afstöðuleysi íslensku samtakanna gagnvart tollabandalaginu með beinum hætti — fjarvera gagna er ekki sönnun. Bresku samtökin sem nefnd eru hafa enga heimild í grunninum. <a href=\"https://www.ruv.is/english/2025-08-01-trump-hits-iceland-with-15-tariff-450009\" title=\"Multiple Norwegian and Icelandic media sources\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-041</a> tekur fram að jafnvel í Noregi sé afstaða NHO stefnutillaga, ekki opinber stefna. Greinarmunur á því að «taka afstöðu til ESB-aðildar» og að «leggja mat á tollabandalagsstöðu» sérstaklega skiptir hér máli.",
+      "supporting_evidence": [
+        {
+          "id": "TRADE-DATA-041",
+          "source_name": "Multiple Norwegian and Icelandic media sources",
+          "source_url": "https://www.ruv.is/english/2025-08-01-trump-hits-iceland-with-15-tariff-450009"
+        }
+      ],
+      "contradicting_evidence": [],
+      "category": "trade",
+      "attribution": "asserted",
+      "article_slug": "a-island-heima-i-tollabandalagi-i-tollastridi",
+      "article_title": "Á Ísland heima í tollabandalagi í tollastríði?",
+      "article_source": "DV",
+      "article_date": "2026-06-18"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "a-island-heima-i-tollabandalagi-i-tollastridi",
+      "title": "Á Ísland heima í tollabandalagi í tollastríði?",
+      "source": "DV",
+      "date": "2026-06-18",
+      "claim_count": 4,
+      "attribution_types": [
+        "asserted"
+      ]
+    }
+  ]
 }
