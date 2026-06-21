@@ -10,10 +10,10 @@
   "summary": "Greindar 21 fullyrðingar .",
   "capsule": "Ísland uppfyllir nú þegar flest inngönguskilyrði ESB hvað varðar efnahag, lýðræði og réttarríki — og sótti í raun um aðild árið 2009, enda eru aðildarviðræður ekki þversagnarkennt nýlunduferli heldur lyklaðar að sérstöðu hvers ríkis með sérákvæðum. Athyglisvert er þó að fiskveiðikafli viðræðnanna (kafli 13) var aldrei lokið árið 2013 og sjávarútvegsmál gætu verið þrálátari í samningaferlinu en greinin gefur í skyn. Jafnframt er vert að vita að evran kæmi ekki strax við aðild — samkvæmt fordæmum eins og Króatíu liður nokkur ár í ERM II áður en ríki fullnægir öllum skilyrðum gjaldmiðilsbreytingarinnar.",
   "verdict_counts": {
-    "supported": 3,
+    "supported": 4,
     "misleading": 1,
     "unverifiable": 2,
-    "partially_supported": 12
+    "partially_supported": 11
   },
   "epistemic_counts": {
     "prediction": 4
@@ -431,14 +431,9 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "partially_supported",
-      "explanation": "Heimild <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> tilgreinir íbúafjölda ESB sem «approximately 450 million» og <a href=\"https://eur-lex.europa.eu/summary/glossary/qualified_majority.html\" title=\"Treaty on European Union, Article 16(4)\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-002</a> vísar til sama fjölda. Talan 450 milljónir er algeng ávölun en í raun rúmlega 447–449 milljónir (eftir Brexit). Fullyrðingin notar heiltöluna 450 milljónir sem nálgun, ekki nákvæma tölu. Heimildir staðfesta þetta sem sanngjarna nálgun en ekki nákvæma staðhæfingu.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:12016M016\" title=\"Treaty on European Union, Article 16(4); European Parliament allocation rules\" target=\"_blank\" rel=\"noopener\">SOV-DATA-017</a> tilgreinir heildaríbúafjölda ESB sem um 450 milljónir manna, þar sem Ísland með um 380.000 íbúa myndi mynda um 0,08% heildarinnar. Talan er notuð beint sem viðmiðunarstærð í útreikningi á atkvæðavægi við aukinn meirihluta í ráðherraráðinu.",
       "supporting_evidence": [
-        {
-          "id": "SOV-LEGAL-002",
-          "source_name": "Treaty on European Union, Article 16(4)",
-          "source_url": "https://eur-lex.europa.eu/summary/glossary/qualified_majority.html"
-        },
         {
           "id": "SOV-DATA-017",
           "source_name": "Treaty on European Union, Article 16(4); European Parliament allocation rules",
@@ -446,8 +441,8 @@
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Íbúafjöldi ESB (27 ríki) var um 448,4 milljónir árið 2024 samkvæmt Eurostat og hefur farið lítillega minnkandi. Talan 450 milljónir er slétt nálgun sem er notuð bæði í heimildum og almennri umræðu.",
-      "confidence": 0.7030474999999998,
+      "missing_context": "Talan 450 milljónir er nálgun — íbúafjöldi ESB breytist ár frá ári og fer eftir því hvaða aðildarríki eru talin með. Heimildin notar hana sem viðmið fyrir hlutfallsútreikning fremur en sem nákvæma talningu.",
+      "confidence": 0.85,
       "speakers": [
         {
           "name": "Thomas Möller",
@@ -792,14 +787,14 @@
       "attribution_type": "asserted",
       "claim_count": 16,
       "verdicts": {
-        "supported": 2,
+        "supported": 3,
         "unverifiable": 2,
-        "partially_supported": 12
+        "partially_supported": 11
       },
       "stance": "pro_eu",
       "slug": "thomas-moller",
       "mention_count": 5,
-      "credibility": 0.51
+      "credibility": 0.52
     },
     {
       "name": "Þorgerður Katrín Gunnarsdóttir",

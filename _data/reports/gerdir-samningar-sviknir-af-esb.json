@@ -10,8 +10,8 @@
   "summary": "Greindar 20 fullyrðingar. Niðurstöður: 10 stutt að hluta, 9 stutt af heimildum, 1 ekki hægt að sannreyna. Sjónarhorn: hallar á ESB-neikvæða hlið. Heildstæðni: 35%.",
   "capsule": "Sameiginlega sjávarútvegsstefna ESB setur heildaraflamark (TAC) á milli ríkja — en hvernig hvert aðildarríki úthlutar innbyrðis sínum eigin kvóta er í höndum ríkisins sjálfs. Danmörk, Holland og Eistland nota til dæmis einstaklingsbundin, framseljanleg kvótaréttindi — sama kerfi og Ísland hefur notað í áratugi. Haag-viðmiðin, sem greinin fjallar um, eru ekki sáttmálafest undanþága heldur hluti af framkvæmd stefnunnar — og deilan um framkvæmd þeirra er sérstakt efni sem er óháð spurningunni um hverjir úthluta kvóta innbyrðis.",
   "verdict_counts": {
-    "supported": 7,
-    "partially_supported": 12
+    "supported": 8,
+    "partially_supported": 11
   },
   "epistemic_counts": null,
   "claim_count": 19,
@@ -277,23 +277,18 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "partially_supported",
-      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003\" title=\"Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-030</a> staðfestir að 3. gr. TFEU feli ESB einkarétt til lagasetningar á sviði «conservation of marine biological resources under the CFP» — en þetta er afmarkað við verndun lífrænna auðlinda hafsins, ekki sameiginlegu sjávarútvegsstefnuna í heild sinni. Sjávarútvegsstefnan tekur einnig til markaðsskipulags, skipulagsaðgerða og alþjóðasamninga sem falla ekki allir undir einkarétt. Fullyrðingin heldur því fram að öll sjávarútvegsstefnan falli undir einokunarvald ESB, en heimildir styðja aðeins að verndun lífrænna auðlinda hafsins geri það.",
+      "verdict": "supported",
+      "explanation": "<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003\" title=\"Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU\" target=\"_blank\" rel=\"noopener\">SOV-LEGAL-030</a> staðfestir fullyrðinguna beint: verndun lífrænna sjávarauðlinda undir sameiginlegu sjávarútvegsstefnunni fellur undir einkavald ESB samkvæmt 3. gr. TFEU, þar sem aðeins sambandið má setja löggjöf. Heimildin telur þetta meðal helstu breytinga sem aðild hefði í för með sér fyrir Ísland.",
       "supporting_evidence": [
         {
           "id": "SOV-LEGAL-030",
           "source_name": "Treaty on the Functioning of the European Union, Articles 2–6; EUR-Lex — Division of competences within the EU",
           "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A12016E003"
-        },
-        {
-          "id": "FISH-LEGAL-001",
-          "source_name": "EU Regulation 1380/2013 of the European Parliament and of the Council",
-          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1380"
         }
       ],
       "contradicting_evidence": [],
-      "missing_context": "Greinarmunurinn skiptir máli: 3. gr. TFEU nefnir «conservation of marine biological resources» sem einkarétt, en aðrir hlutar sjávarútvegsstefnunnar — svo sem markaðsskipulag, byggðasjóðir og samskipti við þriðju ríki — falla undir samnýtta valdheimild samkvæmt 4. gr. TFEU. Samkvæmt <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380\" title=\"Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-030</a> halda aðildarríki fullum yfirráðum yfir innri kvótaúthlutun. Í reynd er hlutur einkaréttar ESB í sjávarútvegsmálum þó mjög veigamikill þar sem heildaraflamark og verndun stofna ráðast á ESB-vettvangi.",
-      "confidence": 0.7311008099999999,
+      "missing_context": "Einkavaldið nær til verndunar sjávarauðlinda og ákvörðunar heildarafla, en innri úthlutun kvóta innan hvers ríkis er áfram landsbundið vald — Ísland gæti í grundvallaratriðum haldið aflamarkskerfi sínu (<a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1380\" title=\"Regulation (EU) No 1380/2013, Article 17; European Parliament Fisheries Committee studies\" target=\"_blank\" rel=\"noopener\">FISH-DATA-030</a>, <a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32013R1380\" title=\"EU Regulation 1380/2013 on the Common Fisheries Policy, Article 16(6); OECD Review of Fisheries 2024\" target=\"_blank\" rel=\"noopener\">FISH-DATA-032</a>). Lykilbreytingin felst í því að Ísland myndi taka þátt í ákvörðun heildarafla en ekki ráða honum einhliða eins og nú.",
+      "confidence": 0.85,
       "speakers": [
         {
           "name": "Andrés Pétursson",
@@ -858,8 +853,8 @@
       "attribution_type": "asserted",
       "claim_count": 18,
       "verdicts": {
-        "supported": 6,
-        "partially_supported": 12
+        "supported": 7,
+        "partially_supported": 11
       },
       "stance": "anti_eu",
       "slug": "andres-petursson",

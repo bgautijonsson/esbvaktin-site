@@ -10,9 +10,10 @@
   "summary": "Greindar 18 fullyrðingar .",
   "capsule": "Nokkrar lykilstaðreyndir greinarinnar eru vel studdar: þjóðaratkvæðagreiðslan 29. ágúst var kynnt á blaðamannafundi á föstudegi og málið fór til þingsins strax eftir helgi án þess að fara í samráðsgátt stjórnvalda. Áhugavert til viðbótar er að þjóðaratkvæðagreiðslan er að lögum ráðgefandi — Alþingi hefur lokaorðið óháð niðurstöðunni, eitthvað sem er vert að hafa í huga þegar litið er á raunverulega skuldbindingu þjóðarinnar. Jafnframt er vert að vita að hugmyndin um aðildarviðræður var opið kynnt á þingi af stjórnarandstæðingum — Logi Einarsson árið 2022 og Þorgerður Katrín Gunnarsdóttir árið 2023 — löngu áður en núverandi ríkisstjórn tók við.",
   "verdict_counts": {
-    "partially_supported": 10,
+    "partially_supported": 9,
     "supported": 5,
-    "misleading": 1
+    "misleading": 1,
+    "unsupported": 1
   },
   "epistemic_counts": null,
   "claim_count": 16,
@@ -315,23 +316,18 @@
         "confidence": 0.9,
         "epistemic_type": "factual"
       },
-      "verdict": "partially_supported",
-      "explanation": "Engin heimild staðfestir beint hvort Ísland sé skráð sem umsækjandi í gögnum ESB. Þó kemur fram í fyrirvörum <a href=\"https://eur-lex.europa.eu/EN/legal-content/summary/iceland-agriculture-fisheries-and-food-safety.html\" title=\"EUR-Lex — Iceland agriculture assessment; European Commission screening reports\" target=\"_blank\" rel=\"noopener\">AGRI-DATA-024</a> að aðildarumsóknin hafi verið dregin til baka árið 2015 og <a href=\"https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en\" title=\"European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications\" target=\"_blank\" rel=\"noopener\">TRADE-DATA-022</a> bendir til þess að Ísland þyrfti að «sækja aftur um» ef það vildi hefja viðræður á ný. Þetta styður óbeint við fullyrðinguna — ef umsóknin hefði formlega verið dregin til baka ætti Ísland ekki lengur að vera skráð sem umsækjandi. Hins vegar vantar beina staðfestingu úr gagnagrunni ESB eða opinberum skrám um stöðu umsækjenda.",
-      "supporting_evidence": [
+      "verdict": "unsupported",
+      "explanation": "Engin heimild styður þá fullyrðingu að Ísland sé ekki skráð sem umsækjandi í gögnum ESB. Þvert á móti staðfestir <a href=\"https://www.althingi.is/altext/raeda/157/rad20260309T171000.html\" title=\"Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-001</a> að umsókn Íslands frá 2009 sé enn gild, sem ESB sjálft hefur staðfest, og að viðræður geti hafist að nýju verði niðurstaðan já. Heimildirnar fjalla um Schengen, undanþágur Írlands og fleira en hrekja ekki gildi umsóknarinnar.",
+      "supporting_evidence": [],
+      "contradicting_evidence": [
         {
-          "id": "AGRI-DATA-024",
-          "source_name": "EUR-Lex — Iceland agriculture assessment; European Commission screening reports",
-          "source_url": "https://eur-lex.europa.eu/EN/legal-content/summary/iceland-agriculture-fisheries-and-food-safety.html"
-        },
-        {
-          "id": "TRADE-DATA-022",
-          "source_name": "European Commission — Opinion on Iceland's application (SEC(2010) 153); EU Arctic Policy Communications",
-          "source_url": "https://enlargement.ec.europa.eu/enlargement-policy/negotiations-status/iceland_en"
+          "id": "SOV-PARL-001",
+          "source_name": "Alþingi — Þorgerður Katrín Gunnarsdóttir, utanríkisráðherra (flutningsræða, 157. löggjafarþing)",
+          "source_url": "https://www.althingi.is/altext/raeda/157/rad20260309T171000.html"
         }
       ],
-      "contradicting_evidence": [],
-      "missing_context": "Heimildir staðfesta afturköllun umsóknar (2015) og að Ísland þyrfti að sækja aftur um, en engin heimild sýnir beint hvernig Ísland er skráð í opinberum gögnum ESB (t.d. hjá DG NEAR eða í stækkunarskýrslum). Munurinn á «afturköllun umsóknar» og «ekki skráð sem umsækjandi» gæti skipt máli — sum lönd hafa dregið umsóknir til baka en haldið ákveðinni stöðu í skjölum ESB.",
-      "confidence": 0.51642855,
+      "missing_context": "Staða umsóknarinnar er sjálf umdeild í íslenskri umræðu — Landskjörstjórn benti á að spurning atkvæðagreiðslunnar gerir ráð fyrir að viðræðum hafi ekki verið slitið, sem er ágreiningsefni (<a href=\"https://www.althingi.is/thingstorf/thingmalalistar-eftir-thingum/ferill/?ltg=157&mnr=516\" title=\"Landskjörstjórn umsögn to Foreign Affairs Committee, 10 April 2026 (mál 516)\" target=\"_blank\" rel=\"noopener\">SOV-PARL-008</a>). Gögnin lýsa þó stöðunni sem svo að umsóknin sé gild að mati ESB, ekki að Ísland sé fjarlægt af lista umsækjenda. Til að meta fullyrðinguna að fullu þyrfti bein gögn um stækkunarlista eða skráningu framkvæmdastjórnar ESB.",
+      "confidence": 0.7,
       "speakers": [
         {
           "name": "Sigmundur Davíð Gunnlaugsson",
@@ -852,9 +848,10 @@
       "attribution_type": "asserted",
       "claim_count": 15,
       "verdicts": {
-        "partially_supported": 9,
+        "partially_supported": 8,
         "supported": 5,
-        "misleading": 1
+        "misleading": 1,
+        "unsupported": 1
       },
       "stance": "anti_eu",
       "slug": "sigmundur-david-gunnlaugsson",
