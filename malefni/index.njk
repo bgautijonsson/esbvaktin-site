@@ -12,4 +12,9 @@ extra_js: /assets/js/topic-tracker.js
   <p>Helstu ágreiningsefnin í ESB-umræðunni — hversu margar fullyrðingar hafa verið settar fram, hvað segja heimildir og hvernig er dreifing niðurstaðna.</p>
 </div>
 
+<section class="topic-charts" aria-label="Yfirlit málefna í myndum">
+  {% chartTopicGrid charts.topics %}
+  {% chartCoverage charts.topics %}
+</section>
+
 <div id="topic-tracker"></div>

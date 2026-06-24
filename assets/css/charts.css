@@ -1,0 +1,110 @@
+/* Build-time chart styling for ESBvaktin.
+   Colour comes ONLY from design tokens (assets/css/style.css :root + dark-mode
+   overrides), so every chart themes itself in dark mode with zero JavaScript.
+   See lib/charts/ for the SVG/HTML builders. */
+
+/* ── Plate + figure ─────────────────────────────────────────────── */
+.chart-figure {
+  margin: var(--sp-xl) 0;
+  padding: var(--sp-lg);
+  background: var(--bg-surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-md);
+}
+.chart-svg { display: block; width: 100%; height: auto; }
+
+.chart-cap {
+  margin-top: var(--sp-md);
+  padding-top: var(--sp-sm);
+  border-top: 1px solid var(--rule);
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+.chart-cap strong { color: var(--text); font-weight: 600; }
+.chart-cap .src { display: inline-block; margin-top: 2px; font-size: 0.76rem; }
+
+/* ── Shared SVG text + axes ─────────────────────────────────────── */
+.chart-svg text { font-family: var(--font-ui); fill: var(--text); font-size: 12.5px; }
+.chart-svg .num { font-family: var(--font-data); font-variant-numeric: tabular-nums; }
+.chart-svg .chart-title { font-family: var(--font-display); font-weight: 500; font-size: 21px; fill: var(--text); }
+.chart-svg .chart-kicker { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; fill: var(--text-muted); }
+.chart-svg .chart-cat { font-size: 12.5px; fill: var(--text); }
+.chart-svg .t-muted { fill: var(--text-muted); }
+.chart-svg .t-accent { fill: var(--accent); }
+.chart-svg .axis-label { font-size: 11px; fill: var(--text-muted); }
+.chart-svg .grid { stroke: var(--rule); stroke-width: 1; opacity: 0.55; }
+.chart-svg .axis-base { stroke: var(--rule-strong); stroke-width: 1; }
+
+/* ── Verdict ordinal ramp (solid area fills) ────────────────────── */
+.chart-svg .v-supported { fill: var(--v-supported); }
+.chart-svg .v-partial { fill: var(--v-partial); }
+.chart-svg .v-unsupported { fill: var(--v-unsupported); }
+.chart-svg .v-misleading { fill: var(--v-misleading); }
+.chart-svg .v-unverifiable { fill: var(--v-unverifiable); }
+
+/* ── Timeline ───────────────────────────────────────────────────── */
+.chart-svg .tl-line { fill: none; stroke: var(--accent); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.chart-svg .tl-area { fill: var(--accent); opacity: 0.10; }
+.chart-svg .tl-quiet { fill: var(--rule); opacity: 0.30; }
+.chart-svg .mark { fill: var(--accent); }
+.chart-svg .leader { stroke: var(--text-muted); stroke-width: 1; }
+.chart-svg .ann { font-size: 12px; fill: var(--text-muted); }
+.chart-svg .ann-strong { font-family: var(--font-display); font-weight: 500; font-size: 13px; fill: var(--text); }
+.chart-svg .ann-muted { font-size: 11.5px; fill: var(--text-muted); font-style: italic; }
+
+/* ── Waffle legend ──────────────────────────────────────────────── */
+.chart-svg .lg-label { font-size: 13px; fill: var(--text); }
+.chart-svg .lg-pct { font-size: 15px; fill: var(--text); font-weight: 600; }
+.chart-svg .lg-n { font-size: 12px; }
+
+/* ── Topic small-multiple ───────────────────────────────────────── */
+.chart-svg .lg-sm { font-size: 11.5px; fill: var(--text-muted); }
+.chart-svg .bar-frame { fill: none; stroke: var(--rule); stroke-width: 1; }
+
+/* ── Coverage ───────────────────────────────────────────────────── */
+.chart-svg .mark-bar { fill: var(--accent); }
+.chart-svg .hatch-line { stroke: var(--rule-strong); stroke-width: 1; }
+.chart-svg .cov-ghost-label { fill: var(--text-muted); font-size: 11px; }
+
+/* ── Recurring claims (semantic HTML) ───────────────────────────── */
+.chart-claims { padding-top: var(--sp-md); }
+.rc-list { list-style: none; margin: 0; padding: 0; }
+.rc-row {
+  display: flex;
+  gap: var(--sp-lg);
+  justify-content: space-between;
+  align-items: baseline;
+  padding: var(--sp-md) 0;
+  border-top: 1px solid var(--rule);
+}
+.rc-row:first-child { border-top: 0; padding-top: 0; }
+.rc-main { flex: 1; min-width: 0; }
+.rc-kicker { display: block; font-family: var(--font-ui); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin-bottom: 3px; }
+.rc-text { margin: 0; font-family: var(--font-body); font-size: 1rem; line-height: 1.4; color: var(--text); }
+.rc-meta { display: flex; align-items: baseline; gap: var(--sp-sm); white-space: nowrap; flex-shrink: 0; }
+.rc-count { font-family: var(--font-data); font-size: 1.2rem; font-weight: 600; color: var(--text); font-variant-numeric: tabular-nums; }
+.rc-count-label { font-size: 0.7rem; color: var(--text-muted); }
+.rc-stamp { font-family: var(--font-ui); font-size: 0.66rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; padding: 3px 7px; border: 1px solid; border-radius: var(--radius-sm); background: transparent; }
+.rc-stamp.v-supported { color: var(--v-supported); border-color: var(--v-supported); }
+.rc-stamp.v-partial { color: var(--v-partial); border-color: var(--v-partial); }
+.rc-stamp.v-unsupported { color: var(--v-unsupported); border-color: var(--v-unsupported); }
+.rc-stamp.v-misleading { color: var(--v-misleading); border-color: var(--v-misleading); }
+.rc-stamp.v-unverifiable { color: var(--v-unverifiable); border-color: var(--v-unverifiable); }
+
+@media (max-width: 560px) {
+  .chart-figure { padding: var(--sp-md); }
+  .rc-row { flex-direction: column; gap: var(--sp-xs); }
+}
+
+/* ── Screen-reader-only data table fallback ─────────────────────── */
+.chart-figure .visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

@@ -40,6 +40,12 @@ module.exports = async function (eleventyConfig) {
   // Assets served as-is — 11ty never processes JS, CSS, or data files
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addWatchTarget("assets/data");
+  eleventyConfig.addWatchTarget("lib/charts");
+
+  // ── Data-visualisation chart shortcodes (build-time static SVG) ────
+  // {% chartTimeline charts.timeline %}, {% chartWaffle charts.verdictTotals %}, etc.
+  // Output is pure SVG/HTML (no <script>), so the CSP transform is unaffected.
+  require("./lib/charts").register(eleventyConfig);
 
   // Presentation slides (rendered by Quarto, passed through as-is)
   eleventyConfig.addPassthroughCopy("althjodastofnun");

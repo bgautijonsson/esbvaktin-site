@@ -59,6 +59,18 @@ wide_layout: true
   </div>
 </section>
 
+{# ── Discourse in numbers: timeline + verdict waffle ── #}
+<section class="home-section home-charts" aria-labelledby="home-charts-heading">
+  <div class="home-section-head">
+    <div>
+      <p class="home-section-label">Umræðan í tölum</p>
+      <h2 id="home-charts-heading">Hvar er umræðan — og hvað segja gögnin?</h2>
+    </div>
+  </div>
+  {% chartTimeline charts.timeline %}
+  {% chartWaffle charts.verdictTotals %}
+</section>
+
 {# ── Main content grid ── #}
 <div class="home-grid">
   <div class="home-main">
