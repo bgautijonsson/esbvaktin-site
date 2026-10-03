@@ -1,5 +1,7 @@
 # esbvaktin-site — CLAUDE.md
 
+> **Status (2026-10-03): FINISHED, static archive.** esbvaktin.is stays online as a static archive for now; the esbvaktin pipeline is finished and exports nothing new. Make only maintenance changes the owner asks for. Vault record: `ESB/ESB Retrospective.md` in the Metill vault.
+
 ## Overview
 
 Static site for esbvaktin.is — Iceland's EU referendum civic information platform. Built with 11ty (Eleventy), hosted on GitHub Pages.
